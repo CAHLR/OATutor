@@ -1,0 +1,1 @@
+{"ast":null,"code":"import PropTypes from 'prop-types';\nvar responsivePropType = process.env.NODE_ENV !== 'production' ? PropTypes.oneOfType([PropTypes.number, PropTypes.string, PropTypes.object, PropTypes.array]) : {};\nexport default responsivePropType;","map":null,"metadata":{},"sourceType":"module"}
