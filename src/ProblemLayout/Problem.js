@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ProblemCard from './ProblemCard'
 import {animateScroll as scroll, scroller, Element} from "react-scroll";
 import {update, knowledgeComponentModels} from '../BKT/BKTBrains'
-import { nextProblem } from '../ProblemPool/problemIndex'
+import { nextProblem } from '../ProblemLayout/problemIndex'
 
 export default function Problem(props) {
     let problem = nextProblem(knowledgeComponentModels);

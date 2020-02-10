@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { deepmerge } from '@material-ui/utils';\n\nfunction merge(acc, item) {\n  if (!item) {\n    return acc;\n  }\n\n  return deepmerge(acc, item, {\n    clone: false // No need to clone deep, it's way faster.\n\n  });\n}\n\nexport default merge;","map":null,"metadata":{},"sourceType":"module"}
