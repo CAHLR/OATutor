@@ -1,1 +1,0 @@
-{"ast":null,"code":"export default function memoize(fn) {\n  var cache = {};\n  return function (arg) {\n    if (cache[arg] === undefined) {\n      cache[arg] = fn(arg);\n    }\n\n    return cache[arg];\n  };\n}","map":null,"metadata":{},"sourceType":"module"}

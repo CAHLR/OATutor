@@ -1,21 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { AppBar, Toolbar } from '@material-ui/core';
 import Problem from "./ProblemLayout/Problem";
-import { problemIndex, nextProblem } from "./ProblemPool/problemIndex"
+import { problemIndex, nextProblem } from "./ProblemLayout/problemIndex"
 
 function App() {
   const problems = problemIndex.problems;
   console.log(problems)
   return (
-
-      <div style={{backgroundColor: "#F6F6F6", paddingBottom: 20}}>
+    <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
       <AppBar position="static">
-          <Toolbar>Open ITS</Toolbar>
+        <Toolbar>Open ITS</Toolbar>
       </AppBar>
-      <Problem problem={nextProblem()}/>
-      </div>
+      <Problem problem={nextProblem()} />
+    </div>
   );
 }
 
