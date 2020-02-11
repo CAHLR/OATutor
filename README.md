@@ -7,7 +7,7 @@ cd OpenITS
 npm install
 npm start
 ```
-After compiling, the project will disply in a new web browser tab at adress `localhost:3000`.
+After compiling, the project will display in a new web browser tab at adress `localhost:3000`.
 
 ## Features in progress:
 1) Scaffolding/hint system - modularize the type of help
@@ -21,7 +21,7 @@ After compiling, the project will disply in a new web browser tab at adress `loc
 	* Theme: Material UI
 	* Deployment: TBD
 * Offline Computation/Iteration:
-	* Python (DAFM Machine Learning algorithm)
+	* Python (dAFM Machine Learning algorithm)
 
 # Project Structure: 
 Code for this project is located in the `src` directory. 
@@ -48,7 +48,7 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 - `problemIndex.js`: Imports all of the `problem[i]` files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
 
-	Currently `nextProblem` iterates across the problems and chooses the one with the lowest average probability of mastery across all of its knowledge components, but this should be able to be changed to any heuristic in the future. 
+	
 
 - `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
 ```javascript
@@ -60,6 +60,8 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
     ]
     ...
 ```
+
+- `heuristic.js`: This file the heuristic for adaptive problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average probability of mastery across all of its knowledge components, but this can be changed to any heuristic. 
 
 ## ProblemPool [Configurable]
 
