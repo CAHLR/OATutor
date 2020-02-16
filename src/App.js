@@ -2,17 +2,17 @@ import React from 'react';
 import './App.css';
 import { AppBar, Toolbar } from '@material-ui/core';
 import Problem from "./ProblemLayout/Problem";
-import { problemIndex, nextProblem } from "./ProblemLayout/problemIndex"
+import { nextProblem } from "./ProblemLogic/problemIndex"
+import Firebase from "./ProblemLogic/Firebase.js";
 
 function App() {
-  const problems = problemIndex.problems;
-  console.log(problems)
+  let firebase = new Firebase();
   return (
     <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
       <AppBar position="static">
         <Toolbar>Open ITS</Toolbar>
       </AppBar>
-      <Problem problem={nextProblem()} />
+      <Problem problem={nextProblem()} firebase={firebase} />
     </div>
   );
 }

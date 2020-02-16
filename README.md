@@ -10,15 +10,16 @@ npm start
 After compiling, the project will display in a new web browser tab at adress `localhost:3000`.
 
 ## Features in progress:
-1) Scaffolding/hint system - modularize the type of help
-2) Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3) Centralized skill model - `src/ProblemPool/skillMode.js`
-4) Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
+1) Scaffolding/hint system - modularize the type of help [In development]
+2) Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually) [Beta]
+3) Centralized skill model - `src/ProblemPool/skillMode.js` [Production]
+4) Data logging/collection - Based off of the Cognitive Tutor KDD dataset. [In development]
 5) User login/registration - OAuth 2.0 Google
 
-### Technologies Used
+## Technologies Used
 * Frontend: ReactJS
 	* Theme: Material UI
+    * Database: Firebase (Cloud Firestore)
 	* Deployment: TBD
 * Offline Computation/Iteration:
 	* Python (dAFM Machine Learning algorithm)
@@ -38,6 +39,12 @@ Code for this project is located in the `src` directory.
 
 ## ProblemLayout
 
+- `HintSystem.js`: Expandable panel component to display all the hints.
+
+- `HintWrapper.js`: Expandable panel which says "View available hints". Contains `HintSystem`
+
+- `HintTextbox.js`: Textbox for scaffold types of hints with answers.
+
 - `Problem.js`: The "problem" component created in App.js. The component is initailized with a "problem" object as one of its props. It then creates a series of "ProblemCards" in `const parts` (currently keys for ProblemCard components are random values, should be UUIDs in the future). 
 
 	The `answerMade` function is passed to each ProblemCard component and is called whenever an answer is submitted to a ProblemCard. This enables the Problem component to update the knowledge component variables after each answer and transition to the next problem after all answers are correct. 
@@ -46,23 +53,31 @@ Code for this project is located in the `src` directory.
 
 These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and `classes` references). Check their website for more info on this syntax. 
 
-- `problemIndex.js`: Imports all of the `problem[i]` files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
+- `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
 
-	
+
+## ProblemLogic
+- `problemIndex.js`: Imports all of the `problem[i]` files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
 
 - `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
 ```javascript
-    problemID: [
-        [part 1 skills], 
-        [part 2 skills], 
-        ... 
-        [part n skills]
-    ]
+    problemID1a: []
+    problemID1b: []
+    ...
+    problemID1z: []
+    
+    problemID9a: []
+    ...
+    problemID9z: []
     ...
 ```
 
 - `heuristic.js`: This file the heuristic for adaptive problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average probability of mastery across all of its knowledge components, but this can be changed to any heuristic. 
 
+- `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
+
+- `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the gitignore by default to prevent API key leaks.)
+
 ## ProblemPool [Configurable]
 
-- `problem[i].js`: Contains json data for problem i. The prompt attribute is displayed at the top of the problem, the parts attributes correspond to each ProblemCard that is displayed. Each part contains an id, title, question body, answer, and knowledge componenets used (need to correspond exactly to a component listed in `BKTBrains.js` and an id listed in `skillModel.js`. 
+- `[problemID].js`: Contains json data for problem i. The prompt attribute is displayed at the top of the problem, the parts attributes correspond to each ProblemCard that is displayed. Each part contains an id, title, question body, answer, and knowledge componenets used (need to correspond exactly to a component listed in `BKTBrains.js` and an id listed in `skillModel.js`. 
