@@ -2,7 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     card: {
-        width: '30em',
+        width: '50em',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 20
+    },
+    hintCard: {
+        width: '40em',
         marginLeft: 'auto',
         marginRight: 'auto',
         marginBottom: 20
@@ -29,22 +35,35 @@ const useStyles = makeStyles({
     },
 
     partHeader: {
-        textAlign: 'center',
+        //textAlign: 'center',
         fontSize: 20,
         marginTop: 0,
+        marginLeft: 10
     },
 
     partBody: {
-        textAlign: 'center',
+        //textAlign: 'center',
         fontSize: 30,
         marginTop: 10,
-        marginBottom: 30
+        marginBottom: 30,
+        marginLeft: 10
     },
 
     inputField: {
-        width: '7em',
-        marginLeft: '10.4em'
+        width: '10em',
+        marginLeft: '19em'
 
+    },
+
+    inputHintField: {
+        width: '10em',
+        marginLeft: '16em',
+    },
+
+    center: {
+        marginLeft: '19em',
+        marginRight: '19em',
+        marginTop: '1em'
     },
 
     checkImage: {

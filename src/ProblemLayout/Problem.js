@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import ProblemCard from './ProblemCard'
 import {animateScroll as scroll, scroller, Element} from "react-scroll";
 import {update, knowledgeComponentModels} from '../BKT/BKTBrains'
-import { nextProblem } from '../ProblemLayout/problemIndex'
+import { nextProblem } from '../ProblemLogic/problemIndex'
 
 export default function Problem(props) {
-    let problem = nextProblem(knowledgeComponentModels);
+    // let problem = nextProblem(knowledgeComponentModels);
     const [problemData, updateProblem] = useState(props.problem);
     var partStates = {};
     var numCorrect = 0;
@@ -15,7 +15,7 @@ export default function Problem(props) {
     const parts = problemData.parts.map(function(part, index) {
         partStates[index] = null;
         return <Element name={index.toString()} key={Math.random()}>
-            <ProblemCard part={part} index={index} answerMade = {answerMade}/>
+            <ProblemCard part={part} index={index} answerMade = {answerMade} firebase={props.firebase}/>
         </Element>
     }
     );
