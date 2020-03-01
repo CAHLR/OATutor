@@ -20,9 +20,14 @@ const skillModel = {
     add1c: ["addition"],
     add1d: ["addition"],
 
-    mul2a: ["short-multiplication", "long-multiplication"],
-    mul2b: ["short-multiplication", "long-multiplication"],
-    mul2c: ["short-multiplication", "long-multiplication"],
+    //mul2a: ["short-multiplication", "long-multiplication"],
+    //mul2b: ["short-multiplication", "long-multiplication"],
+    //mul2c: ["short-multiplication", "long-multiplication"],
+
+    pythag1a: ["addition"],
+    pythag1b: ["addition"],
+    pythag1c: ["addition"],
+    pythag1d: ["addition"],
 
 }
 

@@ -5,14 +5,19 @@ import Problem from "./ProblemLayout/Problem";
 import { nextProblem } from "./ProblemLogic/problemIndex"
 import Firebase from "./ProblemLogic/Firebase.js";
 
+var logData = false;
+
 function App() {
-  let firebase = new Firebase();
+  let firebase;
+  if (logData) {
+     firebase = new Firebase();
+  }
   return (
     <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
       <AppBar position="static">
         <Toolbar>Open ITS</Toolbar>
       </AppBar>
-      <Problem problem={nextProblem()} firebase={firebase} />
+      <Problem problem={nextProblem()} firebase={firebase} logData={logData}/>
     </div>
   );
 }

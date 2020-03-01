@@ -1,6 +1,6 @@
-import { problem as mul1 } from '../ProblemPool/mul1.js'
+import { problem as mul1 } from '../ProblemPool/pythag1.js'
 import { problem as add1 } from '../ProblemPool/add1.js'
-import { problem as mul2 } from '../ProblemPool/mul2.js';
+//import { problem as mul2 } from '../ProblemPool/mul2.js';
 import { knowledgeComponentModels } from "../BKT/BKTBrains";
 import skillModel from './skillModel.js' //Can change to different skillModels
 import heuristic from './heuristic.js'
@@ -9,7 +9,7 @@ const problemIndex = {
   problems: [
     mul1,
     add1,
-    mul2
+    //mul2
   ]
 };
 
@@ -31,6 +31,7 @@ function nextProblem() {
     var probMasterySum = 0;
     var totalProbs = 0;
     for (var part of problem.parts) {
+      console.log(part);
       for (var kc of part.knowledgeComponents) {
         // console.log(knowledgeComponentModels, kc, knowledgeComponentModels[kc])
         probMasterySum += knowledgeComponentModels[kc].probMastery;

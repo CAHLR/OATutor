@@ -19,6 +19,9 @@ const useStyles = makeStyles(theme => ({
 }));
 function HintWrapper(props) {
   const classes = useStyles();
+  var unlockStatus = new Array(props.hints.length).fill(0);
+  unlockStatus[0] = 1;
+
 
   return (
     <div className={classes.root}>
@@ -31,7 +34,7 @@ function HintWrapper(props) {
           <Typography className={classes.heading}>View available Hints</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <HintSystem hints={props.hints}/>
+          <HintSystem hints={props.hints} unlockStatus={unlockStatus}/>
         </ExpansionPanelDetails>
       </ExpansionPanel>
 

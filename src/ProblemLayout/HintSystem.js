@@ -6,6 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
+import Latex from 'react-latex';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,11 +20,18 @@ const useStyles = makeStyles(theme => ({
 function HintSystem(props) {
   const classes = useStyles();
 
+  var unlockHint = (event, expanded, i) => {
+    if (expanded && i < props.hints.length - 1) {
+      props.unlockStatus[i + 1] = 1;
+    }
+    console.log(props.unlockStatus);
+  }
+
   return (
     <div className={classes.root}>
       {props.hints.map((hint, i) => {
         if (hint.type === "hint") {
-          return <ExpansionPanel key={i}>
+          return <ExpansionPanel key={i} onChange={(event, expanded) => unlockHint(event, expanded, i)} disabled={props.unlockStatus[i] === 0}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -32,9 +40,9 @@ function HintSystem(props) {
               <Typography className={classes.heading}>Hint {i + 1}: {hint.title}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
+              <Latex>
                 {hint.text}
-              </Typography>
+              </Latex>
             </ExpansionPanelDetails>
           </ExpansionPanel>
         } else {
@@ -48,8 +56,10 @@ function HintSystem(props) {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                {hint.text}
-                <HintTextbox hintAnswer={hint.hintAnswer}/>
+                <Latex>
+                  {hint.text}
+                </Latex>
+                <HintTextbox hintAnswer={hint.hintAnswer} />
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
