@@ -1,31 +1,36 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import { update, knowledgeComponentModels } from '../BKT/BKTBrains'
-import { nextProblem } from '../ProblemLogic/problemIndex'
 import Latex from 'react-latex';
 
-export default function Problem(props) {
-  // let problem = nextProblem(knowledgeComponentModels);
-  const [problemData, updateProblem] = useState(props.problem);
-  var partStates = {};
-  var numCorrect = 0;
-
-
-  const parts = problemData.parts.map(function (part, index) {
-    partStates[index] = null;
-    return <Element name={index.toString()} key={Math.random()}>
-      <ProblemCard part={part} index={index} answerMade={answerMade} firebase={props.firebase} logData={props.logData} />
-    </Element>
+class Problem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      problemData: props.nextProblem()
+    }
+    this.partStates = {};
+    this.numCorrect = 0;
+    this.parts = this.updateProblemData();
   }
-  );
 
-  function answerMade(cardIndex, kcArray, isCorrect) {
-    if (partStates[cardIndex] === true) { return }
-    partStates[cardIndex] = isCorrect;
+  updateProblemData = () => {
+    return this.state.problemData.parts.map((step, index) => {
+      this.partStates[index] = null;
+      return <Element name={index.toString()} key={Math.random()}>
+        <ProblemCard step={step} index={index} answerMade={this.answerMade} firebase={this.props.firebase} logData={this.props.logData} />
+      </Element>
+    }
+    );
+  }
+
+  answerMade = (cardIndex, kcArray, isCorrect) => {
+    if (this.partStates[cardIndex] === true) { return }
+    this.partStates[cardIndex] = isCorrect;
 
     for (var kc of kcArray) {
       console.log(kc);
@@ -33,16 +38,18 @@ export default function Problem(props) {
       console.log(knowledgeComponentModels[kc].probMastery);
     }
 
-
     if (isCorrect) {
-      numCorrect += 1;
-      if (numCorrect === Object.keys(partStates).length) {
+      this.numCorrect += 1;
+      if (this.numCorrect === Object.keys(this.partStates).length) {
         scroll.scrollToTop({ duration: 900 });
-        partStates = {};
-        numCorrect = 0;
+        this.partStates = {};
+        this.numCorrect = 0;
 
-        const problem = nextProblem();
-        setTimeout(function () { updateProblem(problem); }, 900)
+        const problem = this.props.nextProblem();
+        this.setState({ problemData: problem }, () => {
+          this.parts = this.updateProblemData();  
+          this.setState({updated: true});
+        })
 
       } else {
         scroller.scrollTo((cardIndex + 1).toString(), {
@@ -53,35 +60,36 @@ export default function Problem(props) {
     }
   }
 
-  const classes = useStyles();
+  render() {
+    const { classes } = this.props;
+    return (
+      <div>
+        <div className={classes.prompt}>
+          <Card className={classes.titleCard}>
+            <CardContent>
+              <h2 className={classes.partHeader}>
+                {this.state.problemData.title}
+                <hr />
+              </h2>
 
-  return (
-    <div>
-      <div className={classes.prompt}>
-        <Card className={classes.titleCard}>
-          <CardContent>
-            <h2 className={classes.partHeader}>
-              {problemData.title}
-              <hr />
-            </h2>
+              <div className={classes.partBody}>
+                <Latex>
+                  {this.state.problemData.body}
+                </Latex>
+              </div>
+              <br />
+            </CardContent>
+          </Card>
+          <hr />
 
-            <div className={classes.partBody}>
-              <Latex>
-                {problemData.prompt}
-              </Latex>
-            </div>
-            <br />
-          </CardContent>
-        </Card>
-        <hr />
-
+        </div>
+        {this.parts}
       </div>
-      {parts}
-    </div>
-  );
+    );
+  }
 }
 
-const useStyles = makeStyles({
+const styles = {
   prompt: {
     marginLeft: 50,
     marginRight: 50,
@@ -107,4 +115,6 @@ const useStyles = makeStyles({
     marginTop: 10,
     marginLeft: 10
   },
-});
+};
+
+export default withStyles(styles)(Problem);

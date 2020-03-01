@@ -24,10 +24,10 @@ const skillModel = {
     //mul2b: ["short-multiplication", "long-multiplication"],
     //mul2c: ["short-multiplication", "long-multiplication"],
 
-    pythag1a: ["addition"],
-    pythag1b: ["addition"],
-    pythag1c: ["addition"],
-    pythag1d: ["addition"],
+    pythag1a: ["short-multiplication"],
+    pythag1b: ["short-multiplication"],
+    pythag1c: ["short-multiplication"],
+    pythag1d: ["short-multiplication"],
 
 }
 

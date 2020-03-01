@@ -11,7 +11,7 @@ import Latex from 'react-latex';
 
 export default function ProblemCard(props) {
   const classes = useStyles();
-  const part = props.part;
+  const step = props.step;
   const index = props.index;
   const [inputVal, changeInputVal] = useState("");
   const [isCorrect, answerIs] = useState(null);
@@ -23,12 +23,12 @@ export default function ProblemCard(props) {
       log(inputVal);
     }
 
-    if (inputVal === part.partAnswer) {
+    if (inputVal === step.partAnswer) {
       answerIs(true);
-      props.answerMade(index, part.knowledgeComponents, true)
+      props.answerMade(index, step.knowledgeComponents, true)
     } else {
       answerIs(false);
-      props.answerMade(index, part.knowledgeComponents, false)
+      props.answerMade(index, step.knowledgeComponents, false)
     }
   }
 
@@ -44,11 +44,11 @@ export default function ProblemCard(props) {
       timeStamp: date,
       siteVersion: 0.1,
       studentID: "12345",
-      problemID: part.id.slice(0, -1),
-      stepID: part.id,
+      problemID: step.id.slice(0, -1),
+      stepID: step.id,
       input: inputVal,
-      answer: part.partAnswer,
-      isCorrect: inputVal === part.partAnswer
+      answer: step.partAnswer,
+      isCorrect: inputVal === step.partAnswer
 
     }
     return props.firebase.writeData("problemSubmissions", date, data);
@@ -64,16 +64,16 @@ export default function ProblemCard(props) {
     <Card className={classes.card}>
       <CardContent>
         <h2 className={classes.partHeader}>
-          {part.partTitle}
+          {step.partTitle}
           <hr />
         </h2>
 
         <div className={classes.partBody}>
           <Latex>
-            {part.partBody}
+            {step.partBody}
           </Latex>
         </div>
-        <HintWrapper hints={props.part.hints} />
+        <HintWrapper hints={props.step.hints} />
         <br />
 
         <TextField
