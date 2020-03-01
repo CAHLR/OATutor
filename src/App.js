@@ -7,19 +7,26 @@ import Firebase from "./ProblemLogic/Firebase.js";
 
 var logData = false;
 
-function App() {
-  let firebase;
-  if (logData) {
-     firebase = new Firebase();
+class App extends React.Component {
+  constructor() {
+    super();
+    this.firebase = null;
+    if (logData) {
+      this.firebase = new Firebase();
+    }
   }
-  return (
-    <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
-      <AppBar position="static">
-        <Toolbar>Open ITS</Toolbar>
-      </AppBar>
-      <Problem problem={nextProblem()} firebase={firebase} logData={logData}/>
-    </div>
-  );
+
+  render() {
+
+    return (
+      <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
+        <AppBar position="static">
+          <Toolbar>Open ITS</Toolbar>
+        </AppBar>
+        <Problem nextProblem={nextProblem} firebase={this.firebase} logData={logData} />
+      </div>
+    );
+  }
 }
 
 export default App;
