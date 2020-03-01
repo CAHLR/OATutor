@@ -5,7 +5,7 @@ const problem = {
     parts: [
         {
             partTitle: "1. Compute the following equation",
-            partBody: "1 x 2 = ",
+            partBody: "$1 \\times 2 = $",
             partAnswer: "2",
             hints: [
                 {

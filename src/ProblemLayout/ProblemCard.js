@@ -6,85 +6,89 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import HintWrapper from './HintWrapper.js';
-
+import Latex from 'react-latex';
 
 
 export default function ProblemCard(props) {
-    const classes = useStyles();
-    const part = props.part;
-    const index = props.index;
-    const [inputVal, changeInputVal] = useState("");
-    const [isCorrect, answerIs] = useState(null);
+  const classes = useStyles();
+  const part = props.part;
+  const index = props.index;
+  const [inputVal, changeInputVal] = useState("");
+  const [isCorrect, answerIs] = useState(null);
 
-    function submit() {
-        if (isCorrect) { return }
+  function submit() {
+    if (isCorrect) { return }
 
-        log(inputVal);
-
-        if (inputVal === part.partAnswer) {
-            answerIs(true);
-            props.answerMade(index, part.knowledgeComponents, true)
-        } else {
-            answerIs(false);
-            props.answerMade(index, part.knowledgeComponents, false)
-        }
+    if (props.logData) {
+      log(inputVal);
     }
 
-    function log(inputVal) {
-        var today = new Date();
-        var date = (today.getMonth() + 1) + '-' +
-            today.getDate() + '-' +
-            today.getFullYear() + " " +
-            today.getHours() + ":" +
-            today.getMinutes() + ":" +
-            today.getSeconds()
-        var data = {
-            timeStamp: date,
-            siteVersion: 0.1,
-            studentID: "12345",
-            problemID: part.id.slice(0, -1),
-            stepID: part.id,
-            input: inputVal,
-            answer: part.partAnswer,
-            isCorrect: inputVal === part.partAnswer
-
-        }
-        return props.firebase.writeData("problemSubmissions", date, data);
+    if (inputVal === part.partAnswer) {
+      answerIs(true);
+      props.answerMade(index, part.knowledgeComponents, true)
+    } else {
+      answerIs(false);
+      props.answerMade(index, part.knowledgeComponents, false)
     }
+  }
 
-    function handleChange(event) {
-        changeInputVal(event.target.value)
+  function log(inputVal) {
+    var today = new Date();
+    var date = (today.getMonth() + 1) + '-' +
+      today.getDate() + '-' +
+      today.getFullYear() + " " +
+      today.getHours() + ":" +
+      today.getMinutes() + ":" +
+      today.getSeconds()
+    var data = {
+      timeStamp: date,
+      siteVersion: 0.1,
+      studentID: "12345",
+      problemID: part.id.slice(0, -1),
+      stepID: part.id,
+      input: inputVal,
+      answer: part.partAnswer,
+      isCorrect: inputVal === part.partAnswer
+
     }
+    return props.firebase.writeData("problemSubmissions", date, data);
+  }
 
-    const checkMarkStyle = { opacity: isCorrect === true ? '100' : '0' }
+  function handleChange(event) {
+    changeInputVal(event.target.value)
+  }
 
-    return (
-        <Card className={classes.card}>
-            <CardContent>
-                <h2 className={classes.partHeader}>
-                    {part.partTitle}
-                    <hr />
-                </h2>
+  const checkMarkStyle = { opacity: isCorrect === true ? '100' : '0' }
 
-                <div className={classes.partBody}>
-                    {part.partBody}
-                </div>
-                <HintWrapper hints={props.part.hints} />
-                <br />
+  return (
+    <Card className={classes.card}>
+      <CardContent>
+        <h2 className={classes.partHeader}>
+          {part.partTitle}
+          <hr />
+        </h2>
 
-                <TextField
-                    error={isCorrect === false}
-                    className={classes.inputField}
-                    variant="outlined"
-                    onChange={(evt) => handleChange(evt)}>
-                </TextField>
+        <div className={classes.partBody}>
+          <Latex>
+            {part.partBody}
+          </Latex>
+        </div>
+        <HintWrapper hints={props.part.hints} />
+        <br />
 
-                <img className={classes.checkImage} style={checkMarkStyle} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
+        <TextField
+          error={isCorrect === false}
+          className={classes.inputField}
+          variant="outlined"
+          onChange={(evt) => handleChange(evt)}>
+        </TextField>
 
-            </CardContent>
-            <CardActions>
-                <Button className={classes.button} size="small" onClick={submit}>Submit</Button>
-            </CardActions>
-        </Card>
-    );
+        <img className={classes.checkImage} style={checkMarkStyle} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
+
+      </CardContent>
+      <CardActions>
+        <Button className={classes.button} size="small" onClick={submit}>Submit</Button>
+      </CardActions>
+    </Card>
+  );
 }

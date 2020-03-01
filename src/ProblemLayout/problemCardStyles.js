@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 
     partBody: {
         //textAlign: 'center',
-        fontSize: 30,
+        fontSize: 20,
         marginTop: 10,
         marginBottom: 30,
         marginLeft: 10
