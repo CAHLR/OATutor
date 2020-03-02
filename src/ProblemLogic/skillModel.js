@@ -29,6 +29,8 @@ const skillModel = {
     pythag1c: ["short-multiplication"],
     pythag1d: ["short-multiplication"],
 
+    pythag2a: ["addition"],
+
 }
 
 export default skillModel;

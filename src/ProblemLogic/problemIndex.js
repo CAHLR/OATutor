@@ -1,17 +1,12 @@
-import { problem as pythag1 } from '../ProblemPool/pythag1.js'
-import { problem as add1 } from '../ProblemPool/add1.js'
-import { problem as mul1 } from '../ProblemPool/mul1.js';
+import problemPool from '../ProblemPool/problemPool.js'
 import { knowledgeComponentModels } from "../BKT/BKTBrains";
 import skillModel from './skillModel.js' //Can change to different skillModels
 import heuristic from './heuristic.js'
 
 const problemIndex = {
-  problems: [
-    pythag1,
-    add1,
-    mul1
-  ]
+  problems: problemPool
 };
+console.log(problemIndex)
 
 const debug = true;
 
