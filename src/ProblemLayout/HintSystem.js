@@ -43,11 +43,11 @@ class HintSystem extends React.Component {
                 Hint {i + 1}: {hint.title} {this.props.unlockStatus[i] === 0 ? " [LOCKED]" : ""}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-            <Typography>
+            <Typography component={'span'}>
               <Latex>
                 {hint.text}
               </Latex>
-              {hint.type === "hint" ? "" : <div><br/><HintTextbox hintAnswer={hint.hintAnswer} /></div>}
+              {hint.type === "scaffold" ? <div><br/><HintTextbox hintAnswer={hint.hintAnswer} /></div> : "" }
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
