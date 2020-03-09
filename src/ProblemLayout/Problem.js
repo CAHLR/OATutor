@@ -6,6 +6,7 @@ import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import { update, knowledgeComponentModels } from '../BKT/BKTBrains'
 import Latex from 'react-latex';
+import { Sticky } from 'react-sticky';
 
 class Problem extends React.Component {
   constructor(props) {
@@ -47,14 +48,15 @@ class Problem extends React.Component {
 
         const problem = this.props.nextProblem();
         this.setState({ problemData: problem }, () => {
-          this.parts = this.updateProblemData();  
-          this.setState({updated: true});
+          this.parts = this.updateProblemData();
+          this.setState({ updated: true });
         })
 
       } else {
         scroller.scrollTo((cardIndex + 1).toString(), {
           duration: 500,
-          smooth: true
+          smooth: true,
+          offset: -300 // Because sticky
         })
       }
     }
@@ -63,28 +65,37 @@ class Problem extends React.Component {
   render() {
     const { classes } = this.props;
     return (
+
       <div>
-        <div className={classes.prompt}>
-          <Card className={classes.titleCard}>
-            <CardContent>
-              <h2 className={classes.partHeader}>
-                {this.state.problemData.title}
-                <hr />
-              </h2>
+          <div class="sticky" style = {{zIndex: 1000}}>
+          <Sticky>{({ style }) =>
+            <div className={classes.prompt} style={style}>
+              <div style={{paddingTop: 15}}><br/></div>
+              <Card className={classes.titleCard}>
+                <CardContent>
+                  <h2 className={classes.partHeader}>
+                    {this.state.problemData.title}
+                    <hr />
+                  </h2>
 
-              <div className={classes.partBody}>
-                <Latex>
-                  {this.state.problemData.body}
-                </Latex>
-              </div>
-              <br />
-            </CardContent>
-          </Card>
-          <hr />
 
-        </div>
+                  <div className={classes.partBody}>
+                    <Latex>
+                      {this.state.problemData.body}
+                    </Latex>
+                  </div>
+                  <br />
+                </CardContent>
+              </Card>
+              <hr />
+
+            </div>
+          }</Sticky>
+          </div>
+        
         {this.parts}
       </div>
+
     );
   }
 }
