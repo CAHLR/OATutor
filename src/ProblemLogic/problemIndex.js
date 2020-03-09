@@ -11,12 +11,12 @@ console.log(problemIndex)
 const debug = true;
 
 for (var problem of problemIndex.problems) {
-  for (var partIndex = 0; partIndex < problem.parts.length; partIndex++) {
-    var step = problem.parts[partIndex];
-    //step.id = problem.id + String.fromCharCode("a".charCodeAt(0) + partIndex);
+  for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
+    var step = problem.steps[stepIndex];
+    //step.id = problem.id + String.fromCharCode("a".charCodeAt(0) + stepIndex);
     step.knowledgeComponents = skillModel[step.id];
     if (debug) {
-      step.partAnswer = ["0"]
+      step.stepAnswer = ["0"]
     }
   }
 }
@@ -30,7 +30,7 @@ function nextProblem() {
   for (var problem of problemIndex.problems) {
     var probMasterySum = 0;
     var totalProbs = 0;
-    for (var step of problem.parts) {
+    for (var step of problem.steps) {
       console.log(step);
       for (var kc of step.knowledgeComponents) {
         // console.log(knowledgeComponentModels, kc, knowledgeComponentModels[kc])

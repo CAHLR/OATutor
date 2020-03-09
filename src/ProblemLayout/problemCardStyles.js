@@ -34,14 +34,14 @@ const useStyles = makeStyles({
         width: "20%"
     },
 
-    partHeader: {
+    stepHeader: {
         //textAlign: 'center',
         fontSize: 20,
         marginTop: 0,
         marginLeft: 10
     },
 
-    partBody: {
+    stepBody: {
         //textAlign: 'center',
         fontSize: 20,
         marginTop: 10,

@@ -24,7 +24,7 @@ var parser = new Parser({
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
-    return actual.some((partAns) => ( attempt === partAns ));
+    return actual.some((stepAns) => ( attempt === stepAns ));
 }
 
 function checkAnswer(attempt, actual, answerType) {

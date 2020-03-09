@@ -2,12 +2,12 @@ const problem = {
   id: 'mul1',
   title: "Example Problem",
   body: "Multiplication: Multiplying by One",
-  parts: [
+  steps: [
     {
       id: 'mul1a',
-      partTitle: "1. Compute the following equation",
-      partBody: "$1 \\times 2 = $",
-      partAnswer: "2",
+      stepTitle: "1. Compute the following equation",
+      stepBody: "$1 \\times 2 = $",
+      stepAnswer: "2",
       hints: [
         {
           title: "Carries",
@@ -24,9 +24,9 @@ const problem = {
     },
     {
       id: 'mul1b',
-      partTitle: "2. Compute the following equation",
-      partBody: "1 x 3 = ",
-      partAnswer: "3",
+      stepTitle: "2. Compute the following equation",
+      stepBody: "1 x 3 = ",
+      stepAnswer: "3",
       hints: [
         {
           title: "Carries",
@@ -43,9 +43,9 @@ const problem = {
     },
     {
       id: 'mul1c',
-      partTitle: "3. Compute the following equation",
-      partBody: "1 x 4 = ",
-      partAnswer: "4",
+      stepTitle: "3. Compute the following equation",
+      stepBody: "1 x 4 = ",
+      stepAnswer: "4",
       hints: [
         {
           title: "Carries",
@@ -62,9 +62,9 @@ const problem = {
     },
     {
       id: 'mul1d',
-      partTitle: "4. Compute the following equation",
-      partBody: "1 x 5 = ",
-      partAnswer: "5",
+      stepTitle: "4. Compute the following equation",
+      stepBody: "1 x 5 = ",
+      stepAnswer: "5",
       hints: [
         {
           title: "Carries",

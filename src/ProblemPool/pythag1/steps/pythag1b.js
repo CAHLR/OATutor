@@ -1,8 +1,8 @@
-const part = {
+const step = {
   id: 'pythag1b',
-  partTitle: "2. Horizontal Component",
-  partBody: "What is the net force, $\\sum F_x $, in the horizontal direction?",
-  partAnswer: ["-5.40", "-5.4"],
+  stepTitle: "2. Horizontal Component",
+  stepBody: "What is the net force, $\\sum F_x $, in the horizontal direction?",
+  stepAnswer: ["-5.40", "-5.4"],
   answerType: "string",
   hints: [
     {
@@ -27,4 +27,4 @@ const part = {
   ]
 }
 
-export { part };
+export { step };

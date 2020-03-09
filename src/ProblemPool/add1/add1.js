@@ -1,13 +1,13 @@
 const problem = {
-  id: 'add1', //Subparts will be in the form problem.id + 'a' and so on
+  id: 'add1', //Substeps will be in the form problem.id + 'a' and so on
   title: "Example Problem",
   body: "Long Addition",
-  parts: [
+  steps: [
     {
       id: 'add1a',
-      partTitle: "1. Compute the following equation",
-      partBody: "123 + 321 = ",
-      partAnswer: "444",
+      stepTitle: "1. Compute the following equation",
+      stepBody: "123 + 321 = ",
+      stepAnswer: "444",
       hints: [
         {
           title: "Carries",
@@ -24,9 +24,9 @@ const problem = {
     },
     {
       id: 'add1b',
-      partTitle: "2. Compute the following equation",
-      partBody: "4532 + 34 = ",
-      partAnswer: "4566",
+      stepTitle: "2. Compute the following equation",
+      stepBody: "4532 + 34 = ",
+      stepAnswer: "4566",
       hints: [
         {
           title: "Carries",
@@ -43,9 +43,9 @@ const problem = {
     },
     {
       id: 'add1c',
-      partTitle: "3. Compute the following equation",
-      partBody: "275 + 275 = ",
-      partAnswer: "550",
+      stepTitle: "3. Compute the following equation",
+      stepBody: "275 + 275 = ",
+      stepAnswer: "550",
       hints: [
         {
           title: "Carries",

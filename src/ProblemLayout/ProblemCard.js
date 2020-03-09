@@ -17,7 +17,7 @@ export default function ProblemCard(props) {
   const [isCorrect, answerIs] = useState(null);
 
   function submit() {
-    const [parsed, correctAnswer] = checkAnswer(inputVal, step.partAnswer, step.answerType); 
+    const [parsed, correctAnswer] = checkAnswer(inputVal, step.stepAnswer, step.answerType); 
 
     if (props.logData) {
       log(parsed, correctAnswer);
@@ -42,7 +42,7 @@ export default function ProblemCard(props) {
       problemID: step.id.slice(0, -1),
       stepID: step.id,
       input: inputVal,
-      answer: step.partAnswer,
+      answer: step.stepAnswer,
       isCorrect: isCorrect
 
     }
@@ -64,14 +64,14 @@ export default function ProblemCard(props) {
   return (
     <Card className={classes.card}>
       <CardContent>
-        <h2 className={classes.partHeader}>
-          {step.partTitle}
+        <h2 className={classes.stepHeader}>
+          {step.stepTitle}
           <hr />
         </h2>
 
-        <div className={classes.partBody}>
+        <div className={classes.stepBody}>
           <Latex>
-            {step.partBody}
+            {step.stepBody}
           </Latex>
         </div>
         <HintWrapper hints={props.step.hints} />
