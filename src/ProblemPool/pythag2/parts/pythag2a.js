@@ -2,7 +2,8 @@ const part = {
   id: 'pythag2a',
   partTitle: "How long is Bob's final walk?",
   partBody: "Express your answer in meters.",
-  partAnswer: "9",
+  partAnswer: ["9"],
+  answerType: "algebra",
   hints: [
     {
       id: 'pythag2a-h1',

@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import HintWrapper from './HintWrapper.js';
 import Latex from 'react-latex';
-
+import checkAnswer from '../ProblemLogic/checkAnswer.js';
 
 export default function ProblemCard(props) {
   const classes = useStyles();
@@ -17,22 +17,17 @@ export default function ProblemCard(props) {
   const [isCorrect, answerIs] = useState(null);
 
   function submit() {
-    if (isCorrect) { return }
+    const [parsed, correctAnswer] = checkAnswer(inputVal, step.partAnswer, step.answerType); 
 
     if (props.logData) {
-      log(inputVal);
+      log(parsed, correctAnswer);
     }
 
-    if (inputVal === step.partAnswer) {
-      answerIs(true);
-      props.answerMade(index, step.knowledgeComponents, true)
-    } else {
-      answerIs(false);
-      props.answerMade(index, step.knowledgeComponents, false)
-    }
+    answerIs(correctAnswer);
+    props.answerMade(index, step.knowledgeComponents, correctAnswer)
   }
 
-  function log(inputVal) {
+  function log(inputVal, isCorrect) {
     var today = new Date();
     var date = (today.getMonth() + 1) + '-' +
       today.getDate() + '-' +
@@ -48,7 +43,7 @@ export default function ProblemCard(props) {
       stepID: step.id,
       input: inputVal,
       answer: step.partAnswer,
-      isCorrect: inputVal === step.partAnswer
+      isCorrect: isCorrect
 
     }
     return props.firebase.writeData("problemSubmissions", date, data);
@@ -56,6 +51,12 @@ export default function ProblemCard(props) {
 
   function handleChange(event) {
     changeInputVal(event.target.value)
+  }
+
+  function handleKey(event) {
+    if (event.key === 'Enter') {
+      submit();
+    }
   }
 
   const checkMarkStyle = { opacity: isCorrect === true ? '100' : '0' }
@@ -80,7 +81,8 @@ export default function ProblemCard(props) {
           error={isCorrect === false}
           className={classes.inputField}
           variant="outlined"
-          onChange={(evt) => handleChange(evt)}>
+          onChange={(evt) => handleChange(evt)}
+          onKeyPress={(evt) => handleKey(evt)}>
         </TextField>
 
         <img className={classes.checkImage} style={checkMarkStyle} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
