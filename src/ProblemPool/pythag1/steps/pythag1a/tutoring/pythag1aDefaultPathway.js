@@ -1,10 +1,4 @@
-const step = {
-  id: 'pythag1a',
-  stepTitle: "1. Vertical Component",
-  stepBody: "What is the net force, $\\sum F_y $, in the vertical direction?",
-  stepAnswer: ["0.10"],
-  answerType: "algebra",
-  hints: [
+var hints = [
     {
       id: 'pythag1a-h1',
       title: "Net Force",
@@ -24,7 +18,6 @@ const step = {
       text: "The net force simply adds, so $\\sum F_y = -4.30 + 0.20 + 4.20 = 0.10N$",
       type: "solution"
     }
-  ]
-}
+]
 
-export { step };
+export {hints};
