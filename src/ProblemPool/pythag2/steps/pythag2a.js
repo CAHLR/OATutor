@@ -1,8 +1,8 @@
-const part = {
+const step = {
   id: 'pythag2a',
-  partTitle: "How long is Bob's final walk?",
-  partBody: "Express your answer in meters.",
-  partAnswer: ["9"],
+  stepTitle: "How long is Bob's final walk?",
+  stepBody: "Express your answer in meters.",
+  stepAnswer: ["9"],
   answerType: "algebra",
   hints: [
     {
@@ -26,4 +26,4 @@ const part = {
   ]
 }
 
-export { part };
+export { step };

@@ -14,7 +14,7 @@ class HintSystem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      latestPart: 0
+      latestStep: 0
     }
   }
 
@@ -23,7 +23,7 @@ class HintSystem extends React.Component {
     if (expanded && i < this.props.hints.length - 1) {
       this.props.unlockStatus[i + 1] = 1;
     }
-    this.setState({ latestPart: i });
+    this.setState({ latestStep: i });
   }
 
   render() {

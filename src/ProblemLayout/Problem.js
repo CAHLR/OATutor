@@ -14,14 +14,14 @@ class Problem extends React.Component {
     this.state = {
       problemData: props.nextProblem()
     }
-    this.partStates = {};
+    this.stepStates = {};
     this.numCorrect = 0;
-    this.parts = this.updateProblemData();
+    this.steps = this.updateProblemData();
   }
 
   updateProblemData = () => {
-    return this.state.problemData.parts.map((step, index) => {
-      this.partStates[index] = null;
+    return this.state.problemData.steps.map((step, index) => {
+      this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
         <ProblemCard step={step} index={index} answerMade={this.answerMade} firebase={this.props.firebase} logData={this.props.logData} />
       </Element>
@@ -30,8 +30,8 @@ class Problem extends React.Component {
   }
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
-    if (this.partStates[cardIndex] === true) { return }
-    this.partStates[cardIndex] = isCorrect;
+    if (this.stepStates[cardIndex] === true) { return }
+    this.stepStates[cardIndex] = isCorrect;
 
     for (var kc of kcArray) {
       console.log(kc);
@@ -41,14 +41,14 @@ class Problem extends React.Component {
 
     if (isCorrect) {
       this.numCorrect += 1;
-      if (this.numCorrect === Object.keys(this.partStates).length) {
-        scroll.scrollToTop({ duration: 900 });
-        this.partStates = {};
+      if (this.numCorrect === Object.keys(this.stepStates).length) {
+        scroll.scrollToTop({ duration: 900, smooth: true });
+        this.stepStates = {};
         this.numCorrect = 0;
 
         const problem = this.props.nextProblem();
         this.setState({ problemData: problem }, () => {
-          this.parts = this.updateProblemData();
+          this.steps = this.updateProblemData();
           this.setState({ updated: true });
         })
 
@@ -67,19 +67,19 @@ class Problem extends React.Component {
     return (
 
       <div>
-          <div class="sticky" style = {{zIndex: 1000}}>
+          <div className="sticky" style = {{zIndex: 1000}}>
           <Sticky>{({ style }) =>
             <div className={classes.prompt} style={style}>
               <div style={{paddingTop: 15}}><br/></div>
               <Card className={classes.titleCard}>
                 <CardContent>
-                  <h2 className={classes.partHeader}>
+                  <h2 className={classes.stepHeader}>
                     {this.state.problemData.title}
                     <hr />
                   </h2>
 
 
-                  <div className={classes.partBody}>
+                  <div className={classes.stepBody}>
                     <Latex>
                       {this.state.problemData.body}
                     </Latex>
@@ -93,7 +93,7 @@ class Problem extends React.Component {
           }</Sticky>
           </div>
         
-        {this.parts}
+        {this.steps}
       </div>
 
     );
@@ -102,7 +102,7 @@ class Problem extends React.Component {
 
 const styles = {
   prompt: {
-    marginLeft: 50,
+    marginLeft: 0,
     marginRight: 50,
     marginTop: 20,
     textAlign: 'center',
@@ -113,15 +113,15 @@ const styles = {
     width: '50em',
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingBottom: 0
+    paddingBottom: 0,
   },
-  partHeader: {
+  stepHeader: {
     fontSize: 25,
     marginTop: 0,
     marginLeft: 10
   },
 
-  partBody: {
+  stepBody: {
     fontSize: 20,
     marginTop: 10,
     marginLeft: 10

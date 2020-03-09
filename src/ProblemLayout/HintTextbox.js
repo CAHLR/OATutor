@@ -14,10 +14,10 @@ export default function HintTextbox(props) {
 
     if (inputVal === props.hintAnswer) {
       answerIs(true);
-      //props.answerMade(index, part.knowledgeComponents, true)
+      //props.answerMade(index, step.knowledgeComponents, true)
     } else {
       answerIs(false);
-      //props.answerMade(index, part.knowledgeComponents, false)
+      //props.answerMade(index, step.knowledgeComponents, false)
     }
   }
 
