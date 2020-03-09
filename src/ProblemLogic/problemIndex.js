@@ -16,7 +16,7 @@ for (var problem of problemIndex.problems) {
     //step.id = problem.id + String.fromCharCode("a".charCodeAt(0) + partIndex);
     step.knowledgeComponents = skillModel[step.id];
     if (debug) {
-      step.partAnswer = "0"
+      step.partAnswer = ["0"]
     }
   }
 }

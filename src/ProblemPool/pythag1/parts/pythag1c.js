@@ -2,7 +2,8 @@ const part = {
   id: 'pythag1c',
   partTitle: "3. Net Force Magnitude",
   partBody: "What is the magnitude of the net force $\\sum F_{net}$ that the car experiences? ",
-  partAnswer: "29.17",
+  partAnswer: ["29.17"],
+  answerType: "string",
   hints: [
     {
       id: 'pythag1c-h1',

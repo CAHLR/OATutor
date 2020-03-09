@@ -2,7 +2,8 @@ const part = {
   id: 'pythag1a',
   partTitle: "1. Vertical Component",
   partBody: "What is the net force, $\\sum F_y $, in the vertical direction?",
-  partAnswer: "0.10",
+  partAnswer: ["0.10"],
+  answerType: "algebra",
   hints: [
     {
       id: 'pythag1a-h1',

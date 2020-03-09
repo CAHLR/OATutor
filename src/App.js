@@ -5,7 +5,7 @@ import Problem from "./ProblemLayout/Problem";
 import { nextProblem } from "./ProblemLogic/problemIndex"
 import Firebase from "./ProblemLogic/Firebase.js";
 
-var logData = false;
+var logData = true;
 
 class App extends React.Component {
   constructor() {

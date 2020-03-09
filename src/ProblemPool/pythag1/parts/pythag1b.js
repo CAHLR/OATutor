@@ -2,7 +2,8 @@ const part = {
   id: 'pythag1b',
   partTitle: "2. Horizontal Component",
   partBody: "What is the net force, $\\sum F_x $, in the horizontal direction?",
-  partAnswer: "-5.40",
+  partAnswer: ["-5.40", "-5.4"],
+  answerType: "string",
   hints: [
     {
       id: 'pythag1b-h1',

@@ -1,7 +1,7 @@
-import {part as part1} from './parts/part1.js'
-import {part as part2} from './parts/part2.js'
-import {part as part3} from './parts/part3.js'
-import {part as part4} from './parts/part4.js'
+import {part as part1} from './parts/pythag1a.js'
+import {part as part2} from './parts/pythag1b.js'
+import {part as part3} from './parts/pythag1c.js'
+import {part as part4} from './parts/pythag1d.js'
 
 const problem = {
   id: 'pythag1', //Subparts will be in the form problem.id + 'a' and so on

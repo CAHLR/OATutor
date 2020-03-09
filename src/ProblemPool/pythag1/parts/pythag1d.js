@@ -2,7 +2,8 @@ const part = {
   id: 'pythag1d',
   partTitle: "4. Net Force Direction",
   partBody: "In what direction $\\theta_{net}$ (in degrees with respect to the x-axis) is the net force?",
-  partAnswer: "-1.06",
+  partAnswer: ["-1.06"],
+  answerType: "numeric",
   hints: [
     {
       id: 'pythag1d-h1',
