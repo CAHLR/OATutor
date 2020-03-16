@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
-import useStyles from './problemCardStyles.js';
+import { makeStyles } from '@material-ui/core/styles';
+import styles from './problemCardStyles.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 
+function useStyles () {
+  
+
+  return makeStyles(styles);
+}
 
 export default function HintTextbox(props) {
   const classes = useStyles();

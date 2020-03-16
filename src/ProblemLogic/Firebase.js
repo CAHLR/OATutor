@@ -37,6 +37,28 @@ class Firebase {
       cb(req, res, undefined)
     });
   }
+
+  log(inputVal, step, isCorrect) {
+    var today = new Date();
+    var date = (today.getMonth() + 1) + '-' +
+      today.getDate() + '-' +
+      today.getFullYear() + " " +
+      today.getHours() + ":" +
+      today.getMinutes() + ":" +
+      today.getSeconds()
+    var data = {
+      timeStamp: date,
+      siteVersion: 0.1,
+      studentID: "12345",
+      problemID: step.id.slice(0, -1),
+      stepID: step.id,
+      input: inputVal,
+      answer: step.stepAnswer,
+      isCorrect: isCorrect
+
+    }
+    return this.writeData("problemSubmissions", date, data);
+  }
 }
 export default Firebase;
 

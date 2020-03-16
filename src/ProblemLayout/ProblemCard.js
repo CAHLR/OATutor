@@ -1,96 +1,128 @@
-import React, { useState } from 'react';
-import useStyles from './problemCardStyles.js';
+import React from 'react';
+import Latex from 'react-latex';
+
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
+import IconButton from '@material-ui/core/IconButton';
+
 import HintWrapper from './HintWrapper.js';
-import Latex from 'react-latex';
 import checkAnswer from '../ProblemLogic/checkAnswer.js';
+import styles from './problemCardStyles.js';
+import { withStyles } from '@material-ui/core/styles';
 
-export default function ProblemCard(props) {
-  const classes = useStyles();
-  const step = props.step;
-  const index = props.index;
-  const [inputVal, changeInputVal] = useState("");
-  const [isCorrect, answerIs] = useState(null);
 
-  function submit() {
-    const [parsed, correctAnswer] = checkAnswer(inputVal, step.stepAnswer, step.answerType); 
 
-    if (props.logData) {
-      log(parsed, correctAnswer);
+class ProblemCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.step = props.step;
+    this.index = props.index;
+    this.state = {
+      inputVal: "",
+      isCorrect: null,
+      checkMarkOpacity: '0',
+      showHints: false,
+    }
+  }
+
+  submit = () => {
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
+
+    if (this.props.logData) {
+      this.props.firebase.log(parsed, this.step, correctAnswer);
     }
 
-    answerIs(correctAnswer);
-    props.answerMade(index, step.knowledgeComponents, correctAnswer)
+    this.setState({
+      isCorrect: correctAnswer,
+      checkMarkOpacity: correctAnswer === true ? '100' : '0'
+    });
+    this.props.answerMade(this.index, this.step.knowledgeComponents, correctAnswer);
   }
 
-  function log(inputVal, isCorrect) {
-    var today = new Date();
-    var date = (today.getMonth() + 1) + '-' +
-      today.getDate() + '-' +
-      today.getFullYear() + " " +
-      today.getHours() + ":" +
-      today.getMinutes() + ":" +
-      today.getSeconds()
-    var data = {
-      timeStamp: date,
-      siteVersion: 0.1,
-      studentID: "12345",
-      problemID: step.id.slice(0, -1),
-      stepID: step.id,
-      input: inputVal,
-      answer: step.stepAnswer,
-      isCorrect: isCorrect
-
-    }
-    return props.firebase.writeData("problemSubmissions", date, data);
+  editInput = (event) => {
+    this.setState({ inputVal: event.target.value });
   }
 
-  function handleChange(event) {
-    changeInputVal(event.target.value)
-  }
-
-  function handleKey(event) {
+  handleKey = (event) => {
     if (event.key === 'Enter') {
-      submit();
+      this.submit();
     }
   }
 
-  const checkMarkStyle = { opacity: isCorrect === true ? '100' : '0' }
+  toggleHints = (event) => {
+    this.setState(prevState => ({
+      showHints: !prevState.showHints
+    }), () => {
+      this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+    });
+  }
 
-  return (
-    <Card className={classes.card}>
-      <CardContent>
-        <h2 className={classes.stepHeader}>
-          {step.stepTitle}
-          <hr />
-        </h2>
 
-        <div className={classes.stepBody}>
-          <Latex>
-            {step.stepBody}
-          </Latex>
-        </div>
-        <HintWrapper hints={props.step.hints} />
-        <br />
+  render() {
+    const { classes } = this.props;
+    return (
+      <Card className={classes.card}>
+        <CardContent>
+          <h2 className={classes.stepHeader}>
+            {this.step.stepTitle}
+            <hr />
+          </h2>
 
-        <TextField
-          error={isCorrect === false}
-          className={classes.inputField}
-          variant="outlined"
-          onChange={(evt) => handleChange(evt)}
-          onKeyPress={(evt) => handleKey(evt)}>
-        </TextField>
+          <div className={classes.stepBody}>
+            <Latex>
+              {this.step.stepBody}
+            </Latex>
+          </div>
 
-        <img className={classes.checkImage} style={checkMarkStyle} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
+          {this.state.showHints ?
+            <div className="Hints"><HintWrapper hints={this.step.hints} rootAnswerMade={this.props.answerMade} /> <br /></div>
+            : ""}
 
-      </CardContent>
-      <CardActions>
-        <Button className={classes.button} size="small" onClick={submit}>Submit</Button>
-      </CardActions>
-    </Card>
-  );
+
+          <div className={classes.root}>
+            <Grid container spacing={0} justify="center" alignItems="center">
+              <Grid item xs={4} >
+                <Box display="flex">
+                  <Box ml="auto" mr={0}>
+                    <IconButton aria-label="delete" onClick={this.toggleHints}>
+                      <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle"/>
+                    </IconButton>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid item xs={4}>
+                <Box display="flex">
+                  <Box m="auto">
+                    <TextField
+                      error={this.state.isCorrect === false}
+                      className={classes.inputField}
+                      variant="outlined"
+                      onChange={(evt) => this.editInput(evt)}
+                      onKeyPress={(evt) => this.handleKey(evt)}>
+                    </TextField>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid item xs={4}>
+                <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
+                  src="https://image.flaticon.com/icons/svg/148/148767.svg" />
+              </Grid>
+
+            </Grid>
+          </div>
+
+        </CardContent>
+        <CardActions>
+          <Button className={classes.button} size="small" onClick={this.submit}>Submit</Button>
+        </CardActions>
+      </Card>
+
+    )
+  };
 }
+export default withStyles(styles)(ProblemCard);
