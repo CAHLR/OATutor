@@ -1,52 +1,63 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 import styles from './problemCardStyles.js';
+import checkAnswer from '../ProblemLogic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 
-function useStyles () {
-  
-
-  return makeStyles(styles);
-}
-
-export default function HintTextbox(props) {
-  const classes = useStyles();
-  const [inputVal, changeInputVal] = useState("");
-  const [isCorrect, answerIs] = useState(null);
-
-  function submit() {
-    if (isCorrect) { return }
-
-    if (inputVal === props.hintAnswer) {
-      answerIs(true);
-      //props.answerMade(index, step.knowledgeComponents, true)
-    } else {
-      answerIs(false);
-      //props.answerMade(index, step.knowledgeComponents, false)
+class HintTextbox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.hint = props.hint;
+    this.index = props.index;
+    this.state = {
+      inputVal: "",
+      isCorrect: null,
+      checkMarkOpacity: '0',
+      showHints: false,
     }
   }
 
-  function handleChange(event) {
-    changeInputVal(event.target.value)
+  submit = () => {
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, "hint");
+
+    this.setState({
+      isCorrect: correctAnswer,
+      checkMarkOpacity: correctAnswer === true ? '100' : '0'
+    }, () => parsed);
   }
 
-  const checkMarkStyle = { opacity: isCorrect === true ? '100' : '0' }
+  editInput = (event) => {
+    this.setState({ inputVal: event.target.value });
+  }
 
-  return (
-    <div>
-      <TextField
-        error={isCorrect === false}
-        className={classes.inputHintField}
-        variant="outlined"
-        onChange={(evt) => handleChange(evt)}>
-      </TextField>
-      <img className={classes.checkImage} style={checkMarkStyle} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
-      
-      <div className={classes.center}>
-        <Button className={classes.button} size="small" onClick={submit} styles={{ marginLeft: "50em" }}>Submit</Button>
+  handleKey = (event) => {
+    if (event.key === 'Enter') {
+      this.submit();
+    }
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <div>
+        <TextField
+          error={this.state.isCorrect === false}
+          className={classes.inputHintField}
+          variant="outlined"
+          onChange={(evt) => this.editInput(evt)}
+          onKeyPress={(evt) => this.handleKey(evt)}>
+
+        </TextField>
+        <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} src="https://image.flaticon.com/icons/svg/148/148767.svg" alt="" />
+
+        <div className={classes.center}>
+          <Button className={classes.button} size="small" onClick={this.submit} styles={{ marginLeft: "50em" }}>Submit</Button>
+        </div>
+
       </div>
-
-    </div>
-  );
+    );
+  }
 }
+
+export default withStyles(styles)(HintTextbox);

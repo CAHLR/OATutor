@@ -9,7 +9,8 @@ var hints = [
       id: 'pythag1a-h2',
       title: "Net Force Example",
       text: "What is the net vertical force if there are 2 vertical forces 2N, 3N?",
-      hintAnswer: "5",
+      hintAnswer: ["5"],
+      answerType: "numeric",
       type: "scaffold"
     },
     {
