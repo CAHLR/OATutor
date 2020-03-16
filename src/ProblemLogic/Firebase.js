@@ -3,8 +3,9 @@ import config from './credentials.js';
 
 class Firebase {
 
-  constructor() {
+  constructor(id) {
     firebase.initializeApp(config);
+    this.id = id;
     this.db = firebase.firestore();
     this.db.settings({
       timestampsInSnapshots: true
@@ -49,7 +50,7 @@ class Firebase {
     var data = {
       timeStamp: date,
       siteVersion: 0.1,
-      studentID: "12345",
+      studentID: this.id,
       problemID: step.id.slice(0, -1),
       stepID: step.id,
       input: inputVal,

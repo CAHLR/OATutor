@@ -1,3 +1,3 @@
-import {preferredPathway} from '../config.js'
+import {preferredPathway} from '../config/config.js'
 
 export {preferredPathway};
