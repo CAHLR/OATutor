@@ -18,6 +18,7 @@ class HintWrapper extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
+        
         <ExpansionPanel>
           <ExpansionPanelSummary
             expandIcon={<ExpandMoreIcon />}

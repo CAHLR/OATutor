@@ -31,13 +31,16 @@ class Problem extends React.Component {
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
     if (this.stepStates[cardIndex] === true) { return }
-    this.stepStates[cardIndex] = isCorrect;
 
-    for (var kc of kcArray) {
-      console.log(kc);
-      update(knowledgeComponentModels[kc], isCorrect);
-      console.log(knowledgeComponentModels[kc].probMastery);
+    if (this.stepStates[cardIndex] === null) {
+      for (var kc of kcArray) {
+        console.log(kc);
+        update(knowledgeComponentModels[kc], isCorrect);
+        console.log(knowledgeComponentModels[kc].probMastery);
+      }
     }
+
+    this.stepStates[cardIndex] = isCorrect;
 
     if (isCorrect) {
       this.numCorrect += 1;
@@ -67,18 +70,16 @@ class Problem extends React.Component {
     return (
 
       <div>
-          <div className="sticky" style = {{zIndex: 1000}}>
+        <div className="sticky" style={{ zIndex: 1000 }}>
           <Sticky>{({ style }) =>
             <div className={classes.prompt} style={style}>
-              <div style={{paddingTop: 15}}><br/></div>
+              <div style={{ paddingTop: 15 }}><br /></div>
               <Card className={classes.titleCard}>
                 <CardContent>
                   <h2 className={classes.stepHeader}>
                     {this.state.problemData.title}
                     <hr />
                   </h2>
-
-
                   <div className={classes.stepBody}>
                     <Latex>
                       {this.state.problemData.body}
@@ -91,8 +92,8 @@ class Problem extends React.Component {
 
             </div>
           }</Sticky>
-          </div>
-        
+        </div>
+
         {this.steps}
       </div>
 

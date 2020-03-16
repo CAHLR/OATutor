@@ -1,6 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
+const styles = {
     card: {
         width: '50em',
         marginLeft: 'auto',
@@ -51,7 +49,8 @@ const useStyles = makeStyles({
 
     inputField: {
         width: '10em',
-        marginLeft: '19em'
+        textAlign: 'center',
+        //marginLeft: '19em'
 
     },
 
@@ -70,9 +69,14 @@ const useStyles = makeStyles({
         width: '3em',
         marginLeft: '0.5em',
         marginRight: '4.3em'
-    }
+    },
+
+    root: {
+        flexGrow: 1,
+    },
+    
 
 
-});
+};
 
-export default useStyles;
+export default styles;
