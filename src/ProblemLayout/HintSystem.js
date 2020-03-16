@@ -14,7 +14,8 @@ class HintSystem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      latestStep: 0
+      latestStep: 0,
+      hintAnswer: ""
     }
   }
 
@@ -47,7 +48,7 @@ class HintSystem extends React.Component {
               <Latex>
                 {hint.text}
               </Latex>
-              {hint.type === "scaffold" ? <div><br/><HintTextbox hintAnswer={hint.hintAnswer} /></div> : "" }
+              {hint.type === "scaffold" ? <div><br/><HintTextbox hint={hint}/></div> : "" }
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
