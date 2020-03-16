@@ -7,6 +7,7 @@ import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import { update, knowledgeComponentModels } from '../BKT/BKTBrains'
 import Latex from 'react-latex';
 import { Sticky } from 'react-sticky';
+import renderText from './renderText.js';
 
 class Problem extends React.Component {
   constructor(props) {
@@ -82,7 +83,7 @@ class Problem extends React.Component {
                   </h2>
                   <div className={classes.stepBody}>
                     <Latex>
-                      {this.state.problemData.body}
+                      {renderText(this.state.problemData.body)}
                     </Latex>
                   </div>
                   <br />

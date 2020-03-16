@@ -5,8 +5,8 @@ import Problem from "./ProblemLayout/Problem";
 import { nextProblem } from "./ProblemLogic/problemIndex"
 import Firebase from "./ProblemLogic/Firebase.js";
 import { StickyContainer, Sticky } from 'react-sticky';
+import { logData } from './config.js';
 
-var logData = false;
 
 class App extends React.Component {
   constructor() {
