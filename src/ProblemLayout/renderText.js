@@ -1,4 +1,4 @@
-import {dynamicText} from '../config.js'
+import {dynamicText} from '../config/config.js'
 
 export default function renderText(text) {
     var result = text;
