@@ -29,7 +29,13 @@ const skillModel = {
     pythag1c: ["short-multiplication"],
     pythag1d: ["short-multiplication"],
 
-    pythag2a: ["addition"],
+    pythag2a: ["short-multiplication"],
+
+    circle1a: ["addition"],
+    circle1b: ["addition"],
+
+    circle2a: ["long-multiplication"],
+    circle2b: ["long-multiplication"],
 
 }
 

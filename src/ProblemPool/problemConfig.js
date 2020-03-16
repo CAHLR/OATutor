@@ -1,3 +1,3 @@
-const preferredPathway = "defaultPathway";
+import {preferredPathway} from '../config.js'
 
 export {preferredPathway};
