@@ -1,15 +1,16 @@
 import firebase from 'firebase';
-import config from './credentials.js';
+import { credentials, treatmentAssigner } from '../config/config.js';
 
 class Firebase {
 
   constructor(id) {
-    firebase.initializeApp(config);
+    firebase.initializeApp(credentials);
     this.id = id;
     this.db = firebase.firestore();
     this.db.settings({
       timestampsInSnapshots: true
     });
+    this.treatment = treatmentAssigner("getTreatment", id);
   }
 
   /*
@@ -55,8 +56,8 @@ class Firebase {
       stepID: step.id,
       input: inputVal,
       answer: step.stepAnswer,
-      isCorrect: isCorrect
-
+      isCorrect: isCorrect,
+      treatment: this.treatment
     }
     return this.writeData("problemSubmissions", date, data);
   }

@@ -4,20 +4,28 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
-import { update, knowledgeComponentModels } from '../BKT/BKTBrains'
+import update from '../BKT/BKTBrains.js'
 import Latex from 'react-latex';
 import { Sticky } from 'react-sticky';
 import renderText from './renderText.js';
 
+import { treatmentAssigner } from '../config/config.js';
+
+
+
 class Problem extends React.Component {
   constructor(props) {
     super(props);
+    this.bktParams = treatmentAssigner("getBKTParams", props.userID);
+    console.log(this.bktParams);
+    this.heuristic = treatmentAssigner("getProblemSelectHeuristic", props.userID);
     this.state = {
-      problemData: props.nextProblem()
+      problemData: props.nextProblem(this.heuristic, this.bktParams)
     }
     this.stepStates = {};
     this.numCorrect = 0;
     this.steps = this.updateProblemData();
+    
   }
 
   updateProblemData = () => {
@@ -36,8 +44,8 @@ class Problem extends React.Component {
     if (this.stepStates[cardIndex] === null) {
       for (var kc of kcArray) {
         console.log(kc);
-        update(knowledgeComponentModels[kc], isCorrect);
-        console.log(knowledgeComponentModels[kc].probMastery);
+        update(this.bktParams[kc], isCorrect);
+        console.log(this.bktParams[kc].probMastery);
       }
     }
 
@@ -50,7 +58,7 @@ class Problem extends React.Component {
         this.stepStates = {};
         this.numCorrect = 0;
 
-        const problem = this.props.nextProblem();
+        const problem = this.props.nextProblem(this.heuristic, this.bktParams);
         this.setState({ problemData: problem }, () => {
           this.steps = this.updateProblemData();
           this.setState({ updated: true });

@@ -1,11 +1,19 @@
-import knowledgeComponentModels from './knowledgeComponentModels.js';
+import treatmentAssigner from './treatmentAssigner.js';
 import algebraCheckOptions from './algebraCheck.js';
+import credentials from './credentials.js';
+import skillModel from './skillModel.js';
 
-const preferredPathway = "defaultPathway";
-const logData = false;
+const logData = true;
 
 const dynamicText = {
     "%CAR%": "Tesla car"
 };
 
-export {preferredPathway, logData, dynamicText, knowledgeComponentModels, algebraCheckOptions}
+export { 
+    treatmentAssigner,
+    logData, 
+    dynamicText, 
+    algebraCheckOptions, 
+    credentials, 
+    skillModel
+}

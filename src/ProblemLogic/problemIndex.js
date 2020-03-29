@@ -1,12 +1,9 @@
 import problemPool from '../ProblemPool/problemPool.js'
-import { knowledgeComponentModels } from "../BKT/BKTBrains";
-import skillModel from './skillModel.js' //Can change to different skillModels
-import heuristic from './heuristic.js'
+import { skillModel } from '../config/config.js' 
 
 const problemIndex = {
   problems: problemPool
 };
-console.log(problemIndex)
 
 const debug = true;
 
@@ -21,9 +18,9 @@ for (var problem of problemIndex.problems) {
   }
 }
 
-console.log(problemIndex);
 
-function nextProblem() {
+
+function nextProblem(heuristic, bktParams) {
   var chosenMasteryProblem = null;
   var chosenMasteryLevel = null;
 
@@ -33,8 +30,7 @@ function nextProblem() {
     for (var step of problem.steps) {
       console.log(step);
       for (var kc of step.knowledgeComponents) {
-        // console.log(knowledgeComponentModels, kc, knowledgeComponentModels[kc])
-        probMasterySum += knowledgeComponentModels[kc].probMastery;
+        probMasterySum += bktParams[kc].probMastery;
         totalProbs += 1;
       }
     }

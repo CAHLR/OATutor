@@ -20,11 +20,20 @@ class HintSystem extends React.Component {
   }
 
 
-  unlockHint = (event, expanded, i) => {
-    if (expanded && i < this.props.hints.length - 1) {
-      this.props.unlockStatus[i + 1] = 1;
+  finishHint = (event, expanded, i) => {
+    if (expanded && i < this.props.hintStatus.length - 1) {
+      this.props.finishHint(i);
     }
     this.setState({ latestStep: i });
+  }
+
+  isLocked = (hintNum) => {
+    if (hintNum === 0) {
+      return false;
+    }
+    var dependencies = this.props.hints[hintNum].dependencies;
+    var isSatisfied = dependencies.every(dependency => this.props.hintStatus[dependency] === 1);
+    return !isSatisfied;
   }
 
   render() {
@@ -33,15 +42,15 @@ class HintSystem extends React.Component {
       <div className={classes.root}>
         {this.props.hints.map((hint, i) => {
           return <ExpansionPanel key={i}
-            onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
-            disabled={this.props.unlockStatus[i] === 0}>
+            onChange={(event, expanded) => this.finishHint(event, expanded, i)}
+            disabled={this.isLocked(i)}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {hint.title} {this.props.unlockStatus[i] === 0 ? " [LOCKED]" : ""}</Typography>
+                Hint {i + 1}: {hint.title} {this.isLocked(i) ? " [LOCKED]" : ""}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
             <Typography component={'span'}>

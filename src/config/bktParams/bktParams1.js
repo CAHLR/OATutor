@@ -1,4 +1,4 @@
-var knowledgeComponentModels = {
+var bktParams = {
     "addition": {
         probMastery: 0.1,
         probTransit: 0.1,
@@ -19,4 +19,4 @@ var knowledgeComponentModels = {
     }
 };
 
-export default knowledgeComponentModels;
+export {bktParams};

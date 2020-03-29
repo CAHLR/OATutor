@@ -10,10 +10,10 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
-import HintWrapper from './HintWrapper.js';
 import checkAnswer from '../ProblemLogic/checkAnswer.js';
 import styles from './problemCardStyles.js';
 import { withStyles } from '@material-ui/core/styles';
+import HintSystem from './HintSystem.js';
 
 
 
@@ -27,6 +27,7 @@ class ProblemCard extends React.Component {
       isCorrect: null,
       checkMarkOpacity: '0',
       showHints: false,
+      hintsFinished: new Array(this.step.hints.length).fill(0)
     }
   }
 
@@ -62,6 +63,13 @@ class ProblemCard extends React.Component {
     });
   }
 
+  finishHint = (hintNum) => {
+    this.setState(prevState => {
+      prevState.hintsFinished[hintNum] = 1;
+      return { hintsFinished: prevState.hintsFinished }
+    });
+  }
+
 
   render() {
     const { classes } = this.props;
@@ -80,7 +88,7 @@ class ProblemCard extends React.Component {
           </div>
 
           {this.state.showHints ?
-            <div className="Hints"><HintWrapper hints={this.step.hints} rootAnswerMade={this.props.answerMade} /> <br /></div>
+            <div className="Hints"><HintSystem hints={this.step.hints} finishHint={this.finishHint} hintStatus={this.state.hintsFinished}/> <br /></div>
             : ""}
 
 
