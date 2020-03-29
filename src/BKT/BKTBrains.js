@@ -1,6 +1,4 @@
-import { knowledgeComponentModels } from '../config/config.js';
-
-function update(model, isCorrect) {
+export default function update(model, isCorrect) {
     let numerator;
     let masteryAndGuess;
     if (isCorrect) {
@@ -14,5 +12,3 @@ function update(model, isCorrect) {
     let probMasteryGivenObservation = numerator / (numerator + masteryAndGuess);
     model.probMastery = probMasteryGivenObservation + ((1 - probMasteryGivenObservation) * model.probTransit);
 }
-
-export { update, knowledgeComponentModels };
