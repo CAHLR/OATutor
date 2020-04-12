@@ -5,14 +5,16 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import { nextProblem } from "./ProblemLogic/problemIndex.js"
 import Problem from "./ProblemLayout/Problem";
 import Firebase from "./ProblemLogic/Firebase.js";
-import { logData } from './config/config.js';
+import { logData, ThemeContext } from './config/config.js';
 
 class Platform extends React.Component {
-  constructor(props) {
+  static contextType = ThemeContext;
+
+  constructor(props, context) {
     super(props);
     this.firebase = null;
     if (logData) {
-        this.firebase = new Firebase(props.userID);
+        this.firebase = new Firebase(context);
       }
   }
 
@@ -27,7 +29,7 @@ class Platform extends React.Component {
               </AppBar></div>}
             </Sticky>
           </div>
-          <Problem nextProblem={nextProblem} firebase={this.firebase} logData={logData} userID= {this.props.userID}/>
+          <Problem nextProblem={nextProblem} firebase={this.firebase} logData={logData} />
         </div>
       </StickyContainer>
     );

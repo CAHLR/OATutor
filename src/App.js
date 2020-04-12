@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 import Cookies from 'universal-cookie';
 import Platform from './Platform.js';
+import {ThemeContext} from './config/config.js';
 
 const cookies = new Cookies();
 const cookieID = "openITS-id";
+
 
 class App extends React.Component {
   constructor() {
@@ -20,7 +22,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <Platform userID= {this.userID}/>
+      <ThemeContext.Provider value={this.userID}>
+        <Platform />
+      </ThemeContext.Provider>
     );
   }
 }

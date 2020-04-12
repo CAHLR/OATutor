@@ -15,19 +15,26 @@ import styles from './problemCardStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 
+import { ThemeContext } from '../config/config.js';
+import { getTreatment, hintPathway } from '../config/treatmentAssigner.js';
 
 
 class ProblemCard extends React.Component {
-  constructor(props) {
+  static contextType = ThemeContext;
+
+  constructor(props, context) {
     super(props);
     this.step = props.step;
     this.index = props.index;
+    this.hints = (getTreatment(context) === 0) ? 
+      this.step.hints[hintPathway.hintPathway1] : this.step.hints[hintPathway.hintPathway2];
+
     this.state = {
       inputVal: "",
       isCorrect: null,
       checkMarkOpacity: '0',
       showHints: false,
-      hintsFinished: new Array(this.step.hints.length).fill(0)
+      hintsFinished: new Array(this.hints.length).fill(0)
     }
   }
 
@@ -70,7 +77,6 @@ class ProblemCard extends React.Component {
     });
   }
 
-
   render() {
     const { classes } = this.props;
     return (
@@ -88,7 +94,7 @@ class ProblemCard extends React.Component {
           </div>
 
           {this.state.showHints ?
-            <div className="Hints"><HintSystem hints={this.step.hints} finishHint={this.finishHint} hintStatus={this.state.hintsFinished}/> <br /></div>
+            <div className="Hints"><HintSystem hints={this.hints} finishHint={this.finishHint} hintStatus={this.state.hintsFinished}/> <br /></div>
             : ""}
 
 

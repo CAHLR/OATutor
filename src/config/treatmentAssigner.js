@@ -9,45 +9,24 @@ function getTreatment(userID) {
     return userID % 2;
 }
 
-function getBKTParams(userID) {
-    var treatment = getTreatment(userID);
-    if (treatment === 0) {
-        return bktParams1;
-    } else {
-        return bktParams2;
-    }
+var bktParams = {
+    bktParams1: bktParams1,
+    bktParams2: bktParams2
 }
 
-function getProblemSelectHeuristic(userID) {
-    var treatment = getTreatment(userID);
-    console.log("treat", treatment);
-    if (treatment === 0) {
-        return lowestHeuristic;
-    } else {
-        return highestHeuristic;
-    }
+var heuristic = {
+    lowestHeuristic: lowestHeuristic,
+    highestHeuristic: highestHeuristic,
 }
 
-function getHintPathway(userID) {
-    var treatment = getTreatment(userID);
-    if (treatment === 0) {
-        return hintPathway1;
-    } else {
-        return hintPathway2;
-    }
+var hintPathway = {
+    hintPathway1: hintPathway1,
+    hintPathway2: hintPathway2
 }
 
-export default function treatmentAssigner(type, userID) {
-    if (type === "getTreatment") {
-        return getTreatment(userID);
-    } else if (type === "getBKTParams") {
-        return getBKTParams(userID);
-    } else if (type === "getProblemSelectHeuristic") {
-        return getProblemSelectHeuristic(userID);
-    } else if (type === "getHintPathway") {
-        return getHintPathway(userID);
-    } else { // Invalid request
-        return null;
-    }
+export { 
+    getTreatment, 
+    bktParams,
+    heuristic,
+    hintPathway
 }
-

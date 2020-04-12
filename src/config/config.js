@@ -1,4 +1,4 @@
-import treatmentAssigner from './treatmentAssigner.js';
+import React from 'react';
 import algebraCheckOptions from './algebraCheck.js';
 import credentials from './credentials.js';
 import skillModel from './skillModel.js';
@@ -9,11 +9,13 @@ const dynamicText = {
     "%CAR%": "Tesla car"
 };
 
+const ThemeContext = React.createContext(0);
+
 export { 
-    treatmentAssigner,
     logData, 
     dynamicText, 
     algebraCheckOptions, 
     credentials, 
-    skillModel
+    skillModel,
+    ThemeContext
 }

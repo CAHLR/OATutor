@@ -7,18 +7,18 @@ import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
 import Latex from 'react-latex';
 import { Sticky } from 'react-sticky';
-import renderText from './renderText.js';
+import renderText from '../ProblemLogic/renderText.js';
 
-import { treatmentAssigner } from '../config/config.js';
-
-
+import { getTreatment, bktParams, heuristic } from '../config/treatmentAssigner.js';
+import {ThemeContext} from '../config/config.js';
 
 class Problem extends React.Component {
-  constructor(props) {
+  static contextType = ThemeContext;
+
+  constructor(props, context) {
     super(props);
-    this.bktParams = treatmentAssigner("getBKTParams", props.userID);
-    console.log(this.bktParams);
-    this.heuristic = treatmentAssigner("getProblemSelectHeuristic", props.userID);
+    this.bktParams = (getTreatment(context) === 0) ? bktParams.bktParams1 : bktParams.bktParams2;
+    this.heuristic = (getTreatment(context) === 0) ? heuristic.lowestHeuristic : heuristic.highestHeuristic;
     this.state = {
       problemData: props.nextProblem(this.heuristic, this.bktParams)
     }
