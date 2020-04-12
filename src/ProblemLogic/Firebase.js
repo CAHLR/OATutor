@@ -1,5 +1,6 @@
 import firebase from 'firebase';
-import { credentials, treatmentAssigner } from '../config/config.js';
+import { credentials } from '../config/config.js';
+import { getTreatment } from '../config/treatmentAssigner.js'
 
 class Firebase {
 
@@ -7,10 +8,7 @@ class Firebase {
     firebase.initializeApp(credentials);
     this.id = id;
     this.db = firebase.firestore();
-    this.db.settings({
-      timestampsInSnapshots: true
-    });
-    this.treatment = treatmentAssigner("getTreatment", id);
+    this.treatment = getTreatment(id);
   }
 
   /*
