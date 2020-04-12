@@ -21,7 +21,7 @@ class HintSystem extends React.Component {
 
 
   finishHint = (event, expanded, i) => {
-    if (expanded && i < this.props.hintStatus.length - 1) {
+    if (expanded && i < this.props.hintStatus.length ) {
       this.props.finishHint(i);
     }
     this.setState({ latestStep: i });
@@ -57,7 +57,7 @@ class HintSystem extends React.Component {
               <Latex>
                 {hint.text}
               </Latex>
-              {hint.type === "scaffold" ? <div><br/><HintTextbox hint={hint}/></div> : "" }
+              {hint.type === "scaffold" ? <div><br/><HintTextbox hint={hint} logData = {this.props.logData} firebase={this.props.firebase}/></div> : "" }
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>

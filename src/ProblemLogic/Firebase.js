@@ -21,6 +21,7 @@ class Firebase {
       this.db.collection(collection).doc(document).set(data);
       return 0;
     } catch (err) {
+      console.log(err);
       return -1;
     }
   }
@@ -38,25 +39,59 @@ class Firebase {
     });
   }
 
-  log(inputVal, step, isCorrect) {
+  log(inputVal, step, isCorrect, hintsFinished) {
     var today = new Date();
     var date = (today.getMonth() + 1) + '-' +
       today.getDate() + '-' +
       today.getFullYear() + " " +
       today.getHours() + ":" +
       today.getMinutes() + ":" +
-      today.getSeconds()
+      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
     var data = {
       timeStamp: date,
       siteVersion: 0.1,
       studentID: this.id,
       problemID: step.id.slice(0, -1),
       stepID: step.id,
+      hintID: null,
       input: inputVal,
-      answer: step.stepAnswer,
+      correctAnswer: step.stepAnswer,
       isCorrect: isCorrect,
-      treatment: this.treatment
+      hintInput: null,
+      hintAnswer: null,
+      hintIsCorrect: null,
+      treatment: this.treatment,
+      hintsFinished: hintsFinished
     }
+    return this.writeData("problemSubmissions", date, data);
+  }
+
+  hintLog(hintInput, hint, isCorrect) {
+    var today = new Date();
+    var date = (today.getMonth() + 1) + '-' +
+      today.getDate() + '-' +
+      today.getFullYear() + " " +
+      today.getHours() + ":" +
+      today.getMinutes() + ":" +
+      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
+
+    var data = {
+      timeStamp: date,
+      siteVersion: 0.1,
+      studentID: this.id,
+      problemID: null,
+      stepID: null,
+      hintID: null,
+      input: null,
+      correctAnswer: null,
+      isCorrect: isCorrect,
+      hintInput: hintInput,
+      hintAnswer: hint.hintAnswer,
+      hintIsCorrect: isCorrect,
+      treatment: this.treatment,
+      hintsFinished: null
+    }
+    console.log(data);
     return this.writeData("problemSubmissions", date, data);
   }
 }
