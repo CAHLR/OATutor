@@ -26,8 +26,14 @@ class ProblemCard extends React.Component {
     super(props);
     this.step = props.step;
     this.index = props.index;
-    this.hints = (getTreatment(context) === 0) ? 
+    this.hints = (getTreatment(context) === 0) ?
       this.step.hints[hintPathway.hintPathway1] : this.step.hints[hintPathway.hintPathway2];
+
+    // A-B testing - Treatment 0: Remove the solution
+    if (getTreatment(context) === 0 && this.hints[this.hints.length - 1].type === 'solution') {
+      this.hints.pop();
+      console.log("hints", this.hints);
+    }
 
     this.state = {
       inputVal: "",
@@ -42,7 +48,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
 
     if (this.props.logData) {
-      this.props.firebase.log(parsed, this.step, correctAnswer);
+      this.props.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished);
     }
 
     this.setState({
@@ -66,7 +72,9 @@ class ProblemCard extends React.Component {
     this.setState(prevState => ({
       showHints: !prevState.showHints
     }), () => {
-      this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+      if (this.props.logData) {
+        this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+      }
     });
   }
 
@@ -74,6 +82,8 @@ class ProblemCard extends React.Component {
     this.setState(prevState => {
       prevState.hintsFinished[hintNum] = 1;
       return { hintsFinished: prevState.hintsFinished }
+    }, () => {
+      this.props.firebase.log(null, this.step, null, this.state.hintsFinished);
     });
   }
 
@@ -94,7 +104,15 @@ class ProblemCard extends React.Component {
           </div>
 
           {this.state.showHints ?
-            <div className="Hints"><HintSystem hints={this.hints} finishHint={this.finishHint} hintStatus={this.state.hintsFinished}/> <br /></div>
+            <div className="Hints">
+              <HintSystem
+                hints={this.hints}
+                finishHint={this.finishHint}
+                hintStatus={this.state.hintsFinished}
+                logData={this.props.logData}
+                firebase={this.props.firebase}
+              />
+              <br /></div>
             : ""}
 
 
@@ -104,7 +122,7 @@ class ProblemCard extends React.Component {
                 <Box display="flex">
                   <Box ml="auto" mr={0}>
                     <IconButton aria-label="delete" onClick={this.toggleHints}>
-                      <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle"/>
+                      <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
                     </IconButton>
                   </Box>
                 </Box>

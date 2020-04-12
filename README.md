@@ -61,7 +61,7 @@ Code for this project is located in the `src` directory.
 ## src
 
 - `App.css`: Top level style sheet, contains colors for headers/logo
-- `App.js`: Top level script, generates cookie/userID.
+- `App.js`: Top level script, generates cookie. Sets the userID as part of the context
 - `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the problem component)
 - `index.js`: Renders `App.js`
 
@@ -93,6 +93,8 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 - `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
 
+- `renderText.js`: Method called to render text. Fills in dynamic text generation.
+
 
 ## ProblemPool [Configurable]
 - Each problem is contained in its own folder. 
@@ -103,7 +105,7 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 ## Config [Configurable]
 - `config.js`: Central place where options can be configured
 
-- `treatmentAssigner.js`: Function that given the UserID, return the appropriate treatment (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
+- `treatmentAssigner.js`: Gets the treatment id given a userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
 
 - `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the BKT model.
 
