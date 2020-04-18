@@ -89,7 +89,9 @@ class ProblemCard extends React.Component {
       prevState.hintsFinished[hintNum] = 1;
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
-      this.props.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
+      if (this.props.logData) {
+        this.props.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
+      }
     });
   }
 

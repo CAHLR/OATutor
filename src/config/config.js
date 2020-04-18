@@ -27,7 +27,7 @@ var hintPathway = {
 
 const siteVersion = 1.0;
 
-const logData = true;
+const logData = false;
 
 const dynamicText = {
     "%CAR%": "Tesla car"
