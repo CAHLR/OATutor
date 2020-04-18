@@ -93,7 +93,7 @@ class Problem extends React.Component {
                     <hr />
                   </h2>
                   <div className={classes.stepBody}>
-                    {renderText(this.state.problemData.body)}
+                    {renderText(this.state.problemData.body, this.state.problemData.id)}
                   </div>
                 </CardContent>
               </Card>
