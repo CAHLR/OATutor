@@ -9,7 +9,7 @@ import Latex from 'react-latex';
 import { Sticky } from 'react-sticky';
 import renderText from '../ProblemLogic/renderText.js';
 
-import { getTreatment, bktParams, heuristic } from '../config/treatmentAssigner.js';
+import { getTreatment, bktParams, heuristic } from '../config/config.js';
 import {ThemeContext} from '../config/config.js';
 
 class Problem extends React.Component {

@@ -16,7 +16,7 @@ import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 
 import { ThemeContext } from '../config/config.js';
-import { getTreatment, hintPathway } from '../config/treatmentAssigner.js';
+import { getTreatment, hintPathway } from '../config/config.js';
 
 
 class ProblemCard extends React.Component {
@@ -29,9 +29,15 @@ class ProblemCard extends React.Component {
     this.hints = (getTreatment(context) === 0) ?
       this.step.hints[hintPathway.hintPathway1] : this.step.hints[hintPathway.hintPathway2];
 
-    // A-B testing - Treatment 0: Remove the solution
-    if (getTreatment(context) === 0 && this.hints[this.hints.length - 1].type === 'solution') {
-      this.hints.pop();
+    // A-B testing - Treatment 0: No bottom-out hints
+    if (getTreatment(context) === 0 && this.hints[this.hints.length - 1].type !== 'bottomOut') {
+      this.hints.push({
+        id: this.step.id + "-h" + (this.hints.length),
+        title: "Answer",
+        text: "The answer is " + this.step.stepAnswer,
+        type: "bottomOut",
+        dependencies: Array.from(Array(this.hints.length).keys())
+      })
       console.log("hints", this.hints);
     }
 
@@ -48,7 +54,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
 
     if (this.props.logData) {
-      this.props.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished);
+      this.props.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
     }
 
     this.setState({
@@ -83,8 +89,14 @@ class ProblemCard extends React.Component {
       prevState.hintsFinished[hintNum] = 1;
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
-      this.props.firebase.log(null, this.step, null, this.state.hintsFinished);
+      this.props.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
     });
+  }
+
+  submitHint = (parsed, hint, correctAnswer) => {
+    if (this.props.logData) {
+      this.props.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
+    }
   }
 
   render() {
@@ -109,8 +121,7 @@ class ProblemCard extends React.Component {
                 hints={this.hints}
                 finishHint={this.finishHint}
                 hintStatus={this.state.hintsFinished}
-                logData={this.props.logData}
-                firebase={this.props.firebase}
+                submitHint={this.submitHint}
               />
               <br /></div>
             : ""}

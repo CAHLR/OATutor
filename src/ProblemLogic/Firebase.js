@@ -1,6 +1,5 @@
 import firebase from 'firebase';
-import { credentials } from '../config/config.js';
-import { getTreatment } from '../config/treatmentAssigner.js'
+import { credentials, getTreatment, siteVersion } from '../config/config.js';
 
 class Firebase {
 
@@ -9,6 +8,7 @@ class Firebase {
     this.id = id;
     this.db = firebase.firestore();
     this.treatment = getTreatment(id);
+    this.siteVersion = siteVersion;
   }
 
   /*
@@ -39,17 +39,22 @@ class Firebase {
     });
   }
 
-  log(inputVal, step, isCorrect, hintsFinished) {
+  getDate() {
     var today = new Date();
-    var date = (today.getMonth() + 1) + '-' +
-      today.getDate() + '-' +
-      today.getFullYear() + " " +
-      today.getHours() + ":" +
-      today.getMinutes() + ":" +
-      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
+    return (today.getMonth() + 1) + '-' +
+    today.getDate() + '-' +
+    today.getFullYear() + " " +
+    today.getHours() + ":" +
+    today.getMinutes() + ":" +
+    (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
+  }
+
+  log(inputVal, step, isCorrect, hintsFinished, eventType) {
+    var date = this.getDate();
     var data = {
       timeStamp: date,
-      siteVersion: 0.1,
+      eventType: eventType,
+      siteVersion: this.siteVersion,
       studentID: this.id,
       problemID: step.id.slice(0, -1),
       stepID: step.id,
@@ -66,30 +71,24 @@ class Firebase {
     return this.writeData("problemSubmissions", date, data);
   }
 
-  hintLog(hintInput, hint, isCorrect) {
-    var today = new Date();
-    var date = (today.getMonth() + 1) + '-' +
-      today.getDate() + '-' +
-      today.getFullYear() + " " +
-      today.getHours() + ":" +
-      today.getMinutes() + ":" +
-      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
-
+  hintLog(hintInput, step, hint, isCorrect, hintsFinished) {
+    var date = this.getDate();
     var data = {
       timeStamp: date,
-      siteVersion: 0.1,
+      eventType: "hintScaffoldLog",
+      siteVersion: this.siteVersion,
       studentID: this.id,
-      problemID: null,
-      stepID: null,
-      hintID: null,
+      problemID: step.id.slice(0, -1),
+      stepID: step.id, 
+      hintID: hint.id,
       input: null,
       correctAnswer: null,
-      isCorrect: isCorrect,
+      isCorrect: null,
       hintInput: hintInput,
       hintAnswer: hint.hintAnswer,
       hintIsCorrect: isCorrect,
       treatment: this.treatment,
-      hintsFinished: null
+      hintsFinished: hintsFinished
     }
     console.log(data);
     return this.writeData("problemSubmissions", date, data);

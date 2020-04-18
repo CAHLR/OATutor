@@ -21,7 +21,7 @@ class HintSystem extends React.Component {
 
 
   finishHint = (event, expanded, i) => {
-    if (expanded && i < this.props.hintStatus.length ) {
+    if (expanded && i < this.props.hintStatus.length) {
       this.props.finishHint(i);
     }
     this.setState({ latestStep: i });
@@ -53,11 +53,12 @@ class HintSystem extends React.Component {
                 Hint {i + 1}: {hint.title} {this.isLocked(i) ? " [LOCKED]" : ""}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-            <Typography component={'span'}>
-              <Latex>
-                {hint.text}
-              </Latex>
-              {hint.type === "scaffold" ? <div><br/><HintTextbox hint={hint} logData = {this.props.logData} firebase={this.props.firebase}/></div> : "" }
+              <Typography component={'span'}>
+                <Latex>
+                  {hint.text}
+                </Latex>
+                {hint.type === "scaffold" ?
+                  <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint}/></div> : ""}
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
