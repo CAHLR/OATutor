@@ -1,0 +1,15 @@
+{
+  "name": "openitsutil",
+  "version": "1.0.0",
+  "description": "Utils for OpenITS",
+  "main": "generateCSV.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Tang",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.10.0",
+    "objects-to-csv": "^1.3.6"
+  }
+}

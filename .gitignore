@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/src/util/node_modules
 /.pnp
 .pnp.js
 
@@ -24,3 +25,7 @@ yarn-error.log*
 
 # Secrets
 credentials.js
+service-account-credentials.json
+
+# Logs
+/src/util/logs
