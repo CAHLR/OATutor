@@ -21,9 +21,8 @@ class HintTextbox extends React.Component {
   submit = () => {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, "hint");
 
-    if (this.props.logData) {
-      this.props.firebase.hintLog(parsed, this.hint, correctAnswer);
-    }
+    this.props.submitHint(parsed, this.hint, correctAnswer);
+    
 
     this.setState({
       isCorrect: correctAnswer,
