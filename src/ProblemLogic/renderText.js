@@ -2,7 +2,7 @@ import React from 'react';
 import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js'
 
-export default function renderText(text) {
+export default function renderText(text, problemID) {
   var result = text;
   for (var d in dynamicText) {
     var replace = dynamicText[d];
@@ -14,7 +14,14 @@ export default function renderText(text) {
     var lineSplitted = line.split("$$");
     lineSplitted = lineSplitted.map((part, i) => {
       if (i % 2 === 0) {
-        return part;
+        var partSplitted = part.split("##");
+        return partSplitted.map((subPart, k) => {
+          if (k % 2 === 0) {
+            return subPart;
+          } else {
+            return <img src = {require(`../ProblemPool/${problemID}/figures/${subPart}`)} alt={`${problemID} figure`}/>
+          }
+        });
       } else {
         return <InlineMath math={part} />;
       }
