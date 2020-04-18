@@ -5,12 +5,13 @@ import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import Latex from 'react-latex';
 import { Sticky } from 'react-sticky';
 import renderText from '../ProblemLogic/renderText.js';
 
 import { getTreatment, bktParams, heuristic } from '../config/config.js';
-import {ThemeContext} from '../config/config.js';
+import { ThemeContext } from '../config/config.js';
+
+
 
 class Problem extends React.Component {
   static contextType = ThemeContext;
@@ -25,7 +26,9 @@ class Problem extends React.Component {
     this.stepStates = {};
     this.numCorrect = 0;
     this.steps = this.updateProblemData();
-    
+
+    this.testData = "Line 1$$\\frac{1}{2}$$\\n$$\\sum_x x^2$$Line 2\\nLine \\3 $$3 + 2$$ is $$=5$$\\n"
+
   }
 
   updateProblemData = () => {
@@ -90,11 +93,8 @@ class Problem extends React.Component {
                     <hr />
                   </h2>
                   <div className={classes.stepBody}>
-                    <Latex>
-                      {renderText(this.state.problemData.body)}
-                    </Latex>
+                    {renderText(this.state.problemData.body)}
                   </div>
-                  <br />
                 </CardContent>
               </Card>
               <hr />
