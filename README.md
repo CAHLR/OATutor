@@ -61,8 +61,7 @@ Code for this project is located in the `src` directory.
 ## src
 
 - `App.css`: Top level style sheet, contains colors for headers/logo
-- `App.js`: Top level script, generates cookie. Sets the userID as part of the context
-- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the problem component)
+- `App.js`: Top level script, generates cookie, firebase object. Sets up the context based on the userID
 - `index.js`: Renders `App.js`
 
 ## BKT
@@ -89,7 +88,7 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 ## ProblemLogic
 - `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric. Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly match.
 
-- `problemIndex.js`: Imports all of the problem files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
+- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the problem component). Also imports all of the problem files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
 
 - `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
 
