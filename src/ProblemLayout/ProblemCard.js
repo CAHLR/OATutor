@@ -16,7 +16,6 @@ import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 
 import { ThemeContext } from '../config/config.js';
-import { getTreatment, hintPathway } from '../config/config.js';
 
 
 class ProblemCard extends React.Component {
@@ -26,11 +25,10 @@ class ProblemCard extends React.Component {
     super(props);
     this.step = props.step;
     this.index = props.index;
-    this.hints = (getTreatment(context) === 0) ?
-      this.step.hints[hintPathway.hintPathway1] : this.step.hints[hintPathway.hintPathway2];
+    this.hints = this.step.hints[context.hintPathway];
 
-    // A-B testing - Treatment 0: No bottom-out hints
-    if (getTreatment(context) === 0 && this.hints[this.hints.length - 1].type !== 'bottomOut') {
+    // Bottom out hints option
+    if (context.useBottomOutHints && this.hints[this.hints.length - 1].type !== 'bottomOut') {
       this.hints.push({
         id: this.step.id + "-h" + (this.hints.length),
         title: "Answer",
@@ -38,7 +36,6 @@ class ProblemCard extends React.Component {
         type: "bottomOut",
         dependencies: Array.from(Array(this.hints.length).keys())
       })
-      console.log("hints", this.hints);
     }
 
     this.state = {
@@ -54,7 +51,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
 
     if (this.props.logData) {
-      this.props.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
+      this.context.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
     }
 
     this.setState({
@@ -90,14 +87,14 @@ class ProblemCard extends React.Component {
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
       if (this.props.logData) {
-        this.props.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
+        this.context.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
       }
     });
   }
 
   submitHint = (parsed, hint, correctAnswer) => {
     if (this.props.logData) {
-      this.props.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
+      this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
   }
 

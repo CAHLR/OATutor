@@ -8,34 +8,28 @@ import update from '../BKT/BKTBrains.js'
 import { Sticky } from 'react-sticky';
 import renderText from '../ProblemLogic/renderText.js';
 
-import { getTreatment, bktParams, heuristic } from '../config/config.js';
 import { ThemeContext } from '../config/config.js';
-
-
 
 class Problem extends React.Component {
   static contextType = ThemeContext;
 
   constructor(props, context) {
     super(props);
-    this.bktParams = (getTreatment(context) === 0) ? bktParams.bktParams1 : bktParams.bktParams2;
-    this.heuristic = (getTreatment(context) === 0) ? heuristic.lowestHeuristic : heuristic.highestHeuristic;
+    this.bktParams = context.bktParams;
+    this.heuristic = context.heuristic;
     this.state = {
       problemData: props.nextProblem(this.heuristic, this.bktParams)
     }
     this.stepStates = {};
     this.numCorrect = 0;
     this.steps = this.updateProblemData();
-
-    this.testData = "Line 1$$\\frac{1}{2}$$\\n$$\\sum_x x^2$$Line 2\\nLine \\3 $$3 + 2$$ is $$=5$$\\n"
-
   }
 
   updateProblemData = () => {
     return this.state.problemData.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard step={step} index={index} answerMade={this.answerMade} firebase={this.props.firebase} logData={this.props.logData} />
+        <ProblemCard step={step} index={index} answerMade={this.answerMade} />
       </Element>
     }
     );

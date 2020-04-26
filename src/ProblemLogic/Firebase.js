@@ -1,14 +1,14 @@
 import firebase from 'firebase';
-import { credentials, getTreatment, siteVersion } from '../config/config.js';
 
 class Firebase {
 
-  constructor(id) {
+  constructor(id, credentials, treatment, siteVersion) {
     firebase.initializeApp(credentials);
     this.id = id;
     this.db = firebase.firestore();
-    this.treatment = getTreatment(id);
+    this.treatment = treatment;
     this.siteVersion = siteVersion;
+    
   }
 
   /*
