@@ -1,7 +1,5 @@
 import {hints as defaultPathway} from './tutoring/circle2aDefaultPathway.js';
 
-var hints = {
-    defaultPathway: defaultPathway
-};
+var hints = {defaultPathway: defaultPathway};
 
 export default hints;

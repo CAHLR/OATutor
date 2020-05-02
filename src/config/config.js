@@ -3,7 +3,7 @@ import algebraCheckOptions from './algebraCheck.js';
 
 const ThemeContext = React.createContext(0);
 const siteVersion = 1.0;
-const logData = false;
+const logData = true;
 const debug = true;
 const useBottomOutHints = false;
 

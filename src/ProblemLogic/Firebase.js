@@ -1,4 +1,5 @@
-import firebase from 'firebase';
+var firebase = require("firebase/app");
+require("firebase/firestore");
 
 class Firebase {
 

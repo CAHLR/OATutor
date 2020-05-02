@@ -15,6 +15,7 @@ class HintSystem extends React.Component {
       latestStep: 0,
       hintAnswer: ""
     }
+    console.log(this.props.hints)
   }
 
   finishHint = (event, expanded, i) => {
@@ -51,7 +52,7 @@ class HintSystem extends React.Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'}>
-              {renderText(hint.text, hint.id.substring(0, this.step.id.length - 3))}
+              {renderText(hint.text, hint.id.substring(0, hint.id.length - 3))}
                 {hint.type === "scaffold" ?
                   <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint}/></div> : ""}
               </Typography>

@@ -6,13 +6,12 @@
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
     "expr-eval": "^2.0.2",
-    "firebase": "^7.11.0",
+    "firebase": "^7.14.2",
     "http2": "^3.3.7",
     "list-react-files": "^0.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-katex": "^2.0.2",
-    "react-latex": "^1.6.0",
     "react-scripts": "^3.4.0",
     "react-scroll": "^1.7.16",
     "typeface-roboto": "0.0.75",
@@ -20,6 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "generate": "(cd src/util/ && node indexGenerator.js) & (cd ../.. && npm run start)",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
