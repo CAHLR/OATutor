@@ -5,7 +5,6 @@ import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import { Sticky } from 'react-sticky';
 import renderText from '../ProblemLogic/renderText.js';
 
 import { ThemeContext } from '../config/config.js';
@@ -65,7 +64,7 @@ class Problem extends React.Component {
         scroller.scrollTo((cardIndex + 1).toString(), {
           duration: 500,
           smooth: true,
-          offset: -300 // Because sticky
+          offset: -100
         })
       }
     }
@@ -74,29 +73,21 @@ class Problem extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-
       <div>
-        <div className="sticky" style={{ zIndex: 1000 }}>
-          <Sticky>{({ style }) =>
-            <div className={classes.prompt} style={style}>
-              <div style={{ paddingTop: 15 }}><br /></div>
-              <Card className={classes.titleCard}>
-                <CardContent>
-                  <h2 className={classes.stepHeader}>
-                    {this.state.problemData.title}
-                    <hr />
-                  </h2>
-                  <div className={classes.stepBody}>
-                    {renderText(this.state.problemData.body, this.state.problemData.id)}
-                  </div>
-                </CardContent>
-              </Card>
-              <hr />
-
-            </div>
-          }</Sticky>
+        <div className={classes.prompt} >
+          <Card className={classes.titleCard}>
+            <CardContent>
+              <h2 className={classes.stepHeader}>
+                {this.state.problemData.title}
+                <hr />
+              </h2>
+              <div className={classes.stepBody}>
+                {renderText(this.state.problemData.body, this.state.problemData.id)}
+              </div>
+            </CardContent>
+          </Card>
+          <hr />
         </div>
-
         {this.steps}
       </div>
 

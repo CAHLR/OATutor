@@ -6,6 +6,8 @@ const siteVersion = 1.0;
 const logData = false;
 const debug = true;
 const useBottomOutHints = false;
+
+// DynamicText not supported for HTML body types
 const dynamicText = {
     "%CAR%": "Tesla car"
 };
