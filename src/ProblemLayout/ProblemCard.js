@@ -50,7 +50,7 @@ class ProblemCard extends React.Component {
   submit = () => {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
 
-    if (this.props.logData) {
+    if (this.context.logData) {
       this.context.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
     }
 
@@ -75,7 +75,7 @@ class ProblemCard extends React.Component {
     this.setState(prevState => ({
       showHints: !prevState.showHints
     }), () => {
-      if (this.props.logData) {
+      if (this.context.logData) {
         this.props.answerMade(this.index, this.step.knowledgeComponents, false);
       }
     });
@@ -86,14 +86,14 @@ class ProblemCard extends React.Component {
       prevState.hintsFinished[hintNum] = 1;
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
-      if (this.props.logData) {
+      if (this.context.logData) {
         this.context.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
       }
     });
   }
 
   submitHint = (parsed, hint, correctAnswer) => {
-    if (this.props.logData) {
+    if (this.context.logData) {
       this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
   }
