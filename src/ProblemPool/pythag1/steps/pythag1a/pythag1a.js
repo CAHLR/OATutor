@@ -1,9 +1,13 @@
 import hints from './pythag1a-index.js';
+import React from 'react';
+import { InlineMath } from 'react-katex';
 
 const step = {
   id: 'pythag1a',
   stepTitle: "1. Vertical Component",
-  stepBody: "What is the net force, $\\sum F_y $, in the vertical direction?",
+  stepBody: <div>
+    What is the net force <InlineMath math={"\\sum F_y "} />, in the vertical direction?
+  </div>,
   stepAnswer: ["0.10"],
   answerType: "algebra",
   hints: hints

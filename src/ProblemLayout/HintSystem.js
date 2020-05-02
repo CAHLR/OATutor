@@ -6,9 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
-import Latex from 'react-latex';
-
-// Step types: hint, scaffold, answer
+import renderText from '../ProblemLogic/renderText.js';
 
 class HintSystem extends React.Component {
   constructor(props) {
@@ -18,7 +16,6 @@ class HintSystem extends React.Component {
       hintAnswer: ""
     }
   }
-
 
   finishHint = (event, expanded, i) => {
     if (expanded && i < this.props.hintStatus.length) {
@@ -54,9 +51,7 @@ class HintSystem extends React.Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'}>
-                <Latex>
-                  {hint.text}
-                </Latex>
+              {renderText(hint.text, hint.id.substring(0, this.step.id.length - 3))}
                 {hint.type === "scaffold" ?
                   <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint}/></div> : ""}
               </Typography>

@@ -35,7 +35,7 @@ class Platform extends React.Component {
       var probMasterySum = 0;
       var totalProbs = 0;
       for (var step of problem.steps) {
-        console.log(step);
+        //console.log(step);
         for (var kc of step.knowledgeComponents) {
           probMasterySum += this.context.bktParams[kc].probMastery;
           totalProbs += 1;
@@ -43,7 +43,7 @@ class Platform extends React.Component {
       }
     
       [chosenMasteryProblem, chosenMasteryLevel] = this.context.heuristic(problem, probMasterySum, totalProbs, chosenMasteryProblem, chosenMasteryLevel);
-      console.log(chosenMasteryProblem)
+      //console.log(chosenMasteryProblem)
     }
   
     return chosenMasteryProblem;

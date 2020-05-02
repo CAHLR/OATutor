@@ -1,5 +1,4 @@
 import React from 'react';
-import Latex from 'react-latex';
 
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -14,6 +13,7 @@ import checkAnswer from '../ProblemLogic/checkAnswer.js';
 import styles from './problemCardStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
+import renderText from '../ProblemLogic/renderText.js';
 
 import { ThemeContext } from '../config/config.js';
 
@@ -109,9 +109,7 @@ class ProblemCard extends React.Component {
           </h2>
 
           <div className={classes.stepBody}>
-            <Latex>
-              {this.step.stepBody}
-            </Latex>
+            {renderText(this.step.stepBody, this.step.id.substring(0, this.step.id.length - 1))}
           </div>
 
           {this.state.showHints ?
