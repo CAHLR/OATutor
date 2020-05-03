@@ -56,6 +56,7 @@ class Platform extends React.Component {
         </AppBar>
         <Problem nextProblem={this.nextProblem} />
       </div>
+      
     );
   }
 }

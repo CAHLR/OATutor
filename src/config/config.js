@@ -13,6 +13,10 @@ const dynamicText = {
 };
 const cookieID = "openITS-id";
 
+// Firebase Config
+const MAX_BUFFER_SIZE = 100;
+const GRANULARITY = 5;
+
 export {ThemeContext, 
     algebraCheckOptions,
     siteVersion,
@@ -20,5 +24,7 @@ export {ThemeContext,
     dynamicText,
     cookieID,
     debug,
-    useBottomOutHints
+    useBottomOutHints,
+    MAX_BUFFER_SIZE,
+    GRANULARITY
 };
