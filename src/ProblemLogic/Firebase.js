@@ -1,3 +1,4 @@
+import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
@@ -9,7 +10,7 @@ class Firebase {
     this.db = firebase.firestore();
     this.treatment = treatment;
     this.siteVersion = siteVersion;
-    
+    this.mouseLogBuffer = [];
   }
 
   /*
@@ -43,11 +44,11 @@ class Firebase {
   getDate() {
     var today = new Date();
     return (today.getMonth() + 1) + '-' +
-    today.getDate() + '-' +
-    today.getFullYear() + " " +
-    today.getHours() + ":" +
-    today.getMinutes() + ":" +
-    (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
+      today.getDate() + '-' +
+      today.getFullYear() + " " +
+      today.getHours() + ":" +
+      today.getMinutes() + ":" +
+      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
   }
 
   log(inputVal, step, isCorrect, hintsFinished, eventType) {
@@ -80,7 +81,7 @@ class Firebase {
       siteVersion: this.siteVersion,
       studentID: this.id,
       problemID: step.id.slice(0, -1),
-      stepID: step.id, 
+      stepID: step.id,
       hintID: hint.id,
       input: null,
       correctAnswer: null,
@@ -94,6 +95,39 @@ class Firebase {
     console.log(data);
     return this.writeData("problemSubmissions", date, data);
   }
+
+  mouseLog(payload) {
+    var date = this.getDate();
+    if (this.mouseLogBuffer.length > 0) {
+      if (!(Math.abs(payload.position.x - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].x) > GRANULARITY ||
+        Math.abs(payload.position.y - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].y) > GRANULARITY
+      )) {
+        return;
+      }
+    }
+    if (this.mouseLogBuffer.length < MAX_BUFFER_SIZE) {
+      this.mouseLogBuffer.push({
+        x: payload.position.x,
+        y: payload.position.y,
+      });
+      return;
+    }
+    var data = {
+      timeStamp: date,
+      eventType: "mouseLog",
+      siteVersion: this.siteVersion,
+      studentID: this.id,
+      treatment: this.treatment,
+      _logBufferSize: MAX_BUFFER_SIZE,
+      _logGranularity: GRANULARITY,
+      screenSize: payload.elementDimensions,
+      mousePos: this.mouseLogBuffer
+    }
+    this.mouseLogBuffer = [];
+    console.log("Logged mouseMovement");
+    return this.writeData("mouseMovement", date, data);
+  }
+
 }
 export default Firebase;
 

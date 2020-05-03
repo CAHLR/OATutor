@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Cookies from 'universal-cookie';
+import ReactCursorPosition from 'react-cursor-position';
 import Platform from './ProblemLogic/Platform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
@@ -14,7 +15,8 @@ import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/
 // ### END CUSTOMIZABLE IMPORTS ###
 
 
-import {ThemeContext,
+import {
+  ThemeContext,
   siteVersion,
   logData,
   cookieID,
@@ -39,8 +41,8 @@ class App extends React.Component {
     // Firebase creation
     this.firebase = null;
     if (logData) {
-        this.firebase = new Firebase(this.userID, credentials, this.getTreatment(), siteVersion);
-      }
+      this.firebase = new Firebase(this.userID, credentials, this.getTreatment(), siteVersion);
+    }
   }
 
   getTreatment = () => {
@@ -62,7 +64,13 @@ class App extends React.Component {
         debug: debug,
         useBottomOutHints: useBottomOutHints
       }}>
-        <Platform />
+        <ReactCursorPosition onPositionChanged={(data) => {
+          if (logData) {
+            this.firebase.mouseLog(data);
+          }
+        }}>
+          <Platform />
+        </ReactCursorPosition>
       </ThemeContext.Provider>
     );
   }
