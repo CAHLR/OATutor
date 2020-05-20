@@ -15,7 +15,17 @@ var hints = [
       choices: ["-5", "0", "2", "5"],
       answerType: "numeric",
       type: "scaffold",
-      dependencies: []
+      dependencies: [], 
+      subHints: [{
+        id: 'pythag1a-h2-s1',
+        title: "Simple Net Force",
+        text: "What is the net vertical force if there are 2 vertical forces 1N, 2N?",
+        hintAnswer: ["3"],
+        problemType: "TextBox",
+        answerType: "numeric",
+        type: "scaffold",
+        dependencies: []
+      }],
     },
     {
       id: 'pythag1a-h3',

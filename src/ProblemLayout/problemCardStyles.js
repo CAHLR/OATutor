@@ -56,7 +56,7 @@ const styles = {
 
     inputHintField: {
         width: '10em',
-        marginLeft: '16em',
+        //marginLeft: '16em',
     },
 
     center: {

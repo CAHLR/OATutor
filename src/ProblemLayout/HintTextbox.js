@@ -24,7 +24,7 @@ class HintTextbox extends React.Component {
 
   submit = () => {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, "hint");
-
+    console.log(this.props.submitHint)
     this.props.submitHint(parsed, this.hint, correctAnswer);
 
 
@@ -53,7 +53,7 @@ class HintTextbox extends React.Component {
             <Box display="flex">
               <Box ml="auto" mr={0}>
                 {this.hint.subHints !== undefined ?
-                  <IconButton aria-label="delete" onClick={this.toggleHints}>
+                  <IconButton aria-label="delete" onClick={this.props.toggleHints}>
                     <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
                   </IconButton> : ""}
               </Box>
@@ -84,8 +84,9 @@ class HintTextbox extends React.Component {
           </Grid>
         </Grid>
 
+       
         <div className={classes.center}>
-          <Button className={classes.button} size="small" onClick={this.submit} styles={{ marginLeft: "50em" }}>Submit</Button>
+        <Button className={classes.button} size="small" onClick={this.submit} >Submit</Button>
         </div>
 
       </div>
