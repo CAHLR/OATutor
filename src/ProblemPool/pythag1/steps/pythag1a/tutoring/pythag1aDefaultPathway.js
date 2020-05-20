@@ -11,6 +11,8 @@ var hints = [
       title: "Net Force Example",
       text: "What is the net vertical force if there are 2 vertical forces 2N, 3N?",
       hintAnswer: ["5"],
+      problemType: "MultipleChoice",
+      choices: ["-5", "0", "2", "5"],
       answerType: "numeric",
       type: "scaffold",
       dependencies: []

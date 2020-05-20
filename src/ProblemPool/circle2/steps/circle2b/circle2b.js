@@ -5,6 +5,7 @@ const step = {
   stepTitle: "2. Decoration",
   stepBody: "Bob wants to line the outer rim of the circular rug with ribbon. How much material does he need?",
   stepAnswer: ["125.6"],
+  problemType: "TextBox",
   answerType: "numeric",
   hints: hints
 }

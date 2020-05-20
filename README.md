@@ -133,3 +133,12 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 - `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the gitignore by default to prevent API key leaks.)
 
 - `algebraCheck.js`: Config file for algebraic answer checks
+
+## Mouse Logging
+* Size of screen is the size of the scrollable browser canvas
+
+### Adding Listeners
+1. Install the React component for the listener. 
+2. Wrap the Platform component with the listener. The listener must take a prop that is a function to log data that it receives. 
+3. In `/ProblemLogic/Firebase.js` add a new function to log the new type of data. Create a new collection for this listener logs.
+4. Configure buffer size and granularity of logging

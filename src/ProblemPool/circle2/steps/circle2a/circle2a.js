@@ -5,6 +5,7 @@ const step = {
   stepTitle: "1. Finding the radius",
   stepBody: "What is the radius of the rug?",
   stepAnswer: ["20"],
+  problemType: "TextBox",
   answerType: "numeric",
   hints: hints
 }
