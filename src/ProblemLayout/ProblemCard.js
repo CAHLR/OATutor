@@ -14,6 +14,7 @@ import styles from './problemCardStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 import renderText from '../ProblemLogic/renderText.js';
+import MultipleChoice from './MultipleChoice.js';
 
 import { ThemeContext } from '../config/config.js';
 
@@ -138,19 +139,25 @@ class ProblemCard extends React.Component {
               <Grid item xs={4}>
                 <Box display="flex">
                   <Box m="auto">
-                    <TextField
+                    {this.step.problemType === "TextBox" ? <TextField
                       error={this.state.isCorrect === false}
                       className={classes.inputField}
                       variant="outlined"
                       onChange={(evt) => this.editInput(evt)}
                       onKeyPress={(evt) => this.handleKey(evt)}>
-                    </TextField>
+                    </TextField> : "" }
+                    {this.step.problemType === "MultipleChoice" ?
+                    <MultipleChoice
+                      onChange={(evt) => this.editInput(evt)}
+                      choices={this.step.choices} /> : ""}
                   </Box>
                 </Box>
               </Grid>
               <Grid item xs={4}>
-                <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
-                  src="https://image.flaticon.com/icons/svg/148/148767.svg" />
+                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
+                  src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
+                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity }} alt=""
+                  src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
               </Grid>
 
             </Grid>

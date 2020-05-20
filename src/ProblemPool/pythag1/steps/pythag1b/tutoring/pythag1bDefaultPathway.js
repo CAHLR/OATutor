@@ -11,6 +11,7 @@ var hints = [
     title: "Net Force Example",
     text: "What is the net horizontal force if there are 2 horizontal forces 2N, 3N?",
     hintAnswer: ["5"],
+    problemType: "TextBox",
     answerType: "numeric",
     type: "scaffold",
     dependencies: [0]

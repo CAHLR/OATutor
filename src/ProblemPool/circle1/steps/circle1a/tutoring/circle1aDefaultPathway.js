@@ -11,6 +11,7 @@ var hints = [
       title: "Constricting dimension",
       text: "The length (20ft) creates limitations on the size of the circle. What is the maximum diameter that the circle can be?",
       hintAnswer: ["20"],
+      problemType: "TextBox",
       answerType: "numeric",
       type: "scaffold",
       dependencies: [0]

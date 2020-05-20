@@ -9,6 +9,7 @@ const step = {
     What is the net force <InlineMath math={"\\sum F_y "} />, in the vertical direction?
   </div>,
   stepAnswer: ["0.10"],
+  problemType: "TextBox",
   answerType: "algebra",
   hints: hints
 }

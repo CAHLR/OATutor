@@ -5,6 +5,7 @@ const step = {
   stepTitle: "4. Net Force Direction",
   stepBody: "In what direction $\\theta_{net}$ (in degrees with respect to the x-axis) is the net force?",
   stepAnswer: ["-1.06"],
+  problemType: "TextBox",
   answerType: "numeric",
   hints: hints
 }
