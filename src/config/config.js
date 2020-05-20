@@ -5,7 +5,7 @@ const ThemeContext = React.createContext(0);
 const siteVersion = 1.0;
 const logData = false;
 const debug = true;
-const useBottomOutHints = false;
+const useBottomOutHints = true;
 
 // DynamicText not supported for HTML body types
 const dynamicText = {
