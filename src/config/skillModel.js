@@ -11,21 +11,21 @@
 */
 const skillModel = {
 
-    pythag1a: ["long-multiplication"],
-    pythag1b: ["long-multiplication"],
-    pythag1c: ["long-multiplication"],
-    pythag1d: ["long-multiplication"],
+    pythag1a: ["addition", "physics"],
+    pythag1b: ["addition", "physics"],
+    pythag1c: ["pythagorean", "short-multiplication"],
+    pythag1d: ["trigonometry"],
 
-    pythag2a: ["short-multiplication"],
+    pythag2a: ["pythagorean"],
 
-    circle1a: ["short-multiplication"],
-    circle1b: ["short-multiplication"],
+    circle1a: ["short-multiplication", "circle", "radius"],
+    circle1b: ["short-multiplication", "circle", "area"],
 
-    circle2a: ["short-multiplication"],
-    circle2b: ["short-multiplication"],
+    circle2a: ["short-multiplication", "circle", "radius"],
+    circle2b: ["short-multiplication", "circle", "circumference"],
 
-    slope1a: ["addition"],
-    slope2a: ["short-multiplication"],
+    slope1a: ["slope"],
+    slope2a: ["slope"],
 
 }
 
