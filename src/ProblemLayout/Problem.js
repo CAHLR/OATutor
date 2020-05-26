@@ -16,22 +16,21 @@ class Problem extends React.Component {
     super(props);
     this.bktParams = context.bktParams;
     this.heuristic = context.heuristic;
-    this.state = {
-      problemData: props.nextProblem(this.heuristic, this.bktParams)
-    }
     this.stepStates = {};
     this.numCorrect = 0;
-    this.steps = this.updateProblemData();
+    this.state = {
+      problem: this.props.problem,
+      steps: this.refreshSteps(props.problem)
+    }
   }
 
-  updateProblemData = () => {
-    return this.state.problemData.steps.map((step, index) => {
+  refreshSteps = (problem) => {
+    return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
         <ProblemCard step={step} index={index} answerMade={this.answerMade} />
       </Element>
-    }
-    );
+    })
   }
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
@@ -54,11 +53,10 @@ class Problem extends React.Component {
         this.stepStates = {};
         this.numCorrect = 0;
 
-        const problem = this.props.nextProblem(this.heuristic, this.bktParams);
-        this.setState({ problemData: problem }, () => {
-          this.steps = this.updateProblemData();
-          this.setState({ updated: true });
-        })
+        this.setState({ problem: this.props.problemComplete(this.context) },
+          () => this.setState({
+            steps: this.refreshSteps(this.props.problem)
+          }));
 
       } else {
         scroller.scrollTo((cardIndex + 1).toString(), {
@@ -78,17 +76,17 @@ class Problem extends React.Component {
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.stepHeader}>
-                {this.state.problemData.title}
+                {this.props.problem.title}
                 <hr />
               </h2>
               <div className={classes.stepBody}>
-                {renderText(this.state.problemData.body, this.state.problemData.id)}
+                {renderText(this.props.problem.body, this.props.problem.id)}
               </div>
             </CardContent>
           </Card>
           <hr />
         </div>
-        {this.steps}
+        {this.state.steps}
       </div>
 
     );

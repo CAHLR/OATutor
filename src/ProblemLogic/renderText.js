@@ -22,7 +22,7 @@ export default function renderText(text, problemID) {
           if (k % 2 === 0) {
             return subPart;
           } else {
-            console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
+            //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
             return <center><img src = {require(`../ProblemPool/${problemID}/figures/${subPart}`)} alt={`${problemID} figure`} key={Math.random() * 2 ** 16}/></center>
           }
         });
