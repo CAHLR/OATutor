@@ -25,6 +25,7 @@ const skillModel = {
     circle2b: ["short-multiplication"],
 
     slope1a: ["addition"],
+    slope2a: ["short-multiplication"],
 
 }
 
