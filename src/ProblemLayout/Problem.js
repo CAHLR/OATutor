@@ -25,6 +25,9 @@ class Problem extends React.Component {
   }
 
   refreshSteps = (problem) => {
+    if (problem === null) {
+      return (<div></div>);
+    }
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
@@ -70,6 +73,9 @@ class Problem extends React.Component {
 
   render() {
     const { classes } = this.props;
+    if (this.state.problem === null) {
+      return (<div></div>);
+    }
     return (
       <div>
         <div className={classes.prompt} >
