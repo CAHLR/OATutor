@@ -1,5 +1,6 @@
 import React from 'react';
 import algebraCheckOptions from './algebraCheck.js';
+import lessonPlans from './lessonPlans.js'
 
 const ThemeContext = React.createContext(0);
 const siteVersion = 1.0;
@@ -25,6 +26,7 @@ export {ThemeContext,
     cookieID,
     debug,
     useBottomOutHints,
+    lessonPlans,
     MAX_BUFFER_SIZE,
     GRANULARITY
 };

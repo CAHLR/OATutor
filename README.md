@@ -273,3 +273,19 @@ const problem = {
 };
 export { problem };
 ```
+
+## Creating Lesson Plans
+* Create a lesson plan by making a new item in `config/lessonPlans.js`
+* Each lesson plan has learning objectives which you can also list the target mastery level
+* Lesson plans can have multiple learning objectives (for cumulative review)
+* Users select a lesson upon visiting the site
+
+```js
+{
+    name: "Lesson 1",
+    topics: "Pythagorean Theorem",
+    learningObjectives: {
+      pythagorean: 0.95
+    }
+}
+```

@@ -26,6 +26,7 @@ const skillModel = {
 
     slope1a: ["slope"],
     slope2a: ["slope"],
+    slope3a: ["slope"],
 
 }
 
