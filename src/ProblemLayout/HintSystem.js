@@ -12,11 +12,15 @@ import SubHintSystem from './SubHintSystem.js';
 class HintSystem extends React.Component {
   constructor(props) {
     super(props);
+    var subHintsFinished = [];
+    for (var i = 0; i < this.props.hints.length; i ++) {
+      subHintsFinished.push(new Array((this.props.hints[i].subHints !== undefined ? this.props.hints[i].subHints.length : 0)).fill(0));
+    }
     this.state = {
       latestStep: 0,
       hintAnswer: "",
-      showSubHints: false,
-      subHintsFinished: new Array((this.props.hints.subHints !== undefined ? this.props.hints.subHints.length : 0)).fill(0)
+      showSubHints: new Array(this.props.hints.length).fill(false),
+      subHintsFinished: subHintsFinished
     }
     console.log(this.props.hints)
   }
@@ -37,19 +41,26 @@ class HintSystem extends React.Component {
     return !isSatisfied;
   }
 
-  toggleSubHints = (event) => {
-    this.setState(prevState => ({
-      showSubHints: !prevState.showSubHints
-    }), () => {
+  toggleSubHints = (event, i) => {
+    console.log(i);
+    this.setState(prevState => {
+      var displayHints = prevState.showSubHints;
+      displayHints[i] = !displayHints[i];
+      console.log(displayHints, i);
+      return ({
+        showSubHints: displayHints
+      })
+    }, () => {
       if (this.context.logData) {
         this.props.answerMade(this.index, this.step.knowledgeComponents, false);
       }
     });
   }
 
-  finishSubHint = (hintNum) => {
+  finishSubHint = (hintNum, i) => {
+    console.log(this.state.subHintsFinished, i)
     this.setState(prevState => {
-      prevState.subHintsFinished[hintNum] = 1;
+      prevState.subHintsFinished[i][hintNum] = 1;
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
@@ -81,18 +92,19 @@ class HintSystem extends React.Component {
                 Hint {i + 1}: {hint.title} {this.isLocked(i) ? " [LOCKED]" : ""}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography component={'span'} style={{width: "100%"}}>
+              <Typography component={'span'} style={{ width: "100%" }}>
                 {renderText(hint.text, hint.id.substring(0, hint.id.length - 4))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint} toggleHints={this.toggleSubHints}/></div> : ""}
-                {this.state.showSubHints && hint.subHints !== undefined ?
+                  <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint} toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
+                {this.state.showSubHints[i] && hint.subHints !== undefined ?
                   <div className="SubHints">
-                    <br/>
+                    <br />
                     <SubHintSystem
                       hints={hint.subHints}
                       finishHint={this.finishSubHint}
-                      hintStatus={this.state.subHintsFinished}
+                      hintStatus={this.state.subHintsFinished[i]}
                       submitHint={this.submitSubHint}
+                      parent={i}
                     />
                     <br /></div>
                   : ""}
