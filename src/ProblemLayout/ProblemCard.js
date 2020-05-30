@@ -10,7 +10,7 @@ import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
 import checkAnswer from '../ProblemLogic/checkAnswer.js';
-import styles from './problemCardStyles.js';
+import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 import renderText from '../ProblemLogic/renderText.js';
@@ -145,11 +145,11 @@ class ProblemCard extends React.Component {
                       variant="outlined"
                       onChange={(evt) => this.editInput(evt)}
                       onKeyPress={(evt) => this.handleKey(evt)}>
-                    </TextField> : "" }
+                    </TextField> : ""}
                     {this.step.problemType === "MultipleChoice" ?
-                    <MultipleChoice
-                      onChange={(evt) => this.editInput(evt)}
-                      choices={this.step.choices} /> : ""}
+                      <MultipleChoice
+                        onChange={(evt) => this.editInput(evt)}
+                        choices={this.step.choices} /> : ""}
                   </Box>
                 </Box>
               </Grid>
@@ -168,6 +168,8 @@ class ProblemCard extends React.Component {
           <Button className={classes.button} size="small" onClick={this.submit}>Submit</Button>
         </CardActions>
       </Card>
+
+      
 
     )
   };

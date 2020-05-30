@@ -79,6 +79,32 @@ const styles = theme => ({
     padding: theme.spacing(3, 2),
   },
 
+  // Problem
+  prompt: {
+    marginLeft: 0,
+    marginRight: 50,
+    marginTop: 20,
+    textAlign: 'center',
+    fontSize: 20,
+    fontFamily: 'Titillium Web, sans-serif',
+  },
+  titleCard: {
+    width: '50em',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingBottom: 0,
+  },
+  problemStepHeader: {
+    fontSize: 25,
+    marginTop: 0,
+    marginLeft: 10
+  },
+  problemStepBody: {
+    fontSize: 20,
+    marginTop: 10,
+    marginLeft: 10
+  },
+
 });
 
 export default styles;
