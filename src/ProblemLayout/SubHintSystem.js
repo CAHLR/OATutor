@@ -20,7 +20,7 @@ class SubHintSystem extends React.Component {
 
   finishHint = (event, expanded, i) => {
     if (expanded && i < this.props.hintStatus.length) {
-      this.props.finishHint(i);
+      this.props.finishHint(i, this.props.parent);
     }
     this.setState({ latestStep: i });
   }

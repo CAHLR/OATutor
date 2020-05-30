@@ -83,6 +83,9 @@ class ProblemCard extends React.Component {
   }
 
   finishHint = (hintNum) => {
+    if (this.state.hintsFinished.reduce((a, b) => a + b) === 0) {
+      this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+    }
     this.setState(prevState => {
       prevState.hintsFinished[hintNum] = 1;
       return { hintsFinished: prevState.hintsFinished }
