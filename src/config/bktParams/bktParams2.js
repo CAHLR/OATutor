@@ -30,7 +30,7 @@ var bktParams = {
         probGuess: 0.1
     },
     "circle": {
-        probMastery: 0.1,
+        probMastery: 0.7,
         probTransit: 0.1,
         probSlip: 0.1,
         probGuess: 0.1

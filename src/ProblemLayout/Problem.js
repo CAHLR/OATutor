@@ -1,11 +1,13 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
 import renderText from '../ProblemLogic/renderText.js';
+import styles from './commonStyles.js';
 
 import { ThemeContext } from '../config/config.js';
 
@@ -51,17 +53,7 @@ class Problem extends React.Component {
 
     if (isCorrect) {
       this.numCorrect += 1;
-      if (this.numCorrect === Object.keys(this.stepStates).length) {
-        scroll.scrollToTop({ duration: 900, smooth: true });
-        this.stepStates = {};
-        this.numCorrect = 0;
-
-        this.setState({ problem: this.props.problemComplete(this.context) },
-          () => this.setState({
-            steps: this.refreshSteps(this.props.problem)
-          }));
-
-      } else {
+      if (this.numCorrect !== Object.keys(this.stepStates).length) {
         scroller.scrollTo((cardIndex + 1).toString(), {
           duration: 500,
           smooth: true,
@@ -69,6 +61,17 @@ class Problem extends React.Component {
         })
       }
     }
+  }
+
+  clickNextProblem = () => {
+    scroll.scrollToTop({ duration: 900, smooth: true });
+    this.stepStates = {};
+    this.numCorrect = 0;
+
+    this.setState({ problem: this.props.problemComplete(this.context) },
+      () => this.setState({
+        steps: this.refreshSteps(this.props.problem)
+      }));
   }
 
   render() {
@@ -81,11 +84,11 @@ class Problem extends React.Component {
         <div className={classes.prompt} >
           <Card className={classes.titleCard}>
             <CardContent>
-              <h2 className={classes.stepHeader}>
+              <h2 className={classes.problemStepHeader}>
                 {this.props.problem.title}
                 <hr />
               </h2>
-              <div className={classes.stepBody}>
+              <div className={classes.problemStepBody}>
                 {renderText(this.props.problem.body, this.props.problem.id)}
               </div>
             </CardContent>
@@ -93,38 +96,13 @@ class Problem extends React.Component {
           <hr />
         </div>
         {this.state.steps}
+        <center>
+          <Button className={classes.button} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
+        </center>
       </div>
 
     );
   }
 }
-
-const styles = {
-  prompt: {
-    marginLeft: 0,
-    marginRight: 50,
-    marginTop: 20,
-    textAlign: 'center',
-    fontSize: 20,
-    fontFamily: 'Titillium Web, sans-serif',
-  },
-  titleCard: {
-    width: '50em',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    paddingBottom: 0,
-  },
-  stepHeader: {
-    fontSize: 25,
-    marginTop: 0,
-    marginLeft: 10
-  },
-
-  stepBody: {
-    fontSize: 20,
-    marginTop: 10,
-    marginLeft: 10
-  },
-};
 
 export default withStyles(styles)(Problem);

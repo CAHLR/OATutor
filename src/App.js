@@ -49,6 +49,30 @@ class App extends React.Component {
     return this.userID % 2;
   }
 
+  removeProgress = () => {
+    cookies.remove("openITS-progress");
+  }
+
+  saveProgress = (lesson, mastery, completedProblems) => {
+    let d = new Date();
+    d.setTime(d.getTime() + (3 * 365 * 24 * 60 * 60 * 1000)); // 3 years in the future
+    var progress = cookies.get("openITS-progress") == null ? {} : cookies.get("openITS-progress");
+    progress[lesson.id] = {
+      lesson: lesson,
+      mastery: mastery,
+      completedProblems: [...completedProblems],
+    };
+    console.log("Saving:");
+    console.log(progress);
+    cookies.set("openITS-progress", progress, { path: "/", expires: d });
+    return;
+  }
+
+  loadProgress = () => {
+    var progress = cookies.get("openITS-progress");
+    return progress;
+  }
+
   render() {
     return (
       <ThemeContext.Provider value={{
@@ -57,7 +81,7 @@ class App extends React.Component {
         logData: logData,
         getTreatment: this.getTreatment,
         bktParams: this.getTreatment() === 0 ? bktParams1 : bktParams2,
-        heuristic: this.getTreatment() === 0 ? highestHeuristic : lowestHeuristic,
+        heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
         hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
         skillModel: skillModel,
         credentials: credentials,
@@ -69,7 +93,7 @@ class App extends React.Component {
             this.firebase.mouseLog(data);
           }
         }}>
-          <Platform />
+          <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress}/>
         </ReactCursorPosition>
       </ThemeContext.Provider>
     );

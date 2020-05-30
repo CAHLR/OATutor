@@ -16,7 +16,7 @@ class Platform extends React.Component {
       problems: problemPool
     };
     this.completedProbs = new Set();
-    this.learningObjectives = null;
+    this.lesson = null;
 
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
@@ -32,19 +32,29 @@ class Platform extends React.Component {
       currProblem: null,
       status: "lessonSelection"
     }
+    
   }
 
-  selectLesson = (learningObjectives) => {
-    this.learningObjectives = learningObjectives;
+  selectLesson = (lesson) => {
+    this.lesson = lesson;
+    var progress = this.props.loadProgress();
+    console.log(progress);
+    if (progress && progress[lesson.id]) {
+      this.context.bktParams = progress[lesson.id].mastery;
+      this.completedProbs = new Set(progress[lesson.id].completedProblems);
+      console.log("Successfully loaded progress.");
+      console.log(this.context.bktParams);
+      console.log(this.completedProbs);
+    }
+   
     this.setState({
       currProblem: this._nextProblem(this.context),
-      status: "learning"
     })
   }
 
   _nextProblem = (context) => {
+    this.props.saveProgress(this.lesson, context.bktParams, this.completedProbs);
     var chosenProblem = null;
-    var chosenLevel = null;
 
     for (var problem of this.problemIndex.problems) {
       // Calculate the mastery for this problem
@@ -55,7 +65,7 @@ class Platform extends React.Component {
           if (context.bktParams[kc] === null) {
             console.log("BKT Parameter " + kc + " does not exist.");
           }
-          if (kc in this.learningObjectives) {
+          if (kc in this.lesson.learningObjectives) {
             isRelevant = true;
           }
           // Multiply all the mastery priors
@@ -63,28 +73,38 @@ class Platform extends React.Component {
         }
       }
       if (isRelevant) {
-        [chosenProblem, chosenLevel] = context.heuristic(problem, probMastery, this.completedProbs, chosenProblem, chosenLevel);
+        problem.probMastery = probMastery;
       }
     }
+    
+    chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
     console.log(context.bktParams);
+    console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
     // There exists a skill that has not yet been mastered (a True)
     // Note (number <= null) returns false
-    if (chosenProblem == null) {
-      // We have finished all the problems
-      this.setState({ status: "exhausted" });
-      return null;
-    } else if (Object.keys(context.bktParams).some((skill) => (context.bktParams[skill].probMastery <= this.learningObjectives[skill]))) {
-      this.setState({ currProblem: chosenProblem });
-      return chosenProblem;
-    } else {
+    if (!(Object.keys(context.bktParams).some((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])))) {
       this.setState({ status: "graduated" });
+      console.log("Graduated");
       return null;
+    } else if (chosenProblem == null) {
+      // We have finished all the problems
+      if (this.lesson && !this.lesson.allowRecycle) {
+        // If we do not allow problem recycle then we have exhausted the pool
+        this.setState({ status: "exhausted" });
+        return null;
+      } else {
+        this.completedProbs = new Set();
+      }
+    } else {
+      this.setState({ currProblem: chosenProblem, status: "learning" });
+      return chosenProblem;
     }
   }
 
   problemComplete = (context) => {
     this.completedProbs.add(this.state.currProblem.id);
+    console.log(this.completedProbs);
     return this._nextProblem(context);
   }
 
@@ -95,7 +115,7 @@ class Platform extends React.Component {
           <Toolbar>Open ITS</Toolbar>
         </AppBar>
         {this.state.status === "lessonSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} /> : ""}
+          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress}/> : ""}
         {this.state.status === "learning" ?
           <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} /> : ""}
         {this.state.status === "exhausted" ?

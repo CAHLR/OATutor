@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import styles from './problemCardStyles.js';
+import styles from './commonStyles.js';
 import checkAnswer from '../ProblemLogic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
