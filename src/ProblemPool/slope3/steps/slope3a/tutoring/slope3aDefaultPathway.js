@@ -94,7 +94,7 @@ var hints = [
     type: "scaffold",
     problemType: "MultipleChoice",
     choices: ["A: -6", "B: -2/3", "C: 3/2", "D: 4", "E: 0"],
-    answerType: "numeric",
+    answerType: "string",
     hintAnswer: ["C: 3/2"],
     dependencies: [0, 1, 2],
     subHints: [{

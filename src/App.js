@@ -19,6 +19,7 @@ import {
   ThemeContext,
   siteVersion,
   logData,
+  logMouseData,
   cookieID,
   debug,
   useBottomOutHints
@@ -37,6 +38,7 @@ class App extends React.Component {
       cookies.set(cookieID, id, { path: "/", expires: d });
     }
     this.userID = cookies.get(cookieID);
+    this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2;
 
     // Firebase creation
     this.firebase = null;
@@ -53,24 +55,28 @@ class App extends React.Component {
     cookies.remove("openITS-progress");
   }
 
-  saveProgress = (lesson, mastery, completedProblems) => {
+  saveProgress = () => {
     let d = new Date();
     d.setTime(d.getTime() + (3 * 365 * 24 * 60 * 60 * 1000)); // 3 years in the future
-    var progress = cookies.get("openITS-progress") == null ? {} : cookies.get("openITS-progress");
-    progress[lesson.id] = {
-      lesson: lesson,
-      mastery: mastery,
-      completedProblems: [...completedProblems],
-    };
+    var progress = {};
+    for (const [skill, stats] of Object.entries(this.bktParams)) {
+      progress[skill] = Math.round(stats.probMastery * 100) / 100;
+    }
     console.log("Saving:");
     console.log(progress);
     cookies.set("openITS-progress", progress, { path: "/", expires: d });
-    return;
   }
 
   loadProgress = () => {
     var progress = cookies.get("openITS-progress");
-    return progress;
+    if (progress == null) {
+      return;
+    }
+    for (const [skill, stats] of Object.entries(this.bktParams)) {
+      stats.probMastery = progress[skill];
+    }
+    console.log("Successfully loaded progress:");
+    console.log(progress);
   }
 
   render() {
@@ -80,7 +86,7 @@ class App extends React.Component {
         firebase: this.firebase,
         logData: logData,
         getTreatment: this.getTreatment,
-        bktParams: this.getTreatment() === 0 ? bktParams1 : bktParams2,
+        bktParams: this.bktParams,
         heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
         hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
         skillModel: skillModel,
@@ -89,7 +95,7 @@ class App extends React.Component {
         useBottomOutHints: useBottomOutHints
       }}>
         <ReactCursorPosition onPositionChanged={(data) => {
-          if (logData) {
+          if (logMouseData) {
             this.firebase.mouseLog(data);
           }
         }}>
