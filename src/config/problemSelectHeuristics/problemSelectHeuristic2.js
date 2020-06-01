@@ -7,13 +7,12 @@ function heuristic(problems, completedProbs) {
       continue;
     } else if (chosenProblem.length === 0 || chosenProblem[0].probMastery < problem.probMastery) {
       chosenProblem = [problem];
-    } else if (chosenProblem[0].probMastery === problem.probMastery) {
+    } else if (chosenProblem.length > 0 && chosenProblem[0].probMastery === problem.probMastery) {
       chosenProblem.push(problem);
     }
-
-    // Choose random from problems with equal mastery
-    return chosenProblem[Math.floor(Math.random() * chosenProblem.length)];
   }
+  // Choose random from problems with equal mastery
+  return chosenProblem[Math.floor(Math.random() * chosenProblem.length)];
 }
 
 export { heuristic };

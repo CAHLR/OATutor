@@ -7,7 +7,7 @@ const step = {
   stepAnswer: ["C: 3/2"],
   problemType: "MultipleChoice",
   choices: ["A: -6", "B: -2/3", "C: 3/2", "D: 4", "0"],
-  answerType: "algebra",
+  answerType: "string",
   hints: hints
 }
 

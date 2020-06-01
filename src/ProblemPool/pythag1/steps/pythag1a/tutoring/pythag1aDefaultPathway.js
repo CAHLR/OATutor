@@ -13,7 +13,7 @@ var hints = [
       hintAnswer: ["5"],
       problemType: "MultipleChoice",
       choices: ["-5", "0", "2", "5"],
-      answerType: "numeric",
+      answerType: "string",
       type: "scaffold",
       dependencies: [], 
       subHints: [{

@@ -37,23 +37,14 @@ class Platform extends React.Component {
 
   selectLesson = (lesson) => {
     this.lesson = lesson;
-    var progress = this.props.loadProgress();
-    console.log(progress);
-    if (progress && progress[lesson.id]) {
-      this.context.bktParams = progress[lesson.id].mastery;
-      this.completedProbs = new Set(progress[lesson.id].completedProblems);
-      console.log("Successfully loaded progress.");
-      console.log(this.context.bktParams);
-      console.log(this.completedProbs);
-    }
-   
+    this.props.loadProgress();
     this.setState({
       currProblem: this._nextProblem(this.context),
     })
   }
 
   _nextProblem = (context) => {
-    this.props.saveProgress(this.lesson, context.bktParams, this.completedProbs);
+    this.props.saveProgress();
     var chosenProblem = null;
 
     for (var problem of this.problemIndex.problems) {
@@ -78,7 +69,6 @@ class Platform extends React.Component {
     }
     
     chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
-    console.log(context.bktParams);
     console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
     // There exists a skill that has not yet been mastered (a True)

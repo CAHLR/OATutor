@@ -3,9 +3,10 @@ import algebraCheckOptions from './algebraCheck.js';
 import lessonPlans from './lessonPlans.js'
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 1.0;
+const siteVersion = 0.1;
 const logData = false;
-const debug = true;
+const logMouseData = false;
+const debug = false;
 const useBottomOutHints = true;
 
 // DynamicText not supported for HTML body types
@@ -22,6 +23,7 @@ export {ThemeContext,
     algebraCheckOptions,
     siteVersion,
     logData,
+    logMouseData,
     dynamicText,
     cookieID,
     debug,

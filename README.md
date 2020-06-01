@@ -154,6 +154,10 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 8. In `/src/config/skillModel.js`, tag each problem with the appropriate skills
 9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams` files
 
+### Types of problems
+* `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric. Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly match.
+* `MultipleChoice`: List choices as `choices: ["Choice A", "Choice B"]`, must have `answerType: "string"`
+
 ### Example Directory Structure
 ```
 ProblemPool
@@ -282,10 +286,12 @@ export { problem };
 
 ```js
 {
-    name: "Lesson 1",
-    topics: "Pythagorean Theorem",
-    learningObjectives: {
-      pythagorean: 0.95
-    }
+  id: "lesson1",
+  name: "Lesson 1",
+  topics: "Pythagorean Theorem",
+  allowRecycle: true,
+  learningObjectives: {
+    pythagorean: 0.95
+  }
 }
 ```

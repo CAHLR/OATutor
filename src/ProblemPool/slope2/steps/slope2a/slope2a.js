@@ -4,7 +4,7 @@ const step = {
   id: 'slope2a',
   stepTitle: "What is the slope of the line graphed below?",
   stepBody: "##slope2.gif##",
-  stepAnswer: ["1/2"],
+  stepAnswer: ["0.5"],
   problemType: "TextBox",
   answerType: "algebra",
   hints: hints
