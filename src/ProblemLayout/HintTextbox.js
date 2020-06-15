@@ -8,6 +8,7 @@ import MultipleChoice from './MultipleChoice.js';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
+import renderText from '../ProblemLogic/renderText.js';
 
 class HintTextbox extends React.Component {
   constructor(props) {
@@ -23,10 +24,8 @@ class HintTextbox extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, "hint");
-    console.log(this.props.submitHint)
-    this.props.submitHint(parsed, this.hint, correctAnswer);
-
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision);
+    this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
     this.setState({
       isCorrect: correctAnswer,
@@ -76,7 +75,12 @@ class HintTextbox extends React.Component {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={1} direction="row">
+            <div style={{ marginRight: "20px" }}>
+              {this.hint.units ? renderText(this.hint.units) : ""}
+            </div>
+          </Grid >
+          <Grid item xs={3}>
             {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
               src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
             {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity }} alt=""
@@ -84,9 +88,9 @@ class HintTextbox extends React.Component {
           </Grid>
         </Grid>
 
-       
-        <div className={classes.center}>
-        <Button className={classes.button} size="small" onClick={this.submit} >Submit</Button>
+
+        <div className={classes.center} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <Button className={classes.button} size="small" onClick={this.submit} >Submit</Button>
         </div>
 
       </div>

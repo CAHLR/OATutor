@@ -5,6 +5,7 @@ const step = {
   stepTitle: "3. Net Force Magnitude",
   stepBody: "What is the magnitude of the net force $\\sum F_{net}$ that the car experiences? ",
   stepAnswer: ["29.17"],
+  units: "$\\text{N}$",
   problemType: "TextBox",
   answerType: "string",
   hints: hints

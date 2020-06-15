@@ -14,14 +14,14 @@ var hints = [
       problemType: "TextBox",
       answerType: "numeric",
       type: "scaffold",
-      dependencies: [0]
+      dependencies: ['circle1a-h1']
     },
     {
       id: 'circle1a-h3',
       title: "Solution",
       text: "Recall that the radius is half the diameter, so $r = \\frac{d}{2} = 10$",
       type: "solution",
-      dependencies: [1]
+      dependencies: ['circle1a-h2']
     }
 ]
 

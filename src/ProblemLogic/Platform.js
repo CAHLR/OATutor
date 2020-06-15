@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 
@@ -32,7 +33,7 @@ class Platform extends React.Component {
       currProblem: null,
       status: "lessonSelection"
     }
-    
+
   }
 
   selectLesson = (lesson) => {
@@ -67,7 +68,7 @@ class Platform extends React.Component {
         problem.probMastery = probMastery;
       }
     }
-    
+
     chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
     console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
@@ -102,10 +103,15 @@ class Platform extends React.Component {
     return (
       <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
         <AppBar position="static" >
-          <Toolbar>Open ITS</Toolbar>
+          <Toolbar>
+            <div style={{ flex: 1 }}>Open ITS</div>
+
+              <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+
+          </Toolbar>
         </AppBar>
         {this.state.status === "lessonSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress}/> : ""}
+          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} /> : ""}
         {this.state.status === "learning" ?
           <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} /> : ""}
         {this.state.status === "exhausted" ?

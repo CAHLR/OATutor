@@ -11,7 +11,7 @@ var hints = [
       title: "Solution",
       text: "Rearranging the formula above, we get $r = \\sqrt{\\frac{A}{\\pi}} = 20$",
       type: "solution",
-      dependencies: [0]
+      dependencies: ['circle2a-h1']
     }
 ]
 

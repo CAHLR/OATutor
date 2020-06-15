@@ -11,7 +11,7 @@ var hints = [
     title: "Solution",
     text: "Using the previous part and formula above, we get $A = \\pi r^2 = \\pi (100)^2 \\approx 314.16$",
     type: "solution",
-    dependencies: [0]
+    dependencies: ['circle1b-h1']
   }
 ]
 

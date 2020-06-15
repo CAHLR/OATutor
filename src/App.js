@@ -39,6 +39,7 @@ class App extends React.Component {
     }
     this.userID = cookies.get(cookieID);
     this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2;
+    this.originalBktParams = this.bktParams;
 
     // Firebase creation
     this.firebase = null;
@@ -53,6 +54,7 @@ class App extends React.Component {
 
   removeProgress = () => {
     cookies.remove("openITS-progress");
+    this.loadProgress();
   }
 
   saveProgress = () => {
@@ -70,6 +72,7 @@ class App extends React.Component {
   loadProgress = () => {
     var progress = cookies.get("openITS-progress");
     if (progress == null) {
+      this.bktParams = this.originalBktParams;
       return;
     }
     for (const [skill, stats] of Object.entries(this.bktParams)) {

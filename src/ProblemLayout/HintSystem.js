@@ -13,7 +13,7 @@ class HintSystem extends React.Component {
   constructor(props) {
     super(props);
     var subHintsFinished = [];
-    for (var i = 0; i < this.props.hints.length; i ++) {
+    for (var i = 0; i < this.props.hints.length; i++) {
       subHintsFinished.push(new Array((this.props.hints[i].subHints !== undefined ? this.props.hints[i].subHints.length : 0)).fill(0));
     }
     this.state = {
@@ -22,18 +22,17 @@ class HintSystem extends React.Component {
       showSubHints: new Array(this.props.hints.length).fill(false),
       subHintsFinished: subHintsFinished
     }
-    console.log(this.props.hints)
   }
 
-  finishHint = (event, expanded, i) => {
+  unlockHint = (event, expanded, i) => {
     if (expanded && i < this.props.hintStatus.length) {
-      this.props.finishHint(i);
+      this.props.unlockHint(i, this.props.hints[i].type === "scaffold");
     }
     this.setState({ latestStep: i });
   }
 
   isLocked = (hintNum) => {
-    if (hintNum === 0) {
+    if (hintNum === 0 || (hintNum === 1 && this.props.hints[0].type !== "scaffold")) {
       return false;
     }
     var dependencies = this.props.hints[hintNum].dependencies;
@@ -42,11 +41,10 @@ class HintSystem extends React.Component {
   }
 
   toggleSubHints = (event, i) => {
-    console.log(i);
+    this.unlockSubHint(0, i, this.props.hints[i].subHints[0].type === "scaffold");
     this.setState(prevState => {
       var displayHints = prevState.showSubHints;
       displayHints[i] = !displayHints[i];
-      console.log(displayHints, i);
       return ({
         showSubHints: displayHints
       })
@@ -57,10 +55,9 @@ class HintSystem extends React.Component {
     });
   }
 
-  finishSubHint = (hintNum, i) => {
-    console.log(this.state.subHintsFinished, i)
+  unlockSubHint = (hintNum, i, isScaffold) => {
     this.setState(prevState => {
-      prevState.subHintsFinished[i][hintNum] = 1;
+      prevState.subHintsFinished[i][hintNum] = (!isScaffold ? 1 : 0.5);
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
@@ -69,7 +66,13 @@ class HintSystem extends React.Component {
     });
   }
 
-  submitSubHint = (parsed, hint, correctAnswer) => {
+  submitSubHint = (parsed, hint, correctAnswer, i, hintNum) => {
+    if (correctAnswer) {
+      this.setState(prevState => {
+        prevState.subHintsFinished[i][hintNum] = 1;
+        return { subHintsFinished: prevState.subHintsFinished }
+      });
+    }
     if (this.context.logData) {
       this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
@@ -81,27 +84,29 @@ class HintSystem extends React.Component {
       <div className={classes.root}>
         {this.props.hints.map((hint, i) => {
           return <ExpansionPanel key={i}
-            onChange={(event, expanded) => this.finishHint(event, expanded, i)}
-            disabled={this.isLocked(i)}>
+            onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+            disabled={this.isLocked(i)}
+            defaultExpanded={i === 0}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {hint.title} {this.isLocked(i) ? " [LOCKED]" : ""}</Typography>
+                Hint {i + 1}: {hint.title}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'} style={{ width: "100%" }}>
                 {renderText(hint.text, hint.id.substring(0, hint.id.length - 4))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint} toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
+                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
+                    toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
                 {this.state.showSubHints[i] && hint.subHints !== undefined ?
                   <div className="SubHints">
                     <br />
                     <SubHintSystem
                       hints={hint.subHints}
-                      finishHint={this.finishSubHint}
+                      unlockHint={this.unlockSubHint}
                       hintStatus={this.state.subHintsFinished[i]}
                       submitHint={this.submitSubHint}
                       parent={i}

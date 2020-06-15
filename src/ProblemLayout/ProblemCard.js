@@ -28,14 +28,37 @@ class ProblemCard extends React.Component {
     this.index = props.index;
     this.hints = this.step.hints[context.hintPathway];
 
+    for (var hint of this.hints) {
+      hint.dependencies = hint.dependencies.map(dependency => this._findHintId(this.hints, dependency));
+      if (hint.subHints) {
+        for (var subHint of hint.subHints) {
+          subHint.dependencies = subHint.dependencies.map(dependency => this._findHintId(hint.subHints, dependency));
+        }
+      }
+    }
+
     // Bottom out hints option
-    if (context.useBottomOutHints && this.hints[this.hints.length - 1].type !== 'bottomOut') {
+    if (context.useBottomOutHints) {
+      // Bottom out hints
       this.hints.push({
         id: this.step.id + "-h" + (this.hints.length),
         title: "Answer",
         text: "The answer is " + this.step.stepAnswer,
         type: "bottomOut",
         dependencies: Array.from(Array(this.hints.length).keys())
+      });
+      // Bottom out sub hints
+      this.hints.map((hint, i) => {
+        if (hint.subHints != null && hint.type === "scaffold") {
+          hint.subHints.push({
+            id: this.step.id + "-h" + i + "-s" + (hint.subHints.length),
+            title: "Answer",
+            text: "The answer is " + hint.hintAnswer[0],
+            type: "bottomOut",
+            dependencies: Array.from(Array(hint.subHints.length).keys())
+          });
+        }
+        return null;
       })
     }
 
@@ -48,8 +71,17 @@ class ProblemCard extends React.Component {
     }
   }
 
+  _findHintId = (hints, targetId) => {
+    for (var i = 0; i < hints.length; i++) {
+      if (hints[i].id === targetId) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision);
 
     if (this.context.logData) {
       this.context.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
@@ -73,6 +105,9 @@ class ProblemCard extends React.Component {
   }
 
   toggleHints = (event) => {
+    // Automatically toggle the first hint
+    this.unlockHint(0, this.hints[0].type === "scaffold");
+
     this.setState(prevState => ({
       showHints: !prevState.showHints
     }), () => {
@@ -82,12 +117,14 @@ class ProblemCard extends React.Component {
     });
   }
 
-  finishHint = (hintNum) => {
+  unlockHint = (hintNum, isScaffold) => {
+    // Mark question as wrong if hints are used (on the first time)
     if (this.state.hintsFinished.reduce((a, b) => a + b) === 0) {
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
+
     this.setState(prevState => {
-      prevState.hintsFinished[hintNum] = 1;
+      prevState.hintsFinished[hintNum] = (!isScaffold ? 1 : 0.5);
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
       if (this.context.logData) {
@@ -96,7 +133,13 @@ class ProblemCard extends React.Component {
     });
   }
 
-  submitHint = (parsed, hint, correctAnswer) => {
+  submitHint = (parsed, hint, correctAnswer, hintNum) => {
+    if (correctAnswer) {
+      this.setState(prevState => {
+        prevState.hintsFinished[hintNum] = 1;
+        return { hintsFinished: prevState.hintsFinished }
+      });
+    }
     if (this.context.logData) {
       this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
@@ -120,7 +163,7 @@ class ProblemCard extends React.Component {
             <div className="Hints">
               <HintSystem
                 hints={this.hints}
-                finishHint={this.finishHint}
+                unlockHint={this.unlockHint}
                 hintStatus={this.state.hintsFinished}
                 submitHint={this.submitHint}
               />
@@ -139,16 +182,17 @@ class ProblemCard extends React.Component {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={3} >
                 <Box display="flex">
                   <Box m="auto">
-                    {this.step.problemType === "TextBox" ? <TextField
-                      error={this.state.isCorrect === false}
-                      className={classes.inputField}
-                      variant="outlined"
-                      onChange={(evt) => this.editInput(evt)}
-                      onKeyPress={(evt) => this.handleKey(evt)}>
-                    </TextField> : ""}
+                    {this.step.problemType === "TextBox" ?
+                      <TextField
+                        error={this.state.isCorrect === false}
+                        className={classes.inputField}
+                        variant="outlined"
+                        onChange={(evt) => this.editInput(evt)}
+                        onKeyPress={(evt) => this.handleKey(evt)}>
+                      </TextField> : ""}
                     {this.step.problemType === "MultipleChoice" ?
                       <MultipleChoice
                         onChange={(evt) => this.editInput(evt)}
@@ -156,11 +200,19 @@ class ProblemCard extends React.Component {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={4}>
-                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
-                  src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity }} alt=""
-                  src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
+              <Grid item xs={1} >
+                <div style={{ marginRight: "20px" }}>
+                  {this.step.units ? renderText(this.step.units) : ""}
+                </div>
+              </Grid >
+              <Grid item xs={3}>
+                <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
+
+                  {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
+                    src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
+                  {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity }} alt=""
+                    src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
+                </div>
               </Grid>
 
             </Grid>
@@ -172,7 +224,7 @@ class ProblemCard extends React.Component {
         </CardActions>
       </Card>
 
-      
+
 
     )
   };
