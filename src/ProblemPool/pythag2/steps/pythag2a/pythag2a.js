@@ -5,6 +5,7 @@ const step = {
   stepTitle: "How long is Bob's final walk?",
   stepBody: "Express your answer in meters.",
   stepAnswer: ["9"],
+  units: "$\\text{m}$",
   problemType: "TextBox",
   answerType: "algebra",
   hints: hints

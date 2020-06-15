@@ -11,14 +11,14 @@ var hints = [
     title: "Circumference of a circle",
     text: "Recall that the circumference of a circle is $C = 2\\pi r$",
     type: "hint",
-    dependencies: []
+    dependencies: ['circle2b-h1']
   },
   {
     id: 'circle2b-h3',
     title: "Solution",
     text: "Using the previous part and formula above, we get $C = 2\\pi r = 2 \\pi (20) \\approx 125.6$",
     type: "solution",
-    dependencies: [1]
+    dependencies: ['circle2b-h2']
   }
 ]
 

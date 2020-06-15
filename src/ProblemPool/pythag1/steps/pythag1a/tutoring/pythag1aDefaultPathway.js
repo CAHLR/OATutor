@@ -15,7 +15,7 @@ var hints = [
       choices: ["-5", "0", "2", "5"],
       answerType: "string",
       type: "scaffold",
-      dependencies: [], 
+      dependencies: ["pythag1a-h1"], 
       subHints: [{
         id: 'pythag1a-h2-s1',
         title: "Simple Net Force",
@@ -30,9 +30,9 @@ var hints = [
     {
       id: 'pythag1a-h3',
       title: "Solution",
-      text: "The net force simply adds, so $\\sum F_y = -4.30 + 0.20 + 4.20 = 0.10N$",
+      text: "The net force simply adds, so $\\sum F_y = -4.30 + 0.20 + 4.20 = 0.10$",
       type: "solution",
-      dependencies: [0, 1]
+      dependencies: ["pythag1a-h1", "pythag1a-h2"]
     }
 ]
 

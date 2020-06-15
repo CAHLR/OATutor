@@ -3,7 +3,7 @@ import algebraCheckOptions from './algebraCheck.js';
 import lessonPlans from './lessonPlans.js'
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 0.1;
+const siteVersion = 0.2;
 const logData = false;
 const logMouseData = false;
 const debug = false;

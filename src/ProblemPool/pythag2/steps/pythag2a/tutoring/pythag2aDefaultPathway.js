@@ -7,18 +7,18 @@ var hints = [
     dependencies: []
   },
   {
-    id: 'pythag1c-h2',
+    id: 'pythag2a-h2',
     title: "Formula",
     text: "Use the Pythagorean Theorem, $a^2 + b^2 = c^2$, to calculate the side of the triangle with unknown length.",
     type: "hint",
-    dependencies: []
+    dependencies: ['pythag2a-h1']
   },
   {
-    id: 'pythag1a-h3',
+    id: 'pythag2a-h3',
     title: "Solution",
     text: "Alice and Bob's walking paths form a right triangle. We can use the Pythagorean Theorem using $b = 12, c = 15$, solving for $a$. $a^2 = c^2 - b^2 \\implies a = \\sqrt{c^2 -b^2} = \\sqrt{225 - 144} = \\sqrt{81} = 9$",
     type: "solution",
-    dependencies: [0, 1]
+    dependencies: ['pythag2a-h1', 'pythag2a-h2']
   }
 ]
 

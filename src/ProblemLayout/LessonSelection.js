@@ -13,11 +13,16 @@ class LessonSelection extends React.Component {
     super(props);
     this.lessonPlans = lessonPlans;
     this.removedProgress = false;
+    this.preparedRemoveProgress = false;
   }
 
   removeProgress = () => {
     this.removedProgress = true;
     this.props.removeProgress();
+  }
+
+  prepareRemoveProgress = () => {
+    this.preparedRemoveProgress = true;
   }
 
   render() {
@@ -59,7 +64,10 @@ class LessonSelection extends React.Component {
         </Grid>
         <br />
         <center>
-          <Button className={classes.button} size="small" onClick={this.removeProgress} disabled={this.removedProgress}>{this.removedProgress ? "Progress reset!" : "Reset Progress"}</Button>
+          
+        {this.preparedRemoveProgress ? 
+          <Button className={classes.button} size="small" onClick={this.removeProgress} disabled={this.removedProgress}>{this.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> : 
+          <Button className={classes.button} size="small" onClick={this.prepareRemoveProgress} disabled={this.preparedRemoveProgress}>{"Reset Progress"}</Button> }
         </center>
       </div>
     );

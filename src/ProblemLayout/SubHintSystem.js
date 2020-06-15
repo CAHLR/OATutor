@@ -18,9 +18,9 @@ class SubHintSystem extends React.Component {
     }
   }
 
-  finishHint = (event, expanded, i) => {
+  unlockHint = (event, expanded, i) => {
     if (expanded && i < this.props.hintStatus.length) {
-      this.props.finishHint(i, this.props.parent);
+      this.props.unlockHint(i, this.props.parent);
     }
     this.setState({ latestStep: i });
   }
@@ -40,21 +40,22 @@ class SubHintSystem extends React.Component {
       <div className={classes.root}>
         {this.props.hints.map((hint, i) => {
           return <ExpansionPanel key={i}
-            onChange={(event, expanded) => this.finishHint(event, expanded, i)}
-            disabled={this.isLocked(i)}>
+            onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+            disabled={this.isLocked(i)}
+            defaultExpanded={i === 0}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {hint.title} {this.isLocked(i) ? " [LOCKED]" : ""}</Typography>
+                Hint {i + 1}: {hint.title} </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'}>
                 {renderText(hint.text, hint.id.substring(0, hint.id.length - 4))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hint={hint} submitHint={this.props.submitHint} /></div> : ""}
+                  <div><br /><HintTextbox hint={hint} submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)} /></div> : ""}
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>

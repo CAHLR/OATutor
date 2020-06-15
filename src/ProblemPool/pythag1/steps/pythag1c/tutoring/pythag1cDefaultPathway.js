@@ -16,9 +16,9 @@ var hints = [
   {
     id: 'pythag1c-h3',
     title: "Solution",
-    text: "Using the Pythagorean Theorem and previous steps, we get $\\sum F_{net}^2 = \\sum F_x^2 + \\sum F_y^2 \\implies \\sum F_{net} = \\sqrt{\\sum F_x^2 + \\sum F_y^2}$ $= \\sqrt{(0.1)^2 + (-5.40)^2} = 29.17N$",
+    text: "Using the Pythagorean Theorem and previous steps, we get $\\sum F_{net}^2 = \\sum F_x^2 + \\sum F_y^2 \\implies \\sum F_{net} = \\sqrt{\\sum F_x^2 + \\sum F_y^2}$ $= \\sqrt{(0.1)^2 + (-5.40)^2} = 29.17$",
     type: "solution",
-    dependencies: [0,1]
+    dependencies: ['pythag1c-h1', 'pythag1c-h2']
   }
 ]
 

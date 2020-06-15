@@ -20,13 +20,13 @@ var hints = [
       title: "Direction of negative slope",
       text: "If the line is going up, the slope of the line is positive. If it is going down, the slope is negative.",
       type: "hint",
-      dependencies: [0]
+      dependencies: ['slope3a-h1-s1']
     }, {
       id: 'slope3a-h1-s3',
       title: "Direction of positive slope",
       text: "In moving along the line from point A to B, you see that the line is going up. Therefore, the slope of the line is positive.",
       type: "hint",
-      dependencies: [0, 1]
+      dependencies: ['slope3a-h1-s2']
     }],
   },
   {
@@ -37,7 +37,7 @@ var hints = [
     problemType: "TextBox",
     answerType: "numeric",
     hintAnswer: ["6"],
-    dependencies: [0],
+    dependencies: ['slope3a-h1'],
     subHints: [{
       id: 'slope3a-h2-s1',
       title: "Finding the rise of a line",
@@ -49,13 +49,7 @@ var hints = [
       title: "Rise of this line",
       text: "The line goes up 6 units (squares) from point A to point B. Therefore, the rise of the line is 6.",
       type: "hint",
-      dependencies: [0]
-    }, {
-      id: 'slope3a-h2-s3',
-      title: "Hint Answer",
-      text: "The answer is 6.",
-      type: "hint",
-      dependencies: [0, 1]
+      dependencies: ['slope3a-h2-s1']
     }],
   },
   {
@@ -66,7 +60,7 @@ var hints = [
     problemType: "TextBox",
     answerType: "numeric",
     hintAnswer: ["4"],
-    dependencies: [0, 1],
+    dependencies: ['slope3a-h2'],
     subHints: [{
       id: 'slope3a-h3-s1',
       title: "Finding the run of a line",
@@ -75,16 +69,10 @@ var hints = [
       dependencies: []
     }, {
       id: 'slope3a-h3-s2',
-      title: "Run of a line",
+      title: "Run of this line",
       text: "The line goes over 4 units (squares) from point A to point B. Therefore, the run of the line is 4.",
       type: "hint",
-      dependencies: [0]
-    } , {
-      id: 'slope3a-h3-s3',
-      title: "Hint Answer",
-      text: "The answer is 4.",
-      type: "hint",
-      dependencies: [0, 1]
+      dependencies: ['slope3a-h3-s1']
     }],
   },
   {
@@ -96,7 +84,7 @@ var hints = [
     choices: ["A: -6", "B: -2/3", "C: 3/2", "D: 4", "E: 0"],
     answerType: "string",
     hintAnswer: ["C: 3/2"],
-    dependencies: [0, 1, 2],
+    dependencies: ['slope3a-h3'],
     subHints: [{
       id: 'slope3a-h4-s1',
       title: "Finding the slope of a line",
@@ -108,13 +96,13 @@ var hints = [
       title: "Slope of this line",
       text: "To find the slope of the line you need to divide 6 by 4. You need to reduce this expression to get the final answer.",
       type: "hint",
-      dependencies: [0]
+      dependencies: ['slope3a-h4-s1']
     } , {
       id: 'slope3a-h4-s3',
       title: "Hint Answer",
       text: "6/4 can be reduced to 3/2. Select option C. The slope is 3/2",
       type: "hint",
-      dependencies: [0, 1]
+      dependencies: ['slope3a-h4-s2']
     }],
   },
   {
@@ -126,7 +114,7 @@ var hints = [
     choices: ["A: Yes", "B: No"],
     hintAnswer: ["A: Yes"],
     answerType: "string",
-    dependencies: [0, 1, 2, 3],
+    dependencies: ['slope3a-h4'],
     subHints: [{
       id: 'slope3a-h5-s1',
       title: "Rise and run from A to C",
@@ -138,13 +126,13 @@ var hints = [
       title: "Calculating the slope from A to C",
       text: "The rise of the line from point A to C is 3 units and the run is 2 units. Now to calculate the slope of the line, you need to find the ratio of rise/run so you need to divide 3 by 2.",
       type: "hint",
-      dependencies: [0]
+      dependencies: ['slope3a-h5-s1']
     }, {
       id: 'slope3a-h5-s3',
       title: "Hint Answer",
       text: "The slope of the line between points A and B is 3/2, and the slope of the line between A and C is also 3/2. Therefore, the slope of the line is the same between these points.",
       type: "hint",
-      dependencies: [0, 1]
+      dependencies: ['slope3a-h5-s2']
     }],
   },
 ]

@@ -14,14 +14,14 @@ var hints = [
     problemType: "TextBox",
     answerType: "numeric",
     type: "scaffold",
-    dependencies: [0]
+    dependencies: ['pythag1b-h1']
   },
   {
     id: 'pythag1b-h3',
     title: "Solution",
-    text: "The net force simply adds, so $\\sum F_x = -3.10N + 1.70 + -4.00 = -5.40N$",
+    text: "The net force simply adds, so $\\sum F_x = -3.10N + 1.70 + -4.00 = -5.40$",
     type: "solution",
-    dependencies: [1]
+    dependencies: ['pythag1b-h2']
   }
 ]
 

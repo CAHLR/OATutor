@@ -6,7 +6,7 @@ const step = {
   stepBody: "##slope3.jpg##",
   stepAnswer: ["C: 3/2"],
   problemType: "MultipleChoice",
-  choices: ["A: -6", "B: -2/3", "C: 3/2", "D: 4", "0"],
+  choices: ["A: -6", "B: -2/3", "C: 3/2", "D: 4"],
   answerType: "string",
   hints: hints
 }
