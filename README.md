@@ -1,6 +1,8 @@
 # OpenITS
 
-## Usage: 
+An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented in ReactJS and using Firebase for logging.
+
+## Installation: 
 ```
 git clone https://github.com/CAHLR/OpenITS
 cd OpenITS
@@ -9,25 +11,25 @@ npm run generate
 ```
 After compiling, the project will display in a new web browser tab at adress `localhost:3000`.
 
-`npm start` can be used if no new problems/steps/pathways have been added.
+`npm run generate` is used to autogenerate index files (the preferred way of running locally)
 
-`npm run generate` is used to autogenerate index files
+(`npm start` can be used if no new problems/steps/pathways have been added.)
 
-Create a file `/src/ProblemLogic/credentials.js`. It must be in the following format:
+Create a file `/src/ProblemLogic/credentials.js`. This file need not have functional credentials unless logging is turned on (it is off by default) It must exist for the project to compile and be in the following format:
 
 ```javascript
 const config = {};
 export default config;
 ```
 
-## Firebase
+### Firebase Setup
 OpenITS uses Firebase for data logging purposes.
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Add new project. Configure it as you wish (the options are not important for setup)
 3. Click on Database and then create database. Start in test mode, leave the cloud location as is
 4. Click `start collection` and name it `problemSubmissions`. Add a temporary first document for now.
 5. Click on settings --> service accounts. Generate a new `Node.js` private key.
-6. Put that private key in the below format in `/src/ProblemLogic/credentials.js`
+6. Put that private key in the below format in `/src/config/credentials.js`
 
 ```javascript
 const config = {
@@ -44,12 +46,14 @@ const config = {
 export default config;
 ```
 
-## Features in progress:
+## Features:
 1) Scaffolding/hint system - modularize the type of help 
 2) Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
 3) Centralized skill model - `src/ProblemPool/skillMode.js` 
 4) Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5) User login/registration - Cookie cache based
+
+See the changelog for a more detailed feature list
 
 ## Technologies Used
 * Frontend: ReactJS
@@ -134,7 +138,9 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 - `algebraCheck.js`: Config file for algebraic answer checks
 
-## Mouse Logging
+## Listeners
+
+### Mouse Logging
 * Size of screen is the size of the scrollable browser canvas
 
 ### Adding Listeners
@@ -142,6 +148,8 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 2. Wrap the Platform component with the listener. The listener must take a prop that is a function to log data that it receives. 
 3. In `/ProblemLogic/Firebase.js` add a new function to log the new type of data. Create a new collection for this listener logs.
 4. Configure buffer size and granularity of logging
+
+# Problem Pool
 
 ## Adding a problem to the Problem Pool
 1. Create a folder in `/src/ProblemPool/` for that problem (Ex. `circle1`)
