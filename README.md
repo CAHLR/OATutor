@@ -3,6 +3,8 @@
 An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented in ReactJS and using Firebase for logging.
 
 ## Installation: 
+The installation assumes that you already have git and npm installed. If you do not have either, please install those first.
+
 ```
 git clone https://github.com/CAHLR/OpenITS
 cd OpenITS
@@ -45,6 +47,7 @@ const config = {
 
 export default config;
 ```
+---
 
 ## Features:
 1) Scaffolding/hint system - modularize the type of help 
@@ -62,6 +65,8 @@ See the changelog for a more detailed feature list
 	* Deployment: TBD
 * Offline Computation/Iteration:
 	* Python (dAFM Machine Learning algorithm)
+
+
 
 # Project Structure: 
 Code for this project is located in the `src` directory. 
@@ -138,6 +143,8 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 - `algebraCheck.js`: Config file for algebraic answer checks
 
+---
+
 ## Listeners
 
 ### Mouse Logging
@@ -148,6 +155,8 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 2. Wrap the Platform component with the listener. The listener must take a prop that is a function to log data that it receives. 
 3. In `/ProblemLogic/Firebase.js` add a new function to log the new type of data. Create a new collection for this listener logs.
 4. Configure buffer size and granularity of logging
+
+
 
 # Problem Pool
 
