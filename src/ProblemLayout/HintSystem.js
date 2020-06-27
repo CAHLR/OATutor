@@ -61,7 +61,7 @@ class HintSystem extends React.Component {
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
-        this.context.firebase.log(null, this.step, null, this.state.subHintsFinished, "unlockSubHint");
+        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint");
       }
     });
   }
@@ -74,7 +74,7 @@ class HintSystem extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
   }
 
@@ -97,7 +97,7 @@ class HintSystem extends React.Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'} style={{ width: "100%" }}>
-                {renderText(hint.text, hint.id.substring(0, hint.id.length - 4))}
+                {renderText(hint.text, this.props.problemID)}
                 {hint.type === "scaffold" ?
                   <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
                     toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
@@ -105,6 +105,7 @@ class HintSystem extends React.Component {
                   <div className="SubHints">
                     <br />
                     <SubHintSystem
+                      problemID={this.props.problemID}
                       hints={hint.subHints}
                       unlockHint={this.unlockSubHint}
                       hintStatus={this.state.subHintsFinished[i]}

@@ -28,10 +28,10 @@ class ProblemCard extends React.Component {
     this.index = props.index;
     this.hints = this.step.hints[context.hintPathway];
 
-    for (var hint of this.hints) {
+    for (let hint of this.hints) {
       hint.dependencies = hint.dependencies.map(dependency => this._findHintId(this.hints, dependency));
       if (hint.subHints) {
-        for (var subHint of hint.subHints) {
+        for (let subHint of hint.subHints) {
           subHint.dependencies = subHint.dependencies.map(dependency => this._findHintId(hint.subHints, dependency));
         }
       }
@@ -84,7 +84,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision);
 
     if (this.context.logData) {
-      this.context.firebase.log(parsed, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
+      this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
     }
 
     this.setState({
@@ -128,7 +128,7 @@ class ProblemCard extends React.Component {
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
       if (this.context.logData) {
-        this.context.firebase.log(null, this.step, null, this.state.hintsFinished, "unlockHint");
+        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint");
       }
     });
   }
@@ -141,7 +141,7 @@ class ProblemCard extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.step, hint, correctAnswer, this.state.hintsFinished);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished);
     }
   }
 
@@ -156,12 +156,14 @@ class ProblemCard extends React.Component {
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.step.id.substring(0, this.step.id.length - 1))}
+            {renderText(this.step.stepBody, this.props.problemID)}
           </div>
 
           {this.state.showHints ?
             <div className="Hints">
               <HintSystem
+                problemID={this.props.problemID}
+                step={this.step}
                 hints={this.hints}
                 unlockHint={this.unlockHint}
                 hintStatus={this.state.hintsFinished}

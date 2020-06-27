@@ -51,14 +51,14 @@ class Firebase {
       (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
   }
 
-  log(inputVal, step, isCorrect, hintsFinished, eventType) {
+  log(inputVal, problemID, step, isCorrect, hintsFinished, eventType) {
     var date = this.getDate();
     var data = {
       timeStamp: date,
       eventType: eventType,
       siteVersion: this.siteVersion,
       studentID: this.id,
-      problemID: step.id.slice(0, -1),
+      problemID: problemID,
       stepID: step.id,
       hintID: null,
       input: inputVal,
@@ -73,14 +73,14 @@ class Firebase {
     return this.writeData("problemSubmissions", date, data);
   }
 
-  hintLog(hintInput, step, hint, isCorrect, hintsFinished) {
+  hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished) {
     var date = this.getDate();
     var data = {
       timeStamp: date,
       eventType: "hintScaffoldLog",
       siteVersion: this.siteVersion,
       studentID: this.id,
-      problemID: step.id.slice(0, -1),
+      problemID: problemID,
       stepID: step.id,
       hintID: hint.id,
       input: null,
