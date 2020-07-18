@@ -11,7 +11,7 @@ cd OpenITS
 npm install
 npm run generate
 ```
-After compiling, the project will display in a new web browser tab at adress `localhost:3000`.
+After compiling, the project will display in a new web browser tab at adress `localhost:1337`.
 
 `npm run generate` is used to autogenerate index files (the preferred way of running locally)
 
