@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "generate": "(cd src/util/;node indexGenerator.js) & (npm run start)",
+    "generate": "cd src/util/; node indexGenerator.js; cd ../..; npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
