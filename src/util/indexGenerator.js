@@ -83,19 +83,19 @@ function problemPoolIndex(problems) {
 }
 
 // Already changed directory using process to ProblemPool
-const root = "./"
-var problemDirectories = getDirectories("./");
-var problems = problemDirectories.map(step => step.split("\\").pop());
+const root = "."
+var problemDirectories = getDirectories(root);
+var problems = problemDirectories.map(step => step.split(path.sep).pop());
 var poolIndex = problemPoolIndex(problems);
 writeIndexFile(`${root}/problemPool.js`, poolIndex);
 problems.map(problem => {
   var stepDirectories = getDirectories(`${root}/${problem}/steps`);
-  var steps = stepDirectories.map(step => step.split("\\").pop());
+  var steps = stepDirectories.map(step => step.split(path.sep).pop());
   var pIndex = problemIndex(steps);
   writeIndexFile(`${root}/${problem}/${problem}-index.js`, pIndex);
   steps.map(step => {
     var hintFiles = getFiles(`${root}/${problem}/steps/${step}/tutoring`);
-    var hints = hintFiles.map(hint => hint.split("\\").pop().slice(step.length, -3));
+    var hints = hintFiles.map(hint => hint.split(path.sep).pop().slice(step.length, -3));
     hints = hints.map(hint => hint[0].toLowerCase() + hint.substring(1));
     var hIndex = hintIndex(step, hints);
     writeIndexFile(`${root}/${problem}/steps/${step}/${step}-index.js`, hIndex);
