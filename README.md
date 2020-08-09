@@ -141,7 +141,7 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 - `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the gitignore by default to prevent API key leaks.)
 
-- `algebraCheck.js`: Config file for algebraic answer checks
+- `algebraCheck.js`: Config file for algebraic answer checks. Supported syntax can be found [here](https://www.npmjs.com/package/expr-eval)
 
 ---
 

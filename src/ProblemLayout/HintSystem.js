@@ -18,6 +18,7 @@ class HintSystem extends React.Component {
     }
     this.state = {
       latestStep: 0,
+      currentExpanded: -1,
       hintAnswer: "",
       showSubHints: new Array(this.props.hints.length).fill(false),
       subHintsFinished: subHintsFinished
@@ -25,14 +26,15 @@ class HintSystem extends React.Component {
   }
 
   unlockHint = (event, expanded, i) => {
+    this.setState({ currentExpanded: i });
     if (expanded && i < this.props.hintStatus.length) {
-      this.props.unlockHint(i, this.props.hints[i].type === "scaffold");
+      this.props.unlockHint(i, this.props.hints[i].type);
     }
     this.setState({ latestStep: i });
   }
 
   isLocked = (hintNum) => {
-    if (hintNum === 0 || (hintNum === 1 && this.props.hints[0].type !== "scaffold")) {
+    if (hintNum === 0) {
       return false;
     }
     var dependencies = this.props.hints[hintNum].dependencies;
@@ -41,7 +43,6 @@ class HintSystem extends React.Component {
   }
 
   toggleSubHints = (event, i) => {
-    this.unlockSubHint(0, i, this.props.hints[i].subHints[0].type === "scaffold");
     this.setState(prevState => {
       var displayHints = prevState.showSubHints;
       displayHints[i] = !displayHints[i];
@@ -86,7 +87,8 @@ class HintSystem extends React.Component {
           return <ExpansionPanel key={i}
             onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
             disabled={this.isLocked(i)}
-            defaultExpanded={i === 0}>
+            expanded={this.state.currentExpanded === i}
+            defaultExpanded={false}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
