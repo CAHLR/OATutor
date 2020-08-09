@@ -14,11 +14,13 @@ class SubHintSystem extends React.Component {
     super(props);
     this.state = {
       latestStep: 0,
+      currentExpanded: -1,
       hintAnswer: ""
     }
   }
 
   unlockHint = (event, expanded, i) => {
+    this.setState({ currentExpanded: i });
     if (expanded && i < this.props.hintStatus.length) {
       this.props.unlockHint(i, this.props.parent);
     }
@@ -42,7 +44,8 @@ class SubHintSystem extends React.Component {
           return <ExpansionPanel key={i}
             onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
             disabled={this.isLocked(i)}
-            defaultExpanded={i === 0}>
+            expanded={this.state.currentExpanded === i}
+            defaultExpanded={false}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"

@@ -105,9 +105,6 @@ class ProblemCard extends React.Component {
   }
 
   toggleHints = (event) => {
-    // Automatically toggle the first hint
-    this.unlockHint(0, this.hints[0].type === "scaffold");
-
     this.setState(prevState => ({
       showHints: !prevState.showHints
     }), () => {
@@ -117,14 +114,14 @@ class ProblemCard extends React.Component {
     });
   }
 
-  unlockHint = (hintNum, isScaffold) => {
+  unlockHint = (hintNum, hintType) => {
     // Mark question as wrong if hints are used (on the first time)
     if (this.state.hintsFinished.reduce((a, b) => a + b) === 0) {
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
 
     this.setState(prevState => {
-      prevState.hintsFinished[hintNum] = (!isScaffold ? 1 : 0.5);
+      prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
       return { hintsFinished: prevState.hintsFinished }
     }, () => {
       if (this.context.logData) {
