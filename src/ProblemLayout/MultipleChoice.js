@@ -4,6 +4,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
+import renderText from '../ProblemLogic/renderText.js';
 
 class MultipleChoice extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class MultipleChoice extends React.Component {
         <FormLabel component="legend"></FormLabel>
         <RadioGroup value={this.state.value} onChange={this.handleChange}>
           {this.props.choices.map((choice, i) =>
-            <FormControlLabel value={choice} control={<Radio />} label={choice} key={choice} />)}
+            <FormControlLabel value={choice} control={<Radio />} label={renderText(choice)} key={choice} />)}
         </RadioGroup>
       </FormControl>
     );

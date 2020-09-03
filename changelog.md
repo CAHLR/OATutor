@@ -1,5 +1,9 @@
 # Changelog
 
+## Beta v0.23
+* Enable LaTeX rendering for multiple choice questions
+* Added Windows support for `npm run generate` (used to only support MacOS & Linux)
+
 ## Beta v0.22
 * Updated README with algebra parser library documentation
 * Reverted back to not auto-show first hint when help is requested
