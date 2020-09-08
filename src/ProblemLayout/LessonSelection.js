@@ -46,7 +46,7 @@ class LessonSelection extends React.Component {
             <Grid container spacing={3} >
               {this.lessonPlans.map((lesson, i) => {
                 return (
-                  <Grid item xs={4} key={i}>
+                  <Grid item xs={12} sm={6} md={4} key={i}>
                     <center>
                       <Paper className={classes.paper}>
                         <h2 style={{ marginTop: "5px", marginBottom: "10px" }}>{lesson.name}</h2>
@@ -63,12 +63,16 @@ class LessonSelection extends React.Component {
           </Box>
         </Grid>
         <br />
-        <center>
-          
-        {this.preparedRemoveProgress ? 
-          <Button className={classes.button} size="small" onClick={this.removeProgress} disabled={this.removedProgress}>{this.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> : 
-          <Button className={classes.button} size="small" onClick={this.prepareRemoveProgress} disabled={this.preparedRemoveProgress}>{"Reset Progress"}</Button> }
-        </center>
+        <Grid container spacing={3} >
+          <Grid item xs={3} sm={3} md={5} key={1} />
+          <Grid item xs={6} sm={6} md={2} key={2}>
+            {this.preparedRemoveProgress ?
+              <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.removeProgress} disabled={this.removedProgress}>{this.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
+              <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.prepareRemoveProgress} disabled={this.preparedRemoveProgress}>{"Reset Progress"}</Button>}
+          </Grid>
+          <Grid item xs={3} sm={3} md={5} key={3} />
+
+        </Grid>
       </div>
     );
   }

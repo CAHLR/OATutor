@@ -1,6 +1,6 @@
 const styles = theme => ({
   card: {
-    width: '50em',
+    width: '65%',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: 20
@@ -48,7 +48,7 @@ const styles = theme => ({
   },
 
   inputField: {
-    width: '10em',
+    width: '100%',
     textAlign: 'center',
     //marginLeft: '19em'
 
@@ -82,14 +82,14 @@ const styles = theme => ({
   // Problem
   prompt: {
     marginLeft: 0,
-    marginRight: 50,
+    marginRight: 0,
     marginTop: 20,
     textAlign: 'center',
     fontSize: 20,
     fontFamily: 'Titillium Web, sans-serif',
   },
   titleCard: {
-    width: '50em',
+    width: '75%',
     marginLeft: 'auto',
     marginRight: 'auto',
     paddingBottom: 0,
