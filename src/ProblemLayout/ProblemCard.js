@@ -172,7 +172,7 @@ class ProblemCard extends React.Component {
 
           <div className={classes.root}>
             <Grid container spacing={0} justify="center" alignItems="center">
-              <Grid item xs={4} >
+              <Grid item xs={1} md={4}>
                 <Box display="flex">
                   <Box ml="auto" mr={0}>
                     <IconButton aria-label="delete" onClick={this.toggleHints}>
@@ -181,7 +181,7 @@ class ProblemCard extends React.Component {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={3} >
+              <Grid item xs={8} md={3}>
                 <Box display="flex">
                   <Box m="auto">
                     {this.step.problemType === "TextBox" ?
@@ -199,12 +199,12 @@ class ProblemCard extends React.Component {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={1} >
+              <Grid item xs={1} md={1}>
                 <div style={{ marginRight: "20px" }}>
                   {this.step.units ? renderText(this.step.units) : ""}
                 </div>
               </Grid >
-              <Grid item xs={3}>
+              <Grid item xs={2} md={3}>
                 <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
 
                   {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""

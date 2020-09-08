@@ -24,6 +24,9 @@ import {
   debug,
   useBottomOutHints
 } from './config/config.js';
+import { createMuiTheme, responsiveFontSizes, ThemeProvider  } from '@material-ui/core/styles';
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();
 
@@ -46,6 +49,7 @@ class App extends React.Component {
     if (logData) {
       this.firebase = new Firebase(this.userID, credentials, this.getTreatment(), siteVersion);
     }
+
   }
 
   getTreatment = () => {
@@ -84,27 +88,29 @@ class App extends React.Component {
 
   render() {
     return (
-      <ThemeContext.Provider value={{
-        userID: this.userID,
-        firebase: this.firebase,
-        logData: logData,
-        getTreatment: this.getTreatment,
-        bktParams: this.bktParams,
-        heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
-        hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
-        skillModel: skillModel,
-        credentials: credentials,
-        debug: debug,
-        useBottomOutHints: useBottomOutHints
-      }}>
-        <ReactCursorPosition onPositionChanged={(data) => {
-          if (logMouseData) {
-            this.firebase.mouseLog(data);
-          }
+      <ThemeProvider theme={theme}>
+        <ThemeContext.Provider value={{
+          userID: this.userID,
+          firebase: this.firebase,
+          logData: logData,
+          getTreatment: this.getTreatment,
+          bktParams: this.bktParams,
+          heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
+          hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
+          skillModel: skillModel,
+          credentials: credentials,
+          debug: debug,
+          useBottomOutHints: useBottomOutHints
         }}>
-          <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress}/>
-        </ReactCursorPosition>
-      </ThemeContext.Provider>
+          <ReactCursorPosition onPositionChanged={(data) => {
+            if (logMouseData) {
+              this.firebase.mouseLog(data);
+            }
+          }}>
+            <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
+          </ReactCursorPosition>
+        </ThemeContext.Provider>
+      </ThemeProvider>
     );
   }
 }

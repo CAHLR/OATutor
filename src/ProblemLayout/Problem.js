@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
+import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
 import renderText from '../ProblemLogic/renderText.js';
@@ -96,9 +97,14 @@ class Problem extends React.Component {
           <hr />
         </div>
         {this.state.steps}
-        <center>
-          <Button className={classes.button} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
-        </center>
+        <Grid container spacing={3} >
+          <Grid item xs={3} sm={3} md={5} key={1} />
+          <Grid item xs={6} sm={6} md={2} key={2}>
+          <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
+          </Grid>
+          <Grid item xs={3} sm={3} md={5} key={3} />
+        </Grid>
+
       </div>
 
     );
