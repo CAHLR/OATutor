@@ -20,11 +20,15 @@ class SubHintSystem extends React.Component {
   }
 
   unlockHint = (event, expanded, i) => {
-    this.setState({ currentExpanded: i });
-    if (expanded && i < this.props.hintStatus.length) {
-      this.props.unlockHint(i, this.props.parent);
+    if (this.state.currentExpanded === i) {
+      this.setState({ currentExpanded: -1 });
+    } else {
+      this.setState({ currentExpanded: i });
+      if (expanded && i < this.props.hintStatus.length) {
+        this.props.unlockHint(i, this.props.parent);
+      }
+      this.setState({ latestStep: i });
     }
-    this.setState({ latestStep: i });
   }
 
   isLocked = (hintNum) => {

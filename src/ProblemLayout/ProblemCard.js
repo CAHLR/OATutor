@@ -49,7 +49,10 @@ class ProblemCard extends React.Component {
       });
       // Bottom out sub hints
       this.hints.map((hint, i) => {
-        if (hint.subHints != null && hint.type === "scaffold") {
+        if (hint.type === "scaffold") {
+          if (hint.subHints == null) {
+            hint.subHints = [];
+          }
           hint.subHints.push({
             id: this.step.id + "-h" + i + "-s" + (hint.subHints.length),
             title: "Answer",
@@ -182,8 +185,7 @@ class ProblemCard extends React.Component {
                 </Box>
               </Grid>
               <Grid item xs={8} md={3}>
-                <Box display="flex">
-                  <Box m="auto">
+
                     {this.step.problemType === "TextBox" ?
                       <TextField
                         error={this.state.isCorrect === false}
@@ -196,8 +198,7 @@ class ProblemCard extends React.Component {
                       <MultipleChoice
                         onChange={(evt) => this.editInput(evt)}
                         choices={this.step.choices} /> : ""}
-                  </Box>
-                </Box>
+
               </Grid>
               <Grid item xs={1} md={1}>
                 <div style={{ marginRight: "20px" }}>
