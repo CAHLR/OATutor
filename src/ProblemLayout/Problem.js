@@ -97,13 +97,15 @@ class Problem extends React.Component {
           <hr />
         </div>
         {this.state.steps}
-        <Grid container spacing={3} >
-          <Grid item xs={3} sm={3} md={5} key={1} />
-          <Grid item xs={6} sm={6} md={2} key={2}>
-          <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
+        <div width="100%">
+          <Grid container spacing={0}>
+            <Grid item xs={3} sm={3} md={5} key={1} />
+            <Grid item xs={6} sm={6} md={2} key={2}>
+              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
+            </Grid>
+            <Grid item xs={3} sm={3} md={5} key={3} />
           </Grid>
-          <Grid item xs={3} sm={3} md={5} key={3} />
-        </Grid>
+        </div>
 
       </div>
 

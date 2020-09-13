@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
@@ -175,52 +174,57 @@ class ProblemCard extends React.Component {
 
           <div className={classes.root}>
             <Grid container spacing={0} justify="center" alignItems="center">
-              <Grid item xs={1} md={4}>
-                <Box display="flex">
-                  <Box ml="auto" mr={0}>
-                    <IconButton aria-label="delete" onClick={this.toggleHints}>
-                      <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
-                    </IconButton>
-                  </Box>
-                </Box>
+              <Grid item xs={1} md={4} />
+              <Grid item xs={9} md={3}>
+                {this.step.problemType === "TextBox" ?
+                  <TextField
+                    error={this.state.isCorrect === false}
+                    className={classes.inputField}
+                    variant="outlined"
+                    onChange={(evt) => this.editInput(evt)}
+                    onKeyPress={(evt) => this.handleKey(evt)}>
+                  </TextField> : ""}
+                {this.step.problemType === "MultipleChoice" ?
+                  <MultipleChoice
+                    onChange={(evt) => this.editInput(evt)}
+                    choices={this.step.choices} /> : ""}
               </Grid>
-              <Grid item xs={8} md={3}>
-
-                    {this.step.problemType === "TextBox" ?
-                      <TextField
-                        error={this.state.isCorrect === false}
-                        className={classes.inputField}
-                        variant="outlined"
-                        onChange={(evt) => this.editInput(evt)}
-                        onKeyPress={(evt) => this.handleKey(evt)}>
-                      </TextField> : ""}
-                    {this.step.problemType === "MultipleChoice" ?
-                      <MultipleChoice
-                        onChange={(evt) => this.editInput(evt)}
-                        choices={this.step.choices} /> : ""}
-
-              </Grid>
-              <Grid item xs={1} md={1}>
-                <div style={{ marginRight: "20px" }}>
+              <Grid item xs={2} md={1}>
+                <div style={{ marginLeft: "20%" }}>
                   {this.step.units ? renderText(this.step.units) : ""}
                 </div>
               </Grid >
-              <Grid item xs={2} md={3}>
-                <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-
-                  {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity }} alt=""
-                    src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-                  {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity }} alt=""
-                    src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
-                </div>
-              </Grid>
+              <Grid item xs={0} md={3} />
 
             </Grid>
           </div>
 
         </CardContent>
         <CardActions>
-          <Button className={classes.button} size="small" onClick={this.submit}>Submit</Button>
+          <Grid container spacing={0} justify="center" alignItems="center">
+            <Grid item xs={0} sm={0} md={4} />
+            <Grid item xs={4} sm={4} md={1}>
+              <center>
+                <IconButton aria-label="delete" onClick={this.toggleHints}>
+                  <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
+                </IconButton>
+              </center>
+            </Grid>
+            <Grid item xs={4} sm={4} md={2}>
+              <center>
+                <Button className={classes.button} style={{ width: "80%" }} size="small" onClick={this.submit}>Submit</Button>
+              </center>
+            </Grid>
+            <Grid item xs={4} sm={3} md={1}>
+              <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
+                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+                  src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
+                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+                  src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
+              </div>
+            </Grid>
+            <Grid item xs={0} sm={1} md={4} />
+          </Grid>
         </CardActions>
       </Card>
 
