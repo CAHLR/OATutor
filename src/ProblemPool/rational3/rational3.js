@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational3-index.js"; const problem = {id: "rational3", title: "Adding Rational Expressions", body: "", steps: steps, }; export { problem };

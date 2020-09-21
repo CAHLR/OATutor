@@ -1,0 +1,1 @@
+import hints from "./poly23a-index.js"; const step = {id: "poly23a", stepAnswer: ["4x**2-49"], problemType: "TextBox", stepTitle: "Multiply(2𝑥+7)(2𝑥-7).", stepBody: "", answerType: "algebra", hints: hints}; export {step};

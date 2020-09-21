@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp2b-index.js"; const step = {id: "exp2b", stepAnswer: ["(2/y)**5"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(\frac{2}{y}\right)}^4 \frac{2}{y}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

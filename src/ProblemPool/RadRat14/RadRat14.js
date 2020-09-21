@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RadRat14-index.js"; const problem = {id: "RadRat14", title: "Rationalizing a Denominator Containing Two Terms", body: "", steps: steps, }; export { problem };

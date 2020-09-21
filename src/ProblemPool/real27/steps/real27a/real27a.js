@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real27a-index.js"; const step = {id: "real27a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: <div> <InlineMath math="5{\left(5-2\right)}^2"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

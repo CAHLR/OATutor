@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp6a-index.js"; const step = {id: "exp6a", stepAnswer: ["(3y)**24"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left({\left(3y\right)}^8\right)}^3"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Cookies from 'universal-cookie';
-import ReactCursorPosition from 'react-cursor-position';
 import Platform from './ProblemLogic/Platform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
@@ -24,7 +23,7 @@ import {
   debug,
   useBottomOutHints
 } from './config/config.js';
-import { createMuiTheme, responsiveFontSizes, ThemeProvider  } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
@@ -102,13 +101,7 @@ class App extends React.Component {
           debug: debug,
           useBottomOutHints: useBottomOutHints
         }}>
-          <ReactCursorPosition onPositionChanged={(data) => {
-            if (logMouseData) {
-              this.firebase.mouseLog(data);
-            }
-          }}>
-            <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
-          </ReactCursorPosition>
+          <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
         </ThemeContext.Provider>
       </ThemeProvider>
     );

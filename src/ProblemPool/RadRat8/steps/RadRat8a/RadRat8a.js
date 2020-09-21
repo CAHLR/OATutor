@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat8a-index.js"; const step = {id: "RadRat8a", stepAnswer: ["3x^2"], problemType: "TextBox", stepTitle: <div> Simplify the radical expression: <InlineMath math="\frac{\sqrt{23\times4 x^{11} y}}{\sqrt{26x^7 y}}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

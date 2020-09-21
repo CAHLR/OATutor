@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real10a-index.js"; const step = {id: "real10a", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="\sqrt{4}"/></div>, stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints}; export {step};

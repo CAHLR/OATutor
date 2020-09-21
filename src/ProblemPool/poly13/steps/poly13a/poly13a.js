@@ -1,0 +1,1 @@
+import hints from "./poly13a-index.js"; const step = {id: "poly13a", stepAnswer: ["6𝑥**2+21𝑥𝑦-29𝑥−7𝑦+9"], problemType: "TextBox", stepTitle: "Multiply (3𝑥-1)(2𝑥+7𝑦-9).", stepBody: "", answerType: "algebra", hints: hints}; export {step};

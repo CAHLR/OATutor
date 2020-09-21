@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly17-index.js"; const problem = {id: "poly17", title: "Polynomials", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor20a-index.js"; const step = {id: "factor20a", stepAnswer: ["(9d-1)(d+8)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="9d^2"/> - 73d <InlineMath math="+8"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

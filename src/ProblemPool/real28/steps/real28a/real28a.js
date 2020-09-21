@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real28a-index.js"; const step = {id: "real28a", stepAnswer: ["44"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="9+5+3\times10"/></div>, stepBody: "", choices: ["44", "170", "98", "62"], answerType: "string", hints: hints}; export {step};

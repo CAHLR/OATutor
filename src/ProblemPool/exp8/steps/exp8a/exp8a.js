@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp8a-index.js"; const step = {id: "exp8a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{t^7}{t^7}"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

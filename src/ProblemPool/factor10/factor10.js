@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor10-index.js"; const problem = {id: "factor10", title: "Factoring a Sum of Cubes", body: "", steps: steps, }; export { problem };

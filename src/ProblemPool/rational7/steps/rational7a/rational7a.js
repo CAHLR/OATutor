@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational7a-index.js"; const step = {id: "rational7a", stepAnswer: ["2(x-7)/(x+5)(x-3)"], problemType: "TextBox", stepTitle: <div> Subtract the rational expressions: <InlineMath math="\frac{3}{x+5}-\frac{1}{x-3}"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

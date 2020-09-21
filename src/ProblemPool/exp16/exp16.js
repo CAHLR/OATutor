@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./exp16-index.js"; const problem = {id: "exp16", title: "The Power of a Quotient Rule of Exponents", body: "Simplify each of the following quotients as much as possible using the power of a quotient rule. Write answers with positive exponents.", steps: steps, }; export { problem };

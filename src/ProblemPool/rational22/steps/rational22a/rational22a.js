@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational22a-index.js"; const step = {id: "rational22a", stepAnswer: ["((d+5)(d-5))/(5d-1)(5d+1)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{2d^2+15d+25}{4d^2-25}"/> * ((2d**2-15d+25)/(25d-1)</div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

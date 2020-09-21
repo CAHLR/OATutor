@@ -63,16 +63,16 @@ class LessonSelection extends React.Component {
           </Box>
         </Grid>
         <br />
-        <Grid container spacing={3} >
+        <Grid container spacing={0} >
           <Grid item xs={3} sm={3} md={5} key={1} />
           <Grid item xs={6} sm={6} md={2} key={2}>
             {this.preparedRemoveProgress ?
               <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.removeProgress} disabled={this.removedProgress}>{this.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
               <Button className={classes.button} style={{width: "100%"}} size="small" onClick={this.prepareRemoveProgress} disabled={this.preparedRemoveProgress}>{"Reset Progress"}</Button>}
           </Grid>
-          <Grid item xs={3} sm={3} md={5} key={3} />
-
+          <Grid item xs={3} sm={3} md={4} key={3} />
         </Grid>
+        <br/>
       </div>
     );
   }

@@ -1,0 +1,1 @@
+import hints from "./poly14a-index.js"; const step = {id: "poly14a", stepAnswer: ["4𝑥**2+3𝑥+19"], problemType: "TextBox", stepTitle: "Find the sum or difference. (12𝑥**2+3𝑥)-(8𝑥**2-19)", stepBody: "", answerType: "algebra", hints: hints}; export {step};

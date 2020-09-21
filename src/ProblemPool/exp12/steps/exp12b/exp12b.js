@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp12b-index.js"; const step = {id: "exp12b", stepAnswer: ["1/25"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{{25}^{12}}{{25}^{13}}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational6-index.js"; const problem = {id: "rational6", title: "Dividing Rational Expressions", body: "", steps: steps, }; export { problem };

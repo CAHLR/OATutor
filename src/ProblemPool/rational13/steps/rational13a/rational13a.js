@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational13a-index.js"; const step = {id: "rational13a", stepAnswer: ["(3n-8)/(7n-3)"], problemType: "TextBox", stepTitle: <div> Simplify the rational expressions. <InlineMath math="\frac{12n^2-29n-8}{28n^2-5n-3}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

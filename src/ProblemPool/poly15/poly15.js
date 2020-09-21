@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly15-index.js"; const problem = {id: "poly15", title: "Adding and Subtracting Polynomials", body: "", steps: steps, }; export { problem };

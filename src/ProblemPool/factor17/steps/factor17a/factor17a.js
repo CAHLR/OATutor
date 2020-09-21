@@ -1,0 +1,1 @@
+import hints from "./factor17a-index.js"; const step = {id: "factor17a", stepAnswer: ["(3n-11)(2n+1)"], problemType: "TextBox", stepTitle: "6𝑛**2 - 19𝑛 - 11", stepBody: "", answerType: "algebra", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat5a-index.js"; const step = {id: "RadRat5a", stepAnswer: ["sqrt(5)/6"], problemType: "TextBox", stepTitle: <div> Simplify the radical expression: <InlineMath math="\sqrt{\frac{5}{36}}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

@@ -1,5 +1,24 @@
 # Changelog
 
+## Beta v0.3
+* Major optimizations for mobile views (still more to be done in the future)
+    * Improved lesson layout
+    * Improved problem card layout
+    * Improved layout for hint button and feedback (better for mobile too)
+* LaTeX improvements:
+    * Changed LaTeX to double dollar sign `$$` to avoid issues when using `$`
+    * Fixed LaTeX rendering for multiple choice answers
+    * Fixed LaTeX rendering for hint and subhint titles
+* Support for symbolic equality using a Computer Algebra System in js (Algebrite)
+    * Removed old algebraic equality checker in favor of the symbolic equality check (symbolic equality is called `algebraic` now)
+* Problem Pool Updates
+    * Integrated problem pool for lessons 1.1-1.6
+    * Debug mode for easy viewing of problems of interest
+* Bug fixes:
+    * Fixed a bug that did not allow hints to be closed due to the accordion style update
+    * Removed the cursor tracker component which prevented users from highlighting text
+    * Bottom out sub-hints for scaffold hints correctly generate
+
 ## Beta v0.23
 * Enable LaTeX rendering for multiple choice questions
 * Added Windows support for `npm run generate` (used to only support MacOS & Linux)

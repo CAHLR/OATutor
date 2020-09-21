@@ -1,0 +1,1 @@
+var hints = [{id: "real3a-h1", type: "hint", dependencies: [], title: "Counting", text: "The natural numbers consist of the numbers used for counting."}, {id: "real3a-h2", type: "hint", dependencies: ["real3a-h1"], title: "Counting", text: "Counting generally starts form the number 1."}, ]; export {hints};

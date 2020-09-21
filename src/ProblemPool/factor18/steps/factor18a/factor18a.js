@@ -1,0 +1,1 @@
+import hints from "./factor18a-index.js"; const step = {id: "factor18a", stepAnswer: ["(2p-7)(p+1)"], problemType: "TextBox", stepTitle: "2𝑝**2 - 5𝑝 - 7", stepBody: "", answerType: "algebra", hints: hints}; export {step};

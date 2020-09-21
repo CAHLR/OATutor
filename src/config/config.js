@@ -1,5 +1,4 @@
 import React from 'react';
-import algebraCheckOptions from './algebraCheck.js';
 import lessonPlans from './lessonPlans.js'
 
 const ThemeContext = React.createContext(0);
@@ -20,7 +19,6 @@ const MAX_BUFFER_SIZE = 100;
 const GRANULARITY = 5;
 
 export {ThemeContext, 
-    algebraCheckOptions,
     siteVersion,
     logData,
     logMouseData,

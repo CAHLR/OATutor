@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor27-index.js"; const problem = {id: "factor27", title: "Factoring 225y**2+120y+16", body: "", steps: steps, }; export { problem };

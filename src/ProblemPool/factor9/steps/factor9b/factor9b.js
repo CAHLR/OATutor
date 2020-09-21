@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor9b-index.js"; const step = {id: "factor9b", stepAnswer: ["(9x-10)(9x+10)"], problemType: "TextBox", stepTitle: <div> Factor <InlineMath math="81y^2-100"/>.</div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

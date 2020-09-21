@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational18-index.js"; const problem = {id: "rational18", title: "Adding Rational Expressions", body: "Add the rational expressions and simplify.", steps: steps, }; export { problem };

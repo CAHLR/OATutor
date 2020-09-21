@@ -1,0 +1,1 @@
+import hints from "./poly9a-index.js"; const step = {id: "poly9a", stepAnswer: ["9𝑥**2−48𝑥+64."], problemType: "TextBox", stepTitle: "Expand (3𝑥-8)**2.", stepBody: "", answerType: "algebra", hints: hints}; export {step};

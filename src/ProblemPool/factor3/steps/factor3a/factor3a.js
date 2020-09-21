@@ -1,0 +1,1 @@
+import hints from "./factor3a-index.js"; const step = {id: "factor3a", stepAnswer: ["(x-3)(x+5)"], problemType: "MultipleChoice", stepTitle: "What is the factored form of 𝑥**2+2𝑥-15?", stepBody: "", choices: ["(x-3)(x+5)", "(x+3)(x-5)", "(x+1)(x-15)", "(x+3)(x+5)"], answerType: "string", hints: hints}; export {step};

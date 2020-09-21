@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat1c-index.js"; const step = {id: "RadRat1c", stepAnswer: ["13"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="\sqrt{25+144}"/>?</div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

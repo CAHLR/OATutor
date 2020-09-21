@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp2c-index.js"; const step = {id: "exp2c", stepAnswer: ["t**14"], problemType: "TextBox", stepTitle: <div> <InlineMath math="t^3 t^6 t^5"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

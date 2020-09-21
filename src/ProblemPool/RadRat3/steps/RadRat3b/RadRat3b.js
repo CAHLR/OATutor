@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat3b-index.js"; const step = {id: "RadRat3b", stepAnswer: ["9(a**2)(b**2)sqrt(2a)"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="\sqrt{162a^5 b^4}"/>?</div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};
