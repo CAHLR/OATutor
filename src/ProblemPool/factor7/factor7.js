@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor7-index.js"; const problem = {id: "factor7", title: "Factoring a Perfect Square Trinomial", body: "", steps: steps, }; export { problem };

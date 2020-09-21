@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp9b-index.js"; const step = {id: "exp9b", stepAnswer: ["1/z"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{z^2 z}{z^4}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

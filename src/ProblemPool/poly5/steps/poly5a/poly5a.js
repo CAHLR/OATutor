@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./poly5a-index.js"; const step = {id: "poly5a", stepAnswer: ["6x**3+x**2+7x+4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(2x+1\right) \left(3x^2-x+4\right)"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

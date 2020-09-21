@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp10a-index.js"; const step = {id: "exp10a", stepAnswer: ["1/(-3t)**6"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{{\left(-3t\right)}^2}{{\left(-3t\right)}^8}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

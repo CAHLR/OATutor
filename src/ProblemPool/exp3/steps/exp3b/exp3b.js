@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp3b-index.js"; const step = {id: "exp3b", stepAnswer: ["t**8"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{t^{23}}{t^{15}}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

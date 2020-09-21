@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat13a-index.js"; const step = {id: "RadRat13a", stepAnswer: ["sqrt(5)-1"], problemType: "TextBox", stepTitle: <div> Write <InlineMath math="\frac{4}{1+\sqrt{5}}"/> in simplest form.</div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

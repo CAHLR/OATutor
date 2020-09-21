@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational8a-index.js"; const step = {id: "rational8a", stepAnswer: ["(x-y)(x+y)/x"], problemType: "TextBox", stepTitle: <div> Simplify <InlineMath math="\frac{\frac{x}{y}-\frac{y}{x}}{y}"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

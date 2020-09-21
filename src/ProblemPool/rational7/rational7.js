@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational7-index.js"; const problem = {id: "rational7", title: "Subtracting Rational Expressions", body: "", steps: steps, }; export { problem };

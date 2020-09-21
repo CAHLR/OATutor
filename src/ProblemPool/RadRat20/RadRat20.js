@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RadRat20-index.js"; const problem = {id: "RadRat20", title: "Simplifying 5th Roots", body: "Simplify each of the following roots.", steps: steps, }; export { problem };

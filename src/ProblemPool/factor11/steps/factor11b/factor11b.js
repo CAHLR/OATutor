@@ -1,0 +1,1 @@
+import hints from "./factor11b-index.js"; const step = {id: "factor11b", stepAnswer: ["(10x-1)(100x**2 + 10x+1)"], problemType: "TextBox", stepTitle: "Factor the difference of cubes: 1,000𝑥**3-1.", stepBody: "", answerType: "algebra", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real26-index.js"; const problem = {id: "real26", title: "Order of Operations", body: "Evaluate the following numerical expressions.", steps: steps, }; export { problem };

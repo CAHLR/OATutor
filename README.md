@@ -149,6 +149,17 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 
 ### Mouse Logging
 * Size of screen is the size of the scrollable browser canvas
+* Wrap `<Platform />` with the following in `App.js`
+```javascript
+<ReactCursorPosition onPositionChanged={(data) => {
+  if (logMouseData) {
+    this.firebase.mouseLog(data);
+  }}} >
+  <Platform props_here/>
+<ReactCursorPosition />
+}}>
+
+```
 
 ### Adding Listeners
 1. Install the React component for the listener. 

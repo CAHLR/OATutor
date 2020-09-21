@@ -14,7 +14,7 @@ export default function renderText(text, problemID) {
 
   var splitted = result.split("\\n");
   splitted = splitted.map((line, j) => {
-    var lineSplitted = line.split("$");
+    var lineSplitted = line.split("$$");
     lineSplitted = lineSplitted.map((part, i) => {
       if (i % 2 === 0) {
         var partSplitted = part.split("##");

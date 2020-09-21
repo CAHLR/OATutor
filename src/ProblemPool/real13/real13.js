@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real13-index.js"; const problem = {id: "real13", title: "Simplifying a Formula", body: "", steps: steps, }; export { problem };

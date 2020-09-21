@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp11c-index.js"; const step = {id: "exp11c", stepAnswer: ["1/(-7z)**4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-7z}{{\left(-7z\right)}^5}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

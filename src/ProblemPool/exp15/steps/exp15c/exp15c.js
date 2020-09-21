@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp15c-index.js"; const step = {id: "exp15c", stepAnswer: ["j**12/k**8"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(j^3 k^{-2}\right)}^4"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

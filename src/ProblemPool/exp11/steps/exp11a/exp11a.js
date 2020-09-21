@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp11a-index.js"; const step = {id: "exp11a", stepAnswer: ["1/b**6"], problemType: "TextBox", stepTitle: <div> <InlineMath math="b^2 b^{-8}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

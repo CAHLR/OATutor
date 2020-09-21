@@ -1,0 +1,1 @@
+import hints from "./factor14a-index.js"; const step = {id: "factor14a", stepAnswer: ["10m**3"], problemType: "TextBox", stepTitle: "200𝑝3𝑚3-30𝑝2𝑚3+40𝑚3", stepBody: "", answerType: "algebra", hints: hints}; export {step};

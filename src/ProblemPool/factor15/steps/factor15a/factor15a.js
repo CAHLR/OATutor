@@ -1,0 +1,1 @@
+import hints from "./factor15a-index.js"; const step = {id: "factor15a", stepAnswer: ["y"], problemType: "TextBox", stepTitle: "6𝑦**4 - 2𝑦**3+3𝑦**2 - 𝑦", stepBody: "", answerType: "algebra", hints: hints}; export {step};

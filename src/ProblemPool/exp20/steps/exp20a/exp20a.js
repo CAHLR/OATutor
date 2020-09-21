@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp20a-index.js"; const step = {id: "exp20a", stepAnswer: ["703,000"], problemType: "TextBox", stepTitle: <div> <InlineMath math="7.03\times {10}^5"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

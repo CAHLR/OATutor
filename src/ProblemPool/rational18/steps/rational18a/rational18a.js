@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational18a-index.js"; const step = {id: "rational18a", stepAnswer: ["(9a-7)/((a+1)(a-3))"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{4}{a+1}+\frac{5}{a-3}"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

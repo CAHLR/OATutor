@@ -1,0 +1,1 @@
+import hints from "./factor12a-index.js"; const step = {id: "factor12a", stepAnswer: ["(x+2)**-1/3 (7x+8)"], problemType: "TextBox", stepTitle: "3𝑥(𝑥+2)**-1/3+4(𝑥+2)**2/3.", stepBody: "", answerType: "algebra", hints: hints}; export {step};

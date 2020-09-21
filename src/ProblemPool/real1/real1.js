@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real1-index.js"; const problem = {id: "real1", title: "Identifying Rational Numbers", body: "Write each of the following rational numbers as either a terminating or repeating decimal.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational19-index.js"; const problem = {id: "rational19", title: "Combining Rational Expressions", body: "Subtract the rational expressions, and then simplify.", steps: steps, }; export { problem };

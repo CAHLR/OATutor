@@ -1,0 +1,1 @@
+import hints from "./factor6b-index.js"; const step = {id: "factor6b", stepAnswer: ["(3x-1)(2x+1)"], problemType: "MultipleChoice", stepTitle: "Factor 6𝑥**2+x-1", stepBody: "", choices: ["(3x)(2x+1)", "(3x-1)(2x+1)", "(3x+1)(2x-1)", "(3x-3)(2x+1)"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./exp22-index.js"; const problem = {id: "exp22", title: "Thickness of a Dime", body: "A dime is the thinnest coin in U.S. currency. A dime’s thickness measures  1.35*10**-3  m.", steps: steps, }; export { problem };

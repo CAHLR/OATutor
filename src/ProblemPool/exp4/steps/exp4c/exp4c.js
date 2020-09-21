@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp4c-index.js"; const step = {id: "exp4c", stepAnswer: ["(ef**2)**2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{{\left({ef}^2\right)}^5}{{\left({ef}^2\right)}^3}"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

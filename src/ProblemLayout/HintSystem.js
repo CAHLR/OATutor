@@ -99,7 +99,7 @@ class HintSystem extends React.Component {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {hint.title}</Typography>
+                Hint {i + 1}: {renderText(hint.title, this.props.problemID)}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'} style={{ width: "100%" }}>

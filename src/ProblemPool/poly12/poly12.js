@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly12-index.js"; const problem = {id: "poly12", title: "Multiplying Polynomials Containing Several Variables", body: "", steps: steps, }; export { problem };

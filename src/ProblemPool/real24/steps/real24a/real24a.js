@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real24a-index.js"; const step = {id: "real24a", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="\frac{-10}{3}"/></div>, stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints}; export {step};

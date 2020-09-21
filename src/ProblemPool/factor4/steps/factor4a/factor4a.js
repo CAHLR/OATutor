@@ -1,0 +1,1 @@
+import hints from "./factor4a-index.js"; const step = {id: "factor4a", stepAnswer: ["(x-1)(x-6)"], problemType: "MultipleChoice", stepTitle: "Factor𝑥**2-7𝑥+6.", stepBody: "", choices: ["(x-2)(x-3)", "(x+2)(x-3", "(x+1)(x+6)", "(x-1)(x-6)"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp5a-index.js"; const step = {id: "exp5a", stepAnswer: ["x**14"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(x^2\right)}^7"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

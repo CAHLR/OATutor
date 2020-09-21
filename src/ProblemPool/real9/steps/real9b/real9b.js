@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real9b-index.js"; const step = {id: "real9b", stepAnswer: ["10/19"], problemType: "MultipleChoice", stepTitle: <div> Solve <InlineMath math="\frac{t}{2t-1}"/> for t=10</div>, stepBody: "", choices: ["10/19", "10/21", "10/20", "10/22"], answerType: "string", hints: hints}; export {step};

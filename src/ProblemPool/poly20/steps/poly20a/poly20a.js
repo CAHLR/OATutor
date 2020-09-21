@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./poly20a-index.js"; const step = {id: "poly20a", stepAnswer: ["8n**3−4n**2+72n−36"], problemType: "TextBox", stepTitle: <div> Find the product of the binomials. <InlineMath math="\left(8n-4\right) \left(n^2+9\right)"/></div>, stepBody: "", answerType: "numeric", hints: hints}; export {step};

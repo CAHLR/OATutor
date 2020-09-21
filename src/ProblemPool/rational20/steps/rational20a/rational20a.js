@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rational20a-index.js"; const step = {id: "rational20a", stepAnswer: ["z**2-13z-6"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{3z}{z+1}-\frac{2z+5}{z-2}"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

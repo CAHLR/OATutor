@@ -1,0 +1,1 @@
+import hints from "./exp25a-index.js"; const step = {id: "exp25a", stepAnswer: ["9.296*10**7"], problemType: "TextBox", stepTitle: "Rewrite the distance using scientific notation.", stepBody: "", answerType: "numeric", hints: hints}; export {step};
