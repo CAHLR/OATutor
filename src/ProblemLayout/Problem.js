@@ -23,7 +23,8 @@ class Problem extends React.Component {
     this.numCorrect = 0;
     this.state = {
       problem: this.props.problem,
-      steps: this.refreshSteps(props.problem)
+      steps: this.refreshSteps(props.problem),
+      problemFinished: false
     }
   }
 
@@ -60,8 +61,12 @@ class Problem extends React.Component {
           smooth: true,
           offset: -100
         })
+      } else {
+        this.setState({problemFinished: true});
       }
     }
+    console.log(this.numCorrect)
+    console.log(Object.keys(this.stepStates).length)
   }
 
   clickNextProblem = () => {
@@ -71,7 +76,8 @@ class Problem extends React.Component {
 
     this.setState({ problem: this.props.problemComplete(this.context) },
       () => this.setState({
-        steps: this.refreshSteps(this.props.problem)
+        steps: this.refreshSteps(this.props.problem),
+        problemFinished: false
       }));
   }
 
@@ -101,7 +107,7 @@ class Problem extends React.Component {
           <Grid container spacing={0}>
             <Grid item xs={3} sm={3} md={5} key={1} />
             <Grid item xs={6} sm={6} md={2} key={2}>
-              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={this.numCorrect !== Object.keys(this.stepStates).length}>Next Problem</Button>
+              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!this.state.problemFinished}>Next Problem</Button>
             </Grid>
             <Grid item xs={3} sm={3} md={5} key={3} />
           </Grid>
