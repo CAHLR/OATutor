@@ -1,5 +1,8 @@
 # Changelog
 
+## Beta v0.31
+* Fixed "next problem" permanently grayed out
+
 ## Beta v0.3
 * Major optimizations for mobile views (still more to be done in the future)
     * Improved lesson layout
@@ -14,6 +17,7 @@
 * Problem Pool Updates
     * Integrated problem pool for lessons 1.1-1.6
     * Debug mode for easy viewing of problems of interest
+    * Moved the old demo problem pool items to `src/oldProblemPool`
 * Bug fixes:
     * Fixed a bug that did not allow hints to be closed due to the accordion style update
     * Removed the cursor tracker component which prevented users from highlighting text
