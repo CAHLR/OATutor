@@ -21,6 +21,7 @@ class MultipleChoice extends React.Component {
 
   render() {
     return (
+      <div style={{marginLeft: "20%"}}>
       <FormControl component="fieldset" >
         <FormLabel component="legend"></FormLabel>
         <RadioGroup value={this.state.value} onChange={this.handleChange}>
@@ -28,6 +29,7 @@ class MultipleChoice extends React.Component {
             <FormControlLabel value={choice} control={<Radio />} label={renderText(choice)} key={choice} />)}
         </RadioGroup>
       </FormControl>
+      </div>
     );
   }
 }

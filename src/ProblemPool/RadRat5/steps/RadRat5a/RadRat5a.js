@@ -1,1 +1,1 @@
-import hints from "./RadRat5a-index.js"; const step = {id: "RadRat5a", stepAnswer: ["sqrt(5)/6"], problemType: "TextBox", stepTitle: "Simplify the radical expression:sqrt(5/36)", stepBody: "", answerType: "numeric", hints: hints}; export {step};
+import hints from "./RadRat5a-index.js"; const step = {id: "RadRat5a", stepAnswer: ["sqrt(5)/6"], problemType: "TextBox", stepTitle: "Simplify the radical expression:sqrt(5/36)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

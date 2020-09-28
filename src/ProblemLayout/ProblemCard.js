@@ -123,7 +123,7 @@ class ProblemCard extends React.Component {
     }
 
     // If the user has not opened a scaffold before, mark it as in-progress.
-    if (this.state.hintsFinished[hintNum] != 1) { 
+    if (this.state.hintsFinished[hintNum] !== 1) { 
       this.setState(prevState => {
         prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
         return { hintsFinished: prevState.hintsFinished }
@@ -198,7 +198,7 @@ class ProblemCard extends React.Component {
                   {this.step.units ? renderText(this.step.units) : ""}
                 </div>
               </Grid >
-              <Grid item xs={0} md={3} />
+              <Grid item xs={false} md={3} />
 
             </Grid>
           </div>
@@ -206,7 +206,7 @@ class ProblemCard extends React.Component {
         </CardContent>
         <CardActions>
           <Grid container spacing={0} justify="center" alignItems="center">
-            <Grid item xs={0} sm={0} md={4} />
+            <Grid item xs={false} sm={false} md={4} />
             <Grid item xs={4} sm={4} md={1}>
               <center>
                 <IconButton aria-label="delete" onClick={this.toggleHints}>
@@ -227,7 +227,7 @@ class ProblemCard extends React.Component {
                   src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
               </div>
             </Grid>
-            <Grid item xs={0} sm={1} md={4} />
+            <Grid item xs={false} sm={1} md={4} />
           </Grid>
         </CardActions>
       </Card>

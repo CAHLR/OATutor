@@ -1,1 +1,1 @@
-import hints from "./exp18c-index.js"; const step = {id: "exp18c", stepAnswer: ["7.15*10^-8"], problemType: "TextBox", stepTitle: "Probability of winning lottery (match 6 of 49 possible numbers): 0.0000000715", stepBody: "", answerType: "numeric", hints: hints}; export {step};
+import hints from "./exp18c-index.js"; const step = {id: "exp18c", stepAnswer: ["7.15*10^-8"], problemType: "TextBox", stepTitle: "Probability of winning lottery (match 6 of 49 possible numbers): 0.0000000715", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

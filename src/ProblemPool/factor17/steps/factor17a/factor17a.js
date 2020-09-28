@@ -1,1 +1,1 @@
-import hints from "./factor17a-index.js"; const step = {id: "factor17a", stepAnswer: ["(3n-11)(2n+1)"], problemType: "TextBox", stepTitle: "6𝑛**2 - 19𝑛 - 11", stepBody: "", answerType: "algebra", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor17a-index.js"; const step = {id: "factor17a", stepAnswer: ["(3n-11)(2n+1)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="6n^2-19n-11"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
