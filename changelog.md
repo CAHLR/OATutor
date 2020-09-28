@@ -1,5 +1,13 @@
 # Changelog
 
+## Coming soon
+* Router back button support
+
+## Beta v0.32
+* Fixed scaffolds locking after previously answering them when expanding earlier hints
+* Fixed reset progress button
+* Inputs with a syntax error will automatically be marked incorrect even if the answer also has a syntax error
+
 ## Beta v0.31
 * Fixed "next problem" permanently grayed out
 

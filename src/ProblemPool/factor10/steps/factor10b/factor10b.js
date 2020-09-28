@@ -1,1 +1,1 @@
-import hints from "./factor10b-index.js"; const step = {id: "factor10b", stepAnswer: ["(6a+b)(36a**2 + 6ab+b^2)"], problemType: "TextBox", stepTitle: "216𝑎**3+𝑏**3.", stepBody: "", answerType: "algebra", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor10b-index.js"; const step = {id: "factor10b", stepAnswer: ["(6a+b)(36a**2 + 6ab+b^2)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="216a^3+b^3"/>.</div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};
