@@ -65,8 +65,6 @@ class Problem extends React.Component {
         this.setState({problemFinished: true});
       }
     }
-    console.log(this.numCorrect)
-    console.log(Object.keys(this.stepStates).length)
   }
 
   clickNextProblem = () => {

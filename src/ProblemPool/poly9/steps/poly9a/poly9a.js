@@ -1,1 +1,1 @@
-import hints from "./poly9a-index.js"; const step = {id: "poly9a", stepAnswer: ["9𝑥**2−48𝑥+64."], problemType: "TextBox", stepTitle: "Expand (3𝑥-8)**2.", stepBody: "", answerType: "algebra", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./poly9a-index.js"; const step = {id: "poly9a", stepAnswer: ["9𝑥**2−48𝑥+64."], problemType: "TextBox", stepTitle: <div> Expand <InlineMath math="{\left(3x-8\right)}^2"/>.</div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

@@ -22,6 +22,9 @@ function checkAnswer(attempt, actual, answerType, precision) {
       return [parsed, false];
     } else if (answerType === "algebra") {
       parsed = Algebrite.run(attempt).toString();
+      if (parsed.includes("syntax error")) {
+        parsed = "algebrite syntax error"
+      }
       correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(Algebrite.run(actualAns).toString(), precision)));
     } else if (answerType === "string") {
       parsed = attempt;

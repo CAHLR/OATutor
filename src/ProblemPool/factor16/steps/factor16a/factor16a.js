@@ -1,1 +1,1 @@
-import hints from "./factor16a-index.js"; const step = {id: "factor16a", stepAnswer: ["(2a-3)(a+6)"], problemType: "TextBox", stepTitle: "2𝑎**2+9𝑎-18", stepBody: "", answerType: "algebra", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor16a-index.js"; const step = {id: "factor16a", stepAnswer: ["(2a-3)(a+6)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="2a^2+9a-18"/></div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};

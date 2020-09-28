@@ -122,14 +122,18 @@ class ProblemCard extends React.Component {
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
 
-    this.setState(prevState => {
-      prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
-      return { hintsFinished: prevState.hintsFinished }
-    }, () => {
-      if (this.context.logData) {
-        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint");
-      }
-    });
+    // If the user has not opened a scaffold before, mark it as in-progress.
+    if (this.state.hintsFinished[hintNum] != 1) { 
+      this.setState(prevState => {
+        prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
+        return { hintsFinished: prevState.hintsFinished }
+      }, () => {
+        if (this.context.logData) {
+          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint");
+        }
+      });
+    }
+    
   }
 
   submitHint = (parsed, hint, correctAnswer, hintNum) => {

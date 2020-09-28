@@ -95,7 +95,6 @@ class Platform extends React.Component {
 
   problemComplete = (context) => {
     this.completedProbs.add(this.state.currProblem.id);
-    console.log(this.completedProbs);
     return this._nextProblem(context);
   }
 

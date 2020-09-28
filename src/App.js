@@ -18,7 +18,6 @@ import {
   ThemeContext,
   siteVersion,
   logData,
-  logMouseData,
   cookieID,
   debug,
   useBottomOutHints

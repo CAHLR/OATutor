@@ -1,1 +1,1 @@
-import hints from "./poly23a-index.js"; const step = {id: "poly23a", stepAnswer: ["4x**2-49"], problemType: "TextBox", stepTitle: "Multiply(2𝑥+7)(2𝑥-7).", stepBody: "", answerType: "algebra", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./poly23a-index.js"; const step = {id: "poly23a", stepAnswer: ["4x**2-49"], problemType: "TextBox", stepTitle: <div> <InlineMath math="Multiply \left(2x+7\right) \left(2x-7\right)"/>.</div>, stepBody: "", answerType: "algebra", hints: hints}; export {step};
