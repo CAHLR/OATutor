@@ -3,6 +3,12 @@
 ## Coming soon
 * Router back button support
 
+## Beta v0.33
+* Replace `)(` with `)*(` in answer checks to avoid Algebrite parsing errors
+* Updated problem pool (Replace `**` with `^` in scaffold/step answers)
+* Algebrite parsing type name renamed from "algebra" to "arithmetic"
+* Temporarily replaced all numeric type with arithmetic type since they were incorrectly tagged as numeric in the content side
+
 ## Beta v0.32
 * Fixed scaffolds locking after previously answering them when expanding earlier hints
 * Fixed reset progress button

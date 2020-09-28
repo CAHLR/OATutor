@@ -14,6 +14,15 @@ function round(num, precision) {
   }
 }
 
+function _parseArithmetic(attempt, isAnswer) {
+  var parsed = attempt.replace(/\)\(/g, ')*(');
+  parsed = Algebrite.run(parsed).toString();
+  if (!isAnswer && parsed.includes("syntax error")) {
+    return "algebrite syntax error"
+  }
+  return parsed;
+}
+
 function checkAnswer(attempt, actual, answerType, precision) {
   var parsed = attempt;
   var correctAnswer = false;
@@ -21,11 +30,8 @@ function checkAnswer(attempt, actual, answerType, precision) {
     if (parsed === "") {
       return [parsed, false];
     } else if (answerType === "arithmetic") {
-      parsed = Algebrite.run(attempt).toString();
-      if (parsed.includes("syntax error")) {
-        parsed = "algebrite syntax error"
-      }
-      correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(Algebrite.run(actualAns).toString(), precision)));
+      parsed = _parseArithmetic(attempt, false);
+      correctAnswer = _equality(parsed, actual.map((actualAns) => _parseArithmetic(actualAns, true)));
     } else if (answerType === "string") {
       parsed = attempt;
       correctAnswer = _equality(parsed, actual);
