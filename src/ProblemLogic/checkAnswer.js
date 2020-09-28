@@ -20,7 +20,7 @@ function checkAnswer(attempt, actual, answerType, precision) {
   try {
     if (parsed === "") {
       return [parsed, false];
-    } else if (answerType === "algebra") {
+    } else if (answerType === "arithmetic") {
       parsed = Algebrite.run(attempt).toString();
       if (parsed.includes("syntax error")) {
         parsed = "algebrite syntax error"
