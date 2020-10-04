@@ -3,6 +3,9 @@
 ## Coming soon
 * Router back button support
 
+## Beta v0.34
+* Added feedback capability. Press a button in the bottom right to show a textbox to write feedback which is logged to firebase.
+
 ## Beta v0.33
 * Replace `)(` with `)*(` in answer checks to avoid Algebrite parsing errors
 * Updated problem pool (Replace `**` with `^` in scaffold/step answers)

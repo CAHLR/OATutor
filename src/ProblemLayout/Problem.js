@@ -9,6 +9,8 @@ import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
 import renderText from '../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
+import IconButton from '@material-ui/core/IconButton';
+import TextField from '@material-ui/core/TextField';
 
 import { ThemeContext } from '../config/config.js';
 
@@ -24,7 +26,10 @@ class Problem extends React.Component {
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
-      problemFinished: false
+      problemFinished: false,
+      showFeedback: false,
+      feedback: "",
+      feedbackSubmitted: false
     }
   }
 
@@ -62,7 +67,7 @@ class Problem extends React.Component {
           offset: -100
         })
       } else {
-        this.setState({problemFinished: true});
+        this.setState({ problemFinished: true });
       }
     }
   }
@@ -75,8 +80,21 @@ class Problem extends React.Component {
     this.setState({ problem: this.props.problemComplete(this.context) },
       () => this.setState({
         steps: this.refreshSteps(this.props.problem),
-        problemFinished: false
+        problemFinished: false,
+        feedback: "",
+        feedbackSubmitted: false
       }));
+  }
+
+  submitFeedback = () => {
+    console.log(this.state.feedback);
+    this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished);
+    this.setState({feedback: "", feedbackSubmitted: true});
+  }
+
+  toggleFeedback = () => {
+    scroll.scrollToBottom({ duration: 900, smooth: true });
+    this.setState( prevState => ({showFeedback: !prevState.showFeedback}))
   }
 
   render() {
@@ -110,6 +128,51 @@ class Problem extends React.Component {
             <Grid item xs={3} sm={3} md={5} key={3} />
           </Grid>
         </div>
+
+        <div style={{ display: "flex", flexDirection: "row-reverse", justifyContent: "right", marginRight: "20px" }}>
+          <IconButton aria-label="report" onClick={this.toggleFeedback}>
+            <img src={require('./report_problem.png')} title="Report problem" alt="report" width="32px" />
+          </IconButton>
+
+        </div>
+        {this.state.showFeedback ? <div className="Feedback">
+          <center><h1>Feedback</h1></center>
+          <div className={classes.textBox}>
+            <div className={classes.textBoxHeader}>
+              <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
+            </div>
+            {this.state.feedbackSubmitted ? <br /> : <Grid container spacing={0}>
+              <Grid item xs={3} sm={3} md={2} key={1} />
+              <Grid item xs={6} sm={6} md={8} key={2}>
+                <TextField
+                  id="outlined-multiline-flexible"
+                  label="Response"
+                  multiline
+                  fullWidth
+                  rows="6"
+                  rowsMax="20"
+                  value={this.state.feedback}
+                  onChange={(event) => this.setState({feedback: event.target.value})}
+                  className={classes.textField}
+                  margin="normal"
+                  variant="outlined"
+                /> </Grid>
+              <Grid item xs={3} sm={3} md={2} key={3} />
+            </Grid>}
+          </div>
+          {this.state.feedbackSubmitted ? "" :
+          <div className="submitFeedback"> 
+          <Grid container spacing={0}>
+            <Grid item xs={3} sm={3} md={5} key={1} />
+            <Grid item xs={6} sm={6} md={2} key={2}>
+              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.submitFeedback} disabled={this.state.feedback === ""}>Submit</Button>
+            </Grid>
+            <Grid item xs={3} sm={3} md={5} key={3} />
+          </Grid>
+          <br /> </div>}
+          
+
+        </div> : ""}
 
       </div>
 

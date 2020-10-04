@@ -5,9 +5,9 @@ require("firebase/firestore");
 class Firebase {
 
   constructor(id, credentials, treatment, siteVersion) {
-    firebase.initializeApp(credentials);
+    var app = firebase.initializeApp(credentials);
     this.id = id;
-    this.db = firebase.firestore();
+    this.db = firebase.firestore(app);
     this.treatment = treatment;
     this.siteVersion = siteVersion;
     this.mouseLogBuffer = [];
@@ -126,6 +126,20 @@ class Firebase {
     this.mouseLogBuffer = [];
     console.log("Logged mouseMovement");
     return this.writeData("mouseMovement", date, data);
+  }
+
+  submitFeedback(problemID, feedback, problemFinished) {
+    var date = this.getDate();
+    var data = {
+      timeStamp: date,
+      siteVersion: this.siteVersion,
+      studentID: this.id,
+      problemID: problemID,
+      treatment: this.treatment,
+      problemFinished: problemFinished,
+      feedback: feedback
+    }
+    return this.writeData("feedback", date, data);
   }
 
 }

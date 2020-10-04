@@ -104,6 +104,14 @@ const styles = theme => ({
     marginTop: 10,
     marginLeft: 10
   },
+  textBox: {
+    paddingLeft: 70,
+    paddingRight: 70,
+  },
+  textBoxHeader: {
+    fontWeight: 'bold',
+    fontSize: 16,
+  }
 
 });
 

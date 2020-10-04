@@ -5,7 +5,7 @@ import Platform from './ProblemLogic/Platform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
-import credentials from './config/credentials.js';
+import credentials from './config/credentials-secret.js';
 import skillModel from './config/skillModel.js';
 import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
 import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
@@ -44,7 +44,7 @@ class App extends React.Component {
 
     // Firebase creation
     this.firebase = null;
-    if (logData) {
+    if (true) { //logData
       this.firebase = new Firebase(this.userID, credentials, this.getTreatment(), siteVersion);
     }
 
