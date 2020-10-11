@@ -15,6 +15,9 @@ import HintSystem from './HintSystem.js';
 import renderText from '../ProblemLogic/renderText.js';
 import MultipleChoice from './MultipleChoice.js';
 
+import EquationEditor from "equation-editor-react";
+import InputAdornment from '@material-ui/core/InputAdornment';
+
 import { ThemeContext } from '../config/config.js';
 
 
@@ -69,7 +72,8 @@ class ProblemCard extends React.Component {
       isCorrect: null,
       checkMarkOpacity: '0',
       showHints: false,
-      hintsFinished: new Array(this.hints.length).fill(0)
+      hintsFinished: new Array(this.hints.length).fill(0),
+      equation: 'y=x'
     }
   }
 
@@ -123,7 +127,7 @@ class ProblemCard extends React.Component {
     }
 
     // If the user has not opened a scaffold before, mark it as in-progress.
-    if (this.state.hintsFinished[hintNum] !== 1) { 
+    if (this.state.hintsFinished[hintNum] !== 1) {
       this.setState(prevState => {
         prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
         return { hintsFinished: prevState.hintsFinished }
@@ -133,7 +137,7 @@ class ProblemCard extends React.Component {
         }
       });
     }
-    
+
   }
 
   submitHint = (parsed, hint, correctAnswer, hintNum) => {
@@ -180,6 +184,14 @@ class ProblemCard extends React.Component {
             <Grid container spacing={0} justify="center" alignItems="center">
               <Grid item xs={1} md={4} />
               <Grid item xs={9} md={3}>
+                <InputAdornment />
+                <center>
+              <EquationEditor
+                  value={this.state.equation}
+                  onChange={(eq) => this.setState({equation: eq})}
+                  autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
+                  autoOperatorNames="sin cos tan"
+                /></center>
                 {this.step.problemType === "TextBox" ?
                   <TextField
                     error={this.state.isCorrect === false}
