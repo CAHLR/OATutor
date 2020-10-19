@@ -111,7 +111,32 @@ const styles = theme => ({
   textBoxHeader: {
     fontWeight: 'bold',
     fontSize: 16,
-  }
+  },
+  textBoxLatex: {
+    border: "1px solid #c4c4c4",
+    borderRadius: "4px", 
+    '&:hover': {
+      border: "1px solid #000000",
+    },
+    '&:focus-within': {
+      border: "2px solid #3f51b5",
+    },
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingBottom: "3px",
+  },
+  textBoxLatexIncorrect: {
+    borderRadius: "4px", 
+    boxShadow: "0 0 0.75pt 0.75pt red",
+    '&:focus-within': {
+      border: "1px solid red",
+    },
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingBottom: "3px",
+  },
 
 });
 
