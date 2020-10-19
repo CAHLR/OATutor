@@ -73,7 +73,7 @@ class ProblemCard extends React.Component {
       checkMarkOpacity: '0',
       showHints: false,
       hintsFinished: new Array(this.hints.length).fill(0),
-      equation: 'y=x'
+      equation: ''
     }
   }
 
@@ -184,22 +184,14 @@ class ProblemCard extends React.Component {
             <Grid container spacing={0} justify="center" alignItems="center">
               <Grid item xs={1} md={4} />
               <Grid item xs={9} md={3}>
-                <InputAdornment />
-                <center>
-              <EquationEditor
-                  value={this.state.equation}
-                  onChange={(eq) => this.setState({equation: eq})}
-                  autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
-                  autoOperatorNames="sin cos tan"
-                /></center>
                 {this.step.problemType === "TextBox" ?
-                  <TextField
-                    error={this.state.isCorrect === false}
-                    className={classes.inputField}
-                    variant="outlined"
-                    onChange={(evt) => this.editInput(evt)}
-                    onKeyPress={(evt) => this.handleKey(evt)}>
-                  </TextField> : ""}
+                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect :  classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
+                  <EquationEditor
+                    value={this.state.inputVal}
+                    onChange={(eq) => this.setState({ inputVal: eq })}
+                    autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
+                    autoOperatorNames="sin cos tan"
+                  /></center> : ""}
                 {this.step.problemType === "MultipleChoice" ?
                   <MultipleChoice
                     onChange={(evt) => this.editInput(evt)}
