@@ -22,7 +22,7 @@ const skillModel = {
     real12b: ['evaluating_algebraic_expressions'],
     real12c: ['evaluating_algebraic_expressions'],
     real13a: ['evaluating_algebraic_expressions'],
-    real14a: ['evaluating_algebraic_expressions'],
+    real14a: ['evaluating_algebraic_expressions', 'debug'],
     real15a: ['performing_calculations_using_the_order_of_operations'],
     real16a: ['performing_calculations_using_the_order_of_operations'],
     real17a: ['performing_calculations_using_the_order_of_operations'],

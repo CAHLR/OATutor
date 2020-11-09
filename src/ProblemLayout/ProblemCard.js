@@ -16,7 +16,6 @@ import renderText from '../ProblemLogic/renderText.js';
 import MultipleChoice from './MultipleChoice.js';
 
 import EquationEditor from "equation-editor-react";
-import InputAdornment from '@material-ui/core/InputAdornment';
 
 import { ThemeContext } from '../config/config.js';
 
@@ -189,8 +188,8 @@ class ProblemCard extends React.Component {
                   <EquationEditor
                     value={this.state.inputVal}
                     onChange={(eq) => this.setState({ inputVal: eq })}
-                    autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
-                    autoOperatorNames="sin cos tan"
+                    autoCommands={this.context.autoCommands}
+                    autoOperatorNames={this.context.autoOperatorNames}
                   /></center> : ""}
                 {this.step.problemType === "MultipleChoice" ?
                   <MultipleChoice

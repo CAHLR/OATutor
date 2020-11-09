@@ -6,3 +6,16 @@ div.sticky {
   position: sticky;
   top: 0;
 }
+
+a[type=menu] {
+  color: #FFF;
+}
+a:hover[type=menu] {
+   color: rgb(209, 209, 209)
+}
+a:link[type=menu] {
+  text-decoration: none;
+}
+a:visited[type=menu] {
+  text-decoration: none;
+}

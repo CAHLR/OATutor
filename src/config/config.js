@@ -18,6 +18,9 @@ const cookieID = "openITS-id";
 const MAX_BUFFER_SIZE = 100;
 const GRANULARITY = 5;
 
+const autoCommands = "pi theta sqrt sum prod alpha beta gamma rho";
+const autoOperatorNames = "sin cos tan";
+
 export {ThemeContext, 
     siteVersion,
     logData,
@@ -28,5 +31,7 @@ export {ThemeContext,
     useBottomOutHints,
     lessonPlans,
     MAX_BUFFER_SIZE,
-    GRANULARITY
+    GRANULARITY,
+    autoCommands,
+    autoOperatorNames
 };

@@ -142,8 +142,8 @@ class Problem extends React.Component {
               <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
             </div>
             {this.state.feedbackSubmitted ? <br /> : <Grid container spacing={0}>
-              <Grid item xs={3} sm={3} md={2} key={1} />
-              <Grid item xs={6} sm={6} md={8} key={2}>
+              <Grid item xs={1} sm={2} md={2} key={1} />
+              <Grid item xs={10} sm={8} md={8} key={2}>
                 <TextField
                   id="outlined-multiline-flexible"
                   label="Response"
@@ -157,7 +157,7 @@ class Problem extends React.Component {
                   margin="normal"
                   variant="outlined"
                 /> </Grid>
-              <Grid item xs={3} sm={3} md={2} key={3} />
+              <Grid item xs={1} sm={2} md={2} key={3} />
             </Grid>}
           </div>
           {this.state.feedbackSubmitted ? "" :
