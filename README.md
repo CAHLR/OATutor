@@ -323,3 +323,23 @@ export { problem };
   }
 }
 ```
+
+AB testing:
+OpenITS was designed with the research case in mind and thus supports AB testing for many features. The benefit of the open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they would like. To show that this is possible, we have included several examples of how one could use AB testing. One example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge component that is lowest (meaning the student is weakest in this subject) to round out the student's knowledge. Another heuristic is to choose problems with a knowledge ocmponent that is highest (meaning the student is strongest in this subject) to fully master a skill before moving on to another. There is control logic detailed in App.js to select between the two heuristics depending on a randomly generated userID. The userID is recorded in data logs so the treatment can be inferred from this. Other examples of AB testing included are different BKT parameter files and different default hint pathways.
+
+
+Details of KC model Description (how it works/format)
+Knowledge components (KCs) are assigned at the step level in the file skillModel.js. A KC is defined as a string that contains corresponding BKT parameters (existing in bktParams.js file) including probMastery, probTransit, probSlip, and probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.js stores a mapping between step IDs and the KCs array as a JSON object. 
+
+bktParams.js contains a JSON object that maps KCs to their corresponding BKT parameters (probMastery, probTransit, probSlip, and probGuess). These values are typically empirically determined and can be AB tested (see above).
+
+
+What the format of a section looks like
+Problems are decomposed into steps. Problems do not contain an answer field (problems without real steps are formatted as a problem with only one step). Steps can be one of 2 answer types: textbox or multiple choice. Steps can contain help items which can be toggled to be shown by clicking a raised hand icon on each step. There are two possible help items: hints which are purely textual and have no user input, or scaffolds which contain user input (again, either textbox or multiple choice). Scaffolds can contain help items themselves, except this is the deepest level of content (the scaffolds's scaffolds cannot contain any help items).
+
+BKT algorithm selecting problems.
+
+OpenITS uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT works, just copy the descriptions of the 4 model parameters used in BKT from wikipedia along with equations a thru d. The implementation is exactly identical to wikpedia, nothing special here) 
+
+Problem selection is determined using a heuristic which is fully configurable and can be AB tested (see above). For the purposes of this paper, let us assume we are using a heuristic that selects problems prioritizing the lowest mastery first. Upon receiving user input, the standard BKT update equations will update the predicted user's mastery. Upon completion of a problem, OpenITS will iterate through all problems and compute each problem's mastery level(note: mastery level is computed at the problem granularity not the step) for the user. This is done by multiplying all the mastery priors for all KCs of that step (as labelled by the researcher in the KC model) and then multiplying all step masteries together to get the problem mastery. The heuristic will be applied, which in this case is lowest mastery first, so the problem with the lowest mastery is selected to give to the user. In the case that the first problem is being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
+

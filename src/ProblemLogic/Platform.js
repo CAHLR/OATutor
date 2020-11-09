@@ -3,9 +3,13 @@ import { AppBar, Toolbar } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
+import {
+  HashRouter as Router,
+  NavLink
+} from "react-router-dom";
 
 import problemPool from '../ProblemPool/problemPool.js'
-import { ThemeContext } from '../config/config.js';
+import { ThemeContext, lessonPlans } from '../config/config.js';
 
 
 class Platform extends React.Component {
@@ -18,6 +22,7 @@ class Platform extends React.Component {
     };
     this.completedProbs = new Set();
     this.lesson = null;
+    console.log(this.props.lessonNum);
 
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
@@ -29,19 +34,35 @@ class Platform extends React.Component {
         }
       }
     }
-    this.state = {
-      currProblem: null,
-      status: "lessonSelection"
+    if (this.props.lessonNum == null) {
+      this.state = {
+        currProblem: null,
+        status: "lessonSelection"
+      }
+    } else {
+      this.state = {
+        currProblem: null,
+        status: "lessonSelection"
+      }
     }
-
   }
 
-  selectLesson = (lesson) => {
+  componentDidMount() {
+    if (this.props.lessonNum != null) {
+      this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]);
+      console.log("loaded lesson "+ this.props.lessonNum);
+    }
+  }
+
+  selectLesson = (lesson, context) => {
     this.lesson = lesson;
     this.props.loadProgress();
     this.setState({
-      currProblem: this._nextProblem(this.context),
-    })
+      currProblem: this._nextProblem(this.context ? this.context : context),
+    }, () => {
+      console.log(this.state.currProblem);
+      console.log(this.lesson);
+    });
   }
 
   _nextProblem = (context) => {
@@ -66,6 +87,8 @@ class Platform extends React.Component {
       }
       if (isRelevant) {
         problem.probMastery = probMastery;
+      } else {
+        problem.probMastery = null;
       }
     }
 
@@ -104,8 +127,12 @@ class Platform extends React.Component {
         <AppBar position="static" >
           <Toolbar>
             <div style={{ flex: 1 }}>Open ITS</div>
+            <Router>
+              <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
+                <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+              </NavLink>
+            </Router>
 
-              <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
 
           </Toolbar>
         </AppBar>

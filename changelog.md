@@ -1,7 +1,13 @@
 # Changelog
 
 ## Coming soon
-* Router back button support
+* Canvas LTI support
+
+## Beta v0.4
+* Added router for back button support and unique perma-links for lessons
+* Mobile support for subhints
+* Khan Academy KAS support for symbolic equality
+* LaTeX equation editor instead of textboxes
 
 ## Beta v0.34
 * Added feedback capability. Press a button in the bottom right to show a textbox to write feedback which is logged to firebase.

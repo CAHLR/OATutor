@@ -4,6 +4,13 @@ import Cookies from 'universal-cookie';
 import Platform from './ProblemLogic/Platform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
+import {
+  Route,
+  HashRouter as Router,
+  Switch
+} from "react-router-dom";
+import Notfound from "./notfound.js";
+
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import credentials from './config/credentials-secret.js';
 import skillModel from './config/skillModel.js';
@@ -20,13 +27,17 @@ import {
   logData,
   cookieID,
   debug,
-  useBottomOutHints
+  useBottomOutHints,
+  autoCommands,
+  autoOperatorNames
 } from './config/config.js';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();
+
+//const PlatformLesson = ({ match }) => <ParkDetails lessonName={match.params.lessonName} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress}/>;
 
 class App extends React.Component {
   constructor() {
@@ -98,9 +109,24 @@ class App extends React.Component {
           skillModel: skillModel,
           credentials: credentials,
           debug: debug,
-          useBottomOutHints: useBottomOutHints
+          useBottomOutHints: useBottomOutHints,
+          autoCommands: autoCommands,
+          autoOperatorNames: autoOperatorNames,
         }}>
-          <Platform saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
+          <Router>
+            <div className="Router">
+              <Switch>
+                <Route exact path="/" render={(props) => (
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
+                )} />
+                <Route path="/lessons/:lessonNum" render={(props) => (
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum}/>
+                )} />
+                <Route component={Notfound} />
+              </Switch>
+            </div>
+          </Router>
+          
         </ThemeContext.Provider>
       </ThemeProvider>
     );
