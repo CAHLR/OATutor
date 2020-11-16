@@ -112,15 +112,16 @@ class App extends React.Component {
           useBottomOutHints: useBottomOutHints,
           autoCommands: autoCommands,
           autoOperatorNames: autoOperatorNames,
+          studentName: '',
         }}>
           <Router>
             <div className="Router">
               <Switch>
                 <Route exact path="/" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} />
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} {...props}/>
                 )} />
                 <Route path="/lessons/:lessonNum" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum}/>
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props}/>
                 )} />
                 <Route component={Notfound} />
               </Switch>

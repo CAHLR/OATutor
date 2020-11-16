@@ -45,6 +45,20 @@ class Problem extends React.Component {
     })
   }
 
+  updateCanvas = (name, mastery) => {
+    console.log(name, mastery);
+    fetch('http://169.229.192.135:1339/grade', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "lis_person_name_full": name,
+        "score": mastery.toString()
+      })
+    });
+  }
+
   answerMade = (cardIndex, kcArray, isCorrect) => {
     if (this.stepStates[cardIndex] === true) { return }
 
@@ -55,7 +69,14 @@ class Problem extends React.Component {
         console.log(this.bktParams[kc].probMastery);
       }
     }
-
+    console.log(this.props.lesson);
+    var objectives = Object.keys(this.props.lesson.learningObjectives);
+    objectives.unshift(0);
+    var score = objectives.reduce((x,y) => {
+      return x + this.bktParams[y].probMastery});
+    score /= objectives.length - 1;
+    console.log(this.context.studentName + " " + score);
+    this.updateCanvas(this.context.studentName, score);
     this.stepStates[cardIndex] = isCorrect;
 
     if (isCorrect) {
@@ -89,12 +110,12 @@ class Problem extends React.Component {
   submitFeedback = () => {
     console.log(this.state.feedback);
     this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished);
-    this.setState({feedback: "", feedbackSubmitted: true});
+    this.setState({ feedback: "", feedbackSubmitted: true });
   }
 
   toggleFeedback = () => {
     scroll.scrollToBottom({ duration: 900, smooth: true });
-    this.setState( prevState => ({showFeedback: !prevState.showFeedback}))
+    this.setState(prevState => ({ showFeedback: !prevState.showFeedback }))
   }
 
   render() {
@@ -152,7 +173,7 @@ class Problem extends React.Component {
                   rows="6"
                   rowsMax="20"
                   value={this.state.feedback}
-                  onChange={(event) => this.setState({feedback: event.target.value})}
+                  onChange={(event) => this.setState({ feedback: event.target.value })}
                   className={classes.textField}
                   margin="normal"
                   variant="outlined"
@@ -161,16 +182,16 @@ class Problem extends React.Component {
             </Grid>}
           </div>
           {this.state.feedbackSubmitted ? "" :
-          <div className="submitFeedback"> 
-          <Grid container spacing={0}>
-            <Grid item xs={3} sm={3} md={5} key={1} />
-            <Grid item xs={6} sm={6} md={2} key={2}>
-              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.submitFeedback} disabled={this.state.feedback === ""}>Submit</Button>
-            </Grid>
-            <Grid item xs={3} sm={3} md={5} key={3} />
-          </Grid>
-          <br /> </div>}
-          
+            <div className="submitFeedback">
+              <Grid container spacing={0}>
+                <Grid item xs={3} sm={3} md={5} key={1} />
+                <Grid item xs={6} sm={6} md={2} key={2}>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.submitFeedback} disabled={this.state.feedback === ""}>Submit</Button>
+                </Grid>
+                <Grid item xs={3} sm={3} md={5} key={3} />
+              </Grid>
+              <br /> </div>}
+
 
         </div> : ""}
 

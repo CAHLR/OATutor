@@ -17,6 +17,11 @@ class Platform extends React.Component {
 
   constructor(props, context) {
     super(props);
+    if (this.props.location.search.startsWith('?name=')) {
+      var name = this.props.location.search.replace('?name=', '')
+      context.studentName = name;
+      console.log(context.studentName);
+    }
     this.problemIndex = {
       problems: problemPool
     };
@@ -139,7 +144,7 @@ class Platform extends React.Component {
         {this.state.status === "lessonSelection" ?
           <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} /> : ""}
         {this.state.status === "learning" ?
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} /> : ""}
+          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}/> : ""}
         {this.state.status === "exhausted" ?
           <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
         {this.state.status === "graduated" ?
