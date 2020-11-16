@@ -2,7 +2,8 @@ var port = process.env.PORT || 1339; //sets local server port to 1339
 var express = require('express'); // Express web server framework
 var https = require("https");
 var request = require('request');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var cors = require('cors');
 var lti = require('ims-lti');
 
 var providers = {};
@@ -10,6 +11,11 @@ var provider;
 var secret = 'openits-secret';
 var app = express();
 
+const corsOptions = {
+  origin: 'https://localhost:1337',
+}
+
+app.use(express.json());
 app.use(bodyParser.json());                            // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));    // to support URL-encoded bodies
 console.log("Starting up server on port: " + port);
@@ -51,7 +57,7 @@ app.get('/grade', function (req, res) {
   res.send("Server only accepts post requests.");
 });
 
-app.post('/grade', function (req, res) {
+app.post('/grade', cors(corsOptions), function (req, res) {
   /*
   Takes in a body with 2 params:
   :param lis_person_name_full: Name, must match from the LTI request
