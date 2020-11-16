@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad18-index.js"; const problem = {id: "quad18", title: "Using the Discriminant to Find the Nature of the Solutions to a Quadratic Equation", body: "Using the discriminant, classify the nature of the following quadratic equations.", steps: steps, }; export { problem };

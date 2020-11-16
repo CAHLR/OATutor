@@ -1,0 +1,1 @@
+import hints from "./RecCord16a-index.js"; const step = {id: "RecCord16a", stepAnswer: ["(-5,5/2)"], problemType: "TextBox", stepTitle: "Find the midpoint of the line segment with the endpoints (-2,-1) and (-8,6).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

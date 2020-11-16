@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor14-index.js"; const problem = {id: "factor14", title: "Factoring Polynomials", body: "For the following exercises, find the greatest common factor.", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor14-index.js"; const problem = {id: "factor14", title: "Factoring Polynomials", body: "Find the greatest common factor.", steps: steps, }; export { problem };

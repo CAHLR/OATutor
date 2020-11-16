@@ -1,0 +1,1 @@
+import hints from "./block9a-index.js"; const step = {id: "block9a", stepAnswer: ["True"], problemType: "MultipleChoice", stepTitle: "", stepBody: "Proof of Work ties a physical resource to the creation of blocks.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};

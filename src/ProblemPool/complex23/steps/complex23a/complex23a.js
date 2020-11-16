@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex23a-index.js"; const step = {id: "complex23a", stepAnswer: ["2-i sqrt(5)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="2+\operatorname{isqrt}\left(5\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

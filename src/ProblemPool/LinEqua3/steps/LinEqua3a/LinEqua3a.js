@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./LinEqua3a-index.js"; const step = {id: "LinEqua3a", stepAnswer: ["x=-5/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="4\left(x-3\right)+12=15-5\left(x+6\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

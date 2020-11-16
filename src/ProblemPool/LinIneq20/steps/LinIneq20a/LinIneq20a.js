@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./LinIneq20a-index.js"; const step = {id: "LinIneq20a", stepAnswer: ["(2,inf)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-x+4<\frac{1}{2} x+1"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

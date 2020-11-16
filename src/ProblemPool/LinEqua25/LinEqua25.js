@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua25-index.js"; const problem = {id: "LinEqua25", title: "Finding the Equation of a Line Passing Through the Given Points", body: "", steps: steps, }; export { problem };

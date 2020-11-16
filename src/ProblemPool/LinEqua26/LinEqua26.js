@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua26-index.js"; const problem = {id: "LinEqua26", title: "Determining Whether the Lines are Parallel, Perpendicular, or Neither", body: "", steps: steps, }; export { problem };

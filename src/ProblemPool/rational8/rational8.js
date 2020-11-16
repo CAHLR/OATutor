@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational8-index.js"; const problem = {id: "rational8", title: "Simplifying Complex Rational Expressions", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational8-index.js"; const problem = {id: "rational8", title: "Simplifying Expressions", body: "Simplifying Complex Rational Expressions", steps: steps, }; export { problem };

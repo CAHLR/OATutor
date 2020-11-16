@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./complex24-index.js"; const problem = {id: "complex24", title: "Dividing Complex Numbers", body: "", steps: steps, }; export { problem };

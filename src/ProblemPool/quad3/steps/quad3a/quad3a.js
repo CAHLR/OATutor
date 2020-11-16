@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./quad3a-index.js"; const step = {id: "quad3a", stepAnswer: ["not real"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="x^2+4x+7=0"/></div>, stepBody: "", choices: ["not real", "1 real", "2 real"], answerType: "string", hints: hints}; export {step};

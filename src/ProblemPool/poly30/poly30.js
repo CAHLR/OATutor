@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly30-index.js"; const problem = {id: "poly30", title: "Polynomial Extensions", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly30-index.js"; const problem = {id: "poly30", title: "Polynomial Extensions", body: "Perform the given operations on the following expression.", steps: steps, }; export { problem };

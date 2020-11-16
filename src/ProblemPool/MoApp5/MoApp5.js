@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./MoApp5-index.js"; const problem = {id: "MoApp5", title: "For the following exercises, use the information to find a linear algebraic equation model to use to answer the question being asked.", body: "", steps: steps, }; export { problem };

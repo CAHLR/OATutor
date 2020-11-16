@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./MoApp12-index.js"; const problem = {id: "MoApp12", title: "Solving an Area Problem", body: "", steps: steps, }; export { problem };

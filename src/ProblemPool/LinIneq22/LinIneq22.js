@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq22-index.js"; const problem = {id: "LinIneq22", title: "Solving a Compound Inequality", body: "Solve the compound inequality:", steps: steps, }; export { problem };

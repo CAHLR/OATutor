@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua11-index.js"; const problem = {id: "LinEqua11", title: "Solving Rational Equations with a Binomial in the Denominator", body: "Solve the following rational equations and state the excluded values.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad21-index.js"; const problem = {id: "quad21", title: "Try It: Finding the Length of the Missing Side of a Right Triangle", body: "Use the Pythagorean Theorem to solve the following problem:", steps: steps, }; export { problem };

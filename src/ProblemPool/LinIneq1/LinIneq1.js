@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq1-index.js"; const problem = {id: "LinIneq1", title: "Using Interval Notation to Express All Real Numbers Greater Than or Equal to a", body: "", steps: steps, }; export { problem };

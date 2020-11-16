@@ -1,0 +1,1 @@
+import hints from "./block3a-index.js"; const step = {id: "block3a", stepAnswer: ["False"], problemType: "MultipleChoice", stepTitle: "", stepBody: "Waiting the requisite number of blocks is never necessary if the money has already shown up in your wallet.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};

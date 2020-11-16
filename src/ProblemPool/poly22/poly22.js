@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly22-index.js"; const problem = {id: "poly22", title: "Polynomials", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly22-index.js"; const problem = {id: "poly22", title: "Expanding the expression", body: "Expand the binomial.", steps: steps, }; export { problem };

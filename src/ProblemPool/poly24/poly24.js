@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly24-index.js"; const problem = {id: "poly24", title: "Multiplying Polynomials", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly24-index.js"; const problem = {id: "poly24", title: "Multiplying Polynomials", body: "Expand the polynomial.", steps: steps, }; export { problem };

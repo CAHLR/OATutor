@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord3-index.js"; const problem = {id: "RecCord3", title: "Finding the Intercepts of the Given Equation", body: "Find the x-intercept and y-intercept of the equation y=-3x+6", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "block2a-h1", type: "hint", dependencies: [], title: "Explanation", text: "No, because if the attacker controls>51% of the network this is not a valid defense."}, ]; export {hints};

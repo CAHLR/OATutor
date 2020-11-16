@@ -1,0 +1,1 @@
+import hints from "./quad19a-index.js"; const step = {id: "quad19a", stepAnswer: ["$$\\sqrt{128}$$"], problemType: "MultipleChoice", stepTitle: "Find the length of the missing side of the right triangle in the diagram.", stepBody: "", choices: ["$$\\sqrt{128}$$", "8", "$$\\sqrt{138}$$", "$$\\sqrt{148}$$"], answerType: "string", hints: hints}; export {step};

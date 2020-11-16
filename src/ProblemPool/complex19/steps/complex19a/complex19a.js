@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex19a-index.js"; const step = {id: "complex19a", stepAnswer: ["15i"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\sqrt{-9}+3\sqrt{-16}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
