@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad32-index.js"; const problem = {id: "quad32", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping", steps: steps, }; export { problem };

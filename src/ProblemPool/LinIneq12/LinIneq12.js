@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq12-index.js"; const problem = {id: "LinIneq12", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, }; export { problem };

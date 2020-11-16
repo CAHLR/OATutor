@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./MoApp8-index.js"; const problem = {id: "MoApp8", title: "Solving an Application Using a Formula", body: "", steps: steps, }; export { problem };

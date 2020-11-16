@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./quad15a-index.js"; const step = {id: "quad15a", stepAnswer: ["(3+sqrt(22)), (3−sqrt(22))"], problemType: "TextBox", stepTitle: <div> <InlineMath math="2x-6x=13"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

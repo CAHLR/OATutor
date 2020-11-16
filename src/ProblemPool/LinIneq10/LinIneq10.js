@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq10-index.js"; const problem = {id: "LinIneq10", title: "Solving an Absolute Value Inequality", body: "", steps: steps, }; export { problem };

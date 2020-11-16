@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor1-index.js"; const problem = {id: "factor1", title: "Factoring the Greatest Common Factor", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor1-index.js"; const problem = {id: "factor1", title: "Factoring the Greatest Common Factor", body: "Factor the expression by pulling out the greatest common factor.", steps: steps, }; export { problem };

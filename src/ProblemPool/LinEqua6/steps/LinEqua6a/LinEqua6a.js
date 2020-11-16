@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./LinEqua6a-index.js"; const step = {id: "LinEqua6a", stepAnswer: ["x=1/4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{7}{2x}-\frac{5}{3x}=\frac{22}{3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

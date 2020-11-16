@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq6-index.js"; const problem = {id: "LinIneq6", title: "Solving an Inequality with Fractions", body: "Solve the following inequality and write the answer in interval notation:", steps: steps, }; export { problem };

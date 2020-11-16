@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord24-index.js"; const problem = {id: "RecCord24", title: "Finding Intercepts: Numeric", body: "", steps: steps, }; export { problem };

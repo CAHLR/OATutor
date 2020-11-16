@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./LinEqua2a-index.js"; const step = {id: "LinEqua2a", stepAnswer: ["x=-5"], problemType: "TextBox", stepTitle: <div> <InlineMath math="2x+1=-9"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

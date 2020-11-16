@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq27-index.js"; const problem = {id: "LinIneq27", title: "Solving an Absolute Value Inequality", body: "Solve the inequality involving absolute value. Write your final answer in interval notation.", steps: steps, }; export { problem };

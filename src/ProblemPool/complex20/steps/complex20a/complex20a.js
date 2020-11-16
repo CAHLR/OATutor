@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex20a-index.js"; const step = {id: "complex20a", stepAnswer: ["1+i(sqrt(3))"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{2+\sqrt{-12}}{2}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

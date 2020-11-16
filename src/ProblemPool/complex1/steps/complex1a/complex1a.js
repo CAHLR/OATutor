@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex1a-index.js"; const step = {id: "complex1a", stepAnswer: ["3i"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="\sqrt{-9}"/></div>, stepBody: "", choices: ["3i", "9i", "i", "4i"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua8-index.js"; const problem = {id: "LinEqua8", title: "Solve the rational equation", body: "Solve the rational equation:", steps: steps, }; export { problem };

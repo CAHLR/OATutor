@@ -1,0 +1,1 @@
+import hints from "./block4a-index.js"; const step = {id: "block4a", stepAnswer: ["False"], problemType: "MultipleChoice", stepTitle: "", stepBody: "Forking the blockchain after you’ve waited 10 block confirmations is impossible for an attacker to do.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};

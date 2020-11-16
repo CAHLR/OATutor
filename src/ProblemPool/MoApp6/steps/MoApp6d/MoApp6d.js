@@ -1,0 +1,1 @@
+import hints from "./MoApp6d-index.js"; const step = {id: "MoApp6d", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "If the person makes a monthly average of 200 min of calls, which plan should for the person choose?", stepBody: "", choices: ["A", "B"], answerType: "string", hints: hints}; export {step};

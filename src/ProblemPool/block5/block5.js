@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./block5-index.js"; const problem = {id: "block5", title: "Proof of Work I", body: "", steps: steps, }; export { problem };

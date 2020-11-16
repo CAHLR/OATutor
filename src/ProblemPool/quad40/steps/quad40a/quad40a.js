@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./quad40a-index.js"; const step = {id: "quad40a", stepAnswer: ["5, 1"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x^2-6x=13"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

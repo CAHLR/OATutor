@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./LinIneq3c-index.js"; const step = {id: "LinIneq3c", stepAnswer: ["$$x>2$$"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="x+7>9"/></div>, stepBody: "", choices: ["$$x>16$$", "$$x>2$$"], answerType: "string", hints: hints}; export {step};

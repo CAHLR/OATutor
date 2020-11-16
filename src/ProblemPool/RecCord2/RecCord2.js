@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord2-index.js"; const problem = {id: "RecCord2", title: "Finding the intercepts of the equation", body: "Find the intercepts of the equation: y=(-3/4)x+3", steps: steps, }; export { problem };

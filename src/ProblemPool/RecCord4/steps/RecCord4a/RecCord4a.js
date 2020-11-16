@@ -1,0 +1,1 @@
+import hints from "./RecCord4a-index.js"; const step = {id: "RecCord4a", stepAnswer: ["(2,0)"], problemType: "TextBox", stepTitle: "What is the x-intercept?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

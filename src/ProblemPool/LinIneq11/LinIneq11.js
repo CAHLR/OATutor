@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq11-index.js"; const problem = {id: "LinIneq11", title: "Using a Graphical Approach to Solve Absolute Value Inequalities", body: "", steps: steps, }; export { problem };

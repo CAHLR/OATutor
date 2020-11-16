@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational15-index.js"; const problem = {id: "rational15", title: "Rational Expressions", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rational15-index.js"; const problem = {id: "rational15", title: "Rational Expressions", body: "Multiply the rational expression and express the product in simplest form.", steps: steps, }; export { problem };

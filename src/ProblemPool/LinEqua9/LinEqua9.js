@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua9-index.js"; const problem = {id: "LinEqua9", title: "Solving a Rational Equation by Factoring the Denominator", body: "Solve the following rational equation:", steps: steps, }; export { problem };

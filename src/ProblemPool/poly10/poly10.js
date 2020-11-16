@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly10-index.js"; const problem = {id: "poly10", title: "Expanding Perfect Squares", body: "", steps: steps, }; export { problem };
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly10-index.js"; const problem = {id: "poly10", title: "Expanding the Perfect Squares", body: "Expand the following expression.", steps: steps, }; export { problem };

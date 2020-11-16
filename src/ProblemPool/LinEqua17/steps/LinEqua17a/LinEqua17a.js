@@ -1,0 +1,1 @@
+import hints from "./LinEqua17a-index.js"; const step = {id: "LinEqua17a", stepAnswer: ["-2/3"], problemType: "TextBox", stepTitle: "Find the slope of a line that passes through the points (-2,6) and (1,4).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

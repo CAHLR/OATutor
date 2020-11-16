@@ -1,0 +1,1 @@
+import hints from "./block6a-index.js"; const step = {id: "block6a", stepAnswer: ["True"], problemType: "MultipleChoice", stepTitle: "", stepBody: "Not all pools are vulnerable to pool cannibalization.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};
