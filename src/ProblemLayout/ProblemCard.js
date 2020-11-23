@@ -181,8 +181,8 @@ class ProblemCard extends React.Component {
 
           <div className={classes.root}>
             <Grid container spacing={0} justify="center" alignItems="center">
-              <Grid item xs={1} md={4} />
-              <Grid item xs={9} md={3}>
+              <Grid item xs={1} md={this.step.problemType === "TextBox" ? 4 : false} />
+              <Grid item xs={9} md={this.step.problemType === "TextBox" ? 3 : 11}>
                 {this.step.problemType === "TextBox" ?
                   <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect :  classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
                   <EquationEditor
@@ -201,7 +201,7 @@ class ProblemCard extends React.Component {
                   {this.step.units ? renderText(this.step.units) : ""}
                 </div>
               </Grid >
-              <Grid item xs={false} md={3} />
+              <Grid item xs={false} md={this.step.problemType === "TextBox" ? 3 : false} />
 
             </Grid>
           </div>

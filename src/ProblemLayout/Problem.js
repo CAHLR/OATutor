@@ -53,7 +53,7 @@ class Problem extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        "lis_person_name_full": name,
+        "lis_person_name_full": name !== '' ? name : 'Test Student',
         "score": mastery.toString()
       })
     });

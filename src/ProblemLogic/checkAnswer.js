@@ -30,6 +30,7 @@ function checkAnswer(attempt, actual, answerType, precision) {
       return [parsed, false];
     } else if (answerType === "arithmetic") {
       parsed = KAS.parse(attempt).expr;
+      console.log("hello")
       correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
     } else if (answerType === "string") {
       parsed = attempt;
@@ -40,6 +41,7 @@ function checkAnswer(attempt, actual, answerType, precision) {
     }
     return [parsed, correctAnswer];
   } catch {
+    console.log("error");
     return [parsed, false];
   }
 }
