@@ -3,7 +3,6 @@ var express = require('express'); // Express web server framework
 var https = require("https");
 var request = require('request');
 var bodyParser = require('body-parser');
-var cors = require('cors');
 var lti = require('ims-lti');
 
 var providers = {};
@@ -11,13 +10,17 @@ var provider;
 var secret = 'openits-secret';
 var app = express();
 
-const corsOptions = {
-  origin: 'https://localhost:1337',
-}
-
 app.use(express.json());
 app.use(bodyParser.json());                            // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));    // to support URL-encoded bodies
+
+// Disable cors
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 console.log("Starting up server on port: " + port);
 
 // Routes
@@ -57,7 +60,7 @@ app.get('/grade', function (req, res) {
   res.send("Server only accepts post requests.");
 });
 
-app.post('/grade', cors(corsOptions), function (req, res) {
+app.post('/grade', function (req, res) {
   /*
   Takes in a body with 2 params:
   :param lis_person_name_full: Name, must match from the LTI request
