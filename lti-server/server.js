@@ -1,3 +1,5 @@
+var redirect = 'http://169.229.192.135:1337/';
+//var redirect = 'https://cahlr.github.io/OpenITS';
 var port = process.env.PORT || 1339; //sets local server port to 1339
 var express = require('express'); // Express web server framework
 var https = require("https");
@@ -46,7 +48,7 @@ app.post('/auth', function (req, res) {
   providers[req.body.lis_person_name_full] = provider;
   
   res.writeHead(301,
-    { Location: 'https://cahlr.github.io/OpenITS' + '/?lis_person_name_full=' + req.body.lis_person_name_full }
+    { Location: redirect + '/?lis_person_name_full=' + req.body.lis_person_name_full }
   );
   res.end();
   //res.send(req.body);
@@ -71,7 +73,7 @@ app.post('/grade', function (req, res) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
   provider = providers[req.body.lis_person_name_full];
-  provider.outcome_service.send_replace_result(parseFloat(req.body.score), (err, result) => {
+  provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), JSON.stringify(req.body.components), (err, result) => {
     if (!result) {
       console.log(result);
     }

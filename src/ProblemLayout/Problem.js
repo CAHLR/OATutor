@@ -45,7 +45,7 @@ class Problem extends React.Component {
     })
   }
 
-  updateCanvas = (name, mastery) => {
+  updateCanvas = (name, mastery, components) => {
     console.log(name, mastery);
     fetch('http://169.229.192.135:1339/grade', {
       method: 'POST',
@@ -54,7 +54,8 @@ class Problem extends React.Component {
       },
       body: JSON.stringify({
         "lis_person_name_full": name !== '' ? name : 'Test Student',
-        "score": mastery.toString()
+        "score": mastery.toString(),
+        "components": components
       })
     });
   }
@@ -76,7 +77,11 @@ class Problem extends React.Component {
       return x + this.bktParams[y].probMastery});
     score /= objectives.length - 1;
     console.log(this.context.studentName + " " + score);
-    this.updateCanvas(this.context.studentName, score);
+
+    var relevantKc = {}
+    Object.keys(this.props.lesson.learningObjectives).map(x => {
+      relevantKc[x] = this.bktParams[x].probMastery});
+    this.updateCanvas(this.context.studentName, score, relevantKc);
     this.stepStates[cardIndex] = isCorrect;
 
     if (isCorrect) {
