@@ -1,8 +1,24 @@
 import React from 'react';
 import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js'
+var gen = require('random-seed');
 
-export default function renderText(text, problemID) {
+// Return random int from [0, end)
+function randomInt(end) {
+  return Math.floor(Math.random() * end);
+}
+
+function variabilize(text, variabilization) {
+  Object.keys(variabilization).forEach(v =>  {
+    var rand1 = gen.create("seed");
+    var numOptions = variabilization[v].length;
+    var replaceOption = variabilization[v][rand1(numOptions)];
+    text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
+  });
+  return text;
+}
+
+export default function renderText(text, problemID, step) {
   if (typeof text !== 'string') {
     return text;
   }
@@ -11,6 +27,10 @@ export default function renderText(text, problemID) {
     var replace = dynamicText[d];
     result = result.split(d).join(replace);
   }
+  if (step) {
+    result = variabilize(text, step.variabilization);
+  }
+  
 
   var splitted = result.split("\\n");
   splitted = splitted.map((line, j) => {

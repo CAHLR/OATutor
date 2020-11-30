@@ -1,4 +1,4 @@
-var redirect = 'http://169.229.192.135:1337/';
+var redirect = 'http://169.229.192.135:1337/#/';
 //var redirect = 'https://cahlr.github.io/OpenITS';
 var port = process.env.PORT || 1339; //sets local server port to 1339
 var express = require('express'); // Express web server framework
@@ -33,6 +33,28 @@ app.get('/auth', function (req, res) {
   res.send("Server only accepts post requests.");
 });
 
+app.post('/auth/:lessonID', function (req, res) {
+  /*
+  Takes in an LTI post request
+  */
+  console.log("Auth post");
+  console.log(req.params.lessonID);
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  console.log(req.body);
+  provider = new lti.Provider('openits-key', secret);
+  provider.valid_request(req, (err, is_valid) => {
+    if (!is_valid || !provider.outcome_service) console.log(false);
+  });
+  providers[req.body.lis_person_name_full] = provider;
+  
+  res.writeHead(301,
+    { Location: redirect + 'lessons/' + req.params.lessonID + '?lis_person_name_full=' + req.body.lis_person_name_full }
+  );
+  res.end();
+  //res.send(req.body);
+});
+
 app.post('/auth', function (req, res) {
   /*
   Takes in an LTI post request
@@ -48,7 +70,7 @@ app.post('/auth', function (req, res) {
   providers[req.body.lis_person_name_full] = provider;
   
   res.writeHead(301,
-    { Location: redirect + '/?lis_person_name_full=' + req.body.lis_person_name_full }
+    { Location: redirect + '?lis_person_name_full=' + req.body.lis_person_name_full }
   );
   res.end();
   //res.send(req.body);
@@ -73,9 +95,15 @@ app.post('/grade', function (req, res) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
   provider = providers[req.body.lis_person_name_full];
-  provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), JSON.stringify(req.body.components), (err, result) => {
+  var payload = "<h1> Component Breakdown </h1> <br/>";
+  payload += "<h3> Overall score: " + req.body.score + "</h3>"
+  Object.keys(req.body.components).forEach((key, i) => {
+    payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
+  });
+  
+  provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), payload, (err, result) => {
     if (!result) {
-      console.log(result);
+      console.log(err);
     }
   });
   res.send("Graded");

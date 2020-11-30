@@ -1,5 +1,16 @@
 var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
+var gen = require('random-seed');
+
+function variabilize(text, variabilization) {
+  Object.keys(variabilization).forEach(v =>  {
+    var rand1 = gen.create("seed");
+    var numOptions = variabilization[v].length;
+    var replaceOption = variabilization[v][rand1(numOptions)];
+    text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
+  });
+  return text;
+}
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
@@ -22,18 +33,22 @@ function round(num, precision) {
   }
 }
 
-function checkAnswer(attempt, actual, answerType, precision) {
-  var parsed = attempt;
+function checkAnswer(attempt, actual, answerType, precision, variabilization) {
+  var parsed = attempt.replace(/\s+/g, '');
+  actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
+  console.log(actual);
   var correctAnswer = false;
+
   try {
     if (parsed === "") {
       return [parsed, false];
     } else if (answerType === "arithmetic") {
       parsed = KAS.parse(attempt).expr;
-      console.log("hello")
       correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
     } else if (answerType === "string") {
       parsed = attempt;
+      console.log(parsed);
+      console.log(actual);
       correctAnswer = _equality(parsed, actual);
     } else {
       parsed = +attempt;
