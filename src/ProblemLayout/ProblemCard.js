@@ -86,7 +86,7 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization);
 
     if (this.context.logData) {
       this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
@@ -157,12 +157,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {this.step.stepTitle}
+            {renderText(this.step.stepTitle, this.props.problemID, this.step)}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID)}
+            {renderText(this.step.stepBody, this.props.problemID, this.step)}
           </div>
 
           {this.state.showHints ?
