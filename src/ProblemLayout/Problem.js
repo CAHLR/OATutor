@@ -40,7 +40,7 @@ class Problem extends React.Component {
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} />
+        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} />
       </Element>
     })
   }
