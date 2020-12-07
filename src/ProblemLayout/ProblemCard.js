@@ -25,6 +25,7 @@ class ProblemCard extends React.Component {
 
   constructor(props, context) {
     super(props);
+    console.log("Reconstructing");
     this.step = props.step;
     this.index = props.index;
     this.hints = this.step.hints[context.hintPathway];
@@ -86,7 +87,7 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
 
     if (this.context.logData) {
       this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
@@ -157,12 +158,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {renderText(this.step.stepTitle, this.props.problemID, this.step)}
+            {renderText(this.step.stepTitle, this.props.problemID, this.step, this.props.seed)}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID, this.step)}
+            {renderText(this.step.stepBody, this.props.problemID, this.step, this.props.seed)}
           </div>
 
           {this.state.showHints ?
@@ -174,6 +175,7 @@ class ProblemCard extends React.Component {
                 unlockHint={this.unlockHint}
                 hintStatus={this.state.hintsFinished}
                 submitHint={this.submitHint}
+                seed={this.props.seed}
               />
               <br /></div>
             : ""}

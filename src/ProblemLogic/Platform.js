@@ -11,6 +11,8 @@ import {
 import problemPool from '../ProblemPool/problemPool.js'
 import { ThemeContext, lessonPlans } from '../config/config.js';
 
+var seed = Date.now().toString();
+console.log("Generated seed");
 
 class Platform extends React.Component {
   static contextType = ThemeContext;
@@ -42,12 +44,14 @@ class Platform extends React.Component {
     if (this.props.lessonNum == null) {
       this.state = {
         currProblem: null,
-        status: "lessonSelection"
+        status: "lessonSelection",
+        seed: seed
       }
     } else {
       this.state = {
         currProblem: null,
-        status: "lessonSelection"
+        status: "lessonSelection",
+        seed: seed
       }
     }
   }
@@ -71,6 +75,8 @@ class Platform extends React.Component {
   }
 
   _nextProblem = (context) => {
+    seed = Date.now().toString();
+    this.setState({seed: seed});
     this.props.saveProgress();
     var chosenProblem = null;
 
@@ -144,7 +150,7 @@ class Platform extends React.Component {
         {this.state.status === "lessonSelection" ?
           <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} /> : ""}
         {this.state.status === "learning" ?
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}/> : ""}
+          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed}/> : ""}
         {this.state.status === "exhausted" ?
           <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
         {this.state.status === "graduated" ?

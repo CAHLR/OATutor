@@ -8,17 +8,20 @@ function randomInt(end) {
   return Math.floor(Math.random() * end);
 }
 
-function variabilize(text, variabilization) {
+function variabilize(text, variabilization, seed) {
   Object.keys(variabilization).forEach(v =>  {
-    var rand1 = gen.create("seed");
-    var numOptions = variabilization[v].length;
-    var replaceOption = variabilization[v][rand1(numOptions)];
-    text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
+    var rand1 = gen.create(seed);
+    var numOptions = variabilization[v].length - 1; // First element says variables
+    var replaceOption = variabilization[v][rand1(numOptions) + 1];
+    var variables = variabilization[v][0];
+    for (var i = 0; i < variabilization[v][0].length; i++) { // Replace each element of tuple
+      text = text.replace(new RegExp('@{' + variables[i] + '}', 'g'), replaceOption[i]);
+    }
   });
   return text;
 }
 
-export default function renderText(text, problemID, step) {
+export default function renderText(text, problemID, step, seed) {
   if (typeof text !== 'string') {
     return text;
   }
@@ -28,7 +31,7 @@ export default function renderText(text, problemID, step) {
     result = result.split(d).join(replace);
   }
   if (step) {
-    result = variabilize(text, step.variabilization);
+    result = variabilize(text, step.variabilization, seed);
   }
   
 

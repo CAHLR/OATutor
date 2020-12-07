@@ -10,8 +10,7 @@ const step = {
     answerType: "arithmetic", 
     hints: hints,
     variabilization: {
-        r: [1, 2, 3, 4, 5],
-        h: [6, 7, 8, 9, 10],
+        r_h: [['r', 'h'], [1,6], [2,7], [3,8], [4,9], [5,10]],
     }
 }; 
 
