@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./poly13a-index.js"; const step = {id: "poly13a", stepAnswer: ["6x^2+21xy-29x−7y+9"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(3x-1\right) \left(2x+7y-9\right)"/>.</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./poly13a-index.js"; const step = {id: "poly13a", stepAnswer: ["6x^2+21xy-29x−7y+9"], problemType: "TextBox", stepTitle: "(3x-1)(2x+7y-9).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

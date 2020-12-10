@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./abs5a-index.js"; const step = {id: "abs5a", stepAnswer: ["-2,4"], problemType: "TextBox", stepTitle: <div> Find the x-intercept of <InlineMath math="f x=2|x-1|-6"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain11-index.js"; const problem = {id: "domain11", title: "Writing a Piecewise Function", body: "A museum charges $5 per person for a guided tour with a group of 1 to 9 people or a fixed $50 fee for a group of 10 or more people.", steps: steps, }; export { problem };

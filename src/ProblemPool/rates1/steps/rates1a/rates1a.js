@@ -1,0 +1,1 @@
+import hints from "./rates1a-index.js"; const step = {id: "rates1a", stepAnswer: ["47"], problemType: "TextBox", stepTitle: "Find her average speed over the first 6 hours.", stepBody: "Ignore units when you write your answer.", answerType: "arithmetic", hints: hints}; export {step};

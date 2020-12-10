@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FunNota17-index.js"; const problem = {id: "FunNota17", title: "Evaluation the function f=sqrt(2-x)+5 at the indicated values", body: "", steps: steps, }; export { problem };

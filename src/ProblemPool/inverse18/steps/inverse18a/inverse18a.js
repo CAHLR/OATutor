@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./inverse18a-index.js"; const step = {id: "inverse18a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="f x=x^3-4"/> <InlineMath math="g x=\sqrt{3x+4}"/></div>, stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

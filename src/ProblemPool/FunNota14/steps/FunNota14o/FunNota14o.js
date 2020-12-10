@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FunNota14o-index.js"; const step = {id: "FunNota14o", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="y=\sqrt{1-x^2}"/></div>, stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

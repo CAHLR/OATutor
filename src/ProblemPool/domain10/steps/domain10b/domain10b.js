@@ -1,0 +1,1 @@
+import hints from "./domain10b-index.js"; const step = {id: "domain10b", stepAnswer: ["[0,inf)"], problemType: "TextBox", stepTitle: "Find the range written in interval notation.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

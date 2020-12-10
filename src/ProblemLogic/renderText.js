@@ -30,7 +30,7 @@ export default function renderText(text, problemID, step, seed) {
     var replace = dynamicText[d];
     result = result.split(d).join(replace);
   }
-  if (step) {
+  if (step && step.variabilization) {
     result = variabilize(text, step.variabilization, seed);
   }
   

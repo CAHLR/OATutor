@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./transformation23a-index.js"; const step = {id: "transformation23a", stepAnswer: ["never increases; decreasing on (-inf, 4)"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="a x=\sqrt{-x+4}"/></div>, stepBody: "", answerType: "string", hints: hints}; export {step};

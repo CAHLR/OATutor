@@ -1,0 +1,1 @@
+import hints from "./domain7b-index.js"; const step = {id: "domain7b", stepAnswer: ["$$180 \\leq b \\leq 2010$$"], problemType: "MultipleChoice", stepTitle: "Find the range.", stepBody: "", choices: ["$$1980 \\leq b \\leq 2000$$", "$$1973 \\leq b \\leq 2008$$", "$$180 \\leq b \\leq 2010$$", "$$0 \\leq b \\leq 2200$$"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./transformation5a-index.js"; const step = {id: "transformation5a", stepAnswer: ["Odd"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="h x=\frac{1}{x}+3x"/></div>, stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints}; export {step};

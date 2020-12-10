@@ -134,7 +134,7 @@ class Problem extends React.Component {
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.problemStepHeader}>
-                {this.props.problem.title}
+                {renderText(this.props.problem.title, this.props.problem.id)}
                 <hr />
               </h2>
               <div className={classes.problemStepBody}>

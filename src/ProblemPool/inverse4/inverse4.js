@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse4-index.js"; const problem = {id: "inverse4", title: "Inverse Functions", body: "Find the inverse form of the given function.", steps: steps, }; export { problem };

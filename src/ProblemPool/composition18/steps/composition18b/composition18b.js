@@ -1,0 +1,1 @@
+import hints from "./composition18b-index.js"; const step = {id: "composition18b", stepAnswer: ["2x^2-8x"], problemType: "TextBox", stepTitle: "f-g", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

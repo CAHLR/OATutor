@@ -1,0 +1,1 @@
+import hints from "./FunNota18b-index.js"; const step = {id: "FunNota18b", stepAnswer: ["11/12"], problemType: "TextBox", stepTitle: "f(2)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

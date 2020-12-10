@@ -1,0 +1,1 @@
+import hints from "./domain9b-index.js"; const step = {id: "domain9b", stepAnswer: ["$$-inf0 \\cup 0\\infty$$"], problemType: "MultipleChoice", stepTitle: "Find the range.", stepBody: "", choices: ["$$-infinf$$", "$$-inf0$$", "$$0\\infty$$", "$$-inf0 \\cup 0\\infty$$"], answerType: "string", hints: hints}; export {step};

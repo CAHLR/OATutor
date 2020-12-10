@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse8-index.js"; const problem = {id: "inverse8", title: "Intercepts", body: "Find the intercepts of the function f(x)=sqrt(x).", steps: steps, }; export { problem };

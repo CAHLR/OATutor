@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain5-index.js"; const problem = {id: "domain5", title: "Describing Sets on the Real-Number Line", body: "\n##figure1.gif##", steps: steps, }; export { problem };

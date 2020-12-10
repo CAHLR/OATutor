@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./transformation1-index.js"; const problem = {id: "transformation1", title: "Modeling Shifts", body: "", steps: steps, }; export { problem };

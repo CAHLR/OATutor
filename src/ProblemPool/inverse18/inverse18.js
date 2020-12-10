@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse18-index.js"; const problem = {id: "inverse18", title: "Testing Inverse Functions Algebraically", body: "Yes or No: Does g=f**(-1)?", steps: steps, }; export { problem };

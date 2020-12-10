@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./composition2-index.js"; const problem = {id: "composition2", title: "Decomposing a Function", body: "For the following exercise, find functions f(x) and g(x) so the given function can be expressed as h(x)=f(g(x)).", steps: steps, }; export { problem };

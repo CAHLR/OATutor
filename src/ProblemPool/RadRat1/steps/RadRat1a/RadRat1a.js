@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat1a-index.js"; const step = {id: "RadRat1a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="\operatorname{thesqrt}\left(100\right)"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RadRat1a-index.js"; const step = {id: "RadRat1a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "What is the sqrt(100)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

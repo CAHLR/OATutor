@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat17a-index.js"; const step = {id: "RadRat17a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="{343}^{\frac{2}{3}}"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RadRat17a-index.js"; const step = {id: "RadRat17a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "What is 343**(2/3)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

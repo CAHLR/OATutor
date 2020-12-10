@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain10-index.js"; const problem = {id: "domain10", title: "Finding the Domain and Range", body: "Find the domain and range of the function f(x)=2*sqrt(x+4).", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./reg2-index.js"; const problem = {id: "reg2", title: "Correlation Coefficient", body: "", steps: steps, }; export { problem };

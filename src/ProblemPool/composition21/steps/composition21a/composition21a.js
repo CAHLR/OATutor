@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./composition21a-index.js"; const step = {id: "composition21a", stepAnswer: ["((sqrt(x))(abs(x-3)))/x"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{g}{f}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -93,6 +93,9 @@ class Platform extends React.Component {
             isRelevant = true;
           }
           // Multiply all the mastery priors
+          if (!(kc in context.bktParams)) {
+            console.log("Missing BKT parameter: " + kc);
+          }
           probMastery *= context.bktParams[kc].probMastery;
         }
       }
