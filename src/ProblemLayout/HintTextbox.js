@@ -36,6 +36,10 @@ class HintTextbox extends React.Component {
     }, () => parsed);
   }
 
+  editInput = (event) => {
+    this.setState({ inputVal: event.target.value });
+  }
+
   render() {
     const { classes } = this.props;
     return (

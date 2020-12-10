@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real5a-index.js"; const step = {id: "real5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="{\left(3\times2\right)}^2-4\left(6+2\right)"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real5a-index.js"; const step = {id: "real5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is (3*2)**2-4(6+2)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

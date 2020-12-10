@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FunNota4-index.js"; const problem = {id: "FunNota4", title: "Using Function Notation for Days in a Month", body: "", steps: steps, }; export { problem };

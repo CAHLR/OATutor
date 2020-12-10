@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real6a-index.js"; const step = {id: "real6a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="4\left(12+-7\right)"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real6a-index.js"; const step = {id: "real6a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "What is 4(12+(-7))?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

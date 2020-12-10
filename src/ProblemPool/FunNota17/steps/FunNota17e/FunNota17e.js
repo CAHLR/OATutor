@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FunNota17e-index.js"; const step = {id: "FunNota17e", stepAnswer: ["sqrt(2-a-h)+5"], problemType: "TextBox", stepTitle: <div> <InlineMath math="f \left(a+h\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

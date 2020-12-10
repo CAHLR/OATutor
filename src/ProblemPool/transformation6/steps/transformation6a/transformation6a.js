@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./transformation6a-index.js"; const step = {id: "transformation6a", stepAnswer: ["Even"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="f x={\left(x-2\right)}^2"/></div>, stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints}; export {step};

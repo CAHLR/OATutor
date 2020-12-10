@@ -1,0 +1,1 @@
+var hints = [{id: "abs17b-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 0 for x."}, {id: "abs17b-h2", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["7"], dependencies: ["abs17b-h1"], title: "Solve the Equation", text: "What do we get for y after solving y=2*abs(3)+1?"}, ]; export {hints};

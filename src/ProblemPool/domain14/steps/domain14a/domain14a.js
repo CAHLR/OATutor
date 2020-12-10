@@ -1,0 +1,1 @@
+import hints from "./domain14a-index.js"; const step = {id: "domain14a", stepAnswer: ["all real numbers"], problemType: "MultipleChoice", stepTitle: "Find the domain of the function:f(x)=5-x+x**3.", stepBody: "", choices: ["$$x \\geq 0$$", "$$x<0$$", "$$x<5$$ and $$x>5$$", "all real numbers"], answerType: "string", hints: hints}; export {step};

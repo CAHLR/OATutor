@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./IterIndex8-index.js"; const problem = {id: "IterIndex8", title: "Finding Even Numbers", body: "Create an array called 'evens' of the even numbers from 1-20", steps: steps, }; export { problem };

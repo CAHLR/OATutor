@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./cond9c-index.js"; const step = {id: "cond9c", stepAnswer: ["2/7"], problemType: "TextBox", stepTitle: <div> What is P(B$$<InlineMath math="\mid"/>$$C) Enter your answer as a fraction</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

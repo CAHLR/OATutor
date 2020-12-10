@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./cond9-index.js"; const problem = {id: "cond9", title: "Rolling Two Fair Dice", body: "You roll two 6-sided dice. Consider the following events: A = 'first die is 3', B = 'sum is 7', C = 'sum is greater than or equal to 7'", steps: steps, }; export { problem };

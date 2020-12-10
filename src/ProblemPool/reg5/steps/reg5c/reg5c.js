@@ -1,0 +1,1 @@
+import hints from "./reg5c-index.js"; const step = {id: "reg5c", stepAnswer: ["Y-intercept"], problemType: "TextBox", stepTitle: "", stepBody: "What is b?", answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./FunNota14h-index.js"; const step = {id: "FunNota14h", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "x=(3y+1)/(7y - 1)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

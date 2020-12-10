@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rates2-index.js"; const problem = {id: "rates2", title: "Computing Average Rate of Change for a Function Expressed as a Formula", body: "", steps: steps, }; export { problem };

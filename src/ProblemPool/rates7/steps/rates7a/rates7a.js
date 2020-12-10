@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rates7a-index.js"; const step = {id: "rates7a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: <div> What is the y value of the <InlineMath math="absolute"/> maximum?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

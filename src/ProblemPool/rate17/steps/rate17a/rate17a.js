@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rate17a-index.js"; const step = {id: "rate17a", stepAnswer: ["-0.167"], problemType: "TextBox", stepTitle: <div> <InlineMath math="p t=\frac{\left(t^2-4\right) \left(t+1\right)}{t^2+3}"/> on [-3,1]</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

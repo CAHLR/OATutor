@@ -1,0 +1,1 @@
+import hints from "./domain18b-index.js"; const step = {id: "domain18b", stepAnswer: ["(-inf,0]"], problemType: "MultipleChoice", stepTitle: "Find the range of f(x)=-sqrt(2-x).", stepBody: "", choices: ["(-inf,0]", "[0,inf)", "(-inf,2]", "$$-infinf$$"], answerType: "string", hints: hints}; export {step};

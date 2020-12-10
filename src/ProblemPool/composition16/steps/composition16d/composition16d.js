@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./composition16d-index.js"; const step = {id: "composition16d", stepAnswer: ["(x^2+2x)/(6-x^2)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{f}{g}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

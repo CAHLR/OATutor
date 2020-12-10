@@ -1,0 +1,1 @@
+import hints from "./domain7a-index.js"; const step = {id: "domain7a", stepAnswer: ["$$1973 \\leq t \\leq 2008$$"], problemType: "MultipleChoice", stepTitle: "Find the domain.", stepBody: "", choices: ["$$1980 \\leq t \\leq 2000$$", "$$1973 \\leq t \\leq 2008$$", "$$180 \\leq t \\leq 2010$$", "$$0 \\leq t \\leq 2200$$"], answerType: "string", hints: hints}; export {step};

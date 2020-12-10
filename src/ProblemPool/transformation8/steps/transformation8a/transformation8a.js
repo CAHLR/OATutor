@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./transformation8a-index.js"; const step = {id: "transformation8a", stepAnswer: ["Odd"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="h x=2x-x^3"/></div>, stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints}; export {step};

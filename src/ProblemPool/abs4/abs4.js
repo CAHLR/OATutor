@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./abs4-index.js"; const problem = {id: "abs4", title: "Finding the Intercepts of an Absolute Value Function", body: "Find the x- and y-intercepts of the given function.", steps: steps, }; export { problem };

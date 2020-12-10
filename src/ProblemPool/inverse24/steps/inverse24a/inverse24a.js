@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./inverse24a-index.js"; const step = {id: "inverse24a", stepAnswer: ["3-x"], problemType: "TextBox", stepTitle: <div> <InlineMath math="f x=3-x"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

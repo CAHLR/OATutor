@@ -1,0 +1,1 @@
+import hints from "./composition22b-index.js"; const step = {id: "composition22b", stepAnswer: ["(6x^2)-2"], problemType: "TextBox", stepTitle: "g(f(x))", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

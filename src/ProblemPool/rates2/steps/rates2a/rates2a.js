@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./rates2a-index.js"; const step = {id: "rates2a", stepAnswer: ["49/8"], problemType: "TextBox", stepTitle: <div> Compute the average rate of change of <InlineMath math="f x=x^2-\frac{1}{x}"/> on the interval[2,4].</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

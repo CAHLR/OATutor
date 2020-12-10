@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain28-index.js"; const problem = {id: "domain28", title: "Find the domain of the function using interval notation.", body: "", steps: steps, }; export { problem };

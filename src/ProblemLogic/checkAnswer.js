@@ -17,7 +17,12 @@ function variabilize(text, variabilization, seed) {
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
-  return actual.some((stepAns) => (attempt === stepAns));
+  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+  return actual.some((stepAns) => {
+    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+    console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
+    return (parsedAttempt === parsedStepAns)
+  });
 }
 
 // attempt = student answer, actual = [ans1, ans2]
@@ -38,7 +43,9 @@ function round(num, precision) {
 
 function checkAnswer(attempt, actual, answerType, precision, variabilization, seed) {
   var parsed = attempt.replace(/\s+/g, '');
-  actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));
+  if (seed && variabilization) {
+    actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));
+  }
   console.log(actual);
   var correctAnswer = false;
 

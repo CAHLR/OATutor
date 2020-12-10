@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./composition19-index.js"; const problem = {id: "composition19", title: "Composition of Rational Functions", body: "Given f(x)=1/(x-4) and g(x)=1/(6-x), find the following.", steps: steps, }; export { problem };
