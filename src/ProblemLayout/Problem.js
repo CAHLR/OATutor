@@ -14,6 +14,8 @@ import TextField from '@material-ui/core/TextField';
 
 import { ThemeContext } from '../config/config.js';
 
+
+
 class Problem extends React.Component {
   static contextType = ThemeContext;
 
@@ -47,7 +49,7 @@ class Problem extends React.Component {
 
   updateCanvas = (name, mastery, components) => {
     console.log(name, mastery);
-    fetch('http://169.229.192.135:1339/grade', {
+    fetch(this.context.middlewareURL + '/grade', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

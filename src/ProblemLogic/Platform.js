@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import problemPool from '../ProblemPool/problemPool.js'
-import { ThemeContext, lessonPlans } from '../config/config.js';
+import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 
 var seed = Date.now().toString();
 console.log("Generated seed");
@@ -19,8 +19,8 @@ class Platform extends React.Component {
 
   constructor(props, context) {
     super(props);
-    if (this.props.location.search.startsWith('?name=')) {
-      var name = this.props.location.search.replace('?name=', '')
+    if (this.props.location.search.startsWith('?lis_person_name_full=')) {
+      var name = this.props.location.search.replace('?lis_person_name_full=', '')
       context.studentName = name;
       console.log(context.studentName);
     }
@@ -44,13 +44,13 @@ class Platform extends React.Component {
     if (this.props.lessonNum == null) {
       this.state = {
         currProblem: null,
-        status: "lessonSelection",
+        status: "courseSelection",
         seed: seed
       }
     } else {
       this.state = {
         currProblem: null,
-        status: "lessonSelection",
+        status: "courseSelection",
         seed: seed
       }
     }
@@ -60,6 +60,8 @@ class Platform extends React.Component {
     if (this.props.lessonNum != null) {
       this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]);
       console.log("loaded lesson "+ this.props.lessonNum);
+    } else if (this.props.courseNum != null) {
+      this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
     }
   }
 
@@ -72,6 +74,14 @@ class Platform extends React.Component {
       console.log(this.state.currProblem);
       console.log(this.lesson);
     });
+  }
+
+  selectCourse = (course, context) => {
+    this.course = course;
+    this.setState({
+      status: "lessonSelection",
+    });
+    console.log(course);
   }
 
   _nextProblem = (context) => {
@@ -150,8 +160,10 @@ class Platform extends React.Component {
 
           </Toolbar>
         </AppBar>
+        {this.state.status === "courseSelection" ?
+          <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse} removeProgress={this.props.removeProgress}/> : ""}
         {this.state.status === "lessonSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} /> : ""}
+          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} courseNum={this.props.courseNum}/> : ""}
         {this.state.status === "learning" ?
           <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed}/> : ""}
         {this.state.status === "exhausted" ?

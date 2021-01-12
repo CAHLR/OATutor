@@ -29,15 +29,14 @@ import {
   debug,
   useBottomOutHints,
   autoCommands,
-  autoOperatorNames
+  autoOperatorNames,
+  middlewareURL
 } from './config/config.js';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();
-
-//const PlatformLesson = ({ match }) => <ParkDetails lessonName={match.params.lessonName} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress}/>;
 
 class App extends React.Component {
   constructor() {
@@ -113,12 +112,16 @@ class App extends React.Component {
           autoCommands: autoCommands,
           autoOperatorNames: autoOperatorNames,
           studentName: '',
+          middlewareURL: middlewareURL
         }}>
           <Router>
             <div className="Router">
               <Switch>
                 <Route exact path="/" render={(props) => (
                   <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} {...props}/>
+                )} />
+                <Route path="/courses/:courseNum" render={(props) => (
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} courseNum={props.match.params.courseNum} {...props}/>
                 )} />
                 <Route path="/lessons/:lessonNum" render={(props) => (
                   <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props}/>
