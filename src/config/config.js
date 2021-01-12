@@ -1,5 +1,6 @@
 import React from 'react';
-import lessonPlans from './lessonPlans.js'
+//import lessonPlans from './lessonPlans.js'
+import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
 const siteVersion = 0.2;
@@ -21,6 +22,22 @@ const GRANULARITY = 5;
 const autoCommands = "pi theta sqrt sum prod alpha beta gamma rho";
 const autoOperatorNames = "sin cos tan";
 
+const middlewareURL = "http://169.229.192.135:1339";
+
+var coursePlans = courses.sort((a,b) => a.courseName.localeCompare(b.courseName));
+console.log(coursePlans);
+
+var lessonCounter = 0;
+var lessonPlans = [];
+for (var i = 0; i < coursePlans.length; i++) {
+    var course = coursePlans[i];
+    for (var j = 0; j < course.classes.length; j++) {
+        course.classes[j].lessonNum = lessonCounter;
+        lessonCounter += 1;
+        lessonPlans.push(course.classes[j]);
+    }
+}
+
 export {ThemeContext, 
     siteVersion,
     logData,
@@ -30,8 +47,10 @@ export {ThemeContext,
     debug,
     useBottomOutHints,
     lessonPlans,
+    coursePlans,
     MAX_BUFFER_SIZE,
     GRANULARITY,
     autoCommands,
-    autoOperatorNames
+    autoOperatorNames,
+    middlewareURL
 };
