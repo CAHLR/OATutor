@@ -31,10 +31,10 @@ var lessonCounter = 0;
 var lessonPlans = [];
 for (var i = 0; i < coursePlans.length; i++) {
     var course = coursePlans[i];
-    for (var j = 0; j < course.classes.length; j++) {
-        course.classes[j].lessonNum = lessonCounter;
+    for (var j = 0; j < course.lessons.length; j++) {
+        course.lessons[j].lessonNum = lessonCounter;
         lessonCounter += 1;
-        lessonPlans.push(course.classes[j]);
+        lessonPlans.push(course.lessons[j]);
     }
 }
 
