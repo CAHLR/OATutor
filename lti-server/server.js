@@ -62,7 +62,7 @@ app.post('/auth', function (req, res) {
   provider.valid_request(req, (err, is_valid) => {
     if (!is_valid || !provider.outcome_service) console.log(false);
   });
-  providers[req.body.lis_person_name_full] = provider;
+  providers[encodeURI(req.body.lis_person_name_full)] = provider;
   
   var lessonNum = lessonMapping[req.body.custom_canvas_assignment_title];
   if (lessonNum == null) {
