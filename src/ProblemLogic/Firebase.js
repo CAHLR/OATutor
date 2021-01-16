@@ -2,6 +2,9 @@ import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
+var problemSubmissionsOutput = "problemSubmissions";
+var feedbackOutput = "feedback";
+
 class Firebase {
 
   constructor(id, credentials, treatment, siteVersion) {
@@ -71,7 +74,8 @@ class Firebase {
       hintsFinished: hintsFinished,
       canvasStudentID: canvasStudentID
     }
-    return this.writeData("problemSubmissions", date, data);
+    console.log(data);
+    return this.writeData(problemSubmissionsOutput, date, data);
   }
 
   hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, canvasStudentID) {
@@ -95,7 +99,7 @@ class Firebase {
       canvasStudentID: canvasStudentID
     }
     console.log(data);
-    return this.writeData("problemSubmissions", date, data);
+    return this.writeData(problemSubmissionsOutput, date, data);
   }
 
   mouseLog(payload) {
@@ -142,7 +146,7 @@ class Firebase {
       feedback: feedback,
       canvasStudentID: canvasStudentID
     }
-    return this.writeData("feedback", date, data);
+    return this.writeData(feedbackOutput, date, data);
   }
 
 }
