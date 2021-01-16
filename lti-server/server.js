@@ -1,7 +1,7 @@
-var redirect = 'http://169.229.192.135:1337/#/';
-var self_url = 'http://169.229.192.135:1339/';
+var redirect = 'http://169.229.192.135:1377/#/';
+var self_url = 'http://169.229.192.135:1379/';
 //var redirect = 'https://cahlr.github.io/OpenITS';
-var port = process.env.PORT || 1339; //sets local server port to 1339
+var port = process.env.PORT || 1379; //sets local server port to 1379
 var express = require('express'); // Express web server framework
 var https = require("https");
 var request = require('request');
