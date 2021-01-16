@@ -20,15 +20,15 @@ function _equality(attempt, actual) {
   var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
   return actual.some((stepAns) => {
     var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
-    console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
+    //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
     return (parsedAttempt === parsedStepAns)
   });
 }
 
 // attempt = student answer, actual = [ans1, ans2]
 function _parseEquality(attempt, actual) {
-  console.log("PARSED: " + attempt.print());
-  console.log("ANSWER: " + actual[0].print());
+  //console.log("PARSED: " + attempt.print());
+  //console.log("ANSWER: " + actual[0].print());
   return actual.some((stepAns) => KAS.compare(attempt, stepAns).equal);
 }
 
@@ -46,7 +46,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization, se
   if (seed && variabilization) {
     actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));
   }
-  console.log(actual);
+  //console.log(actual);
   var correctAnswer = false;
 
   try {
@@ -58,8 +58,8 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization, se
       return [parsed.print(), correctAnswer];
     } else if (answerType === "string") {
       parsed = attempt;
-      console.log(parsed);
-      console.log(actual);
+      //console.log(parsed);
+      //console.log(actual);
       correctAnswer = _equality(parsed, actual);
     } else {
       parsed = +attempt;
