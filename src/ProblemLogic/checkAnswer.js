@@ -55,6 +55,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization, se
     } else if (answerType === "arithmetic") {
       parsed = KAS.parse(attempt).expr;
       correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
+      return [parsed.print(), correctAnswer];
     } else if (answerType === "string") {
       parsed = attempt;
       console.log(parsed);

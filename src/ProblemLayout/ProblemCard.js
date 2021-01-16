@@ -148,7 +148,7 @@ class ProblemCard extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
     }
   }
 
