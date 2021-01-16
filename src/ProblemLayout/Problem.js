@@ -117,7 +117,7 @@ class Problem extends React.Component {
 
   submitFeedback = () => {
     console.log(this.state.feedback);
-    this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished);
+    this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished, this.context.studentName);
     this.setState({ feedback: "", feedbackSubmitted: true });
   }
 

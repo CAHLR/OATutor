@@ -42,7 +42,7 @@ app.get('/auth', function (req, res) {
 
 // Invalid lesson
 app.get('/invalid_lesson_num', function (req, res) {
-  console.log("Invalid lesson num");
+  console.log("\nInvalid lesson num");
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   res.send("Invalid lesson ID. Please contact your teacher or the OpenITS development team to fix this error.");
@@ -52,7 +52,7 @@ app.post('/auth', function (req, res) {
   /*
   Takes in an LTI post request
   */
-  console.log("Auth post");
+  console.log("\nAuth post");
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log("Name: " + req.body.lis_person_name_full);
@@ -95,7 +95,7 @@ app.post('/grade', function (req, res) {
   :param lis_person_name_full: Name, must match from the LTI request
   :param score: Float from range [0, 1]
   */
-  console.log("Grade post");
+  console.log("\nGrade post");
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
@@ -104,6 +104,7 @@ app.post('/grade', function (req, res) {
     console.log("Invalid session detected.");
     console.log("Provider ID: " + req.body.lis_person_name_full + "_lesson" + req.body.lessonNum);
     res.send("Invalid session, likely due to the user sending a score for a lesson not authenticated for.");
+    return;
   }
   var payload = "<h1> Component Breakdown </h1> <br/>";
   payload += "<h3> Overall score: " + req.body.score + "</h3>"

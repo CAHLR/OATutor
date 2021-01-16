@@ -51,7 +51,7 @@ class Firebase {
       (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
   }
 
-  log(inputVal, problemID, step, isCorrect, hintsFinished, eventType) {
+  log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, canvasStudentID) {
     var date = this.getDate();
     var data = {
       timeStamp: date,
@@ -68,12 +68,13 @@ class Firebase {
       hintAnswer: null,
       hintIsCorrect: null,
       treatment: this.treatment,
-      hintsFinished: hintsFinished
+      hintsFinished: hintsFinished,
+      canvasStudentID: canvasStudentID
     }
     return this.writeData("problemSubmissions", date, data);
   }
 
-  hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished) {
+  hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, canvasStudentID) {
     var date = this.getDate();
     var data = {
       timeStamp: date,
@@ -90,7 +91,8 @@ class Firebase {
       hintAnswer: hint.hintAnswer,
       hintIsCorrect: isCorrect,
       treatment: this.treatment,
-      hintsFinished: hintsFinished
+      hintsFinished: hintsFinished,
+      canvasStudentID: canvasStudentID
     }
     console.log(data);
     return this.writeData("problemSubmissions", date, data);
@@ -128,7 +130,7 @@ class Firebase {
     return this.writeData("mouseMovement", date, data);
   }
 
-  submitFeedback(problemID, feedback, problemFinished) {
+  submitFeedback(problemID, feedback, problemFinished, canvasStudentID) {
     var date = this.getDate();
     var data = {
       timeStamp: date,
@@ -137,7 +139,8 @@ class Firebase {
       problemID: problemID,
       treatment: this.treatment,
       problemFinished: problemFinished,
-      feedback: feedback
+      feedback: feedback,
+      canvasStudentID: canvasStudentID
     }
     return this.writeData("feedback", date, data);
   }

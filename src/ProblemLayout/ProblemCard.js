@@ -90,7 +90,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
 
     if (this.context.logData) {
-      this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep");
+      this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
     }
 
     this.setState({
@@ -133,7 +133,7 @@ class ProblemCard extends React.Component {
         return { hintsFinished: prevState.hintsFinished }
       }, () => {
         if (this.context.logData) {
-          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint");
+          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", this.context.studentName);
         }
       });
     }
