@@ -55,8 +55,8 @@ app.post('/auth', function (req, res) {
   console.log("Auth post");
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  console.log("Name:" + req.body.lis_person_name_full);
-  console.log("Assignment:" + req.body.custom_canvas_assignment_title);
+  console.log("Name: " + req.body.lis_person_name_full);
+  console.log("Assignment: " + req.body.custom_canvas_assignment_title);
 
   var lessonNum = lessonMapping[req.body.custom_canvas_assignment_title];
   var provider = new lti.Provider('openits-key', secret);
@@ -100,6 +100,11 @@ app.post('/grade', function (req, res) {
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
   var provider = providers[req.body.lis_person_name_full + "_lesson" + req.body.lessonNum];
+  if (provider == null) {
+    console.log("Invalid session detected.");
+    console.log("Provider ID: " + req.body.lis_person_name_full + "_lesson" + req.body.lessonNum);
+    res.send("Invalid session, likely due to the user sending a score for a lesson not authenticated for.");
+  }
   var payload = "<h1> Component Breakdown </h1> <br/>";
   payload += "<h3> Overall score: " + req.body.score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
