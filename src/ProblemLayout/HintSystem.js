@@ -66,7 +66,7 @@ class HintSystem extends React.Component {
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
-        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint");
+        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", this.context.studentName);
       }
     });
   }
