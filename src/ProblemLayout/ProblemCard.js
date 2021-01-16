@@ -25,7 +25,7 @@ class ProblemCard extends React.Component {
 
   constructor(props, context) {
     super(props);
-    console.log("Reconstructing");
+    //console.log("Reconstructing");
     this.step = props.step;
     this.index = props.index;
     this.hints = this.step.hints[context.hintPathway];

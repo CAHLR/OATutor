@@ -25,7 +25,6 @@ const autoOperatorNames = "sin cos tan";
 const middlewareURL = "http://169.229.192.135:1379";
 
 var coursePlans = courses.sort((a,b) => a.courseName.localeCompare(b.courseName));
-console.log(coursePlans);
 
 var lessonCounter = 0;
 var lessonPlans = [];

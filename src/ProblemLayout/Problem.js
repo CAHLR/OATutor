@@ -48,7 +48,7 @@ class Problem extends React.Component {
   }
 
   updateCanvas = (name, mastery, components, lessonNum) => {
-    console.log(name, mastery);
+    //console.log(name, mastery);
     fetch(this.context.middlewareURL + '/grade', {
       method: 'POST',
       headers: {
@@ -68,18 +68,18 @@ class Problem extends React.Component {
 
     if (this.stepStates[cardIndex] === null) {
       for (var kc of kcArray) {
-        console.log(kc);
+        //console.log(kc);
         update(this.bktParams[kc], isCorrect);
-        console.log(this.bktParams[kc].probMastery);
+        //console.log(this.bktParams[kc].probMastery);
       }
     }
-    console.log(this.props.lesson);
+    //console.log(this.props.lesson);
     var objectives = Object.keys(this.props.lesson.learningObjectives);
     objectives.unshift(0);
     var score = objectives.reduce((x,y) => {
       return x + this.bktParams[y].probMastery});
     score /= objectives.length - 1;
-    console.log(this.context.studentName + " " + score);
+    //console.log(this.context.studentName + " " + score);
 
     var relevantKc = {}
     Object.keys(this.props.lesson.learningObjectives).map(x => {
@@ -116,7 +116,7 @@ class Problem extends React.Component {
   }
 
   submitFeedback = () => {
-    console.log(this.state.feedback);
+    //console.log(this.state.feedback);
     this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished, this.context.studentName);
     this.setState({ feedback: "", feedbackSubmitted: true });
   }

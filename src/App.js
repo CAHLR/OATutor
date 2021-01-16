@@ -76,8 +76,8 @@ class App extends React.Component {
     for (const [skill, stats] of Object.entries(this.bktParams)) {
       progress[skill] = Math.round(stats.probMastery * 100) / 100;
     }
-    console.log("Saving:");
-    console.log(progress);
+    //console.log("Saving:");
+    //console.log(progress);
     cookies.set("openITS-progress", progress, { path: "/", expires: d });
   }
 
@@ -90,8 +90,8 @@ class App extends React.Component {
     for (const [skill, stats] of Object.entries(this.bktParams)) {
       stats.probMastery = progress[skill];
     }
-    console.log("Successfully loaded progress:");
-    console.log(progress);
+    //console.log("Successfully loaded progress:");
+    //console.log(progress);
   }
 
   render() {
