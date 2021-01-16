@@ -14,8 +14,26 @@ var secret = 'openits-secret';
 // Key: Canvas assignment
 // Value: Lesson ID from OpenITS
 var lessonMapping = {
-  "OpenITS Lesson 1": "2",
-  "OpenITS Lesson 4": "5"
+  "Openstax Lesson 1.1": "2",
+  "Openstax Lesson 1.2": "2",
+  "Openstax Lesson 1.3": "3",
+  "Openstax Lesson 1.4": "4",
+  "Openstax Lesson 1.5": "5",
+  "Openstax Lesson 1.6": "6",
+  "Openstax Lesson 2.1": "7",
+  "Openstax Lesson 2.2": "8",
+  "Openstax Lesson 2.3": "9",
+  "Openstax Lesson 2.4": "10",
+  "Openstax Lesson 2.5": "11",
+  "Openstax Lesson 2.6": "12",
+  "Openstax Lesson 2.7": "13",
+  "Openstax Lesson 3.1": "14",
+  "Openstax Lesson 3.2": "15",
+  "Openstax Lesson 3.3": "16",
+  "Openstax Lesson 3.4": "17",
+  "Openstax Lesson 3.5": "18",
+  "Openstax Lesson 3.6": "19",
+  "Openstax Lesson 3.7": "20",
 }
 
 var app = express();
