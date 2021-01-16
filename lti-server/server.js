@@ -58,13 +58,14 @@ app.post('/auth', function (req, res) {
   console.log("Name:" + req.body.lis_person_name_full);
   console.log("Assignment:" + req.body.custom_canvas_assignment_title);
 
+  var lessonNum = lessonMapping[req.body.custom_canvas_assignment_title];
   var provider = new lti.Provider('openits-key', secret);
   provider.valid_request(req, (err, is_valid) => {
     if (!is_valid || !provider.outcome_service) console.log(false);
   });
-  providers[encodeURI(req.body.lis_person_name_full)] = provider;
+  providers[encodeURI(req.body.lis_person_name_full + "_lesson" + lessonNum)] = provider;
   
-  var lessonNum = lessonMapping[req.body.custom_canvas_assignment_title];
+  
   if (lessonNum == null) {
     console.log("Lesson: " + req.body.custom_canvas_assignment_title);
     res.writeHead(301,
@@ -98,7 +99,7 @@ app.post('/grade', function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   console.log(req.body);
-  var provider = providers[req.body.lis_person_name_full];
+  var provider = providers[req.body.lis_person_name_full + "_lesson" + req.body.lessonNum];
   var payload = "<h1> Component Breakdown </h1> <br/>";
   payload += "<h3> Overall score: " + req.body.score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
