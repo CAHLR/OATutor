@@ -95,7 +95,7 @@ var courses =  [{
     }
     },
 ]},
-{courseName: "Openstax (Ch. 1-3)",
+{courseName: "College Algebra (Ch. 1-3)",
 lessons: [
     {
     "id":"lesson1.1",
