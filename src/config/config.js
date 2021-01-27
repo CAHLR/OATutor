@@ -22,7 +22,7 @@ const GRANULARITY = 5;
 const autoCommands = "pi theta sqrt sum prod alpha beta gamma rho";
 const autoOperatorNames = "sin cos tan";
 
-const middlewareURL = "http://169.229.192.135:1379";
+const middlewareURL = "https://askoski.berkeley.edu:1339";
 
 var coursePlans = courses.sort((a,b) => a.courseName.localeCompare(b.courseName));
 
