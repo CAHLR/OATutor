@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul19a-index.js"; const step = {id: "DivMul19a", stepAnswer: ["-4/7"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(18\right)-\left(22\right)=\left(12\right) x-x-\left(4\right) x"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

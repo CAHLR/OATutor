@@ -1,0 +1,1 @@
+var hints = [{id: "Multiply11a-h1", type: "hint", dependencies: [], title: "Translating into math expression", text: "The phrase translates into 13-(-21)."}, {id: "Multiply11a-h2", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["34"], dependencies: ["Multiply11a-h1"], title: "Simplify", text: "What is 13-(-21)?"}, ]; export {hints};

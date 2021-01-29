@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./other22-index.js"; const problem = {id: "other22", title: "Solving Absolute Value Equations", body: "Solve the following equation for x.", steps: steps, }; export { problem };

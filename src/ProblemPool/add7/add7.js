@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./add7-index.js"; const problem = {id: "add7", title: "Simplifying Expressions with Integers", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./SubAdd6a-index.js"; const step = {id: "SubAdd6a", stepAnswer: ["-46"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x+\left(19\right)=-\left(27\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

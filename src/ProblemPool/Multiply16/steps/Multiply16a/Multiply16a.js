@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Multiply16a-index.js"; const step = {id: "Multiply16a", stepAnswer: ["-32"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-\left(4\right) \left(8\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

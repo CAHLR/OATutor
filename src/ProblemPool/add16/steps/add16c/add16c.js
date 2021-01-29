@@ -1,0 +1,1 @@
+import hints from "./add16c-index.js"; const step = {id: "add16c", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "-1___-4", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints}; export {step};

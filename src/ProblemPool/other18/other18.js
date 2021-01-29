@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./other18-index.js"; const problem = {id: "other18", title: "Solving a Radical Equation Containing Two Radicals", body: "Solve the following equation for x.", steps: steps, }; export { problem };

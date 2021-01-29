@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./GenStr23-index.js"; const problem = {id: "GenStr23", title: "Solve the Equation", body: "", steps: steps, }; export { problem };

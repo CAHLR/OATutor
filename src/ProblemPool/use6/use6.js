@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./use6-index.js"; const problem = {id: "use6", title: "Identifying Terms", body: "", steps: steps, }; export { problem };

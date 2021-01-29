@@ -1,0 +1,1 @@
+import hints from "./decimals20c-index.js"; const step = {id: "decimals20c", stepAnswer: ["0.357"], problemType: "TextBox", stepTitle: "0.357", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

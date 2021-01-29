@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Multiply19a-index.js"; const step = {id: "Multiply19a", stepAnswer: ["-47"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(5\right) -\left(6\right)+\left(7\right) -\left(2\right)-\left(3\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

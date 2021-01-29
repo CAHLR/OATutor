@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Formula19a-index.js"; const step = {id: "Formula19a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: <div> Solve for r when <InlineMath math="d=204"/> and <InlineMath math="t=3"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

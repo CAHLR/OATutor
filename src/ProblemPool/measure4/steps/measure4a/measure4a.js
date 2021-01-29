@@ -1,0 +1,1 @@
+import hints from "./measure4a-index.js"; const step = {id: "measure4a", stepAnswer: ["128"], problemType: "TextBox", stepTitle: "How many ounces are in 1 gallon?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

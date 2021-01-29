@@ -1,0 +1,1 @@
+var hints = [{id: "Formula31a-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate L, we can divide both sides of the equation by WH, which gives us L=V/WH."}, ]; export {hints};

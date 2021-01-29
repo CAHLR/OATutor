@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Visualize14-index.js"; const problem = {id: "Visualize14", title: "Find the quotient:", body: "", steps: steps, }; export { problem };

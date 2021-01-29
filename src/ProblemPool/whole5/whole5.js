@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./whole5-index.js"; const problem = {id: "whole5", title: "Rounding Whole Numbers", body: "", steps: steps, }; export { problem };

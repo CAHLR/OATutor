@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula19-index.js"; const problem = {id: "Formula19", title: "Solve a Formula for a Specific Variable", body: "In the following exercises, use the formula d=rt.", steps: steps, }; export { problem };

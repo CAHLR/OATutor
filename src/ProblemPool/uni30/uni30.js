@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./uni30-index.js"; const problem = {id: "uni30", title: "Solve Uniform Motion Applications", body: "", steps: steps, }; export { problem };

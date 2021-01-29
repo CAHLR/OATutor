@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Properties23a-index.js"; const step = {id: "Properties23a", stepAnswer: ["2020-08-23 00:00:00"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{7}{15} \frac{8}{23} \frac{15}{7}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

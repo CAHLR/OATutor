@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./probsolve28-index.js"; const problem = {id: "probsolve28", title: "Solve Number Problems", body: "", steps: steps, }; export { problem };

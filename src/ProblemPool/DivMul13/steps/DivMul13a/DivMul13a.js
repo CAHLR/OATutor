@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul13a-index.js"; const step = {id: "DivMul13a", stepAnswer: ["-2/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{8}{15}=-\left(\frac{4}{5}\right) x"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

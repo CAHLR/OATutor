@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Visualize5a-index.js"; const step = {id: "Visualize5a", stepAnswer: ["x/y"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{\left(5\right) x}{\left(5\right) y}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

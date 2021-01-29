@@ -1,0 +1,1 @@
+var hints = [{id: "Properties10a-h1", type: "hint", dependencies: [], title: "Multiplication by zero", text: "Recall that for any real number a, $$a \\left(0\\right)=0$$ $$\\left(0\\right) a=0$$"}, {id: "Properties10a-h2", type: "hint", dependencies: ["Properties10a-h1"], title: "Answer", text: "Therefore, $$-\\left(3.14\\right) \\left(0\\right)=0$$"}, ]; export {hints};

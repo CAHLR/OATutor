@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./addand10a-index.js"; const step = {id: "addand10a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{\frac{1}{2}+\frac{2}{3}}{\frac{3}{4}-\frac{1}{6}}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./decimals9-index.js"; const problem = {id: "decimals9", title: "How to Write Decimals", body: "", steps: steps, }; export { problem };

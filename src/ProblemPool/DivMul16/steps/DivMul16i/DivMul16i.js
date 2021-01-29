@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul16i-index.js"; const step = {id: "DivMul16i", stepAnswer: ["-144"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{y}{9}=-\left(16\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

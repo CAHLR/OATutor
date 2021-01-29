@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./realnumbers5a-index.js"; const step = {id: "realnumbers5a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-\sqrt{4}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

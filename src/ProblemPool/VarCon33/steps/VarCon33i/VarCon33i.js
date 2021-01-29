@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./VarCon33i-index.js"; const step = {id: "VarCon33i", stepAnswer: ["7"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(11\right)-\frac{1}{5} a=\frac{4}{5} a+\left(4\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

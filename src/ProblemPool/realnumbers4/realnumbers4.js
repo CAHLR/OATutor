@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./realnumbers4-index.js"; const problem = {id: "realnumbers4", title: "Calculating Opposites of Square Roots #1", body: "Simplify the following expressions.", steps: steps, }; export { problem };

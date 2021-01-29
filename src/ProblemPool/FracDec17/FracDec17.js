@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FracDec17-index.js"; const problem = {id: "FracDec17", title: "Solve Equations with Fraction Coefficients", body: "", steps: steps, }; export { problem };

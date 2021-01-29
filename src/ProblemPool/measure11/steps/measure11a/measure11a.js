@@ -1,0 +1,1 @@
+import hints from "./measure11a-index.js"; const step = {id: "measure11a", stepAnswer: ["0.45"], problemType: "TextBox", stepTitle: "Dena’s recipe for lentil soup calls for 150 milliliters of olive oil. Dena wants to triple the recipe. How many liters of olive oil will she need?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

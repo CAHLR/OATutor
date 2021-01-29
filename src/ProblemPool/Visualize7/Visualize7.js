@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Visualize7-index.js"; const problem = {id: "Visualize7", title: "Multiply:", body: "", steps: steps, }; export { problem };

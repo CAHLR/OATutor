@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul4a-index.js"; const step = {id: "DivMul4a", stepAnswer: ["98"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{y}{-\left(7\right)}=-\left(14\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

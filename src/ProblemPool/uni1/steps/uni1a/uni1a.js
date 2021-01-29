@@ -1,0 +1,1 @@
+import hints from "./uni1a-index.js"; const step = {id: "uni1a", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "Find the speed of the express train.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

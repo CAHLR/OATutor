@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./VarCon33d-index.js"; const step = {id: "VarCon33d", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(8\right) c+\left(7\right)=-\left(3\right) c-\left(37\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

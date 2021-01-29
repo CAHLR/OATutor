@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./addand2a-index.js"; const step = {id: "addand2a", stepAnswer: ["-3/2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(23\right)}{24}-\frac{13}{24}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

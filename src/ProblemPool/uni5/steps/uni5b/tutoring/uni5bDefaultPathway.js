@@ -1,0 +1,1 @@
+var hints = [{id: "uni5b-h1", type: "hint", dependencies: [], title: "Find the Difference", text: "Carina's brother's speed is 15 mph more than that of his sister."}, {id: "uni5b-h2", type: "hint", dependencies: ["uni5b-h1"], title: "The Answer", text: "The speed of Carina's brother is $$\\left(50\\right)+\\left(15\\right)=65$$ mph."}, ]; export {hints};

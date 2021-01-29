@@ -1,0 +1,1 @@
+var hints = [{id: "Properties22a-h1", type: "hint", dependencies: [], title: "Division by Zero", text: "Division by 0 is undefined."}, ]; export {hints};

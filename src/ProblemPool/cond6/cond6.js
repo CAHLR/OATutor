@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./cond6-index.js"; const problem = {id: "cond6", title: "Deck of Cards", body: "In a standard deck, there are 52 cards. Twelve cards are face cards and 40 cards are nonface cards. Draw two cards, one at a time, without replacement.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "Formula27a-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate y, we can add 4x to both sides of the equation, which gives us y=-6+4x."}, ]; export {hints};

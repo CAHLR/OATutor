@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula14-index.js"; const problem = {id: "Formula14", title: "Solve the formula 3x+4y=10 for y:", body: "", steps: steps, }; export { problem };

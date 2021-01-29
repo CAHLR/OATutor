@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./VarCon7a-index.js"; const step = {id: "VarCon7a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(12\right) x-\left(8\right)=64"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

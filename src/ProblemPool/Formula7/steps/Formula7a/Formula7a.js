@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Formula7a-index.js"; const step = {id: "Formula7a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: <div> When <InlineMath math="d=520"/> and <InlineMath math="r=65"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

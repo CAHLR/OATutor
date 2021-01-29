@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./SubAdd17k-index.js"; const step = {id: "SubAdd17k", stepAnswer: ["q=-1/4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="q+\frac{3}{4}=\frac{1}{2}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

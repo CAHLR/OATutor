@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use20c-index.js"; const step = {id: "use20c", stepAnswer: ["Expression"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="\frac{x}{25}"/></div>, stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints}; export {step};

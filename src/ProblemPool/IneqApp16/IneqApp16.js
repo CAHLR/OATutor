@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./IneqApp16-index.js"; const problem = {id: "IneqApp16", title: "Jake's Water Bill", body: "", steps: steps, }; export { problem };

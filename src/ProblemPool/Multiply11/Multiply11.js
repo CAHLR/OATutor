@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply11-index.js"; const problem = {id: "Multiply11", title: "Translate and Simplify", body: "Translate and then simplify the following:", steps: steps, }; export { problem };

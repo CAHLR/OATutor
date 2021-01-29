@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use9b-index.js"; const step = {id: "use9b", stepAnswer: ["64"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(4\right)}^x"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

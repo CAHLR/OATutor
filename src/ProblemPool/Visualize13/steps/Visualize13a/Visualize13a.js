@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Visualize13a-index.js"; const step = {id: "Visualize13a", stepAnswer: ["2020-06-05 00:00:00"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{\frac{3}{4}}{\frac{5}{8}}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

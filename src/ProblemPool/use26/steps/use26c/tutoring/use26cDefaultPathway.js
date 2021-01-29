@@ -1,0 +1,1 @@
+var hints = [{id: "use26c-h1", type: "hint", dependencies: [], title: "Meaning of<", text: "The sign \"<\" means \"less than.\""}, ]; export {hints};

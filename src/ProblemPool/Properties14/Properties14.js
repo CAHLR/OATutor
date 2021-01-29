@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties14-index.js"; const problem = {id: "Properties14", title: "Simplify the following expression using the distributive property.", body: "", steps: steps, }; export { problem };

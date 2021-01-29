@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./realnumbers13-index.js"; const problem = {id: "realnumbers13", title: "Identifying Rational and Irrational Numbers #3", body: "Given the numbers, identify if they are irrational or rational.", steps: steps, }; export { problem };

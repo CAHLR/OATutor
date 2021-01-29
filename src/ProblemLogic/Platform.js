@@ -151,11 +151,15 @@ class Platform extends React.Component {
         <AppBar position="static" >
           <Toolbar>
             <div style={{ flex: 1 }}>Open ITS</div>
+            {false ? 
             <Router>
               <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
                 <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
               </NavLink>
-            </Router>
+            </Router> : ""}
+            {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + ": " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""} 
+            
+            
 
 
           </Toolbar>

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Properties28a-index.js"; const step = {id: "Properties28a", stepAnswer: ["3x-35"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(4\right) \left(x-\left(8\right)\right)-x+\left(3\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Formula16a-index.js"; const step = {id: "Formula16a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: <div> Solve for t when <InlineMath math="d=350"/> and <InlineMath math="r=70"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

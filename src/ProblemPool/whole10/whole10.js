@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./whole10-index.js"; const problem = {id: "whole10", title: "How to Find the Prime Factorization of a Composite Number", body: "", steps: steps, }; export { problem };
