@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula4-index.js"; const problem = {id: "Formula4", title: "Rey's Driving Time", body: "", steps: steps, }; export { problem };

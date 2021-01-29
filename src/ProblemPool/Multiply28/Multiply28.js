@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply28-index.js"; const problem = {id: "Multiply28", title: "Evaluate Variable Expressions with Integers", body: "Evaluate the expression:", steps: steps, }; export { problem };

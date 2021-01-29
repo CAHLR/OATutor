@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use23a-index.js"; const step = {id: "use23a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{18}{6}+\left(4\right) \left(\left(5\right)-\left(2\right)\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

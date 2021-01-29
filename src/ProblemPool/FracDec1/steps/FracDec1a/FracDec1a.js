@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec1a-index.js"; const step = {id: "FracDec1a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="\frac{1}{6} y-\frac{1}{3}=\frac{5}{6}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

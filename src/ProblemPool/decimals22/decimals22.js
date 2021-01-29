@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./decimals22-index.js"; const problem = {id: "decimals22", title: "Convert each percent to a decimal:", body: "", steps: steps, }; export { problem };

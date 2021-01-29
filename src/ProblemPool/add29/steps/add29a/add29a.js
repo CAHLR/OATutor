@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./add29a-index.js"; const step = {id: "add29a", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="|-\left(9\right)| ___-|-\left(9\right)|"/></div>, stepBody: "", choices: ["<", ">", "="], answerType: "string", hints: hints}; export {step};

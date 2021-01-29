@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./DivMul5-index.js"; const problem = {id: "DivMul5", title: "Solve Equations Using the Multiplication Property of Equality", body: "Solve the eqation", steps: steps, }; export { problem };

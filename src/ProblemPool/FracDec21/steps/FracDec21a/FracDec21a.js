@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec21a-index.js"; const step = {id: "FracDec21a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="\frac{\left(4\right) m+\left(2\right)}{6}=\frac{m}{3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

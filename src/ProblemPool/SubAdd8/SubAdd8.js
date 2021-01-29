@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./SubAdd8-index.js"; const problem = {id: "SubAdd8", title: "Solve Equations Using the Addition Property of Equality", body: "Solve the equation", steps: steps, }; export { problem };

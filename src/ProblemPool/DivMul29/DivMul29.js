@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./DivMul29-index.js"; const problem = {id: "DivMul29", title: "Translate and Solve", body: "", steps: steps, }; export { problem };

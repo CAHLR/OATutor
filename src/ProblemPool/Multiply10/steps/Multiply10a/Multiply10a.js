@@ -1,0 +1,1 @@
+import hints from "./Multiply10a-index.js"; const step = {id: "Multiply10a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Translate and simplify: the sum of 8 and -12, increased by 3.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

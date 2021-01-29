@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./addand4-index.js"; const problem = {id: "addand4", title: "Add and Subtract Fractions with a Common Denominator", body: "Simplify:", steps: steps, }; export { problem };

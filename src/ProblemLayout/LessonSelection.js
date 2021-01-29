@@ -36,7 +36,7 @@ class LessonSelection extends React.Component {
 
   render() {
     const { classes } = this.props;
-    console.log("courseNum" + this.props.courseNum);
+    //console.log("courseNum" + this.props.courseNum);
     if (this.props.courseNum == null) {
       return (
         <div>

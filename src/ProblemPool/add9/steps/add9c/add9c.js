@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./add9c-index.js"; const step = {id: "add9c", stepAnswer: ["-37"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-|n|"/> when <InlineMath math="n=37"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./GenStr10a-index.js"; const step = {id: "GenStr10a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{2}{3} \left(\left(6\right) m-\left(3\right)\right)=\left(8\right)-m"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

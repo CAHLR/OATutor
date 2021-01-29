@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./other4a-index.js"; const step = {id: "other4a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(8\right)}^{\frac{2}{3}}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

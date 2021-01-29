@@ -1,0 +1,1 @@
+import hints from "./whole26d-index.js"; const step = {id: "whole26d", stepAnswer: ["hundred thousands"], problemType: "MultipleChoice", stepTitle: "6", stepBody: "", choices: ["hundred thousands", "thousands", "ten millions", "millions"], answerType: "string", hints: hints}; export {step};

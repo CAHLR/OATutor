@@ -1,1 +1,0 @@
-import hints from "./clt10b-index.js"; const step = {id: "clt10b", stepAnswer: ["X ~ Exp(m)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "What is the notation for an Exponential distribution?", choices: ["X ~ Exp(\u03bc)", "X ~ Exp(m)", "X ~ Geom(m)", "X ~ Exp(m, n)"], answerType: "string", hints: hints}; export {step};

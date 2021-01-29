@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./clt1-index.js"; const problem = {id: "clt1", title: "Central Limit Theorem", body: "", steps: steps, }; export { problem };

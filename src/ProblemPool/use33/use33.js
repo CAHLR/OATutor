@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expressions", body: "", steps: steps, }; export { problem };

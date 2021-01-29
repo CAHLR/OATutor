@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./GenStr3a-index.js"; const step = {id: "GenStr3a", stepAnswer: ["True"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(6\right) \left(y-\left(4\right)\right)=-\left(18\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

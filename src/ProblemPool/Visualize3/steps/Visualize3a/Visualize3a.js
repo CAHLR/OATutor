@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Visualize3a-index.js"; const step = {id: "Visualize3a", stepAnswer: ["-6/11"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(210\right)}{385}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

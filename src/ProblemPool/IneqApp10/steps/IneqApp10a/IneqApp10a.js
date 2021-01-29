@@ -1,0 +1,1 @@
+import hints from "./IneqApp10a-index.js"; const step = {id: "IneqApp10a", stepAnswer: ["15.0"], problemType: "TextBox", stepTitle: "Mona is planning her son’s birthday party and has a budget of $285. The Fun Zone charges $19 per child. How many children can she have at the party and stay within her budget?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul15a-index.js"; const step = {id: "DivMul15a", stepAnswer: ["-5/16"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{5}{6}=-\left(\frac{8}{3}\right) r"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

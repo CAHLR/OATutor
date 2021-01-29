@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply26-index.js"; const problem = {id: "Multiply26", title: "Checking Account", body: "", steps: steps, }; export { problem };

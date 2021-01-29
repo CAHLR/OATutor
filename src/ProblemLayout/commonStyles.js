@@ -68,7 +68,6 @@ const styles = theme => ({
   checkImage: {
     width: '3em',
     marginLeft: '0.5em',
-    marginRight: '4.3em'
   },
 
   root: {

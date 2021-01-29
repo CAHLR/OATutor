@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./VarCon20-index.js"; const problem = {id: "VarCon20", title: "Solve the equation", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "SolveGeometry4a-h1", type: "hint", dependencies: [], title: "Draw", text: "Try drawing out the geometric shape"}, {id: "SolveGeometry4a-h2", type: "hint", dependencies: ["SolveGeometry4a-h1"], title: "Definition", text: "Area is defined as length times width. If you have the length and area you can find the width by diving area by length"}, ]; export {hints};

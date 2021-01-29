@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./use11-index.js"; const problem = {id: "use11", title: "Evaluating Expressions", body: "When x=3, evaluate:", steps: steps, }; export { problem };

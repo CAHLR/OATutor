@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./other4-index.js"; const problem = {id: "other4", title: "Evaluating a Number Raised to a Rational Exponent", body: "Evaluate the expression", steps: steps, }; export { problem };

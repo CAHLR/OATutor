@@ -1,1 +1,0 @@
-import hints from "./clt9a-index.js"; const step = {id: "clt9a", stepAnswer: ["0, 1"], problemType: "MultipleChoice", stepTitle: "", stepBody: "In a standard Normal distribution, what is the mean and standard deviation?", choices: ["1, 0", "1, 1", "0, 0", "0, 1"], answerType: "string", hints: hints}; export {step};

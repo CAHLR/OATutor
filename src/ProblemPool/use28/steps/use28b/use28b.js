@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use28b-index.js"; const step = {id: "use28b", stepAnswer: ["Equation"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="\left(4\right) x-\left(6\right)=22"/></div>, stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints}; export {step};

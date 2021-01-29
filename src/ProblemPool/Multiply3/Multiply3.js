@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply3-index.js"; const problem = {id: "Multiply3", title: "Divide Intergers", body: "Calculate the following expressions.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties3-index.js"; const problem = {id: "Properties3", title: "Simplify the following expression.", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./hypotest10a-index.js"; const step = {id: "hypotest10a", stepAnswer: ["3"], problemType: "MultipleChoice", stepTitle: "Calculate x-bar.", stepBody: "", choices: ["2.5", "3", "1.8", "1.5", "26"], answerType: "string", hints: hints}; export {step};

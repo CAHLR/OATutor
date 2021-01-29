@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./whole28-index.js"; const problem = {id: "whole28", title: "Naming Numbers", body: "Name the number using words.", steps: steps, }; export { problem };

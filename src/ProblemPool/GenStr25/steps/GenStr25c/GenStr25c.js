@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./GenStr25c-index.js"; const step = {id: "GenStr25c", stepAnswer: ["-4/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(5\right) \left(\left(8\right)+\left(6\right) p\right)=0"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

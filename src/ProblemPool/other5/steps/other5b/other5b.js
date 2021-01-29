@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./other5b-index.js"; const step = {id: "other5b", stepAnswer: ["25"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x^{\frac{3}{2}}=125"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

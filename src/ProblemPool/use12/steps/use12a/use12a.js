@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use12a-index.js"; const step = {id: "use12a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(6\right) x^2-\left(4\right) x-\left(7\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

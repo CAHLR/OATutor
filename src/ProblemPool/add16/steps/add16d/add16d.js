@@ -1,0 +1,1 @@
+import hints from "./add16d-index.js"; const step = {id: "add16d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "2___-20", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints}; export {step};

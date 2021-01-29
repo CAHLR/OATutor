@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul11a-index.js"; const step = {id: "DivMul11a", stepAnswer: ["35"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{2}{5} n=14"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

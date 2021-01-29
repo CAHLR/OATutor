@@ -1,0 +1,1 @@
+import hints from "./IneqApp11a-index.js"; const step = {id: "IneqApp11a", stepAnswer: ["12.0"], problemType: "TextBox", stepTitle: "A water taxi has a maximum load of 1,800 pounds. If the average weight of one person is 150 pounds, how many people can safely ride in the water taxi?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

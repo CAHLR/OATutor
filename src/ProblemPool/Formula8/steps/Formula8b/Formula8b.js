@@ -1,0 +1,1 @@
+import hints from "./Formula8b-index.js"; const step = {id: "Formula8b", stepAnswer: ["$$r=\\frac{d}{t}$$"], problemType: "MultipleChoice", stepTitle: "in general", stepBody: "", choices: ["$$r=\\frac{d}{t}$$", "$$r=dt$$", "$$r=\\frac{t}{d}$$"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec17a-index.js"; const step = {id: "FracDec17a", stepAnswer: ["-144"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="\frac{5}{6} n-\frac{1}{4} n-\frac{1}{2} n=-\left(12\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

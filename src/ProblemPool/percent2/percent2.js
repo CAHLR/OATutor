@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./percent2-index.js"; const problem = {id: "percent2", title: "Translate and Solve Basic Percent Equations", body: "", steps: steps, }; export { problem };

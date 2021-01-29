@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./SolveMixture14-index.js"; const problem = {id: "SolveMixture14", title: "Jesse's Quarters and Nickels", body: "", steps: steps, }; export { problem };

@@ -236,6 +236,7 @@ lessons: [
             "solving_a_quadratic_equation_by_factoring_when_the_leading_coefficient_is_not_1":0.95
         }
         },
+        {id: "lesson2.6", name: "Lesson 2.6", topics: "Solve a Formula for a Speci", allowRecyle: false, learningObjectives: {rate: 0.95, use_the_distance: 0.95, solve_a_formula_for_a_specific_variable: 0.95, and_time_formula: 0.95, } },
         {
         "id":"lesson2.7",
         "name":"Lesson 2.7",

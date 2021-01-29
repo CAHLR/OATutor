@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./use30-index.js"; const problem = {id: "use30", title: "Simplifying an Expression Raised to a Power", body: "Simplify the expression.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec9a-index.js"; const step = {id: "FracDec9a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="c+\frac{3}{4}=\frac{1}{2} c-\frac{1}{4}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

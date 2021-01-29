@@ -1,1 +1,0 @@
-import hints from "./cond6b-index.js"; const step = {id: "cond6b", stepAnswer: ["80/221"], problemType: "TextBox", stepTitle: "Find the probability of drawing exactly one face card. Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

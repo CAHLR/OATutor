@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./SubAdd11a-index.js"; const step = {id: "SubAdd11a", stepAnswer: ["x=11/8"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x-\frac{5}{8}=\frac{3}{4}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

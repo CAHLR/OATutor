@@ -1,1 +1,0 @@
-import hints from "./IterIndex3a-index.js"; const step = {id: "IterIndex3a", stepAnswer: ["np.arange(1,101)"], problemType: "MultipleChoice", stepTitle: "How could you get all the numbers from 1 to 100?", stepBody: "", choices: ["np.arange(0,100)", "np.arange(1,100)", "np.arange(0,101)", "np.arange(1,101)"], answerType: "string", hints: hints}; export {step};

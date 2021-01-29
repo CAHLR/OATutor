@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./mixapp10-index.js"; const problem = {id: "mixapp10", title: "Solving Mixture Word Problems", body: "", steps: steps, }; export { problem };

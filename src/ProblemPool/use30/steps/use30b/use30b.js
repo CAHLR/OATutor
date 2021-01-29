@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use30b-index.js"; const step = {id: "use30b", stepAnswer: ["0"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(0\right)}^5"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

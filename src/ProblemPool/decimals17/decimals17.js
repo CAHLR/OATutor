@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./decimals17-index.js"; const problem = {id: "decimals17", title: "Multiply 5.63", body: "", steps: steps, }; export { problem };

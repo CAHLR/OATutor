@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Visualize9a-index.js"; const step = {id: "Visualize9a", stepAnswer: ["-10/(3n)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(\frac{2}{3}\right)}{\frac{n}{5}}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

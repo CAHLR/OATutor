@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./add5-index.js"; const problem = {id: "add5", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, }; export { problem };

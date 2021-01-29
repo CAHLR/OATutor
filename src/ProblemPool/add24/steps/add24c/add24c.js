@@ -1,0 +1,1 @@
+import hints from "./add24c-index.js"; const step = {id: "add24c", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "-(-5)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

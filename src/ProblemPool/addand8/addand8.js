@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./addand8-index.js"; const problem = {id: "addand8", title: "How to Add or Subtract Fractions", body: "Simplify:", steps: steps, }; export { problem };

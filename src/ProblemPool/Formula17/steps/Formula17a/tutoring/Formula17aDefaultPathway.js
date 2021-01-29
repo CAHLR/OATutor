@@ -1,0 +1,1 @@
+var hints = [{id: "Formula17a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Since we know $$d=240$$ and $$r=60$$ we can substitute 240 for d and 60 for r into the equation, which gives us 240=60t."}, {id: "Formula17a-h2", type: "hint", dependencies: ["Formula17a-h1"], title: "Isolate", text: "To isolate t, we can divide both sides by 60."}, ]; export {hints};

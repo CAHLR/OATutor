@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula11-index.js"; const problem = {id: "Formula11", title: "I=Prt", body: "The formula I=Prt is used to calculate simple interest, I, for a principal, P, invested at rate, r, for t years. Solve the formula I=Prt to find the principal, P:", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "use26a-h1", type: "hint", dependencies: [], title: "Meaning of>=", text: "The sign \">=\" means \"greater than or equal to.\""}, ]; export {hints};

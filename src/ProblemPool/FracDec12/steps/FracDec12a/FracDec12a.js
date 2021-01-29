@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec12a-index.js"; const step = {id: "FracDec12a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="8=\frac{1}{3} \left(\left(9\right) q+\left(6\right)\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

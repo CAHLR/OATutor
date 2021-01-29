@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./addand11a-index.js"; const step = {id: "addand11a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x+\frac{1}{3}"/> when <InlineMath math="x=\frac{-\left(1\right)}{3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
