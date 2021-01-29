@@ -74,7 +74,7 @@ class Firebase {
       hintsFinished: hintsFinished,
       canvasStudentID: canvasStudentID
     }
-    console.log(data);
+    //console.log(data);
     return this.writeData(problemSubmissionsOutput, date, data);
   }
 

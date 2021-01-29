@@ -82,7 +82,7 @@ class App extends React.Component {
     }
     console.log("Saving");
     //console.log(progress);
-    cookies.set("openITS-progress", {"asdf":0.1}, { path: "/", expires: d });
+    cookies.set("openITS-progress", progress, { path: "/", expires: d });
   }
 
   loadProgress = () => {
