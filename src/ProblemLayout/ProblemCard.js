@@ -185,7 +185,7 @@ class ProblemCard extends React.Component {
             <Grid container spacing={0} justify="center" alignItems="center">
               <Grid item xs={1} md={this.step.problemType === "TextBox" ? 4 : false} />
               <Grid item xs={9} md={this.step.problemType === "TextBox" ? 3 : 11}>
-                {this.step.problemType === "TextBox" ?
+                {(this.step.problemType === "TextBox"  && this.step.answerType !== "string") ?
                   <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect :  classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
                   <EquationEditor
                     value={this.state.inputVal}
@@ -193,6 +193,15 @@ class ProblemCard extends React.Component {
                     autoCommands={this.context.autoCommands}
                     autoOperatorNames={this.context.autoOperatorNames}
                   /></center> : ""}
+                {(this.step.problemType === "TextBox" && this.step.answerType === "string") ?
+                      <TextField
+                        inputProps={{min: 0, style: { textAlign: 'center' }}}
+                        error={this.state.isCorrect === false}
+                        className={classes.inputField}
+                        variant="outlined"
+                        onChange={(evt) => this.editInput(evt)}
+                        onKeyPress={(evt) => this.handleKey(evt)}>
+                      </TextField> : ""}
                 {this.step.problemType === "MultipleChoice" ?
                   <MultipleChoice
                     onChange={(evt) => this.editInput(evt)}

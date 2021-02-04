@@ -84,9 +84,9 @@ class HintTextbox extends React.Component {
           </Grid>
           <Grid item xs={4} sm={3} md={1}>
             <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-              {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+              {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%"}} alt=""
                 src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-              {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+              {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%"}} alt=""
                 src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
             </div>
           </Grid>

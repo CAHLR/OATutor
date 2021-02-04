@@ -1,1 +1,1 @@
-import hints from "./RecCord18a-index.js"; const step = {id: "RecCord18a", stepAnswer: ["(3,-3/2)"], problemType: "TextBox", stepTitle: "Find the midpoint of the line segment with the endpoints (-1,1) and (7,-4).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RecCord18a-index.js"; const step = {id: "RecCord18a", stepAnswer: ["(3,-3/2)"], problemType: "TextBox", stepTitle: "Find the midpoint of the line segment with the endpoints (-1,1) and (7,-4).", stepBody: "", answerType: "string", hints: hints}; export {step};

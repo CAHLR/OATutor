@@ -157,7 +157,7 @@ class Platform extends React.Component {
                 <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
               </NavLink>
             </Router> : ""}
-            {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + ": " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""} 
+            {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""} 
             
             
 
