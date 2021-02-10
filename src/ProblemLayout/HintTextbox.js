@@ -47,7 +47,7 @@ class HintTextbox extends React.Component {
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={1} md={4} />
           <Grid item xs={9} md={3}>
-            {this.hint.problemType === "TextBox" ?
+            {(this.hint.problemType === "TextBox" && this.hint.answerType !== "string") ?
               <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
                 <EquationEditor
                   value={this.state.inputVal}
@@ -55,6 +55,14 @@ class HintTextbox extends React.Component {
                   autoCommands={this.context.autoCommands}
                   autoOperatorNames={this.context.autoOperatorNames}
                 /></center> : ""}
+            {(this.hint.problemType === "TextBox" && this.hint.answerType === "string") ?
+              <TextField
+                inputProps={{ min: 0, style: { textAlign: 'center' } }}
+                error={this.state.isCorrect === false}
+                className={classes.inputField}
+                variant="outlined"
+                onChange={(evt) => this.editInput(evt)}>
+              </TextField> : ""}
             {this.hint.problemType === "MultipleChoice" ?
               <MultipleChoice
                 onChange={(evt) => this.editInput(evt)}
@@ -84,9 +92,9 @@ class HintTextbox extends React.Component {
           </Grid>
           <Grid item xs={4} sm={3} md={1}>
             <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-              {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%"}} alt=""
+              {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%" }} alt=""
                 src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-              {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%"}} alt=""
+              {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }} alt=""
                 src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
             </div>
           </Grid>

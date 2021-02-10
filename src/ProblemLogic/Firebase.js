@@ -143,7 +143,8 @@ class Firebase {
       treatment: this.treatment,
       problemFinished: problemFinished,
       feedback: feedback,
-      canvasStudentID: canvasStudentID
+      canvasStudentID: canvasStudentID,
+      status: "open"
     }
     return this.writeData(feedbackOutput, date, data);
   }
