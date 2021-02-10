@@ -73,7 +73,8 @@ class ProblemCard extends React.Component {
       checkMarkOpacity: '0',
       showHints: false,
       hintsFinished: new Array(this.hints.length).fill(0),
-      equation: ''
+      equation: '',
+      usedHints: false
     }
   }
 
@@ -90,7 +91,11 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
 
     if (this.context.logData) {
-      this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
+      try{
+        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
+      } catch {
+        console.log("Unable to log to Firebase.");
+      }
     }
 
     this.setState({
@@ -122,7 +127,8 @@ class ProblemCard extends React.Component {
 
   unlockHint = (hintNum, hintType) => {
     // Mark question as wrong if hints are used (on the first time)
-    if (this.state.hintsFinished.reduce((a, b) => a + b) === 0) {
+    if (this.state.hintsFinished.reduce((a, b) => a + b) === 0 && this.state.isCorrect !== true) {
+      this.setState({usedHints: true});
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
 
@@ -186,7 +192,7 @@ class ProblemCard extends React.Component {
               <Grid item xs={1} md={this.step.problemType === "TextBox" ? 4 : false} />
               <Grid item xs={9} md={this.step.problemType === "TextBox" ? 3 : 11}>
                 {(this.step.problemType === "TextBox"  && this.step.answerType !== "string") ?
-                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect :  classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
+                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : (this.state.usedHints ? classes.textBoxLatexUsedHint : classes.textBoxLatex)} style={{ height: "50px", width: "100%" }}>
                   <EquationEditor
                     value={this.state.inputVal}
                     onChange={(eq) => this.setState({ inputVal: eq })}
@@ -200,7 +206,12 @@ class ProblemCard extends React.Component {
                         className={classes.inputField}
                         variant="outlined"
                         onChange={(evt) => this.editInput(evt)}
-                        onKeyPress={(evt) => this.handleKey(evt)}>
+                        onKeyPress={(evt) => this.handleKey(evt)}
+                        InputProps={{
+                          classes: {
+                            notchedOutline: ((this.state.isCorrect !== false && this.state.usedHints) ? classes.muiUsedHint : null)
+                          }
+                        }}>
                       </TextField> : ""}
                 {this.step.problemType === "MultipleChoice" ?
                   <MultipleChoice

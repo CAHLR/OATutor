@@ -84,7 +84,11 @@ class Problem extends React.Component {
     var relevantKc = {}
     Object.keys(this.props.lesson.learningObjectives).map(x => {
       relevantKc[x] = this.bktParams[x].probMastery});
-    this.updateCanvas(this.context.studentName, score, relevantKc, this.props.lessonNum);
+    try {
+      this.updateCanvas(this.context.studentName, score, relevantKc, this.props.lessonNum);
+    } catch {
+      console.log("Error sending scores to canvas.");
+    }
     this.stepStates[cardIndex] = isCorrect;
 
     if (isCorrect) {
