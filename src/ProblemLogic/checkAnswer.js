@@ -54,8 +54,8 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization, se
       return [parsed, false];
     } else if (answerType === "arithmetic") {
       parsed = KAS.parse(attempt).expr;
-      console.log(parsed);
-      console.log(actual);
+      //console.log(parsed);
+      //console.log(actual);
       correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
       return [parsed.print(), correctAnswer];
     } else if (answerType === "string") {
