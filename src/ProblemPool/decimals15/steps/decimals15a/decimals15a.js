@@ -1,1 +1,1 @@
-import hints from "./decimals15a-index.js"; const step = {id: "decimals15a", stepAnswer: ["16.49"], problemType: "TextBox", stepTitle: "4.8+11.69.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./decimals15a-index.js"; const step = {id: "decimals15a", stepAnswer: ["16.49"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(48\right)+\left(1169\right)"/>.</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

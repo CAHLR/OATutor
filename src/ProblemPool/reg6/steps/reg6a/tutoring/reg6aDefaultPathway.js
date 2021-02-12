@@ -1,0 +1,1 @@
+var hints = [{id: "reg6a-h1", type: "hint", dependencies: [], title: "", text: "Plug in $$x=60$$ into $$ŷ=\\left(10132\\right)+\\left(248\\right) x$$."}, {id: "reg6a-h2", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["250120"], dependencies: ["reg6a-h1"], title: "", text: "Convert answer because ŷ is in thousands of dollars"}, ]; export {hints};

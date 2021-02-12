@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./TblFn7-index.js"; const problem = {id: "TblFn7", title: "Applying Functions ", body: "", steps: steps, }; export { problem };

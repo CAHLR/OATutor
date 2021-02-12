@@ -1,1 +1,1 @@
-import hints from "./RadRat2c-index.js"; const step = {id: "RadRat2c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is sqrt(25-9)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat2c-index.js"; const step = {id: "RadRat2c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="\sqrt{\left(25\right)-\left(9\right)}"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

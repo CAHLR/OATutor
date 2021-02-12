@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./reg10-index.js"; const problem = {id: "reg10", title: "Interpreting Scatter Plots", body: "", steps: steps, }; export { problem };

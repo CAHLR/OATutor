@@ -1,0 +1,1 @@
+import hints from "./TblFn6a-index.js"; const step = {id: "TblFn6a", stepAnswer: ["Foods.drop('Fruits', 'Vegetables')"], problemType: "TextBox", stepTitle: "Take out the 'Fruits' and 'Vegetables' column on a table called 'Foods'", stepBody: "", answerType: "string", hints: hints}; export {step};
