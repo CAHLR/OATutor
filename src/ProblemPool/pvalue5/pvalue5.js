@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./pvalue5-index.js"; const problem = {id: "pvalue5", title: "Interpreting Normal Distribution for Means", body: "", steps: steps, }; export { problem };

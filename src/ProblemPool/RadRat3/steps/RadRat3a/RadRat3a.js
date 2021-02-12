@@ -1,1 +1,1 @@
-import hints from "./RadRat3a-index.js"; const step = {id: "RadRat3a", stepAnswer: ["10*sqrt(3)"], problemType: "TextBox", stepTitle: "What is sqrt(300)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RadRat3a-index.js"; const step = {id: "RadRat3a", stepAnswer: ["10*sqrt(3)"], problemType: "TextBox", stepTitle: <div> What is <InlineMath math="\sqrt{300}"/>?</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./hypotest6-index.js"; const problem = {id: "hypotest6", title: "Distribution for Hypothesis Testing", body: "", steps: steps, }; export { problem };

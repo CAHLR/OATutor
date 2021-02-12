@@ -1,0 +1,1 @@
+import hints from "./clt8a-index.js"; const step = {id: "clt8a", stepAnswer: ["3.2"], problemType: "TextBox", stepTitle: "", stepBody: "The 90th percentile for the mean stress score for the 75 students.", answerType: "arithmetic", hints: hints}; export {step};

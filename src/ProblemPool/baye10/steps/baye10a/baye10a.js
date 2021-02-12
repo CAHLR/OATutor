@@ -1,0 +1,1 @@
+import hints from "./baye10a-index.js"; const step = {id: "baye10a", stepAnswer: ["0.16"], problemType: "TextBox", stepTitle: "If a patient is an addict, what is the probability that they will be prescribed pain pills? Round your answer to 2 decimal places", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

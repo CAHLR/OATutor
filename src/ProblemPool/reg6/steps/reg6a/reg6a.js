@@ -1,0 +1,1 @@
+import hints from "./reg6a-index.js"; const step = {id: "reg6a", stepAnswer: ["250120"], problemType: "TextBox", stepTitle: "", stepBody: "What would you predict the sales to be on day 60?", answerType: "string", hints: hints}; export {step};

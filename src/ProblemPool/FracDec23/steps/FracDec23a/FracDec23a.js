@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FracDec23a-index.js"; const step = {id: "FracDec23a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: <div> Solve: <InlineMath math="\left(0.4\right) y-\left(4\right)=2"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./FracDec23a-index.js"; const step = {id: "FracDec23a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "Solve: 0.4y-4=2", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./cond9c-index.js"; const step = {id: "cond9c", stepAnswer: ["2/7"], problemType: "TextBox", stepTitle: "What is P(B$$\mid$$C) Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./pvalue4a-index.js"; const step = {id: "pvalue4a", stepAnswer: ["$$\\mu=73$$"], problemType: "MultipleChoice", stepTitle: "State the null hypothesis.", stepBody: "", choices: ["$$\\\\mu \\\\neq 73$$", "$$\\\\mu \\\\geq 73$$", "$$\u03bc<73$$", "$$\\\\mu=73$$"], answerType: "string", hints: hints}; export {step};
