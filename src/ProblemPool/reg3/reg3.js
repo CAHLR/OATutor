@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./reg3-index.js"; const problem = {id: "reg3", title: "Interpreting Values", body: "", steps: steps, }; export { problem };

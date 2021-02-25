@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./IterIndex4-index.js"; const problem = {id: "IterIndex4", title: "Greater than 30", body: "", steps: steps, }; export { problem };
