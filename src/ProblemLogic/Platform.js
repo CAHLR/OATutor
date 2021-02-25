@@ -95,9 +95,13 @@ class Platform extends React.Component {
       var probMastery = 1;
       var isRelevant = false;
       for (var step of problem.steps) {
+        if (typeof step.knowledgeComponents === "undefined") {
+          continue;
+        }
         for (var kc of step.knowledgeComponents) {
-          if (context.bktParams[kc] === null) {
+          if (typeof context.bktParams[kc] === "undefined") {
             console.log("BKT Parameter " + kc + " does not exist.");
+            continue;
           }
           if (kc in this.lesson.learningObjectives) {
             isRelevant = true;
