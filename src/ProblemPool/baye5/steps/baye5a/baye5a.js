@@ -1,1 +1,0 @@
-import hints from "./baye5a-index.js"; const step = {id: "baye5a", stepAnswer: ["0.083"], problemType: "TextBox", stepTitle: "You take the test and it comes back positive. What is the probability that you have the disease? Round your answer to 3 decimal places", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./TblFn2a-index.js"; const step = {id: "TblFn2a", stepAnswer: ["Dogs.sort('Age', descending = True)"], problemType: "TextBox", stepTitle: "In a table 'Dogs' with columns 'Name', 'Age', and 'Breed', how would you go about organizing the dogs by age from oldest to youngest?", stepBody: "", answerType: "string", hints: hints}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./reg5b-index.js"; const step = {id: "reg5b", stepAnswer: ["Slope"], problemType: "TextBox", stepTitle: "", stepBody: "What is m?", answerType: "string", hints: hints}; export {step};

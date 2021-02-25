@@ -1,1 +1,0 @@
-import hints from "./clt6a-index.js"; const step = {id: "clt6a", stepAnswer: ["0.0003"], problemType: "TextBox", stepTitle: "", stepBody: "Find the probability that the mean actual weight for the 100 weights is greater than 25.2. Express your answer as a percent limited to two decimal places.", answerType: "string", hints: hints}; export {step};
