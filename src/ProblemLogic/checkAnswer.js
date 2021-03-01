@@ -3,14 +3,15 @@ var KAS = require('../kas.js');
 var gen = require('random-seed');
 
 function variabilize(text, variabilization, seed) {
+  var numOptions = 0;
+  for (var v in variabilization) {
+    numOptions = Math.max(numOptions, variabilization[v].length);
+  }
   Object.keys(variabilization).forEach(v =>  {
-    var rand1 = gen.create(seed);
-    var numOptions = variabilization[v].length - 1; // First element says variables
-    var replaceOption = variabilization[v][rand1(numOptions) + 1];
-    var variables = variabilization[v][0];
-    for (var i = 0; i < variabilization[v][0].length; i++) { // Replace each element of tuple
-      text = text.replace(new RegExp('@{' + variables[i] + '}', 'g'), replaceOption[i]);
-    }
+    // Take r index of each variable, r is same across all vars.
+    var rand1 = gen.create(seed); 
+    var replaceOption = variabilization[v][(rand1(numOptions) + 1) % variabilization[v].length];
+    text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
   });
   return text;
 }
@@ -41,7 +42,7 @@ function round(num, precision) {
   }
 }
 
-function checkAnswer(attempt, actual, answerType, precision, variabilization, seed) {
+function checkAnswer(attempt, actual, answerType, precision, seed, variabilization) {
   var parsed = attempt.replace(/\s+/g, '');
   if (seed && variabilization) {
     actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));

@@ -4,7 +4,7 @@ import courses from './coursePlans.js';
 import {bkt2Index, index2Bkt} from './bktIndex.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 1.03;
+const siteVersion = 1.031;
 const logData = true;
 const logMouseData = false;
 const debug = false;
