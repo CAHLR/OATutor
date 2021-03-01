@@ -42,7 +42,7 @@ class Problem extends React.Component {
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} />
+        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} problemVars={this.props.problem.variabilization}/>
       </Element>
     })
   }
@@ -141,11 +141,11 @@ class Problem extends React.Component {
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.problemStepHeader}>
-                {renderText(this.props.problem.title, this.props.problem.id)}
+                {renderText(this.props.problem.title, this.props.problem.id, this.props.seed, this.props.problem.variabilization)}
                 <hr />
               </h2>
               <div className={classes.problemStepBody}>
-                {renderText(this.props.problem.body, this.props.problem.id)}
+                {renderText(this.props.problem.body, this.props.problem.id, this.props.seed, this.props.problem.variabilization)}
               </div>
             </CardContent>
           </Card>

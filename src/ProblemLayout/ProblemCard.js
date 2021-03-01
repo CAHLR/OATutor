@@ -88,7 +88,7 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.props.seed, Object.assign({}, this.props.problemVars, this.step.variabilization));
 
     if (this.context.logData) {
       try{
@@ -164,12 +164,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {renderText(this.step.stepTitle, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepTitle, this.props.problemID, this.props.seed, Object.assign({}, this.props.problemVars, this.step.variabilization))}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepBody, this.props.problemID, this.props.seed, this.step.variabilization)}
           </div>
 
           {this.state.showHints ?
@@ -182,6 +182,7 @@ class ProblemCard extends React.Component {
                 hintStatus={this.state.hintsFinished}
                 submitHint={this.submitHint}
                 seed={this.props.seed}
+                stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
               />
               <br /></div>
             : ""}

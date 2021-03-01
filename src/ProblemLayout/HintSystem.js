@@ -99,13 +99,13 @@ class HintSystem extends React.Component {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID)}</Typography>
+                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, this.props.seed, Object.assign({}, this.props.stepVars, hint.variabilization))}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'} style={{ width: "100%" }}>
-                {renderText(hint.text, this.props.problemID)}
+                {renderText(hint.text, this.props.problemID, this.props.seed, Object.assign({}, this.props.stepVars, hint.variabilization))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
+                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint} seed={this.props.seed} hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                     toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
                 {this.state.showSubHints[i] && hint.subHints !== undefined ?
                   <div className="SubHints">
@@ -117,6 +117,8 @@ class HintSystem extends React.Component {
                       hintStatus={this.state.subHintsFinished[i]}
                       submitHint={this.submitSubHint}
                       parent={i}
+                      seed={this.props.seed}
+                      hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                     />
                     <br /></div>
                   : ""}

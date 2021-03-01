@@ -27,7 +27,7 @@ class HintTextbox extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, this.props.seed, this.props.hintVars);
     this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
     this.setState({
