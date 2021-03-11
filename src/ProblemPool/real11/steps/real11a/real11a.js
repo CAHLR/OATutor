@@ -1,7 +1,7 @@
 import hints from "./real11a-index.js";
 const step = {
     id: "real11a",
-    stepAnswer: ["@{ans}"],
+    stepAnswer: ["@{ans11a}"],
     //stepAnswer: ["2@{r}@{r}pi + 2@{r}@{h}pi"],
     problemType: "TextBox",
     //stepTitle: "Find the surface area of a cylinder with radius 6 in. and height 9 in. Leave the answer in terms of π.",
@@ -12,7 +12,7 @@ const step = {
     variabilization: {
         r: [1, 2, 3, 4, 5],
         h: [6, 7, 8, 9, 10],
-        ans: ["14pi", "36pi", "66pi", "104pi", "150pi"]
+        ans11a: ["14pi", "36pi", "66pi", "104pi", "150pi"]
     }
 };
 

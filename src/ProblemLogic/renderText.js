@@ -8,21 +8,34 @@ function randomInt(end) {
   return Math.floor(Math.random() * end);
 }
 
-function variabilize(text, variabilization, seed) {
+// Lock in variables chosen at Problem/Step/Hint. This method must be imported and called elsewhere
+function chooseVariables(variabilization, seed) {
   var numOptions = 0;
   for (var v in variabilization) {
     numOptions = Math.max(numOptions, variabilization[v].length);
   }
+  var rand1 = gen.create(seed); 
+  var chosen = rand1(numOptions)
   Object.keys(variabilization).forEach(v =>  {
     // Take r index of each variable, r is same across all vars.
-    var rand1 = gen.create(seed); 
-    var replaceOption = variabilization[v][(rand1(numOptions) + 1) % variabilization[v].length];
+    var replaceOption = variabilization[v][(chosen + 1) % variabilization[v].length];
+    variabilization[v] = [replaceOption];
+  });
+  return variabilization;
+}
+
+function variabilize(text, variabilization) {
+  Object.keys(variabilization).forEach(v =>  {
+    if (variabilization[v].length != 1) {
+      console.log("[WARNING] - variable not properly chosen");
+    }
+    var replaceOption = variabilization[v][0];
     text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
   });
   return text;
 }
 
-export default function renderText(text, problemID, seed, variabilization) {
+function renderText(text, problemID, variabilization) {
   if (typeof text !== 'string') {
     return text;
   }
@@ -31,8 +44,8 @@ export default function renderText(text, problemID, seed, variabilization) {
     var replace = dynamicText[d];
     result = result.split(d).join(replace);
   }
-  if (seed && variabilization) {
-    result = variabilize(text, variabilization, seed);
+  if (variabilization) {
+    result = variabilize(text, variabilization);
   }
   
 
@@ -61,3 +74,5 @@ export default function renderText(text, problemID, seed, variabilization) {
   })
   return splitted;
 }
+
+export {renderText, chooseVariables}
