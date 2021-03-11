@@ -7,14 +7,12 @@ import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 
 import { ThemeContext } from '../config/config.js';
-
-
 
 class Problem extends React.Component {
   static contextType = ThemeContext;
@@ -130,6 +128,8 @@ class Problem extends React.Component {
     this.setState(prevState => ({ showFeedback: !prevState.showFeedback }))
   }
 
+
+
   render() {
     const { classes } = this.props;
     if (this.state.problem === null) {
@@ -141,11 +141,11 @@ class Problem extends React.Component {
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.problemStepHeader}>
-                {renderText(this.props.problem.title, this.props.problem.id, this.props.seed, this.props.problem.variabilization)}
+                {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                 <hr />
               </h2>
               <div className={classes.problemStepBody}>
-                {renderText(this.props.problem.body, this.props.problem.id, this.props.seed, this.props.problem.variabilization)}
+                {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
               </div>
             </CardContent>
           </Card>

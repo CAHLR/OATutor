@@ -2,15 +2,12 @@ var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
 var gen = require('random-seed');
 
-function variabilize(text, variabilization, seed) {
-  var numOptions = 0;
-  for (var v in variabilization) {
-    numOptions = Math.max(numOptions, variabilization[v].length);
-  }
+function variabilize(text, variabilization) {
   Object.keys(variabilization).forEach(v =>  {
-    // Take r index of each variable, r is same across all vars.
-    var rand1 = gen.create(seed); 
-    var replaceOption = variabilization[v][(rand1(numOptions) + 1) % variabilization[v].length];
+    if (variabilization[v].length != 1) {
+      console.log("[WARNING] - variable not properly chosen");
+    }
+    var replaceOption = variabilization[v][0];
     text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
   });
   return text;
@@ -42,10 +39,10 @@ function round(num, precision) {
   }
 }
 
-function checkAnswer(attempt, actual, answerType, precision, seed, variabilization) {
+function checkAnswer(attempt, actual, answerType, precision, variabilization) {
   var parsed = attempt.replace(/\s+/g, '');
-  if (seed && variabilization) {
-    actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));
+  if (variabilization) {
+    actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
   }
   //console.log(actual);
   var correctAnswer = false;
@@ -69,10 +66,10 @@ function checkAnswer(attempt, actual, answerType, precision, seed, variabilizati
       correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
     }
     return [parsed, correctAnswer];
-  } catch {
-    console.log("error");
+  } catch(err) {
+    console.log("error", err);
     return [parsed, false];
   }
 }
 
-export default checkAnswer;
+export {checkAnswer};

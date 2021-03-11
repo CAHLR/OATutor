@@ -8,11 +8,11 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
-import checkAnswer from '../ProblemLogic/checkAnswer.js';
+import { checkAnswer} from '../ProblemLogic/checkAnswer.js';
 import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
 import MultipleChoice from './MultipleChoice.js';
 
 import EquationEditor from "equation-editor-react";
@@ -88,7 +88,7 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.props.seed, Object.assign({}, this.props.problemVars, this.step.variabilization));
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
     if (this.context.logData) {
       try{
@@ -164,12 +164,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {renderText(this.step.stepTitle, this.props.problemID, this.props.seed, Object.assign({}, this.props.problemVars, this.step.variabilization))}
+            {renderText(this.step.stepTitle, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID, this.props.seed, this.step.variabilization)}
+            {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
           </div>
 
           {this.state.showHints ?

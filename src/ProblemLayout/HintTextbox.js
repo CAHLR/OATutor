@@ -1,14 +1,14 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
-import checkAnswer from '../ProblemLogic/checkAnswer.js';
+import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import MultipleChoice from './MultipleChoice.js';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import EquationEditor from "equation-editor-react";
 import { ThemeContext } from '../config/config.js';
 
@@ -27,7 +27,7 @@ class HintTextbox extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, this.props.seed, this.props.hintVars);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, chooseVariables(this.props.hintVars, this.props.seed));
     this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
     this.setState({

@@ -6,7 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 
 
 class SubHintSystem extends React.Component {
@@ -56,7 +56,8 @@ class SubHintSystem extends React.Component {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {renderText(hint.title, this.props.problemID, this.props.seed, Object.assign({}, this.props.hintVars, hint.variabilization))} </Typography>
+                Hint {i + 1}: {renderText(hint.title, this.props.problemID,
+                  chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))} </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'}>
