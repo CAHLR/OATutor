@@ -1,1 +1,1 @@
-import hints from "./decimals25a-index.js"; const step = {id: "decimals25a", stepAnswer: ["41"], problemType: "TextBox", stepTitle: "0.41=___%", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./decimals25a-index.js"; const step = {id: "decimals25a", stepAnswer: ["41"], problemType: "TextBox", stepTitle: <div> <InlineMath math="0.41=___%"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

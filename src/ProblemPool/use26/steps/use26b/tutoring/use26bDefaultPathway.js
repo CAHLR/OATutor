@@ -1,1 +1,1 @@
-var hints = [{id: "use26b-h1", type: "hint", dependencies: [], title: "Meaning of=", text: "The sign \"=\" means \"equal to.\""}, ]; export {hints};
+var hints = [{id: "use26b-h1", type: "hint", dependencies: [], title: "Meaning of $$=$$", text: "The sign $$\"=\"$$ means \"equal to.\""}, ]; export {hints};

@@ -1,1 +1,1 @@
-import hints from "./Properties8a-index.js"; const step = {id: "Properties8a", stepAnswer: ["12/11"], problemType: "TextBox", stepTitle: "2020-11-12 00:00:00", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Properties8a-index.js"; const step = {id: "Properties8a", stepAnswer: ["12/11"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{11}{12}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

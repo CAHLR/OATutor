@@ -1,1 +1,1 @@
-import hints from "./add30d-index.js"; const step = {id: "add30d", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-1___abs(-1)", stepBody: "", choices: ["<", ">", "="], answerType: "string", hints: hints}; export {step};
+import hints from "./add30d-index.js"; const step = {id: "add30d", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-1___abs(-1)", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints}; export {step};
