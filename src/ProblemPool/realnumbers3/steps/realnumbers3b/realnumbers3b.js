@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./realnumbers3b-index.js"; const step = {id: "realnumbers3b", stepAnswer: ["14"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\sqrt{196}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./realnumbers3b-index.js"; const step = {id: "realnumbers3b", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\sqrt{196}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

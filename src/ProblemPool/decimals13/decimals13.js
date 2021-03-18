@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./decimals13-index.js"; const problem = {id: "decimals13", title: "How to Round Decimals", body: "", steps: steps, }; export { problem };
+import steps from "./decimals13-index.js"; const problem = {id: "decimals13", title: "How to Round Decimals", body: "", steps: steps, }; export { problem };

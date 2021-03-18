@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./realnumbers29-index.js"; const problem = {id: "realnumbers29", title: "Identifying Correct Inequality Signs #12", body: "Fill in the blanks with the correct inequality sign.", steps: steps, }; export { problem };
+import steps from "./realnumbers29-index.js"; const problem = {id: "realnumbers29", title: "Identifying Correct Inequality Signs #12", body: "Fill in the blanks with the correct inequality sign.", steps: steps, }; export { problem };

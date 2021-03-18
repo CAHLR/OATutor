@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inequalities21-index.js"; const problem = {id: "inequalities21", title: "Solve Inequality", body: "In the following exercise, solve the inequality, and write the solution in interval notation.", steps: steps, }; export { problem };
+import steps from "./inequalities21-index.js"; const problem = {id: "inequalities21", title: "Solve Inequality", body: "In the following exercise, solve the inequality, and write the solution in interval notation.", steps: steps, }; export { problem };

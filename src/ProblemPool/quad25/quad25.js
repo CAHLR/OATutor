@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad25-index.js"; const problem = {id: "quad25", title: "Solving Quadratics", body: "Solving Quadratics with a Leading Coefficient of 1", steps: steps, }; export { problem };
+import steps from "./quad25-index.js"; const problem = {id: "quad25", title: "Solving Quadratics", body: "Solving Quadratics with a Leading Coefficient of 1", steps: steps, }; export { problem };

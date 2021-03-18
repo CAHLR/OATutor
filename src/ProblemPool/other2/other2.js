@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./other2-index.js"; const problem = {id: "other2", title: "Polynomial Equations", body: "Solve the following polynomial equation by grouping or factoring.", steps: steps, }; export { problem };
+import steps from "./other2-index.js"; const problem = {id: "other2", title: "Polynomial Equations", body: "Solve the following polynomial equation by grouping or factoring.", steps: steps, }; export { problem };

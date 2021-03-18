@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain9-index.js"; const problem = {id: "domain9", title: "Finding the Domain and Range", body: <div> Find the domain and range of <InlineMath math="f(x)=\frac{2}{x+\left(1\right)}"/>. </div>, steps: steps, }; export { problem };
+import steps from "./domain9-index.js"; const problem = {id: "domain9", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=\\frac{2}{x+\\left(1\\right)}$$.", steps: steps, }; export { problem };

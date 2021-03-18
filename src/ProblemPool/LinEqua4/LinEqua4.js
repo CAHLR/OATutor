@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua4-index.js"; const problem = {id: "LinEqua4", title: "Solving an Equation Algebraically When the Variable Appears on Both Sides", body: "Solve the equation in one variable", steps: steps, }; export { problem };
+import steps from "./LinEqua4-index.js"; const problem = {id: "LinEqua4", title: "Solving an Equation Algebraically When the Variable Appears on Both Sides", body: "Solve the equation in one variable", steps: steps, }; export { problem };

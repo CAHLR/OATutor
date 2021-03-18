@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./realnumbers14-index.js"; const problem = {id: "realnumbers14", title: "Identifying Real Numbers #1", body: "For each number given, identify whether it is a real number or not.", steps: steps, }; export { problem };
+import steps from "./realnumbers14-index.js"; const problem = {id: "realnumbers14", title: "Identifying Real Numbers #1", body: "For each number given, identify whether it is a real number or not.", steps: steps, }; export { problem };

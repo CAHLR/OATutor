@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp7b-index.js"; const step = {id: "exp7b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(3\right) x^5}{x^5}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp7b-index.js"; const step = {id: "exp7b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(3\\right) x^5}{x^5}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

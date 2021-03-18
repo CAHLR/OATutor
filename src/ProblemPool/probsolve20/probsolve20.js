@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./probsolve20-index.js"; const problem = {id: "probsolve20", title: "Solve Number Problems", body: "", steps: steps, }; export { problem };
+import steps from "./probsolve20-index.js"; const problem = {id: "probsolve20", title: "Solve Number Problems", body: "", steps: steps, }; export { problem };

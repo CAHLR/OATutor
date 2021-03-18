@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula30-index.js"; const problem = {id: "Formula30", title: "In the following exercises, solve.", body: "", steps: steps, }; export { problem };
+import steps from "./Formula30-index.js"; const problem = {id: "Formula30", title: "In the following exercises, solve.", body: "", steps: steps, }; export { problem };

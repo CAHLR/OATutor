@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly5-index.js"; const problem = {id: "poly5", title: "Multiplying Polynomials Using the Distributive Property", body: "Find the product of the following expression", steps: steps, }; export { problem };
+import steps from "./poly5-index.js"; const problem = {id: "poly5", title: "Multiplying Polynomials Using the Distributive Property", body: "Find the product of the following expre.jsion", steps: steps, }; export { problem };

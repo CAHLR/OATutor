@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./other20a-index.js"; const step = {id: "other20a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\sqrt{x+\left(3\right)}=3x-1"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./other20a-index.js"; const step = {id: "other20a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\sqrt{x+\\left(3\\right)}=3x-1$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

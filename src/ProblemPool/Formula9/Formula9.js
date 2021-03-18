@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula9-index.js"; const problem = {id: "Formula9", title: <div> Solve the formula <InlineMath math="A=\frac{1}{2} bh"/> for h: </div>, body: "", steps: steps, }; export { problem };
+import steps from "./Formula9-index.js"; const problem = {id: "Formula9", title: "Solve the formula $$A=\\frac{1}{2} bh$$ for h:", body: "", steps: steps, }; export { problem };

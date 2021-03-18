@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./rates5-index.js"; const problem = {id: "rates5", title: "Finding Local Extrema from a Graph", body: "", steps: steps, }; export { problem };
+import steps from "./rates5-index.js"; const problem = {id: "rates5", title: "Finding Local Extrema from a Graph", body: "", steps: steps, }; export { problem };

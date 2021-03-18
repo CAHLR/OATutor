@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./complex2-index.js"; const problem = {id: "complex2", title: "Try it: Expressing an Imaginary Number in Standard Form", body: "Find the standard form of the expression.", steps: steps, }; export { problem };
+import steps from "./complex2-index.js"; const problem = {id: "complex2", title: "Try it: Expre.jsing an Imaginary Number in Standard Form", body: "Find the standard form of the expre.jsion.", steps: steps, }; export { problem };

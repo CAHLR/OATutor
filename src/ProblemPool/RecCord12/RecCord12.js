@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord12-index.js"; const problem = {id: "RecCord12", title: "Finding the Distance between Two Points", body: "", steps: steps, }; export { problem };
+import steps from "./RecCord12-index.js"; const problem = {id: "RecCord12", title: "Finding the Distance between Two Points", body: "", steps: steps, }; export { problem };

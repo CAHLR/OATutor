@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real24-index.js"; const problem = {id: "real24", title: "Determining Rationality of Numbers", body: "Decide whether each of the following numbers is rational or irrational.", steps: steps, }; export { problem };
+import steps from "./real24-index.js"; const problem = {id: "real24", title: "Determining Rationality of Numbers", body: "Decide whether each of the following numbers is rational or irrational.", steps: steps, }; export { problem };

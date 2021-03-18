@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse9-index.js"; const problem = {id: "inverse9", title: "Intercepts", body: <div> Find the intercepts of the function <InlineMath math="f(x)=\sqrt{\left(33\right) x+\left(1\right)}"/>, </div>, steps: steps, }; export { problem };
+import steps from "./inverse9-index.js"; const problem = {id: "inverse9", title: "Intercepts", body: "Find the intercepts of the function f(x)=sqrt(3, 3x+1).", steps: steps, }; export { problem };

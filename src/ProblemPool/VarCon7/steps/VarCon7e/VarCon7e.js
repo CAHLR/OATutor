@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./VarCon7e-index.js"; const step = {id: "VarCon7e", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: <div> <InlineMath math="60=-21x-24"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon7e-index.js"; const step = {id: "VarCon7e", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$60=-21x-24$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

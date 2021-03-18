@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Properties19a-index.js"; const step = {id: "Properties19a", stepAnswer: ["-5/8"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{5}{8}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Properties19a-index.js"; const step = {id: "Properties19a", stepAnswer: ["-5/8"], problemType: "TextBox", stepTitle: "$$\\frac{5}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

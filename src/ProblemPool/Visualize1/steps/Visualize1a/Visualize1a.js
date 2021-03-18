@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Visualize1a-index.js"; const step = {id: "Visualize1a", stepAnswer: ["-4/7"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(32\right)}{56}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Visualize1a-index.js"; const step = {id: "Visualize1a", stepAnswer: ["-4/7"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(32\\right)}{56}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

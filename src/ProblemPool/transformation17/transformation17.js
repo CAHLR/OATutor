@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./transformation17-index.js"; const problem = {id: "transformation17", title: "Algebreic Transformations", body: "Write a formula for the function obtained when it is shifted as described.", steps: steps, }; export { problem };
+import steps from "./transformation17-index.js"; const problem = {id: "transformation17", title: "Algebreic Transformations", body: "Write a formula for the function obtained when it is shifted as described.", steps: steps, }; export { problem };

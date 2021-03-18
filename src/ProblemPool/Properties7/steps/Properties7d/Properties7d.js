@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Properties7d-index.js"; const step = {id: "Properties7d", stepAnswer: ["10/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(10\right)}{3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Properties7d-index.js"; const step = {id: "Properties7d", stepAnswer: ["10/3"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(10\\right)}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

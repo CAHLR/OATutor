@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use8b-index.js"; const step = {id: "use8b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: <div> <InlineMath math="y=5"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use8b-index.js"; const step = {id: "use8b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$y=5$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

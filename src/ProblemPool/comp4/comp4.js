@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./comp4-index.js"; const problem = {id: "comp4", title: "Investigating the Order of Function Composition", body: "", steps: steps, }; export { problem };
+import steps from "./comp4-index.js"; const problem = {id: "comp4", title: "Investigating the Order of Function Composition", body: "", steps: steps, }; export { problem };

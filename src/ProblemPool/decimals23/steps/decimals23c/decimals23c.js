@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./decimals23c-index.js"; const step = {id: "decimals23c", stepAnswer: ["9.3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="0.093=___%"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./decimals23c-index.js"; const step = {id: "decimals23c", stepAnswer: ["9.3"], problemType: "TextBox", stepTitle: "0.093=___%", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

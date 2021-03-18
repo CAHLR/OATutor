@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly3-index.js"; const problem = {id: "poly3", title: "Subtracting Polynomials", body: "Find the difference of the following expression", steps: steps, }; export { problem };
+import steps from "./poly3-index.js"; const problem = {id: "poly3", title: "Subtracting Polynomials", body: "Find the difference of the following expre.jsion", steps: steps, }; export { problem };
