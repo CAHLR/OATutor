@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./realnumbers2-index.js"; const problem = {id: "realnumbers2", title: "Calculating Square Roots #2", body: "Simplify the following expressions.", steps: steps, }; export { problem };
+import steps from "./realnumbers2-index.js"; const problem = {id: "realnumbers2", title: "Calculating Square Roots #2", body: "Simplify the following expre.jsion.js", steps: steps, }; export { problem };

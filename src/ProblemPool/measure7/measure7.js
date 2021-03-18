@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./measure7-index.js"; const problem = {id: "measure7", title: "Make Unit Conversions in the Metric System", body: "", steps: steps, }; export { problem };
+import steps from "./measure7-index.js"; const problem = {id: "measure7", title: "Make Unit Conversions in the Metric System", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./SubAdd4-index.js"; const problem = {id: "SubAdd4", title: "Verify a Solution of an Equation", body: "In the following exercises, determine whether the given value is a solution to the equation", steps: steps, }; export { problem };
+import steps from "./SubAdd4-index.js"; const problem = {id: "SubAdd4", title: "Verify a Solution of an Equation", body: "In the following exercises, determine whether the given value is a solution to the equation", steps: steps, }; export { problem };

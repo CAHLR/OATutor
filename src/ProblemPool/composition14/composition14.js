@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./composition14-index.js"; const problem = {id: "composition14", title: "Decomposing a Function", body: "", steps: steps, }; export { problem };
+import steps from "./composition14-index.js"; const problem = {id: "composition14", title: "Decomposing a Function", body: "", steps: steps, }; export { problem };

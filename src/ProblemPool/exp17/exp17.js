@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./exp17-index.js"; const problem = {id: "exp17", title: "Converting Standard Notation to Scientific Notation", body: "Write each number in scientific notation.", steps: steps, }; export { problem };
+import steps from "./exp17-index.js"; const problem = {id: "exp17", title: "Converting Standard Notation to Scientific Notation", body: "Write each number in scientific notation.", steps: steps, }; export { problem };

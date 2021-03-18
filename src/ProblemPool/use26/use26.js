@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./use26-index.js"; const problem = {id: "use26", title: "Translating From Algebra Into English", body: "Translate from algebra into English.", steps: steps, }; export { problem };
+import steps from "./use26-index.js"; const problem = {id: "use26", title: "Translating From Algebra Into English", body: "Translate from algebra into English.", steps: steps, }; export { problem };

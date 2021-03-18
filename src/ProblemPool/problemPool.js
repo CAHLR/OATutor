@@ -1196,6 +1196,6 @@ import {problem as whole7} from './whole7/whole7.js';
 import {problem as whole8} from './whole8/whole8.js';
 import {problem as whole9} from './whole9/whole9.js';
 
-var problems = [rates7];
+var problems = [quad17];
 
 export default problems;

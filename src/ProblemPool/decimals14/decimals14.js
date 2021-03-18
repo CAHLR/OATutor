@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./decimals14-index.js"; const problem = {id: "decimals14", title: "Add:", body: "", steps: steps, }; export { problem };
+import steps from "./decimals14-index.js"; const problem = {id: "decimals14", title: "Add:", body: "", steps: steps, }; export { problem };

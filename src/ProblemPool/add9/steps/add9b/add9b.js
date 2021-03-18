@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./add9b-index.js"; const step = {id: "add9b", stepAnswer: ["21"], problemType: "TextBox", stepTitle: <div> <InlineMath math="|\left(\-y\right)|"/> when <InlineMath math="y=-21"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./add9b-index.js"; const step = {id: "add9b", stepAnswer: ["21"], problemType: "TextBox", stepTitle: "$$|\\left(-y\\right)|$$ when $$y=-21$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

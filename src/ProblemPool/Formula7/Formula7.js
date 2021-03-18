@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula7-index.js"; const problem = {id: "Formula7", title: <div> Solve the formula <InlineMath math="d=rt"/> for t: </div>, body: "", steps: steps, }; export { problem };
+import steps from "./Formula7-index.js"; const problem = {id: "Formula7", title: "Solve the formula $$d=rt$$ for t:", body: "", steps: steps, }; export { problem };

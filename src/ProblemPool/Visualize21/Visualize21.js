@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Visualize21-index.js"; const problem = {id: "Visualize21", title: "Translate the English phrase into an algebraic expression:", body: "", steps: steps, }; export { problem };
+import steps from "./Visualize21-index.js"; const problem = {id: "Visualize21", title: "Translate the English phrase into an algebraic expre.jsion:", body: "", steps: steps, }; export { problem };

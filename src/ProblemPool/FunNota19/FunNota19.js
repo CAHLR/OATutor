@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FunNota19-index.js"; const problem = {id: "FunNota19", title: <div> Evaluate the function <InlineMath math="f=|x-\left(1\right)|-|x+\left(1\right)|"/> at the indicated values </div>, body: "", steps: steps, }; export { problem };
+import steps from "./FunNota19-index.js"; const problem = {id: "FunNota19", title: "Evaluate the function $$f=|x-\\left(1\\right)|-|x+\\left(1\\right)|$$ at the indicated values", body: "", steps: steps, }; export { problem };

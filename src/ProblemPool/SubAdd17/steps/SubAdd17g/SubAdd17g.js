@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./SubAdd17g-index.js"; const step = {id: "SubAdd17g", stepAnswer: ["x=7/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="x-\frac{1}{3}=2"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./SubAdd17g-index.js"; const step = {id: "SubAdd17g", stepAnswer: ["x=7/3"], problemType: "TextBox", stepTitle: "$$x-\\frac{1}{3}=2$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

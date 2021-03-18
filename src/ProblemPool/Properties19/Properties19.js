@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties19-index.js"; const problem = {id: "Properties19", title: "Use the Identity and Inverse Properties of Addition", body: "Find the additive inverse of", steps: steps, }; export { problem };
+import steps from "./Properties19-index.js"; const problem = {id: "Properties19", title: "Use the Identity and Inverse Properties of Addition", body: "Find the additive inverse of", steps: steps, }; export { problem };

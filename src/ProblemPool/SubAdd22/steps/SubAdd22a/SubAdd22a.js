@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./SubAdd22a-index.js"; const step = {id: "SubAdd22a", stepAnswer: ["p=5"], problemType: "TextBox", stepTitle: <div> <InlineMath math="5(p-3)-4p=-10"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./SubAdd22a-index.js"; const step = {id: "SubAdd22a", stepAnswer: ["p=5"], problemType: "TextBox", stepTitle: "$$5(p-3)-4p=-10$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

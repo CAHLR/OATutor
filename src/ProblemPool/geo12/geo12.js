@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./geo12-index.js"; const problem = {id: "geo12", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, }; export { problem };
+import steps from "./geo12-index.js"; const problem = {id: "geo12", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, }; export { problem };

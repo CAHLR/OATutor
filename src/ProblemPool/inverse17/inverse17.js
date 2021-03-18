@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse17-index.js"; const problem = {id: "inverse17", title: "Determining Inverse Relationships for Power Functions", body: <div> Yes or No: Does <InlineMath math="g=f^{\left(\-1\right)}"/>? </div>, steps: steps, }; export { problem };
+import steps from "./inverse17-index.js"; const problem = {id: "inverse17", title: "Determining Inverse Relationships for Power Functions", body: "Yes or No: Does $$g=f^{\\left(-1\\right)}$$?", steps: steps, }; export { problem };

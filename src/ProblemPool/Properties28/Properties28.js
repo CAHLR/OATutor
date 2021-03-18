@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties28-index.js"; const problem = {id: "Properties28", title: "Simplify Expressions Using the Distributive Property", body: "Simplify:", steps: steps, }; export { problem };
+import steps from "./Properties28-index.js"; const problem = {id: "Properties28", title: "Simplify Expre.jsions Using the Distributive Property", body: "Simplify:", steps: steps, }; export { problem };

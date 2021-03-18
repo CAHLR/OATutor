@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FunNota15-index.js"; const problem = {id: "FunNota15", title: <div> Evaluate the function <InlineMath math="f(x)=2x-5"/> at the indicated values </div>, body: "", steps: steps, }; export { problem };
+import steps from "./FunNota15-index.js"; const problem = {id: "FunNota15", title: "Evaluate the function $$f(x)=2x-5$$ at the indicated values", body: "", steps: steps, }; export { problem };

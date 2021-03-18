@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply2-index.js"; const problem = {id: "Multiply2", title: "Multiply by -1", body: "Calculate the following expressions.", steps: steps, }; export { problem };
+import steps from "./Multiply2-index.js"; const problem = {id: "Multiply2", title: "Multiply by -1", body: "Calculate the following expre.jsion.js", steps: steps, }; export { problem };

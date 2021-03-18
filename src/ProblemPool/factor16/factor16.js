@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor16-index.js"; const problem = {id: "factor16", title: "Factoring Polynomials", body: "Factor by grouping.", steps: steps, }; export { problem };
+import steps from "./factor16-index.js"; const problem = {id: "factor16", title: "Factoring Polynomials", body: "Factor by grouping.", steps: steps, }; export { problem };
