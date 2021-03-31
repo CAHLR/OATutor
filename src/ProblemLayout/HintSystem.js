@@ -66,7 +66,7 @@ class HintSystem extends React.Component {
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
-        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", this.context.studentName);
+        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", chooseVariables(this.props.stepVars, this.props.seed), this.context.studentName);
       }
     });
   }
@@ -79,7 +79,7 @@ class HintSystem extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed), this.context.studentName);
     }
   }
 

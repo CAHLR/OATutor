@@ -1,20 +1,6 @@
+import { variabilize } from './variabilize.js';
 var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
-var gen = require('random-seed');
-
-function variabilize(text, variabilization) {
-  if (typeof variabilization === 'undefined' || Object.keys(variabilization).length == 0) {
-    return text;
-  }
-  Object.keys(variabilization).forEach(v =>  {
-    if (variabilization[v].length != 1) {
-      console.log("[WARNING] - variable not properly chosen");
-    }
-    var replaceOption = variabilization[v][0];
-    text = text.replace(new RegExp('@{' + v + '}', 'g'), replaceOption);
-  });
-  return text;
-}
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {

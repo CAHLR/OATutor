@@ -92,7 +92,7 @@ class ProblemCard extends React.Component {
 
     if (this.context.logData) {
       try{
-        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
+        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
       } catch {
         console.log("Unable to log to Firebase.");
       }
@@ -139,7 +139,7 @@ class ProblemCard extends React.Component {
         return { hintsFinished: prevState.hintsFinished }
       }, () => {
         if (this.context.logData) {
-          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", this.context.studentName);
+          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
         }
       });
     }
@@ -154,7 +154,7 @@ class ProblemCard extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
     }
   }
 
