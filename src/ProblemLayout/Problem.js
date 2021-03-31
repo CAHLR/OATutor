@@ -140,11 +140,11 @@ class Problem extends React.Component {
         <div className={classes.prompt} >
           <Card className={classes.titleCard}>
             <CardContent>
-              <h2 className={classes.problemStepHeader}>
+              <h2 className={classes.problemHeader}>
                 {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                 <hr />
               </h2>
-              <div className={classes.problemStepBody}>
+              <div className={classes.problemBody}>
                 {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
               </div>
             </CardContent>

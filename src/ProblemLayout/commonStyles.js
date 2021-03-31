@@ -98,6 +98,14 @@ const styles = theme => ({
     marginRight: 'auto',
     paddingBottom: 0,
   },
+  problemHeader: {
+    fontSize: 25,
+    marginTop: 0,
+  },
+  problemBody: {
+    fontSize: 20,
+    marginTop: 10,
+  },
   problemStepHeader: {
     fontSize: 25,
     marginTop: 0,

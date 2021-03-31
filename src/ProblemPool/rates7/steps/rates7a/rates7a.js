@@ -1,1 +1,1 @@
-import hints from "./rates7a-index.js"; const step = {id: "rates7a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "What is the y value of the $$absolute$$ maximum?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./rates7a-index.js"; const step = {id: "rates7a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "What is the y value of the absolute maximum?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

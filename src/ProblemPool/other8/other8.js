@@ -1,1 +1,1 @@
-import steps from "./other8-index.js"; const problem = {id: "other8", title: "Solving the equation", body: "Solve the equation involving $$absolute$$ value.", steps: steps, }; export { problem };
+import steps from "./other8-index.js"; const problem = {id: "other8", title: "Solving the equation", body: "Solve the equation involving absolute value.", steps: steps, }; export { problem };

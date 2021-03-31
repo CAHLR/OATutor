@@ -1,1 +1,1 @@
-import hints from "./whole9c-index.js"; const step = {id: "whole9c", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether 3, 765 is divisible by 5.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./whole9c-index.js"; const step = {id: "whole9c", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether 3,765 is divisible by 5.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

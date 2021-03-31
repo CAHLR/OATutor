@@ -1,1 +1,1 @@
-import hints from "./factor11b-index.js"; const step = {id: "factor11b", stepAnswer: ["(10x-1)(100x^2 + 10x+1)"], problemType: "TextBox", stepTitle: "1, $$\\left(0\\right) x^3-\\left(1\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor11b-index.js"; const step = {id: "factor11b", stepAnswer: ["(10x-1)(100x^2 + 10x+1)"], problemType: "TextBox", stepTitle: "1,000x**3-1.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

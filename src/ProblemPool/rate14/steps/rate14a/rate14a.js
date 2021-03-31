@@ -1,1 +1,1 @@
-import hints from "./rate14a-index.js"; const step = {id: "rate14a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "$$q(x)=x^3$$ on [-4, 2]", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./rate14a-index.js"; const step = {id: "rate14a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "$$q(x)=x^3$$ on [-4,2]", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
