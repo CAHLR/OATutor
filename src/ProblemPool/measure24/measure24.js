@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./measure24-index.js"; const problem = {id: "measure24", title: "In the following exercise, solve.", body: "", steps: steps, }; export { problem };
+import steps from "./measure24-index.js"; const problem = {id: "measure24", title: "In the following exercise, solve.", body: "", steps: steps, }; export { problem };

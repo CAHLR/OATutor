@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq18-index.js"; const problem = {id: "LinIneq18", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, }; export { problem };
+import steps from "./LinIneq18-index.js"; const problem = {id: "LinIneq18", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, }; export { problem };

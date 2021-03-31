@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul16d-index.js"; const step = {id: "DivMul16d", stepAnswer: ["541/37"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-\left(37\right) p=-\left(541\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul16d-index.js"; const step = {id: "DivMul16d", stepAnswer: ["541/37"], problemType: "TextBox", stepTitle: "$$-37p=-541$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Multiply29a-index.js"; const step = {id: "Multiply29a", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{-\left(180\right)}{15}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Multiply29a-index.js"; const step = {id: "Multiply29a", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(180\\right)}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

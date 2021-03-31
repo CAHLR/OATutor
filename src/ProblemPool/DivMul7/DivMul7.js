@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./DivMul7-index.js"; const problem = {id: "DivMul7", title: "Solve Equations Using the Division Property of Equality", body: "Solve the eqation", steps: steps, }; export { problem };
+import steps from "./DivMul7-index.js"; const problem = {id: "DivMul7", title: "Solve Equations Using the Division Property of Equality", body: "Solve the eqation", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./other21-index.js"; const problem = {id: "other21", title: "Solving an Equation With One Radical", body: "Solve the following equation, an equation with two radicals, for x.", steps: steps, }; export { problem };
+import steps from "./other21-index.js"; const problem = {id: "other21", title: "Solving an Equation With One Radical", body: "Solve the following equation, an equation with two radicals, for x.", steps: steps, }; export { problem };

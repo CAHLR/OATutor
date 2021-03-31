@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse14-index.js"; const problem = {id: "inverse14", title: "Interpreting a Graph", body: "Answer the questions based on the function in the graph.\n##figure1.gif##", steps: steps, }; export { problem };
+import steps from "./inverse14-index.js"; const problem = {id: "inverse14", title: "Interpreting a Graph", body: "Answer the questions based on the function in the graph.\n##figure1.gif##", steps: steps, }; export { problem };

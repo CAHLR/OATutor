@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real8-index.js"; const problem = {id: "real8", title: "Evaluating an Algebraic Expression at Different Values", body: "Evaluate the expression 2x-7 for each value for x.", steps: steps, }; export { problem };
+import steps from "./real8-index.js"; const problem = {id: "real8", title: "Evaluating an Algebraic Expre.jsion at Different Values", body: "Evaluate the expre.jsion 2x-7 for each value for x.", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./addand1a-index.js"; const step = {id: "addand1a", stepAnswer: ["(x+2)/3"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{x}{3}+\frac{2}{3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./addand1a-index.js"; const step = {id: "addand1a", stepAnswer: ["(x+2)/3"], problemType: "TextBox", stepTitle: "$$\\frac{x}{3}+\\frac{2}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

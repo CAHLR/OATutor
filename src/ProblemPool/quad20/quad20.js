@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad20-index.js"; const problem = {id: "quad20", title: "Try It: Solving the Quadratic Equation with the Quadratic Formula", body: "Solve the quadratic equation using the quadratic formula.", steps: steps, }; export { problem };
+import steps from "./quad20-index.js"; const problem = {id: "quad20", title: "Try It: Solving the Quadratic Equation with the Quadratic Formula", body: "Solve the quadratic equation using the quadratic formula.", steps: steps, }; export { problem };

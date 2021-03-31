@@ -7,14 +7,12 @@ import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 
 import { ThemeContext } from '../config/config.js';
-
-
 
 class Problem extends React.Component {
   static contextType = ThemeContext;
@@ -42,7 +40,7 @@ class Problem extends React.Component {
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} />
+        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} problemVars={this.props.problem.variabilization}/>
       </Element>
     })
   }
@@ -121,7 +119,7 @@ class Problem extends React.Component {
 
   submitFeedback = () => {
     //console.log(this.state.feedback);
-    this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished, this.context.studentName);
+    this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished, chooseVariables(this.props.problem.variabilization, this.props.seed), this.context.studentName);
     this.setState({ feedback: "", feedbackSubmitted: true });
   }
 
@@ -129,6 +127,8 @@ class Problem extends React.Component {
     scroll.scrollToBottom({ duration: 900, smooth: true });
     this.setState(prevState => ({ showFeedback: !prevState.showFeedback }))
   }
+
+
 
   render() {
     const { classes } = this.props;
@@ -141,11 +141,11 @@ class Problem extends React.Component {
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.problemStepHeader}>
-                {renderText(this.props.problem.title, this.props.problem.id)}
+                {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                 <hr />
               </h2>
               <div className={classes.problemStepBody}>
-                {renderText(this.props.problem.body, this.props.problem.id)}
+                {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
               </div>
             </CardContent>
           </Card>

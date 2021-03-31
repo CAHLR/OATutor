@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use29a-index.js"; const step = {id: "use29a", stepAnswer: ["125"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(5\right)}^3"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use29a-index.js"; const step = {id: "use29a", stepAnswer: ["125"], problemType: "TextBox", stepTitle: "$${\\left(5\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

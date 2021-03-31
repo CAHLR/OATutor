@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./VarCon9a-index.js"; const step = {id: "VarCon9a", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(6\right) n=\left(5\right) n-\left(10\right)"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon9a-index.js"; const step = {id: "VarCon9a", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: "$$6n=5n-10$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

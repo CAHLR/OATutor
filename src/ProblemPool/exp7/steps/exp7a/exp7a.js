@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp7a-index.js"; const step = {id: "exp7a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{c^3}{c^3}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp7a-index.js"; const step = {id: "exp7a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{c^3}{c^3}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

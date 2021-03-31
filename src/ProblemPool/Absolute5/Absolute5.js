@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Absolute5-index.js"; const problem = {id: "Absolute5", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function f(x)=(1/2)abs(x+4)-3.", steps: steps, }; export { problem };
+import steps from "./Absolute5-index.js"; const problem = {id: "Absolute5", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=\\frac{1}{2} |x+\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Visualize3-index.js"; const problem = {id: "Visualize3", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, }; export { problem };
+import steps from "./Visualize3-index.js"; const problem = {id: "Visualize3", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, }; export { problem };

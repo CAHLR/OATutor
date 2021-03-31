@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./GenStr4a-index.js"; const step = {id: "GenStr4a", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-\left(y+\left(9\right)\right)=8"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./GenStr4a-index.js"; const step = {id: "GenStr4a", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "$$-\\left(y+\\left(9\\right)\\right)=8$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

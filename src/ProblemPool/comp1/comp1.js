@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./comp1-index.js"; const problem = {id: "comp1", title: "Performing Algebraic Operations on Functions", body: "", steps: steps, }; export { problem };
+import steps from "./comp1-index.js"; const problem = {id: "comp1", title: "Performing Algebraic Operations on Functions", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./Formula8a-index.js"; const step = {id: "Formula8a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: <div> When <InlineMath math="d=180"/> and <InlineMath math="t=4"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Formula8a-index.js"; const step = {id: "Formula8a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "When $$d=180$$ and $$t=4$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

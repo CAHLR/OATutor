@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp13c-index.js"; const step = {id: "exp13c", stepAnswer: ["-8w^9"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(-\left(2\right) w^3\right)}^3"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp13c-index.js"; const step = {id: "exp13c", stepAnswer: ["-8w^9"], problemType: "TextBox", stepTitle: "$${\\left(\\left(-2\\right) w^3\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

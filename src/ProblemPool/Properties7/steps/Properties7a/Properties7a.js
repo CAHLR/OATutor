@@ -1,1 +1,1 @@
-import hints from "./Properties7a-index.js"; const step = {id: "Properties7a", stepAnswer: ["-2/5"], problemType: "TextBox", stepTitle: "2020-02-05 00:00:00", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Properties7a-index.js"; const step = {id: "Properties7a", stepAnswer: ["-2/5"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

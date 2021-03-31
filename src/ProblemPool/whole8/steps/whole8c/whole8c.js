@@ -1,1 +1,1 @@
-import hints from "./whole8c-index.js"; const step = {id: "whole8c", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 4,962 is divisible by 5", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./whole8c-index.js"; const step = {id: "whole8c", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 4, 962 is divisible by 5", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

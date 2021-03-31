@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./SolveMixture7-index.js"; const problem = {id: "SolveMixture7", title: "Adalberto's Dimes and Nickels", body: "", steps: steps, }; export { problem };
+import steps from "./SolveMixture7-index.js"; const problem = {id: "SolveMixture7", title: "Adalberto's Dimes and Nickels", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./DivMul16-index.js"; const problem = {id: "DivMul16", title: "Solve the eqation", body: "", steps: steps, }; export { problem };
+import steps from "./DivMul16-index.js"; const problem = {id: "DivMul16", title: "Solve the eqation", body: "", steps: steps, }; export { problem };

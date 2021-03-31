@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./FunNota18-index.js"; const problem = {id: "FunNota18", title: "Evaluate the function f=(6x-1)/(5x+2) at the indicated values.", body: "", steps: steps, }; export { problem };
+import steps from "./FunNota18-index.js"; const problem = {id: "FunNota18", title: "Evaluate the function $$f=\\frac{\\left(6\\right) x-\\left(1\\right)}{\\left(5\\right) x+\\left(2\\right)}$$ at the indicated value.js", body: "", steps: steps, }; export { problem };

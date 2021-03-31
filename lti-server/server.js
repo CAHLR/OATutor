@@ -1,7 +1,7 @@
-var redirect = 'http://169.229.192.135:1377/#/';
-var self_url = 'http://169.229.192.135:1379/';
+var redirect = 'http://169.229.192.135:1337/#/';
+var self_url = 'http://169.229.192.135:1339/';
 //var redirect = 'https://cahlr.github.io/OpenITS';
-var port = process.env.PORT || 1379; //sets local server port to 1379
+var port = process.env.PORT || 1339; //sets local server port to 1339
 var express = require('express'); // Express web server framework
 var https = require("https");
 var request = require('request');
@@ -125,6 +125,9 @@ app.post('/grade', function (req, res) {
     return;
   }
   var payload = "<h1> Component Breakdown </h1> <br/>";
+  payload += "svg test";
+  payload += '<img src="https://image.flaticon.com/icons/png/512/883/883039.png" width="200px" alt="Red dot" />';
+  payload += '<br/><iframe src="https://cahlr.github.io/OpenITS/#/" target="_parent" width="1000" height="400" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true"></iframe>'
   payload += "<h3> Overall score: " + req.body.score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
     payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";

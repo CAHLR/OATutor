@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./add8-index.js"; const problem = {id: "add8", title: "Evaluating Absolute Value Expressions", body: "Evaluate the following absolute value expressions.", steps: steps, }; export { problem };
+import steps from "./add8-index.js"; const problem = {id: "add8", title: "Evaluating Absolute Value Expre.jsions", body: "Evaluate the following $$absolute$$ value expre.jsion.js", steps: steps, }; export { problem };
