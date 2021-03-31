@@ -1,0 +1,1 @@
+import hints from "./Properties21a-index.js"; const step = {id: "Properties21a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-\\left(8\\right) \\left(0\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

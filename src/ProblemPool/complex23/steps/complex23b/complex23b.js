@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex23b-index.js"; const step = {id: "complex23b", stepAnswer: ["(1/2)i"], problemType: "TextBox", stepTitle: <div> <InlineMath math="-\left(\frac{1}{2}\right) i"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./complex23b-index.js"; const step = {id: "complex23b", stepAnswer: ["(1/2)i"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{1}{2}\\right) i$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

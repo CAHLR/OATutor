@@ -1,0 +1,1 @@
+import hints from "./use26a-index.js"; const step = {id: "use26a", stepAnswer: ["19 is greater than or equal to 15."], problemType: "MultipleChoice", stepTitle: "$$19 \\geq 15$$", stepBody: "", choices: ["19 is less than or equal to 15.", "19 is greater than or equal to 15.", "19 is equal to 15."], answerType: "string", hints: hints}; export {step};

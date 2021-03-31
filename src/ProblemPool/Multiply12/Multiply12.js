@@ -1,0 +1,1 @@
+import steps from "./Multiply12-index.js"; const problem = {id: "Multiply12", title: "Translate and Simplify", body: "Translate to an algebraic expre.jsion and simplify if po.jsible:", steps: steps, }; export { problem };

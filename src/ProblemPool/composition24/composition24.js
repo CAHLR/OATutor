@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./composition24-index.js"; const problem = {id: "composition24", title: "Composition of Functions", body: "For f(x)=sqrt(x)+2 and g(x)=x**2+3, find the following.", steps: steps, }; export { problem };
+import steps from "./composition24-index.js"; const problem = {id: "composition24", title: "Composition of Functions", body: "For $$f(x)=\\sqrt{x}+\\left(2\\right)$$ and $$g(x)=x^2+\\left(3\\right)$$, find the following.", steps: steps, }; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./block10a-index.js"; const step = {id: "block10a", stepAnswer: ["False"], problemType: "MultipleChoice", stepTitle: "", stepBody: "Forking the blockchain to perform a double spend attack on Bitcoin is always impossible after you’ve waited 10 block confirmations.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};

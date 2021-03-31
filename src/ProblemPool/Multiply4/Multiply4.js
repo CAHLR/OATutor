@@ -1,0 +1,1 @@
+import steps from "./Multiply4-index.js"; const problem = {id: "Multiply4", title: "Simplify Expre.jsions", body: "Simplify the following integer expre.jsion.", steps: steps, }; export { problem };

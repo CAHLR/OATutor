@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./transformation2-index.js"; const problem = {id: "transformation2", title: "Odd, Even Functions", body: "", steps: steps, }; export { problem };
+import steps from "./transformation2-index.js"; const problem = {id: "transformation2", title: "Odd, Even Functions", body: "", steps: steps, }; export { problem };

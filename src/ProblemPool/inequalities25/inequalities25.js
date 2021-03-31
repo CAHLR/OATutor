@@ -1,0 +1,1 @@
+import steps from "./inequalities25-index.js"; const problem = {id: "inequalities25", title: "Solve Inequality", body: "In the following exercise, solve the inequality, and write the solution in interval notation.", steps: steps, }; export { problem };

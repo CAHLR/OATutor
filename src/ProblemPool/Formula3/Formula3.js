@@ -1,0 +1,1 @@
+import steps from "./Formula3-index.js"; const problem = {id: "Formula3", title: "Trinh's Distance", body: "", steps: steps, }; export { problem };

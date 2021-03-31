@@ -1,0 +1,1 @@
+import steps from "./whole22-index.js"; const problem = {id: "whole22", title: "Finding Place Values", body: "Given the number 63, 407, 218, find the place value of the following digit.js", steps: steps, }; export { problem };

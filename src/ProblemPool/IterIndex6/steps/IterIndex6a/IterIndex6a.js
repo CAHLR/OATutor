@@ -1,1 +1,0 @@
-import hints from "./IterIndex6a-index.js"; const step = {id: "IterIndex6a", stepAnswer: ["$$new_{array}=\\operatorname{make_{array}}\\left(\\right)$$"], problemType: "MultipleChoice", stepTitle: "How do we make the array?", stepBody: "", choices: ["make_array()", "make_array", "new_array()"], answerType: "string", hints: hints}; export {step};

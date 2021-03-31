@@ -1,0 +1,1 @@
+import hints from "./GenStr9a-index.js"; const step = {id: "GenStr9a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\left(7\\right) \\left(n-\\left(3\\right)\\right)-\\left(8\\right)=-15$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

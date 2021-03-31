@@ -1,0 +1,1 @@
+import steps from "./percent12-index.js"; const problem = {id: "percent12", title: "Find Percent Decrease", body: "", steps: steps, }; export { problem };

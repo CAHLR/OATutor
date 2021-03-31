@@ -1,0 +1,1 @@
+var hints = [{id: "uni12b-h1", type: "hint", dependencies: [], title: "Find the Difference", text: "The downstream speed is 4 mph more than the upstream speed."}, {id: "uni12b-h2", type: "hint", dependencies: ["uni12b-h1"], title: "The Answer", text: "The downstream speed is $$\\left(8\\right)+\\left(4\\right)=12$$ mph."}, ]; export {hints};

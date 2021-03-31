@@ -1,0 +1,1 @@
+import hints from "./add21c-index.js"; const step = {id: "add21c", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "-3___-7", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints}; export {step};

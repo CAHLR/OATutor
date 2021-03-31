@@ -1,0 +1,1 @@
+import steps from "./IneqApp5-index.js"; const problem = {id: "IneqApp5", title: "Elevator Safety", body: "", steps: steps, }; export { problem };

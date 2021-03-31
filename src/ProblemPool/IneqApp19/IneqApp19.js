@@ -1,0 +1,1 @@
+import steps from "./IneqApp19-index.js"; const problem = {id: "IneqApp19", title: "Katherine's Meals", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./DivMul10a-index.js"; const step = {id: "DivMul10a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$\\frac{3}{4} x=12$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

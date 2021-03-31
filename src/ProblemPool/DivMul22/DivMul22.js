@@ -1,0 +1,1 @@
+import steps from "./DivMul22-index.js"; const problem = {id: "DivMul22", title: "Solve the eqation", body: "", steps: steps, }; export { problem };

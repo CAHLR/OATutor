@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RadRat7-index.js"; const problem = {id: "RadRat7", title: "Using the Quotient Rule to Simplify Square Roots", body: "", steps: steps, }; export { problem };
+import steps from "./RadRat7-index.js"; const problem = {id: "RadRat7", title: "Using the Quotient Rule to Simplify Square Roots", body: "", steps: steps, }; export { problem };

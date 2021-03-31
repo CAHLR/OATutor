@@ -1,0 +1,1 @@
+import hints from "./Formula21a-index.js"; const step = {id: "Formula21a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "Solve for r when $$d=160$$ and $$t=2.5$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

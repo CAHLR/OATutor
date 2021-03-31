@@ -1,0 +1,1 @@
+import hints from "./SubAdd3a-index.js"; const step = {id: "SubAdd3a", stepAnswer: ["TRUE"], problemType: "MultipleChoice", stepTitle: "$$\\left(5\\right) y+\\left(3\\right)=10y-4$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints}; export {step};

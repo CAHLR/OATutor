@@ -1,0 +1,1 @@
+import steps from "./SolveMixture6-index.js"; const problem = {id: "SolveMixture6", title: "Solve Ticket and Stamp Word Problems", body: "", steps: steps, }; export { problem };

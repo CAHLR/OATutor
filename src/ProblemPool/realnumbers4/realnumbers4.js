@@ -1,0 +1,1 @@
+import steps from "./realnumbers4-index.js"; const problem = {id: "realnumbers4", title: "Calculating Opposites of Square Roots #1", body: "Simplify the following expre.jsion.js", steps: steps, }; export { problem };

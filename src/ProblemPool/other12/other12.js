@@ -1,0 +1,1 @@
+import steps from "./other12-index.js"; const problem = {id: "other12", title: "Solve the equation", body: "Solve the equation by identifying the quadratic form. Use a substitute variable and find all real solutions by factoring.", steps: steps, }; export { problem };

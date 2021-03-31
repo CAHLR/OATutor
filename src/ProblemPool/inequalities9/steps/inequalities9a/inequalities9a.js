@@ -1,0 +1,1 @@
+import hints from "./inequalities9a-index.js"; const step = {id: "inequalities9a", stepAnswer: ["(-inf, $$-5]$$"], problemType: "MultipleChoice", stepTitle: "$$-10a \\geq 50$$", stepBody: "", choices: ["$$[-5$$, inf)", "(-inf, $$-5]$$", "(-inf, 5]"], answerType: "string", hints: hints}; export {step};

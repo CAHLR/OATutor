@@ -1,0 +1,1 @@
+import hints from "./FracDec9a-index.js"; const step = {id: "FracDec9a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Solve: $$c+\\frac{3}{4}=\\frac{1}{2} c-\\frac{1}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

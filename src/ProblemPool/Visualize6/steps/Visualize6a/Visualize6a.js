@@ -1,0 +1,1 @@
+import hints from "./Visualize6a-index.js"; const step = {id: "Visualize6a", stepAnswer: ["-55/84"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{11}{12}\\right) \\frac{5}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

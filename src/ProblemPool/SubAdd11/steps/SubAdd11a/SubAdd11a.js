@@ -1,0 +1,1 @@
+import hints from "./SubAdd11a-index.js"; const step = {id: "SubAdd11a", stepAnswer: ["x=11/8"], problemType: "TextBox", stepTitle: "$$x-\\frac{5}{8}=\\frac{3}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

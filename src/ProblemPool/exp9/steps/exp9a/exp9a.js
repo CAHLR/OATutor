@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp9a-index.js"; const step = {id: "exp9a", stepAnswer: ["1/θ^7"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{{\theta}^3}{{\theta}^{10}}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp9a-index.js"; const step = {id: "exp9a", stepAnswer: ["1/θ^7"], problemType: "TextBox", stepTitle: "$$\\frac{{\\theta}^3}{{\\theta}^{10}}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

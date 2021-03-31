@@ -1,0 +1,1 @@
+import hints from "./SubAdd17c-index.js"; const step = {id: "SubAdd17c", stepAnswer: ["b=1/2"], problemType: "TextBox", stepTitle: "$$b+\\frac{1}{4}=\\frac{3}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

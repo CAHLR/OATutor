@@ -1,0 +1,1 @@
+import hints from "./uni2a-index.js"; const step = {id: "uni2a", stepAnswer: ["21"], problemType: "TextBox", stepTitle: "Find the speed of Wayne.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

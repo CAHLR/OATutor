@@ -1,0 +1,1 @@
+import hints from "./other17a-index.js"; const step = {id: "other17a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt{\\left(15\\right)-\\left(2\\right) x}=x$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

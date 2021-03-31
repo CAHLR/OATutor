@@ -1,0 +1,1 @@
+import hints from "./Properties26a-index.js"; const step = {id: "Properties26a", stepAnswer: ["-8y-2"], problemType: "TextBox", stepTitle: "$$-\\left(2\\right) \\left(\\left(4\\right) y+\\left(1\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

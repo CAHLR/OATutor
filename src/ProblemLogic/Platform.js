@@ -22,14 +22,14 @@ class Platform extends React.Component {
     if (this.props.location.search.startsWith('?lis_person_name_full=')) {
       var name = this.props.location.search.replace('?lis_person_name_full=', '')
       context.studentName = name;
-      console.log(context.studentName);
+      //console.log(context.studentName);
     }
     this.problemIndex = {
       problems: problemPool
     };
     this.completedProbs = new Set();
     this.lesson = null;
-    console.log(this.props.lessonNum);
+    //console.log(this.props.lessonNum);
 
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
@@ -71,8 +71,8 @@ class Platform extends React.Component {
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     }, () => {
-      console.log(this.state.currProblem);
-      console.log(this.lesson);
+      //console.log(this.state.currProblem);
+      //console.log(this.lesson);
     });
   }
 
@@ -81,7 +81,7 @@ class Platform extends React.Component {
     this.setState({
       status: "lessonSelection",
     });
-    console.log(course);
+    //console.log(course);
   }
 
   _nextProblem = (context) => {
@@ -95,9 +95,13 @@ class Platform extends React.Component {
       var probMastery = 1;
       var isRelevant = false;
       for (var step of problem.steps) {
+        if (typeof step.knowledgeComponents === "undefined") {
+          continue;
+        }
         for (var kc of step.knowledgeComponents) {
-          if (context.bktParams[kc] === null) {
+          if (typeof context.bktParams[kc] === "undefined") {
             console.log("BKT Parameter " + kc + " does not exist.");
+            continue;
           }
           if (kc in this.lesson.learningObjectives) {
             isRelevant = true;
@@ -117,7 +121,7 @@ class Platform extends React.Component {
     }
 
     chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
-    console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
+    //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
     // There exists a skill that has not yet been mastered (a True)
     // Note (number <= null) returns false
@@ -151,11 +155,15 @@ class Platform extends React.Component {
         <AppBar position="static" >
           <Toolbar>
             <div style={{ flex: 1 }}>Open ITS</div>
+            {true ? 
             <Router>
               <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
                 <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
               </NavLink>
-            </Router>
+            </Router> : ""}
+            {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""} 
+            
+            
 
 
           </Toolbar>

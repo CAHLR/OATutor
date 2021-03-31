@@ -1,0 +1,1 @@
+import hints from "./FracDec17a-index.js"; const step = {id: "FracDec17a", stepAnswer: ["-144"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{5}{6} n-\\frac{1}{4} n-\\frac{1}{2} n=-12$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./SubAdd30a-index.js"; const step = {id: "SubAdd30a", stepAnswer: ["x=63"], problemType: "TextBox", stepTitle: "Twelve less than x is equal to 51.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

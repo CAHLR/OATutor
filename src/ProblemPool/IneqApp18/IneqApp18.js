@@ -1,0 +1,1 @@
+import steps from "./IneqApp18-index.js"; const problem = {id: "IneqApp18", title: "Moshde's Hairstyling Busine.js", body: "", steps: steps, }; export { problem };

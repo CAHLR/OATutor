@@ -1,0 +1,1 @@
+import hints from "./add8d-index.js"; const step = {id: "add8d", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "$$-|p|$$ when $$p=-11$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inequalities13a-index.js"; const step = {id: "inequalities13a", stepAnswer: ["[64, inf)"], problemType: "MultipleChoice", stepTitle: "$$24 \\leq \\frac{3}{8} m$$", stepBody: "", choices: ["[64, inf)", "(-inf, 64]", "(-inf, 9]"], answerType: "string", hints: hints}; export {step};

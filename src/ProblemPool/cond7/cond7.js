@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./cond7-index.js"; const problem = {id: "cond7", title: "Ice Cream", body: "70% of your friends like chocolate, and 35% like chocolate AND like strawberry.", steps: steps, }; export { problem };

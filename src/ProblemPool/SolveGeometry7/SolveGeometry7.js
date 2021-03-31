@@ -1,0 +1,1 @@
+import steps from "./SolveGeometry7-index.js"; const problem = {id: "SolveGeometry7", title: "Solve Applications Using Rectangle Properties", body: "", steps: steps, }; export { problem };

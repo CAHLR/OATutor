@@ -1,1 +1,0 @@
-import hints from "./IterIndex5a-index.js"; const step = {id: "IterIndex5a", stepAnswer: ["numbers.item(5)"], problemType: "TextBox", stepTitle: "How would you get the 4th element of an array named 'numbers'?", stepBody: "", answerType: "string", hints: hints}; export {step};

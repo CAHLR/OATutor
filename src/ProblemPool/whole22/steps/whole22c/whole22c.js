@@ -1,0 +1,1 @@
+import hints from "./whole22c-index.js"; const step = {id: "whole22c", stepAnswer: ["tens"], problemType: "MultipleChoice", stepTitle: "1", stepBody: "", choices: ["tens", "hundreds", "thousands", "ten thousands"], answerType: "string", hints: hints}; export {step};

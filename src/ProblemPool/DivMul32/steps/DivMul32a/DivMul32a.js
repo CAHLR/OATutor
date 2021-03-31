@@ -1,0 +1,1 @@
+import hints from "./DivMul32a-index.js"; const step = {id: "DivMul32a", stepAnswer: ["24"], problemType: "TextBox", stepTitle: "Three-fourths of p is 18.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

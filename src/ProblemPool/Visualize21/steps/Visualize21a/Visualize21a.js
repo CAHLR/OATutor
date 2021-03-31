@@ -1,0 +1,1 @@
+import hints from "./Visualize21a-index.js"; const step = {id: "Visualize21a", stepAnswer: ["$$\\frac{m-n}{p}$$"], problemType: "MultipleChoice", stepTitle: "The quotient of the difference of m and n, and p.", stepBody: "", choices: ["$$\\frac{m}{p}-n$$", "$$m-\\frac{n}{p}$$", "$$\\frac{m}{n}-p$$", "$$\\frac{m-n}{p}$$"], answerType: "string", hints: hints}; export {step};

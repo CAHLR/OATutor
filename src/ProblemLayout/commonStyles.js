@@ -54,6 +54,11 @@ const styles = theme => ({
 
   },
 
+  muiUsedHint: {
+    borderWidth: '1px',
+    borderColor: 'GoldenRod !important'
+  },
+
   inputHintField: {
     width: '10em',
     //marginLeft: '16em',
@@ -68,7 +73,6 @@ const styles = theme => ({
   checkImage: {
     width: '3em',
     marginLeft: '0.5em',
-    marginRight: '4.3em'
   },
 
   root: {
@@ -137,6 +141,17 @@ const styles = theme => ({
     alignItems: "center",
     paddingBottom: "3px",
   },
+  textBoxLatexUsedHint: {
+    borderRadius: "4px", 
+    boxShadow: "0 0 0.75pt 0.75pt GoldenRod",
+    '&:focus-within': {
+      border: "1px solid GoldenRod",
+    },
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingBottom: "3px",
+  }
 
 });
 

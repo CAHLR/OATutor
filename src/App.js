@@ -30,7 +30,9 @@ import {
   useBottomOutHints,
   autoCommands,
   autoOperatorNames,
-  middlewareURL
+  middlewareURL,
+  bkt2Index,
+  index2Bkt
 } from './config/config.js';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 let theme = createMuiTheme();
@@ -74,10 +76,12 @@ class App extends React.Component {
     d.setTime(d.getTime() + (3 * 365 * 24 * 60 * 60 * 1000)); // 3 years in the future
     var progress = {};
     for (const [skill, stats] of Object.entries(this.bktParams)) {
-      progress[skill] = Math.round(stats.probMastery * 100) / 100;
+      if (typeof bkt2Index[skill] !== 'undefined') {
+        progress[bkt2Index[skill]] = Math.round(stats.probMastery * 100) / 100;
+      }
     }
-    console.log("Saving:");
-    console.log(progress);
+    console.log("Saving");
+    //console.log(progress);
     cookies.set("openITS-progress", progress, { path: "/", expires: d });
   }
 
@@ -87,11 +91,17 @@ class App extends React.Component {
       this.bktParams = this.originalBktParams;
       return;
     }
-    for (const [skill, stats] of Object.entries(this.bktParams)) {
-      stats.probMastery = progress[skill];
+    var uncompressedProgress = {}
+    for (const [idx, stats] of Object.entries(progress)) {
+      uncompressedProgress[index2Bkt[idx]] = stats;
     }
-    console.log("Successfully loaded progress:");
-    console.log(progress);
+    for (const [skill, stats] of Object.entries(this.bktParams)) {
+      if (typeof uncompressedProgress[skill] !== 'undefined') {
+        stats.probMastery = uncompressedProgress[skill];
+      }
+    }
+    //console.log("Successfully loaded progress:");
+    //console.log(this.bktParams);
   }
 
   render() {
@@ -118,19 +128,19 @@ class App extends React.Component {
             <div className="Router">
               <Switch>
                 <Route exact path="/" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} {...props}/>
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} {...props} />
                 )} />
                 <Route path="/courses/:courseNum" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} courseNum={props.match.params.courseNum} {...props}/>
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} courseNum={props.match.params.courseNum} {...props} />
                 )} />
                 <Route path="/lessons/:lessonNum" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props}/>
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props} />
                 )} />
                 <Route component={Notfound} />
               </Switch>
             </div>
           </Router>
-          
+
         </ThemeContext.Provider>
       </ThemeProvider>
     );

@@ -1,0 +1,1 @@
+import hints from "./DivMul9a-index.js"; const step = {id: "DivMul9a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$-g=3$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

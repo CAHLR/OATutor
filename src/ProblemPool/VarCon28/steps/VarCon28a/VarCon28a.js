@@ -1,0 +1,1 @@
+import hints from "./VarCon28a-index.js"; const step = {id: "VarCon28a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$\\frac{7}{8} x-\\left(12\\right)=-\\left(\\frac{1}{8}\\right) x-\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

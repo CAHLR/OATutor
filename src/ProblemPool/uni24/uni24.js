@@ -1,0 +1,1 @@
+import steps from "./uni24-index.js"; const problem = {id: "uni24", title: "Solve Uniform Motion Applications", body: "", steps: steps, }; export { problem };

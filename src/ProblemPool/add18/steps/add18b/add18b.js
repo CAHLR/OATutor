@@ -1,0 +1,1 @@
+import hints from "./add18b-index.js"; const step = {id: "add18b", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "-x, when $$x=-8$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

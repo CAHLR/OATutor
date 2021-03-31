@@ -1,1 +1,0 @@
-import hints from "./clt5c-index.js"; const step = {id: "clt5c", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "", stepBody: "What is the sample size?", answerType: "arithmetic", hints: hints}; export {step};

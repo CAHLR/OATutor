@@ -1,0 +1,1 @@
+import hints from "./realnumbers16b-index.js"; const step = {id: "realnumbers16b", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{\\left(-1\\right)21}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

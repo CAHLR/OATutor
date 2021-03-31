@@ -1,0 +1,1 @@
+import hints from "./VarCon33a-index.js"; const step = {id: "VarCon33a", stepAnswer: ["19"], problemType: "TextBox", stepTitle: "$$6x-17=\\left(5\\right) x+\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

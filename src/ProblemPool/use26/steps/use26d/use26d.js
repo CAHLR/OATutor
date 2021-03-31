@@ -1,0 +1,1 @@
+import hints from "./use26d-index.js"; const step = {id: "use26d", stepAnswer: ["y plus 3 is greater than 6."], problemType: "MultipleChoice", stepTitle: "$$y+\\left(3\\right)>6$$", stepBody: "", choices: ["y plus 3 is greater than 6.", "y plus 3 is less than 6.", "y plus 3 is equal to 6."], answerType: "string", hints: hints}; export {step};

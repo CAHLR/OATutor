@@ -1,0 +1,1 @@
+import steps from "./add1-index.js"; const problem = {id: "add1", title: "Simplifying Expre.jsions with Integers", body: "Simplify the following expre.jsion.", steps: steps, }; export { problem };

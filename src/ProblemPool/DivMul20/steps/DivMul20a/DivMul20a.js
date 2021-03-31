@@ -1,0 +1,1 @@
+import hints from "./DivMul20a-index.js"; const step = {id: "DivMul20a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$-\\left(4\\right) \\left(a-\\left(3\\right)\\right)-\\left(7\\right)=25$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

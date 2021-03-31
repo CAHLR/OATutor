@@ -1,0 +1,1 @@
+import steps from "./use10-index.js"; const problem = {id: "use10", title: "Evaluating Expre.jsions", body: "When $$x=6$$, evaluate:", steps: steps, }; export { problem };

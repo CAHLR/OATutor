@@ -1,0 +1,1 @@
+import hints from "./add17c-index.js"; const step = {id: "add17c", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "-(-6)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

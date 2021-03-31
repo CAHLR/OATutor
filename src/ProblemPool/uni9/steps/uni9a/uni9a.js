@@ -1,0 +1,1 @@
+import hints from "./uni9a-index.js"; const step = {id: "uni9a", stepAnswer: ["2.23"], problemType: "TextBox", stepTitle: "How long will it take them to be 330 miles apart (round to the nearest hundredth)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

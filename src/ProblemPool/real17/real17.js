@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real17-index.js"; const problem = {id: "real17", title: "Numeric Expressions", body: "Simplify the given expression.", steps: steps, }; export { problem };
+import steps from "./real17-index.js"; const problem = {id: "real17", title: "Numeric Expre.jsions", body: "Simplify the given expre.jsion.", steps: steps, }; export { problem };

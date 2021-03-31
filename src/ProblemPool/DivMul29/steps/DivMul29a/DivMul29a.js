@@ -1,0 +1,1 @@
+import hints from "./DivMul29a-index.js"; const step = {id: "DivMul29a", stepAnswer: ["-272"], problemType: "TextBox", stepTitle: "The quotient of y and -4 is 68.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./use25d-index.js"; const step = {id: "use25d", stepAnswer: ["x minus 7 is less than 1."], problemType: "MultipleChoice", stepTitle: "$$x-\\left(7\\right)<1$$", stepBody: "", choices: ["x minus 7 is less than 1.", "x minus 7 is equal to 1.", "x minus 7 is greater than 1."], answerType: "string", hints: hints}; export {step};

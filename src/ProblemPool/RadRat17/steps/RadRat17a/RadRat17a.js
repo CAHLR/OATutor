@@ -1,1 +1,1 @@
-import hints from "./RadRat17a-index.js"; const step = {id: "RadRat17a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "What is 343**(2/3)?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RadRat17a-index.js"; const step = {id: "RadRat17a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "What is $${\\left(343\\right)}^{\\frac{2}{3}}$$?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

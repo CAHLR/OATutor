@@ -1,0 +1,1 @@
+import steps from "./Multiply22-index.js"; const problem = {id: "Multiply22", title: "Simplify Expre.jsions with Integers", body: "Simplify the expre.jsion:", steps: steps, }; export { problem };

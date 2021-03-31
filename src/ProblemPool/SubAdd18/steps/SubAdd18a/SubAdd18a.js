@@ -1,0 +1,1 @@
+import hints from "./SubAdd18a-index.js"; const step = {id: "SubAdd18a", stepAnswer: ["x=18"], problemType: "TextBox", stepTitle: "$$9x-5-8x-6=7$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

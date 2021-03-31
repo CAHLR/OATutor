@@ -1,1 +1,0 @@
-var hints = [{id: "block3a-h1", type: "hint", dependencies: [], title: "Explanation", text: "No, because your wallet can be hacked or the wallet may not guarantee this consistency in the event of a double-spend attack."}, ]; export {hints};

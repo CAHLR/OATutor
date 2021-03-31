@@ -1,0 +1,1 @@
+import hints from "./Properties10a-index.js"; const step = {id: "Properties10a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "(-3.14)*(0)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

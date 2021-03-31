@@ -1,0 +1,1 @@
+import hints from "./inequalities2c-index.js"; const step = {id: "inequalities2c", stepAnswer: ["(-inf, 3/4]"], problemType: "MultipleChoice", stepTitle: "$$x \\geq \\frac{3}{4}$$", stepBody: "", choices: ["(-inf, 3/4]", "(-inf, 3/4)", "[-inf, 3]"], answerType: "string", hints: hints}; export {step};

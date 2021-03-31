@@ -1,0 +1,1 @@
+import hints from "./uni4b-index.js"; const step = {id: "uni4b", stepAnswer: ["50"], problemType: "TextBox", stepTitle: "Find the speed of Christopher.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

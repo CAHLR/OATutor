@@ -1,0 +1,1 @@
+import steps from "./VarCon21-index.js"; const problem = {id: "VarCon21", title: "Solve the equation", body: "", steps: steps, }; export { problem };

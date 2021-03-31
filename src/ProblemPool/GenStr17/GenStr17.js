@@ -1,0 +1,1 @@
+import steps from "./GenStr17-index.js"; const problem = {id: "GenStr17", title: "Solve the Equation", body: "", steps: steps, }; export { problem };

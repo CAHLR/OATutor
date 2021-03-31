@@ -1,0 +1,1 @@
+import steps from "./GenStr8-index.js"; const problem = {id: "GenStr8", title: "Solve the Equation", body: "", steps: steps, }; export { problem };

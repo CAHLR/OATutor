@@ -1,0 +1,1 @@
+import hints from "./Visualize20a-index.js"; const step = {id: "Visualize20a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\frac{\\operatorname{7}\\left(\\left(-1\\right)\\right)+\\operatorname{9}\\left(\\left(-3\\right)\\right)}{\\left(-5\\right) \\left(3\\right)-\\left(2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./use14a-index.js"; const step = {id: "use14a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "9p", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

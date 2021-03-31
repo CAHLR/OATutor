@@ -1,0 +1,1 @@
+import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expre.jsions", body: "", steps: steps, }; export { problem };

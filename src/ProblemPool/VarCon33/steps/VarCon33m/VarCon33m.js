@@ -1,0 +1,1 @@
+import hints from "./VarCon33m-index.js"; const step = {id: "VarCon33m", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$2.7w-80=\\left(1.2\\right) w+\\left(10\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

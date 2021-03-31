@@ -1,0 +1,1 @@
+import steps from "./IneqApp22-index.js"; const problem = {id: "IneqApp22", title: "Picking College Cla.jses", body: "", steps: steps, }; export { problem };

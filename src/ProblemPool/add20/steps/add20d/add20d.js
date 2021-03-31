@@ -1,0 +1,1 @@
+import hints from "./add20d-index.js"; const step = {id: "add20d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-\\left(-1\\right)6 \\left(-_\\right)-|\\left(-1\\right)6|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints}; export {step};

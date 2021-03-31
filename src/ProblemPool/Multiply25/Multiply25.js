@@ -1,0 +1,1 @@
+import steps from "./Multiply25-index.js"; const problem = {id: "Multiply25", title: "Translate Phrases to Expre.jsions with Integers", body: "In the following exercises, translate to an algebraic expre.jsion and simplify if po.jsible.", steps: steps, }; export { problem };

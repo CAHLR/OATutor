@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./TblFn2-index.js"; const problem = {id: "TblFn2", title: "Dog Ages", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./Properties23a-index.js"; const step = {id: "Properties23a", stepAnswer: ["8/23"], problemType: "TextBox", stepTitle: "$$\\frac{7}{15} \\frac{8}{23} \\frac{15}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

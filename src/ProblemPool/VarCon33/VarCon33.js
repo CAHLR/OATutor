@@ -1,0 +1,1 @@
+import steps from "./VarCon33-index.js"; const problem = {id: "VarCon33", title: "Solve Equations with Variables and Constants on Both Sides", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./probsolve24-index.js"; const problem = {id: "probsolve24", title: "Solve Number Problems", body: "", steps: steps, }; export { problem };

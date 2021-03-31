@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./complex23-index.js"; const problem = {id: "complex23", title: "Finding Complex Conjugates", body: "Find the complex conjugate of each number.", steps: steps, }; export { problem };
+import steps from "./complex23-index.js"; const problem = {id: "complex23", title: "Finding Complex Conjugates", body: "Find the complex conjugate of each number.", steps: steps, }; export { problem };

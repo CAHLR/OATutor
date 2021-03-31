@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord27-index.js"; const problem = {id: "RecCord27", title: "Real-World Applications", body: "", steps: steps, }; export { problem };
+import steps from "./RecCord27-index.js"; const problem = {id: "RecCord27", title: "Real-World Applications", body: "", steps: steps, }; export { problem };

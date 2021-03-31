@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./factor9a-index.js"; const step = {id: "factor9a", stepAnswer: ["(3x-5)(3x+5)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="9x^2-25"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor9a-index.js"; const step = {id: "factor9a", stepAnswer: ["(3x-5)(3x+5)"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) x^2-\\left(25\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./GenStr8a-index.js"; const step = {id: "GenStr8a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) \\left(m-\\left(4\\right)\\right)+\\left(3\\right)=-1$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

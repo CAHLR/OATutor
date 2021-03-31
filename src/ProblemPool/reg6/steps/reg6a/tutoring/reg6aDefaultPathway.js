@@ -1,1 +1,0 @@
-var hints = [{id: "reg6a-h1", type: "hint", dependencies: [], title: "nan", text: "Plug in $$x=60$$ into $$ŷ=101.32+2.48x$$"}, {id: "reg6a-h2", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["$250,120"], dependencies: ["reg6a-h1"], title: "nan", text: "Convert answer because ŷ is in thousands of dollars"}, ]; export {hints};

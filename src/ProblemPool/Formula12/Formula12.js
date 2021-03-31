@@ -1,0 +1,1 @@
+import steps from "./Formula12-index.js"; const problem = {id: "Formula12", title: "$$I=Prt$$", body: "The formula $$I=Prt$$ is used to calculate simple interest, I, for a principal, P, invested at rate, r, for t year.js Solve the formula $$I=Prt$$ to find the principal, P:", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./add21-index.js"; const problem = {id: "add21", title: "Order each of the following pairs of numbers, using < or >:", body: "", steps: steps, }; export { problem };

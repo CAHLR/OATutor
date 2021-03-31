@@ -1,0 +1,1 @@
+import hints from "./DivMul28a-index.js"; const step = {id: "DivMul28a", stepAnswer: ["-448"], problemType: "TextBox", stepTitle: "n divided by 8 is equal to -56.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./Properties29a-index.js"; const step = {id: "Properties29a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\frac{0}{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

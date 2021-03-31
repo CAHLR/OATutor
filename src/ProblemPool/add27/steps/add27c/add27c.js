@@ -1,0 +1,1 @@
+import hints from "./add27c-index.js"; const step = {id: "add27c", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$|0|$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

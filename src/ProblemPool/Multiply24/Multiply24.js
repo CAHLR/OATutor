@@ -1,0 +1,1 @@
+import steps from "./Multiply24-index.js"; const problem = {id: "Multiply24", title: "Evaluate Variable Expre.jsions with Integers", body: "Evaluate the expre.jsion:", steps: steps, }; export { problem };

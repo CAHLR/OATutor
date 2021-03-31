@@ -1,0 +1,1 @@
+import steps from "./Multiply1-index.js"; const problem = {id: "Multiply1", title: "Multiply", body: "Calculate the following expre.jsion.", steps: steps, }; export { problem };

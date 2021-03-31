@@ -1,1 +1,1 @@
-import hints from "./real17a-index.js"; const step = {id: "real17a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "What is 3-12*2+19?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real17a-index.js"; const step = {id: "real17a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "What is $$\\left(3\\right)-\\left(12\\right) \\left(2\\right)+\\left(19\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

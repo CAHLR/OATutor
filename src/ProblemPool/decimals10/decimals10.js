@@ -1,0 +1,1 @@
+import steps from "./decimals10-index.js"; const problem = {id: "decimals10", title: "How to Round Decimals", body: "", steps: steps, }; export { problem };

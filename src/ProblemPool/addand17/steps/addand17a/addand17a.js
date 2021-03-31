@@ -1,0 +1,1 @@
+import hints from "./addand17a-index.js"; const step = {id: "addand17a", stepAnswer: ["3/2"], problemType: "TextBox", stepTitle: "$$\\frac{x+y}{z}$$ when $$x=9$$, $$y=-18$$, and $$z=-6$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

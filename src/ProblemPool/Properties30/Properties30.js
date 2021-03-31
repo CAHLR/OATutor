@@ -1,0 +1,1 @@
+import steps from "./Properties30-index.js"; const problem = {id: "Properties30", title: "Simplify Expre.jsions Using the Distributive Property", body: "Simplify:", steps: steps, }; export { problem };

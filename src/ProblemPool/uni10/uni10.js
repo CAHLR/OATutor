@@ -1,0 +1,1 @@
+import steps from "./uni10-index.js"; const problem = {id: "uni10", title: "Walking v.js Biking", body: "When Katie Mae walks to school, it takes her 30 minute.js If she rides her bike, it takes her 15 minute.js Her speed is three miles per hour faster when she rides her bike than when she walk.js", steps: steps, }; export { problem };

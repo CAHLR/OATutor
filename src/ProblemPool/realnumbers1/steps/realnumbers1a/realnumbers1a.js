@@ -1,0 +1,1 @@
+import hints from "./realnumbers1a-index.js"; const step = {id: "realnumbers1a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$\\sqrt{25}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

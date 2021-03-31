@@ -1,1 +1,0 @@
-var hints = [{id: "block4a-h1", type: "hint", dependencies: [], title: "Explanation", text: "No, because the blockchain can always be forked."}, ]; export {hints};

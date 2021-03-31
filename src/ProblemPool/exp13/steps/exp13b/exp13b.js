@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./exp13b-index.js"; const step = {id: "exp13b", stepAnswer: ["32,768t^15"], problemType: "TextBox", stepTitle: <div> <InlineMath math="{\left(2t\right)}^{15}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp13b-index.js"; const step = {id: "exp13b", stepAnswer: ["32,768t^15"], problemType: "TextBox", stepTitle: "$${\\left(\\left(2\\right) t\\right)}^{15}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

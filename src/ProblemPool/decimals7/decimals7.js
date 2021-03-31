@@ -1,0 +1,1 @@
+import steps from "./decimals7-index.js"; const problem = {id: "decimals7", title: "How to Write Decimals", body: "", steps: steps, }; export { problem };

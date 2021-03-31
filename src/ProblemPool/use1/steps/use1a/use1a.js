@@ -1,0 +1,1 @@
+import hints from "./use1a-index.js"; const step = {id: "use1a", stepAnswer: ["31"], problemType: "TextBox", stepTitle: "$$x=5$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

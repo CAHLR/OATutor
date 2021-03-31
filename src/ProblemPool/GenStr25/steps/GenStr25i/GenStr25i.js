@@ -1,0 +1,1 @@
+import hints from "./GenStr25i-index.js"; const step = {id: "GenStr25i", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$-\\left(2\\right) \\left(\\left(11\\right)-\\left(7\\right) x\\right)+\\left(54\\right)=4$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
