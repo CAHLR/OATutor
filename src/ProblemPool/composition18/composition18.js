@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./composition18-index.js"; const problem = {id: "composition18", title: "Composition of Funtions With Exponents", body: "Given f(x)=2x**2+4x and g(x)=12x, find the following.", steps: steps, }; export { problem };
+import steps from "./composition18-index.js"; const problem = {id: "composition18", title: "Composition of Funtions With Exponents", body: "Given $$f(x)=\\left(2\\right) x^2+\\left(4\\right) x$$ and $$g(x)=12x$$, find the following.", steps: steps, }; export { problem };

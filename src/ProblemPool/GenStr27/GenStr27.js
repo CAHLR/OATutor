@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./GenStr27-index.js"; const problem = {id: "GenStr27", title: "Classify the Equation as a Conditional equation, an identity, or a contradiction.", body: "", steps: steps, }; export { problem };
+import steps from "./GenStr27-index.js"; const problem = {id: "GenStr27", title: "Cla.jsify the Equation as a Conditional equation, an identity, or a contradiction.", body: "", steps: steps, }; export { problem };

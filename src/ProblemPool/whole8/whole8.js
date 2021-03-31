@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./whole8-index.js"; const problem = {id: "whole8", title: "Divisibility Tests", body: "", steps: steps, }; export { problem };
+import steps from "./whole8-index.js"; const problem = {id: "whole8", title: "Divisibility Tests", body: "", steps: steps, }; export { problem };

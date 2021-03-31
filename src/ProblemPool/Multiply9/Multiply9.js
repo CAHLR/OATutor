@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply9-index.js"; const problem = {id: "Multiply9", title: "Evaluate Variable Equation with Integers", body: "", steps: steps, }; export { problem };
+import steps from "./Multiply9-index.js"; const problem = {id: "Multiply9", title: "Evaluate Variable Equation with Integers", body: "", steps: steps, }; export { problem };

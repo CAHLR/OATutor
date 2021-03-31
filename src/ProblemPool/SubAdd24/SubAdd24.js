@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./SubAdd24-index.js"; const problem = {id: "SubAdd24", title: "Solve the equation", body: "", steps: steps, }; export { problem };
+import steps from "./SubAdd24-index.js"; const problem = {id: "SubAdd24", title: "Solve the equation", body: "", steps: steps, }; export { problem };

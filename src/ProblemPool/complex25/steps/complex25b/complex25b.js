@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./complex25b-index.js"; const step = {id: "complex25b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: <div> Evaluate <InlineMath math="i^{18}"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./complex25b-index.js"; const step = {id: "complex25b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Evaluate $$i^{18}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

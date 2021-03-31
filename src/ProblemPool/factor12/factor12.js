@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor12-index.js"; const problem = {id: "factor12", title: "Factoring an Expression with Fractional or Negative Exponents.", body: "Factor the following expression.", steps: steps, }; export { problem };
+import steps from "./factor12-index.js"; const problem = {id: "factor12", title: "Factoring an Expre.jsion with Fractional or Negative Exponent.js", body: "Factor the following expre.jsion.", steps: steps, }; export { problem };

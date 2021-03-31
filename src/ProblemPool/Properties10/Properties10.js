@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties10-index.js"; const problem = {id: "Properties10", title: "Use the Properties of Zero", body: "Simplify the following exercise.", steps: steps, }; export { problem };
+import steps from "./Properties10-index.js"; const problem = {id: "Properties10", title: "Use the Properties of Zero", body: "Simplify the following exercise.", steps: steps, }; export { problem };

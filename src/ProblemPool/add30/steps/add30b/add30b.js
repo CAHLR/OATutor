@@ -1,1 +1,1 @@
-import hints from "./add30b-index.js"; const step = {id: "add30b", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "-(-10)___-abs(-10)", stepBody: "", choices: ["<", ">", "="], answerType: "string", hints: hints}; export {step};
+import hints from "./add30b-index.js"; const step = {id: "add30b", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-\\left(-1\\right)0 \\left(-_\\right)-|\\left(-1\\right)0|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints}; export {step};

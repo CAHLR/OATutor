@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./complex17-index.js"; const problem = {id: "complex17", title: "Dividing Complex Numbers", body: "Perform the indicated operation and express the result as a simplified complex number.", steps: steps, }; export { problem };
+import steps from "./complex17-index.js"; const problem = {id: "complex17", title: "Dividing Complex Numbers", body: "Perform the indicated operation and expre.js the result as a simplified complex number.", steps: steps, }; export { problem };

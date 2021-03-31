@@ -1,1 +1,1 @@
-import hints from "./GenStr24a-index.js"; const step = {id: "GenStr24a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "0.15*(40m-120)=0.5*(60m+12)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./GenStr24a-index.js"; const step = {id: "GenStr24a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$\\left(0.15\\right) \\left(\\left(40\\right) m-\\left(120\\right)\\right)=\\left(0.5\\right) \\left(\\left(60\\right) m+\\left(12\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

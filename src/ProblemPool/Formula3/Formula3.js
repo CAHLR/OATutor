@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Formula3-index.js"; const problem = {id: "Formula3", title: "Trinh's Distance", body: "", steps: steps, }; export { problem };
+import steps from "./Formula3-index.js"; const problem = {id: "Formula3", title: "Trinh's Distance", body: "", steps: steps, }; export { problem };

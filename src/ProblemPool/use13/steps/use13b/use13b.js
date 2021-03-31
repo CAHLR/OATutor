@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./use13b-index.js"; const step = {id: "use13b", stepAnswer: ["41"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\left(41\right) b^2"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use13b-index.js"; const step = {id: "use13b", stepAnswer: ["41"], problemType: "TextBox", stepTitle: "$$\\left(41\\right) b^2$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

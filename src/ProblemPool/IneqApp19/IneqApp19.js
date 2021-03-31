@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./IneqApp19-index.js"; const problem = {id: "IneqApp19", title: "Katherine's Meals", body: "", steps: steps, }; export { problem };
+import steps from "./IneqApp19-index.js"; const problem = {id: "IneqApp19", title: "Katherine's Meals", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./VarCon17-index.js"; const problem = {id: "VarCon17", title: "Solve Equations with Variables on Both Sides", body: "", steps: steps, }; export { problem };
+import steps from "./VarCon17-index.js"; const problem = {id: "VarCon17", title: "Solve Equations with Variables on Both Sides", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./real14-index.js"; const problem = {id: "real14", title: "Firefighter Allocation", body: "", steps: steps, }; export { problem };
+import steps from "./real14-index.js"; const problem = {id: "real14", title: "Firefighter Allocation", body: "", steps: steps, }; export { problem };

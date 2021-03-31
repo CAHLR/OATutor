@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RadRat4-index.js"; const problem = {id: "RadRat4", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, }; export { problem };
+import steps from "./RadRat4-index.js"; const problem = {id: "RadRat4", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, }; export { problem };

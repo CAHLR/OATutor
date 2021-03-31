@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Multiply20-index.js"; const problem = {id: "Multiply20", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, }; export { problem };
+import steps from "./Multiply20-index.js"; const problem = {id: "Multiply20", title: "Simplify Expre.jsions with Integers", body: "Simplify the expre.jsion:", steps: steps, }; export { problem };

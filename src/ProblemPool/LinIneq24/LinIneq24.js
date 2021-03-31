@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinIneq24-index.js"; const problem = {id: "LinIneq24", title: "Determining a Number within a Prescribed Distance", body: "", steps: steps, }; export { problem };
+import steps from "./LinIneq24-index.js"; const problem = {id: "LinIneq24", title: "Determining a Number within a Prescribed Distance", body: "", steps: steps, }; export { problem };

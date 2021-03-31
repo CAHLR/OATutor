@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./exp8-index.js"; const problem = {id: "exp8", title: "The Zero Exponent Rule of Exponents", body: "Simplify each expression using the zero exponent rule of exponents.", steps: steps, }; export { problem };
+import steps from "./exp8-index.js"; const problem = {id: "exp8", title: "The Zero Exponent Rule of Exponents", body: "Simplify each expre.jsion using the zero exponent rule of exponent.js", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Visualize12-index.js"; const problem = {id: "Visualize12", title: "Find the quotient:", body: "", steps: steps, }; export { problem };
+import steps from "./Visualize12-index.js"; const problem = {id: "Visualize12", title: "Find the quotient:", body: "", steps: steps, }; export { problem };

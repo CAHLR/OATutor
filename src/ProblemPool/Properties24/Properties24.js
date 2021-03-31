@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./Properties24-index.js"; const problem = {id: "Properties24", title: "Use the Identity and Inverse Properties of Multiplication", body: "Simplify:", steps: steps, }; export { problem };
+import steps from "./Properties24-index.js"; const problem = {id: "Properties24", title: "Use the Identity and Inverse Properties of Multiplication", body: "Simplify:", steps: steps, }; export { problem };

@@ -8,11 +8,11 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
-import checkAnswer from '../ProblemLogic/checkAnswer.js';
+import { checkAnswer} from '../ProblemLogic/checkAnswer.js';
 import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
 import MultipleChoice from './MultipleChoice.js';
 
 import EquationEditor from "equation-editor-react";
@@ -88,11 +88,11 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
     if (this.context.logData) {
       try{
-        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
+        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
       } catch {
         console.log("Unable to log to Firebase.");
       }
@@ -139,7 +139,7 @@ class ProblemCard extends React.Component {
         return { hintsFinished: prevState.hintsFinished }
       }, () => {
         if (this.context.logData) {
-          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", this.context.studentName);
+          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
         }
       });
     }
@@ -154,7 +154,7 @@ class ProblemCard extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
     }
   }
 
@@ -164,12 +164,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {renderText(this.step.stepTitle, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepTitle, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
           </div>
 
           {this.state.showHints ?
@@ -182,6 +182,7 @@ class ProblemCard extends React.Component {
                 hintStatus={this.state.hintsFinished}
                 submitHint={this.submitHint}
                 seed={this.props.seed}
+                stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
               />
               <br /></div>
             : ""}

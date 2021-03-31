@@ -1,1 +1,1 @@
-import hints from "./SubAdd17j-index.js"; const step = {id: "SubAdd17j", stepAnswer: ["z=-9.02"], problemType: "TextBox", stepTitle: "z+0.52=-8.5", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./SubAdd17j-index.js"; const step = {id: "SubAdd17j", stepAnswer: ["z=-9.02"], problemType: "TextBox", stepTitle: "$$z+\\left(0.52\\right)=-8.5$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

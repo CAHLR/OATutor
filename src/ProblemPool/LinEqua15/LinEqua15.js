@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./LinEqua15-index.js"; const problem = {id: "LinEqua15", title: "For the following exercises, solve the equation for x. State all x-values that are excluded from the solution set.", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua15-index.js"; const problem = {id: "LinEqua15", title: "For the following exercises, solve the equation for x. State all x-values that are excluded from the solution set.", body: "", steps: steps, }; export { problem };

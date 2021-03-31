@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./exp5-index.js"; const problem = {id: "exp5", title: "Using the Power Rule", body: "Write each of the following products with a single base. Do not simplify further.", steps: steps, }; export { problem };
+import steps from "./exp5-index.js"; const problem = {id: "exp5", title: "Using the Power Rule", body: "Write each of the following products with a single base. Do not simplify further.", steps: steps, }; export { problem };

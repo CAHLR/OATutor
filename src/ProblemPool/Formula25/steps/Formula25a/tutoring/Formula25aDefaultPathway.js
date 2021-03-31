@@ -1,1 +1,1 @@
-var hints = [{id: "Formula25a-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate y, we can subtract 8x from both sides of the equation, which gives us $$y=\\left(15\\right)-\\left(8\\right) x$$."}, ]; export {hints};
+var hints = [{id: "Formula25a-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate y, we can subtract 8x from both sides of the equation, which gives us $$y=15-8x$$."}, ]; export {hints};

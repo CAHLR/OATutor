@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RecCord7-index.js"; const problem = {id: "RecCord7", title: "Solve the equation for y in terms of x.", body: "Solve the equation for y in terms of x.", steps: steps, }; export { problem };
+import steps from "./RecCord7-index.js"; const problem = {id: "RecCord7", title: "Solve the equation for y in terms of x.", body: "Solve the equation for y in terms of x.", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./DivMul16m-index.js"; const step = {id: "DivMul16m", stepAnswer: ["72"], problemType: "TextBox", stepTitle: <div> <InlineMath math="\frac{2}{3} y=48"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul16m-index.js"; const step = {id: "DivMul16m", stepAnswer: ["72"], problemType: "TextBox", stepTitle: "$$\\frac{2}{3} y=48$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

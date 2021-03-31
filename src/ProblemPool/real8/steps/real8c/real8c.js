@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./real8c-index.js"; const step = {id: "real8c", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: <div> If <InlineMath math="x=-\left(4\right)"/>.</div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real8c-index.js"; const step = {id: "real8c", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: "If $$x=-4$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./RadRat2-index.js"; const problem = {id: "RadRat2", title: "Evaluating Principal Square Roots", body: "Evaluate each expression.", steps: steps, }; export { problem };
+import steps from "./RadRat2-index.js"; const problem = {id: "RadRat2", title: "Evaluating Principal Square Roots", body: "Evaluate each expre.jsion.", steps: steps, }; export { problem };

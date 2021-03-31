@@ -1,1 +1,1 @@
-import hints from "./whole8d-index.js"; const step = {id: "whole8d", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether 4,962 is divisible by 6", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./whole8d-index.js"; const step = {id: "whole8d", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether 4, 962 is divisible by 6", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

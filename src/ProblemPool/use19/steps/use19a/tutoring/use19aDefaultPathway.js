@@ -1,1 +1,1 @@
-var hints = [{id: "use19a-h1", type: "hint", dependencies: [], title: "Meaning of<=", text: "The sign \"<=\" means \"less than or equal to.\""}, ]; export {hints};
+var hints = [{id: "use19a-h1", type: "hint", dependencies: [], title: "Meaning of $$ \\leq $$", text: "The sign $$\" \\leq \"$$ means \"less than or equal to.\""}, ]; export {hints};

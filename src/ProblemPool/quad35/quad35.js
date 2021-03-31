@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad35-index.js"; const problem = {id: "quad35", title: "Solve Quadratics by Factoring", body: "For the following exercises, solve the quadratic equation by factoring.", steps: steps, }; export { problem };
+import steps from "./quad35-index.js"; const problem = {id: "quad35", title: "Solve Quadratics by Factoring", body: "For the following exercises, solve the quadratic equation by factoring.", steps: steps, }; export { problem };
