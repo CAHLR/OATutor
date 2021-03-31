@@ -1,1 +1,1 @@
-import steps from "./quad31-index.js"; const problem = {id: "quad31", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping", steps: steps, }; export { problem };
+import steps from "./quad31-index.js"; const problem = {id: "quad31", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping (please enter your answer as x, y).", steps: steps, }; export { problem };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import {
@@ -59,7 +60,7 @@ class Platform extends React.Component {
   componentDidMount() {
     if (this.props.lessonNum != null) {
       this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]);
-      console.log("loaded lesson "+ this.props.lessonNum);
+      console.log("loaded lesson " + this.props.lessonNum);
     } else if (this.props.courseNum != null) {
       this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
     }
@@ -86,7 +87,7 @@ class Platform extends React.Component {
 
   _nextProblem = (context) => {
     seed = Date.now().toString();
-    this.setState({seed: seed});
+    this.setState({ seed: seed });
     this.props.saveProgress();
     var chosenProblem = null;
 
@@ -154,26 +155,32 @@ class Platform extends React.Component {
       <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
         <AppBar position="static" >
           <Toolbar>
-            <div style={{ flex: 1 }}>Open ITS</div>
-            {true ? 
-            <Router>
-              <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
-                <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-              </NavLink>
-            </Router> : ""}
-            {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""} 
-            
-            
-
+            <Grid container spacing={0}>
+              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS</div></Grid>
+              <Grid item xs={6} key={2}>
+              <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
+                {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
+                </div></Grid>
+              <Grid item xs={3} key={3} >
+              <div style={{ textAlign: 'right' }}>
+                {true ?
+                  <Router>
+                    <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
+                      <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+                    </NavLink>
+                  </Router> : ""}
+                  </div>
+              </Grid>
+            </Grid>
 
           </Toolbar>
         </AppBar>
         {this.state.status === "courseSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse} removeProgress={this.props.removeProgress}/> : ""}
+          <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse} removeProgress={this.props.removeProgress} /> : ""}
         {this.state.status === "lessonSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} courseNum={this.props.courseNum}/> : ""}
+          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} courseNum={this.props.courseNum} /> : ""}
         {this.state.status === "learning" ?
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum}/> : ""}
+          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum} /> : ""}
         {this.state.status === "exhausted" ?
           <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
         {this.state.status === "graduated" ?

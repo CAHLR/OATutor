@@ -1,1 +1,1 @@
-import hints from "./RecCord10a-index.js"; const step = {id: "RecCord10a", stepAnswer: ["5sqrt(5)"], problemType: "TextBox", stepTitle: "Find the distance between the points (1, 4) and (11, 9).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RecCord10a-index.js"; const step = {id: "RecCord10a", stepAnswer: ["5sqrt(5)"], problemType: "TextBox", stepTitle: "Find the distance between the points (1,4) and (11,9).", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
