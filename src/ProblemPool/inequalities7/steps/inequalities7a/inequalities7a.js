@@ -1,0 +1,1 @@
+import hints from "./inequalities7a-index.js"; const step = {id: "inequalities7a", stepAnswer: ["(-inf, 6)"], problemType: "MultipleChoice", stepTitle: "7y<​​42", stepBody: "", choices: ["(-inf, 6]", "(-inf, 6)", "(6, inf)"], answerType: "string", hints: hints}; export {step};

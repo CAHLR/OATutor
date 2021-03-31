@@ -1,0 +1,1 @@
+import steps from "./Formula29-index.js"; const problem = {id: "Formula29", title: "In the following exercises, solve.", body: "", steps: steps, }; export { problem };

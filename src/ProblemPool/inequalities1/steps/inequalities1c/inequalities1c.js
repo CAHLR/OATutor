@@ -1,0 +1,1 @@
+import hints from "./inequalities1c-index.js"; const step = {id: "inequalities1c", stepAnswer: ["(-inf, -3/5]"], problemType: "MultipleChoice", stepTitle: "$$x \\leq \\frac{-\\left(3\\right)}{5}$$", stepBody: "", choices: ["(-inf, -3/5]", "[-inf, -3/5]", "(-inf, 3/5)"], answerType: "string", hints: hints}; export {step};

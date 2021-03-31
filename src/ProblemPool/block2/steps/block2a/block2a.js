@@ -1,1 +1,0 @@
-import hints from "./block2a-index.js"; const step = {id: "block2a", stepAnswer: ["False"], problemType: "MultipleChoice", stepTitle: "", stepBody: "By waiting the requisite number of blocks, we can always ensure that other forks are highly unlikely.", choices: ["True", "False"], answerType: "string", hints: hints}; export {step};

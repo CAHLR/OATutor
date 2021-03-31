@@ -1,0 +1,1 @@
+import steps from "./other10-index.js"; const problem = {id: "other10", title: "Solve the equation", body: "Solve the equation involving $$absolute$$ value.", steps: steps, }; export { problem };

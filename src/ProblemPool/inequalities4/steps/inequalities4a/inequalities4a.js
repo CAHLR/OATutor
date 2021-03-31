@@ -1,0 +1,1 @@
+import hints from "./inequalities4a-index.js"; const step = {id: "inequalities4a", stepAnswer: ["(-inf, 9/8]"], problemType: "MultipleChoice", stepTitle: "$$n-\\frac{1}{2} \\leq \\frac{5}{8}$$", stepBody: "", choices: ["(9/8, inf)", "[9/8, inf)", "(-inf, 9/8]"], answerType: "string", hints: hints}; export {step};

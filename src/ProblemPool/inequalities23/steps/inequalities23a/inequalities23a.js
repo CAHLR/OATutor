@@ -1,0 +1,1 @@
+import hints from "./inequalities23a-index.js"; const step = {id: "inequalities23a", stepAnswer: ["(-inf, $$-15)$$"], problemType: "MultipleChoice", stepTitle: "$$-\\left(7\\right) d>105$$", stepBody: "", choices: ["(-inf, $$-15)$$", "(-inf, 15]", "$$(-15$$, inf)"], answerType: "string", hints: hints}; export {step};

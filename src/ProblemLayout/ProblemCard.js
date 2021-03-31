@@ -8,11 +8,11 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
-import checkAnswer from '../ProblemLogic/checkAnswer.js';
+import { checkAnswer} from '../ProblemLogic/checkAnswer.js';
 import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
 import MultipleChoice from './MultipleChoice.js';
 
 import EquationEditor from "equation-editor-react";
@@ -25,7 +25,7 @@ class ProblemCard extends React.Component {
 
   constructor(props, context) {
     super(props);
-    console.log("Reconstructing");
+    //console.log("Reconstructing");
     this.step = props.step;
     this.index = props.index;
     this.hints = this.step.hints[context.hintPathway];
@@ -73,7 +73,8 @@ class ProblemCard extends React.Component {
       checkMarkOpacity: '0',
       showHints: false,
       hintsFinished: new Array(this.hints.length).fill(0),
-      equation: ''
+      equation: '',
+      usedHints: false
     }
   }
 
@@ -87,10 +88,14 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
-    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, this.step.variabilization, this.props.seed);
+    const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
     if (this.context.logData) {
-      this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", this.context.studentName);
+      try{
+        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
+      } catch {
+        console.log("Unable to log to Firebase.");
+      }
     }
 
     this.setState({
@@ -122,7 +127,8 @@ class ProblemCard extends React.Component {
 
   unlockHint = (hintNum, hintType) => {
     // Mark question as wrong if hints are used (on the first time)
-    if (this.state.hintsFinished.reduce((a, b) => a + b) === 0) {
+    if (this.state.hintsFinished.reduce((a, b) => a + b) === 0 && this.state.isCorrect !== true) {
+      this.setState({usedHints: true});
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
 
@@ -133,7 +139,7 @@ class ProblemCard extends React.Component {
         return { hintsFinished: prevState.hintsFinished }
       }, () => {
         if (this.context.logData) {
-          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", this.context.studentName);
+          this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
         }
       });
     }
@@ -148,7 +154,7 @@ class ProblemCard extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
     }
   }
 
@@ -158,12 +164,12 @@ class ProblemCard extends React.Component {
       <Card className={classes.card}>
         <CardContent>
           <h2 className={classes.stepHeader}>
-            {renderText(this.step.stepTitle, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepTitle, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
             <hr />
           </h2>
 
           <div className={classes.stepBody}>
-            {renderText(this.step.stepBody, this.props.problemID, this.step, this.props.seed)}
+            {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
           </div>
 
           {this.state.showHints ?
@@ -176,6 +182,7 @@ class ProblemCard extends React.Component {
                 hintStatus={this.state.hintsFinished}
                 submitHint={this.submitHint}
                 seed={this.props.seed}
+                stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
               />
               <br /></div>
             : ""}
@@ -185,14 +192,28 @@ class ProblemCard extends React.Component {
             <Grid container spacing={0} justify="center" alignItems="center">
               <Grid item xs={1} md={this.step.problemType === "TextBox" ? 4 : false} />
               <Grid item xs={9} md={this.step.problemType === "TextBox" ? 3 : 11}>
-                {this.step.problemType === "TextBox" ?
-                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect :  classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
+                {(this.step.problemType === "TextBox"  && this.step.answerType !== "string") ?
+                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : (this.state.usedHints ? classes.textBoxLatexUsedHint : classes.textBoxLatex)} style={{ height: "50px", width: "100%" }}>
                   <EquationEditor
                     value={this.state.inputVal}
                     onChange={(eq) => this.setState({ inputVal: eq })}
                     autoCommands={this.context.autoCommands}
                     autoOperatorNames={this.context.autoOperatorNames}
                   /></center> : ""}
+                {(this.step.problemType === "TextBox" && this.step.answerType === "string") ?
+                      <TextField
+                        inputProps={{min: 0, style: { textAlign: 'center' }}}
+                        error={this.state.isCorrect === false}
+                        className={classes.inputField}
+                        variant="outlined"
+                        onChange={(evt) => this.editInput(evt)}
+                        onKeyPress={(evt) => this.handleKey(evt)}
+                        InputProps={{
+                          classes: {
+                            notchedOutline: ((this.state.isCorrect !== false && this.state.usedHints) ? classes.muiUsedHint : null)
+                          }
+                        }}>
+                      </TextField> : ""}
                 {this.step.problemType === "MultipleChoice" ?
                   <MultipleChoice
                     onChange={(evt) => this.editInput(evt)}
@@ -226,9 +247,9 @@ class ProblemCard extends React.Component {
             </Grid>
             <Grid item xs={4} sm={3} md={1}>
               <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%"}} alt=""
                   src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%", marginLeft: "90%" }} alt=""
+                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }} alt=""
                   src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
               </div>
             </Grid>

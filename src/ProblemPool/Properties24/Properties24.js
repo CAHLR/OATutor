@@ -1,0 +1,1 @@
+import steps from "./Properties24-index.js"; const problem = {id: "Properties24", title: "Use the Identity and Inverse Properties of Multiplication", body: "Simplify:", steps: steps, }; export { problem };

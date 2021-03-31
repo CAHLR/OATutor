@@ -1,0 +1,1 @@
+var hints = [{id: "use14a-h1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["9"], dependencies: [], title: "Identify the Coefficient", text: "What is the value that is muliplied to the variable of the expression?"}, ]; export {hints};

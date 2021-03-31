@@ -1,0 +1,1 @@
+import hints from "./inequalities1a-index.js"; const step = {id: "inequalities1a", stepAnswer: ["$$[-3$$, inf)"], problemType: "MultipleChoice", stepTitle: "$$x \\geq -3$$", stepBody: "", choices: ["$$[-3$$, in)", "[3, inf)", "(-inf, inf)"], answerType: "string", hints: hints}; export {step};

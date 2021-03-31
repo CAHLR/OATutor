@@ -1,0 +1,1 @@
+import hints from "./add29a-index.js"; const step = {id: "add29a", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$|\\left(-9\\right)| \\left(-_\\right)-|\\left(-9\\right)|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints}; export {step};

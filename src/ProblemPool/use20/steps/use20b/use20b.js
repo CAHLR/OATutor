@@ -1,0 +1,1 @@
+import hints from "./use20b-index.js"; const step = {id: "use20b", stepAnswer: ["Expression"], problemType: "MultipleChoice", stepTitle: "$$\\left(4\\right) \\left(y-\\left(1\\right)\\right)+\\left(1\\right)$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints}; export {step};

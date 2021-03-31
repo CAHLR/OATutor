@@ -1,0 +1,1 @@
+import steps from "./Formula14-index.js"; const problem = {id: "Formula14", title: "Solve the formula $$\\left(3\\right) x+\\left(4\\right) y=10$$ for y:", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./other4a-index.js"; const step = {id: "other4a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$${\\left(8\\right)}^{\\frac{2}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

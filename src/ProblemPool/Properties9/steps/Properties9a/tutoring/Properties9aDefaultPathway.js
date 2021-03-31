@@ -1,0 +1,1 @@
+var hints = [{id: "Properties9a-h1", type: "hint", dependencies: [], title: "Division of zero", text: "Recall that for any real number a, except 0, $$\\frac{0}{a}=0$$."}, {id: "Properties9a-h2", type: "hint", dependencies: ["Properties9a-h1"], title: "Answer", text: "Therefore, $$\\frac{0}{6}=0$$."}, ]; export {hints};

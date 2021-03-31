@@ -1,0 +1,1 @@
+import hints from "./inequalities26a-index.js"; const step = {id: "inequalities26a", stepAnswer: ["(-inf, 8]"], problemType: "MultipleChoice", stepTitle: "$$4v \\geq 9v-40$$", stepBody: "", choices: ["(-inf, $$-8]$$", "(-inf, 8]", "(8, inf)"], answerType: "string", hints: hints}; export {step};

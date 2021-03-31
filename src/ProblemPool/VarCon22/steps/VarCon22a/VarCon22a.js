@@ -1,0 +1,1 @@
+import hints from "./VarCon22a-index.js"; const step = {id: "VarCon22a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$8q-5=-\\left(4\\right) q+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

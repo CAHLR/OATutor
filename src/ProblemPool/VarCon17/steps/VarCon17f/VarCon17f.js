@@ -1,0 +1,1 @@
+import hints from "./VarCon17f-index.js"; const step = {id: "VarCon17f", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$-11r-8=-7r$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

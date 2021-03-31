@@ -1,0 +1,1 @@
+import steps from "./percent8-index.js"; const problem = {id: "percent8", title: "Translate and Solve Basic Percent Equations", body: "", steps: steps, }; export { problem };

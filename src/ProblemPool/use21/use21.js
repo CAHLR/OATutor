@@ -1,0 +1,1 @@
+import steps from "./use21-index.js"; const problem = {id: "use21", title: "Simplifying an Expre.jsion Raised to a Power", body: "Simplify the expre.jsion.", steps: steps, }; export { problem };

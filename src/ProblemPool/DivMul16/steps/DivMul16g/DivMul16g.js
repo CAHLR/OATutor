@@ -1,0 +1,1 @@
+import hints from "./DivMul16g-index.js"; const step = {id: "DivMul16g", stepAnswer: ["140"], problemType: "TextBox", stepTitle: "$$\\frac{x}{4}=35$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./SubAdd30-index.js"; const problem = {id: "SubAdd30", title: "Translate and solve", body: "", steps: steps, }; export { problem };

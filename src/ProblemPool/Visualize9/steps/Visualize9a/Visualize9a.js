@@ -1,0 +1,1 @@
+import hints from "./Visualize9a-index.js"; const step = {id: "Visualize9a", stepAnswer: ["-10/(3n)"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(\\frac{2}{3}\\right)}{\\frac{n}{5}}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

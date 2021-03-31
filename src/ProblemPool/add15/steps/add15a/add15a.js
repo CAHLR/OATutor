@@ -1,0 +1,1 @@
+import hints from "./add15a-index.js"; const step = {id: "add15a", stepAnswer: ["-70"], problemType: "TextBox", stepTitle: "$$-\\left(42\\right)+\\left(-2\\right)8$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

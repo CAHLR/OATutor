@@ -1,0 +1,1 @@
+import steps from "./DivMul27-index.js"; const problem = {id: "DivMul27", title: "Translate and Solve", body: "", steps: steps, }; export { problem };

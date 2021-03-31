@@ -1,0 +1,1 @@
+import hints from "./probsolve13a-index.js"; const step = {id: "probsolve13a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "Two-fifths of the songs in Mariel’s playlist are country. If there are 16 country songs, what is the total number of songs in the playlist?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

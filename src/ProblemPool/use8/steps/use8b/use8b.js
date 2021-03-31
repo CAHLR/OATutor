@@ -1,0 +1,1 @@
+import hints from "./use8b-index.js"; const step = {id: "use8b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$y=5$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./Properties14a-index.js"; const step = {id: "Properties14a", stepAnswer: ["22n+9"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) \\left(\\left(2\\right) n+\\left(9\\right)\\right)+\\left(12\\right) \\left(n-\\left(3\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

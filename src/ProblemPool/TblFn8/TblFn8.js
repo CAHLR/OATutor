@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./TblFn8-index.js"; const problem = {id: "TblFn8", title: "Getting Column Values", body: "", steps: steps, }; export { problem };

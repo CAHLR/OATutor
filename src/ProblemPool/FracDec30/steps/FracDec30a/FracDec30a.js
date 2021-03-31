@@ -1,0 +1,1 @@
+import hints from "./FracDec30a-index.js"; const step = {id: "FracDec30a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "Solve: $$\\left(0.05\\right) \\left(q-\\left(8\\right)\\right)+\\left(0.25\\right) q=4.10$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./DivMul16f-index.js"; const step = {id: "DivMul16f", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-13x=0$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

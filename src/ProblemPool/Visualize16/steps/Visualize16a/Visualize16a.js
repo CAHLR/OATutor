@@ -1,0 +1,1 @@
+import hints from "./Visualize16a-index.js"; const step = {id: "Visualize16a", stepAnswer: ["4/q"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{p}{2}}{\\frac{pq}{8}}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

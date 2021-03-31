@@ -1,0 +1,1 @@
+import hints from "./SubAdd1a-index.js"; const step = {id: "SubAdd1a", stepAnswer: ["TRUE"], problemType: "MultipleChoice", stepTitle: "$$4x-2=\\left(2\\right) x+\\left(1\\right)$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints}; export {step};

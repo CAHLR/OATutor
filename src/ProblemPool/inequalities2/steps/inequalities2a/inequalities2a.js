@@ -1,0 +1,1 @@
+import hints from "./inequalities2a-index.js"; const step = {id: "inequalities2a", stepAnswer: ["(2, inf)"], problemType: "MultipleChoice", stepTitle: "$$x>2$$", stepBody: "", choices: ["[2, inf)", "(2, inf)", "(2, inf]"], answerType: "string", hints: hints}; export {step};

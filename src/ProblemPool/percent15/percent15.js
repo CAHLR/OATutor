@@ -1,0 +1,1 @@
+import steps from "./percent15-index.js"; const problem = {id: "percent15", title: "Solve Applications of Percent", body: "", steps: steps, }; export { problem };

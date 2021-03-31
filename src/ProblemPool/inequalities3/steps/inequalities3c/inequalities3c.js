@@ -1,0 +1,1 @@
+import hints from "./inequalities3c-index.js"; const step = {id: "inequalities3c", stepAnswer: ["(inf, -2/3)"], problemType: "MultipleChoice", stepTitle: "$$x<\\frac{-\\left(2\\right)}{3}$$", stepBody: "", choices: ["(-inf, -2/3)", "(-inf, -2/3]", "(-2/3, inf)"], answerType: "string", hints: hints}; export {step};

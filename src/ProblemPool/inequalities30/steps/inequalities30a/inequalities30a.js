@@ -1,0 +1,1 @@
+import hints from "./inequalities30a-index.js"; const step = {id: "inequalities30a", stepAnswer: ["[3, inf)"], problemType: "MultipleChoice", stepTitle: "$$6h-4(h-1) \\leq 7h-11$$", stepBody: "", choices: ["[3, inf)", "$$[-3$$, inf)", "(-inf, 3]"], answerType: "string", hints: hints}; export {step};

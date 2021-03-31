@@ -6,7 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
-import renderText from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
 
 class HintSystem extends React.Component {
@@ -66,7 +66,7 @@ class HintSystem extends React.Component {
       return { subHintsFinished: prevState.subHintsFinished }
     }, () => {
       if (this.context.logData) {
-        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", this.context.studentName);
+        this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", chooseVariables(this.props.stepVars, this.props.seed), this.context.studentName);
       }
     });
   }
@@ -79,7 +79,7 @@ class HintSystem extends React.Component {
       });
     }
     if (this.context.logData) {
-      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, this.context.studentName);
+      this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed), this.context.studentName);
     }
   }
 
@@ -99,13 +99,13 @@ class HintSystem extends React.Component {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID)}</Typography>
+                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography component={'span'} style={{ width: "100%" }}>
-                {renderText(hint.text, this.props.problemID)}
+                {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
+                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint} seed={this.props.seed} hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                     toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
                 {this.state.showSubHints[i] && hint.subHints !== undefined ?
                   <div className="SubHints">
@@ -117,6 +117,8 @@ class HintSystem extends React.Component {
                       hintStatus={this.state.subHintsFinished[i]}
                       submitHint={this.submitSubHint}
                       parent={i}
+                      seed={this.props.seed}
+                      hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                     />
                     <br /></div>
                   : ""}

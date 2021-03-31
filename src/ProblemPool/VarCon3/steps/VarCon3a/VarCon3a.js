@@ -1,0 +1,1 @@
+import hints from "./VarCon3a-index.js"; const step = {id: "VarCon3a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) a+\\left(3\\right)=-37$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

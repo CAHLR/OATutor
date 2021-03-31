@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor23-index.js"; const problem = {id: "factor23", title: "Factoring a Difference of Sqaures.", body: "Factor the following polynomial.", steps: steps, }; export { problem };
+import steps from "./factor23-index.js"; const problem = {id: "factor23", title: "Factoring a Difference of Sqaure.js", body: "Factor the following polynomial.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./Properties3-index.js"; const problem = {id: "Properties3", title: "Simplify the following expre.jsion.", body: "", steps: steps, }; export { problem };

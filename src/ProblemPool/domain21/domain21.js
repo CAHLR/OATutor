@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain21-index.js"; const problem = {id: "domain21", title: "Finding the Domain of a Function with an Even Root", body: "Find the domain of the following function using interval notation.", steps: steps, }; export { problem };
+import steps from "./domain21-index.js"; const problem = {id: "domain21", title: "Finding the Domain of a Function with an Even Root", body: "Find the domain of the following function using interval notation.", steps: steps, }; export { problem };

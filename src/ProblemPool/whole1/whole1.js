@@ -1,0 +1,1 @@
+import steps from "./whole1-index.js"; const problem = {id: "whole1", title: "How to Round Whole Numbers", body: "", steps: steps, }; export { problem };

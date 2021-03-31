@@ -1,0 +1,1 @@
+import steps from "./Visualize15-index.js"; const problem = {id: "Visualize15", title: "Find the quotient:", body: "", steps: steps, }; export { problem };

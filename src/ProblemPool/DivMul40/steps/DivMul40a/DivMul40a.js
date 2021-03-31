@@ -1,0 +1,1 @@
+import hints from "./DivMul40a-index.js"; const step = {id: "DivMul40a", stepAnswer: ["5.83"], problemType: "TextBox", stepTitle: "What is the cost for each person?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

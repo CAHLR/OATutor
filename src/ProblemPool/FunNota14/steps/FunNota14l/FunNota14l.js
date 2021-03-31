@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./FunNota14l-index.js"; const step = {id: "FunNota14l", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: <div> <InlineMath math="2xy=1"/></div>, stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./FunNota14l-index.js"; const step = {id: "FunNota14l", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$2xy=1$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};

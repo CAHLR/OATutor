@@ -1,0 +1,1 @@
+import steps from "./realnumbers8-index.js"; const problem = {id: "realnumbers8", title: "Identifying Different Types of Numbers #1", body: "Write the following numbers as the ratio of two integer.js", steps: steps, }; export { problem };

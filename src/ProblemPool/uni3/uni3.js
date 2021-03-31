@@ -1,0 +1,1 @@
+import steps from "./uni3-index.js"; const problem = {id: "uni3", title: "Driving Speed", body: "Jeromy can drive from his house in Cleveland to his college in Chicago in 4.5 hour.js It takes his mother 6 hours to make the same drive. Jeromy drives 20 miles per hour faster than his mother.", steps: steps, }; export { problem };

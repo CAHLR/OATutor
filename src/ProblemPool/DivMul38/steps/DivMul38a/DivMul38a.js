@@ -1,0 +1,1 @@
+import hints from "./DivMul38a-index.js"; const step = {id: "DivMul38a", stepAnswer: ["$1.79"], problemType: "TextBox", stepTitle: "What was the cost of one pound of grapes?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

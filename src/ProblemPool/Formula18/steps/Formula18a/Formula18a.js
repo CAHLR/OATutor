@@ -1,0 +1,1 @@
+import hints from "./Formula18a-index.js"; const step = {id: "Formula18a", stepAnswer: ["8.5"], problemType: "TextBox", stepTitle: "Solve for t when $$d=510$$ and $$r=60$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

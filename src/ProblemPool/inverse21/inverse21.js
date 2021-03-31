@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./inverse21-index.js"; const problem = {id: "inverse21", title: "Finding the Inverse", body: "", steps: steps, }; export { problem };
+import steps from "./inverse21-index.js"; const problem = {id: "inverse21", title: "Finding the Inverse", body: "", steps: steps, }; export { problem };

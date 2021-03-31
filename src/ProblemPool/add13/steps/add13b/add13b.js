@@ -1,0 +1,1 @@
+import hints from "./add13b-index.js"; const step = {id: "add13b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\left(2\\right)+\\left(-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

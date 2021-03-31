@@ -1,0 +1,1 @@
+import steps from "./decimals21-index.js"; const problem = {id: "decimals21", title: "Convert each percent to a decimal:", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./use22-index.js"; const problem = {id: "use22", title: "Simplifying Expre.jsions", body: "Simplify the expre.jsion.js", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./Multiply27a-index.js"; const step = {id: "Multiply27a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$\\left(\\left(8\\right)-\\left(11\\right)\\right) \\left(\\left(9\\right)-\\left(12\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

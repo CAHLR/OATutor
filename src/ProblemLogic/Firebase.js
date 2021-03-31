@@ -2,7 +2,7 @@ import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
-var problemSubmissionsOutput = "problemSubmissions";
+var problemSubmissionsOutput = "problemSubmissionsDev";
 var feedbackOutput = "feedback";
 
 class Firebase {
@@ -44,7 +44,7 @@ class Firebase {
     });
   }
 
-  getDate() {
+  _getDate() {
     var today = new Date();
     return (today.getMonth() + 1) + '-' +
       today.getDate() + '-' +
@@ -54,8 +54,8 @@ class Firebase {
       (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
   }
 
-  log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, canvasStudentID) {
-    var date = this.getDate();
+  log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, canvasStudentID) {
+    var date = this._getDate();
     var data = {
       timeStamp: date,
       eventType: eventType,
@@ -64,7 +64,7 @@ class Firebase {
       problemID: problemID,
       stepID: step.id,
       hintID: null,
-      input: inputVal,
+      input: typeof inputVal !== 'undefined' ? inputVal : null,
       correctAnswer: step.stepAnswer,
       isCorrect: isCorrect,
       hintInput: null,
@@ -72,14 +72,15 @@ class Firebase {
       hintIsCorrect: null,
       treatment: this.treatment,
       hintsFinished: hintsFinished,
-      canvasStudentID: canvasStudentID
+      canvasStudentID: canvasStudentID,
+      variablization: variabilization
     }
-    console.log(data);
+    //console.log(data);
     return this.writeData(problemSubmissionsOutput, date, data);
   }
 
-  hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, canvasStudentID) {
-    var date = this.getDate();
+  hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, canvasStudentID) {
+    var date = this._getDate();
     var data = {
       timeStamp: date,
       eventType: "hintScaffoldLog",
@@ -91,19 +92,19 @@ class Firebase {
       input: null,
       correctAnswer: null,
       isCorrect: null,
-      hintInput: hintInput,
+      hintInput: typeof hintInput !== 'undefined' ? hintInput : null,
       hintAnswer: hint.hintAnswer,
       hintIsCorrect: isCorrect,
       treatment: this.treatment,
       hintsFinished: hintsFinished,
-      canvasStudentID: canvasStudentID
+      canvasStudentID: canvasStudentID,
+      variablization: variabilization
     }
-    console.log(data);
     return this.writeData(problemSubmissionsOutput, date, data);
   }
 
   mouseLog(payload) {
-    var date = this.getDate();
+    var date = this._getDate();
     if (this.mouseLogBuffer.length > 0) {
       if (!(Math.abs(payload.position.x - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].x) > GRANULARITY ||
         Math.abs(payload.position.y - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].y) > GRANULARITY
@@ -135,7 +136,7 @@ class Firebase {
   }
 
   submitFeedback(problemID, feedback, problemFinished, canvasStudentID) {
-    var date = this.getDate();
+    var date = this._getDate();
     var data = {
       timeStamp: date,
       siteVersion: this.siteVersion,
@@ -144,7 +145,8 @@ class Firebase {
       treatment: this.treatment,
       problemFinished: problemFinished,
       feedback: feedback,
-      canvasStudentID: canvasStudentID
+      canvasStudentID: canvasStudentID,
+      status: "open"
     }
     return this.writeData(feedbackOutput, date, data);
   }

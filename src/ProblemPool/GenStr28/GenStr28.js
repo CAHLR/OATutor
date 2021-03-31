@@ -1,0 +1,1 @@
+import steps from "./GenStr28-index.js"; const problem = {id: "GenStr28", title: "Cla.jsify the Equation as a Conditional equation, an identity, or a contradiction.", body: "", steps: steps, }; export { problem };

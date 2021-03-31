@@ -1,10 +1,11 @@
 import React from 'react';
 //import lessonPlans from './lessonPlans.js'
 import courses from './coursePlans.js';
+import {bkt2Index, index2Bkt} from './bktIndex.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 0.5;
-const logData = false;
+const siteVersion = 1.04;
+const logData = true;
 const logMouseData = false;
 const debug = false;
 const useBottomOutHints = true;
@@ -22,10 +23,9 @@ const GRANULARITY = 5;
 const autoCommands = "pi theta sqrt sum prod alpha beta gamma rho";
 const autoOperatorNames = "sin cos tan";
 
-const middlewareURL = "http://169.229.192.135:1339";
+const middlewareURL = "https://askoski.berkeley.edu:1339";
 
 var coursePlans = courses.sort((a,b) => a.courseName.localeCompare(b.courseName));
-console.log(coursePlans);
 
 var lessonCounter = 0;
 var lessonPlans = [];
@@ -52,5 +52,7 @@ export {ThemeContext,
     GRANULARITY,
     autoCommands,
     autoOperatorNames,
-    middlewareURL
+    middlewareURL,
+    bkt2Index, 
+    index2Bkt
 };

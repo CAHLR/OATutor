@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./quad13-index.js"; const problem = {id: "quad13", title: "Solving a Quadratic Equation Using the Square Root Property", body: "Solve the quadratic equation.", steps: steps, }; export { problem };
+import steps from "./quad13-index.js"; const problem = {id: "quad13", title: "Solving a Quadratic Equation Using the Square Root Property", body: "Solve the quadratic equation.", steps: steps, }; export { problem };

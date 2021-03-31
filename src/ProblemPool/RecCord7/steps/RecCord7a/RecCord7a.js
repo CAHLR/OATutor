@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./RecCord7a-index.js"; const step = {id: "RecCord7a", stepAnswer: ["y=-(2/3)x+(5/3)"], problemType: "TextBox", stepTitle: <div> <InlineMath math="2x=5-3y"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RecCord7a-index.js"; const step = {id: "RecCord7a", stepAnswer: ["y=-(2/3)x+(5/3)"], problemType: "TextBox", stepTitle: "$$2x=5-3y$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

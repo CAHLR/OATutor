@@ -1,0 +1,1 @@
+import steps from "./Formula6-index.js"; const problem = {id: "Formula6", title: "Yesenia's Needed Speed", body: "", steps: steps, }; export { problem };

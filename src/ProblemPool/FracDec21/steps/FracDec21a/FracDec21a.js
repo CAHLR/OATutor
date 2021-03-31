@@ -1,0 +1,1 @@
+import hints from "./FracDec21a-index.js"; const step = {id: "FracDec21a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{\\left(4\\right) m+\\left(2\\right)}{6}=\\frac{m}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

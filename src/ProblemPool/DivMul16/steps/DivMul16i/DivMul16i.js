@@ -1,0 +1,1 @@
+import hints from "./DivMul16i-index.js"; const step = {id: "DivMul16i", stepAnswer: ["-144"], problemType: "TextBox", stepTitle: "$$\\frac{y}{9}=-16$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./VarCon33f-index.js"; const step = {id: "VarCon33f", stepAnswer: ["-8/5"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) p+\\left(14\\right)=\\left(6\\right)+\\left(4\\right) p$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

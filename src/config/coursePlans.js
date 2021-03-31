@@ -5,7 +5,7 @@ var courses =  [{
         "id":"lessonIteration",
         "name":"Iteration and Indexing",
         "topics":"",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "table_functions":0.95,
             "iteration_and_indexing":0.95
@@ -15,7 +15,7 @@ var courses =  [{
         "id":"lessonStatistics:",
         "name":"Statistics:",
         "topics":"Central Limit Theorem",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "central_limit_theorem":0.95
         }
@@ -24,7 +24,7 @@ var courses =  [{
         "id":"lessonConditional",
         "name":"Conditional",
         "topics":"Probability",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "conditional_probability":0.95,
             "calculating_conditional_probability":0.95,
@@ -37,7 +37,7 @@ var courses =  [{
         "id":"lessonBayes'",
         "name":"Lesson Bayes'",
         "topics":"Theorem",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "bayes_theorem_problems":0.95,
             "definition_and_examples":0.95,
@@ -49,7 +49,7 @@ var courses =  [{
         "id":"lessonHypothesis",
         "name":"Lesson Hypothesis",
         "topics":"Testing",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "additional_information_and_full_hypothesis_test_examples":0.95,
             "the_sample":0.95,
@@ -64,7 +64,7 @@ var courses =  [{
         "id":"lessonInterpreting",
         "name":"Lesson Interpreting",
         "topics":"P-values",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "decision_and_conclusion":0.95,
             "rare_events":0.95,
@@ -75,7 +75,7 @@ var courses =  [{
         "id":"lessonStatistics:",
         "name":"Lesson Statistics:",
         "topics":"Regression",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "regression":0.95
         }
@@ -88,20 +88,20 @@ var courses =  [{
     "id":"lessonblockchain",
     "name":"Lesson blockchain",
     "topics":"",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "privacy":0.95,
         "transaction_validity":0.95
     }
     },
 ]},
-{courseName: "Openstax (Ch. 1-3)",
+{courseName: "OpenStax: College Algebra",
 lessons: [
     {
     "id":"lesson1.1",
     "name":"Lesson 1.1",
     "topics":"Real Numbers",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "classifying_a_real_number":0.95,
         "evaluating_algebraic_expressions":0.95,
@@ -112,7 +112,7 @@ lessons: [
     "id":"lesson1.2",
     "name":"Lesson 1.2",
     "topics":"Exponents and Scientific Notation",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "negative_exponent_rule":0.95,
         "using_the_rules_of_exponents":0.95,
@@ -129,7 +129,7 @@ lessons: [
     "id":"lesson1.3",
     "name":"Lesson 1.3",
     "topics":"Radicals and Rational Exponents",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "evaluating_square_roots":0.95,
         "using_rational_roots":0.95
@@ -139,7 +139,7 @@ lessons: [
     "id":"lesson1.4",
     "name":"Lesson 1.4",
     "topics":"Polynomials",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "multiplying_polynomials":0.95,
         "expanding_polynomials":0.95,
@@ -150,7 +150,7 @@ lessons: [
     "id":"lesson1.5",
     "name":"Lesson 1.5",
     "topics":"Factoring Polynomials",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "factoring_a_perfect_square_trinomial":0.95,
         "factoring_a_trinomial_with_leading_coefficient_1":0.95,
@@ -167,7 +167,7 @@ lessons: [
     "id":"lesson1.6",
     "name":"Lesson 1.6",
     "topics":"Rational Expressions",
-    "allowRecyle":false,
+    "allowRecyle":true,
     "learningObjectives":{
         "simplifying_complex_rational_expressions":0.95,
         "rational_expressions":0.95
@@ -177,7 +177,7 @@ lessons: [
         "id":"lesson2.1",
         "name":"Lesson 2.1",
         "topics":"The Rectangular Coordinate Systems and Graph",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "using_the_distance_formula":0.95,
             "finding_x_intercepts_and_y_intercepts":0.95,
@@ -189,7 +189,7 @@ lessons: [
         "id":"lesson2.2",
         "name":"Lesson 2.2",
         "topics":"Linear Equations in One Variable",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "solving_linear_equations_in_one_variable":0.95,
             "solving_a_rational_equation":0.95,
@@ -202,7 +202,7 @@ lessons: [
         "id":"lesson2.3",
         "name":"Lesson 2.3",
         "topics":"Models and Applications",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "using_a_formula_to_solve_a_real_world_application":0.95,
             "setting_up_a_linear_equation_to_solve_a_real_world_application":0.95
@@ -212,7 +212,7 @@ lessons: [
         "id":"lesson2.4",
         "name":"Lesson 2.4",
         "topics":"Complex Numbers",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "simplifying_powers_of_i":0.95,
             "dividing_complex_numbers":0.95,
@@ -225,7 +225,7 @@ lessons: [
         "id":"lesson2.5",
         "name":"Lesson 2.5",
         "topics":"Quadratic Equations",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "the_discriminant":0.95,
             "solving_quadratics_with_a_leading_coefficient_of_1":0.95,
@@ -236,11 +236,12 @@ lessons: [
             "solving_a_quadratic_equation_by_factoring_when_the_leading_coefficient_is_not_1":0.95
         }
         },
+        {id: "lesson2.6", name: "Lesson 2.6", topics: "Solve a Formula for a Speci", allowRecyle: false, learningObjectives: {rate: 0.95, use_the_distance: 0.95, solve_a_formula_for_a_specific_variable: 0.95, and_time_formula: 0.95, } },
         {
         "id":"lesson2.7",
         "name":"Lesson 2.7",
         "topics":"Linear Inequalities and Absolute Value Inequalities",
-        "allowRecyle":false,
+        "allowRecyle":true,
         "learningObjectives":{
             "using_the_properties_of_inequalities":0.95,
             "solving_inequalities_in_one_variable_algebraically":0.95,
@@ -253,7 +254,7 @@ lessons: [
             "id":"lesson3.1",
             "name":"Lesson 3.1",
             "topics":"Functions and Function Notation",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "determining_whether_a_relation_represents_a_function":0.95,
                 "determining_whether_a_function_is_one_to_one":0.95,
@@ -264,7 +265,7 @@ lessons: [
             "id":"lesson3.2",
             "name":"Lesson 3.2",
             "topics":"Domain and Range",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "finding_domain_and_range_from_graphs":0.95,
                 "using_notations_to_specify_domain_and_range":0.95,
@@ -277,7 +278,7 @@ lessons: [
             "id":"lesson3.3",
             "name":"Lesson 3.3",
             "topics":"Rates of Change and Behavior of Graphs",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "decreasing":0.95,
                 "using_a_graph_to_determine_where_a_function_is_increasing":0.95,
@@ -290,7 +291,7 @@ lessons: [
             "id":"lesson3.4",
             "name":"Lesson 3.4",
             "topics":"Composition of Functions",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "evaluating_composite_functions":0.95,
                 "decomposing_a_composite_function_into_its_component_functions":0.95,
@@ -302,7 +303,7 @@ lessons: [
             "id":"lesson3.5",
             "name":"Lesson 3.5",
             "topics":"Transformation of Functions",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "graphing_functions_using_vertical_and_horizontal_shifts":0.95,
                 "transformation_of_functions":0.95,
@@ -316,7 +317,7 @@ lessons: [
             "id":"lesson3.6",
             "name":"Lesson 3.6",
             "topics":"Absolute Value Functions",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "solving_an_absolute_value_equation":0.95
             }
@@ -325,7 +326,7 @@ lessons: [
             "id":"lesson3.7",
             "name":"Lesson 3.7",
             "topics":"Inverse Functions",
-            "allowRecyle":false,
+            "allowRecyle":true,
             "learningObjectives":{
                 "finding_and_evaluating_inverse_functions":0.95,
                 "finding_inverse_functions_and_their_graphs":0.95,

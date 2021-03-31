@@ -1,0 +1,1 @@
+import hints from "./other8a-index.js"; const step = {id: "other8a", stepAnswer: ["$$\\frac{-\\left(4\\right)}{3}$$, 4"], problemType: "MultipleChoice", stepTitle: "$$|\\left(3\\right) x-\\left(4\\right)|=8$$", stepBody: "", choices: ["4, 3", "6, $$\\frac{3}{4}$$", "$$\\frac{-\\left(4\\right)}{3}$$, 4", "$$\\frac{4}{3}$$, 5"], answerType: "string", hints: hints}; export {step};

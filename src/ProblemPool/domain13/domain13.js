@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./domain13-index.js"; const problem = {id: "domain13", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "", steps: steps, }; export { problem };
+import steps from "./domain13-index.js"; const problem = {id: "domain13", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "", steps: steps, }; export { problem };

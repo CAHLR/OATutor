@@ -1,0 +1,1 @@
+import steps from "./use7-index.js"; const problem = {id: "use7", title: "Evaluating Expre.jsions", body: "Evaluate 8x-3, when:", steps: steps, }; export { problem };

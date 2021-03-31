@@ -1,0 +1,1 @@
+import steps from "./SubAdd22-index.js"; const problem = {id: "SubAdd22", title: "Solve the equation", body: "", steps: steps, }; export { problem };

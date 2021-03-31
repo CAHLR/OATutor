@@ -1,0 +1,1 @@
+import steps from "./Visualize9-index.js"; const problem = {id: "Visualize9", title: "Divide:", body: "", steps: steps, }; export { problem };

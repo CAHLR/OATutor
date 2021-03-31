@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./reg8-index.js"; const problem = {id: "reg8", title: "Outliers", body: "", steps: steps, }; export { problem };

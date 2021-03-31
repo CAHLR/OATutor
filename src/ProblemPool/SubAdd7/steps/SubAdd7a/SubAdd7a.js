@@ -1,0 +1,1 @@
+import hints from "./SubAdd7a-index.js"; const step = {id: "SubAdd7a", stepAnswer: ["-50"], problemType: "TextBox", stepTitle: "$$x+\\left(16\\right)=-34$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

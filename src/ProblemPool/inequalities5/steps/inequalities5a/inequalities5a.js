@@ -1,0 +1,1 @@
+import hints from "./inequalities5a-index.js"; const step = {id: "inequalities5a", stepAnswer: ["[11/12, inf)"], problemType: "MultipleChoice", stepTitle: "$$p-\\frac{3}{4} \\geq \\frac{1}{6}$$", stepBody: "", choices: ["[11/12, inf)", "(11/12, inf)", "(-inf, 11/12]"], answerType: "string", hints: hints}; export {step};

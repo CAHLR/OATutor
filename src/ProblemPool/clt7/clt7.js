@@ -1,1 +1,0 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./clt7-index.js"; const problem = {id: "clt7", title: "Identifying the Correct Term", body: "", steps: steps, }; export { problem };

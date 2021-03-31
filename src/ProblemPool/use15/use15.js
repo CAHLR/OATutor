@@ -1,0 +1,1 @@
+import steps from "./use15-index.js"; const problem = {id: "use15", title: "Finding Like Terms", body: "Identify the like terms:", steps: steps, }; export { problem };

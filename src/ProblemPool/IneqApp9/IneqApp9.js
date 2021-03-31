@@ -1,0 +1,1 @@
+import steps from "./IneqApp9-index.js"; const problem = {id: "IneqApp9", title: "Christian's Sales", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./add10a-index.js"; const step = {id: "add10a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$\\left(2\\right)+\\left(4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

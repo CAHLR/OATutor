@@ -1,0 +1,1 @@
+import hints from "./inequalities24a-index.js"; const step = {id: "inequalities24a", stepAnswer: ["(64, inf)"], problemType: "MultipleChoice", stepTitle: "$$40<\\frac{5}{8} k$$", stepBody: "", choices: ["(25, inf)", "(-inf, 64)", "(64, inf)"], answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./percent11a-index.js"; const step = {id: "percent11a", stepAnswer: ["50"], problemType: "TextBox", stepTitle: "Find the percent increase. In 1995, the standard bus fare in Chicago was $1.50. In 2008, the standard bus fare was $2.25.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

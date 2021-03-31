@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./poly12-index.js"; const problem = {id: "poly12", title: "Multiplying Binomials Resulting in a Difference of Squares", body: "Expand the following expression.", steps: steps, }; export { problem };
+import steps from "./poly12-index.js"; const problem = {id: "poly12", title: "Multiplying Binomials Resulting in a Difference of Squares", body: "Expand the following expre.jsion.", steps: steps, }; export { problem };

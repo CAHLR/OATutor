@@ -1,0 +1,1 @@
+import steps from "./Formula15-index.js"; const problem = {id: "Formula15", title: "$$P=a+b+c$$", body: "", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "use8b-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 5 for y and simplify the expression 4(5)-4."}, ]; export {hints};

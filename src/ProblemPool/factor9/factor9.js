@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import steps from "./factor9-index.js"; const problem = {id: "factor9", title: "Factor the following expression", body: "Factoring a Difference of Squares.", steps: steps, }; export { problem };
+import steps from "./factor9-index.js"; const problem = {id: "factor9", title: "Factor the following expre.jsion", body: "Factoring a Difference of Square.js", steps: steps, }; export { problem };

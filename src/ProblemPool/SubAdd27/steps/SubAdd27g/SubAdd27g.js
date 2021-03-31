@@ -1,0 +1,1 @@
+import hints from "./SubAdd27g-index.js"; const step = {id: "SubAdd27g", stepAnswer: ["y=28"], problemType: "TextBox", stepTitle: "$$6(y-2)-5y=\\left(4\\right) \\left(y+\\left(3\\right)\\right)-\\left(4\\right) \\left(y-\\left(1\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

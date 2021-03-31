@@ -1,0 +1,1 @@
+import steps from "./Properties2-index.js"; const problem = {id: "Properties2", title: "In the following exercise, use the a.jsociative property to simplify.", body: "", steps: steps, }; export { problem };

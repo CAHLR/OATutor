@@ -1,34 +1,21 @@
+import { variabilize } from './variabilize.js';
 var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
-var gen = require('random-seed');
-
-function variabilize(text, variabilization, seed) {
-  Object.keys(variabilization).forEach(v =>  {
-    var rand1 = gen.create(seed);
-    var numOptions = variabilization[v].length - 1; // First element says variables
-    var replaceOption = variabilization[v][rand1(numOptions) + 1];
-    var variables = variabilization[v][0];
-    for (var i = 0; i < variabilization[v][0].length; i++) { // Replace each element of tuple
-      text = text.replace(new RegExp('@{' + variables[i] + '}', 'g'), replaceOption[i]);
-    }
-  });
-  return text;
-}
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
   var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
   return actual.some((stepAns) => {
     var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
-    console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
+    //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
     return (parsedAttempt === parsedStepAns)
   });
 }
 
 // attempt = student answer, actual = [ans1, ans2]
 function _parseEquality(attempt, actual) {
-  console.log("PARSED: " + attempt.print());
-  console.log("ANSWER: " + actual[0].print());
+  //console.log("PARSED: " + attempt.print());
+  //console.log("ANSWER: " + actual[0].print());
   return actual.some((stepAns) => KAS.compare(attempt, stepAns).equal);
 }
 
@@ -41,12 +28,12 @@ function round(num, precision) {
   }
 }
 
-function checkAnswer(attempt, actual, answerType, precision, variabilization, seed) {
+function checkAnswer(attempt, actual, answerType, precision, variabilization) {
   var parsed = attempt.replace(/\s+/g, '');
-  if (seed && variabilization) {
-    actual = actual.map((actualAns) => variabilize(actualAns, variabilization, seed));
+  if (variabilization) {
+    actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
   }
-  console.log(actual);
+  //console.log(actual);
   var correctAnswer = false;
 
   try {
@@ -54,22 +41,24 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization, se
       return [parsed, false];
     } else if (answerType === "arithmetic") {
       parsed = KAS.parse(attempt).expr;
+      //console.log(parsed);
+      //console.log(actual);
       correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
       return [parsed.print(), correctAnswer];
     } else if (answerType === "string") {
       parsed = attempt;
-      console.log(parsed);
-      console.log(actual);
+      //console.log(parsed);
+      //console.log(actual);
       correctAnswer = _equality(parsed, actual);
     } else {
       parsed = +attempt;
       correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
     }
     return [parsed, correctAnswer];
-  } catch {
-    console.log("error");
+  } catch(err) {
+    console.log("error", err);
     return [parsed, false];
   }
 }
 
-export default checkAnswer;
+export {checkAnswer};

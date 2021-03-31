@@ -1,0 +1,1 @@
+import hints from "./IneqApp6a-index.js"; const step = {id: "IneqApp6a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "Angie has $20 to spend on juice boxes for her son’s preschool picnic. Each pack of juice boxes costs $2.63. What is the maximum number of packs she can buy?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

@@ -1,1 +1,1 @@
-import React from 'react'; import { InlineMath } from 'react-katex';import hints from "./quad34a-index.js"; const step = {id: "quad34a", stepAnswer: ["-3, 2"], problemType: "TextBox", stepTitle: <div> <InlineMath math="5x^2=5x+30"/></div>, stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./quad34a-index.js"; const step = {id: "quad34a", stepAnswer: ["-3, 2"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) x^2=\\left(5\\right) x+\\left(30\\right)$$", stepBody: "", answerType: "string", hints: hints}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inequalities22a-index.js"; const step = {id: "inequalities22a", stepAnswer: ["$$(-14$$, inf)"], problemType: "MultipleChoice", stepTitle: "$$-\\left(9\\right) c<126$$", stepBody: "", choices: ["(-inf, 14)", "(-inf, 14]", "$$(-14$$, inf)"], answerType: "string", hints: hints}; export {step};

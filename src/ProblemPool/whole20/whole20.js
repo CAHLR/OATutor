@@ -1,0 +1,1 @@
+import steps from "./whole20-index.js"; const problem = {id: "whole20", title: "Finding the Least Common Multiple Using the Prime Factors Method", body: "Find the least common multiple of the two numbers using the prime factors method.", steps: steps, }; export { problem };

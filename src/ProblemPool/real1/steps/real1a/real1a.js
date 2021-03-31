@@ -1,1 +1,1 @@
-import hints from "./real1a-index.js"; const step = {id: "real1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is 15/5?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real1a-index.js"; const step = {id: "real1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is $$\\frac{15}{5}$$?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

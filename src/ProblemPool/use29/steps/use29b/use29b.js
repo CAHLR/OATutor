@@ -1,0 +1,1 @@
+import hints from "./use29b-index.js"; const step = {id: "use29b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(1\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

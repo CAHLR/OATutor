@@ -1,0 +1,1 @@
+import steps from "./Properties9-index.js"; const problem = {id: "Properties9", title: "Use the Properties of Zero", body: "Simplify the following exercise.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./Multiply18-index.js"; const problem = {id: "Multiply18", title: "Divide Integers", body: "Divide:", steps: steps, }; export { problem };

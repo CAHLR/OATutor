@@ -1,0 +1,1 @@
+import steps from "./Multiply23-index.js"; const problem = {id: "Multiply23", title: "Simplify Expre.jsions with Integers", body: "Simplify the expre.jsion:", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./realnumbers2-index.js"; const problem = {id: "realnumbers2", title: "Calculating Square Roots #2", body: "Simplify the following expre.jsion.js", steps: steps, }; export { problem };

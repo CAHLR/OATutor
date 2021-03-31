@@ -1,0 +1,1 @@
+import hints from "./inequalities20a-index.js"; const step = {id: "inequalities20a", stepAnswer: ["(-inf, 23/36)"], problemType: "MultipleChoice", stepTitle: "$$g-\\frac{11}{12}<\\frac{-\\left(5\\right)}{18}$$", stepBody: "", choices: ["(-inf, 25/36)", "(-inf, 23/36)", "(22/36, inf)"], answerType: "string", hints: hints}; export {step};

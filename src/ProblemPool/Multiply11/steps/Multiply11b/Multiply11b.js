@@ -1,0 +1,1 @@
+import hints from "./Multiply11b-index.js"; const step = {id: "Multiply11b", stepAnswer: ["-43"], problemType: "TextBox", stepTitle: "subtract 24 from -19.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

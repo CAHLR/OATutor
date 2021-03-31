@@ -1,0 +1,1 @@
+var hints = [{id: "decimals20b-h1", type: "hint", dependencies: [], title: "Defining Percent", text: "A percent is a ratio whose denominator is 100."}, {id: "decimals20b-h2", type: "hint", dependencies: ["decimals20b-h1"], title: "Converting to Decimal", text: "To convert a percent number to a decimal number, we move the decimal point two places to the left."}, ]; export {hints};

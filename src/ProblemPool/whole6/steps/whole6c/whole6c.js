@@ -1,0 +1,1 @@
+import hints from "./whole6c-index.js"; const step = {id: "whole6c", stepAnswer: ["210,000"], problemType: "TextBox", stepTitle: "Round 206, 981 to the nearest ten thousand", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

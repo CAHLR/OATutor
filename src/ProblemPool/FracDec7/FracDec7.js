@@ -1,0 +1,1 @@
+import steps from "./FracDec7-index.js"; const problem = {id: "FracDec7", title: "How to Solve Equations with Fraction Coefficients", body: "", steps: steps, }; export { problem };

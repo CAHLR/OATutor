@@ -1,0 +1,1 @@
+import hints from "./inequalities8a-index.js"; const step = {id: "inequalities8a", stepAnswer: ["(-inf, 5]"], problemType: "MultipleChoice", stepTitle: "$$12d \\leq 60$$", stepBody: "", choices: ["(-inf, 5]", "(-inf, 5)", "[5, inf)"], answerType: "string", hints: hints}; export {step};

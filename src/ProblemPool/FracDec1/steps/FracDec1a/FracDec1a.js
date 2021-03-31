@@ -1,0 +1,1 @@
+import hints from "./FracDec1a-index.js"; const step = {id: "FracDec1a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{1}{6} y-\\frac{1}{3}=\\frac{5}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
