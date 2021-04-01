@@ -60,10 +60,10 @@ class SubHintSystem extends React.Component {
                   chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))} </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography component={'span'}>
+              <Typography component={'span'}  style={{ width: "100%" }}>
                 {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))}
                 {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hint={hint} submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)} /></div> : ""}
+                  <div><br /><HintTextbox hint={hint} type={"subHintTextbox"} submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)} /></div> : ""}
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
