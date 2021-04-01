@@ -79,11 +79,12 @@ class HintTextbox extends React.Component {
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={false} sm={false} md={4} />
           <Grid item xs={4} sm={4} md={1}>
+            { this.props.type !== "subHintTextbox" ?
             <center>
               <IconButton aria-label="delete" onClick={this.props.toggleHints}>
                 <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
               </IconButton>
-            </center>
+            </center> : <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" style={{visibility: "hidden"}}/> }
           </Grid>
           <Grid item xs={4} sm={4} md={2}>
             <center>
