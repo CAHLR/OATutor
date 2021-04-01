@@ -47,18 +47,20 @@ class Problem extends React.Component {
 
   updateCanvas = (name, mastery, components, lessonNum) => {
     //console.log(name, mastery);
-    fetch(this.context.middlewareURL + '/grade', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        "lis_person_name_full": name !== '' ? name : 'Test Student',
-        "score": mastery.toString(),
-        "components": components,
-        "lessonNum": lessonNum
-      })
-    });
+    if (name !== '') {
+      fetch(this.context.middlewareURL + '/grade', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "lis_person_name_full": name !== 'test' ? name : 'Test Student',
+          "score": mastery.toString(),
+          "components": components,
+          "lessonNum": lessonNum
+        })
+      });
+    }
   }
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
