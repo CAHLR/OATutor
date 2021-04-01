@@ -25,8 +25,8 @@ class MultipleChoice extends React.Component {
       <FormControl component="fieldset" >
         <FormLabel component="legend"></FormLabel>
         <RadioGroup value={this.state.value} onChange={this.handleChange}>
-          {this.props.choices.map((choice, i) =>
-            <FormControlLabel value={choice} control={<Radio />} label={renderText(choice)} key={choice} />)}
+          {this.props.choices ? this.props.choices.map((choice, i) =>
+            <FormControlLabel value={choice} control={<Radio />} label={renderText(choice)} key={choice} />) : "Error: This problem has no answer choices. Please submit feedback."}
         </RadioGroup>
       </FormControl>
       </div>

@@ -141,6 +141,7 @@ class Platform extends React.Component {
       }
     } else {
       this.setState({ currProblem: chosenProblem, status: "learning" });
+      console.log("Next problem: ", chosenProblem.id)
       return chosenProblem;
     }
   }
