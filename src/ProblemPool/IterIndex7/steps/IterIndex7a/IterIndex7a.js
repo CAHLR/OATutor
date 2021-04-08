@@ -1,0 +1,1 @@
+import hints from "./IterIndex7a-index.js"; const step = {id: "IterIndex7a", stepAnswer: ["np.arange(1, 31, 2)"], problemType: "MultipleChoice", stepTitle: "Create an array of numbers from 1-30 counting by 2", stepBody: "", choices: ["np.arange(1, 31, 2)", "np.arange(1, 30, 2)", "np.arange(0, 31, 2)", "np.arange(0, 31, 2)"], answerType: "string", hints: hints}; export {step};

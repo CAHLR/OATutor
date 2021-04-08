@@ -1,1 +1,1 @@
-import steps from "./Multiply30-index.js"; const problem = {id: "Multiply30", title: "Evaluate Variable Expre.jsions with Integers", body: "Evaluate the expre.jsion:", steps: steps, }; export { problem };
+import steps from "./Multiply30-index.js"; const problem = {id: "Multiply30", title: "Evaluate Variable Expressions with Integers", body: "Evaluate the expression:", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./hypotest3-index.js"; const problem = {id: "hypotest3", title: "Classify the Error", body: "Decide whether each of the following is a Type I error or a Type II error.", steps: steps, }; export { problem };

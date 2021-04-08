@@ -1,0 +1,1 @@
+import hints from "./baye7b-index.js"; const step = {id: "baye7b", stepAnswer: ["2/3"], problemType: "TextBox", stepTitle: "What is the probability that the car is behind the door you did not choose and Monty did not reveal? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

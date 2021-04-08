@@ -1,0 +1,1 @@
+import hints from "./TblFn7a-index.js"; const step = {id: "TblFn7a", stepAnswer: ["Math.apply(double, 'Numbers') "], problemType: "TextBox", stepTitle: "In a table named \"Math\", change all the values in the column 'Numbers' to be twice their current value using the function double", stepBody: "", answerType: "string", hints: hints}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./LinEqua29-index.js"; const problem = {id: "LinEqua29", title: "Writing the Equation of a Line Parallel to a Given Line Pa.jsing Through a Given Point", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua29-index.js"; const problem = {id: "LinEqua29", title: "Writing the Equation of a Line Parallel to a Given Line Passing Through a Given Point", body: "", steps: steps, }; export { problem };

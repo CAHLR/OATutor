@@ -1,1 +1,1 @@
-import steps from "./whole30-index.js"; const problem = {id: "whole30", title: "Word Form to Digits", body: "Write the following number as a whole number using digit.js", steps: steps, }; export { problem };
+import steps from "./whole30-index.js"; const problem = {id: "whole30", title: "Word Form to Digits", body: "Write the following number as a whole number using digits.", steps: steps, }; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./cond10-index.js"; const problem = {id: "cond10", title: "Flipping a Coin", body: "Toss a fair coin 3 times", steps: steps, }; export { problem };

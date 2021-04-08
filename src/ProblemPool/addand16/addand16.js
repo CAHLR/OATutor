@@ -1,1 +1,1 @@
-import steps from "./addand16-index.js"; const problem = {id: "addand16", title: "Evaluate Variable Expre.jsions with Fractions", body: "Evaluate", steps: steps, }; export { problem };
+import steps from "./addand16-index.js"; const problem = {id: "addand16", title: "Evaluate Variable Expressions with Fractions", body: "Evaluate", steps: steps, }; export { problem };

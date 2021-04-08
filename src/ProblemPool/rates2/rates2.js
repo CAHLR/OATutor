@@ -1,1 +1,1 @@
-import steps from "./rates2-index.js"; const problem = {id: "rates2", title: "Computing Average Rate of Change for a Function Expre.jsed as a Formula", body: "", steps: steps, }; export { problem };
+import steps from "./rates2-index.js"; const problem = {id: "rates2", title: "Computing Average Rate of Change for a Function Expressed as a Formula", body: "", steps: steps, }; export { problem };

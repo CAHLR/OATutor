@@ -1,1 +1,1 @@
-import steps from "./factor7-index.js"; const problem = {id: "factor7", title: "Factoring a Perfect Square Trinomial", body: "What is the factored form of the following expre.jsion?", steps: steps, }; export { problem };
+import steps from "./factor7-index.js"; const problem = {id: "factor7", title: "Factoring a Perfect Square Trinomial", body: "What is the factored form of the following expression?", steps: steps, }; export { problem };

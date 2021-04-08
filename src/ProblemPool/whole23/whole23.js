@@ -1,1 +1,1 @@
-import steps from "./whole23-index.js"; const problem = {id: "whole23", title: "Naming Numbers", body: "Name the number using word.js", steps: steps, }; export { problem };
+import steps from "./whole23-index.js"; const problem = {id: "whole23", title: "Naming Numbers", body: "Name the number using words.", steps: steps, }; export { problem };

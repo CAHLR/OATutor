@@ -1,1 +1,1 @@
-import steps from "./composition8-index.js"; const problem = {id: "composition8", title: "Decomposing a Function", body: "Find functions f(x) and g(x) so the given function can be expre.jsed as $$h(x)=f(g(x))$$.", steps: steps, }; export { problem };
+import steps from "./composition8-index.js"; const problem = {id: "composition8", title: "Decomposing a Function", body: "Find functions f(x) and g(x) so the given function can be expressed as $$h(x)=f(g(x))$$.", steps: steps, }; export { problem };

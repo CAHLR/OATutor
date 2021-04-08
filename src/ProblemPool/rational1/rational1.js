@@ -1,1 +1,1 @@
-import steps from "./rational1-index.js"; const problem = {id: "rational1", title: "Multiplying Rational Expre.jsions", body: "Multiply the rational expre.jsions and show the product in simplest form:", steps: steps, }; export { problem };
+import steps from "./rational1-index.js"; const problem = {id: "rational1", title: "Multiplying Rational Expressions", body: "Multiply the rational expressions and show the product in simplest form:", steps: steps, }; export { problem };

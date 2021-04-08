@@ -1,0 +1,1 @@
+import hints from "./pvalue4b-index.js"; const step = {id: "pvalue4b", stepAnswer: ["$$\\mu <73$$"], problemType: "MultipleChoice", stepTitle: "State the alternative hypothesis.", stepBody: "", choices: ["$$\\\\mu \\\\neq 73$$", "$$\\\\mu $$=73$$$$", "$$\\\\mu < 73$$"], answerType: "string", hints: hints}; export {step};

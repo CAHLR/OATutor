@@ -1,1 +1,1 @@
-import steps from "./rational19-index.js"; const problem = {id: "rational19", title: "Combining Rational Expre.jsions", body: "Subtract the rational expre.jsions, and then simplify.", steps: steps, }; export { problem };
+import steps from "./rational19-index.js"; const problem = {id: "rational19", title: "Combining Rational Expressions", body: "Subtract the rational expressions, and then simplify.", steps: steps, }; export { problem };

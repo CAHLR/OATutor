@@ -1,1 +1,1 @@
-import steps from "./rates4-index.js"; const problem = {id: "rates4", title: "Finding an Average Rate of Change as an Expre.jsion", body: "", steps: steps, }; export { problem };
+import steps from "./rates4-index.js"; const problem = {id: "rates4", title: "Finding an Average Rate of Change as an Expression", body: "", steps: steps, }; export { problem };
