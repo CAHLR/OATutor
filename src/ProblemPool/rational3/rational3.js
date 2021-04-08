@@ -1,1 +1,1 @@
-import steps from "./rational3-index.js"; const problem = {id: "rational3", title: "Adding Rational Expre.jsions", body: "Add the rational expre.jsions:", steps: steps, }; export { problem };
+import steps from "./rational3-index.js"; const problem = {id: "rational3", title: "Adding Rational Expressions", body: "Add the rational expressions:", steps: steps, }; export { problem };

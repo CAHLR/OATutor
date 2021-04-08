@@ -1,1 +1,1 @@
-import steps from "./Multiply5-index.js"; const problem = {id: "Multiply5", title: "Simplify Expre.jsions", body: "Simplify the following integer expre.jsion.", steps: steps, }; export { problem };
+import steps from "./Multiply5-index.js"; const problem = {id: "Multiply5", title: "Simplify Expressions", body: "Simplify the following integer expression.", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./poly28-index.js"; const problem = {id: "poly28", title: "Multiplying Polynomials", body: "Expand the expre.jsion", steps: steps, }; export { problem };
+import steps from "./poly28-index.js"; const problem = {id: "poly28", title: "Multiplying Polynomials", body: "Expand the expression", steps: steps, }; export { problem };

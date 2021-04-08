@@ -1,1 +1,1 @@
-import steps from "./poly20-index.js"; const problem = {id: "poly20", title: "Multiplying Polynomials", body: "Find the product of the binomial.js", steps: steps, }; export { problem };
+import steps from "./poly20-index.js"; const problem = {id: "poly20", title: "Multiplying Polynomials", body: "Find the product of the binomials.", steps: steps, }; export { problem };

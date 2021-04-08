@@ -1,1 +1,1 @@
-import steps from "./real25-index.js"; const problem = {id: "real25", title: "Cla.jsifying Rational Numbers", body: "Cla.jsify each number as either rational or irrational.", steps: steps, }; export { problem };
+import steps from "./real25-index.js"; const problem = {id: "real25", title: "Classifying Rational Numbers", body: "Classify each number as either rational or irrational.", steps: steps, }; export { problem };

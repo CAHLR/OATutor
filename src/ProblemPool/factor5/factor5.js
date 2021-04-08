@@ -1,1 +1,1 @@
-import steps from "./factor5-index.js"; const problem = {id: "factor5", title: "Factoring a Trionomial by Grouping.", body: "Factor the expre.jsion.", steps: steps, }; export { problem };
+import steps from "./factor5-index.js"; const problem = {id: "factor5", title: "Factoring a Trionomial by Grouping.", body: "Factor the expression.", steps: steps, }; export { problem };

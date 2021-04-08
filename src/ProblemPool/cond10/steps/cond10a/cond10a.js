@@ -1,0 +1,1 @@
+import hints from "./cond10a-index.js"; const step = {id: "cond10a", stepAnswer: ["1/8"], problemType: "TextBox", stepTitle: "What is the probability of getting 3 heads? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};

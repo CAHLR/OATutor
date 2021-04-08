@@ -1,1 +1,1 @@
-import steps from "./real5-index.js"; const problem = {id: "real5", title: "Using the Order of Operations", body: "Use the order of operations to evaluate each of the following expre.jsion.js", steps: steps, }; export { problem };
+import steps from "./real5-index.js"; const problem = {id: "real5", title: "Using the Order of Operations", body: "Use the order of operations to evaluate each of the following expressions.", steps: steps, }; export { problem };

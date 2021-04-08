@@ -1,0 +1,1 @@
+var hints = [{id: "IterIndex8c-h1", type: "scaffold", problemType: "MultipleChoice", answerType: "string", hintAnswer: ["i%2 $$==$$ 0"], dependencies: [], title: "", text: "How do you check if an element 'i' is even?", choices: ["i%2 $$==$$ 0", "$$\\left\\lfloor\\frac{i}{2}\\right\\rfloor$$ $$==$$ 0", "i%2 $$=$$ 0", "$$\\frac{i}{2}$$ $$=$$ 0"]}, ]; export {hints};

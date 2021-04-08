@@ -1,1 +1,1 @@
-import steps from "./Properties12-index.js"; const problem = {id: "Properties12", title: "Simplify the following expre.jsion.", body: "", steps: steps, }; export { problem };
+import steps from "./Properties12-index.js"; const problem = {id: "Properties12", title: "Simplify the following expression.", body: "", steps: steps, }; export { problem };

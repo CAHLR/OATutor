@@ -1,0 +1,1 @@
+import steps from "./cond1-index.js"; const problem = {id: "cond1", title: "Rolling a Die", body: "A fair (unbiased), 6-sided die is rolled", steps: steps, }; export { problem };

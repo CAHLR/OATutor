@@ -1,1 +1,1 @@
-import steps from "./measure27-index.js"; const problem = {id: "measure27", title: "In the following exercises, make the unit conversion.js Round to the nearest tenth.", body: "", steps: steps, }; export { problem };
+import steps from "./measure27-index.js"; const problem = {id: "measure27", title: "In the following exercises, make the unit conversions. Round to the nearest tenth.", body: "", steps: steps, }; export { problem };

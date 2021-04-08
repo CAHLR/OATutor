@@ -1,0 +1,1 @@
+import hints from "./hypotest9a-index.js"; const step = {id: "hypotest9a", stepAnswer: ["$$Lef-tailed$$ Test"], problemType: "MultipleChoice", stepTitle: "Assume $$H_0$$: $$μ=9$$ and $$H_a$$: $$μ<9$$.", stepBody: "", choices: ["$$Left-tailed$$ test", "$$Right-tailed$$ Test", "$$Two-tailed$$ Test"], answerType: "string", hints: hints}; export {step};

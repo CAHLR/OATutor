@@ -1,1 +1,1 @@
-import steps from "./add3-index.js"; const problem = {id: "add3", title: "Adding and Subtracting Integers", body: "Find the value of the following expre.jsion.js", steps: steps, }; export { problem };
+import steps from "./add3-index.js"; const problem = {id: "add3", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, }; export { problem };

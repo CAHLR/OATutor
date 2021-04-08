@@ -1,1 +1,1 @@
-import steps from "./complex19-index.js"; const problem = {id: "complex19", title: "Expre.jsing an Imaginary Number in Standard Form", body: "Perform the indicated operation and expre.js the result as a simplified complex number.", steps: steps, }; export { problem };
+import steps from "./complex19-index.js"; const problem = {id: "complex19", title: "Expressing an Imaginary Number in Standard Form", body: "Perform the indicated operation and express the result as a simplified complex number.", steps: steps, }; export { problem };

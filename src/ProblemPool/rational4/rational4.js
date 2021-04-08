@@ -1,1 +1,1 @@
-import steps from "./rational4-index.js"; const problem = {id: "rational4", title: "Subtracting Rational Expre.jsions", body: "Subtract the rational expre.jsions:", steps: steps, }; export { problem };
+import steps from "./rational4-index.js"; const problem = {id: "rational4", title: "Subtracting Rational Expressions", body: "Subtract the rational expressions:", steps: steps, }; export { problem };

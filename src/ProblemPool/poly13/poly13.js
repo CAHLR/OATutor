@@ -1,1 +1,1 @@
-import steps from "./poly13-index.js"; const problem = {id: "poly13", title: "Multiplying Binomials Resulting in a Difference of Squares", body: "Expand the following expre.jsion.", steps: steps, }; export { problem };
+import steps from "./poly13-index.js"; const problem = {id: "poly13", title: "Multiplying Binomials Resulting in a Difference of Squares", body: "Expand the following expression.", steps: steps, }; export { problem };

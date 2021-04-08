@@ -1,0 +1,1 @@
+import steps from "./cond5-index.js"; const problem = {id: "cond5", title: "Jillian surveyed students at her school and found out the following probabilities: $$P(freshman)=0.3,$$ $$P plays_{an,instrument}=0.2,$$ and $$P(freshman$$\\cap$$instrument)=0.1$$", body: "", steps: steps, }; export { problem };

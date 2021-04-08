@@ -1,0 +1,1 @@
+import steps from "./reg1-index.js"; const problem = {id: "reg1", title: "Least Squares Line", body: "", steps: steps, }; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./LinEqua24-index.js"; const problem = {id: "LinEqua24", title: "Finding the Equation of a Line Pa.jsing Through the Given Points", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua24-index.js"; const problem = {id: "LinEqua24", title: "Finding the Equation of a Line Passing Through the Given Points", body: "", steps: steps, }; export { problem };

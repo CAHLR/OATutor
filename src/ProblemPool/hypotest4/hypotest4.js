@@ -1,0 +1,1 @@
+import steps from "./hypotest4-index.js"; const problem = {id: "hypotest4", title: "Type II Error and Power", body: "", steps: steps, }; export { problem };

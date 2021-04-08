@@ -1,1 +1,1 @@
-import steps from "./Properties14-index.js"; const problem = {id: "Properties14", title: "Simplify the following expre.jsion using the distributive property.", body: "", steps: steps, }; export { problem };
+import steps from "./Properties14-index.js"; const problem = {id: "Properties14", title: "Simplify the following expression using the distributive property.", body: "", steps: steps, }; export { problem };
