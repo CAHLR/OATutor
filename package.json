@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev-deploy": "(npm run build node; node dev-deploy.js)  || (echo \"[OpenITS INFO] Ignore the path cannot be found warning, it's expected for Windows.\" && npm run build && node dev-deploy.js)"
+    "dev-deploy": "npm run build && node dev-deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"
