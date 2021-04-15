@@ -7,10 +7,14 @@ import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, scroller, Element } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
+import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
+import {
+  HashRouter as Router,
+  NavLink
+} from "react-router-dom";
 
 import { ThemeContext } from '../config/config.js';
 
@@ -40,7 +44,7 @@ class Problem extends React.Component {
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} problemVars={this.props.problem.variabilization}/>
+        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} problemVars={this.props.problem.variabilization} />
       </Element>
     })
   }
@@ -74,20 +78,25 @@ class Problem extends React.Component {
       }
     }
     //console.log(this.props.lesson);
-    var objectives = Object.keys(this.props.lesson.learningObjectives);
-    objectives.unshift(0);
-    var score = objectives.reduce((x,y) => {
-      return x + this.bktParams[y].probMastery});
-    score /= objectives.length - 1;
-    //console.log(this.context.studentName + " " + score);
+    console.log(this.context.debug)
+    if (!this.context.debug) {
+      var objectives = Object.keys(this.props.lesson.learningObjectives);
+      objectives.unshift(0);
+      var score = objectives.reduce((x, y) => {
+        return x + this.bktParams[y].probMastery
+      });
+      score /= objectives.length - 1;
+      //console.log(this.context.studentName + " " + score);
 
-    var relevantKc = {}
-    Object.keys(this.props.lesson.learningObjectives).map(x => {
-      relevantKc[x] = this.bktParams[x].probMastery});
-    try {
-      this.updateCanvas(this.context.studentName, score, relevantKc, this.props.lessonNum);
-    } catch {
-      console.log("Error sending scores to canvas.");
+      var relevantKc = {}
+      Object.keys(this.props.lesson.learningObjectives).map(x => {
+        relevantKc[x] = this.bktParams[x].probMastery
+      });
+      try {
+        this.updateCanvas(this.context.studentName, score, relevantKc, this.props.lessonNum);
+      } catch {
+        console.log("Error sending scores to canvas.");
+      }
     }
     this.stepStates[cardIndex] = isCorrect;
 
@@ -130,6 +139,9 @@ class Problem extends React.Component {
     this.setState(prevState => ({ showFeedback: !prevState.showFeedback }))
   }
 
+  _getNextDebug = (offset) => {
+    return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset]
+  }
 
 
   render() {
@@ -155,13 +167,30 @@ class Problem extends React.Component {
         </div>
         {this.state.steps}
         <div width="100%">
-          <Grid container spacing={0}>
-            <Grid item xs={3} sm={3} md={5} key={1} />
-            <Grid item xs={6} sm={6} md={2} key={2}>
-              <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!this.state.problemFinished}>Next Problem</Button>
+          {this.context.debug ?
+            <Grid container spacing={0}>
+              <Grid item xs={2} key={0} />
+              <Grid item xs={2} key={1} >
+                <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)} type="menu" style={{ marginRight: '10px' }}>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={() => this.context.needRefresh = true}>Previous Problem</Button>
+                </NavLink>
+              </Grid>
+              <Grid item xs={4} key={2} />
+              <Grid item xs={2} key={3} >
+                <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)} type="menu" style={{ marginRight: '10px' }}>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={() => this.context.needRefresh = true}>Next Problem</Button>
+                </NavLink>
+              </Grid>
+              <Grid item xs={2} key={4} />
             </Grid>
-            <Grid item xs={3} sm={3} md={5} key={3} />
-          </Grid>
+            :
+            <Grid container spacing={0}>
+              <Grid item xs={3} sm={3} md={5} key={1} />
+              <Grid item xs={6} sm={6} md={2} key={2}>
+                <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!this.state.problemFinished}>Next Problem</Button>
+              </Grid>
+              <Grid item xs={3} sm={3} md={5} key={3} />
+            </Grid>}
         </div>
 
         <div style={{ display: "flex", flexDirection: "row-reverse", justifyContent: "right", marginRight: "20px" }}>

@@ -40,6 +40,12 @@ app.use(express.json());
 app.use(bodyParser.json());                            // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));    // to support URL-encoded bodies
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+
 // Disable cors
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -124,12 +130,15 @@ app.post('/grade', function (req, res) {
     return;
   }
   var payload = "<h1> Component Breakdown </h1> <br/>";
-  payload += "svg test";
-  payload += '<img src="https://image.flaticon.com/icons/png/512/883/883039.png" width="200px" alt="Red dot" />';
-  payload += '<br/><iframe src="https://cahlr.github.io/OpenITS/#/" target="_parent" width="1000" height="400" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true"></iframe>'
-  payload += "<h3> Overall score: &#9646;&#9646;&#9647;&#9647;&#9647;" + req.body.score + "</h3>"
+  // payload += "svg test";
+  // payload += '<img src="https://image.flaticon.com/icons/png/512/883/883039.png" width="200px" alt="Red dot" />';
+  // payload += '<br/><iframe src="https://cahlr.github.io/OpenITS/#/" target="_parent" width="1000" height="400" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true"></iframe>'
+  //payload += "<h3> Overall score: " + req.body.score + "</h3>"
+  payload += "<h3> Overall score: &#9646;&#9646;&#9646;&#9646;&#9647;&#9647;&#9647;&#9647;&#9647;&#9647;</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
-    payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
+    // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
+    var r = getRandomInt(0, 10)
+    payload += "<p>" + (i + 1) + ") " + key.replace(/_/g, ' ') + ": " + "&#9646;".repeat(r) +  "&#9647;".repeat(10 - r)   + "<p>";
   });
   console.log(parseFloat(req.body.score));
   provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), payload, (err, result) => {
