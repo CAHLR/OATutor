@@ -77,8 +77,7 @@ class Problem extends React.Component {
         //console.log(this.bktParams[kc].probMastery);
       }
     }
-    //console.log(this.props.lesson);
-    console.log(this.context.debug)
+
     if (!this.context.debug) {
       var objectives = Object.keys(this.props.lesson.learningObjectives);
       objectives.unshift(0);
