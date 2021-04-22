@@ -31,7 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev-deploy": "npm run build && node dev-deploy.js"
+    "dev-deploy": "npm run build && node dev-deploy.js",
+    "dev-dep": "gh-pages -d build -r https://github.com/CAHLR/OpenITS-dev.git -f"
   },
   "eslintConfig": {
     "extends": "react-app"

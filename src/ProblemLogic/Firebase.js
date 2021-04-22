@@ -3,7 +3,7 @@ var firebase = require("firebase/app");
 require("firebase/firestore");
 
 var problemSubmissionsOutput = "problemSubmissionsDev";
-var feedbackOutput = "feedback";
+var feedbackOutput = "feedbackNew";
 
 class Firebase {
 
@@ -72,7 +72,7 @@ class Firebase {
       hintIsCorrect: null,
       treatment: this.treatment,
       hintsFinished: hintsFinished,
-      canvasStudentID: canvasStudentID,
+      canvasStudentID: canvasStudentID || null,
       variablization: variabilization
     }
     //console.log(data);
@@ -97,7 +97,7 @@ class Firebase {
       hintIsCorrect: isCorrect,
       treatment: this.treatment,
       hintsFinished: hintsFinished,
-      canvasStudentID: canvasStudentID,
+      canvasStudentID: canvasStudentID || null,
       variablization: variabilization
     }
     return this.writeData(problemSubmissionsOutput, date, data);
@@ -145,7 +145,7 @@ class Firebase {
       treatment: this.treatment,
       problemFinished: problemFinished,
       feedback: feedback,
-      canvasStudentID: canvasStudentID,
+      canvasStudentID: canvasStudentID || null,
       status: "open"
     }
     return this.writeData(feedbackOutput, date, data);
