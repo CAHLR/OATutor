@@ -1,1 +1,1 @@
-import steps from "./Multiply1-index.js"; const problem = {id: "Multiply1", title: "Multiply", body: "Calculate the following expression.", steps: steps, }; export { problem };
+import steps from "./Multiply1-index.js"; const problem = {id: "Multiply1", title: "Multiply", body: "Calculate the following expression.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./quad22-index.js"; const problem = {id: "quad22", title: "Solve the quadratic equation by factoring", body: "Solve the quadratic equation by factoring.", steps: steps, }; export { problem };
+import steps from "./quad22-index.js"; const problem = {id: "quad22", title: "Solve the quadratic equation by factoring", body: "Solve the quadratic equation by factoring.", steps: steps, variabilization: {}}; export { problem };

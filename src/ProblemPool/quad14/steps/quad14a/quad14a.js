@@ -1,1 +1,1 @@
-import hints from "./quad14a-index.js"; const step = {id: "quad14a", stepAnswer: ["(3+sqrt(29))/2, (3-sqrt(29))/2"], problemType: "TextBox", stepTitle: "$$x^2-\\left(3\\right) x-\\left(5\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./quad14a-index.js"; const step = {id: "quad14a", stepAnswer: ["(3+sqrt(29))/2, (3-sqrt(29))/2"], problemType: "TextBox", stepTitle: "$$x^2-\\left(3\\right) x-\\left(5\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

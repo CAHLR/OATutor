@@ -1,1 +1,1 @@
-import hints from "./Multiply2b-index.js"; const step = {id: "Multiply2b", stepAnswer: ["11"], problemType: "TextBox", stepTitle: "$$-\\left(1\\right) \\left(-1\\right)1$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Multiply2b-index.js"; const step = {id: "Multiply2b", stepAnswer: ["11"], problemType: "TextBox", stepTitle: "$$-\\left(1\\right) \\left(-1\\right)1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

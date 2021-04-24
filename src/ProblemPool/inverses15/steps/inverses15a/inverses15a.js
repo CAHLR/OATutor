@@ -1,0 +1,1 @@
+import hints from "./inverses15a-index.js"; const step = {id: "inverses15a", stepAnswer: ["(2x-5)(4x^2+10x+25)"], problemType: "TextBox", stepTitle: "Factor $$\\left(8\\right) x^3-\\left(125\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

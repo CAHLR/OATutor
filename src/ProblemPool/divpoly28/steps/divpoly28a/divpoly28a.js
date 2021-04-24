@@ -1,0 +1,1 @@
+import hints from "./divpoly28a-index.js"; const step = {id: "divpoly28a", stepAnswer: ["x^2+5x+1"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) x \\left(83\\right)+\\left(7\\right) x \\left(82\\right)-\\left(13\\right) x-\\left(3\\right)$$ / (2x-3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

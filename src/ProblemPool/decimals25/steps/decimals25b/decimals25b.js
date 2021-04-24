@@ -1,1 +1,1 @@
-import hints from "./decimals25b-index.js"; const step = {id: "decimals25b", stepAnswer: ["225"], problemType: "TextBox", stepTitle: "2.25=___%", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./decimals25b-index.js"; const step = {id: "decimals25b", stepAnswer: ["225"], problemType: "TextBox", stepTitle: "2.25=___%", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

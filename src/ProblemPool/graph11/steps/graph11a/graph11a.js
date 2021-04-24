@@ -1,0 +1,1 @@
+import hints from "./graph11a-index.js"; const step = {id: "graph11a", stepAnswer: ["(0,0),(-5,0),(2,0)"], problemType: "TextBox", stepTitle: "Find the t-intercepts of $$C(t)=\\left(4\\right) t^4+\\left(12\\right) t^3-\\left(40\\right) t^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

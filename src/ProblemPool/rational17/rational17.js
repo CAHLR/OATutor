@@ -1,1 +1,1 @@
-import steps from "./rational17-index.js"; const problem = {id: "rational17", title: "Rational Expressions", body: "Add and subtract the rational expression, and then simplify.", steps: steps, }; export { problem };
+import steps from "./rational17-index.js"; const problem = {id: "rational17", title: "Rational Expressions", body: "Add and subtract the rational expression, and then simplify.", steps: steps, variabilization: {}}; export { problem };

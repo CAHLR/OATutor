@@ -1,1 +1,1 @@
-import steps from "./LinIneq19-index.js"; const problem = {id: "LinIneq19", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, }; export { problem };
+import steps from "./LinIneq19-index.js"; const problem = {id: "LinIneq19", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, variabilization: {}}; export { problem };

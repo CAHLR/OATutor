@@ -1,1 +1,1 @@
-import steps from "./probsolve9-index.js"; const problem = {id: "probsolve9", title: "Use a Problem-Solving Strategy for Word Problems", body: "", steps: steps, }; export { problem };
+import steps from "./probsolve9-index.js"; const problem = {id: "probsolve9", title: "Use a Problem-Solving Strategy for Word Problems", body: "", steps: steps, variabilization: {}}; export { problem };

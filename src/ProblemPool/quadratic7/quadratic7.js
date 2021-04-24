@@ -1,0 +1,1 @@
+import steps from "./quadratic7-index.js"; const problem = {id: "quadratic7", title: "Finding the y- and x-Intercepts of a Parabola", body: "Find the x and y intercepts of the following function.", steps: steps, variabilization: {}}; export { problem };

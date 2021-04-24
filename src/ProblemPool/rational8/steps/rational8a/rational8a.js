@@ -1,1 +1,1 @@
-import hints from "./rational8a-index.js"; const step = {id: "rational8a", stepAnswer: ["(x-y)(x+y)/x"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{x}{y}-\\frac{y}{x}}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./rational8a-index.js"; const step = {id: "rational8a", stepAnswer: ["(x-y)(x+y)/x"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{x}{y}-\\frac{y}{x}}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

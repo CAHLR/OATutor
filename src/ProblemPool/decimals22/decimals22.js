@@ -1,1 +1,1 @@
-import steps from "./decimals22-index.js"; const problem = {id: "decimals22", title: "Convert each percent to a decimal:", body: "", steps: steps, }; export { problem };
+import steps from "./decimals22-index.js"; const problem = {id: "decimals22", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}}; export { problem };

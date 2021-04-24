@@ -1,1 +1,1 @@
-import hints from "./Multiply11a-index.js"; const step = {id: "Multiply11a", stepAnswer: ["34"], problemType: "TextBox", stepTitle: "The difference of 13 and -21.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Multiply11a-index.js"; const step = {id: "Multiply11a", stepAnswer: ["34"], problemType: "TextBox", stepTitle: "The difference of 13 and -21.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

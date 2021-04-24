@@ -1,0 +1,1 @@
+import steps from "./cellcom2-index.js"; const problem = {id: "cellcom2", title: "Review Question 6", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./LinEqua31-index.js"; const problem = {id: "LinEqua31", title: "Finding the Equation of a Line Perpendicular to a Given Line Passing Through a Given Point", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua31-index.js"; const problem = {id: "LinEqua31", title: "Finding the Equation of a Line Perpendicular to a Given Line Passing Through a Given Point", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./exp6c-index.js"; const step = {id: "exp6c", stepAnswer: ["(-g)^16"], problemType: "TextBox", stepTitle: "$${\\left({\\left(-g\\right)}^4\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp6c-index.js"; const step = {id: "exp6c", stepAnswer: ["(-g)^16"], problemType: "TextBox", stepTitle: "$${\\left({\\left(-g\\right)}^4\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

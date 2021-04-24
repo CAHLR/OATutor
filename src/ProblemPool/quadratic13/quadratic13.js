@@ -1,0 +1,1 @@
+import steps from "./quadratic13-index.js"; const problem = {id: "quadratic13", title: "Rewriting Quadratics in Standard Form and Finding the Vertex", body: "", steps: steps, variabilization: {}}; export { problem };

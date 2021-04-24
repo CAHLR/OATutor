@@ -1,1 +1,1 @@
-import hints from "./factor9b-index.js"; const step = {id: "factor9b", stepAnswer: ["(9x-10)(9x+10)"], problemType: "TextBox", stepTitle: "$$\\left(81\\right) y^2-\\left(100\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor9b-index.js"; const step = {id: "factor9b", stepAnswer: ["(9x-10)(9x+10)"], problemType: "TextBox", stepTitle: "$$\\left(81\\right) y^2-\\left(100\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

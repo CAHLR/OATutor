@@ -1,1 +1,1 @@
-import steps from "./hypotest5-index.js"; const problem = {id: "hypotest5", title: "E.coli Study", body: "", steps: steps, }; export { problem };
+import steps from "./hypotest5-index.js"; const problem = {id: "hypotest5", title: "E.coli Study", body: "", steps: steps, variabilization: {}}; export { problem };

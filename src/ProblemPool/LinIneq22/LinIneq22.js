@@ -1,1 +1,1 @@
-import steps from "./LinIneq22-index.js"; const problem = {id: "LinIneq22", title: "Solving a Compound Inequality", body: "Solve the compound inequality:", steps: steps, }; export { problem };
+import steps from "./LinIneq22-index.js"; const problem = {id: "LinIneq22", title: "Solving a Compound Inequality", body: "Solve the compound inequality:", steps: steps, variabilization: {}}; export { problem };

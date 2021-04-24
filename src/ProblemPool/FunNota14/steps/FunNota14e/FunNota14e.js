@@ -1,1 +1,1 @@
-import hints from "./FunNota14e-index.js"; const step = {id: "FunNota14e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\left(2\\right) x+y^2=6$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./FunNota14e-index.js"; const step = {id: "FunNota14e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\left(2\\right) x+y^2=6$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

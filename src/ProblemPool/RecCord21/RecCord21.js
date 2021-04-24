@@ -1,1 +1,1 @@
-import steps from "./RecCord21-index.js"; const problem = {id: "RecCord21", title: "Finding Intercepts: Numeric", body: "", steps: steps, }; export { problem };
+import steps from "./RecCord21-index.js"; const problem = {id: "RecCord21", title: "Finding Intercepts: Numeric", body: "", steps: steps, variabilization: {}}; export { problem };

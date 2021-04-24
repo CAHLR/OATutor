@@ -1,1 +1,1 @@
-import steps from "./other17-index.js"; const problem = {id: "other17", title: "Solving an Equation with One Radical", body: "Solve the following equation for x.", steps: steps, }; export { problem };
+import steps from "./other17-index.js"; const problem = {id: "other17", title: "Solving an Equation with One Radical", body: "Solve the following equation for x.", steps: steps, variabilization: {}}; export { problem };

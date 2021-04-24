@@ -1,1 +1,1 @@
-import steps from "./MoApp13-index.js"; const problem = {id: "MoApp13", title: "Solving a Volume Problem", body: "", steps: steps, }; export { problem };
+import steps from "./MoApp13-index.js"; const problem = {id: "MoApp13", title: "Solving a Volume Problem", body: "", steps: steps, variabilization: {}}; export { problem };

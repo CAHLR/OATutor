@@ -1,1 +1,1 @@
-import steps from "./exp23-index.js"; const problem = {id: "exp23", title: "Terabyte Size", body: "A terabyte is made of approximately 1,099,500,000,000 bytes.", steps: steps, }; export { problem };
+import steps from "./exp23-index.js"; const problem = {id: "exp23", title: "Terabyte Size", body: "A terabyte is made of approximately 1,099,500,000,000 bytes.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./rationals26a-index.js"; const step = {id: "rationals26a", stepAnswer: ["12x-3"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{\\left(24\\right) x^2+\\left(6\\right) x}{\\left(2\\right) x+\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

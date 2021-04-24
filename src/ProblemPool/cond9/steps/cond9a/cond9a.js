@@ -1,1 +1,1 @@
-import hints from "./cond9a-index.js"; const step = {id: "cond9a", stepAnswer: ["1/6"], problemType: "TextBox", stepTitle: "What is P(B)? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./cond9a-index.js"; const step = {id: "cond9a", stepAnswer: ["1/6"], problemType: "TextBox", stepTitle: "What is P(B)? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

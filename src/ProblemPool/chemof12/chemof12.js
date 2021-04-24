@@ -1,0 +1,1 @@
+import steps from "./chemof12-index.js"; const problem = {id: "chemof12", title: "Review Question 15", body: "", steps: steps, variabilization: {}}; export { problem };

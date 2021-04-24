@@ -1,1 +1,1 @@
-import hints from "./FracDec4a-index.js"; const step = {id: "FracDec4a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "Solve: $$6=\\frac{1}{2} v+\\frac{2}{5} v-\\frac{3}{4} v$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./FracDec4a-index.js"; const step = {id: "FracDec4a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "Solve: $$6=\\frac{1}{2} v+\\frac{2}{5} v-\\frac{3}{4} v$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./graph14a-index.js"; const step = {id: "graph14a", stepAnswer: ["(0,0),(-7,0),(1,0)"], problemType: "TextBox", stepTitle: "Find the x-intercepts of $$f(x)=x^3+\\left(6\\right) x^2-\\left(7\\right) x$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

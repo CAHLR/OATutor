@@ -1,0 +1,1 @@
+import steps from "./quadratic24-index.js"; const problem = {id: "quadratic24", title: "Quadratic Functions", body: "For the following exercises, determine whether there is a Minimum or Maximum value to each quadratic function. Find the value and the axis of symmetry.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./inverses6a-index.js"; const step = {id: "inverses6a", stepAnswer: ["(x^2-3)/2"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{\\left(2\\right) x+\\left(3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./inverse17a-index.js"; const step = {id: "inverse17a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^3$$ and $$g(x)=\\frac{1}{3} x$$.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./inverse17a-index.js"; const step = {id: "inverse17a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^3$$ and $$g(x)=\\frac{1}{3} x$$.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

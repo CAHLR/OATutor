@@ -1,1 +1,1 @@
-import hints from "./VarCon33k-index.js"; const step = {id: "VarCon33k", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$\\frac{3}{5} p+\\left(2\\right)=\\frac{4}{5} p-\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon33k-index.js"; const step = {id: "VarCon33k", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$\\frac{3}{5} p+\\left(2\\right)=\\frac{4}{5} p-\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inverses23a-index.js"; const step = {id: "inverses23a", stepAnswer: ["y=((x-5)^2+8)/6"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\sqrt{\\left(6\\right) x-\\left(8\\right)}+\\left(5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

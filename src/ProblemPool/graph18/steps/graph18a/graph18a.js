@@ -1,0 +1,1 @@
+import hints from "./graph18a-index.js"; const step = {id: "graph18a", stepAnswer: ["(2,0),(-1,0)"], problemType: "TextBox", stepTitle: "Find the x-intercepts of the function $$f(x)=x^6-\\left(7\\right) x^3-\\left(8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./addand12a-index.js"; const step = {id: "addand12a", stepAnswer: ["-1/6"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(5\\right)}{6}-y$$ when $$y=\\frac{-\\left(2\\right)}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./addand12a-index.js"; const step = {id: "addand12a", stepAnswer: ["-1/6"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(5\\right)}{6}-y$$ when $$y=\\frac{-\\left(2\\right)}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

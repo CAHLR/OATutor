@@ -1,1 +1,1 @@
-import hints from "./composition16c-index.js"; const step = {id: "composition16c", stepAnswer: ["-x^4-2x^3+6x^2+12x"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./composition16c-index.js"; const step = {id: "composition16c", stepAnswer: ["-x^4-2x^3+6x^2+12x"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

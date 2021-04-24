@@ -1,1 +1,1 @@
-import steps from "./GenStr10-index.js"; const problem = {id: "GenStr10", title: "Solve the Equation", body: "", steps: steps, }; export { problem };
+import steps from "./GenStr10-index.js"; const problem = {id: "GenStr10", title: "Solve the Equation", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./measure4-index.js"; const problem = {id: "measure4", title: "How to Make Unit Conversions", body: "", steps: steps, }; export { problem };
+import steps from "./measure4-index.js"; const problem = {id: "measure4", title: "How to Make Unit Conversions", body: "", steps: steps, variabilization: {}}; export { problem };

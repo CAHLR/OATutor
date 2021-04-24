@@ -1,1 +1,1 @@
-import steps from "./quad10-index.js"; const problem = {id: "quad10", title: "Solving a Polynomial of Higher Degree by Factoring", body: "Solve the equation by factoring.", steps: steps, }; export { problem };
+import steps from "./quad10-index.js"; const problem = {id: "quad10", title: "Solving a Polynomial of Higher Degree by Factoring", body: "Solve the equation by factoring.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./Multiply26-index.js"; const problem = {id: "Multiply26", title: "Checking Account", body: "", steps: steps, }; export { problem };
+import steps from "./Multiply26-index.js"; const problem = {id: "Multiply26", title: "Checking Account", body: "", steps: steps, variabilization: {}}; export { problem };

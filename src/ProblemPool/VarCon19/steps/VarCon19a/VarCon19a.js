@@ -1,1 +1,1 @@
-import hints from "./VarCon19a-index.js"; const step = {id: "VarCon19a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$\\left(12\\right) x+\\left(8\\right)=\\left(6\\right) x+\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon19a-index.js"; const step = {id: "VarCon19a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$\\left(12\\right) x+\\left(8\\right)=\\left(6\\right) x+\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

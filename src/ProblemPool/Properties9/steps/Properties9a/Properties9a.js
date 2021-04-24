@@ -1,1 +1,1 @@
-import hints from "./Properties9a-index.js"; const step = {id: "Properties9a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\frac{0}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Properties9a-index.js"; const step = {id: "Properties9a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\frac{0}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

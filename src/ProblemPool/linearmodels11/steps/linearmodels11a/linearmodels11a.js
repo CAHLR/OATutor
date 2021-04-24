@@ -1,0 +1,1 @@
+import hints from "./linearmodels11a-index.js"; const step = {id: "linearmodels11a", stepAnswer: ["105000"], problemType: "TextBox", stepTitle: "What is the population 12 years from the onset of the model?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

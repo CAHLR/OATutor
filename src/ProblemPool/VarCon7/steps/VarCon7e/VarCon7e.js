@@ -1,1 +1,1 @@
-import hints from "./VarCon7e-index.js"; const step = {id: "VarCon7e", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$60=-21x-24$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon7e-index.js"; const step = {id: "VarCon7e", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$60=-21x-24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./graph19a-index.js"; const step = {id: "graph19a", stepAnswer: ["(1,0),(-1,0)"], problemType: "TextBox", stepTitle: "Find the x-intercept of the function $$f(x)=\\left(2\\right) x^4+\\left(6\\right) x^2-\\left(8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

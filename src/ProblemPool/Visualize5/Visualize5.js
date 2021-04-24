@@ -1,1 +1,1 @@
-import steps from "./Visualize5-index.js"; const problem = {id: "Visualize5", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, }; export { problem };
+import steps from "./Visualize5-index.js"; const problem = {id: "Visualize5", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, variabilization: {}}; export { problem };

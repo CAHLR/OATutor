@@ -1,1 +1,1 @@
-import steps from "./reg3-index.js"; const problem = {id: "reg3", title: "Interpreting Values", body: "", steps: steps, }; export { problem };
+import steps from "./reg3-index.js"; const problem = {id: "reg3", title: "Interpreting Values", body: "", steps: steps, variabilization: {}}; export { problem };

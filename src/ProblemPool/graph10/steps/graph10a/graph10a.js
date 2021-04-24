@@ -1,0 +1,1 @@
+import hints from "./graph10a-index.js"; const step = {id: "graph10a", stepAnswer: ["(0, 0),(3,0),(1,0)"], problemType: "TextBox", stepTitle: "Find the t-intercepts of $$C(t)=\\left(2\\right) t^4-\\left(8\\right) t^3+\\left(6\\right) t^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

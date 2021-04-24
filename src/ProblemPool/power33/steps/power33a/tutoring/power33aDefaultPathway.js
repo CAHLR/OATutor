@@ -1,0 +1,1 @@
+var hints = [{id: "power33a-h1", type: "hint", dependencies: [], title: "The coefficient is 2 (positive)", text: "", variabilization: {}}, {id: "power33a-h2", type: "hint", dependencies: ["power33a-h1"], title: "The exponent of the power function is 6 (an even number)", text: "", variabilization: {}}, ]; export {hints};

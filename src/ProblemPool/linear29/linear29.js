@@ -1,0 +1,1 @@
+import steps from "./linear29-index.js"; const problem = {id: "linear29", title: "Matching Linear Functions to Their Graphs", body: "", steps: steps, variabilization: {}}; export { problem };

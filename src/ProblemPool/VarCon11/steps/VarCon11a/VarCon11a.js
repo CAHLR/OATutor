@@ -1,1 +1,1 @@
-import hints from "./VarCon11a-index.js"; const step = {id: "VarCon11a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$5y-9=8y$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon11a-index.js"; const step = {id: "VarCon11a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$5y-9=8y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

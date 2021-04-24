@@ -1,1 +1,1 @@
-import steps from "./Formula2-index.js"; const problem = {id: "Formula2", title: "Lindsay's Distance", body: "", steps: steps, }; export { problem };
+import steps from "./Formula2-index.js"; const problem = {id: "Formula2", title: "Lindsay's Distance", body: "", steps: steps, variabilization: {}}; export { problem };

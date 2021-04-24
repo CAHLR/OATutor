@@ -1,0 +1,1 @@
+import hints from "./rationals29a-index.js"; const step = {id: "rationals29a", stepAnswer: ["2x"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{\\left(6\\right) x^3-\\left(5\\right) x}{\\left(3\\right) x^2+\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

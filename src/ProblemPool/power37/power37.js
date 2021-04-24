@@ -1,0 +1,1 @@
+import steps from "./power37-index.js"; const problem = {id: "power37", title: "Find the intercepts of the functions", body: "", steps: steps, variabilization: {}}; export { problem };

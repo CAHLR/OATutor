@@ -1,0 +1,1 @@
+import hints from "./inverses22a-index.js"; const step = {id: "inverses22a", stepAnswer: ["y=((x-9)^2+4)/4"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\left(9\\right)+\\sqrt{\\left(4\\right) x-\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

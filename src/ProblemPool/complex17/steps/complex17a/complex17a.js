@@ -1,1 +1,1 @@
-import hints from "./complex17a-index.js"; const step = {id: "complex17a", stepAnswer: ["4-6i"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(6\\right)+\\left(4\\right) i}{i}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./complex17a-index.js"; const step = {id: "complex17a", stepAnswer: ["4-6i"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(6\\right)+\\left(4\\right) i}{i}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

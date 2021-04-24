@@ -1,1 +1,1 @@
-import steps from "./add16-index.js"; const problem = {id: "add16", title: "Order each of the following pairs of numbers, using < or >:", body: "", steps: steps, }; export { problem };
+import steps from "./add16-index.js"; const problem = {id: "add16", title: "Order each of the following pairs of numbers, using < or >:", body: "", steps: steps, variabilization: {}}; export { problem };

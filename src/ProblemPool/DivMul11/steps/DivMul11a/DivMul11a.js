@@ -1,1 +1,1 @@
-import hints from "./DivMul11a-index.js"; const step = {id: "DivMul11a", stepAnswer: ["35"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5} n=14$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul11a-index.js"; const step = {id: "DivMul11a", stepAnswer: ["35"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5} n=14$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

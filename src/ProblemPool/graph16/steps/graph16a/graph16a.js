@@ -1,0 +1,1 @@
+import hints from "./graph16a-index.js"; const step = {id: "graph16a", stepAnswer: ["(-3,0),(2,0),(-2,0)"], problemType: "TextBox", stepTitle: "Find the x-intercept of the function $$f(x)=x^3+\\left(2\\right) x^2-\\left(9\\right) x-\\left(18\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

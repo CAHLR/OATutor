@@ -1,1 +1,1 @@
-import steps from "./other3-index.js"; const problem = {id: "other3", title: "Polynomial Equations", body: "Solve the following polynomial equation by grouping or factoring.", steps: steps, }; export { problem };
+import steps from "./other3-index.js"; const problem = {id: "other3", title: "Polynomial Equations", body: "Solve the following polynomial equation by grouping or factoring.", steps: steps, variabilization: {}}; export { problem };

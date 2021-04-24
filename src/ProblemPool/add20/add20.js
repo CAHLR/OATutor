@@ -1,1 +1,1 @@
-import steps from "./add20-index.js"; const problem = {id: "add20", title: "Fill in <, >, or $$=$$ for each of the following pairs of numbers:", body: "", steps: steps, }; export { problem };
+import steps from "./add20-index.js"; const problem = {id: "add20", title: "Fill in <, >, or $$=$$ for each of the following pairs of numbers:", body: "", steps: steps, variabilization: {}}; export { problem };

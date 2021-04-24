@@ -1,0 +1,1 @@
+import steps from "./inverses21-index.js"; const problem = {id: "inverses21", title: "Finding the Inverse of a Function", body: "", steps: steps, variabilization: {}}; export { problem };

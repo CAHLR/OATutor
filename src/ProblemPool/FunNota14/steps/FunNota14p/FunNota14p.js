@@ -1,1 +1,1 @@
-import hints from "./FunNota14p-index.js"; const step = {id: "FunNota14p", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$x=\\pm  \\sqrt{\\left(1\\right)-y}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./FunNota14p-index.js"; const step = {id: "FunNota14p", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$x=\\pm  \\sqrt{\\left(1\\right)-y}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};
