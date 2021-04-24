@@ -1,1 +1,1 @@
-import steps from "./use24-index.js"; const problem = {id: "use24", title: "Simplifying Expressions", body: "Simplify the expression.", steps: steps, }; export { problem };
+import steps from "./use24-index.js"; const problem = {id: "use24", title: "Simplifying Expressions", body: "Simplify the expression.", steps: steps, variabilization: {}}; export { problem };

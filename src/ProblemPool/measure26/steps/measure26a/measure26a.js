@@ -1,1 +1,1 @@
-import hints from "./measure26a-index.js"; const step = {id: "measure26a", stepAnswer: ["190.5"], problemType: "TextBox", stepTitle: "Bill is 75 inches tall. Convert his height to centimeters.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./measure26a-index.js"; const step = {id: "measure26a", stepAnswer: ["190.5"], problemType: "TextBox", stepTitle: "Bill is 75 inches tall. Convert his height to centimeters.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

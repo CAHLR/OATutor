@@ -1,1 +1,1 @@
-import steps from "./VarCon6-index.js"; const problem = {id: "VarCon6", title: "Solve the equation", body: "", steps: steps, }; export { problem };
+import steps from "./VarCon6-index.js"; const problem = {id: "VarCon6", title: "Solve the equation", body: "", steps: steps, variabilization: {}}; export { problem };

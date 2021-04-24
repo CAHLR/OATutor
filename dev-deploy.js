@@ -1,7 +1,7 @@
 var ghpages = require('gh-pages');
 
 console.log("Deploying to dev remote.")
-console.log("Will be live at: https://cahlr.github.io/OpenITS-dev/#/")
+//console.log("Will be live at: https://cahlr.github.io/OpenITS-dev/#/")
 ghpages.publish('build', {
   history: true,
   branch: "gh-pages",

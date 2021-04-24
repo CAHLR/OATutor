@@ -1,1 +1,1 @@
-import steps from "./inverse20-index.js"; const problem = {id: "inverse20", title: "Explaining How to Find the Inverse of a Function Algebraically", body: "", steps: steps, }; export { problem };
+import steps from "./inverse20-index.js"; const problem = {id: "inverse20", title: "Explaining How to Find the Inverse of a Function Algebraically", body: "", steps: steps, variabilization: {}}; export { problem };

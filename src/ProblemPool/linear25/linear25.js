@@ -1,0 +1,1 @@
+import steps from "./linear25-index.js"; const problem = {id: "linear25", title: "Writing an Equation for a Linear Function Given Two Points", body: "", steps: steps, variabilization: {}}; export { problem };

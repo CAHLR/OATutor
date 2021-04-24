@@ -1,0 +1,1 @@
+import hints from "./inverses26a-index.js"; const step = {id: "inverses26a", stepAnswer: ["y=2/x-8"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\frac{2}{x+\\left(8\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./FunNota17d-index.js"; const step = {id: "FunNota17d", stepAnswer: ["-sqrt(2-a)+5"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./FunNota17d-index.js"; const step = {id: "FunNota17d", stepAnswer: ["-sqrt(2-a)+5"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./polyzero14-index.js"; const problem = {id: "polyzero14", title: "Using the Factor Theorem to Factor a Polynomial", body: "", steps: steps, variabilization: {}}; export { problem };

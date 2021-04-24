@@ -1,1 +1,1 @@
-import hints from "./DivMul21a-index.js"; const step = {id: "DivMul21a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$-\\left(4\\right) \\left(q-\\left(2\\right)\\right)-\\left(8\\right)=24$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul21a-index.js"; const step = {id: "DivMul21a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$-\\left(4\\right) \\left(q-\\left(2\\right)\\right)-\\left(8\\right)=24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

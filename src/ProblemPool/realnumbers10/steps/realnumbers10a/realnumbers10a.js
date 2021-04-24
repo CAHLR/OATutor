@@ -1,1 +1,1 @@
-import hints from "./realnumbers10a-index.js"; const step = {id: "realnumbers10a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$\\sqrt{64}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./realnumbers10a-index.js"; const step = {id: "realnumbers10a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$\\sqrt{64}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

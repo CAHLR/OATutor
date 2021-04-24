@@ -1,1 +1,1 @@
-import steps from "./factor15-index.js"; const problem = {id: "factor15", title: "Factoring Polynomials", body: "Find the greatest common factor.", steps: steps, }; export { problem };
+import steps from "./factor15-index.js"; const problem = {id: "factor15", title: "Factoring Polynomials", body: "Find the greatest common factor.", steps: steps, variabilization: {}}; export { problem };

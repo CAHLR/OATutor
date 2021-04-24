@@ -1,0 +1,1 @@
+import hints from "./quadratic13b-index.js"; const step = {id: "quadratic13b", stepAnswer: ["(6,-4)"], problemType: "TextBox", stepTitle: "Find the vertex of the equation derived in the previous question.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

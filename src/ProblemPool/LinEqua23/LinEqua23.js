@@ -1,1 +1,1 @@
-import steps from "./LinEqua23-index.js"; const problem = {id: "LinEqua23", title: "Finding the Equation of a Line and Writing It in Standard Form", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua23-index.js"; const problem = {id: "LinEqua23", title: "Finding the Equation of a Line and Writing It in Standard Form", body: "", steps: steps, variabilization: {}}; export { problem };

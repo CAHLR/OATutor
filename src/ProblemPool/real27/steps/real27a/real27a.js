@@ -1,1 +1,1 @@
-import hints from "./real27a-index.js"; const step = {id: "real27a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) {\\left(\\left(5\\right)-\\left(2\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real27a-index.js"; const step = {id: "real27a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) {\\left(\\left(5\\right)-\\left(2\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

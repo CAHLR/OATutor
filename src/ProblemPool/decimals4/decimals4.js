@@ -1,1 +1,1 @@
-import steps from "./decimals4-index.js"; const problem = {id: "decimals4", title: "How to Name Decimals", body: "", steps: steps, }; export { problem };
+import steps from "./decimals4-index.js"; const problem = {id: "decimals4", title: "How to Name Decimals", body: "", steps: steps, variabilization: {}}; export { problem };

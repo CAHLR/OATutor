@@ -1,0 +1,1 @@
+import hints from "./inverses21a-index.js"; const step = {id: "inverses21a", stepAnswer: ["(x^2-3)/(-4)"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\sqrt{\\left(2\\right) x+\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

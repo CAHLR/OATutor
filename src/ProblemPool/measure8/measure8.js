@@ -1,1 +1,1 @@
-import steps from "./measure8-index.js"; const problem = {id: "measure8", title: "Make Unit Conversions in the Metric System", body: "", steps: steps, }; export { problem };
+import steps from "./measure8-index.js"; const problem = {id: "measure8", title: "Make Unit Conversions in the Metric System", body: "", steps: steps, variabilization: {}}; export { problem };

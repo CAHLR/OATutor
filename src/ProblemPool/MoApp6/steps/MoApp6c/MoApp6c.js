@@ -1,1 +1,1 @@
-import hints from "./MoApp6c-index.js"; const step = {id: "MoApp6c", stepAnswer: ["300"], problemType: "TextBox", stepTitle: "Find out how many minutes of calling would make the two plans equal.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./MoApp6c-index.js"; const step = {id: "MoApp6c", stepAnswer: ["300"], problemType: "TextBox", stepTitle: "Find out how many minutes of calling would make the two plans equal.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

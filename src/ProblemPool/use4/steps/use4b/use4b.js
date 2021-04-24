@@ -1,1 +1,1 @@
-import hints from "./use4b-index.js"; const step = {id: "use4b", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$\\left(15\\right) x^2$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use4b-index.js"; const step = {id: "use4b", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$\\left(15\\right) x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

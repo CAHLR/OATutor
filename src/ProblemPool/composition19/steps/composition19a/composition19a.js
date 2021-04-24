@@ -1,1 +1,1 @@
-import hints from "./composition19a-index.js"; const step = {id: "composition19a", stepAnswer: ["2/((x-4)(6-x))"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./composition19a-index.js"; const step = {id: "composition19a", stepAnswer: ["2/((x-4)(6-x))"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

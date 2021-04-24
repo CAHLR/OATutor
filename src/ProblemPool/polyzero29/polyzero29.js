@@ -1,0 +1,1 @@
+import steps from "./polyzero29-index.js"; const problem = {id: "polyzero29", title: "Finding the Zeros of a Polynomial Function with Repeated Real Zeros", body: "Find the possible rational zeros for the function using the Rational Zero Theorem.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./polyzero24-index.js"; const problem = {id: "polyzero24", title: "Using the Rational Zero Theorem #9", body: "Use the Rational Zero Theorem to find the real solution(s) to the equation.", steps: steps, variabilization: {}}; export { problem };

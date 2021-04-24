@@ -1,1 +1,1 @@
-import hints from "./exp2b-index.js"; const step = {id: "exp2b", stepAnswer: ["(2/y)^5"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{2}{y}\\right)}^4 \\frac{2}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp2b-index.js"; const step = {id: "exp2b", stepAnswer: ["(2/y)^5"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{2}{y}\\right)}^4 \\frac{2}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

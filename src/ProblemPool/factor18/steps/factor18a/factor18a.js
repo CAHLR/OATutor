@@ -1,1 +1,1 @@
-import hints from "./factor18a-index.js"; const step = {id: "factor18a", stepAnswer: ["(2p-7)(p+1)"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) p^2$$ - 5p - 7", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor18a-index.js"; const step = {id: "factor18a", stepAnswer: ["(2p-7)(p+1)"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) p^2$$ - 5p - 7", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./modeling16-index.js"; const problem = {id: "modeling16", title: "Joint Variation", body: "Write an expression for y that describes the relationship of the given variables.", steps: steps, variabilization: {}}; export { problem };

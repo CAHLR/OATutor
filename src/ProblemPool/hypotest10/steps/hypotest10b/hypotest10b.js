@@ -1,1 +1,1 @@
-import hints from "./hypotest10b-index.js"; const step = {id: "hypotest10b", stepAnswer: ["1.5"], problemType: "MultipleChoice", stepTitle: "Calculate σ.", stepBody: "", choices: ["2.5", "3", "1.8", "1.5", "26"], answerType: "string", hints: hints}; export {step};
+import hints from "./hypotest10b-index.js"; const step = {id: "hypotest10b", stepAnswer: ["1.5"], problemType: "MultipleChoice", stepTitle: "Calculate σ.", stepBody: "", choices: ["2.5", "3", "1.8", "1.5", "26"], answerType: "string", hints: hints, variabilization: {}}; export {step};

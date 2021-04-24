@@ -1,1 +1,1 @@
-import steps from "./transformation21-index.js"; const problem = {id: "transformation21", title: "Increasing and Decreasing Intervals", body: "Determine the interval(s) on which the function is increasing and decreasing.", steps: steps, }; export { problem };
+import steps from "./transformation21-index.js"; const problem = {id: "transformation21", title: "Increasing and Decreasing Intervals", body: "Determine the interval(s) on which the function is increasing and decreasing.", steps: steps, variabilization: {}}; export { problem };

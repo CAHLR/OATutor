@@ -1,0 +1,1 @@
+import steps from "./linear28-index.js"; const problem = {id: "linear28", title: "Using Tabular Form to Write an Equation for a Linear Function", body: "The attached table relates the number of rats in a population to time, in weeks.", steps: steps, variabilization: {}}; export { problem };

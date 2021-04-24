@@ -1,1 +1,1 @@
-import steps from "./RecCord19-index.js"; const problem = {id: "RecCord19", title: "Finding the Midpoint of the Line Segment", body: "", steps: steps, }; export { problem };
+import steps from "./RecCord19-index.js"; const problem = {id: "RecCord19", title: "Finding the Midpoint of the Line Segment", body: "", steps: steps, variabilization: {}}; export { problem };

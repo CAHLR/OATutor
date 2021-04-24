@@ -1,1 +1,1 @@
-import hints from "./factor15a-index.js"; const step = {id: "factor15a", stepAnswer: ["y"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) y^4$$ - $$\\left(2\\right) y^3+\\left(3\\right) y^2$$ - y", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor15a-index.js"; const step = {id: "factor15a", stepAnswer: ["y"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) y^4$$ - $$\\left(2\\right) y^3+\\left(3\\right) y^2$$ - y", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

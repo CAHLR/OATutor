@@ -1,1 +1,1 @@
-import hints from "./quad15a-index.js"; const step = {id: "quad15a", stepAnswer: ["(3+sqrt(22)), (3−sqrt(22))"], problemType: "TextBox", stepTitle: "$$x \\left(2\\right)-\\left(6\\right) x=13$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./quad15a-index.js"; const step = {id: "quad15a", stepAnswer: ["(3+sqrt(22)), (3−sqrt(22))"], problemType: "TextBox", stepTitle: "$$x \\left(2\\right)-\\left(6\\right) x=13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

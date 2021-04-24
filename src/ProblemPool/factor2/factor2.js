@@ -1,1 +1,1 @@
-import steps from "./factor2-index.js"; const problem = {id: "factor2", title: "Factoring the Greatest Common Factor", body: "Factor the expression by pulling out the greatest common factor.", steps: steps, }; export { problem };
+import steps from "./factor2-index.js"; const problem = {id: "factor2", title: "Factoring the Greatest Common Factor", body: "Factor the expression by pulling out the greatest common factor.", steps: steps, variabilization: {}}; export { problem };

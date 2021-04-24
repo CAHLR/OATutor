@@ -1,1 +1,1 @@
-import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expressions", body: "", steps: steps, }; export { problem };
+import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./factor8-index.js"; const problem = {id: "factor8", title: "Factor the following expression", body: "Factoring a Perfect Square Trinomial.", steps: steps, }; export { problem };
+import steps from "./factor8-index.js"; const problem = {id: "factor8", title: "Factor the following expression", body: "Factoring a Perfect Square Trinomial.", steps: steps, variabilization: {}}; export { problem };

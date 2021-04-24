@@ -1,1 +1,1 @@
-import steps from "./complex24-index.js"; const problem = {id: "complex24", title: "Dividing Complex Numbers", body: "", steps: steps, }; export { problem };
+import steps from "./complex24-index.js"; const problem = {id: "complex24", title: "Dividing Complex Numbers", body: "", steps: steps, variabilization: {}}; export { problem };

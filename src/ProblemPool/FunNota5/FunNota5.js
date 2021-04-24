@@ -1,1 +1,1 @@
-import steps from "./FunNota5-index.js"; const problem = {id: "FunNota5", title: "Interpreting Function Notation", body: "", steps: steps, }; export { problem };
+import steps from "./FunNota5-index.js"; const problem = {id: "FunNota5", title: "Interpreting Function Notation", body: "", steps: steps, variabilization: {}}; export { problem };

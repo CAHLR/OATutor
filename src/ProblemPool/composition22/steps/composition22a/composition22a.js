@@ -1,1 +1,1 @@
-import hints from "./composition22a-index.js"; const step = {id: "composition22a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "f(g(2))", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./composition22a-index.js"; const step = {id: "composition22a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "f(g(2))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

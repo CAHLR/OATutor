@@ -1,0 +1,1 @@
+import hints from "./modeling6a-index.js"; const step = {id: "modeling6a", stepAnswer: ["9/2"], problemType: "TextBox", stepTitle: "If $$y=8$$ when $$x=3$$, find y when x is 4.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

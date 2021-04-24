@@ -1,1 +1,1 @@
-import hints from "./probsolve18a-index.js"; const step = {id: "probsolve18a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "The sum of twice a number and seven is 15. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./probsolve18a-index.js"; const step = {id: "probsolve18a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "The sum of twice a number and seven is 15. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

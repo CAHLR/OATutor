@@ -1,0 +1,1 @@
+import steps from "./linear27-index.js"; const problem = {id: "linear27", title: "Using a Linear Function to Calculate Salary Based on Commission", body: "", steps: steps, variabilization: {}}; export { problem };

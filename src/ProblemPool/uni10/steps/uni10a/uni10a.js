@@ -1,1 +1,1 @@
-import hints from "./uni10a-index.js"; const step = {id: "uni10a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is her walking speed in mph?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./uni10a-index.js"; const step = {id: "uni10a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is her walking speed in mph?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./linearmodels12b-index.js"; const step = {id: "linearmodels12b", stepAnswer: ["2027"], problemType: "TextBox", stepTitle: "Identity the year in which the population will reach 15,000.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

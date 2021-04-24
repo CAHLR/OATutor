@@ -1,1 +1,1 @@
-import steps from "./GenStr25-index.js"; const problem = {id: "GenStr25", title: "Solve Equations Using the General Strategy for Solving Linear Equations", body: "", steps: steps, }; export { problem };
+import steps from "./GenStr25-index.js"; const problem = {id: "GenStr25", title: "Solve Equations Using the General Strategy for Solving Linear Equations", body: "", steps: steps, variabilization: {}}; export { problem };

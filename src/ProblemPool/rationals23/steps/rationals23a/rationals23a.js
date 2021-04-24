@@ -1,0 +1,1 @@
+import hints from "./rationals23a-index.js"; const step = {id: "rationals23a", stepAnswer: ["(-7,0),(-1,0),(0,7/30)"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x^2+\\left(8\\right) x+\\left(7\\right)}{x^2+\\left(11\\right) x+\\left(30\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

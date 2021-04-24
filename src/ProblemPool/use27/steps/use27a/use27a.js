@@ -1,1 +1,1 @@
-import hints from "./use27a-index.js"; const step = {id: "use27a", stepAnswer: ["Equation"], problemType: "MultipleChoice", stepTitle: "$$3(x-7)=27$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints}; export {step};
+import hints from "./use27a-index.js"; const step = {id: "use27a", stepAnswer: ["Equation"], problemType: "MultipleChoice", stepTitle: "$$3(x-7)=27$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints, variabilization: {}}; export {step};

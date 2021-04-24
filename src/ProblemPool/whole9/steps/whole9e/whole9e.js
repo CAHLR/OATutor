@@ -1,1 +1,1 @@
-import hints from "./whole9e-index.js"; const step = {id: "whole9e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 3,765 is divisible by 10.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./whole9e-index.js"; const step = {id: "whole9e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 3,765 is divisible by 10.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

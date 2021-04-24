@@ -1,0 +1,1 @@
+import hints from "./chemof1a-index.js"; const step = {id: "chemof1a", stepAnswer: ["microrganisms"], problemType: "MultipleChoice", stepTitle: "The first forms of life on Earth were ________.", stepBody: "", choices: ["plants", "microorganisms", "birds\n", "dinosaurs"], answerType: "string", hints: hints, variabilization: {}}; export {step};

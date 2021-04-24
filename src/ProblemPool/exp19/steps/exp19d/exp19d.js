@@ -1,1 +1,1 @@
-import hints from "./exp19d-index.js"; const step = {id: "exp19d", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-\\left(8.05\\right) {\\left(10\\right)}^{-\\left(12\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp19d-index.js"; const step = {id: "exp19d", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-\\left(8.05\\right) {\\left(10\\right)}^{-\\left(12\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

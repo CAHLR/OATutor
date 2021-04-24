@@ -1,0 +1,1 @@
+import steps from "./polyzero13-index.js"; const problem = {id: "polyzero13", title: "Using the Remainder Theorem to Find the Remainder", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./Visualize5a-index.js"; const step = {id: "Visualize5a", stepAnswer: ["x/y"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(5\\right) x}{\\left(5\\right) y}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Visualize5a-index.js"; const step = {id: "Visualize5a", stepAnswer: ["x/y"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(5\\right) x}{\\left(5\\right) y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

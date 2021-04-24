@@ -1,0 +1,1 @@
+import hints from "./modeling18a-index.js"; const step = {id: "modeling18a", stepAnswer: ["y=2x"], problemType: "TextBox", stepTitle: "y varies directly as x and when x $$=6$$, $$y=12$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

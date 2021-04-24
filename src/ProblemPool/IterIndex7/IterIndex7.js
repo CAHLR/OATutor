@@ -1,1 +1,1 @@
-import steps from "./IterIndex7-index.js"; const problem = {id: "IterIndex7", title: "Counting by Twos", body: "", steps: steps, }; export { problem };
+import steps from "./IterIndex7-index.js"; const problem = {id: "IterIndex7", title: "Counting by Twos", body: "", steps: steps, variabilization: {}}; export { problem };

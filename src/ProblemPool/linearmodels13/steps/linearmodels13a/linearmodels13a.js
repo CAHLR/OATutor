@@ -1,0 +1,1 @@
+import hints from "./linearmodels13a-index.js"; const step = {id: "linearmodels13a", stepAnswer: ["0.4"], problemType: "TextBox", stepTitle: "How long after they start walking will they fall out of radio contact? Enter your answer in hours.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

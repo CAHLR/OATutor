@@ -1,1 +1,1 @@
-import hints from "./add21b-index.js"; const step = {id: "add21b", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-2___5", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints}; export {step};
+import hints from "./add21b-index.js"; const step = {id: "add21b", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-2___5", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};

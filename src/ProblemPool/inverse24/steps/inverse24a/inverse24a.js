@@ -1,1 +1,1 @@
-import hints from "./inverse24a-index.js"; const step = {id: "inverse24a", stepAnswer: ["3-x"], problemType: "TextBox", stepTitle: "$$f(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./inverse24a-index.js"; const step = {id: "inverse24a", stepAnswer: ["3-x"], problemType: "TextBox", stepTitle: "$$f(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

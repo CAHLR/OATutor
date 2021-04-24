@@ -1,1 +1,1 @@
-import hints from "./DivMul16b-index.js"; const step = {id: "DivMul16b", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "$$-5c=55$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul16b-index.js"; const step = {id: "DivMul16b", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "$$-5c=55$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

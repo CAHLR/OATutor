@@ -1,1 +1,1 @@
-import steps from "./decimals9-index.js"; const problem = {id: "decimals9", title: "How to Write Decimals", body: "", steps: steps, }; export { problem };
+import steps from "./decimals9-index.js"; const problem = {id: "decimals9", title: "How to Write Decimals", body: "", steps: steps, variabilization: {}}; export { problem };

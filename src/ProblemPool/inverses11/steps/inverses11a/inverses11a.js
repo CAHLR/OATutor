@@ -1,0 +1,1 @@
+import hints from "./inverses11a-index.js"; const step = {id: "inverses11a", stepAnswer: ["(3x-5)(3x+5)"], problemType: "TextBox", stepTitle: "Factor $$\\left(9\\right) x^2-\\left(25\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

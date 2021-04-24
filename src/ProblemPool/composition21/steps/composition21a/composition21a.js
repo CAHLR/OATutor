@@ -1,1 +1,1 @@
-import hints from "./composition21a-index.js"; const step = {id: "composition21a", stepAnswer: ["((sqrt(x))(abs(x-3)))/x"], problemType: "TextBox", stepTitle: "$$\\frac{g}{f}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./composition21a-index.js"; const step = {id: "composition21a", stepAnswer: ["((sqrt(x))(abs(x-3)))/x"], problemType: "TextBox", stepTitle: "$$\\frac{g}{f}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./add13-index.js"; const problem = {id: "add13", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, }; export { problem };
+import steps from "./add13-index.js"; const problem = {id: "add13", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, variabilization: {}}; export { problem };

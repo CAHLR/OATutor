@@ -1,1 +1,1 @@
-import hints from "./add17a-index.js"; const step = {id: "add17a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "The opposite of 7.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./add17a-index.js"; const step = {id: "add17a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "The opposite of 7.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

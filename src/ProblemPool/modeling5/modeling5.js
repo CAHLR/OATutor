@@ -1,0 +1,1 @@
+import steps from "./modeling5-index.js"; const problem = {id: "modeling5", title: "Solving a Direct Variation Problem", body: "The quantity of y varies directly with the square of x.", steps: steps, variabilization: {}}; export { problem };

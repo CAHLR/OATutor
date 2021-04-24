@@ -1,0 +1,1 @@
+import steps from "./linear12-index.js"; const problem = {id: "linear12", title: "Town Population", body: "", steps: steps, variabilization: {}}; export { problem };

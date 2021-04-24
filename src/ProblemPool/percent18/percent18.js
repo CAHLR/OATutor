@@ -1,1 +1,1 @@
-import steps from "./percent18-index.js"; const problem = {id: "percent18", title: "Solve Simple Interest Applications", body: "", steps: steps, }; export { problem };
+import steps from "./percent18-index.js"; const problem = {id: "percent18", title: "Solve Simple Interest Applications", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./quadratic3a-index.js"; const step = {id: "quadratic3a", stepAnswer: ["2(x-3/2)^2+5/2"], problemType: "TextBox", stepTitle: "Find the vertex of f(x), and rewrite the equation in standard form (vertex form.) $$f(x)=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

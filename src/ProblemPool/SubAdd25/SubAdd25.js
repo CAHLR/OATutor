@@ -1,1 +1,1 @@
-import steps from "./SubAdd25-index.js"; const problem = {id: "SubAdd25", title: "Solve the equation", body: "", steps: steps, }; export { problem };
+import steps from "./SubAdd25-index.js"; const problem = {id: "SubAdd25", title: "Solve the equation", body: "", steps: steps, variabilization: {}}; export { problem };

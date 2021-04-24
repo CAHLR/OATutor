@@ -1,0 +1,1 @@
+import steps from "./divpoly7-index.js"; const problem = {id: "divpoly7", title: "Using Long Division to Divide Third-Degree Polynomials", body: "", steps: steps, variabilization: {}}; export { problem };

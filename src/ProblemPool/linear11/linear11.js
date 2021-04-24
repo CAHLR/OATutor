@@ -1,0 +1,1 @@
+import steps from "./linear11-index.js"; const problem = {id: "linear11", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}}; export { problem };

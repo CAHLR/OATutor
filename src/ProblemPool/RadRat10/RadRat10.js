@@ -1,1 +1,1 @@
-import steps from "./RadRat10-index.js"; const problem = {id: "RadRat10", title: "Addition of Square Roots", body: "", steps: steps, }; export { problem };
+import steps from "./RadRat10-index.js"; const problem = {id: "RadRat10", title: "Addition of Square Roots", body: "", steps: steps, variabilization: {}}; export { problem };

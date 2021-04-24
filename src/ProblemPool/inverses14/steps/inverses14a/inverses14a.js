@@ -1,0 +1,1 @@
+import hints from "./inverses14a-index.js"; const step = {id: "inverses14a", stepAnswer: ["(6a+b)(36a^2+6ab+b^2)"], problemType: "TextBox", stepTitle: "$$\\left(216\\right) a^3+b^3$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

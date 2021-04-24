@@ -1,1 +1,1 @@
-import hints from "./FracDec15a-index.js"; const step = {id: "FracDec15a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{\\left(5\\right) x-\\left(3\\right)}{4}=\\frac{x}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./FracDec15a-index.js"; const step = {id: "FracDec15a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{\\left(5\\right) x-\\left(3\\right)}{4}=\\frac{x}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

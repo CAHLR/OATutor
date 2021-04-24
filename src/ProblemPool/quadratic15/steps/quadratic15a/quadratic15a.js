@@ -1,0 +1,1 @@
+import hints from "./quadratic15a-index.js"; const step = {id: "quadratic15a", stepAnswer: ["f(x)=(x-(1/2))^2-.25"], problemType: "TextBox", stepTitle: "$$x^2-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

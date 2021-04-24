@@ -1,1 +1,1 @@
-import steps from "./DivMul9-index.js"; const problem = {id: "DivMul9", title: "Solve Equations Using the Division Property of Equality", body: "Solve the eqation", steps: steps, }; export { problem };
+import steps from "./DivMul9-index.js"; const problem = {id: "DivMul9", title: "Solve Equations Using the Division Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./RadRat6-index.js"; const problem = {id: "RadRat6", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, }; export { problem };
+import steps from "./RadRat6-index.js"; const problem = {id: "RadRat6", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, variabilization: {}}; export { problem };

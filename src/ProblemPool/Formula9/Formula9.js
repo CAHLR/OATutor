@@ -1,1 +1,1 @@
-import steps from "./Formula9-index.js"; const problem = {id: "Formula9", title: "Solve the formula $$A=\\frac{1}{2} bh$$ for h:", body: "", steps: steps, }; export { problem };
+import steps from "./Formula9-index.js"; const problem = {id: "Formula9", title: "Solve the formula $$A=\\frac{1}{2} bh$$ for h:", body: "", steps: steps, variabilization: {}}; export { problem };

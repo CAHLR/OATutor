@@ -1,0 +1,1 @@
+import hints from "./quadratic1c-index.js"; const step = {id: "quadratic1c", stepAnswer: ["There are no zeros"], problemType: "MultipleChoice", stepTitle: "Determine the zeros of the parabola shown.", stepBody: "", choices: ["at $$x=0$$", "at $$x=0$$ and $$x=6$$", "at $$x=6$$", "There are no zeros"], answerType: "string", hints: hints, variabilization: {}}; export {step};

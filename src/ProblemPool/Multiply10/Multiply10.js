@@ -1,1 +1,1 @@
-import steps from "./Multiply10-index.js"; const problem = {id: "Multiply10", title: "Translate and Simplify", body: "", steps: steps, }; export { problem };
+import steps from "./Multiply10-index.js"; const problem = {id: "Multiply10", title: "Translate and Simplify", body: "", steps: steps, variabilization: {}}; export { problem };

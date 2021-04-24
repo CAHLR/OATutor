@@ -1,1 +1,1 @@
-import steps from "./inverse11-index.js"; const problem = {id: "inverse11", title: "Intercepts of Cubic Functions", body: "Find the intercepts of the function $$f(x)=x^3-\\left(27\\right)$$.", steps: steps, }; export { problem };
+import steps from "./inverse11-index.js"; const problem = {id: "inverse11", title: "Intercepts of Cubic Functions", body: "Find the intercepts of the function $$f(x)=x^3-\\left(27\\right)$$.", steps: steps, variabilization: {}}; export { problem };

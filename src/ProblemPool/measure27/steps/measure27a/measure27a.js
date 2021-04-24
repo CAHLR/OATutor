@@ -1,1 +1,1 @@
-import hints from "./measure27a-index.js"; const step = {id: "measure27a", stepAnswer: ["44"], problemType: "TextBox", stepTitle: "Dawn’s suitcase weighed 20 kilograms. Convert the weight to pounds.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./measure27a-index.js"; const step = {id: "measure27a", stepAnswer: ["44"], problemType: "TextBox", stepTitle: "Dawn’s suitcase weighed 20 kilograms. Convert the weight to pounds.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

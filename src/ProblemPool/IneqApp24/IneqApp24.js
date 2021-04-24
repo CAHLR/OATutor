@@ -1,1 +1,1 @@
-import steps from "./IneqApp24-index.js"; const problem = {id: "IneqApp24", title: "Kimuyen's Earning", body: "", steps: steps, }; export { problem };
+import steps from "./IneqApp24-index.js"; const problem = {id: "IneqApp24", title: "Kimuyen's Earning", body: "", steps: steps, variabilization: {}}; export { problem };

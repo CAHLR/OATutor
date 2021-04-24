@@ -1,1 +1,1 @@
-import hints from "./probsolve16a-index.js"; const step = {id: "probsolve16a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "The difference of a number and eight is 17. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./probsolve16a-index.js"; const step = {id: "probsolve16a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "The difference of a number and eight is 17. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
