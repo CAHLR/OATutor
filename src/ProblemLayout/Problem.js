@@ -186,7 +186,7 @@ class Problem extends React.Component {
             <Grid container spacing={0}>
               <Grid item xs={3} sm={3} md={5} key={1} />
               <Grid item xs={6} sm={6} md={2} key={2}>
-                <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!this.state.problemFinished}>Next Problem</Button>
+                <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next Problem</Button>
               </Grid>
               <Grid item xs={3} sm={3} md={5} key={3} />
             </Grid>}

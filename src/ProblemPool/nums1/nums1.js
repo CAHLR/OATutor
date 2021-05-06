@@ -1,0 +1,1 @@
+import steps from "./nums1-index.js"; const problem = {id: "nums1", title: "arithmetic", body: "Write a python expression that is equal to ##5*(3+(10/11))-(50+(1/3))+2**(0.5*22)-(7/33)+3##", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./expgraph4-index.js"; const problem = {id: "expgraph4", title: "Find the equation of the graph, g(x), that reflects f(x) $$=$$ $${\\left(\\frac{1}{4}\\right)}^x$$ about the x-axis.", body: "", steps: steps, variabilization: {}}; export { problem };

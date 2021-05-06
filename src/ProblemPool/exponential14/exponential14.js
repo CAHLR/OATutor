@@ -1,0 +1,1 @@
+import steps from "./exponential14-index.js"; const problem = {id: "exponential14", title: "Evaluating Exponential Function", body: "Evaluate the function. Round the answer to four decimal places, if necessary.", steps: steps, variabilization: {}}; export { problem };

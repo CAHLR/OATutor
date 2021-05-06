@@ -1,0 +1,1 @@
+var hints = [{id: "logarithmsandlogistic17a-h1", type: "hint", dependencies: [], title: "How to Find the Initial Value", text: "The initial value is P(t) when $$t=0$$.", variabilization: {}}, ]; export {hints};

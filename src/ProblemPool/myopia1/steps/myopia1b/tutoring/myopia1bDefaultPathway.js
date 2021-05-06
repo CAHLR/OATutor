@@ -1,0 +1,1 @@
+var hints = [{id: "myopia1b-h1", type: "hint", dependencies: [], title: "Association", text: "An association is any relation between the treatment and the outcome", variabilization: {}}, ]; export {hints};

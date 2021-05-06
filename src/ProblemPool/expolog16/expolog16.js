@@ -1,0 +1,1 @@
+import steps from "./expolog16-index.js"; const problem = {id: "expolog16", title: "Fish Population", body: "P(t)=1000/(1+9e**(-0.6t)) represents the population of fish as a function of time, t.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./expolog6-index.js"; const problem = {id: "expolog6", title: "Modeling Exponential Growth and Decay", body: "Recent data suggests that, as of 2013, the rate of growth predicted by Moore’s Law no longer holds. Growth has slowed to a doubling time of approximately three years.", steps: steps, variabilization: {}}; export { problem };

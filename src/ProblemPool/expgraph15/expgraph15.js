@@ -1,0 +1,1 @@
+import steps from "./expgraph15-index.js"; const problem = {id: "expgraph15", title: "Transformations of exponential functions", body: "The graph of $$f(x)={\\left(10\\right)}^x$$ is reflected about the x-axis and shifted upward 7 units. What is the equation of the new function, g(x)?", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./expgraph3-index.js"; const problem = {id: "expgraph3", title: "Finding the domain and range of exponential functions", body: "What is the domain and range of $$f(x)=\\left(4\\right) {\\left(\\frac{1}{2}\\right)}^x$$?", steps: steps, variabilization: {}}; export { problem };

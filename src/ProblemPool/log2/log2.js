@@ -1,0 +1,1 @@
+import steps from "./log2-index.js"; const problem = {id: "log2", title: "Converting from Logarithmic Form to Exponential Form", body: "Write the following logarithmic equations in exponential form.", steps: steps, variabilization: {}}; export { problem };

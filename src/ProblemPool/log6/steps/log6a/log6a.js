@@ -1,0 +1,1 @@
+import hints from "./log6a-index.js"; const step = {id: "log6a", stepAnswer: ["1/2"], problemType: "TextBox", stepTitle: "$$y=\\log_{121}(11)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

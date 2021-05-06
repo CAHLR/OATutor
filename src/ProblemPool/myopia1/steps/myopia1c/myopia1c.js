@@ -1,0 +1,1 @@
+import hints from "./myopia1c-index.js"; const step = {id: "myopia1c", stepAnswer: ["Yes, myopic parents"], problemType: "MultipleChoice", stepTitle: "Is there a confounding factor? If so, what is it?", stepBody: "", choices: ["Yes, myopic parents", "Yes, cannot tell", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

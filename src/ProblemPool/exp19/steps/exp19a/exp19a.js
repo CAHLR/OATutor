@@ -1,1 +1,1 @@
-import hints from "./exp19a-index.js"; const step = {id: "exp19a", stepAnswer: ["354,700,000,000,000"], problemType: "TextBox", stepTitle: "$$\\left(3.547\\right) {\\left(10\\right)}^{14}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp19a-index.js"; const step = {id: "exp19a", stepAnswer: ["354700000000000"], problemType: "TextBox", stepTitle: "$$\\left(3.547\\right) {\\left(10\\right)}^{14}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

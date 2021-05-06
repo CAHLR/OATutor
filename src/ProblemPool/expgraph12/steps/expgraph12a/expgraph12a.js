@@ -1,0 +1,1 @@
+import hints from "./expgraph12a-index.js"; const step = {id: "expgraph12a", stepAnswer: ["1529435"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

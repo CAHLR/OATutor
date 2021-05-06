@@ -1,0 +1,1 @@
+import hints from "./expolog28a-index.js"; const step = {id: "expolog28a", stepAnswer: ["90*e^(-0.008377*t)+75"], problemType: "TextBox", stepTitle: "Write a formula that models this situation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./exponential19-index.js"; const problem = {id: "exponential19", title: "Calculating Continuous Decay", body: "", steps: steps, variabilization: {}}; export { problem };

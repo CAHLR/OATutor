@@ -1,0 +1,1 @@
+var hints = [{id: "index1a-h1", type: "hint", dependencies: [], title: "item", text: "The function .item returns one element of an array.", variabilization: {}}, ]; export {hints};

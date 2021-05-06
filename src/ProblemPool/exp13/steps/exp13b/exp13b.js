@@ -1,1 +1,1 @@
-import hints from "./exp13b-index.js"; const step = {id: "exp13b", stepAnswer: ["32,768t^15"], problemType: "TextBox", stepTitle: "$${\\left(\\left(2\\right) t\\right)}^{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp13b-index.js"; const step = {id: "exp13b", stepAnswer: ["32768t^15"], problemType: "TextBox", stepTitle: "$${\\left(\\left(2\\right) t\\right)}^{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./domain8b-index.js"; const step = {id: "domain8b", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "Find the range", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./domain8b-index.js"; const step = {id: "domain8b", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "Find the range", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

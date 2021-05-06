@@ -1,0 +1,1 @@
+import steps from "./graphlog12-index.js"; const problem = {id: "graphlog12", title: "Vertical Asymptotes of log functions", body: "What is the vertical asymptote of the function $$g(x)=-ln \\left(\\left(3\\right) x+\\left(9\\right)\\right)-\\left(7\\right)$$? Write as an equation of x.", steps: steps, variabilization: {}}; export { problem };
