@@ -1,0 +1,1 @@
+import steps from "./exponential23-index.js"; const problem = {id: "exponential23", title: "Exercise #3: Finding Exponential Formulas", body: "", steps: steps, variabilization: {}}; export { problem };

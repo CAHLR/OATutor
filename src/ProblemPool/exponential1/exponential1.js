@@ -1,0 +1,1 @@
+import steps from "./exponential1-index.js"; const problem = {id: "exponential1", title: "Identifying Exponential Functions", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./log22-index.js"; const problem = {id: "log22", title: "Rewriting Equations in Exponential Form: Exercise #6", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}}; export { problem };

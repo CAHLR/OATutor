@@ -1,0 +1,1 @@
+import steps from "./log7-index.js"; const problem = {id: "log7", title: "Evaluating the Logarithm of a Reciprocal", body: "Solve the expression without a calculator.", steps: steps, variabilization: {}}; export { problem };

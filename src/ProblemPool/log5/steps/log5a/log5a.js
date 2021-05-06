@@ -1,0 +1,1 @@
+import hints from "./log5a-index.js"; const step = {id: "log5a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y=\\log_{4}(64)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

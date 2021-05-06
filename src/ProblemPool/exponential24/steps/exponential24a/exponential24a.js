@@ -1,0 +1,1 @@
+import hints from "./exponential24a-index.js"; const step = {id: "exponential24a", stepAnswer: ["6(1/6)^(1/5+2/5x)"], problemType: "TextBox", stepTitle: "(-2,6) and (3,1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

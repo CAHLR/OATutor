@@ -1,0 +1,1 @@
+import steps from "./graphlog1-index.js"; const problem = {id: "graphlog1", title: "Identifying the Domain of a Logarithmic Shift", body: "What is the domain of $$f(x)=\\log_{2}(x+3)$$?", steps: steps, variabilization: {}}; export { problem };

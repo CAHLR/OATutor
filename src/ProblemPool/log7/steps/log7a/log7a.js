@@ -1,0 +1,1 @@
+import hints from "./log7a-index.js"; const step = {id: "log7a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$y=\\log_{3}(1/27)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./expolog21a-index.js"; const step = {id: "expolog21a", stepAnswer: ["250*e^(-0.00822*t)"], problemType: "TextBox", stepTitle: "Rounding to five decimal places, write an exponential equation representing this situation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

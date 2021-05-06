@@ -1,0 +1,1 @@
+import steps from "./graphlog6-index.js"; const problem = {id: "graphlog6", title: "Domain and range of log functions", body: "What is the domain and range of $$h(x)=ln \\left(\\left(4\\right) x+\\left(17\\right)\\right)-\\left(5\\right)$$?", steps: steps, variabilization: {}}; export { problem };

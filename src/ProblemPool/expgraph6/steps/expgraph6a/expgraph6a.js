@@ -1,0 +1,1 @@
+import hints from "./expgraph6a-index.js"; const step = {id: "expgraph6a", stepAnswer: ["g(x)=4.4*3^(-x)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

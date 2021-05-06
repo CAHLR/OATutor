@@ -1,0 +1,1 @@
+import hints from "./log3a-index.js"; const step = {id: "log3a", stepAnswer: ["$$\\log_{2}8$$ $$=3$$"], problemType: "MultipleChoice", stepTitle: "$${\\left(2\\right)}^3$$ $$=$$ 8", stepBody: "", choices: ["$$\\log_{2}8=3$$", "$$\\log_{3}8=2$$", "$$\\log_{2}3=8$$", "None of the above"], answerType: "string", hints: hints, variabilization: {}}; export {step};

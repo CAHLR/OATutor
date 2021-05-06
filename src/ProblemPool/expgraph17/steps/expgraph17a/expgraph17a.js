@@ -1,0 +1,1 @@
+import hints from "./expgraph17a-index.js"; const step = {id: "expgraph17a", stepAnswer: ["g(x)=2*(1/4)^x"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./exp20a-index.js"; const step = {id: "exp20a", stepAnswer: ["703,000"], problemType: "TextBox", stepTitle: "$$\\left(7.03\\right) {\\left(10\\right)}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp20a-index.js"; const step = {id: "exp20a", stepAnswer: ["703000"], problemType: "TextBox", stepTitle: "$$\\left(7.03\\right) {\\left(10\\right)}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

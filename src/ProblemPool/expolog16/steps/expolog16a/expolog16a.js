@@ -1,0 +1,1 @@
+import hints from "./expolog16a-index.js"; const step = {id: "expolog16a", stepAnswer: ["1.4"], problemType: "TextBox", stepTitle: "What is the doubling time to the nearest tenth?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

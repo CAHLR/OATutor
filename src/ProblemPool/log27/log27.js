@@ -1,0 +1,1 @@
+import steps from "./log27-index.js"; const problem = {id: "log27", title: "Evaluating Logarithms: Exercise #1", body: "For the following exercise, solve for x by converting the logarithmic equation to exponential form. $$x=$$?", steps: steps, variabilization: {}}; export { problem };

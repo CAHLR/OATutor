@@ -1,0 +1,1 @@
+import steps from "./exponential30-index.js"; const problem = {id: "exponential30", title: "Exercise #4: Applying the Compound-Interest Formula", body: "", steps: steps, variabilization: {}}; export { problem };

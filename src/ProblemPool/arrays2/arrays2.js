@@ -1,0 +1,1 @@
+import steps from "./arrays2-index.js"; const problem = {id: "arrays2", title: "Book Title Words", body: "Make an array called book_title_words containing the following three strings (in this order): \"Eats\", \"Shoots\", and \"and Leaves\".\\nbook_title_words =", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./exponential20-index.js"; const problem = {id: "exponential20", title: "Calculating Continuous Growth", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./table1-index.js"; const problem = {id: "table1", title: "Table", body: "True or false? In this class, the following is a valid table.", steps: steps, variabilization: {}}; export { problem };

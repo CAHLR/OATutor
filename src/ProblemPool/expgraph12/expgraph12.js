@@ -1,0 +1,1 @@
+import steps from "./expgraph12-index.js"; const problem = {id: "expgraph12", title: "Solving Exponential Equations", body: "Evaluate the exponential functions for the indicated value of x: g(x) $$=$$ $$\\left(13\\right) {\\left(7\\right)}^x-\\left(2\\right)$$ for g(6).", steps: steps, variabilization: {}}; export { problem };

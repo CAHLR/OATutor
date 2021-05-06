@@ -1,0 +1,1 @@
+import steps from "./index2-index.js"; const problem = {id: "index2", title: "Last item", body: "You'll sometimes want to find the last element of an array. Suppose an array has 142 elements. What is the index of its last element?", steps: steps, variabilization: {}}; export { problem };

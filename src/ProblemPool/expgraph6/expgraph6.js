@@ -1,0 +1,1 @@
+import steps from "./expgraph6-index.js"; const problem = {id: "expgraph6", title: "Transforming exponential functions", body: "The graph of $$f(x)={\\left(3\\right)}^x$$ is reflected about the y-axis and stretched vertically by a factor of 4.4. What is the equation of the new function g(x)?", steps: steps, variabilization: {}}; export { problem };

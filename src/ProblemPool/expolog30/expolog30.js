@@ -1,0 +1,1 @@
+import steps from "./expolog30-index.js"; const problem = {id: "expolog30", title: "Using the Logistic-Growth Model", body: "For the following exercises, use this scenario: The equation N(t)=500/(1+49*e**(-0.7*t)) models the number of people in a town who have heard a rumor after t days.", steps: steps, variabilization: {}}; export { problem };
