@@ -39,12 +39,9 @@ class DebugPlatform extends React.Component {
       for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
         var step = problem.steps[stepIndex];
         step.knowledgeComponents = context.skillModel[step.id];
-        if (context.debug) { // Debug purposes set all step answers to 0
-          step.stepAnswer = ["0"]
-        }
       }
     }
-    context.problemIDs = problemIDs.sort()
+    context.problemIDs = problemIDs.sort(this.__compareProblemID)
 
     this.state = {
       currProblem: chosenProblem,
@@ -83,18 +80,44 @@ class DebugPlatform extends React.Component {
       for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
         var step = problem.steps[stepIndex];
         step.knowledgeComponents = context.skillModel[step.id];
-        if (context.debug) { // Debug purposes set all step answers to 0
-          step.stepAnswer = ["0"]
-        }
       }
     }
-    context.problemIDs = problemIDs.sort()
+    context.problemIDs = problemIDs.sort(this.__compareProblemID);
+    console.log(context.problemIDs)
 
 
     this.state = {
       currProblem: chosenProblem,
       status: "learning",
       seed: seed
+    }
+  }
+
+  __compareProblemID = (a, b) => {
+    var aNum = a.match(/\d+$/);
+    if (aNum) {
+      aNum = parseInt(aNum[0]);
+    }
+
+    var bNum = b.match(/\d+$/);
+    if (bNum) {
+      bNum = parseInt(bNum[0]);
+    }
+
+    var aName = a.match(/^[^0-9]+/);
+    if (aName) {
+      aName = aName[0];
+    }
+
+    var bName = b.match(/^[^0-9]+/);
+    if (bName) {
+      bName = bName[0];
+    }
+
+    if (aName != bName) {
+      return aName.localeCompare(bName);
+    } else {
+      return aNum - bNum;
     }
   }
 
