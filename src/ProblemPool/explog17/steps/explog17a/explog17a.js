@@ -1,0 +1,1 @@
+import hints from "./explog17a-index.js"; const step = {id: "explog17a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "Solve $${\\left(2\\right)}^{x-\\left(1\\right)}={\\left(2\\right)}^{\\left(2\\right) x-\\left(4\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

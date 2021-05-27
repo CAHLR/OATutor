@@ -1,0 +1,1 @@
+import steps from "./explog3-index.js"; const problem = {id: "explog3", title: "Solving Exponential Equations", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };

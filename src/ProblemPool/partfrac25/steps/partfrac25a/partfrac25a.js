@@ -1,0 +1,1 @@
+import hints from "./partfrac25a-index.js"; const step = {id: "partfrac25a", stepAnswer: ["-354/(169x)+72/(13x^2)+(523x+2467)/(169(x^2+12x+26))"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

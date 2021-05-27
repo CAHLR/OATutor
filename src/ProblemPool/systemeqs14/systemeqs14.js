@@ -1,0 +1,1 @@
+import steps from "./systemeqs14-index.js"; const problem = {id: "systemeqs14", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$\\left(4\\right) x+\\left(2\\right) y=-10$$, $$\\left(3\\right) x+\\left(9\\right) y=0$$", steps: steps, variabilization: {}}; export { problem };

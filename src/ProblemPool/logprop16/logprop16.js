@@ -1,0 +1,1 @@
+import steps from "./logprop16-index.js"; const problem = {id: "logprop16", title: "Condensing Logarithmic Expressions", body: "", steps: steps, variabilization: {}}; export { problem };

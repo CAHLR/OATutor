@@ -1,1 +1,1 @@
-import steps from "./treat1-index.js"; const problem = {id: "treat1", title: "Treatment", body: "Fill in the blanks: If the treatment and control groups are _____ apart from the treatment, then the _____ between the outcomes in the two groups can be ascribed to the _____.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./treat1-index.js"; const problem = {id: "treat1", title: "Treatment & Control Groups", body: "", steps: steps, variabilization: {}}; export { problem };

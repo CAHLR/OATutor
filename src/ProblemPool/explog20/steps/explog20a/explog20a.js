@@ -1,0 +1,1 @@
+import hints from "./explog20a-index.js"; const step = {id: "explog20a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Solve $${\\left(5\\right)}^{\\left(2\\right) x}={\\left(25\\right)}^{\\left(3\\right) x+\\left(2\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

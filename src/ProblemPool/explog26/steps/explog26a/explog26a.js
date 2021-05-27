@@ -1,0 +1,1 @@
+import hints from "./explog26a-index.js"; const step = {id: "explog26a", stepAnswer: ["1/6(e^(7/2))"], problemType: "TextBox", stepTitle: "$$2ln(6x)=7$$", stepBody: "Using Like Bases to Solve Exponential Equations", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

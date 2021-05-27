@@ -1,0 +1,1 @@
+import hints from "./systemeqs12a-index.js"; const step = {id: "systemeqs12a", stepAnswer: ["$$(-1,2)$$"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["$$(-1,2)$$", "(2,1)", "$$(1,-2)$$", "$$(-2,-1)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

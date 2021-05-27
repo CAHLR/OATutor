@@ -1,0 +1,1 @@
+import hints from "./logarithmic4a-index.js"; const step = {id: "logarithmic4a", stepAnswer: ["log(b,7)"], problemType: "TextBox", stepTitle: "$$-log(b,1/7)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

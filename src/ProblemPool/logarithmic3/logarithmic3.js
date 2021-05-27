@@ -1,0 +1,1 @@
+import steps from "./logarithmic3-index.js"; const problem = {id: "logarithmic3", title: "Combining Logarithms Using Product, Quotient, and Power Rules", body: "Condense the expression to a single logarithm if possible.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./experr1-index.js"; const problem = {id: "experr1", title: "Expression Error", body: "Assume that you have run the following statements\\nx = 3\\ny = \"4\"\\nz = \"5.6\"\\nWhich expression would not cause an error?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./experr1-index.js"; const problem = {id: "experr1", title: "Expression Error", body: "Assume that you have run the following statements\\nx = 3\\ny = \"4\"\\nz = \"5.6\"", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./logarithmic14-index.js"; const problem = {id: "logarithmic14", title: "Evaluating Logarithmic Expressions with Properties of Logarithms", body: "Use properties of logarithms to evaluate the expression without using a calculator.", steps: steps, variabilization: {}}; export { problem };

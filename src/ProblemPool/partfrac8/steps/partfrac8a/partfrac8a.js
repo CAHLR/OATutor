@@ -1,0 +1,1 @@
+import hints from "./partfrac8a-index.js"; const step = {id: "partfrac8a", stepAnswer: ["(3/(x+2))+(3/(x-2))"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

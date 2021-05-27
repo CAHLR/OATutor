@@ -1,0 +1,1 @@
+import steps from "./nums2-index.js"; const problem = {id: "nums2", title: "More Python Expression Arithmetic", body: "", steps: steps, variabilization: {}}; export { problem };

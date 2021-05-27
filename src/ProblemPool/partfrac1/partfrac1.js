@@ -1,0 +1,1 @@
+import steps from "./partfrac1-index.js"; const problem = {id: "partfrac1", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors.", steps: steps, variabilization: {}}; export { problem };

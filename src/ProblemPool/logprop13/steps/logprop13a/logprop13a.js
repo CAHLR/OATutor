@@ -1,0 +1,1 @@
+import hints from "./logprop13a-index.js"; const step = {id: "logprop13a", stepAnswer: ["1/2log(x)"], problemType: "TextBox", stepTitle: "Expand $$log \\sqrt{x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./logarithmic6a-index.js"; const step = {id: "logarithmic6a", stepAnswer: ["(8/3)log(x)+(14/3)log(y)"], problemType: "TextBox", stepTitle: "log(x**2*y**3*sqrt(3,x**2*y**5))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

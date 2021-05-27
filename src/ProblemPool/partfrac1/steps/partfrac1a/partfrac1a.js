@@ -1,0 +1,1 @@
+import hints from "./partfrac1a-index.js"; const step = {id: "partfrac1a", stepAnswer: ["2/(x+2)+1/(x-1)"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(3\\right) x}{\\left(x+\\left(2\\right)\\right) \\left(x-\\left(1\\right)\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

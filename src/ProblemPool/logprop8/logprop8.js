@@ -1,0 +1,1 @@
+import steps from "./logprop8-index.js"; const problem = {id: "logprop8", title: "Rewriting an Expression as a Power before Using the Power Rule", body: "Rewrite the logarithm.", steps: steps, variabilization: {}}; export { problem };

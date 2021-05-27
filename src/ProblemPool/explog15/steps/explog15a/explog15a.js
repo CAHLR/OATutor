@@ -1,0 +1,1 @@
+import hints from "./explog15a-index.js"; const step = {id: "explog15a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$ln x+ln \\left(x-\\left(3\\right)\\right)$$ $$=$$ ln(7x)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
