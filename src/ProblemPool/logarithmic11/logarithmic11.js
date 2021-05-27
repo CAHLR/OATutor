@@ -1,0 +1,1 @@
+import steps from "./logarithmic11-index.js"; const problem = {id: "logarithmic11", title: "Changing Logarithmic Expressions", body: "Suppose $$log(5,6)=a$$ and $$log(5,11)=b.$$ Use the change-of-base formula along with properties of logarithms to rewrite each expression in terms of a and b.", steps: steps, variabilization: {}}; export { problem };

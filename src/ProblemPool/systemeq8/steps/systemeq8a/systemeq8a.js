@@ -1,0 +1,1 @@
+import hints from "./systemeq8a-index.js"; const step = {id: "systemeq8a", stepAnswer: ["$$(-1/2,1/10)$$"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["$$(-1/2,1/10)$$", "(2,10)", "(1/2, 1/10)", "None of the above"], answerType: "string", hints: hints, variabilization: {}}; export {step};

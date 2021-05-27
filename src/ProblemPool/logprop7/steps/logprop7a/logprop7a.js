@@ -1,0 +1,1 @@
+import hints from "./logprop7a-index.js"; const step = {id: "logprop7a", stepAnswer: ["2log{3}(5)"], problemType: "TextBox", stepTitle: "Rewrite $$\\log_{3}(25)$$ using the power rule.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

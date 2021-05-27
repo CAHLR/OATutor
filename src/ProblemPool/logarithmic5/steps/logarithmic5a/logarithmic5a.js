@@ -1,0 +1,1 @@
+import hints from "./logarithmic5a-index.js"; const step = {id: "logarithmic5a", stepAnswer: ["(3/2)*ln(y)-(1/2)*ln(1-y)"], problemType: "TextBox", stepTitle: "$$ln y \\sqrt{\\frac{y}{\\left(1\\right)-y}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./systemeq10-index.js"; const problem = {id: "systemeq10", title: "Solving systems of linear equations", body: "Solve the system. $$-x+\\left(2\\right) y=-1$$, $$5x-10y=6$$.", steps: steps, variabilization: {}}; export { problem };

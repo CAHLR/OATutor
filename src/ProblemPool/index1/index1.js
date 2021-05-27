@@ -1,1 +1,1 @@
-import steps from "./index1-index.js"; const problem = {id: "index1", title: "Array Index", body: "The code below creates an array of some numbers. Set third_element to the third element of some_numbers.\\nsome_numbers = make_array(-1, -3, -6, -10, -15)\\nthird_element =", steps: steps, variabilization: {}}; export { problem };
+import steps from "./index1-index.js"; const problem = {id: "index1", title: "Array Index", body: "", steps: steps, variabilization: {}}; export { problem };

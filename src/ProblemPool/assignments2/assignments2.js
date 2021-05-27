@@ -1,0 +1,1 @@
+import steps from "./assignments2-index.js"; const problem = {id: "assignments2", title: "Print Error", body: "cat = dog + @{a}\\ndog = print('meow!')", steps: steps, variabilization: {a: ["", "2", "3", "4", ""]}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./partfrac24a-index.js"; const step = {id: "partfrac24a", stepAnswer: ["1/5x-1/(3(3x-5)+20/(3(3x+5)^2)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./explog15-index.js"; const problem = {id: "explog15", title: "Solving Logarithmic Equations", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };

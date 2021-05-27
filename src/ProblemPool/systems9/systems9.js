@@ -1,0 +1,1 @@
+import steps from "./systems9-index.js"; const problem = {id: "systems9", title: "Finding the Break-Even Point and the Profit Function Using Substitution", body: "Given the cost function 𝐶(x)=0.85x+35,000 and the revenue function $$𝑅(x)=1.55x,$$ find the break-even point and the profit function.", steps: steps, variabilization: {}}; export { problem };

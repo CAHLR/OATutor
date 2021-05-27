@@ -1,0 +1,1 @@
+import hints from "./partfrac2a-index.js"; const step = {id: "partfrac2a", stepAnswer: ["(1/x)-(2/(x-2))+(2/(x-2)^2)"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-x\\right)}^2+\\left(2\\right) x+\\left(4\\right)}{x^3-\\left(4\\right) x^2+\\left(4\\right) x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

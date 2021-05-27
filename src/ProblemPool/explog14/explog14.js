@@ -1,0 +1,1 @@
+import steps from "./explog14-index.js"; const problem = {id: "explog14", title: "Solving Equations using the One-to-One Property of Logarithms", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };

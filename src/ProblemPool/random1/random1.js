@@ -1,1 +1,1 @@
-import steps from "./random1-index.js"; const problem = {id: "random1", title: "Randomness", body: "True or False? In data science, randomness implies that a study was conducted haphazardly.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./random1-index.js"; const problem = {id: "random1", title: "Randomness", body: "", steps: steps, variabilization: {}}; export { problem };

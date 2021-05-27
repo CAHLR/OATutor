@@ -1,0 +1,1 @@
+import steps from "./systems6-index.js"; const problem = {id: "systems6", title: "Solving Systems of Equations in Two Variables by the Addition Method", body: "Solve the given system of equations by addition. $$\\left(2\\right) x+\\left(3\\right) y=-16$$ $$5x-10y=30$$", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./confound1-index.js"; const problem = {id: "confound1", title: "Confound", body: "Which type of study is more likely to be affected by confounding factors?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./confound1-index.js"; const problem = {id: "confound1", title: "Confounding Factors", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./partfrac22-index.js"; const problem = {id: "partfrac22", title: "Decomposing a fraction with repeating linear factors", body: "Decompose the partial fraction for the repeating linear factors: $$\\frac{\\left(-2\\right)4 x-\\left(27\\right)}{{\\left(\\left(6\\right) x-\\left(7\\right)\\right)}^2}$$", steps: steps, variabilization: {}}; export { problem };

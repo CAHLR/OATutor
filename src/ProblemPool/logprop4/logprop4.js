@@ -1,0 +1,1 @@
+import steps from "./logprop4-index.js"; const problem = {id: "logprop4", title: "Using the Quotient Rule for Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}}; export { problem };

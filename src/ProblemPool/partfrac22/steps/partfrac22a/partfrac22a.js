@@ -1,0 +1,1 @@
+import hints from "./partfrac22a-index.js"; const step = {id: "partfrac22a", stepAnswer: ["-4/(6x-7)-55/(6x-7)^2"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

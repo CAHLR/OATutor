@@ -1,0 +1,1 @@
+import steps from "./systems4-index.js"; const problem = {id: "systems4", title: "Solving Systems of Equations in Two Variables by the Addition Method", body: "Solve the given system of equations by addition. $$x+\\left(2\\right) y=-1$$ $$-x+y=3$$", steps: steps, variabilization: {}}; export { problem };

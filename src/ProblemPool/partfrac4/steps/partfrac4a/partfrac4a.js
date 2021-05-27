@@ -1,0 +1,1 @@
+import hints from "./partfrac4a-index.js"; const step = {id: "partfrac4a", stepAnswer: ["(8/(x+3))-(5/(x-8))"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(3\\right) x-\\left(79\\right)}{x^2-\\left(5\\right) x-\\left(24\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
