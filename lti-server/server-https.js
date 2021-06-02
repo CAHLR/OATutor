@@ -166,7 +166,7 @@ app.post('/grade', function (req, res) {
   payload += "<h3> Overall score: " + req.body.score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
     // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
-    var r = getRandomInt(0, 10)
+    var r = Math.round(parseFloat(req.body.components[key]) * 10)
     payload += "<p>" + (i + 1) + ") " + key.replace(/_/g, ' ') + ": " + "&#9646;".repeat(r) +  "&#9647;".repeat(10 - r)   + "<p>";
   });
   console.log(parseFloat(req.body.score));
