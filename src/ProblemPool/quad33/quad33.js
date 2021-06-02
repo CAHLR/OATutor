@@ -1,1 +1,1 @@
-import steps from "./quad33-index.js"; const problem = {id: "quad33", title: "Solve Quadratics by Factoring", body: "For the following exercises, solve the quadratic equation by factoring.", steps: steps, }; export { problem };
+import steps from "./quad33-index.js"; const problem = {id: "quad33", title: "Solve Quadratics by Factoring", body: "For the following exercises, solve the quadratic equation by factoring.", steps: steps, variabilization: {}}; export { problem };

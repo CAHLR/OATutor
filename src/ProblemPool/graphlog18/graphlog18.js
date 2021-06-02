@@ -1,0 +1,1 @@
+import steps from "./graphlog18-index.js"; const problem = {id: "graphlog18", title: "Finding the x and y intercepts of log functions", body: "What is the x-intercept of $$h(x)=\\log_{4}(x-1)+1$$? Write as a coordinate pair. If it does not exist, write DNE.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./systems20a-index.js"; const step = {id: "systems20a", stepAnswer: ["(1,3),(1,-3),(-1,3),(-1,-3)"], problemType: "MultipleChoice", stepTitle: "$$\\left(4\\right) x^2+y^2=13$$, $$x^2+y^2=10$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

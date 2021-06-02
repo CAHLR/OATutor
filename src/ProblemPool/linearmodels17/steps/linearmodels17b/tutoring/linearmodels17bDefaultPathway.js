@@ -1,0 +1,1 @@
+var hints = [{id: "linearmodels17b-h1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["12"], dependencies: [], title: "Solving for t", text: "Solve for t when $$P(t)=54000$$. $$54000=\\left(2150\\right) t+\\left(28200\\right)$$, $$t=$$?", variabilization: {}}, ]; export {hints};

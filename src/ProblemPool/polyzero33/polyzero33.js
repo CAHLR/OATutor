@@ -1,0 +1,1 @@
+import steps from "./polyzero33-index.js"; const problem = {id: "polyzero33", title: "Solving Polynomial Equations", body: "", steps: steps, variabilization: {}}; export { problem };

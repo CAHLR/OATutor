@@ -1,0 +1,1 @@
+var hints = [{id: "inverses17a-h1", type: "hint", dependencies: [], title: "GCF", text: "Factor out the GCF [(x+2)**-1/3]", variabilization: {}}, {id: "inverses17a-h2", type: "hint", dependencies: ["inverses17a-h1"], title: "Simplify", text: "Simplify the term other than the GCF", variabilization: {}}, ]; export {hints};

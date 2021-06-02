@@ -1,1 +1,1 @@
-import hints from "./measure29a-index.js"; const step = {id: "measure29a", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "86 degrees Fahrenheit", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./measure29a-index.js"; const step = {id: "measure29a", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "86 degrees Fahrenheit", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

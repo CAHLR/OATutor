@@ -1,0 +1,1 @@
+import steps from "./log6-index.js"; const problem = {id: "log6", title: "Solving Logarithms Mentally", body: "Solve the expression without a calculator.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./graph31-index.js"; const problem = {id: "graph31", title: "Find the t-intercepts of the Following Function #2", body: "Find the t-intercepts of the following function.", steps: steps, variabilization: {}}; export { problem };

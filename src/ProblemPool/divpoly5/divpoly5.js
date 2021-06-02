@@ -1,0 +1,1 @@
+import steps from "./divpoly5-index.js"; const problem = {id: "divpoly5", title: "Using Synthetic Division to Divide a Fourth-Degree Polynomial", body: "", steps: steps, variabilization: {}}; export { problem };

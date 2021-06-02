@@ -1,1 +1,1 @@
-import steps from "./geo7-index.js"; const problem = {id: "geo7", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, }; export { problem };
+import steps from "./geo7-index.js"; const problem = {id: "geo7", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./real6a-index.js"; const step = {id: "real6a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "What is $$\\left(4\\right) \\left(\\left(12\\right)+\\left(-7\\right)\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real6a-index.js"; const step = {id: "real6a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "What is $$\\left(4\\right) \\left(\\left(12\\right)+\\left(-7\\right)\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

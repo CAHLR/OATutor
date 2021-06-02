@@ -1,1 +1,1 @@
-import hints from "./uni5b-index.js"; const step = {id: "uni5b", stepAnswer: ["65"], problemType: "TextBox", stepTitle: "Find the speed of Carina's brother.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./uni5b-index.js"; const step = {id: "uni5b", stepAnswer: ["65"], problemType: "TextBox", stepTitle: "Find the speed of Carina's brother.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

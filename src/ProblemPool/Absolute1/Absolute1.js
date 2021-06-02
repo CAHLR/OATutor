@@ -1,1 +1,1 @@
-import steps from "./Absolute1-index.js"; const problem = {id: "Absolute1", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=|\\left(2\\right) x-\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, }; export { problem };
+import steps from "./Absolute1-index.js"; const problem = {id: "Absolute1", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=|\\left(2\\right) x-\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, variabilization: {}}; export { problem };

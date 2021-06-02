@@ -1,1 +1,1 @@
-var hints = [{id: "use7a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 2 for x and simplify the expression 8(2)-3."}, ]; export {hints};
+var hints = [{id: "use7a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 2 for x and simplify the expression 8(2)-3.", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,1 @@
-import hints from "./Properties18a-index.js"; const step = {id: "Properties18a", stepAnswer: ["18x"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) \\left(3\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./Properties18a-index.js"; const step = {id: "Properties18a", stepAnswer: ["18x"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) \\left(3\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

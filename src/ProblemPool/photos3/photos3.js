@@ -1,0 +1,1 @@
+import steps from "./photos3-index.js"; const problem = {id: "photos3", title: "Review Question 10", body: "", steps: steps, variabilization: {}}; export { problem };

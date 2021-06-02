@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Cookies from 'universal-cookie';
 import Platform from './ProblemLogic/Platform.js';
+import DebugPlatform from './ProblemLogic/DebugPlatform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
 import {
@@ -122,7 +123,8 @@ class App extends React.Component {
           autoCommands: autoCommands,
           autoOperatorNames: autoOperatorNames,
           studentName: '',
-          middlewareURL: middlewareURL
+          middlewareURL: middlewareURL,
+          problemIDs: null
         }}>
           <Router>
             <div className="Router">
@@ -135,6 +137,9 @@ class App extends React.Component {
                 )} />
                 <Route path="/lessons/:lessonNum" render={(props) => (
                   <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props} />
+                )} />
+                <Route path="/debug/:problemID" render={(props) => (
+                  <DebugPlatform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} problemID={props.match.params.problemID} {...props} />
                 )} />
                 <Route component={Notfound} />
               </Switch>

@@ -1,1 +1,1 @@
-import hints from "./probsolve19a-index.js"; const step = {id: "probsolve19a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "The sum of four times a number and two is 14. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./probsolve19a-index.js"; const step = {id: "probsolve19a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "The sum of four times a number and two is 14. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

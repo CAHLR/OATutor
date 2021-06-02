@@ -1,0 +1,1 @@
+import steps from "./cramer22-index.js"; const problem = {id: "cramer22", title: "Solving a 3x3 System Using Cramer's Rule", body: "Find the solution to the given 3x3 system using Cramer's Rule.", steps: steps, variabilization: {}}; export { problem };

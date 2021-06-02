@@ -1,0 +1,1 @@
+import steps from "./logarithmsandlogistic6-index.js"; const problem = {id: "logarithmsandlogistic6", title: "Solving Logistic Equations #5", body: "The population P of a koi pond over x months is modeled by the function P(x)=68/(1+16e**(-0.28x)).", steps: steps, variabilization: {}}; export { problem };

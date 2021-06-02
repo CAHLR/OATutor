@@ -1,0 +1,1 @@
+import steps from "./nestedfunc1-index.js"; const problem = {id: "nestedfunc1", title: "Heights", body: "", steps: steps, variabilization: {}}; export { problem };

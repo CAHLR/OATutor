@@ -1,0 +1,1 @@
+import hints from "./quadratic20a-index.js"; const step = {id: "quadratic20a", stepAnswer: ["Minimum"], problemType: "MultipleChoice", stepTitle: "$$y(x)=\\left(2\\right) x^2+\\left(10\\right) x+\\left(12\\right)$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inverses3a-index.js"; const step = {id: "inverses3a", stepAnswer: ["4+sqrt(x)"], problemType: "TextBox", stepTitle: "f(x)=(x-4)**2,x>=4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

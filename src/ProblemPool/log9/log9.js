@@ -1,0 +1,1 @@
+import steps from "./log9-index.js"; const problem = {id: "log9", title: "Finding the Value of a Common Logarithm Mentally", body: "Solve the expression without a calculator.", steps: steps, variabilization: {}}; export { problem };

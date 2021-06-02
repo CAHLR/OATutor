@@ -1,1 +1,1 @@
-import hints from "./whole18a-index.js"; const step = {id: "whole18a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "9 and 12", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./whole18a-index.js"; const step = {id: "whole18a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "9 and 12", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inverses27a-index.js"; const step = {id: "inverses27a", stepAnswer: ["y=3/x+4"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\frac{3}{x-\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

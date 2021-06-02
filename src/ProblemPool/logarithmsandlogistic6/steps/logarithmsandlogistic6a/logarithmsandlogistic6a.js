@@ -1,0 +1,1 @@
+import hints from "./logarithmsandlogistic6a-index.js"; const step = {id: "logarithmsandlogistic6a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "How many months will it take before there are 20 koi in the pond? Round to the nearest whole number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

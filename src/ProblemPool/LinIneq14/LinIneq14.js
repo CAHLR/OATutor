@@ -1,1 +1,1 @@
-import steps from "./LinIneq14-index.js"; const problem = {id: "LinIneq14", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, }; export { problem };
+import steps from "./LinIneq14-index.js"; const problem = {id: "LinIneq14", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./DivMul16-index.js"; const problem = {id: "DivMul16", title: "Solve the eqation", body: "", steps: steps, }; export { problem };
+import steps from "./DivMul16-index.js"; const problem = {id: "DivMul16", title: "Solve the equation", body: "", steps: steps, variabilization: {}}; export { problem };

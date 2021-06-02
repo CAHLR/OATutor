@@ -1,0 +1,1 @@
+import steps from "./log18-index.js"; const problem = {id: "log18", title: "Rewriting Equations in Exponential Form: Exercise #2", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./Properties16-index.js"; const problem = {id: "Properties16", title: "Use the Commutative Property", body: "Simplify:", steps: steps, }; export { problem };
+import steps from "./Properties16-index.js"; const problem = {id: "Properties16", title: "Use the Commutative Property", body: "Simplify:", steps: steps, variabilization: {}}; export { problem };

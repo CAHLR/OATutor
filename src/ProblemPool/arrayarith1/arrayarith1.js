@@ -1,0 +1,1 @@
+import steps from "./arrayarith1-index.js"; const problem = {id: "arrayarith1", title: "Array Multiplication", body: "", steps: steps, variabilization: {}}; export { problem };

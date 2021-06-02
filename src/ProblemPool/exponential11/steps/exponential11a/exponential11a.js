@@ -1,0 +1,1 @@
+import hints from "./exponential11a-index.js"; const step = {id: "exponential11a", stepAnswer: ["0.016"], problemType: "TextBox", stepTitle: "$$f(x)=\\left(2\\right) {\\left(5\\right)}^x$$, for f(-3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

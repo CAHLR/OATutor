@@ -1,1 +1,1 @@
-import steps from "./probsolve29-index.js"; const problem = {id: "probsolve29", title: "Solve Number Problems", body: "", steps: steps, }; export { problem };
+import steps from "./probsolve29-index.js"; const problem = {id: "probsolve29", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}}; export { problem };

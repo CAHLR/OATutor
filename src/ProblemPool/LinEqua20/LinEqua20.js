@@ -1,1 +1,1 @@
-import steps from "./LinEqua20-index.js"; const problem = {id: "LinEqua20", title: "Finding the Equation of a Line Given the Slope and One Point", body: "", steps: steps, }; export { problem };
+import steps from "./LinEqua20-index.js"; const problem = {id: "LinEqua20", title: "Finding the Equation of a Line Given the Slope and One Point", body: "", steps: steps, variabilization: {}}; export { problem };

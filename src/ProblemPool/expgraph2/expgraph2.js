@@ -1,0 +1,1 @@
+import steps from "./expgraph2-index.js"; const problem = {id: "expgraph2", title: "Finding the domain and range of an exponential function", body: "What is the domain and range of $$f(x)={\\left(2\\right)}^{x+\\left(1\\right)}-\\left(3\\right)$$?", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./threevar20-index.js"; const problem = {id: "threevar20", title: "Systems of Linear Equations", body: "For the following exercise, solve the system for x, y, and z (indicate in coordinates)", steps: steps, variabilization: {}}; export { problem };

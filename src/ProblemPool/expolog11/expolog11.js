@@ -1,0 +1,1 @@
+import steps from "./expolog11-index.js"; const problem = {id: "expolog11", title: "Temperature Decrease", body: "The temperature of an object in degrees Fahrenheit after t minutes is represented by the equation T(t)=68e**(-1*0.0174t)+@{C}.", steps: steps, variabilization: {C: ["0", "71", "72", "7"], ans: ["36", "137", "138", "13"]}}; export { problem };

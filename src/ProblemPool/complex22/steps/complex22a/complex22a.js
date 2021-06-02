@@ -1,1 +1,1 @@
-import hints from "./complex22a-index.js"; const step = {id: "complex22a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$i^{22}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./complex22a-index.js"; const step = {id: "complex22a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$i^{22}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

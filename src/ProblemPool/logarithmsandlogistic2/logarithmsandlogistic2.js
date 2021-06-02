@@ -1,0 +1,1 @@
+import steps from "./logarithmsandlogistic2-index.js"; const problem = {id: "logarithmsandlogistic2", title: "Solving Logistic Equations #1", body: "A logistic model is given by the equation P(t)=90/(1+5e**(-0.42t)).", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./threevar16-index.js"; const problem = {id: "threevar16", title: "Solving a System of Three Equations in Three Variables by Elimination", body: "Solve the following system.", steps: steps, variabilization: {}}; export { problem };

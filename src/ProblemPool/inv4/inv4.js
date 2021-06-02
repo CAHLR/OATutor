@@ -1,0 +1,1 @@
+import steps from "./inv4-index.js"; const problem = {id: "inv4", title: "Determining Multiplicative Inverses #2", body: "Are A and B multiplicative inverses of each other?", steps: steps, variabilization: {}}; export { problem };

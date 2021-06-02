@@ -1,1 +1,1 @@
-var hints = [{id: "use25d-h1", type: "hint", dependencies: [], title: "Meaning of <", text: "The sign \"<\" means \"less than.\""}, ]; export {hints};
+var hints = [{id: "use25d-h1", type: "hint", dependencies: [], title: "Meaning of <", text: "The sign \"<\" means \"less than.\"", variabilization: {}}, ]; export {hints};

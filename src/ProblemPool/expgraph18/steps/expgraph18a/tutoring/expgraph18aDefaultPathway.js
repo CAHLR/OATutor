@@ -1,0 +1,1 @@
+var hints = [{id: "expgraph18a-h1", type: "hint", dependencies: [], title: "Reflection across the x-axis", text: "For the parent function f(x) $$=$$ $$b^x$$, a reflection across the y-axis is represented by g(x) $$=$$ $$b^{-x}$$.", variabilization: {}}, ]; export {hints};

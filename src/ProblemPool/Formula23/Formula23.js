@@ -1,1 +1,1 @@
-import steps from "./Formula23-index.js"; const problem = {id: "Formula23", title: "In the following exercises, solve.", body: "", steps: steps, }; export { problem };
+import steps from "./Formula23-index.js"; const problem = {id: "Formula23", title: "In the following exercises, solve.", body: "", steps: steps, variabilization: {}}; export { problem };

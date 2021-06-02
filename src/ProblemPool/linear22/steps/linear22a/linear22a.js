@@ -1,0 +1,1 @@
+import hints from "./linear22a-index.js"; const step = {id: "linear22a", stepAnswer: ["1100"], problemType: "TextBox", stepTitle: "What is the change of population per year if we assume the change was constant from 2008 to 2012?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

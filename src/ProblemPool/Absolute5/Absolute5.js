@@ -1,1 +1,1 @@
-import steps from "./Absolute5-index.js"; const problem = {id: "Absolute5", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=\\frac{1}{2} |x+\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, }; export { problem };
+import steps from "./Absolute5-index.js"; const problem = {id: "Absolute5", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=\\frac{1}{2} |x+\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./linear14-index.js"; const problem = {id: "linear14", title: "Finding the x-intercept of a Line", body: "", steps: steps, variabilization: {}}; export { problem };

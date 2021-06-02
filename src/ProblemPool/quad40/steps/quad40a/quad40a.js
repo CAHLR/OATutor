@@ -1,1 +1,1 @@
-import hints from "./quad40a-index.js"; const step = {id: "quad40a", stepAnswer: ["5, 1"], problemType: "TextBox", stepTitle: "$$x^2-\\left(6\\right) x=13$$", stepBody: "", answerType: "string", hints: hints}; export {step};
+import hints from "./quad40a-index.js"; const step = {id: "quad40a", stepAnswer: ["5, 1"], problemType: "TextBox", stepTitle: "$$x^2-\\left(6\\right) x=13$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

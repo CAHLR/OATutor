@@ -1,1 +1,1 @@
-import hints from "./abs16b-index.js"; const step = {id: "abs16b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x+\\left(3\\right)|+\\left(4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./abs16b-index.js"; const step = {id: "abs16b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x+\\left(3\\right)|+\\left(4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./quad32-index.js"; const problem = {id: "quad32", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping", steps: steps, }; export { problem };
+import steps from "./quad32-index.js"; const problem = {id: "quad32", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./geo15-index.js"; const problem = {id: "geo15", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, }; export { problem };
+import steps from "./geo15-index.js"; const problem = {id: "geo15", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, variabilization: {}}; export { problem };

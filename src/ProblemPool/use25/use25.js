@@ -1,1 +1,1 @@
-import steps from "./use25-index.js"; const problem = {id: "use25", title: "Translating From Algebra Into English", body: "Translate from algebra into English.", steps: steps, }; export { problem };
+import steps from "./use25-index.js"; const problem = {id: "use25", title: "Translating From Algebra Into English", body: "Translate from algebra into English.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./logarithmsandlogistic17-index.js"; const problem = {id: "logarithmsandlogistic17", title: "Solving Logistic Equations #11", body: "A population is modeled by the logistic equation P(t)=175/(1+6.995e**(-.68t)).", steps: steps, variabilization: {}}; export { problem };

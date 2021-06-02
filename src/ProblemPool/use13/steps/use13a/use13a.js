@@ -1,1 +1,1 @@
-import hints from "./use13a-index.js"; const step = {id: "use13a", stepAnswer: ["17"], problemType: "TextBox", stepTitle: "17x", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use13a-index.js"; const step = {id: "use13a", stepAnswer: ["17"], problemType: "TextBox", stepTitle: "17x", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inverses12a-index.js"; const step = {id: "inverses12a", stepAnswer: ["(9x-10)(9x+10)"], problemType: "TextBox", stepTitle: "Factor $$\\left(81\\right) y^2-\\left(100\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./exponential12a-index.js"; const step = {id: "exponential12a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$f(x)={\\left(-4\\right)}^{\\left(2\\right) x+\\left(3\\right)}$$, for f(-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

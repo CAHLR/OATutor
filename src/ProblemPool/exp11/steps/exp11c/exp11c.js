@@ -1,1 +1,1 @@
-import hints from "./exp11c-index.js"; const step = {id: "exp11c", stepAnswer: ["1/(-7z)^4"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(7\\right) z}{{\\left(\\left(-7\\right) z\\right)}^5}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp11c-index.js"; const step = {id: "exp11c", stepAnswer: ["1/(-7z)^4"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(7\\right) z}{{\\left(\\left(-7\\right) z\\right)}^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./threevar11a-index.js"; const step = {id: "threevar11a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "x+y+z=2,6x-4y+5z=31,5x+2y+2x=13.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

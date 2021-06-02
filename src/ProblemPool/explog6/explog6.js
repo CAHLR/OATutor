@@ -1,0 +1,1 @@
+import steps from "./explog6-index.js"; const problem = {id: "explog6", title: "Solving Exponential Equations using Logarithms", body: "", steps: steps, variabilization: {}}; export { problem };

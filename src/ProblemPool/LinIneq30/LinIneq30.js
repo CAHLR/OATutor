@@ -1,1 +1,1 @@
-import steps from "./LinIneq30-index.js"; const problem = {id: "LinIneq30", title: "Solving an Absolute Value Inequality", body: "Solve the inequality involving absolute value. Write your final answer in interval notation.", steps: steps, }; export { problem };
+import steps from "./LinIneq30-index.js"; const problem = {id: "LinIneq30", title: "Solving an Absolute Value Inequality", body: "Solve the inequality involving absolute value. Write your final answer in interval notation.", steps: steps, variabilization: {}}; export { problem };

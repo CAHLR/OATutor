@@ -1,0 +1,1 @@
+import hints from "./partfrac26a-index.js"; const step = {id: "partfrac26a", stepAnswer: ["2/(x-1)+(2x-1)/(x^2+6x+11)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

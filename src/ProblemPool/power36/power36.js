@@ -1,0 +1,1 @@
+import steps from "./power36-index.js"; const problem = {id: "power36", title: "Find the intercepts of the functions", body: "", steps: steps, variabilization: {}}; export { problem };

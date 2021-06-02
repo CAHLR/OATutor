@@ -1,1 +1,1 @@
-import hints from "./factor19a-index.js"; const step = {id: "factor19a", stepAnswer: ["(5h+3)(2h-3)"], problemType: "TextBox", stepTitle: "$$\\left(10\\right) h^2$$ - 9h - 9", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./factor19a-index.js"; const step = {id: "factor19a", stepAnswer: ["(5h+3)(2h-3)"], problemType: "TextBox", stepTitle: "$$\\left(10\\right) h^2$$ - 9h - 9", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

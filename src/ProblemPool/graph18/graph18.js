@@ -1,0 +1,1 @@
+import steps from "./graph18-index.js"; const problem = {id: "graph18", title: "Finding the X-Intercept of a Polynomial Function", body: "", steps: steps, variabilization: {}}; export { problem };

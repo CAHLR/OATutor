@@ -1,0 +1,1 @@
+import hints from "./power11a-index.js"; const step = {id: "power11a", stepAnswer: ["Power"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^5$$", stepBody: "", choices: ["Power", "Polynomial", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

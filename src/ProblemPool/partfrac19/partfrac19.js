@@ -1,0 +1,1 @@
+import steps from "./partfrac19-index.js"; const problem = {id: "partfrac19", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Find the decomposition of the parital fraction for the nonrepeating linear factors: $$\\frac{x}{\\left(6\\right) x^2+\\left(25\\right) x+\\left(25\\right)}$$", steps: steps, variabilization: {}}; export { problem };

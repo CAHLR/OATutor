@@ -1,1 +1,1 @@
-import hints from "./FunNota14a-index.js"; const step = {id: "FunNota14a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$\\left(5\\right) x+\\left(2\\right) y=10$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./FunNota14a-index.js"; const step = {id: "FunNota14a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$\\left(5\\right) x+\\left(2\\right) y=10$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./decimals12-index.js"; const problem = {id: "decimals12", title: "How to Round Decimals", body: "", steps: steps, }; export { problem };
+import steps from "./decimals12-index.js"; const problem = {id: "decimals12", title: "How to Round Decimals", body: "", steps: steps, variabilization: {}}; export { problem };

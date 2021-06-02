@@ -1,1 +1,1 @@
-import steps from "./domain16-index.js"; const problem = {id: "domain16", title: "Finding the Domain of a Function with an Even Root", body: "", steps: steps, }; export { problem };
+import steps from "./domain16-index.js"; const problem = {id: "domain16", title: "Finding the Domain of a Function with an Even Root", body: "", steps: steps, variabilization: {}}; export { problem };

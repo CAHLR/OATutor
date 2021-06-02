@@ -1,0 +1,1 @@
+import steps from "./modeling2-index.js"; const problem = {id: "modeling2", title: "Writing a Formula for an Inversely Proportional Relationship", body: "A tourist plans to drive 100 miles.", steps: steps, variabilization: {}}; export { problem };

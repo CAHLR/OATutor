@@ -1,0 +1,1 @@
+import hints from "./divpoly22a-index.js"; const step = {id: "divpoly22a", stepAnswer: ["2x^2+2x+1+10/(x-4)"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(2\\right) x^3-\\left(6\\right) x^2-\\left(7\\right) x+\\left(6\\right)}{x-\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

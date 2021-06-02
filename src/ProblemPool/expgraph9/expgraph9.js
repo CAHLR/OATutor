@@ -1,0 +1,1 @@
+import steps from "./expgraph9-index.js"; const problem = {id: "expgraph9", title: "Finding horizontal asymptotes", body: "What is the horizontal asymptote of $$h(x)=\\left(2\\right) x+\\left(3\\right)$$?", steps: steps, variabilization: {}}; export { problem };

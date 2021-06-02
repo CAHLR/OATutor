@@ -1,1 +1,1 @@
-import hints from "./measure14a-index.js"; const step = {id: "measure14a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "Convert 50 degrees Fahrenheit into degrees Celsius.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./measure14a-index.js"; const step = {id: "measure14a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "Convert 50 degrees Fahrenheit into degrees Celsius.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

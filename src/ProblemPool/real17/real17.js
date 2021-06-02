@@ -1,1 +1,1 @@
-import steps from "./real17-index.js"; const problem = {id: "real17", title: "Numeric Expressions", body: "Simplify the given expression.", steps: steps, }; export { problem };
+import steps from "./real17-index.js"; const problem = {id: "real17", title: "Numeric Expressions", body: "Simplify the given expression.", steps: steps, variabilization: {}}; export { problem };

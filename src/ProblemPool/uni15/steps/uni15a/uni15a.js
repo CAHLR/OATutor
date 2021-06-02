@@ -1,1 +1,1 @@
-import hints from "./uni15a-index.js"; const step = {id: "uni15a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "Find his speed biking on the flat street.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./uni15a-index.js"; const step = {id: "uni15a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "Find his speed biking on the flat street.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./rationals19-index.js"; const problem = {id: "rationals19", title: "Identifying Horizontal Asymptotes", body: "Find the horizontal asymptote and interpret it in context of the problem.", steps: steps, variabilization: {}}; export { problem };

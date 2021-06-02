@@ -1,1 +1,1 @@
-import steps from "./geo8-index.js"; const problem = {id: "geo8", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, }; export { problem };
+import steps from "./geo8-index.js"; const problem = {id: "geo8", title: "Solve Applications Using Properties of Triangles", body: "", steps: steps, variabilization: {}}; export { problem };

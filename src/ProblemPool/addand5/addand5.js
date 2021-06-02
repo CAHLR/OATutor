@@ -1,1 +1,1 @@
-import steps from "./addand5-index.js"; const problem = {id: "addand5", title: "How to Add or Subtract Fractions", body: "Add:", steps: steps, }; export { problem };
+import steps from "./addand5-index.js"; const problem = {id: "addand5", title: "How to Add or Subtract Fractions", body: "Add:", steps: steps, variabilization: {}}; export { problem };

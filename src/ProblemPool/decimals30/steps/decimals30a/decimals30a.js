@@ -1,1 +1,1 @@
-import hints from "./decimals30a-index.js"; const step = {id: "decimals30a", stepAnswer: ["0.85"], problemType: "TextBox", stepTitle: "0.845", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./decimals30a-index.js"; const step = {id: "decimals30a", stepAnswer: ["0.85"], problemType: "TextBox", stepTitle: "0.845", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

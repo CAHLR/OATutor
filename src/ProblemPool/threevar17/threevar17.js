@@ -1,0 +1,1 @@
+import steps from "./threevar17-index.js"; const problem = {id: "threevar17", title: "Finding the Solution to a Dependent System of Equations", body: "Find the solution to the given system.", steps: steps, variabilization: {}}; export { problem };

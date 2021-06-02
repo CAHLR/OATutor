@@ -1,0 +1,1 @@
+import steps from "./treat1-index.js"; const problem = {id: "treat1", title: "Treatment & Control Groups", body: "", steps: steps, variabilization: {}}; export { problem };

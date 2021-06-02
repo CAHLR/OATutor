@@ -1,0 +1,1 @@
+import steps from "./threevar9-index.js"; const problem = {id: "threevar9", title: "Solving a System of Three Equations in Three Variables by Gaussian Elimination", body: "", steps: steps, variabilization: {}}; export { problem };

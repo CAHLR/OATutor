@@ -1,1 +1,1 @@
-import hints from "./whole26a-index.js"; const step = {id: "whole26a", stepAnswer: ["trillions"], problemType: "MultipleChoice", stepTitle: "9", stepBody: "", choices: ["billions", "tens", "millions", "trillions"], answerType: "string", hints: hints}; export {step};
+import hints from "./whole26a-index.js"; const step = {id: "whole26a", stepAnswer: ["trillions"], problemType: "MultipleChoice", stepTitle: "9", stepBody: "", choices: ["billions", "tens", "millions", "trillions"], answerType: "string", hints: hints, variabilization: {}}; export {step};

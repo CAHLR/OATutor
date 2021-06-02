@@ -1,0 +1,1 @@
+import hints from "./explog6a-index.js"; const step = {id: "explog6a", stepAnswer: ["log(17/8) - 7"], problemType: "TextBox", stepTitle: "$$-\\left(8\\right) {\\left(10\\right)}^{x+\\left(7\\right)}-\\left(7\\right)$$ $$=-24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./SubAdd12a-index.js"; const step = {id: "SubAdd12a", stepAnswer: ["p=3/2"], problemType: "TextBox", stepTitle: "$$p-\\frac{2}{3}=\\frac{5}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./SubAdd12a-index.js"; const step = {id: "SubAdd12a", stepAnswer: ["p=3/2"], problemType: "TextBox", stepTitle: "$$p-\\frac{2}{3}=\\frac{5}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

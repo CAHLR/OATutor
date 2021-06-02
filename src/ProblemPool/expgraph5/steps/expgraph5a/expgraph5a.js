@@ -1,0 +1,1 @@
+import hints from "./expgraph5a-index.js"; const step = {id: "expgraph5a", stepAnswer: ["g(x)=2e^(-x)+4"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

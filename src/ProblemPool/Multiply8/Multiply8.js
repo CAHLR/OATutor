@@ -1,1 +1,1 @@
-import steps from "./Multiply8-index.js"; const problem = {id: "Multiply8", title: "Evaluate Variable Equation with Integers", body: "", steps: steps, }; export { problem };
+import steps from "./Multiply8-index.js"; const problem = {id: "Multiply8", title: "Evaluate Variable Equation with Integers", body: "", steps: steps, variabilization: {}}; export { problem };

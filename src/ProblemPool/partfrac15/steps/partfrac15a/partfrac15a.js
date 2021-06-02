@@ -1,0 +1,1 @@
+import hints from "./partfrac15a-index.js"; const step = {id: "partfrac15a", stepAnswer: ["(4/x)+(2/x^2)-(3/(3x+2))+(7/(2*(3x+2)^2)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

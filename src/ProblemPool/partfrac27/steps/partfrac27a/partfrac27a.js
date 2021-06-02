@@ -1,0 +1,1 @@
+import hints from "./partfrac27a-index.js"; const step = {id: "partfrac27a", stepAnswer: ["1/(6(x+1))+(5x+8)/(6(x^2+5x-2))"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

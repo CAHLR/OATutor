@@ -1,0 +1,1 @@
+import steps from "./expgraph7-index.js"; const problem = {id: "expgraph7", title: "Finding the domain and range", body: "What is the domain and range of $$f(x)={\\left(12\\right)}^{\\left(-x\\right)}$$?", steps: steps, variabilization: {}}; export { problem };

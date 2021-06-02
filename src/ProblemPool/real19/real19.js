@@ -1,1 +1,1 @@
-import steps from "./real19-index.js"; const problem = {id: "real19", title: "Simplifying Algebraic Equations", body: "For the following exercises, simplify the expression.", steps: steps, }; export { problem };
+import steps from "./real19-index.js"; const problem = {id: "real19", title: "Simplifying Algebraic Equations", body: "For the following exercises, simplify the expression.", steps: steps, variabilization: {}}; export { problem };

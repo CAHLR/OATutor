@@ -1,0 +1,1 @@
+import steps from "./macromolecules5-index.js"; const problem = {id: "macromolecules5", title: "Biological Macromolecules", body: "", steps: steps, variabilization: {}}; export { problem };

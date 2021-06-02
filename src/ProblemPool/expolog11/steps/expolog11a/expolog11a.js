@@ -1,0 +1,1 @@
+import hints from "./expolog11a-index.js"; const step = {id: "expolog11a", stepAnswer: ["@{ans}"], problemType: "TextBox", stepTitle: "What is the temperature of the object after 1.5 hours to the nearest degree?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {C: ["0", "71", "72", "7"], ans: ["36", "137", "138", "13"]}}; export {step};

@@ -30,7 +30,9 @@
     "generate": "(cd src/util/; node indexGenerator.js; cd ../..; npm run start)  || (echo \"[OpenITS INFO] Ignore the path cannot be found warning, it's expected for Windows.\" && cd src/util/ && node indexGenerator.js && cd ../.. && npm run start)",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev-deploy": "npm run build && node dev-deploy.js",
+    "dev-dep": "gh-pages -d build -r https://github.com/CAHLR/OpenITS-dev.git -f"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,1 +1,1 @@
-import hints from "./FunNota14s-index.js"; const step = {id: "FunNota14s", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y^3=x^2$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints}; export {step};
+import hints from "./FunNota14s-index.js"; const step = {id: "FunNota14s", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y^3=x^2$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

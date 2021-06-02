@@ -1,1 +1,1 @@
-import steps from "./percent11-index.js"; const problem = {id: "percent11", title: "Find Percent Increase", body: "", steps: steps, }; export { problem };
+import steps from "./percent11-index.js"; const problem = {id: "percent11", title: "Find Percent Increase", body: "", steps: steps, variabilization: {}}; export { problem };

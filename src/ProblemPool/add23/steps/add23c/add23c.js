@@ -1,1 +1,1 @@
-import hints from "./add23c-index.js"; const step = {id: "add23c", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "-(-1)", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./add23c-index.js"; const step = {id: "add23c", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "-(-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

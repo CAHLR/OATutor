@@ -1,0 +1,1 @@
+import hints from "./explog9a-index.js"; const step = {id: "explog9a", stepAnswer: ["ln(12)"], problemType: "TextBox", stepTitle: "$$e^{\\left(2\\right) x}-e^x-\\left(132\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

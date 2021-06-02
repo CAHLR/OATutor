@@ -1,0 +1,1 @@
+var hints = [{id: "farmers1b-h1", type: "hint", dependencies: [], title: "num_columns", text: "The table property num_columns returns the number of columns in a table. (A \"property\" is just a method that doesn't need to be called by adding parentheses.) Example call: <tbl>.num_columns", variabilization: {}}, ]; export {hints};

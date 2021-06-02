@@ -1,1 +1,1 @@
-import steps from "./Visualize1-index.js"; const problem = {id: "Visualize1", title: "Simplify:", body: "", steps: steps, }; export { problem };
+import steps from "./Visualize1-index.js"; const problem = {id: "Visualize1", title: "Simplify:", body: "", steps: steps, variabilization: {}}; export { problem };

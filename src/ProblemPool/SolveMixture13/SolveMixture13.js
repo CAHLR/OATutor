@@ -1,1 +1,1 @@
-import steps from "./SolveMixture13-index.js"; const problem = {id: "SolveMixture13", title: "Danny's Pennies and Nickels", body: "", steps: steps, }; export { problem };
+import steps from "./SolveMixture13-index.js"; const problem = {id: "SolveMixture13", title: "Danny's Pennies and Nickels", body: "", steps: steps, variabilization: {}}; export { problem };

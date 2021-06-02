@@ -1,1 +1,1 @@
-import steps from "./real13-index.js"; const problem = {id: "real13", title: "Simplifying a Formula", body: "", steps: steps, }; export { problem };
+import steps from "./real13-index.js"; const problem = {id: "real13", title: "Simplifying a Formula", body: "", steps: steps, variabilization: {}}; export { problem };

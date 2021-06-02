@@ -1,0 +1,1 @@
+import hints from "./threevar17a-index.js"; const step = {id: "threevar17a", stepAnswer: ["(x,5/2x,3/2x)"], problemType: "MultipleChoice", stepTitle: "2x+y-3z=0,4x+2y-6z=0,x-y+z=0", stepBody: "", choices: ["(x,2x,3x)", "(x,5/2x,3/2x)", "(x,2/5x,3/2x)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

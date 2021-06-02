@@ -1,0 +1,1 @@
+import steps from "./chemof8-index.js"; const problem = {id: "chemof8", title: "Review Question 11", body: "", steps: steps, variabilization: {}}; export { problem };

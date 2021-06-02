@@ -1,1 +1,1 @@
-import hints from "./realnumbers7b-index.js"; const step = {id: "realnumbers7b", stepAnswer: ["731/100"], problemType: "TextBox", stepTitle: "7.31", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./realnumbers7b-index.js"; const step = {id: "realnumbers7b", stepAnswer: ["731/100"], problemType: "TextBox", stepTitle: "7.31", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
