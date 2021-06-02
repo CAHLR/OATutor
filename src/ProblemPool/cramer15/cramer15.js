@@ -1,0 +1,1 @@
+import steps from "./cramer15-index.js"; const problem = {id: "cramer15", title: "Solve the system of linear equations using Cramer’s Rule.", body: "", steps: steps, variabilization: {}}; export { problem };

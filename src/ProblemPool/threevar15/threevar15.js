@@ -1,0 +1,1 @@
+import steps from "./threevar15-index.js"; const problem = {id: "threevar15", title: "Solving an Inconsistent System of Three Equations in Three Variables", body: "Solve the following system.", steps: steps, variabilization: {}}; export { problem };

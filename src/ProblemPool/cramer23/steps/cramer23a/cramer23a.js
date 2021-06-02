@@ -1,0 +1,1 @@
+import hints from "./cramer23a-index.js"; const step = {id: "cramer23a", stepAnswer: ["Inconsistent"], problemType: "MultipleChoice", stepTitle: "3*x-2*y=4;\\n6*x-4*y=0", stepBody: "", choices: ["(2,1)", "(4,6)", "Inconsistent", "Infinite Solutions"], answerType: "string", hints: hints, variabilization: {}}; export {step};

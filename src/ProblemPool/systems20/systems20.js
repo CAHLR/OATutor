@@ -1,0 +1,1 @@
+import steps from "./systems20-index.js"; const problem = {id: "systems20", title: "Solving a System of Nonlinear Equations Representing a Circle and an Ellipse #1", body: "Solve the system of nonlinear equations.", steps: steps, variabilization: {}}; export { problem };

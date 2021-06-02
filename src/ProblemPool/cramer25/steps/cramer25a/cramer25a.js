@@ -1,0 +1,1 @@
+import hints from "./cramer25a-index.js"; const step = {id: "cramer25a", stepAnswer: ["Inconsistent"], problemType: "MultipleChoice", stepTitle: "2*x+4*y+4*z=2;\\n3*x+7*y+7*z=-5;\\nx+2*y+2*z=4", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

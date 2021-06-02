@@ -1,0 +1,1 @@
+import hints from "./systems21a-index.js"; const step = {id: "systems21a", stepAnswer: ["(5,0)"], problemType: "MultipleChoice", stepTitle: "9x**2+25y**2=225\\n(x-6)**2+y**2=1", stepBody: "", choices: ["(5,0)", "(0,5)", "$$(-5,0)$$", "$$(0,-5)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

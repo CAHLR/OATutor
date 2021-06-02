@@ -1,0 +1,1 @@
+import hints from "./matrices25a-index.js"; const step = {id: "matrices25a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "C-0.5D", stepBody: "If the problem has no solution, simply enter \"No Solution\" as your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

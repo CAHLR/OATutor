@@ -1,0 +1,1 @@
+import hints from "./inv1a-index.js"; const step = {id: "inv1a", stepAnswer: ["/mat{(-3,2),(-2,1)}"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 1 & -2 \\\\ 2 & -3 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./inv3a-index.js"; const step = {id: "inv3a", stepAnswer: ["/mat{(-1,1,0),(-1,0,1),(6,-2,-3)}"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 2 3 1 3 3 1 2 4 1 \\end{bmatrix}$$,", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

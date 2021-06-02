@@ -1,0 +1,1 @@
+import hints from "./inv12a-index.js"; const step = {id: "inv12a", stepAnswer: ["/mat{(8/25,-1/5,-3/35),(17/10,1/10,-1/35),(-2/7,0,-1/7)}"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 1 2 -1 -3 4 1 -2 -4 -5 \\end{bmatrix}$$,", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
