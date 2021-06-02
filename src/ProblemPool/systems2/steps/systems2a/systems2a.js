@@ -1,1 +1,0 @@
-import hints from "./systems2a-index.js"; const step = {id: "systems2a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["True", "False"], answerType: "string", hints: hints, variabilization: {}}; export {step};

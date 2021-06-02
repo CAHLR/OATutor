@@ -1,0 +1,1 @@
+import hints from "./matrices6a-index.js"; const step = {id: "matrices6a", stepAnswer: ["/mat{(20,102),(28,28)}"], problemType: "MultipleChoice", stepTitle: "BC", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

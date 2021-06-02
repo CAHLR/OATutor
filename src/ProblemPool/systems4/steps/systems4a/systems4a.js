@@ -1,1 +1,0 @@
-import hints from "./systems4a-index.js"; const step = {id: "systems4a", stepAnswer: ["(-7/3, 2/3)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["(-7/3, 2/3)", "(2/3, -7/3)", "$$(2,-7)$$", "(7,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

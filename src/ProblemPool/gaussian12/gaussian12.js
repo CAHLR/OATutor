@@ -1,0 +1,1 @@
+import steps from "./gaussian12-index.js"; const problem = {id: "gaussian12", title: "Solving a 2×2 System by Gaussian Elimination", body: "Solve the given system by Gaussian elimination. Write the answer as a coordinate pair.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./threevar2a-index.js"; const step = {id: "threevar2a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether (4,4,-1) is the solution to the system of equations: $$x-y=0$$, $$x-z=5$$, $$x-y-z=-1$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

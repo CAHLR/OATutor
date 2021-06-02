@@ -1,0 +1,1 @@
+import steps from "./cramer24-index.js"; const problem = {id: "cramer24", title: "Using Cramer's Rule to Solve a Dependent System", body: "Solve the system with an $$infinite$$ number of solution.", steps: steps, variabilization: {}}; export { problem };

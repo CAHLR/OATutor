@@ -1,0 +1,1 @@
+import steps from "./systems24-index.js"; const problem = {id: "systems24", title: "Solving Systems", body: "Use any method to solve the system of nonlinear equations.", steps: steps, variabilization: {}}; export { problem };

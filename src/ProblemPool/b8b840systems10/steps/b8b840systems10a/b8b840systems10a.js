@@ -1,0 +1,1 @@
+import hints from "./b8b840systems10a-index.js"; const step = {id: "b8b840systems10a", stepAnswer: ["1200 children 800 adults"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["1200 children, 800 adults", "800 children, 1200 adults", "25 children, 50 adults"], answerType: "string", hints: hints, variabilization: {}}; export {step};

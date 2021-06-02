@@ -1,0 +1,1 @@
+import steps from "./threevar11-index.js"; const problem = {id: "threevar11", title: "Determining Whether an Ordered Triple Is a Solution to a System", body: "Determine whether (3,-2,1) is a solution to the following system", steps: steps, variabilization: {}}; export { problem };
