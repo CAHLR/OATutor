@@ -8,10 +8,6 @@ var request = require('request');
 var bodyParser = require('body-parser');
 var lti = require('ims-lti');
 const fs = require('fs');
-//const options = {
-//    key: fs.readFileSync('/etc/ssl/cahl.key'),
-//    cert: fs.readFileSync('/etc/ssl/cahl.cert')
-//};
 
 const options = {
   key: fs.readFileSync('/etc/letsencrypt/live/askoski.berkeley.edu/privkey.pem'),
@@ -24,26 +20,58 @@ var secret = 'openits-secret';
 // Key: Canvas assignment
 // Value: Lesson ID from OpenITS
 var lessonMapping = {
-  "OpenITS Lesson 1.1": "2",
-  "OpenITS Lesson 1.2": "3",
-  "OpenITS Lesson 1.3": "4",
-  "OpenITS Lesson 1.4": "5",
-  "OpenITS Lesson 1.5": "6",
-  "OpenITS Lesson 1.6": "7",
-  "OpenITS Lesson 2.1": "8",
-  "OpenITS Lesson 2.2": "9",
-  "OpenITS Lesson 2.3": "10",
-  "OpenITS Lesson 2.4": "11",
-  "OpenITS Lesson 2.5": "12",
-  "OpenITS Lesson 2.6": "13",
-  "OpenITS Lesson 2.7": "14",
-  "OpenITS Lesson 3.1": "15",
-  "OpenITS Lesson 3.2": "16",
-  "OpenITS Lesson 3.3": "17",
-  "OpenITS Lesson 3.4": "18",
-  "OpenITS Lesson 3.5": "19",
-  "OpenITS Lesson 3.6": "20",
-  "OpenITS Lesson 3.7": "21",
+  "OpenITS Lesson 1.1" : "11",
+  "OpenITS Lesson 1.2" : "12",
+  "OpenITS Lesson 1.3" : "13",
+  "OpenITS Lesson 1.4" : "14",
+  "OpenITS Lesson 1.5" : "15",
+  "OpenITS Lesson 1.6" : "16",
+  "OpenITS Lesson 2.1" : "17",
+  "OpenITS Lesson 2.2" : "18",
+  "OpenITS Lesson 2.3" : "19",
+  "OpenITS Lesson 2.4" : "20",
+  "OpenITS Lesson 2.5" : "21",
+  "OpenITS Lesson 2.6" : "22",
+  "OpenITS Lesson 2.7" : "23",
+  "OpenITS Lesson 3.1" : "24",
+  "OpenITS Lesson 3.2" : "25",
+  "OpenITS Lesson 3.3" : "26",
+  "OpenITS Lesson 3.4" : "27",
+  "OpenITS Lesson 3.5" : "28",
+  "OpenITS Lesson 3.6" : "39",
+  "OpenITS Lesson 3.7" : "30",
+  "OpenITS Lesson 4.1" : "31",
+  "OpenITS Lesson 4.2" : "32",
+  "OpenITS Lesson 5.1" : "33",
+  "OpenITS Lesson 5.2" : "34",
+  "OpenITS Lesson 5.3" : "35",
+  "OpenITS Lesson 5.4" : "36",
+  "OpenITS Lesson 5.5" : "37",
+  "OpenITS Lesson 5.6" : "38",
+  "OpenITS Lesson 5.7" : "39",
+  "OpenITS Lesson 5.8" : "40",
+  "OpenITS Lesson 6.1" : "41",
+  "OpenITS Lesson 6.2" : "42",
+  "OpenITS Lesson 6.3" : "43",
+  "OpenITS Lesson 6.4" : "44",
+  "OpenITS Lesson 6.5" : "45",
+  "OpenITS Lesson 6.6" : "46",
+  "OpenITS Lesson 6.7" : "47",
+  "OpenITS Lesson 6.8" : "48",
+  "OpenITS Lesson 7.1" : "49",
+  "OpenITS Lesson 7.2" : "50",
+  "OpenITS Lesson 7.3" : "51",
+  "OpenITS Lesson 7.4" : "52",
+  "OpenITS Lesson 7.5" : "53",
+  "OpenITS Lesson 7.6" : "54",
+  "OpenITS Lesson 7.7" : "55",
+  "OpenITS Lesson 7.8" : "56",
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
 var app = express();
@@ -137,7 +165,9 @@ app.post('/grade', function (req, res) {
   var payload = "<h1> Component Breakdown </h1> <br/>";
   payload += "<h3> Overall score: " + req.body.score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
-    payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
+    // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
+    var r = getRandomInt(0, 10)
+    payload += "<p>" + (i + 1) + ") " + key.replace(/_/g, ' ') + ": " + "&#9646;".repeat(r) +  "&#9647;".repeat(10 - r)   + "<p>";
   });
   console.log(parseFloat(req.body.score));
   provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), payload, (err, result) => {
