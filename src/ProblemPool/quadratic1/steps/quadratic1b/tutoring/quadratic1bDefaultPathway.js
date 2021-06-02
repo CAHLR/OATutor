@@ -1,0 +1,1 @@
+var hints = [{id: "quadratic1b-h1", type: "hint", dependencies: [], title: "Identifying the Axis of Symmetry", text: "Because this parabola opens upward, the axis of symmetry is the vertical line that intersects the parabola at the vertex. So the axis of symmetry is $$x=3$$.", variabilization: {}}, ]; export {hints};

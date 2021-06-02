@@ -1,0 +1,1 @@
+import steps from "./expolog22-index.js"; const problem = {id: "expolog22", title: "Finding the Function that Describes Radioactive Decay", body: "", steps: steps, variabilization: {}}; export { problem };

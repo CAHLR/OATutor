@@ -1,1 +1,1 @@
-import hints from "./composition17b-index.js"; const step = {id: "composition17b", stepAnswer: ["-3x^2+x-5"], problemType: "TextBox", stepTitle: "f-g", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./composition17b-index.js"; const step = {id: "composition17b", stepAnswer: ["-3x^2+x-5"], problemType: "TextBox", stepTitle: "f-g", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

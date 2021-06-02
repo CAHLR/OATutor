@@ -1,0 +1,1 @@
+import steps from "./expgraph19-index.js"; const problem = {id: "expgraph19", title: "Transformations of Exponential Functions", body: "What is the function, g(x), after reflecting $$f(x)=-\\left(4\\right) {\\left(2\\right)}^x+\\left(2\\right)$$ about the x-axis?", steps: steps, variabilization: {}}; export { problem };

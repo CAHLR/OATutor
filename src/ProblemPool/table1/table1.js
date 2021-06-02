@@ -1,0 +1,1 @@
+import steps from "./table1-index.js"; const problem = {id: "table1", title: "Valid Table?", body: "\n##figure1.gif##", steps: steps, variabilization: {}}; export { problem };

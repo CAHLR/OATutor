@@ -1,1 +1,1 @@
-import steps from "./Formula8-index.js"; const problem = {id: "Formula8", title: "Solve the formula $$d=rt$$ for r:", body: "", steps: steps, }; export { problem };
+import steps from "./Formula8-index.js"; const problem = {id: "Formula8", title: "Solve the formula $$d=rt$$ for r:", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./quadratic19a-index.js"; const step = {id: "quadratic19a", stepAnswer: ["f(x)=2(x-1.5)^2-4.5"], problemType: "TextBox", stepTitle: "Rewrite the quadratic in standard form: $$f(x)=\\left(2\\right) x^2-\\left(6\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

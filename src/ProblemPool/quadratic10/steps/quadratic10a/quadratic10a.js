@@ -1,0 +1,1 @@
+import hints from "./quadratic10a-index.js"; const step = {id: "quadratic10a", stepAnswer: ["f(x)>=8/11,-infinity<x<infinity"], problemType: "TextBox", stepTitle: "Find the domain and range of the function $$f(x)=\\left(2\\right) {\\left(x-\\frac{4}{7}\\right)}^2+\\frac{8}{11}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

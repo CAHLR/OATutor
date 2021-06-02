@@ -1,0 +1,1 @@
+import steps from "./explog13-index.js"; const problem = {id: "explog13", title: "Using the definition of Logarithms to solve equations", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };

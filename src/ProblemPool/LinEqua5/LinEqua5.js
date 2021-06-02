@@ -1,1 +1,1 @@
-import steps from "./LinEqua5-index.js"; const problem = {id: "LinEqua5", title: "For the following exercises, solve the equation for x.", body: "Solve the equation in one variable", steps: steps, }; export { problem };
+import steps from "./LinEqua5-index.js"; const problem = {id: "LinEqua5", title: "For the following exercises, solve the equation for x.", body: "Solve the equation in one variable", steps: steps, variabilization: {}}; export { problem };

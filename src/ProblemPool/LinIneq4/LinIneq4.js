@@ -1,1 +1,1 @@
-import steps from "./LinIneq4-index.js"; const problem = {id: "LinIneq4", title: "Demonstrating the Multiplication Property", body: "Illustrate the multiplication property for inequalities by solving each of the following:", steps: steps, }; export { problem };
+import steps from "./LinIneq4-index.js"; const problem = {id: "LinIneq4", title: "Demonstrating the Multiplication Property", body: "Illustrate the multiplication property for inequalities by solving each of the following:", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "nums2a-h1", type: "hint", dependencies: [], title: "square", text: "To square, use **", variabilization: {}}, ]; export {hints};

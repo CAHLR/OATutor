@@ -1,0 +1,1 @@
+import steps from "./logarithmic15-index.js"; const problem = {id: "logarithmic15", title: "Using the Change-of-Base Formula with a Calculator", body: "Use the change-of-base formula to evaluate each expression as a quotient of natural logs. Use a calculator to approximate each to five decimal places.", steps: steps, variabilization: {}}; export { problem };

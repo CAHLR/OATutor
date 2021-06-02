@@ -1,0 +1,1 @@
+import hints from "./inverses13a-index.js"; const step = {id: "inverses13a", stepAnswer: ["(x+8)(x^2-8x+64)"], problemType: "TextBox", stepTitle: "$$x^3+\\left(512\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

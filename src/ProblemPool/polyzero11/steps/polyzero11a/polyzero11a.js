@@ -1,0 +1,1 @@
+import hints from "./polyzero11a-index.js"; const step = {id: "polyzero11a", stepAnswer: ["255"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{x^4-\\left(1\\right)}{x-\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

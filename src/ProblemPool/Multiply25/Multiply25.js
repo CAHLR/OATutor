@@ -1,1 +1,1 @@
-import steps from "./Multiply25-index.js"; const problem = {id: "Multiply25", title: "Translate Phrases to Expressions with Integers", body: "In the following exercises, translate to an algebraic expression and simplify if possible.", steps: steps, }; export { problem };
+import steps from "./Multiply25-index.js"; const problem = {id: "Multiply25", title: "Translate Phrases to Expressions with Integers", body: "In the following exercises, translate to an algebraic expression and simplify if possible.", steps: steps, variabilization: {}}; export { problem };

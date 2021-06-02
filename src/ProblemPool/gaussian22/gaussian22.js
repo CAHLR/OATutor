@@ -1,0 +1,1 @@
+import steps from "./gaussian22-index.js"; const problem = {id: "gaussian22", title: "Solving Systems with Gaussian Elimination", body: "For the following exercises, write the augmented matrix for the linear system.", steps: steps, variabilization: {}}; export { problem };

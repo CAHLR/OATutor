@@ -1,1 +1,1 @@
-import steps from "./factor9-index.js"; const problem = {id: "factor9", title: "Factor the following expression", body: "Factoring a Difference of Squares.", steps: steps, }; export { problem };
+import steps from "./factor9-index.js"; const problem = {id: "factor9", title: "Factor the following expression", body: "Factoring a Difference of Squares.", steps: steps, variabilization: {}}; export { problem };

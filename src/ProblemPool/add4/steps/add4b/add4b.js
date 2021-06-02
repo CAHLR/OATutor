@@ -1,1 +1,1 @@
-import hints from "./add4b-index.js"; const step = {id: "add4b", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\left(1\\right)+\\left(-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./add4b-index.js"; const step = {id: "add4b", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\left(1\\right)+\\left(-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

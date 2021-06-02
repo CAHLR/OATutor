@@ -1,0 +1,1 @@
+import steps from "./exponential26-index.js"; const problem = {id: "exponential26", title: "Exercise #1: Applying the Compound-Interest Formula", body: "After a certain number of years, the value of an investment account is represented by the equation A=10250(1+(.04/12))**120.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./polyzero20a-index.js"; const step = {id: "polyzero20a", stepAnswer: ["$$x=3 -5 5$$,"], problemType: "MultipleChoice", stepTitle: "$$x^3-\\left(3\\right) x^2-\\left(25\\right) x+\\left(75\\right)=0$$", stepBody: "", choices: ["$$x=3 -2 5$$,", "$$x=3 -5 5$$,", "$$x=1 -5 5$$,"], answerType: "string", hints: hints, variabilization: {}}; export {step};

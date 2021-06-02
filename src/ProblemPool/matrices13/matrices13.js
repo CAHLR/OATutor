@@ -1,0 +1,1 @@
+import steps from "./matrices13-index.js"; const problem = {id: "matrices13", title: "Finding the Sum of Two Matrices", body: "Find the sum of matrices A and B.", steps: steps, variabilization: {}}; export { problem };

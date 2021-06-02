@@ -1,0 +1,1 @@
+import steps from "./explog12-index.js"; const problem = {id: "explog12", title: "Solving Exponential Functions in Quadratic Form", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };

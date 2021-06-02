@@ -1,1 +1,1 @@
-import hints from "./realnumbers30a-index.js"; const step = {id: "realnumbers30a", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-7.31_7.3", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints}; export {step};
+import hints from "./realnumbers30a-index.js"; const step = {id: "realnumbers30a", stepAnswer: ["<"], problemType: "MultipleChoice", stepTitle: "-7.31_7.3", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};

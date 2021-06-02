@@ -1,1 +1,1 @@
-import hints from "./use14c-index.js"; const step = {id: "use14c", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y^3$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use14c-index.js"; const step = {id: "use14c", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

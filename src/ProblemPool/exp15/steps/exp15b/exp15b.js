@@ -1,1 +1,1 @@
-import hints from "./exp15b-index.js"; const step = {id: "exp15b", stepAnswer: ["p^6/q^18"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{p}{q^3}\\right)}^6$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp15b-index.js"; const step = {id: "exp15b", stepAnswer: ["p^6/q^18"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{p}{q^3}\\right)}^6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

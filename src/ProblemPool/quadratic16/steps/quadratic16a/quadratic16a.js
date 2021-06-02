@@ -1,0 +1,1 @@
+import hints from "./quadratic16a-index.js"; const step = {id: "quadratic16a", stepAnswer: ["f(x)=(x+(5/2))^2-8.25"], problemType: "TextBox", stepTitle: "Rewrite the quadratic in standard form: $$x^2+\\left(5\\right) x-\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

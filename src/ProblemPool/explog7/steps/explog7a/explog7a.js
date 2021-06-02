@@ -1,0 +1,1 @@
+import hints from "./explog7a-index.js"; const step = {id: "explog7a", stepAnswer: ["-(ln(38/3)-8)/3"], problemType: "TextBox", stepTitle: "$$e^{\\left(-3\\right) k}+\\left(6\\right)=$$ 44", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

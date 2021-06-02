@@ -1,0 +1,1 @@
+import steps from "./cramer7-index.js"; const problem = {id: "cramer7", title: "Find the determinant.", body: "", steps: steps, variabilization: {}}; export { problem };

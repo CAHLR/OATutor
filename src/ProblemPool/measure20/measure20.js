@@ -1,1 +1,1 @@
-import steps from "./measure20-index.js"; const problem = {id: "measure20", title: "In the following exercise, solve.", body: "", steps: steps, }; export { problem };
+import steps from "./measure20-index.js"; const problem = {id: "measure20", title: "In the following exercise, solve.", body: "", steps: steps, variabilization: {}}; export { problem };

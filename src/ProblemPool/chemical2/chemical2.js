@@ -1,0 +1,1 @@
+import steps from "./chemical2-index.js"; const problem = {id: "chemical2", title: "The Chemical Foundation of Life", body: "", steps: steps, variabilization: {}}; export { problem };

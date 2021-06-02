@@ -1,1 +1,1 @@
-import steps from "./whole16-index.js"; const problem = {id: "whole16", title: "Find the Prime Factorization of a Composite Number", body: "", steps: steps, }; export { problem };
+import steps from "./whole16-index.js"; const problem = {id: "whole16", title: "Find the Prime Factorization of a Composite Number", body: "", steps: steps, variabilization: {}}; export { problem };

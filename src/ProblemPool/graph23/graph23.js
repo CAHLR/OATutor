@@ -1,0 +1,1 @@
+import steps from "./graph23-index.js"; const problem = {id: "graph23", title: "Finding Zeroes and Multiplicity", body: "For the following exercises, find the zeros and give the multiplicity of each.", steps: steps, variabilization: {}}; export { problem };

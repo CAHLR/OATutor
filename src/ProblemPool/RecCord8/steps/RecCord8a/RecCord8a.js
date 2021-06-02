@@ -1,1 +1,1 @@
-import hints from "./RecCord8a-index.js"; const step = {id: "RecCord8a", stepAnswer: ["y=2x-(4/5)"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) y+\\left(4\\right)=10x$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./RecCord8a-index.js"; const step = {id: "RecCord8a", stepAnswer: ["y=2x-(4/5)"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) y+\\left(4\\right)=10x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

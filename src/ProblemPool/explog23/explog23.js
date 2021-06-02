@@ -1,0 +1,1 @@
+import steps from "./explog23-index.js"; const problem = {id: "explog23", title: "Solving an Equation with Positive and Negative Powers #2", body: "For the following question, think about the range of an exponential function.", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./RadRat14-index.js"; const problem = {id: "RadRat14", title: "Rationalizing a Denominator Containing Two Terms", body: "", steps: steps, }; export { problem };
+import steps from "./RadRat14-index.js"; const problem = {id: "RadRat14", title: "Rationalizing a Denominator Containing Two Terms", body: "", steps: steps, variabilization: {}}; export { problem };

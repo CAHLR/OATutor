@@ -1,0 +1,1 @@
+var hints = [{id: "logarithmsandlogistic18a-h1", type: "hint", dependencies: [], title: "Carrying Capacity of a Logistic Equation", text: "For a logistic equation $$y=\\frac{c}{\\left(1\\right)+{ae}^{\\left(-b\\right)x}}$$, the carrying capacity is c.", variabilization: {}}, ]; export {hints};

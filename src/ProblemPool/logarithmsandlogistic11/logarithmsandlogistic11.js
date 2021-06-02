@@ -1,0 +1,1 @@
+import steps from "./logarithmsandlogistic11-index.js"; const problem = {id: "logarithmsandlogistic11", title: "Solving Logistic Equations #10", body: "The population P of an endangered species habitat for wolves is modeled by the function P(x)=558/(1+54.8e**(-0.462x)), where x is given in years.", steps: steps, variabilization: {}}; export { problem };

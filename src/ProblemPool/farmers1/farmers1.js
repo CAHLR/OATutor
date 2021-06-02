@@ -1,0 +1,1 @@
+import steps from "./farmers1-index.js"; const problem = {id: "farmers1", title: "Farmers Markets", body: "The table farmers_markets.csv contains data on farmers' markets in the United States (data collected by the USDA). Each row represents one such market.", steps: steps, variabilization: {}}; export { problem };

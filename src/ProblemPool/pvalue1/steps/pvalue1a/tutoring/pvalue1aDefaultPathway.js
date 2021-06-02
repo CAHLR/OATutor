@@ -1,1 +1,1 @@
-var hints = [{id: "pvalue1a-h1", type: "hint", dependencies: [], title: "Probability & Likelihood", text: "Probability falls between 0 and 1. The closer it is to 1, the greater the chance of something occurring, hence the more likely it is, and vice-versa."}, ]; export {hints};
+var hints = [{id: "pvalue1a-h1", type: "hint", dependencies: [], title: "Probability & Likelihood", text: "Probability falls between 0 and 1. The closer it is to 1, the greater the chance of something occurring, hence the more likely it is, and vice-versa.", variabilization: {}}, ]; export {hints};

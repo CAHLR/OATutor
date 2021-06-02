@@ -1,0 +1,1 @@
+import steps from "./expgraph8-index.js"; const problem = {id: "expgraph8", title: "Finding horizontal asymptotes", body: "What is the horizontal asymptote of $$f(x)=-\\left(5\\right) {\\left(4\\right)}^x-\\left(1\\right)$$?", steps: steps, variabilization: {}}; export { problem };

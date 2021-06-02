@@ -1,0 +1,1 @@
+import hints from "./polyzero6a-index.js"; const step = {id: "polyzero6a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{x^4-\\left(9\\right) x^2+\\left(14\\right)}{x-\\left(2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

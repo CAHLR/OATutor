@@ -1,1 +1,1 @@
-import hints from "./LinIneq29a-index.js"; const step = {id: "LinIneq29a", stepAnswer: ["[-3,2]"], problemType: "TextBox", stepTitle: "$$|\\left(2\\right) x+\\left(1\\right)|+\\left(1\\right) \\leq 6$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./LinIneq29a-index.js"; const step = {id: "LinIneq29a", stepAnswer: ["[-3,2]"], problemType: "TextBox", stepTitle: "$$|\\left(2\\right) x+\\left(1\\right)|+\\left(1\\right) \\leq 6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

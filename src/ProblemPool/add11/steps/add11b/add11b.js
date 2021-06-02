@@ -1,1 +1,1 @@
-import hints from "./add11b-index.js"; const step = {id: "add11b", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$-\\left(2\\right)+\\left(-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./add11b-index.js"; const step = {id: "add11b", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$-\\left(2\\right)+\\left(-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

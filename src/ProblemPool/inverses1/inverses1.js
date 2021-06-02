@@ -1,0 +1,1 @@
+import steps from "./inverses1-index.js"; const problem = {id: "inverses1", title: "Verifying Inverse Functions", body: "We want to show that $$f(x)=\\frac{1}{x+\\left(1\\right)}$$ and $$f^{-\\left(1\\right)} x=\\frac{1}{x}-\\left(1\\right)$$ are inverses, for x≠0,-1. Evaluate the following function.", steps: steps, variabilization: {}}; export { problem };

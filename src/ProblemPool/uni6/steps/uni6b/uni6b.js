@@ -1,1 +1,1 @@
-import hints from "./uni6b-index.js"; const step = {id: "uni6b", stepAnswer: ["62"], problemType: "TextBox", stepTitle: "Find the speed of Ashley.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./uni6b-index.js"; const step = {id: "uni6b", stepAnswer: ["62"], problemType: "TextBox", stepTitle: "Find the speed of Ashley.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

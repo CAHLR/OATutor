@@ -1,0 +1,1 @@
+import hints from "./graphlog7a-index.js"; const step = {id: "graphlog7a", stepAnswer: ["domain: (-inf, 4), range: (-inf, inf)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["domain: (-inf, 4), range: (-inf, inf)", "domain: (-inf, inf), range: (-inf, 4)", "none of the above"], answerType: "string", hints: hints, variabilization: {}}; export {step};

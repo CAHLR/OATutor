@@ -1,0 +1,1 @@
+import hints from "./matrices11a-index.js"; const step = {id: "matrices11a", stepAnswer: ["3x3"], problemType: "MultipleChoice", stepTitle: "$$A=\\begin{bmatrix} 2 1 0 2 4 7 3 1 -2 \\end{bmatrix}$$,", stepBody: "", choices: ["3x1", "3x2", "3x3", "1x3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

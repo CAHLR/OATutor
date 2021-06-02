@@ -1,1 +1,1 @@
-import steps from "./LinEqua1-index.js"; const problem = {id: "LinEqua1", title: "Solving an Equation in One Variable", body: "Solve the following equation:", steps: steps, }; export { problem };
+import steps from "./LinEqua1-index.js"; const problem = {id: "LinEqua1", title: "Solving an Equation in One Variable", body: "Solve the following equation:", steps: steps, variabilization: {}}; export { problem };

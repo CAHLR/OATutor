@@ -35,15 +35,15 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
   }
   //console.log(actual);
   var correctAnswer = false;
-
+  
   try {
     if (parsed === "") {
       return [parsed, false];
     } else if (answerType === "arithmetic") {
-      parsed = KAS.parse(attempt).expr;
+      parsed = KAS.parse(attempt.replace(/\$\$/g, '')).expr;
       //console.log(parsed);
       //console.log(actual);
-      correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns).expr));
+      correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns.replace(/\$\$/g, '')).expr));
       return [parsed.print(), correctAnswer];
     } else if (answerType === "string") {
       parsed = attempt;

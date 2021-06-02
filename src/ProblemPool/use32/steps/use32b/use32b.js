@@ -1,1 +1,1 @@
-import hints from "./use32b-index.js"; const step = {id: "use32b", stepAnswer: ["99"], problemType: "TextBox", stepTitle: "$$\\left(\\left(8\\right)+\\left(3\\right)\\right) \\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use32b-index.js"; const step = {id: "use32b", stepAnswer: ["99"], problemType: "TextBox", stepTitle: "$$\\left(\\left(8\\right)+\\left(3\\right)\\right) \\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

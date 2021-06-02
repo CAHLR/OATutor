@@ -1,0 +1,1 @@
+import hints from "./myopia1a-index.js"; const step = {id: "myopia1a", stepAnswer: ["Observational study"], problemType: "MultipleChoice", stepTitle: "Was this study observational, or was it a controlled experiment?", stepBody: "", choices: ["Observational study", "Controlled experiment"], answerType: "string", hints: hints, variabilization: {}}; export {step};

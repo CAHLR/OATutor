@@ -1,1 +1,1 @@
-import hints from "./VarCon13a-index.js"; const step = {id: "VarCon13a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) m+\\left(9\\right)=5m$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon13a-index.js"; const step = {id: "VarCon13a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) m+\\left(9\\right)=5m$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./exponential22a-index.js"; const step = {id: "exponential22a", stepAnswer: ["2000(1/sqrt(10))^x"], problemType: "TextBox", stepTitle: "(0,2000) and (2,20)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

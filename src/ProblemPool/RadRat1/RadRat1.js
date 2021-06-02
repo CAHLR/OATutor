@@ -1,1 +1,1 @@
-import steps from "./RadRat1-index.js"; const problem = {id: "RadRat1", title: "Evaluating Principal Square Roots", body: "Evaluate each expression.", steps: steps, }; export { problem };
+import steps from "./RadRat1-index.js"; const problem = {id: "RadRat1", title: "Evaluating Principal Square Roots", body: "Evaluate each expression.", steps: steps, variabilization: {}}; export { problem };

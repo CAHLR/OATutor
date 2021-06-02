@@ -1,1 +1,1 @@
-import hints from "./complex23c-index.js"; const step = {id: "complex23c", stepAnswer: ["-3-4i"], problemType: "TextBox", stepTitle: "$$-\\left(3\\right)+\\left(4\\right) i$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./complex23c-index.js"; const step = {id: "complex23c", stepAnswer: ["-3-4i"], problemType: "TextBox", stepTitle: "$$-\\left(3\\right)+\\left(4\\right) i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

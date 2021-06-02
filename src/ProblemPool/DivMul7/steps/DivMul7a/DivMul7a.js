@@ -1,1 +1,1 @@
-import hints from "./DivMul7a-index.js"; const step = {id: "DivMul7a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$-n=9$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./DivMul7a-index.js"; const step = {id: "DivMul7a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$-n=9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

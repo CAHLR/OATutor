@@ -1,0 +1,1 @@
+import hints from "./polyzero13a-index.js"; const step = {id: "polyzero13a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{\\left(4\\right) x^3+\\left(5\\right) x^2-\\left(2\\right) x+\\left(7\\right)}{x+\\left(2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

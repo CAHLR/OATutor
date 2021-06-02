@@ -1,0 +1,1 @@
+import hints from "./divpoly25a-index.js"; const step = {id: "divpoly25a", stepAnswer: ["3x^2-2x+16/3-31/(3(3x-1))"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) x^3-\\left(9\\right) x^2+\\left(18\\right) x+\\left(5\\right)$$ / (3x-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

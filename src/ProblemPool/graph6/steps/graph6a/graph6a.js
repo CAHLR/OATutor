@@ -1,0 +1,1 @@
+import hints from "./graph6a-index.js"; const step = {id: "graph6a", stepAnswer: ["1/30(x+3)(x-2)^2(x-5)"], problemType: "TextBox", stepTitle: "What is the formula for the displayed polynomial? $$f(x)=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

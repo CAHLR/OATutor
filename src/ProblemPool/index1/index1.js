@@ -1,0 +1,1 @@
+import steps from "./index1-index.js"; const problem = {id: "index1", title: "Array Index", body: "", steps: steps, variabilization: {}}; export { problem };

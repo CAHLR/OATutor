@@ -1,0 +1,1 @@
+import steps from "./threevar2-index.js"; const problem = {id: "threevar2", title: "Determining Whether an Ordered Triple Is a Solution to a System", body: "", steps: steps, variabilization: {}}; export { problem };

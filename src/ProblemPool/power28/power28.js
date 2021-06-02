@@ -1,0 +1,1 @@
+import steps from "./power28-index.js"; const problem = {id: "power28", title: "Determine the end behavior of the functions", body: "", steps: steps, variabilization: {}}; export { problem };

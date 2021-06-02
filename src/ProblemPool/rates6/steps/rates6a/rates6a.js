@@ -1,1 +1,1 @@
-import hints from "./rates6a-index.js"; const step = {id: "rates6a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find the local maximum. Give the y value.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./rates6a-index.js"; const step = {id: "rates6a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find the local maximum. Give the y value.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

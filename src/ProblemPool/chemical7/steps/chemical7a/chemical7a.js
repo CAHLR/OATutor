@@ -1,0 +1,1 @@
+import hints from "./chemical7a-index.js"; const step = {id: "chemical7a", stepAnswer: ["base"], problemType: "MultipleChoice", stepTitle: "We call a molecule that binds up excess hydrogen ions in a solution a(n) $$________$$.", stepBody: "", choices: ["acid", "isotope", "base", "donator"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./Multiply17-index.js"; const problem = {id: "Multiply17", title: "Multiply Integers", body: "Multiply:", steps: steps, }; export { problem };
+import steps from "./Multiply17-index.js"; const problem = {id: "Multiply17", title: "Multiply Integers", body: "Multiply:", steps: steps, variabilization: {}}; export { problem };

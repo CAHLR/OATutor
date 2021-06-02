@@ -1,0 +1,1 @@
+import hints from "./modeling26a-index.js"; const step = {id: "modeling26a", stepAnswer: ["y=15/sqrt(x)"], problemType: "TextBox", stepTitle: "y varies inversely as the cube root of x and when $$x=64$$, $$y=5$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./expolog2-index.js"; const problem = {id: "expolog2", title: "Modeling Exponential Growth and Decay", body: "The half-life of plutonium-244 is 80,000,000 years.", steps: steps, variabilization: {}}; export { problem };

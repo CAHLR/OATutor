@@ -1,0 +1,1 @@
+import steps from "./linearmodels21-index.js"; const problem = {id: "linearmodels21", title: "Exercise #7: Linear Models", body: "Find the area of a triangle bounded by the y-axis, the line $$f(x)=\\left(9\\right)-\\frac{6}{7} x$$, and the line perpendicular to f(x) that passes through the origin.", steps: steps, variabilization: {}}; export { problem };

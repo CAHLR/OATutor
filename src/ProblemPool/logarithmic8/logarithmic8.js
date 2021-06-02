@@ -1,0 +1,1 @@
+import steps from "./logarithmic8-index.js"; const problem = {id: "logarithmic8", title: "Condensing Complex Logarithmic Expressions", body: "Condense the expression to a single logarithm if possible.", steps: steps, variabilization: {}}; export { problem };

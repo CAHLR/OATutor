@@ -1,0 +1,1 @@
+import hints from "./divpoly5a-index.js"; const step = {id: "divpoly5a", stepAnswer: ["-9x^3+x^2+8x+8+2/(x-1)"], problemType: "TextBox", stepTitle: "Use synthetic division to divide $$-\\left(9\\right) x^4+\\left(10\\right) x^3+\\left(7\\right) x^2-\\left(6\\right)$$ by x-1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

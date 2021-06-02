@@ -1,1 +1,1 @@
-import hints from "./VarCon16a-index.js"; const step = {id: "VarCon16a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$8h=-\\left(4\\right) h+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./VarCon16a-index.js"; const step = {id: "VarCon16a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$8h=-\\left(4\\right) h+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

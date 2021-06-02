@@ -1,0 +1,1 @@
+import hints from "./divpoly24a-index.js"; const step = {id: "divpoly24a", stepAnswer: ["2x*82-7x+1-2/(2x+1)"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^3-\\left(12\\right) x^2-\\left(5\\right) x-\\left(1\\right)$$ / $$\\left(2\\right) x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

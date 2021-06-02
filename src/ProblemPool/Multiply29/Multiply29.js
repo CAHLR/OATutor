@@ -1,1 +1,1 @@
-import steps from "./Multiply29-index.js"; const problem = {id: "Multiply29", title: "Divide Integers", body: "Divide:", steps: steps, }; export { problem };
+import steps from "./Multiply29-index.js"; const problem = {id: "Multiply29", title: "Divide Integers", body: "Divide:", steps: steps, variabilization: {}}; export { problem };

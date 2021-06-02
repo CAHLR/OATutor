@@ -1,0 +1,1 @@
+import steps from "./partfrac5-index.js"; const problem = {id: "partfrac5", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors: $$\\frac{\\left(10\\right) x+\\left(47\\right)}{x^2+\\left(7\\right) x+\\left(10\\right)}$$", steps: steps, variabilization: {}}; export { problem };

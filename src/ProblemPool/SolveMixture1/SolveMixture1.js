@@ -1,1 +1,1 @@
-import steps from "./SolveMixture1-index.js"; const problem = {id: "SolveMixture1", title: "Solve Ticket and Stamp Word Problems", body: "", steps: steps, }; export { problem };
+import steps from "./SolveMixture1-index.js"; const problem = {id: "SolveMixture1", title: "Solve Ticket and Stamp Word Problems", body: "", steps: steps, variabilization: {}}; export { problem };

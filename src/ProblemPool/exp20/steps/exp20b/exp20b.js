@@ -1,1 +1,1 @@
-import hints from "./exp20b-index.js"; const step = {id: "exp20b", stepAnswer: ["-816,000,000,000"], problemType: "TextBox", stepTitle: "$$-\\left(8.16\\right) {\\left(10\\right)}^{11}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./exp20b-index.js"; const step = {id: "exp20b", stepAnswer: ["-816000000000"], problemType: "TextBox", stepTitle: "$$-\\left(8.16\\right) {\\left(10\\right)}^{11}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

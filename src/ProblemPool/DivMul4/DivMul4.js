@@ -1,1 +1,1 @@
-import steps from "./DivMul4-index.js"; const problem = {id: "DivMul4", title: "Solve Equations Using the Multiplication Property of Equality", body: "Solve the eqation", steps: steps, }; export { problem };
+import steps from "./DivMul4-index.js"; const problem = {id: "DivMul4", title: "Solve Equations Using the Multiplication Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}}; export { problem };

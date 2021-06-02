@@ -1,0 +1,1 @@
+import hints from "./logarithmic16a-index.js"; const step = {id: "logarithmic16a", stepAnswer: ["-2.23266"], problemType: "TextBox", stepTitle: "$$log(1/2, 4.7)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

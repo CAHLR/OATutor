@@ -1,0 +1,1 @@
+import hints from "./cramer22a-index.js"; const step = {id: "cramer22a", stepAnswer: ["(-2,3/5,12/5)"], problemType: "MultipleChoice", stepTitle: "x-3*y+7*z=13;\\nx+y+z=1;\\nx-2*y+3*z=4", stepBody: "", choices: ["(-2,3/5,12/5)", "(2,3/5,12/5)", "(3/5,-2,12/5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

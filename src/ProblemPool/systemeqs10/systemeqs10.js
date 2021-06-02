@@ -1,0 +1,1 @@
+import steps from "./systemeqs10-index.js"; const problem = {id: "systemeqs10", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (-1,1) is a solution to the system of equations: $$-\\left(2\\right) x+\\left(5\\right) y=7$$, $$\\left(2\\right) x+\\left(9\\right) y=7$$", steps: steps, variabilization: {}}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./real6-index.js"; const problem = {id: "real6", title: "Distributive Property", body: "", steps: steps, }; export { problem };
+import steps from "./real6-index.js"; const problem = {id: "real6", title: "Distributive Property", body: "", steps: steps, variabilization: {}}; export { problem };

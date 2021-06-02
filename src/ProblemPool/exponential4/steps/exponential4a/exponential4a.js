@@ -1,0 +1,1 @@
+import hints from "./exponential4a-index.js"; const step = {id: "exponential4a", stepAnswer: ["5.5556"], problemType: "TextBox", stepTitle: "Let f(x)=8(1.2)**(x-5). Evaluate f(3) using a calculator. Round to four decimal places.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

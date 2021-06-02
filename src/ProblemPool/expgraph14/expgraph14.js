@@ -1,0 +1,1 @@
+import steps from "./expgraph14-index.js"; const problem = {id: "expgraph14", title: "Solving Exponential Functions", body: "Evaluate the exponential functions for the indicated value of x: $$h(x)=-\\left(\\frac{1}{2}\\right) {\\left(\\frac{1}{2}\\right)}^x+\\left(6\\right)$$ for h(-7)", steps: steps, variabilization: {}}; export { problem };

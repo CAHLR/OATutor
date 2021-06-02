@@ -1,1 +1,1 @@
-import steps from "./use34-index.js"; const problem = {id: "use34", title: "Simplifying Longer Expressions", body: "", steps: steps, }; export { problem };
+import steps from "./use34-index.js"; const problem = {id: "use34", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}}; export { problem };

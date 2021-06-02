@@ -1,0 +1,1 @@
+import steps from "./explog24-index.js"; const problem = {id: "explog24", title: "Using Algebra to Solve a Logarithmic Equation #1", body: "Solve for x.", steps: steps, variabilization: {}}; export { problem };

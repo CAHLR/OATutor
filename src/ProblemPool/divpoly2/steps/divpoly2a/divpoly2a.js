@@ -1,0 +1,1 @@
+import hints from "./divpoly2a-index.js"; const step = {id: "divpoly2a", stepAnswer: ["2x^2+5x-7+1/(3x-2)"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) x^3+\\left(11\\right) x^2-\\left(31\\right) x+\\left(15\\right)$$ by 3x-2", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

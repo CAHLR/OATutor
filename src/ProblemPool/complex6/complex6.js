@@ -1,1 +1,1 @@
-import steps from "./complex6-index.js"; const problem = {id: "complex6", title: "Multiplying a Complex Number by a Real Number", body: "Find the product.", steps: steps, }; export { problem };
+import steps from "./complex6-index.js"; const problem = {id: "complex6", title: "Multiplying a Complex Number by a Real Number", body: "Find the product.", steps: steps, variabilization: {}}; export { problem };

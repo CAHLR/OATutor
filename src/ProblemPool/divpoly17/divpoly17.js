@@ -1,0 +1,1 @@
+import steps from "./divpoly17-index.js"; const problem = {id: "divpoly17", title: "Dividing Polynomials Exercise #8", body: "Use long division to divide. Specify the quotient and the remainder.", steps: steps, variabilization: {}}; export { problem };

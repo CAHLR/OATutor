@@ -1,1 +1,1 @@
-import hints from "./real8a-index.js"; const step = {id: "real8a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "If $$x=0$$.", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./real8a-index.js"; const step = {id: "real8a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "If $$x=0$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

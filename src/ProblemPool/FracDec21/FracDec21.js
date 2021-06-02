@@ -1,1 +1,1 @@
-import steps from "./FracDec21-index.js"; const problem = {id: "FracDec21", title: "Solve Equations with Fraction Coefficients", body: "", steps: steps, }; export { problem };
+import steps from "./FracDec21-index.js"; const problem = {id: "FracDec21", title: "Solve Equations with Fraction Coefficients", body: "", steps: steps, variabilization: {}}; export { problem };

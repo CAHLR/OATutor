@@ -1,0 +1,1 @@
+import hints from "./inv13a-index.js"; const step = {id: "inv13a", stepAnswer: ["/mat{(9,2),(-1,3)}/29"], problemType: "TextBox", stepTitle: "Find the inverse of the matrix $$\\begin{bmatrix} 3 & -2 \\\\ 1 & 9 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

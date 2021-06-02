@@ -1,1 +1,1 @@
-import steps from "./measure6-index.js"; const problem = {id: "measure6", title: "Use Mixed Units of Measurement in the U.S. System", body: "", steps: steps, }; export { problem };
+import steps from "./measure6-index.js"; const problem = {id: "measure6", title: "Use Mixed Units of Measurement in the U.S. System", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./chemical4a-index.js"; const step = {id: "chemical4a", stepAnswer: ["hydrogen bond"], problemType: "MultipleChoice", stepTitle: "Which type of bond represents a weak chemical bond?", stepBody: "", choices: ["hydrogen bond", "atomic bond", "covalent bond", "nonpolar covalent bond"], answerType: "string", hints: hints, variabilization: {}}; export {step};

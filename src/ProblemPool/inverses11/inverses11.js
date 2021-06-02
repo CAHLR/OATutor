@@ -1,0 +1,1 @@
+import steps from "./inverses11-index.js"; const problem = {id: "inverses11", title: "Factoring a Difference of Squares", body: "", steps: steps, variabilization: {}}; export { problem };

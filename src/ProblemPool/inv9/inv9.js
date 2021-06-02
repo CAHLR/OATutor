@@ -1,0 +1,1 @@
+import steps from "./inv9-index.js"; const problem = {id: "inv9", title: "Solving a 3x3 System Using the Inverse of a Matrix #3", body: "Solve the given system of equations using the inverse of a matrix.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./divpoly8-index.js"; const problem = {id: "divpoly8", title: "Using Synthetic Division to Divide Polynomials", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./logprop1-index.js"; const problem = {id: "logprop1", title: "Using the Product Rule for Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}}; export { problem };

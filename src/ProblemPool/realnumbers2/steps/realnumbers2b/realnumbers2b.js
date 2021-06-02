@@ -1,1 +1,1 @@
-import hints from "./realnumbers2b-index.js"; const step = {id: "realnumbers2b", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\sqrt{169}$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./realnumbers2b-index.js"; const step = {id: "realnumbers2b", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\sqrt{169}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

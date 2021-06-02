@@ -1,0 +1,1 @@
+import steps from "./graphlog7-index.js"; const problem = {id: "graphlog7", title: "Domain and range of log functions", body: "What is the domain and range of $$f(x)=\\log_{2}(12-3x)-3$$?", steps: steps, variabilization: {}}; export { problem };

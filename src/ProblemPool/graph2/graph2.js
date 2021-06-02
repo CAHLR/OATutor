@@ -1,0 +1,1 @@
+import steps from "./graph2-index.js"; const problem = {id: "graph2", title: "Finding the x-Intercepts of a Polynomial Function by Factoring #2", body: "Finding the x-Intercepts of a Polynomial Function by Factoring #2", steps: steps, variabilization: {}}; export { problem };

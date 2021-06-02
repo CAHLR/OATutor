@@ -1,1 +1,1 @@
-import hints from "./use11a-index.js"; const step = {id: "use11a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) x^2+\\left(4\\right) x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints}; export {step};
+import hints from "./use11a-index.js"; const step = {id: "use11a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) x^2+\\left(4\\right) x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

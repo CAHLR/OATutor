@@ -1,0 +1,1 @@
+import hints from "./expolog3a-index.js"; const step = {id: "expolog3a", stepAnswer: ["13301"], problemType: "TextBox", stepTitle: "To the nearest year, how old is the bone?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./domain8-index.js"; const problem = {id: "domain8", title: "Finding the Domain and Range Using Toolkit Functions", body: "Find the domain and range of $$f(x)=\\left(2\\right) x^3-x$$.", steps: steps, }; export { problem };
+import steps from "./domain8-index.js"; const problem = {id: "domain8", title: "Finding the Domain and Range Using Toolkit Functions", body: "Find the domain and range of $$f(x)=\\left(2\\right) x^3-x$$.", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./expolog9a-index.js"; const step = {id: "expolog9a", stepAnswer: ["107"], problemType: "TextBox", stepTitle: "If we must wait until the cheesecake has cooled to 70°F before we eat it, how long will we have to wait? (round to the nearest whole number in minutes)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

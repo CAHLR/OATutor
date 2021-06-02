@@ -1,0 +1,1 @@
+import steps from "./inverses13-index.js"; const problem = {id: "inverses13", title: "Factoring a Sum of Cubes", body: "", steps: steps, variabilization: {}}; export { problem };

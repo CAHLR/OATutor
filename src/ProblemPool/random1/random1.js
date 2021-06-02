@@ -1,0 +1,1 @@
+import steps from "./random1-index.js"; const problem = {id: "random1", title: "Randomness", body: "", steps: steps, variabilization: {}}; export { problem };

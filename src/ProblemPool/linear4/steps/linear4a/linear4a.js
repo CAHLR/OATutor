@@ -1,0 +1,1 @@
+import hints from "./linear4a-index.js"; const step = {id: "linear4a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$\\frac{\\left(-x\\right)-\\left(35\\right)}{2}$$ $$=$$ y", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

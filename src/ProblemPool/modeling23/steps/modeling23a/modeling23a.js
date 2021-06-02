@@ -1,0 +1,1 @@
+import hints from "./modeling23a-index.js"; const step = {id: "modeling23a", stepAnswer: ["y=18/x^2"], problemType: "TextBox", stepTitle: "y varies inversely as the square of x and when $$x=3$$, $$y=2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

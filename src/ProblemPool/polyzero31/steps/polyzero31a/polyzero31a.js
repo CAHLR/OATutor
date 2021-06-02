@@ -1,0 +1,1 @@
+import hints from "./polyzero31a-index.js"; const step = {id: "polyzero31a", stepAnswer: ["-5*x^4-5*x^3+25*x^2-5*x+30"], problemType: "TextBox", stepTitle: "Find a fourth degree polynomial with real coefficients that has zeros of -3, 2, i, such that $$f(-2)=100$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "arrayarith1c-h1", type: "hint", dependencies: [], title: "Pattern", text: "Notice that your job is really easy if you previously defined an array containing the 4 numbers.", variabilization: {}}, ]; export {hints};
