@@ -1,1 +1,1 @@
-import hints from "./RadRat18a-index.js"; const step = {id: "RadRat18a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "What is $$sqrt(4,16)?$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./RadRat18a-index.js"; const step = {id: "RadRat18a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "What is $$sqrt(4,16)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

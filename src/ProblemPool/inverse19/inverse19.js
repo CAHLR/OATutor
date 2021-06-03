@@ -1,1 +1,1 @@
-import steps from "./inverse19-index.js"; const problem = {id: "inverse19", title: "Testing Inverse Functions Algebraically", body: "Yes or No: Does $$g=f^{\\left(-1\\right)}$$?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverse19-index.js"; const problem = {id: "inverse19", title: "Testing Inverse Functions Algebraically", body: "Yes or No: Does $$g=f^{-0.}$$?", steps: steps, variabilization: {}}; export { problem };
