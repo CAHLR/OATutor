@@ -1,1 +1,1 @@
-import steps from "./assignments1-index.js"; const problem = {id: "assignments1", title: "Print Error", body: "x = print(5) \\ny = x + 2", steps: steps, variabilization: {}}; export { problem };
+import steps from "./assignments1-index.js"; const problem = {id: "assignments1", title: "Print Error", body: "x = print(5) \\n y = x + 2", steps: steps, variabilization: {}}; export { problem };

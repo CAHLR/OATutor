@@ -1,1 +1,1 @@
-import hints from "./logarithmic12a-index.js"; const step = {id: "logarithmic12a", stepAnswer: ["a/b-1"], problemType: "TextBox", stepTitle: "$$log(11,6/11)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./logarithmic12a-index.js"; const step = {id: "logarithmic12a", stepAnswer: ["a/b-1"], problemType: "TextBox", stepTitle: "$$log(11,\\frac{6}{11})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

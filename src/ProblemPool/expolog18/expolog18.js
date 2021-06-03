@@ -1,1 +1,1 @@
-import steps from "./expolog18-index.js"; const problem = {id: "expolog18", title: "Fish Population", body: "P(t)=1000/(1+9e**(-0.6t)) represents the population of fish.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./expolog18-index.js"; const problem = {id: "expolog18", title: "Fish Population", body: "$$P(t)=\\frac{1000}{\\left(1\\right)+\\left(9\\right) e^{-0.6 t}}$$ represents the population of fish.", steps: steps, variabilization: {}}; export { problem };

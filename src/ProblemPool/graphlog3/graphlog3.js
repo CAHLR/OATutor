@@ -1,1 +1,1 @@
-import steps from "./graphlog3-index.js"; const problem = {id: "graphlog3", title: "Domain, range, and asymptotes of log functions", body: "What is the domain, range, and asymptote of the function $$\\log_{3}(x+4)$$?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./graphlog3-index.js"; const problem = {id: "graphlog3", title: "Domain, range, and asymptotes of log functions", body: "What is the domain, range, and asymptote of the function $$\\log_{3}(x+\\left(4\\right))$$?", steps: steps, variabilization: {}}; export { problem };
