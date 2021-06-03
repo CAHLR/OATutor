@@ -119,6 +119,15 @@ class Platform extends React.Component {
     }
 
     chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
+
+    var objectives = Object.keys(this.lesson.learningObjectives);
+    objectives.unshift(0);
+    console.log(objectives)
+    var score = objectives.reduce((x, y) => {
+      return x + context.bktParams[y].probMastery
+    });
+    score /= objectives.length - 1;
+    this.displayMastery(score);
     //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
     // There exists a skill that has not yet been mastered (a True)
@@ -148,6 +157,13 @@ class Platform extends React.Component {
     return this._nextProblem(context);
   }
 
+  displayMastery = (mastery) => {
+    var MASTERED = 0.95;
+    var score = Math.min(mastery / (MASTERED - 0.1), 1.0);
+    this.setState({ mastery: score });
+    this.props.saveProgress();
+  }
+
   render() {
     return (
       <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
@@ -156,18 +172,19 @@ class Platform extends React.Component {
             <Grid container spacing={0}>
               <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS</div></Grid>
               <Grid item xs={6} key={2}>
-              <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
-                {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
+                <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
+                  {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
                 </div></Grid>
               <Grid item xs={3} key={3} >
-              <div style={{ textAlign: 'right' }}>
-                {true ?
-                  <Router>
-                    <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
-                      <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                    </NavLink>
-                  </Router> : ""}
-                  </div>
+                <div style={{ textAlign: 'right' }}>
+                  {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection" ? "Mastery: " + Math.round(this.state.mastery * 100) + "%" : ""}
+                  {false ?
+                    <Router>
+                      <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
+                        <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+                      </NavLink>
+                    </Router> : ""}
+                </div>
               </Grid>
             </Grid>
 
@@ -178,7 +195,7 @@ class Platform extends React.Component {
         {this.state.status === "lessonSelection" ?
           <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} courseNum={this.props.courseNum} /> : ""}
         {this.state.status === "learning" ?
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum} /> : ""}
+          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum} displayMastery={this.displayMastery} /> : ""}
         {this.state.status === "exhausted" ?
           <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
         {this.state.status === "graduated" ?
