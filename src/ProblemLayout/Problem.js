@@ -86,6 +86,7 @@ class Problem extends React.Component {
       });
       score /= objectives.length - 1;
       //console.log(this.context.studentName + " " + score);
+      this.props.displayMastery(score);
 
       var relevantKc = {}
       Object.keys(this.props.lesson.learningObjectives).map(x => {

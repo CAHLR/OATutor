@@ -66,6 +66,29 @@ var lessonMapping = {
   "OpenITS Lesson 7.6" : "54",
   "OpenITS Lesson 7.7" : "55",
   "OpenITS Lesson 7.8" : "56",
+  "Elementary Algebra Lesson 1.1" : "57",
+  "Elementary Algebra Lesson 1.2" : "58",
+  "Elementary Algebra Lesson 1.3" : "59",
+  "Elementary Algebra Lesson 1.4" : "60",
+  "Elementary Algebra Lesson 1.5" : "61",
+  "Elementary Algebra Lesson 1.6" : "62",
+  "Elementary Algebra Lesson 1.7" : "63",
+  "Elementary Algebra Lesson 1.8" : "64",
+  "Elementary Algebra Lesson 1.9" : "65",
+  "Elementary Algebra Lesson 1.10" : "66",
+  "Elementary Algebra Lesson 2.1" : "67",
+  "Elementary Algebra Lesson 2.2" : "68",
+  "Elementary Algebra Lesson 2.3" : "69",
+  "Elementary Algebra Lesson 2.4" : "70",
+  "Elementary Algebra Lesson 2.5" : "71",
+  "Elementary Algebra Lesson 2.6" : "72",
+  "Elementary Algebra Lesson 2.7" : "73",
+  "Elementary Algebra Lesson 3.1" : "74",
+  "Elementary Algebra Lesson 3.2" : "75",
+  "Elementary Algebra Lesson 3.3" : "76",
+  "Elementary Algebra Lesson 3.4" : "77",
+  "Elementary Algebra Lesson 3.5" : "78",
+  "Elementary Algebra Lesson 3.6" : "79",
 }
 
 function getRandomInt(min, max) {
@@ -163,7 +186,12 @@ app.post('/grade', function (req, res) {
     return;
   }
   var payload = "<h1> Component Breakdown </h1> <br/>";
-  payload += "<h3> Overall score: " + req.body.score + "</h3>"
+
+  // Calculate overall score
+  var score = req.body.score;
+  var MASTERED = 0.95;
+  score = Math.round(Math.min(mastery / (MASTERED - 0.1), 1.0) * 100);
+  payload += "<h3> Overall score: " + score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
     // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
     var r = Math.round(parseFloat(req.body.components[key]) * 10)
