@@ -170,7 +170,7 @@ class Platform extends React.Component {
         <AppBar position="static" >
           <Toolbar>
             <Grid container spacing={0}>
-              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS</div></Grid>
+              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS (v{this.context.siteVersion})</div></Grid>
               <Grid item xs={6} key={2}>
                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
                   {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
