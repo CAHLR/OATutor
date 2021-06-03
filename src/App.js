@@ -109,6 +109,7 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <ThemeContext.Provider value={{
+          siteVersion: siteVersion,
           userID: this.userID,
           firebase: this.firebase,
           logData: logData,
@@ -124,7 +125,7 @@ class App extends React.Component {
           autoOperatorNames: autoOperatorNames,
           studentName: '',
           middlewareURL: middlewareURL,
-          problemIDs: null
+          problemIDs: null,
         }}>
           <Router>
             <div className="Router">
