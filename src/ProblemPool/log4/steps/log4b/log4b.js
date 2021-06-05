@@ -1,1 +1,1 @@
-import hints from "./log4b-index.js"; const step = {id: "log4b", stepAnswer: ["log{5}(125)=3"], problemType: "MultipleChoice", stepTitle: "$${\\left(5\\right)}^3=125$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./log4b-index.js"; const step = {id: "log4b", stepAnswer: ["log{5}{125}=3"], problemType: "MultipleChoice", stepTitle: "$${\\left(5\\right)}^3=125$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./graphlog2-index.js"; const problem = {id: "graphlog2", title: "Identifying the Domain of a Logarithmic Shift", body: "What is the domain for $$f(x)=log(5-2x)$$?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./graphlog2-index.js"; const problem = {id: "graphlog2", title: "Identifying the Domain of a Logarithmic Shift", body: "What is the domain for $$f(x)=log \\left(\\left(5\\right)-\\left(2\\right) x\\right)$$?", steps: steps, variabilization: {}}; export { problem };

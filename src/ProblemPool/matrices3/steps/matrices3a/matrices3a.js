@@ -1,1 +1,1 @@
-import hints from "./matrices3a-index.js"; const step = {id: "matrices3a", stepAnswer: ["/mat{(1,14),(86,109),(27,10)}"], problemType: "MultipleChoice", stepTitle: "$$C+F$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./matrices3a-index.js"; const step = {id: "matrices3a", stepAnswer: ["/mat{(1,14),(86,109),(27,10)}"], problemType: "TextBox", stepTitle: "$$C+F$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
