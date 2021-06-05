@@ -1,1 +1,1 @@
-import hints from "./logprop2a-index.js"; const step = {id: "logprop2a", stepAnswer: ["log{b}(8)+log{b}(k)"], problemType: "TextBox", stepTitle: "Expand $$\\log_{b}(8k)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./logprop2a-index.js"; const step = {id: "logprop2a", stepAnswer: ["log{b}{8}+log{b}{k}"], problemType: "TextBox", stepTitle: "Expand $$\\log_{b}\\left(8k\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

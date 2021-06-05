@@ -1,1 +1,1 @@
-import hints from "./quad27a-index.js"; const step = {id: "quad27a", stepAnswer: ["-3, -5"], problemType: "TextBox", stepTitle: "$$x^2+\\left(8\\right) x+\\left(15\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./quad27a-index.js"; const step = {id: "quad27a", stepAnswer: ["-3, -5"], problemType: "TextBox", stepTitle: "$$x^2+\\left(8\\right) x+\\left(15\\right)=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

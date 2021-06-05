@@ -1,1 +1,1 @@
-import hints from "./log8a-index.js"; const step = {id: "log8a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$y=\\log_{2}(\\frac{1}{32})$$", stepBody: "$$y=\\log_{2}(\\frac{1}{32})$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./log8a-index.js"; const step = {id: "log8a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$y=\\log_{2}\\left(\\frac{1}{32}\\right)$$", stepBody: "$$y=\\log_{2}\\left(\\frac{1}{32}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

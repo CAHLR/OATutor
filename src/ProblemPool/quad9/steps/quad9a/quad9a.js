@@ -1,1 +1,1 @@
-import hints from "./quad9a-index.js"; const step = {id: "quad9a", stepAnswer: ["0, -2/3, -1"], problemType: "TextBox", stepTitle: "$$-\\left(3\\right) x^3-\\left(5\\right) x^2-\\left(2\\right) x=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./quad9a-index.js"; const step = {id: "quad9a", stepAnswer: ["0, -2/3, -1"], problemType: "TextBox", stepTitle: "$$-\\left(3\\right) x^3-\\left(5\\right) x^2-\\left(2\\right) x=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

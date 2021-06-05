@@ -157,9 +157,9 @@ class Platform extends React.Component {
     return this._nextProblem(context);
   }
 
-  displayMastery = (mastery) => {
-    var MASTERED = 0.95;
-    var score = Math.min(mastery / (MASTERED - 0.1), 1.0);
+  displayMastery = (mastery) => { //TODO fix
+    var MASTERED = 0.85;
+    var score = Math.min(mastery / (MASTERED), 1.0);
     this.setState({ mastery: score });
     this.props.saveProgress();
   }

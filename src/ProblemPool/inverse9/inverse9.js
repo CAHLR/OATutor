@@ -1,1 +1,1 @@
-import steps from "./inverse9-index.js"; const problem = {id: "inverse9", title: "Intercepts", body: "Find the intercepts of the function $$f(x)=sqrt(3,\\left(3\\right) x+\\left(1\\right))$$.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverse9-index.js"; const problem = {id: "inverse9", title: "Intercepts", body: "Find the intercepts of the function $$f(x)=\\sqrt{\\left(33\\right) x+\\left(1\\right)}$$.", steps: steps, variabilization: {}}; export { problem };

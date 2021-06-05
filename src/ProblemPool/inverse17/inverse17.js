@@ -1,1 +1,1 @@
-import steps from "./inverse17-index.js"; const problem = {id: "inverse17", title: "Determining Inverse Relationships for Power Functions", body: "Yes or No: Does $$g=f^{-0.}$$?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverse17-index.js"; const problem = {id: "inverse17", title: "Determining Inverse Relationships for Power Functions", body: "Yes or No: Does $$g=f^{\\left(-1\\right)}$$?", steps: steps, variabilization: {}}; export { problem };
