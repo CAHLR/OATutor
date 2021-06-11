@@ -1,1 +1,1 @@
-import hints from "./partfrac10a-index.js"; const step = {id: "partfrac10a", stepAnswer: ["(8/(x-3))-(5/(x-2))"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./partfrac10a-index.js"; const step = {id: "partfrac10a", stepAnswer: ["$$\\frac{8}{x-\\left(3\\right)}-\\frac{5}{x-\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

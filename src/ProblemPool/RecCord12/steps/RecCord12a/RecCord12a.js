@@ -1,1 +1,1 @@
-import hints from "./RecCord12a-index.js"; const step = {id: "RecCord12a", stepAnswer: ["sqrt(74)"], problemType: "TextBox", stepTitle: "Find the distance between the points (-4,1) and (3,-4).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./RecCord12a-index.js"; const step = {id: "RecCord12a", stepAnswer: ["$$\\sqrt{74}$$"], problemType: "TextBox", stepTitle: "Find the distance between the points (-4,1) and (3,-4).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

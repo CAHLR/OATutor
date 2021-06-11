@@ -1,1 +1,1 @@
-import hints from "./partfrac18a-index.js"; const step = {id: "partfrac18a", stepAnswer: ["2/(x+4)-3/(x-6)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./partfrac18a-index.js"; const step = {id: "partfrac18a", stepAnswer: ["$$\\frac{2}{x+\\left(4\\right)}-\\frac{3}{x-\\left(6\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

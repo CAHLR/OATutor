@@ -1,1 +1,1 @@
-import hints from "./SubAdd17i-index.js"; const step = {id: "SubAdd17i", stepAnswer: ["x=-255"], problemType: "TextBox", stepTitle: "$$x-165=-420$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd17i-index.js"; const step = {id: "SubAdd17i", stepAnswer: ["$$x=-255$$"], problemType: "TextBox", stepTitle: "$$x-165=-420$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

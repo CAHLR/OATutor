@@ -1,1 +1,1 @@
-import hints from "./Visualize2a-index.js"; const step = {id: "Visualize2a", stepAnswer: ["-7/9"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(42\\right)}{54}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Visualize2a-index.js"; const step = {id: "Visualize2a", stepAnswer: ["$$\\frac{-\\left(7\\right)}{9}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(42\\right)}{54}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

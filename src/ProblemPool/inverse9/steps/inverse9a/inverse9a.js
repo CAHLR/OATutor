@@ -1,1 +1,1 @@
-import hints from "./inverse9a-index.js"; const step = {id: "inverse9a", stepAnswer: ["-1/3"], problemType: "TextBox", stepTitle: "X-Intercept", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./inverse9a-index.js"; const step = {id: "inverse9a", stepAnswer: ["$$\\frac{-\\left(1\\right)}{3}$$"], problemType: "TextBox", stepTitle: "X-Intercept", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./addand5a-index.js"; const step = {id: "addand5a", stepAnswer: ["31/36"], problemType: "TextBox", stepTitle: "$$\\frac{7}{12}+\\frac{5}{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./addand5a-index.js"; const step = {id: "addand5a", stepAnswer: ["$$\\frac{31}{36}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{12}+\\frac{5}{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

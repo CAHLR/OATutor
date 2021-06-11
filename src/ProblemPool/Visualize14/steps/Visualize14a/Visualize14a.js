@@ -1,1 +1,1 @@
-import hints from "./Visualize14a-index.js"; const step = {id: "Visualize14a", stepAnswer: ["4/5"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{3}}{\\frac{5}{6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Visualize14a-index.js"; const step = {id: "Visualize14a", stepAnswer: ["$$\\frac{4}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{3}}{\\frac{5}{6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

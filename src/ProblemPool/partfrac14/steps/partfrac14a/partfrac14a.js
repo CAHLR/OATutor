@@ -1,1 +1,1 @@
-import hints from "./partfrac14a-index.js"; const step = {id: "partfrac14a", stepAnswer: ["(4/x)-(3/(2(x+1))+7/(2*(3x+2)^2)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./partfrac14a-index.js"; const step = {id: "partfrac14a", stepAnswer: ["(4/x)-(3/(2(x+1))+7/(2*(3x+2)**2)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

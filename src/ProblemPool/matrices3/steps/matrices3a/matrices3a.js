@@ -1,1 +1,1 @@
-import hints from "./matrices3a-index.js"; const step = {id: "matrices3a", stepAnswer: ["/mat{(1,14),(86,109),(27,10)}"], problemType: "TextBox", stepTitle: "$$C+F$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./matrices3a-index.js"; const step = {id: "matrices3a", stepAnswer: ["$$\\begin{bmatrix} 1 & 14 \\\\ 86 & 109 \\\\ 27 & 10 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$C+F$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

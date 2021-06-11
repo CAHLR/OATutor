@@ -1,1 +1,1 @@
-import hints from "./matrices6a-index.js"; const step = {id: "matrices6a", stepAnswer: ["/mat{(20,102),(28,28)}"], problemType: "TextBox", stepTitle: "BC", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./matrices6a-index.js"; const step = {id: "matrices6a", stepAnswer: ["$$\\begin{bmatrix} 20 & 102 \\\\ 28 & 28 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "BC", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./composition17d-index.js"; const step = {id: "composition17d", stepAnswer: ["(-3x^2+x)/5"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./composition17d-index.js"; const step = {id: "composition17d", stepAnswer: ["$$\\frac{\\left(-3\\right) x^2+x}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

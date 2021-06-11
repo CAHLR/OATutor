@@ -1,1 +1,1 @@
-import hints from "./Visualize4a-index.js"; const step = {id: "Visualize4a", stepAnswer: ["-23/40"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(69\\right)}{120}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Visualize4a-index.js"; const step = {id: "Visualize4a", stepAnswer: ["$$\\frac{-\\left(23\\right)}{40}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(69\\right)}{120}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

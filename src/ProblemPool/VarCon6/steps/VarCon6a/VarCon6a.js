@@ -1,1 +1,1 @@
-import hints from "./VarCon6a-index.js"; const step = {id: "VarCon6a", stepAnswer: ["37/3"], problemType: "TextBox", stepTitle: "$$3m-18=19$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon6a-index.js"; const step = {id: "VarCon6a", stepAnswer: ["$$\\frac{37}{3}$$"], problemType: "TextBox", stepTitle: "$$3m-18=19$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
