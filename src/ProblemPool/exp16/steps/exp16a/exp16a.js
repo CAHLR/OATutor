@@ -1,1 +1,1 @@
-import hints from "./exp16a-index.js"; const step = {id: "exp16a", stepAnswer: ["b^15/c^3"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{b^5}{c}\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp16a-index.js"; const step = {id: "exp16a", stepAnswer: ["$$\\frac{b^{15}}{c^3}$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{b^5}{c}\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

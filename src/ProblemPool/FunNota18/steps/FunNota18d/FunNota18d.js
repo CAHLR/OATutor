@@ -1,1 +1,1 @@
-import hints from "./FunNota18d-index.js"; const step = {id: "FunNota18d", stepAnswer: ["(1-6a)/(5a+2)"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./FunNota18d-index.js"; const step = {id: "FunNota18d", stepAnswer: ["$$\\frac{\\left(1\\right)-\\left(6\\right) a}{\\left(5\\right) a+\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./rate16a-index.js"; const step = {id: "rate16a", stepAnswer: ["-1/3"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{x}$$ on [1,3]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./rate16a-index.js"; const step = {id: "rate16a", stepAnswer: ["$$\\frac{-\\left(1\\right)}{3}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{x}$$ on [1,3]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

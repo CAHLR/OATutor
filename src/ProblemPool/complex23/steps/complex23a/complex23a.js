@@ -1,1 +1,1 @@
-import hints from "./complex23a-index.js"; const step = {id: "complex23a", stepAnswer: ["2-i sqrt(5)"], problemType: "TextBox", stepTitle: "$$\\left(2\\right)+i$$ $$\\sqrt{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./complex23a-index.js"; const step = {id: "complex23a", stepAnswer: ["2-i $$\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "$$\\left(2\\right)+i$$ $$\\sqrt{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

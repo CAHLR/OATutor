@@ -1,1 +1,1 @@
-import hints from "./exp9b-index.js"; const step = {id: "exp9b", stepAnswer: ["1/z"], problemType: "TextBox", stepTitle: "$$\\frac{z^2 z}{z^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp9b-index.js"; const step = {id: "exp9b", stepAnswer: ["$$\\frac{1}{z}$$"], problemType: "TextBox", stepTitle: "$$\\frac{z^2 z}{z^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

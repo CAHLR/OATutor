@@ -29,7 +29,6 @@
 <link rel="alternate" type="application/json+oembed" href="https://ibb.co/dPd6BtD/oembed.json" title="Table — ImgBB">
 <link rel="alternate" type="application/xml+oembed" href="https://ibb.co/dPd6BtD/oembed.xml" title="Table — ImgBB">
 <link rel="image_src" href="https://i.ibb.co/gS5wydJ/Table.png">
-<script async src="https://cdn.siteswithcontent.com/js/push/subscribe.js?v=1.1.0"></script>
 </head>
 <body id="image" class=" no-margin-top">
 <header id="top-bar" class="top-bar white">
@@ -90,7 +89,7 @@ image_viewer_full_fix();document.addEventListener('DOMContentLoaded',function(ev
 </div>
 </div>
 <h1 class="viewer-title" data-text="image-title">Table</h1>
-<center><div id="M346803ScriptRootC824709" style="max-width:1024px"></div></center><div class="header"><div class="phone-show hidden tab-menu current" data-action="tab-menu"><span data-content="current-tab-label">About</span><span class="icon icon-menu4 margin-left-5"></span></div>
+<div class="header"><div class="phone-show hidden tab-menu current" data-action="tab-menu"><span data-content="current-tab-label">About</span><span class="icon icon-menu4 margin-left-5"></span></div>
 <ul class="content-tabs phone-hide">
 <li class=" current"><a id="tab-about-link" data-tab="tab-about" href="">About</a></li><li class=" "><a id="tab-codes-link" data-tab="tab-codes" href="">Embed codes</a></li></ul>
 <div class="header-content-right"><div class="number-figures float-left">1 <span>view</span></div></div></div>
@@ -176,11 +175,11 @@ PF.fn.window_to_device = window.window_to_device;
 PF.obj.config.base_url="https://ibb.co";
 PF.obj.config.json_api="https://ibb.co/json";
 PF.obj.config.listing.items_per_page="32";
-PF.obj.config.auth_token="887a05b54b50ad69f9ded19e039e97ef52d1e94a";
+PF.obj.config.auth_token="721983b6c7e38377261aea59e8cf5e5cd5ba6449";
 PF.obj.l10n=[];
 if(typeof CHV=="undefined"){CHV={obj:{},fn:{},str:{}};}
 CHV.obj.embed_tpl={"links":{"label":"Links","options":{"viewer-links":{"label":"Viewer links","template":"%URL_VIEWER%","size":"viewer"}}},"html-codes":{"label":"HTML Codes","options":{"html-embed-medium":{"label":"HTML full linked","template":"<a href=\"%URL_VIEWER_PREVIEW%\"><img src=\"%MEDIUM_URL%\" alt=\"%MEDIUM_NAME%\" border=\"0\"><\/a>","size":"medium"},"html-embed-thumbnail":{"label":"HTML thumbnail linked","template":"<a href=\"%URL_VIEWER_THUMB%\"><img src=\"%THUMB_URL%\" alt=\"%THUMB_NAME%\" border=\"0\"><\/a>","size":"thumb"}}},"bbcodes":{"label":"BBCodes","options":{"bbcode-embed-medium":{"label":"BBCode full linked","template":"[url=%URL_VIEWER_PREVIEW%][img]%MEDIUM_URL%[\/img][\/url]","size":"medium"},"bbcode-embed-thumbnail":{"label":"BBCode thumbnail linked","template":"[url=%URL_VIEWER_THUMB%][img]%THUMB_URL%[\/img][\/url]","size":"thumb"}}}};
 CHV.obj.config={"image":{"max_filesize":32000000,"load_max_filesize":4000000},"upload":{"image_types":["jpg","png","bmp","gif","tif","webp","heic","pdf","jpeg","tiff","heif"]},"listing":{"viewer":true}};CHV.obj.resource={"id":"dPd6BtD","type":"image","url":"https:\/\/ibb.co\/dPd6BtD","parent_url":""};});
 </script>
-<script async="async" data-cfasync="false" src="https://jsc.mgid.com/i/b/ibb.co.824709.js"></script></body>
+</body>
 </html>

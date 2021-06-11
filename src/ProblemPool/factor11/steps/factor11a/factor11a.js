@@ -1,1 +1,1 @@
-import hints from "./factor11a-index.js"; const step = {id: "factor11a", stepAnswer: ["(2x-5)(4x^2 + 10x + 25)"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) x^3-\\left(125\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./factor11a-index.js"; const step = {id: "factor11a", stepAnswer: ["(2x-5)(4x**2 + 10x + 25)"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) x^3-\\left(125\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

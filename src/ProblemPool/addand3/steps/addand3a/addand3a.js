@@ -1,1 +1,1 @@
-import hints from "./addand3a-index.js"; const step = {id: "addand3a", stepAnswer: ["-14/x"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(10\\right)}{x}-\\frac{4}{x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./addand3a-index.js"; const step = {id: "addand3a", stepAnswer: ["$$\\frac{-\\left(14\\right)}{x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(10\\right)}{x}-\\frac{4}{x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

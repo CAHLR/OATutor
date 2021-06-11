@@ -1,1 +1,1 @@
-import hints from "./modeling5a-index.js"; const step = {id: "modeling5a", stepAnswer: ["128/3"], problemType: "TextBox", stepTitle: "If $$y=24$$ when $$x=3$$, find y when x is 4.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./modeling5a-index.js"; const step = {id: "modeling5a", stepAnswer: ["$$\\frac{128}{3}$$"], problemType: "TextBox", stepTitle: "If $$y=24$$ when $$x=3$$, find y when x is 4.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

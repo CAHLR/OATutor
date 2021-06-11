@@ -1,1 +1,1 @@
-import hints from "./composition16d-index.js"; const step = {id: "composition16d", stepAnswer: ["(x^2+2x)/(6-x^2)"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./composition16d-index.js"; const step = {id: "composition16d", stepAnswer: ["$$\\frac{x^2+\\left(2\\right) x}{\\left(6\\right)-x^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./exp18a-index.js"; const step = {id: "exp18a", stepAnswer: ["7.158*10^9"], problemType: "TextBox", stepTitle: "World population (April 2014): 7,158,000,000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp18a-index.js"; const step = {id: "exp18a", stepAnswer: ["$$\\left(7.158\\right) {\\left(10\\right)}^9$$"], problemType: "TextBox", stepTitle: "World population (April 2014): 7,158,000,000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

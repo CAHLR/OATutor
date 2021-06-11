@@ -1,1 +1,1 @@
-import hints from "./FunNota19c-index.js"; const step = {id: "FunNota19c", stepAnswer: ["abs(-a-1)-abs(-a+1)"], problemType: "TextBox", stepTitle: "f(-a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./FunNota19c-index.js"; const step = {id: "FunNota19c", stepAnswer: ["$$|\\left(-a\\right)-\\left(1\\right)|-|\\left(-a\\right)+\\left(1\\right)|$$"], problemType: "TextBox", stepTitle: "f(-a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

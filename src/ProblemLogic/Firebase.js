@@ -2,6 +2,7 @@ import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
+var problemSubmissionsOutputDev = "problemSubmissionsSum21Dev";
 var problemSubmissionsOutput = "problemSubmissionsSum21";
 var feedbackOutput = "feedbackSum21";
 
@@ -46,12 +47,13 @@ class Firebase {
 
   _getDate() {
     var today = new Date();
-    return (today.getMonth() + 1) + '-' +
-      today.getDate() + '-' +
+    return (
+      ("0" + (today.getMonth()+ 1)).slice(-2) + '-' +
+      ("0" + today.getDate()).slice(-2) + '-' +
       today.getFullYear() + " " +
-      today.getHours() + ":" +
-      today.getMinutes() + ":" +
-      (today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds())
+      ("0" + today.getHours()).slice(-2) + ":" +
+      ("0" + today.getMinutes()).slice(-2) + ":" +
+      ("0" + today.getSeconds()).slice(-2))
   }
 
   log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, canvasStudentID) {
@@ -76,6 +78,9 @@ class Firebase {
       variablization: variabilization
     }
     //console.log(data);
+    if (canvasStudentID == null || canvasStudentID === "") {
+      return this.writeData(problemSubmissionsOutputDev, date, data);
+    }
     return this.writeData(problemSubmissionsOutput, date, data);
   }
 
@@ -99,6 +104,9 @@ class Firebase {
       hintsFinished: hintsFinished,
       canvasStudentID: canvasStudentID || null,
       variablization: variabilization
+    }
+    if (canvasStudentID == null || canvasStudentID === "") {
+      return this.writeData(problemSubmissionsOutputDev, date, data);
     }
     return this.writeData(problemSubmissionsOutput, date, data);
   }

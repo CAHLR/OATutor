@@ -1,1 +1,1 @@
-import hints from "./SubAdd29a-index.js"; const step = {id: "SubAdd29a", stepAnswer: ["x=31"], problemType: "TextBox", stepTitle: "Ten more than x is equal to 41.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd29a-index.js"; const step = {id: "SubAdd29a", stepAnswer: ["$$x=31$$"], problemType: "TextBox", stepTitle: "Ten more than x is equal to 41.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

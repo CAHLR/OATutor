@@ -1,1 +1,1 @@
-import hints from "./VarCon24a-index.js"; const step = {id: "VarCon24a", stepAnswer: ["-5/3"], problemType: "TextBox", stepTitle: "$$7a-3=\\left(13\\right) a+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon24a-index.js"; const step = {id: "VarCon24a", stepAnswer: ["$$\\frac{-\\left(5\\right)}{3}$$"], problemType: "TextBox", stepTitle: "$$7a-3=\\left(13\\right) a+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

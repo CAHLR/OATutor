@@ -1,1 +1,1 @@
-import hints from "./exponential21a-index.js"; const step = {id: "exponential21a", stepAnswer: ["6(5)^x"], problemType: "TextBox", stepTitle: "(0,6) and (3,750)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponential21a-index.js"; const step = {id: "exponential21a", stepAnswer: ["$$\\left(6\\right) {\\left(5\\right)}^x$$"], problemType: "TextBox", stepTitle: "(0,6) and (3,750)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

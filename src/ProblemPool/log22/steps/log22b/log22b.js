@@ -1,1 +1,1 @@
-import hints from "./log22b-index.js"; const step = {id: "log22b", stepAnswer: ["13^a=142"], problemType: "TextBox", stepTitle: "log base 13 of 142 $$=$$ a", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./log22b-index.js"; const step = {id: "log22b", stepAnswer: ["$${\\left(13\\right)}^a=142$$"], problemType: "TextBox", stepTitle: "log base 13 of 142 $$=$$ a", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

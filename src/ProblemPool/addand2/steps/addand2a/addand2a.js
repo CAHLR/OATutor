@@ -1,1 +1,1 @@
-import hints from "./addand2a-index.js"; const step = {id: "addand2a", stepAnswer: ["-3/2"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(23\\right)}{24}-\\frac{13}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./addand2a-index.js"; const step = {id: "addand2a", stepAnswer: ["$$\\frac{-\\left(3\\right)}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(23\\right)}{24}-\\frac{13}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

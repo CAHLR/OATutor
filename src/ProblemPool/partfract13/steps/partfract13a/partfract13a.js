@@ -1,1 +1,1 @@
-import hints from "./partfract13a-index.js"; const step = {id: "partfract13a", stepAnswer: ["-(1/(x-7)-2/(x-7)^2"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./partfract13a-index.js"; const step = {id: "partfract13a", stepAnswer: ["-(1/(x-7)-2/(x-7)**2"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

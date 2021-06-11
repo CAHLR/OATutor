@@ -1,1 +1,1 @@
-import hints from "./exp3a-index.js"; const step = {id: "exp3a", stepAnswer: ["(-2)^5"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-2\\right)}^{14}}{{\\left(-2\\right)}^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp3a-index.js"; const step = {id: "exp3a", stepAnswer: ["$${\\left(-2\\right)}^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-2\\right)}^{14}}{{\\left(-2\\right)}^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

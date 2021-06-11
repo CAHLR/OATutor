@@ -1,1 +1,1 @@
-import hints from "./FunNota19e-index.js"; const step = {id: "FunNota19e", stepAnswer: ["abs(a+h-1)-abs(a+h+1)"], problemType: "TextBox", stepTitle: "$$f \\left(a+h\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./FunNota19e-index.js"; const step = {id: "FunNota19e", stepAnswer: ["$$|a+h-\\left(1\\right)|-|a+h+\\left(1\\right)|$$"], problemType: "TextBox", stepTitle: "$$f \\left(a+h\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
