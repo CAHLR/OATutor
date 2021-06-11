@@ -20,7 +20,7 @@ const cookieID = "openITS-id";
 const MAX_BUFFER_SIZE = 100;
 const GRANULARITY = 5;
 
-const autoCommands = "pi theta sqrt sum prod alpha beta gamma rho";
+const autoCommands = "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
 const autoOperatorNames = "sin cos tan";
 
 const middlewareURL = "https://askoski.berkeley.edu:1339";
