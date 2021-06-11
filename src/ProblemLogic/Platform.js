@@ -32,6 +32,8 @@ class Platform extends React.Component {
     this.lesson = null;
     //console.log(this.props.lessonNum);
 
+    this.studentNameDisplay = context.studentName ? (context.studentName + " : ") : "Not logged in : " ;
+
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
       for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
@@ -177,7 +179,7 @@ class Platform extends React.Component {
                 </div></Grid>
               <Grid item xs={3} key={3} >
                 <div style={{ textAlign: 'right' }}>
-                  {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection" ? "Mastery: " + Math.round(this.state.mastery * 100) + "%" : ""}
+                  {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection" ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%" : ""}
                   {false ?
                     <Router>
                       <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
