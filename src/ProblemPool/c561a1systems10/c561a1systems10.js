@@ -1,1 +1,0 @@
-import steps from "./c561a1systems10-index.js"; const problem = {id: "c561a1systems10", title: "Solving a System of Nonlinear Equations Using Substitution", body: "Solve the system of nonlinear equations using substitution.", steps: steps, variabilization: {}}; export { problem };

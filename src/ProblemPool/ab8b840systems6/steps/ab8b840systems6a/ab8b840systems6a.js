@@ -1,0 +1,1 @@
+import hints from "./ab8b840systems6a-index.js"; const step = {id: "ab8b840systems6a", stepAnswer: ["(-2,-4)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

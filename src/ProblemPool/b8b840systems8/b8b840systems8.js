@@ -1,1 +1,0 @@
-import steps from "./b8b840systems8-index.js"; const problem = {id: "b8b840systems8", title: "Finding a Solution to a Dependent System of Linear Equations", body: "Find a solution to the system of equations using the addition method. $$x+\\left(3\\right) y=2$$ $$\\left(3\\right) x+\\left(9\\right) y=6$$", steps: steps, variabilization: {}}; export { problem };
