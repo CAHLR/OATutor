@@ -1,1 +1,0 @@
-import hints from "./b8b840systems3a-index.js"; const step = {id: "b8b840systems3a", stepAnswer: ["(8,3)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["(8,3)", "(3,8)", "(4,6)", "(6,4)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
