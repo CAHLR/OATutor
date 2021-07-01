@@ -1,0 +1,1 @@
+import steps from "./ellipse1-index.js"; const problem = {id: "ellipse1", title: "Writing Equations of Ellipses in Standard Form", body: "Find the standard form equation of the ellipse with the following coordinates.", steps: steps, variabilization: {}}; export { problem };

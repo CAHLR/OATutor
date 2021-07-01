@@ -1,0 +1,1 @@
+import steps from "./hyperbola22-index.js"; const problem = {id: "hyperbola22", title: "The Hyperbola", body: "Vertices at (3,0) and (-3,0) and one focus at (5,0).", steps: steps, variabilization: {}}; export { problem };

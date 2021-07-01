@@ -1,0 +1,1 @@
+import hints from "./ellipse8a-index.js"; const step = {id: "ellipse8a", stepAnswer: ["$$\\frac{x^2}{{\\left(3\\right)}^2}+\\frac{y^2}{{\\left(2\\right)}^2}=1$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^2+\\left(9\\right) y^2=36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

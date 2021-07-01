@@ -1,0 +1,1 @@
+import steps from "./hyperbola8-index.js"; const problem = {id: "hyperbola8", title: "Solving Applied Problems Involving Hyperbolas", body: "", steps: steps, variabilization: {}}; export { problem };
