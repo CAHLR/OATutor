@@ -1,0 +1,1 @@
+import hints from "./ellipse9a-index.js"; const step = {id: "ellipse9a", stepAnswer: ["$$\\frac{x^2}{{\\left(\\frac{1}{2}\\right)}^2}+\\frac{y^2}{{\\left(\\frac{1}{3}\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^2+\\left(9\\right) y^2=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

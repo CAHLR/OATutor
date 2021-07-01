@@ -1,0 +1,1 @@
+import hints from "./rotation6a-index.js"; const step = {id: "rotation6a", stepAnswer: ["Hyperbola"], problemType: "MultipleChoice", stepTitle: "$$x^2-\\left(9\\right) x y+\\left(3\\right) y^2-\\left(12\\right)=0$$", stepBody: "", choices: ["Circle", "Parabola", "Ellipse", "Hyperbola"], answerType: "string", hints: hints, variabilization: {}}; export {step};
