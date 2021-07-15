@@ -1,0 +1,1 @@
+import steps from "./ab6a46ageo5-index.js"; const problem = {id: "ab6a46ageo5", title: "Finding the Specified Term for the Geometric Sequence", body: "Find the specified term for the geometric sequence, given the first four terms.", steps: steps, variabilization: {}}; export { problem };

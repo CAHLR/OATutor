@@ -1,0 +1,1 @@
+import hints from "./sequences24c-index.js"; const step = {id: "sequences24c", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "Write the third term of the sequence defined by the explicit formula $$a_n=\\frac{\\left(-1\\right)6}{n+\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

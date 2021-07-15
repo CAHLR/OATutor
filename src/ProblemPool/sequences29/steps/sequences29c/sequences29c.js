@@ -1,0 +1,1 @@
+import hints from "./sequences29c-index.js"; const step = {id: "sequences29c", stepAnswer: ["$$\\frac{9}{7}$$"], problemType: "TextBox", stepTitle: "Write the third term of the sequence defined by the explicit formula $$a_n=\\frac{n^2}{\\left(2\\right) n+\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

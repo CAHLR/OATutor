@@ -1,0 +1,1 @@
+import steps from "./parabola10-index.js"; const problem = {id: "parabola10", title: "Interpretation of a Parabola", body: "Answer the following multiple choice question.", steps: steps, variabilization: {}}; export { problem };

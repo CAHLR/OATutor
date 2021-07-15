@@ -1,0 +1,1 @@
+import steps from "./sequences21-index.js"; const problem = {id: "sequences21", title: "Writing the Terms of a Sequence Defined by a Recursive Formula", body: "", steps: steps, variabilization: {}}; export { problem };

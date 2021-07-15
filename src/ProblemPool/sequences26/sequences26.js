@@ -1,0 +1,1 @@
+import steps from "./sequences26-index.js"; const problem = {id: "sequences26", title: "Writing the First Three Terms of a Sequence Defined by a Formula", body: "", steps: steps, variabilization: {}}; export { problem };

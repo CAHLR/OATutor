@@ -1,0 +1,1 @@
+var hints = [{id: "conic10c-h1", type: "scaffold", problemType: "MultipleChoice", answerType: "string", hintAnswer: ["Ellipse"], dependencies: [], title: "Types of Conic", text: "Since $$e<1$$, identify the conic.", choices: ["Parabola", "Hyperbola", "Ellipse"], variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import steps from "./geometric4-index.js"; const problem = {id: "geometric4", title: "Writing the Terms of a Geometric Sequence", body: "", steps: steps, variabilization: {}}; export { problem };
