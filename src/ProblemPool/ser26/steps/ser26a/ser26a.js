@@ -1,0 +1,1 @@
+import hints from "./ser26a-index.js"; const step = {id: "ser26a", stepAnswer: ["414.3"], problemType: "TextBox", stepTitle: "248.6+99.44+39.776+...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./parabola2-index.js"; const problem = {id: "parabola2", title: "Writing the Equation of a Parabola in Standard Form Given its Focus and Directrix", body: "Write the equation for the parabola.", steps: steps, variabilization: {}}; export { problem };

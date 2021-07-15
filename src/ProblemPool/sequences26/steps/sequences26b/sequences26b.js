@@ -1,0 +1,1 @@
+import hints from "./sequences26b-index.js"; const step = {id: "sequences26b", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "Write the second term of the sequence defined by the explicit formula $$a_n=\\frac{{\\left(2\\right)}^n}{n^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

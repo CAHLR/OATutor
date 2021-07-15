@@ -1,0 +1,1 @@
+import hints from "./ser1a-index.js"; const step = {id: "ser1a", stepAnswer: ["$$S_5=\\frac{\\left(5\\right) \\left(\\frac{3}{2}+\\frac{7}{2}\\right)}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{2}+\\left(2\\right)+\\frac{5}{2}+\\left(3\\right)+\\frac{7}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

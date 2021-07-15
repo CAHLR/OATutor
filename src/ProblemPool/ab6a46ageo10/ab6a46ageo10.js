@@ -1,0 +1,1 @@
+import steps from "./ab6a46ageo10-index.js"; const problem = {id: "ab6a46ageo10", title: "Write a recursive formula for each geometric sequence.", body: "", steps: steps, variabilization: {}}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./parabola3-index.js"; const problem = {id: "parabola3", title: "Find components of the graph", body: "", steps: steps, variabilization: {}}; export { problem };

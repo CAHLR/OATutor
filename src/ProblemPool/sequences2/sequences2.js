@@ -1,0 +1,1 @@
+import steps from "./sequences2-index.js"; const problem = {id: "sequences2", title: "Finding First N Terms of a Sequence", body: "", steps: steps, variabilization: {}}; export { problem };

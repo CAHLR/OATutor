@@ -1,0 +1,1 @@
+import hints from "./conics3a-index.js"; const step = {id: "conics3a", stepAnswer: ["$$x=\\frac{-\\left(8\\right)}{5}$$"], problemType: "TextBox", stepTitle: "$$r=\\frac{8}{\\left(4\\right)-\\left(5\\right) costheta}$$", stepBody: "Enter your answer in the form: $$x=a$$ or $$y=a$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

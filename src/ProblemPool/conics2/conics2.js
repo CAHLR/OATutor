@@ -1,0 +1,1 @@
+import steps from "./conics2-index.js"; const problem = {id: "conics2", title: "Determine parts of the graph", body: "Find the focus of the hyperbola.", steps: steps, variabilization: {}}; export { problem };

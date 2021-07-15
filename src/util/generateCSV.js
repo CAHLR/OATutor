@@ -39,5 +39,5 @@ if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
 }
 
-var data = readData("problemSubmissions");
+var data = readData("problemSubmissionsSum21");
 

@@ -1,0 +1,1 @@
+import steps from "./geometric3-index.js"; const problem = {id: "geometric3", title: "Finding the Common Ratio of the Sequence", body: "", steps: steps, variabilization: {}}; export { problem };

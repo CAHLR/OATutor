@@ -1,0 +1,1 @@
+import hints from "./conic8b-index.js"; const step = {id: "conic8b", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "Give the Directrix", stepBody: "Identiy the directrix", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
