@@ -1,1 +1,1 @@
-import steps from "./quadratic11-index.js"; const problem = {id: "quadratic11", title: "Finding the Intercepts of a Quadratic Equation", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./quadratic11-index.js"; const problem = {id: "quadratic11", title: "Finding the Intercepts of a Quadratic Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

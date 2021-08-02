@@ -1,1 +1,1 @@
-import steps from "./rotation13-index.js"; const problem = {id: "rotation13", title: "Rotation of Axes", body: "$$\\left(4\\right) x^2-xy+\\left(4\\right) y^2-\\left(2\\right)=0$$, $$𝜃=45°$$", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rotation13-index.js"; const problem = {id: "rotation13", title: "Rotation of Axes", body: "$$\\left(4\\right) x^2-xy+\\left(4\\right) y^2-\\left(2\\right)=0$$, $$𝜃=45°$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

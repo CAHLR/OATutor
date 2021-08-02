@@ -1,1 +1,1 @@
-import steps from "./inverse3-index.js"; const problem = {id: "inverse3", title: "Inverse Functions", body: "Find the inverse form of the given function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverse3-index.js"; const problem = {id: "inverse3", title: "Inverse Functions", body: "Find the inverse form of the given function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

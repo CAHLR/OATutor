@@ -1,1 +1,1 @@
-import steps from "./poly26-index.js"; const problem = {id: "poly26", title: "Multiplying Polynomials", body: "Expand the expression.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./poly26-index.js"; const problem = {id: "poly26", title: "Multiplying Polynomials", body: "Expand the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

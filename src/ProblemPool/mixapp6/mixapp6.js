@@ -1,1 +1,1 @@
-import steps from "./mixapp6-index.js"; const problem = {id: "mixapp6", title: "Solve Mixture Word Problems", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./mixapp6-index.js"; const problem = {id: "mixapp6", title: "Solve Mixture Word Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

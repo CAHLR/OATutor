@@ -1,1 +1,1 @@
-import steps from "./IneqApp9-index.js"; const problem = {id: "IneqApp9", title: "Christian's Sales", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./IneqApp9-index.js"; const problem = {id: "IneqApp9", title: "Christian's Sales", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

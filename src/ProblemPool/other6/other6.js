@@ -1,1 +1,1 @@
-import steps from "./other6-index.js"; const problem = {id: "other6", title: "Solving the equation", body: "Solving an Equation Involving Rational Exponents and Factoring", steps: steps, variabilization: {}}; export { problem };
+import steps from "./other6-index.js"; const problem = {id: "other6", title: "Solving the equation", body: "Solving an Equation Involving Rational Exponents and Factoring", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

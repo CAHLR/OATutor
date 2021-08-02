@@ -1,0 +1,1 @@
+import hints from "./slope12a-index.js"; const step = {id: "slope12a", stepAnswer: ["$$-3/2;(0,3)$$"], problemType: "MultipleChoice", stepTitle: "$$\\left(6\\right) x+\\left(4\\right) y=12$$", stepBody: "", choices: ["$$-3/2;(3,0)$$", "$$3;(0,\\frac{-\\left(3\\right)}{2})$$", "$$-3/2;(0,3)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

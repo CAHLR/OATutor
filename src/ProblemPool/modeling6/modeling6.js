@@ -1,1 +1,1 @@
-import steps from "./modeling6-index.js"; const problem = {id: "modeling6", title: "Solving an Inverse Variation Problem", body: "A quantity y varies inversely with the square of x.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./modeling6-index.js"; const problem = {id: "modeling6", title: "Solving an Inverse Variation Problem", body: "A quantity y varies inversely with the square of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

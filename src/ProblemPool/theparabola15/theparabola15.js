@@ -1,1 +1,0 @@
-import steps from "./theparabola15-index.js"; const problem = {id: "theparabola15", title: "Finding Parabola Characteristics", body: "Find the vertex, focus, and directrix (in order, separated by a comma) of the parabola:", steps: steps, variabilization: {}}; export { problem };

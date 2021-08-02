@@ -1,1 +1,1 @@
-import steps from "./domain5-index.js"; const problem = {id: "domain5", title: "Describing Sets on the Real-Number Line", body: "\n##figure1.gif", steps: steps, variabilization: {}}; export { problem };
+import steps from "./domain5-index.js"; const problem = {id: "domain5", title: "Describing Sets on the Real-Number Line", body: "\n##figure1.gif", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

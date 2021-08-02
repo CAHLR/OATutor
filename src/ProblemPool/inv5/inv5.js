@@ -1,1 +1,1 @@
-import steps from "./inv5-index.js"; const problem = {id: "inv5", title: "Multiplying By the Identity Matrix", body: "I repesents the identity matrix. Given matrix A, what is AI?", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inv5-index.js"; const problem = {id: "inv5", title: "Multiplying By the Identity Matrix", body: "I repesents the identity matrix. Given matrix A, what is AI?", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

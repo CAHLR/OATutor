@@ -1,1 +1,1 @@
-import steps from "./uni23-index.js"; const problem = {id: "uni23", title: "Solve Uniform Motion Applications", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./uni23-index.js"; const problem = {id: "uni23", title: "Solve Uniform Motion Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

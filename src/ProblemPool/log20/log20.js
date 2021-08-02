@@ -1,1 +1,1 @@
-import steps from "./log20-index.js"; const problem = {id: "log20", title: "Rewriting Equations in Exponential Form: Exercise #4", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./log20-index.js"; const problem = {id: "log20", title: "Rewriting Equations in Exponential Form: Exercise #4", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

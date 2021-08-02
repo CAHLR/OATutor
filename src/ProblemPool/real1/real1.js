@@ -1,1 +1,1 @@
-import steps from "./real1-index.js"; const problem = {id: "real1", title: "Identifying Rational Numbers", body: "Write each of the following rational numbers as either a terminating or repeating decimal.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./real1-index.js"; const problem = {id: "real1", title: "Identifying Rational Numbers", body: "Write each of the following rational numbers as either a terminating or repeating decimal.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

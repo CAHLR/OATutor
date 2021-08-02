@@ -1,1 +1,1 @@
-import steps from "./Properties18-index.js"; const problem = {id: "Properties18", title: "Use the Associative Property", body: "Use the associative property to simplify:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Properties18-index.js"; const problem = {id: "Properties18", title: "Use the Associative Property", body: "Use the associative property to simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

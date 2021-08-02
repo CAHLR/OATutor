@@ -1,1 +1,0 @@
-import hints from "./theparabola16a-index.js"; const step = {id: "theparabola16a", stepAnswer: ["$$(0,0),(9,0),x=-9$$"], problemType: "MultipleChoice", stepTitle: "$$x=\\frac{y^2}{36}$$", stepBody: "", choices: ["$$(0,0),(9,0),x=-9$$", "$$(1,0),(9,0),x=-9$$", "$$(2,0),(7,0),x=-9$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

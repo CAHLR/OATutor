@@ -1,0 +1,1 @@
+import hints from "./probability10a-index.js"; const step = {id: "probability10a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "Find the probability of landing on a vowel.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./ser27-index.js"; const problem = {id: "ser27", title: "Interpreting the Sum of Geometric Series", body: "Find the sum of the $$infinite$$ geometric series.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./ser27-index.js"; const problem = {id: "ser27", title: "Interpreting the Sum of Geometric Series", body: "Find the sum of the $$infinite$$ geometric series.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

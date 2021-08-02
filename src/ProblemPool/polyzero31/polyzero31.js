@@ -1,1 +1,1 @@
-import steps from "./polyzero31-index.js"; const problem = {id: "polyzero31", title: "Using the Linear Factorization Theorem to Find a Polynomial with Given Zeros", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./polyzero31-index.js"; const problem = {id: "polyzero31", title: "Using the Linear Factorization Theorem to Find a Polynomial with Given Zeros", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

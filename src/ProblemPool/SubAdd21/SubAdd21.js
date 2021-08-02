@@ -1,1 +1,1 @@
-import steps from "./SubAdd21-index.js"; const problem = {id: "SubAdd21", title: "Solve the equation", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./SubAdd21-index.js"; const problem = {id: "SubAdd21", title: "Solve the equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

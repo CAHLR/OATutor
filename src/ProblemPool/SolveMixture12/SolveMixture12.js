@@ -1,1 +1,1 @@
-import steps from "./SolveMixture12-index.js"; const problem = {id: "SolveMixture12", title: "Alison's Dimes and Quarters", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./SolveMixture12-index.js"; const problem = {id: "SolveMixture12", title: "Alison's Dimes and Quarters", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

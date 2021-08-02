@@ -1,1 +1,1 @@
-import steps from "./LinIneq2-index.js"; const problem = {id: "LinIneq2", title: "Using Interval Notation to Express All Real Numbers Less Than or Equal to a or Greater Than or Equal to b", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinIneq2-index.js"; const problem = {id: "LinIneq2", title: "Using Interval Notation to Express All Real Numbers Less Than or Equal to a or Greater Than or Equal to b", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

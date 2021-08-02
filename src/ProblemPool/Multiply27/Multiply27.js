@@ -1,1 +1,1 @@
-import steps from "./Multiply27-index.js"; const problem = {id: "Multiply27", title: "Evaluate Variable Expressions with Integers", body: "Evaluate the expression:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Multiply27-index.js"; const problem = {id: "Multiply27", title: "Evaluate Variable Expressions with Integers", body: "Evaluate the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

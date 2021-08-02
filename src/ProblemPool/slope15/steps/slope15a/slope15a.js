@@ -1,0 +1,1 @@
+import hints from "./slope15a-index.js"; const step = {id: "slope15a", stepAnswer: ["Parallel"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{3}{4} x-\\left(3\\right)$$, $$\\left(3\\right) x-\\left(4\\right) y=-2$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

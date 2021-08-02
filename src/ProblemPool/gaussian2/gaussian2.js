@@ -1,1 +1,1 @@
-import steps from "./gaussian2-index.js"; const problem = {id: "gaussian2", title: "Writing the Augmented Matrix for a System of Equations", body: "Write the augmented matrix of the given system of equations.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./gaussian2-index.js"; const problem = {id: "gaussian2", title: "Writing the Augmented Matrix for a System of Equations", body: "Write the augmented matrix of the given system of equations.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

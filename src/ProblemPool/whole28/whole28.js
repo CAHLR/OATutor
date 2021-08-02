@@ -1,1 +1,1 @@
-import steps from "./whole28-index.js"; const problem = {id: "whole28", title: "Naming Numbers", body: "Name the number using words.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./whole28-index.js"; const problem = {id: "whole28", title: "Naming Numbers", body: "Name the number using words.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

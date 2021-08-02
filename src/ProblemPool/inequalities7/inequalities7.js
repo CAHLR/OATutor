@@ -1,1 +1,1 @@
-import steps from "./inequalities7-index.js"; const problem = {id: "inequalities7", title: "Solve the inequality, graph the solution on the number line, and write the solution in interval notation.", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inequalities7-index.js"; const problem = {id: "inequalities7", title: "Solve the inequality, graph the solution on the number line, and write the solution in interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

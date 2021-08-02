@@ -1,1 +1,1 @@
-import steps from "./rotation19-index.js"; const problem = {id: "rotation19", title: "Rotation of Axes", body: "$$x^2+\\left(4\\right) xy+y^2-\\left(2\\right) x+\\left(1\\right)=0$$", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rotation19-index.js"; const problem = {id: "rotation19", title: "Rotation of Axes", body: "$$x^2+\\left(4\\right) xy+y^2-\\left(2\\right) x+\\left(1\\right)=0$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./hyperbola12-index.js"; const problem = {id: "hyperbola12", title: "The Hyperbola", body: "Determine whether the following equations represent hyperbolas. If so, write in standard form", steps: steps, variabilization: {}}; export { problem };
+import steps from "./hyperbola12-index.js"; const problem = {id: "hyperbola12", title: "The Hyperbola", body: "Determine whether the following equations represent hyperbolas. If so, write in standard form", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

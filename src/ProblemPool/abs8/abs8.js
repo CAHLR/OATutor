@@ -1,1 +1,1 @@
-import steps from "./abs8-index.js"; const problem = {id: "abs8", title: "Finding the Intercepts of an Absolute Value Function", body: "Find the x- and y-intercepts of the given function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./abs8-index.js"; const problem = {id: "abs8", title: "Finding the Intercepts of an Absolute Value Function", body: "Find the x- and y-intercepts of the given function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

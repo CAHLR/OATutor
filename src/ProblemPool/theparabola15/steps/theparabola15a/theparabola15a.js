@@ -1,1 +1,0 @@
-import hints from "./theparabola15a-index.js"; const step = {id: "theparabola15a", stepAnswer: ["(0,0),(1/144,0),x=-1/144"], problemType: "MultipleChoice", stepTitle: "$$x=\\left(36\\right) y^2$$", stepBody: "", choices: ["(0,0),(1/144,0),x=-1/144", "(0,0),(1/144,0),x=-1/140"], answerType: "string", hints: hints, variabilization: {}}; export {step};

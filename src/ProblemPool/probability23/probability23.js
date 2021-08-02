@@ -1,0 +1,1 @@
+import steps from "./probability23-index.js"; const problem = {id: "probability23", title: "Computing Probabilities of Equally Likely Outcomes", body: "For the following exercises, four coins are tossed.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

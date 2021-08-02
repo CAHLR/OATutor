@@ -1,1 +1,1 @@
-import steps from "./sequences3-index.js"; const problem = {id: "sequences3", title: "Finding First N Terms of a Sequence", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./sequences3-index.js"; const problem = {id: "sequences3", title: "Finding First N Terms of a Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,0 @@
-var hints = [{id: "job1a-h1", type: "hint", dependencies: [], title: "Treatment", text: "A treatment group of individuals who gets the treatment", variabilization: {}}, {id: "job1a-h2", type: "hint", dependencies: [], title: "Control", text: "A control group is the group of individuals who do not get the treatment", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,1 @@
-import steps from "./domain28-index.js"; const problem = {id: "domain28", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./domain28-index.js"; const problem = {id: "domain28", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

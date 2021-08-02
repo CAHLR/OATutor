@@ -1,1 +1,1 @@
-import steps from "./logprop11-index.js"; const problem = {id: "logprop11", title: "Expanding Complex Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./logprop11-index.js"; const problem = {id: "logprop11", title: "Expanding Complex Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./measure14-index.js"; const problem = {id: "measure14", title: "Convert between Fahrenheit and Celsius Temperatures", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./measure14-index.js"; const problem = {id: "measure14", title: "Convert between Fahrenheit and Celsius Temperatures", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

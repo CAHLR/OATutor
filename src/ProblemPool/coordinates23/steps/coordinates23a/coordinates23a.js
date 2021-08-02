@@ -1,0 +1,1 @@
+import hints from "./coordinates23a-index.js"; const step = {id: "coordinates23a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$y=-x+\\left(5\\right)$$ If $$x=0$$, what is y?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

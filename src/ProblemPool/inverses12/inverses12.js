@@ -1,1 +1,1 @@
-import steps from "./inverses12-index.js"; const problem = {id: "inverses12", title: "Factoring a Difference of Squares", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverses12-index.js"; const problem = {id: "inverses12", title: "Factoring a Difference of Squares", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

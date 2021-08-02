@@ -1,1 +1,1 @@
-import steps from "./SolveMixture11-index.js"; const problem = {id: "SolveMixture11", title: "Sumanta's Nickels and Dimes", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./SolveMixture11-index.js"; const problem = {id: "SolveMixture11", title: "Sumanta's Nickels and Dimes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

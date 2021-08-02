@@ -1,1 +1,1 @@
-import steps from "./rational15-index.js"; const problem = {id: "rational15", title: "Rational Expressions", body: "Multiply the rational expression and express the product in simplest form.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rational15-index.js"; const problem = {id: "rational15", title: "Rational Expressions", body: "Multiply the rational expression and express the product in simplest form.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

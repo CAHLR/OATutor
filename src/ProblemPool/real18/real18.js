@@ -1,1 +1,1 @@
-import steps from "./real18-index.js"; const problem = {id: "real18", title: "Algebraic Equations", body: "For the following exercises, solve for the variable.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./real18-index.js"; const problem = {id: "real18", title: "Algebraic Equations", body: "For the following exercises, solve for the variable.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

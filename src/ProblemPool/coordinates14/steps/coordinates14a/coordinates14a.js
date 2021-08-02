@@ -1,0 +1,1 @@
+import hints from "./coordinates14a-index.js"; const step = {id: "coordinates14a", stepAnswer: ["(-5,6)"], problemType: "MultipleChoice", stepTitle: "Given $$x=-5$$, find a solution for the equation $$2x-5y=20$$", stepBody: "Enter your answer as a coordinate pair.", choices: ["(-5,6)", "(-5,2)", "(-5,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

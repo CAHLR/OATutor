@@ -1,1 +1,1 @@
-import steps from "./polyzero32-index.js"; const problem = {id: "polyzero32", title: "Using Descartes’ Rule of Signs", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./polyzero32-index.js"; const problem = {id: "polyzero32", title: "Using Descartes’ Rule of Signs", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

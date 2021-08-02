@@ -1,1 +1,1 @@
-import steps from "./chemical6-index.js"; const problem = {id: "chemical6", title: "The Chemical Foundation of Life", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./chemical6-index.js"; const problem = {id: "chemical6", title: "The Chemical Foundation of Life", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

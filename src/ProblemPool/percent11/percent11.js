@@ -1,1 +1,1 @@
-import steps from "./percent11-index.js"; const problem = {id: "percent11", title: "Find Percent Increase", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./percent11-index.js"; const problem = {id: "percent11", title: "Find Percent Increase", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications"}; export { problem };

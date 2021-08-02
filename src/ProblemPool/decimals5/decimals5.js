@@ -1,1 +1,1 @@
-import steps from "./decimals5-index.js"; const problem = {id: "decimals5", title: "How to Name Decimals", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./decimals5-index.js"; const problem = {id: "decimals5", title: "How to Name Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

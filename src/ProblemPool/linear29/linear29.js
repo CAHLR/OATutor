@@ -1,1 +1,1 @@
-import steps from "./linear29-index.js"; const problem = {id: "linear29", title: "Matching Linear Functions to Their Graphs", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linear29-index.js"; const problem = {id: "linear29", title: "Matching Linear Functions to Their Graphs", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/4-1-linear-functions"}; export { problem };
