@@ -1,1 +1,1 @@
-import steps from "./decimals21-index.js"; const problem = {id: "decimals21", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./decimals21-index.js"; const problem = {id: "decimals21", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

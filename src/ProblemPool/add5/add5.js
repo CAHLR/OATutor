@@ -1,1 +1,1 @@
-import steps from "./add5-index.js"; const problem = {id: "add5", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./add5-index.js"; const problem = {id: "add5", title: "Adding and Subtracting Integers", body: "Find the value of the following expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

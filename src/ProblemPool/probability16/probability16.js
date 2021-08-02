@@ -1,0 +1,1 @@
+import steps from "./probability16-index.js"; const problem = {id: "probability16", title: "Construction Probability Models", body: "For the following exercises, two coins are tossed.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

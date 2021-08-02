@@ -1,1 +1,1 @@
-import steps from "./rationals16-index.js"; const problem = {id: "rationals16", title: "Finding verical asymptotes and removable discontinuities", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rationals16-index.js"; const problem = {id: "rationals16", title: "Finding verical asymptotes and removable discontinuities", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

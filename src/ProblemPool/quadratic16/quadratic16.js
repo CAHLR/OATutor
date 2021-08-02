@@ -1,1 +1,1 @@
-import steps from "./quadratic16-index.js"; const problem = {id: "quadratic16", title: "Rewriting Quadratics in Standard Form and Finding the Vertex", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./quadratic16-index.js"; const problem = {id: "quadratic16", title: "Rewriting Quadratics in Standard Form and Finding the Vertex", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

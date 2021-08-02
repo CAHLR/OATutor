@@ -1,1 +1,1 @@
-import steps from "./explog3-index.js"; const problem = {id: "explog3", title: "Solving Exponential Equations", body: "Solve the following equation.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./explog3-index.js"; const problem = {id: "explog3", title: "Solving Exponential Equations", body: "Solve the following equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/6-6-exponential-and-logarithmic-equations"}; export { problem };

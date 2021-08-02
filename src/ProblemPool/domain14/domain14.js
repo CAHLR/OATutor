@@ -1,1 +1,1 @@
-import steps from "./domain14-index.js"; const problem = {id: "domain14", title: "Finding the Domain of a Function", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./domain14-index.js"; const problem = {id: "domain14", title: "Finding the Domain of a Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

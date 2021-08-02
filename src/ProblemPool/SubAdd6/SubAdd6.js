@@ -1,1 +1,1 @@
-import steps from "./SubAdd6-index.js"; const problem = {id: "SubAdd6", title: "Solve Equations Using the Subtraction Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}}; export { problem };
+import steps from "./SubAdd6-index.js"; const problem = {id: "SubAdd6", title: "Solve Equations Using the Subtraction Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

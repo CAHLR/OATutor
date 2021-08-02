@@ -1,1 +1,1 @@
-import steps from "./comp3-index.js"; const problem = {id: "comp3", title: "Interpreting Composite Functions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./comp3-index.js"; const problem = {id: "comp3", title: "Interpreting Composite Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

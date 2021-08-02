@@ -1,0 +1,1 @@
+import hints from "./linearequation11a-index.js"; const step = {id: "linearequation11a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{3} x-\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

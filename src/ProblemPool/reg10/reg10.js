@@ -1,1 +1,0 @@
-import steps from "./reg10-index.js"; const problem = {id: "reg10", title: "Interpreting Scatter Plots", body: "", steps: steps, variabilization: {}}; export { problem };

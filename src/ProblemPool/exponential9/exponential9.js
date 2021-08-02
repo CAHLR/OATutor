@@ -1,1 +1,1 @@
-import steps from "./exponential9-index.js"; const problem = {id: "exponential9", title: "Evaluating Functinos with Base e", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./exponential9-index.js"; const problem = {id: "exponential9", title: "Evaluating Functinos with Base e", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

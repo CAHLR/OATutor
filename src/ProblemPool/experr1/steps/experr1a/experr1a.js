@@ -1,1 +1,0 @@
-import hints from "./experr1a-index.js"; const step = {id: "experr1a", stepAnswer: ["y+z"], problemType: "MultipleChoice", stepTitle: "Which expression would not cause an error?", stepBody: "", choices: ["x+y", "str(x)+int(y)", "y+z", "str(x,y)+z"], answerType: "string", hints: hints, variabilization: {}}; export {step};

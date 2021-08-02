@@ -1,1 +1,1 @@
-import steps from "./poly24-index.js"; const problem = {id: "poly24", title: "Multiplying Polynomials", body: "Expand the polynomial.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./poly24-index.js"; const problem = {id: "poly24", title: "Multiplying Polynomials", body: "Expand the polynomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./Absolute4-index.js"; const problem = {id: "Absolute4", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=-|x+\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Absolute4-index.js"; const problem = {id: "Absolute4", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=-|x+\\left(4\\right)|-\\left(3\\right)$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

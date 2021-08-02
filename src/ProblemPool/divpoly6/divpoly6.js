@@ -1,1 +1,1 @@
-import steps from "./divpoly6-index.js"; const problem = {id: "divpoly6", title: "Using Polynomial Division in an Application Problem", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./divpoly6-index.js"; const problem = {id: "divpoly6", title: "Using Polynomial Division in an Application Problem", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org"}; export { problem };

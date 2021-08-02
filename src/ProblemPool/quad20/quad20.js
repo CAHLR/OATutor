@@ -1,1 +1,1 @@
-import steps from "./quad20-index.js"; const problem = {id: "quad20", title: "Try It: Solving the Quadratic Equation with the Quadratic Formula", body: "Solve the quadratic equation using the quadratic formula.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./quad20-index.js"; const problem = {id: "quad20", title: "Try It: Solving the Quadratic Equation with the Quadratic Formula", body: "Solve the quadratic equation using the quadratic formula.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

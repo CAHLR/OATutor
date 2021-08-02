@@ -1,1 +1,1 @@
-import steps from "./parabola5-index.js"; const problem = {id: "parabola5", title: "Find Components of the Graph", body: "Identify the endpoints of the latus rectum of the graph.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./parabola5-index.js"; const problem = {id: "parabola5", title: "Find Components of the Graph", body: "Identify the endpoints of the latus rectum of the graph.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

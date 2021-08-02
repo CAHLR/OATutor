@@ -1,1 +1,1 @@
-import steps from "./addand13-index.js"; const problem = {id: "addand13", title: "Evaluate Variable Expressions with Fractions", body: "Evaluate", steps: steps, variabilization: {}}; export { problem };
+import steps from "./addand13-index.js"; const problem = {id: "addand13", title: "Evaluate Variable Expressions with Fractions", body: "Evaluate", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

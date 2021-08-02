@@ -1,1 +1,0 @@
-import hints from "./farmers1a-index.js"; const step = {id: "farmers1a", stepAnswer: ["farmers_markets.show(@{num})"], problemType: "TextBox", stepTitle: "Use the method show to display the first @{num} rows of farmers_markets.", stepBody: "", answerType: "string", hints: hints, variabilization: {num: ["", "5", "6", ""]}}; export {step};

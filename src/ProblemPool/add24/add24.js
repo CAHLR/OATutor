@@ -1,1 +1,1 @@
-import steps from "./add24-index.js"; const problem = {id: "add24", title: "Find:", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./add24-index.js"; const problem = {id: "add24", title: "Find:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

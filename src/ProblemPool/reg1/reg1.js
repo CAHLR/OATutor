@@ -1,1 +1,1 @@
-import steps from "./reg1-index.js"; const problem = {id: "reg1", title: "Least Squares Line", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./reg1-index.js"; const problem = {id: "reg1", title: "Least Squares Line", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-3-the-regression-equation"}; export { problem };

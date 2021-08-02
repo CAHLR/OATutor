@@ -1,1 +1,1 @@
-import steps from "./matrices20-index.js"; const problem = {id: "matrices20", title: "Multiplying the Matrix By a Scalar", body: "Find the sum $$\\left(3\\right) A+\\left(2\\right) B$$.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./matrices20-index.js"; const problem = {id: "matrices20", title: "Multiplying the Matrix By a Scalar", body: "Find the sum $$\\left(3\\right) A+\\left(2\\right) B$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

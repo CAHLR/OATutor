@@ -1,1 +1,1 @@
-import steps from "./cond7-index.js"; const problem = {id: "cond7", title: "Ice Cream", body: "70% of your friends like chocolate, and 35% like chocolate AND like strawberry.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./cond7-index.js"; const problem = {id: "cond7", title: "Ice Cream", body: "70% of your friends like chocolate, and 35% like chocolate AND like strawberry.", steps: steps, variabilization: {}, oer: "https://www.mathsisfun.com/data/probability-events-conditional.html"}; export { problem };

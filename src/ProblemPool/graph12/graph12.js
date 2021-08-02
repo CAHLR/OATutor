@@ -1,1 +1,0 @@
-import steps from "./graph12-index.js"; const problem = {id: "graph12", title: "Finding the X-Intercept of a Polynomial Function", body: "", steps: steps, variabilization: {}}; export { problem };

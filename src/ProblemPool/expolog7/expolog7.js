@@ -1,1 +1,1 @@
-import steps from "./expolog7-index.js"; const problem = {id: "expolog7", title: "Expressing an Exponential Model in Base e", body: "Changing to base e", steps: steps, variabilization: {}}; export { problem };
+import steps from "./expolog7-index.js"; const problem = {id: "expolog7", title: "Expressing an Exponential Model in Base e", body: "Changing to base e", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

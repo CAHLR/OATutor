@@ -1,1 +1,1 @@
-import steps from "./IneqApp22-index.js"; const problem = {id: "IneqApp22", title: "Picking College Classes", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./IneqApp22-index.js"; const problem = {id: "IneqApp22", title: "Picking College Classes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

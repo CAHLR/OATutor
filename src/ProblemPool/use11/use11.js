@@ -1,1 +1,1 @@
-import steps from "./use11-index.js"; const problem = {id: "use11", title: "Evaluating Expressions", body: "When $$x=3$$, evaluate:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./use11-index.js"; const problem = {id: "use11", title: "Evaluating Expressions", body: "When $$x=3$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

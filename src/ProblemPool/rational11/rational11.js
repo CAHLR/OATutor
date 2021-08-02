@@ -1,1 +1,1 @@
-import steps from "./rational11-index.js"; const problem = {id: "rational11", title: "Rational Expressions", body: "Simplify the rational expression:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rational11-index.js"; const problem = {id: "rational11", title: "Rational Expressions", body: "Simplify the rational expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

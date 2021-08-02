@@ -1,1 +1,1 @@
-import steps from "./real4-index.js"; const problem = {id: "real4", title: "Properties of Real Numbers", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./real4-index.js"; const problem = {id: "real4", title: "Properties of Real Numbers", body: "", steps: steps, variabilization: {}, oer: "https://www.oercommons.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./probability7b-index.js"; const step = {id: "probability7b", stepAnswer: ["$$\\frac{11}{12}$$"], problemType: "TextBox", stepTitle: "Find the / that the sum of the numbers rolled is greater than 3.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

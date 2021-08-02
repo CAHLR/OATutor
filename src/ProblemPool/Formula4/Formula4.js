@@ -1,1 +1,1 @@
-import steps from "./Formula4-index.js"; const problem = {id: "Formula4", title: "Rey's Driving Time", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Formula4-index.js"; const problem = {id: "Formula4", title: "Rey's Driving Time", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

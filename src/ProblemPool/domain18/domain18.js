@@ -1,1 +1,1 @@
-import steps from "./domain18-index.js"; const problem = {id: "domain18", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=-\\sqrt{\\left(2\\right)-x}$$.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./domain18-index.js"; const problem = {id: "domain18", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=-\\sqrt{\\left(2\\right)-x}$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

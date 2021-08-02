@@ -1,1 +1,1 @@
-import steps from "./conic19-index.js"; const problem = {id: "conic19", title: "Converting Polar Equations to Rectangular Equations", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./conic19-index.js"; const problem = {id: "conic19", title: "Converting Polar Equations to Rectangular Equations", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

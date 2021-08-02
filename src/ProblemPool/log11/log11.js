@@ -1,1 +1,1 @@
-import steps from "./log11-index.js"; const problem = {id: "log11", title: "Finding the Value of a Common Logarithm Using a Calculator", body: "Solve the expression with a calculator to 4 decimal places.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./log11-index.js"; const problem = {id: "log11", title: "Finding the Value of a Common Logarithm Using a Calculator", body: "Solve the expression with a calculator to 4 decimal places.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

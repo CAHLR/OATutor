@@ -1,1 +1,1 @@
-import steps from "./linear18-index.js"; const problem = {id: "linear18", title: "Finding the Equation of a Perpendicular Line", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linear18-index.js"; const problem = {id: "linear18", title: "Finding the Equation of a Perpendicular Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/"}; export { problem };

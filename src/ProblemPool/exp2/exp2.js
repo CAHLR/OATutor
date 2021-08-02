@@ -1,1 +1,1 @@
-import steps from "./exp2-index.js"; const problem = {id: "exp2", title: "The Product Rule of Exponents", body: "Write each of the following products with a single base. Do not simplify further.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./exp2-index.js"; const problem = {id: "exp2", title: "The Product Rule of Exponents", body: "Write each of the following products with a single base. Do not simplify further.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

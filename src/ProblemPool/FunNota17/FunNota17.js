@@ -1,1 +1,1 @@
-import steps from "./FunNota17-index.js"; const problem = {id: "FunNota17", title: "Evaluation the function $$f=\\sqrt{\\left(2\\right)-x}+\\left(5\\right)$$ at the indicated values", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./FunNota17-index.js"; const problem = {id: "FunNota17", title: "Evaluation the function $$f=\\sqrt{\\left(2\\right)-x}+\\left(5\\right)$$ at the indicated values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

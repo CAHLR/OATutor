@@ -1,1 +1,1 @@
-import steps from "./hypotest4-index.js"; const problem = {id: "hypotest4", title: "Type II Error and Power", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./hypotest4-index.js"; const problem = {id: "hypotest4", title: "Type II Error and Power", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

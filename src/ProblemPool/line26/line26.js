@@ -1,0 +1,1 @@
+import steps from "./line26-index.js"; const problem = {id: "line26", title: "Find an Equation of a Line Given Two Points", body: "Using the two given points, find the equation of the line.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

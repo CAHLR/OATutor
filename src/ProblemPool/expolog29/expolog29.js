@@ -1,1 +1,1 @@
-import steps from "./expolog29-index.js"; const problem = {id: "expolog29", title: "Logarithmic Application", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./expolog29-index.js"; const problem = {id: "expolog29", title: "Logarithmic Application", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

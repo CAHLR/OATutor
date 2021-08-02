@@ -1,0 +1,1 @@
+import steps from "./probability3-index.js"; const problem = {id: "probability3", title: "Computing the Probability of the Union of Two Events", body: "A card is drawn from a standard deck.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

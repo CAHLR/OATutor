@@ -1,1 +1,1 @@
-import steps from "./RecCord20-index.js"; const problem = {id: "RecCord20", title: "Finding Intercepts: Numeric", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./RecCord20-index.js"; const problem = {id: "RecCord20", title: "Finding Intercepts: Numeric", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

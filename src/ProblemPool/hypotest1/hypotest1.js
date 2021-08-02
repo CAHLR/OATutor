@@ -1,1 +1,1 @@
-import steps from "./hypotest1-index.js"; const problem = {id: "hypotest1", title: "Fish Study", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./hypotest1-index.js"; const problem = {id: "hypotest1", title: "Fish Study", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./farmers1b-index.js"; const step = {id: "farmers1b", stepAnswer: ["farmers_markets.num_columns"], problemType: "TextBox", stepTitle: "Use num_columns to find the number of columns in our farmers' markets dataset. Assign the number of columns to num_farmers_markets_columns.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

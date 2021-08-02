@@ -1,0 +1,1 @@
+import hints from "./coordinates29c-index.js"; const step = {id: "coordinates29c", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$x+\\left(3\\right) y=6$$", stepBody: "If $$y=0$$, what is x?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./theparabola17a-index.js"; const step = {id: "theparabola17a", stepAnswer: ["$$(1,1),(1,2),y=0$$"], problemType: "MultipleChoice", stepTitle: "$${\\left(x-\\left(1\\right)\\right)}^2=4(y-1)$$", stepBody: "", choices: ["$$(1,5),(1,1),y=0$$", "$$(1,3),(1,2),y=0$$", "$$(1,1),(1,2),y=0$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

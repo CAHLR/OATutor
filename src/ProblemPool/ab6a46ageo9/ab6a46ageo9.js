@@ -1,1 +1,1 @@
-import steps from "./ab6a46ageo9-index.js"; const problem = {id: "ab6a46ageo9", title: "Write a recursive formula for each geometric sequence.", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./ab6a46ageo9-index.js"; const problem = {id: "ab6a46ageo9", title: "Write a recursive formula for each geometric sequence.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
