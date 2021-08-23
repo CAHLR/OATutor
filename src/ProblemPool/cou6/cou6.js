@@ -1,0 +1,1 @@
+import steps from "./cou6-index.js"; const problem = {id: "cou6", title: "Numeric", body: "Use the Addition Principle or the Multiplication Principle to perform the calculations.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./sys11a-index.js"; const step = {id: "sys11a", stepAnswer: ["No solution"], problemType: "MultipleChoice", stepTitle: "Determine Number of Solutions.", stepBody: "", choices: ["1 solution", "No solution", "Infinitely many"], answerType: "string", hints: hints, variabilization: {}}; export {step};

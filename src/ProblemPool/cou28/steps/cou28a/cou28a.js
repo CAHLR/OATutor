@@ -1,0 +1,1 @@
+import hints from "./cou28a-index.js"; const step = {id: "cou28a", stepAnswer: ["16384"], problemType: "TextBox", stepTitle: "The set of even numbers from 2 to 28", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

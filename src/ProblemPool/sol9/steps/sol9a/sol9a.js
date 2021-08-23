@@ -1,0 +1,1 @@
+import hints from "./sol9a-index.js"; const step = {id: "sol9a", stepAnswer: ["(-11,15)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "##figure1.gif## ", choices: ["(-11,15)", "(11,15)", "(11,-15)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

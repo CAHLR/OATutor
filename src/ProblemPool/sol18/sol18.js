@@ -1,0 +1,1 @@
+import steps from "./sol18-index.js"; const problem = {id: "sol18", title: "System of Equations", body: "Translate to a system of equations and solve.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

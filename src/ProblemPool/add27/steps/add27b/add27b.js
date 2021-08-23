@@ -1,1 +1,1 @@
-import hints from "./add27b-index.js"; const step = {id: "add27b", stepAnswer: ["28"], problemType: "TextBox", stepTitle: "$$|\\left(-2\\right)8|$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./add27b-index.js"; const step = {id: "add27b", stepAnswer: ["28"], problemType: "TextBox", stepTitle: "$$|-\\left(28\\right)|$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

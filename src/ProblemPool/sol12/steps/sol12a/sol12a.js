@@ -1,0 +1,1 @@
+import hints from "./sol12a-index.js"; const step = {id: "sol12a", stepAnswer: ["(-7,-1)"], problemType: "MultipleChoice", stepTitle: "Refer to the image for the system of equations.", stepBody: "##figure1.gif## ", choices: ["(-7,-1)", "(7,-1)", "(-7,1)", "(1,-7)", "(-1,7)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

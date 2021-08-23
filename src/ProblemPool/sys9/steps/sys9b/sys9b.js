@@ -1,0 +1,1 @@
+import hints from "./sys9b-index.js"; const step = {id: "sys9b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$(5,\\frac{4}{3})$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

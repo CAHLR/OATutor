@@ -1,0 +1,1 @@
+import steps from "./cou30-index.js"; const problem = {id: "cou30", title: "Number of Permutations", body: "Finding the Number of Permutations of n Non-Distinct Objects", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
