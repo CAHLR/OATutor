@@ -1,0 +1,1 @@
+import hints from "./cou24a-index.js"; const step = {id: "cou24a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "A restaurant offers butter, cheese, chives, and sour cream as toppings for a baked potato. How many different ways are there to order a potato?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

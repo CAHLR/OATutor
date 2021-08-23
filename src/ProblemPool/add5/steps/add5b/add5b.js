@@ -1,1 +1,1 @@
-import hints from "./add5b-index.js"; const step = {id: "add5b", stepAnswer: ["-50"], problemType: "TextBox", stepTitle: "$$-\\left(14\\right)+\\left(-3\\right)6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./add5b-index.js"; const step = {id: "add5b", stepAnswer: ["-50"], problemType: "TextBox", stepTitle: "$$-\\left(14\\right)+\\left(-36\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

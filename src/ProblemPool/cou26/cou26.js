@@ -1,0 +1,1 @@
+import steps from "./cou26-index.js"; const problem = {id: "cou26", title: "Subsets", body: "Find the number of subsets in each given set.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

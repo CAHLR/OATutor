@@ -1,0 +1,1 @@
+import hints from "./cou20a-index.js"; const step = {id: "cou20a", stepAnswer: ["495"], problemType: "TextBox", stepTitle: "C(12,4)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

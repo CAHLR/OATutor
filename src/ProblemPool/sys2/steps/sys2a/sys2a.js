@@ -1,0 +1,1 @@
+import hints from "./sys2a-index.js"; const step = {id: "sys2a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "(3,1)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./sys26-index.js"; const problem = {id: "sys26", title: "Graphing Linear Equations", body: "Solve the system by graphing.\n##figure4.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

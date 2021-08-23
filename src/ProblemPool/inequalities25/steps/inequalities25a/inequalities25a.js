@@ -1,1 +1,0 @@
-import hints from "./inequalities25a-index.js"; const step = {id: "inequalities25a", stepAnswer: ["$$[-27,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$\\frac{a}{-\\left(3\\right)} \\leq 9$$", stepBody: "", choices: ["$$[-27,\\infty)$$", "$$[-3,\\infty)$$", "$$(-\\infty,-27)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./cramer29a-index.js"; const step = {id: "cramer29a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 10 & 0.2 & 5 & 0.1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./cramer29a-index.js"; const step = {id: "cramer29a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 10 & 0.2 \\\\ 5 & 0.1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

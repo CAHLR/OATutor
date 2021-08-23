@@ -1,1 +1,1 @@
-import hints from "./Visualize8a-index.js"; const step = {id: "Visualize8a", stepAnswer: ["48x"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{12}{5}\\right) \\left(-2\\right)0 x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Visualize8a-index.js"; const step = {id: "Visualize8a", stepAnswer: ["48x"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{12}{5}\\right) \\left(-\\left(20\\right) x\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
