@@ -1,0 +1,1 @@
+import hints from "./divmonomial17b-index.js"; const step = {id: "divmonomial17b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$b^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

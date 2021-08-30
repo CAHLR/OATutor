@@ -1,1 +1,0 @@
-import steps from "./poly4-index.js"; const problem = {id: "poly4", title: "Subtracting Polynomials", body: "Find the difference of the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

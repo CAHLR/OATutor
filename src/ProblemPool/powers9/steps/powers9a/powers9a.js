@@ -1,0 +1,1 @@
+import hints from "./powers9a-index.js"; const step = {id: "powers9a", stepAnswer: ["$$\\left(1125\\right) t^8$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(5\\right) t^2\\right)}^3 {\\left(\\left(3\\right) t\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

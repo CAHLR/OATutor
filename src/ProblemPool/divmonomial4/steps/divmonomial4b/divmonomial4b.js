@@ -1,0 +1,1 @@
+import hints from "./divmonomial4b-index.js"; const step = {id: "divmonomial4b", stepAnswer: ["$$\\frac{1}{{\\left(7\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(7\\right)}^3}{{\\left(7\\right)}^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

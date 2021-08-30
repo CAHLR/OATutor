@@ -1,0 +1,1 @@
+import hints from "./inv19a-index.js"; const step = {id: "inv19a", stepAnswer: ["(-4/7)/mat{(-1/2,-3/2),(-1,1/2)}"], problemType: "TextBox", stepTitle: "Find the inverse of the matrix /mat{(1/2,3/2),(1,-1/2)}", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

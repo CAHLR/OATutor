@@ -1,0 +1,1 @@
+import steps from "./divmonomial18-index.js"; const problem = {id: "divmonomial18", title: "Simplifying Expressions with an Exponent of Zero", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

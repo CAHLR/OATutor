@@ -1,0 +1,1 @@
+import hints from "./spe7a-index.js"; const step = {id: "spe7a", stepAnswer: ["$$b^2-\\left(14\\right) y+\\left(49\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(b-\\left(7\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

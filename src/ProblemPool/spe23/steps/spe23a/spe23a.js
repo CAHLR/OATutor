@@ -1,0 +1,1 @@
+import hints from "./spe23a-index.js"; const step = {id: "spe23a", stepAnswer: ["$$\\left(25\\right) u^4+\\left(90\\right) u^2+\\left(81\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(5\\right) u^2+\\left(9\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./abd4034poly23a-index.js"; const step = {id: "abd4034poly23a", stepAnswer: ["$$-\\left(5\\right) y^2+\\left(3\\right) y$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(25\\right) y^2-\\left(15\\right) y}{\\left(-5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

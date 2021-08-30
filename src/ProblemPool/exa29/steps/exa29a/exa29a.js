@@ -1,0 +1,1 @@
+import hints from "./exa29a-index.js"; const step = {id: "exa29a", stepAnswer: ["$$-\\left(p^2\\right)+\\left(15\\right) p$$"], problemType: "TextBox", stepTitle: "-p(p-15)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./abd4034poly24a-index.js"; const step = {id: "abd4034poly24a", stepAnswer: ["$$-\\left(8\\right) b^2+\\left(3\\right) b$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(42\\right) b^2-\\left(18\\right) b}{\\left(-6\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

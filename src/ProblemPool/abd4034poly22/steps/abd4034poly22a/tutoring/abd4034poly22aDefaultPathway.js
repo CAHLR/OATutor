@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly22a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by -4, so we get $$-\\left(3\\right) d^2+\\left(4\\right) d$$", text: "", variabilization: {}}, ]; export {hints};

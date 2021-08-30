@@ -1,0 +1,1 @@
+import hints from "./abd4034poly13a-index.js"; const step = {id: "abd4034poly13a", stepAnswer: ["$$\\left(6\\right) p+\\left(3\\right)-\\frac{2}{p}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(36\\right) p^3+\\left(18\\right) p^2-\\left(12\\right) p}{\\left(6\\right) p^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

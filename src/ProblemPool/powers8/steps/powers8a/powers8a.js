@@ -1,0 +1,1 @@
+import hints from "./powers8a-index.js"; const step = {id: "powers8a", stepAnswer: ["$$-\\left(1000\\right) q^6 p^{12}$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(10\\right) q^2 p^4\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

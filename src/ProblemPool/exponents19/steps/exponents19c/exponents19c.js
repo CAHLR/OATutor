@@ -1,0 +1,1 @@
+import hints from "./exponents19c-index.js"; const step = {id: "exponents19c", stepAnswer: ["$$\\frac{1}{y^4}$$"], problemType: "TextBox", stepTitle: "$$y y^{-\\left(5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

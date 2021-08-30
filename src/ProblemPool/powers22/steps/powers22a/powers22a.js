@@ -1,0 +1,1 @@
+import hints from "./powers22a-index.js"; const step = {id: "powers22a", stepAnswer: ["$$\\left(81\\right) d^2$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(9\\right) d\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly26a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by $$\\left(4\\right) d^3$$, so we get $$\\left(15\\right) d^4+\\left(6\\right) d^2$$", text: "", variabilization: {}}, ]; export {hints};

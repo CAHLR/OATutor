@@ -1,0 +1,1 @@
+import steps from "./systemeq16-index.js"; const problem = {id: "systemeq16", title: "Solving Systems of Equations in Word Problems", body: "Lucinda had a pocketful of dimes and quarters with a value of $ $6.20. The number of dimes is eighteen more than three times the number of quarters.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

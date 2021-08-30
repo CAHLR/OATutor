@@ -1,0 +1,1 @@
+import steps from "./a0cc26bpoly17-index.js"; const problem = {id: "a0cc26bpoly17", title: "Multiplying Polynomials", body: "Find the product of the binomials.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

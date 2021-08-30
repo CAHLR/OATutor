@@ -1,0 +1,1 @@
+import hints from "./a0cc26bpoly9a-index.js"; const step = {id: "a0cc26bpoly9a", stepAnswer: ["$$\\left(9\\right) x^2-\\left(48\\right) x+\\left(64\\right)$$."], problemType: "TextBox", stepTitle: "Expand $${\\left(\\left(3\\right) x-\\left(8\\right)\\right)}^2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
