@@ -1,0 +1,1 @@
+import hints from "./divmonomial16c-index.js"; const step = {id: "divmonomial16c", stepAnswer: ["$$\\frac{k^3}{j^3}$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{k}{j}\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./abd4034poly18a-index.js"; const step = {id: "abd4034poly18a", stepAnswer: ["$$\\left(2\\right) z^2-\\left(3\\right)$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(18\\right) z^2-\\left(27\\right)}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

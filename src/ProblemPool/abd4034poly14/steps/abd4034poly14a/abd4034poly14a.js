@@ -1,0 +1,1 @@
+import hints from "./abd4034poly14a-index.js"; const step = {id: "abd4034poly14a", stepAnswer: ["$$\\left(7\\right) a-\\left(12\\right)+\\frac{11}{a}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(63\\right) a^3+\\left(108\\right) a^2+\\left(99\\right) a}{\\left(9\\right) a^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

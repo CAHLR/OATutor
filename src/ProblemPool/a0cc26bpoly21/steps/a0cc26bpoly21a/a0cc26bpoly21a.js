@@ -1,0 +1,1 @@
+import hints from "./a0cc26bpoly21a-index.js"; const step = {id: "a0cc26bpoly21a", stepAnswer: ["$$\\left(16\\right) p^2+\\left(72\\right) p+\\left(81\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(4\\right) p+\\left(9\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

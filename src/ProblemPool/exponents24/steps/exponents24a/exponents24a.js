@@ -1,0 +1,1 @@
+import hints from "./exponents24a-index.js"; const step = {id: "exponents24a", stepAnswer: ["$$\\frac{-\\left(\\left(40\\right) n^3\\right)}{m}$$"], problemType: "TextBox", stepTitle: "$$\\left(-5\\right) m^4 n^6 \\left(8\\right) m^{-\\left(5\\right)} n^{-\\left(3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

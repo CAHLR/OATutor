@@ -1,0 +1,1 @@
+import hints from "./abd4034poly8a-index.js"; const step = {id: "abd4034poly8a", stepAnswer: ["$$\\left(9\\right) x^2 y^3+\\left(12\\right) y$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(45\\right) x^3 y^4+\\left(60\\right) x y^2}{\\left(5\\right) x y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

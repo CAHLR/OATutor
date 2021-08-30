@@ -1,0 +1,1 @@
+import hints from "./abd4034poly27a-index.js"; const step = {id: "abd4034poly27a", stepAnswer: ["$$\\left(36\\right) p^4-\\left(8\\right) p^2$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(216\\right) p^7-\\left(48\\right) p^5}{\\left(6\\right) p^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

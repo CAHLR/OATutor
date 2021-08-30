@@ -1,0 +1,1 @@
+import hints from "./divmonomial14b-index.js"; const step = {id: "divmonomial14b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(11\\right) {pq}^3\\right)}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

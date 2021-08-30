@@ -1,0 +1,1 @@
+import hints from "./subsitution18a-index.js"; const step = {id: "subsitution18a", stepAnswer: ["(4,-3)"], problemType: "MultipleChoice", stepTitle: "$$-3x-5y=3$$, $$y=\\frac{1}{2} x-\\left(5\\right)$$", stepBody: "", choices: ["(4,-1)", "(4,-3)", "(3,-5)", "(8,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

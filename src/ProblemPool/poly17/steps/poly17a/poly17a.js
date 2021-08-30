@@ -1,1 +1,0 @@
-import hints from "./poly17a-index.js"; const step = {id: "poly17a", stepAnswer: ["$$\\left(24\\right) x^2-\\left(4\\right) x-\\left(8\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(\\left(4\\right) x+\\left(2\\right)\\right) \\left(\\left(6\\right) x-\\left(4\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

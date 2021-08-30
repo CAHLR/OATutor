@@ -1,0 +1,1 @@
+import hints from "./powers13a-index.js"; const step = {id: "powers13a", stepAnswer: ["$$\\left(4\\right) f^{11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{5} f^8 \\left(20\\right) f^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

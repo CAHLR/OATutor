@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly29a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by -8ab, so we get $$-\\left(4\\right) a+\\left(2\\right) b$$", text: "", variabilization: {}}, ]; export {hints};

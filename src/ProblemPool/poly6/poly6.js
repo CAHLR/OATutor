@@ -1,1 +1,0 @@
-import steps from "./poly6-index.js"; const problem = {id: "poly6", title: "Multiplying Polynomials Using the Distributive Property", body: "Find the product of the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

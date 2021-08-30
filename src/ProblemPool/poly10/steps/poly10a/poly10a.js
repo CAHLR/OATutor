@@ -1,1 +1,0 @@
-import hints from "./poly10a-index.js"; const step = {id: "poly10a", stepAnswer: ["$$\\left(16\\right) x^2-\\left(8\\right) x+\\left(1\\right)$$"], problemType: "TextBox", stepTitle: "Expand $${\\left(\\left(4\\right) x-\\left(1\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

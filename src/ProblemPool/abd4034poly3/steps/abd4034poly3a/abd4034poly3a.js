@@ -1,0 +1,1 @@
+import hints from "./abd4034poly3a-index.js"; const step = {id: "abd4034poly3a", stepAnswer: ["$$\\left(-\\left(8\\right) p\\right)+\\left(11\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(24\\right) p^2-\\left(33\\right) p}{\\left(-\\left(3\\right) p\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

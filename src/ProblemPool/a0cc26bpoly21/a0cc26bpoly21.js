@@ -1,0 +1,1 @@
+import steps from "./a0cc26bpoly21-index.js"; const problem = {id: "a0cc26bpoly21", title: "Expanding the expression", body: "Expand the binomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

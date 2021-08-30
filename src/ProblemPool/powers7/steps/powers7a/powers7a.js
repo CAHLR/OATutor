@@ -1,0 +1,1 @@
+import hints from "./powers7a-index.js"; const step = {id: "powers7a", stepAnswer: ["$$w^{22}$$"], problemType: "TextBox", stepTitle: "$${\\left(w^4\\right)}^3 {\\left(w^5\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

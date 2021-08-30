@@ -1,1 +1,0 @@
-import hints from "./poly20b-index.js"; const step = {id: "poly20b", stepAnswer: ["$$\\left(9\\right) y^2-\\left(42\\right) y+\\left(49\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(3\\right) y-\\left(7\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
