@@ -1,1 +1,1 @@
-import hints from "./GenStr25l-index.js"; const step = {id: "GenStr25l", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$\\left(15\\right)-\\left(3\\right) r+\\left(8\\right)=28$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./GenStr25l-index.js"; const step = {id: "GenStr25l", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$\\left(15\\right)-\\left(\\left(3\\right) r+\\left(8\\right)\\right)=28$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

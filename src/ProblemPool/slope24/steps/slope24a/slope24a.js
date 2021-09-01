@@ -1,0 +1,1 @@
+import hints from "./slope24a-index.js"; const step = {id: "slope24a", stepAnswer: ["Not Perpendicular"], problemType: "MultipleChoice", stepTitle: "$$\\left(7\\right) x+\\left(2\\right) y=3$$, $$\\left(2\\right) x+\\left(7\\right) y=5$$", stepBody: "", choices: ["Perpendicular", "Not Perpendicular"], answerType: "string", hints: hints, variabilization: {}}; export {step};

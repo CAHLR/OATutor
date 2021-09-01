@@ -1,1 +1,1 @@
-import steps from "./MoApp9-index.js"; const problem = {id: "MoApp9", title: "Solving a Perimeter Problem", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./MoApp9-index.js"; const problem = {id: "MoApp9", title: "Solving a Perimeter Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

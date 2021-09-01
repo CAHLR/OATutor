@@ -1,1 +1,1 @@
-import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./use33-index.js"; const problem = {id: "use33", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

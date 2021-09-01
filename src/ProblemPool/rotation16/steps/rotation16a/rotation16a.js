@@ -1,0 +1,1 @@
+import hints from "./rotation16a-index.js"; const step = {id: "rotation16a", stepAnswer: ["(3+2sqrt(3))(x'**2)+(1-2sqrt(3))(y'**2)+(4-2sqrt(3))(x'y')-1=0"], problemType: "TextBox", stepTitle: "Finding a New Representation of the Given Equation after Rotating through a Given Angle", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

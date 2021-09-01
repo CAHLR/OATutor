@@ -1,1 +1,1 @@
-import steps from "./RadRat11-index.js"; const problem = {id: "RadRat11", title: "Rationalizing a Denominator Containing a Single Term", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./RadRat11-index.js"; const problem = {id: "RadRat11", title: "Rationalizing a Denominator Containing a Single Term", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

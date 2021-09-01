@@ -1,0 +1,1 @@
+import hints from "./a7ea646graph12a-index.js"; const step = {id: "a7ea646graph12a", stepAnswer: ["(0,0),(1,0),(-1,0)"], problemType: "TextBox", stepTitle: "Find the x-intercepts of $$f(x)=x^4-x^2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

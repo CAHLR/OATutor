@@ -1,0 +1,1 @@
+import hints from "./powers10a-index.js"; const step = {id: "powers10a", stepAnswer: ["$$\\left(48\\right) y^4$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(2\\right) y\\right)}^3 \\left(6\\right) y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

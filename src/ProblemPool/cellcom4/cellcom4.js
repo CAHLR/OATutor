@@ -1,1 +1,1 @@
-import steps from "./cellcom4-index.js"; const problem = {id: "cellcom4", title: "Review Question 8", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./cellcom4-index.js"; const problem = {id: "cellcom4", title: "Review Question 8", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

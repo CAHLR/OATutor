@@ -1,0 +1,1 @@
+import hints from "./powers27a-index.js"; const step = {id: "powers27a", stepAnswer: ["$$-\\left(12\\right) x^5$$"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) x^2 \\left(-\\left(4\\right) x^3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

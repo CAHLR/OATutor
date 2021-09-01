@@ -1,0 +1,1 @@
+import hints from "./exa17a-index.js"; const step = {id: "exa17a", stepAnswer: ["$$\\left(6\\right) b+\\left(48\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) \\left(b+\\left(8\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

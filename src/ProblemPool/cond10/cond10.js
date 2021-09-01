@@ -1,1 +1,1 @@
-import steps from "./cond10-index.js"; const problem = {id: "cond10", title: "Flipping a Coin", body: "Toss a fair coin 3 times", steps: steps, variabilization: {}}; export { problem };
+import steps from "./cond10-index.js"; const problem = {id: "cond10", title: "Flipping a Coin", body: "Toss a fair coin 3 times", steps: steps, variabilization: {}, oer: "https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading3.pdf"}; export { problem };

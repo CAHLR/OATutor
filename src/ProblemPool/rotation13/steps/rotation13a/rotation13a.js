@@ -1,0 +1,1 @@
+import hints from "./rotation13a-index.js"; const step = {id: "rotation13a", stepAnswer: ["(7x'**2)+(9y'**2)-4=0"], problemType: "TextBox", stepTitle: "Finding a New Representation of the Given Equation after Rotating through a Given Angle", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

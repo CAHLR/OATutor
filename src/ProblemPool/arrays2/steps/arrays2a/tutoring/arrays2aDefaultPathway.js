@@ -1,1 +1,0 @@
-var hints = [{id: "arrays2a-h1", type: "hint", dependencies: [], title: "make_array", text: "Use make_array to create an array.", variabilization: {}}, ]; export {hints};

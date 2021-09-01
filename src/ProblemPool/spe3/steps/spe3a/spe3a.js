@@ -1,0 +1,1 @@
+import hints from "./spe3a-index.js"; const step = {id: "spe3a", stepAnswer: ["$$q^2+\\left(24\\right) q+\\left(144\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(q+\\left(12\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

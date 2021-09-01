@@ -1,1 +1,1 @@
-import steps from "./linear13-index.js"; const problem = {id: "linear13", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linear13-index.js"; const problem = {id: "linear13", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org"}; export { problem };

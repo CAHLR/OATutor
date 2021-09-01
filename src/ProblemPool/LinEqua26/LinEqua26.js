@@ -1,1 +1,1 @@
-import steps from "./LinEqua26-index.js"; const problem = {id: "LinEqua26", title: "Determining Whether the Lines are Parallel, Perpendicular, or Neither", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinEqua26-index.js"; const problem = {id: "LinEqua26", title: "Determining Whether the Lines are Parallel, Perpendicular, or Neither", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

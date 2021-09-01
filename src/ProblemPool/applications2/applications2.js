@@ -1,0 +1,1 @@
+import steps from "./applications2-index.js"; const problem = {id: "applications2", title: "Translating a System of Equations", body: "Translate to a system of equations and solve.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

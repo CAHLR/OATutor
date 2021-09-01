@@ -1,1 +1,1 @@
-import steps from "./quadratic29-index.js"; const problem = {id: "quadratic29", title: "Quadratic Functions", body: "For the following exercises, determine the domain and range of the quadratic function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./quadratic29-index.js"; const problem = {id: "quadratic29", title: "Quadratic Functions", body: "For the following exercises, determine the domain and range of the quadratic function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

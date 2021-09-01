@@ -1,1 +1,1 @@
-import steps from "./inverses7-index.js"; const problem = {id: "inverses7", title: "Solving an Application with a Cubic Function", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverses7-index.js"; const problem = {id: "inverses7", title: "Solving an Application with a Cubic Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

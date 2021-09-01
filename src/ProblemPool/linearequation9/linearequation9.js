@@ -1,0 +1,1 @@
+import steps from "./linearequation9-index.js"; const problem = {id: "linearequation9", title: "Finding the Slope of a Linear Equation", body: "What is the slope of the equation?", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

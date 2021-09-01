@@ -1,0 +1,1 @@
+import hints from "./conic20a-index.js"; const step = {id: "conic20a", stepAnswer: ["$$\\left(8\\right) \\sqrt{x^2+y^2}-\\left(8\\right) x=3$$"], problemType: "TextBox", stepTitle: "Convert $$r=\\frac{3}{\\left(8\\right)-\\left(8\\right) cos \\theta}$$ to rectangular form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

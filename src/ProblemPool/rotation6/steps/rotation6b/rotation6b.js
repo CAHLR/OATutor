@@ -1,0 +1,1 @@
+import hints from "./rotation6b-index.js"; const step = {id: "rotation6b", stepAnswer: ["Ellipse"], problemType: "MultipleChoice", stepTitle: "$$\\left(10\\right) x^2-\\left(9\\right) x y+\\left(4\\right) y^2-\\left(4\\right)=0$$", stepBody: "", choices: ["Circle", "Parabola", "Ellipse", "Hyperbola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

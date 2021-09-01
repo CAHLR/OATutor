@@ -1,1 +1,0 @@
-import hints from "./poly27a-index.js"; const step = {id: "poly27a", stepAnswer: ["$$\\left(4\\right) t^2+x^2+\\left(4\\right) t-\\left(5\\right) tx-x$$"], problemType: "TextBox", stepTitle: "$$\\left(\\left(4\\right) t-x\\right) \\left(t-x+\\left(1\\right)\\right)$$", stepBody: "Expand the expression", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

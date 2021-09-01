@@ -1,0 +1,1 @@
+import hints from "./conic12c-index.js"; const step = {id: "conic12c", stepAnswer: ["Ellipse"], problemType: "MultipleChoice", stepTitle: "Identify the Conic", stepBody: "What type of conic does the polar equation represent?", choices: ["Parabola", "Hyperbola", "Ellipse"], answerType: "string", hints: hints, variabilization: {}}; export {step};

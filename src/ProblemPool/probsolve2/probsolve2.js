@@ -1,1 +1,1 @@
-import steps from "./probsolve2-index.js"; const problem = {id: "probsolve2", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./probsolve2-index.js"; const problem = {id: "probsolve2", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./LinIneq1-index.js"; const problem = {id: "LinIneq1", title: "Using Interval Notation to Express All Real Numbers Greater Than or Equal to a", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinIneq1-index.js"; const problem = {id: "LinIneq1", title: "Using Interval Notation to Express All Real Numbers Greater Than or Equal to a", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "divmonomial9b-h1", type: "hint", dependencies: [], title: "Definition of the Quotient Property for Exponents", text: "If $$m>n$$, then $$\\frac{a^m}{a^n}$$ is equal to $$a^{m-n}$$. Otherwise, if $$m<n$$, then $$\\frac{a^m}{a^n}=\\frac{1}{a^{n-m}}$$.", variabilization: {}}, ]; export {hints};

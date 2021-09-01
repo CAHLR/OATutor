@@ -1,1 +1,0 @@
-import hints from "./table1a-index.js"; const step = {id: "table1a", stepAnswer: ["False"], problemType: "MultipleChoice", stepTitle: "True or false? In this class, the following is a valid table.", stepBody: "", choices: ["True", "False"], answerType: "string", hints: hints, variabilization: {}}; export {step};

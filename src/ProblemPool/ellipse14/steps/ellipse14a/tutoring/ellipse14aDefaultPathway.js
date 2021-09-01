@@ -1,0 +1,1 @@
+var hints = [{id: "ellipse14a-h1", type: "hint", dependencies: [], title: "Matching Standard Form", text: "Change the denominator so that it's in a squared format.", variabilization: {}}, ]; export {hints};

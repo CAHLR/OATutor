@@ -1,1 +1,1 @@
-import steps from "./gaussian9-index.js"; const problem = {id: "gaussian9", title: "Solving a System of Linear Equations Using Matrices", body: "Solve the system of linear equations using matrices.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./gaussian9-index.js"; const problem = {id: "gaussian9", title: "Solving a System of Linear Equations Using Matrices", body: "Solve the system of linear equations using matrices.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

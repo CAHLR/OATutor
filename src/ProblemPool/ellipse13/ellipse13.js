@@ -1,0 +1,1 @@
+import steps from "./ellipse13-index.js"; const problem = {id: "ellipse13", title: "The Ellipse", body: "$$x^2+\\left(9\\right) y^2=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

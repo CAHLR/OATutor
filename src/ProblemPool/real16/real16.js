@@ -1,1 +1,1 @@
-import steps from "./real16-index.js"; const problem = {id: "real16", title: "Anna in D.C.", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./real16-index.js"; const problem = {id: "real16", title: "Anna in D.C.", body: "", steps: steps, variabilization: {}, oer: "http://tasks.illustrativemathematics.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./rationals6-index.js"; const problem = {id: "rationals6", title: "Analyzing Rational Functions #", body: "Find the domain, vertical asymptotes, and horizontal asymptotes of the function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rationals6-index.js"; const problem = {id: "rationals6", title: "Analyzing Rational Functions #", body: "Find the domain, vertical asymptotes, and horizontal asymptotes of the function.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

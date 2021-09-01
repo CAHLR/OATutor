@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeq5-index.js"; const problem = {id: "ab8b840systemeq5", title: "Solving Systems of Linear Equations", body: "Solve the system: $$-\\left(\\frac{1}{4}\\right) x+\\frac{3}{2} y=11$$, $$-\\left(\\frac{1}{8}\\right) x+\\frac{1}{3} y=3$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./cou14-index.js"; const problem = {id: "cou14", title: "Number of Permutations", body: "Compute the value of the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

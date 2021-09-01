@@ -1,0 +1,1 @@
+import steps from "./geometric8-index.js"; const problem = {id: "geometric8", title: "Writing an Explicit Formula for the n th Term of a Geometric Sequence", body: "Write an explicit formula for the nth term of the following geometric sequence.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./VarCon3-index.js"; const problem = {id: "VarCon3", title: "Solve the equation", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./VarCon3-index.js"; const problem = {id: "VarCon3", title: "Solve the equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

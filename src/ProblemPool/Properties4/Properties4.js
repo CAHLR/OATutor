@@ -1,1 +1,1 @@
-import steps from "./Properties4-index.js"; const problem = {id: "Properties4", title: "Simplify the following expression.", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Properties4-index.js"; const problem = {id: "Properties4", title: "Simplify the following expression.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

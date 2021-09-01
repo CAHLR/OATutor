@@ -1,0 +1,1 @@
+import hints from "./sequences25c-index.js"; const step = {id: "sequences25c", stepAnswer: ["-25"], problemType: "TextBox", stepTitle: "Write the third term of the sequence defined by the explicit formula $$a_n=-\\left({\\left(-5\\right)}^{n-\\left(1\\right)}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./sys19b-index.js"; const step = {id: "sys19b", stepAnswer: ["Consistent & Independent"], problemType: "MultipleChoice", stepTitle: "Classify the system of equations.", stepBody: "", choices: ["Consistent & Independent", "Inconsistent & Independent", "Consistent & Dependent"], answerType: "string", hints: hints, variabilization: {}}; export {step};

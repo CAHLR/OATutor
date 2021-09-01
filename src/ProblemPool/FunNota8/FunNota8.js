@@ -1,1 +1,1 @@
-import steps from "./FunNota8-index.js"; const problem = {id: "FunNota8", title: "Evaluating functions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./FunNota8-index.js"; const problem = {id: "FunNota8", title: "Evaluating functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

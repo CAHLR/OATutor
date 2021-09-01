@@ -1,0 +1,1 @@
+import hints from "./a7ea646graph5b-index.js"; const step = {id: "a7ea646graph5b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$f(x)=-\\left(x-\\left(1\\right)+{rightt}^2 \\left(\\left(1\\right)+\\left(2\\right) x^2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

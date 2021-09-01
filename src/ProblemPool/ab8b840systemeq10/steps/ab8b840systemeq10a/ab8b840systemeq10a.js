@@ -1,0 +1,1 @@
+import hints from "./ab8b840systemeq10a-index.js"; const step = {id: "ab8b840systemeq10a", stepAnswer: ["No solution"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["Infinitely many solutions", "(4,6)", "(17,29)", "No solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

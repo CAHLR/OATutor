@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeq6-index.js"; const problem = {id: "ab8b840systemeq6", title: "Solving Systems of Linear Equations", body: "Solve the system: $$-\\left(2\\right) x+\\left(5\\right) y=-42$$, $$\\left(7\\right) x+\\left(2\\right) y=30$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

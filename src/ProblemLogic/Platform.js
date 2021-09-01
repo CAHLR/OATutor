@@ -172,13 +172,13 @@ class Platform extends React.Component {
         <AppBar position="static" >
           <Toolbar>
             <Grid container spacing={0}>
-              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS (v{this.context.siteVersion})</div></Grid>
+              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div></Grid>
               <Grid item xs={6} key={2}>
-                <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
+                <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
                   {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
                 </div></Grid>
               <Grid item xs={3} key={3} >
-                <div style={{ textAlign: 'right' }}>
+                <div style={{ textAlign: 'right', paddingTop: "3px" }}>
                   {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection" ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%" : ""}
                   {false ?
                     <Router>

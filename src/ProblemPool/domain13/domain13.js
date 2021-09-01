@@ -1,1 +1,1 @@
-import steps from "./domain13-index.js"; const problem = {id: "domain13", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./domain13-index.js"; const problem = {id: "domain13", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

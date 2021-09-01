@@ -1,1 +1,0 @@
-import steps from "./TblFn2-index.js"; const problem = {id: "TblFn2", title: "Dog Ages", body: "", steps: steps, variabilization: {}}; export { problem };

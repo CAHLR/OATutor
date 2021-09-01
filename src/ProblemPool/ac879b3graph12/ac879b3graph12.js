@@ -1,0 +1,1 @@
+import steps from "./ac879b3graph12-index.js"; const problem = {id: "ac879b3graph12", title: "Determining the X- and Y-Intercepts to the Equation $$2x-4y=8$$.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

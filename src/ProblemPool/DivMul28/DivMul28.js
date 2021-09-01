@@ -1,1 +1,1 @@
-import steps from "./DivMul28-index.js"; const problem = {id: "DivMul28", title: "Translate and Solve", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./DivMul28-index.js"; const problem = {id: "DivMul28", title: "Translate and Solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

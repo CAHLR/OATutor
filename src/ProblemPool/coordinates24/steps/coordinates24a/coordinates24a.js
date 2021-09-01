@@ -1,0 +1,1 @@
+import hints from "./coordinates24a-index.js"; const step = {id: "coordinates24a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$y=-x+\\left(2\\right)$$ If $$x=0$$, what is y?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

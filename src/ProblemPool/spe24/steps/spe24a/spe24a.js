@@ -1,0 +1,1 @@
+import hints from "./spe24a-index.js"; const step = {id: "spe24a", stepAnswer: ["$$\\left(16\\right) y^6-\\left(16\\right) y^3+\\left(4\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(4\\right) y^3-\\left(2\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

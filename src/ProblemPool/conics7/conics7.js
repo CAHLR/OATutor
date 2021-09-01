@@ -1,0 +1,1 @@
+import steps from "./conics7-index.js"; const problem = {id: "conics7", title: "Determine parts of the graph", body: "Find the focus of the parabola.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

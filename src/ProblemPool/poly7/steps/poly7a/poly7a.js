@@ -1,1 +1,0 @@
-import hints from "./poly7a-index.js"; const step = {id: "poly7a", stepAnswer: ["$$\\left(6\\right) x^2-\\left(48\\right) x-\\left(54\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(\\left(2\\right) x-\\left(18\\right)\\right) \\left(\\left(3\\right) x+\\left(3\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

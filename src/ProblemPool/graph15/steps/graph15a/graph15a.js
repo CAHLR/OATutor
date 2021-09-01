@@ -1,1 +1,0 @@
-import hints from "./graph15a-index.js"; const step = {id: "graph15a", stepAnswer: ["(-2,0),(2,0),(-1,0)"], problemType: "TextBox", stepTitle: "Find the x-intercepts of $$f(x)=x^3+x^2-\\left(4\\right) x-\\left(4\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

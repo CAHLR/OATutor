@@ -1,0 +1,1 @@
+import hints from "./abd4034poly20a-index.js"; const step = {id: "abd4034poly20a", stepAnswer: ["$$\\left(9\\right) b^2-\\left(11\\right) b$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(27\\right) b^3-\\left(33\\right) b^2}{3} b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

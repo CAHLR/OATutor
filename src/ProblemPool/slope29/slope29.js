@@ -1,0 +1,1 @@
+import steps from "./slope29-index.js"; const problem = {id: "slope29", title: "Perpendicular Lines", body: "Use slopes to determine if the lines are perpendicular.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

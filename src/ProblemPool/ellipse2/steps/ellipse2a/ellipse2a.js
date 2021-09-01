@@ -1,0 +1,1 @@
+import hints from "./ellipse2a-index.js"; const step = {id: "ellipse2a", stepAnswer: ["$$\\frac{x^2}{1}+\\frac{y^2}{16}=1$$"], problemType: "TextBox", stepTitle: "Vertices (0,4) and (0,-4), and foci $$(0,\\sqrt{15})$$, and $$(0,-\\sqrt{15})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

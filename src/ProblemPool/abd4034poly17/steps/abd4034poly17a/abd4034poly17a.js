@@ -1,0 +1,1 @@
+import hints from "./abd4034poly17a-index.js"; const step = {id: "abd4034poly17a", stepAnswer: ["$$\\left(2\\right) z^2+\\left(6\\right)$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(8\\right) z^2+\\left(24\\right)}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./LinIneq21-index.js"; const problem = {id: "LinIneq21", title: "Solving an Inequality with Fractions", body: "Solve the inequality and write the answer in interval notation:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinIneq21-index.js"; const problem = {id: "LinIneq21", title: "Solving an Inequality with Fractions", body: "Solve the inequality and write the answer in interval notation:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

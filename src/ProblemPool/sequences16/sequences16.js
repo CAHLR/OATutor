@@ -1,0 +1,1 @@
+import steps from "./sequences16-index.js"; const problem = {id: "sequences16", title: "Writing the Terms of a Sequence Defined by an Explicit Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

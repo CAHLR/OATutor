@@ -1,0 +1,1 @@
+import hints from "./ser9a-index.js"; const step = {id: "ser9a", stepAnswer: ["135"], problemType: "TextBox", stepTitle: "-1+3+7+...+31", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

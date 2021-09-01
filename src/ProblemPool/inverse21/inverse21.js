@@ -1,1 +1,1 @@
-import steps from "./inverse21-index.js"; const problem = {id: "inverse21", title: "Finding the Inverse", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverse21-index.js"; const problem = {id: "inverse21", title: "Finding the Inverse", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

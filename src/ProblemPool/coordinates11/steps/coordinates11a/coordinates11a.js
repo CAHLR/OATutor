@@ -1,0 +1,1 @@
+import hints from "./coordinates11a-index.js"; const step = {id: "coordinates11a", stepAnswer: ["(0,-5)"], problemType: "MultipleChoice", stepTitle: "Given $$x=0$$, find a solution for the equation $$5x-4y=20$$.", stepBody: "Enter your answer as a coordinate pair.", choices: ["(0,-5)", "(0,-4)", "(0,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

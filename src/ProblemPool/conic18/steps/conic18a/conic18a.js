@@ -1,0 +1,1 @@
+import hints from "./conic18a-index.js"; const step = {id: "conic18a", stepAnswer: ["$$\\left(2\\right) \\sqrt{x^2+y^2}+\\left(5\\right) x=3$$"], problemType: "TextBox", stepTitle: "Convert $$r=\\frac{3}{\\left(2\\right)+\\left(5\\right) cos \\theta}$$ to rectangular form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

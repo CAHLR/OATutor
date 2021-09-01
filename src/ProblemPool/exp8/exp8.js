@@ -1,1 +1,1 @@
-import steps from "./exp8-index.js"; const problem = {id: "exp8", title: "The Zero Exponent Rule of Exponents", body: "Simplify each expression using the zero exponent rule of exponents.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./exp8-index.js"; const problem = {id: "exp8", title: "The Zero Exponent Rule of Exponents", body: "Simplify each expression using the zero exponent rule of exponents.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

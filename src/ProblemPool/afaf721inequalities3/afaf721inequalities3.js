@@ -1,0 +1,1 @@
+import steps from "./afaf721inequalities3-index.js"; const problem = {id: "afaf721inequalities3", title: "Interval Notation Practice", body: "Graph the following inequalities on the number line, and choose the correct interval domain as the answer.", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

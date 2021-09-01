@@ -1,1 +1,1 @@
-import steps from "./inv17-index.js"; const problem = {id: "inv17", title: "Finding the Inverse of a 2x2 Matrix", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inv17-index.js"; const problem = {id: "inv17", title: "Finding the Inverse of a 2x2 Matrix", body: "", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

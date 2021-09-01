@@ -1,1 +1,1 @@
-import steps from "./measure1-index.js"; const problem = {id: "measure1", title: "How to Make Unit Conversions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./measure1-index.js"; const problem = {id: "measure1", title: "How to Make Unit Conversions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

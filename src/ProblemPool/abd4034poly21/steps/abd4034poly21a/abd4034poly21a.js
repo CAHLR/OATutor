@@ -1,0 +1,1 @@
+import hints from "./abd4034poly21a-index.js"; const step = {id: "abd4034poly21a", stepAnswer: ["$$\\left(5\\right) y^2-\\left(11\\right) y$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(25\\right) y^3-\\left(55\\right) y^2}{5} y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

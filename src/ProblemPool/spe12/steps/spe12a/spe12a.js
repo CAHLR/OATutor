@@ -1,0 +1,1 @@
+import hints from "./spe12a-index.js"; const step = {id: "spe12a", stepAnswer: ["$$\\left(9\\right) d^2+\\left(6\\right) d+\\left(1\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(3\\right) d+\\left(1\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

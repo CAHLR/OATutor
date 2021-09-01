@@ -1,1 +1,1 @@
-import steps from "./composition12-index.js"; const problem = {id: "composition12", title: "Decomposing a Function", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./composition12-index.js"; const problem = {id: "composition12", title: "Decomposing a Function", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

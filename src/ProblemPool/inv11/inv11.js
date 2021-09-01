@@ -1,1 +1,1 @@
-import steps from "./inv11-index.js"; const problem = {id: "inv11", title: "Finding the Multiplicative Inverse of 3x3 Matrices #3", body: "Given the 3x3 matrix A, find the inverse.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inv11-index.js"; const problem = {id: "inv11", title: "Finding the Multiplicative Inverse of 3x3 Matrices #3", body: "Given the 3x3 matrix A, find the inverse.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

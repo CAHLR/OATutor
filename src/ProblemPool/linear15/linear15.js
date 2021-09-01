@@ -1,1 +1,1 @@
-import steps from "./linear15-index.js"; const problem = {id: "linear15", title: "Writing the Equation of a Horizontal Line", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linear15-index.js"; const problem = {id: "linear15", title: "Writing the Equation of a Horizontal Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/"}; export { problem };

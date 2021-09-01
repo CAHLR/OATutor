@@ -1,0 +1,1 @@
+import hints from "./ellipse13b-index.js"; const step = {id: "ellipse13b", stepAnswer: ["(1,0) and (-1,0)"], problemType: "MultipleChoice", stepTitle: "Identify the end points of the major axis", stepBody: "", choices: ["(1,0) and (-1,0)", "(2,0), and (-2,0)", "(3,0) and (-3,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

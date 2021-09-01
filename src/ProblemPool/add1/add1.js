@@ -1,1 +1,1 @@
-import steps from "./add1-index.js"; const problem = {id: "add1", title: "Simplifying Expressions with Integers", body: "Simplify the following expression.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./add1-index.js"; const problem = {id: "add1", title: "Simplifying Expressions with Integers", body: "Simplify the following expression.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./divmonomial18a-index.js"; const step = {id: "divmonomial18a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(13\\right)}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

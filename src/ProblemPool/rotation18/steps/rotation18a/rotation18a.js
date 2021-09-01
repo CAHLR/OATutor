@@ -1,0 +1,1 @@
+import hints from "./rotation18a-index.js"; const step = {id: "rotation18a", stepAnswer: ["150"], problemType: "TextBox", stepTitle: "Finding the Angle", stepBody: "Determine the angle 𝜃 that will eliminate the xy term (in degrees)", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

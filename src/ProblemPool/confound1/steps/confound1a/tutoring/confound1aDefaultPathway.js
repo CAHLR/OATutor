@@ -1,1 +1,0 @@
-var hints = [{id: "confound1a-h1", type: "hint", dependencies: [], title: "Confounding factor", text: "It is difficult to make conclusions about causality when treatment and control groups differ in ways other than treatment.", variabilization: {}}, ]; export {hints};

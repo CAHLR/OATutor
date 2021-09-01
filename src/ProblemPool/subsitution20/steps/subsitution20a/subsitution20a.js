@@ -1,0 +1,1 @@
+import hints from "./subsitution20a-index.js"; const step = {id: "subsitution20a", stepAnswer: ["(5,-3)"], problemType: "MultipleChoice", stepTitle: "$$x+\\left(2\\right) y=-1$$, $$\\left(2\\right) x+\\left(3\\right) y=1$$", stepBody: "", choices: ["(5,-3)", "(4,-2)", "(6,-3)", "(4,-1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

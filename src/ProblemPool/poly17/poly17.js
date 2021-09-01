@@ -1,1 +1,0 @@
-import steps from "./poly17-index.js"; const problem = {id: "poly17", title: "Multiplying Polynomials", body: "Find the product of the binomials.", steps: steps, variabilization: {}}; export { problem };

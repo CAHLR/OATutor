@@ -1,1 +1,1 @@
-import steps from "./addand1-index.js"; const problem = {id: "addand1", title: "Add Fractions with a Common Denominator", body: "Find the sum:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./addand1-index.js"; const problem = {id: "addand1", title: "Add Fractions with a Common Denominator", body: "Find the sum:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

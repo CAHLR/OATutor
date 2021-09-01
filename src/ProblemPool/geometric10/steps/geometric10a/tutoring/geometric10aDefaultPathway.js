@@ -1,0 +1,1 @@
+var hints = [{id: "geometric10a-h1", type: "hint", dependencies: [], title: "Divide", text: "First, divide the second term by the first term.", variabilization: {}}, {id: "geometric10a-h2", type: "hint", dependencies: ["geometric10a-h1"], title: "Answer", text: "When you divide the second term by the first, r becomes 3.", variabilization: {}}, ]; export {hints};
