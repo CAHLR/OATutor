@@ -212,8 +212,6 @@ app.post('/grade', function (req, res) {
 
   // Calculate overall score
   var score = req.body.score;
-  var MASTERED = 0.85;
-  score = Math.round(Math.min(mastery / (MASTERED), 1.0) * 100);
   payload += "<h3> Overall score: " + score + "</h3>"
   Object.keys(req.body.components).forEach((key, i) => {
     // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
