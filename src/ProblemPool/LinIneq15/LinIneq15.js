@@ -1,1 +1,1 @@
-import steps from "./LinIneq15-index.js"; const problem = {id: "LinIneq15", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinIneq15-index.js"; const problem = {id: "LinIneq15", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

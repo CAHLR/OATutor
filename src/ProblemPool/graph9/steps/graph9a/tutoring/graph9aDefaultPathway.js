@@ -1,1 +1,0 @@
-var hints = [{id: "graph9a-h1", type: "hint", dependencies: [], title: "Find the t values when $$C(t)=0$$.", text: "", variabilization: {}}, ]; export {hints};

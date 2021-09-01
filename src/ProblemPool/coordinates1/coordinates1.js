@@ -1,0 +1,1 @@
+import steps from "./coordinates1-index.js"; const problem = {id: "coordinates1", title: "Identify Points in Quadrants", body: "Plot the following point and identify the quadrant in which it is located.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./arrays2-index.js"; const problem = {id: "arrays2", title: "Book Title Words", body: "", steps: steps, variabilization: {}}; export { problem };

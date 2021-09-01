@@ -1,1 +1,1 @@
-import steps from "./matrices19-index.js"; const problem = {id: "matrices19", title: "Multiplying the Matrix By a Scalar", body: "Given matrix B, find -2B.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./matrices19-index.js"; const problem = {id: "matrices19", title: "Multiplying the Matrix By a Scalar", body: "Given matrix B, find -2B.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

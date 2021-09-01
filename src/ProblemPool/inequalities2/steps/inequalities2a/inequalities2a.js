@@ -1,1 +1,0 @@
-import hints from "./inequalities2a-index.js"; const step = {id: "inequalities2a", stepAnswer: ["$$(2,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$x>2$$", stepBody: "", choices: ["$$[2,\\infty)$$", "$$(2,\\infty)$$", "$$(2,\\infty]$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

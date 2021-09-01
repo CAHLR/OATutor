@@ -1,1 +1,1 @@
-import steps from "./factor26-index.js"; const problem = {id: "factor26", title: "Factoring by Grouping", body: "Factor the following expression.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./factor26-index.js"; const problem = {id: "factor26", title: "Factoring by Grouping", body: "Factor the following expression.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./powers20b-index.js"; const step = {id: "powers20b", stepAnswer: ["$${\\left(4\\right)}^{28}$$"], problemType: "TextBox", stepTitle: "$${\\left({\\left(4\\right)}^4\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

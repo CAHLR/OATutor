@@ -1,0 +1,1 @@
+import steps from "./exponents16-index.js"; const problem = {id: "exponents16", title: "Use the Definition of a Negative Exponent", body: "Simplify the following", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

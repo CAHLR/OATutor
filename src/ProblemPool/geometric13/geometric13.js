@@ -1,0 +1,1 @@
+import steps from "./geometric13-index.js"; const problem = {id: "geometric13", title: "Finding the Common Ratio of the Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

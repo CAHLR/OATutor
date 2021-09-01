@@ -1,1 +1,1 @@
-import steps from "./power34-index.js"; const problem = {id: "power34", title: "Determine the end behavior of the functions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./power34-index.js"; const problem = {id: "power34", title: "Determine the end behavior of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

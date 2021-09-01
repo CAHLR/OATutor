@@ -1,0 +1,1 @@
+import hints from "./abd4034poly7a-index.js"; const step = {id: "abd4034poly7a", stepAnswer: ["$$\\left(7\\right) a b^2+\\left(8\\right) b^3$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(63\\right) a^2 b^3+\\left(72\\right) a b^4}{\\left(9\\right) a b}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

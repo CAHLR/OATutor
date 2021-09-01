@@ -1,1 +1,0 @@
-import hints from "./index2a-index.js"; const step = {id: "index2a", stepAnswer: ["141"], problemType: "TextBox", stepTitle: "You'll sometimes want to find the last element of an array. Suppose an array has 142 elements. What is the index of its last element?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./exponents9a-index.js"; const step = {id: "exponents9a", stepAnswer: ["$$\\frac{1}{\\left(36\\right) k^6}$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(6\\right) k^3\\right)}^{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

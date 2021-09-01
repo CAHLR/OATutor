@@ -1,1 +1,0 @@
-import steps from "./poly16-index.js"; const problem = {id: "poly16", title: "Adding and Subtracting Polynomials", body: "Simplify the expression by adding or subtracting.", steps: steps, variabilization: {}}; export { problem };

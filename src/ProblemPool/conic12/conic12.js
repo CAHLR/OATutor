@@ -1,0 +1,1 @@
+import steps from "./conic12-index.js"; const problem = {id: "conic12", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{16}{\\left(4\\right)+\\left(3\\right) sintheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

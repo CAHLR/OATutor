@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly25a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by $$\\left(5\\right) y^2$$, so we get $$\\left(21\\right) y^3+\\left(15\\right) y$$", text: "", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import steps from "./graph9-index.js"; const problem = {id: "graph9", title: "Find the t-intercepts of the Following Function #5", body: "Find the t-intercepts of the following function.", steps: steps, variabilization: {}}; export { problem };

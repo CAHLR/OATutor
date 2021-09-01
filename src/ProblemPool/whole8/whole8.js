@@ -1,1 +1,1 @@
-import steps from "./whole8-index.js"; const problem = {id: "whole8", title: "Divisibility Tests", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./whole8-index.js"; const problem = {id: "whole8", title: "Divisibility Tests", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

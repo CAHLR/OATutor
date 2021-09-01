@@ -1,1 +1,1 @@
-import steps from "./linear10-index.js"; const problem = {id: "linear10", title: "Linear Functions", body: "Find the slope of the line that passes through the two given points.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linear10-index.js"; const problem = {id: "linear10", title: "Linear Functions", body: "Find the slope of the line that passes through the two given points.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

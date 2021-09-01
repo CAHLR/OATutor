@@ -2,9 +2,9 @@ import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
-var problemSubmissionsOutputDev = "problemSubmissionsSum21Dev";
-var problemSubmissionsOutput = "problemSubmissionsSum21";
-var feedbackOutput = "feedbackSum21";
+var problemSubmissionsOutputDev = "problemSubmissionsFall21Dev";
+var problemSubmissionsOutput = "problemSubmissionsFall21";
+var feedbackOutput = "feedbackFall21";
 
 class Firebase {
 

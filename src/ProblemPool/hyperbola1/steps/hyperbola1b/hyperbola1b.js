@@ -1,0 +1,1 @@
+import hints from "./hyperbola1b-index.js"; const step = {id: "hyperbola1b", stepAnswer: ["(0,9),(0,-9)"], problemType: "MultipleChoice", stepTitle: "Find the foci of $$\\frac{y^2}{49}-\\left(\\frac{x^2}{32}\\right)=1$$", stepBody: "", choices: ["(0,9),(0,-9)", "(9,0),(-9,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

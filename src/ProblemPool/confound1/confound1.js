@@ -1,1 +1,0 @@
-import steps from "./confound1-index.js"; const problem = {id: "confound1", title: "Confounding Factors", body: "", steps: steps, variabilization: {}}; export { problem };

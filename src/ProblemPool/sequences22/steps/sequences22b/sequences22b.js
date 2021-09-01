@@ -1,0 +1,1 @@
+import hints from "./sequences22b-index.js"; const step = {id: "sequences22b", stepAnswer: ["$$\\frac{5}{12}$$"], problemType: "TextBox", stepTitle: "Write the second term of the sequence defined by the explicit formula a_n=(5n)/((n+2)!)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

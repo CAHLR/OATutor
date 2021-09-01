@@ -1,0 +1,1 @@
+import hints from "./spe27a-index.js"; const step = {id: "spe27a", stepAnswer: ["$$m^2-\\left(49\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(m-\\left(7\\right)\\right) \\left(m+\\left(7\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

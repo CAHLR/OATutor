@@ -1,1 +1,0 @@
-import steps from "./table2-index.js"; const problem = {id: "table2", title: "New Table?", body: "", steps: steps, variabilization: {}}; export { problem };

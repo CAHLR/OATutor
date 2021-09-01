@@ -1,1 +1,0 @@
-import hints from "./threevar16a-index.js"; const step = {id: "threevar16a", stepAnswer: ["DNE"], problemType: "MultipleChoice", stepTitle: "x+y+z=2,y=3z=1,2x+y+5z=0. Enter 'DNE' if the system is inconsistent.", stepBody: "", choices: ["$$x=3, y=1, z=-1$$", "$$x=4, y=2, z=-1$$", "DNE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

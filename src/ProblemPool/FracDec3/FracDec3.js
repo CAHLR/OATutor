@@ -1,1 +1,1 @@
-import steps from "./FracDec3-index.js"; const problem = {id: "FracDec3", title: "How to Solve Equations with Fraction Coefficients", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./FracDec3-index.js"; const problem = {id: "FracDec3", title: "How to Solve Equations with Fraction Coefficients", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

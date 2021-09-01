@@ -1,1 +1,1 @@
-import steps from "./GenStr1-index.js"; const problem = {id: "GenStr1", title: "Solve the Equation", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./GenStr1-index.js"; const problem = {id: "GenStr1", title: "Solve the Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

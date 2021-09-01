@@ -1,1 +1,1 @@
-import steps from "./Visualize9-index.js"; const problem = {id: "Visualize9", title: "Divide:", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Visualize9-index.js"; const problem = {id: "Visualize9", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

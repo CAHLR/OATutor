@@ -1,1 +1,1 @@
-import steps from "./linearmodels1-index.js"; const problem = {id: "linearmodels1", title: "Exercise 8: Finding Shapes Bounded By Lines", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./linearmodels1-index.js"; const problem = {id: "linearmodels1", title: "Exercise 8: Finding Shapes Bounded By Lines", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

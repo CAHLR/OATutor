@@ -1,1 +1,1 @@
-import steps from "./DivMul6-index.js"; const problem = {id: "DivMul6", title: "Solve Equations Using the Multiplication Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}}; export { problem };
+import steps from "./DivMul6-index.js"; const problem = {id: "DivMul6", title: "Solve Equations Using the Multiplication Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

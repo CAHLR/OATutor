@@ -129,7 +129,6 @@ class Problem extends React.Component {
   }
 
   submitFeedback = () => {
-    //console.log(this.state.feedback);
     this.context.firebase.submitFeedback(this.state.problem.id, this.state.feedback, this.state.problemFinished, chooseVariables(this.props.problem.variabilization, this.props.seed), this.context.studentName);
     this.setState({ feedback: "", feedbackSubmitted: true });
   }
@@ -193,10 +192,19 @@ class Problem extends React.Component {
             </Grid>}
         </div>
 
-        <div style={{ display: "flex", flexDirection: "row-reverse", justifyContent: "right", marginRight: "20px" }}>
-          <IconButton aria-label="report" onClick={this.toggleFeedback}>
-            <img src={require('./report_problem.png')} title="Report problem" alt="report" width="32px" />
-          </IconButton>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+          <div style={{ marginLeft: 20, fontSize: 12 }}>
+            {this.state.problem.oer && this.state.problem.oer.includes("openstax") ?
+              <div> {'"' + this.state.problem.title + '" is a derivative of '}
+                <a href="https://openstax.org/" target="_blank">"College Algebra"</a> by OpenStax, used under&nbsp;
+                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a></div>
+              : ""}
+          </div>
+          <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
+            <IconButton aria-label="report" onClick={this.toggleFeedback}>
+              <img src={require('./report_problem.png')} title="Report problem" alt="report" width="32px" />
+            </IconButton>
+          </div>
 
         </div>
         {this.state.showFeedback ? <div className="Feedback">

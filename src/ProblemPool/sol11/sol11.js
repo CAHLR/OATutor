@@ -1,0 +1,1 @@
+import steps from "./sol11-index.js"; const problem = {id: "sol11", title: "System of Equations by Elimination", body: "Using elimination, solve the system of equations.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

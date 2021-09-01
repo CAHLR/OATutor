@@ -1,1 +1,1 @@
-import steps from "./rationals17-index.js"; const problem = {id: "rationals17", title: "Finding vertical asymptotes and removable discontinuities", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./rationals17-index.js"; const problem = {id: "rationals17", title: "Finding vertical asymptotes and removable discontinuities", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

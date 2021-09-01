@@ -1,0 +1,1 @@
+import steps from "./ac879b3graph11-index.js"; const problem = {id: "ac879b3graph11", title: "Determining the X- and Y-Intercepts to the Equation $$\\left(4\\right) x+y=-3$$.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./abd4034poly26a-index.js"; const step = {id: "abd4034poly26a", stepAnswer: ["$$\\left(15\\right) d^4+\\left(6\\right) d^2$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(60\\right) d^7+\\left(24\\right) d^5}{4} d^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

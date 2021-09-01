@@ -1,1 +1,0 @@
-import hints from "./inequalities3a-index.js"; const step = {id: "inequalities3a", stepAnswer: ["$$(-\\infty,-4]$$"], problemType: "MultipleChoice", stepTitle: "$$x \\leq -4$$", stepBody: "", choices: ["$$(-\\infty,-4]$$", "$$[-\\infty,4)$$", "$$[-\\infty,-4)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./line19-index.js"; const problem = {id: "line19", title: "Finding Equations of Lines", body: "Find the equation of the line passing through the point (3,-2)\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

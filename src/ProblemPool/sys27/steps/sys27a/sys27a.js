@@ -1,0 +1,1 @@
+import hints from "./sys27a-index.js"; const step = {id: "sys27a", stepAnswer: ["(1,3)"], problemType: "MultipleChoice", stepTitle: "image1", stepBody: "", choices: ["(3,1)", "(1,3)", "(-1,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

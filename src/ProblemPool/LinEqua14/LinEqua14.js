@@ -1,1 +1,1 @@
-import steps from "./LinEqua14-index.js"; const problem = {id: "LinEqua14", title: "Solving a Rational Equation with Factored Denominators and Stating Excluded Values", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./LinEqua14-index.js"; const problem = {id: "LinEqua14", title: "Solving a Rational Equation with Factored Denominators and Stating Excluded Values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

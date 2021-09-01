@@ -1,1 +1,1 @@
-import steps from "./power8-index.js"; const problem = {id: "power8", title: "Determining the Number of Intercepts and Turning Points of a Polynomial", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./power8-index.js"; const problem = {id: "power8", title: "Determining the Number of Intercepts and Turning Points of a Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

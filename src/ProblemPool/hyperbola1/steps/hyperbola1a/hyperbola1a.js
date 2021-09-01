@@ -1,0 +1,1 @@
+import hints from "./hyperbola1a-index.js"; const step = {id: "hyperbola1a", stepAnswer: ["(0,7),(0,-7)"], problemType: "MultipleChoice", stepTitle: "Find the vertices of $$\\frac{y^2}{49}-\\left(\\frac{x^2}{32}\\right)=1$$", stepBody: "", choices: ["(0,7),(0,-7)", "(sqrt(32),0),(-sqrt(32),0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./Multiply21-index.js"; const problem = {id: "Multiply21", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Multiply21-index.js"; const problem = {id: "Multiply21", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

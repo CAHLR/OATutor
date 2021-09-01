@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly23a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by -5, so we get $$-\\left(5\\right) y^2+\\left(3\\right) y$$", text: "", variabilization: {}}, ]; export {hints};

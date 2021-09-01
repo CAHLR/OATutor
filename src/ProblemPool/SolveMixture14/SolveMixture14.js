@@ -1,1 +1,1 @@
-import steps from "./SolveMixture14-index.js"; const problem = {id: "SolveMixture14", title: "Jesse's Quarters and Nickels", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./SolveMixture14-index.js"; const problem = {id: "SolveMixture14", title: "Jesse's Quarters and Nickels", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./abd4034poly19a-index.js"; const step = {id: "abd4034poly19a", stepAnswer: ["$$\\left(3\\right) x^2-\\left(6\\right) x$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(18\\right) x^3-\\left(36\\right) x^2}{6} x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

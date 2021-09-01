@@ -1,1 +1,1 @@
-import steps from "./exponential5-index.js"; const problem = {id: "exponential5", title: "Evaluating Exponential Functions", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./exponential5-index.js"; const problem = {id: "exponential5", title: "Evaluating Exponential Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+var hints = [{id: "sequences23c-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=3$$ into the formula", variabilization: {}}, {id: "sequences23c-h2", type: "hint", dependencies: ["sequences23c-h1"], title: "Simplification", text: "Calculate the expression $${\\left(2\\right)}^3-\\left(2\\right)$$", variabilization: {}}, ]; export {hints};

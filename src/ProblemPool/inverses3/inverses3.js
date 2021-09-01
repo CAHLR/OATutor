@@ -1,1 +1,1 @@
-import steps from "./inverses3-index.js"; const problem = {id: "inverses3", title: "Restricting the Domain to Find the Inverse of a Polynomial Function", body: "Find the inverse of the following function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./inverses3-index.js"; const problem = {id: "inverses3", title: "Restricting the Domain to Find the Inverse of a Polynomial Function", body: "Find the inverse of the following function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

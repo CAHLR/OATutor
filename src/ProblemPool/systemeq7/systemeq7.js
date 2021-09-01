@@ -1,1 +1,0 @@
-import steps from "./systemeq7-index.js"; const problem = {id: "systemeq7", title: "Solving Systems of Linear Equations", body: "Solve the system. $$6x-5y=-34$$, $$\\left(7\\right) x+\\left(2\\right) y=30$$", steps: steps, variabilization: {}}; export { problem };

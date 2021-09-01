@@ -1,0 +1,1 @@
+import hints from "./spe21a-index.js"; const step = {id: "spe21a", stepAnswer: ["$$\\left(16\\right) u^6+\\left(8\\right) u^3+\\left(1\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(4\\right) u^3+\\left(1\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

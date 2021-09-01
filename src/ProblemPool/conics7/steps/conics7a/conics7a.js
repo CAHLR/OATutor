@@ -1,0 +1,1 @@
+import hints from "./conics7a-index.js"; const step = {id: "conics7a", stepAnswer: ["(0,0)"], problemType: "MultipleChoice", stepTitle: "$$r \\left(\\left(1\\right)+costheta\\right)=5$$", stepBody: "", choices: ["(0,0)", "(1,0)", "(1,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

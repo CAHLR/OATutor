@@ -1,1 +1,1 @@
-import steps from "./RecCord9-index.js"; const problem = {id: "RecCord9", title: "Finding the Distance between Two Points", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./RecCord9-index.js"; const problem = {id: "RecCord9", title: "Finding the Distance between Two Points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

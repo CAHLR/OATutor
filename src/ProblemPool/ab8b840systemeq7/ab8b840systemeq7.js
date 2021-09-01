@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeq7-index.js"; const problem = {id: "ab8b840systemeq7", title: "Solving Systems of Linear Equations", body: "Solve the system. $$6x-5y=-34$$, $$\\left(7\\right) x+\\left(2\\right) y=30$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./exponents28a-index.js"; const step = {id: "exponents28a", stepAnswer: ["$$y^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{y^{-\\left(5\\right)}}{y^{-\\left(10\\right)}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

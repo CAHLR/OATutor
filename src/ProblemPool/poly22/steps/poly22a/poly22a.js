@@ -1,1 +1,0 @@
-import hints from "./poly22a-index.js"; const step = {id: "poly22a", stepAnswer: ["$$\\left(9\\right) y^2-\\left(36\\right) y+\\left(36\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(3\\right) y-\\left(6\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

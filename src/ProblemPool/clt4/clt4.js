@@ -1,1 +1,1 @@
-import steps from "./clt4-index.js"; const problem = {id: "clt4", title: "Central Limit Theorem: Between", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./clt4-index.js"; const problem = {id: "clt4", title: "Central Limit Theorem: Between", body: "", steps: steps, variabilization: {}, oer: "statisticshowto.com"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./probability15a-index.js"; const step = {id: "probability15a", stepAnswer: ["$$\\frac{3}{8}$$"], problemType: "TextBox", stepTitle: "Find the probability of not landing on yellow or a consonant.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

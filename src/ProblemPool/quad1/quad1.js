@@ -1,1 +1,1 @@
-import steps from "./quad1-index.js"; const problem = {id: "quad1", title: "Solving Quadratic Equations", body: "", steps: steps, variabilization: {}}; export { problem };
+import steps from "./quad1-index.js"; const problem = {id: "quad1", title: "Solving Quadratic Equations", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

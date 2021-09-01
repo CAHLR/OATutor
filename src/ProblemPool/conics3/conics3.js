@@ -1,0 +1,1 @@
+import steps from "./conics3-index.js"; const problem = {id: "conics3", title: "Determine parts of the graph", body: "Find the directrix of the hyperbola.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

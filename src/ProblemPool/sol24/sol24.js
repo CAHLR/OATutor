@@ -1,0 +1,1 @@
+import steps from "./sol24-index.js"; const problem = {id: "sol24", title: "Solving Systems of Equations", body: "The total number of calories in 2 hot dogs and 3 cups of cottage cheese is 960 calories. The total number of calories in 5 hot dogs and 2 cups of cottage cheese is 1190 calories.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

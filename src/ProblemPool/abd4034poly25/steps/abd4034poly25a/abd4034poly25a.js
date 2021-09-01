@@ -1,0 +1,1 @@
+import hints from "./abd4034poly25a-index.js"; const step = {id: "abd4034poly25a", stepAnswer: ["$$\\left(21\\right) y^3+\\left(15\\right) y$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(105\\right) y^5+\\left(75\\right) y^3}{5} y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

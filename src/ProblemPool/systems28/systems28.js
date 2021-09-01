@@ -1,1 +1,1 @@
-import steps from "./systems28-index.js"; const problem = {id: "systems28", title: "Solving Systems", body: "Use any method to solve the system of nonlinear equations.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./systems28-index.js"; const problem = {id: "systems28", title: "Solving Systems", body: "Use any method to solve the system of nonlinear equations.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

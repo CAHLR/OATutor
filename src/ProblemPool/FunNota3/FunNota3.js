@@ -1,1 +1,1 @@
-import steps from "./FunNota3-index.js"; const problem = {id: "FunNota3", title: "Classify Relation", body: "For the following exercises, determine whether the relation represents a function.", steps: steps, variabilization: {}}; export { problem };
+import steps from "./FunNota3-index.js"; const problem = {id: "FunNota3", title: "Classify Relation", body: "For the following exercises, determine whether the relation represents a function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

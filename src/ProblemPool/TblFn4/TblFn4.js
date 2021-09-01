@@ -1,1 +1,0 @@
-import steps from "./TblFn4-index.js"; const problem = {id: "TblFn4", title: "Selecting One Row", body: "", steps: steps, variabilization: {}}; export { problem };

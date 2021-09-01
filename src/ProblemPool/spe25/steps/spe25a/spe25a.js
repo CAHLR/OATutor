@@ -1,0 +1,1 @@
+import hints from "./spe25a-index.js"; const step = {id: "spe25a", stepAnswer: ["$$\\left(64\\right) p^6-\\left(48\\right) p^3+\\left(9\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(8\\right) p^3-\\left(3\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

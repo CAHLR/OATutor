@@ -1,1 +1,0 @@
-import steps from "./poly30-index.js"; const problem = {id: "poly30", title: "Polynomial Extensions", body: "Perform the given operations on the following expression.", steps: steps, variabilization: {}}; export { problem };

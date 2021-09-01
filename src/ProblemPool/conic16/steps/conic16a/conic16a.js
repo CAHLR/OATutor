@@ -1,0 +1,1 @@
+import hints from "./conic16a-index.js"; const step = {id: "conic16a", stepAnswer: ["$$\\left(5\\right) \\sqrt{x^2+y^2}-\\left(3\\right) y=2$$"], problemType: "TextBox", stepTitle: "Convert $$r=\\frac{2}{\\left(5\\right)-\\left(3\\right) sin \\theta}$$ to rectangular form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

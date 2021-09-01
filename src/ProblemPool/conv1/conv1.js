@@ -1,1 +1,0 @@
-import steps from "./conv1-index.js"; const problem = {id: "conv1", title: "Conversion", body: "", steps: steps, variabilization: {}}; export { problem };

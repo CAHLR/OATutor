@@ -1,0 +1,1 @@
+import steps from "./ellipse14-index.js"; const problem = {id: "ellipse14", title: "The Ellipse", body: "$$\\frac{x^2}{100}+\\frac{y^2}{62}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

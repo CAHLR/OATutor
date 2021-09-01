@@ -1,0 +1,1 @@
+import hints from "./ser6a-index.js"; const step = {id: "ser6a", stepAnswer: ["138"], problemType: "TextBox", stepTitle: "image1", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

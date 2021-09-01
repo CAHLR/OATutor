@@ -1,1 +1,0 @@
-import steps from "./poly22-index.js"; const problem = {id: "poly22", title: "Expanding the expression", body: "Expand the binomial.", steps: steps, variabilization: {}}; export { problem };

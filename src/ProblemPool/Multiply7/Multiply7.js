@@ -1,1 +1,1 @@
-import steps from "./Multiply7-index.js"; const problem = {id: "Multiply7", title: "Evaluate Variable Equation with Integers", body: "When $$y=-9$$, evaluate:", steps: steps, variabilization: {}}; export { problem };
+import steps from "./Multiply7-index.js"; const problem = {id: "Multiply7", title: "Evaluate Variable Equation with Integers", body: "When $$y=-9$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

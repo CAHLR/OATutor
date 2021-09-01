@@ -1,1 +1,0 @@
-var hints = [{id: "farmers1a-h1", type: "hint", dependencies: [], title: "show function", text: "tbl.show(3) will show the first 3 rows of tbl. Additionally, make sure not to call .show() without an argument, as this will crash your kernel.", variabilization: {}}, ]; export {hints};

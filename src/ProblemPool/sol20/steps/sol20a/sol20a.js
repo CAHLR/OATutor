@@ -1,0 +1,1 @@
+import hints from "./sol20a-index.js"; const step = {id: "sol20a", stepAnswer: ["-67 and 22"], problemType: "MultipleChoice", stepTitle: "The sum of two numbers is -45. Their difference is -89. Find the numbers.", stepBody: "", choices: ["-67 and 22", "67 and 22", "-67 and -22", "67 and -22"], answerType: "string", hints: hints, variabilization: {}}; export {step};
