@@ -1,0 +1,1 @@
+import hints from "./_testMatrixa-index.js"; const step = {id: "_testMatrixa", stepAnswer: ["[[\"1\",\"2\",\"3\",\"4\",\"5\"],[\"6\",\"7\",\"8\",\"9\",\"10\"],[\"11\",\"12\",\"13\",\"14\",\"15\"]]"], problemType: "GridInput", numRows: 3, numCols: 5, stepTitle: "Enter from 1 to 15", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

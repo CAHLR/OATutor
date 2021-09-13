@@ -1,0 +1,1 @@
+import steps from "./_testMatrix-index.js"; const problem = {id: "_testMatrix", title: "Testing Matrix", body: "Enter some values!", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

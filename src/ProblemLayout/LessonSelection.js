@@ -45,7 +45,7 @@ class LessonSelection extends React.Component {
             spacing={0}
             direction="column"
             alignItems="center"
-            justify="center"
+            justifyContent="center"
           >
             <Box width="75%" maxWidth={1500}>
               <center>
@@ -99,7 +99,7 @@ class LessonSelection extends React.Component {
             spacing={0}
             direction="column"
             alignItems="center"
-            justify="center"
+            justifyContent="center"
           >
             <Box width="75%" maxWidth={1500}>
               <center>

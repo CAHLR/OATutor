@@ -114,7 +114,7 @@ class DebugPlatform extends React.Component {
       bName = bName[0];
     }
 
-    if (aName != bName) {
+    if (aName !== bName) {
       return aName.localeCompare(bName);
     } else {
       return aNum - bNum;

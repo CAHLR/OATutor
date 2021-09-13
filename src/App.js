@@ -35,9 +35,9 @@ import {
   bkt2Index,
   index2Bkt
 } from './config/config.js';
-import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 
-let theme = createMuiTheme();
+let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();

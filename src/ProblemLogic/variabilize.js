@@ -2,11 +2,11 @@ var gen = require('random-seed');
 
 // Replace variables with their values in a string of text
 function variabilize(text, variabilization) {
-  if (typeof variabilization === 'undefined' || Object.keys(variabilization).length == 0) {
+  if (typeof variabilization === 'undefined' || Object.keys(variabilization).length === 0) {
     return text;
   }
   Object.keys(variabilization).forEach(v => {
-    if (variabilization[v].length != 1) {
+    if (variabilization[v].length !== 1) {
       console.log("[WARNING] - variable not properly chosen");
     }
     var replaceOption = variabilization[v][0];
@@ -17,7 +17,7 @@ function variabilize(text, variabilization) {
 
 // Lock in variables chosen at Problem/Step/Hint. This method must be imported and called elsewhere
 function chooseVariables(variabilization, seed) {
-  if (typeof variabilization === 'undefined' || Object.keys(variabilization).length == 0) {
+  if (typeof variabilization === 'undefined' || Object.keys(variabilization).length === 0) {
     return variabilization
   }
   var numOptions = 0;

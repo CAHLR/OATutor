@@ -5,9 +5,9 @@ var KAS = require('../kas.js');
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
-  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
   return actual.some((stepAns) => {
-    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
     //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
     return (parsedAttempt === parsedStepAns)
   });

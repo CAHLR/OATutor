@@ -1,0 +1,1 @@
+import hints from "./_testGrida-index.js"; const step = {id: "_testGrida", stepAnswer: ["[[\"1\",\"2\",\"3\",\"4\"],[\"5\",\"6\",\"7\",\"8\"],[\"9\",\"10\",\"11\",\"12\"],[\"13\",\"14\",\"15\",\"16\"]]"], problemType: "GridInput", numRows: 4, numCols: 4, stepTitle: "Enter from 1 to 16", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

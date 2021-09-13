@@ -13,3 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
 }
+
+.revealable {
+  opacity: 0;
+}
+
+.revealable.revealed {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}

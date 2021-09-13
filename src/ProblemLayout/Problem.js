@@ -27,6 +27,9 @@ class Problem extends React.Component {
     this.heuristic = context.heuristic;
     this.stepStates = {};
     this.numCorrect = 0;
+
+    console.log("problem object", this.props.problem)
+
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
@@ -38,7 +41,7 @@ class Problem extends React.Component {
   }
 
   refreshSteps = (problem) => {
-    if (problem === null) {
+    if (problem == null) {
       return (<div></div>);
     }
     return problem.steps.map((step, index) => {
@@ -73,8 +76,11 @@ class Problem extends React.Component {
       return
     }
 
-    if (this.stepStates[cardIndex] === null) {
-      for (var kc of kcArray) {
+    if (this.stepStates[cardIndex] == null) {
+      if (kcArray == null) {
+        kcArray = []
+      }
+      for (const kc of kcArray) {
         //console.log(kc);
         update(this.bktParams[kc], isCorrect);
         //console.log(this.bktParams[kc].probMastery);
@@ -142,13 +148,13 @@ class Problem extends React.Component {
   }
 
   _getNextDebug = (offset) => {
-    return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset]
+    return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset] || "/"
   }
 
 
   render() {
     const { classes } = this.props;
-    if (this.state.problem === null) {
+    if (this.state.problem == null) {
       return (<div></div>);
     }
     return (
@@ -211,7 +217,8 @@ class Problem extends React.Component {
           </div>
           <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
             <IconButton aria-label="report" onClick={this.toggleFeedback}>
-              <img src={`${process.env.PUBLIC_URL}/static/images/icons/report_problem.png`} title="Report problem" alt="report" width="32px"/>
+              <img src={`${process.env.PUBLIC_URL}/static/images/icons/report_problem.png`} title="Report problem"
+                   alt="report" width="32px"/>
             </IconButton>
           </div>
 
