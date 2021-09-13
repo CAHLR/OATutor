@@ -14,6 +14,7 @@ import { ThemeContext } from '../config/config.js';
 
 class HintTextbox extends React.Component {
   static contextType = ThemeContext;
+
   constructor(props) {
     super(props);
     this.hint = props.hint;
@@ -45,10 +46,11 @@ class HintTextbox extends React.Component {
     return (
       <div>
         <Grid container spacing={0} justify="center" alignItems="center">
-          <Grid item xs={1} md={4} />
+          <Grid item xs={1} md={4}/>
           <Grid item xs={9} md={3}>
             {(this.hint.problemType === "TextBox" && this.hint.answerType !== "string") ?
-              <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : classes.textBoxLatex} style={{ height: "50px", width: "100%" }}>
+              <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : classes.textBoxLatex}
+                      style={{ height: "50px", width: "100%" }}>
                 <EquationEditor
                   value={this.state.inputVal}
                   onChange={(eq) => this.setState({ inputVal: eq })}
@@ -66,43 +68,49 @@ class HintTextbox extends React.Component {
             {this.hint.problemType === "MultipleChoice" ?
               <MultipleChoice
                 onChange={(evt) => this.editInput(evt)}
-                choices={this.hint.choices} /> : ""}
+                choices={this.hint.choices}/> : ""}
           </Grid>
           <Grid item xs={2} md={1}>
             <div style={{ marginRight: "20px" }}>
               {this.hint.units ? renderText(this.hint.units) : ""}
             </div>
-          </Grid >
-          <Grid item xs={false} md={3} />
+          </Grid>
+          <Grid item xs={false} md={3}/>
         </Grid>
 
         <Grid container spacing={0} justify="center" alignItems="center">
-          <Grid item xs={false} sm={false} md={4} />
+          <Grid item xs={false} sm={false} md={4}/>
           <Grid item xs={4} sm={4} md={1}>
-            { this.props.type !== "subHintTextbox" ?
-            <center>
-              <IconButton aria-label="delete" onClick={this.props.toggleHints}>
-                <img src={require('./raise_hand.png').default} title="View available hints" alt="hintToggle" />
-              </IconButton>
-            </center> : <img src={require('./raise_hand.png').default} title="View available hints" alt="hintToggle" style={{visibility: "hidden"}}/> }
+            {this.props.type !== "subHintTextbox" ?
+              <center>
+                <IconButton aria-label="delete" onClick={this.props.toggleHints}>
+                  <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`} title="View available hints" alt="hintToggle"/>
+                </IconButton>
+              </center> : <img src={'/static/images/icons/raise_hand.png'} title="View available hints" alt="hintToggle"
+                               style={{ visibility: "hidden" }}/>}
           </Grid>
           <Grid item xs={4} sm={4} md={2}>
             <center>
-              <Button className={classes.button} style={{ width: "80%" }} size="small" onClick={this.submit}>Submit</Button>
+              <Button className={classes.button} style={{ width: "80%" }} size="small"
+                      onClick={this.submit}>Submit</Button>
             </center>
           </Grid>
           <Grid item xs={4} sm={3} md={1}>
             <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-              {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%" }} alt=""
-                src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-              {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }} alt=""
-                src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
+              {this.state.isCorrect ?
+                <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
+                     alt=""
+                     src="https://image.flaticon.com/icons/svg/148/148767.svg"/> : ""}
+              {this.state.isCorrect === false ?
+                <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                     alt=""
+                     src="https://image.flaticon.com/icons/svg/148/148766.svg"/> : ""}
             </div>
           </Grid>
-          <Grid item xs={false} sm={1} md={4} />
+          <Grid item xs={false} sm={1} md={4}/>
         </Grid>
 
-      </div >
+      </div>
     );
   }
 }

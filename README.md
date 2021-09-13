@@ -1,9 +1,12 @@
 # OpenITS
 
-An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented in ReactJS and using Firebase for logging.
+An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented in ReactJS and using Firebase
+for logging.
 
-## Installation: 
-The installation assumes that you already have git and npm installed. If you do not have either, please install those first.
+## Installation:
+
+The installation assumes that you already have git and npm installed. If you do not have either, please install those
+first.
 
 ```
 git clone https://github.com/CAHLR/OpenITS
@@ -11,13 +14,15 @@ cd OpenITS
 npm install
 npm run generate
 ```
+
 After compiling, the project will display in a new web browser tab at adress `localhost:1337`.
 
 `npm run generate` is used to autogenerate index files (the preferred way of running locally)
 
 (`npm start` can be used if no new problems/steps/pathways have been added.)
 
-Create a file `/src/ProblemLogic/credentials.js`. This file need not have functional credentials unless logging is turned on (it is off by default) It must exist for the project to compile and be in the following format:
+Create a file `/src/ProblemLogic/credentials.js`. This file need not have functional credentials unless logging is
+turned on (it is off by default) It must exist for the project to compile and be in the following format:
 
 ```javascript
 const config = {};
@@ -25,7 +30,9 @@ export default config;
 ```
 
 ### Firebase Setup
+
 OpenITS uses Firebase for data logging purposes.
+
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Add new project. Configure it as you wish (the options are not important for setup)
 3. Click on Database and then create database. Start in test mode, leave the cloud location as is
@@ -47,29 +54,31 @@ const config = {
 
 export default config;
 ```
+
 ---
 
 ## Features:
-1) Scaffolding/hint system - modularize the type of help 
+
+1) Scaffolding/hint system - modularize the type of help
 2) Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3) Centralized skill model - `src/ProblemPool/skillMode.js` 
+3) Centralized skill model - `src/ProblemPool/skillMode.js`
 4) Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5) User login/registration - Cookie cache based
 
 See the changelog for a more detailed feature list
 
 ## Technologies Used
+
 * Frontend: ReactJS
-	* Theme: Material UI
-    * Database: Firebase (Cloud Firestore)
-	* Deployment: TBD
+  * Theme: Material UI
+  * Database: Firebase (Cloud Firestore)
+  * Deployment: TBD
 * Offline Computation/Iteration:
-	* Python (dAFM Machine Learning algorithm)
+  * Python (dAFM Machine Learning algorithm)
 
+# Project Structure:
 
-
-# Project Structure: 
-Code for this project is located in the `src` directory. 
+Code for this project is located in the `src` directory.
 
 ## src
 
@@ -87,46 +96,63 @@ Code for this project is located in the `src` directory.
 
 - `HintTextbox.js`: Textbox for scaffold types of hints with answers.
 
-- `Problem.js`: The "problem" component created in App.js. The component is initailized with a "problem" object as one of its props. It then creates a series of "ProblemCards" in `const parts` (currently keys for ProblemCard components are random values, should be UUIDs in the future). 
+- `Problem.js`: The "problem" component created in App.js. The component is initailized with a "problem" object as one
+  of its props. It then creates a series of "ProblemCards" in `const parts` (currently keys for ProblemCard components
+  are random values, should be UUIDs in the future).
 
-	The `answerMade` function is passed to each ProblemCard component and is called whenever an answer is submitted to a ProblemCard. This enables the Problem component to update the knowledge component variables after each answer and transition to the next problem after all answers are correct. 
-	
-- `ProblemCard.js`: This component displays an individual card, updates the input text field to display the result of an answer attempt, and calls the `Problem.js` 	`answerMade` function when the submit button is pressed.  
+  The `answerMade` function is passed to each ProblemCard component and is called whenever an answer is submitted to a
+  ProblemCard. This enables the Problem component to update the knowledge component variables after each answer and
+  transition to the next problem after all answers are correct.
 
-These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and `classes` references). Check their website for more info on this syntax. 
+- `ProblemCard.js`: This component displays an individual card, updates the input text field to display the result of an
+  answer attempt, and calls the `Problem.js`  `answerMade` function when the submit button is pressed.
+
+These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and `classes` references). Check their
+website for more info on this syntax.
 
 - `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
 
-
 ## ProblemLogic
-- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric. Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly match.
 
-- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the problem component). Also imports all of the problem files and stores them in `const problemIndex`. The function `nextProblem` is used to determine the next problem to be displayed. 
+- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
+  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
+  match.
+
+- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
+  problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
+  function `nextProblem` is used to determine the next problem to be displayed.
 
 - `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
 
 - `renderText.js`: Method called to render text. Fills in dynamic text generation.
 
-
 ## ProblemPool [Configurable]
-- Each problem is contained in its own folder. 
+
+- Each problem is contained in its own folder.
 - Problems can contain steps which are contained in their own subfolder
 - Steps can contain hints which are stored as pathways in the `tutoring` subfolder
 - Files ending in `-index.js` and `problemPool.js` are autogenerated using indexGenerator.js
 
 ### Markdown Support
+
 - All `\` must be escaped as `\\` because values are strings
 - Wrap Latex in `$` for inline LaTeX
 - Newlines can be created with `\n`, escaped as `\\n`
 
 ## Config [Configurable]
-- `config.js`: Central place where options can be configured. Also includes function to get the treatment id given a userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
 
-- `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the BKT model.
+- `config.js`: Central place where options can be configured. Also includes function to get the treatment id given a
+  userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
 
-- `./problemSelectHeuristics/problemSelectHeuristic.js`: This file contains a configurable heuristic for adaptive problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average probability of mastery across all of its knowledge components, but this can be changed to any heuristic. 
+- `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the
+  BKT model.
+
+- `./problemSelectHeuristics/problemSelectHeuristic.js`: This file contains a configurable heuristic for adaptive
+  problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
+  probability of mastery across all of its knowledge components, but this can be changed to any heuristic.
 
 - `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
+
 ```javascript
     problemID1a: []
     problemID1b: []
@@ -139,39 +165,46 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
     ...
 ```
 
-- `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the gitignore by default to prevent API key leaks.)
+- `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the
+  gitignore by default to prevent API key leaks.)
 
-- `algebraCheck.js`: Config file for algebraic answer checks. Supported syntax can be found [here](https://www.npmjs.com/package/expr-eval)
+- `algebraCheck.js`: Config file for algebraic answer checks. Supported syntax can be
+  found [here](https://www.npmjs.com/package/expr-eval)
 
 ---
 
 ## Listeners
 
 ### Mouse Logging
+
 * Size of screen is the size of the scrollable browser canvas
 * Wrap `<Platform />` with the following in `App.js`
+
 ```javascript
 <ReactCursorPosition onPositionChanged={(data) => {
   if (logMouseData) {
     this.firebase.mouseLog(data);
-  }}} >
-  <Platform props_here/>
-<ReactCursorPosition />
+  }
 }}>
+  <Platform props_here/>
+  <ReactCursorPosition/>
+  }}>
 
 ```
 
 ### Adding Listeners
-1. Install the React component for the listener. 
-2. Wrap the Platform component with the listener. The listener must take a prop that is a function to log data that it receives. 
-3. In `/ProblemLogic/Firebase.js` add a new function to log the new type of data. Create a new collection for this listener logs.
+
+1. Install the React component for the listener.
+2. Wrap the Platform component with the listener. The listener must take a prop that is a function to log data that it
+   receives.
+3. In `/ProblemLogic/Firebase.js` add a new function to log the new type of data. Create a new collection for this
+   listener logs.
 4. Configure buffer size and granularity of logging
-
-
 
 # Problem Pool
 
 ## Adding a problem to the Problem Pool
+
 1. Create a folder in `/src/ProblemPool/` for that problem (Ex. `circle1`)
 2. Create a js file for that problem id (Ex. `circle1.js`)
 3. Create a folder called `figures` if the problem has figures
@@ -180,13 +213,18 @@ These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and 
 6. Create a subfolder within the subfolder called `tutoring`
 7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.js`)
 8. In `/src/config/skillModel.js`, tag each problem with the appropriate skills
-9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams` files
+9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams`
+   files
 
 ### Types of problems
-* `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric. Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly match.
+
+* `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
+  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
+  match.
 * `MultipleChoice`: List choices as `choices: ["Choice A", "Choice B"]`, must have `answerType: "string"`
 
 ### Example Directory Structure
+
 ```
 ProblemPool
 │   problemPool.js (Autogenerated)
@@ -211,6 +249,7 @@ ProblemPool
 ```
 
 ### Example Problem File
+
 ```js
 import steps from './circle1-index.js'
 
@@ -224,6 +263,7 @@ export { problem };
 ```
 
 ### Example Step File
+
 ```js
 import hints from './circle1a-index.js';
 
@@ -241,6 +281,7 @@ export { step };
 ```
 
 ### Example Hint Pathway File
+
 ```js
 var hints = [
     {
@@ -273,6 +314,7 @@ export {hints};
 ```
 
 ### Using HTML/React Objects as body text for LaTeX
+
 ```js
 import hints from './pythag1a-index.js';
 import React from 'react';
@@ -294,6 +336,7 @@ export { step };
 ```
 
 ### Using OpenITS custom markdown parser for images and LaTeX
+
 ```js
 import steps from './pythag1-index.js'
 
@@ -307,6 +350,7 @@ export { problem };
 ```
 
 ## Creating Lesson Plans
+
 * Create a lesson plan by making a new item in `config/lessonPlans.js`
 * Each lesson plan has learning objectives which you can also list the target mastery level
 * Lesson plans can have multiple learning objectives (for cumulative review)
@@ -325,21 +369,47 @@ export { problem };
 ```
 
 AB testing:
-OpenITS was designed with the research case in mind and thus supports AB testing for many features. The benefit of the open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they would like. To show that this is possible, we have included several examples of how one could use AB testing. One example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge component that is lowest (meaning the student is weakest in this subject) to round out the student's knowledge. Another heuristic is to choose problems with a knowledge ocmponent that is highest (meaning the student is strongest in this subject) to fully master a skill before moving on to another. There is control logic detailed in App.js to select between the two heuristics depending on a randomly generated userID. The userID is recorded in data logs so the treatment can be inferred from this. Other examples of AB testing included are different BKT parameter files and different default hint pathways.
-
+OpenITS was designed with the research case in mind and thus supports AB testing for many features. The benefit of the
+open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they
+would like. To show that this is possible, we have included several examples of how one could use AB testing. One
+example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge
+component that is lowest (meaning the student is weakest in this subject) to round out the student's knowledge. Another
+heuristic is to choose problems with a knowledge ocmponent that is highest (meaning the student is strongest in this
+subject) to fully master a skill before moving on to another. There is control logic detailed in App.js to select
+between the two heuristics depending on a randomly generated userID. The userID is recorded in data logs so the
+treatment can be inferred from this. Other examples of AB testing included are different BKT parameter files and
+different default hint pathways.
 
 Details of KC model Description (how it works/format)
-Knowledge components (KCs) are assigned at the step level in the file skillModel.js. A KC is defined as a string that contains corresponding BKT parameters (existing in bktParams.js file) including probMastery, probTransit, probSlip, and probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.js stores a mapping between step IDs and the KCs array as a JSON object. 
+Knowledge components (KCs) are assigned at the step level in the file skillModel.js. A KC is defined as a string that
+contains corresponding BKT parameters (existing in bktParams.js file) including probMastery, probTransit, probSlip, and
+probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.js
+stores a mapping between step IDs and the KCs array as a JSON object.
 
-bktParams.js contains a JSON object that maps KCs to their corresponding BKT parameters (probMastery, probTransit, probSlip, and probGuess). These values are typically empirically determined and can be AB tested (see above).
+bktParams.js contains a JSON object that maps KCs to their corresponding BKT parameters (probMastery, probTransit,
+probSlip, and probGuess). These values are typically empirically determined and can be AB tested (see above).
 
-
-What the format of a section looks like
-Problems are decomposed into steps. Problems do not contain an answer field (problems without real steps are formatted as a problem with only one step). Steps can be one of 2 answer types: textbox or multiple choice. Steps can contain help items which can be toggled to be shown by clicking a raised hand icon on each step. There are two possible help items: hints which are purely textual and have no user input, or scaffolds which contain user input (again, either textbox or multiple choice). Scaffolds can contain help items themselves, except this is the deepest level of content (the scaffolds's scaffolds cannot contain any help items).
+What the format of a section looks like Problems are decomposed into steps. Problems do not contain an answer field (
+problems without real steps are formatted as a problem with only one step). Steps can be one of 2 answer types: textbox
+or multiple choice. Steps can contain help items which can be toggled to be shown by clicking a raised hand icon on each
+step. There are two possible help items: hints which are purely textual and have no user input, or scaffolds which
+contain user input (again, either textbox or multiple choice). Scaffolds can contain help items themselves, except this
+is the deepest level of content (the scaffolds's scaffolds cannot contain any help items).
 
 BKT algorithm selecting problems.
 
-OpenITS uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT works, just copy the descriptions of the 4 model parameters used in BKT from wikipedia along with equations a thru d. The implementation is exactly identical to wikpedia, nothing special here) 
+OpenITS uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT
+works, just copy the descriptions of the 4 model parameters used in BKT from wikipedia along with equations a thru d.
+The implementation is exactly identical to wikpedia, nothing special here)
 
-Problem selection is determined using a heuristic which is fully configurable and can be AB tested (see above). For the purposes of this paper, let us assume we are using a heuristic that selects problems prioritizing the lowest mastery first. Upon receiving user input, the standard BKT update equations will update the predicted user's mastery. Upon completion of a problem, OpenITS will iterate through all problems and compute each problem's mastery level(note: mastery level is computed at the problem granularity not the step) for the user. This is done by multiplying all the mastery priors for all KCs of that step (as labelled by the researcher in the KC model) and then multiplying all step masteries together to get the problem mastery. The heuristic will be applied, which in this case is lowest mastery first, so the problem with the lowest mastery is selected to give to the user. In the case that the first problem is being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
+Problem selection is determined using a heuristic which is fully configurable and can be AB tested (see above). For the
+purposes of this paper, let us assume we are using a heuristic that selects problems prioritizing the lowest mastery
+first. Upon receiving user input, the standard BKT update equations will update the predicted user's mastery. Upon
+completion of a problem, OpenITS will iterate through all problems and compute each problem's mastery level(note:
+mastery level is computed at the problem granularity not the step) for the user. This is done by multiplying all the
+mastery priors for all KCs of that step (as labelled by the researcher in the KC model) and then multiplying all step
+masteries together to get the problem mastery. The heuristic will be applied, which in this case is lowest mastery
+first, so the problem with the lowest mastery is selected to give to the user. In the case that the first problem is
+being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's
+mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
 

@@ -35,8 +35,8 @@ function readData(collection) {
 var fs = require('fs');
 var dir = './logs';
 
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
 }
 
 var data = readData("problemSubmissionsSum21");

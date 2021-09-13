@@ -1,4 +1,5 @@
 import { variabilize } from './variabilize.js';
+
 var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
 
@@ -35,7 +36,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
   }
   //console.log(actual);
   var correctAnswer = false;
-  
+
   try {
     if (parsed === "") {
       return [parsed, false];
@@ -55,10 +56,10 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
       correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
     }
     return [parsed, correctAnswer];
-  } catch(err) {
+  } catch (err) {
     console.log("error", err);
     return [parsed, false];
   }
 }
 
-export {checkAnswer};
+export { checkAnswer };

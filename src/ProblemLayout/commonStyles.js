@@ -126,7 +126,7 @@ const styles = theme => ({
   },
   textBoxLatex: {
     border: "1px solid #c4c4c4",
-    borderRadius: "4px", 
+    borderRadius: "4px",
     '&:hover': {
       border: "1px solid #000000",
     },
@@ -139,7 +139,7 @@ const styles = theme => ({
     paddingBottom: "3px",
   },
   textBoxLatexIncorrect: {
-    borderRadius: "4px", 
+    borderRadius: "4px",
     boxShadow: "0 0 0.75pt 0.75pt red",
     '&:focus-within': {
       border: "1px solid red",
@@ -150,7 +150,7 @@ const styles = theme => ({
     paddingBottom: "3px",
   },
   textBoxLatexUsedHint: {
-    borderRadius: "4px", 
+    borderRadius: "4px",
     boxShadow: "0 0 0.75pt 0.75pt GoldenRod",
     '&:focus-within': {
       border: "1px solid GoldenRod",

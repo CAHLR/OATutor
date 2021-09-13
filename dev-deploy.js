@@ -7,9 +7,9 @@ ghpages.publish('build', {
   branch: "gh-pages",
   repo: 'https://github.com/matthew29tang/OpenITS.git'
 }, (err) => {
-    if (err) {
-        console.log(err)
-    } else{
-        console.log("Finished!")
-    }
+  if (err) {
+    console.log(err)
+  } else {
+    console.log("Finished!")
+  }
 });

@@ -48,7 +48,7 @@ class DebugPlatform extends React.Component {
       status: "learning",
       seed: seed
     }
-    
+
   }
 
   componentDidMount() {
@@ -171,29 +171,38 @@ class DebugPlatform extends React.Component {
   render() {
     return (
       <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
-        <AppBar position="static" >
+        <AppBar position="static">
           <Toolbar>
             <Grid container spacing={0}>
-              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS (v{this.context.siteVersion})</div></Grid>
+              <Grid item xs={3} key={1}>
+                <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS
+                  (v{this.context.siteVersion})
+                </div>
+              </Grid>
               <Grid item xs={6} key={2}>
-              <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
-                {"Debug Mode: " + this.props.problemID}
-                </div></Grid>
-              <Grid item xs={3} key={3} >
-              <div style={{ textAlign: 'right' }}>
-                {true ?
-                  <Router>
-                    <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
-                      <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                    </NavLink>
-                  </Router> : ""}
-                  </div>
+                <div
+                  style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "6px", paddingBototm: "6px" }}>
+                  {"Debug Mode: " + this.props.problemID}
+                </div>
+              </Grid>
+              <Grid item xs={3} key={3}>
+                <div style={{ textAlign: 'right' }}>
+                  {true ?
+                    <Router>
+                      <NavLink activeClassName="active" className="link" to={"/"} type="menu"
+                               style={{ marginRight: '10px' }}>
+                        <Button color="inherit"
+                                onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+                      </NavLink>
+                    </Router> : ""}
+                </div>
               </Grid>
             </Grid>
 
           </Toolbar>
         </AppBar>
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum} />
+        <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}
+                 seed={this.state.seed} lessonNum={this.props.lessonNum}/>
 
       </div>
 
