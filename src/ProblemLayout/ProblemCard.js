@@ -236,7 +236,7 @@ class ProblemCard extends React.Component {
             <Grid item xs={4} sm={4} md={1}>
               <center>
                 <IconButton aria-label="delete" onClick={this.toggleHints}>
-                  <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
+                  <img src={require('./raise_hand.png').default} title="View available hints" alt="hintToggle" />
                 </IconButton>
               </center>
             </Grid>

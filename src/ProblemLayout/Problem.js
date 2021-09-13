@@ -202,7 +202,7 @@ class Problem extends React.Component {
           </div>
           <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
             <IconButton aria-label="report" onClick={this.toggleFeedback}>
-              <img src={require('./report_problem.png')} title="Report problem" alt="report" width="32px" />
+              <img src={require('./report_problem.png').default} title="Report problem" alt="report" width="32px" />
             </IconButton>
           </div>
 

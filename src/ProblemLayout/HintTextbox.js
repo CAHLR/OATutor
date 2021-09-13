@@ -82,9 +82,9 @@ class HintTextbox extends React.Component {
             { this.props.type !== "subHintTextbox" ?
             <center>
               <IconButton aria-label="delete" onClick={this.props.toggleHints}>
-                <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
+                <img src={require('./raise_hand.png').default} title="View available hints" alt="hintToggle" />
               </IconButton>
-            </center> : <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" style={{visibility: "hidden"}}/> }
+            </center> : <img src={require('./raise_hand.png').default} title="View available hints" alt="hintToggle" style={{visibility: "hidden"}}/> }
           </Grid>
           <Grid item xs={4} sm={4} md={2}>
             <center>

@@ -27,7 +27,7 @@ function renderText(text, problemID, variabilization) {
             return subPart;
           } else {
             //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
-            return <center><img src = {require(`../ProblemPool/${problemID}/figures/${subPart}`)} alt={`${problemID} figure`} key={Math.random() * 2 ** 16}/></center>
+            return <center><img src = {require(`../ProblemPool/${problemID}/figures/${subPart}`).default} alt={`${problemID} figure`} key={Math.random() * 2 ** 16}/></center>
           }
         });
       } else {

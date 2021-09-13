@@ -63,7 +63,7 @@ class LessonSelection extends React.Component {
                           <h2 style={{ marginTop: "5px", marginBottom: "10px" }}>{course.courseName}</h2>
                           <NavLink activeClassName="active" className="link" to={"/courses/" + i} type="menu">
                           <IconButton aria-label="delete" onClick={() => this.props.selectCourse(course)}>
-                              <img src={require('./folder.png')} width="64px" title="View course" alt="folderIcon" />
+                              <img src={require('./folder.png').default} width="64px" title="View course" alt="folderIcon" />
                             </IconButton>
                           </NavLink>
                         </Paper>
