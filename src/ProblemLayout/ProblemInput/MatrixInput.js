@@ -1,12 +1,8 @@
 import React from "react";
+import GridInput from "./GridInput";
 
-class GridInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: null,
-    };
-  }
+class MatrixInput extends React.Component {
+  // "$$\begin{bmatrix} -840 & 650 & -530 \\ 330 & 360 & 250 \\ -10 & 900 & 110 \end{bmatrix}$$"
 
   render() {
     return (
@@ -16,4 +12,4 @@ class GridInput extends React.Component {
 }
 
 
-export default GridInput;
+export default MatrixInput;

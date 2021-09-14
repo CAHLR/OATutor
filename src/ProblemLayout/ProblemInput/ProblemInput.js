@@ -11,11 +11,18 @@ class ProblemInput extends React.Component {
   render() {
     const { classes, state } = this.props;
 
+    let { problemType } = this.props.step;
+
+    if (/\\begin{[a-zA-Z]?matrix}/.test(this.props.step?.stepAnswer[0]) && this.props.step?.problemType !== "MultipleChoice") {
+      console.log('automatically determined matrix input to be the correct problem type')
+      problemType = "MatrixInput"
+    }
+
     return (
       <Grid container spacing={0} justifyContent="center" alignItems="center">
-        <Grid item xs={1} md={this.props.step.problemType === "TextBox" ? 4 : false}/>
-        <Grid item xs={9} md={this.props.step.problemType === "TextBox" ? 3 : 11}>
-          {(this.props.step.problemType === "TextBox" && this.props.step.answerType !== "string") && (
+        <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
+        <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
+          {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
             <center
               className={state.isCorrect === false ? classes.textBoxLatexIncorrect : (state.usedHints ? classes.textBoxLatexUsedHint : classes.textBoxLatex)}
               style={{ height: "50px", width: "100%" }}>
@@ -28,7 +35,7 @@ class ProblemInput extends React.Component {
               />
             </center>
           )}
-          {(this.props.step.problemType === "TextBox" && this.props.step.answerType === "string") && (
+          {(problemType === "TextBox" && this.props.step.answerType === "string") && (
             <TextField
               inputProps={{ min: 0, style: { textAlign: 'center' } }}
               error={state.isCorrect === false}
@@ -43,22 +50,28 @@ class ProblemInput extends React.Component {
               }}>
             </TextField>
           )}
-          {this.props.step.problemType === "MultipleChoice" && (
+          {problemType === "MultipleChoice" && (
             <MultipleChoice
               onChange={(evt) => this.props.editInput(evt)}
               choices={this.props.step.choices}/>
           )}
-          {this.props.step.problemType === "GridInput" && (
+          {problemType === "GridInput" && (
             <GridInput
               onChange={(newVal) => this.props.setInputValState(newVal)}
               numRows={this.props.step.numRows}
-              numCols={this.props.step.numCols}/>
+              numCols={this.props.step.numCols}
+              context={this.props.context}
+              classes={this.props.classes}
+            />
           )}
-          {this.props.step.problemType === "MatrixInput" && (
+          {problemType === "MatrixInput" && (
             <MatrixInput
               onChange={(newVal) => this.props.setInputValState(newVal)}
               numRows={this.props.step.numRows}
-              numCols={this.props.step.numCols}/>
+              numCols={this.props.step.numCols}
+              context={this.props.context}
+              classes={this.props.classes}
+            />
           )}
         </Grid>
         <Grid item xs={2} md={1}>
@@ -66,7 +79,7 @@ class ProblemInput extends React.Component {
             {this.props.step.units && renderText(this.props.step.units)}
           </div>
         </Grid>
-        <Grid item xs={false} md={this.props.step.problemType === "TextBox" ? 3 : false}/>
+        <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
       </Grid>
     )
   }

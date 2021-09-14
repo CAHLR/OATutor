@@ -1,4 +1,15 @@
-.grid-holder{
-  display: grid;
-  grid-gap: 5px;
+.grid-input-notice-container > h3, p {
+  margin: 0;
+}
+
+.grid-input-notice-container .grid-input-dim-input {
+  width: min(120px, 19vw);
+}
+
+.grid-cell {
+  height: 40px;
+  width: min(120px, 19vw);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

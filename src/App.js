@@ -36,6 +36,8 @@ import {
   index2Bkt
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -152,7 +154,7 @@ class App extends React.Component {
               </Switch>
             </div>
           </Router>
-
+          <ToastContainer />
         </ThemeContext.Provider>
       </ThemeProvider>
     );

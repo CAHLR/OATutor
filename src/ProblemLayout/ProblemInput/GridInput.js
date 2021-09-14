@@ -1,25 +1,36 @@
-import React from "react";
+import React, { createRef } from "react";
 import './GridInput.css'
-import { TextField } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import clsx from 'clsx';
+import EquationEditor from "equation-editor-react";
+import { Box, ClickAwayListener, Grow, Paper, Popper, TextField } from "@material-ui/core";
+import CloseIcon from '@material-ui/icons/Close';
+import { toast } from "react-toastify";
 
 class GridInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      gridState: this.EMPTY_GRID(),
+      gridState: this.genEmptyGrid(0, 0),
+      numRows: this.props.numRows || 0,
+      numCols: this.props.numCols || 0,
+      openChangeDimensions: false
     };
+
+    this.gridRef = createRef()
+
+    this.changeDimRef = createRef()
+
     this.clearCells = this.clearCells.bind(this)
   }
 
-  EMPTY_GRID = () => new Array(this.props.numRows || 1)
+  genEmptyGrid = (numRows, numCols) => new Array(numRows)
     .fill(0)
-    .map(_ => new Array(this.props.numCols || 1).fill(""))
+    .map(_ => new Array(numCols).fill(""))
 
-  textFieldChange(evt, idx, jdx) {
+  cellFieldChange(str, idx, jdx) {
     const gridState = this.state.gridState
-    gridState[idx][jdx] = evt.target.value;
+    gridState[idx][jdx] = str;
 
     this.setState({
       gridState
@@ -28,56 +39,174 @@ class GridInput extends React.Component {
     })
   }
 
-  clearCells() {
+  dimensionFieldChange(evt, idx) {
+    if (idx === 0) {
+      this.setState({
+        numRows: +evt.target.value
+      })
+    } else {
+      this.setState({
+        numCols: +evt.target.value
+      })
+    }
+  }
+
+  clearCells(evt) {
+    if (evt != null && evt.type === 'submit') {
+      evt.preventDefault()
+    }
+    const { numRows, numCols } = this.state;
+
+    if (isNaN(numRows) || numRows === 0 || isNaN(numCols) || numCols === 0) {
+      toast.error('Please enter a matrix at least size 1 x 1')
+      return
+    }
+
     this.setState({
-      gridState: this.EMPTY_GRID()
+      gridState: this.genEmptyGrid(numRows, numCols)
+    })
+    if (this.gridRef.current) {
+      this.gridRef.current
+        .querySelectorAll(".mq-editable-field > *[mathquill-command-id], .mq-root-block > *[mathquill-command-id]")
+        .forEach(node => {
+          node.remove()
+        })
+    }
+  }
+
+  toggleChangeDimensionsPopover(to) {
+    this.setState({
+      openChangeDimensions: to
     })
   }
 
   render() {
-    const { numCols = 1, numRows = 1 } = this.props;
+    const { classes } = this.props;
 
-    const revealClear = this.state.gridState.reduce(
-      (acc, cur, _) => acc + cur.reduce(
-        (_acc, _cur, __) => _acc + _cur.length,
-        0
-      ),
-      0) > 0; // only reveal the clear button if there is at least something in a cell
+    const { gridState, numCols } = this.state;
+
+    const revealClearButton = gridState.reduce((acc, cur, _) =>
+      acc + cur.reduce((_acc, _cur, __) =>
+      _acc + _cur.length, 0
+      ), 0
+    ) > 0; // only reveal the clear button if there is at least something in a cell
+
+    const showInitialSlide = gridState.length === 0;
 
     return (
-      <div style={{ textAlign: "center" }}>
-        <div className={"grid-holder"} style={{
-          gridTemplateColumns: `repeat(${numCols}, 1fr)`
-        }}>
-          {
-            new Array(numRows)
-              .fill(1)
-              .map((_, idx) =>
-                new Array(numCols)
-                  .fill(1)
-                  .map((_, jdx) => {
-                    return (
-                      <TextField
-                        key={`cell-${idx}-${jdx}`}
-                        value={this.state.gridState[idx][jdx]}
-                        variant={"outlined"} title={`Grid cell #${idx + 1}`}
-                        onChange={(evt) => this.textFieldChange(evt, idx, jdx)}
-                      />
-                    )
-                  })
-              )
-          }
-        </div>
-        <div style={{
-          marginTop: 5,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end'
-        }}>
-          <Button variant="contained" color="secondary" onClick={this.clearCells}
-                  className={clsx("revealable", revealClear && "revealed")}>clear all cells</Button>
-        </div>
-      </div>
+      <Box textAlign={'center'} display={'flex'} flexDirection={'column'} alignItems={'center'}>
+        {showInitialSlide ? (
+          <form onSubmit={this.clearCells}>
+            <Box className={'grid-input-notice-container'}>
+              <h3>Please enter in the dimensions for the matrix!</h3>
+              <p>(This can be changed later)</p>
+              <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
+                <TextField
+                  variant={"filled"} label={'# Rows'} type={'number'} className={'grid-input-dim-input'}
+                  onChange={(evt) => this.dimensionFieldChange(evt, 0)}
+                />
+                <CloseIcon/>
+                <TextField
+                  variant={"filled"} label={'# Cols'} type={'number'} className={'grid-input-dim-input'}
+                  onChange={(evt) => this.dimensionFieldChange(evt, 1)}
+                />
+              </Box>
+              <Box mt={2}>
+                <Button variant={'contained'} color={'primary'} type={'submit'}>
+                  Next
+                </Button>
+              </Box>
+            </Box>
+          </form>
+        ) : (
+          <div style={{
+            maxWidth: '100%'
+          }}>
+            <Box mb={1} display={'flex'} width={'100%'} alignItems={'center'} justifyContent={'flex-end'}>
+              <Button variant="contained" color="primary" onClick={() => this.toggleChangeDimensionsPopover(true)}
+                      ref={this.changeDimRef}>change dimensions</Button>
+              <Popper open={this.state.openChangeDimensions}
+                      anchorEl={this.changeDimRef.current} role={undefined}
+                      transition disablePortal
+                      placement={'bottom-end'}
+              >
+                {({ TransitionProps, placement }) => (
+                  <Grow
+                    {...TransitionProps}
+                    style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                  >
+                    <Paper>
+                      <ClickAwayListener onClickAway={() => this.toggleChangeDimensionsPopover(false)}>
+                        <form onSubmit={() => {
+                          this.clearCells()
+                          this.toggleChangeDimensionsPopover(false)
+                        }}>
+                          <Box className={'grid-input-notice-container'} p={3}>
+                            <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
+                              <TextField
+                                size={'small'}
+                                variant={"filled"} label={'# Rows'} type={'number'} className={'grid-input-dim-input'}
+                                onChange={(evt) => this.dimensionFieldChange(evt, 0)}
+                              />
+                              <CloseIcon/>
+                              <TextField
+                                size={'small'}
+                                variant={"filled"} label={'# Cols'} type={'number'} className={'grid-input-dim-input'}
+                                onChange={(evt) => this.dimensionFieldChange(evt, 1)}
+                              />
+                            </Box>
+                            <Box mt={1}>
+                              <Button variant={'contained'} color={'primary'} type={'submit'} size={'small'}>
+                                Done
+                              </Button>
+                            </Box>
+                          </Box>
+                        </form>
+                      </ClickAwayListener>
+                    </Paper>
+                  </Grow>
+                )}
+              </Popper>
+            </Box>
+            <div ref={this.gridRef}>
+              <Box display={'grid'}
+                   gridTemplateColumns={`repeat(${gridState[0].length}, 1fr)`}
+                   overflow={'auto'}
+                   pt={1}
+                   pb={1}
+                   gridGap={8}
+                   justifyItems={'center'}
+              >
+                {
+                  gridState.map((row, idx) =>
+                    row.map((val, jdx) => {
+                      return (
+                        <center
+                          className={clsx(classes.textBoxLatex, 'grid-cell')}
+                          key={`cell-${idx}-${jdx}`}
+                          title={`Cell (${idx}, ${jdx})`}
+                        >
+                          <EquationEditor
+                            value={val}
+                            onChange={(str) => this.cellFieldChange(str, idx, jdx)}
+                            style={{ width: "100%" }}
+                            autoCommands={this.props.context.autoCommands}
+                            autoOperatorNames={this.props.context.autoOperatorNames}
+                          />
+                        </center>
+                      )
+                    })
+                  )
+                }
+              </Box>
+            </div>
+            <Box mt={1} display={'flex'} width={'100%'} alignItems={'center'} justifyContent={'flex-end'}>
+              <Button variant="contained" color="secondary" onClick={this.clearCells}
+                      className={clsx("revealable", revealClearButton && "revealed")}>clear all cells</Button>
+            </Box>
+          </div>
+        )}
+      </Box>
     )
   }
 
