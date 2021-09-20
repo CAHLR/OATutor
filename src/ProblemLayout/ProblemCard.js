@@ -95,8 +95,6 @@ class ProblemCard extends React.Component {
   submit = () => {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
-    console.debug("parsed vs correct", parsed, correctAnswer)
-
     if (this.context.logData) {
       try {
         this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);

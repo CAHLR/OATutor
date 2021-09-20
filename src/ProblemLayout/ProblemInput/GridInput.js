@@ -83,7 +83,7 @@ class GridInput extends React.Component {
   render() {
     const { classes } = this.props;
 
-    const { gridState, numCols } = this.state;
+    const { gridState } = this.state;
 
     const revealClearButton = gridState.reduce((acc, cur, _) =>
       acc + cur.reduce((_acc, _cur, __) =>
@@ -94,11 +94,11 @@ class GridInput extends React.Component {
     const showInitialSlide = gridState.length === 0;
 
     return (
-      <Box textAlign={'center'} display={'flex'} flexDirection={'column'} alignItems={'center'}>
+      <Box textAlign={'center'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={3} pb={3}>
         {showInitialSlide ? (
           <form onSubmit={this.clearCells}>
             <Box className={'grid-input-notice-container'}>
-              <h3>Please enter in the dimensions for the matrix!</h3>
+              <h3>Please enter in the matrix dimensions for your response.</h3>
               <p>(This can be changed later)</p>
               <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                 <TextField
@@ -129,6 +129,9 @@ class GridInput extends React.Component {
                       anchorEl={this.changeDimRef.current} role={undefined}
                       transition disablePortal
                       placement={'bottom-end'}
+                      style={{
+                        zIndex: 10
+                      }}
               >
                 {({ TransitionProps, placement }) => (
                   <Grow
@@ -168,7 +171,8 @@ class GridInput extends React.Component {
                 )}
               </Popper>
             </Box>
-            <div ref={this.gridRef}>
+            <div ref={this.gridRef} className={clsx(this.props.isMatrix && 'matrix-container')}>
+              {this.props.isMatrix && <div className={'matrix-bracket-left'}/>}
               <Box display={'grid'}
                    gridTemplateColumns={`repeat(${gridState[0].length}, 1fr)`}
                    overflow={'auto'}
@@ -199,6 +203,7 @@ class GridInput extends React.Component {
                   )
                 }
               </Box>
+              {this.props.isMatrix && <div className={'matrix-bracket-right'}/>}
             </div>
             <Box mt={1} display={'flex'} width={'100%'} alignItems={'center'} justifyContent={'flex-end'}>
               <Button variant="contained" color="secondary" onClick={this.clearCells}

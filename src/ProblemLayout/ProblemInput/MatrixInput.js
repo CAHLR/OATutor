@@ -6,7 +6,7 @@ class MatrixInput extends React.Component {
 
   render() {
     return (
-      <GridInput {...this.props}/>
+      <GridInput {...this.props} isMatrix={true}/>
     )
   }
 }

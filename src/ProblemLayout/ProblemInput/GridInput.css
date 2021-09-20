@@ -13,3 +13,33 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.grid-cell > * > *[mathquill-block-id]{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matrix-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.matrix-bracket-left, .matrix-bracket-right{
+  width: 6px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.matrix-bracket-left{
+  margin-right: 4px;
+  border-left: 2px solid black;
+}
+
+.matrix-bracket-right{
+  margin-left: 4px;
+  border-right: 2px solid black;
+}
