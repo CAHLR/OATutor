@@ -55,7 +55,7 @@ class HintTextbox extends React.Component {
           classes={classes}
           state={this.state}
           step={this.hint}
-          setState={this.setState}
+          _setState={(state) => this.setState(state)}
           context={this.context}
           editInput={this.editInput}
           setInputValState={this.setInputValState}

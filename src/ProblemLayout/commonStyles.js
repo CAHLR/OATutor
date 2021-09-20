@@ -137,28 +137,26 @@ const styles = theme => ({
     justifyContent: "center",
     alignItems: "center",
     paddingBottom: "3px",
+    height: 50,
+    width: '100%',
+    '& > * > *[mathquill-block-id]': {
+      height: 50,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
   },
   textBoxLatexIncorrect: {
-    borderRadius: "4px",
     boxShadow: "0 0 0.75pt 0.75pt red",
     '&:focus-within': {
       border: "1px solid red",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
   },
   textBoxLatexUsedHint: {
-    borderRadius: "4px",
     boxShadow: "0 0 0.75pt 0.75pt GoldenRod",
     '&:focus-within': {
       border: "1px solid GoldenRod",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
   }
 
 });

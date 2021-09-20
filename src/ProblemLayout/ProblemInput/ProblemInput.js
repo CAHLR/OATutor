@@ -6,6 +6,7 @@ import MultipleChoice from "./MultipleChoice";
 import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
 import { renderText } from "../../ProblemLogic/renderText";
+import clsx from "clsx";
 
 class ProblemInput extends React.Component {
   render() {
@@ -24,11 +25,10 @@ class ProblemInput extends React.Component {
         <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
           {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
             <center
-              className={state.isCorrect === false ? classes.textBoxLatexIncorrect : (state.usedHints ? classes.textBoxLatexUsedHint : classes.textBoxLatex)}
-              style={{ height: "50px", width: "100%" }}>
+              className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}>
               <EquationEditor
                 value={state.inputVal}
-                onChange={(eq) => this.props.setState({ inputVal: eq })}
+                onChange={(eq) => this.props._setState({ inputVal: eq })}
                 style={{ width: "100%" }}
                 autoCommands={this.props.context.autoCommands}
                 autoOperatorNames={this.props.context.autoOperatorNames}
