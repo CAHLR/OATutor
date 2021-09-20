@@ -1,0 +1,1 @@
+import hints from "./trifactor20a-index.js"; const step = {id: "trifactor20a", stepAnswer: ["$${\\left(\\left(10\\right) x-\\left(1\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(100\\right) x^2-\\left(20\\right) x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

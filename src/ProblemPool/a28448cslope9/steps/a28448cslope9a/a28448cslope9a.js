@@ -1,0 +1,1 @@
+import hints from "./a28448cslope9a-index.js"; const step = {id: "a28448cslope9a", stepAnswer: ["-3;(0,5)"], problemType: "MultipleChoice", stepTitle: "$$\\left(3\\right) x+y=5$$", stepBody: "", choices: ["-3;(0,5)", "-3;(5,0)", "3;(0,5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

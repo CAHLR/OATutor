@@ -1,1 +1,0 @@
-import steps from "./slope19-index.js"; const problem = {id: "slope19", title: "Parallel Lines", body: "Use slopes and y-intercepts to determine if the lines are parallel.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

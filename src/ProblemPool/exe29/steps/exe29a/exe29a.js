@@ -1,0 +1,1 @@
+import hints from "./exe29a-index.js"; const step = {id: "exe29a", stepAnswer: ["$$\\left(x-\\left(5\\right)\\right) \\left(x+\\left(4\\right)\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2-x-\\left(20\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

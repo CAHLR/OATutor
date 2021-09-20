@@ -1,0 +1,1 @@
+import hints from "./exe28a-index.js"; const step = {id: "exe28a", stepAnswer: ["$$\\left(x-\\left(6\\right)\\right) \\left(x+\\left(2\\right)\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2-\\left(4\\right) x-\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

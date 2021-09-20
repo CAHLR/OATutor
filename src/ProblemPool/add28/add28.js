@@ -1,1 +1,0 @@
-import steps from "./add28-index.js"; const problem = {id: "add28", title: "Simplify:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

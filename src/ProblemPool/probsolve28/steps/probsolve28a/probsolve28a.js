@@ -1,1 +1,1 @@
-import hints from "./probsolve28a-index.js"; const step = {id: "probsolve28a", stepAnswer: ["23,24"], problemType: "TextBox", stepTitle: "The sum of two consecutive integers is 47. Find the numbers.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./probsolve28a-index.js"; const step = {id: "probsolve28a", stepAnswer: ["23,24"], problemType: "TextBox", stepTitle: "The sum of two consecutive integers is 47. Find the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

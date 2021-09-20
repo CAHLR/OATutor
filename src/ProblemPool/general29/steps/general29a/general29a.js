@@ -1,0 +1,1 @@
+import hints from "./general29a-index.js"; const step = {id: "general29a", stepAnswer: ["$$\\left(\\left(2\\right) n-\\left(1\\right)\\right) \\left(n+\\left(7\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) n^2+\\left(13\\right) n-\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

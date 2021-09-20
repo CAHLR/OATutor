@@ -1,1 +1,0 @@
-import hints from "./add30b-index.js"; const step = {id: "add30b", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-\\left(-10\\right) \\rule{2cm}{0.15mm}-|-\\left(10\\right)|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

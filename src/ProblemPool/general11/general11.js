@@ -1,0 +1,1 @@
+import steps from "./general11-index.js"; const problem = {id: "general11", title: "Recognize and Use the Appropriate Method to Factor a Polynomial Completely", body: "Factor the following expression completely", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a28448cslope14a-index.js"; const step = {id: "a28448cslope14a", stepAnswer: ["Parallel"], problemType: "MultipleChoice", stepTitle: "$$\\left(3\\right) x-\\left(2\\right) y=6$$, $$y=\\frac{3}{2} x+\\left(1\\right)$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

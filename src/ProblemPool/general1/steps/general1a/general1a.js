@@ -1,0 +1,1 @@
+import hints from "./general1a-index.js"; const step = {id: "general1a", stepAnswer: ["$$\\left(8\\right) \\left(m-\\left(2\\right)\\right) \\left(m+\\left(2\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) m^2-\\left(32\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

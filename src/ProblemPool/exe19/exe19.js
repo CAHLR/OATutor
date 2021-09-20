@@ -1,0 +1,1 @@
+import steps from "./exe19-index.js"; const problem = {id: "exe19", title: "Factoring Trinomials", body: "Factor the trinomial.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

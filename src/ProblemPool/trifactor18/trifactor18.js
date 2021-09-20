@@ -1,0 +1,1 @@
+import steps from "./trifactor18-index.js"; const problem = {id: "trifactor18", title: "Factor Perfect Square Trinomials", body: "Factor.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

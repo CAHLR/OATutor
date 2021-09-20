@@ -1,0 +1,1 @@
+import hints from "./a5991b4add6d-index.js"; const step = {id: "a5991b4add6d", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\left(20\\right) x^2 y^2-\\left(10\\right) a^2 b^2+\\left(30\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

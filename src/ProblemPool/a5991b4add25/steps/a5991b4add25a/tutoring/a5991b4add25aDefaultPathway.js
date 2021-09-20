@@ -1,0 +1,1 @@
+var hints = [{id: "a5991b4add25a-h1", type: "hint", dependencies: [], title: "Combining Like Terms", text: "Since both terms are like, we can subtract their coefficients to get $$-\\left(10\\right) z^3$$", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import steps from "./slope4-index.js"; const problem = {id: "slope4", title: "Slope and y-intercept", body: "Use the graph to find the slope and y-intercept of the line.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

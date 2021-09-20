@@ -1,0 +1,1 @@
+import steps from "./acf3da9gaussian6-index.js"; const problem = {id: "acf3da9gaussian6", title: "Solving a 2x2 System by Gaussian Elimination", body: "Solve the given system by Gaussian elimination.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

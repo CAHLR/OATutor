@@ -1,1 +1,0 @@
-import hints from "./add2c-index.js"; const step = {id: "add2c", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "$$-|u|$$ when $$u=12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

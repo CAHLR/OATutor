@@ -1,1 +1,0 @@
-import steps from "./gaussian8-index.js"; const problem = {id: "gaussian8", title: "Performing Row Operations on a 3×3 Augmented Matrix to Obtain Row-Echelon Form", body: "Perform row operations on the given matrix to obtain row-echelon form.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

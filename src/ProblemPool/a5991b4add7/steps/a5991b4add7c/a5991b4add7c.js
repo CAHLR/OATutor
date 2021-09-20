@@ -1,0 +1,1 @@
+import hints from "./a5991b4add7c-index.js"; const step = {id: "a5991b4add7c", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y^3-\\left(8\\right) y^2+\\left(2\\right) y-\\left(16\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
