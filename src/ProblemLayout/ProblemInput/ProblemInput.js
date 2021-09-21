@@ -14,7 +14,9 @@ class ProblemInput extends React.Component {
 
     let { problemType } = this.props.step;
 
-    if (/\\begin{[a-zA-Z]?matrix}/.test(this.props.step?.stepAnswer[0]) && this.props.step?.problemType !== "MultipleChoice") {
+    if (this.props.step?.stepAnswer
+      && /\\begin{[a-zA-Z]?matrix}/.test(this.props.step.stepAnswer[0])
+      && this.props.step?.problemType !== "MultipleChoice") {
       console.log('automatically determined matrix input to be the correct problem type')
       problemType = "MatrixInput"
     }

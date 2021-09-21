@@ -57,8 +57,8 @@ class GridInput extends React.Component {
     }
     const { numRows, numCols } = this.state;
 
-    if (isNaN(numRows) || numRows === 0 || isNaN(numCols) || numCols === 0) {
-      toast.error('Please enter a matrix at least size 1 x 1')
+    if (isNaN(numRows) || numRows <= 0 || isNaN(numCols) || numCols <= 0) {
+      toast.error('Matrix must be at least 1 x 1')
       return
     }
 
@@ -124,7 +124,7 @@ class GridInput extends React.Component {
           }}>
             <Box mb={1} display={'flex'} width={'100%'} alignItems={'center'} justifyContent={'flex-end'}>
               <Button variant="contained" color="primary" onClick={() => this.toggleChangeDimensionsPopover(true)}
-                      ref={this.changeDimRef}>change dimensions</Button>
+                      ref={this.changeDimRef}>DIMENSIONS: {gridState.length} x {gridState[0].length}</Button>
               <Popper open={this.state.openChangeDimensions}
                       anchorEl={this.changeDimRef.current} role={undefined}
                       transition disablePortal
@@ -144,7 +144,8 @@ class GridInput extends React.Component {
                           this.clearCells()
                           this.toggleChangeDimensionsPopover(false)
                         }}>
-                          <Box className={'grid-input-notice-container'} p={3}>
+                          <Box className={'grid-input-notice-container'} p={2} display={'flex'}
+                               flexDirection={'column'} alignItems={'flex-end'} boxShadow={3} borderRadius={3}>
                             <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                               <TextField
                                 size={'small'}
