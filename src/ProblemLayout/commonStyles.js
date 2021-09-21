@@ -133,17 +133,16 @@ const styles = theme => ({
     '&:focus-within': {
       border: "2px solid #3f51b5",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
     height: 50,
     width: '100%',
+    '& > .mq-editable-field': {
+      display: 'table',
+      tableLayout: 'fixed'
+    },
     '& > * > *[mathquill-block-id]': {
       height: 50,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
+      display: 'table-cell',
+      paddingBottom: 5
     }
   },
   textBoxLatexIncorrect: {
