@@ -9,15 +9,30 @@ import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
 
 class ProblemInput extends React.Component {
+  componentDidMount() {
+    console.debug('problem', this.props.step)
+    if (this.isMatrixInput()) {
+      console.log('automatically determined matrix input to be the correct problem type')
+    }
+  }
+
+  isMatrixInput() {
+    if (this.props.step?.stepAnswer) {
+      return this.props.step?.problemType !== "MultipleChoice" &&
+        /\\begin{[a-zA-Z]?matrix}/.test(this.props.step.stepAnswer[0])
+    }
+    if (this.props.step?.hintAnswer) {
+      return this.props.step?.problemType !== "MultipleChoice" &&
+        /\\begin{[a-zA-Z]?matrix}/.test(this.props.step.hintAnswer[0])
+    }
+  }
+
   render() {
     const { classes, state } = this.props;
 
     let { problemType } = this.props.step;
 
-    if (this.props.step?.stepAnswer
-      && /\\begin{[a-zA-Z]?matrix}/.test(this.props.step.stepAnswer[0])
-      && this.props.step?.problemType !== "MultipleChoice") {
-      console.log('automatically determined matrix input to be the correct problem type')
+    if (this.isMatrixInput()) {
       problemType = "MatrixInput"
     }
 

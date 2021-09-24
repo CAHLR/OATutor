@@ -28,8 +28,6 @@ class Problem extends React.Component {
     this.stepStates = {};
     this.numCorrect = 0;
 
-    console.log("problem object", this.props.problem)
-
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),

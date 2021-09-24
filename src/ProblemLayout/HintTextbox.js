@@ -43,7 +43,7 @@ class HintTextbox extends React.Component {
   }
 
   setInputValState = (inputVal) => {
-    console.debug("new inputVal state: ", inputVal)
+    // console.debug("new inputVal state: ", inputVal)
     this.setState({ inputVal })
   }
 

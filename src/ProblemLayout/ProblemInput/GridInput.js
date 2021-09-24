@@ -94,20 +94,20 @@ class GridInput extends React.Component {
     const showInitialSlide = gridState.length === 0;
 
     return (
-      <Box textAlign={'center'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={3} pb={3}>
+      <Box textAlign={'center'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={1} pb={1}>
         {showInitialSlide ? (
           <form onSubmit={this.clearCells}>
-            <Box className={'grid-input-notice-container'}>
-              <h3>Please enter in the matrix dimensions for your response.</h3>
+            <Box className={'grid-input-notice-container'} p={2} bgcolor={'rgb(249,249,250)'} borderRadius={8}>
+              <h3>Enter in matrix dimensions.</h3>
               <p>(This can be changed later)</p>
               <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                 <TextField
-                  variant={"filled"} label={'# Rows'} type={'number'} className={'grid-input-dim-input'}
+                  variant={"outlined"} label={'# Rows'} type={'number'} className={'grid-input-dim-input'}
                   onChange={(evt) => this.dimensionFieldChange(evt, 0)}
                 />
                 <CloseIcon/>
                 <TextField
-                  variant={"filled"} label={'# Cols'} type={'number'} className={'grid-input-dim-input'}
+                  variant={"outlined"} label={'# Cols'} type={'number'} className={'grid-input-dim-input'}
                   onChange={(evt) => this.dimensionFieldChange(evt, 1)}
                 />
               </Box>
