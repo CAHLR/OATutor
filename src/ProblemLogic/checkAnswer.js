@@ -1,12 +1,13 @@
 import { variabilize } from './variabilize.js';
+
 var Algebrite = require('algebrite');
 var KAS = require('../kas.js');
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
-  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
   return actual.some((stepAns) => {
-    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\left/g, '').replace(/\right/g, '');
+    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
     //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
     return (parsedAttempt === parsedStepAns)
   });
@@ -35,16 +36,48 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
   }
   //console.log(actual);
   var correctAnswer = false;
-  
+
   try {
     if (parsed === "") {
       return [parsed, false];
     } else if (answerType === "arithmetic") {
-      parsed = KAS.parse(attempt.replace(/\$\$/g, '')).expr;
-      console.log(parsed);
-      console.log(actual);
-      correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns.replace(/\$\$/g, '')).expr));
-      return [parsed.print(), correctAnswer];
+      // checks if anticipated answer is a matrix
+      if (/\\begin{[a-zA-Z]?matrix}/.test(actual)) {
+        console.debug(`attempt: ${attempt} vs. actual:`, actual)
+        const studentMatrix = JSON.parse(attempt)
+        const solutionMatrices = []
+
+        ;(Array.isArray(actual) ? actual : [actual]).forEach(sol => {
+          const _start = sol.indexOf("matrix} ") + "matrix} ".length
+          const _end = sol.indexOf("\\end{")
+          let _solutionMatrix = sol
+            .substring(_start, _end)
+            .trim()
+            .split("\\\\")
+            .map(row => row.split("&").map(val => val.trim()))
+          solutionMatrices.push(_solutionMatrix)
+        })
+
+        console.debug('solutions: ', solutionMatrices)
+        correctAnswer = solutionMatrices.some(matrix => {
+          return matrix.reduce((acc, row, idx) => acc && row.reduce((_acc, cell, jdx) => {
+            const _studentRow = studentMatrix[idx] || []
+            const _studentCell = _studentRow[jdx] || ""
+            const _studentExpr = KAS.parse(_studentCell.replace(/\$\$/g, '')).expr
+
+            const _solExpr = KAS.parse(cell.replace(/\$\$/g, '')).expr
+
+            return _acc && KAS.compare(_studentExpr, _solExpr).equal
+          }, true), true)
+        })
+
+        return [attempt, correctAnswer]
+      } else {
+        parsed = KAS.parse(attempt.replace(/\$\$/g, '')).expr;
+        correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns.replace(/\$\$/g, '')).expr));
+        return [parsed.print(), correctAnswer];
+      }
+
     } else if (answerType === "string") {
       parsed = attempt;
       //console.log(parsed);
@@ -55,10 +88,10 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
       correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
     }
     return [parsed, correctAnswer];
-  } catch(err) {
+  } catch (err) {
     console.log("error", err);
     return [parsed, false];
   }
 }
 
-export {checkAnswer};
+export { checkAnswer };

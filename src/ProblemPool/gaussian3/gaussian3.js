@@ -1,1 +1,0 @@
-import steps from "./gaussian3-index.js"; const problem = {id: "gaussian3", title: "Writing a System of Equations from an Augmented Matrix Form", body: "Find the system of equations from the augmented matrix when the variables are x, y, and z.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

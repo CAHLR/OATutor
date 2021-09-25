@@ -1,1 +1,0 @@
-import steps from "./slope13-index.js"; const problem = {id: "slope13", title: "Slope and y-intercept", body: "Identify the slope and y-intercept of the line.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

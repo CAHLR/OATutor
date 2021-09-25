@@ -1,0 +1,1 @@
+import hints from "./a5991b4add1a-index.js"; const step = {id: "a5991b4add1a", stepAnswer: ["trinomial"], problemType: "MultipleChoice", stepTitle: "$$\\left(81\\right) b^5-\\left(24\\right) b^3+\\left(1\\right)$$", stepBody: "", choices: ["monomial", "binomial", "trinomial", "polynomial"], answerType: "string", hints: hints, variabilization: {}}; export {step};

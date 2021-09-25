@@ -1,8 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
@@ -88,44 +88,46 @@ class HintSystem extends React.Component {
     return (
       <div className={classes.root}>
         {this.props.hints.map((hint, i) => {
-          return <ExpansionPanel key={i}
-            onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
-            disabled={this.isLocked(i)}
-            expanded={this.state.currentExpanded === i}
-            defaultExpanded={false}>
-            <ExpansionPanelSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography className={classes.heading}>
-                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <Typography component={'span'} style={{ width: "100%" }}>
-                {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
-                {hint.type === "scaffold" ?
-                  <div><br /><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint} seed={this.props.seed} hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                    toggleHints={(event) => this.toggleSubHints(event, i)} /></div> : ""}
-                {this.state.showSubHints[i] && hint.subHints !== undefined ?
-                  <div className="SubHints">
-                    <br />
-                    <SubHintSystem
-                      problemID={this.props.problemID}
-                      hints={hint.subHints}
-                      unlockHint={this.unlockSubHint}
-                      hintStatus={this.state.subHintsFinished[i]}
-                      submitHint={this.submitSubHint}
-                      parent={i}
-                      seed={this.props.seed}
-                      hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                    />
-                    <br /></div>
-                  : ""}
-              </Typography>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-        }
+            return <Accordion key={i}
+                                   onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+                                   disabled={this.isLocked(i)}
+                                   expanded={this.state.currentExpanded === i}
+                                   defaultExpanded={false}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon/>}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography className={classes.heading}>
+                  Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography component={'span'} style={{ width: "100%" }}>
+                  {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
+                  {hint.type === "scaffold" ?
+                    <div><br/><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
+                                           seed={this.props.seed}
+                                           hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
+                                           toggleHints={(event) => this.toggleSubHints(event, i)}/></div> : ""}
+                  {this.state.showSubHints[i] && hint.subHints !== undefined ?
+                    <div className="SubHints">
+                      <br/>
+                      <SubHintSystem
+                        problemID={this.props.problemID}
+                        hints={hint.subHints}
+                        unlockHint={this.unlockSubHint}
+                        hintStatus={this.state.subHintsFinished[i]}
+                        submitHint={this.submitSubHint}
+                        parent={i}
+                        seed={this.props.seed}
+                        hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
+                      />
+                      <br/></div>
+                    : ""}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          }
         )}
       </div>
     )

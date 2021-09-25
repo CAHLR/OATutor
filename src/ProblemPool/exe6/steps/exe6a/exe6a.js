@@ -1,0 +1,1 @@
+import hints from "./exe6a-index.js"; const step = {id: "exe6a", stepAnswer: ["(x-1)(x-7)"], problemType: "TextBox", stepTitle: "$$x^2-\\left(8\\right) x+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./gra3a-index.js"; const step = {id: "gra3a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "(5,-2)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

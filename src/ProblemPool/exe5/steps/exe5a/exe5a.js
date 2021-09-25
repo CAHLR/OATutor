@@ -1,0 +1,1 @@
+import hints from "./exe5a-index.js"; const step = {id: "exe5a", stepAnswer: ["(m-3)(m-10)"], problemType: "TextBox", stepTitle: "$$m^2-\\left(13\\right) m+\\left(30\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

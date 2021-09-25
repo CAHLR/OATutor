@@ -1,0 +1,1 @@
+import hints from "./general10a-index.js"; const step = {id: "general10a", stepAnswer: ["$$\\left(3\\right) \\left(x-\\left(3\\right)\\right) \\left(x^2+\\left(3\\right) x+\\left(9\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) t^3-\\left(40\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

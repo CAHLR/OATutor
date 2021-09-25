@@ -1,1 +1,0 @@
-import hints from "./slope5a-index.js"; const step = {id: "slope5a", stepAnswer: ["-3;(0,5)"], problemType: "MultipleChoice", stepTitle: "$$y=-\\left(3\\right) x+\\left(5\\right)$$", stepBody: "", choices: ["-3;(0,5)", "-3;(5,0)", "-3;5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

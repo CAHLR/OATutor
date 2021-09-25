@@ -1,10 +1,10 @@
 import React from 'react';
 //import lessonPlans from './lessonPlans.js'
 import courses from './coursePlans.js';
-import {bkt2Index, index2Bkt} from './bktIndex.js';
+import { bkt2Index, index2Bkt } from './bktIndex.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 1.108;
+const siteVersion = 1.110;
 const logData = true;
 const logMouseData = false;
 const debug = false;
@@ -12,7 +12,7 @@ const useBottomOutHints = true;
 
 // DynamicText not supported for HTML body types
 const dynamicText = {
-    "%CAR%": "Tesla car"
+  "%CAR%": "Tesla car"
 };
 const cookieID = "openITS-id";
 
@@ -25,34 +25,35 @@ const autoOperatorNames = "sin cos tan";
 
 const middlewareURL = "https://askoski.berkeley.edu:1339";
 
-var coursePlans = courses.sort((a,b) => a.courseName.localeCompare(b.courseName));
+var coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 
 var lessonCounter = 0;
 var lessonPlans = [];
 for (var i = 0; i < coursePlans.length; i++) {
-    var course = coursePlans[i];
-    for (var j = 0; j < course.lessons.length; j++) {
-        course.lessons[j].lessonNum = lessonCounter;
-        lessonCounter += 1;
-        lessonPlans.push(course.lessons[j]);
-    }
+  var course = coursePlans[i];
+  for (var j = 0; j < course.lessons.length; j++) {
+    course.lessons[j].lessonNum = lessonCounter;
+    lessonCounter += 1;
+    lessonPlans.push(course.lessons[j]);
+  }
 }
 
-export {ThemeContext, 
-    siteVersion,
-    logData,
-    logMouseData,
-    dynamicText,
-    cookieID,
-    debug,
-    useBottomOutHints,
-    lessonPlans,
-    coursePlans,
-    MAX_BUFFER_SIZE,
-    GRANULARITY,
-    autoCommands,
-    autoOperatorNames,
-    middlewareURL,
-    bkt2Index, 
-    index2Bkt
+export {
+  ThemeContext,
+  siteVersion,
+  logData,
+  logMouseData,
+  dynamicText,
+  cookieID,
+  debug,
+  useBottomOutHints,
+  lessonPlans,
+  coursePlans,
+  MAX_BUFFER_SIZE,
+  GRANULARITY,
+  autoCommands,
+  autoOperatorNames,
+  middlewareURL,
+  bkt2Index,
+  index2Bkt
 };

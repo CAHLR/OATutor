@@ -1,1 +1,0 @@
-import hints from "./add20d-index.js"; const step = {id: "add20d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-\\left(-16\\right) \\rule{2cm}{0.15mm}-|-\\left(16\\right)|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

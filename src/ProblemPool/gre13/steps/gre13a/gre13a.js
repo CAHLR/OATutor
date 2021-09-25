@@ -1,0 +1,1 @@
+import hints from "./gre13a-index.js"; const step = {id: "gre13a", stepAnswer: ["$$\\left(8\\right) w^2$$"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) w^2$$, $$\\left(24\\right) w^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

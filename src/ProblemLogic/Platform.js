@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import {
-  HashRouter as Router,
+  HashRouter as Router, Link,
   NavLink
 } from "react-router-dom";
 
@@ -32,7 +32,7 @@ class Platform extends React.Component {
     this.lesson = null;
     //console.log(this.props.lessonNum);
 
-    this.studentNameDisplay = context.studentName ? (context.studentName + " : ") : "Not logged in : " ;
+    this.studentNameDisplay = context.studentName ? (context.studentName + " : ") : "Not logged in : ";
 
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
@@ -169,21 +169,28 @@ class Platform extends React.Component {
   render() {
     return (
       <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
-        <AppBar position="static" >
+        <AppBar position="static">
           <Toolbar>
             <Grid container spacing={0}>
-              <Grid item xs={3} key={1}> <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div></Grid>
+              <Grid item xs={3} key={1}>
+                <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
+                  <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
+                </Link>
+              </Grid>
               <Grid item xs={6} key={2}>
                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
                   {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
-                </div></Grid>
-              <Grid item xs={3} key={3} >
+                </div>
+              </Grid>
+              <Grid item xs={3} key={3}>
                 <div style={{ textAlign: 'right', paddingTop: "3px" }}>
                   {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection" ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%" : ""}
                   {false ?
                     <Router>
-                      <NavLink activeClassName="active" className="link" to={"/"} type="menu" style={{ marginRight: '10px' }}>
-                        <Button color="inherit" onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+                      <NavLink activeClassName="active" className="link" to={"/"} type="menu"
+                               style={{ marginRight: '10px' }}>
+                        <Button color="inherit"
+                                onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
                       </NavLink>
                     </Router> : ""}
                 </div>
@@ -193,15 +200,19 @@ class Platform extends React.Component {
           </Toolbar>
         </AppBar>
         {this.state.status === "courseSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse} removeProgress={this.props.removeProgress} /> : ""}
+          <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse}
+                           removeProgress={this.props.removeProgress}/> : ""}
         {this.state.status === "lessonSelection" ?
-          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress} courseNum={this.props.courseNum} /> : ""}
+          <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress}
+                           courseNum={this.props.courseNum}/> : ""}
         {this.state.status === "learning" ?
-          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson} seed={this.state.seed} lessonNum={this.props.lessonNum} displayMastery={this.displayMastery} /> : ""}
+          <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}
+                   seed={this.state.seed} lessonNum={this.props.lessonNum} displayMastery={this.displayMastery}/> : ""}
         {this.state.status === "exhausted" ?
           <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
         {this.state.status === "graduated" ?
-          <center><h2>Thank you for learning with OpenITS. You have mastered all the skills for this session!</h2></center> : ""}
+          <center><h2>Thank you for learning with OpenITS. You have mastered all the skills for this session!</h2>
+          </center> : ""}
       </div>
 
     );

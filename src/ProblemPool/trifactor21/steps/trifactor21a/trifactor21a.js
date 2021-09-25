@@ -1,0 +1,1 @@
+import hints from "./trifactor21a-index.js"; const step = {id: "trifactor21a", stepAnswer: ["$${\\left(\\left(8\\right) x-\\left(1\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(64\\right) m^2-\\left(16\\right) m+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

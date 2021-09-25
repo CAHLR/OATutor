@@ -1,0 +1,1 @@
+import hints from "./gre30a-index.js"; const step = {id: "gre30a", stepAnswer: ["$$\\left(9\\right) \\left(q+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) q+\\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

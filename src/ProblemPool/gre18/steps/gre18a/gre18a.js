@@ -1,0 +1,1 @@
+import hints from "./gre18a-index.js"; const step = {id: "gre18a", stepAnswer: ["$$\\left(14\\right) x^2 y^4$$"], problemType: "TextBox", stepTitle: "$$\\left(28\\right) x^2 y^4$$, $$\\left(42\\right) x^4 y^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

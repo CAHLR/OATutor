@@ -1,0 +1,1 @@
+import hints from "./trifactor4a-index.js"; const step = {id: "trifactor4a", stepAnswer: ["$${\\left(\\left(9\\right) y-\\left(4\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(81\\right) y^2-\\left(\\left(72\\right) y\\right)+\\left(16\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a5991b4add6c-index.js"; const step = {id: "a5991b4add6c", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$a^2+\\left(9\\right) a+\\left(18\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

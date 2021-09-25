@@ -1,0 +1,1 @@
+import hints from "./exe3a-index.js"; const step = {id: "exe3a", stepAnswer: ["(q-4)(q-9)"], problemType: "TextBox", stepTitle: "$$q^2-\\left(13\\right) q+\\left(36\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

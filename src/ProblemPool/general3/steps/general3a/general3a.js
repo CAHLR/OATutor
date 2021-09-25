@@ -1,0 +1,1 @@
+import hints from "./general3a-index.js"; const step = {id: "general3a", stepAnswer: ["$${\\left(\\left(5\\right) w-\\left(6\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(25\\right) w^2-\\left(\\left(60\\right) w\\right)+\\left(36\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

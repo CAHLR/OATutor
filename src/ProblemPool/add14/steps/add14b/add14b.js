@@ -1,1 +1,0 @@
-import hints from "./add14b-index.js"; const step = {id: "add14b", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "$$\\left(15\\right)+\\left(-32\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

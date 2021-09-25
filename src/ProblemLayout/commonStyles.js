@@ -126,39 +126,36 @@ const styles = theme => ({
   },
   textBoxLatex: {
     border: "1px solid #c4c4c4",
-    borderRadius: "4px", 
+    borderRadius: "4px",
     '&:hover': {
       border: "1px solid #000000",
     },
     '&:focus-within': {
       border: "2px solid #3f51b5",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
+    height: 50,
+    width: '100%',
+    '& > .mq-editable-field': {
+      display: 'table',
+      tableLayout: 'fixed'
+    },
+    '& > * > *[mathquill-block-id]': {
+      height: 50,
+      display: 'table-cell',
+      paddingBottom: 5
+    }
   },
   textBoxLatexIncorrect: {
-    borderRadius: "4px", 
     boxShadow: "0 0 0.75pt 0.75pt red",
     '&:focus-within': {
       border: "1px solid red",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
   },
   textBoxLatexUsedHint: {
-    borderRadius: "4px", 
     boxShadow: "0 0 0.75pt 0.75pt GoldenRod",
     '&:focus-within': {
       border: "1px solid GoldenRod",
     },
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: "3px",
   }
 
 });
