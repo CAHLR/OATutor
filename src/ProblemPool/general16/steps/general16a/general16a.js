@@ -1,0 +1,1 @@
+import hints from "./general16a-index.js"; const step = {id: "general16a", stepAnswer: ["$$\\left(4\\right) x^4 \\left(x+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^5+\\left(12\\right) x^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

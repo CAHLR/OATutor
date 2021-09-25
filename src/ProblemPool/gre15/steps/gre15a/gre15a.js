@@ -1,0 +1,1 @@
+import hints from "./gre15a-index.js"; const step = {id: "gre15a", stepAnswer: ["$$\\left(2\\right) p q$$"], problemType: "TextBox", stepTitle: "$$\\left(10\\right) p^3 q$$, $$\\left(12\\right) p q^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

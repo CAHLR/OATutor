@@ -1,0 +1,1 @@
+import hints from "./exe14a-index.js"; const step = {id: "exe14a", stepAnswer: ["$$\\left(a+\\left(4\\right)\\right) \\left(a-\\left(7\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$a^2-\\left(3\\right) a-\\left(28\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

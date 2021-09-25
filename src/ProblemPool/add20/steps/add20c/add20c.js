@@ -1,1 +1,0 @@
-import hints from "./add20c-index.js"; const step = {id: "add20c", stepAnswer: ["$$=$$"], problemType: "MultipleChoice", stepTitle: "-9___-abs(-9)", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

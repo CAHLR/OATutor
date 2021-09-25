@@ -1,0 +1,1 @@
+import hints from "./a5991b4add15a-index.js"; const step = {id: "a5991b4add15a", stepAnswer: ["$${xy}^2-\\left(5\\right) x-\\left(5\\right) y^2$$"], problemType: "TextBox", stepTitle: "$${xy}^2-\\left(5\\right) x-\\left(5\\right) y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

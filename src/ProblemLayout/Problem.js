@@ -27,6 +27,7 @@ class Problem extends React.Component {
     this.heuristic = context.heuristic;
     this.stepStates = {};
     this.numCorrect = 0;
+
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
@@ -38,13 +39,14 @@ class Problem extends React.Component {
   }
 
   refreshSteps = (problem) => {
-    if (problem === null) {
+    if (problem == null) {
       return (<div></div>);
     }
     return problem.steps.map((step, index) => {
       this.stepStates[index] = null;
       return <Element name={index.toString()} key={Math.random()}>
-        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade} seed={this.props.seed} problemVars={this.props.problem.variabilization} />
+        <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
+                     seed={this.props.seed} problemVars={this.props.problem.variabilization}/>
       </Element>
     })
   }
@@ -68,10 +70,15 @@ class Problem extends React.Component {
   }
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
-    if (this.stepStates[cardIndex] === true) { return }
+    if (this.stepStates[cardIndex] === true) {
+      return
+    }
 
-    if (this.stepStates[cardIndex] === null) {
-      for (var kc of kcArray) {
+    if (this.stepStates[cardIndex] == null) {
+      if (kcArray == null) {
+        kcArray = []
+      }
+      for (const kc of kcArray) {
         //console.log(kc);
         update(this.bktParams[kc], isCorrect);
         //console.log(this.bktParams[kc].probMastery);
@@ -139,56 +146,62 @@ class Problem extends React.Component {
   }
 
   _getNextDebug = (offset) => {
-    return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset]
+    return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset] || "/"
   }
 
 
   render() {
     const { classes } = this.props;
-    if (this.state.problem === null) {
+    if (this.state.problem == null) {
       return (<div></div>);
     }
     return (
       <div>
-        <div className={classes.prompt} >
+        <div className={classes.prompt}>
           <Card className={classes.titleCard}>
             <CardContent>
               <h2 className={classes.problemHeader}>
                 {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
-                <hr />
+                <hr/>
               </h2>
               <div className={classes.problemBody}>
                 {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
               </div>
             </CardContent>
           </Card>
-          <hr />
+          <hr/>
         </div>
         {this.state.steps}
         <div width="100%">
           {this.context.debug ?
             <Grid container spacing={0}>
-              <Grid item xs={2} key={0} />
-              <Grid item xs={2} key={1} >
-                <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)} type="menu" style={{ marginRight: '10px' }}>
-                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={() => this.context.needRefresh = true}>Previous Problem</Button>
+              <Grid item xs={2} key={0}/>
+              <Grid item xs={2} key={1}>
+                <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)} type="menu"
+                         style={{ marginRight: '10px' }}>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small"
+                          onClick={() => this.context.needRefresh = true}>Previous Problem</Button>
                 </NavLink>
               </Grid>
-              <Grid item xs={4} key={2} />
-              <Grid item xs={2} key={3} >
-                <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)} type="menu" style={{ marginRight: '10px' }}>
-                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={() => this.context.needRefresh = true}>Next Problem</Button>
+              <Grid item xs={4} key={2}/>
+              <Grid item xs={2} key={3}>
+                <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)} type="menu"
+                         style={{ marginRight: '10px' }}>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small"
+                          onClick={() => this.context.needRefresh = true}>Next Problem</Button>
                 </NavLink>
               </Grid>
-              <Grid item xs={2} key={4} />
+              <Grid item xs={2} key={4}/>
             </Grid>
             :
             <Grid container spacing={0}>
-              <Grid item xs={3} sm={3} md={5} key={1} />
+              <Grid item xs={3} sm={3} md={5} key={1}/>
               <Grid item xs={6} sm={6} md={2} key={2}>
-                <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.clickNextProblem} disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next Problem</Button>
+                <Button className={classes.button} style={{ width: "100%" }} size="small"
+                        onClick={this.clickNextProblem}
+                        disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next Problem</Button>
               </Grid>
-              <Grid item xs={3} sm={3} md={5} key={3} />
+              <Grid item xs={3} sm={3} md={5} key={3}/>
             </Grid>}
         </div>
 
@@ -202,7 +215,8 @@ class Problem extends React.Component {
           </div>
           <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
             <IconButton aria-label="report" onClick={this.toggleFeedback}>
-              <img src={require('./report_problem.png')} title="Report problem" alt="report" width="32px" />
+              <img src={`${process.env.PUBLIC_URL}/static/images/icons/report_problem.png`} title="Report problem"
+                   alt="report" width="32px"/>
             </IconButton>
           </div>
 
@@ -213,8 +227,8 @@ class Problem extends React.Component {
             <div className={classes.textBoxHeader}>
               <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
             </div>
-            {this.state.feedbackSubmitted ? <br /> : <Grid container spacing={0}>
-              <Grid item xs={1} sm={2} md={2} key={1} />
+            {this.state.feedbackSubmitted ? <br/> : <Grid container spacing={0}>
+              <Grid item xs={1} sm={2} md={2} key={1}/>
               <Grid item xs={10} sm={8} md={8} key={2}>
                 <TextField
                   id="outlined-multiline-flexible"
@@ -229,19 +243,20 @@ class Problem extends React.Component {
                   margin="normal"
                   variant="outlined"
                 /> </Grid>
-              <Grid item xs={1} sm={2} md={2} key={3} />
+              <Grid item xs={1} sm={2} md={2} key={3}/>
             </Grid>}
           </div>
           {this.state.feedbackSubmitted ? "" :
             <div className="submitFeedback">
               <Grid container spacing={0}>
-                <Grid item xs={3} sm={3} md={5} key={1} />
+                <Grid item xs={3} sm={3} md={5} key={1}/>
                 <Grid item xs={6} sm={6} md={2} key={2}>
-                  <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.submitFeedback} disabled={this.state.feedback === ""}>Submit</Button>
+                  <Button className={classes.button} style={{ width: "100%" }} size="small"
+                          onClick={this.submitFeedback} disabled={this.state.feedback === ""}>Submit</Button>
                 </Grid>
-                <Grid item xs={3} sm={3} md={5} key={3} />
+                <Grid item xs={3} sm={3} md={5} key={3}/>
               </Grid>
-              <br /> </div>}
+              <br/></div>}
 
 
         </div> : ""}

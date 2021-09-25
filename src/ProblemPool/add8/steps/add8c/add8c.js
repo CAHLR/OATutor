@@ -1,1 +1,0 @@
-import hints from "./add8c-index.js"; const step = {id: "add8c", stepAnswer: ["-22"], problemType: "TextBox", stepTitle: "$$-|m|$$ when $$m=22$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

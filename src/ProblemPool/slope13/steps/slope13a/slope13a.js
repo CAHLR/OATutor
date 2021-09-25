@@ -1,1 +1,0 @@
-import hints from "./slope13a-index.js"; const step = {id: "slope13a", stepAnswer: ["$$7/3;(0,-3)$$"], problemType: "MultipleChoice", stepTitle: "$$\\left(7\\right) x-\\left(3\\right) y=9$$", stepBody: "", choices: ["$$7/3;(3,0)$$", "$$3;(0,\\frac{7}{3})$$", "$$7/3;(0,-3)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a5991b4add22a-index.js"; const step = {id: "a5991b4add22a", stepAnswer: ["$$\\left(21\\right) q^2$$"], problemType: "TextBox", stepTitle: "Add $$\\left(12\\right) q^2+\\left(9\\right) q^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

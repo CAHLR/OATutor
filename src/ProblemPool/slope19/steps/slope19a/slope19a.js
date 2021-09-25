@@ -1,1 +1,0 @@
-import hints from "./slope19a-index.js"; const step = {id: "slope19a", stepAnswer: ["Not Parallel"], problemType: "MultipleChoice", stepTitle: "$$\\left(5\\right) x-\\left(2\\right) y=11$$, $$\\left(5\\right) x-y=7$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

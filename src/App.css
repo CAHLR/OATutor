@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 div.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -10,12 +11,15 @@ div.sticky {
 a[type=menu] {
   color: #FFF;
 }
+
 a:hover[type=menu] {
-   color: rgb(209, 209, 209)
+  color: rgb(209, 209, 209)
 }
+
 a:link[type=menu] {
   text-decoration: none;
 }
+
 a:visited[type=menu] {
   text-decoration: none;
 }

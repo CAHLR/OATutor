@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "extends": "react-app",
+  "overrides": [
+    {
+      "files": [
+        "src/ProblemPool/**/*.js"
+      ],
+      "rules": {
+        "no-template-curly-in-string": "off",
+        "no-useless-escape": "off"
+      }
+    },
+    {
+      "files": [
+        "src/config/bktParams/*.js"
+      ],
+      "rules": {
+        "no-dupe-keys": "off",
+        "no-useless-escape": "off"
+      }
+    },
+    {
+      "files": [
+        "src/config/coursePlans.js"
+      ],
+      "rules": {
+        "no-useless-escape": "off"
+      }
+    },
+    {
+      "files": [
+        "src/kas.js"
+      ],
+      "rules": {
+        "no-unreachable": "off"
+      }
+    }
+  ]
+}

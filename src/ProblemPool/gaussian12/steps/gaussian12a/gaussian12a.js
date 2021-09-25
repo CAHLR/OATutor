@@ -1,1 +1,0 @@
-import hints from "./gaussian12a-index.js"; const step = {id: "gaussian12a", stepAnswer: ["(2,1)"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x+\\left(3\\right) y=11$$ $$x-3y=-1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

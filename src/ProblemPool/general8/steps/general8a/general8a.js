@@ -1,0 +1,1 @@
+import hints from "./general8a-index.js"; const step = {id: "general8a", stepAnswer: ["$$\\left(3\\right) \\left(n+\\left(4\\right)\\right) \\left(n+\\left(6\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) n^2+\\left(30\\right) n+\\left(72\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

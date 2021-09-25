@@ -1,0 +1,1 @@
+import hints from "./trifactor18a-index.js"; const step = {id: "trifactor18a", stepAnswer: ["$${\\left(\\left(6\\right) s+\\left(7\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(36\\right) s^2+\\left(84\\right) s+\\left(49\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

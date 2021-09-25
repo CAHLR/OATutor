@@ -8,16 +8,21 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
-import { checkAnswer} from '../ProblemLogic/checkAnswer.js';
+import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
 import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import { renderText, chooseVariables} from '../ProblemLogic/renderText.js';
-import MultipleChoice from './MultipleChoice.js';
+import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
+import MultipleChoice from './ProblemInput/MultipleChoice.js';
 
 import EquationEditor from "equation-editor-react";
 
 import { ThemeContext } from '../config/config.js';
+import GridInput from "./ProblemInput/GridInput";
+import MatrixInput from "./ProblemInput/MatrixInput";
+
+import "./ProblemCard.css";
+import ProblemInput from "./ProblemInput/ProblemInput";
 
 
 class ProblemCard extends React.Component {
@@ -91,7 +96,7 @@ class ProblemCard extends React.Component {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
     if (this.context.logData) {
-      try{
+      try {
         this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
       } catch {
         console.log("Unable to log to Firebase.");
@@ -106,7 +111,11 @@ class ProblemCard extends React.Component {
   }
 
   editInput = (event) => {
-    this.setState({ inputVal: event.target.value });
+    this.setInputValState(event.target.value)
+  }
+
+  setInputValState = (inputVal) => {
+    this.setState({ inputVal })
   }
 
   handleKey = (event) => {
@@ -128,7 +137,7 @@ class ProblemCard extends React.Component {
   unlockHint = (hintNum, hintType) => {
     // Mark question as wrong if hints are used (on the first time)
     if (this.state.hintsFinished.reduce((a, b) => a + b) === 0 && this.state.isCorrect !== true) {
-      this.setState({usedHints: true});
+      this.setState({ usedHints: true });
       this.props.answerMade(this.index, this.step.knowledgeComponents, false);
     }
 
@@ -165,14 +174,14 @@ class ProblemCard extends React.Component {
         <CardContent>
           <h2 className={classes.stepHeader}>
             {renderText(this.step.stepTitle, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
-            <hr />
+            <hr/>
           </h2>
 
           <div className={classes.stepBody}>
             {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
           </div>
 
-          {this.state.showHints ?
+          {this.state.showHints && (
             <div className="Hints">
               <HintSystem
                 problemID={this.props.problemID}
@@ -184,83 +193,60 @@ class ProblemCard extends React.Component {
                 seed={this.props.seed}
                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
               />
-              <br /></div>
-            : ""}
-
+              <br/>
+            </div>
+          )}
 
           <div className={classes.root}>
-            <Grid container spacing={0} justify="center" alignItems="center">
-              <Grid item xs={1} md={this.step.problemType === "TextBox" ? 4 : false} />
-              <Grid item xs={9} md={this.step.problemType === "TextBox" ? 3 : 11}>
-                {(this.step.problemType === "TextBox"  && this.step.answerType !== "string") ?
-                  <center className={this.state.isCorrect === false ? classes.textBoxLatexIncorrect : (this.state.usedHints ? classes.textBoxLatexUsedHint : classes.textBoxLatex)} style={{ height: "50px", width: "100%" }}>
-                  <EquationEditor
-                    value={this.state.inputVal}
-                    onChange={(eq) => this.setState({ inputVal: eq })}
-                    autoCommands={this.context.autoCommands}
-                    autoOperatorNames={this.context.autoOperatorNames}
-                  /></center> : ""}
-                {(this.step.problemType === "TextBox" && this.step.answerType === "string") ?
-                      <TextField
-                        inputProps={{min: 0, style: { textAlign: 'center' }}}
-                        error={this.state.isCorrect === false}
-                        className={classes.inputField}
-                        variant="outlined"
-                        onChange={(evt) => this.editInput(evt)}
-                        onKeyPress={(evt) => this.handleKey(evt)}
-                        InputProps={{
-                          classes: {
-                            notchedOutline: ((this.state.isCorrect !== false && this.state.usedHints) ? classes.muiUsedHint : null)
-                          }
-                        }}>
-                      </TextField> : ""}
-                {this.step.problemType === "MultipleChoice" ?
-                  <MultipleChoice
-                    onChange={(evt) => this.editInput(evt)}
-                    choices={this.step.choices} /> : ""}
-              </Grid>
-              <Grid item xs={2} md={1}>
-                <div style={{ marginLeft: "20%" }}>
-                  {this.step.units ? renderText(this.step.units) : ""}
-                </div>
-              </Grid >
-              <Grid item xs={false} md={this.step.problemType === "TextBox" ? 3 : false} />
-
-            </Grid>
+            <ProblemInput
+              classes={classes}
+              state={this.state}
+              step={this.step}
+              _setState={(state) => this.setState(state)}
+              context={this.context}
+              editInput={this.editInput}
+              setInputValState={this.setInputValState}
+            />
           </div>
 
         </CardContent>
         <CardActions>
-          <Grid container spacing={0} justify="center" alignItems="center">
-            <Grid item xs={false} sm={false} md={4} />
+          <Grid container spacing={0} justifyContent="center" alignItems="center">
+            <Grid item xs={false} sm={false} md={4}/>
             <Grid item xs={4} sm={4} md={1}>
               <center>
                 <IconButton aria-label="delete" onClick={this.toggleHints}>
-                  <img src={require('./raise_hand.png')} title="View available hints" alt="hintToggle" />
+                  <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`} title="View available hints"
+                       alt="hintToggle"/>
                 </IconButton>
               </center>
             </Grid>
             <Grid item xs={4} sm={4} md={2}>
               <center>
-                <Button className={classes.button} style={{ width: "80%" }} size="small" onClick={this.submit}>Submit</Button>
+                <Button className={classes.button} style={{ width: "80%" }} size="small"
+                        onClick={this.submit}>Submit</Button>
               </center>
             </Grid>
             <Grid item xs={4} sm={3} md={1}>
               <div style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center" }}>
-                {this.state.isCorrect ? <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%"}} alt=""
-                  src="https://image.flaticon.com/icons/svg/148/148767.svg" /> : ""}
-                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }} alt=""
-                  src="https://image.flaticon.com/icons/svg/148/148766.svg" /> : ""}
+                {this.state.isCorrect ?
+                  <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
+                       alt=""
+                       src="https://image.flaticon.com/icons/svg/148/148767.svg"/> : ""}
+                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{
+                  opacity: 100 - this.state.checkMarkOpacity,
+                  width: "45%"
+                }} alt="" src="https://image.flaticon.com/icons/svg/148/148766.svg"/> : ""}
               </div>
             </Grid>
-            <Grid item xs={false} sm={1} md={4} />
+            <Grid item xs={false} sm={1} md={4}/>
           </Grid>
         </CardActions>
       </Card>
 
 
-
     )
   };
 }
+
 export default withStyles(styles)(ProblemCard);

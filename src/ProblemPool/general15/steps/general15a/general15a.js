@@ -1,0 +1,1 @@
+import hints from "./general15a-index.js"; const step = {id: "general15a", stepAnswer: ["$$\\left(4\\right) \\left(x+\\left(3\\right)\\right) \\left(x+\\left(7\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^2+\\left(40\\right) x+\\left(84\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

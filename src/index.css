@@ -11,5 +11,14 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
+}
+
+.revealable {
+  opacity: 0.2;
+}
+
+.revealable.revealed {
+  opacity: 1;
+  transition: opacity 500ms ease;
 }

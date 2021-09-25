@@ -1,0 +1,1 @@
+import hints from "./gre20a-index.js"; const step = {id: "gre20a", stepAnswer: ["$$\\left(4\\right) y$$"], problemType: "TextBox", stepTitle: "$$\\left(20\\right) y^3$$, $$\\left(28\\right) y^2$$, $$\\left(40\\right) y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

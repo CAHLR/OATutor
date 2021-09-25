@@ -1,0 +1,1 @@
+import hints from "./gra6b-index.js"; const step = {id: "gra6b", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "(7,-1)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

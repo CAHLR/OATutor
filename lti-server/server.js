@@ -47,7 +47,7 @@ function getRandomInt(min, max) {
 }
 
 // Disable cors
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
@@ -87,8 +87,8 @@ app.post('/auth', function (req, res) {
     if (!is_valid || !provider.outcome_service) console.log(false);
   });
   providers[encodeURI(req.body.lis_person_name_full + "_lesson" + lessonNum)] = provider;
-  
-  
+
+
   if (lessonNum == null) {
     console.log("Lesson: " + req.body.custom_canvas_assignment_title);
     res.writeHead(301,
@@ -138,7 +138,7 @@ app.post('/grade', function (req, res) {
   Object.keys(req.body.components).forEach((key, i) => {
     // payload += "<p>" + (i + 1) + ") " + key + ": " + req.body.components[key] + "<p>";
     var r = getRandomInt(0, 10)
-    payload += "<p>" + (i + 1) + ") " + key.replace(/_/g, ' ') + ": " + "&#9646;".repeat(r) +  "&#9647;".repeat(10 - r)   + "<p>";
+    payload += "<p>" + (i + 1) + ") " + key.replace(/_/g, ' ') + ": " + "&#9646;".repeat(r) + "&#9647;".repeat(10 - r) + "<p>";
   });
   console.log(parseFloat(req.body.score));
   provider.outcome_service.send_replace_result_with_text(parseFloat(req.body.score), payload, (err, result) => {
@@ -152,4 +152,5 @@ app.post('/grade', function (req, res) {
 });
 
 
-app.listen(port, function () { });
+app.listen(port, function () {
+});

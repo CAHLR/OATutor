@@ -93,7 +93,7 @@ symbols_: {"error":2,"equation":3,"expression":4,"SIGN":5,"EOF":6,"additive":7,"
 terminals_: {2:"error",5:"SIGN",6:"EOF",8:"+",10:"-",12:"*",14:"/",16:"TRIG",18:"^",19:"TRIGINV",21:"ln",22:"log",23:"_",28:"VAR",29:"CONST",30:"INT",31:"FLOAT",32:"{",33:"}",34:"(",35:")",37:"FUNC",39:"sqrt",40:"[",41:"]",42:"abs",43:"|",44:"LEFT|",45:"RIGHT|",46:"FRAC"},
 productions_: [0,[3,4],[3,2],[3,1],[4,1],[7,3],[7,3],[7,1],[9,2],[9,3],[9,3],[9,1],[13,2],[13,1],[15,1],[17,1],[17,3],[17,1],[20,1],[20,1],[20,3],[11,2],[11,2],[11,1],[25,3],[25,1],[27,1],[24,3],[24,1],[24,1],[24,1],[24,1],[24,3],[24,3],[36,1],[38,4],[38,4],[38,7],[38,4],[38,3],[38,3],[38,4],[26,1],[26,1],[26,7]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
-/* this == yyval */
+/* this === yyval */
 
 var $0 = $$.length - 1;
 switch (yystate) {
@@ -211,7 +211,7 @@ parse: function parse(input) {
     lexer.setInput(input, sharedState.yy);
     sharedState.yy.lexer = lexer;
     sharedState.yy.parser = this;
-    if (typeof lexer.yylloc == 'undefined') {
+    if (typeof lexer.yylloc === 'undefined') {
         lexer.yylloc = {};
     }
     var yyloc = lexer.yylloc;
@@ -242,7 +242,7 @@ parse: function parse(input) {
         if (this.defaultActions[state]) {
             action = this.defaultActions[state];
         } else {
-            if (symbol === null || typeof symbol == 'undefined') {
+            if (symbol == null || typeof symbol === 'undefined') {
                 symbol = lex();
             }
             action = table[state] && table[state][symbol];
@@ -258,7 +258,7 @@ parse: function parse(input) {
                 if (lexer.showPosition) {
                     errStr = 'Parse error on line ' + (yylineno + 1) + ':\n' + lexer.showPosition() + '\nExpecting ' + expected.join(', ') + ', got \'' + (this.terminals_[symbol] || symbol) + '\'';
                 } else {
-                    errStr = 'Parse error on line ' + (yylineno + 1) + ': Unexpected ' + (symbol == EOF ? 'end of input' : '\'' + (this.terminals_[symbol] || symbol) + '\'');
+                    errStr = 'Parse error on line ' + (yylineno + 1) + ': Unexpected ' + (symbol === EOF ? 'end of input' : '\'' + (this.terminals_[symbol] || symbol) + '\'');
                 }
                 this.parseError(errStr, {
                     text: lexer.match,
@@ -934,7 +934,7 @@ symbols_: {"error":2,"unitvalue":3,"magnitude":4,"unit":5,"EOF":6,"float":7,"POW
 terminals_: {2:"error",6:"EOF",8:"POW",11:"DIV",13:"MUL",15:"^",17:"ATOM",18:"FLOAT",19:"NAT",20:"NEG"},
 productions_: [0,[3,3],[3,2],[4,3],[4,1],[5,3],[5,1],[10,3],[10,2],[10,1],[12,3],[12,1],[14,1],[7,1],[7,1],[16,1],[9,2],[9,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
-/* this == yyval */
+/* this === yyval */
 
 var $0 = $$.length - 1;
 switch (yystate) {
@@ -1034,7 +1034,7 @@ parse: function parse(input) {
     lexer.setInput(input, sharedState.yy);
     sharedState.yy.lexer = lexer;
     sharedState.yy.parser = this;
-    if (typeof lexer.yylloc == 'undefined') {
+    if (typeof lexer.yylloc === 'undefined') {
         lexer.yylloc = {};
     }
     var yyloc = lexer.yylloc;
@@ -1065,7 +1065,7 @@ parse: function parse(input) {
         if (this.defaultActions[state]) {
             action = this.defaultActions[state];
         } else {
-            if (symbol === null || typeof symbol == 'undefined') {
+            if (symbol == null || typeof symbol === 'undefined') {
                 symbol = lex();
             }
             action = table[state] && table[state][symbol];
@@ -1081,7 +1081,7 @@ parse: function parse(input) {
                 if (lexer.showPosition) {
                     errStr = 'Parse error on line ' + (yylineno + 1) + ':\n' + lexer.showPosition() + '\nExpecting ' + expected.join(', ') + ', got \'' + (this.terminals_[symbol] || symbol) + '\'';
                 } else {
-                    errStr = 'Parse error on line ' + (yylineno + 1) + ': Unexpected ' + (symbol == EOF ? 'end of input' : '\'' + (this.terminals_[symbol] || symbol) + '\'');
+                    errStr = 'Parse error on line ' + (yylineno + 1) + ': Unexpected ' + (symbol === EOF ? 'end of input' : '\'' + (this.terminals_[symbol] || symbol) + '\'');
                 }
                 this.parseError(errStr, {
                     text: lexer.match,
@@ -1559,7 +1559,7 @@ KAS.unitParser = parser;
 
     (abstract, not meant to be instantiated)
 
-    == Key design concepts ==
+    === Key design concepts ==
     Functional: All methods return new nodes - nodes are never mutated.
     Ignore commutativity: Commutative inputs should be parsed equivalently.
     Exploit commutativity: Output should take advantage of ordering.

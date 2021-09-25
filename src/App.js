@@ -35,8 +35,11 @@ import {
   bkt2Index,
   index2Bkt
 } from './config/config.js';
-import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
-let theme = createMuiTheme();
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
+let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();
@@ -131,22 +134,27 @@ class App extends React.Component {
             <div className="Router">
               <Switch>
                 <Route exact path="/" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} {...props} />
-                )} />
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress}
+                            removeProgress={this.removeProgress} {...props} />
+                )}/>
                 <Route path="/courses/:courseNum" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} courseNum={props.match.params.courseNum} {...props} />
-                )} />
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress}
+                            removeProgress={this.removeProgress} courseNum={props.match.params.courseNum} {...props} />
+                )}/>
                 <Route path="/lessons/:lessonNum" render={(props) => (
-                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props} />
-                )} />
+                  <Platform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress}
+                            removeProgress={this.removeProgress} lessonNum={props.match.params.lessonNum} {...props} />
+                )}/>
                 <Route path="/debug/:problemID" render={(props) => (
-                  <DebugPlatform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress} removeProgress={this.removeProgress} problemID={props.match.params.problemID} {...props} />
-                )} />
-                <Route component={Notfound} />
+                  <DebugPlatform key={Date.now()} saveProgress={this.saveProgress} loadProgress={this.loadProgress}
+                                 removeProgress={this.removeProgress}
+                                 problemID={props.match.params.problemID} {...props} />
+                )}/>
+                <Route component={Notfound}/>
               </Switch>
             </div>
           </Router>
-
+          <ToastContainer />
         </ThemeContext.Provider>
       </ThemeProvider>
     );

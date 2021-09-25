@@ -1,4 +1,5 @@
 import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
+
 var firebase = require("firebase/app");
 require("firebase/firestore");
 
@@ -18,7 +19,7 @@ class Firebase {
   }
 
   /*
-    Collection: Collection of Key/Value pairs 
+    Collection: Collection of Key/Value pairs
     Document: Key - How you will access this data later. Usually username
     Data: Value - JSON object of data you want to store
   */
@@ -48,7 +49,7 @@ class Firebase {
   _getDate() {
     var today = new Date();
     return (
-      ("0" + (today.getMonth()+ 1)).slice(-2) + '-' +
+      ("0" + (today.getMonth() + 1)).slice(-2) + '-' +
       ("0" + today.getDate()).slice(-2) + '-' +
       today.getFullYear() + " " +
       ("0" + today.getHours()).slice(-2) + ":" +
@@ -160,5 +161,6 @@ class Firebase {
   }
 
 }
+
 export default Firebase;
 

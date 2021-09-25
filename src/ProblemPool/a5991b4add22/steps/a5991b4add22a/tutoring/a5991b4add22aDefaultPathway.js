@@ -1,0 +1,1 @@
+var hints = [{id: "a5991b4add22a-h1", type: "hint", dependencies: [], title: "Combining Like Terms", text: "Since both terms are like, we can add their coefficients to get $$\\left(21\\right) q^2$$", variabilization: {}}, ]; export {hints};
