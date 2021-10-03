@@ -1,7 +1,6 @@
 import React from 'react';
 //import lessonPlans from './lessonPlans.js'
 import courses from './coursePlans.js';
-import { bkt2Index, index2Bkt } from './bktIndex.js';
 
 const ThemeContext = React.createContext(0);
 const siteVersion = 1.110;
@@ -53,7 +52,5 @@ export {
   GRANULARITY,
   autoCommands,
   autoOperatorNames,
-  middlewareURL,
-  bkt2Index,
-  index2Bkt
+  middlewareURL
 };
