@@ -34,7 +34,7 @@ jobs:
           known_hosts: unnecessary
 
       - name: Change homepage in package.json
-        run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OATs-Staging-Test/g' package.json
+        run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OATutor-Staging/g' package.json
 
       - name: Run CI install
         run: npm ci
@@ -50,7 +50,7 @@ jobs:
           cd build
           git init
           git checkout -b main
-          git remote add staging git@github.com:e-zhang09/OATs-Staging-Test.git
+          git remote add staging git@github.com:CAHLR/OATutor-Staging.git
           git add .
           git config user.email "actions@example.com"
           git config user.name "actions"
