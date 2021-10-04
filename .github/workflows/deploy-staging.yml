@@ -36,24 +36,23 @@ jobs:
       - name: Change homepage in package.json
         run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OATs-Staging-Test/g' package.json
 
-      - name: Run CI install
-        run: npm ci
+#       - name: Run CI install
+#         run: npm ci
 
-      - name: Run build
-        run: CI=false npm run build
-        env:
-          REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+#       - name: Run build
+#         run: CI=false npm run build
+#         env:
+#           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
 
       - name: Set up SSH and git
         run: |
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          mkdir build
           cd build
-          git init
+          git init -b main
           git remote add --mirror=push staging git@github.com:e-zhang09/OATs-Staging-Test.git
           git add .
           git config user.email "actions@example.com"
           git config user.name "actions"
           git commit -m "deploy commit: $GITHUB_SHA"
-
-      - name: Push the built files
-        run: git push staging
+          git push staging main
