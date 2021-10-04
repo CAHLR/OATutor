@@ -15,14 +15,13 @@ import {
 import Notfound from "./notfound.js";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
-import credentials from './config/credentials-secret.js';
+import config from './config/firebaseConfig.js';
 import skillModel from './config/skillModel.js';
 import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
 import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
 import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
 import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
 // ### END CUSTOMIZABLE IMPORTS ###
-
 
 import {
   ThemeContext,
@@ -38,6 +37,24 @@ import {
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+
+try {
+  const _config = require('./config/credentials-secret').default
+  if(typeof _config === 'object'){
+    Object.assign(config, _config)
+  }
+} catch (e) {
+  // ignore
+}
+
+try{
+  const _envConfig = JSON.parse(atob(process.env.REACT_APP_FIREBASE_CONFIG))
+  if(typeof _envConfig === 'object'){
+    Object.assign(config, _envConfig)
+  }
+} catch (e) {
+  // ignore
+}
 
 const PROGRESS_STORAGE_KEY = 'openITS-progress'
 const DO_LOG_DATA = true
@@ -67,7 +84,7 @@ class App extends React.Component {
     // Firebase creation
     this.firebase = null;
     if (DO_LOG_DATA) { //logData
-      this.firebase = new Firebase(this.userID, credentials, this.getTreatment(), siteVersion);
+      this.firebase = new Firebase(this.userID, config, this.getTreatment(), siteVersion);
     }
   }
 
@@ -121,22 +138,22 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <ThemeContext.Provider value={{
-          siteVersion: siteVersion,
+          siteVersion,
           userID: this.userID,
           firebase: this.firebase,
-          logData: logData,
+          logData,
           getTreatment: this.getTreatment,
           bktParams: this.bktParams,
           heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
           hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
-          skillModel: skillModel,
-          credentials: credentials,
-          debug: debug,
-          useBottomOutHints: useBottomOutHints,
-          autoCommands: autoCommands,
-          autoOperatorNames: autoOperatorNames,
+          skillModel,
+          credentials: config,
+          debug,
+          useBottomOutHints,
+          autoCommands,
+          autoOperatorNames,
           studentName: '',
-          middlewareURL: middlewareURL,
+          middlewareURL,
           problemIDs: null,
         }}>
           <Router>

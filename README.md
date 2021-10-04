@@ -37,25 +37,10 @@ OpenITS uses Firebase for data logging purposes.
 2. Add new project. Configure it as you wish (the options are not important for setup)
 3. Click on Database and then create database. Start in test mode, leave the cloud location as is
 4. Click `start collection` and name it `problemSubmissions`. Add a temporary first document for now.
-5. Click on settings --> service accounts. Generate a new `Node.js` private key.
-6. Put that private key in the below format in `/src/config/credentials.js`
-
-```javascript
-const config = {
-  apiKey: "[apikey]",
-  authDomain: "[projId].firebaseapp.com",
-  databaseURL: "https://[projId].firebaseio.com",
-  projectId: "[projId]",
-  storageBucket: "[projId].appspot.com",
-  messagingSenderId: "[messagingSenderId]",
-  appId: "[appId]",
-  measurementId: "[measurementId]"
-};
-
-export default config;
-```
-
----
+5. Click on Project settings --> service accounts. Generate a new `Node.js` private key.
+6. Put that private key in the below format in `/src/config/service-account-credentials.json`
+7. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
+8. Put configuration in `src/config/firebaseConfig.js`
 
 ## Features:
 
