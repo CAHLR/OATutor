@@ -151,10 +151,13 @@ class Problem extends React.Component {
 
 
   render() {
-    const { classes } = this.props;
+    const { classes, lesson } = this.props;
     if (this.state.problem == null) {
       return (<div></div>);
     }
+
+    const textbookName = lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || "A Textbook"
+
     return (
       <div>
         <div className={classes.prompt}>
@@ -208,9 +211,14 @@ class Problem extends React.Component {
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <div style={{ marginLeft: 20, fontSize: 12 }}>
             {this.state.problem.oer && this.state.problem.oer.includes("openstax") ?
-              <div> {'"' + this.state.problem.title + '" is a derivative of '}
-                <a href="https://openstax.org/" target="_blank">"College Algebra"</a> by OpenStax, used under&nbsp;
-                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a></div>
+              <div>
+                "{ this.state.problem.title }" is a derivative of&nbsp;
+                <a href="https://openstax.org/" target="_blank" rel="noreferrer">
+                  "{textbookName}"
+                </a>
+                &nbsp;by OpenStax, used under&nbsp;
+                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noreferrer">CC BY 4.0</a>
+              </div>
               : ""}
           </div>
           <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>

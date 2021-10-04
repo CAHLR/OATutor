@@ -87,7 +87,7 @@ class App extends React.Component {
     const progressedBktParams = Object.fromEntries(
       // only add to db if it is not the same as originally provided bkt params
       Object.entries(this.bktParams || {}).filter(([key, val]) => {
-        console.debug(this.originalBktParams[key]?.probMastery, 'vs.', val.probMastery)
+        // console.debug(this.originalBktParams[key]?.probMastery, 'vs.', val.probMastery)
         return this.originalBktParams[key]?.probMastery !== val.probMastery
       })
     )

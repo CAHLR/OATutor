@@ -33,7 +33,7 @@ for (var i = 0; i < coursePlans.length; i++) {
   for (var j = 0; j < course.lessons.length; j++) {
     course.lessons[j].lessonNum = lessonCounter;
     lessonCounter += 1;
-    lessonPlans.push(course.lessons[j]);
+    lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
   }
 }
 
