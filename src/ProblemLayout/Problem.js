@@ -12,7 +12,6 @@ import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import {
-  HashRouter as Router,
   NavLink
 } from "react-router-dom";
 
@@ -36,25 +35,19 @@ class Problem extends React.Component {
       problemFinished: false,
       showFeedback: false,
       feedback: "",
-      feedbackSubmitted: false,
-      textbookName: lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""
-    }
-
-    document["oats-meta-textbookName"] = this.state.textbookName
-  }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    if (prevState.textbookName !== this.state.textbookName) {
-      document["oats-meta-textbookName"] = this.state.textbookName
+      feedbackSubmitted: false
     }
   }
 
   componentDidMount() {
-    document["oats-meta-courseName"] = this.props.lesson?.courseName || "";
+    const { lesson } = this.props;
+    document["oats-meta-courseName"] = lesson?.courseName || "";
+    document["oats-meta-textbookName"] = lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || "";
   }
 
   componentWillUnmount() {
     document["oats-meta-courseName"] = "";
+    document["oats-meta-textbookName"] = "";
   }
 
   refreshSteps = (problem) => {
@@ -175,8 +168,6 @@ class Problem extends React.Component {
       return (<div></div>);
     }
 
-    const { textbookName } = this.state
-
     return (
       <div>
         <div className={classes.prompt}>
@@ -229,11 +220,11 @@ class Problem extends React.Component {
 
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <div style={{ marginLeft: 20, fontSize: 12 }}>
-            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && textbookName && textbookName.length > 0 ?
+            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
               <div>
                 "{this.state.problem.title}" is a derivative of&nbsp;
                 <a href="https://openstax.org/" target="_blank" rel="noreferrer">
-                  "{textbookName}"
+                  "{lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""}"
                 </a>
                 &nbsp;by OpenStax, used under&nbsp;
                 <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noreferrer">CC BY 4.0</a>
