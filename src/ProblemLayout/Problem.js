@@ -28,14 +28,33 @@ class Problem extends React.Component {
     this.stepStates = {};
     this.numCorrect = 0;
 
+    const { lesson } = this.props;
+
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
       problemFinished: false,
       showFeedback: false,
       feedback: "",
-      feedbackSubmitted: false
+      feedbackSubmitted: false,
+      textbookName: lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""
     }
+
+    document["oats-meta-textbookName"] = this.state.textbookName
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevState.textbookName !== this.state.textbookName) {
+      document["oats-meta-textbookName"] = this.state.textbookName
+    }
+  }
+
+  componentDidMount() {
+    document["oats-meta-courseName"] = this.props.lesson?.courseName || "";
+  }
+
+  componentWillUnmount() {
+    document["oats-meta-courseName"] = "";
   }
 
   refreshSteps = (problem) => {
@@ -156,7 +175,7 @@ class Problem extends React.Component {
       return (<div></div>);
     }
 
-    const textbookName = lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || "A Textbook"
+    const { textbookName } = this.state
 
     return (
       <div>
@@ -210,9 +229,9 @@ class Problem extends React.Component {
 
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <div style={{ marginLeft: 20, fontSize: 12 }}>
-            {this.state.problem.oer && this.state.problem.oer.includes("openstax") ?
+            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && textbookName && textbookName.length > 0 ?
               <div>
-                "{ this.state.problem.title }" is a derivative of&nbsp;
+                "{this.state.problem.title}" is a derivative of&nbsp;
                 <a href="https://openstax.org/" target="_blank" rel="noreferrer">
                   "{textbookName}"
                 </a>
