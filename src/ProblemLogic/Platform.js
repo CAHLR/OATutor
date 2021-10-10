@@ -57,17 +57,26 @@ class Platform extends React.Component {
   }
 
   componentDidMount() {
+    this._isMounted = true
     if (this.props.lessonNum != null) {
-      this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]);
-      console.log("loaded lesson " + this.props.lessonNum);
+      this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]).then(_ => {
+        console.log("loaded lesson " + this.props.lessonNum, this.lesson);
+      });
     } else if (this.props.courseNum != null) {
       this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
     }
   }
 
-  selectLesson = (lesson, context) => {
+  componentWillUnmount() {
+    this._isMounted = false
+  }
+
+  selectLesson = async (lesson, context) => {
     this.lesson = lesson;
-    this.props.loadProgress();
+    await this.props.loadProgress();
+    if(!this._isMounted){
+      return
+    }
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     }, () => {
@@ -81,7 +90,6 @@ class Platform extends React.Component {
     this.setState({
       status: "lessonSelection",
     });
-    //console.log(course);
   }
 
   _nextProblem = (context) => {
@@ -124,7 +132,7 @@ class Platform extends React.Component {
 
     var objectives = Object.keys(this.lesson.learningObjectives);
     objectives.unshift(0);
-    console.log(objectives)
+    console.debug('objectives', objectives)
     var score = objectives.reduce((x, y) => {
       return x + context.bktParams[y].probMastery
     });

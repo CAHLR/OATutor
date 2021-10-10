@@ -10,7 +10,7 @@ var feedbackOutput = "feedbackFall21";
 class Firebase {
 
   constructor(id, credentials, treatment, siteVersion) {
-    var app = firebase.initializeApp(credentials);
+    var app = (!firebase.apps.length) ? firebase.initializeApp(credentials): firebase.app();
     this.id = id;
     this.db = firebase.firestore(app);
     this.treatment = treatment;

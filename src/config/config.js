@@ -1,10 +1,9 @@
 import React from 'react';
 //import lessonPlans from './lessonPlans.js'
 import courses from './coursePlans.js';
-import { bkt2Index, index2Bkt } from './bktIndex.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = 1.110;
+const siteVersion = "1.111";
 const logData = true;
 const logMouseData = false;
 const debug = false;
@@ -34,7 +33,7 @@ for (var i = 0; i < coursePlans.length; i++) {
   for (var j = 0; j < course.lessons.length; j++) {
     course.lessons[j].lessonNum = lessonCounter;
     lessonCounter += 1;
-    lessonPlans.push(course.lessons[j]);
+    lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
   }
 }
 
@@ -53,7 +52,5 @@ export {
   GRANULARITY,
   autoCommands,
   autoOperatorNames,
-  middlewareURL,
-  bkt2Index,
-  index2Bkt
+  middlewareURL
 };
