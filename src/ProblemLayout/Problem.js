@@ -12,7 +12,6 @@ import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import {
-  HashRouter as Router,
   NavLink
 } from "react-router-dom";
 
@@ -28,6 +27,8 @@ class Problem extends React.Component {
     this.stepStates = {};
     this.numCorrect = 0;
 
+    const { lesson } = this.props;
+
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
@@ -36,6 +37,17 @@ class Problem extends React.Component {
       feedback: "",
       feedbackSubmitted: false
     }
+  }
+
+  componentDidMount() {
+    const { lesson } = this.props;
+    document["oats-meta-courseName"] = lesson?.courseName || "";
+    document["oats-meta-textbookName"] = lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || "";
+  }
+
+  componentWillUnmount() {
+    document["oats-meta-courseName"] = "";
+    document["oats-meta-textbookName"] = "";
   }
 
   refreshSteps = (problem) => {
@@ -151,10 +163,12 @@ class Problem extends React.Component {
 
 
   render() {
-    const { classes } = this.props;
+    const { classes, lesson } = this.props;
+
     if (this.state.problem == null) {
       return (<div></div>);
     }
+
     return (
       <div>
         <div className={classes.prompt}>
@@ -207,10 +221,15 @@ class Problem extends React.Component {
 
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <div style={{ marginLeft: 20, fontSize: 12 }}>
-            {this.state.problem.oer && this.state.problem.oer.includes("openstax") ?
-              <div> {'"' + this.state.problem.title + '" is a derivative of '}
-                <a href="https://openstax.org/" target="_blank">"College Algebra"</a> by OpenStax, used under&nbsp;
-                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a></div>
+            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
+              <div>
+                "{this.state.problem.title}" is a derivative of&nbsp;
+                <a href="https://openstax.org/" target="_blank" rel="noreferrer">
+                  "{lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""}"
+                </a>
+                &nbsp;by OpenStax, used under&nbsp;
+                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noreferrer">CC BY 4.0</a>
+              </div>
               : ""}
           </div>
           <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
