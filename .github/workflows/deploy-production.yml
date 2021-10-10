@@ -1,0 +1,47 @@
+name: Production CI
+
+on:
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  buildAndDeploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v2.4.1
+
+      - name: Change homepage in package.json
+        run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OpenITS/g' package.json
+
+      - name: Run CI install
+        run: npm ci
+
+      - name: Run build
+        run: CI=false npm run build
+        env:
+          REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+
+      - uses: actions/checkout@v2
+        with:
+          ref: 'gh-pages'
+          path: 'gh-build'
+
+      - name: Push
+        run: |
+          cd gh-build
+          git rm -rf .
+          git clean -fxd
+          rsync -av ../build/ .
+          git add .
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git commit -m "deploy commit: $GITHUB_SHA"
+          git push
