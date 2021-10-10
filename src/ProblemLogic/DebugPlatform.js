@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar } from '@material-ui/core';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
@@ -11,6 +11,7 @@ import {
 
 import problemPool from '../ProblemPool/problemPool.js'
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
+import Box from "@material-ui/core/Box";
 
 var seed = Date.now().toString();
 console.log("Generated seed");
@@ -201,13 +202,18 @@ class DebugPlatform extends React.Component {
 
           </Toolbar>
         </AppBar>
-        <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}
-                 seed={this.state.seed} lessonNum={this.props.lessonNum}/>
-
+        {this.state.currProblem
+          ? <Problem problem={this.state.currProblem} problemComplete={this.problemComplete} lesson={this.lesson}
+                     seed={this.state.seed} lessonNum={this.props.lessonNum}/>
+          : <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
+            <Typography variant={'h3'}>Problem id <code>{this.props.problemID}</code> is not valid!</Typography>
+          </Box>
+        }
       </div>
 
     );
   }
+
 }
 
 export default DebugPlatform;
