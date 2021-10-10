@@ -396,4 +396,3 @@ masteries together to get the problem mastery. The heuristic will be applied, wh
 first, so the problem with the lowest mastery is selected to give to the user. In the case that the first problem is
 being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's
 mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
-
