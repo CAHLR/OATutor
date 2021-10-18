@@ -9,9 +9,15 @@ import {
   NavLink
 } from "react-router-dom";
 
-import problemPool from '../ProblemPool/problemPool.js'
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 import Box from "@material-ui/core/Box";
+
+let problemPool
+if (process.env.NODE_ENV === 'development'){
+  problemPool = require('../ProblemPool/problemPoolDev').default
+}else{
+  problemPool = require('../ProblemPool/problemPool').default
+}
 
 var seed = Date.now().toString();
 console.log("Generated seed");
