@@ -38,9 +38,10 @@ jobs:
         run: npm ci
 
       - name: Run build
-        run: CI=false npm run build
+        run: npm run build
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          CI: false
 
       - name: Set up SSH and git
         run: |
@@ -50,7 +51,7 @@ jobs:
           git checkout -b main
           git remote add staging git@github.com:CAHLR/OATutor-Staging.git
           git add .
-          git config user.email "actions@example.com"
-          git config user.name "actions"
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
           git commit -m "deploy commit: $GITHUB_SHA"
           git push staging main --force

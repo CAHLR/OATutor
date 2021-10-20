@@ -25,9 +25,10 @@ jobs:
         run: npm ci
 
       - name: Run build
-        run: CI=false npm run build
+        run: npm run build
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          CI: false
 
       - uses: actions/checkout@v2
         with:

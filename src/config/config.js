@@ -3,7 +3,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = "1.113";
+const siteVersion = "1.1.14";
 const logData = true;
 const logMouseData = false;
 const debug = false;
@@ -14,6 +14,8 @@ const dynamicText = {
   "%CAR%": "Tesla car"
 };
 const cookieID = "openITS-id";
+
+const PROGRESS_STORAGE_KEY = 'openITS-progress'
 
 // Firebase Config
 const MAX_BUFFER_SIZE = 100;
@@ -52,5 +54,6 @@ export {
   GRANULARITY,
   autoCommands,
   autoOperatorNames,
-  middlewareURL
+  middlewareURL,
+  PROGRESS_STORAGE_KEY
 };

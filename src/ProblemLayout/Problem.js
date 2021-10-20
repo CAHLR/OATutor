@@ -254,8 +254,8 @@ class Problem extends React.Component {
                   label="Response"
                   multiline
                   fullWidth
-                  rows="6"
-                  rowsMax="20"
+                  minRows="6"
+                  maxRows="20"
                   value={this.state.feedback}
                   onChange={(event) => this.setState({ feedback: event.target.value })}
                   className={classes.textField}
