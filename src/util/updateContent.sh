@@ -77,6 +77,7 @@ fi
 
 echo "Generating new index files"
 
-node src/util/indexGenerator.js >"$OUT_FILE" 2>&1
+cd src/util
+node indexGenerator.js >"$OUT_FILE" 2>&1
 
 echo "Make sure to increment version in OpenITS/src/config/config.js!"
