@@ -16,6 +16,11 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Save original git author and git email
+        run: |
+          echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
+          echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
+
       - uses: actions/setup-node@v2.4.1
 
       - name: Change homepage in package.json
@@ -42,7 +47,7 @@ jobs:
           git clean -fxd
           rsync -av ../build/ .
           git add .
-          git config --local user.email "$(git log --format='%ae' HEAD^!)"
-          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git config --local user.email "${{ env.git_email }}"
+          git config --local user.name "${{ env.git_name }}"
           git commit -m "deploy commit: $GITHUB_SHA"
           git push
