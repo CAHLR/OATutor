@@ -48,10 +48,12 @@ try {
 }
 
 try{
-  if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
-    console.debug("Current firebase env: ", process.env.REACT_APP_FIREBASE_CONFIG)
+  let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
+  if(_rawEnvConfig.indexOf(" ") !== -1){
+    // is probably in the format of "Secret value: eyJhcG........"
+    _rawEnvConfig = _rawEnvConfig.substr(_rawEnvConfig.lastIndexOf(" ") + 1);
   }
-  const _envConfig = JSON.parse(atob(process.env.REACT_APP_FIREBASE_CONFIG))
+  const _envConfig = JSON.parse(atob(_rawEnvConfig))
   if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
     console.debug("Found env config: ", _envConfig, typeof _envConfig)
   }
