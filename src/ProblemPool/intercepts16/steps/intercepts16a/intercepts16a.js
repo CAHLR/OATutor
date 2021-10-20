@@ -1,0 +1,1 @@
+import hints from "./intercepts16a-index.js"; const step = {id: "intercepts16a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$x+y=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
