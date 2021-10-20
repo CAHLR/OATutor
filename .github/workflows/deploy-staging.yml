@@ -34,10 +34,11 @@ jobs:
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           CI: false
+          REACT_APP_BUILD_TYPE: staging
 
       - uses: actions/checkout@v2
         with:
-          repository: 'git@github.com:CAHLR/OATutor-Staging.git'
+          repository: 'CAHLR/OATutor-Staging'
           ssh-key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
           ref: 'main'
           path: 'staging-build'

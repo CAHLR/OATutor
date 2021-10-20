@@ -48,11 +48,11 @@ try {
 }
 
 try{
-  if(process.env.NODE_ENV === 'staging'){
+  if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
     console.debug("Current firebase env: ", process.env.REACT_APP_FIREBASE_CONFIG)
   }
   const _envConfig = JSON.parse(atob(process.env.REACT_APP_FIREBASE_CONFIG))
-  if(process.env.NODE_ENV === 'staging'){
+  if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
     console.debug("Found env config: ", _envConfig, typeof _envConfig)
   }
   if(typeof _envConfig === 'object'){
@@ -62,7 +62,7 @@ try{
   // ignore
 }
 
-if(process.env.NODE_ENV === 'staging'){
+if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
   console.debug("Final Firebase Config: ", config)
 }
 
