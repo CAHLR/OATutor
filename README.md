@@ -21,14 +21,6 @@ After compiling, the project will display in a new web browser tab at adress `lo
 
 (`npm start` can be used if no new problems/steps/pathways have been added.)
 
-Create a file `/src/ProblemLogic/credentials.js`. This file need not have functional credentials unless logging is
-turned on (it is off by default) It must exist for the project to compile and be in the following format:
-
-```javascript
-const config = {};
-export default config;
-```
-
 ### Firebase Setup
 
 OpenITS uses Firebase for data logging purposes.
@@ -37,10 +29,38 @@ OpenITS uses Firebase for data logging purposes.
 2. Add new project. Configure it as you wish (the options are not important for setup)
 3. Click on Database and then create database. Start in test mode, leave the cloud location as is
 4. Click `start collection` and name it `problemSubmissions`. Add a temporary first document for now.
-5. Click on Project settings --> service accounts. Generate a new `Node.js` private key.
-6. Put that private key in the below format in `/src/config/service-account-credentials.json`
-7. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
-8. Put configuration in `src/config/firebaseConfig.js`
+6. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
+7. Put configuration in `src/config/firebaseConfig.js`
+
+### Utilities Setup
+
+Data parsing and spreadsheet populating utilities are stored in `src/util`. 
+
+For all utilities:
+
+1. Navigate to the Firebase [website](https://console.firebase.google.com/)
+2. Click on the project made in Firebase Setup
+3. Click on Project settings --> service accounts. Generate a new `Node.js` private key.
+4. Put that private key in `/src/util/service-account-credentials.json`
+5. `cd /src/util`
+5. `npm install`
+
+#### generateCSV.js
+
+1. Modify this line `readData("problemSubmissionsSum21")` to point to the target collection
+2. `node generateCSV.js`
+
+#### populateGoogleSheets.js
+
+1. Navigate to the Firebase [website](https://console.firebase.google.com/)
+2. Click on the project made in Firebase Setup
+3. Click on Project settings --> service accounts
+4. Create another service account and save its private key to `src/util/sheets-service-account.json`
+5. Copy the email address for the service account
+6. Share the target spreadsheet with that email address and give them editor access
+7. Create `.env.local` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
+8. Modify this line `const COLLECTION_NAME = "feedbackFall21"` to point to the target collection
+9. `node populateGoogleSheets.js`
 
 ## Features:
 

@@ -1,35 +1,27 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Staging CI
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push events but only for the staging branch
   push:
     branches: [ staging ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   buildAndDeploy:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Save original git author and git email
+        run: |
+          echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
+          echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
 
       - uses: actions/setup-node@v2.4.1
-
-      - uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
-          name: id_rsa
-          known_hosts: unnecessary
 
       - name: Change homepage in package.json
         run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OATutor-Staging/g' package.json
@@ -38,19 +30,27 @@ jobs:
         run: npm ci
 
       - name: Run build
-        run: CI=false npm run build
+        run: npm run build
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          CI: false
+          REACT_APP_BUILD_TYPE: staging
 
-      - name: Set up SSH and git
+      - uses: actions/checkout@v2
+        with:
+          repository: 'CAHLR/OATutor-Staging'
+          ssh-key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
+          ref: 'main'
+          path: 'staging-build'
+
+      - name: Push
         run: |
-          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-          cd build
-          git init
-          git checkout -b main
-          git remote add staging git@github.com:CAHLR/OATutor-Staging.git
+          cd staging-build
+          git rm -rf .
+          git clean -fxd
+          rsync -av ../build/ .
           git add .
-          git config user.email "actions@example.com"
-          git config user.name "actions"
+          git config --local user.email "${{ env.git_email }}"
+          git config --local user.name "${{ env.git_name }}"
           git commit -m "deploy commit: $GITHUB_SHA"
-          git push staging main --force
+          git push

@@ -1,0 +1,1 @@
+import hints from "./intercepts1a-index.js"; const step = {id: "intercepts1a", stepAnswer: ["(4,0)"], problemType: "MultipleChoice", stepTitle: "What is the x intercept of the line in the graph labeled a?", stepBody: "", choices: ["(4,0)I(0,4)I(2,0)I(0,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
