@@ -1,1 +1,1 @@
-import hints from "./log24a-index.js"; const step = {id: "log24a", stepAnswer: ["$${\\left(10\\right)}^t=v$$"], problemType: "TextBox", stepTitle: "$$log v=t$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./log24a-index.js"; const step = {id: "log24a", stepAnswer: ["$${\\left(10\\right)}^t=v$$"], problemType: "TextBox", stepTitle: "$$\\log(v)=t$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./log9a-index.js"; const step = {id: "log9a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y=log \\left(1000\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./log9a-index.js"; const step = {id: "log9a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y=\\log(1000)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

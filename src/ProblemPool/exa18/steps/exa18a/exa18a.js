@@ -1,1 +1,1 @@
-import hints from "./exa18a-index.js"; const step = {id: "exa18a", stepAnswer: ["-3a-21"], problemType: "TextBox", stepTitle: "$$-\\left(3\\right) \\left(a+\\left(7\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exa18a-index.js"; const step = {id: "exa18a", stepAnswer: ["-3a-21"], problemType: "TextBox", stepTitle: "$$-\\operatorname{3}\\left(a+\\left(7\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

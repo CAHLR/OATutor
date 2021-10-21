@@ -9,7 +9,13 @@
   "author": "Matthew Tang",
   "license": "ISC",
   "dependencies": {
-    "firebase-admin": "^8.10.0",
-    "objects-to-csv": "^1.3.6"
+    "await-to-js": "~3.0.0",
+    "dotenv": "~10.0.0",
+    "firebase-admin": "~8.13.0",
+    "google-spreadsheet": "~3.1.15",
+    "objects-to-csv": "~1.3.6"
+  },
+  "devDependencies": {
+    "@types/google-spreadsheet": "~3.1.5"
   }
 }

@@ -1,1 +1,1 @@
-import hints from "./logprop8a-index.js"; const step = {id: "logprop8a", stepAnswer: ["-2ln(x)"], problemType: "TextBox", stepTitle: "Expand $$ln \\frac{1}{x^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./logprop8a-index.js"; const step = {id: "logprop8a", stepAnswer: ["-2ln(x)"], problemType: "TextBox", stepTitle: "Expand $$\\ln(\\frac{1}{x^2})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

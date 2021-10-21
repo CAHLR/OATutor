@@ -32,7 +32,7 @@ import {
   useBottomOutHints,
   autoCommands,
   autoOperatorNames,
-  middlewareURL,
+  middlewareURL, PROGRESS_STORAGE_KEY,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
@@ -48,7 +48,15 @@ try {
 }
 
 try{
-  const _envConfig = JSON.parse(atob(process.env.REACT_APP_FIREBASE_CONFIG))
+  let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
+  if(_rawEnvConfig.indexOf(":") !== -1){
+    // is probably in the format of "Secret value:eyJhcG........"
+    _rawEnvConfig = _rawEnvConfig.substr(_rawEnvConfig.lastIndexOf(":") + 1).trim();
+  }
+  const _envConfig = JSON.parse(atob(_rawEnvConfig))
+  if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
+    console.debug("Found env config: ", _envConfig, typeof _envConfig)
+  }
   if(typeof _envConfig === 'object'){
     Object.assign(config, _envConfig)
   }
@@ -56,8 +64,9 @@ try{
   // ignore
 }
 
-const PROGRESS_STORAGE_KEY = 'openITS-progress'
-const DO_LOG_DATA = true
+if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
+  console.debug("Final Firebase Config: ", config)
+}
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -83,7 +92,7 @@ class App extends React.Component {
 
     // Firebase creation
     this.firebase = null;
-    if (DO_LOG_DATA) { //logData
+    if (logData) { //logData
       this.firebase = new Firebase(this.userID, config, this.getTreatment(), siteVersion);
     }
   }

@@ -206,6 +206,7 @@ class ProblemCard extends React.Component {
               context={this.context}
               editInput={this.editInput}
               setInputValState={this.setInputValState}
+              handleKey={this.handleKey}
             />
           </div>
 
