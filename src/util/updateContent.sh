@@ -40,11 +40,11 @@ cd ../..
 ROOT_PATH=$(pwd)
 
 if [ -f src/ProblemPool/problemPoolDev.js ]; then
-  HAS_DEV_FILE=true
+  mv src/ProblemPool/problemPoolDev.js src/util/problemPoolDev.js.bak
 fi
 
-if [ $HAS_DEV_FILE ]; then
-  mv src/ProblemPool/problemPoolDev.js src/util/problemPoolDev.js.bak
+if [ -f src/util/problemPoolDev.js.bak ]; then
+  HAS_DEV_FILE=true
 fi
 
 echo "Removing existing ProblemPool"

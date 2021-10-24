@@ -3637,6 +3637,8 @@ const skillModel = {
     macromolecules7b: ['biological_macromolecules'],
     intro1a: ['prediction'],
     nums1a: ['writing_python_expressions'],
+    linalg1a: ['n/a'],
+    linalg1b: ['n/a'],
     // Start Inserting
 
 }
