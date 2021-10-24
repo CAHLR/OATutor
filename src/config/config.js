@@ -3,7 +3,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = "1.1.14";
+const siteVersion = "1.1.15";
 const logData = true;
 const logMouseData = false;
 const debug = false;
