@@ -40,31 +40,31 @@ import 'react-toastify/dist/ReactToastify.css';
 
 try {
   const _config = require('./config/credentials-secret').default
-  if(typeof _config === 'object'){
+  if (typeof _config === 'object') {
     Object.assign(config, _config)
   }
 } catch (e) {
   // ignore
 }
 
-try{
+try {
   let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
-  if(_rawEnvConfig.indexOf(":") !== -1){
+  if (_rawEnvConfig.indexOf(":") !== -1) {
     // is probably in the format of "Secret value:eyJhcG........"
     _rawEnvConfig = _rawEnvConfig.substr(_rawEnvConfig.lastIndexOf(":") + 1).trim();
   }
   const _envConfig = JSON.parse(atob(_rawEnvConfig))
-  if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
+  if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
     console.debug("Found env config: ", _envConfig, typeof _envConfig)
   }
-  if(typeof _envConfig === 'object'){
+  if (typeof _envConfig === 'object') {
     Object.assign(config, _envConfig)
   }
 } catch (e) {
   // ignore
 }
 
-if(process.env.REACT_APP_BUILD_TYPE === 'staging'){
+if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
   console.debug("Final Firebase Config: ", config)
 }
 
@@ -101,10 +101,10 @@ class App extends React.Component {
     return this.userID % 2;
   }
 
-  removeProgress = () => {
-    localForage.removeItem(PROGRESS_STORAGE_KEY).then(_ => {
-      this.loadProgress();
-    })
+  removeProgress = async () => {
+    await localForage.removeItem(PROGRESS_STORAGE_KEY)
+    this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2
+    window.location.reload();
   }
 
   saveProgress = () => {

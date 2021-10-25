@@ -9,7 +9,8 @@ import { problem as a0cc26bpoly30 } from './a0cc26bpoly30/a0cc26bpoly30.js';
 import { problem as a0cc26bpoly4 } from './a0cc26bpoly4/a0cc26bpoly4.js';
 import { problem as quad32 } from './quad32/quad32';
 import { problem as ser28 } from './ser28/ser28';
+import { problem as linalg1 } from './linalg1/linalg1'
 
-var problems = [a0cc26bpoly1, a0cc26bpoly10, a0cc26bpoly2, a0cc26bpoly3, a0cc26bpoly4, a0cc26bpoly11, a0cc26bpoly20, a0cc26bpoly21, a0cc26bpoly30, quad32, ser28]
+var problems = [a0cc26bpoly1, a0cc26bpoly10, a0cc26bpoly2, a0cc26bpoly3, a0cc26bpoly4, a0cc26bpoly11, a0cc26bpoly20, a0cc26bpoly21, a0cc26bpoly30, quad32, linalg1, ser28]
 
 export default problems;
