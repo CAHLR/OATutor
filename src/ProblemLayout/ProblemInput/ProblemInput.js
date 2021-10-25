@@ -7,8 +7,8 @@ import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
 import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
-import 'react-resizable/css/styles.css';
 import './ProblemInput.css'
+import { shuffleArray } from "../../util/shuffleArray";
 
 class ProblemInput extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class ProblemInput extends React.Component {
   }
 
   componentDidMount() {
-    console.debug('problem', this.props.step)
+    console.debug('problem', this.props.step, 'seed', this.props.seed)
     if (this.isMatrixInput()) {
       console.log('automatically determined matrix input to be the correct problem type')
     }
@@ -98,7 +98,7 @@ class ProblemInput extends React.Component {
           {problemType === "MultipleChoice" && (
             <MultipleChoice
               onChange={(evt) => this.props.editInput(evt)}
-              choices={this.props.step.choices}/>
+              choices={shuffleArray(this.props.step.choices, this.props.seed)}/>
           )}
           {problemType === "GridInput" && (
             <GridInput
