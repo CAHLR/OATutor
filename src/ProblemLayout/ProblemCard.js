@@ -195,6 +195,7 @@ class ProblemCard extends React.Component {
               classes={classes}
               state={this.state}
               step={this.step}
+              seed={this.props.seed}
               _setState={(state) => this.setState(state)}
               context={this.context}
               editInput={this.editInput}
