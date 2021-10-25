@@ -16,7 +16,8 @@ if (+process.versions.node.split(".")[0] < 10) {
 
 // the current file should be in src/util so ../ProblemPool should be src/ProblemPool
 const problemPoolPath = path.join(__dirname, '..', 'ProblemPool')
-const poolFilePath = path.join(__dirname, '..', 'generated', 'poolFile.json')
+const generatedPath = path.join(__dirname, '..', 'generated')
+const poolFilePath = path.join(generatedPath, 'poolFile.json')
 const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures')
 
 ;(async () => {
@@ -144,6 +145,10 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
   console.debug(`writing to pool file...`)
 
   const config = problems
+
+  await mkdir(generatedPath, {
+    recursive: true
+  })
 
   await writeFile(poolFilePath, JSON.stringify(config))
 })()
