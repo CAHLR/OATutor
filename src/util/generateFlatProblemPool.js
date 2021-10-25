@@ -141,7 +141,7 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
 
   // console.debug(`${modifiedProblems} problems have been modified.`)
 
-  console.debug(`attempting to write to pool file...`)
+  console.debug(`writing to pool file...`)
 
   const config = problems
 
@@ -150,16 +150,11 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
 
 function getHintJSON(rawHints) {
   const _hintStr = rawHints.toString()
-  const _idxStart = _hintStr.indexOf("var hints = [")
-    || _hintStr.indexOf("var hints =[")
-    || _hintStr.indexOf("var hints=[")
-    || _hintStr.indexOf("const hints = [")
-    || _hintStr.indexOf("const hints =[")
-    || _hintStr.indexOf("const hints=[")
+
+  const _idxStart = regexIndexOf(_hintStr, /(var|const|let)\s+hints\s*=\s*\[/m)
   const idxStart = _hintStr.indexOf("[", _idxStart)
 
-  const _idxEnd = _hintStr.lastIndexOf("]; export")
-    || _hintStr.lastIndexOf("];export")
+  const _idxEnd = regexLastIndexOf(_hintStr, /];?\s*export/m)
   const idxEnd = _idxEnd + 1
 
   const hintStr = _hintStr
@@ -170,35 +165,26 @@ function getHintJSON(rawHints) {
 
 function getProblemJSON(rawProblem) {
   const _problemStr = rawProblem.toString()
-  const _idxStart = _problemStr.indexOf("; const problem = {")
-    || _problemStr.indexOf(";const problem = {")
-    || _problemStr.indexOf("; const problem= {")
-    || _problemStr.indexOf("; const problem={")
-    || _problemStr.indexOf(";const problem={")
+  const _idxStart = regexIndexOf(_problemStr, /(var|const|let)\s+problem\s*=\s*{/m)
   const idxStart = _problemStr.indexOf("{", _idxStart)
 
-  const _idxEnd = _problemStr.lastIndexOf("}; export")
-    || _problemStr.lastIndexOf("};export")
+  const _idxEnd = regexLastIndexOf(_problemStr, /};?\s*export/m)
   const idxEnd = _idxEnd + 1
 
   const problemStr = _problemStr
     .substring(idxStart, idxEnd)
-    .replace(/steps: ?steps/, "steps: {}")
+    .replace(/steps:\s+steps/, "steps: {}")
 
   return jsToJSON(problemStr)
 }
 
 function getStepJSON(rawStep) {
   const _stepStr = rawStep.toString()
-  const _idxStart = _stepStr.indexOf("; const step = {")
-    || _stepStr.indexOf(";const step = {")
-    || _stepStr.indexOf("; const step= {")
-    || _stepStr.indexOf("; const step={")
-    || _stepStr.indexOf(";const step={")
+
+  const _idxStart = regexIndexOf(_stepStr, /(var|const|let)\s+step\s*=\s*{/m)
   const idxStart = _stepStr.indexOf("{", _idxStart)
 
-  const _idxEnd = _stepStr.lastIndexOf("}; export")
-    || _stepStr.lastIndexOf("};export")
+  const _idxEnd = regexLastIndexOf(_stepStr, /};?\s*export/m)
   const idxEnd = _idxEnd + 1
 
   const stepStr = _stepStr
@@ -238,4 +224,30 @@ function jsToJSON(rawJS) {
     console.debug()
     throw Error(er)
   }
+}
+
+// https://stackoverflow.com/a/274094
+function regexIndexOf(string, regex, startpos) {
+  const indexOf = string.substring(startpos || 0).search(regex);
+  return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf;
+}
+
+// https://stackoverflow.com/a/274094
+function regexLastIndexOf(string, regex, startpos) {
+  regex = (regex.global) ? regex : new RegExp(regex.source, "g" + (regex.ignoreCase ? "i" : "") + (regex.multiLine ? "m" : ""));
+  if(typeof (startpos) == "undefined") {
+    startpos = string.length;
+  } else if(startpos < 0) {
+    startpos = 0;
+  }
+  const stringToWorkWith = string.substring(0, startpos + 1);
+  let lastIndexOf = -1;
+  let nextStop = 0;
+  let result = regex.exec(stringToWorkWith)
+  while((result) != null) {
+    lastIndexOf = result.index;
+    regex.lastIndex = ++nextStop;
+    result = regex.exec(stringToWorkWith)
+  }
+  return lastIndexOf;
 }
