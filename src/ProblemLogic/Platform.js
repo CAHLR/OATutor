@@ -11,13 +11,7 @@ import {
 
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 
-let problemPool
-if (process.env.NODE_ENV === 'development'){
-  console.debug('Loading dev problem pool')
-  problemPool = require('../ProblemPool/problemPoolDev').default
-}else{
-  problemPool = require('../ProblemPool/problemPool').default
-}
+let problemPool = require('../generated/poolFile.json')
 
 var seed = Date.now().toString();
 console.log("Generated seed");
@@ -81,7 +75,7 @@ class Platform extends React.Component {
   selectLesson = async (lesson, context) => {
     this.lesson = lesson;
     await this.props.loadProgress();
-    if(!this._isMounted){
+    if (!this._isMounted) {
       return
     }
     this.setState({

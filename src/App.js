@@ -154,7 +154,7 @@ class App extends React.Component {
           getTreatment: this.getTreatment,
           bktParams: this.bktParams,
           heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
-          hintPathway: this.getTreatment() === 0 ? "defaultPathway" : "defaultPathway",
+          hintPathway: this.getTreatment() === 0 ? "DefaultPathway" : "DefaultPathway",
           skillModel,
           credentials: config,
           debug,
