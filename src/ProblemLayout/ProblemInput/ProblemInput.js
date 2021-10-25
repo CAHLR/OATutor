@@ -7,7 +7,6 @@ import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
 import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
-import { Resizable } from "react-resizable";
 import 'react-resizable/css/styles.css';
 import './ProblemInput.css'
 
@@ -15,12 +14,9 @@ class ProblemInput extends React.Component {
   constructor(props) {
     super(props);
 
-    this.cellRef = createRef()
-    this.state = {
-      inputHeight: 50
-    }
+    this.equationRef = createRef()
 
-    this.onResize = this.onResize.bind(this)
+    this.onEquationChange = this.onEquationChange.bind(this)
   }
 
   componentDidMount() {
@@ -41,16 +37,20 @@ class ProblemInput extends React.Component {
     }
   }
 
-  onResize(event, { size }) {
-    // console.debug(`new height: ${size.height}, cell ref: `, this.cellRef.current)
-    if (this.cellRef.current) {
-      if(Math.abs(this.state.inputHeight - size.height) > 30){
-        return
+  onEquationChange(eq) {
+    const containerEl = this.equationRef?.current
+    const eqContentEl = this.equationRef?.current?.querySelector(".mq-editable-field")
+    if (containerEl != null && eqContentEl != null) {
+      const eqContainer = eqContentEl.querySelector("*[mathquill-block-id]")
+      if (eqContainer != null) {
+        const tallestEqElement = Math.max(...Array.from(eqContainer.childNodes.values()).map(el => el.offsetHeight))
+        const newHeight = Math.max(tallestEqElement + 20, 50)
+
+        containerEl.style.height = `${newHeight}px`;
+        eqContainer.style.height = `${newHeight}px`;
       }
-      this.cellRef.current.style.height = `${size.height}px`;
-      this.cellRef.current.querySelector("* > *[mathquill-block-id]").style.height = `${size.height}px`;
     }
-    this.setState({ inputHeight: size.height })
+    this.props._setState({ inputVal: eq })
   }
 
   render() {
@@ -67,25 +67,21 @@ class ProblemInput extends React.Component {
         <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
         <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
           {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
-            <Resizable width={-1} height={this.state.inputHeight} axis={"y"} onResize={this.onResize}
-                       minConstraints={[50, 50]}
-                       maxConstraints={[Infinity, 150]}
-            >
-              <center
-                ref={this.cellRef}
-                className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}>
-                <EquationEditor
-                  value={state.inputVal}
-                  onChange={(eq) => this.props._setState({ inputVal: eq })}
-                  style={{ width: "100%" }}
-                  autoCommands={this.props.context.autoCommands}
-                  autoOperatorNames={this.props.context.autoOperatorNames}
-                />
-              </center>
-            </Resizable>
+            <center
+              ref={this.equationRef}
+              className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}>
+              <EquationEditor
+                value={state.inputVal}
+                onChange={this.onEquationChange}
+                style={{ width: "100%" }}
+                autoCommands={this.props.context.autoCommands}
+                autoOperatorNames={this.props.context.autoOperatorNames}
+              />
+            </center>
           )}
           {(problemType === "TextBox" && this.props.step.answerType === "string") && (
             <TextField
+              ref={this.textFieldRef}
               inputProps={{ min: 0, style: { textAlign: 'center' } }}
               error={state.isCorrect === false}
               className={classes.inputField}
