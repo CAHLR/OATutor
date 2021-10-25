@@ -1,1 +1,1 @@
-import hints from "./whole7a-index.js"; const step = {id: "whole7a", stepAnswer: ["785,000"], problemType: "TextBox", stepTitle: "Round 784,951 to the nearest hundred", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./whole7a-index.js"; const step = {id: "whole7a", stepAnswer: ["785000"], problemType: "TextBox", stepTitle: "Round 784,951 to the nearest hundred", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
