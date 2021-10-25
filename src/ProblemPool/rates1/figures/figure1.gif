@@ -176,7 +176,7 @@ PF.fn.window_to_device = window.window_to_device;
 PF.obj.config.base_url="https://ibb.co";
 PF.obj.config.json_api="https://ibb.co/json";
 PF.obj.config.listing.items_per_page="32";
-PF.obj.config.auth_token="5c3a6a181d0c6bb474a6e81f4d8f509c7795e3ef";
+PF.obj.config.auth_token="f265e46b11d86bcdf72eebae0b932ea713fe9071";
 PF.obj.l10n=[];
 if(typeof CHV=="undefined"){CHV={obj:{},fn:{},str:{}};}
 CHV.obj.embed_tpl={"links":{"label":"Links","options":{"viewer-links":{"label":"Viewer links","template":"%URL_VIEWER%","size":"viewer"}}},"html-codes":{"label":"HTML Codes","options":{"html-embed-medium":{"label":"HTML full linked","template":"<a href=\"%URL_VIEWER_PREVIEW%\"><img src=\"%MEDIUM_URL%\" alt=\"%MEDIUM_NAME%\" border=\"0\"><\/a>","size":"medium"},"html-embed-thumbnail":{"label":"HTML thumbnail linked","template":"<a href=\"%URL_VIEWER_THUMB%\"><img src=\"%THUMB_URL%\" alt=\"%THUMB_NAME%\" border=\"0\"><\/a>","size":"thumb"}}},"bbcodes":{"label":"BBCodes","options":{"bbcode-embed-medium":{"label":"BBCode full linked","template":"[url=%URL_VIEWER_PREVIEW%][img]%MEDIUM_URL%[\/img][\/url]","size":"medium"},"bbcode-embed-thumbnail":{"label":"BBCode thumbnail linked","template":"[url=%URL_VIEWER_THUMB%][img]%THUMB_URL%[\/img][\/url]","size":"thumb"}}}};

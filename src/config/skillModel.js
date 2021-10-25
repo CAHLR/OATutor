@@ -3639,6 +3639,8 @@ const skillModel = {
     nums1a: ['writing_python_expressions'],
     linalg1a: ['n/a'],
     linalg1b: ['n/a'],
+    linalg2a: ['n/a'],
+    linalg2b: ['n/a'],
     // Start Inserting
 
 }

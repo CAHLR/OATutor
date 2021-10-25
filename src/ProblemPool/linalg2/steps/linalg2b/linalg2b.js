@@ -1,0 +1,1 @@
+import hints from "./linalg2b-index.js"; const step = {id: "linalg2b", stepAnswer: ["$$\\begin{bmatrix} 2 \\\\ -1 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Suppose [x]_c=/mat{(11),(1)} . Use your previous answer to find [x]_B .", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
