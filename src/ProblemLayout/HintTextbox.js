@@ -28,6 +28,12 @@ class HintTextbox extends React.Component {
     }
   }
 
+  handleKey = (event) => {
+    if (event.key === 'Enter') {
+      this.submit();
+    }
+  }
+
   submit = () => {
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, chooseVariables(this.props.hintVars, this.props.seed));
     this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
@@ -60,6 +66,7 @@ class HintTextbox extends React.Component {
           context={this.context}
           editInput={this.editInput}
           setInputValState={this.setInputValState}
+          handleKey={this.handleKey}
         />
 
         <Grid container spacing={0} justifyContent="center" alignItems="center">

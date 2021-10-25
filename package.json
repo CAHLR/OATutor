@@ -27,15 +27,13 @@
     "universal-cookie": "~4.0.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "generate": "(cd src/util/; node indexGenerator.js; cd ../..; npm run start)  || (echo \"[OpenITS INFO] Ignore the path cannot be found warning, it's expected for Windows.\" && cd src/util/ && node indexGenerator.js && cd ../.. && npm run start)",
+    "prestart": "node src/util/generateFlatProblemPool.js",
     "build": "react-scripts build",
+    "prebuild": "node src/util/generateFlatProblemPool.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev-deploy": "npm run build && node dev-deploy.js",
-    "dev-dep": "gh-pages -d build -r https://github.com/CAHLR/OpenITS-dev.git -f"
+    "pretest": "node src/util/generateFlatProblemPool.js",
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [

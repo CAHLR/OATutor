@@ -28,7 +28,7 @@ function renderText(text, problemID, variabilization) {
           } else {
             //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
             return <center key={Math.random() * 2 ** 16}>
-              <img src={require(`../ProblemPool/${problemID}/figures/${subPart}`).default}
+              <img src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
                    alt={`${problemID} figure`}/>
             </center>
           }

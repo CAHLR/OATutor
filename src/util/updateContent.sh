@@ -39,14 +39,6 @@ cd ../..
 
 ROOT_PATH=$(pwd)
 
-if [ -f src/ProblemPool/problemPoolDev.js ]; then
-  mv src/ProblemPool/problemPoolDev.js src/util/problemPoolDev.js.bak
-fi
-
-if [ -f src/util/problemPoolDev.js.bak ]; then
-  HAS_DEV_FILE=true
-fi
-
 echo "Removing existing ProblemPool"
 
 rm -rf src/ProblemPool
@@ -71,13 +63,9 @@ mv src/config/bktParams.js src/config/bktParams/bktParams1.js
 
 cp src/config/bktParams/bktParams1.js src/config/bktParams/bktParams2.js
 
-if [ $HAS_DEV_FILE ]; then
-  mv src/util/problemPoolDev.js.bak src/ProblemPool/problemPoolDev.js
-fi
-
-echo "Generating new index files"
+echo "Generating flattened problem pool."
 
 cd src/util
-node indexGenerator.js >"$OUT_FILE" 2>&1
+node generateFlatProblemPool.js >"$OUT_FILE" 2>&1
 
 echo "Make sure to increment version in OpenITS/src/config/config.js!"
