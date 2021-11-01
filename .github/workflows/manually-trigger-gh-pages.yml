@@ -1,0 +1,19 @@
+name: Manually Trigger GH-Pages Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pushEmptyCommit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'gh-pages'
+      - name: Create empty commit
+        run: |
+          git config --local user.email $(git log --format='%ae' HEAD^!)
+          git config --local user.name $(git log --format='%an' HEAD^!)
+          git commit --allow-empty -m "Empty commit"
+      - name: Push empty commit
+        run: git push
