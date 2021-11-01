@@ -1,6 +1,7 @@
 require('dotenv').config({
   path: './.env.local'
 })
+const fromEntries = require('object.fromentries');
 const admin = require('firebase-admin');
 const to = require('await-to-js').default;
 const serviceAccount = require('./service-account-credentials.json');
@@ -29,6 +30,8 @@ const COLUMN_NAME_MAPPING = {
 };
 
 const COLUMN_TITLES = ["Id","date","Content","problemName","studentName","Feedback","Issue Type","status","resolution","resolveDate","deployDate","problemFinished?","siteVersion","versionFixed","treatmentID"]
+
+if (!Object.fromEntries) {fromEntries.shim();}
 
 ;(async () => {
   let err;
