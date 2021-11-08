@@ -1,5 +1,4 @@
 import React from 'react';
-//import lessonPlans from './lessonPlans.js'
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
@@ -24,7 +23,7 @@ const GRANULARITY = 5;
 const autoCommands = "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
 const autoOperatorNames = "sin cos tan";
 
-const middlewareURL = "https://askoski.berkeley.edu:1339";
+const middlewareURL = process.env.REACT_APP_MIDDLEWARE_URL || "https://askoski.berkeley.edu:1339";
 
 var coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 
