@@ -12,6 +12,4 @@ class ToastID extends Enumify {
   static _ = this.closeEnum();
 }
 
-module.exports = {
-  ToastID
-}
+export default ToastID
