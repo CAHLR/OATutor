@@ -29,6 +29,7 @@ const AssignmentAlreadyLinked = (props) => {
           <Box width="75%" maxWidth={1500}>
             <center>
               <h1>Oops, something went wrong!</h1>
+              <h2>This assignment has already been linked.</h2>
             </center>
             <Divider/>
             <center>
