@@ -12,7 +12,7 @@ import {
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
-import { ToastID } from "../util/toastIds";
+import ToastID from "../util/toastIds";
 
 let problemPool = require('../generated/poolFile.json')
 
