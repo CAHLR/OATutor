@@ -5,7 +5,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField'
 import IconButton from '@material-ui/core/IconButton';
 
 import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
@@ -13,13 +12,7 @@ import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
-import MultipleChoice from './ProblemInput/MultipleChoice.js';
-
-import EquationEditor from "equation-editor-react";
-
 import { ThemeContext } from '../config/config.js';
-import GridInput from "./ProblemInput/GridInput";
-import MatrixInput from "./ProblemInput/MatrixInput";
 
 import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
@@ -33,6 +26,7 @@ class ProblemCard extends React.Component {
     //console.log("Reconstructing");
     this.step = props.step;
     this.index = props.index;
+    console.debug('this.step', this.step, 'hintPathway', context.hintPathway)
     this.hints = this.step.hints[context.hintPathway];
 
     for (let hint of this.hints) {
@@ -202,6 +196,7 @@ class ProblemCard extends React.Component {
               classes={classes}
               state={this.state}
               step={this.step}
+              seed={this.props.seed}
               _setState={(state) => this.setState(state)}
               context={this.context}
               editInput={this.editInput}
