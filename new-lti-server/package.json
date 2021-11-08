@@ -1,0 +1,22 @@
+{
+  "name": "openits-lti-server",
+  "version": "1.0.0",
+  "description": "LTI server",
+  "main": "server.js",
+  "dependencies": {
+    "await-to-js": "~3.0.0",
+    "express": "~4.17.1",
+    "express-jwt": "~6.1.0",
+    "ims-lti": "~3.0.2",
+    "jsonwebtoken": "~8.5.1",
+    "level": "~7.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Tang",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/level": "^6.0.0"
+  }
+}
