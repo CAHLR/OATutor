@@ -89,14 +89,14 @@ class LessonSelection extends React.Component {
           <br/>
           <Grid container spacing={0}>
             <Grid item xs={3} sm={3} md={5} key={1}/>
-            <Grid item xs={6} sm={6} md={2} key={2}>
+            {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
               {this.state.preparedRemoveProgress ?
                 <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.removeProgress}
                         disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
                 <Button className={classes.button} style={{ width: "100%" }} size="small"
                         onClick={this.prepareRemoveProgress}
                         disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
-            </Grid>
+            </Grid>}
             <Grid item xs={3} sm={3} md={4} key={3}/>
           </Grid>
           <br/>
@@ -151,14 +151,14 @@ class LessonSelection extends React.Component {
           <br/>
           <Grid container spacing={0}>
             <Grid item xs={3} sm={3} md={5} key={1}/>
-            <Grid item xs={6} sm={6} md={2} key={2}>
+            {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
               {this.state.preparedRemoveProgress ?
                 <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.removeProgress}
                         disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
                 <Button className={classes.button} style={{ width: "100%" }} size="small"
                         onClick={this.prepareRemoveProgress}
                         disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
-            </Grid>
+            </Grid>}
             <Grid item xs={3} sm={3} md={4} key={3}/>
           </Grid>
           <br/>

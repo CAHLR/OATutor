@@ -18,6 +18,8 @@ const stagingHost = "https://cahlr.github.io/OATutor-Staging/#"
 const unlinkedPage = "assignment-not-linked"
 const jwtAlgorithm = "HS256"
 
+const scorePrecision = 3 // how many decimal points to keep
+
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -37,7 +39,7 @@ const getLinkedLesson = async (resource_link_id) => {
 }
 
 app.post('/launch', async (req, res) => {
-  const use_staging = !!req.body.use_staging
+  const use_staging = !!req.body.use_staging || !!req.body.custom_use_staging
   const host = use_staging ? stagingHost : oatsHost
 
   const consumer_key = req.body.oauth_consumer_key || "";
@@ -67,6 +69,7 @@ app.post('/launch', async (req, res) => {
     lis_outcome_service_url: provider.body.lis_outcome_service_url,
     lis_result_sourcedid: provider.body.lis_result_sourcedid,
     ext_outcome_data_values_accepted: provider.body.ext_outcome_data_values_accepted,
+    consumer_key,
     signer: provider.body.signer,
 
     // general fields
@@ -86,9 +89,9 @@ app.post('/launch', async (req, res) => {
     // find lesson to send to iff it has been linked by an instructor
     let err, result;
     [err, result] = await getLinkedLesson(provider.body.resource_link_id);
-    if(err || !result){
+    if (err || !result) {
       res.writeHead(302, { Location: `${host}/${unlinkedPage}?token=${token}` })
-    }else{
+    } else {
       res.writeHead(302, { Location: `${host}/lessons/${result}?token=${token}` })
     }
   } else if (privileged) {
@@ -171,6 +174,58 @@ app.post('/setLesson', jwtMiddleware({
   }
 
   res.status(200).end()
+})
+
+app.post('/postScore', jwtMiddleware({
+  secret: multiTenantSecret,
+  algorithms: [jwtAlgorithm],
+  getToken
+}), (req, res) => {
+  const { user = {}, body } = req
+  const { consumer_key } = user
+  const { components, mastery } = body
+
+  // console.debug('component and mastery from client: ', { components, mastery })
+
+  const consumer_secret = consumerKeySecretMap[consumer_key]
+  if (!consumer_key || !consumer_secret) {
+    res.status(400).send('lost_link_to_lms').end()
+    return
+  }
+
+  const provider = new lti.Provider(consumer_key, consumer_secret)
+  provider.parse_request(null, user)
+
+  if (!provider.outcome_service) {
+    res.status(400).send('unable_to_handle_score').end()
+    return
+  }
+
+  const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)
+
+  const text = `
+      <h1> Component Breakdown </h1>
+      <h4> Overall score: ${score}%</h4>
+      ${Object
+    .keys(components)
+    .map((key, i) =>
+      `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
+${"&#9646;".repeat((+components[key]) * 10)}
+${"&#9647;".repeat(10 - (+components[key]) * 10)}
+</p>`)
+    .join("")
+  }
+    `;
+
+  provider.outcome_service.send_replace_result_with_text(score, text, (err, result) => {
+    if (err || !result) {
+      console.debug('was unable to send result to your LMS', err)
+      res.status(400).send('unable_to_handle_score').end()
+      return
+    }
+
+    res.status(200).end()
+  })
 })
 
 app.listen(port, () => {

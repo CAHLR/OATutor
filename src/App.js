@@ -38,6 +38,8 @@ import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/p
 import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
 import parseJwt from "./util/parseJWT";
 import AssignmentNotLinked from "./pages/AssignmentNotLinked";
+import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
+import SessionExpired from "./pages/SessionExpired";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 try {
@@ -222,6 +224,7 @@ class App extends React.Component {
           studentName: '',
           middlewareURL,
           jwt: '',
+          user: {},
           problemIDs: null,
           ...this.state.additionalContext
         }}>
@@ -248,6 +251,12 @@ class App extends React.Component {
                 )}/>
                 <Route exact path="/assignment-not-linked" render={(props) => (
                   <AssignmentNotLinked key={Date.now()} {...props} />
+                )}/>
+                <Route exact path="/assignment-already-linked" render={(props) => (
+                  <AssignmentAlreadyLinked key={Date.now()} {...props} />
+                )}/>
+                <Route exact path="/session-expired" render={(props) => (
+                  <SessionExpired key={Date.now()} {...props} />
                 )}/>
                 <Route component={Notfound}/>
               </Switch>

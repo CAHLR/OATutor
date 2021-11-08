@@ -1,13 +1,9 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
-import {
-  HashRouter as Router, Link,
-  NavLink
-} from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 import to from "await-to-js";
@@ -75,6 +71,9 @@ class Platform extends React.Component {
   }
 
   async selectLesson(lesson, context) {
+    if (!this._isMounted) {
+      return
+    }
     console.debug('isPrivileged', this.isPrivileged)
     if (this.isPrivileged) {
       // from canvas or other LTI Consumers
@@ -107,7 +106,8 @@ class Platform extends React.Component {
                   toast.error(`${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`, {
                     toastId: ToastID.set_lesson_duplicate_error.toString()
                   })
-                  break;
+                  this.props.history.push('/assignment-already-linked')
+                  return
                 default:
                   toast.error(`Error: ${responseText}`, {
                     toastId: ToastID.expired_session.toString(),
@@ -115,11 +115,11 @@ class Platform extends React.Component {
                   })
                   return
               }
-              break;
             case 401:
               toast.error(`Your session has either expired or been invalidated, please reload the page to try again.`, {
                 toastId: ToastID.expired_session.toString()
               })
+              this.props.history.push('/session-expired')
               return
             case 403:
               toast.error(`You are not authorized to make this action. (Are you an instructor?)`, {
@@ -140,13 +140,8 @@ class Platform extends React.Component {
       }
     }
 
-    // likely a student or teacher checking out the platform
-
     this.lesson = lesson;
     await this.props.loadProgress();
-    if (!this._isMounted) {
-      return
-    }
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     }, () => {
@@ -251,9 +246,12 @@ class Platform extends React.Component {
           <Toolbar>
             <Grid container spacing={0}>
               <Grid item xs={3} key={1}>
-                <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
-                  <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
-                </Link>
+                {this.context.jwt.length !== 0 && !this.isPrivileged // launched from lms
+                  ? <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
+                  : <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
+                    <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
+                  </Link>
+                }
               </Grid>
               <Grid item xs={6} key={2}>
                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
@@ -265,14 +263,6 @@ class Platform extends React.Component {
                   {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection"
                     ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%"
                     : ""}
-                  {false ?
-                    <Router>
-                      <NavLink activeClassName="active" className="link" to={"/"} type="menu"
-                               style={{ marginRight: '10px' }}>
-                        <Button color="inherit"
-                                onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                      </NavLink>
-                    </Router> : ""}
                 </div>
               </Grid>
             </Grid>
@@ -299,4 +289,5 @@ class Platform extends React.Component {
   }
 }
 
-export default Platform;
+
+export default withRouter(Platform);

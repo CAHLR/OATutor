@@ -4,7 +4,7 @@ import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 
-const AssignmentNotLinked = (props) => {
+const AssignmentAlreadyLinked = (props) => {
   const context = useContext(ThemeContext)
 
   return <>
@@ -28,13 +28,14 @@ const AssignmentNotLinked = (props) => {
         >
           <Box width="75%" maxWidth={1500}>
             <center>
-              <h1>Welcome to OpenITS!</h1>
-              <h2>Your instructor has not linked a lesson to this assignment yet.</h2>
+              <h1>Oops, something went wrong!</h1>
             </center>
             <Divider/>
             <center>
               <br/>
-              <p>Please check back later.</p>
+              <p>If you are a student, please check back later.</p>
+              <br/>
+              <p>If you are an instructor, please try creating a new assignment and re-link.</p>
               <br/>
               <br/>
               <br/>
@@ -46,4 +47,4 @@ const AssignmentNotLinked = (props) => {
   </>
 }
 
-export default AssignmentNotLinked
+export default AssignmentAlreadyLinked

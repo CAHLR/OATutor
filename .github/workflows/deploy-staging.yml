@@ -34,7 +34,8 @@ jobs:
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           CI: false
-          REACT_APP_BUILD_TYPE: staging
+          REACT_APP_BUILD_TYPE: "staging"
+          REACT_APP_MIDDLEWARE_URL: ${{ secrets.STAGING_MIDDLEWARE_URL }}
 
       - uses: actions/checkout@v2
         with:
