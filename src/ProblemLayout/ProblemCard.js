@@ -87,6 +87,7 @@ class ProblemCard extends React.Component {
   }
 
   submit = () => {
+    console.debug('submitting problem')
     const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
     if (this.context.logData) {
