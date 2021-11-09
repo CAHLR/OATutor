@@ -92,11 +92,11 @@ class HintTextbox extends React.Component {
               {this.state.isCorrect ?
                 <img className={classes.checkImage} style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
                      alt=""
-                     src="https://image.flaticon.com/icons/svg/148/148767.svg"/> : ""}
+                     src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/> : ""}
               {this.state.isCorrect === false ?
                 <img className={classes.checkImage} style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
                      alt=""
-                     src="https://image.flaticon.com/icons/svg/148/148766.svg"/> : ""}
+                     src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/> : ""}
             </div>
           </Grid>
           <Grid item xs={false} sm={1} md={4}/>
