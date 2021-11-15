@@ -1,1 +1,1 @@
-import steps from "./rotation14-index.js"; const problem = {id: "rotation14", title: "Rotation of Axes", body: "$$\\left(3\\right) x^2+xy+\\left(3\\right) y^2-\\left(5\\right)=0$$, $$\\theta=45\\degree$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./rotation14-index.js"; const problem = {id: "rotation14", title: "Rotation of Axes", body: "$$3x^2+xy+3y^2-5=0$$, $$\\theta=45\\degree$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

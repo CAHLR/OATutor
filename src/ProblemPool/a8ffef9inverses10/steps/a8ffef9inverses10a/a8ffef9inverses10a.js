@@ -1,0 +1,1 @@
+import hints from "./a8ffef9inverses10a-index.js"; const step = {id: "a8ffef9inverses10a", stepAnswer: ["$$\\frac{\\left(3\\right)+\\left(2\\right) x}{x-\\left(1\\right)}$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x+\\left(3\\right)}{x-\\left(2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

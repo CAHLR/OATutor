@@ -1,0 +1,1 @@
+import steps from "./a1268beother18-index.js"; const problem = {id: "a1268beother18", title: "Solving a Radical Equation Containing Two Radicals", body: "Solve the following equation for x.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

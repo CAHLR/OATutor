@@ -1,0 +1,1 @@
+import steps from "./ac3e97dclt4-index.js"; const problem = {id: "ac3e97dclt4", title: "Central Limit Theorem: Between", body: "", steps: steps, variabilization: {}, oer: "statisticshowto.com"}; export { problem };

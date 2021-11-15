@@ -1,1 +1,1 @@
-import steps from "./Visualize3-index.js"; const problem = {id: "Visualize3", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./Visualize3-index.js"; const problem = {id: "Visualize3", title: "How to Simplify a Fraction", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

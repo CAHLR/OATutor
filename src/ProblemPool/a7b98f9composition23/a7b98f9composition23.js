@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition23-index.js"; const problem = {id: "a7b98f9composition23", title: "Composition of Functions", body: "For $$f(x)=x^2+\\left(1\\right)$$ and $$g(x)=\\sqrt{x+\\left(2\\right)}$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

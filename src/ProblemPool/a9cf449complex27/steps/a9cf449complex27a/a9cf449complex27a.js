@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex27a-index.js"; const step = {id: "a9cf449complex27a", stepAnswer: ["$$\\left(14\\right)+\\left(7\\right) i$$"], problemType: "TextBox", stepTitle: "If $$y=x^2+\\left(3\\right) x+\\left(5\\right)$$, evaluate y given $$x=\\left(2\\right)+i$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

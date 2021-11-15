@@ -1,0 +1,1 @@
+import hints from "./a35b0d9quadratic24a-index.js"; const step = {id: "a35b0d9quadratic24a", stepAnswer: ["Maximum"], problemType: "MultipleChoice", stepTitle: "$$h(t)=-\\left(4\\right) t^2+\\left(6\\right) x-\\left(1\\right)$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

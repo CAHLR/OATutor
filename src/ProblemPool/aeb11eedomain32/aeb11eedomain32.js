@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain32-index.js"; const problem = {id: "aeb11eedomain32", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

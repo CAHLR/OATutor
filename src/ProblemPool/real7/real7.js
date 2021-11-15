@@ -1,1 +1,0 @@
-import steps from "./real7-index.js"; const problem = {id: "real7", title: "Combining Properties of Real Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

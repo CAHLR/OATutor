@@ -1,0 +1,1 @@
+import hints from "./a57f999ser3a-index.js"; const step = {id: "a57f999ser3a", stepAnswer: ["$$S_{13}=\\frac{\\left(13\\right) \\left(\\left(3.2\\right)+\\left(5.6\\right)\\right)}{2}$$"], problemType: "TextBox", stepTitle: "3.2+3.4+3.6+...+5.6", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

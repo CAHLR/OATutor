@@ -1,1 +1,1 @@
-import steps from "./Formula3-index.js"; const problem = {id: "Formula3", title: "Trinh's Distance", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./Formula3-index.js"; const problem = {id: "Formula3", title: "Trinh's Distance", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

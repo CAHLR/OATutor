@@ -1,0 +1,1 @@
+import hints from "./a7b98f9comp2b-index.js"; const step = {id: "a7b98f9comp2b", stepAnswer: ["$$-\\left(2\\right) x+\\left(2\\right)$$"], problemType: "TextBox", stepTitle: "Using the functions provided, find g(f(x)). $$f(x)=\\left(2\\right) x+\\left(1\\right)$$, $$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr2a-index.js"; const step = {id: "ab1ad7fGenStr2a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) \\left(x+\\left(3\\right)\\right)=35$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

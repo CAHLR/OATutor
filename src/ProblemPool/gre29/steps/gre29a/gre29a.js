@@ -1,1 +1,1 @@
-import hints from "./gre29a-index.js"; const step = {id: "gre29a", stepAnswer: ["$$\\left(7\\right) \\left(\\left(2\\right) p+\\left(5\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(14\\right) p+\\left(35\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./gre29a-index.js"; const step = {id: "gre29a", stepAnswer: ["$$7\\left(2p+5\\right)$$"], problemType: "TextBox", stepTitle: "$$14p+35$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

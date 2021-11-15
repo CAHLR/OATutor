@@ -1,0 +1,1 @@
+import steps from "./a6d0007exp18-index.js"; const problem = {id: "a6d0007exp18", title: "Converting Numbers into Scientific Notation", body: "Write each number in scientific notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

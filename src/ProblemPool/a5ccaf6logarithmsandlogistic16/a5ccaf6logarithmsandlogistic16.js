@@ -1,0 +1,1 @@
+import steps from "./a5ccaf6logarithmsandlogistic16-index.js"; const problem = {id: "a5ccaf6logarithmsandlogistic16", title: "Matching Graphs With Equations #5", body: "Match the given scatterplot with the function of best fit.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

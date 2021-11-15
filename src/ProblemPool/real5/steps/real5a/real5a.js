@@ -1,1 +1,0 @@
-import hints from "./real5a-index.js"; const step = {id: "real5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is $${\\left(\\left(3\\right) \\left(2\\right)\\right)}^2-4\\left(\\left(6\\right)+\\left(2\\right)\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

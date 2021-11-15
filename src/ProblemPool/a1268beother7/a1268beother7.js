@@ -1,0 +1,1 @@
+import steps from "./a1268beother7-index.js"; const problem = {id: "a1268beother7", title: "Solving a Polynomial by Factoring", body: "Solve the polynomial by factoring:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

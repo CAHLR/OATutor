@@ -1,1 +1,1 @@
-import hints from "./Multiply18a-index.js"; const step = {id: "Multiply18a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(52\\right)}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Multiply18a-index.js"; const step = {id: "Multiply18a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\frac{-52}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

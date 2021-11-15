@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals30a-index.js"; const step = {id: "a5b6f42rationals30a", stepAnswer: ["$$x+\\left(6\\right)$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x^2+\\left(5\\right) x+\\left(4\\right)}{x-\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

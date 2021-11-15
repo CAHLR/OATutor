@@ -1,1 +1,1 @@
-import steps from "./comp4-index.js"; const problem = {id: "comp4", title: "Investigating the Order of Function Composition", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./comp4-index.js"; const problem = {id: "comp4", title: "Investigating the Order of Function Composition", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

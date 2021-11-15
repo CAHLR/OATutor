@@ -1,0 +1,1 @@
+import steps from "./a9cf449complex10-index.js"; const problem = {id: "a9cf449complex10", title: "Adding and Subtracting Complex Numbers", body: "For the following exercises, perform the indicated operation and express the result as a simplified complex number.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a137dddgre28a-index.js"; const step = {id: "a137dddgre28a", stepAnswer: ["$$\\left(3\\right) \\left(\\left(2\\right) m+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) m+\\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

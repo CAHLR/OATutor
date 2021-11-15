@@ -1,0 +1,1 @@
+import hints from "./a1f74d6coordinates28b-index.js"; const step = {id: "a1f74d6coordinates28b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$y=\\left(-\\frac{\\left(2\\right) x}{3}\\right)-\\left(1\\right)$$", stepBody: "If $$x=3$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./binomseq1a-index.js"; const step = {id: "binomseq1a", stepAnswer: ["$$\\left(5857280\\right) x^7 y^9$$"], problemType: "TextBox", stepTitle: "$${\\left(x+\\left(2\\right) y\\right)}^{16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./binomseq1a-index.js"; const step = {id: "binomseq1a", stepAnswer: ["$$5857280x^7 y^9$$"], problemType: "TextBox", stepTitle: "$${\\left(x+2y\\right)}^{16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

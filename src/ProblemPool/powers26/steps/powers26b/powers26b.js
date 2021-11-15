@@ -1,1 +1,1 @@
-import hints from "./powers26b-index.js"; const step = {id: "powers26b", stepAnswer: ["$$-\\left(8\\right) c^{12} d^6$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(2\\right) c^4 d^2\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./powers26b-index.js"; const step = {id: "powers26b", stepAnswer: ["$$-8c^{12} d^6$$"], problemType: "TextBox", stepTitle: "$${\\left(-2c^4 d^2\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

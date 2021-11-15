@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals27a-index.js"; const step = {id: "a5b6f42rationals27a", stepAnswer: ["$$\\left(2\\right) x+\\left(4\\right)$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{\\left(4\\right) x^2-\\left(10\\right)}{\\left(2\\right) x-\\left(4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

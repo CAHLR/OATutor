@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota18-index.js"; const problem = {id: "af36e21FunNota18", title: "Evaluate the function $$f=\\frac{\\left(6\\right) x-\\left(1\\right)}{\\left(5\\right) x+\\left(2\\right)}$$ at the indicated values.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

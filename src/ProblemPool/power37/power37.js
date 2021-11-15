@@ -1,1 +1,1 @@
-import steps from "./power37-index.js"; const problem = {id: "power37", title: "Find the intercepts of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./power37-index.js"; const problem = {id: "power37", title: "Find the intercepts of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

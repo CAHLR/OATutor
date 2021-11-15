@@ -1,0 +1,1 @@
+import steps from "./aaa317eLinIneq9-index.js"; const problem = {id: "aaa317eLinIneq9", title: "Determining a Number within a Perscibed Distance", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

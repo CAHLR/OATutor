@@ -1,1 +1,1 @@
-import hints from "./abs4a-index.js"; const step = {id: "abs4a", stepAnswer: ["-5,1"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=-\\left(5\\right) |x+\\left(2\\right)|+\\left(15\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./abs4a-index.js"; const step = {id: "abs4a", stepAnswer: ["-5,1"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=-5|x+2|+15$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

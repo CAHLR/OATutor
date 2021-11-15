@@ -1,0 +1,1 @@
+import steps from "./a9ed39ahyperbola1-index.js"; const problem = {id: "a9ed39ahyperbola1", title: "", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

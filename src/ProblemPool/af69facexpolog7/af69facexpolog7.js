@@ -1,0 +1,1 @@
+import steps from "./af69facexpolog7-index.js"; const problem = {id: "af69facexpolog7", title: "Expressing an Exponential Model in Base e", body: "Changing to base e", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

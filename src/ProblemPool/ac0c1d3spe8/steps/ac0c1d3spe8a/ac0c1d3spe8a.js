@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe8a-index.js"; const step = {id: "ac0c1d3spe8a", stepAnswer: ["$$y^2-\\left(12\\right) y+\\left(36\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(y-\\left(6\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

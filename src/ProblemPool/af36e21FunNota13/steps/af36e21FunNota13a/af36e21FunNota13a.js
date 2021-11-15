@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota13a-index.js"; const step = {id: "af36e21FunNota13a", stepAnswer: ["$$y=\\frac{1}{2} x^{\\frac{1}{3}}$$"], problemType: "TextBox", stepTitle: "If $$x-\\left(8\\right) y^3=0$$, express y as a function of x.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

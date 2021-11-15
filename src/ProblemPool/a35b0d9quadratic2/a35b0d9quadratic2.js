@@ -1,0 +1,1 @@
+import steps from "./a35b0d9quadratic2-index.js"; const problem = {id: "a35b0d9quadratic2", title: "Writing the Equation of a Quadratic Function from the Graph", body: "Use the graph to answer the question.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

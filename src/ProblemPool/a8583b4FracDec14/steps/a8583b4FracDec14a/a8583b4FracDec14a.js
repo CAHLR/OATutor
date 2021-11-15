@@ -1,0 +1,1 @@
+import hints from "./a8583b4FracDec14a-index.js"; const step = {id: "a8583b4FracDec14a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{1}{2\\left(m-\\left(3\\right)\\right)}=\\frac{1}{4\\left(m-\\left(7\\right)\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

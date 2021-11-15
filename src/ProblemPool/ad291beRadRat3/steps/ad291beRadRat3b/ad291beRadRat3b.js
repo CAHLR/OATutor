@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat3b-index.js"; const step = {id: "ad291beRadRat3b", stepAnswer: ["$$9\\left(a^2\\right) b^2 \\sqrt{\\left(2\\right) a}$$"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{\\left(162\\right) a^5 b^4}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

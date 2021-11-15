@@ -1,0 +1,1 @@
+import steps from "./a9c142dVarCon12-index.js"; const problem = {id: "a9c142dVarCon12", title: "Solve the equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

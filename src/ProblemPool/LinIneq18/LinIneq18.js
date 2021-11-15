@@ -1,1 +1,1 @@
-import steps from "./LinIneq18-index.js"; const problem = {id: "LinIneq18", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./LinIneq18-index.js"; const problem = {id: "LinIneq18", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

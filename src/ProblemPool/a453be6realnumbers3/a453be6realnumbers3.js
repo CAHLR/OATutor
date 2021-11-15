@@ -1,0 +1,1 @@
+import steps from "./a453be6realnumbers3-index.js"; const problem = {id: "a453be6realnumbers3", title: "Calculating Square Roots #3", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

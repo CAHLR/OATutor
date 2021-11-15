@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe1a-index.js"; const step = {id: "a3c25cbexe1a", stepAnswer: ["$$\\left(u+\\left(100\\right)\\right) \\left(u+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$u^2+\\left(101\\right) u+\\left(100\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

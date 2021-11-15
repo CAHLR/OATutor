@@ -1,1 +1,1 @@
-import hints from "./LinIneq4a-index.js"; const step = {id: "LinIneq4a", stepAnswer: ["$$x<2$$"], problemType: "MultipleChoice", stepTitle: "$$\\left(3\\right) x<6$$", stepBody: "", choices: ["$$x<18$$", "$$x<2$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./LinIneq4a-index.js"; const step = {id: "LinIneq4a", stepAnswer: ["$$x<2$$"], problemType: "MultipleChoice", stepTitle: "$$3x<6$$", stepBody: "", choices: ["$$x<18$$", "$$x<2$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

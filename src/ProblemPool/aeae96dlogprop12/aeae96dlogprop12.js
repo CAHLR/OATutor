@@ -1,0 +1,1 @@
+import steps from "./aeae96dlogprop12-index.js"; const problem = {id: "aeae96dlogprop12", title: "Expanding Complex Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

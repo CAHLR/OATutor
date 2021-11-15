@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts18a-index.js"; const step = {id: "aafbadeintercepts18a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$x+y=-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

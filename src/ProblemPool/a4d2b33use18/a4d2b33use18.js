@@ -1,0 +1,1 @@
+import steps from "./a4d2b33use18-index.js"; const problem = {id: "a4d2b33use18", title: "Identifying Terms", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

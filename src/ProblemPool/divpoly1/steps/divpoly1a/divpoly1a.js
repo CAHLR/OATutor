@@ -1,1 +1,1 @@
-import hints from "./divpoly1a-index.js"; const step = {id: "divpoly1a", stepAnswer: ["5x-2"], problemType: "TextBox", stepTitle: "Divide $$\\left(5\\right) x^2+\\left(3\\right) x-\\left(2\\right)$$ by $$x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./divpoly1a-index.js"; const step = {id: "divpoly1a", stepAnswer: ["5x-2"], problemType: "TextBox", stepTitle: "Divide $$5x^2+3x-2$$ by $$x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

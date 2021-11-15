@@ -1,0 +1,1 @@
+import hints from "./a8583b4FracDec24a-index.js"; const step = {id: "a8583b4FracDec24a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Solve: $$\\left(2.1\\right) k+\\left(3\\right)=7.2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

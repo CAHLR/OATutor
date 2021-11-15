@@ -1,1 +1,1 @@
-import steps from "./RadRat10-index.js"; const problem = {id: "RadRat10", title: "Addition of Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./RadRat10-index.js"; const problem = {id: "RadRat10", title: "Addition of Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

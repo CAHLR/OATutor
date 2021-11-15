@@ -1,0 +1,1 @@
+import steps from "./ab50a95log21-index.js"; const problem = {id: "ab50a95log21", title: "Rewriting Equations in Exponential Form: Exercise #5", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

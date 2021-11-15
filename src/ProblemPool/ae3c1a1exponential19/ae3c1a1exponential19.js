@@ -1,0 +1,1 @@
+import steps from "./ae3c1a1exponential19-index.js"; const problem = {id: "ae3c1a1exponential19", title: "Calculating Continuous Decay", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

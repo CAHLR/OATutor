@@ -1,1 +1,1 @@
-import steps from "./geometric5-index.js"; const problem = {id: "geometric5", title: "Writing the Terms of a Geometric Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./geometric5-index.js"; const problem = {id: "geometric5", title: "Writing the Terms of a Geometric Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ab3c11fVisualize9-index.js"; const problem = {id: "ab3c11fVisualize9", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ab50a95log15-index.js"; const problem = {id: "ab50a95log15", title: "Evaluating a Natural Logarithm Using a Calculator", body: "Use a calculator to find the value of the expression to four decimal places.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

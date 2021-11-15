@@ -1,0 +1,1 @@
+import hints from "./a833c22linear9a-index.js"; const step = {id: "a833c22linear9a", stepAnswer: ["Decreasing"], problemType: "MultipleChoice", stepTitle: "$$m(x)=\\frac{-\\left(3\\right)}{8} x+\\left(3\\right)$$", stepBody: "", choices: ["Increasing", "Decreasing"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./FunNota7a-index.js"; const step = {id: "FunNota7a", stepAnswer: ["24"], problemType: "TextBox", stepTitle: "Given the function $$h(p)=p^2+\\left(2\\right) p$$, evaluate h(4).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./FunNota7a-index.js"; const step = {id: "FunNota7a", stepAnswer: ["24"], problemType: "TextBox", stepTitle: "Given the function $$h(p)=p^2+2p$$, evaluate h(4).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

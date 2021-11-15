@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr7a-index.js"; const step = {id: "ab1ad7fGenStr7a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) \\left(a-\\left(3\\right)\\right)+\\left(5\\right)=-10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

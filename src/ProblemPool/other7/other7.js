@@ -1,1 +1,1 @@
-import steps from "./other7-index.js"; const problem = {id: "other7", title: "Solving a Polynomial by Factoring", body: "Solve the polynomial by factoring:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./other7-index.js"; const problem = {id: "other7", title: "Solving a Polynomial by Factoring", body: "Solve the polynomial by factoring:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

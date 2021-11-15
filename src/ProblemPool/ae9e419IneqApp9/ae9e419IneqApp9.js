@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp9-index.js"; const problem = {id: "ae9e419IneqApp9", title: "Christian's Sales", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a9f55eblinearmodels20a-index.js"; const step = {id: "a9f55eblinearmodels20a", stepAnswer: ["162"], problemType: "TextBox", stepTitle: "What is the area?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

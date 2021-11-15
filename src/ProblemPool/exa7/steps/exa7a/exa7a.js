@@ -1,1 +1,1 @@
-import hints from "./exa7a-index.js"; const step = {id: "exa7a", stepAnswer: ["$$\\left(14\\right) x^2+\\left(7\\right) xy$$"], problemType: "TextBox", stepTitle: "$$\\left(7\\right) x\\left(\\left(2\\right) x+y\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exa7a-index.js"; const step = {id: "exa7a", stepAnswer: ["$$14x^2+7xy$$"], problemType: "TextBox", stepTitle: "$$7x\\left(2x+y\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

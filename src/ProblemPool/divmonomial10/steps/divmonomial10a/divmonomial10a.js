@@ -1,1 +1,1 @@
-import hints from "./divmonomial10a-index.js"; const step = {id: "divmonomial10a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(9\\right)}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./divmonomial10a-index.js"; const step = {id: "divmonomial10a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$9^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

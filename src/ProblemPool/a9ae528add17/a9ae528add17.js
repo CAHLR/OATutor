@@ -1,1 +1,1 @@
-import steps from "./a9ae528add17-index.js"; const problem = {id: "a9ae528add17", title: "Find:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./a9ae528add17-index.js"; const problem = {id: "a9ae528add17", title: "Find:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

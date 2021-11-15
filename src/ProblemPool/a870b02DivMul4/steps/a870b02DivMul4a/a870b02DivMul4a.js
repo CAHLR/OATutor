@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul4a-index.js"; const step = {id: "a870b02DivMul4a", stepAnswer: ["98"], problemType: "TextBox", stepTitle: "$$\\frac{y}{\\left(-7\\right)}=-14$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a35ba99cou12a-index.js"; const step = {id: "a35ba99cou12a", stepAnswer: ["79833600"], problemType: "TextBox", stepTitle: "A professor is creating an exam of 9 questions from a test bank of 12 questions. How many ways can she select and arrange the questions?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

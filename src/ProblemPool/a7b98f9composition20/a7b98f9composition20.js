@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition20-index.js"; const problem = {id: "a7b98f9composition20", title: "Composition of Functions with Square Roots", body: "Given $$f(x)=\\left(3\\right) x^2$$ and $$g(x)=\\sqrt{x-\\left(5\\right)}$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

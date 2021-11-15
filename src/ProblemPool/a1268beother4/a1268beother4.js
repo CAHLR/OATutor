@@ -1,0 +1,1 @@
+import steps from "./a1268beother4-index.js"; const problem = {id: "a1268beother4", title: "Evaluating a Number Raised to a Rational Exponent", body: "Evaluate the expression", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

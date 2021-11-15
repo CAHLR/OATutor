@@ -1,1 +1,0 @@
-import steps from "./real3-index.js"; const problem = {id: "real3", title: "Sets of Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

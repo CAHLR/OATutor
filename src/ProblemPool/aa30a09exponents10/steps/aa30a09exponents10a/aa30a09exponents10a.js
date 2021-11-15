@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents10a-index.js"; const step = {id: "aa30a09exponents10a", stepAnswer: ["$$\\frac{1}{\\left(16\\right) x^8}$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(4\\right) x^4\\right)}^{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

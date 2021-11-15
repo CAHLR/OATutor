@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp12b-index.js"; const step = {id: "a6d0007exp12b", stepAnswer: ["$$\\frac{1}{25}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(25\\right)}^{12}}{{\\left(25\\right)}^{13}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

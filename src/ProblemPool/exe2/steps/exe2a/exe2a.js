@@ -1,1 +1,1 @@
-import hints from "./exe2a-index.js"; const step = {id: "exe2a", stepAnswer: ["(x-2)(x-6)"], problemType: "TextBox", stepTitle: "$$x^2-\\left(8\\right) x+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exe2a-index.js"; const step = {id: "exe2a", stepAnswer: ["(x-2)(x-6)"], problemType: "TextBox", stepTitle: "$$x^2-8x+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

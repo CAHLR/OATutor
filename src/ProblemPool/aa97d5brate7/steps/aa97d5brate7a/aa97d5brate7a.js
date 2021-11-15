@@ -1,0 +1,1 @@
+import hints from "./aa97d5brate7a-index.js"; const step = {id: "aa97d5brate7a", stepAnswer: ["$$\\left(9\\right)+\\left(9\\right) h+\\left(3\\right) h^2$$"], problemType: "TextBox", stepTitle: "$$j(x)=\\left(3\\right) x^3$$ on $$[1,\\left(1\\right)+h]$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

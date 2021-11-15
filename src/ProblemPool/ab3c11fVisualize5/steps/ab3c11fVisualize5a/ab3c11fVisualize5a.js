@@ -1,0 +1,1 @@
+import hints from "./ab3c11fVisualize5a-index.js"; const step = {id: "ab3c11fVisualize5a", stepAnswer: ["$$\\frac{x}{y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(5\\right) x}{\\left(5\\right) y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

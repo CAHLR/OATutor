@@ -1,0 +1,1 @@
+import steps from "./a4d2b33use23-index.js"; const problem = {id: "a4d2b33use23", title: "Simplifying Expressions", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

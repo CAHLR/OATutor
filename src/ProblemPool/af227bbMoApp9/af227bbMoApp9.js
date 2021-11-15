@@ -1,0 +1,1 @@
+import steps from "./af227bbMoApp9-index.js"; const problem = {id: "af227bbMoApp9", title: "Solving a Perimeter Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

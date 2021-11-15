@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp4a-index.js"; const step = {id: "a6d0007exp4a", stepAnswer: ["$$s^7$$"], problemType: "TextBox", stepTitle: "$$\\frac{s^{75}}{s^{68}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aafc2dcMultiply16a-index.js"; const step = {id: "aafc2dcMultiply16a", stepAnswer: ["-32"], problemType: "TextBox", stepTitle: "$$-\\left(4\\right) \\left(8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

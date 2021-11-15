@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use35a-index.js"; const step = {id: "a4d2b33use35a", stepAnswer: ["86"], problemType: "TextBox", stepTitle: "$$\\left(9\\right)+{\\left(5\\right)}^3-4\\left(\\left(9\\right)+\\left(3\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

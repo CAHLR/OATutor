@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp2c-index.js"; const step = {id: "a6d0007exp2c", stepAnswer: ["$$t^{14}$$"], problemType: "TextBox", stepTitle: "$$t^3 t^6 t^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

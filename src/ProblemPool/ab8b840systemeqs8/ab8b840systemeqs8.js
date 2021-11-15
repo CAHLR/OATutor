@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeqs8-index.js"; const problem = {id: "ab8b840systemeqs8", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (-6,1) is a solution to the system of equations: $$-3x-5y=13$$, $$-x+\\left(4\\right) y=10$$", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a9cf449complex21-index.js"; const problem = {id: "a9cf449complex21", title: "Simplifying Powers of i", body: "Perform the indicated operation and express the result as a simplified complex number.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

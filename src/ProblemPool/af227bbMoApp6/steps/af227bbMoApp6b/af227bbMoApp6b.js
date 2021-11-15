@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp6b-index.js"; const step = {id: "af227bbMoApp6b", stepAnswer: ["$$\\left(0.1\\right) x+\\left(5\\right)$$"], problemType: "TextBox", stepTitle: "Find the model of the total cost of Company B's plan, using x for the minutes", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

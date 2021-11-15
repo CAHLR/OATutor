@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition22b-index.js"; const step = {id: "a7b98f9composition22b", stepAnswer: ["$$\\left(6\\right) x^2-\\left(2\\right)$$"], problemType: "TextBox", stepTitle: "g(f(x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

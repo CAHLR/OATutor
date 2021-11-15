@@ -1,1 +1,1 @@
-import steps from "./DivMul3-index.js"; const problem = {id: "DivMul3", title: "Solve Equations Using the Division Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./DivMul3-index.js"; const problem = {id: "DivMul3", title: "Solve Equations Using the Division Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

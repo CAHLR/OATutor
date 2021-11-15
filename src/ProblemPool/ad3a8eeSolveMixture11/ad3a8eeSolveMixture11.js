@@ -1,0 +1,1 @@
+import steps from "./ad3a8eeSolveMixture11-index.js"; const problem = {id: "ad3a8eeSolveMixture11", title: "Sumanta's Nickels and Dimes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

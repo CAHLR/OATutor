@@ -1,0 +1,1 @@
+import hints from "./a9981ababs13b-index.js"; const step = {id: "a9981ababs13b", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x|-\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

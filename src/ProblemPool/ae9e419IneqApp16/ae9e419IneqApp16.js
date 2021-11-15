@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp16-index.js"; const problem = {id: "ae9e419IneqApp16", title: "Jake's Water Bill", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

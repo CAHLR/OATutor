@@ -1,1 +1,1 @@
-import steps from "./probsolve4-index.js"; const problem = {id: "probsolve4", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./probsolve4-index.js"; const problem = {id: "probsolve4", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

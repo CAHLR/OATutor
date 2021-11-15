@@ -1,0 +1,1 @@
+import hints from "./a104861trifactor12a-index.js"; const step = {id: "a104861trifactor12a", stepAnswer: ["$${\\left(\\left(4\\right) y+\\left(3\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(16\\right) y^2+\\left(24\\right) y+\\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

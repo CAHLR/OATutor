@@ -1,0 +1,1 @@
+import hints from "./a75d03cRecCord3b-index.js"; const step = {id: "a75d03cRecCord3b", stepAnswer: ["(0,6)"], problemType: "TextBox", stepTitle: "What is the y-intercept?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a61c721rational12a-index.js"; const step = {id: "a61c721rational12a", stepAnswer: ["$$\\frac{a+\\left(3\\right)}{a-\\left(3\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{a^2+\\left(9\\right) a+\\left(18\\right)}{a^2+\\left(3\\right) a-\\left(18\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

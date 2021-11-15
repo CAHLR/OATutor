@@ -1,0 +1,1 @@
+import hints from "./af69facexpolog19a-index.js"; const step = {id: "af69facexpolog19a", stepAnswer: ["@{numerator}"], problemType: "TextBox", stepTitle: "What is the carrying capacity?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {numerator: ["000", "2000", "3000", "400"]}}; export {step};

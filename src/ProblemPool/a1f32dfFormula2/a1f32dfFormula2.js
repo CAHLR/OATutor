@@ -1,0 +1,1 @@
+import steps from "./a1f32dfFormula2-index.js"; const problem = {id: "a1f32dfFormula2", title: "Lindsay's Distance", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

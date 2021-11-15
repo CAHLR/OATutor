@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua5a-index.js"; const step = {id: "a2d8720LinEqua5a", stepAnswer: ["$$x=2$$"], problemType: "TextBox", stepTitle: "$$4x-3=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

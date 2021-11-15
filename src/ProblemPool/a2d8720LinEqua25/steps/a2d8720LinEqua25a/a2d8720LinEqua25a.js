@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua25a-index.js"; const step = {id: "a2d8720LinEqua25a", stepAnswer: ["$$y=2$$"], problemType: "TextBox", stepTitle: "Find the equation of the line passing through the given points: (-5,2) and (2,2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

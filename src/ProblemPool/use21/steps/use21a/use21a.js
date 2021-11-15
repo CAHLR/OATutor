@@ -1,1 +1,1 @@
-import hints from "./use21a-index.js"; const step = {id: "use21a", stepAnswer: ["81"], problemType: "TextBox", stepTitle: "$${\\left(3\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use21a-index.js"; const step = {id: "use21a", stepAnswer: ["81"], problemType: "TextBox", stepTitle: "$$3^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

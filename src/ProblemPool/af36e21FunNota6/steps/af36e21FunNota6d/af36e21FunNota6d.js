@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota6d-index.js"; const step = {id: "af36e21FunNota6d", stepAnswer: ["$$\\left(2\\right) a+h+\\left(3\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{f{\\left(a+h\\right)}-f{\\left(a\\right)}}{h}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

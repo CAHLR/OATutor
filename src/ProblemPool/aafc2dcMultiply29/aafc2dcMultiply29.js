@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply29-index.js"; const problem = {id: "aafc2dcMultiply29", title: "Divide Integers", body: "Divide:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

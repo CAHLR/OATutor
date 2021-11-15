@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply14-index.js"; const problem = {id: "aafc2dcMultiply14", title: "How to Apply a Strategy to Solve Applications with Integers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

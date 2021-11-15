@@ -1,1 +1,1 @@
-import steps from "./quadratic10-index.js"; const problem = {id: "quadratic10", title: "Domain and Range of a Quadratic Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./quadratic10-index.js"; const problem = {id: "quadratic10", title: "Domain and Range of a Quadratic Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a5c2168rotation18-index.js"; const problem = {id: "a5c2168rotation18", title: "Rotation of Axes", body: "$$\\left(9\\right) x^2-\\left(3\\right) \\sqrt{3} xy+\\left(6\\right) y^2+\\left(4\\right) y-\\left(3\\right)=0$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

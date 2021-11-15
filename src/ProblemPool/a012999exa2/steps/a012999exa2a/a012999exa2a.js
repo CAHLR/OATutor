@@ -1,0 +1,1 @@
+import hints from "./a012999exa2a-index.js"; const step = {id: "a012999exa2a", stepAnswer: ["$$\\left(5\\right) x+\\left(35\\right)$$"], problemType: "TextBox", stepTitle: "$$5\\left(x+\\left(7\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

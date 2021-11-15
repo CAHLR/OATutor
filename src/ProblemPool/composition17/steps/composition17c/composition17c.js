@@ -1,1 +1,1 @@
-import hints from "./composition17c-index.js"; const step = {id: "composition17c", stepAnswer: ["$$-\\left(15\\right) x^2+\\left(5\\right) x$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./composition17c-index.js"; const step = {id: "composition17c", stepAnswer: ["$$-15x^2+5x$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex25b-index.js"; const step = {id: "a9cf449complex25b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Evaluate $$i^{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

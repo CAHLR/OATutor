@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula29a-index.js"; const step = {id: "a1f32dfFormula29a", stepAnswer: ["$$d=\\frac{C}{\\pi}$$"], problemType: "MultipleChoice", stepTitle: "Solve the formula $$C=\\pi d$$ for d", stepBody: "", choices: ["$$d=\\frac{C}{\\pi}$$", "$$d=C \\pi$$", "$$d=\\frac{\\pi}{C}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

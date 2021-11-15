@@ -1,1 +1,1 @@
-import steps from "./divmonomial19-index.js"; const problem = {id: "divmonomial19", title: "Simplifying Expressions with an Exponent of Zero", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./divmonomial19-index.js"; const problem = {id: "divmonomial19", title: "Simplifying Expressions with an Exponent of Zero", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

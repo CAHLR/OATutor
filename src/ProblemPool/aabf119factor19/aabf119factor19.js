@@ -1,0 +1,1 @@
+import steps from "./aabf119factor19-index.js"; const problem = {id: "aabf119factor19", title: "Factoring Polynomials", body: "Factor by grouping.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

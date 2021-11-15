@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition24b-index.js"; const step = {id: "a7b98f9composition24b", stepAnswer: ["$$x+4\\left(\\sqrt{x}\\right)+\\left(7\\right)$$"], problemType: "TextBox", stepTitle: "g(f(x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

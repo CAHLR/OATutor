@@ -1,0 +1,1 @@
+import steps from "./af69facexpolog5-index.js"; const problem = {id: "af69facexpolog5", title: "Modeling Exponential Growth and Decay", body: "According to Moore’s Law, the doubling time for the number of transistors that can be put on a computer chip is approximately two years.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

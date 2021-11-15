@@ -1,1 +1,1 @@
-import hints from "./Properties7a-index.js"; const step = {id: "Properties7a", stepAnswer: ["$$\\frac{-\\left(2\\right)}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Properties7a-index.js"; const step = {id: "Properties7a", stepAnswer: ["$$\\frac{-2}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

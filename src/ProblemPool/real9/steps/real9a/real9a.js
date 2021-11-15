@@ -1,1 +1,0 @@
-import hints from "./real9a-index.js"; const step = {id: "real9a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Solve $$x+\\left(5\\right)$$ for $$x=-5$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

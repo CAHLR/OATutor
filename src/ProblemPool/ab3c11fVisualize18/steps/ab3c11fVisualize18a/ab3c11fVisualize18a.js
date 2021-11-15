@@ -1,0 +1,1 @@
+import hints from "./ab3c11fVisualize18a-index.js"; const step = {id: "ab3c11fVisualize18a", stepAnswer: ["$$\\frac{-\\left(3\\right)}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(6\\right)-3\\left(5\\right)}{{\\left(3\\right)}^2+\\left(3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

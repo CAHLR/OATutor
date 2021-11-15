@@ -1,0 +1,1 @@
+import hints from "./a137dddgre12a-index.js"; const step = {id: "a137dddgre12a", stepAnswer: ["$$\\left(7\\right) b$$"], problemType: "TextBox", stepTitle: "$$\\left(21\\right) b^2$$, $$\\left(14\\right) b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

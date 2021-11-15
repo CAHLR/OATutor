@@ -1,0 +1,1 @@
+import steps from "./a5c2168rotation13-index.js"; const problem = {id: "a5c2168rotation13", title: "Rotation of Axes", body: "$$\\left(4\\right) x^2-xy+\\left(4\\right) y^2-\\left(2\\right)=0$$, $$\\theta=45\\degree$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

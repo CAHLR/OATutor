@@ -1,0 +1,1 @@
+import steps from "./a6d0007exp22-index.js"; const problem = {id: "a6d0007exp22", title: "Thickness of a Dime", body: "A dime is the thinnest coin in U.S. currency. A dime’s thickness measures $$\\left(1.35\\right) {\\left(10\\right)}^{-\\left(3\\right)}$$ m.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

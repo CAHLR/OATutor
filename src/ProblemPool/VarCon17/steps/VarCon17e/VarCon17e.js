@@ -1,1 +1,1 @@
-import hints from "./VarCon17e-index.js"; const step = {id: "VarCon17e", stepAnswer: ["$$\\frac{-\\left(3\\right)}{4}$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x+\\frac{3}{4}=3x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon17e-index.js"; const step = {id: "VarCon17e", stepAnswer: ["$$\\frac{-3}{4}$$"], problemType: "TextBox", stepTitle: "$$4x+\\frac{3}{4}=3x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

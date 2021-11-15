@@ -1,1 +1,1 @@
-import steps from "./powers9-index.js"; const problem = {id: "powers9", title: "Simplify Expressions Using Power Properties of Exponents", body: "Simplify the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./powers9-index.js"; const problem = {id: "powers9", title: "Simplify Expressions Using Power Properties of Exponents", body: "Simplify the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

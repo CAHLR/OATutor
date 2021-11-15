@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeqs12-index.js"; const problem = {id: "ab8b840systemeqs12", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$x+\\left(3\\right) y=5$$, $$\\left(2\\right) x+\\left(3\\right) y=4$$", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

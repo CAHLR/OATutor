@@ -1,0 +1,1 @@
+import steps from "./aabf119factor5-index.js"; const problem = {id: "aabf119factor5", title: "Factoring a Trionomial by Grouping.", body: "Factor the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

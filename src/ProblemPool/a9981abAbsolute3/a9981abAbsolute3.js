@@ -1,0 +1,1 @@
+import steps from "./a9981abAbsolute3-index.js"; const problem = {id: "a9981abAbsolute3", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=-|x-\\left(1\\right)|-\\left(3\\right)$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

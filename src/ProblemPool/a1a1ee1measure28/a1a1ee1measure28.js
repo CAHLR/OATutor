@@ -1,0 +1,1 @@
+import steps from "./a1a1ee1measure28-index.js"; const problem = {id: "a1a1ee1measure28", title: "In the following exercises, make the unit conversions. Round to the nearest tenth.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

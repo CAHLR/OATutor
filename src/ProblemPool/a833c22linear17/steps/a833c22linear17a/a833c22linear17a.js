@@ -1,0 +1,1 @@
+import hints from "./a833c22linear17a-index.js"; const step = {id: "a833c22linear17a", stepAnswer: ["$$y=3x-9$$"], problemType: "TextBox", stepTitle: "Find a line parallel to the graph of $$f(x)=\\left(3\\right) x+\\left(6\\right)$$ given that the line passes through the point (3,0)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

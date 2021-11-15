@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat2c-index.js"; const step = {id: "ad291beRadRat2c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{\\left(25\\right)-\\left(9\\right)}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition19a-index.js"; const step = {id: "a7b98f9composition19a", stepAnswer: ["$$\\frac{2}{\\left(x-\\left(4\\right)\\right) \\left(\\left(6\\right)-x\\right)}$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae05e04inverse19a-index.js"; const step = {id: "ae05e04inverse19a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$f(x)={\\left(x-\\left(1\\right)\\right)}^3$$, $$g(x)=\\sqrt[3]{ x}+\\left(1\\right)$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

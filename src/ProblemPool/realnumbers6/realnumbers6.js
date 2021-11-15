@@ -1,1 +1,1 @@
-import steps from "./realnumbers6-index.js"; const problem = {id: "realnumbers6", title: "Calculating Opposites of Square Roots #3", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./realnumbers6-index.js"; const problem = {id: "realnumbers6", title: "Calculating Opposites of Square Roots #3", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

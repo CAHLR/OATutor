@@ -1,0 +1,1 @@
+import steps from "./a4d2b33use3-index.js"; const problem = {id: "a4d2b33use3", title: "Evaluating Expressions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

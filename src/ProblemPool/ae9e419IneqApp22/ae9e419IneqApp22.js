@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp22-index.js"; const problem = {id: "ae9e419IneqApp22", title: "Picking College Classes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral8a-index.js"; const step = {id: "add2dfegeneral8a", stepAnswer: ["$$3\\left(n+\\left(4\\right)\\right) \\left(n+\\left(6\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) n^2+\\left(30\\right) n+\\left(72\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
