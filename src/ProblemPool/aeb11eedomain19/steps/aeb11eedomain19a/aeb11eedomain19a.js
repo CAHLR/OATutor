@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain19a-index.js"; const step = {id: "aeb11eedomain19a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=-2x(x-1)(x-2)$$", stepBody: "", choices: ["$$(-\\infty,0)$$", "$$(0,\\infty)$$", "$$(-\\infty,1]$$", "$$(-\\infty,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

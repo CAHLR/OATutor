@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota19-index.js"; const problem = {id: "af36e21FunNota19", title: "Evaluate the function $$f=|x-\\left(1\\right)|-|x+\\left(1\\right)|$$ at the indicated values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

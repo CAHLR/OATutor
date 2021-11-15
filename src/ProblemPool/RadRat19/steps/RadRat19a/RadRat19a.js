@@ -1,1 +1,1 @@
-import hints from "./RadRat19a-index.js"; const step = {id: "RadRat19a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is $$\\sqrt[3]{ 64}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./RadRat19a-index.js"; const step = {id: "RadRat19a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{3, 64}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

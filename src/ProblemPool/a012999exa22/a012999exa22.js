@@ -1,0 +1,1 @@
+import steps from "./a012999exa22-index.js"; const problem = {id: "a012999exa22", title: "Multiply a Polynomial by a Monomial", body: "Multiply:", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

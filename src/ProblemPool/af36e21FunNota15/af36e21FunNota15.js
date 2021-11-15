@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota15-index.js"; const problem = {id: "af36e21FunNota15", title: "Evaluate the function $$f(x)=2x-5$$ at the indicated values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

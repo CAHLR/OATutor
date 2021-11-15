@@ -1,1 +1,1 @@
-import hints from "./graphlog10a-index.js"; const step = {id: "graphlog10a", stepAnswer: ["$$x=\\frac{-\\left(1\\right)}{3}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./graphlog10a-index.js"; const step = {id: "graphlog10a", stepAnswer: ["$$x=\\frac{-1}{3}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

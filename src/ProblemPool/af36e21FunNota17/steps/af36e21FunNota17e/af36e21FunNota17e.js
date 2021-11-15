@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota17e-index.js"; const step = {id: "af36e21FunNota17e", stepAnswer: ["$$\\sqrt{\\left(2\\right)-a-h}+\\left(5\\right)$$"], problemType: "TextBox", stepTitle: "$$f{\\left(a+h\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

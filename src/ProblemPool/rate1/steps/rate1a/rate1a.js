@@ -1,1 +1,1 @@
-import hints from "./rate1a-index.js"; const step = {id: "rate1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$p(x)=\\left(3\\right) x+\\left(4\\right)$$ on $$[2,\\left(2\\right)+h]$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./rate1a-index.js"; const step = {id: "rate1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$p(x)=3x+4$$ on $$[2,2+h]$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

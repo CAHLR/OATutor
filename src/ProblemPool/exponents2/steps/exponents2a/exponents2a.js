@@ -1,1 +1,1 @@
-import hints from "./exponents2a-index.js"; const step = {id: "exponents2a", stepAnswer: ["$$\\frac{1}{1000}$$"], problemType: "TextBox", stepTitle: "$${\\left(10\\right)}^{\\left(-3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents2a-index.js"; const step = {id: "exponents2a", stepAnswer: ["$$\\frac{1}{1000}$$"], problemType: "TextBox", stepTitle: "$${10}^{\\left(-3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

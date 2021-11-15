@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25g-index.js"; const step = {id: "ab1ad7fGenStr25g", stepAnswer: ["$$\\frac{3}{2}$$"], problemType: "TextBox", stepTitle: "$$-\\left(6\\right)+\\left(6\\right) \\left(\\left(5\\right)-k\\right)=15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

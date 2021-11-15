@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents15a-index.js"; const step = {id: "aa30a09exponents15a", stepAnswer: ["$$\\left(7.8\\right) {\\left(10\\right)}^{\\left(-3\\right)}$$"], problemType: "TextBox", stepTitle: "0.0078", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

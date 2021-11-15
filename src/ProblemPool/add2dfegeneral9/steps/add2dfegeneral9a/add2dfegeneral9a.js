@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral9a-index.js"; const step = {id: "add2dfegeneral9a", stepAnswer: ["$$3\\left(x-\\left(3\\right)\\right) \\left(x^2+\\left(3\\right) x+\\left(9\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) x^3-\\left(81\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

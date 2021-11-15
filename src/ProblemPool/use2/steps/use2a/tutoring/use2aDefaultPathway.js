@@ -1,1 +1,1 @@
-var hints = [{id: "use2a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 4 for x and simplify the expression $${\\left(4\\right)}^2$$.", variabilization: {}}, ]; export {hints};
+var hints = [{id: "use2a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 4 for x and simplify the expression $$4^2$$.", variabilization: {}}, ]; export {hints};

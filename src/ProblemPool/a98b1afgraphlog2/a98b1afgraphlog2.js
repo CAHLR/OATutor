@@ -1,0 +1,1 @@
+import steps from "./a98b1afgraphlog2-index.js"; const problem = {id: "a98b1afgraphlog2", title: "Identifying the Domain of a Logarithmic Shift", body: "What is the domain for $$f(x)=\\log(\\left(5\\right)-\\left(2\\right) x)$$?", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

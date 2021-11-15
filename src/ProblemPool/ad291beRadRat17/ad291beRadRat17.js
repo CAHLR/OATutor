@@ -1,0 +1,1 @@
+import steps from "./ad291beRadRat17-index.js"; const problem = {id: "ad291beRadRat17", title: "Writing Rational Exponents as Radicals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

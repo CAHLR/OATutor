@@ -1,0 +1,1 @@
+import steps from "./aaa317eLinIneq16-index.js"; const problem = {id: "aaa317eLinIneq16", title: "Using Interval Notation to Express All Real Numbers Between a and b, Including a and b", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

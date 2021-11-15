@@ -1,0 +1,1 @@
+import steps from "./a98b1afgraphlog6-index.js"; const problem = {id: "a98b1afgraphlog6", title: "Domain and range of log functions", body: "What is the domain and range of $$h(x)=\\ln(\\left(4\\right) x+\\left(17\\right))-\\left(5\\right)$$?", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

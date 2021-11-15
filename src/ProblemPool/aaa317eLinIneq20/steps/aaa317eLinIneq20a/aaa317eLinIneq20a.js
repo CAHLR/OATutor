@@ -1,0 +1,1 @@
+import hints from "./aaa317eLinIneq20a-index.js"; const step = {id: "aaa317eLinIneq20a", stepAnswer: ["(2,inf)"], problemType: "TextBox", stepTitle: "$$-x+\\left(4\\right)<\\frac{1}{2} x+\\left(1\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

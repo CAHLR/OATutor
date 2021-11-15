@@ -1,0 +1,1 @@
+import hints from "./a5c95e8polyzero26a-index.js"; const step = {id: "a5c95e8polyzero26a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "Use the Remainder Theorem to evaluate $$f(x)=\\left(6\\right) x^4-x^3-\\left(15\\right) x^2+\\left(2\\right) x-\\left(7\\right)$$ at $$x=2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

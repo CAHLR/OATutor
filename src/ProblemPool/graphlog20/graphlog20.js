@@ -1,1 +1,1 @@
-import steps from "./graphlog20-index.js"; const problem = {id: "graphlog20", title: "Finding the x and y intercepts of log functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./graphlog20-index.js"; const problem = {id: "graphlog20", title: "Finding the x and y intercepts of log functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

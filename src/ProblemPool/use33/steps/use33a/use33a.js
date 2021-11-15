@@ -1,1 +1,1 @@
-import hints from "./use33a-index.js"; const step = {id: "use33a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$\\frac{30}{5}+\\operatorname{10}\\left(\\left(3\\right)-\\left(2\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use33a-index.js"; const step = {id: "use33a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$\\frac{30}{5}+\\operatorname{10}\\left(3-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

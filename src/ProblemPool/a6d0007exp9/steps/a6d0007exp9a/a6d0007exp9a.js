@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp9a-index.js"; const step = {id: "a6d0007exp9a", stepAnswer: ["$$\\frac{1}{{\\theta}^7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\theta}^3}{{\\theta}^{10}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

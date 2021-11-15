@@ -1,0 +1,1 @@
+import steps from "./a08a388line27-index.js"; const problem = {id: "a08a388line27", title: "Finding Equations of Parallel Lines", body: "Find the equation of the line parallel to the given line.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

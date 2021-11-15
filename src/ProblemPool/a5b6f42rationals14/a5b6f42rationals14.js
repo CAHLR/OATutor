@@ -1,0 +1,1 @@
+import steps from "./a5b6f42rationals14-index.js"; const problem = {id: "a5b6f42rationals14", title: "Identifying Vertical Asymptotes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

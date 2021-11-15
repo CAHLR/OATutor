@@ -1,0 +1,1 @@
+import hints from "./a28448cslope25a-index.js"; const step = {id: "a28448cslope25a", stepAnswer: ["Perpendicular"], problemType: "MultipleChoice", stepTitle: "$$x-\\left(4\\right) y=8$$, $$\\left(4\\right) x+y=2$$", stepBody: "", choices: ["Perpendicular", "Not Perpendicular"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./ad291beRadRat9-index.js"; const problem = {id: "ad291beRadRat9", title: "Adding Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

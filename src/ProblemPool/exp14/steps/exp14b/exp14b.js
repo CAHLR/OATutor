@@ -1,1 +1,1 @@
-import hints from "./exp14b-index.js"; const step = {id: "exp14b", stepAnswer: ["$$\\left(75\\right) t^3$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(5\\right) t\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp14b-index.js"; const step = {id: "exp14b", stepAnswer: ["$$75t^3$$"], problemType: "TextBox", stepTitle: "$${\\left(5t\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul36a-index.js"; const step = {id: "a870b02DivMul36a", stepAnswer: ["$$\\frac{-\\left(3\\right)}{8}$$"], problemType: "TextBox", stepTitle: "The sum of five-eighths and x is one-fourth.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

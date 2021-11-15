@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota16-index.js"; const problem = {id: "af36e21FunNota16", title: "Evaluate the function $$f=-\\left(5\\right) x^2+\\left(2\\right) x-\\left(1\\right)$$ at the indicated values.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

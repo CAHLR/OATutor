@@ -1,0 +1,1 @@
+import hints from "./a3d6ae2sys28a-index.js"; const step = {id: "a3d6ae2sys28a", stepAnswer: ["(-1,2)"], problemType: "MultipleChoice", stepTitle: "image1", stepBody: "", choices: ["(2,1)", "(1,-2)", "(-1,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

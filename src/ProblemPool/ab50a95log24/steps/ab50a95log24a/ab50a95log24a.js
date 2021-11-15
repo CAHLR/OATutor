@@ -1,0 +1,1 @@
+import hints from "./ab50a95log24a-index.js"; const step = {id: "ab50a95log24a", stepAnswer: ["$${\\left(10\\right)}^t=v$$"], problemType: "TextBox", stepTitle: "$$\\log(v)=t$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

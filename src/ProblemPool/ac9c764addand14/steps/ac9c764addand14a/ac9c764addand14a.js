@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand14a-index.js"; const step = {id: "ac9c764addand14a", stepAnswer: ["$$\\frac{-\\left(3\\right)}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{p+q}{r}$$ when $$p=-4$$, $$q=-2$$, and $$r=8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

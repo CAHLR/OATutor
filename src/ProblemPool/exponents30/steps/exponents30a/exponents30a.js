@@ -1,1 +1,1 @@
-import hints from "./exponents30a-index.js"; const step = {id: "exponents30a", stepAnswer: ["$$\\left(1.29\\right) {\\left(10\\right)}^6$$"], problemType: "TextBox", stepTitle: "1290000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents30a-index.js"; const step = {id: "exponents30a", stepAnswer: ["$$1.29\\times {10}^6$$"], problemType: "TextBox", stepTitle: "1290000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

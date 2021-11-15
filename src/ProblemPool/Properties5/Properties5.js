@@ -1,1 +1,1 @@
-import steps from "./Properties5-index.js"; const problem = {id: "Properties5", title: "Simplify the following expression.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./Properties5-index.js"; const problem = {id: "Properties5", title: "Simplify the following expression.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

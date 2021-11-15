@@ -1,1 +1,1 @@
-import hints from "./powers28a-index.js"; const step = {id: "powers28a", stepAnswer: ["$$-\\left(35\\right) y^{11}$$"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) y^7 \\left(-\\left(7\\right) y^4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./powers28a-index.js"; const step = {id: "powers28a", stepAnswer: ["$$-35y^{11}$$"], problemType: "TextBox", stepTitle: "$$5y^7 \\left(-7y^4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

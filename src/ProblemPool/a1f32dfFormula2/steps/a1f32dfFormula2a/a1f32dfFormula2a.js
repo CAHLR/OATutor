@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula2a-index.js"; const step = {id: "a1f32dfFormula2a", stepAnswer: ["330"], problemType: "TextBox", stepTitle: "Lindsay drove for 5.5 hours at 60 miles per hour. How much distance did she travel?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

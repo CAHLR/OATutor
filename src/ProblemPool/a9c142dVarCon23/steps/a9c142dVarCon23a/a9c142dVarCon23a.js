@@ -1,0 +1,1 @@
+import hints from "./a9c142dVarCon23a-index.js"; const step = {id: "a9c142dVarCon23a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$7n-3=n+\\left(3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

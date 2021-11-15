@@ -1,1 +1,1 @@
-import hints from "./SubAdd27c-index.js"; const step = {id: "SubAdd27c", stepAnswer: ["$$x=0$$"], problemType: "TextBox", stepTitle: "$$-\\left(6\\right) x-\\left(11\\right)+\\left(7\\right) x-\\left(5\\right)=-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd27c-index.js"; const step = {id: "SubAdd27c", stepAnswer: ["$$x=0$$"], problemType: "TextBox", stepTitle: "$$-6x-11+7x-5=-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

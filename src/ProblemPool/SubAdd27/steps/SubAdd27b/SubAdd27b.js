@@ -1,1 +1,1 @@
-import hints from "./SubAdd27b-index.js"; const step = {id: "SubAdd27b", stepAnswer: ["$$x=1$$"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) x+\\left(5\\right)-\\left(8\\right) x+\\left(14\\right)=20$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd27b-index.js"; const step = {id: "SubAdd27b", stepAnswer: ["$$x=1$$"], problemType: "TextBox", stepTitle: "$$9x+5-8x+14=20$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

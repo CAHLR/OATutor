@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties1a-index.js"; const step = {id: "ac3d94dProperties1a", stepAnswer: ["12x"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) \\left(4\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

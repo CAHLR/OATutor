@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat16b-index.js"; const step = {id: "ad291beRadRat16b", stepAnswer: ["183"], problemType: "TextBox", stepTitle: "What is $$\\left(6\\right) \\sqrt{39000}+\\left(7\\right) \\sqrt[3]{ 576}$$? (Rounded to the nearest whole number)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

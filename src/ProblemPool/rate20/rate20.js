@@ -1,1 +1,1 @@
-import steps from "./rate20-index.js"; const problem = {id: "rate20", title: "Finding an Average Rate of Change as an Expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./rate20-index.js"; const problem = {id: "rate20", title: "Finding an Average Rate of Change as an Expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

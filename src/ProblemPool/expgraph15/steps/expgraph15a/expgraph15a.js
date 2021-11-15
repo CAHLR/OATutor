@@ -1,1 +1,1 @@
-import hints from "./expgraph15a-index.js"; const step = {id: "expgraph15a", stepAnswer: ["$$g(x)=$$ $$-\\left({\\left(10\\right)}^x\\right)+\\left(7\\right)$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./expgraph15a-index.js"; const step = {id: "expgraph15a", stepAnswer: ["$$g(x)=$$ $$-\\left({10}^x\\right)+7$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

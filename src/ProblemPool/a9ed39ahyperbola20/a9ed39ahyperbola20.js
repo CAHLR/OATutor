@@ -1,0 +1,1 @@
+import steps from "./a9ed39ahyperbola20-index.js"; const problem = {id: "a9ed39ahyperbola20", title: "The Hyperbola", body: "$$\\frac{{\\left(y-\\left(3\\right)\\right)}^2}{{\\left(3\\right)}^2}-\\frac{{\\left(x+\\left(5\\right)\\right)}^2}{{\\left(6\\right)}^2}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

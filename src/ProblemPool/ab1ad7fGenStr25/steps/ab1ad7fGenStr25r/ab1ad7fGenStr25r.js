@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25r-index.js"; const step = {id: "ab1ad7fGenStr25r", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) \\left(\\left(2\\right) m-\\left(3\\right)\\right)-\\left(8\\right)=\\left(4\\right) m+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

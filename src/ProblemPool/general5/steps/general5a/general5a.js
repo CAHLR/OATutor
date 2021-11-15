@@ -1,1 +1,1 @@
-import hints from "./general5a-index.js"; const step = {id: "general5a", stepAnswer: ["$${\\left(m+\\left(7\\right) n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$m^2+\\left(14\\right) mn+\\left(49\\right) n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./general5a-index.js"; const step = {id: "general5a", stepAnswer: ["$${\\left(m+7n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$m^2+14mn+49n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9f55eblinearmodels16b-index.js"; const step = {id: "a9f55eblinearmodels16b", stepAnswer: ["25000"], problemType: "TextBox", stepTitle: "Find and interpret the y-intercept.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aabf119factor17a-index.js"; const step = {id: "aabf119factor17a", stepAnswer: ["$$\\left(\\left(3\\right) n-\\left(11\\right)\\right) \\left(\\left(2\\right) n+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) n^2$$ - 19n - 11", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

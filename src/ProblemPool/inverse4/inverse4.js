@@ -1,1 +1,1 @@
-import steps from "./inverse4-index.js"; const problem = {id: "inverse4", title: "Inverse Functions", body: "Find the inverse form of the given function.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./inverse4-index.js"; const problem = {id: "inverse4", title: "Inverse Functions", body: "Find the inverse form of the given function.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

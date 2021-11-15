@@ -1,0 +1,1 @@
+var hints = [{id: "af60b4fellipse13a-s1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["$$\\frac{x^2}{{\\left(1\\right)}^2}+\\frac{y^2}{{\\left(\\frac{1}{3}\\right)}^2}=1$$"], dependencies: [], title: "Use algebra to rewrite the equation in standard form.", text: "", variabilization: {}}, ]; export {hints};

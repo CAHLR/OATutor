@@ -1,1 +1,1 @@
-import steps from "./gre29-index.js"; const problem = {id: "gre29", title: "Greatest Common Factor", body: "Factor the greatest common factor from each polynomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./gre29-index.js"; const problem = {id: "gre29", title: "Greatest Common Factor", body: "Factor the greatest common factor from each polynomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

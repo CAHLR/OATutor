@@ -1,0 +1,1 @@
+import steps from "./ac3d94dProperties29-index.js"; const problem = {id: "ac3d94dProperties29", title: "Use the Properties of Zero", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./powers25-index.js"; const problem = {id: "powers25", title: "Simplify Expressions by Applying Several Properties", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./powers25-index.js"; const problem = {id: "powers25", title: "Simplify Expressions by Applying Several Properties", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

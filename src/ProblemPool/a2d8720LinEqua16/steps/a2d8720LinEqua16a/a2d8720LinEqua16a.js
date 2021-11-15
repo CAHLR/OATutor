@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua16a-index.js"; const step = {id: "a2d8720LinEqua16a", stepAnswer: ["$$\\frac{-\\left(4\\right)}{7}$$"], problemType: "TextBox", stepTitle: "Find the slope of a line that passes through the points (2,-1) and (-5,3).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

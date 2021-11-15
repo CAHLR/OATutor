@@ -1,0 +1,1 @@
+import steps from "./a75d03cRecCord3-index.js"; const problem = {id: "a75d03cRecCord3", title: "Finding the Intercepts of the Given Equation", body: "Find the x-intercept and y-intercept of the equation $$y=-\\left(3\\right) x+\\left(6\\right)$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

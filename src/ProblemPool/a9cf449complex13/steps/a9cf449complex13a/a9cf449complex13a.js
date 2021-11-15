@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex13a-index.js"; const step = {id: "a9cf449complex13a", stepAnswer: ["$$-\\left(16\\right)+\\left(32\\right) i$$"], problemType: "TextBox", stepTitle: "$$\\left(-\\left(2\\right)+\\left(4\\right) i\\right) \\left(8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

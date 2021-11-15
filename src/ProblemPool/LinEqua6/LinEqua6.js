@@ -1,1 +1,1 @@
-import steps from "./LinEqua6-index.js"; const problem = {id: "LinEqua6", title: "Solving a Rational Equation", body: "Solve the rational equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./LinEqua6-index.js"; const problem = {id: "LinEqua6", title: "Solving a Rational Equation", body: "Solve the rational equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

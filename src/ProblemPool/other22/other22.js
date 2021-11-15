@@ -1,1 +1,1 @@
-import steps from "./other22-index.js"; const problem = {id: "other22", title: "Solving Absolute Value Equations", body: "Solve the following equation for x.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./other22-index.js"; const problem = {id: "other22", title: "Solving Absolute Value Equations", body: "Solve the following equation for x.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

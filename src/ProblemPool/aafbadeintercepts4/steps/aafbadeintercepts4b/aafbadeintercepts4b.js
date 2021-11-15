@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts4b-index.js"; const step = {id: "aafbadeintercepts4b", stepAnswer: ["(0,6)"], problemType: "MultipleChoice", stepTitle: "Find the y intercept of $$\\left(2\\right) x+y=6$$.", stepBody: "", choices: ["(0,3)I(0,6)I(0,-5)I(0,-2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a512f5aexplog16-index.js"; const problem = {id: "a512f5aexplog16", title: "Solving Logarithmic Equations", body: "Solve the following equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/6-6-exponential-and-logarithmic-equations"}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./FunNota16d-index.js"; const step = {id: "FunNota16d", stepAnswer: ["$$\\left(5\\right) a^2-\\left(2\\right) a+\\left(1\\right)$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./FunNota16d-index.js"; const step = {id: "FunNota16d", stepAnswer: ["$$5a^2-2a+1$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

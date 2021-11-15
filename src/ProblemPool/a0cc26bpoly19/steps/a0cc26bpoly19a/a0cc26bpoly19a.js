@@ -1,1 +1,1 @@
-import hints from "./a0cc26bpoly19a-index.js"; const step = {id: "a0cc26bpoly19a", stepAnswer: ["$$\\left(99\\right) v^2-\\left(202\\right) v+\\left(99\\right)$$"], problemType: "TextBox", stepTitle: "(9v-11)(11v-9)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a0cc26bpoly19a-index.js"; const step = {id: "a0cc26bpoly19a", stepAnswer: ["$$99v^2-202v+99$$"], problemType: "TextBox", stepTitle: "(9v-11)(11v-9)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

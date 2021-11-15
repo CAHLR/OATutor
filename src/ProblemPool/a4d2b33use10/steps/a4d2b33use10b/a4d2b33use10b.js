@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use10b-index.js"; const step = {id: "a4d2b33use10b", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "$${\\left(2\\right)}^x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

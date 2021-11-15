@@ -1,0 +1,1 @@
+import hints from "./a9981ababs4a-index.js"; const step = {id: "a9981ababs4a", stepAnswer: ["-5,1"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=-\\left(5\\right) |x+\\left(2\\right)|+\\left(15\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a78ba6esubsitution4a-index.js"; const step = {id: "a78ba6esubsitution4a", stepAnswer: ["(4,2)"], problemType: "MultipleChoice", stepTitle: "$$x+\\left(3\\right) y=10$$, $$\\left(4\\right) x+y=18$$", stepBody: "", choices: ["(4,2)", "(3,1)", "(-4,5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

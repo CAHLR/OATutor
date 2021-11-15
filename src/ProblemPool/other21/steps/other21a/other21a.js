@@ -1,1 +1,1 @@
-import hints from "./other21a-index.js"; const step = {id: "other21a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$\\sqrt{\\left(3\\right) x+\\left(7\\right)}+\\sqrt{x+\\left(2\\right)}=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./other21a-index.js"; const step = {id: "other21a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$\\sqrt{3x+7}+\\sqrt{x+2}=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

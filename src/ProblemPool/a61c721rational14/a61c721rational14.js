@@ -1,0 +1,1 @@
+import steps from "./a61c721rational14-index.js"; const problem = {id: "a61c721rational14", title: "Rational Expressions", body: "Multiply the rational expression and express the product in simplest form.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

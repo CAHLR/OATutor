@@ -1,0 +1,1 @@
+import hints from "./a20771equad21a-index.js"; const step = {id: "a20771equad21a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Leg a measures 4 units, leg b measures 3 units. Find the length of the hypotenuse.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

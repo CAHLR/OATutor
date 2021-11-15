@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat15a-index.js"; const step = {id: "ad291beRadRat15a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "What is $$\\sqrt[5]{ -\\left(32\\right)}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

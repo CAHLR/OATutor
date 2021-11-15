@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe30a-index.js"; const step = {id: "a3c25cbexe30a", stepAnswer: ["$$\\left(x-\\left(5\\right)\\right) \\left(h+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2-\\left(2\\right) x-\\left(15\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

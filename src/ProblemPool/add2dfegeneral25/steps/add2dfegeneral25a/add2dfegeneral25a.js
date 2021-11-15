@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral25a-index.js"; const step = {id: "add2dfegeneral25a", stepAnswer: ["$$\\left(5\\right) x^3 \\left(\\left(2\\right) x+\\left(7\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(10\\right) x^4+\\left(35\\right) x^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

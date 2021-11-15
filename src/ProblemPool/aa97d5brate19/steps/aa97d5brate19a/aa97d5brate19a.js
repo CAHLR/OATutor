@@ -1,0 +1,1 @@
+import hints from "./aa97d5brate19a-index.js"; const step = {id: "aa97d5brate19a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "Find the average rate of change of $$f(x)=x-\\left(2\\right) \\sqrt{x}$$ on the interval [1,9].", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

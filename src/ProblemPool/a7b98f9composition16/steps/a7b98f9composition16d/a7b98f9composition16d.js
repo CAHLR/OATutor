@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition16d-index.js"; const step = {id: "a7b98f9composition16d", stepAnswer: ["$$\\frac{x^2+\\left(2\\right) x}{\\left(6\\right)-x^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

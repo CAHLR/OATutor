@@ -1,0 +1,1 @@
+var hints = [{id: "ac879b3linearequation3a-h1", type: "hint", dependencies: [], title: "The form of a linear equation is $$y=mx+b$$. According to this, the slope is $$m=1$$.", text: "", variabilization: {}}, ]; export {hints};

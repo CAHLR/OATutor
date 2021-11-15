@@ -1,1 +1,1 @@
-import steps from "./use34-index.js"; const problem = {id: "use34", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./use34-index.js"; const problem = {id: "use34", title: "Simplifying Longer Expressions", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

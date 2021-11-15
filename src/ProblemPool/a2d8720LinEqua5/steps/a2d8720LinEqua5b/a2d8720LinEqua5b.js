@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua5b-index.js"; const step = {id: "a2d8720LinEqua5b", stepAnswer: ["$$x=\\frac{2}{7}$$"], problemType: "TextBox", stepTitle: "$$\\left(12\\right)-\\left(5\\right) \\left(x+\\left(3\\right)\\right)=2x-5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

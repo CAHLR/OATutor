@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota10-index.js"; const problem = {id: "af36e21FunNota10", title: "Solving Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

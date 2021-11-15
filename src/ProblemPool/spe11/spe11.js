@@ -1,1 +1,1 @@
-import steps from "./spe11-index.js"; const problem = {id: "spe11", title: "Binomial Squares Pattern", body: "Square each binomial using the Binomial Squares Pattern.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./spe11-index.js"; const problem = {id: "spe11", title: "Binomial Squares Pattern", body: "Square each binomial using the Binomial Squares Pattern.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

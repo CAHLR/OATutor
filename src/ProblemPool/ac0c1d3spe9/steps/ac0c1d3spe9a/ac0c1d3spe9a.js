@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe9a-index.js"; const step = {id: "ac0c1d3spe9a", stepAnswer: ["$$m^2-\\left(30\\right) y+\\left(225\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(m-\\left(15\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

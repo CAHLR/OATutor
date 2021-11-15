@@ -1,0 +1,1 @@
+import steps from "./ac3d94dProperties16-index.js"; const problem = {id: "ac3d94dProperties16", title: "Use the Commutative Property", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

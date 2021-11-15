@@ -1,1 +1,1 @@
-import steps from "./SolveMixture1-index.js"; const problem = {id: "SolveMixture1", title: "Solve Ticket and Stamp Word Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./SolveMixture1-index.js"; const problem = {id: "SolveMixture1", title: "Solve Ticket and Stamp Word Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

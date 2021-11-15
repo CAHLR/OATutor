@@ -1,1 +1,1 @@
-import hints from "./gre27a-index.js"; const step = {id: "gre27a", stepAnswer: ["$$\\left(8\\right) \\left(y+\\left(2\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) y+\\left(16\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./gre27a-index.js"; const step = {id: "gre27a", stepAnswer: ["$$8\\left(y+2\\right)$$"], problemType: "TextBox", stepTitle: "$$8y+16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

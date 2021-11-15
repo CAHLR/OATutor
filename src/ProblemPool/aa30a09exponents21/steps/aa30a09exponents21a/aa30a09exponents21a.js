@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents21a-index.js"; const step = {id: "aa30a09exponents21a", stepAnswer: ["$$\\frac{1}{m^2 n^4}$$"], problemType: "TextBox", stepTitle: "$$m^3 n^{-\\left(3\\right)} m^{-\\left(5\\right)} n^{-\\left(1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

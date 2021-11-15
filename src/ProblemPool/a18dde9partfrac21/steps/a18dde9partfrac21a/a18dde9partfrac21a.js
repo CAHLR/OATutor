@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac21a-index.js"; const step = {id: "a18dde9partfrac21a", stepAnswer: ["$$\\frac{7}{x+\\left(3\\right)}-\\frac{7}{{\\left(x+\\left(3\\right)\\right)}^2}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

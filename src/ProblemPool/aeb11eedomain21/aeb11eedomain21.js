@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain21-index.js"; const problem = {id: "aeb11eedomain21", title: "Finding the Domain of a Function with an Even Root", body: "Find the domain of the following function using interval notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

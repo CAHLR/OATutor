@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp3a-index.js"; const step = {id: "af227bbMoApp3a", stepAnswer: ["$$A=\\left(0.05\\right) x+\\left(34\\right)$$"], problemType: "TextBox", stepTitle: "Write a linear equation that models the package offered by Company A (in the form of $$A=mx+b$$ )", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

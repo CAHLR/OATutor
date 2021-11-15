@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac6a-index.js"; const step = {id: "a18dde9partfrac6a", stepAnswer: ["$$\\frac{3}{\\left(5\\right) x-\\left(2\\right)}+\\frac{4}{\\left(4\\right) x-\\left(1\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

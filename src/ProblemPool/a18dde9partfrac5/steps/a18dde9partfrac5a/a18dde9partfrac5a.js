@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac5a-index.js"; const step = {id: "a18dde9partfrac5a", stepAnswer: ["$$\\frac{1}{x+\\left(5\\right)}+\\frac{9}{x+\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./af36e21FunNota7-index.js"; const problem = {id: "af36e21FunNota7", title: "Evaluating functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

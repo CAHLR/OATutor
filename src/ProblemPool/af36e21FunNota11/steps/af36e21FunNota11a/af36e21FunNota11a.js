@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota11a-index.js"; const step = {id: "af36e21FunNota11a", stepAnswer: ["$$p=\\left(2\\right)-\\frac{1}{3} n$$"], problemType: "TextBox", stepTitle: "Express the relationship $$\\left(2\\right) n+\\left(6\\right) p=12$$ as a function $$p=f(n)$$, if possible.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe11a-index.js"; const step = {id: "a3c25cbexe11a", stepAnswer: ["$$\\left(y+\\left(1\\right)\\right) \\left(y-\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$v^2-\\left(2\\right) v-\\left(3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

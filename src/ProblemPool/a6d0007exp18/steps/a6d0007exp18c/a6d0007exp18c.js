@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp18c-index.js"; const step = {id: "a6d0007exp18c", stepAnswer: ["$$\\left(7.15\\right) {\\left(10\\right)}^{-\\left(8\\right)}$$"], problemType: "TextBox", stepTitle: "Probability of winning lottery (match 6 of 49 possible numbers): 0.0000000715", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

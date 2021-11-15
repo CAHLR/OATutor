@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use24a-index.js"; const step = {id: "a4d2b33use24a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\left(5\\right)+{\\left(2\\right)}^3+3\\left(\\left(6\\right)-3\\left(\\left(4\\right)-\\left(2\\right)\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

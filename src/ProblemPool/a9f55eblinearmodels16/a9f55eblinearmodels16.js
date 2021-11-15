@@ -1,0 +1,1 @@
+import steps from "./a9f55eblinearmodels16-index.js"; const problem = {id: "a9f55eblinearmodels16", title: "Try It #1: Building Linear Models", body: "A company sells doughnuts. They incur a fixed cost of $25,000 for rent, insurance, and other expenses. It costs $0.25 to produce each doughnut.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./cou12-index.js"; const problem = {id: "cou12", title: "Number of Permutations", body: "Finding the Number of Permutations Using the Formula", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./cou12-index.js"; const problem = {id: "cou12", title: "Number of Permutations", body: "Finding the Number of Permutations Using the Formula", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

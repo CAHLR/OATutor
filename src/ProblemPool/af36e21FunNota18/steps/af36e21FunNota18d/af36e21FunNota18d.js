@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota18d-index.js"; const step = {id: "af36e21FunNota18d", stepAnswer: ["$$\\frac{\\left(1\\right)-\\left(6\\right) a}{\\left(5\\right) a+\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

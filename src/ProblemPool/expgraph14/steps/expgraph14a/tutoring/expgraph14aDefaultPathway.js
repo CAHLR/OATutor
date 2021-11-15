@@ -1,1 +1,1 @@
-var hints = [{id: "expgraph14a-h1", type: "hint", dependencies: [], title: "Rewriting into an equation", text: "The function can be rewritten as $$-\\left(\\frac{1}{2}\\right) {\\left(\\frac{1}{2}\\right)}^{\\left(-7\\right)}+\\left(6\\right)$$", variabilization: {}}, ]; export {hints};
+var hints = [{id: "expgraph14a-h1", type: "hint", dependencies: [], title: "Rewriting into an equation", text: "The function can be rewritten as $$-\\left(\\frac{1}{2}\\right) {\\left(\\frac{1}{2}\\right)}^{\\left(-7\\right)}+6$$", variabilization: {}}, ]; export {hints};

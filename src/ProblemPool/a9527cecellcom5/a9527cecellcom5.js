@@ -1,0 +1,1 @@
+import steps from "./a9527cecellcom5-index.js"; const problem = {id: "a9527cecellcom5", title: "Review Question 9", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

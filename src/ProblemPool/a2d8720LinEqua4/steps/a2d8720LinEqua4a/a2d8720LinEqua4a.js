@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua4a-index.js"; const step = {id: "a2d8720LinEqua4a", stepAnswer: ["$$x=-3$$"], problemType: "TextBox", stepTitle: "$$-\\left(2\\right) \\left(\\left(3\\right) x-\\left(1\\right)\\right)+x=14-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

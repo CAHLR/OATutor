@@ -1,1 +1,0 @@
-import hints from "./real26a-index.js"; const step = {id: "real26a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) \\left(5\\right)+\\left(3\\right) \\left(2\\right)+\\left(4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

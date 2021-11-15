@@ -1,1 +1,1 @@
-import hints from "./exp11b-index.js"; const step = {id: "exp11b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(-x\\right)}^5 {\\left(-x\\right)}^{-\\left(5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exp11b-index.js"; const step = {id: "exp11b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(-x\\right)}^5 {\\left(-x\\right)}^{-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

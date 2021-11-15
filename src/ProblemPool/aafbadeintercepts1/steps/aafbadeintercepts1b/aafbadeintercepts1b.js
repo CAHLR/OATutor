@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts1b-index.js"; const step = {id: "aafbadeintercepts1b", stepAnswer: ["(0,2)"], problemType: "MultipleChoice", stepTitle: "What is the y intercept of the line in the graph labeled a?", stepBody: "", choices: ["(4,0)I(0,4)I(2,0)I(0,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./ad291beRadRat5-index.js"; const problem = {id: "ad291beRadRat5", title: "Using the Quotient Rule to Simplify Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

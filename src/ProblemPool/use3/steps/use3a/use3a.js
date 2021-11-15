@@ -1,1 +1,1 @@
-import hints from "./use3a-index.js"; const step = {id: "use3a", stepAnswer: ["52"], problemType: "TextBox", stepTitle: "Evaluate $$\\left(2\\right) x^2+\\left(3\\right) x+\\left(8\\right)$$ when $$x=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use3a-index.js"; const step = {id: "use3a", stepAnswer: ["52"], problemType: "TextBox", stepTitle: "Evaluate $$2x^2+3x+8$$ when $$x=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a9cf449complex3-index.js"; const problem = {id: "a9cf449complex3", title: "Adding and Subtracting Complex Numbers", body: "Simplify the expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

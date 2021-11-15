@@ -1,0 +1,1 @@
+import hints from "./a20771equad14a-index.js"; const step = {id: "a20771equad14a", stepAnswer: ["(3+sqrt(29))/2, (3-sqrt(29))/2"], problemType: "TextBox", stepTitle: "$$x^2-\\left(3\\right) x-\\left(5\\right)=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

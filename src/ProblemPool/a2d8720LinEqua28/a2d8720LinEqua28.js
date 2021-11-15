@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua28-index.js"; const problem = {id: "a2d8720LinEqua28", title: "For the following exercises, state whether they are parallel, perpendicular or neither.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

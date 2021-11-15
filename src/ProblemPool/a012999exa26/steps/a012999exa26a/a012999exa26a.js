@@ -1,0 +1,1 @@
+import hints from "./a012999exa26a-index.js"; const step = {id: "a012999exa26a", stepAnswer: ["$$-\\left(b^2\\right)-\\left(9\\right) b$$"], problemType: "TextBox", stepTitle: "$$-b\\left(b+\\left(9\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a98b1afgraphlog16-index.js"; const problem = {id: "a98b1afgraphlog16", title: "Domain and vertical asymptotes of log functions", body: "What is the domain and vertical asymptote of $$g(x)=\\ln(\\left(2\\right) x+\\left(6\\right))-\\left(5\\right)$$?", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

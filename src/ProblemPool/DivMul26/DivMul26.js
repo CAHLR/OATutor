@@ -1,1 +1,1 @@
-import steps from "./DivMul26-index.js"; const problem = {id: "DivMul26", title: "Translate and Solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./DivMul26-index.js"; const problem = {id: "DivMul26", title: "Translate and Solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral23a-index.js"; const step = {id: "add2dfegeneral23a", stepAnswer: ["$$x \\left(x^2+\\left(36\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$x^3+\\left(36\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

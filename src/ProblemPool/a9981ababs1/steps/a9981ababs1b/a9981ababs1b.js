@@ -1,0 +1,1 @@
+import hints from "./a9981ababs1b-index.js"; const step = {id: "a9981ababs1b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=\\left(4\\right) |x-\\left(3\\right)|+\\left(4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

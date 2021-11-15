@@ -1,0 +1,1 @@
+import steps from "./afbe5ccpower32-index.js"; const problem = {id: "afbe5ccpower32", title: "Determine the end behavior of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

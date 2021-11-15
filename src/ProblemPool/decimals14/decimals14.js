@@ -1,1 +1,1 @@
-import steps from "./decimals14-index.js"; const problem = {id: "decimals14", title: "Add:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./decimals14-index.js"; const problem = {id: "decimals14", title: "Add:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

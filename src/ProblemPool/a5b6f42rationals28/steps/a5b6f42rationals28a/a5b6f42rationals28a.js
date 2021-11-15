@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals28a-index.js"; const step = {id: "a5b6f42rationals28a", stepAnswer: ["$$\\left(27\\right) x+\\left(18\\right)$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{\\left(81\\right) x^2-\\left(18\\right)}{\\left(3\\right) x-\\left(2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

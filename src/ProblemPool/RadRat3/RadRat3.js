@@ -1,1 +1,1 @@
-import steps from "./RadRat3-index.js"; const problem = {id: "RadRat3", title: "Using the Product Rule to Simplify Square Roots", body: "Simplify the radical expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./RadRat3-index.js"; const problem = {id: "RadRat3", title: "Using the Product Rule to Simplify Square Roots", body: "Simplify the radical expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

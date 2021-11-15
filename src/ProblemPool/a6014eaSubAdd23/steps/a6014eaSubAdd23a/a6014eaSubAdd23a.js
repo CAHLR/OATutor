@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd23a-index.js"; const step = {id: "a6014eaSubAdd23a", stepAnswer: ["$$q=-16$$"], problemType: "TextBox", stepTitle: "$$4\\left(q+\\left(2\\right)\\right)-\\left(3\\right) q=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

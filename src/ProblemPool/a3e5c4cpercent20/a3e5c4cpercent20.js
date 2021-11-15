@@ -1,0 +1,1 @@
+import steps from "./a3e5c4cpercent20-index.js"; const problem = {id: "a3e5c4cpercent20", title: "Solve Simple Interest Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

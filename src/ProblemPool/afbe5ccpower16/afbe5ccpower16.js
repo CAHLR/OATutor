@@ -1,0 +1,1 @@
+import steps from "./afbe5ccpower16-index.js"; const problem = {id: "afbe5ccpower16", title: "Determining Power vs Polynomial Function", body: "For the following exercises, identify the function as a power function, a polynomial function, or neither.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

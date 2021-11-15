@@ -1,1 +1,1 @@
-import hints from "./Multiply17a-index.js"; const step = {id: "Multiply17a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$-\\left(1\\right) \\left(-14\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Multiply17a-index.js"; const step = {id: "Multiply17a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$-1\\left(-14\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

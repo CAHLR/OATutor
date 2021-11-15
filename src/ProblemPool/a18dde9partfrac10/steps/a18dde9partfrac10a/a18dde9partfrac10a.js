@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac10a-index.js"; const step = {id: "a18dde9partfrac10a", stepAnswer: ["$$\\frac{8}{x-\\left(3\\right)}-\\frac{5}{x-\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

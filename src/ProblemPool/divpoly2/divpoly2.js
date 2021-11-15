@@ -1,1 +1,1 @@
-import steps from "./divpoly2-index.js"; const problem = {id: "divpoly2", title: "Using Long Division to Divide a Third-Degree Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org"}; export { problem };
+import steps from "./divpoly2-index.js"; const problem = {id: "divpoly2", title: "Using Long Division to Divide a Third-Degree Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

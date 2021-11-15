@@ -1,0 +1,1 @@
+import hints from "./a1f0162sequences23a-index.js"; const step = {id: "a1f0162sequences23a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Write the first term of the sequence defined by the explicit formula $$a_n={\\left(2\\right)}^n-\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

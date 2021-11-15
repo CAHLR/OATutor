@@ -1,0 +1,1 @@
+import hints from "./a57f999ser10a-index.js"; const step = {id: "a57f999ser10a", stepAnswer: ["$$\\frac{55}{2}$$"], problemType: "TextBox", stepTitle: "image1", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
