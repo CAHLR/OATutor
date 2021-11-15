@@ -1,0 +1,1 @@
+import steps from "./a6d0007exp10-index.js"; const problem = {id: "a6d0007exp10", title: "The Quotient Rule of Exponents", body: "Simplify each expression and write the answer with positive exponents only.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

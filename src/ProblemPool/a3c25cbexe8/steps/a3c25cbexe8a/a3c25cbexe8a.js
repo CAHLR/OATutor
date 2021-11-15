@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe8a-index.js"; const step = {id: "a3c25cbexe8a", stepAnswer: ["$$\\left(p+\\left(6\\right)\\right) \\left(p-\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$p^2+\\left(5\\right) p-\\left(6\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

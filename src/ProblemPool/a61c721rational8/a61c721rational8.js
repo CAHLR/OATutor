@@ -1,0 +1,1 @@
+import steps from "./a61c721rational8-index.js"; const problem = {id: "a61c721rational8", title: "Simplifying Expressions", body: "Simplifying Complex Rational Expressions", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

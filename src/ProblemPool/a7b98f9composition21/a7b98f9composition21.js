@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition21-index.js"; const problem = {id: "a7b98f9composition21", title: "Composition of Functions with Square Roots and Absolute Value", body: "For $$f(x)=\\sqrt{x}$$ and $$g(x)=|x-\\left(3\\right)|$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

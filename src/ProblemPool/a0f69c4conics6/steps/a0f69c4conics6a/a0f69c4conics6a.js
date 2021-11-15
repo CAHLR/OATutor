@@ -1,0 +1,1 @@
+import hints from "./a0f69c4conics6a-index.js"; const step = {id: "a0f69c4conics6a", stepAnswer: ["(0,0)"], problemType: "MultipleChoice", stepTitle: "$$r=\\frac{2}{\\left(1\\right)-sintheta}$$", stepBody: "", choices: ["(0,0)", "(1,0)", "(1,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

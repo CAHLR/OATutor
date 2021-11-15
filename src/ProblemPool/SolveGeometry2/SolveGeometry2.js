@@ -1,1 +1,1 @@
-import steps from "./SolveGeometry2-index.js"; const problem = {id: "SolveGeometry2", title: "Solve Applications Using Rectangle Properties", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./SolveGeometry2-index.js"; const problem = {id: "SolveGeometry2", title: "Solve Applications Using Rectangle Properties", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

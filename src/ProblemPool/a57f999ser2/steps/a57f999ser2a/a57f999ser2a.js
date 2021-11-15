@@ -1,0 +1,1 @@
+import hints from "./a57f999ser2a-index.js"; const step = {id: "a57f999ser2a", stepAnswer: ["$$S_{10}=\\frac{\\left(10\\right) \\left(\\left(19\\right)+\\left(73\\right)\\right)}{2}$$"], problemType: "TextBox", stepTitle: "19+25+31+...+73", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

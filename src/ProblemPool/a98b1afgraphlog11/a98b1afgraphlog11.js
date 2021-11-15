@@ -1,0 +1,1 @@
+import steps from "./a98b1afgraphlog11-index.js"; const problem = {id: "a98b1afgraphlog11", title: "Vertical asymptotes of log functions", body: "What is the vertical asymptote of $$f(x)=\\left(3\\right) \\log(-x)+\\left(2\\right)$$? Write as an equation of x (e.g. $$x=[number])$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe24a-index.js"; const step = {id: "a3c25cbexe24a", stepAnswer: ["$$\\left(x+\\left(16\\right)\\right) \\left(x+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2+\\left(19\\right) x+\\left(48\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

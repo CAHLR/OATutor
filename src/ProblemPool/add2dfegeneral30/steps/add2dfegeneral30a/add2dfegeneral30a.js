@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral30a-index.js"; const step = {id: "add2dfegeneral30a", stepAnswer: ["$$a^3 \\left(a^2+\\left(9\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$a^5+\\left(9\\right) a^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

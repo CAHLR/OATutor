@@ -1,1 +1,1 @@
-import hints from "./exponents19a-index.js"; const step = {id: "exponents19a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y^5 y^{-\\left(5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents19a-index.js"; const step = {id: "exponents19a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y^5 y^{-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

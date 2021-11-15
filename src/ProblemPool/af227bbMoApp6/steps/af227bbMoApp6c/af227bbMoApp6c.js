@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp6c-index.js"; const step = {id: "af227bbMoApp6c", stepAnswer: ["300"], problemType: "TextBox", stepTitle: "Find out how many minutes of calling would make the two plans equal.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

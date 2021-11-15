@@ -1,0 +1,1 @@
+import steps from "./a35ba99cou24-index.js"; const problem = {id: "a35ba99cou24", title: "Subsets", body: "Find the number of subsets in each given set.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

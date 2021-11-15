@@ -1,0 +1,1 @@
+import steps from "./a7dc5fftransformation24-index.js"; const problem = {id: "a7dc5fftransformation24", title: "Increasing and Decreasing Intervals", body: "Determine the interval(s) on which the function is increasing and decreasing.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

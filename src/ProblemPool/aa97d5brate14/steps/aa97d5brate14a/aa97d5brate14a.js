@@ -1,0 +1,1 @@
+import hints from "./aa97d5brate14a-index.js"; const step = {id: "aa97d5brate14a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "$$q(x)=x^3$$ on [-4,2]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

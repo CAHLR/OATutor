@@ -1,1 +1,0 @@
-import hints from "./real25b-index.js"; const step = {id: "real25b", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "$$-\\sqrt{289}$$", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

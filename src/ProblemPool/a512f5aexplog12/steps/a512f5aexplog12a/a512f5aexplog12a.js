@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog12a-index.js"; const step = {id: "a512f5aexplog12a", stepAnswer: ["ln(3)"], problemType: "TextBox", stepTitle: "$$e^{\\left(2\\right) x}-e^x-\\left(6\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

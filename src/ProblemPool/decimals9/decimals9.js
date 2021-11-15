@@ -1,1 +1,1 @@
-import steps from "./decimals9-index.js"; const problem = {id: "decimals9", title: "How to Write Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./decimals9-index.js"; const problem = {id: "decimals9", title: "How to Write Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

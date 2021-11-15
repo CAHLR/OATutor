@@ -1,0 +1,1 @@
+import steps from "./a18dde9partfrac8-index.js"; const problem = {id: "a18dde9partfrac8", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors: $$\\frac{\\left(6\\right) x}{x^2-\\left(4\\right)}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

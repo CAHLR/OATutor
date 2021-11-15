@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp10-index.js"; const problem = {id: "ae9e419IneqApp10", title: "Mona's Fun Zone Budget", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

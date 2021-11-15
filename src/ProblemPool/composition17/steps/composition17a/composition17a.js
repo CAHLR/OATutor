@@ -1,1 +1,1 @@
-import hints from "./composition17a-index.js"; const step = {id: "composition17a", stepAnswer: ["$$-\\left(3\\right) x^2+x+\\left(5\\right)$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./composition17a-index.js"; const step = {id: "composition17a", stepAnswer: ["$$-3x^2+x+5$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

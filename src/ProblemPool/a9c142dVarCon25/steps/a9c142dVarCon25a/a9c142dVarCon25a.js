@@ -1,0 +1,1 @@
+import hints from "./a9c142dVarCon25a-index.js"; const step = {id: "a9c142dVarCon25a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$2a-2=\\left(6\\right) a+\\left(18\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

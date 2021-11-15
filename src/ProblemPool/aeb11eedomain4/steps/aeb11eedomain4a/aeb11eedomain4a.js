@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain4a-index.js"; const step = {id: "aeb11eedomain4a", stepAnswer: ["$$(-\\infty,7]$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{\\left(7\\right)-x}$$", stepBody: "", choices: ["$$(-\\infty,7]$$", "$$(-\\infty,7)$$", "$$[-7,\\infty)$$", "$$(-7,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

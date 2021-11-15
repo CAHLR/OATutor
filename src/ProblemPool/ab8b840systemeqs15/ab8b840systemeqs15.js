@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeqs15-index.js"; const problem = {id: "ab8b840systemeqs15", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$\\left(2\\right) x+\\left(4\\right) y=-3.8$$, $$9x-5y=1.3$$", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

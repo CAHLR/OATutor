@@ -1,1 +1,1 @@
-import hints from "./quad37a-index.js"; const step = {id: "quad37a", stepAnswer: ["6, -4"], problemType: "TextBox", stepTitle: "$${\\left(x-\\left(1\\right)\\right)}^2=25$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./quad37a-index.js"; const step = {id: "quad37a", stepAnswer: ["6, -4"], problemType: "TextBox", stepTitle: "$${\\left(x-1\\right)}^2=25$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

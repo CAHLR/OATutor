@@ -1,0 +1,1 @@
+import steps from "./a7dc5fftransformation15-index.js"; const problem = {id: "a7dc5fftransformation15", title: "Reflections", body: "Find the equation of the function $$s(t)=\\sqrt{t}$$ after the following transformations.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

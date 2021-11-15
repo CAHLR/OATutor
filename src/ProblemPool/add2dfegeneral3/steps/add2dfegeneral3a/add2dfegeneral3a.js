@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral3a-index.js"; const step = {id: "add2dfegeneral3a", stepAnswer: ["$${\\left(\\left(5\\right) w-\\left(6\\right)\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$\\left(25\\right) w^2-\\left(60\\right) w+\\left(36\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

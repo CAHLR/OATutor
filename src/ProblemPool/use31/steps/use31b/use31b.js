@@ -1,1 +1,1 @@
-import hints from "./use31b-index.js"; const step = {id: "use31b", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\left(\\left(12\\right)-\\left(5\\right)\\right) \\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use31b-index.js"; const step = {id: "use31b", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$2\\left(12-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

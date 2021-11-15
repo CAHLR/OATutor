@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties12a-index.js"; const step = {id: "ac3d94dProperties12a", stepAnswer: ["$$\\left(36\\right) d+\\left(90\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(15\\right) \\frac{3}{5} \\left(\\left(4\\right) d+\\left(10\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

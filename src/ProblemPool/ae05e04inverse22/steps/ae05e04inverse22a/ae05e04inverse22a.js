@@ -1,0 +1,1 @@
+import hints from "./ae05e04inverse22a-index.js"; const step = {id: "ae05e04inverse22a", stepAnswer: ["x-3"], problemType: "TextBox", stepTitle: "$$f(x)=x+\\left(3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

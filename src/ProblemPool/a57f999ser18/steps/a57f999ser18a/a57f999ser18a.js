@@ -1,0 +1,1 @@
+import hints from "./a57f999ser18a-index.js"; const step = {id: "a57f999ser18a", stepAnswer: ["Sum defined"], problemType: "MultipleChoice", stepTitle: "3/4+1/2+1/3+...", stepBody: "", choices: ["Sum not defined", "Sum defined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

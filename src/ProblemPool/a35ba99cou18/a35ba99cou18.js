@@ -1,0 +1,1 @@
+import steps from "./a35ba99cou18-index.js"; const problem = {id: "a35ba99cou18", title: "Number of Combinations", body: "A fast food restaurant offers five side dish options. Your meal comes with two side dishes.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

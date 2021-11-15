@@ -1,1 +1,1 @@
-import steps from "./threevar10-index.js"; const problem = {id: "threevar10", title: "Solving a System of Three Equations in Three Variables by Gaussian Elimination", body: "", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };
+import steps from "./threevar10-index.js"; const problem = {id: "threevar10", title: "Solving a System of Three Equations in Three Variables by Gaussian Elimination", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

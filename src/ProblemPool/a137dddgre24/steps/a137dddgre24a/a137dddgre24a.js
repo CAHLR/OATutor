@@ -1,0 +1,1 @@
+import hints from "./a137dddgre24a-index.js"; const step = {id: "a137dddgre24a", stepAnswer: ["$$\\left(5\\right) \\left(a+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) a+\\left(5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

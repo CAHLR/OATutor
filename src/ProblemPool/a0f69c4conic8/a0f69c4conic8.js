@@ -1,0 +1,1 @@
+import steps from "./a0f69c4conic8-index.js"; const problem = {id: "a0f69c4conic8", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{3}{\\left(4\\right)-\\left(4\\right) sintheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

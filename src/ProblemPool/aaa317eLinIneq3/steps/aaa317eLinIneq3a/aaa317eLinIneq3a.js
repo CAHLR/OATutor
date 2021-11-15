@@ -1,0 +1,1 @@
+import hints from "./aaa317eLinIneq3a-index.js"; const step = {id: "aaa317eLinIneq3a", stepAnswer: ["$$x<19$$"], problemType: "MultipleChoice", stepTitle: "$$x-\\left(15\\right)<4$$", stepBody: "", choices: ["$$x<-\\left(11\\right)$$", "$$x>-\\left(11\\right)$$", "$$x<19$$", "$$x>19$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

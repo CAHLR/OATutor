@@ -1,0 +1,1 @@
+import steps from "./a6d0007exp16-index.js"; const problem = {id: "a6d0007exp16", title: "The Power of a Quotient Rule of Exponents", body: "Simplify each of the following quotients as much as possible using the power of a quotient rule. Write answers with positive exponents.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

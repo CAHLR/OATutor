@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties28a-index.js"; const step = {id: "ac3d94dProperties28a", stepAnswer: ["3x-35"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) \\left(x-\\left(8\\right)\\right)-x+\\left(3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

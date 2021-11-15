@@ -1,1 +1,1 @@
-import steps from "./IneqApp7-index.js"; const problem = {id: "IneqApp7", title: "Daniel's Party", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./IneqApp7-index.js"; const problem = {id: "IneqApp7", title: "Daniel's Party", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

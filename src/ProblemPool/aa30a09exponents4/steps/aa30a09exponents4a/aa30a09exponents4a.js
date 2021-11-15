@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents4a-index.js"; const step = {id: "aa30a09exponents4a", stepAnswer: ["$$\\frac{1}{9}$$"], problemType: "TextBox", stepTitle: "$${\\left(3\\right)}^{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a9981abAbsolute2-index.js"; const problem = {id: "a9981abAbsolute2", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=|\\left(3\\right) x+\\left(9\\right)|+\\left(2\\right)$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

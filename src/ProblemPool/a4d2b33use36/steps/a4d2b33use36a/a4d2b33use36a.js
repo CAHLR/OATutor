@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use36a-index.js"; const step = {id: "a4d2b33use36a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(7\\right)}^2-2\\left(4\\left(\\left(5\\right)+\\left(1\\right)\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

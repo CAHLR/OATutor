@@ -1,1 +1,1 @@
-import steps from "./Properties1-index.js"; const problem = {id: "Properties1", title: "In the following exercise, use the associative property to simplify.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./Properties1-index.js"; const problem = {id: "Properties1", title: "In the following exercise, use the associative property to simplify.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

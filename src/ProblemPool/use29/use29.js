@@ -1,1 +1,1 @@
-import steps from "./use29-index.js"; const problem = {id: "use29", title: "Simplifying an Expression Raised to a Power", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./use29-index.js"; const problem = {id: "use29", title: "Simplifying an Expression Raised to a Power", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

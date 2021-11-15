@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac18a-index.js"; const step = {id: "a18dde9partfrac18a", stepAnswer: ["$$\\frac{2}{x+\\left(4\\right)}-\\frac{3}{x-\\left(6\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

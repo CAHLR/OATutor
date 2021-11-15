@@ -1,1 +1,1 @@
-import steps from "./expolog22-index.js"; const problem = {id: "expolog22", title: "Finding the Function that Describes Radioactive Decay", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./expolog22-index.js"; const problem = {id: "expolog22", title: "Finding the Function that Describes Radioactive Decay", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

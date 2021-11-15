@@ -1,1 +1,1 @@
-import steps from "./Formula26-index.js"; const problem = {id: "Formula26", title: "In the following exercises, solve.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./Formula26-index.js"; const problem = {id: "Formula26", title: "In the following exercises, solve.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

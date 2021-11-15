@@ -1,0 +1,1 @@
+import steps from "./af69facexpolog19-index.js"; const problem = {id: "af69facexpolog19", title: "Fish Population", body: "$$P(t)=\\frac{@{numerator}}{\\left(1\\right)+\\left(9\\right) e^{-0.6 t}}$$ represents the population of fish as a function of time.", steps: steps, variabilization: {numerator: ["000", "2000", "3000", "400"]}, oer: "openstax.org"}; export { problem };

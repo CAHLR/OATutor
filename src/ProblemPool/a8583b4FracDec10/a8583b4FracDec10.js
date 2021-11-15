@@ -1,0 +1,1 @@
+import steps from "./a8583b4FracDec10-index.js"; const problem = {id: "a8583b4FracDec10", title: "How to Solve Equations with Fraction Coefficients", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

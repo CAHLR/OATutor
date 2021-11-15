@@ -1,0 +1,1 @@
+import hints from "./a9981ababs5b-index.js"; const step = {id: "a9981ababs5b", stepAnswer: ["(0,-4)"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=\\left(2\\right) |x-\\left(1\\right)|-\\left(6\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

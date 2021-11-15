@@ -1,1 +1,1 @@
-import hints from "./abs14b-index.js"; const step = {id: "abs14b", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x-\\left(3\\right)|-\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./abs14b-index.js"; const step = {id: "abs14b", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x-3|-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

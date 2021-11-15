@@ -16,6 +16,9 @@ import {
 } from "react-router-dom";
 
 import { ThemeContext } from '../config/config.js';
+import { toast } from "react-toastify";
+import to from "await-to-js";
+import ToastID from "../util/toastIds";
 
 class Problem extends React.Component {
   static contextType = ThemeContext;
@@ -63,25 +66,84 @@ class Problem extends React.Component {
     })
   }
 
-  updateCanvas = (name, mastery, components, lessonNum) => {
-    //console.log(name, mastery);
-    if (name !== '') {
-      fetch(this.context.middlewareURL + '/grade', {
+  updateCanvas = async (mastery, components) => {
+    if (this.context.jwt) {
+      let err, response;
+      [err, response] = await to(fetch(this.context.middlewareURL + '/postScore', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          "lis_person_name_full": name !== 'test' ? name : 'Test Student',
-          "score": mastery.toString(),
-          "components": components,
-          "lessonNum": lessonNum
+          token: this.context?.jwt || "",
+          mastery,
+          components
         })
-      });
+      }))
+      if (err || !response) {
+        toast.error(`An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,{
+          toastId: ToastID.submit_grade_unknown_error.toString()
+        })
+        console.debug(err, response)
+        return
+      } else {
+        if (response.status !== 200) {
+          switch (response.status) {
+            case 400:
+              const responseText = await response.text()
+              let [message, ...addInfo] = responseText.split("|")
+              if (Array.isArray(addInfo) && addInfo.length > 0 && addInfo[0]) {
+                addInfo = JSON.parse(addInfo[0])
+              }
+              switch (message) {
+                case 'lost_link_to_lms':
+                  toast.error('It seems like the link back to your LMS has been lost. Please re-open the assignment to make sure your score is saved.', {
+                    toastId: ToastID.submit_grade_link_lost.toString()
+                  })
+                  return
+                case 'unable_to_handle_score':
+                  toast.warn('Something went wrong and we can\'t update your score right now. Your progress will be saved locally so you may continue working.', {
+                    toastId: ToastID.submit_grade_unable.toString(),
+                    closeOnClick: true
+                  })
+                  return
+                default:
+                  toast.error(`Error: ${responseText}`, {
+                    closeOnClick: true
+                  })
+                  return
+              }
+            case 401:
+              toast.error(`Your session has either expired or been invalidated, please reload the page to try again.`, {
+                toastId: ToastID.expired_session.toString()
+              })
+              return
+            case 403:
+              toast.error(`You are not authorized to make this action. (Are you a registered student?)`, {
+                toastId: ToastID.not_authorized.toString()
+              })
+              return
+            default:
+              toast.error(`An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`, {
+                toastId: ToastID.set_lesson_unknown_error.toString()
+              })
+              return
+          }
+        } else {
+          console.debug('successfully submitted grade to Canvas')
+        }
+      }
+    } else {
+      if (process.env.REACT_APP_BUILD_TYPE === 'production') {
+        toast.warn("No credentials found (did you launch this assignment from Canvas?)")
+      } else {
+        // can ignore
+      }
     }
   }
 
   answerMade = (cardIndex, kcArray, isCorrect) => {
+    console.debug(`answer made and is correct: ${isCorrect}`)
     if (this.stepStates[cardIndex] === true) {
       return
     }
@@ -111,11 +173,9 @@ class Problem extends React.Component {
       Object.keys(this.props.lesson.learningObjectives).map(x => {
         relevantKc[x] = this.bktParams[x].probMastery
       });
-      try {
-        this.updateCanvas(this.context.studentName, score, relevantKc, this.props.lessonNum);
-      } catch {
-        console.log("Error sending scores to canvas.");
-      }
+
+      console.debug('updating canvas with problem score')
+      this.updateCanvas(score, relevantKc);
     }
     this.stepStates[cardIndex] = isCorrect;
 

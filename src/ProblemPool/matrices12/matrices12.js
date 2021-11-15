@@ -1,1 +1,1 @@
-import steps from "./matrices12-index.js"; const problem = {id: "matrices12", title: "Locating Entries of a Matrix", body: "Locate a31 and a22 for Matrix A.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./matrices12-index.js"; const problem = {id: "matrices12", title: "Locating Entries of a Matrix", body: "Locate a31 and a22 for Matrix A.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

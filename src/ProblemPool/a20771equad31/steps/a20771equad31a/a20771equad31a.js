@@ -1,0 +1,1 @@
+import hints from "./a20771equad31a-index.js"; const step = {id: "a20771equad31a", stepAnswer: ["-3/4, -3"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^2+\\left(15\\right) x+\\left(9\\right)=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

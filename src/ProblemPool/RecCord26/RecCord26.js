@@ -1,1 +1,1 @@
-import steps from "./RecCord26-index.js"; const problem = {id: "RecCord26", title: "Real-World Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./RecCord26-index.js"; const problem = {id: "RecCord26", title: "Real-World Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

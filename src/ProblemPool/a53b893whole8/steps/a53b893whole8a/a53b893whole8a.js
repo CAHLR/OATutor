@@ -1,0 +1,1 @@
+import hints from "./a53b893whole8a-index.js"; const step = {id: "a53b893whole8a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether 4,962 is divisible by 2", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./gre23a-index.js"; const step = {id: "gre23a", stepAnswer: ["$$\\left(4\\right) \\left(x+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./gre23a-index.js"; const step = {id: "gre23a", stepAnswer: ["$$4\\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "$$4x+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

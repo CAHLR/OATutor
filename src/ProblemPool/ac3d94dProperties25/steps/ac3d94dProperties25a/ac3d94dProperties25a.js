@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties25a-index.js"; const step = {id: "ac3d94dProperties25a", stepAnswer: ["$$\\left(3\\right) x+\\left(12\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(3\\right) \\left(x+\\left(4\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

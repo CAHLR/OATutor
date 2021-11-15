@@ -1,0 +1,1 @@
+import hints from "./a453be6realnumbers5b-index.js"; const step = {id: "a453be6realnumbers5b", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: "$$-\\sqrt{225}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

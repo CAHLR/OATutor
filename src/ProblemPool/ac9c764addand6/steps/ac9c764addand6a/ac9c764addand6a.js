@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand6a-index.js"; const step = {id: "ac9c764addand6a", stepAnswer: ["$$\\frac{-\\left(13\\right)}{40}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{15}-\\frac{19}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

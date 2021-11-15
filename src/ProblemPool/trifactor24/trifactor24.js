@@ -1,1 +1,1 @@
-import steps from "./trifactor24-index.js"; const problem = {id: "trifactor24", title: "Factor Perfect Square Trinomials", body: "Factor.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };
+import steps from "./trifactor24-index.js"; const problem = {id: "trifactor24", title: "Factor Perfect Square Trinomials", body: "Factor.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

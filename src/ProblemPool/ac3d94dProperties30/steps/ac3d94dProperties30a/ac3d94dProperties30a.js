@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties30a-index.js"; const step = {id: "ac3d94dProperties30a", stepAnswer: ["-y-5"], problemType: "TextBox", stepTitle: "$$-\\left(y+\\left(5\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe15a-index.js"; const step = {id: "a3c25cbexe15a", stepAnswer: ["$$\\left(b+\\left(2\\right)\\right) \\left(b-\\left(15\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$b^2-\\left(13\\right) b-\\left(30\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a08a388line18-index.js"; const problem = {id: "a08a388line18", title: "Finding Equations of Lines", body: "Find the expression of a graph from the slope and y-intercept (0,-3)", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua8-index.js"; const problem = {id: "a2d8720LinEqua8", title: "Solve the rational equation", body: "Solve the rational equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

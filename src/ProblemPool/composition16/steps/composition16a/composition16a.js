@@ -1,1 +1,1 @@
-import hints from "./composition16a-index.js"; const step = {id: "composition16a", stepAnswer: ["$$\\left(2\\right) x+\\left(6\\right)$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./composition16a-index.js"; const step = {id: "composition16a", stepAnswer: ["$$2x+6$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

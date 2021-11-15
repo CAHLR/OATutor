@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition6-index.js"; const problem = {id: "a7b98f9composition6", title: "Decomposing a Function", body: "Find functions f(x) and g(x) so the given function can be expressed as $$h(x)=f(g(x))$$.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota14r-index.js"; const step = {id: "af36e21FunNota14r", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$y^2=x^2$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

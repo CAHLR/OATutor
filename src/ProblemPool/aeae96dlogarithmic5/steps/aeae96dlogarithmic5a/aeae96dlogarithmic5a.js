@@ -1,0 +1,1 @@
+import hints from "./aeae96dlogarithmic5a-index.js"; const step = {id: "aeae96dlogarithmic5a", stepAnswer: ["$$\\frac{3}{2} \\ln(y)-\\frac{1}{2} \\ln(\\left(1\\right)-y)$$"], problemType: "TextBox", stepTitle: "$$\\ln(y \\sqrt{\\frac{y}{\\left(1\\right)-y}})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

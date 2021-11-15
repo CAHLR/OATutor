@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua20-index.js"; const problem = {id: "a2d8720LinEqua20", title: "Finding the Equation of a Line Given the Slope and One Point", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

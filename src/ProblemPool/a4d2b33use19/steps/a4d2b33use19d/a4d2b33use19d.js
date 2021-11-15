@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use19d-index.js"; const step = {id: "a4d2b33use19d", stepAnswer: ["y plus 7 is less than 19."], problemType: "MultipleChoice", stepTitle: "$$y+\\left(7\\right)<19$$", stepBody: "", choices: ["y plus 7 is less than 19.", "y plus 7 is equal to 19.", "y plus 7 is greater than 19."], answerType: "string", hints: hints, variabilization: {}}; export {step};

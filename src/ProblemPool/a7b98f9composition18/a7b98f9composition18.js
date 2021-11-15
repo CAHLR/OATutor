@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition18-index.js"; const problem = {id: "a7b98f9composition18", title: "Composition of Funtions With Exponents", body: "Given $$f(x)=\\left(2\\right) x^2+\\left(4\\right) x$$ and $$g(x)=12x$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./aa97d5brate19-index.js"; const problem = {id: "aa97d5brate19", title: "Computing Average Rate of Change for a Function Expressed as a Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

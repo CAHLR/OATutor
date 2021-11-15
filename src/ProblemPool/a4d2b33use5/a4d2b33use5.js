@@ -1,0 +1,1 @@
+import steps from "./a4d2b33use5-index.js"; const problem = {id: "a4d2b33use5", title: "Finding Like Terms", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

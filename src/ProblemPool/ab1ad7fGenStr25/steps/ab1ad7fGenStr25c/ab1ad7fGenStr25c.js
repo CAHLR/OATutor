@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25c-index.js"; const step = {id: "ab1ad7fGenStr25c", stepAnswer: ["$$\\frac{-\\left(4\\right)}{3}$$"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) \\left(\\left(8\\right)+\\left(6\\right) p\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

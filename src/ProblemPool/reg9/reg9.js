@@ -1,1 +1,1 @@
-import steps from "./reg9-index.js"; const problem = {id: "reg9", title: "Fill in the blank", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice"}; export { problem };
+import steps from "./reg9-index.js"; const problem = {id: "reg9", title: "Fill in the blank", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice", courseName: "Data Content"}; export { problem };

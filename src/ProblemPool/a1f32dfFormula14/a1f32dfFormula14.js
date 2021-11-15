@@ -1,0 +1,1 @@
+import steps from "./a1f32dfFormula14-index.js"; const problem = {id: "a1f32dfFormula14", title: "Solve the formula $$\\left(3\\right) x+\\left(4\\right) y=10$$ for y:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

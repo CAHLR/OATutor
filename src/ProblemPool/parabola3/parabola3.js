@@ -1,1 +1,1 @@
-import steps from "./parabola3-index.js"; const problem = {id: "parabola3", title: "Find components of the graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./parabola3-index.js"; const problem = {id: "parabola3", title: "Find components of the graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

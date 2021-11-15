@@ -1,0 +1,1 @@
+import steps from "./a53b893whole25-index.js"; const problem = {id: "a53b893whole25", title: "Finding Place Values", body: "Given the number 27,493,615, find the place value of the following digits.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

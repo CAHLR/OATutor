@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain1-index.js"; const problem = {id: "aeb11eedomain1", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "Find the domain of the following function:", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

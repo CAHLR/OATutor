@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25q-index.js"; const step = {id: "ab1ad7fGenStr25q", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$\\left(5\\right) \\left(\\left(8\\right)-r\\right)=-\\left(2\\right) \\left(\\left(2\\right) r-\\left(16\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

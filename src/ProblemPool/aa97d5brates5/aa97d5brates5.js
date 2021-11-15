@@ -1,0 +1,1 @@
+import steps from "./aa97d5brates5-index.js"; const problem = {id: "aa97d5brates5", title: "Finding Local Extrema from a Graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

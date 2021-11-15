@@ -1,0 +1,1 @@
+import steps from "./a372017cramer3-index.js"; const problem = {id: "a372017cramer3", title: "Find the determinant.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

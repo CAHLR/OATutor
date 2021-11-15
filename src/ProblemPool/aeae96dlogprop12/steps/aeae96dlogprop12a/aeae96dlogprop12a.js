@@ -1,0 +1,1 @@
+import hints from "./aeae96dlogprop12a-index.js"; const step = {id: "aeae96dlogprop12a", stepAnswer: ["$$\\left(2\\right) \\log(x)+\\left(3\\right) \\log(y)-\\left(4\\right) \\log(z)$$"], problemType: "TextBox", stepTitle: "Expand log((x**2*y**3)/z**4))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

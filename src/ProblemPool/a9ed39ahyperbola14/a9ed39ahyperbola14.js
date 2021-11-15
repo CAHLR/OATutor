@@ -1,0 +1,1 @@
+import steps from "./a9ed39ahyperbola14-index.js"; const problem = {id: "a9ed39ahyperbola14", title: "The Hyperbola", body: "$$\\frac{x^2}{25}-\\frac{y^2}{36}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a453be6realnumbers17b-index.js"; const step = {id: "a453be6realnumbers17b", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{-\\left(9\\right)}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

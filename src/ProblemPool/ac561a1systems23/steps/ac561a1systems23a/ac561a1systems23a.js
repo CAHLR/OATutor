@@ -1,0 +1,1 @@
+import hints from "./ac561a1systems23a-index.js"; const step = {id: "ac561a1systems23a", stepAnswer: ["(0,0)"], problemType: "MultipleChoice", stepTitle: "$$\\left(2\\right) x^3-x^2=y$$ \\n $$x^2+y=0$$", stepBody: "", choices: ["(0,0)", "(4,9)", "(3,6)", "(2,10)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral18a-index.js"; const step = {id: "add2dfegeneral18a", stepAnswer: ["$$\\left(9\\right) b^5 \\left(\\left(5\\right) b+\\left(3\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(45\\right) b^6+\\left(27\\right) b^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

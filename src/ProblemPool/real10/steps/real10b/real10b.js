@@ -1,1 +1,0 @@
-import hints from "./real10b-index.js"; const step = {id: "real10b", stepAnswer: ["Irrational"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{2}$$", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

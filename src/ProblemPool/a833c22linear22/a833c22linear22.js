@@ -1,0 +1,1 @@
+import steps from "./a833c22linear22-index.js"; const problem = {id: "a833c22linear22", title: "Finding the Population Change from a Linear Function", body: "The population of a city increased from 23,400 to 27,800 between 2008 and 2012.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/4-1-linear-functions"}; export { problem };

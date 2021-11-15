@@ -1,1 +1,1 @@
-import hints from "./SubAdd23a-index.js"; const step = {id: "SubAdd23a", stepAnswer: ["$$q=-16$$"], problemType: "TextBox", stepTitle: "$$4\\left(q+\\left(2\\right)\\right)-\\left(3\\right) q=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd23a-index.js"; const step = {id: "SubAdd23a", stepAnswer: ["$$q=-16$$"], problemType: "TextBox", stepTitle: "$$4\\left(q+2\\right)-3q=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

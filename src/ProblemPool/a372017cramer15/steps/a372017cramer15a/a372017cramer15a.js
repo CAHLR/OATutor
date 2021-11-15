@@ -1,0 +1,1 @@
+import hints from "./a372017cramer15a-index.js"; const step = {id: "a372017cramer15a", stepAnswer: ["(1/5,0)"], problemType: "TextBox", stepTitle: "$$10x-6y=2$$ $$-\\left(5\\right) x+\\left(8\\right) y=-1$$", stepBody: "Enter your solution as a coordinate pair.", answerType: "string", hints: hints, variabilization: {}}; export {step};

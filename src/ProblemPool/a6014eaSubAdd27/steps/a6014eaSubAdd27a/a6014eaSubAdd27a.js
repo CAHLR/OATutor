@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd27a-index.js"; const step = {id: "a6014eaSubAdd27a", stepAnswer: ["$$c=25$$"], problemType: "TextBox", stepTitle: "$$c+\\left(31\\right)-\\left(10\\right)=46$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

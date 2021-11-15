@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial2b-index.js"; const step = {id: "a0a04b1divmonomial2b", stepAnswer: ["$${\\left(6\\right)}^9$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(6\\right)}^{14}}{{\\left(6\\right)}^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

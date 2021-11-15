@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React  from 'react';
 import './App.css';
 import Cookies from 'universal-cookie';
 import Platform from './ProblemLogic/Platform.js';
@@ -14,15 +14,6 @@ import {
 } from "react-router-dom";
 import Notfound from "./notfound.js";
 
-// ### BEGIN CUSTOMIZABLE IMPORTS ###
-import config from './config/firebaseConfig.js';
-import skillModel from './config/skillModel.js';
-import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
-import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
-import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
-import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
-// ### END CUSTOMIZABLE IMPORTS ###
-
 import {
   ThemeContext,
   siteVersion,
@@ -37,6 +28,19 @@ import {
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+
+// ### BEGIN CUSTOMIZABLE IMPORTS ###
+import config from './config/firebaseConfig.js';
+import skillModel from './config/skillModel.js';
+import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
+import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
+import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
+import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
+import parseJwt from "./util/parseJWT";
+import AssignmentNotLinked from "./pages/AssignmentNotLinked";
+import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
+import SessionExpired from "./pages/SessionExpired";
+// ### END CUSTOMIZABLE IMPORTS ###
 
 try {
   const _config = require('./config/credentials-secret').default
@@ -73,9 +77,14 @@ theme = responsiveFontSizes(theme);
 
 const cookies = new Cookies();
 
+const queryParamToContext = {
+  "token": "jwt",
+  "lis_person_name_full": "studentName"
+}
+
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     // UserID creation/loading
     if (!cookies.get(cookieID)) {
       let d = new Date();
@@ -88,6 +97,48 @@ class App extends React.Component {
 
     this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatment() === 0 ? bktParams1 : bktParams2))
 
+    this.state = {
+      additionalContext: {}
+    }
+
+    const onLocationChange = () => {
+      const additionalContext = {}
+      const search = window.location.search
+        || window.location.hash.substr(window.location.hash.indexOf("?") + 1)
+      const sp = new URLSearchParams(search)
+
+      Object.keys(queryParamToContext).forEach(qp => {
+        const ctxKey = queryParamToContext[qp]
+        const ctxValue = sp.get(qp);
+        if(ctxValue !== null){
+          additionalContext[ctxKey] = ctxValue
+        }
+      })
+
+      if (additionalContext?.jwt) {
+        const user = parseJwt(additionalContext.jwt)
+        additionalContext['user'] = user
+        additionalContext['studentName'] = user.full_name
+      }
+      if (this.mounted) {
+        this.setState((prev) => ({
+          additionalContext: {
+            ...prev.additionalContext,
+            ...additionalContext
+          }
+        }))
+        window.history.replaceState({}, document.title, window.location.href.split("?")[0])
+      } else if (this.mounted === undefined) {
+        this.state = {
+          ...this.state,
+          additionalContext
+        }
+        window.history.replaceState({}, document.title, window.location.href.split("?")[0])
+      }
+    }
+    window.addEventListener('popstate', onLocationChange);
+    onLocationChange()
+
     this.saveProgress = this.saveProgress.bind(this)
 
     // Firebase creation
@@ -95,6 +146,14 @@ class App extends React.Component {
     if (logData) { //logData
       this.firebase = new Firebase(this.userID, config, this.getTreatment(), siteVersion);
     }
+  }
+
+  componentDidMount() {
+    this.mounted = true
+  }
+
+  componentWillUnmount() {
+    this.mounted = false
   }
 
   getTreatment = () => {
@@ -144,6 +203,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.debug('this state', this.state)
     return (
       <ThemeProvider theme={theme}>
         <ThemeContext.Provider value={{
@@ -163,7 +223,10 @@ class App extends React.Component {
           autoOperatorNames,
           studentName: '',
           middlewareURL,
+          jwt: '',
+          user: {},
           problemIDs: null,
+          ...this.state.additionalContext
         }}>
           <Router>
             <div className="Router">
@@ -186,11 +249,23 @@ class App extends React.Component {
                                  removeProgress={this.removeProgress}
                                  problemID={props.match.params.problemID} {...props} />
                 )}/>
+                <Route exact path="/assignment-not-linked" render={(props) => (
+                  <AssignmentNotLinked key={Date.now()} {...props} />
+                )}/>
+                <Route exact path="/assignment-already-linked" render={(props) => (
+                  <AssignmentAlreadyLinked key={Date.now()} {...props} />
+                )}/>
+                <Route exact path="/session-expired" render={(props) => (
+                  <SessionExpired key={Date.now()} {...props} />
+                )}/>
                 <Route component={Notfound}/>
               </Switch>
             </div>
           </Router>
-          <ToastContainer/>
+          <ToastContainer
+            autoClose={false}
+            closeOnClick={false}
+          />
         </ThemeContext.Provider>
       </ThemeProvider>
     );

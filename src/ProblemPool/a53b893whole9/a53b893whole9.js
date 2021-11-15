@@ -1,0 +1,1 @@
+import steps from "./a53b893whole9-index.js"; const problem = {id: "a53b893whole9", title: "Divisibility Tests", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

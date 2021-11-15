@@ -1,0 +1,1 @@
+import steps from "./a6f9727real12-index.js"; const problem = {id: "a6f9727real12", title: "Simplifying Algebraic Expressions", body: "Simplify each algebraic expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply16-index.js"; const problem = {id: "aafc2dcMultiply16", title: "Multiply Integers", body: "Multiply:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

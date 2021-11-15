@@ -1,1 +1,1 @@
-import hints from "./Properties2a-index.js"; const step = {id: "Properties2a", stepAnswer: ["$$y+\\left(40\\right)$$"], problemType: "TextBox", stepTitle: "$$y+\\left(12\\right)+\\left(28\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Properties2a-index.js"; const step = {id: "Properties2a", stepAnswer: ["$$y+40$$"], problemType: "TextBox", stepTitle: "$$y+12+28$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

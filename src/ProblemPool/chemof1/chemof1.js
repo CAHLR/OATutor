@@ -1,1 +1,1 @@
-import steps from "./chemof1-index.js"; const problem = {id: "chemof1", title: "Review Question 4", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./chemof1-index.js"; const problem = {id: "chemof1", title: "Review Question 4", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./real6b-index.js"; const step = {id: "real6b", stepAnswer: ["-163"], problemType: "MultipleChoice", stepTitle: "What is $$\\operatorname{100}\\left(\\left(0.75\\right)+\\left(-2.38\\right)\\right)$$?", stepBody: "", choices: ["-149", "-163", "-313", "-326"], answerType: "string", hints: hints, variabilization: {}}; export {step};

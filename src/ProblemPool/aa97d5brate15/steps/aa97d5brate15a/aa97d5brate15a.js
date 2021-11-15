@@ -1,0 +1,1 @@
+import hints from "./aa97d5brate15a-index.js"; const step = {id: "aa97d5brate15a", stepAnswer: ["27"], problemType: "TextBox", stepTitle: "$$g(x)=\\left(3\\right) x^3-\\left(1\\right)$$ on [-3,3]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

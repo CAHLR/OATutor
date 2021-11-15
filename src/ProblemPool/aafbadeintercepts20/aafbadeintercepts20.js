@@ -1,0 +1,1 @@
+import steps from "./aafbadeintercepts20-index.js"; const problem = {id: "aafbadeintercepts20", title: "Finding the Intercepts of an Equation", body: "Identify the x and y intercepts to solve the given problem.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

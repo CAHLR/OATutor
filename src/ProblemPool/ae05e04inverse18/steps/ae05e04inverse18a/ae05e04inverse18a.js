@@ -1,0 +1,1 @@
+import hints from "./ae05e04inverse18a-index.js"; const step = {id: "ae05e04inverse18a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^3-\\left(4\\right)$$, $$g(x)=\\sqrt[3]{ x+\\left(4\\right)}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

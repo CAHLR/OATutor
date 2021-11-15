@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe2a-index.js"; const step = {id: "a3c25cbexe2a", stepAnswer: ["(x-2)(x-6)"], problemType: "TextBox", stepTitle: "$$x^2-\\left(8\\right) x+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

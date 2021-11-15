@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe18a-index.js"; const step = {id: "a3c25cbexe18a", stepAnswer: ["$$\\left(m+\\left(11\\right)\\right) \\left(m+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$m^2+\\left(12\\right) m+\\left(11\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

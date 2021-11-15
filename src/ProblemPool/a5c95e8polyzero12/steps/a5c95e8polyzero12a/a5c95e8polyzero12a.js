@@ -1,0 +1,1 @@
+import hints from "./a5c95e8polyzero12a-index.js"; const step = {id: "a5c95e8polyzero12a", stepAnswer: ["95"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{\\left(3\\right) x^3+\\left(4\\right) x^2-\\left(8\\right) x+\\left(2\\right)}{x-\\left(3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

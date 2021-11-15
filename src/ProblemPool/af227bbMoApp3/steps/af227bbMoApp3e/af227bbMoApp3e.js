@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp3e-index.js"; const step = {id: "af227bbMoApp3e", stepAnswer: ["600"], problemType: "TextBox", stepTitle: "How many minutes of talk-time would yield equal monthly statements from both companies?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./real1b-index.js"; const step = {id: "real1b", stepAnswer: ["0.52"], problemType: "TextBox", stepTitle: "What is $$\\frac{13}{25}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

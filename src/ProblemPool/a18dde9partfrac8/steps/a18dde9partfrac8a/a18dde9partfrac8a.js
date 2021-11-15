@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac8a-index.js"; const step = {id: "a18dde9partfrac8a", stepAnswer: ["$$\\frac{3}{x+\\left(2\\right)}+\\frac{3}{x-\\left(2\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

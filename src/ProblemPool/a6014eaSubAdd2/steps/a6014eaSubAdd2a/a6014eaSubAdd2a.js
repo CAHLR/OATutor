@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd2a-index.js"; const step = {id: "a6014eaSubAdd2a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "$$\\left(9\\right) y+\\left(2\\right)=\\left(6\\right) y+\\left(3\\right)$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

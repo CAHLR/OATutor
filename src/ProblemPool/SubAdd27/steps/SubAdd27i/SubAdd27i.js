@@ -1,1 +1,1 @@
-import hints from "./SubAdd27i-index.js"; const step = {id: "SubAdd27i", stepAnswer: ["$$j=8$$"], problemType: "TextBox", stepTitle: "$$-\\left(j+\\left(2\\right)\\right)+\\left(2\\right) j-\\left(1\\right)=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd27i-index.js"; const step = {id: "SubAdd27i", stepAnswer: ["$$j=8$$"], problemType: "TextBox", stepTitle: "$$-\\left(j+2\\right)+2j-1=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

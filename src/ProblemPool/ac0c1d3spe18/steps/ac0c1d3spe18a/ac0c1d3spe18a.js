@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe18a-index.js"; const step = {id: "ac0c1d3spe18a", stepAnswer: ["$$\\left(4\\right) y^2-\\left(12\\right) y z+\\left(9\\right) z^2$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(2\\right) y-\\left(3\\right) z\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

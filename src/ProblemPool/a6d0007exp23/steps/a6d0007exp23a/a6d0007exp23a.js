@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp23a-index.js"; const step = {id: "a6d0007exp23a", stepAnswer: ["$$\\left(1.0995\\right) {\\left(10\\right)}^{12}$$"], problemType: "TextBox", stepTitle: "Rewrite in scientific notation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

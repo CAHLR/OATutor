@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand20a-index.js"; const step = {id: "ac9c764addand20a", stepAnswer: ["$$\\frac{9}{14}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{2}+\\frac{1}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

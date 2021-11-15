@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand12a-index.js"; const step = {id: "ac9c764addand12a", stepAnswer: ["$$\\frac{-\\left(1\\right)}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(5\\right)}{6}-y$$ when $$y=\\frac{-\\left(2\\right)}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

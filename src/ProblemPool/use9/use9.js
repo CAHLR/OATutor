@@ -1,1 +1,1 @@
-import steps from "./use9-index.js"; const problem = {id: "use9", title: "Evaluating Expressions", body: "When $$x=3$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./use9-index.js"; const problem = {id: "use9", title: "Evaluating Expressions", body: "When $$x=3$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

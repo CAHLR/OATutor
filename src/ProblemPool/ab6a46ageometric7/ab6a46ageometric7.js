@@ -1,0 +1,1 @@
+import steps from "./ab6a46ageometric7-index.js"; const problem = {id: "ab6a46ageometric7", title: "Writing Terms of Geometric Sequences Using the Explicit Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

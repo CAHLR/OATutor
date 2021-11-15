@@ -1,0 +1,1 @@
+import hints from "./a5c2168rotation8a-index.js"; const step = {id: "a5c2168rotation8a", stepAnswer: ["Parabola"], problemType: "MultipleChoice", stepTitle: "$$x^2-\\left(10\\right) x+\\left(4\\right) y-\\left(10\\right)=0$$", stepBody: "", choices: ["Ellipse", "Circle", "Hyperbola", "Parabola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

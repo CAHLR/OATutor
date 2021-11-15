@@ -1,0 +1,1 @@
+var hints = [{id: "af69facexpolog15a-h1", type: "hint", dependencies: [], title: "Plugging in 0 for t", text: "We must plug in 0 for t, as this represents the initial population. This leaves us with $$\\frac{1000}{10}$$ which simplifies to 100.", variabilization: {exponent: ["0.6", "-0.8", "-0."]}}, ]; export {hints};

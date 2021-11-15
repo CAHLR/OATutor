@@ -1,1 +1,1 @@
-import hints from "./abs9a-index.js"; const step = {id: "abs9a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$y=|x+\\left(1\\right)|$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./abs9a-index.js"; const step = {id: "abs9a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$y=|x+1|$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

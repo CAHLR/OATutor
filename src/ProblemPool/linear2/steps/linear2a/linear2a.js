@@ -1,1 +1,1 @@
-import hints from "./linear2a-index.js"; const step = {id: "linear2a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$\\left(3\\right) x+\\left(5\\right) y=15$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./linear2a-index.js"; const step = {id: "linear2a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$3x+5y=15$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

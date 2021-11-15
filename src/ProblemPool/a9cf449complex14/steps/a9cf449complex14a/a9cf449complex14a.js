@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex14a-index.js"; const step = {id: "a9cf449complex14a", stepAnswer: ["-4-7i"], problemType: "TextBox", stepTitle: "$$\\left(-\\left(1\\right)+\\left(2\\right) i\\right) \\left(-\\left(2\\right)+\\left(3\\right) i\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

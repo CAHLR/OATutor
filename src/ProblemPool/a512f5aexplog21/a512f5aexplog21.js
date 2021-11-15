@@ -1,0 +1,1 @@
+import steps from "./a512f5aexplog21-index.js"; const problem = {id: "a512f5aexplog21", title: "Solving an Exponential Equation with a Common Base #3", body: "Solve for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

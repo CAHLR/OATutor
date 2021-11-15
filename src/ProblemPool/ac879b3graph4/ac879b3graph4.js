@@ -1,1 +1,1 @@
-import steps from "./ac879b3graph4-index.js"; const problem = {id: "ac879b3graph4", title: "Determining the X- and Y-Intercepts to an Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ac879b3graph4-index.js"; const problem = {id: "ac879b3graph4", title: "Determining the X- and Y-Intercepts to an Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

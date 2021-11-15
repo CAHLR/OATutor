@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog1a-index.js"; const step = {id: "a512f5aexplog1a", stepAnswer: ["$$\\frac{-\\left(1\\right)}{3}$$"], problemType: "TextBox", stepTitle: "$$\\left(64\\right) {\\left(4\\right)}^{\\left(3\\right) x}$$ $$=$$ 16", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

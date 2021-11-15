@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota14j-index.js"; const step = {id: "af36e21FunNota14j", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{\\left(3\\right) x+\\left(5\\right)}{\\left(7\\right) x-\\left(1\\right)}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

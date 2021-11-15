@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain2-index.js"; const problem = {id: "aeb11eedomain2", title: "Finding the Domain of a Function", body: "Find the domain of the function.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

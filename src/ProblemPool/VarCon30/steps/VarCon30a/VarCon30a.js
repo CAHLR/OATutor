@@ -1,1 +1,1 @@
-import hints from "./VarCon30a-index.js"; const step = {id: "VarCon30a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$\\left(7.8\\right) x+\\left(4\\right)=5.4x-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon30a-index.js"; const step = {id: "VarCon30a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$7.8x+4=5.4x-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

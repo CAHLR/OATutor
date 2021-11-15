@@ -1,1 +1,1 @@
-import steps from "./rates5-index.js"; const problem = {id: "rates5", title: "Finding Local Extrema from a Graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./rates5-index.js"; const problem = {id: "rates5", title: "Finding Local Extrema from a Graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

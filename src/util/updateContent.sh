@@ -26,6 +26,7 @@ git remote update && git status -uno | grep -q 'Your branch is behind' && change
 
 if [ $changed -eq 1 ]; then
   echo "Content repository is not updated."
+  git reset --hard
   git pull
 fi
 
