@@ -1,1 +1,1 @@
-import hints from "./SubAdd17k-index.js"; const step = {id: "SubAdd17k", stepAnswer: ["$$q=\\frac{-\\left(1\\right)}{4}$$"], problemType: "TextBox", stepTitle: "$$q+\\frac{3}{4}=\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./SubAdd17k-index.js"; const step = {id: "SubAdd17k", stepAnswer: ["$$q=\\frac{-1}{4}$$"], problemType: "TextBox", stepTitle: "$$q+\\frac{3}{4}=\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

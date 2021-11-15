@@ -1,1 +1,1 @@
-import hints from "./exponents27a-index.js"; const step = {id: "exponents27a", stepAnswer: ["$$n^7$$"], problemType: "TextBox", stepTitle: "$$\\frac{n^5}{n^{-\\left(2\\right)}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents27a-index.js"; const step = {id: "exponents27a", stepAnswer: ["$$n^7$$"], problemType: "TextBox", stepTitle: "$$\\frac{n^5}{n^{-2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

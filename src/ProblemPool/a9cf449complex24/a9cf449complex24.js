@@ -1,0 +1,1 @@
+import steps from "./a9cf449complex24-index.js"; const problem = {id: "a9cf449complex24", title: "Dividing Complex Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

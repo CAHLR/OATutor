@@ -1,0 +1,1 @@
+import hints from "./a9981abAbsolute4b-index.js"; const step = {id: "a9981abAbsolute4b", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "Finding the y-intercept.", stepBody: "Find the y-intercept of the function $$f(x)=-|x+\\left(4\\right)|-\\left(3\\right)$$. What is the y value?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./a5991b4add6a-index.js"; const step = {id: "a5991b4add6a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) y^3-\\left(10\\right) y^2+\\left(2\\right) y-\\left(6\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a5991b4add6a-index.js"; const step = {id: "a5991b4add6a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$9y^3-10y^2+2y-6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

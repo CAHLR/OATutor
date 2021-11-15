@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral5a-index.js"; const step = {id: "add2dfegeneral5a", stepAnswer: ["$${\\left(m+\\left(7\\right) n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$m^2+\\left(14\\right) mn+\\left(49\\right) n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

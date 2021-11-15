@@ -1,1 +1,1 @@
-import hints from "./exponents29a-index.js"; const step = {id: "exponents29a", stepAnswer: ["$$\\left(3.4\\right) {\\left(10\\right)}^5$$"], problemType: "TextBox", stepTitle: "340000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents29a-index.js"; const step = {id: "exponents29a", stepAnswer: ["$$3.4{10}^5$$"], problemType: "TextBox", stepTitle: "340000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

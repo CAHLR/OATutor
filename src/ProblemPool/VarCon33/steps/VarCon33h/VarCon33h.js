@@ -1,1 +1,1 @@
-import hints from "./VarCon33h-index.js"; const step = {id: "VarCon33h", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$\\frac{7}{4} m-\\left(7\\right)=\\frac{3}{4} m-\\left(13\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon33h-index.js"; const step = {id: "VarCon33h", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$\\frac{7}{4} m-7=\\frac{3}{4} m-13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

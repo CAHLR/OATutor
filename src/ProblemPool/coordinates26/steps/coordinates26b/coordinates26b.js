@@ -1,1 +1,1 @@
-import hints from "./coordinates26b-index.js"; const step = {id: "coordinates26b", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$y=\\frac{x}{2}+\\left(4\\right)$$", stepBody: "If $$x=2$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./coordinates26b-index.js"; const step = {id: "coordinates26b", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$y=\\frac{x}{2}+4$$", stepBody: "If $$x=2$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

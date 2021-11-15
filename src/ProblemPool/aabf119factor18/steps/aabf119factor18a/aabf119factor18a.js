@@ -1,0 +1,1 @@
+import hints from "./aabf119factor18a-index.js"; const step = {id: "aabf119factor18a", stepAnswer: ["$$\\left(\\left(2\\right) p-\\left(7\\right)\\right) \\left(p+\\left(1\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) p^2$$ - 5p - 7", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./VarCon26a-index.js"; const step = {id: "VarCon26a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$4k-1=\\left(7\\right) k+\\left(17\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./VarCon26a-index.js"; const step = {id: "VarCon26a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$4k-1=7k+17$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

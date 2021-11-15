@@ -1,0 +1,1 @@
+import steps from "./afbe5ccpower8-index.js"; const problem = {id: "afbe5ccpower8", title: "Determining the Number of Intercepts and Turning Points of a Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

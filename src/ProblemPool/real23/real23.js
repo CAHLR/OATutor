@@ -1,1 +1,0 @@
-import steps from "./real23-index.js"; const problem = {id: "real23", title: "Identifying Rationality of Numbers", body: "Decide whether each of the following numbers is rational or irrational.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

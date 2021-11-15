@@ -1,1 +1,1 @@
-import steps from "./use13-index.js"; const problem = {id: "use13", title: "Identifying Coefficients", body: "Identify the coefficient of the following expressions:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./use13-index.js"; const problem = {id: "use13", title: "Identifying Coefficients", body: "Identify the coefficient of the following expressions:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a14ffbcmodeling23-index.js"; const problem = {id: "a14ffbcmodeling23", title: "Describing Variable Relationships", body: "For the following exercises, write an equation describing the relationship of the given variables.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

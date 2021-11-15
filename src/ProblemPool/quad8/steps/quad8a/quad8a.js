@@ -1,1 +1,1 @@
-import hints from "./quad8a-index.js"; const step = {id: "quad8a", stepAnswer: ["(-1+sqrt(17))/8, (-1-sqrt(17))/8"], problemType: "TextBox", stepTitle: "$$\\left(4\\right)+\\frac{1}{x}-\\frac{1}{x^2}=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./quad8a-index.js"; const step = {id: "quad8a", stepAnswer: ["(-1+sqrt(17))/8, (-1-sqrt(17))/8"], problemType: "TextBox", stepTitle: "$$4+\\frac{1}{x}-\\frac{1}{x^2}=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

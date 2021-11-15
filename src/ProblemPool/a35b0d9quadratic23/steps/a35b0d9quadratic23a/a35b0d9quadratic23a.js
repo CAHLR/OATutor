@@ -1,0 +1,1 @@
+import hints from "./a35b0d9quadratic23a-index.js"; const step = {id: "a35b0d9quadratic23a", stepAnswer: ["Minimum"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\left(4\\right) x^2+x-\\left(1\\right)$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

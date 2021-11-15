@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp4b-index.js"; const step = {id: "a6d0007exp4b", stepAnswer: ["$${\\left(-3\\right)}^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-3\\right)}^6}{-\\left(3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

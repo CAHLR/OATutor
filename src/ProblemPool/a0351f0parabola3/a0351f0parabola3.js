@@ -1,0 +1,1 @@
+import steps from "./a0351f0parabola3-index.js"; const problem = {id: "a0351f0parabola3", title: "Find components of the graph", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

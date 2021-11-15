@@ -1,0 +1,1 @@
+import hints from "./a137dddgre19a-index.js"; const step = {id: "a137dddgre19a", stepAnswer: ["$$\\left(2\\right) a$$"], problemType: "TextBox", stepTitle: "$$\\left(10\\right) a^3$$, $$\\left(12\\right) a^2$$, $$\\left(14\\right) a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

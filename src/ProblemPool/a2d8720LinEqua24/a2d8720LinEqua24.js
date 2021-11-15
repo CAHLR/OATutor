@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua24-index.js"; const problem = {id: "a2d8720LinEqua24", title: "Finding the Equation of a Line Passing Through the Given Points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

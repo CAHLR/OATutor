@@ -1,1 +1,0 @@
-import hints from "./real10c-index.js"; const step = {id: "real10c", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "1.414213", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

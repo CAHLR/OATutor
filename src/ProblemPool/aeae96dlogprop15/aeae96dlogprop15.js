@@ -1,0 +1,1 @@
+import steps from "./aeae96dlogprop15-index.js"; const problem = {id: "aeae96dlogprop15", title: "Condensing Logarithmic Expressions", body: "Condense the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

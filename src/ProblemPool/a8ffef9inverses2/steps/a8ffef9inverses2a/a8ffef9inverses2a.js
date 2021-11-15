@@ -1,0 +1,1 @@
+import hints from "./a8ffef9inverses2a-index.js"; const step = {id: "a8ffef9inverses2a", stepAnswer: ["$$\\sqrt[3]{ \\frac{x-\\left(1\\right)}{5}}$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\left(5\\right) x^3+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

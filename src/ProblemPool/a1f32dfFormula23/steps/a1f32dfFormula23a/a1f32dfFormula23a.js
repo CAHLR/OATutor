@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula23a-index.js"; const step = {id: "a1f32dfFormula23a", stepAnswer: ["$$b=90-a$$"], problemType: "MultipleChoice", stepTitle: "Solve $$a+b=90$$ for b.", stepBody: "", choices: ["$$b=90a$$", "$$b=\\left(90\\right)+a$$", "$$b=90-a$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

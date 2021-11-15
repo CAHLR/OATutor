@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota18b-index.js"; const step = {id: "af36e21FunNota18b", stepAnswer: ["$$\\frac{11}{12}$$"], problemType: "TextBox", stepTitle: "f(2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

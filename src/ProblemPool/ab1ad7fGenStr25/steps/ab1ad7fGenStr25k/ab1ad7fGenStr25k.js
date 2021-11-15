@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25k-index.js"; const step = {id: "ab1ad7fGenStr25k", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{1}{4} \\left(\\left(20\\right) d+\\left(12\\right)\\right)=d+\\left(7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

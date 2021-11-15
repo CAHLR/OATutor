@@ -1,1 +1,1 @@
-import hints from "./GenStr4a-index.js"; const step = {id: "GenStr4a", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "$$-\\left(y+\\left(9\\right)\\right)=8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./GenStr4a-index.js"; const step = {id: "GenStr4a", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "$$-\\left(y+9\\right)=8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

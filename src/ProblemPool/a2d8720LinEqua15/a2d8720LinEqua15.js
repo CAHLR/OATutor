@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua15-index.js"; const problem = {id: "a2d8720LinEqua15", title: "For the following exercises, solve the equation for x. State all x-values that are excluded from the solution set.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

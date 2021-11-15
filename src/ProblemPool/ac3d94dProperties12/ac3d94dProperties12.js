@@ -1,0 +1,1 @@
+import steps from "./ac3d94dProperties12-index.js"; const problem = {id: "ac3d94dProperties12", title: "Simplify the following expression.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

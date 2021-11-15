@@ -1,0 +1,1 @@
+import hints from "./a1a1ee1measure23a-index.js"; const step = {id: "a1a1ee1measure23a", stepAnswer: ["3.072"], problemType: "TextBox", stepTitle: "Mount Whitney is 3,072 meters tall. Convert the height to kilometers.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

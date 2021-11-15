@@ -1,1 +1,1 @@
-import steps from "./explog25-index.js"; const problem = {id: "explog25", title: "Using Algebra to Solve a Logarithmic Equation #2", body: "Solve for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./explog25-index.js"; const problem = {id: "explog25", title: "Using Algebra to Solve a Logarithmic Equation #2", body: "Solve for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

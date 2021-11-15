@@ -1,0 +1,1 @@
+import steps from "./a3b09a3binomseq1-index.js"; const problem = {id: "a3b09a3binomseq1", title: "Writing a Given Term of a Binomial Expansion", body: "Find the tenth term of $${\\left(x+\\left(2\\right) y\\right)}^{16}$$ without fully expanding the binomial", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };

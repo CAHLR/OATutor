@@ -1,0 +1,1 @@
+import hints from "./a9c142dVarCon33f-index.js"; const step = {id: "a9c142dVarCon33f", stepAnswer: ["$$\\frac{-\\left(8\\right)}{5}$$"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) p+\\left(14\\right)=\\left(6\\right)+\\left(4\\right) p$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

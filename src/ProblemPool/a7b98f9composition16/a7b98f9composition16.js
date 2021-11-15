@@ -1,0 +1,1 @@
+import steps from "./a7b98f9composition16-index.js"; const problem = {id: "a7b98f9composition16", title: "Composition of Funtions With Exponents", body: "For $$f(x)=x^2+\\left(2\\right) x$$ and $$g(x)=\\left(6\\right)-x^2$$, solve the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

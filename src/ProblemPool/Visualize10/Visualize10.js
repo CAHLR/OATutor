@@ -1,1 +1,1 @@
-import steps from "./Visualize10-index.js"; const problem = {id: "Visualize10", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./Visualize10-index.js"; const problem = {id: "Visualize10", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

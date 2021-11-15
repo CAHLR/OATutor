@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp13-index.js"; const problem = {id: "ae9e419IneqApp13", title: "Selling Kitchen Aprons", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

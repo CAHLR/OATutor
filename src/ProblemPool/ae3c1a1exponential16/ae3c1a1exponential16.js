@@ -1,0 +1,1 @@
+import steps from "./ae3c1a1exponential16-index.js"; const problem = {id: "ae3c1a1exponential16", title: "Evaluating Exponential Function", body: "Evaluate the function. Round the answer to four decimal places, if necessary.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

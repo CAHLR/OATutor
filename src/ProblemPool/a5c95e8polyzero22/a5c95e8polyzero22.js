@@ -1,0 +1,1 @@
+import steps from "./a5c95e8polyzero22-index.js"; const problem = {id: "a5c95e8polyzero22", title: "Using the Rational Zero Theorem #7", body: "Use the Rational Zero Theorem to find the real solution(s) to the equation.", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

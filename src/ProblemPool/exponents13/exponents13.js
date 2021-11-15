@@ -1,1 +1,1 @@
-import steps from "./exponents13-index.js"; const problem = {id: "exponents13", title: "Convert to Scientific Notation", body: "Write the integer in scientific notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./exponents13-index.js"; const problem = {id: "exponents13", title: "Convert to Scientific Notation", body: "Write the integer in scientific notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a137dddgre29-index.js"; const problem = {id: "a137dddgre29", title: "Greatest Common Factor", body: "Factor the greatest common factor from each polynomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral7a-index.js"; const step = {id: "add2dfegeneral7a", stepAnswer: ["$$7\\left(b+\\left(3\\right)\\right) \\left(b-\\left(2\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(7\\right) b^2+\\left(7\\right) b-\\left(42\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

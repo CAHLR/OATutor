@@ -1,0 +1,1 @@
+import hints from "./a1268beother11a-index.js"; const step = {id: "a1268beother11a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$|x+\\left(5\\right)|=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

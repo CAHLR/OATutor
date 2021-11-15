@@ -1,0 +1,1 @@
+import steps from "./a01e792probsolve22-index.js"; const problem = {id: "a01e792probsolve22", title: "Solve Number Problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/3-1-use-a-problem-solving-strategy"}; export { problem };

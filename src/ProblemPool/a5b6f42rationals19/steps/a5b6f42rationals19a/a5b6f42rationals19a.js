@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals19a-index.js"; const step = {id: "a5b6f42rationals19a", stepAnswer: ["$$\\frac{1}{10}$$"], problemType: "TextBox", stepTitle: "C(t) $$=$$ $$\\left(5\\right)+\\frac{t}{\\left(100\\right)+\\left(10\\right) t}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

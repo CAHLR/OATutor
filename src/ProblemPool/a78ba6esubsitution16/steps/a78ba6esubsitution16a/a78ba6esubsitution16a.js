@@ -1,0 +1,1 @@
+import hints from "./a78ba6esubsitution16a-index.js"; const step = {id: "a78ba6esubsitution16a", stepAnswer: ["(0,10)"], problemType: "MultipleChoice", stepTitle: "$$\\left(4\\right) x+y=10$$, $$x-2y=-20$$", stepBody: "", choices: ["(0,2)", "(3,2)", "(4,6)", "(0,10)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

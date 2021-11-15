@@ -1,0 +1,1 @@
+import steps from "./a1279cdpowers20-index.js"; const problem = {id: "a1279cdpowers20", title: "Simplify Expressions Using the Power Property for Exponents", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

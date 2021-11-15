@@ -1,1 +1,1 @@
-import hints from "./use35a-index.js"; const step = {id: "use35a", stepAnswer: ["86"], problemType: "TextBox", stepTitle: "$$\\left(9\\right)+{\\left(5\\right)}^3-4\\left(\\left(9\\right)+\\left(3\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use35a-index.js"; const step = {id: "use35a", stepAnswer: ["86"], problemType: "TextBox", stepTitle: "$$9+5^3-4\\left(9+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

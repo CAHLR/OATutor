@@ -1,0 +1,1 @@
+import steps from "./a20771equad2-index.js"; const problem = {id: "a20771equad2", title: "Solving Quadratic Equations", body: "For the following exercises, solve the quadratic equation by completing the square. Show each step:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

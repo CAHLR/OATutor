@@ -1,1 +1,1 @@
-import steps from "./sequences21-index.js"; const problem = {id: "sequences21", title: "Writing the Terms of a Sequence Defined by a Recursive Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./sequences21-index.js"; const problem = {id: "sequences21", title: "Writing the Terms of a Sequence Defined by a Recursive Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

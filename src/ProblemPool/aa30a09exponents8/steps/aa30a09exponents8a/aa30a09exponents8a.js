@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents8a-index.js"; const step = {id: "aa30a09exponents8a", stepAnswer: ["$$\\frac{1}{r^2 s^8}$$"], problemType: "TextBox", stepTitle: "$$r^5 s^{\\left(-3\\right)} r^{\\left(-7\\right)} s^{\\left(-5\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

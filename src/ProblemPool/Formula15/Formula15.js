@@ -1,1 +1,1 @@
-import steps from "./Formula15-index.js"; const problem = {id: "Formula15", title: "$$P=a+b+c$$", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./Formula15-index.js"; const problem = {id: "Formula15", title: "$$P=a+b+c$$", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

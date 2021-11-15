@@ -1,0 +1,1 @@
+import steps from "./a6614c6sol19-index.js"; const problem = {id: "a6614c6sol19", title: "System of Equations", body: "Translate to a system of equations and solve.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

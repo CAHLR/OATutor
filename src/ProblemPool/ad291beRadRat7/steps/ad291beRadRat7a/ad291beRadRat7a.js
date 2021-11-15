@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat7a-index.js"; const step = {id: "ad291beRadRat7a", stepAnswer: ["$$\\frac{x \\sqrt{2}}{3} y^2$$"], problemType: "TextBox", stepTitle: "Simplify the radical expression: sqrt[(2x**2)/(9y**4)]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

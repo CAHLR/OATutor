@@ -1,1 +1,1 @@
-import hints from "./powers23a-index.js"; const step = {id: "powers23a", stepAnswer: ["$$\\left(144\\right) y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\left(12\\right) y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./powers23a-index.js"; const step = {id: "powers23a", stepAnswer: ["$$144y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(-12y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

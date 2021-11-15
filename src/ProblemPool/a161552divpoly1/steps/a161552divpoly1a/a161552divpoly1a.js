@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly1a-index.js"; const step = {id: "a161552divpoly1a", stepAnswer: ["5x-2"], problemType: "TextBox", stepTitle: "Divide $$\\left(5\\right) x^2+\\left(3\\right) x-\\left(2\\right)$$ by $$x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9c142dVarCon33d-index.js"; const step = {id: "a9c142dVarCon33d", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) c+\\left(7\\right)=-3c-37$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

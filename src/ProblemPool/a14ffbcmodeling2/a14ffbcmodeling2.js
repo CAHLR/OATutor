@@ -1,0 +1,1 @@
+import steps from "./a14ffbcmodeling2-index.js"; const problem = {id: "a14ffbcmodeling2", title: "Writing a Formula for an Inversely Proportional Relationship", body: "A tourist plans to drive 100 miles.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

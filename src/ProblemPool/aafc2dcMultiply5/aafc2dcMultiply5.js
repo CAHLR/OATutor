@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply5-index.js"; const problem = {id: "aafc2dcMultiply5", title: "Simplify Expressions", body: "Simplify the following integer expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

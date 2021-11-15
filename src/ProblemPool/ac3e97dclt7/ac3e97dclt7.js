@@ -1,0 +1,1 @@
+import steps from "./ac3e97dclt7-index.js"; const problem = {id: "ac3e97dclt7", title: "Identifying the Correct Term", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/7-3-using-the-central-limit-theorem"}; export { problem };

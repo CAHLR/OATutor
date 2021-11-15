@@ -1,0 +1,1 @@
+import steps from "./a6014eaSubAdd30-index.js"; const problem = {id: "a6014eaSubAdd30", title: "Translate and solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

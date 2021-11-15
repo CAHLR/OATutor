@@ -1,0 +1,1 @@
+import hints from "./aaa317eLinIneq24a-index.js"; const step = {id: "aaa317eLinIneq24a", stepAnswer: ["[-1,5]"], problemType: "TextBox", stepTitle: "Describe all x-values within a distance of 3 from the number 2.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

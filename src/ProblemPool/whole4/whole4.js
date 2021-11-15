@@ -1,1 +1,1 @@
-import steps from "./whole4-index.js"; const problem = {id: "whole4", title: "Rounding Whole Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./whole4-index.js"; const problem = {id: "whole4", title: "Rounding Whole Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

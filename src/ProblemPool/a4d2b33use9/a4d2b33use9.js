@@ -1,0 +1,1 @@
+import steps from "./a4d2b33use9-index.js"; const problem = {id: "a4d2b33use9", title: "Evaluating Expressions", body: "When $$x=3$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

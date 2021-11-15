@@ -1,1 +1,1 @@
-import hints from "./exponents14a-index.js"; const step = {id: "exponents14a", stepAnswer: ["$$\\left(5.2\\right) {\\left(10\\right)}^{\\left(-3\\right)}$$"], problemType: "TextBox", stepTitle: "0.0052", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./exponents14a-index.js"; const step = {id: "exponents14a", stepAnswer: ["$$5.2{10}^{\\left(-3\\right)}$$"], problemType: "TextBox", stepTitle: "0.0052", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp19a-index.js"; const step = {id: "a6d0007exp19a", stepAnswer: ["354700000000000"], problemType: "TextBox", stepTitle: "$$\\left(3.547\\right) {\\left(10\\right)}^{14}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a6f9727real10-index.js"; const problem = {id: "a6f9727real10", title: "Identifying Rational Numbers", body: "Decide whether each of the following numbers is rational or irrational.", steps: steps, variabilization: {}, oer: "http://tasks.illustrativemathematics.org/"}; export { problem };

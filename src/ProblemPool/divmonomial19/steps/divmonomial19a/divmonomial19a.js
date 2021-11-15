@@ -1,1 +1,1 @@
-import hints from "./divmonomial19a-index.js"; const step = {id: "divmonomial19a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(\\left(12\\right) x\\right)}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./divmonomial19a-index.js"; const step = {id: "divmonomial19a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(12x\\right)}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

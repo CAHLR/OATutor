@@ -1,0 +1,1 @@
+import hints from "./a1268beother12a-index.js"; const step = {id: "a1268beother12a", stepAnswer: ["1,-1,3,-3"], problemType: "MultipleChoice", stepTitle: "$$x^4-\\left(10\\right) x^2+\\left(9\\right)=0$$", stepBody: "", choices: ["1,3", "-1,-3", "1,-1,3,-3", "1,-1,3,-3,0"], answerType: "string", hints: hints, variabilization: {}}; export {step};

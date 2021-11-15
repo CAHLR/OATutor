@@ -1,1 +1,1 @@
-import hints from "./ser7a-index.js"; const step = {id: "ser7a", stepAnswer: ["9.3"], problemType: "TextBox", stepTitle: "$$-\\left(1.7\\right)+-\\left(0.4\\right)+\\left(0.9\\right)+\\left(2.2\\right)+\\left(3.5\\right)+\\left(4.8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./ser7a-index.js"; const step = {id: "ser7a", stepAnswer: ["9.3"], problemType: "TextBox", stepTitle: "$$-1.7+-0.4+0.9+2.2+3.5+4.8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

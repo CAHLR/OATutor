@@ -1,1 +1,1 @@
-import hints from "./use30b-index.js"; const step = {id: "use30b", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$${\\left(0\\right)}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./use30b-index.js"; const step = {id: "use30b", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$0^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

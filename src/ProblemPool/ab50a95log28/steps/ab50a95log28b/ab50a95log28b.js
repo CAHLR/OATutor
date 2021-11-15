@@ -1,0 +1,1 @@
+import hints from "./ab50a95log28b-index.js"; const step = {id: "ab50a95log28b", stepAnswer: ["27"], problemType: "TextBox", stepTitle: "log base 3 of $$x=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

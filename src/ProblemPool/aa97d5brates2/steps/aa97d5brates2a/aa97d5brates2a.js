@@ -1,0 +1,1 @@
+import hints from "./aa97d5brates2a-index.js"; const step = {id: "aa97d5brates2a", stepAnswer: ["$$\\frac{49}{8}$$"], problemType: "TextBox", stepTitle: "Compute the average rate of change of $$f(x)=x^2-\\frac{1}{x}$$ on the interval[2,4].", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -7,16 +7,20 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
-import { lessonPlans, coursePlans } from '../config/config.js';
+import { lessonPlans, coursePlans, ThemeContext } from '../config/config.js';
 import {
-  HashRouter as Router,
   NavLink
 } from "react-router-dom";
 
-
 class LessonSelection extends React.Component {
-  constructor(props) {
+  static contextType = ThemeContext;
+
+  constructor(props, context) {
     super(props);
+
+    this.user = context.user || {}
+    this.isPrivileged = !!this.user.privileged
+
     this.lessonPlans = lessonPlans;
     this.coursePlans = coursePlans;
     this.state = {
@@ -49,8 +53,14 @@ class LessonSelection extends React.Component {
           >
             <Box width="75%" maxWidth={1500}>
               <center>
-                <h1>Welcome to OpenITS!</h1>
+                {this.isPrivileged
+                  ? <h1>Welcome Instructor!</h1>
+                  : <h1>Welcome to OpenITS!</h1>
+                }
                 <h2>Please select a course</h2>
+                {this.isPrivileged
+                && <h4>(for {this.user.resource_link_title})</h4>
+                }
               </center>
               <Divider/>
               <br/>
@@ -63,7 +73,8 @@ class LessonSelection extends React.Component {
                           <h2 style={{ marginTop: "5px", marginBottom: "10px" }}>{course.courseName}</h2>
                           <NavLink activeClassName="active" className="link" to={"/courses/" + i} type="menu">
                             <IconButton aria-label="delete" onClick={() => this.props.selectCourse(course)}>
-                              <img src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`} width="64px" title="View course"
+                              <img src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`} width="64px"
+                                   title="View course"
                                    alt="folderIcon"/>
                             </IconButton>
                           </NavLink>
@@ -78,14 +89,14 @@ class LessonSelection extends React.Component {
           <br/>
           <Grid container spacing={0}>
             <Grid item xs={3} sm={3} md={5} key={1}/>
-            <Grid item xs={6} sm={6} md={2} key={2}>
+            {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
               {this.state.preparedRemoveProgress ?
                 <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.removeProgress}
                         disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
                 <Button className={classes.button} style={{ width: "100%" }} size="small"
                         onClick={this.prepareRemoveProgress}
                         disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
-            </Grid>
+            </Grid>}
             <Grid item xs={3} sm={3} md={4} key={3}/>
           </Grid>
           <br/>
@@ -103,8 +114,14 @@ class LessonSelection extends React.Component {
           >
             <Box width="75%" maxWidth={1500}>
               <center>
-                <h1>Welcome to OpenITS!</h1>
+                {this.isPrivileged
+                  ? <h1>Welcome Instructor!</h1>
+                  : <h1>Welcome to OpenITS!</h1>
+                }
                 <h2>Please select a lesson plan</h2>
+                {this.isPrivileged
+                && <h4>(for {this.user.resource_link_title})</h4>
+                }
               </center>
               <Divider/>
               <br/>
@@ -134,14 +151,14 @@ class LessonSelection extends React.Component {
           <br/>
           <Grid container spacing={0}>
             <Grid item xs={3} sm={3} md={5} key={1}/>
-            <Grid item xs={6} sm={6} md={2} key={2}>
+            {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
               {this.state.preparedRemoveProgress ?
                 <Button className={classes.button} style={{ width: "100%" }} size="small" onClick={this.removeProgress}
                         disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
                 <Button className={classes.button} style={{ width: "100%" }} size="small"
                         onClick={this.prepareRemoveProgress}
                         disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
-            </Grid>
+            </Grid>}
             <Grid item xs={3} sm={3} md={4} key={3}/>
           </Grid>
           <br/>

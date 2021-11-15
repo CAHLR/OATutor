@@ -1,1 +1,1 @@
-import steps from "./linear11-index.js"; const problem = {id: "linear11", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org"}; export { problem };
+import steps from "./linear11-index.js"; const problem = {id: "linear11", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

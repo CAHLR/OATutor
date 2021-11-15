@@ -1,0 +1,1 @@
+import steps from "./ac9c764addand3-index.js"; const problem = {id: "ac9c764addand3", title: "Subtract Fractions with a Common Denominator", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

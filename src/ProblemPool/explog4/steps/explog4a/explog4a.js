@@ -1,1 +1,1 @@
-import hints from "./explog4a-index.js"; const step = {id: "explog4a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$${\\left(9\\right)}^{x-\\left(10\\right)}$$ $$=$$ 1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./explog4a-index.js"; const step = {id: "explog4a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$9^{x-10}$$ $$=$$ 1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

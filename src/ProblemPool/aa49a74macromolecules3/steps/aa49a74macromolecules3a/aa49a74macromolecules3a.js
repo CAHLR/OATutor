@@ -1,0 +1,1 @@
+import hints from "./aa49a74macromolecules3a-index.js"; const step = {id: "aa49a74macromolecules3a", stepAnswer: ["polysaccharides"], problemType: "MultipleChoice", stepTitle: "Cellulose and starch are examples of:", stepBody: "", choices: ["monosaccharides", "disaccharides", "lipids", "polysaccharides"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a75d03cRecCord18-index.js"; const problem = {id: "a75d03cRecCord18", title: "Finding the Midpoint of the Line Segment", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

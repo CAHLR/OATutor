@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition18a-index.js"; const step = {id: "a7b98f9composition18a", stepAnswer: ["$$\\left(2\\right) x^2+\\left(16\\right) x$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

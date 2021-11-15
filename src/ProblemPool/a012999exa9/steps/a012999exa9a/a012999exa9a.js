@@ -1,0 +1,1 @@
+import hints from "./a012999exa9a-index.js"; const step = {id: "a012999exa9a", stepAnswer: ["$$\\left(12\\right) p^2+\\left(2\\right) pr$$"], problemType: "TextBox", stepTitle: "$$\\left(2\\right) p\\left(\\left(6\\right) p+r\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

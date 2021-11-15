@@ -1,1 +1,1 @@
-import hints from "./log10a-index.js"; const step = {id: "log10a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$y=\\log(1000000)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./log10a-index.js"; const step = {id: "log10a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$y=\\ln(1000000)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua6a-index.js"; const step = {id: "a2d8720LinEqua6a", stepAnswer: ["$$x=\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{\\left(2\\right) x}-\\frac{5}{\\left(3\\right) x}=\\frac{22}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./gre22a-index.js"; const step = {id: "gre22a", stepAnswer: ["$$p^2$$"], problemType: "TextBox", stepTitle: "$$\\left(27\\right) p^2$$, $$\\left(45\\right) p^3$$, $$\\left(9\\right) p^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./gre22a-index.js"; const step = {id: "gre22a", stepAnswer: ["$$p^2$$"], problemType: "TextBox", stepTitle: "$$27p^2$$, $$45p^3$$, $$9p^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-var hints = [{id: "abd4034poly27a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by $$\\left(6\\right) p^3$$, so we get $$\\left(36\\right) p^4-\\left(8\\right) p^2$$", text: "", variabilization: {}}, ]; export {hints};
+var hints = [{id: "abd4034poly27a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by $$6p^3$$, so we get $$36p^4-8p^2$$", text: "", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a372017cramer17a-index.js"; const step = {id: "a372017cramer17a", stepAnswer: ["(2,-3)"], problemType: "MultipleChoice", stepTitle: "$$\\left(12\\right) x+\\left(3\\right) y=15;$$ \\n $$\\left(2\\right) x-\\left(3\\right) y=13$$", stepBody: "", choices: ["(2,-3)", "(-3,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

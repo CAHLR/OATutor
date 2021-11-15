@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul16c-index.js"; const step = {id: "a870b02DivMul16c", stepAnswer: ["$$\\frac{-\\left(809\\right)}{15}$$"], problemType: "TextBox", stepTitle: "$$-809=15y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

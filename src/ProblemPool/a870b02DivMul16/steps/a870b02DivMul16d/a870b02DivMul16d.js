@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul16d-index.js"; const step = {id: "a870b02DivMul16d", stepAnswer: ["$$\\frac{541}{37}$$"], problemType: "TextBox", stepTitle: "$$-37p=-541$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

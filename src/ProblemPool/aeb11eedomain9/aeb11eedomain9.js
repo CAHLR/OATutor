@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain9-index.js"; const problem = {id: "aeb11eedomain9", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=\\frac{2}{x+\\left(1\\right)}$$.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

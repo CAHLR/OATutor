@@ -1,0 +1,1 @@
+import steps from "./a08a388line23-index.js"; const problem = {id: "a08a388line23", title: "Find an Equation of a Line Given the Slope and a Point", body: "Find the equation of the line given its slope and one of its points.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

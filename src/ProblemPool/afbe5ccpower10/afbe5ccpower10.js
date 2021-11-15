@@ -1,0 +1,1 @@
+import steps from "./afbe5ccpower10-index.js"; const problem = {id: "afbe5ccpower10", title: "Drawing Conclusions about a Polynomial Function from teh Factors", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

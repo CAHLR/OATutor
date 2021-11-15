@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp11-index.js"; const problem = {id: "ae9e419IneqApp11", title: "Water Taxi Load", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

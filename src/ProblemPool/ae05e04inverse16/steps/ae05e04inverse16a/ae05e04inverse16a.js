@@ -1,0 +1,1 @@
+import hints from "./ae05e04inverse16a-index.js"; const step = {id: "ae05e04inverse16a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\frac{1}{x+\\left(2\\right)}$$, $$g(x)=\\frac{1}{x}-\\left(2\\right)$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

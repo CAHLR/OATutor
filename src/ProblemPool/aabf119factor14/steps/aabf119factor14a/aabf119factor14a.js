@@ -1,0 +1,1 @@
+import hints from "./aabf119factor14a-index.js"; const step = {id: "aabf119factor14a", stepAnswer: ["$$\\left(10\\right) m^3$$"], problemType: "TextBox", stepTitle: "$$\\left(200\\right) p^3 m^3-\\left(30\\right) p^2 m^3+\\left(40\\right) m^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

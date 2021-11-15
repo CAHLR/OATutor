@@ -1,1 +1,1 @@
-var hints = [{id: "abd4034poly28a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by -5xy, so we get $$-\\left(3\\right) x^2+\\left(7\\right) y$$", text: "", variabilization: {}}, ]; export {hints};
+var hints = [{id: "abd4034poly28a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by -5xy, so we get $$-3x^2+7y$$", text: "", variabilization: {}}, ]; export {hints};

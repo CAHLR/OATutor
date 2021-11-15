@@ -1,1 +1,1 @@
-import steps from "./intercepts14-index.js"; const problem = {id: "intercepts14", title: "Intercepts", body: "Find x and y intercepts from an equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./intercepts14-index.js"; const problem = {id: "intercepts14", title: "Intercepts", body: "Find x and y intercepts from an equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./af69facexpolog28a-index.js"; const step = {id: "af69facexpolog28a", stepAnswer: ["$$\\left(90\\right) e^{-0.008377 t}+\\left(75\\right)$$"], problemType: "TextBox", stepTitle: "Write a formula that models this situation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a20771equad12a-index.js"; const step = {id: "a20771equad12a", stepAnswer: ["sqrt(6)/2, -sqrt(6)/2"], problemType: "TextBox", stepTitle: "$$\\left(4\\right) x^2+\\left(1\\right)=7$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

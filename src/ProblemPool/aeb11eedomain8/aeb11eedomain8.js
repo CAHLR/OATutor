@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain8-index.js"; const problem = {id: "aeb11eedomain8", title: "Finding the Domain and Range Using Toolkit Functions", body: "Find the domain and range of $$f(x)=\\left(2\\right) x^3-x$$.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a57f999ser8a-index.js"; const step = {id: "a57f999ser8a", stepAnswer: ["$$\\frac{147}{2}$$"], problemType: "TextBox", stepTitle: "$$\\left(6\\right)+\\frac{15}{2}+\\left(9\\right)+\\frac{21}{2}+\\left(12\\right)+\\frac{27}{2}+\\left(15\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

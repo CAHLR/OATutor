@@ -1,1 +1,1 @@
-import hints from "./gre21a-index.js"; const step = {id: "gre21a", stepAnswer: ["$$\\left(5\\right) x^3$$"], problemType: "TextBox", stepTitle: "$$\\left(35\\right) x^3$$, $$\\left(10\\right) x^4$$, $$\\left(5\\right) x^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./gre21a-index.js"; const step = {id: "gre21a", stepAnswer: ["$$5x^3$$"], problemType: "TextBox", stepTitle: "$$35x^3$$, $$10x^4$$, $$5x^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

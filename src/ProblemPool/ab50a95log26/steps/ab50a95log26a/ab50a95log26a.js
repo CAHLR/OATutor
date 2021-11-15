@@ -1,0 +1,1 @@
+import hints from "./ab50a95log26a-index.js"; const step = {id: "ab50a95log26a", stepAnswer: ["$${\\left(15\\right)}^b=a$$"], problemType: "TextBox", stepTitle: "log base 15 of $$a=b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

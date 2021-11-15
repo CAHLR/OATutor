@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula13a-index.js"; const step = {id: "a1f32dfFormula13a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "When $$x=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./macromolecules7-index.js"; const problem = {id: "macromolecules7", title: "Biological Macromolecules", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./macromolecules7-index.js"; const problem = {id: "macromolecules7", title: "Biological Macromolecules", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

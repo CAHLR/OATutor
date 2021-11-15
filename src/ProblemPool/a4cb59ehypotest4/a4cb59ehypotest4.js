@@ -1,0 +1,1 @@
+import steps from "./a4cb59ehypotest4-index.js"; const problem = {id: "a4cb59ehypotest4", title: "Type II Error and Power", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

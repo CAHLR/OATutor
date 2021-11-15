@@ -1,0 +1,1 @@
+import steps from "./a35ba99cou12-index.js"; const problem = {id: "a35ba99cou12", title: "Number of Permutations", body: "Finding the Number of Permutations Using the Formula", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a6014eaSubAdd19-index.js"; const problem = {id: "a6014eaSubAdd19", title: "Solve the equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

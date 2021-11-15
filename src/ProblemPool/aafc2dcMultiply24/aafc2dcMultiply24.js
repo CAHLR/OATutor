@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply24-index.js"; const problem = {id: "aafc2dcMultiply24", title: "Evaluate Variable Expressions with Integers", body: "Evaluate the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

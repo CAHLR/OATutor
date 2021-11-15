@@ -1,1 +1,1 @@
-import hints from "./decimals14a-index.js"; const step = {id: "decimals14a", stepAnswer: ["64.88"], problemType: "TextBox", stepTitle: "$$\\left(23.5\\right)+\\left(41.38\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./decimals14a-index.js"; const step = {id: "decimals14a", stepAnswer: ["64.88"], problemType: "TextBox", stepTitle: "$$23.5+41.38$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

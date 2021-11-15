@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr15a-index.js"; const step = {id: "ab1ad7fGenStr15a", stepAnswer: ["$$\\frac{5}{2}$$"], problemType: "TextBox", stepTitle: "$$-\\left(6\\right)-\\left(8\\right) \\left(k-\\left(2\\right)\\right)=-10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp18-index.js"; const problem = {id: "ae9e419IneqApp18", title: "Moshde's Hairstyling Business", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

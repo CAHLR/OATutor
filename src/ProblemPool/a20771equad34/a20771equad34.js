@@ -1,0 +1,1 @@
+import steps from "./a20771equad34-index.js"; const problem = {id: "a20771equad34", title: "Solve Quadratics by Factoring", body: "For the following exercises, solve the quadratic equation by factoring.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

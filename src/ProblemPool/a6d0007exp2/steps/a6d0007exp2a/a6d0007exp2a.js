@@ -1,0 +1,1 @@
+import hints from "./a6d0007exp2a-index.js"; const step = {id: "a6d0007exp2a", stepAnswer: ["$$k^{15}$$"], problemType: "TextBox", stepTitle: "$$k^6 k^9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

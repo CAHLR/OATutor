@@ -1,0 +1,1 @@
+import hints from "./ad291beRadRat5a-index.js"; const step = {id: "ad291beRadRat5a", stepAnswer: ["$$\\frac{\\sqrt{5}}{6}$$"], problemType: "TextBox", stepTitle: "Simplify the radical expression: $$\\sqrt{\\frac{5}{36}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe11a-index.js"; const step = {id: "ac0c1d3spe11a", stepAnswer: ["$$\\left(16\\right) x^2+\\left(48\\right) x+\\left(36\\right)$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(4\\right) x+\\left(6\\right)\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

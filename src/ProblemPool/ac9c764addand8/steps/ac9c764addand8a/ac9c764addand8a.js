@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand8a-index.js"; const step = {id: "ac9c764addand8a", stepAnswer: ["$$\\frac{\\left(25\\right) x-\\left(9\\right)}{30}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(5\\right) x}{6}-\\frac{3}{10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

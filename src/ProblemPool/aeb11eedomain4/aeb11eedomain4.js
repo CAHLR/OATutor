@@ -1,0 +1,1 @@
+import steps from "./aeb11eedomain4-index.js"; const problem = {id: "aeb11eedomain4", title: "Finding the Domain of a Function With an Even Root", body: "Find the domain of the function.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

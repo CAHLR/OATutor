@@ -1,0 +1,1 @@
+import hints from "./a9981ababs3a-index.js"; const step = {id: "a9981ababs3a", stepAnswer: ["-4,2"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=-\\left(2\\right) |x+\\left(1\\right)|+\\left(6\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

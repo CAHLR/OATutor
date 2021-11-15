@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex9a-index.js"; const step = {id: "a9cf449complex9a", stepAnswer: ["8-i"], problemType: "TextBox", stepTitle: "$$\\left(3\\right)+\\left(2\\right) i+\\left(5\\right)-\\left(3\\right) i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

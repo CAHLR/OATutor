@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota14p-index.js"; const step = {id: "af36e21FunNota14p", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$x=\\operatorname{pm}\\left(a\\right) \\sqrt{\\left(1\\right)-y}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

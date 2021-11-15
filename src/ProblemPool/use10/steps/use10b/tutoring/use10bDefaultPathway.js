@@ -1,1 +1,1 @@
-var hints = [{id: "use10b-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 6 for x and simplify the expression $${\\left(2\\right)}^6$$.", variabilization: {}}, ]; export {hints};
+var hints = [{id: "use10b-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 6 for x and simplify the expression $$2^6$$.", variabilization: {}}, ]; export {hints};

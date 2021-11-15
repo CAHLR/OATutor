@@ -1,1 +1,1 @@
-import steps from "./addand9-index.js"; const problem = {id: "addand9", title: "How to Simplify Complex Fractions", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./addand9-index.js"; const problem = {id: "addand9", title: "How to Simplify Complex Fractions", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

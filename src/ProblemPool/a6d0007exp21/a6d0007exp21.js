@@ -1,0 +1,1 @@
+import steps from "./a6d0007exp21-index.js"; const problem = {id: "a6d0007exp21", title: "Using Scientific Notation in Applications", body: "Perform the operations and write the answer in scientific notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a0f69c4conic13-index.js"; const problem = {id: "a0f69c4conic13", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{3}{\\left(10\\right)+\\left(10\\right) costheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp23-index.js"; const problem = {id: "ae9e419IneqApp23", title: "Ryan's Earning", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a1268beother19-index.js"; const problem = {id: "a1268beother19", title: "Solving Absolute Value Equations", body: "Solve the following absolute value equations for x.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };

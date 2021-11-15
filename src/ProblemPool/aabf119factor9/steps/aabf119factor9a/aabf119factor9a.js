@@ -1,0 +1,1 @@
+import hints from "./aabf119factor9a-index.js"; const step = {id: "aabf119factor9a", stepAnswer: ["$$\\left(\\left(3\\right) x-\\left(5\\right)\\right) \\left(\\left(3\\right) x+\\left(5\\right)\\right)$$"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) x^2-\\left(25\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

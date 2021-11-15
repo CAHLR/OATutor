@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeqs11-index.js"; const problem = {id: "ab8b840systemeqs11", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (3,5) is a solution to the system of equations: $$-x+\\left(8\\right) y=43$$, $$3x-2y=-1$$", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };

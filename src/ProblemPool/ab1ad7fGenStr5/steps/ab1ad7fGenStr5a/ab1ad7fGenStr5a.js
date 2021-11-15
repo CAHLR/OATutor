@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr5a-index.js"; const step = {id: "ab1ad7fGenStr5a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$-\\left(y+\\left(8\\right)\\right)=-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

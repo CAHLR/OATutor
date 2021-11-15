@@ -1,15 +1,14 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
-import {
-  HashRouter as Router, Link,
-  NavLink
-} from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
+import to from "await-to-js";
+import { toast } from "react-toastify";
+import ToastID from "../util/toastIds";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -21,11 +20,6 @@ class Platform extends React.Component {
 
   constructor(props, context) {
     super(props);
-    if (this.props.location.search.startsWith('?lis_person_name_full=')) {
-      var name = this.props.location.search.replace('?lis_person_name_full=', '')
-      context.studentName = name;
-      //console.log(context.studentName);
-    }
     this.problemIndex = {
       problems: problemPool
     };
@@ -33,7 +27,9 @@ class Platform extends React.Component {
     this.lesson = null;
     //console.log(this.props.lessonNum);
 
+    this.user = context.user || {}
     this.studentNameDisplay = context.studentName ? (decodeURIComponent(context.studentName) + " | ") : "Not logged in | ";
+    this.isPrivileged = !!this.user.privileged
 
     // Add each Q Matrix skill model attribute to each step
     for (var problem of this.problemIndex.problems) {
@@ -55,6 +51,8 @@ class Platform extends React.Component {
         seed: seed
       }
     }
+
+    this.selectLesson = this.selectLesson.bind(this)
   }
 
   componentDidMount() {
@@ -72,12 +70,78 @@ class Platform extends React.Component {
     this._isMounted = false
   }
 
-  selectLesson = async (lesson, context) => {
-    this.lesson = lesson;
-    await this.props.loadProgress();
+  async selectLesson(lesson, context) {
     if (!this._isMounted) {
       return
     }
+    console.debug('isPrivileged', this.isPrivileged)
+    if (this.isPrivileged) {
+      // from canvas or other LTI Consumers
+      let err, response;
+      [err, response] = await to(fetch(this.context.middlewareURL + '/setLesson', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          token: context?.jwt || this.context?.jwt || "",
+          lesson
+        })
+      }))
+      if (err || !response) {
+        toast.error(`Error setting lesson for assignment "${this.user.resource_link_title}"`)
+        console.debug(err, response)
+        return
+      } else {
+        if (response.status !== 200) {
+          switch (response.status) {
+            case 400:
+              const responseText = await response.text()
+              let [message, ...addInfo] = responseText.split("|")
+              if (addInfo) {
+                addInfo = JSON.parse(addInfo[0])
+              }
+              switch (message) {
+                case 'resource_already_linked':
+                  toast.error(`${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`, {
+                    toastId: ToastID.set_lesson_duplicate_error.toString()
+                  })
+                  this.props.history.push('/assignment-already-linked')
+                  return
+                default:
+                  toast.error(`Error: ${responseText}`, {
+                    toastId: ToastID.expired_session.toString(),
+                    closeOnClick: true
+                  })
+                  return
+              }
+            case 401:
+              toast.error(`Your session has either expired or been invalidated, please reload the page to try again.`, {
+                toastId: ToastID.expired_session.toString()
+              })
+              this.props.history.push('/session-expired')
+              return
+            case 403:
+              toast.error(`You are not authorized to make this action. (Are you an instructor?)`, {
+                toastId: ToastID.not_authorized.toString()
+              })
+              return
+            default:
+              toast.error(`Error setting lesson for assignment "${this.user.resource_link_title}." If reloading does not work, please contact us.`, {
+                toastId: ToastID.set_lesson_unknown_error.toString()
+              })
+              return
+          }
+        } else {
+          toast.success(`Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.lessonNum} "${lesson.topics}"`, {
+            toastId: ToastID.set_lesson_success.toString()
+          })
+        }
+      }
+    }
+
+    this.lesson = lesson;
+    await this.props.loadProgress();
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     }, () => {
@@ -182,9 +246,12 @@ class Platform extends React.Component {
           <Toolbar>
             <Grid container spacing={0}>
               <Grid item xs={3} key={1}>
-                <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
-                  <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
-                </Link>
+                {this.context.jwt.length !== 0 && !this.isPrivileged // launched from lms
+                  ? <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
+                  : <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
+                    <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{this.context.siteVersion})</div>
+                  </Link>
+                }
               </Grid>
               <Grid item xs={6} key={2}>
                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
@@ -196,14 +263,6 @@ class Platform extends React.Component {
                   {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection"
                     ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%"
                     : ""}
-                  {false ?
-                    <Router>
-                      <NavLink activeClassName="active" className="link" to={"/"} type="menu"
-                               style={{ marginRight: '10px' }}>
-                        <Button color="inherit"
-                                onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                      </NavLink>
-                    </Router> : ""}
                 </div>
               </Grid>
             </Grid>
@@ -230,4 +289,5 @@ class Platform extends React.Component {
   }
 }
 
-export default Platform;
+
+export default withRouter(Platform);

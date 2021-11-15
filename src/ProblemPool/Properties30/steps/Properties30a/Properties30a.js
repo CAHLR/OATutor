@@ -1,1 +1,1 @@
-import hints from "./Properties30a-index.js"; const step = {id: "Properties30a", stepAnswer: ["-y-5"], problemType: "TextBox", stepTitle: "$$-\\left(y+\\left(5\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./Properties30a-index.js"; const step = {id: "Properties30a", stepAnswer: ["-y-5"], problemType: "TextBox", stepTitle: "$$-\\left(y+5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

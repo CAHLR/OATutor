@@ -1,0 +1,1 @@
+import steps from "./aaa317eLinIneq18-index.js"; const problem = {id: "aaa317eLinIneq18", title: "Demonstrating the Addition and Multiplication Property", body: "Solve:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };

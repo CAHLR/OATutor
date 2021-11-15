@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition20d-index.js"; const step = {id: "a7b98f9composition20d", stepAnswer: ["$$\\frac{\\left(3\\right) x^2 \\sqrt{x-\\left(5\\right)}}{x-\\left(5\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
