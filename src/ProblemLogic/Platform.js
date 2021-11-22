@@ -58,7 +58,7 @@ class Platform extends React.Component {
   componentDidMount() {
     this._isMounted = true
     if (this.props.lessonNum != null) {
-      this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)]).then(_ => {
+      this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)], false).then(_ => {
         console.log("loaded lesson " + this.props.lessonNum, this.lesson);
       });
     } else if (this.props.courseNum != null) {
@@ -70,12 +70,12 @@ class Platform extends React.Component {
     this._isMounted = false
   }
 
-  async selectLesson(lesson, context) {
+  async selectLesson(lesson, updateServer = true, context) {
     if (!this._isMounted) {
       return
     }
     console.debug('isPrivileged', this.isPrivileged)
-    if (this.isPrivileged) {
+    if (this.isPrivileged && updateServer) {
       // from canvas or other LTI Consumers
       let err, response;
       [err, response] = await to(fetch(this.context.middlewareURL + '/setLesson', {
@@ -142,6 +142,9 @@ class Platform extends React.Component {
 
     this.lesson = lesson;
     await this.props.loadProgress();
+    if(!this._isMounted){
+      return
+    }
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     }, () => {
