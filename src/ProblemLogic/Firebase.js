@@ -144,7 +144,7 @@ class Firebase {
     return this.writeData("mouseMovement", date, data);
   }
 
-  submitFeedback(problemID, feedback, problemFinished, canvasStudentID) {
+  submitFeedback(problemID, feedback, problemFinished, canvasStudentID, courseName) {
     var date = this._getDate();
     var data = {
       timeStamp: date,
@@ -155,7 +155,8 @@ class Firebase {
       problemFinished: problemFinished,
       feedback: feedback,
       canvasStudentID: canvasStudentID || null,
-      status: "open"
+      status: "open",
+      Content: courseName
     }
     return this.writeData(feedbackOutput, date, data);
   }
