@@ -98,7 +98,7 @@ class Platform extends React.Component {
             case 400:
               const responseText = await response.text()
               let [message, ...addInfo] = responseText.split("|")
-              if (addInfo) {
+              if (Array.isArray(addInfo) && addInfo[0].length > 1) {
                 addInfo = JSON.parse(addInfo[0])
               }
               switch (message) {
@@ -106,7 +106,7 @@ class Platform extends React.Component {
                   toast.error(`${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`, {
                     toastId: ToastID.set_lesson_duplicate_error.toString()
                   })
-                  this.props.history.push('/assignment-already-linked')
+                  this.props.history.push(`/assignment-already-linked?to=${addInfo.to}`)
                   return
                 default:
                   toast.error(`Error: ${responseText}`, {
