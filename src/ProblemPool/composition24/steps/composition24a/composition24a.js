@@ -1,1 +1,0 @@
-import hints from "./composition24a-index.js"; const step = {id: "composition24a", stepAnswer: ["$$\\sqrt{x^2+3}+2$$"], problemType: "TextBox", stepTitle: "f(g(x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

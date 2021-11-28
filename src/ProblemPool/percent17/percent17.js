@@ -1,1 +1,0 @@
-import steps from "./percent17-index.js"; const problem = {id: "percent17", title: "Solve Simple Interest Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

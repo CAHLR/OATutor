@@ -1,1 +1,0 @@
-import steps from "./expolog18-index.js"; const problem = {id: "expolog18", title: "Fish Population", body: "$$P(t)=\\frac{1000}{1+9e^{-0.6 t}}$$ represents the population of fish.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

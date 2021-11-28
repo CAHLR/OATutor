@@ -1,1 +1,1 @@
-import hints from "./ac9c764addand11a-index.js"; const step = {id: "ac9c764addand11a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$x+\\frac{1}{3}$$ when $$x=\\frac{-\\left(1\\right)}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./ac9c764addand11a-index.js"; const step = {id: "ac9c764addand11a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$x+\\frac{1}{3}$$ when $$x=\\frac{-1}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

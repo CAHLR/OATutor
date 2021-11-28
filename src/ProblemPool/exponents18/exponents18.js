@@ -1,1 +1,0 @@
-import steps from "./exponents18-index.js"; const problem = {id: "exponents18", title: "Simplify Expressions with Integer Exponents", body: "Simplify the following", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

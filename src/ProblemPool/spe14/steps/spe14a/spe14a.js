@@ -1,1 +1,0 @@
-import hints from "./spe14a-index.js"; const step = {id: "spe14a", stepAnswer: ["$$4x^2-12x y+9y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(2q+\\frac{1}{3}\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

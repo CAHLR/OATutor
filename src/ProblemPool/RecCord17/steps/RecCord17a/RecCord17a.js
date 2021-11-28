@@ -1,1 +1,0 @@
-import hints from "./RecCord17a-index.js"; const step = {id: "RecCord17a", stepAnswer: ["(2,-4)"], problemType: "TextBox", stepTitle: "The diameter of a circle has endpoints (-1,-4) and (5,-4). Find the center of the circle.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./RecCord14a-index.js"; const step = {id: "RecCord14a", stepAnswer: ["$$\\sqrt{3965}$$"], problemType: "TextBox", stepTitle: "Find the distance between the points (19,12) and (41,71).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

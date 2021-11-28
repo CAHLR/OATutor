@@ -1,1 +1,0 @@
-import hints from "./rational11a-index.js"; const step = {id: "rational11a", stepAnswer: ["$$\\frac{x+4}{2x+2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x^2+7x-4}{4x^2+2x-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

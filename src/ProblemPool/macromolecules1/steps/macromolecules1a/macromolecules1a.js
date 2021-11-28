@@ -1,1 +1,0 @@
-import hints from "./macromolecules1a-index.js"; const step = {id: "macromolecules1a", stepAnswer: ["water and polymers"], problemType: "MultipleChoice", stepTitle: "Dehydration synthesis leads to formation of", stepBody: "", choices: ["monomers", "polymers", "water and polymers"], answerType: "string", hints: hints, variabilization: {}}; export {step};

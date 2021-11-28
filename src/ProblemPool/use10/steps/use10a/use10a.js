@@ -1,1 +1,0 @@
-import hints from "./use10a-index.js"; const step = {id: "use10a", stepAnswer: ["216"], problemType: "TextBox", stepTitle: "$$x^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

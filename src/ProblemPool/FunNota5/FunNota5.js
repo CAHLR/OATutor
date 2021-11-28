@@ -1,1 +1,0 @@
-import steps from "./FunNota5-index.js"; const problem = {id: "FunNota5", title: "Interpreting Function Notation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

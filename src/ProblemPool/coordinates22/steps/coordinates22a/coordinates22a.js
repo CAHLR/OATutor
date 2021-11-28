@@ -1,1 +1,0 @@
-import hints from "./coordinates22a-index.js"; const step = {id: "coordinates22a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$y=3x-1;$$ If $$x=0$$, what is y?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

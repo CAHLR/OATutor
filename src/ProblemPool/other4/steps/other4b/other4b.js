@@ -1,1 +1,0 @@
-import hints from "./other4b-index.js"; const step = {id: "other4b", stepAnswer: ["$$\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "Evaluate $${64}^{\\left(-\\frac{1}{3}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

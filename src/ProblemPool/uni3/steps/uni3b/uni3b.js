@@ -1,1 +1,0 @@
-import hints from "./uni3b-index.js"; const step = {id: "uni3b", stepAnswer: ["80"], problemType: "TextBox", stepTitle: "Find the Jeromy's speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

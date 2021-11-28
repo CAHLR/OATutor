@@ -1,1 +1,0 @@
-import hints from "./sys8b-index.js"; const step = {id: "sys8b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$(\\frac{5}{4},\\frac{7}{4})$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

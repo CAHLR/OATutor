@@ -1,1 +1,0 @@
-import hints from "./quadratic1d-index.js"; const step = {id: "quadratic1d", stepAnswer: ["(0,7)"], problemType: "MultipleChoice", stepTitle: "Determine the y-intercept of the parabola shown.", stepBody: "", choices: ["(0,7)", "(7,0)", "(0,0)", "(0,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./SubAdd27-index.js"; const problem = {id: "SubAdd27", title: "In the following exercises, solve each equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

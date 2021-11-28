@@ -1,1 +1,1 @@
-import hints from "./a6014eaSubAdd20a-index.js"; const step = {id: "a6014eaSubAdd20a", stepAnswer: ["$$z=2$$"], problemType: "TextBox", stepTitle: "$$\\left(6\\right) z+\\left(5\\right)-\\left(5\\right) z-\\left(4\\right)=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a6014eaSubAdd20a-index.js"; const step = {id: "a6014eaSubAdd20a", stepAnswer: ["$$z=2$$"], problemType: "TextBox", stepTitle: "$$6z+5-5z-4=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

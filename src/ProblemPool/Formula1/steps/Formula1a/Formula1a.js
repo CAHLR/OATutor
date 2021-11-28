@@ -1,1 +1,0 @@
-import hints from "./Formula1a-index.js"; const step = {id: "Formula1a", stepAnswer: ["42"], problemType: "TextBox", stepTitle: "Jamal rides his bike at a uniform rate of 12 miles per hour for 3.5 hours. What distance has he traveled?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

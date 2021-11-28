@@ -1,1 +1,0 @@
-import steps from "./GenStr3-index.js"; const problem = {id: "GenStr3", title: "Solve the Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./aafc2dcMultiply3b-index.js"; const step = {id: "aafc2dcMultiply3b", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(100\\right)}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./aafc2dcMultiply3b-index.js"; const step = {id: "aafc2dcMultiply3b", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "$$\\frac{-100}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

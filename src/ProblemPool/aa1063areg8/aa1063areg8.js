@@ -1,1 +1,1 @@
-import steps from "./aa1063areg8-index.js"; const problem = {id: "aa1063areg8", title: "Outliers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice"}; export { problem };
+import steps from "./aa1063areg8-index.js"; const problem = {id: "aa1063areg8", title: "Outliers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice", courseName: "Data Content"}; export { problem };

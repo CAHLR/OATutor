@@ -1,1 +1,0 @@
-import hints from "./expolog4a-index.js"; const step = {id: "expolog4a", stepAnswer: ["More"], problemType: "MultipleChoice", stepTitle: "If we begin with 200 mg of cesium-137, will it take more or less than 230 years until only 1 milligram remains?", stepBody: "", choices: ["More", "Less"], answerType: "string", hints: hints, variabilization: {}}; export {step};

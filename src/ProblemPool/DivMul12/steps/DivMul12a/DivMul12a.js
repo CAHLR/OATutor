@@ -1,1 +1,0 @@
-import hints from "./DivMul12a-index.js"; const step = {id: "DivMul12a", stepAnswer: ["18"], problemType: "TextBox", stepTitle: "$$\\frac{5}{6} y=15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

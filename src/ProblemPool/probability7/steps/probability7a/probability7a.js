@@ -1,1 +1,0 @@
-import hints from "./probability7a-index.js"; const step = {id: "probability7a", stepAnswer: ["$$\\frac{1}{12}$$"], problemType: "TextBox", stepTitle: "Find the probability that the sum of the numbers rolled is less than or equal to 3.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

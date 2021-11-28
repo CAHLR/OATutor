@@ -1,1 +1,0 @@
-import hints from "./Multiply29a-index.js"; const step = {id: "Multiply29a", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "$$\\frac{-180}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

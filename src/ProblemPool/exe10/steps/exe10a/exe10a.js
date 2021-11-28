@@ -1,1 +1,0 @@
-import hints from "./exe10a-index.js"; const step = {id: "exe10a", stepAnswer: ["$$\\left(y+1\\right) \\left(y-7\\right)$$"], problemType: "TextBox", stepTitle: "$$y^2-6y-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./linear1a-index.js"; const step = {id: "linear1a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y=3x-5$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

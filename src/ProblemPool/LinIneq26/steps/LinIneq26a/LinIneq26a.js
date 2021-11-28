@@ -1,1 +1,0 @@
-import hints from "./LinIneq26a-index.js"; const step = {id: "LinIneq26a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$|x+9| \\geq -6$$", stepBody: "", choices: ["$$[-\\infty,\\infty]$$", "$$(-\\infty,\\infty)$$", "$$(\\frac{-2}{3},9)$$", "(6,15)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

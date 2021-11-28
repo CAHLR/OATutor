@@ -1,1 +1,0 @@
-import hints from "./logprop11a-index.js"; const step = {id: "logprop11a", stepAnswer: ["$$4\\ln(x)+\\ln(y)-\\ln(7)$$"], problemType: "TextBox", stepTitle: "Expand $$\\ln(\\frac{x^4 y}{7})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./a1268beother9-index.js"; const problem = {id: "a1268beother9", title: "Solve the equation", body: "Solve the equation involving absolute value.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a1268beother9-index.js"; const problem = {id: "a1268beother9", title: "Solve the equation", body: "Solve the equation involving absolute value.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

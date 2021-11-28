@@ -1,1 +1,0 @@
-import hints from "./use8a-index.js"; const step = {id: "use8a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$y=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

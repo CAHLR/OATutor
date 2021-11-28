@@ -1,1 +1,0 @@
-import steps from "./partfrac4-index.js"; const problem = {id: "partfrac4", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

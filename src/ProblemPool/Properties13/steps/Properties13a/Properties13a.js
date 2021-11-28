@@ -1,1 +1,0 @@
-import hints from "./Properties13a-index.js"; const step = {id: "Properties13a", stepAnswer: ["$$32y+72$$"], problemType: "TextBox", stepTitle: "$$8\\left(4y+9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

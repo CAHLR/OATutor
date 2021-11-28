@@ -1,1 +1,0 @@
-import hints from "./inverse11b-index.js"; const step = {id: "inverse11b", stepAnswer: ["-27"], problemType: "TextBox", stepTitle: "Y-Intercept", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

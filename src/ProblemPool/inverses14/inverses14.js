@@ -1,1 +1,0 @@
-import steps from "./inverses14-index.js"; const problem = {id: "inverses14", title: "Factoring a Sum of Cubes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

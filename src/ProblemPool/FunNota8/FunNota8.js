@@ -1,1 +1,0 @@
-import steps from "./FunNota8-index.js"; const problem = {id: "FunNota8", title: "Evaluating functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

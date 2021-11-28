@@ -1,1 +1,0 @@
-import hints from "./RecCord15a-index.js"; const step = {id: "RecCord15a", stepAnswer: ["(8,3/2)"], problemType: "TextBox", stepTitle: "Find the midpoint of the line segment with the endpoints (7,-2) and (9,5).", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

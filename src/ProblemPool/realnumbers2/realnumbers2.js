@@ -1,1 +1,0 @@
-import steps from "./realnumbers2-index.js"; const problem = {id: "realnumbers2", title: "Calculating Square Roots #2", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

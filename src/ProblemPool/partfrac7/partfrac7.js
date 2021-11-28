@@ -1,1 +1,0 @@
-import steps from "./partfrac7-index.js"; const problem = {id: "partfrac7", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors: $$\\frac{5x}{x^2-9}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

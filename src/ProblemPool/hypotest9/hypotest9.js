@@ -1,1 +1,0 @@
-import steps from "./hypotest9-index.js"; const problem = {id: "hypotest9", title: "One-tailed vs Two-tailed Test", body: "Decide whether the following hypotheses would correspond to a left-tailed, right-tailed, or two-tailed test.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

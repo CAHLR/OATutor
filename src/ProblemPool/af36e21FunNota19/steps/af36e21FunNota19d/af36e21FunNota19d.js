@@ -1,1 +1,1 @@
-import hints from "./af36e21FunNota19d-index.js"; const step = {id: "af36e21FunNota19d", stepAnswer: ["$$-|a-\\left(1\\right)|+|a+\\left(1\\right)|$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./af36e21FunNota19d-index.js"; const step = {id: "af36e21FunNota19d", stepAnswer: ["$$-|a-1|+|a+1|$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

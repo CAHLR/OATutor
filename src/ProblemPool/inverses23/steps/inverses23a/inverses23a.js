@@ -1,1 +1,0 @@
-import hints from "./inverses23a-index.js"; const step = {id: "inverses23a", stepAnswer: ["$$y=\\frac{{\\left(x-5\\right)}^2+8}{6}$$"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\sqrt{6x-8}+5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

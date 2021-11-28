@@ -1,1 +1,0 @@
-import steps from "./clt9-index.js"; const problem = {id: "clt9", title: "Standard Normal Distribution", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/7-key-terms", courseName: "Data Content"}; export { problem };

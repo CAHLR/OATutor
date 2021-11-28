@@ -1,1 +1,0 @@
-import hints from "./FunNota14k-index.js"; const step = {id: "FunNota14k", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$x^2+y^2=9$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./inv6a-index.js"; const step = {id: "inv6a", stepAnswer: ["(-1,1)"], problemType: "MultipleChoice", stepTitle: "$$3x+8y=5$$, $$4x+11y=7$$", stepBody: "", choices: ["(-1,1)", "(1,1)", "(1,-1)", "(-1,-1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

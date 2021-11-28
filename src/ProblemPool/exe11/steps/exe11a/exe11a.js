@@ -1,1 +1,0 @@
-import hints from "./exe11a-index.js"; const step = {id: "exe11a", stepAnswer: ["$$\\left(y+1\\right) \\left(y-3\\right)$$"], problemType: "TextBox", stepTitle: "$$v^2-2v-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

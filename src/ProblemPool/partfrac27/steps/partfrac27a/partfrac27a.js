@@ -1,1 +1,0 @@
-import hints from "./partfrac27a-index.js"; const step = {id: "partfrac27a", stepAnswer: ["$$\\frac{1}{6\\left(x+1\\right)}+\\frac{5x+8}{6\\left(x^2+5x-2\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

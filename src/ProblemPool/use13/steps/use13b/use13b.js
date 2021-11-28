@@ -1,1 +1,0 @@
-import hints from "./use13b-index.js"; const step = {id: "use13b", stepAnswer: ["41"], problemType: "TextBox", stepTitle: "$$41b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

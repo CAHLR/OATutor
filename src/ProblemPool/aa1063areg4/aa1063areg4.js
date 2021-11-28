@@ -1,1 +1,1 @@
-import steps from "./aa1063areg4-index.js"; const problem = {id: "aa1063areg4", title: "Interpreting Values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice"}; export { problem };
+import steps from "./aa1063areg4-index.js"; const problem = {id: "aa1063areg4", title: "Interpreting Values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/introductory-statistics/pages/12-practice", courseName: "Data Content"}; export { problem };

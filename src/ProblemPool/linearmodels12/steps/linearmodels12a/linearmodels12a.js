@@ -1,1 +1,0 @@
-import hints from "./linearmodels12a-index.js"; const step = {id: "linearmodels12a", stepAnswer: ["9620"], problemType: "TextBox", stepTitle: "Predict the population in 2013.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./ad291beRadRat6-index.js"; const problem = {id: "ad291beRadRat6", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ad291beRadRat6-index.js"; const problem = {id: "ad291beRadRat6", title: "Using the Product Rule to Simplify the Product of Multiple Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

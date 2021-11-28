@@ -1,1 +1,0 @@
-import steps from "./power35-index.js"; const problem = {id: "power35", title: "Find the intercepts of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./parabola6a-index.js"; const step = {id: "parabola6a", stepAnswer: ["(-3,1)"], problemType: "TextBox", stepTitle: "$${\\left(y-1\\right)}^2=-\\operatorname{16}\\left(x+3\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

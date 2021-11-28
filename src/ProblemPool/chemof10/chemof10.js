@@ -1,1 +1,0 @@
-import steps from "./chemof10-index.js"; const problem = {id: "chemof10", title: "Review Question 13", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

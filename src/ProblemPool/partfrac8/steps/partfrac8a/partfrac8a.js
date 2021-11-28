@@ -1,1 +1,0 @@
-import hints from "./partfrac8a-index.js"; const step = {id: "partfrac8a", stepAnswer: ["$$\\frac{3}{x+2}+\\frac{3}{x-2}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

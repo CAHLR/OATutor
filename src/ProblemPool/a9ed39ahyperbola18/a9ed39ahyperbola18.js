@@ -1,1 +1,1 @@
-import steps from "./a9ed39ahyperbola18-index.js"; const problem = {id: "a9ed39ahyperbola18", title: "The Hyperbola", body: "$$\\frac{y^2}{{\\left(3\\right)}^2}-\\frac{x^2}{{\\left(3\\right)}^2}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9ed39ahyperbola18-index.js"; const problem = {id: "a9ed39ahyperbola18", title: "The Hyperbola", body: "$$\\frac{y^2}{3^2}-\\frac{x^2}{3^2}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

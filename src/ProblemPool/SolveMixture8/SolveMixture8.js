@@ -1,1 +1,0 @@
-import steps from "./SolveMixture8-index.js"; const problem = {id: "SolveMixture8", title: "Michaela's Dimes and Nickels", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

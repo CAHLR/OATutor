@@ -1,1 +1,0 @@
-import steps from "./log25-index.js"; const problem = {id: "log25", title: "Rewriting Equations in Logarithmic Form: Exercise #1", body: "For the following exercise, rewrite the equation in logarithmic form, such as $$\"y=log$$ base b of x.\"", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./gre12a-index.js"; const step = {id: "gre12a", stepAnswer: ["$$7b$$"], problemType: "TextBox", stepTitle: "$$21b^2$$, $$14b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

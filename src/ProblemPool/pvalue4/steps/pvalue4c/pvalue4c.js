@@ -1,1 +1,0 @@
-import hints from "./pvalue4c-index.js"; const step = {id: "pvalue4c", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "If we use a significance level of $$a$$=0.05$$, $$do$$ $$the$$ $$data$$ $$support$$ $$the$$ $$null$$ $$hypothesis$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

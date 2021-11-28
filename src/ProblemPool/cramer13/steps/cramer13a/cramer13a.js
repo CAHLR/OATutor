@@ -1,1 +1,0 @@
-import hints from "./cramer13a-index.js"; const step = {id: "cramer13a", stepAnswer: ["(3,1)"], problemType: "TextBox", stepTitle: "$$2x+6y=12$$ $$5x-2y=13$$", stepBody: "Enter your solution as a coordinate pair.", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./expolog28b-index.js"; const step = {id: "expolog28b", stepAnswer: ["134"], problemType: "TextBox", stepTitle: "To the nearest degree, what will the temperature be after 50 minutes?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

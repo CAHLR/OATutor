@@ -1,1 +1,0 @@
-import hints from "./general13a-index.js"; const step = {id: "general13a", stepAnswer: ["$$3\\left(5p+4\\right) \\left(q-1\\right)$$"], problemType: "TextBox", stepTitle: "$$15pq-15p+12q-12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

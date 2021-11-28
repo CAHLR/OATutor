@@ -1,1 +1,0 @@
-var hints = [{id: "uni3b-h1", type: "hint", dependencies: [], title: "Find the Difference", text: "Jeromy's speed is 20 mph more than his mother's.", variabilization: {}}, {id: "uni3b-h2", type: "hint", dependencies: ["uni3b-h1"], title: "The Answer", text: "The Jeromy's speed is 80 mph.", variabilization: {}}, ]; export {hints};

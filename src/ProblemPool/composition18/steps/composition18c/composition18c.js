@@ -1,1 +1,0 @@
-import hints from "./composition18c-index.js"; const step = {id: "composition18c", stepAnswer: ["$$24x^3+48x^2$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

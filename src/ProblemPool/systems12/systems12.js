@@ -1,1 +1,0 @@
-import steps from "./systems12-index.js"; const problem = {id: "systems12", title: "Finding the Intersection of a Circle and a Line by Substitution #1", body: "Find the intersection of the given circle and the given line by substitution.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

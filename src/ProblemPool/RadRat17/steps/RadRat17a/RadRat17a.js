@@ -1,1 +1,0 @@
-import hints from "./RadRat17a-index.js"; const step = {id: "RadRat17a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "What is $${343}^{\\frac{2}{3}}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

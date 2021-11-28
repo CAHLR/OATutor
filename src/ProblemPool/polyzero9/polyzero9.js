@@ -1,1 +1,0 @@
-import steps from "./polyzero9-index.js"; const problem = {id: "polyzero9", title: "Using the Remainder Theorem to Find the Remainder", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

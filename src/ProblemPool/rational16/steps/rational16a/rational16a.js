@@ -1,1 +1,0 @@
-import hints from "./rational16a-index.js"; const step = {id: "rational16a", stepAnswer: ["$$\\frac{4y-1}{y+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{22y^2+59y+10}{12y^2+28y-5}}{\\frac{11y^2+46y+8}{24y^2-10y+1}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./percent2a-index.js"; const step = {id: "percent2a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "Translate and solve: What number is 45% of 80?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

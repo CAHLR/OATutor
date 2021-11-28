@@ -1,1 +1,0 @@
-import hints from "./expolog27b-index.js"; const step = {id: "expolog27b", stepAnswer: ["88"], problemType: "TextBox", stepTitle: "To the nearest minute, how long will it take the soup to cool to 80° F?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

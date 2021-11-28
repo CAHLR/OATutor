@@ -1,1 +1,0 @@
-import steps from "./systemeqs14-index.js"; const problem = {id: "systemeqs14", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$4x+2y=-10$$, $$3x+9y=0$$", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

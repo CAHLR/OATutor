@@ -1,1 +1,1 @@
-import steps from "./ae05e04inverse21-index.js"; const problem = {id: "ae05e04inverse21", title: "Finding the Inverse", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./ae05e04inverse21-index.js"; const problem = {id: "ae05e04inverse21", title: "Finding the Inverse", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

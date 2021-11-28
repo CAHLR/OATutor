@@ -1,1 +1,0 @@
-import hints from "./quadratic25a-index.js"; const step = {id: "quadratic25a", stepAnswer: ["Minimum"], problemType: "MultipleChoice", stepTitle: "$$y(x)=\\frac{1}{2} x^2+3x+1$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

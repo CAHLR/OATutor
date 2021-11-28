@@ -1,1 +1,0 @@
-import hints from "./Multiply5a-index.js"; const step = {id: "Multiply5a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$${\\left(-2\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

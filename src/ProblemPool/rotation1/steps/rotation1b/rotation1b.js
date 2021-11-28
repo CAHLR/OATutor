@@ -1,1 +1,0 @@
-import hints from "./rotation1b-index.js"; const step = {id: "rotation1b", stepAnswer: ["Parabola"], problemType: "MultipleChoice", stepTitle: "$$9y^2+16x+36y-10=0$$", stepBody: "", choices: ["Circle", "Parabola", "Ellipse", "Hyperbola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

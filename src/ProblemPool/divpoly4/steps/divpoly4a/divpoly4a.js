@@ -1,1 +1,0 @@
-import hints from "./divpoly4a-index.js"; const step = {id: "divpoly4a", stepAnswer: ["$$4x^2+2x-10$$"], problemType: "TextBox", stepTitle: "Use synthetic division to divide $$4x^3+10x^2-6x-20$$ by $$x+2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./quad1a-index.js"; const step = {id: "quad1a", stepAnswer: ["2/3, -1/2"], problemType: "TextBox", stepTitle: "$$2+z=6z^2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

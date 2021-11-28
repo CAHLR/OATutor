@@ -1,1 +1,1 @@
-import steps from "./a0351f0parabola6-index.js"; const problem = {id: "a0351f0parabola6", title: "Find Components of the Graph", body: "Identify the vertex of the graph:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a0351f0parabola6-index.js"; const problem = {id: "a0351f0parabola6", title: "Find Components of the Graph", body: "Identify the vertex of the graph:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

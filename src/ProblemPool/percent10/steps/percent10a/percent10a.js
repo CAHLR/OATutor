@@ -1,1 +1,0 @@
-import hints from "./percent10a-index.js"; const step = {id: "percent10a", stepAnswer: ["8.8"], problemType: "TextBox", stepTitle: "Find the percent increase. (Round to the nearest tenth of a percent.) In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

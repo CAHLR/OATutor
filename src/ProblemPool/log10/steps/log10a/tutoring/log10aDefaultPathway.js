@@ -1,1 +1,0 @@
-var hints = [{id: "log10a-h1", type: "hint", dependencies: [], title: "Natural Log", text: "Whenever there is no base, assume the base is 10.", variabilization: {}}, {id: "log10a-h2", type: "hint", dependencies: ["log10a-h1"], title: "Rethink", text: "Think of it like $${10}^y=1000000$$.", variabilization: {}}, ]; export {hints};

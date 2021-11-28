@@ -1,1 +1,0 @@
-import hints from "./expgraph15a-index.js"; const step = {id: "expgraph15a", stepAnswer: ["$$g(x)=$$ $$-\\left({10}^x\\right)+7$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

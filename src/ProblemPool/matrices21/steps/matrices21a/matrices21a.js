@@ -1,1 +1,0 @@
-import hints from "./matrices21a-index.js"; const step = {id: "matrices21a", stepAnswer: ["$$\\begin{bmatrix} -7 & -8 \\\\ 9 & 8 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$A+B-C$$", stepBody: "If the problem has no solution, simply put \"No Solution\" as your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

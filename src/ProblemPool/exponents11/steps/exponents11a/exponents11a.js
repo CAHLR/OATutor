@@ -1,1 +1,0 @@
-import hints from "./exponents11a-index.js"; const step = {id: "exponents11a", stepAnswer: ["$$3.7{10}^4$$"], problemType: "TextBox", stepTitle: "37,000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

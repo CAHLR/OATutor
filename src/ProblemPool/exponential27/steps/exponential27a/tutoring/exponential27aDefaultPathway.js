@@ -1,1 +1,0 @@
-var hints = [{id: "exponential27a-h1", type: "hint", dependencies: [], title: "Identifying the Initial Deposit", text: "The initial deposit is the initial value.", variabilization: {}}, ]; export {hints};

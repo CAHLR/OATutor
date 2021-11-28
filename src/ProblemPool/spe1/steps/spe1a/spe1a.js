@@ -1,1 +1,0 @@
-import hints from "./spe1a-index.js"; const step = {id: "spe1a", stepAnswer: ["$$x^2+10x+25$$"], problemType: "TextBox", stepTitle: "$${\\left(x+5\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

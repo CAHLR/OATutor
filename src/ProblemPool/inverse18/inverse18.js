@@ -1,1 +1,0 @@
-import steps from "./inverse18-index.js"; const problem = {id: "inverse18", title: "Testing Inverse Functions Algebraically", body: "Yes or No: Does $$g=f^{\\left(-1\\right)}$$?", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

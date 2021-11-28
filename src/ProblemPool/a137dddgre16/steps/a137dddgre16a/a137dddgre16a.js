@@ -1,1 +1,1 @@
-import hints from "./a137dddgre16a-index.js"; const step = {id: "a137dddgre16a", stepAnswer: ["$$\\left(2\\right) a b^2$$"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) a^2 b^3$$, $$\\left(10\\right) a b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a137dddgre16a-index.js"; const step = {id: "a137dddgre16a", stepAnswer: ["$$2a b^2$$"], problemType: "TextBox", stepTitle: "$$8a^2 b^3$$, $$10a b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

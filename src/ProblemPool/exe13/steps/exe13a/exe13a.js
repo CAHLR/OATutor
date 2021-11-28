@@ -1,1 +1,0 @@
-import hints from "./exe13a-index.js"; const step = {id: "exe13a", stepAnswer: ["$$\\left(r+2\\right) \\left(r-4\\right)$$"], problemType: "TextBox", stepTitle: "$$r^2-2r-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

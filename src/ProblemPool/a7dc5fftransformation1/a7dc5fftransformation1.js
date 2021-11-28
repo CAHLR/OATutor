@@ -1,1 +1,1 @@
-import steps from "./a7dc5fftransformation1-index.js"; const problem = {id: "a7dc5fftransformation1", title: "Modeling Shifts", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a7dc5fftransformation1-index.js"; const problem = {id: "a7dc5fftransformation1", title: "Modeling Shifts", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

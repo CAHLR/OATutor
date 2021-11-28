@@ -1,1 +1,0 @@
-import hints from "./VarCon19a-index.js"; const step = {id: "VarCon19a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$12x+8=6x+2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

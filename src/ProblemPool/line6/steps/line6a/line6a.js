@@ -1,1 +1,0 @@
-import hints from "./line6a-index.js"; const step = {id: "line6a", stepAnswer: ["$$y=\\frac{3x}{8}-1$$"], problemType: "MultipleChoice", stepTitle: "$$m=\\frac{3}{8}$$, point (8,2)", stepBody: "", choices: ["$$y=\\frac{3x}{8}-1$$", "$$y=\\frac{8x}{3}+5$$", "$$y=2x-8$$", "$$y=3x+8$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-var hints = [{id: "expgraph13a-h1", type: "hint", dependencies: [], title: "Rewriting into an equation", text: "The function can be rewritten as $${4\\left(2\\right)}^{5-1}-2$$", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./whole25b-index.js"; const step = {id: "whole25b", stepAnswer: ["tens"], problemType: "MultipleChoice", stepTitle: "1", stepBody: "", choices: ["tens", "hundreds", "thousands", "ten thousands"], answerType: "string", hints: hints, variabilization: {}}; export {step};

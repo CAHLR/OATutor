@@ -1,1 +1,0 @@
-import hints from "./rates4a-index.js"; const step = {id: "rates4a", stepAnswer: ["$$a+3$$"], problemType: "TextBox", stepTitle: "Find the average rate of change of $$g(t)=t^2+3t+1$$ on the interval [0,a].", stepBody: "The answer will be an expression involving a in simplest form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

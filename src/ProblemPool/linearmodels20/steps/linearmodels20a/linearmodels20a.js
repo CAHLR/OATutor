@@ -1,1 +1,0 @@
-import hints from "./linearmodels20a-index.js"; const step = {id: "linearmodels20a", stepAnswer: ["162"], problemType: "TextBox", stepTitle: "What is the area?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

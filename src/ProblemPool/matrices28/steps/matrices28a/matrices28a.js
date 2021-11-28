@@ -1,1 +1,0 @@
-import hints from "./matrices28a-index.js"; const step = {id: "matrices28a", stepAnswer: ["$$\\begin{bmatrix} -350 & 1050 \\\\ 350 & 350 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "BA", stepBody: "If the problem has no solution, simply enter \"No Solution\" as your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

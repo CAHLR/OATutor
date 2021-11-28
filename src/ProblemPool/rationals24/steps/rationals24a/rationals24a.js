@@ -1,1 +1,0 @@
-import hints from "./rationals24a-index.js"; const step = {id: "rationals24a", stepAnswer: ["(0,1/4)"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x^2+x+6}{x^2-10x+24}$$.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

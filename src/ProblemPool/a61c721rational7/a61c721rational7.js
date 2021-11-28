@@ -1,1 +1,1 @@
-import steps from "./a61c721rational7-index.js"; const problem = {id: "a61c721rational7", title: "Subtracting Rational Expressions", body: "Subtract the rational expressions:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a61c721rational7-index.js"; const problem = {id: "a61c721rational7", title: "Subtracting Rational Expressions", body: "Subtract the rational expressions:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

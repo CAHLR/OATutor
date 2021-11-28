@@ -1,1 +1,0 @@
-import hints from "./gre16a-index.js"; const step = {id: "gre16a", stepAnswer: ["$$2a b^2$$"], problemType: "TextBox", stepTitle: "$$8a^2 b^3$$, $$10a b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

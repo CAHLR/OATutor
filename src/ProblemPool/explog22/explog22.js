@@ -1,1 +1,0 @@
-import steps from "./explog22-index.js"; const problem = {id: "explog22", title: "Solving an Equation with Positive and Negative Powers #1", body: "For the following question, think about the range of an exponential function.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

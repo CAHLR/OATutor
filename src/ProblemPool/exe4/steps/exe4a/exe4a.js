@@ -1,1 +1,0 @@
-import hints from "./exe4a-index.js"; const step = {id: "exe4a", stepAnswer: ["(y-3)(y-15)"], problemType: "TextBox", stepTitle: "$$y^2-18y+45$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

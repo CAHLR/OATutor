@@ -1,1 +1,0 @@
-import steps from "./quadratic1-index.js"; const problem = {id: "quadratic1", title: "Identifying the Characteristics of a Parabola", body: "Use the attached graph.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

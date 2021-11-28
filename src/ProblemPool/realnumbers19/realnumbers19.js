@@ -1,1 +1,0 @@
-import steps from "./realnumbers19-index.js"; const problem = {id: "realnumbers19", title: "Identifying Correct Inequality Signs #2", body: "Fill in the blanks with the correct inequality sign.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

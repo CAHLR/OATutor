@@ -1,1 +1,0 @@
-import hints from "./rational10a-index.js"; const step = {id: "rational10a", stepAnswer: ["$$3b+3$$"], problemType: "TextBox", stepTitle: "$$\\frac{9b^2+18b+9}{3b+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

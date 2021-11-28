@@ -1,1 +1,0 @@
-import steps from "./exe24-index.js"; const problem = {id: "exe24", title: "Factoring Trinomials", body: "Factor the trinomial.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./abs3b-index.js"; const step = {id: "abs3b", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=-2|x+1|+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

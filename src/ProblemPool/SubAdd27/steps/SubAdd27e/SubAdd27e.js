@@ -1,1 +1,0 @@
-import hints from "./SubAdd27e-index.js"; const step = {id: "SubAdd27e", stepAnswer: ["$$u=-7.1$$"], problemType: "TextBox", stepTitle: "$$8\\left(u+1.5\\right)-7u=4.9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

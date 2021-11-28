@@ -1,1 +1,0 @@
-import hints from "./GenStr25o-index.js"; const step = {id: "GenStr25o", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$35-5\\left(2w+8\\right)=-10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

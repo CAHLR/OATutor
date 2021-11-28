@@ -1,1 +1,0 @@
-import hints from "./sys9a-index.js"; const step = {id: "sys9a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "(-6,5)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

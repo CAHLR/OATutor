@@ -1,1 +1,0 @@
-import hints from "./hyperbola22a-index.js"; const step = {id: "hyperbola22a", stepAnswer: ["$$\\frac{x^2}{9}-\\frac{y^2}{16}=1$$"], problemType: "TextBox", stepTitle: "Writing Equations of Hyperbolas in Standard Form", stepBody: "Given information about the graph of the hyperbola, find its equation.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./divpoly8-index.js"; const problem = {id: "divpoly8", title: "Using Synthetic Division to Divide Polynomials", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

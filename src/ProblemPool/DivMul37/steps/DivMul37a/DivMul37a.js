@@ -1,1 +1,0 @@
-import hints from "./DivMul37a-index.js"; const step = {id: "DivMul37a", stepAnswer: ["$$\\frac{1}{12}$$"], problemType: "TextBox", stepTitle: "The sum of three-fourths and x is five-sixths.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

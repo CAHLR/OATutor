@@ -1,1 +1,0 @@
-import hints from "./logarithmic13a-index.js"; const step = {id: "logarithmic13a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$\\log_{3}\\left(\\frac{1}{9}\\right)-3*\\log_{3}\\left(3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./a1f32dfFormula13-index.js"; const problem = {id: "a1f32dfFormula13", title: "Solve the formula $$\\left(3\\right) x+\\left(2\\right) y=18$$ for y:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./a1f32dfFormula13-index.js"; const problem = {id: "a1f32dfFormula13", title: "Solve the formula $$3x+2y=18$$ for y:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

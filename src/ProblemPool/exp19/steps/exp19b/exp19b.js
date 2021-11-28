@@ -1,1 +1,0 @@
-import hints from "./exp19b-index.js"; const step = {id: "exp19b", stepAnswer: ["-2000000"], problemType: "TextBox", stepTitle: "$$-2{10}^6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

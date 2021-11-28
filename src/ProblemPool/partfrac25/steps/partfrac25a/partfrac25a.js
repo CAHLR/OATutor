@@ -1,1 +1,0 @@
-import hints from "./partfrac25a-index.js"; const step = {id: "partfrac25a", stepAnswer: ["$$\\frac{-354}{169x}+\\frac{72}{13x^2}+\\frac{523x+2467}{\\operatorname{169}\\left(x^2+12x+26\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./divmonomial16-index.js"; const problem = {id: "divmonomial16", title: "Simplifying Expressions Using the Quotient to a Power Property", body: "Simplify the expression using the Quotient to a Power Property.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

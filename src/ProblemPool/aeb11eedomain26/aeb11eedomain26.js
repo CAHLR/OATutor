@@ -1,1 +1,1 @@
-import steps from "./aeb11eedomain26-index.js"; const problem = {id: "aeb11eedomain26", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aeb11eedomain26-index.js"; const problem = {id: "aeb11eedomain26", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

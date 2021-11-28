@@ -1,1 +1,0 @@
-import hints from "./divpoly23a-index.js"; const step = {id: "divpoly23a", stepAnswer: ["$$6x^2-16x+9$$ - $$\\frac{24}{x+1}$$"], problemType: "TextBox", stepTitle: "$$6x^3-10x^2-7x-15$$ / $$x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

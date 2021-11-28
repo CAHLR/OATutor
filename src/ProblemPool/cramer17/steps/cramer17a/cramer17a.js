@@ -1,1 +1,0 @@
-import hints from "./cramer17a-index.js"; const step = {id: "cramer17a", stepAnswer: ["(2,-3)"], problemType: "MultipleChoice", stepTitle: "$$12x+3y=15;$$ \\n $$2x-3y=13$$", stepBody: "", choices: ["(2,-3)", "(-3,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

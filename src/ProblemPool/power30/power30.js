@@ -1,1 +1,0 @@
-import steps from "./power30-index.js"; const problem = {id: "power30", title: "Determine the end behavior of the functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

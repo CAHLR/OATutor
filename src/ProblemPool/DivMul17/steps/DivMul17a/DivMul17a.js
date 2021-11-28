@@ -1,1 +1,0 @@
-import hints from "./DivMul17a-index.js"; const step = {id: "DivMul17a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$14-23=12y-4y-5y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

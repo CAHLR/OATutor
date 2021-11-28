@@ -1,1 +1,0 @@
-import steps from "./Visualize15-index.js"; const problem = {id: "Visualize15", title: "Find the quotient:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

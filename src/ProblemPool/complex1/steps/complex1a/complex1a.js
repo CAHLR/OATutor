@@ -1,1 +1,0 @@
-import hints from "./complex1a-index.js"; const step = {id: "complex1a", stepAnswer: ["3i"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{-9}$$", stepBody: "", choices: ["3i", "9i", "i", "4i"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./cond2a-index.js"; const step = {id: "cond2a", stepAnswer: ["$$\\frac{7}{15}$$"], problemType: "TextBox", stepTitle: "What is the probability that both marbles are black? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

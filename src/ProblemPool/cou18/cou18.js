@@ -1,1 +1,0 @@
-import steps from "./cou18-index.js"; const problem = {id: "cou18", title: "Number of Combinations", body: "A fast food restaurant offers five side dish options. Your meal comes with two side dishes.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

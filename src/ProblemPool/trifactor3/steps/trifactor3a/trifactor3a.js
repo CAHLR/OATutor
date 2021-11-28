@@ -1,1 +1,0 @@
-import hints from "./trifactor3a-index.js"; const step = {id: "trifactor3a", stepAnswer: ["$${\\left(3y+4\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$9y^2+24y+16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

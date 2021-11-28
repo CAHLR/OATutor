@@ -1,1 +1,0 @@
-import hints from "./FracDec22a-index.js"; const step = {id: "FracDec22a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{3v-6}{2}+5=\\frac{11v-4}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./chemical8a-index.js"; const step = {id: "chemical8a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Each carbon molecule can bond with as many $$as\\rule{2cm}{0.15mm}$$ other atom(s) or molecule(s).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

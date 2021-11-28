@@ -1,1 +1,0 @@
-import hints from "./modeling14a-index.js"; const step = {id: "modeling14a", stepAnswer: ["$$10x \\sqrt{z}$$"], problemType: "TextBox", stepTitle: "y varies jointly as x and the square root of z and when $$x=2$$ and $$z=25$$, then $$y=100$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

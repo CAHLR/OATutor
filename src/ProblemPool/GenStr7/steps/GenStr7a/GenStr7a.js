@@ -1,1 +1,0 @@
-import hints from "./GenStr7a-index.js"; const step = {id: "GenStr7a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$5\\left(a-3\\right)+5=-10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

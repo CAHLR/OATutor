@@ -1,1 +1,0 @@
-import hints from "./Multiply21a-index.js"; const step = {id: "Multiply21a", stepAnswer: ["41"], problemType: "TextBox", stepTitle: "$$26-3\\left(2-7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

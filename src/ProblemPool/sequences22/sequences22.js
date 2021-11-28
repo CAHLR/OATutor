@@ -1,1 +1,0 @@
-import steps from "./sequences22-index.js"; const problem = {id: "sequences22", title: "Writing the Terms of a Sequence Using Factorials", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

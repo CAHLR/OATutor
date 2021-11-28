@@ -1,1 +1,0 @@
-import steps from "./IneqApp5-index.js"; const problem = {id: "IneqApp5", title: "Elevator Safety", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

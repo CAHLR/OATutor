@@ -1,1 +1,0 @@
-import hints from "./rational13a-index.js"; const step = {id: "rational13a", stepAnswer: ["$$\\frac{3n-8}{7n-3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{12n^2-29n-8}{28n^2-5n-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
