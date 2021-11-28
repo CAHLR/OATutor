@@ -1,1 +1,0 @@
-import hints from "./exponential7a-index.js"; const step = {id: "exponential7a", stepAnswer: ["4045.05"], problemType: "TextBox", stepTitle: "If we invest $3,000 in an investment account paying 3% interest compounded quarterly, how much will the account be worth in 10 years?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

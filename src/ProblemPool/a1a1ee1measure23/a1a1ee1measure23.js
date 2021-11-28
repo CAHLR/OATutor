@@ -1,1 +1,1 @@
-import steps from "./a1a1ee1measure23-index.js"; const problem = {id: "a1a1ee1measure23", title: "In the following exercise, convert the units.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./a1a1ee1measure23-index.js"; const problem = {id: "a1a1ee1measure23", title: "In the following exercise, convert the units.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./FracDec28a-index.js"; const step = {id: "FracDec28a", stepAnswer: ["19"], problemType: "TextBox", stepTitle: "Solve: $$0.05n+\\operatorname{0.1}\\left(n+7\\right)=3.55$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

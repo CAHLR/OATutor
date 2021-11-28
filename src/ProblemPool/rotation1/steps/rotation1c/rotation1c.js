@@ -1,1 +1,0 @@
-import hints from "./rotation1c-index.js"; const step = {id: "rotation1c", stepAnswer: ["Circle"], problemType: "MultipleChoice", stepTitle: "$$3x^2+3y^2-2x-6y-4=0$$", stepBody: "", choices: ["Circle", "Parabola", "Ellipse", "Hyperbola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

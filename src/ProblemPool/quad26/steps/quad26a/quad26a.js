@@ -1,1 +1,0 @@
-import hints from "./quad26a-index.js"; const step = {id: "quad26a", stepAnswer: ["6, -1"], problemType: "TextBox", stepTitle: "$$x^2-5x-6=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

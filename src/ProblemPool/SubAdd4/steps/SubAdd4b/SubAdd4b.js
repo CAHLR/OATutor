@@ -1,1 +1,0 @@
-import hints from "./SubAdd4b-index.js"; const step = {id: "SubAdd4b", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "Is $$u=\\frac{-1}{2}$$ a solution of $$8u-1=6u$$?", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

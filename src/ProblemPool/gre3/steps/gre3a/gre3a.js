@@ -1,1 +1,0 @@
-import hints from "./gre3a-index.js"; const step = {id: "gre3a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "24, 40", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

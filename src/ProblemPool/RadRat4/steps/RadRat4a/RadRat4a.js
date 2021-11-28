@@ -1,1 +1,0 @@
-import hints from "./RadRat4a-index.js"; const step = {id: "RadRat4a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Simplify the radical expression: $$\\sqrt{12} \\sqrt{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

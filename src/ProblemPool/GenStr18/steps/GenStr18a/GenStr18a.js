@@ -1,1 +1,0 @@
-import hints from "./GenStr18a-index.js"; const step = {id: "GenStr18a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$8\\left(q+1\\right)-5=3\\left(2q-4\\right)-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./a7b98f9composition20c-index.js"; const step = {id: "a7b98f9composition20c", stepAnswer: ["$$\\left(3\\right) x^2 \\sqrt{x-\\left(5\\right)}$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a7b98f9composition20c-index.js"; const step = {id: "a7b98f9composition20c", stepAnswer: ["$$3x^2 \\sqrt{x-5}$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

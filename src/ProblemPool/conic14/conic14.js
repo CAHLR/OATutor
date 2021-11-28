@@ -1,1 +1,0 @@
-import steps from "./conic14-index.js"; const problem = {id: "conic14", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{2}{1-costheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

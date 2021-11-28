@@ -1,1 +1,1 @@
-import steps from "./ae3c1a1exponential9-index.js"; const problem = {id: "ae3c1a1exponential9", title: "Evaluating Functinos with Base e", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ae3c1a1exponential9-index.js"; const problem = {id: "ae3c1a1exponential9", title: "Evaluating Functinos with Base e", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./powers15a-index.js"; const step = {id: "powers15a", stepAnswer: ["$$8r^2 s^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{4}{7} {rs}^2 14{rs}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

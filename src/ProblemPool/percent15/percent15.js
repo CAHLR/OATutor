@@ -1,1 +1,0 @@
-import steps from "./percent15-index.js"; const problem = {id: "percent15", title: "Solve Applications of Percent", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications", courseName: "Openstax: Elementary Algebra"}; export { problem };

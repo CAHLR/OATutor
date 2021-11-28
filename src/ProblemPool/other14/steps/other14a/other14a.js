@@ -1,1 +1,0 @@
-import hints from "./other14a-index.js"; const step = {id: "other14a", stepAnswer: ["8,-2"], problemType: "MultipleChoice", stepTitle: "$${\\left(x+1\\right)}^2-8\\left(x+1\\right)-9=0$$", stepBody: "", choices: ["8,-2", "2,-8", "4,-4", "3,-6"], answerType: "string", hints: hints, variabilization: {}}; export {step};

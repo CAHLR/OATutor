@@ -1,1 +1,1 @@
-import hints from "./aa30a09exponents3a-index.js"; const step = {id: "aa30a09exponents3a", stepAnswer: ["$$\\frac{1}{8}$$"], problemType: "TextBox", stepTitle: "$${\\left(2\\right)}^{\\left(-3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./aa30a09exponents3a-index.js"; const step = {id: "aa30a09exponents3a", stepAnswer: ["$$\\frac{1}{8}$$"], problemType: "TextBox", stepTitle: "$$2^{\\left(-3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

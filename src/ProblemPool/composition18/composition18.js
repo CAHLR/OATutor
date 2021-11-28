@@ -1,1 +1,0 @@
-import steps from "./composition18-index.js"; const problem = {id: "composition18", title: "Composition of Funtions With Exponents", body: "Given $$f(x)=2x^2+4x$$ and $$g(x)=12x$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

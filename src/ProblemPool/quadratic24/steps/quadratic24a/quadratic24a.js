@@ -1,1 +1,0 @@
-import hints from "./quadratic24a-index.js"; const step = {id: "quadratic24a", stepAnswer: ["Maximum"], problemType: "MultipleChoice", stepTitle: "$$h(t)=-4t^2+6x-1$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./Multiply10-index.js"; const problem = {id: "Multiply10", title: "Translate and Simplify", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./a9527cecellcom3-index.js"; const problem = {id: "a9527cecellcom3", title: "Review Question 7", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9527cecellcom3-index.js"; const problem = {id: "a9527cecellcom3", title: "Review Question 7", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

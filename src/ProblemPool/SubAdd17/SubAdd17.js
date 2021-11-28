@@ -1,1 +1,0 @@
-import steps from "./SubAdd17-index.js"; const problem = {id: "SubAdd17", title: "In the following exercises, solve each equation using the subtraction and addition properties of equality", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

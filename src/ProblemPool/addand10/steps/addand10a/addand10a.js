@@ -1,1 +1,0 @@
-import hints from "./addand10a-index.js"; const step = {id: "addand10a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{2}+\\frac{2}{3}}{\\frac{3}{4}-\\frac{1}{6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

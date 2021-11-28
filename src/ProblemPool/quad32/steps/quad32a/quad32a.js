@@ -1,1 +1,0 @@
-import hints from "./quad32a-index.js"; const step = {id: "quad32a", stepAnswer: ["-1/4, -2/3"], problemType: "TextBox", stepTitle: "$$12x^2+11x+2=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./explog21a-index.js"; const step = {id: "explog21a", stepAnswer: ["$$\\frac{1}{10}$$"], problemType: "TextBox", stepTitle: "$$2^{5x}=\\sqrt{2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

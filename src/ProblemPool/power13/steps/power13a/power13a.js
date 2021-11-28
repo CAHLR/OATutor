@@ -1,1 +1,0 @@
-import hints from "./power13a-index.js"; const step = {id: "power13a", stepAnswer: ["polynomial"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x-x^4$$", stepBody: "", choices: ["power", "polynomial", "neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

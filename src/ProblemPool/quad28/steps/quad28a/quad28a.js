@@ -1,1 +1,0 @@
-import hints from "./quad28a-index.js"; const step = {id: "quad28a", stepAnswer: ["7, -3"], problemType: "TextBox", stepTitle: "$$x^2-4x-21=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

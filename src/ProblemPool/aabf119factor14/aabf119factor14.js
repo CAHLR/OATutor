@@ -1,1 +1,1 @@
-import steps from "./aabf119factor14-index.js"; const problem = {id: "aabf119factor14", title: "Factoring Polynomials", body: "Find the greatest common factor.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aabf119factor14-index.js"; const problem = {id: "aabf119factor14", title: "Factoring Polynomials", body: "Find the greatest common factor.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

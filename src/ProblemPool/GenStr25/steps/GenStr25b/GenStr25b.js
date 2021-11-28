@@ -1,1 +1,0 @@
-import hints from "./GenStr25b-index.js"; const step = {id: "GenStr25b", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$-16\\left(3n+4\\right)=32$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

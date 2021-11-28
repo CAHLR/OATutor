@@ -1,1 +1,0 @@
-import steps from "./intercepts1-index.js"; const problem = {id: "intercepts1", title: "Intercepts", body: "Find x and y intercepts of the lines.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

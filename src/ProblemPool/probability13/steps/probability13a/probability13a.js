@@ -1,1 +1,0 @@
-import hints from "./probability13a-index.js"; const step = {id: "probability13a", stepAnswer: ["$$\\frac{3}{8}$$"], problemType: "TextBox", stepTitle: "Find the probability of landing on green or on red.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./RecCord17-index.js"; const problem = {id: "RecCord17", title: "Finding the Center of a Circle", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

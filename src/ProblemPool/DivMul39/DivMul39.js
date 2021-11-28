@@ -1,1 +1,0 @@
-import steps from "./DivMul39-index.js"; const problem = {id: "DivMul39", title: "Translate and Solve Applications", body: "Arianna bought a 24-pack of water bottles for $9.36.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

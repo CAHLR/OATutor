@@ -1,1 +1,0 @@
-import steps from "./powers27-index.js"; const problem = {id: "powers27", title: "Multiply Monomials", body: "Multiply the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

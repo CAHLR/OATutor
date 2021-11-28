@@ -1,1 +1,0 @@
-import hints from "./gre26a-index.js"; const step = {id: "gre26a", stepAnswer: ["$$4\\left(x+5\\right)$$"], problemType: "TextBox", stepTitle: "$$4x+20$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./exponents7a-index.js"; const step = {id: "exponents7a", stepAnswer: ["$$\\frac{1}{p^3 q^3}$$"], problemType: "TextBox", stepTitle: "$$p^6 q^{\\left(-2\\right)} p^{\\left(-9\\right)} q^{\\left(-1\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

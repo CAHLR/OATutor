@@ -1,1 +1,0 @@
-import hints from "./FunNota14b-index.js"; const step = {id: "FunNota14b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y=x^2$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

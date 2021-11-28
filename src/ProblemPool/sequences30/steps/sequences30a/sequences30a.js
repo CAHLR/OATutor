@@ -1,1 +1,0 @@
-import hints from "./sequences30a-index.js"; const step = {id: "sequences30a", stepAnswer: ["$$\\frac{-4}{5}$$"], problemType: "TextBox", stepTitle: "Write the first term of the sequence defined by the explicit formula $$a_n=\\frac{-\\left(4{\\left(-5\\right)}^{n-1}\\right)}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

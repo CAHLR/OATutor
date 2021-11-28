@@ -1,1 +1,0 @@
-import hints from "./complex3a-index.js"; const step = {id: "complex3a", stepAnswer: ["$$5+i$$"], problemType: "MultipleChoice", stepTitle: "$$3-4i+2+5i$$", stepBody: "", choices: ["$$4+i$$", "6", "$$5+i$$", "i"], answerType: "string", hints: hints, variabilization: {}}; export {step};

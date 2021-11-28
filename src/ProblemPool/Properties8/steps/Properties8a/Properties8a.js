@@ -1,1 +1,0 @@
-import hints from "./Properties8a-index.js"; const step = {id: "Properties8a", stepAnswer: ["$$\\frac{12}{11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{11}{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

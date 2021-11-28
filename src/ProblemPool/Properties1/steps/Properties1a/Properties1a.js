@@ -1,1 +1,0 @@
-import hints from "./Properties1a-index.js"; const step = {id: "Properties1a", stepAnswer: ["12x"], problemType: "TextBox", stepTitle: "$$3\\times4x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

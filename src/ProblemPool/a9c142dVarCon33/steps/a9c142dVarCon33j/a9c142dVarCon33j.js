@@ -1,1 +1,1 @@
-import hints from "./a9c142dVarCon33j-index.js"; const step = {id: "a9c142dVarCon33j", stepAnswer: ["-40"], problemType: "TextBox", stepTitle: "$$\\frac{5}{4} a+\\left(15\\right)=\\frac{3}{4} a-\\left(5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a9c142dVarCon33j-index.js"; const step = {id: "a9c142dVarCon33j", stepAnswer: ["-40"], problemType: "TextBox", stepTitle: "$$\\frac{5}{4} a+15=\\frac{3}{4} a-5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

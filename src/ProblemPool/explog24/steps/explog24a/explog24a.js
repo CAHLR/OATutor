@@ -1,1 +1,0 @@
-import hints from "./explog24a-index.js"; const step = {id: "explog24a", stepAnswer: ["$$e^2$$"], problemType: "TextBox", stepTitle: "$$2lnx+3=7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

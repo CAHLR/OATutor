@@ -1,1 +1,0 @@
-import hints from "./exponential13a-index.js"; const step = {id: "exponential13a", stepAnswer: ["20.0855"], problemType: "TextBox", stepTitle: "$$f(x)=e^x$$, for f(3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./matrices5a-index.js"; const step = {id: "matrices5a", stepAnswer: ["$$\\begin{bmatrix} 8 & \\frac{3}{2} & \\frac{7}{2} & 9 \\\\ 45 & \\frac{5}{2} & \\frac{3}{2} & \\frac{29}{2} \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{2} C$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

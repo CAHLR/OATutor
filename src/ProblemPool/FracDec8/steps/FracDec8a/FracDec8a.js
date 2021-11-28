@@ -1,1 +1,0 @@
-import hints from "./FracDec8a-index.js"; const step = {id: "FracDec8a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Solve: $$x+\\frac{1}{3}=\\frac{1}{6} x-\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

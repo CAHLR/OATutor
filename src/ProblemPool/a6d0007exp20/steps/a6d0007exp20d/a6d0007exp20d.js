@@ -1,1 +1,1 @@
-import hints from "./a6d0007exp20d-index.js"; const step = {id: "a6d0007exp20d", stepAnswer: ["0.000008"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) {\\left(10\\right)}^{-\\left(6\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a6d0007exp20d-index.js"; const step = {id: "a6d0007exp20d", stepAnswer: ["0.000008"], problemType: "TextBox", stepTitle: "$$8{10}^{-6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

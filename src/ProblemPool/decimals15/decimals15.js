@@ -1,1 +1,0 @@
-import steps from "./decimals15-index.js"; const problem = {id: "decimals15", title: "Add:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./composition13-index.js"; const problem = {id: "composition13", title: "Decomposing a Function", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

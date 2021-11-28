@@ -1,1 +1,0 @@
-import hints from "./VarCon15a-index.js"; const step = {id: "VarCon15a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$12j=-4j+32$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

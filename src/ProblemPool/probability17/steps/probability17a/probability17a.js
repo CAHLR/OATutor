@@ -1,1 +1,0 @@
-import hints from "./probability17a-index.js"; const step = {id: "probability17a", stepAnswer: ["$$\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "Find the probability of tossing two heads.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

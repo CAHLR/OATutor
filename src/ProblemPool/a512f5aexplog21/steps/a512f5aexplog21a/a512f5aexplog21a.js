@@ -1,1 +1,1 @@
-import hints from "./a512f5aexplog21a-index.js"; const step = {id: "a512f5aexplog21a", stepAnswer: ["$$\\frac{1}{10}$$"], problemType: "TextBox", stepTitle: "$${\\left(2\\right)}^{\\left(5\\right) x}=\\sqrt{2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a512f5aexplog21a-index.js"; const step = {id: "a512f5aexplog21a", stepAnswer: ["$$\\frac{1}{10}$$"], problemType: "TextBox", stepTitle: "$$2^{5x}=\\sqrt{2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

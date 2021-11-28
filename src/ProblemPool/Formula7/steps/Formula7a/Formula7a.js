@@ -1,1 +1,0 @@
-import hints from "./Formula7a-index.js"; const step = {id: "Formula7a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "When $$d=520$$ and $$r=65$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

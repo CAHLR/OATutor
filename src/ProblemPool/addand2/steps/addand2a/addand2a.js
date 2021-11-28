@@ -1,1 +1,0 @@
-import hints from "./addand2a-index.js"; const step = {id: "addand2a", stepAnswer: ["$$\\frac{-3}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-23}{24}-\\frac{13}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

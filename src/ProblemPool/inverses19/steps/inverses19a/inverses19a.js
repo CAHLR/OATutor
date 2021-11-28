@@ -1,1 +1,0 @@
-import hints from "./inverses19a-index.js"; const step = {id: "inverses19a", stepAnswer: ["$$y=\\sqrt{3, \\frac{x-4}{\\left(-2\\right)}}$$"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=4-2x^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

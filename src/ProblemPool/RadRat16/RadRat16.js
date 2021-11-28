@@ -1,1 +1,0 @@
-import steps from "./RadRat16-index.js"; const problem = {id: "RadRat16", title: "Simplification of nth Roots", body: "Simplify each of the following:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

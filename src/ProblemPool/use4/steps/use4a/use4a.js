@@ -1,1 +1,0 @@
-import hints from "./use4a-index.js"; const step = {id: "use4a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "14y", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

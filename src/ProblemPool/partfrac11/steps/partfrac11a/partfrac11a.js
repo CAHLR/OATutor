@@ -1,1 +1,0 @@
-import hints from "./partfrac11a-index.js"; const step = {id: "partfrac11a", stepAnswer: ["$$\\frac{1}{x-2}+\\frac{2}{{\\left(x-2\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{{\\left(x-2\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

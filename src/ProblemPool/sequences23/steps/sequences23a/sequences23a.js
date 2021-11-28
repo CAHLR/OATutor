@@ -1,1 +1,0 @@
-import hints from "./sequences23a-index.js"; const step = {id: "sequences23a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Write the first term of the sequence defined by the explicit formula $$a_n=2^n-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

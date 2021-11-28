@@ -1,1 +1,0 @@
-import hints from "./GenStr24a-index.js"; const step = {id: "GenStr24a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$0.15\\left(40m-120\\right)=0.5\\left(60m+12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./whole21a-index.js"; const step = {id: "whole21a", stepAnswer: ["72"], problemType: "TextBox", stepTitle: "18 and 24", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

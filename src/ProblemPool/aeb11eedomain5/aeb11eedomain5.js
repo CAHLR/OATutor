@@ -1,1 +1,1 @@
-import steps from "./aeb11eedomain5-index.js"; const problem = {id: "aeb11eedomain5", title: "Describing Sets on the Real-Number Line", body: "\n##figure1.gif", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./aeb11eedomain5-index.js"; const problem = {id: "aeb11eedomain5", title: "Describing Sets on the Real-Number Line", body: "\n##figure1.gif", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./other19b-index.js"; const step = {id: "other19b", stepAnswer: ["no solution"], problemType: "MultipleChoice", stepTitle: "$$|3x+4|=-9$$", stepBody: "", choices: ["$$x=3, 2$$", "$$x=3, 5$$", "$$x=\\frac{5}{3}$$", "no solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

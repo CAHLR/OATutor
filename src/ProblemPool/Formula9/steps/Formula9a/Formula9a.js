@@ -1,1 +1,0 @@
-import hints from "./Formula9a-index.js"; const step = {id: "Formula9a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "When $$A=90$$ and $$b=15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

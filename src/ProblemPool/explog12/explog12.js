@@ -1,1 +1,0 @@
-import steps from "./explog12-index.js"; const problem = {id: "explog12", title: "Solving Exponential Functions in Quadratic Form", body: "Solve the following equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/6-6-exponential-and-logarithmic-equations", courseName: "Openstax: College Algebra"}; export { problem };

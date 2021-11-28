@@ -1,1 +1,1 @@
-import hints from "./a20771equad10a-index.js"; const step = {id: "a20771equad10a", stepAnswer: ["0, -1, -10"], problemType: "TextBox", stepTitle: "$$x^3+\\left(11\\right) x^2+\\left(10\\right) x=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./a20771equad10a-index.js"; const step = {id: "a20771equad10a", stepAnswer: ["0, -1, -10"], problemType: "TextBox", stepTitle: "$$x^3+11x^2+10x=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./FunNota4-index.js"; const problem = {id: "FunNota4", title: "Using Function Notation for Days in a Month", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

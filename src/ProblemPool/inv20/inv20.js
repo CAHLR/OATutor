@@ -1,1 +1,0 @@
-import steps from "./inv20-index.js"; const problem = {id: "inv20", title: "Solve a 2x2 system with the inverse of a matrix", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

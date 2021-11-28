@@ -1,1 +1,0 @@
-import hints from "./use30a-index.js"; const step = {id: "use30a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "$$7^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

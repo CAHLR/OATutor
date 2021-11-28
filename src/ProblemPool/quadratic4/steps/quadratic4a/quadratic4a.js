@@ -1,1 +1,0 @@
-import hints from "./quadratic4a-index.js"; const step = {id: "quadratic4a", stepAnswer: ["all real numbers"], problemType: "MultipleChoice", stepTitle: "What is the domain of f?", stepBody: "", choices: ["$$x>0$$", "all real numbers", "all real numbers except 0"], answerType: "string", hints: hints, variabilization: {}}; export {step};

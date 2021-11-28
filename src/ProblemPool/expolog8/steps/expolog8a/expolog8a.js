@@ -1,1 +1,0 @@
-import hints from "./expolog8a-index.js"; const step = {id: "expolog8a", stepAnswer: ["$$3e^{\\ln(0.5) x}$$"], problemType: "TextBox", stepTitle: "Change the function $$y={3\\left(0.5\\right)}^x$$ to one having e as the base", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./log23-index.js"; const problem = {id: "log23", title: "Rewriting Equations in Exponential Form: Exercise #8", body: "For the following exercise, rewrite the equation in exponential form.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

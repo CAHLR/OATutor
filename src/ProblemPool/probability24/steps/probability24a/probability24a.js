@@ -1,1 +1,0 @@
-import hints from "./probability24a-index.js"; const step = {id: "probability24a", stepAnswer: ["$$\\frac{1}{13}$$"], problemType: "TextBox", stepTitle: "Find the probability of drawing a two.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

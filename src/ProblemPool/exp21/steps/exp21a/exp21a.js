@@ -1,1 +1,0 @@
-import hints from "./exp21a-index.js"; const step = {id: "exp21a", stepAnswer: ["$$5.291\\times {10}^4$$"], problemType: "TextBox", stepTitle: "Simplify $$8.14\\times {10}^{-7} 6.5{10}^{10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./explog6a-index.js"; const step = {id: "explog6a", stepAnswer: ["$$\\ln(\\frac{17}{8})$$ - 7"], problemType: "TextBox", stepTitle: "$$-8{10}^{x+7}-7$$ $$=-24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

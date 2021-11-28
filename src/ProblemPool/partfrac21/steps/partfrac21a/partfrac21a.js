@@ -1,1 +1,0 @@
-import hints from "./partfrac21a-index.js"; const step = {id: "partfrac21a", stepAnswer: ["$$\\frac{7}{x+3}-\\frac{7}{{\\left(x+3\\right)}^2}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

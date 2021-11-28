@@ -1,1 +1,0 @@
-import hints from "./ser13a-index.js"; const step = {id: "ser13a", stepAnswer: ["-7812"], problemType: "TextBox", stepTitle: "$$S_6$$ for the series -2-10-50-250...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

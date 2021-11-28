@@ -1,1 +1,0 @@
-import hints from "./slope27a-index.js"; const step = {id: "slope27a", stepAnswer: ["Not Perpendicular"], problemType: "MultipleChoice", stepTitle: "$$3x-4y=8$$, $$4x-3y=6$$", stepBody: "", choices: ["Perpendicular", "Not Perpendicular"], answerType: "string", hints: hints, variabilization: {}}; export {step};

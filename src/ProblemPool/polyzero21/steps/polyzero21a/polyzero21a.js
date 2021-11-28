@@ -1,1 +1,0 @@
-import hints from "./polyzero21a-index.js"; const step = {id: "polyzero21a", stepAnswer: ["x=-1/2,5,-3"], problemType: "MultipleChoice", stepTitle: "$$2x^3-3x^2-32x-15=0$$", stepBody: "", choices: ["x=-1,5/2,-3", "$$x=-2, 5, -3$$", "x=-1/2,5,-3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

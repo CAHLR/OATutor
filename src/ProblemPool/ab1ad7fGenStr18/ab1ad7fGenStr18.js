@@ -1,1 +1,1 @@
-import steps from "./ab1ad7fGenStr18-index.js"; const problem = {id: "ab1ad7fGenStr18", title: "Solve the Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ab1ad7fGenStr18-index.js"; const problem = {id: "ab1ad7fGenStr18", title: "Solve the Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./rational12a-index.js"; const step = {id: "rational12a", stepAnswer: ["$$\\frac{a+3}{a-3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{a^2+9a+18}{a^2+3a-18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

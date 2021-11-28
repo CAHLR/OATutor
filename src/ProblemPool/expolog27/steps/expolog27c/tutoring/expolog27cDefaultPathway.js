@@ -1,1 +1,0 @@
-var hints = [{id: "expolog27c-h1", type: "hint", dependencies: [], title: "Solving for T(t)", text: "Substitute $$t=150$$ to solve for T(t).", variabilization: {}}, ]; export {hints};

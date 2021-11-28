@@ -1,1 +1,0 @@
-import hints from "./composition19b-index.js"; const step = {id: "composition19b", stepAnswer: ["$$\\frac{10-2x}{\\left(x-4\\right) \\left(6-x\\right)}$$"], problemType: "TextBox", stepTitle: "f-g", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

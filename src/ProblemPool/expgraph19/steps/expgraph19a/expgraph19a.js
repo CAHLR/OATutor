@@ -1,1 +1,0 @@
-import hints from "./expgraph19a-index.js"; const step = {id: "expgraph19a", stepAnswer: ["g(x) $$=$$ $${4\\left(2\\right)}^x-2$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

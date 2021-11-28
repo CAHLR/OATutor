@@ -1,1 +1,1 @@
-import steps from "./ad291beRadRat8-index.js"; const problem = {id: "ad291beRadRat8", title: "Using the Quotient Rule to Simplify an Expression with Two Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ad291beRadRat8-index.js"; const problem = {id: "ad291beRadRat8", title: "Using the Quotient Rule to Simplify an Expression with Two Square Roots", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

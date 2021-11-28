@@ -1,1 +1,0 @@
-import steps from "./clt3-index.js"; const problem = {id: "clt3", title: "Central Limit Theorem: Less Than", body: "", steps: steps, variabilization: {}, oer: "statisticshowto.com", courseName: "Data Content"}; export { problem };

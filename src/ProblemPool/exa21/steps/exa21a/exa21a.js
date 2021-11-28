@@ -1,1 +1,0 @@
-import hints from "./exa21a-index.js"; const step = {id: "exa21a", stepAnswer: ["7y-28"], problemType: "TextBox", stepTitle: "7(y-4)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

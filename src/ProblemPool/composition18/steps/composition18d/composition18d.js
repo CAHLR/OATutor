@@ -1,1 +1,0 @@
-import hints from "./composition18d-index.js"; const step = {id: "composition18d", stepAnswer: ["$$\\frac{x+2}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

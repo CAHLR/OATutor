@@ -1,1 +1,1 @@
-import steps from "./aafc2dcMultiply21-index.js"; const problem = {id: "aafc2dcMultiply21", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aafc2dcMultiply21-index.js"; const problem = {id: "aafc2dcMultiply21", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

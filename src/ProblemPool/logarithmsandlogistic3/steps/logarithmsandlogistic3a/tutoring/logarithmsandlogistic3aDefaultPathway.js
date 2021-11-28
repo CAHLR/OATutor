@@ -1,1 +1,0 @@
-var hints = [{id: "logarithmsandlogistic3a-h1", type: "hint", dependencies: [], title: "How to Find the y intercept", text: "The y intercept is P(t) when $$t=0$$.", variabilization: {}}, ]; export {hints};

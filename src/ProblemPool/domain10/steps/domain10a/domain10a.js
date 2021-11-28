@@ -1,1 +1,0 @@
-import hints from "./domain10a-index.js"; const step = {id: "domain10a", stepAnswer: ["$$x \\geq -4$$"], problemType: "MultipleChoice", stepTitle: "Find the domain.", stepBody: "", choices: ["$$x \\leq -4$$", "$$x \\geq -4$$", "$$x \\geq 4$$", "all real numbers"], answerType: "string", hints: hints, variabilization: {}}; export {step};

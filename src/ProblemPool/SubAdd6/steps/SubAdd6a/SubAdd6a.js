@@ -1,1 +1,0 @@
-import hints from "./SubAdd6a-index.js"; const step = {id: "SubAdd6a", stepAnswer: ["-46"], problemType: "TextBox", stepTitle: "$$x+19=-27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

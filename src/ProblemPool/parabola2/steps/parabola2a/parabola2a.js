@@ -1,1 +1,0 @@
-import hints from "./parabola2a-index.js"; const step = {id: "parabola2a", stepAnswer: ["$$x^2=14y$$"], problemType: "TextBox", stepTitle: "The parabola has focus $$(0,\\frac{7}{2})$$ and directrix $$y=\\frac{-7}{2}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

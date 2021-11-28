@@ -1,1 +1,0 @@
-var hints = [{id: "quadratic19b-h1", type: "hint", dependencies: [], title: "The vertex is (h,k). If we use the values of h and k from before, we get the vertex to be $$(\\frac{3}{2}, -4.5)$$", text: "", variabilization: {}}, ]; export {hints};

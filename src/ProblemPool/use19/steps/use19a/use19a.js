@@ -1,1 +1,0 @@
-import hints from "./use19a-index.js"; const step = {id: "use19a", stepAnswer: ["17 is less than or equal to 26."], problemType: "MultipleChoice", stepTitle: "$$17 \\leq 26$$", stepBody: "", choices: ["17 is less than or equal to 26.", "17 is greater than 26.", "17 is less than 26.", "17 is equal to 26."], answerType: "string", hints: hints, variabilization: {}}; export {step};

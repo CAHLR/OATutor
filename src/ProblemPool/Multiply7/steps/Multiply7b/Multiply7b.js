@@ -1,1 +1,0 @@
-import hints from "./Multiply7b-index.js"; const step = {id: "Multiply7b", stepAnswer: ["17"], problemType: "TextBox", stepTitle: "$$-y+8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

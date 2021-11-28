@@ -1,1 +1,0 @@
-import steps from "./transformation2-index.js"; const problem = {id: "transformation2", title: "Odd, Even Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

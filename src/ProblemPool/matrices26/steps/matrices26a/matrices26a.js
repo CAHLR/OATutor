@@ -1,1 +1,0 @@
-import hints from "./matrices26a-index.js"; const step = {id: "matrices26a", stepAnswer: ["$$\\begin{bmatrix} -840 & 650 & -530 \\\\ 330 & 360 & 250 \\\\ -10 & 900 & 110 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "100D-10E", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

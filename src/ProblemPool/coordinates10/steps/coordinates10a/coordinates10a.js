@@ -1,1 +1,0 @@
-import hints from "./coordinates10a-index.js"; const step = {id: "coordinates10a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine if (2,0) is a solution to the equation $$2x+3y=6$$.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

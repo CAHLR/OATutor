@@ -1,1 +1,0 @@
-import steps from "./exponential18-index.js"; const problem = {id: "exponential18", title: "Evaluating a Real-World Exponential Model", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

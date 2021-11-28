@@ -1,1 +1,0 @@
-import hints from "./trifactor7a-index.js"; const step = {id: "trifactor7a", stepAnswer: ["$${\\left(6x+7y\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$36x^2+84x y+49y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

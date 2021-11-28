@@ -1,1 +1,0 @@
-import steps from "./decimals20-index.js"; const problem = {id: "decimals20", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

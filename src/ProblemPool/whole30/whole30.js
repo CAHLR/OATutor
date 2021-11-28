@@ -1,1 +1,0 @@
-import steps from "./whole30-index.js"; const problem = {id: "whole30", title: "Word Form to Digits", body: "Write the following number as a whole number using digits.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./cou16a-index.js"; const step = {id: "cou16a", stepAnswer: ["60480"], problemType: "TextBox", stepTitle: "P(9,6)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./exe23a-index.js"; const step = {id: "exe23a", stepAnswer: ["$$\\left(x+7\\right) \\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2+10x+21$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

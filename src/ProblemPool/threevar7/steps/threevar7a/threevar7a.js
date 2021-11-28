@@ -1,1 +1,0 @@
-import hints from "./threevar7a-index.js"; const step = {id: "threevar7a", stepAnswer: ["(4,-6,1)"], problemType: "MultipleChoice", stepTitle: "Solve the system of equations by elimination: $$2x-y+3z=17$$, $$-5x+4y-2z=-46$$, $$2y+5z=-7$$", stepBody: "", choices: ["(4,-6,1)", "(1,-6,4)", "None of the above"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./GenStr25c-index.js"; const step = {id: "GenStr25c", stepAnswer: ["$$\\frac{-4}{3}$$"], problemType: "TextBox", stepTitle: "$$5\\left(8+6p\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

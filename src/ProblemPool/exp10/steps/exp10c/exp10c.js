@@ -1,1 +1,0 @@
-import hints from "./exp10c-index.js"; const step = {id: "exp10c", stepAnswer: ["$$\\frac{2}{5k^3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2k^4}{5k^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

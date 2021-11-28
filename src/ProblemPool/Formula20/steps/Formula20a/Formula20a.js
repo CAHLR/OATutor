@@ -1,1 +1,0 @@
-import hints from "./Formula20a-index.js"; const step = {id: "Formula20a", stepAnswer: ["70"], problemType: "TextBox", stepTitle: "Solve for r when $$d=420$$ and $$t=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

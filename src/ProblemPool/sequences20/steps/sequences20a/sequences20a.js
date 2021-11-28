@@ -1,1 +1,0 @@
-import hints from "./sequences20a-index.js"; const step = {id: "sequences20a", stepAnswer: ["$$-\\left({\\left(-9\\right)}^n\\right)$$"], problemType: "TextBox", stepTitle: "Write an explicit formula for the nth term of the sequence. {9, -81, 729, -6561, 59049, ...}", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

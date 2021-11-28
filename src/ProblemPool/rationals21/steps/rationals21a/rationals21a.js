@@ -1,1 +1,0 @@
-import hints from "./rationals21a-index.js"; const step = {id: "rationals21a", stepAnswer: ["(0,5/4),(-5,0)"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x+5}{x^2+4}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./rationals26a-index.js"; const step = {id: "rationals26a", stepAnswer: ["12x-3"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{24x^2+6x}{2x+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

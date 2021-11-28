@@ -1,1 +1,0 @@
-import hints from "./polyzero7a-index.js"; const step = {id: "polyzero7a", stepAnswer: ["-106"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{3x^3-2x^2+x-4}{x+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

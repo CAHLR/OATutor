@@ -1,1 +1,0 @@
-import hints from "./general28a-index.js"; const step = {id: "general28a", stepAnswer: ["(b-5)(b-12)"], problemType: "TextBox", stepTitle: "$$b^2-17b+60$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

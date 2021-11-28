@@ -1,1 +1,0 @@
-import hints from "./inverses4a-index.js"; const step = {id: "inverses4a", stepAnswer: ["$$2+\\sqrt{x+3}$$"], problemType: "TextBox", stepTitle: "$$f(x)={\\left(x-2\\right)}^2-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

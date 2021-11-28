@@ -1,1 +1,0 @@
-import hints from "./logprop12a-index.js"; const step = {id: "logprop12a", stepAnswer: ["$$2\\ln(x)+3\\ln(y)-4\\ln(z)$$"], problemType: "TextBox", stepTitle: "Expand log((x**2*y**3)/z**4))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./divmonomial20b-index.js"; const step = {id: "divmonomial20b", stepAnswer: ["$$\\frac{1}{{10}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{10}{{10}^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

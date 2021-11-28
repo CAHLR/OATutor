@@ -1,1 +1,0 @@
-import hints from "./whole2b-index.js"; const step = {id: "whole2b", stepAnswer: ["104000"], problemType: "TextBox", stepTitle: "Round 103,978 to the nearest thousand", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

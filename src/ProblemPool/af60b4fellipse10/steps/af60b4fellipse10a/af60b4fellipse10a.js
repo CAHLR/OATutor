@@ -1,1 +1,1 @@
-import hints from "./af60b4fellipse10a-index.js"; const step = {id: "af60b4fellipse10a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\left(2\\right) x^2+y=4$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./af60b4fellipse10a-index.js"; const step = {id: "af60b4fellipse10a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$2x^2+y=4$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

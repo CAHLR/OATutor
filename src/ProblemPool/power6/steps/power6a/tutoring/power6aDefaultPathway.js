@@ -1,1 +1,0 @@
-var hints = [{id: "power6a-h1", type: "hint", dependencies: [], title: "The polynomial has a degree of 10", text: "", variabilization: {}}, {id: "power6a-h2", type: "hint", dependencies: ["power6a-h1"], title: "So, there are at most 10 x-intercepts and at most 9 turning points", text: "", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./ser2a-index.js"; const step = {id: "ser2a", stepAnswer: ["$$S_{10}=\\frac{10\\left(19+73\\right)}{2}$$"], problemType: "TextBox", stepTitle: "19+25+31+...+73", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

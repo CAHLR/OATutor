@@ -1,1 +1,0 @@
-import hints from "./partfrac6a-index.js"; const step = {id: "partfrac6a", stepAnswer: ["$$\\frac{3}{5x-2}+\\frac{4}{4x-1}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./Formula19a-index.js"; const step = {id: "Formula19a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "Solve for r when $$d=204$$ and $$t=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

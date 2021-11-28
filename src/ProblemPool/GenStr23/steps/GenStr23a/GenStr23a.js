@@ -1,1 +1,0 @@
-import hints from "./GenStr23a-index.js"; const step = {id: "GenStr23a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$0.55\\left(100n+8\\right)=0.6\\left(85n+14\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./a20771equad32a-index.js"; const step = {id: "a20771equad32a", stepAnswer: ["-1/4, -2/3"], problemType: "TextBox", stepTitle: "$$\\left(12\\right) x^2+\\left(11\\right) x+\\left(2\\right)=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./a20771equad32a-index.js"; const step = {id: "a20771equad32a", stepAnswer: ["-1/4, -2/3"], problemType: "TextBox", stepTitle: "$$12x^2+11x+2=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

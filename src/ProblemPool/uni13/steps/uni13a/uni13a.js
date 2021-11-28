@@ -1,1 +1,0 @@
-import hints from "./uni13a-index.js"; const step = {id: "uni13a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "How fast was he driving in the congested freeways?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

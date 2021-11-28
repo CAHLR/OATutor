@@ -1,1 +1,1 @@
-import steps from "./a8e6481uni26-index.js"; const problem = {id: "a8e6481uni26", title: "Solve Uniform Motion Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a8e6481uni26-index.js"; const problem = {id: "a8e6481uni26", title: "Solve Uniform Motion Applications", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./gra14a-index.js"; const step = {id: "gra14a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "The graphs are in the order A, B, and C.", stepBody: "##figure1.gif## ##figure2.gif## ##figure3.gif## ", choices: ["A", "B", "C"], answerType: "string", hints: hints, variabilization: {}}; export {step};

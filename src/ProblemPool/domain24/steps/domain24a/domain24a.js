@@ -1,1 +1,0 @@
-import hints from "./domain24a-index.js"; const step = {id: "domain24a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{x^2+4}$$", stepBody: "", choices: ["$$[2,\\infty)$$", "$$(-\\infty,-2]$$", "$$(2,\\infty)$$", "$$(-\\infty,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

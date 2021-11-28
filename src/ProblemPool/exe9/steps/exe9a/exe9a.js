@@ -1,1 +1,0 @@
-import hints from "./exe9a-index.js"; const step = {id: "exe9a", stepAnswer: ["$$\\left(p+7\\right) \\left(p-1\\right)$$"], problemType: "TextBox", stepTitle: "$$n^2+6n-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

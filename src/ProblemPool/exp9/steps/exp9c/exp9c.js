@@ -1,1 +1,0 @@
-import hints from "./exp9c-index.js"; const step = {id: "exp9c", stepAnswer: ["$$\\frac{1}{{\\left(-5t^3\\right)}^4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-5t^3\\right)}^4}{{\\left(-5t^3\\right)}^8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

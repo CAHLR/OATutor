@@ -1,1 +1,0 @@
-import hints from "./whole3e-index.js"; const step = {id: "whole3e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is 5,625 divisible by 10?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

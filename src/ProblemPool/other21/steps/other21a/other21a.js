@@ -1,1 +1,0 @@
-import hints from "./other21a-index.js"; const step = {id: "other21a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$\\sqrt{3x+7}+\\sqrt{x+2}=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

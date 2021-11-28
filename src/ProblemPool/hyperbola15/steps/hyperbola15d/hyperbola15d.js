@@ -1,1 +1,0 @@
-import hints from "./hyperbola15d-index.js"; const step = {id: "hyperbola15d", stepAnswer: ["$$y=\\pm \\left(\\frac{3}{10}\\right) x$$"], problemType: "TextBox", stepTitle: "Identify Asymptotes", stepBody: "Write equations of asymptotes of the hyperbola.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

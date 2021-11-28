@@ -1,1 +1,0 @@
-import hints from "./complex16a-index.js"; const step = {id: "complex16a", stepAnswer: ["$$2-\\frac{2}{3} i$$"], problemType: "TextBox", stepTitle: "$$\\frac{6-2i}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

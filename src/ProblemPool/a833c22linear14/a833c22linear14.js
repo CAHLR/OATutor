@@ -1,1 +1,1 @@
-import steps from "./a833c22linear14-index.js"; const problem = {id: "a833c22linear14", title: "Finding the x-intercept of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/"}; export { problem };
+import steps from "./a833c22linear14-index.js"; const problem = {id: "a833c22linear14", title: "Finding the x-intercept of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

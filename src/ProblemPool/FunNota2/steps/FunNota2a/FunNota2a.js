@@ -1,1 +1,0 @@
-import hints from "./FunNota2a-index.js"; const step = {id: "FunNota2a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is the percent grade a function of the grade-point average?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

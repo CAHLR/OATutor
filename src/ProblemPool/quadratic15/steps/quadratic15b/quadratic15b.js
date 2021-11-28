@@ -1,1 +1,0 @@
-import hints from "./quadratic15b-index.js"; const step = {id: "quadratic15b", stepAnswer: ["(1/2,-.25)"], problemType: "TextBox", stepTitle: "Find the vertex of the equation derived in the previous question.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./addand1a-index.js"; const step = {id: "addand1a", stepAnswer: ["$$\\frac{x+2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{3}+\\frac{2}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./exponents13a-index.js"; const step = {id: "exponents13a", stepAnswer: ["$$4.83\\times {10}^4$$"], problemType: "TextBox", stepTitle: "48,300", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

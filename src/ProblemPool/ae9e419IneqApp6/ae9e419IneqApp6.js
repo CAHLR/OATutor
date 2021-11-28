@@ -1,1 +1,1 @@
-import steps from "./ae9e419IneqApp6-index.js"; const problem = {id: "ae9e419IneqApp6", title: "Juice Boxes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./ae9e419IneqApp6-index.js"; const problem = {id: "ae9e419IneqApp6", title: "Juice Boxes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

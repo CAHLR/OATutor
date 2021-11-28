@@ -1,1 +1,0 @@
-import hints from "./gre10a-index.js"; const step = {id: "gre10a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$5b$$, 30", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./expolog28c-index.js"; const step = {id: "expolog28c", stepAnswer: ["113"], problemType: "TextBox", stepTitle: "To the nearest minute, how long will it take the turkey to cool to 110° F?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

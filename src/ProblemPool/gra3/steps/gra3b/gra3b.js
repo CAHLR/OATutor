@@ -1,1 +1,0 @@
-import hints from "./gra3b-index.js"; const step = {id: "gra3b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "(-1,3)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

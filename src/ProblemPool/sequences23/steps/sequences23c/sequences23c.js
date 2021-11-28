@@ -1,1 +1,0 @@
-import hints from "./sequences23c-index.js"; const step = {id: "sequences23c", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Write the third term of the sequence defined by the explicit formula $$a_n=2^n-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

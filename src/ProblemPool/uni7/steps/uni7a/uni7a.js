@@ -1,1 +1,0 @@
-import hints from "./uni7a-index.js"; const step = {id: "uni7a", stepAnswer: ["2.5"], problemType: "TextBox", stepTitle: "How long will they travel before they are 325 miles apart?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

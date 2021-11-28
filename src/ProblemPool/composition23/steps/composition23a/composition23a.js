@@ -1,1 +1,0 @@
-import hints from "./composition23a-index.js"; const step = {id: "composition23a", stepAnswer: ["$$x+3$$"], problemType: "TextBox", stepTitle: "f(g(x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
