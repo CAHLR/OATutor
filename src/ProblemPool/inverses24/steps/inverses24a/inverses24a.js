@@ -1,1 +1,0 @@
-import hints from "./inverses24a-index.js"; const step = {id: "inverses24a", stepAnswer: ["$$y={\\left(\\frac{x-9}{2}\\right)}^3$$"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=9+2\\sqrt{3, x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

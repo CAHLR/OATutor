@@ -1,1 +1,0 @@
-import hints from "./partfrac16a-index.js"; const step = {id: "partfrac16a", stepAnswer: ["$$\\frac{x+1}{x^2+3x+8}+\\frac{3}{x+2}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

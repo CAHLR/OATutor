@@ -1,1 +1,0 @@
-import hints from "./addand6a-index.js"; const step = {id: "addand6a", stepAnswer: ["$$\\frac{-13}{40}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{15}-\\frac{19}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

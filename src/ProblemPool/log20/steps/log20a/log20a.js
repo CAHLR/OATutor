@@ -1,1 +1,0 @@
-import hints from "./log20a-index.js"; const step = {id: "log20a", stepAnswer: ["$$a^c=b$$"], problemType: "TextBox", stepTitle: "log base a of b $$=$$ c", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

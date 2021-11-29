@@ -1,1 +1,0 @@
-import steps from "./cramer9-index.js"; const problem = {id: "cramer9", title: "Find the determinant.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./exa13a-index.js"; const step = {id: "exa13a", stepAnswer: ["$$ap+4p$$"], problemType: "TextBox", stepTitle: "$$\\left(a+4\\right) p$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

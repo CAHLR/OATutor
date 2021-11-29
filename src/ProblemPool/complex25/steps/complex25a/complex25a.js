@@ -1,1 +1,0 @@
-import hints from "./complex25a-index.js"; const step = {id: "complex25a", stepAnswer: ["-i"], problemType: "TextBox", stepTitle: "Evaluate $$i^{35}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

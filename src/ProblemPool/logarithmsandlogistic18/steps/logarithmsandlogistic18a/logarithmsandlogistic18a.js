@@ -1,1 +1,0 @@
-import hints from "./logarithmsandlogistic18a-index.js"; const step = {id: "logarithmsandlogistic18a", stepAnswer: ["175"], problemType: "TextBox", stepTitle: "What is the carrying capacity?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

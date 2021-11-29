@@ -1,1 +1,0 @@
-import hints from "./power14a-index.js"; const step = {id: "power14a", stepAnswer: ["neither"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\frac{x^2}{x^2-1}$$", stepBody: "", choices: ["power", "polynomial", "neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

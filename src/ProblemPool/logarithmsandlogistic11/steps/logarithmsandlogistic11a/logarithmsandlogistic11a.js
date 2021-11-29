@@ -1,1 +1,0 @@
-import hints from "./logarithmsandlogistic11a-index.js"; const step = {id: "logarithmsandlogistic11a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "How many years will it take before there are 100 wolves in the pond? Round to the nearest whole number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

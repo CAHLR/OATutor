@@ -1,1 +1,0 @@
-import hints from "./FunNota14q-index.js"; const step = {id: "FunNota14q", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$y=\\operatorname{pm}\\left(a\\right) \\sqrt{1-x}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

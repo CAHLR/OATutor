@@ -1,1 +1,0 @@
-import steps from "./IneqApp15-index.js"; const problem = {id: "IneqApp15", title: "Andre's Earning", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

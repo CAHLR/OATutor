@@ -1,1 +1,0 @@
-var hints = [{id: "use26d-h1", type: "hint", dependencies: [], title: "Meaning of >", text: "The sign \">\" means \"greater than.\"", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./trifactor1a-index.js"; const step = {id: "trifactor1a", stepAnswer: ["$${\\left(3x+2\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$9x^2+12x+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

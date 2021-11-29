@@ -1,1 +1,0 @@
-import steps from "./systemeqs16-index.js"; const problem = {id: "systemeqs16", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$-2x+3y=1.2$$, $$-3x-6y=1.8$$", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

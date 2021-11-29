@@ -1,1 +1,0 @@
-import steps from "./coordinates13-index.js"; const problem = {id: "coordinates13", title: "Finding Solutions to the Equation", body: "Find the solution to the equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

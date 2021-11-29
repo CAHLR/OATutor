@@ -1,1 +1,0 @@
-import hints from "./rates3a-index.js"; const step = {id: "rates3a", stepAnswer: ["$$\\frac{-1}{9}$$"], problemType: "TextBox", stepTitle: "Find the average rate of change of force if the distance between the particles is increased from 2 cm to 6 cm.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

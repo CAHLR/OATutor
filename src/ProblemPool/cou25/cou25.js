@@ -1,1 +1,0 @@
-import steps from "./cou25-index.js"; const problem = {id: "cou25", title: "Subsets", body: "Find the number of subsets in each given set.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

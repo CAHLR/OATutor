@@ -1,1 +1,0 @@
-import steps from "./trifactor5-index.js"; const problem = {id: "trifactor5", title: "Factor Perfect Square Trinomials", body: "Factor the perfect square trinomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

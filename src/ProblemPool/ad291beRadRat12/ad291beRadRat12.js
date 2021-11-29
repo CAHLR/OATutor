@@ -1,1 +1,1 @@
-import steps from "./ad291beRadRat12-index.js"; const problem = {id: "ad291beRadRat12", title: "Rationalizing a Denominator Containing a Single Term", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./ad291beRadRat12-index.js"; const problem = {id: "ad291beRadRat12", title: "Rationalizing a Denominator Containing a Single Term", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

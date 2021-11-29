@@ -1,1 +1,0 @@
-import hints from "./quad15a-index.js"; const step = {id: "quad15a", stepAnswer: ["(3+sqrt(22)), (3−sqrt(22))"], problemType: "TextBox", stepTitle: "$$2x-6x=13$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./partfract13a-index.js"; const step = {id: "partfract13a", stepAnswer: ["$$-\\left(\\frac{1}{x-7}\\right)-\\frac{2}{{\\left(x-7\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5-x}{{\\left(x-7\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

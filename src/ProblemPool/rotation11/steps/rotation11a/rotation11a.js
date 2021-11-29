@@ -1,1 +1,0 @@
-import hints from "./rotation11a-index.js"; const step = {id: "rotation11a", stepAnswer: ["Parabola"], problemType: "MultipleChoice", stepTitle: "$$4y^2-5x+9y+1=0$$", stepBody: "", choices: ["Ellipse", "Circle", "Hyperbola", "Parabola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

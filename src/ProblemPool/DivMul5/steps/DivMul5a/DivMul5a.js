@@ -1,1 +1,0 @@
-import hints from "./DivMul5a-index.js"; const step = {id: "DivMul5a", stepAnswer: ["294"], problemType: "TextBox", stepTitle: "$$\\frac{a}{\\left(-7\\right)}=-42$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

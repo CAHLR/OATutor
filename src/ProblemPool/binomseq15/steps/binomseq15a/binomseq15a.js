@@ -1,1 +1,0 @@
-import hints from "./binomseq15a-index.js"; const step = {id: "binomseq15a", stepAnswer: ["$$-10206x^4$$ $$y^5$$"], problemType: "TextBox", stepTitle: "$${\\left(3x-y\\right)}^9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

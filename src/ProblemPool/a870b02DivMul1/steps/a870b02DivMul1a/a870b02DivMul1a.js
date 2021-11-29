@@ -1,1 +1,1 @@
-import hints from "./a870b02DivMul1a-index.js"; const step = {id: "a870b02DivMul1a", stepAnswer: ["$$\\frac{-\\left(27\\right)}{5}$$"], problemType: "TextBox", stepTitle: "$$5x=-27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a870b02DivMul1a-index.js"; const step = {id: "a870b02DivMul1a", stepAnswer: ["$$\\frac{-27}{5}$$"], problemType: "TextBox", stepTitle: "$$5x=-27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

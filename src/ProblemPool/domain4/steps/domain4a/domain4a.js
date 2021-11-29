@@ -1,1 +1,0 @@
-import hints from "./domain4a-index.js"; const step = {id: "domain4a", stepAnswer: ["$$(-\\infty,7]$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{7-x}$$", stepBody: "", choices: ["$$(-\\infty,7]$$", "$$(-\\infty,7)$$", "$$[-7,\\infty)$$", "$$(-7,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

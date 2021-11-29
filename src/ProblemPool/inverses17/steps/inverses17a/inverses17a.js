@@ -1,1 +1,0 @@
-import hints from "./inverses17a-index.js"; const step = {id: "inverses17a", stepAnswer: ["$$\\frac{{\\left(x+2\\right)}^{-1}}{3\\left(7x+8\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3{x\\left(x+2\\right)}^{-1}}{3}+\\frac{{4\\left(x+2\\right)}^2}{3}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./expolog26c-index.js"; const step = {id: "expolog26c", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "To the nearest minute, how long did it take the population to double?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

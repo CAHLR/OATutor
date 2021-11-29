@@ -1,1 +1,0 @@
-import hints from "./realnumbers17a-index.js"; const step = {id: "realnumbers17a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$-\\sqrt{64}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

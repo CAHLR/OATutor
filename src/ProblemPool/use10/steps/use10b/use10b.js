@@ -1,1 +1,0 @@
-import hints from "./use10b-index.js"; const step = {id: "use10b", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "$$2^x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

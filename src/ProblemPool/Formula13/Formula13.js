@@ -1,1 +1,0 @@
-import steps from "./Formula13-index.js"; const problem = {id: "Formula13", title: "Solve the formula $$3x+2y=18$$ for y:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

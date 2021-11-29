@@ -1,1 +1,0 @@
-import hints from "./quad27a-index.js"; const step = {id: "quad27a", stepAnswer: ["-3, -5"], problemType: "TextBox", stepTitle: "$$x^2+8x+15=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./inverses28a-index.js"; const step = {id: "inverses28a", stepAnswer: ["$$y=\\frac{3-7x}{x-1}$$"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\frac{x+3}{x+7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

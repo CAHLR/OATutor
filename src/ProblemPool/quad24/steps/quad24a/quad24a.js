@@ -1,1 +1,0 @@
-import hints from "./quad24a-index.js"; const step = {id: "quad24a", stepAnswer: ["x=-sqrt(17/3),sqrt(17/3)"], problemType: "MultipleChoice", stepTitle: "$$3x^2-17=0$$", stepBody: "", choices: ["x=-sqrt(17/3),sqrt(17/3)", "x=-sqrt(6),sqrt(6)", "x=-sqrt(17),sqrt(17)", "x=-sqrt(3),sqrt(3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

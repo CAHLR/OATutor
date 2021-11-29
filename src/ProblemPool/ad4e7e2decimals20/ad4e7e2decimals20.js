@@ -1,1 +1,1 @@
-import steps from "./ad4e7e2decimals20-index.js"; const problem = {id: "ad4e7e2decimals20", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./ad4e7e2decimals20-index.js"; const problem = {id: "ad4e7e2decimals20", title: "Convert each percent to a decimal:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

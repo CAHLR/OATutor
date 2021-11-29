@@ -1,1 +1,0 @@
-import hints from "./exe1a-index.js"; const step = {id: "exe1a", stepAnswer: ["$$\\left(u+100\\right) \\left(u+1\\right)$$"], problemType: "TextBox", stepTitle: "$$u^2+101u+100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

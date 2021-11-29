@@ -1,1 +1,0 @@
-import steps from "./graphlog2-index.js"; const problem = {id: "graphlog2", title: "Identifying the Domain of a Logarithmic Shift", body: "What is the domain for $$f(x)=\\ln(5-2x)$$?", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

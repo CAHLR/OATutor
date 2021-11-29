@@ -1,1 +1,0 @@
-import hints from "./threevar21a-index.js"; const step = {id: "threevar21a", stepAnswer: ["24, 36, 48"], problemType: "MultipleChoice", stepTitle: "What are the numbers?", stepBody: "", choices: ["10, 20, 30", "14, 28, 42", "24, 36, 48"], answerType: "string", hints: hints, variabilization: {}}; export {step};

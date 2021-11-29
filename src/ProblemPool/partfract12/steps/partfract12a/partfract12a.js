@@ -1,1 +1,0 @@
-import hints from "./partfract12a-index.js"; const step = {id: "partfract12a", stepAnswer: ["$$-\\left(\\frac{6}{4x+5}\\right)+\\frac{3}{{\\left(4x+5\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(-24x-27\\right)}{{\\left(6x-7\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./log17a-index.js"; const step = {id: "log17a", stepAnswer: ["$$4^m=q$$"], problemType: "TextBox", stepTitle: "log base 4 of q $$=$$ m", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

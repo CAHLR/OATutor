@@ -1,1 +1,1 @@
-import steps from "./a4cb59ehypotest7-index.js"; const problem = {id: "a4cb59ehypotest7", title: "Which Distribution Should You Use?", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a4cb59ehypotest7-index.js"; const problem = {id: "a4cb59ehypotest7", title: "Which Distribution Should You Use?", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

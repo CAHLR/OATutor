@@ -1,1 +1,0 @@
-import hints from "./divpoly22a-index.js"; const step = {id: "divpoly22a", stepAnswer: ["$$2x^2+2x+1+\\frac{10}{x-4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x^3-6x^2-7x+6}{x-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

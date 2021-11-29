@@ -1,0 +1,1 @@
+import hints from "./acf3da9gaussian14a-index.js"; const step = {id: "acf3da9gaussian14a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$y^2-8y+15=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

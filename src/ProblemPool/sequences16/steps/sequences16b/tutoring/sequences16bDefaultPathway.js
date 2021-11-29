@@ -1,1 +1,0 @@
-var hints = [{id: "sequences16b-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=2$$ into the formula", variabilization: {}}, {id: "sequences16b-h2", type: "hint", dependencies: ["sequences16b-h1"], title: "Simplification", text: "Calculate the expression $$2\\left(-3\\right)+8$$", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import steps from "./decimals17-index.js"; const problem = {id: "decimals17", title: "Multiply 5.63", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

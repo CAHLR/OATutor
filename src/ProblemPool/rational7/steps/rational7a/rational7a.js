@@ -1,1 +1,0 @@
-import hints from "./rational7a-index.js"; const step = {id: "rational7a", stepAnswer: ["$$\\frac{2\\left(x-7\\right)}{x+5} \\left(x-3\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{x+5}-\\frac{1}{x-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

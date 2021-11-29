@@ -1,1 +1,0 @@
-import hints from "./rational6a-index.js"; const step = {id: "rational6a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{9x^2-6}{3x^2+17x-28}}{\\frac{3x^2-2x-8}{x^2+5x-14}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

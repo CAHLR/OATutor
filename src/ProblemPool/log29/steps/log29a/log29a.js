@@ -1,1 +1,0 @@
-import hints from "./log29a-index.js"; const step = {id: "log29a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "log base 9 of $$x=\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

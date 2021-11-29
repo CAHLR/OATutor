@@ -1,1 +1,0 @@
-import steps from "./linear21-index.js"; const problem = {id: "linear21", title: "Finding the Slope of a Linear Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/4-1-linear-functions", courseName: "Openstax: College Algebra"}; export { problem };

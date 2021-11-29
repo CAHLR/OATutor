@@ -1,1 +1,0 @@
-import steps from "./graphlog3-index.js"; const problem = {id: "graphlog3", title: "Domain, range, and asymptotes of log functions", body: "What is the domain, range, and asymptote of the function $$\\log_{3}\\left(x+4\\right)$$?", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

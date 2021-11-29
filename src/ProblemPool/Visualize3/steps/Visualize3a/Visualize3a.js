@@ -1,1 +1,0 @@
-import hints from "./Visualize3a-index.js"; const step = {id: "Visualize3a", stepAnswer: ["$$\\frac{-6}{11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-210}{385}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

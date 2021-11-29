@@ -1,1 +1,1 @@
-import hints from "./a4d2b33use31a-index.js"; const step = {id: "a4d2b33use31a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\left(12\\right)-\\left(5\\right) \\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a4d2b33use31a-index.js"; const step = {id: "a4d2b33use31a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$12-5\\times2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

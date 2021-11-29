@@ -1,1 +1,0 @@
-import hints from "./DivMul16o-index.js"; const step = {id: "DivMul16o", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{2}{5}\\right)=\\frac{1}{10} a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

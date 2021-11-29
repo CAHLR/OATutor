@@ -1,1 +1,0 @@
-var hints = [{id: "expolog12a-h1", type: "hint", dependencies: [], title: "Plugging in 0", text: "Plugging in 0 for x in the function f(x) will give us the answer. This means that $$f(0)=@{ans}$$.", variabilization: {numerator: ["50", "160", "17"], ans: ["7", "18", "1"]}}, ]; export {hints};

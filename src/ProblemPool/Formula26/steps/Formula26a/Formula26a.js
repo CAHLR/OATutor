@@ -1,1 +1,0 @@
-import hints from "./Formula26a-index.js"; const step = {id: "Formula26a", stepAnswer: ["$$y=13-9x$$"], problemType: "MultipleChoice", stepTitle: "Solve the formula $$9x+y=13$$ for y.", stepBody: "", choices: ["$$y=13+9x$$", "$$y=13-9x$$", "$$y=9x-13$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import steps from "./a9cf449complex23-index.js"; const problem = {id: "a9cf449complex23", title: "Finding Complex Conjugates", body: "Find the complex conjugate of each number.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9cf449complex23-index.js"; const problem = {id: "a9cf449complex23", title: "Finding Complex Conjugates", body: "Find the complex conjugate of each number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

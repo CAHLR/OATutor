@@ -1,11 +1,18 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../config/config";
+import { lessonPlans, ThemeContext } from "../config/config";
 import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 
 const AssignmentAlreadyLinked = (props) => {
   const context = useContext(ThemeContext)
+
+  const _linkedLesson = +context.alreadyLinkedLesson
+  const linkedLesson = !isNaN(_linkedLesson) && context.alreadyLinkedLesson.length > 0
+    ? lessonPlans[+context.alreadyLinkedLesson]
+    : null
+
+  console.debug("linkedLesson", linkedLesson)
 
   return <>
     <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
@@ -28,15 +35,24 @@ const AssignmentAlreadyLinked = (props) => {
         >
           <Box width="75%" maxWidth={1500}>
             <center>
-              <h1>Oops, something went wrong!</h1>
-              <h2>This assignment has already been linked.</h2>
+              {linkedLesson
+                ? <h1>This assignment has already been linked to
+                  lesson {linkedLesson.lessonNum}.</h1>
+                : <h1>This assignment has already been linked.</h1>
+              }
+              <h2>To link a new OATutor lesson, please create a new assignment on your LMS.</h2>
             </center>
             <Divider/>
             <center>
               <br/>
-              <p>If you are a student, please check back later.</p>
+              {linkedLesson
+              && <>
+                <p>Course Name: {linkedLesson.courseName}</p>
+                <p>Name: {linkedLesson.name}</p>
+                <p>Topics: {linkedLesson.topics}</p>
+              </>
+              }
               <br/>
-              <p>If you are an instructor, please try creating a new assignment and re-link.</p>
               <br/>
               <br/>
               <br/>

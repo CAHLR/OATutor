@@ -1,1 +1,0 @@
-import steps from "./graphlog11-index.js"; const problem = {id: "graphlog11", title: "Vertical asymptotes of log functions", body: "What is the vertical asymptote of $$f(x)=3\\ln(-x)+2$$? Write as an equation of x (e.g. $$x=[number])$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

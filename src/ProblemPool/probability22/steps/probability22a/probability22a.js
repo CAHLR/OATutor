@@ -1,1 +1,0 @@
-import hints from "./probability22a-index.js"; const step = {id: "probability22a", stepAnswer: ["$$\\frac{15}{16}$$"], problemType: "TextBox", stepTitle: "Find the probability of tossing not all tails.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

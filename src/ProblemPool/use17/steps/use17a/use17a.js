@@ -1,1 +1,0 @@
-import hints from "./use17a-index.js"; const step = {id: "use17a", stepAnswer: ["$$4x^2$$, 5x, 17"], problemType: "MultipleChoice", stepTitle: "Identify the terms in the expression $$4x^2+5x+17$$.", stepBody: "", choices: ["$$4x^2$$, 5x, 17", "4, $$x^2$$, 5, x, 17", "$$4x^2$$, 5, x, 17"], answerType: "string", hints: hints, variabilization: {}}; export {step};

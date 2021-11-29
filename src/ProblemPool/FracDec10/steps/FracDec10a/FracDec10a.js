@@ -1,1 +1,0 @@
-import hints from "./FracDec10a-index.js"; const step = {id: "FracDec10a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "Solve: $$-5=\\frac{1}{4\\left(8x+4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

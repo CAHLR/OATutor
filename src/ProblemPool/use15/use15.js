@@ -1,1 +1,0 @@
-import steps from "./use15-index.js"; const problem = {id: "use15", title: "Finding Like Terms", body: "Identify the like terms:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

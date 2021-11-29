@@ -1,1 +1,0 @@
-import hints from "./powers25a-index.js"; const step = {id: "powers25a", stepAnswer: ["$$y^{38}$$"], problemType: "TextBox", stepTitle: "$${\\left(y^3\\right)}^6 {\\left(y^5\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

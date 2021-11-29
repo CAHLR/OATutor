@@ -1,1 +1,0 @@
-import hints from "./TblFn1a-index.js"; const step = {id: "TblFn1a", stepAnswer: ["select"], problemType: "MultipleChoice", stepTitle: "Fill in the First Blank", stepBody: "", choices: ["where", "select", "drop", "take"], answerType: "string", hints: hints, variabilization: {}}; export {step};

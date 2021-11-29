@@ -1,1 +1,0 @@
-var hints = [{id: "log5a-h1", type: "hint", dependencies: [], title: "Rethink", text: "Think of it like $$4^y=64$$.", variabilization: {}}, ]; export {hints};

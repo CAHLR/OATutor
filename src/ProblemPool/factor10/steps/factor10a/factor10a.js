@@ -1,1 +1,0 @@
-import hints from "./factor10a-index.js"; const step = {id: "factor10a", stepAnswer: ["$$\\left(x+8\\right) \\left(x^2-8x+64\\right)$$"], problemType: "TextBox", stepTitle: "$$x^3+512$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

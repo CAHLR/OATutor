@@ -1,1 +1,0 @@
-import hints from "./hyperbola15b-index.js"; const step = {id: "hyperbola15b", stepAnswer: ["(10,0) and (-10,0)"], problemType: "MultipleChoice", stepTitle: "Identify Vertices", stepBody: "Identify the vertices of the equation.", choices: ["(10,0) and (-10,0)", "(9,0) and (-9,0)", "(8,0) and (-8,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

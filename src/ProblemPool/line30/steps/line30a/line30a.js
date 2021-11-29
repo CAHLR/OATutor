@@ -1,1 +1,0 @@
-import hints from "./line30a-index.js"; const step = {id: "line30a", stepAnswer: ["$$x=-4$$"], problemType: "MultipleChoice", stepTitle: "Find an equation of a line perpendicular to $$y=-4$$ that contains the point (-4,2).", stepBody: "", choices: ["$$x=-4$$", "$$y=-4$$", "$$x=2$$", "$$y=2$$", "$$y=4$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

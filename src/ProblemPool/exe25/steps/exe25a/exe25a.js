@@ -1,1 +1,0 @@
-import hints from "./exe25a-index.js"; const step = {id: "exe25a", stepAnswer: ["$$\\left(x+6\\right) \\left(x+8\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2+14b+48$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

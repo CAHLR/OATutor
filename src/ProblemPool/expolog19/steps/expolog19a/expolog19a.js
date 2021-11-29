@@ -1,1 +1,0 @@
-import hints from "./expolog19a-index.js"; const step = {id: "expolog19a", stepAnswer: ["@{numerator}"], problemType: "TextBox", stepTitle: "What is the carrying capacity?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {numerator: ["000", "2000", "3000", "400"]}}; export {step};

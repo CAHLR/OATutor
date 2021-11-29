@@ -1,1 +1,0 @@
-import hints from "./expgraph11a-index.js"; const step = {id: "expgraph11a", stepAnswer: ["$$4^{x-4}+5$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

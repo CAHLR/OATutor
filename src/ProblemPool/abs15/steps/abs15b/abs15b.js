@@ -1,1 +1,0 @@
-import hints from "./abs15b-index.js"; const step = {id: "abs15b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$y=-|x-1|-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

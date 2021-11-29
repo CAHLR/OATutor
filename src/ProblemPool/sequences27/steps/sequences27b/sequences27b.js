@@ -1,1 +1,0 @@
-import hints from "./sequences27b-index.js"; const step = {id: "sequences27b", stepAnswer: ["$$\\frac{5}{8}$$"], problemType: "TextBox", stepTitle: "Write the second term of the sequence defined by the explicit formula $$a_n=\\frac{2n+1}{n^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

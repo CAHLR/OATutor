@@ -1,1 +1,0 @@
-import hints from "./abs4b-index.js"; const step = {id: "abs4b", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=-5|x+2|+15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

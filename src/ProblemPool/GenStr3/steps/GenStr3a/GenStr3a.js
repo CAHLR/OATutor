@@ -1,1 +1,0 @@
-import hints from "./GenStr3a-index.js"; const step = {id: "GenStr3a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$6\\left(y-4\\right)=-18$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

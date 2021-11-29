@@ -1,1 +1,0 @@
-import steps from "./transformation17-index.js"; const problem = {id: "transformation17", title: "Algebreic Transformations", body: "Write a formula for the function obtained when it is shifted as described.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

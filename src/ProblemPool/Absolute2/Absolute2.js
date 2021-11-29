@@ -1,1 +1,0 @@
-import steps from "./Absolute2-index.js"; const problem = {id: "Absolute2", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=|3x+9|+2$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

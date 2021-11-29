@@ -1,1 +1,0 @@
-import hints from "./Properties24a-index.js"; const step = {id: "Properties24a", stepAnswer: ["$$6x+12$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{4} \\frac{4}{3} \\left(6x+12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./SubAdd27h-index.js"; const step = {id: "SubAdd27h", stepAnswer: ["$$n=-50$$"], problemType: "TextBox", stepTitle: "$$3\\left(5n-1\\right)-14n+9=\\operatorname{10}\\left(n-4\\right)-6n-4\\left(n+1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

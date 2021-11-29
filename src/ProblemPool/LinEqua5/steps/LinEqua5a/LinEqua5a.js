@@ -1,1 +1,0 @@
-import hints from "./LinEqua5a-index.js"; const step = {id: "LinEqua5a", stepAnswer: ["$$x=2$$"], problemType: "TextBox", stepTitle: "$$4x-3=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

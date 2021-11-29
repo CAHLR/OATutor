@@ -1,1 +1,0 @@
-import hints from "./VarCon33n-index.js"; const step = {id: "VarCon33n", stepAnswer: ["23"], problemType: "TextBox", stepTitle: "$$6.6x-18.9=3.4x+54.7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./SolveGeometry5a-index.js"; const step = {id: "SolveGeometry5a", stepAnswer: ["26"], problemType: "TextBox", stepTitle: "The area of a rectangle is 598 square feet. The length is 23 feet. What is the width?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

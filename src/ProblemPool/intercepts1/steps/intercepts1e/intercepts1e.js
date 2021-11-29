@@ -1,1 +1,0 @@
-import hints from "./intercepts1e-index.js"; const step = {id: "intercepts1e", stepAnswer: ["(-5,0)"], problemType: "MultipleChoice", stepTitle: "What is the x intercept of the line in the graph labeled c?", stepBody: "", choices: ["(0,-5)I(-5,0)I(-3,0)I(0,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

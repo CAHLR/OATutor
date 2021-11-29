@@ -1,1 +1,1 @@
-import hints from "./ac879b3linearequation1a-index.js"; const step = {id: "ac879b3linearequation1a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$y=-\\left(3\\right) x+\\left(1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./ac879b3linearequation1a-index.js"; const step = {id: "ac879b3linearequation1a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$y=-3x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

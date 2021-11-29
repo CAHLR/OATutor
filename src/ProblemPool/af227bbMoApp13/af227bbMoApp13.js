@@ -1,1 +1,1 @@
-import steps from "./af227bbMoApp13-index.js"; const problem = {id: "af227bbMoApp13", title: "Solving a Volume Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./af227bbMoApp13-index.js"; const problem = {id: "af227bbMoApp13", title: "Solving a Volume Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

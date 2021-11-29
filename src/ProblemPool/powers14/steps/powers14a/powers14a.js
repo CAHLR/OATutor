@@ -1,1 +1,0 @@
-import hints from "./powers14a-index.js"; const step = {id: "powers14a", stepAnswer: ["$$36a^5 b^7$$"], problemType: "TextBox", stepTitle: "$$4a^3 b 9a^2 b^6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

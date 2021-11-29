@@ -1,1 +1,0 @@
-import hints from "./quad20a-index.js"; const step = {id: "quad20a", stepAnswer: ["x=-1/3,2/3"], problemType: "MultipleChoice", stepTitle: "$$9x^2+3x-2=0$$", stepBody: "", choices: ["x=-1/3,2/3", "$$x=-1, 2$$", "x=-1/4,2/5", "$$x=-3, 3$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

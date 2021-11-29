@@ -1,1 +1,0 @@
-import hints from "./polyzero10a-index.js"; const step = {id: "polyzero10a", stepAnswer: ["-44791"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{5x^5-4x^4+3x^3-2x^2+x-1}{x+6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

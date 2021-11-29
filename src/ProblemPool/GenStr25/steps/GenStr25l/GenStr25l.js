@@ -1,1 +1,0 @@
-import hints from "./GenStr25l-index.js"; const step = {id: "GenStr25l", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$15-3r+8=28$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

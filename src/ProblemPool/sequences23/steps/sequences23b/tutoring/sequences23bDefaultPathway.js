@@ -1,1 +1,0 @@
-var hints = [{id: "sequences23b-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=2$$ into the formula", variabilization: {}}, {id: "sequences23b-h2", type: "hint", dependencies: ["sequences23b-h1"], title: "Simplification", text: "Calculate the expression $$2^2-2$$", variabilization: {}}, ]; export {hints};

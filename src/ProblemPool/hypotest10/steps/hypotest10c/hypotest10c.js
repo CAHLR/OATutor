@@ -1,1 +1,0 @@
-import hints from "./hypotest10c-index.js"; const step = {id: "hypotest10c", stepAnswer: ["1.8"], problemType: "MultipleChoice", stepTitle: "Calculate $$s_x$$.", stepBody: "", choices: ["2.5", "3", "1.8", "1.5", "26"], answerType: "string", hints: hints, variabilization: {}}; export {step};

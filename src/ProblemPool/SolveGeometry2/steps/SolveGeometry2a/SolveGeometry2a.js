@@ -1,1 +1,0 @@
-import hints from "./SolveGeometry2a-index.js"; const step = {id: "SolveGeometry2a", stepAnswer: ["340"], problemType: "TextBox", stepTitle: "The length of a rectangle is 120 yards and the width is 50 yards. What is the perimeter?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

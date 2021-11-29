@@ -1,1 +1,0 @@
-import steps from "./whole24-index.js"; const problem = {id: "whole24", title: "Word Form to Number Form", body: "Write the following as a whole number using digits.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

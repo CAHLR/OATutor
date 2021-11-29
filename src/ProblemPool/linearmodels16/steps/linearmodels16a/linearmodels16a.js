@@ -1,1 +1,0 @@
-import hints from "./linearmodels16a-index.js"; const step = {id: "linearmodels16a", stepAnswer: ["C=0.25x+25000"], problemType: "TextBox", stepTitle: "Write a linear model to represent the cost C of the company as a function of x, the number of doughnuts produced.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./a012999exa11a-index.js"; const step = {id: "a012999exa11a", stepAnswer: ["$$xp+\\left(3\\right) p$$"], problemType: "TextBox", stepTitle: "$$\\left(x+\\left(3\\right)\\right) p$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a012999exa11a-index.js"; const step = {id: "a012999exa11a", stepAnswer: ["$$xp+3p$$"], problemType: "TextBox", stepTitle: "$$\\left(x+3\\right) p$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

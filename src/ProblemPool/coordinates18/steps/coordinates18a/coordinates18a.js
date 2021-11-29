@@ -1,1 +1,0 @@
-import hints from "./coordinates18a-index.js"; const step = {id: "coordinates18a", stepAnswer: ["(0,-5) and $$(\\frac{1}{2},-4)$$"], problemType: "MultipleChoice", stepTitle: "$$y=2x-5$$", stepBody: "", choices: ["(0,-5) and (2,1)", "(0,-5) and $$(\\frac{1}{2},-4)$$", "$$(\\frac{1}{2},-4)$$ and (2,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

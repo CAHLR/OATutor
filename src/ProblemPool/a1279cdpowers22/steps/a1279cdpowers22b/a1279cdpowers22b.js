@@ -1,1 +1,1 @@
-import hints from "./a1279cdpowers22b-index.js"; const step = {id: "a1279cdpowers22b", stepAnswer: ["$$\\left(27\\right) m^3 n^3$$"], problemType: "TextBox", stepTitle: "$${\\left(\\left(3\\right) m n\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a1279cdpowers22b-index.js"; const step = {id: "a1279cdpowers22b", stepAnswer: ["$$27m^3 n^3$$"], problemType: "TextBox", stepTitle: "$${\\left(3m n\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

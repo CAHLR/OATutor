@@ -1,1 +1,1 @@
-import hints from "./a9c142dVarCon20a-index.js"; const step = {id: "a9c142dVarCon20a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\left(9\\right) y+\\left(4\\right)=\\left(7\\right) y+\\left(12\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a9c142dVarCon20a-index.js"; const step = {id: "a9c142dVarCon20a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$9y+4=7y+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

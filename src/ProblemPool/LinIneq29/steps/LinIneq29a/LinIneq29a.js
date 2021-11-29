@@ -1,1 +1,0 @@
-import hints from "./LinIneq29a-index.js"; const step = {id: "LinIneq29a", stepAnswer: ["[-3,2]"], problemType: "TextBox", stepTitle: "$$|2x+1|+1 \\leq 6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

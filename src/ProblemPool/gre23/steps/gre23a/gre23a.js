@@ -1,1 +1,0 @@
-import hints from "./gre23a-index.js"; const step = {id: "gre23a", stepAnswer: ["$$4\\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "$$4x+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

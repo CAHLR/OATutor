@@ -1,1 +1,0 @@
-import steps from "./binomseq9-index.js"; const problem = {id: "binomseq9", title: "Finding Binomial Coefficients", body: "For the following exercise, evaluate the binomial coefficient", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

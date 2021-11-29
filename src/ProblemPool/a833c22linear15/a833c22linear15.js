@@ -1,1 +1,1 @@
-import steps from "./a833c22linear15-index.js"; const problem = {id: "a833c22linear15", title: "Writing the Equation of a Horizontal Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/"}; export { problem };
+import steps from "./a833c22linear15-index.js"; const problem = {id: "a833c22linear15", title: "Writing the Equation of a Horizontal Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

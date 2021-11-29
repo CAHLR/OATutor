@@ -1,1 +1,0 @@
-import hints from "./systems22a-index.js"; const step = {id: "systems22a", stepAnswer: ["(0,0)"], problemType: "MultipleChoice", stepTitle: "$$x^4-x^2=y$$ \\n $$x^2+y=0$$", stepBody: "", choices: ["(4,9)", "(0,0)", "(2,10)", "(3,6)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./RecCord19-index.js"; const problem = {id: "RecCord19", title: "Finding the Midpoint of the Line Segment", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

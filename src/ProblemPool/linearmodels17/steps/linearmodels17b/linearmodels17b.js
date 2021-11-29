@@ -1,1 +1,0 @@
-import hints from "./linearmodels17b-index.js"; const step = {id: "linearmodels17b", stepAnswer: ["2020"], problemType: "TextBox", stepTitle: "Identify the year in which the population will reach 54000.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

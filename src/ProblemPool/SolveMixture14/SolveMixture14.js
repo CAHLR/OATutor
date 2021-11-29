@@ -1,1 +1,0 @@
-import steps from "./SolveMixture14-index.js"; const problem = {id: "SolveMixture14", title: "Jesse's Quarters and Nickels", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

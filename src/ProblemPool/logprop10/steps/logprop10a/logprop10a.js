@@ -1,1 +1,0 @@
-import hints from "./logprop10a-index.js"; const step = {id: "logprop10a", stepAnswer: ["$$\\log_{3}\\left(16\\right)$$"], problemType: "TextBox", stepTitle: "Rewrite $$2\\log_{3}\\left(4\\right)$$ using the inverse power rule such that it has a coefficient of 1.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

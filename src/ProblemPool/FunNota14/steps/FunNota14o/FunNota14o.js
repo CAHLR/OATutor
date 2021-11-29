@@ -1,1 +1,0 @@
-import hints from "./FunNota14o-index.js"; const step = {id: "FunNota14o", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y=\\sqrt{1-x^2}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

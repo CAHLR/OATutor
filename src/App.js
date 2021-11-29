@@ -79,7 +79,8 @@ const cookies = new Cookies();
 
 const queryParamToContext = {
   "token": "jwt",
-  "lis_person_name_full": "studentName"
+  "lis_person_name_full": "studentName",
+  "to": "alreadyLinkedLesson",
 }
 
 class App extends React.Component {
@@ -223,6 +224,7 @@ class App extends React.Component {
           autoOperatorNames,
           studentName: '',
           middlewareURL,
+          alreadyLinkedLesson: "",
           jwt: '',
           user: {},
           problemIDs: null,

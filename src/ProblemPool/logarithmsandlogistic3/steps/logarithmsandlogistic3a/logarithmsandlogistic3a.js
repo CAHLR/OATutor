@@ -1,1 +1,0 @@
-import hints from "./logarithmsandlogistic3a-index.js"; const step = {id: "logarithmsandlogistic3a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "To the nearest hundredth, what is the y intercept?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

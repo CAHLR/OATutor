@@ -1,1 +1,0 @@
-import hints from "./whole1a-index.js"; const step = {id: "whole1a", stepAnswer: ["23700"], problemType: "TextBox", stepTitle: "Round 23,658 to the nearest hundred.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

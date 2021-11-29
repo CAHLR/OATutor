@@ -1,1 +1,1 @@
-import steps from "./a7b98f9comp3-index.js"; const problem = {id: "a7b98f9comp3", title: "Interpreting Composite Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a7b98f9comp3-index.js"; const problem = {id: "a7b98f9comp3", title: "Interpreting Composite Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

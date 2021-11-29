@@ -1,1 +1,0 @@
-import steps from "./IneqApp22-index.js"; const problem = {id: "IneqApp22", title: "Picking College Classes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

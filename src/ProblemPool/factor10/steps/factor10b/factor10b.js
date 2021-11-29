@@ -1,1 +1,0 @@
-import hints from "./factor10b-index.js"; const step = {id: "factor10b", stepAnswer: ["(6a+b)(36a**2 + 6ab+b**2)"], problemType: "TextBox", stepTitle: "$$216a^3+b^3$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

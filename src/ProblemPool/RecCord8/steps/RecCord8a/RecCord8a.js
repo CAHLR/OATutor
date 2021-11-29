@@ -1,1 +1,0 @@
-import hints from "./RecCord8a-index.js"; const step = {id: "RecCord8a", stepAnswer: ["$$y=2x-\\frac{4}{5}$$"], problemType: "TextBox", stepTitle: "$$5y+4=10x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

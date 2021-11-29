@@ -1,1 +1,0 @@
-import steps from "./quadratic3-index.js"; const problem = {id: "quadratic3", title: "Finding the Vertex of a Quadratic Function", body: "$$f(x)=2x^2-6x+7$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

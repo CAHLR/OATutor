@@ -1,1 +1,1 @@
-import steps from "./aaa317eLinIneq10-index.js"; const problem = {id: "aaa317eLinIneq10", title: "Solving an Absolute Value Inequality", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aaa317eLinIneq10-index.js"; const problem = {id: "aaa317eLinIneq10", title: "Solving an Absolute Value Inequality", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

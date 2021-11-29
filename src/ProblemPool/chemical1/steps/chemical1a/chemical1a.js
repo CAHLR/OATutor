@@ -1,1 +1,0 @@
-import hints from "./chemical1a-index.js"; const step = {id: "chemical1a", stepAnswer: ["54"], problemType: "TextBox", stepTitle: "If xenon has an atomic number of 54 and a mass number of 108, how many neutrons does it have?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

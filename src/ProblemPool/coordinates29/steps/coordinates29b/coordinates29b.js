@@ -1,1 +1,0 @@
-import hints from "./coordinates29b-index.js"; const step = {id: "coordinates29b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$x+3y=6$$", stepBody: "If $$x=3$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

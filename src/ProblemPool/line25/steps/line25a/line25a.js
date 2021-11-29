@@ -1,1 +1,0 @@
-import hints from "./line25a-index.js"; const step = {id: "line25a", stepAnswer: ["$$y=2$$"], problemType: "MultipleChoice", stepTitle: "Find an equation of a horizontal line that contains the point (-1,2).", stepBody: "", choices: ["$$y=2$$", "$$y=0$$", "$$y=-2$$", "$$y=-1$$", "$$y=1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

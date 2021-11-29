@@ -1,1 +1,0 @@
-import steps from "./conic13-index.js"; const problem = {id: "conic13", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{3}{10+10costheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

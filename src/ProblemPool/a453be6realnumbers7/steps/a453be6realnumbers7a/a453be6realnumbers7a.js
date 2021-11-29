@@ -1,1 +1,1 @@
-import hints from "./a453be6realnumbers7a-index.js"; const step = {id: "a453be6realnumbers7a", stepAnswer: ["$$\\frac{-\\left(27\\right)}{1}$$"], problemType: "TextBox", stepTitle: "-27", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a453be6realnumbers7a-index.js"; const step = {id: "a453be6realnumbers7a", stepAnswer: ["$$\\frac{-27}{1}$$"], problemType: "TextBox", stepTitle: "-27", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

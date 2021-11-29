@@ -1,1 +1,0 @@
-import hints from "./sol22a-index.js"; const step = {id: "sol22a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "How much does a package of paper cost?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

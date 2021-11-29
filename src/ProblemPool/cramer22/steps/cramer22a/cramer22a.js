@@ -1,1 +1,0 @@
-import hints from "./cramer22a-index.js"; const step = {id: "cramer22a", stepAnswer: ["(-2,3/5,12/5)"], problemType: "MultipleChoice", stepTitle: "$$x-3y+7z=13;$$ \\n $$x+y+z=1;$$ \\n $$x-2y+3z=4$$", stepBody: "", choices: ["(-2,3/5,12/5)", "(2,3/5,12/5)", "$$(\\frac{3}{5}-2,\\frac{12}{5})$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

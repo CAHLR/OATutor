@@ -1,1 +1,0 @@
-import steps from "./parabola9-index.js"; const problem = {id: "parabola9", title: "Find Components of the Graph", body: "Identify the endpoints of the latus rectum of the graph:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

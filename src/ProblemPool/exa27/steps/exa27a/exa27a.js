@@ -1,1 +1,0 @@
-import hints from "./exa27a-index.js"; const step = {id: "exa27a", stepAnswer: ["$$-\\left(y^2\\right)-3y$$"], problemType: "TextBox", stepTitle: "$$-y\\left(y+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./rates7b-index.js"; const step = {id: "rates7b", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: "What is the y value of the absolute minimum?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

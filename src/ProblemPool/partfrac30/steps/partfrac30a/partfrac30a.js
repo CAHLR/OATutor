@@ -1,1 +1,0 @@
-import hints from "./partfrac30a-index.js"; const step = {id: "partfrac30a", stepAnswer: ["$$\\frac{1}{x-5}-\\frac{3}{x^2+5x+25}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

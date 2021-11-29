@@ -1,1 +1,0 @@
-import steps from "./hypotest8-index.js"; const problem = {id: "hypotest8", title: "Testing Proportions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

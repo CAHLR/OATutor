@@ -1,1 +1,0 @@
-import hints from "./sol8a-index.js"; const step = {id: "sol8a", stepAnswer: ["(-2,-4)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "##figure1.gif## ", choices: ["(2,-4)", "(2,4)", "(-2,-4)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./polyzero18a-index.js"; const step = {id: "polyzero18a", stepAnswer: ["$$x=-2, -3, 3$$"], problemType: "MultipleChoice", stepTitle: "$$x^3+2x^2-9x-18=0$$", stepBody: "", choices: ["$$x=-2, -1, 5$$", "$$x=-2, -4, 3$$", "$$x=-2, -3, 3$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./rate9a-index.js"; const step = {id: "rate9a", stepAnswer: ["$$4x+2h-3$$"], problemType: "TextBox", stepTitle: "$$\\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$ given $$f(x)=2x^2$$ - 3x on [x, x+h]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

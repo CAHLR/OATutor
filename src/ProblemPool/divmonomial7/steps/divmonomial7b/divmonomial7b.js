@@ -1,1 +1,0 @@
-import hints from "./divmonomial7b-index.js"; const step = {id: "divmonomial7b", stepAnswer: ["$$x^4$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^{11}}{x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./systemeq17-index.js"; const problem = {id: "systemeq17", title: "Solving Systems of Equations in Word Problems", body: "A cashier has 30 bills, all of which are $10 or $20 bills. The total value of the money is $460.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./a6014eaSubAdd5a-index.js"; const step = {id: "a6014eaSubAdd5a", stepAnswer: ["-50"], problemType: "TextBox", stepTitle: "$$y+\\left(37\\right)=-13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a6014eaSubAdd5a-index.js"; const step = {id: "a6014eaSubAdd5a", stepAnswer: ["-50"], problemType: "TextBox", stepTitle: "$$y+37=-13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

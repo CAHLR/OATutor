@@ -1,1 +1,0 @@
-import hints from "./GenStr25r-index.js"; const step = {id: "GenStr25r", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$9\\left(2m-3\\right)-8=4m+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./cou22a-index.js"; const step = {id: "cou22a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "C(7,6)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

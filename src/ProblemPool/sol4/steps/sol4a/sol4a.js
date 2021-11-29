@@ -1,1 +1,0 @@
-import hints from "./sol4a-index.js"; const step = {id: "sol4a", stepAnswer: ["(-2,1)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "##figure1.gif## ", choices: ["(-2,1)", "(1,-2)", "(2,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./Properties12a-index.js"; const step = {id: "Properties12a", stepAnswer: ["$$36d+90$$"], problemType: "TextBox", stepTitle: "$$15\\frac{3}{5} \\left(4d+10\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

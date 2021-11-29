@@ -1,1 +1,0 @@
-import hints from "./RadRat8a-index.js"; const step = {id: "RadRat8a", stepAnswer: ["$$3x^2$$"], problemType: "TextBox", stepTitle: "Simplify the radical expression: $$\\frac{\\sqrt{23\\times4 x^{11} y}}{\\sqrt{26x^7 y}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

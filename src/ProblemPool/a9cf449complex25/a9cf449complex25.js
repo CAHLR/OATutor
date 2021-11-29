@@ -1,1 +1,1 @@
-import steps from "./a9cf449complex25-index.js"; const problem = {id: "a9cf449complex25", title: "Simplifying Powers of i", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9cf449complex25-index.js"; const problem = {id: "a9cf449complex25", title: "Simplifying Powers of i", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

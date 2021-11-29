@@ -1,1 +1,0 @@
-import hints from "./abs7b-index.js"; const step = {id: "abs7b", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=-|x-9|+16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

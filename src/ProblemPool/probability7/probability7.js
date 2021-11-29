@@ -1,1 +1,0 @@
-import steps from "./probability7-index.js"; const problem = {id: "probability7", title: "Using the Complement Rule to Calculate Probabilities", body: "Two six-sided number cubes are rolled.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

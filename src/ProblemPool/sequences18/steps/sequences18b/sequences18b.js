@@ -1,1 +1,0 @@
-import hints from "./sequences18b-index.js"; const step = {id: "sequences18b", stepAnswer: ["$$\\frac{4}{3}$$"], problemType: "TextBox", stepTitle: "Write the second term of the sequence defined by the explicit formula $$a_n=\\frac{{\\left(-1\\right)}^n n^2}{n+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

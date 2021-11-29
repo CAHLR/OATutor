@@ -1,1 +1,0 @@
-import steps from "./general27-index.js"; const problem = {id: "general27", title: "General Strategy for Factoring Polynomials", body: "Factor the following expression completely.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

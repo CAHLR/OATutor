@@ -1,1 +1,0 @@
-import hints from "./VarCon31a-index.js"; const step = {id: "VarCon31a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$2.8x+12=-1.4x-9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

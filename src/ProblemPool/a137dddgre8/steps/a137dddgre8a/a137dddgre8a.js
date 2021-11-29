@@ -1,1 +1,1 @@
-import hints from "./a137dddgre8a-index.js"; const step = {id: "a137dddgre8a", stepAnswer: ["$$\\left(9\\right) x^3$$"], problemType: "TextBox", stepTitle: "$$\\left(27\\right) x^3$$, $$\\left(18\\right) x^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a137dddgre8a-index.js"; const step = {id: "a137dddgre8a", stepAnswer: ["$$9x^3$$"], problemType: "TextBox", stepTitle: "$$27x^3$$, $$18x^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

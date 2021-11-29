@@ -1,1 +1,0 @@
-import hints from "./transformation2a-index.js"; const step = {id: "transformation2a", stepAnswer: ["Even"], problemType: "MultipleChoice", stepTitle: "Is the function f(s) $$=$$ $$s^4$$ + $$3s^2$$ $$+7$$ even, odd, or neither", stepBody: "", choices: ["Odd", "Even", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

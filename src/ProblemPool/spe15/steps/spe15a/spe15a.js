@@ -1,1 +1,0 @@
-import hints from "./spe15a-index.js"; const step = {id: "spe15a", stepAnswer: ["$$9z^2+\\frac{6}{5} z+\\frac{1}{25}$$"], problemType: "TextBox", stepTitle: "$${\\left(3z+\\frac{1}{5}\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./exa23a-index.js"; const step = {id: "exa23a", stepAnswer: ["$$-8j+40$$"], problemType: "TextBox", stepTitle: "-8(j-5)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

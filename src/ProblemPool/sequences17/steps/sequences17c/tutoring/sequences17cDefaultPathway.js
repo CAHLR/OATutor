@@ -1,1 +1,0 @@
-var hints = [{id: "sequences17c-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=3$$ into the formula", variabilization: {}}, {id: "sequences17c-h2", type: "hint", dependencies: ["sequences17c-h1"], title: "Simplification", text: "Calculate the expression $$5\\times3-4$$", variabilization: {}}, ]; export {hints};

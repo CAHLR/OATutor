@@ -1,1 +1,0 @@
-import hints from "./decimals13a-index.js"; const step = {id: "decimals13a", stepAnswer: ["18.4"], problemType: "TextBox", stepTitle: "Round 18.379 to the nearest tenth", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
