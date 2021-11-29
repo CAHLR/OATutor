@@ -348,6 +348,10 @@ app.post('/auth', async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Please visit https://cahlr.github.io/OpenITS").end()
+})
+
 app.listen(port, () => {
   console.log(`LTI Provider Server is listening on port: ${port}`);
 })
