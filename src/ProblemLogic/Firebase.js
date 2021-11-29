@@ -159,7 +159,7 @@ class Firebase {
     return this.writeData(problemStartLogOutput, date, data);
   }
 
-  submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName) {
+  submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName, steps) {
     const date = this._getDate();
     const data = {
       timeStamp: date,
@@ -172,7 +172,13 @@ class Firebase {
       canvasStudentID: canvasStudentID || null,
       status: "open",
       Content: courseName,
-      variables
+      variables,
+      steps: steps.map(({answerType, id, stepAnswer, problemType}) => ({
+        answerType,
+        id,
+        stepAnswer,
+        problemType
+      }))
     };
     return this.writeData(feedbackOutput, date, data);
   }
