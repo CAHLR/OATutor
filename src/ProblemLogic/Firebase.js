@@ -5,6 +5,7 @@ require("firebase/firestore");
 
 var problemSubmissionsOutputDev = "problemSubmissionsFall21Dev";
 var problemSubmissionsOutput = "problemSubmissionsFall21";
+const problemStartLogOutput = "problemStartLogsFall21";
 var feedbackOutput = "feedbackFall21";
 
 class Firebase {
@@ -142,6 +143,20 @@ class Firebase {
     this.mouseLogBuffer = [];
     console.log("Logged mouseMovement");
     return this.writeData("mouseMovement", date, data);
+  }
+
+  startedProblem(problemID, canvasStudentID, courseName){
+    console.debug(`Logging that the problem has been started (${problemID})`)
+    const date = this._getDate();
+    const data = {
+      timeStamp: date,
+      siteVersion: this.siteVersion,
+      studentID: this.id,
+      problemID,
+      canvasStudentID,
+      Content: courseName
+    };
+    return this.writeData(problemStartLogOutput, date, data);
   }
 
   submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName) {
