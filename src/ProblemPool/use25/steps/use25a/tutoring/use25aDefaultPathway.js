@@ -1,1 +1,0 @@
-var hints = [{id: "use25a-h1", type: "hint", dependencies: [], title: "Meaning of $$ \\leq $$", text: "The sign $$\" \\leq \"$$ means \"less than or equal to.\"", variabilization: {}}, ]; export {hints};

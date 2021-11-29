@@ -1,1 +1,0 @@
-import hints from "./exp20c-index.js"; const step = {id: "exp20c", stepAnswer: ["-0.00000000000039"], problemType: "TextBox", stepTitle: "$$-3.9{10}^{-13}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

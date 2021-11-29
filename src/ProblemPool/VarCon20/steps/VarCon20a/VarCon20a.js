@@ -1,1 +1,0 @@
-import hints from "./VarCon20a-index.js"; const step = {id: "VarCon20a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$9y+4=7y+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

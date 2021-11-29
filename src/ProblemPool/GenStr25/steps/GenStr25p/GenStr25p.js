@@ -1,1 +1,0 @@
-import hints from "./GenStr25p-index.js"; const step = {id: "GenStr25p", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$-2\\left(a-6\\right)=4\\left(a-3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

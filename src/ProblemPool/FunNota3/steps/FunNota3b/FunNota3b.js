@@ -1,1 +1,0 @@
-import hints from "./FunNota3b-index.js"; const step = {id: "FunNota3b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "{(a, b), (b, c), (c, c)}", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

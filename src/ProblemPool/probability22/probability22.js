@@ -1,1 +1,0 @@
-import steps from "./probability22-index.js"; const problem = {id: "probability22", title: "Computing Probabilities of Equally Likely Outcomes", body: "For the following exercises, four coins are tossed.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

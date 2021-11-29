@@ -1,1 +1,0 @@
-import hints from "./GenStr27a-index.js"; const step = {id: "GenStr27a", stepAnswer: ["Conditional Equation"], problemType: "MultipleChoice", stepTitle: "$$10+4\\left(p-5\\right)=0$$", stepBody: "", choices: ["Conditional Equation", "identity", "contradiction"], answerType: "string", hints: hints, variabilization: {}}; export {step};

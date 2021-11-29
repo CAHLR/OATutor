@@ -1,1 +1,0 @@
-import hints from "./VarCon1a-index.js"; const step = {id: "VarCon1a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$7x+8=-13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

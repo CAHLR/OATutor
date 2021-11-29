@@ -1,1 +1,0 @@
-import steps from "./use12-index.js"; const problem = {id: "use12", title: "Evaluating Expressions", body: "When $$x=2$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

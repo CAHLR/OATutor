@@ -1,1 +1,1 @@
-import steps from "./ad3a8eeSolveMixture13-index.js"; const problem = {id: "ad3a8eeSolveMixture13", title: "Danny's Pennies and Nickels", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org"}; export { problem };
+import steps from "./ad3a8eeSolveMixture13-index.js"; const problem = {id: "ad3a8eeSolveMixture13", title: "Danny's Pennies and Nickels", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

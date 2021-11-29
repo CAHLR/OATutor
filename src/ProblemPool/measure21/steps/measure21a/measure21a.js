@@ -1,1 +1,0 @@
-import hints from "./measure21a-index.js"; const step = {id: "measure21a", stepAnswer: ["3.05"], problemType: "TextBox", stepTitle: "One day Anya kept track of the number of minutes she spent driving. She recorded 45, 10, 8, 65, 20, and 35. How many hours did Anya spend driving?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

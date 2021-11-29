@@ -1,1 +1,0 @@
-import hints from "./graphlog8a-index.js"; const step = {id: "graphlog8a", stepAnswer: ["$$x=5$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

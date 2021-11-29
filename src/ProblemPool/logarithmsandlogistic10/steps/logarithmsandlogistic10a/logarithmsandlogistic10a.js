@@ -1,1 +1,0 @@
-import hints from "./logarithmsandlogistic10a-index.js"; const step = {id: "logarithmsandlogistic10a", stepAnswer: ["38"], problemType: "TextBox", stepTitle: "How many wolves will the habitat have after three years? Round to the nearest whole number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

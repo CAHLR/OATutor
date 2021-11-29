@@ -1,1 +1,0 @@
-var hints = [{id: "sequences28c-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=3$$ into the formula", variabilization: {}}, {id: "sequences28c-h2", type: "hint", dependencies: ["sequences28c-h1"], title: "Simplification", text: "Calculate the expression $$1.25{\\left(-4\\right)}^2$$", variabilization: {}}, ]; export {hints};

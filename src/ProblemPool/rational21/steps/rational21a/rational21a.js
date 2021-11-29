@@ -1,1 +1,0 @@
-import hints from "./rational21a-index.js"; const step = {id: "rational21a", stepAnswer: ["$$z^2-13z-6$$"], problemType: "TextBox", stepTitle: "$$\\frac{2xy+x+y}{\\left(x+1\\right) \\left(y+1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

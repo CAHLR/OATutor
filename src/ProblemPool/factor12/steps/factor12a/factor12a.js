@@ -1,1 +1,0 @@
-import hints from "./factor12a-index.js"; const step = {id: "factor12a", stepAnswer: ["$$\\frac{{\\left(x+2\\right)}^{-1}}{3}$$ $$7x+8$$"], problemType: "TextBox", stepTitle: "$$\\frac{3{x\\left(x+2\\right)}^{-1}}{3}+\\frac{{4\\left(x+2\\right)}^2}{3}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

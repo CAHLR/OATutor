@@ -1,1 +1,0 @@
-import hints from "./decimals23a-index.js"; const step = {id: "decimals23a", stepAnswer: ["51"], problemType: "TextBox", stepTitle: "0.51=___%", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

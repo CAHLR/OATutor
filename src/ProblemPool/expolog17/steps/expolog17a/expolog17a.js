@@ -1,1 +1,0 @@
-import hints from "./expolog17a-index.js"; const step = {id: "expolog17a", stepAnswer: ["269"], problemType: "TextBox", stepTitle: "What will the fish population be after 2 years to the nearest whole number?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

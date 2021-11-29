@@ -1,1 +1,0 @@
-import hints from "./sol16a-index.js"; const step = {id: "sol16a", stepAnswer: ["(-5,9)"], problemType: "MultipleChoice", stepTitle: "Refer to the image for the system of equations.", stepBody: "##figure1.gif## ", choices: ["(-5,9)", "(5,9)", "(5,-9)", "(-5,-9)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

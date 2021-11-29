@@ -1,1 +1,0 @@
-import steps from "./LinIneq24-index.js"; const problem = {id: "LinIneq24", title: "Determining a Number within a Prescribed Distance", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./explog13a-index.js"; const step = {id: "explog13a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "$$5*\\log_{7}\\left(n\\right)$$ $$=$$ 10", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

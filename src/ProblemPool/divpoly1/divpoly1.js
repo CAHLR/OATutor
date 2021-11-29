@@ -1,1 +1,0 @@
-import steps from "./divpoly1-index.js"; const problem = {id: "divpoly1", title: "Using Long Division to Divide a Second-Degree Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

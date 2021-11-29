@@ -1,1 +1,0 @@
-import hints from "./SubAdd24a-index.js"; const step = {id: "SubAdd24a", stepAnswer: ["$$y=-1$$"], problemType: "TextBox", stepTitle: "$$3(2y-1)-5y=2\\left(y+1\\right)-2\\left(y+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

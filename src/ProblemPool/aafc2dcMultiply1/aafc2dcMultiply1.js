@@ -1,1 +1,1 @@
-import steps from "./aafc2dcMultiply1-index.js"; const problem = {id: "aafc2dcMultiply1", title: "Multiply", body: "Calculate the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aafc2dcMultiply1-index.js"; const problem = {id: "aafc2dcMultiply1", title: "Multiply", body: "Calculate the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

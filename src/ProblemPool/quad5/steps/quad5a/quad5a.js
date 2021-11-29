@@ -1,1 +1,0 @@
-import hints from "./quad5a-index.js"; const step = {id: "quad5a", stepAnswer: ["2 real"], problemType: "MultipleChoice", stepTitle: "$$6x^2-x-2=0$$", stepBody: "", choices: ["not real", "1 real", "2 real"], answerType: "string", hints: hints, variabilization: {}}; export {step};

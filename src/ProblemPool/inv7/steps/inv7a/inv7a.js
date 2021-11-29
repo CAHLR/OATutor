@@ -1,1 +1,0 @@
-import hints from "./inv7a-index.js"; const step = {id: "inv7a", stepAnswer: ["(1,2,0)"], problemType: "MultipleChoice", stepTitle: "$$5x+15y+56z=35$$, $$-4x-11y-41z=-26$$, $$-x-3y-11z=-7$$", stepBody: "", choices: ["(1,2,0)", "(-1,2,0)", "(-2,1,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

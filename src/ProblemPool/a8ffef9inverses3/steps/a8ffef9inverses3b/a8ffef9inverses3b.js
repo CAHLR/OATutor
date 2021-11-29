@@ -1,1 +1,1 @@
-import hints from "./a8ffef9inverses3b-index.js"; const step = {id: "a8ffef9inverses3b", stepAnswer: ["$$\\left(4\\right)-\\sqrt{x}$$"], problemType: "TextBox", stepTitle: "f(x)=(x-4)**2,x<=4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a8ffef9inverses3b-index.js"; const step = {id: "a8ffef9inverses3b", stepAnswer: ["$$4-\\sqrt{x}$$"], problemType: "TextBox", stepTitle: "f(x)=(x-4)**2,x<=4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

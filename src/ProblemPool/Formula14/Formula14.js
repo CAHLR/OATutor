@@ -1,1 +1,0 @@
-import steps from "./Formula14-index.js"; const problem = {id: "Formula14", title: "Solve the formula $$3x+4y=10$$ for y:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

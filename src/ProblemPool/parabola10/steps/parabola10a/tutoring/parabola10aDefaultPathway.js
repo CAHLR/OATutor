@@ -1,1 +1,0 @@
-var hints = [{id: "parabola10a-h1", type: "hint", dependencies: [], title: "As the graph of the parabola widens, the locus distances increases, resulting in an increase in the distance between the focus and the directrix.", text: "", variabilization: {}}, ]; export {hints};

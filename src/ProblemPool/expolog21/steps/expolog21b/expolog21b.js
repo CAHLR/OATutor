@@ -1,1 +1,0 @@
-import hints from "./expolog21b-index.js"; const step = {id: "expolog21b", stepAnswer: ["84"], problemType: "TextBox", stepTitle: "To the nearest minute, what is the half-life of this substance?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

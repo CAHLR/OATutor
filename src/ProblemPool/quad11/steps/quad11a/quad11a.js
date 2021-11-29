@@ -1,1 +1,0 @@
-import hints from "./quad11a-index.js"; const step = {id: "quad11a", stepAnswer: ["(2*sqrt(2)), (-2*sqrt(2))"], problemType: "TextBox", stepTitle: "$$x^2=8$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./graph26-index.js"; const problem = {id: "graph26", title: "Finding Zeroes and Multiplicity", body: "For the following exercises, find the zeros and give the multiplicity of each.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

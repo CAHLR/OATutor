@@ -1,1 +1,0 @@
-import steps from "./rotation16-index.js"; const problem = {id: "rotation16", title: "Rotation of Axes", body: "$$2x^2+8xy-1=0$$, $$\\theta=30\\degree$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

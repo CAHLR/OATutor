@@ -1,1 +1,0 @@
-import hints from "./probability5a-index.js"; const step = {id: "probability5a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "Find the probability of drawing a heart or a spade.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

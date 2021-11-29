@@ -1,1 +1,0 @@
-import hints from "./quad9a-index.js"; const step = {id: "quad9a", stepAnswer: ["0, -2/3, -1"], problemType: "TextBox", stepTitle: "$$-3x^3-5x^2-2x=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

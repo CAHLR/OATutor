@@ -1,1 +1,0 @@
-import hints from "./geometric3a-index.js"; const step = {id: "geometric3a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "5,10,15,20,...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./matrices16-index.js"; const problem = {id: "matrices16", title: "Finding the Difference of Two Matrices", body: "Find the difference of A and B.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./addand18a-index.js"; const step = {id: "addand18a", stepAnswer: ["$$\\frac{3+x}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{4}+\\frac{3}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

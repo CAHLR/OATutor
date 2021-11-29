@@ -1,1 +1,0 @@
-var hints = [{id: "quadratic1d-h1", type: "hint", dependencies: [], title: "Identifying the y-intercept", text: "The parabola crosses the y- axis at (0,7) so this is the y-intercept.", variabilization: {}}, ]; export {hints};

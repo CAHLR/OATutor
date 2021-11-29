@@ -1,1 +1,0 @@
-import steps from "./percent10-index.js"; const problem = {id: "percent10", title: "Find Percent Increase", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -20,15 +20,10 @@ if [ ! -d "$SUBDIRECTORY" ]; then
   exit
 fi
 
-# https://stackoverflow.com/a/45839167
-changed=0
-git remote update && git status -uno | grep -q 'Your branch is behind' && changed=1
 
-if [ $changed -eq 1 ]; then
-  echo "Content repository is not updated."
-  git reset --hard
-  git pull
-fi
+git remote update
+git reset --hard origin/main
+git pull
 
 if [ ! -d "$SUBDIRECTORY" ]; then
   echo "$SUBDIRECTORY sub directory does not exist."

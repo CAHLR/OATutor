@@ -1,1 +1,1 @@
-import steps from "./aafc2dcMultiply26-index.js"; const problem = {id: "aafc2dcMultiply26", title: "Checking Account", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./aafc2dcMultiply26-index.js"; const problem = {id: "aafc2dcMultiply26", title: "Checking Account", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

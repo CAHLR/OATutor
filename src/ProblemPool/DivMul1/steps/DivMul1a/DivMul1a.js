@@ -1,1 +1,0 @@
-import hints from "./DivMul1a-index.js"; const step = {id: "DivMul1a", stepAnswer: ["$$\\frac{-27}{5}$$"], problemType: "TextBox", stepTitle: "$$5x=-27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

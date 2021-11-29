@@ -1,1 +1,0 @@
-import hints from "./polyzero26a-index.js"; const step = {id: "polyzero26a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "Use the Remainder Theorem to evaluate $$f(x)=6x^4-x^3-15x^2+2x-7$$ at $$x=2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

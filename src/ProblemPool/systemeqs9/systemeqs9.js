@@ -1,1 +1,0 @@
-import steps from "./systemeqs9-index.js"; const problem = {id: "systemeqs9", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (2,3) is a solution to the system of equations: $$3x+7y=1$$, $$2x+4y=0$$", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

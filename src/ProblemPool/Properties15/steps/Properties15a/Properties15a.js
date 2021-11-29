@@ -1,1 +1,0 @@
-import hints from "./Properties15a-index.js"; const step = {id: "Properties15a", stepAnswer: ["$$12y+63$$"], problemType: "TextBox", stepTitle: "$$6\\left(7y+8\\right)-30y-15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

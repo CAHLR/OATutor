@@ -1,1 +1,0 @@
-import steps from "./complex24-index.js"; const problem = {id: "complex24", title: "Dividing Complex Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

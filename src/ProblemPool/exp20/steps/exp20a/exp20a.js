@@ -1,1 +1,0 @@
-import hints from "./exp20a-index.js"; const step = {id: "exp20a", stepAnswer: ["703000"], problemType: "TextBox", stepTitle: "$$7.03\\times {10}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

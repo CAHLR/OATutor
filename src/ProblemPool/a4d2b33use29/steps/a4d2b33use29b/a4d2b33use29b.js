@@ -1,1 +1,1 @@
-import hints from "./a4d2b33use29b-index.js"; const step = {id: "a4d2b33use29b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${\\left(1\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a4d2b33use29b-index.js"; const step = {id: "a4d2b33use29b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$1^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

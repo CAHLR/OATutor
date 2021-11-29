@@ -1,1 +1,0 @@
-import hints from "./partfrac14a-index.js"; const step = {id: "partfrac14a", stepAnswer: ["$$\\frac{4}{x}-\\frac{3}{2\\left(x+1\\right)}+\\frac{7}{2{\\left(3x+2\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5x^2+20x+8}{2{x\\left(x+1\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

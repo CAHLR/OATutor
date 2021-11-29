@@ -1,1 +1,0 @@
-import steps from "./partfrac8-index.js"; const problem = {id: "partfrac8", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors: $$\\frac{6x}{x^2-4}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

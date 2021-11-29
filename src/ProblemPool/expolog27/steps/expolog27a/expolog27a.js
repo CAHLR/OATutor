@@ -1,1 +1,0 @@
-import hints from "./expolog27a-index.js"; const step = {id: "expolog27a", stepAnswer: ["$$31e^{-0.011726 t}+69$$"], problemType: "TextBox", stepTitle: "Use Newton’s Law of Cooling to write a formula that models this situation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

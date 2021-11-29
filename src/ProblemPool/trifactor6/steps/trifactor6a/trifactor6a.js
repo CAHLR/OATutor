@@ -1,1 +1,0 @@
-import hints from "./trifactor6a-index.js"; const step = {id: "trifactor6a", stepAnswer: ["$${\\left(4z-9\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$16z^2-72z+81$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

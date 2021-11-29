@@ -1,1 +1,0 @@
-import hints from "./FracDec25a-index.js"; const step = {id: "FracDec25a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "Solve: $$0.7x+0.4=0.6x+2.4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

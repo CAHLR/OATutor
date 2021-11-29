@@ -1,1 +1,0 @@
-import steps from "./systemeqs13-index.js"; const problem = {id: "systemeqs13", title: "Solving systemeqs of Equations by Substitution", body: "Solve the System of Equations using substitution: $$3x-2y=18$$, $$5x+10y=-10$$", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

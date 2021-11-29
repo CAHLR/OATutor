@@ -1,1 +1,0 @@
-import hints from "./cond8a-index.js"; const step = {id: "cond8a", stepAnswer: ["0.42"], problemType: "TextBox", stepTitle: "What is the probability you will be a Goalkeeper today? Round your answer to 2 decimal places", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

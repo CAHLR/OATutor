@@ -1,1 +1,0 @@
-import steps from "./factor18-index.js"; const problem = {id: "factor18", title: "Factoring Polynomials", body: "Factor by grouping.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

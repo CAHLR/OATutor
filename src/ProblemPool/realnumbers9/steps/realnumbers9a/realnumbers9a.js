@@ -1,1 +1,0 @@
-import hints from "./realnumbers9a-index.js"; const step = {id: "realnumbers9a", stepAnswer: ["$$\\frac{-19}{1}$$"], problemType: "TextBox", stepTitle: "-19", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

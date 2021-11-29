@@ -1,1 +1,0 @@
-import steps from "./whole14-index.js"; const problem = {id: "whole14", title: "Find the Prime Factorization of a Composite Number", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

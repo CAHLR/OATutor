@@ -1,1 +1,0 @@
-import hints from "./composition20c-index.js"; const step = {id: "composition20c", stepAnswer: ["$$3x^2 \\sqrt{x-5}$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

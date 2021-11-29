@@ -1,1 +1,0 @@
-import hints from "./use32a-index.js"; const step = {id: "use32a", stepAnswer: ["35"], problemType: "TextBox", stepTitle: "$$8+3\\times9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

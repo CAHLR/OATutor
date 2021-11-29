@@ -1,1 +1,0 @@
-import hints from "./exa25a-index.js"; const step = {id: "exa25a", stepAnswer: ["$$k^2+7k$$"], problemType: "TextBox", stepTitle: "$$k\\left(k+7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

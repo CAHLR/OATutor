@@ -1,1 +1,0 @@
-import steps from "./composition19-index.js"; const problem = {id: "composition19", title: "Composition of Rational Functions", body: "Given $$f(x)=\\frac{1}{x-4}$$ and $$g(x)=\\frac{1}{6-x}$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

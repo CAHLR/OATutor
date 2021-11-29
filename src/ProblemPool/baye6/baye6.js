@@ -1,1 +1,0 @@
-import steps from "./baye6-index.js"; const problem = {id: "baye6", title: "The Two Children Problem", body: "Suppose the probabilities of having a boy or a girl are both 50%", steps: steps, variabilization: {}, oer: "https://brilliant.org/wiki/bayes-theorem/", courseName: "Data Content"}; export { problem };

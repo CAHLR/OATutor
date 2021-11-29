@@ -1,1 +1,0 @@
-var hints = [{id: "sequences26b-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=2$$ into the formula", variabilization: {}}, {id: "sequences26b-h2", type: "hint", dependencies: ["sequences26b-h1"], title: "Simplification", text: "Calculate the expression $$\\frac{2^2}{2^3}$$", variabilization: {}}, ]; export {hints};

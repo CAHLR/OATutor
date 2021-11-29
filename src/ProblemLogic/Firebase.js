@@ -144,20 +144,21 @@ class Firebase {
     return this.writeData("mouseMovement", date, data);
   }
 
-  submitFeedback(problemID, feedback, problemFinished, canvasStudentID, courseName) {
-    var date = this._getDate();
-    var data = {
+  submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName) {
+    const date = this._getDate();
+    const data = {
       timeStamp: date,
       siteVersion: this.siteVersion,
       studentID: this.id,
-      problemID: problemID,
+      problemID,
       treatment: this.treatment,
-      problemFinished: problemFinished,
-      feedback: feedback,
+      problemFinished,
+      feedback,
       canvasStudentID: canvasStudentID || null,
       status: "open",
-      Content: courseName
-    }
+      Content: courseName,
+      variables
+    };
     return this.writeData(feedbackOutput, date, data);
   }
 

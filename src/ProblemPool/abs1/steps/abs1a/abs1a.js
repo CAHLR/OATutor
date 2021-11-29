@@ -1,1 +1,0 @@
-import hints from "./abs1a-index.js"; const step = {id: "abs1a", stepAnswer: ["There are no x-intercepts."], problemType: "MultipleChoice", stepTitle: "Find the x-intercept of $$f(x)=4|x-3|+4$$", stepBody: "", choices: ["There are no x-intercepts.", "2", "4", "3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

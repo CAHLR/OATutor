@@ -1,1 +1,0 @@
-import hints from "./exponents10a-index.js"; const step = {id: "exponents10a", stepAnswer: ["$$\\frac{1}{16x^8}$$"], problemType: "TextBox", stepTitle: "$${\\left(-4x^4\\right)}^{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

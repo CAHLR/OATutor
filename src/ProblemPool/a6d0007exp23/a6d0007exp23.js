@@ -1,1 +1,1 @@
-import steps from "./a6d0007exp23-index.js"; const problem = {id: "a6d0007exp23", title: "Terabyte Size", body: "A terabyte is made of approximately 1,099,500,000,000 bytes.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a6d0007exp23-index.js"; const problem = {id: "a6d0007exp23", title: "Terabyte Size", body: "A terabyte is made of approximately 1,099,500,000,000 bytes.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

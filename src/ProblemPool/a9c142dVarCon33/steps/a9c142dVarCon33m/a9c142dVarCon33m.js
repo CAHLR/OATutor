@@ -1,1 +1,1 @@
-import hints from "./a9c142dVarCon33m-index.js"; const step = {id: "a9c142dVarCon33m", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$2.7w-80=\\left(1.2\\right) w+\\left(10\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a9c142dVarCon33m-index.js"; const step = {id: "a9c142dVarCon33m", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$2.7w-80=1.2w+10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

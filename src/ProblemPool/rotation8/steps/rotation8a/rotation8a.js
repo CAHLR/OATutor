@@ -1,1 +1,0 @@
-import hints from "./rotation8a-index.js"; const step = {id: "rotation8a", stepAnswer: ["Parabola"], problemType: "MultipleChoice", stepTitle: "$$x^2-10x+4y-10=0$$", stepBody: "", choices: ["Ellipse", "Circle", "Hyperbola", "Parabola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./GenStr2a-index.js"; const step = {id: "GenStr2a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$5\\left(x+3\\right)=35$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

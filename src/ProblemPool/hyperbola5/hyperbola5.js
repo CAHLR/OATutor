@@ -1,1 +1,0 @@
-import steps from "./hyperbola5-index.js"; const problem = {id: "hyperbola5", title: "Finding the Equation of a Hyperbola Centered at (h,k) given its Foci and Vertices", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./FracDec11a-index.js"; const step = {id: "FracDec11a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "Solve: $$-11=\\frac{1}{2\\left(6p+2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

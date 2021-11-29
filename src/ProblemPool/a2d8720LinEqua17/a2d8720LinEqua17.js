@@ -1,1 +1,1 @@
-import steps from "./a2d8720LinEqua17-index.js"; const problem = {id: "a2d8720LinEqua17", title: "Finding the Slope of a Line Given Two Points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a2d8720LinEqua17-index.js"; const problem = {id: "a2d8720LinEqua17", title: "Finding the Slope of a Line Given Two Points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

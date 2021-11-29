@@ -1,1 +1,0 @@
-import hints from "./ellipse8a-index.js"; const step = {id: "ellipse8a", stepAnswer: ["$$\\frac{x^2}{3^2}+\\frac{y^2}{2^2}=1$$"], problemType: "TextBox", stepTitle: "$$4x^2+9y^2=36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

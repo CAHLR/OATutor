@@ -1,1 +1,0 @@
-import steps from "./Multiply5-index.js"; const problem = {id: "Multiply5", title: "Simplify Expressions", body: "Simplify the following integer expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

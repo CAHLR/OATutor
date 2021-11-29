@@ -1,1 +1,0 @@
-import hints from "./use20c-index.js"; const step = {id: "use20c", stepAnswer: ["Expression"], problemType: "MultipleChoice", stepTitle: "$$\\frac{x}{25}$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./decimals9a-index.js"; const step = {id: "decimals9a", stepAnswer: ["5.094"], problemType: "TextBox", stepTitle: "Write as a decimal: five and ninety-four thousandths.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./rationals22a-index.js"; const step = {id: "rationals22a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x}{x^2-x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./RecCord11a-index.js"; const step = {id: "RecCord11a", stepAnswer: ["15000 feet"], problemType: "TextBox", stepTitle: "Find the total distance that Tracie traveled.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

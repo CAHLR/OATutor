@@ -1,1 +1,0 @@
-import hints from "./divpoly27a-index.js"; const step = {id: "divpoly27a", stepAnswer: ["$$-3x^2-4x-6$$ - $$\\frac{22}{2x-3}$$"], problemType: "TextBox", stepTitle: "$$\\left(-6x^3+x^2\\right)-4$$ / (2x-3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

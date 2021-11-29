@@ -1,1 +1,0 @@
-var hints = [{id: "Properties29a-h1", type: "hint", dependencies: [], title: "Division of Zero", text: "Zero divided by any real number except itself is zero.", variabilization: {}}, ]; export {hints};

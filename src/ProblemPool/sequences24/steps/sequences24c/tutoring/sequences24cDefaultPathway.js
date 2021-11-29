@@ -1,1 +1,0 @@
-var hints = [{id: "sequences24c-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=3$$ into the formula", variabilization: {}}, {id: "sequences24c-h2", type: "hint", dependencies: ["sequences24c-h1"], title: "Simplification", text: "Calculate the expression $$\\frac{\\left(-16\\right)}{3+1}$$", variabilization: {}}, ]; export {hints};

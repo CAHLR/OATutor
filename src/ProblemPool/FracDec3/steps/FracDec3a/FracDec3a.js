@@ -1,1 +1,0 @@
-import hints from "./FracDec3a-index.js"; const step = {id: "FracDec3a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{1}{8} x+\\frac{1}{2}=\\frac{1}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

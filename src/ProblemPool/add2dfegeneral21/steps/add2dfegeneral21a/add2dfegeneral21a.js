@@ -1,1 +1,1 @@
-import hints from "./add2dfegeneral21a-index.js"; const step = {id: "add2dfegeneral21a", stepAnswer: ["(4x-3)(2x-3)"], problemType: "TextBox", stepTitle: "$$\\left(8\\right) x^2-\\left(18\\right) x+\\left(9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./add2dfegeneral21a-index.js"; const step = {id: "add2dfegeneral21a", stepAnswer: ["(4x-3)(2x-3)"], problemType: "TextBox", stepTitle: "$$8x^2-18x+9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

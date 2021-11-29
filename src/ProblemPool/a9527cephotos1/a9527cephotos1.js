@@ -1,1 +1,1 @@
-import steps from "./a9527cephotos1-index.js"; const problem = {id: "a9527cephotos1", title: "Review Question 4", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9527cephotos1-index.js"; const problem = {id: "a9527cephotos1", title: "Review Question 4", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

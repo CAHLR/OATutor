@@ -1,1 +1,1 @@
-import steps from "./a35ba99cou13-index.js"; const problem = {id: "a35ba99cou13", title: "Number of Permutations", body: "Compute the value of the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a35ba99cou13-index.js"; const problem = {id: "a35ba99cou13", title: "Number of Permutations", body: "Compute the value of the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

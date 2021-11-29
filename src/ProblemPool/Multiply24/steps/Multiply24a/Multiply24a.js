@@ -1,1 +1,0 @@
-import hints from "./Multiply24a-index.js"; const step = {id: "Multiply24a", stepAnswer: ["121"], problemType: "TextBox", stepTitle: "$${\\left(x+y\\right)}^2$$ when $$x=-3$$, $$y=14$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

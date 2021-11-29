@@ -1,1 +1,0 @@
-import hints from "./Properties7c-index.js"; const step = {id: "Properties7c", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "-8", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

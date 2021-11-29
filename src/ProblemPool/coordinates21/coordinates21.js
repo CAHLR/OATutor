@@ -1,1 +1,0 @@
-import steps from "./coordinates21-index.js"; const problem = {id: "coordinates21", title: "Find Solutions to a Linear Equation", body: "In the following exercise, find y given the equation and the value of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

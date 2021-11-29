@@ -1,1 +1,1 @@
-import hints from "./a9c142dVarCon33a-index.js"; const step = {id: "a9c142dVarCon33a", stepAnswer: ["19"], problemType: "TextBox", stepTitle: "$$6x-17=\\left(5\\right) x+\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a9c142dVarCon33a-index.js"; const step = {id: "a9c142dVarCon33a", stepAnswer: ["19"], problemType: "TextBox", stepTitle: "$$6x-17=5x+2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

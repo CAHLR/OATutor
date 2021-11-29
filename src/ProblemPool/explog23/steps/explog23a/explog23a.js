@@ -1,1 +1,0 @@
-import hints from "./explog23a-index.js"; const step = {id: "explog23a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Does $$2^x=-100$$ have a solution?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

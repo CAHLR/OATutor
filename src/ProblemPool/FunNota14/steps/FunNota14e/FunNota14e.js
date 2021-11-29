@@ -1,1 +1,0 @@
-import hints from "./FunNota14e-index.js"; const step = {id: "FunNota14e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$2x+y^2=6$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

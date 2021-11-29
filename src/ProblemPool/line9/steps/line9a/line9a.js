@@ -1,1 +1,0 @@
-import hints from "./line9a-index.js"; const step = {id: "line9a", stepAnswer: ["$$y=\\frac{5x}{8}+2$$"], problemType: "MultipleChoice", stepTitle: "$$m=\\frac{5}{8}$$, point (8,3)", stepBody: "", choices: ["$$y=\\frac{8x}{5}-2$$", "$$y=\\frac{5x}{8}+2$$", "$$y=\\frac{5x}{2}-8$$", "$$y=\\frac{5x}{8}-8$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

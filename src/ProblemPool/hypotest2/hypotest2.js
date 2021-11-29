@@ -1,1 +1,0 @@
-import steps from "./hypotest2-index.js"; const problem = {id: "hypotest2", title: "Marathon Runners", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./domain1-index.js"; const problem = {id: "domain1", title: "Finding the Domain of a Function as a Set of Ordered Pairs", body: "Find the domain of the following function:", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

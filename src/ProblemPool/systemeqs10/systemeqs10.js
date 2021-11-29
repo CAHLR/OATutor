@@ -1,1 +1,0 @@
-import steps from "./systemeqs10-index.js"; const problem = {id: "systemeqs10", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (-1,1) is a solution to the system of equations: $$-2x+5y=7$$, $$2x+9y=7$$", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

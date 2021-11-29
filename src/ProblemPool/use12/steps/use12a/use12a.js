@@ -1,1 +1,0 @@
-import hints from "./use12a-index.js"; const step = {id: "use12a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$6x^2-4x-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

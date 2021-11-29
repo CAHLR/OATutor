@@ -1,1 +1,0 @@
-import hints from "./intercepts29a-index.js"; const step = {id: "intercepts29a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$x-2y=8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./aabf119factor13a-index.js"; const step = {id: "aabf119factor13a", stepAnswer: ["7m"], problemType: "TextBox", stepTitle: "$$\\left(49\\right) {mb}^2-\\left(35\\right) m^2 ba+\\left(77\\right) {ma}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./aabf119factor13a-index.js"; const step = {id: "aabf119factor13a", stepAnswer: ["7m"], problemType: "TextBox", stepTitle: "$$49{mb}^2-35m^2 ba+77{ma}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

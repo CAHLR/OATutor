@@ -1,1 +1,0 @@
-import hints from "./cou18b-index.js"; const step = {id: "cou18b", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "How many ways can you select 3 side dishes?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

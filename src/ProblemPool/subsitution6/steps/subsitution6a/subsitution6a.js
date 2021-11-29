@@ -1,1 +1,0 @@
-import hints from "./subsitution6a-index.js"; const step = {id: "subsitution6a", stepAnswer: ["(3,-4)"], problemType: "MultipleChoice", stepTitle: "$$3x+y=5$$, $$2x+4y=-10$$", stepBody: "", choices: ["(1,4)", "(2,-2)", "(3,-4)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

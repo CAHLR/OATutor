@@ -1,1 +1,1 @@
-import steps from "./a9527cechemof12-index.js"; const problem = {id: "a9527cechemof12", title: "Review Question 15", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/"}; export { problem };
+import steps from "./a9527cechemof12-index.js"; const problem = {id: "a9527cechemof12", title: "Review Question 15", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Biology"}; export { problem };

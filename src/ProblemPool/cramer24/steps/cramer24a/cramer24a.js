@@ -1,1 +1,0 @@
-import hints from "./cramer24a-index.js"; const step = {id: "cramer24a", stepAnswer: ["Infinite Solutions"], problemType: "MultipleChoice", stepTitle: "$$x-2y+3z=0;$$ \\n $$3x+y-2z=0;$$ \\n $$2x-4y+6z=0$$", stepBody: "", choices: ["(-1,1,1)", "(1,-1,1)", "Inconsistent", "Infinite Solutions"], answerType: "string", hints: hints, variabilization: {}}; export {step};

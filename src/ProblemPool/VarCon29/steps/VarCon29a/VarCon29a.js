@@ -1,1 +1,0 @@
-import hints from "./VarCon29a-index.js"; const step = {id: "VarCon29a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\frac{7}{6} y+11=\\frac{1}{6} y+8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

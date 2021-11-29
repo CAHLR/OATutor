@@ -1,1 +1,0 @@
-import hints from "./inv2a-index.js"; const step = {id: "inv2a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$A=\\begin{bmatrix} 1 & 5 \\\\ -2 & -9 \\end{bmatrix}$$ and $$B={(-9,-5),(2,1)$$}", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

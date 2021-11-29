@@ -1,1 +1,0 @@
-import steps from "./partfrac10-index.js"; const problem = {id: "partfrac10", title: "Decomposing a Rational Function with Distinct Linear Factors", body: "Decompose the given rational expression with distinct linear factors: $$\\frac{4x-1}{x^2-x-6}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

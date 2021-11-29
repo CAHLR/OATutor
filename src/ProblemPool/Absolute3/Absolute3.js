@@ -1,1 +1,0 @@
-import steps from "./Absolute3-index.js"; const problem = {id: "Absolute3", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=-|x-1|-3$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

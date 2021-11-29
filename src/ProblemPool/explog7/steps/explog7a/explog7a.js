@@ -1,1 +1,0 @@
-import hints from "./explog7a-index.js"; const step = {id: "explog7a", stepAnswer: ["$$\\frac{-\\left(\\ln(\\frac{38}{3})-8\\right)}{3}$$"], problemType: "TextBox", stepTitle: "$$e^{\\left(-3k\\right)}+6=$$ 44", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

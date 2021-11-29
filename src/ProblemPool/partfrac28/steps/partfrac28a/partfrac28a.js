@@ -1,1 +1,0 @@
-import hints from "./partfrac28a-index.js"; const step = {id: "partfrac28a", stepAnswer: ["$$\\frac{-20}{3\\left(x+5\\right)}+\\frac{32x-20}{3\\left(x^2+7x-5\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

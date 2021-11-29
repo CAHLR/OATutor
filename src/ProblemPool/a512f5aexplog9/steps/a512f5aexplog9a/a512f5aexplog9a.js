@@ -1,1 +1,1 @@
-import hints from "./a512f5aexplog9a-index.js"; const step = {id: "a512f5aexplog9a", stepAnswer: ["ln(12)"], problemType: "TextBox", stepTitle: "$$e^{\\left(2\\right) x}-e^x-\\left(132\\right)=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a512f5aexplog9a-index.js"; const step = {id: "a512f5aexplog9a", stepAnswer: ["ln(12)"], problemType: "TextBox", stepTitle: "$$e^{2x}-e^x-132=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

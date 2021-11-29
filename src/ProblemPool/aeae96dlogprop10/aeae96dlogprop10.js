@@ -1,1 +1,1 @@
-import steps from "./aeae96dlogprop10-index.js"; const problem = {id: "aeae96dlogprop10", title: "Using the Power Rule in Inverse", body: "Rewrite the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org"}; export { problem };
+import steps from "./aeae96dlogprop10-index.js"; const problem = {id: "aeae96dlogprop10", title: "Using the Power Rule in Inverse", body: "Rewrite the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-var hints = [{id: "intercepts1b-h1", type: "hint", dependencies: [], title: "Graph crosses y-axis where?", text: "Find where the line in the graph crosses the y-axis.", variabilization: {}}, {id: "intercepts1b-h2", type: "hint", dependencies: ["intercepts1b-h1"], title: "Answer", text: "The answer is (0,2).", variabilization: {}}, ]; export {hints};

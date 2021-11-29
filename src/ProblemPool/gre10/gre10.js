@@ -1,1 +1,0 @@
-import steps from "./gre10-index.js"; const problem = {id: "gre10", title: "Greatest Common Factor", body: "Find the greatest common factor.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./ser3a-index.js"; const step = {id: "ser3a", stepAnswer: ["$$S_{13}=\\frac{13\\left(3.2+5.6\\right)}{2}$$"], problemType: "TextBox", stepTitle: "3.2+3.4+3.6+...+5.6", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

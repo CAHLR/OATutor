@@ -1,1 +1,0 @@
-import hints from "./spe16a-index.js"; const step = {id: "spe16a", stepAnswer: ["$$4x^2-12x y+9y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(2x-3y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

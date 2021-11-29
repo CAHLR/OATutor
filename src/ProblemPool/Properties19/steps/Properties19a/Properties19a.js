@@ -1,1 +1,0 @@
-import hints from "./Properties19a-index.js"; const step = {id: "Properties19a", stepAnswer: ["$$\\frac{-5}{8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

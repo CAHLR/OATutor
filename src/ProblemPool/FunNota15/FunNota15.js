@@ -1,1 +1,0 @@
-import steps from "./FunNota15-index.js"; const problem = {id: "FunNota15", title: "Evaluate the function $$f(x)=2x-5$$ at the indicated values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

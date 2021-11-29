@@ -1,1 +1,0 @@
-import steps from "./LinIneq11-index.js"; const problem = {id: "LinIneq11", title: "Using a Graphical Approach to Solve Absolute Value Inequalities", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./Multiply16a-index.js"; const step = {id: "Multiply16a", stepAnswer: ["-32"], problemType: "TextBox", stepTitle: "$$-4\\times8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

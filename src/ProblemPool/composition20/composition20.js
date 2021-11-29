@@ -1,1 +1,0 @@
-import steps from "./composition20-index.js"; const problem = {id: "composition20", title: "Composition of Functions with Square Roots", body: "Given $$f(x)=3x^2$$ and $$g(x)=\\sqrt{x-5}$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

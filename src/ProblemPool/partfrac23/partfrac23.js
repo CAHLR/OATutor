@@ -1,1 +1,0 @@
-import steps from "./partfrac23-index.js"; const problem = {id: "partfrac23", title: "Decomposing a fraction with repeating linear factors", body: "Decompose the partial fraction for the repeating linear factors: $$\\frac{5x+14}{2x^2+12x+18}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

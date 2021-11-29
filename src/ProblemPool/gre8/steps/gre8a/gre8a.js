@@ -1,1 +1,0 @@
-import hints from "./gre8a-index.js"; const step = {id: "gre8a", stepAnswer: ["$$9x^3$$"], problemType: "TextBox", stepTitle: "$$27x^3$$, $$18x^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./exe28-index.js"; const problem = {id: "exe28", title: "Factoring Trinomials", body: "Factor the trinomial.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

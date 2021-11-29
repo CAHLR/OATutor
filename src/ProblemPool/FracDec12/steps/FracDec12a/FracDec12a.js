@@ -1,1 +1,0 @@
-import hints from "./FracDec12a-index.js"; const step = {id: "FracDec12a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Solve: $$8=\\frac{1}{3\\left(9q+6\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

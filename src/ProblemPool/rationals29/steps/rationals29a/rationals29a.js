@@ -1,1 +1,0 @@
-import hints from "./rationals29a-index.js"; const step = {id: "rationals29a", stepAnswer: ["2x"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{6x^3-5x}{3x^2+4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

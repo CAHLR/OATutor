@@ -1,1 +1,1 @@
-import steps from "./a9cf449complex8-index.js"; const problem = {id: "a9cf449complex8", title: "Multiplying a Complex Number by a Complex Number", body: "Find the product.", steps: steps, variabilization: {}, oer: "http://openstax.org"}; export { problem };
+import steps from "./a9cf449complex8-index.js"; const problem = {id: "a9cf449complex8", title: "Multiplying a Complex Number by a Complex Number", body: "Find the product.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

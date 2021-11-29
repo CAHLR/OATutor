@@ -1,1 +1,0 @@
-import hints from "./cou8a-index.js"; const step = {id: "cou8a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "A student is shopping for a new computer. He is deciding among 3 desktop computers and 4 laptop computers. What is the total number of computer options?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

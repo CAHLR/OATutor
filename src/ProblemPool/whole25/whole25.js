@@ -1,1 +1,0 @@
-import steps from "./whole25-index.js"; const problem = {id: "whole25", title: "Finding Place Values", body: "Given the number 27,493,615, find the place value of the following digits.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

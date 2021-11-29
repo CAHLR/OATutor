@@ -1,1 +1,0 @@
-import hints from "./spe17a-index.js"; const step = {id: "spe17a", stepAnswer: ["$$9x^2-6x y+y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(3x-y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

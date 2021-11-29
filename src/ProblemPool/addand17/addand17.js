@@ -1,1 +1,0 @@
-import steps from "./addand17-index.js"; const problem = {id: "addand17", title: "Evaluate Variable Expressions with Fractions", body: "Evaluate", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

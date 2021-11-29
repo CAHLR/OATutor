@@ -1,1 +1,0 @@
-import steps from "./factor3-index.js"; const problem = {id: "factor3", title: "Factoring a Trionomial with Leading Coefficient 1.", body: "Factor the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

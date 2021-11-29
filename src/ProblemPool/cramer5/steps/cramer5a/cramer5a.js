@@ -1,1 +1,0 @@
-import hints from "./cramer5a-index.js"; const step = {id: "cramer5a", stepAnswer: ["-319"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 6 & -1 & 2 \\\\ -4 & -3 & 5 \\\\ 1 & 9 & -1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

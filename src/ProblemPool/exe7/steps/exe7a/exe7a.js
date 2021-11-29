@@ -1,1 +1,0 @@
-import hints from "./exe7a-index.js"; const step = {id: "exe7a", stepAnswer: ["(y-2)(y-3)"], problemType: "TextBox", stepTitle: "$$y^2-5y+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
