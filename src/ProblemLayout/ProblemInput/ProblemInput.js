@@ -50,7 +50,7 @@ class ProblemInput extends React.Component {
         eqContainer.style.height = `${newHeight}px`;
       }
     }
-    this.props._setState({ inputVal: eq })
+    this.props.setInputValState(eq)
   }
 
   render() {

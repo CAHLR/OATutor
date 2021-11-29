@@ -110,7 +110,7 @@ class ProblemCard extends React.Component {
   }
 
   setInputValState = (inputVal) => {
-    this.setState({ inputVal })
+    this.setState(({isCorrect}) => ({ inputVal, isCorrect: isCorrect ? true: null }))
   }
 
   handleKey = (event) => {
