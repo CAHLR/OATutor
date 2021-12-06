@@ -35,7 +35,6 @@ jobs:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           CI: false
           REACT_APP_BUILD_TYPE: "production"
-          REACT_APP_MIDDLEWARE_URL: "https://askoski.berkeley.edu:1339"
 
       - uses: actions/checkout@v2
         with:

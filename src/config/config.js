@@ -2,7 +2,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = "1.2.6";
+const siteVersion = "1.2.7";
 const logData = true;
 const logMouseData = false;
 const debug = false;
@@ -10,7 +10,7 @@ const useBottomOutHints = true;
 
 // DynamicText not supported for HTML body types
 const dynamicText = {
-  "%CAR%": "Tesla car"
+    "%CAR%": "Tesla car"
 };
 const cookieID = "openITS-id";
 
@@ -23,36 +23,36 @@ const GRANULARITY = 5;
 const autoCommands = "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
 const autoOperatorNames = "sin cos tan";
 
-const middlewareURL = process.env.REACT_APP_MIDDLEWARE_URL || "https://askoski.berkeley.edu:1339";
+const middlewareURL = process.env.REACT_APP_MIDDLEWARE_URL || "https://oatutor.askoski.berkeley.edu";
 
-var coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
+const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 
-var lessonCounter = 0;
-var lessonPlans = [];
-for (var i = 0; i < coursePlans.length; i++) {
-  var course = coursePlans[i];
-  for (var j = 0; j < course.lessons.length; j++) {
-    course.lessons[j].lessonNum = lessonCounter;
-    lessonCounter += 1;
-    lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
-  }
+let lessonCounter = 0;
+const lessonPlans = [];
+for (let i = 0; i < coursePlans.length; i++) {
+    const course = coursePlans[i];
+    for (let j = 0; j < course.lessons.length; j++) {
+        course.lessons[j].lessonNum = lessonCounter;
+        lessonCounter += 1;
+        lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
+    }
 }
 
 export {
-  ThemeContext,
-  siteVersion,
-  logData,
-  logMouseData,
-  dynamicText,
-  cookieID,
-  debug,
-  useBottomOutHints,
-  lessonPlans,
-  coursePlans,
-  MAX_BUFFER_SIZE,
-  GRANULARITY,
-  autoCommands,
-  autoOperatorNames,
-  middlewareURL,
-  PROGRESS_STORAGE_KEY
+    ThemeContext,
+    siteVersion,
+    logData,
+    logMouseData,
+    dynamicText,
+    cookieID,
+    debug,
+    useBottomOutHints,
+    lessonPlans,
+    coursePlans,
+    MAX_BUFFER_SIZE,
+    GRANULARITY,
+    autoCommands,
+    autoOperatorNames,
+    middlewareURL,
+    PROGRESS_STORAGE_KEY
 };

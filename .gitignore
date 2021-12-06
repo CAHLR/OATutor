@@ -2,8 +2,6 @@
 
 # dependencies
 /node_modules
-/src/util/node_modules
-/lti-server/node_modules
 /.pnp
 .pnp.js
 
@@ -31,12 +29,10 @@ service-account-credentials.json
 sheets-service-account.json
 
 # Logs
-/src/util/logs
+/src/tools/logs
 
 # Misc.
 /.idea
 pnpm-lock.yaml
-/lti-server/package-lock.json
-/src/util/package-lock.json
 
 /src/generated
