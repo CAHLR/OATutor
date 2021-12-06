@@ -29,7 +29,7 @@ const COLUMN_NAME_MAPPING = {
   "problemFinished": "problemFinished?"
 };
 
-const COLUMN_TITLES = ["Id","date","Content","problemName","studentName","Feedback","Issue Type","status","resolution","resolveDate","deployDate","problemFinished?","siteVersion","versionFixed","treatmentID"]
+const COLUMN_TITLES = ["Id","date","Content","problemName","studentName","Feedback","steps","Issue Type","status","resolution","resolveDate","deployDate","problemFinished?","siteVersion","versionFixed","treatmentID", "canvasStudentID"]
 
 if (!Object.fromEntries) {fromEntries.shim();}
 
