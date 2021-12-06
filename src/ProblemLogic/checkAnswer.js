@@ -1,13 +1,12 @@
 import { variabilize } from './variabilize.js';
 
-var Algebrite = require('algebrite');
-var KAS = require('../kas.js');
+const KAS = require('../kas.js');
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
-  var parsedAttempt = attempt.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
+  const parsedAttempt = attempt.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
   return actual.some((stepAns) => {
-    var parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
+    const parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
     //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
     return (parsedAttempt === parsedStepAns)
   });
@@ -30,12 +29,12 @@ function round(num, precision) {
 }
 
 function checkAnswer(attempt, actual, answerType, precision, variabilization) {
-  var parsed = attempt.replace(/\s+/g, '');
+  let parsed = attempt.replace(/\s+/g, '');
   if (variabilization) {
     actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
   }
   //console.log(actual);
-  var correctAnswer = false;
+  let correctAnswer = false;
 
   try {
     if (parsed === "") {

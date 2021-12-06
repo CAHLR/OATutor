@@ -9,11 +9,10 @@ import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
-import { chooseVariables } from "./variabilize";
 
 let problemPool = require('../generated/poolFile.json')
 
-var seed = Date.now().toString();
+let seed = Date.now().toString();
 console.log("Generated seed");
 
 class Platform extends React.Component {
@@ -33,9 +32,9 @@ class Platform extends React.Component {
     this.isPrivileged = !!this.user.privileged
 
     // Add each Q Matrix skill model attribute to each step
-    for (var problem of this.problemIndex.problems) {
-      for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
-        var step = problem.steps[stepIndex];
+    for (const problem of this.problemIndex.problems) {
+      for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
+        const step = problem.steps[stepIndex];
         step.knowledgeComponents = context.skillModel[step.id];
       }
     }

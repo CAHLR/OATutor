@@ -3,13 +3,9 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import MultipleChoice from './ProblemInput/MultipleChoice.js';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
-import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
-import EquationEditor from "equation-editor-react";
+import { chooseVariables } from '../ProblemLogic/renderText.js';
 import { ThemeContext } from '../config/config.js';
 import ProblemInput from "./ProblemInput/ProblemInput";
 

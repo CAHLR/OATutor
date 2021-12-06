@@ -30,8 +30,6 @@ class Problem extends React.Component {
     this.stepStates = {};
     this.numCorrect = 0;
 
-    const { lesson } = this.props;
-
     this.state = {
       problem: this.props.problem,
       steps: this.refreshSteps(props.problem),
@@ -160,17 +158,17 @@ class Problem extends React.Component {
     }
 
     if (!this.context.debug) {
-      var objectives = Object.keys(this.props.lesson.learningObjectives);
+      const objectives = Object.keys(this.props.lesson.learningObjectives);
       objectives.unshift(0);
-      var score = objectives.reduce((x, y) => {
+      let score = objectives.reduce((x, y) => {
         return x + this.bktParams[y].probMastery
       });
       score /= objectives.length - 1;
       //console.log(this.context.studentName + " " + score);
       this.props.displayMastery(score);
 
-      var relevantKc = {}
-      Object.keys(this.props.lesson.learningObjectives).map(x => {
+      const relevantKc = {};
+      Object.keys(this.props.lesson.learningObjectives).forEach(x => {
         relevantKc[x] = this.bktParams[x].probMastery
       });
 
