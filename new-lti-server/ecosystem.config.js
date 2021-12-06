@@ -1,16 +1,16 @@
 module.exports = {
-  apps : [{
-    name: "OATutor-LTI-Server",
-    script: 'app.js',
-    watch: '.',
-    watch_delay: 1000,
+    apps: [{
+        name: "OATutor-LTI-Server",
+        script: 'app.js',
+        watch: '.',
+        watch_delay: 1000,
 
-    max_restarts: 10,
-    restart_delay: 500,
-    autorestart: true,
+        max_restarts: 10,
+        restart_delay: 500,
+        autorestart: true,
 
-    env: {
-      PORT: 3003
-    }
-  }]
+        env: {
+            PORT: 3003
+        }
+    }]
 };
