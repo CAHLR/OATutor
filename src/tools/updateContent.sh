@@ -61,7 +61,7 @@ cp src/config/bktParams/bktParams1.js src/config/bktParams/bktParams2.js
 
 echo "Generating flattened problem pool."
 
-cd src/util
+cd src/tools
 node generateFlatProblemPool.js >"$OUT_FILE" 2>&1
 
 echo "Make sure to increment version in OpenITS/src/config/config.js!"
