@@ -4,45 +4,45 @@ import { dynamicText } from '../config/config.js';
 import { variabilize, chooseVariables } from './variabilize.js';
 
 function renderText(text, problemID, variabilization) {
-  if (typeof text !== 'string') {
-    return text;
-  }
-  var result = text;
-  for (var d in dynamicText) {
-    var replace = dynamicText[d];
-    result = result.split(d).join(replace);
-  }
-  if (variabilization) {
-    result = variabilize(text, variabilization);
-  }
-
-  var splitted = result.split("\\n");
-  splitted = splitted.map((line, j) => {
-    var lineSplitted = line.split("$$");
-    lineSplitted = lineSplitted.map((part, i) => {
-      if (i % 2 === 0) {
-        var partSplitted = part.split("##");
-        return partSplitted.map((subPart, k) => {
-          if (k % 2 === 0) {
-            return subPart;
-          } else {
-            //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
-            return <center key={Math.random() * 2 ** 16}>
-              <img src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
-                   alt={`${problemID} figure`}/>
-            </center>
-          }
-        });
-      } else {
-        return <InlineMath math={part} key={Math.random() * 2 ** 16}/>;
-      }
-    })
-    if (j !== splitted.length - 1) {
-      lineSplitted.push(<br/>);
+    if (typeof text !== 'string') {
+        return text;
     }
-    return lineSplitted;
-  })
-  return splitted;
+    var result = text;
+    for (var d in dynamicText) {
+        var replace = dynamicText[d];
+        result = result.split(d).join(replace);
+    }
+    if (variabilization) {
+        result = variabilize(text, variabilization);
+    }
+
+    var splitted = result.split("\\n");
+    splitted = splitted.map((line, j) => {
+        var lineSplitted = line.split("$$");
+        lineSplitted = lineSplitted.map((part, i) => {
+            if (i % 2 === 0) {
+                var partSplitted = part.split("##");
+                return partSplitted.map((subPart, k) => {
+                    if (k % 2 === 0) {
+                        return subPart;
+                    } else {
+                        //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
+                        return <center key={Math.random() * 2 ** 16}>
+                            <img src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
+                                 alt={`${problemID} figure`}/>
+                        </center>
+                    }
+                });
+            } else {
+                return <InlineMath math={part} key={Math.random() * 2 ** 16}/>;
+            }
+        })
+        if (j !== splitted.length - 1) {
+            lineSplitted.push(<br/>);
+        }
+        return lineSplitted;
+    })
+    return splitted;
 }
 
 export { renderText, chooseVariables }

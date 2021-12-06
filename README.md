@@ -32,17 +32,17 @@ OpenITS uses Firebase for data logging purposes.
 6. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
 7. Put configuration in `src/config/firebaseConfig.js`
 
-### Utilities Setup
+### Tools Setup
 
-Data parsing and spreadsheet populating utilities are stored in `src/util`. 
+Data parsing and spreadsheet populating tools are stored in `src/tools`. 
 
-For all utilities:
+For all tools:
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Click on the project made in Firebase Setup
 3. Click on Project settings --> service accounts. Generate a new `Node.js` private key.
-4. Put that private key in `/src/util/service-account-credentials.json`
-5. `cd /src/util`
+4. Put that private key in `/src/tools/service-account-credentials.json`
+5. `cd /src/tools`
 5. `npm install`
 
 #### generateCSV.js
@@ -55,7 +55,7 @@ For all utilities:
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Click on the project made in Firebase Setup
 3. Click on Project settings --> service accounts
-4. Create another service account and save its private key to `src/util/sheets-service-account.json`
+4. Create another service account and save its private key to `src/tools/sheets-service-account.json`
 5. Copy the email address for the service account
 6. Share the target spreadsheet with that email address and give them editor access
 7. Create `.env.local` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`

@@ -30,11 +30,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prestart": "node src/util/generateFlatProblemPool.js",
+    "prestart": "node src/tools/generateFlatProblemPool.js",
     "build": "react-scripts build",
-    "prebuild": "node src/util/generateFlatProblemPool.js",
+    "prebuild": "node src/tools/generateFlatProblemPool.js",
     "test": "react-scripts test",
-    "pretest": "node src/util/generateFlatProblemPool.js",
+    "pretest": "node src/tools/generateFlatProblemPool.js",
     "eject": "react-scripts eject"
   },
   "browserslist": {
