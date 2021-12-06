@@ -117,21 +117,22 @@ app.post('/launch', async (req, res) => {
 
   const token = getJWT(provider, consumer_secret, consumer_key, privileged)
 
-  let err, result;
-  [err, result] = await getLinkedLesson(provider.body.resource_link_id);
+  let err, linkedLesson;
+  [err, linkedLesson] = await getLinkedLesson(provider.body.resource_link_id);
+
   if (provider.student || provider.prospective_student || provider.alumni) {
     // find lesson to send to iff it has been linked by an instructor
-    if (err || !result) {
+    if (err || !linkedLesson) {
       res.writeHead(302, { Location: `${host}/${unlinkedPage}?token=${token}` })
     } else {
-      res.writeHead(302, { Location: `${host}/lessons/${result}?token=${token}` })
+      res.writeHead(302, { Location: `${host}/lessons/${linkedLesson}?token=${token}` })
     }
   } else if (privileged) {
     // privileged, let them assign a lesson to the canvas assignment
-    if (err || !result) {
+    if (err || !linkedLesson) {
       res.writeHead(302, { Location: `${host}?token=${token}` })
     } else {
-      res.writeHead(302, { Location: `${host}/${alreadyLinkedPage}?token=${token}` })
+      res.writeHead(302, { Location: `${host}/${alreadyLinkedPage}?token=${token}&to=${linkedLesson}` })
     }
   } else {
     // invalid user type
@@ -202,13 +203,13 @@ app.post('/setLesson', jwtMiddleware({
     return
   }
 
-  let err, result;
-  [err, result] = await getLinkedLesson(user.resource_link_id);
+  let err, linkedLesson;
+  [err, linkedLesson] = await getLinkedLesson(user.resource_link_id);
 
-  if (!err && result) {
+  if (!err && linkedLesson) {
     res.status(400).send(`resource_already_linked|${JSON.stringify({
       from: user.resource_link_title,
-      to: result
+      to: linkedLesson
     })}`).end()
     return;
   }
@@ -329,9 +330,9 @@ app.post('/auth', async (req, res) => {
     res.send("Invalid lesson ID. Please contact your teacher or the OpenITS development team to fix this error.");
     res.end();
   } else {
-    let err, result;
-    [err, result] = await getLinkedLesson(resource_link_id);
-    if(err || !result){
+    let err, linkedLesson;
+    [err, linkedLesson] = await getLinkedLesson(resource_link_id);
+    if(err || !linkedLesson){
       [err] = await setLinkedLesson(resource_link_id, lessonNum);
       if(err){
         console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonName: ${lessonNum}`)
@@ -343,7 +344,7 @@ app.post('/auth', async (req, res) => {
 
     const token = getJWT(provider, consumer_secret, consumer_key, privileged)
 
-    res.writeHead(302, { Location: `${host}/lessons/${result}?token=${token}` })
+    res.writeHead(302, { Location: `${host}/lessons/${linkedLesson}?token=${token}` })
     res.end();
   }
 });
