@@ -9,6 +9,7 @@ import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
+import { chooseVariables } from "./variabilize";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -226,6 +227,9 @@ class Platform extends React.Component {
     } else {
       this.setState({ currProblem: chosenProblem, status: "learning" });
       console.log("Next problem: ", chosenProblem.id)
+      if (this.context.logData) {
+        this.context.firebase.startedProblem(chosenProblem.id, this.context.studentName, chosenProblem.courseName);
+      }
       return chosenProblem;
     }
   }

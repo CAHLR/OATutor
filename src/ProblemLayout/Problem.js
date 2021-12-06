@@ -215,7 +215,8 @@ class Problem extends React.Component {
       this.state.problemFinished,
       chooseVariables(this.props.problem.variabilization, this.props.seed),
       this.context.studentName,
-      this.state.problem.courseName
+      this.state.problem.courseName,
+      this.state.problem.steps
     );
     this.setState({ feedback: "", feedbackSubmitted: true });
   }

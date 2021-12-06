@@ -5,6 +5,7 @@ require("firebase/firestore");
 
 var problemSubmissionsOutputDev = "problemSubmissionsFall21Dev";
 var problemSubmissionsOutput = "problemSubmissionsFall21";
+const problemStartLogOutput = "problemStartLogsFall21";
 var feedbackOutput = "feedbackFall21";
 
 class Firebase {
@@ -144,7 +145,21 @@ class Firebase {
     return this.writeData("mouseMovement", date, data);
   }
 
-  submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName) {
+  startedProblem(problemID, canvasStudentID, courseName){
+    console.debug(`Logging that the problem has been started (${problemID})`)
+    const date = this._getDate();
+    const data = {
+      timeStamp: date,
+      siteVersion: this.siteVersion,
+      studentID: this.id,
+      problemID,
+      canvasStudentID,
+      Content: courseName
+    };
+    return this.writeData(problemStartLogOutput, date, data);
+  }
+
+  submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName, steps) {
     const date = this._getDate();
     const data = {
       timeStamp: date,
@@ -157,7 +172,13 @@ class Firebase {
       canvasStudentID: canvasStudentID || null,
       status: "open",
       Content: courseName,
-      variables
+      variables,
+      steps: steps.map(({answerType, id, stepAnswer, problemType}) => ({
+        answerType,
+        id,
+        stepAnswer,
+        problemType
+      }))
     };
     return this.writeData(feedbackOutput, date, data);
   }
