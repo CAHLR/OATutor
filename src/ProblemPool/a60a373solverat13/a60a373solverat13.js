@@ -1,0 +1,1 @@
+import steps from "./a60a373solverat13-index.js"; const problem = {id: "a60a373solverat13", title: "Solving a Rational Equation", body: "Solve for L in terms of A and W.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/8-6-solve-rational-equations", courseName: "Openstax: Elementary Algebra"}; export { problem };

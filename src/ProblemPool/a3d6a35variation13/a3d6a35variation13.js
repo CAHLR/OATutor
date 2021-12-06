@@ -1,0 +1,1 @@
+import steps from "./a3d6a35variation13-index.js"; const problem = {id: "a3d6a35variation13", title: "How to Solve Inverse Variation Problems", body: "Solve for the relating equation (Convert all fractions into decimals).", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

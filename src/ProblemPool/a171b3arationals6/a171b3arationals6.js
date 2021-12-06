@@ -1,0 +1,1 @@
+import steps from "./a171b3arationals6-index.js"; const problem = {id: "a171b3arationals6", title: "Simplify Rational Expressions", body: "Evaluate $$\\frac{2x+3}{3x-5}$$ for each value:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

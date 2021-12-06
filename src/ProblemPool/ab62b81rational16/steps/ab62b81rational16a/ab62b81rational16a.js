@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational16a-index.js"; const step = {id: "ab62b81rational16a", stepAnswer: ["$$8t$$"], problemType: "TextBox", stepTitle: "$$\\frac{8t^2}{t+4}+\\frac{32t}{t+4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
