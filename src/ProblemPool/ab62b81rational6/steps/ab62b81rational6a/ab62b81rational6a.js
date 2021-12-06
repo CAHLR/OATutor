@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational6a-index.js"; const step = {id: "ab62b81rational6a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{24}+\\frac{11}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
