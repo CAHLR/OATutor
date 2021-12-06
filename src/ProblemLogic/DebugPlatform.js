@@ -3,18 +3,17 @@ import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
-import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import {
   HashRouter as Router,
   NavLink
 } from "react-router-dom";
 
-import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
+import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
 
 let problemPool = require('../generated/poolFile.json')
 
-var seed = Date.now().toString();
+let seed = Date.now().toString();
 console.log("Generated seed");
 
 class DebugPlatform extends React.Component {
@@ -30,16 +29,16 @@ class DebugPlatform extends React.Component {
     this.lesson = null;
     //console.log(this.props.lessonNum);
 
-    var chosenProblem = null;
-    var problemIDs = [];
+    let chosenProblem = null;
+    const problemIDs = [];
     // Add each Q Matrix skill model attribute to each step
-    for (var problem of this.problemIndex.problems) {
+    for (const problem of this.problemIndex.problems) {
       problemIDs.push(problem.id)
       if (problem.id === this.props.problemID) {
         chosenProblem = problem;
       }
-      for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
-        var step = problem.steps[stepIndex];
+      for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
+        const step = problem.steps[stepIndex];
         step.knowledgeComponents = context.skillModel[step.id];
       }
     }
@@ -71,28 +70,27 @@ class DebugPlatform extends React.Component {
     this.lesson = null;
     //console.log(this.props.lessonNum);
 
-    var chosenProblem = null;
-    var problemIDs = [];
+    let chosenProblem = null;
+    const problemIDs = [];
     // Add each Q Matrix skill model attribute to each step
-    for (var problem of this.problemIndex.problems) {
+    for (const problem of this.problemIndex.problems) {
       problemIDs.push(problem.id)
       if (problem.id === this.props.problemID) {
         chosenProblem = problem;
       }
-      for (var stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
-        var step = problem.steps[stepIndex];
+      for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
+        const step = problem.steps[stepIndex];
         step.knowledgeComponents = context.skillModel[step.id];
       }
     }
     context.problemIDs = problemIDs.sort(this.__compareProblemID);
     console.log(context.problemIDs)
 
-
-    this.state = {
+    this.setState({
       currProblem: chosenProblem,
       status: "learning",
       seed: seed
-    }
+    })
   }
 
   __compareProblemID = (a, b) => {

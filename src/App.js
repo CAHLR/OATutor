@@ -43,15 +43,6 @@ import SessionExpired from "./pages/SessionExpired";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 try {
-  const _config = require('./config/credentials-secret').default
-  if (typeof _config === 'object') {
-    Object.assign(config, _config)
-  }
-} catch (e) {
-  // ignore
-}
-
-try {
   let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
   if (_rawEnvConfig.indexOf(":") !== -1) {
     // is probably in the format of "Secret value:eyJhcG........"
