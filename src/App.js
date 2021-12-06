@@ -40,6 +40,7 @@ import parseJwt from "./util/parseJWT";
 import AssignmentNotLinked from "./pages/AssignmentNotLinked";
 import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
 import SessionExpired from "./pages/SessionExpired";
+import Posts from "./pages/Posts/Posts";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 try {
@@ -246,6 +247,9 @@ class App extends React.Component {
                                                    loadProgress={this.loadProgress}
                                                    removeProgress={this.removeProgress}
                                                    problemID={props.match.params.problemID} {...props} />
+                                )}/>
+                                <Route path="/posts" render={(props) => (
+                                    <Posts key={Date.now()} {...props} />
                                 )}/>
                                 <Route exact path="/assignment-not-linked" render={(props) => (
                                     <AssignmentNotLinked key={Date.now()} {...props} />
