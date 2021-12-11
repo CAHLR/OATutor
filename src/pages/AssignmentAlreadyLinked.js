@@ -48,8 +48,7 @@ const AssignmentAlreadyLinked = (props) => {
               {linkedLesson
               && <>
                 <p>Course Name: {linkedLesson.courseName}</p>
-                <p>Name: {linkedLesson.name}</p>
-                <p>Topics: {linkedLesson.topics}</p>
+                <p>Lesson Name: {linkedLesson.name} {linkedLesson.topics}</p>
               </>
               }
               <br/>
