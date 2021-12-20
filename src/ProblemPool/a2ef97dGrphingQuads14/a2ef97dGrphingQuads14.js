@@ -1,0 +1,1 @@
+import steps from "./a2ef97dGrphingQuads14-index.js"; const problem = {id: "a2ef97dGrphingQuads14", title: "Recognize the Graph of a Quadratic Equation in Two Variables", body: "Graph the following function.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

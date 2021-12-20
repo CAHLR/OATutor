@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums4c-index.js"; const step = {id: "a4b9bbfrationalnums4c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$${256}^{\\frac{1}{4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

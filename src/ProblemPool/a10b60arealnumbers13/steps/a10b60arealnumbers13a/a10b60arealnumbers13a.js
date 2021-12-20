@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers13a-index.js"; const step = {id: "a10b60arealnumbers13a", stepAnswer: ["$$2\\sqrt{3, 4x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, 4x}+\\sqrt{3, 4x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

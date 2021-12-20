@@ -1,0 +1,1 @@
+import hints from "./aaff50dradical31a-index.js"; const step = {id: "aaff50dradical31a", stepAnswer: ["$$q^2 \\sqrt{q}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{q^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

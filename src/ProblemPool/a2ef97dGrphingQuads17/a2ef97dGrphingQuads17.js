@@ -1,0 +1,1 @@
+import steps from "./a2ef97dGrphingQuads17-index.js"; const problem = {id: "a2ef97dGrphingQuads17", title: "Find the Intercepts of a Parabola", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };
