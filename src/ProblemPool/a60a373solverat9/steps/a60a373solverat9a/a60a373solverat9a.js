@@ -1,0 +1,1 @@
+import hints from "./a60a373solverat9a-index.js"; const step = {id: "a60a373solverat9a", stepAnswer: ["$$y=-5$$"], problemType: "TextBox", stepTitle: "$$\\frac{y-14}{y^2+3y-4}=\\frac{2}{y+4}+\\frac{7}{y-1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

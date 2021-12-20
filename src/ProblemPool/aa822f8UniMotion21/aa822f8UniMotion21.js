@@ -1,0 +1,1 @@
+import steps from "./aa822f8UniMotion21-index.js"; const problem = {id: "aa822f8UniMotion21", title: "Victoria's Jog", body: "Solve the following problem", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications", courseName: "Openstax: Elementary Algebra"}; export { problem };

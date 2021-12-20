@@ -1,0 +1,1 @@
+import steps from "./aa822f8UniMotion20-index.js"; const problem = {id: "aa822f8UniMotion20", title: "Kayla's Bike", body: "Solve the following problem.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications", courseName: "Openstax: Elementary Algebra"}; export { problem };
