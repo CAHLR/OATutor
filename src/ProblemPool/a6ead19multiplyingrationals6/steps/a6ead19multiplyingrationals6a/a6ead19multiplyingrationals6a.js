@@ -1,0 +1,1 @@
+import hints from "./a6ead19multiplyingrationals6a-index.js"; const step = {id: "a6ead19multiplyingrationals6a", stepAnswer: ["(x-4)/(2(x+3))"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{5x}{x^2+5x+6}$$ * $$\\frac{x^2-4}{10x}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

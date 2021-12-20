@@ -1,0 +1,1 @@
+import steps from "./a3d6a35variation18-index.js"; const problem = {id: "a3d6a35variation18", title: "Solving Relating Equations", body: "Find the equation that relates x and y.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

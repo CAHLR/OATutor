@@ -14,6 +14,8 @@ import TextField from '@material-ui/core/TextField';
 import {
     NavLink
 } from "react-router-dom";
+import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
+import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
 import { ThemeContext } from '../config/config.js';
 import { toast } from "react-toastify";
@@ -303,11 +305,19 @@ class Problem extends React.Component {
                             </div>
                             : ""}
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row-reverse", flexGrow: 1, marginRight: 20 }}>
-                        <IconButton aria-label="report" onClick={this.toggleFeedback}>
-                            <img src={`${process.env.PUBLIC_URL}/static/images/icons/report_problem.png`}
-                                 title="Report problem"
-                                 alt="report" width="32px"/>
+                    <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
+                        <IconButton aria-label="help" title={"How to use OpenITS?"}
+                                    href={"https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub"}
+                                    target={"_blank"} rel={"noreferrer"}>
+                            <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
+                                fontSize: 36,
+                                margin: -2
+                            }}/>
+                        </IconButton>
+                        <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
+                            <FeedbackOutlinedIcon htmlColor={"#000"} style={{
+                                fontSize: 32
+                            }}/>
                         </IconButton>
                     </div>
 
