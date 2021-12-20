@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots20a-index.js"; const step = {id: "a443311sqroots20a", stepAnswer: ["$$\\frac{4}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{80}}{\\sqrt{125}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

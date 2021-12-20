@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums14a-index.js"; const step = {id: "a4b9bbfrationalnums14a", stepAnswer: ["$$m n^3$$"], problemType: "TextBox", stepTitle: "$${\\left(m^3 n^9\\right)}^{\\frac{1}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

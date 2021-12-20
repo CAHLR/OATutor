@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers11a-index.js"; const step = {id: "a10b60arealnumbers11a", stepAnswer: ["$$-3\\sqrt{3, 2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{3, -108}}{\\sqrt{3, 2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

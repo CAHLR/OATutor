@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers17a-index.js"; const step = {id: "a10b60arealnumbers17a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, 27}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
