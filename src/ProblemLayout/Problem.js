@@ -306,7 +306,7 @@ class Problem extends React.Component {
                             : ""}
                     </div>
                     <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                        <IconButton aria-label="help" title={"Get Help"}
+                        <IconButton aria-label="help" title={"How to use OpenITS?"}
                                     href={"https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub"}
                                     target={"_blank"} rel={"noreferrer"}>
                             <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
