@@ -3,12 +3,13 @@ import { AppBar, Toolbar } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-import { ThemeContext, lessonPlans, coursePlans } from '../config/config.js';
+import { ThemeContext, lessonPlans, coursePlans, DO_LOG_DATA, MIDDLEWARE_URL } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
+import BrandLogoNav from "../Components/_General/BrandLogoNav";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -78,7 +79,7 @@ class Platform extends React.Component {
         if (this.isPrivileged && updateServer) {
             // from canvas or other LTI Consumers
             let err, response;
-            [err, response] = await to(fetch(this.context.middlewareURL + '/setLesson', {
+            [err, response] = await to(fetch(`${MIDDLEWARE_URL}/setLesson`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -226,7 +227,7 @@ class Platform extends React.Component {
         } else {
             this.setState({ currProblem: chosenProblem, status: "learning" });
             console.log("Next problem: ", chosenProblem.id)
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.context.firebase.startedProblem(chosenProblem.id, this.context.studentName, chosenProblem.courseName);
             }
             return chosenProblem;
@@ -250,17 +251,9 @@ class Platform extends React.Component {
             <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Grid container spacing={0}>
+                        <Grid container spacing={0} role={"navigation"}>
                             <Grid item xs={3} key={1}>
-                                {this.context.jwt.length !== 0 && !this.isPrivileged // launched from lms
-                                    ? <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS
-                                        (v{this.context.siteVersion})</div>
-                                    : <Link to={"/"} style={{ color: 'unset', textDecoration: 'unset' }}>
-                                        <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS
-                                            (v{this.context.siteVersion})
-                                        </div>
-                                    </Link>
-                                }
+                                <BrandLogoNav isPrivileged={this.isPrivileged}/>
                             </Grid>
                             <Grid item xs={6} key={2}>
                                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
@@ -280,9 +273,11 @@ class Platform extends React.Component {
                 </AppBar>
                 {this.state.status === "courseSelection" ?
                     <LessonSelection selectLesson={this.selectLesson} selectCourse={this.selectCourse}
+                                     history={this.props.history}
                                      removeProgress={this.props.removeProgress}/> : ""}
                 {this.state.status === "lessonSelection" ?
                     <LessonSelection selectLesson={this.selectLesson} removeProgress={this.props.removeProgress}
+                                     history={this.props.history}
                                      courseNum={this.props.courseNum}/> : ""}
                 {this.state.status === "learning" ?
                     <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}

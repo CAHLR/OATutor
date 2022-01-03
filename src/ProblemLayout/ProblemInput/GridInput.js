@@ -6,6 +6,7 @@ import EquationEditor from "equation-editor-react";
 import { Box, ClickAwayListener, Grow, Paper, Popper, TextField } from "@material-ui/core";
 import CloseIcon from '@material-ui/icons/Close';
 import { toast } from "react-toastify";
+import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
 
 class GridInput extends React.Component {
     constructor(props) {
@@ -206,8 +207,8 @@ class GridInput extends React.Component {
                                                         value={val}
                                                         onChange={(str) => this.cellFieldChange(str, idx, jdx)}
                                                         style={{ width: "100%" }}
-                                                        autoCommands={this.props.context.autoCommands}
-                                                        autoOperatorNames={this.props.context.autoOperatorNames}
+                                                        autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
+                                                        autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
                                                     />
                                                 </center>
                                             )

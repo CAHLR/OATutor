@@ -16,14 +16,8 @@ import Notfound from "./notfound.js";
 
 import {
     ThemeContext,
-    siteVersion,
-    logData,
     cookieID,
-    debug,
-    useBottomOutHints,
-    autoCommands,
-    autoOperatorNames,
-    middlewareURL, PROGRESS_STORAGE_KEY,
+    PROGRESS_STORAGE_KEY, SITE_VERSION, DO_LOG_DATA,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
@@ -136,8 +130,8 @@ class App extends React.Component {
 
         // Firebase creation
         this.firebase = null;
-        if (logData) { //logData
-            this.firebase = new Firebase(this.userID, config, this.getTreatment(), siteVersion);
+        if (DO_LOG_DATA) {
+            this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION);
         }
     }
 
@@ -200,22 +194,16 @@ class App extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <ThemeContext.Provider value={{
-                    siteVersion,
                     userID: this.userID,
                     firebase: this.firebase,
-                    logData,
                     getTreatment: this.getTreatment,
                     bktParams: this.bktParams,
                     heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
                     hintPathway: this.getTreatment() === 0 ? "DefaultPathway" : "DefaultPathway",
                     skillModel,
                     credentials: config,
-                    debug,
-                    useBottomOutHints,
-                    autoCommands,
-                    autoOperatorNames,
+                    debug: false,
                     studentName: '',
-                    middlewareURL,
                     alreadyLinkedLesson: "",
                     jwt: '',
                     user: {},

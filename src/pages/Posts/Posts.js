@@ -1,9 +1,9 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "../../config/config";
+import React, { useState } from "react";
 import { AppBar, Box, Button, Menu, MenuItem, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import SetUpCanvasIntegration from "./SetUpCanvasIntegration";
+import BrandLogoNav from "../../Components/_General/BrandLogoNav";
 
 const POSTS = [
     {
@@ -25,16 +25,13 @@ const Posts = () => {
         setAnchorEl(null);
     };
 
-    const context = useContext(ThemeContext)
-
     return <>
         <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 50 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Grid container justifyContent={"space-between"} spacing={0}>
+                    <Grid container justifyContent={"space-between"} spacing={0} role={"navigation"}>
                         <Grid item xs={3} key={1}>
-                            <div style={{ textAlign: 'left', paddingTop: "3px" }}>Open ITS (v{context.siteVersion})
-                            </div>
+                            <BrandLogoNav noLink={true}/>
                         </Grid>
                         <Grid item xs={3} key={3}>
                             <div style={{ textAlign: 'right', paddingTop: "3px" }}>
@@ -86,7 +83,8 @@ const Posts = () => {
                                 <h3>Click the top right corner to select a post.</h3>
                             </Route>
                             {
-                                POSTS.map(post => <Route key={post.paths[0]} path={post.paths.map(_path => `${path}/${_path}`)}>
+                                POSTS.map(post => <Route key={post.paths[0]}
+                                                         path={post.paths.map(_path => `${path}/${_path}`)}>
                                     {post.component()}
                                 </Route>)
                             }

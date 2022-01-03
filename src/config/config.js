@@ -2,11 +2,27 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const siteVersion = "1.2.9";
-const logData = true;
-const logMouseData = false;
-const debug = false;
-const useBottomOutHints = true;
+const SITE_VERSION = "1.2.9";
+
+const SITE_NAME = "Open ITS"
+
+/**
+ * Indicates whether the site should use Firebase to store, process, and analyze general user interactions
+ * @type {boolean}
+ */
+const DO_LOG_DATA = true;
+/**
+ * If DO_LOG_DATA is enabled, indicates whether the site should also track user mouse interactions with the site. See
+ * the README.md to properly enable this feature.
+ * @type {boolean}
+ */
+const DO_LOG_MOUSE_DATA = false;
+
+/**
+ * TODO: document the usage of this boolean option
+ * @type {boolean}
+ */
+const ENABLE_BOTTOM_OUT_HINTS = true;
 
 // DynamicText not supported for HTML body types
 const dynamicText = {
@@ -20,10 +36,10 @@ const PROGRESS_STORAGE_KEY = 'openITS-progress'
 const MAX_BUFFER_SIZE = 100;
 const GRANULARITY = 5;
 
-const autoCommands = "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
-const autoOperatorNames = "sin cos tan";
+const EQUATION_EDITOR_AUTO_COMMANDS = "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
+const EQUATION_EDITOR_AUTO_OPERATORS = "sin cos tan";
 
-const middlewareURL = process.env.REACT_APP_MIDDLEWARE_URL || "https://oatutor.askoski.berkeley.edu";
+const MIDDLEWARE_URL = process.env.REACT_APP_MIDDLEWARE_URL || "https://oatutor.askoski.berkeley.edu";
 
 const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 
@@ -40,19 +56,19 @@ for (let i = 0; i < coursePlans.length; i++) {
 
 export {
     ThemeContext,
-    siteVersion,
-    logData,
-    logMouseData,
+    SITE_VERSION,
+    DO_LOG_DATA,
+    DO_LOG_MOUSE_DATA,
     dynamicText,
     cookieID,
-    debug,
-    useBottomOutHints,
+    ENABLE_BOTTOM_OUT_HINTS,
     lessonPlans,
     coursePlans,
     MAX_BUFFER_SIZE,
     GRANULARITY,
-    autoCommands,
-    autoOperatorNames,
-    middlewareURL,
-    PROGRESS_STORAGE_KEY
+    EQUATION_EDITOR_AUTO_COMMANDS,
+    EQUATION_EDITOR_AUTO_OPERATORS,
+    MIDDLEWARE_URL,
+    PROGRESS_STORAGE_KEY,
+    SITE_NAME
 };
