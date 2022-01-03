@@ -4,6 +4,7 @@ import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import Spacer from "../Components/_General/Spacer";
 
 const AssignmentAlreadyLinked = (props) => {
     const context = useContext(ThemeContext)
@@ -45,17 +46,14 @@ const AssignmentAlreadyLinked = (props) => {
                         </center>
                         <Divider/>
                         <center>
-                            <br/>
+                            <Spacer/>
                             {linkedLesson
                                 && <>
                                     <p>Course Name: {linkedLesson.courseName}</p>
                                     <p>Lesson Name: {linkedLesson.name} {linkedLesson.topics}</p>
                                 </>
                             }
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <Spacer height={24 * 4}/>
                         </center>
                     </Box>
                 </Grid>

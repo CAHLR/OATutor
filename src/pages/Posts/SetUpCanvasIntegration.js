@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
+import Spacer from "../../Components/_General/Spacer";
 
 const useStyles = makeStyles({
     button: {
@@ -99,12 +100,7 @@ const SetUpCanvasIntegration = () => {
         </div>
 
         Click "Submit" and you will be able to start using OATutor as an external tool.
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <Spacer height={24 * 6}/>
     </>
 }
 

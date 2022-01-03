@@ -3,7 +3,6 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import { renderText } from '../../ProblemLogic/renderText.js';
 
 class MultipleChoice extends React.Component {
@@ -24,8 +23,8 @@ class MultipleChoice extends React.Component {
 
         const choices = []
         if (Array.isArray(_choices)) {
-            _choices.forEach(choice => {
-                if (choice.includes("above")) {
+            [...new Set(_choices)].forEach(choice => {
+                if (choice.includes(" above")) {
                     choices.push(choice);
                 } else {
                     choices.unshift(choice);
@@ -35,8 +34,7 @@ class MultipleChoice extends React.Component {
 
         return (
             <div style={{ marginRight: "5%", textAlign: "center" }}>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend"/>
+                <FormControl>
                     <RadioGroup value={this.state.value} onChange={this.handleChange}>
                         {choices.length > 0 ? choices.map((choice, i) =>
                             <FormControlLabel value={choice} control={<Radio/>} label={renderText(choice)}

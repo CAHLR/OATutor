@@ -7,6 +7,7 @@ import { Box, ClickAwayListener, Grow, Paper, Popper, TextField } from "@materia
 import CloseIcon from '@material-ui/icons/Close';
 import { toast } from "react-toastify";
 import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
+import generateRandomInt from "../../util/generateRandomInt";
 
 class GridInput extends React.Component {
     constructor(props) {
@@ -21,6 +22,9 @@ class GridInput extends React.Component {
         this.gridRef = createRef()
 
         this.changeDimRef = createRef()
+
+        this.rowId = `matrix-row-count-${generateRandomInt()}`
+        this.colId = `matrix-col-count-${generateRandomInt()}`
 
         this.clearCells = this.clearCells.bind(this)
     }
@@ -100,16 +104,27 @@ class GridInput extends React.Component {
                     <form onSubmit={this.clearCells}>
                         <Box className={'grid-input-notice-container'} p={2} bgcolor={'rgb(249,249,250)'}
                              borderRadius={8}>
-                            <h3>Enter in matrix dimensions.</h3>
+                            <div style={{
+                                fontWeight: 700,
+                                fontSize: 18
+                            }}>Enter in matrix dimensions.</div>
                             <p>(This can be changed later)</p>
                             <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                                 <TextField
+                                    id={this.rowId}
+                                    inputProps={{
+                                        "aria-labelledby": `${this.rowId}-label`
+                                    }}
                                     variant={"outlined"} label={'# Rows'} type={'number'}
                                     className={'grid-input-dim-input'}
                                     onChange={(evt) => this.dimensionFieldChange(evt, 0)}
                                 />
                                 <CloseIcon/>
                                 <TextField
+                                    id={this.colId}
+                                    inputProps={{
+                                        "aria-labelledby": `${this.colId}-label`
+                                    }}
                                     variant={"outlined"} label={'# Cols'} type={'number'}
                                     className={'grid-input-dim-input'}
                                     onChange={(evt) => this.dimensionFieldChange(evt, 1)}
@@ -201,7 +216,7 @@ class GridInput extends React.Component {
                                                 <center
                                                     className={clsx(classes.textBoxLatex, 'grid-cell')}
                                                     key={`cell-${idx}-${jdx}`}
-                                                    title={`Cell (${idx}, ${jdx})`}
+                                                    aria-label={`Cell (${idx}, ${jdx})`}
                                                 >
                                                     <EquationEditor
                                                         value={val}

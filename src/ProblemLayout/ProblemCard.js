@@ -16,6 +16,8 @@ import { DO_LOG_DATA, ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/co
 
 import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
+import Spacer from "../Components/_General/Spacer";
+import { toast } from "react-toastify";
 
 
 class ProblemCard extends React.Component {
@@ -96,6 +98,16 @@ class ProblemCard extends React.Component {
             } catch {
                 console.log("Unable to log to Firebase.");
             }
+        }
+
+        if(correctAnswer){
+            toast.success("Correct Answer!", {
+                autoClose: 3000
+            })
+        }else{
+            toast.error("Incorrect Answer!", {
+                autoClose: 3000
+            })
         }
 
         this.setState({
@@ -188,7 +200,7 @@ class ProblemCard extends React.Component {
                                 seed={this.props.seed}
                                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
                             />
-                            <br/>
+                            <Spacer/>
                         </div>
                     )}
 
@@ -212,9 +224,8 @@ class ProblemCard extends React.Component {
                         <Grid item xs={false} sm={false} md={4}/>
                         <Grid item xs={4} sm={4} md={1}>
                             <center>
-                                <IconButton aria-label="delete" onClick={this.toggleHints}>
+                                <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints">
                                     <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                         title="View available hints"
                                          alt="hintToggle"/>
                                 </IconButton>
                             </center>

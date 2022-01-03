@@ -3,6 +3,7 @@ import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import Spacer from "../Components/_General/Spacer";
 
 const AssignmentNotLinked = () => {
     return <>
@@ -31,11 +32,9 @@ const AssignmentNotLinked = () => {
                         </center>
                         <Divider/>
                         <center>
-                            <br/>
+                            <Spacer/>
                             <p>Please check back later.</p>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <Spacer height={24 * 3}/>
                         </center>
                     </Box>
                 </Grid>
