@@ -17,7 +17,7 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { ThemeContext } from '../config/config.js';
+import { MIDDLEWARE_URL, ThemeContext } from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
@@ -69,7 +69,7 @@ class Problem extends React.Component {
     updateCanvas = async (mastery, components) => {
         if (this.context.jwt) {
             let err, response;
-            [err, response] = await to(fetch(this.context.middlewareURL + '/postScore', {
+            [err, response] = await to(fetch(`${MIDDLEWARE_URL}/postScore`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

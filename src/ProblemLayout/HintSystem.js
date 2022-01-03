@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
+import { DO_LOG_DATA } from "../config/config";
 
 class HintSystem extends React.Component {
     constructor(props) {
@@ -54,7 +55,7 @@ class HintSystem extends React.Component {
                 showSubHints: displayHints
             })
         }, () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.props.answerMade(this.index, this.step.knowledgeComponents, false);
             }
         });
@@ -65,7 +66,7 @@ class HintSystem extends React.Component {
             prevState.subHintsFinished[i][hintNum] = (!isScaffold ? 1 : 0.5);
             return { subHintsFinished: prevState.subHintsFinished }
         }, () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", chooseVariables(this.props.stepVars, this.props.seed), this.context.studentName);
             }
         });
@@ -78,7 +79,7 @@ class HintSystem extends React.Component {
                 return { subHintsFinished: prevState.subHintsFinished }
             });
         }
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed), this.context.studentName);
         }
     }

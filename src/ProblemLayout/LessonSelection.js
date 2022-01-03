@@ -74,17 +74,19 @@ class LessonSelection extends React.Component {
                                                         marginTop: "5px",
                                                         marginBottom: "10px"
                                                     }}>{course.courseName}</h2>
-                                                    <NavLink activeClassName="active" className="link"
-                                                             to={"/courses/" + i} type="menu">
-                                                        <IconButton aria-label="delete"
-                                                                    onClick={() => this.props.selectCourse(course)}>
-                                                            <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
-                                                                width="64px"
-                                                                title="View course"
-                                                                alt="folderIcon"/>
-                                                        </IconButton>
-                                                    </NavLink>
+                                                    <IconButton aria-label={`Course ${i}`}
+                                                                aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
+                                                                role={"link"}
+                                                                onClick={() => {
+                                                                    this.props.history.push(`/courses/${i}`)
+                                                                    this.props.selectCourse(course)
+                                                                }}>
+                                                        <img
+                                                            src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
+                                                            width="64px"
+                                                            title="View course"
+                                                            alt="folderIcon"/>
+                                                    </IconButton>
                                                 </Paper>
                                             </center>
                                         </Grid>
@@ -150,7 +152,10 @@ class LessonSelection extends React.Component {
                                                         <Button variant="contained" color="primary"
                                                                 className={classes.button}
                                                                 style={{ marginBottom: "10px" }}
-                                                                onClick={() => this.props.selectLesson(lesson)}>
+                                                                onClick={() => {
+                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                    this.props.selectLesson(lesson)
+                                                                }}>
                                                             Select
                                                         </Button>
                                                     </NavLink>

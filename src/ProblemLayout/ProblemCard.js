@@ -12,7 +12,7 @@ import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
-import { ThemeContext } from '../config/config.js';
+import { DO_LOG_DATA, ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/config.js';
 
 import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
@@ -39,7 +39,7 @@ class ProblemCard extends React.Component {
         }
 
         // Bottom out hints option
-        if (context.useBottomOutHints) {
+        if (ENABLE_BOTTOM_OUT_HINTS) {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length),
@@ -90,7 +90,7 @@ class ProblemCard extends React.Component {
         console.debug('submitting problem')
         const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             try {
                 this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
             } catch {
@@ -123,7 +123,7 @@ class ProblemCard extends React.Component {
         this.setState(prevState => ({
             showHints: !prevState.showHints
         }), () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.props.answerMade(this.index, this.step.knowledgeComponents, false);
             }
         });
@@ -142,7 +142,7 @@ class ProblemCard extends React.Component {
                 prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
                 return { hintsFinished: prevState.hintsFinished }
             }, () => {
-                if (this.context.logData) {
+                if (DO_LOG_DATA) {
                     this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
                 }
             });
@@ -157,7 +157,7 @@ class ProblemCard extends React.Component {
                 return { hintsFinished: prevState.hintsFinished }
             });
         }
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
         }
     }

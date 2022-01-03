@@ -9,6 +9,7 @@ import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
 import { shuffleArray } from "../../util/shuffleArray";
+import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
 
 class ProblemInput extends React.Component {
     constructor(props) {
@@ -74,8 +75,8 @@ class ProblemInput extends React.Component {
                                 value={state.inputVal}
                                 onChange={this.onEquationChange}
                                 style={{ width: "100%" }}
-                                autoCommands={this.props.context.autoCommands}
-                                autoOperatorNames={this.props.context.autoOperatorNames}
+                                autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
+                                autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
                             />
                         </center>
                     )}

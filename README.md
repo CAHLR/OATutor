@@ -186,7 +186,7 @@ website for more info on this syntax.
 
 ```javascript
 <ReactCursorPosition onPositionChanged={(data) => {
-  if (logMouseData) {
+  if (DO_LOG_MOUSE_DATA) {
     this.firebase.mouseLog(data);
   }
 }}>
