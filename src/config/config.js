@@ -2,7 +2,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.2.10";
+const SITE_VERSION = "1.2.11";
 
 const SITE_NAME = "Open ITS"
 
@@ -28,9 +28,11 @@ const ENABLE_BOTTOM_OUT_HINTS = true;
 const dynamicText = {
     "%CAR%": "Tesla car"
 };
-const cookieID = "openITS-id";
 
-const PROGRESS_STORAGE_KEY = 'openITS-progress'
+const _SHORT_SITE_NAME = SITE_NAME.toLowerCase().replace(/[^a-z]/g, '').substr(0, 16)
+
+const USER_ID_STORAGE_KEY = `${_SHORT_SITE_NAME}-user_id`
+const PROGRESS_STORAGE_KEY = `${_SHORT_SITE_NAME}-progress`
 
 // Firebase Config
 const MAX_BUFFER_SIZE = 100;
@@ -60,7 +62,6 @@ export {
     DO_LOG_DATA,
     DO_LOG_MOUSE_DATA,
     dynamicText,
-    cookieID,
     ENABLE_BOTTOM_OUT_HINTS,
     lessonPlans,
     coursePlans,
@@ -69,6 +70,7 @@ export {
     EQUATION_EDITOR_AUTO_COMMANDS,
     EQUATION_EDITOR_AUTO_OPERATORS,
     MIDDLEWARE_URL,
+    USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME
 };

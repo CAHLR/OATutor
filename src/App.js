@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Cookies from 'universal-cookie';
 import Platform from './ProblemLogic/Platform.js';
 import DebugPlatform from './ProblemLogic/DebugPlatform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
@@ -16,8 +15,10 @@ import Notfound from "./notfound.js";
 
 import {
     ThemeContext,
-    cookieID,
-    PROGRESS_STORAGE_KEY, SITE_VERSION, DO_LOG_DATA,
+    PROGRESS_STORAGE_KEY,
+    SITE_VERSION,
+    DO_LOG_DATA,
+    USER_ID_STORAGE_KEY,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
@@ -35,33 +36,14 @@ import AssignmentNotLinked from "./pages/AssignmentNotLinked";
 import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
 import SessionExpired from "./pages/SessionExpired";
 import Posts from "./pages/Posts/Posts";
+import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
+import generateRandomInt from "./util/generateRandomInt";
 // ### END CUSTOMIZABLE IMPORTS ###
 
-try {
-    let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
-    if (_rawEnvConfig.indexOf(":") !== -1) {
-        // is probably in the format of "Secret value:eyJhcG........"
-        _rawEnvConfig = _rawEnvConfig.substr(_rawEnvConfig.lastIndexOf(":") + 1).trim();
-    }
-    const _envConfig = JSON.parse(atob(_rawEnvConfig))
-    if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
-        console.debug("Found env config: ", _envConfig, typeof _envConfig)
-    }
-    if (typeof _envConfig === 'object') {
-        Object.assign(config, _envConfig)
-    }
-} catch (e) {
-    // ignore
-}
-
-if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
-    console.debug("Final Firebase Config: ", config)
-}
+loadFirebaseEnvConfig(config)
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
-
-const cookies = new Cookies();
 
 const queryParamToContext = {
     "token": "jwt",
@@ -73,13 +55,12 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         // UserID creation/loading
-        if (!cookies.get(cookieID)) {
-            let d = new Date();
-            d.setTime(d.getTime() + (3 * 365 * 24 * 60 * 60 * 1000)); // 3 years in the future
-            const id = Math.floor(Math.random() * 2 ** 16);
-            cookies.set(cookieID, id, { path: "/", expires: d });
+        let userId = localStorage.getItem(USER_ID_STORAGE_KEY)
+        if (!userId) {
+            userId = generateRandomInt();
+            localStorage.setItem(USER_ID_STORAGE_KEY, userId.toString());
         }
-        this.userID = cookies.get(cookieID);
+        this.userID = userId;
         this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2;
 
         this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatment() === 0 ? bktParams1 : bktParams2))

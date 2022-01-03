@@ -9,6 +9,7 @@ import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
 import { DO_LOG_DATA } from "../config/config";
+import Spacer from "../Components/_General/Spacer";
 
 class HintSystem extends React.Component {
     constructor(props) {
@@ -106,14 +107,17 @@ class HintSystem extends React.Component {
                                 <Typography component={'span'} style={{ width: "100%" }}>
                                     {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
                                     {hint.type === "scaffold" ?
-                                        <div><br/><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
-                                                               seed={this.props.seed}
-                                                               hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                                                               toggleHints={(event) => this.toggleSubHints(event, i)}/>
+                                        <div>
+                                            <Spacer/>
+                                            <HintTextbox hintNum={i} hint={hint}
+                                                         submitHint={this.props.submitHint}
+                                                         seed={this.props.seed}
+                                                         hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
+                                                         toggleHints={(event) => this.toggleSubHints(event, i)}/>
                                         </div> : ""}
                                     {this.state.showSubHints[i] && hint.subHints !== undefined ?
                                         <div className="SubHints">
-                                            <br/>
+                                            <Spacer/>
                                             <SubHintSystem
                                                 problemID={this.props.problemID}
                                                 hints={hint.subHints}
@@ -124,7 +128,8 @@ class HintSystem extends React.Component {
                                                 seed={this.props.seed}
                                                 hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                                             />
-                                            <br/></div>
+                                            <Spacer/>
+                                        </div>
                                         : ""}
                                 </Typography>
                             </AccordionDetails>

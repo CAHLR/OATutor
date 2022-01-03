@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { chooseVariables } from '../ProblemLogic/renderText.js';
 import { ThemeContext } from '../config/config.js';
 import ProblemInput from "./ProblemInput/ProblemInput";
+import { toast } from "react-toastify";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -34,6 +35,16 @@ class HintTextbox extends React.Component {
         const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, chooseVariables(this.props.hintVars, this.props.seed));
         this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
+        if(correctAnswer){
+            toast.success("Correct Answer!", {
+                autoClose: 3000
+            })
+        }else{
+            toast.error("Incorrect Answer!", {
+                autoClose: 3000
+            })
+        }
+
         this.setState({
             isCorrect: correctAnswer,
             checkMarkOpacity: correctAnswer === true ? '100' : '0'
@@ -46,7 +57,7 @@ class HintTextbox extends React.Component {
 
     setInputValState = (inputVal) => {
         // console.debug("new inputVal state: ", inputVal)
-        this.setState({ inputVal })
+        this.setState(({ isCorrect }) => ({ inputVal, isCorrect: isCorrect ? true : null }))
     }
 
     render() {
@@ -70,12 +81,12 @@ class HintTextbox extends React.Component {
                     <Grid item xs={4} sm={4} md={1}>
                         {this.props.type !== "subHintTextbox" ?
                             <center>
-                                <IconButton aria-label="delete" onClick={this.props.toggleHints}>
+                                <IconButton aria-label="delete" onClick={this.props.toggleHints}
+                                            title="View available hints">
                                     <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                         title="View available hints"
                                          alt="hintToggle"/>
                                 </IconButton>
-                            </center> : <img src={'/static/images/icons/raise_hand.png'} title="View available hints"
+                            </center> : <img src={'/static/images/icons/raise_hand.png'}
                                              alt="hintToggle"
                                              style={{ visibility: "hidden" }}/>}
                     </Grid>

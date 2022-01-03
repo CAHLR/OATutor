@@ -3,6 +3,7 @@ import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import Spacer from "../Components/_General/Spacer";
 
 const SessionExpired = () => {
 
@@ -32,13 +33,11 @@ const SessionExpired = () => {
                         </center>
                         <Divider/>
                         <center>
-                            <br/>
+                            <Spacer/>
                             <p>If you are a student, please reload the page or open the page from your LMS again.</p>
-                            <br/>
+                            <Spacer/>
                             <p>If you are an instructor, please reload the page or create a new assignment.</p>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <Spacer height={24 * 3}/>
                         </center>
                     </Box>
                 </Grid>

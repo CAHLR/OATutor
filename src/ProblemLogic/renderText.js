@@ -2,6 +2,7 @@ import React from 'react';
 import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js';
 import { variabilize, chooseVariables } from './variabilize.js';
+import Spacer from "../Components/_General/Spacer";
 
 function renderText(text, problemID, variabilization) {
     if (typeof text !== 'string') {
@@ -38,7 +39,7 @@ function renderText(text, problemID, variabilization) {
             }
         })
         if (j !== splitted.length - 1) {
-            lineSplitted.push(<br/>);
+            lineSplitted.push(<Spacer/>);
         }
         return lineSplitted;
     })

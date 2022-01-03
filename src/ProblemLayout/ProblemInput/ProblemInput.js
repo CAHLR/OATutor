@@ -25,6 +25,11 @@ class ProblemInput extends React.Component {
         if (this.isMatrixInput()) {
             console.log('automatically determined matrix input to be the correct problem type')
         }
+
+        const mqDisplayArea = this.equationRef?.current?.querySelector(".mq-editable-field > .mq-root-block")
+        if (mqDisplayArea != null) {
+            mqDisplayArea.ariaHidden = true
+        }
     }
 
     isMatrixInput() {
@@ -41,6 +46,14 @@ class ProblemInput extends React.Component {
     onEquationChange(eq) {
         const containerEl = this.equationRef?.current
         const eqContentEl = this.equationRef?.current?.querySelector(".mq-editable-field")
+
+        const textareaEl = this.equationRef?.current?.querySelector(".mq-textarea > textarea")
+
+        if (textareaEl != null) {
+            console.debug("not null!", textareaEl)
+            textareaEl.ariaLabel = `Current value: ${eq}`
+        }
+
         if (containerEl != null && eqContentEl != null) {
             const eqContainer = eqContentEl.querySelector("*[mathquill-block-id]")
             if (eqContainer != null) {
@@ -83,7 +96,11 @@ class ProblemInput extends React.Component {
                     {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
                             ref={this.textFieldRef}
-                            inputProps={{ min: 0, style: { textAlign: 'center' } }}
+                            inputProps={{
+                                min: 0,
+                                style: { textAlign: 'center' },
+                                "aria-label": "Enter a response to the question above"
+                            }}
                             error={state.isCorrect === false}
                             className={classes.inputField}
                             variant="outlined"
