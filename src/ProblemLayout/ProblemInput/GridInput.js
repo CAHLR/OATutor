@@ -8,6 +8,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { toast } from "react-toastify";
 import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
 import generateRandomInt from "../../util/generateRandomInt";
+import { stagingProp } from "../../util/addStagingProperty";
 
 class GridInput extends React.Component {
     constructor(props) {
@@ -86,7 +87,7 @@ class GridInput extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index } = this.props;
 
         const { gridState } = this.state;
 
@@ -107,7 +108,9 @@ class GridInput extends React.Component {
                             <div style={{
                                 fontWeight: 700,
                                 fontSize: 18
-                            }}>Enter in matrix dimensions.</div>
+                            }}>
+                                Enter in matrix dimensions.
+                            </div>
                             <p>(This can be changed later)</p>
                             <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                                 <TextField
@@ -117,6 +120,9 @@ class GridInput extends React.Component {
                                     }}
                                     variant={"outlined"} label={'# Rows'} type={'number'}
                                     className={'grid-input-dim-input'}
+                                    {...stagingProp({
+                                        "data-selenium-target": `grid-answer-row-input-${index}`
+                                    })}
                                     onChange={(evt) => this.dimensionFieldChange(evt, 0)}
                                 />
                                 <CloseIcon/>
@@ -127,11 +133,18 @@ class GridInput extends React.Component {
                                     }}
                                     variant={"outlined"} label={'# Cols'} type={'number'}
                                     className={'grid-input-dim-input'}
+                                    {...stagingProp({
+                                        "data-selenium-target": `grid-answer-col-input-${index}`
+                                    })}
                                     onChange={(evt) => this.dimensionFieldChange(evt, 1)}
                                 />
                             </Box>
                             <Box mt={2}>
-                                <Button variant={'contained'} color={'primary'} type={'submit'}>
+                                <Button variant={'contained'} color={'primary'} type={'submit'}
+                                        {...stagingProp({
+                                            "data-selenium-target": `grid-answer-next-${index}`
+                                        })}
+                                >
                                     Next
                                 </Button>
                             </Box>
@@ -217,6 +230,9 @@ class GridInput extends React.Component {
                                                     className={clsx(classes.textBoxLatex, 'grid-cell')}
                                                     key={`cell-${idx}-${jdx}`}
                                                     aria-label={`Cell (${idx}, ${jdx})`}
+                                                    {...stagingProp({
+                                                        "data-selenium-target": `grid-answer-cell-${jdx + idx * this.state.numCols}-${index}`
+                                                    })}
                                                 >
                                                     <EquationEditor
                                                         value={val}

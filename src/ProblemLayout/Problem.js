@@ -22,6 +22,7 @@ import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
+import { stagingProp } from "../util/addStagingProperty";
 
 class Problem extends React.Component {
     static contextType = ThemeContext;
@@ -248,7 +249,9 @@ class Problem extends React.Component {
             <div>
                 <div className={classes.prompt} role={"banner"}>
                     <Card className={classes.titleCard}>
-                        <CardContent>
+                        <CardContent {...stagingProp({
+                            "data-selenium-target": "problem-header"
+                        })}>
                             <h1 className={classes.problemHeader}>
                                 {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                                 <hr/>

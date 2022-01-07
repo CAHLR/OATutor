@@ -19,7 +19,7 @@ class MultipleChoice extends React.Component {
     };
 
     render() {
-        let { choices: _choices = [] } = this.props;
+        let { choices: _choices = [], index } = this.props;
 
         const choices = []
         if (Array.isArray(_choices)) {

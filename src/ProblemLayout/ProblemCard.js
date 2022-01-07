@@ -18,6 +18,7 @@ import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
 import Spacer from "../Components/_General/Spacer";
 import { toast } from "react-toastify";
+import { stagingProp } from "../util/addStagingProperty";
 
 
 class ProblemCard extends React.Component {
@@ -100,11 +101,11 @@ class ProblemCard extends React.Component {
             }
         }
 
-        if(correctAnswer){
+        if (correctAnswer) {
             toast.success("Correct Answer!", {
                 autoClose: 3000
             })
-        }else{
+        } else {
             toast.error("Incorrect Answer!", {
                 autoClose: 3000
             })
@@ -192,6 +193,7 @@ class ProblemCard extends React.Component {
                         <div className="Hints">
                             <HintSystem
                                 problemID={this.props.problemID}
+                                index={this.props.index}
                                 step={this.step}
                                 hints={this.hints}
                                 unlockHint={this.unlockHint}
@@ -215,6 +217,7 @@ class ProblemCard extends React.Component {
                             editInput={this.editInput}
                             setInputValState={this.setInputValState}
                             handleKey={this.handleKey}
+                            index={this.props.index}
                         />
                     </div>
 
@@ -224,7 +227,11 @@ class ProblemCard extends React.Component {
                         <Grid item xs={false} sm={false} md={4}/>
                         <Grid item xs={4} sm={4} md={1}>
                             <center>
-                                <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints">
+                                <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints"
+                                            {...stagingProp({
+                                                "data-selenium-target": `hint-button-${this.props.index}`
+                                            })}
+                                >
                                     <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
                                          alt="hintToggle"/>
                                 </IconButton>
@@ -233,7 +240,12 @@ class ProblemCard extends React.Component {
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button className={classes.button} style={{ width: "80%" }} size="small"
-                                        onClick={this.submit}>Submit</Button>
+                                        onClick={this.submit}
+                                        {...stagingProp({
+                                            "data-selenium-target": `submit-button-${this.props.index}`
+                                        })}>
+                                    Submit
+                                </Button>
                             </center>
                         </Grid>
                         <Grid item xs={4} sm={3} md={1}>
@@ -243,15 +255,24 @@ class ProblemCard extends React.Component {
                                 alignContent: "center",
                                 justifyContent: "center"
                             }}>
-                                {this.state.isCorrect ?
+                                {this.state.isCorrect &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
                                          alt=""
-                                         src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/> : ""}
-                                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{
-                                    opacity: 100 - this.state.checkMarkOpacity,
-                                    width: "45%"
-                                }} alt="" src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/> : ""}
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                                }
+                                {this.state.isCorrect === false &&
+                                    <img className={classes.checkImage}
+                                         style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                                         alt=""
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
+                                }
                             </div>
                         </Grid>
                         <Grid item xs={false} sm={1} md={4}/>
