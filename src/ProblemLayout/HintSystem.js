@@ -10,6 +10,7 @@ import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
 import { DO_LOG_DATA } from "../config/config";
 import Spacer from "../Components/_General/Spacer";
+import { stagingProp } from "../util/addStagingProperty";
 
 class HintSystem extends React.Component {
     constructor(props) {
@@ -86,7 +87,7 @@ class HintSystem extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index } = this.props;
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
@@ -99,6 +100,9 @@ class HintSystem extends React.Component {
                                 expandIcon={<ExpandMoreIcon/>}
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
+                                {...stagingProp({
+                                    "data-selenium-target": `hint-expand-${i}-${index}`
+                                })}
                             >
                                 <Typography className={classes.heading}>
                                     Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
@@ -110,6 +114,7 @@ class HintSystem extends React.Component {
                                         <div>
                                             <Spacer/>
                                             <HintTextbox hintNum={i} hint={hint}
+                                                         index={index}
                                                          submitHint={this.props.submitHint}
                                                          seed={this.props.seed}
                                                          hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
@@ -125,6 +130,7 @@ class HintSystem extends React.Component {
                                                 hintStatus={this.state.subHintsFinished[i]}
                                                 submitHint={this.submitSubHint}
                                                 parent={i}
+                                                index={index}
                                                 seed={this.props.seed}
                                                 hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                                             />

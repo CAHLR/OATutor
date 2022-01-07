@@ -42,7 +42,7 @@ class SubHintSystem extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index, parent } = this.props;
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
@@ -67,6 +67,8 @@ class SubHintSystem extends React.Component {
                                         <div>
                                             <Spacer/>
                                             <HintTextbox hint={hint} type={"subHintTextbox"}
+                                                         hintNum={i}
+                                                         index={`${index}-${parent}`}
                                                          submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)}/>
                                         </div> : ""}
                                 </Typography>
