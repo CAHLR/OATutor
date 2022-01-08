@@ -1,0 +1,1 @@
+import hints from "./aaff50dradical1a-index.js"; const step = {id: "aaff50dradical1a", stepAnswer: ["$$4\\sqrt{3}$$"], problemType: "TextBox", stepTitle: "srt(48)", stepBody: "Write your answer in radical form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

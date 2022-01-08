@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers9a-index.js"; const step = {id: "a10b60arealnumbers9a", stepAnswer: ["a"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, \\frac{a^8}{a^5}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

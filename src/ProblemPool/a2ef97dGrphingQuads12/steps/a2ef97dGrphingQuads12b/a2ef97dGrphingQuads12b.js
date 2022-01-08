@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads12b-index.js"; const step = {id: "a2ef97dGrphingQuads12b", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "Find the y-value of the minimum value of the quadratic equation $$y=x^2+2x-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

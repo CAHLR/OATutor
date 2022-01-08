@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
+import Spacer from "../Components/_General/Spacer";
 
 
 class SubHintSystem extends React.Component {
@@ -41,7 +42,7 @@ class SubHintSystem extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index, parent } = this.props;
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
@@ -63,8 +64,12 @@ class SubHintSystem extends React.Component {
                                 <Typography component={'span'} style={{ width: "100%" }}>
                                     {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))}
                                     {hint.type === "scaffold" ?
-                                        <div><br/><HintTextbox hint={hint} type={"subHintTextbox"}
-                                                               submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)}/>
+                                        <div>
+                                            <Spacer/>
+                                            <HintTextbox hint={hint} type={"subHintTextbox"}
+                                                         hintNum={i}
+                                                         index={`${index}-${parent}`}
+                                                         submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)}/>
                                         </div> : ""}
                                 </Typography>
                             </AccordionDetails>

@@ -8,6 +8,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
+import { DO_LOG_DATA } from "../config/config";
+import Spacer from "../Components/_General/Spacer";
+import { stagingProp } from "../util/addStagingProperty";
 
 class HintSystem extends React.Component {
     constructor(props) {
@@ -54,7 +57,7 @@ class HintSystem extends React.Component {
                 showSubHints: displayHints
             })
         }, () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.props.answerMade(this.index, this.step.knowledgeComponents, false);
             }
         });
@@ -65,7 +68,7 @@ class HintSystem extends React.Component {
             prevState.subHintsFinished[i][hintNum] = (!isScaffold ? 1 : 0.5);
             return { subHintsFinished: prevState.subHintsFinished }
         }, () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.subHintsFinished, "unlockSubHint", chooseVariables(this.props.stepVars, this.props.seed), this.context.studentName);
             }
         });
@@ -78,13 +81,13 @@ class HintSystem extends React.Component {
                 return { subHintsFinished: prevState.subHintsFinished }
             });
         }
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed), this.context.studentName);
         }
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index } = this.props;
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
@@ -97,6 +100,9 @@ class HintSystem extends React.Component {
                                 expandIcon={<ExpandMoreIcon/>}
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
+                                {...stagingProp({
+                                    "data-selenium-target": `hint-expand-${i}-${index}`
+                                })}
                             >
                                 <Typography className={classes.heading}>
                                     Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
@@ -105,14 +111,18 @@ class HintSystem extends React.Component {
                                 <Typography component={'span'} style={{ width: "100%" }}>
                                     {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
                                     {hint.type === "scaffold" ?
-                                        <div><br/><HintTextbox hintNum={i} hint={hint} submitHint={this.props.submitHint}
-                                                               seed={this.props.seed}
-                                                               hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                                                               toggleHints={(event) => this.toggleSubHints(event, i)}/>
+                                        <div>
+                                            <Spacer/>
+                                            <HintTextbox hintNum={i} hint={hint}
+                                                         index={index}
+                                                         submitHint={this.props.submitHint}
+                                                         seed={this.props.seed}
+                                                         hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
+                                                         toggleHints={(event) => this.toggleSubHints(event, i)}/>
                                         </div> : ""}
                                     {this.state.showSubHints[i] && hint.subHints !== undefined ?
                                         <div className="SubHints">
-                                            <br/>
+                                            <Spacer/>
                                             <SubHintSystem
                                                 problemID={this.props.problemID}
                                                 hints={hint.subHints}
@@ -120,10 +130,12 @@ class HintSystem extends React.Component {
                                                 hintStatus={this.state.subHintsFinished[i]}
                                                 submitHint={this.submitSubHint}
                                                 parent={i}
+                                                index={index}
                                                 seed={this.props.seed}
                                                 hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                                             />
-                                            <br/></div>
+                                            <Spacer/>
+                                        </div>
                                         : ""}
                                 </Typography>
                             </AccordionDetails>

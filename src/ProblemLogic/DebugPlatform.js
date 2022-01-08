@@ -10,6 +10,7 @@ import {
 
 import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
+import BrandLogoNav from "../Components/_General/BrandLogoNav";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -173,11 +174,9 @@ class DebugPlatform extends React.Component {
             <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Grid container spacing={0}>
+                        <Grid container spacing={0} role={"navigation"}>
                             <Grid item xs={3} key={1}>
-                                <div style={{ textAlign: 'left', paddingTop: "6px", paddingBototm: "6px" }}>Open ITS
-                                    (v{this.context.siteVersion})
-                                </div>
+                                <BrandLogoNav noLink={true}/>
                             </Grid>
                             <Grid item xs={6} key={2}>
                                 <div
@@ -192,14 +191,13 @@ class DebugPlatform extends React.Component {
                             </Grid>
                             <Grid item xs={3} key={3}>
                                 <div style={{ textAlign: 'right' }}>
-                                    {true ?
-                                        <Router>
-                                            <NavLink activeClassName="active" className="link" to={"/"} type="menu"
-                                                     style={{ marginRight: '10px' }}>
-                                                <Button color="inherit"
-                                                        onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                                            </NavLink>
-                                        </Router> : ""}
+                                    <Router>
+                                        <NavLink activeClassName="active" className="link" to={"/"} type="menu"
+                                                 style={{ marginRight: '10px' }}>
+                                            <Button color="inherit"
+                                                    onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
+                                        </NavLink>
+                                    </Router>
                                 </div>
                             </Grid>
                         </Grid>

@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads13b-index.js"; const step = {id: "a2ef97dGrphingQuads13b", stepAnswer: ["488"], problemType: "TextBox", stepTitle: "Find the maximum height of the volleyball.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -12,10 +12,13 @@ import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
-import { ThemeContext } from '../config/config.js';
+import { DO_LOG_DATA, ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/config.js';
 
 import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
+import Spacer from "../Components/_General/Spacer";
+import { toast } from "react-toastify";
+import { stagingProp } from "../util/addStagingProperty";
 
 
 class ProblemCard extends React.Component {
@@ -39,7 +42,7 @@ class ProblemCard extends React.Component {
         }
 
         // Bottom out hints option
-        if (context.useBottomOutHints) {
+        if (ENABLE_BOTTOM_OUT_HINTS) {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length),
@@ -90,12 +93,22 @@ class ProblemCard extends React.Component {
         console.debug('submitting problem')
         const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             try {
                 this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
             } catch {
                 console.log("Unable to log to Firebase.");
             }
+        }
+
+        if (correctAnswer) {
+            toast.success("Correct Answer!", {
+                autoClose: 3000
+            })
+        } else {
+            toast.error("Incorrect Answer!", {
+                autoClose: 3000
+            })
         }
 
         this.setState({
@@ -123,7 +136,7 @@ class ProblemCard extends React.Component {
         this.setState(prevState => ({
             showHints: !prevState.showHints
         }), () => {
-            if (this.context.logData) {
+            if (DO_LOG_DATA) {
                 this.props.answerMade(this.index, this.step.knowledgeComponents, false);
             }
         });
@@ -142,7 +155,7 @@ class ProblemCard extends React.Component {
                 prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
                 return { hintsFinished: prevState.hintsFinished }
             }, () => {
-                if (this.context.logData) {
+                if (DO_LOG_DATA) {
                     this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
                 }
             });
@@ -157,7 +170,7 @@ class ProblemCard extends React.Component {
                 return { hintsFinished: prevState.hintsFinished }
             });
         }
-        if (this.context.logData) {
+        if (DO_LOG_DATA) {
             this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
         }
     }
@@ -180,6 +193,7 @@ class ProblemCard extends React.Component {
                         <div className="Hints">
                             <HintSystem
                                 problemID={this.props.problemID}
+                                index={this.props.index}
                                 step={this.step}
                                 hints={this.hints}
                                 unlockHint={this.unlockHint}
@@ -188,7 +202,7 @@ class ProblemCard extends React.Component {
                                 seed={this.props.seed}
                                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
                             />
-                            <br/>
+                            <Spacer/>
                         </div>
                     )}
 
@@ -203,6 +217,7 @@ class ProblemCard extends React.Component {
                             editInput={this.editInput}
                             setInputValState={this.setInputValState}
                             handleKey={this.handleKey}
+                            index={this.props.index}
                         />
                     </div>
 
@@ -212,9 +227,12 @@ class ProblemCard extends React.Component {
                         <Grid item xs={false} sm={false} md={4}/>
                         <Grid item xs={4} sm={4} md={1}>
                             <center>
-                                <IconButton aria-label="delete" onClick={this.toggleHints}>
+                                <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints"
+                                            {...stagingProp({
+                                                "data-selenium-target": `hint-button-${this.props.index}`
+                                            })}
+                                >
                                     <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                         title="View available hints"
                                          alt="hintToggle"/>
                                 </IconButton>
                             </center>
@@ -222,7 +240,12 @@ class ProblemCard extends React.Component {
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button className={classes.button} style={{ width: "80%" }} size="small"
-                                        onClick={this.submit}>Submit</Button>
+                                        onClick={this.submit}
+                                        {...stagingProp({
+                                            "data-selenium-target": `submit-button-${this.props.index}`
+                                        })}>
+                                    Submit
+                                </Button>
                             </center>
                         </Grid>
                         <Grid item xs={4} sm={3} md={1}>
@@ -232,15 +255,24 @@ class ProblemCard extends React.Component {
                                 alignContent: "center",
                                 justifyContent: "center"
                             }}>
-                                {this.state.isCorrect ?
+                                {this.state.isCorrect &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
                                          alt=""
-                                         src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/> : ""}
-                                {this.state.isCorrect === false ? <img className={classes.checkImage} style={{
-                                    opacity: 100 - this.state.checkMarkOpacity,
-                                    width: "45%"
-                                }} alt="" src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/> : ""}
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                                }
+                                {this.state.isCorrect === false &&
+                                    <img className={classes.checkImage}
+                                         style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                                         alt=""
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
+                                }
                             </div>
                         </Grid>
                         <Grid item xs={false} sm={1} md={4}/>

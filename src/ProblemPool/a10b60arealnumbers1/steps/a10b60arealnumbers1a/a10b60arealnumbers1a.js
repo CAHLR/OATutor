@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers1a-index.js"; const step = {id: "a10b60arealnumbers1a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, 8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
