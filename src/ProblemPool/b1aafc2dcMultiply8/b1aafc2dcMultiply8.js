@@ -1,0 +1,1 @@
+import steps from "./b1aafc2dcMultiply8-index.js"; const problem = {id: "b1aafc2dcMultiply8", title: "Evaluate Variable Equation with Integers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

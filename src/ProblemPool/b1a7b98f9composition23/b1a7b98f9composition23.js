@@ -1,0 +1,1 @@
+import steps from "./b1a7b98f9composition23-index.js"; const problem = {id: "b1a7b98f9composition23", title: "Composition of Functions", body: "For $$f(x)=x^2+1$$ and $$g(x)=\\sqrt{x+2}$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

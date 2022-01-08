@@ -1,0 +1,1 @@
+import hints from "./b1a9b0a01geo7a-index.js"; const step = {id: "b1a9b0a01geo7a", stepAnswer: ["56"], problemType: "TextBox", stepTitle: "The measures of two angles of a triangle are 49 and 75 degrees. Find the measure of the third angle.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

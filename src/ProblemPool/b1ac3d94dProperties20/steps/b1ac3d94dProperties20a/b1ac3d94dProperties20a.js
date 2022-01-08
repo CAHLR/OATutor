@@ -1,0 +1,1 @@
+import hints from "./b1ac3d94dProperties20a-index.js"; const step = {id: "b1ac3d94dProperties20a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{-1}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1ac3d94dProperties14-index.js"; const problem = {id: "b1ac3d94dProperties14", title: "Simplify the following expression using the distributive property.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

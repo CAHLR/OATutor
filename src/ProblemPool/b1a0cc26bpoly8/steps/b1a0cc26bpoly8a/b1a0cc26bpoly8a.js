@@ -1,0 +1,1 @@
+import hints from "./b1a0cc26bpoly8a-index.js"; const step = {id: "b1a0cc26bpoly8a", stepAnswer: ["$$3x^2+16x-35$$"], problemType: "TextBox", stepTitle: "$$\\left(x+7\\right) \\left(3x-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1a0f69c4conic10-index.js"; const problem = {id: "b1a0f69c4conic10", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{8}{4-3costheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

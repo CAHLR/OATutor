@@ -1,0 +1,1 @@
+import hints from "./b1a1f32dfFormula11b-index.js"; const step = {id: "b1a1f32dfFormula11b", stepAnswer: ["$$P=\\frac{I}{rt}$$"], problemType: "MultipleChoice", stepTitle: "In general", stepBody: "", choices: ["$$P=\\frac{I}{rt}$$", "$$P=Irt$$", "$$P=\\frac{rt}{I}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

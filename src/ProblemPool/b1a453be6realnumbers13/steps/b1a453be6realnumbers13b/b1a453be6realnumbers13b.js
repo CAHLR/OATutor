@@ -1,0 +1,1 @@
+import hints from "./b1a453be6realnumbers13b-index.js"; const step = {id: "b1a453be6realnumbers13b", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "0.125", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

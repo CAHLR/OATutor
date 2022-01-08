@@ -1,0 +1,1 @@
+import hints from "./b1afaf721inequalities16a-index.js"; const step = {id: "b1afaf721inequalities16a", stepAnswer: ["$$(-\\infty,107]$$"], problemType: "MultipleChoice", stepTitle: "$$m-45 \\leq 62$$", stepBody: "", choices: ["$$(-\\infty,107]$$", "$$(107,\\infty)$$", "$$(-\\infty,17]$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

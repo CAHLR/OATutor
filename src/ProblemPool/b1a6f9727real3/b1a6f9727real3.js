@@ -1,0 +1,1 @@
+import steps from "./b1a6f9727real3-index.js"; const problem = {id: "b1a6f9727real3", title: "Sets of Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1aafc2dcMultiply19-index.js"; const problem = {id: "b1aafc2dcMultiply19", title: "Simplify Expressions with Integers", body: "Simplify the expression:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1aafc2dcMultiply6-index.js"; const problem = {id: "b1aafc2dcMultiply6", title: "Simplify Expression", body: "Simply the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1a4b9bbfrationalnums29-index.js"; const problem = {id: "b1a4b9bbfrationalnums29", title: "Wrting Radical Expressions in Exponential Form", body: "Write the radical as an expression with an exponent.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

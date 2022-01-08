@@ -1,0 +1,1 @@
+import steps from "./b1ad291beRadRat20-index.js"; const problem = {id: "b1ad291beRadRat20", title: "Simplifying 5th Roots", body: "Simplify each of the following roots.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

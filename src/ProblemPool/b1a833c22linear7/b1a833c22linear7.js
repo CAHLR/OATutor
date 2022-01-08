@@ -1,0 +1,1 @@
+import steps from "./b1a833c22linear7-index.js"; const problem = {id: "b1a833c22linear7", title: "Linear Functions", body: "For the following exercises, determine whether each function is increasing or decreasing.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

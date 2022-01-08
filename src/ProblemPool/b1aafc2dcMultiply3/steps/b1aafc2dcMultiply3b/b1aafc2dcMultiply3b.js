@@ -1,0 +1,1 @@
+import hints from "./b1aafc2dcMultiply3b-index.js"; const step = {id: "b1aafc2dcMultiply3b", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "$$\\frac{-100}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

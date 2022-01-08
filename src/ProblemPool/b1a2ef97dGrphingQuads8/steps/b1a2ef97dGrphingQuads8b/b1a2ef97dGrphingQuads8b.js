@@ -1,0 +1,1 @@
+import hints from "./b1a2ef97dGrphingQuads8b-index.js"; const step = {id: "b1a2ef97dGrphingQuads8b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Vertex of Parabolas", stepBody: "Find the axis of symmetry for the function $$y=3x2-6x+2$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

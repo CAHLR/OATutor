@@ -1,0 +1,1 @@
+import hints from "./b1a0a04b1divmonomial4a-index.js"; const step = {id: "b1a0a04b1divmonomial4a", stepAnswer: ["$$\\frac{1}{b^4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{b^8}{b^{12}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

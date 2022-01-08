@@ -1,0 +1,1 @@
+import steps from "./b1ac3d94dProperties8-index.js"; const problem = {id: "b1ac3d94dProperties8", title: "Use the Inverse Property of Multiplication", body: "In the following exercises, find the multiplicative inverse of each number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

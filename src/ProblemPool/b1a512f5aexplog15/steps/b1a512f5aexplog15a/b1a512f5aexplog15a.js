@@ -1,0 +1,1 @@
+import hints from "./b1a512f5aexplog15a-index.js"; const step = {id: "b1a512f5aexplog15a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$\\ln(x)+\\ln(x-3)$$ $$=$$ ln(7x)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

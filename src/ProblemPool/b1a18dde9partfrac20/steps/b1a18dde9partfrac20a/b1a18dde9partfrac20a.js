@@ -1,0 +1,1 @@
+import hints from "./b1a18dde9partfrac20a-index.js"; const step = {id: "b1a18dde9partfrac20a", stepAnswer: ["$$\\frac{-24}{{\\left(x+4\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(-5-19\\right)}{{\\left(x+4\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

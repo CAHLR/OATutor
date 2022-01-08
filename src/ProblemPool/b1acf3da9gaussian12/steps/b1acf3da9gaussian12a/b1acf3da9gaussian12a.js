@@ -1,0 +1,1 @@
+import hints from "./b1acf3da9gaussian12a-index.js"; const step = {id: "b1acf3da9gaussian12a", stepAnswer: ["(2,1)"], problemType: "MultipleChoice", stepTitle: "$$4x+3y=11$$ $$x-3y=-1$$", stepBody: "", choices: ["(2,1)", "(3,1)", "(1,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

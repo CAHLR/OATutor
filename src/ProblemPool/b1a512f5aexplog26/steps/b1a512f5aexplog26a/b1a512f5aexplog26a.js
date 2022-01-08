@@ -1,0 +1,1 @@
+import hints from "./b1a512f5aexplog26a-index.js"; const step = {id: "b1a512f5aexplog26a", stepAnswer: ["$$\\frac{1}{6\\left(e^{\\frac{7}{2}}\\right)}$$"], problemType: "TextBox", stepTitle: "$$2ln(6x)=7$$", stepBody: "Using Like Bases to Solve Exponential Equations", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

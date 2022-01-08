@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp7a-index.js"; const step = {id: "b1a6d0007exp7a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{c^3}{c^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

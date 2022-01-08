@@ -1,0 +1,1 @@
+import hints from "./b1a14ffbcmodeling3a-index.js"; const step = {id: "b1a14ffbcmodeling3a", stepAnswer: ["$$\\frac{25}{27}$$"], problemType: "TextBox", stepTitle: "If $$y=25$$ when $$x=2$$, find y when x is 6.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1ad291beRadRat18a-index.js"; const step = {id: "b1ad291beRadRat18a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{4, 16}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

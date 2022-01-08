@@ -1,0 +1,1 @@
+import steps from "./b1a9ed39ahyperbola1-index.js"; const problem = {id: "b1a9ed39ahyperbola1", title: "", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

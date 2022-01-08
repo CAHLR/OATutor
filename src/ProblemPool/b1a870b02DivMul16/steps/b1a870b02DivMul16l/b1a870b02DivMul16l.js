@@ -1,0 +1,1 @@
+import hints from "./b1a870b02DivMul16l-index.js"; const step = {id: "b1a870b02DivMul16l", stepAnswer: ["72"], problemType: "TextBox", stepTitle: "$$-v=-72$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

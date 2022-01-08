@@ -1,0 +1,1 @@
+import hints from "./b1a1279cdpowers5a-index.js"; const step = {id: "b1a1279cdpowers5a", stepAnswer: ["$$w^6$$"], problemType: "TextBox", stepTitle: "$$w^5 w$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

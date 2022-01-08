@@ -1,0 +1,1 @@
+import hints from "./b1ab6a46ageo4a-index.js"; const step = {id: "b1ab6a46ageo4a", stepAnswer: ["162"], problemType: "TextBox", stepTitle: "The first term is 16 and the common ratio is $$\\frac{-1}{3}$$. Find the fourth term.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

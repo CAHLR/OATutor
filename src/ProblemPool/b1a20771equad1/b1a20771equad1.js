@@ -1,0 +1,1 @@
+import steps from "./b1a20771equad1-index.js"; const problem = {id: "b1a20771equad1", title: "Solving Quadratic Equations", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

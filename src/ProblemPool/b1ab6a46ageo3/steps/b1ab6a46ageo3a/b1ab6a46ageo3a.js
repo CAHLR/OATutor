@@ -1,0 +1,1 @@
+import hints from "./b1ab6a46ageo3a-index.js"; const step = {id: "b1ab6a46ageo3a", stepAnswer: ["162"], problemType: "TextBox", stepTitle: "The first term is 2, and the common ratio is 3. Find the fifth term.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

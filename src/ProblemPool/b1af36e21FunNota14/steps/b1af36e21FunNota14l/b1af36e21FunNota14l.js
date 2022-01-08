@@ -1,0 +1,1 @@
+import hints from "./b1af36e21FunNota14l-index.js"; const step = {id: "b1af36e21FunNota14l", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$2xy=1$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1a28722cappquad11a-index.js"; const step = {id: "b1a28722cappquad11a", stepAnswer: ["31"], problemType: "TextBox", stepTitle: "The product of two positive, consecutive odd numbers is 1023. Find the lower number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

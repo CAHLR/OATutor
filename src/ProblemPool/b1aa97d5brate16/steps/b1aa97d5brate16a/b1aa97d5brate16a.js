@@ -1,0 +1,1 @@
+import hints from "./b1aa97d5brate16a-index.js"; const step = {id: "b1aa97d5brate16a", stepAnswer: ["$$\\frac{-1}{3}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{x}$$ on [1,3]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

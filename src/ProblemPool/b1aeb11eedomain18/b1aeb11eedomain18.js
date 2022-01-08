@@ -1,0 +1,1 @@
+import steps from "./b1aeb11eedomain18-index.js"; const problem = {id: "b1aeb11eedomain18", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=-\\sqrt{2-x}$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

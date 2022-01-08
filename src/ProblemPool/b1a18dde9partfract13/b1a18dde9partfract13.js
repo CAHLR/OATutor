@@ -1,0 +1,1 @@
+import steps from "./b1a18dde9partfract13-index.js"; const problem = {id: "b1a18dde9partfract13", title: "Decomposing with Repeated Linear Factors", body: "Decompose the given rational expression with repeated linear factors.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

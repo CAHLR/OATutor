@@ -1,0 +1,1 @@
+import hints from "./b1a137dddgre29a-index.js"; const step = {id: "b1a137dddgre29a", stepAnswer: ["$$7\\left(2p+5\\right)$$"], problemType: "TextBox", stepTitle: "$$14p+35$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

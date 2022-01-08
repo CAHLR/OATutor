@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp25a-index.js"; const step = {id: "b1a6d0007exp25a", stepAnswer: ["$$9.296\\times {10}^7$$"], problemType: "TextBox", stepTitle: "Rewrite the distance using scientific notation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

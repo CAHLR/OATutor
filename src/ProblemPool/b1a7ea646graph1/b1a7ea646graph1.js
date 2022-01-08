@@ -1,0 +1,1 @@
+import steps from "./b1a7ea646graph1-index.js"; const problem = {id: "b1a7ea646graph1", title: "Finding the x-Intercepts of a Polynomial Function by Factoring #1", body: "Find the x intercepts of the following function.", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

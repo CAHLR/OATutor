@@ -1,0 +1,1 @@
+import hints from "./b1ad291beRadRat1c-index.js"; const step = {id: "b1ad291beRadRat1c", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{25+144}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

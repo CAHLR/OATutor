@@ -1,0 +1,1 @@
+import hints from "./b1a453be6realnumbers13a-index.js"; const step = {id: "b1a453be6realnumbers13a", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "2.63..., where the 3 repeats forever.", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

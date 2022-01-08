@@ -1,0 +1,1 @@
+import hints from "./b1a0a04b1divmonomial9b-index.js"; const step = {id: "b1a0a04b1divmonomial9b", stepAnswer: ["$$w^4$$"], problemType: "TextBox", stepTitle: "$$\\frac{w^{13}}{w^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1aafbadeintercepts2a-index.js"; const step = {id: "b1aafbadeintercepts2a", stepAnswer: ["(2,0)"], problemType: "MultipleChoice", stepTitle: "What is the x intercept of the line in the graph?", stepBody: "", choices: ["(2,0)", "(-2,0)I(0,-2)I(2,0)I(0,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

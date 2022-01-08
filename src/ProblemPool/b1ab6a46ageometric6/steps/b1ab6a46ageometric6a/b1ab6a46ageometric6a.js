@@ -1,0 +1,1 @@
+import hints from "./b1ab6a46ageometric6a-index.js"; const step = {id: "b1ab6a46ageometric6a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Given a geometric sequence with $$a_1=3$$ and $$a_4=24$$, find $$a_2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

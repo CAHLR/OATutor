@@ -1,0 +1,1 @@
+import steps from "./b1ac3d94dProperties22-index.js"; const problem = {id: "b1ac3d94dProperties22", title: "Use the Properties of Zero", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

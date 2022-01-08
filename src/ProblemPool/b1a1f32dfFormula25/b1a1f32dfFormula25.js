@@ -1,0 +1,1 @@
+import steps from "./b1a1f32dfFormula25-index.js"; const problem = {id: "b1a1f32dfFormula25", title: "In the following exercises, solve.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

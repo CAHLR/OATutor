@@ -1,0 +1,1 @@
+var hints = [{id: "b1a1f0162sequences26c-h1", type: "hint", dependencies: [], title: "Substitution", text: "Substitute $$n=3$$ into the formula", variabilization: {}}, {id: "b1a1f0162sequences26c-h2", type: "hint", dependencies: ["b1a1f0162sequences26c-h1"], title: "Simplification", text: "Calculate the expression $$\\frac{2^3}{3^3}$$", variabilization: {}}, ]; export {hints};

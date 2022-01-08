@@ -1,0 +1,1 @@
+import steps from "./b1a8ffef9inverses12-index.js"; const problem = {id: "b1a8ffef9inverses12", title: "Factoring a Difference of Squares", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1a8ffef9inverses24-index.js"; const problem = {id: "b1a8ffef9inverses24", title: "Finding the Inverse of a Function", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a443311sqroots19a-index.js"; const step = {id: "b1a443311sqroots19a", stepAnswer: ["$$\\frac{2+\\sqrt{5}}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{6+\\sqrt{45}}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1ad291beRadRat1-index.js"; const problem = {id: "b1ad291beRadRat1", title: "Evaluating Principal Square Roots", body: "Evaluate each expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

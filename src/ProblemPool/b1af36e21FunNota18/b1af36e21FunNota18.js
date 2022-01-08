@@ -1,0 +1,1 @@
+import steps from "./b1af36e21FunNota18-index.js"; const problem = {id: "b1af36e21FunNota18", title: "Evaluate the function $$f=\\frac{6x-1}{5x+2}$$ at the indicated values.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

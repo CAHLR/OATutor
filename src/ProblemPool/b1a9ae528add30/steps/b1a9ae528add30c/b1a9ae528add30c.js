@@ -1,0 +1,1 @@
+import hints from "./b1a9ae528add30c-index.js"; const step = {id: "b1a9ae528add30c", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$|-4| \\rule{2cm}{0.15mm}-|-4|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

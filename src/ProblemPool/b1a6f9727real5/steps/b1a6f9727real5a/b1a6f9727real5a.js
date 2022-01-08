@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real5a-index.js"; const step = {id: "b1a6f9727real5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is $${\\left(3\\times2\\right)}^2-4\\left(6+2\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

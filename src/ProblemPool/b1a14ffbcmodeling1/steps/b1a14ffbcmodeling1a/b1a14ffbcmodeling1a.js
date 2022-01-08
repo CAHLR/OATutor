@@ -1,0 +1,1 @@
+import hints from "./b1a14ffbcmodeling1a-index.js"; const step = {id: "b1a14ffbcmodeling1a", stepAnswer: ["675"], problemType: "TextBox", stepTitle: "If $$y=25$$ when $$x=2$$, find y when x is 6.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

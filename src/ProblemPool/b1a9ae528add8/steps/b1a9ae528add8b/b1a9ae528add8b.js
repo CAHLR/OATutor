@@ -1,0 +1,1 @@
+import hints from "./b1a9ae528add8b-index.js"; const step = {id: "b1a9ae528add8b", stepAnswer: ["39"], problemType: "TextBox", stepTitle: "$$|-y|$$ when $$y=-39$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

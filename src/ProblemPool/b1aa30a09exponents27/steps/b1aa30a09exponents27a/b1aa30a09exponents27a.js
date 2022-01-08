@@ -1,0 +1,1 @@
+import hints from "./b1aa30a09exponents27a-index.js"; const step = {id: "b1aa30a09exponents27a", stepAnswer: ["$$n^7$$"], problemType: "TextBox", stepTitle: "$$\\frac{n^5}{n^{-2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

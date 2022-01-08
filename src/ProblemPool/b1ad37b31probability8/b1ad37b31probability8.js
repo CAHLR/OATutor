@@ -1,0 +1,1 @@
+import steps from "./b1ad37b31probability8-index.js"; const problem = {id: "b1ad37b31probability8", title: "Using the Complement Rule to Calculate Probabilities", body: "Two number cubes are rolled.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a9981ababs2b-index.js"; const step = {id: "b1a9981ababs2b", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=-3|x-2|-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1a870b02DivMul33-index.js"; const problem = {id: "b1a870b02DivMul33", title: "Translate and Solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1ac3d94dProperties7a-index.js"; const step = {id: "b1ac3d94dProperties7a", stepAnswer: ["$$\\frac{-2}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

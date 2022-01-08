@@ -1,0 +1,1 @@
+import hints from "./b1acf3da9gaussian13a-index.js"; const step = {id: "b1acf3da9gaussian13a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$x^2+7x+12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

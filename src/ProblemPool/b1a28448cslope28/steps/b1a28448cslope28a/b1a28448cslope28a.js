@@ -1,0 +1,1 @@
+import hints from "./b1a28448cslope28a-index.js"; const step = {id: "b1a28448cslope28a", stepAnswer: ["Not Perpendicular"], problemType: "MultipleChoice", stepTitle: "$$2x+4y=3$$, $$6x+3y=2$$", stepBody: "", choices: ["Perpendicular", "Not Perpendicular"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1ab50a95log11-index.js"; const problem = {id: "b1ab50a95log11", title: "Finding the Value of a Common Logarithm Using a Calculator", body: "Solve the expression with a calculator to 4 decimal places.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

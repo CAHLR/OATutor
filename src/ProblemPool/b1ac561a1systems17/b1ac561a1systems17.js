@@ -1,0 +1,1 @@
+import steps from "./b1ac561a1systems17-index.js"; const problem = {id: "b1ac561a1systems17", title: "Solving a System of Nonlinear Equations Representing a Circle and an Ellipse #1", body: "Solve the system of nonlinear equations.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

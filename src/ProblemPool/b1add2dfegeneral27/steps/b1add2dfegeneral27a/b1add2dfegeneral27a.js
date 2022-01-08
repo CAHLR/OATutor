@@ -1,0 +1,1 @@
+import hints from "./b1add2dfegeneral27a-index.js"; const step = {id: "b1add2dfegeneral27a", stepAnswer: ["$$\\left(y-3\\right) \\left(y+13\\right)$$"], problemType: "TextBox", stepTitle: "$$y^2+10y-39$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

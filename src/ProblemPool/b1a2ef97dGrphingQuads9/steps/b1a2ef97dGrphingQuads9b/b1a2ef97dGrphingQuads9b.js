@@ -1,0 +1,1 @@
+import hints from "./b1a2ef97dGrphingQuads9b-index.js"; const step = {id: "b1a2ef97dGrphingQuads9b", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "Finding Intercepts of a Parabola", stepBody: "Find the y intercepts of the parabola $$y=x^2-2x-8$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1a2a280bgaussian2-index.js"; const problem = {id: "b1a2a280bgaussian2", title: "Writing the Augmented Matrix for a System of Equations", body: "Write the augmented matrix of the given system of equations.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

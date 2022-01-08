@@ -1,0 +1,1 @@
+import hints from "./b1a8ffef9inverses1a-index.js"; const step = {id: "b1a8ffef9inverses1a", stepAnswer: ["x"], problemType: "TextBox", stepTitle: "$$f^{-1\\left(f{\\left(x\\right)}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

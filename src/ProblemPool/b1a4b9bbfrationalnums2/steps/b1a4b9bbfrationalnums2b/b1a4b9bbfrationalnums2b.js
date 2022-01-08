@@ -1,0 +1,1 @@
+import hints from "./b1a4b9bbfrationalnums2b-index.js"; const step = {id: "b1a4b9bbfrationalnums2b", stepAnswer: ["y**(1/3"], problemType: "TextBox", stepTitle: "Wrtie with a rational exponent: $$\\sqrt{3, y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

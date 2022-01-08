@@ -1,0 +1,1 @@
+import hints from "./b1aaff50dradical28a-index.js"; const step = {id: "b1aaff50dradical28a", stepAnswer: ["$$x^3 \\sqrt{x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

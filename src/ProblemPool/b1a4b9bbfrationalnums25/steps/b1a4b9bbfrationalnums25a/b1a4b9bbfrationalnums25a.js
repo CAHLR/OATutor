@@ -1,0 +1,1 @@
+import hints from "./b1a4b9bbfrationalnums25a-index.js"; const step = {id: "b1a4b9bbfrationalnums25a", stepAnswer: ["$$u^{\\frac{1}{5}}$$"], problemType: "TextBox", stepTitle: "(sqrt(5,u))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

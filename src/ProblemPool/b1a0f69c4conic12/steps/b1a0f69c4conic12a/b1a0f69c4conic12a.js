@@ -1,0 +1,1 @@
+import hints from "./b1a0f69c4conic12a-index.js"; const step = {id: "b1a0f69c4conic12a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "Give the Eccentricity", stepBody: "Identify the eccentricity", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

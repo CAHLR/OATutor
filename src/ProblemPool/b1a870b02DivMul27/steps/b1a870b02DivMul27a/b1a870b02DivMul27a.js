@@ -1,0 +1,1 @@
+import hints from "./b1a870b02DivMul27a-index.js"; const step = {id: "b1a870b02DivMul27a", stepAnswer: ["-147"], problemType: "TextBox", stepTitle: "n divided by 7 is equal to -21.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

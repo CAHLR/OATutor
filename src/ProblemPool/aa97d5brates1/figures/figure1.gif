@@ -93,7 +93,7 @@ image_viewer_full_fix();document.addEventListener('DOMContentLoaded',function(ev
 <center><div id="M346803ScriptRootC824709" style="max-width:1024px"></div></center><div class="header"><div class="phone-show hidden tab-menu current" data-action="tab-menu"><span data-content="current-tab-label">About</span><span class="icon icon-menu4 margin-left-5"></span></div>
 <ul class="content-tabs phone-hide">
 <li class=" current"><a id="tab-about-link" data-tab="tab-about" href="">About</a></li><li class=" "><a id="tab-codes-link" data-tab="tab-codes" href="">Embed codes</a></li></ul>
-<div class="header-content-right"><div class="number-figures float-left">3 <span>views</span></div></div></div>
+<div class="header-content-right"><div class="number-figures float-left">2 <span>views</span></div></div></div>
 <div id="tabbed-content-group">
 <div id="tab-about" class="tabbed-content visible">
 <div class="c9 phablet-c1 fluid-column grid-columns">
@@ -176,7 +176,7 @@ PF.fn.window_to_device = window.window_to_device;
 PF.obj.config.base_url="https://ibb.co";
 PF.obj.config.json_api="https://ibb.co/json";
 PF.obj.config.listing.items_per_page="32";
-PF.obj.config.auth_token="7e61ee5e299291aaafeb049c134e8561b823b17d";
+PF.obj.config.auth_token="bef0a15861641d0a49eedf8105780285f3d7b469";
 PF.obj.l10n=[];
 if(typeof CHV=="undefined"){CHV={obj:{},fn:{},str:{}};}
 CHV.obj.embed_tpl={"links":{"label":"Links","options":{"viewer-links":{"label":"Viewer links","template":"%URL_VIEWER%","size":"viewer"}}},"html-codes":{"label":"HTML Codes","options":{"html-embed-medium":{"label":"HTML full linked","template":"<a href=\"%URL_VIEWER_PREVIEW%\"><img src=\"%MEDIUM_URL%\" alt=\"%MEDIUM_NAME%\" border=\"0\"><\/a>","size":"medium"},"html-embed-thumbnail":{"label":"HTML thumbnail linked","template":"<a href=\"%URL_VIEWER_THUMB%\"><img src=\"%THUMB_URL%\" alt=\"%THUMB_NAME%\" border=\"0\"><\/a>","size":"thumb"}}},"bbcodes":{"label":"BBCodes","options":{"bbcode-embed-medium":{"label":"BBCode full linked","template":"[url=%URL_VIEWER_PREVIEW%][img]%MEDIUM_URL%[\/img][\/url]","size":"medium"},"bbcode-embed-thumbnail":{"label":"BBCode thumbnail linked","template":"[url=%URL_VIEWER_THUMB%][img]%THUMB_URL%[\/img][\/url]","size":"thumb"}}}};

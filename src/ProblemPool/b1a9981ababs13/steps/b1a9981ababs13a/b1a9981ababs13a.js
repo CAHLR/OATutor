@@ -1,0 +1,1 @@
+import hints from "./b1a9981ababs13a-index.js"; const step = {id: "b1a9981ababs13a", stepAnswer: ["There are no x-intercepts."], problemType: "MultipleChoice", stepTitle: "Find the x-intercept of $$y=-|x|-2$$", stepBody: "", choices: ["2", "-2", "0", "There are no x-intercepts."], answerType: "string", hints: hints, variabilization: {}}; export {step};

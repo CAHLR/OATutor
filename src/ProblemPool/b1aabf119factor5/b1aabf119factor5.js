@@ -1,0 +1,1 @@
+import steps from "./b1aabf119factor5-index.js"; const problem = {id: "b1aabf119factor5", title: "Factoring a Trionomial by Grouping.", body: "Factor the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

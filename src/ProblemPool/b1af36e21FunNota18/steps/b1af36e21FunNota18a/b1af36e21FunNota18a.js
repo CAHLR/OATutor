@@ -1,0 +1,1 @@
+import hints from "./b1af36e21FunNota18a-index.js"; const step = {id: "b1af36e21FunNota18a", stepAnswer: ["$$\\frac{19}{13}$$"], problemType: "TextBox", stepTitle: "f(-3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

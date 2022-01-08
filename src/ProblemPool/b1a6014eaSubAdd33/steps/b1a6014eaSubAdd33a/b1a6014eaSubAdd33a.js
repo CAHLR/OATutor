@@ -1,0 +1,1 @@
+import hints from "./b1a6014eaSubAdd33a-index.js"; const step = {id: "b1a6014eaSubAdd33a", stepAnswer: ["$$a=-8$$"], problemType: "TextBox", stepTitle: "The difference of 7a and 6a is -8.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

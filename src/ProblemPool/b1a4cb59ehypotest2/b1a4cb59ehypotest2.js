@@ -1,0 +1,1 @@
+import steps from "./b1a4cb59ehypotest2-index.js"; const problem = {id: "b1a4cb59ehypotest2", title: "Marathon Runners", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1a1a1ee1measure9-index.js"; const problem = {id: "b1a1a1ee1measure9", title: "Make Unit Conversions in the Metric System", body: "Convert:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

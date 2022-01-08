@@ -1,0 +1,1 @@
+import steps from "./b1ab50a95log31-index.js"; const problem = {id: "b1ab50a95log31", title: "Evaluating Logarithms: Exercise #6", body: "For the following exercise, solve for x by converting the logarithmic equation to exponential form. $$x=$$?", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./b1a1f32dfFormula1-index.js"; const problem = {id: "b1a1f32dfFormula1", title: "Jamal's Bicycle Ride", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

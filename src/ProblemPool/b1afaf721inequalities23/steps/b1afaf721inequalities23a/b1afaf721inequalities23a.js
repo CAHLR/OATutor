@@ -1,0 +1,1 @@
+import hints from "./b1afaf721inequalities23a-index.js"; const step = {id: "b1afaf721inequalities23a", stepAnswer: ["$$(-\\infty,-15)$$"], problemType: "MultipleChoice", stepTitle: "$$-7d>105$$", stepBody: "", choices: ["$$(-\\infty,-15)$$", "$$(-\\infty,15]$$", "$$(-15,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

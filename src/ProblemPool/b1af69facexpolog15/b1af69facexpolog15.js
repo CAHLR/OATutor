@@ -1,0 +1,1 @@
+import steps from "./b1af69facexpolog15-index.js"; const problem = {id: "b1af69facexpolog15", title: "Fish Population", body: "$$P(t)=\\frac{1000}{1+9e^{@{exponentt}}}$$ represents the population of fish as a function of time.", steps: steps, variabilization: {exponent: ["-0.6", "-0.8", "-0.9"]}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

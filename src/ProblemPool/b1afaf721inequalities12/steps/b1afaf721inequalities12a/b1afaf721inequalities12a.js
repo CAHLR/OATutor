@@ -1,0 +1,1 @@
+import hints from "./b1afaf721inequalities12a-index.js"; const step = {id: "b1afaf721inequalities12a", stepAnswer: ["$$(-25,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$-20<\\frac{4}{5} u$$", stepBody: "", choices: ["$$(-25,\\infty)$$", "$$(-16,\\infty)$$", "$$(-\\infty,-25)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

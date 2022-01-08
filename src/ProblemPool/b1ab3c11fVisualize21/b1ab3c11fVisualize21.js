@@ -1,0 +1,1 @@
+import steps from "./b1ab3c11fVisualize21-index.js"; const problem = {id: "b1ab3c11fVisualize21", title: "Translate the English phrase into an algebraic expression:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

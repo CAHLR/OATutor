@@ -1,0 +1,1 @@
+import steps from "./b1a61c721rational22-index.js"; const problem = {id: "b1a61c721rational22", title: "Rational Expressions", body: "For the following exercise, multiply the rational expressions and express the product in simplest form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

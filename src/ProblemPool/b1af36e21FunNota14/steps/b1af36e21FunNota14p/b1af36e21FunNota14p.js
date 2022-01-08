@@ -1,0 +1,1 @@
+import hints from "./b1af36e21FunNota14p-index.js"; const step = {id: "b1af36e21FunNota14p", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$x=\\operatorname{pm}\\left(a\\right) \\sqrt{1-y}$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

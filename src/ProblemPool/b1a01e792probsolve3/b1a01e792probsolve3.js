@@ -1,0 +1,1 @@
+import steps from "./b1a01e792probsolve3-index.js"; const problem = {id: "b1a01e792probsolve3", title: "Solve number problems", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

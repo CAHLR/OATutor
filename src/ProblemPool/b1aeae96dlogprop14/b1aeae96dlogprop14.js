@@ -1,0 +1,1 @@
+import steps from "./b1aeae96dlogprop14-index.js"; const problem = {id: "b1aeae96dlogprop14", title: "Using the Power Rule for Logarithms to Simplify the Logarithm of a Radical Expression", body: "Expand the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

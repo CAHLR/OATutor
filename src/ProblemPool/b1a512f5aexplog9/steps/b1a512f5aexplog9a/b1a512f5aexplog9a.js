@@ -1,0 +1,1 @@
+import hints from "./b1a512f5aexplog9a-index.js"; const step = {id: "b1a512f5aexplog9a", stepAnswer: ["ln(12)"], problemType: "TextBox", stepTitle: "$$e^{2x}-e^x-132=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

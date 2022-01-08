@@ -1,0 +1,1 @@
+import hints from "./b1a870b02DivMul34a-index.js"; const step = {id: "b1a870b02DivMul34a", stepAnswer: ["28"], problemType: "TextBox", stepTitle: "Three-fourths of f is 21.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

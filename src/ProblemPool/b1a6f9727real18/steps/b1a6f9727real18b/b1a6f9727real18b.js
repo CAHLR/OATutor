@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real18b-index.js"; const step = {id: "b1a6f9727real18b", stepAnswer: ["-66"], problemType: "MultipleChoice", stepTitle: "$$4z-2z\\left(1+4\\right)-36$$ for $$z=5$$", stepBody: "", choices: ["-66", "-86", "-30", "16"], answerType: "string", hints: hints, variabilization: {}}; export {step};

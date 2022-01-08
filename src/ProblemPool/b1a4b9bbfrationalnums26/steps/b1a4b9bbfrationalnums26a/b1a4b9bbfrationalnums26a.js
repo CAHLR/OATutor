@@ -1,0 +1,1 @@
+import hints from "./b1a4b9bbfrationalnums26a-index.js"; const step = {id: "b1a4b9bbfrationalnums26a", stepAnswer: ["$$x^{\\frac{7}{4}}$$"], problemType: "TextBox", stepTitle: "(sqrt(4,x**7))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

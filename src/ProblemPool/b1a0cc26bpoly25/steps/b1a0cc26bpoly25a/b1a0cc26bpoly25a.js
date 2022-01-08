@@ -1,0 +1,1 @@
+import hints from "./b1a0cc26bpoly25a-index.js"; const step = {id: "b1a0cc26bpoly25a", stepAnswer: ["$$y^3-6y^2-y+18$$"], problemType: "TextBox", stepTitle: "$$\\left(y-2\\right) \\left(y^2-4y-9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

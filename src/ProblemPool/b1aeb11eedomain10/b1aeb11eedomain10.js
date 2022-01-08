@@ -1,0 +1,1 @@
+import steps from "./b1aeb11eedomain10-index.js"; const problem = {id: "b1aeb11eedomain10", title: "Finding the Domain and Range", body: "Find the domain and range of the function $$f(x)=2\\sqrt{x+4}$$.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

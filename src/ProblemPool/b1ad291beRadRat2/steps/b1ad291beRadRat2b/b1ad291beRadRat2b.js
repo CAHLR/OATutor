@@ -1,0 +1,1 @@
+import hints from "./b1ad291beRadRat2b-index.js"; const step = {id: "b1ad291beRadRat2b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{\\sqrt{81}}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

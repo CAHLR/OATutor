@@ -1,0 +1,1 @@
+import hints from "./b1ac3d94dProperties21a-index.js"; const step = {id: "b1ac3d94dProperties21a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-8\\times0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

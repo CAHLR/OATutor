@@ -1,0 +1,1 @@
+import steps from "./b1a381217systemeq15-index.js"; const problem = {id: "b1a381217systemeq15", title: "Solve Mixture Applications", body: "Translate to a system of equations and solve", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

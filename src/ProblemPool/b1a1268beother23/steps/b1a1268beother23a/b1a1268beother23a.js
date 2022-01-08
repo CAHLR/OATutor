@@ -1,0 +1,1 @@
+import hints from "./b1a1268beother23a-index.js"; const step = {id: "b1a1268beother23a", stepAnswer: ["3,-3"], problemType: "MultipleChoice", stepTitle: "$$x^4-8x^2-9=0$$", stepBody: "", choices: ["3,-3", "3", "3,-3,1", "3,-3,1,-1"], answerType: "string", hints: hints, variabilization: {}}; export {step};

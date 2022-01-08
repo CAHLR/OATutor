@@ -1,0 +1,1 @@
+import hints from "./b1a01e792probsolve23a-index.js"; const step = {id: "b1a01e792probsolve23a", stepAnswer: ["27,31"], problemType: "TextBox", stepTitle: "The sum of two numbers is fifty-eight. One number is four more than the other. Find the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

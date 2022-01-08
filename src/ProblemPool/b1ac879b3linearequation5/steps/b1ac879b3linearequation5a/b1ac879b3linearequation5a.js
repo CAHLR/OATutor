@@ -1,0 +1,1 @@
+import hints from "./b1ac879b3linearequation5a-index.js"; const step = {id: "b1ac879b3linearequation5a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$y=-x-2$$", stepBody: "What is the slope of the equation?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1aafc2dcMultiply18a-index.js"; const step = {id: "b1aafc2dcMultiply18a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\frac{-52}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

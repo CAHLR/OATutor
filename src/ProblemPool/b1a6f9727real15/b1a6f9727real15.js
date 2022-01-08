@@ -1,0 +1,1 @@
+import steps from "./b1a6f9727real15-index.js"; const problem = {id: "b1a6f9727real15", title: "Baking Cookies", body: "", steps: steps, variabilization: {}, oer: "http://tasks.illustrativemathematics.org/", courseName: "Openstax: College Algebra"}; export { problem };

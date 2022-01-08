@@ -1,0 +1,1 @@
+import hints from "./b1aabf119factor20a-index.js"; const step = {id: "b1aabf119factor20a", stepAnswer: ["$$\\left(9d-1\\right) \\left(d+8\\right)$$"], problemType: "TextBox", stepTitle: "$$9d^2$$ - 73d $$+8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

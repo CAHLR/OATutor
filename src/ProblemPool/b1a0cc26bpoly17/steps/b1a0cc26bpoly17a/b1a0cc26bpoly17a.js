@@ -1,0 +1,1 @@
+import hints from "./b1a0cc26bpoly17a-index.js"; const step = {id: "b1a0cc26bpoly17a", stepAnswer: ["$$24x^2-4x-8$$"], problemType: "TextBox", stepTitle: "$$\\left(4x+2\\right) \\left(6x-4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1afbe5ccpower16a-index.js"; const step = {id: "b1afbe5ccpower16a", stepAnswer: ["neither"], problemType: "MultipleChoice", stepTitle: "f(x) $$=$$ $$3^x+1$$", stepBody: "", choices: ["power", "polynomial", "neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

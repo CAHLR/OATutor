@@ -1,0 +1,1 @@
+import hints from "./b1a4b9bbfrationalnums12c-index.js"; const step = {id: "b1a4b9bbfrationalnums12c", stepAnswer: ["$$z^6$$"], problemType: "TextBox", stepTitle: "$${\\left(z^9\\right)}^{\\frac{2}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

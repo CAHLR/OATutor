@@ -1,0 +1,1 @@
+import hints from "./b1ac0c1d3spe1a-index.js"; const step = {id: "b1ac0c1d3spe1a", stepAnswer: ["$$x^2+10x+25$$"], problemType: "TextBox", stepTitle: "$${\\left(x+5\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

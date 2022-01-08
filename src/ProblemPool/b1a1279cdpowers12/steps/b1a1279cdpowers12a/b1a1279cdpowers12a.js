@@ -1,0 +1,1 @@
+import hints from "./b1a1279cdpowers12a-index.js"; const step = {id: "b1a1279cdpowers12a", stepAnswer: ["$$72u^7$$"], problemType: "TextBox", stepTitle: "$$\\left(-8u^6\\right) \\left(-9u\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

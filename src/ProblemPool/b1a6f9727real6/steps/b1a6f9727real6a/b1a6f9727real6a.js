@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real6a-index.js"; const step = {id: "b1a6f9727real6a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "What is $$4\\left(12+\\left(-7\\right)\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

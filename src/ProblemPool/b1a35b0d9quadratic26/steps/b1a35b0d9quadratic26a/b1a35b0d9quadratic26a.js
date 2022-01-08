@@ -1,0 +1,1 @@
+import hints from "./b1a35b0d9quadratic26a-index.js"; const step = {id: "b1a35b0d9quadratic26a", stepAnswer: ["Maximum"], problemType: "MultipleChoice", stepTitle: "$$y(x)=\\frac{-1}{3} x^2-2x+3$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

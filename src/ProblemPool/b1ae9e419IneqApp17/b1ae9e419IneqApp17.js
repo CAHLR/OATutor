@@ -1,0 +1,1 @@
+import steps from "./b1ae9e419IneqApp17-index.js"; const problem = {id: "b1ae9e419IneqApp17", title: "Marlon's TV Plan", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

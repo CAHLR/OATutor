@@ -1,0 +1,1 @@
+import steps from "./b1a20771equad30-index.js"; const problem = {id: "b1a20771equad30", title: "Solve Quadratic Equation", body: "Using the Zero-Product Property to Solve a Quadratic Equation Written as the Difference of Squares", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

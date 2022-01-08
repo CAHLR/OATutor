@@ -1,0 +1,1 @@
+import hints from "./b1acf3da9gaussian2a-index.js"; const step = {id: "b1acf3da9gaussian2a", stepAnswer: ["$$\\begin{bmatrix} 4 & -3 & 11 \\\\ 3 & 2 & 4 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "4x-3y=11,3x+2y=4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

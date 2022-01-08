@@ -1,0 +1,1 @@
+var hints = [{id: "b1a3c2b68root16a-h1", type: "hint", dependencies: [], title: "Multiplication", text: "Multiplying Each Root", variabilization: {}}, {id: "b1a3c2b68root16a-h2", type: "hint", dependencies: ["b1a3c2b68root16a-h1"], title: "Simplify", text: "Simplifying the Product", variabilization: {}}, ]; export {hints};

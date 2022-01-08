@@ -1,0 +1,1 @@
+import hints from "./b1a9c142dVarCon2a-index.js"; const step = {id: "b1a9c142dVarCon2a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$3x+4=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

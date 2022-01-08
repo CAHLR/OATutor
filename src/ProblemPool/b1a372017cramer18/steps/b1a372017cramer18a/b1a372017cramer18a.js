@@ -1,0 +1,1 @@
+import hints from "./b1a372017cramer18a-index.js"; const step = {id: "b1a372017cramer18a", stepAnswer: ["(3,-7)"], problemType: "MultipleChoice", stepTitle: "$$x+2y=-11;$$ \\n $$-2x+y=-13$$", stepBody: "", choices: ["(3,-7)", "(-7,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

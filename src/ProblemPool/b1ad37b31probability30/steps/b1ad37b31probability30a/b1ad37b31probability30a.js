@@ -1,0 +1,1 @@
+import hints from "./b1ad37b31probability30a-index.js"; const step = {id: "b1ad37b31probability30a", stepAnswer: ["$$\\frac{12}{13}$$"], problemType: "TextBox", stepTitle: "Find the probability of drawing a heart or a non-jack.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

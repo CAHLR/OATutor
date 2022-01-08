@@ -1,0 +1,1 @@
+import hints from "./b1ae3c1a1exponential12a-index.js"; const step = {id: "b1ae3c1a1exponential12a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$f(x)={\\left(-4\\right)}^{2x+3}$$, for f(-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

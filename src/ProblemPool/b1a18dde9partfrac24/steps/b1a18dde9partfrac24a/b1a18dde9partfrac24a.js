@@ -1,0 +1,1 @@
+import hints from "./b1a18dde9partfrac24a-index.js"; const step = {id: "b1a18dde9partfrac24a", stepAnswer: ["1/5x-1/(3(3x-5)+20/(3(3x+5)**2)"], problemType: "TextBox", stepTitle: "$$\\frac{4x^2+55x+25}{5{x\\left(3x+5\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

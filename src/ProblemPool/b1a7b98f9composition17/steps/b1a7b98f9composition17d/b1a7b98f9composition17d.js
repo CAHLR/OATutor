@@ -1,0 +1,1 @@
+import hints from "./b1a7b98f9composition17d-index.js"; const step = {id: "b1a7b98f9composition17d", stepAnswer: ["$$\\frac{\\left(-3x^2+x\\right)}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

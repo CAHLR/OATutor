@@ -1,0 +1,1 @@
+import hints from "./b1a20771equad13a-index.js"; const step = {id: "b1a20771equad13a", stepAnswer: ["sqrt(5)+4, -sqrt(5)+4"], problemType: "TextBox", stepTitle: "$${3\\left(x-4\\right)}^2=15$$.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

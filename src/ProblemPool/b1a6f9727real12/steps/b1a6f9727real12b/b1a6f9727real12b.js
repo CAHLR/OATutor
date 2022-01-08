@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real12b-index.js"; const step = {id: "b1a6f9727real12b", stepAnswer: ["7r-11"], problemType: "MultipleChoice", stepTitle: "$$2r-5\\left(3-r\\right)+4$$", stepBody: "", choices: ["7r-11", "$$-3r+19$$", "$$7r+19$$", "-3r-11"], answerType: "string", hints: hints, variabilization: {}}; export {step};

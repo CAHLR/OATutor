@@ -1,0 +1,1 @@
+import steps from "./b1a6f9727real5-index.js"; const problem = {id: "b1a6f9727real5", title: "Using the Order of Operations", body: "Use the order of operations to evaluate each of the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

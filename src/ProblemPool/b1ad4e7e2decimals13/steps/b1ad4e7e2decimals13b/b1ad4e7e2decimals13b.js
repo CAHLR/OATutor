@@ -1,0 +1,1 @@
+import hints from "./b1ad4e7e2decimals13b-index.js"; const step = {id: "b1ad4e7e2decimals13b", stepAnswer: ["18"], problemType: "TextBox", stepTitle: "Round 18.379 to the nearest whole number", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

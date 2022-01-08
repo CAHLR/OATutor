@@ -1,0 +1,1 @@
+import hints from "./b1a0f69c4conic8a-index.js"; const step = {id: "b1a0f69c4conic8a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Give the Eccentricity", stepBody: "Identify the eccentricity", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

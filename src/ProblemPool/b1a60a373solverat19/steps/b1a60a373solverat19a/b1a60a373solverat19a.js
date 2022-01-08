@@ -1,0 +1,1 @@
+import hints from "./b1a60a373solverat19a-index.js"; const step = {id: "b1a60a373solverat19a", stepAnswer: ["$$d=\\frac{9}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{6}{3}-\\frac{2}{d}=\\frac{4}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

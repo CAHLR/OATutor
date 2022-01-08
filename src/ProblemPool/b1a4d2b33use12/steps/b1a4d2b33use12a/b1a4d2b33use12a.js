@@ -1,0 +1,1 @@
+import hints from "./b1a4d2b33use12a-index.js"; const step = {id: "b1a4d2b33use12a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$6x^2-4x-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

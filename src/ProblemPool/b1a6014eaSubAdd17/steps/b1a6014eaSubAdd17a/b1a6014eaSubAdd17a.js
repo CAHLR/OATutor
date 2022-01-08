@@ -1,0 +1,1 @@
+import hints from "./b1a6014eaSubAdd17a-index.js"; const step = {id: "b1a6014eaSubAdd17a", stepAnswer: ["$$x=11$$"], problemType: "TextBox", stepTitle: "$$x+24=35$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

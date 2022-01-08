@@ -1,0 +1,1 @@
+import steps from "./b1aeb11eedomain3-index.js"; const problem = {id: "b1aeb11eedomain3", title: "Finding the Domain of a Function Involving a Denominator", body: "Find the domain of the function.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a443311sqroots10a-index.js"; const step = {id: "b1a443311sqroots10a", stepAnswer: ["$$\\frac{9x^2}{y^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{162x^{10} y^2}}{\\sqrt{2x^6 y^6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

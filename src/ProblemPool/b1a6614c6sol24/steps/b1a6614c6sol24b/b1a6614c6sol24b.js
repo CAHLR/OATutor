@@ -1,0 +1,1 @@
+import hints from "./b1a6614c6sol24b-index.js"; const step = {id: "b1a6614c6sol24b", stepAnswer: ["220"], problemType: "TextBox", stepTitle: "How many calories are in a cup of cottage cheese?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

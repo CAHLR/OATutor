@@ -1,0 +1,1 @@
+import hints from "./b1a4b9bbfrationalnums1b-index.js"; const step = {id: "b1a4b9bbfrationalnums1b", stepAnswer: ["$$\\sqrt{3, y}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression: $$y^{\\frac{1}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

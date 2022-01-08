@@ -1,0 +1,1 @@
+import hints from "./b1a870b02DivMul14a-index.js"; const step = {id: "b1a870b02DivMul14a", stepAnswer: ["$$\\frac{-9}{20}$$"], problemType: "TextBox", stepTitle: "$$\\frac{9}{25}=-\\left(\\frac{4}{5}\\right) z$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1a8e6481uni12a-index.js"; const step = {id: "b1a8e6481uni12a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "Find the boat’s upstream speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

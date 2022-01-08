@@ -1,0 +1,1 @@
+import hints from "./b1a6614c6sol23a-index.js"; const step = {id: "b1a6614c6sol23a", stepAnswer: ["860"], problemType: "TextBox", stepTitle: "How much sodium is in a hot dog?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

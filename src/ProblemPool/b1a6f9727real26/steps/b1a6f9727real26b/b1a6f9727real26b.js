@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real26b-index.js"; const step = {id: "b1a6f9727real26b", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "$$2\\left(5+3\\times2+4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

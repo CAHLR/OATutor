@@ -1,0 +1,1 @@
+import steps from "./b1a9cf449complex1-index.js"; const problem = {id: "b1a9cf449complex1", title: "Expressing an Imaginary Number in Standard Form", body: "Express the following expression in standard form.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a6f9727real17a-index.js"; const step = {id: "b1a6f9727real17a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "What is $$3-12\\times2+19$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

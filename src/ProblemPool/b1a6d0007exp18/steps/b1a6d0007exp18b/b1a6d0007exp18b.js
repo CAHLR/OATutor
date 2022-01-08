@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp18b-index.js"; const step = {id: "b1a6d0007exp18b", stepAnswer: ["$$3.34\\times {10}^{-9}$$"], problemType: "TextBox", stepTitle: "Time for light to travel 1 m: 0.00000000334 s", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

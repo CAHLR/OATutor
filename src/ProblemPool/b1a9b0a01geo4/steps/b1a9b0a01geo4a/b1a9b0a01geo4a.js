@@ -1,0 +1,1 @@
+import hints from "./b1a9b0a01geo4a-index.js"; const step = {id: "b1a9b0a01geo4a", stepAnswer: ["62"], problemType: "TextBox", stepTitle: "One angle of a right triangle measures 28°. What is the measure of the third angle?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

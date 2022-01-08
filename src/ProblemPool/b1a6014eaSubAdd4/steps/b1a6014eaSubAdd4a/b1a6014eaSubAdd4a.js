@@ -1,0 +1,1 @@
+import hints from "./b1a6014eaSubAdd4a-index.js"; const step = {id: "b1a6014eaSubAdd4a", stepAnswer: ["TURE"], problemType: "MultipleChoice", stepTitle: "Is $$y=\\frac{5}{3}$$ a solution of $$6y+10=12y$$?", stepBody: "", choices: ["FALSE", "TURE", "TRUE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

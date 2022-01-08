@@ -1,0 +1,1 @@
+import steps from "./b1a14ffbcmodeling3-index.js"; const problem = {id: "b1a14ffbcmodeling3", title: "Solving an Inverse Variation Problem", body: "A quantity y varies inversely with the cube of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1ac9c764addand1a-index.js"; const step = {id: "b1ac9c764addand1a", stepAnswer: ["$$\\frac{x+2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{3}+\\frac{2}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

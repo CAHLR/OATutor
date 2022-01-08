@@ -1,0 +1,1 @@
+import steps from "./b1ac0c1d3spe27-index.js"; const problem = {id: "b1ac0c1d3spe27", title: "Product of Conjugates Pattern", body: "Multiply each pair of conjugates using the Product of Conjugates Pattern.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

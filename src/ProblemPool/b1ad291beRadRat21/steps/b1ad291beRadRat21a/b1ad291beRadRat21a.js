@@ -1,0 +1,1 @@
+import hints from "./b1ad291beRadRat21a-index.js"; const step = {id: "b1ad291beRadRat21a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{4, 625}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

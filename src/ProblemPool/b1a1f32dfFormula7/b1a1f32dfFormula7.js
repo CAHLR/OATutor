@@ -1,0 +1,1 @@
+import steps from "./b1a1f32dfFormula7-index.js"; const problem = {id: "b1a1f32dfFormula7", title: "Solve the formula $$d=rt$$ for t:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

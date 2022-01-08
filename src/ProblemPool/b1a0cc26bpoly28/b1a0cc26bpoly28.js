@@ -1,0 +1,1 @@
+import steps from "./b1a0cc26bpoly28-index.js"; const problem = {id: "b1a0cc26bpoly28", title: "Multiplying Polynomials", body: "Expand the expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

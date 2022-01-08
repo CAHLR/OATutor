@@ -1,0 +1,1 @@
+import steps from "./b1ab50a95log14-index.js"; const problem = {id: "b1ab50a95log14", title: "Rewriting and Solving a Real-World Exponential Model", body: "Solve the expression using logarithmic and exponential expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

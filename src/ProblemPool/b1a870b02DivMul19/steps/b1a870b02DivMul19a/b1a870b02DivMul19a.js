@@ -1,0 +1,1 @@
+import hints from "./b1a870b02DivMul19a-index.js"; const step = {id: "b1a870b02DivMul19a", stepAnswer: ["$$\\frac{-4}{7}$$"], problemType: "TextBox", stepTitle: "$$18-22=12x-x-4x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

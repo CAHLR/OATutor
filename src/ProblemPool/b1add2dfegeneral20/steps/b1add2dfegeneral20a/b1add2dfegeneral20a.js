@@ -1,0 +1,1 @@
+import hints from "./b1add2dfegeneral20a-index.js"; const step = {id: "b1add2dfegeneral20a", stepAnswer: ["(5a-6)(2a-1)"], problemType: "TextBox", stepTitle: "$$10a^2-17a+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

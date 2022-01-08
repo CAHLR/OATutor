@@ -1,0 +1,1 @@
+import steps from "./b1a9ed39ahyperbola21-index.js"; const problem = {id: "b1a9ed39ahyperbola21", title: "The Hyperbola", body: "$$9x^2-18x-16y^2+32y-151=0$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

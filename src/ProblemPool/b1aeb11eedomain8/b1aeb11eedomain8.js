@@ -1,0 +1,1 @@
+import steps from "./b1aeb11eedomain8-index.js"; const problem = {id: "b1aeb11eedomain8", title: "Finding the Domain and Range Using Toolkit Functions", body: "Find the domain and range of $$f(x)=2x^3-x$$.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

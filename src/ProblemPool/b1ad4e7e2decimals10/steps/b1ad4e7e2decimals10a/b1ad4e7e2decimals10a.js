@@ -1,0 +1,1 @@
+import hints from "./b1ad4e7e2decimals10a-index.js"; const step = {id: "b1ad4e7e2decimals10a", stepAnswer: ["18.38"], problemType: "TextBox", stepTitle: "Round 18.379 to the nearest hundredth.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

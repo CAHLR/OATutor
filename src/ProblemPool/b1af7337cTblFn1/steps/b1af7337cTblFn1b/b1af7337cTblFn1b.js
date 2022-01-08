@@ -1,0 +1,1 @@
+import hints from "./b1af7337cTblFn1b-index.js"; const step = {id: "b1af7337cTblFn1b", stepAnswer: ["where"], problemType: "MultipleChoice", stepTitle: "Fill in the Second Blank", stepBody: "", choices: ["where", "group", "apply", "where"], answerType: "string", hints: hints, variabilization: {}}; export {step};

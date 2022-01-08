@@ -1,0 +1,1 @@
+import steps from "./b1a833c22linear10-index.js"; const problem = {id: "b1a833c22linear10", title: "Linear Functions", body: "Find the slope of the line that passes through the two given points.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

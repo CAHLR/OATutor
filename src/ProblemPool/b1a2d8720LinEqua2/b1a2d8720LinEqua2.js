@@ -1,0 +1,1 @@
+import steps from "./b1a2d8720LinEqua2-index.js"; const problem = {id: "b1a2d8720LinEqua2", title: "Solving an Equation in One Variable", body: "Solve the following equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

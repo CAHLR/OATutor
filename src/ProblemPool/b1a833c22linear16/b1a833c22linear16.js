@@ -1,0 +1,1 @@
+import steps from "./b1a833c22linear16-index.js"; const problem = {id: "b1a833c22linear16", title: "Writing the Equation of a Vertical Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

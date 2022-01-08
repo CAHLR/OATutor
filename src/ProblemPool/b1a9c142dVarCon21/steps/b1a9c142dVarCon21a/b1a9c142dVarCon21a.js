@@ -1,0 +1,1 @@
+import hints from "./b1a9c142dVarCon21a-index.js"; const step = {id: "b1a9c142dVarCon21a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$8n-4=-2n+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1a28448cslope13a-index.js"; const step = {id: "b1a28448cslope13a", stepAnswer: ["$$7/3;(0,-3)$$"], problemType: "MultipleChoice", stepTitle: "$$7x-3y=9$$", stepBody: "", choices: ["$$7/3;(3,0)$$", "$$3;(0,\\frac{7}{3})$$", "$$7/3;(0,-3)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

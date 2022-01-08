@@ -1,0 +1,1 @@
+import hints from "./b1aeae96dlogprop14a-index.js"; const step = {id: "b1aeae96dlogprop14a", stepAnswer: ["$$\\frac{2}{3} \\ln(x)$$"], problemType: "TextBox", stepTitle: "Expand $$\\ln(x^{\\frac{2}{3}})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

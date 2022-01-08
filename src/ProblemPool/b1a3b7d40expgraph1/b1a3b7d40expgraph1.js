@@ -1,0 +1,1 @@
+import steps from "./b1a3b7d40expgraph1-index.js"; const problem = {id: "b1a3b7d40expgraph1", title: "Finding the domain and range", body: "What is the domain and range of $$f(x)={0.25}^x$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/6-2-graphs-of-exponential-functions", courseName: "Openstax: College Algebra"}; export { problem };

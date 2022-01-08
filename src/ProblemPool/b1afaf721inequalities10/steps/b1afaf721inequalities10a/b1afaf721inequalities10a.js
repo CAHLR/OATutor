@@ -1,0 +1,1 @@
+import hints from "./b1afaf721inequalities10a-index.js"; const step = {id: "b1afaf721inequalities10a", stepAnswer: ["$$(-4,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$-8q<32$$", stepBody: "", choices: ["$$(-4,\\infty)$$", "$$(-\\infty,-4)$$", "$$(-\\infty,4)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

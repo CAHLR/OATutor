@@ -1,0 +1,1 @@
+import hints from "./b1ad291beRadRat20a-index.js"; const step = {id: "b1ad291beRadRat20a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is $$\\sqrt{5, 243}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

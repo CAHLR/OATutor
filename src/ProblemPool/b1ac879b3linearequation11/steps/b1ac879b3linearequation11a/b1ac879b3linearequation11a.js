@@ -1,0 +1,1 @@
+import hints from "./b1ac879b3linearequation11a-index.js"; const step = {id: "b1ac879b3linearequation11a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{3} x-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

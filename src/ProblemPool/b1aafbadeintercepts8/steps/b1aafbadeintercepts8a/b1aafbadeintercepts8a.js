@@ -1,0 +1,1 @@
+import hints from "./b1aafbadeintercepts8a-index.js"; const step = {id: "b1aafbadeintercepts8a", stepAnswer: ["(0,-4)"], problemType: "MultipleChoice", stepTitle: "Find the y intercept of $$4x-3y=12$$", stepBody: "", choices: ["(0,2)I(0,-4)I(0,-2)I(0,-7)", "(0,-4)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

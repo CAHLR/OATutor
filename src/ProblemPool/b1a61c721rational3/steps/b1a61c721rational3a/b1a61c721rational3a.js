@@ -1,0 +1,1 @@
+import hints from "./b1a61c721rational3a-index.js"; const step = {id: "b1a61c721rational3a", stepAnswer: ["$$\\frac{6x+5y}{xy}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{x}+\\frac{6}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1a4cb59ehypotest5-index.js"; const problem = {id: "b1a4cb59ehypotest5", title: "E.coli Study", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

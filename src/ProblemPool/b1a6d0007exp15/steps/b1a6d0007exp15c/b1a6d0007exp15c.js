@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp15c-index.js"; const step = {id: "b1a6d0007exp15c", stepAnswer: ["$$\\frac{j^{12}}{k^8}$$"], problemType: "TextBox", stepTitle: "$${\\left(j^3 k^{-2}\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

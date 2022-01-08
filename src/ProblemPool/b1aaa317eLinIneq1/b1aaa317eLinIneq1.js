@@ -1,0 +1,1 @@
+import steps from "./b1aaa317eLinIneq1-index.js"; const problem = {id: "b1aaa317eLinIneq1", title: "Using Interval Notation to Express All Real Numbers Greater Than or Equal to a", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

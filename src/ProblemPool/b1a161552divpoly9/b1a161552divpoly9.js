@@ -1,0 +1,1 @@
+import steps from "./b1a161552divpoly9-index.js"; const problem = {id: "b1a161552divpoly9", title: "Using Division to Find the Length of a Rectangle", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

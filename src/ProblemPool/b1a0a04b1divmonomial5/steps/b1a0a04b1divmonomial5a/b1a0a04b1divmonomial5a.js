@@ -1,0 +1,1 @@
+import hints from "./b1a0a04b1divmonomial5a-index.js"; const step = {id: "b1a0a04b1divmonomial5a", stepAnswer: ["$$x^4$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^{18}}{x^{22}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

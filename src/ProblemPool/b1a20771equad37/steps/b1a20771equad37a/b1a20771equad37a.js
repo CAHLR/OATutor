@@ -1,0 +1,1 @@
+import hints from "./b1a20771equad37a-index.js"; const step = {id: "b1a20771equad37a", stepAnswer: ["6, -4"], problemType: "TextBox", stepTitle: "$${\\left(x-1\\right)}^2=25$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

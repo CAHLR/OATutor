@@ -1,0 +1,1 @@
+import steps from "./b1a1f0162sequences20-index.js"; const problem = {id: "b1a1f0162sequences20", title: "Writing an Explicit Formula for the nth Term of a Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

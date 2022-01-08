@@ -1,0 +1,1 @@
+import steps from "./b1a3d6a35variation21-index.js"; const problem = {id: "b1a3d6a35variation21", title: "Jesse's Gas", body: "Solve the word problem.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

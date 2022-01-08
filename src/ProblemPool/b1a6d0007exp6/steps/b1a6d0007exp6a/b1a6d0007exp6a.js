@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp6a-index.js"; const step = {id: "b1a6d0007exp6a", stepAnswer: ["$${\\left(3y\\right)}^{24}$$"], problemType: "TextBox", stepTitle: "$${\\left({\\left(3y\\right)}^8\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./b1ae05e04inverse16-index.js"; const problem = {id: "b1ae05e04inverse16", title: "Testing Inverse Relationships Algebraically", body: "Yes or No: Does $$g=f^{\\left(-1\\right)}$$?", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

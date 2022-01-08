@@ -1,0 +1,1 @@
+import hints from "./b1ab3c11fVisualize19a-index.js"; const step = {id: "b1ab3c11fVisualize19a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "(4(-3)+6(-2))/(-3(2)-2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

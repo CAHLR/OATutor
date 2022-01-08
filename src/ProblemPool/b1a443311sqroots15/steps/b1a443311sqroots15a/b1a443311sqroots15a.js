@@ -1,0 +1,1 @@
+import hints from "./b1a443311sqroots15a-index.js"; const step = {id: "b1a443311sqroots15a", stepAnswer: ["$$5\\left(2+\\sqrt{3}\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{2-\\sqrt{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

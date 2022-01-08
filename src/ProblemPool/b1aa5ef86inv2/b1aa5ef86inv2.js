@@ -1,0 +1,1 @@
+import steps from "./b1aa5ef86inv2-index.js"; const problem = {id: "b1aa5ef86inv2", title: "Determining Multiplicative Inverses #1", body: "Are A and B multiplicative inverses of each other?", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

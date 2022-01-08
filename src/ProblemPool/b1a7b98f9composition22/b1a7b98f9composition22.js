@@ -1,0 +1,1 @@
+import steps from "./b1a7b98f9composition22-index.js"; const problem = {id: "b1a7b98f9composition22", title: "Computing Compositions of Functions", body: "Find the indicated function given $$f(x)=2x^2+1$$ and $$g(x)=3x-5$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

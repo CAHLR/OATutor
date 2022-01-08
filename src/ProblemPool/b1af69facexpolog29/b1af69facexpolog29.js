@@ -1,0 +1,1 @@
+import steps from "./b1af69facexpolog29-index.js"; const problem = {id: "b1af69facexpolog29", title: "Logarithmic Application", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a104861trifactor20a-index.js"; const step = {id: "b1a104861trifactor20a", stepAnswer: ["$${\\left(10x-1\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$100x^2-20x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

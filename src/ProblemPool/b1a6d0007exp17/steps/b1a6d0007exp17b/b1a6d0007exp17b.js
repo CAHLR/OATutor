@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp17b-index.js"; const step = {id: "b1a6d0007exp17b", stepAnswer: ["$$1{10}^{12}$$"], problemType: "TextBox", stepTitle: "Number of stars in Andromeda Galaxy: 1,000,000,000,000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

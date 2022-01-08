@@ -1,0 +1,1 @@
+import steps from "./b1a6f9727real22-index.js"; const problem = {id: "b1a6f9727real22", title: "Writing Integers as Equivalent Rational Numbers", body: "Which of the following is equivalent to the given numbers?", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

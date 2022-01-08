@@ -1,0 +1,1 @@
+import hints from "./b1a0cc26bpoly18a-index.js"; const step = {id: "b1a0cc26bpoly18a", stepAnswer: ["$$24b^4-48b^2+24$$"], problemType: "TextBox", stepTitle: "$$\\left(6b^2-6\\right) \\left(4b^2-4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

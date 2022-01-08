@@ -1,0 +1,1 @@
+import hints from "./b1add2dfegeneral12a-index.js"; const step = {id: "b1add2dfegeneral12a", stepAnswer: ["$$\\left(m-3\\right) \\left(m+3\\right) \\left(m^2+9\\right)$$"], problemType: "TextBox", stepTitle: "$$m^4-81$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

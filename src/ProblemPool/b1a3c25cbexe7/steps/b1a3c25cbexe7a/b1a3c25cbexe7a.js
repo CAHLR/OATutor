@@ -1,0 +1,1 @@
+import hints from "./b1a3c25cbexe7a-index.js"; const step = {id: "b1a3c25cbexe7a", stepAnswer: ["(y-2)(y-3)"], problemType: "TextBox", stepTitle: "$$y^2-5y+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

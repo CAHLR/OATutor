@@ -1,0 +1,1 @@
+import hints from "./b1ab8b840systems3a-index.js"; const step = {id: "b1ab8b840systems3a", stepAnswer: ["(8,3)"], problemType: "MultipleChoice", stepTitle: "$$-x+y=-5$$ $$2x-5y=1$$", stepBody: "", choices: ["(4,6)", "(6,4)", "(8,3)", "(8,3)", "(3,8)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

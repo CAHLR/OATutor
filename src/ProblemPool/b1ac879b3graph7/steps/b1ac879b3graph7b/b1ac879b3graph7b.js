@@ -1,0 +1,1 @@
+import hints from "./b1ac879b3graph7b-index.js"; const step = {id: "b1ac879b3graph7b", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "What is the y-value for the y-intercept to the equation $$y=-3x$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

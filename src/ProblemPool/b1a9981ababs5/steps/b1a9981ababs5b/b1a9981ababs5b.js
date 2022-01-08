@@ -1,0 +1,1 @@
+import hints from "./b1a9981ababs5b-index.js"; const step = {id: "b1a9981ababs5b", stepAnswer: ["(0,-4)"], problemType: "TextBox", stepTitle: "Find the y-intercept of $$f(x)=2|x-1|-6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

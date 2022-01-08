@@ -1,0 +1,1 @@
+import hints from "./b1afa0cfequadraticeq14a-index.js"; const step = {id: "b1afa0cfequadraticeq14a", stepAnswer: ["-2 and 8"], problemType: "MultipleChoice", stepTitle: "$${\\left(q-3\\right)}^2$$ $$=$$ 25", stepBody: "", choices: ["-1 and 5", "-3 and 7", "-2 and 8"], answerType: "string", hints: hints, variabilization: {}}; export {step};

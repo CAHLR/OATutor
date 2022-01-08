@@ -1,0 +1,1 @@
+import hints from "./b1aeb11eedomain12a-index.js"; const step = {id: "b1aeb11eedomain12a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "Find the cost of using 1.5 gigabytes of data", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

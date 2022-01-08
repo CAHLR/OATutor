@@ -1,0 +1,1 @@
+import hints from "./b1a512f5aexplog25a-index.js"; const step = {id: "b1a512f5aexplog25a", stepAnswer: ["$$e^2$$"], problemType: "TextBox", stepTitle: "$$2lnx+3=7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

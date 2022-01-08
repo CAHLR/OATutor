@@ -1,0 +1,1 @@
+import hints from "./b1a6d0007exp14b-index.js"; const step = {id: "b1a6d0007exp14b", stepAnswer: ["$$75t^3$$"], problemType: "TextBox", stepTitle: "$${\\left(5t\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

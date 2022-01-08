@@ -1,0 +1,1 @@
+import steps from "./b1a61c721rational16-index.js"; const problem = {id: "b1a61c721rational16", title: "Rational Expressions", body: "Divide the rational expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

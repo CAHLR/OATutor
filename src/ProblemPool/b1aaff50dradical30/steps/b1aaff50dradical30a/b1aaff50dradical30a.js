@@ -1,0 +1,1 @@
+import hints from "./b1aaff50dradical30a-index.js"; const step = {id: "b1aaff50dradical30a", stepAnswer: ["$$\\operatorname{psqrt}\\left(p\\right)$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{p^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

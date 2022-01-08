@@ -1,0 +1,1 @@
+import steps from "./b1a453be6realnumbers14-index.js"; const problem = {id: "b1a453be6realnumbers14", title: "Identifying Real Numbers #1", body: "For each number given, identify whether it is a real number or not.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

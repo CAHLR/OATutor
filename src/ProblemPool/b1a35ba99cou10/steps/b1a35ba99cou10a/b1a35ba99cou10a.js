@@ -1,0 +1,1 @@
+import hints from "./b1a35ba99cou10a-index.js"; const step = {id: "b1a35ba99cou10a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "How many outcomes are possible from tossing a coin and rolling a 6-sided die?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

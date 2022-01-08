@@ -1,0 +1,1 @@
+import hints from "./b1a1279cdpowers4a-index.js"; const step = {id: "b1a1279cdpowers4a", stepAnswer: ["$$q^{42}$$"], problemType: "TextBox", stepTitle: "$$q^{27} q^{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

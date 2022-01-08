@@ -1,0 +1,1 @@
+import hints from "./b1af36e21FunNota17d-index.js"; const step = {id: "b1af36e21FunNota17d", stepAnswer: ["$$-\\sqrt{2-a}+5$$"], problemType: "TextBox", stepTitle: "-f(a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

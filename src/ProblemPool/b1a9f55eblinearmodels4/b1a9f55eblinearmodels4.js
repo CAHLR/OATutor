@@ -1,0 +1,1 @@
+import steps from "./b1a9f55eblinearmodels4-index.js"; const problem = {id: "b1a9f55eblinearmodels4", title: "Exercise 11: Using Linear Models to Predict Outcomes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

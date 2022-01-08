@@ -1,0 +1,1 @@
+import steps from "./b1a2d8720LinEqua7-index.js"; const problem = {id: "b1a2d8720LinEqua7", title: "Solving a Rational Equation without Factoring.", body: "Solve the following rational equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./b1a9f55eblinearmodels21a-index.js"; const step = {id: "b1a9f55eblinearmodels21a", stepAnswer: ["$$\\frac{267}{7}$$"], problemType: "TextBox", stepTitle: "What is the area?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

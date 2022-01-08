@@ -1,0 +1,1 @@
+import hints from "./b1a9981ababs6a-index.js"; const step = {id: "b1a9981ababs6a", stepAnswer: ["-6,7"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=|-2x+1|-13$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

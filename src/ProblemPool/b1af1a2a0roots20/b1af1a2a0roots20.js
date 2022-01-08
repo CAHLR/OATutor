@@ -1,0 +1,1 @@
+import steps from "./b1af1a2a0roots20-index.js"; const problem = {id: "b1af1a2a0roots20", title: "Finding the Square Root of a Number", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

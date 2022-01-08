@@ -1,0 +1,1 @@
+import steps from "./b1a1f0162sequences1-index.js"; const problem = {id: "b1a1f0162sequences1", title: "Finding Explicit Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

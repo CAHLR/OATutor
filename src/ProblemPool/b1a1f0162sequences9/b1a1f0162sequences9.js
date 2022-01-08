@@ -1,0 +1,1 @@
+import steps from "./b1a1f0162sequences9-index.js"; const problem = {id: "b1a1f0162sequences9", title: "Finding First N Terms of a Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

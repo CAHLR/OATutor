@@ -1,0 +1,1 @@
+import hints from "./b1a9981ababs3a-index.js"; const step = {id: "b1a9981ababs3a", stepAnswer: ["-4,2"], problemType: "TextBox", stepTitle: "Find the x-intercept of $$f(x)=-2|x+1|+6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

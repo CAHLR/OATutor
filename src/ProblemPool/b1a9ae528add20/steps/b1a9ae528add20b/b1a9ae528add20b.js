@@ -1,0 +1,1 @@
+import hints from "./b1a9ae528add20b-index.js"; const step = {id: "b1a9ae528add20b", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "8___-abs(-8)", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

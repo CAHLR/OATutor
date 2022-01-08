@@ -1,0 +1,1 @@
+import steps from "./b1a870b02DivMul9-index.js"; const problem = {id: "b1a870b02DivMul9", title: "Solve Equations Using the Division Property of Equality", body: "Solve the equation", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

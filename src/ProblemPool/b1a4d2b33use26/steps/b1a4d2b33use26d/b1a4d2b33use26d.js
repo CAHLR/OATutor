@@ -1,0 +1,1 @@
+import hints from "./b1a4d2b33use26d-index.js"; const step = {id: "b1a4d2b33use26d", stepAnswer: ["y plus 3 is greater than 6."], problemType: "MultipleChoice", stepTitle: "$$y+3>6$$", stepBody: "", choices: ["y plus 3 is greater than 6.", "y plus 3 is less than 6.", "y plus 3 is equal to 6."], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./b1ad4e7e2decimals19c-index.js"; const step = {id: "b1ad4e7e2decimals19c", stepAnswer: ["14200"], problemType: "TextBox", stepTitle: "by 1000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

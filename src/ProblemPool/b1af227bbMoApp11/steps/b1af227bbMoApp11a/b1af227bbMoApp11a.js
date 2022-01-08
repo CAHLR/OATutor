@@ -1,0 +1,1 @@
+import hints from "./b1af227bbMoApp11a-index.js"; const step = {id: "b1af227bbMoApp11a", stepAnswer: ["$${135}^2$$"], problemType: "TextBox", stepTitle: "The perimeter of graph paper is 48 in. The length is 6 in. more than the width. Find the area of the graph paper.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

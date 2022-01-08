@@ -1,0 +1,1 @@
+import hints from "./b1add17b3fractions6a-index.js"; const step = {id: "b1add17b3fractions6a", stepAnswer: ["$$\\frac{1}{x-y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{x}+\\frac{1}{y}}{\\frac{x}{y}-\\frac{y}{x}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

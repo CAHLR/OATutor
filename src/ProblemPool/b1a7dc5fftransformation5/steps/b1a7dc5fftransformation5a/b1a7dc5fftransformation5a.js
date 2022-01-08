@@ -1,0 +1,1 @@
+import hints from "./b1a7dc5fftransformation5a-index.js"; const step = {id: "b1a7dc5fftransformation5a", stepAnswer: ["Odd"], problemType: "MultipleChoice", stepTitle: "$$h(x)=\\frac{1}{x}+3x$$", stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

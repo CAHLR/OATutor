@@ -1,0 +1,1 @@
+import hints from "./b1a9cf449complex19a-index.js"; const step = {id: "b1a9cf449complex19a", stepAnswer: ["15i"], problemType: "TextBox", stepTitle: "$$\\sqrt{-9}+3\\sqrt{-16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

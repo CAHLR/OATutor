@@ -1,0 +1,1 @@
+import hints from "./b1ab1ad7fGenStr25e-index.js"; const step = {id: "b1ab1ad7fGenStr25e", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$8\\left(9b-4\\right)-12=100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
