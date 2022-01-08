@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const util = require('util');
+const fromEntries = require("object.fromentries");
 
 const copyFile = util.promisify(fs.copyFile)
 const readFile = util.promisify(fs.readFile)
@@ -20,6 +21,10 @@ const problemPoolPath = path.join(__dirname, '..', 'ProblemPool')
 const generatedPath = path.join(__dirname, '..', 'generated')
 const poolFilePath = path.join(generatedPath, 'poolFile.json')
 const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures')
+
+if (!Object.fromEntries) {
+    fromEntries.shim();
+}
 
 ;(async () => {
     // let hasPrevPool = true, config = {};
