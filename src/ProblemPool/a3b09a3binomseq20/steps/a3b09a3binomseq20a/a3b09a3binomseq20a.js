@@ -1,0 +1,1 @@
+import hints from "./a3b09a3binomseq20a-index.js"; const step = {id: "a3b09a3binomseq20a", stepAnswer: ["$$220812466875000y^7$$"], problemType: "TextBox", stepTitle: "$${\\left(7+5y\\right)}^{14}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions23a-index.js"; const step = {id: "a02e810proportions23a", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "$$\\frac{2p+4}{8}=\\frac{p+18}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

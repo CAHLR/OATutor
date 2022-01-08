@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions15a-index.js"; const step = {id: "a02e810proportions15a", stepAnswer: ["448"], problemType: "TextBox", stepTitle: "$$\\frac{56}{72}=\\frac{y}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

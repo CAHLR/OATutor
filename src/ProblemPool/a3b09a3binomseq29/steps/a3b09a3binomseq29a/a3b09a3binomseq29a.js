@@ -1,0 +1,1 @@
+import hints from "./a3b09a3binomseq29a-index.js"; const step = {id: "a3b09a3binomseq29a", stepAnswer: ["$$1024x^5+2560x^4 y+2560x^3 y^2+1280x^{y^3}+320{xy}^4+32y^4$$"], problemType: "TextBox", stepTitle: "$${\\left(4x+2y\\right)}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
