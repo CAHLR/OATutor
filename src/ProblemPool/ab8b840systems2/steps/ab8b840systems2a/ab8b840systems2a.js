@@ -1,1 +1,1 @@
-import hints from "./ab8b840systems2a-index.js"; const step = {id: "ab8b840systems2a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["False", "True", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./ab8b840systems2a-index.js"; const step = {id: "ab8b840systems2a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["True", "FALSE", "False"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a2ef97dGrphingQuads12-index.js"; const problem = {id: "a2ef97dGrphingQuads12", title: "Finding minimum value of a parabola", body: "Find the x-value of minimum value of the quadratic equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

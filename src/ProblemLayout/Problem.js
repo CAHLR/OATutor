@@ -17,10 +17,12 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { ThemeContext } from '../config/config.js';
+import { MIDDLEWARE_URL, ThemeContext } from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
+import Spacer from "../Components/_General/Spacer";
+import { stagingProp } from "../util/addStagingProperty";
 
 class Problem extends React.Component {
     static contextType = ThemeContext;
@@ -46,6 +48,11 @@ class Problem extends React.Component {
         const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] = lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || "";
+
+        // query selects all katex annotation and adds aria label attribute to it
+        for (const annotation of document.querySelectorAll("annotation")) {
+            annotation.ariaLabel = annotation.textContent
+        }
     }
 
     componentWillUnmount() {
@@ -69,7 +76,7 @@ class Problem extends React.Component {
     updateCanvas = async (mastery, components) => {
         if (this.context.jwt) {
             let err, response;
-            [err, response] = await to(fetch(this.context.middlewareURL + '/postScore', {
+            [err, response] = await to(fetch(`${MIDDLEWARE_URL}/postScore`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -240,21 +247,26 @@ class Problem extends React.Component {
 
         return (
             <div>
-                <div className={classes.prompt}>
+                <div className={classes.prompt} role={"banner"}>
                     <Card className={classes.titleCard}>
-                        <CardContent>
-                            <h2 className={classes.problemHeader}>
+                        <CardContent {...stagingProp({
+                            "data-selenium-target": "problem-header"
+                        })}>
+                            <h1 className={classes.problemHeader}>
                                 {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                                 <hr/>
-                            </h2>
+                            </h1>
                             <div className={classes.problemBody}>
                                 {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
                             </div>
                         </CardContent>
                     </Card>
+                    <Spacer height={8}/>
                     <hr/>
                 </div>
-                {this.state.steps}
+                <div role={"main"}>
+                    {this.state.steps}
+                </div>
                 <div width="100%">
                     {this.context.debug ?
                         <Grid container spacing={0}>
@@ -328,7 +340,7 @@ class Problem extends React.Component {
                         <div className={classes.textBoxHeader}>
                             <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
                         </div>
-                        {this.state.feedbackSubmitted ? <br/> : <Grid container spacing={0}>
+                        {this.state.feedbackSubmitted ? <Spacer/> : <Grid container spacing={0}>
                             <Grid item xs={1} sm={2} md={2} key={1}/>
                             <Grid item xs={10} sm={8} md={8} key={2}>
                                 <TextField
@@ -358,7 +370,7 @@ class Problem extends React.Component {
                                 </Grid>
                                 <Grid item xs={3} sm={3} md={5} key={3}/>
                             </Grid>
-                            <br/></div>}
+                            <Spacer/></div>}
 
 
                 </div> : ""}

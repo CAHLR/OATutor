@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums1c-index.js"; const step = {id: "a4b9bbfrationalnums1c", stepAnswer: ["$$\\sqrt{4, z}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression: $$z^{\\frac{1}{4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aaff50dradical14a-index.js"; const step = {id: "aaff50dradical14a", stepAnswer: ["$$2-\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "Simplify $$\\frac{6-\\sqrt{45}}{3}$$", stepBody: "Write your answer in radical form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

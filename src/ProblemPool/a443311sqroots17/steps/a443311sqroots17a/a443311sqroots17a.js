@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots17a-index.js"; const step = {id: "a443311sqroots17a", stepAnswer: ["$$\\frac{2\\sqrt{2}}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{72}}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

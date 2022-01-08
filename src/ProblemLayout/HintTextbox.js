@@ -8,6 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import { chooseVariables } from '../ProblemLogic/renderText.js';
 import { ThemeContext } from '../config/config.js';
 import ProblemInput from "./ProblemInput/ProblemInput";
+import { toast } from "react-toastify";
+import { stagingProp } from "../util/addStagingProperty";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -34,6 +36,16 @@ class HintTextbox extends React.Component {
         const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, chooseVariables(this.props.hintVars, this.props.seed));
         this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
+        if (correctAnswer) {
+            toast.success("Correct Answer!", {
+                autoClose: 3000
+            })
+        } else {
+            toast.error("Incorrect Answer!", {
+                autoClose: 3000
+            })
+        }
+
         this.setState({
             isCorrect: correctAnswer,
             checkMarkOpacity: correctAnswer === true ? '100' : '0'
@@ -46,11 +58,13 @@ class HintTextbox extends React.Component {
 
     setInputValState = (inputVal) => {
         // console.debug("new inputVal state: ", inputVal)
-        this.setState({ inputVal })
+        this.setState(({ isCorrect }) => ({ inputVal, isCorrect: isCorrect ? true : null }))
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, index, hintNum } = this.props;
+        const hintIndex = `${hintNum}-${index}`
+
         return (
             <div>
                 <ProblemInput
@@ -63,6 +77,7 @@ class HintTextbox extends React.Component {
                     editInput={this.editInput}
                     setInputValState={this.setInputValState}
                     handleKey={this.handleKey}
+                    index={hintIndex}
                 />
 
                 <Grid container spacing={0} justifyContent="center" alignItems="center">
@@ -70,19 +85,31 @@ class HintTextbox extends React.Component {
                     <Grid item xs={4} sm={4} md={1}>
                         {this.props.type !== "subHintTextbox" ?
                             <center>
-                                <IconButton aria-label="delete" onClick={this.props.toggleHints}>
+                                <IconButton aria-label="delete" onClick={this.props.toggleHints}
+                                            title="View available hints"
+                                            {...stagingProp({
+                                                "data-selenium-target": `hint-button-${hintIndex}`
+                                            })}
+                                >
                                     <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                         title="View available hints"
                                          alt="hintToggle"/>
                                 </IconButton>
-                            </center> : <img src={'/static/images/icons/raise_hand.png'} title="View available hints"
-                                             alt="hintToggle"
-                                             style={{ visibility: "hidden" }}/>}
+                            </center> :
+                            <img src={'/static/images/icons/raise_hand.png'}
+                                 alt="hintToggle"
+                                 style={{ visibility: "hidden" }}/>
+                        }
                     </Grid>
                     <Grid item xs={4} sm={4} md={2}>
                         <center>
                             <Button className={classes.button} style={{ width: "80%" }} size="small"
-                                    onClick={this.submit}>Submit</Button>
+                                    onClick={this.submit}
+                                    {...stagingProp({
+                                        "data-selenium-target": `submit-button-${hintIndex}`
+                                    })}
+                            >
+                                Submit
+                            </Button>
                         </center>
                     </Grid>
                     <Grid item xs={4} sm={3} md={1}>
@@ -92,16 +119,24 @@ class HintTextbox extends React.Component {
                             alignContent: "center",
                             justifyContent: "center"
                         }}>
-                            {this.state.isCorrect ?
+                            {this.state.isCorrect &&
                                 <img className={classes.checkImage}
                                      style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
                                      alt=""
-                                     src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/> : ""}
-                            {this.state.isCorrect === false ?
+                                     {...stagingProp({
+                                         "data-selenium-target": `step-correct-img-${hintIndex}`
+                                     })}
+                                     src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                            }
+                            {this.state.isCorrect === false &&
                                 <img className={classes.checkImage}
                                      style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
                                      alt=""
-                                     src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/> : ""}
+                                     {...stagingProp({
+                                         "data-selenium-target": `step-correct-img-${hintIndex}`
+                                     })}
+                                     src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
+                            }
                         </div>
                     </Grid>
                     <Grid item xs={false} sm={1} md={4}/>

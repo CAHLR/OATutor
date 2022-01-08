@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums22a-index.js"; const step = {id: "a4b9bbfrationalnums22a", stepAnswer: ["$$-\\left(x^{\\frac{1}{7}}\\right)$$"], problemType: "TextBox", stepTitle: "-(sqrt(7,x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

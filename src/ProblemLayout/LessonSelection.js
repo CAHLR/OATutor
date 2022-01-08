@@ -11,6 +11,7 @@ import { lessonPlans, coursePlans, ThemeContext } from '../config/config.js';
 import {
     NavLink
 } from "react-router-dom";
+import Spacer from "../Components/_General/Spacer";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -51,7 +52,7 @@ class LessonSelection extends React.Component {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <Box width="75%" maxWidth={1500}>
+                        <Box width="75%" maxWidth={1500} role={"main"}>
                             <center>
                                 {this.isPrivileged
                                     ? <h1>Welcome Instructor!</h1>
@@ -63,7 +64,7 @@ class LessonSelection extends React.Component {
                                 }
                             </center>
                             <Divider/>
-                            <br/>
+                            <Spacer/>
                             <Grid container spacing={3}>
                                 {this.coursePlans.map((course, i) => {
                                     return (
@@ -74,17 +75,18 @@ class LessonSelection extends React.Component {
                                                         marginTop: "5px",
                                                         marginBottom: "10px"
                                                     }}>{course.courseName}</h2>
-                                                    <NavLink activeClassName="active" className="link"
-                                                             to={"/courses/" + i} type="menu">
-                                                        <IconButton aria-label="delete"
-                                                                    onClick={() => this.props.selectCourse(course)}>
-                                                            <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
-                                                                width="64px"
-                                                                title="View course"
-                                                                alt="folderIcon"/>
-                                                        </IconButton>
-                                                    </NavLink>
+                                                    <IconButton aria-label={`View Course ${i}`}
+                                                                aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
+                                                                role={"link"}
+                                                                onClick={() => {
+                                                                    this.props.history.push(`/courses/${i}`)
+                                                                    this.props.selectCourse(course)
+                                                                }}>
+                                                        <img
+                                                            src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
+                                                            width="64px"
+                                                            alt="folderIcon"/>
+                                                    </IconButton>
                                                 </Paper>
                                             </center>
                                         </Grid>
@@ -93,7 +95,7 @@ class LessonSelection extends React.Component {
                             </Grid>
                         </Box>
                     </Grid>
-                    <br/>
+                    <Spacer/>
                     <Grid container spacing={0}>
                         <Grid item xs={3} sm={3} md={5} key={1}/>
                         {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
@@ -107,7 +109,7 @@ class LessonSelection extends React.Component {
                         </Grid>}
                         <Grid item xs={3} sm={3} md={4} key={3}/>
                     </Grid>
-                    <br/>
+                    <Spacer/>
                 </div>
             );
         } else {
@@ -120,7 +122,7 @@ class LessonSelection extends React.Component {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <Box width="75%" maxWidth={1500}>
+                        <Box width="75%" maxWidth={1500} role={"main"}>
                             <center>
                                 {this.isPrivileged
                                     ? <h1>Welcome Instructor!</h1>
@@ -132,7 +134,7 @@ class LessonSelection extends React.Component {
                                 }
                             </center>
                             <Divider/>
-                            <br/>
+                            <Spacer/>
                             <Grid container spacing={3}>
                                 {this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
                                     return (
@@ -150,7 +152,10 @@ class LessonSelection extends React.Component {
                                                         <Button variant="contained" color="primary"
                                                                 className={classes.button}
                                                                 style={{ marginBottom: "10px" }}
-                                                                onClick={() => this.props.selectLesson(lesson)}>
+                                                                onClick={() => {
+                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                    this.props.selectLesson(lesson)
+                                                                }}>
                                                             Select
                                                         </Button>
                                                     </NavLink>
@@ -160,9 +165,10 @@ class LessonSelection extends React.Component {
                                     )
                                 })}
                             </Grid>
+                            <Spacer/>
                         </Box>
                     </Grid>
-                    <br/>
+                    <Spacer/>
                     <Grid container spacing={0}>
                         <Grid item xs={3} sm={3} md={5} key={1}/>
                         {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
@@ -176,7 +182,7 @@ class LessonSelection extends React.Component {
                         </Grid>}
                         <Grid item xs={3} sm={3} md={4} key={3}/>
                     </Grid>
-                    <br/>
+                    <Spacer/>
                 </div>
             );
         }

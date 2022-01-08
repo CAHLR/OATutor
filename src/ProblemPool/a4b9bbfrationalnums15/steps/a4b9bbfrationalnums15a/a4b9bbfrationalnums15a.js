@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums15a-index.js"; const step = {id: "a4b9bbfrationalnums15a", stepAnswer: ["$$x^2$$"], problemType: "TextBox", stepTitle: "(x**(3/4)*x**(-1/4))/(x**(-6/4)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

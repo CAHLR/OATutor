@@ -1,0 +1,1 @@
+import steps from "./a28722cappquad7-index.js"; const problem = {id: "a28722cappquad7", title: "Projectile Motion", body: "Find the number(s) that satisfy the given conditions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -9,6 +9,8 @@ import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
 import { shuffleArray } from "../../util/shuffleArray";
+import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
+import { stagingProp } from "../../util/addStagingProperty";
 
 class ProblemInput extends React.Component {
     constructor(props) {
@@ -23,6 +25,11 @@ class ProblemInput extends React.Component {
         console.debug('problem', this.props.step, 'seed', this.props.seed)
         if (this.isMatrixInput()) {
             console.log('automatically determined matrix input to be the correct problem type')
+        }
+
+        const mqDisplayArea = this.equationRef?.current?.querySelector(".mq-editable-field > .mq-root-block")
+        if (mqDisplayArea != null) {
+            mqDisplayArea.ariaHidden = true
         }
     }
 
@@ -40,6 +47,14 @@ class ProblemInput extends React.Component {
     onEquationChange(eq) {
         const containerEl = this.equationRef?.current
         const eqContentEl = this.equationRef?.current?.querySelector(".mq-editable-field")
+
+        const textareaEl = this.equationRef?.current?.querySelector(".mq-textarea > textarea")
+
+        if (textareaEl != null) {
+            console.debug("not null!", textareaEl)
+            textareaEl.ariaLabel = `Current value: ${eq}`
+        }
+
         if (containerEl != null && eqContentEl != null) {
             const eqContainer = eqContentEl.querySelector("*[mathquill-block-id]")
             if (eqContainer != null) {
@@ -54,7 +69,7 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state } = this.props;
+        const { classes, state, index } = this.props;
 
         let { problemType } = this.props.step;
 
@@ -69,20 +84,31 @@ class ProblemInput extends React.Component {
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <center
                             ref={this.equationRef}
-                            className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}>
+                            className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}
+                            {...stagingProp({
+                                "data-selenium-target": `arithmetic-answer-${index}`
+                            })}
+                        >
                             <EquationEditor
                                 value={state.inputVal}
                                 onChange={this.onEquationChange}
                                 style={{ width: "100%" }}
-                                autoCommands={this.props.context.autoCommands}
-                                autoOperatorNames={this.props.context.autoOperatorNames}
+                                autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
+                                autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
                             />
                         </center>
                     )}
                     {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
                             ref={this.textFieldRef}
-                            inputProps={{ min: 0, style: { textAlign: 'center' } }}
+                            inputProps={{
+                                min: 0,
+                                style: { textAlign: 'center' },
+                                "aria-label": "Enter a response to the question above"
+                            }}
+                            {...stagingProp({
+                                "data-selenium-target": `string-answer-${index}`
+                            })}
                             error={state.isCorrect === false}
                             className={classes.inputField}
                             variant="outlined"
@@ -98,7 +124,9 @@ class ProblemInput extends React.Component {
                     {problemType === "MultipleChoice" && (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
-                            choices={shuffleArray(this.props.step.choices, this.props.seed)}/>
+                            choices={shuffleArray(this.props.step.choices, this.props.seed)}
+                            index={index}
+                        />
                     )}
                     {problemType === "GridInput" && (
                         <GridInput
@@ -107,6 +135,7 @@ class ProblemInput extends React.Component {
                             numCols={this.props.step.numCols}
                             context={this.props.context}
                             classes={this.props.classes}
+                            index={index}
                         />
                     )}
                     {problemType === "MatrixInput" && (
@@ -116,6 +145,7 @@ class ProblemInput extends React.Component {
                             numCols={this.props.step.numCols}
                             context={this.props.context}
                             classes={this.props.classes}
+                            index={index}
                         />
                     )}
                 </Grid>

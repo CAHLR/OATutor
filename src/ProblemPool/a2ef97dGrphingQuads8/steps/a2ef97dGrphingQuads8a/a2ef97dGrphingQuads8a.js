@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads8a-index.js"; const step = {id: "a2ef97dGrphingQuads8a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y=3x^2-6x+2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
