@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const util = require('util');
-const fromEntries = require("object.fromentries");
 
 const copyFile = util.promisify(fs.copyFile)
 const readFile = util.promisify(fs.readFile)
@@ -9,7 +8,7 @@ const readdir = util.promisify(fs.readdir)
 const lstat = util.promisify(fs.lstat)
 const writeFile = util.promisify(fs.writeFile)
 const mkdir = util.promisify(fs.mkdir)
-const rmdir = util.promisify(fs.rmdir)
+const rm = util.promisify(fs.rm)
 
 if (+process.versions.node.split(".")[0] < 10) {
     console.debug('Please upgrade to node v10.12.X+')
@@ -21,10 +20,6 @@ const problemPoolPath = path.join(__dirname, '..', 'ProblemPool')
 const generatedPath = path.join(__dirname, '..', 'generated')
 const poolFilePath = path.join(generatedPath, 'poolFile.json')
 const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures')
-
-if (!Object.fromEntries) {
-    fromEntries.shim();
-}
 
 ;(async () => {
     // let hasPrevPool = true, config = {};
@@ -74,7 +69,7 @@ if (!Object.fromEntries) {
     })
 
     // remove existing static figures
-    await rmdir(staticFiguresPath, { recursive: true }).catch(err => {
+    await rm(staticFiguresPath, { recursive: true }).catch(err => {
         console.debug(err)
         console.error('error removing existing figures')
         process.exit(1)
