@@ -1,1 +1,0 @@
-import hints from "./b1af69facexpolog30a-index.js"; const step = {id: "b1af69facexpolog30a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "How many people started the rumor?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

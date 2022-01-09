@@ -1,1 +1,0 @@
-import hints from "./b1add2dfegeneral11a-index.js"; const step = {id: "b1add2dfegeneral11a", stepAnswer: ["$$\\left(k-2\\right) \\left(k+2\\right) \\left(k^2+4\\right)$$"], problemType: "TextBox", stepTitle: "$$k^4-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1a9ae528add2c-index.js"; const step = {id: "b1a9ae528add2c", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "$$-|u|$$ when $$u=12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

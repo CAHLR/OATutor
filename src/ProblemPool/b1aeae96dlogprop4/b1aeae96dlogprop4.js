@@ -1,1 +1,0 @@
-import steps from "./b1aeae96dlogprop4-index.js"; const problem = {id: "b1aeae96dlogprop4", title: "Using the Quotient Rule for Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1ab8b840systemeqs11-index.js"; const problem = {id: "b1ab8b840systemeqs11", title: "Solving systemeqs of Equations", body: "Determine whether the ordered pair (3,5) is a solution to the system of equations:", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

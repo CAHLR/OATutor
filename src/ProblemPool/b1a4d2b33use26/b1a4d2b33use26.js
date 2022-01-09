@@ -1,1 +1,0 @@
-import steps from "./b1a4d2b33use26-index.js"; const problem = {id: "b1a4d2b33use26", title: "Translating From Algebra Into English", body: "Translate from algebra into English.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1a3d6ae2sys9-index.js"; const problem = {id: "b1a3d6ae2sys9", title: "Solutions of a System of Equations", body: "Determine if the following points are solutions to the given system of equation:\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a28448cslope21a-index.js"; const step = {id: "b1a28448cslope21a", stepAnswer: ["Parallel"], problemType: "MultipleChoice", stepTitle: "$$y=2$$, $$y=6$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

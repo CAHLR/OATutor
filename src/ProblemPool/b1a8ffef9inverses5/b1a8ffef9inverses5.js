@@ -1,1 +1,0 @@
-import steps from "./b1a8ffef9inverses5-index.js"; const problem = {id: "b1a8ffef9inverses5", title: "Finding the Inverse of a Radical Function", body: "Restrict the domain of the following function and then find the inverse.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

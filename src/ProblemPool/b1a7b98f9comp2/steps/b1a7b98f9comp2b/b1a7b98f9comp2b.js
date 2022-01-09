@@ -1,1 +1,0 @@
-import hints from "./b1a7b98f9comp2b-index.js"; const step = {id: "b1a7b98f9comp2b", stepAnswer: ["$$-2x+2$$"], problemType: "TextBox", stepTitle: "Using the functions provided, find g(f(x)). $$f(x)=2x+1$$, $$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1aeb11eedomain14-index.js"; const problem = {id: "b1aeb11eedomain14", title: "Finding the Domain of a Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

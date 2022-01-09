@@ -1,1 +1,0 @@
-import steps from "./b1a35ba99cou1-index.js"; const problem = {id: "b1a35ba99cou1", title: "Addition Principle", body: "Assume that there are n ways an event A can happen, m ways an event B can happen, and that A and B are non-overlapping.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

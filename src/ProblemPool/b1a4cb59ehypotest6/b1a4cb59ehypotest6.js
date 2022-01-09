@@ -1,1 +1,0 @@
-import steps from "./b1a4cb59ehypotest6-index.js"; const problem = {id: "b1a4cb59ehypotest6", title: "Distribution for Hypothesis Testing", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

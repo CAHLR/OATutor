@@ -1,1 +1,0 @@
-import steps from "./b1a4b9bbfrationalnums19-index.js"; const problem = {id: "b1a4b9bbfrationalnums19", title: "Radical Expressions", body: "Write as a radical expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1a4cb59ehypotest3-index.js"; const problem = {id: "b1a4cb59ehypotest3", title: "Classify the Error", body: "Decide whether each of the following is a Type I error or a Type II error.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

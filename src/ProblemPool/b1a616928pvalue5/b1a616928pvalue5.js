@@ -1,1 +1,0 @@
-import steps from "./b1a616928pvalue5-index.js"; const problem = {id: "b1a616928pvalue5", title: "Interpreting Normal Distribution for Means", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

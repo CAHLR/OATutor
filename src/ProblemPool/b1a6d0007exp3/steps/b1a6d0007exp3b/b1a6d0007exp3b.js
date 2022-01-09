@@ -1,1 +1,0 @@
-import hints from "./b1a6d0007exp3b-index.js"; const step = {id: "b1a6d0007exp3b", stepAnswer: ["$$t^8$$"], problemType: "TextBox", stepTitle: "$$\\frac{t^{23}}{t^{15}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

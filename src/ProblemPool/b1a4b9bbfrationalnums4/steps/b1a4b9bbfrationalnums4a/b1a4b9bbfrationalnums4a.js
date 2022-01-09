@@ -1,1 +1,0 @@
-import hints from "./b1a4b9bbfrationalnums4a-index.js"; const step = {id: "b1a4b9bbfrationalnums4a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$${25}^{\\frac{1}{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a0cc26bpoly1-index.js"; const problem = {id: "b1a0cc26bpoly1", title: "Adding Polynomials", body: "Find the sum of the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

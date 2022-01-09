@@ -1,1 +1,0 @@
-import hints from "./b1a4b9bbfrationalnums13a-index.js"; const step = {id: "b1a4b9bbfrationalnums13a", stepAnswer: ["x"], problemType: "TextBox", stepTitle: "$${\\left(r^6\\right)}^{\\frac{5}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

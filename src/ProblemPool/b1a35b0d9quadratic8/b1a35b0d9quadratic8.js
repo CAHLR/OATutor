@@ -1,1 +1,0 @@
-import steps from "./b1a35b0d9quadratic8-index.js"; const problem = {id: "b1a35b0d9quadratic8", title: "Finding the x-Intercepts of a Parabola", body: "Find the x- intercepts of the quadratic function", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

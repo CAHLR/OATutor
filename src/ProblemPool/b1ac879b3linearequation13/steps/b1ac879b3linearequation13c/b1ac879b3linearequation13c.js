@@ -1,1 +1,0 @@
-import hints from "./b1ac879b3linearequation13c-index.js"; const step = {id: "b1ac879b3linearequation13c", stepAnswer: ["$$\\frac{-4}{5}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{-4}{5} x-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

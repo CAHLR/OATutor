@@ -1,1 +1,0 @@
-import hints from "./b1a6f9727real8c-index.js"; const step = {id: "b1a6f9727real8c", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: "If $$x=-4$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

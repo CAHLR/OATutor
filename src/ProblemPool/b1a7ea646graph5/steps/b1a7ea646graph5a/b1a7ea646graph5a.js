@@ -1,1 +1,0 @@
-import hints from "./b1a7ea646graph5a-index.js"; const step = {id: "b1a7ea646graph5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$f(x)=-\\left(x^3\\right)+4x^5-3x^2+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1ad4e7e2decimals26-index.js"; const problem = {id: "b1ad4e7e2decimals26", title: "Round Decimals", body: "In the following exercises, round each number to the nearest tenth.", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

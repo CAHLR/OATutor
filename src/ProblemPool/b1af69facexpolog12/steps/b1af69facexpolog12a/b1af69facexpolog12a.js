@@ -1,1 +1,0 @@
-import hints from "./b1af69facexpolog12a-index.js"; const step = {id: "b1af69facexpolog12a", stepAnswer: ["@{ans}"], problemType: "TextBox", stepTitle: "Find f(0). Round to the nearest whole number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {numerator: ["150", "160", "170"], ans: ["17", "18", "19"]}}; export {step};

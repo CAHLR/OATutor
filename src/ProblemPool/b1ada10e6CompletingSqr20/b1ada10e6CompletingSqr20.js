@@ -1,1 +1,0 @@
-import steps from "./b1ada10e6CompletingSqr20-index.js"; const problem = {id: "b1ada10e6CompletingSqr20", title: "Complete a Square", body: "Complete the square to make a perfect square trinomial. Then, write the result as a binomial square.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

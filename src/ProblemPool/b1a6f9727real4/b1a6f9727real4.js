@@ -1,1 +1,0 @@
-import steps from "./b1a6f9727real4-index.js"; const problem = {id: "b1a6f9727real4", title: "Properties of Real Numbers", body: "", steps: steps, variabilization: {}, oer: "https://www.oercommons.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a453be6realnumbers7b-index.js"; const step = {id: "b1a453be6realnumbers7b", stepAnswer: ["$$\\frac{731}{100}$$"], problemType: "TextBox", stepTitle: "7.31", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

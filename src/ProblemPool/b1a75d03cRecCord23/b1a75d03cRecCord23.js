@@ -1,1 +1,0 @@
-import steps from "./b1a75d03cRecCord23-index.js"; const problem = {id: "b1a75d03cRecCord23", title: "Finding Intercepts: Numeric", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

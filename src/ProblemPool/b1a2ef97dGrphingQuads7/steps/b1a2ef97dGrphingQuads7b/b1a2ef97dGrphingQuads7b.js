@@ -1,1 +1,0 @@
-import hints from "./b1a2ef97dGrphingQuads7b-index.js"; const step = {id: "b1a2ef97dGrphingQuads7b", stepAnswer: ["Upward"], problemType: "MultipleChoice", stepTitle: "Determine whether each parabola opens upward or downward:", stepBody: "y $$=$$ $$6x^2+7x-9$$", choices: ["Upward", "Downward"], answerType: "string", hints: hints, variabilization: {}}; export {step};

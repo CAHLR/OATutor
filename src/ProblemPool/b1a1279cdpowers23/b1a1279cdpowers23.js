@@ -1,1 +1,0 @@
-import steps from "./b1a1279cdpowers23-index.js"; const problem = {id: "b1a1279cdpowers23", title: "Simplify Expressions Using the Product to a Power Property", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

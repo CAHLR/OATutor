@@ -1,1 +1,0 @@
-import steps from "./b1ae3c1a1exponential25-index.js"; const problem = {id: "b1ae3c1a1exponential25", title: "Exercise #5: Finding Exponential Formulas", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

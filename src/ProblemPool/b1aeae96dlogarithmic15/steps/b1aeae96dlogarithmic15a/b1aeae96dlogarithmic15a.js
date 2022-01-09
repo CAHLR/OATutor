@@ -1,1 +1,0 @@
-import hints from "./b1aeae96dlogarithmic15a-index.js"; const step = {id: "b1aeae96dlogarithmic15a", stepAnswer: ["2.00746"], problemType: "TextBox", stepTitle: "$$\\log_{8}\\left(65\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

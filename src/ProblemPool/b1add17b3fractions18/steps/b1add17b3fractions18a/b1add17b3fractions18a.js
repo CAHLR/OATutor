@@ -1,1 +1,0 @@
-import hints from "./b1add17b3fractions18a-index.js"; const step = {id: "b1add17b3fractions18a", stepAnswer: ["$$\\frac{rt}{t-r}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{r}+\\frac{1}{t}}{\\frac{1}{r^2}-\\frac{1}{t^2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1a18dde9partfrac29a-index.js"; const step = {id: "b1a18dde9partfrac29a", stepAnswer: ["$$\\left(-\\frac{5}{x+2}\\right)+\\frac{8}{x^2-2x+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(-5x^2+18x-4\\right)}{x^3+8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

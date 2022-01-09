@@ -1,1 +1,0 @@
-import steps from "./b1a20771equad32-index.js"; const problem = {id: "b1a20771equad32", title: "Solve Quadratic Equation", body: "Solving a Quadratic Equation Using Grouping", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

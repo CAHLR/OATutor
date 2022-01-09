@@ -1,1 +1,0 @@
-import steps from "./b1a833c22linear17-index.js"; const problem = {id: "b1a833c22linear17", title: "Writing the Equation of a Line Parallel or Perpendicular to a Given Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

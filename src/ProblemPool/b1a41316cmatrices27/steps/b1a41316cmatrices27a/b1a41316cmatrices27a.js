@@ -1,1 +1,0 @@
-import hints from "./b1a41316cmatrices27a-index.js"; const step = {id: "b1a41316cmatrices27a", stepAnswer: ["$$\\begin{bmatrix} -800 & 500 \\\\ -300 & 800 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "AB", stepBody: "If the problem has no solution, simply enter \"No Solution\" as your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

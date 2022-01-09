@@ -1,1 +1,0 @@
-import hints from "./b1add17b3fractions10a-index.js"; const step = {id: "b1add17b3fractions10a", stepAnswer: ["$$\\frac{\\left(b^2+2b\\right) \\left(b-5\\right)}{3b-5}$$"], problemType: "TextBox", stepTitle: "(b-(3b/(b+5)))/((2/(b+5))+(1/(b-5))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

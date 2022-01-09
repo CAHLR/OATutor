@@ -1,1 +1,0 @@
-import steps from "./b1a53b893whole27-index.js"; const problem = {id: "b1a53b893whole27", title: "Naming Numbers", body: "Name the number using words.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

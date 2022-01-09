@@ -1,1 +1,0 @@
-import hints from "./b1a985d52Square1a-index.js"; const step = {id: "b1a985d52Square1a", stepAnswer: ["$${\\left(y+6\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$y^2+12y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

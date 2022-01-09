@@ -1,1 +1,0 @@
-import steps from "./b1a6f9727real18-index.js"; const problem = {id: "b1a6f9727real18", title: "Algebraic Equations", body: "For the following exercises, solve for the variable.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

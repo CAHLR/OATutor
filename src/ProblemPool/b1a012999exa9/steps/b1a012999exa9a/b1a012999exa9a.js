@@ -1,1 +1,0 @@
-import hints from "./b1a012999exa9a-index.js"; const step = {id: "b1a012999exa9a", stepAnswer: ["$$12p^2+2pr$$"], problemType: "TextBox", stepTitle: "$$2p\\left(6p+r\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1a9c142dVarCon33b-index.js"; const step = {id: "b1a9c142dVarCon33b", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "$$21+18f=19f+14$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

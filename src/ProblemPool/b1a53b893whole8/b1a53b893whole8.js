@@ -1,1 +1,0 @@
-import steps from "./b1a53b893whole8-index.js"; const problem = {id: "b1a53b893whole8", title: "Divisibility Tests", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

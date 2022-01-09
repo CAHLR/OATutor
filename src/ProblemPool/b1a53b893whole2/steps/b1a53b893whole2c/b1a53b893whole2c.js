@@ -1,1 +1,0 @@
-import hints from "./b1a53b893whole2c-index.js"; const step = {id: "b1a53b893whole2c", stepAnswer: ["100000"], problemType: "TextBox", stepTitle: "Round 103,978 to the nearest ten thousand", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1ae9e419IneqApp2-index.js"; const problem = {id: "b1ae9e419IneqApp2", title: "Dawn's Tablets", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

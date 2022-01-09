@@ -1,1 +1,0 @@
-import hints from "./b1aafc2dcMultiply2a-index.js"; const step = {id: "b1aafc2dcMultiply2a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$-1\\times7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

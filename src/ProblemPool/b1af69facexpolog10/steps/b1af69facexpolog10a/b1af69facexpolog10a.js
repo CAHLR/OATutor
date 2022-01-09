@@ -1,1 +1,0 @@
-import hints from "./b1af69facexpolog10a-index.js"; const step = {id: "b1af69facexpolog10a", stepAnswer: ["362"], problemType: "TextBox", stepTitle: "How long will it take for the temperature to rise to 60 degrees? (round to the nearest whole number in minutes)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

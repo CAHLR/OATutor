@@ -1,1 +1,0 @@
-import hints from "./b1a2d8720LinEqua2a-index.js"; const step = {id: "b1a2d8720LinEqua2a", stepAnswer: ["$$x=-5$$"], problemType: "TextBox", stepTitle: "$$2x+1=-9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a3d6a35variation29-index.js"; const problem = {id: "b1a3d6a35variation29", title: "Solving Relating Equations", body: "Solve the problem.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

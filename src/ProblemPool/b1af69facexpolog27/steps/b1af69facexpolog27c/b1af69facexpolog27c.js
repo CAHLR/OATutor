@@ -1,1 +1,0 @@
-import hints from "./b1af69facexpolog27c-index.js"; const step = {id: "b1af69facexpolog27c", stepAnswer: ["74"], problemType: "TextBox", stepTitle: "To the nearest degree, what will the temperature be after 2 and a half hours?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

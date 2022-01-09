@@ -1,1 +1,0 @@
-import hints from "./b1a7b98f9composition21a-index.js"; const step = {id: "b1a7b98f9composition21a", stepAnswer: ["$$\\frac{\\sqrt{x} |x-3|}{x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{g}{f}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

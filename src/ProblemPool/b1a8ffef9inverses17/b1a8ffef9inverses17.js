@@ -1,1 +1,0 @@
-import steps from "./b1a8ffef9inverses17-index.js"; const problem = {id: "b1a8ffef9inverses17", title: "Factoring an Expression with Fractional or Negative Exponents", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a6ead19multiplingyrational23a-index.js"; const step = {id: "b1a6ead19multiplingyrational23a", stepAnswer: ["x−7/4(x+3)"], problemType: "TextBox", stepTitle: "$$\\left(x^2-\\frac{7x}{x^2}+6x+9\\right) \\left(x+\\frac{3}{4} x\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

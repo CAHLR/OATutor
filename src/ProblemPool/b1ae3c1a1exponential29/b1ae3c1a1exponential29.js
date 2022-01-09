@@ -1,1 +1,0 @@
-import steps from "./b1ae3c1a1exponential29-index.js"; const problem = {id: "b1ae3c1a1exponential29", title: "Exercise #4: Applying the Compound-Interest Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

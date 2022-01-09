@@ -1,1 +1,0 @@
-import steps from "./b1a9ae528add26-index.js"; const problem = {id: "b1a9ae528add26", title: "Evaluate -m, when:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

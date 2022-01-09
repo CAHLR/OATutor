@@ -1,1 +1,0 @@
-import hints from "./b1a0a04b1divmonomial12b-index.js"; const step = {id: "b1a0a04b1divmonomial12b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${29}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

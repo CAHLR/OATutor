@@ -1,1 +1,0 @@
-import hints from "./b1a7dc5fftransformation3a-index.js"; const step = {id: "b1a7dc5fftransformation3a", stepAnswer: ["Even"], problemType: "MultipleChoice", stepTitle: "$$f(x)=3x^4$$", stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

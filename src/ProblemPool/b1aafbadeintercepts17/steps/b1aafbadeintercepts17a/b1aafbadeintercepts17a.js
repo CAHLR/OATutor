@@ -1,1 +1,0 @@
-import hints from "./b1aafbadeintercepts17a-index.js"; const step = {id: "b1aafbadeintercepts17a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$x+y=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a2a280bgaussian12-index.js"; const problem = {id: "b1a2a280bgaussian12", title: "Solving a 2×2 System by Gaussian Elimination", body: "Solve the given system by Gaussian elimination. Write the answer as a coordinate pair.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a7b98f9composition19d-index.js"; const step = {id: "b1a7b98f9composition19d", stepAnswer: ["$$\\frac{6-x}{x-4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f}{g}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

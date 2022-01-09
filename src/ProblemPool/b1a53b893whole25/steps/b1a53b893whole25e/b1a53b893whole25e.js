@@ -1,1 +1,0 @@
-import hints from "./b1a53b893whole25e-index.js"; const step = {id: "b1a53b893whole25e", stepAnswer: ["ones"], problemType: "MultipleChoice", stepTitle: "5", stepBody: "", choices: ["ones", "tens", "hundreds", "thousands"], answerType: "string", hints: hints, variabilization: {}}; export {step};

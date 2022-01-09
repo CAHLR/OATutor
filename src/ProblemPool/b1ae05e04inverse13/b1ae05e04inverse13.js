@@ -1,1 +1,0 @@
-import steps from "./b1ae05e04inverse13-index.js"; const problem = {id: "b1ae05e04inverse13", title: "Intercepts of Piecewise Functions on Graphs", body: "Find the intercepts of the function in the graph.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

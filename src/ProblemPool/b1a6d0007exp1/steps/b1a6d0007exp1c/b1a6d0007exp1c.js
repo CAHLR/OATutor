@@ -1,1 +1,0 @@
-import hints from "./b1a6d0007exp1c-index.js"; const step = {id: "b1a6d0007exp1c", stepAnswer: ["$$x^{10}$$"], problemType: "MultipleChoice", stepTitle: "$$x^2 x^5 x^3$$", stepBody: "", choices: ["$$x^{13}$$", "$$x^{10}$$", "$$x^{17}$$", "$$x^{10}$$", "$$x^{30}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

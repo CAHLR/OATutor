@@ -1,1 +1,0 @@
-import steps from "./b1aaa317eLinIneq6-index.js"; const problem = {id: "b1aaa317eLinIneq6", title: "Solving an Inequality with Fractions", body: "Solve the following inequality and write the answer in interval notation:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

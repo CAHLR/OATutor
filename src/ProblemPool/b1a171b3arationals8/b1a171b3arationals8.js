@@ -1,1 +1,0 @@
-import steps from "./b1a171b3arationals8-index.js"; const problem = {id: "b1a171b3arationals8", title: "Simplify Rational Expressions", body: "Evaluate $$\\frac{5x-1}{2x+1}$$ for each value:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

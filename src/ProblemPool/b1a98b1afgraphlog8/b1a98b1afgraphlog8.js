@@ -1,1 +1,0 @@
-import steps from "./b1a98b1afgraphlog8-index.js"; const problem = {id: "b1a98b1afgraphlog8", title: "Vertical asymptotes of log functions", body: "What is the vertical asymptote of f(x)=log{b}(x-5)? Write as an equation $$x=[number]$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

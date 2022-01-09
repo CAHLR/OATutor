@@ -1,1 +1,0 @@
-import hints from "./b1a3c2b68root6a-index.js"; const step = {id: "b1a3c2b68root6a", stepAnswer: ["a) 16 b) 25"], problemType: "TextBox", stepTitle: "a) $${\\sqrt{16}}^2$$ b) $${\\sqrt{-20}}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

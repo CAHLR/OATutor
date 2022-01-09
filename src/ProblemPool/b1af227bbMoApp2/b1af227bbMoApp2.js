@@ -1,1 +1,0 @@
-import steps from "./b1af227bbMoApp2-index.js"; const problem = {id: "b1af227bbMoApp2", title: "Modeling a Linear Equation to Solve an Unknown Number Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

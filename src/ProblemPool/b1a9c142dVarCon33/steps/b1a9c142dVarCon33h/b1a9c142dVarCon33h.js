@@ -1,1 +1,0 @@
-import hints from "./b1a9c142dVarCon33h-index.js"; const step = {id: "b1a9c142dVarCon33h", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$\\frac{7}{4} m-7=\\frac{3}{4} m-13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

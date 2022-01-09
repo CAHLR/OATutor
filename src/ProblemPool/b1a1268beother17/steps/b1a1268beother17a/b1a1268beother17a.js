@@ -1,1 +1,0 @@
-import hints from "./b1a1268beother17a-index.js"; const step = {id: "b1a1268beother17a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt{15-2x}=x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

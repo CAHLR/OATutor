@@ -1,1 +1,0 @@
-import hints from "./b1ac0c1d3spe27a-index.js"; const step = {id: "b1ac0c1d3spe27a", stepAnswer: ["$$m^2-49$$"], problemType: "TextBox", stepTitle: "$$\\left(m-7\\right) \\left(m+7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

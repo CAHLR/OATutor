@@ -1,1 +1,0 @@
-import steps from "./b1a61c721rational21-index.js"; const problem = {id: "b1a61c721rational21", title: "Combining Rational Expressions", body: "Add the rational expressions, and then simplify.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a9b0a01geo13a-index.js"; const step = {id: "b1a9b0a01geo13a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "One angle of a right triangle measures 45°. What is the measure of the other small angle?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

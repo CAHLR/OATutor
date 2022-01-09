@@ -1,1 +1,0 @@
-import steps from "./b1a171b3arationals7-index.js"; const problem = {id: "b1a171b3arationals7", title: "Simplify Rational Expressions", body: "Evaluate $$\\frac{y+1}{2y-3}$$ for each value:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

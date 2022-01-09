@@ -1,1 +1,0 @@
-import hints from "./b1aa97d5brate10a-index.js"; const step = {id: "b1aa97d5brate10a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$f(x)=x^2$$ on [1, 5]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

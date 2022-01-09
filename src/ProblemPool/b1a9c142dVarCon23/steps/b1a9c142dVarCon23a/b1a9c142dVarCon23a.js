@@ -1,1 +1,0 @@
-import hints from "./b1a9c142dVarCon23a-index.js"; const step = {id: "b1a9c142dVarCon23a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$7n-3=n+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

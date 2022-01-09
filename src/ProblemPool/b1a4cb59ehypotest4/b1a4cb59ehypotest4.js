@@ -1,1 +1,0 @@
-import steps from "./b1a4cb59ehypotest4-index.js"; const problem = {id: "b1a4cb59ehypotest4", title: "Type II Error and Power", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

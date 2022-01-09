@@ -1,1 +1,0 @@
-import steps from "./b1a0351f0parabola2-index.js"; const problem = {id: "b1a0351f0parabola2", title: "Writing the Equation of a Parabola in Standard Form Given its Focus and Directrix", body: "Write the equation for the parabola.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a9ae528add23b-index.js"; const step = {id: "b1a9ae528add23b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "The opposite of -3.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

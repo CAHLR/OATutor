@@ -1,1 +1,0 @@
-import steps from "./b1a5c2168rotation10-index.js"; const problem = {id: "b1a5c2168rotation10", title: "Identify", body: "Determine which conic section is represented based on the given equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

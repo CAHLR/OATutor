@@ -1,1 +1,0 @@
-import hints from "./b1ae3c1a1exponential3a-index.js"; const step = {id: "b1ae3c1a1exponential3a", stepAnswer: ["135"], problemType: "TextBox", stepTitle: "Let $$f(x)={5\\left(3\\right)}^{x+1}$$. Evaluate f(2) without a calculator.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

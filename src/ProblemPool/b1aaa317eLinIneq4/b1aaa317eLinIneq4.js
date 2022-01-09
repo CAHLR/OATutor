@@ -1,1 +1,0 @@
-import steps from "./b1aaa317eLinIneq4-index.js"; const problem = {id: "b1aaa317eLinIneq4", title: "Demonstrating the Multiplication Property", body: "Illustrate the multiplication property for inequalities by solving each of the following:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

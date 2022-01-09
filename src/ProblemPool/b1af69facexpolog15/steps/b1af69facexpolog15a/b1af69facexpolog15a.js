@@ -1,1 +1,0 @@
-import hints from "./b1af69facexpolog15a-index.js"; const step = {id: "b1af69facexpolog15a", stepAnswer: ["100"], problemType: "TextBox", stepTitle: "What is the initial population?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {exponent: ["-0.6", "-0.8", "-0.9"]}}; export {step};

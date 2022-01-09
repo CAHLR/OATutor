@@ -1,1 +1,0 @@
-import steps from "./b1a9c142dVarCon28-index.js"; const problem = {id: "b1a9c142dVarCon28", title: "Solve the equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

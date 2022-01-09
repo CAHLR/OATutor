@@ -1,1 +1,0 @@
-import steps from "./b1a98b1afgraphlog10-index.js"; const problem = {id: "b1a98b1afgraphlog10", title: "Vertical asymptotes of log functions", body: "What is the vertical asymptote of $$f(x)=\\ln(3x+1)$$? Write as $$x=[number]$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

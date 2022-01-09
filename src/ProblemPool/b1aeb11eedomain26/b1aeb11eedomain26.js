@@ -1,1 +1,0 @@
-import steps from "./b1aeb11eedomain26-index.js"; const problem = {id: "b1aeb11eedomain26", title: "Find the domain of the function using interval notation.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

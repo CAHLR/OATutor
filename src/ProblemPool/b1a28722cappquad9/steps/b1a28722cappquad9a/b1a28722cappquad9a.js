@@ -1,1 +1,0 @@
-import hints from "./b1a28722cappquad9a-index.js"; const step = {id: "b1a28722cappquad9a", stepAnswer: ["18"], problemType: "TextBox", stepTitle: "The product of two positive, consecutive even numbers is 360. Find the lower number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

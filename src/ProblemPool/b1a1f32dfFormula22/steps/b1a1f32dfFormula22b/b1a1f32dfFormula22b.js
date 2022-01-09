@@ -1,1 +1,0 @@
-import hints from "./b1a1f32dfFormula22b-index.js"; const step = {id: "b1a1f32dfFormula22b", stepAnswer: ["$$r=\\frac{d}{t}$$"], problemType: "MultipleChoice", stepTitle: "Solve for r in general", stepBody: "", choices: ["$$r=\\frac{d}{t}$$", "$$r=\\frac{t}{d}$$", "$$r=dt$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

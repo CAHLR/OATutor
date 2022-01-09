@@ -1,1 +1,0 @@
-import steps from "./b1a20771equad19-index.js"; const problem = {id: "b1a20771equad19", title: "Finding the Length of the Missing Side of a Right Triangle", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

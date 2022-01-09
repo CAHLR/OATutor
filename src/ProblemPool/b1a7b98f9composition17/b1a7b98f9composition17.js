@@ -1,1 +1,0 @@
-import steps from "./b1a7b98f9composition17-index.js"; const problem = {id: "b1a7b98f9composition17", title: "Composition of Funtions With Constants", body: "Given $$f(x)=-3x^2+x$$ and $$g(x)=5$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

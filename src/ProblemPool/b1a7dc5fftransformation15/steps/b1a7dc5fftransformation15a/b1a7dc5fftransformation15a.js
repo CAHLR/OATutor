@@ -1,1 +1,0 @@
-import hints from "./b1a7dc5fftransformation15a-index.js"; const step = {id: "b1a7dc5fftransformation15a", stepAnswer: ["$$-\\sqrt{t}$$"], problemType: "MultipleChoice", stepTitle: "Vertical Reflection", stepBody: "", choices: ["$$\\sqrt{t}$$", "$$-\\sqrt{t}$$", "$$-\\sqrt{-t}$$", "$$\\sqrt{-t}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

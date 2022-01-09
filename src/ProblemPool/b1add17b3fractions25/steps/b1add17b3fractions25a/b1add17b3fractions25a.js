@@ -1,1 +1,0 @@
-import hints from "./b1add17b3fractions25a-index.js"; const step = {id: "b1add17b3fractions25a", stepAnswer: ["$$\\frac{2x-10}{3x+16}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{x+5}}{\\frac{3}{x}-5-\\frac{1}{x^2}-25}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

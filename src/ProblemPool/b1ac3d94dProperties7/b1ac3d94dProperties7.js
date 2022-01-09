@@ -1,1 +1,0 @@
-import steps from "./b1ac3d94dProperties7-index.js"; const problem = {id: "b1ac3d94dProperties7", title: "Use the Inverse Property of Addition", body: "In the following exercises, find the additive inverse of each number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

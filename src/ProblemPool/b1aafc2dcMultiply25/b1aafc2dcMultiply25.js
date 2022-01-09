@@ -1,1 +1,0 @@
-import steps from "./b1aafc2dcMultiply25-index.js"; const problem = {id: "b1aafc2dcMultiply25", title: "Translate Phrases to Expressions with Integers", body: "In the following exercises, translate to an algebraic expression and simplify if possible.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

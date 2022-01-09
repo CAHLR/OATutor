@@ -1,1 +1,0 @@
-import steps from "./b1a7b98f9composition24-index.js"; const problem = {id: "b1a7b98f9composition24", title: "Composition of Functions", body: "For $$f(x)=\\sqrt{x}+2$$ and $$g(x)=x^2+3$$, find the following.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

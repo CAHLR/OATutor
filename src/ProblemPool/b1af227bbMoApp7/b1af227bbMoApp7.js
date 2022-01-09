@@ -1,1 +1,0 @@
-import steps from "./b1af227bbMoApp7-index.js"; const problem = {id: "b1af227bbMoApp7", title: "Solving an Application Using a Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

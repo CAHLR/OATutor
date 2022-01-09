@@ -1,1 +1,0 @@
-import steps from "./b1a453be6realnumbers12-index.js"; const problem = {id: "b1a453be6realnumbers12", title: "Identifying Rational and Irrational Numbers #2", body: "Given the numbers, identify if they are irrational or rational.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

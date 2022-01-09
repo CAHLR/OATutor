@@ -1,1 +1,0 @@
-import steps from "./b1a1f0162sequences28-index.js"; const problem = {id: "b1a1f0162sequences28", title: "Writing the Terms of an Alternating Sequence Defined by a Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

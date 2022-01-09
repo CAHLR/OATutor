@@ -1,1 +1,0 @@
-import steps from "./b1ab6a46ageometric11-index.js"; const problem = {id: "b1ab6a46ageometric11", title: "Writing the Terms of a Geometric Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

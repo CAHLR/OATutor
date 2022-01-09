@@ -1,1 +1,0 @@
-import hints from "./b1ac9c764addand19a-index.js"; const step = {id: "b1ac9c764addand19a", stepAnswer: ["$$\\frac{1}{48}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{12}-\\frac{9}{16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

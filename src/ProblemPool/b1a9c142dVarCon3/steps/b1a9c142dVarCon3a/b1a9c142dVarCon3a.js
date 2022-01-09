@@ -1,1 +1,0 @@
-import hints from "./b1a9c142dVarCon3a-index.js"; const step = {id: "b1a9c142dVarCon3a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$5a+3=-37$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

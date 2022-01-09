@@ -1,1 +1,0 @@
-import hints from "./b1a6614c6sol21a-index.js"; const step = {id: "b1a6614c6sol21a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "How much does a shirt cost?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

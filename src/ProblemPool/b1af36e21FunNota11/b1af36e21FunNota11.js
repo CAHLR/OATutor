@@ -1,1 +1,0 @@
-import steps from "./b1af36e21FunNota11-index.js"; const problem = {id: "b1af36e21FunNota11", title: "Finding an Equation of a Function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

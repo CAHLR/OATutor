@@ -1,1 +1,0 @@
-import hints from "./b1a6d0007exp3a-index.js"; const step = {id: "b1a6d0007exp3a", stepAnswer: ["$${\\left(-2\\right)}^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(-2\\right)}^{14}}{{\\left(-2\\right)}^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

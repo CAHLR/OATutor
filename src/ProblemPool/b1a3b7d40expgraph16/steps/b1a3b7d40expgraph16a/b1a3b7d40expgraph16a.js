@@ -1,1 +1,0 @@
-import hints from "./b1a3b7d40expgraph16a-index.js"; const step = {id: "b1a3b7d40expgraph16a", stepAnswer: ["$$g(x)=-\\left({\\operatorname{2.2}\\left(1.68\\right)}^{x-3.3}\\right)$$ -3.3"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a833c22linear25-index.js"; const problem = {id: "b1a833c22linear25", title: "Writing an Equation for a Linear Function Given Two Points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/4-1-linear-functions", courseName: "Openstax: College Algebra"}; export { problem };

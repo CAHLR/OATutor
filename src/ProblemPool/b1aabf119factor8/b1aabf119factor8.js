@@ -1,1 +1,0 @@
-import steps from "./b1aabf119factor8-index.js"; const problem = {id: "b1aabf119factor8", title: "Factor the following expression", body: "Factoring a Perfect Square Trinomial.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a4b9bbfrationalnums11a-index.js"; const step = {id: "b1a4b9bbfrationalnums11a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$2^{\\frac{1}{2}} 2^{\\frac{5}{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

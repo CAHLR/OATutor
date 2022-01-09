@@ -1,1 +1,0 @@
-import steps from "./b1a1268beother3-index.js"; const problem = {id: "b1a1268beother3", title: "Polynomial Equations", body: "Solve the following polynomial equation by grouping or factoring.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

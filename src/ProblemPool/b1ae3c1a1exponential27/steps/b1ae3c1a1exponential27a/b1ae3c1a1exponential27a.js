@@ -1,1 +1,0 @@
-import hints from "./b1ae3c1a1exponential27a-index.js"; const step = {id: "b1ae3c1a1exponential27a", stepAnswer: ["10250"], problemType: "TextBox", stepTitle: "What was the initial deposit made to the account?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

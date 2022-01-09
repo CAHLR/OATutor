@@ -1,1 +1,0 @@
-import hints from "./b1a10b60arealnumbers22a-index.js"; const step = {id: "b1a10b60arealnumbers22a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, -125}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

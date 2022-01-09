@@ -1,1 +1,0 @@
-import hints from "./b1a9ae528add18a-index.js"; const step = {id: "b1a9ae528add18a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "-x, when $$x=8$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

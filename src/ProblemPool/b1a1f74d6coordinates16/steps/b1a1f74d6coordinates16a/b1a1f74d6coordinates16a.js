@@ -1,1 +1,0 @@
-import hints from "./b1a1f74d6coordinates16a-index.js"; const step = {id: "b1a1f74d6coordinates16a", stepAnswer: ["(4,0) and (2,-3)"], problemType: "MultipleChoice", stepTitle: "$$3x-2y=12$$", stepBody: "", choices: ["(4,0) and (2,-3)", "(1,6) and (2,-3)", "(4,0) and (1,6)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

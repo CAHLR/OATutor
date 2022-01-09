@@ -1,1 +1,0 @@
-import steps from "./b1afaf721inequalities6-index.js"; const problem = {id: "b1afaf721inequalities6", title: "Solve the inequality, graph the solution on the number line, and choose the correct interval notation as the answer.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

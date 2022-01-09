@@ -1,1 +1,0 @@
-import hints from "./b1ac0c1d3spe30a-index.js"; const step = {id: "b1ac0c1d3spe30a", stepAnswer: ["$$b^2-\\frac{36}{49}$$"], problemType: "TextBox", stepTitle: "$$\\left(b+\\frac{6}{7}\\right) \\left(b-\\frac{6}{7}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

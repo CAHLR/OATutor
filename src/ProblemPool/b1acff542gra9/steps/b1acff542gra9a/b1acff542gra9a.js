@@ -1,1 +1,0 @@
-import hints from "./b1acff542gra9a-index.js"; const step = {id: "b1acff542gra9a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$(\\frac{-3}{10},\\frac{7}{6})$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

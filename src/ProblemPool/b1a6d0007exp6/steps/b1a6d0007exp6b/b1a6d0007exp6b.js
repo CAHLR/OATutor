@@ -1,1 +1,0 @@
-import hints from "./b1a6d0007exp6b-index.js"; const step = {id: "b1a6d0007exp6b", stepAnswer: ["$$t^{35}$$"], problemType: "TextBox", stepTitle: "$${\\left(t^5\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

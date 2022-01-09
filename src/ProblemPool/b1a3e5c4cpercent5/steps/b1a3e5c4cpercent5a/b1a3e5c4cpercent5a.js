@@ -1,1 +1,0 @@
-import hints from "./b1a3e5c4cpercent5a-index.js"; const step = {id: "b1a3e5c4cpercent5a", stepAnswer: ["$26"], problemType: "MultipleChoice", stepTitle: "Translate and solve: 7.5% of what number is $1.95?", stepBody: "", choices: ["$24", "$25", "$26", "$27"], answerType: "string", hints: hints, variabilization: {}}; export {step};

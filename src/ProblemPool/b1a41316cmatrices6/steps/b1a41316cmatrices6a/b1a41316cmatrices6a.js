@@ -1,1 +1,0 @@
-import hints from "./b1a41316cmatrices6a-index.js"; const step = {id: "b1a41316cmatrices6a", stepAnswer: ["$$\\begin{bmatrix} 20 & 102 \\\\ 28 & 28 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "BC", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

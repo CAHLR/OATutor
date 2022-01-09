@@ -1,1 +1,0 @@
-import steps from "./b1a2d8720LinEqua4-index.js"; const problem = {id: "b1a2d8720LinEqua4", title: "Solving an Equation Algebraically When the Variable Appears on Both Sides", body: "Solve the equation in one variable", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

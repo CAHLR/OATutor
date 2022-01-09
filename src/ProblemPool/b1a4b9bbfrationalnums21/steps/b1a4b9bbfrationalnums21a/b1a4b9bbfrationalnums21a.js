@@ -1,1 +1,0 @@
-import hints from "./b1a4b9bbfrationalnums21a-index.js"; const step = {id: "b1a4b9bbfrationalnums21a", stepAnswer: ["$$\\sqrt{25, j}$$"], problemType: "TextBox", stepTitle: "$$j^{\\frac{1}{25}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

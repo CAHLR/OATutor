@@ -1,1 +1,0 @@
-import steps from "./b1aafc2dcMultiply18-index.js"; const problem = {id: "b1aafc2dcMultiply18", title: "Divide Integers", body: "Divide:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

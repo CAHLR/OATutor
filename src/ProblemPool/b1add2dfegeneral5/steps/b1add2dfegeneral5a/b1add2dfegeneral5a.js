@@ -1,1 +1,0 @@
-import hints from "./b1add2dfegeneral5a-index.js"; const step = {id: "b1add2dfegeneral5a", stepAnswer: ["$${\\left(m+7n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$m^2+14mn+49n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

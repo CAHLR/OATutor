@@ -1,1 +1,0 @@
-import hints from "./b1a6014eaSubAdd17d-index.js"; const step = {id: "b1a6014eaSubAdd17d", stepAnswer: ["$$p=-11.7$$"], problemType: "TextBox", stepTitle: "$$p+2.4=-9.3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

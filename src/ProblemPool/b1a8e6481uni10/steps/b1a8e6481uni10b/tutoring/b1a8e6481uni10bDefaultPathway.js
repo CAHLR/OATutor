@@ -1,1 +1,0 @@
-var hints = [{id: "b1a8e6481uni10b-h1", type: "hint", dependencies: [], title: "Find the Difference", text: "Katie Mae's walking speed is 3 mph less than her biking speed.", variabilization: {}}, {id: "b1a8e6481uni10b-h2", type: "hint", dependencies: ["b1a8e6481uni10b-h1"], title: "The Answer", text: "Her biking speed is $$3+3=6$$ mph.", variabilization: {}}, ]; export {hints};

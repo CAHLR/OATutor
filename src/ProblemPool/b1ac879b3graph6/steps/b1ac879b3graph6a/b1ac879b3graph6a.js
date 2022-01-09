@@ -1,1 +1,0 @@
-import hints from "./b1ac879b3graph6a-index.js"; const step = {id: "b1ac879b3graph6a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "What is the x-value for the x-intercept to the equation $$y=-2x+4$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a61c721rational2-index.js"; const problem = {id: "b1a61c721rational2", title: "Dividing Rational Expressions", body: "Divide the rational expressions and express the quotient in simplest form:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

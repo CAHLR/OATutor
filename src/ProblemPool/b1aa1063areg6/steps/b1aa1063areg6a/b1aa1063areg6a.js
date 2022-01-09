@@ -1,1 +1,0 @@
-import hints from "./b1aa1063areg6a-index.js"; const step = {id: "b1aa1063areg6a", stepAnswer: ["$250,120"], problemType: "TextBox", stepTitle: "", stepBody: "What would you predict the sales to be on day 60?", answerType: "string", hints: hints, variabilization: {}}; export {step};

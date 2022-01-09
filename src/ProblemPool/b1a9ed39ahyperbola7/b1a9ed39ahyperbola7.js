@@ -1,1 +1,0 @@
-import steps from "./b1a9ed39ahyperbola7-index.js"; const problem = {id: "b1a9ed39ahyperbola7", title: "Solving Applied Problems Involving Hyperbolas", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

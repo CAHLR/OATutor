@@ -1,1 +1,0 @@
-import hints from "./b1a7dc5fftransformation6a-index.js"; const step = {id: "b1a7dc5fftransformation6a", stepAnswer: ["Even"], problemType: "MultipleChoice", stepTitle: "$$f(x)={\\left(x-2\\right)}^2$$", stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

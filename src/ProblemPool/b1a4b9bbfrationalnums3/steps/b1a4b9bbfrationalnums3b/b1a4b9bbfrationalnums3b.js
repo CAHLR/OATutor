@@ -1,1 +1,0 @@
-import hints from "./b1a4b9bbfrationalnums3b-index.js"; const step = {id: "b1a4b9bbfrationalnums3b", stepAnswer: ["$${\\left(4x\\right)}^{\\frac{1}{3}}$$"], problemType: "TextBox", stepTitle: "Write with a rational exponent: $$\\sqrt{3, 4x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

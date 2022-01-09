@@ -1,1 +1,0 @@
-import hints from "./b1abd4034poly11a-index.js"; const step = {id: "b1abd4034poly11a", stepAnswer: ["$$\\left(-2x\\right)-1+\\frac{4}{5x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{10x^2+5x-4}{\\left(-5x\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1a985d52Square9a-index.js"; const step = {id: "b1a985d52Square9a", stepAnswer: ["DNE"], problemType: "MultipleChoice", stepTitle: "$$y^2-10y=-35$$", stepBody: "", choices: ["$$5+\\sqrt{10}$$", "$$5-\\sqrt{10}$$", "5~sqrt(10)", "DNE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

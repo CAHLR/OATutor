@@ -1,1 +1,0 @@
-import steps from "./b1aaa317eLinIneq23-index.js"; const problem = {id: "b1aaa317eLinIneq23", title: "Solving a Compound Inequality with the Variable in All Three Parts", body: "Solve the compound inequality:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

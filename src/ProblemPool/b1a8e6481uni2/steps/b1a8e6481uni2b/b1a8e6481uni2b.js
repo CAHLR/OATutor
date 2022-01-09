@@ -1,1 +1,0 @@
-import hints from "./b1a8e6481uni2b-index.js"; const step = {id: "b1a8e6481uni2b", stepAnswer: ["28"], problemType: "TextBox", stepTitle: "Find the speed of Dennis.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

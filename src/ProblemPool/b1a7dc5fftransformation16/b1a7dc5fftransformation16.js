@@ -1,1 +1,0 @@
-import steps from "./b1a7dc5fftransformation16-index.js"; const problem = {id: "b1a7dc5fftransformation16", title: "Odd, Even, or Neither?", body: "Is the following function even, odd, or neither?", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

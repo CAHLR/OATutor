@@ -1,1 +1,0 @@
-import hints from "./b1a7dc5fftransformation16a-index.js"; const step = {id: "b1a7dc5fftransformation16a", stepAnswer: ["odd"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^3+2x$$", stepBody: "", choices: ["even", "odd", "neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

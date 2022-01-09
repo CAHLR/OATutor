@@ -1,1 +1,0 @@
-import steps from "./b1a6d0007exp24-index.js"; const problem = {id: "b1a6d0007exp24", title: "Length of a Picometer", body: "One picometer is approximately $$3.397\\times {10}^{-11}$$ in.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

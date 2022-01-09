@@ -1,1 +1,0 @@
-import steps from "./b1aabf119factor9-index.js"; const problem = {id: "b1aabf119factor9", title: "Factor the following expression", body: "Factoring a Difference of Squares.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a1f74d6coordinates24c-index.js"; const step = {id: "b1a1f74d6coordinates24c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$y=-x+2$$", stepBody: "If $$x=-2$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

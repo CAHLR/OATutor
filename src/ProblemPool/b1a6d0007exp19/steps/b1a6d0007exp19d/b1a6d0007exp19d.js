@@ -1,1 +1,0 @@
-import hints from "./b1a6d0007exp19d-index.js"; const step = {id: "b1a6d0007exp19d", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$-8.05\\times {10}^{-12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1ac0c1d3spe3a-index.js"; const step = {id: "b1ac0c1d3spe3a", stepAnswer: ["$$q^2+24q+144$$"], problemType: "TextBox", stepTitle: "$${\\left(q+12\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

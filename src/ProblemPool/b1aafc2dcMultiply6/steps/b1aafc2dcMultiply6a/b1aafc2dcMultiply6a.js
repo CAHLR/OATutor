@@ -1,1 +1,0 @@
-import hints from "./b1aafc2dcMultiply6a-index.js"; const step = {id: "b1aafc2dcMultiply6a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$\\frac{8\\left(-9\\right)}{{\\left(-2\\right)}^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

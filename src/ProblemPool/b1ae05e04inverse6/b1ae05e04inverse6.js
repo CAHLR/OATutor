@@ -1,1 +1,0 @@
-import steps from "./b1ae05e04inverse6-index.js"; const problem = {id: "b1ae05e04inverse6", title: "Inverse Functions with Tables", body: "Use the values listed in the table to solve.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1a137dddgre30-index.js"; const problem = {id: "b1a137dddgre30", title: "Greatest Common Factor", body: "Factor the greatest common factor from each polynomial.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

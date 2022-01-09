@@ -1,1 +1,0 @@
-import steps from "./b1a20771equad26-index.js"; const problem = {id: "b1a20771equad26", title: "Solving Quadratics", body: "Solving Quadratics with a Leading Coefficient of 1", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1ab3c11fVisualize8-index.js"; const problem = {id: "b1ab3c11fVisualize8", title: "Multiply:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

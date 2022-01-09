@@ -1,1 +1,0 @@
-import hints from "./b1ab50a95log9a-index.js"; const step = {id: "b1ab50a95log9a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y=\\ln(1000)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

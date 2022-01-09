@@ -1,1 +1,0 @@
-import steps from "./b1aaa317eLinIneq15-index.js"; const problem = {id: "b1aaa317eLinIneq15", title: "Solve the Inequality", body: "Write your final answer in interval notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

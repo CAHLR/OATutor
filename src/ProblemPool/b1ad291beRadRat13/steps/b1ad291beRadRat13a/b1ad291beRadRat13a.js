@@ -1,1 +1,0 @@
-import hints from "./b1ad291beRadRat13a-index.js"; const step = {id: "b1ad291beRadRat13a", stepAnswer: ["$$\\sqrt{5}-1$$"], problemType: "TextBox", stepTitle: "Write 4/[1+sqrt(5)] in simplest form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a4cb59ehypotest8-index.js"; const problem = {id: "b1a4cb59ehypotest8", title: "Testing Proportions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

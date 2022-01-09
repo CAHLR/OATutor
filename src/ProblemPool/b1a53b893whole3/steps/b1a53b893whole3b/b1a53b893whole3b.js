@@ -1,1 +1,0 @@
-import hints from "./b1a53b893whole3b-index.js"; const step = {id: "b1a53b893whole3b", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is 5,625 divisible by 3?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

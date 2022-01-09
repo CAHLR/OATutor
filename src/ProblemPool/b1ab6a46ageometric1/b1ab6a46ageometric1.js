@@ -1,1 +1,0 @@
-import steps from "./b1ab6a46ageometric1-index.js"; const problem = {id: "b1ab6a46ageometric1", title: "Finding the Common Ratio of the Sequence", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

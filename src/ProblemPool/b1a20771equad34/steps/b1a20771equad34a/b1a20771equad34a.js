@@ -1,1 +1,0 @@
-import hints from "./b1a20771equad34a-index.js"; const step = {id: "b1a20771equad34a", stepAnswer: ["-3, 2"], problemType: "TextBox", stepTitle: "$$5x^2=5x+30$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

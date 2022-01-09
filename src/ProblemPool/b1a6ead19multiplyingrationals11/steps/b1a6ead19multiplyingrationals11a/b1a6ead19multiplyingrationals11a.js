@@ -1,1 +1,0 @@
-import hints from "./b1a6ead19multiplyingrationals11a-index.js"; const step = {id: "b1a6ead19multiplyingrationals11a", stepAnswer: ["-2(x+1)/(x+4)"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{16-4x}{2x-12}$$ * $$\\frac{x^2-5x-5}{x^2-16}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

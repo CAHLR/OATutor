@@ -1,1 +1,0 @@
-import hints from "./b1a8583b4FracDec21a-index.js"; const step = {id: "b1a8583b4FracDec21a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{4m+2}{6}=\\frac{m}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./b1a137dddgre11a-index.js"; const step = {id: "b1a137dddgre11a", stepAnswer: ["x"], problemType: "TextBox", stepTitle: "$$3x$$, $$10x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

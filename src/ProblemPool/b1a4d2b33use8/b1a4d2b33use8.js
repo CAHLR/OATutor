@@ -1,1 +1,0 @@
-import steps from "./b1a4d2b33use8-index.js"; const problem = {id: "b1a4d2b33use8", title: "Evaluating Expressions", body: "Evaluate 4y-4, when:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

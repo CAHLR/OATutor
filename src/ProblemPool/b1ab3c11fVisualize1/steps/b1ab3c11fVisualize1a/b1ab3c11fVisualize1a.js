@@ -1,1 +1,0 @@
-import hints from "./b1ab3c11fVisualize1a-index.js"; const step = {id: "b1ab3c11fVisualize1a", stepAnswer: ["$$\\frac{-4}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-32}{56}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

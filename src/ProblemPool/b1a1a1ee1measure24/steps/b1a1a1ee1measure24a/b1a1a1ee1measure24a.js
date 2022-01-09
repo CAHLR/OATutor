@@ -1,1 +1,0 @@
-import hints from "./b1a1a1ee1measure24a-index.js"; const step = {id: "b1a1a1ee1measure24a", stepAnswer: ["91"], problemType: "TextBox", stepTitle: "Matthias is 1.8 meters tall. His son is 89 centimeters tall. How much taller is Matthias than his son in centimeters?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./b1a5b6f42rationals17-index.js"; const problem = {id: "b1a5b6f42rationals17", title: "Finding vertical asymptotes and removable discontinuities", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

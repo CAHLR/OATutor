@@ -1,1 +1,0 @@
-import hints from "./b1a443311sqroots6a-index.js"; const step = {id: "b1a443311sqroots6a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{48}}{\\sqrt{108}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

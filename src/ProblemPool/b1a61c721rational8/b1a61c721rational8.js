@@ -1,1 +1,0 @@
-import steps from "./b1a61c721rational8-index.js"; const problem = {id: "b1a61c721rational8", title: "Simplifying Expressions", body: "Simplifying Complex Rational Expressions", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

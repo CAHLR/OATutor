@@ -1,1 +1,0 @@
-import hints from "./b1ac879b3linearequation13b-index.js"; const step = {id: "b1ac879b3linearequation13b", stepAnswer: ["$$\\frac{-2}{5}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{-2}{5} x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

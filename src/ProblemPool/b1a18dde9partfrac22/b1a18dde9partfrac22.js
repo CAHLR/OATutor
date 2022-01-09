@@ -1,1 +1,0 @@
-import steps from "./b1a18dde9partfrac22-index.js"; const problem = {id: "b1a18dde9partfrac22", title: "Decomposing a fraction with repeating linear factors", body: "Decompose the partial fraction for the repeating linear factors:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

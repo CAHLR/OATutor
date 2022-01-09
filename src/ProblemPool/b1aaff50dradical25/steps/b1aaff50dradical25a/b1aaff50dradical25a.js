@@ -1,1 +1,0 @@
-import hints from "./b1aaff50dradical25a-index.js"; const step = {id: "b1aaff50dradical25a", stepAnswer: ["$$12\\sqrt{2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{288}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

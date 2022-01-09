@@ -1,1 +1,0 @@
-import steps from "./b1a4d2b33use4-index.js"; const problem = {id: "b1a4d2b33use4", title: "Finding the Coefficient", body: "Identify the coefficient of each term:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

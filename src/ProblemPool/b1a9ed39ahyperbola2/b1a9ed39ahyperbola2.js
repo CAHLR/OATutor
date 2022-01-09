@@ -1,1 +1,0 @@
-import steps from "./b1a9ed39ahyperbola2-index.js"; const problem = {id: "b1a9ed39ahyperbola2", title: "Locating a Hyperbola's Vertices and Foci", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

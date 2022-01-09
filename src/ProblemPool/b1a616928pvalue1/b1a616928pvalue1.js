@@ -1,1 +1,0 @@
-import steps from "./b1a616928pvalue1-index.js"; const problem = {id: "b1a616928pvalue1", title: "Grand Prize", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Data Content"}; export { problem };

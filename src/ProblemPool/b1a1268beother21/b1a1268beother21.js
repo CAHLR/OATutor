@@ -1,1 +1,0 @@
-import steps from "./b1a1268beother21-index.js"; const problem = {id: "b1a1268beother21", title: "Solving an Equation With One Radical", body: "Solve the following equation, an equation with two radicals, for x.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./b1a2ef97dGrphingQuads7-index.js"; const problem = {id: "b1a2ef97dGrphingQuads7", title: "Parabola Orientation", body: "Determine whether each parabola opens upward or downward:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./b1a171b3arationals7b-index.js"; const step = {id: "b1a171b3arationals7b", stepAnswer: ["$$\\frac{2}{9}$$"], problemType: "TextBox", stepTitle: "$$y=-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

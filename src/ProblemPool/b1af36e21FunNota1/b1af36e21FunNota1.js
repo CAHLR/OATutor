@@ -1,1 +1,0 @@
-import steps from "./b1af36e21FunNota1-index.js"; const problem = {id: "b1af36e21FunNota1", title: "Determining If Menu Price Lists Are Functions", body: "The coffee shop menu, shown in Figure consists of items and their prices.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };
