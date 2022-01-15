@@ -1,26 +1,8 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core";
 import Spacer from "../../Components/_General/Spacer";
-
-const useStyles = makeStyles({
-    button: {
-        textDecoration: "underline",
-        "&:hover": {
-            cursor: "pointer"
-        }
-    },
-    fullWidth: {
-        width: "100%"
-    },
-    unselectable: {
-        userSelect: "none"
-    },
-    image: {
-        maxWidth: "80%",
-        marginBottom: 16
-    }
-});
-
+import { useStyles } from "./Posts";
+import clsx from "clsx";
+import ZoomImage from "../../Components/_General/ZoomImage";
 
 const createCourseLink = "https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-create-a-new-course-from-the-Dashboard-as-an-instructor/ta-p/794"
 
@@ -40,11 +22,11 @@ const SetUpCanvasIntegration = () => {
         <h1>
             Setting up Canvas to work with OATutor (formerly known as OpenITS)
         </h1>
-        <h3 style={{
+        <h4 style={{
             marginTop: 0
         }}>
             Last updated: {new Date(1638826551614).toLocaleString()}
-        </h3>
+        </h4>
 
         <h4>Creating a Canvas Course</h4>
 
@@ -55,8 +37,8 @@ const SetUpCanvasIntegration = () => {
 
         Select the course you want to add OATutor to.
 
-        <div className={classes.fullWidth}>
-            <img
+        <div className={clsx(classes.fullWidth, classes.textCenter, classes["p-8"])}>
+            <ZoomImage
                 alt={"Screenshot showing the user selecting their first course in the courses tab."}
                 className={classes.image}
                 src={`${process.env.PUBLIC_URL}/static/images/posts/setting-up-canvas-integration/courses%20selection.PNG`}/>
@@ -64,8 +46,8 @@ const SetUpCanvasIntegration = () => {
 
         Navigate to the Settings > Apps tab of that course. Then click on the blue "+ App" button.
 
-        <div className={classes.fullWidth}>
-            <img
+        <div className={clsx(classes.fullWidth, classes.textCenter, classes["p-8"])}>
+            <ZoomImage
                 alt={"Screenshot showing the user on the app tab of the settings page."}
                 className={classes.image}
                 src={`${process.env.PUBLIC_URL}/static/images/posts/setting-up-canvas-integration/settings%20app%20page.PNG`}/>
@@ -92,15 +74,15 @@ const SetUpCanvasIntegration = () => {
             <span
                 className={classes.unselectable}>Config URL: </span><code>https://cahlr.github.io/OpenITS/lti-consumer-config.xml</code>
         </div>
-        <div className={classes.fullWidth}>
-            <img
+        <div className={clsx(classes.fullWidth, classes.textCenter, classes["p-8"])}>
+            <ZoomImage
                 alt={"Screenshot showing an example App configuration with the fields filled out."}
                 className={classes.image}
                 src={`${process.env.PUBLIC_URL}/static/images/posts/setting-up-canvas-integration/add%20app.PNG`}/>
         </div>
 
         Click "Submit" and you will be able to start using OATutor as an external tool.
-        <Spacer height={24 * 6}/>
+        <Spacer height={24 * 8}/>
     </>
 }
 
