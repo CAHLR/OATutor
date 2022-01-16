@@ -8,7 +8,7 @@ const readdir = util.promisify(fs.readdir)
 const lstat = util.promisify(fs.lstat)
 const writeFile = util.promisify(fs.writeFile)
 const mkdir = util.promisify(fs.mkdir)
-const rmdir = util.promisify(fs.rmdir)
+const rm = util.promisify(fs.rm)
 
 if (+process.versions.node.split(".")[0] < 10) {
     console.debug('Please upgrade to node v10.12.X+')
@@ -69,7 +69,7 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
     })
 
     // remove existing static figures
-    await rmdir(staticFiguresPath, { recursive: true }).catch(err => {
+    await rm(staticFiguresPath, { recursive: true }).catch(err => {
         console.debug(err)
         console.error('error removing existing figures')
         process.exit(1)
