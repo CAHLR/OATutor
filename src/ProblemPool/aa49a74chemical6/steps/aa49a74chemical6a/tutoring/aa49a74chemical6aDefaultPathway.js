@@ -1,1 +1,0 @@
-var hints = [{id: "aa49a74chemical6a-h1", type: "hint", dependencies: [], title: "The pH scale", text: "On the pH scale of 14, acids are lower on the pH scale, while bases are high. Therefore, adding an acid would $$\\rule{2cm}{0.15mm}$$ the pH of the solution.", variabilization: {}}, ]; export {hints};

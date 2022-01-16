@@ -1,0 +1,1 @@
+import steps from "./a35ba99cou2-index.js"; const problem = {id: "a35ba99cou2", title: "Addition Principle", body: "Using the Addition Principle", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

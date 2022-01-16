@@ -1,0 +1,1 @@
+import hints from "./a60a373solverat15a-index.js"; const step = {id: "a60a373solverat15a", stepAnswer: ["$$a=\\frac{b}{1-bc}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{a}+\\frac{1}{b}=c$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
