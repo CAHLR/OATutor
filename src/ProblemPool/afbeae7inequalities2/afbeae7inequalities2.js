@@ -1,0 +1,1 @@
+import steps from "./afbeae7inequalities2-index.js"; const problem = {id: "afbeae7inequalities2", title: "Determining Solutions", body: "Determine whether the given ordered pair is a valid solution.", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

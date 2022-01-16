@@ -1,1 +1,0 @@
-import hints from "./ab8934ethreevar6a-index.js"; const step = {id: "ab8934ethreevar6a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (4,1,-7) is the solution to the system of equations: $$-x-y+2z=3$$, $$5x+8y-3z=4$$, $$-x+3y-5z=-5$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

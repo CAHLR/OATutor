@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers6a-index.js"; const step = {id: "a10b60arealnumbers6a", stepAnswer: ["$$x \\sqrt{3, x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{3, x^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

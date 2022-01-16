@@ -1,0 +1,1 @@
+import steps from "./a4a0f7dradicalroot2-index.js"; const problem = {id: "a4a0f7dradicalroot2", title: "Solving Radical Equations", body: "Find the value of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };
