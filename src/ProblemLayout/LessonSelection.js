@@ -144,7 +144,9 @@ class LessonSelection extends React.Component {
                                                     <h2 style={{
                                                         marginTop: "5px",
                                                         marginBottom: "10px"
-                                                    }}>{lesson.name}</h2>
+                                                    }}>
+                                                        {lesson.name.toString().replace(/##/g, "")}
+                                                    </h2>
                                                     <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
                                                     <NavLink activeClassName="active" className="link"
                                                              to={"/lessons/" + lesson.lessonNum}
