@@ -1,24 +1,51 @@
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  font-family: 'Titillium Web', 'sans-serif';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .revealable {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 .revealable.revealed {
-  opacity: 1;
-  transition: opacity 500ms ease;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+blockquote {
+    position: relative;
+    margin: -0.4em 1em 1.4em;
+    padding: 0.6em 0.8em 0.6em 1em;
+    color: rgb(100,100,100);
+}
+
+blockquote:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 4px;
+    border-radius: 8px;
+    background: rgb(180,184,188);
 }
