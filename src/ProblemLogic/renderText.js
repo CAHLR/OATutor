@@ -31,7 +31,7 @@ function renderText(text, problemID, variabilization) {
                         //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
                         return <center key={Math.random() * 2 ** 16}>
                             <ZoomImage src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
-                                 alt={`${problemID} figure`}/>
+                                       alt={`${problemID} figure`} style={{ width: "100%", objectFit: "scale-down" }}/>
                         </center>
                     }
                 });
