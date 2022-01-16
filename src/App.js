@@ -35,7 +35,7 @@ import parseJwt from "./util/parseJWT";
 import AssignmentNotLinked from "./pages/AssignmentNotLinked";
 import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
 import SessionExpired from "./pages/SessionExpired";
-import Posts from "./pages/Posts/Posts";
+import { Posts } from "./pages/Posts/Posts";
 import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
 // ### END CUSTOMIZABLE IMPORTS ###

@@ -1,19 +1,61 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import React, { useState } from "react";
-import { AppBar, Box, Button, Menu, MenuItem, Toolbar } from "@material-ui/core";
+import { AppBar, Box, Button, makeStyles, Menu, MenuItem, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import SetUpCanvasIntegration from "./SetUpCanvasIntegration";
 import BrandLogoNav from "../../Components/_General/BrandLogoNav";
+import CanvasAssignments from "./CanvasAssignments";
+import SetUpCanvasIntegration from "./SetUpCanvasIntegration";
 
 const POSTS = [
     {
         name: "Setting up Canvas Integration",
         paths: ['set-up-canvas-integration'],
         component: SetUpCanvasIntegration
+    },
+    {
+        name: "Creating Canvas Assignments",
+        paths: ['canvas-assignments'],
+        component: CanvasAssignments
     }
 ]
 
+
+const useStyles = makeStyles({
+    button: {
+        textDecoration: "underline",
+        "&:hover": {
+            cursor: "pointer"
+        }
+    },
+    fullWidth: {
+        width: "100%"
+    },
+    textCenter: {
+        textAlign: "center",
+    },
+    unselectable: {
+        userSelect: "none"
+    },
+    image: {
+        maxWidth: "100%",
+        marginBottom: 8
+    },
+    "p-8": {
+        padding: "2rem"
+    },
+    "p-16": {
+        padding: "4rem"
+    },
+    contentContainer: {
+        width: "75%",
+        maxWidth: "75ch"
+    }
+});
+
+
 const Posts = () => {
+    const classes = useStyles()
+
     const { path, url } = useRouteMatch();
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -77,7 +119,7 @@ const Posts = () => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Box width="75%" maxWidth={1500}>
+                    <Box className={classes.contentContainer}>
                         <Switch>
                             <Route exact path={path}>
                                 <h3>Click the top right corner to select a post.</h3>
@@ -99,4 +141,4 @@ const Posts = () => {
     </>
 }
 
-export default Posts
+export { Posts, useStyles }
