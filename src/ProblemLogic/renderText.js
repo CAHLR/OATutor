@@ -3,6 +3,7 @@ import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js';
 import { variabilize, chooseVariables } from './variabilize.js';
 import Spacer from "../Components/_General/Spacer";
+import ZoomImage from "../Components/_General/ZoomImage";
 
 function renderText(text, problemID, variabilization) {
     if (typeof text !== 'string') {
@@ -29,7 +30,7 @@ function renderText(text, problemID, variabilization) {
                     } else {
                         //console.log(`../ProblemPool/${problemID}/figures/${subPart}`);
                         return <center key={Math.random() * 2 ** 16}>
-                            <img src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
+                            <ZoomImage src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
                                  alt={`${problemID} figure`}/>
                         </center>
                     }
