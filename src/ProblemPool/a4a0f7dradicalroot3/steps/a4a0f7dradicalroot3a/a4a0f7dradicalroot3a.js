@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot3a-index.js"; const step = {id: "a4a0f7dradicalroot3a", stepAnswer: ["$$\\frac{4}{3}$$"], problemType: "TextBox", stepTitle: "Solve: $$\\sqrt{3y+5}+2=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

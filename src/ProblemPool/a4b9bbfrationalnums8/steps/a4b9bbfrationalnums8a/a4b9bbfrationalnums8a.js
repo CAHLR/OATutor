@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums8a-index.js"; const step = {id: "a4b9bbfrationalnums8a", stepAnswer: ["27"], problemType: "TextBox", stepTitle: "$$9^{\\frac{3}{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

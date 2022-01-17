@@ -1,1 +1,0 @@
-import steps from "./a4b9bbfrationalnums15-index.js"; const problem = {id: "a4b9bbfrationalnums15", title: "Use the Laws of Exponents to Simplify Expressions with Rational Exponents", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

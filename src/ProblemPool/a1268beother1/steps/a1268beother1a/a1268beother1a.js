@@ -1,1 +1,0 @@
-import hints from "./a1268beother1a-index.js"; const step = {id: "a1268beother1a", stepAnswer: ["-1,0,2"], problemType: "MultipleChoice", stepTitle: "$$x^3+2x^2-x-2=0$$", stepBody: "", choices: ["-2,-1,1", "-1,0,2", "-2,1,1", "1,1,2"], answerType: "string", hints: hints, variabilization: {}}; export {step};
