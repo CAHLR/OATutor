@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums9c-index.js"; const step = {id: "a4b9bbfrationalnums9c", stepAnswer: ["$$\\frac{1}{32}$$"], problemType: "TextBox", stepTitle: "$$4^{\\left(-\\frac{5}{2}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

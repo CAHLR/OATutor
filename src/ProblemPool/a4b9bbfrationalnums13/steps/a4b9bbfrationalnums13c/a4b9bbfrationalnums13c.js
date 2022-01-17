@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums13c-index.js"; const step = {id: "a4b9bbfrationalnums13c", stepAnswer: ["$$\\frac{1}{z}$$"], problemType: "TextBox", stepTitle: "$${\\left(m^9\\right)}^{\\frac{2}{9}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

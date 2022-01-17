@@ -1,1 +1,0 @@
-import steps from "./a9cf449complex19-index.js"; const problem = {id: "a9cf449complex19", title: "Expressing an Imaginary Number in Standard Form", body: "Perform the indicated operation and express the result as a simplified complex number.", steps: steps, variabilization: {}, oer: "http://openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

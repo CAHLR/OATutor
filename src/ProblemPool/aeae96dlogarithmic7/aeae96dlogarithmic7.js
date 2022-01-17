@@ -1,1 +1,0 @@
-import steps from "./aeae96dlogarithmic7-index.js"; const problem = {id: "aeae96dlogarithmic7", title: "Condensing Complex Logarithmic Expressions", body: "Condense the expression to a single logarithm if possible.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,1 @@
-import hints from "./a10b60arealnumbers2b-index.js"; const step = {id: "a10b60arealnumbers2b", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\sqrt{4, 16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a10b60arealnumbers2b-index.js"; const step = {id: "a10b60arealnumbers2b", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
