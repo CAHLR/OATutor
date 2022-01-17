@@ -1,1 +1,0 @@
-import steps from "./a9cf449complex26-index.js"; const problem = {id: "a9cf449complex26", title: "Evaluating Algebraic Equations with Complex Numbers", body: "For the following exercises, evaluate the algebraic expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

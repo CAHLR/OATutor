@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot6a-index.js"; const step = {id: "a4a0f7dradicalroot6a", stepAnswer: ["$$\\frac{16}{36}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x}+3=\\sqrt{x+5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

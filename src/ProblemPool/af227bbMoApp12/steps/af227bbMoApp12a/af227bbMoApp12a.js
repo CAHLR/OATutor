@@ -1,1 +1,0 @@
-import hints from "./af227bbMoApp12a-index.js"; const step = {id: "af227bbMoApp12a", stepAnswer: ["250"], problemType: "TextBox", stepTitle: "A game room has a perimeter of 70 ft. The length is five more than twice the width. How many $${ft}^2$$ of new carpeting should be ordered?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums5c-index.js"; const step = {id: "a4b9bbfrationalnums5c", stepAnswer: ["$$\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "$${64}^{\\left(-\\frac{1}{3}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
