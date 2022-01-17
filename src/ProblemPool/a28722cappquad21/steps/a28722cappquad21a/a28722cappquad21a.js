@@ -1,1 +1,0 @@
-import hints from "./a28722cappquad21a-index.js"; const step = {id: "a28722cappquad21a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "A rectangular lawn has area 140 square yards. Its width that is six less than twice the length. What is the width of the lawn in yards?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

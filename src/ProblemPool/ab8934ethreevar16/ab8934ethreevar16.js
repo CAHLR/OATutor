@@ -1,0 +1,1 @@
+import steps from "./ab8934ethreevar16-index.js"; const problem = {id: "ab8934ethreevar16", title: "Solving a System of Three Equations in Three Variables by Elimination", body: "Solve the following system.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly16a-index.js"; const step = {id: "a0cc26bpoly16a", stepAnswer: ["$$11b^4-9b^3+12b^2-7b+8$$"], problemType: "TextBox", stepTitle: "Find the sum or difference. $$11b^4-6b^3+18b^2-4b+8-3b^3+6b^2+3b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./afbeae7inequalities23a-index.js"; const step = {id: "afbeae7inequalities23a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$x+5y<-5$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};
