@@ -31,6 +31,11 @@ class ProblemInput extends React.Component {
         if (mqDisplayArea != null) {
             mqDisplayArea.ariaHidden = true
         }
+
+        const textareaEl = this.equationRef?.current?.querySelector(".mq-textarea > textarea")
+        if (textareaEl != null) {
+            textareaEl.ariaLabel = `Answer question number ${this.props.index} here`
+        }
     }
 
     isMatrixInput() {
@@ -52,7 +57,7 @@ class ProblemInput extends React.Component {
 
         if (textareaEl != null) {
             console.debug("not null!", textareaEl)
-            textareaEl.ariaLabel = `Current value: ${eq}`
+            textareaEl.ariaLabel = `The current value is: ${eq}. Answer question number ${this.props.index} here.`
         }
 
         if (containerEl != null && eqContentEl != null) {

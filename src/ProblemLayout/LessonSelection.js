@@ -8,9 +8,6 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import { lessonPlans, coursePlans, ThemeContext } from '../config/config.js';
-import {
-    NavLink
-} from "react-router-dom";
 import Spacer from "../Components/_General/Spacer";
 
 class LessonSelection extends React.Component {
@@ -26,7 +23,7 @@ class LessonSelection extends React.Component {
         this.coursePlans = coursePlans;
         this.state = {
             preparedRemoveProgress: false,
-            removedProgerss: false
+            removedProgress: false
         }
     }
 
@@ -148,19 +145,18 @@ class LessonSelection extends React.Component {
                                                         {lesson.name.toString().replace(/##/g, "")}
                                                     </h2>
                                                     <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
-                                                    <NavLink activeClassName="active" className="link"
-                                                             to={"/lessons/" + lesson.lessonNum}
-                                                             type="menu">
-                                                        <Button variant="contained" color="primary"
-                                                                className={classes.button}
-                                                                style={{ marginBottom: "10px" }}
-                                                                onClick={() => {
-                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
-                                                                    this.props.selectLesson(lesson)
-                                                                }}>
-                                                            Select
-                                                        </Button>
-                                                    </NavLink>
+                                                    <Button variant="contained" color="primary"
+                                                            className={classes.button}
+                                                            aria-label={`View Lesson ${lesson.lessonNum}`}
+                                                            aria-roledescription={`Navigate to lesson ${lesson.lessonNum}'s page to start working on problems`}
+                                                            role={"link"}
+                                                            style={{ marginBottom: "10px" }}
+                                                            onClick={() => {
+                                                                this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                this.props.selectLesson(lesson)
+                                                            }}>
+                                                        Select
+                                                    </Button>
                                                 </Paper>
                                             </center>
                                         </Grid>

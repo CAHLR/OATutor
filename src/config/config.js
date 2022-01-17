@@ -2,7 +2,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.2.12";
+const SITE_VERSION = "1.3.0";
 
 const SITE_NAME = "Open ITS"
 
