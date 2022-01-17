@@ -64,5 +64,5 @@ jobs:
           git config --local user.email "${{ env.git_email }}"
           git config --local user.name "${{ env.git_name }}"
           git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
-          git commit -m "deploy commit: $GITHUB_SHA"
+          git commit -m "deploy commit: CAHLR/OpenITS@$GITHUB_SHA"
           git push
