@@ -1,0 +1,1 @@
+import steps from "./a3b09a3binomseq19-index.js"; const problem = {id: "a3b09a3binomseq19", title: "Binomial Expansion", body: "Find the third term of the binomial expansion.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };

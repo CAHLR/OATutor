@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly1a-index.js"; const step = {id: "a0cc26bpoly1a", stepAnswer: ["$$4x^3+20x^2+4x-1$$"], problemType: "TextBox", stepTitle: "$$12x^2+9x-21+4x^3+8x^2-5x+20$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

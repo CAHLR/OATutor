@@ -1,0 +1,71 @@
+name: Content Staging CI
+
+on:
+  push:
+    branches: [ content-staging ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  buildAndDeploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Save original git author and git email
+        run: |
+          echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
+          echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
+
+      - uses: actions/setup-node@v2.4.1
+
+      - name: Change homepage in package.json
+        run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OATutor-Content-Staging/g' package.json
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+            cache-name: cache-node-modules
+        with:
+            # npm cache files are stored in `~/.npm` on Linux/macOS
+            path: ~/.npm
+            key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+                ${{ runner.os }}-build-${{ env.cache-name }}-
+                ${{ runner.os }}-build-
+                ${{ runner.os }}-
+
+      - name: Run CI install
+        run: npm ci
+
+      - name: Run build
+        run: npm run build
+        env:
+          REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          CI: false
+          REACT_APP_BUILD_TYPE: "staging"
+          REACT_APP_MIDDLEWARE_URL: ${{ secrets.STAGING_MIDDLEWARE_URL }}
+
+      - uses: actions/checkout@v2
+        with:
+          repository: 'CAHLR/OATutor-Content-Staging'
+          ssh-key: ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
+          ref: 'main'
+          path: 'content-staging-build'
+
+      - name: Push
+        run: |
+          cd content-staging-build
+          git rm -rf .
+          git clean -fxd
+          rsync -av ../build/ .
+          git add .
+          git config --local user.email "${{ env.git_email }}"
+          git config --local user.name "${{ env.git_name }}"
+          git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
+          git commit -m "deploy commit: $GITHUB_SHA"
+          git push

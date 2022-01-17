@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions21a-index.js"; const step = {id: "a02e810proportions21a", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$\\frac{m+90}{25}=\\frac{m+30}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

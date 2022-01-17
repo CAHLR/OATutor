@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions7a-index.js"; const step = {id: "a02e810proportions7a", stepAnswer: ["35"], problemType: "TextBox", stepTitle: "$$\\frac{n}{n+14}=\\frac{5}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
