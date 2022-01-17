@@ -3,10 +3,6 @@ import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Problem from "../ProblemLayout/Problem.js";
-import {
-    HashRouter as Router,
-    NavLink
-} from "react-router-dom";
 
 import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
@@ -184,20 +180,24 @@ class DebugPlatform extends React.Component {
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
                                         paddingTop: "6px",
-                                        paddingBototm: "6px"
+                                        paddingBottom: "6px"
                                     }}>
                                     {"Debug Mode: " + this.props.problemID}
                                 </div>
                             </Grid>
                             <Grid item xs={3} key={3}>
                                 <div style={{ textAlign: 'right' }}>
-                                    <Router>
-                                        <NavLink activeClassName="active" className="link" to={"/"} type="menu"
-                                                 style={{ marginRight: '10px' }}>
-                                            <Button color="inherit"
-                                                    onClick={() => this.setState({ status: "lessonSelection" })}>Home</Button>
-                                        </NavLink>
-                                    </Router>
+                                    <Button
+                                        aria-label={`Return to home`}
+                                        aria-roledescription={`Return to the home page`}
+                                        role={"link"}
+                                        color="inherit"
+                                        onClick={() => {
+                                            this.props.history.push("/")
+                                            this.setState({ status: "lessonSelection" })
+                                        }}>
+                                        Home
+                                    </Button>
                                 </div>
                             </Grid>
                         </Grid>

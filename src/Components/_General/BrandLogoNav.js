@@ -18,6 +18,7 @@ function BrandLogoNav({ isPrivileged = false, noLink = false }) {
     const history = useHistory()
 
     const classes = useStyles()
+    const brandString = `${SITE_NAME} (v${SITE_VERSION})`
 
     const navigateLink = (evt) => {
         if (evt.type === "click" || evt.key === "Enter") {
@@ -29,12 +30,12 @@ function BrandLogoNav({ isPrivileged = false, noLink = false }) {
         {/* specified to not link or was launched from lms as student*/}
         {noLink || (context.jwt.length !== 0 && !isPrivileged)
             ? <div style={{ textAlign: 'left', paddingTop: "3px" }}>
-                {SITE_NAME} (v{SITE_VERSION})
+                {brandString}
             </div>
             :
             <div role={"link"} tabIndex={0} onClick={navigateLink} onKeyDown={navigateLink}
                  className={classes.siteNavLink}>
-                {SITE_NAME} (v{SITE_VERSION})
+                {brandString}
             </div>
         }
     </>
