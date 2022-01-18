@@ -1,0 +1,1 @@
+import steps from "./a1f9370SolvingFormul20-index.js"; const problem = {id: "a1f9370SolvingFormul20", title: "Solve the Formula for the given variable", body: "Solve the formula to get an expression for $$d_2$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

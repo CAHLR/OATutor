@@ -1,0 +1,1 @@
+import steps from "./aded0eclinear22-index.js"; const problem = {id: "aded0eclinear22", title: "Solving Linear Inequalities", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
