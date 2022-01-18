@@ -14,7 +14,10 @@ const consumerKeySecretMap = {
     'c7d7b10bee2face4e59e48f4bca34a80': 'bc3b62224d0635c06a2892456232d02a64e5232f9b9ee5d015a9abb65c883000ddcabde26bc630de5d4b71fd58bf5da02a7e8e31022948a3a5bd3f1f',
 
     // legacy Canvas consumer
-    'openits-key': 'openits-secret'
+    'openits-key': 'openits-secret',
+
+    // demo consumer
+    'key': 'secret',
 }
 
 const oatsHost = "https://cahlr.github.io/OpenITS/#"
@@ -316,7 +319,7 @@ app.post('/auth', async (req, res) => {
 
     provider.valid_request(req, (err, is_valid) => {
         if (!is_valid) {
-            console.debug("launch from lti consumer was invalid", err, is_valid, provider)
+            console.debug("legacy launch from lti consumer was invalid", err, is_valid, provider)
             res.send("Invalid request. Please try again or contact your teacher.")
             res.end()
             errFlag = true
