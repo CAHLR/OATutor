@@ -1,0 +1,1 @@
+import steps from "./afb3ccdlang11-index.js"; const problem = {id: "afb3ccdlang11", title: "Simplify Expressions Using the Order of Operations", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

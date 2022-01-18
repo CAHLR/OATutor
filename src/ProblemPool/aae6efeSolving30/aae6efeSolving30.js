@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving30-index.js"; const problem = {id: "aae6efeSolving30", title: "Margaret's Car", body: "Find how much Margaret had to borrow.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

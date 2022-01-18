@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving17-index.js"; const problem = {id: "aae6efeSolving17", title: "Jeff's Bicycles", body: "Find the number of children's bicycles.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

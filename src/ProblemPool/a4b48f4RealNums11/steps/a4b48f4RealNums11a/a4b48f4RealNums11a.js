@@ -1,0 +1,1 @@
+import hints from "./a4b48f4RealNums11a-index.js"; const step = {id: "a4b48f4RealNums11a", stepAnswer: ["$$\\frac{5}{49}$$"], problemType: "TextBox", stepTitle: "$$\\frac{10\\frac{5\\frac{9}{10}}{49}}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

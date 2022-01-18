@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving24c-index.js"; const step = {id: "aae6efeSolving24c", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "What percent of 260 is 78?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

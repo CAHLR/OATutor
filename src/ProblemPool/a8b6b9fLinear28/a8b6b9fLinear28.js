@@ -1,0 +1,1 @@
+import steps from "./a8b6b9fLinear28-index.js"; const problem = {id: "a8b6b9fLinear28", title: "Solve Equations with Fraction or Decimal Coefficients", body: "Solve the following equation", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

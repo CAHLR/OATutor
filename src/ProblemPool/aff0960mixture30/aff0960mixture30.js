@@ -1,0 +1,1 @@
+import steps from "./aff0960mixture30-index.js"; const problem = {id: "aff0960mixture30", title: "Solve A Uniform Motion Application", body: "Solve the following problem:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
