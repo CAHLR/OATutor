@@ -1,0 +1,1 @@
+import steps from "./a8b6b9fLinear18-index.js"; const problem = {id: "a8b6b9fLinear18", title: "Solve Equations Using the General Strategy", body: "Solve the Linear Equation", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

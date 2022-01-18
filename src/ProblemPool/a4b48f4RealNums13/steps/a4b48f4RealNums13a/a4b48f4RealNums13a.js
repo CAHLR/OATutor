@@ -1,0 +1,1 @@
+import hints from "./a4b48f4RealNums13a-index.js"; const step = {id: "a4b48f4RealNums13a", stepAnswer: ["$$3x+12$$"], problemType: "TextBox", stepTitle: "$$3\\left(x+4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a8b6b9fLinear16-index.js"; const problem = {id: "a8b6b9fLinear16", title: "Solve Equations Using the General Strategy", body: "Determine whether the given values are solutions to the equation: $$6y+10=12y$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving2-index.js"; const problem = {id: "aae6efeSolving2", title: "Use a Problem Solving Strategy for Word Problems", body: "Solve the following word problem", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
