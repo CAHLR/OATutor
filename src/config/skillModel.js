@@ -4251,6 +4251,12 @@ const skillModel = {
     a616928pvalue4b: ['rare_events', 'the_sample', 'decision_and_conclusion'],
     a616928pvalue4c: ['rare_events', 'the_sample', 'decision_and_conclusion'],
     a616928pvalue5a: ['rare_events', 'the_sample', 'decision_and_conclusion'],
+    ab3cfa1intro1a: ['prediction'],
+    ab3cfa1nums1a: ['writing_python_expressions'],
+    ae52c85linalg1a: ['n/a'],
+    ae52c85linalg1b: ['n/a'],
+    ae52c85linalg2a: ['n/a'],
+    ae52c85linalg2b: ['n/a'],
     // Start Inserting
 
 }
