@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex21a-index.js"; const step = {id: "a9cf449complex21a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$i^8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
