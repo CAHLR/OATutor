@@ -1,0 +1,1 @@
+import steps from "./ae45a45int5-index.js"; const problem = {id: "ae45a45int5", title: "Add and Subtract Integers", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
