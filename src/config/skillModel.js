@@ -4621,6 +4621,8 @@ const skillModel = {
     aded0eclinear7a: ['solve_linear_inequalities'],
     aded0eclinear8a: ['solve_linear_inequalities'],
     aded0eclinear9a: ['solve_linear_inequalities'],
+    a663ccaintro1a: ['prediction'],
+    a663ccanums1a: ['writing_python_expressions'],
     // Start Inserting
 
 }
