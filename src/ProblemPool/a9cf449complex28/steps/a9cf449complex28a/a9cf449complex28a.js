@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex28a-index.js"; const step = {id: "a9cf449complex28a", stepAnswer: ["$$\\frac{-23}{29}+\\frac{15}{29} i$$"], problemType: "TextBox", stepTitle: "If $$y=\\frac{x+1}{2-x}$$, evaluate y given $$x=5i$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
