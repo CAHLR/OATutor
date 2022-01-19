@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving26-index.js"; const problem = {id: "aae6efeSolving26", title: "Hiro's Lunch", body: "Find the tip amount.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

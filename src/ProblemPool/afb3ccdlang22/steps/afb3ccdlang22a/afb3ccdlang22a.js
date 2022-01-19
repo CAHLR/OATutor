@@ -1,0 +1,1 @@
+import hints from "./afb3ccdlang22a-index.js"; const step = {id: "afb3ccdlang22a", stepAnswer: ["149"], problemType: "TextBox", stepTitle: "Simplify $$3\\left(1+9\\times6\\right)-4^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./ab3cfa1nums1-index.js"; const problem = {id: "ab3cfa1nums1", title: "Python Expression Arithmetic", body: "", steps: steps, variabilization: {}, oer: "Data 8", courseName: "Data Science Content"}; export { problem };

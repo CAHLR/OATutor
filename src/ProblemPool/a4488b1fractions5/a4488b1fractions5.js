@@ -1,0 +1,1 @@
+import steps from "./a4488b1fractions5-index.js"; const problem = {id: "a4488b1fractions5", title: "Perform the operation", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving16-index.js"; const problem = {id: "aae6efeSolving16", title: "Cub Scouts", body: "Find the number of adult leaders.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
