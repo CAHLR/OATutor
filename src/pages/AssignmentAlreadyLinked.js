@@ -38,11 +38,12 @@ const AssignmentAlreadyLinked = (props) => {
                     <Box width="75%" maxWidth={1500}>
                         <center>
                             {linkedLesson
-                                ? <h1>This assignment has already been linked to
-                                    lesson {linkedLesson.lessonNum}.</h1>
-                                : <h1>This assignment has already been linked.</h1>
+                                ? <h1>This assignment has been linked to
+                                    lesson {linkedLesson.lessonNum} successfully!</h1>
+                                : <h1>This assignment has been linked successfully!</h1>
                             }
                             <h2>To link a new OATutor lesson, please create a new assignment on your LMS.</h2>
+                            <h2>To preview the lesson, click on "Student View" on Canvas.</h2>
                         </center>
                         <Divider/>
                         <center>
