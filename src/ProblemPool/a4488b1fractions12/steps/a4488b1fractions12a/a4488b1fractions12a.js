@@ -1,0 +1,1 @@
+import hints from "./a4488b1fractions12a-index.js"; const step = {id: "a4488b1fractions12a", stepAnswer: ["$$\\frac{-4}{9}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{5}{18}}{\\left(-\\frac{15}{24}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

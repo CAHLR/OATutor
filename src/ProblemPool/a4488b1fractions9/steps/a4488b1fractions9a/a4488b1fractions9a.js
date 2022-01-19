@@ -1,0 +1,1 @@
+import hints from "./a4488b1fractions9a-index.js"; const step = {id: "a4488b1fractions9a", stepAnswer: ["$$\\frac{11}{30}$$"], problemType: "TextBox", stepTitle: "$$\\left(-\\frac{63}{84}\\right) \\left(-\\frac{44}{90}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

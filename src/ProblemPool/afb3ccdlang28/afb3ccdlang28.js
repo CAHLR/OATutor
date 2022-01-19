@@ -1,0 +1,1 @@
+import steps from "./afb3ccdlang28-index.js"; const problem = {id: "afb3ccdlang28", title: "Evaluating Expressions", body: "Solve for the value of the expression.", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ae45a45int2-index.js"; const problem = {id: "ae45a45int2", title: "Simplify Expressions with Absolute Value", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
