@@ -1,1 +1,1 @@
-import hints from "./ada10e6CompletingSqr30a-index.js"; const step = {id: "ada10e6CompletingSqr30a", stepAnswer: ["-1/3~sqrt(13)/3"], problemType: "TextBox", stepTitle: "$$3x^2+2x=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./ada10e6CompletingSqr30a-index.js"; const step = {id: "ada10e6CompletingSqr30a", stepAnswer: ["$$\\frac{-1}{3}\\pm\\frac{\\sqrt{13}}{3}$$"], problemType: "TextBox", stepTitle: "$$3x^2+2x=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,1 @@
-import hints from "./aa97d5brate1a-index.js"; const step = {id: "aa97d5brate1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$p(x)=3x+4$$ on $$[2,2+h]$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./aa97d5brate1a-index.js"; const step = {id: "aa97d5brate1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$p(x)=3x+4$$ on [2,2+h]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
