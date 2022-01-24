@@ -157,12 +157,6 @@ class LessonSelection extends React.Component {
                                     margin: -2
                                 }}/>
                             </IconButton>
-                            <IconButton aria-label="report problem" onClick={this.toggleFeedback}
-                                        title={"Report Problem"}>
-                                <FeedbackOutlinedIcon htmlColor={"#000"} style={{
-                                    fontSize: 32
-                                }}/>
-                            </IconButton>
                         </div>
                     </div>
                 </footer>
