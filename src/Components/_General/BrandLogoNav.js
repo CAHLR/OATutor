@@ -29,7 +29,7 @@ function BrandLogoNav({ isPrivileged = false, noLink = false }) {
     return <>
         {/* specified to not link or was launched from lms as student*/}
         {noLink || (context.jwt.length !== 0 && !isPrivileged)
-            ? <div style={{ textAlign: 'left', paddingTop: "3px" }}>
+            ? <div style={{ textAlign: 'left', paddingTop: 6 }}>
                 {brandString}
             </div>
             :

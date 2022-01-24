@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { AppBar, Box, Button, makeStyles, Menu, MenuItem, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import BrandLogoNav from "../../Components/_General/BrandLogoNav";
+import { SITE_NAME, SITE_VERSION } from "../../config/config";
+
+import HowToUse from "./HowToUse";
 import CanvasAssignments from "./CanvasAssignments";
 import SetUpCanvasIntegration from "./SetUpCanvasIntegration";
 
@@ -16,6 +19,11 @@ const POSTS = [
         name: "Creating Canvas Assignments",
         paths: ['canvas-assignments'],
         component: CanvasAssignments
+    },
+    {
+        name: `How to use ${SITE_NAME} v${SITE_VERSION}`,
+        paths: [`how-to-use`],
+        component: HowToUse
     }
 ]
 
@@ -46,6 +54,12 @@ const useStyles = makeStyles({
     "p-16": {
         padding: "4rem"
     },
+    "pt-2": {
+        paddingTop: "0.5rem"
+    },
+    "pt-8": {
+        paddingTop: "2rem"
+    },
     contentContainer: {
         width: "75%",
         maxWidth: "75ch"
@@ -71,9 +85,9 @@ const Posts = () => {
         <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 50 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Grid container justifyContent={"space-between"} spacing={0} role={"navigation"}>
+                    <Grid container justifyContent={"space-between"} spacing={0} role={"navigation"} alignItems={"center"}>
                         <Grid item xs={3} key={1}>
-                            <BrandLogoNav noLink={true}/>
+                            <BrandLogoNav/>
                         </Grid>
                         <Grid item xs={3} key={3}>
                             <div style={{ textAlign: 'right', paddingTop: "3px" }}>
@@ -88,7 +102,6 @@ const Posts = () => {
                                     All Posts
                                 </Button>
                                 <Menu
-                                    dense
                                     id="basic-menu"
                                     anchorEl={anchorEl}
                                     getContentAnchorEl={null}
@@ -98,6 +111,7 @@ const Posts = () => {
                                     onClose={handleClose}
                                     MenuListProps={{
                                         'aria-labelledby': 'basic-button',
+                                        dense: true
                                     }}
                                 >
                                     {POSTS.map(post => {
@@ -119,7 +133,7 @@ const Posts = () => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Box className={classes.contentContainer}>
+                    <Box className={classes.contentContainer} role={"main"}>
                         <Switch>
                             <Route exact path={path}>
                                 <h3>Click the top right corner to select a post.</h3>

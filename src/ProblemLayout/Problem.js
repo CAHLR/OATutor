@@ -229,7 +229,7 @@ class Problem extends React.Component {
     }
 
     toggleFeedback = () => {
-        scroll.scrollToBottom({ duration: 900, smooth: true });
+        scroll.scrollToBottom({ duration: 500, smooth: true });
         this.setState(prevState => ({ showFeedback: !prevState.showFeedback }))
     }
 
@@ -246,137 +246,141 @@ class Problem extends React.Component {
         }
 
         return (
-            <div>
-                <div className={classes.prompt} role={"banner"}>
-                    <Card className={classes.titleCard}>
-                        <CardContent {...stagingProp({
-                            "data-selenium-target": "problem-header"
-                        })}>
-                            <h1 className={classes.problemHeader}>
-                                {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
-                                <hr/>
-                            </h1>
-                            <div className={classes.problemBody}>
-                                {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
-                            </div>
-                        </CardContent>
-                    </Card>
-                    <Spacer height={8}/>
-                    <hr/>
-                </div>
-                <div role={"main"}>
-                    {this.state.steps}
-                </div>
-                <div width="100%">
-                    {this.context.debug ?
-                        <Grid container spacing={0}>
-                            <Grid item xs={2} key={0}/>
-                            <Grid item xs={2} key={1}>
-                                <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)}
-                                         type="menu"
-                                         style={{ marginRight: '10px' }}>
-                                    <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                            onClick={() => this.context.needRefresh = true}>Previous Problem</Button>
-                                </NavLink>
-                            </Grid>
-                            <Grid item xs={4} key={2}/>
-                            <Grid item xs={2} key={3}>
-                                <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)}
-                                         type="menu"
-                                         style={{ marginRight: '10px' }}>
-                                    <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                            onClick={() => this.context.needRefresh = true}>Next Problem</Button>
-                                </NavLink>
-                            </Grid>
-                            <Grid item xs={2} key={4}/>
-                        </Grid>
-                        :
-                        <Grid container spacing={0}>
-                            <Grid item xs={3} sm={3} md={5} key={1}/>
-                            <Grid item xs={6} sm={6} md={2} key={2}>
-                                <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                        onClick={this.clickNextProblem}
-                                        disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next
-                                    Problem</Button>
-                            </Grid>
-                            <Grid item xs={3} sm={3} md={5} key={3}/>
-                        </Grid>}
-                </div>
-
-                <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                    <div style={{ marginLeft: 20, fontSize: 12 }}>
-                        {this.state.problem.oer && this.state.problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
-                            <div>
-                                "{this.state.problem.title}" is a derivative of&nbsp;
-                                <a href="https://openstax.org/" target="_blank" rel="noreferrer">
-                                    "{lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""}"
-                                </a>
-                                &nbsp;by OpenStax, used under&nbsp;
-                                <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noreferrer">CC
-                                    BY 4.0</a>
-                            </div>
-                            : ""}
+            <>
+                <div>
+                    <div className={classes.prompt} role={"banner"}>
+                        <Card className={classes.titleCard}>
+                            <CardContent {...stagingProp({
+                                "data-selenium-target": "problem-header"
+                            })}>
+                                <h1 className={classes.problemHeader}>
+                                    {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
+                                    <hr/>
+                                </h1>
+                                <div className={classes.problemBody}>
+                                    {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Spacer height={8}/>
+                        <hr/>
                     </div>
-                    <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                        <IconButton aria-label="help" title={"How to use OpenITS?"}
-                                    href={"https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub"}
-                                    target={"_blank"} rel={"noreferrer"}>
-                            <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
-                                fontSize: 36,
-                                margin: -2
-                            }}/>
-                        </IconButton>
-                        <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
-                            <FeedbackOutlinedIcon htmlColor={"#000"} style={{
-                                fontSize: 32
-                            }}/>
-                        </IconButton>
+                    <div role={"main"}>
+                        {this.state.steps}
                     </div>
-
-                </div>
-                {this.state.showFeedback ? <div className="Feedback">
-                    <center><h1>Feedback</h1></center>
-                    <div className={classes.textBox}>
-                        <div className={classes.textBoxHeader}>
-                            <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
-                        </div>
-                        {this.state.feedbackSubmitted ? <Spacer/> : <Grid container spacing={0}>
-                            <Grid item xs={1} sm={2} md={2} key={1}/>
-                            <Grid item xs={10} sm={8} md={8} key={2}>
-                                <TextField
-                                    id="outlined-multiline-flexible"
-                                    label="Response"
-                                    multiline
-                                    fullWidth
-                                    minRows="6"
-                                    maxRows="20"
-                                    value={this.state.feedback}
-                                    onChange={(event) => this.setState({ feedback: event.target.value })}
-                                    className={classes.textField}
-                                    margin="normal"
-                                    variant="outlined"
-                                /> </Grid>
-                            <Grid item xs={1} sm={2} md={2} key={3}/>
-                        </Grid>}
-                    </div>
-                    {this.state.feedbackSubmitted ? "" :
-                        <div className="submitFeedback">
+                    <div width="100%">
+                        {this.context.debug ?
+                            <Grid container spacing={0}>
+                                <Grid item xs={2} key={0}/>
+                                <Grid item xs={2} key={1}>
+                                    <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)}
+                                             type="menu"
+                                             style={{ marginRight: '10px' }}>
+                                        <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                                onClick={() => this.context.needRefresh = true}>Previous
+                                            Problem</Button>
+                                    </NavLink>
+                                </Grid>
+                                <Grid item xs={4} key={2}/>
+                                <Grid item xs={2} key={3}>
+                                    <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)}
+                                             type="menu"
+                                             style={{ marginRight: '10px' }}>
+                                        <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                                onClick={() => this.context.needRefresh = true}>Next Problem</Button>
+                                    </NavLink>
+                                </Grid>
+                                <Grid item xs={2} key={4}/>
+                            </Grid>
+                            :
                             <Grid container spacing={0}>
                                 <Grid item xs={3} sm={3} md={5} key={1}/>
                                 <Grid item xs={6} sm={6} md={2} key={2}>
                                     <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                            onClick={this.submitFeedback}
-                                            disabled={this.state.feedback === ""}>Submit</Button>
+                                            onClick={this.clickNextProblem}
+                                            disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next
+                                        Problem</Button>
                                 </Grid>
                                 <Grid item xs={3} sm={3} md={5} key={3}/>
-                            </Grid>
-                            <Spacer/></div>}
+                            </Grid>}
+                    </div>
+                </div>
+                <footer>
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                        <div style={{ marginLeft: 20, fontSize: 12 }}>
+                            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
+                                <div>
+                                    "{this.state.problem.title}" is a derivative of&nbsp;
+                                    <a href="https://openstax.org/" target="_blank" rel="noreferrer">
+                                        "{lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""}"
+                                    </a>
+                                    &nbsp;by OpenStax, used under&nbsp;
+                                    <a href="https://creativecommons.org/licenses/by/4.0" target="_blank"
+                                       rel="noreferrer">CC
+                                        BY 4.0</a>
+                                </div>
+                                : ""}
+                        </div>
+                        <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
+                            <IconButton aria-label="help" title={"How to use OpenITS?"}
+                                        href={"/#/posts/how-to-use"}
+                                        target={"_blank"} rel={"noreferrer"}>
+                                <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
+                                    fontSize: 36,
+                                    margin: -2
+                                }}/>
+                            </IconButton>
+                            <IconButton aria-label="report problem" onClick={this.toggleFeedback}
+                                        title={"Report Problem"}>
+                                <FeedbackOutlinedIcon htmlColor={"#000"} style={{
+                                    fontSize: 32
+                                }}/>
+                            </IconButton>
+                        </div>
 
-
-                </div> : ""}
-
-            </div>
-
+                    </div>
+                    {this.state.showFeedback ? <div className="Feedback">
+                        <center><h1>Feedback</h1></center>
+                        <div className={classes.textBox}>
+                            <div className={classes.textBoxHeader}>
+                                <center>{this.state.feedbackSubmitted ? "Thank you for your feedback!" : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}</center>
+                            </div>
+                            {this.state.feedbackSubmitted ? <Spacer/> : <Grid container spacing={0}>
+                                <Grid item xs={1} sm={2} md={2} key={1}/>
+                                <Grid item xs={10} sm={8} md={8} key={2}>
+                                    <TextField
+                                        id="outlined-multiline-flexible"
+                                        label="Response"
+                                        multiline
+                                        fullWidth
+                                        minRows="6"
+                                        maxRows="20"
+                                        value={this.state.feedback}
+                                        onChange={(event) => this.setState({ feedback: event.target.value })}
+                                        className={classes.textField}
+                                        margin="normal"
+                                        variant="outlined"
+                                    /> </Grid>
+                                <Grid item xs={1} sm={2} md={2} key={3}/>
+                            </Grid>}
+                        </div>
+                        {this.state.feedbackSubmitted ? "" :
+                            <div className="submitFeedback">
+                                <Grid container spacing={0}>
+                                    <Grid item xs={3} sm={3} md={5} key={1}/>
+                                    <Grid item xs={6} sm={6} md={2} key={2}>
+                                        <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                                onClick={this.submitFeedback}
+                                                disabled={this.state.feedback === ""}>Submit</Button>
+                                    </Grid>
+                                    <Grid item xs={3} sm={3} md={5} key={3}/>
+                                </Grid>
+                                <Spacer/>
+                            </div>
+                        }
+                    </div> : ""}
+                </footer>
+            </>
         );
     }
 }
