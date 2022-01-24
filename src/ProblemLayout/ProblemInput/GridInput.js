@@ -118,7 +118,7 @@ class GridInput extends React.Component {
                                     inputProps={{
                                         "aria-labelledby": `${this.rowId}-label`
                                     }}
-                                    variant={"outlined"} label={`Number of rows for question ${index}`} type={'number'}
+                                    variant={"outlined"} label={`# rows (Q${index})`} type={'number'}
                                     className={'grid-input-dim-input'}
                                     {...stagingProp({
                                         "data-selenium-target": `grid-answer-row-input-${index}`
@@ -131,7 +131,7 @@ class GridInput extends React.Component {
                                     inputProps={{
                                         "aria-labelledby": `${this.colId}-label`
                                     }}
-                                    variant={"outlined"} label={`Number of columns for question ${index}`} type={'number'}
+                                    variant={"outlined"} label={`# cols (Q${index})`} type={'number'}
                                     className={'grid-input-dim-input'}
                                     {...stagingProp({
                                         "data-selenium-target": `grid-answer-col-input-${index}`

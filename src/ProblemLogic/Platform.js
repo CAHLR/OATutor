@@ -248,10 +248,10 @@ class Platform extends React.Component {
 
     render() {
         return (
-            <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
+            <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20, display: "flex", flexDirection: "column" }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Grid container spacing={0} role={"navigation"}>
+                        <Grid container spacing={0} role={"navigation"} alignItems={"center"}>
                             <Grid item xs={3} key={1}>
                                 <BrandLogoNav isPrivileged={this.isPrivileged}/>
                             </Grid>
