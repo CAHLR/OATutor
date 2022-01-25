@@ -7,8 +7,10 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
-import { lessonPlans, coursePlans, ThemeContext } from '../config/config.js';
+import { lessonPlans, coursePlans, ThemeContext, SITE_NAME } from '../config/config.js';
 import Spacer from "../Components/_General/Spacer";
+import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -37,10 +39,11 @@ class LessonSelection extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
-        //console.log("courseNum" + this.props.courseNum);
-        if (this.props.courseNum == null) {
-            return (
+        const { classes, courseNum } = this.props;
+        const selectionMode = courseNum == null ? "course" : "lesson"
+
+        return (
+            <>
                 <div>
                     <Grid
                         container
@@ -55,7 +58,7 @@ class LessonSelection extends React.Component {
                                     ? <h1>Welcome Instructor!</h1>
                                     : <h1>Welcome to OpenITS!</h1>
                                 }
-                                <h2>Please select a course</h2>
+                                <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
                                 {this.isPrivileged
                                     && <h4>(for {this.user.resource_link_title})</h4>
                                 }
@@ -63,105 +66,63 @@ class LessonSelection extends React.Component {
                             <Divider/>
                             <Spacer/>
                             <Grid container spacing={3}>
-                                {this.coursePlans.map((course, i) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} key={i}>
-                                            <center>
-                                                <Paper className={classes.paper}>
-                                                    <h2 style={{
-                                                        marginTop: "5px",
-                                                        marginBottom: "10px"
-                                                    }}>{course.courseName}</h2>
-                                                    <IconButton aria-label={`View Course ${i}`}
-                                                                aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
+                                {selectionMode === "course"
+                                    ? this.coursePlans.map((course, i) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} key={i}>
+                                                <center>
+                                                    <Paper className={classes.paper}>
+                                                        <h2 style={{
+                                                            marginTop: "5px",
+                                                            marginBottom: "10px"
+                                                        }}>{course.courseName}</h2>
+                                                        <IconButton aria-label={`View Course ${i}`}
+                                                                    aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
+                                                                    role={"link"}
+                                                                    onClick={() => {
+                                                                        this.props.history.push(`/courses/${i}`)
+                                                                        this.props.selectCourse(course)
+                                                                    }}>
+                                                            <img
+                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
+                                                                width="64px"
+                                                                alt="folderIcon"/>
+                                                        </IconButton>
+                                                    </Paper>
+                                                </center>
+                                            </Grid>
+                                        )
+                                    })
+                                    : this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} key={i}>
+                                                <center>
+                                                    <Paper className={classes.paper}>
+                                                        <h2 style={{
+                                                            marginTop: "5px",
+                                                            marginBottom: "10px"
+                                                        }}>
+                                                            {lesson.name.toString().replace(/##/g, "")}
+                                                        </h2>
+                                                        <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
+                                                        <Button variant="contained" color="primary"
+                                                                className={classes.button}
+                                                                aria-label={`View Lesson ${lesson.lessonNum}`}
+                                                                aria-roledescription={`Navigate to lesson ${lesson.lessonNum}'s page to start working on problems`}
                                                                 role={"link"}
+                                                                style={{ marginBottom: "10px" }}
                                                                 onClick={() => {
-                                                                    this.props.history.push(`/courses/${i}`)
-                                                                    this.props.selectCourse(course)
+                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                    this.props.selectLesson(lesson)
                                                                 }}>
-                                                        <img
-                                                            src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
-                                                            width="64px"
-                                                            alt="folderIcon"/>
-                                                    </IconButton>
-                                                </Paper>
-                                            </center>
-                                        </Grid>
-                                    )
-                                })}
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Spacer/>
-                    <Grid container spacing={0}>
-                        <Grid item xs={3} sm={3} md={5} key={1}/>
-                        {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
-                            {this.state.preparedRemoveProgress ?
-                                <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                        onClick={this.removeProgress}
-                                        disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
-                                <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                        onClick={this.prepareRemoveProgress}
-                                        disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
-                        </Grid>}
-                        <Grid item xs={3} sm={3} md={4} key={3}/>
-                    </Grid>
-                    <Spacer/>
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <Grid
-                        container
-                        spacing={0}
-                        direction="column"
-                        alignItems="center"
-                        justifyContent="center"
-                    >
-                        <Box width="75%" maxWidth={1500} role={"main"}>
-                            <center>
-                                {this.isPrivileged
-                                    ? <h1>Welcome Instructor!</h1>
-                                    : <h1>Welcome to OpenITS!</h1>
+                                                            Select
+                                                        </Button>
+                                                    </Paper>
+                                                </center>
+                                            </Grid>
+                                        )
+                                    })
                                 }
-                                <h2>Please select a lesson plan</h2>
-                                {this.isPrivileged
-                                    && <h4>(for {this.user.resource_link_title})</h4>
-                                }
-                            </center>
-                            <Divider/>
-                            <Spacer/>
-                            <Grid container spacing={3}>
-                                {this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} key={i}>
-                                            <center>
-                                                <Paper className={classes.paper}>
-                                                    <h2 style={{
-                                                        marginTop: "5px",
-                                                        marginBottom: "10px"
-                                                    }}>
-                                                        {lesson.name.toString().replace(/##/g, "")}
-                                                    </h2>
-                                                    <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
-                                                    <Button variant="contained" color="primary"
-                                                            className={classes.button}
-                                                            aria-label={`View Lesson ${lesson.lessonNum}`}
-                                                            aria-roledescription={`Navigate to lesson ${lesson.lessonNum}'s page to start working on problems`}
-                                                            role={"link"}
-                                                            style={{ marginBottom: "10px" }}
-                                                            onClick={() => {
-                                                                this.props.history.push(`/lessons/${lesson.lessonNum}`)
-                                                                this.props.selectLesson(lesson)
-                                                            }}>
-                                                        Select
-                                                    </Button>
-                                                </Paper>
-                                            </center>
-                                        </Grid>
-                                    )
-                                })}
                             </Grid>
                             <Spacer/>
                         </Box>
@@ -182,8 +143,25 @@ class LessonSelection extends React.Component {
                     </Grid>
                     <Spacer/>
                 </div>
-            );
-        }
+                <footer>
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                        <div style={{ marginLeft: 20, fontSize: 16 }}>
+                            © {new Date().getFullYear()} {SITE_NAME}
+                        </div>
+                        <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
+                            <IconButton aria-label="help" title={"How to use OpenITS?"}
+                                        href={"/#/posts/how-to-use"}
+                                        target={"_blank"} rel={"noreferrer"}>
+                                <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
+                                    fontSize: 36,
+                                    margin: -2
+                                }}/>
+                            </IconButton>
+                        </div>
+                    </div>
+                </footer>
+            </>
+        )
     }
 }
 

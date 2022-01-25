@@ -1,7 +1,17 @@
 body {
     margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root, .Router, .Router > * {
+    min-height: 100vh;
+}
+
+footer {
+    position: sticky;
+    top: 100vh;
 }
 
 *,
@@ -35,7 +45,7 @@ blockquote {
     position: relative;
     margin: -0.4em 1em 1.4em;
     padding: 0.6em 0.8em 0.6em 1em;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 blockquote:before {
@@ -47,5 +57,5 @@ blockquote:before {
     content: "";
     width: 4px;
     border-radius: 8px;
-    background: rgb(180,184,188);
+    background: rgb(180, 184, 188);
 }
