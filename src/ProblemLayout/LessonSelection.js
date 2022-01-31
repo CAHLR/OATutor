@@ -150,8 +150,7 @@ class LessonSelection extends React.Component {
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
                             <IconButton aria-label="help" title={"How to use OpenITS?"}
-                                        href={"/#/posts/how-to-use"}
-                                        target={"_blank"} rel={"noreferrer"}>
+                                        href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,
                                     margin: -2
