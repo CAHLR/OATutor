@@ -21,6 +21,11 @@ const HowToUse = () => {
             Last updated: {new Date(1643007791501).toLocaleString()}
         </h4>
 
+        <h4>Question Input Types & Shortcuts</h4>
+
+        To learn more about how to fill in and submit {SITE_NAME} assignments,<span> </span>
+        <a href={HELP_DOCUMENT} target={"_blank"} rel={"noreferrer"}>visit our help document</a>.
+
         <h4>Accessibility Standards</h4>
 
         <p>
@@ -40,11 +45,6 @@ const HowToUse = () => {
             url:<span> </span>
             <a href={VPAT_LINK} target={"_blank"} rel={"noreferrer"}>{VPAT_LINK.match(/\/[^/]*$/)[0].substr(1)}</a>
         </p>
-
-        <h4>Question Input Types & Shortcuts</h4>
-
-        To learn more about how to fill in and submit {SITE_NAME} assignments, visit our help document:<span> </span>
-        <a href={HELP_DOCUMENT} target={"_blank"} rel={"noreferrer"}>here</a>
 
         <Spacer height={24 * 8}/>
     </>

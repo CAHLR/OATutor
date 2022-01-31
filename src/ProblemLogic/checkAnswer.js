@@ -1,6 +1,11 @@
 import { variabilize } from './variabilize.js';
+import insert from "../util/strInsert";
 
 const KAS = require('../kas.js');
+
+if (process.env.REACT_APP_BUILD_TYPE === "development") {
+    window.KAS = KAS
+}
 
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
@@ -27,6 +32,32 @@ function round(num, precision) {
         return num;
     }
 }
+
+/**
+ * Uses parse
+ * @param _string the expression string
+ */
+function parse(_string) {
+    // explicitly group outermost absolute value pair with parenthesis to imply multiplication when neighboring constant
+    if (_string.split("|").length === 3) {
+        const leftIdx = _string.indexOf("\\left|")
+        if (leftIdx > -1) {
+            const rightIdx = _string.lastIndexOf("\\right|")
+            _string = insert(_string, leftIdx, "(")
+            _string = insert(_string, rightIdx + 8, ")")
+        } else {
+            const leftBarIdx = _string.indexOf("|")
+            const rightBarIdx = _string.lastIndexOf("|")
+            _string = insert(_string, leftBarIdx, "(")
+            _string = insert(_string, rightBarIdx + 2, ")")
+        }
+    }
+
+    const string = _string
+        .replace(/\$\$/g, '') // replace $$ as KAS can parse LaTex but without the $$ prepended/appended
+    return KAS.parse(string)
+}
+
 
 function checkAnswer(attempt, actual, answerType, precision, variabilization) {
     let parsed = attempt.replace(/\s+/g, '');
@@ -62,9 +93,9 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
                     return matrix.reduce((acc, row, idx) => acc && row.reduce((_acc, cell, jdx) => {
                         const _studentRow = studentMatrix[idx] || []
                         const _studentCell = _studentRow[jdx] || ""
-                        const _studentExpr = KAS.parse(_studentCell.replace(/\$\$/g, '')).expr
+                        const _studentExpr = parse(_studentCell).expr
 
-                        const _solExpr = KAS.parse(cell.replace(/\$\$/g, '')).expr
+                        const _solExpr = parse(cell).expr
 
                         return _acc && KAS.compare(_studentExpr, _solExpr).equal
                     }, true), true)
@@ -72,8 +103,11 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
 
                 return [attempt, correctAnswer]
             } else {
-                parsed = KAS.parse(attempt.replace(/\$\$/g, '')).expr;
-                correctAnswer = _parseEquality(parsed, actual.map((actualAns) => KAS.parse(actualAns.replace(/\$\$/g, '')).expr));
+                if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+                    console.debug("Using KAS to compare answer with solution", attempt, actual)
+                }
+                parsed = parse(attempt).expr;
+                correctAnswer = _parseEquality(parsed, actual.map((actualAns) => parse(actualAns).expr));
                 return [parsed.print(), correctAnswer];
             }
 
