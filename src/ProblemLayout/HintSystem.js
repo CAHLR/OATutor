@@ -8,11 +8,13 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import SubHintSystem from './SubHintSystem.js';
-import { DO_LOG_DATA } from "../config/config";
+import { DO_LOG_DATA, ThemeContext } from "../config/config";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
 
 class HintSystem extends React.Component {
+    static contextType = ThemeContext;
+
     constructor(props) {
         super(props);
         var subHintsFinished = [];
@@ -58,7 +60,7 @@ class HintSystem extends React.Component {
             })
         }, () => {
             if (DO_LOG_DATA) {
-                this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+                this.props.answerMade(this.index, this?.step?.knowledgeComponents, false);
             }
         });
     }
