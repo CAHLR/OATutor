@@ -34,7 +34,7 @@ OpenITS uses Firebase for data logging purposes.
 
 ### Tools Setup
 
-Data parsing and spreadsheet populating tools are stored in `src/tools`. 
+Data parsing and spreadsheet populating tools are stored in `src/tools`.
 
 For all tools:
 
@@ -59,7 +59,9 @@ For all tools:
 5. Copy the email address for the service account
 6. Share the target spreadsheet with that email address and give them editor access
 7. Create `.env.local` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
-8. Modify this line `const COLLECTION_NAME = "feedbackFall21"` to point to the target collection
+8. Modify this line `const CURRENT_SEMESTER = "[Semester] [Year]"` in `src/config/shared-config.js` to the current
+   Semester Year. 
+> Format for the semester, year can be arbitrary
 9. `node populateGoogleSheets.js`
 
 ## Features:
@@ -75,11 +77,11 @@ See the changelog for a more detailed feature list
 ## Technologies Used
 
 * Frontend: ReactJS
-  * Theme: Material UI
-  * Database: Firebase (Cloud Firestore)
-  * Deployment: TBD
+    * Theme: Material UI
+    * Database: Firebase (Cloud Firestore)
+    * Deployment: TBD
 * Offline Computation/Iteration:
-  * Python (dAFM Machine Learning algorithm)
+    * Python (dAFM Machine Learning algorithm)
 
 # Project Structure:
 
@@ -159,14 +161,14 @@ website for more info on this syntax.
 
 ```javascript
     problemID1a: []
-    problemID1b: []
-    ...
-    problemID1z: []
-    
-    problemID9a: []
-    ...
-    problemID9z: []
-    ...
+problemID1b: []
+...
+problemID1z: []
+
+problemID9a: []
+...
+problemID9z: []
+...
 ```
 
 - `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the
@@ -186,13 +188,13 @@ website for more info on this syntax.
 
 ```javascript
 <ReactCursorPosition onPositionChanged={(data) => {
-  if (DO_LOG_MOUSE_DATA) {
-    this.firebase.mouseLog(data);
-  }
+    if (DO_LOG_MOUSE_DATA) {
+        this.firebase.mouseLog(data);
+    }
 }}>
-  <Platform props_here/>
-  <ReactCursorPosition/>
-  }}>
+    <Platform props_here/>
+    <ReactCursorPosition/>
+    }}>
 
 ```
 
@@ -252,10 +254,10 @@ ProblemPool
 
 ```js
 const problem = {
-  id: 'circle1',
-  title: "Buying a Big Rug",
-  body: "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
-  steps: steps
+    id: 'circle1',
+    title: "Buying a Big Rug",
+    body: "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
+    steps: steps
 };
 export { problem };
 ```
@@ -264,13 +266,13 @@ export { problem };
 
 ```js
 const step = {
-  id: 'circle1a',
-  stepTitle: "1. Maximum Radius",
-  stepBody: "What is the maximum radius of a circular rug that will fit in the room?",
-  stepAnswer: ["10"],
-  problemType: "TextBox",
-  answerType: "numeric",
-  hints: hints
+    id: 'circle1a',
+    stepTitle: "1. Maximum Radius",
+    stepBody: "What is the maximum radius of a circular rug that will fit in the room?",
+    stepAnswer: ["10"],
+    problemType: "TextBox",
+    answerType: "numeric",
+    hints: hints
 }
 
 export { step };
@@ -281,32 +283,32 @@ export { step };
 ```js
 var hints = [
     {
-      id: 'circle1a-h1',
-      title: "Size of the room",
-      text: "Consider the shape of the room and the limitations this has on the radius of the rug.",
-      type: "hint",
-      dependencies: []
+        id: 'circle1a-h1',
+        title: "Size of the room",
+        text: "Consider the shape of the room and the limitations this has on the radius of the rug.",
+        type: "hint",
+        dependencies: []
     },
     {
-      id: 'circle1a-h2',
-      title: "Constricting dimension",
-      text: "The length (20ft) creates limitations on the size of the circle. What is the maximum diameter that the circle can be?",
-      hintAnswer: ["20"],
-      problemType: "TextBox",
-      answerType: "numeric",
-      type: "scaffold",
-      dependencies: [0]
+        id: 'circle1a-h2',
+        title: "Constricting dimension",
+        text: "The length (20ft) creates limitations on the size of the circle. What is the maximum diameter that the circle can be?",
+        hintAnswer: ["20"],
+        problemType: "TextBox",
+        answerType: "numeric",
+        type: "scaffold",
+        dependencies: [0]
     },
     {
-      id: 'circle1a-h3',
-      title: "Solution",
-      text: "Recall that the radius is half the diameter, so $r = \\frac{d}{2} = 10$",
-      type: "solution",
-      dependencies: [1]
+        id: 'circle1a-h3',
+        title: "Solution",
+        text: "Recall that the radius is half the diameter, so $r = \\frac{d}{2} = 10$",
+        type: "solution",
+        dependencies: [1]
     }
 ]
 
-export {hints};
+export { hints };
 ```
 
 ### Using HTML/React Objects as body text for LaTeX
@@ -317,15 +319,15 @@ import React from 'react';
 import { InlineMath } from 'react-katex';
 
 const step = {
-  id: 'pythag1a',
-  stepTitle: "1. Vertical Component",
-  stepBody: <div>
-    What is the net force <InlineMath math={"\\sum F_y "} />, in the vertical direction?
-  </div>,
-  stepAnswer: ["0.10"],
-  problemType: "TextBox",
-  answerType: "algebra",
-  hints: hints
+    id: 'pythag1a',
+    stepTitle: "1. Vertical Component",
+    stepBody: <div>
+        What is the net force<InlineMath math={"\\sum F_y "}/>, in the vertical direction?
+    </div>,
+    stepAnswer: ["0.10"],
+    problemType: "TextBox",
+    answerType: "algebra",
+    hints: hints
 }
 
 export { step };
@@ -337,10 +339,10 @@ export { step };
 import steps from './pythag1-index.js'
 
 const problem = {
-  id: 'pythag1', //Substeps will be in the form problem.id + 'a' and so on
-  title: "Car Forces",
-  body: "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
-  steps: steps
+    id: 'pythag1', //Substeps will be in the form problem.id + 'a' and so on
+    title: "Car Forces",
+    body: "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
+    steps: steps
 };
 export { problem };
 ```
@@ -354,13 +356,21 @@ export { problem };
 
 ```js
 {
-  id: "lesson1",
-  name: "Lesson 1",
-  topics: "Pythagorean Theorem",
-  allowRecycle: true,
-  learningObjectives: {
-    pythagorean: 0.95
-  }
+    id: "lesson1",
+        name
+:
+    "Lesson 1",
+        topics
+:
+    "Pythagorean Theorem",
+        allowRecycle
+:
+    true,
+        learningObjectives
+:
+    {
+        pythagorean: 0.95
+    }
 }
 ```
 
