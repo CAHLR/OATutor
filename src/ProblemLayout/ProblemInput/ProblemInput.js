@@ -56,7 +56,7 @@ class ProblemInput extends React.Component {
         const textareaEl = this.equationRef?.current?.querySelector(".mq-textarea > textarea")
 
         if (textareaEl != null) {
-            console.debug("not null!", textareaEl)
+            // console.debug("not null!", textareaEl)
             textareaEl.ariaLabel = `The current value is: ${eq}. Answer question number ${this.props.index} here.`
         }
 
