@@ -7,6 +7,7 @@ const problemSubmissionsOutputDev = "problemSubmissionsDev";
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
 const feedbackOutput = "feedbacks";
+const siteLogOutput = "siteLogs"
 
 class Firebase {
 
@@ -157,6 +158,20 @@ class Firebase {
             Content: courseName
         };
         return this.writeData(problemStartLogOutput, date, data);
+    }
+
+    submitSiteLog(logType, logMessage, relevantInformation) {
+        const date = this._getDate();
+        const data = {
+            timeStamp: date,
+            logType,
+            logMessage,
+            relevantInformation,
+            siteVersion: this.siteVersion,
+            studentID: this.id,
+            treatment: this.treatment
+        };
+        return this.writeData(siteLogOutput, date, data);
     }
 
     submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName, steps) {
