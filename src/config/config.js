@@ -2,9 +2,17 @@ import React from 'react';
 import courses from './coursePlans.js';
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.3.0";
+const SITE_VERSION = "1.3.1";
 
 const SITE_NAME = "Open ITS"
+
+const CURRENT_SEMESTER = require("./shared-config").CURRENT_SEMESTER
+
+/**
+ * Indicates whether the copyright disclaimer should be shown in the footer of the website.
+ * @type {boolean}
+ */
+const SHOW_COPYRIGHT = false;
 
 /**
  * Indicates whether the site should use Firebase to store, process, and analyze general user interactions
@@ -75,5 +83,7 @@ export {
     USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME,
-    HELP_DOCUMENT
+    HELP_DOCUMENT,
+    SHOW_COPYRIGHT,
+    CURRENT_SEMESTER
 };

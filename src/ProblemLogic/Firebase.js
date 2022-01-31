@@ -1,12 +1,12 @@
-import { MAX_BUFFER_SIZE, GRANULARITY } from '../config/config.js'
+import { MAX_BUFFER_SIZE, GRANULARITY, CURRENT_SEMESTER } from '../config/config.js'
 
 const firebase = require("firebase/app");
 require("firebase/firestore");
 
-const problemSubmissionsOutputDev = "problemSubmissionsFall21Dev";
-const problemSubmissionsOutput = "problemSubmissionsFall21";
-const problemStartLogOutput = "problemStartLogsFall21";
-const feedbackOutput = "feedbackFall21";
+const problemSubmissionsOutputDev = "problemSubmissionsDev";
+const problemSubmissionsOutput = "problemSubmissions";
+const problemStartLogOutput = "problemStartLogs";
+const feedbackOutput = "feedbacks";
 
 class Firebase {
 
@@ -26,7 +26,7 @@ class Firebase {
     */
     writeData(collection, document, data) {
         try {
-            this.db.collection(collection).doc(document).set(data);
+            this.db.collection(collection).doc(document).set({ semester: CURRENT_SEMESTER, ...data });
             return 0;
         } catch (err) {
             console.log(err);
