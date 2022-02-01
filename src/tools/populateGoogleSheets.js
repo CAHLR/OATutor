@@ -15,9 +15,10 @@ const db = admin.firestore();
 const sheetsServiceAccount = require('./sheets-service-account.json');
 const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID);
 
-const COLLECTION_NAME = "feedbackFall21";
+const COLLECTION_NAME = "feedbacks";
 
-const SHEET_NAME = "Fall 2021";
+const { CURRENT_SEMESTER } = require("../config/shared-config");
+const SHEET_NAME = CURRENT_SEMESTER
 
 const COLUMN_NAME_MAPPING = {
     "id": "Id",
@@ -30,6 +31,8 @@ const COLUMN_NAME_MAPPING = {
 };
 
 const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID", "canvasStudentID"]
+
+const EXCLUDED_FIELDS =["semester"]
 
 if (!Object.fromEntries) {
     fromEntries.shim();
@@ -52,7 +55,7 @@ if (!Object.fromEntries) {
     }
 
     let snapshot;
-    [err, snapshot] = await to(db.collection(COLLECTION_NAME).get())
+    [err, snapshot] = await to(db.collection(COLLECTION_NAME).where("semester", "==", CURRENT_SEMESTER).get())
     if (err) {
         console.debug(err.message)
         console.log(`Errored when trying to get a snapshot of collection: ${COLLECTION_NAME}. Are you sure it exists?`)
@@ -85,7 +88,7 @@ if (!Object.fromEntries) {
     const additionalHeadings = new Set()
     _rows.forEach(row => {
         Object.keys(row).forEach(key => {
-            if (!COLUMN_TITLES.includes(key)) {
+            if (!COLUMN_TITLES.includes(key) && !EXCLUDED_FIELDS.includes(key)) {
                 additionalHeadings.add(key)
             }
         })

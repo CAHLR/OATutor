@@ -7,10 +7,9 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
-import { lessonPlans, coursePlans, ThemeContext, SITE_NAME } from '../config/config.js';
+import { lessonPlans, coursePlans, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '../config/config.js';
 import Spacer from "../Components/_General/Spacer";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
-import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -146,12 +145,11 @@ class LessonSelection extends React.Component {
                 <footer>
                     <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                         <div style={{ marginLeft: 20, fontSize: 16 }}>
-                            © {new Date().getFullYear()} {SITE_NAME}
+                            {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
                             <IconButton aria-label="help" title={"How to use OpenITS?"}
-                                        href={"/#/posts/how-to-use"}
-                                        target={"_blank"} rel={"noreferrer"}>
+                                        href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,
                                     margin: -2

@@ -201,6 +201,7 @@ class ProblemCard extends React.Component {
                                 submitHint={this.submitHint}
                                 seed={this.props.seed}
                                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
+                                answerMade={this.props.answerMade}
                             />
                             <Spacer/>
                         </div>
