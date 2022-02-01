@@ -1,0 +1,1 @@
+var hints = [{id: "af60b4fellipse23a-h1", type: "hint", dependencies: [], title: "We will notice that there 2 is being subtracted from the x term and 4 is being subtracted from the y term. The center is (2,4)", text: "", variabilization: {}}, ]; export {hints};

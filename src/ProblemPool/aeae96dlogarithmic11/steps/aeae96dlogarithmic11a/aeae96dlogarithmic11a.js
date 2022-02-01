@@ -1,0 +1,1 @@
+import hints from "./aeae96dlogarithmic11a-index.js"; const step = {id: "aeae96dlogarithmic11a", stepAnswer: ["$$\\frac{b}{a}+\\frac{1}{a}$$"], problemType: "TextBox", stepTitle: "$$\\log_{6}\\left(55\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
