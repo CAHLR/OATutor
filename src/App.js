@@ -88,6 +88,13 @@ class App extends React.Component {
                 additionalContext['user'] = user
                 additionalContext['studentName'] = user.full_name
             }
+
+            // Firebase creation
+            this.firebase = null;
+            if (DO_LOG_DATA) {
+                this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION, additionalContext.user);
+            }
+
             if (this.mounted) {
                 this.setState((prev) => ({
                     additionalContext: {
@@ -108,12 +115,6 @@ class App extends React.Component {
         onLocationChange()
 
         this.saveProgress = this.saveProgress.bind(this)
-
-        // Firebase creation
-        this.firebase = null;
-        if (DO_LOG_DATA) {
-            this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION);
-        }
     }
 
     componentDidMount() {

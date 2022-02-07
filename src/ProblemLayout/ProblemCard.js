@@ -95,7 +95,7 @@ class ProblemCard extends React.Component {
 
         if (DO_LOG_DATA) {
             try {
-                this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
+                this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
             } catch {
                 console.log("Unable to log to Firebase.");
             }
@@ -156,7 +156,7 @@ class ProblemCard extends React.Component {
                 return { hintsFinished: prevState.hintsFinished }
             }, () => {
                 if (DO_LOG_DATA) {
-                    this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
+                    this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
                 }
             });
         }
@@ -171,7 +171,7 @@ class ProblemCard extends React.Component {
             });
         }
         if (DO_LOG_DATA) {
-            this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed), this.context.studentName);
+            this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
         }
     }
 
