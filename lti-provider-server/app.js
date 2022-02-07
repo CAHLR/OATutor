@@ -85,6 +85,9 @@ const getJWT = (provider, consumer_secret, consumer_key, privileged = false) => 
         resource_link_title: provider.body.resource_link_title,
         user_id: provider.userId,
         full_name: provider.body.lis_person_name_full,
+        course_name : provider.body.context_title,
+        course_code: provider.body.context_label,
+        course_id: provider.body.context_id,
 
         // indicates if user is able to edit the linkage
         privileged
