@@ -3,7 +3,6 @@ import { MAX_BUFFER_SIZE, GRANULARITY, CURRENT_SEMESTER } from '../config/config
 const firebase = require("firebase/app");
 require("firebase/firestore");
 
-const problemSubmissionsOutputDev = "problemSubmissionsDev";
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
 const feedbackOutput = "feedbacks";
@@ -11,13 +10,15 @@ const siteLogOutput = "siteLogs"
 
 class Firebase {
 
-    constructor(id, credentials, treatment, siteVersion) {
-        var app = (!firebase.apps.length) ? firebase.initializeApp(credentials) : firebase.app();
-        this.id = id;
+    constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
+        const app = (!firebase.apps.length) ? firebase.initializeApp(credentials) : firebase.app();
+
+        this.oats_user_id = oats_user_id;
         this.db = firebase.firestore(app);
         this.treatment = treatment;
         this.siteVersion = siteVersion;
         this.mouseLogBuffer = [];
+        this.ltiContext = ltiContext
     }
 
     /*
@@ -25,14 +26,33 @@ class Firebase {
       Document: Key - How you will access this data later. Usually username
       Data: Value - JSON object of data you want to store
     */
-    writeData(collection, document, data) {
-        try {
-            this.db.collection(collection).doc(document).set({ semester: CURRENT_SEMESTER, ...data });
-            return 0;
-        } catch (err) {
-            console.log(err);
-            return -1;
-        }
+    async writeData(_collection, data) {
+        const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection: `development_${_collection}`
+        await this.db.collection(collection).doc(this._getReadableID()).set({
+            semester: CURRENT_SEMESTER,
+            siteVersion: this.siteVersion,
+            oats_user_id: this.oats_user_id,
+            treatment: this.treatment,
+            time_stamp: Date.now(),
+
+            ...this.ltiContext?.course_id
+                ? {
+                    course_id: this.ltiContext.course_id,
+                    course_name: this.ltiContext.course_name,
+                    course_code: this.ltiContext.course_code,
+
+                    full_name: this.ltiContext.full_name,
+                    canvas_user_id: this.ltiContext.user_id
+                }
+                : {
+                    course_id: "n/a"
+                },
+
+            ...data
+        }).catch(err => {
+            console.log("a non-critical error occurred.")
+            console.debug(err)
+        })
     }
 
     /*
@@ -48,53 +68,41 @@ class Firebase {
         });
     }
 
-    _getDate() {
-        var today = new Date();
+    _getReadableID() {
+        const today = new Date();
         return (
             ("0" + (today.getMonth() + 1)).slice(-2) + '-' +
             ("0" + today.getDate()).slice(-2) + '-' +
             today.getFullYear() + " " +
             ("0" + today.getHours()).slice(-2) + ":" +
             ("0" + today.getMinutes()).slice(-2) + ":" +
-            ("0" + today.getSeconds()).slice(-2))
+            ("0" + today.getSeconds()).slice(-2) + "|" +
+            Math.floor(Math.random() * Math.pow(10, 5)).toString().padStart(5, "0")
+        )
     }
 
-    log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, canvasStudentID) {
-        var date = this._getDate();
-        var data = {
-            timeStamp: date,
+    log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization) {
+        const data = {
             eventType: eventType,
-            siteVersion: this.siteVersion,
-            studentID: this.id,
             problemID: problemID,
             stepID: step?.id,
             hintID: null,
             input: typeof inputVal !== 'undefined' ? inputVal : null,
             correctAnswer: step?.stepAnswer,
-            isCorrect: isCorrect,
+            isCorrect,
             hintInput: null,
             hintAnswer: null,
             hintIsCorrect: null,
-            treatment: this.treatment,
-            hintsFinished: hintsFinished,
-            canvasStudentID: canvasStudentID || null,
-            variablization: variabilization
-        }
-        //console.log(data);
-        if (canvasStudentID == null || canvasStudentID === "") {
-            return this.writeData(problemSubmissionsOutputDev, date, data);
-        }
-        return this.writeData(problemSubmissionsOutput, date, data);
+            hintsFinished,
+            variabilization
+        };
+        return this.writeData(problemSubmissionsOutput, data);
     }
 
-    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, canvasStudentID) {
-        var date = this._getDate();
-        var data = {
-            timeStamp: date,
+    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization) {
+        const data = {
             eventType: "hintScaffoldLog",
-            siteVersion: this.siteVersion,
-            studentID: this.id,
-            problemID: problemID,
+            problemID,
             stepID: step.id,
             hintID: hint.id,
             input: null,
@@ -103,19 +111,13 @@ class Firebase {
             hintInput: typeof hintInput !== 'undefined' ? hintInput : null,
             hintAnswer: hint.hintAnswer,
             hintIsCorrect: isCorrect,
-            treatment: this.treatment,
-            hintsFinished: hintsFinished,
-            canvasStudentID: canvasStudentID || null,
-            variablization: variabilization
-        }
-        if (canvasStudentID == null || canvasStudentID === "") {
-            return this.writeData(problemSubmissionsOutputDev, date, data);
-        }
-        return this.writeData(problemSubmissionsOutput, date, data);
+            hintsFinished,
+            variabilization
+        };
+        return this.writeData(problemSubmissionsOutput, data);
     }
 
     mouseLog(payload) {
-        var date = this._getDate();
         if (this.mouseLogBuffer.length > 0) {
             if (!(Math.abs(payload.position.x - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].x) > GRANULARITY ||
                 Math.abs(payload.position.y - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].y) > GRANULARITY
@@ -130,61 +132,41 @@ class Firebase {
             });
             return;
         }
-        var data = {
-            timeStamp: date,
+        const data = {
             eventType: "mouseLog",
-            siteVersion: this.siteVersion,
-            studentID: this.id,
-            treatment: this.treatment,
             _logBufferSize: MAX_BUFFER_SIZE,
             _logGranularity: GRANULARITY,
             screenSize: payload.elementDimensions,
             mousePos: this.mouseLogBuffer
-        }
+        };
         this.mouseLogBuffer = [];
-        console.log("Logged mouseMovement");
-        return this.writeData("mouseMovement", date, data);
+        console.debug("Logged mouseMovement");
+        return this.writeData("mouseMovement", data);
     }
 
-    startedProblem(problemID, canvasStudentID, courseName) {
+    startedProblem(problemID, courseName) {
         console.debug(`Logging that the problem has been started (${problemID})`)
-        const date = this._getDate();
         const data = {
-            timeStamp: date,
-            siteVersion: this.siteVersion,
-            studentID: this.id,
             problemID,
-            canvasStudentID,
             Content: courseName
         };
-        return this.writeData(problemStartLogOutput, date, data);
+        return this.writeData(problemStartLogOutput, data);
     }
 
     submitSiteLog(logType, logMessage, relevantInformation) {
-        const date = this._getDate();
         const data = {
-            timeStamp: date,
             logType,
             logMessage,
             relevantInformation,
-            siteVersion: this.siteVersion,
-            studentID: this.id,
-            treatment: this.treatment
         };
-        return this.writeData(siteLogOutput, date, data);
+        return this.writeData(siteLogOutput, data);
     }
 
-    submitFeedback(problemID, feedback, problemFinished, variables, canvasStudentID, courseName, steps) {
-        const date = this._getDate();
+    submitFeedback(problemID, feedback, problemFinished, variables, courseName, steps) {
         const data = {
-            timeStamp: date,
-            siteVersion: this.siteVersion,
-            studentID: this.id,
             problemID,
-            treatment: this.treatment,
             problemFinished,
             feedback,
-            canvasStudentID: canvasStudentID || null,
             status: "open",
             Content: courseName,
             variables,
@@ -195,7 +177,7 @@ class Firebase {
                 problemType
             }))
         };
-        return this.writeData(feedbackOutput, date, data);
+        return this.writeData(feedbackOutput, data);
     }
 
 }

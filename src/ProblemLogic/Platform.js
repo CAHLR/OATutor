@@ -228,7 +228,7 @@ class Platform extends React.Component {
             this.setState({ currProblem: chosenProblem, status: "learning" });
             console.log("Next problem: ", chosenProblem.id)
             if (DO_LOG_DATA) {
-                this.context.firebase.startedProblem(chosenProblem.id, this.context.studentName, chosenProblem.courseName);
+                this.context.firebase.startedProblem(chosenProblem.id, chosenProblem.courseName);
             }
             return chosenProblem;
         }
