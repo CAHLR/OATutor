@@ -26,35 +26,33 @@ class Firebase {
       Document: Key - How you will access this data later. Usually username
       Data: Value - JSON object of data you want to store
     */
-    async writeData(collection, data) {
-        try {
-            await this.db.collection(collection).doc(this._getReadableID()).set({
-                semester: CURRENT_SEMESTER,
-                siteVersion: this.siteVersion,
-                oats_user_id: this.oats_user_id,
-                treatment: this.treatment,
-                time_stamp: Date.now(),
+    async writeData(_collection, data) {
+        const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection: `development_${_collection}`
+        await this.db.collection(collection).doc(this._getReadableID()).set({
+            semester: CURRENT_SEMESTER,
+            siteVersion: this.siteVersion,
+            oats_user_id: this.oats_user_id,
+            treatment: this.treatment,
+            time_stamp: Date.now(),
 
-                ...this.ltiContext?.course_id
-                    ? {
-                        course_id: this.ltiContext.course_id,
-                        course_name: this.ltiContext.course_name,
-                        course_code: this.ltiContext.course_code,
+            ...this.ltiContext?.course_id
+                ? {
+                    course_id: this.ltiContext.course_id,
+                    course_name: this.ltiContext.course_name,
+                    course_code: this.ltiContext.course_code,
 
-                        full_name: this.ltiContext.full_name,
-                        canvas_user_id: this.ltiContext.user_id
-                    }
-                    : {
-                        course_id: "n/a"
-                    },
+                    full_name: this.ltiContext.full_name,
+                    canvas_user_id: this.ltiContext.user_id
+                }
+                : {
+                    course_id: "n/a"
+                },
 
-                ...data
-            });
-            return 0;
-        } catch (err) {
-            console.log(err);
-            return -1;
-        }
+            ...data
+        }).catch(err => {
+            console.log("a non-critical error occurred.")
+            console.debug(err)
+        })
     }
 
     /*
