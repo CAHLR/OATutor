@@ -5,7 +5,7 @@ import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
-import { ThemeContext, lessonPlans, coursePlans, DO_LOG_DATA, MIDDLEWARE_URL } from '../config/config.js';
+import { ThemeContext, lessonPlans, coursePlans, MIDDLEWARE_URL } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
@@ -227,9 +227,7 @@ class Platform extends React.Component {
         } else {
             this.setState({ currProblem: chosenProblem, status: "learning" });
             console.log("Next problem: ", chosenProblem.id)
-            if (DO_LOG_DATA) {
-                this.context.firebase.startedProblem(chosenProblem.id, chosenProblem.courseName);
-            }
+            this.context.firebase.startedProblem(chosenProblem.id, chosenProblem.courseName);
             return chosenProblem;
         }
     }
