@@ -1,0 +1,1 @@
+import hints from "./a3d9e92exercise_383a-index.js"; const step = {id: "a3d9e92exercise_383a", stepAnswer: ["(-1, 3/2]"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$4x-2 \\leq 4$$ and $$7x-1 \\geq -8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

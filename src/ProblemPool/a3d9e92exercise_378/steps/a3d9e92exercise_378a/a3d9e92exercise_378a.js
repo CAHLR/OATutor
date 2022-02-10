@@ -1,0 +1,1 @@
+import hints from "./a3d9e92exercise_378a-index.js"; const step = {id: "a3d9e92exercise_378a", stepAnswer: ["[-4, -1]"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x \\geq -4$$ and $$x \\leq -1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
