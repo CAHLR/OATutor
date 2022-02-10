@@ -1,1 +1,0 @@
-import steps from "./a3d9e92exercise_402-index.js"; const problem = {id: "a3d9e92exercise_402", title: "Solving Compound Inequalities with \"or\"", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

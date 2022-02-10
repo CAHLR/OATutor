@@ -1,1 +1,0 @@
-import hints from "./a3d9e92exercise_376a-index.js"; const step = {id: "a3d9e92exercise_376a", stepAnswer: ["[1, 3)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x<3$$ and $$x \\geq 1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a3d9e92exercise_381a-index.js"; const step = {id: "a3d9e92exercise_381a", stepAnswer: ["[-2, 2)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$4x-1<7$$ and $$2x+8 \\geq 4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a3d9e92exercise_405a-index.js"; const step = {id: "a3d9e92exercise_405a", stepAnswer: ["$$\\left(-inf0\\right)$$ U (4, inf)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x<0$$ or $$x \\geq 4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
