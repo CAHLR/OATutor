@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial1b-index.js"; const step = {id: "a0a04b1divmonomial1b", stepAnswer: ["$$3^8$$"], problemType: "TextBox", stepTitle: "$$\\frac{3^{10}}{3^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving19-index.js"; const problem = {id: "aae6efeSolving19", title: "Solve Number Word Problems", body: "Find the bigger number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

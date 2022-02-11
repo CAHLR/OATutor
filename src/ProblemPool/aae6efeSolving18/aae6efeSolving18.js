@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving18-index.js"; const problem = {id: "aae6efeSolving18", title: "Solve Number Word Problems", body: "Find the number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

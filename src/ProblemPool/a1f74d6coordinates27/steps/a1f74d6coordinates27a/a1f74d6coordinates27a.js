@@ -1,0 +1,1 @@
+import hints from "./a1f74d6coordinates27a-index.js"; const step = {id: "a1f74d6coordinates27a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$y=-\\left(\\frac{3x}{2}\\right)-2$$ If $$x=0$$, what is y?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

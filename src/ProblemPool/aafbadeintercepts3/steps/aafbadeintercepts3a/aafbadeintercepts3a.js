@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts3a-index.js"; const step = {id: "aafbadeintercepts3a", stepAnswer: ["(3,0)"], problemType: "MultipleChoice", stepTitle: "What is the x intercept of the line in the graph?", stepBody: "", choices: ["(2,0)I(0,2)I(3,0)I(0,3)", "(3,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

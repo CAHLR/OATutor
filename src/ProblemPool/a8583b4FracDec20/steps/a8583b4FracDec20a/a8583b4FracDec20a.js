@@ -1,0 +1,1 @@
+import hints from "./a8583b4FracDec20a-index.js"; const step = {id: "a8583b4FracDec20a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{1}{5} \\left(q+3\\right)=\\frac{1}{2} \\left(q-3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

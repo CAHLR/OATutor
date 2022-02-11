@@ -1,0 +1,1 @@
+import steps from "./a10b60arealnumbers10-index.js"; const problem = {id: "a10b60arealnumbers10", title: "Simplifying Exponents", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

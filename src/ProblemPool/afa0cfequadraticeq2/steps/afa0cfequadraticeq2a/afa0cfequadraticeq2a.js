@@ -1,0 +1,1 @@
+import hints from "./afa0cfequadraticeq2a-index.js"; const step = {id: "afa0cfequadraticeq2a", stepAnswer: ["11 and -11"], problemType: "MultipleChoice", stepTitle: "$$x^2$$ $$=$$ 121", stepBody: "", choices: ["11 and -11", "10 and -10", "9 and -9"], answerType: "string", hints: hints, variabilization: {}}; export {step};

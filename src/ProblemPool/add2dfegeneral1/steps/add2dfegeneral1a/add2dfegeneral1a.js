@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral1a-index.js"; const step = {id: "add2dfegeneral1a", stepAnswer: ["$$8\\left(m-2\\right) \\left(m+2\\right)$$"], problemType: "TextBox", stepTitle: "$$8m^2-32$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

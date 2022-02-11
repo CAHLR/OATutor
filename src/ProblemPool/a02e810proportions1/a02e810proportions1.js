@@ -1,0 +1,1 @@
+import steps from "./a02e810proportions1-index.js"; const problem = {id: "a02e810proportions1", title: "Solving for Variables in Proportions", body: "Find the value of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

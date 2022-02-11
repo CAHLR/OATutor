@@ -1,0 +1,1 @@
+var hints = [{id: "a10b60arealnumbers5b-h1", type: "hint", dependencies: [], title: "Transform the Expression into Exponent Form", text: "To make this easier, find some value 'x' such that $$x^4$$ is equal to $$16q^{12}$$. Then, $$|x|$$ is the answer to the question", variabilization: {}}, ]; export {hints};

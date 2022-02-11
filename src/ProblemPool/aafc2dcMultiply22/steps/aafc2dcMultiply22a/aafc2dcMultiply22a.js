@@ -1,0 +1,1 @@
+import hints from "./aafc2dcMultiply22a-index.js"; const step = {id: "aafc2dcMultiply22a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{65}{\\left(-5\\right)}+\\frac{\\left(-28\\right)}{\\left(-7\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

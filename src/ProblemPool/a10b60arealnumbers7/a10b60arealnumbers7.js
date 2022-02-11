@@ -1,0 +1,1 @@
+import steps from "./a10b60arealnumbers7-index.js"; const problem = {id: "a10b60arealnumbers7", title: "Use the Product Property to Simplify Expressions with Higher Roots", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

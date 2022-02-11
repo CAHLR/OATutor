@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads27b-index.js"; const step = {id: "a2ef97dGrphingQuads27b", stepAnswer: ["(0,49)"], problemType: "MultipleChoice", stepTitle: "Find the y-intercept of the given equation.", stepBody: "", choices: ["(0,7)", "(0,-5)", "(0,21)", "(0,49)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties6a-index.js"; const step = {id: "ac3d94dProperties6a", stepAnswer: ["27m-21n"], problemType: "TextBox", stepTitle: "$$43m+\\left(-12n\\right)+\\left(-16m\\right)+\\left(-9n\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

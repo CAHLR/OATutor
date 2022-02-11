@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums19a-index.js"; const step = {id: "a4b9bbfrationalnums19a", stepAnswer: ["$$\\sqrt[7]{g}$$"], problemType: "TextBox", stepTitle: "$$g^{\\frac{1}{7}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

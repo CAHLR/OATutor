@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads24a-index.js"; const step = {id: "a2ef97dGrphingQuads24a", stepAnswer: ["$$x=-4$$"], problemType: "TextBox", stepTitle: "$$x^2+8x+1$$", stepBody: "Find the axis of symmmetry. Input your answer as $$x=(axis$$ of symmetry).", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

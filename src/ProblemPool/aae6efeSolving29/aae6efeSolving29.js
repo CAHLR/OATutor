@@ -1,0 +1,1 @@
+import steps from "./aae6efeSolving29-index.js"; const problem = {id: "aae6efeSolving29", title: "Casey's Bank", body: "Find the amount of interest earned in two years.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

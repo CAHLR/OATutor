@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe26a-index.js"; const step = {id: "ac0c1d3spe26a", stepAnswer: ["$$x^2-64$$"], problemType: "TextBox", stepTitle: "$$\\left(x-8\\right) \\left(x+8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae9e419IneqApp23a-index.js"; const step = {id: "ae9e419IneqApp23a", stepAnswer: ["86"], problemType: "TextBox", stepTitle: "Ryan charges his neighbors $17.50 to wash their car. How many cars must he wash next summer if his goal is to earn at least $1,500?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

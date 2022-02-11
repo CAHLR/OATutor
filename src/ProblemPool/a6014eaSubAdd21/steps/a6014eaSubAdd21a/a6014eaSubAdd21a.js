@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd21a-index.js"; const step = {id: "a6014eaSubAdd21a", stepAnswer: ["$$n=12$$"], problemType: "TextBox", stepTitle: "$$5(n-4)-4n=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
