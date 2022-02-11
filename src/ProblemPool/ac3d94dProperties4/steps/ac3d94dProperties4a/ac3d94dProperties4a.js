@@ -1,1 +1,0 @@
-import hints from "./ac3d94dProperties4a-index.js"; const step = {id: "ac3d94dProperties4a", stepAnswer: ["$$\\frac{49}{11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{20} \\frac{49}{11} \\frac{20}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

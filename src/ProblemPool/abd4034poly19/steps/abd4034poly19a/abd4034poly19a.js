@@ -1,1 +1,0 @@
-import hints from "./abd4034poly19a-index.js"; const step = {id: "abd4034poly19a", stepAnswer: ["$$3x^2-6x$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{18x^3-36x^2}{6} x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

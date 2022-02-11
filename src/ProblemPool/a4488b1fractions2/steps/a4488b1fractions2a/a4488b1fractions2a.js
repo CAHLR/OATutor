@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions2a-index.js"; const step = {id: "a4488b1fractions2a", stepAnswer: ["$$\\frac{10}{21}$$"], problemType: "TextBox", stepTitle: "$$\\frac{120}{252}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

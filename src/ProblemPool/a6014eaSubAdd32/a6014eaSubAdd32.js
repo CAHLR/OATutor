@@ -1,1 +1,0 @@
-import steps from "./a6014eaSubAdd32-index.js"; const problem = {id: "a6014eaSubAdd32", title: "Translate and solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

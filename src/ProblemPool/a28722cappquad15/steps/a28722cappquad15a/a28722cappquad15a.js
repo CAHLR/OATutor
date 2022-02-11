@@ -1,1 +1,0 @@
-import hints from "./a28722cappquad15a-index.js"; const step = {id: "a28722cappquad15a", stepAnswer: ["22"], problemType: "TextBox", stepTitle: "The width of a triangle is six more than twice the height. The area of the triangle is 88 square yards. Find the width of the triangle.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

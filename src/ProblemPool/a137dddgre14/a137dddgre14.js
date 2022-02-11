@@ -1,1 +1,0 @@
-import steps from "./a137dddgre14-index.js"; const problem = {id: "a137dddgre14", title: "Greatest Common Factor", body: "Find the greatest common factor.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

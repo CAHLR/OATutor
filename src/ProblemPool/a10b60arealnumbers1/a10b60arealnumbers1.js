@@ -1,1 +1,0 @@
-import steps from "./a10b60arealnumbers1-index.js"; const problem = {id: "a10b60arealnumbers1", title: "Simplify Expressions with Higher Roots", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

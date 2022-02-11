@@ -1,1 +1,0 @@
-import steps from "./a2ef97dGrphingQuads25-index.js"; const problem = {id: "a2ef97dGrphingQuads25", title: "Determining Parabola Properties", body: "Identify qualities of the parabola.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a171b3arationals2a-index.js"; const step = {id: "a171b3arationals2a", stepAnswer: ["-2 or -3"], problemType: "MultipleChoice", stepTitle: "$$\\frac{x+4}{x^2+5x+6}$$", stepBody: "", choices: ["-2 or -3", "5 or 6I-5 or 2I1 or -6"], answerType: "string", hints: hints, variabilization: {}}; export {step};

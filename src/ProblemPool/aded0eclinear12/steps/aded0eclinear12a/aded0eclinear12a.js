@@ -1,1 +1,0 @@
-import hints from "./aded0eclinear12a-index.js"; const step = {id: "aded0eclinear12a", stepAnswer: ["(-inf, 11/12]"], problemType: "MultipleChoice", stepTitle: "$$r-\\frac{1}{3} \\leq \\frac{7}{12}$$", stepBody: "", choices: ["(1/3, inf)", "(-inf, 11/12]", "(-inf, 1/4]", "[5/12, inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

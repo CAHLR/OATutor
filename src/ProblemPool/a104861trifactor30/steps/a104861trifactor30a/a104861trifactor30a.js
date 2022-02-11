@@ -1,1 +1,0 @@
-import hints from "./a104861trifactor30a-index.js"; const step = {id: "a104861trifactor30a", stepAnswer: ["$$\\left(5v+1\\right) \\left(5v-1\\right)$$"], problemType: "TextBox", stepTitle: "$$25v^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

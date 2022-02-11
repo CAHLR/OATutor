@@ -1,1 +1,0 @@
-import steps from "./ae9e419IneqApp12-index.js"; const problem = {id: "ae9e419IneqApp12", title: "Iced Drink with Gift Card", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a28722cappquad4a-index.js"; const step = {id: "a28722cappquad4a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "If a triangle that has an area of 110 square feet has a height that is two feet less than twice the width, what is its height in feet?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

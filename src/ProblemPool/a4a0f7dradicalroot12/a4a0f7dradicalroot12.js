@@ -1,1 +1,0 @@
-import steps from "./a4a0f7dradicalroot12-index.js"; const problem = {id: "a4a0f7dradicalroot12", title: "Skid Marks and Speed of a Car", body: "The skid marks of a vehicle involved in an accident were 122 feet long.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

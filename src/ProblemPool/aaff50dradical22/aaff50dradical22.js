@@ -1,1 +1,0 @@
-import steps from "./aaff50dradical22-index.js"; const problem = {id: "aaff50dradical22", title: "Simplifying Square Roots", body: "Simplify:", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };

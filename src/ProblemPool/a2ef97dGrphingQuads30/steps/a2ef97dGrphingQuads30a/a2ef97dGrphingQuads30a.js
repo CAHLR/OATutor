@@ -1,1 +1,0 @@
-import hints from "./a2ef97dGrphingQuads30a-index.js"; const step = {id: "a2ef97dGrphingQuads30a", stepAnswer: ["(3,6)"], problemType: "MultipleChoice", stepTitle: "$$y=x^2-6x+15$$", stepBody: "", choices: ["(2,1)", "(3,6)", "(4,9)", "(7,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

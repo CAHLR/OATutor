@@ -1,1 +1,0 @@
-import hints from "./a3c2b68root22a-index.js"; const step = {id: "a3c2b68root22a", stepAnswer: ["$$6\\sqrt{2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{6} \\sqrt{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

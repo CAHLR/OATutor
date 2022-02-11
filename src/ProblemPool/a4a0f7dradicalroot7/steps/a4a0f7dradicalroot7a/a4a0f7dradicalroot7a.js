@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot7a-index.js"; const step = {id: "a4a0f7dradicalroot7a", stepAnswer: ["$$q=6$$ or $$q=2$$"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{q-2}+3=\\sqrt{4q+1}$$", stepBody: "", choices: ["$$q=2$$ or $$q=3$$", "$$q=5$$ or $$q=2$$", "$$q=6$$ or $$q=2$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

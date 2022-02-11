@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions15a-index.js"; const step = {id: "a4488b1fractions15a", stepAnswer: ["$$\\frac{18}{5y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{5}}{\\frac{y}{9}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

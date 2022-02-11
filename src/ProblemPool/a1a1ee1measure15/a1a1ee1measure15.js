@@ -1,1 +1,0 @@
-import steps from "./a1a1ee1measure15-index.js"; const problem = {id: "a1a1ee1measure15", title: "Convert between Fahrenheit and Celsius Temperatures", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };

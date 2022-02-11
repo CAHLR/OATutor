@@ -1,1 +1,0 @@
-import hints from "./a8b6b9fLinear13a-index.js"; const step = {id: "a8b6b9fLinear13a", stepAnswer: ["$$\\frac{-17}{5}$$"], problemType: "TextBox", stepTitle: "$$6(4-2(7y-1))=8(13-8y)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

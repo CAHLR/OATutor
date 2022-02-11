@@ -1,1 +1,0 @@
-import hints from "./a1f32dfFormula24a-index.js"; const step = {id: "a1f32dfFormula24a", stepAnswer: ["$$a=90-b$$"], problemType: "MultipleChoice", stepTitle: "Solve $$a+b=90$$ for a", stepBody: "", choices: ["$$a=90b$$", "$$a=90-b$$", "$$a=90+b$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

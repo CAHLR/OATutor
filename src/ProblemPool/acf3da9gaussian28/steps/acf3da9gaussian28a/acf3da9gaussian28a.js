@@ -1,1 +1,0 @@
-import hints from "./acf3da9gaussian28a-index.js"; const step = {id: "acf3da9gaussian28a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$\\left(2x+1\\right) \\left(x-3\\right)=-4x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

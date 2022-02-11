@@ -1,1 +1,0 @@
-import hints from "./a02e810proportions16a-index.js"; const step = {id: "a02e810proportions16a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\frac{2.8}{k}=\\frac{2.1}{1.5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
