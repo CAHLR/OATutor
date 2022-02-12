@@ -1,0 +1,1 @@
+import steps from "./af60b4fellipse20-index.js"; const problem = {id: "af60b4fellipse20", title: "Finding Ellipse Characteristics", body: "Find the foci of the ellipse. If the equation is not of an ellipse, enter DNE.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };

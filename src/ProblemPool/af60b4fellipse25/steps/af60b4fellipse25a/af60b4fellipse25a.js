@@ -1,0 +1,1 @@
+import hints from "./af60b4fellipse25a-index.js"; const step = {id: "af60b4fellipse25a", stepAnswer: ["(0,-1)"], problemType: "MultipleChoice", stepTitle: "$$\\frac{x^2}{2}+\\frac{{\\left(y+1\\right)}^2}{5}=1$$", stepBody: "", choices: ["(0,-1)", "(0,-2)", "(0,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
