@@ -1,1 +1,1 @@
-import hints from "./a10b60arealnumbers7b-index.js"; const step = {id: "a10b60arealnumbers7b", stepAnswer: ["abs(3)*sqrt(4,3)"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{243}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a10b60arealnumbers7b-index.js"; const step = {id: "a10b60arealnumbers7b", stepAnswer: ["$$|3| \\sqrt[4]{3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{243}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
