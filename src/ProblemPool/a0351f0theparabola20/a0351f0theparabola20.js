@@ -1,0 +1,1 @@
+import steps from "./a0351f0theparabola20-index.js"; const problem = {id: "a0351f0theparabola20", title: "Finding Parabola Characteristics", body: "", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };
