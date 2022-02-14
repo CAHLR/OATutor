@@ -42,6 +42,8 @@ const _SHORT_SITE_NAME = SITE_NAME.toLowerCase().replace(/[^a-z]/g, '').substr(0
 const USER_ID_STORAGE_KEY = `${_SHORT_SITE_NAME}-user_id`
 const PROGRESS_STORAGE_KEY = `${_SHORT_SITE_NAME}-progress`
 
+const CANVAS_WARNING_STORAGE_KEY = `${_SHORT_SITE_NAME}-canvas-warning-dismissed`
+
 // Firebase Config
 const MAX_BUFFER_SIZE = 100;
 const GRANULARITY = 5;
@@ -85,5 +87,6 @@ export {
     SITE_NAME,
     HELP_DOCUMENT,
     SHOW_COPYRIGHT,
-    CURRENT_SEMESTER
+    CURRENT_SEMESTER,
+    CANVAS_WARNING_STORAGE_KEY
 };

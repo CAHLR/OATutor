@@ -13,6 +13,10 @@ class ToastID extends Enumify {
     static submit_grade_link_lost = new ToastID();
     static submit_grade_unable = new ToastID();
 
+    static warn_not_from_canvas = new ToastID();
+
+    static successfully_completed_lesson = new ToastID();
+
     static _ = this.closeEnum();
 }
 

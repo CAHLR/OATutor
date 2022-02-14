@@ -199,13 +199,12 @@ class Platform extends React.Component {
 
         chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
 
-        var objectives = Object.keys(this.lesson.learningObjectives);
-        objectives.unshift(0);
+        const objectives = Object.keys(this.lesson.learningObjectives);
         console.debug('objectives', objectives)
-        var score = objectives.reduce((x, y) => {
+        let score = objectives.reduce((x, y) => {
             return x + context.bktParams[y].probMastery
-        });
-        score /= objectives.length - 1;
+        }, 0);
+        score /= objectives.length;
         this.displayMastery(score);
         //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
@@ -238,9 +237,14 @@ class Platform extends React.Component {
     }
 
     displayMastery = (mastery) => { //TODO fix
-        var MASTERED = 0.85;
-        var score = Math.min(mastery / (MASTERED), 1.0);
+        const MASTERED = 0.85;
+        const score = Math.min(mastery / (MASTERED), 1.0);
         this.setState({ mastery: score });
+        if(score === 1.0){
+            toast.success("You've successfully completed this assignment!", {
+                toastId: ToastID.successfully_completed_lesson.toString()
+            })
+        }
         this.props.saveProgress();
     }
 

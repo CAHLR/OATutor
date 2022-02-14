@@ -89,7 +89,7 @@ class Firebase {
             problemID: problemID,
             stepID: step?.id,
             hintID: null,
-            input: typeof inputVal !== 'undefined' ? inputVal : null,
+            input: typeof inputVal !== 'undefined' ? inputVal.toString() : null,
             correctAnswer: step?.stepAnswer,
             isCorrect,
             hintInput: null,
