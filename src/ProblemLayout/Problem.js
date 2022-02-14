@@ -17,12 +17,14 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { MIDDLEWARE_URL, ThemeContext } from '../config/config.js';
+import { CANVAS_WARNING_STORAGE_KEY, MIDDLEWARE_URL, ThemeContext } from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
+import * as localForage from "localforage";
+
 
 class Problem extends React.Component {
     static contextType = ThemeContext;
@@ -141,8 +143,18 @@ class Problem extends React.Component {
                 }
             }
         } else {
-            if (process.env.REACT_APP_BUILD_TYPE === 'production') {
-                toast.warn("No credentials found (did you launch this assignment from Canvas?)")
+            const showWarning = !await localForage.getItem(CANVAS_WARNING_STORAGE_KEY)
+            if (showWarning) {
+                toast.warn("No credentials found (did you launch this assignment from Canvas?)", {
+                    toastId: ToastID.warn_not_from_canvas.toString(),
+                    autoClose: false,
+                    onClick: () => {
+                        toast.dismiss(ToastID.warn_not_from_canvas.toString())
+                    },
+                    onClose: () => {
+                        localForage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
+                    }
+                })
             } else {
                 // can ignore
             }

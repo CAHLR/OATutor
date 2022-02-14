@@ -17,7 +17,6 @@ import {
     ThemeContext,
     PROGRESS_STORAGE_KEY,
     SITE_VERSION,
-    DO_LOG_DATA,
     USER_ID_STORAGE_KEY,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
@@ -90,10 +89,7 @@ class App extends React.Component {
             }
 
             // Firebase creation
-            this.firebase = null;
-            if (DO_LOG_DATA) {
-                this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION, additionalContext.user);
-            }
+            this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION, additionalContext.user);
 
             if (this.mounted) {
                 this.setState((prev) => ({
