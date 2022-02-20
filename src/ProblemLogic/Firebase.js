@@ -11,7 +11,7 @@ const siteLogOutput = "siteLogs"
 class Firebase {
 
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
-        if(!DO_LOG_DATA) return
+        if (!DO_LOG_DATA) return
         const app = (!firebase.apps.length) ? firebase.initializeApp(credentials) : firebase.app();
 
         this.oats_user_id = oats_user_id;
@@ -28,9 +28,9 @@ class Firebase {
       Data: Value - JSON object of data you want to store
     */
     async writeData(_collection, data) {
-        if(!DO_LOG_DATA) return
-        const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection: `development_${_collection}`
-        await this.db.collection(collection).doc(this._getReadableID()).set({
+        if (!DO_LOG_DATA) return
+        const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection : `development_${_collection}`
+        const _payload = {
             semester: CURRENT_SEMESTER,
             siteVersion: this.siteVersion,
             oats_user_id: this.oats_user_id,
@@ -51,7 +51,9 @@ class Firebase {
                 },
 
             ...data
-        }).catch(err => {
+        }
+        const payload = Object.fromEntries(Object.entries(_payload).map(([key, val]) => ([key, typeof val === 'undefined' ? null : val])))
+        await this.db.collection(collection).doc(this._getReadableID()).set(payload).catch(err => {
             console.log("a non-critical error occurred.")
             console.debug(err)
         })
@@ -89,8 +91,8 @@ class Firebase {
             problemID: problemID,
             stepID: step?.id,
             hintID: null,
-            input: typeof inputVal !== 'undefined' ? inputVal.toString() : null,
-            correctAnswer: step?.stepAnswer,
+            input: inputVal?.toString(),
+            correctAnswer: step?.stepAnswer?.toString(),
             isCorrect,
             hintInput: null,
             hintAnswer: null,
@@ -110,8 +112,8 @@ class Firebase {
             input: null,
             correctAnswer: null,
             isCorrect: null,
-            hintInput: typeof hintInput !== 'undefined' ? hintInput : null,
-            hintAnswer: hint.hintAnswer,
+            hintInput: hintInput?.toString(),
+            hintAnswer: hint?.hintAnswer?.toString(),
             hintIsCorrect: isCorrect,
             hintsFinished,
             variabilization
