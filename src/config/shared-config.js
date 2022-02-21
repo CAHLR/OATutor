@@ -4,6 +4,9 @@
  */
 const CURRENT_SEMESTER = "Spring 2022"
 
+const SESSION_SYSTEM = "SEMESTER"
+
 module.exports = {
-    CURRENT_SEMESTER
+    CURRENT_SEMESTER,
+    SESSION_SYSTEM
 }

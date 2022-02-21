@@ -8,6 +8,7 @@ import glob from 'glob'
 import util from 'util'
 import fs from 'fs'
 import neatCsv from 'neat-csv';
+import { parseEntry } from "../util/objectEntryTools.mjs";
 
 config({
     path: './.env.local'
@@ -61,7 +62,7 @@ const collectionTypes = ["Generic", "Feedback", "ProblemSubmission", "ProblemSta
         return
     }
 
-    ora("Done verifying collection(s).")
+    ora("Done verifying collection(s).").succeed()
 })()
 
 
@@ -76,8 +77,7 @@ async function findCSVs(_spinner) {
 }
 
 async function verifyCSVs(_spinner, csvSelections, collectionType) {
-    const spinner = ora(`Verifying CSVs...`).succeed()
-    _spinner.spinner = spinner
+    _spinner.spinner = ora(`Verifying CSVs...`).succeed()
 
     await Promise.all(csvSelections.map(async csv => {
         const _csv = await areadFile(path.join(csv))
@@ -87,15 +87,19 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
         objects.forEach(_object => {
             const object = new ObjectValidator(_object)
             object.assertType("semester", "string")
+            object.assertNotBlank("semester")
             object.assertType("siteVersion", "string")
+            object.assertNotBlank("siteVersion")
             object.assertType("treatment", "string", "number")
             object.assertType("oats_user_id", "string")
+            object.assertNotBlank("oats_user_id")
             object.assertType("time_stamp", "number")
+            object.assertPredicate("time_stamp", val => (!isNaN(val)) && val > 1000)
 
             object.assertPredicate("course_id", val => val === "n/a" || val?.toString().length === 40)
-            object.assertOptionalNotNull("course_code")
-            object.assertOptionalNotNull("course_name")
-            object.assertOptionalNotNull("canvas_user_id")
+            object.assertPredicate("course_code", val => val === "n/a" || val?.toString().length >= 4)
+            object.assertPredicate("course_name", val => val === "n/a" || val?.toString().length >= 4)
+            object.assertPredicate("canvas_user_id", val => val === "n/a" || val?.toString().length === 40)
 
             object.assertType("timeStamp", "undefined")
             object.assertType("canvasStudentID", "undefined")
@@ -110,8 +114,8 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
                     object.assertType("problemFinished", "boolean")
                     object.assertType("problemID", "string")
                     object.assertType("status", "string")
-                    object.assertPredicate("steps", val => Array.isArray(val))
-                    object.assertPredicate("variables", val => val === Object(val))
+                    object.assertPredicate("steps", val => val === "n/a" || Array.isArray(val))
+                    object.assertPredicate("variables", val => val === "n/a" || val === Object(val))
                     break
                 }
                 case "ProblemSubmission": {
@@ -131,29 +135,9 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
     return true
 }
 
-const parseEntry = ([_key, val]) => {
-    const [key, type] = _key.split("##")
-    if(type === "boolean"){
-        return [key, typeof val === "string" ? val === "true" : null]
-    }
-    if(type === "object"){
-        return [key, parseJSON(val)]
-    }
-    if(type === "number"){
-        return [key, isNaN(+val) ? null : +val]
-    }
-
-    return [key, val]
+function isBlank(str) {
+    return (!str || /^\s*$/.test(str));
 }
-
-const parseJSON = (str) => {
-    try {
-        return JSON.parse(str);
-    } catch (e) {
-        console.debug("error parsing json: ", str, e)
-        return str;
-    }
-};
 
 class ObjectValidator {
     #assertions
@@ -169,6 +153,18 @@ class ObjectValidator {
         if (!this.#trackedFields.includes(field)) {
             this.#trackedFields.push(field)
         }
+    }
+
+    assertNotBlank = (field) => {
+        const obj = this.object
+        const val = obj[field]
+        this.#assertions.push(() => {
+            if (typeof val === "string" && isBlank(val)) {
+                console.log(`field ${chalk.bold(field)} is empty`)
+                return false
+            }
+            return true
+        })
     }
 
     assertPredicate = (field, predicate) => {
@@ -220,7 +216,7 @@ class ObjectValidator {
             console.log(chalk.grey(JSON.stringify(this.object)))
         }
 
-        if (errored || unknownFields) {
+        if (errored || unknownFields.length > 0) {
             console.log()
         }
     }
