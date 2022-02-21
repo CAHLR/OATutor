@@ -5,7 +5,7 @@ import { config } from "dotenv";
 import fs from "fs";
 import { to } from "await-to-js";
 import ObjectsToCsv from "objects-to-csv";
-import path, {dirname} from "path"
+import path, { dirname } from "path"
 import { fileURLToPath } from 'url';
 
 config({
@@ -97,8 +97,23 @@ async function exportCollection(_spinner, collectionRef) {
 
     const snapshot = await collectionRef.get()
 
-    snapshot.forEach(doc => {
-        documents.push(doc.data());
+    snapshot.forEach(_doc => {
+        const obj = _doc.data()
+        const doc = Object.fromEntries(Object.entries(obj)
+            .map(([key, val]) => {
+                if(typeof val === "boolean"){
+                    return [`${key}##boolean`, val.toString()]
+                }
+                if(val === Object(val)){
+                    return [`${key}##object`, JSON.stringify(val)]
+                }
+                if(typeof val === "number"){
+                    return [`${key}##number`, val]
+                }
+                return [key, val]
+            })
+        )
+        documents.push(doc);
     })
     const csv = new ObjectsToCsv(documents);
     await csv.toDisk(path.join(__dirname, "out", fileName), { allColumns: true });
