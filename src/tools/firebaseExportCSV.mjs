@@ -7,6 +7,7 @@ import { to } from "await-to-js";
 import ObjectsToCsv from "objects-to-csv";
 import path, { dirname } from "path"
 import { fileURLToPath } from 'url';
+import { createTypedEntry } from "../util/objectEntryTools.mjs";
 
 config({
     path: './.env.local'
@@ -57,7 +58,7 @@ const __dirname = dirname(__filename);
         return
     }
 
-    console.log()
+    ora("Done exporting collection(s).").succeed()
 })()
 
 
@@ -99,20 +100,7 @@ async function exportCollection(_spinner, collectionRef) {
 
     snapshot.forEach(_doc => {
         const obj = _doc.data()
-        const doc = Object.fromEntries(Object.entries(obj)
-            .map(([key, val]) => {
-                if(typeof val === "boolean"){
-                    return [`${key}##boolean`, val.toString()]
-                }
-                if(val === Object(val)){
-                    return [`${key}##object`, JSON.stringify(val)]
-                }
-                if(typeof val === "number"){
-                    return [`${key}##number`, val]
-                }
-                return [key, val]
-            })
-        )
+        const doc = Object.fromEntries(Object.entries(obj).map(createTypedEntry))
         documents.push(doc);
     })
     const csv = new ObjectsToCsv(documents);
