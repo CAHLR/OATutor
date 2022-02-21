@@ -26,14 +26,14 @@ const __dirname = dirname(__filename);
         return
     }
 
-    const { collectionRef } = await prompts({
-        type: 'autocomplete',
-        name: 'collectionRef',
+    const { collectionRefs } = await prompts({
+        type: 'autocompleteMultiselect',
+        name: 'collectionRefs',
         message: 'Which collection to export?',
         choices: remoteCollections.map(collection => ({ title: collection.name, value: collection.ref }))
     });
 
-    if (!collectionRef) {
+    if (!Array.isArray(collectionRefs) || collectionRefs.length === 0) {
         console.log("Exiting program.")
         return
     }
@@ -41,7 +41,7 @@ const __dirname = dirname(__filename);
     const { confirmation } = await prompts({
         type: 'confirm',
         name: 'confirmation',
-        message: `Confirm export of ${collectionRef.path}?`,
+        message: `Confirm export of ${collectionRefs.map(_ => _.path).join(", ")}?`,
         initial: true,
     });
 
@@ -50,7 +50,7 @@ const __dirname = dirname(__filename);
         return
     }
 
-    [err, _] = await to(exportCollection(_spinner, collectionRef))
+    [err, _] = await to(exportCollection(_spinner, collectionRefs))
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -88,23 +88,25 @@ async function initFirebase(_spinner) {
     return remoteCollections
 }
 
-async function exportCollection(_spinner, collectionRef) {
-    const spinner = ora('Exporting collection').start()
+async function exportCollection(_spinner, collectionRefs) {
+    const spinner = ora('Exporting collection(s)').start()
     _spinner.spinner = spinner
 
-    const fileName = `export-${Date.now()}-${collectionRef.path}.csv`
+    await Promise.all(collectionRefs.map(async collectionRef => {
+        const fileName = `export-${Date.now()}-${collectionRef.path}.csv`
 
-    const documents = [];
+        const documents = [];
 
-    const snapshot = await collectionRef.get()
+        const snapshot = await collectionRef.get()
 
-    snapshot.forEach(_doc => {
-        const obj = _doc.data()
-        const doc = Object.fromEntries(Object.entries(obj).map(createTypedEntry))
-        documents.push(doc);
-    })
-    const csv = new ObjectsToCsv(documents);
-    await csv.toDisk(path.join(__dirname, "out", fileName), { allColumns: true });
+        snapshot.forEach(_doc => {
+            const obj = _doc.data()
+            const doc = Object.fromEntries(Object.entries(obj).map(createTypedEntry))
+            documents.push(doc);
+        })
+        const csv = new ObjectsToCsv(documents);
+        await csv.toDisk(path.join(__dirname, "out", fileName), { allColumns: true });
+    }))
 
     spinner.succeed()
 

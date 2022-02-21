@@ -10,61 +10,17 @@ import fs from 'fs'
 import neatCsv from 'neat-csv';
 import { EOL } from 'os';
 import ObjectsToCsv from "objects-to-csv";
-import { createTypedEntry, parseEntry } from "../util/objectEntryTools.mjs";
+import { createTypedEntry, dedupeEntries, parseEntry } from "../util/objectEntryTools.mjs";
 import { calculateSemester } from "../util/calculateSemester.mjs";
 
 config({
     path: './.env.local'
 });
 
-const aglob = util.promisify(glob)
-const areadFile = util.promisify(fs.readFile)
+const aglob = util.promisify(glob);
+const areadFile = util.promisify(fs.readFile);
 
-/*
-const transform = document => {
-        if (document.course_id === "" || document.course_id === undefined) {
-            document.course_id = "n/a"
-        }
-        if(document.course_id === "n/a"){
-            document.course_code = "n/a"
-            document.course_name = "n/a"
-            document.canvas_user_id = "n/a"
-        }
-        return document
-    }
-/**/
-
-/*
-const transform = document => {
-        if (document.time_stamp === 0) {
-            if(!document.timeStamp || document.timeStamp.length < 5){
-                throw new Error("could not guess time stamp since timeStamp does not exist on document")
-            }
-            // fair assumption to use admin locale
-            document.time_stamp = new Date(document.timeStamp).getTime()
-        }
-        delete document.timeStamp
-        return document
-    }
-/**/
-
-/*
-const transform = document => {
-        if(document.studentID){
-            document.oats_user_id = document.studentID
-        }
-        delete document.studentID
-        return document
-    }
-/**/
-
-/*
-const transform = document => {
-        delete document.full_name
-        delete document.canvasStudentID
-        return document
-    }
-/**/
+// generic transformation
 
 const transform = document => {
         if (document.time_stamp === 0 || document.time_stamp === undefined) {
@@ -77,6 +33,10 @@ const transform = document => {
 
         if (document.oats_user_id === undefined || document.oats_user_id.length < 2) {
             document.oats_user_id = document.studentID.toString()
+        }
+
+        if (document.treatment === undefined) {
+            document.treatment = "n/a"
         }
 
         if (typeof document.siteVersion === "number") {
@@ -92,27 +52,66 @@ const transform = document => {
             document.canvas_user_id = "n/a"
         }
 
-        if (document.variables === undefined) {
-            document.variables = "n/a"
-        }
-
-        if (document.steps === undefined) {
-            document.steps = "n/a"
-        }
-
-        if (document.Content === undefined) {
-            document.Content = "n/a"
-        }
-
-        if (document.semester === undefined) {
+        if (document.semester === undefined || document.semester === "") {
             document.semester = calculateSemester(document.time_stamp)
         }
 
+        delete document.full_name
         delete document.timeStamp
         delete document.canvasStudentID
         delete document.studentID
         return document
     }
+    /**/
+
+// for problemSubmissions
+/*
+const transform = document => {
+        if (typeof document.oats_user_id === 'number') {
+            document.oats_user_id = document.oats_user_id.toString()
+        }
+        if(document.hintID === ""){
+            document.hintID = "n/a"
+        }
+        if(!document.variabilization){
+            if(document.variablization){
+                document.variabilization = document.variablization
+            }else{
+                document.variabilization = {}
+            }
+        }
+        if(!Array.isArray(document.correctAnswer)){
+            document.correctAnswer = "n/a"
+        }
+        delete document.variablization
+        return document
+    }
+    /**/
+
+// for problemStartLogs
+    /*
+    const transform = document => {
+            if (!document.Content) {
+                document.Content = "n/a"
+            }
+
+            return document
+        }
+
+    /**/
+
+// for feedbacks
+    /*
+    const transform = document => {
+            if (document.variables === undefined) {
+                document.variables = "n/a"
+            }
+
+            if (document.steps === undefined || Object(document.steps) === document.steps) {
+                document.steps = "n/a"
+            }
+            return document
+        }
     /**/
 
 ;(async () => {
@@ -181,7 +180,7 @@ async function manipulateCSVs(_spinner, csvSelections) {
         const _csv = await areadFile(path.join(csv))
         const _objects = await neatCsv(_csv)
         const objects = _objects
-            .map(obj => Object.fromEntries(Object.entries(obj).map(parseEntry)))
+            .map(obj => Object.fromEntries(dedupeEntries(Object.entries(obj).map(parseEntry))))
             .map(transform)
             .map(obj => Object.fromEntries(Object.entries(obj).map(createTypedEntry)))
 
