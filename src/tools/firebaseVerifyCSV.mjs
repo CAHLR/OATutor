@@ -8,7 +8,7 @@ import glob from 'glob'
 import util from 'util'
 import fs from 'fs'
 import neatCsv from 'neat-csv';
-import { parseEntry } from "../util/objectEntryTools.mjs";
+import { dedupeEntries, parseEntry } from "../util/objectEntryTools.mjs";
 
 config({
     path: './.env.local'
@@ -29,7 +29,7 @@ const collectionTypes = ["Generic", "Feedback", "ProblemSubmission", "ProblemSta
         return
     }
 
-    const { csvSelections, collectionType } = await prompts([
+    const { csvSelections, collectionType, useSampleMode } = await prompts([
         {
             type: 'autocompleteMultiselect',
             name: 'csvSelections',
@@ -41,6 +41,12 @@ const collectionTypes = ["Generic", "Feedback", "ProblemSubmission", "ProblemSta
             name: "collectionType",
             message: "What type of collection is this?",
             choices: collectionTypes.map(type => ({ title: type, value: type }))
+        },
+        {
+            type: "confirm",
+            name: "useSampleMode",
+            message: "Use sample mode? (20 random rows)",
+            initial: true
         }
     ]);
 
@@ -54,7 +60,7 @@ const collectionTypes = ["Generic", "Feedback", "ProblemSubmission", "ProblemSta
         return
     }
 
-    [err, _] = await to(verifyCSVs(_spinner, csvSelections, collectionType))
+    [err, _] = await to(verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode))
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -76,13 +82,17 @@ async function findCSVs(_spinner) {
     return csvArr
 }
 
-async function verifyCSVs(_spinner, csvSelections, collectionType) {
+async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode) {
     _spinner.spinner = ora(`Verifying CSVs...`).succeed()
 
     await Promise.all(csvSelections.map(async csv => {
         const _csv = await areadFile(path.join(csv))
-        const _objects = await neatCsv(_csv)
-        const objects = _objects.map(obj => Object.fromEntries(Object.entries(obj).map(parseEntry)))
+        const _rows = await neatCsv(_csv)
+        const rows = _rows.map(obj => Object.fromEntries(dedupeEntries(Object.entries(obj).map(parseEntry))))
+
+        const objects = useSampleMode
+            ? sampleArray(rows, Math.max(Math.ceil(20 / csvSelections.length), 5))
+            : rows
 
         objects.forEach(_object => {
             const object = new ObjectValidator(_object)
@@ -90,20 +100,21 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
             object.assertNotBlank("semester")
             object.assertType("siteVersion", "string")
             object.assertNotBlank("siteVersion")
+            object.assertPredicate("siteVersion", val => val?.toString().length >= 2)
             object.assertType("treatment", "string", "number")
             object.assertType("oats_user_id", "string")
             object.assertNotBlank("oats_user_id")
+            object.assertPredicate("oats_user_id", val => val?.toString().length >= 2)
             object.assertType("time_stamp", "number")
             object.assertPredicate("time_stamp", val => (!isNaN(val)) && val > 1000)
 
             object.assertPredicate("course_id", val => val === "n/a" || val?.toString().length === 40)
-            object.assertPredicate("course_code", val => val === "n/a" || val?.toString().length >= 4)
+            object.assertPredicate("course_code", val => val === "n/a" || val?.toString().length >= 2)
             object.assertPredicate("course_name", val => val === "n/a" || val?.toString().length >= 4)
             object.assertPredicate("canvas_user_id", val => val === "n/a" || val?.toString().length === 40)
 
             object.assertType("timeStamp", "undefined")
             object.assertType("canvasStudentID", "undefined")
-            // if row does not have oats_user_id (legacy: studentID), salt + hash into oats_user_id
             object.assertType("full_name", "undefined")
             object.assertType("studentID", "undefined")
 
@@ -112,18 +123,35 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
                     object.assertType("feedback", "string")
                     object.assertPredicate("Content", val => val === "n/a" || (typeof val === "string" && val.length > 4))
                     object.assertType("problemFinished", "boolean")
-                    object.assertType("problemID", "string")
+                    object.assertPredicate("problemID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
                     object.assertType("status", "string")
                     object.assertPredicate("steps", val => val === "n/a" || Array.isArray(val))
                     object.assertPredicate("variables", val => val === "n/a" || val === Object(val))
                     break
                 }
                 case "ProblemSubmission": {
+                    object.assertType("eventType", "string")
+                    object.assertNotBlank("eventType")
+                    object.assertType("hintInput", "string")
+                    object.assertPredicate("hintsFinished", val => val === "n/a" || Array.isArray(val))
+                    object.assertType("input", "string")
+                    object.assertPredicate("hintID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
+                    object.assertPredicate("problemID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
+                    object.assertPredicate("stepID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
 
+                    object.assertPredicate("variabilization", val => val === "n/a" || val === Object(val))
+                    object.assertPredicate("correctAnswer", val => val === "n/a" || Array.isArray(val))
+                    object.assertPredicate("hintAnswer", val => val === "n/a" || Array.isArray(val) || val === Object(val))
+
+                    object.assertOptionalType("hintIsCorrect", "boolean")
+                    object.assertOptionalType("isCorrect", "boolean")
+
+                    object.assertType("variablization", "undefined")
                     break
                 }
                 case "ProblemStart": {
-
+                    object.assertPredicate("Content", val => val === "n/a" || (typeof val === "string" && val.length > 4))
+                    object.assertPredicate("problemID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
                     break
                 }
             }
@@ -137,6 +165,19 @@ async function verifyCSVs(_spinner, csvSelections, collectionType) {
 
 function isBlank(str) {
     return (!str || /^\s*$/.test(str));
+}
+
+function sampleArray(arr, n) {
+    let result = new Array(n),
+        len = arr.length,
+        taken = new Array(len);
+    if (n > len) n = len
+    while (n--) {
+        const x = Math.floor(Math.random() * len);
+        result[n] = arr[x in taken ? taken[x] : x];
+        taken[x] = --len in taken ? taken[len] : len;
+    }
+    return result;
 }
 
 class ObjectValidator {
@@ -174,6 +215,20 @@ class ObjectValidator {
         this.#assertions.push(() => {
             if (!predicate(val)) {
                 console.log(`field ${chalk.bold(field)}'s value ${chalk.bold(val)} does not pass predicate: ${chalk.bold(predicate.toString())}`)
+                return false
+            }
+            return true
+        })
+    }
+
+    assertOptionalType = (field, ...types) => {
+        this._trackField(field)
+        const obj = this.object
+        const val = obj[field]
+        types = [...types, "undefined"]
+        this.#assertions.push(() => {
+            if (!types.some(type => typeof val === type)) {
+                console.log(`field ${chalk.bold(field)}'s value ${chalk.bold(val)} has type ${chalk.bold(typeof val)} which does not match type(s): ${chalk.bold(types.join(" "))}`)
                 return false
             }
             return true

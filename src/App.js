@@ -56,8 +56,8 @@ class App extends React.Component {
         // UserID creation/loading
         let userId = localStorage.getItem(USER_ID_STORAGE_KEY)
         if (!userId) {
-            userId = generateRandomInt();
-            localStorage.setItem(USER_ID_STORAGE_KEY, userId.toString());
+            userId = generateRandomInt().toString();
+            localStorage.setItem(USER_ID_STORAGE_KEY, userId);
         }
         this.userID = userId;
         this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2;
