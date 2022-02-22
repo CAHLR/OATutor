@@ -37,17 +37,20 @@ class Firebase {
             treatment: this.treatment,
             time_stamp: Date.now(),
 
-            ...this.ltiContext?.course_id
+            ...this.ltiContext?.canvas_user_id
                 ? {
                     course_id: this.ltiContext.course_id,
                     course_name: this.ltiContext.course_name,
                     course_code: this.ltiContext.course_code,
 
-                    full_name: this.ltiContext.full_name,
                     canvas_user_id: this.ltiContext.user_id
                 }
                 : {
-                    course_id: "n/a"
+                    course_id: "n/a",
+                    course_name: "n/a",
+                    course_code: "n/a",
+
+                    canvas_user_id: "n/a"
                 },
 
             ...data

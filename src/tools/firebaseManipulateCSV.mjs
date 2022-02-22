@@ -21,7 +21,7 @@ const aglob = util.promisify(glob);
 const areadFile = util.promisify(fs.readFile);
 
 // generic transformation
-
+/*
 const transform = document => {
         if (document.time_stamp === 0 || document.time_stamp === undefined) {
             if (!document.timeStamp || document.timeStamp.length < 5) {
@@ -67,11 +67,14 @@ const transform = document => {
 // for problemSubmissions
 /*
 const transform = document => {
-        if (typeof document.oats_user_id === 'number') {
-            document.oats_user_id = document.oats_user_id.toString()
-        }
         if(document.hintID === ""){
             document.hintID = "n/a"
+        }
+        if(typeof document.hintIsCorrect !== "boolean"){
+            document.hintIsCorrect = "n/a"
+        }
+        if(typeof document.isCorrect !== "boolean"){
+            document.isCorrect = "n/a"
         }
         if(!document.variabilization){
             if(document.variablization){
@@ -101,10 +104,14 @@ const transform = document => {
     /**/
 
 // for feedbacks
-    /*
+
     const transform = document => {
             if (document.variables === undefined) {
                 document.variables = "n/a"
+            }
+
+            if(!document.status){
+                document.status = "open"
             }
 
             if (document.steps === undefined || Object(document.steps) === document.steps) {

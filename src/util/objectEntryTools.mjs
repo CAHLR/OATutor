@@ -1,5 +1,8 @@
 export const parseEntry = ([_key, val]) => {
     const [key, type] = _key.split("##")
+    if (val === "n/a") {
+        return [key, val]
+    }
     if (type === "boolean") {
         return [key, typeof val === "string" ? val === "true" : null]
     }
@@ -17,9 +20,6 @@ const parseJSON = (str) => {
     try {
         return JSON.parse(str);
     } catch (e) {
-        if(str === "n/a"){
-            return str
-        }
         return {};
     }
 };

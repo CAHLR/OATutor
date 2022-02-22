@@ -125,6 +125,7 @@ async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode
                     object.assertType("problemFinished", "boolean")
                     object.assertPredicate("problemID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
                     object.assertType("status", "string")
+                    object.assertPredicate("status", val => val === "n/a" || (typeof val === "string" && val.length > 2))
                     object.assertPredicate("steps", val => val === "n/a" || Array.isArray(val))
                     object.assertPredicate("variables", val => val === "n/a" || val === Object(val))
                     break
@@ -143,8 +144,8 @@ async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode
                     object.assertPredicate("correctAnswer", val => val === "n/a" || Array.isArray(val))
                     object.assertPredicate("hintAnswer", val => val === "n/a" || Array.isArray(val) || val === Object(val))
 
-                    object.assertOptionalType("hintIsCorrect", "boolean")
-                    object.assertOptionalType("isCorrect", "boolean")
+                    object.assertPredicate("hintIsCorrect", val => val === "n/a" || typeof val === "boolean")
+                    object.assertPredicate("isCorrect", val => val === "n/a" || typeof val === "boolean")
 
                     object.assertType("variablization", "undefined")
                     break
