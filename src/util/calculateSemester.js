@@ -1,8 +1,6 @@
-import { createRequire } from 'module'
-const require = createRequire(import.meta.url)
 const { SESSION_SYSTEM } = require('../config/shared-config')
 
-export const calculateSemester = (ms) => {
+const calculateSemester = (ms) => {
     const date = new Date(ms)
     const semesters = [
         {
@@ -61,4 +59,8 @@ export const calculateSemester = (ms) => {
         .find(({ start, end }) => progress >= start && progress < end);
 
     return `${session.name} ${currentYear}`
+}
+
+module.exports = {
+    calculateSemester
 }
