@@ -1,12 +1,13 @@
 import React from 'react';
 import courses from './coursePlans.js';
+import { calculateSemester } from "../util/calculateSemester.js";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.3.1";
+const SITE_VERSION = "1.3.2";
 
 const SITE_NAME = "Open ITS"
 
-const CURRENT_SEMESTER = require("./shared-config").CURRENT_SEMESTER
+const CURRENT_SEMESTER = calculateSemester(Date.now())
 
 /**
  * Indicates whether the copyright disclaimer should be shown in the footer of the website.
