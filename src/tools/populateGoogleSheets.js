@@ -23,17 +23,21 @@ const SHEET_NAME = `${CURRENT_SEMESTER}`
 
 const COLUMN_NAME_MAPPING = {
     "id": "Id",
-    "timeStamp": "date",
+    "time_stamp": "date",
     "feedback": "Feedback",
-    "studentID": "studentName",
+    "oats_user_id": "studentName",
     "problemID": "problemName",
     "treatment": "treatmentID",
     "problemFinished": "problemFinished?"
 };
 
-const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID", "canvasStudentID"]
+const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID"]
 
-const EXCLUDED_FIELDS = ["semester"]
+const INTERPOLATORS = {
+    "date": val => getFormattedDate(val)
+}
+
+const EXCLUDED_FIELDS = ["semester", "canvas_user_id", "course_code", "course_id"]
 
 if (!Object.fromEntries) {
     fromEntries.shim();
@@ -78,11 +82,12 @@ if (!Object.fromEntries) {
         // map db key names to column names
         .map(data => Object.fromEntries(Object.entries(data).map(([key, value]) => [COLUMN_NAME_MAPPING[key] || key, value])));
 
-    // convert all none string/number value into string
+    // interpolate then convert all none string/number value into string
     let nRows = _rows.map(_row =>
-        Object.fromEntries(Object.entries(_row).map(([key, val]) =>
-            [key, typeof val === 'string' || typeof val === 'number' || typeof val === 'boolean' ? val : JSON.stringify(val)]
-        ))
+        Object.fromEntries(Object.entries(_row)
+            .map(([key, val]) => [key, INTERPOLATORS[key] ? INTERPOLATORS[key](val) : val])
+            .map(([key, val]) => [key, typeof val === 'string' || typeof val === 'number' || typeof val === 'boolean' ? val : JSON.stringify(val)])
+        )
     )
 
     // calculate additional headings
@@ -134,3 +139,15 @@ if (!Object.fromEntries) {
         console.debug(`Successfully inserted ${nRows.length} rows.`)
     }
 })()
+
+function getFormattedDate(ms) {
+    const date = new Date(ms);
+    return (
+        ("0" + (date.getMonth() + 1)).slice(-2) + '-' +
+        ("0" + date.getDate()).slice(-2) + '-' +
+        date.getFullYear() + " " +
+        ("0" + date.getHours()).slice(-2) + ":" +
+        ("0" + date.getMinutes()).slice(-2) + ":" +
+        ("0" + date.getSeconds()).slice(-2)
+    )
+}

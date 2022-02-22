@@ -117,7 +117,7 @@ const transform = document => {
             document.status = "open"
         }
 
-        if (document.steps === undefined || Object(document.steps) === document.steps) {
+        if (document.steps === undefined) {
             document.steps = "n/a"
         }
         return document
