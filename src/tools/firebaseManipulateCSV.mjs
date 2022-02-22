@@ -11,7 +11,10 @@ import neatCsv from 'neat-csv';
 import { EOL } from 'os';
 import ObjectsToCsv from "objects-to-csv";
 import { createTypedEntry, dedupeEntries, parseEntry } from "../util/objectEntryTools.mjs";
-import { calculateSemester } from "../util/calculateSemester.mjs";
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+const { calculateSemester } = require("../util/calculateSemester.js");
 
 config({
     path: './.env.local'
@@ -21,7 +24,7 @@ const aglob = util.promisify(glob);
 const areadFile = util.promisify(fs.readFile);
 
 // generic transformation
-/*
+
 const transform = document => {
         if (document.time_stamp === 0 || document.time_stamp === undefined) {
             if (!document.timeStamp || document.timeStamp.length < 5) {
@@ -92,33 +95,33 @@ const transform = document => {
     /**/
 
 // for problemStartLogs
-    /*
-    const transform = document => {
-            if (!document.Content) {
-                document.Content = "n/a"
-            }
-
-            return document
+/*
+const transform = document => {
+        if (!document.Content) {
+            document.Content = "n/a"
         }
 
-    /**/
+        return document
+    }
+
+/**/
 
 // for feedbacks
-
-    const transform = document => {
-            if (document.variables === undefined) {
-                document.variables = "n/a"
-            }
-
-            if(!document.status){
-                document.status = "open"
-            }
-
-            if (document.steps === undefined || Object(document.steps) === document.steps) {
-                document.steps = "n/a"
-            }
-            return document
+/*
+const transform = document => {
+        if (document.variables === undefined) {
+            document.variables = "n/a"
         }
+
+        if (!document.status) {
+            document.status = "open"
+        }
+
+        if (document.steps === undefined || Object(document.steps) === document.steps) {
+            document.steps = "n/a"
+        }
+        return document
+    }
     /**/
 
 ;(async () => {

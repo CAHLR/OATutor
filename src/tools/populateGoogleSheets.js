@@ -17,8 +17,9 @@ const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID);
 
 const COLLECTION_NAME = "feedbacks";
 
-const { CURRENT_SEMESTER } = require("../config/shared-config");
-const SHEET_NAME = CURRENT_SEMESTER
+const { calculateSemester } = require("../util/calculateSemester")
+const CURRENT_SEMESTER = calculateSemester(Date.now())
+const SHEET_NAME = `${CURRENT_SEMESTER}`
 
 const COLUMN_NAME_MAPPING = {
     "id": "Id",
@@ -32,7 +33,7 @@ const COLUMN_NAME_MAPPING = {
 
 const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID", "canvasStudentID"]
 
-const EXCLUDED_FIELDS =["semester"]
+const EXCLUDED_FIELDS = ["semester"]
 
 if (!Object.fromEntries) {
     fromEntries.shim();
