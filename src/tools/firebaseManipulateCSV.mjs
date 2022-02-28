@@ -10,7 +10,7 @@ import fs from 'fs'
 import neatCsv from 'neat-csv';
 import { EOL } from 'os';
 import ObjectsToCsv from "objects-to-csv";
-import { createTypedEntry, dedupeEntries, parseEntry } from "../util/objectEntryTools.mjs";
+import { createTypedEntry, dedupeEntries, isObject, parseEntry } from "../util/objectEntryTools.mjs";
 import { createRequire } from 'module'
 
 const require = createRequire(import.meta.url)
@@ -24,21 +24,25 @@ const aglob = util.promisify(glob);
 const areadFile = util.promisify(fs.readFile);
 
 // generic transformation
-
+/*
 const transform = document => {
-        if (document.time_stamp === 0 || document.time_stamp === undefined) {
+        if (document.time_stamp === 0 || document.time_stamp === undefined || document.time_stamp === null) {
             if (!document.timeStamp || document.timeStamp.length < 5) {
-                throw new Error("could not guess time stamp since timeStamp does not exist on document")
+                throw new Error(`could not guess time stamp since timeStamp does not exist on document, :${ document.time_stamp}:${document.timeStamp}${EOL}:${JSON.stringify(document, null, 2)}:`)
             }
             // fair assumption to use admin locale
             document.time_stamp = new Date(document.timeStamp).getTime()
         }
 
-        if (document.oats_user_id === undefined || document.oats_user_id.length < 2) {
-            document.oats_user_id = document.studentID.toString()
+        if (document.oats_user_id === undefined || document.oats_user_id === null || document.oats_user_id.length < 2) {
+            document.oats_user_id = document.studentID?.toString() || "n/a"
         }
 
-        if (document.treatment === undefined) {
+        if (typeof document.oats_user_id === "number"){
+            document.oats_user_id = document.oats_user_id.toString()
+        }
+
+        if (document.treatment === undefined || document.treatment === null || document.treatment === "") {
             document.treatment = "n/a"
         }
 
@@ -46,7 +50,7 @@ const transform = document => {
             document.siteVersion = document.siteVersion.toString()
         }
 
-        if (document.course_id === "" || document.course_id === undefined) {
+        if (document.course_id === "" || document.course_id === undefined || document.course_id === null) {
             document.course_id = "n/a"
         }
         if (document.course_id === "n/a") {
@@ -55,7 +59,7 @@ const transform = document => {
             document.canvas_user_id = "n/a"
         }
 
-        if (document.semester === undefined || document.semester === "") {
+        if (document.semester === undefined || document.semester === "" || document.semester === null) {
             document.semester = calculateSemester(document.time_stamp)
         }
 
@@ -68,7 +72,7 @@ const transform = document => {
     /**/
 
 // for problemSubmissions
-/*
+
 const transform = document => {
         if(document.hintID === ""){
             document.hintID = "n/a"
@@ -115,6 +119,18 @@ const transform = document => {
 
         if (!document.status) {
             document.status = "open"
+        }
+
+        if (!document.Content) {
+            document.Content = "n/a"
+        }
+
+        if (isObject(document.steps)) {
+            if (Object.keys(document.steps).length === 0) {
+                document.steps = "n/a"
+            } else {
+                document.steps = ["_legacy_", document.steps]
+            }
         }
 
         if (document.steps === undefined) {
@@ -177,7 +193,7 @@ async function findCSVs(_spinner) {
     const spinner = ora(`Finding CSVs in the ${chalk.bold('in')} directory`).start()
     _spinner.spinner = spinner
 
-    const csvArr = await aglob("in/**/*.csv")
+    const csvArr = [...await aglob("in/**/*.csv"), ...await aglob("out/**/*.csv")]
 
     spinner.succeed()
     return csvArr
@@ -194,11 +210,15 @@ async function manipulateCSVs(_spinner, csvSelections) {
             .map(transform)
             .map(obj => Object.fromEntries(Object.entries(obj).map(createTypedEntry)))
 
-        const outFile = path.join('out', `modified-${Date.now()}-${path.parse(csv).name}.csv`)
+        const outFile = path.join('out', `modified-${Date.now()}-${last(path.parse(csv).name.split("-"))}.csv`)
 
         const modifiedCsv = new ObjectsToCsv(objects);
         await modifiedCsv.toDisk(outFile, { allColumns: true });
     }))
 
     _spinner.spinner.succeed()
+}
+
+const last = (arr) => {
+    return arr[arr.length - 1]
 }
