@@ -8,7 +8,7 @@ import glob from 'glob'
 import util from 'util'
 import fs from 'fs'
 import neatCsv from 'neat-csv';
-import { dedupeEntries, parseEntry } from "../util/objectEntryTools.mjs";
+import { dedupeEntries, isObject, parseEntry } from "../util/objectEntryTools.mjs";
 
 config({
     path: './.env.local'
@@ -76,7 +76,7 @@ async function findCSVs(_spinner) {
     const spinner = ora(`Finding CSVs in the ${chalk.bold('in')} directory`).start()
     _spinner.spinner = spinner
 
-    const csvArr = await aglob("in/**/*.csv")
+    const csvArr = [...await aglob("in/**/*.csv"), ...await aglob("out/**/*.csv")]
 
     spinner.succeed()
     return csvArr
@@ -127,7 +127,7 @@ async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode
                     object.assertType("status", "string")
                     object.assertPredicate("status", val => val === "n/a" || (typeof val === "string" && val.length > 2))
                     object.assertPredicate("steps", val => val === "n/a" || Array.isArray(val))
-                    object.assertPredicate("variables", val => val === "n/a" || val === Object(val))
+                    object.assertPredicate("variables", val => val === "n/a" || isObject(val))
                     break
                 }
                 case "ProblemSubmission": {
@@ -140,9 +140,9 @@ async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode
                     object.assertPredicate("problemID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
                     object.assertPredicate("stepID", val => val === "n/a" || (typeof val === "string" && val.length > 3))
 
-                    object.assertPredicate("variabilization", val => val === "n/a" || val === Object(val))
+                    object.assertPredicate("variabilization", val => val === "n/a" || isObject(val))
                     object.assertPredicate("correctAnswer", val => val === "n/a" || Array.isArray(val))
-                    object.assertPredicate("hintAnswer", val => val === "n/a" || Array.isArray(val) || val === Object(val))
+                    object.assertPredicate("hintAnswer", val => val === "n/a" || Array.isArray(val) || isObject(val))
 
                     object.assertPredicate("hintIsCorrect", val => val === "n/a" || typeof val === "boolean")
                     object.assertPredicate("isCorrect", val => val === "n/a" || typeof val === "boolean")
