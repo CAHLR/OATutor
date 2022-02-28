@@ -36,7 +36,7 @@ const areadFile = util.promisify(fs.readFile);
         return
     }
 
-    const { collectionName, csvSelection, useTestRun } = await prompts([
+    const { collectionName, csvSelection, useTestRun, deletePrev } = await prompts([
         {
             type: 'autocomplete',
             name: 'csvSelection',
@@ -46,14 +46,19 @@ const areadFile = util.promisify(fs.readFile);
         {
             type: 'text',
             name: 'collectionName',
-            message: 'Dump CSV rows into which collection?',
-            validate: val => remoteCollections.map(a => a.name).includes(val) ? "That collection already exists" : true
+            message: 'Dump CSV rows into which collection?'
         },
         {
-            type: 'confirm',
+            type: 'toggle',
             name: 'useTestRun',
             message: 'Test run? (20 rows)',
             initial: true
+        },
+        {
+            type: 'toggle',
+            name: 'deletePrev',
+            message: 'Delete rows before last time_stamp in CSV?',
+            initial: false
         }
     ]);
 
@@ -74,7 +79,7 @@ const areadFile = util.promisify(fs.readFile);
         return
     }
 
-    [err, _] = await to(importCollection(_spinner, csvSelection, collectionName, useTestRun))
+    [err, _] = await to(importCollection(_spinner, csvSelection, collectionName, useTestRun, deletePrev))
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -115,13 +120,13 @@ async function findCSVs(_spinner) {
     const spinner = ora(`Finding CSVs in the ${chalk.bold('in')} directory`).start()
     _spinner.spinner = spinner
 
-    const csvArr = await aglob("in/**/*.csv")
+    const csvArr = [...await aglob("in/**/*.csv"), ...await aglob("out/**/*.csv")]
 
     spinner.succeed()
     return csvArr
 }
 
-async function importCollection(_spinner, csvSelection, collectionName, useTestRun) {
+async function importCollection(_spinner, csvSelection, collectionName, useTestRun, deletePrev) {
     const spinner = ora('Importing collection').start()
     _spinner.spinner = spinner
 
@@ -136,6 +141,12 @@ async function importCollection(_spinner, csvSelection, collectionName, useTestR
 
     const db = admin.firestore()
     const collection = db.collection(collectionName)
+
+    if(deletePrev){
+        const lastTimestamp = Math.max(...rows.map(obj => obj.time_stamp))
+        await deleteRowsBefore(db, collectionName, lastTimestamp)
+    }
+
     let batch = db.batch();
     let count = 0;
     while (objects.length) {
@@ -178,4 +189,38 @@ function sampleArray(arr, n) {
         taken[x] = --len in taken ? taken[len] : len;
     }
     return result;
+}
+
+// https://cloud.google.com/firestore/docs/samples/firestore-data-delete-collection
+async function deleteRowsBefore(db, collectionPath, lastTimestamp) {
+    const collectionRef = db.collection(collectionPath);
+    const query = collectionRef.where('time_stamp', '<=', lastTimestamp).orderBy('time_stamp').limit(500);
+
+    return new Promise((resolve, reject) => {
+        deleteQueryBatch(db, query, resolve).catch(reject);
+    });
+}
+
+async function deleteQueryBatch(db, query, resolve) {
+    const snapshot = await query.get();
+
+    const batchSize = snapshot.size;
+    if (batchSize === 0) {
+        // When there are no documents left, we are done
+        resolve();
+        return;
+    }
+
+    // Delete documents in a batch
+    const batch = db.batch();
+    snapshot.docs.forEach((doc) => {
+        batch.delete(doc.ref);
+    });
+    await batch.commit();
+
+    // Recurse on the next process tick, to avoid
+    // exploding the stack.
+    process.nextTick(() => {
+        deleteQueryBatch(db, query, resolve);
+    });
 }
