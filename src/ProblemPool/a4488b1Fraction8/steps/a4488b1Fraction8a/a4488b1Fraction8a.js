@@ -1,1 +1,0 @@
-import hints from "./a4488b1Fraction8a-index.js"; const step = {id: "a4488b1Fraction8a", stepAnswer: ["$$\\frac{1}{90}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(\\frac{1}{3}\\right)}^2}{2^3+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

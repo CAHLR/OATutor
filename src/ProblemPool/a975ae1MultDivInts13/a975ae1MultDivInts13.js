@@ -1,1 +1,0 @@
-import steps from "./a975ae1MultDivInts13-index.js"; const problem = {id: "a975ae1MultDivInts13", title: "Evaluate Variable Expressions with Integers", body: "When $$n=-5$$, evaluate:", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

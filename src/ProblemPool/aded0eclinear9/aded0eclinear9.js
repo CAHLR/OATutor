@@ -1,1 +1,0 @@
-import steps from "./aded0eclinear9-index.js"; const problem = {id: "aded0eclinear9", title: "Displaying in Interval Notation", body: "Solve the inequality and write it in interval notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
