@@ -70,7 +70,7 @@ if (!Object.fromEntries) {
     const _rows = snapshot.docs
         .map(doc => doc.data())
         // sort each data point by its keys to ensure consistent hash
-        .map(data => Object.fromEntries(Object.entries(data).sort((a, b) => a[0].localeCompare(b[0]))))
+        .map(data => sort(data))
         // generates id based on content
         .map(data => {
             const hash = crypto.createHash('sha1').update(JSON.stringify(data)).digest('hex');
@@ -150,4 +150,16 @@ function getFormattedDate(ms) {
         ("0" + date.getMinutes()).slice(-2) + ":" +
         ("0" + date.getSeconds()).slice(-2)
     )
+}
+
+function sort(obj) {
+    if (typeof obj !== "object")
+        return obj;
+    if (Array.isArray(obj)) {
+        return obj.map(obj => sort(obj)).sort()
+    }
+    const sortedObject = {};
+    const keys = Object.keys(obj).sort();
+    keys.forEach(key => sortedObject[key] = sort(obj[key]));
+    return sortedObject;
 }
