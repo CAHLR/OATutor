@@ -1,0 +1,1 @@
+import hints from "./a4488b1fractions6a-index.js"; const step = {id: "a4488b1fractions6a", stepAnswer: ["$$\\frac{-1}{10}$$"], problemType: "TextBox", stepTitle: "$$\\left(-\\frac{3}{8}\\right) \\frac{4}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

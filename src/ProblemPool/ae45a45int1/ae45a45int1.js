@@ -1,0 +1,1 @@
+import steps from "./ae45a45int1-index.js"; const problem = {id: "ae45a45int1", title: "Simplify Expressions with Absolute Value", body: "Select the correct statement for each of the following pairs of numbers.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

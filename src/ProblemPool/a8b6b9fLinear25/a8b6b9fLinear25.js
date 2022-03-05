@@ -1,0 +1,1 @@
+import steps from "./a8b6b9fLinear25-index.js"; const problem = {id: "a8b6b9fLinear25", title: "Classify Equations", body: "Classify the equation as a conditional equation, an identity, or a contradiction, and then state the solution", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving28a-index.js"; const step = {id: "aae6efeSolving28a", stepAnswer: ["29.97"], problemType: "TextBox", stepTitle: "Errol bought a skateboard helmet on sale at 40% off. The original price was $49.95. Find the sale price", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

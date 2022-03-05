@@ -1,0 +1,1 @@
+import steps from "./a1f9370SolvingFormul27-index.js"; const problem = {id: "a1f9370SolvingFormul27", title: "Solve the Formula for the given variable", body: "Solve the formula to get an expression for l.", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
