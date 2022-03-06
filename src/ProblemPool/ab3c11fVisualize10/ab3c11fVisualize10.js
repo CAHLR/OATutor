@@ -1,1 +1,1 @@
-import steps from "./ab3c11fVisualize10-index.js"; const problem = {id: "ab3c11fVisualize10", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };
+import steps from "./ab3c11fVisualize10-index.js"; const problem = {id: "ab3c11fVisualize10", title: "Divide:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "1.5 Visualize Fractions", courseName: "Openstax: Elementary Algebra"}; export { problem };

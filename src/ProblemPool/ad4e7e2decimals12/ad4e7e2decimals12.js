@@ -1,1 +1,1 @@
-import steps from "./ad4e7e2decimals12-index.js"; const problem = {id: "ad4e7e2decimals12", title: "How to Round Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };
+import steps from "./ad4e7e2decimals12-index.js"; const problem = {id: "ad4e7e2decimals12", title: "How to Round Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "1.7 Decimals", courseName: "Openstax: Elementary Algebra"}; export { problem };

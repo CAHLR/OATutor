@@ -1,1 +1,1 @@
-import steps from "./af36e21FunNota7-index.js"; const problem = {id: "af36e21FunNota7", title: "Evaluating functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };
+import steps from "./af36e21FunNota7-index.js"; const problem = {id: "af36e21FunNota7", title: "Evaluating functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.1 Functions and Function Notation", courseName: "Openstax: College Algebra"}; export { problem };

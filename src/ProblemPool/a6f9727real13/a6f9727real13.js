@@ -1,1 +1,1 @@
-import steps from "./a6f9727real13-index.js"; const problem = {id: "a6f9727real13", title: "Simplifying a Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };
+import steps from "./a6f9727real13-index.js"; const problem = {id: "a6f9727real13", title: "Simplifying a Formula", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };
