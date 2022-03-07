@@ -70,7 +70,9 @@ class Problem extends React.Component {
             this.stepStates[index] = null;
             return <Element name={index.toString()} key={Math.random()}>
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
-                             seed={this.props.seed} problemVars={this.props.problem.variabilization}/>
+                             seed={this.props.seed} problemVars={this.props.problem.variabilization}
+                             lesson={problem.lesson}
+                />
             </Element>
         })
     }
@@ -234,7 +236,8 @@ class Problem extends React.Component {
             this.state.problemFinished,
             chooseVariables(this.props.problem.variabilization, this.props.seed),
             this.state.problem.courseName,
-            this.state.problem.steps
+            this.state.problem.steps,
+            this.state.problem.lesson
         );
         this.setState({ feedback: "", feedbackSubmitted: true });
     }

@@ -37,7 +37,7 @@ class Firebase {
             treatment: this.treatment,
             time_stamp: Date.now(),
 
-            ...this.ltiContext?.canvas_user_id
+            ...this.ltiContext?.user_id
                 ? {
                     course_id: this.ltiContext.course_id,
                     course_name: this.ltiContext.course_name,
@@ -88,7 +88,7 @@ class Firebase {
         )
     }
 
-    log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization) {
+    log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, lesson) {
         const data = {
             eventType: eventType,
             problemID: problemID,
@@ -101,12 +101,13 @@ class Firebase {
             hintAnswer: null,
             hintIsCorrect: null,
             hintsFinished,
-            variabilization
+            variabilization,
+            lesson
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
 
-    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization) {
+    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson) {
         const data = {
             eventType: "hintScaffoldLog",
             problemID,
@@ -119,7 +120,8 @@ class Firebase {
             hintAnswer: hint?.hintAnswer?.toString(),
             hintIsCorrect: isCorrect,
             hintsFinished,
-            variabilization
+            variabilization,
+            lesson
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
@@ -151,11 +153,12 @@ class Firebase {
         return this.writeData("mouseMovement", data);
     }
 
-    startedProblem(problemID, courseName) {
+    startedProblem(problemID, courseName, lesson) {
         console.debug(`Logging that the problem has been started (${problemID})`)
         const data = {
             problemID,
-            Content: courseName
+            Content: courseName,
+            lesson
         };
         return this.writeData(problemStartLogOutput, data);
     }
@@ -169,11 +172,12 @@ class Firebase {
         return this.writeData(siteLogOutput, data);
     }
 
-    submitFeedback(problemID, feedback, problemFinished, variables, courseName, steps) {
+    submitFeedback(problemID, feedback, problemFinished, variables, courseName, steps, lesson) {
         const data = {
             problemID,
             problemFinished,
             feedback,
+            lesson,
             status: "open",
             Content: courseName,
             variables,
