@@ -56,6 +56,11 @@ class Firebase {
             ...data
         }
         const payload = Object.fromEntries(Object.entries(_payload).map(([key, val]) => ([key, typeof val === 'undefined' ? null : val])))
+
+        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+            console.debug("Writing this payload to firebase: ", payload)
+        }
+
         await this.db.collection(collection).doc(this._getReadableID()).set(payload).catch(err => {
             console.log("a non-critical error occurred.")
             console.debug(err)
@@ -89,6 +94,9 @@ class Firebase {
     }
 
     log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, lesson) {
+        if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
+            hintsFinished = hintsFinished.map(step => step.join(", "))
+        }
         const data = {
             eventType: eventType,
             problemID: problemID,
@@ -102,12 +110,14 @@ class Firebase {
             hintIsCorrect: null,
             hintsFinished,
             variabilization,
-            lesson
+            lesson,
+            knowledgeComponents: step?.knowledgeComponents
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
 
     hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson) {
+        console.debug("step", step)
         const data = {
             eventType: "hintScaffoldLog",
             problemID,
@@ -121,7 +131,8 @@ class Firebase {
             hintIsCorrect: isCorrect,
             hintsFinished,
             variabilization,
-            lesson
+            lesson,
+            knowledgeComponents: step?.knowledgeComponents
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
@@ -153,12 +164,13 @@ class Firebase {
         return this.writeData("mouseMovement", data);
     }
 
-    startedProblem(problemID, courseName, lesson) {
+    startedProblem(problemID, courseName, lesson, learningObjectives) {
         console.debug(`Logging that the problem has been started (${problemID})`)
         const data = {
             problemID,
             Content: courseName,
-            lesson
+            lesson,
+            learningObjectives
         };
         return this.writeData(problemStartLogOutput, data);
     }
@@ -181,11 +193,12 @@ class Firebase {
             status: "open",
             Content: courseName,
             variables,
-            steps: steps.map(({ answerType, id, stepAnswer, problemType }) => ({
+            steps: steps.map(({ answerType, id, stepAnswer, problemType, knowledgeComponents }) => ({
                 answerType,
                 id,
                 stepAnswer,
-                problemType
+                problemType,
+                knowledgeComponents
             }))
         };
         return this.writeData(feedbackOutput, data);
