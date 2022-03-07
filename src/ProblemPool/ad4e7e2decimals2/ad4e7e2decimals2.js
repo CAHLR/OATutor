@@ -1,1 +1,1 @@
-import steps from "./ad4e7e2decimals2-index.js"; const problem = {id: "ad4e7e2decimals2", title: "How to Name Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", courseName: "Openstax: Elementary Algebra"}; export { problem };
+import steps from "./ad4e7e2decimals2-index.js"; const problem = {id: "ad4e7e2decimals2", title: "How to Name Decimals", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "1.7 Decimals", courseName: "Openstax: Elementary Algebra"}; export { problem };

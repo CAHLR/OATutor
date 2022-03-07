@@ -1,1 +1,1 @@
-import steps from "./a5991b4add12-index.js"; const problem = {id: "a5991b4add12", title: "Add and Subtract Monomials", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: Elementary Algebra"}; export { problem };
+import steps from "./a5991b4add12-index.js"; const problem = {id: "a5991b4add12", title: "Add and Subtract Monomials", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.1 Add and Subtract Polynomials", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,1 @@
-import steps from "./afb3ccdlang14-index.js"; const problem = {id: "afb3ccdlang14", title: "Identify and Combine Like Terms", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
+import steps from "./afb3ccdlang14-index.js"; const problem = {id: "afb3ccdlang14", title: "Identify and Combine Like Terms", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Use the Language of Algebra", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

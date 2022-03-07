@@ -1,1 +1,1 @@
-import steps from "./ae45a45int27-index.js"; const problem = {id: "ae45a45int27", title: "Evaluate Variable Expressions with Integers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
+import steps from "./ae45a45int27-index.js"; const problem = {id: "ae45a45int27", title: "Evaluate Variable Expressions with Integers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 Integers", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

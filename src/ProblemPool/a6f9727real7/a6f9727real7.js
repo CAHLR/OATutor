@@ -1,1 +1,1 @@
-import steps from "./a6f9727real7-index.js"; const problem = {id: "a6f9727real7", title: "Combining Properties of Real Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", courseName: "Openstax: College Algebra"}; export { problem };
+import steps from "./a6f9727real7-index.js"; const problem = {id: "a6f9727real7", title: "Combining Properties of Real Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

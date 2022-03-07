@@ -1,1 +1,1 @@
-import steps from "./a3b09a3binomseq24-index.js"; const problem = {id: "a3b09a3binomseq24", title: "Binomial Expansion", body: "Find the ninth term of:", steps: steps, variabilization: {}, oer: "openstax.org", courseName: "Openstax: College Algebra"}; export { problem };
+import steps from "./a3b09a3binomseq24-index.js"; const problem = {id: "a3b09a3binomseq24", title: "Binomial Expansion", body: "Find the ninth term of:", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "9.6 Binomial Theorem", courseName: "Openstax: College Algebra"}; export { problem };
