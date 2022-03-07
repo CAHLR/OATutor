@@ -48,6 +48,7 @@ jobs:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           CI: false
           REACT_APP_BUILD_TYPE: "production"
+          REACT_APP_COMMIT_HASH: ${{ github.sha }}
 
       - uses: actions/checkout@v2
         with:

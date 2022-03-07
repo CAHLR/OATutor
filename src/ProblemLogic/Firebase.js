@@ -33,6 +33,7 @@ class Firebase {
         const _payload = {
             semester: CURRENT_SEMESTER,
             siteVersion: this.siteVersion,
+            siteCommitHash: process.env.REACT_APP_COMMIT_HASH,
             oats_user_id: this.oats_user_id,
             treatment: this.treatment,
             time_stamp: Date.now(),
