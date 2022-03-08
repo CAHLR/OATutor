@@ -93,7 +93,16 @@ class ProblemCard extends React.Component {
         console.debug('submitting problem')
         const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
 
-        this.context.firebase.log(parsed, this.props.problemID, this.step, correctAnswer, this.state.hintsFinished, "answerStep", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
+        this.context.firebase.log(
+            parsed,
+            this.props.problemID,
+            this.step,
+            correctAnswer,
+            this.state.hintsFinished,
+            "answerStep",
+            chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
+            this.props.lesson
+        );
 
         if (correctAnswer) {
             toast.success("Correct Answer!", {
@@ -147,7 +156,16 @@ class ProblemCard extends React.Component {
                 prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
                 return { hintsFinished: prevState.hintsFinished }
             }, () => {
-                this.context.firebase.log(null, this.props.problemID, this.step, null, this.state.hintsFinished, "unlockHint", chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
+                this.context.firebase.log(
+                    null,
+                    this.props.problemID,
+                    this.step,
+                    null,
+                    this.state.hintsFinished,
+                    "unlockHint",
+                    chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
+                    this.props.lesson
+                );
             });
         }
 
@@ -160,7 +178,16 @@ class ProblemCard extends React.Component {
                 return { hintsFinished: prevState.hintsFinished }
             });
         }
-        this.context.firebase.hintLog(parsed, this.props.problemID, this.step, hint, correctAnswer, this.state.hintsFinished, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
+        this.context.firebase.hintLog(
+            parsed,
+            this.props.problemID,
+            this.step,
+            hint,
+            correctAnswer,
+            this.state.hintsFinished,
+            chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
+            this.props.lesson
+        )
     }
 
     render() {
@@ -190,6 +217,7 @@ class ProblemCard extends React.Component {
                                 seed={this.props.seed}
                                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
                                 answerMade={this.props.answerMade}
+                                lesson={this.props.lesson}
                             />
                             <Spacer/>
                         </div>

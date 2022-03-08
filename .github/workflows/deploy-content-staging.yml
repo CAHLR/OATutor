@@ -49,6 +49,7 @@ jobs:
           CI: false
           REACT_APP_BUILD_TYPE: "staging"
           REACT_APP_MIDDLEWARE_URL: ${{ secrets.STAGING_MIDDLEWARE_URL }}
+          REACT_APP_COMMIT_HASH: ${{ github.sha }}
 
       - uses: actions/checkout@v2
         with:
