@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear18a-index.js"; const step = {id: "aded0eclinear18a", stepAnswer: ["$$f<\\frac{7}{30}$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$f-\\frac{13}{20}<\\frac{-5}{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

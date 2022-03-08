@@ -1,0 +1,1 @@
+import hints from "./a975ae1MultDivInts13b-index.js"; const step = {id: "a975ae1MultDivInts13b", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$-n+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
