@@ -73,6 +73,7 @@ class HintSystem extends React.Component {
                 this.props.problemID,
                 this.step,
                 null,
+                null,
                 this.state.subHintsFinished,
                 "unlockSubHint",
                 chooseVariables(this.props.stepVars, this.props.seed),
