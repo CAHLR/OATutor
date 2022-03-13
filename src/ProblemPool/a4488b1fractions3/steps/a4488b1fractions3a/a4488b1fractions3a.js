@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions3a-index.js"; const step = {id: "a4488b1fractions3a", stepAnswer: ["$$\\frac{2x^2}{3y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{14x^2}{21} y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

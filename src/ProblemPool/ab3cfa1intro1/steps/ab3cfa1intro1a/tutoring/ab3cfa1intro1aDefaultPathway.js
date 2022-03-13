@@ -1,1 +1,0 @@
-var hints = []; export {hints};
