@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions7a-index.js"; const step = {id: "a4488b1fractions7a", stepAnswer: ["$$\\frac{-21}{50}$$"], problemType: "TextBox", stepTitle: "$$\\left(-\\frac{14}{15}\\right) \\frac{9}{20}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
