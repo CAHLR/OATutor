@@ -94,7 +94,8 @@ class Firebase {
         )
     }
 
-    log(inputVal, problemID, step, isCorrect, hintsFinished, eventType, variabilization, lesson) {
+    log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson) {
+        console.debug("trying to log hint: ", hint)
         if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
             hintsFinished = hintsFinished.map(step => step.join(", "))
         }
@@ -102,7 +103,7 @@ class Firebase {
             eventType: eventType,
             problemID: problemID,
             stepID: step?.id,
-            hintID: null,
+            hintID: hint?.id,
             input: inputVal?.toString(),
             correctAnswer: step?.stepAnswer?.toString(),
             isCorrect,
