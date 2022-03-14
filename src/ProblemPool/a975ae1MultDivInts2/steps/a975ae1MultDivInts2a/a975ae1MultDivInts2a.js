@@ -1,0 +1,1 @@
+import hints from "./a975ae1MultDivInts2a-index.js"; const step = {id: "a975ae1MultDivInts2a", stepAnswer: ["-56"], problemType: "TextBox", stepTitle: "$$-8\\times7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

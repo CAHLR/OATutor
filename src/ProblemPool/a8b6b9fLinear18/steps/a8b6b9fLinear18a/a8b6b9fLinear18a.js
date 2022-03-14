@@ -1,0 +1,1 @@
+import hints from "./a8b6b9fLinear18a-index.js"; const step = {id: "a8b6b9fLinear18a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$15(y-9)=-60$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
