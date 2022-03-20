@@ -1,56 +1,51 @@
 # OpenITS
 
-An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented in ReactJS and using Firebase
-for logging.
+An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented
+in ReactJS and using Firebase for logging. Includes ExpressJS middleware for interoperability
+with LTI-compatible learning management systems (such as [Canvas](https://www.instructure.com/)).
 
-## Installation:
+## Requirements
+The installation assumes that you already have Git, Node.js, and npm installed. 
 
-The installation assumes that you already have git and npm installed. If you do not have either, please install those
-first.
+## Installation
 
-```
-git clone https://github.com/CAHLR/OpenITS
+```sh
+git clone https://github.com/CAHLR/OpenITS.git
 cd OpenITS
-npm install
-npm run generate
 ```
+```sh
+npm install
+```
+> You may use an alternative package manager such as [yarn](https://yarnpkg.com/) or 
+> [pnpm](https://pnpm.io/).
 
-After compiling, the project will display in a new web browser tab at adress `localhost:1337`.
+### \[Optional\] Firebase Setup
 
-`npm run generate` is used to autogenerate index files (the preferred way of running locally)
-
-(`npm start` can be used if no new problems/steps/pathways have been added.)
-
-### Firebase Setup
-
-OpenITS uses Firebase for data logging purposes.
+OpenITS can use Firebase to log data.
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Add new project. Configure it as you wish (the options are not important for setup)
 3. Click on Database and then create database. Start in test mode, leave the cloud location as is
-4. Click `start collection` and name it `problemSubmissions`. Add a temporary first document for now.
-6. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
-7. Put configuration in `src/config/firebaseConfig.js`
+4. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
+5. Put configuration in `src/config/firebaseConfig.js`
 
-### Tools Setup
+### \[Optional\] Convenience Tools
 
-Data parsing and spreadsheet populating tools are stored in `src/tools`.
-
-For all tools:
+Data parsing and spreadsheet populating tools are stored in `src/tools`. If you would
+like to use any of the tools in this directory, the following steps must be taken to
+ensure Firebase access.
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Click on the project made in Firebase Setup
 3. Click on Project settings --> service accounts. Generate a new `Node.js` private key.
-4. Put that private key in `/src/tools/service-account-credentials.json`
-5. `cd /src/tools`
-5. `npm install`
-
-#### generateCSV.js
-
-1. Modify this line `readData("problemSubmissionsSum21")` to point to the target collection
-2. `node generateCSV.js`
+4. Put that private key in `src/tools/service-account-credentials.json`
+5. `cd src/tools`
+6. `npm install`
 
 #### populateGoogleSheets.js
+
+This tool allows you to sync the feedback received from your website to a Google Spreadsheet
+of your choosing.
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Click on the project made in Firebase Setup
@@ -58,30 +53,36 @@ For all tools:
 4. Create another service account and save its private key to `src/tools/sheets-service-account.json`
 5. Copy the email address for the service account
 6. Share the target spreadsheet with that email address and give them editor access
-7. Create `.env.local` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
-8. Modify this line `const CURRENT_SEMESTER = "[Semester] [Year]"` in `src/config/shared-config.js` to the current
-   Semester Year. 
-> Format for the semester, year can be arbitrary
-9. `node populateGoogleSheets.js`
+7. Create `.env.local` in `src/tools` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
+8. If your school runs on a quarter system, you may change the first line in 
+`src/config/shared-config.js` to `QUARTER`
+
+From the `src/tools` directory, `node populateGoogleSheets.js`
+
+#### firebaseExportCSV.mjs
+
+This tool requires no additional set up, and allows you to download a CSV of the Firebase
+collections.
 
 ## Features:
 
-1) Scaffolding/hint system - modularize the type of help
-2) Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3) Centralized skill model - `src/ProblemPool/skillMode.js`
-4) Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
-5) User login/registration - Cookie cache based
-
-See the changelog for a more detailed feature list
+1. Scaffolding/hint system - modularize the type of help
+2. Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
+3. Centralized skill model - `src/config/skillModel.js`
+4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
+5. User login/registration - JSON Web Tokens
 
 ## Technologies Used
 
 * Frontend: ReactJS
-    * Theme: Material UI
-    * Database: Firebase (Cloud Firestore)
-    * Deployment: TBD
+  * Theme: Material UI
+  * Database: localForage (localStorage, WebSQL, IndexedDB)
+  * Deployment: Github Actions
+  * \[Optional\] Logging: Firebase (Cloud Firestore)
+* Middleware: ExpressJS
+  * Database: Level-DB
 * Offline Computation/Iteration:
-    * Python (dAFM Machine Learning algorithm)
+  * Python (dAFM Machine Learning algorithm)
 
 # Project Structure:
 
@@ -90,7 +91,7 @@ Code for this project is located in the `src` directory.
 ## src
 
 - `App.css`: Top level style sheet, contains colors for headers/logo
-- `App.js`: Top level script, generates cookie, firebase object. Sets up the context based on the userID
+- `App.js`: Top level script, creates firebase object. Sets up the application context.
 - `index.js`: Renders `App.js`
 
 ## BKT
@@ -136,8 +137,8 @@ website for more info on this syntax.
 ## ProblemPool [Configurable]
 
 - Each problem is contained in its own folder.
-- Problems can contain steps which are contained in their own subfolder
-- Steps can contain hints which are stored as pathways in the `tutoring` subfolder
+- Problems can contain steps which are contained in their own sub-folder
+- Steps can contain hints which are stored as pathways in the `tutoring` sub-folder
 - Files ending in `-index.js` and `problemPool.js` are autogenerated using indexGenerator.js
 
 ### Markdown Support
@@ -160,24 +161,16 @@ website for more info on this syntax.
 - `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
 
 ```javascript
-    problemID1a: []
-problemID1b: []
-...
-problemID1z: []
-
-problemID9a: []
-...
-problemID9z: []
-...
+const skillModel = {
+    problemID1a: ['skill1', 'skill2'],
+    problemID1b: ['skill2', 'skill3'],
+    // ...
+}
+export default skillModel;
 ```
 
 - `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the
   gitignore by default to prevent API key leaks.)
-
-- `algebraCheck.js`: Config file for algebraic answer checks. Supported syntax can be
-  found [here](https://www.npmjs.com/package/expr-eval)
-
----
 
 ## Listeners
 
@@ -214,9 +207,9 @@ problemID9z: []
 1. Create a folder in `/src/ProblemPool/` for that problem (Ex. `circle1`)
 2. Create a js file for that problem id (Ex. `circle1.js`)
 3. Create a folder called `figures` if the problem has figures
-4. Create a subfolder for each problem step (Ex. `circle1a`, `circle1b`)
-5. In each subfolder, create a js file for that problem step id (Ex. `circle1a.js`)
-6. Create a subfolder within the subfolder called `tutoring`
+4. Create a sub-folder for each problem step (Ex. `circle1a`, `circle1b`)
+5. In each sub-folder, create a js file for that problem step id (Ex. `circle1a.js`)
+6. Create a sub-folder within the sub-folder called `tutoring`
 7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.js`)
 8. In `/src/config/skillModel.js`, tag each problem with the appropriate skills
 9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams`
