@@ -55,7 +55,7 @@ class LessonSelection extends React.Component {
                             <center>
                                 {this.isPrivileged
                                     ? <h1>Welcome Instructor!</h1>
-                                    : <h1>Welcome to OpenITS!</h1>
+                                    : <h1>Welcome to {SITE_NAME.replace(/\s/, "")}!</h1>
                                 }
                                 <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
                                 {this.isPrivileged
