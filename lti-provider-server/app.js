@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const jwtMiddleware = require('express-jwt');
 const level = require('level')
 const { lessonMapping } = require("./legacy-lesson-mapping");
+const { SITE_NAME } = require("../src/config/shared-config");
 const to = require("await-to-js").default;
 
 const db = level('.mapping-db')
@@ -333,7 +334,7 @@ app.post('/auth', async (req, res) => {
 
     if (lessonNum == null) {
         console.log(`Lesson does not exist for "${assignment_title}"`);
-        res.send("Invalid lesson ID. Please contact your teacher or the OpenITS development team to fix this error.");
+        res.send(`Invalid lesson ID. Please contact your teacher or the ${SITE_NAME} development team to fix this error.`);
         res.end();
     } else {
         let err, linkedLesson;

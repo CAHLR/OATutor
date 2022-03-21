@@ -1,11 +1,10 @@
 import React from 'react';
 import courses from './coursePlans.js';
 import { calculateSemester } from "../util/calculateSemester.js";
+import { SITE_NAME } from "./shared-config"
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.2";
-
-const SITE_NAME = "OATutor"
 
 const CURRENT_SEMESTER = calculateSemester(Date.now())
 
