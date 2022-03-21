@@ -5,7 +5,7 @@ import { calculateSemester } from "../util/calculateSemester.js";
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.2";
 
-const SITE_NAME = "Open ITS"
+const SITE_NAME = "OATutor"
 
 const CURRENT_SEMESTER = calculateSemester(Date.now())
 
