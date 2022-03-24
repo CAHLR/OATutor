@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang24a-index.js"; const step = {id: "afb3ccdlang24a", stepAnswer: ["50"], problemType: "TextBox", stepTitle: "Simplify $$2\\left(1+3\\left(10-2\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
