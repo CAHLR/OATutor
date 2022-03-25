@@ -1,0 +1,1 @@
+import hints from "./ae45a45int11c-index.js"; const step = {id: "ae45a45int11c", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "35 / (-7)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
