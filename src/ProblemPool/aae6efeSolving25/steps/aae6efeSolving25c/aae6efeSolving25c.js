@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving25c-index.js"; const step = {id: "aae6efeSolving25c", stepAnswer: ["125"], problemType: "TextBox", stepTitle: "50 is what percent of 40?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

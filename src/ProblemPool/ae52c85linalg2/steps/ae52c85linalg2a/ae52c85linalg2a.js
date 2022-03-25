@@ -1,0 +1,1 @@
+import hints from "./ae52c85linalg2a-index.js"; const step = {id: "ae52c85linalg2a", stepAnswer: ["$$\\begin{bmatrix} 6 & 1 \\\\ 1 & 3 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Find the chnge of basis matrix P from B to C.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
