@@ -1,1 +1,0 @@
-import hints from "./a833c22linear19a-index.js"; const step = {id: "a833c22linear19a", stepAnswer: ["$$y=6x-19$$"], problemType: "TextBox", stepTitle: "A line passes through the points (-2,6) and (4,5). Find the equation of a perpendicular line that passes through the point (4,5)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

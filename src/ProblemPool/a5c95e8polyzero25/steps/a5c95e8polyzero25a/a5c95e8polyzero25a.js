@@ -1,1 +1,0 @@
-import hints from "./a5c95e8polyzero25a-index.js"; const step = {id: "a5c95e8polyzero25a", stepAnswer: ["$$x=\\frac{3}{2}$$"], problemType: "MultipleChoice", stepTitle: "$$2x^3-5x^2+9x-9=0$$", stepBody: "", choices: ["$$x=\\frac{3}{2}$$", "x=3/2,-1,4", "x=3/2,-5,3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

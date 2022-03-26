@@ -1,1 +1,0 @@
-import steps from "./ac3d94dProperties19-index.js"; const problem = {id: "ac3d94dProperties19", title: "Use the Identity and Inverse Properties of Addition", body: "Find the additive inverse of", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.9 Properties of Real Numbers", courseName: "Openstax: Elementary Algebra"}; export { problem };

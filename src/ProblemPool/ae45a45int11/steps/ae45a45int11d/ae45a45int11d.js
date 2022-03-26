@@ -1,1 +1,0 @@
-import hints from "./ae45a45int11d-index.js"; const step = {id: "ae45a45int11d", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "-84 / -6", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

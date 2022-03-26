@@ -1,1 +1,0 @@
-import hints from "./af69facexpolog30b-index.js"; const step = {id: "af69facexpolog30b", stepAnswer: ["71"], problemType: "TextBox", stepTitle: "To the nearest whole number, how many people will have heard the rumor after 3 days?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

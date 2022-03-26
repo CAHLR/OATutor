@@ -1,1 +1,0 @@
-import hints from "./a3c25cbexe12a-index.js"; const step = {id: "a3c25cbexe12a", stepAnswer: ["$$\\left(x+5\\right) \\left(x-6\\right)$$"], problemType: "TextBox", stepTitle: "$$x^2-x-12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

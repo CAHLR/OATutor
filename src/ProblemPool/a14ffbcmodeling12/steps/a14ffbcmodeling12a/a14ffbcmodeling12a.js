@@ -1,1 +1,0 @@
-import hints from "./a14ffbcmodeling12a-index.js"; const step = {id: "a14ffbcmodeling12a", stepAnswer: ["$$\\frac{81}{x^4}$$"], problemType: "TextBox", stepTitle: "y varies inversely as the fourth power of x and when $$x=3$$, $$y=1$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac879b3graph3a-index.js"; const step = {id: "ac879b3graph3a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "(3,-1)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

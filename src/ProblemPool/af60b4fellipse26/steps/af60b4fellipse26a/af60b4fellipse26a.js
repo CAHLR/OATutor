@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse26a-index.js"; const step = {id: "af60b4fellipse26a", stepAnswer: ["$$12\\pi$$"], problemType: "MultipleChoice", stepTitle: "$$\\frac{{\\left(x-3\\right)}^2}{9}+\\frac{{\\left(y-3\\right)}^2}{16}=1$$", stepBody: "", choices: ["$$12\\pi$$", "$$11\\pi$$", "$$10\\pi$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

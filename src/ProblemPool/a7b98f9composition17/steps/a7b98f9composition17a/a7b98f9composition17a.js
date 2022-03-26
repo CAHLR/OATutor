@@ -1,1 +1,0 @@
-import hints from "./a7b98f9composition17a-index.js"; const step = {id: "a7b98f9composition17a", stepAnswer: ["$$-3x^2+x+5$$"], problemType: "TextBox", stepTitle: "$$f+g$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a1f0162sequences26a-index.js"; const step = {id: "a1f0162sequences26a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Write the first term of the sequence defined by the explicit formula $$a_n=\\frac{2^n}{n^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

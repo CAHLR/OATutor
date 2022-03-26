@@ -1,1 +1,0 @@
-var hints = [{id: "abd4034poly26a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by $$4d^3$$, so we get $$15d^4+6d^2$$", text: "", variabilization: {}}, ]; export {hints};

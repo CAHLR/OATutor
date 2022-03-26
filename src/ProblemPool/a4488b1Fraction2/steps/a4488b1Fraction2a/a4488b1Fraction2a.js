@@ -1,1 +1,0 @@
-import hints from "./a4488b1Fraction2a-index.js"; const step = {id: "a4488b1Fraction2a", stepAnswer: ["-33a"], problemType: "TextBox", stepTitle: "$$\\frac{11}{3}$$ * (-9a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

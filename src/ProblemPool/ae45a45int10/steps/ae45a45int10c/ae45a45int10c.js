@@ -1,1 +1,0 @@
-import hints from "./ae45a45int10c-index.js"; const step = {id: "ae45a45int10c", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "-24 / 6", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

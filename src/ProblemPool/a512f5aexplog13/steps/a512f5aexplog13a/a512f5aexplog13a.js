@@ -1,1 +1,0 @@
-import hints from "./a512f5aexplog13a-index.js"; const step = {id: "a512f5aexplog13a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "$$5*\\log_{7}\\left(n\\right)$$ $$=$$ 10", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

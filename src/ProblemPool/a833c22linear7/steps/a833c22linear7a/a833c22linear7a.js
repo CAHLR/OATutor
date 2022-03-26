@@ -1,1 +1,0 @@
-import hints from "./a833c22linear7a-index.js"; const step = {id: "a833c22linear7a", stepAnswer: ["Decreasing"], problemType: "MultipleChoice", stepTitle: "$$g(x)=8-3x$$", stepBody: "", choices: ["Increasing", "Decreasing"], answerType: "string", hints: hints, variabilization: {}}; export {step};

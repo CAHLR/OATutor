@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse14c-index.js"; const step = {id: "af60b4fellipse14c", stepAnswer: ["(0,8) and (0,-8)"], problemType: "TextBox", stepTitle: "Identify the end points of the minor axis", stepBody: "", choices: ["(0,8) and (0,-8)", "(0,7) and (0,-7)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

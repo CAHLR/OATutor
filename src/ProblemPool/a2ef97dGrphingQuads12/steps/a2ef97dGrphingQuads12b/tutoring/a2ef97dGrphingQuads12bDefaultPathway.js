@@ -1,1 +1,0 @@
-var hints = [{id: "a2ef97dGrphingQuads12b-h1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["-9"], dependencies: [], title: "Solving for the axis of symmetry", text: "What is the y-coordinate that results from plugging in the axis of symmetry to the equation", variabilization: {}}, ]; export {hints};

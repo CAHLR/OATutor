@@ -1,1 +1,0 @@
-import hints from "./a7b98f9composition16b-index.js"; const step = {id: "a7b98f9composition16b", stepAnswer: ["$$2x^2+2x-6$$"], problemType: "TextBox", stepTitle: "f-g", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

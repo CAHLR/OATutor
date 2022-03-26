@@ -1,1 +1,0 @@
-import hints from "./a161552divpoly3a-index.js"; const step = {id: "a161552divpoly3a", stepAnswer: ["$$5x+12$$"], problemType: "TextBox", stepTitle: "Use synthetic division to divide $$5x^2-3x-36$$ by x-3", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

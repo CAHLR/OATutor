@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use28b-index.js"; const step = {id: "a4d2b33use28b", stepAnswer: ["Equation"], problemType: "MultipleChoice", stepTitle: "$$4x-6=22$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints, variabilization: {}}; export {step};

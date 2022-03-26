@@ -1,1 +1,0 @@
-import steps from "./af7337cIterindex1-index.js"; const problem = {id: "af7337cIterindex1", title: "Repeated Function Calls", body: "", steps: steps, variabilization: {}, oer: "https://www.inferentialthinking.com/chapters/09/2/Iteration.html", lesson: "Iteration and Indexing", courseName: "Data Content"}; export { problem };

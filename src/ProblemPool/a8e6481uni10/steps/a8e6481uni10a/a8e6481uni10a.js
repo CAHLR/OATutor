@@ -1,1 +1,0 @@
-import hints from "./a8e6481uni10a-index.js"; const step = {id: "a8e6481uni10a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is her walking speed in mph?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a870b02DivMul18a-index.js"; const step = {id: "a870b02DivMul18a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$18-27=15c-9c-3c$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational17a-index.js"; const step = {id: "ab62b81rational17a", stepAnswer: ["$$s+5$$"], problemType: "TextBox", stepTitle: "$$\\frac{3s^2}{3s-2}+\\frac{13s-10}{3s-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

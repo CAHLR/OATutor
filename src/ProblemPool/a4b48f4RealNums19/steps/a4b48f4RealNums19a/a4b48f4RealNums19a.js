@@ -1,1 +1,0 @@
-import hints from "./a4b48f4RealNums19a-index.js"; const step = {id: "a4b48f4RealNums19a", stepAnswer: ["$$7.14m+6.57n$$"], problemType: "TextBox", stepTitle: "$$9.6m+7.22n+\\left(-2.19m\\right)+\\left(-0.65n\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

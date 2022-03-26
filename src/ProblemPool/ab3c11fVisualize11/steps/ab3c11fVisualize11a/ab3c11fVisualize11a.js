@@ -1,1 +1,0 @@
-import hints from "./ab3c11fVisualize11a-index.js"; const step = {id: "ab3c11fVisualize11a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-\\left(\\frac{7}{18}\\right)}{\\left(-\\frac{14}{27}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

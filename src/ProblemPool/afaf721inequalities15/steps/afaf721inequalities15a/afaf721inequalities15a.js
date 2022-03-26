@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities15a-index.js"; const step = {id: "afaf721inequalities15a", stepAnswer: ["(-inf,-64]"], problemType: "MultipleChoice", stepTitle: "$$\\frac{-1}{4} y \\geq 16$$", stepBody: "", choices: ["$$\\left(-\\infty-4\\right)$$", "(-inf,-64]", "[-64,inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

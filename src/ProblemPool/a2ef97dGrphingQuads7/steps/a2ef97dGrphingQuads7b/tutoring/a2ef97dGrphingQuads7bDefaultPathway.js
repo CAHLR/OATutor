@@ -1,1 +1,0 @@
-var hints = [{id: "a2ef97dGrphingQuads7b-h1", type: "hint", dependencies: [], title: "Parabola Orientation", text: "Consider the parabolic form $${ax}^2+bx+c$$. Find the sign of a.", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./a5c70bfsquareroots28a-index.js"; const step = {id: "a5c70bfsquareroots28a", stepAnswer: ["$$-4\\sqrt{6}+3\\sqrt{3}$$"], problemType: "TextBox", stepTitle: "$$2\\sqrt{6}-6\\sqrt{6}+3\\sqrt{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

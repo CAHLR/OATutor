@@ -1,1 +1,0 @@
-import steps from "./aafc2dcMultiply6-index.js"; const problem = {id: "aafc2dcMultiply6", title: "Simplify Expression", body: "Simply the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 Multiply and Divide Integers", courseName: "Openstax: Elementary Algebra"}; export { problem };

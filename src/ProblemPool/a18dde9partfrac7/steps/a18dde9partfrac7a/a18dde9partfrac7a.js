@@ -1,1 +1,0 @@
-import hints from "./a18dde9partfrac7a-index.js"; const step = {id: "a18dde9partfrac7a", stepAnswer: ["$$\\frac{5}{2\\left(x+3\\right)}+\\frac{5}{2\\left(x-3\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

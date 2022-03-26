@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang27a-index.js"; const step = {id: "afb3ccdlang27a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Simplify $$10+3\\left(6-2\\left(4-2\\right)\\right)-2^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
