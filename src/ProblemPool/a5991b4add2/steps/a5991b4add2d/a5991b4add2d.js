@@ -1,1 +1,0 @@
-import hints from "./a5991b4add2d-index.js"; const step = {id: "a5991b4add2d", stepAnswer: ["trinomial"], problemType: "MultipleChoice", stepTitle: "$$x^2 y^2-2xy+8$$", stepBody: "", choices: ["monomial", "binomial", "trinomial", "polynomial"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a171b3arationals14a-index.js"; const step = {id: "a171b3arationals14a", stepAnswer: ["$$\\frac{x}{3y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4x^2 y}{12x y^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

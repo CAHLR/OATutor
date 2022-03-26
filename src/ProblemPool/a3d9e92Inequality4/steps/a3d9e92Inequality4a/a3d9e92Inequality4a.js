@@ -1,1 +1,0 @@
-import hints from "./a3d9e92Inequality4a-index.js"; const step = {id: "a3d9e92Inequality4a", stepAnswer: ["[-4, -1]"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x \\geq -4$$ and $$x \\leq -1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

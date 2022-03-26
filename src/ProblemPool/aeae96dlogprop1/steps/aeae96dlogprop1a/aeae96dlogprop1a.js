@@ -1,1 +1,0 @@
-import hints from "./aeae96dlogprop1a-index.js"; const step = {id: "aeae96dlogprop1a", stepAnswer: ["log{3}(2)+log{3}(3)+log{3}(5)+log{3}(x)+log{3}(3x+4)"], problemType: "TextBox", stepTitle: "$$\\log_{3}\\left(30x\\left(3x+4\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

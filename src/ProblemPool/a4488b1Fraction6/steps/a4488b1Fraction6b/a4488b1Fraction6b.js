@@ -1,1 +1,0 @@
-import hints from "./a4488b1Fraction6b-index.js"; const step = {id: "a4488b1Fraction6b", stepAnswer: ["$$\\frac{2k}{15}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4k}{5} \\frac{1}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

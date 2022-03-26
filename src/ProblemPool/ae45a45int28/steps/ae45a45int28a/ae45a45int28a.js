@@ -1,1 +1,0 @@
-import hints from "./ae45a45int28a-index.js"; const step = {id: "ae45a45int28a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Translate and Simplify:", stepBody: "The sum of 8 and -12, increased by 3", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

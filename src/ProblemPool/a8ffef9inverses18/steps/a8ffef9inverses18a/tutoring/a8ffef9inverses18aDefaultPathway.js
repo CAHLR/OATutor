@@ -1,1 +1,0 @@
-var hints = [{id: "a8ffef9inverses18a-h1", type: "hint", dependencies: [], title: "GCF", text: "Factor out the GCF [(5a-4)**-1/4]", variabilization: {}}, {id: "a8ffef9inverses18a-h2", type: "hint", dependencies: ["a8ffef9inverses18a-h1"], title: "Simplify", text: "Simplify the term other than the GCF", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./a3d9e92Inequality2a-index.js"; const step = {id: "a3d9e92Inequality2a", stepAnswer: ["[1, 3)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x<3$$ and $$x \\geq 1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

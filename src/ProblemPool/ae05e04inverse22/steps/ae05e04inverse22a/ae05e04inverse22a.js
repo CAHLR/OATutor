@@ -1,1 +1,0 @@
-import hints from "./ae05e04inverse22a-index.js"; const step = {id: "ae05e04inverse22a", stepAnswer: ["x-3"], problemType: "TextBox", stepTitle: "$$f(x)=x+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply11b-index.js"; const step = {id: "aafc2dcMultiply11b", stepAnswer: ["-43"], problemType: "TextBox", stepTitle: "subtract 24 from -19.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-var hints = [{id: "af1a2a0roots18a-h1", type: "hint", dependencies: [], title: "Square and Square Root of a Number", text: "If $$n^2=m$$, then m is the square of n. For example, $$8^2=64$$, so 64 is the square of 8. Alternatively, $$\\sqrt{64}=8$$.", variabilization: {}}, ]; export {hints};

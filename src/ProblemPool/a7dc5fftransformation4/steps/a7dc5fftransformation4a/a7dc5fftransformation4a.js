@@ -1,1 +1,0 @@
-import hints from "./a7dc5fftransformation4a-index.js"; const step = {id: "a7dc5fftransformation4a", stepAnswer: ["Neither"], problemType: "MultipleChoice", stepTitle: "$$g(x)=\\sqrt{x}$$", stepBody: "", choices: ["Even", "Odd", "Neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

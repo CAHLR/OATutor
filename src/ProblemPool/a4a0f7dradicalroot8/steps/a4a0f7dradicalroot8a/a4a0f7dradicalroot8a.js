@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot8a-index.js"; const step = {id: "a4a0f7dradicalroot8a", stepAnswer: ["14.1"], problemType: "TextBox", stepTitle: "Use the formula $$s=\\sqrt{A}$$ to find the length of each side of the patio. Round your answer to the nearest tenth of a foot.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

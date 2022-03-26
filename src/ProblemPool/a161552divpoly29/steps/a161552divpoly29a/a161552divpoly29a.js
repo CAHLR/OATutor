@@ -1,1 +1,0 @@
-import hints from "./a161552divpoly29a-index.js"; const step = {id: "a161552divpoly29a", stepAnswer: ["$$3x^2-11x+24$$ - $$\\frac{45}{x+2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3x^3-5x^2+2x+3}{x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

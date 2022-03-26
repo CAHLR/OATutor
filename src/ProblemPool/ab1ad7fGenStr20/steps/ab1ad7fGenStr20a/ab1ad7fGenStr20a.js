@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr20a-index.js"; const step = {id: "ab1ad7fGenStr20a", stepAnswer: ["$$\\frac{-17}{5}$$"], problemType: "TextBox", stepTitle: "$$6\\left(4-2\\left(7y-1\\right)\\right)=8\\left(13-8y\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

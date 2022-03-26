@@ -1,1 +1,0 @@
-import hints from "./a5c95e8polyzero22a-index.js"; const step = {id: "a5c95e8polyzero22a", stepAnswer: ["x=-1,-3/2,2"], problemType: "MultipleChoice", stepTitle: "$$2x^3+x^2-7x-6=0$$", stepBody: "", choices: ["x=-1,-3/2,2", "$$x=-1, -3, 2$$", "x=-1,2,2/5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse23a-index.js"; const step = {id: "af60b4fellipse23a", stepAnswer: ["(2,4)"], problemType: "MultipleChoice", stepTitle: "$$\\frac{{\\left(x-2\\right)}^2}{64}+\\frac{{\\left(y-4\\right)}^2}{16}=1$$", stepBody: "", choices: ["(0,0)", "(1,1)", "(2,4)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

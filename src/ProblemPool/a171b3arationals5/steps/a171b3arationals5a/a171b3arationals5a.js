@@ -1,1 +1,0 @@
-import hints from "./a171b3arationals5a-index.js"; const step = {id: "a171b3arationals5a", stepAnswer: ["$$\\frac{-2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{y-1}{3y+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

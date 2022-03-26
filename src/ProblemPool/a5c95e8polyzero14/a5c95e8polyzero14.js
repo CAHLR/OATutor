@@ -1,1 +1,0 @@
-import steps from "./a5c95e8polyzero14-index.js"; const problem = {id: "a5c95e8polyzero14", title: "Using the Factor Theorem to Factor a Polynomial", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "5.5 Zeros of Polynomial Functions", courseName: "Openstax: College Algebra"}; export { problem };

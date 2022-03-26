@@ -1,1 +1,0 @@
-var hints = [{id: "af69facexpolog25b-h1", type: "hint", dependencies: [], title: "Substitution", text: "How many minutes are there in three hours? Substitute this in to the model using the exact k value to obtain the population count.", variabilization: {}}, ]; export {hints};

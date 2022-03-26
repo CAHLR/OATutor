@@ -1,1 +1,0 @@
-import hints from "./a3d6a35variation2a-index.js"; const step = {id: "a3d6a35variation2a", stepAnswer: ["$$y=0.33x$$"], problemType: "TextBox", stepTitle: "If y varies directly with x and $$y=3$$ when $$x=10$$, find the equation that relates x and y (in the form $$y=?)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

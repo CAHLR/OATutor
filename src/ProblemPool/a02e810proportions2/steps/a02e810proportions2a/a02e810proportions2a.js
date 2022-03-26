@@ -1,1 +1,0 @@
-import hints from "./a02e810proportions2a-index.js"; const step = {id: "a02e810proportions2a", stepAnswer: ["77"], problemType: "TextBox", stepTitle: "$$\\frac{n}{84}=\\frac{11}{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
