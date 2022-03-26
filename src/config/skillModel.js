@@ -4781,8 +4781,6 @@ const skillModel = {
     a3d9e92Inequality7a: ['solve_compound_inequalities_with_“or”'],
     a3d9e92Inequality8a: ['solve_compound_inequalities_with_“or”'],
     a3d9e92Inequality9a: ['solve_compound_inequalities_with_“or”'],
-    a663ccaintro1a: ['prediction'],
-    a663ccanums1a: ['writing_python_expressions'],
     // Start Inserting
 
 }
