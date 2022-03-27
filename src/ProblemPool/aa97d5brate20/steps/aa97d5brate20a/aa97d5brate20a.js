@@ -1,0 +1,1 @@
+import hints from "./aa97d5brate20a-index.js"; const step = {id: "aa97d5brate20a", stepAnswer: ["$$a+7$$"], problemType: "TextBox", stepTitle: "Find the average rate of change of $$f(x)=x^2+2x-8$$ on the interval [5,a] in simplest forms in terms of a.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
