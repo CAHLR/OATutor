@@ -1,0 +1,1 @@
+import steps from "./ac3d94dProperties23-index.js"; const problem = {id: "ac3d94dProperties23", title: "Use the Commutative Property", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.9 Properties of Real Numbers", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./acf3da9gaussian29a-index.js"; const step = {id: "acf3da9gaussian29a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\left(x+6\\right) \\left(x-3\\right)=-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

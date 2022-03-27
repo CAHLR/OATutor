@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul21a-index.js"; const step = {id: "a870b02DivMul21a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$-4\\left(q-2\\right)-8=24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

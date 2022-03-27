@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly25a-index.js"; const step = {id: "a161552divpoly25a", stepAnswer: ["$$3x^2-2x+\\frac{16}{3}-\\frac{31}{3\\left(3x-1\\right)}$$"], problemType: "TextBox", stepTitle: "$$9x^3-9x^2+18x+5$$ / (3x-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

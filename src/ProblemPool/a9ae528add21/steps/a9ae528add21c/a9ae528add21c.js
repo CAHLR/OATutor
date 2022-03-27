@@ -1,0 +1,1 @@
+import hints from "./a9ae528add21c-index.js"; const step = {id: "a9ae528add21c", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "-3___-7", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};

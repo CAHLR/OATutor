@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot28a-index.js"; const step = {id: "a4a0f7dradicalroot28a", stepAnswer: ["DNE"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{5v-2}+5=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

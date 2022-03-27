@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr9a-index.js"; const step = {id: "ab1ad7fGenStr9a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$7\\left(n-3\\right)-8=-15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr14a-index.js"; const step = {id: "ab1ad7fGenStr14a", stepAnswer: ["$$\\frac{5}{3}$$"], problemType: "TextBox", stepTitle: "$$12-3\\left(4j+3\\right)=-17$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

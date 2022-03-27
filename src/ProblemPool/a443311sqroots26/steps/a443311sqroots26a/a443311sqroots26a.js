@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots26a-index.js"; const step = {id: "a443311sqroots26a", stepAnswer: ["$$\\frac{\\sqrt{2}}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{98}}{14}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a1279cdpowers25-index.js"; const problem = {id: "a1279cdpowers25", title: "Simplify Expressions by Applying Several Properties", body: "Simplify the following expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.2 Use Multiplication Properties of Exponents", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ad3a8eeSolveMixture10-index.js"; const problem = {id: "ad3a8eeSolveMixture10", title: "Maria's Quarters and Pennies", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "3.3 Solve Mixture Applications", courseName: "Openstax: Elementary Algebra"}; export { problem };

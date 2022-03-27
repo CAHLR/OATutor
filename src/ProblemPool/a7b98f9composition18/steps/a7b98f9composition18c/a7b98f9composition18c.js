@@ -1,0 +1,1 @@
+import hints from "./a7b98f9composition18c-index.js"; const step = {id: "a7b98f9composition18c", stepAnswer: ["$$24x^3+48x^2$$"], problemType: "TextBox", stepTitle: "fg", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

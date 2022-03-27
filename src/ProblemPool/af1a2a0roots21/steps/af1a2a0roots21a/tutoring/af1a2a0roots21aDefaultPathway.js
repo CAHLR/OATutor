@@ -1,0 +1,1 @@
+var hints = [{id: "af1a2a0roots21a-h1", type: "hint", dependencies: [], title: "Square Root of a Negative Number", text: "Since $$n^2=m$$ cannot be negative, a negative number does not have a square root.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./aeae96dlogprop13a-index.js"; const step = {id: "aeae96dlogprop13a", stepAnswer: ["$$\\frac{1}{2} \\ln(x)$$"], problemType: "TextBox", stepTitle: "Expand $$\\ln(\\sqrt{x})$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

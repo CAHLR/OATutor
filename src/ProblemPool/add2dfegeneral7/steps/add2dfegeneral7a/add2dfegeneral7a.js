@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral7a-index.js"; const step = {id: "add2dfegeneral7a", stepAnswer: ["$$7\\left(b+3\\right) \\left(b-2\\right)$$"], problemType: "TextBox", stepTitle: "$$7b^2+7b-42$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

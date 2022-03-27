@@ -1,0 +1,1 @@
+import steps from "./a1f32dfFormula1-index.js"; const problem = {id: "a1f32dfFormula1", title: "Jamal's Bicycle Ride", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "2.6 Solve a Formula for a Specific Variable ", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers10a-index.js"; const step = {id: "a1279cdpowers10a", stepAnswer: ["$$48y^4$$"], problemType: "TextBox", stepTitle: "$${\\left(2y\\right)}^3 6y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

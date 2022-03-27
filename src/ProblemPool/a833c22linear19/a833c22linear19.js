@@ -1,0 +1,1 @@
+import steps from "./a833c22linear19-index.js"; const problem = {id: "a833c22linear19", title: "Finding the Equation of a Line Perpendicular to a Given Line Passing through a Point \\n", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org/", lesson: "4.1 Linear Functions", courseName: "Openstax: College Algebra"}; export { problem };

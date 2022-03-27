@@ -1,0 +1,1 @@
+import hints from "./a9ae528add5a-index.js"; const step = {id: "a9ae528add5a", stepAnswer: ["-28"], problemType: "TextBox", stepTitle: "$$19+\\left(-47\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

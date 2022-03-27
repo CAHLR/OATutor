@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads26a-index.js"; const step = {id: "a2ef97dGrphingQuads26a", stepAnswer: ["$$x=1$$"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)+2x+5$$", stepBody: "Find the axis of symmmetry. Input your answer as $$x=(axis$$ of symmetry).", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

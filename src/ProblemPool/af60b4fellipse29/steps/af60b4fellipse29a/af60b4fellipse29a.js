@@ -1,0 +1,1 @@
+import hints from "./af60b4fellipse29a-index.js"; const step = {id: "af60b4fellipse29a", stepAnswer: ["$$9\\pi$$"], problemType: "MultipleChoice", stepTitle: "$$9x^2-54x+9y^2-54y+81=0$$", stepBody: "", choices: ["$$4\\pi$$", "$$9\\pi$$", "$$12\\pi$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

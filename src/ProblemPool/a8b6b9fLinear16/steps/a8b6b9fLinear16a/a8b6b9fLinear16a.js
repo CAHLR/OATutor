@@ -1,0 +1,1 @@
+import hints from "./a8b6b9fLinear16a-index.js"; const step = {id: "a8b6b9fLinear16a", stepAnswer: ["TRUE"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{5}{3}$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

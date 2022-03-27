@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot25a-index.js"; const step = {id: "a4a0f7dradicalroot25a", stepAnswer: ["$$m=3.5$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{4m+2}+2=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

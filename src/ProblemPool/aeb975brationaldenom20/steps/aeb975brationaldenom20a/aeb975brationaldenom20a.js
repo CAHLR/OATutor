@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom20a-index.js"; const step = {id: "aeb975brationaldenom20a", stepAnswer: ["$$\\frac{4b+5a}{30a^2 b^2}$$"], problemType: "TextBox", stepTitle: "Add $$\\frac{2}{15a^2 b}+\\frac{5}{6{ab}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

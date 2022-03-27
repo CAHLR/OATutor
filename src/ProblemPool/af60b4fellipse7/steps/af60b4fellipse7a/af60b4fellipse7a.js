@@ -1,0 +1,1 @@
+import hints from "./af60b4fellipse7a-index.js"; const step = {id: "af60b4fellipse7a", stepAnswer: ["$$\\frac{{\\left(x-5\\right)}^2}{9}+\\frac{{\\left(y+2\\right)}^2}{4}=1$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(x-5\\right)}^2}{9}+\\frac{{\\left(y+2\\right)}^2}{4}=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

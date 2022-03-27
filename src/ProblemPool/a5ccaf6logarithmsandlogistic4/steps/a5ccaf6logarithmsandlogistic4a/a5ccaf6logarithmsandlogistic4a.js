@@ -1,0 +1,1 @@
+import hints from "./a5ccaf6logarithmsandlogistic4a-index.js"; const step = {id: "a5ccaf6logarithmsandlogistic4a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What was the initial population of koi?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

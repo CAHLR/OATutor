@@ -1,0 +1,1 @@
+import steps from "./ad37b31probability6-index.js"; const problem = {id: "ad37b31probability6", title: "Computing the Probability of the Union of Mutually Exclusive Events", body: "A card is drawn from a standard deck.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "9.7 Probability", courseName: "Openstax: College Algebra"}; export { problem };
