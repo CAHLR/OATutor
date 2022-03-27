@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots27a-index.js"; const step = {id: "a443311sqroots27a", stepAnswer: ["$$\\frac{1+\\sqrt{5}}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5+\\sqrt{125}}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a372017cramer12a-index.js"; const step = {id: "a372017cramer12a", stepAnswer: ["(1/2,1/3)"], problemType: "TextBox", stepTitle: "$$6x-3y=2$$ $$-8x+9y=-1$$", stepBody: "Enter your solution as a coordinate pair.", answerType: "string", hints: hints, variabilization: {}}; export {step};

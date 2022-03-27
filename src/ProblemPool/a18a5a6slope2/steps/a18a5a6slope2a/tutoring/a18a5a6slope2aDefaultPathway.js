@@ -1,0 +1,1 @@
+var hints = [{id: "a18a5a6slope2a-h1", type: "hint", dependencies: [], title: "Definition of the Slope of a Line", text: "The slope of a line is $$m=\\frac{rise}{run}$$. The rise measures the vertical change and the run measures the horizontal change between two points on the line.", variabilization: {}}, ]; export {hints};

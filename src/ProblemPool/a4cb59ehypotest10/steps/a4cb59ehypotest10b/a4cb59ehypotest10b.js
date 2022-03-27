@@ -1,0 +1,1 @@
+import hints from "./a4cb59ehypotest10b-index.js"; const step = {id: "a4cb59ehypotest10b", stepAnswer: ["1.5"], problemType: "MultipleChoice", stepTitle: "Calculate σ.", stepBody: "", choices: ["2.5", "3", "1.8", "1.5", "26"], answerType: "string", hints: hints, variabilization: {}}; export {step};

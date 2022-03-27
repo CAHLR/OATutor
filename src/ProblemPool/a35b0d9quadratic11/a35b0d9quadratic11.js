@@ -1,0 +1,1 @@
+import steps from "./a35b0d9quadratic11-index.js"; const problem = {id: "a35b0d9quadratic11", title: "Finding the Intercepts of a Quadratic Equation", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "5.1 Quadratic Functions", courseName: "Openstax: College Algebra"}; export { problem };

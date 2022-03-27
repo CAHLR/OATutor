@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties8b-index.js"; const step = {id: "ac3d94dProperties8b", stepAnswer: ["$$\\frac{-10}{11}$$"], problemType: "TextBox", stepTitle: "-1.1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

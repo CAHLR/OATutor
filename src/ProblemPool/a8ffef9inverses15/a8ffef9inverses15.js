@@ -1,0 +1,1 @@
+import steps from "./a8ffef9inverses15-index.js"; const problem = {id: "a8ffef9inverses15", title: "Factoring a Difference of Cubes", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.7 Inverses and Radical Functions", courseName: "Openstax: College Algebra"}; export { problem };

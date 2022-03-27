@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers24a-index.js"; const step = {id: "a1279cdpowers24a", stepAnswer: ["$$125w^3 x^3$$"], problemType: "TextBox", stepTitle: "$${\\left(5w x\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

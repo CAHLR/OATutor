@@ -1,0 +1,1 @@
+import steps from "./a3b09a3binomseq16-index.js"; const problem = {id: "a3b09a3binomseq16", title: "Evaluating the Binomial Coefficient", body: "Evaluate the binomial coefficient:", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "9.6 Binomial Theorem", courseName: "Openstax: College Algebra"}; export { problem };

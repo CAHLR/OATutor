@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers4c-index.js"; const step = {id: "a10b60arealnumbers4c", stepAnswer: ["$$|p|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{p^4}$$", stepBody: "$$\\sqrt[4]{p^4}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

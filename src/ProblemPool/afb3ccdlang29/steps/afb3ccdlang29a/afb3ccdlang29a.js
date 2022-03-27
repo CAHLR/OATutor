@@ -1,0 +1,1 @@
+import hints from "./afb3ccdlang29a-index.js"; const step = {id: "afb3ccdlang29a", stepAnswer: ["243"], problemType: "TextBox", stepTitle: "What is $$x^5$$ when $$x=3$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

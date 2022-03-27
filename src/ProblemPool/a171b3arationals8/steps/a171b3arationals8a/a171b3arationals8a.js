@@ -1,0 +1,1 @@
+import hints from "./a171b3arationals8a-index.js"; const step = {id: "a171b3arationals8a", stepAnswer: ["$$\\frac{4}{3}$$"], problemType: "TextBox", stepTitle: "$$x=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

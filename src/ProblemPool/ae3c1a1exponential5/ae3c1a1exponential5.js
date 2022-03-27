@@ -1,0 +1,1 @@
+import steps from "./ae3c1a1exponential5-index.js"; const problem = {id: "ae3c1a1exponential5", title: "Evaluating Exponential Functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.1 Exponential Functions", courseName: "Openstax: College Algebra"}; export { problem };

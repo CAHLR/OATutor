@@ -1,0 +1,1 @@
+import hints from "./afa0cfequadraticeq8a-index.js"; const step = {id: "afa0cfequadraticeq8a", stepAnswer: ["No real solution"], problemType: "MultipleChoice", stepTitle: "$$d^2$$ + 81 $$=$$ 0", stepBody: "", choices: ["8 and -8", "7 and -7", "6 and -6", "No real solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

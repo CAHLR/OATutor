@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula19b-index.js"; const step = {id: "a1f32dfFormula19b", stepAnswer: ["$$r=\\frac{d}{t}$$"], problemType: "MultipleChoice", stepTitle: "Solve for r in general", stepBody: "", choices: ["$$r=\\frac{d}{t}$$", "$$r=\\frac{t}{d}$$", "$$r=dt$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

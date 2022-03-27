@@ -1,0 +1,1 @@
+var hints = [{id: "a1f32dfFormula29a-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate d, we can divide both sides of the equation by pi, which gives us $$d=\\frac{C}{\\pi}$$.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+var hints = [{id: "a833c22linear15a-h1", type: "hint", dependencies: [], title: "Finding the Equation", text: "For any x-value, the y-value is -4. So the equation of the line must be $$y=-4$$.", variabilization: {}}, ]; export {hints};

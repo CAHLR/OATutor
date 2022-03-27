@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe21a-index.js"; const step = {id: "ac0c1d3spe21a", stepAnswer: ["$$16u^6+8u^3+1$$"], problemType: "TextBox", stepTitle: "$${\\left(4u^3+1\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

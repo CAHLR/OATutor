@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula27a-index.js"; const step = {id: "a1f32dfFormula27a", stepAnswer: ["$$y=-6+4x$$"], problemType: "MultipleChoice", stepTitle: "Solve the formula $$-4x+y=-6$$ for y.", stepBody: "", choices: ["$$y=-6-4x$$", "$$y=-6+4x$$", "$$y=-4x+6$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

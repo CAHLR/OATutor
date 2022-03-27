@@ -1,0 +1,1 @@
+import steps from "./aeae96dlogprop2-index.js"; const problem = {id: "aeae96dlogprop2", title: "Using the Product Rule for Logarithms", body: "Expand the logarithm.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "6.5 Logarithmic Properties", courseName: "Openstax: College Algebra"}; export { problem };

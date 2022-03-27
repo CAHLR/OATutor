@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog18a-index.js"; const step = {id: "a512f5aexplog18a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Solve $$5^{2x}=5^{3x+2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "ae3c1a1exponential26a-h1", type: "hint", dependencies: [], title: "Value of the Account in the Equation", text: "The value of the account is A.", variabilization: {}}, ]; export {hints};

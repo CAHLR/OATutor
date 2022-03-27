@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties25a-index.js"; const step = {id: "ac3d94dProperties25a", stepAnswer: ["$$3x+12$$"], problemType: "TextBox", stepTitle: "$$3\\left(x+4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

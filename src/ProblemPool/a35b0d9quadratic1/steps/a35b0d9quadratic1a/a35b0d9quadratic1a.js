@@ -1,0 +1,1 @@
+import hints from "./a35b0d9quadratic1a-index.js"; const step = {id: "a35b0d9quadratic1a", stepAnswer: ["(3,1)"], problemType: "MultipleChoice", stepTitle: "Determine the vertex of the parabola shown.", stepBody: "", choices: ["(0,6)", "(3,1)", "(4,2)", "(1,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
