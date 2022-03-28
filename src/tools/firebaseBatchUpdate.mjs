@@ -6,26 +6,53 @@ import fs from "fs";
 import { to } from "await-to-js";
 import { EOL } from "os";
 import chalk from "chalk";
+import path, { dirname } from "path"
+import { fileURLToPath } from "url";
+import { createRequire } from "module";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const require = createRequire(import.meta.url)
 
 config({
     path: './.env.local'
 });
 
+/**
+ * Selector for the Firebase query.
+ * @param collectionRef
+ * @return {*}
+ */
 const selector = (collectionRef) => {
-    return collectionRef.where("hintIsCorrect", "==", false)
+    return collectionRef.orderBy("learningObjectives")
 };
 
+/**
+ * Filters documents based on their field values, true to keep.
+ * @param document
+ * @return {boolean}
+ */
 const filter = (document) => {
-    return document.eventType !== "hintScaffoldLog"
-    // return true
+    // return document.eventType !== "hintScaffoldLog"
+    return true
 }
 
-const update = () => ({
-    hintIsCorrect: null
-});
+const mapping = getProblemIdMapping()
+
+/**
+ * The update object.
+ * @param document
+ * @return {{[key: string]: any}}
+ */
+const update = (document) => {
+    return {
+        learningObjectives: admin.firestore.FieldValue.delete()
+    };
+};
 
 ;(async () => {
-    let err, _spinner = {}, remoteCollections, _, documentRefs;
+    let err, _spinner = {}, remoteCollections, _, documents;
     [err, remoteCollections] = await to(initFirebase(_spinner));
     if (err) {
         _spinner.spinner.fail()
@@ -50,7 +77,7 @@ const update = () => ({
         return
     }
 
-    [err, documentRefs] = await to(getDocumentRefs(_spinner, collectionRefs));
+    [err, documents] = await to(getDocuments(_spinner, collectionRefs));
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -58,7 +85,7 @@ const update = () => ({
         return
     }
 
-    if(documentRefs.length === 0){
+    if (documents.length === 0) {
         console.log("No documents matched the selector")
         return
     }
@@ -66,7 +93,7 @@ const update = () => ({
     const { confirmation } = await prompts({
         type: 'confirm',
         name: 'confirmation',
-        message: `Confirm update of ${documentRefs.length} documents?`,
+        message: `Confirm update of ${documents.length} documents?`,
         initial: false,
     });
 
@@ -75,7 +102,7 @@ const update = () => ({
         return
     }
 
-    [err, _] = await to(updateDocuments(_spinner, documentRefs))
+    [err, _] = await to(updateDocuments(_spinner, documents))
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -113,31 +140,42 @@ async function initFirebase(_spinner) {
     return remoteCollections
 }
 
-async function getDocumentRefs(_spinner, collectionRefs) {
+async function getDocuments(_spinner, collectionRefs) {
     const spinner = ora('Getting document ref(s)').start()
     _spinner.spinner = spinner
 
-    const documentRefs = []
+    const documents = []
     await Promise.all(collectionRefs.map(async collectionRef => {
         const snapshot = await selector(collectionRef).get()
-        documentRefs.push(...snapshot.docs.filter(doc => filter(doc.data())).map(doc => doc.ref))
+        documents.push(...snapshot.docs.filter(doc => filter(doc.data())).map(doc => ({
+            documentRef: doc.ref,
+            documentData: doc.data()
+        })))
     }))
 
     spinner.succeed()
 
-    return documentRefs
+    return documents
 }
 
 
-async function updateDocuments(_spinner, documentRefs) {
+async function updateDocuments(_spinner, documents) {
     const spinner = ora('Updating document(s)').start()
     _spinner.spinner = spinner
 
-    await Promise.all(documentRefs.map(async documentRef => {
-        await documentRef.update(update())
+    await Promise.all(documents.map(async ({ documentRef, documentData }) => {
+        await documentRef.update(update(documentData))
     }))
 
     spinner.succeed()
 
     return true
+}
+
+function getProblemIdMapping() {
+    const poolFile = require(path.join(__dirname, "..", "generated", "poolFile.json"))
+    if (!Array.isArray(poolFile)) {
+        throw new Error()
+    }
+    return Object.fromEntries(poolFile.map(obj => ([obj.id, obj])))
 }
