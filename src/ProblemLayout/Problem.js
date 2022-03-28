@@ -79,6 +79,8 @@ class Problem extends React.Component {
 
     updateCanvas = async (mastery, components) => {
         if (this.context.jwt) {
+            console.debug('updating canvas with problem score')
+
             let err, response;
             [err, response] = await to(fetch(`${MIDDLEWARE_URL}/postScore`, {
                 method: 'POST',
@@ -195,7 +197,6 @@ class Problem extends React.Component {
                 relevantKc[x] = this.bktParams[x].probMastery
             });
 
-            console.debug('updating canvas with problem score')
             this.updateCanvas(score, relevantKc);
         }
         this.stepStates[cardIndex] = isCorrect;
