@@ -166,13 +166,13 @@ class Firebase {
         return this.writeData("mouseMovement", data);
     }
 
-    startedProblem(problemID, courseName, lesson, learningObjectives) {
+    startedProblem(problemID, courseName, lesson, lessonObjectives) {
         console.debug(`Logging that the problem has been started (${problemID})`)
         const data = {
             problemID,
             Content: courseName,
             lesson,
-            learningObjectives
+            lessonObjectives
         };
         return this.writeData(problemStartLogOutput, data);
     }
