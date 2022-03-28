@@ -94,7 +94,7 @@ class Firebase {
         )
     }
 
-    log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson) {
+    log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
         console.debug("trying to log hint: ", hint)
         if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
             hintsFinished = hintsFinished.map(step => step.join(", "))
@@ -113,18 +113,19 @@ class Firebase {
             hintsFinished,
             variabilization,
             lesson,
+            Content: courseName,
             knowledgeComponents: step?.knowledgeComponents
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
 
-    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson) {
+    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson, courseName) {
         console.debug("step", step)
         const data = {
             eventType: "hintScaffoldLog",
             problemID,
-            stepID: step.id,
-            hintID: hint.id,
+            stepID: step?.id,
+            hintID: hint?.id,
             input: null,
             correctAnswer: null,
             isCorrect: null,
@@ -133,6 +134,7 @@ class Firebase {
             hintIsCorrect: isCorrect,
             hintsFinished,
             variabilization,
+            Content: courseName,
             lesson,
             knowledgeComponents: step?.knowledgeComponents
         };
