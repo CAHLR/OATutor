@@ -1,1 +1,0 @@
-import hints from "./a975ae1MultDivInts6b-index.js"; const step = {id: "a975ae1MultDivInts6b", stepAnswer: ["-23"], problemType: "TextBox", stepTitle: "$$\\frac{-115}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
