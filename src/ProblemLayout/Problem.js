@@ -71,7 +71,7 @@ class Problem extends React.Component {
             return <Element name={index.toString()} key={Math.random()}>
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
                              seed={this.props.seed} problemVars={this.props.problem.variabilization}
-                             lesson={problem.lesson}
+                             lesson={problem.lesson} courseName={problem.courseName}
                 />
             </Element>
         })

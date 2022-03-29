@@ -6,26 +6,81 @@ import fs from "fs";
 import { to } from "await-to-js";
 import { EOL } from "os";
 import chalk from "chalk";
+import path, { dirname } from "path"
+import { fileURLToPath, pathToFileURL } from "url";
+import { createRequire } from "module";
+import util from "util";
+import tempy from 'tempy';
+import { isObject } from "../util/objectEntryTools.mjs";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const require = createRequire(import.meta.url)
+const areadFile = util.promisify(fs.readFile)
 
 config({
     path: './.env.local'
 });
 
+/**
+ * Selector for the Firebase query.
+ * @param collectionRef
+ * @return {*}
+ */
 const selector = (collectionRef) => {
-    return collectionRef.where("hintIsCorrect", "==", false)
+    return collectionRef
 };
 
+/**
+ * Filters documents based on their field values, true to keep.
+ * @param document
+ * @return {boolean}
+ */
 const filter = (document) => {
-    return document.eventType !== "hintScaffoldLog"
+    return !isObject(document.lessonObjectives)
+        || Object.keys(document.lessonObjectives).length === 0 || document.lessonObjectives === "n/a"
+        || document.lesson == null || document.lesson === "n/a"
+        || document.Content == null || document.Content === "n/a"
+        || document.learningObjectives !== undefined
     // return true
 }
 
-const update = () => ({
-    hintIsCorrect: null
-});
+const problemMapping = getProblemIdMapping()
+const courseMapping = await getCourseMapping()
+
+/**
+ * The update object.
+ * @param document
+ * @return {{[key: string]: any}}
+ */
+const update = (document) => {
+    const { problemID } = document
+    const { lesson = "n/a", courseName = "n/a" } = problemMapping[problemID] || {}
+    if (!lesson || !courseName || lesson === "n/a" || courseName === "n/a") {
+        console.error(`no lesson or courseName found for ${problemID}`)
+    }
+    const { lessons = [] } = courseMapping[courseName] || {}
+    if (lessons.length === 0) {
+        console.error(`no lessons found for ${problemID}, ${courseName}, ${lesson}`)
+    }
+    const lessonObjectives = lessons.find(_lesson => {
+        return `${_lesson.name.trim()}${_lesson.topics ? ` ${_lesson.topics.trim()}` : ''}` === `Lesson ${lesson.trim().replace(/ {2,}/g, " ")}`;
+    })?.learningObjectives || "n/a"
+    if (!lessonObjectives || lessonObjectives === "n/a") {
+        console.error(`no lesson objectives found for ${problemID}, |${courseName}|, |${lesson}|`)
+    }
+
+    return {
+        lessonObjectives,
+        lesson,
+        Content: courseName,
+        learningObjectives: admin.firestore.FieldValue.delete()
+    };
+};
 
 ;(async () => {
-    let err, _spinner = {}, remoteCollections, _, documentRefs;
+    let err, _spinner = {}, remoteCollections, _, documentSnapshots;
     [err, remoteCollections] = await to(initFirebase(_spinner));
     if (err) {
         _spinner.spinner.fail()
@@ -38,19 +93,45 @@ const update = () => ({
     console.log(`Additional Filter:${EOL}${chalk.gray(filter.toString())}`)
     console.log(`Update Object:${EOL}${chalk.gray(update.toString())}`)
 
-    const { collectionRefs } = await prompts({
-        type: 'autocompleteMultiselect',
-        name: 'collectionRefs',
-        message: 'Which collection to run this update on?',
-        choices: remoteCollections.map(collection => ({ title: collection.name, value: collection.ref }))
-    });
+    const { collectionRefs, useSampling, sampleMode, numSamples } = await prompts([
+        {
+            type: 'autocompleteMultiselect',
+            name: 'collectionRefs',
+            message: 'Which collection to run this update on?',
+            choices: remoteCollections.map(collection => ({ title: collection.name, value: collection.ref }))
+        },
+        {
+            type: prev => prev.length === 1 && 'toggle',
+            name: 'useSampling',
+            message: 'Only update sampled documents?',
+            initial: false
+        },
+        {
+            type: prev => prev && 'select',
+            name: 'sampleMode',
+            choices: [
+                { title: "uniform", value: "uniform" }, { title: "random", value: "random" }
+            ]
+        },
+        {
+            type: prev => prev && 'number',
+            name: 'numSamples',
+            initial: 100,
+            min: 2,
+            max: 1000
+        }
+    ])
 
     if (!Array.isArray(collectionRefs) || collectionRefs.length === 0) {
         console.log("Exiting program.")
         return
     }
 
-    [err, documentRefs] = await to(getDocumentRefs(_spinner, collectionRefs));
+    if (useSampling) {
+        [err, documentSnapshots] = await to(sampleCollection(collectionRefs[0], numSamples, sampleMode));
+    } else {
+        [err, documentSnapshots] = await to(getDocuments(_spinner, collectionRefs));
+    }
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -58,7 +139,7 @@ const update = () => ({
         return
     }
 
-    if(documentRefs.length === 0){
+    if (documentSnapshots.length === 0) {
         console.log("No documents matched the selector")
         return
     }
@@ -66,7 +147,7 @@ const update = () => ({
     const { confirmation } = await prompts({
         type: 'confirm',
         name: 'confirmation',
-        message: `Confirm update of ${documentRefs.length} documents?`,
+        message: `Confirm update of ${documentSnapshots.length} documents?`,
         initial: false,
     });
 
@@ -75,7 +156,7 @@ const update = () => ({
         return
     }
 
-    [err, _] = await to(updateDocuments(_spinner, documentRefs))
+    [err, _] = await to(updateDocuments(_spinner, documentSnapshots))
     if (err) {
         _spinner.spinner.fail()
         console.debug("error log: ", err)
@@ -113,31 +194,96 @@ async function initFirebase(_spinner) {
     return remoteCollections
 }
 
-async function getDocumentRefs(_spinner, collectionRefs) {
+/**
+ *
+ * @return {Promise<FirebaseFirestore.DocumentSnapshot[]>}
+ * @param {FirebaseFirestore.CollectionReference[]} collectionRefs
+ */
+async function getDocuments(_spinner, collectionRefs) {
     const spinner = ora('Getting document ref(s)').start()
     _spinner.spinner = spinner
 
-    const documentRefs = []
+    const documents = []
     await Promise.all(collectionRefs.map(async collectionRef => {
         const snapshot = await selector(collectionRef).get()
-        documentRefs.push(...snapshot.docs.filter(doc => filter(doc.data())).map(doc => doc.ref))
+        documents.push(...snapshot.docs)
     }))
 
     spinner.succeed()
 
-    return documentRefs
+    return documents
 }
 
-
-async function updateDocuments(_spinner, documentRefs) {
+/**
+ *
+ * @param documents {FirebaseFirestore.DocumentSnapshot[]}
+ */
+async function updateDocuments(_spinner, documents) {
     const spinner = ora('Updating document(s)').start()
     _spinner.spinner = spinner
 
-    await Promise.all(documentRefs.map(async documentRef => {
-        await documentRef.update(update())
+    await Promise.all(documents.map(async (snapshot) => {
+        const documentRef = snapshot.ref
+        const documentData = snapshot.data()
+        await documentRef.update(update(documentData))
     }))
 
     spinner.succeed()
 
     return true
+}
+
+function getProblemIdMapping() {
+    const poolFile = require(path.join(__dirname, "..", "generated", "poolFile.json"))
+    if (!Array.isArray(poolFile)) {
+        throw new Error()
+    }
+    return Object.fromEntries(poolFile.map(obj => ([obj.id, obj])))
+}
+
+async function getCourseMapping() {
+    const coursePlanFile = await areadFile(path.join(__dirname, "..", "config", "coursePlans.js"))
+    const courseArray = await tempy.write.task(coursePlanFile, async (temporaryPath) => {
+        return (await import(pathToFileURL(temporaryPath))).default
+    }, {
+        extension: "mjs"
+    })
+    if (!Array.isArray(courseArray)) {
+        throw new Error()
+    }
+    return Object.fromEntries(courseArray.map(obj => ([obj.courseName, obj])))
+}
+
+/**
+ *
+ * @param collectionRef {FirebaseFirestore.CollectionReference}
+ * @param n {number} number of samples
+ * @param distribution {("uniform" | "random")}
+ * @return {Promise<FirebaseFirestore.DocumentSnapshot[]>}
+ */
+async function sampleCollection(collectionRef, n, distribution = "uniform") {
+    const firstTsSnapshot = await collectionRef.orderBy("time_stamp", "desc").limit(2).get()
+    const lastTsSnapshot = await collectionRef.orderBy("time_stamp", "asc").limit(2).get()
+    const { time_stamp: firstTs } = firstTsSnapshot.docs[1].data()
+    const { time_stamp: lastTs } = lastTsSnapshot.docs[0].data()
+
+    const timeDistance = lastTs - firstTs
+    const samplePoints = []
+
+    if (distribution === "uniform") {
+        const dTs = timeDistance / (n - 1)
+        for (let i = 0; i < n; i++) {
+            samplePoints.push(firstTs + dTs * i)
+        }
+    } else {
+        samplePoints.push(firstTs)
+        samplePoints.push(lastTs)
+        for (let i = 0; i < n - 2; i++) {
+            samplePoints.push(firstTs + Math.random() * timeDistance)
+        }
+    }
+
+    return await Promise.all(samplePoints.map(async ts => {
+        return (await collectionRef.where("time_stamp", ">=", ts).limit(1).get()).docs[0]
+    }))
 }

@@ -102,7 +102,8 @@ class ProblemCard extends React.Component {
             this.state.hintsFinished,
             "answerStep",
             chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
-            this.props.lesson
+            this.props.lesson,
+            this.props.courseName
         );
 
         if (correctAnswer) {
@@ -166,7 +167,8 @@ class ProblemCard extends React.Component {
                     this.state.hintsFinished,
                     "unlockHint",
                     chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
-                    this.props.lesson
+                    this.props.lesson,
+                    this.props.courseName
                 );
             });
         }
@@ -188,7 +190,8 @@ class ProblemCard extends React.Component {
             correctAnswer,
             this.state.hintsFinished,
             chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
-            this.props.lesson
+            this.props.lesson,
+            this.props.courseName
         )
     }
 
@@ -220,6 +223,7 @@ class ProblemCard extends React.Component {
                                 stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
                                 answerMade={this.props.answerMade}
                                 lesson={this.props.lesson}
+                                courseName={this.props.courseName}
                             />
                             <Spacer/>
                         </div>
