@@ -1,1 +1,0 @@
-import hints from "./a8b6b9fLinear26a-index.js"; const step = {id: "a8b6b9fLinear26a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$\\frac{5}{6} y-\\frac{2}{3}=\\frac{-3}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

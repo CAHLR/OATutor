@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang10a-index.js"; const step = {id: "afb3ccdlang10a", stepAnswer: ["$$4q-7$$"], problemType: "TextBox", stepTitle: "Write an expression for the number of dimes.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
