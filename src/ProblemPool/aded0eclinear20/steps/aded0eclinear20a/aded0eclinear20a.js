@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear20a-index.js"; const step = {id: "aded0eclinear20a", stepAnswer: ["$$u \\leq -13$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$-5u \\geq 65$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
