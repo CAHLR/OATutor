@@ -1,1 +1,0 @@
-import hints from "./af1a2a0roots9a-index.js"; const step = {id: "af1a2a0roots9a", stepAnswer: ["x**3"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^6}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

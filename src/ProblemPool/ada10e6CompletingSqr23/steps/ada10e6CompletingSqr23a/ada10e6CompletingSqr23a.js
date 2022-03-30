@@ -1,1 +1,0 @@
-import hints from "./ada10e6CompletingSqr23a-index.js"; const step = {id: "ada10e6CompletingSqr23a", stepAnswer: ["1 or -5"], problemType: "MultipleChoice", stepTitle: "$$c^2+4c=5$$", stepBody: "", choices: ["1 or -5", "1 or -5I1 or 5I-1 or -5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

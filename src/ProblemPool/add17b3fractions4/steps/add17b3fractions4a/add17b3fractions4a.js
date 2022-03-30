@@ -1,1 +1,0 @@
-import hints from "./add17b3fractions4a-index.js"; const step = {id: "add17b3fractions4a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{3}+\\frac{1}{6}}{\\frac{1}{2}-\\frac{1}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

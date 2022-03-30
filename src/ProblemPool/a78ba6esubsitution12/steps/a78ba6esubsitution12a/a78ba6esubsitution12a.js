@@ -1,1 +1,0 @@
-import hints from "./a78ba6esubsitution12a-index.js"; const step = {id: "a78ba6esubsitution12a", stepAnswer: ["$$\\frac{23}{2}$$"], problemType: "MultipleChoice", stepTitle: "$$x-4y=-4$$, $$-3x+4y=0$$", stepBody: "", choices: ["$$\\frac{53}{2}$$", "$$\\frac{23}{2}$$", "$$\\frac{41}{2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

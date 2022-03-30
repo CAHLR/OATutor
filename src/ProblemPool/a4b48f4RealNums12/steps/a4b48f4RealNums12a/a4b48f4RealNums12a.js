@@ -1,1 +1,0 @@
-import hints from "./a4b48f4RealNums12a-index.js"; const step = {id: "a4b48f4RealNums12a", stepAnswer: ["$$\\frac{11}{25}$$"], problemType: "TextBox", stepTitle: "$$\\frac{17\\frac{11\\frac{6}{17}}{25}}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

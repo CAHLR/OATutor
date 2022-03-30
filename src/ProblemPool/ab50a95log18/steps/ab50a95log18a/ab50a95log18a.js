@@ -1,1 +1,0 @@
-import hints from "./ab50a95log18a-index.js"; const step = {id: "ab50a95log18a", stepAnswer: ["$$a^c=b$$"], problemType: "TextBox", stepTitle: "log base a of b $$=$$ c", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-var hints = [{id: "ab50a95log15a-h1", type: "hint", dependencies: [], title: "Natural Log", text: "Evaluate the natural log using a calculator.", variabilization: {}}, ]; export {hints};

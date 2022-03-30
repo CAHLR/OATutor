@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd27d-index.js"; const step = {id: "a6014eaSubAdd27d", stepAnswer: ["$$y=24$$"], problemType: "TextBox", stepTitle: "$$5(y-6)-4y=-6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

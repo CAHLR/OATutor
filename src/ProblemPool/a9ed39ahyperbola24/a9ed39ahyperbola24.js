@@ -1,1 +1,0 @@
-import steps from "./a9ed39ahyperbola24-index.js"; const problem = {id: "a9ed39ahyperbola24", title: "The Hyperbola", body: "Vertices at (1,1) and (11,1) and one focus at (12,1).", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.2 The Hyperbola", courseName: "Openstax: College Algebra"}; export { problem };

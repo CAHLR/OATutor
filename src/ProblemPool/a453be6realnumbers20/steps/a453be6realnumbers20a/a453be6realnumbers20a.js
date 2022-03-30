@@ -1,1 +1,0 @@
-import hints from "./a453be6realnumbers20a-index.js"; const step = {id: "a453be6realnumbers20a", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "0.18_0.1", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};

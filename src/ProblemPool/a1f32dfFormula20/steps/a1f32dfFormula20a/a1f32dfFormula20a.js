@@ -1,1 +1,0 @@
-import hints from "./a1f32dfFormula20a-index.js"; const step = {id: "a1f32dfFormula20a", stepAnswer: ["70"], problemType: "TextBox", stepTitle: "Solve for r when $$d=420$$ and $$t=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

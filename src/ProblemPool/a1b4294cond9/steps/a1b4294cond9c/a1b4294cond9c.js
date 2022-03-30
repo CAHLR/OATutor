@@ -1,1 +1,0 @@
-import hints from "./a1b4294cond9c-index.js"; const step = {id: "a1b4294cond9c", stepAnswer: ["$$\\frac{2}{7}$$"], problemType: "TextBox", stepTitle: "What is P(B$$\mid$$C) Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

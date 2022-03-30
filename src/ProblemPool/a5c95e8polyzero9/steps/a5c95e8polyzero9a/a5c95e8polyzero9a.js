@@ -1,1 +1,0 @@
-import hints from "./a5c95e8polyzero9a-index.js"; const step = {id: "a5c95e8polyzero9a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{\\left(-3x^2+6x+24\\right)}{x-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

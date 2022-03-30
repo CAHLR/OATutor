@@ -1,1 +1,0 @@
-import hints from "./a1279cdpowers17a-index.js"; const step = {id: "a1279cdpowers17a", stepAnswer: ["$$b^{17}$$"], problemType: "TextBox", stepTitle: "$$b^9 b^8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

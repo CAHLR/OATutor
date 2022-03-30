@@ -1,1 +1,0 @@
-import steps from "./a512f5aexplog20-index.js"; const problem = {id: "a512f5aexplog20", title: "Solving Equations by Rewriting Them to Have a Common Base", body: "Solve for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.6 Exponential and Logarithmic Equations", courseName: "Openstax: College Algebra"}; export { problem };

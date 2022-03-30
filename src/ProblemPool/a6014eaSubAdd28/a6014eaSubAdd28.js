@@ -1,1 +1,0 @@
-import steps from "./a6014eaSubAdd28-index.js"; const problem = {id: "a6014eaSubAdd28", title: "Translate and solve", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.1 Solve Equations Using the Subtraction and Addition Properties of Equality", courseName: "Openstax: Elementary Algebra"}; export { problem };

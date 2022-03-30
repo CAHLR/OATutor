@@ -1,1 +1,0 @@
-import hints from "./af69facexpolog26a-index.js"; const step = {id: "af69facexpolog26a", stepAnswer: ["256"], problemType: "TextBox", stepTitle: "To the nearest whole number, what was the initial population in the culture?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
