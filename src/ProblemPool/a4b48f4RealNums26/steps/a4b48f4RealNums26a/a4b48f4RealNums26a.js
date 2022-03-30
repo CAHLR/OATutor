@@ -1,0 +1,1 @@
+import hints from "./a4b48f4RealNums26a-index.js"; const step = {id: "a4b48f4RealNums26a", stepAnswer: ["$$10p$$"], problemType: "TextBox", stepTitle: "$$12\\frac{5}{6} p$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
