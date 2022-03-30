@@ -1,1 +1,0 @@
-import hints from "./a28722cappquad14a-index.js"; const step = {id: "a28722cappquad14a", stepAnswer: ["18"], problemType: "TextBox", stepTitle: "A triangle with area 45 square inches has a height that is two less than four times the width. Find the height of the triangle.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

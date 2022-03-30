@@ -1,1 +1,0 @@
-import hints from "./a104861trifactor5a-index.js"; const step = {id: "a104861trifactor5a", stepAnswer: ["$${\\left(8y-5\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$64y^2-80y+25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

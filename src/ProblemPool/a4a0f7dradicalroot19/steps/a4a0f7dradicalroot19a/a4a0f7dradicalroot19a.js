@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot19a-index.js"; const step = {id: "a4a0f7dradicalroot19a", stepAnswer: ["$$x=13$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{4x-3}=7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

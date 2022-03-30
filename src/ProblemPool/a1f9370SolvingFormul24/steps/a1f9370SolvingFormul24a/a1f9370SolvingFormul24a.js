@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul24a-index.js"; const step = {id: "a1f9370SolvingFormul24a", stepAnswer: ["$$a=180-b-c$$"], problemType: "TextBox", stepTitle: "$$180=a+b+c$$ for a.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

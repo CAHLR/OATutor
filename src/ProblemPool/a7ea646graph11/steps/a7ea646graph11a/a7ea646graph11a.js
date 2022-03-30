@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph11a-index.js"; const step = {id: "a7ea646graph11a", stepAnswer: ["(0,0),(-5,0),(2,0)"], problemType: "TextBox", stepTitle: "Find the t-intercepts of $$C(t)=4t^4+12t^3-40t^2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

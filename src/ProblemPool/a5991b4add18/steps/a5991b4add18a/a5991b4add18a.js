@@ -1,1 +1,0 @@
-import hints from "./a5991b4add18a-index.js"; const step = {id: "a5991b4add18a", stepAnswer: ["Other"], problemType: "MultipleChoice", stepTitle: "$$2x^5-5x^3-9x^2+3x+4$$", stepBody: "", choices: ["Monomial", "Binomial", "Trinomial", "Other"], answerType: "string", hints: hints, variabilization: {}}; export {step};

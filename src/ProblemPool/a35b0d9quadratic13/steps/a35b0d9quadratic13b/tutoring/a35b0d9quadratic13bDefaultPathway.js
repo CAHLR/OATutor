@@ -1,1 +1,0 @@
-var hints = [{id: "a35b0d9quadratic13b-h1", type: "hint", dependencies: [], title: "Determing the Vertex", text: "The vertex is (h,k). If we use the values of h and k from before, we get the vertex to be (6,-4)", variabilization: {}}, ]; export {hints};

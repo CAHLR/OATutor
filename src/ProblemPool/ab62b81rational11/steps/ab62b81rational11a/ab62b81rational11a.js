@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational11a-index.js"; const step = {id: "ab62b81rational11a", stepAnswer: ["$$x+4$$"], problemType: "TextBox", stepTitle: "$$\\frac{7x+12}{x+3}+\\frac{x^2}{x+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a975ae1MultDivInts2d-index.js"; const step = {id: "a975ae1MultDivInts2d", stepAnswer: ["39"], problemType: "TextBox", stepTitle: "$$3\\times13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

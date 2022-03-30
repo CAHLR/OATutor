@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplyingrationals2b-index.js"; const step = {id: "a6ead19multiplyingrationals2b", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{6\\frac{20}{15}}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

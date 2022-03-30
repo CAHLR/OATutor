@@ -1,1 +1,0 @@
-import hints from "./a870b02DivMul40a-index.js"; const step = {id: "a870b02DivMul40a", stepAnswer: ["$5.83"], problemType: "TextBox", stepTitle: "What is the cost for each person?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

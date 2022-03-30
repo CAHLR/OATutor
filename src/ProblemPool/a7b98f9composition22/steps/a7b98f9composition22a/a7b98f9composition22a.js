@@ -1,1 +1,0 @@
-import hints from "./a7b98f9composition22a-index.js"; const step = {id: "a7b98f9composition22a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "f(g(2))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a5991b4add14a-index.js"; const step = {id: "a5991b4add14a", stepAnswer: ["$$-4a^2+b^2$$"], problemType: "TextBox", stepTitle: "$$2a^2+b^2-6a^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

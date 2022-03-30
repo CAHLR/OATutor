@@ -1,1 +1,0 @@
-import steps from "./a372017cramer23-index.js"; const problem = {id: "a372017cramer23", title: "Using Cramer's Rule to Solve an Inconsistent System", body: "Solve the system using Cramer's Rule.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "7.8 Solving Systems with Cramer's Rule", courseName: "Openstax: College Algebra"}; export { problem };

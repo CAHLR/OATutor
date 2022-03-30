@@ -1,1 +1,0 @@
-import hints from "./a98b1afgraphlog10a-index.js"; const step = {id: "a98b1afgraphlog10a", stepAnswer: ["$$x=\\frac{-1}{3}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

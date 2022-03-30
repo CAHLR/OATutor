@@ -1,1 +1,0 @@
-import hints from "./a3d6a35variation11a-index.js"; const step = {id: "a3d6a35variation11a", stepAnswer: ["$$v=0.67w$$"], problemType: "TextBox", stepTitle: "If v varies directly as w and $$v=8, when$$ $$w=12$$, find the equation that relates v and w (in the form $$v=?)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

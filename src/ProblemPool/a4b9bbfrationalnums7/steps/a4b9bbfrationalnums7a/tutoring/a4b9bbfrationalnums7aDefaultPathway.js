@@ -1,1 +1,0 @@
-var hints = [{id: "a4b9bbfrationalnums7a-h1", type: "hint", dependencies: [], title: "The numerator of the exponent is the exponent of y, 3; the denominator of the exponent is the index of the radical, 2.", text: "", variabilization: {}}, ]; export {hints};

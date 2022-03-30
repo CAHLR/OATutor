@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational12a-index.js"; const step = {id: "ab62b81rational12a", stepAnswer: ["$$n+10$$"], problemType: "TextBox", stepTitle: "$$\\frac{n^2}{n-10}-\\frac{100}{n-10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

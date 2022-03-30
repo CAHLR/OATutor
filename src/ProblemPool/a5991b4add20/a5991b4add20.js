@@ -1,1 +1,0 @@
-import steps from "./a5991b4add20-index.js"; const problem = {id: "a5991b4add20", title: "Identifying Polynomial Type", body: "Identify the type of the polynomial:", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "6.1 Add and Subtract Polynomials", courseName: "Openstax: Elementary Algebra"}; export { problem };

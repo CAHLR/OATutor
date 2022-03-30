@@ -1,1 +1,0 @@
-import hints from "./af1a2a0roots11b-index.js"; const step = {id: "af1a2a0roots11b", stepAnswer: ["b**5"], problemType: "TextBox", stepTitle: "$$\\sqrt{b^{10}}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

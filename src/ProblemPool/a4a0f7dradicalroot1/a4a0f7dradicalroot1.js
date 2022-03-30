@@ -1,1 +1,0 @@
-import steps from "./a4a0f7dradicalroot1-index.js"; const problem = {id: "a4a0f7dradicalroot1", title: "Solve Radical Equation", body: "$$\\sqrt{x+2}$$ $$=$$ x", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "9.6 Solve Equations with Square Roots", courseName: "Openstax: Elementary Algebra"}; export { problem };

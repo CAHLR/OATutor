@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse21a-index.js"; const step = {id: "af60b4fellipse21a", stepAnswer: ["(0,0)"], problemType: "MultipleChoice", stepTitle: "$$\\frac{x^2}{25}+\\frac{y^2}{36}=1$$", stepBody: "", choices: ["(0,0)", "(1,1)", "(2,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

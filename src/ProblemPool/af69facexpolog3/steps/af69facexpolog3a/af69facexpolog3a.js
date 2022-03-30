@@ -1,1 +1,0 @@
-import hints from "./af69facexpolog3a-index.js"; const step = {id: "af69facexpolog3a", stepAnswer: ["13301"], problemType: "TextBox", stepTitle: "To the nearest year, how old is the bone?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse9a-index.js"; const step = {id: "af60b4fellipse9a", stepAnswer: ["$$\\frac{x^2}{{\\left(\\frac{1}{2}\\right)}^2}+\\frac{y^2}{{\\left(\\frac{1}{3}\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$4x^2+9y^2=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a01e792probsolve4a-index.js"; const step = {id: "a01e792probsolve4a", stepAnswer: ["-33,-32,-31"], problemType: "MultipleChoice", stepTitle: "Find three consecutive integers whose sum is -96", stepBody: "", choices: ["-33,-32,-31", "-33,-34,-35", "-32,-33,-34"], answerType: "string", hints: hints, variabilization: {}}; export {step};
