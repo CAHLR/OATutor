@@ -1,1 +1,0 @@
-import hints from "./a2ef97dGrphingQuads25b-index.js"; const step = {id: "a2ef97dGrphingQuads25b", stepAnswer: ["(-5,0)"], problemType: "MultipleChoice", stepTitle: "$$x^2+10x+25$$", stepBody: "Find the vertex.", choices: ["(-5,0)", "(-2,3)", "(-3,2)", "(2,-16)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

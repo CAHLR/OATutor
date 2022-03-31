@@ -1,1 +1,0 @@
-import hints from "./a4b48f4RealNums7a-index.js"; const step = {id: "a4b48f4RealNums7a", stepAnswer: ["-73n"], problemType: "TextBox", stepTitle: "$$-84n+\\left(-73n\\right)+84n$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

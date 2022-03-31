@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot5a-index.js"; const step = {id: "a4a0f7dradicalroot5a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Solve: $$\\sqrt{4z-3}=\\sqrt{3z+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

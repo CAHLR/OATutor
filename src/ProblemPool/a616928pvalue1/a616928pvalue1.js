@@ -1,1 +1,0 @@
-import steps from "./a616928pvalue1-index.js"; const problem = {id: "a616928pvalue1", title: "Grand Prize", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "##Interpreting P-values", courseName: "Data Content"}; export { problem };
