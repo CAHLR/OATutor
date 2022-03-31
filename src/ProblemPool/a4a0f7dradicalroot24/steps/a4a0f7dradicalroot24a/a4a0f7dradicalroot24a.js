@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot24a-index.js"; const step = {id: "a4a0f7dradicalroot24a", stepAnswer: ["$$q=2.6$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{5q+3}-4=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

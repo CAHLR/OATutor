@@ -1,0 +1,1 @@
+import hints from "./add2dfegeneral19a-index.js"; const step = {id: "add2dfegeneral19a", stepAnswer: ["(3x-2)(4x-1)"], problemType: "TextBox", stepTitle: "$$12x^2+11x+2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

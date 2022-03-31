@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts30a-index.js"; const step = {id: "aafbadeintercepts30a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$4x-y=8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

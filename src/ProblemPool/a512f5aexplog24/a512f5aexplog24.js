@@ -1,0 +1,1 @@
+import steps from "./a512f5aexplog24-index.js"; const problem = {id: "a512f5aexplog24", title: "Using Algebra to Solve a Logarithmic Equation #1", body: "Solve for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.6 Exponential and Logarithmic Equations", courseName: "Openstax: College Algebra"}; export { problem };

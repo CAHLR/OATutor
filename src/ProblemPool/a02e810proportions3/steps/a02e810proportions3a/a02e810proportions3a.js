@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions3a-index.js"; const step = {id: "a02e810proportions3a", stepAnswer: ["104"], problemType: "TextBox", stepTitle: "$$\\frac{y}{96}=\\frac{13}{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

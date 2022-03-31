@@ -1,0 +1,1 @@
+import steps from "./af60b4fellipse19-index.js"; const problem = {id: "af60b4fellipse19", title: "Finding Ellipse Characteristics", body: "Find the foci of the ellipse.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.1 The Ellipse", courseName: "Openstax: College Algebra"}; export { problem };

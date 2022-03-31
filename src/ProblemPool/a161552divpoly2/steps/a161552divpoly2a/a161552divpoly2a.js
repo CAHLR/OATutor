@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly2a-index.js"; const step = {id: "a161552divpoly2a", stepAnswer: ["$$2x^2+5x-7+\\frac{1}{3x-2}$$"], problemType: "TextBox", stepTitle: "$$6x^3+11x^2-31x+15$$ by 3x-2", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

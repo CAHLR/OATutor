@@ -1,0 +1,1 @@
+import hints from "./a4488b1Fraction14b-index.js"; const step = {id: "a4488b1Fraction14b", stepAnswer: ["$$\\frac{2a}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3a}{4} \\frac{8}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

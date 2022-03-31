@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving24a-index.js"; const step = {id: "aae6efeSolving24a", stepAnswer: ["54"], problemType: "TextBox", stepTitle: "What number is 45% of 120?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

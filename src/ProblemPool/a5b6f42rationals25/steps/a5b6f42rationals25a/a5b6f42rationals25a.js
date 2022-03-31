@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals25a-index.js"; const step = {id: "a5b6f42rationals25a", stepAnswer: ["(0,-94/12),(sqrt(47),0),(-sqrt(47),0)"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{94-2x^2}{3x^2-12}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

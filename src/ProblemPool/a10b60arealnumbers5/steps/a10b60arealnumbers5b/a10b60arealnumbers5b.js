@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers5b-index.js"; const step = {id: "a10b60arealnumbers5b", stepAnswer: ["$$2\\left(|q^3|\\right)$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{16q^{12}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

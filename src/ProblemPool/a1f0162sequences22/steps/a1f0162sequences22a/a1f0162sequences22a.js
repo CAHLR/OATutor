@@ -1,0 +1,1 @@
+import hints from "./a1f0162sequences22a-index.js"; const step = {id: "a1f0162sequences22a", stepAnswer: ["$$\\frac{5}{6}$$"], problemType: "TextBox", stepTitle: "Write the first term of the sequence defined by the explicit formula a_n=(5n)/((n+2)!)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

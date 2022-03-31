@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe6a-index.js"; const step = {id: "a3c25cbexe6a", stepAnswer: ["(x-1)(x-7)"], problemType: "TextBox", stepTitle: "$$x^2-8x+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

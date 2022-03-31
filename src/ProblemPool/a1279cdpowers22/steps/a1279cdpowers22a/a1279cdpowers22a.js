@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers22a-index.js"; const step = {id: "a1279cdpowers22a", stepAnswer: ["$$81d^2$$"], problemType: "TextBox", stepTitle: "$${\\left(-9d\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

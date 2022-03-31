@@ -1,0 +1,1 @@
+import hints from "./ad37b31probability23a-index.js"; const step = {id: "ad37b31probability23a", stepAnswer: ["$$\\frac{5}{8}$$"], problemType: "TextBox", stepTitle: "Find the probability of tossing either two heads or three heads.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

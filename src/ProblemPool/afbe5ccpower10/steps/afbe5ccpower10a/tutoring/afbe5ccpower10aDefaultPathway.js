@@ -1,0 +1,1 @@
+var hints = [{id: "afbe5ccpower10a-h1", type: "hint", dependencies: [], title: "The degree is 4, so the graph has at most 3 turning points.", text: "", variabilization: {}}, ]; export {hints};

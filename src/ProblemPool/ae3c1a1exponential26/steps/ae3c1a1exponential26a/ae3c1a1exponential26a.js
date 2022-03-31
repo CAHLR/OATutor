@@ -1,0 +1,1 @@
+import hints from "./ae3c1a1exponential26a-index.js"; const step = {id: "ae3c1a1exponential26a", stepAnswer: ["15281.03"], problemType: "TextBox", stepTitle: "What is the value of the account? Round to the hundredths place.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
