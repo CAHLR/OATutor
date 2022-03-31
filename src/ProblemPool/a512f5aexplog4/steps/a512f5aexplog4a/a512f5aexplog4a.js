@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog4a-index.js"; const step = {id: "a512f5aexplog4a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$9^{x-10}$$ $$=$$ 1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

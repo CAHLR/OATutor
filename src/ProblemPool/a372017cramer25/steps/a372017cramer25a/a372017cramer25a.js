@@ -1,0 +1,1 @@
+import hints from "./a372017cramer25a-index.js"; const step = {id: "a372017cramer25a", stepAnswer: ["Inconsistent"], problemType: "MultipleChoice", stepTitle: "$$2x+4y+4z=2;$$ \\n $$3x+7y+7z=-5;$$ \\n $$x+2y+2z=4$$", stepBody: "", choices: ["Consistent", "Inconsistent"], answerType: "string", hints: hints, variabilization: {}}; export {step};

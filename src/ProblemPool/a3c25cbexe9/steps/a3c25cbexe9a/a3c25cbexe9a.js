@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe9a-index.js"; const step = {id: "a3c25cbexe9a", stepAnswer: ["$$\\left(p+7\\right) \\left(p-1\\right)$$"], problemType: "TextBox", stepTitle: "$$n^2+6n-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

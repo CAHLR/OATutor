@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots24a-index.js"; const step = {id: "a443311sqroots24a", stepAnswer: ["$$\\frac{5r}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{75r^3}}{\\sqrt{108r}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

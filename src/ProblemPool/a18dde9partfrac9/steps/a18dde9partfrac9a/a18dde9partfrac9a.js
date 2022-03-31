@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac9a-index.js"; const step = {id: "a18dde9partfrac9a", stepAnswer: ["$$\\frac{9}{5\\left(x+2\\right)}+\\frac{11}{5\\left(x-3\\right)}$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9b0a01SolveGeometry1a-index.js"; const step = {id: "a9b0a01SolveGeometry1a", stepAnswer: ["104"], problemType: "TextBox", stepTitle: "The length of a rectangle is 32 meters and the width is 20 meters. What is the perimeter?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

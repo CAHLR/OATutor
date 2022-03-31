@@ -1,0 +1,1 @@
+import hints from "./a01e792probsolve26a-index.js"; const step = {id: "a01e792probsolve26a", stepAnswer: ["-4,0"], problemType: "TextBox", stepTitle: "One number is eight more than twice another. Their sum is negative four. Find the numbers", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

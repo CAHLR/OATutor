@@ -1,0 +1,1 @@
+import hints from "./a5991b4add4c-index.js"; const step = {id: "a5991b4add4c", stepAnswer: ["polynomial"], problemType: "MultipleChoice", stepTitle: "$$6x^2-3xy+4x-2y+y^2$$", stepBody: "", choices: ["monomial", "binomial", "trinomial", "polynomial"], answerType: "string", hints: hints, variabilization: {}}; export {step};

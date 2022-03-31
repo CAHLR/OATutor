@@ -1,0 +1,1 @@
+import hints from "./ab8b840systems1a-index.js"; const step = {id: "ab8b840systems1a", stepAnswer: ["TRUE"], problemType: "MultipleChoice", stepTitle: "$$x+3y=8$$ $$2x-9=y$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

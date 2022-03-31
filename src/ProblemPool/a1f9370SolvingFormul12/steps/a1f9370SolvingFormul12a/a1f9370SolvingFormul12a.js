@@ -1,0 +1,1 @@
+import hints from "./a1f9370SolvingFormul12a-index.js"; const step = {id: "a1f9370SolvingFormul12a", stepAnswer: ["$$t=\\frac{A-P}{P t}$$"], problemType: "TextBox", stepTitle: "$$A=P+P r t$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

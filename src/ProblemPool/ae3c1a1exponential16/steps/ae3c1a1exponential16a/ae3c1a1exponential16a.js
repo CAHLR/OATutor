@@ -1,0 +1,1 @@
+import hints from "./ae3c1a1exponential16a-index.js"; const step = {id: "ae3c1a1exponential16a", stepAnswer: ["483.8146"], problemType: "TextBox", stepTitle: "$$f(x)=1.2e^{2x}-0.3$$, for f(3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

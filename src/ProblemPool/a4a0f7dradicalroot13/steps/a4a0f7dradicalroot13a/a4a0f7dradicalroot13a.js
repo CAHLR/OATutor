@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot13a-index.js"; const step = {id: "a4a0f7dradicalroot13a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "Solve: $$\\sqrt{3x-5}=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

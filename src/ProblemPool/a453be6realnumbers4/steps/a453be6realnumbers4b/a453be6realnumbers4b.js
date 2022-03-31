@@ -1,0 +1,1 @@
+import hints from "./a453be6realnumbers4b-index.js"; const step = {id: "a453be6realnumbers4b", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "$$-\\sqrt{144}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

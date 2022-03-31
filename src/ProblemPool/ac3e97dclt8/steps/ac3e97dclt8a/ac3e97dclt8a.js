@@ -1,0 +1,1 @@
+import hints from "./ac3e97dclt8a-index.js"; const step = {id: "ac3e97dclt8a", stepAnswer: ["3.2"], problemType: "TextBox", stepTitle: "", stepBody: "The 90th percentile for the mean stress score for the 75 students.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

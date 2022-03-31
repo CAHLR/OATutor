@@ -1,0 +1,1 @@
+import hints from "./a60a373solverat28a-index.js"; const step = {id: "a60a373solverat28a", stepAnswer: ["$$r=-6$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{r+3}=\\frac{4}{2} r$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

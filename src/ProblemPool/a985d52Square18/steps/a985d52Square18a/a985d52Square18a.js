@@ -1,0 +1,1 @@
+import hints from "./a985d52Square18a-index.js"; const step = {id: "a985d52Square18a", stepAnswer: ["3 and 0.5"], problemType: "MultipleChoice", stepTitle: "$$2p^2-7p+3=0$$", stepBody: "", choices: ["5 and 2", "-1 and 4", "3 and 0.5", "1 and 5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

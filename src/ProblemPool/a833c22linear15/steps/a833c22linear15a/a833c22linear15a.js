@@ -1,0 +1,1 @@
+import hints from "./a833c22linear15a-index.js"; const step = {id: "a833c22linear15a", stepAnswer: ["$$y=-4$$"], problemType: "TextBox", stepTitle: "Write the equation of the line graphed.", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

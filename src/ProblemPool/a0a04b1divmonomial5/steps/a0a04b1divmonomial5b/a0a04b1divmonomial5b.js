@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial5b-index.js"; const step = {id: "a0a04b1divmonomial5b", stepAnswer: ["$$\\frac{1}{{12}^{15}}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{12}^{15}}{{12}^{30}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

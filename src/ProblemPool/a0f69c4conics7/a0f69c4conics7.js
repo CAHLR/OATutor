@@ -1,0 +1,1 @@
+import steps from "./a0f69c4conics7-index.js"; const problem = {id: "a0f69c4conics7", title: "Determine parts of the graph", body: "Find the focus of the parabola.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.5 Conic Sections in Polar Coordinates", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac24a-index.js"; const step = {id: "a18dde9partfrac24a", stepAnswer: ["$$\\frac{1}{5} x-\\frac{1}{3\\left(3x-5\\right)}+\\frac{20}{3{\\left(3x+5\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4x^2+55x+25}{5{x\\left(3x+5\\right)}^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
