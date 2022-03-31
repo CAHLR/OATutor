@@ -1,1 +1,0 @@
-import hints from "./a1b4294cond2b-index.js"; const step = {id: "a1b4294cond2b", stepAnswer: ["$$\\frac{7}{15}$$"], problemType: "TextBox", stepTitle: "What is the probability that exactly one marble is black? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

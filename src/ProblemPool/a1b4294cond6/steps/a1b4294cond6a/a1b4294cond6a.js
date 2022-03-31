@@ -1,1 +1,0 @@
-import hints from "./a1b4294cond6a-index.js"; const step = {id: "a1b4294cond6a", stepAnswer: ["$$\\frac{40}{221}$$"], problemType: "TextBox", stepTitle: "Find the probability of drawing a face card first and a nonface card second. Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

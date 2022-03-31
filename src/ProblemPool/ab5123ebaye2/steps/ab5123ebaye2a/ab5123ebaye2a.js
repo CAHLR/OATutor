@@ -1,1 +1,0 @@
-import hints from "./ab5123ebaye2a-index.js"; const step = {id: "ab5123ebaye2a", stepAnswer: ["0.125"], problemType: "TextBox", stepTitle: "What is the probability that it will rain, given that it is cloudy today? Round your answer to three decimal places", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

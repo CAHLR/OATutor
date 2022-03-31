@@ -1,1 +1,0 @@
-import steps from "./aae6efeSolving21-index.js"; const problem = {id: "aae6efeSolving21", title: "Solve Number Word Problems", body: "Find the smallest such number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.2 Use a Problem Solving Strategy", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

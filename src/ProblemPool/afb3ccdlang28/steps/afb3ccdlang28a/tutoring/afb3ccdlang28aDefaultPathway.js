@@ -1,1 +1,0 @@
-var hints = [{id: "afb3ccdlang28a-h1", type: "hint", dependencies: [], title: "Plugging In For x", text: "if $$x=2$$ in $$x^6$$, then we have $$2^6$$", variabilization: {}}, {id: "afb3ccdlang28a-h2", type: "hint", dependencies: ["afb3ccdlang28a-h1"], title: "Simplifying the Expression", text: "$$2^6=64$$", variabilization: {}}, ]; export {hints};

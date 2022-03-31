@@ -1,1 +1,0 @@
-import hints from "./ada10e6CompletingSqr26a-index.js"; const step = {id: "ada10e6CompletingSqr26a", stepAnswer: ["No Real Solution"], problemType: "MultipleChoice", stepTitle: "$$x^2+4x=-21$$", stepBody: "", choices: ["No Real Solution", "$$\\sqrt{21}$$", "$$-\\sqrt{21}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

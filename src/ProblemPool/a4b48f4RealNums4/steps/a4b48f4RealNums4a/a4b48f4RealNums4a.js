@@ -1,1 +1,0 @@
-import hints from "./a4b48f4RealNums4a-index.js"; const step = {id: "a4b48f4RealNums4a", stepAnswer: ["$$\\frac{18}{13}$$"], problemType: "TextBox", stepTitle: "(5/13 + 3/4)+1/4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

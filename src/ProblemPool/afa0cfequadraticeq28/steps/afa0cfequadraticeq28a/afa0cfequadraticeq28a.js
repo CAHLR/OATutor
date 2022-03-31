@@ -1,1 +1,0 @@
-import hints from "./afa0cfequadraticeq28a-index.js"; const step = {id: "afa0cfequadraticeq28a", stepAnswer: ["4 or -4"], problemType: "MultipleChoice", stepTitle: "$$2r^2=32$$", stepBody: "", choices: ["5 or -5", "3 or -3", "4 or -4"], answerType: "string", hints: hints, variabilization: {}}; export {step};

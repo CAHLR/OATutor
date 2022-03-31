@@ -1,1 +1,0 @@
-import hints from "./a3d6a35variation6a-index.js"; const step = {id: "a3d6a35variation6a", stepAnswer: ["$$v=3w$$"], problemType: "TextBox", stepTitle: "If v varies directly as w and $$v=24$$ when $$w=8$$, find the equation that relates v and w (in the form $$v=?)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
