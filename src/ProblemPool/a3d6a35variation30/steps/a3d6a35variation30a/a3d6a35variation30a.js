@@ -1,1 +1,0 @@
-import hints from "./a3d6a35variation30a-index.js"; const step = {id: "a3d6a35variation30a", stepAnswer: ["$$y=\\frac{20}{x}$$"], problemType: "TextBox", stepTitle: "Y varies inversely with x, and $$y=5$$ when $$x=4$$. Write your answer in the form $$y=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

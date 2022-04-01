@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot14a-index.js"; const step = {id: "a4a0f7dradicalroot14a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "Solve: $$\\sqrt{3p+3}+3=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

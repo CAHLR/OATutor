@@ -1,1 +1,0 @@
-import hints from "./abd4034poly14a-index.js"; const step = {id: "abd4034poly14a", stepAnswer: ["$$7a-12+\\frac{11}{a}$$"], problemType: "TextBox", stepTitle: "$$\\frac{63a^3+108a^2+99a}{9a^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

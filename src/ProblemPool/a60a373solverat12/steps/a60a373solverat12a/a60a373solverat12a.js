@@ -1,1 +1,0 @@
-import hints from "./a60a373solverat12a-index.js"; const step = {id: "a60a373solverat12a", stepAnswer: ["$$x=3$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{x+4}=\\frac{32}{x^2-16}+5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

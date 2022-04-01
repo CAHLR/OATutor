@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational10a-index.js"; const step = {id: "ab62b81rational10a", stepAnswer: ["$$\\frac{x+1}{x-2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{x-2}+\\frac{1}{x-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

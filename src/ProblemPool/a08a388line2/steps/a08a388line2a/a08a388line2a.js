@@ -1,1 +1,0 @@
-import hints from "./a08a388line2a-index.js"; const step = {id: "a08a388line2a", stepAnswer: ["$$y=3x+5$$"], problemType: "MultipleChoice", stepTitle: "Slope 3 and y-intercept (0,5)", stepBody: "", choices: ["$$y=3x+5$$", "$$y=3x-5$$", "$$y=5x-3$$", "$$y=5x+3$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

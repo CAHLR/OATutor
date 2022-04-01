@@ -1,1 +1,0 @@
-import hints from "./af1a2a0roots11a-index.js"; const step = {id: "af1a2a0roots11a", stepAnswer: ["m**2"], problemType: "TextBox", stepTitle: "$$\\sqrt{m^4}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

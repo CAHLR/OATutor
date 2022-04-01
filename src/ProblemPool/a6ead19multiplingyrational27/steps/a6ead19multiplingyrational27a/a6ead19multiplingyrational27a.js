@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational27a-index.js"; const step = {id: "a6ead19multiplingyrational27a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{4n+20}{n^2+n-20} \\left(n^2-\\frac{16}{4} n+16\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
