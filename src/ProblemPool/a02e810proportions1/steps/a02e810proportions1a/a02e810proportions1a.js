@@ -1,1 +1,0 @@
-import hints from "./a02e810proportions1a-index.js"; const step = {id: "a02e810proportions1a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "$$\\frac{x}{63}=\\frac{4}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

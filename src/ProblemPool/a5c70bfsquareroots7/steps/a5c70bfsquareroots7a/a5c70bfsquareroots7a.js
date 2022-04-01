@@ -1,1 +1,0 @@
-import hints from "./a5c70bfsquareroots7a-index.js"; const step = {id: "a5c70bfsquareroots7a", stepAnswer: ["$$9\\sqrt{y}$$"], problemType: "TextBox", stepTitle: "$$7\\sqrt{y}+2\\sqrt{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

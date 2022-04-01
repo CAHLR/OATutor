@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums2c-index.js"; const step = {id: "a4b9bbfrationalnums2c", stepAnswer: ["$$z^{\\frac{1}{4}}$$"], problemType: "TextBox", stepTitle: "Wrtie with a rational exponent: $$\\sqrt[4]{z}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

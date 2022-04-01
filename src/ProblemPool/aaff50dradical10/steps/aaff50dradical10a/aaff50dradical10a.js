@@ -1,1 +1,0 @@
-import hints from "./aaff50dradical10a-index.js"; const step = {id: "aaff50dradical10a", stepAnswer: ["$$5a^4 \\sqrt{3a}$$"], problemType: "TextBox", stepTitle: "Simplify $$\\sqrt{75a^9}$$", stepBody: "Write your answer in radical form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

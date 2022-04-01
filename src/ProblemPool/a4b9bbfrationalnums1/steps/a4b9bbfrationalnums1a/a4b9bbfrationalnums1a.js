@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums1a-index.js"; const step = {id: "a4b9bbfrationalnums1a", stepAnswer: ["$$\\sqrt{x}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression: $$x^{\\frac{1}{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
