@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums24a-index.js"; const step = {id: "a4b9bbfrationalnums24a", stepAnswer: ["$$t^{\\frac{1}{4}}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{t}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
