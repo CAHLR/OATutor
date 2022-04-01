@@ -1,0 +1,1 @@
+import hints from "./a60a373solverat3a-index.js"; const step = {id: "a60a373solverat3a", stepAnswer: ["$$x=-2$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{x-1}=\\frac{2}{3x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

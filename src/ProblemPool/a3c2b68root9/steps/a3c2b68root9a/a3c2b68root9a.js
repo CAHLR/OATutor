@@ -1,0 +1,1 @@
+import hints from "./a3c2b68root9a-index.js"; const step = {id: "a3c2b68root9a", stepAnswer: ["$$40-14\\sqrt{7}$$"], problemType: "TextBox", stepTitle: "$$\\left(3-2\\sqrt{7}\\right) \\left(4-2\\sqrt{7}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

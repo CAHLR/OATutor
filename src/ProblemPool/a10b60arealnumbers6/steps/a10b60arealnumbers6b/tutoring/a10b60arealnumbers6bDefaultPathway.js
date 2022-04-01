@@ -1,0 +1,1 @@
+var hints = [{id: "a10b60arealnumbers6b-h1", type: "hint", dependencies: [], title: "Simplifying Even Roots", text: "When taking the nth root of some integer x $$ \\geq $$ 2, if n is even, the answer is $$|x|$$", variabilization: {}}, ]; export {hints};
