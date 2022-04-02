@@ -1,0 +1,1 @@
+import hints from "./a3c2b68root8a-index.js"; const step = {id: "a3c2b68root8a", stepAnswer: ["$$-3+2\\sqrt{6}$$"], problemType: "TextBox", stepTitle: "$$\\left(1+\\sqrt{6}\\right) \\left(3-\\sqrt{6}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

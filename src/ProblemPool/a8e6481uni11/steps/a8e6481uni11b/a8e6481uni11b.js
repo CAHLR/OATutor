@@ -1,0 +1,1 @@
+import hints from "./a8e6481uni11b-index.js"; const step = {id: "a8e6481uni11b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "Find Suzy's downhill speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

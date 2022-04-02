@@ -1,0 +1,1 @@
+import hints from "./a10b60arealnumbers29a-index.js"; const step = {id: "a10b60arealnumbers29a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{-16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

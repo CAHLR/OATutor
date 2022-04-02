@@ -1,0 +1,1 @@
+import hints from "./acff542gra7a-index.js"; const step = {id: "acff542gra7a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "(1,-3)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

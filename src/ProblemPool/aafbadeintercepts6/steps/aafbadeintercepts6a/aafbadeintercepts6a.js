@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts6a-index.js"; const step = {id: "aafbadeintercepts6a", stepAnswer: ["(8,0)"], problemType: "MultipleChoice", stepTitle: "Find the x intercept of $$x+4y=8$$.", stepBody: "", choices: ["(8,0)", "(8,0)I(4,0)I(-6,0)I(0,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

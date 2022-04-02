@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions9a-index.js"; const step = {id: "a02e810proportions9a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\frac{z}{z-84}=\\frac{-1}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

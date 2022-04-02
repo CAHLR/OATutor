@@ -1,0 +1,1 @@
+import hints from "./a012999exa14a-index.js"; const step = {id: "a012999exa14a", stepAnswer: ["$$8x^4-12x^3+20x^2$$"], problemType: "TextBox", stepTitle: "$$4x^{2\\left(2x^2-3x+5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ab5123ebaye9a-index.js"; const step = {id: "ab5123ebaye9a", stepAnswer: ["0.14"], problemType: "TextBox", stepTitle: "What is the probability that a patient has liver disease, given that they are an alcoholic? Round your answer to two decimal places", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

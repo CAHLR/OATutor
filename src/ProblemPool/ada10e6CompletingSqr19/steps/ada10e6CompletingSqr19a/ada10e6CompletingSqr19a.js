@@ -1,0 +1,1 @@
+import hints from "./ada10e6CompletingSqr19a-index.js"; const step = {id: "ada10e6CompletingSqr19a", stepAnswer: ["$${\\left(b-2\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$b^2-4b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
