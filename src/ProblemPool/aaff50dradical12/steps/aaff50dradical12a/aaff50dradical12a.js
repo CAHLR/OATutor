@@ -1,0 +1,1 @@
+import hints from "./aaff50dradical12a-index.js"; const step = {id: "aaff50dradical12a", stepAnswer: ["$$2+7\\sqrt{2}$$"], problemType: "TextBox", stepTitle: "Simplify $$2+\\sqrt{98}$$", stepBody: "Write your answer in radical form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

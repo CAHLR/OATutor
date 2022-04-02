@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational7a-index.js"; const step = {id: "ab62b81rational7a", stepAnswer: ["$$\\frac{5}{9}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{36}+\\frac{13}{36}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

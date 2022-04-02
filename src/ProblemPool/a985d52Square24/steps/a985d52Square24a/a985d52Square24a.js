@@ -1,0 +1,1 @@
+import hints from "./a985d52Square24a-index.js"; const step = {id: "a985d52Square24a", stepAnswer: ["$$\\frac{-3}{4}$$"], problemType: "TextBox", stepTitle: "$$16c^2+24c+9=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a4b9bbfrationalnums20a-index.js"; const step = {id: "a4b9bbfrationalnums20a", stepAnswer: ["$$\\sqrt[5]{h}$$"], problemType: "TextBox", stepTitle: "$$h^{\\frac{1}{5}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

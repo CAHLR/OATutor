@@ -1,0 +1,1 @@
+import hints from "./a28722cappquad12a-index.js"; const step = {id: "a28722cappquad12a", stepAnswer: ["21"], problemType: "TextBox", stepTitle: "The product of two positive, consecutive odd numbers is 483. Find the lower number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

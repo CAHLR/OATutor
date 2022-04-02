@@ -1,0 +1,1 @@
+import hints from "./add17b3fractions20a-index.js"; const step = {id: "add17b3fractions20a", stepAnswer: ["$$\\frac{4}{a+1}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2-\\frac{2}{a+3}}{\\frac{1}{a}+3+\\frac{a}{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

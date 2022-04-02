@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts5a-index.js"; const step = {id: "aafbadeintercepts5a", stepAnswer: ["(4,0)"], problemType: "MultipleChoice", stepTitle: "Find the x intercept of $$3x+y=12$$.", stepBody: "", choices: ["(2,0)I(4,0)I(-6,0)I(0,-3)", "(4,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

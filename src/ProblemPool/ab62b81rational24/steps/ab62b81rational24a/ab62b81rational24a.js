@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational24a-index.js"; const step = {id: "ab62b81rational24a", stepAnswer: ["$$5b+6$$"], problemType: "TextBox", stepTitle: "$$\\frac{25b^2}{5b-6}-\\frac{36}{5b-6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

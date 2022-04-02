@@ -1,0 +1,1 @@
+import hints from "./a3d6a35variation18a-index.js"; const step = {id: "a3d6a35variation18a", stepAnswer: ["$$y=\\frac{4}{x}$$"], problemType: "TextBox", stepTitle: "Y varies inversely with x, and $$y=12$$ when $$x=\\frac{1}{3}$$. Write your answer in the form $$y=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

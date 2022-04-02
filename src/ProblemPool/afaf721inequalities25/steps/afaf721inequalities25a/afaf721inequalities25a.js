@@ -1,0 +1,1 @@
+import hints from "./afaf721inequalities25a-index.js"; const step = {id: "afaf721inequalities25a", stepAnswer: ["[-27,inf)"], problemType: "MultipleChoice", stepTitle: "$$\\frac{a}{-3} \\leq 9$$", stepBody: "", choices: ["[-27,inf)", "[-3,inf)", "$$\\left(-\\infty-27\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

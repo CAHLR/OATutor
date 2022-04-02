@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots4a-index.js"; const step = {id: "a443311sqroots4a", stepAnswer: ["$$\\frac{4-\\sqrt{10}}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{8-\\sqrt{40}}{10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6614c6sol11a-index.js"; const step = {id: "a6614c6sol11a", stepAnswer: ["(-2,1)"], problemType: "MultipleChoice", stepTitle: "Refer to the image for the system of equations.", stepBody: "##figure1.gif## ", choices: ["(2,1)", "(-2,1)", "(-2,-1)", "(1,-2)", "(-1,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
