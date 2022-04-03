@@ -1,1 +1,0 @@
-import steps from "./a14ffbcmodeling5-index.js"; const problem = {id: "a14ffbcmodeling5", title: "Solving a Direct Variation Problem", body: "The quantity of y varies directly with the square of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.8 Modeling Using Variation", courseName: "Openstax: College Algebra"}; export { problem };

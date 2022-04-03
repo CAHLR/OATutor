@@ -1,1 +1,0 @@
-import hints from "./ab8b840systems2a-index.js"; const step = {id: "ab8b840systems2a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "$$5x-4y=20$$ $$2x+1=3y$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

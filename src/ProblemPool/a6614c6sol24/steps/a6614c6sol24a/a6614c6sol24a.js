@@ -1,1 +1,0 @@
-import hints from "./a6614c6sol24a-index.js"; const step = {id: "a6614c6sol24a", stepAnswer: ["150"], problemType: "TextBox", stepTitle: "How many calories are in a hot dog?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ab50a95log23a-index.js"; const step = {id: "ab50a95log23a", stepAnswer: ["$$e^n=w$$"], problemType: "TextBox", stepTitle: "$$ln(w)=n$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

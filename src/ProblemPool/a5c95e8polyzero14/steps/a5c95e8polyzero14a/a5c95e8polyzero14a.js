@@ -1,1 +1,0 @@
-import hints from "./a5c95e8polyzero14a-index.js"; const step = {id: "a5c95e8polyzero14a", stepAnswer: ["1,3/2,2"], problemType: "TextBox", stepTitle: "Write all the zeros of $$f(x)=2x^3-9x^2+13x-6$$ given that x-1 is a factor of f(x).", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

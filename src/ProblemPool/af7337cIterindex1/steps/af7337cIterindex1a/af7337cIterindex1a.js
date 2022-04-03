@@ -1,1 +1,0 @@
-import hints from "./af7337cIterindex1a-index.js"; const step = {id: "af7337cIterindex1a", stepAnswer: ["for i in np.arange(10): function_call"], problemType: "TextBox", stepTitle: "How can you call a function 10 times?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

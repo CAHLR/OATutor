@@ -1,1 +1,0 @@
-import hints from "./a0f69c4conics5a-index.js"; const step = {id: "a0f69c4conics5a", stepAnswer: ["$$x=5$$"], problemType: "TextBox", stepTitle: "$$r\\left(1+costheta\\right)=5$$", stepBody: "Enter your answer in the form: $$x=a$$ or $$y=a$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

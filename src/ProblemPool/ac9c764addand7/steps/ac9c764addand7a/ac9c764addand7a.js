@@ -1,1 +1,0 @@
-import hints from "./ac9c764addand7a-index.js"; const step = {id: "ac9c764addand7a", stepAnswer: ["$$\\frac{24+5x}{40}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{5}+\\frac{x}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

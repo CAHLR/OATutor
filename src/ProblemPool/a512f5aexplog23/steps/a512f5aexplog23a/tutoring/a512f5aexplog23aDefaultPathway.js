@@ -1,1 +1,0 @@
-var hints = [{id: "a512f5aexplog23a-h1", type: "hint", dependencies: [], title: "Range of an Exponential Function", text: "Recall that the range of an exponential function is always positive. We can graph the two functions out to see that they never intersect.", variabilization: {}}, ]; export {hints};

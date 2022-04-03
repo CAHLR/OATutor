@@ -1,1 +1,0 @@
-import hints from "./a60a373solverat8a-index.js"; const step = {id: "a60a373solverat8a", stepAnswer: ["x=-3, x=2"], problemType: "TextBox", stepTitle: "$$\\frac{2}{x+8}-\\frac{2}{x-2}=1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
