@@ -1,1 +1,0 @@
-import hints from "./a104861trifactor15a-index.js"; const step = {id: "a104861trifactor15a", stepAnswer: ["$${\\left(7s+11\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$49s^2+154s+121$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

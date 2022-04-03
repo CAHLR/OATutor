@@ -1,1 +1,0 @@
-import hints from "./a0f69c4conic6a-index.js"; const step = {id: "a0f69c4conic6a", stepAnswer: ["$$25x^2-10y=1$$"], problemType: "MultipleChoice", stepTitle: "$$r=\\frac{1}{5-5sin\\left(\\theta\\right)}$$", stepBody: "", choices: ["$$25x^2-10y=1$$", "$$25y^2-10x=1$$", "$$25x^2-10y^2=1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

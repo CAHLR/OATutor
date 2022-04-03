@@ -1,1 +1,0 @@
-import hints from "./af69facexpolog26b-index.js"; const step = {id: "af69facexpolog26b", stepAnswer: ["$$256e^{0.06811t}$$"], problemType: "TextBox", stepTitle: "Rounding to six decimal places, write an exponential equation representing this situation.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

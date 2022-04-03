@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic12b-index.js"; const step = {id: "a35b0d9quadratic12b", stepAnswer: ["256"], problemType: "TextBox", stepTitle: "What is the maximum height of the rock?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

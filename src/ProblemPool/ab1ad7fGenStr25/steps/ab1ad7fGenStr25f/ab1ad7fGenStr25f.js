@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr25f-index.js"; const step = {id: "ab1ad7fGenStr25f", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$21+2\\left(m-4\\right)=25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

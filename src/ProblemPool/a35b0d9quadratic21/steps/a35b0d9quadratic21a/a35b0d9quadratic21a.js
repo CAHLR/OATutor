@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic21a-index.js"; const step = {id: "a35b0d9quadratic21a", stepAnswer: ["Minimum"], problemType: "MultipleChoice", stepTitle: "$$y(x)=2x^2-10x+4$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

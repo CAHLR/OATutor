@@ -1,1 +1,0 @@
-import hints from "./ae05e04inverse21a-index.js"; const step = {id: "ae05e04inverse21a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is the function $$f(x)=a-x$$ its own inverse for all real numbers a?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

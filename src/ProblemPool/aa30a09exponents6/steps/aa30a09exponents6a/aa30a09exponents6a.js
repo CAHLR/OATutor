@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents6a-index.js"; const step = {id: "aa30a09exponents6a", stepAnswer: ["$$\\frac{1}{{mn}^5}$$"], problemType: "TextBox", stepTitle: "$$m^4 n^{\\left(-3\\right)} m^{\\left(-5\\right)} n \\left(-2\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./acf3da9gaussian21a-index.js"; const step = {id: "acf3da9gaussian21a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$49m^2=144$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

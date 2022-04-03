@@ -1,1 +1,0 @@
-import hints from "./a9981abAbsolute2b-index.js"; const step = {id: "a9981abAbsolute2b", stepAnswer: ["11"], problemType: "TextBox", stepTitle: "Finding the y-intercept.", stepBody: "Find the y-intercept of the function $$f(x)=|3x+9|+2$$. What is the y value?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

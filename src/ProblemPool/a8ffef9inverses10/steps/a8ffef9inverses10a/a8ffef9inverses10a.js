@@ -1,1 +1,0 @@
-import hints from "./a8ffef9inverses10a-index.js"; const step = {id: "a8ffef9inverses10a", stepAnswer: ["$$\\frac{3+2x}{x-1}$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x+3}{x-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
