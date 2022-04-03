@@ -1,0 +1,1 @@
+var hints = [{id: "aeae96dlogprop2a-h1", type: "hint", dependencies: [], title: "Factoring the Argument Completely", text: "$$\\ln(ab)$$ is equivalent to $$\\ln(a)+\\ln(b)$$ by product rule.", variabilization: {}}, ]; export {hints};

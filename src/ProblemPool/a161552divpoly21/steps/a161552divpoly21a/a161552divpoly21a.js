@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly21a-index.js"; const step = {id: "a161552divpoly21a", stepAnswer: ["$$3x^2-11x+34$$ - $$\\frac{106}{x+3}$$"], problemType: "TextBox", stepTitle: "$$3x^3-2x^2+x-4$$ / $$x+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

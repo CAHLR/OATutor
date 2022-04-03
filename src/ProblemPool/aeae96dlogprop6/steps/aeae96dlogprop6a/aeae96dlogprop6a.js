@@ -1,0 +1,1 @@
+import hints from "./aeae96dlogprop6a-index.js"; const step = {id: "aeae96dlogprop6a", stepAnswer: ["2ln(x)"], problemType: "TextBox", stepTitle: "Expand $$\\ln(x^2)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

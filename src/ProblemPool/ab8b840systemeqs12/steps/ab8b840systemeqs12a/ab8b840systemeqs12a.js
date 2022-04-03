@@ -1,0 +1,1 @@
+import hints from "./ab8b840systemeqs12a-index.js"; const step = {id: "ab8b840systemeqs12a", stepAnswer: ["(-1,2)"], problemType: "MultipleChoice", stepTitle: "$$x+3y=5$$, $$2x+3y=4$$", stepBody: "", choices: ["(-1,2)", "(2,1)", "(1,-2)", "(-2,-1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3b7d40expgraph20a-index.js"; const step = {id: "a3b7d40expgraph20a", stepAnswer: ["$$g(x)=-3{0.75}^x+1$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
