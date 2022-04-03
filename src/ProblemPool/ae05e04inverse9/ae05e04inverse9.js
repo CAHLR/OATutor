@@ -1,0 +1,1 @@
+import steps from "./ae05e04inverse9-index.js"; const problem = {id: "ae05e04inverse9", title: "Intercepts", body: "Find the intercepts of the function $$f(x)=\\sqrt[3]{3x+1}$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.7 Inverse Functions", courseName: "Openstax: College Algebra"}; export { problem };

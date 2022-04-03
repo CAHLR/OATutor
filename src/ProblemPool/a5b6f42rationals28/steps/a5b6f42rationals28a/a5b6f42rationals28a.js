@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals28a-index.js"; const step = {id: "a5b6f42rationals28a", stepAnswer: ["$$27x+18$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{81x^2-18}{3x-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

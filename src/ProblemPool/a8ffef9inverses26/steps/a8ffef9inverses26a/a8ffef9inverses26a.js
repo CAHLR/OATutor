@@ -1,0 +1,1 @@
+import hints from "./a8ffef9inverses26a-index.js"; const step = {id: "a8ffef9inverses26a", stepAnswer: ["$$y=\\frac{2}{x}-8$$"], problemType: "TextBox", stepTitle: "Find the inverse of $$f(x)=\\frac{2}{x+8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

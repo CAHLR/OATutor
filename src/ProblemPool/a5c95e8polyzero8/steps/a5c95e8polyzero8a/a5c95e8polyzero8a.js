@@ -1,0 +1,1 @@
+import hints from "./a5c95e8polyzero8a-index.js"; const step = {id: "a5c95e8polyzero8a", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "Find the remainder of: $$\\frac{x^4+5x^3-4x-17}{x+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

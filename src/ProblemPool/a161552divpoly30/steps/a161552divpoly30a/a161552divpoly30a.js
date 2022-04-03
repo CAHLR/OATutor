@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly30a-index.js"; const step = {id: "a161552divpoly30a", stepAnswer: ["$$4x^2-21x+84-\\frac{323}{x+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4x^3-5x^2+13}{x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

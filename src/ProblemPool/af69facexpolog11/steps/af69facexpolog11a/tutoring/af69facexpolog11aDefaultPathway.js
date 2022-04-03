@@ -1,0 +1,1 @@
+var hints = [{id: "af69facexpolog11a-h1", type: "hint", dependencies: [], title: "Plugging in 1.5 as T", text: "To solve this problem, we simply have to plug in 1.5 for the variable t. This will give us a value T(t) that represents our answer.", variabilization: {C: ["70", "71", "72", "73"], ans: ["136", "137", "138", "139"]}}, ]; export {hints};

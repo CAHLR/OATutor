@@ -1,0 +1,1 @@
+import steps from "./a35b0d9quadratic13-index.js"; const problem = {id: "a35b0d9quadratic13", title: "Rewriting Quadratics in Standard Form and Finding the Vertex", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "5.1 Quadratic Functions", courseName: "Openstax: College Algebra"}; export { problem };
