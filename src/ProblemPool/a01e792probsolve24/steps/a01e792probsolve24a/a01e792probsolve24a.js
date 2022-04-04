@@ -1,0 +1,1 @@
+import hints from "./a01e792probsolve24a-index.js"; const step = {id: "a01e792probsolve24a", stepAnswer: ["-5,-9"], problemType: "TextBox", stepTitle: "The sum of two numbers is negative fourteen. One number is four less than the other. Find the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

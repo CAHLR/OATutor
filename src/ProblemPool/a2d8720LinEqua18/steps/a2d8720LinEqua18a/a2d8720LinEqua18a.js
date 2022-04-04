@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua18a-index.js"; const step = {id: "a2d8720LinEqua18a", stepAnswer: ["$$\\frac{-3}{4}$$"], problemType: "TextBox", stepTitle: "Identifying the slope", stepBody: "Identify the slope given the equation $$y=-\\left(\\frac{3}{4}\\right) x-4$$.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot17a-index.js"; const step = {id: "a4a0f7dradicalroot17a", stepAnswer: ["$$z=3$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{7z+15}=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3c2b68root23a-index.js"; const step = {id: "a3c2b68root23a", stepAnswer: ["$$20\\sqrt{2}$$"], problemType: "TextBox", stepTitle: "$$2\\sqrt{5}\\times2 \\sqrt{10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

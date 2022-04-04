@@ -1,0 +1,1 @@
+import hints from "./a6ead19multiplyingrationals7a-index.js"; const step = {id: "a6ead19multiplyingrationals7a", stepAnswer: ["3(x-6)/(x+5)"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{\\frac{9x^2}{x^2+11x+30} \\left(x^2-36\\right)}{3x^2}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

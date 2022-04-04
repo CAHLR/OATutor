@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua10a-index.js"; const step = {id: "a2d8720LinEqua10a", stepAnswer: ["$$x=1$$"], problemType: "TextBox", stepTitle: "$$\\frac{-5}{2x}+\\frac{3}{4x}=\\frac{-7}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

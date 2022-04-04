@@ -1,0 +1,1 @@
+import hints from "./a833c22linear11a-index.js"; const step = {id: "a833c22linear11a", stepAnswer: ["$$\\frac{-1}{2}$$"], problemType: "TextBox", stepTitle: "If f(x) is a linear function, and (2,3) and (0,4) are points on the line, find the slope.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

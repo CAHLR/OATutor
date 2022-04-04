@@ -1,0 +1,1 @@
+import hints from "./a75d03cRecCord11b-index.js"; const step = {id: "a75d03cRecCord11b", stepAnswer: ["$$\\sqrt{113}$$ units"], problemType: "TextBox", stepTitle: "Find the distance between her starting and final positions.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9c142dVarCon24a-index.js"; const step = {id: "a9c142dVarCon24a", stepAnswer: ["$$\\frac{-5}{3}$$"], problemType: "TextBox", stepTitle: "$$7a-3=13a+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

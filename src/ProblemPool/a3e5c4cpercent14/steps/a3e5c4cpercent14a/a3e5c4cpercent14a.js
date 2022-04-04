@@ -1,0 +1,1 @@
+import hints from "./a3e5c4cpercent14a-index.js"; const step = {id: "a3e5c4cpercent14a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "Find the percent decrease. Last year, Sheila’s salary was $42,000. Because of furlough days, this year, her salary was $37,800.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

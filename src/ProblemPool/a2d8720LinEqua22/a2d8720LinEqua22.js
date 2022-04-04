@@ -1,0 +1,1 @@
+import steps from "./a2d8720LinEqua22-index.js"; const problem = {id: "a2d8720LinEqua22", title: "Finding the Equation of a Line and Writing It in Standard Form", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.2 Linear Equations in One Variable", courseName: "Openstax: College Algebra"}; export { problem };

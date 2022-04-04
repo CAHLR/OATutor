@@ -1,0 +1,1 @@
+import steps from "./aa97d5brates4-index.js"; const problem = {id: "aa97d5brates4", title: "Finding an Average Rate of Change as an Expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.3 Rates of Change and Behavior of Graphs", courseName: "Openstax: College Algebra"}; export { problem };

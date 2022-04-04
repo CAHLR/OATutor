@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp3d-index.js"; const step = {id: "af227bbMoApp3d", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "If the average number of miuntes used each month is 420, which company offfers the better plan?", stepBody: "", choices: ["A", "B"], answerType: "string", hints: hints, variabilization: {}}; export {step};

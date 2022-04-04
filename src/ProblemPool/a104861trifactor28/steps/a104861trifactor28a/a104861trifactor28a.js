@@ -1,0 +1,1 @@
+import hints from "./a104861trifactor28a-index.js"; const step = {id: "a104861trifactor28a", stepAnswer: ["$$\\left(x+4\\right) \\left(x-4\\right)$$"], problemType: "TextBox", stepTitle: "$$x^2-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

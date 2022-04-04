@@ -1,0 +1,1 @@
+import hints from "./a5991b4add2c-index.js"; const step = {id: "a5991b4add2c", stepAnswer: ["trinomial"], problemType: "MultipleChoice", stepTitle: "$$x^2+5x-7$$", stepBody: "", choices: ["monomial", "binomial", "trinomial", "polynomial"], answerType: "string", hints: hints, variabilization: {}}; export {step};

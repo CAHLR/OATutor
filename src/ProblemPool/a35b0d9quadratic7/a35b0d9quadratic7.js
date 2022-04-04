@@ -1,0 +1,1 @@
+import steps from "./a35b0d9quadratic7-index.js"; const problem = {id: "a35b0d9quadratic7", title: "Finding the y- and x-Intercepts of a Parabola", body: "Find the x and y intercepts of the following function.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.1 Quadratic Functions", courseName: "Openstax: College Algebra"}; export { problem };

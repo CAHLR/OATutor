@@ -1,0 +1,1 @@
+import hints from "./a75d03cRecCord19a-index.js"; const step = {id: "a75d03cRecCord19a", stepAnswer: ["(2,-1)"], problemType: "TextBox", stepTitle: "Find the midpoint of the line segment with the endpoints (0,7) and (4,-9).", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

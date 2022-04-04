@@ -1,0 +1,1 @@
+import hints from "./a161552divpoly5a-index.js"; const step = {id: "a161552divpoly5a", stepAnswer: ["$$-9x^3+x^2+8x+8+\\frac{2}{x-1}$$"], problemType: "TextBox", stepTitle: "Use synthetic division to divide $$-9x^4+10x^3+7x^2-6$$ by x-1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom18a-index.js"; const step = {id: "aeb975brationaldenom18a", stepAnswer: ["$$\\frac{33}{40}$$"], problemType: "TextBox", stepTitle: "Add $$\\frac{3}{8}+\\frac{9}{20}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

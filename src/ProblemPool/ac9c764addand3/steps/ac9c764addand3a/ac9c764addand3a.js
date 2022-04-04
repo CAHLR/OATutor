@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand3a-index.js"; const step = {id: "ac9c764addand3a", stepAnswer: ["$$\\frac{-14}{x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-10}{x}-\\frac{4}{x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

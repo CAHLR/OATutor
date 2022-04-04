@@ -1,0 +1,1 @@
+import hints from "./afbe5ccpower12a-index.js"; const step = {id: "afbe5ccpower12a", stepAnswer: ["power"], problemType: "MultipleChoice", stepTitle: "$$f(x)={\\left(x^2\\right)}^3$$", stepBody: "", choices: ["power", "polynomial", "neither"], answerType: "string", hints: hints, variabilization: {}}; export {step};

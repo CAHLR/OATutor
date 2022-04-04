@@ -1,0 +1,1 @@
+import hints from "./aaa317eLinIneq13a-index.js"; const step = {id: "aaa317eLinIneq13a", stepAnswer: ["(-inf,3/4]"], problemType: "MultipleChoice", stepTitle: "$$3x+2 \\geq 7x-1$$", stepBody: "", choices: ["(-inf,3/4]", "(-inf,4/3]", "[3/4,inf)", "[4/3,inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

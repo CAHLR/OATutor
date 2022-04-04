@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain21a-index.js"; const step = {id: "aeb11eedomain21a", stepAnswer: ["[2,inf)"], problemType: "MultipleChoice", stepTitle: "$$f(x)=3\\sqrt{x-2}$$", stepBody: "", choices: ["[-2,inf)", "$$\\left(-2\\infty\\right)$$", "[2,inf)", "$$\\left(-infinf\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

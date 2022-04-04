@@ -1,0 +1,1 @@
+import hints from "./ab8934ethreevar5a-index.js"; const step = {id: "ab8934ethreevar5a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (4,2,-6) is the solution to the system of equations: $$6x-7y+z=2$$, $$-x-y+3z=4$$, $$2x+y-z=1$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

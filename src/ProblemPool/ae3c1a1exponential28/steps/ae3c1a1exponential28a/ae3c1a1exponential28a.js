@@ -1,0 +1,1 @@
+import hints from "./ae3c1a1exponential28a-index.js"; const step = {id: "ae3c1a1exponential28a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "How many years had the account been accumulating interest?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
