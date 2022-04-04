@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain24a-index.js"; const step = {id: "aeb11eedomain24a", stepAnswer: ["$$\\left(-infinf\\right)$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{x^2+4}$$", stepBody: "", choices: ["[2,inf)", "(-inf,-2]", "$$2\\infty$$", "$$\\left(-infinf\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain23a-index.js"; const step = {id: "aeb11eedomain23a", stepAnswer: ["(-inf,4/3]"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{4-3x}$$", stepBody: "", choices: ["$$\\left(-infinf\\right)$$", "(-inf,-4/3]", "(-inf,4/3]", "[4/3,inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

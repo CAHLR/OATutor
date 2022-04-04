@@ -1,0 +1,1 @@
+import hints from "./afb3ccdlang6a-index.js"; const step = {id: "afb3ccdlang6a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "When x $$=$$ 4, evaluate $$x^2$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

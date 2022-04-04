@@ -1,0 +1,1 @@
+import hints from "./a4488b1Fraction1a-index.js"; const step = {id: "a4488b1Fraction1a", stepAnswer: ["$$\\frac{-23}{40}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-69}{120}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

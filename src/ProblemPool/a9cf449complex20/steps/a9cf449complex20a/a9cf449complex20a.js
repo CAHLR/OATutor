@@ -1,0 +1,1 @@
+import hints from "./a9cf449complex20a-index.js"; const step = {id: "a9cf449complex20a", stepAnswer: ["$$1+i\\left(\\sqrt{3}\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{2+\\sqrt{-12}}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

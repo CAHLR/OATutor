@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain8a-index.js"; const step = {id: "aeb11eedomain8a", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "Find the domain.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

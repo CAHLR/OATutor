@@ -1,0 +1,1 @@
+import hints from "./a20771equad14a-index.js"; const step = {id: "a20771equad14a", stepAnswer: ["(3+sqrt(29))/2, (3-sqrt(29))/2"], problemType: "TextBox", stepTitle: "$$x^2-3x-5=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

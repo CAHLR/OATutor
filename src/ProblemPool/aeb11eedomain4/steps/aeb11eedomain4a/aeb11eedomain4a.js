@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain4a-index.js"; const step = {id: "aeb11eedomain4a", stepAnswer: ["(-inf,7]"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\sqrt{7-x}$$", stepBody: "", choices: ["(-inf,7]", "$$\\left(-inf7\\right)$$", "[-7,inf)", "$$\\left(-7\\infty\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

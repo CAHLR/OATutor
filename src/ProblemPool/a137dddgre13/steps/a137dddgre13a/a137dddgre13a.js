@@ -1,0 +1,1 @@
+import hints from "./a137dddgre13a-index.js"; const step = {id: "a137dddgre13a", stepAnswer: ["$$8w^2$$"], problemType: "TextBox", stepTitle: "$$8w^2$$, $$24w^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

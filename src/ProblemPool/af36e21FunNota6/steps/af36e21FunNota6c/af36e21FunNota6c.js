@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota6c-index.js"; const step = {id: "af36e21FunNota6c", stepAnswer: ["$$a^2+2ah+h^2+3a+3h-4$$"], problemType: "MultipleChoice", stepTitle: "$$a+h$$", stepBody: "", choices: ["$$a^2+3a+3h-4$$", "$$a^2+2ah+2h^2+6a+6h-4$$", "$$a^2+2ah+h^2+3a$$", "$$a^2+2ah+h^2+3a+3h-4$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

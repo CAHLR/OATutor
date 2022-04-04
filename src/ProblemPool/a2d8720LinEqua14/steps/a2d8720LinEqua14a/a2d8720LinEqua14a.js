@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua14a-index.js"; const step = {id: "a2d8720LinEqua14a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "Solve the rational equation: $$\\frac{2}{x-2}+\\frac{1}{x-1}=\\frac{1}{x^2-x-2}$$. State the value of x.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

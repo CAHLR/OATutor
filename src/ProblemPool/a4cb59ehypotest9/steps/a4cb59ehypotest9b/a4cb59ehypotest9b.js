@@ -1,0 +1,1 @@
+import hints from "./a4cb59ehypotest9b-index.js"; const step = {id: "a4cb59ehypotest9b", stepAnswer: ["Two-tailed Test"], problemType: "MultipleChoice", stepTitle: "Assume $$H_0$$: $$p=0.25$$ and $$H_a$$: p≠0.25.", stepBody: "", choices: ["Left-tailed test", "Right-tailed Test", "Two-tailed Test"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./ab8b840systemeq2-index.js"; const problem = {id: "ab8b840systemeq2", title: "Solving Systems of Linear Equations", body: "Solve the system of equations:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "7.1 Systems of Linear Equations: Two Variables", courseName: "Openstax: College Algebra"}; export { problem };

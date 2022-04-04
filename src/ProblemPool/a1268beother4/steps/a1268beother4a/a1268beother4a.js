@@ -1,0 +1,1 @@
+import hints from "./a1268beother4a-index.js"; const step = {id: "a1268beother4a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$8^{\\frac{2}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

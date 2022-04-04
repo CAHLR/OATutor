@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads22a-index.js"; const step = {id: "a2ef97dGrphingQuads22a", stepAnswer: ["Opens up"], problemType: "MultipleChoice", stepTitle: "$$y=4x^2+x-4$$", stepBody: "", choices: ["Opens down", "Opens up"], answerType: "string", hints: hints, variabilization: {}}; export {step};

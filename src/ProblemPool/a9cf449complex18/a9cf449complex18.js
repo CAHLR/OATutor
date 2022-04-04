@@ -1,0 +1,1 @@
+import steps from "./a9cf449complex18-index.js"; const problem = {id: "a9cf449complex18", title: "Dividing Complex Numbers", body: "Perform the indicated operation and express the result as a simplified complex number.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.4 Complex Numbers", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./ae05e04inverse10-index.js"; const problem = {id: "ae05e04inverse10", title: "Intercepts from Slope-Intercept Form", body: "Find the intercepts of the function $$f(x)=5x+1$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.7 Inverse Functions", courseName: "Openstax: College Algebra"}; export { problem };

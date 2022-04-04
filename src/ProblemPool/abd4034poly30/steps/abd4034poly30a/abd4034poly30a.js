@@ -1,0 +1,1 @@
+import hints from "./abd4034poly30a-index.js"; const step = {id: "abd4034poly30a", stepAnswer: ["$$8a^5 b+6a^3 b^2$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(-48a^8 b^4-36a^6 b^5\\right)}{\\left(-6a^3 b^3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

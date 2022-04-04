@@ -1,0 +1,1 @@
+import hints from "./a20771equad35a-index.js"; const step = {id: "a20771equad35a", stepAnswer: ["0, -3/7"], problemType: "TextBox", stepTitle: "$$7x^2+3x=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

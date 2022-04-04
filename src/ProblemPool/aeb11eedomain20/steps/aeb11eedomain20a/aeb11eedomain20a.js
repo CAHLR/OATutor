@@ -1,0 +1,1 @@
+import hints from "./aeb11eedomain20a-index.js"; const step = {id: "aeb11eedomain20a", stepAnswer: ["$$\\left(-infinf\\right)$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=5-2x^2$$", stepBody: "", choices: ["$$\\left(-inf5\\right)$$", "$$2\\infty$$", "(-inf,5/2]", "$$\\left(-infinf\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

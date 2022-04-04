@@ -1,0 +1,1 @@
+import hints from "./a3d6a35variation12a-index.js"; const step = {id: "a3d6a35variation12a", stepAnswer: ["$$y=\\frac{160}{x}$$"], problemType: "TextBox", stepTitle: "If y varies inversely with x and $$y=20$$ when $$x=8$$ , find the equation that relates x and y (in the form $$y=?)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

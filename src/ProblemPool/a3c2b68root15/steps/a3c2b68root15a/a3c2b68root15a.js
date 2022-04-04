@@ -1,0 +1,1 @@
+import hints from "./a3c2b68root15a-index.js"; const step = {id: "a3c2b68root15a", stepAnswer: ["-159"], problemType: "TextBox", stepTitle: "$$\\left(4+5\\sqrt{7}\\right) \\left(4-5\\sqrt{7}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

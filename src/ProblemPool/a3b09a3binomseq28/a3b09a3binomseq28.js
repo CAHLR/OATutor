@@ -1,0 +1,1 @@
+import steps from "./a3b09a3binomseq28-index.js"; const problem = {id: "a3b09a3binomseq28", title: "Binomial Expansion", body: "Expand the following.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "9.6 Binomial Theorem", courseName: "Openstax: College Algebra"}; export { problem };

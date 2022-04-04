@@ -1,0 +1,1 @@
+import hints from "./add17b3fractions21a-index.js"; const step = {id: "add17b3fractions21a", stepAnswer: ["$$\\frac{11}{8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{3}+\\frac{1}{8}}{\\frac{1}{4}+\\frac{1}{12}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

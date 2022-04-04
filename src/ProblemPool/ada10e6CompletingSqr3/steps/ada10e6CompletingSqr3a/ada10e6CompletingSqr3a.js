@@ -1,0 +1,1 @@
+import hints from "./ada10e6CompletingSqr3a-index.js"; const step = {id: "ada10e6CompletingSqr3a", stepAnswer: ["$${\\left(m+9\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$m^2+18m$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

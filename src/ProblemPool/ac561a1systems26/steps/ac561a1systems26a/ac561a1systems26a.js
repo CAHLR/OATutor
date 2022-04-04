@@ -1,0 +1,1 @@
+import hints from "./ac561a1systems26a-index.js"; const step = {id: "ac561a1systems26a", stepAnswer: ["(18,3)"], problemType: "MultipleChoice", stepTitle: "$$x^2-y^2=9$$ \\n $$y=3$$", stepBody: "", choices: ["(3,18)", "(-3,18)", "(18,3)", "(-18,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

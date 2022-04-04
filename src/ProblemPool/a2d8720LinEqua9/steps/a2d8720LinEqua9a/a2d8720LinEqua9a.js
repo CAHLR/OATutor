@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua9a-index.js"; const step = {id: "a2d8720LinEqua9a", stepAnswer: ["$$x=\\frac{35}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{x}=\\frac{1}{10}-\\frac{3}{4x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

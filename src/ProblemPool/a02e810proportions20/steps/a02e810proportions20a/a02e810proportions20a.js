@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions20a-index.js"; const step = {id: "a02e810proportions20a", stepAnswer: ["39"], problemType: "TextBox", stepTitle: "$$\\frac{d}{d-48}=\\left(-\\frac{13}{3}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

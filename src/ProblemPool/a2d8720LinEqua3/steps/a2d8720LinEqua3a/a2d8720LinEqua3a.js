@@ -1,0 +1,1 @@
+import hints from "./a2d8720LinEqua3a-index.js"; const step = {id: "a2d8720LinEqua3a", stepAnswer: ["$$x=\\frac{-5}{3}$$"], problemType: "TextBox", stepTitle: "$$4\\left(x-3\\right)+12=15-5\\left(x+6\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom16a-index.js"; const step = {id: "aeb975brationaldenom16a", stepAnswer: ["$$\\frac{31}{36}$$"], problemType: "TextBox", stepTitle: "Add $$\\frac{7}{12}$$ + $$\\frac{5}{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

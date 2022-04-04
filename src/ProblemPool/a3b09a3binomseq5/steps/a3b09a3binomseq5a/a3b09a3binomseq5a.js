@@ -1,0 +1,1 @@
+import hints from "./a3b09a3binomseq5a-index.js"; const step = {id: "a3b09a3binomseq5a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "C(9,7)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
