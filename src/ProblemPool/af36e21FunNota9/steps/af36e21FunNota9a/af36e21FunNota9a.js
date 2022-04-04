@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota9a-index.js"; const step = {id: "af36e21FunNota9a", stepAnswer: ["-3,1"], problemType: "MultipleChoice", stepTitle: "Given the function $$h(p)=p^2+2p$$, solve for $$h(p)=3$$. What are the values for p?", stepBody: "", choices: ["-3,1", "-1,3", "-2,2", "No solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

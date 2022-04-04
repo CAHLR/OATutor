@@ -1,1 +1,0 @@
-import hints from "./aeae96dlogarithmic2a-index.js"; const step = {id: "aeae96dlogarithmic2a", stepAnswer: ["$$\\log_{4}\\left(x\\right)-\\log_{4}\\left(z\\right)-\\log_{4}\\left(w\\right)$$"], problemType: "TextBox", stepTitle: "$$\\log_{4}\\left(\\frac{\\frac{x}{z}}{w}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

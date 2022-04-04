@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph9a-index.js"; const step = {id: "a7ea646graph9a", stepAnswer: ["(0,0),(3,0),(-1,0)"], problemType: "MultipleChoice", stepTitle: "$$C(t)=2t\\left(t-3\\right) {\\left(t+1\\right)}^2$$", stepBody: "", choices: ["(0,0),(-3,0),(-1,0)", "(0,0),(3,0),(-1,0)", "(0,0),(3,0),(1,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

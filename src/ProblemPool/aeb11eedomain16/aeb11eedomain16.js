@@ -1,1 +1,0 @@
-import steps from "./aeb11eedomain16-index.js"; const problem = {id: "aeb11eedomain16", title: "Finding the Domain of a Function with an Even Root", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.2 Domain and Range", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./aa97d5brates7a-index.js"; const step = {id: "aa97d5brates7a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "What is the y value of the absolute maximum?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

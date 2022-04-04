@@ -1,1 +1,0 @@
-import hints from "./aeae96dlogarithmic14a-index.js"; const step = {id: "aeae96dlogarithmic14a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$6*\\log_{8}\\left(2\\right)+\\log_{8}\\left(64\\right)/(3*\\log_{8}\\left(4\\right))$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

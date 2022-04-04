@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic1b-index.js"; const step = {id: "a35b0d9quadratic1b", stepAnswer: ["$$x=3$$"], problemType: "MultipleChoice", stepTitle: "Determine the axis of symmetry of the parabola shown.", stepBody: "", choices: ["$$y=x$$", "$$x=3$$", "$$x=0$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

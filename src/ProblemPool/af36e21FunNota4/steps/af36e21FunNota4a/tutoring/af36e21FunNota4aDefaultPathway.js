@@ -1,1 +1,0 @@
-var hints = [{id: "af36e21FunNota4a-h1", type: "hint", dependencies: [], title: "Function notation", text: "The number of days in a month is a function of the name of the month, so if we name the function f, we write days $$=$$ f(month) or d $$=$$ f(m).", variabilization: {}}, ]; export {hints};

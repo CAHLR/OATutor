@@ -1,1 +1,0 @@
-import hints from "./aaa317eLinIneq7a-index.js"; const step = {id: "aaa317eLinIneq7a", stepAnswer: ["[1/2,2)"], problemType: "MultipleChoice", stepTitle: "$$3 \\leq 2x+2<6$$", stepBody: "", choices: ["[1/2,2)", "(1/2,2]", "[1,2)", "(1,2]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

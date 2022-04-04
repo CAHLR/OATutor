@@ -1,1 +1,0 @@
-import hints from "./aaa317eLinIneq1a-index.js"; const step = {id: "aaa317eLinIneq1a", stepAnswer: ["[-2,inf)"], problemType: "MultipleChoice", stepTitle: "Use interval notation to indicate all real numbers greater than or equal to-2.", stepBody: "", choices: ["[-2,inf)", "(-2,inf]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

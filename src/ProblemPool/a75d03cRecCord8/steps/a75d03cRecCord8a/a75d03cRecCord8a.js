@@ -1,1 +1,0 @@
-import hints from "./a75d03cRecCord8a-index.js"; const step = {id: "a75d03cRecCord8a", stepAnswer: ["$$y=2x-\\frac{4}{5}$$"], problemType: "TextBox", stepTitle: "$$5y+4=10x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
