@@ -4767,6 +4767,22 @@ const skillModel = {
     aded0eclinear7a: ['solve_linear_inequalities'],
     aded0eclinear8a: ['solve_linear_inequalities'],
     aded0eclinear9a: ['solve_linear_inequalities'],
+    a3d9e92Inequality10a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality11a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality12a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality13a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality14a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality15a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality2a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality3a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality4a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality5a: ['solve_compound_inequalities_with_"and"'],
+    a3d9e92Inequality6a: ['solve_compound_inequalities_with_“or”'],
+    a3d9e92Inequality7a: ['solve_compound_inequalities_with_“or”'],
+    a3d9e92Inequality8a: ['solve_compound_inequalities_with_“or”'],
+    a3d9e92Inequality9a: ['solve_compound_inequalities_with_“or”'],
+    a663ccaintro1a: ['prediction'],
+    a663ccanums1a: ['writing_python_expressions'],
     // Start Inserting
 
 }
