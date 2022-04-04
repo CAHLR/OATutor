@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph10a-index.js"; const step = {id: "a7ea646graph10a", stepAnswer: ["(0, 0),(3,0),(1,0)"], problemType: "TextBox", stepTitle: "Find the t-intercepts of $$C(t)=2t^4-8t^3+6t^2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

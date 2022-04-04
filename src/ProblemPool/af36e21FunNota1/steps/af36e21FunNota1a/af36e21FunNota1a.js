@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota1a-index.js"; const step = {id: "af36e21FunNota1a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is price a function of the item?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

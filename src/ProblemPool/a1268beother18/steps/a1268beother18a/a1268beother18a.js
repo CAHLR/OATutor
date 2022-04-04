@@ -1,1 +1,0 @@
-import hints from "./a1268beother18a-index.js"; const step = {id: "a1268beother18a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt{2x+3}+\\sqrt{x-2}=4$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

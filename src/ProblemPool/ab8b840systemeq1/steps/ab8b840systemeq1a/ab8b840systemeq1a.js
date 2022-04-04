@@ -1,1 +1,0 @@
-import hints from "./ab8b840systemeq1a-index.js"; const step = {id: "ab8b840systemeq1a", stepAnswer: ["No solution"], problemType: "MultipleChoice", stepTitle: "$$x-0.2y=1$$, $$-10x+2y=5$$", stepBody: "", choices: ["$$x=5$$, $$y=1$$", "$$x=2, y=5$$", "No solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

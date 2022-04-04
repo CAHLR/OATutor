@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota14m-index.js"; const step = {id: "af36e21FunNota14m", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$x=y^3$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

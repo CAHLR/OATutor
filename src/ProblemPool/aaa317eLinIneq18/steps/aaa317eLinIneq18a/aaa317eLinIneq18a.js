@@ -1,1 +1,0 @@
-import hints from "./aaa317eLinIneq18a-index.js"; const step = {id: "aaa317eLinIneq18a", stepAnswer: ["$$x<1$$"], problemType: "MultipleChoice", stepTitle: "$$3x-2<1$$", stepBody: "", choices: ["$$x<-3$$", "$$x<2$$", "$$x>1$$", "$$x<1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

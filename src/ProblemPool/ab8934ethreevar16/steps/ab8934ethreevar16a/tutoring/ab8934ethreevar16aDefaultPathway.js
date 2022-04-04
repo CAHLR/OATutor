@@ -1,1 +1,0 @@
-var hints = [{id: "ab8934ethreevar16a-h1", type: "hint", dependencies: [], title: "Eliminate the X Variable", text: "To eliminate x, multiply the first equation by -2 and add the result to the third equation. We get $$-y+3z=-4$$. If we add this to the second equation, we get $$0=-3$$, which is false. So, the system is inconsistent.", variabilization: {}}, ]; export {hints};
