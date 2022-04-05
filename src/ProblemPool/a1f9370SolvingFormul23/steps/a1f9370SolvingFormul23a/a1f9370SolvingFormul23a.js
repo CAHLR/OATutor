@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul23a-index.js"; const step = {id: "a1f9370SolvingFormul23a", stepAnswer: ["$$a=\\frac{2h-108t}{t^2}$$"], problemType: "TextBox", stepTitle: "$$h=54t+\\frac{1}{2} {at}^2$$ for a", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
