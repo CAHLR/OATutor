@@ -1,1 +1,0 @@
-import steps from "./afb3ccdlang6-index.js"; const problem = {id: "afb3ccdlang6", title: "Evaluate an Expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Use the Language of Algebra", courseName: "OpenStax: Intermediate Algebra"}; export { problem };
