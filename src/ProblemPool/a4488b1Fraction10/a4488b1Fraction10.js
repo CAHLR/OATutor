@@ -1,0 +1,1 @@
+import steps from "./a4488b1Fraction10-index.js"; const problem = {id: "a4488b1Fraction10", title: "Evaluate Variable Expressions with Fraction", body: "Evaluate the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.3 Fractions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

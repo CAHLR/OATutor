@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear30a-index.js"; const step = {id: "aded0eclinear30a", stepAnswer: ["$$p<125$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$-25<\\frac{p}{-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

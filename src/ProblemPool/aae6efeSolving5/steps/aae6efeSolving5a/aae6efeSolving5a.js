@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving5a-index.js"; const step = {id: "aae6efeSolving5a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "The sum of four times a number and two is fourteen. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

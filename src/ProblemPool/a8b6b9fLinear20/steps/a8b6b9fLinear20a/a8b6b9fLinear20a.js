@@ -1,0 +1,1 @@
+import hints from "./a8b6b9fLinear20a-index.js"; const step = {id: "a8b6b9fLinear20a", stepAnswer: ["2.5"], problemType: "TextBox", stepTitle: "$$\\frac{1}{5} \\left(15c+10\\right)=c+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

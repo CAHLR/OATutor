@@ -1,0 +1,1 @@
+import hints from "./a8b6b9fLinear8a-index.js"; const step = {id: "a8b6b9fLinear8a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\frac{2}{3} \\left(9x-12\\right)=8+2x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
