@@ -1,0 +1,1 @@
+import hints from "./ae45a45int2a-index.js"; const step = {id: "ae45a45int2a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "15-|3(8-5)|", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
