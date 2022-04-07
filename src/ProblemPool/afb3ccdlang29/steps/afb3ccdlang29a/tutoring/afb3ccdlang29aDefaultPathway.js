@@ -1,1 +1,0 @@
-var hints = [{id: "afb3ccdlang29a-h1", type: "hint", dependencies: [], title: "Plugging In For x", text: "if $$x=3$$ in $$x^5$$, then we have $$3^5$$", variabilization: {}}, {id: "afb3ccdlang29a-h2", type: "hint", dependencies: ["afb3ccdlang29a-h1"], title: "Simplifying the Expression", text: "$$3^5=243$$", variabilization: {}}, ]; export {hints};
