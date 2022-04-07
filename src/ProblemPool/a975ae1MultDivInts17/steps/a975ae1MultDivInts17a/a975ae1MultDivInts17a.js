@@ -1,0 +1,1 @@
+import hints from "./a975ae1MultDivInts17a-index.js"; const step = {id: "a975ae1MultDivInts17a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$-1\\left(-14\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "ae45a45int7a-h1", type: "hint", dependencies: [], title: "Subtract 28 from 44", text: "", variabilization: {}}, ]; export {hints};
