@@ -1,0 +1,1 @@
+import hints from "./ae45a45int10b-index.js"; const step = {id: "ae45a45int10b", stepAnswer: ["-65"], problemType: "TextBox", stepTitle: "13 * -5", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

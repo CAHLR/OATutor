@@ -1,0 +1,1 @@
+import steps from "./ab3cfa1intro1-index.js"; const problem = {id: "ab3cfa1intro1", title: "Prediction", body: "", steps: steps, variabilization: {}, oer: "Data 8", lesson: "##Introduction", courseName: "Data Science Content"}; export { problem };
