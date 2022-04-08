@@ -1,1 +1,0 @@
-import hints from "./ab6a46ageo6a-index.js"; const step = {id: "ab6a46ageo6a", stepAnswer: ["$$\\frac{-2}{729}$$"], problemType: "TextBox", stepTitle: "a_n={-2,2/3,-2/9,2/27,...}. Find $$a_7$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

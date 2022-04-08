@@ -1,1 +1,0 @@
-import hints from "./a2a280bgaussian12a-index.js"; const step = {id: "a2a280bgaussian12a", stepAnswer: ["(2,1)"], problemType: "TextBox", stepTitle: "$$4x+3y=11$$ $$x-3y=-1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

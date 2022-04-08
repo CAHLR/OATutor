@@ -1,1 +1,0 @@
-import steps from "./a1f32dfFormula15-index.js"; const problem = {id: "a1f32dfFormula15", title: "$$P=a+b+c$$", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "2.6 Solve a Formula for a Specific Variable ", courseName: "Openstax: Elementary Algebra"}; export { problem };

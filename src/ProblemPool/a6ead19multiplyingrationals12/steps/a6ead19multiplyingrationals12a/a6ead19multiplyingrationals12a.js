@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplyingrationals12a-index.js"; const step = {id: "a6ead19multiplyingrationals12a", stepAnswer: ["-6(x+3)/(x+2)"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{12x-6x^2}{x^2+8x}$$ * $$\\left(x^2+11x+24\\right) \\left(x^2-4\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

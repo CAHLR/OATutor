@@ -1,1 +1,0 @@
-import hints from "./aaff50dradical20a-index.js"; const step = {id: "aaff50dradical20a", stepAnswer: ["$$10\\sqrt{2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{200}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

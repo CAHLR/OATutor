@@ -1,1 +1,0 @@
-import hints from "./a01e792probsolve2a-index.js"; const step = {id: "a01e792probsolve2a", stepAnswer: ["26,28,30"], problemType: "MultipleChoice", stepTitle: "Find three consecutive even integers whose sum is 84", stepBody: "", choices: ["20,22,24", "22,24,28", "26,28,30", "27,28,29"], answerType: "string", hints: hints, variabilization: {}}; export {step};

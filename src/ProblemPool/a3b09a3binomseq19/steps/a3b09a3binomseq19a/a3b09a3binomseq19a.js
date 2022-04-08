@@ -1,1 +1,0 @@
-import hints from "./a3b09a3binomseq19a-index.js"; const step = {id: "a3b09a3binomseq19a", stepAnswer: ["$$1469664x^5 y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(6x-3y\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

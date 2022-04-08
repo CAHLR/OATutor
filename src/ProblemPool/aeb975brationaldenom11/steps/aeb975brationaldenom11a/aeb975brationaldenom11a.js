@@ -1,1 +1,0 @@
-import hints from "./aeb975brationaldenom11a-index.js"; const step = {id: "aeb975brationaldenom11a", stepAnswer: ["$$\\frac{3b+20a}{36a^3 b^3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{12a^3 b^2}+\\frac{5}{9a^2 b^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

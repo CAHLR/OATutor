@@ -1,1 +1,0 @@
-import hints from "./a3c2b68root5a-index.js"; const step = {id: "a3c2b68root5a", stepAnswer: ["$$180p^2 \\sqrt{3}$$"], problemType: "TextBox", stepTitle: "$$10\\sqrt{6p^3} 3\\sqrt{18p}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

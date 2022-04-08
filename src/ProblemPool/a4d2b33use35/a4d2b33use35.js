@@ -1,1 +1,0 @@
-import steps from "./a4d2b33use35-index.js"; const problem = {id: "a4d2b33use35", title: "Simplifying Expressions", body: "Simplify the expression.", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "1.2 Use the Language of Algebra", courseName: "Openstax: Elementary Algebra"}; export { problem };

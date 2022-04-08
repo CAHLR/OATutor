@@ -1,1 +1,0 @@
-import hints from "./a41316cmatrices3a-index.js"; const step = {id: "a41316cmatrices3a", stepAnswer: ["$$\\begin{bmatrix} 1 & 14 \\\\ 86 & 109 \\\\ 27 & 10 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$C+F$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

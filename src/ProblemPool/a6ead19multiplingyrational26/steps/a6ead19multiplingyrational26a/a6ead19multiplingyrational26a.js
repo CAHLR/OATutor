@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational26a-index.js"; const step = {id: "a6ead19multiplingyrational26a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{35d-7d^2}{d^2+7d} \\left(d^2+12d+35\\right)}{d^2-25}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

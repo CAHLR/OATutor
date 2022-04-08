@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational20a-index.js"; const step = {id: "a6ead19multiplingyrational20a", stepAnswer: ["$$\\frac{35}{32}$$"], problemType: "TextBox", stepTitle: "$$\\frac{21}{36} \\frac{45}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

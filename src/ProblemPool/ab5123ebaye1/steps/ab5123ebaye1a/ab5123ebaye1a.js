@@ -1,1 +1,0 @@
-import hints from "./ab5123ebaye1a-index.js"; const step = {id: "ab5123ebaye1a", stepAnswer: ["0.09"], problemType: "TextBox", stepTitle: "What is the probability that there is a dangerous fire when there is smoke? Round your answer to two decimal places", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

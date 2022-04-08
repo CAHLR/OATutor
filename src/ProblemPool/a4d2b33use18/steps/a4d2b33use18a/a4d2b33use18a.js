@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use18a-index.js"; const step = {id: "a4d2b33use18a", stepAnswer: ["5x, 2y"], problemType: "MultipleChoice", stepTitle: "Identify the terms in the expression: $$5x+2y$$", stepBody: "", choices: ["5x, 2y", "5, x, 2, y"], answerType: "string", hints: hints, variabilization: {}}; export {step};

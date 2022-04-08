@@ -1,1 +1,0 @@
-import hints from "./a60a373solverat16a-index.js"; const step = {id: "a60a373solverat16a", stepAnswer: ["$$a=10$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{a}+\\frac{2}{5}=\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
