@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use28a-index.js"; const step = {id: "a4d2b33use28a", stepAnswer: ["Expression"], problemType: "MultipleChoice", stepTitle: "$$\\frac{y^3}{14}$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints, variabilization: {}}; export {step};

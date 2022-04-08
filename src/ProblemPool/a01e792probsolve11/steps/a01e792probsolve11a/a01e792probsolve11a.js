@@ -1,1 +1,0 @@
-import hints from "./a01e792probsolve11a-index.js"; const step = {id: "a01e792probsolve11a", stepAnswer: ["19"], problemType: "TextBox", stepTitle: "The difference of a number and six is 13. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a0351f0parabola8-index.js"; const problem = {id: "a0351f0parabola8", title: "Find Components of the Graph", body: "Identify the directrix of the graph:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.3 The Parabola", courseName: "Openstax: College Algebra"}; export { problem };

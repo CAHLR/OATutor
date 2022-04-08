@@ -1,1 +1,0 @@
-import hints from "./a5c2168rotation5a-index.js"; const step = {id: "a5c2168rotation5a", stepAnswer: ["Ellipse"], problemType: "MultipleChoice", stepTitle: "$$5x^2+2\\sqrt{3} x y+2y^2-5=0$$", stepBody: "", choices: ["Circle", "Parabola", "Ellipse", "Hyperbola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-var hints = [{id: "aa5ef86inv5a-h1", type: "hint", dependencies: [], title: "Function of the Identity Matrix", text: "Multiplying by the identity matrix does not change the entries of the original matrix; it is like multiplying by one.", variabilization: {}}, ]; export {hints};

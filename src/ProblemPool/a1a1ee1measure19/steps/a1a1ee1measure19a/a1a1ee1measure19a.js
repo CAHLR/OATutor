@@ -1,1 +1,0 @@
-import hints from "./a1a1ee1measure19a-index.js"; const step = {id: "a1a1ee1measure19a", stepAnswer: ["76"], problemType: "TextBox", stepTitle: "Jon is 6 feet 4 inches tall. Convert his height to inches.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

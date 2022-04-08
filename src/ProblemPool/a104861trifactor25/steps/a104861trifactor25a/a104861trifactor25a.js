@@ -1,1 +1,0 @@
-import hints from "./a104861trifactor25a-index.js"; const step = {id: "a104861trifactor25a", stepAnswer: ["$$10{\\left(x+4\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$10k^2+80k+160$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

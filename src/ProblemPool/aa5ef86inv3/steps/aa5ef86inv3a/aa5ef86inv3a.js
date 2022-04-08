@@ -1,1 +1,0 @@
-import hints from "./aa5ef86inv3a-index.js"; const step = {id: "aa5ef86inv3a", stepAnswer: ["$$\\begin{bmatrix} -1 & 1 & 0 \\\\ -1 & 0 & 1 \\\\ 6 & -2 & -3 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 2 & 3 & 1 \\\\ 3 & 3 & 1 \\\\ 2 & 4 & 1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

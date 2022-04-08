@@ -1,1 +1,0 @@
-var hints = [{id: "a4b9bbfrationalnums1b-h1", type: "hint", dependencies: [], title: "Rational Exponents", text: "The denominator of the exponent is 3, so the index is 3.", variabilization: {}}, ]; export {hints};

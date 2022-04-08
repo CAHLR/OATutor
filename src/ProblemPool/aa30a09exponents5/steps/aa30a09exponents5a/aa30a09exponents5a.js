@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents5a-index.js"; const step = {id: "aa30a09exponents5a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "$$\\frac{1}{4^{\\left(-3\\right)}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

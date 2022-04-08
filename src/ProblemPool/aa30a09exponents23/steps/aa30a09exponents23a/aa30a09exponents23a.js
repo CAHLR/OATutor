@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents23a-index.js"; const step = {id: "aa30a09exponents23a", stepAnswer: ["$$\\frac{-\\left(14k^5\\right)}{j^3}$$"], problemType: "TextBox", stepTitle: "$$\\left(-2j^{-5} k^8\\right) 7j^2 k^{-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply11a-index.js"; const step = {id: "aafc2dcMultiply11a", stepAnswer: ["34"], problemType: "TextBox", stepTitle: "The difference of 13 and -21.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

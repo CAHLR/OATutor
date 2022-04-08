@@ -1,1 +1,0 @@
-import hints from "./acff542gra29a-index.js"; const step = {id: "acff542gra29a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "The graphs are in the order A, B, and C.", stepBody: "##figure1.gif## ##figure2.gif## ##figure3.gif## ", choices: ["A", "B", "C"], answerType: "string", hints: hints, variabilization: {}}; export {step};

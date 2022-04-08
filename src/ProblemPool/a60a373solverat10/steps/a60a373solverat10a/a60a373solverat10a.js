@@ -1,1 +1,0 @@
-import hints from "./a60a373solverat10a-index.js"; const step = {id: "a60a373solverat10a", stepAnswer: ["$$x=-2$$"], problemType: "TextBox", stepTitle: "$$\\frac{x}{18}+\\frac{x+6}{9} x=\\frac{2}{3x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

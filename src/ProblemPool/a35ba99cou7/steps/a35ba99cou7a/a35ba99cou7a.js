@@ -1,1 +1,0 @@
-import hints from "./a35ba99cou7a-index.js"; const step = {id: "a35ba99cou7a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "How many ways are there to pick a paint color from 5 shades of green, 4 shades of blue, or 7 shades of yellow?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
