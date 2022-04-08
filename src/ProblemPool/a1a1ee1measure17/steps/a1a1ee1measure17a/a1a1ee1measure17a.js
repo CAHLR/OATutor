@@ -1,0 +1,1 @@
+import hints from "./a1a1ee1measure17a-index.js"; const step = {id: "a1a1ee1measure17a", stepAnswer: ["7920"], problemType: "TextBox", stepTitle: "Ulises lives 1.5 miles from school. Convert the distance to feet.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

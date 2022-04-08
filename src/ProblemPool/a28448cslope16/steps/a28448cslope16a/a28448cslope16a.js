@@ -1,0 +1,1 @@
+import hints from "./a28448cslope16a-index.js"; const step = {id: "a28448cslope16a", stepAnswer: ["Parallel"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{2}{3} x-1$$, $$2x-3y=-2$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

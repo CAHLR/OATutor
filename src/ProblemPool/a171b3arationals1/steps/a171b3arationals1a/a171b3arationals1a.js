@@ -1,0 +1,1 @@
+import hints from "./a171b3arationals1a-index.js"; const step = {id: "a171b3arationals1a", stepAnswer: ["$$\\frac{-5}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4b-3}{2b+5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

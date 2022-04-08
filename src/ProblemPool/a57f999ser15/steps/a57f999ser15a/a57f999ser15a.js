@@ -1,0 +1,1 @@
+import hints from "./a57f999ser15a-index.js"; const step = {id: "a57f999ser15a", stepAnswer: ["511"], problemType: "TextBox", stepTitle: "Solving Summations", stepBody: "Solve the summation in the attached image.##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

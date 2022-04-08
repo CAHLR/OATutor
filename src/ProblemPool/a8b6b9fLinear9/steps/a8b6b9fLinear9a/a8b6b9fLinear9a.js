@@ -1,0 +1,1 @@
+import hints from "./a8b6b9fLinear9a-index.js"; const step = {id: "a8b6b9fLinear9a", stepAnswer: ["$$\\frac{-9}{2}$$"], problemType: "TextBox", stepTitle: "$$4(x-1)-2=5\\left(2x+3\\right)+6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

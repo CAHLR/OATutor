@@ -1,0 +1,1 @@
+import hints from "./a012999exa10a-index.js"; const step = {id: "a012999exa10a", stepAnswer: ["$$-8y^3-6y^2+10y$$"], problemType: "TextBox", stepTitle: "$$-2y\\left(4y^2+3y-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

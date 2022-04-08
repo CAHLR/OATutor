@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads33a-index.js"; const step = {id: "a2ef97dGrphingQuads33a", stepAnswer: ["(0,-49)"], problemType: "MultipleChoice", stepTitle: "$$y=4x^2-49$$", stepBody: "", choices: ["(0,-16)", "(0,-25)", "(0,-36)", "(0,-49)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

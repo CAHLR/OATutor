@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul6a-index.js"; const step = {id: "a870b02DivMul6a", stepAnswer: ["144"], problemType: "TextBox", stepTitle: "$$\\frac{b}{\\left(-6\\right)}=-24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

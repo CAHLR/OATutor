@@ -1,0 +1,1 @@
+import steps from "./a4b48f4RealNums29-index.js"; const problem = {id: "a4b48f4RealNums29", title: "Use the Commutative and Associative Properties", body: "Simplify the following exercise.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.5 Properties of Real Numbers", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

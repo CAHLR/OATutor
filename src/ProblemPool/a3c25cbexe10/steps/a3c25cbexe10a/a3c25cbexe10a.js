@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe10a-index.js"; const step = {id: "a3c25cbexe10a", stepAnswer: ["$$\\left(y+1\\right) \\left(y-7\\right)$$"], problemType: "TextBox", stepTitle: "$$y^2-6y-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

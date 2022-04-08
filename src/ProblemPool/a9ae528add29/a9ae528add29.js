@@ -1,0 +1,1 @@
+import steps from "./a9ae528add29-index.js"; const problem = {id: "a9ae528add29", title: "Fill in <, >, or $$=$$ for each of the following pairs of numbers:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "1.3 Add and Subtract Integers", courseName: "Openstax: Elementary Algebra"}; export { problem };

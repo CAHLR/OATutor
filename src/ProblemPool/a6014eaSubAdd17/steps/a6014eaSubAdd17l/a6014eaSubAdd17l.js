@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd17l-index.js"; const step = {id: "a6014eaSubAdd17l", stepAnswer: ["$$y=\\frac{27}{20}$$"], problemType: "TextBox", stepTitle: "$$y-\\frac{3}{4}=\\frac{3}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

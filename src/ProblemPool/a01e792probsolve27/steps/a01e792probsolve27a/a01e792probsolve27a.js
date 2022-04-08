@@ -1,0 +1,1 @@
+import hints from "./a01e792probsolve27a-index.js"; const step = {id: "a01e792probsolve27a", stepAnswer: ["-2,-3"], problemType: "TextBox", stepTitle: "One number is three more than three times another. Their sum is -5. Find the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

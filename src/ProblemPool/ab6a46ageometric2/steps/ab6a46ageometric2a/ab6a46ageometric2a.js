@@ -1,0 +1,1 @@
+import hints from "./ab6a46ageometric2a-index.js"; const step = {id: "ab6a46ageometric2a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "48,12,4, 2,...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

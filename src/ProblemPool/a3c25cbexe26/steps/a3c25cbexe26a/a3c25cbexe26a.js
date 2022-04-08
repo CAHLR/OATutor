@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe26a-index.js"; const step = {id: "a3c25cbexe26a", stepAnswer: ["$$\\left(x+5\\right) \\left(x+20\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$x^2+25x+100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3b09a3binomseq22a-index.js"; const step = {id: "a3b09a3binomseq22a", stepAnswer: ["$$35x^3 y^4$$"], problemType: "TextBox", stepTitle: "$${\\left(x-y\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

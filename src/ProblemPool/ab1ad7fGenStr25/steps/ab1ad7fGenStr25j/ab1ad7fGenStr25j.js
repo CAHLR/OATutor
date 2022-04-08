@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr25j-index.js"; const step = {id: "ab1ad7fGenStr25j", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$\\frac{3}{5} \\left(10x-5\\right)=27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

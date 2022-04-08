@@ -1,0 +1,1 @@
+import hints from "./a35ba99cou16a-index.js"; const step = {id: "a35ba99cou16a", stepAnswer: ["60480"], problemType: "TextBox", stepTitle: "P(9,6)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

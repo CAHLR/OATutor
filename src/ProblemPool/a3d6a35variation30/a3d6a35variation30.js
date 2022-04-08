@@ -1,0 +1,1 @@
+import steps from "./a3d6a35variation30-index.js"; const problem = {id: "a3d6a35variation30", title: "Solving Relating Equations", body: "Find the equation that relates x and y.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.9 Use Direct and Inverse Variation", courseName: "Openstax: Elementary Algebra"}; export { problem };
