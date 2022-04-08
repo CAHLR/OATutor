@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions5a-index.js"; const step = {id: "a02e810proportions5a", stepAnswer: ["65"], problemType: "TextBox", stepTitle: "$$\\frac{91}{b}=\\frac{7}{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

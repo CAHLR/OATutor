@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational21a-index.js"; const step = {id: "ab62b81rational21a", stepAnswer: ["y-8"], problemType: "TextBox", stepTitle: "$$\\frac{y^2}{y+8}-\\frac{64}{y+8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

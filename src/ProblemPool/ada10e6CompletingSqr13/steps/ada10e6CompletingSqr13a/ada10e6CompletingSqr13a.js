@@ -1,0 +1,1 @@
+import hints from "./ada10e6CompletingSqr13a-index.js"; const step = {id: "ada10e6CompletingSqr13a", stepAnswer: ["1 or -3"], problemType: "MultipleChoice", stepTitle: "$$u^2+2u=3$$", stepBody: "", choices: ["-1 or -3", "-1 or 3", "1 or -3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

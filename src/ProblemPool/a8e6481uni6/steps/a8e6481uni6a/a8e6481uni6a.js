@@ -1,0 +1,1 @@
+import hints from "./a8e6481uni6a-index.js"; const step = {id: "a8e6481uni6a", stepAnswer: ["55"], problemType: "TextBox", stepTitle: "Find her parents’ average speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

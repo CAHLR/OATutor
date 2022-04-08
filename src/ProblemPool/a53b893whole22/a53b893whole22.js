@@ -1,0 +1,1 @@
+import steps from "./a53b893whole22-index.js"; const problem = {id: "a53b893whole22", title: "Finding Place Values", body: "Given the number 63,407,218, find the place value of the following digits.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Introduction to Whole Numbers", courseName: "Openstax: Elementary Algebra"}; export { problem };

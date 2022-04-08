@@ -1,0 +1,1 @@
+import hints from "./afb3ccdlang5a-index.js"; const step = {id: "afb3ccdlang5a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "Simplify: 5+23+3*[6-3*(4-2)].", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

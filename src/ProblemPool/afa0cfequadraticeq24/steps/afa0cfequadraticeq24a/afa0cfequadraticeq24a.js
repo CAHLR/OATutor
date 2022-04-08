@@ -1,0 +1,1 @@
+import hints from "./afa0cfequadraticeq24a-index.js"; const step = {id: "afa0cfequadraticeq24a", stepAnswer: ["11 or -1"], problemType: "MultipleChoice", stepTitle: "$${\\left(y-5\\right)}^2=36$$", stepBody: "", choices: ["11 or -1", "9 or -2", "7 or -3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

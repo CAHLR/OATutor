@@ -1,0 +1,1 @@
+var hints = [{id: "a0351f0theparabola21a-h1", type: "hint", dependencies: [], title: "Finding The Characteristics", text: "Since this parabola is already in standard form, we know that the vertex is (-4,-1) and that $$p=6$$. This means that the focus is (-4,5) and that the directrix is $$y=-7$$", variabilization: {}}, ]; export {hints};

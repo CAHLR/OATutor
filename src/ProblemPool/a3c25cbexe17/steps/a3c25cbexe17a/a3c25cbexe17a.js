@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe17a-index.js"; const step = {id: "a3c25cbexe17a", stepAnswer: ["$$\\left(y+7\\right) \\left(y+1\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$y^2+8y+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

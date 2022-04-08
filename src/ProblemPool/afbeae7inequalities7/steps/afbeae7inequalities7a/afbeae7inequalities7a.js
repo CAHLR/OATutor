@@ -1,0 +1,1 @@
+import hints from "./afbeae7inequalities7a-index.js"; const step = {id: "afbeae7inequalities7a", stepAnswer: ["$$y<2x-4$$"], problemType: "MultipleChoice", stepTitle: "The boundary line shown is $$y=2x-4$$.", stepBody: "", choices: ["$$y<2x-4$$", "$$y \\geq 2x-4Iy \\leq 2x-4Iy>2x-4Iy<2x-4$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

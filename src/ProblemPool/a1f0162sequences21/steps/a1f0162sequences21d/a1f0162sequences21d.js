@@ -1,0 +1,1 @@
+import hints from "./a1f0162sequences21d-index.js"; const step = {id: "a1f0162sequences21d", stepAnswer: ["-17"], problemType: "TextBox", stepTitle: "Write the fourth term of the sequence defined by the recursive formula. $$a_1=9$$, $$a_n=3a_n-20$$ for $$a_n>1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

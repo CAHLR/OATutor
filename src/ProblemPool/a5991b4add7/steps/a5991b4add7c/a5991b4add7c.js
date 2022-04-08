@@ -1,0 +1,1 @@
+import hints from "./a5991b4add7c-index.js"; const step = {id: "a5991b4add7c", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$y^3-8y^2+2y-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

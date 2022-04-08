@@ -1,0 +1,1 @@
+var hints = [{id: "a10b60arealnumbers4b-h1", type: "hint", dependencies: [], title: "Simplifying Odd Roots", text: "When taking the nth root of some integer x $$ \\geq $$ 2, if n is odd, the answer is x", variabilization: {}}, ]; export {hints};

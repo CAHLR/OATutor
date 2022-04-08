@@ -1,0 +1,1 @@
+import hints from "./af60b4fellipse14b-index.js"; const step = {id: "af60b4fellipse14b", stepAnswer: ["(10,0) and (-10,0)"], problemType: "MultipleChoice", stepTitle: "Identify the end points of the major axis", stepBody: "", choices: ["(10,0) and (-10,0)", "(9,0) and (-9,0)", "(8,0) and (-8,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
