@@ -1,0 +1,1 @@
+import hints from "./a1a1ee1measure18a-index.js"; const step = {id: "a1a1ee1measure18a", stepAnswer: ["5400"], problemType: "TextBox", stepTitle: "Rocco waited 1.5 hours for his appointment. Convert the time to seconds.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

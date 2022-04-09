@@ -1,0 +1,1 @@
+import hints from "./a1f0162sequences19d-index.js"; const step = {id: "a1f0162sequences19d", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Write the fourth term of the sequence defined by the explicit formula $$a_n=\\frac{4n}{{\\left(-2\\right)}^n}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a35b0d9quadratic23a-index.js"; const step = {id: "a35b0d9quadratic23a", stepAnswer: ["Minimum"], problemType: "MultipleChoice", stepTitle: "$$f(x)=4x^2+x-1$$", stepBody: "", choices: ["Minimum", "Maximum"], answerType: "string", hints: hints, variabilization: {}}; export {step};

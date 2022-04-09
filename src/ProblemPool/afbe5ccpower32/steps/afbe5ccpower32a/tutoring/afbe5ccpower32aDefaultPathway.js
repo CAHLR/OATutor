@@ -1,0 +1,1 @@
+var hints = [{id: "afbe5ccpower32a-h1", type: "hint", dependencies: [], title: "The coefficient is 3 (positive)", text: "", variabilization: {}}, {id: "afbe5ccpower32a-h2", type: "hint", dependencies: ["afbe5ccpower32a-h1"], title: "The exponent of the power function is 2 (an even number)", text: "", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a975ae1MultDivInts30a-index.js"; const step = {id: "a975ae1MultDivInts30a", stepAnswer: ["187"], problemType: "TextBox", stepTitle: "Diontre has a balance of -$38 in his checking account. He deposits $225 to the account. What is the new balance?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

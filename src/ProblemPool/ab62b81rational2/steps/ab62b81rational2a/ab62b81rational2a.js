@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational2a-index.js"; const step = {id: "ab62b81rational2a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{16}+\\frac{5}{16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

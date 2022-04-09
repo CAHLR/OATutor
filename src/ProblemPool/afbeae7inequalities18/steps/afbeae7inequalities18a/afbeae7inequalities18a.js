@@ -1,0 +1,1 @@
+import hints from "./afbeae7inequalities18a-index.js"; const step = {id: "afbeae7inequalities18a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$y \\leq \\left(-\\frac{1}{2}\\right) x+4$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

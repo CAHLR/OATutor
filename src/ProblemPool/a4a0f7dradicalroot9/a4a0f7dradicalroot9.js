@@ -1,0 +1,1 @@
+import steps from "./a4a0f7dradicalroot9-index.js"; const problem = {id: "a4a0f7dradicalroot9", title: "Falling Objects", body: "Christy dropped her sunglasses from a bridge 400 feet above a river.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "9.6 Solve Equations with Square Roots", courseName: "Openstax: Elementary Algebra"}; export { problem };

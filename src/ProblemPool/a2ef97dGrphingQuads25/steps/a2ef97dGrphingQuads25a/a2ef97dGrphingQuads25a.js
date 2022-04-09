@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads25a-index.js"; const step = {id: "a2ef97dGrphingQuads25a", stepAnswer: ["$$x=-5$$"], problemType: "TextBox", stepTitle: "$$x^2+10x+25$$", stepBody: "Find the axis of symmmetry. Input your answer as $$x=(axis$$ of symmetry).", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

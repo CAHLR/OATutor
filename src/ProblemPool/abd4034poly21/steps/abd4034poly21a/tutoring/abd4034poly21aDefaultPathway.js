@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly21a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by 5y, so we get $$5y^2$$ -11y", text: "", variabilization: {}}, ]; export {hints};

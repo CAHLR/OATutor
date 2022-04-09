@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe19a-index.js"; const step = {id: "ac0c1d3spe19a", stepAnswer: ["$$\\frac{1}{25} x^2-\\frac{2}{35} x y+\\frac{1}{49} y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{1}{5} x-\\frac{1}{7} y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

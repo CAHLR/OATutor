@@ -1,0 +1,1 @@
+import steps from "./a9ed39ahyperbola20-index.js"; const problem = {id: "a9ed39ahyperbola20", title: "The Hyperbola", body: "$$\\frac{{\\left(y-3\\right)}^2}{3^2}-\\frac{{\\left(x+5\\right)}^2}{6^2}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.2 The Hyperbola", courseName: "Openstax: College Algebra"}; export { problem };

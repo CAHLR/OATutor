@@ -1,0 +1,1 @@
+import hints from "./abd4034poly23a-index.js"; const step = {id: "abd4034poly23a", stepAnswer: ["$$-5y^2+3y$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{25y^2-15y}{\\left(-5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "a4d2b33use2a-h1", type: "hint", dependencies: [], title: "Substitute", text: "Substitute 4 for x and simplify the expression $$4^2$$.", variabilization: {}}, ]; export {hints};

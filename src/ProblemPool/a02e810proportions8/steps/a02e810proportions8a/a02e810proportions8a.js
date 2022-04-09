@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions8a-index.js"; const step = {id: "a02e810proportions8a", stepAnswer: ["33"], problemType: "TextBox", stepTitle: "$$\\frac{y}{y+55}=\\frac{3}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

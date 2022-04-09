@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr1a-index.js"; const step = {id: "ab1ad7fGenStr1a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$-6\\left(x+3\\right)=24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

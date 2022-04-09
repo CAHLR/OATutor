@@ -1,0 +1,1 @@
+import hints from "./ad37b31probability16a-index.js"; const step = {id: "ad37b31probability16a", stepAnswer: ["HH, HT, TT, TH"], problemType: "MultipleChoice", stepTitle: "What is the sample space?", stepBody: "", choices: ["HH, HT, TT, TH", "HT, TH", "TT, HH, HT", "HH,TT"], answerType: "string", hints: hints, variabilization: {}}; export {step};

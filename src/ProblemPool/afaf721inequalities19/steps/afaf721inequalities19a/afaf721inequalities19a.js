@@ -1,0 +1,1 @@
+import hints from "./afaf721inequalities19a-index.js"; const step = {id: "afaf721inequalities19a", stepAnswer: ["[-17/24,inf)"], problemType: "MultipleChoice", stepTitle: "$$b+\\frac{7}{8} \\geq \\frac{1}{6}$$", stepBody: "", choices: ["[-17/24,inf)", "$$\\frac{17}{24} \\infty$$", "(-inf,-17/24]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

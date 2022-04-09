@@ -1,0 +1,1 @@
+import hints from "./a8583b4FracDec7a-index.js"; const step = {id: "a8583b4FracDec7a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Solve: $$a+\\frac{3}{4}=\\frac{3}{8} a-\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

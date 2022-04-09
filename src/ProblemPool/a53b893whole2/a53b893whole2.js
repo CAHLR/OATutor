@@ -1,0 +1,1 @@
+import steps from "./a53b893whole2-index.js"; const problem = {id: "a53b893whole2", title: "How to Round Whole Numbers", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Introduction to Whole Numbers", courseName: "Openstax: Elementary Algebra"}; export { problem };

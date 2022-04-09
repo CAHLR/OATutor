@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use21a-index.js"; const step = {id: "a4d2b33use21a", stepAnswer: ["81"], problemType: "TextBox", stepTitle: "$$3^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

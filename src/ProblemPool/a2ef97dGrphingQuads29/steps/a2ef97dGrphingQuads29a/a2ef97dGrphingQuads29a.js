@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads29a-index.js"; const step = {id: "a2ef97dGrphingQuads29a", stepAnswer: ["(1.5,4)"], problemType: "MultipleChoice", stepTitle: "$$y=\\left(-4x^2\\right)+12x-5$$", stepBody: "", choices: ["(1.5,4)", "(2,3)", "(3.5,1)", "(7,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

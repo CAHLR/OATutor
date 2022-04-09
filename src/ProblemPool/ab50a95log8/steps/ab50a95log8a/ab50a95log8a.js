@@ -1,0 +1,1 @@
+import hints from "./ab50a95log8a-index.js"; const step = {id: "ab50a95log8a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$y=\\log_{2}\\left(\\frac{1}{32}\\right)$$", stepBody: "$$y=\\log_{2}\\left(\\frac{1}{32}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

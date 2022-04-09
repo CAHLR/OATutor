@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog19a-index.js"; const step = {id: "a512f5aexplog19a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Solve $$8^{x+2}={16}^{x+1}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

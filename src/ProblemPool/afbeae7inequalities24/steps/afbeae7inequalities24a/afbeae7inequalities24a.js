@@ -1,0 +1,1 @@
+import hints from "./afbeae7inequalities24a-index.js"; const step = {id: "afbeae7inequalities24a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "$$3x+2y \\geq -6$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

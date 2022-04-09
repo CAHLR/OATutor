@@ -1,0 +1,1 @@
+import steps from "./a9ae528add16-index.js"; const problem = {id: "a9ae528add16", title: "Order each of the following pairs of numbers, using < or >:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "1.3 Add and Subtract Integers", courseName: "Openstax: Elementary Algebra"}; export { problem };

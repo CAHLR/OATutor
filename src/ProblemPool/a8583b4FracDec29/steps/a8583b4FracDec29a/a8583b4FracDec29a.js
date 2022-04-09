@@ -1,0 +1,1 @@
+import hints from "./a8583b4FracDec29a-index.js"; const step = {id: "a8583b4FracDec29a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "Solve: $$0.1d+\\operatorname{0.25}\\left(d+7\\right)=5.25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

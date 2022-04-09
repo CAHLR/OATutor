@@ -1,0 +1,1 @@
+import hints from "./a4488b1Fraction12a-index.js"; const step = {id: "a4488b1Fraction12a", stepAnswer: ["$$\\frac{103}{60}$$"], problemType: "TextBox", stepTitle: "$$\\frac{13}{15}+\\frac{17}{20}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand9a-index.js"; const step = {id: "ac9c764addand9a", stepAnswer: ["$$\\frac{1}{52}$$"], problemType: "TextBox", stepTitle: "$$\\frac{{\\left(\\frac{1}{2}\\right)}^2}{4+3^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

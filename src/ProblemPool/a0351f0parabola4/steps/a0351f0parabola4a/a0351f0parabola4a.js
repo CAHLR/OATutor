@@ -1,0 +1,1 @@
+import hints from "./a0351f0parabola4a-index.js"; const step = {id: "a0351f0parabola4a", stepAnswer: ["$$x=-6$$"], problemType: "TextBox", stepTitle: "$$y^2=24x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

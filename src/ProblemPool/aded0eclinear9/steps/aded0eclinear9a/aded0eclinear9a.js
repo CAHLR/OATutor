@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear9a-index.js"; const step = {id: "aded0eclinear9a", stepAnswer: ["(-25, inf)"], problemType: "MultipleChoice", stepTitle: "$$-15<\\frac{3}{5} z$$", stepBody: "", choices: ["(-15, inf)", "[5, inf)", "(-25, inf)", "(-5, inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a9ae528add8-index.js"; const problem = {id: "a9ae528add8", title: "Evaluating Absolute Value Expressions", body: "Evaluate the following absolute value expressions.", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "1.3 Add and Subtract Integers", courseName: "Openstax: Elementary Algebra"}; export { problem };
