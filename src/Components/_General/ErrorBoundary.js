@@ -29,7 +29,8 @@ export default class ErrorBoundary extends React.Component {
         if (this.state.hasError) {
             return <>
                 <div style={{
-                    textAlign: "center"
+                    textAlign: "center",
+                    display: this.props.inline ? "inline" : "block"
                 }}>
                     <i>This {this.props.descriptor || "component"} could not be loaded</i>
                 </div>
