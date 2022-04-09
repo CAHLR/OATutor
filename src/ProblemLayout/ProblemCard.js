@@ -19,6 +19,7 @@ import ProblemInput from "./ProblemInput/ProblemInput";
 import Spacer from "../Components/_General/Spacer";
 import { toast } from "react-toastify";
 import { stagingProp } from "../util/addStagingProperty";
+import ErrorBoundary from "../Components/_General/ErrorBoundary";
 
 
 class ProblemCard extends React.Component {
@@ -211,20 +212,22 @@ class ProblemCard extends React.Component {
 
                     {this.state.showHints && (
                         <div className="Hints">
-                            <HintSystem
-                                problemID={this.props.problemID}
-                                index={this.props.index}
-                                step={this.step}
-                                hints={this.hints}
-                                unlockHint={this.unlockHint}
-                                hintStatus={this.state.hintsFinished}
-                                submitHint={this.submitHint}
-                                seed={this.props.seed}
-                                stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
-                                answerMade={this.props.answerMade}
-                                lesson={this.props.lesson}
-                                courseName={this.props.courseName}
-                            />
+                            <ErrorBoundary componentName={"HintSystem"} descriptor={"hint"}>
+                                <HintSystem
+                                    problemID={this.props.problemID}
+                                    index={this.props.index}
+                                    step={this.step}
+                                    hints={this.hints}
+                                    unlockHint={this.unlockHint}
+                                    hintStatus={this.state.hintsFinished}
+                                    submitHint={this.submitHint}
+                                    seed={this.props.seed}
+                                    stepVars={Object.assign({}, this.props.problemVars, this.step.variabilization)}
+                                    answerMade={this.props.answerMade}
+                                    lesson={this.props.lesson}
+                                    courseName={this.props.courseName}
+                                />
+                            </ErrorBoundary>
                             <Spacer/>
                         </div>
                     )}
