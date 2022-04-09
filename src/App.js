@@ -84,6 +84,10 @@ class App extends React.Component {
             additionalContext: {}
         }
 
+        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+            document["oats-meta-site-hash"] = process.env.REACT_APP_COMMIT_HASH
+        }
+
         const onLocationChange = () => {
             const additionalContext = {}
             const search = window.location.search
