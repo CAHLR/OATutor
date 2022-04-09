@@ -1,1 +1,0 @@
-import hints from "./a01e792probsolve29a-index.js"; const step = {id: "a01e792probsolve29a", stepAnswer: ["47,48"], problemType: "TextBox", stepTitle: "The sum of two consecutive integers is 95. Find the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

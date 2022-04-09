@@ -1,1 +1,0 @@
-import hints from "./afa0cfequadraticeq26a-index.js"; const step = {id: "afa0cfequadraticeq26a", stepAnswer: ["1 or -21"], problemType: "MultipleChoice", stepTitle: "$${\\left(v+10\\right)}^2=121$$", stepBody: "", choices: ["1 or -20", "1 or -21", "4 or -22"], answerType: "string", hints: hints, variabilization: {}}; export {step};

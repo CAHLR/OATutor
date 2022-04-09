@@ -1,1 +1,0 @@
-import hints from "./a5c70bfsquareroots4a-index.js"; const step = {id: "a5c70bfsquareroots4a", stepAnswer: ["$$12\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "$$4\\sqrt{5}+8\\sqrt{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

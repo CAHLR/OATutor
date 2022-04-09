@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational16a-index.js"; const step = {id: "a6ead19multiplingyrational16a", stepAnswer: ["$$\\frac{3}{10}$$"], problemType: "TextBox", stepTitle: "$$\\frac{12}{16}+\\frac{4}{10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

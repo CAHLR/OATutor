@@ -1,1 +1,0 @@
-import hints from "./ac0c1d3spe23a-index.js"; const step = {id: "ac0c1d3spe23a", stepAnswer: ["$$25u^4+90u^2+81$$"], problemType: "TextBox", stepTitle: "$${\\left(5u^2+9\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

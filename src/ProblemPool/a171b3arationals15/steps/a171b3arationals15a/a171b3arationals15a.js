@@ -1,1 +1,0 @@
-import hints from "./a171b3arationals15a-index.js"; const step = {id: "a171b3arationals15a", stepAnswer: ["$$\\frac{8x}{y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{16x^2 y}{2x y^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

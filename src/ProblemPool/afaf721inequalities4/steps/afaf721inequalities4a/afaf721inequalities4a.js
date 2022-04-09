@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities4a-index.js"; const step = {id: "afaf721inequalities4a", stepAnswer: ["(-inf,9/8]"], problemType: "MultipleChoice", stepTitle: "$$n-\\frac{1}{2} \\leq \\frac{5}{8}$$", stepBody: "", choices: ["$$\\frac{9}{8} \\infty$$", "[9/8,inf)", "(-inf,9/8]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

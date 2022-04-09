@@ -1,1 +1,0 @@
-import hints from "./afa0cfequadraticeq22a-index.js"; const step = {id: "afa0cfequadraticeq22a", stepAnswer: ["3 or -3"], problemType: "MultipleChoice", stepTitle: "$$4m^2=36$$", stepBody: "", choices: ["2 or -2", "3 or -3", "4 or -4"], answerType: "string", hints: hints, variabilization: {}}; export {step};

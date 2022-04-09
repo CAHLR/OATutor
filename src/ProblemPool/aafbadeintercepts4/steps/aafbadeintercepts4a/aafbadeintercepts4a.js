@@ -1,1 +1,0 @@
-import hints from "./aafbadeintercepts4a-index.js"; const step = {id: "aafbadeintercepts4a", stepAnswer: ["(3,0)"], problemType: "MultipleChoice", stepTitle: "Find the x intercept of $$2x+y=6$$.", stepBody: "", choices: ["(3,0)", "(3,0)I(6,0)I(-5,0)I(0,-2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

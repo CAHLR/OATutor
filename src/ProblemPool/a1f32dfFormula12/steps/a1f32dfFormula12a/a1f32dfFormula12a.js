@@ -1,1 +1,0 @@
-import hints from "./a1f32dfFormula12a-index.js"; const step = {id: "a1f32dfFormula12a", stepAnswer: ["12000"], problemType: "TextBox", stepTitle: "When $$I=$2, 160$$, $$r=6%$$, $$t=3$$ years", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

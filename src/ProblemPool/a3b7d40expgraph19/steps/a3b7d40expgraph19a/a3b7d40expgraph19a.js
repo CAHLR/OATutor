@@ -1,1 +1,0 @@
-import hints from "./a3b7d40expgraph19a-index.js"; const step = {id: "a3b7d40expgraph19a", stepAnswer: ["$$g(x)=4\\times2^x-2$$"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot2a-index.js"; const step = {id: "a4a0f7dradicalroot2a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "$$\\sqrt{2x-1}=7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

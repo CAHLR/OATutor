@@ -1,1 +1,0 @@
-import hints from "./a0351f0parabola3a-index.js"; const step = {id: "a0351f0parabola3a", stepAnswer: ["(6,0)"], problemType: "MultipleChoice", stepTitle: "Identify the focus of the graph: $$y^2=24x$$", stepBody: "", choices: ["(6,0)", "(5,0)", "(4,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

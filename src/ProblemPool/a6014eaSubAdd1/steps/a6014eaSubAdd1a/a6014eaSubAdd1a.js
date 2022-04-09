@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd1a-index.js"; const step = {id: "a6014eaSubAdd1a", stepAnswer: ["TRUE"], problemType: "MultipleChoice", stepTitle: "$$4x-2=2x+1$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

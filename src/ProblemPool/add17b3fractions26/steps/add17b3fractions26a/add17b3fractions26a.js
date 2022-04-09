@@ -1,1 +1,0 @@
-import hints from "./add17b3fractions26a-index.js"; const step = {id: "add17b3fractions26a", stepAnswer: ["$$\\frac{3z-19}{3z+8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{\\frac{5}{z^2-64}}{\\frac{3}{z+8}}}{\\frac{1}{z}+8-\\frac{2}{z}-8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

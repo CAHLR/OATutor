@@ -1,1 +1,0 @@
-import steps from "./aafbadeintercepts15-index.js"; const problem = {id: "aafbadeintercepts15", title: "Intercepts", body: "Find x and y intercepts from an equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.3 Graph with Intercepts", courseName: "Openstax: Elementary Algebra"}; export { problem };

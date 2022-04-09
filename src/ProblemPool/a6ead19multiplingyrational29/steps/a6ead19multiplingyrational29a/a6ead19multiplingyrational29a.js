@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational29a-index.js"; const step = {id: "a6ead19multiplingyrational29a", stepAnswer: ["$$\\frac{\\left(6-t\\right) \\left(t+3\\right)}{t-5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{t-\\frac{6}{3}-t}{t-\\frac{5}{t^2}-9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

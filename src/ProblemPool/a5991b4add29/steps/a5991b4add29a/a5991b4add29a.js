@@ -1,1 +1,0 @@
-import hints from "./a5991b4add29a-index.js"; const step = {id: "a5991b4add29a", stepAnswer: ["$$-4m^2+n^2$$"], problemType: "TextBox", stepTitle: "Add $$3m^2+n^2-7m^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

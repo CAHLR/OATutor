@@ -1,1 +1,0 @@
-import hints from "./a3d6a35variation17a-index.js"; const step = {id: "a3d6a35variation17a", stepAnswer: ["$$y=\\frac{3}{x}$$"], problemType: "TextBox", stepTitle: "Y varies inversely with x, and $$y=6$$ when $$x=\\frac{1}{2}$$. Write your answer in the form $$y=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

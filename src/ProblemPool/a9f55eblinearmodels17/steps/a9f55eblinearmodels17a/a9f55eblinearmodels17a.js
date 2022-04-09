@@ -1,1 +1,0 @@
-import hints from "./a9f55eblinearmodels17a-index.js"; const step = {id: "a9f55eblinearmodels17a", stepAnswer: ["41100"], problemType: "TextBox", stepTitle: "Predict the population in 2014.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac3d94dProperties23a-index.js"; const step = {id: "ac3d94dProperties23a", stepAnswer: ["$$\\frac{8}{23}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{15} \\frac{8}{23} \\frac{15}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

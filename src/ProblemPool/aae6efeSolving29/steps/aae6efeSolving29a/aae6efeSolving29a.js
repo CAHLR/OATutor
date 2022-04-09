@@ -1,1 +1,0 @@
-import hints from "./aae6efeSolving29a-index.js"; const step = {id: "aae6efeSolving29a", stepAnswer: ["116"], problemType: "TextBox", stepTitle: "Casey deposited $1,450 in a bank account that earned simple interest at an interest rate of 4%. How much interest was earned in two years?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

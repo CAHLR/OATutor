@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents24a-index.js"; const step = {id: "aa30a09exponents24a", stepAnswer: ["$$\\frac{-\\left(40n^3\\right)}{m}$$"], problemType: "TextBox", stepTitle: "$$\\left(-5\\right) m^4 n^6 8m^{-5} n^{-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
