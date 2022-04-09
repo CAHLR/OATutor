@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
+import ErrorBoundary from "../Components/_General/ErrorBoundary";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -284,10 +285,12 @@ class Platform extends React.Component {
                                      history={this.props.history}
                                      courseNum={this.props.courseNum}/> : ""}
                 {this.state.status === "learning" ?
-                    <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
+                    <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                        <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
                              lesson={this.lesson}
                              seed={this.state.seed} lessonNum={this.props.lessonNum}
-                             displayMastery={this.displayMastery}/> : ""}
+                             displayMastery={this.displayMastery}/>
+                    </ErrorBoundary> : ""}
                 {this.state.status === "exhausted" ?
                     <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
                 {this.state.status === "graduated" ?

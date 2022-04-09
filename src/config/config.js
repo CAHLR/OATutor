@@ -4,7 +4,7 @@ import { calculateSemester } from "../util/calculateSemester.js";
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.3.2";
+const SITE_VERSION = "1.3.3";
 
 const SITE_NAME = "Open ITS"
 
