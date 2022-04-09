@@ -1,1 +1,0 @@
-var hints = [{id: "a35b0d9quadratic4a-h1", type: "hint", dependencies: [], title: "Domain of Quadratic Functions", text: "As with any quadratic function, the domain is all real numbers.", variabilization: {}}, ]; export {hints};

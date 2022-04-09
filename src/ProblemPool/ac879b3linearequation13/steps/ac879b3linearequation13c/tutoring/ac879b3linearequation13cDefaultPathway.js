@@ -1,1 +1,0 @@
-var hints = [{id: "ac879b3linearequation13c-h1", type: "hint", dependencies: [], title: "The form of a linear equation is $$y=mx+b$$. According ot this, the slope is $$m=\\frac{4}{5}$$.", text: "", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational13a-index.js"; const step = {id: "ab62b81rational13a", stepAnswer: ["x-3"], problemType: "TextBox", stepTitle: "$$\\frac{x^2}{x+3}-\\frac{9}{x+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

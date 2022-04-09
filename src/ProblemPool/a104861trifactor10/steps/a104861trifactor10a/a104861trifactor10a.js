@@ -1,1 +1,0 @@
-import hints from "./a104861trifactor10a-index.js"; const step = {id: "a104861trifactor10a", stepAnswer: ["$$\\left(9x+5\\right) \\left(x+5\\right)$$"], problemType: "TextBox", stepTitle: "$$9x^2+50x+25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

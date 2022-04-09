@@ -1,1 +1,0 @@
-import hints from "./a1279cdpowers26a-index.js"; const step = {id: "a1279cdpowers26a", stepAnswer: ["$$a^{48}$$"], problemType: "TextBox", stepTitle: "$${\\left(a^4\\right)}^5 {\\left(a^7\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a2ef97dGrphingQuads24b-index.js"; const step = {id: "a2ef97dGrphingQuads24b", stepAnswer: ["(-4,-17)"], problemType: "MultipleChoice", stepTitle: "$$x^2+8x+1$$", stepBody: "Find the vertex.", choices: ["(-4,-17)", "(-2,3)", "(-7,12)", "(5,27)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

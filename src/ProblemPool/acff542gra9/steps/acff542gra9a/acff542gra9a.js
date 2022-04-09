@@ -1,1 +1,0 @@
-import hints from "./acff542gra9a-index.js"; const step = {id: "acff542gra9a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$\\left(-\\frac{\\frac{3}{107}}{6}\\right)$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

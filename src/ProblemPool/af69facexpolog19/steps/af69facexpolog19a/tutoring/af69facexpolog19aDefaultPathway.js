@@ -1,1 +1,0 @@
-var hints = [{id: "af69facexpolog19a-h1", type: "hint", dependencies: [], title: "Carrying Capacity is the Numerator", text: "To find the carrying capacity, we can simply look at the numerator since it is equal to the carrying capacity. This means that the carrying capacity is @{numerator}", variabilization: {numerator: ["1000", "2000", "3000", "4000"]}}, ]; export {hints};

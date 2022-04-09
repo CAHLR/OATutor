@@ -1,1 +1,0 @@
-var hints = [{id: "a2ef97dGrphingQuads13a-h1", type: "hint", dependencies: [], title: "Axis of Symmetry", text: "Find the axis of symmetry through the formula x $$=$$ - $$\\frac{b}{2} a$$", variabilization: {}}, ]; export {hints};

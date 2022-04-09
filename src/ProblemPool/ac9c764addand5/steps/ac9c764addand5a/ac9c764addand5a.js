@@ -1,1 +1,0 @@
-import hints from "./ac9c764addand5a-index.js"; const step = {id: "ac9c764addand5a", stepAnswer: ["$$\\frac{31}{36}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{12}+\\frac{5}{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

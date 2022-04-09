@@ -1,1 +1,0 @@
-import hints from "./a98b1afgraphlog19a-index.js"; const step = {id: "a98b1afgraphlog19a", stepAnswer: ["(0,4)"], problemType: "TextBox", stepTitle: "", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

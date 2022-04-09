@@ -1,1 +1,0 @@
-import steps from "./a9981abAbsolute1-index.js"; const problem = {id: "a9981abAbsolute1", title: "Solving for the Intercepts", body: "Find the x and y intercepts of the function $$f(x)=|2x-4|-3$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.6 Absolute Value Functions", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph6a-index.js"; const step = {id: "a7ea646graph6a", stepAnswer: ["$$\\frac{1}{30} \\left(x+3\\right) {\\left(x-2\\right)}^2 \\left(x-5\\right)$$"], problemType: "TextBox", stepTitle: "What is the formula for the displayed polynomial? $$f(x)=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

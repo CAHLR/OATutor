@@ -1,1 +1,0 @@
-import steps from "./a161552divpoly5-index.js"; const problem = {id: "a161552divpoly5", title: "Using Synthetic Division to Divide a Fourth-Degree Polynomial", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", lesson: "5.4 Dividing Polynomials", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a6614c6sol3a-index.js"; const step = {id: "a6614c6sol3a", stepAnswer: ["(4,5)"], problemType: "MultipleChoice", stepTitle: "", stepBody: "##figure1.gif## ", choices: ["(-5,-4)", "(5,4)", "(4,5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};
