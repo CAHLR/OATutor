@@ -103,7 +103,7 @@ class Firebase {
 
     log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
         if (!DO_LOG_DATA) return
-        console.debug("trying to log hint: ", hint)
+        console.debug("trying to log hint: ", hint, "step", step)
         if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
             hintsFinished = hintsFinished.map(step => step.join(", "))
         }

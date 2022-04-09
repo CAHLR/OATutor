@@ -37,7 +37,7 @@ import SessionExpired from "./pages/SessionExpired";
 import { Posts } from "./pages/Posts/Posts";
 import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
-import cleanObjectKeys from "./util/cleanObjectKeys";
+import { cleanObjectKeys } from "./util/cleanObject";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config)

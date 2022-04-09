@@ -1,7 +1,7 @@
 import React from 'react';
 import courses from './coursePlans.js';
 import { calculateSemester } from "../util/calculateSemester.js";
-import cleanObjectKeys from "../util/cleanObjectKeys";
+import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.2";
