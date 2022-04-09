@@ -15,7 +15,7 @@ export default class GlobalErrorBoundary extends ErrorBoundary {
             return <>
                 <div style={{
                     textAlign: "center",
-                    marginTop: "10vh",
+                    paddingTop: "10vh"
                 }}>
                     <h1>Something went wrong</h1>
                     <p style={{
