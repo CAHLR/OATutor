@@ -10,6 +10,7 @@ import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import { cleanArray } from "../util/cleanObject";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -36,7 +37,7 @@ class Platform extends React.Component {
         for (const problem of this.problemIndex.problems) {
             for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
                 const step = problem.steps[stepIndex];
-                step.knowledgeComponents = context.skillModel[step.id];
+                step.knowledgeComponents = cleanArray(context.skillModel[step.id]);
             }
         }
         if (this.props.lessonNum == null) {
