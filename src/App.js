@@ -37,6 +37,7 @@ import SessionExpired from "./pages/SessionExpired";
 import { Posts } from "./pages/Posts/Posts";
 import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
+import cleanObjectKeys from "./util/cleanObjectKeys";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config)
@@ -50,6 +51,21 @@ const queryParamToContext = {
     "to": "alreadyLinkedLesson",
 }
 
+const treatmentMapping = {
+    bktParams: {
+        0: cleanObjectKeys(bktParams1),
+        1: cleanObjectKeys(bktParams2)
+    },
+    heuristic: {
+        0: lowestHeuristic,
+        1: highestHeuristic
+    },
+    hintPathway: {
+        0: "DefaultPathway",
+        1: "DefaultPathway"
+    }
+}
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -60,9 +76,9 @@ class App extends React.Component {
             localStorage.setItem(USER_ID_STORAGE_KEY, userId);
         }
         this.userID = userId;
-        this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2;
+        this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams);
 
-        this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatment() === 0 ? bktParams1 : bktParams2))
+        this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatmentObject(treatmentMapping.bktParams)))
 
         this.state = {
             additionalContext: {}
@@ -125,9 +141,13 @@ class App extends React.Component {
         return this.userID % 2;
     }
 
+    getTreatmentObject = (targetObject) => {
+        return targetObject[this.getTreatment()]
+    }
+
     removeProgress = async () => {
         await localForage.removeItem(PROGRESS_STORAGE_KEY)
-        this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2
+        this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams)
         window.location.reload();
     }
 
@@ -160,10 +180,10 @@ class App extends React.Component {
         });
         if (progress == null || typeof progress !== 'object' || Object.keys(progress).length === 0) {
             console.debug('resetting progress... obtained progress was invalid: ', progress)
-            this.bktParams = this.getTreatment() === 0 ? bktParams1 : bktParams2
+            this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams)
         } else {
-            console.debug('restoring progress from before', progress)
-            Object.assign(this.bktParams, progress)
+            console.debug('restoring progress from before (raw, uncleaned): ', progress)
+            Object.assign(this.bktParams, cleanObjectKeys(progress))
         }
     }
 
@@ -176,8 +196,8 @@ class App extends React.Component {
                     firebase: this.firebase,
                     getTreatment: this.getTreatment,
                     bktParams: this.bktParams,
-                    heuristic: this.getTreatment() === 0 ? lowestHeuristic : highestHeuristic,
-                    hintPathway: this.getTreatment() === 0 ? "DefaultPathway" : "DefaultPathway",
+                    heuristic: this.getTreatmentObject(treatmentMapping.heuristic),
+                    hintPathway: this.getTreatmentObject(treatmentMapping.hintPathway),
                     skillModel,
                     credentials: config,
                     debug: false,

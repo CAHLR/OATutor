@@ -77,7 +77,8 @@ class HintSystem extends React.Component {
                 this.state.subHintsFinished,
                 "unlockSubHint",
                 chooseVariables(this.props.stepVars, this.props.seed),
-                this.props.lesson
+                this.props.lesson,
+                this.props.courseName
             );
         });
     }
@@ -97,7 +98,8 @@ class HintSystem extends React.Component {
             correctAnswer,
             this.state.hintsFinished,
             chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed),
-            this.props.lesson
+            this.props.lesson,
+            this.props.courseName
         );
     }
 
