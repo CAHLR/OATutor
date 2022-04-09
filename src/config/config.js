@@ -1,6 +1,7 @@
 import React from 'react';
 import courses from './coursePlans.js';
 import { calculateSemester } from "../util/calculateSemester.js";
+import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.2";
@@ -73,6 +74,7 @@ for (let i = 0; i < coursePlans.length; i++) {
     for (let j = 0; j < course.lessons.length; j++) {
         course.lessons[j].lessonNum = lessonCounter;
         lessonCounter += 1;
+        course.lessons[j].learningObjectives = cleanObjectKeys(course.lessons[j].learningObjectives)
         lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
     }
 }
