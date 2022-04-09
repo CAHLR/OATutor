@@ -2,6 +2,7 @@ import React from 'react';
 import courses from './coursePlans.js';
 import { calculateSemester } from "../util/calculateSemester.js";
 import { SITE_NAME } from "./shared-config"
+import cleanObjectKeys from "../util/cleanObjectKeys";
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.2";
@@ -15,7 +16,15 @@ const CURRENT_SEMESTER = calculateSemester(Date.now())
 const SHOW_COPYRIGHT = false;
 
 /**
- * Indicates whether the site should use Firebase to store, process, and analyze general user interactions
+ * Only set to true if firebaseConfig.js is set, and you wish to use Firebase to store events. Events include user
+ * feedback, user interactions, and site logs.
+ * @type {boolean}
+ */
+const ENABLE_FIREBASE = true;
+
+/**
+ * If ENABLE_FIREBASE, indicates whether the site should use Firebase to store, process, and analyze general user
+ * interactions.
  * @type {boolean}
  */
 const DO_LOG_DATA = true;
@@ -64,6 +73,7 @@ for (let i = 0; i < coursePlans.length; i++) {
     for (let j = 0; j < course.lessons.length; j++) {
         course.lessons[j].lessonNum = lessonCounter;
         lessonCounter += 1;
+        course.lessons[j].learningObjectives = cleanObjectKeys(course.lessons[j].learningObjectives)
         lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
     }
 }
@@ -71,6 +81,7 @@ for (let i = 0; i < coursePlans.length; i++) {
 export {
     ThemeContext,
     SITE_VERSION,
+    ENABLE_FIREBASE,
     DO_LOG_DATA,
     DO_LOG_MOUSE_DATA,
     dynamicText,

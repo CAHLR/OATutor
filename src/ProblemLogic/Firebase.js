@@ -1,4 +1,11 @@
-import { MAX_BUFFER_SIZE, GRANULARITY, CURRENT_SEMESTER, DO_LOG_DATA } from '../config/config.js'
+import {
+    MAX_BUFFER_SIZE,
+    GRANULARITY,
+    CURRENT_SEMESTER,
+    DO_LOG_DATA,
+    ENABLE_FIREBASE,
+    DO_LOG_MOUSE_DATA
+} from '../config/config.js'
 
 const firebase = require("firebase/app");
 require("firebase/firestore");
@@ -11,7 +18,7 @@ const siteLogOutput = "siteLogs"
 class Firebase {
 
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
-        if (!DO_LOG_DATA) return
+        if (!ENABLE_FIREBASE) return
         const app = (!firebase.apps.length) ? firebase.initializeApp(credentials) : firebase.app();
 
         this.oats_user_id = oats_user_id;
@@ -28,7 +35,7 @@ class Firebase {
       Data: Value - JSON object of data you want to store
     */
     async writeData(_collection, data) {
-        if (!DO_LOG_DATA) return
+        if (!ENABLE_FIREBASE) return
         const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection : `development_${_collection}`
         const _payload = {
             semester: CURRENT_SEMESTER,
@@ -94,7 +101,8 @@ class Firebase {
         )
     }
 
-    log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson) {
+    log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
+        if (!DO_LOG_DATA) return
         console.debug("trying to log hint: ", hint)
         if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
             hintsFinished = hintsFinished.map(step => step.join(", "))
@@ -113,18 +121,20 @@ class Firebase {
             hintsFinished,
             variabilization,
             lesson,
+            Content: courseName,
             knowledgeComponents: step?.knowledgeComponents
         };
         return this.writeData(problemSubmissionsOutput, data);
     }
 
-    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson) {
+    hintLog(hintInput, problemID, step, hint, isCorrect, hintsFinished, variabilization, lesson, courseName) {
+        if (!DO_LOG_DATA) return
         console.debug("step", step)
         const data = {
             eventType: "hintScaffoldLog",
             problemID,
-            stepID: step.id,
-            hintID: hint.id,
+            stepID: step?.id,
+            hintID: hint?.id,
             input: null,
             correctAnswer: null,
             isCorrect: null,
@@ -133,6 +143,7 @@ class Firebase {
             hintIsCorrect: isCorrect,
             hintsFinished,
             variabilization,
+            Content: courseName,
             lesson,
             knowledgeComponents: step?.knowledgeComponents
         };
@@ -140,6 +151,7 @@ class Firebase {
     }
 
     mouseLog(payload) {
+        if (!DO_LOG_DATA || !DO_LOG_MOUSE_DATA) return
         if (this.mouseLogBuffer.length > 0) {
             if (!(Math.abs(payload.position.x - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].x) > GRANULARITY ||
                 Math.abs(payload.position.y - this.mouseLogBuffer[this.mouseLogBuffer.length - 1].y) > GRANULARITY
@@ -166,13 +178,14 @@ class Firebase {
         return this.writeData("mouseMovement", data);
     }
 
-    startedProblem(problemID, courseName, lesson, learningObjectives) {
+    startedProblem(problemID, courseName, lesson, lessonObjectives) {
+        if (!DO_LOG_DATA) return
         console.debug(`Logging that the problem has been started (${problemID})`)
         const data = {
             problemID,
             Content: courseName,
             lesson,
-            learningObjectives
+            lessonObjectives
         };
         return this.writeData(problemStartLogOutput, data);
     }

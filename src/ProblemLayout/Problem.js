@@ -71,7 +71,7 @@ class Problem extends React.Component {
             return <Element name={index.toString()} key={Math.random()}>
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
                              seed={this.props.seed} problemVars={this.props.problem.variabilization}
-                             lesson={problem.lesson}
+                             lesson={problem.lesson} courseName={problem.courseName}
                 />
             </Element>
         })
@@ -79,6 +79,8 @@ class Problem extends React.Component {
 
     updateCanvas = async (mastery, components) => {
         if (this.context.jwt) {
+            console.debug('updating canvas with problem score')
+
             let err, response;
             [err, response] = await to(fetch(`${MIDDLEWARE_URL}/postScore`, {
                 method: 'POST',
@@ -195,7 +197,6 @@ class Problem extends React.Component {
                 relevantKc[x] = this.bktParams[x].probMastery
             });
 
-            console.debug('updating canvas with problem score')
             this.updateCanvas(score, relevantKc);
         }
         this.stepStates[cardIndex] = isCorrect;
