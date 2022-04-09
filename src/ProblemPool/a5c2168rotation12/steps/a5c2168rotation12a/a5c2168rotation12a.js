@@ -1,0 +1,1 @@
+import hints from "./a5c2168rotation12a-index.js"; const step = {id: "a5c2168rotation12a", stepAnswer: ["Ellipse"], problemType: "MultipleChoice", stepTitle: "$$2x^2+3y^2-8x-12y+2=0$$", stepBody: "", choices: ["Ellipse", "Circle", "Hyperbola", "Parabola"], answerType: "string", hints: hints, variabilization: {}}; export {step};

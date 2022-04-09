@@ -1,0 +1,1 @@
+import hints from "./a28448cslope18a-index.js"; const step = {id: "a28448cslope18a", stepAnswer: ["Not Parallel"], problemType: "MultipleChoice", stepTitle: "$$6x-3y=9$$, $$2x-y=3$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

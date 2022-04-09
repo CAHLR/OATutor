@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd32a-index.js"; const step = {id: "a6014eaSubAdd32a", stepAnswer: ["$$x=14$$"], problemType: "TextBox", stepTitle: "The difference of 4x and 3x is 14.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

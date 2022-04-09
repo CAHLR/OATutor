@@ -1,0 +1,1 @@
+import hints from "./aafc2dcMultiply25a-index.js"; const step = {id: "aafc2dcMultiply25a", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "The sum of 3 and -15, increased by 7", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

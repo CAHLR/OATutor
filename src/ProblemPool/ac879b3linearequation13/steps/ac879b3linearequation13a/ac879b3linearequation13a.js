@@ -1,0 +1,1 @@
+import hints from "./ac879b3linearequation13a-index.js"; const step = {id: "ac879b3linearequation13a", stepAnswer: ["$$\\frac{3}{2}$$"], problemType: "TextBox", stepTitle: "$$y=\\frac{3}{2} x-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

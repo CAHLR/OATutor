@@ -1,0 +1,1 @@
+import hints from "./a4a0f7dradicalroot23a-index.js"; const step = {id: "a4a0f7dradicalroot23a", stepAnswer: ["$$u=8.5$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{4u+2}-6=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial11a-index.js"; const step = {id: "a0a04b1divmonomial11a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$${15}^0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

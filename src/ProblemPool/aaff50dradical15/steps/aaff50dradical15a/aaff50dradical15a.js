@@ -1,0 +1,1 @@
+import hints from "./aaff50dradical15a-index.js"; const step = {id: "aaff50dradical15a", stepAnswer: ["$$\\frac{5}{4}$$"], problemType: "TextBox", stepTitle: "Simplify $$\\sqrt{\\frac{25}{16}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

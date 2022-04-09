@@ -1,0 +1,1 @@
+import hints from "./a3d9e92Inequality8a-index.js"; const step = {id: "a3d9e92Inequality8a", stepAnswer: ["-inf, 2) U (5, inf)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x<2$$ or $$x \\geq 5$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

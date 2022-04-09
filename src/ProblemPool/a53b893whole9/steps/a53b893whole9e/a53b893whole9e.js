@@ -1,0 +1,1 @@
+import hints from "./a53b893whole9e-index.js"; const step = {id: "a53b893whole9e", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 3,765 is divisible by 10.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

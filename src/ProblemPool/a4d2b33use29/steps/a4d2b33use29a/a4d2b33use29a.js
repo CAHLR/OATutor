@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use29a-index.js"; const step = {id: "a4d2b33use29a", stepAnswer: ["125"], problemType: "TextBox", stepTitle: "$$5^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

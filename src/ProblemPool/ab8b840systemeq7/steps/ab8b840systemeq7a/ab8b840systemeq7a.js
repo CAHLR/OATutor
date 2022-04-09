@@ -1,0 +1,1 @@
+import hints from "./ab8b840systemeq7a-index.js"; const step = {id: "ab8b840systemeq7a", stepAnswer: ["(-4,2)"], problemType: "MultipleChoice", stepTitle: "$$6x-5y=-34$$, $$7x+2y=30$$", stepBody: "", choices: ["(-4,2)", "(4,2)", "(4,-2)", "(-4,-2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

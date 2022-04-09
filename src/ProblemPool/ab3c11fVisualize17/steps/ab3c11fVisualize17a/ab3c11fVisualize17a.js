@@ -1,0 +1,1 @@
+import hints from "./ab3c11fVisualize17a-index.js"; const step = {id: "ab3c11fVisualize17a", stepAnswer: ["$$\\frac{-1}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4-2\\left(3\\right)}{2^2+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

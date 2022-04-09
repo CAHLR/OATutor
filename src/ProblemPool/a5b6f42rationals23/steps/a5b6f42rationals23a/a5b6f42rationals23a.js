@@ -1,0 +1,1 @@
+import hints from "./a5b6f42rationals23a-index.js"; const step = {id: "a5b6f42rationals23a", stepAnswer: ["(-7,0),(-1,0),(0,7/30)"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{x^2+8x+7}{x^2+11x+30}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

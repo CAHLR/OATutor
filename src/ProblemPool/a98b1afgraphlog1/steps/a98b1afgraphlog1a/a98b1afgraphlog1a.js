@@ -1,0 +1,1 @@
+import hints from "./a98b1afgraphlog1a-index.js"; const step = {id: "a98b1afgraphlog1a", stepAnswer: ["$$\\left(-3\\infty\\right)$$"], problemType: "MultipleChoice", stepTitle: "", stepBody: "", choices: ["$$3\\infty$$", "$$\\left(-3\\infty\\right)$$", "$$0\\infty$$", "none of the above"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe19a-index.js"; const step = {id: "a3c25cbexe19a", stepAnswer: ["$$\\left(b+13\\right) \\left(b+1\\right)$$"], problemType: "TextBox", stepTitle: "Factor the following trinomial: $$b^2+14b+13$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

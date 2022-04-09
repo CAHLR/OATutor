@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul26a-index.js"; const step = {id: "a870b02DivMul26a", stepAnswer: ["-256"], problemType: "TextBox", stepTitle: "n divided by 8 is -32.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

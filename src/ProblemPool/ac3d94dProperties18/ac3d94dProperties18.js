@@ -1,0 +1,1 @@
+import steps from "./ac3d94dProperties18-index.js"; const problem = {id: "ac3d94dProperties18", title: "Use the Associative Property", body: "Use the associative property to simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.9 Properties of Real Numbers", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers24b-index.js"; const step = {id: "a1279cdpowers24b", stepAnswer: ["$$-27y^3$$"], problemType: "TextBox", stepTitle: "$${\\left(-3y\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
