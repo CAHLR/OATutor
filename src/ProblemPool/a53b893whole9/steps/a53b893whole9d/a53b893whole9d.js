@@ -1,0 +1,1 @@
+import hints from "./a53b893whole9d-index.js"; const step = {id: "a53b893whole9d", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether 3,765 is divisible by 6.", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

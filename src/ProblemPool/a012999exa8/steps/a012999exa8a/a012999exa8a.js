@@ -1,0 +1,1 @@
+import hints from "./a012999exa8a-index.js"; const step = {id: "a012999exa8a", stepAnswer: ["$$5x^2+20xy$$"], problemType: "TextBox", stepTitle: "$$5x\\left(x+4y\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

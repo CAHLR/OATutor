@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers13a-index.js"; const step = {id: "a1279cdpowers13a", stepAnswer: ["$$4f^{11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{5} f^8 20f^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

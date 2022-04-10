@@ -1,0 +1,1 @@
+import hints from "./a28448cslope19a-index.js"; const step = {id: "a28448cslope19a", stepAnswer: ["Not Parallel"], problemType: "MultipleChoice", stepTitle: "$$5x-2y=11$$, $$5x-y=7$$", stepBody: "", choices: ["Parallel", "Not Parallel"], answerType: "string", hints: hints, variabilization: {}}; export {step};

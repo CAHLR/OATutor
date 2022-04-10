@@ -1,0 +1,1 @@
+import hints from "./a08a388line7a-index.js"; const step = {id: "a08a388line7a", stepAnswer: ["$$y=\\frac{5x}{6}+2$$"], problemType: "MultipleChoice", stepTitle: "$$m=\\frac{5}{6}$$, point (6,7)", stepBody: "", choices: ["$$y=\\frac{6x}{5}-2$$", "$$y=5x+6$$", "$$y=\\frac{5x}{6}+2$$", "$$y=7x-6$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

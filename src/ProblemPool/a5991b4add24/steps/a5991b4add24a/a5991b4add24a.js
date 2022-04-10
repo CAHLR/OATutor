@@ -1,0 +1,1 @@
+import hints from "./a5991b4add24a-index.js"; const step = {id: "a5991b4add24a", stepAnswer: ["23p"], problemType: "TextBox", stepTitle: "Subtract 16p-(-7p)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

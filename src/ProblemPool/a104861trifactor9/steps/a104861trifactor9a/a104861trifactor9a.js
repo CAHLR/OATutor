@@ -1,0 +1,1 @@
+import hints from "./a104861trifactor9a-index.js"; const step = {id: "a104861trifactor9a", stepAnswer: ["$${\\left(8m+7n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$64m^2+112m n+49n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

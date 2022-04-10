@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr21a-index.js"; const step = {id: "ab1ad7fGenStr21a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$12\\left(1-5\\left(4z-1\\right)\\right)=3\\left(24+11z\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a3d6ae2sys30a-index.js"; const step = {id: "a3d6ae2sys30a", stepAnswer: ["(-3,6)"], problemType: "MultipleChoice", stepTitle: "Graph the given image", stepBody: "", choices: ["(3,6)", "(6,-3)", "(-3,6)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

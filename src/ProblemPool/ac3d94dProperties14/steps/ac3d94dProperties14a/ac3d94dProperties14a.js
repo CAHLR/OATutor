@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties14a-index.js"; const step = {id: "ac3d94dProperties14a", stepAnswer: ["$$22n+9$$"], problemType: "TextBox", stepTitle: "$$5\\left(2n+9\\right)+12\\left(n-3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

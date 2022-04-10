@@ -1,0 +1,1 @@
+import hints from "./a1f9370SolvingFormul13a-index.js"; const step = {id: "a1f9370SolvingFormul13a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Solve for the third side of the triangle if the hypotenuse has length 13 and another side has length 12.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./afa0cfequadraticeq13a-index.js"; const step = {id: "afa0cfequadraticeq13a", stepAnswer: ["-6 and -4"], problemType: "MultipleChoice", stepTitle: "$${\\left(q+5\\right)}^2$$ $$=$$ 1", stepBody: "", choices: ["-6 and -4", "-5 and -4", "-3 and -2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

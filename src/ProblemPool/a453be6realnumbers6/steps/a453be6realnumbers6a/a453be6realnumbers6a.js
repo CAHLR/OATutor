@@ -1,0 +1,1 @@
+import hints from "./a453be6realnumbers6a-index.js"; const step = {id: "a453be6realnumbers6a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$-\\sqrt{81}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
