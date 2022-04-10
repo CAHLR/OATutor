@@ -54,6 +54,21 @@ class DebugPlatform extends React.Component {
             this.context.needRefresh = false;
             window.location.reload();
         }
+        this.onComponentUpdate(null, null, null)
+    }
+
+    componentWillUnmount() {
+        this.context.problemID = "n/a"
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this.onComponentUpdate(prevProps, prevState, snapshot)
+    }
+
+    onComponentUpdate(prevProps, prevState, snapshot){
+        if (Boolean(this.state.currProblem?.id) && this.context.problemID !== this.state.currProblem.id) {
+            this.context.problemID = this.state.currProblem.id
+        }
     }
 
     selectProblem = (problemID, context) => {

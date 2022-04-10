@@ -190,11 +190,12 @@ class Firebase {
         return this.writeData(problemStartLogOutput, data);
     }
 
-    submitSiteLog(logType, logMessage, relevantInformation) {
+    submitSiteLog(logType, logMessage, relevantInformation, problemID = "n/a") {
         const data = {
             logType,
             logMessage,
             relevantInformation,
+            problemID
         };
         return this.writeData(siteLogOutput, data);
     }

@@ -22,7 +22,7 @@ export default class ErrorBoundary extends React.Component {
             errorMsg: error.message || "n/a",
             errorStack: error.stack || "n/a",
             errorInfo
-        });
+        }, this.context.problemID);
     }
 
     render() {
