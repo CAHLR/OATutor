@@ -1,1 +1,0 @@
-import hints from "./a3d9e92Inequality12a-index.js"; const step = {id: "a3d9e92Inequality12a", stepAnswer: ["[-3, -1]"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$4x+6 \\leq 2$$ and $$2x+1 \\geq -5$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

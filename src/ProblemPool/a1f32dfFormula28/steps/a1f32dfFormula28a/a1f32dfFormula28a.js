@@ -1,1 +1,0 @@
-import hints from "./a1f32dfFormula28a-index.js"; const step = {id: "a1f32dfFormula28a", stepAnswer: ["$$y=-1+5x$$"], problemType: "MultipleChoice", stepTitle: "Solve the formula $$-5x+y=-1$$ for y.", stepBody: "", choices: ["$$y=-1+5x$$", "$$y=-1-5x$$", "$$y=5x$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

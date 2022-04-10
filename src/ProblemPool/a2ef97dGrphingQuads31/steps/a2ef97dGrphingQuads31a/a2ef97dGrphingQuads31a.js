@@ -1,1 +1,0 @@
-import hints from "./a2ef97dGrphingQuads31a-index.js"; const step = {id: "a2ef97dGrphingQuads31a", stepAnswer: ["(2,-1)"], problemType: "MultipleChoice", stepTitle: "$$y=-\\left(x^2\\right)+4x-5$$", stepBody: "", choices: ["(0,1)", "(7,-2)", "(2,-1)", "(3,5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

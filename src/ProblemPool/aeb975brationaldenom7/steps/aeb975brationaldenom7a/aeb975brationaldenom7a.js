@@ -1,1 +1,0 @@
-import hints from "./aeb975brationaldenom7a-index.js"; const step = {id: "aeb975brationaldenom7a", stepAnswer: ["$$\\frac{47}{90}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{30}+\\frac{13}{45}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

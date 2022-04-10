@@ -1,1 +1,0 @@
-import hints from "./a1a1ee1measure12a-index.js"; const step = {id: "a1a1ee1measure12a", stepAnswer: ["16.7"], problemType: "TextBox", stepTitle: "Lee’s water bottle holds 500 mL of water. How many ounces are in the bottle? Round to the nearest tenth of an ounce.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

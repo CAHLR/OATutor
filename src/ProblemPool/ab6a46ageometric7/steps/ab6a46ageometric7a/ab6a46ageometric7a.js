@@ -1,1 +1,0 @@
-import hints from "./ab6a46ageometric7a-index.js"; const step = {id: "ab6a46ageometric7a", stepAnswer: ["16384"], problemType: "TextBox", stepTitle: "Given a geometric sequence with $$a_2=4$$ and $$a_3=32$$ , find $$a_6$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

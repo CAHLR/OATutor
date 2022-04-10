@@ -1,1 +1,0 @@
-import hints from "./a5c2168rotation13a-index.js"; const step = {id: "a5c2168rotation13a", stepAnswer: ["$$7{x'}^2+9{y'}^2-4=0$$"], problemType: "TextBox", stepTitle: "Finding a New Representation of the Given Equation after Rotating through a Given Angle", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

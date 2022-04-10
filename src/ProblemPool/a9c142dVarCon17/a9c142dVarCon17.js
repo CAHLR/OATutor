@@ -1,1 +1,0 @@
-import steps from "./a9c142dVarCon17-index.js"; const problem = {id: "a9c142dVarCon17", title: "Solve Equations with Variables on Both Sides", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3 Solve Equations with Variables and Constants on Both Sides", courseName: "Openstax: Elementary Algebra"}; export { problem };

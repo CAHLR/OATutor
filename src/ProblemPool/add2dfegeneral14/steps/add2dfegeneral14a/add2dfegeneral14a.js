@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral14a-index.js"; const step = {id: "add2dfegeneral14a", stepAnswer: ["$$\\left(2b-1\\right) \\left(6a+5\\right)$$"], problemType: "TextBox", stepTitle: "$$12ab-6a+10b-5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

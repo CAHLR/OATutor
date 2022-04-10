@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply9a-index.js"; const step = {id: "aafc2dcMultiply9a", stepAnswer: ["39"], problemType: "TextBox", stepTitle: "Evaluate: $$3x^2-2x+6$$ when $$x=-3$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

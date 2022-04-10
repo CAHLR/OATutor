@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang31a-index.js"; const step = {id: "afb3ccdlang31a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "What is $$6x^2+3xy-9y^2$$ when $$x=3, y=2$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

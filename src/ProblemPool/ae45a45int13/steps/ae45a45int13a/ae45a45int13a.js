@@ -1,1 +1,0 @@
-import hints from "./ae45a45int13a-index.js"; const step = {id: "ae45a45int13a", stepAnswer: ["243"], problemType: "TextBox", stepTitle: "$${\\left(-3\\right)}^5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

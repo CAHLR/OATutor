@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities22a-index.js"; const step = {id: "afaf721inequalities22a", stepAnswer: ["$$\\left(-14\\infty\\right)$$"], problemType: "MultipleChoice", stepTitle: "$$-9c<126$$", stepBody: "", choices: ["$$\\left(-inf14\\right)$$", "(-inf,14]", "$$\\left(-14\\infty\\right)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

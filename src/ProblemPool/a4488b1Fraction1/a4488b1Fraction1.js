@@ -1,1 +1,0 @@
-import steps from "./a4488b1Fraction1-index.js"; const problem = {id: "a4488b1Fraction1", title: "How to Simplify a Fraction?", body: "Simplify the following fraction", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.3 Fractions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

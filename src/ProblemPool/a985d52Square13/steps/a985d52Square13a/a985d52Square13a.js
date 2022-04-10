@@ -1,1 +1,0 @@
-import hints from "./a985d52Square13a-index.js"; const step = {id: "a985d52Square13a", stepAnswer: ["1 or -11"], problemType: "MultipleChoice", stepTitle: "$$x^2+10x+4=15$$", stepBody: "", choices: ["1 or -11", "-1 or -11", "1 or 11"], answerType: "string", hints: hints, variabilization: {}}; export {step};

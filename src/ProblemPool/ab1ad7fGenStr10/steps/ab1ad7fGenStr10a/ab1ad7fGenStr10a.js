@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr10a-index.js"; const step = {id: "ab1ad7fGenStr10a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\frac{2}{3} \\left(6m-3\\right)=8-m$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
