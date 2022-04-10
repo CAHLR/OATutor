@@ -38,7 +38,7 @@ function renderText(text, problemID, variabilization) {
             } else {
                 // in between two $$ implies try using Latex
                 return <ErrorBoundary componentName={"InlineMath"}
-                                      descriptor={`math expression (${part})`}
+                                      replacement={part}
                                       inline
                                       key={Math.random() * 2 ** 16}>
                     <InlineMath math={part} renderError={(error) => {
