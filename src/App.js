@@ -82,7 +82,7 @@ class App extends React.Component {
         this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatmentObject(treatmentMapping.bktParams)))
 
         this.state = {
-            additionalContext: {}
+            additionalContext: {},
         }
 
         if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
@@ -210,6 +210,7 @@ class App extends React.Component {
                     alreadyLinkedLesson: "",
                     jwt: '',
                     user: {},
+                    problemID: 'n/a',
                     problemIDs: null,
                     ...this.state.additionalContext
                 }}>
