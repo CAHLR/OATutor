@@ -1,1 +1,0 @@
-import steps from "./a3c2b68root3-index.js"; const problem = {id: "a3c2b68root3", title: "Multiplying Square Roots", body: "Simplify the following equation.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "9.4 Multiply Square Roots", courseName: "Openstax: Elementary Algebra"}; export { problem };

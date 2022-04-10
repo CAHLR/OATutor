@@ -1,1 +1,0 @@
-import hints from "./a870b02DivMul13a-index.js"; const step = {id: "a870b02DivMul13a", stepAnswer: ["$$\\frac{-2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{8}{15}=-\\left(\\frac{4}{5}\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

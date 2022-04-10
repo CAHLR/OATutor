@@ -1,1 +1,0 @@
-import hints from "./a9ae528add29d-index.js"; const step = {id: "a9ae528add29d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-\\left(-9\\right) \\rule{2cm}{0.15mm}-|-9|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

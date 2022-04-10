@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd11a-index.js"; const step = {id: "a6014eaSubAdd11a", stepAnswer: ["$$x=\\frac{11}{8}$$"], problemType: "TextBox", stepTitle: "$$x-\\frac{5}{8}=\\frac{3}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

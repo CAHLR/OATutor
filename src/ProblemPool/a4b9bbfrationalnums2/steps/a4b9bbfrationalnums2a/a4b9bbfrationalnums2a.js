@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums2a-index.js"; const step = {id: "a4b9bbfrationalnums2a", stepAnswer: ["$$x^{\\frac{1}{2}}$$"], problemType: "TextBox", stepTitle: "Wrtie with a rational exponent: $$\\sqrt{x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

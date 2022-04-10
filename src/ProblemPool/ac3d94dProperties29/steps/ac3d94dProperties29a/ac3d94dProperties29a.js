@@ -1,1 +1,0 @@
-import hints from "./ac3d94dProperties29a-index.js"; const step = {id: "ac3d94dProperties29a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\frac{0}{\\left(-2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

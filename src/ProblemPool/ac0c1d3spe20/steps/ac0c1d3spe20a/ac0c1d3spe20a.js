@@ -1,1 +1,0 @@
-import hints from "./ac0c1d3spe20a-index.js"; const step = {id: "ac0c1d3spe20a", stepAnswer: ["$$\\frac{1}{64} x^2-\\frac{2}{72} x y+\\frac{1}{81} y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{1}{8} x-\\frac{1}{9} y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

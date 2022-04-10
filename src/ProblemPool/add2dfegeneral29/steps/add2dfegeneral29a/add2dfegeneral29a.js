@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral29a-index.js"; const step = {id: "add2dfegeneral29a", stepAnswer: ["$$\\left(2n-1\\right) \\left(n+7\\right)$$"], problemType: "TextBox", stepTitle: "$$2n^2+13n-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

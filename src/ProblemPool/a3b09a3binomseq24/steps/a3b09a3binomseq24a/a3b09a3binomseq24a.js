@@ -1,1 +1,0 @@
-import hints from "./a3b09a3binomseq24a-index.js"; const step = {id: "a3b09a3binomseq24a", stepAnswer: ["$$1082565a^3 b^{16}$$"], problemType: "TextBox", stepTitle: "$${\\left(a-3b^2\\right)}^{11}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

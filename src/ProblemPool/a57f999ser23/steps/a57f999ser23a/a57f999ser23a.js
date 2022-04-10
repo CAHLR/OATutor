@@ -1,1 +1,0 @@
-import hints from "./a57f999ser23a-index.js"; const step = {id: "a57f999ser23a", stepAnswer: ["Sum not defined"], problemType: "MultipleChoice", stepTitle: "image1", stepBody: "##figure1.gif## ", choices: ["Sum not defined", "$$S=\\frac{2}{1-4}$$", "$$S=\\frac{4}{1-2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};
