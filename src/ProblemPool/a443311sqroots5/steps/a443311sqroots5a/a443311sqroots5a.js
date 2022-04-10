@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots5a-index.js"; const step = {id: "a443311sqroots5a", stepAnswer: ["$$\\frac{3}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{27}}{\\sqrt{75}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

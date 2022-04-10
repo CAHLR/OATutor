@@ -1,0 +1,1 @@
+import hints from "./a4488b1fractions14a-index.js"; const step = {id: "a4488b1fractions14a", stepAnswer: ["$$\\frac{-1}{16}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{3}{4}}{\\left(-12\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

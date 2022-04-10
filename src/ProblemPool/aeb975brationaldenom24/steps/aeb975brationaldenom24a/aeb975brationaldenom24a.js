@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom24a-index.js"; const step = {id: "aeb975brationaldenom24a", stepAnswer: ["$$\\frac{4\\left(m+4\\right)+3\\left(m+3\\right)}{\\left(m+3\\right) \\left(m+4\\right)}$$"], problemType: "TextBox", stepTitle: "Add $$\\frac{4}{m+3}+\\frac{3}{m+4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./acf3da9gaussian1a-index.js"; const step = {id: "acf3da9gaussian1a", stepAnswer: ["$$\\begin{bmatrix} 1 & 2 & -1 & 3 \\\\ 2 & -1 & 2 & 6 \\\\ 1 & -3 & 3 & 4 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$x+2y-z=3$$ $$2x-y+2z=6$$ $$x-3y+3z=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a8e6481uni6b-index.js"; const step = {id: "a8e6481uni6b", stepAnswer: ["62"], problemType: "TextBox", stepTitle: "Find the speed of Ashley.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

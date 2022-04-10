@@ -1,0 +1,1 @@
+import steps from "./aafc2dcMultiply1-index.js"; const problem = {id: "aafc2dcMultiply1", title: "Multiply", body: "Calculate the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 Multiply and Divide Integers", courseName: "Openstax: Elementary Algebra"}; export { problem };

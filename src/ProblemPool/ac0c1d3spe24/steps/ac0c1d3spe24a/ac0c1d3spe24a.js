@@ -1,0 +1,1 @@
+import hints from "./ac0c1d3spe24a-index.js"; const step = {id: "ac0c1d3spe24a", stepAnswer: ["$$16y^6-16y^3+4$$"], problemType: "TextBox", stepTitle: "$${\\left(4y^3-2\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

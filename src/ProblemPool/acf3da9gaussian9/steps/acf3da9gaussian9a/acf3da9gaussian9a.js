@@ -1,0 +1,1 @@
+import hints from "./acf3da9gaussian9a-index.js"; const step = {id: "acf3da9gaussian9a", stepAnswer: ["(4,-3,1)"], problemType: "MultipleChoice", stepTitle: "$$x-y+z=8$$ $$2x+3y-z=-2$$ $$3x-2y-9z=9$$", stepBody: "", choices: ["(2,-4,1)", "(5,-6,1)", "(4,-3,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

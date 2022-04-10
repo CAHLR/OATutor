@@ -1,0 +1,1 @@
+import hints from "./add17b3fractions2a-index.js"; const step = {id: "add17b3fractions2a", stepAnswer: ["$$\\frac{\\frac{2}{x^2-1}}{\\frac{3}{x+1}}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{x^2-1}}{\\frac{3}{x+1}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

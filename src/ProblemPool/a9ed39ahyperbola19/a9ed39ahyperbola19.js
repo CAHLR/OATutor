@@ -1,0 +1,1 @@
+import steps from "./a9ed39ahyperbola19-index.js"; const problem = {id: "a9ed39ahyperbola19", title: "The Hyperbola", body: "$$\\frac{{\\left(x-3\\right)}^2}{5^2}-\\frac{{\\left(y+4\\right)}^2}{2^2}=1$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.2 The Hyperbola", courseName: "Openstax: College Algebra"}; export { problem };

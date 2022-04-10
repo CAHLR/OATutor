@@ -1,0 +1,1 @@
+import hints from "./ac9c764addand15a-index.js"; const step = {id: "ac9c764addand15a", stepAnswer: ["$$\\frac{-1}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-1}{2}-y$$ when $$y=\\frac{-1}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

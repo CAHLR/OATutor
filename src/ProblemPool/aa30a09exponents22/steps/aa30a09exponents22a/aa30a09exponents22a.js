@@ -1,0 +1,1 @@
+import hints from "./aa30a09exponents22a-index.js"; const step = {id: "aa30a09exponents22a", stepAnswer: ["$$\\frac{1}{p^5} q^7$$"], problemType: "TextBox", stepTitle: "$$p q^{-4} p^{-6} q^{-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aafc2dcMultiply5b-index.js"; const step = {id: "aafc2dcMultiply5b", stepAnswer: ["-16"], problemType: "TextBox", stepTitle: "$$-\\left(2^4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

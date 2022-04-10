@@ -1,0 +1,1 @@
+import hints from "./a35ba99cou1a-index.js"; const step = {id: "a35ba99cou1a", stepAnswer: ["$$m+n$$"], problemType: "MultipleChoice", stepTitle: "Use the Addition Principle of counting to show how many ways event A or B can occur.", stepBody: "", choices: ["$$m+n$$", "$$m n$$", "$$m+m+n+n$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

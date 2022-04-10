@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots29a-index.js"; const step = {id: "a443311sqroots29a", stepAnswer: ["$$y^3 \\sqrt{13}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{26y^7}}{\\sqrt{2y}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

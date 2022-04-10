@@ -1,0 +1,1 @@
+import hints from "./ab62b81rational25a-index.js"; const step = {id: "ab62b81rational25a", stepAnswer: ["$$c+2$$"], problemType: "TextBox", stepTitle: "$$\\frac{c^2}{c-8}-\\frac{6c+16}{c-8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

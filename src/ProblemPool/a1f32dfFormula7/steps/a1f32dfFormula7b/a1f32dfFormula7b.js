@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula7b-index.js"; const step = {id: "a1f32dfFormula7b", stepAnswer: ["$$t=\\frac{d}{r}$$"], problemType: "MultipleChoice", stepTitle: "in general", stepBody: "", choices: ["$$t=\\frac{d}{r}$$", "$$t=dr$$", "$$t=\\frac{r}{d}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

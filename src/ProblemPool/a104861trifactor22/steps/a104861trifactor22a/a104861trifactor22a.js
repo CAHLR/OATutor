@@ -1,0 +1,1 @@
+import hints from "./a104861trifactor22a-index.js"; const step = {id: "a104861trifactor22a", stepAnswer: ["$$\\left(5n+4\\right) \\left(5n+1\\right)$$"], problemType: "TextBox", stepTitle: "$$25n^2+25n+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

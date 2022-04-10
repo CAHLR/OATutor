@@ -1,0 +1,1 @@
+import hints from "./afb3ccdlang17a-index.js"; const step = {id: "afb3ccdlang17a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Simplify $$3^2-\\frac{18}{11-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
