@@ -350,7 +350,7 @@ app.post('/auth', async (req, res) => {
 
         const token = getJWT(provider, consumer_secret, consumer_key, privileged)
 
-        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson}?token=${token}` })
+        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson || lessonNum}?token=${token}` })
         res.end();
     }
 });
