@@ -39,6 +39,7 @@ class DebugPlatform extends React.Component {
                 step.knowledgeComponents = context.skillModel[step.id];
             }
         }
+        context.problemID = this.props.problemID
         context.problemIDs = problemIDs.sort(this.__compareProblemID)
 
         this.state = {
