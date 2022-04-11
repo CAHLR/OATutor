@@ -8,7 +8,6 @@ export default class ErrorBoundary extends React.Component {
         super(props);
         this.state = { hasError: false };
         this.context = context
-        this.componentName = props.componentName || "_default_"
     }
 
     static getDerivedStateFromError(error) {
@@ -16,7 +15,8 @@ export default class ErrorBoundary extends React.Component {
     }
 
     componentDidCatch(error, errorInfo) {
-        this.context.firebase.submitSiteLog("site-error", `componentName: ${this.componentName}`, {
+        const { componentName = "_default_" } = this.props
+        this.context.firebase.submitSiteLog("site-error", `componentName: ${componentName}`, {
             errorName: error.name || "n/a",
             errorCode: error.code || "n/a",
             errorMsg: error.message || "n/a",
@@ -26,13 +26,17 @@ export default class ErrorBoundary extends React.Component {
     }
 
     render() {
+        const { replacement } = this.props
         if (this.state.hasError) {
             return <>
                 <div style={{
                     textAlign: "center",
                     display: this.props.inline ? "inline" : "block"
                 }}>
-                    <i>This {this.props.descriptor || "component"} could not be loaded</i>
+                    {replacement
+                        ? replacement
+                        : <i>This {this.props.descriptor || "component"} could not be loaded</i>
+                    }
                 </div>
             </>
         }
