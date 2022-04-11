@@ -3,8 +3,8 @@ import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js';
 import { variabilize, chooseVariables } from './variabilize.js';
 import Spacer from "../Components/_General/Spacer";
-import ZoomImage from "../Components/_General/ZoomImage";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
+import RenderMedia from "../Components/_General/RenderMedia";
 
 function renderText(text, problemID, variabilization) {
     if (typeof text !== 'string') {
@@ -30,8 +30,7 @@ function renderText(text, problemID, variabilization) {
                         return subPart;
                     } else {
                         return <center key={Math.random() * 2 ** 16}>
-                            <ZoomImage src={`${process.env.PUBLIC_URL}/static/images/figures/${problemID}/${subPart}`}
-                                       alt={`${problemID} figure`} style={{ width: "100%", objectFit: "scale-down" }}/>
+                            <RenderMedia url={subPart} problemID={problemID}/>
                         </center>
                     }
                 });
