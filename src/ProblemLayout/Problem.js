@@ -24,6 +24,7 @@ import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
 import * as localForage from "localforage";
+import { cleanArray } from "../util/cleanObject";
 
 
 class Problem extends React.Component {
@@ -175,10 +176,17 @@ class Problem extends React.Component {
             if (kcArray == null) {
                 kcArray = []
             }
-            for (const kc of kcArray) {
-                //console.log(kc);
+            const _kcArray = cleanArray(kcArray)
+            for (const kc of _kcArray) {
+                if (!this.bktParams[kc]) {
+                    console.debug("invalid KC", kc)
+                    this.context.firebase.submitSiteLog("site-warning", "missing-kc", {
+                        kc,
+                        cardIndex
+                    }, this.context.problemID)
+                    continue
+                }
                 update(this.bktParams[kc], isCorrect);
-                //console.log(this.bktParams[kc].probMastery);
             }
         }
 
