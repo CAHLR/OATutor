@@ -106,12 +106,12 @@ class LessonSelection extends React.Component {
                                                         <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
                                                         <Button variant="contained" color="primary"
                                                                 className={classes.button}
-                                                                aria-label={`View Lesson ${lesson.lessonNum}`}
-                                                                aria-roledescription={`Navigate to lesson ${lesson.lessonNum}'s page to start working on problems`}
+                                                                aria-label={`View Lesson ${lesson.id}`}
+                                                                aria-roledescription={`Navigate to lesson ${lesson.id}'s page to start working on problems`}
                                                                 role={"link"}
                                                                 style={{ marginBottom: "10px" }}
                                                                 onClick={() => {
-                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                    this.props.history.push(`/lessons/${lesson.id}`)
                                                                     this.props.selectLesson(lesson)
                                                                 }}>
                                                             Select
