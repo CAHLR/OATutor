@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities17a-index.js"; const step = {id: "a65ae04inequalities17a", stepAnswer: ["x=-2/3 or x=4"], problemType: "TextBox", stepTitle: "$$|3x-5|-1=6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
