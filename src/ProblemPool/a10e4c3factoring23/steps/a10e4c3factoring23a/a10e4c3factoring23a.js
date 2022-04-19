@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring23a-index.js"; const step = {id: "a10e4c3factoring23a", stepAnswer: ["(2k-3)(2k-5)"], problemType: "TextBox", stepTitle: "$$4k^2-16k+15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring7a-index.js"; const step = {id: "a10e4c3factoring7a", stepAnswer: ["$$\\left(2a+3\\right) \\left(a+1\\right)$$"], problemType: "TextBox", stepTitle: "$$2a^2+5a+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
