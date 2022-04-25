@@ -24,7 +24,6 @@ class DebugPlatform extends React.Component {
         };
         this.completedProbs = new Set();
         this.lesson = null;
-        //console.log(this.props.lessonNum);
 
         let chosenProblem = null;
         const problemIDs = [];
@@ -81,7 +80,6 @@ class DebugPlatform extends React.Component {
         };
         this.completedProbs = new Set();
         this.lesson = null;
-        //console.log(this.props.lessonNum);
 
         let chosenProblem = null;
         const problemIDs = [];
@@ -223,7 +221,7 @@ class DebugPlatform extends React.Component {
                 {this.state.currProblem
                     ? <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
                                lesson={this.lesson}
-                               seed={this.state.seed} lessonNum={this.props.lessonNum}/>
+                               seed={this.state.seed}/>
                     : <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
                         <Typography variant={'h3'}>Problem id <code>{this.props.problemID}</code> is not
                             valid!</Typography>
