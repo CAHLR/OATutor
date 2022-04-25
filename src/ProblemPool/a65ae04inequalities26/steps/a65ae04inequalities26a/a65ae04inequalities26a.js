@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities26a-index.js"; const step = {id: "a65ae04inequalities26a", stepAnswer: ["(-9,9)"], problemType: "TextBox", stepTitle: "$$|x|<9$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
