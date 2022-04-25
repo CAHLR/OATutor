@@ -1,0 +1,1 @@
+import hints from "./a4488b1fractions1a-index.js"; const step = {id: "a4488b1fractions1a", stepAnswer: ["$$\\frac{-12}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{-108}{63}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

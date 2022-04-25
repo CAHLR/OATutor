@@ -1,0 +1,1 @@
+import hints from "./a443311sqroots14a-index.js"; const step = {id: "a443311sqroots14a", stepAnswer: ["$$\\frac{2\\left(4-\\sqrt{2}\\right)}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4}{4+\\sqrt{2}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

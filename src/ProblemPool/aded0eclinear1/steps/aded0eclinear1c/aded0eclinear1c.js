@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear1c-index.js"; const step = {id: "aded0eclinear1c", stepAnswer: ["(-inf, -3/5]"], problemType: "MultipleChoice", stepTitle: "$$x \\leq \\left(-\\frac{3}{5}\\right)$$", stepBody: "", choices: ["(-inf, -3/5)", "(-inf, -3/5]", "(-3/5, inf]", "[-3/5, inf]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving21a-index.js"; const step = {id: "aae6efeSolving21a", stepAnswer: ["72"], problemType: "TextBox", stepTitle: "There are three consecutive even integers whose sum is 222. Find the smallest.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

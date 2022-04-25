@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear19a-index.js"; const step = {id: "aded0eclinear19a", stepAnswer: ["$$g \\leq \\frac{23}{36}$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$g-\\frac{11}{12} \\leq \\frac{-5}{18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
