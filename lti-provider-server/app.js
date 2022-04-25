@@ -320,7 +320,10 @@ app.post('/auth', async (req, res) => {
     console.debug("assignment title: " + assignment_title);
 
     const lessonNum = lessonMapping[assignment_title];
-    const lessonID = !isNaN(lessonNum) ? numericalHashMapping[lessonNum] : null
+    let lessonID = null
+    if ((Boolean(lessonNum) || lessonNum.toString() === "0") && !isNaN(+lessonNum) && (+lessonNum) < 150) {
+        lessonID = numericalHashMapping[+lessonNum]
+    }
     const consumer_key = oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
     const provider = new lti.Provider(consumer_key, consumer_secret);
