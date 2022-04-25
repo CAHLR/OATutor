@@ -10,6 +10,8 @@ import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import { cleanArray } from "../util/cleanObject";
+import ErrorBoundary from "../Components/_General/ErrorBoundary";
 
 let problemPool = require('../generated/poolFile.json')
 
@@ -36,7 +38,7 @@ class Platform extends React.Component {
         for (const problem of this.problemIndex.problems) {
             for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
                 const step = problem.steps[stepIndex];
-                step.knowledgeComponents = context.skillModel[step.id];
+                step.knowledgeComponents = cleanArray(context.skillModel[step.id]);
             }
         }
         if (this.props.lessonNum == null) {
@@ -65,10 +67,25 @@ class Platform extends React.Component {
         } else if (this.props.courseNum != null) {
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
+        this.onComponentUpdate(null, null, null)
     }
 
     componentWillUnmount() {
         this._isMounted = false
+        this.context.problemID = "n/a"
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this.onComponentUpdate(prevProps, prevState, snapshot)
+    }
+
+    onComponentUpdate(prevProps, prevState, snapshot) {
+        if (Boolean(this.state.currProblem?.id) && this.context.problemID !== this.state.currProblem.id) {
+            this.context.problemID = this.state.currProblem.id
+        }
+        if (this.state.status !== "learning") {
+            this.context.problemID = "n/a"
+        }
     }
 
     async selectLesson(lesson, updateServer = true, context) {
@@ -241,7 +258,7 @@ class Platform extends React.Component {
         const MASTERED = 0.85;
         const score = Math.min(mastery / (MASTERED), 1.0);
         this.setState({ mastery: score });
-        if(score === 1.0){
+        if (score === 1.0) {
             toast.success("You've successfully completed this assignment!", {
                 toastId: ToastID.successfully_completed_lesson.toString()
             })
@@ -283,10 +300,12 @@ class Platform extends React.Component {
                                      history={this.props.history}
                                      courseNum={this.props.courseNum}/> : ""}
                 {this.state.status === "learning" ?
-                    <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
-                             lesson={this.lesson}
-                             seed={this.state.seed} lessonNum={this.props.lessonNum}
-                             displayMastery={this.displayMastery}/> : ""}
+                    <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                        <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
+                                 lesson={this.lesson}
+                                 seed={this.state.seed} lessonNum={this.props.lessonNum}
+                                 displayMastery={this.displayMastery}/>
+                    </ErrorBoundary> : ""}
                 {this.state.status === "exhausted" ?
                     <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
                 {this.state.status === "graduated" ?

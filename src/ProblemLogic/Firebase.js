@@ -103,7 +103,7 @@ class Firebase {
 
     log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
         if (!DO_LOG_DATA) return
-        console.debug("trying to log hint: ", hint)
+        console.debug("trying to log hint: ", hint, "step", step)
         if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
             hintsFinished = hintsFinished.map(step => step.join(", "))
         }
@@ -190,11 +190,12 @@ class Firebase {
         return this.writeData(problemStartLogOutput, data);
     }
 
-    submitSiteLog(logType, logMessage, relevantInformation) {
+    submitSiteLog(logType, logMessage, relevantInformation, problemID = "n/a") {
         const data = {
             logType,
             logMessage,
             relevantInformation,
+            problemID
         };
         return this.writeData(siteLogOutput, data);
     }

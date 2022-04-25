@@ -39,6 +39,7 @@ class DebugPlatform extends React.Component {
                 step.knowledgeComponents = context.skillModel[step.id];
             }
         }
+        context.problemID = this.props.problemID
         context.problemIDs = problemIDs.sort(this.__compareProblemID)
 
         this.state = {
@@ -53,6 +54,21 @@ class DebugPlatform extends React.Component {
         if (this.context.needRefresh) {
             this.context.needRefresh = false;
             window.location.reload();
+        }
+        this.onComponentUpdate(null, null, null)
+    }
+
+    componentWillUnmount() {
+        this.context.problemID = "n/a"
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this.onComponentUpdate(prevProps, prevState, snapshot)
+    }
+
+    onComponentUpdate(prevProps, prevState, snapshot){
+        if (Boolean(this.state.currProblem?.id) && this.context.problemID !== this.state.currProblem.id) {
+            this.context.problemID = this.state.currProblem.id
         }
     }
 

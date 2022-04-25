@@ -37,7 +37,8 @@ import SessionExpired from "./pages/SessionExpired";
 import { Posts } from "./pages/Posts/Posts";
 import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
-import cleanObjectKeys from "./util/cleanObjectKeys";
+import { cleanObjectKeys } from "./util/cleanObject";
+import GlobalErrorBoundary from "./Components/_General/GlobalErrorBoundary";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config)
@@ -81,7 +82,11 @@ class App extends React.Component {
         this.originalBktParams = JSON.parse(JSON.stringify(this.getTreatmentObject(treatmentMapping.bktParams)))
 
         this.state = {
-            additionalContext: {}
+            additionalContext: {},
+        }
+
+        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+            document["oats-meta-site-hash"] = process.env.REACT_APP_COMMIT_HASH
         }
 
         const onLocationChange = () => {
@@ -205,55 +210,58 @@ class App extends React.Component {
                     alreadyLinkedLesson: "",
                     jwt: '',
                     user: {},
+                    problemID: 'n/a',
                     problemIDs: null,
                     ...this.state.additionalContext
                 }}>
-                    <Router>
-                        <div className="Router">
-                            <Switch>
-                                <Route exact path="/" render={(props) => (
-                                    <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                              loadProgress={this.loadProgress}
-                                              removeProgress={this.removeProgress} {...props} />
-                                )}/>
-                                <Route path="/courses/:courseNum" render={(props) => (
-                                    <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                              loadProgress={this.loadProgress}
-                                              removeProgress={this.removeProgress}
-                                              courseNum={props.match.params.courseNum} {...props} />
-                                )}/>
-                                <Route path="/lessons/:lessonNum" render={(props) => (
-                                    <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                              loadProgress={this.loadProgress}
-                                              removeProgress={this.removeProgress}
-                                              lessonNum={props.match.params.lessonNum} {...props} />
-                                )}/>
-                                <Route path="/debug/:problemID" render={(props) => (
-                                    <DebugPlatform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                                   loadProgress={this.loadProgress}
-                                                   removeProgress={this.removeProgress}
-                                                   problemID={props.match.params.problemID} {...props} />
-                                )}/>
-                                <Route path="/posts" render={(props) => (
-                                    <Posts key={Date.now()} {...props} />
-                                )}/>
-                                <Route exact path="/assignment-not-linked" render={(props) => (
-                                    <AssignmentNotLinked key={Date.now()} {...props} />
-                                )}/>
-                                <Route exact path="/assignment-already-linked" render={(props) => (
-                                    <AssignmentAlreadyLinked key={Date.now()} {...props} />
-                                )}/>
-                                <Route exact path="/session-expired" render={(props) => (
-                                    <SessionExpired key={Date.now()} {...props} />
-                                )}/>
-                                <Route component={Notfound}/>
-                            </Switch>
-                        </div>
-                    </Router>
-                    <ToastContainer
-                        autoClose={false}
-                        closeOnClick={false}
-                    />
+                    <GlobalErrorBoundary>
+                        <Router>
+                            <div className="Router">
+                                <Switch>
+                                    <Route exact path="/" render={(props) => (
+                                        <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
+                                                  loadProgress={this.loadProgress}
+                                                  removeProgress={this.removeProgress} {...props} />
+                                    )}/>
+                                    <Route path="/courses/:courseNum" render={(props) => (
+                                        <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
+                                                  loadProgress={this.loadProgress}
+                                                  removeProgress={this.removeProgress}
+                                                  courseNum={props.match.params.courseNum} {...props} />
+                                    )}/>
+                                    <Route path="/lessons/:lessonNum" render={(props) => (
+                                        <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
+                                                  loadProgress={this.loadProgress}
+                                                  removeProgress={this.removeProgress}
+                                                  lessonNum={props.match.params.lessonNum} {...props} />
+                                    )}/>
+                                    <Route path="/debug/:problemID" render={(props) => (
+                                        <DebugPlatform key={Date.now()} saveProgress={() => this.saveProgress()}
+                                                       loadProgress={this.loadProgress}
+                                                       removeProgress={this.removeProgress}
+                                                       problemID={props.match.params.problemID} {...props} />
+                                    )}/>
+                                    <Route path="/posts" render={(props) => (
+                                        <Posts key={Date.now()} {...props} />
+                                    )}/>
+                                    <Route exact path="/assignment-not-linked" render={(props) => (
+                                        <AssignmentNotLinked key={Date.now()} {...props} />
+                                    )}/>
+                                    <Route exact path="/assignment-already-linked" render={(props) => (
+                                        <AssignmentAlreadyLinked key={Date.now()} {...props} />
+                                    )}/>
+                                    <Route exact path="/session-expired" render={(props) => (
+                                        <SessionExpired key={Date.now()} {...props} />
+                                    )}/>
+                                    <Route component={Notfound}/>
+                                </Switch>
+                            </div>
+                        </Router>
+                        <ToastContainer
+                            autoClose={false}
+                            closeOnClick={false}
+                        />
+                    </GlobalErrorBoundary>
                 </ThemeContext.Provider>
             </ThemeProvider>
         );

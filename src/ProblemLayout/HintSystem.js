@@ -11,6 +11,7 @@ import SubHintSystem from './SubHintSystem.js';
 import { ThemeContext } from "../config/config";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
+import ErrorBoundary from "../Components/_General/ErrorBoundary";
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -107,39 +108,40 @@ class HintSystem extends React.Component {
         const { classes, index } = this.props;
         return (
             <div className={classes.root}>
-                {this.props.hints.map((hint, i) => {
-                        return <Accordion key={i}
-                                          onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
-                                          disabled={this.isLocked(i)}
-                                          expanded={this.state.currentExpanded === i}
-                                          defaultExpanded={false}>
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon/>}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
-                                {...stagingProp({
-                                    "data-selenium-target": `hint-expand-${i}-${index}`
-                                })}
-                            >
-                                <Typography className={classes.heading}>
-                                    Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography component={'span'} style={{ width: "100%" }}>
-                                    {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
-                                    {hint.type === "scaffold" ?
-                                        <div>
-                                            <Spacer/>
-                                            <HintTextbox hintNum={i} hint={hint}
-                                                         index={index}
-                                                         submitHint={this.props.submitHint}
-                                                         seed={this.props.seed}
-                                                         hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                                                         toggleHints={(event) => this.toggleSubHints(event, i)}/>
-                                        </div> : ""}
-                                    {this.state.showSubHints[i] && hint.subHints !== undefined ?
-                                        <div className="SubHints">
-                                            <Spacer/>
+                {this.props.hints.map((hint, i) =>
+                    <Accordion key={i}
+                               onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+                               disabled={this.isLocked(i)}
+                               expanded={this.state.currentExpanded === i}
+                               defaultExpanded={false}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon/>}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            {...stagingProp({
+                                "data-selenium-target": `hint-expand-${i}-${index}`
+                            })}
+                        >
+                            <Typography className={classes.heading}>
+                                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography component={'span'} style={{ width: "100%" }}>
+                                {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
+                                {hint.type === "scaffold" ?
+                                    <div>
+                                        <Spacer/>
+                                        <HintTextbox hintNum={i} hint={hint}
+                                                     index={index}
+                                                     submitHint={this.props.submitHint}
+                                                     seed={this.props.seed}
+                                                     hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
+                                                     toggleHints={(event) => this.toggleSubHints(event, i)}/>
+                                    </div> : ""}
+                                {this.state.showSubHints[i] && hint.subHints !== undefined ?
+                                    <div className="SubHints">
+                                        <Spacer/>
+                                        <ErrorBoundary componentName={"SubHintSystem"}>
                                             <SubHintSystem
                                                 problemID={this.props.problemID}
                                                 hints={hint.subHints}
@@ -151,13 +153,13 @@ class HintSystem extends React.Component {
                                                 seed={this.props.seed}
                                                 hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                                             />
-                                            <Spacer/>
-                                        </div>
-                                        : ""}
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                    }
+                                        </ErrorBoundary>
+                                        <Spacer/>
+                                    </div>
+                                    : ""}
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
                 )}
             </div>
         )
