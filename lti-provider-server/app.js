@@ -125,12 +125,7 @@ app.post('/launch', async (req, res) => {
 
     let err, linkedLesson;
     [err, linkedLesson] = await getLinkedLesson(provider.body.resource_link_id);
-    if ((Boolean(linkedLesson) || linkedLesson.toString() === "0") && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
-        // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
-        console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
-        linkedLesson = numericalHashMapping[+linkedLesson]
-        await setLinkedLesson(provider.body.resource_link_id, linkedLesson)
-    }
+    linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
 
     if (provider.student || provider.prospective_student || provider.alumni) {
         // find lesson to send to iff it has been linked by an instructor
@@ -354,6 +349,8 @@ app.post('/auth', async (req, res) => {
                 console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonID: ${lessonID}`)
                 // dangerous because grades may not be able to be parsed correctly
             }
+        } else {
+            linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
         }
 
         const privileged = provider.ta || provider.admin || provider.instructor
@@ -364,6 +361,16 @@ app.post('/auth', async (req, res) => {
         res.end();
     }
 });
+
+async function catchLegacyLessonID(linkedLesson, provider){
+    if ((Boolean(linkedLesson) || linkedLesson.toString() === "0") && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
+        // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
+        console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
+        linkedLesson = numericalHashMapping[+linkedLesson]
+        await setLinkedLesson(provider.body.resource_link_id, linkedLesson)
+    }
+    return linkedLesson
+}
 
 app.get("/", (req, res) => {
     res.send("Please visit https://cahlr.github.io/OpenITS").end()
