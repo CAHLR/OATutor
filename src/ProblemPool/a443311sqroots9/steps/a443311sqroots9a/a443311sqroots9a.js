@@ -1,1 +1,0 @@
-import hints from "./a443311sqroots9a-index.js"; const step = {id: "a443311sqroots9a", stepAnswer: ["$$\\frac{7b^2}{a}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{147a b^8}}{\\sqrt{3a^3 b^4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

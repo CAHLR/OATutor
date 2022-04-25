@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions4a-index.js"; const step = {id: "a4488b1fractions4a", stepAnswer: ["$$\\frac{-21a^2}{11b^2}$$"], problemType: "TextBox", stepTitle: "-210a**2/110b**", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
