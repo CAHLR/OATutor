@@ -5,7 +5,7 @@ import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
-import { ThemeContext, lessonPlans, coursePlans, MIDDLEWARE_URL } from '../config/config.js';
+import { ThemeContext, coursePlans, MIDDLEWARE_URL, findLessonById } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
@@ -28,7 +28,6 @@ class Platform extends React.Component {
         };
         this.completedProbs = new Set();
         this.lesson = null;
-        //console.log(this.props.lessonNum);
 
         this.user = context.user || {}
         this.studentNameDisplay = context.studentName ? (decodeURIComponent(context.studentName) + " | ") : "Not logged in | ";
@@ -41,7 +40,7 @@ class Platform extends React.Component {
                 step.knowledgeComponents = cleanArray(context.skillModel[step.id]);
             }
         }
-        if (this.props.lessonNum == null) {
+        if (this.props.lessonID == null) {
             this.state = {
                 currProblem: null,
                 status: "courseSelection",
@@ -60,9 +59,9 @@ class Platform extends React.Component {
 
     componentDidMount() {
         this._isMounted = true
-        if (this.props.lessonNum != null) {
-            this.selectLesson(lessonPlans[parseInt(this.props.lessonNum)], false).then(_ => {
-                console.log("loaded lesson " + this.props.lessonNum, this.lesson);
+        if (this.props.lessonID != null) {
+            this.selectLesson(findLessonById(this.props.lessonID), false).then(_ => {
+                console.log("loaded lesson " + this.props.lessonID, this.lesson);
             });
         } else if (this.props.courseNum != null) {
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
@@ -151,7 +150,7 @@ class Platform extends React.Component {
                             return
                     }
                 } else {
-                    toast.success(`Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.lessonNum} "${lesson.topics}"`, {
+                    toast.success(`Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.id} "${lesson.topics}"`, {
                         toastId: ToastID.set_lesson_success.toString()
                     })
                 }
@@ -277,7 +276,7 @@ class Platform extends React.Component {
                             </Grid>
                             <Grid item xs={6} key={2}>
                                 <div style={{ textAlign: 'center', textAlignVertical: 'center', paddingTop: "3px" }}>
-                                    {lessonPlans[parseInt(this.props.lessonNum)] != null ? lessonPlans[parseInt(this.props.lessonNum)].name + " " + lessonPlans[parseInt(this.props.lessonNum)].topics : ""}
+                                    {Boolean(findLessonById(this.props.lessonID)) ? findLessonById(this.props.lessonID).name + " " + findLessonById(this.props.lessonID).topics : ""}
                                 </div>
                             </Grid>
                             <Grid item xs={3} key={3}>
@@ -303,7 +302,7 @@ class Platform extends React.Component {
                     <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
                         <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
                                  lesson={this.lesson}
-                                 seed={this.state.seed} lessonNum={this.props.lessonNum}
+                                 seed={this.state.seed} lessonID={this.props.lessonID}
                                  displayMastery={this.displayMastery}/>
                     </ErrorBoundary> : ""}
                 {this.state.status === "exhausted" ?

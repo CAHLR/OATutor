@@ -4,8 +4,8 @@ const lti = require('ims-lti')
 const jwt = require('jsonwebtoken');
 const jwtMiddleware = require('express-jwt');
 const level = require('level')
-const { lessonMapping } = require("./legacy-lesson-mapping");
 const { SITE_NAME } = require("../src/config/shared-config");
+const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
 const to = require("await-to-js").default;
 
 const db = level('.mapping-db')
@@ -205,7 +205,7 @@ app.post('/setLesson', jwtMiddleware({
         return
     }
 
-    if (!req.body.lesson || !req.body.lesson.lessonNum) {
+    if (!req.body.lesson || !req.body.lesson.id) {
         res.status(400).send('no_lesson_selected').end()
         return
     }
@@ -221,7 +221,7 @@ app.post('/setLesson', jwtMiddleware({
         return;
     }
 
-    [err] = await setLinkedLesson(user.resource_link_id, req.body.lesson.lessonNum);
+    [err] = await setLinkedLesson(user.resource_link_id, req.body.lesson.id);
 
     if (err) {
         console.debug('db put error', err)
@@ -315,6 +315,7 @@ app.post('/auth', async (req, res) => {
     console.debug("assignment title: " + assignment_title);
 
     const lessonNum = lessonMapping[assignment_title];
+    const lessonID = ! isNaN(lessonNum) ? numericalHashMapping[lessonNum] : null
     const consumer_key = oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
     const provider = new lti.Provider(consumer_key, consumer_secret);
@@ -332,7 +333,7 @@ app.post('/auth', async (req, res) => {
 
     if (errFlag) return
 
-    if (lessonNum == null) {
+    if (lessonNum == null || lessonID == null) {
         console.log(`Lesson does not exist for "${assignment_title}"`);
         res.send(`Invalid lesson ID. Please contact your teacher or the ${SITE_NAME} development team to fix this error.`);
         res.end();
@@ -340,9 +341,9 @@ app.post('/auth', async (req, res) => {
         let err, linkedLesson;
         [err, linkedLesson] = await getLinkedLesson(resource_link_id);
         if (err || !linkedLesson) {
-            [err] = await setLinkedLesson(resource_link_id, lessonNum);
+            [err] = await setLinkedLesson(resource_link_id, lessonID);
             if (err) {
-                console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonName: ${lessonNum}`)
+                console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonID: ${lessonID}`)
                 // dangerous because grades may not be able to be parsed correctly
             }
         }
@@ -351,7 +352,7 @@ app.post('/auth', async (req, res) => {
 
         const token = getJWT(provider, consumer_secret, consumer_key, privileged)
 
-        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson || lessonNum}?token=${token}` })
+        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson || lessonID}?token=${token}` })
         res.end();
     }
 });

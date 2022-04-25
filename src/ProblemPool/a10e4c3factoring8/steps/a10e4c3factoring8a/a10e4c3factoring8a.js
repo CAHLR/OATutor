@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring8a-index.js"; const step = {id: "a10e4c3factoring8a", stepAnswer: ["$$\\left(4b+1\\right) \\left(b+1\\right)$$"], problemType: "TextBox", stepTitle: "$$4b^2+5b+1$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
