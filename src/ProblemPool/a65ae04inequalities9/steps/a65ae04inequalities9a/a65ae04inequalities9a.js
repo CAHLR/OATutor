@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities9a-index.js"; const step = {id: "a65ae04inequalities9a", stepAnswer: ["No Solution"], problemType: "MultipleChoice", stepTitle: "$$|\\frac{3x}{5}-2|+5=2$$", stepBody: "", choices: ["No Solution", "$$x=7, 1Ix=2, 3Ix=4, -5INo$$ Solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities27a-index.js"; const step = {id: "a65ae04inequalities27a", stepAnswer: ["(-1,1)"], problemType: "TextBox", stepTitle: "$$|x|<1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

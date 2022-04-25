@@ -1,1 +1,0 @@
-import steps from "./ac3e97dclt2-index.js"; const problem = {id: "ac3e97dclt2", title: "Central Limit Theorem: Greater Than", body: "", steps: steps, variabilization: {}, oer: "statisticshowto.com", lesson: "Statistics: Central Limit Theorem", courseName: "Data Content"}; export { problem };

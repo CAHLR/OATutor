@@ -1,1 +1,0 @@
-var hints = [{id: "a10b60arealnumbers13b-h1", type: "hint", dependencies: [], title: "Like Radicals", text: "For two like radicals, $$a \\sqrt[n]{x}-b \\sqrt[n]{x}$$ is equivalent to $$\\left(a-b\\right) \\sqrt[n]{x}$$", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot1a-index.js"; const step = {id: "a4a0f7dradicalroot1a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is $$x=2$$ a solution?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};
