@@ -85,7 +85,7 @@ const getJWT = (provider, consumer_secret, consumer_key, privileged = false) => 
         resource_link_title: provider.body.resource_link_title,
         user_id: provider.userId,
         full_name: provider.body.lis_person_name_full,
-        course_name : provider.body.context_title,
+        course_name: provider.body.context_title,
         course_code: provider.body.context_label,
         course_id: provider.body.context_id,
 
@@ -125,6 +125,12 @@ app.post('/launch', async (req, res) => {
 
     let err, linkedLesson;
     [err, linkedLesson] = await getLinkedLesson(provider.body.resource_link_id);
+    if ((Boolean(linkedLesson) || linkedLesson.toString() === "0") && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
+        // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
+        console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
+        linkedLesson = numericalHashMapping[+linkedLesson]
+        await setLinkedLesson(provider.body.resource_link_id, linkedLesson)
+    }
 
     if (provider.student || provider.prospective_student || provider.alumni) {
         // find lesson to send to iff it has been linked by an instructor
@@ -314,7 +320,7 @@ app.post('/auth', async (req, res) => {
     console.debug("assignment title: " + assignment_title);
 
     const lessonNum = lessonMapping[assignment_title];
-    const lessonID = ! isNaN(lessonNum) ? numericalHashMapping[lessonNum] : null
+    const lessonID = !isNaN(lessonNum) ? numericalHashMapping[lessonNum] : null
     const consumer_key = oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
     const provider = new lti.Provider(consumer_key, consumer_secret);
