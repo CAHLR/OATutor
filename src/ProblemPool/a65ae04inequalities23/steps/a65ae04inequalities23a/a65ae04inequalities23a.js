@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities23a-index.js"; const step = {id: "a65ae04inequalities23a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "$$|\\frac{3}{4} x-5|+9=4$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};
