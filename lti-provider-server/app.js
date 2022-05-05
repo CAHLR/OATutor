@@ -362,8 +362,8 @@ app.post('/auth', async (req, res) => {
     }
 });
 
-async function catchLegacyLessonID(linkedLesson, provider){
-    if ((Boolean(linkedLesson) || linkedLesson.toString() === "0") && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
+async function catchLegacyLessonID(linkedLesson, provider) {
+    if ((Boolean(linkedLesson) || (linkedLesson != null && linkedLesson.toString() === "0")) && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
         // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
         console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
         linkedLesson = numericalHashMapping[+linkedLesson]
