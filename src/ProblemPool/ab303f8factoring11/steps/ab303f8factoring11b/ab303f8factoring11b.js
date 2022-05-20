@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring11b-index.js"; const step = {id: "ab303f8factoring11b", stepAnswer: ["$$\\left(12x+8\\right) \\left(12x-8\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$144x^2-64$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

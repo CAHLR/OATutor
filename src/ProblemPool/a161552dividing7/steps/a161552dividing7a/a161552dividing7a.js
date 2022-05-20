@@ -1,0 +1,1 @@
+import hints from "./a161552dividing7a-index.js"; const step = {id: "a161552dividing7a", stepAnswer: ["$$\\left(-9m^2\\right)+6m$$"], problemType: "TextBox", stepTitle: "$$\\frac{63m^4-42m^3}{\\left(-7m^2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

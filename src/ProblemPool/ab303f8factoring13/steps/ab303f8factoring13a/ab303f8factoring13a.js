@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring13a-index.js"; const step = {id: "ab303f8factoring13a", stepAnswer: ["$$3y^{2\\left(4x^2-9\\right)} \\left(4x^2+9\\right)$$"], problemType: "TextBox", stepTitle: "$$48x^4 y^2-243y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

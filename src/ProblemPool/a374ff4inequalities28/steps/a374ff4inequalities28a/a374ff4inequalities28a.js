@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities28a-index.js"; const step = {id: "a374ff4inequalities28a", stepAnswer: ["2/5,(0,-1)"], problemType: "TextBox", stepTitle: "$$y=\\frac{2}{5} x-1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

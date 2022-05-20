@@ -1,0 +1,1 @@
+import hints from "./a746c1bFactoring12a-index.js"; const step = {id: "a746c1bFactoring12a", stepAnswer: ["$$2\\left(p+3q\\right) \\left(p^2-p 3q+{\\left(3q\\right)}^2\\right)$$"], problemType: "TextBox", stepTitle: "$$2p^3+54q^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

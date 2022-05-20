@@ -1,0 +1,1 @@
+import hints from "./a3abd22addsubrational14a-index.js"; const step = {id: "a3abd22addsubrational14a", stepAnswer: ["$$\\frac{q-8}{q+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5q^2+3q-9}{q^2+6q+8}-\\frac{4q^2+9q+7}{q^2+6p+8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

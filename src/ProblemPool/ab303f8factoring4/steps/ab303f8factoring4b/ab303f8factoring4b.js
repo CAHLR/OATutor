@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring4b-index.js"; const step = {id: "ab303f8factoring4b", stepAnswer: ["$$\\left(5x+11\\right) \\left(5x-11\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$25x^2-121$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
