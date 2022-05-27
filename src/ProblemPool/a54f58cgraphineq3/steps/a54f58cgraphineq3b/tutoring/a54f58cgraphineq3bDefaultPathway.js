@@ -1,0 +1,1 @@
+var hints = [{id: "a54f58cgraphineq3b-h1", type: "hint", dependencies: [], title: "Plugging in x and y", text: "We must plug in $$x=4$$ and $$y=-1$$ into both inequalities and determine whether they are true. $$-1>4\\left(4\\right)-2$$ is false. So, the point is not a solution.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a5d54dagcf27a-index.js"; const step = {id: "a5d54dagcf27a", stepAnswer: ["$$\\left(x+4\\right) \\left(x-1\\right)$$"], problemType: "TextBox", stepTitle: "$$x^2-x+4x-4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

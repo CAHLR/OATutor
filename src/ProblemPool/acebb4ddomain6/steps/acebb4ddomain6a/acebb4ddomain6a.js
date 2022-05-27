@@ -1,0 +1,1 @@
+import hints from "./acebb4ddomain6a-index.js"; const step = {id: "acebb4ddomain6a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "Find the highest range of the relation {(1,3),(2,6),(3,9),(4,12),(5,15)}", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

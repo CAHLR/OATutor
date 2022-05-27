@@ -1,0 +1,1 @@
+import hints from "./a1a538fpairs5a-index.js"; const step = {id: "a1a538fpairs5a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Determine whether $$\\frac{\\frac{8}{76}}{7}$$ is a solution to the system: $$x+y=2, y=\\frac{3}{4} x$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

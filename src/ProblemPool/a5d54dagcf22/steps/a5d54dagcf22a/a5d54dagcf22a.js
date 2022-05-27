@@ -1,0 +1,1 @@
+import hints from "./a5d54dagcf22a-index.js"; const step = {id: "a5d54dagcf22a", stepAnswer: ["$$-2x \\left(x^2-9x+4\\right)$$"], problemType: "TextBox", stepTitle: "$$-2x^3+18x^2-8x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

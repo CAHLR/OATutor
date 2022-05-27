@@ -1,0 +1,1 @@
+import hints from "./a3abd22addsubrational6a-index.js"; const step = {id: "a3abd22addsubrational6a", stepAnswer: ["$$s+5$$"], problemType: "TextBox", stepTitle: "$$\\frac{3s^2}{3s-2}+\\frac{13s-10}{3s-2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

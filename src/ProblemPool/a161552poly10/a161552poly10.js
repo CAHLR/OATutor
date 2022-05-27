@@ -1,0 +1,1 @@
+import steps from "./a161552poly10-index.js"; const problem = {id: "a161552poly10", title: "Factor Theorem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.4 Dividing Polynomials", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

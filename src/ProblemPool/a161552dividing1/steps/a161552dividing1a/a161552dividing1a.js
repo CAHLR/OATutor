@@ -1,0 +1,1 @@
+import hints from "./a161552dividing1a-index.js"; const step = {id: "a161552dividing1a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\frac{15r^4 s^9}{15r^4 s^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

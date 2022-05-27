@@ -1,0 +1,1 @@
+import hints from "./a3837e8graphline12a-index.js"; const step = {id: "a3837e8graphline12a", stepAnswer: ["1/4,2"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{4} x+2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

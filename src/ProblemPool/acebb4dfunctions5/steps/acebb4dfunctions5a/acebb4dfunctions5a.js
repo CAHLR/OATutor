@@ -1,0 +1,1 @@
+import hints from "./acebb4dfunctions5a-index.js"; const step = {id: "acebb4dfunctions5a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$f(x)=5x-3$$", stepBody: "What is f(-1)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

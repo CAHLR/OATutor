@@ -1,0 +1,1 @@
+import hints from "./a251a50multiplication11a-index.js"; const step = {id: "a251a50multiplication11a", stepAnswer: ["$$\\operatorname{10}\\left(a^2\\right) b^2+13ab-3$$"], problemType: "TextBox", stepTitle: "$$\\left(5ab-1\\right) \\left(2ab+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
