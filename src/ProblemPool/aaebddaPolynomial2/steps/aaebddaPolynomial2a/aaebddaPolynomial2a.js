@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial2a-index.js"; const step = {id: "aaebddaPolynomial2a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "a) -5", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

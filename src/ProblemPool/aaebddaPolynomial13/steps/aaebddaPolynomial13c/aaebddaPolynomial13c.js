@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial13c-index.js"; const step = {id: "aaebddaPolynomial13c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "c) f(0)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

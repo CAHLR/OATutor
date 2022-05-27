@@ -1,0 +1,1 @@
+import hints from "./a54f58cgraphineq19a-index.js"; const step = {id: "a54f58cgraphineq19a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is (-4,-1) a solution to the system of inequalities $$y<\\frac{3x}{2}+3$$, $$\\frac{3x}{4}-2y<5$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};
