@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v2.4.1
 
       - name: Change homepage in package.json
-        run: sed -i 's/https:\/\/cahlr.github.io\/OpenITS\//OpenITS/g' package.json
+        run: sed -i 's/place-holder/OATutor/g' package.json
 
       - name: Cache node modules
         uses: actions/cache@v2
