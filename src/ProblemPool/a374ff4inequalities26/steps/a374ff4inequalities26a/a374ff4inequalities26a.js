@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities26a-index.js"; const step = {id: "a374ff4inequalities26a", stepAnswer: ["-4/7,(0,-2)"], problemType: "TextBox", stepTitle: "$$y=\\frac{-4}{7} x-2$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

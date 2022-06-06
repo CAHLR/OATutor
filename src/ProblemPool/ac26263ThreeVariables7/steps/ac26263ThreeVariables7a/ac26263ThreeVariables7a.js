@@ -1,0 +1,1 @@
+import hints from "./ac26263ThreeVariables7a-index.js"; const step = {id: "ac26263ThreeVariables7a", stepAnswer: ["(-2,3,-1)"], problemType: "MultipleChoice", stepTitle: "Solve $$4x-3z=-5;$$ $$3y+2z=7;$$ $$3x+4y=6$$", stepBody: "", choices: ["(-1,3,-2)", "(-2,3,-1)", "(3,1,-2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

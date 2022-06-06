@@ -1,0 +1,1 @@
+import hints from "./a9ff35apoly14a-index.js"; const step = {id: "a9ff35apoly14a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Solve: $$2x^2-7x+5$$ when $$x=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

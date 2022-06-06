@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities12a-index.js"; const step = {id: "a374ff4inequalities12a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "(-2,-1)(6,5)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

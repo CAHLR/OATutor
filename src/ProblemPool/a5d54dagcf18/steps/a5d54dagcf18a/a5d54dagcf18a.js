@@ -1,0 +1,1 @@
+import hints from "./a5d54dagcf18a-index.js"; const step = {id: "a5d54dagcf18a", stepAnswer: ["$$5x \\left(x^2-3x+4\\right)$$"], problemType: "TextBox", stepTitle: "$$5x^3-15x^2+20x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
