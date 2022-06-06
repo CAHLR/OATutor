@@ -86,7 +86,7 @@ const getJWT = (provider, consumer_secret, consumer_key, privileged = false) => 
         resource_link_title: provider.body.resource_link_title,
         user_id: provider.userId,
         full_name: provider.body.lis_person_name_full,
-        course_name : provider.body.context_title,
+        course_name: provider.body.context_title,
         course_code: provider.body.context_label,
         course_id: provider.body.context_id,
 
@@ -126,6 +126,7 @@ app.post('/launch', async (req, res) => {
 
     let err, linkedLesson;
     [err, linkedLesson] = await getLinkedLesson(provider.body.resource_link_id);
+    linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
 
     if (provider.student || provider.prospective_student || provider.alumni) {
         // find lesson to send to iff it has been linked by an instructor
@@ -315,7 +316,10 @@ app.post('/auth', async (req, res) => {
     console.debug("assignment title: " + assignment_title);
 
     const lessonNum = lessonMapping[assignment_title];
-    const lessonID = ! isNaN(lessonNum) ? numericalHashMapping[lessonNum] : null
+    let lessonID = null
+    if ((Boolean(lessonNum) || lessonNum.toString() === "0") && !isNaN(+lessonNum) && (+lessonNum) < 150) {
+        lessonID = numericalHashMapping[+lessonNum]
+    }
     const consumer_key = oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
     const provider = new lti.Provider(consumer_key, consumer_secret);
@@ -346,6 +350,8 @@ app.post('/auth', async (req, res) => {
                 console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonID: ${lessonID}`)
                 // dangerous because grades may not be able to be parsed correctly
             }
+        } else {
+            linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
         }
 
         const privileged = provider.ta || provider.admin || provider.instructor
@@ -356,6 +362,16 @@ app.post('/auth', async (req, res) => {
         res.end();
     }
 });
+
+async function catchLegacyLessonID(linkedLesson, provider) {
+    if ((Boolean(linkedLesson) || (linkedLesson != null && linkedLesson.toString() === "0")) && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
+        // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
+        console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
+        linkedLesson = numericalHashMapping[+linkedLesson]
+        await setLinkedLesson(provider.body.resource_link_id, linkedLesson)
+    }
+    return linkedLesson
+}
 
 app.get("/", (req, res) => {
     res.send("Please visit https://cahlr.github.io/OpenITS").end()

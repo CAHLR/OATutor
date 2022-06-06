@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial1a-index.js"; const step = {id: "aaebddaPolynomial1a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "a) $$7y^2-5y+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

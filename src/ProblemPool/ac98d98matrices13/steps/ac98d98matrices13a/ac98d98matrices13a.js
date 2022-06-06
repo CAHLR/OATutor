@@ -1,0 +1,1 @@
+import hints from "./ac98d98matrices13a-index.js"; const step = {id: "ac98d98matrices13a", stepAnswer: ["mat({-2,3,0,-1},{4,-1,-4,4},{5,-2,-2,-2})"], problemType: "TextBox", stepTitle: "mat({5,-2,-2,-2},{4,-1,-4,4},{-2,3,0,-1}). Interchange rows 1 and 3.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

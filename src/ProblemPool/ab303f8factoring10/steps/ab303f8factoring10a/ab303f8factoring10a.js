@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring10a-index.js"; const step = {id: "ab303f8factoring10a", stepAnswer: ["$$\\left(11m-1\\right) \\left(11m+1\\right)$$"], problemType: "TextBox", stepTitle: "$$121m^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

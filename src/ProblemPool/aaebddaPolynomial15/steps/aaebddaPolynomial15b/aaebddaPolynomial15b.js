@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial15b-index.js"; const step = {id: "aaebddaPolynomial15b", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "b) $$3\\left(f+g\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

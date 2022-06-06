@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly15a-index.js"; const step = {id: "a746c1bfactoringpoly15a", stepAnswer: ["$$3x y \\left(x-3\\right) \\left(x^2+3x+9\\right)$$"], problemType: "TextBox", stepTitle: "$$3x^4 y-81x y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a1a538fpairs12a-index.js"; const step = {id: "a1a538fpairs12a", stepAnswer: ["(7,12)"], problemType: "MultipleChoice", stepTitle: "Solve the systems of equations: $$5x-3y=-1, 2x-y=2$$", stepBody: "", choices: ["(-7,12)", "(-7,-12)", "(7,12)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

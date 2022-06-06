@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring6b-index.js"; const step = {id: "ab303f8factoring6b", stepAnswer: ["$$\\left(5x+2\\right) \\left(5x-2\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$25x^2-4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
