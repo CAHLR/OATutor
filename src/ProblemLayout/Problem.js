@@ -17,7 +17,7 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { CANVAS_WARNING_STORAGE_KEY, MIDDLEWARE_URL, ThemeContext } from '../config/config.js';
+import { CANVAS_WARNING_STORAGE_KEY, MIDDLEWARE_URL, SITE_NAME, ThemeContext } from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
@@ -345,7 +345,7 @@ class Problem extends React.Component {
                                 : ""}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                            <IconButton aria-label="help" title={"How to use OpenITS?"}
+                            <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
                                         href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,
