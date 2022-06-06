@@ -148,7 +148,7 @@ class LessonSelection extends React.Component {
                             {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                            <IconButton aria-label="help" title={"How to use OpenITS?"}
+                            <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
                                         href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,

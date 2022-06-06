@@ -21,7 +21,7 @@ const consumerKeySecretMap = {
     'key': 'secret',
 }
 
-const oatsHost = "https://cahlr.github.io/OpenITS/#"
+const oatsHost = "https://cahlr.github.io/OATutor/#"
 const stagingHost = "https://cahlr.github.io/OATutor-Staging/#"
 const unlinkedPage = "assignment-not-linked"
 const alreadyLinkedPage = "assignment-already-linked"
@@ -374,7 +374,7 @@ async function catchLegacyLessonID(linkedLesson, provider) {
 }
 
 app.get("/", (req, res) => {
-    res.send("Please visit https://cahlr.github.io/OpenITS").end()
+    res.send(`Please visit ${oatsHost}`).end()
 })
 
 app.listen(port, () => {
