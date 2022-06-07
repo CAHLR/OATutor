@@ -264,58 +264,56 @@ app.post('/postScore', jwtMiddleware({
 
     // query problem level stats
     var dataToSend = [];
-    var formattedText = "";
     // spawn new child process to call the python script
-    // const python = spawn('python3', ['get_activity.py', 
-    //                                 'Spring 2022', 
-    //                                 '1.2 Use the Language of Algebra', 
-    //                                 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f']);
-    const python = spawn('python3', ['script1.py'])
+    let semester = 'Spring 2022'
+    let lesson = '1.2 Use the Language of Algebra'
+    let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f'
+
+    const python = spawn('python3', ['get_activity.py', semester, lesson, canvasUserId]);
     // collect data from script
     python.stdout.on('data', function (data) {
-        // data = data.toString().replace(/[,\(\)]/g, "");
-        // var problemsData = data.split("\n");
-        // problemsData.forEach(problem => {
-        //     dataToSend.push(problem.split(" "));
-        // })
-        // // Remove the last empty element
-        // dataToSend.pop(-1);
-        formattedText = data.toString();
+        data = data.toString().replace(/[,\(\)]/g, "");
+        var problemsData = data.split("\n");
+        problemsData.forEach(problem => {
+            dataToSend.push(problem.split(" "));
+        })
+        // Remove the last empty element
+        dataToSend.pop(-1);
     });
 
     python.on('close', (code) => {
         console.log(`child process close all stdio with code ${code}`);
         // send data to browser
-        // var formattedText = `
-        //     <style>
-        //         .tb { border-collapse: collapse;}
-        //         .tb th, .tb td { padding: 10px; border: solid 1px #777; }
-        //     </style>
-        //     <table class="tb">
-        //         <thead><tr>
-        //             <th>ProblemID</th>
-        //             <th>Steps Correct</th>
-        //             <th>Steps Wrong</th>
-        //             <th>Hints Used</th>
-        //             <th>Average Time Taken for Each Action</th>
-        //         </tr></thead>
-        //         <tbody>
-        // `;
-        // dataToSend.forEach(problem => {
-        //     formattedText += `
-        //         <tr>
-        //             <td>${problem[0]}</td>
-        //             <td>${problem[1]}</td>
-        //             <td>${problem[2]}</td>
-        //             <td>${problem[3]}</td>
-        //             <td>${problem[4]}</td>
-        //         </tr>\n
-        //     `;
-        // });
-        // formattedText += `
-        //         </tbody>
-        //     </table>
-        // `;
+        var formattedText = `
+            <style>
+                .tb { border-collapse: collapse;}
+                .tb th, .tb td { padding: 10px; border: solid 1px #777; }
+            </style>
+            <table class="tb">
+                <thead><tr>
+                    <th>ProblemID</th>
+                    <th>Steps Correct</th>
+                    <th>Steps Wrong</th>
+                    <th>Hints Used</th>
+                    <th>Average Time Taken for Each Action</th>
+                </tr></thead>
+                <tbody>
+        `;
+        dataToSend.forEach(problem => {
+            formattedText += `
+                <tr>
+                    <td>${problem[0]}</td>
+                    <td>${problem[1]}</td>
+                    <td>${problem[2]}</td>
+                    <td>${problem[3]}</td>
+                    <td>${problem[4]}</td>
+                </tr>\n
+            `;
+        });
+        formattedText += `
+                </tbody>
+            </table>
+        `;
         const text = `
             <h1> Component Breakdown </h1>
             <h4> Overall score: ${score}%</h4>
@@ -424,9 +422,9 @@ app.get("/test/", (req, res) => {
                                     'Spring 2022', 
                                     '1.2 Use the Language of Algebra', 
                                     'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f']);
-    // collect data from script
+    
+                                    // collect data from script
     python.stdout.on('data', function (data) {
-        console.log('Pipe data from python script ...');
         data = data.toString().replace(/[,\(\)]/g, "");
         var problemsData = data.split("\n");
         problemsData.forEach(problem => {
@@ -434,8 +432,8 @@ app.get("/test/", (req, res) => {
         })
         // Remove the last empty element
         dataToSend.pop(-1);
-        console.log(dataToSend);
     });
+
     // in close event we are sure that stream from child process is closed
     python.on('close', (code) => {
         console.log(`child process close all stdio with code ${code}`);
@@ -465,7 +463,7 @@ app.get("/test/", (req, res) => {
                     <td>${problem[4]}</td>
                 </tr>\n
             `;
-        })
+        });
         formattedText += `
                 </tbody>
             </table>
@@ -482,34 +480,3 @@ app.get("/test/", (req, res) => {
 app.listen(port, () => {
     console.log(`LTI Provider Server is listening on port: ${port}`);
 })
-
-
-{/* <style>
-                .tb { border-collapse: collapse;}
-                .tb th, .tb td { padding: 10px; border: solid 1px #777; }
-            </style>
-            <table class="tb">
-                <thead><tr>
-                    <th>ProblemID</th>
-                    <th>Steps Correct</th>
-                    <th>Steps Wrong</th>
-                    <th>Hints Used</th>
-                    <th>Average Time Taken for Each Action</th>
-                </tr></thead>
-                <tbody>
-                <tr>
-                    <td>a4d2b33use1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>10.175</td>
-                </tr>
-                <tr>
-                    <td>a4d2b33use10</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>11.407</td>
-                </tr>
-                </tbody>
-            </table> */}
