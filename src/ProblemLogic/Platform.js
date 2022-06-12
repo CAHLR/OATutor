@@ -5,7 +5,7 @@ import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
-import { ThemeContext, coursePlans, MIDDLEWARE_URL, findLessonById } from '../config/config.js';
+import { ThemeContext, coursePlans, MIDDLEWARE_URL, findLessonById, SITE_NAME } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
@@ -306,9 +306,9 @@ class Platform extends React.Component {
                                  displayMastery={this.displayMastery}/>
                     </ErrorBoundary> : ""}
                 {this.state.status === "exhausted" ?
-                    <center><h2>Thank you for learning with OpenITS. You have finished all problems.</h2></center> : ""}
+                    <center><h2>Thank you for learning with {SITE_NAME}. You have finished all problems.</h2></center> : ""}
                 {this.state.status === "graduated" ?
-                    <center><h2>Thank you for learning with OpenITS. You have mastered all the skills for this
+                    <center><h2>Thank you for learning with {SITE_NAME}. You have mastered all the skills for this
                         session!</h2>
                     </center> : ""}
             </div>

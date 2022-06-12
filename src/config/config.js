@@ -1,12 +1,12 @@
 import React from 'react';
 import courses from './coursePlans.js';
 import { calculateSemester } from "../util/calculateSemester.js";
+
+import { SITE_NAME } from "./shared-config"
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.3.4";
-
-const SITE_NAME = "Open ITS"
 
 const CURRENT_SEMESTER = calculateSemester(Date.now())
 

@@ -4,6 +4,7 @@ const lti = require('ims-lti')
 const jwt = require('jsonwebtoken');
 const jwtMiddleware = require('express-jwt');
 const level = require('level')
+const { SITE_NAME } = require("../src/config/shared-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
 const to = require("await-to-js").default;
 
@@ -20,7 +21,7 @@ const consumerKeySecretMap = {
     'key': 'secret',
 }
 
-const oatsHost = "https://cahlr.github.io/OpenITS/#"
+const oatsHost = "https://cahlr.github.io/OATutor/#"
 const stagingHost = "https://cahlr.github.io/OATutor-Staging/#"
 const unlinkedPage = "assignment-not-linked"
 const alreadyLinkedPage = "assignment-already-linked"
@@ -338,7 +339,7 @@ app.post('/auth', async (req, res) => {
 
     if (lessonNum == null || lessonID == null) {
         console.log(`Lesson does not exist for "${assignment_title}"`);
-        res.send("Invalid lesson ID. Please contact your teacher or the OpenITS development team to fix this error.");
+        res.send(`Invalid lesson ID. Please contact your teacher or the ${SITE_NAME} development team to fix this error.`);
         res.end();
     } else {
         let err, linkedLesson;
@@ -373,7 +374,7 @@ async function catchLegacyLessonID(linkedLesson, provider) {
 }
 
 app.get("/", (req, res) => {
-    res.send("Please visit https://cahlr.github.io/OpenITS").end()
+    res.send(`Please visit ${oatsHost}`).end()
 })
 
 app.listen(port, () => {
