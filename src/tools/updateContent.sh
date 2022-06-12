@@ -86,5 +86,5 @@ echo "Generating flattened problem pool."
 cd src/tools || exit
 node generateFlatProblemPool.js >>"$OUT_FILE" 2>&1
 
-echo "Make sure to increment version in OpenITS/src/config/config.js!"
+echo "Make sure to increment version in OATutor/src/config/config.js!"
 
