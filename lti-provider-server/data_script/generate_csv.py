@@ -22,6 +22,28 @@ def clear_data(df):
     df = df.reset_index().drop(columns=["index", "Unnamed: 0"])
     return df
 
+def analyze_each_problem(df):
+    step_correct = sum((df["eventType"] == "answerStep") & (df["firstAttempt"] == True) & (df["isCorrect"] == True))
+    step_wrong = sum((df["eventType"] == "answerStep") & (df["firstAttempt"] == True) & (df["isCorrect"] == False))
+    hint_count = sum(df["eventType"] == "unlockHint")
+    avg_time_diff = df['time_stamp'].diff().div(1000).median()
+    return step_correct, step_wrong, hint_count, avg_time_diff
+
+def step_operation(df):
+    df = df.copy()
+    
+    step_answers = (df[df["eventType"] == "answerStep"]["input"]).astype(str).tolist()
+    
+    df["time_diff"] = (df["time_stamp"].diff(periods=-1) * -0.001).round(2).astype(str)
+    time_diff = df[df["eventType"] == "unlockHint"]["time_diff"]
+    if len(time_diff) > 0:
+        time_diff = time_diff.tolist()
+    else:
+        time_diff = ["No Hints Used"]
+        
+    return "; ".join(step_answers) + ",,," + "; ".join(time_diff)
+
+
 # Set up firebase credentials
 credentials = service_account.Credentials.from_service_account_file('./oatutor-firebase-adminsdk.json')
 scoped_credentials = credentials.with_scopes(['https://www.googleapis.com/auth/cloud-platform'])
@@ -54,6 +76,12 @@ df_cleared = clear_data(df_raw)
 canvas_only_df = df_cleared[df_cleared[retain].notnull()]
 anal_df = merge_lesson_skill(canvas_only_df, retain)
 
+# Merge isCorrect and hintIsCorrect
+anal_df["isCorrect"] = (anal_df["isCorrect"] | anal_df["hintIsCorrect"])
+anal_df.drop(columns=["hintIsCorrect"], inplace=True)
+anal_df.loc[anal_df["eventType"] == "unlockHint", "isCorrect"] = None
+anal_df["isCorrect"] = anal_df["isCorrect"].astype("boolean")
+
 # First attempt
 first_attempt_index = anal_df[anal_df["eventType"] == "answerStep"].reset_index()\
                         .groupby([retain, "stepID"], as_index=False).first()["index"]
@@ -67,4 +95,13 @@ anal_df["firstAttempt"] = anal_df["firstAttempt"].astype("boolean")
 anal_df = anal_df.rename(columns={"canvas_user_id": "canvasUserId", "oats_user_id": "oatsUserId"})
 anal_df = anal_df.sort_values("time")
 anal_df = anal_df.reset_index().drop(columns=["index"])
-anal_df.to_csv(data_dir + "full_analysis.csv")
+
+# Problem-wise processing
+df = anal_df.groupby(["semester", "lesson", "canvasUserId", "problemID", "stepID"]).apply(step_operation).to_frame().reset_index()
+df["studentAnswers"] = df[0].str.split(",,,").str[0]
+df["timeForHint"] = df[0].str.split(",,,").str[1]
+df.drop(columns=[0], inplace=True)
+df["problemName"] = df["problemID"].str.extract(r"([0-9a-zA-Z]{7}[a-zA-Z]+)\d+$")
+df["problemIndex"] = df["problemID"].str.extract(r"[0-9a-zA-Z]{7}[a-zA-Z]+(\d+)$")
+
+df.to_csv(data_dir + "full_analysis.csv", sep="\t")
