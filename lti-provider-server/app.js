@@ -7,6 +7,7 @@ const level = require('level')
 const { lessonMapping } = require("./legacy-lesson-mapping");
 const to = require("await-to-js").default;
 const {spawn} = require('child_process');
+var fs = require('fs'); 
 
 const db = level('.mapping-db')
 
@@ -260,60 +261,65 @@ app.post('/postScore', jwtMiddleware({
         return
     }
 
-    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)
+    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)    
 
-    // query problem level stats
-    var dataToSend = [];
-    // spawn new child process to call the python script
-    let semester = 'Spring 2022'
-    let lesson = '1.2 Use the Language of Algebra'
-    let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f'
+    let semester = 'Spring 2022';
+    let lesson = '1.1 Use the Language of Algebra';
+    let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
 
-    const python = spawn('python3', ['get_activity.py', semester, lesson, canvasUserId]);
-    // collect data from script
-    python.stdout.on('data', function (data) {
-        data = data.toString().replace(/[,\(\)]/g, "");
-        var problemsData = data.split("\n");
-        problemsData.forEach(problem => {
-            dataToSend.push(problem.split(" "));
-        })
-        // Remove the last empty element
-        dataToSend.pop(-1);
-    });
+    var formattedText = `
+        <style>
+            .tb { border-collapse: collapse;}
+            .tb th, .tb td { padding: 10px; border: solid 1px #777; }
+        </style>
+    `;
 
-    python.on('close', (code) => {
-        console.log(`child process close all stdio with code ${code}`);
-        // send data to browser
-        var formattedText = `
-            <style>
-                .tb { border-collapse: collapse;}
-                .tb th, .tb td { padding: 10px; border: solid 1px #777; }
-            </style>
-            <table class="tb">
+    fs.readFile('data_script/data/full_analysis.csv', 'utf8', function(err, data){
+        var dataList = data.split("\n");
+        var problemInfo = {};
+        dataList.forEach(problem => {
+            let info = problem.split("\t");
+            if (info[1] == semester && info[2] == lesson && info[3] == canvasUserId) {
+                if (info[4] in problemInfo) {
+                    problemInfo[info[4]].push(info.slice(5, 8));
+                } else {
+                    problemInfo[info[4]] = [info.slice(5, 8)];
+                }
+            }
+        });
+
+        for (const problem in problemInfo) {
+            formattedText += `
+                <a href="https://cahlr.github.io/OATutor-Content-Staging/#/debug/${problem}">
+                    <h5 style="padding-top: 15px"> ${problem} </h5>
+                </a>
+                <table class="tb">
                 <thead><tr>
-                    <th>ProblemID</th>
-                    <th>Steps Correct</th>
-                    <th>Steps Wrong</th>
-                    <th>Hints Used</th>
-                    <th>Average Time Taken for Each Action</th>
+                    <th>StepID</th>
+                    <th>Student Answers</th>
+                    <th>Time for Each Hint</th>
                 </tr></thead>
                 <tbody>
-        `;
-        dataToSend.forEach(problem => {
-            formattedText += `
-                <tr>
-                    <td>${problem[0]}</td>
-                    <td>${problem[1]}</td>
-                    <td>${problem[2]}</td>
-                    <td>${problem[3]}</td>
-                    <td>${problem[4]}</td>
-                </tr>\n
             `;
-        });
-        formattedText += `
+            problemInfo[problem].forEach(step => {
+                formattedText += `
+                <tr>
+                    <td>${step[0]}</td>
+                    <td>${step[1]}</td>
+                    <td>${step[2]}</td>
+                </tr>
+            `;
+            });
+            formattedText += `
                 </tbody>
             </table>
-        `;
+            `;
+        }
+
+        if (Object.keys(problemInfo).length === 0) {
+            formattedText = "No student activity found for this lesson";
+        }
+
         const text = `
             <h1> Component Breakdown </h1>
             <h4> Overall score: ${score}%</h4>
@@ -326,7 +332,7 @@ app.post('/postScore', jwtMiddleware({
             </p>`
                 )
                 .join("")}
-            <h4> Problem Stats </h4>
+            <h4 style="padding-top: 10px"> Problem Stats </h4>
             ${formattedText}
         `;
 
@@ -339,7 +345,8 @@ app.post('/postScore', jwtMiddleware({
     
             res.status(200).end()
         })
-    })
+    });
+
 })
 
 /**
@@ -413,68 +420,6 @@ app.post('/auth', async (req, res) => {
 
 app.get("/", (req, res) => {
     res.send("Please visit https://cahlr.github.io/OpenITS").end()
-})
-
-app.get("/test/", (req, res) => {
-    var dataToSend = [];
-    // spawn new child process to call the python script
-    const python = spawn('python3', ['get_activity.py', 
-                                    'Spring 2022', 
-                                    '1.2 Use the Language of Algebra', 
-                                    'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f']);
-    
-                                    // collect data from script
-    python.stdout.on('data', function (data) {
-        data = data.toString().replace(/[,\(\)]/g, "");
-        var problemsData = data.split("\n");
-        problemsData.forEach(problem => {
-            dataToSend.push(problem.split(" "));
-        })
-        // Remove the last empty element
-        dataToSend.pop(-1);
-    });
-
-    // in close event we are sure that stream from child process is closed
-    python.on('close', (code) => {
-        console.log(`child process close all stdio with code ${code}`);
-        // send data to browser
-        var formattedText = `
-            <style>
-                .tb { border-collapse: collapse;}
-                .tb th, .tb td { padding: 10px; border: solid 1px #777; }
-            </style>
-            <table class="tb">
-                <thead><tr>
-                    <th>ProblemID</th>
-                    <th>Steps Correct</th>
-                    <th>Steps Wrong</th>
-                    <th>Hints Used</th>
-                    <th>Average Time Taken for Each Action</th>
-                </tr></thead>
-                <tbody>
-        `;
-        dataToSend.forEach(problem => {
-            formattedText += `
-                <tr>
-                    <td>${problem[0]}</td>
-                    <td>${problem[1]}</td>
-                    <td>${problem[2]}</td>
-                    <td>${problem[3]}</td>
-                    <td>${problem[4]}</td>
-                </tr>\n
-            `;
-        });
-        formattedText += `
-                </tbody>
-            </table>
-        `;
-        const text = `
-            <h4> Problem Stats </h4>
-            ${formattedText}
-        `;
-
-        res.send(text).end()
-    })
 })
 
 app.listen(port, () => {
