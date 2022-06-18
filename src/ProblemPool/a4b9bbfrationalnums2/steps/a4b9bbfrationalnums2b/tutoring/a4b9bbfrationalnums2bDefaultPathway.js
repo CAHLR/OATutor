@@ -1,1 +1,0 @@
-var hints = [{id: "a4b9bbfrationalnums2b-h1", type: "hint", dependencies: [], title: "Radical Expression", text: "The index is 3, so the denominator of the exponent is 3.", variabilization: {}}, ]; export {hints};

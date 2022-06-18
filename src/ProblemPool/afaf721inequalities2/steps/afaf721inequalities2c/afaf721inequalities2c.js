@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities2c-index.js"; const step = {id: "afaf721inequalities2c", stepAnswer: ["(-inf,3/4]"], problemType: "MultipleChoice", stepTitle: "$$x \\geq \\frac{3}{4}$$", stepBody: "", choices: ["(-inf,3/4]", "$$\\left(-\\frac{inf3}{4}\\right)$$", "$$[-inf3]$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

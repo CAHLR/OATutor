@@ -1,1 +1,0 @@
-import hints from "./af04890Rational1c-index.js"; const step = {id: "af04890Rational1c", stepAnswer: ["$$x=-2$$ or -3"], problemType: "MultipleChoice", stepTitle: "c) $$\\frac{x+4}{x^2+5x+6}$$", stepBody: "", choices: ["$$x=-2$$ or -3", "$$x=2$$ or 3", "$$x=2$$ or -3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

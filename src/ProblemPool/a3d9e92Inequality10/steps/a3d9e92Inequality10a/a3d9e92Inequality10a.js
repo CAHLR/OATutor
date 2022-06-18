@@ -1,1 +1,0 @@
-import hints from "./a3d9e92Inequality10a-index.js"; const step = {id: "a3d9e92Inequality10a", stepAnswer: ["[-1, 2)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$5x-2<8$$ and $$6x+9 \\geq 3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

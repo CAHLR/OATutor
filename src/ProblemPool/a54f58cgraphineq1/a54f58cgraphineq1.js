@@ -1,1 +1,0 @@
-import steps from "./a54f58cgraphineq1-index.js"; const problem = {id: "a54f58cgraphineq1", title: "Determine whether an ordered pair is a solution of a system of linear inequalities", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "4.7 Graphing Systems of Linear Inequalities", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

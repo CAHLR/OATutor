@@ -1,1 +1,0 @@
-import hints from "./a975ae1MultDivInts5a-index.js"; const step = {id: "a975ae1MultDivInts5a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{-27}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac98d98matrices7a-index.js"; const step = {id: "ac98d98matrices7a", stepAnswer: ["mat({2,-5,3,8},{3,-1,4,7},{1,3,2,-3})"], problemType: "TextBox", stepTitle: "Write the system as an augmented matrix: $$2x-5y+3z=8$$, $$3x-y+4z=7$$, $$x+3y+2z=-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

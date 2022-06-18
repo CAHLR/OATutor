@@ -1,1 +1,0 @@
-import hints from "./a1f74d6coordinates17a-index.js"; const step = {id: "a1f74d6coordinates17a", stepAnswer: ["(-1,-1) and $$\\frac{1}{25}$$"], problemType: "MultipleChoice", stepTitle: "$$y=4x+3$$", stepBody: "", choices: ["(4,3) and (-1,-1)", "$$\\frac{1}{25}$$ and (4,3)", "(-1,-1) and $$\\frac{1}{25}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

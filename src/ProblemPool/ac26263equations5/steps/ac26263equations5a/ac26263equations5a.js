@@ -1,1 +1,0 @@
-import hints from "./ac26263equations5a-index.js"; const step = {id: "ac26263equations5a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$y-10z=-8$$, $$2x-y=2$$, $$x-5z=3$$, (7,12,2)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

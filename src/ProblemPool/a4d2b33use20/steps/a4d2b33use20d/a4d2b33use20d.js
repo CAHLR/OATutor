@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use20d-index.js"; const step = {id: "a4d2b33use20d", stepAnswer: ["Equation"], problemType: "MultipleChoice", stepTitle: "$$y+8=40$$", stepBody: "", choices: ["Expression", "Equation"], answerType: "string", hints: hints, variabilization: {}}; export {step};

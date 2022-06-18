@@ -1,1 +1,0 @@
-import hints from "./a8583b4FracDec13a-index.js"; const step = {id: "a8583b4FracDec13a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{1}{2\\left(y-5\\right)}=\\frac{1}{4\\left(y-1\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

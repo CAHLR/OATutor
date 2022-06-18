@@ -1,1 +1,0 @@
-var hints = [{id: "ac98d98matrices8a-h1", type: "hint", dependencies: [], title: "Writing the Matrix", text: "Each row corresponds to an equation, and the fourth column is separated by the equal sign. We have: $$x-y+2z=3$$, $$2x+y-2z=1$$, $$4x-y+2z=0$$", variabilization: {}}, ]; export {hints};

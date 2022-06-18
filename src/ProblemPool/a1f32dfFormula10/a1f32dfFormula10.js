@@ -1,1 +1,0 @@
-import steps from "./a1f32dfFormula10-index.js"; const problem = {id: "a1f32dfFormula10", title: "Solve the formula $$A=\\frac{1}{2} bh$$ for h:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "2.6 Solve a Formula for a Specific Variable ", courseName: "Openstax: Elementary Algebra"}; export { problem };

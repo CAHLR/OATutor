@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring16a-index.js"; const step = {id: "a10e4c3factoring16a", stepAnswer: ["(3p-2)(2p-5)"], problemType: "TextBox", stepTitle: "$$6p^2-19p+10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

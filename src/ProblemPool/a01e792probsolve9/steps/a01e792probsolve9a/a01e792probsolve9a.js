@@ -1,1 +1,0 @@
-import hints from "./a01e792probsolve9a-index.js"; const step = {id: "a01e792probsolve9a", stepAnswer: ["36"], problemType: "TextBox", stepTitle: "Pilar bought a purse on sale for $18, which is one-half of the original price. What was the original price of the purse?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

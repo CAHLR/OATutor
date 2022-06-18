@@ -1,1 +1,0 @@
-import hints from "./a53b893whole22b-index.js"; const step = {id: "a53b893whole22b", stepAnswer: ["ten thousands"], problemType: "MultipleChoice", stepTitle: "0", stepBody: "", choices: ["tens", "hundreds", "thousands", "ten thousands"], answerType: "string", hints: hints, variabilization: {}}; export {step};

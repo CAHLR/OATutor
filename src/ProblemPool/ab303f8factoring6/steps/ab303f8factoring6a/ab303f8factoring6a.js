@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring6a-index.js"; const step = {id: "ab303f8factoring6a", stepAnswer: ["$${\\left(8m+7n\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$64m^2+112mn+49n^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

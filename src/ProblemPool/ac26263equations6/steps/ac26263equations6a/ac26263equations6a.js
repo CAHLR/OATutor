@@ -1,1 +1,0 @@
-import hints from "./ac26263equations6a-index.js"; const step = {id: "ac26263equations6a", stepAnswer: ["(4,5,2)"], problemType: "MultipleChoice", stepTitle: "$$6x-5y+2z=3$$, $$2x+y-4z=5$$, $$3x-3y+z=-1$$", stepBody: "", choices: ["(4,5,2)", "(-6,7,4)", "No Solution)", "(-2,1,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

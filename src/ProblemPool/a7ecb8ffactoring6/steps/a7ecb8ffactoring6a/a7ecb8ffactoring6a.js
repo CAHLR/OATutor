@@ -1,1 +1,0 @@
-import hints from "./a7ecb8ffactoring6a-index.js"; const step = {id: "a7ecb8ffactoring6a", stepAnswer: ["$$\\left(x+100\\right) \\left(x+1\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$x^2+101x+100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

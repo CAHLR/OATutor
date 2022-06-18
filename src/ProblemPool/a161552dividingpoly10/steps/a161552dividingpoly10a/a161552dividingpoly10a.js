@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly10a-index.js"; const step = {id: "a161552dividingpoly10a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "$$f(x)=x^2-3x+2$$ $$g(x)=x+3$$ Find $$\\frac{f}{g}$$ when $$x=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

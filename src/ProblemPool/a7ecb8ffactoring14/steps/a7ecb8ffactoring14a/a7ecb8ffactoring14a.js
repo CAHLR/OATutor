@@ -1,1 +1,0 @@
-import hints from "./a7ecb8ffactoring14a-index.js"; const step = {id: "a7ecb8ffactoring14a", stepAnswer: ["$$\\left(x+7\\right) \\left(x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$6x-7+x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

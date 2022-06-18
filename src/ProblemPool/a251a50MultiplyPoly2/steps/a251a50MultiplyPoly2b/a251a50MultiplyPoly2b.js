@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly2b-index.js"; const step = {id: "a251a50MultiplyPoly2b", stepAnswer: ["$$6a^5 b^6$$"], problemType: "TextBox", stepTitle: "b) $$\\frac{2}{5} a^4 b^3 15{ab}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ae25c01graphs6a-index.js"; const step = {id: "ae25c01graphs6a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Find $$\\operatorname{fnegneg}\\left(\\frac{\\pi}{2}\\right)$$", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
