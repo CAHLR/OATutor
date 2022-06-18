@@ -1,0 +1,1 @@
+import hints from "./a4d2b33use14c-index.js"; const step = {id: "a4d2b33use14c", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$y^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

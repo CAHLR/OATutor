@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring17a-index.js"; const step = {id: "a10e4c3factoring17a", stepAnswer: ["$$\\left(4q+1\\right) \\left(q-2\\right)$$"], problemType: "TextBox", stepTitle: "$$4q^2-7q-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

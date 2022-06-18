@@ -1,0 +1,1 @@
+import hints from "./a746c1bFactoring4a-index.js"; const step = {id: "a746c1bFactoring4a", stepAnswer: ["$$3\\left(3y-4\\right) \\left(3y+4\\right)$$"], problemType: "TextBox", stepTitle: "$$27y^2-48$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

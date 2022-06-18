@@ -1,0 +1,1 @@
+import hints from "./ac26263ThreeVariables3a-index.js"; const step = {id: "ac26263ThreeVariables3a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "a) (2,-2,3)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

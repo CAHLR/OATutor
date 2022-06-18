@@ -1,0 +1,1 @@
+import hints from "./a5991b4add1b-index.js"; const step = {id: "a5991b4add1b", stepAnswer: ["polynomial"], problemType: "MultipleChoice", stepTitle: "$$5c^3+11c^2-c-8$$", stepBody: "", choices: ["monomial", "binomial", "trinomial", "polynomial"], answerType: "string", hints: hints, variabilization: {}}; export {step};

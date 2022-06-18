@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities1a-index.js"; const step = {id: "a65ae04inequalities1a", stepAnswer: ["$$x=\\pm 4$$"], problemType: "MultipleChoice", stepTitle: "$$|x|=4$$", stepBody: "", choices: ["$$x=\\pm 4$$", "$$x=\\pm 4 Ix=-4Ix=4INo$$ Solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a8e6481uni14b-index.js"; const step = {id: "a8e6481uni14b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "Find Cruz's biking speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

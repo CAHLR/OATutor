@@ -1,0 +1,1 @@
+import hints from "./a8d511eDeterminant17a-index.js"; const step = {id: "a8d511eDeterminant17a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 6 & -2 \\\\ 3 & -1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

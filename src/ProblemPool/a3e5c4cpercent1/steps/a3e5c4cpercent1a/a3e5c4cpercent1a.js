@@ -1,0 +1,1 @@
+import hints from "./a3e5c4cpercent1a-index.js"; const step = {id: "a3e5c4cpercent1a", stepAnswer: ["31.5"], problemType: "TextBox", stepTitle: "Translate and solve: What number is 35% of 90?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

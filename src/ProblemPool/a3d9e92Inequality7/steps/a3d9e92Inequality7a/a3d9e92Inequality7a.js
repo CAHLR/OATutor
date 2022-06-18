@@ -1,0 +1,1 @@
+import hints from "./a3d9e92Inequality7a-index.js"; const step = {id: "a3d9e92Inequality7a", stepAnswer: ["(-inf, -4] U (-3, inf)"], problemType: "TextBox", stepTitle: "Write the solution in interval notation: $$x \\leq -4$$ or $$x>-3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

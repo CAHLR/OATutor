@@ -1,0 +1,1 @@
+import hints from "./af04890Rational6a-index.js"; const step = {id: "af04890Rational6a", stepAnswer: ["$$\\frac{\\frac{2}{3} \\left(x-3y\\right)}{x+3y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x^2-12xy+18y^2}{3x^2-27y^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aafc2dcMultiply26a-index.js"; const step = {id: "aafc2dcMultiply26a", stepAnswer: ["-28"], problemType: "TextBox", stepTitle: "Mayra has $124 in her checking account. She writes a check for $152. What is the new balance in her checking account?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd17k-index.js"; const step = {id: "a6014eaSubAdd17k", stepAnswer: ["$$q=\\frac{-1}{4}$$"], problemType: "TextBox", stepTitle: "$$q+\\frac{3}{4}=\\frac{1}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

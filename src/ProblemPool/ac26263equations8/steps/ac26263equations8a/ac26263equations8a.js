@@ -1,0 +1,1 @@
+import hints from "./ac26263equations8a-index.js"; const step = {id: "ac26263equations8a", stepAnswer: ["(-3,-5,4)"], problemType: "MultipleChoice", stepTitle: "$$4x-3y+z=7$$, $$2x-5y-4z=3$$, $$3x-2y-2z=-7$$", stepBody: "", choices: ["No Solution", "(-3,-5,4)", "(0,3,7)", "(-2,1,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

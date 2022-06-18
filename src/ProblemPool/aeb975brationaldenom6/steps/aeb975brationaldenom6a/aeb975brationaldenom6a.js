@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom6a-index.js"; const step = {id: "aeb975brationaldenom6a", stepAnswer: ["$$\\frac{37}{72}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{24}+\\frac{11}{36}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

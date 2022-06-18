@@ -1,0 +1,1 @@
+import hints from "./a6ead19multiplyingrationals9a-index.js"; const step = {id: "a6ead19multiplyingrationals9a", stepAnswer: ["(x+5)/x"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{x^2-25}{x^2-3x-10}$$ * $$\\frac{x+2}{x}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

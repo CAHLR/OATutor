@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial10a-index.js"; const step = {id: "aaebddaPolynomial10a", stepAnswer: ["$$8x^2-11x+8$$"], problemType: "TextBox", stepTitle: "$$7x^2-4x+5+x^2-7x+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

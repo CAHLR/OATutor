@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions6a-index.js"; const step = {id: "a02e810proportions6a", stepAnswer: ["24"], problemType: "TextBox", stepTitle: "$$\\frac{39}{c}=\\frac{13}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

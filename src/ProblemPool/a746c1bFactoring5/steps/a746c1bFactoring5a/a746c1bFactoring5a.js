@@ -1,0 +1,1 @@
+import hints from "./a746c1bFactoring5a-index.js"; const step = {id: "a746c1bFactoring5a", stepAnswer: ["$${\\left(2a-3b\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$4a^2-12a b+9b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

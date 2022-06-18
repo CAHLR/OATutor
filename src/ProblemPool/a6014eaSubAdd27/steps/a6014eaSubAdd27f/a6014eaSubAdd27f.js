@@ -1,0 +1,1 @@
+import hints from "./a6014eaSubAdd27f-index.js"; const step = {id: "a6014eaSubAdd27f", stepAnswer: ["$$a=-30$$"], problemType: "TextBox", stepTitle: "$$6a-5\\left(a-2\\right)+9=-11$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

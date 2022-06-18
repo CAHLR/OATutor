@@ -1,0 +1,1 @@
+import hints from "./a3d6a35variation16a-index.js"; const step = {id: "a3d6a35variation16a", stepAnswer: ["$$y=\\frac{2}{x}$$"], problemType: "TextBox", stepTitle: "Y varies inversely with x, and $$y=2$$ when $$x=1$$. Write your answer in the form $$y=$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

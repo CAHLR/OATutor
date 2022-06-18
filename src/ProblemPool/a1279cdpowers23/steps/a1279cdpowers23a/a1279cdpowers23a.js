@@ -1,0 +1,1 @@
+import hints from "./a1279cdpowers23a-index.js"; const step = {id: "a1279cdpowers23a", stepAnswer: ["$$144y^2$$"], problemType: "TextBox", stepTitle: "$${\\left(-12y\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac879b3graph8b-index.js"; const step = {id: "ac879b3graph8b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is the y-value for the y-intercept to the equation $$y=\\frac{1}{2} x+3$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

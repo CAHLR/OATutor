@@ -1,0 +1,1 @@
+var hints = [{id: "ae25c01functions7a-h1", type: "hint", dependencies: [], title: "Using the Vertical Line Test", text: "Since there exists a vertical line that intersects the graph at more than one point, the graph is not a function.", variabilization: {}}, ]; export {hints};

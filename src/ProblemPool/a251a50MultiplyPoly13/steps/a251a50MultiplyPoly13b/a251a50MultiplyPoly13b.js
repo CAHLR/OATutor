@@ -1,0 +1,1 @@
+import hints from "./a251a50MultiplyPoly13b-index.js"; const step = {id: "a251a50MultiplyPoly13b", stepAnswer: ["$$4c^2-4cd+d^2$$"], problemType: "TextBox", stepTitle: "b) $${\\left(2c-d\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
