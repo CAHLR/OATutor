@@ -1,1 +1,0 @@
-import hints from "./a171b3arationals9a-index.js"; const step = {id: "a171b3arationals9a", stepAnswer: ["$$\\frac{7}{\\left(-4\\right)}$$"], problemType: "TextBox", stepTitle: "$$x=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

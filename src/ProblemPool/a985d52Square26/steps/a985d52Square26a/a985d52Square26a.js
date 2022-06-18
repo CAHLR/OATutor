@@ -1,1 +1,0 @@
-import hints from "./a985d52Square26a-index.js"; const step = {id: "a985d52Square26a", stepAnswer: ["-3 and 9"], problemType: "MultipleChoice", stepTitle: "$$p^2-6p-27=0$$", stepBody: "", choices: ["2 and -5", "-3 and 9", "4 and $$\\frac{1}{2}$$", "-5 and 2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

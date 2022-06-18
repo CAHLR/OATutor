@@ -1,1 +1,0 @@
-import hints from "./a870b02DivMul30a-index.js"; const step = {id: "a870b02DivMul30a", stepAnswer: ["-576"], problemType: "TextBox", stepTitle: "The quotient of q and -8 is 72.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

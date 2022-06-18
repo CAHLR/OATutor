@@ -1,1 +1,0 @@
-import hints from "./a1a538fpairs2a-index.js"; const step = {id: "a1a538fpairs2a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (-3,4) is a solution to the system: $$2x-6y=0, 3x-4y=5$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

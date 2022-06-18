@@ -1,1 +1,0 @@
-var hints = [{id: "a3837e8graphline5b-h1", type: "hint", dependencies: [], title: "How Points and Solutions Are Related", text: "Every point on the line is a solution of the equation.", variabilization: {}}, ]; export {hints};

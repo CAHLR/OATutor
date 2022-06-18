@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly1b-index.js"; const step = {id: "a251a50MultiplyPoly1b", stepAnswer: ["$$10x^4 y^3$$"], problemType: "TextBox", stepTitle: "b) $$\\frac{5}{6} x^3 y 12{xy}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

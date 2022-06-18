@@ -1,1 +1,0 @@
-import hints from "./af1a2a0roots22a-index.js"; const step = {id: "af1a2a0roots22a", stepAnswer: ["Undefined"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{-9}$$", stepBody: "", choices: ["-3", "3", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

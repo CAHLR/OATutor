@@ -1,1 +1,0 @@
-import steps from "./a4d2b33use20-index.js"; const problem = {id: "a4d2b33use20", title: "Determing Expressions Versus Equations", body: "Determine whether the following are expressions or equations.", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "1.2 Use the Language of Algebra", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./ae45a45int23d-index.js"; const step = {id: "ae45a45int23d", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{-27}{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

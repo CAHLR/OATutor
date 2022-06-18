@@ -1,1 +1,0 @@
-import hints from "./aeb975brationaldenom23a-index.js"; const step = {id: "aeb975brationaldenom23a", stepAnswer: ["$$\\frac{2\\left(x+3\\right)+5\\left(x-2\\right)}{\\left(x-2\\right) \\left(x+3\\right)}$$"], problemType: "TextBox", stepTitle: "Add $$\\frac{2}{x-2}+\\frac{5}{x-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

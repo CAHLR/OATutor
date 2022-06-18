@@ -1,1 +1,0 @@
-import hints from "./a453be6realnumbers3b-index.js"; const step = {id: "a453be6realnumbers3b", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\sqrt{196}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

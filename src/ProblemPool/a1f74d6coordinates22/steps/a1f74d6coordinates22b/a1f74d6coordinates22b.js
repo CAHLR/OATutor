@@ -1,1 +1,0 @@
-import hints from "./a1f74d6coordinates22b-index.js"; const step = {id: "a1f74d6coordinates22b", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$y=3x-1$$", stepBody: "If $$x=2$$, what is y?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

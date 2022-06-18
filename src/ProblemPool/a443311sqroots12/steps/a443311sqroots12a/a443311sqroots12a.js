@@ -1,1 +1,0 @@
-import hints from "./a443311sqroots12a-index.js"; const step = {id: "a443311sqroots12a", stepAnswer: ["$$\\frac{\\sqrt{15}}{6}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{\\frac{5}{12}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

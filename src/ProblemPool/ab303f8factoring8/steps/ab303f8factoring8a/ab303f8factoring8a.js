@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring8a-index.js"; const step = {id: "ab303f8factoring8a", stepAnswer: ["$$2{y\\left(2x-3\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$8x^2 y-24xy+18y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a251a50multiplication1-index.js"; const problem = {id: "a251a50multiplication1", title: "Multiply the binomials", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.3 Multiply Polynomials", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

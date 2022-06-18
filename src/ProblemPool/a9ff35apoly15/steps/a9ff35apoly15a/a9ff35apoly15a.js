@@ -1,1 +1,0 @@
-import hints from "./a9ff35apoly15a-index.js"; const step = {id: "a9ff35apoly15a", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: "Solve: $$6x^2+13x-15$$ when $$x=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

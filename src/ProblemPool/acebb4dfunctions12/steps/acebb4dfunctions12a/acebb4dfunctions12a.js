@@ -1,1 +1,0 @@
-import hints from "./acebb4dfunctions12a-index.js"; const step = {id: "acebb4dfunctions12a", stepAnswer: ["$$2x+6$$"], problemType: "TextBox", stepTitle: "$$g(x)=2x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

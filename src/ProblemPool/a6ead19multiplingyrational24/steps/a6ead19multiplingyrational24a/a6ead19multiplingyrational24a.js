@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational24a-index.js"; const step = {id: "a6ead19multiplingyrational24a", stepAnswer: ["z+3/z(z+1)"], problemType: "TextBox", stepTitle: "$$\\left(z^2+\\frac{3z}{z^2}-3z-4\\right) \\left(z-\\frac{4}{z^2}\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

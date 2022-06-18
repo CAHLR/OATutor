@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral6a-index.js"; const step = {id: "add2dfegeneral6a", stepAnswer: ["$${\\left(8x+y\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$64x^2+16xy+y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

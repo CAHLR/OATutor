@@ -1,1 +1,0 @@
-import hints from "./acebb4ddomain12a-index.js"; const step = {id: "acebb4ddomain12a", stepAnswer: ["{ab56781, jh47983, kn68413, sm32479}"], problemType: "TextBox", stepTitle: "For the mapping shown, find the range.", stepBody: "##figure1.gif## ", answerType: "string", hints: hints, variabilization: {}}; export {step};
