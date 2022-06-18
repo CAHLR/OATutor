@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear24a-index.js"; const step = {id: "aded0eclinear24a", stepAnswer: ["$$x>9$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$8x>72$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

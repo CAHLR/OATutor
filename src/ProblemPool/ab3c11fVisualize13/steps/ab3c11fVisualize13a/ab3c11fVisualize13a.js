@@ -1,0 +1,1 @@
+import hints from "./ab3c11fVisualize13a-index.js"; const step = {id: "ab3c11fVisualize13a", stepAnswer: ["$$\\frac{6}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{3}{4}}{\\frac{5}{8}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

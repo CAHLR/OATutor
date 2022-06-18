@@ -1,0 +1,1 @@
+import hints from "./a3abd22AddRational2a-index.js"; const step = {id: "a3abd22AddRational2a", stepAnswer: ["$$x+2$$"], problemType: "TextBox", stepTitle: "$$\\frac{9x+14}{x+7}+\\frac{x^2}{x+7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

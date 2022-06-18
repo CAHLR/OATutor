@@ -1,0 +1,1 @@
+import hints from "./aded0eclinear17a-index.js"; const step = {id: "aded0eclinear17a", stepAnswer: ["$$b \\geq \\frac{-17}{24}$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$b+\\frac{7}{8} \\geq \\frac{1}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a10b60arealnumbers15-index.js"; const problem = {id: "a10b60arealnumbers15", title: "Add and Subtract Higher Roots", body: "Simplify the following square root.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "9.7 Higher Roots", courseName: "Openstax: Elementary Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly12a-index.js"; const step = {id: "a746c1bfactoringpoly12a", stepAnswer: ["$${\\left(8x+y\\right)}^2$$"], problemType: "TextBox", stepTitle: "(64*(x**2))+((16*x)*y))+(y**2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

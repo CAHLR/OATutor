@@ -1,0 +1,1 @@
+import hints from "./af04890Rational7a-index.js"; const step = {id: "af04890Rational7a", stepAnswer: ["$$\\frac{-\\left(x+4\\right)}{x+8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^2-4x-32}{64-x^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

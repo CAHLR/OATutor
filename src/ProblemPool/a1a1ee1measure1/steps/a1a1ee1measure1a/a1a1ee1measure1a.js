@@ -1,0 +1,1 @@
+import hints from "./a1a1ee1measure1a-index.js"; const step = {id: "a1a1ee1measure1a", stepAnswer: ["5.5"], problemType: "TextBox", stepTitle: "MaryAnne is 66 inches tall. Convert her height into feet.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

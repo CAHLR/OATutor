@@ -1,0 +1,1 @@
+import hints from "./aae6efeSolving19a-index.js"; const step = {id: "aae6efeSolving19a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "The sum of two numbers is zero. One number is nine less than twice the other. Find the bigger number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

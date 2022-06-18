@@ -1,0 +1,1 @@
+import hints from "./a3c25cbexe3a-index.js"; const step = {id: "a3c25cbexe3a", stepAnswer: ["(q-4)(q-9)"], problemType: "TextBox", stepTitle: "$$q^2-13q+36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities13a-index.js"; const step = {id: "a374ff4inequalities13a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "(3,-6)(2,-2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

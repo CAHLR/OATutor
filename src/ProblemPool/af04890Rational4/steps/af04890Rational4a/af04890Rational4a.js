@@ -1,0 +1,1 @@
+import hints from "./af04890Rational4a-index.js"; const step = {id: "af04890Rational4a", stepAnswer: ["$$\\frac{x+1}{x-1}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^2-x-2}{x^2-3x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

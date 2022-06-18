@@ -1,0 +1,1 @@
+import hints from "./a02e810proportions14a-index.js"; const step = {id: "a02e810proportions14a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "$$\\frac{49}{63}=\\frac{z}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a1f32dfFormula17a-index.js"; const step = {id: "a1f32dfFormula17a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Solve for t when $$d=240$$ and $$r=60$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

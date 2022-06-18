@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities21a-index.js"; const step = {id: "a65ae04inequalities21a", stepAnswer: ["x=2 or x=8"], problemType: "TextBox", stepTitle: "$$2|x-5|+3=9$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

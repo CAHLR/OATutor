@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial1c-index.js"; const step = {id: "aaebddaPolynomial1c", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "c) $$3x^5-4x^3-6x^2+x-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

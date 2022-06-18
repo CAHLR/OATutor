@@ -1,0 +1,1 @@
+var hints = [{id: "a5991b4add19a-h1", type: "hint", dependencies: [], title: "Number of Terms", text: "Since there are 2 terms, the expression is a binomial.", variabilization: {}}, ]; export {hints};

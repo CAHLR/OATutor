@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities18a-index.js"; const step = {id: "a374ff4inequalities18a", stepAnswer: ["$$\\frac{-3}{5}$$"], problemType: "TextBox", stepTitle: "What is the slope of the line shown? If the slope is undefined, enter \"und\" without the quotes.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

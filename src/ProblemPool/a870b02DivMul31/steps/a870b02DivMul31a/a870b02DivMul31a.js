@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul31a-index.js"; const step = {id: "a870b02DivMul31a", stepAnswer: ["-729"], problemType: "TextBox", stepTitle: "The quotient of p and -9 is 81.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

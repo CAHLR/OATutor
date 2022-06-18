@@ -1,0 +1,1 @@
+import hints from "./a6ead19multiplyingrationals1a-index.js"; const step = {id: "a6ead19multiplyingrationals1a", stepAnswer: ["$$\\frac{4}{21}$$"], problemType: "TextBox", stepTitle: "$$\\frac{10}{28}$$ * $$\\frac{8}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
