@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly2a-index.js"; const step = {id: "a746c1bfactoringpoly2a", stepAnswer: ["(8*(x**2))-(9*x)-3)"], problemType: "TextBox", stepTitle: "$$8x^2-9x-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

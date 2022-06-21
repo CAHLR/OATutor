@@ -1,0 +1,1 @@
+import hints from "./a5d54dagcf10a-index.js"; const step = {id: "a5d54dagcf10a", stepAnswer: ["$$3p\\left(p^2-2pq+3q^3\\right)$$"], problemType: "TextBox", stepTitle: "Factor: $$3p^3-6p^2 q+9{pq}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

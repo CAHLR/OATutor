@@ -1,0 +1,1 @@
+import hints from "./a3837e8points9a-index.js"; const step = {id: "a3837e8points9a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Determine whether the point (0,2) lies on the line $$y=x+2$$. Enter \"1\" if it does, and \"0\" if it does not.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

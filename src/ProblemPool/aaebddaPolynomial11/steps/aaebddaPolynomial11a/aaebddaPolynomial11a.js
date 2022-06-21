@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial11a-index.js"; const step = {id: "aaebddaPolynomial11a", stepAnswer: ["$$11w^2-7w+1$$"], problemType: "TextBox", stepTitle: "$$9w^2-7w+5+2w^2-4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

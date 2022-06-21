@@ -1,0 +1,1 @@
+import hints from "./a3abd22AddRational8a-index.js"; const step = {id: "a3abd22AddRational8a", stepAnswer: ["$$\\frac{y+3}{y+2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{y^2-5y}{y^2-4}-\\frac{6y-6}{4-y^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

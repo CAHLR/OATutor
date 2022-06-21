@@ -1,0 +1,1 @@
+import hints from "./a54f58cgraphineq16a-index.js"; const step = {id: "a54f58cgraphineq16a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is (-1,3) a solution to the system of inequalities $$4x-y<10$$, $$-2x+2y>-8$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

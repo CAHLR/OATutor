@@ -1,0 +1,1 @@
+var hints = [{id: "a161552dividing1a-h1", type: "hint", dependencies: [], title: "Use the Identity property of mutiplication", text: "For any nonzero real number n, $$\\frac{n}{n}=1$$. Let $$n=15r^4 s^9$$. we get $$\\frac{15r^4 s^9}{15r^4 s^9}=1$$", variabilization: {}}, ]; export {hints};

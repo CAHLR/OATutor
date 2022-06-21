@@ -1,0 +1,1 @@
+import hints from "./a1a538fpairs4a-index.js"; const step = {id: "a1a538fpairs4a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (-5,7) is a solution to the system: $$-3x+y=8-x+2y=-9$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

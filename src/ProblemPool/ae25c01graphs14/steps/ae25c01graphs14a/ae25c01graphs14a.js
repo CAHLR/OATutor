@@ -1,0 +1,1 @@
+import hints from "./ae25c01graphs14a-index.js"; const step = {id: "ae25c01graphs14a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Find the y intercept", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
