@@ -4,10 +4,14 @@ const lti = require('ims-lti')
 const jwt = require('jsonwebtoken');
 const jwtMiddleware = require('express-jwt');
 const level = require('level')
-const { lessonMapping } = require("./legacy-lesson-mapping");
+const { SITE_NAME } = require("../src/config/shared-config");
+const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
 const to = require("await-to-js").default;
 const {spawn} = require('child_process');
 var fs = require('fs'); 
+const memoize = require("lodash.memoize")
+const readJsExportedObject = require("../src/tools/readJsExportedObject");
+const path = require("path")
 
 const db = level('.mapping-db')
 
@@ -22,7 +26,7 @@ const consumerKeySecretMap = {
     'key': 'secret',
 }
 
-const oatsHost = "https://cahlr.github.io/OpenITS/#"
+const oatsHost = "https://cahlr.github.io/OATutor/#"
 const stagingHost = "https://cahlr.github.io/OATutor-Staging/#"
 const unlinkedPage = "assignment-not-linked"
 const alreadyLinkedPage = "assignment-already-linked"
@@ -68,10 +72,11 @@ const setLinkedLesson = async (resource_link_id, lesson_num) => {
  * @param provider
  * @param consumer_secret
  * @param consumer_key
+ * @param linkedLesson
  * @param privileged
  * @return {*}
  */
-const getJWT = (provider, consumer_secret, consumer_key, privileged = false) => {
+const getJWT = (provider, consumer_secret, consumer_key, linkedLesson, privileged = false) => {
     return jwt.sign({
         // unique per assignment
         resource_link_id: provider.body.resource_link_id,
@@ -87,9 +92,10 @@ const getJWT = (provider, consumer_secret, consumer_key, privileged = false) => 
         resource_link_title: provider.body.resource_link_title,
         user_id: provider.userId,
         full_name: provider.body.lis_person_name_full,
-        course_name : provider.body.context_title,
+        course_name: provider.body.context_title,
         course_code: provider.body.context_label,
         course_id: provider.body.context_id,
+        linkedLesson,
 
         // indicates if user is able to edit the linkage
         privileged
@@ -123,10 +129,11 @@ app.post('/launch', async (req, res) => {
 
     const privileged = provider.ta || provider.admin || provider.instructor
 
-    const token = getJWT(provider, consumer_secret, consumer_key, privileged)
-
     let err, linkedLesson;
     [err, linkedLesson] = await getLinkedLesson(provider.body.resource_link_id);
+    linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
+
+    const token = getJWT(provider, consumer_secret, consumer_key, linkedLesson, privileged)
 
     if (provider.student || provider.prospective_student || provider.alumni) {
         // find lesson to send to iff it has been linked by an instructor
@@ -206,7 +213,7 @@ app.post('/setLesson', jwtMiddleware({
         return
     }
 
-    if (!req.body.lesson || !req.body.lesson.lessonNum) {
+    if (!req.body.lesson || !req.body.lesson.id) {
         res.status(400).send('no_lesson_selected').end()
         return
     }
@@ -222,7 +229,7 @@ app.post('/setLesson', jwtMiddleware({
         return;
     }
 
-    [err] = await setLinkedLesson(user.resource_link_id, req.body.lesson.lessonNum);
+    [err] = await setLinkedLesson(user.resource_link_id, req.body.lesson.id);
 
     if (err) {
         console.debug('db put error', err)
@@ -240,9 +247,9 @@ app.post('/postScore', jwtMiddleware({
     secret: multiTenantSecret,
     algorithms: [jwtAlgorithm],
     getToken
-}), (req, res) => {
+}), async (req, res) => {
     const { user = {}, body } = req
-    const { consumer_key } = user
+    const { consumer_key, linkedLesson } = user
     const { components, mastery } = body
 
     // console.debug('component and mastery from client: ', { components, mastery })
@@ -251,6 +258,23 @@ app.post('/postScore', jwtMiddleware({
     if (!consumer_key || !consumer_secret) {
         res.status(400).send('lost_link_to_lms').end()
         return
+    }
+
+    if (!linkedLesson) {
+        res.status(400).send('lost_link_to_lms').end()
+        return
+    }
+
+    const getCoursePlans = memoize(readJsExportedObject);
+    const coursePlans = await getCoursePlans(path.join(__dirname, "..", "src", "config", "coursePlans.js"));
+    let lessonName = null
+    for (const course of coursePlans) {
+        const { lessons = [] } = course
+        const idxOfFind = lessons.find(lesson => lesson.id === linkedLesson)
+        if (idxOfFind > -1) {
+            lessonName = lessons[idxOfFind].name
+            break
+        }
     }
 
     const provider = new lti.Provider(consumer_key, consumer_secret)
@@ -377,6 +401,10 @@ app.post('/auth', async (req, res) => {
     console.debug("assignment title: " + assignment_title);
 
     const lessonNum = lessonMapping[assignment_title];
+    let lessonID = null
+    if ((Boolean(lessonNum) || lessonNum.toString() === "0") && !isNaN(+lessonNum) && (+lessonNum) < 150) {
+        lessonID = numericalHashMapping[+lessonNum]
+    }
     const consumer_key = oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
     const provider = new lti.Provider(consumer_key, consumer_secret);
@@ -394,32 +422,44 @@ app.post('/auth', async (req, res) => {
 
     if (errFlag) return
 
-    if (lessonNum == null) {
+    if (lessonNum == null || lessonID == null) {
         console.log(`Lesson does not exist for "${assignment_title}"`);
-        res.send("Invalid lesson ID. Please contact your teacher or the OpenITS development team to fix this error.");
+        res.send(`Invalid lesson ID. Please contact your teacher or the ${SITE_NAME} development team to fix this error.`);
         res.end();
     } else {
         let err, linkedLesson;
         [err, linkedLesson] = await getLinkedLesson(resource_link_id);
         if (err || !linkedLesson) {
-            [err] = await setLinkedLesson(resource_link_id, lessonNum);
+            [err] = await setLinkedLesson(resource_link_id, lessonID);
             if (err) {
-                console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonName: ${lessonNum}`)
+                console.error(`unable to set association for ${resource_link_id}, ${resource_link_title}, to lessonID: ${lessonID}`)
                 // dangerous because grades may not be able to be parsed correctly
             }
+        } else {
+            linkedLesson = await catchLegacyLessonID(linkedLesson, provider)
         }
 
         const privileged = provider.ta || provider.admin || provider.instructor
 
-        const token = getJWT(provider, consumer_secret, consumer_key, privileged)
+        const token = getJWT(provider, consumer_secret, consumer_key, linkedLesson, privileged)
 
-        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson || lessonNum}?token=${token}` })
+        res.writeHead(302, { Location: `${host}/lessons/${linkedLesson || lessonID}?token=${token}` })
         res.end();
     }
 });
 
+async function catchLegacyLessonID(linkedLesson, provider) {
+    if ((Boolean(linkedLesson) || (linkedLesson === "0" || linkedLesson === 0)) && !isNaN(+linkedLesson) && (+linkedLesson) < 150) {
+        // should catch all lessons that were set using numerical lesson IDs instead of the new uuid
+        console.debug(`updating legacy numerical lesson id: ${linkedLesson} to ${numericalHashMapping[+linkedLesson]}`)
+        linkedLesson = numericalHashMapping[+linkedLesson]
+        await setLinkedLesson(provider.body.resource_link_id, linkedLesson)
+    }
+    return linkedLesson
+}
+
 app.get("/", (req, res) => {
-    res.send("Please visit https://cahlr.github.io/OpenITS").end()
+    res.send(`Please visit ${oatsHost}`).end()
 })
 
 app.listen(port, () => {

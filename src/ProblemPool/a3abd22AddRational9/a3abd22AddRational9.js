@@ -1,0 +1,1 @@
+import steps from "./a3abd22AddRational9-index.js"; const problem = {id: "a3abd22AddRational9", title: "Rational Expression Subtraction", body: "Subtract the following rational expression.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 Add and Subtract Rational Expressions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

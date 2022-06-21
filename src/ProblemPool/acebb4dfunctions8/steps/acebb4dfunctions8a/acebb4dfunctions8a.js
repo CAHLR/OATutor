@@ -1,0 +1,1 @@
+import hints from "./acebb4dfunctions8a-index.js"; const step = {id: "acebb4dfunctions8a", stepAnswer: ["$$3-h^2$$"], problemType: "TextBox", stepTitle: "$$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

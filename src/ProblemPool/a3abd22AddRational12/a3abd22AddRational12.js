@@ -1,0 +1,1 @@
+import steps from "./a3abd22AddRational12-index.js"; const problem = {id: "a3abd22AddRational12", title: "AddRationalExpressions", body: "Add the Following Rational Expressions with Unlike Denominators", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 Add and Subtract Rational Expressions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

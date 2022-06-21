@@ -1,0 +1,1 @@
+import hints from "./a7ecb8ffactoring3a-index.js"; const step = {id: "a7ecb8ffactoring3a", stepAnswer: ["$$\\left(x+16\\right) \\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$x^2+19x+48$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

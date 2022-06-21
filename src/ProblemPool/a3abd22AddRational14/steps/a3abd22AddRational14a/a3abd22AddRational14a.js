@@ -1,0 +1,1 @@
+import hints from "./a3abd22AddRational14a-index.js"; const step = {id: "a3abd22AddRational14a", stepAnswer: ["$$\\frac{1}{x-2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x}{x^2-4}-\\frac{1}{x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

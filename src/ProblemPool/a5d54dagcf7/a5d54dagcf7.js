@@ -1,0 +1,1 @@
+import steps from "./a5d54dagcf7-index.js"; const problem = {id: "a5d54dagcf7", title: "How to Factor a Polynomial by Grouping", body: "Factor by grouping:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.1 Greatest Common Factor and Factor by Grouping", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a251a50MultiplyPoly11a-index.js"; const step = {id: "a251a50MultiplyPoly11a", stepAnswer: ["$$x^3-8x^2+6x-48$$"], problemType: "TextBox", stepTitle: "$$\\left(b+3\\right) \\left(2b^2-5b+8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
