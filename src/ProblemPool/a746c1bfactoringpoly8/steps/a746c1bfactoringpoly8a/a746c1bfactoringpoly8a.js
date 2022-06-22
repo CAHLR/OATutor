@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly8a-index.js"; const step = {id: "a746c1bfactoringpoly8a", stepAnswer: ["$$4\\left(3x-5\\right) \\left(3x+5\\right)$$"], problemType: "TextBox", stepTitle: "$$36x^2-100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

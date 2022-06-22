@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial1b-index.js"; const step = {id: "aaebddaPolynomial1b", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "b) $$-2a^4 b^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

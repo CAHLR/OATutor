@@ -1,0 +1,1 @@
+import hints from "./a7ecb8ffactoring13a-index.js"; const step = {id: "a7ecb8ffactoring13a", stepAnswer: ["$$\\left(x+6\\right) \\left(x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$5x-6+x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

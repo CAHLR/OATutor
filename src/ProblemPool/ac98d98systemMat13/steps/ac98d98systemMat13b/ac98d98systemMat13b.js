@@ -1,0 +1,1 @@
+import hints from "./ac98d98systemMat13b-index.js"; const step = {id: "ac98d98systemMat13b", stepAnswer: ["$$\\begin{bmatrix} 6 & -4 & 3 \\\\ 9 & -6 & 3 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Multiply row 2 by 3. Perform this on the original matrix.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

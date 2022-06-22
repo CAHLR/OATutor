@@ -1,0 +1,1 @@
+import hints from "./af04890Rational1b-index.js"; const step = {id: "af04890Rational1b", stepAnswer: ["$$b=\\frac{-5}{2}$$"], problemType: "MultipleChoice", stepTitle: "b) $$\\frac{4b-3}{2b+5}$$", stepBody: "", choices: ["$$b=0$$", "$$b=3$$", "$$b=\\frac{-5}{2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a8d511eDeterminant26a-index.js"; const step = {id: "a8d511eDeterminant26a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} -2 & -2 & 3 \\\\ 1 & -3 & 0 \\\\ -2 & 3 & -2 \\end{bmatrix}$$", stepBody: "Find minor $$a_3$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

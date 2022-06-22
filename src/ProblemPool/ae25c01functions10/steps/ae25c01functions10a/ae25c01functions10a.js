@@ -1,0 +1,1 @@
+import hints from "./ae25c01functions10a-index.js"; const step = {id: "ae25c01functions10a", stepAnswer: ["$$\\left(-infinf\\right)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=2x+5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
