@@ -1,1 +1,0 @@
-import steps from "./a3abd22addsubrational1-index.js"; const problem = {id: "a3abd22addsubrational1", title: "Adding and Subtracting Rational Expressions", body: "Add the rational expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "7.2 Add and Subtract Rational Expressions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

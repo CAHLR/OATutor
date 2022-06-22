@@ -39,7 +39,7 @@ const AssignmentAlreadyLinked = (props) => {
                         <center>
                             {linkedLesson
                                 ? <h1>This assignment has been linked to
-                                    lesson {linkedLesson.name} {linkedLesson.topic} successfully!</h1>
+                                    lesson {linkedLesson.lessonNum} successfully!</h1>
                                 : <h1>This assignment has been linked successfully!</h1>
                             }
                             <h2>To link a new OATutor lesson, please create a new assignment on your LMS.</h2>

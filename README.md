@@ -1,30 +1,27 @@
-# OATutor
+# OpenITS
 
-OATutor, formerly known as OpenITS, is an open source Intelligent Tutoring System using Bayesian Knowledge Tracing
-implemented in ReactJS and using Firebase for logging. Includes ExpressJS middleware for interoperability
+An open source Intelligent Tutoring System using Bayesian Knowledge Tracing implemented
+in ReactJS and using Firebase for logging. Includes ExpressJS middleware for interoperability
 with LTI-compatible learning management systems (such as [Canvas](https://www.instructure.com/)).
 
 ## Requirements
-
-The installation assumes that you already have Git, Node.js, and npm installed.
+The installation assumes that you already have Git, Node.js, and npm installed. 
 
 ## Installation
 
 ```sh
-git clone https://github.com/CAHLR/OATutor.git
-cd OATutor
+git clone https://github.com/CAHLR/OpenITS.git
+cd OpenITS
 ```
-
 ```sh
 npm install
 ```
-
-> You may use an alternative package manager such as [yarn](https://yarnpkg.com/) or
+> You may use an alternative package manager such as [yarn](https://yarnpkg.com/) or 
 > [pnpm](https://pnpm.io/).
 
 ### \[Optional\] Firebase Setup
 
-OATutor can use Firebase to log data.
+OpenITS can use Firebase to log data.
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Add new project. Configure it as you wish (the options are not important for setup)
@@ -57,8 +54,8 @@ of your choosing.
 5. Copy the email address for the service account
 6. Share the target spreadsheet with that email address and give them editor access
 7. Create `.env.local` in `src/tools` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
-8. If your school runs on a quarter system, you may change the first line in
-   `src/config/shared-config.js` to `QUARTER`
+8. If your school runs on a quarter system, you may change the first line in 
+`src/config/shared-config.js` to `QUARTER`
 
 From the `src/tools` directory, `node populateGoogleSheets.js`
 
@@ -78,14 +75,14 @@ collections.
 ## Technologies Used
 
 * Frontend: ReactJS
-    * Theme: Material UI
-    * Database: localForage (localStorage, WebSQL, IndexedDB)
-    * Deployment: Github Actions
-    * \[Optional\] Logging: Firebase (Cloud Firestore)
+  * Theme: Material UI
+  * Database: localForage (localStorage, WebSQL, IndexedDB)
+  * Deployment: Github Actions
+  * \[Optional\] Logging: Firebase (Cloud Firestore)
 * Middleware: ExpressJS
-    * Database: Level-DB
+  * Database: Level-DB
 * Offline Computation/Iteration:
-    * Python (dAFM Machine Learning algorithm)
+  * Python (dAFM Machine Learning algorithm)
 
 # Project Structure:
 
@@ -329,7 +326,7 @@ const step = {
 export { step };
 ```
 
-### Using OATutor custom markdown parser for images and LaTeX
+### Using OpenITS custom markdown parser for images and LaTeX
 
 ```js
 import steps from './pythag1-index.js'
@@ -371,7 +368,7 @@ export { problem };
 ```
 
 AB testing:
-OATutor was designed with the research case in mind and thus supports AB testing for many features. The benefit of the
+OpenITS was designed with the research case in mind and thus supports AB testing for many features. The benefit of the
 open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they
 would like. To show that this is possible, we have included several examples of how one could use AB testing. One
 example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge
@@ -400,14 +397,14 @@ is the deepest level of content (the scaffolds's scaffolds cannot contain any he
 
 BKT algorithm selecting problems.
 
-OATutor uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT
+OpenITS uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT
 works, just copy the descriptions of the 4 model parameters used in BKT from wikipedia along with equations a thru d.
 The implementation is exactly identical to wikpedia, nothing special here)
 
 Problem selection is determined using a heuristic which is fully configurable and can be AB tested (see above). For the
 purposes of this paper, let us assume we are using a heuristic that selects problems prioritizing the lowest mastery
 first. Upon receiving user input, the standard BKT update equations will update the predicted user's mastery. Upon
-completion of a problem, OATutor will iterate through all problems and compute each problem's mastery level(note:
+completion of a problem, OpenITS will iterate through all problems and compute each problem's mastery level(note:
 mastery level is computed at the problem granularity not the step) for the user. This is done by multiplying all the
 mastery priors for all KCs of that step (as labelled by the researcher in the KC model) and then multiplying all step
 masteries together to get the problem mastery. The heuristic will be applied, which in this case is lowest mastery

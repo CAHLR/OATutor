@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly9b-index.js"; const step = {id: "a251a50MultiplyPoly9b", stepAnswer: ["$$18p^2 q^2-3pq-55$$"], problemType: "TextBox", stepTitle: "b) $$\\left(3pq+5\\right) \\left(6pq-11\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

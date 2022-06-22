@@ -1,1 +1,0 @@
-import hints from "./a5d54dagcf28a-index.js"; const step = {id: "a5d54dagcf28a", stepAnswer: ["$$\\left(r-1\\right) \\left(r-3\\right)$$"], problemType: "TextBox", stepTitle: "$$r^2-3r-r+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

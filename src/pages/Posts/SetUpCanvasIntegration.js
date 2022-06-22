@@ -3,7 +3,6 @@ import Spacer from "../../Components/_General/Spacer";
 import { useStyles } from "./Posts";
 import clsx from "clsx";
 import ZoomImage from "../../Components/_General/ZoomImage";
-import { SITE_NAME } from "../../config/config";
 
 const createCourseLink = "https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-create-a-new-course-from-the-Dashboard-as-an-instructor/ta-p/794"
 
@@ -57,7 +56,7 @@ const SetUpCanvasIntegration = () => {
         Select "By URL" in the Configuration Type dropdown.
 
         <h4>For the App Fields</h4>
-        <div className={classes.fullWidth}><span className={classes.unselectable}>Name: </span><code>{SITE_NAME}</code>
+        <div className={classes.fullWidth}><span className={classes.unselectable}>Name: </span><code>OATutor</code>
         </div>
 
         Click <b className={classes.button} onClick={getConsumerKeySecret}>here</b> to generate the required
@@ -73,7 +72,7 @@ const SetUpCanvasIntegration = () => {
         </>}
         <div className={classes.fullWidth}>
             <span
-                className={classes.unselectable}>Config URL: </span><code>https://cahlr.github.io/{SITE_NAME}/lti-consumer-config.xml</code>
+                className={classes.unselectable}>Config URL: </span><code>https://cahlr.github.io/OpenITS/lti-consumer-config.xml</code>
         </div>
         <div className={clsx(classes.fullWidth, classes.textCenter, classes["p-8"])}>
             <ZoomImage
@@ -82,7 +81,7 @@ const SetUpCanvasIntegration = () => {
                 src={`${process.env.PUBLIC_URL}/static/images/posts/setting-up-canvas-integration/add%20app.PNG`}/>
         </div>
 
-        Click "Submit" and you will be able to start using {SITE_NAME} as an external tool.
+        Click "Submit" and you will be able to start using OATutor as an external tool.
         <Spacer height={24 * 8}/>
     </>
 }

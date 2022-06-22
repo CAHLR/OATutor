@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly5a-index.js"; const step = {id: "a161552dividingpoly5a", stepAnswer: ["$$x^2-10x+100$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^3+1000}{x+10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

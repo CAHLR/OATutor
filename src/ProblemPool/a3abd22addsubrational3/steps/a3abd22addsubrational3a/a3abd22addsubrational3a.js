@@ -1,1 +1,0 @@
-import hints from "./a3abd22addsubrational3a-index.js"; const step = {id: "a3abd22addsubrational3a", stepAnswer: ["$$\\frac{3x+5}{4x-5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3x}{4x-5}+\\frac{5}{4x-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
