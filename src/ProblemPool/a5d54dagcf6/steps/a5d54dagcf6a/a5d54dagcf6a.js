@@ -1,1 +1,0 @@
-import hints from "./a5d54dagcf6a-index.js"; const step = {id: "a5d54dagcf6a", stepAnswer: ["$$-7a\\left(a^2-3a+2\\right)$$"], problemType: "TextBox", stepTitle: "Facotr: $$-7a^3+21a^2-14a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

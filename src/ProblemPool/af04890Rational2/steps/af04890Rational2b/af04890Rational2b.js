@@ -1,1 +1,0 @@
-import hints from "./af04890Rational2b-index.js"; const step = {id: "af04890Rational2b", stepAnswer: ["$$n=\\frac{-1}{3}$$"], problemType: "MultipleChoice", stepTitle: "b) $$\\frac{8n-5}{3n+1}$$", stepBody: "", choices: ["$$b=\\frac{-1}{3}$$", "$$b=0$$", "$$b=\\frac{5}{8}$$", "$$n=\\frac{-1}{3}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

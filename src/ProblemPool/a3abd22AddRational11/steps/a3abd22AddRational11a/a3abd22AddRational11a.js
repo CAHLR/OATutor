@@ -1,1 +1,0 @@
-import hints from "./a3abd22AddRational11a-index.js"; const step = {id: "a3abd22AddRational11a", stepAnswer: ["$$\\frac{7x-4}{\\left(x+3\\right) \\left(x-2\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2}{x-2}+\\frac{5}{x+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

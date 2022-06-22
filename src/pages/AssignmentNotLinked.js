@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import Spacer from "../Components/_General/Spacer";
-import { SITE_NAME } from "../config/config";
 
 const AssignmentNotLinked = () => {
     return <>
@@ -28,7 +27,7 @@ const AssignmentNotLinked = () => {
                 >
                     <Box width="75%" maxWidth={1500}>
                         <center>
-                            <h1>Welcome to {SITE_NAME.replace(/\s/, "")}!</h1>
+                            <h1>Welcome to OpenITS!</h1>
                             <h2>Your instructor has not linked a lesson to this assignment yet.</h2>
                         </center>
                         <Divider/>

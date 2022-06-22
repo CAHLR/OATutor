@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly6a-index.js"; const step = {id: "a251a50MultiplyPoly6a", stepAnswer: ["$$x^2+17x+72$$"], problemType: "TextBox", stepTitle: "a) $$\\left(x+8\\right) \\left(x+9\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

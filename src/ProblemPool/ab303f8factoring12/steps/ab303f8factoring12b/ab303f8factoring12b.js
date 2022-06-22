@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring12b-index.js"; const step = {id: "ab303f8factoring12b", stepAnswer: ["$$\\left(6x+2\\right) \\left(6x-2\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$36x^2-4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./acebb4dfunctions4a-index.js"; const step = {id: "acebb4dfunctions4a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$2x^2-x+3$$", stepBody: "What is f(2)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a3837e8points14-index.js"; const problem = {id: "a3837e8points14", title: "Determining Whether a Point is On a Line", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.1 Graph Linear Equations in Two Variables", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

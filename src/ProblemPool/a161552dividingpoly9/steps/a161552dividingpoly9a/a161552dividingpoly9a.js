@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly9a-index.js"; const step = {id: "a161552dividingpoly9a", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: "$$f(x)=x^2-15x+54$$ $$g(x)=x-9$$ Find $$\\frac{f}{g}$$ when $$x=-5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

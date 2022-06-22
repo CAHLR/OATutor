@@ -1,5 +1,5 @@
 {
-  "name": "oatutor-lti-server",
+  "name": "openits-lti-server",
   "version": "1.0.0",
   "description": "LTI server",
   "main": "server.js",
@@ -9,8 +9,7 @@
     "express-jwt": "~6.1.0",
     "ims-lti": "~3.0.2",
     "jsonwebtoken": "~8.5.1",
-    "level": "~7.0.1",
-    "lodash.memoize": "^4.1.2"
+    "level": "~7.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

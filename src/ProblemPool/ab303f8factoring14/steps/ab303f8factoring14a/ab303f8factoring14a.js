@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring14a-index.js"; const step = {id: "ab303f8factoring14a", stepAnswer: ["$$2y^{2\\left(x^2-4\\right)} \\left(x^2+4\\right)$$"], problemType: "TextBox", stepTitle: "$$2x^4 y^2-32y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

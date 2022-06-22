@@ -1,1 +1,0 @@
-import hints from "./af04890Rational10a-index.js"; const step = {id: "af04890Rational10a", stepAnswer: ["$$\\frac{5x \\left(x-2\\right)}{10x \\left(x+3\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5x}{x^2+5x+6} \\frac{x^2-4}{10x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

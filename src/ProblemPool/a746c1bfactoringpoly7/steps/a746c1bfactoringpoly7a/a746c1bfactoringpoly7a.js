@@ -1,1 +1,0 @@
-import hints from "./a746c1bfactoringpoly7a-index.js"; const step = {id: "a746c1bfactoringpoly7a", stepAnswer: ["$$8\\left(m-2\\right) \\left(m+2\\right)$$"], problemType: "TextBox", stepTitle: "$$8x^2-32$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./ac98d98matrices1-index.js"; const problem = {id: "ac98d98matrices1", title: "Write the Augmented Matrix for a System of Equations", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "4.5 Solve Systems of Equations Using Matrices", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

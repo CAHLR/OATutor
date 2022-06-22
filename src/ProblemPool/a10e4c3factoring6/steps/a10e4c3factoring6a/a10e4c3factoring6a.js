@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring6a-index.js"; const step = {id: "a10e4c3factoring6a", stepAnswer: ["$$4u\\left(u-1\\right) \\left(u+5\\right)$$"], problemType: "TextBox", stepTitle: "$$4u^3+16u^2-20u$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

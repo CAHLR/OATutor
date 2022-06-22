@@ -1,1 +1,0 @@
-import hints from "./a5d54dagcf24a-index.js"; const step = {id: "a5d54dagcf24a", stepAnswer: ["$$\\left(x+1\\right) \\left(5x+3\\right)$$"], problemType: "TextBox", stepTitle: "$$5x \\left(x+1\\right)+3\\left(x+1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

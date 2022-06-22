@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring21a-index.js"; const step = {id: "a10e4c3factoring21a", stepAnswer: ["$$\\left(5n+1\\right) \\left(n+4\\right)$$"], problemType: "TextBox", stepTitle: "$$5n^2+21n+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
