@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly10a-index.js"; const step = {id: "a746c1bfactoringpoly10a", stepAnswer: ["$${\\left(7x-8\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$49x^2-112x+64$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

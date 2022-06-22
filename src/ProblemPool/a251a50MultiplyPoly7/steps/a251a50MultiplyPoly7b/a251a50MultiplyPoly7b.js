@@ -1,0 +1,1 @@
+import hints from "./a251a50MultiplyPoly7b-index.js"; const step = {id: "a251a50MultiplyPoly7b", stepAnswer: ["$$8x^2-14x-15$$"], problemType: "TextBox", stepTitle: "b) $$\\left(4x+3\\right) \\left(2x-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

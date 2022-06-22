@@ -1,0 +1,1 @@
+var hints = [{id: "aaebddaPolynomial10b-h5", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["8"], dependencies: [], title: "Addition", text: "What is $$5+3$$?", variabilization: {}}, {id: "aaebddaPolynomial10b-h6", type: "hint", dependencies: [], title: "Addition", text: "Add all the terms up", variabilization: {}}, ]; export {hints};

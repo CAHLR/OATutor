@@ -1,0 +1,1 @@
+import hints from "./a746c1bfactoringpoly9a-index.js"; const step = {id: "a746c1bfactoringpoly9a", stepAnswer: ["$${\\left(5x-6\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$25x^2-60x+36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

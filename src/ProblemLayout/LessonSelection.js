@@ -55,7 +55,7 @@ class LessonSelection extends React.Component {
                             <center>
                                 {this.isPrivileged
                                     ? <h1>Welcome Instructor!</h1>
-                                    : <h1>Welcome to OpenITS!</h1>
+                                    : <h1>Welcome to {SITE_NAME.replace(/\s/, "")}!</h1>
                                 }
                                 <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
                                 {this.isPrivileged
@@ -106,12 +106,12 @@ class LessonSelection extends React.Component {
                                                         <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
                                                         <Button variant="contained" color="primary"
                                                                 className={classes.button}
-                                                                aria-label={`View Lesson ${lesson.lessonNum}`}
-                                                                aria-roledescription={`Navigate to lesson ${lesson.lessonNum}'s page to start working on problems`}
+                                                                aria-label={`View Lesson ${lesson.id}`}
+                                                                aria-roledescription={`Navigate to lesson ${lesson.id}'s page to start working on problems`}
                                                                 role={"link"}
                                                                 style={{ marginBottom: "10px" }}
                                                                 onClick={() => {
-                                                                    this.props.history.push(`/lessons/${lesson.lessonNum}`)
+                                                                    this.props.history.push(`/lessons/${lesson.id}`)
                                                                     this.props.selectLesson(lesson)
                                                                 }}>
                                                             Select
@@ -148,7 +148,7 @@ class LessonSelection extends React.Component {
                             {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                            <IconButton aria-label="help" title={"How to use OpenITS?"}
+                            <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
                                         href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,

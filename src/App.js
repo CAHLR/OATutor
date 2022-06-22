@@ -229,11 +229,11 @@ class App extends React.Component {
                                                   removeProgress={this.removeProgress}
                                                   courseNum={props.match.params.courseNum} {...props} />
                                     )}/>
-                                    <Route path="/lessons/:lessonNum" render={(props) => (
+                                    <Route path="/lessons/:lessonID" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
                                                   loadProgress={this.loadProgress}
                                                   removeProgress={this.removeProgress}
-                                                  lessonNum={props.match.params.lessonNum} {...props} />
+                                                  lessonID={props.match.params.lessonID} {...props} />
                                     )}/>
                                     <Route path="/debug/:problemID" render={(props) => (
                                         <DebugPlatform key={Date.now()} saveProgress={() => this.saveProgress()}
