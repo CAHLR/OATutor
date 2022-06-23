@@ -6,6 +6,7 @@ const jwtMiddleware = require('express-jwt');
 const level = require('level')
 const { SITE_NAME } = require("../src/config/shared-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
+const { calculateSemester } = require("../src/util/calculateSemester.js");
 const to = require("await-to-js").default;
 // const {spawn} = require('child_process');
 // var fs = require('fs'); 
@@ -287,6 +288,10 @@ app.post('/postScore', jwtMiddleware({
         }
     }
 
+    console.log(calculateSemester(Date.now()));
+    console.log("User id:", user_id);
+    console.log("lessonName:", lessonName);
+
     const provider = new lti.Provider(consumer_key, consumer_secret)
     provider.parse_request(null, user)
 
@@ -300,11 +305,75 @@ app.post('/postScore', jwtMiddleware({
     let semester = 'Spring 2022';
     let lesson = '1.1 Use the Language of Algebra';
     let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
+    // let semester = calculateSemester(Date.now());
+    // let canvasUserId = user_id;
+    // let lesson = 'Lesson Iteration and Indexing';
 
     const submissionsRef = firestoredb.collection('problemSubmissions');
-    const queryRef = submissionsRef.where('semester', '==', semester).where('canvas_user_id', '==', canvasUserId).where('lesson', '==', lesson);
+    const queryRef = submissionsRef.where('semester', '==', semester)
+                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lesson', '==', lesson)
+                        .orderBy('problemID', 'asc')
+                        .orderBy('time_stamp', 'asc');
     const result = await queryRef.get();
-    console.log(result);
+
+    var formattedText = `
+        <style>
+            .tb { border-collapse: separate; text-align: center; }
+            .tb th, .tb td { padding: 20px; border: solid 1px #777; }
+        </style>
+        <table class="tb">
+            <thead><tr>
+                <th>Problem ID</th>
+                <th>Step ID</th>
+                <th>Action Type</th>
+                <th>Student Answer</th>
+                <th>Time Taken (s)</th>
+            </tr></thead>
+            <tbody>
+    `;
+
+    var lastProblemID = "";
+    var lastStepID = "";
+    var lastTime = -1;
+
+    result.forEach(action => {
+        let data = action.data();
+        var problemID = "";
+        if (data["problemID"] != lastProblemID) {
+            problemID = `<a href="https://cahlr.github.io/OATutor-Content-Staging/#/debug/${data['problemID']}">${data['problemID']}</a>`
+            lastProblemID = data["problemID"];
+            lastTime = -1;
+        }
+        var stepID = "";
+        if (data["stepID"] != lastStepID) {
+            stepID = data["stepID"];
+            lastStepID = data["stepID"];
+        }
+        let eventType = data["eventType"];
+        let input = data["input"] ? data["input"] : "";
+        let time = (lastTime == -1) ? "N/A" : (data["time_stamp"] - lastTime) / 1000;
+        lastTime = data["time_stamp"];
+
+        formattedText += `
+        <tr>
+            <td>${problemID}</td>
+            <td>${stepID}</td>
+            <td>${eventType}</td>
+            <td>${input}</td>
+            <td>${time}</td>
+        </tr>
+        `;
+    });
+
+    formattedText += `
+                </tbody>
+            </table>
+            `;
+
+    if (result.size == 0) {
+        formattedText = "No student activity found for this lesson.";
+    }
 
     const text = `
         <h1> Component Breakdown </h1>
@@ -319,7 +388,7 @@ app.post('/postScore', jwtMiddleware({
             )
             .join("")}
         <h4 style="padding-top: 10px"> Problem Stats </h4>
-        ${result}
+        ${formattedText}
     `;
 
     provider.outcome_service.send_replace_result_with_text(score, text, (err, result) => {
@@ -331,87 +400,6 @@ app.post('/postScore', jwtMiddleware({
 
         res.status(200).end()
     });
-
-    // var formattedText = `
-    //     <style>
-    //         .tb { border-collapse: collapse;}
-    //         .tb th, .tb td { padding: 10px; border: solid 1px #777; }
-    //     </style>
-    // `;
-
-    // fs.readFile('data_script/data/full_analysis.csv', 'utf8', function(err, data){
-    //     var dataList = data.split("\n");
-    //     var problemInfo = {};
-    //     dataList.forEach(problem => {
-    //         let info = problem.split("\t");
-    //         if (info[1] == semester && info[2] == lesson && info[3] == canvasUserId) {
-    //             if (info[4] in problemInfo) {
-    //                 problemInfo[info[4]].push(info.slice(5, 8));
-    //             } else {
-    //                 problemInfo[info[4]] = [info.slice(5, 8)];
-    //             }
-    //         }
-    //     });
-
-    //     for (const problem in problemInfo) {
-    //         formattedText += `
-    //             <a href="https://cahlr.github.io/OATutor-Content-Staging/#/debug/${problem}">
-    //                 <h5 style="padding-top: 15px"> ${problem} </h5>
-    //             </a>
-    //             <table class="tb">
-    //             <thead><tr>
-    //                 <th>StepID</th>
-    //                 <th>Student Answers</th>
-    //                 <th>Time for Each Hint</th>
-    //             </tr></thead>
-    //             <tbody>
-    //         `;
-    //         problemInfo[problem].forEach(step => {
-    //             formattedText += `
-    //             <tr>
-    //                 <td>${step[0]}</td>
-    //                 <td>${step[1]}</td>
-    //                 <td>${step[2]}</td>
-    //             </tr>
-    //         `;
-    //         });
-    //         formattedText += `
-    //             </tbody>
-    //         </table>
-    //         `;
-    //     }
-
-    //     if (Object.keys(problemInfo).length === 0) {
-    //         formattedText = "No student activity found for this lesson";
-    //     }
-
-    //     const text = `
-    //         <h1> Component Breakdown </h1>
-    //         <h4> Overall score: ${score}%</h4>
-    //         ${Object
-    //             .keys(components)
-    //             .map((key, i) =>
-    //                 `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
-    //         ${"&#9646;".repeat((+components[key]) * 10)}
-    //         ${"&#9647;".repeat(10 - (+components[key]) * 10)}
-    //         </p>`
-    //             )
-    //             .join("")}
-    //         test test
-    //         <h4 style="padding-top: 10px"> Problem Stats </h4>
-    //         ${formattedText}
-    //     `;
-
-    //     provider.outcome_service.send_replace_result_with_text(score, text, (err, result) => {
-    //         if (err || !result) {
-    //             console.debug('was unable to send result to your LMS', err)
-    //             res.status(400).send('unable_to_handle_score').end()
-    //             return
-    //         }
-    
-    //         res.status(200).end()
-    //     })
-    // });
 
 })
 
@@ -502,27 +490,6 @@ async function catchLegacyLessonID(linkedLesson, provider) {
 
 app.get("/", (req, res) => {
     res.send(`Please visit ${oatsHost}`).end()
-})
-
-app.get("/test", async (req, res) => {
-    let semester = 'Spring 2022';
-    let lesson = '1.1 Use the Language of Algebra';
-    let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
-
-    const submissionsRef = firestoredb.collection('problemSubmissions');
-    const queryRef = submissionsRef.where('semester', '==', semester)
-                        .where('canvas_user_id', '==', canvasUserId)
-                        .where('lesson', '==', lesson)
-                        .orderBy('problemID', 'asc')
-                        .orderBy('time_stamp', 'asc');
-    const result = await queryRef.get();
-    result.forEach(problem => {
-        console.log(problem.id, '=>', problem.data()["problemID"], problem.data()["stepID"], problem.data()["eventType"], 
-        problem.data()["input"], problem.data()["isCorrect"], problem.data()["time_stamp"]);
-    });
-
-    res.send(result).end();
-
 })
 
 app.listen(port, () => {
