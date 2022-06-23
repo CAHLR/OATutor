@@ -8,11 +8,9 @@ const { SITE_NAME } = require("../src/config/shared-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
 const { calculateSemester } = require("../src/util/calculateSemester.js");
 const to = require("await-to-js").default;
-// const {spawn} = require('child_process');
-// var fs = require('fs'); 
-const memoize = require("lodash.memoize")
+const memoize = require("lodash.memoize");
 const readJsExportedObject = require("../src/tools/readJsExportedObject");
-const path = require("path")
+const path = require("path");
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 
@@ -278,19 +276,16 @@ app.post('/postScore', jwtMiddleware({
 
     const getCoursePlans = memoize(readJsExportedObject);
     const coursePlans = await getCoursePlans(path.join(__dirname, "..", "src", "config", "coursePlans.js"));
-    let lessonName = null
+    var lessonName = null
+
     for (const course of coursePlans) {
-        const { lessons = [] } = course
-        const idxOfFind = lessons.find(lesson => lesson.id === linkedLesson)
+        const { lessons = [] } = course;
+        const idxOfFind = lessons.findIndex(lesson => lesson.id === linkedLesson);
         if (idxOfFind > -1) {
-            lessonName = lessons[idxOfFind].name
+            lessonName = lessons[idxOfFind].name.split(" ")[1] + " " + lessons[idxOfFind].topics;
             break
         }
     }
-
-    console.log(calculateSemester(Date.now()));
-    console.log("User id:", user_id);
-    console.log("lessonName:", lessonName);
 
     const provider = new lti.Provider(consumer_key, consumer_secret)
     provider.parse_request(null, user)
@@ -305,11 +300,13 @@ app.post('/postScore', jwtMiddleware({
     let semester = 'Spring 2022';
     let lesson = '1.1 Use the Language of Algebra';
     let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
+    const submissionsRef = firestoredb.collection('problemSubmissions');
+    
     // let semester = calculateSemester(Date.now());
     // let canvasUserId = user_id;
-    // let lesson = 'Lesson Iteration and Indexing';
+    // let lesson = lessonName;
+    // const submissionsRef = firestoredb.collection('development_problemSubmissions');
 
-    const submissionsRef = firestoredb.collection('problemSubmissions');
     const queryRef = submissionsRef.where('semester', '==', semester)
                         .where('canvas_user_id', '==', canvasUserId)
                         .where('lesson', '==', lesson)
