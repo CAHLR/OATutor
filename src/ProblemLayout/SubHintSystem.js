@@ -8,9 +8,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
 import Spacer from "../Components/_General/Spacer";
+import { ThemeContext } from "../config/config";
 
 
 class SubHintSystem extends React.Component {
+    static contextType = ThemeContext;
+
     constructor(props) {
         super(props);
         this.state = {
@@ -43,14 +46,17 @@ class SubHintSystem extends React.Component {
 
     render() {
         const { classes, index, parent } = this.props;
+        const { currentExpanded } = this.state;
+        const { debug, use_expanded_view } = this.context;
+
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
                         return <Accordion key={i}
-                                          onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
-                                          disabled={this.isLocked(i)}
-                                          expanded={this.state.currentExpanded === i}
-                                          defaultExpanded={false}>
+                            onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+                            disabled={this.isLocked(i) && !(use_expanded_view && debug)}
+                            expanded={currentExpanded === i || (use_expanded_view && debug)}
+                            defaultExpanded={false}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon/>}
                                 aria-controls="panel1a-content"

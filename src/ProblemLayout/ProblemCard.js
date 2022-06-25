@@ -43,7 +43,7 @@ class ProblemCard extends React.Component {
         }
 
         // Bottom out hints option
-        if (ENABLE_BOTTOM_OUT_HINTS && !context["use_expanded_view"]) {
+        if (ENABLE_BOTTOM_OUT_HINTS && context.debug && !context["use_expanded_view"]) {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length),
@@ -72,8 +72,8 @@ class ProblemCard extends React.Component {
 
         this.state = {
             inputVal: "",
-            isCorrect: null,
-            checkMarkOpacity: '0',
+            isCorrect: context.use_expanded_view && context.debug ? true : null ,
+            checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             showHints: false,
             hintsFinished: new Array(this.hints.length).fill(0),
             equation: '',
@@ -198,6 +198,8 @@ class ProblemCard extends React.Component {
 
     render() {
         const { classes } = this.props;
+        const { showHints } = this.state;
+        const { debug, use_expanded_view } = this.context;
         return (
             <Card className={classes.card}>
                 <CardContent>
@@ -210,7 +212,7 @@ class ProblemCard extends React.Component {
                         {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
                     </div>
 
-                    {this.state.showHints && (
+                    {(showHints || (debug && use_expanded_view)) && (
                         <div className="Hints">
                             <ErrorBoundary componentName={"HintSystem"} descriptor={"hint"}>
                                 <HintSystem
@@ -267,6 +269,7 @@ class ProblemCard extends React.Component {
                             <center>
                                 <Button className={classes.button} style={{ width: "80%" }} size="small"
                                         onClick={this.submit}
+                                        disabled={(use_expanded_view && debug)}
                                         {...stagingProp({
                                             "data-selenium-target": `submit-button-${this.props.index}`
                                         })}>

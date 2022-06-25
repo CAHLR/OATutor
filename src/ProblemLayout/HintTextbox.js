@@ -14,14 +14,14 @@ import { stagingProp } from "../util/addStagingProperty";
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
 
-    constructor(props) {
+    constructor(props, context) {
         super(props);
         this.hint = props.hint;
         this.index = props.index;
         this.state = {
             inputVal: "",
-            isCorrect: null,
-            checkMarkOpacity: '0',
+            isCorrect: context.use_expanded_view && context.debug ? true : null ,
+            checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             showHints: false,
         }
     }
@@ -64,6 +64,7 @@ class HintTextbox extends React.Component {
     render() {
         const { classes, index, hintNum } = this.props;
         const hintIndex = `${hintNum}-${index}`
+        const { debug, use_expanded_view } = this.context;
 
         return (
             <div>
@@ -87,6 +88,7 @@ class HintTextbox extends React.Component {
                             <center>
                                 <IconButton aria-label="delete" onClick={this.props.toggleHints}
                                             title="View available hints"
+                                            disabled={(use_expanded_view && debug)}
                                             {...stagingProp({
                                                 "data-selenium-target": `hint-button-${hintIndex}`
                                             })}
@@ -104,6 +106,7 @@ class HintTextbox extends React.Component {
                         <center>
                             <Button className={classes.button} style={{ width: "80%" }} size="small"
                                     onClick={this.submit}
+                                    disabled={(use_expanded_view && debug)}
                                     {...stagingProp({
                                         "data-selenium-target": `submit-button-${hintIndex}`
                                     })}
