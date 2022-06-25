@@ -50,7 +50,10 @@ const queryParamToContext = {
     "token": "jwt",
     "lis_person_name_full": "studentName",
     "to": "alreadyLinkedLesson",
+    "use_expanded_view": "use_expanded_view"
 }
+
+const queryParamsToKeep = ["use_expanded_view", "to"]
 
 const treatmentMapping = {
     bktParams: {
@@ -112,6 +115,16 @@ class App extends React.Component {
             // Firebase creation
             this.firebase = new Firebase(this.userID, config, this.getTreatment(), SITE_VERSION, additionalContext.user);
 
+            let targetLocation = window.location.href.split("?")[0]
+
+            const keptQueryParamsObj = Object
+                .fromEntries(Object.entries(additionalContext).filter(([key, _]) => queryParamsToKeep.includes(key)))
+            const keptQueryParams = new URLSearchParams(keptQueryParamsObj)
+
+            if (Object.keys(keptQueryParamsObj).length > 0) {
+                targetLocation += `?${keptQueryParams.toString()}`
+            }
+
             if (this.mounted) {
                 this.setState((prev) => ({
                     additionalContext: {
@@ -119,13 +132,13 @@ class App extends React.Component {
                         ...additionalContext
                     }
                 }))
-                window.history.replaceState({}, document.title, window.location.href.split("?")[0])
+                window.history.replaceState({}, document.title, targetLocation)
             } else if (this.mounted === undefined) {
                 this.state = {
                     ...this.state,
                     additionalContext
                 }
-                window.history.replaceState({}, document.title, window.location.href.split("?")[0])
+                window.history.replaceState({}, document.title, targetLocation)
             }
         }
         window.addEventListener('popstate', onLocationChange);
@@ -220,26 +233,26 @@ class App extends React.Component {
                                 <Switch>
                                     <Route exact path="/" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                                  loadProgress={this.loadProgress}
-                                                  removeProgress={this.removeProgress} {...props} />
+                                            loadProgress={this.loadProgress}
+                                            removeProgress={this.removeProgress} {...props} />
                                     )}/>
                                     <Route path="/courses/:courseNum" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                                  loadProgress={this.loadProgress}
-                                                  removeProgress={this.removeProgress}
-                                                  courseNum={props.match.params.courseNum} {...props} />
+                                            loadProgress={this.loadProgress}
+                                            removeProgress={this.removeProgress}
+                                            courseNum={props.match.params.courseNum} {...props} />
                                     )}/>
                                     <Route path="/lessons/:lessonID" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                                  loadProgress={this.loadProgress}
-                                                  removeProgress={this.removeProgress}
-                                                  lessonID={props.match.params.lessonID} {...props} />
+                                            loadProgress={this.loadProgress}
+                                            removeProgress={this.removeProgress}
+                                            lessonID={props.match.params.lessonID} {...props} />
                                     )}/>
                                     <Route path="/debug/:problemID" render={(props) => (
                                         <DebugPlatform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                                       loadProgress={this.loadProgress}
-                                                       removeProgress={this.removeProgress}
-                                                       problemID={props.match.params.problemID} {...props} />
+                                            loadProgress={this.loadProgress}
+                                            removeProgress={this.removeProgress}
+                                            problemID={props.match.params.problemID} {...props} />
                                     )}/>
                                     <Route path="/posts" render={(props) => (
                                         <Posts key={Date.now()} {...props} />
