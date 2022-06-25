@@ -9,7 +9,7 @@ class MultipleChoice extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: null,
+            value: props.defaultValue || null,
         };
     }
 
