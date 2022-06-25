@@ -1,5 +1,6 @@
 import { variabilize } from './variabilize.js';
 import insert from "../util/strInsert";
+import { parseMatrixTex } from "../util/parseMatrixTex";
 
 const KAS = require('../kas.js');
 
@@ -75,18 +76,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
             if (/\\begin{[a-zA-Z]?matrix}/.test(actual)) {
                 console.debug(`attempt: ${attempt} vs. actual:`, actual)
                 const studentMatrix = JSON.parse(attempt)
-                const solutionMatrices = []
-
-                ;(Array.isArray(actual) ? actual : [actual]).forEach(sol => {
-                    const _start = sol.indexOf("matrix} ") + "matrix} ".length
-                    const _end = sol.indexOf("\\end{")
-                    let _solutionMatrix = sol
-                        .substring(_start, _end)
-                        .trim()
-                        .split("\\\\")
-                        .map(row => row.split("&").map(val => val.trim()))
-                    solutionMatrices.push(_solutionMatrix)
-                })
+                const solutionMatrices = parseMatrixTex(actual);
 
                 console.debug('solutions: ', solutionMatrices)
                 correctAnswer = solutionMatrices.some(matrix => {

@@ -14,9 +14,9 @@ class GridInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            gridState: this.genEmptyGrid(0, 0),
-            numRows: this.props.numRows || 0,
-            numCols: this.props.numCols || 0,
+            gridState: props.defaultValue || this.genEmptyGrid(0, 0),
+            numRows: props.numRows || 0,
+            numCols: props.numCols || 0,
             openChangeDimensions: false
         };
 
