@@ -9,10 +9,13 @@ import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
 import { shuffleArray } from "../../util/shuffleArray";
-import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS } from "../../config/config";
+import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS, ThemeContext } from "../../config/config";
 import { stagingProp } from "../../util/addStagingProperty";
+import { parseMatrixTex } from "../../util/parseMatrixTex";
 
 class ProblemInput extends React.Component {
+    static contextType = ThemeContext;
+
     constructor(props) {
         super(props);
 
@@ -75,8 +78,10 @@ class ProblemInput extends React.Component {
 
     render() {
         const { classes, state, index } = this.props;
+        const { use_expanded_view, debug } = this.context;
+        let { problemType, stepAnswer, hintAnswer } = this.props.step;
 
-        let { problemType } = this.props.step;
+        const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
 
         if (this.isMatrixInput()) {
             problemType = "MatrixInput"
@@ -95,7 +100,7 @@ class ProblemInput extends React.Component {
                             })}
                         >
                             <EquationEditor
-                                value={state.inputVal}
+                                value={(use_expanded_view && debug) ? correctAnswer : state.inputVal}
                                 onChange={this.onEquationChange}
                                 style={{ width: "100%" }}
                                 autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
@@ -123,7 +128,11 @@ class ProblemInput extends React.Component {
                                 classes: {
                                     notchedOutline: ((state.isCorrect !== false && state.usedHints) ? classes.muiUsedHint : null)
                                 }
-                            }}>
+                            }}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: correctAnswer
+                            } : {}}
+                        >
                         </TextField>
                     )}
                     {problemType === "MultipleChoice" && (
@@ -131,6 +140,9 @@ class ProblemInput extends React.Component {
                             onChange={(evt) => this.props.editInput(evt)}
                             choices={shuffleArray(this.props.step.choices, this.props.seed)}
                             index={index}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: correctAnswer
+                            } : {}}
                         />
                     )}
                     {problemType === "GridInput" && (
@@ -141,6 +153,9 @@ class ProblemInput extends React.Component {
                             context={this.props.context}
                             classes={this.props.classes}
                             index={index}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: parseMatrixTex(correctAnswer)[0]
+                            } : {}}
                         />
                     )}
                     {problemType === "MatrixInput" && (
@@ -151,6 +166,9 @@ class ProblemInput extends React.Component {
                             context={this.props.context}
                             classes={this.props.classes}
                             index={index}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: parseMatrixTex(correctAnswer)[0]
+                            } : {}}
                         />
                     )}
                 </Grid>

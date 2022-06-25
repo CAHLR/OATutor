@@ -105,15 +105,17 @@ class HintSystem extends React.Component {
     }
 
     render() {
-        const { classes, index } = this.props;
+        const { classes, index, hints, problemID } = this.props;
+        const { currentExpanded, showSubHints } = this.state;
+        const { debug, use_expanded_view } = this.context;
         return (
             <div className={classes.root}>
-                {this.props.hints.map((hint, i) =>
+                {hints.map((hint, i) =>
                     <Accordion key={i}
-                               onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
-                               disabled={this.isLocked(i)}
-                               expanded={this.state.currentExpanded === i}
-                               defaultExpanded={false}>
+                        onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
+                        disabled={this.isLocked(i) && !(use_expanded_view && debug)}
+                        expanded={currentExpanded === i || (use_expanded_view && debug)}
+                        defaultExpanded={false}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon/>}
                             aria-controls="panel1a-content"
@@ -123,11 +125,11 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
+                                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography component={'span'} style={{ width: "100%" }}>
-                                {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
+                                {renderText(hint.text, problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
                                 {hint.type === "scaffold" ?
                                     <div>
                                         <Spacer/>
@@ -138,12 +140,12 @@ class HintSystem extends React.Component {
                                                      hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
                                                      toggleHints={(event) => this.toggleSubHints(event, i)}/>
                                     </div> : ""}
-                                {this.state.showSubHints[i] && hint.subHints !== undefined ?
+                                {(showSubHints[i] || (use_expanded_view && debug)) && hint.subHints !== undefined ?
                                     <div className="SubHints">
                                         <Spacer/>
                                         <ErrorBoundary componentName={"SubHintSystem"}>
                                             <SubHintSystem
-                                                problemID={this.props.problemID}
+                                                problemID={problemID}
                                                 hints={hint.subHints}
                                                 unlockHint={this.unlockSubHint}
                                                 hintStatus={this.state.subHintsFinished[i]}
