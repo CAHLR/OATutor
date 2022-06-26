@@ -37,7 +37,7 @@ const DO_LOG_DATA = true;
 const DO_LOG_MOUSE_DATA = false;
 
 /**
- * TODO: document the usage of this boolean option
+ * If reach bottom of provided hints, give correct answer to question
  * @type {boolean}
  */
 const ENABLE_BOTTOM_OUT_HINTS = true;
