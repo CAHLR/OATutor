@@ -1,1 +1,1 @@
-import hints from "./a9ae528add22d-index.js"; const step = {id: "a9ae528add22d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "9___-21", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./a9ae528add22d-index.js"; const step = {id: "a9ae528add22d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$9___-21$$", stepBody: "", choices: ["<", ">"], answerType: "string", hints: hints, variabilization: {}}; export {step};
