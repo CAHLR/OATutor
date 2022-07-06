@@ -310,8 +310,8 @@ app.post('/postScore', jwtMiddleware({
     const queryRef = submissionsRef.where('semester', '==', semester)
                         .where('canvas_user_id', '==', canvasUserId)
                         .where('lesson', '==', lesson)
-                        .orderBy('problemID', 'asc')
-                        .orderBy('time_stamp', 'asc');
+                        .orderBy('time_stamp', 'asc')
+                        .orderBy('problemID', 'asc');
     const result = await queryRef.get();
 
     var formattedText = `
@@ -336,28 +336,70 @@ app.post('/postScore', jwtMiddleware({
     var lastStepID = "";
     var lastTime = -1;
 
+    // get time of first action
+    const firstQueryRef = submissionsRef.where('semester', '==', semester)
+                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lesson', '==', lesson)
+                        .orderBy('time_stamp', 'asc')
+                        .orderBy('problemID', 'asc')
+                        .limit(1);
+    const firstResult = await firstQueryRef.get();
+
+    firstResult.forEach(action => {
+        let data = action.data();
+        lastTime = data["time_stamp"];
+        console.log("first time:", data["time_stamp"]);
+    })
+
+
+    // get time of last action before this lesson
+    const prevQueryRef = submissionsRef.where('canvas_user_id', '==', canvasUserId)
+                        .where('time_stamp', '<', lastTime)
+                        .orderBy('time_stamp', 'desc')
+                        .limit(1);
+    const prevResult = await prevQueryRef.get();
+
+    console.log("size:", prevResult.size)
+    if (prevResult.size == 0) {
+        lastTime = -1;
+    } else {
+        prevResult.forEach(action => {
+            let data = action.data();
+            console.log("last time:", data["time_stamp"]);
+            lastTime = data["time_stamp"];
+        })
+    }
+    
+
     result.forEach(action => {
         let data = action.data();
         var problemID = "";
         if (data["problemID"] != lastProblemID) {
             problemID = `<a href="https://cahlr.github.io/OATutor-Content-Staging/#/debug/${data['problemID']}">${data['problemID']}</a>`
             lastProblemID = data["problemID"];
-            lastTime = -1;
         }
         var stepID = "";
         if (data["stepID"] != lastStepID) {
             stepID = data["stepID"];
             lastStepID = data["stepID"];
         }
+
         let eventType = data["eventType"];
+
         let input = data["input"] ? data["input"] : (data["hintInput"] ? data["hintInput"] : "");
-        let time = (lastTime == -1) ? "N/A" : (data["time_stamp"] - lastTime) / 1000;
+
+        var time = (lastTime == -1) ? "N/A" : (data["time_stamp"] - lastTime) / 1000;
+        if (time > 300) {
+            time = ">300";
+        }
+        
         var correct = null;
         if (data["isCorrect"] || data["hintIsCorrect"]) {
             correct = true;
         } else if (data["isCorrect"] == false || data["hintIsCorrect"] == false ) {
             correct = false;
         }
+
         let bgColor = correct ? "correct" : (correct !== null ? "wrong" : "na")
         lastTime = data["time_stamp"];
 
