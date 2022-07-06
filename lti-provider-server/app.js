@@ -316,8 +316,10 @@ app.post('/postScore', jwtMiddleware({
 
     var formattedText = `
         <style>
-            .tb { border-collapse: separate; text-align: center; }
-            .tb th, .tb td { padding: 20px; border: solid 1px #777; }
+            .tb { border-collapse: collapse; text-align: center; }
+            .tb th, .tb td { padding: 10px; border: solid 1px #777; }
+            .correct { background-color: #bde9ba; }
+            .wrong { background-color: #f2a6a2; }
         </style>
         <table class="tb">
             <thead><tr>
@@ -348,8 +350,15 @@ app.post('/postScore', jwtMiddleware({
             lastStepID = data["stepID"];
         }
         let eventType = data["eventType"];
-        let input = data["input"] ? data["input"] : "";
+        let input = data["input"] ? data["input"] : (data["hintInput"] ? data["hintInput"] : "");
         let time = (lastTime == -1) ? "N/A" : (data["time_stamp"] - lastTime) / 1000;
+        var correct = null;
+        if (data["isCorrect"] || data["hintIsCorrect"]) {
+            correct = true;
+        } else if (data["isCorrect"] == false || data["hintIsCorrect"] == false ) {
+            correct = false;
+        }
+        let bgColor = correct ? "correct" : (correct !== null ? "wrong" : "na")
         lastTime = data["time_stamp"];
 
         formattedText += `
@@ -357,7 +366,7 @@ app.post('/postScore', jwtMiddleware({
             <td>${problemID}</td>
             <td>${stepID}</td>
             <td>${eventType}</td>
-            <td>${input}</td>
+            <td class="${bgColor}">${input}</td>
             <td>${time}</td>
         </tr>
         `;
