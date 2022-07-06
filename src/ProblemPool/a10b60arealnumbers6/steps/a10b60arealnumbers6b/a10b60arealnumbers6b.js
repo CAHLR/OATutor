@@ -1,1 +1,1 @@
-import hints from "./a10b60arealnumbers6b-index.js"; const step = {id: "a10b60arealnumbers6b", stepAnswer: ["$$|x| \\sqrt[4]{x^3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a10b60arealnumbers6b-index.js"; const step = {id: "a10b60arealnumbers6b", stepAnswer: ["abs(x)*sqrt(4,x**3)"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
