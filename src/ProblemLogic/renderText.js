@@ -68,35 +68,24 @@ function parseForFillInQuestions(str) {
     let result = []
     strParts.forEach((part, idx) => {
         if (idx > 0) {
-            result.push(<span key={Math.random() * 2 ** 16} style={{
+            result.push(<span key={Math.random() * 2 ** 16} aria-label={"fill in the blank"} style={{
                 // TODO: choose between the following two styles
                 marginLeft: "0.5ch",
                 marginRight: "0.5ch",
-                paddingLeft: "2.6ch",
-                paddingRight: "2.6ch",
+                paddingLeft: "2.5ch",
+                paddingRight: "2.5ch",
                 position: "relative",
                 background: "rgb(242,243,244)",
                 borderRadius: "0.6ch",
             }}>
-                {/*<div style={{*/}
-                {/*    // style 1*/}
-                {/*    position: "absolute",*/}
-                {/*    width: "100%",*/}
-                {/*    top: "7%",*/}
-                {/*    bottom: "6%",*/}
-                {/*    left: 0,*/}
-                {/*    right: 0,*/}
-                {/*    borderRadius: "0.8ch",*/}
-                {/*    border: "2px solid rgb(100,100,100)",*/}
-                {/*    background: "rgb(237,238,239)"*/}
-                {/*}}/>*/}
                 <div style={{
-                    // style 2
                     position: "absolute",
-                    bottom: 0.5,
-                    left: "0.2ch",
-                    right: "0.2ch",
-                    borderBottom: "2px solid rgb(100,100,100)",
+                    bottom: 3.5,
+                    left: 4,
+                    right: 4,
+                    height: 1.5,
+                    borderRadius: "0.6ch",
+                    background: "rgb(75,76,77)"
                 }}/>
             </span>)
         }
