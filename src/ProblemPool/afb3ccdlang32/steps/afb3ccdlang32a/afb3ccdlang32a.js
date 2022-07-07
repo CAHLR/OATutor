@@ -1,1 +1,1 @@
-import hints from "./afb3ccdlang32a-index.js"; const step = {id: "afb3ccdlang32a", stepAnswer: ["53"], problemType: "TextBox", stepTitle: "What is $$a^2+b^2$$ when $$a=3, b=8$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./afb3ccdlang32a-index.js"; const step = {id: "afb3ccdlang32a", stepAnswer: ["73"], problemType: "TextBox", stepTitle: "What is $$a^2+b^2$$ when $$a=3, b=8$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

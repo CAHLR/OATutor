@@ -1,1 +1,1 @@
-import hints from "./a35ba99cou9a-index.js"; const step = {id: "a35ba99cou9a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "How many outcomes are possible from tossing a pair of coins?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a35ba99cou9a-index.js"; const step = {id: "a35ba99cou9a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "How many outcomes are possible from tossing a pair of coins?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
