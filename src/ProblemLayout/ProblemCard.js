@@ -11,7 +11,7 @@ import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
 import styles from './commonStyles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
+import { chooseVariables, renderText } from '../ProblemLogic/renderText.js';
 import { ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/config.js';
 
 import "./ProblemCard.css";
@@ -92,20 +92,26 @@ class ProblemCard extends React.Component {
 
     submit = () => {
         console.debug('submitting problem')
-        const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.step.stepAnswer, this.step.answerType, this.step.precision, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed));
+        const { inputVal, hintsFinished } = this.state;
+        const { variabilization, knowledgeComponents, precision, stepAnswer, answerType } = this.step;
+        const { seed, problemVars, problemID, courseName, answerMade, lesson } = this.props;
+
+        const [parsed, correctAnswer] = checkAnswer(inputVal, stepAnswer, answerType, precision, chooseVariables(Object.assign({}, problemVars, variabilization), seed));
 
         this.context.firebase.log(
             parsed,
-            this.props.problemID,
+            problemID,
             this.step,
             null,
             correctAnswer,
-            this.state.hintsFinished,
+            hintsFinished,
             "answerStep",
-            chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
-            this.props.lesson,
-            this.props.courseName
-        );
+            chooseVariables(Object.assign({}, problemVars, variabilization), seed),
+            lesson,
+            courseName
+        ).then(r => {
+
+        });
 
         if (correctAnswer) {
             toast.success("Correct Answer!", {
@@ -121,7 +127,7 @@ class ProblemCard extends React.Component {
             isCorrect: correctAnswer,
             checkMarkOpacity: correctAnswer === true ? '100' : '0'
         });
-        this.props.answerMade(this.index, this.step.knowledgeComponents, correctAnswer);
+        answerMade(this.index, knowledgeComponents, correctAnswer);
     }
 
     editInput = (event) => {
@@ -148,28 +154,34 @@ class ProblemCard extends React.Component {
 
     unlockHint = (hintNum, hintType) => {
         // Mark question as wrong if hints are used (on the first time)
-        if (this.state.hintsFinished.reduce((a, b) => a + b) === 0 && this.state.isCorrect !== true) {
+        const { seed, problemVars, problemID, courseName, answerMade, lesson } = this.props;
+        const { isCorrect, hintsFinished } = this.state;
+        const { knowledgeComponents, variabilization } = this.step;
+
+        if (hintsFinished.reduce((a, b) => a + b) === 0 && isCorrect !== true) {
             this.setState({ usedHints: true });
-            this.props.answerMade(this.index, this.step.knowledgeComponents, false);
+            answerMade(this.index, knowledgeComponents, false);
         }
 
         // If the user has not opened a scaffold before, mark it as in-progress.
-        if (this.state.hintsFinished[hintNum] !== 1) {
+        if (hintsFinished[hintNum] !== 1) {
             this.setState(prevState => {
                 prevState.hintsFinished[hintNum] = (hintType !== "scaffold" ? 1 : 0.5);
                 return { hintsFinished: prevState.hintsFinished }
             }, () => {
-                this.context.firebase.log(
+                const { firebase } = this.context;
+
+                firebase.log(
                     null,
-                    this.props.problemID,
+                    problemID,
                     this.step,
                     this.hints[hintNum],
                     null,
-                    this.state.hintsFinished,
+                    hintsFinished,
                     "unlockHint",
-                    chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
-                    this.props.lesson,
-                    this.props.courseName
+                    chooseVariables(Object.assign({}, problemVars, variabilization), seed),
+                    lesson,
+                    courseName
                 );
             });
         }
