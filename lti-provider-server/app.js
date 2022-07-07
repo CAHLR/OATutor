@@ -297,14 +297,14 @@ app.post('/postScore', jwtMiddleware({
 
     const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)   
     
+
+    // let semester = calculateSemester(Date.now());
+    // let canvasUserId = user_id;
+    // let lesson = lessonName;
     let semester = 'Spring 2022';
     let lesson = '1.1 Use the Language of Algebra';
     let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
     const submissionsRef = firestoredb.collection('problemSubmissions');
-    
-    // let semester = calculateSemester(Date.now());
-    // let canvasUserId = user_id;
-    // let lesson = lessonName;
     // const submissionsRef = firestoredb.collection('development_problemSubmissions');
 
     const queryRef = submissionsRef.where('semester', '==', semester)
@@ -348,7 +348,6 @@ app.post('/postScore', jwtMiddleware({
     firstResult.forEach(action => {
         let data = action.data();
         lastTime = data["time_stamp"];
-        console.log("first time:", data["time_stamp"]);
     })
 
 
@@ -359,13 +358,11 @@ app.post('/postScore', jwtMiddleware({
                         .limit(1);
     const prevResult = await prevQueryRef.get();
 
-    console.log("size:", prevResult.size)
     if (prevResult.size == 0) {
         lastTime = -1;
     } else {
         prevResult.forEach(action => {
             let data = action.data();
-            console.log("last time:", data["time_stamp"]);
             lastTime = data["time_stamp"];
         })
     }
@@ -388,7 +385,7 @@ app.post('/postScore', jwtMiddleware({
 
         let input = data["input"] ? data["input"] : (data["hintInput"] ? data["hintInput"] : "");
 
-        var time = (lastTime == -1) ? "N/A" : (data["time_stamp"] - lastTime) / 1000;
+        var time = (lastTime == -1) ? "N/A" : Math.round((data["time_stamp"] - lastTime) / 1000);
         if (time > 300) {
             time = ">300";
         }
