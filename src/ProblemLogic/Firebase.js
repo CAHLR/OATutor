@@ -101,6 +101,7 @@ class Firebase {
         )
     }
 
+    // TODO: consider using just the context instead
     log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
         if (!DO_LOG_DATA) return
         console.debug("trying to log hint: ", hint, "step", step)
