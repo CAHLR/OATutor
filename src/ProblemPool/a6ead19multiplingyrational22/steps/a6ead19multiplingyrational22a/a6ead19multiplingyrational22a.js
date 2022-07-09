@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplingyrational22a-index.js"; const step = {id: "a6ead19multiplingyrational22a", stepAnswer: ["r+5/2r(r+2)"], problemType: "TextBox", stepTitle: "$$\\left(\\frac{4r}{r^2}-3r-10\\right) \\left(r^2-\\frac{25}{8} r^2\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

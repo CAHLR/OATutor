@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul20a-index.js"; const step = {id: "a1f9370SolvingFormul20a", stepAnswer: ["$$d_2=\\frac{2A}{d_1}$$"], problemType: "TextBox", stepTitle: "$$A=\\frac{d_1 d_2}{2}$$ for $$d_2$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

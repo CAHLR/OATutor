@@ -1,1 +1,0 @@
-import hints from "./abd4034poly6a-index.js"; const step = {id: "abd4034poly6a", stepAnswer: ["$$\\left(-6y^2\\right)+3y$$"], problemType: "TextBox", stepTitle: "$$\\frac{48y^4-24y^3}{\\left(-8y^2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

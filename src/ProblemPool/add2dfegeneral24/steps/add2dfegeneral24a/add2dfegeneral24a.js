@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral24a-index.js"; const step = {id: "add2dfegeneral24a", stepAnswer: ["$$3\\left(9y^2+16\\right)$$"], problemType: "TextBox", stepTitle: "$$27y^2+48$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

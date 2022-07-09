@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly4a-index.js"; const step = {id: "a251a50MultiplyPoly4a", stepAnswer: ["$$-8y^3-6y^2+10y$$"], problemType: "TextBox", stepTitle: "a) $$-2y\\left(4y^2+3y-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aded0eclinear5b-index.js"; const step = {id: "aded0eclinear5b", stepAnswer: ["[-5, -4)"], problemType: "MultipleChoice", stepTitle: "$$-5 \\leq x<-4$$", stepBody: "", choices: ["(-5,-4)", "(-5, -4]", "[-5, -4)", "[-5, -4]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

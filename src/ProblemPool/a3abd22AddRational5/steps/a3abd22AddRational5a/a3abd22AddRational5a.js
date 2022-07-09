@@ -1,1 +1,0 @@
-import hints from "./a3abd22AddRational5a-index.js"; const step = {id: "a3abd22AddRational5a", stepAnswer: ["$$\\frac{x-11}{x-2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4x^2-11x+8}{x^2-3x+2}-\\frac{3x^2+x-3}{x^2-3x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

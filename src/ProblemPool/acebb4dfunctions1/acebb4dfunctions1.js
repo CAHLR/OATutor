@@ -1,1 +1,0 @@
-import steps from "./acebb4dfunctions1-index.js"; const problem = {id: "acebb4dfunctions1", title: "Evaluate at f(2)", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.5 Relations and Functions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

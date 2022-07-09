@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities13a-index.js"; const step = {id: "a65ae04inequalities13a", stepAnswer: ["$$x=3-\\frac{11}{3}$$"], problemType: "MultipleChoice", stepTitle: "$$|3x+1|-3=7$$", stepBody: "", choices: ["$$x=3-\\frac{11}{3}$$", "$$x=3-\\frac{11}{3} Ix=2-\\frac{4}{3} Ix=-6, -3Ix=7, 8$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

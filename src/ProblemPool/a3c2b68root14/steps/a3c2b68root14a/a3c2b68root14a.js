@@ -1,1 +1,0 @@
-import hints from "./a3c2b68root14a-index.js"; const step = {id: "a3c2b68root14a", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "$$\\left(3-2\\sqrt{5}\\right) \\left(3+2\\sqrt{5}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

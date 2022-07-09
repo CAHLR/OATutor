@@ -1,1 +1,0 @@
-import steps from "./ab303f8factoring2-index.js"; const problem = {id: "ab303f8factoring2", title: "Factor Perfect Square Trinomials", body: "Factor the following perfect square trinomials", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.3 Factor Special Products", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

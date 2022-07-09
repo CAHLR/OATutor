@@ -1,1 +1,0 @@
-import hints from "./af5fe5dSolveapp10a-index.js"; const step = {id: "af5fe5dSolveapp10a", stepAnswer: ["$$\\frac{11}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{q-2}{2}=\\frac{2q-7}{18}$$", stepBody: "Solve for q.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

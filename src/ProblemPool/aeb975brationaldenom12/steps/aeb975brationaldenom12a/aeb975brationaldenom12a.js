@@ -1,1 +1,0 @@
-import hints from "./aeb975brationaldenom12a-index.js"; const step = {id: "aeb975brationaldenom12a", stepAnswer: ["$$\\frac{4mn+7}{8m^2 n}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{2m}+\\frac{7}{8m^2 n}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

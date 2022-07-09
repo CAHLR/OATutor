@@ -1,1 +1,0 @@
-import hints from "./a54f58cgraphineq23a-index.js"; const step = {id: "a54f58cgraphineq23a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is (1,-3) a solution to the system of inequalities $$6x-5y<20$$, $$-2x+7y>-8$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

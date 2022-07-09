@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring8b-index.js"; const step = {id: "ab303f8factoring8b", stepAnswer: ["$$\\left(4x+1\\right) \\left(4x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$16x^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

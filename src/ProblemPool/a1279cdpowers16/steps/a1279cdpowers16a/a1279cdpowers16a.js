@@ -1,1 +1,0 @@
-import hints from "./a1279cdpowers16a-index.js"; const step = {id: "a1279cdpowers16a", stepAnswer: ["$$y^{11}$$"], problemType: "TextBox", stepTitle: "$${\\left(y^5\\right)}^{y^6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

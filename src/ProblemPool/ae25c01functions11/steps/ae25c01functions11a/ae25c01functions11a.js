@@ -1,1 +1,0 @@
-import hints from "./ae25c01functions11a-index.js"; const step = {id: "ae25c01functions11a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=-x-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

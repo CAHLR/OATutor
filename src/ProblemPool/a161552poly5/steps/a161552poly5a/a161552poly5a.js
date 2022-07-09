@@ -1,1 +1,0 @@
-import hints from "./a161552poly5a-index.js"; const step = {id: "a161552poly5a", stepAnswer: ["$$\\frac{\\left(-9b\\right)}{a^4}$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(-63a^8 b^3\\right)}{7a^{12} b^2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

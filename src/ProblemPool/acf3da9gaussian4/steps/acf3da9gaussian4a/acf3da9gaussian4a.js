@@ -1,1 +1,0 @@
-import hints from "./acf3da9gaussian4a-index.js"; const step = {id: "acf3da9gaussian4a", stepAnswer: ["(x-y+z=5),(2x-y+3z=1),(y+z=-9)"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 1 & -1 & 1 & 5 \\\\ 2 & -1 & 3 & 1 \\\\ 0 & 1 & 1 & -9 \\end{bmatrix}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

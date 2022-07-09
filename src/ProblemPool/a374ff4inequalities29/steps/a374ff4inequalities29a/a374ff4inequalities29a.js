@@ -1,1 +1,0 @@
-import hints from "./a374ff4inequalities29a-index.js"; const step = {id: "a374ff4inequalities29a", stepAnswer: ["-1/4,(0,2)"], problemType: "TextBox", stepTitle: "$$x+4y=8$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

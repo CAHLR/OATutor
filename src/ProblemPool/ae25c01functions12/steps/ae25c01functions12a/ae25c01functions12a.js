@@ -1,1 +1,0 @@
-import hints from "./ae25c01functions12a-index.js"; const step = {id: "ae25c01functions12a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=-4x-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
