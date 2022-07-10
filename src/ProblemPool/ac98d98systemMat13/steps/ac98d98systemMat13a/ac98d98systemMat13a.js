@@ -1,0 +1,1 @@
+import hints from "./ac98d98systemMat13a-index.js"; const step = {id: "ac98d98systemMat13a", stepAnswer: ["$$\\begin{bmatrix} 3 & -2 & 1 \\\\ 6 & -4 & 3 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Interchange rows 1 and 2.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

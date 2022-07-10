@@ -1,0 +1,1 @@
+import hints from "./a3abd22AddRational15a-index.js"; const step = {id: "a3abd22AddRational15a", stepAnswer: ["$$\\frac{-3}{z-3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{z+3}-\\frac{6z}{z^2-9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

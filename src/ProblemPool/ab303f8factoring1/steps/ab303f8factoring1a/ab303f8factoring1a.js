@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring1a-index.js"; const step = {id: "ab303f8factoring1a", stepAnswer: ["$${\\left(3x+2\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$9x^2+12x+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac9802fsimproots20a-index.js"; const step = {id: "ac9802fsimproots20a", stepAnswer: ["$$|p|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{p^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

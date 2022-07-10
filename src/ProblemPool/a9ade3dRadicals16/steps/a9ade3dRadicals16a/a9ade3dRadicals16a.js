@@ -1,0 +1,1 @@
+import hints from "./a9ade3dRadicals16a-index.js"; const step = {id: "a9ade3dRadicals16a", stepAnswer: ["$$6|n^3| \\sqrt{2n}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{72n^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

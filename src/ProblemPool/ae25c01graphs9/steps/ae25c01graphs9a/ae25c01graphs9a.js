@@ -1,0 +1,1 @@
+import hints from "./ae25c01graphs9a-index.js"; const step = {id: "ae25c01graphs9a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find $$\\operatorname{fnegneg}\\left(\\frac{3\\pi}{2}\\right)$$", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

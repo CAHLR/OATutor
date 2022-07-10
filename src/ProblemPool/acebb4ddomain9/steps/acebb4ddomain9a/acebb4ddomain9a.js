@@ -1,0 +1,1 @@
+import hints from "./acebb4ddomain9a-index.js"; const step = {id: "acebb4ddomain9a", stepAnswer: ["{January 12, February 3, April 25, May 10, May 23, July 24, August 2, September 15}"], problemType: "TextBox", stepTitle: "For the mapping shown, find the range.", stepBody: "##figure1.gif## ", answerType: "string", hints: hints, variabilization: {}}; export {step};

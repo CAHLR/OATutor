@@ -1,0 +1,1 @@
+var hints = [{id: "a54f58cgraphineq1b-h1", type: "hint", dependencies: [], title: "Plugging in x and y", text: "(3,1) is not a solution because both equations are not true when $$x=3$$ and $$y=1$$ are plugged in.\n##figure2.gif##", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import steps from "./aafbadeintercepts2-index.js"; const problem = {id: "aafbadeintercepts2", title: "Intercepts", body: "Find x and y intercepts of the line.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.3 Graph with Intercepts", courseName: "Openstax: Elementary Algebra"}; export { problem };

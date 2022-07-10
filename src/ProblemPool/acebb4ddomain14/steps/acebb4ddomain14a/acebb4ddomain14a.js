@@ -1,0 +1,1 @@
+import hints from "./acebb4ddomain14a-index.js"; const step = {id: "acebb4ddomain14a", stepAnswer: ["{Maria, Armando, Cynthia, Kelly, Rachel}"], problemType: "TextBox", stepTitle: "For the mapping shown, find the domain.", stepBody: "##figure1.gif## ", answerType: "string", hints: hints, variabilization: {}}; export {step};

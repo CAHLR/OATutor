@@ -1,0 +1,1 @@
+import hints from "./a746c1bFactoring14a-index.js"; const step = {id: "a746c1bFactoring14a", stepAnswer: ["$$6\\left(x+b\\right) \\left(x-2c\\right)$$"], problemType: "TextBox", stepTitle: "$$6x^2-12x c+6b x-12b c$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

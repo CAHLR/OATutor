@@ -1,0 +1,1 @@
+import hints from "./a8d511eDeterminant10a-index.js"; const step = {id: "a8d511eDeterminant10a", stepAnswer: ["inconsistent"], problemType: "MultipleChoice", stepTitle: "$$x+3y=4;$$ $$-2x-6y=3$$", stepBody: "", choices: ["inconsistent", "dependent"], answerType: "string", hints: hints, variabilization: {}}; export {step};

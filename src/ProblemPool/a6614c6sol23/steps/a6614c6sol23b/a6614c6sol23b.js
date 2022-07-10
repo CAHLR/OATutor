@@ -1,0 +1,1 @@
+import hints from "./a6614c6sol23b-index.js"; const step = {id: "a6614c6sol23b", stepAnswer: ["1000"], problemType: "TextBox", stepTitle: "How much sodium is in a cup of cottage cheese?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

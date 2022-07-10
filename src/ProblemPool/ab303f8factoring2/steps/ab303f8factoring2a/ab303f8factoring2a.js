@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring2a-index.js"; const step = {id: "ab303f8factoring2a", stepAnswer: ["$${\\left(2x+3\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$4x^2+12x+9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

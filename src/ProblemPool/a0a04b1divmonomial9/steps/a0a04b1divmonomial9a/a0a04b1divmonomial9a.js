@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial9a-index.js"; const step = {id: "a0a04b1divmonomial9a", stepAnswer: ["$$\\frac{1}{p^6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{p^9}{p^{17}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

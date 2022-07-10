@@ -1,0 +1,1 @@
+import hints from "./a012999exa7a-index.js"; const step = {id: "a012999exa7a", stepAnswer: ["$$14x^2+7xy$$"], problemType: "TextBox", stepTitle: "$$7x\\left(2x+y\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

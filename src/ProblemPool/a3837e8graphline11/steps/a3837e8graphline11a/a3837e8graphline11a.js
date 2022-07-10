@@ -1,0 +1,1 @@
+import hints from "./a3837e8graphline11a-index.js"; const step = {id: "a3837e8graphline11a", stepAnswer: ["1/3,(0,-1)"], problemType: "TextBox", stepTitle: "$$y=\\frac{1}{3} x-1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

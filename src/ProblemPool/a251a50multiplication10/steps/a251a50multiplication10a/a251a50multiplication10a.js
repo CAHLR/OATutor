@@ -1,0 +1,1 @@
+import hints from "./a251a50multiplication10a-index.js"; const step = {id: "a251a50multiplication10a", stepAnswer: ["$$y^3+3y^2-4y-12$$"], problemType: "TextBox", stepTitle: "$$\\left(y^2-4\\right) \\left(y+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

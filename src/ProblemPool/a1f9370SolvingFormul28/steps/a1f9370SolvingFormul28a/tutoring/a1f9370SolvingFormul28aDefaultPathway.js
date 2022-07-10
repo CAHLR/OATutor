@@ -1,0 +1,1 @@
+var hints = [{id: "a1f9370SolvingFormul28a-h1", type: "hint", dependencies: [], title: "Subtract", text: "Subtract 2W from both sides to isolate L.", variabilization: {}}, {id: "a1f9370SolvingFormul28a-h2", type: "hint", dependencies: ["a1f9370SolvingFormul28a-h1"], title: "Divide", text: "Divide on both sides by 2.", variabilization: {}}, ]; export {hints};
