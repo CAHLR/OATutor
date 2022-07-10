@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric9a-index.js"; const step = {id: "a18d102geometric9a", stepAnswer: ["$$\\frac{1}{16384}$$"], problemType: "TextBox", stepTitle: "The first term is 256 and the common ratio is $$r=\\frac{1}{4}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

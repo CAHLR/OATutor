@@ -1,0 +1,1 @@
+import hints from "./a184b1aQuadratic14a-index.js"; const step = {id: "a184b1aQuadratic14a", stepAnswer: ["2 real solutions"], problemType: "MultipleChoice", stepTitle: "a) $${\\left(3x\\right)}^2+7x-9=0$$", stepBody: "", choices: ["2 real solutions", "1 real solution", "2 complex solutions"], answerType: "string", hints: hints, variabilization: {}}; export {step};

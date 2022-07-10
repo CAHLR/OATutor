@@ -1,0 +1,1 @@
+import hints from "./abe88c3log10a-index.js"; const step = {id: "abe88c3log10a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Solving Logorithms.", stepBody: "$$\\log_{7}\\left(7^4\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc21a-index.js"; const step = {id: "a6b9f29radfunc21a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{4x+1}$$, find f(2).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

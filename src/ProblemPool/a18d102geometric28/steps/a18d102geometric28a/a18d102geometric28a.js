@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric28a-index.js"; const step = {id: "a18d102geometric28a", stepAnswer: ["472392"], problemType: "TextBox", stepTitle: "The first term is $$a_1=8$$ and the common ratio is $$r=3$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

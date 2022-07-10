@@ -1,0 +1,1 @@
+import hints from "./af4e405log29a-index.js"; const step = {id: "af4e405log29a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$\\log_{2}\\left(6x+2\\right)=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

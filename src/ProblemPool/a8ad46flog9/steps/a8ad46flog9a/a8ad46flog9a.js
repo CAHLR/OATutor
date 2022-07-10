@@ -1,0 +1,1 @@
+import hints from "./a8ad46flog9a-index.js"; const step = {id: "a8ad46flog9a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$\\log_{10}\\left(x-2\\right)-\\log_{10}\\left(4x+16\\right)=\\log_{10}\\left(\\frac{1}{x}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

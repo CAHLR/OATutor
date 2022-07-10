@@ -1,0 +1,1 @@
+import hints from "./a47ce72graphquad19a-index.js"; const step = {id: "a47ce72graphquad19a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$f(x)={\\left(x-4\\right)}^2-2$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

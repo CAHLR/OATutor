@@ -1,0 +1,1 @@
+import hints from "./a391214Sequ11a-index.js"; const step = {id: "a391214Sequ11a", stepAnswer: ["an $$=$$ 3n"], problemType: "TextBox", stepTitle: "Find a general term for the sequence", stepBody: "Find a general term for the sequence whose first five terms are shown. 3, 6, 9, 12, 15, …", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./af4e405log4b-index.js"; const step = {id: "af4e405log4b", stepAnswer: ["$$1=4^0$$"], problemType: "MultipleChoice", stepTitle: "$$0=\\log_{4}\\left(1\\right)$$", stepBody: "", choices: ["$$1=4^0$$", "$$0=4^1$$", "$$4=1^0$$", "$$0=4^1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

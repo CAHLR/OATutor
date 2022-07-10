@@ -1,0 +1,1 @@
+import hints from "./abe88c3log1a-index.js"; const step = {id: "abe88c3log1a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Solving Logorithms.", stepBody: "$$\\log_{8}\\left(1\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

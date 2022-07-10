@@ -1,0 +1,1 @@
+import hints from "./a664eb9bin22a-index.js"; const step = {id: "a664eb9bin22a", stepAnswer: ["$$x^4-12x^3+54x^2-108x^1+81$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x-3\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
