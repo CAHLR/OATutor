@@ -57,11 +57,11 @@ cd ../..
 
 ROOT_PATH=$(pwd)
 
-echo "Removing existing ProblemPool"
+echo "Removing existing ProblemPool from ROOT_PATH: ${ROOT_PATH}"
 
 rm -rf src/ProblemPool
 
-echo "Copying over new ProblemPool"
+echo "Copying over new ProblemPool from ${CONTENT_PATH}/${SUBDIRECTORY} to ${ROOT_PATH}"
 
 cp -a "$CONTENT_PATH/$SUBDIRECTORY" src/ProblemPool
 
