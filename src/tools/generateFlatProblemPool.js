@@ -72,7 +72,9 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
     await rm(staticFiguresPath, { recursive: true }).catch(err => {
         console.debug(err)
         console.error('error removing existing figures')
-        process.exit(1)
+        if (err.code !== 'ENOENT') {
+            process.exit(1)
+        }
     })
 
     const problems = await Promise.all(problemDirs.filter(d => d.length > 0).map(async problemDir => {
