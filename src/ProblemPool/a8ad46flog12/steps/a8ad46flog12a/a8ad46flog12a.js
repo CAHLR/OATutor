@@ -1,0 +1,1 @@
+import hints from "./a8ad46flog12a-index.js"; const step = {id: "a8ad46flog12a", stepAnswer: ["2.205"], problemType: "TextBox", stepTitle: "$$8^x=98$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a391214Sequ26a-index.js"; const step = {id: "a391214Sequ26a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "Expand the partial sum and find its value", stepBody: "Expand the partial sum and find its value: $$∑i=153i$$.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a88aae9QuadEq8a-index.js"; const step = {id: "a88aae9QuadEq8a", stepAnswer: ["[-3,5]"], problemType: "TextBox", stepTitle: "$$x^2-2x-15 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

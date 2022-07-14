@@ -1,0 +1,1 @@
+import hints from "./a391214Sequ29a-index.js"; const step = {id: "a391214Sequ29a", stepAnswer: ["$$\\frac{16}{3}$$"], problemType: "TextBox", stepTitle: "Expand the partial sum and find its value", stepBody: "Expand the partial sum and find its value: $$∑k=032k!$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

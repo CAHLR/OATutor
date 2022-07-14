@@ -1,0 +1,1 @@
+import hints from "./ae8c2acComplex30a-index.js"; const step = {id: "ae8c2acComplex30a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$i^{92}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

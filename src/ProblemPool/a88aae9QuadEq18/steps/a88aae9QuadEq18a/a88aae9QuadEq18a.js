@@ -1,0 +1,1 @@
+import hints from "./a88aae9QuadEq18a-index.js"; const step = {id: "a88aae9QuadEq18a", stepAnswer: ["(-inf,-6]&[3,inf)"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)-3x+18 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

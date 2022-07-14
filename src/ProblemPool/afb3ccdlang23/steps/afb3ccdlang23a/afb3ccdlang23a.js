@@ -1,1 +1,1 @@
-import hints from "./afb3ccdlang23a-index.js"; const step = {id: "afb3ccdlang23a", stepAnswer: ["41"], problemType: "TextBox", stepTitle: "Simplify $$5\\left(2+8\\times4\\right)-7^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./afb3ccdlang23a-index.js"; const step = {id: "afb3ccdlang23a", stepAnswer: ["121"], problemType: "TextBox", stepTitle: "Simplify $$5\\left(2+8\\times4\\right)-7^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

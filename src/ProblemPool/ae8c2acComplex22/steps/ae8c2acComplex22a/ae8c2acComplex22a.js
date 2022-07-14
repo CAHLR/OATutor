@@ -1,0 +1,1 @@
+import hints from "./ae8c2acComplex22a-index.js"; const step = {id: "ae8c2acComplex22a", stepAnswer: ["$$5+12i$$"], problemType: "TextBox", stepTitle: "$${\\left(3+2i\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

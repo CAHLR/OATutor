@@ -1,0 +1,1 @@
+import hints from "./a9ade3dRadicals19a-index.js"; const step = {id: "a9ade3dRadicals19a", stepAnswer: ["$$3|u| v^2 \\sqrt{7u v}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{63u^3 v^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

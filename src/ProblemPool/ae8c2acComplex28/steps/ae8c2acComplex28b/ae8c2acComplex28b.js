@@ -1,0 +1,1 @@
+import hints from "./ae8c2acComplex28b-index.js"; const step = {id: "ae8c2acComplex28b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$i^{86}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

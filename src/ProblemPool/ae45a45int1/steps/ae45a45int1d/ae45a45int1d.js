@@ -1,1 +1,1 @@
-import hints from "./ae45a45int1d-index.js"; const step = {id: "ae45a45int1d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "-(-13)___-|-13|", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};
+import hints from "./ae45a45int1d-index.js"; const step = {id: "ae45a45int1d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-(-13)___-|-13|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

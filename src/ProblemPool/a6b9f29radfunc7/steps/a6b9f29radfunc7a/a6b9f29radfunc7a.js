@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc7a-index.js"; const step = {id: "a6b9f29radfunc7a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "f(x)=sqrt(4, (3*x)+4), find f(4).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

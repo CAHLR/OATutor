@@ -1,0 +1,1 @@
+import hints from "./af4e405log17b-index.js"; const step = {id: "af4e405log17b", stepAnswer: ["$$e^9$$"], problemType: "MultipleChoice", stepTitle: "$$ln(x)=9$$", stepBody: "", choices: ["1", "$$3^e$$", "e", "$$e^3$$", "$$e^9$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

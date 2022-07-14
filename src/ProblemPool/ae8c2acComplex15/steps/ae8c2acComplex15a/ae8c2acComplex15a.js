@@ -1,0 +1,1 @@
+import hints from "./ae8c2acComplex15a-index.js"; const step = {id: "ae8c2acComplex15a", stepAnswer: ["-3-3i"], problemType: "TextBox", stepTitle: "(2-5i)-(5-2i)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
