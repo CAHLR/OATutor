@@ -1,0 +1,1 @@
+import hints from "./a184b1aQuadratic16a-index.js"; const step = {id: "a184b1aQuadratic16a", stepAnswer: ["$$m=\\frac{3}{4}$$ or -1"], problemType: "MultipleChoice", stepTitle: "$${\\left(4m\\right)}^2+m-3=0$$", stepBody: "", choices: ["$$m=\\frac{1}{2}$$ or -1", "$$m=\\frac{3}{4}$$ or -1", "$$m=2$$ or -1"], answerType: "string", hints: hints, variabilization: {}}; export {step};

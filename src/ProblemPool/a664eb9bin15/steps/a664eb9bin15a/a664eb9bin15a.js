@@ -1,0 +1,1 @@
+import hints from "./a664eb9bin15a-index.js"; const step = {id: "a664eb9bin15a", stepAnswer: ["$$x^4+16x^3+96x^2+256x^1+256$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+4\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

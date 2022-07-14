@@ -1,0 +1,1 @@
+import steps from "./af5fe5dSolveapp25-index.js"; const problem = {id: "af5fe5dSolveapp25", title: "Solve Direct Variation Problems", body: "In the following exercise, answer the question.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.5 Solve Applications with Rational Equations", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

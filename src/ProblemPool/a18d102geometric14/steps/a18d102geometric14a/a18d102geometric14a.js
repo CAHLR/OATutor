@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric14a-index.js"; const step = {id: "a18d102geometric14a", stepAnswer: ["3145725"], problemType: "TextBox", stepTitle: "3, 6, 12, 24, 48, 96, ...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a6b9f29radfunc8-index.js"; const problem = {id: "a6b9f29radfunc8", title: "Evaluating Radical Function", body: "Evaluate the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.7 Use Radicals in Functions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

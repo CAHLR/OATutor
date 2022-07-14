@@ -1,0 +1,1 @@
+import hints from "./a664eb9bin14a-index.js"; const step = {id: "a664eb9bin14a", stepAnswer: ["x**5-5*x**4*y**1+10*x**3*y**2-10*x**2*y**3+5*x**1*y**4-*y**5"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x-y\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

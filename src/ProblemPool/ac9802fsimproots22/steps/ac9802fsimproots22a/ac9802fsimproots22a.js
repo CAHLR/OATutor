@@ -1,0 +1,1 @@
+import hints from "./ac9802fsimproots22a-index.js"; const step = {id: "ac9802fsimproots22a", stepAnswer: ["$$|y^8|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{y^{16}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ad33ee8parabolas6a-index.js"; const step = {id: "ad33ee8parabolas6a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "$$y=6x^2+2x-1$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac9802fsimproots21a-index.js"; const step = {id: "ac9802fsimproots21a", stepAnswer: ["$$|x^3|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

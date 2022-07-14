@@ -1,0 +1,1 @@
+import hints from "./ad220b3GraphQuadratic3b-index.js"; const step = {id: "ad220b3GraphQuadratic3b", stepAnswer: ["Up"], problemType: "TextBox", stepTitle: "$$f(x)=2x^2-4x+5$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

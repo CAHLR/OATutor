@@ -1,0 +1,1 @@
+import hints from "./a184b1aQuadratic1a-index.js"; const step = {id: "a184b1aQuadratic1a", stepAnswer: ["$$x=\\frac{1}{2}$$ or -5"], problemType: "MultipleChoice", stepTitle: "$$2x^2+9x-5=0$$", stepBody: "", choices: ["$$x=\\frac{1}{2}$$ or -5", "$$x=1$$ or 5", "$$x=2$$ or $$\\frac{5}{2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

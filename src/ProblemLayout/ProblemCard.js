@@ -109,9 +109,7 @@ class ProblemCard extends React.Component {
             chooseVariables(Object.assign({}, problemVars, variabilization), seed),
             lesson,
             courseName
-        ).then(r => {
-
-        });
+        )
 
         if (correctAnswer) {
             toast.success("Correct Answer!", {

@@ -1,0 +1,1 @@
+import hints from "./a81d715SolRadical25a-index.js"; const step = {id: "a81d715SolRadical25a", stepAnswer: ["42"], problemType: "TextBox", stepTitle: "$$3\\sqrt{2x-3}-20=7$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

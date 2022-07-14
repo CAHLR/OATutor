@@ -1,0 +1,1 @@
+import hints from "./ad33ee8parabolas2a-index.js"; const step = {id: "ad33ee8parabolas2a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "$$y=\\left(-x^2\\right)+5x-6$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

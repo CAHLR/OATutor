@@ -1,0 +1,1 @@
+import hints from "./ae8c2acComplex3a-index.js"; const step = {id: "ae8c2acComplex3a", stepAnswer: ["$$4x^2+20x+25$$"], problemType: "TextBox", stepTitle: "$${\\left(2x+5\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./af4e405log25a-index.js"; const step = {id: "af4e405log25a", stepAnswer: ["$$64=2^6$$"], problemType: "MultipleChoice", stepTitle: "$$6=\\log_{2}\\left(64\\right)$$", stepBody: "", choices: ["$$64=2^6$$", "$$6=2^{64}$$", "$$6={64}^2$$", "$$64=6^2$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};
