@@ -1915,6 +1915,7 @@ const skillModel = {
     a53b893whole2b: [`use_place_value_with_whole_numbers`],
     a53b893whole2c: [`use_place_value_with_whole_numbers`],
     a53b893whole20a: [`find_prime_factorizations_and_least_common_multiples`],
+    a53b893whole21a: [`find_prime_factorizations_and_least_common_multiples`],
     a53b893whole22a: [`use_place_value_with_whole_numbers`],
     a53b893whole22b: [`use_place_value_with_whole_numbers`],
     a53b893whole22c: [`use_place_value_with_whole_numbers`],
