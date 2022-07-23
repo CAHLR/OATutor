@@ -7,8 +7,8 @@ import {
     DO_LOG_MOUSE_DATA
 } from '../config/config.js'
 
-const firebase = require("firebase/app");
-require("firebase/firestore");
+import { initializeApp } from "firebase/app"
+import { getFirestore, doc, setDoc, serverTimestamp } from "firebase/firestore";
 
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
@@ -19,10 +19,10 @@ class Firebase {
 
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
         if (!ENABLE_FIREBASE) return
-        const app = (!firebase.apps.length) ? firebase.initializeApp(credentials) : firebase.app();
+        const app = initializeApp(credentials)
 
         this.oats_user_id = oats_user_id;
-        this.db = firebase.firestore(app);
+        this.db = getFirestore(app)
         this.treatment = treatment;
         this.siteVersion = siteVersion;
         this.mouseLogBuffer = [];
@@ -44,6 +44,7 @@ class Firebase {
             oats_user_id: this.oats_user_id,
             treatment: this.treatment,
             time_stamp: Date.now(),
+            server_time: serverTimestamp(),
 
             ...this.ltiContext?.user_id
                 ? {
@@ -69,23 +70,11 @@ class Firebase {
             console.debug("Writing this payload to firebase: ", payload)
         }
 
-        await this.db.collection(collection).doc(this._getReadableID()).set(payload).catch(err => {
-            console.log("a non-critical error occurred.")
-            console.debug(err)
-        })
-    }
-
-    /*
-      Collection: Collection of Key/Value pairs
-      Document: Key - How you plan to access this data
-      cb: callback function since reading data is asynchronous
-    */
-    readData(collection, document, cb, req, res) {
-        this.db.collection(collection).doc(document).get().then((doc) =>
-            cb(req, res, doc.data())
-        ).catch(err => {
-            cb(req, res, undefined)
-        });
+        await setDoc(doc(this.db, collection, this._getReadableID()), payload)
+            .catch(err => {
+                console.log("a non-critical error occurred.")
+                console.debug(err)
+            })
     }
 
     _getReadableID() {
@@ -105,7 +94,7 @@ class Firebase {
     log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
         if (!DO_LOG_DATA) return
         console.debug("trying to log hint: ", hint, "step", step)
-        if(Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])){
+        if (Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])) {
             hintsFinished = hintsFinished.map(step => step.join(", "))
         }
         const data = {
