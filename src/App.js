@@ -18,6 +18,7 @@ import {
     PROGRESS_STORAGE_KEY,
     SITE_VERSION,
     USER_ID_STORAGE_KEY,
+    DO_FOCUS_TRACKING,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
@@ -33,6 +34,7 @@ import generateRandomInt from "./util/generateRandomInt";
 import { cleanObjectKeys } from "./util/cleanObject";
 import GlobalErrorBoundary from "./Components/_General/GlobalErrorBoundary";
 import { IS_STAGING_OR_DEVELOPMENT } from "./util/getBuildType";
+import TabFocusTrackerWrapper from "./Components/_General/TabFocusTrackerWrapper";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from './config/firebaseConfig.js';
@@ -271,6 +273,9 @@ class App extends React.Component {
                                     <Route component={Notfound}/>
                                 </Switch>
                             </div>
+                            {
+                                DO_FOCUS_TRACKING && <TabFocusTrackerWrapper/>
+                            }
                         </Router>
                         <ToastContainer
                             autoClose={false}

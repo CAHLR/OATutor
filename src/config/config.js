@@ -29,6 +29,13 @@ const ENABLE_FIREBASE = true;
  * @type {boolean}
  */
 const DO_LOG_DATA = true;
+
+/**
+ * Indicates whether a log event should be fired everytime a user leaves or returns to this window.
+ * @type {boolean}
+ */
+const DO_FOCUS_TRACKING = true;
+
 /**
  * If DO_LOG_DATA is enabled, indicates whether the site should also track user mouse interactions with the site. See
  * the README.md to properly enable this feature.
@@ -102,5 +109,6 @@ export {
     SHOW_COPYRIGHT,
     CURRENT_SEMESTER,
     CANVAS_WARNING_STORAGE_KEY,
+    DO_FOCUS_TRACKING,
     findLessonById
 };
