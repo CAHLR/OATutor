@@ -1,14 +1,15 @@
 import {
-    MAX_BUFFER_SIZE,
-    GRANULARITY,
     CURRENT_SEMESTER,
     DO_LOG_DATA,
+    DO_LOG_MOUSE_DATA,
     ENABLE_FIREBASE,
-    DO_LOG_MOUSE_DATA
+    GRANULARITY,
+    MAX_BUFFER_SIZE
 } from '../config/config.js'
 
 import { initializeApp } from "firebase/app"
-import { getFirestore, doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { arrayUnion, doc, getFirestore, serverTimestamp, setDoc } from "firebase/firestore";
+import daysSinceEpoch from "../util/daysSinceEpoch";
 import {
     IS_PRODUCTION,
     IS_STAGING_CONTENT,
@@ -18,7 +19,8 @@ import {
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
 const feedbackOutput = "feedbacks";
-const siteLogOutput = "siteLogs"
+const siteLogOutput = "siteLogs";
+const focusStatus = "focusStatus";
 
 class Firebase {
 
@@ -41,6 +43,41 @@ class Firebase {
         return IS_PRODUCTION || cond1 || cond2
             ? targetCollection
             : `development_${targetCollection}`
+    }
+
+    /**
+     * Instead of creating a new doc, pushes to an array instead.
+     * @param _collection
+     * @param documentId
+     * @param arrField
+     * @param data
+     * @param doPartitioning partition data into a sub-collection's documents (for large amount of data)
+     * @param partitionFn
+     * @returns {Promise<void>}
+     */
+    async pushDataToArr(_collection, documentId, arrField, data, doPartitioning = false, partitionFn = daysSinceEpoch) {
+        if (!ENABLE_FIREBASE) return
+        const collection = this.getCollectionName(_collection)
+        const payload = this.addMetaData(data, true)
+
+        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+            console.debug(`Upserting document: ${documentId}, with ${data}`)
+        }
+
+        const path = [this.db, collection, documentId]
+        if (doPartitioning) {
+            path.push("partitions", partitionFn().toString())
+        }
+        const docRef = doc(...path)
+        await setDoc(docRef, {
+            [arrField]: arrayUnion(payload)
+        }, {
+            merge: true
+        })
+            .catch(err => {
+                console.log("a non-critical error occurred.")
+                console.debug(err)
+            })
     }
 
     /*
@@ -216,6 +253,15 @@ class Firebase {
             problemID
         };
         return this.writeData(siteLogOutput, data);
+    }
+
+    submitFocusChange(_focusStatus) {
+        const data = {
+            focusStatus: _focusStatus
+        };
+
+        // TODO: oats_user_id is not guaranteed to be unique across users; is this a problem?
+        return this.pushDataToArr(focusStatus, this.oats_user_id, "focusHistory", data, true);
     }
 
     submitFeedback(problemID, feedback, problemFinished, variables, courseName, steps, lesson) {
