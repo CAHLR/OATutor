@@ -1635,7 +1635,6 @@ const skillModel = {
     a5c2168rotation19a: [`rotation_of_axes`],
     a5c2168rotation19b: [`rotation_of_axes`],
     a5c2168rotation2a: [`finding_a_new_representation_of_the_given_equation_after_rotating_through_a_given_angle`],
-    a5c2168rotation3a: [`writing_equations_of_rotated_conics_in_standard_form`],
     a5c2168rotation5a: [`identifying_conics_without_rotating_axes`],
     a5c2168rotation5b: [`identifying_conics_without_rotating_axes`],
     a5c2168rotation6a: [`identifying_conics_without_rotating_axes`],
