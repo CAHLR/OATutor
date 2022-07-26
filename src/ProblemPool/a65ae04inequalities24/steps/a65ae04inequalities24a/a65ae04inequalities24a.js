@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities24a-index.js"; const step = {id: "a65ae04inequalities24a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "$$|\\frac{5}{6} x+3|+8=6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

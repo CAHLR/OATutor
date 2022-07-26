@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial10b-index.js"; const step = {id: "aaebddaPolynomial10b", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "Addition", stepBody: "What is $$negneg}\\left(4\\right)+\\operatorname{\\left(-7\\right)$$?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

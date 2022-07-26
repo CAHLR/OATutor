@@ -1,1 +1,0 @@
-import hints from "./ad33ee8parabolas26a-index.js"; const step = {id: "ad33ee8parabolas26a", stepAnswer: ["D"], problemType: "MultipleChoice", stepTitle: "$$x=3y^2$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

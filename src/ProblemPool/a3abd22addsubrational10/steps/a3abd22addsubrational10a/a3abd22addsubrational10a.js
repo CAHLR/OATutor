@@ -1,1 +1,0 @@
-import hints from "./a3abd22addsubrational10a-index.js"; const step = {id: "a3abd22addsubrational10a", stepAnswer: ["$$5b+6$$"], problemType: "TextBox", stepTitle: "$$\\frac{25b^2}{5b-6}-\\frac{36}{5b-6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

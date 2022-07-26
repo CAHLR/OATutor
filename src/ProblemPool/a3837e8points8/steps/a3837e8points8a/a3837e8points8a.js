@@ -1,1 +1,0 @@
-import hints from "./a3837e8points8a-index.js"; const step = {id: "a3837e8points8a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What quadrant is the point (4,-2) in? Enter only the numeric value. If a point is not in a quadrant, enter \"NA\".", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

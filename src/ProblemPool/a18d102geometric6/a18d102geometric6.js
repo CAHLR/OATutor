@@ -1,1 +1,0 @@
-import steps from "./a18d102geometric6-index.js"; const problem = {id: "a18d102geometric6", title: "Writing Terms of a Sequence", body: "Determine the first five terms of the sequence defined below.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3 Geometric Sequences and Series", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

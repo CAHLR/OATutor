@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin11a-index.js"; const step = {id: "a664eb9bin11a", stepAnswer: ["$$256x^4-768x^3 y^1+864x^2 y^2-432x^1 y^3+81y^4$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(4x-3y\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

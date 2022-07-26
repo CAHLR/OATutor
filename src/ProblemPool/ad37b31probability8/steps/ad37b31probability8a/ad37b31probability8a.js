@@ -1,1 +1,0 @@
-import hints from "./ad37b31probability8a-index.js"; const step = {id: "ad37b31probability8a", stepAnswer: ["$$\\frac{5}{6}$$"], problemType: "TextBox", stepTitle: "Use the Complement Rule to find the probability that the sum is less than 10.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a08d293Rational15a-index.js"; const step = {id: "a08d293Rational15a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "Simply the expression, enter No if no real solution", stepBody: "$${64}^{\\frac{1}{2}}$$ * (-1)", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

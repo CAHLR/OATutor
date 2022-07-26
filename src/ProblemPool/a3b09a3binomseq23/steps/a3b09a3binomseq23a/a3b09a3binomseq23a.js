@@ -1,1 +1,0 @@
-import hints from "./a3b09a3binomseq23a-index.js"; const step = {id: "a3b09a3binomseq23a", stepAnswer: ["$$-220x^3$$"], problemType: "TextBox", stepTitle: "$${\\left(x-1\\right)}^{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

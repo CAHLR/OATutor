@@ -1,1 +1,0 @@
-import hints from "./af4e405log6a-index.js"; const step = {id: "af4e405log6a", stepAnswer: ["$$27=3^3$$"], problemType: "MultipleChoice", stepTitle: "$$3=\\log_{3}\\left(27\\right)$$", stepBody: "", choices: ["$$27=3^3$$", "$$3={27}^3$$", "$$3=3^{27}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph5b-index.js"; const step = {id: "a7ea646graph5b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$f(x)=-\\left({\\left(x-1\\right)}^2\\right) \\left(1+2x^2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

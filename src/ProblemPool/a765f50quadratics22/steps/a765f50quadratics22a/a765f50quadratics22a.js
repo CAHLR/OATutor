@@ -1,1 +1,0 @@
-import hints from "./a765f50quadratics22a-index.js"; const step = {id: "a765f50quadratics22a", stepAnswer: ["$$x=\\frac{1}{4}$$"], problemType: "MultipleChoice", stepTitle: "$$6x+\\sqrt{x}-2=0$$", stepBody: "", choices: ["$$x=\\frac{1}{4}$$", "$$x=25$$", "$$x=9$$", "$$x=25$$, $$x=9$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

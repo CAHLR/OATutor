@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring15a-index.js"; const step = {id: "a10e4c3factoring15a", stepAnswer: ["(4w-1)(w-1)"], problemType: "TextBox", stepTitle: "$$4w^2-5w+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

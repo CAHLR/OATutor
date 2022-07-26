@@ -1,1 +1,0 @@
-import hints from "./a10b60arealnumbers12a-index.js"; const step = {id: "a10b60arealnumbers12a", stepAnswer: ["(2*x**2)*sqrt(3,3*x)/y"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{\\frac{24x^7}{y^3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

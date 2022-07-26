@@ -1,1 +1,0 @@
-import hints from "./a9b0a01geo8a-index.js"; const step = {id: "a9b0a01geo8a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "The perimeter of a triangular garden is 48 feet. The lengths of two sides are 18 feet and 22 feet. How long is the third side?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

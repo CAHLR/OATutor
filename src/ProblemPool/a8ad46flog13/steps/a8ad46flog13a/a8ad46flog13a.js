@@ -1,1 +1,0 @@
-import hints from "./a8ad46flog13a-index.js"; const step = {id: "a8ad46flog13a", stepAnswer: ["0.079"], problemType: "TextBox", stepTitle: "$$3e^{x+2}=24$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

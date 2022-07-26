@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul28a-index.js"; const step = {id: "a1f9370SolvingFormul28a", stepAnswer: ["$$L=\\frac{P-2W}{2}$$"], problemType: "TextBox", stepTitle: "$$P=2L+2W$$ for L", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

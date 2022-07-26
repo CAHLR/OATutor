@@ -1,1 +1,0 @@
-var hints = [{id: "abe88c3log2a-h1", type: "hint", dependencies: [], title: "Properties of logorithms.", text: "Use the property $$\\log_{a}\\left(a\\right)$$ $$=$$ 1. Thus, $$\\log_{6}\\left(6\\right)$$ $$=$$ 1.", variabilization: {}}, ]; export {hints};

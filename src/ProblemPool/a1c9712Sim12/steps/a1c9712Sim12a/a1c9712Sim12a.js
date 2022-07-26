@@ -1,1 +1,0 @@
-import hints from "./a1c9712Sim12a-index.js"; const step = {id: "a1c9712Sim12a", stepAnswer: ["$$\\frac{x-6}{2\\left(x+5\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{x+6}}{\\frac{4}{x-6}-4\\left(x^2-36\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

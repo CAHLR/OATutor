@@ -1,1 +1,0 @@
-import hints from "./ad51073poly6a-index.js"; const step = {id: "ad51073poly6a", stepAnswer: ["$$\\frac{2b^6}{3a^4}$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{14a^7 b^{12}}{21a^{11} b^6}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

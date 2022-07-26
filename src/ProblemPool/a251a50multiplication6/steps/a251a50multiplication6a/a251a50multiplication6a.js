@@ -1,1 +1,0 @@
-import hints from "./a251a50multiplication6a-index.js"; const step = {id: "a251a50multiplication6a", stepAnswer: ["$$m^2+7m-44$$"], problemType: "TextBox", stepTitle: "$$\\left(m+11\\right) \\left(m-4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

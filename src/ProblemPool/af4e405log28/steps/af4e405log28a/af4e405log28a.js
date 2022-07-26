@@ -1,1 +1,0 @@
-import hints from "./af4e405log28a-index.js"; const step = {id: "af4e405log28a", stepAnswer: ["Graph A"], problemType: "MultipleChoice", stepTitle: "$$y=\\log_{1/5}\\left(x\\right)$$", stepBody: "##figure1.gif## ", choices: ["Graph A", "Graph B", "Graph C", "Graph D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

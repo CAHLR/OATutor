@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul14a-index.js"; const step = {id: "a1f9370SolvingFormul14a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "Solve for the third side of the triangle if the hypotenuse has length 17 and another side has length 15.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./acf3da9gaussian20a-index.js"; const step = {id: "acf3da9gaussian20a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$12b^2-15b=-9b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

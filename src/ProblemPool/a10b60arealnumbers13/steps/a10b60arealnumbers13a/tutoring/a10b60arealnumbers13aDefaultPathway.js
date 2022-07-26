@@ -1,1 +1,0 @@
-var hints = [{id: "a10b60arealnumbers13a-h1", type: "hint", dependencies: [], title: "Like Radicals", text: "For two like radicals, $$a \\sqrt[n]{x}+b \\sqrt[n]{x}$$ is equivalent to (a+b)sqrt(n,x)", variabilization: {}}, ]; export {hints};

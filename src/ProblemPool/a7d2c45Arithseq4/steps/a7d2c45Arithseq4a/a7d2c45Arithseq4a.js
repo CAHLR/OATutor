@@ -1,1 +1,0 @@
-import hints from "./a7d2c45Arithseq4a-index.js"; const step = {id: "a7d2c45Arithseq4a", stepAnswer: ["n"], problemType: "TextBox", stepTitle: "Determine whether the following sequence is arithmetic $$\\frac{y}{n}$$: 7,1,10,4,13,7,…", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

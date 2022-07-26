@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities11a-index.js"; const step = {id: "a65ae04inequalities11a", stepAnswer: ["x=2,1/4"], problemType: "MultipleChoice", stepTitle: "$$|6x-5|=|2x+3|$$", stepBody: "", choices: ["x=2,1/4", "x=2,1/4Ix=-3,1/5Ix=1/2,-2/3Ix=8,3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

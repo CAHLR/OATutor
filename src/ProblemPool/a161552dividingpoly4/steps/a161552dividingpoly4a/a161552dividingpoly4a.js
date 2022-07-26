@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly4a-index.js"; const step = {id: "a161552dividingpoly4a", stepAnswer: ["$$x^2-x+1$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^3+1}{x+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

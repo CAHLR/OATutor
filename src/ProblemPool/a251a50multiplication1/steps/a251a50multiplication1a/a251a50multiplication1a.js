@@ -1,1 +1,0 @@
-import hints from "./a251a50multiplication1a-index.js"; const step = {id: "a251a50multiplication1a", stepAnswer: ["$$y^2-8y+12$$"], problemType: "TextBox", stepTitle: "(y-6)(y-2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

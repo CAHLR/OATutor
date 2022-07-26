@@ -1,1 +1,0 @@
-import steps from "./a0f69c4conic8-index.js"; const problem = {id: "a0f69c4conic8", title: "Identify a Conic Given the Polar Form", body: "$$r=\\frac{3}{4-4sintheta}$$", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.5 Conic Sections in Polar Coordinates", courseName: "Openstax: College Algebra"}; export { problem };

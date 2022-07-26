@@ -1,1 +1,0 @@
-import hints from "./ae8c2acComplex25a-index.js"; const step = {id: "ae8c2acComplex25a", stepAnswer: ["$$33-i \\sqrt{3}$$"], problemType: "TextBox", stepTitle: "$$\\left(3-\\sqrt{-12}\\right) \\left(5+\\sqrt{-27}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

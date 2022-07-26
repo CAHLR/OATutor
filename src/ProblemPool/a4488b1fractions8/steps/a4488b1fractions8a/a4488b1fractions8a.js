@@ -1,1 +1,0 @@
-import hints from "./a4488b1fractions8a-index.js"; const step = {id: "a4488b1fractions8a", stepAnswer: ["$$\\frac{-15}{22}$$"], problemType: "TextBox", stepTitle: "$$\\left(-\\frac{9}{10}\\right) \\frac{25}{33}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

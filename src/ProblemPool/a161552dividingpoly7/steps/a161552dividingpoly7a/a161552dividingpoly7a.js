@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly7a-index.js"; const step = {id: "a161552dividingpoly7a", stepAnswer: ["$$25x^2+20x+16$$"], problemType: "TextBox", stepTitle: "$$\\frac{125x^3-64}{5x-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

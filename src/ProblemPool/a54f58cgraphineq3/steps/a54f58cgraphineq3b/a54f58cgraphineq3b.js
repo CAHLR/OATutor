@@ -1,1 +1,0 @@
-import hints from "./a54f58cgraphineq3b-index.js"; const step = {id: "a54f58cgraphineq3b", stepAnswer: ["no"], problemType: "MultipleChoice", stepTitle: "Determine $$\\frac{y}{n}$$ whether (4,-1) is a solution to {$$y>4x-2$$, $$4x-y<20$$}", stepBody: "", choices: ["yes", "no"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a5991b4add20a-index.js"; const step = {id: "a5991b4add20a", stepAnswer: ["Monomial"], problemType: "MultipleChoice", stepTitle: "q", stepBody: "", choices: ["Monomial", "Binomial", "Trinomial", "Other"], answerType: "string", hints: hints, variabilization: {}}; export {step};

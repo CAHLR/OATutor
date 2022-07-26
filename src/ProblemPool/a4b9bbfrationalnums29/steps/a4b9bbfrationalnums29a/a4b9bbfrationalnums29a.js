@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums29a-index.js"; const step = {id: "a4b9bbfrationalnums29a", stepAnswer: ["$$x^{\\frac{1}{3}}$$"], problemType: "TextBox", stepTitle: "(sqrt(3,x))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

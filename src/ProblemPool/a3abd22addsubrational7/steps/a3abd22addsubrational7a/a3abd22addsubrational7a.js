@@ -1,1 +1,0 @@
-import hints from "./a3abd22addsubrational7a-index.js"; const step = {id: "a3abd22addsubrational7a", stepAnswer: ["$$\\frac{2w}{w+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2w^2}{3w^2-16}+\\frac{8w}{3w^2-16}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

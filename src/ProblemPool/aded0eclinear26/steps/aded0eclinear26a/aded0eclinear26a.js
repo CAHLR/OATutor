@@ -1,1 +1,0 @@
-import hints from "./aded0eclinear26a-index.js"; const step = {id: "aded0eclinear26a", stepAnswer: ["$$t \\geq -3$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$9t \\geq -27$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

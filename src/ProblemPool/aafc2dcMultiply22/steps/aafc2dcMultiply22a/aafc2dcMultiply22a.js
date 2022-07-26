@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply22a-index.js"; const step = {id: "aafc2dcMultiply22a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{65}{negneg}\\left(5\\right)}+\\frac{\\operatorname{negneg}\\left(28\\right)}{\\operatorname{\\left(-7\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

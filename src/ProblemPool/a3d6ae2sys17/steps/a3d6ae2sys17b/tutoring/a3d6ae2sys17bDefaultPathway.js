@@ -1,1 +1,0 @@
-var hints = [{id: "a3d6ae2sys17b-h1", type: "hint", dependencies: [], title: "Classifications", text: "A system of equations whose graphs are parallel lines has no solution and is inconsistent and independent.", variabilization: {}}, ]; export {hints};

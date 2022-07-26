@@ -1,1 +1,0 @@
-import hints from "./ac9802fsimproots12a-index.js"; const step = {id: "ac9802fsimproots12a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{64}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply19a-index.js"; const step = {id: "aafc2dcMultiply19a", stepAnswer: ["-47"], problemType: "TextBox", stepTitle: "$$5negneg}\\left(6\\right)+7\\operatorname{\\left(-2\\right)-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

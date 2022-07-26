@@ -1,1 +1,0 @@
-import hints from "./a02e810proportions10a-index.js"; const step = {id: "a02e810proportions10a", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$\\frac{p+12}{9}=\\frac{p-12}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

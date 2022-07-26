@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper12a-index.js"; const step = {id: "a91e303graphhyper12a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "Graph $$16y^2-9x^2=144$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

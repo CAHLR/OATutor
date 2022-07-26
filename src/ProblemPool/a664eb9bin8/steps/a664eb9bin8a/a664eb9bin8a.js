@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin8a-index.js"; const step = {id: "a664eb9bin8a", stepAnswer: ["$$x^6-6x^5+15x^4-20x^3+15x^2-6x^1+1$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x-1\\right)}^6$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

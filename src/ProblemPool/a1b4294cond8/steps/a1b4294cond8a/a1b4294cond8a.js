@@ -1,1 +1,0 @@
-import hints from "./a1b4294cond8a-index.js"; const step = {id: "a1b4294cond8a", stepAnswer: ["0.42"], problemType: "TextBox", stepTitle: "What is the probability you will be a Goalkeeper today? Round your answer to 2 decimal places", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

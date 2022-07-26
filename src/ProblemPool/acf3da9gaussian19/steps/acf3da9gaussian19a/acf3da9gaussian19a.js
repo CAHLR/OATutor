@@ -1,1 +1,0 @@
-import hints from "./acf3da9gaussian19a-index.js"; const step = {id: "acf3da9gaussian19a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$7a^2+14a=7a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ae25c01graphs11a-index.js"; const step = {id: "ae25c01graphs11a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "Find f(pi)", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

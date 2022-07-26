@@ -1,1 +1,0 @@
-import hints from "./a28448cslope8a-index.js"; const step = {id: "a28448cslope8a", stepAnswer: ["4;(0,-10)"], problemType: "MultipleChoice", stepTitle: "$$y=4x-10$$", stepBody: "", choices: ["-4;(0,10)", "4;(10,0)", "4;(0,-10)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

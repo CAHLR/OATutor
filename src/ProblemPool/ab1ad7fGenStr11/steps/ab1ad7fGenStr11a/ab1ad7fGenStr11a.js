@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr11a-index.js"; const step = {id: "ab1ad7fGenStr11a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\frac{1}{3} \\left(6u+3\\right)=7-u$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

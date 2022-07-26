@@ -1,1 +1,0 @@
-import hints from "./ae45a45int26b-index.js"; const step = {id: "ae45a45int26b", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$\\frac{-30}{2}+negneg}\\left(3\\right) \\operatorname{\\left(-7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

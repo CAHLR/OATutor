@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr17a-index.js"; const step = {id: "ab1ad7fGenStr17a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$6\\left(p-3\\right)-7=5\\left(4p+3\\right)-12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

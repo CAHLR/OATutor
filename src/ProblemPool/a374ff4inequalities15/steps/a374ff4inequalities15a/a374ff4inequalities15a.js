@@ -1,1 +1,0 @@
-import hints from "./a374ff4inequalities15a-index.js"; const step = {id: "a374ff4inequalities15a", stepAnswer: ["$$\\frac{-1}{5}$$"], problemType: "TextBox", stepTitle: "(-3,6)(2,5)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

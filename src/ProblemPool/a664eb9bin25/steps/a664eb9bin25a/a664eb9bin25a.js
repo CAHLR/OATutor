@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin25a-index.js"; const step = {id: "a664eb9bin25a", stepAnswer: ["$$x^3+3x^2 y^1+3x^1 y^2+y^3$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x+y\\right)}^3$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

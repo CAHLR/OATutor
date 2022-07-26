@@ -1,1 +1,0 @@
-import hints from "./a1a538fpairs8a-index.js"; const step = {id: "a1a538fpairs8a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (-3,4) is a solution to the system: $$2x+3y=6, y=\\frac{2}{3} x+2$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

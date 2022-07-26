@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical17a-index.js"; const step = {id: "a81d715SolRadical17a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{4x+5}-2=-5$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a18dde9partfrac26a-index.js"; const step = {id: "a18dde9partfrac26a", stepAnswer: ["$$\\frac{2}{x-1}+\\frac{2x-1}{x^2+6x+11}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4x^2+9x+23}{\\left(x-1\\right) \\left(x^2+6x+11\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
