@@ -1,0 +1,1 @@
+import hints from "./a01e792probsolve20a-index.js"; const step = {id: "a01e792probsolve20a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "The sum of three times a number and seven is 25. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

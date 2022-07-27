@@ -1,0 +1,1 @@
+import hints from "./a675767Ellipses15a-index.js"; const step = {id: "a675767Ellipses15a", stepAnswer: ["(x**2)/25+(y**2)/4=1"], problemType: "TextBox", stepTitle: "Find the Equation for the Ellipse in the Graph.", stepBody: "Please enter your answer as $$\\frac{x^2}{A}+\\frac{y^2}{B}=C$$.##figure1.gif## ", answerType: "string", hints: hints, variabilization: {}}; export {step};

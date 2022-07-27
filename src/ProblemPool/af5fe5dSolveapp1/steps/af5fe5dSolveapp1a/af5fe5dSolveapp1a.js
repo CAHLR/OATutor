@@ -1,0 +1,1 @@
+import hints from "./af5fe5dSolveapp1a-index.js"; const step = {id: "af5fe5dSolveapp1a", stepAnswer: ["49"], problemType: "TextBox", stepTitle: "$$\\frac{x}{56}=\\frac{7}{8}$$", stepBody: "Solve for x.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

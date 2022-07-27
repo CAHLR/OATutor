@@ -1,0 +1,1 @@
+import hints from "./a4b48f4RealNums16a-index.js"; const step = {id: "a4b48f4RealNums16a", stepAnswer: ["$$27m+\\left(-21n\\right)$$"], problemType: "TextBox", stepTitle: "$$43m+negneg}\\left(12n\\right)+\\operatorname{negneg}\\left(16m\\right)+\\operatorname{\\left(-9n\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

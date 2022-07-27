@@ -1,0 +1,1 @@
+import hints from "./ad33ee8parabolas29a-index.js"; const step = {id: "ad33ee8parabolas29a", stepAnswer: ["$$-4{\\left(y+2\\right)}^2+4$$"], problemType: "TextBox", stepTitle: "$$x=-4y^2-16y-12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

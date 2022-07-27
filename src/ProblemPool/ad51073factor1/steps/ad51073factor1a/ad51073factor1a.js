@@ -1,0 +1,1 @@
+import hints from "./ad51073factor1a-index.js"; const step = {id: "ad51073factor1a", stepAnswer: ["$$\\left(5x+1\\right) \\left(5x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$25x^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae45a45int5a-index.js"; const step = {id: "ae45a45int5a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "24+3(-5+9)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

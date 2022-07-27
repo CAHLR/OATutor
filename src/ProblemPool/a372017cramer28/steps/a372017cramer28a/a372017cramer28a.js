@@ -1,0 +1,1 @@
+import hints from "./a372017cramer28a-index.js"; const step = {id: "a372017cramer28a", stepAnswer: ["-100"], problemType: "TextBox", stepTitle: "$$A=\\begin{bmatrix} 10 & 20 \\\\ 0 & -10 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

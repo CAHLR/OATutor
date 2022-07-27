@@ -1,0 +1,1 @@
+import hints from "./a161552dividingpoly3a-index.js"; const step = {id: "a161552dividingpoly3a", stepAnswer: ["$$2x^2-6x+8+\\frac{4}{x+3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x^3-10x+28}{x+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

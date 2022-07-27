@@ -1,0 +1,1 @@
+import hints from "./a18dde9partfrac3a-index.js"; const step = {id: "a18dde9partfrac3a", stepAnswer: ["$$\\frac{2}{x+3}+\\frac{6x-8}{x^2+x+2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{8x^2+12x-20}{\\left(x+3\\right) \\left(x^2+x+2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

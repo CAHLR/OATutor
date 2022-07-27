@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc23a-index.js"; const step = {id: "a6b9f29radfunc23a", stepAnswer: ["[(1/2),inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{4x-2}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

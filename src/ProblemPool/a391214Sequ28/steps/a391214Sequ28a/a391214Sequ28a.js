@@ -1,0 +1,1 @@
+import hints from "./a391214Sequ28a-index.js"; const step = {id: "a391214Sequ28a", stepAnswer: ["$$\\frac{8}{3}$$"], problemType: "TextBox", stepTitle: "Expand the partial sum and find its value", stepBody: "Expand the partial sum and find its value: $$∑k=031k!$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a0351f0theparabola13a-index.js"; const step = {id: "a0351f0theparabola13a", stepAnswer: ["(0,0),(0,-1/16),y=1/16"], problemType: "MultipleChoice", stepTitle: "$$y=-4x^2$$", stepBody: "", choices: ["(0,0),(0,-1/16),y=1/16", "(4,0),(0,-1/16),y=1/16"], answerType: "string", hints: hints, variabilization: {}}; export {step};

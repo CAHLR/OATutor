@@ -1,0 +1,1 @@
+import steps from "./a104861trifactor26-index.js"; const problem = {id: "a104861trifactor26", title: "Factor Perfect Square Trinomials", body: "Factor.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.4 Factor Special Products", courseName: "Openstax: Elementary Algebra"}; export { problem };

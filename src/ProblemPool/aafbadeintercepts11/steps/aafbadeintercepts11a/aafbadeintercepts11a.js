@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts11a-index.js"; const step = {id: "aafbadeintercepts11a", stepAnswer: ["(4,0)"], problemType: "MultipleChoice", stepTitle: "Find the x intercept of $$2x-4y=8$$.", stepBody: "", choices: ["(4,0)", "(8,0)I(4,0)I(3,0)I(0,-3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a664eb9bin13a-index.js"; const step = {id: "a664eb9bin13a", stepAnswer: ["$$a^8+8a^7 b^1+28a^6 b^2+56a^5 b^3+70a^4 b^4+56a^3 b^5+28a^2 b^6+8a^1 b^7+b^8$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(a+b\\right)}^8$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

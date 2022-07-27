@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric23a-index.js"; const step = {id: "a18d102geometric23a", stepAnswer: ["34920.2"], problemType: "TextBox", stepTitle: "How much will be in the child's account at her eighteenth birthday?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

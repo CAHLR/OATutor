@@ -1,0 +1,1 @@
+import hints from "./ad51073poly8a-index.js"; const step = {id: "ad51073poly8a", stepAnswer: ["$$\\frac{5}{8a^5 b^3}$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{30a^5 b^{11}}{48a^{10} b^{14}}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

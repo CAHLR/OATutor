@@ -1,0 +1,1 @@
+import hints from "./a2ef97dGrphingQuads21a-index.js"; const step = {id: "a2ef97dGrphingQuads21a", stepAnswer: ["Opens up"], problemType: "MultipleChoice", stepTitle: "$$y=6x^2+2x+3$$", stepBody: "", choices: ["Opens down", "Opens up"], answerType: "string", hints: hints, variabilization: {}}; export {step};

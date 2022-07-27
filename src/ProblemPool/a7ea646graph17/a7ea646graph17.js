@@ -1,0 +1,1 @@
+import steps from "./a7ea646graph17-index.js"; const problem = {id: "a7ea646graph17", title: "Finding the X-Intercept of a Polynomial Function", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", lesson: "5.3 Graphs of Polynomial Functions", courseName: "Openstax: College Algebra"}; export { problem };

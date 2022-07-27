@@ -1,0 +1,1 @@
+import hints from "./a9e42b3CompInv17a-index.js"; const step = {id: "a9e42b3CompInv17a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Verify if the following function are reverse functions", stepBody: "f(x) $$=$$ 4x - 3, g(x) $$=$$ (x+3)/ 4", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

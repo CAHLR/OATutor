@@ -1,0 +1,1 @@
+import hints from "./abe88c3log26a-index.js"; const step = {id: "abe88c3log26a", stepAnswer: ["$$100*\\log_{10}\\left(x\\right)$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with the Power Property.", stepBody: "$$\\log_{10}\\left(x^{100}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

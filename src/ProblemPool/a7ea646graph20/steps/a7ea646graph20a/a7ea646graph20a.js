@@ -1,0 +1,1 @@
+import hints from "./a7ea646graph20a-index.js"; const step = {id: "a7ea646graph20a", stepAnswer: ["(-1,0),(1,0),(3,0)"], problemType: "TextBox", stepTitle: "Find the x-intercept of the function $$f(x)=x^3-3x^2-x+3$$.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

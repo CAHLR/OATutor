@@ -1,0 +1,1 @@
+import hints from "./ab8934ethreevar21a-index.js"; const step = {id: "ab8934ethreevar21a", stepAnswer: ["24, 36, 48"], problemType: "MultipleChoice", stepTitle: "What are the numbers?", stepBody: "", choices: ["10, 20, 30", "14, 28, 42", "24, 36, 48"], answerType: "string", hints: hints, variabilization: {}}; export {step};

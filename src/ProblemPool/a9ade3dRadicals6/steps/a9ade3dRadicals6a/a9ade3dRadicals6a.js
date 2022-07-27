@@ -1,0 +1,1 @@
+import hints from "./a9ade3dRadicals6a-index.js"; const step = {id: "a9ade3dRadicals6a", stepAnswer: ["$$3\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{45}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

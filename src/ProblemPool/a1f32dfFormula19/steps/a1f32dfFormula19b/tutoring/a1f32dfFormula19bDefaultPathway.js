@@ -1,0 +1,1 @@
+var hints = [{id: "a1f32dfFormula19b-h1", type: "hint", dependencies: [], title: "Isolate", text: "To isolate r, we can divide both sides of the equation by t, which gives us $$r=\\frac{d}{t}$$.", variabilization: {}}, ]; export {hints};

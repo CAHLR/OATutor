@@ -1,0 +1,1 @@
+import steps from "./af4e405log3-index.js"; const problem = {id: "af4e405log3", title: "Converting to Logarithmic Form", body: "Convert the following to logarithmic form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.3 Evaluate and Graph Logarithmic Functions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

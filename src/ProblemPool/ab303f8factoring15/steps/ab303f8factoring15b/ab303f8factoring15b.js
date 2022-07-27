@@ -1,0 +1,1 @@
+import hints from "./ab303f8factoring15b-index.js"; const step = {id: "ab303f8factoring15b", stepAnswer: ["$$\\left(14x+16\\right) \\left(14x-16\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$196x^2-256$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
