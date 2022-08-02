@@ -1,0 +1,1 @@
+import hints from "./ae8dd20divradexp6a-index.js"; const step = {id: "ae8dd20divradexp6a", stepAnswer: ["$$\\frac{2}{b}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[3]{72b^2}}{\\sqrt[3]{9b^5}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
