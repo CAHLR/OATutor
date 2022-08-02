@@ -1,1 +1,1 @@
-import hints from "./a8d511eDeterminant1a-index.js"; const step = {id: "a8d511eDeterminant1a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$/mat{(4,-2),(3,-1)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
+import hints from "./a8d511eDeterminant1a-index.js"; const step = {id: "a8d511eDeterminant1a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 4 & -2 \\\\ 3 & -1 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
