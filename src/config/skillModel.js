@@ -574,8 +574,6 @@ const skillModel = {
     aeb11eedomain5c: [`using_notations_to_specify_domain_and_range`],
     aeb11eedomain6a: [`finding_domain_and_range_from_graphs`],
     aeb11eedomain6b: [`finding_domain_and_range_from_graphs`],
-    aeb11eedomain7a: [`using_notations_to_specify_domain_and_range`],
-    aeb11eedomain7b: [`using_notations_to_specify_domain_and_range`],
     aeb11eedomain8a: [`finding_domains_and_ranges_of_the_toolkit_functions`],
     aeb11eedomain8b: [`finding_domains_and_ranges_of_the_toolkit_functions`],
     aeb11eedomain9a: [`finding_domains_and_ranges_of_the_toolkit_functions`],
