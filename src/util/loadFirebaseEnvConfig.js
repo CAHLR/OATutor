@@ -1,3 +1,5 @@
+import { IS_STAGING } from "./getBuildType";
+
 function loadFirebaseEnvConfig(config) {
     try {
         let _rawEnvConfig = process.env.REACT_APP_FIREBASE_CONFIG.trim();
@@ -6,7 +8,7 @@ function loadFirebaseEnvConfig(config) {
             _rawEnvConfig = _rawEnvConfig.substr(_rawEnvConfig.lastIndexOf(":") + 1).trim();
         }
         const _envConfig = JSON.parse(atob(_rawEnvConfig))
-        if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
+        if (IS_STAGING) {
             console.debug("Found env config: ", _envConfig, typeof _envConfig)
         }
         if (typeof _envConfig === 'object') {
@@ -16,7 +18,7 @@ function loadFirebaseEnvConfig(config) {
         // ignore
     }
 
-    if (process.env.REACT_APP_BUILD_TYPE === 'staging') {
+    if (IS_STAGING) {
         console.debug("Final Firebase Config: ", config)
     }
 }

@@ -23,13 +23,6 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/co
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-// ### BEGIN CUSTOMIZABLE IMPORTS ###
-import config from './config/firebaseConfig.js';
-import skillModel from './config/skillModel.js';
-import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
-import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
-import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
-import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
 import parseJwt from "./util/parseJWT";
 import AssignmentNotLinked from "./pages/AssignmentNotLinked";
 import AssignmentAlreadyLinked from "./pages/AssignmentAlreadyLinked";
@@ -39,6 +32,15 @@ import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
 import { cleanObjectKeys } from "./util/cleanObject";
 import GlobalErrorBoundary from "./Components/_General/GlobalErrorBoundary";
+import { IS_STAGING_OR_DEVELOPMENT } from "./util/getBuildType";
+
+// ### BEGIN CUSTOMIZABLE IMPORTS ###
+import config from './config/firebaseConfig.js';
+import skillModel from './config/skillModel.js';
+import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
+import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
+import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
+import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config)
@@ -88,7 +90,7 @@ class App extends React.Component {
             additionalContext: {},
         }
 
-        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+        if (IS_STAGING_OR_DEVELOPMENT) {
             document["oats-meta-site-hash"] = process.env.REACT_APP_COMMIT_HASH
         }
 
