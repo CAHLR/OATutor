@@ -1,10 +1,11 @@
 import { variabilize } from './variabilize.js';
 import insert from "../util/strInsert";
 import { parseMatrixTex } from "../util/parseMatrixTex";
+import { IS_DEVELOPMENT, IS_STAGING_OR_DEVELOPMENT } from "../util/getBuildType";
 
 const KAS = require('../kas.js');
 
-if (process.env.REACT_APP_BUILD_TYPE === "development") {
+if (IS_DEVELOPMENT) {
     window.KAS = KAS
 }
 
@@ -93,7 +94,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
 
                 return [attempt, correctAnswer]
             } else {
-                if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+                if (IS_STAGING_OR_DEVELOPMENT) {
                     console.debug("Using KAS to compare answer with solution", attempt, actual)
                 }
                 parsed = parse(attempt).expr;

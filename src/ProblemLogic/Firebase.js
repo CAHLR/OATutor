@@ -9,6 +9,11 @@ import {
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, doc, setDoc, serverTimestamp } from "firebase/firestore";
+import {
+    IS_PRODUCTION,
+    IS_STAGING_CONTENT,
+    IS_STAGING_OR_DEVELOPMENT, IS_STAGING_PLATFORM
+} from "../util/getBuildType";
 
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
@@ -29,6 +34,15 @@ class Firebase {
         this.ltiContext = ltiContext
     }
 
+    getCollectionName(targetCollection) {
+        const cond1 = IS_STAGING_CONTENT && [feedbackOutput, siteLogOutput].includes(targetCollection)
+        const cond2 = IS_STAGING_PLATFORM && [siteLogOutput].includes(targetCollection)
+
+        return IS_PRODUCTION || cond1 || cond2
+            ? targetCollection
+            : `development_${targetCollection}`
+    }
+
     /*
       Collection: Collection of Key/Value pairs
       Document: Key - How you will access this data later. Usually username
@@ -36,7 +50,27 @@ class Firebase {
     */
     async writeData(_collection, data) {
         if (!ENABLE_FIREBASE) return
-        const collection = process.env.REACT_APP_BUILD_TYPE === "production" ? _collection : `development_${_collection}`
+        const collection = this.getCollectionName(_collection)
+        const payload = this.addMetaData(data);
+
+        if (IS_STAGING_OR_DEVELOPMENT) {
+            console.debug("Writing this payload to firebase: ", payload)
+        }
+
+        await setDoc(doc(this.db, collection, this._getReadableID()), payload)
+            .catch(err => {
+                console.log("a non-critical error occurred.")
+                console.debug(err)
+            })
+    }
+
+    /**
+     *
+     * @param data
+     * @param isArrayElement if true, cannot use FieldValue methods like serverTimestamp()
+     * @returns {{[p: string]: *}}
+     */
+    addMetaData(data, isArrayElement = false) {
         const _payload = {
             semester: CURRENT_SEMESTER,
             siteVersion: this.siteVersion,
@@ -44,7 +78,11 @@ class Firebase {
             oats_user_id: this.oats_user_id,
             treatment: this.treatment,
             time_stamp: Date.now(),
-            server_time: serverTimestamp(),
+
+            ...!isArrayElement ?
+                {
+                    server_time: serverTimestamp(),
+                } : {},
 
             ...this.ltiContext?.user_id
                 ? {
@@ -64,17 +102,7 @@ class Firebase {
 
             ...data
         }
-        const payload = Object.fromEntries(Object.entries(_payload).map(([key, val]) => ([key, typeof val === 'undefined' ? null : val])))
-
-        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
-            console.debug("Writing this payload to firebase: ", payload)
-        }
-
-        await setDoc(doc(this.db, collection, this._getReadableID()), payload)
-            .catch(err => {
-                console.log("a non-critical error occurred.")
-                console.debug(err)
-            })
+        return Object.fromEntries(Object.entries(_payload).map(([key, val]) => ([key, typeof val === 'undefined' ? null : val])));
     }
 
     _getReadableID() {
