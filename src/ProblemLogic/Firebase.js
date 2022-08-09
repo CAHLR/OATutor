@@ -60,7 +60,7 @@ class Firebase {
         const collection = this.getCollectionName(_collection)
         const payload = this.addMetaData(data, true)
 
-        if (process.env.REACT_APP_BUILD_TYPE === "staging" || process.env.REACT_APP_BUILD_TYPE === "development") {
+        if (IS_STAGING_OR_DEVELOPMENT) {
             console.debug(`Upserting document: ${documentId}, with ${data}`)
         }
 
