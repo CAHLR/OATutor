@@ -1,0 +1,1 @@
+import hints from "./a81d715SolRadical3a-index.js"; const step = {id: "a81d715SolRadical3a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$\\sqrt{5x+1}=-3$$", stepBody: "Please enter your solution as fraction. If there is no solution for this equation, please enter \"None\"", answerType: "string", hints: hints, variabilization: {}}; export {step};

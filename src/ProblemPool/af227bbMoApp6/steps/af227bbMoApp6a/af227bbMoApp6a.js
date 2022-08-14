@@ -1,0 +1,1 @@
+import hints from "./af227bbMoApp6a-index.js"; const step = {id: "af227bbMoApp6a", stepAnswer: ["$$0.05x+20$$"], problemType: "TextBox", stepTitle: "Find the model of the total cost of Company A's plan, using x for the minutes", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

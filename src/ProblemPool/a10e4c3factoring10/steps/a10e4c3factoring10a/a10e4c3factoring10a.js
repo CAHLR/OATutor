@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring10a-index.js"; const step = {id: "a10e4c3factoring10a", stepAnswer: ["$$\\left(8a+5\\right) \\left(a-1\\right)$$"], problemType: "TextBox", stepTitle: "$$8a^2-3a-5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

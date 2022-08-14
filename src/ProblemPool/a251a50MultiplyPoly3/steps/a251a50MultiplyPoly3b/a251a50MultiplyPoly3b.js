@@ -1,0 +1,1 @@
+import hints from "./a251a50MultiplyPoly3b-index.js"; const step = {id: "a251a50MultiplyPoly3b", stepAnswer: ["$$12x^4 y^2-20x^3 y^3+12x^2 y^4$$"], problemType: "TextBox", stepTitle: "b) $$4x^2 y^{2\\left(3x^2-5xy+3y^2\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

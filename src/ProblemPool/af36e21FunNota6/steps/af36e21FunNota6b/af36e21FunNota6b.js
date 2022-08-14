@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota6b-index.js"; const step = {id: "af36e21FunNota6b", stepAnswer: ["$$a^2+3a-4$$"], problemType: "TextBox", stepTitle: "a", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

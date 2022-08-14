@@ -1,0 +1,1 @@
+import hints from "./af5fe5dSolveapp18a-index.js"; const step = {id: "af5fe5dSolveapp18a", stepAnswer: ["$$\\frac{640}{3}$$"], problemType: "TextBox", stepTitle: "Sonya drinks a 32-ounce energy drink containing 80 calories per 12 oun…", stepBody: "Please enter you answer as fraction.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

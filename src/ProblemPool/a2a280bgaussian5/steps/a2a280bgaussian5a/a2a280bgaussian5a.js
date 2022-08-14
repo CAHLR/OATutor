@@ -1,0 +1,1 @@
+import hints from "./a2a280bgaussian5a-index.js"; const step = {id: "a2a280bgaussian5a", stepAnswer: ["(3/2,1)"], problemType: "TextBox", stepTitle: "$$2x+3y=6$$ $$x-y=\\frac{1}{2}$$", stepBody: "Submit your answer as a coordinate pair.", answerType: "string", hints: hints, variabilization: {}}; export {step};

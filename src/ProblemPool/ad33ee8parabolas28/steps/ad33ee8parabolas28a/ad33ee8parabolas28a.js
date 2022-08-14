@@ -1,0 +1,1 @@
+import hints from "./ad33ee8parabolas28a-index.js"; const step = {id: "ad33ee8parabolas28a", stepAnswer: ["$$3{\\left(y+1\\right)}^2+4$$"], problemType: "TextBox", stepTitle: "$$x=3y^2+6y+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

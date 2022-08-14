@@ -1,0 +1,1 @@
+import hints from "./a08d293Rational1a-index.js"; const step = {id: "a08d293Rational1a", stepAnswer: ["$$\\sqrt{x}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression", stepBody: "x ** $$\\frac{1}{2}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

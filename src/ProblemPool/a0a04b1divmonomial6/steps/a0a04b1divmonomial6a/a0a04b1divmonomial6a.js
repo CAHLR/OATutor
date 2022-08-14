@@ -1,0 +1,1 @@
+import hints from "./a0a04b1divmonomial6a-index.js"; const step = {id: "a0a04b1divmonomial6a", stepAnswer: ["$$\\frac{1}{m^8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{m^7}{m^{15}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

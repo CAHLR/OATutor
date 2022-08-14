@@ -1,0 +1,1 @@
+import hints from "./a08d293Rational23a-index.js"; const step = {id: "a08d293Rational23a", stepAnswer: ["$$z^6$$"], problemType: "TextBox", stepTitle: "Simplify the expression", stepBody: "$${\\left(z^9\\right)}^{\\frac{2}{3}}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

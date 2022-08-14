@@ -1,0 +1,1 @@
+import hints from "./a7b98f9comp2a-index.js"; const step = {id: "a7b98f9comp2a", stepAnswer: ["7-2x"], problemType: "MultipleChoice", stepTitle: "Using the functions provided, find f(g(x)). $$f(x)=2x+1$$, $$g(x)=3-x$$", stepBody: "", choices: ["$$6+3x$$", "$$7+3x$$", "7-2x"], answerType: "string", hints: hints, variabilization: {}}; export {step};

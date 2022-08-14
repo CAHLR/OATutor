@@ -1,0 +1,1 @@
+import steps from "./aa5ef86inv1-index.js"; const problem = {id: "aa5ef86inv1", title: "Find the Multiplicative Inverse #1", body: "Find the inverse of the matrix using the formula to find the inverse of a 2x2 matrix.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.7 Solving Systems with Inverses", courseName: "Openstax: College Algebra"}; export { problem };

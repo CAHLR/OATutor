@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities2a-index.js"; const step = {id: "a65ae04inequalities2a", stepAnswer: ["No Solution"], problemType: "MultipleChoice", stepTitle: "$$|x|=-3$$", stepBody: "", choices: ["$$x=\\pm 3$$", "$$x=-3$$", "$$x=3$$", "No Solution"], answerType: "string", hints: hints, variabilization: {}}; export {step};

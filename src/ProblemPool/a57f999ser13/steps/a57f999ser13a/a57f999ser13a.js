@@ -1,0 +1,1 @@
+import hints from "./a57f999ser13a-index.js"; const step = {id: "a57f999ser13a", stepAnswer: ["-7812"], problemType: "TextBox", stepTitle: "$$S_6$$ for the series -2-10-50-250...", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

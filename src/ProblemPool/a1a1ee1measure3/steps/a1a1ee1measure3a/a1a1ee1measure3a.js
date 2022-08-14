@@ -1,0 +1,1 @@
+import hints from "./a1a1ee1measure3a-index.js"; const step = {id: "a1a1ee1measure3a", stepAnswer: ["90720"], problemType: "TextBox", stepTitle: "Juliet is going with her family to their summer home. She will be away from her boyfriend for 9 weeks. Convert the time to minutes.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

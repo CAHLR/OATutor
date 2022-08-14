@@ -1,0 +1,1 @@
+import hints from "./a1b4294cond5a-index.js"; const step = {id: "a1b4294cond5a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "Find the probability that a student plays an instrument given they are a freshman. Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

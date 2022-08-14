@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric29a-index.js"; const step = {id: "a18d102geometric29a", stepAnswer: ["65534"], problemType: "TextBox", stepTitle: "$$\\sum_{i=1}^{15} 2^i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

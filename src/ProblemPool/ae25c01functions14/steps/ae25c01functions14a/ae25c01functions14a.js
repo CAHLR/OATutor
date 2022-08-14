@@ -1,0 +1,1 @@
+import hints from "./ae25c01functions14a-index.js"; const step = {id: "ae25c01functions14a", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=-3x+3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

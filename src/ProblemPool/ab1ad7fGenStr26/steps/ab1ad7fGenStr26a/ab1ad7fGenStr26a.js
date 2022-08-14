@@ -1,0 +1,1 @@
+import hints from "./ab1ad7fGenStr26a-index.js"; const step = {id: "ab1ad7fGenStr26a", stepAnswer: ["Identity"], problemType: "MultipleChoice", stepTitle: "$$6\\left(2n-1\\right)+3=2n-8+5\\left(2n+1\\right)$$", stepBody: "", choices: ["Conditional Equation", "Identity", "contradiction"], answerType: "string", hints: hints, variabilization: {}}; export {step};

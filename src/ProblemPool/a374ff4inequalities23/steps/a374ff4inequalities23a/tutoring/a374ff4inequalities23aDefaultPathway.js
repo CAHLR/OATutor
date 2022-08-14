@@ -1,0 +1,1 @@
+var hints = [{id: "a374ff4inequalities23a-h1", type: "hint", dependencies: [], title: "Slope Formula", text: "The slope of a line, m, between two points, (x1,y1) and (x2,y2), is $$m=\\frac{y2-y1}{x2-x1}$$.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a88aae9QuadEq1a-index.js"; const step = {id: "a88aae9QuadEq1a", stepAnswer: ["2.5,-3"], problemType: "TextBox", stepTitle: "$$2y^2+y=15$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

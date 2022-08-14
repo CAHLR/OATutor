@@ -1,0 +1,1 @@
+import hints from "./a664eb9bin12a-index.js"; const step = {id: "a664eb9bin12a", stepAnswer: ["$$x^4+4x^3 y^1+6x^2 y^2+4x^1 y^3+y^4$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+y\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

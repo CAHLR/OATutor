@@ -1,0 +1,1 @@
+import hints from "./a7ecb8ffactoring5a-index.js"; const step = {id: "a7ecb8ffactoring5a", stepAnswer: ["$$\\left(x+20\\right) \\left(x+5\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$x^2+25x+100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

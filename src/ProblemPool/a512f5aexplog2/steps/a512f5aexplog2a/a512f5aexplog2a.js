@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog2a-index.js"; const step = {id: "a512f5aexplog2a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$$2^{\\left(-3x\\right)} \\frac{1}{4}$$ $$=$$ $$2^{x+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

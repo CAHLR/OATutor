@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota14f-index.js"; const step = {id: "af36e21FunNota14f", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$y=-2x^2+40x$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

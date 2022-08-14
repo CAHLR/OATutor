@@ -1,0 +1,1 @@
+import hints from "./a374ff4inequalities7a-index.js"; const step = {id: "a374ff4inequalities7a", stepAnswer: ["$$\\frac{-8}{7}$$"], problemType: "TextBox", stepTitle: "(-3,3)(4,-5)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./aaa317eLinIneq1-index.js"; const problem = {id: "aaa317eLinIneq1", title: "Using Interval Notation to Express All Real Numbers Greater Than or Equal to a", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.7 Linear Inequalities and Absolute Value Inequalities", courseName: "Openstax: College Algebra"}; export { problem };

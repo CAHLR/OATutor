@@ -1,0 +1,1 @@
+import hints from "./a1268beother9a-index.js"; const step = {id: "a1268beother9a", stepAnswer: ["-5/4,7/4"], problemType: "MultipleChoice", stepTitle: "$$|1-4x|-1=5$$", stepBody: "", choices: ["-7/4,5/4", "-5/6,7/6", "-5/4,7/4", "$$\\frac{-5}{4}-\\frac{7}{4}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

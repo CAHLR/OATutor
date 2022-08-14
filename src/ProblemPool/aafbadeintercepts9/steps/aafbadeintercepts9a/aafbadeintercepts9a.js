@@ -1,0 +1,1 @@
+import hints from "./aafbadeintercepts9a-index.js"; const step = {id: "aafbadeintercepts9a", stepAnswer: ["(4,0)"], problemType: "MultipleChoice", stepTitle: "Find the x intercept of $$3x-4y=12$$.", stepBody: "", choices: ["(1,0)I(4,0)I(-2,0)I(0,-3)", "(4,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

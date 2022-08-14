@@ -1,0 +1,1 @@
+import steps from "./a1f32dfFormula8-index.js"; const problem = {id: "a1f32dfFormula8", title: "Solve the formula $$d=rt$$ for r:", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "2.6 Solve a Formula for a Specific Variable ", courseName: "Openstax: Elementary Algebra"}; export { problem };

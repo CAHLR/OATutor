@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities22a-index.js"; const step = {id: "a65ae04inequalities22a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "$$|\\frac{2}{3} x-4|+11=3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

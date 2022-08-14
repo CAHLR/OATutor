@@ -1,0 +1,1 @@
+import hints from "./a9ae528add30b-index.js"; const step = {id: "a9ae528add30b", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-(-10)___-|-10|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

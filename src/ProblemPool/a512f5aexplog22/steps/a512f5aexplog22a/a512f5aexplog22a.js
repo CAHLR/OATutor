@@ -1,0 +1,1 @@
+import hints from "./a512f5aexplog22a-index.js"; const step = {id: "a512f5aexplog22a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Does $$3^{x+1}=-2$$ have a solution?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

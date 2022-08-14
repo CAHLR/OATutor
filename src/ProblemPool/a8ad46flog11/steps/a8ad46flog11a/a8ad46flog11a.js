@@ -1,0 +1,1 @@
+import hints from "./a8ad46flog11a-index.js"; const step = {id: "a8ad46flog11a", stepAnswer: ["1.933"], problemType: "TextBox", stepTitle: "$$7^x=43$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring14a-index.js"; const step = {id: "a10e4c3factoring14a", stepAnswer: ["$$\\left(11x+1\\right) \\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "$$11x^2+34x+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

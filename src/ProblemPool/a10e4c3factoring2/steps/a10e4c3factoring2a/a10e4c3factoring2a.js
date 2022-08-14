@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring2a-index.js"; const step = {id: "a10e4c3factoring2a", stepAnswer: ["$$4\\left(m+1\\right) \\left(m-2\\right)$$"], problemType: "TextBox", stepTitle: "$$4m^2-4m-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

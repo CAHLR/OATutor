@@ -1,0 +1,1 @@
+import hints from "./a9790f0System1a-index.js"; const step = {id: "a9790f0System1a", stepAnswer: ["(3,2)"], problemType: "TextBox", stepTitle: "$$x-3y=-3$$, $$x+y=5$$", stepBody: "Please enter your answer as (a,b).", answerType: "string", hints: hints, variabilization: {}}; export {step};

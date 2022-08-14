@@ -1,0 +1,1 @@
+import steps from "./ae9e419IneqApp11-index.js"; const problem = {id: "ae9e419IneqApp11", title: "Water Taxi Load", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "3.6 Solve Applications with Linear Inequalities", courseName: "Openstax: Elementary Algebra"}; export { problem };

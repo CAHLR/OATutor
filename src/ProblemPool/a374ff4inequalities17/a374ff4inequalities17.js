@@ -1,0 +1,1 @@
+import steps from "./a374ff4inequalities17-index.js"; const problem = {id: "a374ff4inequalities17", title: "Finding the Slope of a Line", body: "Analyze the line from the graph.\n##figure1.gif", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.2 Slope of a Line", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

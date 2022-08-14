@@ -1,0 +1,1 @@
+import hints from "./a1268beother6b-index.js"; const step = {id: "a1268beother6b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "$${\\left(x+5\\right)}^{\\frac{3}{2}}=8$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

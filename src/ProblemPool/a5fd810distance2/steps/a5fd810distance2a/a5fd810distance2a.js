@@ -1,0 +1,1 @@
+import hints from "./a5fd810distance2a-index.js"; const step = {id: "a5fd810distance2a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "(-4,-3) and (2,5)", stepBody: "Write your answer in exact form. Simplify your answer as much as possible.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

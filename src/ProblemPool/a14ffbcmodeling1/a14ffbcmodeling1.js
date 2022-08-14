@@ -1,0 +1,1 @@
+import steps from "./a14ffbcmodeling1-index.js"; const problem = {id: "a14ffbcmodeling1", title: "Solving a Direct Variation Problem", body: "The quantity y varies directly with the cube of x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.8 Modeling Using Variation", courseName: "Openstax: College Algebra"}; export { problem };

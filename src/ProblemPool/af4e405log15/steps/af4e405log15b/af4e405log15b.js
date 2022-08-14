@@ -1,0 +1,1 @@
+import hints from "./af4e405log15b-index.js"; const step = {id: "af4e405log15b", stepAnswer: ["$$e^3$$"], problemType: "MultipleChoice", stepTitle: "$$ln(x)=3$$", stepBody: "", choices: ["$$e^3$$", "$$3^e$$", "1", "e"], answerType: "string", hints: hints, variabilization: {}}; export {step};

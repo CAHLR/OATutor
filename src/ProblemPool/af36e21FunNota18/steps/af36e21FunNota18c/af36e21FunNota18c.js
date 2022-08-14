@@ -1,0 +1,1 @@
+import hints from "./af36e21FunNota18c-index.js"; const step = {id: "af36e21FunNota18c", stepAnswer: ["$$\\frac{\\left(-6a-1\\right)}{\\left(-5a+2\\right)}$$"], problemType: "TextBox", stepTitle: "f(-a)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc9a-index.js"; const step = {id: "a6b9f29radfunc9a", stepAnswer: ["[(4/3),inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{3x-4}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

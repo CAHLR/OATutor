@@ -1,0 +1,1 @@
+import hints from "./a746c1bFactoring8a-index.js"; const step = {id: "a746c1bFactoring8a", stepAnswer: ["$$3x y^2 \\left(4x^2+25\\right)$$"], problemType: "TextBox", stepTitle: "$$12x^3 y^2+75x y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

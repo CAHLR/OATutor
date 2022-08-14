@@ -1,0 +1,1 @@
+import hints from "./af4e405log6b-index.js"; const step = {id: "af4e405log6b", stepAnswer: ["$$1=3^0$$"], problemType: "MultipleChoice", stepTitle: "$$0=\\log_{3}\\left(1\\right)$$", stepBody: "", choices: ["$$1=3^0$$", "$$0=3^1$$", "$$3=1^0$$", "$$0=3^1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

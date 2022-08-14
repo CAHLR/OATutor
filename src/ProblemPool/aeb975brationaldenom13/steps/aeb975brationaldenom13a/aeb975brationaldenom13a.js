@@ -1,0 +1,1 @@
+import hints from "./aeb975brationaldenom13a-index.js"; const step = {id: "aeb975brationaldenom13a", stepAnswer: ["$$\\frac{5r-7}{\\left(r+4\\right) \\left(r-7\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{r+4}+\\frac{2}{r-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
