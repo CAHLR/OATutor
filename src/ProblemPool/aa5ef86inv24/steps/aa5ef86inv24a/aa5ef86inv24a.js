@@ -1,1 +1,0 @@
-import hints from "./aa5ef86inv24a-index.js"; const step = {id: "aa5ef86inv24a", stepAnswer: ["(-9,-7)"], problemType: "MultipleChoice", stepTitle: "Solve the following system with matrix inverses: $$8x+4y=-100, 3x-4y=1$$", stepBody: "", choices: ["(-9,-7)", "(-8,-7)", "(-4,-6)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

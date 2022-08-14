@@ -1,1 +1,0 @@
-import hints from "./a6b9f29radfunc10a-index.js"; const step = {id: "a6b9f29radfunc10a", stepAnswer: ["[(5/6),inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{6x-5}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

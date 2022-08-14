@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical18a-index.js"; const step = {id: "a81d715SolRadical18a", stepAnswer: ["-7"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{9x-1}-1=-5$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring9b-index.js"; const step = {id: "ab303f8factoring9b", stepAnswer: ["$$\\left(8x+9\\right) \\left(8x-9\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$64x^2-81$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

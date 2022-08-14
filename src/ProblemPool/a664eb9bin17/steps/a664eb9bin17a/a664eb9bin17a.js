@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin17a-index.js"; const step = {id: "a664eb9bin17a", stepAnswer: ["$$x^5+10x^4+40x^3+80x^2+80x^1+32$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+2\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

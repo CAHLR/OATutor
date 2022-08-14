@@ -1,1 +1,0 @@
-var hints = [{id: "af04890Rational2a-h1", type: "hint", dependencies: [], title: "Principle", text: "The rational will be undefined when the $$denominator=0$$", variabilization: {}}, {id: "af04890Rational2a-h2", type: "hint", dependencies: ["af04890Rational2a-h1"], title: "Setting equal to 0", text: "Set the $$denominator=0$$, $$8x=0$$", variabilization: {}}, ]; export {hints};

@@ -1,1 +1,0 @@
-import hints from "./aded0eclinear7a-index.js"; const step = {id: "aded0eclinear7a", stepAnswer: ["(-inf, 9/8]"], problemType: "MultipleChoice", stepTitle: "$$x-\\frac{3}{8} \\leq \\frac{3}{4}$$", stepBody: "", choices: ["(-3/8, inf)", "(-inf, -9/8]", "(-inf, 6/12]", "(-inf, 9/8]", "(3/4, inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin10a-index.js"; const step = {id: "a664eb9bin10a", stepAnswer: ["$$243x^5-810x^4 y^1+1080x^3 y^2-720x^2 y^3+240x^1 y^4-32y^5$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(3x-2y\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

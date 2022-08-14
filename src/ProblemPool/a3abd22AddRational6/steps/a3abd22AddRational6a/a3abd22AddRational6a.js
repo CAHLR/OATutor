@@ -1,1 +1,0 @@
-import hints from "./a3abd22AddRational6a-index.js"; const step = {id: "a3abd22AddRational6a", stepAnswer: ["$$\\frac{x-3}{x+9}$$"], problemType: "TextBox", stepTitle: "$$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

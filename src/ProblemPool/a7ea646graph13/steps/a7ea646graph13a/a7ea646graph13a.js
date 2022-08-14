@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph13a-index.js"; const step = {id: "a7ea646graph13a", stepAnswer: ["(0, 0),(5,0),(-4,0)"], problemType: "TextBox", stepTitle: "Find the x-intercepts of $$f(x)=x^3+x^2-20x$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./abe88c3log23a-index.js"; const step = {id: "abe88c3log23a", stepAnswer: ["$$3*\\log_{5}\\left(4\\right)$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with the Power Property.", stepBody: "$$\\log_{5}\\left(4^3\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aaa317eLinIneq9a-index.js"; const step = {id: "aaa317eLinIneq9a", stepAnswer: ["[1,9]"], problemType: "MultipleChoice", stepTitle: "Describe all values x within a distance of 4 from the number 5.", stepBody: "", choices: ["(1,9)", "[1,9]", "(3,7)", "[3,7]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

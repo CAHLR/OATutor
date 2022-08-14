@@ -1,1 +1,0 @@
-import hints from "./ac3d94dProperties9a-index.js"; const step = {id: "ac3d94dProperties9a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$\\frac{0}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

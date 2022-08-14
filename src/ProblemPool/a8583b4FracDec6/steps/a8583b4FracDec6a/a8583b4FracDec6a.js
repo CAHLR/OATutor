@@ -1,1 +1,0 @@
-import hints from "./a8583b4FracDec6a-index.js"; const step = {id: "a8583b4FracDec6a", stepAnswer: ["-12"], problemType: "TextBox", stepTitle: "Solve $$-1=\\frac{1}{2} u+\\frac{1}{4} u-\\frac{2}{3} u$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

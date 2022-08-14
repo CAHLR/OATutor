@@ -1,1 +1,0 @@
-import hints from "./ae8c2acComplex11a-index.js"; const step = {id: "ae8c2acComplex11a", stepAnswer: ["$$5i \\sqrt{3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{-12}+\\sqrt{-27}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

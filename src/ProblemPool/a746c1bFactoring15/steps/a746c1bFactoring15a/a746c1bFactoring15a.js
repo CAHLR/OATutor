@@ -1,1 +1,0 @@
-import hints from "./a746c1bFactoring15a-index.js"; const step = {id: "a746c1bFactoring15a", stepAnswer: ["$$2\\left(2x+3y\\right) \\left(4x-1\\right)$$"], problemType: "TextBox", stepTitle: "$$16x^2+24x y-4x-6y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd31a-index.js"; const step = {id: "a6014eaSubAdd31a", stepAnswer: ["$$t=-14$$"], problemType: "TextBox", stepTitle: "The difference of 12t and 11t is -14.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

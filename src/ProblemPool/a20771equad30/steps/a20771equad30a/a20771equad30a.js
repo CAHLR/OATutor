@@ -1,1 +1,0 @@
-import hints from "./a20771equad30a-index.js"; const step = {id: "a20771equad30a", stepAnswer: ["5, -5"], problemType: "TextBox", stepTitle: "$$x^2-25=0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

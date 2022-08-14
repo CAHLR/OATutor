@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq10a-index.js"; const step = {id: "a88aae9QuadEq10a", stepAnswer: ["[1-sqrt(2),1+sqrt(2)]"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)+2x+1 \\geq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

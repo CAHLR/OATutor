@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot22a-index.js"; const step = {id: "a4a0f7dradicalroot22a", stepAnswer: ["$$v=17$$"], problemType: "TextBox", stepTitle: "Solve $$\\sqrt{6v-2}=10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

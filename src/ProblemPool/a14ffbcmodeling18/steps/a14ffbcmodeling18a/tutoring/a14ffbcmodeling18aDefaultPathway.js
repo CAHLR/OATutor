@@ -1,1 +1,0 @@
-var hints = [{id: "a14ffbcmodeling18a-h1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["2"], dependencies: [], title: "Multiplying Values", text: "What value multiplied by y will give you x (this is your slope)?", variabilization: {}}, ]; export {hints};

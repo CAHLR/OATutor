@@ -1,1 +1,0 @@
-import hints from "./a35ba99cou30a-index.js"; const step = {id: "a35ba99cou30a", stepAnswer: ["840"], problemType: "TextBox", stepTitle: "Find the number of rearrangements of the letters in the word CARRIER.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

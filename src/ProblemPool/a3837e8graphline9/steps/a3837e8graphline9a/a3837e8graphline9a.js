@@ -1,1 +1,0 @@
-import hints from "./a3837e8graphline9a-index.js"; const step = {id: "a3837e8graphline9a", stepAnswer: ["-2,(0,4)"], problemType: "TextBox", stepTitle: "$$y=-2x+4$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

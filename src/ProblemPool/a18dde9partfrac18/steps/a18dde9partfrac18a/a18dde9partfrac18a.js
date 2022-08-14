@@ -1,1 +1,0 @@
-import hints from "./a18dde9partfrac18a-index.js"; const step = {id: "a18dde9partfrac18a", stepAnswer: ["$$\\frac{2}{x+4}-\\frac{3}{x-6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(-x-24\\right)}{x^2-2x-24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

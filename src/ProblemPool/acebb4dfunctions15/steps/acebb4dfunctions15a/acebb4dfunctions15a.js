@@ -1,1 +1,0 @@
-import hints from "./acebb4dfunctions15a-index.js"; const step = {id: "acebb4dfunctions15a", stepAnswer: ["4-5x"], problemType: "TextBox", stepTitle: "$$g(x)=7-5x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

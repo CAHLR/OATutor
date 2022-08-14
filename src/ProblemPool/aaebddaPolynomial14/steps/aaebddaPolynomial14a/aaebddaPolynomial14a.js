@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial14a-index.js"; const step = {id: "aaebddaPolynomial14a", stepAnswer: ["$$4x^2-9x+4$$"], problemType: "TextBox", stepTitle: "a) $$\\left(f+g\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

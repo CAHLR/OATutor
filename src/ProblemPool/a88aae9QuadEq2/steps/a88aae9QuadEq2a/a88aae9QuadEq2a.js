@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq2a-index.js"; const step = {id: "a88aae9QuadEq2a", stepAnswer: ["(2,4)"], problemType: "TextBox", stepTitle: "$$x^2-6x+8<0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

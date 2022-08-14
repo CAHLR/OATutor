@@ -1,1 +1,0 @@
-import steps from "./a833c22linear29-index.js"; const problem = {id: "a833c22linear29", title: "Matching Linear Functions to Their Graphs", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/books/college-algebra/pages/4-1-linear-functions", lesson: "4.1 Linear Functions", courseName: "Openstax: College Algebra"}; export { problem };

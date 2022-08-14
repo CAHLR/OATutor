@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical19a-index.js"; const step = {id: "a81d715SolRadical19a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$${\\left(6x+1\\right)}^{\\frac{1}{2}}-3=4$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

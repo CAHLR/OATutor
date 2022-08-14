@@ -1,1 +1,0 @@
-import hints from "./aae6efeSolving25b-index.js"; const step = {id: "aae6efeSolving25b", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "6.4% of what amount is $2.88?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

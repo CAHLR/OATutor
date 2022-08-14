@@ -1,1 +1,0 @@
-import hints from "./a9c142dVarCon33k-index.js"; const step = {id: "a9c142dVarCon33k", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$\\frac{3}{5} p+2=\\frac{4}{5} p-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

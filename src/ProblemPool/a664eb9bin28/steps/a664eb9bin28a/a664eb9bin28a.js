@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin28a-index.js"; const step = {id: "a664eb9bin28a", stepAnswer: ["$$625x^4-1000x^3 y^1+600x^2 y^2-160x^1 y^3+16y^4$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(5x-2y\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

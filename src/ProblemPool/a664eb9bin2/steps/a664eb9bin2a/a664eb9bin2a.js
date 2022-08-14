@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin2a-index.js"; const step = {id: "a664eb9bin2a", stepAnswer: ["$$x^5+5x^4 y^1+10x^3 y^2+10x^2 y^3+5x^1 y^4+y^5$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+y\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

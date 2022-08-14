@@ -1,1 +1,0 @@
-import hints from "./af04890Rational15a-index.js"; const step = {id: "af04890Rational15a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$R(x)=f{\\left(x\\right)} g{\\left(x\\right)}$$ where $$f(x)=\\frac{2x-6}{x^2-8x+15}$$, $$g(x)=\\frac{x^2-25}{2x+10}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

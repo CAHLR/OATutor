@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical13a-index.js"; const step = {id: "a81d715SolRadical13a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$\\sqrt{2u-3}+2=0$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "string", hints: hints, variabilization: {}}; export {step};

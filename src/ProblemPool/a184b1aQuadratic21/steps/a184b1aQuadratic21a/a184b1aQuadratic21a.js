@@ -1,1 +1,0 @@
-import hints from "./a184b1aQuadratic21a-index.js"; const step = {id: "a184b1aQuadratic21a", stepAnswer: ["$$t=-5$$ or -8"], problemType: "MultipleChoice", stepTitle: "$$t^2+13t=-40$$", stepBody: "", choices: ["$$t=5$$ or -8", "$$t=-5$$ or 8", "$$t=-5$$ or -8"], answerType: "string", hints: hints, variabilization: {}}; export {step};

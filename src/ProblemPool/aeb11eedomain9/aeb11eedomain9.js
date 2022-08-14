@@ -1,1 +1,0 @@
-import steps from "./aeb11eedomain9-index.js"; const problem = {id: "aeb11eedomain9", title: "Finding the Domain and Range", body: "Find the domain and range of $$f(x)=\\frac{2}{x+1}$$.", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "3.2 Domain and Range", courseName: "Openstax: College Algebra"}; export { problem };

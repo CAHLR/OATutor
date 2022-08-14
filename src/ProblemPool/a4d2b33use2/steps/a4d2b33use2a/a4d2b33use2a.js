@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use2a-index.js"; const step = {id: "a4d2b33use2a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

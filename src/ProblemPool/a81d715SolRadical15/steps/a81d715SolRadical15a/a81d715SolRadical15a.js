@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical15a-index.js"; const step = {id: "a81d715SolRadical15a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{6x+4}=4$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

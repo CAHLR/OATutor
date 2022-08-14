@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities30a-index.js"; const step = {id: "a65ae04inequalities30a", stepAnswer: ["[1/2,2]"], problemType: "TextBox", stepTitle: "$$|4x-5| \\leq 3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

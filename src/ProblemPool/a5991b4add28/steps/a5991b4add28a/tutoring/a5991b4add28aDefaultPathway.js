@@ -1,1 +1,0 @@
-var hints = [{id: "a5991b4add28a-h1", type: "hint", dependencies: [], title: "Combining Like Terms", text: "We must combine like terms by adding coefficients. We get $$5y^2+3z^2$$", variabilization: {}}, ]; export {hints};
