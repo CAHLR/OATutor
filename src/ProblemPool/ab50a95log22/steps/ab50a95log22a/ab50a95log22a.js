@@ -1,1 +1,0 @@
-import hints from "./ab50a95log22a-index.js"; const step = {id: "ab50a95log22a", stepAnswer: ["$$y^{\\left(-11\\right)}=x$$"], problemType: "TextBox", stepTitle: "log base y of x $$=$$ -11", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

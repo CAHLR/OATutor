@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a6d0007exp24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Converting to Standard Notation",
+        "text": "To convert a number in scientific notation to standard notation, simply reverse the process. Move the decimal n places to the right if n is positive or n places to the left if n is negative and add zeros as needed. Remember, if n is positive, the value of the number is greater than 1, and if n is negative, the value of the number is less than one.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6d0007exp24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Right"
+        ],
+        "dependencies": [
+            "a6d0007exp24a-h1"
+        ],
+        "title": "Moving the Decimal",
+        "text": "In which direction do you have to move the decimal?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6d0007exp24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11"
+        ],
+        "dependencies": [
+            "a6d0007exp24a-h2"
+        ],
+        "title": "Moving the Decimal",
+        "text": "How many places to the right do you need to move the decimal?",
+        "variabilization": {}
+    }
+]

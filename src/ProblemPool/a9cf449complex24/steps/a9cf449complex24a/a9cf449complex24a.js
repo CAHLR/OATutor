@@ -1,1 +1,0 @@
-import hints from "./a9cf449complex24a-index.js"; const step = {id: "a9cf449complex24a", stepAnswer: ["$$\\frac{3}{17}+\\frac{22}{17} i$$"], problemType: "TextBox", stepTitle: "$$\\frac{2+5i}{4-i}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

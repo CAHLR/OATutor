@@ -1,1 +1,0 @@
-import steps from "./aae6efeSolving27-index.js"; const problem = {id: "aae6efeSolving27", title: "Salad Nutrition", body: "Fine the total recommended daily amount of sodium.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.2 Use a Problem Solving Strategy", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

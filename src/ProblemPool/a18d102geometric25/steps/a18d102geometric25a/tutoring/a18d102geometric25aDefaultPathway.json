@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a18d102geometric25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find Ratios of Consecutive Terms",
+        "text": "To determine if a sequence is geometric, we find the ratio of the consecutive terms shown.",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h1"
+        ],
+        "title": "Ratio Between 72 and 36",
+        "text": "What is the common ratio between 72 and 36? Effectively, what is $$\\frac{36}{72}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h2"
+        ],
+        "title": "Ratio Between 36 and 18",
+        "text": "What is the common ratio between 36 and 18? Effectively, what is $$\\frac{18}{36}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h3"
+        ],
+        "title": "Ratio Between 18 and 9",
+        "text": "What is the common ratio between 18 and 9? Effectively, what is $$\\frac{9}{18}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h4"
+        ],
+        "title": "Ratio Between 9 and $$\\frac{9}{2}$$",
+        "text": "What is the common ratio between 9 and $$\\frac{9}{2}$$? Effectively, what is $$\\frac{\\frac{9}{2}}{9}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h5"
+        ],
+        "title": "Ratio Between $$\\frac{9}{2}$$ and $$\\frac{9}{4}$$",
+        "text": "What is the common ratio between $$\\frac{9}{2}$$ and $$\\frac{9}{4}$$? Effectively, what is $$\\frac{\\frac{9}{4}}{\\frac{9}{2}}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric25a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the series is geometric. The common ratio is $$r=\\frac{1}{2}$$."
+        ],
+        "dependencies": [
+            "a18d102geometric25a-h6"
+        ],
+        "title": "Determining Commonality in Ratios",
+        "text": "Are the ratios between consecutive terms common?",
+        "variabilization": {}
+    }
+]

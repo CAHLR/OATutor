@@ -1,1 +1,0 @@
-import hints from "./a5b6f42rationals27a-index.js"; const step = {id: "a5b6f42rationals27a", stepAnswer: ["$$2x+4$$"], problemType: "TextBox", stepTitle: "$$f(x)=\\frac{4x^2-10}{2x-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

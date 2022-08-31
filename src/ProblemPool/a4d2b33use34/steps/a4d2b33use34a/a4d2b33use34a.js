@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use34a-index.js"; const step = {id: "a4d2b33use34a", stepAnswer: ["23"], problemType: "TextBox", stepTitle: "$$\\frac{70}{10}+4\\left(6-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a9cf449complex23a-index.js"; const step = {id: "a9cf449complex23a", stepAnswer: ["2-i $$\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "$$2+i$$ $$\\sqrt{5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

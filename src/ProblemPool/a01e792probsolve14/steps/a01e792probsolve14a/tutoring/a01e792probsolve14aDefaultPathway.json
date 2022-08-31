@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a01e792probsolve14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify and Name",
+        "text": "Let's first identify what we want to find, and then give it a variable name",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve14a-h1"
+        ],
+        "title": "Identify and Name",
+        "text": "We want to find the total number of notebooks and we can name it \\\"n\\\"",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve14a-h2"
+        ],
+        "title": "Rewrite",
+        "text": "Let's now rewrite the question into a simple sentence which sounds like an equation",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve14a-h3"
+        ],
+        "title": "Rewrite",
+        "text": "It would be: The number of textbooks (7) is 3 more than twice the number of notebooks",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve14a-h4"
+        ],
+        "title": "Translate",
+        "text": "Let's translate the rewritten sentence into a real equation",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve14a-h5"
+        ],
+        "title": "Translate",
+        "text": "Now, we would get $$7=3+2n$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a01e792probsolve14a-h6"
+        ],
+        "title": "Solve",
+        "text": "What number can we subtract from both sides to isolate the variable?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a01e792probsolve14a-h7"
+        ],
+        "title": "Solve",
+        "text": "Now, we get $$4=2n$$. What is n?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve14a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a01e792probsolve14a-h8"
+        ],
+        "title": "Simplify",
+        "text": "What number can we divide from both sides to isolate n",
+        "variabilization": {}
+    }
+]

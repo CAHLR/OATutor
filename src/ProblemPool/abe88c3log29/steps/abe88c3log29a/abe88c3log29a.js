@@ -1,1 +1,0 @@
-import hints from "./abe88c3log29a-index.js"; const step = {id: "abe88c3log29a", stepAnswer: ["$$1/2+3*\\log_{4}\\left(x\\right)+2*\\log_{4}\\left(y\\right)$$"], problemType: "TextBox", stepTitle: "Using the Properties of Logorithms.", stepBody: "$$\\log_{4}\\left(2x^3 y^2\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

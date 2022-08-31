@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ae45a45int28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Terminology - Sum",
+        "text": "The word \\\"sum\\\" means that two numbers must be added",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int28a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8+\\left(-12\\right)$$"
+        ],
+        "dependencies": [
+            "ae45a45int28a-h1"
+        ],
+        "title": "Terminology - Sum",
+        "text": "What is the sum of 8 and -12, represented as an equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int28a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-4"
+        ],
+        "dependencies": [
+            "ae45a45int28a-h2"
+        ],
+        "title": "Terminology - Sum",
+        "text": "What does $$8+\\left(-12\\right)$$ evaluate to?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int28a-h3"
+        ],
+        "title": "Terminology - Increasing",
+        "text": "The word \\\"increasing\\\" implies addition",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int28a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(-4+3\\right)$$"
+        ],
+        "dependencies": [
+            "ae45a45int28a-h4"
+        ],
+        "title": "Terminology - Increasing",
+        "text": "What is -4 increased by 3, represented as an equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int28a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-1"
+        ],
+        "dependencies": [
+            "ae45a45int28a-h5"
+        ],
+        "title": "Terminology - Increasing",
+        "text": "What does $$\\left(-4+3\\right)$$ evaluate to?",
+        "variabilization": {}
+    }
+]

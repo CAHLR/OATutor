@@ -1,1 +1,0 @@
-import hints from "./a75d03cRecCord9a-index.js"; const step = {id: "a75d03cRecCord9a", stepAnswer: ["$$\\sqrt{41}$$"], problemType: "TextBox", stepTitle: "Find the distance between the points (-3,-1) and (2,3)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

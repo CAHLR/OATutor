@@ -1,1 +1,0 @@
-import hints from "./a3abd22AddRational1a-index.js"; const step = {id: "a3abd22AddRational1a", stepAnswer: ["$$x+7$$"], problemType: "TextBox", stepTitle: "$$\\frac{11x+28}{x+4}+\\frac{x^2}{x+4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

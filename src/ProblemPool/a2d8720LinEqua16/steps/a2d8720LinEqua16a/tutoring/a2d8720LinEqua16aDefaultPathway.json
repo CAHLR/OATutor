@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a2d8720LinEqua16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The slope of a line",
+        "text": "The slope of a line, m, represents the change in y over the change in x. Given two points, (x_1, y_1) and (x_2, y_2), the following formula determines the slope of a line containing these points: $$m=\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua16a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute the y-values and the x-values into the formula, and we get $$m=\\frac{3-negneg}\\left(1\\right)}{\\operatorname{\\left(-5-2\\right)}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua16a-h2"
+        ],
+        "title": "Subtraction",
+        "text": "what is 3-(-1)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-7"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua16a-h3"
+        ],
+        "title": "Subtraction",
+        "text": "What is -5-2 ?",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-4}{7}$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua16a-h4"
+        ],
+        "title": "Division",
+        "text": "What is $$\\frac{4}{\\left(-7\\right)}$$?",
+        "variabilization": {}
+    }
+]

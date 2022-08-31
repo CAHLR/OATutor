@@ -1,1 +1,0 @@
-import hints from "./ab50a95log19a-index.js"; const step = {id: "ab50a95log19a", stepAnswer: ["$${16}^x=y$$"], problemType: "TextBox", stepTitle: "log base 16 of y $$=$$ x", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

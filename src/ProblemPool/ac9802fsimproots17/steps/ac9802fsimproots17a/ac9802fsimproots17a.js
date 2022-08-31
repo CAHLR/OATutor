@@ -1,1 +1,0 @@
-import hints from "./ac9802fsimproots17a-index.js"; const step = {id: "ac9802fsimproots17a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt[5]{243}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

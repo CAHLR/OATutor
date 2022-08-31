@@ -1,1 +1,0 @@
-import hints from "./a1f9370SolvingFormul10a-index.js"; const step = {id: "a1f9370SolvingFormul10a", stepAnswer: ["$$y=\\frac{9-4x}{7}$$"], problemType: "TextBox", stepTitle: "$$4x+7y=9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a6f9727real7a-index.js"; const step = {id: "a6f9727real7a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "MultipleChoice", stepTitle: "What is $$\\frac{4}{7} \\frac{2}{3} \\frac{7}{4}$$?", stepBody: "", choices: ["$$\\frac{2}{3}$$", "$$\\frac{7}{4}$$", "$$\\frac{4}{7}$$", "1"], answerType: "string", hints: hints, variabilization: {}}; export {step};

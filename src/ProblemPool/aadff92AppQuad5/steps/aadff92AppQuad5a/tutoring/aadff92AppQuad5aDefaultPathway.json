@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aadff92AppQuad5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set the Equation",
+        "text": "Let n be the first odd number, and the second consecutive number will be $$n+2$$. The equation will be $$n\\left(n+2\\right)=483$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad5a-h1"
+        ],
+        "title": "Solve the Equation",
+        "text": "Solve $$n\\left(n+2\\right)=483$$. You foil out the equation as $$n^2+2n=483$$. $$n^2+2n-483=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad5a-h2"
+        ],
+        "title": "Apply Quadratic Equation to solve for n.",
+        "text": "Given $${ax}^2+bx+c=0$$, $$x=\\frac{\\left(-b\\pm\\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-23,21)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad5a-h3"
+        ],
+        "title": "Apply Quadratic Equation to solve for n.",
+        "text": "Apply Quadratic Equation to solve for n when $$n^2+2n-483=0$$. Enter your answer as (a,b) where $$a<b$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad5a-h4"
+        ],
+        "title": "Find Answer Pairs",
+        "text": "When the first consecutive number is -23, the second consecutive number is $$-23+2=-21$$. When the first consecutive number is 21, the second consecutive number is $$21+2=23$$. The final answer is (-23,-21),(21,23).",
+        "variabilization": {}
+    }
+]

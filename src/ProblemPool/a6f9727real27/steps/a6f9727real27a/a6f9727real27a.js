@@ -1,1 +1,0 @@
-import hints from "./a6f9727real27a-index.js"; const step = {id: "a6f9727real27a", stepAnswer: ["45"], problemType: "TextBox", stepTitle: "$$5{\\left(5-2\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

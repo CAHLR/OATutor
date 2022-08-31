@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse5a-index.js"; const step = {id: "af60b4fellipse5a", stepAnswer: ["$$\\frac{x^2}{25}+\\frac{y^2}{4}=1$$"], problemType: "TextBox", stepTitle: "$$4x^2+25y^2=100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

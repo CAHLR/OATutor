@@ -1,1 +1,0 @@
-import hints from "./aabf119factor13a-index.js"; const step = {id: "aabf119factor13a", stepAnswer: ["7m"], problemType: "TextBox", stepTitle: "$$49{mb}^2-35m^2 ba+77{ma}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

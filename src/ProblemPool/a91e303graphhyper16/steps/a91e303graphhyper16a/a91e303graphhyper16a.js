@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper16a-index.js"; const step = {id: "a91e303graphhyper16a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "Graph $$9x^2-4y^2=36$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

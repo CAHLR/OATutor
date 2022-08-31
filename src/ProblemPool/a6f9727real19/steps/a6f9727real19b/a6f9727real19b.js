@@ -1,1 +1,0 @@
-import hints from "./a6f9727real19b-index.js"; const step = {id: "a6f9727real19b", stepAnswer: ["$$-4b+1$$"], problemType: "MultipleChoice", stepTitle: "$$8b-4b\\left(3\\right)+1$$", stepBody: "", choices: ["$$-4b+1$$", "$$4b+3$$", "$$20b+1$$", "$$12b+3$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

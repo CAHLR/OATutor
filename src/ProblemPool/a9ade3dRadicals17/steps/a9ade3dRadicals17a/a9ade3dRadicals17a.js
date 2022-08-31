@@ -1,1 +1,0 @@
-import hints from "./a9ade3dRadicals17a-index.js"; const step = {id: "a9ade3dRadicals17a", stepAnswer: ["2*(x**2)*(sqrt(3,3*x))"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{24x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

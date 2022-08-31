@@ -1,1 +1,0 @@
-import steps from "./af36e21FunNota19-index.js"; const problem = {id: "af36e21FunNota19", title: "Evaluate the function $$f=|x-1|-|x+1|$$ at the indicated values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.1 Functions and Function Notation", courseName: "Openstax: College Algebra"}; export { problem };

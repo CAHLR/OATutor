@@ -1,1 +1,0 @@
-import steps from "./a9ff35apoly1-index.js"; const problem = {id: "a9ff35apoly1", title: "Zero Product Property", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.5 Polynomial Equations", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

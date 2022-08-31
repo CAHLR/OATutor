@@ -1,1 +1,0 @@
-import hints from "./a5fd810distance12a-index.js"; const step = {id: "a5fd810distance12a", stepAnswer: ["$$\\sqrt{202}$$"], problemType: "TextBox", stepTitle: "(-4,-5) and (7,4)", stepBody: "Write your answer in exact form. Simplify your answer as much as possible.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

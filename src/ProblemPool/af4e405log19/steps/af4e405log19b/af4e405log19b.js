@@ -1,1 +1,0 @@
-import hints from "./af4e405log19b-index.js"; const step = {id: "af4e405log19b", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\ln(e^{3x})=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

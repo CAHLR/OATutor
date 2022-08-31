@@ -1,1 +1,0 @@
-import hints from "./a251a50MultiplyPoly10b-index.js"; const step = {id: "a251a50MultiplyPoly10b", stepAnswer: ["$$8a^2 b^2+12ab-20$$"], problemType: "TextBox", stepTitle: "b) $$\\left(2ab+5\\right) \\left(4ab-4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

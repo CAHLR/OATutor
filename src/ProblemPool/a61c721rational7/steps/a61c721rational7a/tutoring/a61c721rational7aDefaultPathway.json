@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a61c721rational7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The least common multiple",
+        "text": "The LCM or least common multiple of a set of numbers is the smallest positive integer that is divisible by all those numbers.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+5\\right) \\left(x-3\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational7a-h1"
+        ],
+        "title": "The least common multiple",
+        "text": "To combine the fractions, we want to find the LCM of the denominators. What is it?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a61c721rational7a-h2"
+        ],
+        "title": "Multiplication by 1",
+        "text": "We must multiple each expression by the appropriate form of 1 to obtain xy as the denominator for each fraction.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-3}{x-3}$$"
+        ],
+        "dependencies": [
+            "a61c721rational7a-h3"
+        ],
+        "title": "Multiplication by 1",
+        "text": "What should we multiply to $$\\frac{3}{x+5}$$ so that its denominator becomes $$\\left(x+5\\right) \\left(x-3\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x+5}{x+5}$$"
+        ],
+        "dependencies": [
+            "a61c721rational7a-h4"
+        ],
+        "title": "Multiplication by 1",
+        "text": "What should we multiply to $$\\frac{1}{x-3}$$ so that its denominator becomes $$\\left(x+5\\right) \\left(x-3\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\left(x-7\\right)}{x+5} \\left(x-3\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational7a-h5"
+        ],
+        "title": "Adding Terms",
+        "text": "Now that both terms have the same denominator, we can add their numerators. What is our final answer?",
+        "variabilization": {}
+    }
+]

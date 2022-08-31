@@ -1,1 +1,0 @@
-import hints from "./af04890Rational13a-index.js"; const step = {id: "af04890Rational13a", stepAnswer: ["$$x=6$$ or -2"], problemType: "MultipleChoice", stepTitle: "$$R(x)=\\frac{2x^2-14x}{4x^2-16x-48}$$", stepBody: "", choices: ["$$x=6$$ or -2", "$$x=6$$ or 2", "$$x=-6$$ or -2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

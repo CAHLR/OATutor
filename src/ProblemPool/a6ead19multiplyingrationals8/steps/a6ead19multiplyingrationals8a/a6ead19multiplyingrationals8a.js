@@ -1,1 +1,0 @@
-import hints from "./a6ead19multiplyingrationals8a-index.js"; const step = {id: "a6ead19multiplyingrationals8a", stepAnswer: ["(n-7)/(2(n+1))"], problemType: "TextBox", stepTitle: "Multiply $$\\frac{n^2-7n}{n^2+2n+1}$$ * $$\\frac{n+1}{2n}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

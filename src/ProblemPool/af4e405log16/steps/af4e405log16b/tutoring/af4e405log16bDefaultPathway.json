@@ -1,0 +1,40 @@
+[
+    {
+        "id": "af4e405log16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$ln(x)=7$$. Rewrite this expression first into exponential form. Remember that the base for ln functions is e.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log16b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^7=x$$"
+        ],
+        "dependencies": [
+            "af4e405log16b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$ln(x)=7$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log16b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^7$$"
+        ],
+        "dependencies": [
+            "af4e405log16b-h2"
+        ],
+        "title": "Solve for x",
+        "text": "What is the solution for x in the exponential equation $$e^7=x$$?",
+        "variabilization": {}
+    }
+]

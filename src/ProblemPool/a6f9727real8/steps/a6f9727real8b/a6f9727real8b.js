@@ -1,1 +1,0 @@
-import hints from "./a6f9727real8b-index.js"; const step = {id: "a6f9727real8b", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "If $$x=\\frac{1}{2}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly1a-index.js"; const step = {id: "a161552dividingpoly1a", stepAnswer: ["$$x+3-\\frac{8}{x+8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^2+11x+16}{x+8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

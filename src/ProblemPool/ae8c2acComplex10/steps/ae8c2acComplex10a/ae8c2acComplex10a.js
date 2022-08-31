@@ -1,1 +1,0 @@
-import hints from "./ae8c2acComplex10a-index.js"; const step = {id: "ae8c2acComplex10a", stepAnswer: ["6i"], problemType: "TextBox", stepTitle: "$$\\sqrt{-36}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota20a-index.js"; const step = {id: "af36e21FunNota20a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is the area of a circle a function of its radius?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

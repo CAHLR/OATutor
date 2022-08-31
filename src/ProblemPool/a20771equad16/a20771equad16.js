@@ -1,1 +1,0 @@
-import steps from "./a20771equad16-index.js"; const problem = {id: "a20771equad16", title: "Solve the Quadratic Equation Using the Quadratic Formula", body: "Solve the quadratic equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.5 Quadratic Equations", courseName: "Openstax: College Algebra"}; export { problem };

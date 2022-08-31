@@ -1,1 +1,0 @@
-import hints from "./ad291beRadRat9a-index.js"; const step = {id: "ad291beRadRat9a", stepAnswer: ["$$12\\sqrt{3}$$"], problemType: "TextBox", stepTitle: "Add $$5\\sqrt{12}+2\\sqrt{3}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ab5123ebaye6a-index.js"; const step = {id: "ab5123ebaye6a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "A couple has two children, the older of which is a boy. What is the probability that they have two boys? Enter your answer as a fraction", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

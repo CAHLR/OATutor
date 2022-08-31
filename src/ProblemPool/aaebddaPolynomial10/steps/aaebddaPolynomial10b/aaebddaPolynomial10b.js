@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial10b-index.js"; const step = {id: "aaebddaPolynomial10b", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "Addition", stepBody: "What is $$\\left(-4\\right)+\\left(-7\\right)$$?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

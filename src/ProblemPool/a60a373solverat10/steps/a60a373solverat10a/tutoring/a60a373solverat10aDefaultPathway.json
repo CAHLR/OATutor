@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a60a373solverat10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Lowest Common Denominator",
+        "text": "The first step is to find the lowest common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "18x"
+        ],
+        "dependencies": [
+            "a60a373solverat10a-h1"
+        ],
+        "title": "Lowest Common Denominator",
+        "text": "What is the lowest common denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat10a-h2"
+        ],
+        "title": "Distribute and multiply",
+        "text": "Distribute and multiply the lowest common denominator to all the terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+2x+12=12$$"
+        ],
+        "dependencies": [
+            "a60a373solverat10a-h3"
+        ],
+        "title": "Distribute and multiply",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat10a-h4"
+        ],
+        "title": "Quadratic Form",
+        "text": "Rearrange the equation into the quadratic form and factor.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x\\left(x+2\\right)=0$$"
+        ],
+        "dependencies": [
+            "a60a373solverat10a-h5"
+        ],
+        "title": "Quadratic Form",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=0,x=-2"
+        ],
+        "dependencies": [
+            "a60a373solverat10a-h6"
+        ],
+        "title": "Zero Product Property",
+        "text": "Solve for x. Please input the answer as $$variable=answer$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat10a-h7"
+        ],
+        "title": "Double Check",
+        "text": "Plug answers for a back into the original equation to make the sure answer is correct and not undefined at any point.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat10a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=0$$"
+        ],
+        "dependencies": [
+            "a60a373solverat10a-h8"
+        ],
+        "title": "Double Check",
+        "text": "Which of the solutions for x is invalid?",
+        "variabilization": {}
+    }
+]

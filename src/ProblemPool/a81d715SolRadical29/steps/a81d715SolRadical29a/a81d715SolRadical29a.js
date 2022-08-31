@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical29a-index.js"; const step = {id: "a81d715SolRadical29a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt{3u+7}=\\sqrt{5u+1}$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

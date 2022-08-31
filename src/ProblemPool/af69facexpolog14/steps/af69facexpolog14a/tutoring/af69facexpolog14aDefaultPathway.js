@@ -1,1 +1,0 @@
-var hints = [{id: "af69facexpolog14a-h1", type: "hint", dependencies: [], title: "The Numerator is the Carrying Capacity", text: "Since this is a logistic growth model, we know that the numerator is the carrying capacity. This means that our answer is @{numerator}", variabilization: {numerator: ["150", "160", "170"]}}, ]; export {hints};

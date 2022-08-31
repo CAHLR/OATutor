@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse20a-index.js"; const step = {id: "af60b4fellipse20a", stepAnswer: ["DNE"], problemType: "MultipleChoice", stepTitle: "$$x^2+y^2=1$$", stepBody: "", choices: ["(-3,-1-sqrt(11)),(-3,-1+sqrt(11))", "(-2,-1-sqrt(11)),(-2,-1+sqrt(11))", "(-1-sqrt(96),2),(-1+sqrt(96),2)", "DNE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

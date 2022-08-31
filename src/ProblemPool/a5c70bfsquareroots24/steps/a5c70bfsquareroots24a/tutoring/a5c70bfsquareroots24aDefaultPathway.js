@@ -1,1 +1,0 @@
-var hints = [{id: "a5c70bfsquareroots24a-h1", type: "hint", dependencies: [], title: "Operations without Like Radicals", text: "Since the radicals are not like, we cannot subtract them. We leave the expression as is.", variabilization: {}}, ]; export {hints};

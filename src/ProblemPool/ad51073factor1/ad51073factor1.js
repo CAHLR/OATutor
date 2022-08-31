@@ -1,1 +1,0 @@
-import steps from "./ad51073factor1-index.js"; const problem = {id: "ad51073factor1", title: "Factor Differences of Squares", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.4 Add, Subtract, and Multiply Radical Expressions", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

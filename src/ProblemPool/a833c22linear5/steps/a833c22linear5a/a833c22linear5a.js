@@ -1,1 +1,0 @@
-import hints from "./a833c22linear5a-index.js"; const step = {id: "a833c22linear5a", stepAnswer: ["Decreasing"], problemType: "MultipleChoice", stepTitle: "$$g(x)=5x-6$$", stepBody: "", choices: ["Increasing", "Decreasing"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af04890Rational3a-index.js"; const step = {id: "af04890Rational3a", stepAnswer: ["$$\\frac{x+3}{x+6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^2+5x+6}{x^2+8x+12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

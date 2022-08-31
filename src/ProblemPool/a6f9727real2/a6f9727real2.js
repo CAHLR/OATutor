@@ -1,1 +1,0 @@
-import steps from "./a6f9727real2-index.js"; const problem = {id: "a6f9727real2", title: "Converting Fractions of a Unit into a Smaller Unit", body: "", steps: steps, variabilization: {}, oer: "http://tasks.illustrativemathematics.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

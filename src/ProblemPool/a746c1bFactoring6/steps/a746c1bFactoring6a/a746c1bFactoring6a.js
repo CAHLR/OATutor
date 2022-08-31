@@ -1,1 +1,0 @@
-import hints from "./a746c1bFactoring6a-index.js"; const step = {id: "a746c1bFactoring6a", stepAnswer: ["$${\\left(2x+5b\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$4x^2+20x y+25y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

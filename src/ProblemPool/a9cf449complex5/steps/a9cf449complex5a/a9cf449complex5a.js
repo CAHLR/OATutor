@@ -1,1 +1,0 @@
-import hints from "./a9cf449complex5a-index.js"; const step = {id: "a9cf449complex5a", stepAnswer: ["$$8+20i$$"], problemType: "MultipleChoice", stepTitle: "$$4\\left(2+5i\\right)$$", stepBody: "", choices: ["$$8+20i$$", "$$12+4i$$", "$$3+16i$$", "$$8+10i$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a20771equad2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Completing the Square",
+        "text": "To complete the square, we need to add a term to make the entire expression of the form $$a^2+2ab+b^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad2a-h1"
+        ],
+        "title": "Completing the Square",
+        "text": "In this case, we want to add a term to $$2x^2-3x$$ to make it a perfect square. Assume $$2x^2$$ is the $$a^2$$ term and -3x is the 2ab term.",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{8}$$"
+        ],
+        "dependencies": [
+            "a20771equad2a-h2"
+        ],
+        "title": "Completing the Square",
+        "text": "What term should we add to both sides of the equation to make this true?",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad2a-h3"
+        ],
+        "title": "Simplification",
+        "text": "Now that we added $$\\frac{9}{8}$$ to both sides, we get that $${\\left(\\sqrt{2} x-\\frac{3\\sqrt{2}}{4}\\right)}^2=1+\\frac{9}{8}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(3+sqrt(17)/4, (3-sqrt(17)/4"
+        ],
+        "dependencies": [
+            "a20771equad2a-h4"
+        ],
+        "title": "Simplification",
+        "text": "By taking the square root of both sides, what two answers do we get for z?",
+        "variabilization": {}
+    }
+]

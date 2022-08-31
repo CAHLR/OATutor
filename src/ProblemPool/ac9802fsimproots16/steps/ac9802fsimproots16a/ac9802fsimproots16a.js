@@ -1,1 +1,0 @@
-import hints from "./ac9802fsimproots16a-index.js"; const step = {id: "ac9802fsimproots16a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{256}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

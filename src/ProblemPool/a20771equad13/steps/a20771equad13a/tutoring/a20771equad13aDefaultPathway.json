@@ -1,0 +1,30 @@
+[
+    {
+        "id": "a20771equad13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the Expression",
+        "text": "To isolate the variable, first divide both sides by 3 to get $${\\left(x-4\\right)}^2=5$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad13a-h1"
+        ],
+        "title": "Square Root",
+        "text": "Take the +/- square root of both sides: $$x-4=\\pm \\sqrt{5}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a20771equad13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad13a-h2"
+        ],
+        "title": "Isolating x",
+        "text": "Add 4 to both sides of the equation: $$x=\\pm \\sqrt{5}+4$$. This is our final answer.",
+        "variabilization": {}
+    }
+]

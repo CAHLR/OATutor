@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a985d52Square23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange Into Standard Form",
+        "text": "Rearrange the equation into standard form so that it matches $$a x^2+b x+c=0$$. Then identify the a, b, and c values.",
+        "variabilization": {}
+    },
+    {
+        "id": "a985d52Square23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a985d52Square23a-h1"
+        ],
+        "title": "Plugging Into Quadratic Formula",
+        "text": "Write the quadratic formula. Then substitute in the value of a, b, and c.",
+        "variabilization": {}
+    },
+    {
+        "id": "a985d52Square23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-1 and $$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a985d52Square23a-h2"
+        ],
+        "title": "Isolating the Variable",
+        "text": "Simplify the fraction and solve for the variable. What are the value(s) of the variable?",
+        "variabilization": {}
+    }
+]

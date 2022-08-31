@@ -1,1 +1,0 @@
-import hints from "./a6f9727real28a-index.js"; const step = {id: "a6f9727real28a", stepAnswer: ["44"], problemType: "MultipleChoice", stepTitle: "$$9+5+3\\times10$$", stepBody: "", choices: ["44", "170", "98", "62"], answerType: "string", hints: hints, variabilization: {}}; export {step};

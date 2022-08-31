@@ -1,0 +1,145 @@
+[
+    {
+        "id": "aaa317eLinIneq21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolation",
+        "text": "We need to first put the variable terms on one side by using the addition property.",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6} x-\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h1"
+        ],
+        "title": "Addition",
+        "text": "What should we add in order to isolate the variable with its coefficient on the right?",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-3}{4} \\leq \\frac{5}{6} x+\\frac{8}{3} x$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h2"
+        ],
+        "title": "Addition",
+        "text": "What do we get after we add $$\\frac{5}{6} x-\\frac{3}{4}$$ on both sides?",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq21a-h3"
+        ],
+        "title": "Common Denominator",
+        "text": "We then need to write fractions with common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h4"
+        ],
+        "title": "Common Denominator",
+        "text": "What is the common denominator between 3 and 6?",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-3}{4} \\leq \\frac{5}{6} x+\\frac{16}{6} x$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h5"
+        ],
+        "title": "Common Denominator",
+        "text": "Let's rewrite the fractions with their common denominator 6.",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{4} \\leq \\frac{21}{6} x$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h6"
+        ],
+        "title": "Simplification",
+        "text": "Let's simplify the right-hand side!",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq21a-h7"
+        ],
+        "title": "Isolation",
+        "text": "We can leave the variable term by itself on the right by using the multiplication property.",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{6}{21}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h8"
+        ],
+        "title": "Multiplication",
+        "text": "What number should we multiply in order to isolate the variable by itself?",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x \\geq \\frac{-3}{14}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq21a-h9"
+        ],
+        "title": "Multiplication",
+        "text": "What do we get after we multiply $$\\frac{6}{21}$$ on both sides?",
+        "variabilization": {}
+    },
+    {
+        "id": "aaa317eLinIneq21a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq21a-h10"
+        ],
+        "title": "Interval Notation",
+        "text": "$$[b,\\infty)$$ represents all real numbers greater than b, including b.",
+        "variabilization": {}
+    }
+]

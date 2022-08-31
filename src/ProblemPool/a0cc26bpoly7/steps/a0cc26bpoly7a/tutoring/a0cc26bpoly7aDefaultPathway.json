@@ -1,0 +1,135 @@
+[
+    {
+        "id": "a0cc26bpoly7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Terms",
+        "text": "First, find the product of the two first terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6x^2$$"
+        ],
+        "dependencies": [
+            "a0cc26bpoly7a-h1"
+        ],
+        "title": "First Terms",
+        "text": "What is $$2x\\times3 x$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0cc26bpoly7a-h2"
+        ],
+        "title": "Outside Terms",
+        "text": "Now, find the product of the two outside terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6x"
+        ],
+        "dependencies": [
+            "a0cc26bpoly7a-h3"
+        ],
+        "title": "Outside Terms",
+        "text": "What is $$2x\\times3$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0cc26bpoly7a-h4"
+        ],
+        "title": "Inside Terms",
+        "text": "Next, find the product of the two inside terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-54x"
+        ],
+        "dependencies": [
+            "a0cc26bpoly7a-h5"
+        ],
+        "title": "Inside Terms",
+        "text": "What is $$-18\\times3 x$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0cc26bpoly7a-h6"
+        ],
+        "title": "Last Terms",
+        "text": "Finally, find the product of the two last terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-54"
+        ],
+        "dependencies": [
+            "a0cc26bpoly7a-h7"
+        ],
+        "title": "Last Terms",
+        "text": "What is $$-18\\times3$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0cc26bpoly7a-h8"
+        ],
+        "title": "Combine Like Terms",
+        "text": "Now that we have the terms foiled out, we can combine like terms. The $$x^2$$ and constant terms cannot be simplified futher, but the coeffecients of the x terms can be added together to simplify the x value.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-48x"
+        ],
+        "dependencies": [
+            "a0cc26bpoly7a-h9"
+        ],
+        "title": "Combine Like Terms",
+        "text": "What is 6x-54x?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0cc26bpoly7a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a0cc26bpoly7a-h10"
+        ],
+        "title": "Simplified Expression",
+        "text": "The last step is to write out the expression as a sum of all of the values: $$6x^2-48x-54$$.",
+        "variabilization": {}
+    }
+]

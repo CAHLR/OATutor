@@ -1,1 +1,0 @@
-import hints from "./a8ad46flog8a-index.js"; const step = {id: "a8ad46flog8a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\log_{10}\\left(x+2\\right)-\\log_{10}\\left(4x+3\\right)=-\\log_{10}\\left(x\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

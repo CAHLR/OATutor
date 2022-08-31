@@ -1,1 +1,0 @@
-var hints = [{id: "a0f69c4conic17a-h1", type: "hint", dependencies: [], title: "Making Equivalent Polar to Cartesian Substitutions", text: "$$r=\\sqrt{x^2+y^2}$$, $$x=rcos(theta)$$, $$y=rsin(theta)$$. Making these substitutions, we get $$3\\sqrt{x^2+y^2}-2x=8$$", variabilization: {}}, ]; export {hints};

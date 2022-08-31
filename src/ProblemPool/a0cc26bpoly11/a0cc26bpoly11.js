@@ -1,1 +1,0 @@
-import steps from "./a0cc26bpoly11-index.js"; const problem = {id: "a0cc26bpoly11", title: "Multiplying Binomials Resulting in a Difference of Squares", body: "Expand the following expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 Polynomials", courseName: "Openstax: College Algebra"}; export { problem };

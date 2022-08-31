@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic13a-index.js"; const step = {id: "a35b0d9quadratic13a", stepAnswer: ["$$f(x)={\\left(x-6\\right)}^2-4$$"], problemType: "TextBox", stepTitle: "Rewrite the quadratic in standard form: $$x^2-12x+32$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./abe88c3log12a-index.js"; const step = {id: "abe88c3log12a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "Solving Logorithms.", stepBody: "$$\\log_{2}\\left(2^{15}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

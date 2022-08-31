@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a870b02DivMul16c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-809}{15}=\\frac{15y}{15}$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul16c-h1"
+        ],
+        "title": "Division",
+        "text": "Divide 15 from each side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-809}{15}$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul16c-h2"
+        ],
+        "title": "Simplification",
+        "text": "What do we get for y after simplifying the equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a870b02DivMul16c-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a870b02DivMul16c-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether -809 equals $$15\\left(-\\frac{809}{15}\\right)$$.",
+        "variabilization": {}
+    }
+]

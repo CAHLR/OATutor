@@ -1,1 +1,0 @@
-import steps from "./a0cc26bpoly5-index.js"; const problem = {id: "a0cc26bpoly5", title: "Multiplying Polynomials Using the Distributive Property", body: "Find the product of the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 Polynomials", courseName: "Openstax: College Algebra"}; export { problem };

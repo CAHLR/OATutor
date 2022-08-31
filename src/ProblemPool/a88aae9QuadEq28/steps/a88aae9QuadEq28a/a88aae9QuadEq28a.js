@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq28a-index.js"; const step = {id: "a88aae9QuadEq28a", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)-4x-5<0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a18d102geometric2b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a18d102geometric2a-h7"
+        ],
+        "title": "Find Ratios of Consecutive Terms",
+        "text": "To determine if a sequence is geometric, we find the ratio of the consecutive terms shown.",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h8"
+        ],
+        "title": "Ratio Between 64 and 16",
+        "text": "What is the common ratio between 64 and 16? Effectively, what is $$\\frac{16}{64}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h9"
+        ],
+        "title": "Ratio Between 16 and 4",
+        "text": "What is the common ratio between 16 and 4? Effectively, what is $$\\frac{4}{16}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h10"
+        ],
+        "title": "Ratio Between 4 and 1",
+        "text": "What is the common ratio between 4 and 1? Effectively, what is $$\\frac{1}{4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h11"
+        ],
+        "title": "Ratio Between 1 and $$\\frac{1}{4}$$",
+        "text": "What is the common ratio between 1 and $$\\frac{1}{4}$$? Effectively, what is $$\\frac{\\frac{1}{4}}{1}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h12"
+        ],
+        "title": "Ratio Between $$\\frac{1}{4}$$ and $$\\frac{1}{16}$$",
+        "text": "What is the common ratio between $$\\frac{1}{4}$$ and $$\\frac{1}{16}$$? Effectively, what is $$\\frac{\\frac{1}{4}}{\\frac{1}{16}}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2b-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the series is geometric. The common ratio is $$r=\\frac{1}{4}$$."
+        ],
+        "dependencies": [
+            "a18d102geometric2b-h13"
+        ],
+        "title": "Determining Commonality in Ratios",
+        "text": "Are the ratios between consecutive terms common?",
+        "variabilization": {}
+    }
+]

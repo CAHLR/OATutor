@@ -1,1 +1,0 @@
-import hints from "./ad220b3GraphQuadratic1a-index.js"; const step = {id: "ad220b3GraphQuadratic1a", stepAnswer: ["Down"], problemType: "TextBox", stepTitle: "$$f(x)=-2x^2-6x-7$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

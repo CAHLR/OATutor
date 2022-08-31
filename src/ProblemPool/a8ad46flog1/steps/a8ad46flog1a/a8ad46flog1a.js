@@ -1,1 +1,0 @@
-import hints from "./a8ad46flog1a-index.js"; const step = {id: "a8ad46flog1a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$2*\\log_{5}\\left(x\\right)=\\log_{5}\\left(81\\right)$$.", stepBody: "Solve for x.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

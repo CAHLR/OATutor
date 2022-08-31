@@ -1,1 +1,0 @@
-var hints = [{id: "a0f69c4conic9a-h1", type: "scaffold", problemType: "TextBox", answerType: "arithmetic", hintAnswer: ["2"], dependencies: [], title: "Standard Form of Conic", text: "Since the equation is already in standard form r=(ep)/(1~(ecosθ), identify the eccentricity (e).", variabilization: {}}, ]; export {hints};

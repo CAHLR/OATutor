@@ -1,1 +1,0 @@
-import hints from "./a10b60arealnumbers12b-index.js"; const step = {id: "a10b60arealnumbers12b", stepAnswer: ["(2*x**2)*sqrt(4,3*x**2)/y**2"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{\\frac{48x^{10}}{y^8}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

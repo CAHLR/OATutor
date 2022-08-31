@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities1a-index.js"; const step = {id: "afaf721inequalities1a", stepAnswer: ["$$[-3,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$x \\geq -3$$", stepBody: "", choices: ["$$[-3,\\infty)$$", "$$[3,\\infty)$$", "$$(-\\infty,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

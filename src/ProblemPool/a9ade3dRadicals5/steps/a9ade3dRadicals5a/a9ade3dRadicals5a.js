@@ -1,1 +1,0 @@
-import hints from "./a9ade3dRadicals5a-index.js"; const step = {id: "a9ade3dRadicals5a", stepAnswer: ["$$4\\sqrt{3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{48}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

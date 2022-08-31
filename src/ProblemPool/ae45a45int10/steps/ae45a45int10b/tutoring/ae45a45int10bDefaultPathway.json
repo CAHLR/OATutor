@@ -1,0 +1,40 @@
+[
+    {
+        "id": "ae45a45int10b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "65"
+        ],
+        "dependencies": [],
+        "title": "Multiplication",
+        "text": "What is $$13\\times5$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int10b-h1"
+        ],
+        "title": "Principle",
+        "text": "A negative number multiply by a positive number results in a negative value",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int10b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-65"
+        ],
+        "dependencies": [
+            "ae45a45int10b-h2"
+        ],
+        "title": "Principle",
+        "text": "What is the negative value of 65?",
+        "variabilization": {}
+    }
+]

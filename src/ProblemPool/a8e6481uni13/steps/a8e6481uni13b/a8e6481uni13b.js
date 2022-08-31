@@ -1,1 +1,0 @@
-import hints from "./a8e6481uni13b-index.js"; const step = {id: "a8e6481uni13b", stepAnswer: ["70"], problemType: "TextBox", stepTitle: "Find Hamilton's speed in the desert.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

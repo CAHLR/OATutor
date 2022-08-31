@@ -1,1 +1,0 @@
-import steps from "./a61c721rational17-index.js"; const problem = {id: "a61c721rational17", title: "Rational Expressions", body: "Add and subtract the rational expression, and then simplify.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.6 Rational Expressions", courseName: "Openstax: College Algebra"}; export { problem };

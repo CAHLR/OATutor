@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring3a-index.js"; const step = {id: "a10e4c3factoring3a", stepAnswer: ["$$5\\left(k+2\\right) \\left(k-5\\right)$$"], problemType: "TextBox", stepTitle: "$$5k^2-15k-50$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

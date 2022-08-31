@@ -1,1 +1,0 @@
-import hints from "./ad37b31probability2a-index.js"; const step = {id: "ad37b31probability2a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "TextBox", stepTitle: "Find the probability of rolling a number greater than 2.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

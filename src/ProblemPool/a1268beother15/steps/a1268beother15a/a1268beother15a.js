@@ -1,1 +1,0 @@
-import hints from "./a1268beother15a-index.js"; const step = {id: "a1268beother15a", stepAnswer: ["5,1"], problemType: "MultipleChoice", stepTitle: "$${\\left(x-3\\right)}^2-4=0$$", stepBody: "", choices: ["4,2", "4,5", "5,1", "4,6"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial12a-index.js"; const step = {id: "aaebddaPolynomial12a", stepAnswer: ["$$-10pq+3q^2$$"], problemType: "TextBox", stepTitle: "Subtract $$p^2+10pq-2q^2$$ from $$p^2+q^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

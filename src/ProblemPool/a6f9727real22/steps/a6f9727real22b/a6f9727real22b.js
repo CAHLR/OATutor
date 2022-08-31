@@ -1,1 +1,0 @@
-import hints from "./a6f9727real22b-index.js"; const step = {id: "a6f9727real22b", stepAnswer: ["$$\\frac{9}{3}$$"], problemType: "MultipleChoice", stepTitle: "3", stepBody: "", choices: ["$$\\frac{3}{0}$$", "$$\\frac{6}{3}$$", "$$\\frac{9}{3}$$", "$$\\frac{12}{3}$$", "$$\\frac{15}{4}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

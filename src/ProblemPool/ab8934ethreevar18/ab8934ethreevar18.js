@@ -1,1 +1,0 @@
-import steps from "./ab8934ethreevar18-index.js"; const problem = {id: "ab8934ethreevar18", title: "Finding the Solution to a Dependent System of Equations", body: "Solve the following system.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 Systems of Linear Equations: Three Variables", courseName: "Openstax: College Algebra"}; export { problem };

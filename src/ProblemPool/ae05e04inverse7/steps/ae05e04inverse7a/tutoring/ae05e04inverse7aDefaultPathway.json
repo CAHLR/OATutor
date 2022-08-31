@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ae05e04inverse7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute y for f(x)",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae05e04inverse7a-h1"
+        ],
+        "title": "Swap",
+        "text": "Swap y and x",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae05e04inverse7a-h2"
+        ],
+        "title": "Multiply",
+        "text": "Multiply $$y+2$$ to both sides",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x \\left(y+2\\right)=3$$"
+        ],
+        "dependencies": [
+            "ae05e04inverse7a-h3"
+        ],
+        "title": "Result",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae05e04inverse7a-h4"
+        ],
+        "title": "Expand",
+        "text": "Expand the left hand side.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae05e04inverse7a-h5"
+        ],
+        "title": "Subtract",
+        "text": "Subtract 2x from both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$xy=-2x+3$$"
+        ],
+        "dependencies": [
+            "ae05e04inverse7a-h6"
+        ],
+        "title": "Result",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae05e04inverse7a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae05e04inverse7a-h7"
+        ],
+        "title": "Divide",
+        "text": "Divide x from both sides to get the final answer.",
+        "variabilization": {}
+    }
+]

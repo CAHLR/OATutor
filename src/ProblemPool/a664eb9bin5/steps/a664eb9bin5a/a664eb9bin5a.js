@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin5a-index.js"; const step = {id: "a664eb9bin5a", stepAnswer: ["$$x^6+6x^5+15x^4 y+20x^3+15x^2+6x^1+1$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+1\\right)}^6$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

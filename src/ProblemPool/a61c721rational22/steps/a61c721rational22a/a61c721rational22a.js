@@ -1,1 +1,0 @@
-import hints from "./a61c721rational22a-index.js"; const step = {id: "a61c721rational22a", stepAnswer: ["$$\\frac{\\left(d+5\\right) \\left(d-5\\right)}{5d-1} \\left(5d+1\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{2d^2+15d+25}{4d^2-25}$$ * $$\\frac{2d^2-15d+25}{25d-1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

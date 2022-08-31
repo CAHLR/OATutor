@@ -1,1 +1,0 @@
-import hints from "./a374ff4inequalities4a-index.js"; const step = {id: "a374ff4inequalities4a", stepAnswer: ["$$\\frac{-5}{2}$$"], problemType: "TextBox", stepTitle: "", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

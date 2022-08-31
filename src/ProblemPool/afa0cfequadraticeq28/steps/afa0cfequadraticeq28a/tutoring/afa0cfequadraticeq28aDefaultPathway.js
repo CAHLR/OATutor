@@ -1,1 +1,0 @@
-var hints = [{id: "afa0cfequadraticeq28a-h1", type: "hint", dependencies: [], title: "Square Root Property", text: "If $$x^2=k$$, and $$k \\geq 0$$, then $$x=\\sqrt{k}$$ or $$x=-\\sqrt{k}$$.", variabilization: {}}, ]; export {hints};

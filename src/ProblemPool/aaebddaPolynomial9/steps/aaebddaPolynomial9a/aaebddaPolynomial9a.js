@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial9a-index.js"; const step = {id: "aaebddaPolynomial9a", stepAnswer: ["$$11y^2-10y+2$$"], problemType: "TextBox", stepTitle: "$$7y^2-2y+9+4y^2-8y-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
