@@ -32,11 +32,13 @@
   },
   "scripts": {
     "start": "cross-env PORT=3001 GENERATE_SOURCEMAP=false react-scripts start",
-    "prestart": "node src/tools/generateFlatProblemPool.js",
+    "prestart": "node src/tools/preprocessProblemPool.js",
     "build": "react-scripts build",
-    "prebuild": "node src/tools/generateFlatProblemPool.js",
+    "build-localhost": "cross-env PUBLIC_URL=/ react-scripts build",
+    "prebuild": "node src/tools/preprocessProblemPool.js",
+    "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
     "test": "react-scripts test",
-    "pretest": "node src/tools/generateFlatProblemPool.js",
+    "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject"
   },
   "browserslist": {

@@ -8,7 +8,7 @@ import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
 
-let problemPool = require('../generated/poolFile.json')
+let problemPool = require('../generated/flatProblemPool.json')
 
 let seed = Date.now().toString();
 console.log("Generated seed");
