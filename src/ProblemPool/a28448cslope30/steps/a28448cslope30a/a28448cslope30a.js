@@ -1,1 +1,0 @@
-import hints from "./a28448cslope30a-index.js"; const step = {id: "a28448cslope30a", stepAnswer: ["Perpendicular"], problemType: "MultipleChoice", stepTitle: "$$8x-2y=7$$, $$3x+12y=9$$", stepBody: "", choices: ["Perpendicular", "Not Perpendicular"], answerType: "string", hints: hints, variabilization: {}}; export {step};

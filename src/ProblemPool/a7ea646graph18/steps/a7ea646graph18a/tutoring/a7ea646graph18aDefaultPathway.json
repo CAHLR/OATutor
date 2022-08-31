@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a7ea646graph18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substituting t",
+        "text": "We can let $$t=x^3$$ and substitute into the equation. We now have $$g(t)=t^2-7t-8$$. This is a quadratic that we can factor normally.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7ea646graph18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7ea646graph18a-h1"
+        ],
+        "title": "Factoring the Quadratic",
+        "text": "Using factoring, we can convert $$t^2-7t-8$$ to $$\\left(t-8\\right) \\left(t+1\\right)$$. So, our equation is now $$g(t)=\\left(t-8\\right) \\left(t+1\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7ea646graph18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7ea646graph18a-h2"
+        ],
+        "title": "Solving for t",
+        "text": "We can now solve for t by setting the equation equal to 0. $$0=\\left(t-8\\right) \\left(t+1\\right)$$. $$t=8, -1$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7ea646graph18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7ea646graph18a-h3"
+        ],
+        "title": "Solving for the Intercepts",
+        "text": "Since we know the values of t, we can take their cube root to find the values of x. $$x=2, -1$$. This means our intercepts are (2,0) and (-1,0).",
+        "variabilization": {}
+    }
+]

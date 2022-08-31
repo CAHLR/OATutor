@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a8d511eDeterminant1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Write the matrix in determinant form",
+        "variabilization": {}
+    },
+    {
+        "id": "a8d511eDeterminant1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant1b-h1"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the products of the diagonals",
+        "variabilization": {}
+    },
+    {
+        "id": "a8d511eDeterminant1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-8"
+        ],
+        "dependencies": [
+            "a8d511eDeterminant1b-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is $$0negneg}\\left(3\\right)-\\operatorname{negneg}\\left(4\\right) \\operatorname{\\left(-2\\right)$$?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities30a-index.js"; const step = {id: "afaf721inequalities30a", stepAnswer: ["$$[3,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$6h-4(h-1) \\leq 7h-11$$", stepBody: "", choices: ["$$[3,\\infty)$$", "$$[-3,\\infty)$$", "$$(-\\infty,3]$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

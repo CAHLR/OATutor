@@ -1,1 +1,0 @@
-import hints from "./a9ade3dRadicals15a-index.js"; const step = {id: "a9ade3dRadicals15a", stepAnswer: ["$$z \\sqrt[3]{z^2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{z^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ab8934ethreevar12a-index.js"; const step = {id: "ab8934ethreevar12a", stepAnswer: ["(1,-1,2)"], problemType: "MultipleChoice", stepTitle: "x-2y+3z=9,-x+3y-z=-6,2x-5y+5z=17", stepBody: "", choices: ["(1,-1,3)", "(1,1,2)", "(1,-1,2)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

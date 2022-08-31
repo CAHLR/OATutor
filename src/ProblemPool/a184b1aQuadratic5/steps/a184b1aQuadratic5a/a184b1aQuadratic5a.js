@@ -1,1 +1,0 @@
-import hints from "./a184b1aQuadratic5a-index.js"; const step = {id: "a184b1aQuadratic5a", stepAnswer: ["$$a=-3$$ or 5"], problemType: "MultipleChoice", stepTitle: "$$a^2-2a=15$$", stepBody: "", choices: ["$$a=1$$ or 5", "$$a=-2$$ or 5", "$$a=-3$$ or 5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

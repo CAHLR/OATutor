@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a60a373solverat24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Lowest Common Denominator",
+        "text": "The first step is to find the lowest common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m^2$$"
+        ],
+        "dependencies": [
+            "a60a373solverat24a-h1"
+        ],
+        "title": "Lowest Common Denominator",
+        "text": "What is the lowest common denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat24a-h2"
+        ],
+        "title": "Distribute and multiply",
+        "text": "Distribute and multiply the lowest common denominator to all the terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat24a-h3"
+        ],
+        "title": "Quadratic Form",
+        "text": "Rearrange the equation into the quadratic form and factor.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(m-4\\right) \\left(m+2\\right)=0$$"
+        ],
+        "dependencies": [
+            "a60a373solverat24a-h4"
+        ],
+        "title": "Quadratic Form",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "m=4, m=-2"
+        ],
+        "dependencies": [
+            "a60a373solverat24a-h5"
+        ],
+        "title": "Zero Product Property",
+        "text": "Solve for m. Please input the answer as $$variable=answer$$. If there are two answers, please input the answer as $$variable=answer1$$, $$variable=answer2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat24a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat24a-h6"
+        ],
+        "title": "Double Check",
+        "text": "Plug answers for a back into the original equation to make the sure answer is correct and not undefined at any point.",
+        "variabilization": {}
+    }
+]

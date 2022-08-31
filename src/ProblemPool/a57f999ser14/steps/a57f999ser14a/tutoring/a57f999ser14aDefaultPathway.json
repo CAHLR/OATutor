@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a57f999ser14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify $$a_1$$",
+        "text": "The first term is $$a_1=0.4$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "a57f999ser14a-h1"
+        ],
+        "title": "Identify r",
+        "text": "To find r, divide the 2nd term by the 1st term. What is $$r=\\frac{-2}{0.4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser14a-h2"
+        ],
+        "title": "Identify n",
+        "text": "We are given that $$n=7$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser14a-h3"
+        ],
+        "title": "Formula for the Sum of the first n terms of a Geometric Series",
+        "text": "Substitute values for $$a_1$$, r, and n into the formula: $$S_n=\\frac{a_1 \\left(1-r^n\\right)}{1-r}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5208.4"
+        ],
+        "dependencies": [
+            "a57f999ser14a-h4"
+        ],
+        "title": "Simplify to find $$S_7$$",
+        "text": "What is $$S_7=\\frac{0.4\\left(1-{negneg}\\left(5\\right)}^7\\right)}{1-\\operatorname{\\left(-5\\right)}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser14a-h5"
+        ],
+        "title": "Partial Sum",
+        "text": "The partial sum is 5208.4.",
+        "variabilization": {}
+    }
+]

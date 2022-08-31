@@ -1,1 +1,0 @@
-import hints from "./ab1ad7fGenStr22a-index.js"; const step = {id: "ab1ad7fGenStr22a", stepAnswer: ["0.4"], problemType: "TextBox", stepTitle: "$$0.36\\left(100n+5\\right)=0.6\\left(30n+15\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

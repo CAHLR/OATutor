@@ -1,1 +1,0 @@
-import hints from "./ad291beRadRat14a-index.js"; const step = {id: "ad291beRadRat14a", stepAnswer: ["$$\\frac{3\\sqrt{x}-\\sqrt{3x}}{2}$$"], problemType: "TextBox", stepTitle: "Write $$\\frac{\\sqrt{12x}}{2+\\sqrt{23}}$$ in simplest form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota15b-index.js"; const step = {id: "af36e21FunNota15b", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "f(2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

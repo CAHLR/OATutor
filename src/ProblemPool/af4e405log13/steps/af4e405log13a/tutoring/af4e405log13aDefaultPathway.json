@@ -1,0 +1,140 @@
+[
+    {
+        "id": "af4e405log13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to graph $$y=\\log_{2}\\left(x\\right)$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2^y=x$$"
+        ],
+        "dependencies": [
+            "af4e405log13a-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$y=\\log_{2}\\left(x\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4e405log13a-h2"
+        ],
+        "title": "Determining Points of the Graph",
+        "text": "Next, we will use point plotting to determine which graph is correct. It will be easier to start with values of y to get values of x.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "af4e405log13a-h3"
+        ],
+        "title": "Determining x when $$y=-2$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=-2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "af4e405log13a-h4"
+        ],
+        "title": "Determining x when $$y=-1$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=-1$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "af4e405log13a-h5"
+        ],
+        "title": "Determining x when $$y=0$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=0$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "af4e405log13a-h6"
+        ],
+        "title": "Determining x when $$y=1$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=1$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "af4e405log13a-h7"
+        ],
+        "title": "Determining x when $$y=2$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
+        "dependencies": [
+            "af4e405log13a-h8"
+        ],
+        "title": "Determining x when $$y=3$$",
+        "text": "We know $$x=2^y$$ so what is x when $$y=3$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log13a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph B"
+        ],
+        "dependencies": [
+            "af4e405log13a-h9"
+        ],
+        "title": "Determining the Correct Graph",
+        "text": "Which of the graphs provided fits each of the 6 plot points (x, y) that we found above where x is the horizontal axis and y is the vertical axis?\\n##figure2.gif##",
+        "variabilization": {}
+    }
+]

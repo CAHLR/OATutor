@@ -1,1 +1,0 @@
-import hints from "./a9ff35apoly1a-index.js"; const step = {id: "a9ff35apoly1a", stepAnswer: ["$$\\frac{2}{5}$$, $$\\frac{1}{6}$$"], problemType: "MultipleChoice", stepTitle: "Solve: $$(5n-2)(6n-1)=0$$", stepBody: "", choices: ["$$\\frac{2}{5}$$, $$\\frac{1}{6}$$", "-5, 4", "5, 6", "2, 3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

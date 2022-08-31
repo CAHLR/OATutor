@@ -1,1 +1,0 @@
-import hints from "./a0a04b1divmonomial16a-index.js"; const step = {id: "a0a04b1divmonomial16a", stepAnswer: ["$$\\frac{9}{49}$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{3}{7}\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

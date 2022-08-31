@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a9cf449complex3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Adding Complex Numbers",
+        "text": "The first step to add complex numbers is to add real and imaginary parts separately.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex3a-h1"
+        ],
+        "title": "i Definition",
+        "text": "i represents the square root of -1, which is an imaginary number.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex3a-h2"
+        ],
+        "title": "Real Parts in the Expression",
+        "text": "3 and 2 are the real parts.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex3a-h3"
+        ],
+        "title": "Imaginary Parts in the Expression",
+        "text": "-4i and 5i are the imaginary parts.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "a9cf449complex3a-h4"
+        ],
+        "title": "Sum of the Real Parts",
+        "text": "What is the sum of the real parts?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "i"
+        ],
+        "dependencies": [
+            "a9cf449complex3a-h5"
+        ],
+        "title": "Sum of the Imaginary Parts",
+        "text": "What is the sum of the imaginary parts?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex3a-h6"
+        ],
+        "title": "Writing the Final Answer",
+        "text": "Next, write the expression as the sum of the real and imaginary numbers.",
+        "variabilization": {}
+    }
+]

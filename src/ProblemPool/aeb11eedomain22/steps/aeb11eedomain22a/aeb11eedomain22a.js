@@ -1,1 +1,0 @@
-import hints from "./aeb11eedomain22a-index.js"; const step = {id: "aeb11eedomain22a", stepAnswer: ["$$(-\\infty,3]$$"], problemType: "MultipleChoice", stepTitle: "$$f(x)=3-\\sqrt{6-2x}$$", stepBody: "", choices: ["$$(-\\infty,-3)$$", "$$(-\\infty,3]$$", "$$[3,\\infty)$$", "$$(-\\infty,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

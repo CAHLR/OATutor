@@ -1,1 +1,0 @@
-import hints from "./a9cf449complex17a-index.js"; const step = {id: "a9cf449complex17a", stepAnswer: ["4-6i"], problemType: "TextBox", stepTitle: "$$\\frac{6+4i}{i}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

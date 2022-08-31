@@ -1,1 +1,0 @@
-import hints from "./af1a2a0roots8b-index.js"; const step = {id: "af1a2a0roots8b", stepAnswer: ["23"], problemType: "TextBox", stepTitle: "$$\\sqrt{64}+\\sqrt{225}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

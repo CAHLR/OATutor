@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp16c-index.js"; const step = {id: "a6d0007exp16c", stepAnswer: ["$$\\frac{q^{24}}{p^{32}}$$"], problemType: "TextBox", stepTitle: "$${\\left(p^{-4} q^3\\right)}^8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

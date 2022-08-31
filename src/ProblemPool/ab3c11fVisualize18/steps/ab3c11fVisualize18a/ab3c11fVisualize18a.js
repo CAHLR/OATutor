@@ -1,1 +1,0 @@
-import hints from "./ab3c11fVisualize18a-index.js"; const step = {id: "ab3c11fVisualize18a", stepAnswer: ["$$\\frac{-3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{6-3\\left(5\\right)}{3^2+3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af60b4fellipse27a-index.js"; const step = {id: "af60b4fellipse27a", stepAnswer: ["$$24\\pi$$"], problemType: "MultipleChoice", stepTitle: "$$\\frac{{\\left(x+6\\right)}^2}{16}+\\frac{{\\left(y-6\\right)}^2}{36}=1$$", stepBody: "", choices: ["$$24\\pi$$", "$$10\\pi$$", "$$5\\pi$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

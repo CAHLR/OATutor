@@ -1,0 +1,150 @@
+[
+    {
+        "id": "af227bbMoApp5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify known quantities",
+        "text": "The known quantities are 8, 3 and 28.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp5c-h1"
+        ],
+        "title": "Determine unknown quantities",
+        "text": "There are four unknown quantities, the number of applications that Ben and Henry originally filled out and the number of applications that Ben and Henry each filled out in total.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp5c-h2"
+        ],
+        "title": "Assign a variable",
+        "text": "Because there are more than 1 unknown quantities, we should choose one of them, for example, the number of applications Henry originally filled out, as x.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h4",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp5c-h3"
+        ],
+        "title": "Write the other quantities",
+        "text": "After choosing x, we should write other three quantities in terms of x.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+8$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h4"
+        ],
+        "title": "Applications Ben originally filled out",
+        "text": "When Given Ben originally filled out 8 more applications than Henry, how many applications did Ben originally fill out?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h5"
+        ],
+        "title": "Applications Henry filled out in total",
+        "text": "When given Henry filled out 3 additional applications, how many applications did Henry fill out in total?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+8+3$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h6"
+        ],
+        "title": "Applications Ben filled out in total",
+        "text": "When given Ben filled out 3 additional applications, how many applications did Ben fill out in total?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h8",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp5c-h7"
+        ],
+        "title": "Write an equation",
+        "text": "Then write an equation interpreting the words as mathematical operations.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3+x+8+3=28$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h8"
+        ],
+        "title": "Translation to Math Operations",
+        "text": "What is the mathematical form of \\\"bringing the total to 28\\\"?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h9"
+        ],
+        "title": "Simplify and Solve",
+        "text": "Solve the equation we write. What is x?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "af227bbMoApp5c-h10"
+        ],
+        "title": "Calculate the other target quantity",
+        "text": "What is $$x+8$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp5c-h12",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp5c-h11"
+        ],
+        "title": "Explain the solution",
+        "text": "Henry originally filled out 7 applications and Ben originally filled out 15 applications.",
+        "variabilization": {}
+    }
+]

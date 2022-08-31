@@ -1,1 +1,0 @@
-import hints from "./a08d293Rational25a-index.js"; const step = {id: "a08d293Rational25a", stepAnswer: ["$$x^8$$"], problemType: "TextBox", stepTitle: "Simplify the expression", stepBody: "$${\\left(x^6\\right)}^{\\frac{4}{3}}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

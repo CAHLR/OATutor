@@ -1,1 +1,0 @@
-import hints from "./a54f58cgraphineq17a-index.js"; const step = {id: "a54f58cgraphineq17a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is (6,-4) a solution to the system of inequalities $$y>\\frac{2}{3} x-5$$, $$x+\\frac{1}{2} y \\leq 4$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

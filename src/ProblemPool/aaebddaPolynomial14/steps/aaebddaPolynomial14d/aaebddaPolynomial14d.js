@@ -1,1 +1,0 @@
-import hints from "./aaebddaPolynomial14d-index.js"; const step = {id: "aaebddaPolynomial14d", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "d) (f-g)(-2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

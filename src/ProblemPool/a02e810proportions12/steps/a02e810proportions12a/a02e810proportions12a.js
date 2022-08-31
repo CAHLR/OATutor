@@ -1,1 +1,0 @@
-import hints from "./a02e810proportions12a-index.js"; const step = {id: "a02e810proportions12a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$\\frac{2x+15}{9}=\\frac{7x+3}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

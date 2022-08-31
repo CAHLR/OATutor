@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9ae528add20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify Both Sides",
+        "text": "We want to start by simplifying both sides and comparing the simplified value. Since the left hand side is already simplified, all we need to do is to evaluate the right hand side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add20b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-8"
+        ],
+        "dependencies": [
+            "a9ae528add20b-h1"
+        ],
+        "title": "Right Hand Side",
+        "text": "What does $$-|-8|$$ evaluate to?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9ae528add20b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Right Hand Side",
+                "text": "We know that $$|-8|=distance$$ from -8 to $$0=8$$, so the opposite of $$|-8|$$ is -8.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9ae528add20b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ae528add20b-h2"
+        ],
+        "title": "Comparing Numbers",
+        "text": "Now we are left to compare 8 and -8. Since 8 is to the right of -8 on the number line, we say $$8>-8$$. Therefore, $$8>-|-8|$$.",
+        "variabilization": {}
+    }
+]

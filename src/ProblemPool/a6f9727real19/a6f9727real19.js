@@ -1,1 +1,0 @@
-import steps from "./a6f9727real19-index.js"; const problem = {id: "a6f9727real19", title: "Simplifying Algebraic Equations", body: "For the following exercises, simplify the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

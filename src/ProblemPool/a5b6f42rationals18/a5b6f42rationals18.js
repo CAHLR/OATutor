@@ -1,1 +1,0 @@
-import steps from "./a5b6f42rationals18-index.js"; const problem = {id: "a5b6f42rationals18", title: "Finding X and Y intercepts of rational functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.6 Rational Functions", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./aabf119factor19a-index.js"; const step = {id: "aabf119factor19a", stepAnswer: ["$$\\left(5h+3\\right) \\left(2h-3\\right)$$"], problemType: "TextBox", stepTitle: "$$10h^2$$ - 9h - 9", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

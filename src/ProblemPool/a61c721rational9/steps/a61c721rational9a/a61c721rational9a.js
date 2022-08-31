@@ -1,1 +1,0 @@
-import hints from "./a61c721rational9a-index.js"; const step = {id: "a61c721rational9a", stepAnswer: ["$$\\frac{y+5}{y+6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{y^2+10y+25}{y^2+11y+30}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

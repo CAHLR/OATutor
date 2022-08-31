@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a5c95e8polyzero31a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "i"
+        ],
+        "dependencies": [],
+        "title": "Finding the fourth root.",
+        "text": "By the Complex Conjugate Theorem, since i is a zero, what is the last zero",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero31a-h1"
+        ],
+        "title": "Expressing f(x) in terms of the roots, then expand it.",
+        "text": "We can express f(x) as the multiplication of the four factors scaled by a constant a. In this case, we know that the factors are (x + 3), (x - 2), (x - i), (x + i). As such, we can rewrite f(x) $$=$$ a*(x + 3)*(x - 2)*(x - i)*(x + i).",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2$$ + x - 6"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero31a-h2"
+        ],
+        "title": "Expand the real factors of f(x).",
+        "text": "What is $$\\left(x+3\\right) \\left(x-2\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+1$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero31a-h2"
+        ],
+        "title": "Expand the complex factors of f(x).",
+        "text": "What is $$\\left(x-i\\right) \\left(x+i\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "a*(x**4 + $$x^3$$ - $$5x^2$$ + x - 6)"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero31a-h3",
+            "a5c95e8polyzero31a-h4"
+        ],
+        "title": "Expanding the rest of the polynomial. Leave the constant scaling factor a outside. (Example: a*(x**2 + 1)",
+        "text": "What is (x**2+x - 6)*(x**2+1)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero31a-h5"
+        ],
+        "title": "Solving for the scaling factor, a.",
+        "text": "Use the fact that $$f(-2)=100$$ to find a.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-5"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero31a-h6"
+        ],
+        "title": "Solving for the scaling factor, a.",
+        "text": "Substitute $$x=-2$$ and $$f(-2)=100$$ into the f(x) $$=$$ $$a \\left(x^4+x^3-5x^2+x-6\\right)$$ that was previously found. Then, solve for a.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero31a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero31a-h7"
+        ],
+        "title": "Multiply a that was found into the rest of the polynomial.",
+        "text": "",
+        "variabilization": {}
+    }
+]

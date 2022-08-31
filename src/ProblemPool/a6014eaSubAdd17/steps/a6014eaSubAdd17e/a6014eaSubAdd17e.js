@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd17e-index.js"; const step = {id: "a6014eaSubAdd17e", stepAnswer: ["$$a=121$$"], problemType: "TextBox", stepTitle: "$$a-45=76$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly27a-index.js"; const step = {id: "a0cc26bpoly27a", stepAnswer: ["$$4t^2+x^2+4t-5tx-x$$"], problemType: "TextBox", stepTitle: "$$\\left(4t-x\\right) \\left(t-x+1\\right)$$", stepBody: "Expand the expression", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

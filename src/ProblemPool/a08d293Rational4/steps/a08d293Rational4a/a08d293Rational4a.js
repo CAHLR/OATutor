@@ -1,1 +1,0 @@
-import hints from "./a08d293Rational4a-index.js"; const step = {id: "a08d293Rational4a", stepAnswer: ["b ** $$\\frac{1}{5}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression", stepBody: "b ** $$\\frac{1}{5}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

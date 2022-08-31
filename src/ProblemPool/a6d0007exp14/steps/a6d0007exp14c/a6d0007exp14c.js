@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp14c-index.js"; const step = {id: "a6d0007exp14c", stepAnswer: ["$$-27y^{15}$$"], problemType: "TextBox", stepTitle: "$${\\left(-3y^5\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

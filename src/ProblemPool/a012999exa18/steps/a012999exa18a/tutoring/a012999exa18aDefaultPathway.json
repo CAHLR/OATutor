@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a012999exa18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-3a"
+        ],
+        "dependencies": [
+            "a012999exa18a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is -3 times a?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-21"
+        ],
+        "dependencies": [
+            "a012999exa18a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is -3 times 7?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa18a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae3c1a1exponential5a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "18"
+        ],
+        "dependencies": [],
+        "title": "Determining Years",
+        "text": "How many years after 2013 till 2031?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential5a-h1"
+        ],
+        "title": "Using Substitution",
+        "text": "Substitue $$t=18$$ into the population growth function",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential5a-h2"
+        ],
+        "title": "Order of Operations",
+        "text": "Use order of operations to simplify the expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.24"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential5a-h3"
+        ],
+        "title": "Using Exponents",
+        "text": "$${1.012}^{18}$$ (Round to three decimal places but keep original number for calculations.)",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.549"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential5a-h4"
+        ],
+        "title": "Using Multiplication",
+        "text": "$$1.25\\times1.2395$$ (Use original decimal instead of rounded three decimal places in calculation.)",
+        "variabilization": {}
+    }
+]

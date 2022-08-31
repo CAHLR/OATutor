@@ -1,1 +1,0 @@
-var hints = [{id: "ac98d98matrices10a-h1", type: "hint", dependencies: [], title: "We must interchange rows 2 and 3, as shown in the image:", text: "\n##figure1.gif##", variabilization: {}}, ]; export {hints};

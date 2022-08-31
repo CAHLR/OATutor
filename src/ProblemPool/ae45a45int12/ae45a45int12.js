@@ -1,1 +1,0 @@
-import steps from "./ae45a45int12-index.js"; const problem = {id: "ae45a45int12", title: "Simplify Expressions with Integers", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 Integers", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

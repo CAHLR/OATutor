@@ -1,0 +1,40 @@
+[
+    {
+        "id": "af4e405log30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$\\log_{a}\\left(81\\right)=2$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log30a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a^2=81$$"
+        ],
+        "dependencies": [
+            "af4e405log30a-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{a}\\left(81\\right)=2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "af4e405log30a-h2"
+        ],
+        "title": "Solve for a",
+        "text": "What is the solution for a in the exponential equation $$\\log_{a}\\left(81\\right)=2$$? Note that the domain of logarithmic equations is non-negative, so a must be non-negative!",
+        "variabilization": {}
+    }
+]

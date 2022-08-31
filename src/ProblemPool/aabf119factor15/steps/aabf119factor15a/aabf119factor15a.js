@@ -1,1 +1,0 @@
-import hints from "./aabf119factor15a-index.js"; const step = {id: "aabf119factor15a", stepAnswer: ["y"], problemType: "TextBox", stepTitle: "$$6y^4-2y^3+3y^2-y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

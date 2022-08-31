@@ -1,1 +1,0 @@
-var hints = [{id: "aabf119factor12a-h1", type: "hint", dependencies: [], title: "GCF", text: "Factor out the GCF $$\\frac{{\\left(x+2\\right)}^{-1}}{3}$$", variabilization: {}}, {id: "aabf119factor12a-h2", type: "hint", dependencies: ["aabf119factor12a-h1"], title: "Simplify", text: "Simplify the term other than the GCF", variabilization: {}}, ]; export {hints};

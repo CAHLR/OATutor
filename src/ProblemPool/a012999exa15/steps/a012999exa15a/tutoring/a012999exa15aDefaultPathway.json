@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a012999exa15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12x^3$$"
+        ],
+        "dependencies": [
+            "a012999exa15a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is 4x times $$3x^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-20x^2$$"
+        ],
+        "dependencies": [
+            "a012999exa15a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is 4x times -5x?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12x"
+        ],
+        "dependencies": [
+            "a012999exa15a-h3"
+        ],
+        "title": "Multiply pt4",
+        "text": "What is 4x times 3?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa15a-h4"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {}
+    }
+]

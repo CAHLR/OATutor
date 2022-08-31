@@ -1,1 +1,0 @@
-import hints from "./a4d2b33use11a-index.js"; const step = {id: "a4d2b33use11a", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "$$3x^2+4x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

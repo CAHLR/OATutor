@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper11a-index.js"; const step = {id: "a91e303graphhyper11a", stepAnswer: ["D"], problemType: "MultipleChoice", stepTitle: "Graph $$25y^2-9x^2=225$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

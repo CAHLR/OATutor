@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring1a-index.js"; const step = {id: "a10e4c3factoring1a", stepAnswer: ["$$2\\left(n+3\\right) \\left(n-7\\right)$$"], problemType: "TextBox", stepTitle: "$$2n^2-8n-42$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

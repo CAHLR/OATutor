@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a870b02DivMul16l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiplication property of equality",
+        "text": "If you multiply both sides of an equation by the same number, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16l-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$negneg}\\left(v\\right) \\operatorname{\\left(-1\\right)=negneg}\\left(72\\right) \\operatorname{\\left(-1\\right)$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul16l-h1"
+        ],
+        "title": "Multiplication",
+        "text": "Multiple -1 from each side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16l-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "72"
+        ],
+        "dependencies": [
+            "a870b02DivMul16l-h2"
+        ],
+        "title": "Simplification",
+        "text": "What do we get for v after simplifying the equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16l-h4",
+        "type": "hint",
+        "dependencies": [
+            "a870b02DivMul16l-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16l-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a870b02DivMul16l-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether -(72) equals -72.",
+        "variabilization": {}
+    }
+]

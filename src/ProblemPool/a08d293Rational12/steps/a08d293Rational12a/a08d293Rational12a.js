@@ -1,1 +1,0 @@
-import hints from "./a08d293Rational12a-index.js"; const step = {id: "a08d293Rational12a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "Simply the expression, enter No if no real solution", stepBody: "$${16}^{\\frac{1}{4}}$$ * (-1)", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

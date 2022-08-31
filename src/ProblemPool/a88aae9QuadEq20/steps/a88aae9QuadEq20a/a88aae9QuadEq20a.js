@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq20a-index.js"; const step = {id: "a88aae9QuadEq20a", stepAnswer: ["(-inf,-4]&[1,inf)"], problemType: "TextBox", stepTitle: "$$x^2+3x-4 \\geq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

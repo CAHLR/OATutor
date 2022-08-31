@@ -1,1 +1,0 @@
-import hints from "./a2d8720LinEqua31a-index.js"; const step = {id: "a2d8720LinEqua31a", stepAnswer: ["$$y=-\\left(\\frac{3}{5}\\right) x-\\frac{7}{5}$$"], problemType: "TextBox", stepTitle: "Find the equation of the line perpendicular to $$5x-3y+4=0$$ and passing through the point (-4,1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

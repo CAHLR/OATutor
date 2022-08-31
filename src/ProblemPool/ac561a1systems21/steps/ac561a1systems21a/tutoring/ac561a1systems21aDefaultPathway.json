@@ -1,0 +1,120 @@
+[
+    {
+        "id": "ac561a1systems21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "First, multiply the second equation by 25.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems21a-h1"
+        ],
+        "title": "Subtract",
+        "text": "Next, subtract the two equations.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9x^2-{\\operatorname{25}\\left(x-6\\right)}^2=200$$"
+        ],
+        "dependencies": [
+            "ac561a1systems21a-h2"
+        ],
+        "title": "Subtract",
+        "text": "What equation do you get after subtracting the two original equations.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems21a-h3"
+        ],
+        "title": "Expand",
+        "text": "Now, expand the quantity of $${\\left(x-6\\right)}^2$$ and multiply by -25 to simplify.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9x^2-25x^2+300x-900$$"
+        ],
+        "dependencies": [
+            "ac561a1systems21a-h4"
+        ],
+        "title": "Expand and multiply",
+        "text": "What is your new equation after expanding and multiplying $$-\\left({\\operatorname{25}\\left(x-6\\right)}^2\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems21a-h5"
+        ],
+        "title": "Solve",
+        "text": "Now, solve for x by combining like terms and factoring.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "5 and $$\\frac{55}{4}$$"
+        ],
+        "dependencies": [
+            "ac561a1systems21a-h6"
+        ],
+        "title": "Solve",
+        "text": "What are the two solutions for x?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems21a-h7"
+        ],
+        "title": "Substitute",
+        "text": "Now, plug in both values for x in seperate equations. $$x=\\frac{55}{4}$$ yields an equation with the imaginary number i, so you can disregard it, as it is not a real solution. Plug 5 into either of the original equations.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0"
+        ],
+        "dependencies": [
+            "ac561a1systems21a-h8"
+        ],
+        "title": "Substitute",
+        "text": "What does y equal when you plug in $$x=5$$ into either of the equations",
+        "variabilization": {}
+    },
+    {
+        "id": "ac561a1systems21a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems21a-h9"
+        ],
+        "title": "Answer",
+        "text": "The final solution for the system of nonlinear equations is (5,0)",
+        "variabilization": {}
+    }
+]

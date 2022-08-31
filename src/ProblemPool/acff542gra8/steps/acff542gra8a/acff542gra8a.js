@@ -1,1 +1,0 @@
-import hints from "./acff542gra8a-index.js"; const step = {id: "acff542gra8a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$(\\frac{1}{4},\\frac{7}{6})$$", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

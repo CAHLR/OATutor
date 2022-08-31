@@ -1,1 +1,0 @@
-import steps from "./a0f69c4conics3-index.js"; const problem = {id: "a0f69c4conics3", title: "Determine parts of the graph", body: "Find the directrix of the hyperbola.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.5 Conic Sections in Polar Coordinates", courseName: "Openstax: College Algebra"}; export { problem };

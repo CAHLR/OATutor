@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical20a-index.js"; const step = {id: "a81d715SolRadical20a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$${\\left(3x-2\\right)}^{\\frac{1}{2}}+1=6$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

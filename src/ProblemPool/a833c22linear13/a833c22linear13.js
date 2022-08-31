@@ -1,1 +1,0 @@
-import steps from "./a833c22linear13-index.js"; const problem = {id: "a833c22linear13", title: "Finding the Slope of a Line", body: "", steps: steps, variabilization: {}, oer: "https://www.openstax.org", lesson: "4.1 Linear Functions", courseName: "Openstax: College Algebra"}; export { problem };

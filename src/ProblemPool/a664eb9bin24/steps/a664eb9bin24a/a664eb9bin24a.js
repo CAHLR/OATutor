@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin24a-index.js"; const step = {id: "a664eb9bin24a", stepAnswer: ["$$x^3-12x^2+48x^1-64$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x-4\\right)}^3$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

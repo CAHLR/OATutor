@@ -1,0 +1,145 @@
+[
+    {
+        "id": "a3abd22AddRational8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "No, the denominators of terms in the expression are different. We can find the common denominator for both terms. Notice that $$y^2-4=-1\\left(4-y^2\\right)$$. We can multiply $$\\frac{negneg}\\left(1\\right)}{\\operatorname{\\left(-1\\right)}$$ with $$\\frac{6y-6}{4-y^2}$$. We can rewrite the expression as $$\\frac{y^2-5y}{y^2-4}-\\left(-\\frac{6y-6}{y^2-4}\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h2"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "Since all the terms in the expression have the same denominator, we can directly subtract their numerators.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^2+y-6$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational8a-h3"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "What is the difference of numerators for $$\\frac{y^2-5y}{y^2-4}-\\left(-\\frac{6y-6}{y^2-4}\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h4"
+        ],
+        "title": "Rewrite the expression",
+        "text": "We can rewrite $$\\frac{y^2-5y}{y^2-4}-\\frac{6y-6}{4-y^2}$$ as $$\\frac{y^2+y-6}{y^2-4}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h5"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "We can try to factor the numerator and denominator to see if we can further simplify the expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(y+3\\right) \\left(y-2\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational8a-h6"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$y^2+y-6$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(y-2\\right) \\left(y+2\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational8a-h7"
+        ],
+        "title": "Factor the Denominator",
+        "text": "Factor $$y^2-4$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h8"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "We can rewrite $$\\frac{y^2-5y}{y^2-4}-\\frac{6y-6}{4-y^2}$$ as $$\\frac{\\left(y+3\\right) \\left(y-2\\right)}{\\left(y-2\\right) \\left(y+2\\right)}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "y-2"
+        ],
+        "dependencies": [
+            "a3abd22AddRational8a-h9"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "What is the greatest common factor in numerator and denominator of $$\\frac{\\left(y+3\\right) \\left(y-2\\right)}{\\left(y-2\\right) \\left(y+2\\right)}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{y+3}{y+2}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational8a-h10"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "As the last step, we will cancel out y-2 from both numerator and denominator, what is the simplified form of $$\\frac{\\left(y+3\\right) \\left(y-2\\right)}{\\left(y-2\\right) \\left(y+2\\right)}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational8a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational8a-h11"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the expression ((y**2-5*y)/(y**2-4))-((6*y-6)/(4-y**2))and $$\\frac{y+3}{y+2}$$ are different because the domain of $$\\frac{y^2-5y}{y^2-4}-\\frac{6y-6}{4-y^2}$$ does not include $$x=2$$ and the domain of $$\\frac{y+3}{y+2}$$ does not exclude $$x=2$$.",
+        "variabilization": {}
+    }
+]

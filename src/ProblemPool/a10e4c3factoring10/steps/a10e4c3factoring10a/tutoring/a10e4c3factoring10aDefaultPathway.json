@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a10e4c3factoring10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find factor pairs of the first term",
+        "text": "The factors of $$8a^2$$ are 2a and 4a, and a and 8a.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring10a-h1"
+        ],
+        "title": "Find factor pairs of the third term",
+        "text": "The only factors of -5 are -1 and 5 or 1 and -5.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring10a-h2"
+        ],
+        "title": "Test",
+        "text": "Test all possibly combinations of the factors until the correct product is found.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring10a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$\\left(8a+5\\right) \\left(a-1\\right)$$,",
+        "variabilization": {}
+    }
+]

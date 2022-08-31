@@ -1,1 +1,0 @@
-import hints from "./a61c721rational8a-index.js"; const step = {id: "a61c721rational8a", stepAnswer: ["$$\\frac{\\left(x-y\\right) \\left(x+y\\right)}{x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{x}{y}-\\frac{y}{x}}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a9ff35apoly12a-index.js"; const step = {id: "a9ff35apoly12a", stepAnswer: ["-4, $$\\frac{2}{3}$$"], problemType: "MultipleChoice", stepTitle: "Solve: $$3x^2+10x-8=0$$", stepBody: "", choices: ["3, -3", "5, -3", "-4, $$\\frac{2}{3}$$", "-4, 2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

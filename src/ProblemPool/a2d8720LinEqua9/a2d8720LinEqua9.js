@@ -1,1 +1,0 @@
-import steps from "./a2d8720LinEqua9-index.js"; const problem = {id: "a2d8720LinEqua9", title: "Solving a Rational Equation by Factoring the Denominator", body: "Solve the following rational equation:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.2 Linear Equations in One Variable", courseName: "Openstax: College Algebra"}; export { problem };

@@ -1,1 +1,0 @@
-import steps from "./ae9e419IneqApp2-index.js"; const problem = {id: "ae9e419IneqApp2", title: "Dawn's Tablets", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "3.6 Solve Applications with Linear Inequalities", courseName: "Openstax: Elementary Algebra"}; export { problem };

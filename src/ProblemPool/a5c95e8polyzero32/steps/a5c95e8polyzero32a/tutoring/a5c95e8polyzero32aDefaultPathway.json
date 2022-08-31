@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5c95e8polyzero32a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the number of positive real roots.",
+        "text": "Count the number of sign changes in f(x).",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero32a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "2, 0"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero32a-h1"
+        ],
+        "title": "Determine the number of positive real roots.",
+        "text": "The number of positive real zeros is either equal to the number of sign changes of f(x) or is less than the number of sign changes by an even integer. (List the number of possibilities in descending order like so: 5, 3, 1)\\n##figure1.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero32a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the number of negative real roots.",
+        "text": "Count the number of sign changes in f(-x).",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero32a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "2, 0"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero32a-h3"
+        ],
+        "title": "Determine the number of negative real roots.",
+        "text": "The number of negative real zeros is either equal to the number of sign changes of f(-x) or is less than the number of sign changes by an even integer. (List the number of possibilities in descending order like so: 5, 3, 1)\\n##figure2.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero32a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero32a-h1",
+            "a5c95e8polyzero32a-h3"
+        ],
+        "title": "Different possibilities of roots. Consider that roots can be complex as well",
+        "text": "Recall that since the coefficients are real, by the Complex Conjugate Theorem, complex roots comes in pair as well. (There are 4 different possibilities)",
+        "variabilization": {}
+    }
+]

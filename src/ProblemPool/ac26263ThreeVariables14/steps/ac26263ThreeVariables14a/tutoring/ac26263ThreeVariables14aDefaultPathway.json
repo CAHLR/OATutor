@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ac26263ThreeVariables14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Multiply the first equation by 3 and subtract with the third equation: $$3\\left(x-y-z\\right)-3x-2y-7z=2\\times1-0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h1"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$-y+4z=3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h2"
+        ],
+        "title": "Addition",
+        "text": "Add the first equation to the second equation: $$x-y-z+\\left(-x+2y-3z\\right)=1+\\left(-4\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h3"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$y-4z=-3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h4"
+        ],
+        "title": "Calculation",
+        "text": "Add $$-y+4z=3$$ to $$y-4z=-3$$. $$\\left(-y+4z\\right)+y-4z=-3+\\left(-3\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "The equation becomes $$0=0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h6"
+        ],
+        "title": "Representation",
+        "text": "Rewrite y in the variable of z with $$y-4z=-3$$, so $$y=4z-3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h7"
+        ],
+        "title": "Substitution",
+        "text": "Substitute $$y=4z-3$$ into the first equation to get $$x-(4z-3)-z=1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h8"
+        ],
+        "title": "Calculation",
+        "text": "Rewrite x in the variable of z with the equation to get $$x=5z-2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables14a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables14a-h9"
+        ],
+        "title": "Principle",
+        "text": "z can be any number, so there are $$infinitely$$ many solutions",
+        "variabilization": {}
+    }
+]

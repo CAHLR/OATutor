@@ -1,1 +1,0 @@
-import hints from "./ab8b840systemeqs15a-index.js"; const step = {id: "ab8b840systemeqs15a", stepAnswer: ["(-0.3,-0.8)"], problemType: "MultipleChoice", stepTitle: "$$2x+4y=-3.8$$, $$9x-5y=1.3$$", stepBody: "", choices: ["(0.3, 0.8)", "(-0.3,-0.8)", "(-0.3, 0.8)", "(0.3,-0.8)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

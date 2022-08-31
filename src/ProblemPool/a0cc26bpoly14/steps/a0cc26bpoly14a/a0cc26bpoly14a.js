@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly14a-index.js"; const step = {id: "a0cc26bpoly14a", stepAnswer: ["$$4x^2+3x+19$$"], problemType: "TextBox", stepTitle: "$$12x^2+3x-8x^2-19$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

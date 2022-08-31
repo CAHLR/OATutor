@@ -1,1 +1,0 @@
-import hints from "./a9e42b3CompInv30a-index.js"; const step = {id: "a9e42b3CompInv30a", stepAnswer: ["27"], problemType: "TextBox", stepTitle: "Find the (g°f)(x) of the following functions.", stepBody: "f(x) $$=$$ $$4x+3$$, g(x) $$=$$ $$2x+5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

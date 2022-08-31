@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a8ad46flog6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Log Rules",
+        "text": "Logarithm multiplication rule: $$\\log_{a}\\left(b\\right)+\\log_{a}\\left(c\\right)=\\log_{a}\\left(b c\\right)$$, so $$\\log_{2}\\left(x\\right)+\\log_{2}\\left(x-6\\right)=\\log_{2}\\left(x \\left(x-6\\right)\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ad46flog6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog6a-h1"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "$$4=\\log_{2}\\left(16\\right)=\\log_{2}\\left(x \\left(x-6\\right)\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ad46flog6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog6a-h2"
+        ],
+        "title": "Matching bases",
+        "text": "Both $$\\log_{2}\\left(16\\right)$$ and $$\\log_{2}\\left(x \\left(x-6\\right)\\right)$$ containing same log base, the log can be removed, so it becomes $$x \\left(x-6\\right)=16$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ad46flog6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog6a-h3"
+        ],
+        "title": "Solve for x",
+        "text": "Given $$x \\left(x-6\\right)=16$$ solve for x. We can simplify it as $$x^2-6x-16=0$$. Then we can factor the quadratic and get $$\\left(x-8\\right) \\left(x+2\\right)=0$$ which gives $$x=8$$ or $$x=-2$$. Given $$\\log_{a}\\left(b\\right)$$, b can not be negative. We can omit the negative answer. Therefore $$x=8$$ is the only solution for this equation.",
+        "variabilization": {}
+    }
+]

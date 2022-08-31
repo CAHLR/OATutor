@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly7a-index.js"; const step = {id: "a0cc26bpoly7a", stepAnswer: ["$$6x^2-48x-54$$"], problemType: "TextBox", stepTitle: "$$\\left(2x-18\\right) \\left(3x+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a7ea646graph3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving for the y-intercept(s)",
+        "text": "Find the y intercept(s) by finding g(0).",
+        "variabilization": {}
+    },
+    {
+        "id": "a7ea646graph3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12"
+        ],
+        "dependencies": [
+            "a7ea646graph3a-h1"
+        ],
+        "title": "Solving for the y-intercept",
+        "text": "$$g(0)=$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a7ea646graph3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2, $$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a7ea646graph3a-h2"
+        ],
+        "title": "Solving for the x-intercept(s)",
+        "text": "The x-intercept(s) can be found by setting $$g(x)=0$$. $$x=$$?",
+        "variabilization": {}
+    }
+]

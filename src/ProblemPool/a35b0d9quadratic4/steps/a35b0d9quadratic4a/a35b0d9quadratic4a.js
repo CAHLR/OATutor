@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic4a-index.js"; const step = {id: "a35b0d9quadratic4a", stepAnswer: ["all real numbers"], problemType: "MultipleChoice", stepTitle: "What is the domain of f?", stepBody: "", choices: ["$$x>0$$", "all real numbers", "all real numbers except 0"], answerType: "string", hints: hints, variabilization: {}}; export {step};

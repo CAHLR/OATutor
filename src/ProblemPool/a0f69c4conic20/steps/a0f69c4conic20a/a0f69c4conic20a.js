@@ -1,1 +1,0 @@
-import hints from "./a0f69c4conic20a-index.js"; const step = {id: "a0f69c4conic20a", stepAnswer: ["$$8\\sqrt{x^2+y^2}-8x=3$$"], problemType: "TextBox", stepTitle: "Convert $$r=\\frac{3}{8-8cos\\left(\\theta\\right)}$$ to rectangular form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

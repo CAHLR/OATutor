@@ -1,1 +1,0 @@
-import hints from "./ac98d98matrices12a-index.js"; const step = {id: "ac98d98matrices12a", stepAnswer: ["$$/mat({0, 1, 0, 5}, {2, 1, -4, 5}, {3, -3, 1, -1})$$."], problemType: "TextBox", stepTitle: "mat({6,-5,2,3},{2,1,-4,5},{3,-3,1,-1}). Multiply row 3 by -2 and add to row 1.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

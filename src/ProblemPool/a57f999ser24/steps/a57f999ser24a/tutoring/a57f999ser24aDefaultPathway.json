@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a57f999ser24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explicit Formula",
+        "text": "The given formula, $$-\\left({\\left(-\\frac{1}{2}\\right)}^{k-1}\\right)$$, is exponential with a base of $$\\frac{-1}{2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser24a-h1"
+        ],
+        "title": "Identify r",
+        "text": "The series is geometric with a common ratio of $$\\frac{-1}{2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "a57f999ser24a-h2"
+        ],
+        "title": "Confirm that $$-1<r<1$$",
+        "text": "Is $$-1<\\frac{-1}{2}<1$$ True or False?",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser24a-h3"
+        ],
+        "title": "Sum of Infinite Geometric Series",
+        "text": "Since $$-1<\\frac{-1}{2}<1$$ is F; then sum is defined.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser24a-h4"
+        ],
+        "title": "Identify $$a_1$$ and r",
+        "text": "From the given formula, we are given that $$a_1=-1$$ and $$r=\\frac{-1}{2}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser24a-h5"
+        ],
+        "title": "Formula for the Sum of an Infinite Geometric Series",
+        "text": "Substitute values for $$a_1$$ and r into the formula: $$S=\\frac{a_1}{1-r}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a57f999ser24a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser24a-h6"
+        ],
+        "title": "Formula for the Sum of an Infinite Geometric Series",
+        "text": "The formula of the sum is $$S=\\frac{-1}{1-\\left(-\\frac{1}{2}\\right)}$$",
+        "variabilization": {}
+    }
+]

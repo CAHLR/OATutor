@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp7b-index.js"; const step = {id: "a6d0007exp7b", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\frac{-3x^5}{x^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

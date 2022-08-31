@@ -1,1 +1,0 @@
-import hints from "./a20771equad38a-index.js"; const step = {id: "a20771equad38a", stepAnswer: ["1, -2"], problemType: "TextBox", stepTitle: "$${\\left(2x+1\\right)}^2=9$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

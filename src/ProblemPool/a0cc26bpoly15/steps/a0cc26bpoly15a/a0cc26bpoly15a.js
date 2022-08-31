@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly15a-index.js"; const step = {id: "a0cc26bpoly15a", stepAnswer: ["$$3w^2+30w+21$$"], problemType: "TextBox", stepTitle: "$$6w^2+24w+24-3w^2-6w+3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

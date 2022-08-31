@@ -1,1 +1,0 @@
-import hints from "./aaa317eLinIneq19a-index.js"; const step = {id: "aaa317eLinIneq19a", stepAnswer: ["$$x \\geq -5$$"], problemType: "TextBox", stepTitle: "$$4x+7 \\geq 2x-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

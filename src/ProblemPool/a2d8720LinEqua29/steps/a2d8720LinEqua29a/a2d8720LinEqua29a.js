@@ -1,1 +1,0 @@
-import hints from "./a2d8720LinEqua29a-index.js"; const step = {id: "a2d8720LinEqua29a", stepAnswer: ["$$y=-\\left(\\frac{5}{3}\\right) x+10$$"], problemType: "TextBox", stepTitle: "Write the equation of line parallel to a $$5x+3y=1$$ and passing through the point (3,5).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

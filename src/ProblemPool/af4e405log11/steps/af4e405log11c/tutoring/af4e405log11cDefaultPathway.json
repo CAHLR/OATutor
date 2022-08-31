@@ -1,0 +1,70 @@
+[
+    {
+        "id": "af4e405log11c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to determine x such that $$x=\\log_{2}\\left(\\frac{1}{32}\\right)$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log11c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2^x=\\frac{1}{32}$$"
+        ],
+        "dependencies": [
+            "af4e405log11c-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{2}\\left(\\frac{1}{32}\\right)=x$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log11c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(\\frac{1}{2}\\right)}^5$$"
+        ],
+        "dependencies": [
+            "af4e405log11c-h2"
+        ],
+        "title": "Rewrite $$\\frac{1}{16}$$ in terms of $$\\frac{1}{2}$$",
+        "text": "Since $$2^5=32$$, we can actually rewrite $$\\frac{1}{32}$$ in terms of $$\\frac{1}{2}$$. What is $$\\frac{1}{32}$$ equal to in terms of $$\\frac{1}{2}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log11c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2^{\\left(-5\\right)}$$"
+        ],
+        "dependencies": [
+            "af4e405log11c-h3"
+        ],
+        "title": "Simplifying the Exponential",
+        "text": "We note that $${\\left(\\frac{1}{x}\\right)}^y=x^{\\left(-y\\right)}$$. How can we rewrite $$\\frac{1}{32}={\\left(\\frac{1}{2}\\right)}^5$$ in terms of powers of 2?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log11c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-5"
+        ],
+        "dependencies": [
+            "af4e405log11c-h4"
+        ],
+        "title": "Solve for x",
+        "text": "Substitution $$2^{\\left(-5\\right)}$$ into the exponential equation we found before, we get $$2^x=2^{\\left(-5\\right)}$$. What is x?",
+        "variabilization": {}
+    }
+]
