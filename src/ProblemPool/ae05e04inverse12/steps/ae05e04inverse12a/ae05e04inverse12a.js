@@ -1,1 +1,0 @@
-import hints from "./ae05e04inverse12a-index.js"; const step = {id: "ae05e04inverse12a", stepAnswer: ["$$x=0$$ and 20"], problemType: "MultipleChoice", stepTitle: "X-Intercepts", stepBody: "", choices: ["$$x=0$$ and 20", "$$x=5$$ and 40", "$$x=10$$", "There are no x-intercepts."], answerType: "string", hints: hints, variabilization: {}}; export {step};

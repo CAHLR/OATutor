@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ab1ad7fGenStr25m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplification",
+        "text": "Simplify each side of the equation as much as possible.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2-m=13$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr25m-h1"
+        ],
+        "title": "Simplification",
+        "text": "Use the distributive property to simplify each side of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr25m-h2"
+        ],
+        "title": "Addition property of equality",
+        "text": "When you add the same quantity to both sides of an equation, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-m=15$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr25m-h3"
+        ],
+        "title": "Addition",
+        "text": "Add 2 to each side of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr25m-h4"
+        ],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m=-15$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr25m-h5"
+        ],
+        "title": "Division",
+        "text": "Divide -1 from each side.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr25m-h6"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr25m-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr25m-h7"
+        ],
+        "title": "Verification",
+        "text": "Check whether -3-(-15-1) equals 13.",
+        "variabilization": {}
+    }
+]

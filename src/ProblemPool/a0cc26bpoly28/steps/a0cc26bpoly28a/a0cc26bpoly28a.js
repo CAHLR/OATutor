@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly28a-index.js"; const step = {id: "a0cc26bpoly28a", stepAnswer: ["$$24r^2+22rd-7d^2$$"], problemType: "TextBox", stepTitle: "$$\\left(4r-d\\right) \\left(6r+7d\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

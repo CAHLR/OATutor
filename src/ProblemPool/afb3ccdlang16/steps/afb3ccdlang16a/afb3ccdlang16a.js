@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang16a-index.js"; const step = {id: "afb3ccdlang16a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Simplify $$2^3$$ - $$\\frac{12}{9-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ae45a45int1c-index.js"; const step = {id: "ae45a45int1c", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "|-11| $$___-11$$.", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a4b48f4RealNums28a-index.js"; const step = {id: "a4b48f4RealNums28a", stepAnswer: ["$$a+\\frac{6}{5} b$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{6} a+\\frac{3}{10} b+\\frac{1}{6} a+\\frac{9}{10} b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

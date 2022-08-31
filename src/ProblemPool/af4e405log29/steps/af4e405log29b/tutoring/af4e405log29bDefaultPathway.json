@@ -1,0 +1,83 @@
+[
+    {
+        "id": "af4e405log29b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$\\log_{3}\\left(5x-4\\right)=4$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log29b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3^4=5x-4$$"
+        ],
+        "dependencies": [
+            "af4e405log29b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{3}\\left(5x-4\\right)=4$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log29b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5x=85$$"
+        ],
+        "dependencies": [
+            "af4e405log29b-h2"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Simplify the expression so all the terms with x are on one side and all the constant (non-x) terms are on the other.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "af4e405log29b-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "81"
+                ],
+                "dependencies": [],
+                "title": "Determine $$3^4$$",
+                "text": "What is $$3^4$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "af4e405log29b-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "85"
+                ],
+                "dependencies": [],
+                "title": "Determine $$81+4$$",
+                "text": "What is $$81+4$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "af4e405log29b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "17"
+        ],
+        "dependencies": [
+            "af4e405log29b-h3"
+        ],
+        "title": "Solve for x",
+        "text": "What is the value of x in $$5x=85$$?",
+        "variabilization": {}
+    }
+]

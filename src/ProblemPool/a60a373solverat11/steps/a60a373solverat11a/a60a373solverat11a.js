@@ -1,1 +1,0 @@
-import hints from "./a60a373solverat11a-index.js"; const step = {id: "a60a373solverat11a", stepAnswer: ["$$y=-3$$"], problemType: "TextBox", stepTitle: "$$\\frac{y+5}{5} y+\\frac{y}{15}=\\frac{1}{y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

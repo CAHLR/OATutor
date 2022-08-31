@@ -1,1 +1,0 @@
-import hints from "./ad4e7e2decimals7a-index.js"; const step = {id: "ad4e7e2decimals7a", stepAnswer: ["14.024"], problemType: "TextBox", stepTitle: "Write “fourteen and twenty-four thousandths” as a decimal.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring9a-index.js"; const step = {id: "a10e4c3factoring9a", stepAnswer: ["(3b-5)(2b-1)"], problemType: "TextBox", stepTitle: "$$6b^2-13b+5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

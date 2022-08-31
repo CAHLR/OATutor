@@ -1,1 +1,0 @@
-import hints from "./aafc2dcMultiply12a-index.js"; const step = {id: "aafc2dcMultiply12a", stepAnswer: ["-28"], problemType: "TextBox", stepTitle: "The product of -2 and 14.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

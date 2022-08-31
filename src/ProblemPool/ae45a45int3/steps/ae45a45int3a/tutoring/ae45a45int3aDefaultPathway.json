@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ae45a45int3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Start with the operation in the parenthetisis",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int3a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the value in the absolute value bars further by subtracting 8 from 8",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "ae45a45int3a-h2"
+        ],
+        "title": "Absolute Values Principle",
+        "text": "What is 3*|1|?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int3a-h3"
+        ],
+        "title": "Absolute Values Principle",
+        "text": "The number within absolute sign will always be positive",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "ae45a45int3a-h4"
+        ],
+        "title": "Magnitude of Number",
+        "text": "What is the magitude of 1?",
+        "variabilization": {}
+    }
+]

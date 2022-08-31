@@ -1,1 +1,0 @@
-import hints from "./ae8c2acComplex1a-index.js"; const step = {id: "ae8c2acComplex1a", stepAnswer: ["$$2x^2-x-15$$"], problemType: "TextBox", stepTitle: "$$\\left(x-3\\right) \\left(2x+5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,131 @@
+[
+    {
+        "id": "ab3c11fVisualize12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fraction Division",
+        "text": "To divide fractions, we multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h1"
+        ],
+        "title": "Reciprocal",
+        "text": "The reciprocal of $$\\frac{a}{b}$$ is $$\\frac{b}{a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-36}{35}$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize12a-h2"
+        ],
+        "title": "Reciprocal of the Second Fraction",
+        "text": "What is the reciprocal of $$\\frac{-35}{36}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h3"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "The next step is to multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h4"
+        ],
+        "title": "Determining the Sign",
+        "text": "Since the signs are the same, the product is positive.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h5"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "To multiply fractions, we multiply the numerators and the denominators. So the numerator is $$7\\times36$$, and the denominator is $$27\\times35$$. The next step is to simplify the fraction if possible.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize12a-h6"
+        ],
+        "title": "Checking for Common Factors",
+        "text": "Do $$7\\times36$$ and $$27\\times35$$ have any common factors?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h7"
+        ],
+        "title": "Common Factors",
+        "text": "We will rewrite $$7\\times36$$ and $$27\\times35$$ as the product of primes and divide out the common factors from there.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\times2\\times3\\times3\\times7$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize12a-h8"
+        ],
+        "title": "Rewriting the Numerator",
+        "text": "What is $$7\\times36$$ written as the product of primes?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3\\times3\\times3\\times5\\times7$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize12a-h8"
+        ],
+        "title": "Rewriting the Denominator",
+        "text": "What is $$27\\times35$$ written as the product of primes?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize12a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize12a-h9",
+            "ab3c11fVisualize12a-h10"
+        ],
+        "title": "Dividing Common Factors",
+        "text": "We can now divide out the common factor $$3\\times3\\times7$$ from both the top and the bottom, which gives us the fraction $$5\\frac{2\\times2}{3}=\\frac{4}{15}$$.",
+        "variabilization": {}
+    }
+]

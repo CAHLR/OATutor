@@ -1,1 +1,0 @@
-import hints from "./ad291beRadRat2a-index.js"; const step = {id: "ad291beRadRat2a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "What is the $$\\sqrt{225}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

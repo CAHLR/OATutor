@@ -1,1 +1,0 @@
-import hints from "./a9cf449complex23b-index.js"; const step = {id: "a9cf449complex23b", stepAnswer: ["$$\\frac{1}{2} i$$"], problemType: "TextBox", stepTitle: "$$-\\left(\\frac{1}{2}\\right) i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

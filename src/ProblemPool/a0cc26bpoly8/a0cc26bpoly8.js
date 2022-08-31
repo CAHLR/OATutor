@@ -1,1 +1,0 @@
-import steps from "./a0cc26bpoly8-index.js"; const problem = {id: "a0cc26bpoly8", title: "Using FOIL to Multiply Binomials", body: "Use FOIL to find the product.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 Polynomials", courseName: "Openstax: College Algebra"}; export { problem };

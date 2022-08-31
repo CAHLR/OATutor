@@ -1,0 +1,120 @@
+[
+    {
+        "id": "ab3c11fVisualize9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fraction Division",
+        "text": "To divide fractions, we multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize9a-h1"
+        ],
+        "title": "Reciprocal",
+        "text": "The reciprocal of $$\\frac{a}{b}$$ is $$\\frac{b}{a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{n}$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize9a-h2"
+        ],
+        "title": "Reciprocal of the Second Fraction",
+        "text": "What is the reciprocal of $$\\frac{n}{5}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize9a-h3"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "The next step is to multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize9a-h4"
+        ],
+        "title": "Determining the Sign",
+        "text": "Since the signs are different, the product is negative.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize9a-h5"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "To multiply fractions, we multiply the numerators and the denominators.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize9a-h6"
+        ],
+        "title": "Multiplying the Numerators",
+        "text": "What is $$2\\times5$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3n"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize9a-h7"
+        ],
+        "title": "Multiplying the Denominators",
+        "text": "What is $$3n$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize9a-h8"
+        ],
+        "title": "Putting Top and Bottom Together",
+        "text": "Putting our answers to the last two steps together, we get the fraction $$\\frac{-10}{3n}$$. The next step is to simplify our answer if possible.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize9a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize9a-h9"
+        ],
+        "title": "Checking for Common Factors",
+        "text": "Is $$\\frac{-10}{3n}$$ already in its simplest form?",
+        "variabilization": {}
+    }
+]

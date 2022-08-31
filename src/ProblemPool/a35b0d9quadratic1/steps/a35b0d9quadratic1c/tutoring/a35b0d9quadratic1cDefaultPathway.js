@@ -1,1 +1,0 @@
-var hints = [{id: "a35b0d9quadratic1c-h1", type: "hint", dependencies: [], title: "Identifying the Zeros", text: "This parabola does not cross the x- axis, so it has no zeros.", variabilization: {}}, ]; export {hints};

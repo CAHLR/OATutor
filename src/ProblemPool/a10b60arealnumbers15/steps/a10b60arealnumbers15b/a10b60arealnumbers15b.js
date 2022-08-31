@@ -1,1 +1,0 @@
-import hints from "./a10b60arealnumbers15b-index.js"; const step = {id: "a10b60arealnumbers15b", stepAnswer: ["(3*y**2)*sqrt(3,2y)+4*abs(y)*sqrt(4,2y)"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{162y^9}+\\sqrt[4]{512y^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

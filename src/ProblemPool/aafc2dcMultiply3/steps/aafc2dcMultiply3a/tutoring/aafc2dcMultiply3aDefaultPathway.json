@@ -1,0 +1,40 @@
+[
+    {
+        "id": "aafc2dcMultiply3a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [],
+        "title": "Dividing Positive Parts",
+        "text": "Let's ignore the negative sign first. What is $$\\frac{27}{3}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply3a-h1"
+        ],
+        "title": "Negative Sign",
+        "text": "For division of two signed numbers, when the signs are different, the quotient is negative.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-9"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply3a-h2"
+        ],
+        "title": "Negative Sign",
+        "text": "If the sign for our final answer is negative, what should our final answer be?",
+        "variabilization": {}
+    }
+]

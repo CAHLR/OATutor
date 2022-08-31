@@ -1,1 +1,0 @@
-var hints = [{id: "af60b4fellipse28a-h1", type: "hint", dependencies: [], title: "Using the Area Formula", text: "The area of an ellipse is given by $$a b \\pi$$. Since $$a=\\sqrt{5}$$ and $$b=2$$, the area of the ellipse is $$2\\sqrt{5} \\pi$$", variabilization: {}}, ]; export {hints};

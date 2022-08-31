@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp1a-index.js"; const step = {id: "a6d0007exp1a", stepAnswer: ["$$t^8$$"], problemType: "MultipleChoice", stepTitle: "$$t^5 t^3$$", stepBody: "", choices: ["$$t^2$$", "$$t^8$$", "$$t^{15}$$", "$$t^{10}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

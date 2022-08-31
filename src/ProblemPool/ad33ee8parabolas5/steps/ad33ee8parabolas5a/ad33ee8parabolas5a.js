@@ -1,1 +1,0 @@
-import hints from "./ad33ee8parabolas5a-index.js"; const step = {id: "ad33ee8parabolas5a", stepAnswer: ["D"], problemType: "MultipleChoice", stepTitle: "$$y=\\left(-x^2\\right)+8x-15$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ad37b31probability16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining Sample Space",
+        "text": "The set of all possible outcomes of an experiment is called the sample space of the experiment.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad37b31probability16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad37b31probability16a-h1"
+        ],
+        "title": "Format of the Outcomes",
+        "text": "Given there are two coins, each outcome is represented by two letters one for the first coin and the other for the second coin.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad37b31probability16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "HH, HT, TT, TH"
+        ],
+        "dependencies": [
+            "ad37b31probability16a-h2"
+        ],
+        "title": "Finding Sample Space",
+        "text": "List all the possible outcomes of the two coin flips using H for heads and T for tails.",
+        "variabilization": {}
+    }
+]

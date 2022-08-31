@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a5d54dagcf27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Greatest Common Factor",
+        "text": "The first step is to factor out the GCF from the first two groups of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x \\left(x-1\\right)+4\\left(x-1\\right)$$"
+        ],
+        "dependencies": [
+            "a5d54dagcf27a-h1"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "What will our equation look like if we factor out the first two groups?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d54dagcf27a-h2"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "The next step is to combine our two groups into one by finding the greatest common factor.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+4\\right) \\left(x-1\\right)$$"
+        ],
+        "dependencies": [
+            "a5d54dagcf27a-h3"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "What does our final equation look like once we factor out the item?",
+        "variabilization": {}
+    }
+]

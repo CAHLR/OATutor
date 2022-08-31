@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd17c-index.js"; const step = {id: "a6014eaSubAdd17c", stepAnswer: ["$$b=\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$b+\\frac{1}{4}=\\frac{3}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

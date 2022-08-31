@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper9a-index.js"; const step = {id: "a91e303graphhyper9a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "Graph $$4y^2-16x^2=64$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

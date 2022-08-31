@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly22a-index.js"; const step = {id: "a0cc26bpoly22a", stepAnswer: ["$$9y^2-36y+36$$"], problemType: "TextBox", stepTitle: "$${\\left(3y-6\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

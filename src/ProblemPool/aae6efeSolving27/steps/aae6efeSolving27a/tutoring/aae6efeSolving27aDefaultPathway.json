@@ -1,0 +1,50 @@
+[
+    {
+        "id": "aae6efeSolving27a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.27"
+        ],
+        "dependencies": [],
+        "title": "Conversion",
+        "text": "What is the numeric form of 27%?",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving27a-h1"
+        ],
+        "title": "Setup",
+        "text": "Assume the total recommended daily amount of sodium as x",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving27a-h2"
+        ],
+        "title": "Setup",
+        "text": "The equation can be translated in the equation form as $$650=0.27x$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2407"
+        ],
+        "dependencies": [
+            "aae6efeSolving27a-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of x?",
+        "variabilization": {}
+    }
+]

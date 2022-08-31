@@ -1,1 +1,0 @@
-import hints from "./ada10e6CompletingSqr29a-index.js"; const step = {id: "ada10e6CompletingSqr29a", stepAnswer: ["4 or $$\\frac{-10}{4}$$"], problemType: "MultipleChoice", stepTitle: "$$2x^2-3x=20$$", stepBody: "", choices: ["-4 or $$\\frac{10}{4}$$", "4 or $$\\frac{10}{4}$$", "4 or $$\\frac{-10}{4}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly23a-index.js"; const step = {id: "a0cc26bpoly23a", stepAnswer: ["$$4x^2-49$$"], problemType: "TextBox", stepTitle: "$$\\left(2x+7\\right) \\left(2x-7\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

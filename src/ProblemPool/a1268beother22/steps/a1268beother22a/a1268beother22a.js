@@ -1,1 +1,0 @@
-import hints from "./a1268beother22a-index.js"; const step = {id: "a1268beother22a", stepAnswer: ["x=-1,3/2"], problemType: "MultipleChoice", stepTitle: "$$|1-4x|+8=13$$", stepBody: "", choices: ["x=-1,3/2", "$$x=-1$$", "$$x=-1, 3$$", "x=1,2/3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

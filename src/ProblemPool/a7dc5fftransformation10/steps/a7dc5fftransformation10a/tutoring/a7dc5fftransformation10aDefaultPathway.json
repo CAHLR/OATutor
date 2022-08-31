@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a7dc5fftransformation10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Transformations",
+        "text": "The first step is to recognize the order of transformations. First, $$\\sqrt{x}$$ is reflected over the x axis, and then it is horizontally stretched by a factor of 2.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dc5fftransformation10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dc5fftransformation10a-h1"
+        ],
+        "title": "Reflecting over the y axis",
+        "text": "The second step is to reflect the function over the x axis. Multiply the entire function by -1 to get -f(x), which is f(x) reflected over the x axis.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dc5fftransformation10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sqrt{x}$$"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation10a-h2"
+        ],
+        "title": "Reflecting over the y axis",
+        "text": "What is -f(x)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dc5fftransformation10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7dc5fftransformation10a-h3"
+        ],
+        "title": "How to Horizontally Compress a Function",
+        "text": "The last step is to stretch the graph horizontally by a scale factor of 2. The coefficient needed for a horizontal stretch or compression is the reciprocal of the stretch or compression. So to compress the graph horizontally by a scale factor of 2, we need a coefficient of $$\\frac{1}{2}$$ in our function. Therefore, replace every x in the function with $$\\frac{1}{2} x$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dc5fftransformation10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sqrt{\\frac{1}{2} x}$$"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation10a-h4"
+        ],
+        "title": "Horizontal Compression",
+        "text": "What is the function after it has been horizontally compressed by a factor of $$\\frac{1}{4}$$?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./a1279cdpowers21b-index.js"; const step = {id: "a1279cdpowers21b", stepAnswer: ["$$5^{12}$$"], problemType: "TextBox", stepTitle: "$${\\left(5^4\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

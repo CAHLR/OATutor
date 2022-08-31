@@ -1,1 +1,0 @@
-import hints from "./ae45a45int3a-index.js"; const step = {id: "ae45a45int3a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "10-3|9-3(3-1)|", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

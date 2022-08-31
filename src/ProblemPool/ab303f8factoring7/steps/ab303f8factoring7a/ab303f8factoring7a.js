@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring7a-index.js"; const step = {id: "ab303f8factoring7a", stepAnswer: ["$$4{y\\left(5x-2\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$100x^2 y-80xy+16y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aaff50dradical4a-index.js"; const step = {id: "aaff50dradical4a", stepAnswer: ["$$4\\sqrt{27}$$"], problemType: "TextBox", stepTitle: "Simplify $$\\sqrt{432}$$", stepBody: "Write your answer in radical form.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac9802fsimproots11a-index.js"; const step = {id: "ac9802fsimproots11a", stepAnswer: ["$$\\sqrt{-121}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{-121}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

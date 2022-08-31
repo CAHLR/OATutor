@@ -1,1 +1,0 @@
-import hints from "./a0351f0parabola11a-index.js"; const step = {id: "a0351f0parabola11a", stepAnswer: ["Not a parabola"], problemType: "TextBox", stepTitle: "$$y^2=4-x^2$$", stepBody: "If it is not a parabola, enter \"Not a parabola\" as your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

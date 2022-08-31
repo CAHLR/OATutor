@@ -1,1 +1,0 @@
-import hints from "./a8ffef9inverses16a-index.js"; const step = {id: "a8ffef9inverses16a", stepAnswer: ["$$\\left(10x-1\\right) \\left(100x^2+10x+1\\right)$$"], problemType: "TextBox", stepTitle: "Factor the difference of cubes: 1,000x**3-1.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a6f9727real8-index.js"; const problem = {id: "a6f9727real8", title: "Evaluating an Algebraic Expression at Different Values", body: "Evaluate the expression 2x-7 for each value for x.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

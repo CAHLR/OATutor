@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp15a-index.js"; const step = {id: "a6d0007exp15a", stepAnswer: ["$$\\frac{64}{z^{33}}$$"], problemType: "TextBox", stepTitle: "$${\\left(\\frac{4}{z^{11}}\\right)}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

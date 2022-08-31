@@ -1,1 +1,0 @@
-import steps from "./a9cf449complex4-index.js"; const problem = {id: "a9cf449complex4", title: "Adding and Subtracting Complex Numbers", body: "", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "2.4 Complex Numbers", courseName: "Openstax: College Algebra"}; export { problem };

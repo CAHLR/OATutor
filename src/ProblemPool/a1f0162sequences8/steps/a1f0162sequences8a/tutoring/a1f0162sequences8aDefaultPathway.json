@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1f0162sequences8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Pattern Among the Signs",
+        "text": "Terms are alternating between positive and negative",
+        "variabilization": {}
+    },
+    {
+        "id": "a1f0162sequences8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences8a-h1"
+        ],
+        "title": "Pattern Among the Terms",
+        "text": "Numerator is always 1 but denominator is increasing in doubles",
+        "variabilization": {}
+    },
+    {
+        "id": "a1f0162sequences8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences8a-h2"
+        ],
+        "title": "Write in Explicit Form",
+        "text": "Write a formula for $$a_n$$ in terms of n",
+        "variabilization": {}
+    },
+    {
+        "id": "a1f0162sequences8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "1,-1/2,1/4,-1/8,1/16"
+        ],
+        "dependencies": [
+            "a1f0162sequences8a-h3"
+        ],
+        "title": "Selecting Formula",
+        "text": "What is the explicit formula?",
+        "variabilization": {}
+    }
+]

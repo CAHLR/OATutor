@@ -1,1 +1,0 @@
-import hints from "./a5d54dagcf29a-index.js"; const step = {id: "a5d54dagcf29a", stepAnswer: ["$$-9\\operatorname{xy}\\left(2y+3x\\right)$$"], problemType: "TextBox", stepTitle: "$$-18x y^2-27x^2 y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

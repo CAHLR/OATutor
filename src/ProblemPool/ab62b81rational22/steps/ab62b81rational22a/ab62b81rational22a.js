@@ -1,1 +1,0 @@
-import hints from "./ab62b81rational22a-index.js"; const step = {id: "ab62b81rational22a", stepAnswer: ["z-2"], problemType: "TextBox", stepTitle: "$$\\frac{z^2}{z+2}-\\frac{4}{z+2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

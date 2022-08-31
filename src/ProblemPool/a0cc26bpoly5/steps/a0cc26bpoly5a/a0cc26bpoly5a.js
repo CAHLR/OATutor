@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly5a-index.js"; const step = {id: "a0cc26bpoly5a", stepAnswer: ["$$6x^3+x^2+7x+4$$"], problemType: "TextBox", stepTitle: "$$\\left(2x+1\\right) \\left(3x^2-x+4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

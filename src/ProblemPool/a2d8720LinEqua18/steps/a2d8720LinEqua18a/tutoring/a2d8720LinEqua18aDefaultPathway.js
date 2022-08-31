@@ -1,1 +1,0 @@
-var hints = [{id: "a2d8720LinEqua18a-h1", type: "hint", dependencies: [], title: "The slope of a line", text: "When the line is in $$y=mx+b$$ form, the coefficient of x is the slope of the line.", variabilization: {}}, ]; export {hints};

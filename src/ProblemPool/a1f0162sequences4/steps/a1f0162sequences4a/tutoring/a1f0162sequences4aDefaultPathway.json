@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1f0162sequences4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substituting N into Formula",
+        "text": "Substitute each value of n into the formula. Begin with $$n=1$$ to find the first term, a1. To find the second term, a2, use all n terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1f0162sequences4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences4a-h1"
+        ],
+        "title": "Finding All Needed Values",
+        "text": "Continue in the same manner until you have identified all n terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1f0162sequences4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2,25,2/3,81,2/5,2/6,2/7,289"
+        ],
+        "dependencies": [
+            "a1f0162sequences4a-h2"
+        ],
+        "title": "First 8 Terms of Sequence",
+        "text": "What are the first 8 terms of the sequence?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import steps from "./a5fd810distance11-index.js"; const problem = {id: "a5fd810distance11", title: "Find the distance between the points", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "11.1 Distance and Midpoint Formulas; Circles", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

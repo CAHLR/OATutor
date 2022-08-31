@@ -1,1 +1,0 @@
-import hints from "./afaf721inequalities29a-index.js"; const step = {id: "afaf721inequalities29a", stepAnswer: ["$$(-9,\\infty)$$"], problemType: "MultipleChoice", stepTitle: "$$12x+3\\left(x+7\\right)>10x-24$$", stepBody: "", choices: ["$$(-\\infty,-9)$$", "$$(-\\infty,-9]$$", "$$(-9,\\infty)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

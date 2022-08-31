@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical22a-index.js"; const step = {id: "a81d715SolRadical22a", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: "$${\\left(12x-5\\right)}^{\\frac{1}{3}}+8=3$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

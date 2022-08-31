@@ -1,1 +1,0 @@
-import hints from "./a35b0d9quadratic4b-index.js"; const step = {id: "a35b0d9quadratic4b", stepAnswer: ["(-inf., 61/20]"], problemType: "MultipleChoice", stepTitle: "What is the range of f?", stepBody: "", choices: ["(-inf., 61/20]", "all real numbers", "(61/20, inf.]", "(-61/20, 61/20]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

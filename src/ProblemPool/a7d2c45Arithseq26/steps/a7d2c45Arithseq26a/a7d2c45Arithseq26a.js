@@ -1,1 +1,0 @@
-import hints from "./a7d2c45Arithseq26a-index.js"; const step = {id: "a7d2c45Arithseq26a", stepAnswer: ["n"], problemType: "TextBox", stepTitle: "Determine whether the following sequence is arithmetic $$\\frac{y}{n}$$: 15,5,-4,-15,-25,-35,…", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

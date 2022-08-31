@@ -1,0 +1,30 @@
+[
+    {
+        "id": "afbe5ccpower11a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "Verifying Power Function Form",
+        "text": "Is the function in the form $${kx}^p$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "afbe5ccpower11a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afbe5ccpower11a-h1"
+        ],
+        "title": "Drawing Conclusions",
+        "text": "Does this mean it is a power function?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./ad33ee8parabolas3a-index.js"; const step = {id: "ad33ee8parabolas3a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$y=\\left(-x^2\\right)+8x-12$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "aafc2dcMultiply6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponent",
+        "text": "By the order of operation, we calculate the exponents in the expression first.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-8"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply6a-h1"
+        ],
+        "title": "Exponent",
+        "text": "What is $${\\left(-2\\right)}^3$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply6a-h2"
+        ],
+        "title": "Exponent",
+        "text": "To calculate $${\\left(-2\\right)}^3$$, we can write it out as $$negneg}\\left(2\\right) \\operatorname{negneg}\\left(2\\right) \\operatorname{\\left(-2\\right)$$. We simplify it as $$negneg}\\left(2\\right) \\operatorname{negneg}\\left(2\\right) \\operatorname{\\left(-2\\right)=4\\left(-2\\right)=-8$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply6a-h3"
+        ],
+        "title": "Multiply",
+        "text": "Substituting -8 back for $${\\left(-2\\right)}^3$$, we get the expression $$\\frac{8negneg}\\left(9\\right)}{\\operatorname{\\left(-8\\right)}$$. We proceed by multiplying.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-72"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply6a-h4"
+        ],
+        "title": "Multiply",
+        "text": "What is $$8\\left(-9\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply6a-h5"
+        ],
+        "title": "Divide",
+        "text": "Substituting -72 back for $$8\\left(-9\\right)$$, we get the expression $$\\frac{-72}{\\left(-8\\right)}$$. We proceed by dividing.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply6a-h6"
+        ],
+        "title": "Divide",
+        "text": "What is $$\\frac{-72}{\\left(-8\\right)}$$?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./af36e21FunNota16e-index.js"; const step = {id: "af36e21FunNota16e", stepAnswer: ["$$-5a^2-10ah-5h^2+2a+2h-1$$"], problemType: "TextBox", stepTitle: "$$f{\\left(a+h\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

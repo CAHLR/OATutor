@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5c2168rotation19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equations of Rotation",
+        "text": "The equations of rotation are $$x=x'cos(\\theta)-y'sin(\\theta)$$ and $$y=\\operatorname{x'sin}\\left(\\theta\\right)+\\operatorname{x'cos}\\left(\\theta\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5c2168rotation19b-h1"
+        ],
+        "title": "Plugging in the Angle",
+        "text": "Because $$\\theta=45$$, plug in the value into the equations of rotation for x and y. Simplify so you are left with an algebraic function (with no trignometric functions)",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation19b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5c2168rotation19b-h2"
+        ],
+        "title": "Substituting Equation of Rotations",
+        "text": "Substitute $$x=\\frac{x'-y'}{\\sqrt{2}}$$ and $$y=\\frac{x'+y'}{\\sqrt{2}}$$ into $$x^2+4xy+y^2-2x+1=0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation19b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21{x'}^2+9{y'}^2+4x'-4\\sqrt{3} y'-6=0$$"
+        ],
+        "dependencies": [
+            "a5c2168rotation19b-h3"
+        ],
+        "title": "Algebraic Simplifications",
+        "text": "Using FOIL method, combining like terms, and other simplifications, determine the new representation of the equation. Write the answer so that there are no fractions.",
+        "variabilization": {}
+    }
+]

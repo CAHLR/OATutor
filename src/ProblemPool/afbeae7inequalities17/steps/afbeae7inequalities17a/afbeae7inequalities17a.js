@@ -1,1 +1,0 @@
-import hints from "./afbeae7inequalities17a-index.js"; const step = {id: "afbeae7inequalities17a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "$$y<\\frac{3}{5} x+2$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

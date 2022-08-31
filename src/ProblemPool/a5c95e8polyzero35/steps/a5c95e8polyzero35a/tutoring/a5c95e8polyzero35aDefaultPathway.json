@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5c95e8polyzero35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Deciding on a Method of Division",
+        "text": "We can use synthetic division to show that $$x+2$$ is a factor of the polynomial.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero35a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero35a-h1"
+        ],
+        "title": "Using Synthetic Division",
+        "text": "Observe that the remainder is zero, so $$x+2$$ is a factor of the polynomial. The quotient is $$x^2-8x$$ + 15. Thus, we can use the Division Algorithm to write the polynomial as the product of the divisor and the quotient $$\\left(x+2\\right) \\left(x^2-8x+15\\right)$$.\\n##figure1.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero35a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero35a-h2"
+        ],
+        "title": "We can factor the quadratic polynomial $$x^2-8x+15$$",
+        "text": "",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero35a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "3, 5"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero35a-h3"
+        ],
+        "title": "Finding the zeroes of $$x^2-8x+15$$. (List the zeros in ascending order like so: 1, 2, 3)",
+        "text": "We can do so by either factoring, using the quadratic formula $$x=\\frac{\\left(-b+-\\sqrt{b^2-4a c}\\right)}{2a}$$, or by expressing the polynomial in terms of the standard form $$f(x)=a {\\left(x-h\\right)}^2+k$$ and solving for x when $$f(x)=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c95e8polyzero35a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "-2, 3, 5"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero35a-h4"
+        ],
+        "title": "What are all the zeros that we have found? (List the zeros in ascending order like so: 1, 2, 3)",
+        "text": "Rewriting the polynomial after finding all the zeroes, we get $$\\left(x+2\\right) \\left(x-3\\right) \\left(x-5\\right)$$.",
+        "variabilization": {}
+    }
+]

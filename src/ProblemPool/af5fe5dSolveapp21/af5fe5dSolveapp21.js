@@ -1,1 +1,0 @@
-import steps from "./af5fe5dSolveapp21-index.js"; const problem = {id: "af5fe5dSolveapp21", title: "Solve Proportions", body: "In the following exercise, answer the question.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.5 Solve Applications with Rational Equations", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

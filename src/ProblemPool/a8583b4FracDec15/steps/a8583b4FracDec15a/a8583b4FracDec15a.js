@@ -1,1 +1,0 @@
-import hints from "./a8583b4FracDec15a-index.js"; const step = {id: "a8583b4FracDec15a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "Solve: $$\\frac{5x-3}{4}=\\frac{x}{2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

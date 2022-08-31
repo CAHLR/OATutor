@@ -1,1 +1,0 @@
-import hints from "./aa97d5brates1a-index.js"; const step = {id: "aa97d5brates1a", stepAnswer: ["47"], problemType: "TextBox", stepTitle: "Find her average speed over the first 6 hours.", stepBody: "Ignore units when you write your answer.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./afa0cfequadraticeq16a-index.js"; const step = {id: "afa0cfequadraticeq16a", stepAnswer: ["7 or -7"], problemType: "MultipleChoice", stepTitle: "$$a^2=49$$", stepBody: "", choices: ["8 or -8", "7 or -7", "6 or -6"], answerType: "string", hints: hints, variabilization: {}}; export {step};

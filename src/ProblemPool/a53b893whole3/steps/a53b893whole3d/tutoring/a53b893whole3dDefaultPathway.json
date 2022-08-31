@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a53b893whole3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rule",
+        "text": "A number is divisible by 6 if it is divisible by both 2 and 3.",
+        "variabilization": {}
+    },
+    {
+        "id": "a53b893whole3d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a53b893whole3d-h1"
+        ],
+        "title": "Question",
+        "text": "Is the number divisible by 2 and 3?",
+        "variabilization": {}
+    },
+    {
+        "id": "a53b893whole3d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a53b893whole3d-h2"
+        ],
+        "title": "Divisibility",
+        "text": "Based on the information above, is 5625 divisible by 6?",
+        "variabilization": {}
+    }
+]
