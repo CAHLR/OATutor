@@ -1,0 +1,1 @@
+import steps from "./a1a4133MultDivInts25-index.js"; const problem = {id: "a1a4133MultDivInts25", title: "Evaluate Variable Expressions with Integers", body: "For $$r+s$$, evaluat", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 sj [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

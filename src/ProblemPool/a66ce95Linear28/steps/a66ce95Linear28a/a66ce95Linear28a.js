@@ -1,0 +1,1 @@
+import hints from "./a66ce95Linear28a-index.js"; const step = {id: "a66ce95Linear28a", stepAnswer: ["-41"], problemType: "TextBox", stepTitle: "$$\\frac{1}{4} \\left(p-7\\right)=\\frac{1}{3} \\left(p+5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./af23defint1d-index.js"; const step = {id: "af23defint1d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-(-13)___-|-13|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+var hints = [{id: "a0090fdexp2c-h1", type: "hint", dependencies: [], title: "Identifying the treatments", text: "Think about what is being given to the participants in this study", variabilization: {}}, ]; export {hints};

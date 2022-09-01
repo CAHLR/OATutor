@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni16a-index.js"; const step = {id: "a5e79d8Uni16a", stepAnswer: ["484"], problemType: "TextBox", stepTitle: "What is the mean amount of time for the duration of MLB Baseball games in 2011?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

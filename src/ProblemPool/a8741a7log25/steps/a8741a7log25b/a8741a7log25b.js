@@ -1,0 +1,1 @@
+import hints from "./a8741a7log25b-index.js"; const step = {id: "a8741a7log25b", stepAnswer: ["$$32=x^5$$"], problemType: "MultipleChoice", stepTitle: "$$5=\\log_{x}\\left(32\\right)$$", stepBody: "", choices: ["$$32=x^5$$", "$$x={32}^5$$", "$$5={32}^x$$", "$$x=5^{32}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

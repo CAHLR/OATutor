@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency18a-index.js"; const step = {id: "af23a60contingency18a", stepAnswer: ["$$\\frac{275}{401}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected artist plays Guitar at Night or plays Saxophone during the Day?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

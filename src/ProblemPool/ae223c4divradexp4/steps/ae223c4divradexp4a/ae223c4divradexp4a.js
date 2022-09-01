@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp4a-index.js"; const step = {id: "ae223c4divradexp4a", stepAnswer: ["$$\\frac{2}{a}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[3]{56a}}{\\sqrt[3]{7s^4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

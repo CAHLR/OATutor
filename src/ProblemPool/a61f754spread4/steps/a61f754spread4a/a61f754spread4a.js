@@ -1,0 +1,1 @@
+import hints from "./a61f754spread4a-index.js"; const step = {id: "a61f754spread4a", stepAnswer: ["30.68"], problemType: "TextBox", stepTitle: "Calculate the mean.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

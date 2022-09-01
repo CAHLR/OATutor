@@ -1,0 +1,1 @@
+import hints from "./a1ee995Quadratic19a-index.js"; const step = {id: "a1ee995Quadratic19a", stepAnswer: ["$$q=-6$$ or 3"], problemType: "MultipleChoice", stepTitle: "$${\\left(3q\\right)}^2+8q-3=0$$", stepBody: "", choices: ["$$q=6$$ or -3", "$$q=-6$$ or 3", "$$q=-6$$ or -3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

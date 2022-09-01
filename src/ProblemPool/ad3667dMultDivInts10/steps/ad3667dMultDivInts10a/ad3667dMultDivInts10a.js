@@ -1,0 +1,1 @@
+import hints from "./ad3667dMultDivInts10a-index.js"; const step = {id: "ad3667dMultDivInts10a", stepAnswer: ["21"], problemType: "TextBox", stepTitle: "Simplify the expression to a single number", stepBody: "12-3(9-12)", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

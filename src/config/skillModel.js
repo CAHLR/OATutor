@@ -1239,6 +1239,8 @@ const skillModel = {
     af69facexpolog19a: [`using_logistic_growth_models`],
     af69facexpolog2a: [`modeling_exponential_growth_and_decay`],
     af69facexpolog20a: [`using_logistic_growth_models`],
+    af69facexpolog21a: [`modeling_exponential_growth_and_decay`],
+    af69facexpolog21b: [`modeling_exponential_growth_and_decay`],
     af69facexpolog22a: [`modeling_exponential_growth_and_decay`],
     af69facexpolog23a: [`modeling_exponential_growth_and_decay`],
     af69facexpolog24a: [`modeling_exponential_growth_and_decay`],

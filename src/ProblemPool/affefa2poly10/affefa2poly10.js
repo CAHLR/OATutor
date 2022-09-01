@@ -1,0 +1,1 @@
+import steps from "./affefa2poly10-index.js"; const problem = {id: "affefa2poly10", title: "Factor Theorem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.4 AnP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

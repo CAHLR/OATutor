@@ -1,0 +1,1 @@
+var hints = [{id: "abde277SolvingFormul30a-h1", type: "hint", dependencies: [], title: "Subtract", text: "Subtract 8x from both sides to isolate y.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a555a5ccenter4c-index.js"; const step = {id: "a555a5ccenter4c", stepAnswer: ["Median"], problemType: "MultipleChoice", stepTitle: "Which is the better measure of the \"center\": the mean or the median?", stepBody: "", choices: ["Median", "Mean"], answerType: "string", hints: hints, variabilization: {}}; export {step};

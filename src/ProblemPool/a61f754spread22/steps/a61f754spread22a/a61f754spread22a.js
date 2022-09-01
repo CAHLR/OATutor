@@ -1,0 +1,1 @@
+import hints from "./a61f754spread22a-index.js"; const step = {id: "a61f754spread22a", stepAnswer: ["50"], problemType: "TextBox", stepTitle: "What percent of the FTES were from 528.5 to 1447.5?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

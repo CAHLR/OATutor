@@ -1,0 +1,1 @@
+import hints from "./aeba9faMultiplyPoly13a-index.js"; const step = {id: "aeba9faMultiplyPoly13a", stepAnswer: ["$$x^2+18x+81$$"], problemType: "TextBox", stepTitle: "a) $${\\left(x+9\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

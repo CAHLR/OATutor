@@ -1,0 +1,1 @@
+import hints from "./ae21c87q5a-index.js"; const step = {id: "ae21c87q5a", stepAnswer: ["4.6"], problemType: "TextBox", stepTitle: "Calculate the mean for Maris.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

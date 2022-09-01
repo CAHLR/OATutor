@@ -1,0 +1,1 @@
+import hints from "./a98a16abox7a-index.js"; const step = {id: "a98a16abox7a", stepAnswer: ["3rd, 14"], problemType: "MultipleChoice", stepTitle: "Look at the BMW 5 series. Which quarter has the largest spread of data? What is the spread?", stepBody: "", choices: ["1st, 14", "2nd, 14", "3rd, 13", "3rd, 14"], answerType: "string", hints: hints, variabilization: {}}; export {step};

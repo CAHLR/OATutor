@@ -1,0 +1,1 @@
+import hints from "./a4c14e4radfunc13a-index.js"; const step = {id: "a4c14e4radfunc13a", stepAnswer: ["(5,inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{\\frac{9}{x-5}}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./af8ea82int18-index.js"; const problem = {id: "af8ea82int18", title: "Simplify Expressions with Absolute Value", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 al [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

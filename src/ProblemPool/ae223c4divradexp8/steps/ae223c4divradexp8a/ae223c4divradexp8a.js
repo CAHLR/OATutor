@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp8a-index.js"; const step = {id: "ae223c4divradexp8a", stepAnswer: ["$$\\frac{-5m}{n^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[3]{-250m n^{-2}}}{\\sqrt[3]{2m^{-2} n^4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

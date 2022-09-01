@@ -1,0 +1,1 @@
+import steps from "./afae108location18-index.js"; const problem = {id: "afae108location18", title: "Interpreting Percentiles", body: "For runners in a race, a higher speed means a faster run.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S2.3 Ash", courseName: "!!Editor Sheet 4b770c"}; export { problem };

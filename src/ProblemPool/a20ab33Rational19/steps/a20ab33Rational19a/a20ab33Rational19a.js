@@ -1,0 +1,1 @@
+import hints from "./a20ab33Rational19a-index.js"; const step = {id: "a20ab33Rational19a", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "Simplify and find the result the expression", stepBody: "$${125}^{\\frac{2}{3}}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

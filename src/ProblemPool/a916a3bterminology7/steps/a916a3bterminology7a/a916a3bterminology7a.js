@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology7a-index.js"; const step = {id: "a916a3bterminology7a", stepAnswer: ["$$\\frac{10}{42}$$"], problemType: "TextBox", stepTitle: "Find P(F).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

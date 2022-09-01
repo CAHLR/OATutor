@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules2d-index.js"; const step = {id: "aa9c68cbasicrules2d", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Are A and B mutually exclusive?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

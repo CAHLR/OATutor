@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules11b-index.js"; const step = {id: "aa9c68cbasicrules11b", stepAnswer: ["0.15"], problemType: "TextBox", stepTitle: "What is the probability that a woman tests positive for breast cancer?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

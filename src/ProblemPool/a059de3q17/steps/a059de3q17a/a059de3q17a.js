@@ -1,0 +1,1 @@
+import hints from "./a059de3q17a-index.js"; const step = {id: "a059de3q17a", stepAnswer: ["Skewed Left"], problemType: "MultipleChoice", stepTitle: "Describe the shape of this distribution.", stepBody: "", choices: ["Symmetrical", "Skewed Left", "Skewed Right"], answerType: "string", hints: hints, variabilization: {}}; export {step};

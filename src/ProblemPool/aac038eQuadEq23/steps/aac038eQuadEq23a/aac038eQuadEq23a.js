@@ -1,0 +1,1 @@
+import hints from "./aac038eQuadEq23a-index.js"; const step = {id: "aac038eQuadEq23a", stepAnswer: ["[2-sqrt(6),2+sqrt(6)]"], problemType: "TextBox", stepTitle: "$$x^2-4x+2 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

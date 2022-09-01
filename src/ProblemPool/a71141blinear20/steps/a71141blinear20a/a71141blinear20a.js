@@ -1,0 +1,1 @@
+import hints from "./a71141blinear20a-index.js"; const step = {id: "a71141blinear20a", stepAnswer: ["$$u \\leq -13$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$-5u \\geq 65$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

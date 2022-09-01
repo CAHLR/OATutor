@@ -1,0 +1,1 @@
+import hints from "./a9981f3RealNums3a-index.js"; const step = {id: "a9981f3RealNums3a", stepAnswer: ["$$41m+6n$$"], problemType: "TextBox", stepTitle: "$$37m+21n+4m-15n$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

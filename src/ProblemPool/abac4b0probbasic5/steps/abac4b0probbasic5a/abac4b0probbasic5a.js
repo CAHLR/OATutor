@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic5a-index.js"; const step = {id: "abac4b0probbasic5a", stepAnswer: ["$$\\frac{5}{78}$$"], problemType: "TextBox", stepTitle: "What is the probability that we choose a blue M&M, then a red one, assuming that we choose M&M's without replacement?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni7b-index.js"; const step = {id: "a5e79d8Uni7b", stepAnswer: ["5.774"], problemType: "TextBox", stepTitle: "Knowing the formula to calculate the standard deviation, what is our final answer?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

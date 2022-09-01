@@ -1,0 +1,1 @@
+import hints from "./a0090fdexp2e-index.js"; const step = {id: "a0090fdexp2e", stepAnswer: ["No"], problemType: "TextBox", stepTitle: "Is it possible to use blinding in this study?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

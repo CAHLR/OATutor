@@ -1,0 +1,1 @@
+import hints from "./a8114b9stat14a-index.js"; const step = {id: "a8114b9stat14a", stepAnswer: ["Qualitative"], problemType: "MultipleChoice", stepTitle: "The brand of toothpast.", stepBody: "", choices: ["Qualitative", "Quantitative Discrete", "Quantitative Continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

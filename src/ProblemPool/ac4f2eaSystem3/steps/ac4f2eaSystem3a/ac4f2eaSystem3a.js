@@ -1,0 +1,1 @@
+import hints from "./ac4f2eaSystem3a-index.js"; const step = {id: "ac4f2eaSystem3a", stepAnswer: ["(2,1.5)"], problemType: "TextBox", stepTitle: "$$x-4y=-4$$, $$-3x+4y=0$$", stepBody: "Please enter your answer as (a,b).", answerType: "string", hints: hints, variabilization: {}}; export {step};

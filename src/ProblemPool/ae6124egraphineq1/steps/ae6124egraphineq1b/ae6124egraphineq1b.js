@@ -1,0 +1,1 @@
+import hints from "./ae6124egraphineq1b-index.js"; const step = {id: "ae6124egraphineq1b", stepAnswer: ["n"], problemType: "MultipleChoice", stepTitle: "Determine $$\\frac{y}{n}$$ whether (3,1) is a solution to {$$x+4y \\geq 10$$, $$3x-2y<12$$}", stepBody: "", choices: ["n", "no", "yes"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a20ab33Rational12-index.js"; const problem = {id: "a20ab33Rational12", title: "Simply the expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "8.3 Ju [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

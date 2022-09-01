@@ -1,0 +1,1 @@
+import steps from "./a8741a7log5-index.js"; const problem = {id: "a8741a7log5", title: "Converting to Exponential Form", body: "Convert the following to exponential form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

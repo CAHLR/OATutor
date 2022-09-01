@@ -1,0 +1,1 @@
+import hints from "./a66ce95Linear16b-index.js"; const step = {id: "a66ce95Linear16b", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{-1}{2}$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

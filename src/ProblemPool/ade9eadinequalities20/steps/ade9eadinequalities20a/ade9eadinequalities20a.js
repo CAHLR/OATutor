@@ -1,0 +1,1 @@
+import hints from "./ade9eadinequalities20a-index.js"; const step = {id: "ade9eadinequalities20a", stepAnswer: ["und"], problemType: "TextBox", stepTitle: "What is the slope of the line $$x=8$$?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

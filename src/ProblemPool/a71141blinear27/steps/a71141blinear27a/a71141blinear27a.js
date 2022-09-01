@@ -1,0 +1,1 @@
+import hints from "./a71141blinear27a-index.js"; const step = {id: "a71141blinear27a", stepAnswer: ["$$s<-4$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$7s<-28$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

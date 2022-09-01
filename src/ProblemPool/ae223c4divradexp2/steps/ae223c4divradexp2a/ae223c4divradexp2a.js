@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp2a-index.js"; const step = {id: "ae223c4divradexp2a", stepAnswer: ["$$\\frac{2}{x}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[3]{32x^2}}{\\sqrt[3]{4x^5}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

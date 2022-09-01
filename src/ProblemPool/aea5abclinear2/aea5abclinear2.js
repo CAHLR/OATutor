@@ -1,0 +1,1 @@
+import steps from "./aea5abclinear2-index.js"; const problem = {id: "aea5abclinear2", title: "Displaying in Interval Notation", body: "Write each inequality in interval notation (\"inf\" represents infinity)", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.5 sj[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

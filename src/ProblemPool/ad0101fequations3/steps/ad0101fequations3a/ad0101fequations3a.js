@@ -1,0 +1,1 @@
+import hints from "./ad0101fequations3a-index.js"; const step = {id: "ad0101fequations3a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "$$x+3y-z=15$$, $$y=23x-2$$, $$x-3y+z=-2$$, (-6,5,1/2)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

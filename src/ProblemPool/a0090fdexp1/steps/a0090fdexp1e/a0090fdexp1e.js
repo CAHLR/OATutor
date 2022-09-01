@@ -1,0 +1,1 @@
+import hints from "./a0090fdexp1e-index.js"; const step = {id: "a0090fdexp1e", stepAnswer: ["Aspirin and Placebo"], problemType: "MultipleChoice", stepTitle: "Identify the treatments for this study.", stepBody: "", choices: ["Aspirin and Placebo", "Men aged 50-84", "The individual men in the study"], answerType: "string", hints: hints, variabilization: {}}; export {step};

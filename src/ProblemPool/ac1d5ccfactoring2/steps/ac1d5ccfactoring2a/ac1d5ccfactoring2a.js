@@ -1,0 +1,1 @@
+import hints from "./ac1d5ccfactoring2a-index.js"; const step = {id: "ac1d5ccfactoring2a", stepAnswer: ["$$\\left(x+7\\right) \\left(x+3\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$x^2+10x+21$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

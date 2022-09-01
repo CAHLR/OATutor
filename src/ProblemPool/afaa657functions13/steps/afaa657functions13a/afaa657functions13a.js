@@ -1,0 +1,1 @@
+import hints from "./afaa657functions13a-index.js"; const step = {id: "afaa657functions13a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=-2x+2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac0e504factoring1a-index.js"; const step = {id: "ac0e504factoring1a", stepAnswer: ["$$\\left(5x+1\\right) \\left(5x-1\\right)$$"], problemType: "TextBox", stepTitle: "$$25x^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

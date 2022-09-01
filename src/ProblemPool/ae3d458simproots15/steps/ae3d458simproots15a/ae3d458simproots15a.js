@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots15a-index.js"; const step = {id: "ae3d458simproots15a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{27}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

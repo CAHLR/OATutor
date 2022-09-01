@@ -1,0 +1,1 @@
+import hints from "./a9981f3RealNums10a-index.js"; const step = {id: "a9981f3RealNums10a", stepAnswer: ["$$\\frac{8}{23}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{15}$$ * $$\\frac{8}{23}$$ * $$\\frac{15}{17}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

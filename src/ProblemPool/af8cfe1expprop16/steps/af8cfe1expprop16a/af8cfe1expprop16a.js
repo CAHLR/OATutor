@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop16a-index.js"; const step = {id: "af8cfe1expprop16a", stepAnswer: ["$$d^9$$"], problemType: "TextBox", stepTitle: "$$d^3 d^6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a61f754spread21b-index.js"; const step = {id: "a61f754spread21b", stepAnswer: ["52"], problemType: "TextBox", stepTitle: "75% of all years have an FTES at or above what?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

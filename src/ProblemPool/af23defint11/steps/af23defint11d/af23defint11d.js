@@ -1,0 +1,1 @@
+import hints from "./af23defint11d-index.js"; const step = {id: "af23defint11d", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "-84 / -6", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

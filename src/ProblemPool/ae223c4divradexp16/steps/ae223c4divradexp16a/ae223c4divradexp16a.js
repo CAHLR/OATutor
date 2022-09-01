@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp16a-index.js"; const step = {id: "ae223c4divradexp16a", stepAnswer: ["$$\\frac{\\sqrt[2]{6x}}{2} x$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{\\sqrt[2]{6x}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

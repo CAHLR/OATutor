@@ -1,0 +1,1 @@
+import steps from "./affefa2poly2-index.js"; const problem = {id: "affefa2poly2", title: "Division of a Polynomial by a Monomial", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.4 AnP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

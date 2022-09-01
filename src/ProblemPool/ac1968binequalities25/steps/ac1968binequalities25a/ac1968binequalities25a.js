@@ -1,0 +1,1 @@
+import hints from "./ac1968binequalities25a-index.js"; const step = {id: "ac1968binequalities25a", stepAnswer: ["(-7,7)"], problemType: "TextBox", stepTitle: "$$|x|<7$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

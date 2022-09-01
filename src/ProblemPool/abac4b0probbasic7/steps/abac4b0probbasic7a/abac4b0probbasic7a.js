@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic7a-index.js"; const step = {id: "abac4b0probbasic7a", stepAnswer: ["$$\\frac{1}{16}$$"], problemType: "TextBox", stepTitle: "What is the probability that we select an orange M&M and a yellow M&M if we select two random M&Ms?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

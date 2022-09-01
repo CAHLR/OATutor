@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop26a-index.js"; const step = {id: "af8cfe1expprop26a", stepAnswer: ["$$p^{14}$$"], problemType: "TextBox", stepTitle: "$$\\frac{p^{21}}{p^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

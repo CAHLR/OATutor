@@ -1,0 +1,1 @@
+import hints from "./af332e1hist2e-index.js"; const step = {id: "af332e1hist2e", stepAnswer: ["5.5"], problemType: "TextBox", stepTitle: "The 6 in the middle of the interval from $$___$$ to $$___$$ (first blank).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

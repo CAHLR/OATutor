@@ -1,0 +1,1 @@
+import hints from "./a3a2009expectedvalue25a-index.js"; const step = {id: "a3a2009expectedvalue25a", stepAnswer: ["0.35"], problemType: "TextBox", stepTitle: "Assuming that 10,000 tickets are to be issued and sold, what is a fair price to charge to break even?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

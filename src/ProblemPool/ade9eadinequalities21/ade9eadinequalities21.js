@@ -1,0 +1,1 @@
+import steps from "./ade9eadinequalities21-index.js"; const problem = {id: "ade9eadinequalities21", title: "Finding the Slope of a Line", body: "Find the slope of the line. If the slope is undefined, enter \"und\" without the quotes.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.2 Ph [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

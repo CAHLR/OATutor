@@ -1,0 +1,1 @@
+import hints from "./a694122gcf9a-index.js"; const step = {id: "a694122gcf9a", stepAnswer: ["$$\\left(a+7\\right) \\left(b+8\\right)$$"], problemType: "TextBox", stepTitle: "Factor by grouping: $$ab+7b+8a+56$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

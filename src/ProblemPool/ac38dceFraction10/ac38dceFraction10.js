@@ -1,0 +1,1 @@
+import steps from "./ac38dceFraction10-index.js"; const problem = {id: "ac38dceFraction10", title: "Evaluate Variable Expressions with Fraction", body: "Evaluate the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.3 rw [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

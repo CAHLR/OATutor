@@ -1,0 +1,1 @@
+import hints from "./a9981f3RealNums8a-index.js"; const step = {id: "a9981f3RealNums8a", stepAnswer: ["-48a"], problemType: "TextBox", stepTitle: "$$-27a+\\left(-48a\\right)+27a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

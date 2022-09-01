@@ -1,0 +1,1 @@
+import steps from "./a464a32Determinant10-index.js"; const problem = {id: "a464a32Determinant10", title: "Dependent and Inconsistent Systems of Equations", body: "Solve the system of equations using Cramer’s rule", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.6 RW[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

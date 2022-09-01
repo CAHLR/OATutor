@@ -1,0 +1,1 @@
+import hints from "./ac3e66ctreeandvenn16a-index.js"; const step = {id: "ac3e66ctreeandvenn16a", stepAnswer: ["$$\\frac{24}{42}$$"], problemType: "TextBox", stepTitle: "What is the probability that one ball of each coloring is selected?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

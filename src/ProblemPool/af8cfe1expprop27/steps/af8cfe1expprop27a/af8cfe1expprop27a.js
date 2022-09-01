@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop27a-index.js"; const step = {id: "af8cfe1expprop27a", stepAnswer: ["$$u^{21}$$"], problemType: "TextBox", stepTitle: "$$\\frac{u^{24}}{u^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

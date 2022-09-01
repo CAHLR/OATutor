@@ -1,0 +1,1 @@
+import hints from "./ac33fcaSolvingFormul11a-index.js"; const step = {id: "ac33fcaSolvingFormul11a", stepAnswer: ["$$y=\\frac{1-5x}{8}$$"], problemType: "TextBox", stepTitle: "$$5x+8y=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

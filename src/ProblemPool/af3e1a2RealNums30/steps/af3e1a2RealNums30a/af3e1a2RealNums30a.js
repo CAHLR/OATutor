@@ -1,0 +1,1 @@
+import hints from "./af3e1a2RealNums30a-index.js"; const step = {id: "af3e1a2RealNums30a", stepAnswer: ["$$\\frac{11}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{6}+\\frac{8}{15}+\\frac{7}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

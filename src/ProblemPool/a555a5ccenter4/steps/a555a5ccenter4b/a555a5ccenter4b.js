@@ -1,0 +1,1 @@
+import hints from "./a555a5ccenter4b-index.js"; const step = {id: "a555a5ccenter4b", stepAnswer: ["315000"], problemType: "TextBox", stepTitle: "What is the median of the data set?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

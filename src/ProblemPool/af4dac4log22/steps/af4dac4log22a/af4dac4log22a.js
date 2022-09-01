@@ -1,0 +1,1 @@
+import hints from "./af4dac4log22a-index.js"; const step = {id: "af4dac4log22a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\log_{5}\\left(4x-2\\right)=\\log_{5}\\left(10\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

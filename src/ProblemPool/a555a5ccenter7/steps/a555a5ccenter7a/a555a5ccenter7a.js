@@ -1,0 +1,1 @@
+import hints from "./a555a5ccenter7a-index.js"; const step = {id: "a555a5ccenter7a", stepAnswer: ["Bimodal"], problemType: "MultipleChoice", stepTitle: "Determine whether the set is unimodal or bimodal.", stepBody: "", choices: ["Unimodal", "Bimodal"], answerType: "string", hints: hints, variabilization: {}}; export {step};

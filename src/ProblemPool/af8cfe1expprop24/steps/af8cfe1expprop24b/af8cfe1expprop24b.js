@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop24b-index.js"; const step = {id: "af8cfe1expprop24b", stepAnswer: ["$$5^9$$"], problemType: "TextBox", stepTitle: "$$\\frac{5^{12}}{5^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

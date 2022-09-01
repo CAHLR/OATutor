@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp3a-index.js"; const step = {id: "ae223c4divradexp3a", stepAnswer: ["$$\\frac{5s}{8}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[2]{50s^3}}{\\sqrt[2]{128s}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

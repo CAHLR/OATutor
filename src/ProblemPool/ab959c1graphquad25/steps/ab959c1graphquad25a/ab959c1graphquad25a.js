@@ -1,0 +1,1 @@
+import hints from "./ab959c1graphquad25a-index.js"; const step = {id: "ab959c1graphquad25a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\left(-3{\\left(x+2\\right)}^2\\right)+7$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

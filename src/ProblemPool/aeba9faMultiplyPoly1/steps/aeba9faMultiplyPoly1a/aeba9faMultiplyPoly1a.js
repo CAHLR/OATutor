@@ -1,0 +1,1 @@
+import hints from "./aeba9faMultiplyPoly1a-index.js"; const step = {id: "aeba9faMultiplyPoly1a", stepAnswer: ["$$-12x^5$$"], problemType: "TextBox", stepTitle: "a) $$3x^2 \\left(-4x^3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

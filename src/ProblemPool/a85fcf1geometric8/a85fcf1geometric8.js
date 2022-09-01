@@ -1,0 +1,1 @@
+import steps from "./a85fcf1geometric8-index.js"; const problem = {id: "a85fcf1geometric8", title: "Finding the Xth Term of a Sequence", body: "Find the thirteenth term of the following sequence.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

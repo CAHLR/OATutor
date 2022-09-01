@@ -1,0 +1,1 @@
+import hints from "./ad3667dMultDivInts5b-index.js"; const step = {id: "ad3667dMultDivInts5b", stepAnswer: ["25"], problemType: "TextBox", stepTitle: "$$\\frac{-100}{-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

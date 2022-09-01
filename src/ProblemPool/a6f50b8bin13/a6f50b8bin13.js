@@ -1,0 +1,1 @@
+import steps from "./a6f50b8bin13-index.js"; const problem = {id: "a6f50b8bin13", title: "Using Pascal's Trianlge to Exapnd a polynomial.", body: "Use Pascal’s Triangle to expand the following:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.4[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

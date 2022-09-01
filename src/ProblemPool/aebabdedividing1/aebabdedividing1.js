@@ -1,0 +1,1 @@
+import steps from "./aebabdedividing1-index.js"; const problem = {id: "aebabdedividing1", title: "Dividing Polynomial", body: "In the following exercises, divide the monomials.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "5.4 AL[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

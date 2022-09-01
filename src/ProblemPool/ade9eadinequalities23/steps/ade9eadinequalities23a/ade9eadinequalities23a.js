@@ -1,0 +1,1 @@
+import hints from "./ade9eadinequalities23a-index.js"; const step = {id: "ade9eadinequalities23a", stepAnswer: ["$$\\frac{-7}{5}$$"], problemType: "TextBox", stepTitle: "(-2,-3) and (-7,4)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

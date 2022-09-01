@@ -1,0 +1,1 @@
+import steps from "./ac0e504factoring1-index.js"; const problem = {id: "ac0e504factoring1", title: "Factor Differences of Squares", body: "Factor the following expression completely.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.3 AnP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

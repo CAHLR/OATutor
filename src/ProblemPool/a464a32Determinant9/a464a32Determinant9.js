@@ -1,0 +1,1 @@
+import steps from "./a464a32Determinant9-index.js"; const problem = {id: "a464a32Determinant9", title: "Cramer's Rule for Solving a System of Three Equations", body: "Solving the system of equations using Cramer's Rule", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.6 RW[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

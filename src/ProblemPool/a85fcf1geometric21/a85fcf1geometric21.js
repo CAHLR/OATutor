@@ -1,0 +1,1 @@
+import steps from "./a85fcf1geometric21-index.js"; const problem = {id: "a85fcf1geometric21", title: "Finding Sums of Infinite Geometric Series", body: "Find the sum of the $$infinite$$ geometric series listed below.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

@@ -1,0 +1,1 @@
+import steps from "./a85fcf1geometric10-index.js"; const problem = {id: "a85fcf1geometric10", title: "Determining the General Term", body: "Determine the general term for the sequence below.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

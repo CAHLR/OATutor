@@ -1,0 +1,1 @@
+import steps from "./a18a167Rational13-index.js"; const problem = {id: "a18a167Rational13", title: "Determine the domain of a rational function.", body: "Find the domain of the following rational function:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "7.1 RW[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

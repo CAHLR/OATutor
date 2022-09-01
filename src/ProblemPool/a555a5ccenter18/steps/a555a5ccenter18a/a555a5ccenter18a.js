@@ -1,0 +1,1 @@
+import hints from "./a555a5ccenter18a-index.js"; const step = {id: "a555a5ccenter18a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Calculate the mode.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

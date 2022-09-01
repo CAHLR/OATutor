@@ -1,0 +1,1 @@
+var hints = [{id: "af8cfe1expprop26b-h1", type: "hint", dependencies: [], title: "Quotient Property", text: "$$\\frac{a^m}{a^n}=a^{m-n}$$", variabilization: {}}, ]; export {hints};

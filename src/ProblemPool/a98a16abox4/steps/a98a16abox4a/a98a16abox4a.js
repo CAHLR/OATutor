@@ -1,0 +1,1 @@
+import hints from "./a98a16abox4a-index.js"; const step = {id: "a98a16abox4a", stepAnswer: ["BMW 3"], problemType: "MultipleChoice", stepTitle: "Which group is most likely to have an outlier?", stepBody: "", choices: ["BMW 3", "BMW 5", "BMW 7"], answerType: "string", hints: hints, variabilization: {}}; export {step};

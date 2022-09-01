@@ -1,0 +1,1 @@
+import hints from "./a808aa5DiscreteD14a-index.js"; const step = {id: "a808aa5DiscreteD14a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "If our player rolls three dice and plays the game ten times, how many point(s) can we expect them to get?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

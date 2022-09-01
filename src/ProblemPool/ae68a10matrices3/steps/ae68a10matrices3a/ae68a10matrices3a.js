@@ -1,0 +1,1 @@
+import hints from "./ae68a10matrices3a-index.js"; const step = {id: "ae68a10matrices3a", stepAnswer: ["mat({11,-9,-5},{7,5,-1})"], problemType: "TextBox", stepTitle: "Write the system as an augmented matrix: $$11x=-9y-5$$, $$7x+5y=-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

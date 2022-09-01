@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency15a-index.js"; const step = {id: "af23a60contingency15a", stepAnswer: ["$$\\frac{1}{11}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected person is not drinking water given that they are using a reuseable cup?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

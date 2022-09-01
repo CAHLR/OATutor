@@ -1,0 +1,1 @@
+import hints from "./ac0e504factoring7a-index.js"; const step = {id: "ac0e504factoring7a", stepAnswer: ["$$\\left(5x+9\\right) \\left(5x-9\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$25x^2-81$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

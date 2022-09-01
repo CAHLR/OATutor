@@ -1,0 +1,1 @@
+import hints from "./a61f754spread11a-index.js"; const step = {id: "a61f754spread11a", stepAnswer: ["Beth"], problemType: "MultipleChoice", stepTitle: "Which swimmer had the fastest time when compared to her team?", stepBody: "", choices: ["Angie", "Beth"], answerType: "string", hints: hints, variabilization: {}}; export {step};

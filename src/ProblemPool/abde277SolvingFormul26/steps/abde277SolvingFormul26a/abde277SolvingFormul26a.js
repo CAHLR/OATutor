@@ -1,0 +1,1 @@
+import hints from "./abde277SolvingFormul26a-index.js"; const step = {id: "abde277SolvingFormul26a", stepAnswer: ["$$p=\\frac{2A-2B}{l}$$"], problemType: "TextBox", stepTitle: "$$A=\\frac{1}{2} pl+B$$ for p", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

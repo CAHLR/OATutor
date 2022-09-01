@@ -1,0 +1,1 @@
+import hints from "./afc244aSolveapp13a-index.js"; const step = {id: "afc244aSolveapp13a", stepAnswer: ["159"], problemType: "TextBox", stepTitle: "A new energy drink advertises 106 calories for 8 ounces. How many calories are in 12 ounces of the drink?", stepBody: "Please enter you answer as number.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

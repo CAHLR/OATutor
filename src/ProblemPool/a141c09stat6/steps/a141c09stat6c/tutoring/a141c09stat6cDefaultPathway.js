@@ -1,0 +1,1 @@
+var hints = [{id: "a141c09stat6c-h3", type: "scaffold", problemType: "MultipleChoice", answerType: "string", hintAnswer: ["statistic"], dependencies: ["a141c09stat6b-h2"], title: "Definitions", text: "Which of the following terms finds the value of the desired data for a sample?", choices: ["parameter", "statistic", "data", "variable"], variabilization: {}}, ]; export {hints};

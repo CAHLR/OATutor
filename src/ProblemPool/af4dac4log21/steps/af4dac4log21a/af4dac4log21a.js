@@ -1,0 +1,1 @@
+import hints from "./af4dac4log21a-index.js"; const step = {id: "af4dac4log21a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "Principle", stepBody: "$$3*\\log_{6}\\left(x\\right)=\\log_{6}\\left(64\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

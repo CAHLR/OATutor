@@ -1,0 +1,1 @@
+import hints from "./a71141blinear29a-index.js"; const step = {id: "a71141blinear29a", stepAnswer: ["$$b \\leq -300$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$\\frac{b}{-10} \\geq 30$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

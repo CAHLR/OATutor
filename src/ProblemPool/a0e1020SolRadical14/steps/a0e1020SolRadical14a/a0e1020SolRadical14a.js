@@ -1,0 +1,1 @@
+import hints from "./a0e1020SolRadical14a-index.js"; const step = {id: "a0e1020SolRadical14a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$\\sqrt{5v-2}+5=0$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "string", hints: hints, variabilization: {}}; export {step};

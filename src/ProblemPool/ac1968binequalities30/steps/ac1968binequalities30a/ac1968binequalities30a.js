@@ -1,0 +1,1 @@
+import hints from "./ac1968binequalities30a-index.js"; const step = {id: "ac1968binequalities30a", stepAnswer: ["[1/2,2]"], problemType: "TextBox", stepTitle: "$$|4x-5| \\leq 3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

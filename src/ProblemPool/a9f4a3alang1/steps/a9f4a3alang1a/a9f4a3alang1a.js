@@ -1,0 +1,1 @@
+import hints from "./a9f4a3alang1a-index.js"; const step = {id: "a9f4a3alang1a", stepAnswer: ["3"], problemType: "MultipleChoice", stepTitle: "Is 5625 divisible by 2, 3, 4, 5 and 10, or 6?", stepBody: "", choices: ["2", "3", "5 and 10", "6"], answerType: "string", hints: hints, variabilization: {}}; export {step};

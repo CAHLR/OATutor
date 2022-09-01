@@ -1,0 +1,1 @@
+import steps from "./af23defint1-index.js"; const problem = {id: "af23defint1", title: "Simplify Expressions with Absolute Value", body: "Select the correct statement for each of the following pairs of numbers.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 jg [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

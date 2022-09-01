@@ -1,0 +1,1 @@
+import hints from "./a1a4133MultDivInts18a-index.js"; const step = {id: "a1a4133MultDivInts18a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\frac{-24}{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

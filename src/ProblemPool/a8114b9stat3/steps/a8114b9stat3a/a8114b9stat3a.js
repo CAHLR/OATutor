@@ -1,0 +1,1 @@
+import hints from "./a8114b9stat3a-index.js"; const step = {id: "a8114b9stat3a", stepAnswer: ["Qualitative"], problemType: "MultipleChoice", stepTitle: "The type of car you drive", stepBody: "", choices: ["Quantitative Discrete", "Qualitative", "Quantitative Continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

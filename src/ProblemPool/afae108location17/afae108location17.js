@@ -1,0 +1,1 @@
+import steps from "./afae108location17-index.js"; const problem = {id: "afae108location17", title: "Percentiles in Context", body: "Jesse was ranked 37th in his graduating class of 180 students.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S2.3 Ash", courseName: "!!Editor Sheet 4b770c"}; export { problem };

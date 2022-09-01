@@ -1,0 +1,1 @@
+import hints from "./a8114b9stat5a-index.js"; const step = {id: "a8114b9stat5a", stepAnswer: ["Quantitative Discrete"], problemType: "MultipleChoice", stepTitle: "The number of classes you take per school year.", stepBody: "", choices: ["Quantitative Discrete", "Qualitative", "Quantitative Continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

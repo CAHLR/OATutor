@@ -1,0 +1,1 @@
+import hints from "./a0e5501functions8a-index.js"; const step = {id: "a0e5501functions8a", stepAnswer: ["$$3-h^2$$"], problemType: "TextBox", stepTitle: "$$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a5aab75parabolas8a-index.js"; const step = {id: "a5aab75parabolas8a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$y=\\left(-x^2\\right)+2x-4$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

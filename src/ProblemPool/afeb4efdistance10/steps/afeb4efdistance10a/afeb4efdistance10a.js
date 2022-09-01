@@ -1,0 +1,1 @@
+import hints from "./afeb4efdistance10a-index.js"; const step = {id: "afeb4efdistance10a", stepAnswer: ["$$2\\sqrt{10}$$"], problemType: "TextBox", stepTitle: "(-1,-2) and (-3,4)", stepBody: "Write your answer in exact form. Simplify your answer as much as possible.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

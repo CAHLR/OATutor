@@ -1,0 +1,1 @@
+import hints from "./a5aab75parabolas7a-index.js"; const step = {id: "a5aab75parabolas7a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "$$y=8x^2-10x+3$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

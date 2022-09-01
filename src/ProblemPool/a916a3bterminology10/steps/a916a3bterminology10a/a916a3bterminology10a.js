@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology10a-index.js"; const step = {id: "a916a3bterminology10a", stepAnswer: ["$$\\frac{20}{150}$$"], problemType: "TextBox", stepTitle: "Find P(G).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

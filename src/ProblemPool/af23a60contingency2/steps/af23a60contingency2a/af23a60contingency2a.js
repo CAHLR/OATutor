@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency2a-index.js"; const step = {id: "af23a60contingency2a", stepAnswer: ["$$\\frac{685}{755}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected driver has had no violation in the past year?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

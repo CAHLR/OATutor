@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop24a-index.js"; const step = {id: "af8cfe1expprop24a", stepAnswer: ["$$x^{15}$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^{18}}{x^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

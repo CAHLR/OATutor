@@ -1,0 +1,1 @@
+import steps from "./ace0d88location11-index.js"; const problem = {id: "ace0d88location11", title: "Interpreting Quartiles", body: "On a timed math test, the first quartile for time it took to finish the exam was 35 minutes.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3", courseName: "!!Editor Sheet cf0669"}; export { problem };

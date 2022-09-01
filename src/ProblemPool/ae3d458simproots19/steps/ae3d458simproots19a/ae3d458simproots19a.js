@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots19a-index.js"; const step = {id: "ae3d458simproots19a", stepAnswer: ["n"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{n^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

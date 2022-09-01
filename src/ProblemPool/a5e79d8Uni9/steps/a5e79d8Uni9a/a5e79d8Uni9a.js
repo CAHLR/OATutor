@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni9a-index.js"; const step = {id: "a5e79d8Uni9a", stepAnswer: ["$$\\frac{16}{20}$$"], problemType: "TextBox", stepTitle: "What is $$P\\left(1<x<17\\right)$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

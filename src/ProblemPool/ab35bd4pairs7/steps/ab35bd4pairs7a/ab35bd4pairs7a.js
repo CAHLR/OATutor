@@ -1,0 +1,1 @@
+import hints from "./ab35bd4pairs7a-index.js"; const step = {id: "ab35bd4pairs7a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether (-6,2) is a solution to the system: $$2x+3y=6, y=\\frac{2}{3} x+2$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

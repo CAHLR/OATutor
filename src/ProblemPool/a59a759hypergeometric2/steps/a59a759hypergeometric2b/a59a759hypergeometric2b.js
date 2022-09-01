@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric2b-index.js"; const step = {id: "a59a759hypergeometric2b", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "What is the size of the group of interest?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

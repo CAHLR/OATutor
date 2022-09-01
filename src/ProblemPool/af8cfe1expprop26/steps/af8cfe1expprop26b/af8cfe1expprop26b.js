@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop26b-index.js"; const step = {id: "af8cfe1expprop26b", stepAnswer: ["$$4^{12}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4^{16}}{4^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

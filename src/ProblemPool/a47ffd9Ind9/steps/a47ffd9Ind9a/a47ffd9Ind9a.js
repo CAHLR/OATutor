@@ -1,0 +1,1 @@
+import hints from "./a47ffd9Ind9a-index.js"; const step = {id: "a47ffd9Ind9a", stepAnswer: ["0.75"], problemType: "TextBox", stepTitle: "Draw two cards from a standard 52-card deck with replacement. Find the probability of getting at least one black card.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric6b-index.js"; const step = {id: "a59a759hypergeometric6b", stepAnswer: ["The men"], problemType: "MultipleChoice", stepTitle: "What is the group of interest?", stepBody: "", choices: ["The men", "The women", "The committee", "The president"], answerType: "string", hints: hints, variabilization: {}}; export {step};

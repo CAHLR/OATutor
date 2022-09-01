@@ -1,0 +1,1 @@
+import hints from "./afaa657functions15a-index.js"; const step = {id: "afaa657functions15a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=\\frac{1}{2} x+1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9f4a3alang9a-index.js"; const step = {id: "a9f4a3alang9a", stepAnswer: ["w-14"], problemType: "TextBox", stepTitle: "Write an expression for the length of the rectangle.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

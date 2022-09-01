@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals22a-index.js"; const step = {id: "aeba912Radicals22a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{-64}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

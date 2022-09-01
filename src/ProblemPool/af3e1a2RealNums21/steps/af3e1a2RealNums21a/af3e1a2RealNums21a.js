@@ -1,0 +1,1 @@
+import hints from "./af3e1a2RealNums21a-index.js"; const step = {id: "af3e1a2RealNums21a", stepAnswer: ["-176"], problemType: "TextBox", stepTitle: "$$-36\\times11 \\frac{4}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

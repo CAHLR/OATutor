@@ -1,0 +1,1 @@
+import hints from "./a141c09stat9c-index.js"; const step = {id: "a141c09stat9c", stepAnswer: ["stratified"], problemType: "TextBox", stepTitle: "A high school educational researcher interviews 50 high school female teachers and 50 high school male teachers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

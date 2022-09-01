@@ -1,0 +1,1 @@
+import steps from "./ace0d88location15-index.js"; const problem = {id: "ace0d88location15", title: "Interpreting Percentiles in Context", body: "During a season, the 40th percentile for points scored per player in a game is eight.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3", courseName: "!!Editor Sheet cf0669"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./af3e1a2RealNums20a-index.js"; const step = {id: "af3e1a2RealNums20a", stepAnswer: ["-63"], problemType: "TextBox", stepTitle: "$$-24\\times7 \\frac{3}{8}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

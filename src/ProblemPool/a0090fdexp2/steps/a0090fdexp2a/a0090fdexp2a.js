@@ -1,0 +1,1 @@
+import hints from "./a0090fdexp2a-index.js"; const step = {id: "a0090fdexp2a", stepAnswer: ["Scent"], problemType: "TextBox", stepTitle: "Describe the explanatory variable.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

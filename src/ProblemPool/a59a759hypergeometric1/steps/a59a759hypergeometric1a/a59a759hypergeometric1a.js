@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric1a-index.js"; const step = {id: "a59a759hypergeometric1a", stepAnswer: ["Gumdrops"], problemType: "MultipleChoice", stepTitle: "What is the group of interest?", stepBody: "", choices: ["Gumdrops", "Jelly beans"], answerType: "string", hints: hints, variabilization: {}}; export {step};

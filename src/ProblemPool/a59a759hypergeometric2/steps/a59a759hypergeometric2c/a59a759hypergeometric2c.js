@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric2c-index.js"; const step = {id: "a59a759hypergeometric2c", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "What is the size of the sample?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

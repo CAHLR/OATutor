@@ -1,0 +1,1 @@
+import hints from "./a18a167Rational2a-index.js"; const step = {id: "a18a167Rational2a", stepAnswer: ["when $$x=0$$"], problemType: "MultipleChoice", stepTitle: "a) $$\\frac{3y^2}{8x}$$", stepBody: "", choices: ["when $$x=y$$", "when $$x=0$$", "when $$y=0$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

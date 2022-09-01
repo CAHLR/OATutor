@@ -1,0 +1,1 @@
+import hints from "./a7944c5poly10a-index.js"; const step = {id: "a7944c5poly10a", stepAnswer: ["-4, 2"], problemType: "MultipleChoice", stepTitle: "Find the two x-values that lie on the graph of the function $$x^2+2x-2=6$$", stepBody: "", choices: ["3, -3", "-5, 4", "5, 6", "-4, 2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

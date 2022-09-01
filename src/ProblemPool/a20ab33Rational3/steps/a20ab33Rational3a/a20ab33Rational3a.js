@@ -1,0 +1,1 @@
+import hints from "./a20ab33Rational3a-index.js"; const step = {id: "a20ab33Rational3a", stepAnswer: ["z ** $$\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "Write as a radical expression", stepBody: "z ** $$\\frac{1}{4}$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

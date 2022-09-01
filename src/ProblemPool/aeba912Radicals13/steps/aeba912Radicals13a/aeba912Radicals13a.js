@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals13a-index.js"; const step = {id: "aeba912Radicals13a", stepAnswer: ["$$p^4 \\sqrt{p}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{p^9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

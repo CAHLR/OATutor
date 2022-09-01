@@ -1,0 +1,1 @@
+import hints from "./ad1588bFactoring9a-index.js"; const step = {id: "ad1588bFactoring9a", stepAnswer: ["2*x*y*((25*(x**2)+36)"], problemType: "TextBox", stepTitle: "(50*(x**3)*y))+72*x*y", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

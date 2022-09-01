@@ -1,0 +1,1 @@
+import hints from "./af126e3Polynomial5b-index.js"; const step = {id: "af126e3Polynomial5b", stepAnswer: ["$$-10y^2 z^3$$"], problemType: "TextBox", stepTitle: "b) $$-15y^2 z^3-\\left(-5y^2 z^3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

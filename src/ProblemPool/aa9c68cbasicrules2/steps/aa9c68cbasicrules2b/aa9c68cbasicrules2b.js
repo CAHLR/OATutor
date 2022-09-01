@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules2b-index.js"; const step = {id: "aa9c68cbasicrules2b", stepAnswer: ["0.715"], problemType: "TextBox", stepTitle: "What is the probability that Carlos makes either the first goal or the second goal?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

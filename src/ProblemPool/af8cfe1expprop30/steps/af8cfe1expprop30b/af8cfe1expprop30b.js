@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop30b-index.js"; const step = {id: "af8cfe1expprop30b", stepAnswer: ["$$5^{xy}$$"], problemType: "TextBox", stepTitle: "$${\\left(5^x\\right)}^y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

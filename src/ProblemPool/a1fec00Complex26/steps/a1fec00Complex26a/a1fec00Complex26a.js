@@ -1,0 +1,1 @@
+import hints from "./a1fec00Complex26a-index.js"; const step = {id: "a1fec00Complex26a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\left(3-2i\\right) \\left(3+2i\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

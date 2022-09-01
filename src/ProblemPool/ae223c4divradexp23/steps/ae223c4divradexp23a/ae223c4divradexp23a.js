@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp23a-index.js"; const step = {id: "ae223c4divradexp23a", stepAnswer: ["$$\\frac{\\sqrt[3]{36}}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{\\sqrt[3]{6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

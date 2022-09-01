@@ -1,0 +1,1 @@
+import hints from "./a368ca5desc-stat5a-index.js"; const step = {id: "a368ca5desc-stat5a", stepAnswer: ["Continuous"], problemType: "MultipleChoice", stepTitle: "The volume of water in a cup.", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

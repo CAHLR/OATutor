@@ -1,0 +1,1 @@
+import hints from "./a87674afactoringpoly4a-index.js"; const step = {id: "a87674afactoringpoly4a", stepAnswer: ["$$x^3 \\left(x^2+9\\right)$$"], problemType: "TextBox", stepTitle: "$$75x^3+12x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

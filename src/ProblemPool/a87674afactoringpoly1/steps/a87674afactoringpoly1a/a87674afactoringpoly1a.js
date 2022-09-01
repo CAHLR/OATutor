@@ -1,0 +1,1 @@
+import hints from "./a87674afactoringpoly1a-index.js"; const step = {id: "a87674afactoringpoly1a", stepAnswer: ["$$\\left(2x-1\\right) \\left(x+7\\right)$$"], problemType: "TextBox", stepTitle: "$$2x^2+13x-7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

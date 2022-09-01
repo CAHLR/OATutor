@@ -1,0 +1,1 @@
+import hints from "./a0e5501functions13a-index.js"; const step = {id: "a0e5501functions13a", stepAnswer: ["-3x-10"], problemType: "TextBox", stepTitle: "$$g(x)=-3x-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

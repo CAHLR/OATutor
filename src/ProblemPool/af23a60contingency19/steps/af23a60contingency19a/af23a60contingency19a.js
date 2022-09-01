@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency19a-index.js"; const step = {id: "af23a60contingency19a", stepAnswer: ["$$\\frac{12}{301}$$"], problemType: "TextBox", stepTitle: "What is the probability that a random artist plays Piano given that they only play during the Night?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

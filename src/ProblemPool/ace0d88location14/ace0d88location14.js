@@ -1,0 +1,1 @@
+import steps from "./ace0d88location14-index.js"; const problem = {id: "ace0d88location14", title: "Interpreting Percentiles in Context", body: "On a 60 point written assignment, the 80th percentile for the number of points earned was 49.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3", courseName: "!!Editor Sheet cf0669"}; export { problem };

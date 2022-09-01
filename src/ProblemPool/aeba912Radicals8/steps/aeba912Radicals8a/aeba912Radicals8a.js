@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals8a-index.js"; const step = {id: "aeba912Radicals8a", stepAnswer: ["$$3\\sqrt[4]{3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{243}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

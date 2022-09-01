@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots20a-index.js"; const step = {id: "ae3d458simproots20a", stepAnswer: ["$$|p|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{p^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import steps from "./a8741a7log26-index.js"; const problem = {id: "a8741a7log26", title: "Evaluate Logarithmic Functions", body: "In the following, find the value of x in each logarithmic equation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

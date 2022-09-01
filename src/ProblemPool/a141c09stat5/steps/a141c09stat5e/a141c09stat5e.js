@@ -1,0 +1,1 @@
+import hints from "./a141c09stat5e-index.js"; const step = {id: "a141c09stat5e", stepAnswer: ["$$X=the$$ number of couples who stay married"], problemType: "MultipleChoice", stepTitle: "What is the variable?", stepBody: "", choices: ["$$X=the$$ number of couples who stay married", "yes, no"], answerType: "string", hints: hints, variabilization: {}}; export {step};

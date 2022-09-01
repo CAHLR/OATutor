@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology2j-index.js"; const step = {id: "a916a3bterminology2j", stepAnswer: ["$$\\frac{8}{12}$$"], problemType: "TextBox", stepTitle: "What is P(B|A)?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

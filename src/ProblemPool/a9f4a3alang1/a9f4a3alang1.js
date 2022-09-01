@@ -1,0 +1,1 @@
+import steps from "./a9f4a3alang1-index.js"; const problem = {id: "a9f4a3alang1", title: "Find Factors, Prime Factorizations, and Least Common Multiples", body: "Select the options with numbers that are all factors of 5625.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 st [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

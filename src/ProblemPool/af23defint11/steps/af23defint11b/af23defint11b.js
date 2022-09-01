@@ -1,0 +1,1 @@
+import hints from "./af23defint11b-index.js"; const step = {id: "af23defint11b", stepAnswer: ["-63"], problemType: "TextBox", stepTitle: "9 * (-7)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ace0d88location1a-index.js"; const step = {id: "ace0d88location1a", stepAnswer: ["340250"], problemType: "TextBox", stepTitle: "Calculate the IQR (InterQuartile Range).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

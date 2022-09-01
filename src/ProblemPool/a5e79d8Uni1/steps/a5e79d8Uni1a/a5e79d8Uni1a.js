@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni1a-index.js"; const step = {id: "a5e79d8Uni1a", stepAnswer: ["11.5"], problemType: "TextBox", stepTitle: "What is the mean amount of time that the baby is smiling?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

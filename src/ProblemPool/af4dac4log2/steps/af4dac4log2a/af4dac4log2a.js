@@ -1,0 +1,1 @@
+import hints from "./af4dac4log2a-index.js"; const step = {id: "af4dac4log2a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "Use Log Rules", stepBody: "$$2*\\log_{3}\\left(x\\right)=\\log_{3}\\left(36\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

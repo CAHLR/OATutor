@@ -1,0 +1,1 @@
+import hints from "./ac1968binequalities24a-index.js"; const step = {id: "ac1968binequalities24a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "$$|\\frac{5}{6} x+3|+8=6$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a368ca5desc-stat7a-index.js"; const step = {id: "a368ca5desc-stat7a", stepAnswer: ["Both"], problemType: "MultipleChoice", stepTitle: "Box Plot", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

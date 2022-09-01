@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp7a-index.js"; const step = {id: "ae223c4divradexp7a", stepAnswer: ["$$\\frac{7b^2}{a}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[2]{147a b^8}}{\\sqrt[2]{3a^3 b^4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
