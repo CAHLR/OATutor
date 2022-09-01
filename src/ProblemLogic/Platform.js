@@ -37,7 +37,7 @@ class Platform extends React.Component {
         for (const problem of this.problemIndex.problems) {
             for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
                 const step = problem.steps[stepIndex];
-                step.knowledgeComponents = cleanArray(context.skillModel[step.id]);
+                step.knowledgeComponents = cleanArray(context.skillModel[step.id] || []);
             }
         }
         if (this.props.lessonID == null) {
