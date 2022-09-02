@@ -1,1 +1,0 @@
-import hints from "./a66ce95Linear21a-index.js"; const step = {id: "a66ce95Linear21a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$-15+4\\left(2-5y\\right)=-7\\left(y-4\\right)+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

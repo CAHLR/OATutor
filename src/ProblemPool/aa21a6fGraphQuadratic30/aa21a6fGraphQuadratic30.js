@@ -1,1 +1,0 @@
-import steps from "./aa21a6fGraphQuadratic30-index.js"; const problem = {id: "aa21a6fGraphQuadratic30", title: "In the following exercises, solve.", body: "Round answers to the nearest tenth.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "9.6[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

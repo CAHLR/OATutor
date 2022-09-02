@@ -1,1 +1,0 @@
-import hints from "./a5aab75parabolas21a-index.js"; const step = {id: "a5aab75parabolas21a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "$$x=-\\left(y^2\\right)$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

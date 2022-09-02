@@ -1,1 +1,0 @@
-import hints from "./ac98d98systemMat13c-index.js"; const step = {id: "ac98d98systemMat13c", stepAnswer: ["$$\\begin{bmatrix} 6 & -4 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Multiply row 2 by -2 and add row 1 to it. Perform this on the original matrix.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

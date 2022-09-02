@@ -1,1 +1,0 @@
-import steps from "./af2019bgraphs2-index.js"; const problem = {id: "af2019bgraphs2", title: "Determine if function", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.6 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

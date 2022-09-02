@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly5b-index.js"; const step = {id: "aeba9faMultiplyPoly5b", stepAnswer: ["$$8y^2-14y-15$$"], problemType: "TextBox", stepTitle: "b) $$\\left(4y+3\\right) \\left(2y-5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

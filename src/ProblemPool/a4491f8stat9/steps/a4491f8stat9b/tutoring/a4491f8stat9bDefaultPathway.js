@@ -1,1 +1,0 @@
-var hints = [{id: "a4491f8stat9b-h1", type: "hint", dependencies: [], title: "Mathematical Notation of Variables", text: "In statistics, variables often are defined by a capital letter like X or Y to measure a value for a member of the population.", variabilization: {}}, ]; export {hints};

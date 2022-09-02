@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic19a-index.js"; const step = {id: "abac4b0probbasic19a", stepAnswer: ["$$\\frac{7}{8}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student does at least one thing (Sports, Job, Activity) outside of school?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

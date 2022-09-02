@@ -1,1 +1,0 @@
-import hints from "./a8566ddcenter1b-index.js"; const step = {id: "a8566ddcenter1b", stepAnswer: ["24"], problemType: "TextBox", stepTitle: "Calculate the median.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

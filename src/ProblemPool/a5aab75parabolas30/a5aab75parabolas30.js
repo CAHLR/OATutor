@@ -1,1 +1,0 @@
-import steps from "./a5aab75parabolas30-index.js"; const problem = {id: "a5aab75parabolas30", title: "Rewriting the equation in Standard Form.", body: "Rewrite the given equation into standard form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "11.2[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

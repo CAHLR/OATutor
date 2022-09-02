@@ -1,1 +1,0 @@
-import hints from "./aa21a6fGraphQuadratic3a-index.js"; const step = {id: "aa21a6fGraphQuadratic3a", stepAnswer: ["Down"], problemType: "TextBox", stepTitle: "$$f(x)=-3x^2+5x-1$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

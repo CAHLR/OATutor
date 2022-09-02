@@ -1,1 +1,0 @@
-import hints from "./ad3667dMultDivInts9b-index.js"; const step = {id: "ad3667dMultDivInts9b", stepAnswer: ["-16"], problemType: "TextBox", stepTitle: "Simplify the expression to a single number.", stepBody: "$$-\\left(7^2\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

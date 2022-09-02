@@ -1,1 +1,0 @@
-import hints from "./af17844Solving12a-index.js"; const step = {id: "af17844Solving12a", stepAnswer: ["42000"], problemType: "TextBox", stepTitle: "What does the husband earn?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

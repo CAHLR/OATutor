@@ -1,1 +1,0 @@
-import hints from "./add6935Sim1a-index.js"; const step = {id: "add6935Sim1a", stepAnswer: ["$$2\\left(x+4\\right)$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{6}{x-4}}{\\frac{3}{x^2-16}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical24a-index.js"; const step = {id: "a81d715SolRadical24a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$${\\left(5x-4\\right)}^{\\frac{1}{4}}+7=9$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

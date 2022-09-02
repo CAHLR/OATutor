@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules1a-index.js"; const step = {id: "aa9c68cbasicrules1a", stepAnswer: ["0.05"], problemType: "TextBox", stepTitle: "What is the probability that Klaus chooses to not go anywhere on vacation?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

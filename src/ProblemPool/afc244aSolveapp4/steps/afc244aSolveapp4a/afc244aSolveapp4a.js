@@ -1,1 +1,0 @@
-import hints from "./afc244aSolveapp4a-index.js"; const step = {id: "afc244aSolveapp4a", stepAnswer: ["-13"], problemType: "TextBox", stepTitle: "$$\\frac{72}{156}=\\frac{-6}{q}$$", stepBody: "Solve for q.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

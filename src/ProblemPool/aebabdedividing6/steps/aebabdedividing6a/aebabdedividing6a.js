@@ -1,1 +1,0 @@
-import hints from "./aebabdedividing6a-index.js"; const step = {id: "aebabdedividing6a", stepAnswer: ["$$4x^2+3x$$"], problemType: "TextBox", stepTitle: "$$\\frac{8x^3+6x^2}{2x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

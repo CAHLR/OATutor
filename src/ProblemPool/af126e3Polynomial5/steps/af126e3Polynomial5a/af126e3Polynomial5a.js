@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial5a-index.js"; const step = {id: "af126e3Polynomial5a", stepAnswer: ["$$-7c^2$$"], problemType: "TextBox", stepTitle: "a) $$-15c^2+8c^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

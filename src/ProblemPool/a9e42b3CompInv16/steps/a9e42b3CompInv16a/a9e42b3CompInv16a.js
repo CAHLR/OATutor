@@ -1,1 +1,0 @@
-import hints from "./a9e42b3CompInv16a-index.js"; const step = {id: "a9e42b3CompInv16a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Verify if the following function are reverse functions", stepBody: "f(x) $$=$$ $$5x$$ - 1, g(x) $$=$$ (x+1)/ 5", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

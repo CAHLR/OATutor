@@ -1,1 +1,0 @@
-import hints from "./a78246bquadratics20a-index.js"; const step = {id: "a78246bquadratics20a", stepAnswer: ["$$x=4$$"], problemType: "MultipleChoice", stepTitle: "$$x+6\\sqrt{x}-16=0$$", stepBody: "", choices: ["$$x=16$$, $$x=9$$", "$$x=25$$", "$$x=4$$", "$$x=25$$, $$x=9$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

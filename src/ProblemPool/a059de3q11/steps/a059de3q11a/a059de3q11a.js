@@ -1,1 +1,0 @@
-import hints from "./a059de3q11a-index.js"; const step = {id: "a059de3q11a", stepAnswer: ["Bimodal"], problemType: "TextBox", stepTitle: "What word describes a distribution that has two modes?", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

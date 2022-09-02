@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni14a-index.js"; const step = {id: "a5e79d8Uni14a", stepAnswer: ["$$\\frac{7}{15}$$"], problemType: "TextBox", stepTitle: "What is the probability that someone will wait 7 minutes or less for the bus?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

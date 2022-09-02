@@ -1,1 +1,0 @@
-import hints from "./ade9eadinequalities27a-index.js"; const step = {id: "ade9eadinequalities27a", stepAnswer: ["-1/3,(0,3)"], problemType: "TextBox", stepTitle: "$$x+3y=9$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

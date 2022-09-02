@@ -1,1 +1,0 @@
-import steps from "./a778eefgraphexpfuncs1-index.js"; const problem = {id: "a778eefgraphexpfuncs1", title: "Graphing Exponential Functions", body: "Choose the correct graph corresponding to the given function.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.2[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

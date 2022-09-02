@@ -1,1 +1,0 @@
-import hints from "./a161552dividingpoly6a-index.js"; const step = {id: "a161552dividingpoly6a", stepAnswer: ["$$16x^2+12x+9$$"], problemType: "TextBox", stepTitle: "$$\\frac{64x^3-27}{4x-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

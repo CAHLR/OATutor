@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules13a-index.js"; const step = {id: "aa9c68cbasicrules13a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "TextBox", stepTitle: "Find P(B|D).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

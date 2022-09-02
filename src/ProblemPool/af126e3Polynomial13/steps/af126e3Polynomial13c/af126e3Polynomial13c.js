@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial13c-index.js"; const step = {id: "af126e3Polynomial13c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "c) f(0)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

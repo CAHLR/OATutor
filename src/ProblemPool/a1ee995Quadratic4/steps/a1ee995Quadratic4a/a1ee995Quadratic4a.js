@@ -1,1 +1,0 @@
-import hints from "./a1ee995Quadratic4a-index.js"; const step = {id: "a1ee995Quadratic4a", stepAnswer: ["$$x=1$$ or 5"], problemType: "MultipleChoice", stepTitle: "$$x^2-6x=-5$$", stepBody: "", choices: ["$$x=1$$ or 5", "$$x=-1$$ or 5", "$$x=1$$ or -5"], answerType: "string", hints: hints, variabilization: {}}; export {step};

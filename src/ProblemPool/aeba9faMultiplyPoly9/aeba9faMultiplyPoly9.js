@@ -1,1 +1,0 @@
-import steps from "./aeba9faMultiplyPoly9-index.js"; const problem = {id: "aeba9faMultiplyPoly9", title: "Multiply a Binomial by a Binomial", body: "Multiply the following terms", steps: steps, variabilization: {}, oer: "Multiply Polynomials", lesson: "5.3 RW [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

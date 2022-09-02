@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni5a-index.js"; const step = {id: "a5e79d8Uni5a", stepAnswer: ["$$\\frac{5}{23}$$"], problemType: "TextBox", stepTitle: "What is the probability that the eight-year-old baby smiles between 5.5 and 10.5 seconds?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

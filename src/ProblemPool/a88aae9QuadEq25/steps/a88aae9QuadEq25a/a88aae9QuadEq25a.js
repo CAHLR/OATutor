@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq25a-index.js"; const step = {id: "a88aae9QuadEq25a", stepAnswer: ["(-3-sqrt(6),-3+sqrt(6))"], problemType: "TextBox", stepTitle: "$$x^2+6x+3<0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

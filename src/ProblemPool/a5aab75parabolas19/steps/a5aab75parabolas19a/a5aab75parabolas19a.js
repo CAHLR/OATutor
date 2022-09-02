@@ -1,1 +1,0 @@
-import hints from "./a5aab75parabolas19a-index.js"; const step = {id: "a5aab75parabolas19a", stepAnswer: ["D"], problemType: "MultipleChoice", stepTitle: "$$x=2y^2$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

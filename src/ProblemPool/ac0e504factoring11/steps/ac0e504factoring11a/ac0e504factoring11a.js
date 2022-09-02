@@ -1,1 +1,0 @@
-import hints from "./ac0e504factoring11a-index.js"; const step = {id: "ac0e504factoring11a", stepAnswer: ["$$\\left(12x+8\\right) \\left(12x-8\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$144x^2-64$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

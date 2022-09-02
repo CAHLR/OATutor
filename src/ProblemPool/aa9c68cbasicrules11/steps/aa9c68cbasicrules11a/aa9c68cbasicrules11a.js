@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules11a-index.js"; const step = {id: "aa9c68cbasicrules11a", stepAnswer: ["0.857"], problemType: "TextBox", stepTitle: "What is the probability that a woman does not develop breast cancer?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

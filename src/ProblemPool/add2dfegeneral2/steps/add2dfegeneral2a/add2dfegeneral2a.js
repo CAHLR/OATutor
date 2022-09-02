@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral2a-index.js"; const step = {id: "add2dfegeneral2a", stepAnswer: ["$$4\\left(3q-5\\right) \\left(3q+5\\right)$$"], problemType: "TextBox", stepTitle: "$$36q^2-100$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

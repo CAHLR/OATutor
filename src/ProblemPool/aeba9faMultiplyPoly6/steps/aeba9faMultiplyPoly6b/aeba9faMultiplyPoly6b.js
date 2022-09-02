@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly6b-index.js"; const step = {id: "aeba9faMultiplyPoly6b", stepAnswer: ["$$15c^2-14c-8$$"], problemType: "TextBox", stepTitle: "b) $$\\left(3c+4\\right) \\left(5c-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

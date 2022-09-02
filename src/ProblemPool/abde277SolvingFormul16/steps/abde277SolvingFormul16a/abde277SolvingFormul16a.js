@@ -1,1 +1,0 @@
-import hints from "./abde277SolvingFormul16a-index.js"; const step = {id: "abde277SolvingFormul16a", stepAnswer: ["$$L=\\frac{V}{W H}$$"], problemType: "TextBox", stepTitle: "$$V=LWH$$ for L", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

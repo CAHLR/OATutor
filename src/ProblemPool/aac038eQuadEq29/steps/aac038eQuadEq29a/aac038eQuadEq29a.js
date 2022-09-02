@@ -1,1 +1,0 @@
-import hints from "./aac038eQuadEq29a-index.js"; const step = {id: "aac038eQuadEq29a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)+x-7>0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a61f754spread13a-index.js"; const step = {id: "a61f754spread13a", stepAnswer: ["49.53"], problemType: "TextBox", stepTitle: "Find the value that is one standard deviation below the mean.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

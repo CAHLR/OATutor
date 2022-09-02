@@ -1,1 +1,0 @@
-import hints from "./a47ffd9Ind10a-index.js"; const step = {id: "a47ffd9Ind10a", stepAnswer: ["0.75"], problemType: "TextBox", stepTitle: "Flip two fair coins. What is the probability that we have at most one tail?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

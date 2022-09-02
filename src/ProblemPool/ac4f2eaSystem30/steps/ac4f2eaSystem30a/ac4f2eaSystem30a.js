@@ -1,1 +1,0 @@
-import hints from "./ac4f2eaSystem30a-index.js"; const step = {id: "ac4f2eaSystem30a", stepAnswer: ["(0,3),(1,4)"], problemType: "TextBox", stepTitle: "$$y=x^2+3$$, $$x=y-3$$", stepBody: "Please enter your answer as (a,b). If there is more than one answer, please enter them as (a,b), (c,d) where $$a<c$$.", answerType: "string", hints: hints, variabilization: {}}; export {step};

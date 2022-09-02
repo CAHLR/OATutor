@@ -1,1 +1,0 @@
-import hints from "./ac1d5ccfactoring10a-index.js"; const step = {id: "ac1d5ccfactoring10a", stepAnswer: ["(x-10)(x-3)"], problemType: "TextBox", stepTitle: "Factor $$x^2-13x+30$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

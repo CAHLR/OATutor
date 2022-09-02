@@ -1,1 +1,0 @@
-import steps from "./a8566ddcenter7-index.js"; const problem = {id: "a8566ddcenter7", title: "Understanding Unimodal and Bimodal", body: "Five real estate exam scores are 430, 430, 480, 480, 495.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S2.5", courseName: "!!Editor Sheet 4b770c"}; export { problem };

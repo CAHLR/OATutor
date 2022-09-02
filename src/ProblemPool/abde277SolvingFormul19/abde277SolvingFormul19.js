@@ -1,1 +1,0 @@
-import steps from "./abde277SolvingFormul19-index.js"; const problem = {id: "abde277SolvingFormul19", title: "Solve the Formula for the given variable", body: "Solve the formula to get an expression for $$d_1$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3 p [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

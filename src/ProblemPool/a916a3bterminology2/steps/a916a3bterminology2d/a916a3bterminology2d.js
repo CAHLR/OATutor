@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology2d-index.js"; const step = {id: "a916a3bterminology2d", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "What is the probability of event A occurring, P(A)?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

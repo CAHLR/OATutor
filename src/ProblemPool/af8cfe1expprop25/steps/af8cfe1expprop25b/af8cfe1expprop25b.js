@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop25b-index.js"; const step = {id: "af8cfe1expprop25b", stepAnswer: ["$$7^{14}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7^{16}}{7^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

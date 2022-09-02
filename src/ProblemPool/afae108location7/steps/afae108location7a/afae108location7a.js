@@ -1,1 +1,0 @@
-import hints from "./afae108location7a-index.js"; const step = {id: "afae108location7a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "Find the 70th percentile.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

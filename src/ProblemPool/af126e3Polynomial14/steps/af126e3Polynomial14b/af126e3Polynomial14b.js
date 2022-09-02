@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial14b-index.js"; const step = {id: "af126e3Polynomial14b", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "b) $$3\\left(f+g\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

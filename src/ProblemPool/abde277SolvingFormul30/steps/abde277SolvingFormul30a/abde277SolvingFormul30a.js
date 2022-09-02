@@ -1,1 +1,0 @@
-import hints from "./abde277SolvingFormul30a-index.js"; const step = {id: "abde277SolvingFormul30a", stepAnswer: ["$$y=15-8X$$"], problemType: "TextBox", stepTitle: "$$8x+y=15$$ for y", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./add6935Sim14a-index.js"; const step = {id: "add6935Sim14a", stepAnswer: ["$$\\frac{1}{2\\left(x-3\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{x^2-7x+12}}{\\frac{2}{x-4}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

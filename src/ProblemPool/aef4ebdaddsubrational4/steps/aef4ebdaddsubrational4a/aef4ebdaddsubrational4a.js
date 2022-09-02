@@ -1,1 +1,0 @@
-import hints from "./aef4ebdaddsubrational4a-index.js"; const step = {id: "aef4ebdaddsubrational4a", stepAnswer: ["$$\\frac{7x+4}{2x+y}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7x}{2x+y}+\\frac{4}{2x+y}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

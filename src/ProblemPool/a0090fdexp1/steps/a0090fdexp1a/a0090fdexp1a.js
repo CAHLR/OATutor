@@ -1,1 +1,0 @@
-import hints from "./a0090fdexp1a-index.js"; const step = {id: "a0090fdexp1a", stepAnswer: ["Men aged 50 to 84"], problemType: "MultipleChoice", stepTitle: "\\n Identify the population for this study", stepBody: "", choices: ["All people aged 50 to 84", "Men aged 50 to 84", "All men"], answerType: "string", hints: hints, variabilization: {}}; export {step};

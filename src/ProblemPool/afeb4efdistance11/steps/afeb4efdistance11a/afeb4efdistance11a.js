@@ -1,1 +1,0 @@
-import hints from "./afeb4efdistance11a-index.js"; const step = {id: "afeb4efdistance11a", stepAnswer: ["$$2\\sqrt{17}$$"], problemType: "TextBox", stepTitle: "(3,-1) and (1,7)", stepBody: "Write your answer in exact form. Simplify your answer as much as possible.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

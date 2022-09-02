@@ -1,1 +1,0 @@
-import hints from "./ac38dceFraction3a-index.js"; const step = {id: "ac38dceFraction3a", stepAnswer: ["$$\\frac{4}{15}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\left(-\\frac{7}{27}\\right)}{\\left(-\\frac{35}{36}\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

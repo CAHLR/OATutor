@@ -1,1 +1,0 @@
-import hints from "./a141c09stat10b-index.js"; const step = {id: "a141c09stat10b", stepAnswer: ["quantitative continuous"], problemType: "MultipleChoice", stepTitle: "Duration (amount of time) is what type of data?", stepBody: "", choices: ["qualitative", "quantitative discrete", "quantitative continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

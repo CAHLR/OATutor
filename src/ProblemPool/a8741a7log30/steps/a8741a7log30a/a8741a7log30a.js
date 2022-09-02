@@ -1,1 +1,0 @@
-import hints from "./a8741a7log30a-index.js"; const step = {id: "a8741a7log30a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$\\log_{a}\\left(81\\right)=2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

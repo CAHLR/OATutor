@@ -1,1 +1,0 @@
-import hints from "./af16b17Linear5a-index.js"; const step = {id: "af16b17Linear5a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "$$5\\left(a-3\\right)+5=-10$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

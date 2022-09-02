@@ -1,1 +1,0 @@
-import hints from "./a7da84cCompInv18a-index.js"; const step = {id: "a7da84cCompInv18a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Verify if the following function are reverse functions", stepBody: "f(x) $$=$$ $$2x+6$$, g(x) $$=$$ (x-6)/ 2", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

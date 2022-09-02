@@ -1,1 +1,0 @@
-import hints from "./ace0d88location9a-index.js"; const step = {id: "ace0d88location9a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "Find the percentile for 58.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

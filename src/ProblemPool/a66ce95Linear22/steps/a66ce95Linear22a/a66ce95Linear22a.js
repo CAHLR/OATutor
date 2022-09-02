@@ -1,1 +1,0 @@
-import hints from "./a66ce95Linear22a-index.js"; const step = {id: "a66ce95Linear22a", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$4[5-8(4c-3)]=12(1-13c)-8$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aa611ecdomain1a-index.js"; const step = {id: "aa611ecdomain1a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Find the highest domain of the relation {(1,1),(2,4),(3,9),(4,16),(5,25)}", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

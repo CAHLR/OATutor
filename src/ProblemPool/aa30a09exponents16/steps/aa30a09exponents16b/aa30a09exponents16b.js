@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents16b-index.js"; const step = {id: "aa30a09exponents16b", stepAnswer: ["$$\\frac{-\\left(x^3 y^6\\right)}{27}$$"], problemType: "TextBox", stepTitle: "$${\\left(-\\frac{3}{x\\left(y^2\\right)}\\right)}^{\\left(-3\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

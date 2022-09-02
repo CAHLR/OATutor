@@ -1,1 +1,0 @@
-import hints from "./aef4ebdaddsubrational1a-index.js"; const step = {id: "aef4ebdaddsubrational1a", stepAnswer: ["$$\\frac{3}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2}{15}+\\frac{7}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

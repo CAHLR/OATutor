@@ -1,1 +1,0 @@
-import hints from "./aafbadeintercepts27a-index.js"; const step = {id: "aafbadeintercepts27a", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "Find the sum of the x-value of the x-intercept and the y-value of the y-intercept of the following equation: $$3x+y=9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

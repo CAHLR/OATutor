@@ -1,1 +1,0 @@
-var hints = [{id: "a4491f8stat5f-h1", type: "hint", dependencies: [], title: "Definition of data", text: "Data in a study is the values of the variables. Look at the previous determined variable: the data just represents the variables.", variabilization: {}}, ]; export {hints};

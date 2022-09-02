@@ -1,1 +1,0 @@
-import hints from "./ac9802fsimproots25a-index.js"; const step = {id: "ac9802fsimproots25a", stepAnswer: ["$$|u^3|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{u^{12}}$$ (Note: absolute value can be written as abs().)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

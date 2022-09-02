@@ -1,1 +1,0 @@
-import hints from "./a6b9f29radfunc12a-index.js"; const step = {id: "a6b9f29radfunc12a", stepAnswer: ["(-3,inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{\\frac{4}{x+3}}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

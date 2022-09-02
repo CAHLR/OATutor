@@ -1,1 +1,0 @@
-import steps from "./aea46e4Determinant27-index.js"; const problem = {id: "aea46e4Determinant27", title: "Evaluate the specified determinant", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.6 P [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

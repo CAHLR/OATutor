@@ -1,1 +1,0 @@
-import steps from "./a5aab75parabolas3-index.js"; const problem = {id: "a5aab75parabolas3", title: "Graphing Vertical Parabolas", body: "Graph the vertical parabola using its properties.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "11.2[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

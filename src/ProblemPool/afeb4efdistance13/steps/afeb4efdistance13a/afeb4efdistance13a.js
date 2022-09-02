@@ -1,1 +1,0 @@
-import hints from "./afeb4efdistance13a-index.js"; const step = {id: "afeb4efdistance13a", stepAnswer: ["(2,-4)"], problemType: "MultipleChoice", stepTitle: "(0,-5) and (4,-3)", stepBody: "Please select the correct answer.", choices: ["(2,-4)", "(-3,3)", "(1,-3)", "(7,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af23defint12b-index.js"; const step = {id: "af23defint12b", stepAnswer: ["-64"], problemType: "TextBox", stepTitle: "$$-\\left(2^6\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

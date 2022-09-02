@@ -1,1 +1,0 @@
-import hints from "./a8e6481uni15b-index.js"; const step = {id: "a8e6481uni15b", stepAnswer: ["12"], problemType: "TextBox", stepTitle: "Find Phuong's uphill biking speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

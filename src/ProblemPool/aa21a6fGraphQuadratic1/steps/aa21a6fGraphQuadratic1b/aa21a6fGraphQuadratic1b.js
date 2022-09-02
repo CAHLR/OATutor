@@ -1,1 +1,0 @@
-import hints from "./aa21a6fGraphQuadratic1b-index.js"; const step = {id: "aa21a6fGraphQuadratic1b", stepAnswer: ["Up"], problemType: "TextBox", stepTitle: "$$f(x)=6x^2+2x+3$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

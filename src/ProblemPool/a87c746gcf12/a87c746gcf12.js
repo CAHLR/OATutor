@@ -1,1 +1,0 @@
-import steps from "./a87c746gcf12-index.js"; const problem = {id: "a87c746gcf12", title: "Finding the Greatest Common Factor", body: "Find the greatest common factor of the two expressions.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "6.1 AC [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

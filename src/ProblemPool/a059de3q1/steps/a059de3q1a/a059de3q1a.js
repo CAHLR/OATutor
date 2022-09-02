@@ -1,1 +1,0 @@
-import hints from "./a059de3q1a-index.js"; const step = {id: "a059de3q1a", stepAnswer: ["3.7"], problemType: "TextBox", stepTitle: "Calculate the mean for Terry.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

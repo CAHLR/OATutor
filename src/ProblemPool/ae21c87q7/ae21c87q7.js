@@ -1,1 +1,0 @@
-import steps from "./ae21c87q7-index.js"; const problem = {id: "ae21c87q7", title: "Stating skewness.", body: "State whether the data are symmetrical, skewed to the left, or skewed to the right.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.6", courseName: "!!Editor Sheet cf0669"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a57f999ser16a-index.js"; const step = {id: "a57f999ser16a", stepAnswer: ["$$\\frac{-1023}{256}$$"], problemType: "TextBox", stepTitle: "Solving Summations", stepBody: "Solve the summation in the attached image.##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

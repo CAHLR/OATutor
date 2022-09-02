@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic12a-index.js"; const step = {id: "abac4b0probbasic12a", stepAnswer: ["$$\\frac{3}{24}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student does nothing after school?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

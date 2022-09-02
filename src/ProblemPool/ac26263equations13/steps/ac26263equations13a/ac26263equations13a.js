@@ -1,1 +1,0 @@
-import hints from "./ac26263equations13a-index.js"; const step = {id: "ac26263equations13a", stepAnswer: ["No Solution"], problemType: "MultipleChoice", stepTitle: "$$x-2y+2z=1$$, $$-2x+y-z=2$$, $$x-y+z=5$$", stepBody: "", choices: ["(-2,0,-3)", "No Solution", "(2,-3,-2)", "(-3,2,3)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

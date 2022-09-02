@@ -1,1 +1,0 @@
-import hints from "./af4dac4log15a-index.js"; const step = {id: "af4dac4log15a", stepAnswer: ["0.805"], problemType: "TextBox", stepTitle: "$$5e^{2x}=25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

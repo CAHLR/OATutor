@@ -1,1 +1,0 @@
-import steps from "./af2019bgraphs14-index.js"; const problem = {id: "af2019bgraphs14", title: "Find values", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.6 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

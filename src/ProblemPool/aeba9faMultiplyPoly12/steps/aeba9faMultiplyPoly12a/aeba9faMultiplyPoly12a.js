@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly12a-index.js"; const step = {id: "aeba9faMultiplyPoly12a", stepAnswer: ["$$x^2+10x+25$$"], problemType: "TextBox", stepTitle: "a) $${\\left(x+5\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

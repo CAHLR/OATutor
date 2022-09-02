@@ -1,1 +1,0 @@
-import hints from "./ade9eadinequalities16a-index.js"; const step = {id: "ade9eadinequalities16a", stepAnswer: ["$$\\frac{-2}{3}$$"], problemType: "TextBox", stepTitle: "What is the slope of the line shown? If the slope is undefined, enter \"und\" without the quotes.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

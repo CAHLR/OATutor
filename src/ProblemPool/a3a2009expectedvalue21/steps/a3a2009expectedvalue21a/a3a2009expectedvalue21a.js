@@ -1,1 +1,0 @@
-import hints from "./a3a2009expectedvalue21a-index.js"; const step = {id: "a3a2009expectedvalue21a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "What does the column \"P(x)\" sum to?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

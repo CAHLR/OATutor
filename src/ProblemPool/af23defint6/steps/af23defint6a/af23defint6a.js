@@ -1,1 +1,0 @@
-import hints from "./af23defint6a-index.js"; const step = {id: "af23defint6a", stepAnswer: ["29"], problemType: "TextBox", stepTitle: "19+2(-3+8)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

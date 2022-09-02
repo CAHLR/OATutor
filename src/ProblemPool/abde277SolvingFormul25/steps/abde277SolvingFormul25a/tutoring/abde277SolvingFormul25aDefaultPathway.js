@@ -1,1 +1,0 @@
-var hints = [{id: "abde277SolvingFormul25a-h1", type: "hint", dependencies: [], title: "Subtract", text: "Subtract b and a from both sides to isolate c.", variabilization: {}}, ]; export {hints};

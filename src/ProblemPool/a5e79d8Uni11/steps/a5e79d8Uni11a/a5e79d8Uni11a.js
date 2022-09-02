@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni11a-index.js"; const step = {id: "a5e79d8Uni11a", stepAnswer: ["7.5"], problemType: "TextBox", stepTitle: "What is the mean amount of time someone will wait for the bus?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

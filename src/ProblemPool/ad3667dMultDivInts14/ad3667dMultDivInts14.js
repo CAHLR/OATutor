@@ -1,1 +1,0 @@
-import steps from "./ad3667dMultDivInts14-index.js"; const problem = {id: "ad3667dMultDivInts14", title: "Translate Phrases to Expressions with Integers", body: "Translate and simplify the problem to a single number", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 kj [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

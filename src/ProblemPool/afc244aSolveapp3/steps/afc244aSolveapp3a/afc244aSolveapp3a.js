@@ -1,1 +1,0 @@
-import hints from "./afc244aSolveapp3a-index.js"; const step = {id: "afc244aSolveapp3a", stepAnswer: ["-11"], problemType: "TextBox", stepTitle: "$$\\frac{98}{154}=\\frac{-7}{p}$$", stepBody: "Solve for p.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a9f4a3alang11a-index.js"; const step = {id: "a9f4a3alang11a", stepAnswer: ["58"], problemType: "TextBox", stepTitle: "Simplify: $$2+8\\left(6+1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

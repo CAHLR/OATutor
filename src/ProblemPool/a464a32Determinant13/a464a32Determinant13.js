@@ -1,1 +1,0 @@
-import steps from "./a464a32Determinant13-index.js"; const problem = {id: "a464a32Determinant13", title: "Solve Applications using Determinants", body: "Determine whether the points are collinear", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.6 RW[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

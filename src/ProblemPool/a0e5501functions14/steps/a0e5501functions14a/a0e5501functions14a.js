@@ -1,1 +1,0 @@
-import hints from "./a0e5501functions14a-index.js"; const step = {id: "a0e5501functions14a", stepAnswer: ["4-x"], problemType: "TextBox", stepTitle: "$$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

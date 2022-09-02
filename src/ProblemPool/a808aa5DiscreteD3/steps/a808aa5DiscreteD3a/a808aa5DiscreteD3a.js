@@ -1,1 +1,0 @@
-import hints from "./a808aa5DiscreteD3a-index.js"; const step = {id: "a808aa5DiscreteD3a", stepAnswer: ["$$\\frac{1}{6}$$"], problemType: "TextBox", stepTitle: "If our player rolls only 1 die, how many points can we expect them to get?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

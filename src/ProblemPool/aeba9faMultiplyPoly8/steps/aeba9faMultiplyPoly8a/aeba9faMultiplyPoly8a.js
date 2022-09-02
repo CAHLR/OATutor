@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly8a-index.js"; const step = {id: "aeba9faMultiplyPoly8a", stepAnswer: ["$$x^2-2x-35$$"], problemType: "TextBox", stepTitle: "a) $$\\left(x-7\\right) \\left(x+5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

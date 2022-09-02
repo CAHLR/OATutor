@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp10a-index.js"; const step = {id: "ae223c4divradexp10a", stepAnswer: ["$$\\frac{-3p}{q^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[3]{-81p q^{-1}}}{\\sqrt[3]{3p^{-2} q^5}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

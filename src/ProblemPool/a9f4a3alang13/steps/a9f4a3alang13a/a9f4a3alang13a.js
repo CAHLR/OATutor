@@ -1,1 +1,0 @@
-import hints from "./a9f4a3alang13a-index.js"; const step = {id: "a9f4a3alang13a", stepAnswer: ["$$10x+6$$"], problemType: "TextBox", stepTitle: "Simplify: $$7x+2+3x+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

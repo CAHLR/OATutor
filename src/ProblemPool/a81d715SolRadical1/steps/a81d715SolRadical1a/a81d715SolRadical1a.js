@@ -1,1 +1,0 @@
-import hints from "./a81d715SolRadical1a-index.js"; const step = {id: "a81d715SolRadical1a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\sqrt{5x-6}=8$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

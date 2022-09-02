@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop17a-index.js"; const step = {id: "af8cfe1expprop17a", stepAnswer: ["$$x^6$$"], problemType: "TextBox", stepTitle: "$$x^4 x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

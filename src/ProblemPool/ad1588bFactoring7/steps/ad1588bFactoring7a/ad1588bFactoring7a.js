@@ -1,1 +1,0 @@
-import hints from "./ad1588bFactoring7a-index.js"; const step = {id: "ad1588bFactoring7a", stepAnswer: ["$${\\left(3x-4y\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$9x^2-24x y+16y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

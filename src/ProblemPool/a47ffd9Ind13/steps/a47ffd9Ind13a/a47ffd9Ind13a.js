@@ -1,1 +1,0 @@
-import hints from "./a47ffd9Ind13a-index.js"; const step = {id: "a47ffd9Ind13a", stepAnswer: ["0.25"], problemType: "TextBox", stepTitle: "Flip two fair coins. What is the probability we get at most one tail, and both of our faces are the same?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

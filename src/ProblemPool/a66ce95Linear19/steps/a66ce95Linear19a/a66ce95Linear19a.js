@@ -1,1 +1,0 @@
-import hints from "./a66ce95Linear19a-index.js"; const step = {id: "a66ce95Linear19a", stepAnswer: ["1.5"], problemType: "TextBox", stepTitle: "$$-6+6\\left(5-k\\right)=15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

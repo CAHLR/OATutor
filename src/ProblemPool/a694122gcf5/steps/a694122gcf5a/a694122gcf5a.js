@@ -1,1 +1,0 @@
-import hints from "./a694122gcf5a-index.js"; const step = {id: "a694122gcf5a", stepAnswer: ["$$-4b\\left(b^2-4b+2\\right)$$"], problemType: "TextBox", stepTitle: "Facotr: $$-4b^3+16b^2-8b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

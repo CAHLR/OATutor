@@ -1,1 +1,0 @@
-import hints from "./a141c09stat10a-index.js"; const step = {id: "a141c09stat10a", stepAnswer: ["quantitative discrete"], problemType: "MultipleChoice", stepTitle: "Number of times per week is what type of data?", stepBody: "", choices: ["qualitative", "quantitative discrete", "quantitative continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

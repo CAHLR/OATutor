@@ -1,1 +1,0 @@
-import hints from "./af4dac4log5a-index.js"; const step = {id: "af4dac4log5a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\log_{2}\\left(x\\right)+\\log_{2}\\left(x-2\\right)=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

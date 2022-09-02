@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly4b-index.js"; const step = {id: "aeba9faMultiplyPoly4b", stepAnswer: ["$$3x^5 y-24x^4 y^2+3x^3 y^3$$"], problemType: "TextBox", stepTitle: "b) $$3x^3 y\\left(x^2-8xy+y^2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

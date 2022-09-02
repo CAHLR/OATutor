@@ -1,1 +1,0 @@
-import hints from "./a059de3q3a-index.js"; const step = {id: "a059de3q3a", stepAnswer: ["2.7"], problemType: "TextBox", stepTitle: "Calculate the mean for Davis.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp18a-index.js"; const step = {id: "ae223c4divradexp18a", stepAnswer: ["$$\\frac{\\sqrt[2]{14}}{6}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[2]{\\frac{7}{18}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

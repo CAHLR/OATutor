@@ -1,1 +1,0 @@
-import hints from "./afa0cfequadraticeq6a-index.js"; const step = {id: "afa0cfequadraticeq6a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "$$3z^2-108=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial3a-index.js"; const step = {id: "af126e3Polynomial3a", stepAnswer: ["$$40y^2$$"], problemType: "TextBox", stepTitle: "a) $$25y^2+15y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

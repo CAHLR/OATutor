@@ -1,1 +1,0 @@
-import hints from "./aabed94gcf25a-index.js"; const step = {id: "aabed94gcf25a", stepAnswer: ["$$\\left(b+5\\right) \\left(a+3\\right)$$"], problemType: "TextBox", stepTitle: "$$ab+5a+3b+15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

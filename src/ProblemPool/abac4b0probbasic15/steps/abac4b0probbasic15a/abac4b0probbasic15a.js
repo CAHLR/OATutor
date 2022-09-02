@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic15a-index.js"; const step = {id: "abac4b0probbasic15a", stepAnswer: ["$$\\frac{3}{24}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student plays a sport and does another activity outside of school?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

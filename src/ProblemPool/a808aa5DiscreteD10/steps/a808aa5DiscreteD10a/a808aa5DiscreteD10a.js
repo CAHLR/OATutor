@@ -1,1 +1,0 @@
-import hints from "./a808aa5DiscreteD10a-index.js"; const step = {id: "a808aa5DiscreteD10a", stepAnswer: ["0.0694"], problemType: "TextBox", stepTitle: "What is the probability that if our player rolls 3 dice, they have two matches?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

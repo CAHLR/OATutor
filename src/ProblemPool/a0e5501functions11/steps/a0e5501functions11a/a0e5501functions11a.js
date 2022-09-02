@@ -1,1 +1,0 @@
-import hints from "./a0e5501functions11a-index.js"; const step = {id: "a0e5501functions11a", stepAnswer: ["$$-x+1$$"], problemType: "TextBox", stepTitle: "$$g(x)=3-x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

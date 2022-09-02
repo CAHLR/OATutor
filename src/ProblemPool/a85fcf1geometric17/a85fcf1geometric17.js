@@ -1,1 +1,0 @@
-import steps from "./a85fcf1geometric17-index.js"; const problem = {id: "a85fcf1geometric17", title: "Find the Sum of the First n Terms", body: "Find the sum below.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

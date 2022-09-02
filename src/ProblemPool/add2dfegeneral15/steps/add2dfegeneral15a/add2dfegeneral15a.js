@@ -1,1 +1,0 @@
-import hints from "./add2dfegeneral15a-index.js"; const step = {id: "add2dfegeneral15a", stepAnswer: ["$$4\\left(x+3\\right) \\left(x+7\\right)$$"], problemType: "TextBox", stepTitle: "$$4x^2+40x+84$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

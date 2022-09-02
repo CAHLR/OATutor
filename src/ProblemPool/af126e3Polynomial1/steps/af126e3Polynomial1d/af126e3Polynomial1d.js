@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial1d-index.js"; const step = {id: "af126e3Polynomial1d", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "d) $$2y-8{xy}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

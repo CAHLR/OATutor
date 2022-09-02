@@ -1,1 +1,0 @@
-import hints from "./a16e7efdividingpoly8a-index.js"; const step = {id: "a16e7efdividingpoly8a", stepAnswer: ["-10"], problemType: "TextBox", stepTitle: "$$f(x)=x^2-13x+36$$ $$g(x)=x-4$$ Find $$\\frac{f}{g}$$ when $$x=-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

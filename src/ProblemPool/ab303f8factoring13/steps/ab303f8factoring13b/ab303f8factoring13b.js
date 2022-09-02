@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring13b-index.js"; const step = {id: "ab303f8factoring13b", stepAnswer: ["$$\\left(4x^2+6\\right) \\left(4x^2-6\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$16x^2-36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

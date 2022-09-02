@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp20a-index.js"; const step = {id: "ae223c4divradexp20a", stepAnswer: ["$$\\frac{2\\sqrt{2x}}{2} x$$"], problemType: "TextBox", stepTitle: "2/sqrt(2, 2*x)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

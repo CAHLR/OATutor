@@ -1,1 +1,0 @@
-import hints from "./a0af30flang32a-index.js"; const step = {id: "a0af30flang32a", stepAnswer: ["53"], problemType: "TextBox", stepTitle: "What is $$a^2+b^2$$ when $$a=3, b=8$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

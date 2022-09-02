@@ -1,1 +1,0 @@
-import hints from "./a453be6realnumbers12b-index.js"; const step = {id: "a453be6realnumbers12b", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "0.816..., where the 6 repeats forever.", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aa21a6fGraphQuadratic2b-index.js"; const step = {id: "aa21a6fGraphQuadratic2b", stepAnswer: ["Down"], problemType: "TextBox", stepTitle: "$$f(x)=-9x^2-24x-16$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

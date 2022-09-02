@@ -1,1 +1,0 @@
-import hints from "./a464a32Determinant4c-index.js"; const step = {id: "a464a32Determinant4c", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "c3", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

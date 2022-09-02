@@ -1,1 +1,0 @@
-import hints from "./a4106b0log19a-index.js"; const step = {id: "a4106b0log19a", stepAnswer: ["$$\\log_{4}\\left(3\\right)-1$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with the Quotient Property.", stepBody: "$$\\log_{4}\\left(\\frac{3}{4}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ad220b3GraphQuadratic6a-index.js"; const step = {id: "ad220b3GraphQuadratic6a", stepAnswer: ["x=-5"], problemType: "TextBox", stepTitle: "$$f(x)=x^2+10x+25$$", stepBody: "Find the axis of symmetry for the equation. Please enter your answer as $$\"x=...\"$$ or $$\"y=...\"$$", answerType: "string", hints: hints, variabilization: {}}; export {step};

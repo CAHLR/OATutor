@@ -1,1 +1,0 @@
-import steps from "./a0e1020SolRadical7-index.js"; const problem = {id: "a0e1020SolRadical7", title: "Solve Radical Equations", body: "In the following exercises, solve.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "8.6[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

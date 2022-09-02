@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency12a-index.js"; const step = {id: "af23a60contingency12a", stepAnswer: ["$$\\frac{2}{5}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected person is not drinking water?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac1d5ccfactoring15a-index.js"; const step = {id: "ac1d5ccfactoring15a", stepAnswer: ["(x-4)(x-2)"], problemType: "TextBox", stepTitle: "Factor $$8-6x+x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

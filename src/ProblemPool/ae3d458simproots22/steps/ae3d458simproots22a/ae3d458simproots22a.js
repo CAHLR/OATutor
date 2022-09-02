@@ -1,1 +1,0 @@
-import hints from "./ae3d458simproots22a-index.js"; const step = {id: "ae3d458simproots22a", stepAnswer: ["$$|y^8|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{y^{16}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

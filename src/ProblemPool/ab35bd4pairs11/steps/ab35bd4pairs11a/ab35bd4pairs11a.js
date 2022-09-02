@@ -1,1 +1,0 @@
-import hints from "./ab35bd4pairs11a-index.js"; const step = {id: "ab35bd4pairs11a", stepAnswer: ["(6,1)"], problemType: "MultipleChoice", stepTitle: "Solve the systems of equations: $$2x-5y=7, 3x-y=17$$", stepBody: "", choices: ["(-6,-1)", "(-6,1)", "(1,6)", "(6,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

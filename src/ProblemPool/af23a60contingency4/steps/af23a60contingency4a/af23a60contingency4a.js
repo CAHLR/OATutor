@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency4a-index.js"; const step = {id: "af23a60contingency4a", stepAnswer: ["$$\\frac{710}{755}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected driver is a cell phone user or has had no violation in the last year?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

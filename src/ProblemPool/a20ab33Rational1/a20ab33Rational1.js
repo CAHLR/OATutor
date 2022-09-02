@@ -1,1 +1,0 @@
-import steps from "./a20ab33Rational1-index.js"; const problem = {id: "a20ab33Rational1", title: "Write as a radical expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "8.3 Ju [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

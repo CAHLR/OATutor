@@ -1,1 +1,0 @@
-import hints from "./af17844Solving3a-index.js"; const step = {id: "af17844Solving3a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "The sum of seven times a number and eight is thirty-six. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

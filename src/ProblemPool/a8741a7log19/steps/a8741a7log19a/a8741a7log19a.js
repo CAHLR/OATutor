@@ -1,1 +1,0 @@
-import hints from "./a8741a7log19a-index.js"; const step = {id: "a8741a7log19a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\log_{2}\\left(5x-1\\right)=6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

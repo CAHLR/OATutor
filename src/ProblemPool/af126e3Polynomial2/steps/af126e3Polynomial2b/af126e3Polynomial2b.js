@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial2b-index.js"; const step = {id: "af126e3Polynomial2b", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "b) $$8y^3-7y^2-y-3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

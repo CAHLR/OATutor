@@ -1,1 +1,0 @@
-import hints from "./a141c09stat7d-index.js"; const step = {id: "a141c09stat7d", stepAnswer: ["quantitative discrete"], problemType: "TextBox", stepTitle: "the number of classes you take per school year", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

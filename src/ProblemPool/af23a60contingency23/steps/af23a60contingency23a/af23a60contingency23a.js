@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency23a-index.js"; const step = {id: "af23a60contingency23a", stepAnswer: ["$$\\frac{121}{475}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student prefers to play outside?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

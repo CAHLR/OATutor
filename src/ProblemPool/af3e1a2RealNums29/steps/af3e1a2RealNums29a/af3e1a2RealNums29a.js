@@ -1,1 +1,0 @@
-import hints from "./af3e1a2RealNums29a-index.js"; const step = {id: "af3e1a2RealNums29a", stepAnswer: ["$$\\frac{23}{12}$$"], problemType: "TextBox", stepTitle: "$$\\frac{11}{12}+\\frac{4}{9}+\\frac{5}{9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

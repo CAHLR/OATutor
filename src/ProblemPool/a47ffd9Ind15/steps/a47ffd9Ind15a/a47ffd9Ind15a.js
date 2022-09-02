@@ -1,1 +1,0 @@
-import hints from "./a47ffd9Ind15a-index.js"; const step = {id: "a47ffd9Ind15a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Flip two fair coins. Is the situation that we get at most one tail and both of our faces are the same mutually exclusive?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

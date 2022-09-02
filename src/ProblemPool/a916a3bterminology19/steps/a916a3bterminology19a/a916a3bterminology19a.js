@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology19a-index.js"; const step = {id: "a916a3bterminology19a", stepAnswer: ["$$\\frac{14}{194}$$"], problemType: "TextBox", stepTitle: "Find P(O).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

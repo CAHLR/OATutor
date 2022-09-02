@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic21a-index.js"; const step = {id: "abac4b0probbasic21a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected employee eats at an establishment during lunch?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

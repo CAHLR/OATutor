@@ -1,1 +1,0 @@
-import steps from "./a427fc4inequalities1-index.js"; const problem = {id: "a427fc4inequalities1", title: "Find the Slope of a Line", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.2P", courseName: "!!Editor Sheet 4b770c"}; export { problem };

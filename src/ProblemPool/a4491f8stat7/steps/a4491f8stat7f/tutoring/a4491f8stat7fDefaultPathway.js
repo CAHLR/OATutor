@@ -1,1 +1,0 @@
-var hints = [{id: "a4491f8stat7f-h1", type: "hint", dependencies: [], title: "Definition of Data", text: "Data in a study is the values of the variables. In this case, variable is qualitative values which is either yes, had head injury, or no, did not.", variabilization: {}}, ]; export {hints};

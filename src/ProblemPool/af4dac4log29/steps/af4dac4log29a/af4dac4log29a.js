@@ -1,1 +1,0 @@
-import hints from "./af4dac4log29a-index.js"; const step = {id: "af4dac4log29a", stepAnswer: ["20"], problemType: "TextBox", stepTitle: "$$\\log_{10}\\left(x\\right)+\\log_{10}\\left(x-15\\right)=2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

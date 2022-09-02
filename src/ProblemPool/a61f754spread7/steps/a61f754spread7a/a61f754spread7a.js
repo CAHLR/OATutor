@@ -1,1 +1,0 @@
-import hints from "./a61f754spread7a-index.js"; const step = {id: "a61f754spread7a", stepAnswer: ["9.3"], problemType: "TextBox", stepTitle: "Calculate the sample mean. Round to one decimal place.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

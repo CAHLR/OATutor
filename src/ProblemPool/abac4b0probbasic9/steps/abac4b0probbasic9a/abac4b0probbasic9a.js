@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic9a-index.js"; const step = {id: "abac4b0probbasic9a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "What is the probability that we don't select a blue M&M if we choose one at random?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

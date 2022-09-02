@@ -1,1 +1,0 @@
-import hints from "./a6b9f29radfunc2a-index.js"; const step = {id: "a6b9f29radfunc2a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{3x-2}$$, find f(6).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a141c09stat7a-index.js"; const step = {id: "a141c09stat7a", stepAnswer: ["quantiative discrete"], problemType: "TextBox", stepTitle: "the number of pairs of shoes you own", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

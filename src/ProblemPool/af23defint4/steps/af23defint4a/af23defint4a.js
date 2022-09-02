@@ -1,1 +1,0 @@
-import hints from "./af23defint4a-index.js"; const step = {id: "af23defint4a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "$$34+\\left(-19\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

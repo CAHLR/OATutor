@@ -1,1 +1,0 @@
-import hints from "./a47ce72graphquad30a-index.js"; const step = {id: "a47ce72graphquad30a", stepAnswer: ["$$2{\\left(x-3\\right)}^2-11$$"], problemType: "TextBox", stepTitle: "$$f(x)=2x^2-12x+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-var hints = [{id: "a0090fdexp2e-h1", type: "hint", dependencies: [], title: "Understanding Blinding.", text: "Subjects will clearly know whether they can smell flowers or not. What does this mean about blinding?", variabilization: {}}, ]; export {hints};

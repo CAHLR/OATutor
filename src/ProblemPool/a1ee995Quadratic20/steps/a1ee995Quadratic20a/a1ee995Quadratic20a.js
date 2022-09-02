@@ -1,1 +1,0 @@
-import hints from "./a1ee995Quadratic20a-index.js"; const step = {id: "a1ee995Quadratic20a", stepAnswer: ["$$r=11$$ or -3"], problemType: "MultipleChoice", stepTitle: "$$r^2-8r=33$$", stepBody: "", choices: ["$$r=11$$ or -3", "$$r=11$$ or 3", "$$r=-11$$ or -3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

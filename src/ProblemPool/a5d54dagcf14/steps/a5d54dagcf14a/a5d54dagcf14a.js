@@ -1,1 +1,0 @@
-import hints from "./a5d54dagcf14a-index.js"; const step = {id: "a5d54dagcf14a", stepAnswer: ["$$5x^3 y$$"], problemType: "TextBox", stepTitle: "$$35x^3 y^2$$, $$10x^4 y$$, $$5x^5 y^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af2019bgraphs9a-index.js"; const step = {id: "af2019bgraphs9a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find $$f\\left(-\\frac{3\\pi}{2}\\right)$$", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

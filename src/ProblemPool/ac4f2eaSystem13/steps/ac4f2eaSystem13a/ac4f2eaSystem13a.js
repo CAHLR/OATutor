@@ -1,1 +1,0 @@
-import hints from "./ac4f2eaSystem13a-index.js"; const step = {id: "ac4f2eaSystem13a", stepAnswer: ["(-1,1),(2,4)"], problemType: "TextBox", stepTitle: "$$x^2-y=0$$, $$y=x+2$$", stepBody: "Please enter your answer as (a,b). If there is more than one answer, please enter them as (a,b), (c,d) where $$a<c$$.", answerType: "string", hints: hints, variabilization: {}}; export {step};

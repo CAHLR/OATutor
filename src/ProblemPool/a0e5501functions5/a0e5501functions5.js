@@ -1,1 +1,0 @@
-import steps from "./a0e5501functions5-index.js"; const problem = {id: "a0e5501functions5", title: "Evaluate at f(-1)", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.5 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./ab79207box12a-index.js"; const step = {id: "ab79207box12a", stepAnswer: ["Not enough data"], problemType: "MultipleChoice", stepTitle: "Have more Americans or more Germans surveyed been to over eight foreign countries?", stepBody: "", choices: ["Americans", "Germans", "Not enough data"], answerType: "string", hints: hints, variabilization: {}}; export {step};

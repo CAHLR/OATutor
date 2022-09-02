@@ -1,1 +1,0 @@
-import hints from "./a985d52Square21a-index.js"; const step = {id: "a985d52Square21a", stepAnswer: ["11 and -3"], problemType: "MultipleChoice", stepTitle: "$$r^2-8r-33=0$$", stepBody: "", choices: ["5 and 12", "10 and -6", "11 and -3", "2 and 4"], answerType: "string", hints: hints, variabilization: {}}; export {step};

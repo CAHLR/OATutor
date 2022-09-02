@@ -1,1 +1,0 @@
-import hints from "./a464a32Determinant2a-index.js"; const step = {id: "a464a32Determinant2a", stepAnswer: ["-14"], problemType: "TextBox", stepTitle: "$$/mat{(5,-3),(2,-4)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

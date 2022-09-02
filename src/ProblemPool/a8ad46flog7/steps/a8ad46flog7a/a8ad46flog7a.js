@@ -1,1 +1,0 @@
-import hints from "./a8ad46flog7a-index.js"; const step = {id: "a8ad46flog7a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$\\log_{4}\\left(x+6\\right)-\\log_{4}\\left(2x+5\\right)=-\\log_{4}\\left(x\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

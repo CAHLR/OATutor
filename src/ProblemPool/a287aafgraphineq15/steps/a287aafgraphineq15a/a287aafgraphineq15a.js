@@ -1,1 +1,0 @@
-import hints from "./a287aafgraphineq15a-index.js"; const step = {id: "a287aafgraphineq15a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is (5,-2) a solution to the system of inequalities $$4x-y<10$$, $$-2x+2y>-8$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

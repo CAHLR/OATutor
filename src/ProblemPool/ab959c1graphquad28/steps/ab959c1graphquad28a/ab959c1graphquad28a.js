@@ -1,1 +1,0 @@
-import hints from "./ab959c1graphquad28a-index.js"; const step = {id: "ab959c1graphquad28a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$f(x)=\\frac{1}{3} {\\left(x-2\\right)}^2-7$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

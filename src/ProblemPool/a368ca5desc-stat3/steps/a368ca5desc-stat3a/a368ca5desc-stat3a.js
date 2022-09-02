@@ -1,1 +1,0 @@
-import hints from "./a368ca5desc-stat3a-index.js"; const step = {id: "a368ca5desc-stat3a", stepAnswer: ["Discrete"], problemType: "MultipleChoice", stepTitle: "The number of pixels on a computer screen.", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

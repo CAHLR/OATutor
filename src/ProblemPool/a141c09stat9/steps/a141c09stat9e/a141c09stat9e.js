@@ -1,1 +1,0 @@
-import hints from "./a141c09stat9e-index.js"; const step = {id: "a141c09stat9e", stepAnswer: ["simple random"], problemType: "TextBox", stepTitle: "A high school counselor uses a computer to generate 50 random numbers and then picks students whose names correspond to the numbers.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

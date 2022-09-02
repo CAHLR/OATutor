@@ -1,1 +1,0 @@
-import hints from "./a5fd810distance9a-index.js"; const step = {id: "a5fd810distance9a", stepAnswer: ["$$3\\sqrt{5}$$"], problemType: "TextBox", stepTitle: "(-3,-5) and (0,1)", stepBody: "Write your answer in exact form. Simplify your answer as much as possible.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

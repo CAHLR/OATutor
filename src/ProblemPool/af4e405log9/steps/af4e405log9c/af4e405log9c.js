@@ -1,1 +1,0 @@
-import hints from "./af4e405log9c-index.js"; const step = {id: "af4e405log9c", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\log_{(1/3)}\\left(\\frac{1}{27}\\right)=x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

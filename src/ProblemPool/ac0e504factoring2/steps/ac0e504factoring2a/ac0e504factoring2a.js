@@ -1,1 +1,0 @@
-import hints from "./ac0e504factoring2a-index.js"; const step = {id: "ac0e504factoring2a", stepAnswer: ["$$\\left(13x+1\\right) \\left(13x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$169x^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

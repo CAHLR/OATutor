@@ -1,1 +1,0 @@
-import hints from "./a6f50b8bin16a-index.js"; const step = {id: "a6f50b8bin16a", stepAnswer: ["$$x^3+15x^2+75x^1+125$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(x+5\\right)}^3$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

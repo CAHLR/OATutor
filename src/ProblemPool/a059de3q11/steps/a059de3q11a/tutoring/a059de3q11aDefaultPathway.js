@@ -1,1 +1,0 @@
-var hints = [{id: "a059de3q11a-h1", type: "hint", dependencies: [], title: "Knowing vocabulary.", text: "The technical term for a set of data with two modes is Bimodal.", variabilization: {}}, ]; export {hints};

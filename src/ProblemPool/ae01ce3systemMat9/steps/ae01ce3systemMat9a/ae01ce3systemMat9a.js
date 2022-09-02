@@ -1,1 +1,0 @@
-import hints from "./ae01ce3systemMat9a-index.js"; const step = {id: "ae01ce3systemMat9a", stepAnswer: ["2x-y=4,x-3=2"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} 2 & -1 & 4 \\\\ 1 & -3 & 2 \\end{bmatrix}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

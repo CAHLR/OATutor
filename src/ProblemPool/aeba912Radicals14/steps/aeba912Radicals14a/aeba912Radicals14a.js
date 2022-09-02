@@ -1,1 +1,0 @@
-import hints from "./aeba912Radicals14a-index.js"; const step = {id: "aeba912Radicals14a", stepAnswer: ["$$|y| \\sqrt[4]{y^2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{y^6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

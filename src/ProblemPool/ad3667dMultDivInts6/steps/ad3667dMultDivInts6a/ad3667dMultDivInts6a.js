@@ -1,1 +1,0 @@
-import hints from "./ad3667dMultDivInts6a-index.js"; const step = {id: "ad3667dMultDivInts6a", stepAnswer: ["-9"], problemType: "TextBox", stepTitle: "$$\\frac{-63}{7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

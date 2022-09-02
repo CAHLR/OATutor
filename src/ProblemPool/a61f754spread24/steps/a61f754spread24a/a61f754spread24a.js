@@ -1,1 +1,0 @@
-import hints from "./a61f754spread24a-index.js"; const step = {id: "a61f754spread24a", stepAnswer: ["Drums"], problemType: "MultipleChoice", stepTitle: "Which cost is the lowest, when compared to other instruments of the same type?", stepBody: "", choices: ["Drums", "Piano", "Guitar"], answerType: "string", hints: hints, variabilization: {}}; export {step};

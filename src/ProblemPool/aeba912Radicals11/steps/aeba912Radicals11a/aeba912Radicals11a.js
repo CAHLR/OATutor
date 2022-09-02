@@ -1,1 +1,0 @@
-import hints from "./aeba912Radicals11a-index.js"; const step = {id: "aeba912Radicals11a", stepAnswer: ["$$|x| \\sqrt[4]{x^3}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

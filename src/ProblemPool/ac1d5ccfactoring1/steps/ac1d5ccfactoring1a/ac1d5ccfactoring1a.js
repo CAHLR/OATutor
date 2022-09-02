@@ -1,1 +1,0 @@
-import hints from "./ac1d5ccfactoring1a-index.js"; const step = {id: "ac1d5ccfactoring1a", stepAnswer: ["$$\\left(x+6\\right) \\left(x+5\\right)$$"], problemType: "TextBox", stepTitle: "Factor $$x^2+11x+30$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

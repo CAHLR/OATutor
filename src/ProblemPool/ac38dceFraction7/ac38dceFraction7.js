@@ -1,1 +1,0 @@
-import steps from "./ac38dceFraction7-index.js"; const problem = {id: "ac38dceFraction7", title: "Placement of Negative Sign in a Fraction", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.3 rw [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

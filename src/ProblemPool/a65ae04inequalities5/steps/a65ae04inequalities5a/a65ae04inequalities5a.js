@@ -1,1 +1,0 @@
-import hints from "./a65ae04inequalities5a-index.js"; const step = {id: "a65ae04inequalities5a", stepAnswer: ["$$x=-1-\\frac{5}{2}$$"], problemType: "MultipleChoice", stepTitle: "$$|4x+7|+2=5$$", stepBody: "", choices: ["$$x=-1-\\frac{5}{2}$$", "x=2,3/2", "$$x=2, 4$$", "$$x=\\frac{-4}{5}-\\frac{1}{2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

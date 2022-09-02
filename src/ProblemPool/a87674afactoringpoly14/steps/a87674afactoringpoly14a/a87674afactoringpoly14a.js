@@ -1,1 +1,0 @@
-import hints from "./a87674afactoringpoly14a-index.js"; const step = {id: "a87674afactoringpoly14a", stepAnswer: ["$$6\\left(5x^2+5x+12\\right)$$"], problemType: "TextBox", stepTitle: "$$30x^2+30x+72$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

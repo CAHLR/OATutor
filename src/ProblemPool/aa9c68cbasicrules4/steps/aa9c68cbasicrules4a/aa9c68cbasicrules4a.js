@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules4a-index.js"; const step = {id: "aa9c68cbasicrules4a", stepAnswer: ["$$\\frac{28}{150}$$"], problemType: "TextBox", stepTitle: "What is the probability that the member is a novice swimmer?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

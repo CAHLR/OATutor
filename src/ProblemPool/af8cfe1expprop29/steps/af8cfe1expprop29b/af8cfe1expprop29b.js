@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop29b-index.js"; const step = {id: "af8cfe1expprop29b", stepAnswer: ["$${10}^{18}$$"], problemType: "TextBox", stepTitle: "$${\\left(3^8\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

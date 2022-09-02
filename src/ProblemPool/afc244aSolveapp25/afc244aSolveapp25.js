@@ -1,1 +1,0 @@
-import steps from "./afc244aSolveapp25-index.js"; const problem = {id: "afc244aSolveapp25", title: "Solve Direct Variation Problems", body: "In the following exercise, answer the question.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.5 Ani [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

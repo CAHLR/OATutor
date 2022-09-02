@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules15a-index.js"; const step = {id: "aa9c68cbasicrules15a", stepAnswer: ["0.376"], problemType: "TextBox", stepTitle: "Find P(L).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

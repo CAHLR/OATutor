@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology22a-index.js"; const step = {id: "a916a3bterminology22a", stepAnswer: ["$$\\frac{13}{52}$$"], problemType: "TextBox", stepTitle: "What is the probability of drawing a club in the standard deck of 52 cards?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

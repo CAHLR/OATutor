@@ -1,1 +1,0 @@
-import hints from "./a61f754spread20a-index.js"; const step = {id: "a61f754spread20a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "A sample of 11 years is taken. About how many are expected to have a FTES of 1014 or above?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

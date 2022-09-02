@@ -1,1 +1,0 @@
-import steps from "./affefa2poly7-index.js"; const problem = {id: "affefa2poly7", title: "Dividing Monomials", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.4 AnP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

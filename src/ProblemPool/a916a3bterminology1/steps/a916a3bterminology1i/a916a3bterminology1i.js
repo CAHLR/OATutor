@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology1i-index.js"; const step = {id: "a916a3bterminology1i", stepAnswer: ["$$\\frac{3}{6}$$"], problemType: "TextBox", stepTitle: "What is P(A|B)?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

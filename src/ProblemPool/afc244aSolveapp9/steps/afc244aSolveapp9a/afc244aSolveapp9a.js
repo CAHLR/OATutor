@@ -1,1 +1,0 @@
-import hints from "./afc244aSolveapp9a-index.js"; const step = {id: "afc244aSolveapp9a", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "$$\\frac{2p+4}{8}=\\frac{p+18}{6}$$", stepBody: "Solve for p.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

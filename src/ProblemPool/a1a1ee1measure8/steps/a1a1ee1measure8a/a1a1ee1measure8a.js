@@ -1,1 +1,0 @@
-import hints from "./a1a1ee1measure8a-index.js"; const step = {id: "a1a1ee1measure8a", stepAnswer: ["3.2"], problemType: "TextBox", stepTitle: "Eleanor’s newborn baby weighed 3,200 grams. How many kilograms did the baby weigh?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ad37b31probability4a-index.js"; const step = {id: "ad37b31probability4a", stepAnswer: ["$$\\frac{7}{13}$$"], problemType: "TextBox", stepTitle: "Find the probability of drawing a red card or an ace.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

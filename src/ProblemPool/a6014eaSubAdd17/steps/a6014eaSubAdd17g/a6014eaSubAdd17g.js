@@ -1,1 +1,0 @@
-import hints from "./a6014eaSubAdd17g-index.js"; const step = {id: "a6014eaSubAdd17g", stepAnswer: ["$$x=\\frac{7}{3}$$"], problemType: "TextBox", stepTitle: "$$x-\\frac{1}{3}=2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

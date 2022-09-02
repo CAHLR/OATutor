@@ -1,1 +1,0 @@
-import hints from "./a4c14e4radfunc18a-index.js"; const step = {id: "a4c14e4radfunc18a", stepAnswer: ["1"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{3-2x}$$, find f(1).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules2c-index.js"; const step = {id: "aa9c68cbasicrules2c", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Are A and B independent?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

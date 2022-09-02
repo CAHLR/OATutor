@@ -1,1 +1,0 @@
-import hints from "./a98a16abox6a-index.js"; const step = {id: "a98a16abox6a", stepAnswer: ["2nd, 3"], problemType: "MultipleChoice", stepTitle: "Look at the BMW 5 series. Which quarter has the smallest spread of data? What is the spread?", stepBody: "", choices: ["1st, 3", "2nd, 3", "2nd, 2", "3rd, 3"], answerType: "string", hints: hints, variabilization: {}}; export {step};
