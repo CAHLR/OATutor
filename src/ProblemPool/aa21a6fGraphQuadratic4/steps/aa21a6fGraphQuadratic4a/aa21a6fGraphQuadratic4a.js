@@ -1,0 +1,1 @@
+import hints from "./aa21a6fGraphQuadratic4a-index.js"; const step = {id: "aa21a6fGraphQuadratic4a", stepAnswer: ["Up"], problemType: "TextBox", stepTitle: "$$f(x)=x^2+3x-4$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

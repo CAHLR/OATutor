@@ -1,0 +1,1 @@
+import hints from "./a0090fdexp1d-index.js"; const step = {id: "a0090fdexp1d", stepAnswer: ["Oral Medication"], problemType: "MultipleChoice", stepTitle: "Identify the explanatory variable for this study.", stepBody: "", choices: ["400 men who participated", "Men aged 50-84", "Oral Medication"], answerType: "string", hints: hints, variabilization: {}}; export {step};

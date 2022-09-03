@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop23a-index.js"; const step = {id: "af8cfe1expprop23a", stepAnswer: ["$$x^{p+q}$$"], problemType: "TextBox", stepTitle: "$$x^p x^q$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

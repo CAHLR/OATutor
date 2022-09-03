@@ -1,0 +1,1 @@
+import steps from "./ac38dceFraction9-index.js"; const problem = {id: "ac38dceFraction9", title: "Simplify Complex Functions", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.3 rw [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

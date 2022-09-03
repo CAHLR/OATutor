@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals17a-index.js"; const step = {id: "aeba912Radicals17a", stepAnswer: ["$$2x^2 \\sqrt[3]{3x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{24x^7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

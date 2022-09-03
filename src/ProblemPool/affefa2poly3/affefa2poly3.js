@@ -1,0 +1,1 @@
+import steps from "./affefa2poly3-index.js"; const problem = {id: "affefa2poly3", title: "Divide Polynomials Using Long Division", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.4 AnP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

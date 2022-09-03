@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules24b-index.js"; const step = {id: "aa9c68cbasicrules24b", stepAnswer: ["0.94"], problemType: "TextBox", stepTitle: "Find the probability that a person does NOT have both type O blood and the Rh- factor.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

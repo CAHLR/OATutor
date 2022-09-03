@@ -1,0 +1,1 @@
+import hints from "./a60a373solverat26a-index.js"; const step = {id: "a60a373solverat26a", stepAnswer: ["p=-4, p=-5"], problemType: "TextBox", stepTitle: "$$1+\\frac{9}{p}=\\left(-\\frac{20}{p^2}\\right)$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

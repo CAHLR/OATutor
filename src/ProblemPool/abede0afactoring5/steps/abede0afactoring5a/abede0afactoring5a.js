@@ -1,0 +1,1 @@
+import hints from "./abede0afactoring5a-index.js"; const step = {id: "abede0afactoring5a", stepAnswer: ["$${\\left(6x+7y\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$36x^2+84xy+49y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

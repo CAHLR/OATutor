@@ -1,0 +1,1 @@
+import hints from "./af4e405log20a-index.js"; const step = {id: "af4e405log20a", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$\\log_{3}\\left(4x+3\\right)=3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ab35bd4pairs6a-index.js"; const step = {id: "ab35bd4pairs6a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Determine whether $$(1,\\frac{3}{4})$$ is a solution to the system: $$x+y=2, y=\\frac{3}{4} x$$", stepBody: "", choices: ["Yes", "No", "Undefined"], answerType: "string", hints: hints, variabilization: {}}; export {step};

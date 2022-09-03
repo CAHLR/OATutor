@@ -1,0 +1,1 @@
+import hints from "./a808aa5DiscreteD6a-index.js"; const step = {id: "a808aa5DiscreteD6a", stepAnswer: ["0.0277"], problemType: "TextBox", stepTitle: "What is the probability that if our player rolls 2 dice, they have one match?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a9ade3dRadicals9a-index.js"; const step = {id: "a9ade3dRadicals9a", stepAnswer: ["$$|x| \\sqrt{x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

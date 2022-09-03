@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop18a-index.js"; const step = {id: "af8cfe1expprop18a", stepAnswer: ["$$n^{31}$$"], problemType: "TextBox", stepTitle: "$$n^{19} n^{12}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric12a-index.js"; const step = {id: "a59a759hypergeometric12a", stepAnswer: ["6.26"], problemType: "TextBox", stepTitle: "On average, how many would you expect to be business majors rounded to the hundredths place?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

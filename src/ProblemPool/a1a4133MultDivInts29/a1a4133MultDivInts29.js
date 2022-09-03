@@ -1,0 +1,1 @@
+import steps from "./a1a4133MultDivInts29-index.js"; const problem = {id: "a1a4133MultDivInts29", title: "Temperatures", body: "What is the difference in temperatures (in degrees)?", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.4 sj [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

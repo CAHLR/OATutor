@@ -1,0 +1,1 @@
+import hints from "./a66ce95Linear27a-index.js"; const step = {id: "a66ce95Linear27a", stepAnswer: ["$$\\frac{9}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{1}{3} w+\\frac{5}{4}=w-\\frac{1}{4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

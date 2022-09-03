@@ -1,0 +1,1 @@
+import hints from "./ae8dd20divradexp5a-index.js"; const step = {id: "ae8dd20divradexp5a", stepAnswer: ["$$\\frac{5q^2}{6}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[2]{75q^5}}{\\sqrt[2]{108q}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

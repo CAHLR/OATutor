@@ -1,0 +1,1 @@
+import hints from "./aef4ebdaddsubrational5a-index.js"; const step = {id: "aef4ebdaddsubrational5a", stepAnswer: ["$$r+8$$"], problemType: "TextBox", stepTitle: "$$\\frac{2r^2}{2r-1}+\\frac{15r-8}{2r+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots11a-index.js"; const step = {id: "ae3d458simproots11a", stepAnswer: ["$$\\sqrt{-121}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{-121}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic18a-index.js"; const step = {id: "abac4b0probbasic18a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student does an activity outside of school given that they have a job?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

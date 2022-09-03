@@ -1,0 +1,1 @@
+import steps from "./afae108location12-index.js"; const problem = {id: "afae108location12", title: "Interpreting Quartiles", body: "For the 100-meter dash, the third quartile for times for finishing the race was 11.5 seconds.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S2.3 Ash", courseName: "!!Editor Sheet 4b770c"}; export { problem };

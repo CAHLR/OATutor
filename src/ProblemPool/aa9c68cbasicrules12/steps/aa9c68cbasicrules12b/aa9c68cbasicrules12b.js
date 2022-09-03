@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules12b-index.js"; const step = {id: "aa9c68cbasicrules12b", stepAnswer: ["0.2"], problemType: "TextBox", stepTitle: "Find P(D AND B).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

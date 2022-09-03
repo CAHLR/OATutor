@@ -1,0 +1,1 @@
+import hints from "./a555a5ccenter3a-index.js"; const step = {id: "a555a5ccenter3a", stepAnswer: ["129400"], problemType: "TextBox", stepTitle: "What is the mean of the data set?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

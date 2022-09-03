@@ -1,0 +1,1 @@
+import steps from "./a1fec00Complex1-index.js"; const problem = {id: "a1fec00Complex1", title: "Multiply Expression", body: "Multiply:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.8[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

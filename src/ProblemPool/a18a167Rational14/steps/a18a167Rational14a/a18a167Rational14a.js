@@ -1,0 +1,1 @@
+import hints from "./a18a167Rational14a-index.js"; const step = {id: "a18a167Rational14a", stepAnswer: ["$$x=1$$ or -5"], problemType: "MultipleChoice", stepTitle: "$$R(x)=\\frac{2x^2-10x}{4x^2-16x-20}$$", stepBody: "", choices: ["$$x=-1$$ or -5", "$$x=1$$ or -5", "$$x=5$$ or -1"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a65ae04inequalities6a-index.js"; const step = {id: "a65ae04inequalities6a", stepAnswer: ["$$x=7, 1$$"], problemType: "MultipleChoice", stepTitle: "$$3|x-4|+2=11$$", stepBody: "", choices: ["$$x=7, 1$$", "$$x=-2, 3$$", "$$x=8, -4$$", "$$x=2, 5$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

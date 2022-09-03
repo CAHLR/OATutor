@@ -1,0 +1,1 @@
+import hints from "./aac038eQuadEq24a-index.js"; const step = {id: "aac038eQuadEq24a", stepAnswer: ["(-6,-2)"], problemType: "TextBox", stepTitle: "$$x^2+8x+12<0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

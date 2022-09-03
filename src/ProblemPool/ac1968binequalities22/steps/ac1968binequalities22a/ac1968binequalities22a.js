@@ -1,0 +1,1 @@
+import hints from "./ac1968binequalities22a-index.js"; const step = {id: "ac1968binequalities22a", stepAnswer: ["No Solution"], problemType: "TextBox", stepTitle: "$$|\\frac{2}{3} x-4|+11=3$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

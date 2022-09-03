@@ -1,0 +1,1 @@
+import hints from "./ac1d5ccfactoring8a-index.js"; const step = {id: "ac1d5ccfactoring8a", stepAnswer: ["(x-9)(x-4)"], problemType: "TextBox", stepTitle: "Factor $$x^2-13x+36$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

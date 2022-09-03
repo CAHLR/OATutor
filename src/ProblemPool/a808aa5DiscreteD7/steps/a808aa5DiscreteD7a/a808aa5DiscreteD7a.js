@@ -1,0 +1,1 @@
+import hints from "./a808aa5DiscreteD7a-index.js"; const step = {id: "a808aa5DiscreteD7a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "If our player rolls two dice, how many points can we expect them to get?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

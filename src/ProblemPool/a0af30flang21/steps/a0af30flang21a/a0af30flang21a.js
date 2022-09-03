@@ -1,0 +1,1 @@
+import hints from "./a0af30flang21a-index.js"; const step = {id: "a0af30flang21a", stepAnswer: ["31"], problemType: "TextBox", stepTitle: "Simplify $$\\frac{33}{3}+4\\left(7-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

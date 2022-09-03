@@ -1,0 +1,1 @@
+import hints from "./a141c09stat9d-index.js"; const step = {id: "a141c09stat9d", stepAnswer: ["systematic"], problemType: "TextBox", stepTitle: "A medical researcher interviews every third cancer patient from a list of cancer patients at a local hospital.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

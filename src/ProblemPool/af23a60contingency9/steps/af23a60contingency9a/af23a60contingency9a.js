@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency9a-index.js"; const step = {id: "af23a60contingency9a", stepAnswer: ["$$\\frac{514}{800}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected athlete has had no injuries in the past year?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

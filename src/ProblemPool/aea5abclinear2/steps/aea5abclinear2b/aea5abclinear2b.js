@@ -1,0 +1,1 @@
+import hints from "./aea5abclinear2b-index.js"; const step = {id: "aea5abclinear2b", stepAnswer: ["(-inf, -1.5]"], problemType: "MultipleChoice", stepTitle: "$$x \\leq (-1.5)$$", stepBody: "", choices: ["(-inf, -1.5)", "(-inf, -1.5]", "(-1.5, inf)", "[-1.5, inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

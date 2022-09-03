@@ -1,0 +1,1 @@
+import hints from "./afae108location2b-index.js"; const step = {id: "afae108location2b", stepAnswer: ["120000"], problemType: "TextBox", stepTitle: "Determine the potential outlier.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

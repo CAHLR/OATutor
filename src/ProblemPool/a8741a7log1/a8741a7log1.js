@@ -1,0 +1,1 @@
+import steps from "./a8741a7log1-index.js"; const problem = {id: "a8741a7log1", title: "Converting to Logarithmic Form", body: "Convert the following to logarithmic form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

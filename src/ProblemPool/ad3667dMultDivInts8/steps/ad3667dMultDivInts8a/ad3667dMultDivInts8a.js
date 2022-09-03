@@ -1,0 +1,1 @@
+import hints from "./ad3667dMultDivInts8a-index.js"; const step = {id: "ad3667dMultDivInts8a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "Simplify the expression to a single number.", stepBody: "$${\\left(-2\\right)}^4$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

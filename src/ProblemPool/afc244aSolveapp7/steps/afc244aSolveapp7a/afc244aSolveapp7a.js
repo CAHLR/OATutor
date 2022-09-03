@@ -1,0 +1,1 @@
+import hints from "./afc244aSolveapp7a-index.js"; const step = {id: "afc244aSolveapp7a", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "$$\\frac{m+90}{25}=\\frac{m+30}{15}$$", stepBody: "Solve for m.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

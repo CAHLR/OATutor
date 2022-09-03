@@ -1,0 +1,1 @@
+import hints from "./aa9c68cbasicrules5b-index.js"; const step = {id: "aa9c68cbasicrules5b", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Are being a novice swimmer and practicing four times a week independent events?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aabed94gcf26a-index.js"; const step = {id: "aabed94gcf26a", stepAnswer: ["$$\\left(y+5\\right) \\left(8y+1\\right)$$"], problemType: "TextBox", stepTitle: "$$8y^2+y+40y+5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

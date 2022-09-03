@@ -1,0 +1,1 @@
+import hints from "./ac38dceFraction5a-index.js"; const step = {id: "ac38dceFraction5a", stepAnswer: ["$$\\frac{79}{60}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{12}+\\frac{11}{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

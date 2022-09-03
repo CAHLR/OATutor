@@ -1,0 +1,1 @@
+import steps from "./aac038eQuadEq1-index.js"; const problem = {id: "aac038eQuadEq1", title: "Solve The Quadratic Equation", body: "Solve:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "9.8[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

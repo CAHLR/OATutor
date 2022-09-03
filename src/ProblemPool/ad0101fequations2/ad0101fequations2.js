@@ -1,0 +1,1 @@
+import steps from "./ad0101fequations2-index.js"; const problem = {id: "ad0101fequations2", title: "Is the ordered triple a solution to the system?", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.4 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

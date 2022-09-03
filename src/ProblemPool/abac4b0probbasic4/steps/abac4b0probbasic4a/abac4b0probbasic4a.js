@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic4a-index.js"; const step = {id: "abac4b0probbasic4a", stepAnswer: ["$$\\frac{1}{16}$$"], problemType: "TextBox", stepTitle: "What is the probability that we choose a blue, then a red M&M from 2 selections with replacement?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

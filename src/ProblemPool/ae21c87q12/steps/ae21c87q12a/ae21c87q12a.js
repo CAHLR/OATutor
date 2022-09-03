@@ -1,0 +1,1 @@
+import hints from "./ae21c87q12a-index.js"; const step = {id: "ae21c87q12a", stepAnswer: ["Skewed Right"], problemType: "MultipleChoice", stepTitle: "Describe the shape of this distribution.", stepBody: "", choices: ["Symmetrical", "Skewed Left", "Skewed Right"], answerType: "string", hints: hints, variabilization: {}}; export {step};

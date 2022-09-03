@@ -1,0 +1,1 @@
+import hints from "./aaebddaPolynomial15a-index.js"; const step = {id: "aaebddaPolynomial15a", stepAnswer: ["$$3x^2-6x-3$$"], problemType: "TextBox", stepTitle: "a) $$\\left(f+g\\right) x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

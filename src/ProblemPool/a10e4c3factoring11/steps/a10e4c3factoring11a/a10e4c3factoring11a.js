@@ -1,0 +1,1 @@
+import hints from "./a10e4c3factoring11a-index.js"; const step = {id: "a10e4c3factoring11a", stepAnswer: ["3m(m-5)(m-2)"], problemType: "TextBox", stepTitle: "$$3m^3-21m^2+30m$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

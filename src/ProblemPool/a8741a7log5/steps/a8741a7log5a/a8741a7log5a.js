@@ -1,0 +1,1 @@
+import hints from "./a8741a7log5a-index.js"; const step = {id: "a8741a7log5a", stepAnswer: ["$$64=4^3$$"], problemType: "MultipleChoice", stepTitle: "$$3=\\log_{4}\\left(64\\right)$$", stepBody: "", choices: ["$$64=4^3$$", "$$4=3^{64}$$", "$$4={64}^3$$", "$$64=3^4$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

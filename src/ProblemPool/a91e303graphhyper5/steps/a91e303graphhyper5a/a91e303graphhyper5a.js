@@ -1,0 +1,1 @@
+import hints from "./a91e303graphhyper5a-index.js"; const step = {id: "a91e303graphhyper5a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "Graph $$\\frac{x^2}{25}-\\frac{y^2}{9}=1$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ac98d98systemMat8a-index.js"; const step = {id: "ac98d98systemMat8a", stepAnswer: ["$$\\begin{bmatrix} 4 & 3 & -2 & -3 \\\\ -2 & 1 & -3 & 4 \\\\ -1 & -4 & 5 & -2 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "$$4x+3y-2z=-3-2x+y-3z=4-x-4y+5z=-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

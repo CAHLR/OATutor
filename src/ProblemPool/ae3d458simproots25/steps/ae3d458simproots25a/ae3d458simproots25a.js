@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots25a-index.js"; const step = {id: "ae3d458simproots25a", stepAnswer: ["$$|u^3|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{u^{12}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

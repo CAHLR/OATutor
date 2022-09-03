@@ -1,0 +1,1 @@
+import hints from "./af4dac4log14a-index.js"; const step = {id: "af4dac4log14a", stepAnswer: ["4.197"], problemType: "TextBox", stepTitle: "$$2e^{x-2}=18$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

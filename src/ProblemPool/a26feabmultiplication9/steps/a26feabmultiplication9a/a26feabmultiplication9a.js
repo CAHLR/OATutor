@@ -1,0 +1,1 @@
+import hints from "./a26feabmultiplication9a-index.js"; const step = {id: "a26feabmultiplication9a", stepAnswer: ["$$x^3+2x^2+3x+6$$"], problemType: "TextBox", stepTitle: "$$\\left(x^2+3\\right) \\left(x+2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

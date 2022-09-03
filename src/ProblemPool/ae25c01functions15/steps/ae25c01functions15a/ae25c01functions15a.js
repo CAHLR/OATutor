@@ -1,0 +1,1 @@
+import hints from "./ae25c01functions15a-index.js"; const step = {id: "ae25c01functions15a", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=\\frac{1}{2} x+1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

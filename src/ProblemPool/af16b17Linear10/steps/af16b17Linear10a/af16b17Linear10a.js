@@ -1,0 +1,1 @@
+import hints from "./af16b17Linear10a-index.js"; const step = {id: "af16b17Linear10a", stepAnswer: ["$$\\frac{-11}{7}$$"], problemType: "TextBox", stepTitle: "$$6(p-3)-7=5\\left(4p+3\\right)-12$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

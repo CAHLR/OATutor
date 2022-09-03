@@ -1,0 +1,1 @@
+import hints from "./a26feabmultiplication2a-index.js"; const step = {id: "a26feabmultiplication2a", stepAnswer: ["$$x^2+11x+24$$"], problemType: "TextBox", stepTitle: "$$\\left(x+8\\right) \\left(x+3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

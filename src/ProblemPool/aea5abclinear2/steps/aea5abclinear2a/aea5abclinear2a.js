@@ -1,0 +1,1 @@
+import hints from "./aea5abclinear2a-index.js"; const step = {id: "aea5abclinear2a", stepAnswer: ["(2, inf)"], problemType: "MultipleChoice", stepTitle: "$$x>2$$", stepBody: "", choices: ["(-inf, 2)", "(-inf, 2]", "(2, inf)", "[2, inf)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

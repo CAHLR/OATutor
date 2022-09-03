@@ -1,0 +1,1 @@
+import hints from "./aea5abclinear5b-index.js"; const step = {id: "aea5abclinear5b", stepAnswer: ["[-5, -4)"], problemType: "MultipleChoice", stepTitle: "$$-5 \\leq x<-4$$", stepBody: "", choices: ["(-5,-4)", "(-5, -4]", "[-5, -4)", "[-5, -4]"], answerType: "string", hints: hints, variabilization: {}}; export {step};

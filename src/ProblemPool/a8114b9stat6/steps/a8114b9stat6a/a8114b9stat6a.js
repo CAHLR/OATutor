@@ -1,0 +1,1 @@
+import hints from "./a8114b9stat6a-index.js"; const step = {id: "a8114b9stat6a", stepAnswer: ["Qualitative"], problemType: "MultipleChoice", stepTitle: "the type of calculator you use", stepBody: "", choices: ["Quantitative Discrete", "Qualitative", "Quantitative Continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

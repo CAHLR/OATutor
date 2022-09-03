@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric9b-index.js"; const step = {id: "a59a759hypergeometric9b", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "How many are in the group of interest?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

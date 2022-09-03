@@ -1,0 +1,1 @@
+import hints from "./a9ae528add20d-index.js"; const step = {id: "a9ae528add20d", stepAnswer: [">"], problemType: "MultipleChoice", stepTitle: "$$-(-16)___-|-16|$$", stepBody: "", choices: ["<", ">", "$$=$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

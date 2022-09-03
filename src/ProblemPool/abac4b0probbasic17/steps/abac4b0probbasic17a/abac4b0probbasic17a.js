@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic17a-index.js"; const step = {id: "abac4b0probbasic17a", stepAnswer: ["$$\\frac{1}{9}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student plays a sport given that they also have a job?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

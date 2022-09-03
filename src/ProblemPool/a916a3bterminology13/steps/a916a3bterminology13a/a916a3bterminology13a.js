@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology13a-index.js"; const step = {id: "a916a3bterminology13a", stepAnswer: ["$$\\frac{38}{150}$$"], problemType: "TextBox", stepTitle: "Find P(Y).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./af3e1a2RealNums27a-index.js"; const step = {id: "af3e1a2RealNums27a", stepAnswer: ["$$12q$$"], problemType: "TextBox", stepTitle: "$$20\\frac{3}{5} q$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

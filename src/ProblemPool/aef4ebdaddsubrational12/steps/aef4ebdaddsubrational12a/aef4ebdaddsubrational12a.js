@@ -1,0 +1,1 @@
+import hints from "./aef4ebdaddsubrational12a-index.js"; const step = {id: "aef4ebdaddsubrational12a", stepAnswer: ["$$\\frac{n-1}{2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2n^2}{4n-32}-\\frac{18n-16}{4n-32}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

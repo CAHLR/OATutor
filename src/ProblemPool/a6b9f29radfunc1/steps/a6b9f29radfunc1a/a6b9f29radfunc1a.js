@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc1a-index.js"; const step = {id: "a6b9f29radfunc1a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{2x-1}$$, find f(5).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

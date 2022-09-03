@@ -1,0 +1,1 @@
+import hints from "./a9f4a3alang7a-index.js"; const step = {id: "a9f4a3alang7a", stepAnswer: ["$$3x^2+7x+12$$"], problemType: "TextBox", stepTitle: "Simplify: $$2x^2+3x+7+x^2+4x+5$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

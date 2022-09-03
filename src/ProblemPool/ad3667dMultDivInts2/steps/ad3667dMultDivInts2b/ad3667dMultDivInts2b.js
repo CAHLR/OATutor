@@ -1,0 +1,1 @@
+import hints from "./ad3667dMultDivInts2b-index.js"; const step = {id: "ad3667dMultDivInts2b", stepAnswer: ["54"], problemType: "TextBox", stepTitle: "$$-6\\times-9$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

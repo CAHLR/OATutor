@@ -1,0 +1,1 @@
+import hints from "./a8e6481uni3a-index.js"; const step = {id: "a8e6481uni3a", stepAnswer: ["60"], problemType: "TextBox", stepTitle: "Find his mother’s speed.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

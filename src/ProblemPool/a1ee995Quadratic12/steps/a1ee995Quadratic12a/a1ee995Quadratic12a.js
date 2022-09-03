@@ -1,0 +1,1 @@
+import hints from "./a1ee995Quadratic12a-index.js"; const step = {id: "a1ee995Quadratic12a", stepAnswer: ["$$r=\\frac{-5}{2}$$"], problemType: "MultipleChoice", stepTitle: "$$r^2+10r+25=0$$", stepBody: "", choices: ["$$r=\\frac{5}{2}$$", "$$r=\\frac{-5}{2}$$ or $$\\frac{5}{2}$$", "$$r=\\frac{-5}{2}$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

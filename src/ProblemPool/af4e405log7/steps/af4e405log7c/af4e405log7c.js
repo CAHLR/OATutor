@@ -1,0 +1,1 @@
+import hints from "./af4e405log7c-index.js"; const step = {id: "af4e405log7c", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\log_{(1/2)}\\left(\\frac{1}{8}\\right)=x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a18d102geometric17a-index.js"; const step = {id: "a18d102geometric17a", stepAnswer: ["393204"], problemType: "TextBox", stepTitle: "$$\\sum_{i=1}^{15} 6\\times2^i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

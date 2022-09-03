@@ -1,0 +1,1 @@
+import hints from "./a0e5501functions4a-index.js"; const step = {id: "a0e5501functions4a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "$$2x^2-x+3$$", stepBody: "What is f(2)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

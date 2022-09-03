@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic1a-index.js"; const step = {id: "abac4b0probbasic1a", stepAnswer: ["$$\\frac{1}{4}$$"], problemType: "TextBox", stepTitle: "What is the probability that we choose a blue M&M if we select one M&M at random?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae01ce3systemMat4a-index.js"; const step = {id: "ae01ce3systemMat4a", stepAnswer: ["$$\\begin{bmatrix} 3 & -2 & -1 & -2 \\\\ -2 & 1 & 0 & 5 \\\\ 5 & 4 & 1 & -1 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "3x-2y-z=-2,-2x+y=5,5x+4y+z=-1", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

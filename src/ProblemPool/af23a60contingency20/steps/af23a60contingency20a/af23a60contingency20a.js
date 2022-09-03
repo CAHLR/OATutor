@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency20a-index.js"; const step = {id: "af23a60contingency20a", stepAnswer: ["$$\\frac{23}{60}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected Saxophone player practices during the Day?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a59a759hypergeometric2a-index.js"; const step = {id: "a59a759hypergeometric2a", stepAnswer: ["Vowels"], problemType: "MultipleChoice", stepTitle: "What is the group of interest?", stepBody: "", choices: ["Vowels", "Consonants", "Tiles", "Letters"], answerType: "string", hints: hints, variabilization: {}}; export {step};

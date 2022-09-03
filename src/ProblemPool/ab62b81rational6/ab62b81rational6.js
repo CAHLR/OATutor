@@ -1,0 +1,1 @@
+import steps from "./ab62b81rational6-index.js"; const problem = {id: "ab62b81rational6", title: "Adding Rational Expressions.", body: "Find the value of the expression.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.3 Add and Subtract Rational Expressions with a Common Denominator", courseName: "Openstax: Elementary Algebra"}; export { problem };

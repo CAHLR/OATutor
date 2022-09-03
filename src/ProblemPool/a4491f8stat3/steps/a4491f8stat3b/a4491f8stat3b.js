@@ -1,0 +1,1 @@
+import hints from "./a4491f8stat3b-index.js"; const step = {id: "a4491f8stat3b", stepAnswer: ["A group of these children"], problemType: "MultipleChoice", stepTitle: "What is the sample?", stepBody: "", choices: ["All children who take ski or snowboard lessons", "A group of these children"], answerType: "string", hints: hints, variabilization: {}}; export {step};

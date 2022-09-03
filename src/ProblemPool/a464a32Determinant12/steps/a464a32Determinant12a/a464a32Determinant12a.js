@@ -1,0 +1,1 @@
+import hints from "./a464a32Determinant12a-index.js"; const step = {id: "a464a32Determinant12a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "(5,-5), (4,-3), and (3,-1)", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

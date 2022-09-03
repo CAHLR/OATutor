@@ -1,0 +1,1 @@
+import hints from "./aac038eQuadEq13a-index.js"; const step = {id: "aac038eQuadEq13a", stepAnswer: ["None"], problemType: "TextBox", stepTitle: "$$x^2-3x+4 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

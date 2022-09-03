@@ -1,0 +1,1 @@
+var hints = [{id: "a0090fdexp2d-h1", type: "hint", dependencies: [], title: "Identifying lurking variables", text: "Think about how randomly assigning treatments affects the experiment. For lurking variables, sometimes, there are none.", variabilization: {}}, ]; export {hints};

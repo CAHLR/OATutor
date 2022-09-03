@@ -1,0 +1,1 @@
+import hints from "./a18a167Rational1a-index.js"; const step = {id: "a18a167Rational1a", stepAnswer: ["when $$c=0$$"], problemType: "MultipleChoice", stepTitle: "a) $$\\frac{8a^2 b}{3c}$$", stepBody: "", choices: ["when $$a=b$$", "when $$a=0$$", "when $$b=0$$", "when $$c=0$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

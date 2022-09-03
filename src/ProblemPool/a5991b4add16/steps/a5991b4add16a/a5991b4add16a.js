@@ -1,0 +1,1 @@
+import hints from "./a5991b4add16a-index.js"; const step = {id: "a5991b4add16a", stepAnswer: ["Trinomial"], problemType: "MultipleChoice", stepTitle: "$$4y^2-8y-6$$", stepBody: "", choices: ["Monomial", "Binomial", "Trinomial", "Other"], answerType: "string", hints: hints, variabilization: {}}; export {step};

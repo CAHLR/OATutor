@@ -1,0 +1,1 @@
+import hints from "./a8741a7log9b-index.js"; const step = {id: "a8741a7log9b", stepAnswer: ["243"], problemType: "TextBox", stepTitle: "$$\\log_{3}\\left(x\\right)=5$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

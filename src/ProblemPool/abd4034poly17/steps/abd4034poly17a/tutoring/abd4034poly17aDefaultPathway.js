@@ -1,0 +1,1 @@
+var hints = [{id: "abd4034poly17a-h1", type: "hint", dependencies: [], title: "We must divide each term in the numerator by 4, so we get $$2z^2+6$$", text: "", variabilization: {}}, ]; export {hints};

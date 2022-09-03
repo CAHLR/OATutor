@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni12a-index.js"; const step = {id: "a5e79d8Uni12a", stepAnswer: ["4.33"], problemType: "TextBox", stepTitle: "What is the standard deviation of the amount of time that someone will wait for the bus?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

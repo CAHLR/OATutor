@@ -1,0 +1,1 @@
+var hints = [{id: "a0090fdethics1b-h1", type: "hint", dependencies: [], title: "Looking into ethical implications of a study.", text: "This is intentionally omitting relevant data which will create bias.", variabilization: {}}, ]; export {hints};

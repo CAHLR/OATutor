@@ -1,0 +1,1 @@
+import hints from "./a141c09stat7b-index.js"; const step = {id: "a141c09stat7b", stepAnswer: ["qualitative"], problemType: "TextBox", stepTitle: "the type of car you drive", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

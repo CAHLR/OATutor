@@ -1,0 +1,1 @@
+import steps from "./a98a16abox1-index.js"; const problem = {id: "a98a16abox1", title: "Understanding Box Plots", body: "Given the following box plot, answer the questions.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.4", courseName: "!!Editor Sheet cf0669"}; export { problem };

@@ -1,0 +1,1 @@
+import hints from "./a4c14e4radfunc24a-index.js"; const step = {id: "a4c14e4radfunc24a", stepAnswer: ["(-inf,(2/3)]"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{2-3x}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

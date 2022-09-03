@@ -1,0 +1,1 @@
+import hints from "./a26feabmultiplication4a-index.js"; const step = {id: "a26feabmultiplication4a", stepAnswer: ["$$6p^2+11p+5$$"], problemType: "TextBox", stepTitle: "$$\\left(6p+5\\right) \\left(p+1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

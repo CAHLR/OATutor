@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals12a-index.js"; const step = {id: "aeba912Radicals12a", stepAnswer: ["$$b^2 \\sqrt{b}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{b^5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

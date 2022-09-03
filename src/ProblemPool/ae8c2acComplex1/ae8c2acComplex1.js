@@ -1,0 +1,1 @@
+import steps from "./ae8c2acComplex1-index.js"; const problem = {id: "ae8c2acComplex1", title: "Multiply Expression", body: "Multiply:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "8.8 Use the Complex Number System", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

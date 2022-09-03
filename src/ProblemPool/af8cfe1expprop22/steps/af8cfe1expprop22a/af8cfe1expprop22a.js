@@ -1,0 +1,1 @@
+import hints from "./af8cfe1expprop22a-index.js"; const step = {id: "af8cfe1expprop22a", stepAnswer: ["$$y^{a+b}$$"], problemType: "TextBox", stepTitle: "$$y^a y^b$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a6b9f29radfunc8a-index.js"; const step = {id: "a6b9f29radfunc8a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "f(x)=sqrt(4, (5*x)+1), find f(16).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

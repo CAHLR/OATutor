@@ -1,0 +1,1 @@
+import hints from "./ac98d98matrices1a-index.js"; const step = {id: "ac98d98matrices1a", stepAnswer: ["$$\\begin{bmatrix} 5 & -3 \\\\ -2 & 1 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Write the system as an augmented matrix: $$5x-3y=-1$$, $$y=2x-2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

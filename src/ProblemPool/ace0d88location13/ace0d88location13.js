@@ -1,0 +1,1 @@
+import steps from "./ace0d88location13-index.js"; const problem = {id: "ace0d88location13", title: "Interpreting Percentiles in Context", body: "On a 20 question math test, the 70th percentile for number of correct answers was 16.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3", courseName: "!!Editor Sheet cf0669"}; export { problem };

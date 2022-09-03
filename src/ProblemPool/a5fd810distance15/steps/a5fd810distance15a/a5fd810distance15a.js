@@ -1,0 +1,1 @@
+import hints from "./a5fd810distance15a-index.js"; const step = {id: "a5fd810distance15a", stepAnswer: ["(3.5,-1.5)"], problemType: "MultipleChoice", stepTitle: "(3,-1) and (4,-2)", stepBody: "Please select the correct answer.", choices: ["(2,-4)", "(-3,3)", "(1,-3)", "(3.5,-1.5)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

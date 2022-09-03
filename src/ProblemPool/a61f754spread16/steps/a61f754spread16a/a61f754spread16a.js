@@ -1,0 +1,1 @@
+import hints from "./a61f754spread16a-index.js"; const step = {id: "a61f754spread16a", stepAnswer: ["0.144"], problemType: "TextBox", stepTitle: "Find the value that is three standard deviations below the mean.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

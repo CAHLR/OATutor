@@ -1,0 +1,1 @@
+import hints from "./a4106b0log21a-index.js"; const step = {id: "a4106b0log21a", stepAnswer: ["$$\\log_{2}\\left(5\\right)-2$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with the Quotient Property.", stepBody: "$$\\log_{2}\\left(\\frac{5}{4}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

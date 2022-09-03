@@ -1,0 +1,1 @@
+import hints from "./a66ce95Linear17a-index.js"; const step = {id: "a66ce95Linear17a", stepAnswer: ["FALSE"], problemType: "MultipleChoice", stepTitle: "$$u=\\frac{-1}{2}$$", stepBody: "", choices: ["TRUE", "FALSE"], answerType: "string", hints: hints, variabilization: {}}; export {step};

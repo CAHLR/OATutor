@@ -1,0 +1,1 @@
+import steps from "./afaa657functions8-index.js"; const problem = {id: "afaa657functions8", title: "Using the Vertical Line Test", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.6 AP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

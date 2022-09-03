@@ -1,0 +1,1 @@
+import hints from "./a47ffd9Ind7a-index.js"; const step = {id: "a47ffd9Ind7a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "KH, 7D, 6D, KH", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a287aafgraphineq13a-index.js"; const step = {id: "a287aafgraphineq13a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Is (3,-3) a solution to the system of inequalities $$3x+y>5$$, $$2x-y \\leq 10$$?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

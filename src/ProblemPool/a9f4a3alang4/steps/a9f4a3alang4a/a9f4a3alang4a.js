@@ -1,0 +1,1 @@
+import hints from "./a9f4a3alang4a-index.js"; const step = {id: "a9f4a3alang4a", stepAnswer: ["15"], problemType: "TextBox", stepTitle: "Simplify: $$\\frac{18}{6}+4\\left(5-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

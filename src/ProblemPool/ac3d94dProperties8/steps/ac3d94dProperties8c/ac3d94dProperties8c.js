@@ -1,0 +1,1 @@
+import hints from "./ac3d94dProperties8c-index.js"; const step = {id: "ac3d94dProperties8c", stepAnswer: ["$$\\frac{-1}{4}$$"], problemType: "TextBox", stepTitle: "-4", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

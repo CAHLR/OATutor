@@ -1,0 +1,1 @@
+import hints from "./add6935Sim15a-index.js"; const step = {id: "add6935Sim15a", stepAnswer: ["$$\\frac{12}{5}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{1}{2}+\\frac{1}{4}}{\\frac{1}{8}+\\frac{3}{16}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

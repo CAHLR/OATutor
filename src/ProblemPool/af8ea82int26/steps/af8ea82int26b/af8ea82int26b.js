@@ -1,0 +1,1 @@
+import hints from "./af8ea82int26b-index.js"; const step = {id: "af8ea82int26b", stepAnswer: ["6"], problemType: "TextBox", stepTitle: "$$\\frac{-30}{2}+\\left(-3\\right) \\left(-7\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals1a-index.js"; const step = {id: "aeba912Radicals1a", stepAnswer: ["$$x^5$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^9}{x^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

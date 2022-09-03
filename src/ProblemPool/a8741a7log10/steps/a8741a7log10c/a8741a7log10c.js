@@ -1,0 +1,1 @@
+import hints from "./a8741a7log10c-index.js"; const step = {id: "a8741a7log10c", stepAnswer: ["-4"], problemType: "TextBox", stepTitle: "$$\\log_{2}\\left(\\frac{1}{16}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

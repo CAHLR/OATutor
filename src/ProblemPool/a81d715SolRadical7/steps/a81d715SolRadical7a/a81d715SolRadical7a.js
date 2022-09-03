@@ -1,0 +1,1 @@
+import hints from "./a81d715SolRadical7a-index.js"; const step = {id: "a81d715SolRadical7a", stepAnswer: ["14"], problemType: "TextBox", stepTitle: "$$\\sqrt{2m-3}-5=0$$", stepBody: "Please enter your solution. If there is no solution for this equation, please enter \"None\"", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

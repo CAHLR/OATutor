@@ -1,0 +1,1 @@
+import steps from "./ae21c87q15-index.js"; const problem = {id: "ae21c87q15", title: "Seeing skewness.", body: "Answer the following question.\n##figure1.gif", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.6", courseName: "!!Editor Sheet cf0669"}; export { problem };

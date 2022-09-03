@@ -1,0 +1,1 @@
+import hints from "./af8ea82int24a-index.js"; const step = {id: "af8ea82int24a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$${\\left(-2\\right)}^4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

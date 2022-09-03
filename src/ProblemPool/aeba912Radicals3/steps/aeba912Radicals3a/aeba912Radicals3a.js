@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals3a-index.js"; const step = {id: "aeba912Radicals3a", stepAnswer: ["$$n^{12}$$"], problemType: "TextBox", stepTitle: "$${\\left(n^6\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

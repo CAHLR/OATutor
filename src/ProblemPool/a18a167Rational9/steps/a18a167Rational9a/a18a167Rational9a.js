@@ -1,0 +1,1 @@
+import hints from "./a18a167Rational9a-index.js"; const step = {id: "a18a167Rational9a", stepAnswer: ["$$\\frac{x+3}{3x \\left(x-4\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{2x}{x^2-7x+12} \\frac{x^2-9}{6x^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

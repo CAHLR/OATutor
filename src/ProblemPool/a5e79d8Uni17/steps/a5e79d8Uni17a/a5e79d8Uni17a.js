@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni17a-index.js"; const step = {id: "a5e79d8Uni17a", stepAnswer: ["21.36"], problemType: "TextBox", stepTitle: "What is the standard deviation of the duration of MLB Baseball games in 2011?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

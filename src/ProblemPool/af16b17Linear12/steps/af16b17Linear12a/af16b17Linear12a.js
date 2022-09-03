@@ -1,0 +1,1 @@
+import hints from "./af16b17Linear12a-index.js"; const step = {id: "af16b17Linear12a", stepAnswer: ["-2"], problemType: "TextBox", stepTitle: "$$10(3-8(2s-5))=15(40-5s)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

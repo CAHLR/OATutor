@@ -1,0 +1,1 @@
+import hints from "./abede0afactoring4a-index.js"; const step = {id: "abede0afactoring4a", stepAnswer: ["$${\\left(8y+5\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$64y^2-80y+25$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

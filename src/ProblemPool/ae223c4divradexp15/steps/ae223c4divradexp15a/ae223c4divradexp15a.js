@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp15a-index.js"; const step = {id: "ae223c4divradexp15a", stepAnswer: ["$$\\frac{\\sqrt[2]{15}}{10}$$"], problemType: "TextBox", stepTitle: "sqrt(2, sqrt(2, 3/20))", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

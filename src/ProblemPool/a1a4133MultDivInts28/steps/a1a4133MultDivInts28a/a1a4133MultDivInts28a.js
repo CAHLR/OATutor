@@ -1,0 +1,1 @@
+import hints from "./a1a4133MultDivInts28a-index.js"; const step = {id: "a1a4133MultDivInts28a", stepAnswer: ["-45"], problemType: "TextBox", stepTitle: "The product of -3 and 15", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./abac4b0probbasic24a-index.js"; const step = {id: "abac4b0probbasic24a", stepAnswer: ["$$\\frac{7}{30}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected employee eats in their office or in their break room?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

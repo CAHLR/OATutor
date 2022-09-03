@@ -1,0 +1,1 @@
+import steps from "./a1ee995Quadratic14-index.js"; const problem = {id: "a1ee995Quadratic14", title: "Quadratic Formula", body: "Determine the number of solutions to the following quadratic equations", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "9.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

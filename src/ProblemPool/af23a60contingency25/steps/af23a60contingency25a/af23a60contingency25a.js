@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency25a-index.js"; const step = {id: "af23a60contingency25a", stepAnswer: ["$$\\frac{121}{475}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student plays alone and outside or with friends outside?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

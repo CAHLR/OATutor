@@ -1,0 +1,1 @@
+import hints from "./ade9eadinequalities30a-index.js"; const step = {id: "ade9eadinequalities30a", stepAnswer: ["-4/3,(0,1)"], problemType: "TextBox", stepTitle: "$$y=\\frac{-4}{3} x+1$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

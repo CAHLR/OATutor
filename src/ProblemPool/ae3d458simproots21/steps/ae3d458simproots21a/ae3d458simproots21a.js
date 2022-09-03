@@ -1,0 +1,1 @@
+import hints from "./ae3d458simproots21a-index.js"; const step = {id: "ae3d458simproots21a", stepAnswer: ["$$|x^3|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

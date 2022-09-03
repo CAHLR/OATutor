@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology2h-index.js"; const step = {id: "a916a3bterminology2h", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "What is P(A')?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

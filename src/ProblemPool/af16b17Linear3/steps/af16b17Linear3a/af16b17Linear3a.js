@@ -1,0 +1,1 @@
+import hints from "./af16b17Linear3a-index.js"; const step = {id: "af16b17Linear3a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$7(n-3)-8=-15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

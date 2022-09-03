@@ -1,0 +1,1 @@
+import hints from "./a1a4133MultDivInts21a-index.js"; const step = {id: "a1a4133MultDivInts21a", stepAnswer: ["-81"], problemType: "TextBox", stepTitle: "Simplify the expression to a single number.", stepBody: "$${\\left(-3\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a16e7efdividingpoly2a-index.js"; const step = {id: "a16e7efdividingpoly2a", stepAnswer: ["((3*(x**2))-2*x+2+(2/(x+1))"], problemType: "TextBox", stepTitle: "$$\\frac{3x^3+x^2+4}{x+1}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

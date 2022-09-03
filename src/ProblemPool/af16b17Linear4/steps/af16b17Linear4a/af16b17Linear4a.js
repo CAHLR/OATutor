@@ -1,0 +1,1 @@
+import hints from "./af16b17Linear4a-index.js"; const step = {id: "af16b17Linear4a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$2\\left(m-4\\right)+3=-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

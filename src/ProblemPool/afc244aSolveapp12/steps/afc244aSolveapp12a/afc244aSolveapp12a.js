@@ -1,0 +1,1 @@
+import hints from "./afc244aSolveapp12a-index.js"; const step = {id: "afc244aSolveapp12a", stepAnswer: ["325"], problemType: "TextBox", stepTitle: "A veterinarian prescribed Sunny, a 65-pound dog, an antibacterial medicine in case an $$infection$$ emerges", stepBody: "Please enter you answer as number.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

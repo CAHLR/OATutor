@@ -1,0 +1,1 @@
+import hints from "./a1fec00Complex2a-index.js"; const step = {id: "a1fec00Complex2a", stepAnswer: ["$$x^2-1$$"], problemType: "TextBox", stepTitle: "$$\\left(x-1\\right) \\left(x+1\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

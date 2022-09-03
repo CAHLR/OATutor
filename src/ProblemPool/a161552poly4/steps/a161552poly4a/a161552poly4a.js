@@ -1,0 +1,1 @@
+import hints from "./a161552poly4a-index.js"; const step = {id: "a161552poly4a", stepAnswer: ["$$\\frac{-9}{a^5 b}$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{\\left(-72a^7 b^3\\right)}{8a^{12} b^4}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

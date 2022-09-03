@@ -1,0 +1,1 @@
+import hints from "./abd4034poly27a-index.js"; const step = {id: "abd4034poly27a", stepAnswer: ["$$36p^4-8p^2$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{216p^7-48p^5}{6p^3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

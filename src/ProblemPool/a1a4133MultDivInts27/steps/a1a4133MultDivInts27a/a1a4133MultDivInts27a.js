@@ -1,0 +1,1 @@
+import hints from "./a1a4133MultDivInts27a-index.js"; const step = {id: "a1a4133MultDivInts27a", stepAnswer: ["28"], problemType: "TextBox", stepTitle: "The difference of 10 and -18", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a0090fdexp1b-index.js"; const step = {id: "a0090fdexp1b", stepAnswer: ["400 men who participated"], problemType: "MultipleChoice", stepTitle: "Identify the sample for this study.", stepBody: "", choices: ["400 men who participated", "Men aged 50-84", "The individual men in the study"], answerType: "string", hints: hints, variabilization: {}}; export {step};

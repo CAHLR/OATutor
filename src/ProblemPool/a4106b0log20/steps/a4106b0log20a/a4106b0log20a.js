@@ -1,0 +1,1 @@
+import hints from "./a4106b0log20a-index.js"; const step = {id: "a4106b0log20a", stepAnswer: ["$$\\log_{10}\\left(x\\right)-100$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with the Quotient Property.", stepBody: "$$\\log_{10}\\left(\\frac{x}{1000}\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

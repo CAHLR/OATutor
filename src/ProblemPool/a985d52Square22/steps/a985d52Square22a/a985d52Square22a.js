@@ -1,0 +1,1 @@
+import hints from "./a985d52Square22a-index.js"; const step = {id: "a985d52Square22a", stepAnswer: ["-5 and -8"], problemType: "MultipleChoice", stepTitle: "$$t^2+13t+40=0$$", stepBody: "", choices: ["-5 and -8", "-2 and 3", "-6 and -4", "-5 and 2"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ace0d88location17a-index.js"; const step = {id: "ace0d88location17a", stepAnswer: ["80"], problemType: "TextBox", stepTitle: "At what percentile is Jesse's ranking?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

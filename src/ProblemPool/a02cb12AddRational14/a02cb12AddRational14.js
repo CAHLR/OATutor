@@ -1,0 +1,1 @@
+import steps from "./a02cb12AddRational14-index.js"; const problem = {id: "a02cb12AddRational14", title: "Subtract Rational Expressions", body: "Subtract the Following Rational Expressions with Unlike Denominators", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 AL[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

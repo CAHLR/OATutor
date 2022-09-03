@@ -1,0 +1,1 @@
+import hints from "./a368ca5desc-stat4a-index.js"; const step = {id: "a368ca5desc-stat4a", stepAnswer: ["Discrete"], problemType: "MultipleChoice", stepTitle: "The amount of legs on a table.", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

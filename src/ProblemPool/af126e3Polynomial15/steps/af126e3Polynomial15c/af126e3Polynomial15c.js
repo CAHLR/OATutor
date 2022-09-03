@@ -1,0 +1,1 @@
+import hints from "./af126e3Polynomial15c-index.js"; const step = {id: "af126e3Polynomial15c", stepAnswer: ["$$x^2-2x+9$$"], problemType: "TextBox", stepTitle: "c) (f-g)(x)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

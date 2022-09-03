@@ -1,0 +1,1 @@
+import hints from "./ac3e66ctreeandvenn21a-index.js"; const step = {id: "ac3e66ctreeandvenn21a", stepAnswer: ["0.8"], problemType: "TextBox", stepTitle: "Find the probability that the customer buys either a novel or a non-fiction book.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

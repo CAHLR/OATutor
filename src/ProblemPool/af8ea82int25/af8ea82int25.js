@@ -1,0 +1,1 @@
+import steps from "./af8ea82int25-index.js"; const problem = {id: "af8ea82int25", title: "Simplify Expressions with Integers", body: "Simplify:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 al [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

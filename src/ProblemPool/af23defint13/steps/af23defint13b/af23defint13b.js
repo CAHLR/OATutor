@@ -1,0 +1,1 @@
+import hints from "./af23defint13b-index.js"; const step = {id: "af23defint13b", stepAnswer: ["-243"], problemType: "TextBox", stepTitle: "$$-\\left(3^5\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

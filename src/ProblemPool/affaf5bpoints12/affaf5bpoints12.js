@@ -1,0 +1,1 @@
+import steps from "./affaf5bpoints12-index.js"; const problem = {id: "affaf5bpoints12", title: "Determining Whether a Point is On a Line", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.1 AP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

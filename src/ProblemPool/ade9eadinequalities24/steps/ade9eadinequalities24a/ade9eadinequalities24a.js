@@ -1,0 +1,1 @@
+import hints from "./ade9eadinequalities24a-index.js"; const step = {id: "ade9eadinequalities24a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "(-3,4) and (2,-1)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

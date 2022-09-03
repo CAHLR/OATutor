@@ -1,0 +1,1 @@
+import hints from "./a3a2009expectedvalue6a-index.js"; const step = {id: "a3a2009expectedvalue6a", stepAnswer: ["$$\\frac{1}{256}$$"], problemType: "TextBox", stepTitle: "What is your expected profit of playing the game over the long term? Keep it in fractional form.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

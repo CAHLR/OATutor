@@ -1,0 +1,1 @@
+import hints from "./af126e3Polynomial13b-index.js"; const step = {id: "af126e3Polynomial13b", stepAnswer: ["40"], problemType: "TextBox", stepTitle: "b) f(-2)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

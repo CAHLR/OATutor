@@ -1,0 +1,1 @@
+import hints from "./aeba912Radicals10a-index.js"; const step = {id: "aeba912Radicals10a", stepAnswer: ["$$x \\sqrt[3]{x}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{x^4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

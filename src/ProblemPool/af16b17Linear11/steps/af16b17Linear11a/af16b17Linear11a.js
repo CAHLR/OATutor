@@ -1,0 +1,1 @@
+import hints from "./af16b17Linear11a-index.js"; const step = {id: "af16b17Linear11a", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$8\\left(q+1\\right)-5=3(2q-4)-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

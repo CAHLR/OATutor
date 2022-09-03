@@ -1,0 +1,1 @@
+import hints from "./ae6124egraphineq3a-index.js"; const step = {id: "ae6124egraphineq3a", stepAnswer: ["yes"], problemType: "MultipleChoice", stepTitle: "Determine $$\\frac{y}{n}$$ whether (-2,1) is a solution to {$$y>4x-2$$, $$4x-y<20$$}", stepBody: "", choices: ["yes", "no"], answerType: "string", hints: hints, variabilization: {}}; export {step};

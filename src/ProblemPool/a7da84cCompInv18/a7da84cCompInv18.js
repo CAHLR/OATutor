@@ -1,0 +1,1 @@
+import steps from "./a7da84cCompInv18-index.js"; const problem = {id: "a7da84cCompInv18", title: "Verify reverse functions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "10.1[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

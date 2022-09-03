@@ -1,0 +1,1 @@
+import hints from "./a1a4133MultDivInts19a-index.js"; const step = {id: "a1a4133MultDivInts19a", stepAnswer: ["13"], problemType: "TextBox", stepTitle: "$$\\frac{-52}{\\left(-4\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

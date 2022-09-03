@@ -1,0 +1,1 @@
+import hints from "./a91e303graphhyper29a-index.js"; const step = {id: "a91e303graphhyper29a", stepAnswer: ["$$\\frac{{\\left(x-3\\right)}^2}{9}-\\frac{{\\left(y+2\\right)}^2}{4}=1$$"], problemType: "TextBox", stepTitle: "Standardize $$4x^2-9y^2-24x-36y-36=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

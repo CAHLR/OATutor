@@ -1,0 +1,1 @@
+import hints from "./af23a60contingency17a-index.js"; const step = {id: "af23a60contingency17a", stepAnswer: ["$$\\frac{301}{401}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected artist plays during the night?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

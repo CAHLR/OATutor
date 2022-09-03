@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni18a-index.js"; const step = {id: "a5e79d8Uni18a", stepAnswer: ["$$\\frac{20}{74}$$"], problemType: "TextBox", stepTitle: "What is the probability that the duration of games for a team for the 2011 season is between 480 and 500 hours?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

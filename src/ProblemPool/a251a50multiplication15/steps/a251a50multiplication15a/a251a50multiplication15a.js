@@ -1,0 +1,1 @@
+import hints from "./a251a50multiplication15a-index.js"; const step = {id: "a251a50multiplication15a", stepAnswer: ["$$9\\left(r^2\\right) s^2-33rs+28$$"], problemType: "TextBox", stepTitle: "(3rs-7)(3rs-4)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

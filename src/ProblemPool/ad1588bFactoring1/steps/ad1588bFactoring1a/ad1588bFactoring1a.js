@@ -1,0 +1,1 @@
+import hints from "./ad1588bFactoring1a-index.js"; const step = {id: "ad1588bFactoring1a", stepAnswer: ["$$7x \\left(x+2\\right) \\left(x-5\\right)$$"], problemType: "TextBox", stepTitle: "$$7x^3-21x^2-70x$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

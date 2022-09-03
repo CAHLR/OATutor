@@ -1,0 +1,1 @@
+import steps from "./affaf5bpoints5-index.js"; const problem = {id: "affaf5bpoints5", title: "Locating a Point Quadrant", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.1 AP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

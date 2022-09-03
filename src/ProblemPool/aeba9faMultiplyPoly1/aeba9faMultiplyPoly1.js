@@ -1,0 +1,1 @@
+import steps from "./aeba9faMultiplyPoly1-index.js"; const problem = {id: "aeba9faMultiplyPoly1", title: "Multiply Monomials", body: "Multiply the following monomials", steps: steps, variabilization: {}, oer: "Multiply Polynomials", lesson: "5.3 RW [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

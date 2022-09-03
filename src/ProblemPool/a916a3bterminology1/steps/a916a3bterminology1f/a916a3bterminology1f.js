@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology1f-index.js"; const step = {id: "a916a3bterminology1f", stepAnswer: ["$$\\frac{3}{19}$$"], problemType: "TextBox", stepTitle: "What is P(A AND B)?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

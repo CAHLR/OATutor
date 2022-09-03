@@ -1,0 +1,1 @@
+import hints from "./aa21a6fGraphQuadratic4b-index.js"; const step = {id: "aa21a6fGraphQuadratic4b", stepAnswer: ["Down"], problemType: "TextBox", stepTitle: "$$f(x)=-4x^2-12x-9$$", stepBody: "If the parabola opens up, please enter \"Up\". If the parabola opens down, please enter \"Down\".", answerType: "string", hints: hints, variabilization: {}}; export {step};

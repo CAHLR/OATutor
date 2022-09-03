@@ -1,0 +1,1 @@
+import hints from "./af126e3Polynomial3b-index.js"; const step = {id: "af126e3Polynomial3b", stepAnswer: ["$$23{pq}^3$$"], problemType: "TextBox", stepTitle: "b) $$16{pq}^3-\\left(-7{pq}^3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

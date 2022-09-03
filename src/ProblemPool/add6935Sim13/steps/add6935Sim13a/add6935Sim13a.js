@@ -1,0 +1,1 @@
+import hints from "./add6935Sim13a-index.js"; const step = {id: "add6935Sim13a", stepAnswer: ["$$\\frac{2}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{3}{5}}{\\frac{9}{10}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

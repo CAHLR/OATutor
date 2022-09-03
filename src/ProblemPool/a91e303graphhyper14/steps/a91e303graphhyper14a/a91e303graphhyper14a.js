@@ -1,0 +1,1 @@
+import hints from "./a91e303graphhyper14a-index.js"; const step = {id: "a91e303graphhyper14a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "Graph $$16y^2-25x^2=400$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

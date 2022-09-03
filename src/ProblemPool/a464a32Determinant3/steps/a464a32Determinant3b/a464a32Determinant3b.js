@@ -1,0 +1,1 @@
+import hints from "./a464a32Determinant3b-index.js"; const step = {id: "a464a32Determinant3b", stepAnswer: ["-15"], problemType: "TextBox", stepTitle: "b3", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

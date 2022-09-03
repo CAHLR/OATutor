@@ -1,0 +1,1 @@
+import hints from "./a88aae9QuadEq5a-index.js"; const step = {id: "a88aae9QuadEq5a", stepAnswer: ["(-inf,-6]&[-2,inf)"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)-8x-12 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

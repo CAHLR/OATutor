@@ -1,0 +1,1 @@
+import hints from "./aeba9faMultiplyPoly8b-index.js"; const step = {id: "aeba9faMultiplyPoly8b", stepAnswer: ["$$15x^2+29x-14$$"], problemType: "TextBox", stepTitle: "b) $$\\left(3x+7\\right) \\left(5x-2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

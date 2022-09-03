@@ -1,0 +1,1 @@
+import hints from "./aac038eQuadEq16a-index.js"; const step = {id: "aac038eQuadEq16a", stepAnswer: ["(-inf,-5)&(-1,inf)"], problemType: "TextBox", stepTitle: "$$x^2+6x+5>0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

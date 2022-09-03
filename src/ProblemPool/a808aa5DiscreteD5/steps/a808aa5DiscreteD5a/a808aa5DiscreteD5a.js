@@ -1,0 +1,1 @@
+import hints from "./a808aa5DiscreteD5a-index.js"; const step = {id: "a808aa5DiscreteD5a", stepAnswer: ["0.6944"], problemType: "TextBox", stepTitle: "What is the probability that if our player rolls 2 dice, they have no matches?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

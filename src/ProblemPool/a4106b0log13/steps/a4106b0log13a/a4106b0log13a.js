@@ -1,0 +1,1 @@
+import hints from "./a4106b0log13a-index.js"; const step = {id: "a4106b0log13a", stepAnswer: ["$$\\log_{3}\\left(7\\right)+\\log_{3}\\left(x\\right)$$"], problemType: "TextBox", stepTitle: "Rewriting Logorithms with Product Property of Logorithms.", stepBody: "$$\\log_{3}\\left(7x\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

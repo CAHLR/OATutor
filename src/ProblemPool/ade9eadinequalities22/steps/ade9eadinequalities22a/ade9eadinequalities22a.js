@@ -1,0 +1,1 @@
+import hints from "./ade9eadinequalities22a-index.js"; const step = {id: "ade9eadinequalities22a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "What is the slope of the line $$y=7$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

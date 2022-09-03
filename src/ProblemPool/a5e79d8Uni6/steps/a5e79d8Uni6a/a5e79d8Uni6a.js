@@ -1,0 +1,1 @@
+import hints from "./a5e79d8Uni6a-index.js"; const step = {id: "a5e79d8Uni6a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "What is the mean of X?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

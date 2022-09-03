@@ -1,0 +1,1 @@
+import hints from "./a0af30flang28a-index.js"; const step = {id: "a0af30flang28a", stepAnswer: ["64"], problemType: "TextBox", stepTitle: "What is $$x^6$$ when $$x=2$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

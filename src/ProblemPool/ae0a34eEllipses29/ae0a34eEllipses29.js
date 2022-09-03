@@ -1,0 +1,1 @@
+import steps from "./ae0a34eEllipses29-index.js"; const problem = {id: "ae0a34eEllipses29", title: "Find the Equation of an Ellipse with Center Not at the Origin", body: "In the following exercise, find the graph of the given ellipse equations.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "11.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

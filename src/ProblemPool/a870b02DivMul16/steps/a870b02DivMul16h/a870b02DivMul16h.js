@@ -1,0 +1,1 @@
+import hints from "./a870b02DivMul16h-index.js"; const step = {id: "a870b02DivMul16h", stepAnswer: ["100"], problemType: "TextBox", stepTitle: "$$-20=\\frac{q}{\\left(-5\\right)}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

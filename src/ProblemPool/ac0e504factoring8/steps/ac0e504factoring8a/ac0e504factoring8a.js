@@ -1,0 +1,1 @@
+import hints from "./ac0e504factoring8a-index.js"; const step = {id: "ac0e504factoring8a", stepAnswer: ["$$\\left(4x+1\\right) \\left(4x-1\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$16x^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

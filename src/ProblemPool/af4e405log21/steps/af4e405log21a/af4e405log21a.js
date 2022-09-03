@@ -1,0 +1,1 @@
+import hints from "./af4e405log21a-index.js"; const step = {id: "af4e405log21a", stepAnswer: ["100"], problemType: "TextBox", stepTitle: "What is the decibel level of music coming through ear phones with intensity $${10}^{\\left(-2\\right)}$$ watts per square inch?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

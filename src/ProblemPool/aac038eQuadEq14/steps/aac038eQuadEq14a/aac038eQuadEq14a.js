@@ -1,0 +1,1 @@
+import hints from "./aac038eQuadEq14a-index.js"; const step = {id: "aac038eQuadEq14a", stepAnswer: ["(-inf,inf)"], problemType: "TextBox", stepTitle: "$$-\\left(x^2\\right)+2x-4 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

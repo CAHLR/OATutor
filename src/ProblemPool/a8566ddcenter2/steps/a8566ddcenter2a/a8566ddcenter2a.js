@@ -1,0 +1,1 @@
+import hints from "./a8566ddcenter2a-index.js"; const step = {id: "a8566ddcenter2a", stepAnswer: ["13.95"], problemType: "TextBox", stepTitle: "Calculate the mean. Round to the nearest hundredths place.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

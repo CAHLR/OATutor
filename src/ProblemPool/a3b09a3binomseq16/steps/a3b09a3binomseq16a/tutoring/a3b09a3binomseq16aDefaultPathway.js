@@ -1,0 +1,1 @@
+var hints = [{id: "a3b09a3binomseq16a-h1", type: "hint", dependencies: [], title: "Using the Combination Formula", text: "(6,2) $$=$$ 6 Choose 2 $$=$$ C(6,2) $$=$$ 15.", variabilization: {}}, ]; export {hints};

@@ -1,0 +1,1 @@
+import hints from "./a6f50b8bin6a-index.js"; const step = {id: "a6f50b8bin6a", stepAnswer: ["$$x^5-10x^4+40x^3-80x^2+80x^1-32$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x-2\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

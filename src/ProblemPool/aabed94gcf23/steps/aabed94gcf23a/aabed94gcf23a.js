@@ -1,0 +1,1 @@
+import hints from "./aabed94gcf23a-index.js"; const step = {id: "aabed94gcf23a", stepAnswer: ["$$-5y \\left(y^2-7y+3\\right)$$"], problemType: "TextBox", stepTitle: "$$-5y^3+35y^2-15y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

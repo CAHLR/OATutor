@@ -1,0 +1,1 @@
+import hints from "./a0e5501functions3a-index.js"; const step = {id: "a0e5501functions3a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$f(x)=x^2-x+3$$", stepBody: "What is f(2)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./a1fec00Complex6a-index.js"; const step = {id: "a1fec00Complex6a", stepAnswer: ["$$i \\sqrt{7}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{-7}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

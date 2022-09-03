@@ -1,0 +1,1 @@
+import hints from "./a8a6255hist3e-index.js"; const step = {id: "a8a6255hist3e", stepAnswer: ["3.5"], problemType: "TextBox", stepTitle: "and the 3 in the middle of the interval from $$___$$ to $$___$$ (second blank).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

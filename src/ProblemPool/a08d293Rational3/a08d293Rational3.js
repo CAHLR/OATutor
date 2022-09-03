@@ -1,0 +1,1 @@
+import steps from "./a08d293Rational3-index.js"; const problem = {id: "a08d293Rational3", title: "Write as a radical expression", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "8.3 Simplify Rational Exponents", courseName: "OpenStax: Intermediate Algebra"}; export { problem };

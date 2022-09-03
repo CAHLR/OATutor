@@ -1,0 +1,1 @@
+import hints from "./a8741a7log18b-index.js"; const step = {id: "a8741a7log18b", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "$$\\ln(e^{2x})=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

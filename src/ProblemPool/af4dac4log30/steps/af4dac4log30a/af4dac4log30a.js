@@ -1,0 +1,1 @@
+import hints from "./af4dac4log30a-index.js"; const step = {id: "af4dac4log30a", stepAnswer: ["0.386"], problemType: "TextBox", stepTitle: "$$4e^{x+1}=16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./aeba9faMultiplyPoly7a-index.js"; const step = {id: "aeba9faMultiplyPoly7a", stepAnswer: ["$$y^2-3y-28$$"], problemType: "TextBox", stepTitle: "a) $$\\left(y-7\\right) \\left(y+4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp22a-index.js"; const step = {id: "ae223c4divradexp22a", stepAnswer: ["$$\\frac{5\\sqrt[2]{3}}{3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{5}{\\sqrt[2]{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

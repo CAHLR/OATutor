@@ -1,0 +1,1 @@
+import hints from "./aeba9faMultiplyPoly2a-index.js"; const step = {id: "aeba9faMultiplyPoly2a", stepAnswer: ["$$-35y^{11}$$"], problemType: "TextBox", stepTitle: "a) $$5y^7 \\left(-7y^4\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

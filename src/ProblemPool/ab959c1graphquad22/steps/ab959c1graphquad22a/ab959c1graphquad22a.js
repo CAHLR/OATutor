@@ -1,0 +1,1 @@
+import hints from "./ab959c1graphquad22a-index.js"; const step = {id: "ab959c1graphquad22a", stepAnswer: ["A"], problemType: "MultipleChoice", stepTitle: "$$f(x)=2x^2$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

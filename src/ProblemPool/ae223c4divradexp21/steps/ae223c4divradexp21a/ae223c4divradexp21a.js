@@ -1,0 +1,1 @@
+import hints from "./ae223c4divradexp21a-index.js"; const step = {id: "ae223c4divradexp21a", stepAnswer: ["$$\\frac{\\sqrt[2]{6}}{8}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[2]{\\frac{3}{32}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

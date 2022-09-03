@@ -1,0 +1,1 @@
+import hints from "./afaa657functions9a-index.js"; const step = {id: "afaa657functions9a", stepAnswer: ["$$(-\\infty,\\infty)$$"], problemType: "TextBox", stepTitle: "Find the domain of the function in interval notation: $$f(x)=3x+4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

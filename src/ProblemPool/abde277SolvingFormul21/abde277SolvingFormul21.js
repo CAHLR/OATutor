@@ -1,0 +1,1 @@
+import steps from "./abde277SolvingFormul21-index.js"; const problem = {id: "abde277SolvingFormul21", title: "Solve the Formula for the given variable", body: "Solve the formula to get an expression for $$b_1$$.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3 p [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

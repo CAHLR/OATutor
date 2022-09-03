@@ -1,0 +1,1 @@
+import steps from "./a85fcf1geometric3-index.js"; const problem = {id: "a85fcf1geometric3", title: "Determine the Common Ratio", body: "Determine if each sequence is geometric. If so, indicate the common ratio.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "12.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

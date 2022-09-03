@@ -1,0 +1,1 @@
+import hints from "./a916a3bterminology21a-index.js"; const step = {id: "a916a3bterminology21a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "What is the probability of drawing a red card in the standard deck of 52 cards?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

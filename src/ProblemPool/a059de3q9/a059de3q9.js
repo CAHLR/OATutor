@@ -1,0 +1,1 @@
+import steps from "./a059de3q9-index.js"; const problem = {id: "a059de3q9", title: "Relationship of mean and median during skewness.", body: "Answer the following question.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S2.6", courseName: "!!Editor Sheet 4b770c"}; export { problem };

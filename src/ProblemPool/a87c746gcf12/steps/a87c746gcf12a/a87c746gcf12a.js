@@ -1,0 +1,1 @@
+import hints from "./a87c746gcf12a-index.js"; const step = {id: "a87c746gcf12a", stepAnswer: ["$$6m^2 n^3$$"], problemType: "TextBox", stepTitle: "$$12m^2 n^3$$, $$30m^5 n^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

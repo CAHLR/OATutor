@@ -1,0 +1,1 @@
+import hints from "./a141c09stat9b-index.js"; const step = {id: "a141c09stat9b", stepAnswer: ["cluster"], problemType: "TextBox", stepTitle: "A pollster interviews all human resource personnel in five different high tech companies.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,1 @@
+import hints from "./af2019bgraphs7a-index.js"; const step = {id: "af2019bgraphs7a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Find f(0)", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
