@@ -24,7 +24,7 @@
             "a7dc5fftransformation6a-h2"
         ],
         "title": "How to Find f(-x)",
-        "text": "Find f(-x) by subsituting -x in wherever x appears in the original equation. $${\\left(-x\\right)}^n=x^n$$ when n is an even, and $${\\left(-x\\right)}^n=-\\left(x^n\\right)$$ when n is odd-- for example, $${\\left(x+5\\right)}^2$$ $$=$$ $${negneg}\\left(\\operatorname{\\left(-x-5\\right)\\right)}^2={\\left(x+5\\right)}^2$$.",
+        "text": "Find f(-x) by subsituting -x in wherever x appears in the original equation. $${\\left(-x\\right)}^n=x^n$$ when n is an even, and $${\\left(-x\\right)}^n=-\\left(x^n\\right)$$ when n is odd-- for example, $${\\left(x+5\\right)}^2$$ $$=$$ $${\\left(-\\left(-x-5\\right)\\right)}^2={\\left(x+5\\right)}^2$$.",
         "variabilization": {}
     },
     {
@@ -40,7 +40,12 @@
         ],
         "title": "Determining f(-x)",
         "text": "What is f(-x) equal to?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$-\\left({\\left(x+2\\right)}^2\\right)$$",
+            "$${\\left(x+2\\right)}^2$$",
+            "$${\\left(x-2\\right)}^2$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h5",
@@ -65,7 +70,12 @@
         ],
         "title": "Determining -f(-x)",
         "text": "What is -f(-x) equal to?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$-\\left({\\left(x+2\\right)}^2\\right)$$",
+            "$${\\left(x+2\\right)}^2$$",
+            "$${\\left(x-2\\right)}^2$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h7",
@@ -80,7 +90,11 @@
         ],
         "title": "Checking if f(x) is Even",
         "text": "Does $$f(x)=f(-x)$$?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h8",
@@ -95,6 +109,10 @@
         ],
         "title": "Checking if f(x) is Odd",
         "text": "Does $$f(x)=-f(-x)$$?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
     }
 ]

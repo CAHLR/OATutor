@@ -13,14 +13,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$D=10*\\log_{10}\\left(\\frac{{10}^{negneg}\\left(2\\right)}}{{10}^{\\operatorname{\\left(-12\\right)}}\\right)$$"
+            "$$D=10*\\log_{10}\\left(\\frac{{10}^{\\left(-2\\right)}}{{10}^{\\left(-12\\right)}}\\right)$$"
         ],
         "dependencies": [
             "af4e405log21a-h1"
         ],
         "title": "Plug in I",
         "text": "Plug in the value for the intensity level, I.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$D=10*\\log_{10}\\left(\\frac{{10}^{\\left(-2\\right)}}{{10}^{\\left(-12\\right)}}\\right)$$",
+            "$$D=10*\\log_{10}\\left(\\frac{{10}^{\\left(-12\\right)}}{{10}^{\\left(-2\\right)}}\\right)$$",
+            "$${10}^{\\left(-12\\right)}=10*\\log_{10}\\left(\\frac{D}{{10}^{\\left(-12\\right)}}\\right)$$",
+            "$${10}^{\\left(-2\\right)}=10*\\log_{10}\\left(\\frac{{10}^{\\left(-12\\right)}}{D}\\right)$$"
+        ]
     },
     {
         "id": "af4e405log21a-h3",
@@ -34,8 +40,14 @@
             "af4e405log21a-h2"
         ],
         "title": "Simplify the Logarithm",
-        "text": "We see log{10**(-2)/10**(-12)}. We can simplify the expression insid ethe logarithm, noting that $$\\frac{x^a}{x^b}=x^{a-b}$$. What is $$\\frac{{10}^{negneg}\\left(2\\right)}}{{10}^{\\operatorname{\\left(-12\\right)}}$$ simplified?",
-        "variabilization": {}
+        "text": "We see log{10**(-2)/10**(-12)}. We can simplify the expression insid ethe logarithm, noting that $$\\frac{x^a}{x^b}=x^{a-b}$$. What is $$\\frac{{10}^{\\left(-2\\right)}}{{10}^{\\left(-12\\right)}}$$ simplified?",
+        "variabilization": {},
+        "choices": [
+            "$${10}^{10}$$",
+            "$${10}^{\\left(-10\\right)}$$",
+            "$${10}^{\\left(-14\\right)}$$",
+            "$${10}^{14}$$"
+        ]
     },
     {
         "id": "af4e405log21a-h4",
@@ -63,7 +75,11 @@
                 "dependencies": [],
                 "title": "Convert to Exponential Form",
                 "text": "We know that we're trying to solve $$x=\\log_{10}\\left({10}^{10}\\right)$$. Rewrite this expression first into exponential form.",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$${10}^{10}={10}^x$$",
+                    "$${10}^{10}=x^{10}$$"
+                ]
             },
             {
                 "id": "af4e405log21a-h4-s2",

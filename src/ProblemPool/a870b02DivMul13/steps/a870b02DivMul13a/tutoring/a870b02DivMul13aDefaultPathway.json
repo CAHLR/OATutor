@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{\\frac{8}{15}}{\\left(-\\frac{4}{5}\\right)}=\\frac{negneg}\\left(\\frac{4}{5}\\right) x}{\\operatorname{\\left(-\\frac{4}{5}\\right)}$$"
+            "$$\\frac{\\frac{8}{15}}{\\left(-\\frac{4}{5}\\right)}=\\frac{\\left(-\\frac{4}{5}\\right) x}{\\left(-\\frac{4}{5}\\right)}$$"
         ],
         "dependencies": [
             "a870b02DivMul13a-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether $$\\frac{8}{15}$$ equals $$-\\left(\\frac{4}{5}\\right) \\left(-\\frac{2}{3}\\right)$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

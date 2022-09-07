@@ -40,7 +40,12 @@
         ],
         "title": "Replace f(x) with y",
         "text": "What does the equation look like after replacing f(x) with y?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$y={\\left(x-2\\right)}^2-3$$",
+            "$$f(x)={\\left(x-2\\right)}^2-3$$",
+            "$$x={\\left(y-2\\right)}^2-3$$"
+        ]
     },
     {
         "id": "a8ffef9inverses4a-h5",
@@ -55,7 +60,12 @@
         ],
         "title": "Interchange x and y",
         "text": "What does the equation look like after interchanging x and y.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$y={\\left(x-2\\right)}^2-3$$",
+            "$$f(x)={\\left(x-2\\right)}^2-3$$",
+            "$$x={\\left(y-2\\right)}^2-3$$"
+        ]
     },
     {
         "id": "a8ffef9inverses4a-h6",
@@ -130,6 +140,10 @@
         ],
         "title": "Domain",
         "text": "Which of the inverse would let us satisfy the initial domain of $$x \\geq 2$$, i.e. for all x in the domain of $$f^{-1\\left(x\\right)}$$, $$f^{-1\\left(x\\right)} \\geq 2$$? Note that $$\\sqrt{x}$$ is always greater than or equal to 0.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$f^{-1\\left(x\\right)}=2+\\sqrt{x+3}$$",
+            "$$f^{-1\\left(x\\right)}=2-\\sqrt{x+3}$$"
+        ]
     }
 ]

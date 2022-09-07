@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$negneg}\\left(v\\right) \\operatorname{\\left(-1\\right)=negneg}\\left(72\\right) \\operatorname{\\left(-1\\right)$$"
+            "$$\\left(-v\\right) \\left(-1\\right)=\\left(-72\\right) \\left(-1\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul16l-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether -(72) equals -72.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]
