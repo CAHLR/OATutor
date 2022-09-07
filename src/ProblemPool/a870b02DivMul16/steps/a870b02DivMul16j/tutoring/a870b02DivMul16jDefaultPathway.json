@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{m}{negneg}\\left(12\\right)} \\operatorname{\\left(-12\\right)=45\\left(-12\\right)$$"
+            "$$\\frac{m}{\\left(-12\\right)} \\left(-12\\right)=45\\left(-12\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul16j-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether $$\\frac{-540}{\\left(-12\\right)}$$ equals 45.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

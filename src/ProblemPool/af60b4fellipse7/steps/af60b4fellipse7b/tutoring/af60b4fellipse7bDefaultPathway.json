@@ -22,7 +22,11 @@
         ],
         "title": "Center of Ellipse",
         "text": "Given the format of the standard equation reveals the value of h and k, what are the coordinates for the center of the ellipse?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(5,-2)",
+            "(-2,5)"
+        ]
     },
     {
         "id": "af60b4fellipse7b-h4",
@@ -37,7 +41,11 @@
         ],
         "title": "Vertices of Ellipse",
         "text": "Given we know the value of a and the center coordinates, what are the coordinates for the vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(5~sqrt(9),-2)",
+            "(-2,5~sqrt(9))"
+        ]
     },
     {
         "id": "af60b4fellipse7b-h5",
@@ -45,14 +53,18 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$5-2\\pm\\sqrt{4}$$"
+            "$$5-2\\pm \\sqrt{4}$$"
         ],
         "dependencies": [
             "af60b4fellipse7b-h4"
         ],
         "title": "Co-vertices of Ellipse",
         "text": "Given we know the value of b and the center coordinates, what are the coordinates for the vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$5-2\\pm \\sqrt{4}$$",
+            "(2~sqrt(4),5)"
+        ]
     },
     {
         "id": "af60b4fellipse7b-h6",
@@ -60,13 +72,17 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$5-2\\pm\\sqrt{4}$$"
+            "$$5-2\\pm \\sqrt{4}$$"
         ],
         "dependencies": [
             "af60b4fellipse7b-h5"
         ],
         "title": "Foci of Ellipse",
         "text": "Using the equation $$c^2=a^2-b^2$$ solve for c and obtain the coordinates of the foci",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$5-2\\pm \\sqrt{4}$$",
+            "(2~sqrt(4),5)"
+        ]
     }
 ]

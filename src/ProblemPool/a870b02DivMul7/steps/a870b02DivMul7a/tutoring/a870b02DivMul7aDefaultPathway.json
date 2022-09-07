@@ -23,7 +23,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{-n}{\\left(-1\\right)}=\\frac{negneg}\\left(9\\right)}{\\operatorname{\\left(-1\\right)}$$"
+            "$$\\frac{-n}{\\left(-1\\right)}=\\frac{\\left(-9\\right)}{\\left(-1\\right)}$$"
         ],
         "dependencies": [
             "a870b02DivMul7a-h2"
@@ -70,6 +70,10 @@
         ],
         "title": "Verification",
         "text": "Check whether -(-9) equals 9.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

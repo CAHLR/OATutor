@@ -30,7 +30,12 @@
         ],
         "title": "Center of Ellipse",
         "text": "Given the format of the standard equation reveals the value of h and k, what are the coordinates for the center of the ellipse?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(-2,5)",
+            "(-1,5)",
+            "(-3,5)"
+        ]
     },
     {
         "id": "af60b4fellipse6a-h4",
@@ -45,7 +50,12 @@
         ],
         "title": "Vertices of Ellipse",
         "text": "Given we know the value of a and the center coordinates, what are the coordinates for the vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(-2,5~sqrt(9))",
+            "(-1,5~sqrt(9))",
+            "(-3,5~sqrt(9))"
+        ]
     },
     {
         "id": "af60b4fellipse6a-h5",
@@ -53,14 +63,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\left(-2\\pm\\sqrt{4}, 5\\right)$$"
+            "$$\\left(-2\\pm \\sqrt{4}, 5\\right)$$"
         ],
         "dependencies": [
             "af60b4fellipse6a-h4"
         ],
         "title": "Co-vertices of Ellipse",
         "text": "Given we know the value of b and the center coordinates, what are the coordinates for the vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$\\left(-1\\pm \\sqrt{4}, 5\\right)$$",
+            "$$\\left(-2\\pm \\sqrt{4}, 5\\right)$$",
+            "$$\\left(-3\\pm \\sqrt{4}, 5\\right)$$"
+        ]
     },
     {
         "id": "af60b4fellipse6a-h6",
@@ -75,6 +90,11 @@
         ],
         "title": "Foci of Ellipse",
         "text": "Using the equation $$c^2=a^2-b^2$$ solve for c and obtain the coordinates of the foci",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(-1,5~sqrt(5))",
+            "(-2,5~sqrt(5))",
+            "(-3,5~sqrt(5))"
+        ]
     }
 ]

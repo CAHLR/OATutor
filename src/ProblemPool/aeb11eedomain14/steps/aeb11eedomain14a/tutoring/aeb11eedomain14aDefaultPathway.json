@@ -10,7 +10,11 @@
         "dependencies": [],
         "title": "Restrictions",
         "text": "Are there any restrictions on the values we can subsitute for x?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
     },
     {
         "id": "aeb11eedomain14a-h2",
@@ -25,6 +29,12 @@
         ],
         "title": "Domain",
         "text": "If there are no restrictions, then what is the domain?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$x \\geq 0$$",
+            "$$x<0$$",
+            "$$x<5$$ and $$x>5$$",
+            "all real numbers"
+        ]
     }
 ]

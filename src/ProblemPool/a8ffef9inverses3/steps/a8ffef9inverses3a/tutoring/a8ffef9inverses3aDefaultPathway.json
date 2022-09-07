@@ -30,7 +30,12 @@
         ],
         "title": "Replace f(x) with y",
         "text": "What does the equation look like after replacing f(x) with y?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$y={\\left(x-4\\right)}^2$$",
+            "$$x={\\left(y-4\\right)}^2$$",
+            "$$f(x)={\\left(x-4\\right)}^2$$"
+        ]
     },
     {
         "id": "a8ffef9inverses3a-h4",
@@ -45,7 +50,12 @@
         ],
         "title": "Interchange x and y",
         "text": "What does the equation look like after interchanging x and y.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$y={\\left(x-4\\right)}^2$$",
+            "$$x={\\left(y-4\\right)}^2$$",
+            "$$f(x)={\\left(x-4\\right)}^2$$"
+        ]
     },
     {
         "id": "a8ffef9inverses3a-h5",
@@ -90,7 +100,13 @@
         ],
         "title": "Rename the function $$f^{-1\\left(x\\right)}$$",
         "text": "Replace the y with $$f^{-1\\left(x\\right)}$$. What does the equation look like now?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "f**-1(x)=4+sqrt(x),f**-1(x)=4-sqrt(x)",
+            "y=4+sqrt(x),y=4-sqrt(x)",
+            "$$f^{-1\\left(x\\right)}=4+\\sqrt{x}$$",
+            "$$f^{-1\\left(x\\right)}=4-\\sqrt{x}$$"
+        ]
     },
     {
         "id": "a8ffef9inverses3a-h9",
@@ -115,6 +131,10 @@
         ],
         "title": "Domain",
         "text": "Which of the inverse would let us satisfy the initial domain of $$x \\geq 4$$, i.e. for all x in the domain of $$f^{-1\\left(x\\right)}$$, $$f^{-1\\left(x\\right)} \\geq 4$$? Note that $$\\sqrt{x}$$ is always greater than or equal to 0.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$f^{-1\\left(x\\right)}=4+\\sqrt{x}$$",
+            "$$f^{-1\\left(x\\right)}=4-\\sqrt{x}$$"
+        ]
     }
 ]

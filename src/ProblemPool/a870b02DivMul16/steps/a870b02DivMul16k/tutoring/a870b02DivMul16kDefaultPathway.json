@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$negneg}\\left(y\\right) \\operatorname{\\left(-1\\right)=6\\left(-1\\right)$$"
+            "$$\\left(-y\\right) \\left(-1\\right)=6\\left(-1\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul16k-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether -(-6) equals 6.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

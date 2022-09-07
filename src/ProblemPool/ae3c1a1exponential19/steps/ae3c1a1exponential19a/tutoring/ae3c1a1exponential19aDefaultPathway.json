@@ -20,7 +20,11 @@
         ],
         "title": "Model",
         "text": "What type of model is this?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "Continuous Growth",
+            "Continuous Decay"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h3",
@@ -35,7 +39,11 @@
         ],
         "title": "Defining the Exponential Model",
         "text": "Identify the terms of the model, $$A(t)=a e^{r t}$$, that are given and the terms that you would have to find. Which terms are not given?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "Continuous growth rate per unit time, r",
+            "initial value, a"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h4",
@@ -60,7 +68,12 @@
         ],
         "title": "Continuous Growth Rate",
         "text": "Substitute all known terms (a - initial values, t - elapsed time, A(t) - model's estimate) provided in the question into the exponential decay model, $$A(t)=a e^{r t}$$ and find r, the continuous growth rate. What is the equation after substituting the values in?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "$$50=100e^{35r}$$",
+            "$$100=50e^r$$",
+            "$$50=a e^{35r}$$"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h6",

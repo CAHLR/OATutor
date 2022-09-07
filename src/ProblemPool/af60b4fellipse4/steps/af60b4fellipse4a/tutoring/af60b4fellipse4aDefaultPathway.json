@@ -30,7 +30,13 @@
         ],
         "title": "Center of Ellipse",
         "text": "Where is the center of the ellipse?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(0,0)",
+            "(1,1)",
+            "(2,2)",
+            "(3,3)"
+        ]
     },
     {
         "id": "af60b4fellipse4a-h4",
@@ -45,7 +51,13 @@
         ],
         "title": "Vertices of Ellipse",
         "text": "Given the value of a is known, what are the coordinates for the vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(0,4) and (0,-4)",
+            "(0,5) and (0,-5)",
+            "(0,6) and (0,-6)",
+            "(0,7) and (0,-7)"
+        ]
     },
     {
         "id": "af60b4fellipse4a-h5",
@@ -60,7 +72,12 @@
         ],
         "title": "Co-vertices of Ellipse",
         "text": "Given the value of b is known, what are the coordinates for the co-vertices?",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(3,0) and (-3,0)",
+            "(0,4) and (0,-4)",
+            "(0,5) and (0,-5)"
+        ]
     },
     {
         "id": "af60b4fellipse4a-h6",
@@ -75,6 +92,11 @@
         ],
         "title": "Foci of Ellipse",
         "text": "Using the equation $$c^2=a^2-b^2$$, solve for c and obtain the coordinates of the foci.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "(3,0) and (-3,0)",
+            "(0,4) and (0,-4)",
+            "(0,5) and (0,-5)"
+        ]
     }
 ]

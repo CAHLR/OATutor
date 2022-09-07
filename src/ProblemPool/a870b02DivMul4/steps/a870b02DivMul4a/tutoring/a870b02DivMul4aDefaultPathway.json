@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{y}{negneg}\\left(7\\right)} \\operatorname{\\left(-7\\right)=negneg}\\left(14\\right) \\operatorname{\\left(-7\\right)$$"
+            "$$\\frac{y}{\\left(-7\\right)} \\left(-7\\right)=\\left(-14\\right) \\left(-7\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul4a-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether $$\\frac{98}{\\left(-7\\right)}$$ equals -2.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]
