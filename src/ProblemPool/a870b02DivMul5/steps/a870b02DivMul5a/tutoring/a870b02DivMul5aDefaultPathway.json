@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{a}{negneg}\\left(7\\right)} \\operatorname{\\left(-7\\right)=negneg}\\left(42\\right) \\operatorname{\\left(-7\\right)$$"
+            "$$\\frac{a}{\\left(-7\\right)} \\left(-7\\right)=\\left(-42\\right) \\left(-7\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul5a-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether $$\\frac{294}{\\left(-7\\right)}$$ equals 42.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

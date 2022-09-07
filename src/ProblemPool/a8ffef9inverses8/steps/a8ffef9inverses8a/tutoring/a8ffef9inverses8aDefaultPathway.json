@@ -20,7 +20,12 @@
         ],
         "title": "Change of Sign",
         "text": "Where does the equation change sign? They usually occur around zeros and asymptotes, for e.g. consider (x-1), $$x-1>0$$ at $$x=1.01$$, $$x-1<0$$ at $$x=0.99$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "-2,1,3",
+            "-2,3",
+            "1"
+        ]
     },
     {
         "id": "a8ffef9inverses8a-h3",
@@ -58,7 +63,12 @@
                 "dependencies": [],
                 "title": "Testing Values",
                 "text": "How many different range of values should we test? Recall that there are 3 change-of-sign values. Thus we would want to consider the intervals around them. Also note that the change-of-sign value itself could be in the domain if it yields a 0 because f(x) outputs a real value at $$\\sqrt{0}$$ and f(x) is one-to-one at this point.",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "(-inf,-2),[-2,1),(1,3),[3,inf)",
+                    "(-inf,-2),[-2,1),[1,3),[3,inf)",
+                    "(-inf,-2),[-2,3),[3,inf)"
+                ]
             }
         ]
     },
@@ -85,7 +95,11 @@
         ],
         "title": "Testing $$(-\\infty,-2)$$",
         "text": "Check if the equation, $$\\frac{\\left(x+2\\right) \\left(x-3\\right)}{x-1}$$, is positive or negative for values in this range. Substitute $$x=-3$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "positive",
+            "negative"
+        ]
     },
     {
         "id": "a8ffef9inverses8a-h7",
@@ -110,7 +124,11 @@
         ],
         "title": "Testing [-2,1)",
         "text": "Check if the equation, $$\\frac{\\left(x+2\\right) \\left(x-3\\right)}{x-1}$$, is positive or negative for values in this range. Substitute $$x=0$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "positive",
+            "negative"
+        ]
     },
     {
         "id": "a8ffef9inverses8a-h9",
@@ -135,7 +153,11 @@
         ],
         "title": "Testing (1,3)",
         "text": "Check if the equation, $$\\frac{\\left(x+2\\right) \\left(x-3\\right)}{x-1}$$, is positive or negative for values in this range. Substitute $$x=2$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "positive",
+            "negative"
+        ]
     },
     {
         "id": "a8ffef9inverses8a-h11",
@@ -160,7 +182,11 @@
         ],
         "title": "Testing $$[3,\\infty)$$",
         "text": "Check if the equation, $$\\frac{\\left(x+2\\right) \\left(x-3\\right)}{x-1}$$, is positive or negative for values in this range. Substitute $$x=4$$.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "positive",
+            "negative"
+        ]
     },
     {
         "id": "a8ffef9inverses8a-h13",

@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{b}{negneg}\\left(6\\right)} \\operatorname{\\left(-6\\right)=negneg}\\left(24\\right) \\operatorname{\\left(-6\\right)$$"
+            "$$\\frac{b}{\\left(-6\\right)} \\left(-6\\right)=\\left(-24\\right) \\left(-6\\right)$$"
         ],
         "dependencies": [
             "a870b02DivMul6a-h1"
@@ -60,6 +60,10 @@
         ],
         "title": "Verification",
         "text": "Check whether $$\\frac{144}{\\left(-6\\right)}$$ equals -24.",
-        "variabilization": {}
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

@@ -33,7 +33,13 @@
                 "dependencies": [],
                 "title": "Prime Factorization of 10",
                 "text": "What is the prime factorization of 10?",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$$2\\times5$$",
+                    "$$2\\times6$$",
+                    "$$3\\times5$$",
+                    "$$3\\times4$$"
+                ]
             },
             {
                 "id": "a5d54dagcf11a-h2-s2",
@@ -46,7 +52,13 @@
                 "dependencies": [],
                 "title": "Prime Factorization of 12",
                 "text": "What is the prime factorization of 12?",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$$2\\times2\\times3$$",
+                    "$$6\\times3$$",
+                    "$$2\\times2\\times4$$",
+                    "$$2\\times3\\times3$$"
+                ]
             },
             {
                 "id": "a5d54dagcf11a-h2-s3",
@@ -85,6 +97,12 @@
         "title": "GCF for Variables",
         "text": "What is the greatest common factor between $$p^3 q$$ and $$p q^2$$?",
         "variabilization": {},
+        "choices": [
+            "$$p q$$",
+            "$$p q^2$$",
+            "$$p^3 q$$",
+            "$$p^2 q^2$$"
+        ],
         "subHints": [
             {
                 "id": "a5d54dagcf11a-h4-s4",
@@ -97,7 +115,13 @@
                 "dependencies": [],
                 "title": "Expand $$p^3 q$$",
                 "text": "How can we rewrite (\\\"factorize\\\") $$p^3 q$$?",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$$p p p q$$",
+                    "$$3p q$$",
+                    "$$p q q q$$",
+                    "$$p q$$"
+                ]
             },
             {
                 "id": "a5d54dagcf11a-h4-s5",
@@ -110,7 +134,13 @@
                 "dependencies": [],
                 "title": "Expand $$p q^2$$",
                 "text": "How can we rewrite (\\\"factorize\\\") $$p q^2$$?",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$$p q q$$",
+                    "$$2p q$$",
+                    "$$p p q$$",
+                    "$$p p q q$$"
+                ]
             },
             {
                 "id": "a5d54dagcf11a-h4-s6",
@@ -123,7 +153,13 @@
                 "dependencies": [],
                 "title": "Common Factor",
                 "text": "What is the common factor between $$p p p q$$ and $$p q q$$?",
-                "variabilization": {}
+                "variabilization": {},
+                "choices": [
+                    "$$p q$$",
+                    "$$p p p q$$",
+                    "$$p q q$$",
+                    "$$p p q q$$"
+                ]
             }
         ]
     },

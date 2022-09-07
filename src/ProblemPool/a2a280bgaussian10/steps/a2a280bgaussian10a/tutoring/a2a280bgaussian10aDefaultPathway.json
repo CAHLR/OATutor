@@ -21,6 +21,11 @@
         "title": "Augumented Matrix",
         "text": "How do you write the system as an augumented matrix?",
         "variabilization": {},
+        "choices": [
+            "$$\\begin{bmatrix} -1 & -2 & 1 & -1 \\\\ 2 & 3 & 0 & 2 \\\\ 0 & 1 & -2 & 0 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 1 & 2 & 1 & 1 \\\\ -2 & 3 & 0 & 2 \\\\ 0 & 1 & -2 & 0 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} -1 & -2 & 1 & -1 \\\\ 2 & 3 & 0 & 2 \\\\ 4 & 1 & -2 & 1 \\end{bmatrix}$$"
+        ],
         "subHints": [
             {
                 "id": "a2a280bgaussian10a-h2-s1",
@@ -81,6 +86,12 @@
         "title": "Solve",
         "text": "Solve for y in terms of z. What does y equal?",
         "variabilization": {},
+        "choices": [
+            "$$y=2z$$",
+            "$$y=z$$",
+            "$$y=4z$$",
+            "None of the above"
+        ],
         "subHints": [
             {
                 "id": "a2a280bgaussian10a-h6-s1",
@@ -106,6 +117,12 @@
         "title": "Solve",
         "text": "Now, solve for z in terms of x by plugging in $$y=2z$$ into the first equation. What does z equal?",
         "variabilization": {},
+        "choices": [
+            "z=(1-x)/3,(1-x)/3",
+            "$$z=\\frac{1-x}{3}$$",
+            "$$z=1-x$$",
+            "No Solution"
+        ],
         "subHints": [
             {
                 "id": "a2a280bgaussian10a-h7-s1",
@@ -131,6 +148,11 @@
         "title": "Solve",
         "text": "Finally, solve for y. Plug z into the second equation to solve it for y. What does equal in terms of x?",
         "variabilization": {},
+        "choices": [
+            "$$y=\\frac{2-2x}{9}$$",
+            "$$y=\\frac{2-2x}{3}$$",
+            "No Solution"
+        ],
         "subHints": [
             {
                 "id": "a2a280bgaussian10a-h8-s1",
