@@ -30,7 +30,7 @@
     "universal-cookie": "~4.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=3001 GENERATE_SOURCEMAP=false react-scripts start",
     "prestart": "node src/tools/generateFlatProblemPool.js",
     "build": "react-scripts build",
     "prebuild": "node src/tools/generateFlatProblemPool.js",
@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@types/react-resizable": "~1.7.4",
+    "cross-env": "^7.0.3",
     "gh-pages": "~2.2.0"
   },
   "homepage": "place-holder"
