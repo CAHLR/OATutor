@@ -1,1 +1,0 @@
-import hints from "./ae01ce3systemMat14b-index.js"; const step = {id: "ae01ce3systemMat14b", stepAnswer: ["$$\\begin{bmatrix} 16 & -24 & -12 \\\\ 3 & 2 & 1 \\end{bmatrix}$$"], problemType: "TextBox", stepTitle: "Multiply row 1 by 4. Perform this on the original matrix.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

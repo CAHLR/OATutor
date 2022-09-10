@@ -1,1 +1,0 @@
-var hints = [{id: "ac98d98matrices12a-h1", type: "hint", dependencies: [], title: "We multiply row 3 by -2 and add to row 1, as shown in the image:", text: "\n##figure1.gif##", variabilization: {}}, ]; export {hints};

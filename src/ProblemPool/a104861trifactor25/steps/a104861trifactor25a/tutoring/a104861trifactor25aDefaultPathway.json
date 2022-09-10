@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a104861trifactor25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square",
+        "text": "This equation is a perfect square",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h1"
+        ],
+        "title": "Common Factor",
+        "text": "Take out the 10 to make $$\\operatorname{10}\\left(k^2+8k+16\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h2"
+        ],
+        "title": "Factors",
+        "text": "In this equation $$z\\left({ax}^2+bx+c\\right)$$ the square root of a and c are 1 and 4 respectively.",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor25a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h3"
+        ],
+        "title": "Plug in",
+        "text": "Plug into the perfect square simplified form $${z\\left(nx+m\\right)}^2$$ where n is the square root of a and m is the square root of c",
+        "variabilization": {}
+    }
+]

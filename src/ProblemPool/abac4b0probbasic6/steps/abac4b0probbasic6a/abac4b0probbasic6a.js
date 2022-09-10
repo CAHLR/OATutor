@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic6a-index.js"; const step = {id: "abac4b0probbasic6a", stepAnswer: ["$$\\frac{1}{3}$$"], problemType: "TextBox", stepTitle: "What is the probability that we select a yellow M&M given that the next M&M we choose will be either blue, yellow, or red?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

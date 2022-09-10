@@ -1,1 +1,0 @@
-import hints from "./afc244aSolveapp8a-index.js"; const step = {id: "afc244aSolveapp8a", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "$$\\frac{n+10}{4}=\\frac{40-n}{6}$$", stepBody: "Solve for n.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

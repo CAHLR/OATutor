@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology23a-index.js"; const step = {id: "a916a3bterminology23a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "What is the probability of rolling an even number of dots with a fair, six-sided die numbered one through six?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

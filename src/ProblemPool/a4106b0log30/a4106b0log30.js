@@ -1,1 +1,0 @@
-import steps from "./a4106b0log30-index.js"; const problem = {id: "a4106b0log30", title: "Using the Properties of Logorithms.", body: "Use the Properties of Logarithms to expand the following logarithm. Simplify, if possible.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.4[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

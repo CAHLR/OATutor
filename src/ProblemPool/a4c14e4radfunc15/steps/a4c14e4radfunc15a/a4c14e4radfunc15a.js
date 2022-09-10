@@ -1,1 +1,0 @@
-import hints from "./a4c14e4radfunc15a-index.js"; const step = {id: "a4c14e4radfunc15a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{6x-5}$$, find f(5).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

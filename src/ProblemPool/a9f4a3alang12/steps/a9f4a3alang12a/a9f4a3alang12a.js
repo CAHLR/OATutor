@@ -1,1 +1,0 @@
-import hints from "./a9f4a3alang12a-index.js"; const step = {id: "a9f4a3alang12a", stepAnswer: ["58"], problemType: "TextBox", stepTitle: "Simplify: $$4+6\\left(3+6\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

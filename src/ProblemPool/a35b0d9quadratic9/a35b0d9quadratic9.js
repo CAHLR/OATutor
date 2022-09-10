@@ -1,1 +1,0 @@
-import steps from "./a35b0d9quadratic9-index.js"; const problem = {id: "a35b0d9quadratic9", title: "Try It: Writing an Equation in General and Standard Form", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.1 Quadratic Functions", courseName: "Openstax: College Algebra"}; export { problem };

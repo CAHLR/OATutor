@@ -1,1 +1,0 @@
-import hints from "./a368ca5desc-stat11a-index.js"; const step = {id: "a368ca5desc-stat11a", stepAnswer: ["Maximum"], problemType: "MultipleChoice", stepTitle: "The largest quantity in a given dataset.", stepBody: "", choices: ["Maximum", "Minimum", "Mean", "Median", "IQR", "Quartile 1", "Quartile 3"], answerType: "string", hints: hints, variabilization: {}}; export {step};

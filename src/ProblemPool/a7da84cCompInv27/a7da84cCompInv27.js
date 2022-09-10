@@ -1,1 +1,0 @@
-import steps from "./a7da84cCompInv27-index.js"; const problem = {id: "a7da84cCompInv27", title: "Find (g°f)(x)", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org", lesson: "10.1[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

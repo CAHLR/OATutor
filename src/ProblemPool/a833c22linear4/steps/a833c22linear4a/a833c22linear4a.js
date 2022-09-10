@@ -1,1 +1,0 @@
-import hints from "./a833c22linear4a-index.js"; const step = {id: "a833c22linear4a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "$$\\frac{\\left(-x-35\\right)}{2}$$ $$=$$ y", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

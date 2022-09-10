@@ -1,1 +1,0 @@
-import hints from "./ac0e504factoring3a-index.js"; const step = {id: "ac0e504factoring3a", stepAnswer: ["$$\\left(7x+2\\right) \\left(7x-2\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$49x^2-4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

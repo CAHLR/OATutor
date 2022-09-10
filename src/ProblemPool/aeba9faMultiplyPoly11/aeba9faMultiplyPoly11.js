@@ -1,1 +1,0 @@
-import steps from "./aeba9faMultiplyPoly11-index.js"; const problem = {id: "aeba9faMultiplyPoly11", title: "Multiply a Polynomial by a Polynomial", body: "Multiply the following polynomials", steps: steps, variabilization: {}, oer: "Multiply Polynomials", lesson: "5.3 RW [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

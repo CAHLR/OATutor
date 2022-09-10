@@ -1,1 +1,0 @@
-import steps from "./ade9eadinequalities17-index.js"; const problem = {id: "ade9eadinequalities17", title: "Finding the Slope of a Line", body: "Analyze the line from the graph.\n##figure1.gif", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.2 Ph [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

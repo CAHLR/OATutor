@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a3b09a3binomseq7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equation",
+        "text": "Use the equation C(n,r)=(n!)/(r!(n-r)!) to solve",
+        "variabilization": {}
+    },
+    {
+        "id": "a3b09a3binomseq7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug In Values",
+        "text": "Plug in the values to the equation",
+        "variabilization": {}
+    },
+    {
+        "id": "a3b09a3binomseq7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.55E+25$$"
+        ],
+        "dependencies": [],
+        "title": "Solve For the Numerator",
+        "text": "What is 25!? (Write in the form $$1.22E+2$$ and round to the nearest hundredth)",
+        "variabilization": {}
+    },
+    {
+        "id": "a3b09a3binomseq7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "39916800"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq7a-h3"
+        ],
+        "title": "Solve For the Denominator: Part 1",
+        "text": "What is 11!?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3b09a3binomseq7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "87178291200"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq7a-h4"
+        ],
+        "title": "Solve For the Denominator: Part 2",
+        "text": "What is (25-11)!?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3b09a3binomseq7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4457400"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq7a-h5"
+        ],
+        "title": "Solve",
+        "text": "What is $$1.55E+\\frac{25}{39916800\\times87178291200}$$?",
+        "variabilization": {}
+    }
+]

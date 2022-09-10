@@ -1,0 +1,136 @@
+[
+    {
+        "id": "a6f9727real5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Parentheses",
+        "text": "The first step is to simplify the parentheses.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h1"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$5\\times3$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h1"
+        ],
+        "title": "Parentheses",
+        "text": "What is 6-3?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "16"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h2",
+            "a6f9727real5b-h3"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$4^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-13"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h4"
+        ],
+        "title": "Parentheses",
+        "text": "What is 3-16?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6f9727real5b-h5"
+        ],
+        "title": "Multiplication",
+        "text": "The next step is to simplify multiplication and division.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "105"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h6"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$7\\times15$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "26"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h7"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$\\left(-2\\right) \\left(-13\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h9",
+        "type": "hint",
+        "dependencies": [
+            "a6f9727real5b-h8"
+        ],
+        "title": "Addition",
+        "text": "The final step is to simplify addition and subtraction.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6f9727real5b-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "132"
+        ],
+        "dependencies": [
+            "a6f9727real5b-h9"
+        ],
+        "title": "Addition",
+        "text": "What is $$105+26+1$$?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring19a-index.js"; const step = {id: "a10e4c3factoring19a", stepAnswer: ["16(x-1)(x-1)"], problemType: "TextBox", stepTitle: "$$16x^2-32x+16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

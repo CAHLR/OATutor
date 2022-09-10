@@ -1,1 +1,0 @@
-import hints from "./ae8dd20divradexp9a-index.js"; const step = {id: "ae8dd20divradexp9a", stepAnswer: ["$$\\frac{9x^2}{y^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt[2]{162x^{10} y^2}}{\\sqrt[2]{2x^6 y^6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

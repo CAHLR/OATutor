@@ -1,1 +1,0 @@
-import steps from "./a287aafgraphineq26-index.js"; const problem = {id: "a287aafgraphineq26", title: "Solve a System of Linear Inequalities by Graphing", body: "Solve the system by graphing.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.7 KL [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

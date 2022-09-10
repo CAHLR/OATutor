@@ -1,1 +1,0 @@
-import hints from "./a368ca5desc-stat1a-index.js"; const step = {id: "a368ca5desc-stat1a", stepAnswer: ["Discrete"], problemType: "MultipleChoice", stepTitle: "The number of people in a family.", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

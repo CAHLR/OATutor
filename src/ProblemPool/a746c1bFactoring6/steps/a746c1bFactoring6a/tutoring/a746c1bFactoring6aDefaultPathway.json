@@ -1,0 +1,137 @@
+[
+    {
+        "id": "a746c1bFactoring6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Greatest Common Factor",
+        "text": "The greatest common factor amongst the three terms in the expression is 1. So we need to use other approaches.",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(2x\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h1"
+        ],
+        "title": "Perfect square",
+        "text": "Is the first term of the expression a perfect square? How do you rewrite $$4x^2$$ into perfect square?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(5y\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h1"
+        ],
+        "title": "Perfect square",
+        "text": "Is the last term of the expression a perfect square? How do you rewrite $$25y^2$$ into perfect square?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring6a-h3",
+            "a746c1bFactoring6a-h2"
+        ],
+        "title": "Formula",
+        "text": "We can rewrite the expression $$4x^2+20x y+25y^2={\\left(2x\\right)}^2+20x y+{\\left(5y\\right)}^2$$. Does it fit the pattern $$a^2+2a b+b^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h4"
+        ],
+        "title": "Finding x",
+        "text": "If $$4x^2+20x y+25y^2={\\left(2x\\right)}^2+20x y+{\\left(5y\\right)}^2$$ fits the pattern $$a^2+2a b+b^2$$, then what is a?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5y$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h4"
+        ],
+        "title": "Finding y",
+        "text": "If $$4x^2+20x y+25y^2={\\left(2x\\right)}^2+20x y+{\\left(5y\\right)}^2$$ fits the pattern $$a^2+2a b+b^2$$, then what is b?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20x y$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h5",
+            "a746c1bFactoring6a-h6"
+        ],
+        "title": "Finding 2xy",
+        "text": "If $$a=2x$$ and $$b=5y$$, then what is $$2a b$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring6a-h7"
+        ],
+        "title": "Find the pattern",
+        "text": "If we have $$a=2x$$, $$b=5y$$, and $$2a b=20x y$$, then $$a^2+2a b+b^2=4x^2+20x y+25y^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a746c1bFactoring6a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(2x+5b\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring6a-h8"
+        ],
+        "title": "Factor first term",
+        "text": "Given that $$a^2+2a b+b^2=2\\left(a+b\\right)$$, how do we factor $$4x^2+20x y+25y^2$$?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a746c1bFactoring6a-h9-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$${\\left(2x+5b\\right)}^2$$"
+                ],
+                "dependencies": [],
+                "title": "Rewrite",
+                "text": "Based on the above steps, we observe that if $$a=2x$$ and $$b=5y$$, then $$4x^2+20x y+25y^2$$ fits the pattern $$a^2+2a b+b^2$$. Given that $$a^2+2a b+b^2=2\\left(a+b\\right)$$, how do we rewrite $$4x^2+20x y+25y^2$$ as a perfect square?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

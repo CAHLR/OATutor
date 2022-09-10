@@ -1,1 +1,0 @@
-import hints from "./a8114b9stat7a-index.js"; const step = {id: "a8114b9stat7a", stepAnswer: ["Quantitative Continuous"], problemType: "MultipleChoice", stepTitle: "The weights of sumo wrestlers", stepBody: "", choices: ["Quantitative Discrete", "Qualitative", "Quantitative Continuous"], answerType: "string", hints: hints, variabilization: {}}; export {step};

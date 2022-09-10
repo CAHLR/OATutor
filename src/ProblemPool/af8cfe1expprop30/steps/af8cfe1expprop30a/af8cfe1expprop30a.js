@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop30a-index.js"; const step = {id: "af8cfe1expprop30a", stepAnswer: ["$$y^{3x}$$"], problemType: "TextBox", stepTitle: "$${\\left(y^3\\right)}^x$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

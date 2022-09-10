@@ -1,1 +1,0 @@
-import hints from "./ae3d458simproots18a-index.js"; const step = {id: "ae3d458simproots18a", stepAnswer: ["$$|x|$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{x^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

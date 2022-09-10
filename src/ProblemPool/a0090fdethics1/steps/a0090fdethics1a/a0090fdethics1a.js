@@ -1,1 +1,0 @@
-import hints from "./a0090fdethics1a-index.js"; const step = {id: "a0090fdethics1a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Is the following a good, ethical study?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

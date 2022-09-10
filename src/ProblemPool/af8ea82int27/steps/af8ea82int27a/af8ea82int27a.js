@@ -1,1 +1,0 @@
-import hints from "./af8ea82int27a-index.js"; const step = {id: "af8ea82int27a", stepAnswer: ["23"], problemType: "TextBox", stepTitle: "Evaluate $$4x^2-2xy+3y^2$$ when $$x=2$$, $$y=1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

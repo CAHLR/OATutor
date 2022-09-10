@@ -1,1 +1,0 @@
-var hints = [{id: "a0351f0theparabola22a-h1", type: "hint", dependencies: [], title: "Finding The Characteristics", text: "Since this parabola is already in standard form, we know that the vertex is (-4,-4) and $$p=4$$. This means that the focus is (-4,0) and that the directrix is $$x=-8$$", variabilization: {}}, ]; export {hints};

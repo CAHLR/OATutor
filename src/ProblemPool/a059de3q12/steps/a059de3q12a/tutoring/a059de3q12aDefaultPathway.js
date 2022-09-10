@@ -1,1 +1,0 @@
-var hints = [{id: "a059de3q12a-h1", type: "hint", dependencies: [], title: "Looking at the distribution.", text: "First, look at where most of the data is concentrated. Here it seems as if the data is pulled out to the right so it is Skewed Right.", variabilization: {}}, ]; export {hints};

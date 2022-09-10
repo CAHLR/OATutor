@@ -1,1 +1,0 @@
-import hints from "./aabf119factor18a-index.js"; const step = {id: "aabf119factor18a", stepAnswer: ["$$\\left(2p-7\\right) \\left(p+1\\right)$$"], problemType: "TextBox", stepTitle: "$$2p^2$$ - 5p - 7", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

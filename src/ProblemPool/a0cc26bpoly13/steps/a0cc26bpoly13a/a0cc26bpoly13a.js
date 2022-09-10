@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly13a-index.js"; const step = {id: "a0cc26bpoly13a", stepAnswer: ["$$6x^2+21xy-29x-7y+9$$"], problemType: "TextBox", stepTitle: "$$\\left(3x-1\\right) \\left(2x+7y-9\\right)$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

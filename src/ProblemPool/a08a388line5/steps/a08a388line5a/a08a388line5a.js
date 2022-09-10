@@ -1,1 +1,0 @@
-import hints from "./a08a388line5a-index.js"; const step = {id: "a08a388line5a", stepAnswer: ["$$y=-x+3$$"], problemType: "MultipleChoice", stepTitle: "Slope -1 and y-intercept (0,3)", stepBody: "", choices: ["$$y=x+3$$", "$$y=3x-1$$", "$$y=-x+3$$", "$$y=2x+1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

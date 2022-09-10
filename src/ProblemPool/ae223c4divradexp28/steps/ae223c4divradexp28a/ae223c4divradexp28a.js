@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp28a-index.js"; const step = {id: "ae223c4divradexp28a", stepAnswer: ["(4+sqrt6))/5"], problemType: "TextBox", stepTitle: "$$\\frac{2}{4}-\\sqrt{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

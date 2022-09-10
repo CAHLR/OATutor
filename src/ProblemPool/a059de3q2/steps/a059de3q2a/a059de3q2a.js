@@ -1,1 +1,0 @@
-import hints from "./a059de3q2a-index.js"; const step = {id: "a059de3q2a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "Calculate the median for Terry.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

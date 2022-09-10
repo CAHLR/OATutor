@@ -1,1 +1,0 @@
-import hints from "./aae6efeSolving18a-index.js"; const step = {id: "aae6efeSolving18a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "The sum of twice a number and six is 14. Find the number.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

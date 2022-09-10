@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial4a-index.js"; const step = {id: "af126e3Polynomial4a", stepAnswer: ["$$21q^2$$"], problemType: "TextBox", stepTitle: "a) $$12q^2+9q^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

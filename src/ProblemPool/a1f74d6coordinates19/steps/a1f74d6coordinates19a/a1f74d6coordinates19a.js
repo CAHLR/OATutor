@@ -1,1 +1,0 @@
-import hints from "./a1f74d6coordinates19a-index.js"; const step = {id: "a1f74d6coordinates19a", stepAnswer: ["(2,0) and (-6,-4)"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{x}{2}-1$$", stepBody: "", choices: ["(2,0) and (-6,-4)", "(-4,-1) and (2,0)", "(-6,-4) and (-4,1)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

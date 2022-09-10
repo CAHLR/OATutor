@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring10b-index.js"; const step = {id: "ab303f8factoring10b", stepAnswer: ["$$\\left(13x+11\\right) \\left(13x-11\\right)$$"], problemType: "TextBox", stepTitle: "Factor completely: $$169x^2-121$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac33fcaSolvingFormul6a-index.js"; const step = {id: "ac33fcaSolvingFormul6a", stepAnswer: ["$$b=\\frac{2A}{h}-B$$"], problemType: "TextBox", stepTitle: "$$A=\\frac{1}{2} h \\left(b+B\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

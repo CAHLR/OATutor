@@ -1,1 +1,0 @@
-var hints = [{id: "af23defint7a-h1", type: "hint", dependencies: [], title: "Subtract 28 from 44", text: "", variabilization: {}}, ]; export {hints};

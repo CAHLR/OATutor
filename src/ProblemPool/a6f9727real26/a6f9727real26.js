@@ -1,1 +1,0 @@
-import steps from "./a6f9727real26-index.js"; const problem = {id: "a6f9727real26", title: "Order of Operations", body: "Evaluate the following numerical expressions.", steps: steps, variabilization: {}, oer: "https://www.oercommons.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

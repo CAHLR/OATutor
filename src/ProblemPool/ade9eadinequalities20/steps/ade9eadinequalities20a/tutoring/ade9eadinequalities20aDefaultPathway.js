@@ -1,1 +1,0 @@
-var hints = [{id: "ade9eadinequalities20a-h1", type: "hint", dependencies: [], title: "Vertical Lines", text: "The slopes of vertical lines, $$x=a$$, are undefined.", variabilization: {}}, ]; export {hints};

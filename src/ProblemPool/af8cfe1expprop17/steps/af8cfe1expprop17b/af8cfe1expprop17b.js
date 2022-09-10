@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop17b-index.js"; const step = {id: "af8cfe1expprop17b", stepAnswer: ["$$8^{9x+3}$$"], problemType: "TextBox", stepTitle: "$$8^{9x} 8^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

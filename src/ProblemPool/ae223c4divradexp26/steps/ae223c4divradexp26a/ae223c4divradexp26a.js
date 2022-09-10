@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp26a-index.js"; const step = {id: "ae223c4divradexp26a", stepAnswer: ["5*(2+sqrt3))"], problemType: "TextBox", stepTitle: "$$\\frac{5}{2}-\\sqrt{3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

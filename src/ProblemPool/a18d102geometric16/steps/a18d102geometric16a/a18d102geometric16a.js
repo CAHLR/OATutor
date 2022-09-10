@@ -1,1 +1,0 @@
-import hints from "./a18d102geometric16a-index.js"; const step = {id: "a18d102geometric16a", stepAnswer: ["43046718"], problemType: "TextBox", stepTitle: "$$\\sum_{i=1}^{15} 2\\times3^i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

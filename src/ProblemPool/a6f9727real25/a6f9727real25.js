@@ -1,1 +1,0 @@
-import steps from "./a6f9727real25-index.js"; const problem = {id: "a6f9727real25", title: "Classifying Rational Numbers", body: "Classify each number as either rational or irrational.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.1 Real Numbers", courseName: "Openstax: College Algebra"}; export { problem };

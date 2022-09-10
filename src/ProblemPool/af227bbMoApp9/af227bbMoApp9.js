@@ -1,1 +1,0 @@
-import steps from "./af227bbMoApp9-index.js"; const problem = {id: "af227bbMoApp9", title: "Solving a Perimeter Problem", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.3 Models and Applications", courseName: "Openstax: College Algebra"}; export { problem };

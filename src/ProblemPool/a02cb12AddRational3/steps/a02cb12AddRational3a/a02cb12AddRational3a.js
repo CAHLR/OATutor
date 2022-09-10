@@ -1,1 +1,0 @@
-import hints from "./a02cb12AddRational3a-index.js"; const step = {id: "a02cb12AddRational3a", stepAnswer: ["$$x+3$$"], problemType: "TextBox", stepTitle: "$$\\frac{x^2+8x}{x+5}+\\frac{15}{x+5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

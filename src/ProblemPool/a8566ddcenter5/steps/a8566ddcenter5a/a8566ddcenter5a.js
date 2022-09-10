@@ -1,1 +1,0 @@
-import hints from "./a8566ddcenter5a-index.js"; const step = {id: "a8566ddcenter5a", stepAnswer: ["72"], problemType: "TextBox", stepTitle: "Find the mode.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

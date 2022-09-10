@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp25a-index.js"; const step = {id: "ae223c4divradexp25a", stepAnswer: ["$$\\frac{3\\sqrt[3]{16x^2}}{4} x$$"], problemType: "TextBox", stepTitle: "$$\\frac{3}{\\sqrt[3]{4x}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

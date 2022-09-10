@@ -1,1 +1,0 @@
-import steps from "./a8741a7log24-index.js"; const problem = {id: "a8741a7log24", title: "Convert to Logarithmic Form", body: "Convert the following exponential equations into logarithmic form.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "10.3[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./a141c09stat4a-index.js"; const step = {id: "a141c09stat4a", stepAnswer: ["the clients of the insurance companies"], problemType: "MultipleChoice", stepTitle: "What is the population?", stepBody: "", choices: ["the clients of the insurance companies", "a smaller group of the clients"], answerType: "string", hints: hints, variabilization: {}}; export {step};

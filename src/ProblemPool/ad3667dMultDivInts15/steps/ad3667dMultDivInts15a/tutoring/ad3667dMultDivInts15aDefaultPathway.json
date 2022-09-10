@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ad3667dMultDivInts15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate",
+        "text": "First, translate the phrase to an algebraic expression",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11-(-9)"
+        ],
+        "dependencies": [
+            "ad3667dMultDivInts15a-h1"
+        ],
+        "title": "Translate",
+        "text": "What is the algebraic representation of the phrase?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3667dMultDivInts15a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Next, simplify the algebraic expression that you get",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "20"
+        ],
+        "dependencies": [
+            "ad3667dMultDivInts15a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What is 11-(-9)?",
+        "variabilization": {}
+    }
+]

@@ -1,1 +1,0 @@
-import hints from "./a808aa5DiscreteD19a-index.js"; const step = {id: "a808aa5DiscreteD19a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "If our player rolls three dice, about how many games should it take for them to reach two points?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

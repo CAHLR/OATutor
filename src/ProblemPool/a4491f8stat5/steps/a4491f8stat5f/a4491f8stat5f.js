@@ -1,1 +1,0 @@
-import hints from "./a4491f8stat5f-index.js"; const step = {id: "a4491f8stat5f", stepAnswer: ["Yes, No"], problemType: "MultipleChoice", stepTitle: "What is the data?", stepBody: "", choices: ["$$X=The$$ number of couples who stay married", "Yes, No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

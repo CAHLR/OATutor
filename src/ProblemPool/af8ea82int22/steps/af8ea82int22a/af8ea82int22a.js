@@ -1,1 +1,0 @@
-import hints from "./af8ea82int22a-index.js"; const step = {id: "af8ea82int22a", stepAnswer: ["5"], problemType: "TextBox", stepTitle: "Simplify:", stepBody: "7-(-4-3)-9", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

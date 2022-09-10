@@ -1,1 +1,0 @@
-import hints from "./a4c14e4radfunc20a-index.js"; const step = {id: "a4c14e4radfunc20a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{5x-1}$$, find f(2).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

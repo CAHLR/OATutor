@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial2e-index.js"; const step = {id: "af126e3Polynomial2e", stepAnswer: ["10"], problemType: "TextBox", stepTitle: "e) $$-3x^6 y^3 z$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

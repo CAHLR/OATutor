@@ -1,1 +1,0 @@
-import hints from "./a66ce95Linear30a-index.js"; const step = {id: "a66ce95Linear30a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "$$0.1d+0.25\\left(d+5\\right)=4.05$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

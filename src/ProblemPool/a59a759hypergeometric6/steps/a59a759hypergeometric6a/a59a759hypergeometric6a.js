@@ -1,1 +1,0 @@
-import hints from "./a59a759hypergeometric6a-index.js"; const step = {id: "a59a759hypergeometric6a", stepAnswer: ["Without"], problemType: "MultipleChoice", stepTitle: "Are you choosing with or without replacement?", stepBody: "", choices: ["Without", "With"], answerType: "string", hints: hints, variabilization: {}}; export {step};

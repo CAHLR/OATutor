@@ -1,1 +1,0 @@
-import steps from "./ae21c87q20-index.js"; const problem = {id: "ae21c87q20", title: "Finding the greatest out of the mean, mode, median.", body: "Which is the greatest, the mean, the mode, or the median of the data set?", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.6", courseName: "!!Editor Sheet cf0669"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./ada10e6CompletingSqr1a-index.js"; const step = {id: "ada10e6CompletingSqr1a", stepAnswer: ["$${\\left(a+5\\right)}^2$$"], problemType: "TextBox", stepTitle: "$$a^2+10a$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

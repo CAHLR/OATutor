@@ -1,1 +1,0 @@
-import hints from "./a75d03cRecCord7a-index.js"; const step = {id: "a75d03cRecCord7a", stepAnswer: ["$$y=-\\left(\\frac{2}{3}\\right) x+\\frac{5}{3}$$"], problemType: "TextBox", stepTitle: "$$2x=5-3y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

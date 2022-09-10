@@ -1,1 +1,0 @@
-import hints from "./a512f5aexplog12a-index.js"; const step = {id: "a512f5aexplog12a", stepAnswer: ["ln(3)"], problemType: "TextBox", stepTitle: "$$e^{2x}-e^x-6=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

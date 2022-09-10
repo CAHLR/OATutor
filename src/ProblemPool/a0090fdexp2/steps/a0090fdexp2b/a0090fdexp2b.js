@@ -1,1 +1,0 @@
-import hints from "./a0090fdexp2b-index.js"; const step = {id: "a0090fdexp2b", stepAnswer: ["Time to complete maze"], problemType: "TextBox", stepTitle: "Describe the response variable", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

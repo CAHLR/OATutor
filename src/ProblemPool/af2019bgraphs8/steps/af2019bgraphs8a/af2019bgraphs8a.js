@@ -1,1 +1,0 @@
-import hints from "./af2019bgraphs8a-index.js"; const step = {id: "af2019bgraphs8a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find $$f{\\left(\\frac{\\pi}{2}\\right)}$$", stepBody: "##figure1.gif## ", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

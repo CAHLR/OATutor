@@ -1,1 +1,0 @@
-import hints from "./aa611ecdomain11a-index.js"; const step = {id: "aa611ecdomain11a", stepAnswer: ["{Khan Nguyen, Abigail Brown, Sumantha Mishal, Jose Hernandez}"], problemType: "TextBox", stepTitle: "For the mapping shown, find the domain.", stepBody: "##figure1.gif## ", answerType: "string", hints: hints, variabilization: {}}; export {step};

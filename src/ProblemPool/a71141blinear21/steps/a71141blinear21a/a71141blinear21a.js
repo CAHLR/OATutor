@@ -1,1 +1,0 @@
-import hints from "./a71141blinear21a-index.js"; const step = {id: "a71141blinear21a", stepAnswer: ["$$v \\geq -12$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$-8v \\leq 96$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

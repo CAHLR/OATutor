@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop20a-index.js"; const step = {id: "af8cfe1expprop20a", stepAnswer: ["$$m^{x+3}$$"], problemType: "TextBox", stepTitle: "$$m^x m^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

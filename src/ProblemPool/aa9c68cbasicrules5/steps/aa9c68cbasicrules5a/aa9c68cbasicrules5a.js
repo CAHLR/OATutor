@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules5a-index.js"; const step = {id: "aa9c68cbasicrules5a", stepAnswer: ["Yes"], problemType: "MultipleChoice", stepTitle: "Are being an advanced swimmer and an intermediate swimmer mutually exclusive?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

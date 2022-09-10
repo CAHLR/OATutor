@@ -1,1 +1,0 @@
-import hints from "./af126e3Polynomial2c-index.js"; const step = {id: "af126e3Polynomial2c", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "c) $$-3x^2 y-5xy+9{xy}^3$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

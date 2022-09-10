@@ -1,1 +1,0 @@
-import hints from "./aeba912Radicals21a-index.js"; const step = {id: "aeba912Radicals21a", stepAnswer: ["-3"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{-27}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

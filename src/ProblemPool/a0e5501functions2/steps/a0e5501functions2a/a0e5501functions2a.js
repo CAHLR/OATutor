@@ -1,1 +1,0 @@
-import hints from "./a0e5501functions2a-index.js"; const step = {id: "a0e5501functions2a", stepAnswer: ["-6"], problemType: "TextBox", stepTitle: "$$f(x)=-4x+2$$", stepBody: "What is f(2)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./afbeae7inequalities29a-index.js"; const step = {id: "afbeae7inequalities29a", stepAnswer: ["C"], problemType: "MultipleChoice", stepTitle: "$$y \\leq -3x$$", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

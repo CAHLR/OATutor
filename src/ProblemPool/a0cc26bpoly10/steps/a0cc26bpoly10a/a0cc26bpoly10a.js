@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly10a-index.js"; const step = {id: "a0cc26bpoly10a", stepAnswer: ["$$16x^2-8x+1$$"], problemType: "TextBox", stepTitle: "Expand $${\\left(4x-1\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

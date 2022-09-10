@@ -1,0 +1,35 @@
+[
+    {
+        "id": "afc244aSolveapp1a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "56"
+        ],
+        "dependencies": [],
+        "title": "Find LCD",
+        "text": "What is the least common denominator of $$\\frac{x}{56}$$ and $$\\frac{7}{8}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp1a-h1"
+        ],
+        "title": "Multiply LCD Both Sides",
+        "text": "By multiplying both sides by LCD, we get $$x=49$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp1a-h2"
+        ],
+        "title": "Final Answer",
+        "text": "From the above steps, we get $$x=49$$ as the final answer.",
+        "variabilization": {}
+    }
+]

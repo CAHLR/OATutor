@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a14ffbcmodeling3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find General Formula",
+        "text": "The first step is to identify what general formula can be used for inverse variation with a cube.",
+        "variabilization": {}
+    },
+    {
+        "id": "a14ffbcmodeling3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "200"
+        ],
+        "dependencies": [
+            "a14ffbcmodeling3a-h1"
+        ],
+        "title": "Solve for Constant",
+        "text": "Given $$y=25$$ and $$x=2$$, what is the value of constant k from the general formula?",
+        "variabilization": {}
+    },
+    {
+        "id": "a14ffbcmodeling3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a14ffbcmodeling3a-h2"
+        ],
+        "title": "Find Specific Formula",
+        "text": "Use the constant to write an equation that represents the relationship.",
+        "variabilization": {}
+    },
+    {
+        "id": "a14ffbcmodeling3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{25}{27}$$"
+        ],
+        "dependencies": [
+            "a14ffbcmodeling3a-h3"
+        ],
+        "title": "Using Subsitution",
+        "text": "What is y when $$x=6$$?",
+        "variabilization": {}
+    }
+]

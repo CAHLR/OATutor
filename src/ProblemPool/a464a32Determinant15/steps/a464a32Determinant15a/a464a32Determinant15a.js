@@ -1,1 +1,0 @@
-import hints from "./a464a32Determinant15a-index.js"; const step = {id: "a464a32Determinant15a", stepAnswer: ["inconsistent"], problemType: "MultipleChoice", stepTitle: "$$x=-3y+4$$ $$2x+6y=8$$", stepBody: "", choices: ["inconsistent", "dependent"], answerType: "string", hints: hints, variabilization: {}}; export {step};

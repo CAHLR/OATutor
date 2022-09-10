@@ -1,1 +1,0 @@
-import hints from "./aded0eclinear23a-index.js"; const step = {id: "aded0eclinear23a", stepAnswer: ["$$d<-15$$"], problemType: "TextBox", stepTitle: "Solve the inequality: $$-7d>105$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

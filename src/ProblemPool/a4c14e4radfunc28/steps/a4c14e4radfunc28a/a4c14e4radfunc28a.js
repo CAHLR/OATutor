@@ -1,1 +1,0 @@
-import hints from "./a4c14e4radfunc28a-index.js"; const step = {id: "a4c14e4radfunc28a", stepAnswer: ["[-1,inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{x+1}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

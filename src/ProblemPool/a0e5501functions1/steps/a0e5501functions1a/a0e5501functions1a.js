@@ -1,1 +1,0 @@
-import hints from "./a0e5501functions1a-index.js"; const step = {id: "a0e5501functions1a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "$$f(x)=5x-3$$", stepBody: "What is f(2)?", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

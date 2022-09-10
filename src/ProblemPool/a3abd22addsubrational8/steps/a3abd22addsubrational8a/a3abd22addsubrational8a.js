@@ -1,1 +1,0 @@
-import hints from "./a3abd22addsubrational8a-index.js"; const step = {id: "a3abd22addsubrational8a", stepAnswer: ["$$\\frac{7x}{x-3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7x^2}{x^2-9}+\\frac{21x}{x^2-9}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

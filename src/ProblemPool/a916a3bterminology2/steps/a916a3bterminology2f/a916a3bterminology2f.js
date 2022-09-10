@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology2f-index.js"; const step = {id: "a916a3bterminology2f", stepAnswer: ["$$\\frac{4}{12}$$"], problemType: "TextBox", stepTitle: "What is P(A AND B)?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a141c09stat9f-index.js"; const step = {id: "a141c09stat9f", stepAnswer: ["convenience"], problemType: "TextBox", stepTitle: "A student interviews classmates in his algebra class to determine how many pairs of jeans a student owns, on the average.", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

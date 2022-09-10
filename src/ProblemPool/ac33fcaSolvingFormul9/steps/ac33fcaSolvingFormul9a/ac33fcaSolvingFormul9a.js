@@ -1,1 +1,0 @@
-import hints from "./ac33fcaSolvingFormul9a-index.js"; const step = {id: "ac33fcaSolvingFormul9a", stepAnswer: ["$$y=\\frac{15-8x}{7}$$"], problemType: "TextBox", stepTitle: "$$8x+7y=15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

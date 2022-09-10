@@ -1,1 +1,0 @@
-import hints from "./a6f9727real12a-index.js"; const step = {id: "a6f9727real12a", stepAnswer: ["4x-5y-7"], problemType: "MultipleChoice", stepTitle: "$$3x-2y+x-3y-7$$", stepBody: "", choices: ["4x-5y-7", "$$2x-5y+7$$", "$$4x+y-7$$", "$$2x+y+7$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

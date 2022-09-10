@@ -1,1 +1,0 @@
-import hints from "./aa30a09exponents29a-index.js"; const step = {id: "aa30a09exponents29a", stepAnswer: ["$$3.4{10}^5$$"], problemType: "TextBox", stepTitle: "340000", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

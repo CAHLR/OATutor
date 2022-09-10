@@ -1,1 +1,0 @@
-import hints from "./a02cb12AddRational12a-index.js"; const step = {id: "a02cb12AddRational12a", stepAnswer: ["$$\\frac{7m+29}{\\left(m+3\\right) \\left(m+4\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4}{m+3}+\\frac{3}{m+4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

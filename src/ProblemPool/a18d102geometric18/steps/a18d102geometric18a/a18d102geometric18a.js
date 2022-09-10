@@ -1,1 +1,0 @@
-import hints from "./a18d102geometric18a-index.js"; const step = {id: "a18d102geometric18a", stepAnswer: ["10230"], problemType: "TextBox", stepTitle: "$$\\sum_{i=1}^{10} 5\\times2^i$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

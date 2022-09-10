@@ -1,1 +1,0 @@
-import hints from "./a059de3q7a-index.js"; const step = {id: "a059de3q7a", stepAnswer: ["Symmetrical"], problemType: "MultipleChoice", stepTitle: "1; 1; 1; 2; 2; 2; 2; 3; 3; 3; 3; 3; 3; 3; 3; 4; 4; 4; 5; 5", stepBody: "", choices: ["Symmetrical", "Skewed Left", "Skewed Right"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop19b-index.js"; const step = {id: "af8cfe1expprop19b", stepAnswer: ["$$5^{5x}$$"], problemType: "TextBox", stepTitle: "$$5^x 5^{4x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

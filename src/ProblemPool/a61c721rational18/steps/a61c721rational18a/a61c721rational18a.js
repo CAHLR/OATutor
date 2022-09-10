@@ -1,1 +1,0 @@
-import hints from "./a61c721rational18a-index.js"; const step = {id: "a61c721rational18a", stepAnswer: ["$$\\frac{9a-7}{\\left(a+1\\right) \\left(a-3\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{4}{a+1}+\\frac{5}{a-3}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

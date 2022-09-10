@@ -1,1 +1,0 @@
-import hints from "./a02cb12AddRational13a-index.js"; const step = {id: "a02cb12AddRational13a", stepAnswer: ["$$\\frac{4}{y+4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{8y}{y^2-16}-\\frac{4}{y-4}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

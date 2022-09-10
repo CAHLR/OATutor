@@ -1,1 +1,0 @@
-var hints = [{id: "a0090fdexp1a-h1", type: "hint", dependencies: [], title: "Identifying Population", text: "Think about what group specifically is being tested.", variabilization: {}}, ]; export {hints};

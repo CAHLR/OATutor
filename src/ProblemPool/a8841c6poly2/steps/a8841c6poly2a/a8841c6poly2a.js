@@ -1,1 +1,0 @@
-import hints from "./a8841c6poly2a-index.js"; const step = {id: "a8841c6poly2a", stepAnswer: ["$$-6x^2+12y$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{18x^3 y-36x y^2}{\\left(-3x y\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

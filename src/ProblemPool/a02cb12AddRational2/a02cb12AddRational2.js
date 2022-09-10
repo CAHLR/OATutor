@@ -1,1 +1,0 @@
-import steps from "./a02cb12AddRational2-index.js"; const problem = {id: "a02cb12AddRational2", title: "Rational Expression Addition", body: "Add the following rational expression.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 AL[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

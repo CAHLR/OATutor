@@ -1,1 +1,0 @@
-import hints from "./ab79207box8a-index.js"; const step = {id: "ab79207box8a", stepAnswer: ["17"], problemType: "TextBox", stepTitle: "Look at the BMW 5 series. Estimate the interquartile range (IQR).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a61f754spread23a-index.js"; const step = {id: "a61f754spread23a", stepAnswer: ["0.0295"], problemType: "TextBox", stepTitle: "How many standard deviations away from the mean is the median? Round to the nearest ten thousandth (four decimal points).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

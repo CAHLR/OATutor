@@ -1,1 +1,0 @@
-import steps from "./a7b839fmixapp12-index.js"; const problem = {id: "a7b839fmixapp12", title: "Solving Mixture Applications", body: "A cashier has 54 bills, all of which are $10 or $20 bills. The total value of the money is $910.", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "4.3 KL[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./add6935Sim2a-index.js"; const step = {id: "add6935Sim2a", stepAnswer: ["$$\\frac{2}{3\\left(x+1\\right)}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{x^2-1}}{\\frac{3}{x+1}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

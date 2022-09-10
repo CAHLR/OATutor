@@ -1,1 +1,0 @@
-import hints from "./aa97d5brates6a-index.js"; const step = {id: "aa97d5brates6a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "Find the local maximum. Give the y value.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

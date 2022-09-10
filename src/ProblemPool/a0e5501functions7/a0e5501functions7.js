@@ -1,1 +1,0 @@
-import steps from "./a0e5501functions7-index.js"; const problem = {id: "a0e5501functions7", title: "Evaluate at $$g{\\left(h^2\\right)}$$", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "3.5 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

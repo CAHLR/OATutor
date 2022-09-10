@@ -1,1 +1,0 @@
-import hints from "./a1a4133MultDivInts20a-index.js"; const step = {id: "a1a4133MultDivInts20a", stepAnswer: ["-47"], problemType: "TextBox", stepTitle: "Simplify the expression to a single number", stepBody: "5(-6)+7(-2)-3", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

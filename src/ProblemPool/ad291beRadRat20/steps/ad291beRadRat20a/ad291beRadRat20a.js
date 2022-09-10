@@ -1,1 +1,0 @@
-import hints from "./ad291beRadRat20a-index.js"; const step = {id: "ad291beRadRat20a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "What is $$\\sqrt[5]{243}$$?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a141c09stat7f-index.js"; const step = {id: "a141c09stat7f", stepAnswer: ["quantitative continuous"], problemType: "TextBox", stepTitle: "weights of sumo wrestlers", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a694122gcf2a-index.js"; const step = {id: "a694122gcf2a", stepAnswer: ["$$4m\\left(2m^2-3mn+5n^2\\right)$$"], problemType: "TextBox", stepTitle: "$$8m^3-12m^2 n+20{mn}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

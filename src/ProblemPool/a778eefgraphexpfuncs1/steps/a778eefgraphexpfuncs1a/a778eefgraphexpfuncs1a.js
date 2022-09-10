@@ -1,1 +1,0 @@
-import hints from "./a778eefgraphexpfuncs1a-index.js"; const step = {id: "a778eefgraphexpfuncs1a", stepAnswer: ["red"], problemType: "MultipleChoice", stepTitle: "$$f(x)={\\left(\\frac{1}{2}\\right)}^x$$", stepBody: "##figure1.gif## ", choices: ["red", "blue"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a141c09stat9-index.js"; const problem = {id: "a141c09stat9", title: "Sampling", body: "Determine the type of sampling used (simple random, stratified, systematic, cluster, or convenience).", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "S1 Ash [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

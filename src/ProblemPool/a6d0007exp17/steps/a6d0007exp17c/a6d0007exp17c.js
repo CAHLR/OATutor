@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp17c-index.js"; const step = {id: "a6d0007exp17c", stepAnswer: ["$$9.4{10}^{-13}$$"], problemType: "TextBox", stepTitle: "Diameter of electron: 0.00000000000094 m", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

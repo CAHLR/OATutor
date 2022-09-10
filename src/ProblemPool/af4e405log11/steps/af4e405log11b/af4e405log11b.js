@@ -1,1 +1,0 @@
-import hints from "./af4e405log11b-index.js"; const step = {id: "af4e405log11b", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$\\log_{4}\\left(2\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a368ca5desc-stat2a-index.js"; const step = {id: "a368ca5desc-stat2a", stepAnswer: ["Continuous"], problemType: "MultipleChoice", stepTitle: "The length of a dog's tail.", stepBody: "", choices: ["Discrete", "Continuous", "Both"], answerType: "string", hints: hints, variabilization: {}}; export {step};

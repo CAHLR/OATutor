@@ -1,1 +1,0 @@
-import hints from "./a1fec00Complex9a-index.js"; const step = {id: "a1fec00Complex9a", stepAnswer: ["$$3i \\sqrt{2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{-18}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

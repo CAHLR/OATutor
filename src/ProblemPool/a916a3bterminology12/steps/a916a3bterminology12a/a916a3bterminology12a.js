@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology12a-index.js"; const step = {id: "a916a3bterminology12a", stepAnswer: ["$$\\frac{22}{150}$$"], problemType: "TextBox", stepTitle: "Find P(R).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

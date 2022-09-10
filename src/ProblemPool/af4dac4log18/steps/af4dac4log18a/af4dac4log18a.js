@@ -1,1 +1,0 @@
-import hints from "./af4dac4log18a-index.js"; const step = {id: "af4dac4log18a", stepAnswer: ["8"], problemType: "TextBox", stepTitle: "Principle", stepBody: "$$2*\\log_{4}\\left(x\\right)=\\log_{4}\\left(64\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

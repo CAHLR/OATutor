@@ -1,1 +1,0 @@
-import hints from "./afc244aSolveapp2a-index.js"; const step = {id: "afc244aSolveapp2a", stepAnswer: ["7"], problemType: "TextBox", stepTitle: "$$\\frac{56}{72}=\\frac{y}{9}$$", stepBody: "Solve for y.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

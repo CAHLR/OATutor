@@ -1,1 +1,0 @@
-import hints from "./ae223c4divradexp29a-index.js"; const step = {id: "ae223c4divradexp29a", stepAnswer: ["$$\\frac{\\sqrt{3} \\left(\\sqrt{u}+\\sqrt{6}\\right)}{u}-6$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\sqrt{3}}{\\sqrt{u}}-\\sqrt{6}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

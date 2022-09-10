@@ -1,1 +1,0 @@
-import hints from "./a4491f8stat4b-index.js"; const step = {id: "a4491f8stat4b", stepAnswer: ["A smaller group of the clients"], problemType: "MultipleChoice", stepTitle: "What is the sample?", stepBody: "", choices: ["The clients of the insurance companies", "A smaller group of the clients"], answerType: "string", hints: hints, variabilization: {}}; export {step};

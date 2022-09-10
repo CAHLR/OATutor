@@ -1,1 +1,0 @@
-import hints from "./aeba912Radicals23a-index.js"; const step = {id: "aeba912Radicals23a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt{\\frac{45}{80}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

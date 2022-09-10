@@ -1,1 +1,0 @@
-import hints from "./a6b9f29radfunc11a-index.js"; const step = {id: "a6b9f29radfunc11a", stepAnswer: ["(1,inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{\\frac{6}{x-1}}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

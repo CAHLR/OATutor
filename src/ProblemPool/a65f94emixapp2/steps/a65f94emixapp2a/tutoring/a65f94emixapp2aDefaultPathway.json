@@ -1,0 +1,30 @@
+[
+    {
+        "id": "a65f94emixapp2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate Into System",
+        "text": "Letting $$x=number$$ of adult tickets sold and $$y=number$$ of child tickets sold: $$x+y=553$$, $$9x+6y=3936$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a65f94emixapp2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a65f94emixapp2a-h1"
+        ],
+        "title": "Eliminating One Variable",
+        "text": "Let's eliminate y so that we can solve for x. Multiply the first equation by -6 and then add. $$3x=618$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a65f94emixapp2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a65f94emixapp2a-h2"
+        ],
+        "title": "Solving the Equation",
+        "text": "$$x=\\frac{618}{3}=206$$. 206 adult tickets were sold.",
+        "variabilization": {}
+    }
+]

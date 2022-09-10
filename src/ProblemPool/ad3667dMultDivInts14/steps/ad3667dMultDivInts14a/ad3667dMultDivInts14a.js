@@ -1,1 +1,0 @@
-import hints from "./ad3667dMultDivInts14a-index.js"; const step = {id: "ad3667dMultDivInts14a", stepAnswer: ["-1"], problemType: "TextBox", stepTitle: "The sum of 8 and -12, increased by 3", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

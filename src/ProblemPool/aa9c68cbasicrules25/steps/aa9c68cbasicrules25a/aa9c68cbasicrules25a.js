@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules25a-index.js"; const step = {id: "aa9c68cbasicrules25a", stepAnswer: ["0.4"], problemType: "TextBox", stepTitle: "Find the probability that a cookie contains chocolate or nuts (he can't eat it).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

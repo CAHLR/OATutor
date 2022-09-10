@@ -1,1 +1,0 @@
-import hints from "./a694122gcf1a-index.js"; const step = {id: "a694122gcf1a", stepAnswer: ["3x"], problemType: "TextBox", stepTitle: "$$21x^3$$, $$9x^2$$, 15x", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

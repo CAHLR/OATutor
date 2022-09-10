@@ -1,1 +1,0 @@
-import hints from "./a78ba6esubsitution13a-index.js"; const step = {id: "a78ba6esubsitution13a", stepAnswer: ["$$(\\frac{-1}{2},-2)$$"], problemType: "MultipleChoice", stepTitle: "$$4x-y=0$$, $$2x-3y=5$$", stepBody: "", choices: ["$$(\\frac{-1}{3},-3)$$", "(-1,-2)", "$$(\\frac{-1}{2},-2)$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

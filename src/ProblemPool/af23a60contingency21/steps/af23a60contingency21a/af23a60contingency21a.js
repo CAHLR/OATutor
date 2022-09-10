@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency21a-index.js"; const step = {id: "af23a60contingency21a", stepAnswer: ["$$\\frac{10}{475}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student plays alone and outside?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

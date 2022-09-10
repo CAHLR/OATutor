@@ -1,1 +1,0 @@
-import hints from "./a10e4c3factoring25a-index.js"; const step = {id: "a10e4c3factoring25a", stepAnswer: ["$$\\left(3y+5\\right) \\left(2y-3\\right)$$"], problemType: "TextBox", stepTitle: "$$6y^2+y-15$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

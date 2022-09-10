@@ -1,1 +1,0 @@
-import hints from "./a4106b0log4a-index.js"; const step = {id: "a4106b0log4a", stepAnswer: ["0"], problemType: "TextBox", stepTitle: "Solving Logorithms.", stepBody: "$$\\log_{13}\\left(1\\right)$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

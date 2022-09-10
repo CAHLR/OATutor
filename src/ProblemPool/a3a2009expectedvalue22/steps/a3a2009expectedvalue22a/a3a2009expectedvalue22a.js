@@ -1,1 +1,0 @@
-import hints from "./a3a2009expectedvalue22a-index.js"; const step = {id: "a3a2009expectedvalue22a", stepAnswer: ["5.38"], problemType: "TextBox", stepTitle: "What is the expected value of playing the game?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

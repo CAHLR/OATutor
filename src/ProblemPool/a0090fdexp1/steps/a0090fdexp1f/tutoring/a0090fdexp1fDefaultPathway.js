@@ -1,1 +1,0 @@
-var hints = [{id: "a0090fdexp1f-h1", type: "hint", dependencies: [], title: "Identifying reponse variable", text: "Think about what is the reaction to the explanatory variable", variabilization: {}}, ]; export {hints};

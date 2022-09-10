@@ -1,1 +1,0 @@
-import hints from "./ac33fcaSolvingFormul5a-index.js"; const step = {id: "ac33fcaSolvingFormul5a", stepAnswer: ["C=((5/9)*(F-32)"], problemType: "TextBox", stepTitle: "F=((9/5)*C)+32)", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac38dceFraction15a-index.js"; const step = {id: "ac38dceFraction15a", stepAnswer: ["$$\\frac{2}{7}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{2}{3}-\\frac{1}{2}}{\\frac{1}{4}+\\frac{1}{3}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

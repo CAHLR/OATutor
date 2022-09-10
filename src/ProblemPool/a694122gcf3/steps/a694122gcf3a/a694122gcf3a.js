@@ -1,1 +1,0 @@
-import hints from "./a694122gcf3a-index.js"; const step = {id: "a694122gcf3a", stepAnswer: ["$$5x^{2\\left(x-5\\right)}$$"], problemType: "TextBox", stepTitle: "Factor: $$5x^3-25x^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

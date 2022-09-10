@@ -1,1 +1,0 @@
-import hints from "./aa9c68cbasicrules23a-index.js"; const step = {id: "aa9c68cbasicrules23a", stepAnswer: ["No"], problemType: "MultipleChoice", stepTitle: "Are L and C mutually exclusive events?", stepBody: "", choices: ["Yes", "No"], answerType: "string", hints: hints, variabilization: {}}; export {step};

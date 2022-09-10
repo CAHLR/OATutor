@@ -1,1 +1,0 @@
-import steps from "./ae21c87q11-index.js"; const problem = {id: "ae21c87q11", title: "Multiple modes.", body: "Answer the following question.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.6", courseName: "!!Editor Sheet cf0669"}; export { problem };

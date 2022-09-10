@@ -1,0 +1,35 @@
+[
+    {
+        "id": "af23defint12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Operate the exponential before nigative sign",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint12b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "64"
+        ],
+        "dependencies": [
+            "af23defint12b-h1"
+        ],
+        "title": "Exponential",
+        "text": "What is $$2^6$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "af23defint12b-h2"
+        ],
+        "title": "Order of Operation",
+        "text": "Multiply by the negative sign in front",
+        "variabilization": {}
+    }
+]

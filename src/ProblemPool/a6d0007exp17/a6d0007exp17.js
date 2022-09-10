@@ -1,1 +1,0 @@
-import steps from "./a6d0007exp17-index.js"; const problem = {id: "a6d0007exp17", title: "Converting Standard Notation to Scientific Notation", body: "Write each number in scientific notation.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 Exponents and Scientific Notation", courseName: "Openstax: College Algebra"}; export { problem };

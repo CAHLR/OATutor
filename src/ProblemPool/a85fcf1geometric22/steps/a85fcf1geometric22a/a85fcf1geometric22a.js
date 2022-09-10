@@ -1,1 +1,0 @@
-import hints from "./a85fcf1geometric22a-index.js"; const step = {id: "a85fcf1geometric22a", stepAnswer: ["5000"], problemType: "TextBox", stepTitle: "What is the total effect of the rebate on the economy?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

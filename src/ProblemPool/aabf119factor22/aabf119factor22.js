@@ -1,1 +1,0 @@
-import steps from "./aabf119factor22-index.js"; const problem = {id: "aabf119factor22", title: "Factoring a Difference of Sqaures.", body: "Factor the following polynomial.", steps: steps, variabilization: {}, oer: "http://openstax.org", lesson: "1.5 Factoring Polynomials", courseName: "Openstax: College Algebra"}; export { problem };

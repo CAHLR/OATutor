@@ -1,1 +1,0 @@
-import hints from "./a141c09stat8a-index.js"; const step = {id: "a141c09stat8a", stepAnswer: ["qualitative (or categorical)"], problemType: "MultipleChoice", stepTitle: "What type of data does this graph show?", stepBody: "", choices: ["qualitative (or categorical)", "quantitative"], answerType: "string", hints: hints, variabilization: {}}; export {step};

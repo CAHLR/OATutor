@@ -1,1 +1,0 @@
-import hints from "./a6f9727real10a-index.js"; const step = {id: "a6f9727real10a", stepAnswer: ["Rational"], problemType: "MultipleChoice", stepTitle: "$$\\sqrt{4}$$", stepBody: "", choices: ["Rational", "Irrational"], answerType: "string", hints: hints, variabilization: {}}; export {step};

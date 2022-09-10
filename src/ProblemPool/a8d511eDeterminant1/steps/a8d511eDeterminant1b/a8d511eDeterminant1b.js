@@ -1,1 +1,0 @@
-import hints from "./a8d511eDeterminant1b-index.js"; const step = {id: "a8d511eDeterminant1b", stepAnswer: ["-8"], problemType: "TextBox", stepTitle: "$$\\begin{bmatrix} -3 & -4 \\\\ -2 & 0 \\end{bmatrix}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

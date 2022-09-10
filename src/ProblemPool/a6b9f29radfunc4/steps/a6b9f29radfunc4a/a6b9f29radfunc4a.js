@@ -1,1 +1,0 @@
-import hints from "./a6b9f29radfunc4a-index.js"; const step = {id: "a6b9f29radfunc4a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "f(x)=sqrt(3, x-6), find f(14).", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

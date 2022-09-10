@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin26a-index.js"; const step = {id: "a664eb9bin26a", stepAnswer: ["$$m^5+5m^4 n^1+10m^3 n^2+10m^2 n^3+5m^1 n^4+n^5$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(m+n\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

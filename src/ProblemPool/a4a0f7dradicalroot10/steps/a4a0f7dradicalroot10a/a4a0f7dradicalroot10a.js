@@ -1,1 +1,0 @@
-import hints from "./a4a0f7dradicalroot10a-index.js"; const step = {id: "a4a0f7dradicalroot10a", stepAnswer: ["9"], problemType: "TextBox", stepTitle: "Use the formula $$t=\\frac{\\sqrt{h}}{4}$$ to find how many seconds it took for the package to reach the ground.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

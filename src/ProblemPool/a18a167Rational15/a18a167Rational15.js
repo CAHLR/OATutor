@@ -1,1 +1,0 @@
-import steps from "./a18a167Rational15-index.js"; const problem = {id: "a18a167Rational15", title: "Multiply and Divide Rational Functions", body: "Calculate R(x)", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "7.1 RW[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

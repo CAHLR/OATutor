@@ -1,1 +1,0 @@
-import hints from "./a0351f0theparabola12a-index.js"; const step = {id: "a0351f0theparabola12a", stepAnswer: ["$$(0,0),(0,1),y=-1$$"], problemType: "MultipleChoice", stepTitle: "$$y=\\frac{x^2}{4}$$", stepBody: "", choices: ["$$(0,3),(0,1),y=-1$$", "$$(0,1),(0,2),y=-1$$", "$$(0,0),(0,1),y=-1$$"], answerType: "string", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ae3d458simproots13a-index.js"; const step = {id: "ae3d458simproots13a", stepAnswer: ["3"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{81}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

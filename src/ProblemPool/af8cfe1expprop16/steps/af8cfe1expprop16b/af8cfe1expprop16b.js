@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop16b-index.js"; const step = {id: "af8cfe1expprop16b", stepAnswer: ["$$4^{15x}$$"], problemType: "TextBox", stepTitle: "$$4^{5x} 4^{9x}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

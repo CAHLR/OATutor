@@ -1,1 +1,0 @@
-import hints from "./ac38dceFraction7a-index.js"; const step = {id: "ac38dceFraction7a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "[8*(-2)+4(-3)]/[(-5)*2+3]", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

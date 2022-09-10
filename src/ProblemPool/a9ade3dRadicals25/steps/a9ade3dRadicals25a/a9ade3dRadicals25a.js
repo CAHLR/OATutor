@@ -1,1 +1,0 @@
-import hints from "./a9ade3dRadicals25a-index.js"; const step = {id: "a9ade3dRadicals25a", stepAnswer: ["$$\\frac{1}{2}$$"], problemType: "TextBox", stepTitle: "$$\\sqrt[4]{\\frac{5}{80}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

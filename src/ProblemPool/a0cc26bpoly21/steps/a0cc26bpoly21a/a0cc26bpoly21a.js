@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly21a-index.js"; const step = {id: "a0cc26bpoly21a", stepAnswer: ["$$16p^2+72p+81$$"], problemType: "TextBox", stepTitle: "$${\\left(4p+9\\right)}^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

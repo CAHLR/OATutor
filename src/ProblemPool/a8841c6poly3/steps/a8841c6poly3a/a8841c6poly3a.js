@@ -1,1 +1,0 @@
-import hints from "./a8841c6poly3a-index.js"; const step = {id: "a8841c6poly3a", stepAnswer: ["$$x+4$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{x^2+9x+20}{x+5}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

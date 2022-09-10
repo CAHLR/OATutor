@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency16a-index.js"; const step = {id: "af23a60contingency16a", stepAnswer: ["$$\\frac{300}{401}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected artist plays the Guitar?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

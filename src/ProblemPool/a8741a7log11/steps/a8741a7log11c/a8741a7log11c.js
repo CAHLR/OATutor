@@ -1,1 +1,0 @@
-import hints from "./a8741a7log11c-index.js"; const step = {id: "a8741a7log11c", stepAnswer: ["-5"], problemType: "TextBox", stepTitle: "$$\\log_{2}\\left(\\frac{1}{32}\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

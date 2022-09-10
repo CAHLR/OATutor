@@ -1,1 +1,0 @@
-import hints from "./a87674afactoringpoly5a-index.js"; const step = {id: "a87674afactoringpoly5a", stepAnswer: ["$$\\left(11x+y\\right) \\left(11x-y\\right)$$"], problemType: "TextBox", stepTitle: "$$121x^2-y^2$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

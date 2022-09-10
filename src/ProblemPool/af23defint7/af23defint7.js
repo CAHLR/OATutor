@@ -1,1 +1,0 @@
-import steps from "./af23defint7-index.js"; const problem = {id: "af23defint7", title: "Add and Subtract Integers", body: "Simplify the following expression", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "1.2 jg [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

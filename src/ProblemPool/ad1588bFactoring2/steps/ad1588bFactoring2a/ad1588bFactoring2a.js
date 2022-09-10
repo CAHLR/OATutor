@@ -1,1 +1,0 @@
-import hints from "./ad1588bFactoring2a-index.js"; const step = {id: "ad1588bFactoring2a", stepAnswer: ["$$6\\left(2y-5\\right) \\left(2y+5\\right)$$"], problemType: "TextBox", stepTitle: "$$24y^2-150$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

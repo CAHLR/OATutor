@@ -1,1 +1,0 @@
-import hints from "./a4c14e4radfunc22a-index.js"; const step = {id: "a4c14e4radfunc22a", stepAnswer: ["[(1/3),inf)"], problemType: "TextBox", stepTitle: "$$f(x)=\\sqrt{3x-1}$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

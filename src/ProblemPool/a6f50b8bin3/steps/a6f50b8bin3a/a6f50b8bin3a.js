@@ -1,1 +1,0 @@
-import hints from "./a6f50b8bin3a-index.js"; const step = {id: "a6f50b8bin3a", stepAnswer: ["$$p^7+7p^6 q^1+21p^5 q^2+35p^4 q^3+35p^3 q^4+21p^2 q^5+7p^1 q^6+q^7$$"], problemType: "TextBox", stepTitle: "Using Pascal's Trianlge to Exapnd a polynomial.", stepBody: "$${\\left(p+q\\right)}^7$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

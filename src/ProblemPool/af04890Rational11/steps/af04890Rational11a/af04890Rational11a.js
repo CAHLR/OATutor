@@ -1,1 +1,0 @@
-import hints from "./af04890Rational11a-index.js"; const step = {id: "af04890Rational11a", stepAnswer: ["$$\\frac{\\left(a-3\\right) \\left(a+5\\right)}{{\\left(a-5\\right)}^2}$$"], problemType: "TextBox", stepTitle: "$$\\frac{3a^2-8a-3}{a^2-25} \\frac{a^2+10a+25}{3a^2-14a-5}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

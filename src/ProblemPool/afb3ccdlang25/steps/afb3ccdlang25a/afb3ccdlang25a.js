@@ -1,1 +1,0 @@
-import hints from "./afb3ccdlang25a-index.js"; const step = {id: "afb3ccdlang25a", stepAnswer: ["30"], problemType: "TextBox", stepTitle: "Simplify $$5\\left(2+4\\left(3-2\\right)\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

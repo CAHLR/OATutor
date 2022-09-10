@@ -1,1 +1,0 @@
-import hints from "./ac38dceFraction4a-index.js"; const step = {id: "ac38dceFraction4a", stepAnswer: ["$$\\frac{3}{4b}$$"], problemType: "TextBox", stepTitle: "$$\\frac{\\frac{a}{8}}{\\frac{ab}{6}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

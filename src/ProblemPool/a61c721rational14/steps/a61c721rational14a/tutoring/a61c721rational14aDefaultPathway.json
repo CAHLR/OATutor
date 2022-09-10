@@ -1,0 +1,145 @@
+[
+    {
+        "id": "a61c721rational14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring Expressions",
+        "text": "Factor the numerator and denominator of the first expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(c+6\\right) \\left(c-4\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h1"
+        ],
+        "title": "Factoring Trinomials",
+        "text": "What are the factors of the first numerator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(c+6\\right) \\left(c+6\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h2"
+        ],
+        "title": "Factoring Trinomials",
+        "text": "What are the factors of the first denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a61c721rational14a-h3"
+        ],
+        "title": "Factoring Expressions",
+        "text": "Factor the numerator and denominator of the second expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(c-4)(c-6)"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h4"
+        ],
+        "title": "Factoring Trinomials",
+        "text": "What are the factors of the second numerator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(c-4)(c-4)"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h5"
+        ],
+        "title": "Factoring Trinomials",
+        "text": "What are the factors of the second denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a61c721rational14a-h6"
+        ],
+        "title": "Multiplying Expressions",
+        "text": "Multilply numerators and denominators.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(c+6\\right) \\left(c-4\\right) \\left(c-4\\right) \\left(-6\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h7"
+        ],
+        "title": "Simplifying Expressions",
+        "text": "After multiplying the factors, what is the numerator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(c+6\\right) \\left(c+6\\right) \\left(c-4\\right) \\left(c-4\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h8"
+        ],
+        "title": "Simplifying Expressions",
+        "text": "After multiplying the factors, what is the denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a61c721rational14a-h9"
+        ],
+        "title": "Common Factor",
+        "text": "Cancel the common factors from the numerator and denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a61c721rational14a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(c-6\\right) \\left(c+6\\right)$$"
+        ],
+        "dependencies": [
+            "a61c721rational14a-h10"
+        ],
+        "title": "Common Factor",
+        "text": "What is the simplified expression?",
+        "variabilization": {}
+    }
+]

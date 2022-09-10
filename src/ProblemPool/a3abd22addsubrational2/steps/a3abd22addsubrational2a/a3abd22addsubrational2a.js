@@ -1,1 +1,0 @@
-import hints from "./a3abd22addsubrational2a-index.js"; const step = {id: "a3abd22addsubrational2a", stepAnswer: ["$$\\frac{3}{4}$$"], problemType: "TextBox", stepTitle: "$$\\frac{7}{24}+\\frac{11}{24}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

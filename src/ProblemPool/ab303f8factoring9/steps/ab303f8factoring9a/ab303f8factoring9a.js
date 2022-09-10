@@ -1,1 +1,0 @@
-import hints from "./ab303f8factoring9a-index.js"; const step = {id: "ab303f8factoring9a", stepAnswer: ["$$\\left(8y-1\\right) \\left(8y+1\\right)$$"], problemType: "TextBox", stepTitle: "$$64y^2-1$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

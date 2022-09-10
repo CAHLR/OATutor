@@ -1,1 +1,0 @@
-import steps from "./aeba9faMultiplyPoly13-index.js"; const problem = {id: "aeba9faMultiplyPoly13", title: "Binomial Squares Pattern", body: "Multiply the following binomials", steps: steps, variabilization: {}, oer: "Multiply Polynomials", lesson: "5.3 RW [done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

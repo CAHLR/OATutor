@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper30a-index.js"; const step = {id: "a91e303graphhyper30a", stepAnswer: ["$$\\frac{{\\left(x+1\\right)}^2}{16}-\\frac{{\\left(y-2\\right)}^2}{9}=1$$"], problemType: "TextBox", stepTitle: "Standardize $$9x^2-16y^2+18x+64y-199=0$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

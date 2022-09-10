@@ -1,1 +1,0 @@
-import hints from "./abac4b0probbasic16a-index.js"; const step = {id: "abac4b0probbasic16a", stepAnswer: ["$$\\frac{15}{24}$$"], problemType: "TextBox", stepTitle: "What is the probability that a randomly selected student does not play a sport?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

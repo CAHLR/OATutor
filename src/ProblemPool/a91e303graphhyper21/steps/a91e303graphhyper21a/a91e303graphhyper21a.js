@@ -1,1 +1,0 @@
-import hints from "./a91e303graphhyper21a-index.js"; const step = {id: "a91e303graphhyper21a", stepAnswer: ["B"], problemType: "MultipleChoice", stepTitle: "Graph $$\\frac{{\\left(y+3\\right)}^2}{16}-\\frac{{\\left(x+2\\right)}^2}{9}=1$$.", stepBody: "##figure1.gif## ", choices: ["A", "B", "C", "D"], answerType: "string", hints: hints, variabilization: {}}; export {step};

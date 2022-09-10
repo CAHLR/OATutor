@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni2a-index.js"; const step = {id: "a5e79d8Uni2a", stepAnswer: ["6.64"], problemType: "TextBox", stepTitle: "What is the standard deviation of the amount of time that the baby is smiling?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni1b-index.js"; const step = {id: "a5e79d8Uni1b", stepAnswer: ["11.5"], problemType: "TextBox", stepTitle: "Knowing the formula to calculate the mean, what is our final answer?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

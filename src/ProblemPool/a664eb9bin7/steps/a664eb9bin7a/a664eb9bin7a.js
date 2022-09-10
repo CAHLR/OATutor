@@ -1,1 +1,0 @@
-import hints from "./a664eb9bin7a-index.js"; const step = {id: "a664eb9bin7a", stepAnswer: ["$$x^5-15x^4+90x^3-270x^2+405x^1-243$$"], problemType: "TextBox", stepTitle: "Using the Binomial Theorem to Expand a Polynomial.", stepBody: "$${\\left(x-3\\right)}^5$$", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./a0cc26bpoly29a-index.js"; const step = {id: "a0cc26bpoly29a", stepAnswer: ["$$32x^2-4x-3$$"], problemType: "TextBox", stepTitle: "$$\\left(4x+1\\right) \\left(8x-3\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

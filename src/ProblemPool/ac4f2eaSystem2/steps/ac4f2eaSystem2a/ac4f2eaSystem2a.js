@@ -1,1 +1,0 @@
-import hints from "./ac4f2eaSystem2a-index.js"; const step = {id: "ac4f2eaSystem2a", stepAnswer: ["(7,5)"], problemType: "TextBox", stepTitle: "$$x-2y=-3$$, $$x+y=12$$", stepBody: "Please enter your answer as (a,b).", answerType: "string", hints: hints, variabilization: {}}; export {step};

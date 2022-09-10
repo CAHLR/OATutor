@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop19a-index.js"; const step = {id: "af8cfe1expprop19a", stepAnswer: ["$$n^{42}$$"], problemType: "TextBox", stepTitle: "$$q^{27} q^{15}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

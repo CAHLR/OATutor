@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop18b-index.js"; const step = {id: "af8cfe1expprop18b", stepAnswer: ["$$3^{x+6}$$"], problemType: "TextBox", stepTitle: "$$3^x 3^6$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

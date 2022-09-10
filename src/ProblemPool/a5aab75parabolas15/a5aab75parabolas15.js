@@ -1,1 +1,0 @@
-import steps from "./a5aab75parabolas15-index.js"; const problem = {id: "a5aab75parabolas15", title: "Graphing Horizontal Parabolas", body: "Graph the horizontal parabola given its properties.", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "11.2[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

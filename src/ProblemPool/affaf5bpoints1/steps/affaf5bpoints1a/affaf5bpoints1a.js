@@ -1,1 +1,0 @@
-import hints from "./affaf5bpoints1a-index.js"; const step = {id: "affaf5bpoints1a", stepAnswer: ["2"], problemType: "TextBox", stepTitle: "What quadrant is the point (-4,2) in? Enter only the numeric value.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

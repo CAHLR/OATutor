@@ -1,1 +1,0 @@
-import hints from "./ae3d458simproots12a-index.js"; const step = {id: "ae3d458simproots12a", stepAnswer: ["4"], problemType: "TextBox", stepTitle: "$$\\sqrt[3]{64}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

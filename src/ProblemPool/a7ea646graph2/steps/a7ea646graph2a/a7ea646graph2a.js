@@ -1,1 +1,0 @@
-import hints from "./a7ea646graph2a-index.js"; const step = {id: "a7ea646graph2a", stepAnswer: ["(-1,0),(1,0),(5,0)"], problemType: "MultipleChoice", stepTitle: "$$f(x)=x^3-5x^2-x+5$$", stepBody: "", choices: ["(-1,0),(1,0),(5,0)", "(1,0), (-5,0), (5,0), (6,0)", "(1,0), (-5,0), (5,0), (-6,0), (6,0)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

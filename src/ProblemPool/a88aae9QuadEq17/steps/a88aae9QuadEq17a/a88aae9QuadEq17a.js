@@ -1,1 +1,0 @@
-import hints from "./a88aae9QuadEq17a-index.js"; const step = {id: "a88aae9QuadEq17a", stepAnswer: ["(-3,-1)"], problemType: "TextBox", stepTitle: "$$x^2+4x+3 \\leq 0$$", stepBody: "", answerType: "string", hints: hints, variabilization: {}}; export {step};

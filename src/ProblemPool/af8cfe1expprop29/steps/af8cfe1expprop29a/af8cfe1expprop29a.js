@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop29a-index.js"; const step = {id: "af8cfe1expprop29a", stepAnswer: ["$$m^8$$"], problemType: "TextBox", stepTitle: "$${\\left(b^2\\right)}^7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

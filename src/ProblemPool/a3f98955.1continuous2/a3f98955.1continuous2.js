@@ -1,1 +1,0 @@
-import steps from "./a3f98955.1continuous2-index.js"; const problem = {id: "a3f98955.1continuous2", title: "Distributions", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "5.1 JL", courseName: "!!Editor Sheet cf0669"}; export { problem };

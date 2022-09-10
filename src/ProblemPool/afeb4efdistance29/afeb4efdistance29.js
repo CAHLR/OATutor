@@ -1,1 +1,0 @@
-import steps from "./afeb4efdistance29-index.js"; const problem = {id: "afeb4efdistance29", title: "Find the center and the radius of the circle", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "11.1[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

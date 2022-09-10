@@ -1,1 +1,0 @@
-import hints from "./a6d0007exp10b-index.js"; const step = {id: "a6d0007exp10b", stepAnswer: ["$$\\frac{1}{f^3}$$"], problemType: "TextBox", stepTitle: "$$\\frac{f^{47}}{f^{49} f}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import hints from "./ac1d5ccfactoring9a-index.js"; const step = {id: "ac1d5ccfactoring9a", stepAnswer: ["(x-15)(x-3)"], problemType: "TextBox", stepTitle: "Factor $$x^2+18x+45$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

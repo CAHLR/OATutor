@@ -1,1 +1,0 @@
-import hints from "./aeba9faMultiplyPoly5a-index.js"; const step = {id: "aeba9faMultiplyPoly5a", stepAnswer: ["$$y^2+13y+40$$"], problemType: "TextBox", stepTitle: "a) $$\\left(y+5\\right) \\left(y+8\\right)$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

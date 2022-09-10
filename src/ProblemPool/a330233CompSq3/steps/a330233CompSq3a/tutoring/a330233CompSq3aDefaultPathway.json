@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a330233CompSq3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify b, the coefficient of x",
+        "text": "$$b=\\frac{1}{2}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq3a-h1"
+        ],
+        "title": "Find $${\\left(\\frac{1}{2} b\\right)}^2$$",
+        "text": "$${\\left(\\frac{1}{2} \\frac{1}{2}\\right)}^2=\\frac{1}{16}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq3a-h2"
+        ],
+        "title": "Add $${\\left(\\frac{1}{2} b\\right)}^2$$ to $$x^2+bx$$",
+        "text": "$$x^2+\\frac{1}{2} x+\\frac{1}{16}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq3a-h3"
+        ],
+        "title": "Write as a perfect squared binomial",
+        "text": "$${\\left(x+\\frac{1}{4}\\right)}^2$$",
+        "variabilization": {}
+    }
+]

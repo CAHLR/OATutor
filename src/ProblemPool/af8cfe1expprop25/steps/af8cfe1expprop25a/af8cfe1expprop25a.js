@@ -1,1 +1,0 @@
-import hints from "./af8cfe1expprop25a-index.js"; const step = {id: "af8cfe1expprop25a", stepAnswer: ["$$y^{10}$$"], problemType: "TextBox", stepTitle: "$$\\frac{y^{20}}{y^{10}}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

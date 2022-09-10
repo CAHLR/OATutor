@@ -1,1 +1,0 @@
-import hints from "./ad3667dMultDivInts4b-index.js"; const step = {id: "ad3667dMultDivInts4b", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$-1\\times-16$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

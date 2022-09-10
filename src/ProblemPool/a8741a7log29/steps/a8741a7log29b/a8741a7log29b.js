@@ -1,1 +1,0 @@
-import hints from "./a8741a7log29b-index.js"; const step = {id: "a8741a7log29b", stepAnswer: ["17"], problemType: "TextBox", stepTitle: "$$\\log_{3}\\left(5x-4\\right)=4$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

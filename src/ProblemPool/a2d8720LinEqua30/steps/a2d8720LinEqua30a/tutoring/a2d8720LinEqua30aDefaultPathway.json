@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a2d8720LinEqua30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the slope",
+        "text": "First, we should write the given equation in slope-intercept form to find the slope.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=5x-7$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua30a-h1"
+        ],
+        "title": "Slope-intercept form",
+        "text": "What is the slope-intercept form of equation $$5x=7+y$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua30a-h2"
+        ],
+        "title": "Relationship between slopes",
+        "text": "In order to write the equation of a line, we need to calculate its slope. Since the line is parallel to $$5x=7+y$$, they have the same slope.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua30a-h3"
+        ],
+        "title": "Slope",
+        "text": "What is the slope of the target line?",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua30a-h4"
+        ],
+        "title": "Point-slope formula",
+        "text": "Given one point and the slope, the point-slope formula will lead to the equation of a line: $$y-y_1=m\\left(x-x_1\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y-(-2)=5(x-(-1))$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua30a-h5"
+        ],
+        "title": "Substitute",
+        "text": "Given the slope 5 and the point (-1,-2), what equation can we get using the point-slope formula?",
+        "variabilization": {}
+    },
+    {
+        "id": "a2d8720LinEqua30a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=5x+3$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua30a-h6"
+        ],
+        "title": "Simplification",
+        "text": "What is the point-intercept form of equation $$y-(-2)=5(x-(-1))$$?",
+        "variabilization": {}
+    }
+]

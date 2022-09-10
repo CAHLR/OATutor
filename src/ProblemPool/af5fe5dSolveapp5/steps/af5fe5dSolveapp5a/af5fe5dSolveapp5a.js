@@ -1,1 +1,0 @@
-import hints from "./af5fe5dSolveapp5a-index.js"; const step = {id: "af5fe5dSolveapp5a", stepAnswer: ["16"], problemType: "TextBox", stepTitle: "$$\\frac{a}{a+12}=\\frac{4}{7}$$", stepBody: "Solve for a.", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

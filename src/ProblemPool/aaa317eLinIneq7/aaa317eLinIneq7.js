@@ -1,1 +1,0 @@
-import steps from "./aaa317eLinIneq7-index.js"; const problem = {id: "aaa317eLinIneq7", title: "Solving a Compound Inequality", body: "Solve the compound inequality:", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "2.7 Linear Inequalities and Absolute Value Inequalities", courseName: "Openstax: College Algebra"}; export { problem };

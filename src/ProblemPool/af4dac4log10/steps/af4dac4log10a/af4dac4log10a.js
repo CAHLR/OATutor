@@ -1,1 +1,0 @@
-import hints from "./af4dac4log10a-index.js"; const step = {id: "af4dac4log10a", stepAnswer: ["1.49"], problemType: "TextBox", stepTitle: "$$5^x=11$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

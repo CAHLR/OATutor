@@ -1,1 +1,0 @@
-import hints from "./a5e79d8Uni7a-index.js"; const step = {id: "a5e79d8Uni7a", stepAnswer: ["5.774"], problemType: "TextBox", stepTitle: "What is the standard deviation of X?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

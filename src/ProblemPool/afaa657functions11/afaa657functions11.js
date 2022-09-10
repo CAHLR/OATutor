@@ -1,1 +1,0 @@
-import steps from "./afaa657functions11-index.js"; const problem = {id: "afaa657functions11", title: "Finding the Domain of a Function", body: "", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "3.6 AP[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

@@ -1,1 +1,0 @@
-import hints from "./abede0afactoring15a-index.js"; const step = {id: "abede0afactoring15a", stepAnswer: ["$$\\left(x+4\\right) \\left(x^2-4x+16\\right)$$"], problemType: "TextBox", stepTitle: "$$x^3+64$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a66ce95Linear24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Organizing",
+        "text": "Modify the equation into the form $$m=$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear24a-h1"
+        ],
+        "title": "Distributive Property I",
+        "text": "Use the distributive property to multiply 22(3m-4)",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "66m-88"
+        ],
+        "dependencies": [
+            "a66ce95Linear24a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is 22(3m-4)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear24a-h3"
+        ],
+        "title": "Distributive Property II",
+        "text": "Use the distributive property to multiply $$8\\left(2m+9\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16m+72$$"
+        ],
+        "dependencies": [
+            "a66ce95Linear24a-h4"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$8\\left(2m+9\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear24a-h5"
+        ],
+        "title": "Organizing",
+        "text": "Use algebra to manipulate the equation into the form $$m=$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "50m"
+        ],
+        "dependencies": [
+            "a66ce95Linear24a-h6"
+        ],
+        "title": "Subtraction",
+        "text": "What is 66m-16m?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "160"
+        ],
+        "dependencies": [
+            "a66ce95Linear24a-h7"
+        ],
+        "title": "Subtraction",
+        "text": "What is 72-(-88)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{5}$$"
+        ],
+        "dependencies": [
+            "a66ce95Linear24a-h8"
+        ],
+        "title": "Division",
+        "text": "What is $$\\frac{160}{50}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear24a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear24a-h9"
+        ],
+        "title": "Classifying the Equation",
+        "text": "Determine if the equation contradicts itself, or only valid under certain condition",
+        "variabilization": {}
+    }
+]

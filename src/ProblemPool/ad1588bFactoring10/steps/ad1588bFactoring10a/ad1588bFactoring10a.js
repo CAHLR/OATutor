@@ -1,1 +1,0 @@
-import hints from "./ad1588bFactoring10a-index.js"; const step = {id: "ad1588bFactoring10a", stepAnswer: ["$$3x y \\left(9y^2+16\\right)$$"], problemType: "TextBox", stepTitle: "$$27x y^3+48x y$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

@@ -1,1 +1,0 @@
-import steps from "./a0cd08bsystems8-index.js"; const problem = {id: "a0cd08bsystems8", title: "Determine whether the system of equations is intersecting, parallel, or coincident.", body: "", steps: steps, variabilization: {}, oer: "https://openstax.org/", lesson: "4.1 P[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

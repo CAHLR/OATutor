@@ -1,1 +1,0 @@
-import steps from "./a02cb12AddRational11-index.js"; const problem = {id: "a02cb12AddRational11", title: "AddRationalExpressions", body: "Add the Following Rational Expressions with Unlike Denominators", steps: steps, variabilization: {}, oer: "openstax.org", lesson: "7.2 AL[done]", courseName: "!!Editor Sheet 4b770c"}; export { problem };

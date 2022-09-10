@@ -1,1 +1,0 @@
-import hints from "./a916a3bterminology4e-index.js"; const step = {id: "a916a3bterminology4e", stepAnswer: ["P(F)"], problemType: "MultipleChoice", stepTitle: "What is the probability that a student is female?", stepBody: "", choices: ["P(F)", "P(M)", "P(S)", "P(L)"], answerType: "string", hints: hints, variabilization: {}}; export {step};

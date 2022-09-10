@@ -1,1 +1,0 @@
-import hints from "./affefa2poly1a-index.js"; const step = {id: "affefa2poly1a", stepAnswer: ["$$-\\left(\\frac{9a}{b^2}\\right)$$"], problemType: "TextBox", stepTitle: "Find the quotient: $$\\frac{54a^2 b^3}{\\left(-6a b^5\\right)}$$.", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

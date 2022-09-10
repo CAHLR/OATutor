@@ -1,1 +1,0 @@
-import hints from "./a5aab75parabolas14a-index.js"; const step = {id: "a5aab75parabolas14a", stepAnswer: ["$$3{\\left(x-2\\right)}^2-5$$"], problemType: "TextBox", stepTitle: "$$y=3x^2-12x+7$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

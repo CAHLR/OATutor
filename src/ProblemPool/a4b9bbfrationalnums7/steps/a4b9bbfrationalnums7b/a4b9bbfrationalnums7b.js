@@ -1,1 +1,0 @@
-import hints from "./a4b9bbfrationalnums7b-index.js"; const step = {id: "a4b9bbfrationalnums7b", stepAnswer: ["$$x^{\\frac{2}{3}}$$"], problemType: "TextBox", stepTitle: "Write with a rational exponent in the form $$a^{\\frac{m}{n}}$$ $$=$$ $$\\sqrt[n]{m}$$: $$\\sqrt[3]{x^2}$$", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};

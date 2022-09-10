@@ -1,1 +1,0 @@
-import hints from "./af23a60contingency7a-index.js"; const step = {id: "af23a60contingency7a", stepAnswer: ["$$\\frac{350}{800}$$"], problemType: "TextBox", stepTitle: "What is the probability that an athlete stretches before exercise?", stepBody: "", answerType: "arithmetic", hints: hints, variabilization: {}}; export {step};
