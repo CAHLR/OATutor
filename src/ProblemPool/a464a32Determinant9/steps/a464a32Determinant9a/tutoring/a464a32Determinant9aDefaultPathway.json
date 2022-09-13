@@ -1,0 +1,190 @@
+[
+    {
+        "id": "a464a32Determinant9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Write the determinant using the coefficients of x, y, and z",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h1"
+        ],
+        "title": "Order of Operation",
+        "text": "Expand the minor along the first row",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h2"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-37"
+        ],
+        "dependencies": [
+            "a464a32Determinant9a-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is $$3\\left(-7\\right)-\\left(-5\\right) \\left(-12\\right)+4\\times11$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h4"
+        ],
+        "title": "Principle",
+        "text": "Replace the x coefficient with the constant to find Dx",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h5"
+        ],
+        "title": "Order of Operation",
+        "text": "Expand the minor along the first column",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h6"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-74"
+        ],
+        "dependencies": [
+            "a464a32Determinant9a-h7"
+        ],
+        "title": "Calculation",
+        "text": "What is $$5\\left(-7\\right)-0+3\\left(-13\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h8"
+        ],
+        "title": "Principle",
+        "text": "Replace the y coefficient with the constant to find Dy",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h9"
+        ],
+        "title": "Order of Operation",
+        "text": "Expand the minor along the second column",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h10"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "111"
+        ],
+        "dependencies": [
+            "a464a32Determinant9a-h11"
+        ],
+        "title": "Calculation",
+        "text": "What is $$-5\\left(-12\\right)+0-3\\left(-17\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h12"
+        ],
+        "title": "Principle",
+        "text": "Replace the z coefficient with the constant to find Dz",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h13"
+        ],
+        "title": "Order of Operation",
+        "text": "Expand the minor along the third column",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h14"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "148"
+        ],
+        "dependencies": [
+            "a464a32Determinant9a-h15"
+        ],
+        "title": "Calculation",
+        "text": "What is $$5\\times11-0+3\\times31$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant9a-h17",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant9a-h16"
+        ],
+        "title": "Calculation",
+        "text": "Determine the values of the variables with the equation: $$x=\\frac{Dx}{D}$$, $$y=\\frac{Dy}{D}$$, $$z=\\frac{Dz}{D}$$",
+        "variabilization": {}
+    }
+]

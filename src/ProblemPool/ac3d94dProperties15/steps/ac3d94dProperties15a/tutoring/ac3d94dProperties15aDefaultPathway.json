@@ -1,0 +1,138 @@
+[
+    {
+        "id": "ac3d94dProperties15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Distributive Property",
+        "text": "Observing this question, we find that we will need to apply the distributive property twice, once for each of the parentheses.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties15a-h1"
+        ],
+        "title": "Distributive Property",
+        "text": "The distributive property states that if a, b, c are real numbers, then $$a \\left(b+c\\right)=ab+ac$$, and $$a \\left(b-c\\right)=ab-ac$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties15a-h2"
+        ],
+        "title": "Applying the Distributive Property",
+        "text": "Applying the distributive property to $$6\\left(7y+8\\right)$$, we get the expression $$6\\times7 y+6\\times8$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "42y"
+        ],
+        "dependencies": [
+            "ac3d94dProperties15a-h3"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$6\\times7 y$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "48"
+        ],
+        "dependencies": [
+            "ac3d94dProperties15a-h3"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$6\\times8$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties15a-h4",
+            "ac3d94dProperties15a-h5"
+        ],
+        "title": "First Expression",
+        "text": "Putting together the previous two parts, we get $$6\\left(7y+8\\right)=42y+48$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties15a-h2"
+        ],
+        "title": "Applying the Distributive Property",
+        "text": "Applying the distributive property to -(30y-15), we get the expression $$-1\\times30 y-15\\left(-1\\right)$$ (remember that -(30y-15) can be written as (-1)*(30y-15)).",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-30y"
+        ],
+        "dependencies": [
+            "ac3d94dProperties15a-h7"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$30\\left(-1\\right) y$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-15"
+        ],
+        "dependencies": [
+            "ac3d94dProperties15a-h7"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$15\\left(-1\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties15a-h8",
+            "ac3d94dProperties15a-h9"
+        ],
+        "title": "Second Expression",
+        "text": "Putting together the previous two parts, we get $$-(30y-15)=-30y-(-15)=-30y+15$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties15a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12y+63$$"
+        ],
+        "dependencies": [
+            "ac3d94dProperties15a-h6",
+            "ac3d94dProperties15a-h10"
+        ],
+        "title": "Combine Like Terms",
+        "text": "After applying the distributive property, the expression becomes $$42y+48-30y+15$$. Combine like terms, what do you get?",
+        "variabilization": {}
+    }
+]

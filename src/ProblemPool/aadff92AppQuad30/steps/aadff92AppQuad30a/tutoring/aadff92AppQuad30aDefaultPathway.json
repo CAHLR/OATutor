@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aadff92AppQuad30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the Conditions",
+        "text": "Let $$x=$$ the minutes that the younger gardener takes to get the job done alone. Then $$x+12$$ will be the number of minutes that the older gardener takes to get the job done alone. In one hour, the younger gardener gets $$\\frac{1}{x}$$ part of the job done and the older gardener gets $$\\frac{1}{12+x}$$ part of the job done. Together, in one minute, if both gardeners work together, they will get $$\\frac{1}{x}+\\frac{1}{x+12}$$ part of the job done.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad30a-h1"
+        ],
+        "title": "Set Up Equation For Problem",
+        "text": "We know that, in one minute, if both gardeners work together, they will get $$\\frac{1}{x}+\\frac{1}{x+12}$$ part of the job done. Given that if both painters work together, it takes 8 minutes to finish the job. In other words, they get $$\\frac{1}{8}$$ the job done in one minute. We can set the equation as $$\\frac{1}{x}+\\frac{1}{x+12}=\\frac{1}{8}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad30a-h2"
+        ],
+        "title": "Solve for Unknown Using Quadratic Formula",
+        "text": "$$\\frac{1}{x}+\\frac{1}{x+12}=\\frac{1}{8}$$ Solve for x. We can multiply both sides by the LCD which is $$x \\left(x+12\\right)$$. We get $$x+12+x=\\frac{1}{8} x \\left(x+12\\right)$$. We can futher simplify it into $$\\frac{1}{8} x^2-\\frac{1}{2} x-12=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad30a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-8,12)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad30a-h3"
+        ],
+        "title": "Solve for Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$. Given $$\\frac{1}{8} x^2-\\frac{1}{2} x-12=0$$, solve for x. If there are two answers, please enter them as (a,b) where $$a<b$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad30a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "Time can not be negative, so we can omit the negative answer. Therefore, the younger gardener takes 12 minutes to get the job done alone. The older gardener takes $$12+12=24$$ minutes to get the job done alone.",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "ab1ad7fGenStr27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplification",
+        "text": "Simplify each side of the equation as much as possible.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4p-10=0$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr27a-h1"
+        ],
+        "title": "Simplification",
+        "text": "Use the distributive property to simplify each side of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr27a-h2"
+        ],
+        "title": "Addition property of equality",
+        "text": "When you add the same quantity to both sides of an equation, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4p=10$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr27a-h3"
+        ],
+        "title": "Addition",
+        "text": "Add 10 to each side of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr27a-h4"
+        ],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p=\\frac{5}{2}$$"
+        ],
+        "dependencies": [
+            "ab1ad7fGenStr27a-h5"
+        ],
+        "title": "Division",
+        "text": "Divide 4 from each side.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab1ad7fGenStr27a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab1ad7fGenStr27a-h6"
+        ],
+        "title": "Classification",
+        "text": "Because the equation is true only when $$p=\\frac{5}{2}$$, it is a conditional equation.",
+        "variabilization": {}
+    }
+]

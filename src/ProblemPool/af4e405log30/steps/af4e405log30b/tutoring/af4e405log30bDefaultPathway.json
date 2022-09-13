@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af4e405log30b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$\\log_{a}\\left(27\\right)=3$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log30b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a^3=27$$"
+        ],
+        "dependencies": [
+            "af4e405log30b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{a}\\left(27\\right)=3$$?",
+        "variabilization": {},
+        "choices": [
+            "$$a^3=27$$",
+            "$${27}^3=a$$",
+            "$${27}^a=3$$",
+            "$$3^a=27$$"
+        ]
+    },
+    {
+        "id": "af4e405log30b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "af4e405log30b-h2"
+        ],
+        "title": "Solve for a",
+        "text": "What is the solution for a in the exponential equation $$a^3=27$$? Note that the domain of logarithmic equations is non-negative, so a must be non-negative!",
+        "variabilization": {}
+    }
+]

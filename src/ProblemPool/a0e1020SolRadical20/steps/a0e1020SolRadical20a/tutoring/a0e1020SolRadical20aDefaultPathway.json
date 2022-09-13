@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a0e1020SolRadical20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Radical Exponent Terms",
+        "text": "Isolate the radicals exponent terms on one side of the equation. We can subtract 1 on both sides get $${\\left(3x-2\\right)}^{\\frac{1}{2}}=5$$ which has radicals exponent terms isolated on one side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0e1020SolRadical20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0e1020SolRadical20a-h1"
+        ],
+        "title": "Raise Both Sides Of the Equation To The Second Power",
+        "text": "$${\\left({\\left(3x-2\\right)}^{\\frac{1}{2}}\\right)}^2=5^2$$ After cubing both sides, we get $$3x-2=25$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0e1020SolRadical20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0e1020SolRadical20a-h2"
+        ],
+        "title": "Check For Remaining Radicals Exponent Terms",
+        "text": "Are there any more radicals exponent terms? No. We can proceed to the next step.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0e1020SolRadical20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0e1020SolRadical20a-h3"
+        ],
+        "title": "Solve For Equation",
+        "text": "Solve for the equation $$3x-2=25$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0e1020SolRadical20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "a0e1020SolRadical20a-h4"
+        ],
+        "title": "Solve For Equation",
+        "text": "What is the value of x for $$3x-2=25$$?",
+        "variabilization": {}
+    }
+]

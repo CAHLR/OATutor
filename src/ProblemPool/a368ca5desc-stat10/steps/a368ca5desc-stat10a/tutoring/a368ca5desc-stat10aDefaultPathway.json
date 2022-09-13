@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a368ca5desc-stat10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definitions",
+        "text": "We know that we are talking about a singular value with this definition, so we can immediately rule out the IQR, Quartile 1, and Quartile 3.",
+        "variabilization": {}
+    },
+    {
+        "id": "a368ca5desc-stat10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Mean"
+        ],
+        "dependencies": [
+            "a368ca5desc-stat10a-h1"
+        ],
+        "title": "Solution",
+        "text": "Given that we are looking for a \\\"middle\\\" value, we can rule out Maximum and Minimum since they describe \\\"extreme\\\" values. Knowing this, what word are we describing with our definition?",
+        "variabilization": {},
+        "choices": [
+            "Maximum",
+            "Minimum",
+            "Mean",
+            "Median",
+            "IQR",
+            "Quartile 1",
+            "Quartile 3"
+        ]
+    }
+]

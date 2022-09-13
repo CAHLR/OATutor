@@ -1,0 +1,56 @@
+[
+    {
+        "id": "af4e405log27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to determine x such that x=log{}5{1}. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log27b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5^x=1$$"
+        ],
+        "dependencies": [
+            "af4e405log27b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{5}\\left(1\\right)=x$$?",
+        "variabilization": {},
+        "choices": [
+            "$$5^x=1$$",
+            "$$1^x=5$$",
+            "$$x^5=1$$",
+            "$$x^1=5$$"
+        ]
+    },
+    {
+        "id": "af4e405log27b-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4e405log27b-h2"
+        ],
+        "title": "Power of 0",
+        "text": "We note that for any number, x, $$x^0=1$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log27b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0"
+        ],
+        "dependencies": [
+            "af4e405log27b-h3"
+        ],
+        "title": "Solve for x",
+        "text": "What is x in $$5^x=1$$?",
+        "variabilization": {}
+    }
+]

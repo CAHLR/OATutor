@@ -1,0 +1,30 @@
+[
+    {
+        "id": "aeb975brationaldenom30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating a Common Denominator",
+        "text": "We must find the LCD in order to be able to add the fractions. The LCM of $$n^2-3n-10$$ and $$n^2+5n+6$$ is $$\\left(n+2\\right) \\left(n-5\\right) \\left(n+3\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aeb975brationaldenom30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb975brationaldenom30a-h1"
+        ],
+        "title": "Rewriting Each Fraction",
+        "text": "We can rewrite each fraction with a common scaler to get $$\\frac{2n\\left(n+3\\right)}{\\left(n+2\\right) \\left(n-5\\right) \\left(n+3\\right)}$$ + $$\\frac{6\\left(n-5\\right)}{\\left(n+2\\right) \\left(n-5\\right) \\left(n+3\\right)}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aeb975brationaldenom30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeb975brationaldenom30a-h2"
+        ],
+        "title": "Adding the Fractions",
+        "text": "Adding the fractions, we get $$\\frac{2n^2+12n-30}{\\left(n+2\\right) \\left(n-5\\right) \\left(n+3\\right)}$$",
+        "variabilization": {}
+    }
+]

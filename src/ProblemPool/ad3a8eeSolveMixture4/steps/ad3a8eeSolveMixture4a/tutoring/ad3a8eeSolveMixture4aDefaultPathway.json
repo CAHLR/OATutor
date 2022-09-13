@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ad3a8eeSolveMixture4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define variables",
+        "text": "Assign the number of child tickets a varible (like x) and the number of adult tickets another variable (like y)",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h1"
+        ],
+        "title": "Setting up equations",
+        "text": "Based on the question if x is the number of child tickets and y is the number of adult tickets then you seperate all the information into two different equations",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h2"
+        ],
+        "title": "Cost Equation",
+        "text": "One of the equations can represent the total cost of the event which we know to be $2820. Since each child ticket costs $3 we can multiply that with number of tickets to represent the total revenue of students. You can do the same with adult tickets and their sum would be equal to the total cost.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x+5y=2820$$"
+        ],
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h3"
+        ],
+        "title": "Cost Equation",
+        "text": "What is the equation equal to?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h4"
+        ],
+        "title": "Tickets equation",
+        "text": "You can represent the relationship between child tickets and adult tickets using the information given.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=810-x$$"
+        ],
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h5"
+        ],
+        "title": "Tickets equation",
+        "text": "What is the relationship",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h6"
+        ],
+        "title": "Combining the equations",
+        "text": "Seperate one variable in one of the equations and plug it in the second equation. In this case it would be easier to plug in $$y=810-x$$ into the equation $$3x+5y=2820$$ which would equal $$3x+5\\left(810-x\\right)=2820$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h7"
+        ],
+        "title": "Solve for the missing variable",
+        "text": "Use algebra to simplify the equation to solve for the missing variable (x)",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eeSolveMixture4a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eeSolveMixture4a-h8"
+        ],
+        "title": "Plug in for y",
+        "text": "Once you have a value for x plug that value one of the two equations to get the value of y",
+        "variabilization": {}
+    }
+]

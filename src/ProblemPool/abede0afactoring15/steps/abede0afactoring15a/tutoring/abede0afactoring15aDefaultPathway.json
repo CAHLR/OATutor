@@ -1,0 +1,60 @@
+[
+    {
+        "id": "abede0afactoring15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Goal",
+        "text": "Consider the binomial as $$a^3+b^3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring15a-h1"
+        ],
+        "title": "Formulas",
+        "text": "Recall: $$a^3+b^3=\\left(a+b\\right) \\left(a^2-ab+b^2\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "x"
+        ],
+        "dependencies": [
+            "abede0afactoring15a-h2"
+        ],
+        "title": "Find a",
+        "text": "What is a?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "abede0afactoring15a-h3"
+        ],
+        "title": "Find b",
+        "text": "What is b?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring15a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute the value of a and b into the formula",
+        "variabilization": {}
+    }
+]

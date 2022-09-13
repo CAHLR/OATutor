@@ -1,0 +1,30 @@
+[
+    {
+        "id": "afc244aSolveapp8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find LCD",
+        "text": "The least common denominator of $$\\frac{n+10}{4}$$ and $$\\frac{40-n}{6}$$ is 12.",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp8a-h1"
+        ],
+        "title": "Multiply LCD Both Sides",
+        "text": "Through multiplying both sides by LCD, we get $$3\\left(n+10\\right)=2(40-n)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp8a-h2"
+        ],
+        "title": "Isolate n on One side",
+        "text": "We can further simplify $$3\\left(n+10\\right)=2(40-n)$$ to $$3n+30=80-2n$$. By subtracting 30, we get $$3n=50-2n$$. We can add 2n both sides isolate n on one side and get $$5n=50$$. Lastly, we can divide both sides by 5 and get $$n=10$$ as the final answer.",
+        "variabilization": {}
+    }
+]

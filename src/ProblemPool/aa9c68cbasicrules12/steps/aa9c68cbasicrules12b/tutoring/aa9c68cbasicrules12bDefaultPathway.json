@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aa9c68cbasicrules12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules12a-h2"
+        ],
+        "title": "The Multiplication Rule",
+        "text": "If B and D are two events defined on a sample space, then P(B AND $$D)=P\\left(B\\right) P\\left(D|B\\right)$$. We want to find the probability that B and D both occur: this is the formula to use.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules12b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.4"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules12b-h3"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(B)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules12b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.5"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules12b-h4"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(D|B)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules12b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.2"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules12b-h5"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(B AND $$D)=P\\left(B\\right) P\\left(D|B\\right)$$?",
+        "variabilization": {}
+    }
+]

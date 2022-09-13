@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a8741a7log10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to determine x such that $$x=\\log_{9}\\left(3\\right)$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8741a7log10b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9^x=3$$"
+        ],
+        "dependencies": [
+            "a8741a7log10b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{9}\\left(3\\right)=x$$?",
+        "variabilization": {},
+        "choices": [
+            "$$9^x=3$$",
+            "$$3^x=9$$",
+            "$$x^9=3$$",
+            "$$x^3=9$$"
+        ]
+    },
+    {
+        "id": "a8741a7log10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3^2$$"
+        ],
+        "dependencies": [
+            "a8741a7log10b-h2"
+        ],
+        "title": "Rewrite 9 in terms of 3",
+        "text": "How can we rewrite 9 in terms of powers of 3?",
+        "variabilization": {},
+        "choices": [
+            "$$3^2$$",
+            "$$3^3$$",
+            "$$3^4$$",
+            "$$3^5$$"
+        ]
+    },
+    {
+        "id": "a8741a7log10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a8741a7log10b-h3"
+        ],
+        "title": "Solve for x",
+        "text": "Substitution $$3^2$$ into the exponential equation we found before, we get $${\\left(3^2\\right)}^x=3^1$$. We can simplify this into $$3^{2x}=3^1$$. What is x?",
+        "variabilization": {}
+    }
+]

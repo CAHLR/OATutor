@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aeba912Radicals13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Largest Square Factor",
+        "text": "Find the largest square factor inside the square root and separate it from the other term.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba912Radicals13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p^8$$"
+        ],
+        "dependencies": [
+            "aeba912Radicals13a-h1"
+        ],
+        "title": "Largest Square Factor",
+        "text": "What is the largest square factor in the square root?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba912Radicals13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeba912Radicals13a-h2"
+        ],
+        "title": "Factoring",
+        "text": "After we find the largest square factor, we can rewrite the radical as the product of two square roots.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba912Radicals13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeba912Radicals13a-h3"
+        ],
+        "title": "Factoring",
+        "text": "After we separate the two factors, we can take the square root of our perfect square.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba912Radicals13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p^4 \\sqrt{p}$$"
+        ],
+        "dependencies": [
+            "aeba912Radicals13a-h4"
+        ],
+        "title": "Simplifying Expression",
+        "text": "If we factor the terms, what will our answer be?",
+        "variabilization": {}
+    }
+]

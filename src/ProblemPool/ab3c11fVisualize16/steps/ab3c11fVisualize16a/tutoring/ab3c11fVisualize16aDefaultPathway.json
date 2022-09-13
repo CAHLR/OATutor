@@ -1,0 +1,146 @@
+[
+    {
+        "id": "ab3c11fVisualize16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fraction Division",
+        "text": "To divide fractions, we multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h1"
+        ],
+        "title": "Reciprocal",
+        "text": "The reciprocal of $$\\frac{a}{b}$$ is $$\\frac{b}{a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8}{pq}$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize16a-h2"
+        ],
+        "title": "Reciprocal of the Second Fraction",
+        "text": "What is the reciprocal of $$\\frac{pq}{8}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h3"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "The next step is to multiply the first fraction by the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h4"
+        ],
+        "title": "Determining the Sign",
+        "text": "Since the signs are the same, the product is positive.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h5"
+        ],
+        "title": "Multiplying Fractions",
+        "text": "To multiply fractions, we multiply the numerators and the denominators. So the numerator is $$8p$$ and the denominator is $$2pq$$. The next step is to simplify the fraction if possible.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize16a-h6"
+        ],
+        "title": "Checking for Common Factors",
+        "text": "Do $$8p$$ and $$2pq$$ have any common factors?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize16a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h7"
+        ],
+        "title": "Common Factors",
+        "text": "We will rewrite $$8q$$ and $$2pq$$ as the product of primes and divide out the common factors from there.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab3c11fVisualize16a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\times2\\times2 p$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize16a-h8"
+        ],
+        "title": "Rewriting the Numerator",
+        "text": "What is $$8p$$ written as the product of primes and variable(s)?",
+        "variabilization": {},
+        "choices": [
+            "$$2\\times2 p$$",
+            "$$2\\times2 q$$",
+            "$$2\\times2\\times2 p$$",
+            "$$2\\times2\\times3 p$$"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize16a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2p q$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize16a-h8"
+        ],
+        "title": "Rewriting the Denominator",
+        "text": "What is $$2pq$$ written as the product of primes and variable(s)?",
+        "variabilization": {},
+        "choices": [
+            "$$2p q$$",
+            "$$2p p q$$",
+            "$$p q$$"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize16a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize16a-h9",
+            "ab3c11fVisualize16a-h10"
+        ],
+        "title": "Dividing Common Factors",
+        "text": "We can now divide out the common factor $$2p$$ from both the top and the bottom, which gives us the fraction $$\\frac{2\\times2}{q}=\\frac{4}{q}$$.",
+        "variabilization": {}
+    }
+]

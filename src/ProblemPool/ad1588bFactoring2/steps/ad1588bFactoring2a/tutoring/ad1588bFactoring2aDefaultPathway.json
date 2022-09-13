@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ad1588bFactoring2a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6"
+        ],
+        "dependencies": [],
+        "title": "Find the Greatest Common Factor",
+        "text": "Find the Greatest Common Factor for the two terms in the expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad1588bFactoring2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4y^2-25$$"
+        ],
+        "dependencies": [
+            "ad1588bFactoring2a-h1"
+        ],
+        "title": "Factor out common factor",
+        "text": "(24*y**2)-150=6*(?), what is ?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad1588bFactoring2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2y"
+        ],
+        "dependencies": [
+            "ad1588bFactoring2a-h2"
+        ],
+        "title": "Difference of square",
+        "text": "We observe that 25 can be rewritten as square of 5. $$4y^2$$ can be rewritten as square of?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad1588bFactoring2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(2y+5\\right) \\left(2y-5\\right)$$"
+        ],
+        "dependencies": [
+            "ad1588bFactoring2a-h3"
+        ],
+        "title": "Formula",
+        "text": "Recall that $$\\left(a+b\\right) \\left(a-b\\right)=a^2-b^2$$. How do we factor $$4y^2-25$$?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "ad1588bFactoring2a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\left(2y+5\\right) \\left(2y-5\\right)$$"
+                ],
+                "dependencies": [],
+                "title": "Rewrite",
+                "text": "We can rewrite $$4y^2-25$$ as $${\\left(2y\\right)}^2-5^2$$, use the formula $$a^2-b^2=\\left(a-b\\right) \\left(a+b\\right)$$. we can factor $$4y^2-25$$ as?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "ad1588bFactoring2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6\\left(2y-5\\right) \\left(2y+5\\right)$$"
+        ],
+        "dependencies": [
+            "ad1588bFactoring2a-h4"
+        ],
+        "title": "Put together all factors",
+        "text": "$$24y^2-150=6\\left(4y^2-25\\right)$$, and $$4y^2-25=\\left(2y+5\\right) \\left(2y-5\\right)$$. What is the linear factor form of $$24y^2-150$$?",
+        "variabilization": {}
+    }
+]

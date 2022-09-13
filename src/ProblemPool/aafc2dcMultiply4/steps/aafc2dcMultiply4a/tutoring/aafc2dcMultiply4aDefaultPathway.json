@@ -1,0 +1,100 @@
+[
+    {
+        "id": "aafc2dcMultiply4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiplying",
+        "text": "First, by the order of operations, we should do the multiplications first.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-14"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply4a-h1"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$7\\left(-2\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply4a-h2"
+        ],
+        "title": "Multiplying",
+        "text": "$$7\\times2=14$$, and since 7 and -2 have different signs, our final answer is -14.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-28"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply4a-h3"
+        ],
+        "title": "Multiplying",
+        "text": "What is $$4\\left(-7\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply4a-h4"
+        ],
+        "title": "Multiplying",
+        "text": "$$4\\times7=28$$, and since 4 and -7 have different signs, our final answer is -28.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply4a-h5"
+        ],
+        "title": "Expression after Multiplication",
+        "text": "After the multiplications, our expression now turns into $$-14+\\left(-28\\right)-6$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-42"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply4a-h6"
+        ],
+        "title": "Adding",
+        "text": "By the order of operation, we then proceed by adding the first two terms together. What is $$-14+\\left(-28\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-48"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply4a-h7"
+        ],
+        "title": "Subtracting",
+        "text": "We are now left with the expression -42-6. What does this evaluate to?",
+        "variabilization": {}
+    }
+]

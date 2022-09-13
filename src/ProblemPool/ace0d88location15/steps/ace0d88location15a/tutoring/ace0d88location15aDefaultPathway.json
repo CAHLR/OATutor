@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ace0d88location15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentiles",
+        "text": "The percentage of data values that are less than or equal to the 40th percentile is 40%.",
+        "variabilization": {}
+    },
+    {
+        "id": "ace0d88location15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Eight points per game or less"
+        ],
+        "dependencies": [
+            "ace0d88location15a-h1"
+        ],
+        "title": "Determining Directionality",
+        "text": "Since the 40th percentile for the number of points scored per game for players was 8, does that equate to 40% of people finishing with eight points per game or less OR eight points per game or more?",
+        "variabilization": {},
+        "choices": [
+            "Eight points per game or less",
+            "Eight points per game or more"
+        ]
+    }
+]

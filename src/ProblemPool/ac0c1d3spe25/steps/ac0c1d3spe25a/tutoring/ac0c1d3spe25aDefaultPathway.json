@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ac0c1d3spe25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction Binomial Square Formula",
+        "text": "We compare our expression to the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2-2a b+b^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe25a-h1"
+        ],
+        "title": "Compare the Binomial",
+        "text": "$${\\left(a-b\\right)}^2$$ $${\\left(8p^3-3\\right)}^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8p^3$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe25a-h2"
+        ],
+        "title": "Identify a",
+        "text": "What is a in the expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "ac0c1d3spe25a-h3"
+        ],
+        "title": "Identify b",
+        "text": "What is b in the expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe25a-h3",
+            "ac0c1d3spe25a-h4"
+        ],
+        "title": "Plug in the Terms",
+        "text": "Substitute $$a=8p^3$$ and $$b=3$$ into the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2+2a b+b^2$$ $${\\left(8p^3-3\\right)}^2={\\left(8p^3\\right)}^2-2\\times8p^3\\times3+3^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe25a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe25a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$64p^6-48p^3+9$$",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "af4dac4log7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Log Rules",
+        "text": "Logarithm Division rule: $$\\log_{a}\\left(b\\right)-\\log_{a}\\left(c\\right)=\\log_{a}\\left(\\frac{b}{c}\\right)$$ $$\\log_{4}\\left(x+6\\right)-\\log_{4}\\left(2x+5\\right)=\\log_{4}\\left(\\frac{x+6}{2x+5}\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af4dac4log7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af4dac4log7a-h1"
+        ],
+        "title": "Use Log Rules",
+        "text": "Logarithm rule: $$k*\\log_{a}\\left(b\\right)=\\log_{a}\\left(b^k\\right)$$ where a and b are positive and a does not equal to 1. $$-\\log_{4}\\left(x\\right)=\\log_{4}\\left(x^{\\left(-1\\right)}\\right)=\\log_{4}\\left(\\frac{1}{x}\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af4dac4log7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4dac4log7a-h2"
+        ],
+        "title": "Match Bases and Solve for x",
+        "text": "$$\\log_{4}\\left(\\frac{x+6}{2x+5}\\right)=\\log_{4}\\left(\\frac{1}{x}\\right)$$ Since both sides has the same base, we can take out the logarithm and get $$\\frac{x+6}{2x+5}=\\frac{1}{x}$$. We can cross multiply and get $$x^2+6x=2x+5$$. We can simplify it into $$x^2+4x-5=0$$. We can factor the quadratic and get $$\\left(x+5\\right) \\left(x-1\\right)=0$$ which gives $$x=1$$ and $$x=-5$$. Given $$\\log_{a}\\left(b\\right)$$, b can not be negative. We can omit the negative answer. Therefore $$x=1$$ is the only solution for this equation.",
+        "variabilization": {}
+    }
+]
