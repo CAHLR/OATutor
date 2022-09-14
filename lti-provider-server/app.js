@@ -6,10 +6,21 @@ const jwtMiddleware = require('express-jwt');
 const level = require('level')
 const { SITE_NAME } = require("../src/config/shared-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
+const { calculateSemester } = require("../src/util/calculateSemester.js");
 const to = require("await-to-js").default;
-const memoize = require("lodash.memoize")
+const memoize = require("lodash.memoize");
 const readJsExportedObject = require("../src/tools/readJsExportedObject");
-const path = require("path")
+const path = require("path");
+const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
+
+const serviceAccount = require('./oatutor-firebase-adminsdk.json');
+
+initializeApp({
+  credential: cert(serviceAccount)
+});
+
+const firestoredb = getFirestore();
 
 const db = level('.mapping-db')
 
@@ -247,7 +258,7 @@ app.post('/postScore', jwtMiddleware({
     getToken
 }), async (req, res) => {
     const { user = {}, body } = req
-    const { consumer_key, linkedLesson } = user
+    const { consumer_key, linkedLesson, user_id } = user
     const { components, mastery } = body
 
     // console.debug('component and mastery from client: ', { components, mastery })
@@ -265,12 +276,13 @@ app.post('/postScore', jwtMiddleware({
 
     const getCoursePlans = memoize(readJsExportedObject);
     const coursePlans = await getCoursePlans(path.join(__dirname, "..", "src", "config", "coursePlans.js"));
-    let lessonName = null
+    var lessonName = null
+
     for (const course of coursePlans) {
-        const { lessons = [] } = course
-        const idxOfFind = lessons.find(lesson => lesson.id === linkedLesson)
+        const { lessons = [] } = course;
+        const idxOfFind = lessons.findIndex(lesson => lesson.id === linkedLesson);
         if (idxOfFind > -1) {
-            lessonName = lessons[idxOfFind].name
+            lessonName = lessons[idxOfFind].name.split(" ")[1] + " " + lessons[idxOfFind].topics;
             break
         }
     }
@@ -283,20 +295,147 @@ app.post('/postScore', jwtMiddleware({
         return
     }
 
-    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)
+    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)   
+    
+
+    let semester = calculateSemester(Date.now());
+    let canvasUserId = user_id;
+    let lesson = lessonName;
+    const submissionsRef = firestoredb.collection('problemSubmissions');
+    // const submissionsRef = firestoredb.collection('development_problemSubmissions');
+
+    const queryRef = submissionsRef.where('semester', '==', semester)
+                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lesson', '==', lesson)
+                        .orderBy('time_stamp', 'asc')
+                        .orderBy('problemID', 'asc');
+    const result = await queryRef.get();
+
+    var formattedText = `
+        <style>
+            .tb { border-collapse: collapse; text-align: center; }
+            .tb th, .tb td { padding: 10px; border: solid 1px #777; }
+            .correct { background-color: #bde9ba; }
+            .wrong { background-color: #f2a6a2; }
+        </style>
+        <table class="tb">
+            <thead><tr>
+                <th>Problem ID</th>
+                <th>Step ID</th>
+                <th>Action Type</th>
+                <th>Student Answer</th>
+                <th>Time Taken (s)</th>
+            </tr></thead>
+            <tbody>
+    `;
+
+    var lastProblemID = "";
+    var lastStepID = "";
+    var lastTime = -1;
+
+    // get time of first action
+    const firstQueryRef = submissionsRef.where('semester', '==', semester)
+                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lesson', '==', lesson)
+                        .orderBy('time_stamp', 'asc')
+                        .orderBy('problemID', 'asc')
+                        .limit(1);
+    const firstResult = await firstQueryRef.get();
+
+    firstResult.forEach(action => {
+        let data = action.data();
+        lastTime = data["time_stamp"];
+    })
+
+
+    // get time of last action before this lesson
+    const prevQueryRef = submissionsRef.where('canvas_user_id', '==', canvasUserId)
+                        .where('time_stamp', '<', lastTime)
+                        .orderBy('time_stamp', 'desc')
+                        .limit(1);
+    const prevResult = await prevQueryRef.get();
+
+    if (prevResult.size == 0) {
+        lastTime = -1;
+    } else {
+        prevResult.forEach(action => {
+            let data = action.data();
+            lastTime = data["time_stamp"];
+        })
+    }
+    
+
+    result.forEach(action => {
+        let data = action.data();
+        var problemID = "";
+        if (data["problemID"] != lastProblemID) {
+            problemID = `<a href="https://cahlr.github.io/OATutor-Content-Staging/#/debug/${data['problemID']}">${data['problemID']}</a>`
+            lastProblemID = data["problemID"];
+        }
+        var stepID = "";
+        if (data["stepID"] != lastStepID) {
+            stepID = data["stepID"];
+            lastStepID = data["stepID"];
+        }
+
+        let eventType = data["eventType"];
+
+        let input = data["input"] ? data["input"] : (data["hintInput"] ? data["hintInput"] : "");
+
+        var time = (lastTime == -1) ? "N/A" : Math.round((data["time_stamp"] - lastTime) / 1000);
+        if (time > 300) {
+            time = ">300";
+        }
+        
+        var correct = null;
+        if (data["isCorrect"] || data["hintIsCorrect"]) {
+            correct = true;
+        } else if (data["isCorrect"] == false || data["hintIsCorrect"] == false ) {
+            correct = false;
+        }
+
+        let bgColor = correct ? "correct" : (correct !== null ? "wrong" : "na")
+
+        if (eventType === "unlockHint") {
+            bgColor = "na"
+        }
+
+        lastTime = data["time_stamp"];
+
+        formattedText += `
+        <tr>
+            <td>${problemID}</td>
+            <td>${stepID}</td>
+            <td>${eventType}</td>
+            <td class="${bgColor}">${input}</td>
+            <td>${time}</td>
+        </tr>
+        `;
+    });
+
+    formattedText += `
+                </tbody>
+            </table>
+            `;
+
+    if (result.size == 0) {
+        formattedText = "No student activity found for this lesson.";
+    }
 
     const text = `
-      <h1> Component Breakdown </h1>
-      <h4> Overall score: ${score}%</h4>
-      ${Object
-        .keys(components)
-        .map((key, i) =>
-            `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
-      ${"&#9646;".repeat((+components[key]) * 10)}
-      ${"&#9647;".repeat(10 - (+components[key]) * 10)}
-      </p>`
-        )
-        .join("")}
+        <h1> Component Breakdown </h1>
+        <h4> Overall score: ${Math.round(score * 10000) / 100}%</h4>
+        ${Object
+            .keys(components)
+            .map((key, i) =>
+                `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
+        ${"&#9646;".repeat((+components[key]) * 10)}
+        ${"&#9647;".repeat(10 - (+components[key]) * 10)}
+        </p>`
+            )
+            .join("")}
+        <h4 style="padding-top: 10px"> Problem Stats </h4>
+        ${formattedText}
     `;
 
     provider.outcome_service.send_replace_result_with_text(score, text, (err, result) => {
@@ -307,7 +446,8 @@ app.post('/postScore', jwtMiddleware({
         }
 
         res.status(200).end()
-    })
+    });
+
 })
 
 /**
