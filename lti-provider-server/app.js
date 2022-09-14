@@ -298,12 +298,9 @@ app.post('/postScore', jwtMiddleware({
     const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)   
     
 
-    // let semester = calculateSemester(Date.now());
-    // let canvasUserId = user_id;
-    // let lesson = lessonName;
-    let semester = 'Spring 2022';
-    let lesson = '1.1 Use the Language of Algebra';
-    let canvasUserId = 'aaf8e7a1f1b767b5fdcb7ef73276814f810e639f';
+    let semester = calculateSemester(Date.now());
+    let canvasUserId = user_id;
+    let lesson = lessonName;
     const submissionsRef = firestoredb.collection('problemSubmissions');
     // const submissionsRef = firestoredb.collection('development_problemSubmissions');
 
@@ -398,6 +395,11 @@ app.post('/postScore', jwtMiddleware({
         }
 
         let bgColor = correct ? "correct" : (correct !== null ? "wrong" : "na")
+
+        if (eventType === "unlockHint") {
+            bgColor = "na"
+        }
+
         lastTime = data["time_stamp"];
 
         formattedText += `
@@ -422,7 +424,7 @@ app.post('/postScore', jwtMiddleware({
 
     const text = `
         <h1> Component Breakdown </h1>
-        <h4> Overall score: ${score}%</h4>
+        <h4> Overall score: ${Math.round(score * 10000) / 100}%</h4>
         ${Object
             .keys(components)
             .map((key, i) =>
