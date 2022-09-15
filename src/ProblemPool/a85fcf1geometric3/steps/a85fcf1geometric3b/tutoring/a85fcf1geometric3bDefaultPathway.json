@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a85fcf1geometric3b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a85fcf1geometric3a-h7"
+        ],
+        "title": "Find Ratios of Consecutive Terms",
+        "text": "To determine if a sequence is geometric, we find the ratio of the consecutive terms shown.",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h8"
+        ],
+        "title": "Ratio Between 5 and 10",
+        "text": "What is the common ratio between 5 and 10? Effectively, what is $$\\frac{10}{5}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h9"
+        ],
+        "title": "Ratio Between 10 and 20",
+        "text": "What is the common ratio between 10 and 20? Effectively, what is $$\\frac{20}{10}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h10"
+        ],
+        "title": "Ratio Between 20 and 40",
+        "text": "What is the common ratio between 20 and 40? Effectively, what is $$\\frac{40}{20}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h11"
+        ],
+        "title": "Ratio Between 40 and 80",
+        "text": "What is the common ratio between 40 and 80? Effectively, what is $$\\frac{80}{40}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h12"
+        ],
+        "title": "Ratio Between 80 and 160",
+        "text": "What is the common ratio between 80 and 160? Effectively, what is $$\\frac{160}{80}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric3b-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the series is geometric. The common ratio is $$r=2$$."
+        ],
+        "dependencies": [
+            "a85fcf1geometric3b-h13"
+        ],
+        "title": "Determining Commonality in Ratios",
+        "text": "Are the ratios between consecutive terms common?",
+        "variabilization": {},
+        "choices": [
+            "Yes, the series is geometric. The common ratio is $$r=2$$.",
+            "Yes, the series is geometric. The common ratio is $$r=\\frac{1}{2}$$.",
+            "Yes, the series is geometric. The common ratio is $$r=\\frac{1}{4}$$.",
+            "No, the series is not geometric."
+        ]
+    }
+]

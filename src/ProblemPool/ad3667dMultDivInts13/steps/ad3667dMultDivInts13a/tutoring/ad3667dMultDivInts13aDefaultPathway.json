@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ad3667dMultDivInts13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute the value for n into the expression",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad3667dMultDivInts13a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Evaluate the expression with the substituted value of n",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-4"
+        ],
+        "dependencies": [
+            "ad3667dMultDivInts13a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$-5+1$$?",
+        "variabilization": {}
+    }
+]

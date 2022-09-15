@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a555a5ccenter2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Mean",
+        "text": "The mean (also called the average) is formed by adding up all the data points and then divide by the total number of data points.",
+        "variabilization": {}
+    },
+    {
+        "id": "a555a5ccenter2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "544"
+        ],
+        "dependencies": [
+            "a555a5ccenter2a-h1"
+        ],
+        "title": "Finding the Total Sum",
+        "text": "What is the total sum of all the data points?",
+        "variabilization": {}
+    },
+    {
+        "id": "a555a5ccenter2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "39"
+        ],
+        "dependencies": [
+            "a555a5ccenter2a-h2"
+        ],
+        "title": "Finding the Total Number of Data Points",
+        "text": "How many total data points are there? In other words, how many numbers did you sum together in the last part?",
+        "variabilization": {}
+    },
+    {
+        "id": "a555a5ccenter2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "13.95"
+        ],
+        "dependencies": [
+            "a555a5ccenter2a-h3"
+        ],
+        "title": "Calculating Mean from Total Sum and Total Number of Data Points",
+        "text": "What is the mean? Round to the nearest hundredth place.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a555a5ccenter2a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "13.95"
+                ],
+                "dependencies": [],
+                "title": "Calculating Mean from Total Sum and Total Number of Data Points",
+                "text": "What is $$\\frac{544}{39}$$ rounded to the nearest hundredth place?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

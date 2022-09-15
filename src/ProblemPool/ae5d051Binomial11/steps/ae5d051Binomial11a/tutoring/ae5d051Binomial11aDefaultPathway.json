@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae5d051Binomial11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Success?",
+        "text": "What would we consider as a \\\"success\\\" in 1 trial of this situation? By the way the situation is presented, it is fairly clear that the dolphin doing the trick should be considered a win. This is because the probability of our dolphin doing a trick was brought up before the probability of our dolphin failing. In addition, this means that a \\\"failure\\\" would be the dolphin failing the trick.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae5d051Binomial11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae5d051Binomial11a-h1"
+        ],
+        "title": "Binomial Equations",
+        "text": "Keep in mind that the equation to calculate binomial probabilities is: (n choose x) * $$p^x$$ * $$q^{n-x}$$, where n $$=$$ total trials, x $$=$$ trials with a success, p $$=$$ probabilty of success, and q $$=$$ probability of failure. You can also use most calculators nowadays to calculate binomial probabilities, in addition to the internet.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae5d051Binomial11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae5d051Binomial11a-h2"
+        ],
+        "title": "Variables",
+        "text": "Now that we have our equation, what will all our relevant variables be? n $$=$$ 10, x $$=$$ 2, p $$=$$ .35, and q $$=$$ .65.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae5d051Binomial11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.1757"
+        ],
+        "dependencies": [
+            "ae5d051Binomial11a-h3"
+        ],
+        "title": "Answer",
+        "text": "Knowing about what we consider a \\\"success\\\", in addition to our probability equation, what is our final answer going to be?",
+        "variabilization": {}
+    }
+]

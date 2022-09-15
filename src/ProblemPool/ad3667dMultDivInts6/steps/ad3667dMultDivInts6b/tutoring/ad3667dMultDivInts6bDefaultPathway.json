@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ad3667dMultDivInts6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divide Numbers",
+        "text": "First, divide the numbers as if they were positive.",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts6b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "23"
+        ],
+        "dependencies": [
+            "ad3667dMultDivInts6b-h1"
+        ],
+        "title": "Divide Numbers",
+        "text": "What is $$\\frac{115}{5}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3667dMultDivInts6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3667dMultDivInts6b-h2"
+        ],
+        "title": "Final Sign",
+        "text": "If the signs of the integers are the same, then the quotient is positive; otherwise, the quotient is negative.",
+        "variabilization": {}
+    }
+]

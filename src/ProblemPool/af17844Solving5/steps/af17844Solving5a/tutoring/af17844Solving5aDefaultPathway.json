@@ -1,0 +1,55 @@
+[
+    {
+        "id": "af17844Solving5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setup",
+        "text": "Assume the number is x",
+        "variabilization": {}
+    },
+    {
+        "id": "af17844Solving5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af17844Solving5a-h1"
+        ],
+        "title": "Setup",
+        "text": "Write an equation based on the question: $$4x+2=14$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af17844Solving5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af17844Solving5a-h2"
+        ],
+        "title": "Organizing",
+        "text": "Rewrite the equation as $$4x=14-2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af17844Solving5a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12"
+        ],
+        "dependencies": [
+            "af17844Solving5a-h3"
+        ],
+        "title": "Subtraction",
+        "text": "What is 14-2?",
+        "variabilization": {}
+    },
+    {
+        "id": "af17844Solving5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af17844Solving5a-h3"
+        ],
+        "title": "Division",
+        "text": "Dividing the coefficient on x to get the answer",
+        "variabilization": {}
+    }
+]
