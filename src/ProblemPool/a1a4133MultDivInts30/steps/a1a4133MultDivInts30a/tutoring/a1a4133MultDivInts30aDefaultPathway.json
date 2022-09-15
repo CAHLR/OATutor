@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a1a4133MultDivInts30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate",
+        "text": "First, translate the problem to an algebraic expression",
+        "variabilization": {}
+    },
+    {
+        "id": "a1a4133MultDivInts30a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-38+225$$"
+        ],
+        "dependencies": [
+            "a1a4133MultDivInts30a-h1"
+        ],
+        "title": "Translate",
+        "text": "What is the algebraic representation of the problem?",
+        "variabilization": {}
+    },
+    {
+        "id": "a1a4133MultDivInts30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a4133MultDivInts30a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Next, simplify the algebraic expression that you get",
+        "variabilization": {}
+    },
+    {
+        "id": "a1a4133MultDivInts30a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "187"
+        ],
+        "dependencies": [
+            "a1a4133MultDivInts30a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What is $$-38+225$$?",
+        "variabilization": {}
+    }
+]

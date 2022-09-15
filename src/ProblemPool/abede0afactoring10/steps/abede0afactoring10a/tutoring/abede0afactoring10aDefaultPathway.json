@@ -1,0 +1,50 @@
+[
+    {
+        "id": "abede0afactoring10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Goal",
+        "text": "Check if the trinomial follows the pattern of $$a^2+2ab+b^2$$ or $$a^2-2ab+b^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11m"
+        ],
+        "dependencies": [
+            "abede0afactoring10a-h1"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of $$64y^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "abede0afactoring10a-h2"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of 9?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring10a-h3"
+        ],
+        "title": "Manipulate",
+        "text": "Organize the term into $$\\left(11m-1\\right) \\left(11m+1\\right)$$",
+        "variabilization": {}
+    }
+]

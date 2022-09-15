@@ -1,0 +1,96 @@
+[
+    {
+        "id": "aebabdedividing6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use distributive property",
+        "text": "Use distributive property to rewrite the expression $$\\frac{8x^3+6x^2}{2x}=\\frac{8x^3}{2x}+\\frac{6x^2}{2x}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aebabdedividing6a-h1"
+        ],
+        "title": "Use distributive property",
+        "text": "As a reminder, the distributive law states $$\\left(a+b\\right) c=a c+b c$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aebabdedividing6a-h2"
+        ],
+        "title": "Use distributive property",
+        "text": "in this case, we can see divided by $$2x$$ as multiply by $$\\frac{1}{2x}$$, $$a=8x^3$$ , $$b=6x^2$$, $$c=\\frac{1}{2x}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^2$$"
+        ],
+        "dependencies": [
+            "aebabdedividing6a-h3"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "Simplify $$\\frac{8x^3}{2x}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
+        "dependencies": [
+            "aebabdedividing6a-h4"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "Simplify $$\\frac{6x^2}{2x}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aebabdedividing6a-h5"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "As a reminder, the power rule states for any integer m, n and real number a, $$\\frac{a^m}{a^n}=a^{m-n}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aebabdedividing6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^2+3x$$"
+        ],
+        "dependencies": [
+            "aebabdedividing6a-h6",
+            "aebabdedividing6a-h5"
+        ],
+        "title": "Combine the simplified terms",
+        "text": "As our last step, we can put the simplified terms back to the $$\\operatorname{expression}\\left(\\frac{8x^3}{2x}\\right)+\\frac{6x^2}{2x}$$",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "aebabdedividing6a-h7-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Combine the simplified terms",
+                "text": "in the expression $$\\frac{8x^3}{2x}+\\frac{6x^2}{2x}$$, replace $$\\frac{8x^3}{2x}$$ with $$4x^2$$, and $$\\frac{\\operatorname{replace}\\left(6x^2\\right)}{2x}$$ with $$3x$$ then we yield a new expression",
+                "variabilization": {}
+            }
+        ]
+    }
+]

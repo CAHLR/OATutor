@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a02cb12AddRational14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine if the Expression Have a Common Denominator",
+        "text": "The expression does not have a common denominator, so we need to find the common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+2\\right) \\left(x-2\\right)$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational14a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Since the one of the denominator is quadratic, we can try to factor the it. What is the linear factor form of $$x^2-4$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+2\\right) \\left(x-2\\right)$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational14a-h2"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "We can rewrite $$\\frac{2x}{x^2-4}$$ as $$\\frac{2x}{\\left(x+2\\right) \\left(x-2\\right)}$$, what is the least common denominator for $$\\frac{2x}{\\left(x+2\\right) \\left(x-2\\right)}-\\frac{1}{x+2}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational14a-h3"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Rewrite each rational expression as an equivalent rational expression with the LCD.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational14a-h4"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Since $$\\frac{2x}{x^2-4}=\\frac{2x}{\\left(x+2\\right) \\left(x-2\\right)}$$ already has LCD as denominator, we need to find the equivalent rational expression with the LCD $$\\left(x+2\\right) \\left(x-2\\right)$$ for $$\\frac{1}{x+2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-2}{x+2} \\left(x-2\\right)$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational14a-h5"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Find the equivalent rational expression with the LCD $$\\left(x+2\\right) \\left(x-2\\right)$$ for $$\\frac{1}{x+2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational14a-h6"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "Subtract the numerators and place the difference over the common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+2$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational14a-h7"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "What is the difference of numerators for $$\\frac{2x}{\\left(x+2\\right) \\left(x-2\\right)}-\\frac{x-2}{x+2} \\left(x-2\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational14a-h8"
+        ],
+        "title": "Simplify the Expression",
+        "text": "According to the above steps, we can rewrite $$\\frac{2x}{x^2-4}-\\frac{1}{x+2}$$ as $$\\frac{x+2}{\\left(x+2\\right) \\left(x-2\\right)}$$, are there any ways to simplify the new expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational14a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{x-2}$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational14a-h9"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Yes, we can there is a common factor of $$x+2$$ in both numerator and denominator of $$\\frac{x+2}{x+2} \\left(x-2\\right)$$. By cancelling out $$x+2$$ in both numerator and denominator, what do we get?",
+        "variabilization": {}
+    }
+]

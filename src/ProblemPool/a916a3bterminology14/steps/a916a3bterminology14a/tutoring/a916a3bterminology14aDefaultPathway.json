@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a916a3bterminology14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {}
+    },
+    {
+        "id": "a916a3bterminology14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "16"
+        ],
+        "dependencies": [
+            "a916a3bterminology14a-h1"
+        ],
+        "title": "Size of O",
+        "text": "What is the size of O? Effectively, how many jelly beans are orange in the sample space?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a916a3bterminology14a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "16"
+                ],
+                "dependencies": [],
+                "title": "Size of O",
+                "text": "We also know that the rest of the jelly beans (the ones that are not red, yellow, green, purple, or blue) are orange. Therefore, what is the number of orange jelly beans?",
+                "variabilization": {}
+            },
+            {
+                "id": "a916a3bterminology14a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "16"
+                ],
+                "dependencies": [],
+                "title": "Size of O",
+                "text": "What is 150-22-38-20-28-27?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a916a3bterminology14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "150"
+        ],
+        "dependencies": [
+            "a916a3bterminology14a-h2"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total jelly beans were there?",
+        "variabilization": {}
+    },
+    {
+        "id": "a916a3bterminology14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{150}$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology14a-h3"
+        ],
+        "title": "Determining P(O)",
+        "text": "What is P(O), or what is the size of O divided by the size of the sample size?",
+        "variabilization": {}
+    }
+]

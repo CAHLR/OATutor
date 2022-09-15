@@ -1,0 +1,30 @@
+[
+    {
+        "id": "afc244aSolveapp7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find LCD",
+        "text": "The least common denominator of $$\\frac{m+90}{25}$$ and $$\\frac{m+30}{15}$$ is 75.",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp7a-h1"
+        ],
+        "title": "Multiply LCD Both Sides",
+        "text": "Through multiplying both sides by LCD, we get $$3\\left(m+90\\right)=5\\left(m+30\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "afc244aSolveapp7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc244aSolveapp7a-h2"
+        ],
+        "title": "Isolate m on One side",
+        "text": "We can further simplify $$3\\left(m+90\\right)=5\\left(m+30\\right)$$ to $$3m+270=5m+150$$. By subtracting 3m and 150 both sides, we get $$120=2m$$. Then we divide both sides of the equation by 2 and get $$m=60$$ as the final answer.",
+        "variabilization": {}
+    }
+]

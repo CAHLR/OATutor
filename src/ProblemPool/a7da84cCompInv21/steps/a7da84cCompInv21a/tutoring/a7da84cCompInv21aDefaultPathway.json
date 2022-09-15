@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a7da84cCompInv21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interchange the variables x and y",
+        "text": "Replace x with y and then y with x.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7da84cCompInv21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7da84cCompInv21a-h1"
+        ],
+        "title": "What's the equation after replacing x with y and y with x",
+        "text": "x $$=$$ $$8y+5$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a7da84cCompInv21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7da84cCompInv21a-h2"
+        ],
+        "title": "Solve for y",
+        "text": "solve for y and find the result",
+        "variabilization": {}
+    },
+    {
+        "id": "a7da84cCompInv21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7da84cCompInv21a-h3"
+        ],
+        "title": "Solve for y",
+        "text": "We can subtract 5 from each side then divide by 8. It gives us $$y=\\frac{x-5}{8}$$. We can further simplify it into y $$=\\frac{x}{8}-\\frac{5}{8}$$.",
+        "variabilization": {}
+    }
+]

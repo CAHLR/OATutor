@@ -1,0 +1,61 @@
+[
+    {
+        "id": "aa9c68cbasicrules5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules5a-h3"
+        ],
+        "title": "Definition of Independence",
+        "text": "If A and B are independent, then $$P(A|B)=P(A)$$ and P(A AND $$B)=P(A)P(B)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{10}{150}$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules5b-h4"
+        ],
+        "title": "Application of Independence",
+        "text": "If we let A $$=$$ the member is a novice swimmer and B $$=$$ the member practices four times per week, what is P(A AND B)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules5b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2240}{22500}$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules5b-h5"
+        ],
+        "title": "Application of Independence",
+        "text": "What is $$P\\left(A\\right) P\\left(B\\right)$$, or the probability that the member is a novice multiplied by the probability that the member practices four times a week?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules5b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules5b-h6"
+        ],
+        "title": "Application of Independence",
+        "text": "Is P(A AND B) equal to $$P\\left(A\\right) P\\left(B\\right)$$? If yes, then A and B are independent; if no, then A and B are not independent.",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

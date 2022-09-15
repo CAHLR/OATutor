@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a059de3q20a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15.1"
+        ],
+        "dependencies": [],
+        "title": "Finding the mean.",
+        "text": "What is the mean?",
+        "variabilization": {}
+    },
+    {
+        "id": "a059de3q20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12.5"
+        ],
+        "dependencies": [
+            "a059de3q20a-h1"
+        ],
+        "title": "Finding the median.",
+        "text": "What is the median?",
+        "variabilization": {}
+    },
+    {
+        "id": "a059de3q20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12"
+        ],
+        "dependencies": [
+            "a059de3q20a-h2"
+        ],
+        "title": "Finding the mode.",
+        "text": "What is the mode?",
+        "variabilization": {}
+    }
+]
