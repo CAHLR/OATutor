@@ -390,7 +390,23 @@ export { step };
 }
 ```
 
-AB testing:
+### Creative Commons Attribution
+
+This repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
+the form of hints and scaffolds, authored and edited by the OAT project.
+
+1. A subset of problems are derivatives of _OpenStax: Elementary Algebra_ by OpenStax, used under CC
+   BY 4.0
+2. A subset of problems are derivatives of _OpenStax: Intermediate Algebra_ by OpenStax, used under CC
+   BY 4.0
+3. A subset of problems are derivatives of _Openstax: College Algebra_ by OpenStax, used under CC
+   BY 4.0
+
+Upon release, our provided content pool will therefore also have the most permissive “CC BY” license.
+
+## Research
+
+### AB testing
 OATutor was designed with the research case in mind and thus supports AB testing for many features. The benefit of the
 open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they
 would like. To show that this is possible, we have included several examples of how one could use AB testing. One
@@ -402,7 +418,7 @@ between the two heuristics depending on a randomly generated userID. The userID 
 treatment can be inferred from this. Other examples of AB testing included are different BKT parameter files and
 different default hint pathways.
 
-Details of KC model Description (how it works/format)
+### Details of KC model Description (how it works/format)
 Knowledge components (KCs) are assigned at the step level in the file skillModel.js. A KC is defined as a string that
 contains corresponding BKT parameters (existing in bktParams.js file) including probMastery, probTransit, probSlip, and
 probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.js
@@ -418,7 +434,7 @@ step. There are two possible help items: hints which are purely textual and have
 contain user input (again, either textbox or multiple choice). Scaffolds can contain help items themselves, except this
 is the deepest level of content (the scaffolds's scaffolds cannot contain any help items).
 
-BKT algorithm selecting problems.
+### BKT algorithm selecting problems
 
 OATutor uses Bayesian Knowledge Tracing to determine model mastery based on an input. (If you need to describe how BKT
 works, just copy the descriptions of the 4 model parameters used in BKT from wikipedia along with equations a thru d.
