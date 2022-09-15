@@ -4,6 +4,8 @@ OATutor, formerly known as OpenITS, is an open source Intelligent Tutoring Syste
 implemented in ReactJS and using Firebase for logging. Includes ExpressJS middleware for interoperability
 with LTI-compatible learning management systems (such as [Canvas](https://www.instructure.com/)).
 
+> Jump to [OATutor Content](#oatutor-content)
+
 ## Requirements
 
 The installation assumes that you already have Git, Node.js, and npm installed.
@@ -27,6 +29,13 @@ npm install
 
 ```sh
 npm run start
+```
+
+### Building & Deployment
+
+```sh
+npm run build
+npx serve -s build
 ```
 
 ### \[Optional\] Firebase Setup
@@ -220,7 +229,7 @@ DO_FOCUS_TRACKING = false;
    listener logs.
 4. Configure buffer size and granularity of logging
 
-## Problem Pool
+## Problem Pool<a id='oatutor-content'></a>
 
 ### Adding a problem to the Problem Pool
 
