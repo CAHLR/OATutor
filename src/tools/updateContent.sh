@@ -84,7 +84,7 @@ cp src/config/bktParams/bktParams1.js src/config/bktParams/bktParams2.js
 echo "Generating flattened problem pool."
 
 cd src/tools || exit
-node generateFlatProblemPool.js >>"$OUT_FILE" 2>&1
+node preprocessProblemPool.js >>"$OUT_FILE" 2>&1
 
 echo "Make sure to increment version in OATutor/src/config/config.js!"
 
