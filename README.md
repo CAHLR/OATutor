@@ -15,6 +15,7 @@ git clone https://github.com/CAHLR/OATutor.git
 cd OATutor
 ```
 
+### Dependencies
 ```sh
 npm install
 ```
@@ -22,9 +23,15 @@ npm install
 > You may use an alternative package manager such as [yarn](https://yarnpkg.com/) or
 > [pnpm](https://pnpm.io/).
 
+### Local Development Server
+
+```sh
+npm run start
+```
+
 ### \[Optional\] Firebase Setup
 
-OATutor can use Firebase to log data.
+OATutor can use Firebase to persistently store log data.
 
 1. Navigate to the Firebase [website](https://console.firebase.google.com/)
 2. Add new project. Configure it as you wish (the options are not important for setup)
@@ -32,7 +39,112 @@ OATutor can use Firebase to log data.
 4. Click on Project settings --> general. Copy SDK Setup & Configuration --> Config
 5. Put configuration in `src/config/firebaseConfig.js`
 
-### \[Optional\] Convenience Tools
+## Features:
+
+1. Scaffolding/hint system - modularize the type of help
+2. Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
+3. Centralized skill model - `src/config/skillModel.js`
+4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
+5. User login/registration - JSON Web Tokens
+
+## Technologies Used
+
+* Frontend: ReactJS
+    * Theme: Material UI
+    * Database: localForage (localStorage, WebSQL, IndexedDB)
+    * Deployment: Github Actions
+    * \[Optional\] Logging: Firebase (Cloud Firestore)
+* Middleware: ExpressJS
+    * Database: Level-DB
+* Offline Computation/Iteration:
+    * Python (dAFM Machine Learning algorithm)
+
+## Project Structure:
+
+Code for this project is located in the `src` directory.
+
+### . (src)
+
+- `App.css`: Top level style sheet, contains colors for headers/logo
+- `App.js`: Top level script, creates firebase object. Sets up the application context.
+- `index.js`: Renders `App.js`
+
+### /BKT
+
+- `BKTBrains.js`: Contains `update` function that implements the standard BKT update algorithm.
+
+### /ProblemLayout
+
+- `HintSystem.js`: Expandable panel component to display all the hints.
+
+- `HintTextbox.js`: Textbox for scaffold types of hints with answers.
+
+- `Problem.js`: The "problem" component created in App.js. The component is initailized with a "problem" object as one
+  of its props. It then creates a series of "ProblemCards" in `const parts` (currently keys for ProblemCard components
+  are random values, should be UUIDs in the future).
+
+  The `answerMade` function is passed to each ProblemCard component and is called whenever an answer is submitted to a
+  ProblemCard. This enables the Problem component to update the knowledge component variables after each answer and
+  transition to the next problem after all answers are correct.
+
+- `ProblemCard.js`: This component displays an individual card, updates the input text field to display the result of an
+  answer attempt, and calls the `Problem.js`  `answerMade` function when the submit button is pressed.
+
+These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and `classes` references). Check their
+website for more info on this syntax.
+
+- `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
+
+### /ProblemLogic
+
+- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
+  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
+  match.
+
+- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
+  problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
+  function `nextProblem` is used to determine the next problem to be displayed.
+
+- `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
+
+- `renderText.js`: Method called to render text. Fills in dynamic text generation.
+
+### /ProblemPool [Configurable]
+
+- Each problem is contained in its own folder.
+- Problems can contain steps which are contained in their own sub-folder.
+- Steps can contain hints which are stored as pathways in the `tutoring` sub-folder.
+- All problems are pre-processed before being ingested by the frontend platform. All problems are accumulated in the `src/generated/flatProblemPool.json` file prior to each run or build.
+
+#### Markdown Support
+
+- All `\` must be escaped as `\\` because values are strings
+- Wrap Latex in `$` for inline LaTeX
+- Newlines can be created with `\n`, escaped as `\\n`
+
+### /config [Configurable]
+
+- `config.js`: Central place where options can be configured. Also includes function to get the treatment id given a
+  userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
+
+- `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the
+  BKT model.
+- `./problemSelectHeuristics/problemSelectHeuristic.js`: This file contains a configurable heuristic for adaptive
+  problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
+  probability of mastery across all of its knowledge components, but this can be changed to any heuristic.
+
+- `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
+
+```javascript
+const skillModel = {
+    problemID1a: ['skill1', 'skill2'],
+    problemID1b: ['skill2', 'skill3'],
+    // ...
+}
+export default skillModel;
+```
+
+### /tools [Optional]
 
 Data parsing and spreadsheet populating tools are stored in `src/tools`. If you would
 like to use any of the tools in this directory, the following steps must be taken to
@@ -67,113 +179,9 @@ From the `src/tools` directory, `node populateGoogleSheets.js`
 This tool requires no additional set up, and allows you to download a CSV of the Firebase
 collections.
 
-## Features:
+### /util
 
-1. Scaffolding/hint system - modularize the type of help
-2. Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3. Centralized skill model - `src/config/skillModel.js`
-4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
-5. User login/registration - JSON Web Tokens
-
-## Technologies Used
-
-* Frontend: ReactJS
-    * Theme: Material UI
-    * Database: localForage (localStorage, WebSQL, IndexedDB)
-    * Deployment: Github Actions
-    * \[Optional\] Logging: Firebase (Cloud Firestore)
-* Middleware: ExpressJS
-    * Database: Level-DB
-* Offline Computation/Iteration:
-    * Python (dAFM Machine Learning algorithm)
-
-# Project Structure:
-
-Code for this project is located in the `src` directory.
-
-## src
-
-- `App.css`: Top level style sheet, contains colors for headers/logo
-- `App.js`: Top level script, creates firebase object. Sets up the application context.
-- `index.js`: Renders `App.js`
-
-## BKT
-
-- `BKTBrains.js`: Contains `update` function that implements the standard BKT update algorithm.
-
-## ProblemLayout
-
-- `HintSystem.js`: Expandable panel component to display all the hints.
-
-- `HintTextbox.js`: Textbox for scaffold types of hints with answers.
-
-- `Problem.js`: The "problem" component created in App.js. The component is initailized with a "problem" object as one
-  of its props. It then creates a series of "ProblemCards" in `const parts` (currently keys for ProblemCard components
-  are random values, should be UUIDs in the future).
-
-  The `answerMade` function is passed to each ProblemCard component and is called whenever an answer is submitted to a
-  ProblemCard. This enables the Problem component to update the knowledge component variables after each answer and
-  transition to the next problem after all answers are correct.
-
-- `ProblemCard.js`: This component displays an individual card, updates the input text field to display the result of an
-  answer attempt, and calls the `Problem.js`  `answerMade` function when the submit button is pressed.
-
-These two files heavily rely on Material-UI syntax (eg. all the `useStyles` and `classes` references). Check their
-website for more info on this syntax.
-
-- `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
-
-## ProblemLogic
-
-- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
-  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
-  match.
-
-- `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
-  problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
-  function `nextProblem` is used to determine the next problem to be displayed.
-
-- `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
-
-- `renderText.js`: Method called to render text. Fills in dynamic text generation.
-
-## ProblemPool [Configurable]
-
-- Each problem is contained in its own folder.
-- Problems can contain steps which are contained in their own sub-folder
-- Steps can contain hints which are stored as pathways in the `tutoring` sub-folder
-- Files ending in `-index.js` and `problemPool.js` are autogenerated using indexGenerator.js
-
-### Markdown Support
-
-- All `\` must be escaped as `\\` because values are strings
-- Wrap Latex in `$` for inline LaTeX
-- Newlines can be created with `\n`, escaped as `\\n`
-
-## Config [Configurable]
-
-- `config.js`: Central place where options can be configured. Also includes function to get the treatment id given a
-  userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
-
-- `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the
-  BKT model.
-- `./problemSelectHeuristics/problemSelectHeuristic.js`: This file contains a configurable heuristic for adaptive
-  problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
-  probability of mastery across all of its knowledge components, but this can be changed to any heuristic.
-
-- `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
-
-```javascript
-const skillModel = {
-    problemID1a: ['skill1', 'skill2'],
-    problemID1b: ['skill2', 'skill3'],
-    // ...
-}
-export default skillModel;
-```
-
-- `credentials.js`: File which contains the credentials to authenticate to Firebase. (Note: this file is ignored in the
-  gitignore by default to prevent API key leaks.)
+Contains common helper methods for the frontend React app.
 
 ## Listeners
 
@@ -194,6 +202,15 @@ export default skillModel;
 
 ```
 
+### Focus Logging
+
+* Records the times at which the user enters/leaves the tab
+* Uses efficient Firestore storage by partitioning data into collections
+* Turn off by editing config.js setting
+```javascript
+DO_FOCUS_TRACKING = false;
+```
+
 ### Adding Listeners
 
 1. Install the React component for the listener.
@@ -203,17 +220,18 @@ export default skillModel;
    listener logs.
 4. Configure buffer size and granularity of logging
 
-# Problem Pool
+## Problem Pool
 
-## Adding a problem to the Problem Pool
+### Adding a problem to the Problem Pool
 
 1. Create a folder in `/src/ProblemPool/` for that problem (Ex. `circle1`)
-2. Create a js file for that problem id (Ex. `circle1.js`)
-3. Create a folder called `figures` if the problem has figures
+2. Create a metadata json file for that problem id (Ex. `circle1.json`)
+3. Create a folder called `figures` if the problem has image figures
 4. Create a sub-folder for each problem step (Ex. `circle1a`, `circle1b`)
-5. In each sub-folder, create a js file for that problem step id (Ex. `circle1a.js`)
-6. Create a sub-folder within the sub-folder called `tutoring`
-7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.js`)
+5. In each sub-folder, create a json file for that problem step (Ex. `circle1a.json`)
+   1. Ensure that the step name matches the folder name
+6. Create a sub-folder within the step's sub-folder called `tutoring`
+7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.json`)
 8. In `/src/config/skillModel.js`, tag each problem with the appropriate skills
 9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams`
    files
@@ -230,17 +248,17 @@ export default skillModel;
 ```
 ProblemPool
 └───circle1
-│   │   circle1.js
+│   │   circle1.json
 │   └───steps
 │       └───circle1a
-│       │   │   circle1a.js
+│       │   │   circle1a.json
 │       │   └───tutoring
-│       │       │   circle1aDefaultPathway.js
+│       │       │   circle1aDefaultPathway.json
 │       │          
 │       └───circle1b
-│           │   circle1b.js
+│           │   circle1b.json
 │           └───tutoring
-│               │   circle1bDefaultPathway.js
+│               │   circle1bDefaultPathway.json
 │   
 └───slope1
     │   ...
@@ -248,68 +266,82 @@ ProblemPool
 
 ### Example Problem File
 
-```js
-const problem = {
-    id: 'circle1',
-    title: "Buying a Big Rug",
-    body: "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
-    steps: steps
-};
-export { problem };
+```json5
+{
+    "id": "circle1",
+    "title": "Buying a Big Rug",
+    "body": "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
+    "variabilization": {},
+    "oer": "https://example.com",
+    "lesson": "1.1 Circle Radius",
+    "courseName": "Geometry"
+}
 ```
 
 ### Example Step File
 
-```js
-const step = {
-    id: 'circle1a',
-    stepTitle: "1. Maximum Radius",
-    stepBody: "What is the maximum radius of a circular rug that will fit in the room?",
-    stepAnswer: ["10"],
-    problemType: "TextBox",
-    answerType: "numeric",
-    hints: hints
+```json5
+{
+    "id": "circle1a",
+    "stepAnswer": [
+        "10"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "1. Maximum Radius",
+    "stepBody": "What is the maximum radius of a circular rug that will fit in the room?",
+    "answerType": "numeric",
+    "variabilization": {}
 }
-
-export { step };
 ```
 
 ### Example Hint Pathway File
 
-```js
-var hints = [
+```json5
+[
     {
-        id: 'circle1a-h1',
-        title: "Size of the room",
-        text: "Consider the shape of the room and the limitations this has on the radius of the rug.",
-        type: "hint",
-        dependencies: []
+        "id": "circle1a-h1",
+        "title": "Size of the room",
+        "text": "Consider the shape of the room and the limitations this has on the radius of the rug.",
+        "type": "hint",
+        "dependencies": [],
+        "variabilization": {}
     },
     {
-        id: 'circle1a-h2',
-        title: "Constricting dimension",
-        text: "The length (20ft) creates limitations on the size of the circle. What is the maximum diameter that the circle can be?",
-        hintAnswer: ["20"],
-        problemType: "TextBox",
-        answerType: "numeric",
-        type: "scaffold",
-        dependencies: [0]
+        "id": "circle1a-h2",
+        "title": "Constricting dimension",
+        "text": "The length (20ft) creates limitations on the size of the circle. What is the maximum diameter that the circle can be?",
+        "hintAnswer": ["20"],
+        "problemType": "TextBox",
+        "answerType": "numeric",
+        "type": "scaffold",
+        "dependencies": [0],
+        "variabilization": {}
     },
     {
-        id: 'circle1a-h3',
-        title: "Solution",
-        text: "Recall that the radius is half the diameter, so $r = \\frac{d}{2} = 10$",
-        type: "solution",
-        dependencies: [1]
+        "id": "circle1a-h3",
+        "title": "Solution",
+        "text": "Recall that the radius is half the diameter, so $r = \\frac{d}{2} = 10$",
+        "type": "solution",
+        "dependencies": [1],
+        "variabilization": {}
     }
 ]
-
-export { hints };
 ```
 
-### Using HTML/React Objects as body text for LaTeX
+### Using OATutor custom markdown parser for images and LaTeX
 
-```js
+```json5
+{
+    "id": "pythag1", //Substeps will be in the form problem.id + 'a' and so on
+    "title": "Car Forces",
+    "body": "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
+    "variabilization": {}
+}
+```
+
+### ~~Using HTML/React Objects as body text for LaTeX~~ [Deprecated]
+
+```jso
 import hints from './pythag1a-index.js';
 import React from 'react';
 import { InlineMath } from 'react-katex';
@@ -329,41 +361,20 @@ const step = {
 export { step };
 ```
 
-### Using OATutor custom markdown parser for images and LaTeX
+### Creating Lesson Plans
 
-```js
-import steps from './pythag1-index.js'
-
-const problem = {
-    id: 'pythag1', //Substeps will be in the form problem.id + 'a' and so on
-    title: "Car Forces",
-    body: "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
-    steps: steps
-};
-export { problem };
-```
-
-## Creating Lesson Plans
-
-* Create a lesson plan by making a new item in `config/lessonPlans.js`
+* Create a lesson plan by making a new item in `config/coursePlans.js`
 * Each lesson plan has learning objectives which you can also list the target mastery level
 * Lesson plans can have multiple learning objectives (for cumulative review)
 * Users select a lesson upon visiting the site
 
-```js
+```json5
 {
     id: "lesson1",
-        name
-:
-    "Lesson 1",
-        topics
-:
-    "Pythagorean Theorem",
-        allowRecycle
-:
-    true,
-        learningObjectives
-:
+    name: "Lesson 1",
+    topics: "Pythagorean Theorem",
+    allowRecycle: true,
+    learningObjectives:
     {
         pythagorean: 0.95
     }
