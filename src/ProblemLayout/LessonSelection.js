@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -67,10 +67,13 @@ class LessonSelection extends React.Component {
                             <Grid container spacing={3}>
                                 {selectionMode === "course"
                                     ? this.coursePlans
-                                        .filter(({courseName}) => !courseName.toString().startsWith("!!"))
                                         .map((course, i) => {
+                                            const { courseName } = course
+                                            if (courseName.toString().startsWith("!!")) {
+                                                return <Fragment key={ courseName }/>
+                                            }
                                             return (
-                                                <Grid item xs={12} sm={6} md={4} key={i}>
+                                                <Grid item xs={12} sm={6} md={4} key={courseName}>
                                                     <center>
                                                         <Paper className={classes.paper}>
                                                             <h2 style={{
