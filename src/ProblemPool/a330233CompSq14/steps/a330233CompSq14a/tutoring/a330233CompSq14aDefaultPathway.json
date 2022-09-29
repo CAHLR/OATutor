@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a330233CompSq14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify b, the coefficient of x",
+        "text": "$$b=15$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq14a-h1"
+        ],
+        "title": "Find $${\\left(\\frac{1}{2} b\\right)}^2$$",
+        "text": "$${\\left(15\\frac{1}{2}\\right)}^2=\\frac{225}{4}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq14a-h2"
+        ],
+        "title": "Add $${\\left(\\frac{1}{2} b\\right)}^2$$ to $$x^2+bx$$",
+        "text": "$$x^2+15x+\\frac{225}{4}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a330233CompSq14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a330233CompSq14a-h3"
+        ],
+        "title": "Write as a perfect squared binomial",
+        "text": "$${\\left(x+\\frac{15}{2}\\right)}^2$$",
+        "variabilization": {}
+    }
+]

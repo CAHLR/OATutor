@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a916a3bterminology18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {}
+    },
+    {
+        "id": "a916a3bterminology18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "23"
+        ],
+        "dependencies": [
+            "a916a3bterminology18a-h1"
+        ],
+        "title": "Size of N",
+        "text": "What is the size of N? Effectively, how many countries are in North America from the sample space?",
+        "variabilization": {}
+    },
+    {
+        "id": "a916a3bterminology18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "194"
+        ],
+        "dependencies": [
+            "a916a3bterminology18a-h2"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total countries were there?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a916a3bterminology18a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "194"
+                ],
+                "dependencies": [],
+                "title": "Size of Sample Space",
+                "text": "What is $$23+12+47+44+54+14$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a916a3bterminology18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{23}{194}$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology18a-h3"
+        ],
+        "title": "Determining P(N)",
+        "text": "What is P(N), or what is the size of N divided by the size of the sample size?",
+        "variabilization": {}
+    }
+]

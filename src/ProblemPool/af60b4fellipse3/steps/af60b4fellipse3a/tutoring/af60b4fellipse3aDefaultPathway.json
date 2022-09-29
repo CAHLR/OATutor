@@ -1,0 +1,100 @@
+[
+    {
+        "id": "af60b4fellipse3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vertice and Foci",
+        "text": "Consider whether the major axis lies on the x- or y-axis.",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af60b4fellipse3a-h1"
+        ],
+        "title": "Standard Equation Form",
+        "text": "The form of the standard equation is $$c^2=a^2-b^2$$, given $$a=vertices$$ and $$c=foci$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-2,-8) and (-2,2)"
+        ],
+        "dependencies": [
+            "af60b4fellipse3a-h2"
+        ],
+        "title": "Midpoint Formula",
+        "text": "Using the midpoint formula, identify the coordinate for the point halfway between the vertices",
+        "variabilization": {},
+        "choices": [
+            "(-2,-8) and (-2,2)",
+            "(-1,-6) and (-2,1)",
+            "(-1,-8) and (-2,0)"
+        ]
+    },
+    {
+        "id": "af60b4fellipse3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "af60b4fellipse3a-h3"
+        ],
+        "title": "Solving for a",
+        "text": "Solve for a by finding the distance between the y-coordinates of the vertices.",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "af60b4fellipse3a-h4"
+        ],
+        "title": "Solving for c",
+        "text": "Solve for c using the known information on the foci.",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "af60b4fellipse3a-h5"
+        ],
+        "title": "Solving for b",
+        "text": "Solve for b using the equation $$c^2=a^2-b^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{{\\left(x+2\\right)}^2}{9}+\\frac{{\\left(y+3\\right)}^2}{25}=1$$"
+        ],
+        "dependencies": [
+            "af60b4fellipse3a-h6"
+        ],
+        "title": "Plugging in the Values",
+        "text": "Plug in the values for h, k, a, and b into the standard form equation for an ellipse.",
+        "variabilization": {}
+    }
+]

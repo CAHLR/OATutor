@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ace0d88location15b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace0d88location15a-h2"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "A low percentile means that that a player scored less points per game while a high percentile means that a player scored more points per game.",
+        "variabilization": {}
+    },
+    {
+        "id": "ace0d88location15b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Higher Percentile"
+        ],
+        "dependencies": [
+            "ace0d88location15b-h3"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "In context, since this assesses accuracy, is it better to have a lower percentile (scoring less points per game) or have a higher percentile (scoring more points per game)? Assume this is like basketball, a game where high scores are better than low scores.",
+        "variabilization": {},
+        "choices": [
+            "Lower Percentile",
+            "Higher Percentile"
+        ]
+    },
+    {
+        "id": "ace0d88location15b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bad"
+        ],
+        "dependencies": [
+            "ace0d88location15b-h4"
+        ],
+        "title": "Determining if 40th Percentile is Good or Bad",
+        "text": "Since it is better to have a higher percentile (scoring more answers correct), is having a low percentile such as 40 (less than 50) relatively a good thing or a bad thing?",
+        "variabilization": {},
+        "choices": [
+            "Good",
+            "Bad"
+        ]
+    }
+]

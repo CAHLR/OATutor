@@ -1,0 +1,110 @@
+[
+    {
+        "id": "a9f55eblinearmodels20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area Formula for a Triangle",
+        "text": "The area formula for a triangle is $$\\frac{1}{2} bh$$, where b is the base and h is the height.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9f55eblinearmodels20a-h1"
+        ],
+        "title": "Drawing a Diagram",
+        "text": "First draw, a diagram. By graphing f(x) and the line perpendicular to it, we can tell that the height of the triangle is equal to the y-coordinate of the intersection between f(x) and the perpendicular line. We can also see that the horizontal base of the triangle is the distance from (0,0) to the point where f(x) intersects the x axis.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9f55eblinearmodels20a-h2"
+        ],
+        "title": "Figuring Out the Equation of the Perpendicular Line",
+        "text": "The first step is to figure out the equation of the perpendicular line. Because it is perpendicular to $$f(x)=12-\\frac{1}{3} x$$, we know that its slope is equal to the opposite reciprocal of the slope of f(x).",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels20a-h3"
+        ],
+        "title": "Figuring Out the Slope of the Relevant Line",
+        "text": "What is the opposite reciprocal of $$\\frac{-1}{3}$$? This is equal to the slope of the perpendicular line to f(x).",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels20a-h4"
+        ],
+        "title": "Figuring out the X Coordinate of the Intersection Between f(x) and its perpendicular line",
+        "text": "At what x value does $$3x=12-\\frac{1}{3} x$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels20a-h5"
+        ],
+        "title": "Figuring out the Y-Coordinate of the Intersection",
+        "text": "When $$x=9$$, $$f(9)=$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9f55eblinearmodels20a-h6"
+        ],
+        "title": "Interpreting the Intersection Between f(x) and its Reciprocal",
+        "text": "Through graphing, we know that the y-coordinate of the intersection is the height of the triangle, and the intersection has coordinates (9,9). Thus, the height of the triangle is 9.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "36"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels20a-h7"
+        ],
+        "title": "Finding the Intersection of f(x) with the x axis",
+        "text": "When $$y=0$$, f(x) intersects the x axis. Plug in $$y=0$$ to the equation for f(x). What is x equal to when $$y=0$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9f55eblinearmodels20a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a9f55eblinearmodels20a-h8"
+        ],
+        "title": "Base of the Triangle",
+        "text": "The base of the triangle is equal to the x-coordinate of the intersection between f(x) and the x axis.",
+        "variabilization": {}
+    }
+]

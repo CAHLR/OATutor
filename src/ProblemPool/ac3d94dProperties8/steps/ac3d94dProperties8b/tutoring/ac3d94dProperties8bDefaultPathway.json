@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ac3d94dProperties8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiplicative inverse",
+        "text": "For any real number a, $$\\frac{1}{a}$$ is the multiplicative inverse of a. $$a \\frac{1}{a}=1$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties8b-h1"
+        ],
+        "title": "Reciprocal of -1.1",
+        "text": "To find $$\\frac{1}{\\left(-1.1\\right)}$$, it is easier to write -1.1 in fractional form first, and then reverse the fraction. -1.1 written as a fracion is $$\\frac{-11}{10}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-10}{11}$$"
+        ],
+        "dependencies": [
+            "ac3d94dProperties8b-h2"
+        ],
+        "title": "Reciprocal of -1.1",
+        "text": "What is $$\\frac{1}{\\left(-\\frac{11}{10}\\right)}$$?",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "a10e4c3factoring13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor pairs of the first term",
+        "text": "The only factors for $$2t^2$$ are 2t, 1t or -2t, -1t",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring13a-h1"
+        ],
+        "title": "Factor pairs for the third term",
+        "text": "The only factors of 5 are 1, 5 or -1, -5",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring13a-h2"
+        ],
+        "title": "Trial and Error",
+        "text": "Test all the combinations of the factors until the correct product is found",
+        "variabilization": {}
+    }
+]

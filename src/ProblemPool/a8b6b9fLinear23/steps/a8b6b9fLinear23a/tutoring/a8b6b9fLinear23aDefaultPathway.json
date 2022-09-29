@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8b6b9fLinear23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Organizing",
+        "text": "Modify the equation into the form $$z=$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8b6b9fLinear23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8b6b9fLinear23a-h1"
+        ],
+        "title": "Distributive Property I",
+        "text": "Use the distributive property to multiply 3(5z-9)",
+        "variabilization": {}
+    },
+    {
+        "id": "a8b6b9fLinear23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15z-27"
+        ],
+        "dependencies": [
+            "a8b6b9fLinear23a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is 3(5z-9)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8b6b9fLinear23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8b6b9fLinear23a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Once you get the equation $$23z+19=15z-27+8z+46$$, simplify each side as much as possible",
+        "variabilization": {}
+    },
+    {
+        "id": "a8b6b9fLinear23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23z+19$$"
+        ],
+        "dependencies": [
+            "a8b6b9fLinear23a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$15z-27+8z+46$$ as much as possible",
+        "variabilization": {}
+    },
+    {
+        "id": "a8b6b9fLinear23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8b6b9fLinear23a-h5"
+        ],
+        "title": "Classifying the Equation",
+        "text": "Determine if the equation contradicts itself, or only valid under certain condition",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "aae6efeSolving24b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setup",
+        "text": "Assume the number is x",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving24b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.75"
+        ],
+        "dependencies": [
+            "aae6efeSolving24b-h1"
+        ],
+        "title": "Conversion",
+        "text": "What is 75% in numeric form?",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving24b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving24b-h2"
+        ],
+        "title": "Translation",
+        "text": "Transform the question in equation form as $$0.75x=81$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving24b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "108"
+        ],
+        "dependencies": [
+            "aae6efeSolving24b-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of x?",
+        "variabilization": {}
+    }
+]

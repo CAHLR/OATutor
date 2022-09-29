@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a08d293Rational25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Property to use",
+        "text": "The Power Property tells us that when we raise a power to a power, we multiply the exponents.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^{\\frac{6\\times4}{3}}$$"
+        ],
+        "dependencies": [
+            "a08d293Rational25a-h1"
+        ],
+        "title": "Raise a power to a power",
+        "text": "What's the result if we raise a power to a power. Please do not simplify.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
+        "dependencies": [
+            "a08d293Rational25a-h2"
+        ],
+        "title": "Simplify the fraction.",
+        "text": "What's the result when you simplify the fraction?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^8$$"
+        ],
+        "dependencies": [
+            "a08d293Rational25a-h3"
+        ],
+        "title": "Find the result",
+        "text": "What's the final result?",
+        "variabilization": {}
+    }
+]

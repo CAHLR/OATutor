@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9ae528add5a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "Seeing if the Signs Are Different",
+        "text": "Are the signs of the two terms different?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a9ae528add5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ae528add5a-h1"
+        ],
+        "title": "First Step to Find the Value of the Expression",
+        "text": "Since 19 and 47 have different signs, we subtract 19 from 47.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ae528add5a-h2"
+        ],
+        "title": "Sign of the Answer",
+        "text": "The answer will be negative because there are more negatives than positives.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-28"
+        ],
+        "dependencies": [
+            "a9ae528add5a-h3"
+        ],
+        "title": "Answer",
+        "text": "What is -(47-19)?",
+        "variabilization": {}
+    }
+]

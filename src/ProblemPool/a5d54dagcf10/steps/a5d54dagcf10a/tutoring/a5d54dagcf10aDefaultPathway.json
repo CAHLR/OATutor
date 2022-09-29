@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5d54dagcf10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Greatest Common Factor of all the terms of the polynomial.",
+        "text": "The first step is to find the GCF of all the terms of the polynomial (3p**3,6p**2q,9pq**3).",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3p"
+        ],
+        "dependencies": [
+            "a5d54dagcf10a-h1"
+        ],
+        "title": "Find the Greatest Common Factor of all the terms of the polynomial.",
+        "text": "What is the greatest common factor of the terms?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d54dagcf10a-h2"
+        ],
+        "title": "Rewriting each term as a product using the GCF",
+        "text": "The next step is to rewrite the equation with each term as a product between the GCF and another term. EX for first term: $$3p^3$$ -> $$3p p^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d54dagcf10a-h3"
+        ],
+        "title": "Using the Distributive Property",
+        "text": "The final step is to use the reverse distributive property to take the GCF out of the equation. This results in the equation $$3p\\left(p^2-2pq+3q^3\\right)$$",
+        "variabilization": {}
+    }
+]

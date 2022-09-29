@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aafc2dcMultiply8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Our first step is to substitute -18 for x and 24 for y into the expression, and we get the expression $${\\left(-18+24\\right)}^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply8a-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "By the order of operations, we should evaluate what's inside the parenthesis first.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply8a-h2"
+        ],
+        "title": "Addition",
+        "text": "What is $$-18+24$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply8a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Substitute 6 back for $$-18+24$$, the expression now becomes $$6^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "36"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply8a-h4"
+        ],
+        "title": "Exponent",
+        "text": "What is $$6^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aafc2dcMultiply8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply8a-h5"
+        ],
+        "title": "Exponent",
+        "text": "$$6^2$$ is the same as $$6\\times6$$, which evaluates to 36.",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a8ffef9inverses9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Inverse",
+        "text": "The general process for finding an inverse is as follow: \\\\n Given a polynomial function, restrict the domain of a function that is not one-to-one and then find the inverse. \\\\n 1) Restrict the domain by determining a domain on which the original function is one-to-one. \\\\n 2) Replace f(x) with y. \\\\n 3) Interchange x and y. \\\\n 4) Solve for y, and rename the function or pair of function $$f^{-1\\left(x\\right)}$$. \\\\n 5) Revise the formula for $$f^{-1\\left(x\\right)}$$ by ensuring that the outputs of the inverse function correspond to the restricted domain of the original function. \\\\n However, note that in real-world applications, we do not swap the variables when finding inverses. Instead, we change which variable is considered to be the independent variable.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h1"
+        ],
+        "title": "Domain",
+        "text": "Notice that in this question, n and C would not be meaningful when they are less than 0. Thus, the domain and range for them are from zero to $$\\infty$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h2"
+        ],
+        "title": "Solve for n",
+        "text": "Make n the subject of the equation, $$C=\\frac{20+0.4n}{100+n}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h3"
+        ],
+        "title": "Solve for n",
+        "text": "Multiply the denominator in the fraction to both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h4"
+        ],
+        "title": "Solve for n",
+        "text": "Expand out $$C \\left(100+n\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h5"
+        ],
+        "title": "Solve for n",
+        "text": "Move the n terms to the same side of the equation so that we can isolate n.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a8ffef9inverses9a-h6"
+        ],
+        "title": "Solve for n",
+        "text": "Factorize out n.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{100C-20}{0.4-C}$$"
+        ],
+        "dependencies": [
+            "a8ffef9inverses9a-h7"
+        ],
+        "title": "Solve for n",
+        "text": "Divide the coefficient of n from both sides to make n the subject. What is n?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8ffef9inverses9a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "300"
+        ],
+        "dependencies": [
+            "a8ffef9inverses9a-h8"
+        ],
+        "title": "Evaluate n",
+        "text": "Substitute $$C=0.35$$ and solve for n. Leave your answer in 3 significant figures.",
+        "variabilization": {}
+    }
+]

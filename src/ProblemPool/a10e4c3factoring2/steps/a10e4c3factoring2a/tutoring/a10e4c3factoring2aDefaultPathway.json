@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a10e4c3factoring2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a preliminary strategy",
+        "text": "As there is a greatest common factor(4), factor it out. The expression should look like this: $$4\\left(m^2-m-2\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring2a-h1"
+        ],
+        "title": "Identify",
+        "text": "Inside the parentheses, is it a binomial, trinomial, or are there more than three terms? Since it is a trinomial with a coefficient of 1, undo FOIL.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring2a-h2"
+        ],
+        "title": "Use factors",
+        "text": "Use the factors of -2 to finish FOIL.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring2a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$4\\left(m+1\\right) \\left(m-2\\right)$$.",
+        "variabilization": {}
+    }
+]
