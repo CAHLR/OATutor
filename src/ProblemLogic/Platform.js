@@ -181,17 +181,18 @@ class Platform extends React.Component {
         seed = Date.now().toString();
         this.setState({ seed: seed });
         this.props.saveProgress();
-        var chosenProblem = null;
+        const problems = this.problemIndex.problems.filter(({courseName}) => !courseName.toString().startsWith("!!"))
+        let chosenProblem;
 
-        for (var problem of this.problemIndex.problems) {
+        for (const problem of problems) {
             // Calculate the mastery for this problem
-            var probMastery = 1;
-            var isRelevant = false;
-            for (var step of problem.steps) {
+            let probMastery = 1;
+            let isRelevant = false;
+            for (const step of problem.steps) {
                 if (typeof step.knowledgeComponents === "undefined") {
                     continue;
                 }
-                for (var kc of step.knowledgeComponents) {
+                for (const kc of step.knowledgeComponents) {
                     if (typeof context.bktParams[kc] === "undefined") {
                         console.log("BKT Parameter " + kc + " does not exist.");
                         continue;
@@ -213,7 +214,7 @@ class Platform extends React.Component {
             }
         }
 
-        chosenProblem = context.heuristic(this.problemIndex.problems, this.completedProbs);
+        chosenProblem = context.heuristic(problems, this.completedProbs);
 
         const objectives = Object.keys(this.lesson.learningObjectives);
         console.debug('objectives', objectives)
