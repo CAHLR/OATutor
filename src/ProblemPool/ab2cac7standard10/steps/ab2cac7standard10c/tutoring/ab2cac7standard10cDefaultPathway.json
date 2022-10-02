@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ab2cac7standard10c-h13",
+        "type": "hint",
+        "dependencies": [
+            "ab2cac7standard10b-h12"
+        ],
+        "title": "Determining right or left",
+        "text": "When z is positive, x, the male's height, is to the right of the mean, \u03bc. When z is negative, x is to the left of \u03bc.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard10c-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.27"
+        ],
+        "dependencies": [
+            "ab2cac7standard10c-h13"
+        ],
+        "title": "Z-score",
+        "text": "What is the value of z?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard10c-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "ab2cac7standard10c-h14"
+        ],
+        "title": "Positive or negative",
+        "text": "Is this positive or negative?",
+        "variabilization": {},
+        "choices": [
+            "negative",
+            "positive"
+        ]
+    }
+]
