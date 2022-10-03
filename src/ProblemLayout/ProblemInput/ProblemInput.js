@@ -5,6 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import MultipleChoice from "./MultipleChoice";
 import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
+import TableInput from "./TableInput";
 import { renderText } from "../../ProblemLogic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
@@ -12,6 +13,7 @@ import { shuffleArray } from "../../util/shuffleArray";
 import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS, ThemeContext } from "../../config/config";
 import { stagingProp } from "../../util/addStagingProperty";
 import { parseMatrixTex } from "../../util/parseMatrixTex";
+import { parseTableTex } from "../../util/parseTableTex";
 
 class ProblemInput extends React.Component {
     static contextType = ThemeContext;
@@ -52,6 +54,17 @@ class ProblemInput extends React.Component {
         }
     }
 
+    isTableInput() {
+        if (this.props.step?.stepAnswer) {
+            return this.props.step?.problemType !== "MultipleChoice" &&
+                /\\begin{[a-zA-Z]?tabular}/.test(this.props.step.stepAnswer[0])
+        }
+        if (this.props.step?.hintAnswer) {
+            return this.props.step?.problemType !== "MultipleChoice" &&
+                /\\begin{[a-zA-Z]?tabular}/.test(this.props.step.hintAnswer[0])
+        }
+    }
+
     onEquationChange(eq) {
         const containerEl = this.equationRef?.current
         const eqContentEl = this.equationRef?.current?.querySelector(".mq-editable-field")
@@ -87,8 +100,13 @@ class ProblemInput extends React.Component {
             problemType = "MatrixInput"
         }
 
+        if (this.isTableInput()) {
+            problemType = "TableInput"
+        }
+
         return (
             <Grid container spacing={0} justifyContent="center" alignItems="center">
+                
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
@@ -171,6 +189,21 @@ class ProblemInput extends React.Component {
                             } : {}}
                         />
                     )}
+                    {problemType === "TableInput" && (
+                        <TableInput
+                            onChange={(newVal) => this.props.setInputValState(newVal)}
+                            numRows={this.props.step.numRows}
+                            numCols={this.props.step.numCols}
+                            context={this.props.context}
+                            classes={this.props.classes}
+                            index={index}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: parseTableTex(correctAnswer)[0]
+                            } : {}}
+                        />
+                        
+                        
+                    )}
                 </Grid>
                 <Grid item xs={2} md={1}>
                     <div style={{ marginLeft: "20%" }}>
@@ -178,6 +211,7 @@ class ProblemInput extends React.Component {
                     </div>
                 </Grid>
                 <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
+            
             </Grid>
         )
     }

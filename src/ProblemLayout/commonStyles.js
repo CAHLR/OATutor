@@ -145,6 +145,27 @@ const styles = theme => ({
             paddingBottom: 5
         }
     },
+    textTblLatex: {
+        borderRadius: "0px",
+        outline: "1px solid #c4c4c4",
+        '&:hover': {
+            border: "1px solid #000000",
+        },
+        '&:focus-within': {
+            border: "2px solid #3f51b5",
+        },
+        height: 50,
+        width: '100%',
+        '& > .mq-editable-field': {
+            display: 'table',
+            tableLayout: 'fixed'
+        },
+        '& > * > *[mathquill-block-id]': {
+            height: 50,
+            display: 'table-cell',
+            paddingBottom: 5
+        }
+    },
     textBoxLatexIncorrect: {
         boxShadow: "0 0 0.75pt 0.75pt red",
         '&:focus-within': {
