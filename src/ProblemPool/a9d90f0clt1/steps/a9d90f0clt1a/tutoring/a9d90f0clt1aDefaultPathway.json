@@ -1,0 +1,124 @@
+[
+    {
+        "id": "a9d90f0clt1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the TI-83, 83+, 84, 84+ Calculator",
+        "text": "Use normalcdf(lower value, upper value, mean of sums, stdev of sums)",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7500"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h1"
+        ],
+        "title": "Normalcdf Lower Value",
+        "text": "What is the lower value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1E+99$$"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h1"
+        ],
+        "title": "Normalcdf Upper Value",
+        "text": "What is the upper value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(80)(90)"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h1"
+        ],
+        "title": "Normalcdf Mean of Sums",
+        "text": "What is the mean of sums?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$(=SQRT(80))(15)$$"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h1"
+        ],
+        "title": "Normalcdf Stdev of Sums",
+        "text": "What is the standard deviation of sums?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt1a-h1",
+            "a9d90f0clt1a-h2",
+            "a9d90f0clt1a-h3",
+            "a9d90f0clt1a-h4",
+            "a9d90f0clt1a-h5"
+        ],
+        "title": "Sum of Values",
+        "text": "The probability question asks you to find a probability for the sum (or total of) 80 values.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7500"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h6"
+        ],
+        "title": "Sum of 80 Values",
+        "text": "What is the sum of 80 values?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt1a-h7"
+        ],
+        "title": "Square and Sum",
+        "text": "Square all the x values and then take the sum (P(\u2211x > 7,500))",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.0127"
+        ],
+        "dependencies": [
+            "a9d90f0clt1a-h8"
+        ],
+        "title": "Square and Sum",
+        "text": "P(\u2211x > 7,500) results in 0.0127",
+        "variabilization": {}
+    }
+]
