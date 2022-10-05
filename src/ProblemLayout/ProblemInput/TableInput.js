@@ -13,10 +13,12 @@ class TableInput extends React.Component {
      
         super(props);
         this.state = {
-            gridState: props.defaultValue || this.genEmptyGrid(2, 3),
+            gridState: props.defaultValue || this.genEmptyGrid(props.numRows, props.numCols),
         };
         this.gridRef = createRef()
         this.clearCells = this.clearCells.bind(this)
+        this.numRows = props.numRows;
+        this.numCols = props.numCols;
     }
 
 
@@ -41,7 +43,7 @@ class TableInput extends React.Component {
         }
         
         this.setState({
-            gridState: this.genEmptyGrid(2, 3)
+            gridState: this.genEmptyGrid(this.numRows, this.numCols)
         })
         if (this.gridRef.current) {
             this.gridRef.current

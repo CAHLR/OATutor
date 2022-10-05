@@ -88,6 +88,25 @@ class ProblemInput extends React.Component {
         }
         this.props.setInputValState(eq)
     }
+    
+    getNumRows(correctAnswer) {
+        const numRows = correctAnswer.split("\\\\").length;
+    
+        return numRows
+        
+    }
+    getNumCols(correctAnswer) {
+        const numRows = correctAnswer.split("\\\\").length;
+        const numCols =  correctAnswer.split("\\\\").join("&").split("&").length / numRows;
+        return numCols
+    }
+
+    // getHeader(props) {
+    //     const cleanedAnswer = props.replace("$$\\begin{tabular}", "\\end{tabular}$$","").replace(/is/g, "or");
+    // }
+
+    
+
 
     render() {
         const { classes, state, index } = this.props;
@@ -104,9 +123,9 @@ class ProblemInput extends React.Component {
             problemType = "TableInput"
         }
 
+
         return (
             <Grid container spacing={0} justifyContent="center" alignItems="center">
-                
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
@@ -192,8 +211,8 @@ class ProblemInput extends React.Component {
                     {problemType === "TableInput" && (
                         <TableInput
                             onChange={(newVal) => this.props.setInputValState(newVal)}
-                            numRows={this.props.step.numRows}
-                            numCols={this.props.step.numCols}
+                            numRows={this.getNumRows(correctAnswer)}
+                            numCols={this.getNumCols(correctAnswer)}
                             context={this.props.context}
                             classes={this.props.classes}
                             index={index}
