@@ -40,7 +40,9 @@
     {
         "id": "a3ce42fnormal13a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal13a-h1"
+        ],
         "title": "Using a Calculator (TI-83, 83+, 84, 84+ Calculator)",
         "text": "We know X~N(5.85,0.24). Compute $$P\\left(x>6\\right)$$.",
         "variabilization": {}
@@ -48,7 +50,9 @@
     {
         "id": "a3ce42fnormal13a-h5",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal13a-h4"
+        ],
         "title": "Compute the area probability between $$x>6$$. $$P\\left(x>6\\right)$$.",
         "text": "",
         "variabilization": {}
@@ -56,7 +60,9 @@
     {
         "id": "a3ce42fnormal13a-h6",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal13a-h5"
+        ],
         "title": "Upper value",
         "text": "Use 1E99 (pressing 1, the EE key (a 2nd key) and then 99) or enter $${10}^{99}$$ instead.",
         "variabilization": {}

@@ -1,16 +1,14 @@
 [
     {
-        "id": "ab2cac7standard3c-h13",
+        "id": "ab2cac7standard3c-h1",
         "type": "hint",
-        "dependencies": [
-            "ab2cac7standard3b-h12"
-        ],
+        "dependencies": [],
         "title": "Determining right or left",
         "text": "When z is positive, x is to the right of the mean, \u03bc. When z is negative, x is to the left of \u03bc.",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard3c-h14",
+        "id": "ab2cac7standard3c-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -18,14 +16,14 @@
             "-4"
         ],
         "dependencies": [
-            "ab2cac7standard3c-h13"
+            "ab2cac7standard3c-h1"
         ],
         "title": "Z-score",
         "text": "What is the value of z?",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard3c-h15",
+        "id": "ab2cac7standard3c-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -33,7 +31,7 @@
             "negative"
         ],
         "dependencies": [
-            "ab2cac7standard3c-h14"
+            "ab2cac7standard3c-h2"
         ],
         "title": "Positive or negative",
         "text": "Is this positive or negative?",

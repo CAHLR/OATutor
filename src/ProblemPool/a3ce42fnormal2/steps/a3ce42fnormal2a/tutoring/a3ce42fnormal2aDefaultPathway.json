@@ -40,7 +40,9 @@
     {
         "id": "a3ce42fnormal2a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal2a-h1"
+        ],
         "title": "Calculating the Z-score",
         "text": "What is the z-score? Utilize the formula $$\\frac{x-mean}{standard}$$ deviation",
         "variabilization": {}
@@ -63,7 +65,9 @@
     {
         "id": "a3ce42fnormal2a-h6",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal2a-h4"
+        ],
         "title": "Using a Calculator to compute the area to the left (TI-83, 83+, 84, 84+ Calculator)",
         "text": "Go into 2nd DISTR. --> 2:normalcdf. Follow the syntax normalcdf(lower value, upper value, mean, standard deviation)",
         "variabilization": {}
@@ -71,7 +75,9 @@
     {
         "id": "a3ce42fnormal2a-h7",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a3ce42fnormal2a-h4"
+        ],
         "title": "Upper value",
         "text": "Use 1E99 (pressing 1, the EE key (a 2nd key) and then 99) or enter $${10}^{99}$$ instead.",
         "variabilization": {}

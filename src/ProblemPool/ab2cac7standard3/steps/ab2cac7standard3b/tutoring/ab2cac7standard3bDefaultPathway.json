@@ -1,16 +1,14 @@
 [
     {
-        "id": "ab2cac7standard3b-h10",
+        "id": "ab2cac7standard3b-h1",
         "type": "hint",
-        "dependencies": [
-            "ab2cac7standard3a-h9"
-        ],
+        "dependencies": [],
         "title": "Identify the z-score.",
         "text": "The absolute value of the z-score is how many standard deviations our x value is from the mean. Identify the absolute value of the z-score.",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard3b-h11",
+        "id": "ab2cac7standard3b-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -18,14 +16,14 @@
             "-4"
         ],
         "dependencies": [
-            "ab2cac7standard3b-h10"
+            "ab2cac7standard3b-h1"
         ],
         "title": "Z-score",
         "text": "In the problem, we solved for the z-score when x $$=$$ -3 pounds. What is the z-score?",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard3b-h12",
+        "id": "ab2cac7standard3b-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -33,7 +31,7 @@
             "four"
         ],
         "dependencies": [
-            "ab2cac7standard3b-h11"
+            "ab2cac7standard3b-h2"
         ],
         "title": "Absolute Value",
         "text": "What is the absolute value of the z-score?",

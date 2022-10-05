@@ -1,16 +1,14 @@
 [
     {
-        "id": "ab2cac7standard10b-h10",
+        "id": "ab2cac7standard10b-h1",
         "type": "hint",
-        "dependencies": [
-            "ab2cac7standard10a-h9"
-        ],
+        "dependencies": [],
         "title": "Identify the z-score.",
         "text": "The absolute value of the z-score is how many standard deviations our x value is from the mean. Identify the absolute value of the z-score.",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard10b-h11",
+        "id": "ab2cac7standard10b-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -18,14 +16,14 @@
             "1.27"
         ],
         "dependencies": [
-            "ab2cac7standard10b-h10"
+            "ab2cac7standard10a-h2"
         ],
         "title": "Z-score",
         "text": "In the problem, the z-score is given. What is the z-score?",
         "variabilization": {}
     },
     {
-        "id": "ab2cac7standard10b-h12",
+        "id": "ab2cac7standard10b-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -33,7 +31,7 @@
             "1.27"
         ],
         "dependencies": [
-            "ab2cac7standard10b-h11"
+            "ab2cac7standard10a-h3"
         ],
         "title": "Absolute Value",
         "text": "What is the absolute value of the z-score?",

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a9d90f0clt2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equation",
+        "text": "\u2211x $$=$$ (n)(\u03bcX) + $$(z)(=SQRT(N))(\u03c3x)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7401.2"
+        ],
+        "dependencies": [
+            "a9d90f0clt2a-h1"
+        ],
+        "title": "Solving Equation",
+        "text": "What is (80)(90) + $$(1.5)(=SQRT(80))(15)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7401.2"
+        ],
+        "dependencies": [
+            "a9d90f0clt2a-h1",
+            "a9d90f0clt2a-h2"
+        ],
+        "title": "CLT Sum",
+        "text": "Solve \u2211x $$=$$ (n)(\u03bcX) + $$(z)(=SQRT(N))(\u03c3x)$$ such that (80)(90) + $$(1.5)(=SQRT(80))(15)$$ $$=$$ 7401.20",
+        "variabilization": {}
+    }
+]
