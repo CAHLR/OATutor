@@ -84,7 +84,7 @@ class HintTextbox extends React.Component {
                 <Grid container spacing={0} justifyContent="center" alignItems="center">
                     <Grid item xs={false} sm={false} md={4}/>
                     <Grid item xs={4} sm={4} md={1}>
-                        {this.props.type !== "subHintTextbox" ?
+                        {this.props.type !== "subHintTextbox" && this.hint.subHints !== undefined ?
                             <center>
                                 <IconButton aria-label="delete" onClick={this.props.toggleHints}
                                             title="View available hints"
