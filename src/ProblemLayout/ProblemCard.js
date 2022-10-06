@@ -43,7 +43,7 @@ class ProblemCard extends React.Component {
         }
 
         // Bottom out hints option
-        if (ENABLE_BOTTOM_OUT_HINTS && context.debug && !context["use_expanded_view"]) {
+        if (ENABLE_BOTTOM_OUT_HINTS && !(context.debug && context["use_expanded_view"])) {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length),
