@@ -24,6 +24,8 @@ class ProblemInput extends React.Component {
         this.equationRef = createRef()
 
         this.onEquationChange = this.onEquationChange.bind(this)
+
+        this.questionAnswer = this.props.stepAnswer
     }
 
     componentDidMount() {
@@ -89,23 +91,14 @@ class ProblemInput extends React.Component {
         this.props.setInputValState(eq)
     }
     
-    getNumRows(correctAnswer) {
-        const numRows = correctAnswer.split("\\\\").length;
-    
-        return numRows
-        
-    }
-    getNumCols(correctAnswer) {
+
+    getDimAndHeaders(correctAnswer) {
+        const temp = correctAnswer;
         const numRows = correctAnswer.split("\\\\").length;
         const numCols =  correctAnswer.split("\\\\").join("&").split("&").length / numRows;
-        return numCols
+        const headers = temp.match(/([a-zA-z]+)/g).slice(2,2+numCols)
+        return {numRows, numCols, headers}
     }
-
-    // getHeader(props) {
-    //     const cleanedAnswer = props.replace("$$\\begin{tabular}", "\\end{tabular}$$","").replace(/is/g, "or");
-    // }
-
-    
 
 
     render() {
@@ -211,8 +204,9 @@ class ProblemInput extends React.Component {
                     {problemType === "TableInput" && (
                         <TableInput
                             onChange={(newVal) => this.props.setInputValState(newVal)}
-                            numRows={this.getNumRows(correctAnswer)}
-                            numCols={this.getNumCols(correctAnswer)}
+                            numRows={this.getDimAndHeaders(correctAnswer).numRows}
+                            numCols={this.getDimAndHeaders(correctAnswer).numCols}
+                            headers= {this.getDimAndHeaders(correctAnswer).headers}
                             context={this.props.context}
                             classes={this.props.classes}
                             index={index}

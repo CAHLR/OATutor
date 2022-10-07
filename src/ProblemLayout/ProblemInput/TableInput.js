@@ -19,6 +19,7 @@ class TableInput extends React.Component {
         this.clearCells = this.clearCells.bind(this)
         this.numRows = props.numRows;
         this.numCols = props.numCols;
+        this.headers = props.headers;
     }
 
 
@@ -86,6 +87,7 @@ class TableInput extends React.Component {
                          borderBottom: '1px solid #c4c4c4', background: '#ececec'}
                     }}
                     >
+                        
                         {
                             gridState[0].map((row, col) => {
                                     return (
@@ -93,9 +95,8 @@ class TableInput extends React.Component {
                                         disabled
                                         id="filled-disabled"
                                         label="Disabled"
-                                        defaultValue="Hello World"
+                                        defaultValue={this.props.headers[col]}
                                         key ={col}
-                                        
                                         className={'grid-cell'}
                                     />
                                     )
