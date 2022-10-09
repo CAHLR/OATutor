@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a6b9f29radfunc24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Radical Index",
+        "text": "What is the index of the radical?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6b9f29radfunc24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6b9f29radfunc24a-h1"
+        ],
+        "title": "Even radical index",
+        "text": "Since the radical index is 2, it is even, so, the radicand must be greater than or equal to 0.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6b9f29radfunc24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6b9f29radfunc24a-h2"
+        ],
+        "title": "Solving the Radicand",
+        "text": "Solve $$2-3x \\geq 0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6b9f29radfunc24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6b9f29radfunc24a-h3"
+        ],
+        "title": "Solve the Inequality",
+        "text": "Subtract 2 from both sides of the inequality which gives -3x is greater than and equal to -2.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6b9f29radfunc24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6b9f29radfunc24a-h4"
+        ],
+        "title": "Solve the Inequality",
+        "text": "Divide both sides of the inequality by -3 which gives x is less than and equal to $$\\frac{2}{3}$$. We can turn it into interval notation as $$(-\\infty,\\frac{2}{3}]$$.",
+        "variabilization": {}
+    }
+]

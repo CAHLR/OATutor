@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aadff92AppQuad12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "Let the length of the driveway be l, we can write the width in terms of l as 2l-6.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad12a-h1"
+        ],
+        "title": "Equation For Rectangle Area",
+        "text": "Area of $$Rectangle=width length=\\left(2l-6\\right) l=140$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad12a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad12a-h3"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "Given $$\\left(2l-6\\right) l=140$$, use quadratic formula to solve for l. We get the length $$l=-7$$ or 10. Given that length of rectangle has to be positive, we can omit the negative answer. Therefore, the length is 10.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "14"
+        ],
+        "dependencies": [
+            "aadff92AppQuad12a-h4"
+        ],
+        "title": "Find the Length",
+        "text": "Given the length is 10, the width is six less than twice the length. What is the width?",
+        "variabilization": {}
+    }
+]
