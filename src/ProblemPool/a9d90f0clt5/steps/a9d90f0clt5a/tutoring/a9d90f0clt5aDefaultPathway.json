@@ -3,23 +3,33 @@
         "id": "a9d90f0clt5a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "invNorm Calculator",
-        "text": "Use invNorm",
+        "title": "\u2211x Equation Boundaries",
+        "text": "Solve for P(1500 < \u2211x < 1800).",
         "variabilization": {}
     },
     {
         "id": "a9d90f0clt5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt5a-h1"
+        ],
+        "title": "Normalcdf Equivalence",
+        "text": "P(1500 < \u2211x < 1800) $$=$$ normalcdf(1500, 1800, (50)(34), (\u221a50)(15)).",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt5a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "1789.3"
+            "0.7974"
         ],
         "dependencies": [
-            "a9d90f0clt5a-h1"
+            "a9d90f0clt5a-h2"
         ],
-        "title": "Solving invNorm",
-        "text": "Let k $$=$$ the 80th percentile. k $$=$$ invNorm(0.80,(50)(34), $$((=SQRT(50))(15))$$.",
+        "title": "Solving for Normalcdf",
+        "text": "What is normalcdf(1500, 1800, (50)(34), (\u221a50)(15))?",
         "variabilization": {}
     }
 ]

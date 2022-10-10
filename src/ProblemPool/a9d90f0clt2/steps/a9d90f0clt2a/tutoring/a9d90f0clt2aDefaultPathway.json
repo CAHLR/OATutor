@@ -3,23 +3,18 @@
         "id": "a9d90f0clt2a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Equation",
-        "text": "\u2211x $$=$$ (n)(\u03bcX) + $$(z)(=SQRT(N))(\u03c3x)$$",
+        "title": "What to Solve For",
+        "text": "Find \u2211x where z $$=$$ 1.5.",
         "variabilization": {}
     },
     {
         "id": "a9d90f0clt2a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "7401.2"
-        ],
+        "type": "hint",
         "dependencies": [
             "a9d90f0clt2a-h1"
         ],
-        "title": "Solving Equation",
-        "text": "What is (80)(90) + $$(1.5)(=SQRT(80))(15)$$?",
+        "title": "\u2211x Equation",
+        "text": "\u2211x $$=$$ (n)(\u03bc\u2093) + (z)(\u221an)(\u03c3\u2093)",
         "variabilization": {}
     },
     {
@@ -34,8 +29,8 @@
             "a9d90f0clt2a-h1",
             "a9d90f0clt2a-h2"
         ],
-        "title": "CLT Sum",
-        "text": "Solve \u2211x $$=$$ (n)(\u03bcX) + $$(z)(=SQRT(N))(\u03c3x)$$ such that (80)(90) + $$(1.5)(=SQRT(80))(15)$$ $$=$$ 7401.20",
+        "title": "Plugging In",
+        "text": "What is (80)(90) + (1.5)(\u221a80)(15)?",
         "variabilization": {}
     }
 ]

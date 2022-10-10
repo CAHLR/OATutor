@@ -1,0 +1,25 @@
+[
+    {
+        "id": "a9d90f0clt9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Calculator",
+        "text": "Plug values into the invNorm function on the calculator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "587.76"
+        ],
+        "dependencies": [
+            "a9d90f0clt9a-h1"
+        ],
+        "title": "Solving invNorm",
+        "text": "Let k $$=$$ the 95th percentile. What is k $$=$$ invNorm(0.95,(70)(8.2), (\u221a70)(1))?",
+        "variabilization": {}
+    }
+]
