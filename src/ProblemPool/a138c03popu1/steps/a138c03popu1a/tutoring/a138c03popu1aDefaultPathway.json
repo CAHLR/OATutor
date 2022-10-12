@@ -55,7 +55,9 @@
     {
         "id": "a138c03popu1a-h5",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a138c03popu1a-h4"
+        ],
         "title": "Area Under the Curve",
         "text": "What are the area to the right and the area to the left?",
         "variabilization": {}
@@ -87,13 +89,15 @@
             "a138c03popu1a-h5"
         ],
         "title": "What is the area to the left if using a 95% confidence interval?",
-        "text": "1-area to the $$right=1-0.025$$",
+        "text": "1 - area to the $$right=1-0.025$$",
         "variabilization": {}
     },
     {
         "id": "a138c03popu1a-h8",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a138c03popu1a-h7"
+        ],
         "title": "T-Score",
         "text": "To find the confidence interval, we need to compute t-score, and to find the t-score we will need to find the EBM (error bound)",
         "variabilization": {}
@@ -131,7 +135,9 @@
     {
         "id": "a138c03popu1a-h11",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a138c03popu1a-h10"
+        ],
         "title": "Bounds of the Confidence Interval",
         "text": "What is the lower and upper bound the confidence interval?",
         "variabilization": {}
