@@ -2,6 +2,7 @@ import { variabilize } from './variabilize.js';
 import insert from "../util/strInsert";
 import { parseMatrixTex } from "../util/parseMatrixTex";
 import { IS_DEVELOPMENT, IS_STAGING_OR_DEVELOPMENT } from "../util/getBuildType";
+import WrongAnswerReasons from "../util/wrongAnswerReasons";
 
 const KAS = require('../kas.js');
 
@@ -12,18 +13,25 @@ if (IS_DEVELOPMENT) {
 // attempt = student answer, actual = [ans1, ans2]
 function _equality(attempt, actual) {
     const parsedAttempt = attempt.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
-    return actual.some((stepAns) => {
+    return actual.filter(stepAns => {
         const parsedStepAns = stepAns.replace(/\s+/g, '').replace(/\\left/g, '').replace(/\\right/g, '');
         //console.log("parsedAttempt: " + parsedAttempt + " parsedStepAns: " + parsedStepAns);
-        return (parsedAttempt === parsedStepAns)
+        return parsedAttempt === parsedStepAns
     });
 }
 
 // attempt = student answer, actual = [ans1, ans2]
+/**
+ *
+ * @param attempt {Expr}
+ * @param actual {Expr[]}
+ * @returns {Expr[]}
+ * @private
+ */
 function _parseEquality(attempt, actual) {
     //console.log("PARSED: " + attempt.print());
     //console.log("ANSWER: " + actual[0].print());
-    return actual.some((stepAns) => KAS.compare(attempt, stepAns).equal);
+    return actual.filter(stepAns => KAS.compare(attempt, stepAns).equal);
 }
 
 // Round to precision number of decimal places
@@ -61,18 +69,27 @@ function parse(_string) {
 }
 
 
-function checkAnswer(attempt, actual, answerType, precision, variabilization) {
+/**
+ *
+ * @param attempt
+ * @param actual
+ * @param answerType
+ * @param precision
+ * @param variabilization
+ * @param questionText {string} allows for a check to see if student pasted in the answer exactly
+ * @returns {[string, boolean | string, null | WrongAnswerReasons]}
+ */
+function checkAnswer({ attempt, actual, answerType, precision = 5, variabilization = {}, questionText = ""}) {
     let parsed = attempt.replace(/\s+/g, '');
     if (variabilization) {
         actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
     }
-    //console.log(actual);
-    let correctAnswer = false;
 
     try {
         if (parsed === "") {
-            return [parsed, false];
-        } else if (answerType === "arithmetic") {
+            return [parsed, false, WrongAnswerReasons.wrong];
+        }
+        if (answerType === "arithmetic") {
             // checks if anticipated answer is a matrix
             if (/\\begin{[a-zA-Z]?matrix}/.test(actual)) {
                 console.debug(`attempt: ${attempt} vs. actual:`, actual)
@@ -80,7 +97,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
                 const solutionMatrices = parseMatrixTex(actual);
 
                 console.debug('solutions: ', solutionMatrices)
-                correctAnswer = solutionMatrices.some(matrix => {
+                let correctAnswers = solutionMatrices.filter(matrix => {
                     return matrix.reduce((acc, row, idx) => acc && row.reduce((_acc, cell, jdx) => {
                         const _studentRow = studentMatrix[idx] || []
                         const _studentCell = _studentRow[jdx] || ""
@@ -92,29 +109,63 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
                     }, true), true)
                 })
 
-                return [attempt, correctAnswer]
-            } else {
-                if (IS_STAGING_OR_DEVELOPMENT) {
-                    console.debug("Using KAS to compare answer with solution", attempt, actual)
+                if (correctAnswers.length > 0) {
+                    return [attempt, correctAnswers[0], null]
                 }
+
+                return [attempt, false, WrongAnswerReasons.wrong]
+            } else {
                 parsed = parse(attempt).expr;
-                correctAnswer = _parseEquality(parsed, actual.map((actualAns) => parse(actualAns).expr));
-                return [parsed.print(), correctAnswer];
+                if (IS_STAGING_OR_DEVELOPMENT) {
+                    console.debug("checkAnswer.js: Using KAS to compare answer with solution", "attempt", attempt, "actual", actual, "parsed", parsed)
+
+                    console.debug("checkAnswer.js: questionText vs attempt", questionText, "vs", attempt)
+                }
+
+                // try to see if student paste in exact question
+                try {
+                    const questionTextRepr = parse(questionText).expr.repr()
+                    if (questionTextRepr === parsed.repr()) {
+                        return [parsed.print(), false, WrongAnswerReasons.sameAsProblem];
+                    }
+                } catch (_) {
+                    // ignored
+                }
+
+                let correctAnswers = _parseEquality(parsed, actual.map((actualAns) => parse(actualAns).expr));
+
+                if (correctAnswers.length > 0) {
+                    return [parsed.print(), correctAnswers[0], null]
+                }
+
+                return [parsed.print(), false, WrongAnswerReasons.wrong];
             }
 
         } else if (answerType === "string") {
             parsed = attempt;
             //console.log(parsed);
             //console.log(actual);
-            correctAnswer = _equality(parsed, actual);
+            const correctAnswers = _equality(parsed, actual);
+
+            if (correctAnswers.length > 0) {
+                return [parsed, correctAnswers[0], null]
+            }
+
+            return [parsed, false, WrongAnswerReasons.wrong];
         } else {
+            // guess it is a number problem
             parsed = +attempt;
-            correctAnswer = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
+            const correctAnswers = _equality(round(parsed, precision), actual.map((actualAns) => round(+actualAns, precision)));
+
+            if (correctAnswers.length > 0) {
+                return [parsed, correctAnswers[0], null]
+            }
+
+            return [parsed, false, WrongAnswerReasons.wrong];
         }
-        return [parsed, correctAnswer];
     } catch (err) {
         console.log("error", err);
-        return [parsed, false];
+        return [parsed, false, WrongAnswerReasons.errored];
     }
 }
 
