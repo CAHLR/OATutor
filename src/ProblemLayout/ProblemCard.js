@@ -17,9 +17,9 @@ import { ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/config.js';
 import "./ProblemCard.css";
 import ProblemInput from "./ProblemInput/ProblemInput";
 import Spacer from "../Components/_General/Spacer";
-import { toast } from "react-toastify";
 import { stagingProp } from "../util/addStagingProperty";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
+import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 
 
 class ProblemCard extends React.Component {
@@ -93,17 +93,26 @@ class ProblemCard extends React.Component {
     submit = () => {
         console.debug('submitting problem')
         const { inputVal, hintsFinished } = this.state;
-        const { variabilization, knowledgeComponents, precision, stepAnswer, answerType } = this.step;
+        const { variabilization, knowledgeComponents, precision, stepAnswer, answerType, stepBody, stepTitle } = this.step;
         const { seed, problemVars, problemID, courseName, answerMade, lesson } = this.props;
 
-        const [parsed, correctAnswer] = checkAnswer(inputVal, stepAnswer, answerType, precision, chooseVariables(Object.assign({}, problemVars, variabilization), seed));
+        const [parsed, correctAnswer, reason] = checkAnswer({
+            attempt: inputVal,
+            actual: stepAnswer,
+            answerType: answerType,
+            precision: precision,
+            variabilization: chooseVariables(Object.assign({}, problemVars, variabilization), seed),
+            questionText: stepBody.trim() || stepTitle.trim()
+        });
+
+        const isCorrect = !!correctAnswer
 
         this.context.firebase.log(
             parsed,
             problemID,
             this.step,
             null,
-            correctAnswer,
+            isCorrect,
             hintsFinished,
             "answerStep",
             chooseVariables(Object.assign({}, problemVars, variabilization), seed),
@@ -111,21 +120,13 @@ class ProblemCard extends React.Component {
             courseName
         )
 
-        if (correctAnswer) {
-            toast.success("Correct Answer!", {
-                autoClose: 3000
-            })
-        } else {
-            toast.error("Incorrect Answer!", {
-                autoClose: 3000
-            })
-        }
+        toastNotifyCorrectness(isCorrect, reason);
 
         this.setState({
-            isCorrect: correctAnswer,
-            checkMarkOpacity: correctAnswer === true ? '100' : '0'
+            isCorrect,
+            checkMarkOpacity: isCorrect ? '100' : '0'
         });
-        answerMade(this.index, knowledgeComponents, correctAnswer);
+        answerMade(this.index, knowledgeComponents, isCorrect);
     }
 
     editInput = (event) => {
@@ -186,8 +187,8 @@ class ProblemCard extends React.Component {
 
     }
 
-    submitHint = (parsed, hint, correctAnswer, hintNum) => {
-        if (correctAnswer) {
+    submitHint = (parsed, hint, isCorrect, hintNum) => {
+        if (isCorrect) {
             this.setState(prevState => {
                 prevState.hintsFinished[hintNum] = 1;
                 return { hintsFinished: prevState.hintsFinished }
@@ -198,7 +199,7 @@ class ProblemCard extends React.Component {
             this.props.problemID,
             this.step,
             hint,
-            correctAnswer,
+            isCorrect,
             this.state.hintsFinished,
             chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed),
             this.props.lesson,

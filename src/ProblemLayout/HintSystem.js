@@ -84,8 +84,8 @@ class HintSystem extends React.Component {
         });
     }
 
-    submitSubHint = (parsed, hint, correctAnswer, i, hintNum) => {
-        if (correctAnswer) {
+    submitSubHint = (parsed, hint, isCorrect, i, hintNum) => {
+        if (isCorrect) {
             this.setState(prevState => {
                 prevState.subHintsFinished[i][hintNum] = 1;
                 return { subHintsFinished: prevState.subHintsFinished }
@@ -96,7 +96,7 @@ class HintSystem extends React.Component {
             this.props.problemID,
             this.step,
             hint,
-            correctAnswer,
+            isCorrect,
             this.state.hintsFinished,
             chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed),
             this.props.lesson,
