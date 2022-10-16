@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a0d6799hyp1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "p', q', and EBP",
+        "text": "Let X $$=$$ the number of people in the sample who have cell phones. X ~ B (500, 421/500). To calculate the confidence interval, you must find p', q', and EBP.",
+        "variabilization": {}
+    },
+    {
+        "id": "a0d6799hyp1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d6799hyp1a-h1"
+        ],
+        "title": "p' Equation",
+        "text": "p', the estimated proportion of successes, is equal to the number of successes (x) divided by the size of the sample (n): p' $$=$$ $$\\frac{x}{n}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a0d6799hyp1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "500"
+        ],
+        "dependencies": [
+            "a0d6799hyp1a-h1",
+            "a0d6799hyp1a-h2"
+        ],
+        "title": "Sample Size",
+        "text": "What is the size of the sample (n)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a0d6799hyp1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "421"
+        ],
+        "dependencies": [
+            "a0d6799hyp1a-h3"
+        ],
+        "title": "Number of Successes",
+        "text": "What is the number of successes (x)?",
+        "variabilization": {}
+    }
+]
