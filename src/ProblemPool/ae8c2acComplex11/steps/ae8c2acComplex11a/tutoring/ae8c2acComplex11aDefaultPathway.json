@@ -1,0 +1,55 @@
+[
+    {
+        "id": "ae8c2acComplex11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring i",
+        "text": "If b is a positive real number, then $$\\sqrt{-b}$$ $$=$$ $$i \\sqrt{b}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ae8c2acComplex11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$i \\sqrt{12}+i \\sqrt{27}$$"
+        ],
+        "dependencies": [
+            "ae8c2acComplex11a-h1"
+        ],
+        "title": "Factoring i",
+        "text": "What will our expression look like when we factor out i in both terms?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae8c2acComplex11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2i \\sqrt{3}+3i \\sqrt{3}$$"
+        ],
+        "dependencies": [
+            "ae8c2acComplex11a-h2"
+        ],
+        "title": "Simplifying Terms",
+        "text": "If we simplify our square roots, what will our expression be?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae8c2acComplex11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5i \\sqrt{3}$$"
+        ],
+        "dependencies": [
+            "ae8c2acComplex11a-h3"
+        ],
+        "title": "Solution",
+        "text": "Since we have common terms, we can get our solution by adding the terms together. What will our final solution be?",
+        "variabilization": {}
+    }
+]

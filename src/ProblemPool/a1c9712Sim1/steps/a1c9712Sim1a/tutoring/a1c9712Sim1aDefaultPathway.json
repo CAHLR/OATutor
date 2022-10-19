@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a1c9712Sim1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting",
+        "text": "Rewrite the complex fraction as division.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{6}{x-4} \\frac{x^2-16}{3}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim1a-h1"
+        ],
+        "title": "Rewriting",
+        "text": "Rewrite as the product of the first times the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1c9712Sim1a-h2"
+        ],
+        "title": "Common Factors",
+        "text": "We can then remove common factors after we multiply.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\left(x+4\\right)$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim1a-h3"
+        ],
+        "title": "Simplify Expression",
+        "text": "When we simplify, what is our answer?",
+        "variabilization": {}
+    }
+]

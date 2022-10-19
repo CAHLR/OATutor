@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ac26263ThreeVariables12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Multiply the first equation by 2 and subtract with the second equation: $$2\\left(x+2y-z\\right)-2x+7y+4z=2\\times1-11$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h1"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$-3y-6z=-9$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h2"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the first equation with the third equation: $$x+2y-z+x+3y+z=1-4$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h3"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$-y-2z=-3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h4"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract $$-3y-6z=-9$$ to $$3\\left(-y-2z\\right)=3\\left(-3\\right)$$. $$\\left(-3y-6z\\right)+3\\left(-y-2z\\right)=-9-(-9)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "The equation becomes $$0=0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h6"
+        ],
+        "title": "Representation",
+        "text": "Rewrite y in the variable of z with $$-y-2z=-3$$, so $$y=-2z+3$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h7"
+        ],
+        "title": "Substitution",
+        "text": "Substitute $$y=-2z+3$$ into the first equation to get $$x+2\\left(-2z+3\\right)-z=1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h8"
+        ],
+        "title": "Calculation",
+        "text": "Rewrite x in the variable of z with the equation to get $$x=5z-5$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac26263ThreeVariables12a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables12a-h9"
+        ],
+        "title": "Principle",
+        "text": "z can be any number, so there are $$infinitely$$ many solutions",
+        "variabilization": {}
+    }
+]

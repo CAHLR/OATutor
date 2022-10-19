@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a675767Ellipses2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the Equation in Standard Form",
+        "text": "It is in standard form $$\\frac{x^2}{9}+\\frac{y^2}{25}=1$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a675767Ellipses2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a675767Ellipses2a-h1"
+        ],
+        "title": "Determine Whether the Major Axis is Horizontal or Vertical",
+        "text": "Since $$9<25$$ and 25 is in the $$y^2$$ term, the major axis is vertical.",
+        "variabilization": {}
+    },
+    {
+        "id": "a675767Ellipses2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a675767Ellipses2a-h2"
+        ],
+        "title": "Find the endpoints of the major axis.",
+        "text": "The endpoints will be the y-intercept. Since $$b^2=25$$ then $$b=-5$$ or $$b=5$$. The endpoint of the major axis are (0,5), (0,-5).",
+        "variabilization": {}
+    },
+    {
+        "id": "a675767Ellipses2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a675767Ellipses2a-h3"
+        ],
+        "title": "Find the endpoints of the minor axis.",
+        "text": "The endpoints will be the x-intercepts. Since $$a^2=9$$, then $$a=-3$$ or $$a=3$$. The endpoints of the minor axis are (3,0), (-3,0).",
+        "variabilization": {}
+    },
+    {
+        "id": "a675767Ellipses2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a675767Ellipses2a-h4"
+        ],
+        "title": "Elimination of Choices",
+        "text": "SInce graph 2 is the only graph with y-intercepts as (0,5) and (0,-5) and x-intercept as (-3,0) and (3,0), graph 2 is the final answer.",
+        "variabilization": {}
+    }
+]

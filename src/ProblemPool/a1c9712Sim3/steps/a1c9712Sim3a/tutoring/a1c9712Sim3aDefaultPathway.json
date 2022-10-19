@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a1c9712Sim3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify Expression",
+        "text": "Simplify the numerator and denominator by finding the Least Common Divisor of the fractions.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{6} \\frac{6}{1}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim3a-h1"
+        ],
+        "title": "Rewriting",
+        "text": "Rewrite as the product of the first times the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1c9712Sim3a-h2"
+        ],
+        "title": "Common Factors",
+        "text": "We can then remove common factors after we multiply.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a1c9712Sim3a-h3"
+        ],
+        "title": "Simplify Expression",
+        "text": "When we simplify, what is our answer?",
+        "variabilization": {}
+    }
+]
