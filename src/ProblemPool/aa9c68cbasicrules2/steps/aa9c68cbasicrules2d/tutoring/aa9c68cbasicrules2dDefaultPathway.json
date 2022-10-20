@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aa9c68cbasicrules2d-h10",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules2c-h9"
+        ],
+        "title": "Definition of Mutual Independence",
+        "text": "If A and B are mutually exclusive, then P(A AND $$B)=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2d-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.585"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2d-h10"
+        ],
+        "title": "Application of Mutual Independence",
+        "text": "What is P(A AND B), which was solved for above?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2d-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2d-h11"
+        ],
+        "title": "Application of Mutual Independence",
+        "text": "Is P(A AND $$B)=0$$? If yes, then they are mutually exclusive; if not, then they are not mutually exclusive.",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

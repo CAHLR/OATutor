@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aa9c68cbasicrules24b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules24a-h2"
+        ],
+        "title": "Complement Rule",
+        "text": "This question is asking for the complement rule. We are essentially asked the probability that a person does not have type O blood and the Rh- factor. We can rewrite this express mathematically as P(NOT(O AND R)) and using complement notation (with the apostrophe), this can be simplified to P((O AND R)'), or the complement of what we found in the previous step.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules24b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.94"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules24b-h3"
+        ],
+        "title": "Applying the Complement Rule",
+        "text": "What is 1-P(NOT(O AND R))?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "aa9c68cbasicrules24b-h4-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.94"
+                ],
+                "dependencies": [],
+                "title": "Applying the Complement Rule",
+                "text": "What is 1-0.06?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

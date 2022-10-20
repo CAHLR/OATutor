@@ -1,0 +1,241 @@
+[
+    {
+        "id": "a16e7efdividingpoly4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the equation",
+        "text": "Remember to fill in missing coefficients with placeholder 0's if possible to make the equation easier to read and work with.",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h1"
+        ],
+        "title": "Division",
+        "text": "What is the largest degree in the polynomial?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a16e7efdividingpoly4a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "1"
+                ],
+                "dependencies": [],
+                "title": "Division",
+                "text": "What is the largest degree in the binomial?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2$$"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply x by to get $$x^3$$?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a16e7efdividingpoly4a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$x^3+x^2$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is (x**2))*(x+1)?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(-x^2\\right)+1$$"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h3"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$x^3+1-x^3+x^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [],
+        "title": "Division",
+        "text": "What is the largest degree in the remainder?",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-x"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h5"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply x by to get $$-\\left(x^2\\right)$$?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a16e7efdividingpoly4a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\left(-x^2\\right)-x$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$-x \\left(x+1\\right)$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+1$$"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h6"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$\\left(-x^2\\right)+1-\\left(-x^2\\right)-x$$? ((-x**2)+1 is the remainder from the previous subtraction step.)",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h7"
+        ],
+        "title": "Division",
+        "text": "What is the largest degree in the remainder?",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [],
+        "title": "Multiplication",
+        "text": "What can we multiply x by to get x?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a16e7efdividingpoly4a-h9-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$x+1$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$1\\left(x+1\\right)$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h9"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$x+1-x+1$$ (x+1 is the remainder from the previous subtraction step.)",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h10"
+        ],
+        "title": "Remainder",
+        "text": "What is the remainder? If there is no remainder enter 0.",
+        "variabilization": {}
+    },
+    {
+        "id": "a16e7efdividingpoly4a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2-x+1$$"
+        ],
+        "dependencies": [
+            "a16e7efdividingpoly4a-h11"
+        ],
+        "title": "Combining",
+        "text": "Combine all the terms that we used to multiply the divisor by into a single expression along with the divisor.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a16e7efdividingpoly4a-h12-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Combining",
+                "text": "Reminder: The terms we had were, $$x^2$$, -x, 1",
+                "variabilization": {}
+            }
+        ]
+    }
+]

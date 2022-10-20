@@ -1,0 +1,176 @@
+[
+    {
+        "id": "a9ee097normal6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Calculations",
+        "text": "To find the confidence interval, the sample mean and error (EBM) are needed. We know the sample mean is 68. Now, calculate the EBM.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal6a-h1"
+        ],
+        "title": "Calculate the EBM",
+        "text": "The EBM is calculated through the formula: $$\\frac{z_\u03b1}{2} \\frac{\\sigma}{\\sqrt{n}}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal6a-h2"
+        ],
+        "title": "Calculate the EBM",
+        "text": "We know $$\u03c3=3$$ and $$n=36$$. The confidence level (CL) is 95%. Based on this, calculate the EBM.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.96"
+        ],
+        "dependencies": [
+            "a9ee097normal6a-h3"
+        ],
+        "title": "Calculate $$\\frac{z_\u03b1}{2}$$",
+        "text": "What is $$\\frac{z_\u03b1}{2}$$? Remember, $$\ud835\udefc=1-CL$$.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9ee097normal6a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.05"
+                ],
+                "dependencies": [],
+                "title": "Calculate \ud835\udefc",
+                "text": "What is 1-CL?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9ee097normal6a-h4-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.025"
+                ],
+                "dependencies": [],
+                "title": "Calculate $$\\frac{\u03b1}{2}$$",
+                "text": "What is $$\\frac{\u03b1}{2}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9ee097normal6a-h4-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.025"
+                ],
+                "dependencies": [],
+                "title": "Right Area",
+                "text": "Now, we have z_0.05. What is the area to the right of z_0.05?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9ee097normal6a-h4-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.975"
+                ],
+                "dependencies": [],
+                "title": "Left Area",
+                "text": "What is the area to the left of z_0.05?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9ee097normal6a-h4-s5",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "1.96"
+                ],
+                "dependencies": [],
+                "title": "Calculator",
+                "text": "What is invNorm(0.975,0,1)?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9ee097normal6a-h4-s6",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.98"
+                ],
+                "dependencies": [],
+                "title": "Calculate the EBM",
+                "text": "What is $$\\operatorname{1.96}\\left(\\frac{3}{\\sqrt{36}}\\right)$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9ee097normal6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal6a-h4"
+        ],
+        "title": "Upper and Lower Limits",
+        "text": "The confidence interval estimate is the upper and lower bounds of the mean. Add the EBM to the mean to get the upper limit, and subtract the EBM from the mean to get the lower limit.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "67.02"
+        ],
+        "dependencies": [
+            "a9ee097normal6a-h5"
+        ],
+        "title": "Upper Limit",
+        "text": "What is $$68+0.98$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "68.98"
+        ],
+        "dependencies": [
+            "a9ee097normal6a-h5"
+        ],
+        "title": "Lower Limit",
+        "text": "What is 68-0.98?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal6a-h6",
+            "a9ee097normal6a-h7"
+        ],
+        "title": "Combine",
+        "text": "Combine information about the upper and lower limits to get the answer.",
+        "variabilization": {}
+    }
+]

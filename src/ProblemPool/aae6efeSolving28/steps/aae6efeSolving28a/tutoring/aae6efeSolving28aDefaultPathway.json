@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aae6efeSolving28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setup",
+        "text": "40% off means the sale price is (100%-40%) off the original price",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.4"
+        ],
+        "dependencies": [
+            "aae6efeSolving28a-h1"
+        ],
+        "title": "Conversion",
+        "text": "What is the numeric form of 40%?",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving28a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.6"
+        ],
+        "dependencies": [
+            "aae6efeSolving28a-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is the numeric form of (100%-40%)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving28a-h3"
+        ],
+        "title": "Organizing",
+        "text": "The amount of discount can be set as $$price discount$$, $$49.95\\times0.4$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving28a-h4"
+        ],
+        "title": "Organizing",
+        "text": "The sale price in equation form: $$49.95\\times0.6$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aae6efeSolving28a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "29.97"
+        ],
+        "dependencies": [
+            "aae6efeSolving28a-h5"
+        ],
+        "title": "Calculation",
+        "text": "What is the sale price as $$49.95\\times0.6$$?",
+        "variabilization": {}
+    }
+]

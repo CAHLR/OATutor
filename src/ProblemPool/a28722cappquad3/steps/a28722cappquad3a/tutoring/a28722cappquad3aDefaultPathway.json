@@ -1,0 +1,163 @@
+[
+    {
+        "id": "a28722cappquad3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area of a Triangle",
+        "text": "The area of a triangle is 120 $$=$$ $$0.5h w$$, where h and w respectively represent the height and width of the triangle.",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the Width in Terms of h",
+        "text": "Find w in terms of h",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2h$$ + 4"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h2"
+        ],
+        "title": "Rewrite the Width in Terms of h",
+        "text": "What is w in terms of h?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad3a-h3"
+        ],
+        "title": "Rewriting the Problem Algebraically",
+        "text": "Substitute the value of w with its equivalent in terms of h, in the area formula 120 $$=$$ $$0.5h w$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.5*(2h**2 + 4h)"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h4"
+        ],
+        "title": "Rewriting the Problem Algebraically",
+        "text": "What is the area of this triangle in terms of h?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad3a-h5"
+        ],
+        "title": "Quadratic Formula",
+        "text": "Now that the area formula can be rewritten in terms of h, we can rewrite it in the form $$a h^2$$ + $$b h$$ + c $$=$$ 0",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$h^2$$ + 2h - 120 $$=$$ 0"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h6"
+        ],
+        "title": "Quadratic Formula",
+        "text": "What is $$h^2$$ $$\\left(+2\\right) h$$ $$=$$ 120 written in the form above?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad3a-h7"
+        ],
+        "title": "Quadratic Formula",
+        "text": "If you have an equation in the form $$a h^2$$ + bh+ c $$=$$ 0, h $$=$$ (-b~sqrt(b**2 -4ac))/(2a)",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h8"
+        ],
+        "title": "Quadratic Formula",
+        "text": "What is the value of a if we rewrite the problem above?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h8"
+        ],
+        "title": "Quadratic Formula",
+        "text": "What is the value of b if we rewrite the problem above?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-120"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h8"
+        ],
+        "title": "Quadratic Formula",
+        "text": "What is the value of c if we rewrite the problem above?",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad3a-h11"
+        ],
+        "title": "Multiple Answers",
+        "text": "The quadratic formula can yield two different answers, based on the positive or negative value of the square root, BUT we must choose the positive answer since the height of something can't be negative.",
+        "variabilization": {}
+    },
+    {
+        "id": "a28722cappquad3a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "a28722cappquad3a-h12"
+        ],
+        "title": "Multiple Answers",
+        "text": "What is the positive value of h?",
+        "variabilization": {}
+    }
+]

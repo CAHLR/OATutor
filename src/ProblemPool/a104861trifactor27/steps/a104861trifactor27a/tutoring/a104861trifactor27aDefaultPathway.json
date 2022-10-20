@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a104861trifactor27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square",
+        "text": "This equation is a perfect square",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor27a-h1"
+        ],
+        "title": "Common Factor",
+        "text": "Take out the 3u to make $$10p\\left(9p^2+30pq+25q^2\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor27a-h2"
+        ],
+        "title": "Factors",
+        "text": "In this equation $$z\\left({ax}^2+bx+c\\right)$$ the square root of a and c are 3 and 5q respectively.",
+        "variabilization": {}
+    },
+    {
+        "id": "a104861trifactor27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor27a-h3"
+        ],
+        "title": "Plug in",
+        "text": "Plug into the perfect square simplified form $${z\\left(nx+m\\right)}^2$$ where n is the square root of a and m is the square root of c",
+        "variabilization": {}
+    }
+]

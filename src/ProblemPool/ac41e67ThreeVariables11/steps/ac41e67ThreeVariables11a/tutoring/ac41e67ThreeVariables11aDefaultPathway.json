@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ac41e67ThreeVariables11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Multiply the first equation by 2 and subtract with the second equation: $$2\\left(2x-2y+3z\\right)-4x-3y+2z=2\\times6-0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac41e67ThreeVariables11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac41e67ThreeVariables11a-h1"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$-y+4z=12$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac41e67ThreeVariables11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac41e67ThreeVariables11a-h2"
+        ],
+        "title": "Calculation",
+        "text": "Add the first equation to the third equation: $$2x-2y+3z+\\left(-2x+3y-7z\\right)=6+1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac41e67ThreeVariables11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac41e67ThreeVariables11a-h3"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$y-4z=7$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac41e67ThreeVariables11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac41e67ThreeVariables11a-h4"
+        ],
+        "title": "Subtraction",
+        "text": "Add $$-y+4z=12$$ to $$y-4z=7$$. $$\\left(-y+4z\\right)+\\left(-y-4z\\right)=12+7$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac41e67ThreeVariables11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac41e67ThreeVariables11a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "The equation becomes $$0=19$$, which is a false statement",
+        "variabilization": {}
+    }
+]

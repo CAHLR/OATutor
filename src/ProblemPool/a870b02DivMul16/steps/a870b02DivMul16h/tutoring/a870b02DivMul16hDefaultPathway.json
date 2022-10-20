@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a870b02DivMul16h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiplication property of equality",
+        "text": "If you multiply both sides of an equation by the same number, you still have equality.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16h-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(-20\\right) \\left(-5\\right)=\\frac{q}{\\left(-5\\right)} \\left(-5\\right)$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul16h-h1"
+        ],
+        "title": "Multiplication",
+        "text": "Multiple -5 from each side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "100"
+        ],
+        "dependencies": [
+            "a870b02DivMul16h-h2"
+        ],
+        "title": "Simplification",
+        "text": "What do we get for q after simplifying the equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a870b02DivMul16h-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a870b02DivMul16h-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a870b02DivMul16h-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether -20 equals $$\\frac{100}{\\left(-5\\right)}$$.",
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]
