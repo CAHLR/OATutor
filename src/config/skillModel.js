@@ -6063,7 +6063,6 @@ const skillModel = {
     ad33ee8parabolas7a: [`parabolas`],
     ad33ee8parabolas8a: [`parabolas`],
     ad33ee8parabolas9a: [`parabolas`],
-    a675767Ellipses1a: [`ellipses`],
     a675767Ellipses10a: [`ellipses`],
     a675767Ellipses11a: [`ellipses`],
     a675767Ellipses12a: [`ellipses`],
