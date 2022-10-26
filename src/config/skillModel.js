@@ -5850,6 +5850,7 @@ const skillModel = {
     a88aae9QuadEq8a: [`solve_quadratic_inequalities`],
     a88aae9QuadEq9a: [`solve_quadratic_inequalities`],
     a9e42b3CompInv1a: [`10.1_finding_composite_and_inverse_functions`],
+    a9e42b3CompInv10a: [`10.1_finding_composite_and_inverse_functions`],
     a9e42b3CompInv11a: [`10.1_finding_composite_and_inverse_functions`],
     a9e42b3CompInv12a: [`10.1_finding_composite_and_inverse_functions`],
     a9e42b3CompInv13a: [`10.1_finding_composite_and_inverse_functions`],
