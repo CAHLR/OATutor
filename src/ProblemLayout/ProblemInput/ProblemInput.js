@@ -94,9 +94,10 @@ class ProblemInput extends React.Component {
 
     getDimAndHeaders(correctAnswer) {
         const temp = correctAnswer;
-        const numRows = correctAnswer.split("\\\\").length;
-        const numCols =  correctAnswer.split("\\\\").join("&").split("&").length / numRows;
+        const TotalRows = correctAnswer.split("\\\\").length;
+        const numCols =  correctAnswer.split("\\\\").join("&").split("&").length / TotalRows;
         const headers = temp.match(/([a-zA-z]+)/g).slice(2,2+numCols)
+        const numRows = TotalRows - 1;
         return {numRows, numCols, headers}
     }
 
@@ -119,6 +120,7 @@ class ProblemInput extends React.Component {
 
         return (
             <Grid container spacing={0} justifyContent="center" alignItems="center">
+                {console.log(parseTableTex(correctAnswer))}
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
