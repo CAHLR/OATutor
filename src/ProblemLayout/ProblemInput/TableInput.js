@@ -69,8 +69,6 @@ class TableInput extends React.Component {
 
         return (
             <div>
-                <div ref={this.gridRef}>
-                    
                 <Box
                     display={'grid'}
                     gridTemplateColumns={`repeat(3, 0fr)`}
@@ -83,64 +81,64 @@ class TableInput extends React.Component {
                     justifyContent={'center'}
                     sx={{
                         '& .MuiTextField-root': { m: 1, width: 'min(120px, 19vw)', borderRadius: 0,
-                         outline: "1px solid #c4c4c4", borderTop: '1px solid #c4c4c4', 
-                         borderBottom: '1px solid #c4c4c4', background: '#ececec'}
+                        outline: "1px solid #c4c4c4", borderTop: '1px solid #c4c4c4', 
+                        borderBottom: '1px solid #c4c4c4', background: '#ececec'}
                     }}
                     >
-                        
-                        {
-                            gridState[0].map((row, col) => {
-                                    return (
-                                    <TextField
-                                        disabled
-                                        id="filled-disabled"
-                                        label="Disabled"
-                                        defaultValue={this.props.headers[col]}
-                                        key ={col}
-                                        className={'grid-cell'}
-                                    />
-                                    )
-                                })
-                        }
-    
-                    </Box>
+                    {
+                        gridState[0].map((row, col) => {
+                                return (
+                                <TextField
+                                    disabled
+                                    id="filled-disabled"
+                                    label="Disabled"
+                                    defaultValue={this.props.headers[col]}
+                                    key ={col}
+                                    className={'grid-cell'}
+                                />
+                                )
+                            })
+                    }
+
+                </Box>
+                <div ref={this.gridRef}>
                     <Box display={'grid'}
-                            gridTemplateColumns={`repeat(${gridState[0].length}, 0fr)`}
-                            overflow={'auto'}
-                            pt={0}
-                            pb={1}
-                            gridGap={1}
-                            gridColumnGap={1}
-                            justifyItems={'center'}
-                            justifyContent={'center'}
-                            
+                        gridTemplateColumns={`repeat(${gridState[0].length}, 0fr)`}
+                        overflow={'auto'}
+                        pt={0}
+                        pb={1}
+                        gridGap={1}
+                        gridColumnGap={1}
+                        justifyItems={'center'}
+                        justifyContent={'center'}
+                        
                     >
-                        {
-                            gridState.map((row, idx) =>
-                                row.map((val, jdx) => {
-                                    return (
-                                        <center
-                                            className={clsx(classes.textTblLatex, 'grid-cell')}
-                                            key={`cell-${idx}-${jdx}`}
-                                            aria-label={`Cell (${idx}, ${jdx})`}
-                                            {...stagingProp({
-                                                "data-selenium-target": `grid-answer-cell-${jdx + idx * this.state.numCols}-${index}`
-                                            })}
-                                        >
-                                            <EquationEditor
-                                                value={val}
-                                                onChange={(str) => this.cellFieldChange(str, idx, jdx)}
-                                                style={{ width: "100%" }}
-                                                autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
-                                                autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
-                                            />
-                                        
-                                        </center>
-                                        
-                                    )
-                                })
-                            )
-                        }
+                    {
+                        gridState.map((row, idx) =>
+                            row.map((val, jdx) => {
+                                return (
+                                    <center
+                                        className={clsx(classes.textTblLatex, 'grid-cell')}
+                                        key={`cell-${idx}-${jdx}`}
+                                        aria-label={`Cell (${idx}, ${jdx})`}
+                                        {...stagingProp({
+                                            "data-selenium-target": `grid-answer-cell-${jdx + idx * this.state.numCols}-${index}`
+                                        })}
+                                    >
+                                        <EquationEditor
+                                            value={val}
+                                            onChange={(str) => this.cellFieldChange(str, idx, jdx)}
+                                            style={{ width: "100%" }}
+                                            autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
+                                            autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
+                                        />
+                                    
+                                    </center>
+                                    
+                                )
+                            })
+                        )
+                    }
                     </Box>
                 </div>
                 <Box mt={1} display={'grid'} width={'100%'} alignItems={'center'} justifyContent={'center'}>

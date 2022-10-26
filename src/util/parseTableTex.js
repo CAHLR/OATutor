@@ -11,5 +11,5 @@ export function parseTableTex(solTex) {
             .map(row => row.split("&").map(val => val.trim()))
         solutionTable.push(_solutionTable)
     })
-    return solutionTable[0].slice(1,4);
+    return Array(solutionTable[0].slice(1));
 }
