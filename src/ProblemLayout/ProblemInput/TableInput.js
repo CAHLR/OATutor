@@ -14,6 +14,7 @@ class TableInput extends React.Component {
         super(props);
         this.state = {
             gridState: props.defaultValue || this.genEmptyGrid(props.numRows, props.numCols),
+            fer: Math.random()
         };
         this.gridRef = createRef()
         this.clearCells = this.clearCells.bind(this)
@@ -44,22 +45,19 @@ class TableInput extends React.Component {
         }
         
         this.setState({
-            gridState: this.genEmptyGrid(this.numRows, this.numCols)
+            gridState: this.genEmptyGrid(this.numRows, this.numCols),
+            fer: Math.random()
+        }, () => {
+            this.props.onChange(JSON.stringify(this.state.gridState))
         })
-        if (this.gridRef.current) {
-            this.gridRef.current
-                .querySelectorAll(".mq-editable-field > *[mathquill-command-id], .mq-root-block > *[mathquill-command-id]")
-                .forEach(node => {
-                    node.remove()
-                })
-        }
+    
     }
 
 
     render() {
         const { classes, index } = this.props;
         
-        const { gridState } = this.state;
+        const { gridState, fer } = this.state;
 
         const revealClearButton = gridState.reduce((acc, cur, _) =>
                 acc + cur.reduce((_acc, _cur, __) =>
@@ -119,7 +117,7 @@ class TableInput extends React.Component {
                                 return (
                                     <center
                                         className={clsx(classes.textTblLatex, 'grid-cell')}
-                                        key={`cell-${idx}-${jdx}`}
+                                        key={`cell-${idx}-${jdx}-${fer}`}
                                         aria-label={`Cell (${idx}, ${jdx})`}
                                         {...stagingProp({
                                             "data-selenium-target": `grid-answer-cell-${jdx + idx * this.state.numCols}-${index}`

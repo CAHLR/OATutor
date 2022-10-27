@@ -2,6 +2,7 @@ import { variabilize } from './variabilize.js';
 import insert from "../util/strInsert";
 import { parseMatrixTex } from "../util/parseMatrixTex";
 import { IS_DEVELOPMENT, IS_STAGING_OR_DEVELOPMENT } from "../util/getBuildType";
+import { parseTableTex } from '../util/parseTableTex.js';
 
 const KAS = require('../kas.js');
 
@@ -63,6 +64,8 @@ function parse(_string) {
 
 function checkAnswer(attempt, actual, answerType, precision, variabilization) {
     let parsed = attempt.replace(/\s+/g, '');
+    console.debug(`attempt: ${attempt} vs. actual:`, actual)
+    console.log(parsed)
     if (variabilization) {
         actual = actual.map((actualAns) => variabilize(actualAns, variabilization));
     }
@@ -93,6 +96,26 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
                 })
 
                 return [attempt, correctAnswer]
+            } else if (/\\begin{[a-zA-Z]?tabular}/.test(actual)){
+                console.debug(`attempt: ${attempt} vs. actual:`, actual)
+                const studentMatrix = JSON.parse(attempt)
+                const solutionMatrices = parseTableTex(actual);
+
+                console.debug('solutions: ', solutionMatrices)
+                correctAnswer = solutionMatrices.some(matrix => {
+                    return matrix.reduce((acc, row, idx) => acc && row.reduce((_acc, cell, jdx) => {
+                        const _studentRow = studentMatrix[idx] || []
+                        const _studentCell = _studentRow[jdx] || ""
+                        const _studentExpr = parse(_studentCell).expr
+
+                        const _solExpr = parse(cell).expr
+
+                        return _acc && KAS.compare(_studentExpr, _solExpr).equal
+                    }, true), true)
+                })
+
+                return [attempt, correctAnswer]
+            
             } else {
                 if (IS_STAGING_OR_DEVELOPMENT) {
                     console.debug("Using KAS to compare answer with solution", attempt, actual)

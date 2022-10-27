@@ -34,6 +34,11 @@ class ProblemInput extends React.Component {
             console.log('automatically determined matrix input to be the correct problem type')
         }
 
+        console.debug('problem', this.props.step, 'seed', this.props.seed)
+        if (this.isTableInput()) {
+            console.log('automatically determined table input to be the correct problem type')
+        }
+
         const mqDisplayArea = this.equationRef?.current?.querySelector(".mq-editable-field > .mq-root-block")
         if (mqDisplayArea != null) {
             mqDisplayArea.ariaHidden = true
@@ -120,7 +125,8 @@ class ProblemInput extends React.Component {
 
         return (
             <Grid container spacing={0} justifyContent="center" alignItems="center">
-                {console.log(parseTableTex(correctAnswer))}
+                {/* {console.log("tbl",parseTableTex(correctAnswer))} */}
+                {/* {console.log("mx", parseMatrixTex(correctAnswer))} */}
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
