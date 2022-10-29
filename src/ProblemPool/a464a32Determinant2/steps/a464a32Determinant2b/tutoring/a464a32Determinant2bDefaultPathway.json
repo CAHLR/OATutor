@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a464a32Determinant2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Write the matrix in determinant form",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant2b-h1"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the products of the diagonals",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-15"
+        ],
+        "dependencies": [
+            "a464a32Determinant2b-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is $$0\\left(-7\\right)-\\left(-3\\right) \\left(-5\\right)$$?",
+        "variabilization": {}
+    }
+]

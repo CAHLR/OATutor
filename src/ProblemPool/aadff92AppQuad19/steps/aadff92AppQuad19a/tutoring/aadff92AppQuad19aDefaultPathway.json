@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aadff92AppQuad19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "We can employ pythagorean theorem. $$a^2+b^2=c^2$$ where a and b are legs of triangles and c is the hypotenuse. The length of ladder will be the hypotenuse. The distance from bottom of ladder to the house and the verticle distance that ladder reach are two legs of the triangle. Let x be the verticle distance that the ladder can reach. We can set up the equation as $$5^2+x^2={25}^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-24.50,24.50)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad19a-h1"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "$$5^2+x^2={25}^2$$ Solve for x and round x to the nearest hundredth. If there is more than one solution for x, please enter your answer as (a,b) where $$a<b$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad19a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "Since the length of the side of a triangle has to be positive, we can omit the negative answer. Therefore the height ladder can reach is 24.5.",
+        "variabilization": {}
+    }
+]

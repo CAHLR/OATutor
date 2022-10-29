@@ -1,0 +1,85 @@
+[
+    {
+        "id": "abede0afactoring8a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2y"
+        ],
+        "dependencies": [],
+        "title": "Common Factor",
+        "text": "What is the common factor of the polynomial?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring8a-h1"
+        ],
+        "title": "Factor",
+        "text": "Factor out the GCF.",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring8a-h2"
+        ],
+        "title": "Goal",
+        "text": "Determine if the trinomial is a perfect square.",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring8a-h3"
+        ],
+        "title": "Standard form of a trinomial",
+        "text": "Check if the trinomial follows the pattern of $$a^2+2ab+b^2$$ or $$a^2-2ab+b^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2x"
+        ],
+        "dependencies": [
+            "abede0afactoring8a-h4"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of $$4x^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "abede0afactoring8a-h5"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of 9?",
+        "variabilization": {}
+    },
+    {
+        "id": "abede0afactoring8a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abede0afactoring8a-h6"
+        ],
+        "title": "Manipulate",
+        "text": "Organize the term into $$2{y\\left(2x-3\\right)}^2$$",
+        "variabilization": {}
+    }
+]

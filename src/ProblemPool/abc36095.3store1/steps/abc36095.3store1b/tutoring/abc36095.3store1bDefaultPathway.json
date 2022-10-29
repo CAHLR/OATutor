@@ -1,0 +1,20 @@
+[
+    {
+        "id": "abc36095.3store1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Average",
+        "text": "We know that a customer arrives every two minutes. We can use that to estimate how many minutes it will take for three customers to arrive.",
+        "variabilization": {}
+    },
+    {
+        "id": "abc36095.3store1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abc36095.3store1b-h1"
+        ],
+        "title": "Average",
+        "text": "Since one customer arrives every two minutes on average, it will take six minutes on average for three customers to arrive.",
+        "variabilization": {}
+    }
+]

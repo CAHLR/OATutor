@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a9d90f0clt10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Converting Hours to Minutes",
+        "text": "Convert ten hours to minutes (60 minutes $$=$$ 1 hour).",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "600"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h1"
+        ],
+        "title": "10 Hours is $$___$$ Minutes",
+        "text": "What is $$10\\times60$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt10a-h1",
+            "a9d90f0clt10a-h2"
+        ],
+        "title": "Solve for P",
+        "text": "P(\u2211x $$ \\geq $$ 600) $$=$$ normalcdf",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.0009"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h1",
+            "a9d90f0clt10a-h2",
+            "a9d90f0clt10a-h3"
+        ],
+        "title": "Plugging in Normalcdf on the Calculator",
+        "text": "What is normalcdf(600,E99,(70)(8.2), (sqrt(70))(1))?",
+        "variabilization": {}
+    }
+]

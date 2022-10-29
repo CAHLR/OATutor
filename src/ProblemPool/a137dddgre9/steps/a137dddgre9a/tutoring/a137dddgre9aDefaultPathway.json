@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a137dddgre9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor into Primes",
+        "text": "Factor each coefficient into primes and write the variables with exponents in expanded form. A prime number is a counting number greater than 1, whose only factors are 1 and itself. The first few prime numbers are: 2, 3, 5, 7, 11, 13, etc.",
+        "variabilization": {}
+    },
+    {
+        "id": "a137dddgre9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a137dddgre9a-h1"
+        ],
+        "title": "Factor First Expression",
+        "text": "$$10a=5\\times2 a$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a137dddgre9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a137dddgre9a-h2"
+        ],
+        "title": "Factor Second Expression",
+        "text": "$$50=5\\times5\\times2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a137dddgre9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a137dddgre9a-h2",
+            "a137dddgre9a-h3"
+        ],
+        "title": "Identify Common Factors in each Column",
+        "text": "$$10a=5\\times2 a$$ $$50=5\\times5\\times2$$ 5 and 2 are shared by both expressions.",
+        "variabilization": {}
+    },
+    {
+        "id": "a137dddgre9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a137dddgre9a-h4"
+        ],
+        "title": "Multiply Common Factors",
+        "text": "Bring down the 5 and 2, and then multiply. $$GCF=5\\times2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a137dddgre9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a137dddgre9a-h5"
+        ],
+        "title": "Multiply Common Factors",
+        "text": "$$GCF=10$$",
+        "variabilization": {}
+    }
+]

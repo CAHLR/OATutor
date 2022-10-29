@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a2a280bgaussian12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Augumented Matrix",
+        "text": "First, write the system of equations as an augumented matrix.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2a280bgaussian12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 4 & 3 & 11 \\\\ 1 & -3 & -1 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a2a280bgaussian12a-h1"
+        ],
+        "title": "Augumented Matrix",
+        "text": "How do you write the system as an augumented matrix?",
+        "variabilization": {},
+        "choices": [
+            "$$\\begin{bmatrix} 4 & 3 & 11 \\\\ 1 & -3 & -1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 4 & 1 & 11 \\\\ 1 & -3 & -1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 14 & 3 & 11 \\\\ 1 & 3 & -1 \\end{bmatrix}$$",
+            "No Solution"
+        ]
+    },
+    {
+        "id": "a2a280bgaussian12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2a280bgaussian12a-h2"
+        ],
+        "title": "Obtain row-echelon form",
+        "text": "Now, perform row operations to get row-echelon form.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2a280bgaussian12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a2a280bgaussian12a-h3"
+        ],
+        "title": "Obtain row-echelon form",
+        "text": "What is the matrix in row-echelon form?",
+        "variabilization": {},
+        "choices": [
+            "$$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 10 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 0 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$",
+            "None of the above"
+        ],
+        "subHints": [
+            {
+                "id": "a2a280bgaussian12a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Answer",
+                "text": "The answer is $$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a2a280bgaussian12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2a280bgaussian12a-h4"
+        ],
+        "title": "Form",
+        "text": "Now, you have the appropriate form to find x and y.",
+        "variabilization": {}
+    },
+    {
+        "id": "a2a280bgaussian12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a2a280bgaussian12a-h5"
+        ],
+        "title": "Answer",
+        "text": "The answer is (2,1).",
+        "variabilization": {}
+    }
+]

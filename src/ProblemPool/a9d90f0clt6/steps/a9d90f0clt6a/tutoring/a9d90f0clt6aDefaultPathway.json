@@ -1,0 +1,25 @@
+[
+    {
+        "id": "a9d90f0clt6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Calculator",
+        "text": "Plug values into the invNorm function on the calculator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1789.3"
+        ],
+        "dependencies": [
+            "a9d90f0clt6a-h1"
+        ],
+        "title": "Solving invNorm",
+        "text": "Let k $$=$$ the 80th percentile. What is k $$=$$ invNorm(0.80,(50)(34), (sqrt(50))(15))?",
+        "variabilization": {}
+    }
+]

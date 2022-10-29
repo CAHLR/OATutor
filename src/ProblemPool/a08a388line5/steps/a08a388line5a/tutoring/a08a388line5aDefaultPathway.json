@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a08a388line5a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-1"
+        ],
+        "dependencies": [],
+        "title": "Identify the Slope",
+        "text": "What is the value of the slope given in the problem?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,3)"
+        ],
+        "dependencies": [
+            "a08a388line5a-h1"
+        ],
+        "title": "Identify the y-intercept",
+        "text": "What is the coordinate of the y-intercept?",
+        "variabilization": {},
+        "choices": [
+            "(0,5)",
+            "(0,-1)",
+            "(0,3)",
+            "(0,1)"
+        ]
+    },
+    {
+        "id": "a08a388line5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line5a-h2"
+        ],
+        "title": "Point Slope Form",
+        "text": "Substitute the values into the point-slope form, $$y-y_1=m\\left(x-x_1\\right)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line5a-h3"
+        ],
+        "title": "Slope Intercept Form",
+        "text": "Simplify the equation and write it in slope intercept form",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9d90f0clt2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What to Solve For",
+        "text": "Find \u2211x where z $$=$$ 1.5.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt2a-h1"
+        ],
+        "title": "\u2211x Equation",
+        "text": "\u2211x $$=$$ (n)(\u03bc\u2093) + $$z \\sqrt{n} sigmax$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7401.2"
+        ],
+        "dependencies": [
+            "a9d90f0clt2a-h1",
+            "a9d90f0clt2a-h2"
+        ],
+        "title": "Plugging In",
+        "text": "What is (80)(90) + (1.5)(\u221a80)(15)?",
+        "variabilization": {}
+    }
+]

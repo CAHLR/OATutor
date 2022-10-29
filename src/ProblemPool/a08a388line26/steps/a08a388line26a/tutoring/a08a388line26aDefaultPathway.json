@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a08a388line26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope",
+        "text": "Find the slope by counting the rise and run. The slope is calculated like this: $$\\frac{y2-y1}{x2-x1}$$ where x1 and y1 are the values of one and x2 and y2 are the valus of the second point.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line26a-h1"
+        ],
+        "title": "Slope Value",
+        "text": "The slope of the line is -1. Elimate multiple choice options without this slope.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line26a-h2"
+        ],
+        "title": "Choose one point",
+        "text": "Choose either point. For the hints, we will use (5,4).",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line26a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Substitute the values into the point-slope form $$y-y1=m(x-x1)$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a08a388line26a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a08a388line26a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression $$y-(4)=-1(x-5)$$",
+        "variabilization": {}
+    }
+]

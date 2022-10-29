@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ace0d88location12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace0d88location12a-h2"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "A low percentile means that it took less time to complete the race while a high percentile means it took more time to complete the race.",
+        "variabilization": {}
+    },
+    {
+        "id": "ace0d88location12b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Lower Percentile"
+        ],
+        "dependencies": [
+            "ace0d88location12b-h3"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "In context, since this is a 100-meter dash, is it better to have a lower percentile (finishing quickly and having a lower time) or have a higher percentile (finishing slower, taking more time, falling behind competitors)?",
+        "variabilization": {},
+        "choices": [
+            "Lower Percentile",
+            "Higher Percentile"
+        ]
+    },
+    {
+        "id": "ace0d88location12b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bad"
+        ],
+        "dependencies": [
+            "ace0d88location12b-h4"
+        ],
+        "title": "Determining if 75th Percentile is Good or Bad",
+        "text": "Since it is better to have a lower percentile (running faster), is having a high percentile such as 75 (greater than 50) relatively a good thing or a bad thing?",
+        "variabilization": {},
+        "choices": [
+            "Good",
+            "Bad"
+        ]
+    }
+]

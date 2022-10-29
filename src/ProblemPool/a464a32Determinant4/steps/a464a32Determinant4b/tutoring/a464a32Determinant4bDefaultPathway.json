@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a464a32Determinant4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Eliminant the row and column that contains b2",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant4b-h1"
+        ],
+        "title": "Principle",
+        "text": "Calculate the 2x2 matrix",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a464a32Determinant4b-h2"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the products of the diagonals",
+        "variabilization": {}
+    },
+    {
+        "id": "a464a32Determinant4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11"
+        ],
+        "dependencies": [
+            "a464a32Determinant4b-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is $$1\\times3-4\\left(-2\\right)$$?",
+        "variabilization": {}
+    }
+]
