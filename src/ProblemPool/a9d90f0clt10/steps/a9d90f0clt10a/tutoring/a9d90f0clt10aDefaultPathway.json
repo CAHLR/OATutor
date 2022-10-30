@@ -26,15 +26,156 @@
         "id": "a9d90f0clt10a-h3",
         "type": "hint",
         "dependencies": [
-            "a9d90f0clt10a-h1",
             "a9d90f0clt10a-h2"
         ],
-        "title": "Solve for P",
-        "text": "P(\u2211x $$ \\geq $$ 600) $$=$$ normalcdf",
+        "title": "P(\u2211x $$ \\geq $$ Sum of Values)",
+        "text": "Find P(\u2211x $$ \\geq $$ 600). Using a TI-83, 83+, 84, 84+ calculator, plug in values for the normalcdf(lower value, upper value, mean of sums, stdev of sums) function. To navigate normalcdf, press the 2nd key, vars, and then 2.",
         "variabilization": {}
     },
     {
         "id": "a9d90f0clt10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "600"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h3"
+        ],
+        "title": "Lower Value",
+        "text": "What is the lower value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "E99"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h3"
+        ],
+        "title": "Upper Value",
+        "text": "What is the upper value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1700"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h3"
+        ],
+        "title": "Mean of Sums",
+        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093)) where n is the sample size and \u03bc\u2093 is the mean of X?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9d90f0clt10a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "70"
+                ],
+                "dependencies": [],
+                "title": "Sample Size",
+                "text": "What is n, the sample size?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9d90f0clt10a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "8.2"
+                ],
+                "dependencies": [],
+                "title": "Mean of Tablet User",
+                "text": "What is \u03bc\u2093, the mean of X (tablet user)?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9d90f0clt10a-h6-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "574"
+                ],
+                "dependencies": [],
+                "title": "Calculating the Mean of Sums",
+                "text": "What is (70)(8.2)?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9d90f0clt10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8.37"
+        ],
+        "dependencies": [
+            "a9d90f0clt10a-h3"
+        ],
+        "title": "Standard Deviation of the Sums",
+        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n} sigmax$$ where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9d90f0clt10a-h7-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "8.367"
+                ],
+                "dependencies": [],
+                "title": "Solving for sqrt(Sample Size)",
+                "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
+                "variabilization": {}
+            },
+            {
+                "id": "a9d90f0clt10a-h7-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "1"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of Tablet User",
+                "text": "What is \u03c3\u2093, the standard deviation of X (tablet user)?",
+                "variabilization": {}
+            },
+            {
+                "id": "a9d90f0clt10a-h7-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "8.37"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of the Sums",
+                "text": "What is $$1\\sqrt{70}$$? Round to the nearest hundredths place.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9d90f0clt10a-h8",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -44,10 +185,14 @@
         "dependencies": [
             "a9d90f0clt10a-h1",
             "a9d90f0clt10a-h2",
-            "a9d90f0clt10a-h3"
+            "a9d90f0clt10a-h3",
+            "a9d90f0clt10a-h4",
+            "a9d90f0clt10a-h5",
+            "a9d90f0clt10a-h6",
+            "a9d90f0clt10a-h7"
         ],
         "title": "Plugging in Normalcdf on the Calculator",
-        "text": "What is normalcdf(600,E99,(70)(8.2), (sqrt(70))(1))?",
+        "text": "What is normalcdf(600, E99, (70)(8.2), (sqrt(70))(1))? Round your answer to four decimal places.",
         "variabilization": {}
     }
 ]
