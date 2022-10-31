@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a3abd22AddRational13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine if the Expression Have a Common Denominator",
+        "text": "The expression does not have a common denominator, so we need to find the common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(y-4\\right) \\left(y+4\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational13a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Since the one of the denominator is quadratic, we can try to factor the it. What is the linear factor form of $$y^2-16$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(y-4\\right) \\left(y+4\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational13a-h2"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "We can rewrite $$\\frac{8y}{y^2-16}$$ as $$\\frac{8y}{\\left(y-4\\right) \\left(y+4\\right)}$$, what is the least common denominator for $$\\frac{8y}{\\left(y-4\\right) \\left(y+4\\right)}-\\frac{4}{y-4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational13a-h3"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Rewrite each rational expression as an equivalent rational expression with the LCD.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational13a-h4"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Since $$\\frac{8y}{y^2-16}=\\frac{8y}{\\left(y-4\\right) \\left(y+4\\right)}$$ already has LCD as denominator, we need to find the equivalent rational expression with the LCD $$\\left(y+4\\right) \\left(y-4\\right)$$ for $$\\frac{4}{y-4}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4\\left(y+4\\right)}{\\left(y-4\\right) \\left(y+4\\right)}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational13a-h5"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Find the equivalent rational expression with the LCD $$\\left(y+4\\right) \\left(y-4\\right)$$ for $$\\frac{4}{y-4}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational13a-h6"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "Subtract the numerators and place the difference over the common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4y-16$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational13a-h7"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "What is the difference of numerators for ((8*y)/((y-4)*(y+4))-((4*(y+4))/((y-4)*(y+4))?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational13a-h8"
+        ],
+        "title": "Simplify the Expression",
+        "text": "According to the above steps, we can rewrite $$\\frac{8y}{y^2-16}-\\frac{4}{y-4}$$ as $$\\frac{4y-16}{\\left(y+4\\right) \\left(y-4\\right)}$$, are there any ways to simplify the new expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "a3abd22AddRational13a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{y+4}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational13a-h9"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Yes, we can further factor the numerator $$4y-16$$ as $$4\\left(y-4\\right)$$. So $$\\frac{4y-16}{\\left(y+4\\right) \\left(y-4\\right)}$$ can be rewritten as $$\\frac{4\\left(y-4\\right)}{\\left(y+4\\right) \\left(y-4\\right)}$$. What is the simplified form of $$\\frac{4\\left(y-4\\right)}{\\left(y+4\\right) \\left(y-4\\right)}$$?",
+        "variabilization": {}
+    }
+]
