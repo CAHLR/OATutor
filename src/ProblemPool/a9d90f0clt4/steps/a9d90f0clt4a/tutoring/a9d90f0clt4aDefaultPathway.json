@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Standard Deviation Equation",
-        "text": "To find the standard deviation (\u03c3_\u2211x), solve for \u03c3_\u2211x $$=$$ $$\\sqrt{n} sigmax$$ where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users).",
+        "text": "To find the standard deviation (\u03c3_\u2211x), solve for \u03c3_\u2211x $$=$$ $$\\sqrt{n}$$ \u03c3\u2093 where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users).",
         "variabilization": {}
     },
     {
@@ -19,7 +19,7 @@
             "a9d90f0clt4a-h1"
         ],
         "title": "Solving for $$\\sqrt{n} sigmax$$",
-        "text": "What is $$\\sqrt{n} sigmax$$? Round to the nearest hundredths place.",
+        "text": "What is $$\\sqrt{n}$$ \u03c3\u2093? Round to the nearest hundredths place.",
         "variabilization": {},
         "subHints": [
             {
@@ -56,7 +56,10 @@
                 "hintAnswer": [
                     "106.07"
                 ],
-                "dependencies": [],
+                "dependencies": [
+                    "a9d90f0clt4a-h2-s1",
+                    "a9d90f0clt4a-h2-s2"
+                ],
                 "title": "Plugging Into $$\\sqrt{n} sigmax$$",
                 "text": "What is $$15\\sqrt{50}$$? Round to the nearest hundredths place.",
                 "variabilization": {}

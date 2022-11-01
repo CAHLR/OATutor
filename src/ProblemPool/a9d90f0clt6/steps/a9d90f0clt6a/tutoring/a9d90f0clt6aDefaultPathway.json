@@ -34,7 +34,7 @@
             "a9d90f0clt6a-h2"
         ],
         "title": "Mean of Sums",
-        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093)) where n is the sample size and \u03bc\u2093 is the mean of X?",
+        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where n is the sample size and \u03bc\u2093 is the mean of X?",
         "variabilization": {},
         "subHints": [
             {
@@ -71,7 +71,10 @@
                 "hintAnswer": [
                     "1700"
                 ],
-                "dependencies": [],
+                "dependencies": [
+                    "a9d90f0clt6a-h3-s1",
+                    "a9d90f0clt6a-h3-s2"
+                ],
                 "title": "Calculating the Mean of Sums",
                 "text": "What is (50)(34)?",
                 "variabilization": {}
@@ -90,7 +93,7 @@
             "a9d90f0clt6a-h2"
         ],
         "title": "Standard Deviation of the Sums",
-        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n} sigmax$$ where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n}$$ \u03c3\u2093 where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
         "variabilization": {},
         "subHints": [
             {
@@ -102,7 +105,7 @@
                     "7.071"
                 ],
                 "dependencies": [],
-                "title": "Solving for sqrt(Sample Size)",
+                "title": "Solving for Square Root of the Sample Size",
                 "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
                 "variabilization": {}
             },
@@ -127,7 +130,10 @@
                 "hintAnswer": [
                     "106.067"
                 ],
-                "dependencies": [],
+                "dependencies": [
+                    "a9d90f0clt6a-h4-s1",
+                    "a9d90f0clt6a-h4-s2"
+                ],
                 "title": "Standard Deviation of the Sums",
                 "text": "What is $$15\\sqrt{50}$$? Round to the nearest hundredths place.",
                 "variabilization": {}
@@ -136,6 +142,17 @@
     },
     {
         "id": "a9d90f0clt6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt6a-h3",
+            "a9d90f0clt6a-h4"
+        ],
+        "title": "Plugging Into the \u2211x Equation",
+        "text": "Plug your values into the invNorm(percentile, mean of sums, stdev of sums) function on the calculator. Remember to round your answer to the nearest tenths place.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt6a-h6",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -143,8 +160,7 @@
             "1789.3"
         ],
         "dependencies": [
-            "a9d90f0clt6a-h3",
-            "a9d90f0clt6a-h4"
+            "a9d90f0clt6a-h5"
         ],
         "title": "Plugging Into invNorm",
         "text": "Using the calculator, what is invNorm(0.80, (50)(34), (sqrt(50))(15))? Round to the nearest tenth place.",

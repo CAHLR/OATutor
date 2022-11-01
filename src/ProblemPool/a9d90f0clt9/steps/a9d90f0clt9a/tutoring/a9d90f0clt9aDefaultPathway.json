@@ -34,7 +34,7 @@
             "a9d90f0clt9a-h2"
         ],
         "title": "Mean of Sums",
-        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093)) where n is the sample size and \u03bc\u2093 is the mean of X?",
+        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where n is the sample size and \u03bc\u2093 is the mean of X?",
         "variabilization": {},
         "subHints": [
             {
@@ -71,7 +71,10 @@
                 "hintAnswer": [
                     "574"
                 ],
-                "dependencies": [],
+                "dependencies": [
+                    "a9d90f0clt9a-h3-s1",
+                    "a9d90f0clt9a-h3-s2"
+                ],
                 "title": "Calculating the Mean of Sums",
                 "text": "What is (70)(8.2)?",
                 "variabilization": {}
@@ -90,7 +93,7 @@
             "a9d90f0clt9a-h2"
         ],
         "title": "Standard Deviation of the Sums",
-        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n} sigmax$$ where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n}$$ \u03c3\u2093 where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
         "variabilization": {},
         "subHints": [
             {
@@ -102,7 +105,7 @@
                     "8.367"
                 ],
                 "dependencies": [],
-                "title": "Solving for sqrt(Sample Size)",
+                "title": "Solving for the Square Root of the Sample Size",
                 "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
                 "variabilization": {}
             },
@@ -127,7 +130,10 @@
                 "hintAnswer": [
                     "8.37"
                 ],
-                "dependencies": [],
+                "dependencies": [
+                    "a9d90f0clt9a-h4-s1",
+                    "a9d90f0clt9a-h4-s2"
+                ],
                 "title": "Standard Deviation of the Sums",
                 "text": "What is $$1\\sqrt{70}$$? Round to the nearest hundredths place.",
                 "variabilization": {}
@@ -136,6 +142,17 @@
     },
     {
         "id": "a9d90f0clt9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9d90f0clt9a-h3",
+            "a9d90f0clt9a-h4"
+        ],
+        "title": "Plugging Into invNorm",
+        "text": "Plug your values into the invNorm(percentile, mean of sums, stdev of sums) function on the calculator. Remember to round your answer to the nearest hundredths place.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9d90f0clt9a-h6",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -143,18 +160,17 @@
             "587.76"
         ],
         "dependencies": [
-            "a9d90f0clt9a-h3",
-            "a9d90f0clt9a-h4"
+            "a9d90f0clt9a-h5"
         ],
-        "title": "Plugging Into invNorm",
+        "title": "Values in invNorm",
         "text": "Using the calculator, what is invNorm(0.95, (70)(8.2), (sqrt(70))(1))? Round to the nearest hundredths place.",
         "variabilization": {}
     },
     {
-        "id": "a9d90f0clt9a-h6",
+        "id": "a9d90f0clt9a-h7",
         "type": "hint",
         "dependencies": [
-            "a9d90f0clt9a-h5"
+            "a9d90f0clt9a-h6"
         ],
         "title": "Conceptual Understanding",
         "text": "Ninety five percent of the sums of app engagement times are at most 587.76 minutes.",
