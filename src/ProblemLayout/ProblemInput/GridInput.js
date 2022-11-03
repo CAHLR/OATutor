@@ -17,7 +17,8 @@ class GridInput extends React.Component {
             gridState: props.defaultValue || this.genEmptyGrid(0, 0),
             numRows: props.numRows || 0,
             numCols: props.numCols || 0,
-            openChangeDimensions: false
+            openChangeDimensions: false,
+            fer: Math.random() // fer: force equation-editor remount
         };
 
         this.gridRef = createRef()
@@ -69,15 +70,11 @@ class GridInput extends React.Component {
         }
 
         this.setState({
-            gridState: this.genEmptyGrid(numRows, numCols)
+            gridState: this.genEmptyGrid(numRows, numCols),
+            fer: Math.random()
+        }, () => {
+            this.props.onChange(JSON.stringify(this.state.gridState))
         })
-        if (this.gridRef.current) {
-            this.gridRef.current
-                .querySelectorAll(".mq-editable-field > *[mathquill-command-id], .mq-root-block > *[mathquill-command-id]")
-                .forEach(node => {
-                    node.remove()
-                })
-        }
     }
 
     toggleChangeDimensionsPopover(to) {
@@ -89,7 +86,7 @@ class GridInput extends React.Component {
     render() {
         const { classes, index } = this.props;
 
-        const { gridState } = this.state;
+        const { gridState, fer } = this.state;
 
         const revealClearButton = gridState.reduce((acc, cur, _) =>
                 acc + cur.reduce((_acc, _cur, __) =>
@@ -174,7 +171,8 @@ class GridInput extends React.Component {
                                         <Paper>
                                             <ClickAwayListener
                                                 onClickAway={() => this.toggleChangeDimensionsPopover(false)}>
-                                                <form onSubmit={() => {
+                                                <form onSubmit={(e) => {
+                                                    e.preventDefault()
                                                     this.clearCells()
                                                     this.toggleChangeDimensionsPopover(false)
                                                 }}>
@@ -228,7 +226,7 @@ class GridInput extends React.Component {
                                             return (
                                                 <center
                                                     className={clsx(classes.textBoxLatex, 'grid-cell')}
-                                                    key={`cell-${idx}-${jdx}`}
+                                                    key={`cell-${idx}-${jdx}-${fer}`}
                                                     aria-label={`Cell (${idx}, ${jdx})`}
                                                     {...stagingProp({
                                                         "data-selenium-target": `grid-answer-cell-${jdx + idx * this.state.numCols}-${index}`

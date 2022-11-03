@@ -8,8 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import { chooseVariables } from '../ProblemLogic/renderText.js';
 import { ThemeContext } from '../config/config.js';
 import ProblemInput from "./ProblemInput/ProblemInput";
-import { toast } from "react-toastify";
 import { stagingProp } from "../util/addStagingProperty";
+import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -33,22 +33,23 @@ class HintTextbox extends React.Component {
     }
 
     submit = () => {
-        const [parsed, correctAnswer] = checkAnswer(this.state.inputVal, this.hint.hintAnswer, this.hint.answerType, this.hint.precision, chooseVariables(this.props.hintVars, this.props.seed));
+        const [parsed, correctAnswer, reason] = checkAnswer({
+            attempt: this.state.inputVal,
+            actual: this.hint.hintAnswer,
+            answerType: this.hint.answerType,
+            precision: this.hint.precision,
+            variabilization: chooseVariables(this.props.hintVars, this.props.seed),
+            questionText: this.hint.text
+        });
         this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
-        if (correctAnswer) {
-            toast.success("Correct Answer!", {
-                autoClose: 3000
-            })
-        } else {
-            toast.error("Incorrect Answer!", {
-                autoClose: 3000
-            })
-        }
+        const isCorrect = !!correctAnswer
+
+        toastNotifyCorrectness(isCorrect, reason);
 
         this.setState({
-            isCorrect: correctAnswer,
-            checkMarkOpacity: correctAnswer === true ? '100' : '0'
+            isCorrect,
+            checkMarkOpacity: isCorrect ? '100' : '0'
         }, () => parsed);
     }
 
