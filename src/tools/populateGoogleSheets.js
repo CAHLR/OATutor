@@ -19,7 +19,7 @@ const COLLECTION_NAME = "feedbacks";
 
 const { calculateSemester } = require("../util/calculateSemester")
 const CURRENT_SEMESTER = calculateSemester(Date.now())
-const SHEET_NAME = `${CURRENT_SEMESTER}`
+const SHEET_NAME = `All Feedbacks`
 
 const COLUMN_NAME_MAPPING = {
     "id": "Id",
@@ -31,13 +31,16 @@ const COLUMN_NAME_MAPPING = {
     "problemFinished": "problemFinished?"
 };
 
-const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID"]
+const COLUMN_TITLES = ["Id", "date", "Content", "problemName", "studentName", "Feedback", "steps", "Issue Type", "status", "resolution", "resolveDate", "deployDate", "problemFinished?", "siteVersion", "versionFixed", "treatmentID", "Semester"]
 
 const INTERPOLATORS = {
-    "date": val => getFormattedDate(val)
+    "date": val => getFormattedDate(val),
+    "Semester": val => calculateSemester(val)
 }
 
-const EXCLUDED_FIELDS = ["semester", "canvas_user_id", "course_code", "course_id"]
+const EXCLUDED_FIELDS = ["semester", "canvas_user_id", "course_code", "course_id", "server_time"]
+
+const HASH_EXCLUDE_FIELDS = ['status', 'resolution', 'resolveDate', 'deployDate', 'versionFixed', 'Issue Type']
 
 if (!Object.fromEntries) {
     fromEntries.shim();
@@ -60,7 +63,7 @@ if (!Object.fromEntries) {
     }
 
     let snapshot;
-    [err, snapshot] = await to(db.collection(COLLECTION_NAME).where("semester", "==", CURRENT_SEMESTER).get())
+    [err, snapshot] = await to(db.collection(COLLECTION_NAME).where("semester", "==", CURRENT_SEMESTER).orderBy('time_stamp').get())
     if (err) {
         console.debug(err.message)
         console.log(`Errored when trying to get a snapshot of collection: ${COLLECTION_NAME}. Are you sure it exists?`)
@@ -69,11 +72,15 @@ if (!Object.fromEntries) {
 
     const _rows = snapshot.docs
         .map(doc => doc.data())
+        .map(data => ({ ...data, Semester: data.time_stamp }))
         // sort each data point by its keys to ensure consistent hash
         .map(data => sort(data))
         // generates id based on content
         .map(data => {
-            const hash = crypto.createHash('sha1').update(JSON.stringify(data)).digest('hex');
+            const hash = crypto
+                .createHash('sha1')
+                .update(JSON.stringify(removeFields(data, HASH_EXCLUDE_FIELDS)))
+                .digest('hex');
             return {
                 id: hash,
                 ...data
@@ -139,6 +146,10 @@ if (!Object.fromEntries) {
         console.debug(`Successfully inserted ${nRows.length} rows.`)
     }
 })()
+
+function removeFields(obj, keys) {
+    return Object.fromEntries(Object.entries(obj).filter(([key, _]) => !keys.includes(key)))
+}
 
 function getFormattedDate(ms) {
     const date = new Date(ms);
