@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a08d293Rational19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Format of result",
+        "text": "What's the format of our result?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a08d293Rational19a-h1"
+        ],
+        "title": "Property to use",
+        "text": "We want to use $$a^{\\frac{m}{n}}$$ $$=$$ $${\\left(a^m\\right)}^n$$ when writing each radical.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a08d293Rational19a-h2"
+        ],
+        "title": "Find the power of the radical.",
+        "text": "What's the the power of the radical?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a08d293Rational19a-h3"
+        ],
+        "title": "What property to use?",
+        "text": "The power of the radical is the numerator of the exponent.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a08d293Rational19a-h4"
+        ],
+        "title": "Find the index of the radical.",
+        "text": "What's the the index of the radical?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a08d293Rational19a-h5"
+        ],
+        "title": "What property to use?",
+        "text": "The index of the radical is the denominator of the exponent.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${125}^{\\frac{1}{3}}$$ **2"
+        ],
+        "dependencies": [
+            "a08d293Rational19a-h1"
+        ],
+        "title": "Write as a radical expression.",
+        "text": "What's the racidal expression of the expression given?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [
+            "a08d293Rational19a-h7"
+        ],
+        "title": "Simplify and find the result.",
+        "text": "Find the result.",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [],
+        "title": "Simplify and find the result.",
+        "text": "What to the power of 3 is 125?",
+        "variabilization": {}
+    },
+    {
+        "id": "a08d293Rational19a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [],
+        "title": "Simplify and find the result.",
+        "text": "What's the square of 5?",
+        "variabilization": {}
+    }
+]

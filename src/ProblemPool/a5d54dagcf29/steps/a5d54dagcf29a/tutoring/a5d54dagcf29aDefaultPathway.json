@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a5d54dagcf29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Greatest Common Factor",
+        "text": "The first step is to choose what number (or variable) we can factor out of the equation. This is done by finding the greatest common factor of each item in the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf29a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-9xy"
+        ],
+        "dependencies": [
+            "a5d54dagcf29a-h1"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "What number are we able to factor out from the equation?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d54dagcf29a-h2"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "The next step is to actually factor out the item from the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5d54dagcf29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9xy \\left(2y+3x\\right)$$"
+        ],
+        "dependencies": [
+            "a5d54dagcf29a-h3"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "What does our final equation look like once we factor out the item?",
+        "variabilization": {}
+    }
+]

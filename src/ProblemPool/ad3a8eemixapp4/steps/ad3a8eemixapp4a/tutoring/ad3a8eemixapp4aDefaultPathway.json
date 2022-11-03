@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad3a8eemixapp4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing mathematical expressions",
+        "text": "The first step is to express the total cost of nuts and cereal bars in terms of a mathematical expression",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eemixapp4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "30-x"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp4a-h1"
+        ],
+        "title": "Assigning variables",
+        "text": "Let $$x=the$$ number of pounds of nuts. Given that we have 30 pounds total, how can we express the number of pounds of cereal bars in terms of x?",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eemixapp4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7x$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp4a-h2"
+        ],
+        "title": "Total cost of nuts",
+        "text": "What is the total cost for x pounds of nuts? Express as a mathematical expression in terms of x",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eemixapp4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4\\left(30-x\\right)$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp4a-h3"
+        ],
+        "title": "Total cost of cereal bars",
+        "text": "What is the total cost of cereal bars? Express as a mathematical expression",
+        "variabilization": {}
+    },
+    {
+        "id": "ad3a8eemixapp4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "195"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp4a-h4"
+        ],
+        "title": "Total amount of money",
+        "text": "What is the total cost of 30 pounds of party mix?",
+        "variabilization": {}
+    }
+]

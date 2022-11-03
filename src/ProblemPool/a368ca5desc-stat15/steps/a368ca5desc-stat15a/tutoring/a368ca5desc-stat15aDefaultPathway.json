@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a368ca5desc-stat15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definitions",
+        "text": "If we are looking for a value at 75%, we know that we aren't looking for the smallest or largest values, AKA the Minimum or Maximum.",
+        "variabilization": {}
+    },
+    {
+        "id": "a368ca5desc-stat15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quartile 3"
+        ],
+        "dependencies": [
+            "a368ca5desc-stat15a-h1"
+        ],
+        "title": "Solution",
+        "text": "We also know that we are not looking for any of the \\\"middle\\\" values, so we can rule out the Mean and Median as well. Knowing this, what are we describing?",
+        "variabilization": {},
+        "choices": [
+            "Maximum",
+            "Minimum",
+            "Mean",
+            "Median",
+            "IQR",
+            "Quartile 1",
+            "Quartile 3"
+        ]
+    }
+]

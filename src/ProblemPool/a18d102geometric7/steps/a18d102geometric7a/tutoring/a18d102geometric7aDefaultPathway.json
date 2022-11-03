@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a18d102geometric7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula to Find the Xth Term",
+        "text": "To find the Xth term, $$a_x$$, we use the formula with $$a_1$$ being the starting term and r being the common ratio that $$a_x=a_1 r^{n-1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "14"
+        ],
+        "dependencies": [
+            "a18d102geometric7a-h1"
+        ],
+        "title": "Determine x",
+        "text": "What is x in the formula above? Essentially, which term of the sequence do we want?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "64"
+        ],
+        "dependencies": [
+            "a18d102geometric7a-h2"
+        ],
+        "title": "Determine $$a_1$$",
+        "text": "What is $$a_1$$ in the formula above? Essentially, what is the starting term?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric7a-h3"
+        ],
+        "title": "Determine r",
+        "text": "What is r? What is the common ratio?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{128}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric7a-h4"
+        ],
+        "title": "Plug in the Values into Formula",
+        "text": "Plug in the values determined above into the formula to find the Xth term and calculate the values. What is the fourteenth term?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a18d102geometric7a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{1}{128}$$"
+                ],
+                "dependencies": [],
+                "title": "Plug in the Values into Formula",
+                "text": "What is $$64{\\left(\\frac{1}{2}\\right)}^{14-1}$$?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

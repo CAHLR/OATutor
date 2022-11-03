@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a251a50MultiplyPoly1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "The multiplications of numbers and variables are separate",
+        "variabilization": {}
+    },
+    {
+        "id": "a251a50MultiplyPoly1b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Multiplication on the same variable $$=$$ the addition of exponential term",
+        "variabilization": {}
+    },
+    {
+        "id": "a251a50MultiplyPoly1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "a251a50MultiplyPoly1b-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$12\\frac{5}{6}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a251a50MultiplyPoly1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^4 y^3$$"
+        ],
+        "dependencies": [
+            "a251a50MultiplyPoly1b-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$x^3 y {xy}^2$$?",
+        "variabilization": {}
+    }
+]

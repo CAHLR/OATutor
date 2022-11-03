@@ -1,0 +1,39 @@
+[
+    {
+        "id": "a3f98955.1wedgea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Distributions",
+        "text": "Notice that the graph shows a moot point curve towards the right. This is an indication of a skewed graph.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3f98955.1wedgea-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "right"
+        ],
+        "dependencies": [
+            "a3f98955.1wedgea-h1"
+        ],
+        "title": "Distributions",
+        "text": "To name skewed graphs, the tail end with lower probability is the direction of the skew. What direction does the tail point?",
+        "variabilization": {},
+        "choices": [
+            "left",
+            "right"
+        ]
+    },
+    {
+        "id": "a3f98955.1wedgea-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3f98955.1wedgea-h2"
+        ],
+        "title": "Distributions",
+        "text": "Since the tail is to the right, we call this distribution right skewed",
+        "variabilization": {}
+    }
+]

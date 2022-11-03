@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a4edf7dEquation10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Assumption",
+        "text": "Assume the jet speed in still air is m and the wind speed is n",
+        "variabilization": {}
+    },
+    {
+        "id": "a4edf7dEquation10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation10a-h1"
+        ],
+        "title": "Principle",
+        "text": "The tailwind speed for the ship is $$m+n$$ the headwind speed for the ship is m-n",
+        "variabilization": {}
+    },
+    {
+        "id": "a4edf7dEquation10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation10a-h1"
+        ],
+        "title": "Translation",
+        "text": "$$Speed Time=Distance$$, $$5\\left(m+n\\right)=1325;$$ $$5(m-n)=1035$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a4edf7dEquation10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation10a-h2",
+            "a4edf7dEquation10a-h3"
+        ],
+        "title": "Addition",
+        "text": "Combining the two equation together",
+        "variabilization": {}
+    },
+    {
+        "id": "a4edf7dEquation10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "236"
+        ],
+        "dependencies": [
+            "a4edf7dEquation10a-h4"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of m when $$10m=2360$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a4edf7dEquation10a-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Find the value of n with the known value of m",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "afae108location7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Finding kth Percentile",
+        "text": "Remember the formula for finding the kth Percentile. We want to know three values: $$k=the$$ kth percentile, usually given to you; $$i=the$$ index (ranking or position of the data value), what we normally want to find; $$n=the$$ total number of data. Then, we can use the formula to calculate $$i=\\frac{k}{100} \\left(n+1\\right)$$. If i is an integer, we use the data at the ith position in the ordered data. If i is not an integer, we then round i down and up to the nearest integers and take the average of these two.",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "70"
+        ],
+        "dependencies": [
+            "afae108location7a-h1"
+        ],
+        "title": "Determining k (Percentile)",
+        "text": "What is the kth percentile we want to determine?",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "29"
+        ],
+        "dependencies": [
+            "afae108location7a-h2"
+        ],
+        "title": "Determining n (Total Number of Data)",
+        "text": "What is n, the total number of data in the set?",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "21"
+        ],
+        "dependencies": [
+            "afae108location7a-h3"
+        ],
+        "title": "Determining i (Desired Index)",
+        "text": "Using the Formula for Finding the kth Percentile, what is i?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "afae108location7a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "21"
+                ],
+                "dependencies": [],
+                "title": "Determining i (Desired Index)",
+                "text": "What is $$\\frac{70}{100} \\left(29+1\\right)$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "afae108location7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afae108location7a-h4"
+        ],
+        "title": "Determining the position of the data",
+        "text": "Is i an integer?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afae108location7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "64"
+        ],
+        "dependencies": [
+            "afae108location7a-h5"
+        ],
+        "title": "Determining the 70th Percentile",
+        "text": "What is the data value in the 21st position of the ordered data set? This is the 70th percentile.",
+        "variabilization": {}
+    }
+]

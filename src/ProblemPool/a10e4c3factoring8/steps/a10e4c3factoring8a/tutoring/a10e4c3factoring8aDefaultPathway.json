@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a10e4c3factoring8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find factor pairs of the first term",
+        "text": "The factors of $$4b^2$$ are b and 4b, and 2b.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring8a-h1"
+        ],
+        "title": "Find factor pairs of the third term",
+        "text": "The only factor of 1 is 1.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring8a-h2"
+        ],
+        "title": "Test",
+        "text": "Test all possibly combinations of the factors until the correct product is found.",
+        "variabilization": {}
+    },
+    {
+        "id": "a10e4c3factoring8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a10e4c3factoring8a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$\\left(4b+1\\right) \\left(b+1\\right)$$.",
+        "variabilization": {}
+    }
+]

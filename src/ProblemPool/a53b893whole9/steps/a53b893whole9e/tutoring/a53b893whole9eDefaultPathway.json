@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a53b893whole9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rule",
+        "text": "A number is divisible by 10 if it ends with 0.",
+        "variabilization": {}
+    },
+    {
+        "id": "a53b893whole9e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a53b893whole9e-h1"
+        ],
+        "title": "Divisibility",
+        "text": "Based on the information above, is 3,765 divisible by 10?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

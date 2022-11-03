@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a808aa5DiscreteD19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Expected Values",
+        "text": "To calculate how many games it will take to reach two points, we can use the equation: 2 $$=$$ $$E[X] n$$, where E[X] is the expected points from one game and n is the amount of games it will take two reach two points. Solving for n will give us the correct solution.",
+        "variabilization": {}
+    },
+    {
+        "id": "a808aa5DiscreteD19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a808aa5DiscreteD19a-h1"
+        ],
+        "title": "Expected Value",
+        "text": "If our player rolls three dice, how many points can we expect them to get?",
+        "variabilization": {}
+    },
+    {
+        "id": "a808aa5DiscreteD19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a808aa5DiscreteD19a-h2"
+        ],
+        "title": "Answer",
+        "text": "With our equation and variables in hand, we can now solve for n. What is our final answer going to be?",
+        "variabilization": {}
+    }
+]

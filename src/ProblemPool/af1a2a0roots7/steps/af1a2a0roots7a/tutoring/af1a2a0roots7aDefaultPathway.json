@@ -1,0 +1,35 @@
+[
+    {
+        "id": "af1a2a0roots7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying Square Root",
+        "text": "$$3^2=9$$ and $$4^2=16$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af1a2a0roots7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af1a2a0roots7a-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "$$3+4$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af1a2a0roots7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "af1a2a0roots7a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified expression?",
+        "variabilization": {}
+    }
+]

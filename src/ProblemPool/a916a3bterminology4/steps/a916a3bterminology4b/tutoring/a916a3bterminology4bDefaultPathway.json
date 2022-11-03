@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a916a3bterminology4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a916a3bterminology4a-h2"
+        ],
+        "title": "Definitiong of Conditional Probability",
+        "text": "Although we were not given the word GIVEN in this problem, we note that we are picking out of the subset of students that have long hair. We are finding how many students with long hair are female, which can be reworded as the number of students that are female given that they have long hair. Therefore, we are working with conditional probability. Conditional probability essentially, written as P(A|B) is the probability that event A occurs given that event B already occurs.",
+        "variabilization": {}
+    },
+    {
+        "id": "a916a3bterminology4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "P(F|L)"
+        ],
+        "dependencies": [
+            "a916a3bterminology4b-h3"
+        ],
+        "title": "Determining Given Probability",
+        "text": "What is the probability that a student is female, given that they have long hair?",
+        "variabilization": {},
+        "choices": [
+            "P(F",
+            "L)",
+            "P(L",
+            "F)",
+            "P(F AND L)",
+            "P(F OR L)"
+        ]
+    }
+]

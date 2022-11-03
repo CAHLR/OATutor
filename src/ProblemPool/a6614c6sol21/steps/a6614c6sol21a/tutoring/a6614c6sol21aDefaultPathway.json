@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a6614c6sol21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify What We Are Looking For",
+        "text": "We are looking for the cost of the shirt. We also do not know the cost of the sweater.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h1"
+        ],
+        "title": "Name What We Are Looking For",
+        "text": "Choose a variable to represent that quantity. Let $$n=the$$ cost of the shirt. Let $$m=the$$ cost of the sweater.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h2"
+        ],
+        "title": "Translate into a System of Equations",
+        "text": "3 shirts and 2 sweaters cost $114: $$3n+2m=114$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h3"
+        ],
+        "title": "Translate into a System of Equations",
+        "text": "2 shirts and 4 sweaters cost $164: $$2n+4m=164$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h4"
+        ],
+        "title": "Solve the System of Equations",
+        "text": "To solve the system of equations, use elimination. The equations are in standard form. To get opposite coefficients of m, divide the second equation by -2. \\\\n $$3n+2m=114$$ \\\\n (2*n+4*m=164)/-2",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h5"
+        ],
+        "title": "Eliminate a Variable",
+        "text": "Add the two equations. \\\\n $$3n+2m=114$$ \\\\n $$-n-2m=-82$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h6"
+        ],
+        "title": "Solve for n",
+        "text": "m will be eliminated and then solve for n. \\\\n $$2n=32$$ \\\\n $$n=16$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol21a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol21a-h7"
+        ],
+        "title": "Cost of Shirt",
+        "text": "The shirt cost $16.",
+        "variabilization": {}
+    }
+]
