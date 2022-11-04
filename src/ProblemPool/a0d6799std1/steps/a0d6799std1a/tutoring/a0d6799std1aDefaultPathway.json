@@ -14,7 +14,7 @@
             "a0d6799std1a-h1"
         ],
         "title": "Random Variable",
-        "text": "$$x\u0304_g$$ - $$x\u0304_b$$ $$=$$ difference in the sample mean amount of time girls and boys play sports each day, where $$x\u0304_g$$ is the population mean for girls and $$x\u0304_b$$ is the population mean for boys.",
+        "text": "The comparison of two population means is very common. A difference between the two samples depends on both the means and the standard deviations. Very different means can occur by chance if there is great variation among the individual samples. In order to account for the variation, we take the difference of the sample means, $$x\u0304_g$$ - $$x\u0304_b$$, and divide by the standard error in order to standardize the difference. The result is a t-score test statistic. In this problem, $$x\u0304_g$$ - $$x\u0304_b$$ $$=$$ difference in the sample mean amount of time girls and boys play sports each day, where $$x\u0304_g$$ is the population mean for girls and $$x\u0304_b$$ is the population mean for boys.",
         "variabilization": {}
     },
     {
@@ -24,7 +24,7 @@
             "a0d6799std1a-h2"
         ],
         "title": "Random Variable Continued",
-        "text": "$$H_0$$ is the null hypothesis and $$H_a$$ is the alternative hypothesis. \\\\n $$H_0$$: $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ $$H_0$$: $$\u03bc_g$$ - $$\u03bc_b$$ $$=$$ 0 \\\\n $$H_a$$: $$\u03bc_g$$ \u2260 $$\u03bc_b$$ $$H_a$$: $$\u03bc_g$$ - $$\u03bc_b$$ \u2260 0 \\\\n The words \\\"the same\\\" tell you $$H_0$$ has an $$\\\"=\\\"$$. Since there are no other words to indicate $$H_a$$, assume it says \\\"is different.\\\" This is a two-tailed test.",
+        "text": "$$H_0$$ is the null hypothesis and $$H_a$$ is the alternative hypothesis. \\\\n $$H_0$$: $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ $$H_0$$: $$\u03bc_g$$ - $$\u03bc_b$$ $$=$$ 0 \\\\n $$H_a$$: $$\u03bc_g$$ \u2260 $$\u03bc_b$$ $$H_a$$: $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ \u2260 0 \\\\n The words \\\"the same\\\" tell you $$H_0$$ has an $$\\\"=\\\"$$. Since there are no other words to indicate $$H_a$$, assume it says \\\"is different.\\\" This is a two-tailed test.",
         "variabilization": {}
     },
     {
@@ -34,7 +34,7 @@
             "a0d6799std1a-h3"
         ],
         "title": "Distribution for the Test",
-        "text": "Solve for $$t_{df}$$ where df is calculated using the df formula for independent groups, two population means. Use a calculator to solve for df. Do not pool the variances.\\n##figure2.gif##",
+        "text": "Solve for $$t_{df}$$ (the number of degrees of freedom) where df is calculated using the df formula for independent groups, two population means. Use a calculator to solve for df. Do not pool the variances.\\n##figure2.gif##",
         "variabilization": {}
     },
     {
@@ -49,7 +49,7 @@
             "a0d6799std1a-h4"
         ],
         "title": "Solving for df",
-        "text": "What is df (rounded to the nearest ten thousandths place)?",
+        "text": "Using a calculator, what is df? Round to the four decimal places.",
         "variabilization": {}
     },
     {
@@ -84,7 +84,7 @@
             "a0d6799std1a-h7"
         ],
         "title": "$$s_g$$ and $$s_b$$",
-        "text": "Solve for $$s_g$$ and $$s_b$$, the sample standard deviations and estimates of $$\\sigma_g$$ and $$\\sigma_b$$ (the unknown population standard deviations), respectively. When both sample sizes n1 and n2 are five or larger, the Student's t approximation is very good. Notice that the sample variances (s1)2 and (s2)2 are not pooled.",
+        "text": "Solve for $$s_g$$ and $$s_b$$, the sample standard deviations and estimates of $$\\sigma_g$$ and $$\\sigma_b$$ (the unknown population standard deviations), respectively. When both sample sizes n1 and n2 are five or larger, the Student's t approximation is very good. Notice that the sample variances $${s1}^2$$ and $${s2}^2$$ are not pooled.",
         "variabilization": {}
     },
     {
@@ -121,10 +121,11 @@
         "id": "a0d6799std1a-h11",
         "type": "hint",
         "dependencies": [
-            "a0d6799std1a-h8"
+            "a0d6799std1a-h9",
+            "a0d6799std1a-h10"
         ],
         "title": "$$x\u0304_g$$ - $$x\u0304_b$$",
-        "text": "Solve for $$x\u0304_g$$ - $$x\u0304_b$$.",
+        "text": "Solve for $$x\u0304_g$$ - $$x\u0304_b$$, the difference of the sample means.",
         "variabilization": {}
     },
     {
@@ -168,8 +169,8 @@
         "dependencies": [
             "a0d6799std1a-h13"
         ],
-        "title": "Solving $$x\u0304_g$$ - $$x\u0304_b$$",
-        "text": "What is $$x\u0304_g$$ - $$x\u0304_b$$?",
+        "title": "Plugging Into $$x\u0304_g$$ - $$x\u0304_b$$",
+        "text": "Plugging your values into the equation, what is $$x\u0304_g$$ - $$x\u0304_b$$?",
         "variabilization": {}
     },
     {
@@ -179,7 +180,7 @@
             "a0d6799std1a-h14"
         ],
         "title": "Rejecting or Accepting $$H_0$$",
-        "text": "If \\alpha > p-value, reject $$H_0$$. This means that you would be rejecting \u03bcg $$=$$ \u03bcb such that the means are different. If \\alpha $$ \\leq $$ p-value, accept $$H_0$$ such that \u03bcg $$=$$ \u03bcb, and the means are the same.",
+        "text": "If \ud835\udefc > p-value, reject $$H_0$$. This means that you would be rejecting $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ such that the means are different. If \ud835\udefc $$ \\leq $$ p-value, accept $$H_0$$ such that $$\u03bc_g$$ $$=$$ $$\u03bc_b$$, and the means are the same.",
         "variabilization": {}
     },
     {
