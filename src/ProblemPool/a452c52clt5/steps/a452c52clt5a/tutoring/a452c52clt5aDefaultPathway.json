@@ -1,0 +1,180 @@
+[
+    {
+        "id": "a452c52clt5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "\u2211x Equation Boundaries",
+        "text": "Solve for P(1500 < \u2211x < 1800).",
+        "variabilization": {}
+    },
+    {
+        "id": "a452c52clt5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a452c52clt5a-h1"
+        ],
+        "title": "Normalcdf Equivalence",
+        "text": "To find P(1500 < \u2211x < 1800), use the normalcdf(lower value, upper value, mean of sums, stdev of sums) function on a calculator. To navigate normalcdf, press the 2nd key, vars, and then 2.",
+        "variabilization": {}
+    },
+    {
+        "id": "a452c52clt5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1500"
+        ],
+        "dependencies": [
+            "a452c52clt5a-h2"
+        ],
+        "title": "Lower Value",
+        "text": "What is the lower value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a452c52clt5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1800"
+        ],
+        "dependencies": [
+            "a452c52clt5a-h2"
+        ],
+        "title": "Upper Value",
+        "text": "What is the upper value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a452c52clt5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1700"
+        ],
+        "dependencies": [
+            "a452c52clt5a-h2"
+        ],
+        "title": "Mean of Sums",
+        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where n is the sample size and \u03bc\u2093 is the mean of X?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a452c52clt5a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "50"
+                ],
+                "dependencies": [],
+                "title": "Sample Size",
+                "text": "What is n, the sample size?",
+                "variabilization": {}
+            },
+            {
+                "id": "a452c52clt5a-h5-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "34"
+                ],
+                "dependencies": [],
+                "title": "Mean of Tablet Users",
+                "text": "What is \u03bc\u2093, the mean of X (tablet users)?",
+                "variabilization": {}
+            },
+            {
+                "id": "a452c52clt5a-h5-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "1700"
+                ],
+                "dependencies": [],
+                "title": "Calculating the Mean of Sums",
+                "text": "What is (50)(34)?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a452c52clt5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "106.067"
+        ],
+        "dependencies": [
+            "a452c52clt5a-h2"
+        ],
+        "title": "Standard Deviation of the Sums",
+        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n}$$ \u03c3\u2093 where n is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a452c52clt5a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "7.071"
+                ],
+                "dependencies": [],
+                "title": "Solving for sqrt(Sample Size)",
+                "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
+                "variabilization": {}
+            },
+            {
+                "id": "a452c52clt5a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "15"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of Tablet Users",
+                "text": "What is \u03c3\u2093, the standard deviation of X (tablet users)?",
+                "variabilization": {}
+            },
+            {
+                "id": "a452c52clt5a-h6-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "106.067"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of the Sums",
+                "text": "What is $$15\\sqrt{50}$$? Round to the nearest hundredths place.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a452c52clt5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.7974"
+        ],
+        "dependencies": [
+            "a452c52clt5a-h3",
+            "a452c52clt5a-h4",
+            "a452c52clt5a-h5",
+            "a452c52clt5a-h6"
+        ],
+        "title": "Plugging Into Normalcdf",
+        "text": "Using the calculator, what is normalcdf(1500, 1800, (50)(34), sqrt(50)(15))? Round your answer to four decimal places.",
+        "variabilization": {}
+    }
+]
