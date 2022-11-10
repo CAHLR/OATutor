@@ -210,7 +210,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.debug('this state', this.state)
         return (
             <ThemeProvider theme={theme}>
                 <ThemeContext.Provider value={{

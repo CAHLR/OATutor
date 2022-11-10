@@ -15,6 +15,7 @@ const { initializeApp, applicationDefault, cert } = require('firebase-admin/app'
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 
 const serviceAccount = require('./oatutor-firebase-adminsdk.json');
+const { coursePlans } = require("../src/config/config");
 
 initializeApp({
   credential: cert(serviceAccount)
@@ -276,9 +277,10 @@ app.post('/postScore', jwtMiddleware({
 
     const getCoursePlans = memoize(readJsExportedObject);
     const coursePlans = await getCoursePlans(path.join(__dirname, "..", "src", "config", "coursePlans.js"));
-    var lessonName = null
+    const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor)
+    let lessonName = null;
 
-    for (const course of coursePlans) {
+    for (const course of _coursePlansNoEditor) {
         const { lessons = [] } = course;
         const idxOfFind = lessons.findIndex(lesson => lesson.id === linkedLesson);
         if (idxOfFind > -1) {
@@ -295,8 +297,8 @@ app.post('/postScore', jwtMiddleware({
         return
     }
 
-    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)   
-    
+    const score = Math.round(mastery * Math.pow(10, scorePrecision)) / Math.pow(10, scorePrecision)
+
 
     let semester = calculateSemester(Date.now());
     let canvasUserId = user_id;
@@ -363,7 +365,7 @@ app.post('/postScore', jwtMiddleware({
             lastTime = data["time_stamp"];
         })
     }
-    
+
 
     result.forEach(action => {
         let data = action.data();
@@ -386,7 +388,7 @@ app.post('/postScore', jwtMiddleware({
         if (time > 300) {
             time = ">300";
         }
-        
+
         var correct = null;
         if (data["isCorrect"] || data["hintIsCorrect"]) {
             correct = true;
