@@ -1,5 +1,6 @@
 const skillModel = {
     agtesttbl1a: [`matrices_and_matrix_operations`],
+    agtesttbl2a: [`matrices_and_matrix_operations`],
     a6f9727real1a: [`classifying_a_real_number`],
     a6f9727real1b: [`classifying_a_real_number`],
     a6f9727real1c: [`classifying_a_real_number`],

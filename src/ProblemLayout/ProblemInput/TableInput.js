@@ -69,17 +69,15 @@ class TableInput extends React.Component {
             <div>
                 <Box
                     display={'grid'}
-                    gridTemplateColumns={`repeat(3, 0fr)`}
-                    overflow={'hidden'}
+                    gridTemplateColumns={`repeat(${gridState[0].length}, 0fr)`}
+                    overflow={'auto'}
                     pt={0}
                     pb={0}
-                    gridGap={1}
                     gridColumnGap={1}
-                    justifyItems={'center'}
                     justifyContent={'center'}
                     sx={{
-                        '& .MuiTextField-root': { m: 1, width: 'min(120px, 19vw)', borderRadius: 0,
-                        outline: "1px solid #c4c4c4", borderTop: '1px solid #c4c4c4', 
+                        '& .MuiTextField-root': {width: 'min(120px, 19vw)', borderRadius: 0,
+                        outline: "1px solid #c4c4c4", borderTop: '1px solid #c4c4c4', height:'40px',
                         borderBottom: '1px solid #c4c4c4', background: '#ececec'}
                     }}
                     >
@@ -89,10 +87,13 @@ class TableInput extends React.Component {
                                 <TextField
                                     disabled
                                     id="filled-disabled"
-                                    label="Disabled"
                                     defaultValue={this.props.headers[col]}
                                     key ={col}
-                                    className={'grid-cell'}
+                                    className={clsx(classes.textInput)}
+                                    InputProps={{ disableUnderline: true, 
+                                        style: { color: "#808080"}
+                                        }}
+                                    inputProps={{min: 0, style: { textAlign: 'center' }}}     
                                 />
                                 )
                             })
