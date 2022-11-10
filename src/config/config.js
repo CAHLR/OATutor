@@ -73,6 +73,7 @@ const MIDDLEWARE_URL = process.env.REACT_APP_MIDDLEWARE_URL || "https://oatutor.
 const HELP_DOCUMENT = "https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub"
 
 const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
+const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor)
 
 const lessonPlans = [];
 for (let i = 0; i < coursePlans.length; i++) {
@@ -82,9 +83,10 @@ for (let i = 0; i < coursePlans.length; i++) {
         lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
     }
 }
+const _lessonPlansNoEditor = lessonPlans.filter(({ courseName }) => !courseName.startsWith("!!"))
 
 const findLessonById = (ID) => {
-    return lessonPlans.find(lessonPlan => lessonPlan.id === ID)
+    return _lessonPlansNoEditor.find(lessonPlan => lessonPlan.id === ID)
 }
 
 export {
@@ -97,6 +99,8 @@ export {
     ENABLE_BOTTOM_OUT_HINTS,
     lessonPlans,
     coursePlans,
+    _lessonPlansNoEditor,
+    _coursePlansNoEditor,
     MAX_BUFFER_SIZE,
     GRANULARITY,
     EQUATION_EDITOR_AUTO_COMMANDS,

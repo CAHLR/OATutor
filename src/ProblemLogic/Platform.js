@@ -91,7 +91,6 @@ class Platform extends React.Component {
         if (!this._isMounted) {
             return
         }
-        console.debug('isPrivileged', this.isPrivileged)
         if (this.isPrivileged && updateServer) {
             // from canvas or other LTI Consumers
             let err, response;

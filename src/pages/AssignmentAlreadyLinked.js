@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { lessonPlans, ThemeContext } from "../config/config";
+import { findLessonById, _lessonPlansNoEditor, ThemeContext } from "../config/config";
 import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
@@ -7,12 +7,15 @@ import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import Spacer from "../Components/_General/Spacer";
 
 const AssignmentAlreadyLinked = (props) => {
+    const lessonPlans = _lessonPlansNoEditor;
     const context = useContext(ThemeContext)
 
     const _linkedLesson = +context.alreadyLinkedLesson
-    const linkedLesson = !isNaN(_linkedLesson) && context.alreadyLinkedLesson.length > 0
+    const linkedLesson = !isNaN(_linkedLesson)
         ? lessonPlans[+context.alreadyLinkedLesson]
-        : null
+        : context.alreadyLinkedLesson.length > 1 ?
+            findLessonById(context.alreadyLinkedLesson) :
+            null
 
     console.debug("linkedLesson", linkedLesson)
 
