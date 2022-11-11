@@ -72,23 +72,25 @@ class TableInput extends React.Component {
                     gridTemplateColumns={`repeat(${gridState[0].length}, 0fr)`}
                     overflow={'auto'}
                     pt={0}
-                    pb={0}
+                    pb={1}
                     gridColumnGap={1}
+                    gridGap={1}
                     justifyContent={'center'}
                     sx={{
-                        '& .MuiTextField-root': {width: 'min(120px, 19vw)', borderRadius: 0,
+                        '& .MuiTextField-root': {borderRadius: 0,
                         outline: "1px solid #c4c4c4", borderTop: '1px solid #c4c4c4', height:'40px',
-                        borderBottom: '1px solid #c4c4c4', background: '#ececec'}
+                        background: '#ececec'}
+                        
                     }}
                     >
                     {
-                        gridState[0].map((row, col) => {
+                        gridState[0].map((row, idx) => {
                                 return (
                                 <TextField
                                     disabled
                                     id="filled-disabled"
-                                    defaultValue={this.props.headers[col]}
-                                    key ={col}
+                                    defaultValue={this.props.headers[idx]}
+                                    key ={idx}
                                     className={clsx(classes.textInput)}
                                     InputProps={{ disableUnderline: true, 
                                         style: { color: "#808080"}
@@ -98,20 +100,6 @@ class TableInput extends React.Component {
                                 )
                             })
                     }
-
-                </Box>
-                <div ref={this.gridRef}>
-                    <Box display={'grid'}
-                        gridTemplateColumns={`repeat(${gridState[0].length}, 0fr)`}
-                        overflow={'auto'}
-                        pt={0}
-                        pb={1}
-                        gridGap={1}
-                        gridColumnGap={1}
-                        justifyItems={'center'}
-                        justifyContent={'center'}
-                        
-                    >
                     {
                         gridState.map((row, idx) =>
                             row.map((val, jdx) => {
@@ -138,8 +126,8 @@ class TableInput extends React.Component {
                             })
                         )
                     }
-                    </Box>
-                </div>
+
+                </Box>
                 <Box mt={1} display={'grid'} width={'100%'} alignItems={'center'} justifyContent={'center'}>
                     <Button variant="contained" color="secondary" onClick={this.clearCells}
                             className={clsx("revealable", revealClearButton && "revealed")}>clear all
