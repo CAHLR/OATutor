@@ -1,0 +1,145 @@
+[
+    {
+        "id": "a02cb12AddRational1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Yes, $$\\frac{11x+28}{x+4}$$ and $$\\frac{x^2}{x+4}$$ shared the same common denominator of $$x+4$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h2"
+        ],
+        "title": "Add Numerators",
+        "text": "Since all of fractions in the expression have the least common denominator $$x+4$$, we can add the numerators.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+11x+28$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational1a-h3"
+        ],
+        "title": "Add Numerators",
+        "text": "What is the sum of numerators for $$\\frac{11x+28}{x+4}$$ and $$\\frac{x^2}{x+4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h4"
+        ],
+        "title": "Factor the Numerator",
+        "text": "We can factor the sum of numerator that we yield from step above to check if we can simplify the expression.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+4\\right) \\left(x+7\\right)$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational1a-h5"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$x^2+11x+28$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+4\\right) \\left(x+7\\right)$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational1a-h6"
+        ],
+        "title": "Factor the Numerator",
+        "text": "In order to factor $$x^2+11x+28$$, you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling. $$\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab$$. In this case, we get $$a b=28$$ and $$a+b=11$$. Assume both a and b are integers, $$a=4$$ and $$b=7$$ is only one possible combination that satisfies $$a b=28$$ and $$a+b=11$$. So you can factor $$x^2+11x+28$$ as?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h7"
+        ],
+        "title": "Rewrite the expression",
+        "text": "From above steps, we get the sum of numerators is $$\\left(x+4\\right) \\left(x+7\\right)$$ and the denominator is $$x+4$$. So we can rewrite $$\\frac{11x+28}{x+4}+\\frac{x^2}{x+4}$$ as $$\\frac{\\left(x+4\\right) \\left(x+7\\right)}{x+4}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h8"
+        ],
+        "title": "Simplify Expression by Canceling out Terms",
+        "text": "Are there any ways to simplify $$\\frac{\\left(x+4\\right) \\left(x+7\\right)}{x+4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+4$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational1a-h9"
+        ],
+        "title": "Simplify Expression by Canceling out Terms",
+        "text": "What is the greatest common factor shared by both numerator and denominator in $$\\frac{\\left(x+4\\right) \\left(x+7\\right)}{x+4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+7$$"
+        ],
+        "dependencies": [
+            "a02cb12AddRational1a-h10"
+        ],
+        "title": "Simplify Expression by Canceling out Terms",
+        "text": "As the final step, we cancel out x-4 on both numerator and denominator, what is the simplified form of $$\\frac{\\left(x+4\\right) \\left(x+7\\right)}{x+4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a02cb12AddRational1a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a02cb12AddRational1a-h11"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the expression $$\\frac{11x+28}{x+4}+\\frac{x^2}{x+4}$$ and $$x+7$$ are different because the domain of $$\\frac{11x+28}{x+4}+\\frac{x^2}{x+4}$$ does not include $$x=-4$$. The domain of $$x+7$$ includes $$x=-4$$. Strictly speaking, $$\\frac{11x+28}{x+4}+\\frac{x^2}{x+4}$$ equals $$x+7$$ excluding the domain $$x=-4$$.",
+        "variabilization": {}
+    }
+]

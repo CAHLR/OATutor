@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aa9c68cbasicrules18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Multiplication Rule",
+        "text": "We note that for events C and L, the mulitplication rule states that P(L AND $$C)=P\\left(L\\right) P\\left(C|L\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.376"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules18a-h1"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(L)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.55"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules18a-h2"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(C|L), or the probability that a California registered voter would prefer life in prison without parole over the death penalty for a person convicted of first degree murder given they are Latino Californian?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.2068"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules18a-h3"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(L AND $$C)=P\\left(L\\right) P\\left(C|L\\right)$$?",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id": "af23defint5a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [],
+        "title": "Addition",
+        "text": "What is -5 + 9?",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12"
+        ],
+        "dependencies": [
+            "af23defint5a-h1"
+        ],
+        "title": "Multiplication",
+        "text": "What is 3 * 4?",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af23defint5a-h2"
+        ],
+        "title": "Add and Subtract Integers",
+        "text": "Now sum the numbers",
+        "variabilization": {}
+    }
+]

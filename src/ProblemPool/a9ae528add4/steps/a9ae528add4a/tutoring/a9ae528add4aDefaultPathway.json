@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9ae528add4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Seeing if the Sum Will be Negative or Positive",
+        "text": "There is one negative because of -1, and five positives because of 5. Since five is more than one, there are more positives and the sum will be positive.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ae528add4a-h1"
+        ],
+        "title": "Visualizing the Problem",
+        "text": "The problem can be visualized with the image attached to this hint, where a red circle represents a negative and a blue circle represents a positive.\\n##figure1.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a9ae528add4a-h2"
+        ],
+        "title": "Solving the Problem With the Image",
+        "text": "From the image, you can see that one negative and one positive cancel each other out, and together, they are in the purple circle. What is the value of the circles that are outside of the purple circle?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ae528add4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9ae528add4a-h3"
+        ],
+        "title": "Final Answer",
+        "text": "4 positives are left after the red and blue circles in the purple circle are not counted, so the sum is a positive number, 4.",
+        "variabilization": {}
+    }
+]

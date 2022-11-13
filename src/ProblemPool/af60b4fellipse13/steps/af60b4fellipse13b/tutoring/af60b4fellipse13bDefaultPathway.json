@@ -1,0 +1,30 @@
+[
+    {
+        "id": "af60b4fellipse13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Major Axis",
+        "text": "Does the major axis lie on the x- or y-axis?",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse13b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1,0) and (-1,0)"
+        ],
+        "dependencies": [
+            "af60b4fellipse13b-h1"
+        ],
+        "title": "Finding Major Axis End Point",
+        "text": "Given that the major axis is on the x-axis, use the information from the standard form to find the endpoints on the major axis",
+        "variabilization": {},
+        "choices": [
+            "(1,0) and (-1,0)",
+            "(2,0) and (-2,0)",
+            "(3,0) and (-3,0)"
+        ]
+    }
+]

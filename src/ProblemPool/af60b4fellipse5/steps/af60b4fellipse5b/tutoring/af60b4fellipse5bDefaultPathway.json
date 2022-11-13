@@ -1,0 +1,89 @@
+[
+    {
+        "id": "af60b4fellipse5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vertice and Foci",
+        "text": "Does the major axis lie on the x- or y-axis?",
+        "variabilization": {}
+    },
+    {
+        "id": "af60b4fellipse5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,0)"
+        ],
+        "dependencies": [
+            "af60b4fellipse5b-h1"
+        ],
+        "title": "Center of Ellipse",
+        "text": "Where is the center of the ellipse?",
+        "variabilization": {},
+        "choices": [
+            "(0,0)",
+            "(0,1)",
+            "(0,2)"
+        ]
+    },
+    {
+        "id": "af60b4fellipse5b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(5,0) and (-5,0)"
+        ],
+        "dependencies": [
+            "af60b4fellipse5b-h2"
+        ],
+        "title": "Vertices of Ellipse",
+        "text": "Given the value of a is known, what are the coordinates for the vertices?",
+        "variabilization": {},
+        "choices": [
+            "(3,0) and (-3,0)",
+            "(0,4) and (0,-4)",
+            "(5,0) and (-5,0)"
+        ]
+    },
+    {
+        "id": "af60b4fellipse5b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,2) and (0,-2)"
+        ],
+        "dependencies": [
+            "af60b4fellipse5b-h3"
+        ],
+        "title": "Co-vertices of Ellipse",
+        "text": "Given the value of b is known, what are the coordinates for the co-vertices?",
+        "variabilization": {},
+        "choices": [
+            "(0,2) and (0,-2)",
+            "(0,2) and (0,-3)",
+            "(0,4) and (0,-4)"
+        ]
+    },
+    {
+        "id": "af60b4fellipse5b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,\\sqrt{21})$$ and $$(0,-\\sqrt{21})$$"
+        ],
+        "dependencies": [
+            "af60b4fellipse5b-h4"
+        ],
+        "title": "Foci of Ellipse",
+        "text": "Using the equation $$c^2=a^2-b^2$$ solve for c and obtain the coordinates of the foci",
+        "variabilization": {},
+        "choices": [
+            "$$(0,\\sqrt{21})$$ and $$(0,-\\sqrt{21})$$",
+            "$$(0,\\sqrt{2})$$ and $$(0,-\\sqrt{2})$$"
+        ]
+    }
+]

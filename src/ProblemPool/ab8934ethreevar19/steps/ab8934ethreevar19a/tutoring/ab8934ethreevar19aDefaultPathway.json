@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ab8934ethreevar19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying the System",
+        "text": "Multiply all 3 equations by 2 to remove the fraction. Then rearrange the equation so all variables are on one side and constants on the other.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$32x-11y=7$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h1"
+        ],
+        "title": "Breakding Down the Equations",
+        "text": "Multiply equation (1) by 2 and add it to equation (2).",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11x+9y=3$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h2"
+        ],
+        "title": "Breakding Down the Equations",
+        "text": "Subtract equation (2) from (3)",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=\\frac{3-11x}{9}$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h3"
+        ],
+        "title": "Simplified Variable Expression",
+        "text": "Using the last expression, rearrange to solve for an expression for y",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{128}{557}$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h4"
+        ],
+        "title": "Solving for x",
+        "text": "Plug-in the expression for y into one of the two broken down equations. Then solve for x.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{23}{557}$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h5"
+        ],
+        "title": "Solving for y",
+        "text": "Plug-in the value for x into one of the two broken down equations and solve for y.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar19a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{28}{557}$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar19a-h6"
+        ],
+        "title": "Solveing for x",
+        "text": "Plug in the values for x and y into any of the 3 original equations and solve for z",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a60a373solverat23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Lowest Common Denominator",
+        "text": "The first step is to find the lowest common denominator.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8y"
+        ],
+        "dependencies": [
+            "a60a373solverat23a-h1"
+        ],
+        "title": "Lowest Common Denominator",
+        "text": "What is the lowest common denominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat23a-h2"
+        ],
+        "title": "Distribute and multiply",
+        "text": "Distribute and multiply the lowest common denominator to all the terms.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3y+16=2y$$"
+        ],
+        "dependencies": [
+            "a60a373solverat23a-h3"
+        ],
+        "title": "Distribute and multiply",
+        "text": "What is the result?",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=-16$$"
+        ],
+        "dependencies": [
+            "a60a373solverat23a-h4"
+        ],
+        "title": "Simple Algebra",
+        "text": "Solve for y. Please input the answer as $$variable=answer$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a60a373solverat23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat23a-h5"
+        ],
+        "title": "Double Check",
+        "text": "Plug answers for a back into the original equation to make the sure answer is correct and not undefined at any point.",
+        "variabilization": {}
+    }
+]

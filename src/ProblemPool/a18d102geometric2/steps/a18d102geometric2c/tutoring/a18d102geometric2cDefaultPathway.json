@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a18d102geometric2c-h15",
+        "type": "hint",
+        "dependencies": [
+            "a18d102geometric2b-h14"
+        ],
+        "title": "Find Ratios of Consecutive Terms",
+        "text": "To determine if a sequence is geometric, we find the ratio of the consecutive terms shown.",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h15"
+        ],
+        "title": "Ratio Between 2 and 4",
+        "text": "What is the common ratio between 2 and 4? Effectively, what is $$\\frac{4}{2}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h17",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h16"
+        ],
+        "title": "Ratio Between 4 and 12",
+        "text": "What is the common ratio between 4 and 12? Effectively, what is $$\\frac{12}{4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h18",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h17"
+        ],
+        "title": "Ratio Between 12 and 48",
+        "text": "What is the common ratio between 12 and 48? Effectively, what is $$\\frac{48}{12}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h19",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h18"
+        ],
+        "title": "Ratio Between 240 and 48",
+        "text": "What is the common ratio between 48 and 240? Effectively, what is $$\\frac{240}{48}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6"
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h19"
+        ],
+        "title": "Ratio Between 240 and 1440",
+        "text": "What is the common ratio between 240 and 1440? Effectively, what is $$\\frac{1440}{240}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a18d102geometric2c-h21",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, the series is not geometric."
+        ],
+        "dependencies": [
+            "a18d102geometric2c-h20"
+        ],
+        "title": "Determining Commonality in Ratios",
+        "text": "Are the ratios between consecutive terms common?",
+        "variabilization": {},
+        "choices": [
+            "Yes, the series is geometric. The common ratio is $$r=3$$.",
+            "Yes, the series is geometric. The common ratio is $$r=4$$.",
+            "Yes, the series is geometric. The common ratio is $$r=\\frac{1}{4}$$.",
+            "No, the series is not geometric."
+        ]
+    }
+]

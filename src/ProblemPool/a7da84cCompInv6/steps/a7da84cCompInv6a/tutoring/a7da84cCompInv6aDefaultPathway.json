@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a7da84cCompInv6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Are the pairs represent a function?",
+        "text": "Think about the condition that makes some x-y pairs a function.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7da84cCompInv6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a7da84cCompInv6a-h1"
+        ],
+        "title": "If pairs represent a function, each x-value is matched with only one y-value.",
+        "text": "So, are the pairs in this question a function?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a7da84cCompInv6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7da84cCompInv6a-h2"
+        ],
+        "title": "Are the pairs represent a one-to-one function?",
+        "text": "A function is one-to-one if each value in the range corresponds to one element in the domain. For each ordered pair in the function, each y-value is matched with only one x-value. There are no repeated y-values.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7da84cCompInv6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a7da84cCompInv6a-h3"
+        ],
+        "title": "Determine if it is one-to-one",
+        "text": "Is there a y value that has more than one x paired with that y? If yes, then it is not one-to-one. If no, then it is one-to-one.",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a7da84cCompInv6a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0"
+                ],
+                "dependencies": [],
+                "title": "What y value(s) have two or more x values?",
+                "text": "What y value(s) have two or more x values?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

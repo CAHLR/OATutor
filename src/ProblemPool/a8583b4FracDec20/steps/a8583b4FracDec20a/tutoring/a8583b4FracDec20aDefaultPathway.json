@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a8583b4FracDec20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Clearing out the fractions",
+        "text": "The first step is to multiply both sides of the equation by a number that will clear out the fractions. In other words, we will multiply both sides of the equation by the least common multiple of the two denominators.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "a8583b4FracDec20a-h1"
+        ],
+        "title": "Finding the least common multiple",
+        "text": "What is the smallest number that is a multiple of 2 and 5?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a8583b4FracDec20a-h2"
+        ],
+        "title": "Multiplying numbers",
+        "text": "What is $$10\\frac{1}{5}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "a8583b4FracDec20a-h2"
+        ],
+        "title": "Multiplying numbers",
+        "text": "What is $$10\\frac{1}{2}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h3",
+            "a8583b4FracDec20a-h4"
+        ],
+        "title": "Using Distributive Property",
+        "text": "Now we get the cleared-up equation $$2\\left(q+3\\right)=5(q-3)$$. The next step is to use distributive property to get rid of the parantheses.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h5"
+        ],
+        "title": "Definition of Distributive Property",
+        "text": "Distributive Property is the property such that $$a \\left(b+c\\right)=a b+a c$$, where a,b, and c are constants",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h6"
+        ],
+        "title": "Using Distributive Property",
+        "text": "After distributing, we get the equation $$2q+6=5q-15$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h7"
+        ],
+        "title": "Solving for q",
+        "text": "The next step is to move all the terms with q to one side of the expression and all the constants to another. In other words, we want to isolate q by algebraically manipulate the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h8"
+        ],
+        "title": "Solving for q",
+        "text": "We can start by subtracting 2q from both sides, which gives us the equation $$3=3q-15$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h9"
+        ],
+        "title": "Solving for q",
+        "text": "The next step is to add 15 to both sides of the equation, which gives us $$3q=21$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8583b4FracDec20a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec20a-h10"
+        ],
+        "title": "Solving for q",
+        "text": "The last step is to divide both sides by the coefficient of q, which gives us the final answer $$q=7$$.",
+        "variabilization": {}
+    }
+]

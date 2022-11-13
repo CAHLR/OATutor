@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5e282bSolvquad10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Make the Leading Coefficient \\\"1\\\"",
+        "text": "We can divide both side by 3 and get $$z^2-49=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad10a-h1"
+        ],
+        "title": "Isolate the Quadratic Term",
+        "text": "We add 49 to both sides to get $$z^2$$ by itself which gives $$z^2=49$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad10a-h2"
+        ],
+        "title": "Use Square root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then x $$=$$ $$\\sqrt{k}$$, or x $$=$$ $$-\\sqrt{k}$$. $$z^2=49$$, we can take square root both sides and get $$z=\\sqrt{49}$$ or $$z=-\\sqrt{49}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-7"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad10a-h3"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$-\\sqrt{49}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad10a-h4"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$\\sqrt{49}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad10a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$3z^2-147$$ $$=$$ 0 has two solutions which are $$z=-7$$ and $$z=7$$.",
+        "variabilization": {}
+    }
+]

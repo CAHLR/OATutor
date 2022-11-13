@@ -1,0 +1,55 @@
+[
+    {
+        "id": "af69facexpolog27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving for t",
+        "text": "Substitute $$T(t)=80$$ to solve for t.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog27b-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog27b-h1"
+        ],
+        "title": "Solving for t",
+        "text": "Subtract 69 from both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog27b-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog27b-h2"
+        ],
+        "title": "Solving for t",
+        "text": "Divide by 31.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog27b-h4",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog27b-h3"
+        ],
+        "title": "Solving for t",
+        "text": "Take natural log on both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog27b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "88"
+        ],
+        "dependencies": [
+            "af69facexpolog27b-h4"
+        ],
+        "title": "Solving for t",
+        "text": "Divide by continuous rate of cooling, $$k=-0.011726$$. What is t? Round to the nearest minute.",
+        "variabilization": {}
+    }
+]

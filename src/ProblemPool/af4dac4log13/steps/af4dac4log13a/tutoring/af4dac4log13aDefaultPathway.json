@@ -1,0 +1,40 @@
+[
+    {
+        "id": "af4dac4log13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Exponential Term",
+        "text": "Divid 3 both sides get $$e^{x+2}=8$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af4dac4log13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af4dac4log13a-h1"
+        ],
+        "title": "Bring Down the Exponential",
+        "text": "Take the natural logarithm of both sides",
+        "variabilization": {}
+    },
+    {
+        "id": "af4dac4log13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4dac4log13a-h2"
+        ],
+        "title": "Take Natural log Both Sides",
+        "text": "Definition of Natural log: $$ln(a)=\\log_{e}\\left(a\\right)$$ \\\\n $$\\ln(a^b)=b \\ln(a)$$ \\\\n $$ln(e)=1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "af4dac4log13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af4dac4log13a-h3"
+        ],
+        "title": "Use the log Rule",
+        "text": "$$\\ln(e^{x+2})=\\left(x+2\\right) \\ln(e)=x+2=ln$$ 8. $$x=-2+\\ln(8)$$ which approximately equal 0.079",
+        "variabilization": {}
+    }
+]

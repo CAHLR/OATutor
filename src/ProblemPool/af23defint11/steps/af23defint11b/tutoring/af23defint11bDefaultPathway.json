@@ -1,0 +1,40 @@
+[
+    {
+        "id": "af23defint11b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "63"
+        ],
+        "dependencies": [],
+        "title": "Multiplication",
+        "text": "What is $$9\\times7$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "af23defint11b-h1"
+        ],
+        "title": "Principle",
+        "text": "A negative number multiply by a positive number results in a negative value",
+        "variabilization": {}
+    },
+    {
+        "id": "af23defint11b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-63"
+        ],
+        "dependencies": [
+            "af23defint11b-h2"
+        ],
+        "title": "Principle",
+        "text": "What is the negative value of 63?",
+        "variabilization": {}
+    }
+]
