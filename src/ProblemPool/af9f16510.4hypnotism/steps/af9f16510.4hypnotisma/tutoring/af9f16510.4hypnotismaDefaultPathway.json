@@ -23,8 +23,8 @@
         "dependencies": [
             "af9f16510.4hypnotisma-h2"
         ],
-        "title": "We are testing if the measurements, on average, are lower after hypnotism.",
-        "text": "",
+        "title": "Average Difference",
+        "text": "We are testing if the measurements, on average, are lower after hypnotism.",
         "variabilization": {}
     },
     {
@@ -54,7 +54,7 @@
             "af9f16510.4hypnotisma-h5"
         ],
         "title": "Hypothesis Testing with Two Samples",
-        "text": "Let \\mu_d denote the difference in pain measurements.",
+        "text": "Let $$\\mu_d $$denote$$ $$the$$ $$difference$$ $$in$$ $$pain$$ $$measurements$$.",
         "variabilization": {}
     },
     {
@@ -107,10 +107,10 @@
         "id": "af9f16510.4hypnotisma-h10",
         "type": "hint",
         "dependencies": [
-            "af9f16510.4hypnotisma-h9"
+            "af9f16510.4hypnotisma-h8"
         ],
         "title": "Test statistic",
-        "text": "test statistic $$t=\\frac{\\bar$$ x_d}{\\frac{s_d}{\\sqrt{n}}}, note that this is a t distribution with degrees of freedom n-1.",
+        "text": "test statistic t=x_d-$$\\mu_d/(s_d/sqrt(n)), otherwise known as the quantity mean sample difference subtracted by the population mean for the differences divided by the sample standard deviation divided by the square root of n. Note that this is a t distribution with degrees of freedom n-1.",
         "variabilization": {}
     },
     {
@@ -146,7 +146,9 @@
     {
         "id": "af9f16510.4hypnotisma-h14",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "af9f16510.4hypnotisma-h13"
+        ],
         "title": "Hypothesis Testing with Two Samples",
         "text": "Since 0.00948, the p-value, is less than our significance level of 0.05, the result is significant and we reject the null hypothesis that there is no difference.",
         "variabilization": {}
