@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ac98d98systemMat15c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Step",
+        "text": "First, multiply each entry of row 2 by -2. The result is $$\\begin{bmatrix} 4 & -12 & -8 & 16 \\\\ -8 & 4 & 6 & 2 \\\\ -6 & 2 & -1 & -1 \\end{bmatrix}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac98d98systemMat15c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac98d98systemMat15c-h1"
+        ],
+        "title": "Second Step",
+        "text": "Then, add each entry of row 1 to the entry in the same column of row 2. (Row 1, meanwhile, remains unchanged.) The answer is $$\\begin{bmatrix} 4 & -12 & -8 & 16 \\\\ -4 & -8 & -2 & 18 \\\\ -6 & 2 & -1 & -1 \\end{bmatrix}$$",
+        "variabilization": {}
+    }
+]

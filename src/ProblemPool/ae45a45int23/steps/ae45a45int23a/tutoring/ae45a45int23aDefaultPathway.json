@@ -1,0 +1,73 @@
+[
+    {
+        "id": "ae45a45int23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dividing with Negatives",
+        "text": "To divide negative numbers, you can divide remove any negative signs and divide as if both the numerator and denominator were positive; then, if the signs of the numerator and denominator are different in the original problem (one is positive and the other is negative), then add a negative to your final answer",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [
+            "ae45a45int23a-h1"
+        ],
+        "title": "Dividing with Negatives",
+        "text": "What is $$\\frac{100}{4}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae45a45int23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "ae45a45int23a-h2"
+        ],
+        "title": "Dividing with Negatives",
+        "text": "What is the sign of the numerator in the original problem? Negative or Positive?",
+        "variabilization": {},
+        "choices": [
+            "Negative",
+            "Positive"
+        ]
+    },
+    {
+        "id": "ae45a45int23a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "ae45a45int23a-h3"
+        ],
+        "title": "Dividing with Negatives",
+        "text": "What is the sign of the denominator in the original problem?",
+        "variabilization": {},
+        "choices": [
+            "Negative",
+            "Positive"
+        ]
+    },
+    {
+        "id": "ae45a45int23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int23a-h4"
+        ],
+        "title": "Signs",
+        "text": "Since the numerator and denominator had the the same sign in the original problem, the final answer is positive",
+        "variabilization": {}
+    }
+]

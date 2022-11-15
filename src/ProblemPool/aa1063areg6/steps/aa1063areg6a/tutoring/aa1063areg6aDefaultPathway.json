@@ -1,0 +1,30 @@
+[
+    {
+        "id": "aa1063areg6a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "101.32 + 2.48(60)"
+        ],
+        "dependencies": [],
+        "title": "",
+        "text": "Plug in x $$=$$ 60 into \u0177 $$=$$ 101.32 + 2.48x",
+        "variabilization": {}
+    },
+    {
+        "id": "aa1063areg6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "250120"
+        ],
+        "dependencies": [
+            "aa1063areg6a-h1"
+        ],
+        "title": "",
+        "text": "Conver answer because \u0177 is in thousands of dollars",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a1b4294cond2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample Spaces",
+        "text": "Let B1 denote the event \\\"first marble is black,\\\" B2 denote the event \\\"second marble is black,\\\" W1 denote the event \\\"first marble is white,\\\" and W2 denote the event \\\"second marble is white.\\\"",
+        "variabilization": {}
+    },
+    {
+        "id": "a1b4294cond2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1b4294cond2c-h1"
+        ],
+        "title": "At Least One Black Marble",
+        "text": "The event \\\"at least one black marble\\\" corresponds to two cases: exactly one marble is black, or both marbles are black. These values were calculated in the prior parts.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1b4294cond2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1b4294cond2c-h2"
+        ],
+        "title": "At Least One Black Marble",
+        "text": "P(At_Least_One)=P(B1$$\u2229$$B2)+P(One_Black_Marble)",
+        "variabilization": {}
+    },
+    {
+        "id": "a1b4294cond2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1b4294cond2c-h3"
+        ],
+        "title": "At Least One Black Marble",
+        "text": "$$P\\left(At_{Least,One}\\right)=\\frac{7}{15}+\\frac{7}{15}=\\frac{14}{15}$$",
+        "variabilization": {}
+    }
+]
