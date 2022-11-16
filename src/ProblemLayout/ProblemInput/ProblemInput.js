@@ -64,11 +64,11 @@ class ProblemInput extends React.Component {
     isTableInput() {
         if (this.props.step?.stepAnswer) {
             return this.props.step?.problemType !== "MultipleChoice" &&
-                /\\begin{[a-zA-Z]?tabular}/.test(this.props.step.stepAnswer[0])
+                /\\begin{[a-zA-Z]?array}/.test(this.props.step.stepAnswer[0])
         }
         if (this.props.step?.hintAnswer) {
             return this.props.step?.problemType !== "MultipleChoice" &&
-                /\\begin{[a-zA-Z]?tabular}/.test(this.props.step.hintAnswer[0])
+                /\\begin{[a-zA-Z]?array}/.test(this.props.step.hintAnswer[0])
         }
     }
 
@@ -101,7 +101,7 @@ class ProblemInput extends React.Component {
         const temp = correctAnswer;
         const TotalRows = correctAnswer.split("\\\\").length;
         const numCols =  correctAnswer.split("\\\\").join("&").split("&").length / TotalRows;
-        const headers = temp.match(/([a-zA-z]+)/g).slice(2,2+numCols)
+        const headers = temp.match(/([a-zA-z]+)/g).slice(3,3+numCols)
         const numRows = TotalRows - 1;
         return {numRows, numCols, headers}
     }

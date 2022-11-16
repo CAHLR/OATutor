@@ -96,7 +96,7 @@ function checkAnswer(attempt, actual, answerType, precision, variabilization) {
                 })
 
                 return [attempt, correctAnswer]
-            } else if (/\\begin{[a-zA-Z]?tabular}/.test(actual)){
+            } else if (/\\begin{[a-zA-Z]?array}/.test(actual)){
                 console.debug(`attempt: ${attempt} vs. actual:`, actual)
                 const studentMatrix = JSON.parse(attempt)
                 const solutionMatrices = parseTableTex(actual);
