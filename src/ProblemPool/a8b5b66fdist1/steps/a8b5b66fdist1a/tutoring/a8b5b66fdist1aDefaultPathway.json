@@ -14,7 +14,7 @@
             "a8b5b66fdist1a-h1"
         ],
         "title": "Distribution",
-        "text": "Distribution for the test: F_4,10: df(num) $$=$$ 5 - 1 $$=$$ 4 and df(denom) $$=$$ 15 - 5 $$=$$ 10",
+        "text": "Distribution for the test: df(num) $$=$$ 5 - 1 $$=$$ 4 and df(denom) $$=$$ 15 - 5 $$=$$ 10",
         "variabilization": {}
     },
     {
@@ -24,7 +24,7 @@
             "a8b5b66fdist1a-h2"
         ],
         "title": "Statistic F",
-        "text": "The F statistic is a ratio (a fraction). There are two sets of degrees of freedom; one for the numerator and one for the denominator. To solve for F, find the numerator mean square divided by the denominator mean square.\\n##figure1.gif##",
+        "text": "The F statistic is a ratio (a fraction). There are two sets of degrees of freedom: one for the numerator and one for the denominator. To solve for F, find the numerator mean square divided by the denominator mean square. If you would like, you can use a calculator by putting the data in the table into lists L1, L2, L3, and L4. Press STAT and arrow over to TESTS. Arrow down to F:ANOVA. Press ENTER and Enter (L1,L2,L3,L4). The calculator displays the F statistic, the p-value and the values for the one-way ANOVA table.\\n##figure1.gif##",
         "variabilization": {}
     },
     {
@@ -39,7 +39,7 @@
             "a8b5b66fdist1a-h3"
         ],
         "title": "Solving for F",
-        "text": "What is F? Round to four decimal places.",
+        "text": "What is F? Round to three decimal places.",
         "variabilization": {},
         "subHints": [
             {
@@ -52,7 +52,7 @@
                 ],
                 "dependencies": [],
                 "title": "Plugging into F",
-                "text": "What is 9,162,140/2,044,672.6? Round to four decimal places.",
+                "text": "What is 9,162,140/2,044,672.6? Round to three decimal places.",
                 "variabilization": {}
             }
         ]
@@ -79,7 +79,7 @@
             "a8b5b66fdist1a-h5"
         ],
         "title": "Compare \ud835\udefc and the p-value",
-        "text": "Since no \ud835\udefc is given, assume \ud835\udefc $$=$$ 0.05. The p-value $$=$$ 0.0248. If \ud835\udefc > p-value, reject $$H_0$$ if \ud835\udefc < p-value, accept $$H_0$$.",
+        "text": "Since we are testing at a significance level of 5%, \ud835\udefc $$=$$ 0.05. The p-value $$=$$ 0.0248. If \ud835\udefc > p-value, reject $$H_0$$ if \ud835\udefc < p-value, accept $$H_0$$.",
         "variabilization": {}
     },
     {
