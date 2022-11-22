@@ -42,7 +42,7 @@
                 ],
                 "dependencies": [],
                 "title": "Calculating Tommy's Sample Mean",
-                "text": "Add up the \\\"Tommy's Plants\\\" column and divide by the total number of Tommy's plants: what is (24 + 21 + 23 + 30 + 23)/5?",
+                "text": "Add up the Tommy's Plants column and divide by the total number of Tommy's plants: what is (24 + 21 + 23 + 30 + 23)/5?",
                 "variabilization": {}
             }
         ]
@@ -87,7 +87,7 @@
                 ],
                 "dependencies": [],
                 "title": "Calculating Tara's Sample Mean",
-                "text": "Add up the \\\"Tara's Plants\\\" column and divide by the total number of Tara's plants: what is (25 + 31 + 23 + 20 + 28)/5?",
+                "text": "Add up the Tara's Plants column and divide by the total number of Tara's plants: what is (25 + 31 + 23 + 20 + 28)/5?",
                 "variabilization": {}
             }
         ]
@@ -132,7 +132,7 @@
                 ],
                 "dependencies": [],
                 "title": "Calculating Nick's Sample Mean",
-                "text": "Add up the \\\"Nick's Plants\\\" column and divide by the total number of Nick's plants: what is (23 + 27 + 22 + 30 + 20)/5?",
+                "text": "Add up the Nick's Plants column and divide by the total number of Nick's plants: what is (23 + 27 + 22 + 30 + 20)/5?",
                 "variabilization": {}
             }
         ]
@@ -189,7 +189,7 @@
             "a8b5b66fdist3a-h10"
         ],
         "title": "Calculating the Variance of Group Means",
-        "text": "What is the variance of the three group means $${s_{x\u0304}}^2$$? Round to three decimal places.",
+        "text": "What is the variance of the three group means? Round to the thousandths place.",
         "variabilization": {}
     },
     {
@@ -199,7 +199,7 @@
             "a8b5b66fdist3a-h11"
         ],
         "title": "Mean of Sample Variances",
-        "text": "Then $$MS_{between}$$ $$=$$ $${s_{x\u0304}}^2$$ $$=$$ (5)(0.413) where n $$=$$ 5 is the sample size (number of plants each child grew). Calculate the mean of the three sample variances (calculate the mean of 11.7, 18.3, and 16.3).",
+        "text": "$$MS_{between}$$ $$=$$ $${s_{x\u0304}}^2$$ $$=$$ (5)(0.413) where n $$=$$ 5 is the sample size (number of plants each child grew). Calculate the mean of the three sample variances (calculate the mean of 11.7, 18.3, and 16.3).",
         "variabilization": {}
     },
     {
@@ -214,7 +214,7 @@
             "a8b5b66fdist3a-h12"
         ],
         "title": "Calculating the Mean of Sample Variances",
-        "text": "What is the mean of the sample variances (s**2 pooled)?",
+        "text": "What is the mean of the sample variances? In other words, what is $$s^2$$ pooled? Round to the thousandths place.",
         "variabilization": {}
     },
     {
@@ -229,8 +229,23 @@
             "a8b5b66fdist3a-h13"
         ],
         "title": "F Statistic",
-        "text": "The dfs for the numerator $$=$$ the number of groups - 1 $$=$$ 3 - 1 $$=$$ 2, and the dfs for the denominator $$=$$ the total number of samples - the number of groups $$=$$ 15 - 3 $$=$$ 12. The F statistic (or F ratio) is the following. Plugging in your solved values, what is F? Round to three decimal places.\\n##figure4.gif##",
-        "variabilization": {}
+        "text": "The dfs for the numerator $$=$$ the number of groups - 1 $$=$$ 3 - 1 $$=$$ 2, and the dfs for the denominator $$=$$ the total number of samples - the number of groups $$=$$ 15 - 3 $$=$$ 12. The F statistic (or F ratio) is the following. Plugging in your solved values, what is F? Round to the thousandths place.\\n##figure4.gif##",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a8b5b66fdist3a-h14-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.134"
+                ],
+                "dependencies": [],
+                "title": "Calculating F",
+                "text": "What is $$\\frac{{s_{x\u0304}}^2}{s^2}$$ pooled $$=$$ $$\\frac{5\\times0.413}{15.433}$$? Round to the thousandths place.",
+                "variabilization": {}
+            }
+        ]
     },
     {
         "id": "a8b5b66fdist3a-h15",
