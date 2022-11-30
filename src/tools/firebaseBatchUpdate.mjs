@@ -7,10 +7,9 @@ import { to } from "await-to-js";
 import { EOL } from "os";
 import chalk from "chalk";
 import path, { dirname } from "path"
-import { fileURLToPath, pathToFileURL } from "url";
+import { fileURLToPath } from "url";
 import { createRequire } from "module";
 import util from "util";
-import tempy from 'tempy';
 import { isObject } from "../util/objectEntryTools.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -345,16 +344,7 @@ function getProblemIdMapping() {
 }
 
 async function getSkillMapping() {
-    const skillModelFile = await areadFile(path.join(__dirname, "..", "config", "skillModel.js"))
-    const skillObj = await tempy.write.task(skillModelFile, async (temporaryPath) => {
-        return (await import(pathToFileURL(temporaryPath))).default
-    }, {
-        extension: "mjs"
-    })
-    if (!isObject(skillObj)) {
-        throw new Error()
-    }
-    return skillObj
+    return require(path.join(__dirname, "..", "config", "skillModel.json"))
 }
 
 /**

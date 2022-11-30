@@ -1,0 +1,254 @@
+[
+    {
+        "id": "af0a186anov3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What is the sum of the values in the jth group?",
+        "text": "Sum of value in each column.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "65.3"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h1"
+        ],
+        "title": "Sum of value for group Northeast.",
+        "text": "Add up the value in column Northeast.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "af0a186anov3a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "66"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group South.",
+                "text": "Add up the value in column South.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov3a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "65.6"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group West.",
+                "text": "Add up the value in column West.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov3a-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "65.7"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group Central.",
+                "text": "Add up the value in column Central.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov3a-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "67.7"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group East.",
+                "text": "Add up the value in column East.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "af0a186anov3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h2"
+        ],
+        "title": "Compute the Sum of Squares representing variation among the different samples. ($\\SS_{between}$)",
+        "text": "$\\SS_{between}$ $$=$$ $\\sum[\\frac{(\\sum s_j)**2}{n_j}] - \\frac{(\\sum s_j)**2}{n}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.903"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h3"
+        ],
+        "title": "$\\frac{s_1 **2}{4} + \\frac{s_2 ** 2}{4} + \\frac{s_3 **2}{4} + \\frac{s_4 **2}{4} + \\frac{s_5 **2}{4} - \\frac{(65.3 + 66 + 65.6 + 65.7+ 67.7)**2}{20}$",
+        "text": "Round to the third place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h4"
+        ],
+        "title": "Compute the Sum of Squares representing variation within samples due to chance. ($\\SS_{within})",
+        "text": "$\\SS_{within} $$=$$ \\SS_{total} - \\SS_{between}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.7055"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h5"
+        ],
+        "title": "Compute $\\SS_{total} $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
+        "text": "$(16.3**2 + $${16.1}^2$$ + $${16.4}^2$$ + $${16.5}^2$$ + $${16.9}^2$$ + $${16.5}^2$$ + $${16.4}^2$$ + $${16.2}^2$$ + $${16.4}^2$$ + $${16.5}^2$$ + $${16.6}^2$$ + $${16.1}^2$$ + $${16.2}^2$$ + $${16.6}^2$$ + $${16.5}^2$$ + $${16.4}^2$$ + $${17.1}^2$$ + $${17.2}^2$$ + $${16.6}^2$$ + 16.8**2) - \\frac{(16.3 + 16.1 + 16.4 + 16.5 + 16.9 + 16.5 + 16.4 + 16.2 + 16.5 + 16.4 + 16.6 + 16.1 + 16.2 + 16.6 + 16.5 + 16.4 + 17.1 + 17.2 + 16.6 + 16.8)**2}{4+4+4+4+4} $",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h6"
+        ],
+        "title": "What is the Degree of Freedom of Factor (Between)?",
+        "text": "$df_{numerator}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h7"
+        ],
+        "title": "$df_{numerator} $$=$$ k - 1$",
+        "text": "5 groups - 1",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h9",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h8"
+        ],
+        "title": "What is the Degree of Freedom of Error (within)?",
+        "text": "$df_{denominator}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h9"
+        ],
+        "title": "$df_{denominator} $$=$$ n - k$",
+        "text": "20 total data - 5 groups",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h11",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h10"
+        ],
+        "title": "Compute the Mean Square of Factor (Between)",
+        "text": "Round to the fifith place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.22575"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h11"
+        ],
+        "title": "MS(Factor) $$=$$ SS(Factor) / (k - 1)",
+        "text": "0.903 / 4",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h13",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h12"
+        ],
+        "title": "Compute the Mean Square of Error (Within)",
+        "text": "Round to the third place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.1137"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h13"
+        ],
+        "title": "MS(Error) $$=$$ SS(Error) / (n - k)",
+        "text": "1.7055 / 15",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h15",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov3a-h14"
+        ],
+        "title": "Compute the F-statistics",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov3a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.9855"
+        ],
+        "dependencies": [
+            "af0a186anov3a-h15"
+        ],
+        "title": "F $$=$$ MS(Factor) / MS(Error)",
+        "text": "0.22575 / 0.1137",
+        "variabilization": {}
+    }
+]

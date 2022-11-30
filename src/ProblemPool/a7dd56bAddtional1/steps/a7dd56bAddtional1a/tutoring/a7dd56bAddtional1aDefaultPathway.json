@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a7dd56bAddtional1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Tail",
+        "text": "$$H_a$$ tells you the whether the tail is left-, right, or two-tailed.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAddtional1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less"
+        ],
+        "dependencies": [
+            "a7dd56bAddtional1a-h1"
+        ],
+        "title": "Compare",
+        "text": "Is $$H_a$$ greater, less, or not equal to the mean?",
+        "variabilization": {},
+        "choices": [
+            "Greater",
+            "Less",
+            "Not Equal"
+        ]
+    },
+    {
+        "id": "a7dd56bAddtional1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Left"
+        ],
+        "dependencies": [
+            "a7dd56bAddtional1a-h2"
+        ],
+        "title": "Interpret",
+        "text": "Does that mean we are looking to the left, right, or both sides of the mean?",
+        "variabilization": {},
+        "choices": [
+            "Left",
+            "Right",
+            "Both Sides"
+        ]
+    }
+]

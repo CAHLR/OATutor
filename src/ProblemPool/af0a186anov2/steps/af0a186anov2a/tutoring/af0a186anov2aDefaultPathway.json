@@ -1,0 +1,254 @@
+[
+    {
+        "id": "af0a186anov2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What is the sum of the values in the jth group?",
+        "text": "Sum of value in each column.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10537"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h1"
+        ],
+        "title": "Sum of value for group n1.",
+        "text": "Add up the value in column n1.",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "af0a186anov2a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "16512"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n2.",
+                "text": "Add up the value in column n2.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov2a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "18973"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n3.",
+                "text": "Add up the value in column n3.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov2a-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "23412"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n4.",
+                "text": "Add up the value in column n4.",
+                "variabilization": {}
+            },
+            {
+                "id": "af0a186anov2a-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "22772"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n5.",
+                "text": "Add up the value in column n5.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "af0a186anov2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h2"
+        ],
+        "title": "Compute the Sum of Squares representing variation among the different samples. ($\\SS_{between}$)",
+        "text": "$\\SS_{between}$ $$=$$ $\\sum[\\frac{(\\sum s_j)**2}{n_j}] - \\frac{(\\sum s_j)**2}{n}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "36648560.93"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h3"
+        ],
+        "title": "$\\frac{s_1 **2}{3} + \\frac{s_2 ** 2}{3} + \\frac{s_3 **2}{3} + \\frac{s_4 **2}{3} + \\frac{s_5 **2}{3} - \\frac{(10537 + 16512 + 18973 + 23412+ 22772)**2}{15}$",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h4"
+        ],
+        "title": "Compute the Sum of Squares representing variation within samples due to chance. ($\\SS_{within})",
+        "text": "$\\SS_{within} $$=$$ \\SS_{total} - \\SS_{between}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "57095286.93"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h5"
+        ],
+        "title": "Compute $\\SS_{total} $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
+        "text": "$(2625**2 + $${2997}^2$$ + $${4915}^2$$ + $${5348}^2$$ + $${5682}^2$$ + $${5482}^2$$ + $${6583}^2$$ + $${8560}^2$$ + $${3830}^2$$ + $${7285}^2$$ + $${6897}^2$$ + $${9230}^2$$ + $${6277}^2$$ + $${7818}^2$$ + 8677**2) - \\frac{(2625 + 2997 + 4915 + 5348 + 5682 + 5482 + 6583 + 8560 + 3830 + 7285 + 6897 + 9230 + 6277 + 7818 + 8677)**2}{3+3+3+3+3} $",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h6"
+        ],
+        "title": "What is the Degree of Freedom of Factor (Between)?",
+        "text": "$df_{numerator}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h7"
+        ],
+        "title": "$df_{numerator} $$=$$ k - 1$",
+        "text": "5 groups - 1",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h8"
+        ],
+        "title": "What is the Degree of Freedom of Error (within)?",
+        "text": "$df_{denominator}$",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h9"
+        ],
+        "title": "$df_{denominator} $$=$$ n - k$",
+        "text": "15 total data - 5 groups",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h11",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h10"
+        ],
+        "title": "Compute the Mean Square of Factor (Between)",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12216186.98"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h11"
+        ],
+        "title": "MS(Factor) $$=$$ SS(Factor) / (k - 1)",
+        "text": "36648560.9333 / 3",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h13",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h12"
+        ],
+        "title": "Compute the Mean Square of Error (Within)",
+        "text": "Round to the third place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5709528.693"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h13"
+        ],
+        "title": "MS(Error) $$=$$ SS(Error) / (n - k)",
+        "text": "57095286.93 / 10",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h15",
+        "type": "hint",
+        "dependencies": [
+            "af0a186anov2a-h14"
+        ],
+        "title": "Compute the F-statistics",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {}
+    },
+    {
+        "id": "af0a186anov2a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2.1396"
+        ],
+        "dependencies": [
+            "af0a186anov2a-h15"
+        ],
+        "title": "F $$=$$ MS(Factor) / MS(Error)",
+        "text": "12216186.98 / 5709528.693",
+        "variabilization": {}
+    }
+]

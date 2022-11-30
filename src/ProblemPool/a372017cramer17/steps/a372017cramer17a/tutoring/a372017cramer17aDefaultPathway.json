@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Cramer's Rule for 2x2 Systems",
-        "text": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables. \\\\n Consider a system of two linear equations in two variables. \\\\n $$a_1 x+b_1 y=c_1$$ \\\\n $$a_2 x+b_2 y=c_2$$ \\\\n \\\\n The solution using Cramer's Rule is given as \\\\n $$x=\\frac{D_x}{D}=$$ |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|, $$D!=0;$$ \\\\n $$y=\\frac{D_y}{D}=$$ |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|, $$D!=0;$$ \\\\n If we are solving for x, the x column is replaced with the constant column. If we are solving for y, the y column is replaced with the constant column.",
+        "text": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables. Consider a system of two linear equations in two variables. $$a_1 x+b_1 y=c_1$$ $$a_2 x+b_2 y=c_2$$ The solution using Cramer's Rule is given as $$x=\\frac{D_x}{D}=$$ |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|, $$D!=0;$$ $$y=\\frac{D_y}{D}=$$ |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|, $$D!=0;$$ If we are solving for x, the x column is replaced with the constant column. If we are solving for y, the y column is replaced with the constant column.",
         "variabilization": {}
     },
     {

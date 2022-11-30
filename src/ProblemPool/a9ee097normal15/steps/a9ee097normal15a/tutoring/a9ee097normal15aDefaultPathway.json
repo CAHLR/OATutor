@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a9ee097normal15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "The formula for sample size is $$n=\\frac{z^2 {\\sigma}^2}{{EBM}^2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal15a-h1"
+        ],
+        "title": "Find Missing Value",
+        "text": "We know the value of $$\u03c3=15$$ and $$EBM=2$$. We are missing z so calculate its value.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal15a-h2"
+        ],
+        "title": "Z-value",
+        "text": "Since we want to be 95% confident, we will use z_0.025.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.96"
+        ],
+        "dependencies": [
+            "a9ee097normal15a-h3"
+        ],
+        "title": "Calculator",
+        "text": "Use your calculator, a computer, or a probability table for the standard normal distribution to find z_0.025. What is its value?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal15a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute all known values into the formula for sample size.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "216.09"
+        ],
+        "dependencies": [
+            "a9ee097normal15a-h5"
+        ],
+        "title": "Calculate n",
+        "text": "What is $$n=\\frac{{1.96}^2 {15}^2}{2^2}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal15a-h6"
+        ],
+        "title": "Round n",
+        "text": "Round n up to the next higher integer so the sample size is large enough.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ee097normal15a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "217"
+        ],
+        "dependencies": [
+            "a9ee097normal15a-h7"
+        ],
+        "title": "Round n",
+        "text": "What is n rounded up to the next integer?",
+        "variabilization": {}
+    }
+]

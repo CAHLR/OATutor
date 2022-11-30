@@ -44,7 +44,7 @@
             "ab5123ebaye3a-h2"
         ],
         "title": "P(Yes$$\\mid$$Allergy)",
-        "text": "What is the probability of test saying \\\"Yes\\\", given that the person getting tested is allergic to cats? Round your answer to 3 decimal places",
+        "text": "What is the probability of test saying \"Yes\", given that the person getting tested is allergic to cats? Round your answer to 3 decimal places",
         "variabilization": {},
         "subHints": [
             {
@@ -52,7 +52,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(Yes$$\\mid$$Allergy)",
-                "text": "For people that really do have the allergy, the test says \\\"Yes\\\" 80% of the time. Thus the probability of test saying \\\"Yes\\\", given that the person getting tested is allergic to cats is 0.800",
+                "text": "For people that really do have the allergy, the test says \"Yes\" 80% of the time. Thus the probability of test saying \"Yes\", given that the person getting tested is allergic to cats is 0.800",
                 "variabilization": {}
             }
         ]
@@ -69,7 +69,7 @@
             "ab5123ebaye3a-h3"
         ],
         "title": "P(Yes)",
-        "text": "What is the probability that the test say \\\"Yes\\\" to anyone? Round your answer to 3 decimal places",
+        "text": "What is the probability that the test say \"Yes\" to anyone? Round your answer to 3 decimal places",
         "variabilization": {},
         "subHints": [
             {
@@ -77,7 +77,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(Yes)",
-                "text": "There are two situations where the test says \\\"YES\\\": the person is allergic and the test says \\\"Yes\\\" and the person is not allergic and the test says \\\"Yes\\\". We add those two probabilities together to get P(Yes)",
+                "text": "There are two situations where the test says \"YES\": the person is allergic and the test says \"Yes\" and the person is not allergic and the test says \"Yes\". We add those two probabilities together to get P(Yes)",
                 "variabilization": {}
             },
             {
@@ -87,7 +87,7 @@
                     "ab5123ebaye3a-h4-s1"
                 ],
                 "title": "P(Yes and Allergic)",
-                "text": "1% have the allergy, and the test says \\\"Yes\\\" to 80% of them. Thus the probability that the test says \\\"Yes\\\" and they are allergic is $$0.01\\times0.8=0.008$$",
+                "text": "1% have the allergy, and the test says \"Yes\" to 80% of them. Thus the probability that the test says \"Yes\" and they are allergic is $$0.01\\times0.8=0.008$$",
                 "variabilization": {}
             },
             {
@@ -97,7 +97,7 @@
                     "ab5123ebaye3a-h4-s2"
                 ],
                 "title": "P(Yes and Not Allergic)",
-                "text": "99% do not have the allergy and the test says \\\"Yes\\\" to 10% of them. Thus the probability that the test says \\\"Yes\\\" and they are not allergic is $$0.99\\times0.1=0.099$$",
+                "text": "99% do not have the allergy and the test says \"Yes\" to 10% of them. Thus the probability that the test says \"Yes\" and they are not allergic is $$0.99\\times0.1=0.099$$",
                 "variabilization": {}
             },
             {

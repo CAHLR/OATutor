@@ -1,5 +1,5 @@
 import React from 'react';
-import courses from './coursePlans.js';
+import courses from './coursePlans.json';
 import { calculateSemester } from "../util/calculateSemester.js";
 
 import { SITE_NAME } from "./shared-config"
