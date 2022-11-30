@@ -52,7 +52,7 @@ OATutor can use Firebase to persistently store log data.
 
 1. Scaffolding/hint system - modularize the type of help
 2. Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3. Centralized skill model - `src/config/skillModel.js`
+3. Centralized skill model - `src/config/skillModel.json`
 4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5. User login/registration - JSON Web Tokens
 
@@ -142,15 +142,14 @@ website for more info on this syntax.
   problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
   probability of mastery across all of its knowledge components, but this can be changed to any heuristic.
 
-- `skillModel.js`: This file contains all the problem to skill mappings. The format is as follows:
+- `skillModel.json`: This file contains all the problem to skill mappings. The format is as follows:
 
-```javascript
-const skillModel = {
+```json5
+{
     problemID1a: ['skill1', 'skill2'],
     problemID1b: ['skill2', 'skill3'],
     // ...
 }
-export default skillModel;
 ```
 
 ### /tools [Optional]
@@ -241,7 +240,7 @@ DO_FOCUS_TRACKING = false;
    1. Ensure that the step name matches the folder name
 6. Create a sub-folder within the step's sub-folder called `tutoring`
 7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.json`)
-8. In `/src/config/skillModel.js`, tag each problem with the appropriate skills
+8. In `/src/config/skillModel.json`, tag each problem with the appropriate skills
 9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams`
    files
 
@@ -372,7 +371,7 @@ export { step };
 
 ### Creating Lesson Plans
 
-* Create a lesson plan by making a new item in `config/coursePlans.js`
+* Create a lesson plan by making a new item in `config/coursePlans.json`
 * Each lesson plan has learning objectives which you can also list the target mastery level
 * Lesson plans can have multiple learning objectives (for cumulative review)
 * Users select a lesson upon visiting the site
@@ -419,9 +418,9 @@ treatment can be inferred from this. Other examples of AB testing included are d
 different default hint pathways.
 
 ### Details of KC model Description (how it works/format)
-Knowledge components (KCs) are assigned at the step level in the file skillModel.js. A KC is defined as a string that
+Knowledge components (KCs) are assigned at the step level in the file skillModel.json. A KC is defined as a string that
 contains corresponding BKT parameters (existing in bktParams.js file) including probMastery, probTransit, probSlip, and
-probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.js
+probGuess. Each step can be assigned any number of KCs in an array format (['kc1', 'kc2', ... 'kcN']). skillModel.json
 stores a mapping between step IDs and the KCs array as a JSON object.
 
 bktParams.js contains a JSON object that maps KCs to their corresponding BKT parameters (probMastery, probTransit,

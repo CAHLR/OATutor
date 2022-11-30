@@ -1,0 +1,30 @@
+[
+    {
+        "id": "a7984e1Poisson9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability",
+        "text": "We know the mean is 147 emails, and we are looking for the probability that the email user receives at most 160 emails per day. Use this information for a calculator procedure.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7984e1Poisson9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7984e1Poisson9a-h1"
+        ],
+        "title": "Calculator",
+        "text": "$$P(x \\leq 160)=poissoncdf(147,160)$$. Put this into the calculator to get the answer. poissoncdf is being used because we are finding the probability of a range of values, rather than an exact value.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7984e1Poisson9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7984e1Poisson9a-h2"
+        ],
+        "title": "Calculator",
+        "text": "Calculator steps: press 2nd DISTR, arrow down to poissoncdf. Press ENTER. Enter (147,160).",
+        "variabilization": {}
+    }
+]

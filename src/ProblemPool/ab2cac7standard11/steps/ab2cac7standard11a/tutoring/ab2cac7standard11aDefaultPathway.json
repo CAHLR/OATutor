@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ab2cac7standard11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Deviation",
+        "text": "68% of the values should be within 1 standard deviation of the mean. Find what values are within 1 standard deviation of the mean.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11"
+        ],
+        "dependencies": [
+            "ab2cac7standard11a-h1"
+        ],
+        "title": "Standard Deviation",
+        "text": "What is 1 standard deviation?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "11"
+        ],
+        "dependencies": [
+            "ab2cac7standard11a-h2"
+        ],
+        "title": "Identify Value of Standard Deviation",
+        "text": "Identify what is the standard deviation, \u03c3.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab2cac7standard11a-h3"
+        ],
+        "title": "Range",
+        "text": "Add and subtract this amount from the mean to get the values that fall within 1 standard deviation of the mean.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "63"
+        ],
+        "dependencies": [
+            "ab2cac7standard11a-h4"
+        ],
+        "title": "Add for Upper Bound",
+        "text": "What is $$52+11$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "41"
+        ],
+        "dependencies": [
+            "ab2cac7standard11a-h4"
+        ],
+        "title": "Subtract for Lower Bound",
+        "text": "What is 52-11?",
+        "variabilization": {}
+    }
+]

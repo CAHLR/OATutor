@@ -1,0 +1,97 @@
+[
+    {
+        "id": "a74202acorr2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Question",
+        "text": "The 95% Critical Values of the Sample Correlation Coefficient Table can be used to determine whether the computed value of r, the sample correlation coefficient, is significant or not. Compare r to the appropriate critical value in the table. If r is not between the positive and negative critical values, then the correlation coefficient is significant. If r is significant, then you may want to use the line for prediction.",
+        "variabilization": {}
+    },
+    {
+        "id": "a74202acorr2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "a74202acorr2a-h1"
+        ],
+        "title": "Degrees of Freedom",
+        "text": "What are the degrees of freedom (df): n - 2, where n is the number of data points?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a74202acorr2a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "9"
+                ],
+                "dependencies": [],
+                "title": "Finding n",
+                "text": "What is n, the number of data points?",
+                "variabilization": {}
+            },
+            {
+                "id": "a74202acorr2a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "7"
+                ],
+                "dependencies": [],
+                "title": "Solving for Degrees of Freedom",
+                "text": "Plugging n $$=$$ 9 into the df equation, what is n - 2?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a74202acorr2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.666"
+        ],
+        "dependencies": [
+            "a74202acorr2a-h2"
+        ],
+        "title": "Critical Values",
+        "text": "What positive and negative critical value is associated with df $$=$$ 7? Reference the 95% Critical Values of the Sample Correlation Coefficient Table.",
+        "variabilization": {}
+    },
+    {
+        "id": "a74202acorr2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a74202acorr2a-h3"
+        ],
+        "title": "r Significance",
+        "text": "The critical values associated with df $$=$$ 7 are -0.666 and $$+0.666$$. Keep in mind that r $$=$$ 0.5204. If r < negative critical value or r > positive critical value, then r is significant. Is r significant?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a74202acorr2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a74202acorr2a-h4"
+        ],
+        "title": "Prediction",
+        "text": "Since r $$=$$ 0.5204 and -0.666 < 0.5204 < 0.666, r is not significant and the line should not be used for prediction.",
+        "variabilization": {}
+    }
+]

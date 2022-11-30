@@ -38,9 +38,9 @@ import TabFocusTrackerWrapper from "./Components/_General/TabFocusTrackerWrapper
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from './config/firebaseConfig.js';
-import skillModel from './config/skillModel.js';
-import { bktParams as bktParams1 } from './config/bktParams/bktParams1.js';
-import { bktParams as bktParams2 } from './config/bktParams/bktParams2.js';
+import skillModel from './config/skillModel.json';
+import bktParams1 from './config/bktParams/bktParams1.json';
+import bktParams2 from './config/bktParams/bktParams2.json';
 import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
 import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
 // ### END CUSTOMIZABLE IMPORTS ###

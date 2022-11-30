@@ -8,14 +8,11 @@ const { SITE_NAME } = require("../src/config/shared-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
 const { calculateSemester } = require("../src/util/calculateSemester.js");
 const to = require("await-to-js").default;
-const memoize = require("lodash.memoize");
-const readJsExportedObject = require("../src/tools/readJsExportedObject");
 const path = require("path");
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 
 const serviceAccount = require('./oatutor-firebase-adminsdk.json');
-const { coursePlans } = require("../src/config/config");
 
 initializeApp({
   credential: cert(serviceAccount)
@@ -275,8 +272,8 @@ app.post('/postScore', jwtMiddleware({
         return
     }
 
-    const getCoursePlans = memoize(readJsExportedObject);
-    const coursePlans = await getCoursePlans(path.join(__dirname, "..", "src", "config", "coursePlans.js"));
+    // TODO: check if this works properly
+    const coursePlans = require(path.join(__dirname, "..", "src", "config", "coursePlans.json"));
     const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor)
     let lessonName = null;
 
