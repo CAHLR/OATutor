@@ -1,25 +1,28 @@
 #!/bin/bash
 
-CONTENT_DIR_NAME="oats-content"
-SUBDIRECTORY="OpenStax Content"
-CURRENT_PATH=$(pwd)
+SCRIPT_DIRECTORY=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+PLATFORM_REPO_DIR="$SCRIPT_DIRECTORY/../.."
 
-CONFIG_FILES=("bktParams.js" "coursePlans.js" "skillModel.js")
+# assuming this tools is located in src/tools
+CONTENT_REPO_DIR="$SCRIPT_DIRECTORY/../../../oats-content"
+CONTENT_DIR_NAME="OpenStax Content"
+CONFIG_FILES=("bktParams.json" "coursePlans.json" "skillModel.json")
 
-OUT_FILE="$CURRENT_PATH/logs/updateContent-$(date -d "today" +"%Y%m%d%H%M").log"
+PREPROCESS_OUT_FILE="${PLATFORM_REPO_DIR}/logs/updateContent-$(date +%Y-%m-%d_%H-%M-%S).log"
 
 DO_UPDATE=true
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-    -c | --content)
-        CONTENT_DIR_NAME="$2"
+    -c | --content-repo-dir)
+        CONTENT_REPO_DIR="$2"
         shift
         ;;
-    -o | --out)
-        OUT_FILE="$2"
+    -o | --preprocess-out)
+        PREPROCESS_OUT_FILE="$2"
         shift
         ;;
+    # do not update content tooling repository
     -n | --no-update) DO_UPDATE=false ;;
     *)
         echo "Unknown parameter passed: $1"
@@ -29,15 +32,15 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-cd "../../../$CONTENT_DIR_NAME" || (
-    echo "Could not access content directory: $CONTENT_DIR_NAME, exiting early.."
-    exit
-)
+if [ ! -d `dirname ${PREPROCESS_OUT_FILE}` ]; then
+    mkdir -p `dirname ${PREPROCESS_OUT_FILE}`
+fi
 
-CONTENT_PATH=$(pwd)
+cd "${CONTENT_REPO_DIR}" 2> /dev/null || \
+    { echo "Could not access the content tools repository directory: $CONTENT_REPO_DIR, exiting early.."; exit; }
 
-if [ ! -d "$SUBDIRECTORY" ]; then
-    echo "$SUBDIRECTORY sub directory does not exist."
+if [ ! -d "$CONTENT_DIR_NAME" ]; then
+    echo "$CONTENT_DIR_NAME sub directory does not exist in the content tools repository."
     exit
 fi
 
@@ -47,44 +50,39 @@ if [[ "$DO_UPDATE" = true ]]; then
     git pull
 fi
 
-if [ ! -d "$SUBDIRECTORY" ]; then
-    echo "$SUBDIRECTORY sub directory does not exist."
+if [ ! -d "$CONTENT_DIR_NAME" ]; then
+    echo "$CONTENT_DIR_NAME sub directory does not exist in the content tools repository."
     exit
 fi
 
-cd "$CURRENT_PATH" || exit
-cd ../..
-
-ROOT_PATH=$(pwd)
-
-echo "Removing existing ProblemPool from ROOT_PATH: ${ROOT_PATH}"
+cd "${PLATFORM_REPO_DIR}" || exit
+echo "Removing existing ProblemPool from the platform repository: ${PLATFORM_REPO_DIR}"
 
 rm -rf src/ProblemPool
 
-echo "Copying over new ProblemPool from ${CONTENT_PATH}/${SUBDIRECTORY} to ${ROOT_PATH}"
+echo "Copying over new ProblemPool from ${CONTENT_REPO_DIR}/${CONTENT_DIR_NAME} to ${PLATFORM_REPO_DIR}"
 
-cp -a "$CONTENT_PATH/$SUBDIRECTORY" src/ProblemPool
+cp -a "${CONTENT_REPO_DIR}/${CONTENT_DIR_NAME}" src/ProblemPool
 
 echo "Copying over new Config Files"
 
-cd "$CONTENT_PATH" || exit
+cd "${CONTENT_REPO_DIR}" || exit
 
 for FILE in "${CONFIG_FILES[@]}"; do
-    cp "$FILE" "$ROOT_PATH/src/config"
+    cp "$FILE" "${PLATFORM_REPO_DIR}/src/config"
 done
 
-cd "$ROOT_PATH" || exit
+cd "${PLATFORM_REPO_DIR}" || exit
 
-rm src/config/bktParams/*.js
+# replace old bktParams with newly generated ones
+rm src/config/bktParams/*.json
+mv src/config/bktParams.json src/config/bktParams/bktParams1.json
+cp src/config/bktParams/bktParams1.json src/config/bktParams/bktParams2.json
 
-mv src/config/bktParams.js src/config/bktParams/bktParams1.js
-
-cp src/config/bktParams/bktParams1.js src/config/bktParams/bktParams2.js
-
-echo "Generating flattened problem pool."
+echo "Preprocessing the problem pool..."
 
 cd src/tools || exit
-node preprocessProblemPool.js >>"$OUT_FILE" 2>&1
+node preprocessProblemPool.js >> "${PREPROCESS_OUT_FILE}" 2>&1
 
-echo "Make sure to increment version in OATutor/src/config/config.js!"
+echo "All done. Make sure to increment version in src/config/config.js!"
 

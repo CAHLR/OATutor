@@ -56,7 +56,11 @@
             "s, the standard deviation",
             "$$s^2$$, the standard deviation",
             "$$s^2$$, the variance",
+<<<<<<< HEAD
             "$$x$$, the mean variance"
+=======
+            "x, the mean variance"
+>>>>>>> origin/main
         ]
     },
     {
@@ -85,7 +89,11 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
+<<<<<<< HEAD
             "$$left-tailed$$ test"
+=======
+            "left-tailed test"
+>>>>>>> origin/main
         ],
         "dependencies": [
             "aeb5ac711.6posta-h6"
@@ -94,9 +102,15 @@
         "text": "What is the test type that will be used?",
         "variabilization": {},
         "choices": [
+<<<<<<< HEAD
             "$$left-tailed$$ test",
             "$$right-tailed$$ test",
             "$$two-tailed$$ test",
+=======
+            "left-tailed test",
+            "right-tailed test",
+            "two-tailed test",
+>>>>>>> origin/main
             "none of the listed tests work"
         ]
     },
@@ -116,7 +130,11 @@
         "dependencies": [
             "aeb5ac711.6posta-h8"
         ],
+<<<<<<< HEAD
         "title": "The distribution for the test from 25 customers is $${X_{24}}^2$$, where $$n$$ is the number of customers sampled, and degrees of freedom $$n-1$$ is used.",
+=======
+        "title": "The distribution for the test from 25 customers is $${X_{24}}^2$$, where n is the number of customers sampled, and degrees of freedom n-1 is used.",
+>>>>>>> origin/main
         "text": "",
         "variabilization": {}
     },
@@ -151,7 +169,11 @@
         "dependencies": [
             "aeb5ac711.6posta-h11"
         ],
+<<<<<<< HEAD
         "title": "From $$n=25$$, $$s=3.5$$, and population standard deviation $$q=7.2$$, the test statistic found is 5.67, so we can now find $$p-value$$ $$P\\left(X^2<5.67\\right)$$.",
+=======
+        "title": "From $$n=25$$, $$s=3.5$$, and population standard deviation $$q=7.2$$, the test statistic found is 5.67, so we can now find p-value $$P\\left(X^2<5.67\\right)$$.",
+>>>>>>> origin/main
         "text": "\\n##figure1.gif##",
         "variabilization": {}
     },
@@ -162,7 +184,11 @@
             "aeb5ac711.6posta-h12"
         ],
         "title": "P-value",
+<<<<<<< HEAD
         "text": "The $$p-value$$ is found to be 0.000042, now compare that to our 5% level of significance to make a conclusion.",
+=======
+        "text": "The p-value is found to be 0.000042, now compare that to our 5% level of significance to make a conclusion.",
+>>>>>>> origin/main
         "variabilization": {}
     },
     {
@@ -172,7 +198,11 @@
             "aeb5ac711.6posta-h13"
         ],
         "title": "Hypothesis Testing",
+<<<<<<< HEAD
         "text": "Since our significance level 0.05 is less than our $$p-value$$ 0.000042, we reject that the poulation variance is equal to $${7.2}^2$$. We can interpret this as in that we do not think the variation in waiting times is 7.2 minutes and rather think that the variation in waiting times is less.",
+=======
+        "text": "Since our significance level 0.05 is less than our p-value 0.000042, we reject that the poulation variance is equal to $${7.2}^2$$. We can interpret this as in that we do not think the variation in waiting times is 7.2 minutes and rather think that the variation in waiting times is less.",
+>>>>>>> origin/main
         "variabilization": {}
     }
 ]

@@ -7,9 +7,10 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
-import { lessonPlans, coursePlans, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '../config/config.js';
+import { _coursePlansNoEditor, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '../config/config.js';
 import Spacer from "../Components/_General/Spacer";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
+import { Typography } from "@material-ui/core";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -20,8 +21,7 @@ class LessonSelection extends React.Component {
         this.user = context.user || {}
         this.isPrivileged = !!this.user.privileged
 
-        this.lessonPlans = lessonPlans;
-        this.coursePlans = coursePlans;
+        this.coursePlans = _coursePlansNoEditor;
         this.state = {
             preparedRemoveProgress: false,
             removedProgress: false
@@ -40,6 +40,12 @@ class LessonSelection extends React.Component {
     render() {
         const { classes, courseNum } = this.props;
         const selectionMode = courseNum == null ? "course" : "lesson"
+
+        if (selectionMode === "lesson" && courseNum >= this.coursePlans.length) {
+            return <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
+                <Typography variant={'h3'}>Course <code>{courseNum}</code> is not valid!</Typography>
+            </Box>
+        }
 
         return (
             <>
@@ -67,36 +73,30 @@ class LessonSelection extends React.Component {
                             <Grid container spacing={3}>
                                 {selectionMode === "course"
                                     ? this.coursePlans
-                                        .map((course, i) => {
-                                            const { courseName } = course
-                                            if (courseName.toString().startsWith("!!")) {
-                                                return <Fragment key={ courseName }/>
-                                            }
-                                            return (
-                                                <Grid item xs={12} sm={6} md={4} key={courseName}>
-                                                    <center>
-                                                        <Paper className={classes.paper}>
-                                                            <h2 style={{
-                                                                marginTop: "5px",
-                                                                marginBottom: "10px"
-                                                            }}>{course.courseName}</h2>
-                                                            <IconButton aria-label={`View Course ${i}`}
-                                                                aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
-                                                                role={"link"}
-                                                                onClick={() => {
-                                                                    this.props.history.push(`/courses/${i}`)
-                                                                    this.props.selectCourse(course)
-                                                                }}>
-                                                                <img
-                                                                    src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
-                                                                    width="64px"
-                                                                    alt="folderIcon"/>
-                                                            </IconButton>
-                                                        </Paper>
-                                                    </center>
-                                                </Grid>
-                                            )
-                                        })
+                                        .map((course, i) =>
+                                            <Grid item xs={12} sm={6} md={4} key={course.courseName}>
+                                                <center>
+                                                    <Paper className={classes.paper}>
+                                                        <h2 style={{
+                                                            marginTop: "5px",
+                                                            marginBottom: "10px"
+                                                        }}>{course.courseName}</h2>
+                                                        <IconButton aria-label={`View Course ${i}`}
+                                                            aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
+                                                            role={"link"}
+                                                            onClick={() => {
+                                                                this.props.history.push(`/courses/${i}`)
+                                                                this.props.selectCourse(course)
+                                                            }}>
+                                                            <img
+                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
+                                                                width="64px"
+                                                                alt="folderIcon"/>
+                                                        </IconButton>
+                                                    </Paper>
+                                                </center>
+                                            </Grid>
+                                        )
                                     : this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>

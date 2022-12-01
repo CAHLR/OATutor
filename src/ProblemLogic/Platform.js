@@ -89,9 +89,9 @@ class Platform extends React.Component {
 
     async selectLesson(lesson, updateServer = true, context) {
         if (!this._isMounted) {
+            console.debug("component not mounted, returning early (1)")
             return
         }
-        console.debug('isPrivileged', this.isPrivileged)
         if (this.isPrivileged && updateServer) {
             // from canvas or other LTI Consumers
             let err, response;
@@ -160,6 +160,7 @@ class Platform extends React.Component {
         this.lesson = lesson;
         await this.props.loadProgress();
         if (!this._isMounted) {
+            console.debug("component not mounted, returning early (2)")
             return
         }
         this.setState({
@@ -183,6 +184,8 @@ class Platform extends React.Component {
         this.props.saveProgress();
         const problems = this.problemIndex.problems.filter(({courseName}) => !courseName.toString().startsWith("!!"))
         let chosenProblem;
+
+        console.debug("Platform.js: sample of available problems", problems.slice(10,10))
 
         for (const problem of problems) {
             // Calculate the mastery for this problem
@@ -214,7 +217,9 @@ class Platform extends React.Component {
             }
         }
 
+        console.debug(`Platform.js: available problems ${problems.length}, completed problems ${this.completedProbs.size}`)
         chosenProblem = context.heuristic(problems, this.completedProbs);
+        console.debug("Platform.js: chosen problem", chosenProblem)
 
         const objectives = Object.keys(this.lesson.learningObjectives);
         console.debug('objectives', objectives)
