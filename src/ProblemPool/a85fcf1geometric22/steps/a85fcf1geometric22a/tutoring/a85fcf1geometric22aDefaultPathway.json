@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Formula for an Infinite Geometric Series",
-        "text": "We can represent this as an $$infinite$$ geometric series. Every time money goes into the economy, 80% of it is spent and is then in the economy to be spent. Therefore, we have an $$infinite$$ geometric series 1000+1000(0.8)+1000(0.8)**2+... For an $$infinite$$ geometric series whose first term is $$a_1$$ and common ratio r, if |r|<1, then the sum is $$S=\\frac{a_1}{1-r}$$. If |r|>1, then the $$infinite$$ geometric series does not have a sum and diverges.",
+        "text": "We can represent this as an $$infinite$$ geometric series. Every time money goes into the economy, 80% of it is spent and is then in the economy to be spent. Therefore, we have an $$infinite$$ geometric series 1000+1000(0.8)+1000(0.8)**2+... For an $$infinite$$ geometric series whose first term is $$a_1$$ and common ratio $$r$$, if |r|<1, then the sum is $$S=\\frac{a_1}{1-r}$$. If |r|>1, then the $$infinite$$ geometric series does not have a sum and diverges.",
         "variabilization": {}
     },
     {
@@ -33,8 +33,8 @@
         "dependencies": [
             "a85fcf1geometric22a-h2"
         ],
-        "title": "Determine r",
-        "text": "What is r?",
+        "title": "Determine $$r$$",
+        "text": "What is $$r$$?",
         "variabilization": {}
     },
     {
@@ -68,7 +68,7 @@
             "a85fcf1geometric22a-h4"
         ],
         "title": "Using the Formula",
-        "text": "Substitute $$a_1$$ and r into the summation formula. What is the sum? This will be the overall total effect of the rebate on the economy.",
+        "text": "Substitute $$a_1$$ and $$r$$ into the summation formula. What is the sum? This will be the overall total effect of the rebate on the economy.",
         "variabilization": {},
         "subHints": [
             {

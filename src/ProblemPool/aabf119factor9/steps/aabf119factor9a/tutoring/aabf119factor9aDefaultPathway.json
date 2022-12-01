@@ -1,7 +1,12 @@
 [
     {
         "id": "aabf119factor9a-h1",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
         "dependencies": [],
         "title": "Square Root",
         "text": "What is the square root of $$9x^2$$?",
@@ -9,7 +14,12 @@
     },
     {
         "id": "aabf119factor9a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
         "dependencies": [
             "aabf119factor9a-h1"
         ],
@@ -34,7 +44,7 @@
             "aabf119factor9a-h3"
         ],
         "title": "Variable Values",
-        "text": "The value of a is 3x and the value of b is 5",
+        "text": "The value of a is $$3x$$ and the value of $$b$$ is 5",
         "variabilization": {}
     }
 ]

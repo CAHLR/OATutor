@@ -1,7 +1,12 @@
 [
     {
         "id": "aabf119factor10a-h1",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
         "dependencies": [],
         "title": "Cube Root",
         "text": "What is the cube root of $$x^3$$?",
@@ -9,7 +14,12 @@
     },
     {
         "id": "aabf119factor10a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
         "dependencies": [
             "aabf119factor10a-h1"
         ],
@@ -33,8 +43,8 @@
         "dependencies": [
             "aabf119factor10a-h3"
         ],
-        "title": "variable values",
-        "text": "The value of a in the equation is x and the value of b is 8",
+        "title": "Variable Values",
+        "text": "The value of a in the equation is $$x$$ and the value of $$b$$ is 8",
         "variabilization": {}
     }
 ]

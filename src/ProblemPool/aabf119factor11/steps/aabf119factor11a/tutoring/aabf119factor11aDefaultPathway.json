@@ -1,7 +1,12 @@
 [
     {
         "id": "aabf119factor11a-h1",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
         "dependencies": [],
         "title": "Cube Root",
         "text": "What is the cube root of $$8x^3$$?",
@@ -9,7 +14,12 @@
     },
     {
         "id": "aabf119factor11a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
         "dependencies": [
             "aabf119factor11a-h1"
         ],
@@ -33,8 +43,8 @@
         "dependencies": [
             "aabf119factor11a-h3"
         ],
-        "title": "variable values",
-        "text": "The value of a is 2x and the value of b is 5",
+        "title": "Variable Values",
+        "text": "The value of a is $$2x$$ and the value of $$b$$ is 5",
         "variabilization": {}
     }
 ]
