@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ac38dceFraction8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Calculate the numerator and denominator first",
+        "variabilization": {}
+    },
+    {
+        "id": "ac38dceFraction8a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Organizing",
+        "text": "The fraction becomes $$\\frac{\\frac{1}{9}}{10}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac38dceFraction8a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Convert the division to multiplying the reciprocal of the second term: $$\\frac{1}{9} \\frac{1}{10}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac38dceFraction8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{90}$$"
+        ],
+        "dependencies": [
+            "ac38dceFraction8a-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is the result of $$\\frac{1}{9} \\frac{1}{10}$$?",
+        "variabilization": {}
+    }
+]

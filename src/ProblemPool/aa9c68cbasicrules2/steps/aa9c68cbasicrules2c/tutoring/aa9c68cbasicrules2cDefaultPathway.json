@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aa9c68cbasicrules2c-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules2b-h4"
+        ],
+        "title": "Definition of Independence",
+        "text": "If A and B are independent, then $$P(A|B)=P(A)$$ and P(A AND $$B)=P(A)P(B)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2c-h5"
+        ],
+        "title": "Application of Independence",
+        "text": "Are A and B independent events?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aa9c68cbasicrules2c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.585"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2c-h6"
+        ],
+        "title": "Application of Independence",
+        "text": "What is P(B AND A), solved for above?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.423"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2c-h7"
+        ],
+        "title": "Application of Independence",
+        "text": "What is $$P\\left(A\\right) P\\left(B\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2c-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2c-h8"
+        ],
+        "title": "Application of Independence",
+        "text": "Is P(A AND B) equal to $$P\\left(A\\right) P\\left(B\\right)$$? If yes, then A and B are independent; if no, then A and B are not independent.",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
