@@ -21,6 +21,7 @@ class TableInput extends React.Component {
         this.numRows = props.numRows;
         this.numCols = props.numCols;
         this.headers = props.headers;
+        this.renderTabular = props.renderTabular;
     }
 
 
@@ -83,6 +84,7 @@ class TableInput extends React.Component {
                         
                     }}
                     >
+                    {console.log(gridState[0])}
                     {
                         gridState[0].map((row, idx) => {
                                 return (

@@ -5,6 +5,8 @@ import { variabilize, chooseVariables } from './variabilize.js';
 import Spacer from "../Components/_General/Spacer";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
 import RenderMedia from "../Components/_General/RenderMedia";
+import { Box,TextField } from "@material-ui/core";
+import { parseTableTex, parseTableHeaders } from '../util/parseTableTex.js';
 
 function renderText(text, problemID, variabilization) {
     if (typeof text !== 'string') {
@@ -18,9 +20,80 @@ function renderText(text, problemID, variabilization) {
     if (variabilization) {
         result = variabilize(text, variabilization);
     }
-
     const lines = result.split("\\n");
     return lines.map((line, idx) => {
+        if (text.includes('tabular')) {
+            const headers = parseTableHeaders(text)
+            const answers = parseTableTex(text)[0]
+            const parsedResult = headers.concat(answers)
+            const numCols = headers[0].length
+            // const numRows = parsedResult.length
+            // const EmptyGrid = new Array(numRows - 1).fill(0).map(_ => new Array(numCols).fill(""))
+            return <div>
+             <Box
+                display={'grid'}
+                gridTemplateColumns={`repeat(${numCols}, 0fr)`}
+                gridColumnGap={1}
+                gridGap={1}
+                overflow={'auto'}
+                pt={0}
+                pb={0}
+                justifyContent={'center'}
+                sx={{'& .MuiTextField-root': {m: 1, width: '25ch',
+                height:'40px', background: '#ececec', borderTop: "1px solid #c4c4c4",
+                borderBottom: "1px solid #c4c4c4",
+                outline: "1px solid #c4c4c4"}        
+                }}>
+                        {
+                            parsedResult[0].map((row, idx) => {
+                                    return (
+                                    <TextField
+                                        disabled
+                                        id="filled-disabled"
+                                        defaultValue={headers[0][idx]}
+                                        InputProps={{ disableUnderline: true, 
+                                            style: { color: "#808080"}
+                                            }}
+                                        inputProps={{min: 0, style: { textAlign: 'center' }}}     
+                                    />
+                                    )
+                                })
+                        }
+                </Box>
+                <Box display={'grid'}
+                gridTemplateColumns={`repeat(${numCols}, 0fr)`}
+                gridColumnGap={1}
+                gridGap={1}
+                overflow={'auto'}
+                pt={0}
+                pb={1}
+                justifyContent={'center'}
+                sx={{'& .MuiTextField-root': {m: 1, width: '25ch',
+                height:'40px',
+                outline: "1px solid #c4c4c4"}        
+                }}
+                >
+                        {
+                            parsedResult.slice(1).map((row, idx) =>
+                            row.map((val, jdx) => {
+                                    return (
+                                        <TextField
+                                        disabled
+                                        id="outlined-disabled"
+                                        defaultValue={val}
+                                        InputProps={{ disableUnderline: true, 
+                                            style: { color: "#808080"}
+                                            }}
+                                        inputProps={{min: 0, style: { textAlign: 'center' }}}     
+                                    />
+                                        
+                                    )
+                                })
+                            )
+                        }
+                </Box>
+                </div>
+        }
         /**
          * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
          * @type {(string | JSX.Element)[]}
@@ -56,6 +129,7 @@ function renderText(text, problemID, variabilization) {
         }
         return lineParts;
     })
+    
 }
 
 /**

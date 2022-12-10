@@ -1,4 +1,4 @@
-export function parseTableTex(solTex) {
+function parseTableTex(solTex) {
     const solutionTable = []
 
     ;(Array.isArray(solTex) ? solTex : [solTex]).forEach(sol => {
@@ -13,3 +13,21 @@ export function parseTableTex(solTex) {
     })
     return Array(solutionTable[0].slice(1));
 }
+
+function parseTableHeaders(solTex) {
+    const solutionTable = []
+
+    ;(Array.isArray(solTex) ? solTex : [solTex]).forEach(sol => {
+        const _start = sol.indexOf("tabular} ") + "tabular} ".length
+        const _end = sol.indexOf("\\end{")
+        let _solutionTable = sol
+            .substring(_start, _end)
+            .trim()
+            .split("\\\\")
+            .map(row => row.split("&").map(val => val.trim()))
+        solutionTable.push(_solutionTable)
+    })
+    return Array(solutionTable[0][0]);
+}
+
+export { parseTableTex, parseTableHeaders }
