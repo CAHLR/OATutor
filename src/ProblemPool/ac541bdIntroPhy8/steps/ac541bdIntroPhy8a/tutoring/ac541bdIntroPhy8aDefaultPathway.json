@@ -1,0 +1,40 @@
+[
+    {
+        "id": "ac541bdIntroPhy8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "We need both the lower limit and upper limit to get the total range",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "85.5"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy8a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the lower limit uncertainty? (5% lesser than 90)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "94.5"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy8a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the upper limit uncertainty? (5% more than 90)",
+        "variabilization": {}
+    }
+]

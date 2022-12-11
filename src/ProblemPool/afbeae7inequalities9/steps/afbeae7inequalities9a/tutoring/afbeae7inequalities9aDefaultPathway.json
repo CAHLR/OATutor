@@ -1,0 +1,58 @@
+[
+    {
+        "id": "afbeae7inequalities9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test",
+        "text": "We need to test the inequality to determine the signage. Plug the point (0,0) into the equation twice, once with the equation being $$x+y>3$$, and once with $$x+y<3$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "afbeae7inequalities9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+y>3$$"
+        ],
+        "dependencies": [
+            "afbeae7inequalities9a-h1"
+        ],
+        "title": "Find the correct sign",
+        "text": "In this case, when substituting (0,0) into the equation, does $$x+y>3$$ result in a true statement, or does $$x+y<3$$.",
+        "variabilization": {},
+        "choices": [
+            "$$x+y<3Ix+y>3$$"
+        ],
+        "subHints": [
+            {
+                "id": "afbeae7inequalities9a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Answer",
+                "text": "The answer is $$x+y>3$$",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "afbeae7inequalities9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afbeae7inequalities9a-h2"
+        ],
+        "title": "Determine line type",
+        "text": "If the line is solid, the sign will include the values of the line. In other words, the sign will be greater than or equal to, or less than or equal to. If the line is dotted, the sign will simply be > or <.",
+        "variabilization": {}
+    },
+    {
+        "id": "afbeae7inequalities9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afbeae7inequalities9a-h3"
+        ],
+        "title": "Answer",
+        "text": "Therefore, the equation for the inequality is $$x+y \\geq 3$$",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,100 @@
+[
+    {
+        "id": "acff542grap19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graph First Inequality",
+        "text": "Graph $$3x-y \\leq 6$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h1"
+        ],
+        "title": "Change to Slope-Intercept Form",
+        "text": "$$3x-y \\leq 6$$ $$-y \\leq -3x+6$$ $$y \\geq 3x-6$$",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h2"
+        ],
+        "title": "Graph the Boundary Line",
+        "text": "It is a solid line because the inequality sign is $$ \\geq $$.",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h3"
+        ],
+        "title": "Shade in the Side of the Boundary Line",
+        "text": "A test point should be a point not on the line. Choose (0,0) as a test point to see if it is a solution. $$y \\geq 3x-6$$ $$0 \\geq 3\\times0-6$$ $$0 \\geq -6$$",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h4"
+        ],
+        "title": "Shade in the Side of the Boundary Line",
+        "text": "(0,0) is a solution to $$y \\geq 3x-6$$. Since (0,0) is on the left side of the line, we shade the left side of the boundary line in red.\\n##figure4.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h5"
+        ],
+        "title": "Graph Second Inequality",
+        "text": "Graph $$y \\geq \\frac{-1}{2} x$$ on the same grid.",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h7",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h6"
+        ],
+        "title": "Graph the Boundary Line",
+        "text": "It is a solid line because the inequality sign is $$ \\geq $$.",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h8",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h7"
+        ],
+        "title": "Shade in the Side of the Boundary Line",
+        "text": "A test point should be a point not on the line. Choose (1,0) as a test point to see if it is a solution. $$y \\geq \\frac{-1}{2} x$$ $$0 \\geq 1\\frac{-1}{2}$$ $$0 \\geq \\frac{-1}{2}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h9",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h8"
+        ],
+        "title": "Shade in the Side of the Boundary Line",
+        "text": "(1,0) is a solution to $$y \\geq \\frac{-1}{2} x$$. Since (1,0) is on the right side of the line, so we shade in the rigjt side of the line $$y=\\frac{-1}{2} x$$ in green.\\n##figure8.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542grap19a-h10",
+        "type": "hint",
+        "dependencies": [
+            "acff542grap19a-h9"
+        ],
+        "title": "Overlap Shading",
+        "text": "The solution is all points in the darker shaded region.",
+        "variabilization": {}
+    }
+]

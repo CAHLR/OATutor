@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ac3d94dProperties24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "There is nothing to do in the parentheses, so multiply the two fractions first\u2014notice, they are reciprocals.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1\\left(6x+12\\right)$$"
+        ],
+        "dependencies": [
+            "ac3d94dProperties24a-h1"
+        ],
+        "title": "Multiply",
+        "text": "What do we get after multiplying the two reciprocals?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties24a-h2"
+        ],
+        "title": "Multiplicative Identity",
+        "text": "For any real number a: 1 is the multiplicative identity. $$1a=a$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac3d94dProperties24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6x+12$$"
+        ],
+        "dependencies": [
+            "ac3d94dProperties24a-h3"
+        ],
+        "title": "Multiplicative Identity",
+        "text": "What will the expression be simplified to after we recognize the multiplicative identity?",
+        "variabilization": {}
+    }
+]

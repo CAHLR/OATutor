@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a59a759hypergeometric11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining All Possible Values of X",
+        "text": "We want to know all the total possible values of X, not just the values we want. Also, note that we have 9 students that will be sampled and 16 business majors and 7 non-business majors.",
+        "variabilization": {}
+    },
+    {
+        "id": "a59a759hypergeometric11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric11a-h1"
+        ],
+        "title": "Determining Possibilities",
+        "text": "Is it possible to have 0 business majors?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a59a759hypergeometric11a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Having all 7 Non-Business Majors",
+                "text": "If we have all 7 non-business majors be part of the sample, we still need $$9-7=2$$ students to be part of the group. Therefore, what is the minimum number of business majors that must be part of the group?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a59a759hypergeometric11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$X=2$$, 3, 4, 5, 6, 7, 8, 9"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric11a-h2"
+        ],
+        "title": "Determining All Possible Values of X",
+        "text": "Understanding that the values that X takes on includes the entire set of possible number of business majors in the sample of 9, what values does X take on? In other words, what are the possible number of business majors in the sample?",
+        "variabilization": {},
+        "choices": [
+            "$$X=2$$, 3, 4, 5, 6, 7, 8, 9",
+            "$$X=0$$, 1, 2, 3, ..., 9",
+            "$$X=0$$, 1, 2, 3, ..., 16",
+            "$$X=1$$, 2, 3, ..., 16"
+        ]
+    }
+]

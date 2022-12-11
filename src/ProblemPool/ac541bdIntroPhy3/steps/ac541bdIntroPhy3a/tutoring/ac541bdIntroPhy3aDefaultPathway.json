@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ac541bdIntroPhy3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recollect the unit-unit conversion from m to feet.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3.281"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy3a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many feet in a meter? (rounded to 3 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "377"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy3a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "Using the above, 115 m is how many feet? (rounded to 1 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "279"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy3a-h3"
+        ],
+        "title": "Combining",
+        "text": "Using the above, 85 m is how many feet? (rounded to 1 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac541bdIntroPhy3a-h4"
+        ],
+        "title": "meter -> ft is 3.281 times So 115 m $$=$$? and 85 m $$=$$?",
+        "text": "",
+        "variabilization": {}
+    }
+]

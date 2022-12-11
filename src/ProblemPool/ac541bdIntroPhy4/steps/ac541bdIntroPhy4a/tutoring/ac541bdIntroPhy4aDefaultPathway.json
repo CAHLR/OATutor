@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ac541bdIntroPhy4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recollect the unit-unit conversion from km to feet.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3281"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy4a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many feet in a km? (rounded to nearest whole number)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.0003047"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy4a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "How many km in a feet? (rounded to 7 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8.84"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy4a-h3"
+        ],
+        "title": "Combining",
+        "text": "Using the above, 29,028 feet is how many km? (rounded to 2 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac541bdIntroPhy4a-h4"
+        ],
+        "title": "km -> ft is 0.0003047 times So 29028 ft $$=$$?",
+        "text": "",
+        "variabilization": {}
+    }
+]
