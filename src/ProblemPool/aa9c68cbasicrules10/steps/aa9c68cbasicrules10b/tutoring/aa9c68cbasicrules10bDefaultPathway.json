@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aa9c68cbasicrules10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules10a-h2"
+        ],
+        "title": "The Multiplication Rule",
+        "text": "If B and P are two events defined on a sample space, then P(B AND $$P)=P\\left(B\\right) P\\left(P|B\\right)$$. We want to find the probability that B and P both occur: this is the formula to use.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.143"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules10b-h3"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(B)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules10b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.98"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules10b-h4"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is $$P(P|B)=P(not$$ P|B), which we found above?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules10b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.14014"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules10b-h5"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(B AND $$P)=P\\left(B\\right) P\\left(P|B\\right)$$?",
+        "variabilization": {}
+    }
+]

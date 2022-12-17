@@ -1,0 +1,30 @@
+[
+    {
+        "id": "a7775cc7.3q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute P( x\u0304 >(20))",
+        "text": "normalcdf(20,1E99,22,22/sqrt(80)",
+        "variabilization": {}
+    },
+    {
+        "id": "a7775cc7.3q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7775cc7.3q7a-h1"
+        ],
+        "title": "Find the k Value",
+        "text": "1E99 $$=$$ $${10}^{99}$$ and -1E99 $$=$$ $$-\\left({10}^{99}\\right)$$. Press the EE key for E. Or just use $${10}^{99}$$ instead of 1E99.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7775cc7.3q7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7775cc7.3q7a-h2"
+        ],
+        "title": "Explanation",
+        "text": "The probability is 0.7919 that the mean excess time used is more than 20 minutes, for a sample of 80 customers who exceed their contracted time allowance.",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "id": "aa7e676std11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unknown or Known",
+        "text": "Examine the problem to determine whether or not the standard deviations of the populations were stated.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa7e676std11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aa7e676std11a-h1"
+        ],
+        "title": "Sample or Population",
+        "text": "Does the problem state the populations' standard deviations anywhere?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aa7e676std11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa7e676std11a-h2"
+        ],
+        "title": "Standard Deviations",
+        "text": "If the standard deviations were never stated, the standard deviations of the populations are unknown.",
+        "variabilization": {}
+    }
+]
