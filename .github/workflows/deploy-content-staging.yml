@@ -16,6 +16,7 @@ jobs:
         with:
           persist-credentials: false
           submodules: recursive
+          token: ${{ secrets.PLATFORM_CI_TOKEN }}
 
       - name: Save original git author and git email
         run: |
