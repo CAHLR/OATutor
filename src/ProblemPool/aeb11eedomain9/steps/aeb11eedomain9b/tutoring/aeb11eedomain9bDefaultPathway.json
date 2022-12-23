@@ -1,0 +1,20 @@
+[
+    {
+        "id": "aeb11eedomain9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Range Restrictions",
+        "text": "The function is never 0, so we exclude 0 from the range.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeb11eedomain9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain9b-h1"
+        ],
+        "title": "Answer",
+        "text": "The range is $$(-\\infty,0) \\cup (0,\\infty)$$.",
+        "variabilization": {}
+    }
+]

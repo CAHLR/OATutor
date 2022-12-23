@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a01e792probsolve7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate the problem into an equation",
+        "text": "The first step is to translate the question into a mathematical equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "n,n+2,n+4"
+        ],
+        "dependencies": [
+            "a01e792probsolve7a-h1"
+        ],
+        "title": "Writing consecutive numbers",
+        "text": "Which of the following represent consecutive numbers in terms of n?",
+        "variabilization": {},
+        "choices": [
+            "n,n+2,n+4",
+            "n,2n,3n",
+            "n,n+1,n+2"
+        ]
+    },
+    {
+        "id": "a01e792probsolve7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-24"
+        ],
+        "dependencies": [
+            "a01e792probsolve7a-h2"
+        ],
+        "title": "Total sum",
+        "text": "What should the numbers add up to?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve7a-h3"
+        ],
+        "title": "Solving the equation",
+        "text": "The next step is to solve for n",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-10"
+        ],
+        "dependencies": [
+            "a01e792probsolve7a-h4"
+        ],
+        "title": "Solving for n",
+        "text": "What is the value of n in the equation $$3n+6=102$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-8"
+        ],
+        "dependencies": [
+            "a01e792probsolve7a-h5"
+        ],
+        "title": "Finding the consecutive numbers",
+        "text": "What is $$n+2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve7a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-6"
+        ],
+        "dependencies": [
+            "a01e792probsolve7a-h6"
+        ],
+        "title": "Finding the consecutive numbers",
+        "text": "What is $$n+4$$?",
+        "variabilization": {}
+    }
+]

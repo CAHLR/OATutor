@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aadff92AppQuad24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "We know that the velocity is 0 and the desire height is 0. We can set up the equation as 0 =-16t**2+ 196.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-3.5,3.5)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad24a-h1"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "0 =-16t**2+ 196. Solve for t and round your answer to the nearest hundredth, if needed. If there is more than one answer, please enter it as (a,b) where $$a<b$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad24a-h2"
+        ],
+        "title": "Final Answer",
+        "text": "Since time can not be negative, 3.5 is the only valid answer for the problem. Therefore, at 3.5 second, the stone hit the ground.",
+        "variabilization": {}
+    }
+]

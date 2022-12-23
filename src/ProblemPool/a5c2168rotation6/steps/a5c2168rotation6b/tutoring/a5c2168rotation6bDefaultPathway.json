@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a5c2168rotation6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying Conics with Discriminant",
+        "text": "If the equation $$A x^2+B x y+C y^2+D x+E y+F=0$$ is transformed by rotating axes into the equation $$A' {x'}^2+B' x' y'+C' {y'}^2+D' x'+E' y'+F'=0$$, then B**2-4*A*C=B\u2032**2-4*A\u2032*C\u2032. The equation $$A x^2+B x y+C y^2+D x+E y+F=0$$ is an ellipse, a parabola, or a hyperbola, or a degenerate case of one of these. If the discriminant, $$B^2-4A C$$, is <0, the conic section is an ellipse $$=0$$, the conic section is a parabola >0, the conic section is a hyperbola",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5c2168rotation6b-h1"
+        ],
+        "title": "Finding the Discriminant",
+        "text": "Referring to the general form $$A x^2+B x y+C y^2+D x+E y+F=0$$, we can identify the type of conic by comparing finding the discriminant.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10"
+        ],
+        "dependencies": [
+            "a5c2168rotation6b-h2"
+        ],
+        "title": "Finding the Discriminant",
+        "text": "What is the coefficient of $$x^2$$, A, equals to?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-9"
+        ],
+        "dependencies": [
+            "a5c2168rotation6b-h3"
+        ],
+        "title": "Finding the Discriminant",
+        "text": "What is the coefficient of $$x y$$, B, equals to?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a5c2168rotation6b-h4"
+        ],
+        "title": "Finding the Discriminant",
+        "text": "What is the coefficient of $$y^2$$, C, equals to?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-79"
+        ],
+        "dependencies": [
+            "a5c2168rotation6b-h5"
+        ],
+        "title": "Finding the Discriminant",
+        "text": "What is the discriminant, $$B^2-4A C$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5c2168rotation6b-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5c2168rotation6b-h6"
+        ],
+        "title": "Discriminant",
+        "text": "Since the discriminant is less than zero, what does this tell us about the conics based on the previous hint.",
+        "variabilization": {}
+    }
+]

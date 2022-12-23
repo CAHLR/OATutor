@@ -1,0 +1,80 @@
+[
+    {
+        "id": "af69facexpolog23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Growth and Decay",
+        "text": "We are able to use the formula $$y=A_0 e^{k t}$$ where $$A_0$$ is equal to the value at time zero, e is Euler\u2019s constant, and k is a positive constant that determines the rate of growth or decay to model exponential growth or decay respectively. In the case of an exponential growth, the k value is positive while in the case of an exponential decay, the k value is negative.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog23a-h1"
+        ],
+        "title": "Rate of $$\\frac{Growth}{Decay}$$",
+        "text": "We want to find the rate of decay, k, so that we can obtain the expression. The model for exponential decay is $$y=A_0 e^{k t}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog23a-h2"
+        ],
+        "title": "Rate of $$\\frac{Growth}{Decay}$$",
+        "text": "Divide by $$A_0$$ on both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog23a-h3"
+        ],
+        "title": "Rate of $$\\frac{Growth}{Decay}$$",
+        "text": "Take the natural log of both sides.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln(\\frac{y}{A_0})}{t}$$"
+        ],
+        "dependencies": [
+            "af69facexpolog23a-h4"
+        ],
+        "title": "Rate of $$\\frac{Growth}{Decay}$$",
+        "text": "Divide by the time variable. We now obtain an expression for the rate of decay, k. What is k? Express in terms of y, $$A_0$$ and t.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog23a-h5"
+        ],
+        "title": "Half-life",
+        "text": "Observe that the expression, $$\\frac{y}{A_0}$$ within the natural log expression is the proportion of the object's mass left. At half-life, this would be 50% or 0.5.",
+        "variabilization": {}
+    },
+    {
+        "id": "af69facexpolog23a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-0.0666"
+        ],
+        "dependencies": [
+            "af69facexpolog23a-h6"
+        ],
+        "title": "Substitution",
+        "text": "We can substitute $$\\frac{y}{A_0}=0.5$$ and the half-life time, $$t=10.4$$ that is given. What is k? Round to four decimal places.",
+        "variabilization": {}
+    }
+]

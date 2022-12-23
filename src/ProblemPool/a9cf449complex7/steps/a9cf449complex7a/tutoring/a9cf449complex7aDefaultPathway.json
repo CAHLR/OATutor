@@ -1,0 +1,131 @@
+[
+    {
+        "id": "a9cf449complex7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the Expression Using the Distributive Property: Part 1",
+        "text": "Using the Distributive property, an expression with the form $$\\left(a+b\\right) \\left(c+d\\right)$$ can be rewritten as $$a\\left(c+d\\right)+b\\left(c+d\\right)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex7a-h1"
+        ],
+        "title": "Rewriting the Expression Using the Distributive Property: Part 2",
+        "text": "Again using the Distributive Property, $$a\\left(c+d\\right)+b\\left(c+d\\right)$$ can be simplified into $$a c+a d+b c+b d$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8-20i+6i-15i^2$$"
+        ],
+        "dependencies": [
+            "a9cf449complex7a-h2"
+        ],
+        "title": "Rewritten Version of the Expression",
+        "text": "What does the expression look like after it has been rewritten using the Distributive Property?",
+        "variabilization": {},
+        "choices": [
+            "$$8-20i+6i-15i^2$$",
+            "$$8-20i+6i-15i$$",
+            "$$2+15i^2$$",
+            "$$5-20i+3i-15i^2$$"
+        ]
+    },
+    {
+        "id": "a9cf449complex7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex7a-h3"
+        ],
+        "title": "Value of $$i^2$$",
+        "text": "$$i^2$$ is the square of the square root of -1, so $$i^2=-1$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "a9cf449complex7a-h3"
+        ],
+        "title": "Value of $$-15i^2$$",
+        "text": "What is the value of $$-15i^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "23"
+        ],
+        "dependencies": [
+            "a9cf449complex7a-h3",
+            "a9cf449complex7a-h5"
+        ],
+        "title": "Sum of Real Numbers",
+        "text": "What is the sum of the real numbers of the expression?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9cf449complex7a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Real Numbers in the Expression",
+                "text": "8 and 15 are real numbers.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9cf449complex7a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-14i"
+        ],
+        "dependencies": [
+            "a9cf449complex7a-h3"
+        ],
+        "title": "Sum of Imaginary Numbers",
+        "text": "What is the sum of the imaginary numbers of the expression?",
+        "variabilization": {},
+        "choices": [
+            "-14i",
+            "26i",
+            "14i",
+            "-26i"
+        ],
+        "subHints": [
+            {
+                "id": "a9cf449complex7a-h7-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Imaginary Numbers in the Expression",
+                "text": "-20i and 6i are imaginary numbers.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9cf449complex7a-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Final Step",
+        "text": "The final step is to add the sums of the real and imaginary numbers together for the final answer.",
+        "variabilization": {}
+    }
+]

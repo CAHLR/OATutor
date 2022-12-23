@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a3d6ae2sys5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=-5$$ and $$y=7$$ into both equations.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$-3x+y=8$$ $$-3\\times-5+7=8$$ $$22=8$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys5b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys5b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, (-5,7) does not satisfies the first equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys5b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h4"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "(-5,7) does not make both equations true. (-5,7) is not a solution.",
+        "variabilization": {}
+    }
+]

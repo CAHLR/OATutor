@@ -1,0 +1,35 @@
+[
+    {
+        "id": "af36e21FunNota18c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating functions",
+        "text": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "variabilization": {}
+    },
+    {
+        "id": "af36e21FunNota18c-h2",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota18c-h1"
+        ],
+        "title": "Replacement",
+        "text": "Replace the variable x with -a, and we get $$f(-a)=\\frac{6\\left(-a\\right)-1}{5\\left(-a\\right)+2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af36e21FunNota18c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\left(-6a-1\\right)}{\\left(-5a+2\\right)}$$"
+        ],
+        "dependencies": [
+            "af36e21FunNota18c-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expression $$\\frac{6\\left(-a\\right)-1}{5\\left(-a\\right)+2}$$. What do you get?",
+        "variabilization": {}
+    }
+]

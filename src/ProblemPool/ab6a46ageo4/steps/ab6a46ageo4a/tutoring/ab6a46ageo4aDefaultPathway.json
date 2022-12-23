@@ -1,0 +1,76 @@
+[
+    {
+        "id": "ab6a46ageo4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explicit Formula for a Geometric Sequence",
+        "text": "Plug in the given variables into the explicit formula of a geometric sequence: $$a_n=a_1 r^{n-1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo4a-h1"
+        ],
+        "title": "Initializing $$a_1$$",
+        "text": "Since the first term is 16, $$a_1=16$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo4a-h1"
+        ],
+        "title": "Initializing r",
+        "text": "Since the common ratio is $$\\frac{-1}{3}$$, $$r=\\frac{-1}{3}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo4a-h2",
+            "ab6a46ageo4a-h3"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence",
+        "text": "Plug in the given variables into formula to obtain $$a_n=16{\\left(-\\frac{1}{3}\\right)}^{n-1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo4a-h4"
+        ],
+        "title": "Find $$a_5$$",
+        "text": "Since we want to find the 4th term, $$n=4$$. Substitute 4 into $$a_n=16{\\left(-\\frac{1}{3}\\right)}^{n-1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-16}{27}$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo4a-h5"
+        ],
+        "title": "Find $$a_5$$",
+        "text": "What is $$a_4=16{\\left(-\\frac{1}{3}\\right)}^{4-1}$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab6a46ageo4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo4a-h6"
+        ],
+        "title": "Fifth Term",
+        "text": "The fourth term is $$\\frac{-16}{27}$$.",
+        "variabilization": {}
+    }
+]

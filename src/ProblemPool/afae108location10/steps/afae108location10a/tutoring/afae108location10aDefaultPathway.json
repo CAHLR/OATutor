@@ -1,0 +1,146 @@
+[
+    {
+        "id": "afae108location10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Finding the Percentile of a Value in a Data Set",
+        "text": "Remember the formula for finding the Percentile of a Value in a Data Set. We want to know three values once the list is ordered (which is already is from least to greatest): $$x=the$$ number of data values counting from the bottom of the data list up to but not including the data value for which you want to find the percentile; $$y=the$$ number of data values equal to the data vale for which you want to find the percentile; $$n=the$$ total number of data. Then, we can use the formula to calculate the percentile as $$100\\frac{x+0.5y}{n}$$. If the percentile is not an integer, round to the nearest integer.",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "afae108location10a-h1"
+        ],
+        "title": "Determining x (Number of Points Below Desired Value)",
+        "text": "What is x? In other words, how many data values are there counting from the bottom of the data list up to but not including the data value for which you want to find the percentile?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "afae108location10a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "3"
+                ],
+                "dependencies": [],
+                "title": "Determining x (Number of Points Below Desired Value)",
+                "text": "How many values in the data set are less than 58?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "afae108location10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "afae108location10a-h2"
+        ],
+        "title": "Determining y (Repetition of Desired Value)",
+        "text": "How many times does 58 show up in the data?",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "29"
+        ],
+        "dependencies": [
+            "afae108location10a-h3"
+        ],
+        "title": "Determining n (Total Number of Data)",
+        "text": "What is n, the total number of data in the set?",
+        "variabilization": {}
+    },
+    {
+        "id": "afae108location10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "12.07"
+        ],
+        "dependencies": [
+            "afae108location10a-h4"
+        ],
+        "title": "Determining the Percentile",
+        "text": "Calculate the percentile using the Formula for Finding the Percentile of a Value in a Data Set. Round your answer to the nearest hundredth.",
+        "variabilization": {},
+        "choices": [
+            "3.5",
+            "0.1207",
+            "12.07",
+            "12"
+        ],
+        "subHints": [
+            {
+                "id": "afae108location10a-h5-s2",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "12.07"
+                ],
+                "dependencies": [],
+                "title": "Determining the Percentile",
+                "text": "What is $$100\\frac{3+0.5\\times1}{29}$$ rounded to the nearest hundredth?",
+                "variabilization": {},
+                "choices": [
+                    "3.5",
+                    "0.1207",
+                    "12.07",
+                    "12"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "afae108location10a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "afae108location10a-h5"
+        ],
+        "title": "Rounding the Percentile",
+        "text": "Is 12.07 a whole number?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afae108location10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12"
+        ],
+        "dependencies": [
+            "afae108location10a-h6"
+        ],
+        "title": "Rounding the Percentile",
+        "text": "What is 12.07 rounded to the nearest whole number? This is the final percentile.",
+        "variabilization": {}
+    }
+]

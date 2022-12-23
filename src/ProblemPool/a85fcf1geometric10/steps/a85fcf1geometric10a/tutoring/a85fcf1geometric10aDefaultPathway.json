@@ -1,0 +1,141 @@
+[
+    {
+        "id": "a85fcf1geometric10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for General Term",
+        "text": "To find the nth term, $$a_n$$, we use the formula with $$a_1$$ being the starting term and r being the common ratio that $$a_n=a_1 r^{n-1}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a85fcf1geometric10a-h1"
+        ],
+        "title": "Determine $$a_1$$",
+        "text": "What is $$a_1$$ in the formula above? Essentially, what is the starting term?",
+        "variabilization": {}
+    },
+    {
+        "id": "a85fcf1geometric10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a85fcf1geometric10a-h2"
+        ],
+        "title": "Determine r",
+        "text": "What is r? What is the common ratio?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a85fcf1geometric10a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between 3 and 6",
+                "text": "What is the common ratio between 3 and 6? Effectively, what is $$\\frac{6}{3}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a85fcf1geometric10a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between 6 and 12",
+                "text": "What is the common ratio between 6 and 12? Effectively, what is $$\\frac{12}{6}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a85fcf1geometric10a-h3-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between 12 and 24",
+                "text": "What is the common ratio between 12 and 24? Effectively, what is $$\\frac{24}{12}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a85fcf1geometric10a-h3-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between 24 and 48",
+                "text": "What is the common ratio between 24 and 48? Effectively, what is $$\\frac{48}{24}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a85fcf1geometric10a-h3-s5",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between 48 and 96",
+                "text": "What is the common ratio between 48 and 96? Effectively, what is $$\\frac{96}{48}$$?",
+                "variabilization": {}
+            },
+            {
+                "id": "a85fcf1geometric10a-h3-s6",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "2"
+                ],
+                "dependencies": [],
+                "title": "Determining Common Ratio",
+                "text": "What is the common ratio between consecutive terms? What is r?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a85fcf1geometric10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a_n=3\\times2^{n-1}$$"
+        ],
+        "dependencies": [
+            "a85fcf1geometric10a-h3"
+        ],
+        "title": "Writing the Formula",
+        "text": "What is the correct formula for the general term using the terms just determined?",
+        "variabilization": {},
+        "choices": [
+            "$$a_n=3\\times2^{n-1}$$",
+            "$$a_n=2\\times3^{n-1}$$",
+            "$$a_n=3\\times2^n$$",
+            "$$a_n=2\\times3^n$$"
+        ]
+    }
+]

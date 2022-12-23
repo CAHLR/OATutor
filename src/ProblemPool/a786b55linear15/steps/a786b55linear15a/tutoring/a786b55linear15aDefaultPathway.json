@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a786b55linear15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "The y-intercept is when $$x=0$$. Substitute this into the equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a786b55linear15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [
+            "a786b55linear15a-h1"
+        ],
+        "title": "Substitute",
+        "text": "$$y=25+\\operatorname{20}\\left(0\\right)$$. What is this equal to?",
+        "variabilization": {}
+    },
+    {
+        "id": "a786b55linear15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a786b55linear15a-h2"
+        ],
+        "title": "Meaning",
+        "text": "The $25 represents the one-time charge.",
+        "variabilization": {}
+    }
+]

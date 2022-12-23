@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a7b839fmixapp14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting up a System of Equations",
+        "text": "Set up a system of equations to represent the situation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7b839fmixapp14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b839fmixapp14b-h1"
+        ],
+        "title": "First Equation",
+        "text": "First, set up an equation to represent how the initial money is distributed. Let a be the amount of money she put into the account that earns 8% per year, and b, the amount of money she put into the account that earns 6% per year. The equation is $$a+b=2560$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7b839fmixapp14b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b839fmixapp14b-h2"
+        ],
+        "title": "Second Equation",
+        "text": "Next, write an equation to represent the interest she wants to earn. In this problem, it is $$0.08a+0.06b=0.0725(2560)$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7b839fmixapp14b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b839fmixapp14b-h3"
+        ],
+        "title": "Solving the System Using the Elimination Method",
+        "text": "Solve the system using elimination. Multiply one of the equations by a constant such that one of the variables in the second equation is eliminated when the first equation is added to it. Then you will have the value of the other variable. Solve for eliminated variable by plugging in the value of the known variable to one of the equations.",
+        "variabilization": {}
+    }
+]

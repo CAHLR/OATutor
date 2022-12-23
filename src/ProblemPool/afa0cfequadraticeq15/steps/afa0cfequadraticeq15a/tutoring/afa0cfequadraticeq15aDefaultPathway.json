@@ -1,0 +1,35 @@
+[
+    {
+        "id": "afa0cfequadraticeq15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Square Root Property",
+        "text": "Square root both sides of the equations. Remember the positive and negative case?",
+        "variabilization": {}
+    },
+    {
+        "id": "afa0cfequadraticeq15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "afa0cfequadraticeq15a-h1"
+        ],
+        "title": "Factoring",
+        "text": "What can $$\\sqrt{18}$$ be simplified to?",
+        "variabilization": {}
+    },
+    {
+        "id": "afa0cfequadraticeq15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afa0cfequadraticeq15a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Add 3 from each of the cases that resulted from the square root",
+        "variabilization": {}
+    }
+]

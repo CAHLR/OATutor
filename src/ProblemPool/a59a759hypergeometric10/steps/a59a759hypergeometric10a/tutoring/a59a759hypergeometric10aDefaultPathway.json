@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a59a759hypergeometric10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Structure of Hypergeometric Notation",
+        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, b, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are r, b, and n where r is the size of the group of interest (first group), b is the size of the second group, and n is the size of the chosen sample.",
+        "variabilization": {}
+    },
+    {
+        "id": "a59a759hypergeometric10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "16"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric10a-h1"
+        ],
+        "title": "Determining the Size of the Group of Interest",
+        "text": "What is the size of the group of interest? In other words, how many business majors are in the pool to decide the sample?",
+        "variabilization": {}
+    },
+    {
+        "id": "a59a759hypergeometric10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric10a-h2"
+        ],
+        "title": "Determining the Size of the Second Group",
+        "text": "What is the size of the second group? In other words, how many non-business majors are in the pool to determine the sample?",
+        "variabilization": {}
+    },
+    {
+        "id": "a59a759hypergeometric10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric10a-h3"
+        ],
+        "title": "Determining the Size of the Chosen Sample",
+        "text": "What is the size of the sample? In other words, how many statistics students will be sample?",
+        "variabilization": {}
+    },
+    {
+        "id": "a59a759hypergeometric10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "X ~ H(16, 7, 9)"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric10a-h4"
+        ],
+        "title": "Putting it All Together",
+        "text": "Knowing that the size of the group of interest is 16, the size of the second group is 7, and the size of the chosen sample is 9, plug this into the formula to determine the hypergeometric notation of this question.",
+        "variabilization": {},
+        "choices": [
+            "X ~ H(16, 7, 9)",
+            "X ~ H(7, 16, 9)",
+            "X ~ H(9, 16, 7)",
+            "X ~ H(6, 9, 16)"
+        ]
+    }
+]

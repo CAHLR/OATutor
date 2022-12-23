@@ -1,0 +1,55 @@
+[
+    {
+        "id": "ac541bdIntroPhy18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Find out the diameter of an atom and divide the length of cell membrane with that value",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2 * $${10}^{-10}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy18a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the length of an atom? (2 times the diameter of a hydrogen atom $$=$$ 2 * 2 times the radius of a hydrogen atom) Write your answer in scientific notation",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${10}^{-8}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy18a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the length of a cell membrane?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "50"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy18a-h3"
+        ],
+        "title": "Combining",
+        "text": "How many atoms thick is a cell membrane? (Divide length of cell membrane by length of each atom)",
+        "variabilization": {}
+    }
+]

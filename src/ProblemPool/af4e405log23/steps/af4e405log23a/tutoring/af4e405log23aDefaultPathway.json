@@ -1,0 +1,61 @@
+[
+    {
+        "id": "af4e405log23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the base and exponent",
+        "text": "To convert an exponential equation to logarithmic form, we need to identify the base of the exponential, a, and the exponent y since $$y=\\log_{a}\\left(x\\right)$$ is equivalent to $$x=a^y$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "af4e405log23a-h1"
+        ],
+        "title": "Identify the base",
+        "text": "What is the base of the exponent?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5"
+        ],
+        "dependencies": [
+            "af4e405log23a-h2"
+        ],
+        "title": "Identify the exponent",
+        "text": "What is the exponent?",
+        "variabilization": {}
+    },
+    {
+        "id": "af4e405log23a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5=\\log_{2}\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "af4e405log23a-h3"
+        ],
+        "title": "Determining Logarithmic Form",
+        "text": "Knowing the base and the exponent, what is the logarithmic form?",
+        "variabilization": {},
+        "choices": [
+            "$$5=\\log_{2}\\left(32\\right)$$",
+            "$$2=\\log_{5}\\left(32\\right)$$",
+            "$$32=\\log_{2}\\left(5\\right)$$",
+            "$$5=\\log_{32}\\left(2\\right)$$"
+        ]
+    }
+]

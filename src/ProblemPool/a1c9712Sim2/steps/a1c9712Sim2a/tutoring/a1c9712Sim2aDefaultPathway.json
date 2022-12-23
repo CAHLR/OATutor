@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a1c9712Sim2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting",
+        "text": "Rewrite the complex fraction as division.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{x^2-1} \\frac{x+1}{3}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim2a-h1"
+        ],
+        "title": "Rewriting",
+        "text": "Rewrite as the product of the first times the reciprocal of the second.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1c9712Sim2a-h2"
+        ],
+        "title": "Common Factors",
+        "text": "We can then remove common factors after we multiply.",
+        "variabilization": {}
+    },
+    {
+        "id": "a1c9712Sim2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3\\left(x-1\\right)}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim2a-h3"
+        ],
+        "title": "Simplify Expression",
+        "text": "When we simplify, what is our answer?",
+        "variabilization": {}
+    }
+]

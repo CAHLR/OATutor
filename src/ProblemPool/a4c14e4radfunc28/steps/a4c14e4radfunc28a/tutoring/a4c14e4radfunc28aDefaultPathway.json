@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a4c14e4radfunc28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Radical Index",
+        "text": "What is the index of the radical?",
+        "variabilization": {}
+    },
+    {
+        "id": "a4c14e4radfunc28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4c14e4radfunc28a-h1"
+        ],
+        "title": "Even radical index",
+        "text": "Since the radical index is 2, it is even, so, the radicand must be greater than or equal to 0.",
+        "variabilization": {}
+    },
+    {
+        "id": "a4c14e4radfunc28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4c14e4radfunc28a-h2"
+        ],
+        "title": "Solving the Radicand",
+        "text": "Solve $$x+1 \\geq 0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a4c14e4radfunc28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4c14e4radfunc28a-h3"
+        ],
+        "title": "Solve the Inequality",
+        "text": "Subtract 1 from both sides of the inequality which gives x is greater than and equal to -1. We can turn it into interval notation as $$[-1,\\infty)$$.",
+        "variabilization": {}
+    }
+]

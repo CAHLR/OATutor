@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aeba9faMultiplyPoly12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Consider $$x+5$$ as $$a+b$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba9faMultiplyPoly12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2$$"
+        ],
+        "dependencies": [
+            "aeba9faMultiplyPoly12a-h1"
+        ],
+        "title": "Multiplication",
+        "text": "What is the first term of this binomial square?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba9faMultiplyPoly12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5x"
+        ],
+        "dependencies": [
+            "aeba9faMultiplyPoly12a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is the first term of this binomial square?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeba9faMultiplyPoly12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [
+            "aeba9faMultiplyPoly12a-h3"
+        ],
+        "title": "Multiplication",
+        "text": "What is the first term of this binomial square?",
+        "variabilization": {}
+    }
+]

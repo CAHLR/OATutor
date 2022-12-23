@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ac4f2eaSystem18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Elimination",
+        "text": "To solve the system of equations using elimination, we need to first manipulate our equations so that we are able to cancel out one of the terms. Then we will add the two equations together term by term and use our output to find the value of x or y. We can then use our value to find the other missing one.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^2$$"
+        ],
+        "dependencies": [
+            "ac4f2eaSystem18a-h1"
+        ],
+        "title": "Opposite Terms",
+        "text": "What is one term that we can cancel out?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x-y^2=-1$$"
+        ],
+        "dependencies": [
+            "ac4f2eaSystem18a-h2"
+        ],
+        "title": "Manipulating Equations",
+        "text": "How can we change one of our equations to cancel out our term?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+x=0$$"
+        ],
+        "dependencies": [
+            "ac4f2eaSystem18a-h3"
+        ],
+        "title": "Term by Term Addition",
+        "text": "What will our equation look like once we add our equations together term by term?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac4f2eaSystem18a-h4"
+        ],
+        "title": "Solving Terms",
+        "text": "What will our value(s) of x be? $$x=-1, 0$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac4f2eaSystem18a-h5"
+        ],
+        "title": "Solving Terms",
+        "text": "What will our value(s) of y be when we plug in x values into an equation? $$y=0\\pm 1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac4f2eaSystem18a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-1,0),(0,-1),(0,1)"
+        ],
+        "dependencies": [
+            "ac4f2eaSystem18a-h6"
+        ],
+        "title": "Solution",
+        "text": "What are our x and y values equal to?",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "id": "acff542gra4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=6$$ and $$y=-4$$ into both inequalities.",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542gra4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra4a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$y>\\frac{2}{3} x-5$$ $$-4>6\\frac{2}{3}-5$$ $$-4>-1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "acff542gra4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acff542gra4a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "choices": [
+            "T",
+            "F"
+        ]
+    },
+    {
+        "id": "acff542gra4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra4a-h3"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "Since (6,-4) does not satisfy the first inequality, then it cannot make both inequalities true. (6,-4) is not a solution.",
+        "variabilization": {}
+    }
+]

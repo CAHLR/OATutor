@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a833c22linear3a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [],
+        "title": "Power",
+        "text": "What is the power of the y variable?",
+        "variabilization": {}
+    },
+    {
+        "id": "a833c22linear3a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a833c22linear3a-h1"
+        ],
+        "title": "Meaning",
+        "text": "Does this mean it can be written as a linear function?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aa822f8UniMotion20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting up the equation",
+        "text": "Set up the equation first by setting r as the speed of Kayla's biking",
+        "variabilization": {}
+    },
+    {
+        "id": "aa822f8UniMotion20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa822f8UniMotion20a-h1"
+        ],
+        "title": "Setting up the equation",
+        "text": "Next, understand how the two speeds relate to each other.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa822f8UniMotion20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{75}{r}=\\frac{75}{r+10}+2$$"
+        ],
+        "dependencies": [
+            "aa822f8UniMotion20a-h2"
+        ],
+        "title": "Setting up the equation",
+        "text": "What is the relationship between the two speeds?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa822f8UniMotion20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "aa822f8UniMotion20a-h3"
+        ],
+        "title": "Solving the equation",
+        "text": "Solve for r.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa822f8UniMotion20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25"
+        ],
+        "dependencies": [
+            "aa822f8UniMotion20a-h4"
+        ],
+        "title": "Solving for the undefined speed",
+        "text": "If Kayla bikes at a speed of 15mph, then what is her speed on the bus, looking at the context of the qeustion?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa822f8UniMotion20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa822f8UniMotion20a-h5"
+        ],
+        "title": "Double-Checking",
+        "text": "Double check that the answer makes sense in terms of the context of the question.",
+        "variabilization": {}
+    }
+]
