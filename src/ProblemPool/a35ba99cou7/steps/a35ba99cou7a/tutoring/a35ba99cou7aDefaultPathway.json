@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a35ba99cou7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Add the Number of Options",
+        "text": "We can add the number of shades of green options to the number of shades of blue options to the number of shades of yellow options to find the total number of options.",
+        "variabilization": {}
+    },
+    {
+        "id": "a35ba99cou7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou7a-h1"
+        ],
+        "title": "Number of Greens",
+        "text": "There are 5 shades of green.",
+        "variabilization": {}
+    },
+    {
+        "id": "a35ba99cou7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou7a-h2"
+        ],
+        "title": "Number of Blues",
+        "text": "There are 4 shades of blue.",
+        "variabilization": {}
+    },
+    {
+        "id": "a35ba99cou7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou7a-h3"
+        ],
+        "title": "Number of Yellows",
+        "text": "There are 7 shades of yellow.",
+        "variabilization": {}
+    },
+    {
+        "id": "a35ba99cou7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou7a-h4"
+        ],
+        "title": "Add the Number of Options",
+        "text": "# of shades of green options+# of shades of blue options+# of shades of yellow options $$5+4+7=16$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a35ba99cou7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou7a-h5"
+        ],
+        "title": "Total Ways",
+        "text": "There are 16 ways to pick a paint color.",
+        "variabilization": {}
+    }
+]

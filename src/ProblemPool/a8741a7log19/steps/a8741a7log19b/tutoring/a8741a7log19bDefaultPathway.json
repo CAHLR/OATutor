@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8741a7log19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$\\ln(e^{3x})=6$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8741a7log19b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^6=e^{3x}$$"
+        ],
+        "dependencies": [
+            "a8741a7log19b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\ln(e^{3x})=6$$? Remember that the base for ln functions is e.",
+        "variabilization": {},
+        "choices": [
+            "$$e^6=e^{3x}$$",
+            "$$3x^e=6^e$$",
+            "$$3x^e=e^6$$",
+            "$$e^{3x}=6^e$$"
+        ]
+    },
+    {
+        "id": "a8741a7log19b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a8741a7log19b-h2"
+        ],
+        "title": "Solve for x",
+        "text": "Since the bases are the same, we can solve $$e^6=e^{3x}$$ as $$6=3x$$. What is x?",
+        "variabilization": {}
+    }
+]

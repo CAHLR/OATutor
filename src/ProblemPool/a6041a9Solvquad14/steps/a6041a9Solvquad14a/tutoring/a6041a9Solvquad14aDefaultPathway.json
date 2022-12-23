@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a6041a9Solvquad14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Quadratic Term",
+        "text": "We add 8 on both sides to get $$x^2$$ by itself which gives $$2x^2=49$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad14a-h1"
+        ],
+        "title": "Find Leading Coefficient",
+        "text": "What's the coefficient of $$u^2$$ now?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad14a-h2"
+        ],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "Divide by the leading coefficient on both sides which gives $$x^2=\\frac{49}{2}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad14a-h3"
+        ],
+        "title": "Use Square root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then x $$=$$ $$\\sqrt{k}$$, or x $$=$$ $$-\\sqrt{k}$$, or x $$=\\sqrt{k}$$. $$x^2=\\frac{49}{2}$$, we can take square root both sides and get $$x=\\sqrt{\\frac{49}{2}}$$ or $$x=-\\sqrt{\\frac{49}{2}}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7\\sqrt{\\frac{1}{2}}$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad14a-h4"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$-\\sqrt{\\frac{49}{2}}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7\\sqrt{\\frac{1}{2}}$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad14a-h5"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$\\sqrt{\\frac{49}{2}}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad14a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$2x^2-8=41$$ has two solutions which are $$x=-7\\sqrt{\\frac{1}{2}}$$, and $$x=7\\sqrt{\\frac{1}{2}}$$.",
+        "variabilization": {}
+    }
+]

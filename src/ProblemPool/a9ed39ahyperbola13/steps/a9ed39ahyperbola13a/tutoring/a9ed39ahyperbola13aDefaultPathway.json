@@ -1,0 +1,119 @@
+[
+    {
+        "id": "a9ed39ahyperbola13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Form of Hyperbola",
+        "text": "The standard form for hyperbola is either $$\\frac{{\\left(x-h\\right)}^2}{a^2}-\\frac{{\\left(y-k\\right)}^2}{b^2}=1$$ or $$\\frac{{\\left(y-k\\right)}^2}{a^2}-\\frac{{\\left(x-h\\right)}^2}{b^2}=1$$ depending on the transverse axis.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola13a-h1"
+        ],
+        "title": "Completing the Square",
+        "text": "When there is an $$x^2$$ and x term, we can complete the square to obtain an expression that is easier to work with. For $$a x^2+b x$$, we can re-express this as a*(x**2+b/a*x)=a*(x**2+b/a*x+(b/(2*a))**2-(b/(2*a))**2)=a*(x**2+b/a*x+(b/(2*a))**2)-a*(b/(2*a))**2)=a*(x+b/(2*a))**2-a*(b/(2*a))**2)",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9{\\left(x-1\\right)}^2+9$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola13a-h2"
+        ],
+        "title": "Completing the Square for x",
+        "text": "In the equation, there is a $$-9x^2+18x$$. Note that $$a=-9$$ and $$b=18$$. What expression do we get after completing the square with the formula provided?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(y+2\\right)}^2-4$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola13a-h3"
+        ],
+        "title": "Completing the Square for y",
+        "text": "In the equation, there is a $$y^2+4y$$. Note that $$a=1$$ and $$b=4$$. What expression do we get after completing the square with the formula provided?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola13a-h4"
+        ],
+        "title": "Manipulating the Equation",
+        "text": "If we are not able to tell directly whether an equation is a hyperbola using properties of the equation, we can attempt to force out a similar form to check.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9{\\left(x-1\\right)}^2+9+{\\left(y+2\\right)}^2-4-14$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola13a-h5"
+        ],
+        "title": "Manipulating the Equation",
+        "text": "Simplifying the equation with the two expression we found by completing the square, what is the expression on the LHS?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola13a-h6"
+        ],
+        "title": "Manipulating the Equation",
+        "text": "Next, we will move all the constant terms (9, -4, -14) to the RHS. What is value on the RHS?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola13a-h7"
+        ],
+        "title": "Manipulating the Equation",
+        "text": "We would want to make the RHS 1. We can do so by dividing the equation by 9 on both side.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9ed39ahyperbola13a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{{\\left(y+2\\right)}^2}{3^2}-\\frac{{\\left(x-1\\right)}^2}{1^2}=1$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola13a-h8"
+        ],
+        "title": "Manipulating the Equation",
+        "text": "We observe that there is no coefficient on the numerator. This tells us we should remove the coefficient of $$x^2$$ and $$y^2$$. We can do so by dividing the denominator by the coefficient. We would thus divide the denominator 9 by 9 for the $$x^2$$ term and divide the denominator 9 by 1 for the $$y^2$$ term. What is the current expression?",
+        "variabilization": {},
+        "choices": [
+            "$$\\frac{{\\left(y+2\\right)}^2}{3^2}-\\frac{{\\left(x-1\\right)}^2}{1^2}=1$$",
+            "$$\\frac{{\\left(y-1\\right)}^2}{3^2}-\\frac{{\\left(x+2\\right)}^2}{1^2}=1$$"
+        ]
+    }
+]

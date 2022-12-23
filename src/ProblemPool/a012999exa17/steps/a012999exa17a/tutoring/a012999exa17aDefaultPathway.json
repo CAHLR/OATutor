@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a012999exa17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6b"
+        ],
+        "dependencies": [
+            "a012999exa17a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is 6 times b?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "48"
+        ],
+        "dependencies": [
+            "a012999exa17a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is 6 times 8?",
+        "variabilization": {}
+    },
+    {
+        "id": "a012999exa17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa17a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a161552divpoly6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating a Diagram",
+        "text": "There are a few ways to approach this problem. We need to divide the expression for the volume of the solid by the expressions for the length and width. Let us create a sketch.\\n##figure1.gif##",
+        "variabilization": {}
+    },
+    {
+        "id": "a161552divpoly6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161552divpoly6a-h1"
+        ],
+        "title": "Creating an Equation",
+        "text": "We can now write an equation by substituting the known values into the formula for the volume of a rectangular solid. $$V=l w h$$. $$3x^4-3x^3-33x^2+54x=3x \\left(x-2\\right) h$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a161552divpoly6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161552divpoly6a-h2"
+        ],
+        "title": "Solving for H",
+        "text": "To solve for h, we can first divide both sides by 3x. We now have $$(x-2)h=x^3-x^2-11x+18$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a161552divpoly6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a161552divpoly6a-h3"
+        ],
+        "title": "Synthetic Division",
+        "text": "We now solve for h by using synthetic division as shown.\\n##figure2.gif##",
+        "variabilization": {}
+    }
+]

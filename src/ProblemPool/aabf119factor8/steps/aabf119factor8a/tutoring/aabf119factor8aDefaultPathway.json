@@ -1,0 +1,94 @@
+[
+    {
+        "id": "aabf119factor8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square Trinomial Definition",
+        "text": "In a perfect square trinomial, the first and last terms are perfect squares and the middle term is twice the product of their roots.",
+        "variabilization": {}
+    },
+    {
+        "id": "aabf119factor8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "7x"
+        ],
+        "dependencies": [
+            "aabf119factor8a-h1"
+        ],
+        "title": "Square root of first term",
+        "text": "What is the square root of the first term, $$25x^2$$?",
+        "variabilization": {},
+        "choices": [
+            "7x",
+            "2x",
+            "7",
+            "5x"
+        ]
+    },
+    {
+        "id": "aabf119factor8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "aabf119factor8a-h2"
+        ],
+        "title": "Square root of second term",
+        "text": "What is the square root of the second term, 4?",
+        "variabilization": {}
+    },
+    {
+        "id": "aabf119factor8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aabf119factor8a-h3"
+        ],
+        "title": "Middle Term of the Trinomial",
+        "text": "Is the middle term of the expression, 20x, equal to 2 times the square root of the first term and the square root of the second term?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aabf119factor8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aabf119factor8a-h4"
+        ],
+        "title": "Perfect Square Trinomial",
+        "text": "Is the expression a Perfect Square Trinomial?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aabf119factor8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aabf119factor8a-h5"
+        ],
+        "title": "Perfect Square Trionmial",
+        "text": "A perfect square trinomial $${nx}^2$$ + 2nbx + $$b^2$$ can be factored as $${\\left(nx+b\\right)}^2$$.",
+        "variabilization": {}
+    }
+]

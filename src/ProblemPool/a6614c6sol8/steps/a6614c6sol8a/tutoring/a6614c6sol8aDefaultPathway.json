@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a6614c6sol8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Eliminate a Variable",
+        "text": "The y's are already opposites so they will be eliminated once we add up the two equations. $$-7x+6y=-10$$ $$x-6y=22$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol8a-h1"
+        ],
+        "title": "Add the Equations to Eliminate One Variable",
+        "text": "Add the x's, y's, and constants. y will be eliminated and then solve for x. $$-6x=12$$ $$x=-2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol8a-h2"
+        ],
+        "title": "Substitute Solution into Original Equations",
+        "text": "Substitute $$x=-2$$ into the first equation, $$-7x+6y=-10$$. Then solve for y. $$-7x+6y=-10$$ $$-7\\left(-2\\right)+6y=-10$$ $$14+6y=-10$$ $$6y=-24$$ $$y=-4$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6614c6sol8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol8a-h2",
+            "a6614c6sol8a-h3"
+        ],
+        "title": "Solution as Ordered Pair",
+        "text": "Solution to the system of equations is (-2,-4).",
+        "variabilization": {}
+    }
+]

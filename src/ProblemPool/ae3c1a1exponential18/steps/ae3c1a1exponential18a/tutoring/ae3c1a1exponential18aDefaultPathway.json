@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ae3c1a1exponential18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Growth",
+        "text": "A function that models exponential growth grows by a rate proportional to the amount present. For any real number x and any positive real numbers a and b such that $$b!=1$$, an exponential growth function has the form $$f(x)=a b^x$$ where a is the initial or starting value of the function and b is the growth factor or growth multiplier per unit x .",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23900{1.09}^x$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential18a-h1"
+        ],
+        "title": "Defining the Exponential Model",
+        "text": "The function for exponential growth is given by $$f(x)=a b^x$$. What is exponential model, f(x), for this question?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "23900"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential18a-h2"
+        ],
+        "title": "Defining the Exponential Model",
+        "text": "The function for exponential growth is given by $$f(x)=a b^x$$. What is the initial or starting value of the function, a?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.09"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential18a-h3"
+        ],
+        "title": "Defining the Exponential Model",
+        "text": "The function for exponential growth is given by $$f(x)=a b^x$$. What is the growth factor or growth multiplier per unit x, b?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential18a-h4"
+        ],
+        "title": "Period of Growth",
+        "text": "How many years ahead are we trying to predict with our model?",
+        "variabilization": {}
+    },
+    {
+        "id": "ae3c1a1exponential18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential18a-h5"
+        ],
+        "title": "Using Substitution",
+        "text": "Substitute $$x=8$$ into f(x) to evaluate the fox population in the year 2020.",
+        "variabilization": {}
+    }
+]

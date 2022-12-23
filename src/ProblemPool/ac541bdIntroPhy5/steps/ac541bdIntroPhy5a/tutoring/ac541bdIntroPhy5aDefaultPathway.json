@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ac541bdIntroPhy5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recollect the unit-unit conversion from year to sec",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "31536000"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy5a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many seconds in a year?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3.17 * $${10}^{-8}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy5a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "How many years in a second? (rounded to 10 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.04"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy5a-h3"
+        ],
+        "title": "Sub-questions",
+        "text": "Convert 4 cm to meters (rounded to 10 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.27 * $${10}^{-9}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy5a-h4"
+        ],
+        "title": "Combining",
+        "text": "Using the above, $$\\frac{4cm}{year}$$ is how many $$\\frac{m}{s}$$? (rounded to 11 decimal places)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac541bdIntroPhy5a-h5"
+        ],
+        "title": "sec -> yr is 0.0000000317 times So $$\\frac{0.04m}{yr}$$ $$=$$?",
+        "text": "",
+        "variabilization": {}
+    }
+]

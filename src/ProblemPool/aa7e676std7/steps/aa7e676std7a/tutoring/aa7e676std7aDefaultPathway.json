@@ -1,0 +1,30 @@
+[
+    {
+        "id": "aa7e676std7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Calculator",
+        "text": "Graph the test.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa7e676std7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Right"
+        ],
+        "dependencies": [
+            "aa7e676std7a-h1"
+        ],
+        "title": "Visual Graph",
+        "text": "Looking at the graph, on what side is the colored region on?\\n##figure1.gif##",
+        "variabilization": {},
+        "choices": [
+            "Left",
+            "Right",
+            "Two"
+        ]
+    }
+]

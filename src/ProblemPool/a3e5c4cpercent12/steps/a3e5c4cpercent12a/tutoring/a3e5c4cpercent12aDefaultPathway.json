@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a3e5c4cpercent12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Difference",
+        "text": "Find the difference between the two numbers.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3e5c4cpercent12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5c4cpercent12a-h1"
+        ],
+        "title": "The Difference",
+        "text": "The difference is 3.71-3.64, or 0.07.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3e5c4cpercent12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5c4cpercent12a-h2"
+        ],
+        "title": "Find the Percent",
+        "text": "Divide the difference by the original value.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3e5c4cpercent12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5c4cpercent12a-h3"
+        ],
+        "title": "The Percentage",
+        "text": "0.07 divided by 3.71 is 0.019. Change this to percent form.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3e5c4cpercent12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3e5c4cpercent12a-h4"
+        ],
+        "title": "The Answer",
+        "text": "Multiply by 100 to change to percentage. The percentage is 1.9%.",
+        "variabilization": {}
+    }
+]

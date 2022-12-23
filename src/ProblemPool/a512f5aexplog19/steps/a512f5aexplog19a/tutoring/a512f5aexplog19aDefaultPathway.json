@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a512f5aexplog19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the Base",
+        "text": "The first step is to rewrite the equation so that both sides have a common base. Since 8 and 16 are both powers of 2, we can use 2 as a common base.",
+        "variabilization": {}
+    },
+    {
+        "id": "a512f5aexplog19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog19a-h1"
+        ],
+        "title": "Rewriting the Base",
+        "text": "Rewriting both sides into expressions with a base of 2, we get $$2^{3\\left(x+2\\right)}=2^{4\\left(x+1\\right)}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a512f5aexplog19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog19a-h2"
+        ],
+        "title": "One-To-One Property of Exponential Functions",
+        "text": "For any algebraic expressions s and t, and any positive real number b that is not equal to 1, $$b^s=b^t$$ if and only if $$s=t$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a512f5aexplog19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog19a-h3"
+        ],
+        "title": "Appylying the One-To-Property to the Problem",
+        "text": "Both expressions have a base of 2, so using the property, we see that $$3\\left(x+2\\right)=4\\left(x+1\\right)$$. This simplifies to $$3x+6=4x+4$$.",
+        "variabilization": {}
+    }
+]

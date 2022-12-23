@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ac0c1d3spe20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction Binomial Square Formula",
+        "text": "We compare our expression to the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2-2a b+b^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe20a-h1"
+        ],
+        "title": "Compare the Binomial",
+        "text": "$${\\left(a-b\\right)}^2$$ $${\\left(\\frac{1}{8} x-\\frac{1}{9} y\\right)}^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{8} x$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe20a-h2"
+        ],
+        "title": "Identify a",
+        "text": "What is a in the expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{9} y$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe20a-h3"
+        ],
+        "title": "Identify b",
+        "text": "What is b in the expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe20a-h3",
+            "ac0c1d3spe20a-h4"
+        ],
+        "title": "Plug in the Terms",
+        "text": "Substitute $$a=\\frac{1}{8} x$$ and $$b=\\frac{1}{9} y$$ into the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2+2a b+b^2$$ $${\\left(\\frac{1}{8} x-\\frac{1}{9} y\\right)}^2={\\left(\\frac{1}{8} x\\right)}^2-2\\frac{1}{8} x \\frac{1}{9} y+{\\left(\\frac{1}{9} y\\right)}^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ac0c1d3spe20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe20a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{1}{64} x^2-\\frac{2}{72} x y+\\frac{1}{81} y^2$$",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a01e792probsolve15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify and Name",
+        "text": "Let's first identify what we want to find, and then give it a variable name",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve15a-h1"
+        ],
+        "title": "Identify and Name",
+        "text": "We want to find the total number of crossword puzzles and we can name it \"c\"",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve15a-h2"
+        ],
+        "title": "Rewrite",
+        "text": "Let's now rewrite the question into a simple sentence which sounds like an equation",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve15a-h3"
+        ],
+        "title": "Rewrite",
+        "text": "It would be: The total number of puzzles (22) is 8 more than twice the number of crossword puzzles.",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve15a-h4"
+        ],
+        "title": "Translate",
+        "text": "Let's translate the rewritten sentence into a real equation",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a01e792probsolve15a-h5"
+        ],
+        "title": "Translate",
+        "text": "Now, we would get $$22=8+2n$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
+        "dependencies": [
+            "a01e792probsolve15a-h6"
+        ],
+        "title": "Solve",
+        "text": "What number can we subtract from both sides to isolate the variable?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7"
+        ],
+        "dependencies": [
+            "a01e792probsolve15a-h7"
+        ],
+        "title": "Solve",
+        "text": "Now, we get $$(22-8)=2n$$ which is also $$14=2n$$. What is n?",
+        "variabilization": {}
+    },
+    {
+        "id": "a01e792probsolve15a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "a01e792probsolve15a-h8"
+        ],
+        "title": "Simplify",
+        "text": "What number can we divide from both sides to isolate n",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ab303f8factoring11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Goal",
+        "text": "Check if the trinomial follow the pattern of $$a^2-b^2$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ab303f8factoring11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12x"
+        ],
+        "dependencies": [
+            "ab303f8factoring11a-h1"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of $$144x^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab303f8factoring11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "7y"
+        ],
+        "dependencies": [
+            "ab303f8factoring11a-h2"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of $$49y^2$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab303f8factoring11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring11a-h3"
+        ],
+        "title": "Manipulate",
+        "text": "Organize the term into $$\\left(12x-7y\\right) \\left(12x+7y\\right)$$",
+        "variabilization": {}
+    }
+]

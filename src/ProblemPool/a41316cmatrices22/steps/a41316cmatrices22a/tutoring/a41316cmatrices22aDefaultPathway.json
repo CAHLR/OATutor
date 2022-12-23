@@ -1,0 +1,39 @@
+[
+    {
+        "id": "a41316cmatrices22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining Solvability",
+        "text": "First, determine if the expression is defined. A matrix operation of addition is defined when the two matrices have the same dimensions.",
+        "variabilization": {}
+    },
+    {
+        "id": "a41316cmatrices22a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a41316cmatrices22a-h1"
+        ],
+        "title": "Determining Solvability",
+        "text": "Do the two matrices you are adding have the same dimensions?",
+        "variabilization": {},
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a41316cmatrices22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a41316cmatrices22a-h2"
+        ],
+        "title": "Interpreting Solvability",
+        "text": "Therefore, the matrix cannot be added and is undefined with no solution.",
+        "variabilization": {}
+    }
+]

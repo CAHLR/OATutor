@@ -1,0 +1,135 @@
+[
+    {
+        "id": "af227bbMoApp11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify known quantities",
+        "text": "There are two known quantities, 48 in. and 6 in.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp11a-h1"
+        ],
+        "title": "Determine unknown quantities",
+        "text": "The unknown quantities are the dimensions and the area of the graph paper.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp11a-h2"
+        ],
+        "title": "Assign a variable",
+        "text": "In this question, there are more than one unknown quantities, we need to choose one, for example, the width of the graph paper equal to x.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+6$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp11a-h3"
+        ],
+        "title": "Express other quantities",
+        "text": "What is the length of the graph paper in terms of x?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp11a-h4"
+        ],
+        "title": "Using the perimeter formula",
+        "text": "First, we should use the perimeter formula $$P=2L+2W$$ to find the dimensions.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x+2\\left(x+6\\right)=48$$"
+        ],
+        "dependencies": [
+            "af227bbMoApp11a-h5"
+        ],
+        "title": "Using the perimeter formula",
+        "text": "What is the mathematical form of \"the perimeter of graph paper is 48 in.\"?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "9"
+        ],
+        "dependencies": [
+            "af227bbMoApp11a-h6"
+        ],
+        "title": "Simplify and Solve",
+        "text": "Solve the equation we write. What is x?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "15"
+        ],
+        "dependencies": [
+            "af227bbMoApp11a-h7"
+        ],
+        "title": "Calculate the other quantity",
+        "text": "What is $$x+6$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp11a-h8"
+        ],
+        "title": "Using the area formula",
+        "text": "The standard formula for area is $$A=LW$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "135"
+        ],
+        "dependencies": [
+            "af227bbMoApp11a-h9"
+        ],
+        "title": "Substitute",
+        "text": "What is $$9\\times15$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "af227bbMoApp11a-h11",
+        "type": "hint",
+        "dependencies": [
+            "af227bbMoApp11a-h10"
+        ],
+        "title": "Explain the solution",
+        "text": "The area of the graph paper is $${135}^2$$.",
+        "variabilization": {}
+    }
+]

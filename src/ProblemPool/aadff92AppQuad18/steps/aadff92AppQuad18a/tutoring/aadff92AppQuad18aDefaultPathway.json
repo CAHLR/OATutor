@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aadff92AppQuad18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "From the picture, we can see the diagonal and the two sides of the square form a right triangle, we can employ pythagorean theorem. $$a^2+b^2=c^2$$ where a and b are legs of triangles and c is the hypotenuse. Let s be the length of the side of square. We can set up the equation as $$s^2+s^2={\\left(s+3\\right)}^2$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad18a-h1"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-1.24,7.24)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad18a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "$$s^2+s^2={\\left(s+3\\right)}^2$$ can be simplified as $$9w^2-10w-25=0$$. Solve for x using the quadratic formula and round x to the nearest hundredth. If there is more than one solution for x, please enter your answer as (a,b) where $$a<b$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad18a-h3"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "Since the length of the side of a sqaure has to be positive, we can omit the negative answer. Therefore the $$s=7.24$$. The the diagonal of rectangle is $$s+3$$ which is $$7.24+3=10.24$$. We can round it to nearest tenth which gives 10.2.",
+        "variabilization": {}
+    }
+]

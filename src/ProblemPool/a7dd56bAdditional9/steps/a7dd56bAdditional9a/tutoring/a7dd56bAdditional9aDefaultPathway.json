@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a7dd56bAdditional9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up",
+        "text": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h1"
+        ],
+        "title": "Tail",
+        "text": "A 5% level of significance means that $$\\alpha=0.05$$. Based on the problem, $$H_0$$: $$\u03bc=65$$ and $$H_a$$: $$\u03bc>65$$. Therefore, this is a right-tailed test.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h2"
+        ],
+        "title": "Distribution",
+        "text": "Determine the distribution needed. No population standard deviation given, and you are only given $$n=10$$ sample data values.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h3"
+        ],
+        "title": "Distribution",
+        "text": "Use $$t_{df}$$. Therefore, the distribution for the test is $$t_9$$ where $$n=10$$ and $$df=10-1=9$$. Now, calculate the p-value using the Student's t-distribution.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h4"
+        ],
+        "title": "P-value",
+        "text": "$$p-value=P\\left(x>67\\right)=0.0396$$ where the sample mean and sample standard deviation are calculated as 67 and 3.1972 from the data.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h5"
+        ],
+        "title": "Compare",
+        "text": "Compare \\alpha and the p-value.",
+        "variabilization": {}
+    },
+    {
+        "id": "a7dd56bAdditional9a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Greater than"
+        ],
+        "dependencies": [
+            "a7dd56bAdditional9a-h6"
+        ],
+        "title": "Compare",
+        "text": "Is \\alpha less than or greater than the p-value?",
+        "variabilization": {},
+        "choices": [
+            "Less than",
+            "Greater than"
+        ]
+    },
+    {
+        "id": "a7dd56bAdditional9a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a7dd56bAdditional9a-h7"
+        ],
+        "title": "Interpret",
+        "text": "Since \\alpha>p-value, we would reject $$H_0$$. This means you reject $$\u03bc=65$$. In other words, you believe the average test score is greater than 65.",
+        "variabilization": {}
+    }
+]

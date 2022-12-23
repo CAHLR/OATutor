@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a8741a7log12c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to determine x such that $$x=\\log_{3}\\left(\\frac{1}{9}\\right)$$. Rewrite this expression first into exponential form.",
+        "variabilization": {}
+    },
+    {
+        "id": "a8741a7log12c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3^x=\\frac{1}{9}$$"
+        ],
+        "dependencies": [
+            "a8741a7log12c-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{3}\\left(\\frac{1}{9}\\right)=x$$?",
+        "variabilization": {},
+        "choices": [
+            "$$3^x=\\frac{1}{9}$$",
+            "$${\\left(\\frac{1}{9}\\right)}^x=3$$",
+            "$$x^3=\\frac{1}{9}$$",
+            "$$x^{\\frac{1}{9}}=3$$"
+        ]
+    },
+    {
+        "id": "a8741a7log12c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(\\frac{1}{3}\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a8741a7log12c-h2"
+        ],
+        "title": "Rewrite $$\\frac{1}{9}$$ in terms of $$\\frac{1}{3}$$",
+        "text": "Since $$3^2=9$$, we can actually rewrite $$\\frac{1}{9}$$ in terms of $$\\frac{1}{3}$$. What is $$\\frac{1}{9}$$ equal to in terms of $$\\frac{1}{3}$$?",
+        "variabilization": {},
+        "choices": [
+            "$${\\left(\\frac{1}{3}\\right)}^2$$",
+            "$$2^{\\frac{1}{3}}$$"
+        ]
+    },
+    {
+        "id": "a8741a7log12c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3^{\\left(-2\\right)}$$"
+        ],
+        "dependencies": [
+            "a8741a7log12c-h3"
+        ],
+        "title": "Simplifying the Exponential",
+        "text": "We note that $${\\left(\\frac{1}{x}\\right)}^y=x^{\\left(-y\\right)}$$. How can we rewrite $$\\frac{1}{32}={\\left(\\frac{1}{2}\\right)}^5$$ in terms of powers of 2?",
+        "variabilization": {},
+        "choices": [
+            "$$3^{\\left(-2\\right)}$$",
+            "$${\\left(-2\\right)}^3$$",
+            "$${\\left(-9\\right)}^3$$",
+            "$$3^{\\left(-9\\right)}$$"
+        ]
+    },
+    {
+        "id": "a8741a7log12c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2"
+        ],
+        "dependencies": [
+            "a8741a7log12c-h4"
+        ],
+        "title": "Solve for x",
+        "text": "Substitution $$3^{\\left(-2\\right)}$$ into the exponential equation we found before, we get $$3^x=3^{\\left(-2\\right)}$$. What is x?",
+        "variabilization": {}
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a5e282bSolvquad18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "Divide by the leading coefficient on both sides which gives $${\\left(a-3\\right)}^2$$ $$=18$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad18a-h1"
+        ],
+        "title": "Use Square Root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then x $$=$$ $$\\sqrt{k}$$, or x $$=$$ $$-\\sqrt{k}$$, or x $$=\\sqrt{k}$$. $${\\left(a-3\\right)}^2$$ $$=18$$, we can take square root both sides and get $$a-3=\\sqrt{18}$$ or $$a-3=-\\sqrt{18}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3-\\sqrt{18}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad18a-h2"
+        ],
+        "title": "Find a in $$a-3=\\sqrt{18}$$",
+        "text": "What is a?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3+\\sqrt{18}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad18a-h3"
+        ],
+        "title": "Find a in $$a-3=-\\sqrt{18}$$",
+        "text": "What is a?",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3-3\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad18a-h4"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$3-\\sqrt{18}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3+3\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad18a-h5"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$3+\\sqrt{18}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad18a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad18a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$3{\\left(a-3\\right)}^2$$ $$=54$$ has two solutions which are $$a=3+3\\sqrt{2}$$, and $$a=3-3\\sqrt{2}$$.",
+        "variabilization": {}
+    }
+]

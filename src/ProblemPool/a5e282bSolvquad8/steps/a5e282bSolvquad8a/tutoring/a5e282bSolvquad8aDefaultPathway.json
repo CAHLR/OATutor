@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5e282bSolvquad8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "We can divide both side by 5 and get $$x^2-16=0$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad8a-h1"
+        ],
+        "title": "Isolate the Quadratic Term",
+        "text": "We add 16 to both sides to get $$x^2$$ by itself which gives $$x^2=16$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad8a-h2"
+        ],
+        "title": "Use Square root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then x $$=$$ $$\\sqrt{k}$$, or x $$=$$ $$-\\sqrt{k}$$. $$x^2=16$$, we can take square root both sides and get $$x=\\sqrt{16}$$ or $$x=-\\sqrt{16}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-4"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad8a-h3"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$-\\sqrt{16}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad8a-h4"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$\\sqrt{16}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e282bSolvquad8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad8a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$5x^2-80=0$$ has two solutions which are $$x=-4$$ and $$x=4$$.",
+        "variabilization": {}
+    }
+]

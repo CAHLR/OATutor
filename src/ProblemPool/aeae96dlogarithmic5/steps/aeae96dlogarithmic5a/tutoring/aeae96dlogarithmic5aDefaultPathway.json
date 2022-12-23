@@ -1,0 +1,121 @@
+[
+    {
+        "id": "aeae96dlogarithmic5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product Rule for Logarithms",
+        "text": "The product rule for logarithms can be used to simplify a logarithm of a product by rewriting it as a sum of individual logarithms. $$\\log_{b}\\left(M N\\right)=\\log_{b}\\left(M\\right)+\\log_{b}\\left(N\\right)$$ for $$b>0$$ Given the logarithm of a product, use the product rule of logarithms to write an equivalent sum of logarithms. 1) Factor the argument completely, expressing each whole number factor as a product of primes. 2) Write the equivalent expression by summing the logarithms of each factor.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Quotient Rule for Logarithms",
+        "text": "The quotient rule for logarithms can be used to simplify a logarithm or a quotient by rewriting it as the difference of individual logarithms. $$\\log_{b}\\left(\\frac{M}{N}\\right)=\\log_{b}\\left(M\\right)-\\log_{b}\\left(N\\right)$$ Given the logarithm of a quotient, use the quotient rule of logarithms to write an equivalent difference of logarithms. 1) Express the argument in lowest terms by factoring the numerator and denominator and canceling common terms. 2) Write the equivalent expression by subtracting the logarithm of the denominator from the logarithm of the numerator. 3) Check to see that each term is fully expanded. If not, apply the product rule for logarithms to expand completely.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Power Rule for Logarithms",
+        "text": "The power rule for logarithms can be used to simplify the logarithm of a power by rewriting it as the product of the exponent times the logarithm of the base. $$\\log_{b}\\left(M^n\\right)=n*\\log_{b}\\left(M\\right)$$ Given the logarithm of a power, use the power rule of logarithms to write an equivalent product of a factor and a logarithm. 1) Express the argument as a power, if needed. 2) Write the equivalent expression by multiplying the exponent times the logarithm of the base.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogarithmic5a-h3"
+        ],
+        "title": "Square Root",
+        "text": "Note that the square root applies to the fraction, $$\\frac{y}{1-y}$$. We can distribute the square root to the numerator and denominator to simplify future steps.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{1-y}$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic5a-h4"
+        ],
+        "title": "Apply the Quotient Rule for Logarithms",
+        "text": "We can start by identifying and separating the numerator and denominator of the quotient. What is the denominator in the logarithmic expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln(y \\sqrt{y})-\\ln(\\sqrt{1-y})$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic5a-h5"
+        ],
+        "title": "Apply the Quotient Rule for Logarithms",
+        "text": "After identifying the denominator, apply the quotient rule by subtracting the logarithm of the denominator from the logarithm of the numerator. What is the expression?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogarithmic5a-h6"
+        ],
+        "title": "Exponent",
+        "text": "What are the exponent of each terms? Express them in terms of fractions.",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic5a-h7"
+        ],
+        "title": "Exponent",
+        "text": "What is the exponent of y in $$\\ln(y \\sqrt{y})$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic5a-h8"
+        ],
+        "title": "Exponent",
+        "text": "What is the exponent of (1-y) in $$\\ln(\\sqrt{1-y})$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aeae96dlogarithmic5a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2} \\ln(y)-\\frac{1}{2} \\ln(1-y)$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic5a-h9"
+        ],
+        "title": "Apply the Power Rule for Logarithms",
+        "text": "Write the equivalent expression by multiplying the exponent times the logarithm of the base. What is the final expression?",
+        "variabilization": {}
+    }
+]

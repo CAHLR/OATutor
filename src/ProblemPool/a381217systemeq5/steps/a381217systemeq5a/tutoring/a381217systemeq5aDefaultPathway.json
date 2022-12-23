@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a381217systemeq5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert amounts into first equation",
+        "text": "Let's use \"s\" as stocks and \"b\" as the bonds. The total amount of money combined is $40,000, therefore we can determine that the first equation is $$s+b=40, 000$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a381217systemeq5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a381217systemeq5a-h1"
+        ],
+        "title": "Convert amoutn into second equation",
+        "text": "Because the total amount is 0.071(40,000) and an interest rate of 8% on stocks and 3% on bonds, we can determine that the second equation is $$0.08s+0.03b=2, 840$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a381217systemeq5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a381217systemeq5a-h2"
+        ],
+        "title": "Isolate Variable",
+        "text": "Let's use the first equation to isolate b. With the equation, we can subtract a from both sides to get $$b=40, 000-s$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a381217systemeq5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a381217systemeq5a-h3"
+        ],
+        "title": "Plug in",
+        "text": "We can plug in $$b=40, 000-s$$ using the second equation to get $$0.08s+0.03(40,000-s)=2,840$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a381217systemeq5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a381217systemeq5a-h4"
+        ],
+        "title": "Solve for a",
+        "text": "We can determine that the second equation after plugging in \"b\" would be 0.05s+1,200=2,840. We now isolate the variable \"s\" and get $$0.05s=1640$$. Then, we can divide both sides by 0.05 to get $$s=32, 800$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a381217systemeq5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a381217systemeq5a-h5"
+        ],
+        "title": "Solve for c",
+        "text": "After solving for \"s\", we can plug that value into the first equation to get 32,800+b=40,000 which we can determine b to be 7,200.",
+        "variabilization": {}
+    }
+]

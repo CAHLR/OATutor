@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a9b0a01geo1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Draw",
+        "text": "Draw the figure to try to better understand what the problem is asking",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo1a-h1"
+        ],
+        "title": "Identify",
+        "text": "We are looking for the third angle of the triangle",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo1a-h2"
+        ],
+        "title": "Name",
+        "text": "Name the variable we are looking for as \"x\"",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo1a-h3"
+        ],
+        "title": "Translate",
+        "text": "Each of the three angles added together equals 180 degrees, $$x+82+55=180$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo1a-h4"
+        ],
+        "title": "Solve",
+        "text": "Solve the equation using algebra",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "137"
+        ],
+        "dependencies": [
+            "a9b0a01geo1a-h5"
+        ],
+        "title": "Solve",
+        "text": "First let's simplify the left side of the equation. What is $$55+82$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9b0a01geo1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "43"
+        ],
+        "dependencies": [
+            "a9b0a01geo1a-h6"
+        ],
+        "title": "Solve",
+        "text": "Now, let's subtract 137 from both sides of the equation to isolate x on the left side. What is 180-137?",
+        "variabilization": {}
+    }
+]

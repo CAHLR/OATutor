@@ -1,0 +1,25 @@
+[
+    {
+        "id": "aa97d5brate3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\frac{Equation}{Substitute}$$",
+        "text": "The equation for calculuating the rate of change is $$\\frac{f{\\left(x_1\\right)}-f{\\left(x_2\\right)}}{x_1-x_2}$$. So to find the answer, we can start by plugging in $$x+h$$ for $$x_1$$ and x for $$x_2$$, and we get the expression $$\\frac{{2\\left(x+h\\right)}^2+1-2x^2+1}{x+h-x}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa97d5brate3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x+2h$$"
+        ],
+        "dependencies": [
+            "aa97d5brate3a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression $$\\frac{{2\\left(x+h\\right)}^2+1-2x^2+1}{x+h-x}$$. What do you get?",
+        "variabilization": {}
+    }
+]

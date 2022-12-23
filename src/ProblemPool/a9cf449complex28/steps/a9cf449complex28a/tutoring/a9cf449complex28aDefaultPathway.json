@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a9cf449complex28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute 5i wherever you see x, and we get the expression $$y=\\frac{5i+1}{2-5i}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2+5i$$"
+        ],
+        "dependencies": [
+            "a9cf449complex28a-h1"
+        ],
+        "title": "Complex Conjugate of Denominator",
+        "text": "To start off, we will need to muliply both the numerator and the denominator by the complex conjugate of the denominator. What is the complex conjugate of the denominator 2-5i?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex28a-h2"
+        ],
+        "title": "Multiply",
+        "text": "Multiply the numerator and denominator by the conjugate of the denominator: $$\\frac{\\left(5i+1\\right) \\left(2+5i\\right)}{\\left(2-5i\\right) \\left(2+5i\\right)}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex28a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "29"
+        ],
+        "dependencies": [
+            "a9cf449complex28a-h3"
+        ],
+        "title": "Denominator Result",
+        "text": "The $$\\left(a+bi\\right) \\left(a-bi\\right)$$ on the denominator simplifies to $$a^2+b^2$$. What is the value of the donominator?",
+        "variabilization": {}
+    },
+    {
+        "id": "a9cf449complex28a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-23+15i$$"
+        ],
+        "dependencies": [
+            "a9cf449complex28a-h3"
+        ],
+        "title": "Numerator result",
+        "text": "What does the top evaluate to? In other words, what is $$\\left(5i+1\\right) \\left(2+5i\\right)$$?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "a9cf449complex28a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Evaluating $$i^2$$",
+                "text": "Remember: $$i^2=-1$$.",
+                "variabilization": {}
+            },
+            {
+                "id": "a9cf449complex28a-h5-s2",
+                "type": "hint",
+                "dependencies": [
+                    "a9cf449complex28a-h5-s1"
+                ],
+                "title": "Numerator result",
+                "text": "When FOIL out, $$\\left(5i+1\\right) \\left(2+5i\\right)=10i+25i^2+2+5i$$.",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "a9cf449complex28a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-23}{29}+\\frac{15}{29} i$$"
+        ],
+        "dependencies": [
+            "a9cf449complex28a-h4",
+            "a9cf449complex28a-h5"
+        ],
+        "title": "Split",
+        "text": "Split the real and imaginary parts. What do you get?",
+        "variabilization": {}
+    }
+]

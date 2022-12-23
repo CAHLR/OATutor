@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5e79d8Uni18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "We know that we are looking at a uniform distribution, and also that we are looking at a continuous probability function. What would this probability function look like? As it turns out, this function will look like a straight line from our start to end points. We can calculate the area under this function to get our desired probability.",
+        "text": "",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e79d8Uni18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "74"
+        ],
+        "dependencies": [
+            "a5e79d8Uni18a-h1"
+        ],
+        "title": "If X goes from 447 to 521, how long is the interval of X?",
+        "text": "",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e79d8Uni18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e79d8Uni18a-h2"
+        ],
+        "title": "The probability that the duration of MLB games in a season is between 447 and 448 is $$\\frac{1}{74}$$.",
+        "text": "",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e79d8Uni18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5e79d8Uni18a-h3"
+        ],
+        "title": "The probability that the duration of MLB games in a season is between 447 and 449 is $$\\frac{2}{74}$$. Starting to see a pattern? We can get the length in the interval we want, and divide that by the length of our total interval to get our answer.",
+        "text": "",
+        "variabilization": {}
+    },
+    {
+        "id": "a5e79d8Uni18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{20}{74}$$"
+        ],
+        "dependencies": [
+            "a5e79d8Uni18a-h4"
+        ],
+        "title": "Knowing how to calculate the probability, what will our answer be?",
+        "text": "",
+        "variabilization": {}
+    }
+]

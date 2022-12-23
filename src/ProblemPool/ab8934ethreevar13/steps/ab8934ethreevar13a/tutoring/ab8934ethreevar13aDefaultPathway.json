@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ab8934ethreevar13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting up Equations",
+        "text": "To solve this problem, we use all of the information given and set up three equations. First, we assign a variable to each of the three investment amounts: $$x=money_{market}$$ fund, $$y=municipal$$ bonds, $$z=mutual$$ funds. With these variables, we can create the three following equations based on the information given in the word problem: x+y+z=12000,z=y+4000,0.03x+0.04y+0.07z=670. These three equations make a system. To make the caculations easier, the last equation can be multipled by 100, giving us $$3x+4y+7z=67000$$",
+        "variabilization": {}
+    },
+    {
+        "id": "ab8934ethreevar13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab8934ethreevar13a-h1"
+        ],
+        "title": "Solving for x, y, and z",
+        "text": "To solve this equation, we must first multiply equation 1 by -3, giving us $$y+4z=31000$$. We can now add equation 2 to that derived in the eprevious step to give us $$5z=35000$$, $$z=7000$$. With z, we can solve for y: we plug back in to equation 2 and solve for y. $$-y+7000=4000, y=3000$$. Finally, we plug z and y into equation 1 to get $$x+3000+7000=12000$$, leading to $$x=2000$$. Thus, we have the soluttion nas (2000,3000,7000)",
+        "variabilization": {}
+    }
+]

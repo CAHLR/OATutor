@@ -1,0 +1,93 @@
+[
+    {
+        "id": "ab2cac7standard13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Deviation",
+        "text": "99.7%% of the values should be within 3 standard deviations of the mean. Find what values are within 3 standard deviations of the mean.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "33"
+        ],
+        "dependencies": [
+            "ab2cac7standard13a-h1"
+        ],
+        "title": "Standard Deviation",
+        "text": "What is 3 standard deviations?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "ab2cac7standard13a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "11"
+                ],
+                "dependencies": [],
+                "title": "Identify Value of Standard Deviation",
+                "text": "What is the standard deviation, \u03c3?",
+                "variabilization": {}
+            },
+            {
+                "id": "ab2cac7standard13a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "33"
+                ],
+                "dependencies": [],
+                "title": "3 Standard Deviations",
+                "text": "What is $$3\\times11$$?",
+                "variabilization": {}
+            }
+        ]
+    },
+    {
+        "id": "ab2cac7standard13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab2cac7standard13a-h2"
+        ],
+        "title": "Range",
+        "text": "Add and subtract this amount from the mean to get the values that fall within 3 standard deviations of the mean.",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "85"
+        ],
+        "dependencies": [
+            "ab2cac7standard13a-h3"
+        ],
+        "title": "Add for Upper Bound",
+        "text": "What is $$52+33$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "ab2cac7standard13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "19"
+        ],
+        "dependencies": [
+            "ab2cac7standard13a-h3"
+        ],
+        "title": "Subtract for Lower Bound",
+        "text": "What is 52-33?",
+        "variabilization": {}
+    }
+]

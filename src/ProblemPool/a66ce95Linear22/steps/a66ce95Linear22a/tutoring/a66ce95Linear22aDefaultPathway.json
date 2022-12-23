@@ -1,0 +1,190 @@
+[
+    {
+        "id": "a66ce95Linear22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Parantheses Priority",
+        "text": "When dealing with parantheses within parantheses, simplify the inner parantheses first, then the outer",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h1"
+        ],
+        "title": "Distributive Property I",
+        "text": "Use the distributive property to multiply 8(4c-3)",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "32c-24"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h2"
+        ],
+        "title": "Distributive Property I",
+        "text": "What is 8(4c-3)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h3"
+        ],
+        "title": "Simplify",
+        "text": "After applying the distributive property to the inner parantheses, the outer parantheses can now be simplified",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "29-32c"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h4"
+        ],
+        "title": "Simplify Parantheses",
+        "text": "What is 5-(32c-24)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h5"
+        ],
+        "title": "Distributive Property II",
+        "text": "Use the distributive property to multiply 4(29-32c)",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "116-128c"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h6"
+        ],
+        "title": "Distributive Property II",
+        "text": "What is 4(29-32c)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h7"
+        ],
+        "title": "Distributive Property III",
+        "text": "Use the distributive property to multiply 12(1-13c)",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "12-156c?"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h8"
+        ],
+        "title": "Distributive Property III",
+        "text": "What is 12(1-13c)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h9"
+        ],
+        "title": "Organizing",
+        "text": "Once you've used the distributive property, you get $$116-128c=12-156c-8$$, reorganize it to $$-128c-(-156c)=12-8-116$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h10"
+        ],
+        "title": "Subtraction",
+        "text": "What is 12-8?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a66ce95Linear22a-h11"
+        ],
+        "title": "Organizing",
+        "text": "Once both sides have an equation without parantheses, use algebra to manipulate the equation into the form $$c=?$$,",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "28c"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h12"
+        ],
+        "title": "Subtraction",
+        "text": "What is -128c-(-156c)?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-112"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h13"
+        ],
+        "title": "Subtraction",
+        "text": "What is 4-116?",
+        "variabilization": {}
+    },
+    {
+        "id": "a66ce95Linear22a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-4"
+        ],
+        "dependencies": [
+            "a66ce95Linear22a-h14"
+        ],
+        "title": "Division",
+        "text": "What is $$\\frac{-112}{28}$$?",
+        "variabilization": {}
+    }
+]

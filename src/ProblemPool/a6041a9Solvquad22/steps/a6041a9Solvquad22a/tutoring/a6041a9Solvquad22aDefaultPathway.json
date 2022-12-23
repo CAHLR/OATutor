@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a6041a9Solvquad22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Quadratic term",
+        "text": "We add 8 on both sides to get $$3{\\left(b+3\\right)}^2$$ isolated by itself which gives $$3{\\left(b+3\\right)}^2=96$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad22a-h1"
+        ],
+        "title": "Find Leading Coefficient",
+        "text": "What's the leading coefficient now?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad22a-h2"
+        ],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "Divide by the leading coefficient on both sides which gives $${\\left(b+3\\right)}^2=32$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad22a-h3"
+        ],
+        "title": "Use Square Root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then x $$=$$ $$\\sqrt{k}$$, or x $$=$$ $$-\\sqrt{k}$$, or x $$=\\sqrt{k}$$. $${\\left(b+3\\right)}^2=32$$, we can take square root both sides and get $$b+3=\\sqrt{32}$$ or $$b+3=-\\sqrt{32}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\sqrt{32}-3$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad22a-h4"
+        ],
+        "title": "Find b in $$b+3=-\\sqrt{32}$$",
+        "text": "What is b?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{32}-3$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad22a-h5"
+        ],
+        "title": "Find b in $$b+3=\\sqrt{32}$$",
+        "text": "What is b?",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4\\sqrt{2}-3$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad22a-h6"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$-\\sqrt{32}-3$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4\\sqrt{2}-3$$"
+        ],
+        "dependencies": [
+            "a6041a9Solvquad22a-h7"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$\\sqrt{32}-3$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "a6041a9Solvquad22a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a6041a9Solvquad22a-h8"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$3{\\left(b+3\\right)}^2-8$$ $$=88$$ has two solutions which are $$b=-4\\sqrt{2}-3$$, and $$b=4\\sqrt{2}-3$$.",
+        "variabilization": {}
+    }
+]

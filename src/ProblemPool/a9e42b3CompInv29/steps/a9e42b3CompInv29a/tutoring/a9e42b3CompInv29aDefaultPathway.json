@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a9e42b3CompInv29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What does it mean by (f\u00b0g)(x)?",
+        "text": "it means \"evaluate g at x, then evaluate f at the result g(x)\" which is f(g(x)).",
+        "variabilization": {}
+    },
+    {
+        "id": "a9e42b3CompInv29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv29a-h1"
+        ],
+        "title": "Substitute $$2x+5$$ for x in f(x)",
+        "text": "Substitute $$2x+5$$ for x in f(x) and get $$f{\\left(2x+5\\right)}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9e42b3CompInv29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv29a-h2"
+        ],
+        "title": "Calculate f(x) with new x",
+        "text": "Calculate f(x) $$=$$ $$4x+3$$ with x replaced by $$2x+5$$, which is $$f(x)=4\\left(2x+5\\right)$$ + 3.",
+        "variabilization": {}
+    },
+    {
+        "id": "a9e42b3CompInv29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv29a-h3"
+        ],
+        "title": "Simplify",
+        "text": "$$f(x)=4\\left(2x+5\\right)$$ + $$3=8x+23$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a9e42b3CompInv29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv29a-h4"
+        ],
+        "title": "Evaluate f(2)",
+        "text": "$$f(2)=8\\times2+23=39$$. Therefore $$f(g(2))=39$$.",
+        "variabilization": {}
+    }
+]
