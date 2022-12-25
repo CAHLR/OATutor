@@ -22,3 +22,9 @@ export function toastNotifyCorrectness(isCorrect, reason) {
         }
     }
 }
+
+export function toastNotifyCompletion() {
+    toast.success("Step Completed!", {
+        autoClose: 3000
+    })
+}

@@ -19,7 +19,7 @@ import ProblemInput from "./ProblemInput/ProblemInput";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
-import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
+import { toastNotifyCompletion, toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 
 
 class ProblemCard extends React.Component {
@@ -30,7 +30,10 @@ class ProblemCard extends React.Component {
         //console.log("Reconstructing");
         this.step = props.step;
         this.index = props.index;
-        console.debug('this.step', this.step, 'hintPathway', context.hintPathway)
+        this.giveStuFeedback = props.giveStuFeedback
+        this.showHints = this.giveStuFeedback == null || this.giveStuFeedback
+        this.showCorrectness = this.giveStuFeedback == null || this.giveStuFeedback
+        console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway)
         this.hints = this.step.hints[context.hintPathway];
 
         for (let hint of this.hints) {
@@ -74,7 +77,7 @@ class ProblemCard extends React.Component {
             inputVal: "",
             isCorrect: context.use_expanded_view && context.debug ? true : null ,
             checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
-            showHints: false,
+            displayHints: false,
             hintsFinished: new Array(this.hints.length).fill(0),
             equation: '',
             usedHints: false
@@ -120,7 +123,11 @@ class ProblemCard extends React.Component {
             courseName
         )
 
-        toastNotifyCorrectness(isCorrect, reason);
+        if (this.showCorrectness) {
+            toastNotifyCorrectness(isCorrect, reason);
+        } else {
+            toastNotifyCompletion();
+        }
 
         this.setState({
             isCorrect,
@@ -145,7 +152,7 @@ class ProblemCard extends React.Component {
 
     toggleHints = (event) => {
         this.setState(prevState => ({
-            showHints: !prevState.showHints
+            displayHints: !prevState.displayHints
         }), () => {
             this.props.answerMade(this.index, this.step.knowledgeComponents, false);
         });
@@ -209,7 +216,7 @@ class ProblemCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { showHints } = this.state;
+        const { displayHints } = this.state;
         const { debug, use_expanded_view } = this.context;
         return (
             <Card className={classes.card}>
@@ -223,7 +230,7 @@ class ProblemCard extends React.Component {
                         {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
                     </div>
 
-                    {(showHints || (debug && use_expanded_view)) && (
+                    {(displayHints || (debug && use_expanded_view)) && this.showHints && (
                         <div className="Hints">
                             <ErrorBoundary componentName={"HintSystem"} descriptor={"hint"}>
                                 <HintSystem
@@ -247,6 +254,7 @@ class ProblemCard extends React.Component {
 
                     <div className={classes.root}>
                         <ProblemInput
+                            showCorrectness={this.showCorrectness}
                             classes={classes}
                             state={this.state}
                             step={this.step}
@@ -265,16 +273,18 @@ class ProblemCard extends React.Component {
                     <Grid container spacing={0} justifyContent="center" alignItems="center">
                         <Grid item xs={false} sm={false} md={4}/>
                         <Grid item xs={4} sm={4} md={1}>
-                            <center>
-                                <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints"
-                                            {...stagingProp({
-                                                "data-selenium-target": `hint-button-${this.props.index}`
-                                            })}
-                                >
-                                    <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                         alt="hintToggle"/>
-                                </IconButton>
-                            </center>
+                            {this.showHints && (
+                                <center>
+                                    <IconButton aria-label="delete" onClick={this.toggleHints} title="View available hints"
+                                        {...stagingProp({
+                                            "data-selenium-target": `hint-button-${this.props.index}`
+                                        })}
+                                    >
+                                        <img src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
+                                            alt="hintToggle"/>
+                                    </IconButton>
+                                </center>
+                            )}
                         </Grid>
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
@@ -295,19 +305,29 @@ class ProblemCard extends React.Component {
                                 alignContent: "center",
                                 justifyContent: "center"
                             }}>
-                                {this.state.isCorrect &&
+                                {!this.showCorrectness &&
+                                    <img className={classes.checkImage}
+                                        style={{ opacity: this.state.isCorrect == null ? 0 : 1, width: "45%" }}
+                                        alt="Exclamation Mark Icon"
+                                        title="The instructor has elected to not display correctness"
+                                        {...stagingProp({
+                                            "data-selenium-target": `step-correct-img-${this.props.index}`
+                                        })}
+                                        src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
+                                }
+                                {this.state.isCorrect && this.showCorrectness &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
-                                         alt=""
+                                         alt="Green Checkmark Icon"
                                          {...stagingProp({
                                              "data-selenium-target": `step-correct-img-${this.props.index}`
                                          })}
                                          src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
                                 }
-                                {this.state.isCorrect === false &&
+                                {this.state.isCorrect === false && this.showCorrectness &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
-                                         alt=""
+                                         alt="Red X Icon"
                                          {...stagingProp({
                                              "data-selenium-target": `step-correct-img-${this.props.index}`
                                          })}

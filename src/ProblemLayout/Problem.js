@@ -36,6 +36,7 @@ class Problem extends React.Component {
         this.heuristic = context.heuristic;
         this.stepStates = {};
         this.numCorrect = 0;
+        this.giveStuFeedback = this.props.lesson.giveStuFeedback
 
         this.state = {
             problem: this.props.problem,
@@ -72,7 +73,7 @@ class Problem extends React.Component {
             return <Element name={index.toString()} key={Math.random()}>
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
                              seed={this.props.seed} problemVars={this.props.problem.variabilization}
-                             lesson={problem.lesson} courseName={problem.courseName}
+                             lesson={problem.lesson} courseName={problem.courseName} giveStuFeedback={this.giveStuFeedback}
                 />
             </Element>
         })
@@ -219,6 +220,12 @@ class Problem extends React.Component {
                 })
             } else {
                 this.setState({ problemFinished: true });
+            }
+        }
+
+        if (this.giveStuFeedback != null && !this.giveStuFeedback) {
+            if (!Object.values(this.stepStates).some(stepState => stepState == null)) {
+                this.setState({ problemFinished: true })
             }
         }
     }
