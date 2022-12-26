@@ -8,6 +8,7 @@
     "algebrite": "~1.4.0",
     "await-to-js": "~3.0.0",
     "clsx": "~1.1.1",
+    "enumify": "^2.0.0",
     "equation-editor-react": "https://github.com/CAHLR/equation-editor-react-forked/releases/download/v0.0.10/equation-editor-react-0.0.10.tgz",
     "expr-eval": "~2.0.2",
     "firebase": "~9.9.1",
@@ -30,13 +31,13 @@
     "use-window-focus": "^1.4.1"
   },
   "scripts": {
-    "start": "cross-env PORT=3001 react-scripts start",
+    "start": "cross-env PORT=3001 GENERATE_SOURCEMAP=false react-app-rewired start",
     "prestart": "node src/tools/preprocessProblemPool.js",
-    "build": "react-scripts build",
-    "build-localhost": "cross-env PUBLIC_URL=/ react-scripts build",
+    "build": "react-app-rewired build",
+    "build-localhost": "cross-env PUBLIC_URL=/ react-app-rewired build",
     "prebuild": "node src/tools/preprocessProblemPool.js",
     "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
-    "test": "react-scripts test",
+    "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject"
   },
@@ -55,7 +56,9 @@
   "devDependencies": {
     "@types/react-resizable": "~1.7.4",
     "cross-env": "^7.0.3",
-    "gh-pages": "~2.2.0"
+    "gh-pages": "~2.2.0",
+    "react-app-rewire-alias": "~1.1.7",
+    "react-app-rewired": "~2.2.1"
   },
   "homepage": "place-holder"
 }

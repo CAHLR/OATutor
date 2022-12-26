@@ -178,7 +178,7 @@ of your choosing.
 6. Share the target spreadsheet with that email address and give them editor access
 7. Create `.env.local` in `src/tools` and add this line `SPREADSHEET_ID=YOUR_SPREADSHEET_ID_HERE`
 8. If your school runs on a quarter system, you may change the first line in
-   `src/config/shared-config.js` to `QUARTER`
+   `common/global-config.js` to `QUARTER`
 
 From the `src/tools` directory, `node populateGoogleSheets.js`
 

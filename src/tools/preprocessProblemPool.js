@@ -16,7 +16,7 @@ if (+process.versions.node.split(".")[0] < 10) {
 
 // the current file should be in src/tools so ../ProblemPool should be src/ProblemPool
 const problemPoolPath = path.join(__dirname, '..', 'ProblemPool')
-const generatedPath = path.join(__dirname, '..', 'generated')
+const generatedPath = path.join(__dirname, '..', '..', 'generated')
 const poolFilePath = path.join(generatedPath, 'flatProblemPool.json')
 const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures')
 

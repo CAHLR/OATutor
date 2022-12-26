@@ -20,7 +20,7 @@ import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
 
-let problemPool = require('../generated/flatProblemPool.json')
+let problemPool = require('@generated/flatProblemPool.json')
 
 let seed = Date.now().toString();
 console.log("Generated seed");

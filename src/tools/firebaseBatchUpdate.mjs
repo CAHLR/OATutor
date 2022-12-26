@@ -336,7 +336,7 @@ async function updateDocuments(_spinner, documents, migrationNote) {
 }
 
 function getProblemIdMapping() {
-    const poolFile = require(path.join(__dirname, "..", "generated", "poolFile.json"))
+    const poolFile = require(path.join(__dirname, "..", "..", "generated", "poolFile.json"))
     if (!Array.isArray(poolFile)) {
         throw new Error()
     }
