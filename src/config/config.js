@@ -2,7 +2,7 @@ import React from 'react';
 import courses from './coursePlans.json';
 import { calculateSemester } from "../util/calculateSemester.js";
 
-import { SITE_NAME } from "./shared-config"
+import { SITE_NAME } from "@common/global-config"
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);

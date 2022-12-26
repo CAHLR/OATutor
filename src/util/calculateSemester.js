@@ -1,4 +1,4 @@
-const { SESSION_SYSTEM } = require('../config/shared-config')
+const { SESSION_SYSTEM } = require('@common/global-config')
 
 const calculateSemester = (ms) => {
     const date = new Date(ms)
