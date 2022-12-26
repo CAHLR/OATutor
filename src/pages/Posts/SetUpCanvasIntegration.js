@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Spacer from "../../Components/_General/Spacer";
+import Spacer from "@components/Spacer";
 import { useStyles } from "./Posts";
 import clsx from "clsx";
-import ZoomImage from "../../Components/_General/ZoomImage";
+import ZoomImage from "@components/ZoomImage";
 import { SITE_NAME } from "../../config/config";
 
 const createCourseLink = "https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-create-a-new-course-from-the-Dashboard-as-an-instructor/ta-p/794"

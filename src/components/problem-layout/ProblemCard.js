@@ -7,18 +7,18 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 
-import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
-import styles from './commonStyles.js';
+import { checkAnswer } from '../../ProblemLogic/checkAnswer.js';
+import styles from './common-styles.js';
 import { withStyles } from '@material-ui/core/styles';
 import HintSystem from './HintSystem.js';
-import { chooseVariables, renderText } from '../ProblemLogic/renderText.js';
-import { ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../config/config.js';
+import { chooseVariables, renderText } from '../../ProblemLogic/renderText.js';
+import { ENABLE_BOTTOM_OUT_HINTS, ThemeContext } from '../../config/config.js';
 
 import "./ProblemCard.css";
-import ProblemInput from "./ProblemInput/ProblemInput";
-import Spacer from "../Components/_General/Spacer";
-import { stagingProp } from "../util/addStagingProperty";
-import ErrorBoundary from "../Components/_General/ErrorBoundary";
+import ProblemInput from "../problem-input/ProblemInput";
+import Spacer from "../Spacer";
+import { stagingProp } from "../../util/addStagingProperty";
+import ErrorBoundary from "../ErrorBoundary";
 import { toastNotifyCompletion, toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 import { joinList } from "../util/formListString";
 

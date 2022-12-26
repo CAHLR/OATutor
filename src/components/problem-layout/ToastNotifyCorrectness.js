@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import WrongAnswerReasons from "../util/wrongAnswerReasons";
+import WrongAnswerReasons from "../../util/wrongAnswerReasons";
 
 export function toastNotifyCorrectness(isCorrect, reason) {
     if (isCorrect) {

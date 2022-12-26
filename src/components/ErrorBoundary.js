@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeContext } from "../../config/config";
+import { ThemeContext } from "../config/config";
 
 export default class ErrorBoundary extends React.Component {
     static contextType = ThemeContext;

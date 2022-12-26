@@ -26,9 +26,9 @@ import { Posts } from "./pages/Posts/Posts";
 import loadFirebaseEnvConfig from "./util/loadFirebaseEnvConfig";
 import generateRandomInt from "./util/generateRandomInt";
 import { cleanObjectKeys } from "./util/cleanObject";
-import GlobalErrorBoundary from "./Components/_General/GlobalErrorBoundary";
+import GlobalErrorBoundary from "./components/GlobalErrorBoundary";
 import { IS_STAGING_OR_DEVELOPMENT } from "./util/getBuildType";
-import TabFocusTrackerWrapper from "./Components/_General/TabFocusTrackerWrapper";
+import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from './config/firebaseConfig.js';

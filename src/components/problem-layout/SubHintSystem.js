@@ -6,9 +6,9 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
-import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
-import Spacer from "../Components/_General/Spacer";
-import { ThemeContext } from "../config/config";
+import { renderText, chooseVariables } from '../../ProblemLogic/renderText.js';
+import Spacer from "../Spacer";
+import { ThemeContext } from "../../config/config";
 
 
 class SubHintSystem extends React.Component {
