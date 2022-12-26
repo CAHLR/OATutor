@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { SITE_NAME, SITE_VERSION, ThemeContext } from "../../config/config";
+import { SITE_NAME, SITE_VERSION, ThemeContext } from "../config/config";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 

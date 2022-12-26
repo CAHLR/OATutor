@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeContext } from "../../config/config";
+import { ThemeContext } from "../config/config";
 import ErrorBoundary from "./ErrorBoundary";
 
 export default class GlobalErrorBoundary extends ErrorBoundary {

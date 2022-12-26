@@ -1,8 +1,8 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import Problem from "../ProblemLayout/Problem.js";
-import LessonSelection from "../ProblemLayout/LessonSelection.js";
+import Problem from "@components/problem-layout/Problem.js";
+import LessonSelection from "@components/problem-layout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
 import {
@@ -16,9 +16,9 @@ import {
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
-import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
-import ErrorBoundary from "../Components/_General/ErrorBoundary";
+import ErrorBoundary from "@components/ErrorBoundary";
 
 let problemPool = require('@generated/flatProblemPool.json')
 

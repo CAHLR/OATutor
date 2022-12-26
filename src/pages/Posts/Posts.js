@@ -2,7 +2,7 @@ import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import React, { useState } from "react";
 import { AppBar, Box, Button, makeStyles, Menu, MenuItem, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import BrandLogoNav from "../../Components/_General/BrandLogoNav";
+import BrandLogoNav from "@components/BrandLogoNav";
 import { SITE_NAME, SITE_VERSION } from "../../config/config";
 
 import HowToUse from "./HowToUse";

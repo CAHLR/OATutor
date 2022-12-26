@@ -1,5 +1,5 @@
 import React from "react";
-import Spacer from "../../Components/_General/Spacer";
+import Spacer from "@components/Spacer";
 import { useStyles } from "./Posts";
 import { HELP_DOCUMENT, SITE_NAME } from "../../config/config";
 

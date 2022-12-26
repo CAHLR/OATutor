@@ -2,9 +2,9 @@ import React from 'react';
 import { InlineMath } from 'react-katex';
 import { dynamicText } from '../config/config.js';
 import { variabilize, chooseVariables } from './variabilize.js';
-import Spacer from "../Components/_General/Spacer";
-import ErrorBoundary from "../Components/_General/ErrorBoundary";
-import RenderMedia from "../Components/_General/RenderMedia";
+import Spacer from "@components/Spacer";
+import ErrorBoundary from "@components/ErrorBoundary";
+import RenderMedia from "@components/RenderMedia";
 
 /**
  * @param {string|*} text

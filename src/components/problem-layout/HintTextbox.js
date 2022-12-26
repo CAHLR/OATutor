@@ -1,14 +1,14 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import styles from './commonStyles.js';
-import { checkAnswer } from '../ProblemLogic/checkAnswer.js';
+import styles from './common-styles.js';
+import { checkAnswer } from '../../ProblemLogic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
-import { chooseVariables } from '../ProblemLogic/renderText.js';
-import { ThemeContext } from '../config/config.js';
-import ProblemInput from "./ProblemInput/ProblemInput";
-import { stagingProp } from "../util/addStagingProperty";
+import { chooseVariables } from '../../ProblemLogic/renderText.js';
+import { ThemeContext } from '../../config/config.js';
+import ProblemInput from "../problem-input/ProblemInput";
+import { stagingProp } from "../../util/addStagingProperty";
 import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 import { joinList } from "../util/formListString";
 

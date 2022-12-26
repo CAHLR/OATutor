@@ -2,11 +2,11 @@ import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Problem from "../ProblemLayout/Problem.js";
+import Problem from "@components/problem-layout/Problem.js";
 
 import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
-import BrandLogoNav from "../Components/_General/BrandLogoNav";
+import BrandLogoNav from "@components/BrandLogoNav";
 
 let problemPool = require('@generated/flatProblemPool.json')
 

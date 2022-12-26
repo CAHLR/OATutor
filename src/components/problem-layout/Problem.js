@@ -6,8 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
-import update from '../BKT/BKTBrains.js'
-import { chooseVariables, renderText } from '../ProblemLogic/renderText.js';
+import update from '../../BKT/BKTBrains.js'
+import { chooseVariables, renderText } from '../../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
@@ -21,13 +21,13 @@ import {
     SHOW_NOT_CANVAS_WARNING,
     SITE_NAME,
     ThemeContext
-} from '../config/config.js';
+} from '../../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
-import ToastID from "../util/toastIds";
+import ToastID from "../../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
-import { stagingProp } from "../util/addStagingProperty";
-import { cleanArray } from "../util/cleanObject";
+import { stagingProp } from "../../util/addStagingProperty";
+import { cleanArray } from "../../util/cleanObject";
 
 
 class Problem extends React.Component {
