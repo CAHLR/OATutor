@@ -11,6 +11,12 @@ const SITE_VERSION = "1.4.0";
 const CURRENT_SEMESTER = calculateSemester(Date.now())
 
 /**
+ * If user does not access the website through Canvas, show a warning (for the first time).
+ * @type {boolean}
+ */
+const SHOW_NOT_CANVAS_WARNING = false;
+
+/**
  * Indicates whether the copyright disclaimer should be shown in the footer of the website.
  * @type {boolean}
  */
@@ -114,5 +120,6 @@ export {
     CURRENT_SEMESTER,
     CANVAS_WARNING_STORAGE_KEY,
     DO_FOCUS_TRACKING,
-    findLessonById
+    findLessonById,
+    SHOW_NOT_CANVAS_WARNING,
 };

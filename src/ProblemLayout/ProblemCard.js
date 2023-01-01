@@ -31,7 +31,8 @@ class ProblemCard extends React.Component {
         this.step = props.step;
         this.index = props.index;
         this.giveStuFeedback = props.giveStuFeedback
-        this.showHints = this.giveStuFeedback == null || this.giveStuFeedback
+        this.giveStuHints = props.giveStuHints
+        this.showHints = this.giveStuHints == null || this.giveStuHints
         this.showCorrectness = this.giveStuFeedback == null || this.giveStuFeedback
         console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway)
         this.hints = this.step.hints[context.hintPathway];
