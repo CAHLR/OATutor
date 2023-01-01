@@ -17,7 +17,13 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { CANVAS_WARNING_STORAGE_KEY, MIDDLEWARE_URL, SITE_NAME, ThemeContext } from '../config/config.js';
+import {
+    CANVAS_WARNING_STORAGE_KEY,
+    MIDDLEWARE_URL,
+    SHOW_NOT_CANVAS_WARNING,
+    SITE_NAME,
+    ThemeContext
+} from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
@@ -37,6 +43,7 @@ class Problem extends React.Component {
         this.stepStates = {};
         this.numCorrect = 0;
         this.giveStuFeedback = this.props.lesson.giveStuFeedback
+        this.giveStuHints = this.props.lesson.giveStuHints
 
         this.state = {
             problem: this.props.problem,
@@ -74,6 +81,7 @@ class Problem extends React.Component {
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
                              seed={this.props.seed} problemVars={this.props.problem.variabilization}
                              lesson={problem.lesson} courseName={problem.courseName} giveStuFeedback={this.giveStuFeedback}
+                             giveStuHints={this.giveStuHints}
                 />
             </Element>
         })
@@ -149,7 +157,7 @@ class Problem extends React.Component {
                 }
             }
         } else {
-            const showWarning = !await localForage.getItem(CANVAS_WARNING_STORAGE_KEY)
+            const showWarning = !await localForage.getItem(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
             if (showWarning) {
                 toast.warn("No credentials found (did you launch this assignment from Canvas?)", {
                     toastId: ToastID.warn_not_from_canvas.toString(),
