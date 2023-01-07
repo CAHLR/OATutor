@@ -44,8 +44,10 @@ class Problem extends React.Component {
         this.numCorrect = 0;
         const giveStuFeedback = this.props.lesson?.giveStuFeedback
         const giveStuHints = this.props.lesson?.giveStuHints
+        const doMasteryUpdate = this.props.lesson?.doMasteryUpdate
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback
         this.giveStuHints = giveStuHints == null || giveStuHints
+        this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate
 
         this.state = {
             problem: this.props.problem,
@@ -197,7 +199,9 @@ class Problem extends React.Component {
                     }, this.context.problemID)
                     continue
                 }
-                update(this.bktParams[kc], isCorrect);
+                if (this.doMasteryUpdate) {
+                    update(this.bktParams[kc], isCorrect);
+                }
             }
         }
 
