@@ -42,8 +42,10 @@ class Problem extends React.Component {
         this.heuristic = context.heuristic;
         this.stepStates = {};
         this.numCorrect = 0;
-        this.giveStuFeedback = this.props.lesson.giveStuFeedback
-        this.giveStuHints = this.props.lesson.giveStuHints
+        const giveStuFeedback = this.props.lesson?.giveStuFeedback
+        const giveStuHints = this.props.lesson?.giveStuHints
+        this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback
+        this.giveStuHints = giveStuHints == null || giveStuHints
 
         this.state = {
             problem: this.props.problem,
