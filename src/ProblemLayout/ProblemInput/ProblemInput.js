@@ -77,18 +77,21 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state, index, showCorrectness } = this.props;
+        const { classes, state, index, showCorrectness, allowRetry } = this.props;
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer } = this.props.step;
 
+        const problemAttempted = state.isCorrect != null
         const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
+        const disableInput = problemAttempted && !allowRetry
 
         if (this.isMatrixInput()) {
             problemType = "MatrixInput"
         }
 
         return (
-            <Grid container spacing={0} justifyContent="center" alignItems="center">
+            <Grid container spacing={0} justifyContent="center" alignItems="center"
+                className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
