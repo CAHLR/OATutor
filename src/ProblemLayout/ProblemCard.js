@@ -20,6 +20,7 @@ import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
 import { toastNotifyCompletion, toastNotifyCorrectness } from "./ToastNotifyCorrectness";
+import { joinList } from "../util/formListString";
 
 
 class ProblemCard extends React.Component {
@@ -32,8 +33,9 @@ class ProblemCard extends React.Component {
         this.index = props.index;
         this.giveStuFeedback = props.giveStuFeedback
         this.giveStuHints = props.giveStuHints
+        this.allowRetry = this.giveStuFeedback
         this.showHints = this.giveStuHints == null || this.giveStuHints
-        this.showCorrectness = this.giveStuFeedback == null || this.giveStuFeedback
+        this.showCorrectness = this.giveStuFeedback
         console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway)
         this.hints = this.step.hints[context.hintPathway];
 
@@ -217,8 +219,11 @@ class ProblemCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { displayHints } = this.state;
+        const { displayHints, isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
+
+        const problemAttempted = isCorrect != null
+
         return (
             <Card className={classes.card}>
                 <CardContent>
@@ -235,6 +240,7 @@ class ProblemCard extends React.Component {
                         <div className="Hints">
                             <ErrorBoundary componentName={"HintSystem"} descriptor={"hint"}>
                                 <HintSystem
+                                    giveStuFeedback={this.giveStuFeedback}
                                     problemID={this.props.problemID}
                                     index={this.props.index}
                                     step={this.step}
@@ -255,6 +261,8 @@ class ProblemCard extends React.Component {
 
                     <div className={classes.root}>
                         <ProblemInput
+                            allowRetry={this.allowRetry}
+                            giveStuFeedback={this.giveStuFeedback}
                             showCorrectness={this.showCorrectness}
                             classes={classes}
                             state={this.state}
@@ -291,7 +299,7 @@ class ProblemCard extends React.Component {
                             <center>
                                 <Button className={classes.button} style={{ width: "80%" }} size="small"
                                         onClick={this.submit}
-                                        disabled={(use_expanded_view && debug)}
+                                        disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted) }
                                         {...stagingProp({
                                             "data-selenium-target": `submit-button-${this.props.index}`
                                         })}>
@@ -306,17 +314,17 @@ class ProblemCard extends React.Component {
                                 alignContent: "center",
                                 justifyContent: "center"
                             }}>
-                                {!this.showCorrectness &&
+                                {(!this.showCorrectness || !this.allowRetry) &&
                                     <img className={classes.checkImage}
                                         style={{ opacity: this.state.isCorrect == null ? 0 : 1, width: "45%" }}
                                         alt="Exclamation Mark Icon"
-                                        title="The instructor has elected to not display correctness"
+                                        title={`The instructor has elected to ${joinList(!this.showCorrectness && 'hide correctness', !this.allowRetry && "disallow retries")}`}
                                         {...stagingProp({
                                             "data-selenium-target": `step-correct-img-${this.props.index}`
                                         })}
                                         src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
                                 }
-                                {this.state.isCorrect && this.showCorrectness &&
+                                {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
                                          alt="Green Checkmark Icon"
@@ -325,7 +333,7 @@ class ProblemCard extends React.Component {
                                          })}
                                          src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
                                 }
-                                {this.state.isCorrect === false && this.showCorrectness &&
+                                {this.state.isCorrect === false && this.showCorrectness && this.allowRetry &&
                                     <img className={classes.checkImage}
                                          style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
                                          alt="Red X Icon"
