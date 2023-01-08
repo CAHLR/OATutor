@@ -64,6 +64,7 @@ const _SHORT_SITE_NAME = SITE_NAME.toLowerCase().replace(/[^a-z]/g, '').substr(0
 
 const USER_ID_STORAGE_KEY = `${_SHORT_SITE_NAME}-user_id`
 const PROGRESS_STORAGE_KEY = `${_SHORT_SITE_NAME}-progress`
+export const LESSON_PROGRESS_STORAGE_KEY = lessonId => `${_SHORT_SITE_NAME}-progress-${lessonId}`
 
 const CANVAS_WARNING_STORAGE_KEY = `${_SHORT_SITE_NAME}-canvas-warning-dismissed`
 

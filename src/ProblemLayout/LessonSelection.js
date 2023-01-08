@@ -86,7 +86,6 @@ class LessonSelection extends React.Component {
                                                             role={"link"}
                                                             onClick={() => {
                                                                 this.props.history.push(`/courses/${i}`)
-                                                                this.props.selectCourse(course)
                                                             }}>
                                                             <img
                                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
@@ -117,7 +116,6 @@ class LessonSelection extends React.Component {
                                                             style={{ marginBottom: "10px" }}
                                                             onClick={() => {
                                                                 this.props.history.push(`/lessons/${lesson.id}`)
-                                                                this.props.selectLesson(lesson)
                                                             }}>
                                                             Select
                                                         </Button>

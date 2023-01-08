@@ -29,7 +29,7 @@ import to from "await-to-js";
 import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
-import * as localForage from "localforage";
+import * as localforage from "localforage";
 import { cleanArray } from "../util/cleanObject";
 
 
@@ -161,7 +161,7 @@ class Problem extends React.Component {
                 }
             }
         } else {
-            const showWarning = !await localForage.getItem(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
+            const showWarning = !await localforage.getItem(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
             if (showWarning) {
                 toast.warn("No credentials found (did you launch this assignment from Canvas?)", {
                     toastId: ToastID.warn_not_from_canvas.toString(),
@@ -170,7 +170,7 @@ class Problem extends React.Component {
                         toast.dismiss(ToastID.warn_not_from_canvas.toString())
                     },
                     onClose: () => {
-                        localForage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
+                        localforage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
                     }
                 })
             } else {
@@ -244,12 +244,14 @@ class Problem extends React.Component {
         }
     }
 
-    clickNextProblem = () => {
+    clickNextProblem = async () => {
         scroll.scrollToTop({ duration: 900, smooth: true });
         this.stepStates = {};
         this.numCorrect = 0;
 
-        this.setState({ problem: this.props.problemComplete(this.context) },
+        const nextProblem = await this.props.problemComplete(this.context)
+
+        this.setState({ problem: nextProblem },
             () => this.setState({
                 steps: this.refreshSteps(this.props.problem),
                 problemFinished: false,

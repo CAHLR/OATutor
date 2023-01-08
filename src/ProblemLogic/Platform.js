@@ -5,13 +5,21 @@ import Problem from "../ProblemLayout/Problem.js";
 import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
-import { ThemeContext, coursePlans, MIDDLEWARE_URL, findLessonById, SITE_NAME } from '../config/config.js';
+import {
+    ThemeContext,
+    coursePlans,
+    MIDDLEWARE_URL,
+    findLessonById,
+    SITE_NAME,
+    LESSON_PROGRESS_STORAGE_KEY
+} from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
+import * as localforage from "localforage";
 
 let problemPool = require('../generated/flatProblemPool.json')
 
@@ -158,10 +166,19 @@ class Platform extends React.Component {
         }
 
         this.lesson = lesson;
-        await this.props.loadProgress();
+
+        const loadLessonProgress = async () => {
+            return (await localforage.getItem(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)).catch(err => {}))
+        }
+
+        const [, prevCompletedProbs] = await Promise.all([this.props.loadBktProgress(), loadLessonProgress()]);
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (2)")
             return
+        }
+        if (prevCompletedProbs) {
+            console.debug("student has already made progress w/ problems in this lesson before", prevCompletedProbs)
+            this.completedProbs = new Set(prevCompletedProbs)
         }
         this.setState({
             currProblem: this._nextProblem(this.context ? this.context : context),
@@ -260,8 +277,16 @@ class Platform extends React.Component {
         }
     }
 
-    problemComplete = (context) => {
+    problemComplete = async (context) => {
         this.completedProbs.add(this.state.currProblem.id);
+        await localforage.setItem(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id), this.completedProbs).catch(error => {
+            this.context.firebase.submitSiteLog("site-error", `componentName: Platform.js`, {
+                errorName: error.name || "n/a",
+                errorCode: error.code || "n/a",
+                errorMsg: error.message || "n/a",
+                errorStack: error.stack || "n/a"
+            }, this.state.currProblem.id);
+        })
         return this._nextProblem(context);
     }
 
@@ -274,7 +299,6 @@ class Platform extends React.Component {
                 toastId: ToastID.successfully_completed_lesson.toString()
             })
         }
-        this.props.saveProgress();
     }
 
     render() {
