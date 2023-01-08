@@ -1,4 +1,4 @@
-const { Enumify } = require("enumify");
+import { Enumify } from "./enumify";
 
 class ToastID extends Enumify {
     static expired_session = new ToastID();
@@ -17,6 +17,10 @@ class ToastID extends Enumify {
 
     static successfully_completed_lesson = new ToastID();
 
+    // noinspection JSVoidFunctionReturnValueUsed
+    /**
+     * @private
+     */
     static _ = this.closeEnum();
 }
 
