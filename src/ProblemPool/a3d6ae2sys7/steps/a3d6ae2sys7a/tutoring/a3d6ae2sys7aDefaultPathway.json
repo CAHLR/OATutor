@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a3d6ae2sys7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=\\frac{5}{7}$$ and $$y=\\frac{2}{7}$$ into both equations.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys7a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$x+y=1$$ $$\\frac{5}{7}+\\frac{2}{7}=1$$ $$\\frac{7}{7}=1$$ $$1=1$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys7a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys7a-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(\\frac{5}{7},\\frac{2}{7})$$ satisfies the first equation, but it must also safisfy the second equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys7a-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$y=\\frac{2}{5} x$$ $$\\frac{2}{7}=\\frac{5\\frac{2}{5}}{7}$$ $$\\frac{2}{7}=\\frac{2}{7}$$",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys7a-h5"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys7a-h6"
+        ],
+        "title": "Solution to Second Equation",
+        "text": "Therefore, $$(\\frac{5}{7},\\frac{2}{7})$$ does satisfies the second equation.",
+        "variabilization": {}
+    },
+    {
+        "id": "a3d6ae2sys7a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys7a-h7"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(\\frac{5}{7},\\frac{2}{7})$$ does make both equations true. $$(\\frac{5}{7},\\frac{2}{7})$$ is a solution.",
+        "variabilization": {}
+    }
+]

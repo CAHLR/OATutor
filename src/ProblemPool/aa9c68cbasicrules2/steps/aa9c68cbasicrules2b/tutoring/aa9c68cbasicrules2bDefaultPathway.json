@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aa9c68cbasicrules2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa9c68cbasicrules2a-h2"
+        ],
+        "title": "The Addition Rule",
+        "text": "If A and B are defined on a sample space, then P(A OR B)=P(A)+P(B)-P(A AND B). We want to the find the probability that A or B occurs: this is the formula to use.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0.715"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2b-h3"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(A OR B)=P(A)+P(B)-P(A AND B)?",
+        "variabilization": {},
+        "subHints": [
+            {
+                "id": "aa9c68cbasicrules2b-h4-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "0.715"
+                ],
+                "dependencies": [],
+                "title": "The Addition Rule Applied",
+                "text": "What is $$0.65+0.65-0.585$$?",
+                "variabilization": {}
+            }
+        ]
+    }
+]

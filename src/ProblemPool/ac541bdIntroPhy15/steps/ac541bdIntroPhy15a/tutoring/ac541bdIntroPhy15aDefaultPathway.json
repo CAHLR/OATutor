@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ac541bdIntroPhy15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recollect the significant figure rules for division and the method to calculate for uncertainty",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy15a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many significant figures are there in 2.0?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy15a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "How many significant figures are there in 90?",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy15a-h3"
+        ],
+        "title": "Combining",
+        "text": "How many significant figures should we have in the answer? (Hint: Minimum value of significant figures for the two numbers we are multiplying)",
+        "variabilization": {}
+    },
+    {
+        "id": "ac541bdIntroPhy15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2.2"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy15a-h4"
+        ],
+        "title": "Combining",
+        "text": "What is the uncertainty percentage for 2 $$\\frac{km}{hr}$$ change at 90 $$\\frac{km}{hr}$$? ((Remember the answer has to have only 2 significant figures))",
+        "variabilization": {}
+    }
+]
