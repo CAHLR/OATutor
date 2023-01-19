@@ -10,6 +10,7 @@ import { ThemeContext } from '../config/config.js';
 import ProblemInput from "./ProblemInput/ProblemInput";
 import { stagingProp } from "../util/addStagingProperty";
 import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
+import { joinList } from "../util/formListString";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -18,9 +19,12 @@ class HintTextbox extends React.Component {
         super(props);
         this.hint = props.hint;
         this.index = props.index;
+        this.giveStuFeedback = props.giveStuFeedback
+        this.allowRetry = this.giveStuFeedback
+        this.showCorrectness = this.giveStuFeedback
         this.state = {
             inputVal: "",
-            isCorrect: context.use_expanded_view && context.debug ? true : null ,
+            isCorrect: context.use_expanded_view && context.debug ? true : null,
             checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             showHints: false,
         }
@@ -64,12 +68,18 @@ class HintTextbox extends React.Component {
 
     render() {
         const { classes, index, hintNum } = this.props;
-        const hintIndex = `${hintNum}-${index}`
+        const { isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
+
+        const hintIndex = `${hintNum}-${index}`
+        const problemAttempted = isCorrect != null
 
         return (
             <div>
                 <ProblemInput
+                    allowRetry={this.allowRetry}
+                    giveStuFeedback={this.giveStuFeedback}
+                    showCorrectness={this.showCorrectness}
                     classes={classes}
                     state={this.state}
                     step={this.hint}
@@ -107,7 +117,7 @@ class HintTextbox extends React.Component {
                         <center>
                             <Button className={classes.button} style={{ width: "80%" }} size="small"
                                     onClick={this.submit}
-                                    disabled={(use_expanded_view && debug)}
+                                    disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted)}
                                     {...stagingProp({
                                         "data-selenium-target": `submit-button-${hintIndex}`
                                     })}
@@ -123,23 +133,33 @@ class HintTextbox extends React.Component {
                             alignContent: "center",
                             justifyContent: "center"
                         }}>
-                            {this.state.isCorrect &&
+                            {(!this.showCorrectness || !this.allowRetry) &&
                                 <img className={classes.checkImage}
-                                     style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
-                                     alt=""
-                                     {...stagingProp({
-                                         "data-selenium-target": `step-correct-img-${hintIndex}`
-                                     })}
-                                     src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                                    style={{ opacity: this.state.isCorrect == null ? 0 : 1, width: "45%" }}
+                                    alt="Exclamation Mark Icon"
+                                    title={`The instructor has elected to ${joinList(!this.showCorrectness && 'hide correctness', !this.allowRetry && "disallow retries")}`}
+                                    {...stagingProp({
+                                        "data-selenium-target": `step-correct-img-${hintIndex}`
+                                    })}
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
                             }
-                            {this.state.isCorrect === false &&
+                            {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
                                 <img className={classes.checkImage}
-                                     style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
-                                     alt=""
-                                     {...stagingProp({
-                                         "data-selenium-target": `step-correct-img-${hintIndex}`
-                                     })}
-                                     src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
+                                    style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
+                                    alt="Green Checkmark Icon"
+                                    {...stagingProp({
+                                        "data-selenium-target": `step-correct-img-${hintIndex}`
+                                    })}
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                            }
+                            {this.state.isCorrect === false && this.showCorrectness && this.allowRetry &&
+                                <img className={classes.checkImage}
+                                    style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                                    alt="Red X Icon"
+                                    {...stagingProp({
+                                        "data-selenium-target": `step-correct-img-${hintIndex}`
+                                    })}
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
                             }
                         </div>
                     </Grid>

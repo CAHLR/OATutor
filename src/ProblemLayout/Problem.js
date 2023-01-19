@@ -17,13 +17,19 @@ import {
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
-import { CANVAS_WARNING_STORAGE_KEY, MIDDLEWARE_URL, SITE_NAME, ThemeContext } from '../config/config.js';
+import {
+    CANVAS_WARNING_STORAGE_KEY,
+    MIDDLEWARE_URL,
+    SHOW_NOT_CANVAS_WARNING,
+    SITE_NAME,
+    ThemeContext
+} from '../config/config.js';
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
-import * as localForage from "localforage";
+import * as localforage from "localforage";
 import { cleanArray } from "../util/cleanObject";
 
 
@@ -36,6 +42,12 @@ class Problem extends React.Component {
         this.heuristic = context.heuristic;
         this.stepStates = {};
         this.numCorrect = 0;
+        const giveStuFeedback = this.props.lesson?.giveStuFeedback
+        const giveStuHints = this.props.lesson?.giveStuHints
+        const doMasteryUpdate = this.props.lesson?.doMasteryUpdate
+        this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback
+        this.giveStuHints = giveStuHints == null || giveStuHints
+        this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate
 
         this.state = {
             problem: this.props.problem,
@@ -72,7 +84,8 @@ class Problem extends React.Component {
             return <Element name={index.toString()} key={Math.random()}>
                 <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
                              seed={this.props.seed} problemVars={this.props.problem.variabilization}
-                             lesson={problem.lesson} courseName={problem.courseName}
+                             lesson={problem.lesson} courseName={problem.courseName} giveStuFeedback={this.giveStuFeedback}
+                             giveStuHints={this.giveStuHints}
                 />
             </Element>
         })
@@ -148,7 +161,7 @@ class Problem extends React.Component {
                 }
             }
         } else {
-            const showWarning = !await localForage.getItem(CANVAS_WARNING_STORAGE_KEY)
+            const showWarning = !await localforage.getItem(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
             if (showWarning) {
                 toast.warn("No credentials found (did you launch this assignment from Canvas?)", {
                     toastId: ToastID.warn_not_from_canvas.toString(),
@@ -157,7 +170,7 @@ class Problem extends React.Component {
                         toast.dismiss(ToastID.warn_not_from_canvas.toString())
                     },
                     onClose: () => {
-                        localForage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
+                        localforage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
                     }
                 })
             } else {
@@ -186,7 +199,9 @@ class Problem extends React.Component {
                     }, this.context.problemID)
                     continue
                 }
-                update(this.bktParams[kc], isCorrect);
+                if (this.doMasteryUpdate) {
+                    update(this.bktParams[kc], isCorrect);
+                }
             }
         }
 
@@ -221,14 +236,22 @@ class Problem extends React.Component {
                 this.setState({ problemFinished: true });
             }
         }
+
+        if (this.giveStuFeedback != null && !this.giveStuFeedback) {
+            if (!Object.values(this.stepStates).some(stepState => stepState == null)) {
+                this.setState({ problemFinished: true })
+            }
+        }
     }
 
-    clickNextProblem = () => {
+    clickNextProblem = async () => {
         scroll.scrollToTop({ duration: 900, smooth: true });
         this.stepStates = {};
         this.numCorrect = 0;
 
-        this.setState({ problem: this.props.problemComplete(this.context) },
+        const nextProblem = await this.props.problemComplete(this.context)
+
+        this.setState({ problem: nextProblem },
             () => this.setState({
                 steps: this.refreshSteps(this.props.problem),
                 problemFinished: false,

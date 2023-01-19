@@ -77,24 +77,27 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state, index } = this.props;
+        const { classes, state, index, showCorrectness, allowRetry } = this.props;
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer } = this.props.step;
 
+        const problemAttempted = state.isCorrect != null
         const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
+        const disableInput = problemAttempted && !allowRetry
 
         if (this.isMatrixInput()) {
             problemType = "MatrixInput"
         }
 
         return (
-            <Grid container spacing={0} justifyContent="center" alignItems="center">
+            <Grid container spacing={0} justifyContent="center" alignItems="center"
+                className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <center
                             ref={this.equationRef}
-                            className={clsx(state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}
+                            className={clsx(showCorrectness && state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}
                             {...stagingProp({
                                 "data-selenium-target": `arithmetic-answer-${index}`
                             })}
@@ -119,14 +122,14 @@ class ProblemInput extends React.Component {
                             {...stagingProp({
                                 "data-selenium-target": `string-answer-${index}`
                             })}
-                            error={state.isCorrect === false}
+                            error={showCorrectness && state.isCorrect === false}
                             className={classes.inputField}
                             variant="outlined"
                             onChange={(evt) => this.props.editInput(evt)}
                             onKeyPress={(evt) => this.props.handleKey(evt)}
                             InputProps={{
                                 classes: {
-                                    notchedOutline: ((state.isCorrect !== false && state.usedHints) ? classes.muiUsedHint : null)
+                                    notchedOutline: ((showCorrectness && state.isCorrect !== false && state.usedHints) ? classes.muiUsedHint : null)
                                 }
                             }}
                             {...(use_expanded_view && debug) ? {

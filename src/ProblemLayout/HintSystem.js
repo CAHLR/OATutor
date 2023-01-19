@@ -22,6 +22,8 @@ class HintSystem extends React.Component {
         for (var i = 0; i < this.props.hints.length; i++) {
             subHintsFinished.push(new Array((this.props.hints[i].subHints !== undefined ? this.props.hints[i].subHints.length : 0)).fill(0));
         }
+
+        this.giveStuFeedback = props.giveStuFeedback
         this.state = {
             latestStep: 0,
             currentExpanded: -1,
@@ -138,13 +140,16 @@ class HintSystem extends React.Component {
                                                      submitHint={this.props.submitHint}
                                                      seed={this.props.seed}
                                                      hintVars={Object.assign({}, this.props.stepVars, hint.variabilization)}
-                                                     toggleHints={(event) => this.toggleSubHints(event, i)}/>
+                                                     toggleHints={(event) => this.toggleSubHints(event, i)}
+                                                     giveStuFeedback={this.giveStuFeedback}
+                                        />
                                     </div> : ""}
                                 {(showSubHints[i] || (use_expanded_view && debug)) && hint.subHints !== undefined ?
                                     <div className="SubHints">
                                         <Spacer/>
                                         <ErrorBoundary componentName={"SubHintSystem"}>
                                             <SubHintSystem
+                                                giveStuFeedback={this.giveStuFeedback}
                                                 problemID={problemID}
                                                 hints={hint.subHints}
                                                 unlockHint={this.unlockSubHint}

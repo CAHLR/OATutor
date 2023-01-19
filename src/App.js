@@ -4,7 +4,7 @@ import Platform from './ProblemLogic/Platform.js';
 import DebugPlatform from './ProblemLogic/DebugPlatform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
-import * as localForage from "localforage";
+import * as localforage from "localforage";
 
 import {
     Route,
@@ -168,7 +168,7 @@ class App extends React.Component {
     }
 
     removeProgress = async () => {
-        await localForage.removeItem(PROGRESS_STORAGE_KEY)
+        await localforage.removeItem(PROGRESS_STORAGE_KEY)
         this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams)
         window.location.reload();
     }
@@ -183,7 +183,7 @@ class App extends React.Component {
                 return this.originalBktParams[key]?.probMastery !== val.probMastery
             })
         )
-        localForage.setItem(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
+        localforage.setItem(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
             if (err) {
                 console.debug('save progress error: ', err)
                 toast.warn('Unable to save mastery progress :(', {
@@ -196,8 +196,8 @@ class App extends React.Component {
         });
     }
 
-    loadProgress = async () => {
-        const progress = await localForage.getItem(PROGRESS_STORAGE_KEY).catch(_e => {
+    loadBktProgress = async () => {
+        const progress = await localforage.getItem(PROGRESS_STORAGE_KEY).catch(_e => {
             console.debug('error with getting previous progress', _e)
         });
         if (progress == null || typeof progress !== 'object' || Object.keys(progress).length === 0) {
@@ -236,24 +236,24 @@ class App extends React.Component {
                                 <Switch>
                                     <Route exact path="/" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                            loadProgress={this.loadProgress}
+                                            loadBktProgress={this.loadBktProgress}
                                             removeProgress={this.removeProgress} {...props} />
                                     )}/>
                                     <Route path="/courses/:courseNum" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                            loadProgress={this.loadProgress}
+                                            loadBktProgress={this.loadBktProgress}
                                             removeProgress={this.removeProgress}
                                             courseNum={props.match.params.courseNum} {...props} />
                                     )}/>
                                     <Route path="/lessons/:lessonID" render={(props) => (
                                         <Platform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                            loadProgress={this.loadProgress}
+                                            loadBktProgress={this.loadBktProgress}
                                             removeProgress={this.removeProgress}
                                             lessonID={props.match.params.lessonID} {...props} />
                                     )}/>
                                     <Route path="/debug/:problemID" render={(props) => (
                                         <DebugPlatform key={Date.now()} saveProgress={() => this.saveProgress()}
-                                            loadProgress={this.loadProgress}
+                                            loadBktProgress={this.loadBktProgress}
                                             removeProgress={this.removeProgress}
                                             problemID={props.match.params.problemID} {...props} />
                                     )}/>

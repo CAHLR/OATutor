@@ -16,6 +16,7 @@ class SubHintSystem extends React.Component {
 
     constructor(props) {
         super(props);
+        this.giveStuFeedback = props.giveStuFeedback
         this.state = {
             latestStep: 0,
             currentExpanded: -1,
@@ -75,7 +76,9 @@ class SubHintSystem extends React.Component {
                                             <HintTextbox hint={hint} type={"subHintTextbox"}
                                                          hintNum={i}
                                                          index={`${index}-${parent}`}
-                                                         submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)}/>
+                                                         submitHint={(parsed, hint, correctAnswer, hintNum) => this.props.submitHint(parsed, hint, correctAnswer, i, hintNum)}
+                                                         giveStuFeedback={this.giveStuFeedback}
+                                            />
                                         </div> : ""}
                                 </Typography>
                             </AccordionDetails>
