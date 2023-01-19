@@ -94,6 +94,7 @@ class App extends React.Component {
 
         if (IS_STAGING_OR_DEVELOPMENT) {
             document["oats-meta-site-hash"] = process.env.REACT_APP_COMMIT_HASH
+            document["oats-meta-site-updatetime"] = process.env.REACT_APP_BUILD_TIMESTAMP
         }
 
         const onLocationChange = () => {

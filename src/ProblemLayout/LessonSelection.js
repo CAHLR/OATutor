@@ -11,6 +11,8 @@ import { _coursePlansNoEditor, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '.
 import Spacer from "../Components/_General/Spacer";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { Typography } from "@material-ui/core";
+import { IS_STAGING_OR_DEVELOPMENT } from "../util/getBuildType";
+import BuildTimeIndicator from "../Components/_General/BuildTimeIndicator";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -63,9 +65,13 @@ class LessonSelection extends React.Component {
                                     ? <h1>Welcome Instructor!</h1>
                                     : <h1>Welcome to {SITE_NAME.replace(/\s/, "")}!</h1>
                                 }
+
                                 <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
                                 {this.isPrivileged
                                     && <h4>(for {this.user.resource_link_title})</h4>
+                                }
+                                {
+                                    IS_STAGING_OR_DEVELOPMENT && <BuildTimeIndicator/>
                                 }
                             </center>
                             <Divider/>

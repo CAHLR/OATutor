@@ -21,6 +21,9 @@ jobs:
           echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
           echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
 
+      - name: Get build time
+        run: echo "build_timestamp=$(date +%s%3N)" >> $GITHUB_ENV
+
       - uses: actions/setup-node@v2.4.1
 
       - name: Change homepage in package.json
@@ -53,6 +56,7 @@ jobs:
           REACT_APP_BUILD_TYPE: "content-staging"
           REACT_APP_MIDDLEWARE_URL: ${{ secrets.STAGING_MIDDLEWARE_URL }}
           REACT_APP_COMMIT_HASH: ${{ github.sha }}
+          REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
 
       - uses: actions/checkout@v2
         with:
