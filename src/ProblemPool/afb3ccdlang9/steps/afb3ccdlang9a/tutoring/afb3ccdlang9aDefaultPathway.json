@@ -1,0 +1,40 @@
+[
+    {
+        "id": "afb3ccdlang9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write a phrase",
+        "text": "Write a phrase about the length of the rectangl: 14 less than the width",
+        "variabilization": {}
+    },
+    {
+        "id": "afb3ccdlang9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb3ccdlang9a-h1"
+        ],
+        "title": "Substitution",
+        "text": "Then, we substitute w for \"the width\".",
+        "variabilization": {}
+    },
+    {
+        "id": "afb3ccdlang9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb3ccdlang9a-h2"
+        ],
+        "title": "Subtration",
+        "text": "Rewrite less than as subtracted from.",
+        "variabilization": {}
+    },
+    {
+        "id": "afb3ccdlang9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb3ccdlang9a-h3"
+        ],
+        "title": "Translate",
+        "text": "Translate the phrase into algebra: w - 14",
+        "variabilization": {}
+    }
+]

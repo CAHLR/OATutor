@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aadff92AppQuad13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "Let the width be w, we can write the length in terms of w as $$2+2w$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad13a-h1"
+        ],
+        "title": "Equation For Rectangle Area",
+        "text": "Area of $$Rectangle=width length=w \\left(2+2w\\right)=24$$",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad13a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad13a-h3"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "Given $$w \\left(2+2w\\right)=24$$, use quadratic formula to solve for w. We get the width $$w=-4$$ or 3. Given that width of rectangle has to be positive, we can omit the negative answer. Therefore, the width is 3.",
+        "variabilization": {}
+    },
+    {
+        "id": "aadff92AppQuad13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8"
+        ],
+        "dependencies": [
+            "aadff92AppQuad13a-h4"
+        ],
+        "title": "Find the Length",
+        "text": "Given the width is 3, the length is two more feet than twice the width. What is the length?",
+        "variabilization": {}
+    }
+]

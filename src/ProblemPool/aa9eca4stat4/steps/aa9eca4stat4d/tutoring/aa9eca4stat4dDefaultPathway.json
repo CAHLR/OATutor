@@ -1,0 +1,29 @@
+[
+    {
+        "id": "aa9eca4stat4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Statistic",
+        "text": "The statistic is the measured value from the sample. It measures exactly the same thing as the parameter does, just for a subset of the population.",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9eca4stat4d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sample"
+        ],
+        "dependencies": [
+            "aa9eca4stat4d-h1"
+        ],
+        "title": "Identitfying Statistic",
+        "text": "What is the statistic of the study? Essentially, what is the calculated value that you want to determine for the smaller sample? Is it the POPULATION mean health costs or the SAMPLE mean health costs?",
+        "variabilization": {},
+        "choices": [
+            "Population",
+            "Sample"
+        ]
+    }
+]
