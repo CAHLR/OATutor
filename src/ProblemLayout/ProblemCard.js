@@ -37,7 +37,7 @@ class ProblemCard extends React.Component {
         this.showHints = this.giveStuHints == null || this.giveStuHints
         this.showCorrectness = this.giveStuFeedback
         console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway)
-        this.hints = this.step.hints[context.hintPathway];
+        this.hints = JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
 
         for (let hint of this.hints) {
             hint.dependencies = hint.dependencies.map(dependency => this._findHintId(this.hints, dependency));
@@ -93,6 +93,7 @@ class ProblemCard extends React.Component {
                 return i;
             }
         }
+        console.debug("hint not found..?", hints, "target:", targetId)
         return -1;
     }
 
