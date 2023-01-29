@@ -254,12 +254,6 @@ class Platform extends React.Component {
             console.log("Graduated");
             return null;
         } else if (chosenProblem == null) {
-            if (this.lesson && this.lesson.giveStuFeedback != null && !this.lesson.giveStuFeedback) {
-                // If we don't want to give student feedback on problem correctness, don't recycle problems
-                this.setState({ status: "exhausted" });
-                return null;
-            }
-
             // We have finished all the problems
             if (this.lesson && !this.lesson.allowRecycle) {
                 // If we do not allow problem recycle then we have exhausted the pool
