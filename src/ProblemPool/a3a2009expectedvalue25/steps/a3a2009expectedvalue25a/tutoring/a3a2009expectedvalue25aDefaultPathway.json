@@ -13,7 +13,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "0, 5, 25, 100"
+            "$$0$$, $$5$$, $$25$$, $$100$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h1"
@@ -22,10 +22,10 @@
         "text": "First, we need to determine the possible outcomes, or the possible amounts of money that people can earn from the lottery. What are the possible outcomes?",
         "variabilization": {},
         "choices": [
-            "0, 5, 25, 100",
-            "5, 25, 100",
-            "0, 5",
-            "0, 5, 10, 25, 100"
+            "$$0$$, $$5$$, $$25$$, $$100$$",
+            "$$5$$, $$25$$, $$100$$",
+            "$$0$$, $$5$$",
+            "$$0$$, $$5$$, $$10$$, $$25$$, $$100$$"
         ]
     },
     {
@@ -34,7 +34,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.969"
+            "$$0.969$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h2"
@@ -49,11 +49,11 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0.969"
+                    "$$0.969$$"
                 ],
                 "dependencies": [],
                 "title": "Determining Probability of $0",
-                "text": "We know that there are 250 people who get $5, 50 who get $25, and 10 that get $100. That means there are $$10, 000-250-25-10=969$$ left to get $0. What is the probability of getting $0?",
+                "text": "We know that there are $$250$$ people who get $5, $$50$$ who get $25, and $$10$$ that get $100. That means there are $$10, 000-250-25-10=969$$ left to get $0. What is the probability of getting $0?",
                 "variabilization": {}
             }
         ]
@@ -64,7 +64,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.025"
+            "$$0.025$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h3"
@@ -79,7 +79,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.005"
+            "$$0.005$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h4"
@@ -94,7 +94,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.001"
+            "$$0.001$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h5"
@@ -109,7 +109,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0"
+            "$$0$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h6"
@@ -124,7 +124,7 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0"
+                    "$$0$$"
                 ],
                 "dependencies": [],
                 "title": "$$x P\\left(x\\right)$$ for $$x=0$$",
@@ -139,7 +139,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.125"
+            "$$0.125$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h7"
@@ -154,7 +154,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.125"
+            "$$0.125$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h8"
@@ -169,7 +169,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.1"
+            "$$0.1$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h9"
@@ -184,7 +184,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.35"
+            "$$0.35$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue25a-h10"

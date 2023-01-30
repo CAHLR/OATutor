@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4"
+            "$$4$$"
         ],
         "dependencies": [
             "a59a759hypergeometric19b-h5"
@@ -30,7 +30,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "8"
+            "$$8$$"
         ],
         "dependencies": [
             "a59a759hypergeometric19b-h6"
@@ -45,7 +45,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "9"
+            "$$9$$"
         ],
         "dependencies": [
             "a59a759hypergeometric19b-h7"
@@ -60,19 +60,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "X ~ H(4, 8, 9)"
+            "X ~ H(4, $$8$$, 9)"
         ],
         "dependencies": [
             "a59a759hypergeometric19b-h8"
         ],
         "title": "Putting it All Together",
-        "text": "Knowing that the size of the group of interest is 7, the size of the second group is 6, and the size of the chosen sample is 8, plug this into the formula to determine the hypergeometric notation of this question.",
+        "text": "Knowing that the size of the group of interest is $$7$$, the size of the second group is $$6$$, and the size of the chosen sample is $$8$$, plug this into the formula to determine the hypergeometric notation of this question.",
         "variabilization": {},
         "choices": [
-            "X ~ H(4, 8, 9)",
-            "X ~ H(4, 9, 8)",
-            "X ~ H(8, 4, 9)",
-            "X ~ H(8, 9, 4)"
+            "X ~ H(4, $$8$$, 9)",
+            "X ~ H(4, $$9$$, 8)",
+            "X ~ H(8, $$4$$, 9)",
+            "X ~ H(8, $$9$$, 4)"
         ]
     }
 ]

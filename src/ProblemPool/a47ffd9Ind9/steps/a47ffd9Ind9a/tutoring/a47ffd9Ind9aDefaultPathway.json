@@ -5,7 +5,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.5"
+            "$$0.5$$"
         ],
         "dependencies": [],
         "title": "Negation",
@@ -18,7 +18,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.25"
+            "$$0.25$$"
         ],
         "dependencies": [
             "a47ffd9Ind9a-h1"
@@ -33,13 +33,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.75"
+            "$$0.75$$"
         ],
         "dependencies": [
             "a47ffd9Ind9a-h2"
         ],
         "title": "Answer",
-        "text": "Since we are looking for the probability that at least one card is black, this means that we will be looking for {BB, RB, BR}. This corresponds to the situation that we don't get {RR}. Since all these events are mutually exclusive, we can calculate this probability by the formula 1 - P(All Red). Since P(All Red) $$=$$ .25 as we calculated before, what is our final answer?",
+        "text": "Since we are looking for the probability that at least one card is black, this means that we will be looking for {BB, RB, BR}. This corresponds to the situation that we don't get {RR}. Since all these events are mutually exclusive, we can calculate this probability by the formula $$1$$ - P(All Red). Since P(All Red) $$=$$ $$.25$$ as we calculated before, what is our final answer?",
         "variabilization": {}
     }
 ]

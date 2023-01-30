@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Standard Form of Hyperbola with Center (h,k)",
-        "text": "The standard form of the equation of a hyperbola with center (h,k) and transverse axis parallel to the $$x-axis$$ is $$\\frac{{\\left(x-h\\right)}^2}{a^2}-\\frac{{\\left(y-k\\right)}^2}{b^2}=1$$ where the length of the transverse axis is 2a the coordinates of the vertices are (h+a,k),(h-a,k) the length of the conjugate axis is $$2b$$ the coordinates of the co-vertices are (h,k+b),(h,k-b) the distance between the foci is 2c, where $$c^2=a^2+b^2$$ the coordinates of the foci are (h+c,k),(h-c,k) The asymptotes of the hyperbola coincide with the diagonals of the central rectangle. The length of the rectangle is 2a and its width is $$2b$$. The slopes of the diagonals are $$\\frac{b}{a}$$ and $$\\frac{-b}{a}$$, and each diagonal passes through the center (h,k). Using the point-slope formula, it is simple to show that the equations of the asymptotes are $$y=\\frac{b}{a} \\left(x-h\\right)+k$$ and $$y=\\frac{-b}{a} \\left(x-h\\right)+k$$. (See the left image) The standard form of the equation of a hyperbola with center (h,k) and transverse axis parallel to the $$y-axis$$ is $$\\frac{{\\left(y-k\\right)}^2}{a^2}-\\frac{{\\left(x-h\\right)}^2}{b^2}=1$$ where the length of the transverse axis is 2a the coordinates of the vertices are (h,k+a),(h,k-a) the length of the conjugate axis is $$2b$$ the coordinates of the co-vertices are (h+b,k),(h-b,k) the distance between the foci is 2c, where $$c^2=a^2+b^2$$ the coordinates of the foci are (h,k+c),(h,k-c) Using the reasoning above, the equations of the asymptotes are $$y=\\frac{a}{b} \\left(x-h\\right)+k$$ and $$y=\\frac{-a}{b} \\left(x-h\\right)+k$$.\\n##figure1.gif##",
+        "text": "The standard form of the equation of a hyperbola with center (h,k) and transverse axis parallel to the x-axis is\n$$\\frac{{\\left(x-h\\right)}^2}{a^2}-\\frac{{\\left(y-k\\right)}^2}{b^2}=1$$\nwhere\nthe length of the transverse axis is 2a\nthe coordinates of the vertices are (h+a,k),(h-a,k)\nthe length of the conjugate axis is $$2b$$\nthe coordinates of the co-vertices are (h,k+b),(h,k-b)\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\nthe coordinates of the foci are (h+c,k),(h-c,k)\nThe asymptotes of the hyperbola coincide with the diagonals of the central rectangle. The length of the rectangle is 2a and its width is $$2b$$. The slopes of the diagonals are $$\\frac{b}{a}$$ and $$\\frac{-b}{a}$$, and each diagonal passes through the center (h,k). Using the point-slope formula, it is simple to show that the equations of the asymptotes are $$y=\\frac{b}{a} \\left(x-h\\right)+k$$ and $$y=\\frac{-b}{a} \\left(x-h\\right)+k$$.\n(See the left image)\n|newline| The standard form of the equation of a hyperbola with center (h,k) and transverse axis parallel to the y-axis is\n$$\\frac{{\\left(y-k\\right)}^2}{a^2}-\\frac{{\\left(x-h\\right)}^2}{b^2}=1$$\nwhere\nthe length of the transverse axis is 2a\nthe coordinates of the vertices are (h,k+a),(h,k-a)\nthe length of the conjugate axis is $$2b$$\nthe coordinates of the co-vertices are (h+b,k),(h-b,k)\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\nthe coordinates of the foci are (h,k+c),(h,k-c)\nUsing the reasoning above, the equations of the asymptotes are $$y=\\frac{a}{b} \\left(x-h\\right)+k$$ and $$y=\\frac{-a}{b} \\left(x-h\\right)+k$$.\\n##figure1.gif##",
         "variabilization": {}
     },
     {
@@ -38,7 +38,7 @@
             "a9ed39ahyperbola5a-h2"
         ],
         "title": "Appropriate Standard Form",
-        "text": "Since the transverse axis is on the $$x-axis$$, which standard form for hyperbola should we use?",
+        "text": "Since the transverse axis is on the x-axis, which standard form for hyperbola should we use?",
         "variabilization": {},
         "choices": [
             "$$\\frac{{\\left(x-h\\right)}^2}{a^2}-\\frac{{\\left(y-k\\right)}^2}{b^2}=1$$",
@@ -70,13 +70,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "3"
+            "$$3$$"
         ],
         "dependencies": [
             "a9ed39ahyperbola5a-h4"
         ],
         "title": "Vertices",
-        "text": "It is given that vertices are $$(0,-2)$$ and $$(6,-2)$$. The length of the transverse axis, 2a, is bounded by the vertices. We can thus find a by dividing the length between the two vertices by 2. What is a in the standard form of hyperbola?",
+        "text": "It is given that vertices are $$(0,-2)$$ and $$(6,-2)$$. The length of the transverse axis, 2a, is bounded by the vertices. We can thus find a by dividing the length between the two vertices by $$2$$. What is a in the standard form of hyperbola?",
         "variabilization": {}
     },
     {
@@ -85,7 +85,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "5"
+            "$$5$$"
         ],
         "dependencies": [
             "a9ed39ahyperbola5a-h5"
@@ -100,7 +100,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4"
+            "$$4$$"
         ],
         "dependencies": [
             "a9ed39ahyperbola5a-h6"

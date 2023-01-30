@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "{(1,1), (1,3), (2,1), (2,2), (2,3), (2,4), (3,1), (3,2), (3,3), (3,4), (4,2), (4,4)}"
+            "{$$(1,1)$$, $$(1,3)$$, $$(2,1)$$, $$(2,2)$$, $$(2,3)$$, $$(2,4)$$, $$(3,1)$$, $$(3,2)$$, $$(3,3)$$, $$(3,4)$$, $$(4,2)$$, $$(4,4)$$}"
         ],
         "dependencies": [
             "a916a3bterminology2g-h15"
@@ -24,10 +24,10 @@
         "text": "What is the list of outcomes that exist in A OR B? Effectively, which ordered pairs have a sum that is even OR the first number is prime?",
         "variabilization": {},
         "choices": [
-            "{(1,1), (1,3), (2,1), (2,2), (2,3), (2,4), (3,1), (3,2), (3,3), (3,4), (4,2), (4,4)}",
-            "{(2,2), (2,4), (3,1), (3,3)}",
-            "{(1,1), (1,3), (4,2), (4,4)}",
-            "{(2,1), (2,3), (3,2), (3,4)}"
+            "{$$(1,1)$$, $$(1,3)$$, $$(2,1)$$, $$(2,2)$$, $$(2,3)$$, $$(2,4)$$, $$(3,1)$$, $$(3,2)$$, $$(3,3)$$, $$(3,4)$$, $$(4,2)$$, $$(4,4)$$}",
+            "{$$(2,2)$$, $$(2,4)$$, $$(3,1)$$, $$(3,3)$$}",
+            "{$$(1,1)$$, $$(1,3)$$, $$(4,2)$$, $$(4,4)$$}",
+            "{$$(2,1)$$, $$(2,3)$$, $$(3,2)$$, $$(3,4)$$}"
         ]
     },
     {
@@ -46,7 +46,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "10"
+            "$$10$$"
         ],
         "dependencies": [
             "a916a3bterminology2g-h17"
@@ -61,7 +61,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "12"
+            "$$12$$"
         ],
         "dependencies": [
             "a916a3bterminology2g-h18"

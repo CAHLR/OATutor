@@ -13,7 +13,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$-1$$, 256"
+            "$$-1$$, $$256$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue6a-h1"
@@ -22,10 +22,10 @@
         "text": "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?",
         "variabilization": {},
         "choices": [
-            "$$-1$$, 256",
-            "0, 256",
-            "0, 255",
-            "$$-1$$, 255"
+            "$$-1$$, $$256$$",
+            "$$0$$, $$256$$",
+            "$$0$$, $$255$$",
+            "$$-1$$, $$255$$"
         ]
     },
     {
@@ -53,7 +53,7 @@
                 ],
                 "dependencies": [],
                 "title": "Determining Probability of $256",
-                "text": "The probability of guessing the suit correctly is $$\\frac{1}{4}$$ since there are 4 suits, each with an even number of cards. Then, we need to guess correctly 4 times. Therefore, we have to take $$\\frac{1}{4}$$ to the power of 4. What is $$\\frac{1}{4}$$ to the power of 4?",
+                "text": "The probability of guessing the suit correctly is $$\\frac{1}{4}$$ since there are $$4$$ suits, each with an even number of cards. Then, we need to guess correctly $$4$$ times. Therefore, we have to take $$\\frac{1}{4}$$ to the power of $$4$$. What is $$\\frac{1}{4}$$ to the power of 4?",
                 "variabilization": {}
             }
         ]
@@ -79,7 +79,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "1"
+            "$$1$$"
         ],
         "dependencies": [
             "a3a2009expectedvalue6a-h4"

@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "6"
+            "$$6$$"
         ],
         "dependencies": [
             "a59a759hypergeometric8b-h3"
@@ -30,7 +30,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "5"
+            "$$5$$"
         ],
         "dependencies": [
             "a59a759hypergeometric8b-h4"
@@ -45,7 +45,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4"
+            "$$4$$"
         ],
         "dependencies": [
             "a59a759hypergeometric8b-h5"
@@ -60,19 +60,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "X ~ H(6, 5, 4)"
+            "X ~ H(6, $$5$$, 4)"
         ],
         "dependencies": [
             "a59a759hypergeometric8b-h6"
         ],
         "title": "Putting it All Together",
-        "text": "Knowing that the size of the group of interest is 6, the size of the second group is 5, and the size of the chosen sample is 4, plug this into the formula to determine the hypergeometric notation of this question.",
+        "text": "Knowing that the size of the group of interest is $$6$$, the size of the second group is $$5$$, and the size of the chosen sample is $$4$$, plug this into the formula to determine the hypergeometric notation of this question.",
         "variabilization": {},
         "choices": [
-            "X ~ H(6, 5, 4)",
-            "X ~ H(6, 4, 5)",
-            "X ~ H(5, 6, 4)",
-            "X ~ H(6, 5, 11)"
+            "X ~ H(6, $$5$$, 4)",
+            "X ~ H(6, $$4$$, 5)",
+            "X ~ H(5, $$6$$, 4)",
+            "X ~ H(6, $$5$$, 11)"
         ]
     }
 ]

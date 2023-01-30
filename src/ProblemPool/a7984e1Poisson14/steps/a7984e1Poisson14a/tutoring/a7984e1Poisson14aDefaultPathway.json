@@ -13,13 +13,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "200"
+            "$$200$$"
         ],
         "dependencies": [
             "a7984e1Poisson14a-h1"
         ],
         "title": "Input",
-        "text": "We are using information for the next 200 days. What is $$n$$?",
+        "text": "We are using information for the next $$200$$ days. What is $$n$$?",
         "variabilization": {}
     },
     {
@@ -28,7 +28,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.0102"
+            "$$0.0102$$"
         ],
         "dependencies": [
             "a7984e1Poisson14a-h2"
@@ -43,13 +43,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "10"
+            "$$10$$"
         ],
         "dependencies": [
             "a7984e1Poisson14a-h3"
         ],
         "title": "Input",
-        "text": "We are finding the probability that there will be low seismic activity in ten of the next 200 days. What goes into the third argument of the binompdf procedure?",
+        "text": "We are finding the probability that there will be low seismic activity in ten of the next $$200$$ days. What goes into the third argument of the binompdf procedure?",
         "variabilization": {}
     },
     {
@@ -59,7 +59,7 @@
             "a7984e1Poisson14a-h4"
         ],
         "title": "Calculator",
-        "text": "$$P(x=10)=binompdf(200$$, .0102, 10). Put this into the calculator to get the answer.",
+        "text": "$$P(x=10)=binompdf(200$$, $$.0102$$, 10). Put this into the calculator to get the answer.",
         "variabilization": {}
     },
     {
@@ -69,7 +69,7 @@
             "a7984e1Poisson14a-h5"
         ],
         "title": "Calculator",
-        "text": "Calculator steps: press 2nd DISTR, arrow down to binompdf. Press ENTER. Enter (200, .0102, 10).",
+        "text": "Calculator steps: press 2nd DISTR, arrow down to binompdf. Press ENTER. Enter (200, $$.0102$$, 10).",
         "variabilization": {}
     }
 ]
