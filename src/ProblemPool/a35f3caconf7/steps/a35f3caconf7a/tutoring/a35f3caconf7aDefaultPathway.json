@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "\"Plus-Four\" Method",
-        "text": "To calculate the confidence interval using the \"plus-four\" method, pretend that we have four additional observations where two of these observations are successes and two are failures. The new sample size, then, is n + 4, and the new count of successes is x + 2.",
+        "text": "To calculate the confidence interval using the \"plus-four\" method, pretend that we have four additional observations where two of these observations are successes and two are failures. The new sample size, then, is $$n$$ + $$4$$, and the new count of successes is $$x$$ + $$2$$.",
         "variabilization": {}
     },
     {
@@ -23,7 +23,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "54"
+            "$$54$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h1",
@@ -39,7 +39,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "15"
+            "$$15$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h3"
@@ -54,7 +54,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.278"
+            "$$0.278$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h4"
@@ -69,10 +69,10 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0.278"
+                    "$$0.278$$"
                 ],
                 "dependencies": [],
-                "title": "Plugging in x and n to solve for p'",
+                "title": "Plugging in $$x$$ and $$n$$ to solve for p'",
                 "text": "What is $$\\frac{15}{54}$$, rounded to the nearest thousandths place?",
                 "variabilization": {}
             }
@@ -85,7 +85,7 @@
             "a35f3caconf7a-h5"
         ],
         "title": "q' Equation",
-        "text": "q' $$=$$ 1 - p'",
+        "text": "q' $$=$$ $$1$$ - p'",
         "variabilization": {}
     },
     {
@@ -94,13 +94,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.722"
+            "$$0.722$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h6"
         ],
         "title": "Solving for q'",
-        "text": "What is q' (or 1 - p')?",
+        "text": "What is q' (or $$1$$ - p')?",
         "variabilization": {},
         "subHints": [
             {
@@ -109,11 +109,11 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0.722"
+                    "$$0.722$$"
                 ],
                 "dependencies": [],
-                "title": "Plugging q' into 1 - p' to solve for q'",
-                "text": "What is 1 - 0.278?",
+                "title": "Plugging q' into $$1$$ - p' to solve for q'",
+                "text": "What is $$1$$ - $$0.278$$?",
                 "variabilization": {}
             }
         ]
@@ -125,7 +125,7 @@
             "a35f3caconf7a-h7"
         ],
         "title": "Confidence Level and $$\\frac{z_\u03b1}{2}$$",
-        "text": "To solve for $$\\frac{z_\u03b1}{2}$$, or an alpha level's z-score for a two tailed test, find \ud835\udefc where \ud835\udefc $$=$$ 1 - CL, the confidence level.",
+        "text": "To solve for $$\\frac{z_\u03b1}{2}$$, or an alpha level's $$z-score$$ for a two tailed test, find \ud835\udefc where \ud835\udefc $$=$$ $$1$$ - CL, the confidence level.",
         "variabilization": {}
     },
     {
@@ -134,13 +134,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.1"
+            "$$0.1$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h8"
         ],
         "title": "Solving for \ud835\udefc",
-        "text": "Given that CL $$=$$ 0.90, what is 1 - CL?",
+        "text": "Given that CL $$=$$ $$0.90$$, what is $$1$$ - CL?",
         "variabilization": {}
     },
     {
@@ -149,7 +149,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.05"
+            "$$0.05$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h9"
@@ -164,7 +164,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "1.645"
+            "$$1.645$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h10"
@@ -189,7 +189,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.1"
+            "$$0.1$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h12"
@@ -204,7 +204,7 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0.1"
+                    "$$0.1$$"
                 ],
                 "dependencies": [],
                 "title": "Plugging Into the EPB Equation",
@@ -229,7 +229,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.178"
+            "$$0.178$$"
         ],
         "dependencies": [
             "a35f3caconf7a-h14"
@@ -244,11 +244,11 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "0.178"
+                    "$$0.178$$"
                 ],
                 "dependencies": [],
                 "title": "Plugging Into p' - EPB",
-                "text": "What is 0.278 - 0.100?",
+                "text": "What is $$0.278$$ - $$0.100$$?",
                 "variabilization": {}
             }
         ]

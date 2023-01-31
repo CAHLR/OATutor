@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "The Continuous $$\\frac{Growth}{Decay}$$ Formula",
-        "text": "For all real numbers t, and all positive numbers a and r, continuous growth or decay is represented by the formula $$A(t)=a e^{r t}$$ where: a is the initial value, r is the continuous growth rate per unit time, and t is the elapsed time. If $$r>0$$ , then the formula represents continuous growth. If $$r<0$$ , then the formula represents continuous decay. For business applications, the continuous growth formula is called the continuous compounding formula and takes the form $$A(t)=P e^{r t}$$ where: P is the principal or the initial invested, r is the growth or interest rate per unit time, and t is the period or term of the investment.",
+        "text": "For all real numbers $$t$$, and all positive numbers a and $$r$$, continuous growth or decay is represented by the formula $$A(t)=a e^{r t}$$ where:\\na is the initial value,\\n$$r$$ is the continuous growth rate per unit time,\\nand $$t$$ is the elapsed time.\\n|newline| If $$r>0$$ , then the formula represents continuous growth. If $$r<0$$ , then the formula represents continuous decay.\\n|newline| For business applications, the continuous growth formula is called the continuous compounding formula and takes the form $$A(t)=P e^{r t}$$\\nwhere:\\nP is the principal or the initial invested,\\n$$r$$ is the growth or interest rate per unit time,\\nand $$t$$ is the period or term of the investment.",
         "variabilization": {}
     },
     {
@@ -32,7 +32,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "Continuous growth rate per unit time, r"
+            "Continuous growth rate per unit time, $$r$$"
         ],
         "dependencies": [
             "ae3c1a1exponential19a-h2"
@@ -41,7 +41,7 @@
         "text": "Identify the terms of the model, $$A(t)=a e^{r t}$$, that are given and the terms that you would have to find. Which terms are not given?",
         "variabilization": {},
         "choices": [
-            "Continuous growth rate per unit time, r",
+            "Continuous growth rate per unit time, $$r$$",
             "initial value, a"
         ]
     },
@@ -67,7 +67,7 @@
             "ae3c1a1exponential19a-h4"
         ],
         "title": "Continuous Growth Rate",
-        "text": "Substitute all known terms (a - initial values, t - elapsed time, A(t) - model's estimate) provided in the question into the exponential decay model, $$A(t)=a e^{r t}$$ and find r, the continuous growth rate. What is the equation after substituting the values in?",
+        "text": "Substitute all known terms (a - initial values, $$t$$ - elapsed time, A(t) - model's estimate) provided in the question into the exponential decay model, $$A(t)=a e^{r t}$$ and find $$r$$, the continuous growth rate. What is the equation after substituting the values in?",
         "variabilization": {},
         "choices": [
             "$$50=100e^{35r}$$",
@@ -82,7 +82,7 @@
             "ae3c1a1exponential19a-h5"
         ],
         "title": "Continuous Growth Rate",
-        "text": "Divide by 100 on both sides.",
+        "text": "Divide by $$100$$ on both sides.",
         "variabilization": {}
     },
     {
@@ -102,7 +102,7 @@
             "ae3c1a1exponential19a-h7"
         ],
         "title": "Continuous Growth Rate",
-        "text": "Divide by 35 on both sides. You would have successfully isolated r.",
+        "text": "Divide by $$35$$ on both sides. You would have successfully isolated $$r$$.",
         "variabilization": {}
     },
     {
@@ -111,13 +111,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "-0.0198"
+            "$$-0.0198$$"
         ],
         "dependencies": [
             "ae3c1a1exponential19a-h8"
         ],
         "title": "Continuous Growth Rate",
-        "text": "Evaluate r numerically. Leave the answer in four decimal places.",
+        "text": "Evaluate $$r$$ numerically. Leave the answer in four decimal places.",
         "variabilization": {}
     },
     {

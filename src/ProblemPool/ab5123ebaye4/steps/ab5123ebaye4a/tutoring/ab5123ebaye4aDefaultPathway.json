@@ -23,13 +23,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.500"
+            "$$0.500$$"
         ],
         "dependencies": [
             "ab5123ebaye4a-h2"
         ],
         "title": "P(A)",
-        "text": "What is the probability that a random email is not spam? Round you answer to 3 decimal places",
+        "text": "What is the probability that a random email is not spam? Round you answer to $$3$$ decimal places",
         "variabilization": {},
         "subHints": [
             {
@@ -37,7 +37,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(A)",
-                "text": "It is estimated that 50% of emails are spam emails. Thus the other 50% are not spam emails. That means that the probability that a randomly selected email is not spam is 0.500",
+                "text": "It is estimated that 50% of emails are spam emails. Thus the other 50% are not spam emails. That means that the probability that a randomly selected email is not spam is $$0.500$$",
                 "variabilization": {}
             }
         ]
@@ -48,13 +48,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.050"
+            "$$0.050$$"
         ],
         "dependencies": [
             "ab5123ebaye4a-h3"
         ],
         "title": "P(B$$\\mid$$A)",
-        "text": "What is the probability that an email is detected as spam given that it is not spam? Round you answer to 3 decimal places",
+        "text": "What is the probability that an email is detected as spam given that it is not spam? Round you answer to $$3$$ decimal places",
         "variabilization": {},
         "subHints": [
             {
@@ -62,7 +62,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(B$$\\mid$$A)",
-                "text": "The rate for a false positive (a non-spam email detected as spam) is 5%. Thus the probability that an email is detected as spam given that it is not spam is 0.050",
+                "text": "The rate for a false positive (a non-spam email detected as spam) is 5%. Thus the probability that an email is detected as spam given that it is not spam is $$0.050$$",
                 "variabilization": {}
             }
         ]
@@ -73,13 +73,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.520"
+            "$$0.520$$"
         ],
         "dependencies": [
             "ab5123ebaye4a-h4"
         ],
         "title": "P(B)",
-        "text": "What is the probability that a random email is detected as spam? Round you answer to 3 decimal places",
+        "text": "What is the probability that a random email is detected as spam? Round you answer to $$3$$ decimal places",
         "variabilization": {},
         "subHints": [
             {
@@ -97,7 +97,7 @@
                     "ab5123ebaye4a-h5-s1"
                 ],
                 "title": "P(B$$\\mid$$A)P(A)",
-                "text": "P(B$$\\mid$$A) and P(A) were found to be 0.050 and 0.500, so $$P(B\\$\\$\\mid\\$\\$A)P(A)=0.05\\times0.5=0.025$$",
+                "text": "P(B$$\\mid$$A) and P(A) were found to be $$0.050$$ and $$0.500$$, so $$P(B\\$\\$\\mid\\$\\$A)P(A)=0.05\\times0.5=0.025$$",
                 "variabilization": {}
             },
             {
@@ -107,7 +107,7 @@
                     "ab5123ebaye4a-h5-s2"
                 ],
                 "title": "P(B$$\\mid$$C)",
-                "text": "The software claims that it can detect 99% of spam emails, so the probability that an email is detected as spam given that it is spam is 0.99",
+                "text": "The software claims that it can detect 99% of spam emails, so the probability that an email is detected as spam given that it is spam is $$0.99$$",
                 "variabilization": {}
             },
             {
@@ -117,7 +117,7 @@
                     "ab5123ebaye4a-h5-s3"
                 ],
                 "title": "P(C)",
-                "text": "It is estimated that 50% of emails are spam emails. That means that the probability that a randomly selected email is spam is 0.5",
+                "text": "It is estimated that 50% of emails are spam emails. That means that the probability that a randomly selected email is spam is $$0.5$$",
                 "variabilization": {}
             },
             {
@@ -127,7 +127,7 @@
                     "ab5123ebaye4a-h5-s4"
                 ],
                 "title": "P(B$$\\mid$$C)P(C)",
-                "text": "P(B$$\\mid$$C) and P(C) were found to be 0.99 and 0.5, so $$P(B\\$\\$\\mid\\$\\$C)P(C)=0.99\\times0.5=0.495$$",
+                "text": "P(B$$\\mid$$C) and P(C) were found to be $$0.99$$ and $$0.5$$, so $$P(B\\$\\$\\mid\\$\\$C)P(C)=0.99\\times0.5=0.495$$",
                 "variabilization": {}
             },
             {

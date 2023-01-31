@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Composition",
-        "text": "Remember that to solve f(f(-2)), we need to first find the value of f(-2), then plug that value back in to f(x).",
+        "text": "Remember that to solve $$f(f(-2))$$, we need to first find the value of $$f(-2)$$, then plug that value back in to f(x).",
         "variabilization": {}
     },
     {
@@ -13,13 +13,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "9"
+            "$$9$$"
         ],
         "dependencies": [
             "a7b98f9composition22c-h1"
         ],
-        "title": "Finding f(-2)",
-        "text": "To find f(-2), we need to plug in -2 for the x in the function f: (2(-2)**2)+1. What does this evaluate to?",
+        "title": "Finding $$f(-2)$$",
+        "text": "To find $$f(-2)$$, we need to plug in $$-2$$ for the $$x$$ in the function f: (2(-2)**2)+1. What does this evaluate to?",
         "variabilization": {},
         "subHints": [
             {
@@ -47,7 +47,7 @@
                     "a7b98f9composition22c-h2-s2"
                 ],
                 "title": "Addition",
-                "text": "Lastly, our expression is $$8+1$$, which is equal to 9.",
+                "text": "Lastly, our expression is $$8+1$$, which is equal to $$9$$.",
                 "variabilization": {}
             }
         ]
@@ -58,8 +58,8 @@
         "dependencies": [
             "a7b98f9composition22c-h2"
         ],
-        "title": "Finding f(f(-2))",
-        "text": "Our next step is to plug the value of f(-2) into f. In other words, we are evaluating f(9).",
+        "title": "Finding $$f(f(-2))$$",
+        "text": "Our next step is to plug the value of $$f(-2)$$ into f. In other words, we are evaluating f(9).",
         "variabilization": {}
     },
     {
@@ -68,13 +68,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "9"
+            "$$9$$"
         ],
         "dependencies": [
             "a7b98f9composition22c-h3"
         ],
-        "title": "Finding f(f(-2))",
-        "text": "To find f(-2), we need to plug in -2 for the x in the function f: (2(-2)**2)+1. What does this evaluate to?",
+        "title": "Finding $$f(f(-2))$$",
+        "text": "To find $$f(-2)$$, we need to plug in $$-2$$ for the $$x$$ in the function f: (2(-2)**2)+1. What does this evaluate to?",
         "variabilization": {}
     }
 ]

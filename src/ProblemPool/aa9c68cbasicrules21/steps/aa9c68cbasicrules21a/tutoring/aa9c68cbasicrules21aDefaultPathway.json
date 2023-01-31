@@ -13,91 +13,103 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.6492"
+            "$$0.6492$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h1"
+        ],
         "title": "The Addition Rule Applied",
         "text": "What is P(L OR C)=P(L)+P(C)-P(L AND C)?",
-        "variabilization": {},
-        "subHints": [
-            {
-                "id": "aa9c68cbasicrules21a-h2-s1",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.376"
-                ],
-                "dependencies": [],
-                "title": "The Addition Rule Applied",
-                "text": "What is P(L)?",
-                "variabilization": {}
-            },
-            {
-                "id": "aa9c68cbasicrules21a-h2-s2",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.48"
-                ],
-                "dependencies": [],
-                "title": "The Addition Rule Applied",
-                "text": "What is P(C)?",
-                "variabilization": {}
-            },
-            {
-                "id": "aa9c68cbasicrules21a-h2-s3",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.2068"
-                ],
-                "dependencies": [],
-                "title": "The Addition Rule Applied",
-                "text": "What is P(L AND C)?",
-                "variabilization": {}
-            },
-            {
-                "id": "aa9c68cbasicrules21a-h2-s4",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.55"
-                ],
-                "dependencies": [],
-                "title": "Applying the Multiplication Rule",
-                "text": "What is P(C|L), or the probability that a California registered voter would prefer life in prison without parole over the death penalty for a person convicted of first degree murder given they are Latino Californian?",
-                "variabilization": {}
-            },
-            {
-                "id": "aa9c68cbasicrules21a-h2-s5",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.2068"
-                ],
-                "dependencies": [],
-                "title": "Applying the Multiplication Rule",
-                "text": "What is P(L AND $$C)=P\\left(L\\right) P\\left(C|L\\right)$$?",
-                "variabilization": {}
-            },
-            {
-                "id": "aa9c68cbasicrules21a-h2-s6",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "0.6492"
-                ],
-                "dependencies": [],
-                "title": "Determining P(L OR C)",
-                "text": "What is $$0.376+0.48-0.2068$$?",
-                "variabilization": {}
-            }
-        ]
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.376$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h2"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(L)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.48$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h3"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(C)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2068$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h4"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(L AND C)?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.55$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h5"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(C|L), or the probability that a California registered voter would prefer life in prison without parole over the death penalty for a person convicted of first degree murder given they are Latino Californian?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2068$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h6"
+        ],
+        "title": "Applying the Multiplication Rule",
+        "text": "What is P(L AND $$C)=P\\left(L\\right) P\\left(C|L\\right)$$?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules21a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6492$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules21a-h7"
+        ],
+        "title": "Determining P(L OR C)",
+        "text": "What is $$0.376+0.48-0.2068$$?",
+        "variabilization": {}
     }
 ]

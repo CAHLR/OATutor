@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.100"
+            "$$0.100$$"
         ],
         "dependencies": [
             "ab5123ebaye2a-h1"
@@ -27,7 +27,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(Rain)",
-                "text": "Usually only 10% of days are rainy this month. Thus the probability that it will rain on any given day this month is 0.100",
+                "text": "Usually only 10% of days are rainy this month. Thus the probability that it will rain on any given day this month is $$0.100$$",
                 "variabilization": {}
             }
         ]
@@ -38,7 +38,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.500"
+            "$$0.500$$"
         ],
         "dependencies": [
             "ab5123ebaye2a-h2"
@@ -52,7 +52,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(Cloud$$\\mid$$Rain)",
-                "text": "50% of rainy days start off cloudy. Thus the probability of a cloudy morning, given that it is a rainy day, is 0.500",
+                "text": "50% of rainy days start off cloudy. Thus the probability of a cloudy morning, given that it is a rainy day, is $$0.500$$",
                 "variabilization": {}
             }
         ]
@@ -63,7 +63,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.400"
+            "$$0.400$$"
         ],
         "dependencies": [
             "ab5123ebaye2a-h3"
@@ -77,7 +77,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "P(Cloud)",
-                "text": "Cloudy mornings occur 40% of the time. Thus the probability of there being a cloudy morning on any given day is 0.400",
+                "text": "Cloudy mornings occur 40% of the time. Thus the probability of there being a cloudy morning on any given day is $$0.400$$",
                 "variabilization": {}
             }
         ]
@@ -99,7 +99,7 @@
             "ab5123ebaye2a-h5"
         ],
         "title": "P(Rain$$\\mid$$Cloud)",
-        "text": "P(Rain$$\\mid$$Cloud)=P(Rain)P(Cloud$$\\mid$$Rain)/P(Cloud)=0.1*0.5/0.4, so the probability that today will be rainy, given that it is cloudy, is 0.125",
+        "text": "P(Rain$$\\mid$$Cloud)=P(Rain)P(Cloud$$\\mid$$Rain)/P(Cloud)=0.1*0.5/0.4, so the probability that today will be rainy, given that it is cloudy, is $$0.125$$",
         "variabilization": {}
     }
 ]

@@ -15,19 +15,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "{2, 4, 6, 8, 10, 12, 14, 15, 16, 17, 18, 19}"
+            "{2, $$4$$, $$6$$, $$8$$, $$10$$, $$12$$, $$14$$, $$15$$, $$16$$, $$17$$, $$18$$, 19}"
         ],
         "dependencies": [
             "a916a3bterminology1g-h15"
         ],
         "title": "Determining A OR B",
-        "text": "What is the list of outcomes that exist in A OR B? Effectively, which numbers between 1 and 19 inclusive are at least one of even OR greater than 13?",
+        "text": "What is the list of outcomes that exist in A OR B? Effectively, which numbers between $$1$$ and $$19$$ inclusive are at least one of even OR greater than 13?",
         "variabilization": {},
         "choices": [
-            "{14, 16, 18}",
-            "{15, 17, 19}",
-            "{2, 4, 6, 8, 10, 12, 14, 15, 16, 17, 18, 19}",
-            "{2, 4, 6, 8, 10, 12, 14, 16, 18}"
+            "{14, $$16$$, 18}",
+            "{15, $$17$$, 19}",
+            "{2, $$4$$, $$6$$, $$8$$, $$10$$, $$12$$, $$14$$, $$15$$, $$16$$, $$17$$, $$18$$, 19}",
+            "{2, $$4$$, $$6$$, $$8$$, $$10$$, $$12$$, $$14$$, $$16$$, 18}"
         ]
     },
     {
@@ -46,13 +46,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "12"
+            "$$12$$"
         ],
         "dependencies": [
             "a916a3bterminology1g-h17"
         ],
         "title": "Size of A OR B",
-        "text": "What is the size of A OR B? Effectively, how many numbers are from one to 19 are even OR greater than 13?",
+        "text": "What is the size of A OR B? Effectively, how many numbers are from one to $$19$$ are even OR greater than 13?",
         "variabilization": {}
     },
     {
@@ -61,13 +61,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "19"
+            "$$19$$"
         ],
         "dependencies": [
             "a916a3bterminology1g-h18"
         ],
         "title": "Size of Sample Space",
-        "text": "What is the size of the sample space? Effectively, how many total whole numbers are there between 1 and 19 inclusive?",
+        "text": "What is the size of the sample space? Effectively, how many total whole numbers are there between $$1$$ and $$19$$ inclusive?",
         "variabilization": {}
     },
     {

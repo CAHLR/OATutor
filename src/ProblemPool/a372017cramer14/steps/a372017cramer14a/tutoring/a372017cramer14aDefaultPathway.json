@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use the formula",
-        "text": "First, use the formula for Cramer's rule to solve for x and y. If using a 2x2 matrix, the formula for it is $$x=(\\begin{bmatrix} c1 & b1 \\\\ c2 & b2 \\end{bmatrix})/(\\begin{bmatrix} a1 & b1 \\\\ a2 & b2 \\end{bmatrix})$$ and $$y=(\\begin{bmatrix} a1 & c1 \\\\ a2 & c2 \\end{bmatrix})/(\\begin{bmatrix} a1 & b1 \\\\ a2 & b2 \\end{bmatrix}$$.",
+        "text": "First, use the formula for Cramer's rule to solve for $$x$$ and $$y$$. If using a 2x2 matrix, the formula for it is $$x=(\\begin{bmatrix} c1 & b1 \\\\ c2 & b2 \\end{bmatrix})/(\\begin{bmatrix} a1 & b1 \\\\ a2 & b2 \\end{bmatrix})$$ and $$y=(\\begin{bmatrix} a1 & c1 \\\\ a2 & c2 \\end{bmatrix})/(\\begin{bmatrix} a1 & b1 \\\\ a2 & b2 \\end{bmatrix}$$.",
         "variabilization": {}
     },
     {
@@ -13,13 +13,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2"
+            "$$2$$"
         ],
         "dependencies": [
             "a372017cramer14a-h1"
         ],
         "title": "Determinant",
-        "text": "Now, take the determinant of all matrices in the $$x=$$ section and simplify. What does x equal?",
+        "text": "Now, take the determinant of all matrices in the $$x=$$ section and simplify. What does $$x$$ equal?",
         "variabilization": {},
         "subHints": [
             {
@@ -27,7 +27,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Answer",
-                "text": "The answer is 2.",
+                "text": "The answer is $$2$$.",
                 "variabilization": {}
             }
         ]
@@ -38,13 +38,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "5"
+            "$$5$$"
         ],
         "dependencies": [
             "a372017cramer14a-h2"
         ],
         "title": "Determinant",
-        "text": "Next, take the determinant of all matrices in the $$y=$$ section and simplify. What does y equal?",
+        "text": "Next, take the determinant of all matrices in the $$y=$$ section and simplify. What does $$y$$ equal?",
         "variabilization": {},
         "subHints": [
             {
@@ -52,7 +52,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Answer",
-                "text": "The answer is 5.",
+                "text": "The answer is $$5$$.",
                 "variabilization": {}
             }
         ]
@@ -64,7 +64,7 @@
             "a372017cramer14a-h3"
         ],
         "title": "Answer",
-        "text": "Therefore, the answer is (2,5).",
+        "text": "Therefore, the answer is $$(2,5)$$.",
         "variabilization": {}
     }
 ]
