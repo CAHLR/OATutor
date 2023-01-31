@@ -16,7 +16,7 @@ export function shuffleArray(array, seed) {                // <-- ADDED ARGUMENT
         ++seed                                     // <-- ADDED LINE
     }
 
-    console.debug('shuffled array according to seed', newArray, seed)
+    // console.debug('shuffled array according to seed', newArray, seed)
 
     return newArray;
 }

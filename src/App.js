@@ -170,6 +170,9 @@ class App extends React.Component {
 
     removeProgress = async () => {
         await localforage.removeItem(PROGRESS_STORAGE_KEY)
+        const existingKeys = (await localforage.keys()) || []
+        const lessonStorageKeys = existingKeys.filter(key => key.startsWith(PROGRESS_STORAGE_KEY))
+        await Promise.allSettled(lessonStorageKeys.map(async key => await localforage.removeItem(key)))
         this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams)
         window.location.reload();
     }

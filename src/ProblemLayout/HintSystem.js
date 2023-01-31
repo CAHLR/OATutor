@@ -110,10 +110,11 @@ class HintSystem extends React.Component {
         const { classes, index, hints, problemID } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
+
         return (
             <div className={classes.root}>
                 {hints.map((hint, i) =>
-                    <Accordion key={i}
+                    <Accordion key={`${problemID}-${hint.id}`}
                         onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
                         disabled={this.isLocked(i) && !(use_expanded_view && debug)}
                         expanded={currentExpanded === i || (use_expanded_view && debug)}
