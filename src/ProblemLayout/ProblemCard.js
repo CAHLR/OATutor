@@ -52,7 +52,7 @@ class ProblemCard extends React.Component {
         if (ENABLE_BOTTOM_OUT_HINTS && !(context.debug && context["use_expanded_view"])) {
             // Bottom out hints
             this.hints.push({
-                id: this.step.id + "-h" + (this.hints.length),
+                id: this.step.id + "-h" + (this.hints.length + 1),
                 title: "Answer",
                 text: "The answer is " + this.step.stepAnswer,
                 type: "bottomOut",
@@ -65,7 +65,7 @@ class ProblemCard extends React.Component {
                         hint.subHints = [];
                     }
                     hint.subHints.push({
-                        id: this.step.id + "-h" + i + "-s" + (hint.subHints.length),
+                        id: this.step.id + "-h" + i + "-s" + (hint.subHints.length + 1),
                         title: "Answer",
                         text: "The answer is " + hint.hintAnswer[0],
                         type: "bottomOut",

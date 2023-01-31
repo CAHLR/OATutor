@@ -40,8 +40,7 @@ class Problem extends React.Component {
         super(props);
         this.bktParams = context.bktParams;
         this.heuristic = context.heuristic;
-        this.stepStates = {};
-        this.numCorrect = 0;
+
         const giveStuFeedback = this.props.lesson?.giveStuFeedback
         const giveStuHints = this.props.lesson?.giveStuHints
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate
@@ -50,8 +49,7 @@ class Problem extends React.Component {
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate
 
         this.state = {
-            problem: this.props.problem,
-            steps: this.refreshSteps(props.problem),
+            stepStates: {},
             problemFinished: false,
             showFeedback: false,
             feedback: "",
@@ -73,22 +71,6 @@ class Problem extends React.Component {
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
-    }
-
-    refreshSteps = (problem) => {
-        if (problem == null) {
-            return (<div></div>);
-        }
-        return problem.steps.map((step, index) => {
-            this.stepStates[index] = null;
-            return <Element name={index.toString()} key={Math.random()}>
-                <ProblemCard problemID={problem.id} step={step} index={index} answerMade={this.answerMade}
-                             seed={this.props.seed} problemVars={this.props.problem.variabilization}
-                             lesson={problem.lesson} courseName={problem.courseName} giveStuFeedback={this.giveStuFeedback}
-                             giveStuHints={this.giveStuHints}
-                />
-            </Element>
-        })
     }
 
     updateCanvas = async (mastery, components) => {
@@ -180,12 +162,16 @@ class Problem extends React.Component {
     }
 
     answerMade = (cardIndex, kcArray, isCorrect) => {
+        const { stepStates } = this.state
+        const { lesson, problem } = this.props
+
         console.debug(`answer made and is correct: ${isCorrect}`)
-        if (this.stepStates[cardIndex] === true) {
+
+        if (stepStates[cardIndex] === true) {
             return
         }
 
-        if (this.stepStates[cardIndex] == null) {
+        if (stepStates[cardIndex] == null) {
             if (kcArray == null) {
                 kcArray = []
             }
@@ -206,7 +192,7 @@ class Problem extends React.Component {
         }
 
         if (!this.context.debug) {
-            const objectives = Object.keys(this.props.lesson.learningObjectives);
+            const objectives = Object.keys(lesson.learningObjectives);
             objectives.unshift(0);
             let score = objectives.reduce((x, y) => {
                 return x + this.bktParams[y].probMastery
@@ -216,61 +202,73 @@ class Problem extends React.Component {
             this.props.displayMastery(score);
 
             const relevantKc = {};
-            Object.keys(this.props.lesson.learningObjectives).forEach(x => {
+            Object.keys(lesson.learningObjectives).forEach(x => {
                 relevantKc[x] = this.bktParams[x].probMastery
             });
 
             this.updateCanvas(score, relevantKc);
         }
-        this.stepStates[cardIndex] = isCorrect;
+
+        const nextStepStates = {
+            ...stepStates,
+            [cardIndex]: isCorrect
+        }
+
+        const giveStuFeedback = this.giveStuFeedback
+        const numSteps = problem.steps.length
+
+        if (!giveStuFeedback) {
+            const numAttempted = Object.values(nextStepStates).filter(stepState => stepState != null).length
+            if (numAttempted === numSteps) {
+                this.setState({ problemFinished: true, stepStates: nextStepStates })
+            }
+            // don't attempt to auto scroll to next step
+            return
+        }
 
         if (isCorrect) {
-            this.numCorrect += 1;
-            if (this.numCorrect !== Object.keys(this.stepStates).length) {
-                console.debug("not last step so not done w/ problem", this.numCorrect, "step states", this.stepStates)
+            const numCorrect = Object.values(nextStepStates).filter(stepState => stepState === true).length
+            if (numSteps !== numCorrect) {
+                console.debug("not last step so not done w/ problem, step states:", nextStepStates)
                 scroller.scrollTo((cardIndex + 1).toString(), {
                     duration: 500,
                     smooth: true,
                     offset: -100
                 })
+                this.setState({
+                    stepStates: nextStepStates
+                })
             } else {
-                this.setState({ problemFinished: true });
-            }
-        }
-
-        if (this.giveStuFeedback != null && !this.giveStuFeedback) {
-            if (!Object.values(this.stepStates).some(stepState => stepState == null)) {
-                this.setState({ problemFinished: true })
+                this.setState({ problemFinished: true, stepStates: nextStepStates });
             }
         }
     }
 
     clickNextProblem = async () => {
         scroll.scrollToTop({ duration: 900, smooth: true });
-        this.stepStates = {};
-        this.numCorrect = 0;
 
-        const nextProblem = await this.props.problemComplete(this.context)
+        await this.props.problemComplete(this.context)
 
-        this.setState({ problem: nextProblem },
-            () => this.setState({
-                steps: this.refreshSteps(this.props.problem),
-                problemFinished: false,
-                feedback: "",
-                feedbackSubmitted: false
-            }));
+        this.setState({
+            stepStates: {},
+            problemFinished: false,
+            feedback: "",
+            feedbackSubmitted: false
+        });
     }
 
     submitFeedback = () => {
-        console.debug('this state problem', this.state.problem)
+        const { problem } = this.props
+
+        console.debug('problem when submitting feedback', problem)
         this.context.firebase.submitFeedback(
-            this.state.problem.id,
+            problem.id,
             this.state.feedback,
             this.state.problemFinished,
-            chooseVariables(this.props.problem.variabilization, this.props.seed),
-            this.state.problem.courseName,
-            this.state.problem.steps,
-            this.state.problem.lesson
+            chooseVariables(problem.variabilization, this.props.seed),
+            problem.courseName,
+            problem.steps,
+            problem.lesson
         );
         this.setState({ feedback: "", feedbackSubmitted: true });
     }
@@ -286,9 +284,9 @@ class Problem extends React.Component {
 
 
     render() {
-        const { classes, lesson } = this.props;
+        const { classes, lesson, problem, seed } = this.props;
 
-        if (this.state.problem == null) {
+        if (problem == null) {
             return (<div></div>);
         }
 
@@ -301,11 +299,11 @@ class Problem extends React.Component {
                                 "data-selenium-target": "problem-header"
                             })}>
                                 <h1 className={classes.problemHeader}>
-                                    {renderText(this.props.problem.title, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
+                                    {renderText(problem.title, problem.id, chooseVariables(problem.variabilization, seed))}
                                     <hr/>
                                 </h1>
                                 <div className={classes.problemBody}>
-                                    {renderText(this.props.problem.body, this.props.problem.id, chooseVariables(this.props.problem.variabilization, this.props.seed))}
+                                    {renderText(problem.body, problem.id, chooseVariables(problem.variabilization, seed))}
                                 </div>
                             </CardContent>
                         </Card>
@@ -313,7 +311,15 @@ class Problem extends React.Component {
                         <hr/>
                     </div>
                     <div role={"main"}>
-                        {this.state.steps}
+                        {problem.steps.map((step, idx) =>
+                            <Element name={idx.toString()} key={`${problem.id}-${step.id}`}>
+                                <ProblemCard problemID={problem.id} step={step} index={idx} answerMade={this.answerMade}
+                                    seed={seed} problemVars={problem.variabilization}
+                                    lesson={problem.lesson} courseName={problem.courseName}
+                                    giveStuFeedback={this.giveStuFeedback}
+                                    giveStuHints={this.giveStuHints}
+                                />
+                            </Element>)}
                     </div>
                     <div width="100%">
                         {this.context.debug ?
@@ -321,20 +327,20 @@ class Problem extends React.Component {
                                 <Grid item xs={2} key={0}/>
                                 <Grid item xs={2} key={1}>
                                     <NavLink activeClassName="active" className="link" to={this._getNextDebug(-1)}
-                                             type="menu"
-                                             style={{ marginRight: '10px' }}>
+                                        type="menu"
+                                        style={{ marginRight: '10px' }}>
                                         <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                                onClick={() => this.context.needRefresh = true}>Previous
+                                            onClick={() => this.context.needRefresh = true}>Previous
                                             Problem</Button>
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={4} key={2}/>
                                 <Grid item xs={2} key={3}>
                                     <NavLink activeClassName="active" className="link" to={this._getNextDebug(1)}
-                                             type="menu"
-                                             style={{ marginRight: '10px' }}>
+                                        type="menu"
+                                        style={{ marginRight: '10px' }}>
                                         <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                                onClick={() => this.context.needRefresh = true}>Next Problem</Button>
+                                            onClick={() => this.context.needRefresh = true}>Next Problem</Button>
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={2} key={4}/>
@@ -344,8 +350,8 @@ class Problem extends React.Component {
                                 <Grid item xs={3} sm={3} md={5} key={1}/>
                                 <Grid item xs={6} sm={6} md={2} key={2}>
                                     <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                            onClick={this.clickNextProblem}
-                                            disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next
+                                        onClick={this.clickNextProblem}
+                                        disabled={!(this.state.problemFinished || this.state.feedbackSubmitted)}>Next
                                         Problem</Button>
                                 </Grid>
                                 <Grid item xs={3} sm={3} md={5} key={3}/>
@@ -355,29 +361,29 @@ class Problem extends React.Component {
                 <footer>
                     <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
-                            {this.state.problem.oer && this.state.problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
+                            {problem.oer && problem.oer.includes("openstax") && lesson?.courseName.toLowerCase().includes("openstax") ?
                                 <div>
-                                    "{this.state.problem.title}" is a derivative of&nbsp;
+                                    "{problem.title}" is a derivative of&nbsp;
                                     <a href="https://openstax.org/" target="_blank" rel="noreferrer">
                                         "{lesson?.courseName.substring((lesson?.courseName || "").indexOf(":") + 1).trim() || ""}"
                                     </a>
                                     &nbsp;by OpenStax, used under&nbsp;
                                     <a href="https://creativecommons.org/licenses/by/4.0" target="_blank"
-                                       rel="noreferrer">CC
+                                        rel="noreferrer">CC
                                         BY 4.0</a>
                                 </div>
                                 : ""}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
                             <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
-                                        href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
+                                href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,
                                     margin: -2
                                 }}/>
                             </IconButton>
                             <IconButton aria-label="report problem" onClick={this.toggleFeedback}
-                                        title={"Report Problem"}>
+                                title={"Report Problem"}>
                                 <FeedbackOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 32
                                 }}/>
@@ -416,8 +422,8 @@ class Problem extends React.Component {
                                     <Grid item xs={3} sm={3} md={5} key={1}/>
                                     <Grid item xs={6} sm={6} md={2} key={2}>
                                         <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                                onClick={this.submitFeedback}
-                                                disabled={this.state.feedback === ""}>Submit</Button>
+                                            onClick={this.submitFeedback}
+                                            disabled={this.state.feedback === ""}>Submit</Button>
                                     </Grid>
                                     <Grid item xs={3} sm={3} md={5} key={3}/>
                                 </Grid>
