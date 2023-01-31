@@ -65,21 +65,21 @@
         ],
         "title": "The Addition Rule Applied",
         "text": "What is P(C OR N)=P(C)+P(N)-P(C AND N)?",
-        "variabilization": {},
-        "subHints": [
-            {
-                "id": "aa9c68cbasicrules25a-h5-s1",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "$$0.4$$"
-                ],
-                "dependencies": [],
-                "title": "The Addition Rule Applied",
-                "text": "What is $$0.36+0.12-0.08$$?",
-                "variabilization": {}
-            }
-        ]
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules25a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules25a-h5"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is $$0.36+0.12-0.08$$?",
+        "variabilization": {}
     }
 ]

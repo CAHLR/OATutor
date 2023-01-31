@@ -20,22 +20,7 @@
         ],
         "title": "Determining Novice Swimmers",
         "text": "What is the total number of members that are novice swimmers?",
-        "variabilization": {},
-        "subHints": [
-            {
-                "id": "aa9c68cbasicrules4a-h2-s1",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "$$28$$"
-                ],
-                "dependencies": [],
-                "title": "Determining Novice Swimmers",
-                "text": "What is $$150-75-47$$?",
-                "variabilization": {}
-            }
-        ]
+        "variabilization": {}
     },
     {
         "id": "aa9c68cbasicrules4a-h3",
@@ -43,13 +28,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$150$$"
+            "$$28$$"
         ],
         "dependencies": [
             "aa9c68cbasicrules4a-h2"
         ],
-        "title": "Determining the Sample Space",
-        "text": "What is the total number of swimmers?",
+        "title": "Determining Novice Swimmers",
+        "text": "What is $$150-75-47$$?",
         "variabilization": {}
     },
     {
@@ -58,10 +43,25 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{28}{150}$$"
+            "$$150$$"
         ],
         "dependencies": [
             "aa9c68cbasicrules4a-h3"
+        ],
+        "title": "Determining the Sample Space",
+        "text": "What is the total number of swimmers?",
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{28}{150}$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules4a-h4"
         ],
         "title": "Determining Probability of Novice",
         "text": "What is the probability that the member is a novice swimmer?",

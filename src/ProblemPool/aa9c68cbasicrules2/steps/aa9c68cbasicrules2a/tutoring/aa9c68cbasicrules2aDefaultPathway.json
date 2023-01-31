@@ -20,21 +20,21 @@
         ],
         "title": "The Multiplication Rule Applied",
         "text": "What is P(A AND $$B)=P(B$$ AND A)?",
-        "variabilization": {},
-        "subHints": [
-            {
-                "id": "aa9c68cbasicrules2a-h2-s1",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "$$0.585$$"
-                ],
-                "dependencies": [],
-                "title": "The Multiplication Rule Applied",
-                "text": "We know that $$P(B|A)=0.90$$. What is P(B AND $$A)=P\\left(A\\right) P\\left(B|A\\right)$$?",
-                "variabilization": {}
-            }
-        ]
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.585$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules2a-h2"
+        ],
+        "title": "The Multiplication Rule Applied",
+        "text": "We know that $$P(B|A)=0.90$$. What is P(B AND $$A)=P\\left(A\\right) P\\left(B|A\\right)$$?",
+        "variabilization": {}
     }
 ]

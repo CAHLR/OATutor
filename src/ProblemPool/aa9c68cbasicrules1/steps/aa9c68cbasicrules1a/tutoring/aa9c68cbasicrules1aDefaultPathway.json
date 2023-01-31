@@ -20,21 +20,21 @@
         ],
         "title": "The Addition Rule Applied",
         "text": "What is the probability that Klaus chooses neither New Zealand nor Alaska?",
-        "variabilization": {},
-        "subHints": [
-            {
-                "id": "aa9c68cbasicrules1a-h2-s1",
-                "type": "scaffold",
-                "problemType": "TextBox",
-                "answerType": "arithmetic",
-                "hintAnswer": [
-                    "$$0.05$$"
-                ],
-                "dependencies": [],
-                "title": "The Addition Rule Applied",
-                "text": "What is $$1-0.6+0.35$$?",
-                "variabilization": {}
-            }
-        ]
+        "variabilization": {}
+    },
+    {
+        "id": "aa9c68cbasicrules1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.05$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules1a-h2"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is $$1-0.6+0.35$$?",
+        "variabilization": {}
     }
 ]
