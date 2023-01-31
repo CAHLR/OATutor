@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Structure of Hypergeometric Notation",
-        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, b, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are r, b, and n where r is the size of the group of interest (first group), b is the size of the second group, and n is the size of the chosen sample.",
+        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, $$b$$, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are $$r$$, $$b$$, and $$n$$ where $$r$$ is the size of the group of interest (first group), $$b$$ is the size of the second group, and $$n$$ is the size of the chosen sample.",
         "variabilization": {}
     },
     {
@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "16"
+            "$$16$$"
         ],
         "dependencies": [
             "a59a759hypergeometric10a-h1"
@@ -28,7 +28,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "7"
+            "$$7$$"
         ],
         "dependencies": [
             "a59a759hypergeometric10a-h2"
@@ -43,7 +43,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "9"
+            "$$9$$"
         ],
         "dependencies": [
             "a59a759hypergeometric10a-h3"
@@ -58,19 +58,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "X ~ H(16, 7, 9)"
+            "X ~ H(16, $$7$$, 9)"
         ],
         "dependencies": [
             "a59a759hypergeometric10a-h4"
         ],
         "title": "Putting it All Together",
-        "text": "Knowing that the size of the group of interest is 16, the size of the second group is 7, and the size of the chosen sample is 9, plug this into the formula to determine the hypergeometric notation of this question.",
+        "text": "Knowing that the size of the group of interest is $$16$$, the size of the second group is $$7$$, and the size of the chosen sample is $$9$$, plug this into the formula to determine the hypergeometric notation of this question.",
         "variabilization": {},
         "choices": [
-            "X ~ H(16, 7, 9)",
-            "X ~ H(7, 16, 9)",
-            "X ~ H(9, 16, 7)",
-            "X ~ H(6, 9, 16)"
+            "X ~ H(16, $$7$$, 9)",
+            "X ~ H(7, $$16$$, 9)",
+            "X ~ H(9, $$16$$, 7)",
+            "X ~ H(6, $$9$$, 16)"
         ]
     }
 ]

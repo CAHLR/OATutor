@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Drawing a Diagram",
-        "text": "It might help here to draw a picture of the situation. See the attached image. It would then be helpful to introduce a coordinate system. While we could place the origin anywhere, placing it at Westborough seems convenient. This puts Agritown at coordinates (30,10),(30,10), and Eastborough at (20,0).",
+        "text": "It might help here to draw a picture of the situation. See the attached image. It would then be helpful to introduce a coordinate system. While we could place the origin anywhere, placing it at Westborough seems convenient. This puts Agritown at coordinates $$(30,10),(30,10)$$, and Eastborough at $$(20,0)$$.",
         "variabilization": {}
     },
     {
@@ -14,7 +14,7 @@
             "a9f55eblinearmodels14a-h1"
         ],
         "title": "Determining the Slope",
-        "text": "Using the point (30,10), we can find the slope of the line from Westborough to Agritown. Slope $$=$$ Change in $$\\frac{y}{Change}$$ in x $$=$$ $$\\frac{30-0}{10-0}=3$$.",
+        "text": "Using the point $$(30,10)$$, we can find the slope of the line from Westborough to Agritown. Slope $$=$$ Change in $$\\frac{y}{Change}$$ in $$x$$ $$=$$ $$\\frac{30-0}{10-0}=3$$.",
         "variabilization": {}
     },
     {
@@ -24,7 +24,7 @@
             "a9f55eblinearmodels14a-h2"
         ],
         "title": "Writing The Equation of the Line",
-        "text": "Now we can write an equation to describe the road from Westborough to Agritown, $$W(x)=\\frac{1}{3} x$$. From this, we can determine the perpendicular road to Eastborough will have slope $$m=-3$$. Because the town of Eastborough is at the point (20,0), we can find the equation.",
+        "text": "Now we can write an equation to describe the road from Westborough to Agritown, $$W(x)=\\frac{1}{3} x$$. From this, we can determine the perpendicular road to Eastborough will have slope $$m=-3$$. Because the town of Eastborough is at the point $$(20,0)$$, we can find the equation.",
         "variabilization": {}
     },
     {
@@ -33,12 +33,12 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "60"
+            "$$60$$"
         ],
         "dependencies": [
             "a9f55eblinearmodels14a-h3"
         ],
-        "title": "Solving For b",
+        "title": "Solving For $$b$$",
         "text": "$$E(x)=-3x+b$$. When $$x=20$$, $$b=$$?",
         "variabilization": {}
     },
@@ -58,12 +58,12 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "18"
+            "$$18$$"
         ],
         "dependencies": [
             "a9f55eblinearmodels14a-h5"
         ],
-        "title": "Solving For x",
+        "title": "Solving For $$x$$",
         "text": "$$\\frac{1}{3} x=-3x+60$$, $$x=$$?",
         "variabilization": {}
     },
@@ -73,7 +73,7 @@
         "dependencies": [
             "a9f55eblinearmodels14a-h6"
         ],
-        "title": "Subsituting x Back into the Original Equation",
+        "title": "Subsituting $$x$$ Back into the Original Equation",
         "text": "Next, subsitute $$x=18$$ back into the original equation. $$y=W(18)=\\frac{1}{3\\left(18\\right)}$$.",
         "variabilization": {}
     },
@@ -83,12 +83,12 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "6"
+            "$$6$$"
         ],
         "dependencies": [
             "a9f55eblinearmodels14a-h7"
         ],
-        "title": "Solving for y",
+        "title": "Solving for $$y$$",
         "text": "$$y=\\frac{1}{3\\left(18\\right)}$$, $$y=$$?",
         "variabilization": {}
     },
@@ -99,7 +99,7 @@
             "a9f55eblinearmodels14a-h8"
         ],
         "title": "Interpreting the Answer",
-        "text": "Thus, the roads intersect at (18,6). Using the distance formula, we can now find the distance from Westborough to the junction.",
+        "text": "Thus, the roads intersect at $$(18,6)$$. Using the distance formula, we can now find the distance from Westborough to the junction.",
         "variabilization": {}
     }
 ]

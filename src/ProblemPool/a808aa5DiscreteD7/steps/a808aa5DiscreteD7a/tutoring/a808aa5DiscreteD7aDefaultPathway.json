@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Calculating Expected Values",
-        "text": "To calculate the expected value of something, we can use the equation E[X] $$=$$ $$\\sum_{i=0}^{...-1} p\\left(X_i\\right) X_i$$, where $$p\\left(X_i\\right)$$ is the probability of $$X_i$$.",
+        "text": "To calculate the expected value of something, we can use the equation E[X] $$=$$ sum{i\\=0}{...}{p(X_i)*X_i}, where $$p\\left(X_i\\right)$$ is the probability of $$X_i$$.",
         "variabilization": {}
     },
     {
@@ -14,7 +14,7 @@
             "a808aa5DiscreteD7a-h1"
         ],
         "title": "What is X?",
-        "text": "We can set $$X_0$$ $$=$$ Getting no points, $$X_1$$ $$=$$ Getting 1 point, and $$X_2$$ $$=$$ Getting 2 points.",
+        "text": "We can set $$X_0$$ $$=$$ Getting no points, $$X_1$$ $$=$$ Getting $$1$$ point, and $$X_2$$ $$=$$ Getting $$2$$ points.",
         "variabilization": {}
     },
     {
@@ -23,7 +23,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.6944"
+            "$$0.6944$$"
         ],
         "dependencies": [
             "a808aa5DiscreteD7a-h2"
@@ -38,13 +38,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.2777"
+            "$$0.2777$$"
         ],
         "dependencies": [
             "a808aa5DiscreteD7a-h3"
         ],
         "title": "Calculating Probabilities",
-        "text": "What is the probability that we get 1 point?",
+        "text": "What is the probability that we get $$1$$ point?",
         "variabilization": {}
     },
     {
@@ -53,13 +53,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.0277"
+            "$$0.0277$$"
         ],
         "dependencies": [
             "a808aa5DiscreteD7a-h4"
         ],
         "title": "Calculating Probabilities",
-        "text": "What is the probability that we get 2 points?",
+        "text": "What is the probability that we get $$2$$ points?",
         "variabilization": {}
     },
     {

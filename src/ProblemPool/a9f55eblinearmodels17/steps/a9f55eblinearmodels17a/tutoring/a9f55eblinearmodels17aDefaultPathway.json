@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Building a Linear Model",
-        "text": "The first step is to build a linear model. For simplicity, we will define the input as years from 2008, and the output as population. The initial value is 28200 and the rate of change is $$\\frac{36800-28200}{4-0}$$, or the change in output over the change in input.",
+        "text": "The first step is to build a linear model. For simplicity, we will define the input as years from $$2008$$, and the output as population. The initial value is $$28200$$ and the rate of change is $$\\frac{36800-28200}{4-0}$$, or the change in output over the change in input.",
         "variabilization": {}
     },
     {
@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2150"
+            "$$2150$$"
         ],
         "dependencies": [
             "a9f55eblinearmodels17a-h1"
@@ -29,7 +29,7 @@
             "a9f55eblinearmodels17a-h2"
         ],
         "title": "Final Linear Model",
-        "text": "The rate of change is 2150 $$\\frac{people}{year}$$, so the equation is $$P(t)=2150t+28200$$, where t is years since 2008 and P(t) is the population.",
+        "text": "The rate of change is $$2150$$ $$\\frac{people}{year}$$, so the equation is $$P(t)=2150t+28200$$, where $$t$$ is years since $$2008$$ and P(t) is the population.",
         "variabilization": {}
     },
     {
@@ -38,13 +38,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "41100"
+            "$$41100$$"
         ],
         "dependencies": [
             "a9f55eblinearmodels17a-h3"
         ],
         "title": "Calculating the Final Answer",
-        "text": "$$P(t)=2150t+28200$$ when t $$=$$ 6 (since 2014 is 6 years after 2008), $$P(6)=$$?",
+        "text": "$$P(t)=2150t+28200$$ when $$t$$ $$=$$ $$6$$ (since $$2014$$ is $$6$$ years after 2008), $$P(6)=$$?",
         "variabilization": {}
     }
 ]

@@ -6,7 +6,7 @@
             "a59a759hypergeometric15a-h2"
         ],
         "title": "Structure of Hypergeometric Notation",
-        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, b, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are r, b, and n where r is the size of the group of interest (first group), b is the size of the second group, and n is the size of the chosen sample.",
+        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, $$b$$, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are $$r$$, $$b$$, and $$n$$ where $$r$$ is the size of the group of interest (first group), $$b$$ is the size of the second group, and $$n$$ is the size of the chosen sample.",
         "variabilization": {}
     },
     {
@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "29"
+            "$$29$$"
         ],
         "dependencies": [
             "a59a759hypergeometric15b-h3"
@@ -30,7 +30,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "163"
+            "$$163$$"
         ],
         "dependencies": [
             "a59a759hypergeometric15b-h4"
@@ -45,7 +45,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "20"
+            "$$20$$"
         ],
         "dependencies": [
             "a59a759hypergeometric15b-h5"
@@ -60,19 +60,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "X ~ H(29, 163, 20)"
+            "X ~ H(29, $$163$$, 20)"
         ],
         "dependencies": [
             "a59a759hypergeometric15b-h6"
         ],
         "title": "Putting it All Together",
-        "text": "Knowing that the size of the group of interest is 29, the size of the second group is 163, and the size of the chosen sample is 20, plug this into the formula to determine the hypergeometric notation of this question.",
+        "text": "Knowing that the size of the group of interest is $$29$$, the size of the second group is $$163$$, and the size of the chosen sample is $$20$$, plug this into the formula to determine the hypergeometric notation of this question.",
         "variabilization": {},
         "choices": [
-            "X ~ H(29, 163, 20)",
-            "X ~ H(20, 29, 163)",
-            "X ~ H(29, 20, 163)",
-            "X ~ H(20, 163, 29)"
+            "X ~ H(29, $$163$$, 20)",
+            "X ~ H(20, $$29$$, 163)",
+            "X ~ H(29, $$20$$, 163)",
+            "X ~ H(20, $$163$$, 29)"
         ]
     }
 ]

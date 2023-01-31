@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Simple Interest Formula",
-        "text": "The formula for simple interest is $$I=Prt$$, with I being interest, P being the initial amount of money invested (also called principal), r being the rate, and t being the time.",
+        "text": "The formula for simple interest is $$I=Prt$$, with I being interest, P being the initial amount of money invested (also called principal), $$r$$ being the rate, and $$t$$ being the time.",
         "variabilization": {}
     },
     {
@@ -13,7 +13,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "r"
+            "$$r$$"
         ],
         "dependencies": [
             "a3e5c4cpercent23a-h1"
@@ -23,8 +23,8 @@
         "variabilization": {},
         "choices": [
             "P",
-            "r",
-            "t",
+            "$$r$$",
+            "$$t$$",
             "I"
         ]
     },
@@ -34,7 +34,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "1500"
+            "$$1500$$"
         ],
         "dependencies": [
             "a3e5c4cpercent23a-h2"
@@ -49,12 +49,12 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "5"
+            "$$5$$"
         ],
         "dependencies": [
             "a3e5c4cpercent23a-h3"
         ],
-        "title": "Finding the value for t",
+        "title": "Finding the value for $$t$$",
         "text": "How many years are we considering?",
         "variabilization": {}
     },
@@ -64,7 +64,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "7500"
+            "$$7500$$"
         ],
         "dependencies": [
             "a3e5c4cpercent23a-h4"
@@ -79,8 +79,8 @@
         "dependencies": [
             "a3e5c4cpercent23a-h5"
         ],
-        "title": "Solving for r",
-        "text": "The formula for r is $$r=\\frac{I}{P t}$$",
+        "title": "Solving for $$r$$",
+        "text": "The formula for $$r$$ is $$r=\\frac{I}{P t}$$",
         "variabilization": {}
     }
 ]

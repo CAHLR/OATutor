@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Formula for Value of an Annuity",
-        "text": "For a principal, P, invested at the end of a compounding period, with an interest rate, r, which is compounded n times in a year, the new balance A, after t years, is $$A_t=\\frac{P \\left({\\left(1+\\frac{r}{n}\\right)}^{nt}-1\\right)}{\\frac{r}{n}}$$.",
+        "text": "For a principal, P, invested at the end of a compounding period, with an interest rate, $$r$$, which is compounded $$n$$ times in a year, the new balance A, after $$t$$ years, is $$A_t=\\frac{P \\left({\\left(1+\\frac{r}{n}\\right)}^{nt}-1\\right)}{\\frac{r}{n}}$$.",
         "variabilization": {}
     },
     {
@@ -13,7 +13,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "100"
+            "$$100$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h1"
@@ -28,13 +28,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.05"
+            "$$0.05$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h2"
         ],
-        "title": "Determine r",
-        "text": "What is r? What is the annula interest rate, in decimal form?",
+        "title": "Determine $$r$$",
+        "text": "What is $$r$$? What is the annula interest rate, in decimal form?",
         "variabilization": {}
     },
     {
@@ -43,13 +43,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "12"
+            "$$12$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h3"
         ],
-        "title": "Determine n",
-        "text": "What is n? What is the number of times the deposit will be made and the interest compounded each year? How many months are in a year, essentially?",
+        "title": "Determine $$n$$",
+        "text": "What is $$n$$? What is the number of times the deposit will be made and the interest compounded each year? How many months are in a year, essentially?",
         "variabilization": {}
     },
     {
@@ -58,13 +58,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "18"
+            "$$18$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h4"
         ],
-        "title": "Determine t",
-        "text": "What is t? What is the number of years that will pass?",
+        "title": "Determine $$t$$",
+        "text": "What is $$t$$? What is the number of years that will pass?",
         "variabilization": {}
     },
     {
@@ -73,13 +73,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "34920.2"
+            "$$34920.2$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h5"
         ],
         "title": "Use the Formula for Value of an Annuity",
-        "text": "Plug in P, r, n, and t into the summation formulat to get $$A_t$$, the amount of money in the account after 18 years.",
+        "text": "Plug in P, $$r$$, $$n$$, and $$t$$ into the summation formulat to get $$A_t$$, the amount of money in the account after $$18$$ years.",
         "variabilization": {}
     },
     {
@@ -88,7 +88,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "34920.2"
+            "$$34920.2$$"
         ],
         "dependencies": [
             "a85fcf1geometric23a-h6"

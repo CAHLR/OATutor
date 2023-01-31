@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Question",
-        "text": "The 95% Critical Values of the Sample Correlation Coefficient Table (simplified version) can be used to determine whether the computed value of r, the sample correlation coefficient, is significant or not. Compare r to the appropriate critical value in the table. If r is not between the positive and negative critical values, then the correlation coefficient is significant. If r is significant, then you may want to use the line for prediction.",
+        "text": "The 95% Critical Values of the Sample Correlation Coefficient Table (simplified version) can be used to determine whether the computed value of $$r$$, the sample correlation coefficient, is significant or not. Compare $$r$$ to the appropriate critical value in the table. If $$r$$ is not between the positive and negative critical values, then the correlation coefficient is significant. If $$r$$ is significant, then you may want to use the line for prediction.",
         "variabilization": {}
     },
     {
@@ -13,13 +13,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "17"
+            "$$17$$"
         ],
         "dependencies": [
             "a74202acorr4a-h1"
         ],
         "title": "Degrees of Freedom",
-        "text": "What are the degrees of freedom (df): n - 2, where n is the number of data points?",
+        "text": "What are the degrees of freedom (df): $$n$$ - $$2$$, where $$n$$ is the number of data points?",
         "variabilization": {},
         "subHints": [
             {
@@ -28,11 +28,11 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "19"
+                    "$$19$$"
                 ],
                 "dependencies": [],
-                "title": "Finding n",
-                "text": "What is n, the sample size?",
+                "title": "Finding $$n$$",
+                "text": "What is $$n$$, the sample size?",
                 "variabilization": {}
             },
             {
@@ -41,11 +41,11 @@
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
-                    "17"
+                    "$$17$$"
                 ],
                 "dependencies": [],
                 "title": "Solving for Degrees of Freedom",
-                "text": "Plugging n $$=$$ 19 into the df equation, what is n - 2?",
+                "text": "Plugging $$n$$ $$=$$ $$19$$ into the df equation, what is $$n$$ - 2?",
                 "variabilization": {}
             }
         ]
@@ -56,7 +56,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.456"
+            "$$0.456$$"
         ],
         "dependencies": [
             "a74202acorr4a-h2"
@@ -76,8 +76,8 @@
         "dependencies": [
             "a74202acorr4a-h3"
         ],
-        "title": "r Significance",
-        "text": "The critical values associated with df $$=$$ 17 are -0.456 and $$+0.456$$. Keep in mind that r $$=$$ -0.567. If r < negative critical value or r > positive critical value, then r is significant. Is r significant?",
+        "title": "$$r$$ Significance",
+        "text": "The critical values associated with df $$=$$ $$17$$ are $$-0.456$$ and $$+0.456$$. Keep in mind that $$r$$ $$=$$ $$-0.567$$. If $$r$$ < negative critical value or $$r$$ > positive critical value, then $$r$$ is significant. Is $$r$$ significant?",
         "variabilization": {},
         "choices": [
             "Yes",
@@ -91,7 +91,7 @@
             "a74202acorr4a-h4"
         ],
         "title": "Prediction",
-        "text": "Since r $$=$$ -0.567 and -0.567 < -0.456, r is significant and the line may be used for prediction.",
+        "text": "Since $$r$$ $$=$$ $$-0.567$$ and $$-0.567$$ < $$-0.456$$, $$r$$ is significant and the line may be used for prediction.",
         "variabilization": {}
     }
 ]

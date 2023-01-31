@@ -32,7 +32,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "Ha: The \"number of televisions\" distribution of far western United States families is different from the \"number of televisions\" distribution of the American population."
+            "Ha: The \"number of televisions\" distribution of far western United States families is different from the \"number of televisions\" distribution of the American population.\\n|newline|"
         ],
         "dependencies": [],
         "title": "Alternative Hypothesis",
@@ -59,7 +59,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4"
+            "$$4$$"
         ],
         "dependencies": [
             "af6b5fcgood14a-h3"
@@ -75,7 +75,7 @@
             "af6b5fcgood14a-h4"
         ],
         "title": "Compute the chi-square test statistics",
-        "text": "$$X^2$$ $$=$$ 29.65",
+        "text": "$$X^2$$ $$=$$ $$29.65$$",
         "variabilization": {}
     },
     {
@@ -84,12 +84,12 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.000006"
+            "$$0.000006$$"
         ],
         "dependencies": [
             "af6b5fcgood14a-h5"
         ],
-        "title": "Compute the p-value, P(X**2 > 29.65)",
+        "title": "Compute the $$p-value$$, P(X**2 > $$29.65)$$",
         "text": "Round the answer to six decimal places.\\n##figure1.gif##",
         "variabilization": {}
     },
@@ -99,8 +99,8 @@
         "dependencies": [
             "af6b5fcgood14a-h6"
         ],
-        "title": "Compare with the significant level 0.05.",
-        "text": "At 5% significance level, \\alpha $$=$$ 0.05. For this data, \\alpha < P. Do not reject the null hypothesis.",
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, \\alpha < P. Do not reject the null hypothesis.",
         "variabilization": {}
     },
     {
@@ -110,7 +110,7 @@
             "af6b5fcgood14a-h7"
         ],
         "title": "Interpret the Result",
-        "text": "At the 1% significance level, from the data, there is sufficient evidence to conclude that the \"number of televisions\" distribution for the far western United States is different from the \"number of televisions\" distribution for the American population as a whole.",
+        "text": "At the 1% significance level, from the data, there is sufficient evidence to conclude that the \"number of televisions\" distribution for the far western United States is different from the \"number of televisions\" distribution for the American population as a whole.\\n|newline|",
         "variabilization": {}
     }
 ]

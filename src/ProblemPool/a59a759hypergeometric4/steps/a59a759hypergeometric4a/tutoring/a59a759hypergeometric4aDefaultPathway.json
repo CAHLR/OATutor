@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Structure of Probability Statements",
-        "text": "The structure of a probability statement is P(xOC) where P stands for the probability, x is the variable we are testing against, O is the operation (equal to, less than, less than or equal to, greater than, greater than or equal to) and C is the constant value.",
+        "text": "The structure of a probability statement is P(xOC) where P stands for the probability, $$x$$ is the variable we are testing against, O is the operation (equal to, less than, less than or equal to, greater than, greater than or equal to) and C is the constant value.",
         "variabilization": {}
     },
     {
@@ -13,7 +13,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "x"
+            "$$x$$"
         ],
         "dependencies": [
             "a59a759hypergeometric4a-h1"
@@ -22,9 +22,9 @@
         "text": "What is the variable that we are using?",
         "variabilization": {},
         "choices": [
-            "x",
-            "y",
-            "z",
+            "$$x$$",
+            "$$y$$",
+            "$$z$$",
             "c"
         ]
     },
@@ -40,7 +40,7 @@
             "a59a759hypergeometric4a-h2"
         ],
         "title": "Determining the operation",
-        "text": "What is the operation? The inspector wants at most 2 of the 12 players to be defective. What operation best represents a ceiling when compared to a constant, or \"at most\", which is inclusive?",
+        "text": "What is the operation? The inspector wants at most $$2$$ of the $$12$$ players to be defective. What operation best represents a ceiling when compared to a constant, or \"at most\", which is inclusive?",
         "variabilization": {},
         "choices": [
             "Less than or equal to",
@@ -55,7 +55,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2"
+            "$$2$$"
         ],
         "dependencies": [
             "a59a759hypergeometric4a-h3"
