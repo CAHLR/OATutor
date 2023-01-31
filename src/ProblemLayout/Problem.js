@@ -227,6 +227,7 @@ class Problem extends React.Component {
         if (isCorrect) {
             this.numCorrect += 1;
             if (this.numCorrect !== Object.keys(this.stepStates).length) {
+                console.debug("not last step so not done w/ problem", this.numCorrect, "step states", this.stepStates)
                 scroller.scrollTo((cardIndex + 1).toString(), {
                     duration: 500,
                     smooth: true,

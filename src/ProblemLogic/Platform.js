@@ -312,7 +312,7 @@ class Platform extends React.Component {
                             <Grid item xs={3} key={3}>
                                 <div style={{ textAlign: 'right', paddingTop: "3px" }}>
                                     {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection"
-                                        && (this.lesson.giveStuFeedback == null || this.lesson.giveStuFeedback)
+                                        && (this.lesson.showStuMastery == null || this.lesson.showStuMastery)
                                         ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%"
                                         : ""}
                                 </div>
