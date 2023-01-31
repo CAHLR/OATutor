@@ -202,7 +202,7 @@ class Platform extends React.Component {
         const problems = this.problemIndex.problems.filter(({courseName}) => !courseName.toString().startsWith("!!"))
         let chosenProblem;
 
-        console.debug("Platform.js: sample of available problems", problems.slice(10,10))
+        console.debug("Platform.js: sample of available problems", problems.slice(0,10))
 
         for (const problem of problems) {
             // Calculate the mastery for this problem
@@ -239,7 +239,7 @@ class Platform extends React.Component {
         console.debug("Platform.js: chosen problem", chosenProblem)
 
         const objectives = Object.keys(this.lesson.learningObjectives);
-        console.debug('objectives', objectives)
+        console.debug('Platform.js: objectives', objectives)
         let score = objectives.reduce((x, y) => {
             return x + context.bktParams[y].probMastery
         }, 0);
@@ -254,6 +254,7 @@ class Platform extends React.Component {
             console.log("Graduated");
             return null;
         } else if (chosenProblem == null) {
+            console.debug('no problems were chosen')
             // We have finished all the problems
             if (this.lesson && !this.lesson.allowRecycle) {
                 // If we do not allow problem recycle then we have exhausted the pool
@@ -261,13 +262,18 @@ class Platform extends React.Component {
                 return null;
             } else {
                 this.completedProbs = new Set();
+                chosenProblem = context.heuristic(problems, this.completedProbs);
             }
-        } else {
+        }
+
+        if (chosenProblem) {
             this.setState({ currProblem: chosenProblem, status: "learning" });
             console.log("Next problem: ", chosenProblem.id)
             console.debug("problem information", chosenProblem)
             this.context.firebase.startedProblem(chosenProblem.id, chosenProblem.courseName, chosenProblem.lesson, this.lesson.learningObjectives);
             return chosenProblem;
+        } else {
+            console.debug("still no chosen problem..? must be an error")
         }
     }
 
@@ -281,7 +287,7 @@ class Platform extends React.Component {
                 errorStack: error.stack || "n/a"
             }, this.state.currProblem.id);
         })
-        return this._nextProblem(context);
+        this._nextProblem(context);
     }
 
     displayMastery = (mastery) => { //TODO fix
@@ -312,7 +318,7 @@ class Platform extends React.Component {
                             <Grid item xs={3} key={3}>
                                 <div style={{ textAlign: 'right', paddingTop: "3px" }}>
                                     {this.state.status !== "courseSelection" && this.state.status !== "lessonSelection"
-                                        && (this.lesson.giveStuFeedback == null || this.lesson.giveStuFeedback)
+                                        && (this.lesson.showStuMastery == null || this.lesson.showStuMastery)
                                         ? this.studentNameDisplay + "Mastery: " + Math.round(this.state.mastery * 100) + "%"
                                         : ""}
                                 </div>
