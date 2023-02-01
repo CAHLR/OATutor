@@ -219,7 +219,7 @@ class ProblemCard extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, problemID, problemVars, seed } = this.props;
         const { displayHints, isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
 
@@ -229,12 +229,12 @@ class ProblemCard extends React.Component {
             <Card className={classes.card}>
                 <CardContent>
                     <h2 className={classes.stepHeader}>
-                        {renderText(this.step.stepTitle, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
+                        {renderText(this.step.stepTitle, problemID, chooseVariables(Object.assign({}, problemVars, this.step.variabilization), seed), this.context)}
                         <hr/>
                     </h2>
 
                     <div className={classes.stepBody}>
-                        {renderText(this.step.stepBody, this.props.problemID, chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed))}
+                        {renderText(this.step.stepBody, problemID, chooseVariables(Object.assign({}, problemVars, this.step.variabilization), seed), this.context)}
                     </div>
 
                     {(displayHints || (debug && use_expanded_view)) && this.showHints && (
@@ -262,6 +262,7 @@ class ProblemCard extends React.Component {
 
                     <div className={classes.root}>
                         <ProblemInput
+                            variabilization={chooseVariables(Object.assign({}, this.props.problemVars, this.step.variabilization), this.props.seed)}
                             allowRetry={this.allowRetry}
                             giveStuFeedback={this.giveStuFeedback}
                             showCorrectness={this.showCorrectness}

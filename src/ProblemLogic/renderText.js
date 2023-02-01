@@ -6,17 +6,25 @@ import Spacer from "../Components/_General/Spacer";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
 import RenderMedia from "../Components/_General/RenderMedia";
 
-function renderText(text, problemID, variabilization) {
+/**
+ * @param {string|*} text
+ * @param problemID
+ * @param {*} variabilization
+ * @param context
+ */
+function renderText(text, problemID, variabilization, context) {
     if (typeof text !== 'string') {
         return text;
     }
     let result = text;
+    result = parseForMetaVariables(result, context)
+
     for (const d in dynamicText) {
         const replace = dynamicText[d];
         result = result.split(d).join(replace); // expands all "%dynamic%" text to their specific counterparts
     }
     if (variabilization) {
-        result = variabilize(text, variabilization);
+        result = variabilize(result, variabilization);
     }
 
     const lines = result.split("\\n");
@@ -52,9 +60,28 @@ function renderText(text, problemID, variabilization) {
         })
         // add a spacer if it isn't the last line
         if (idx !== lines.length - 1) {
-            lineParts.push(<Spacer key={Math.random() * 2 ** 16}/>);
+            lineParts.push(<Spacer height={2} width={2} key={Math.random() * 2 ** 16}/>);
         }
         return lineParts;
+    })
+}
+
+const META_REGEX = /%\{([^{}%"]+)}/g
+const mapper = {
+    'oats_user_id': context => context.userID
+}
+/**
+ * Takes in a string and iff there is a part that matches %{variable}, replace it with some context metadata
+ * @param {string} str
+ * @param context
+ * @return {string}
+ */
+function parseForMetaVariables(str, context) {
+    return str.replaceAll(META_REGEX, (ogMatch, group1) => {
+        if (group1 in mapper) {
+            return mapper[group1].call(this, context)
+        }
+        return ogMatch
     })
 }
 
