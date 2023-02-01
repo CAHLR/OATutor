@@ -279,7 +279,7 @@ class Problem extends React.Component {
     }
 
     _getNextDebug = (offset) => {
-        return this.context.problemIDs[this.context.problemIDs.indexOf(this.state.problem.id) + offset] || "/"
+        return this.context.problemIDs[this.context.problemIDs.indexOf(this.props.problem.id) + offset] || "/"
     }
 
 
@@ -299,11 +299,11 @@ class Problem extends React.Component {
                                 "data-selenium-target": "problem-header"
                             })}>
                                 <h1 className={classes.problemHeader}>
-                                    {renderText(problem.title, problem.id, chooseVariables(problem.variabilization, seed))}
+                                    {renderText(problem.title, problem.id, chooseVariables(problem.variabilization, seed), this.context)}
                                     <hr/>
                                 </h1>
                                 <div className={classes.problemBody}>
-                                    {renderText(problem.body, problem.id, chooseVariables(problem.variabilization, seed))}
+                                    {renderText(problem.body, problem.id, chooseVariables(problem.variabilization, seed), this.context)}
                                 </div>
                             </CardContent>
                         </Card>
