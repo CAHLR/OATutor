@@ -46,7 +46,7 @@ class SubHintSystem extends React.Component {
     }
 
     render() {
-        const { classes, index, parent } = this.props;
+        const { classes, index, parent, hintVars, problemID, seed } = this.props;
         const { currentExpanded } = this.state;
         const { debug, use_expanded_view } = this.context;
 
@@ -64,12 +64,12 @@ class SubHintSystem extends React.Component {
                                 id="panel1a-header"
                             >
                                 <Typography className={classes.heading}>
-                                    Hint {i + 1}: {renderText(hint.title, this.props.problemID,
-                                    chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))} </Typography>
+                                    Hint {i + 1}: {renderText(hint.title, problemID,
+                                    chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)} </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component={'span'} style={{ width: "100%" }}>
-                                    {renderText(hint.text, this.props.problemID, chooseVariables(Object.assign({}, this.props.hintVars, hint.variabilization), this.props.seed))}
+                                    {renderText(hint.text, problemID, chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)}
                                     {hint.type === "scaffold" ?
                                         <div>
                                             <Spacer/>

@@ -77,6 +77,7 @@ class HintTextbox extends React.Component {
         return (
             <div>
                 <ProblemInput
+                    variabilization={chooseVariables(this.props.hintVars, this.props.seed)}
                     allowRetry={this.allowRetry}
                     giveStuFeedback={this.giveStuFeedback}
                     showCorrectness={this.showCorrectness}

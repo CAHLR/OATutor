@@ -4,8 +4,11 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import { renderText } from '../../ProblemLogic/renderText.js';
+import { ThemeContext } from "../../config/config";
 
 class MultipleChoice extends React.Component {
+    static contextType = ThemeContext;
+
     constructor(props) {
         super(props);
         this.state = {
@@ -19,7 +22,7 @@ class MultipleChoice extends React.Component {
     };
 
     render() {
-        let { choices: _choices = [] } = this.props;
+        let { choices: _choices = [], variabilization } = this.props;
 
         const choices = []
         if (Array.isArray(_choices)) {
@@ -36,9 +39,12 @@ class MultipleChoice extends React.Component {
             <div style={{ marginRight: "5%", textAlign: "center" }}>
                 <FormControl>
                     <RadioGroup value={this.state.value} onChange={this.handleChange}>
-                        {choices.length > 0 ? choices.map((choice, i) =>
-                            <FormControlLabel value={choice} control={<Radio/>} label={renderText(choice)}
-                                              key={choice}/>) : "Error: This problem has no answer choices. Please submit feedback."}
+                        {choices.length > 0
+                            ? choices.map((choice, i) =>
+                                <FormControlLabel value={choice} control={<Radio/>}
+                                    label={renderText(choice, null, variabilization, this.context)}
+                                    key={choice}/>)
+                            : "Error: This problem has no answer choices. Please submit feedback."}
                     </RadioGroup>
                 </FormControl>
             </div>

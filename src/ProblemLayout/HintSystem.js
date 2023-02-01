@@ -107,7 +107,7 @@ class HintSystem extends React.Component {
     }
 
     render() {
-        const { classes, index, hints, problemID } = this.props;
+        const { classes, index, hints, problemID, seed, stepVars } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
 
@@ -128,11 +128,11 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}</Typography>
+                                Hint {i + 1}: {renderText((hint.title === "nan" ? "" : hint.title), problemID, chooseVariables(Object.assign({}, stepVars, hint.variabilization), seed), this.context)}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography component={'span'} style={{ width: "100%" }}>
-                                {renderText(hint.text, problemID, chooseVariables(Object.assign({}, this.props.stepVars, hint.variabilization), this.props.seed))}
+                                {renderText(hint.text, problemID, chooseVariables(Object.assign({}, stepVars, hint.variabilization), seed), this.context)}
                                 {hint.type === "scaffold" ?
                                     <div>
                                         <Spacer/>

@@ -77,9 +77,9 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state, index, showCorrectness, allowRetry } = this.props;
+        const { classes, state, index, showCorrectness, allowRetry, variabilization } = this.props;
         const { use_expanded_view, debug } = this.context;
-        let { problemType, stepAnswer, hintAnswer } = this.props.step;
+        let { problemType, stepAnswer, hintAnswer, units } = this.props.step;
 
         const problemAttempted = state.isCorrect != null
         const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
@@ -146,6 +146,7 @@ class ProblemInput extends React.Component {
                             {...(use_expanded_view && debug) ? {
                                 defaultValue: correctAnswer
                             } : {}}
+                            variabilization={variabilization}
                         />
                     )}
                     {problemType === "GridInput" && (
@@ -177,7 +178,7 @@ class ProblemInput extends React.Component {
                 </Grid>
                 <Grid item xs={2} md={1}>
                     <div style={{ marginLeft: "20%" }}>
-                        {this.props.step.units && renderText(this.props.step.units)}
+                        {units && renderText(units, this.context.problemID, variabilization, this.context)}
                     </div>
                 </Grid>
                 <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
