@@ -122,11 +122,15 @@
             {
                 "id": "6xd1gfZ9-XQJa-tQRuWn48WI",
                 "name": "Lesson MTurk",
-                "topics": "Worker ID",
-                "allowRecycle": true,
+                "topics": "Survey Code",
+                "allowRecycle": false,
                 "learningObjectives": {
-                    "mturk": 0.85
-                }
+                    "mturk_meta_control1": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false
             },
             {
                 "id": "0HTUDhTs-vvBv-9Q1EmKDlXw",
@@ -292,11 +296,15 @@
             {
                 "id": "1BJ8dXje-KSIL-RhNrB7RLjt",
                 "name": "Lesson MTurk",
-                "topics": "Worker ID",
-                "allowRecycle": true,
+                "topics": "Survey Code",
+                "allowRecycle": false,
                 "learningObjectives": {
-                    "mturk": 0.85
-                }
+                    "mturk_meta_experiment": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false
             },
             {
                 "id": "4KNMMWgx-ZCyL-0hX8PjeAgP",
