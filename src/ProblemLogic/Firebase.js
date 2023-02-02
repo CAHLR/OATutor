@@ -25,7 +25,10 @@ const focusStatus = "focusStatus";
 class Firebase {
 
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
-        if (!ENABLE_FIREBASE) return
+        if (!ENABLE_FIREBASE) {
+            console.debug("Not using firebase for logging")
+            return
+        }
         const app = initializeApp(credentials)
 
         this.oats_user_id = oats_user_id;
@@ -157,7 +160,10 @@ class Firebase {
 
     // TODO: consider using just the context instead
     log(inputVal, problemID, step, hint, isCorrect, hintsFinished, eventType, variabilization, lesson, courseName) {
-        if (!DO_LOG_DATA) return
+        if (!DO_LOG_DATA) {
+            console.debug("Not using firebase for logging (2)")
+            return
+        }
         console.debug("trying to log hint: ", hint, "step", step)
         if (Array.isArray(hintsFinished) && Array.isArray(hintsFinished[0])) {
             hintsFinished = hintsFinished.map(step => step.join(", "))

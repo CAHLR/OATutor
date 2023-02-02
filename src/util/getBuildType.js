@@ -1,5 +1,7 @@
 const buildType = process.env.REACT_APP_BUILD_TYPE || ""
 
+console.debug(`This has the build type: ${buildType}`)
+
 const IS_STAGING = buildType.includes("staging")
 const IS_STAGING_CONTENT = buildType === "staging-content"
 const IS_STAGING_PLATFORM = buildType === "staging-platform"
