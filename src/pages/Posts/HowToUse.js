@@ -3,7 +3,7 @@ import Spacer from "../../Components/_General/Spacer";
 import { useStyles } from "./Posts";
 import { HELP_DOCUMENT, SITE_NAME } from "../../config/config";
 
-const VPAT_LINK = `${process.env.PUBLIC_URL}/static/documents/OpenAdaptiveTutor_VPAT_(WCAG_2-0_&_Section_508).pdf`
+const VPAT_LINK = `${process.env.PUBLIC_URL}/static/documents/OATutor_Sec508_WCAG.pdf`
 
 const HowToUse = () => {
     const classes = useStyles()
