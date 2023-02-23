@@ -44,9 +44,11 @@ class Problem extends React.Component {
         const giveStuFeedback = this.props.lesson?.giveStuFeedback
         const giveStuHints = this.props.lesson?.giveStuHints
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate
+        const unlockFirstHint = this.props.lesson?.unlockFirstHint
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback
         this.giveStuHints = giveStuHints == null || giveStuHints
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate
+        this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint
 
         this.state = {
             stepStates: {},
@@ -318,6 +320,7 @@ class Problem extends React.Component {
                                     lesson={problem.lesson} courseName={problem.courseName}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
+                                    unlockFirstHint={this.unlockFirstHint}
                                 />
                             </Element>)}
                     </div>

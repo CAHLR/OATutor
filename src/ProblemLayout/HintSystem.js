@@ -23,13 +23,18 @@ class HintSystem extends React.Component {
             subHintsFinished.push(new Array((this.props.hints[i].subHints !== undefined ? this.props.hints[i].subHints.length : 0)).fill(0));
         }
 
-        this.giveStuFeedback = props.giveStuFeedback
+        this.giveStuFeedback = props.giveStuFeedback;
+        this.unlockFirstHint = props.unlockFirstHint;
         this.state = {
             latestStep: 0,
-            currentExpanded: -1,
+            currentExpanded: this.unlockFirstHint ? 0 : -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished
+        }
+
+        if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
+            this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
 
@@ -117,7 +122,7 @@ class HintSystem extends React.Component {
                     <Accordion key={`${problemID}-${hint.id}`}
                         onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
                         disabled={this.isLocked(i) && !(use_expanded_view && debug)}
-                        expanded={currentExpanded === i || (use_expanded_view && debug)}
+                        expanded={currentExpanded === i || (use_expanded_view != null && use_expanded_view && debug)}
                         defaultExpanded={false}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon/>}
@@ -151,6 +156,7 @@ class HintSystem extends React.Component {
                                         <ErrorBoundary componentName={"SubHintSystem"}>
                                             <SubHintSystem
                                                 giveStuFeedback={this.giveStuFeedback}
+                                                unlockFirstHint={this.unlockFirstHint}
                                                 problemID={problemID}
                                                 hints={hint.subHints}
                                                 unlockHint={this.unlockSubHint}
