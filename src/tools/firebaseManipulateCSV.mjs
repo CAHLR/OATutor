@@ -56,7 +56,7 @@ const transform = document => {
         if (document.course_id === "n/a") {
             document.course_code = "n/a"
             document.course_name = "n/a"
-            document.canvas_user_id = "n/a"
+            document.lms_user_id = "n/a"
         }
 
         if (document.semester === undefined || document.semester === "" || document.semester === null) {
