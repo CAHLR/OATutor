@@ -111,7 +111,7 @@ async function verifyCSVs(_spinner, csvSelections, collectionType, useSampleMode
             object.assertPredicate("course_id", val => val === "n/a" || val?.toString().length === 40)
             object.assertPredicate("course_code", val => val === "n/a" || val?.toString().length >= 2)
             object.assertPredicate("course_name", val => val === "n/a" || val?.toString().length >= 4)
-            object.assertPredicate("canvas_user_id", val => val === "n/a" || val?.toString().length === 40)
+            object.assertPredicate("lms_user_id", val => val === "n/a" || val?.toString().length === 40)
 
             object.assertType("timeStamp", "undefined")
             object.assertType("canvasStudentID", "undefined")

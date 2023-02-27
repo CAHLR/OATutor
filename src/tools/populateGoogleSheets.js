@@ -38,7 +38,7 @@ const INTERPOLATORS = {
     "Semester": val => calculateSemester(val)
 }
 
-const EXCLUDED_FIELDS = ["semester", "canvas_user_id", "course_code", "course_id", "server_time"]
+const EXCLUDED_FIELDS = ["semester", "lms_user_id", "course_code", "course_id", "server_time"]
 
 const HASH_EXCLUDE_FIELDS = ['status', 'resolution', 'resolveDate', 'deployDate', 'versionFixed', 'Issue Type']
 
