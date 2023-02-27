@@ -298,13 +298,13 @@ app.post('/postScore', jwtMiddleware({
 
 
     let semester = calculateSemester(Date.now());
-    let canvasUserId = user_id;
+    let lmsUserId = user_id;
     let lesson = lessonName;
     const submissionsRef = firestoredb.collection('problemSubmissions');
     // const submissionsRef = firestoredb.collection('development_problemSubmissions');
 
     const queryRef = submissionsRef.where('semester', '==', semester)
-                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lms_user_id', '==', lmsUserId)
                         .where('lesson', '==', lesson)
                         .orderBy('time_stamp', 'asc')
                         .orderBy('problemID', 'asc');
@@ -334,7 +334,7 @@ app.post('/postScore', jwtMiddleware({
 
     // get time of first action
     const firstQueryRef = submissionsRef.where('semester', '==', semester)
-                        .where('canvas_user_id', '==', canvasUserId)
+                        .where('lms_user_id', '==', lmsUserId)
                         .where('lesson', '==', lesson)
                         .orderBy('time_stamp', 'asc')
                         .orderBy('problemID', 'asc')
@@ -348,7 +348,7 @@ app.post('/postScore', jwtMiddleware({
 
 
     // get time of last action before this lesson
-    const prevQueryRef = submissionsRef.where('canvas_user_id', '==', canvasUserId)
+    const prevQueryRef = submissionsRef.where('lms_user_id', '==', lmsUserId)
                         .where('time_stamp', '<', lastTime)
                         .orderBy('time_stamp', 'desc')
                         .limit(1);
