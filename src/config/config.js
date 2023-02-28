@@ -87,7 +87,9 @@ for (let i = 0; i < coursePlans.length; i++) {
     const course = coursePlans[i];
     for (let j = 0; j < course.lessons.length; j++) {
         course.lessons[j].learningObjectives = cleanObjectKeys(course.lessons[j].learningObjectives)
-        lessonPlans.push({ ...course.lessons[j], courseName: course.courseName });
+        lessonPlans.push({ ...course.lessons[j], courseName: course.courseName, 
+                                                courseOER: course.courseOER != null ? course.courseOER : "", 
+                                                courseLicense: course.courseLicense != null ? course.courseLicense : ""});
     }
 }
 const _lessonPlansNoEditor = lessonPlans.filter(({ courseName }) => !courseName.startsWith("!!"))
