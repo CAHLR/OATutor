@@ -318,7 +318,6 @@ class Problem extends React.Component {
     render() {
         const { classes, lesson, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] = this.getOerLicense();
-
         if (problem == null) {
             return (<div></div>);
         }
@@ -395,19 +394,19 @@ class Problem extends React.Component {
                 <footer>
                     <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
-                            {licenseName !== "" && licenseLink !== "" ?
-                                <div>
-                                    "{problem.title}" is a derivative of&nbsp;
-                                    <a href={oerLink} target="_blank" rel="noreferrer">"{oerName}"</a>
-                                    , used under&nbsp;
-                                    <a href={licenseLink} target="_blank" rel="noreferrer">{licenseName}</a>
-                                </div>
-
-                                :<div>
-                                    "{problem.title}" is a derivative of&nbsp;
-                                    <a href={oerLink} target="_blank" rel="noreferrer">"{oerName}"</a>
-                                </div>
-                            }
+                        {licenseName !== "" && licenseLink !== "" ?
+                            <div>
+                                "{problem.title}" is a derivative of&nbsp;
+                                <a href={oerLink} target="_blank" rel="noreferrer">"{oerName}"</a>
+                                , used under&nbsp;
+                                <a href={licenseLink} target="_blank" rel="noreferrer">{licenseName}</a>
+                             </div>
+                                
+                            :<div>
+                                "{problem.title}" is a derivative of&nbsp;
+                                <a href={oerLink} target="_blank" rel="noreferrer">"{oerName}"</a>
+                            </div>
+                        }
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
                             <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
