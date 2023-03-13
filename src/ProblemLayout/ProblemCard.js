@@ -31,12 +31,13 @@ class ProblemCard extends React.Component {
         //console.log("Reconstructing");
         this.step = props.step;
         this.index = props.index;
-        this.giveStuFeedback = props.giveStuFeedback
-        this.giveStuHints = props.giveStuHints
-        this.allowRetry = this.giveStuFeedback
-        this.showHints = this.giveStuHints == null || this.giveStuHints
-        this.showCorrectness = this.giveStuFeedback
-        console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway)
+        this.giveStuFeedback = props.giveStuFeedback;
+        this.giveStuHints = props.giveStuHints;
+        this.unlockFirstHint = props.unlockFirstHint;
+        this.allowRetry = this.giveStuFeedback;
+        this.showHints = this.giveStuHints == null || this.giveStuHints;
+        this.showCorrectness = this.giveStuFeedback;
+        console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway);
         this.hints = JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
 
         for (let hint of this.hints) {
@@ -242,6 +243,7 @@ class ProblemCard extends React.Component {
                             <ErrorBoundary componentName={"HintSystem"} descriptor={"hint"}>
                                 <HintSystem
                                     giveStuFeedback={this.giveStuFeedback}
+                                    unlockFirstHint={this.unlockFirstHint}
                                     problemID={this.props.problemID}
                                     index={this.props.index}
                                     step={this.step}

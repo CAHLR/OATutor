@@ -4,21 +4,15 @@ import Platform from './ProblemLogic/Platform.js';
 import DebugPlatform from './ProblemLogic/DebugPlatform.js';
 import Firebase from "./ProblemLogic/Firebase.js";
 
-import * as localforage from "localforage";
-
-import {
-    Route,
-    HashRouter as Router,
-    Switch
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Notfound from "./notfound.js";
 
 import {
-    ThemeContext,
+    DO_FOCUS_TRACKING,
     PROGRESS_STORAGE_KEY,
     SITE_VERSION,
+    ThemeContext,
     USER_ID_STORAGE_KEY,
-    DO_FOCUS_TRACKING,
 } from './config/config.js';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import { toast, ToastContainer } from "react-toastify";
@@ -43,6 +37,7 @@ import bktParams1 from './config/bktParams/bktParams1.json';
 import bktParams2 from './config/bktParams/bktParams2.json';
 import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
 import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
+import BrowserStorage from "./util/browserStorage";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config)
@@ -54,10 +49,11 @@ const queryParamToContext = {
     "token": "jwt",
     "lis_person_name_full": "studentName",
     "to": "alreadyLinkedLesson",
-    "use_expanded_view": "use_expanded_view"
+    "use_expanded_view": "use_expanded_view",
+    "do_not_restore": "noRestore"
 }
 
-const queryParamsToKeep = ["use_expanded_view", "to"]
+const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore"]
 
 const treatmentMapping = {
     bktParams: {
@@ -122,8 +118,13 @@ class App extends React.Component {
 
             let targetLocation = window.location.href.split("?")[0]
 
+            const contextToKeep = queryParamsToKeep.map(qp => queryParamToContext[qp] || qp)
+            const contextToParam = Object.fromEntries(Object.entries(queryParamToContext).map(([key, val]) => [val, key]))
             const keptQueryParamsObj = Object
-                .fromEntries(Object.entries(additionalContext).filter(([key, _]) => queryParamsToKeep.includes(key)))
+                .fromEntries(Object.entries(additionalContext)
+                    .filter(([key, _]) => contextToKeep.includes(key))
+                    .map(([key, val]) => [contextToParam[key] || key, val])
+                )
             const keptQueryParams = new URLSearchParams(keptQueryParamsObj)
 
             if (Object.keys(keptQueryParamsObj).length > 0) {
@@ -149,6 +150,8 @@ class App extends React.Component {
         window.addEventListener('popstate', onLocationChange);
         onLocationChange()
 
+        this.browserStorage = new BrowserStorage(this)
+
         this.saveProgress = this.saveProgress.bind(this)
     }
 
@@ -169,10 +172,11 @@ class App extends React.Component {
     }
 
     removeProgress = async () => {
-        await localforage.removeItem(PROGRESS_STORAGE_KEY)
-        const existingKeys = (await localforage.keys()) || []
+        const { getKeys, removeByKey } = this.browserStorage;
+        await removeByKey(PROGRESS_STORAGE_KEY)
+        const existingKeys = (await getKeys()) || []
         const lessonStorageKeys = existingKeys.filter(key => key.startsWith(PROGRESS_STORAGE_KEY))
-        await Promise.allSettled(lessonStorageKeys.map(async key => await localforage.removeItem(key)))
+        await Promise.allSettled(lessonStorageKeys.map(async key => await removeByKey(key)))
         this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams)
         window.location.reload();
     }
@@ -187,7 +191,8 @@ class App extends React.Component {
                 return this.originalBktParams[key]?.probMastery !== val.probMastery
             })
         )
-        localforage.setItem(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
+        const { setByKey } = this.browserStorage;
+        setByKey(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
             if (err) {
                 console.debug('save progress error: ', err)
                 toast.warn('Unable to save mastery progress :(', {
@@ -201,7 +206,8 @@ class App extends React.Component {
     }
 
     loadBktProgress = async () => {
-        const progress = await localforage.getItem(PROGRESS_STORAGE_KEY).catch(_e => {
+        const { getByKey } = this.browserStorage;
+        const progress = await getByKey(PROGRESS_STORAGE_KEY).catch(_e => {
             console.debug('error with getting previous progress', _e)
         });
         if (progress == null || typeof progress !== 'object' || Object.keys(progress).length === 0) {
@@ -232,7 +238,8 @@ class App extends React.Component {
                     user: {},
                     problemID: 'n/a',
                     problemIDs: null,
-                    ...this.state.additionalContext
+                    ...this.state.additionalContext,
+                    browserStorage: this.browserStorage
                 }}>
                     <GlobalErrorBoundary>
                         <Router>

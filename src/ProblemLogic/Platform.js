@@ -6,12 +6,12 @@ import LessonSelection from "../ProblemLayout/LessonSelection.js";
 import { withRouter } from "react-router-dom";
 
 import {
-    ThemeContext,
     coursePlans,
-    MIDDLEWARE_URL,
     findLessonById,
+    LESSON_PROGRESS_STORAGE_KEY,
+    MIDDLEWARE_URL,
     SITE_NAME,
-    LESSON_PROGRESS_STORAGE_KEY
+    ThemeContext
 } from '../config/config.js';
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -19,7 +19,6 @@ import ToastID from "../util/toastIds";
 import BrandLogoNav from "../Components/_General/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "../Components/_General/ErrorBoundary";
-import * as localforage from "localforage";
 
 let problemPool = require('../generated/flatProblemPool.json')
 
@@ -168,7 +167,8 @@ class Platform extends React.Component {
         this.lesson = lesson;
 
         const loadLessonProgress = async () => {
-            return (await localforage.getItem(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)).catch(err => {}))
+            const { getByKey } = this.context.browserStorage;
+            return (await getByKey(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)).catch(err => {}))
         }
 
         const [, prevCompletedProbs] = await Promise.all([this.props.loadBktProgress(), loadLessonProgress()]);
@@ -279,7 +279,8 @@ class Platform extends React.Component {
 
     problemComplete = async (context) => {
         this.completedProbs.add(this.state.currProblem.id);
-        await localforage.setItem(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id), this.completedProbs).catch(error => {
+        const { setByKey } = this.context.browserStorage;
+        await setByKey(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id), this.completedProbs).catch(error => {
             this.context.firebase.submitSiteLog("site-error", `componentName: Platform.js`, {
                 errorName: error.name || "n/a",
                 errorCode: error.code || "n/a",

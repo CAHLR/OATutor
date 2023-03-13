@@ -16,11 +16,15 @@ class SubHintSystem extends React.Component {
 
     constructor(props) {
         super(props);
-        this.giveStuFeedback = props.giveStuFeedback
+        this.giveStuFeedback = props.giveStuFeedback;
+        this.unlockFirstHint = props.unlockFirstHint;
         this.state = {
             latestStep: 0,
-            currentExpanded: -1,
+            currentExpanded: this.unlockFirstHint ? 0 : -1,
             hintAnswer: ""
+        }
+        if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
+            this.props.unlockHint(0, this.props.parent);
         }
     }
 
@@ -56,7 +60,7 @@ class SubHintSystem extends React.Component {
                         return <Accordion key={i}
                             onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
                             disabled={this.isLocked(i) && !(use_expanded_view && debug)}
-                            expanded={currentExpanded === i || (use_expanded_view && debug)}
+                            expanded={currentExpanded === i || (use_expanded_view != null && use_expanded_view && debug)}
                             defaultExpanded={false}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon/>}

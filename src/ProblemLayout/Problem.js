@@ -5,15 +5,13 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
-import { animateScroll as scroll, scroller, Element } from "react-scroll";
+import { animateScroll as scroll, Element, scroller } from "react-scroll";
 import update from '../BKT/BKTBrains.js'
-import { renderText, chooseVariables } from '../ProblemLogic/renderText.js';
+import { chooseVariables, renderText } from '../ProblemLogic/renderText.js';
 import styles from './commonStyles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
-import {
-    NavLink
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 
@@ -29,7 +27,6 @@ import to from "await-to-js";
 import ToastID from "../util/toastIds";
 import Spacer from "../Components/_General/Spacer";
 import { stagingProp } from "../util/addStagingProperty";
-import * as localforage from "localforage";
 import { cleanArray } from "../util/cleanObject";
 
 
@@ -44,9 +41,11 @@ class Problem extends React.Component {
         const giveStuFeedback = this.props.lesson?.giveStuFeedback
         const giveStuHints = this.props.lesson?.giveStuHints
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate
+        const unlockFirstHint = this.props.lesson?.unlockFirstHint
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback
         this.giveStuHints = giveStuHints == null || giveStuHints
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate
+        this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint
 
         this.state = {
             stepStates: {},
@@ -143,7 +142,8 @@ class Problem extends React.Component {
                 }
             }
         } else {
-            const showWarning = !await localforage.getItem(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
+            const { getByKey, setByKey } = this.context.browserStorage;
+            const showWarning = !await getByKey(CANVAS_WARNING_STORAGE_KEY) && SHOW_NOT_CANVAS_WARNING
             if (showWarning) {
                 toast.warn("No credentials found (did you launch this assignment from Canvas?)", {
                     toastId: ToastID.warn_not_from_canvas.toString(),
@@ -152,7 +152,7 @@ class Problem extends React.Component {
                         toast.dismiss(ToastID.warn_not_from_canvas.toString())
                     },
                     onClose: () => {
-                        localforage.setItem(CANVAS_WARNING_STORAGE_KEY, 1)
+                        setByKey(CANVAS_WARNING_STORAGE_KEY, 1)
                     }
                 })
             } else {
@@ -314,9 +314,8 @@ class Problem extends React.Component {
 
 
     render() {
-        const { classes, lesson, problem, seed } = this.props;
+        const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] = this.getOerLicense();
-        
         if (problem == null) {
             return (<div></div>);
         }
@@ -349,6 +348,7 @@ class Problem extends React.Component {
                                     lesson={problem.lesson} courseName={problem.courseName}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
+                                    unlockFirstHint={this.unlockFirstHint}
                                 />
                             </Element>)}
                     </div>
@@ -399,7 +399,7 @@ class Problem extends React.Component {
                                 , used under&nbsp;
                                 <a href={licenseLink} target="_blank" rel="noreferrer">{licenseName}</a>
                              </div>
-                                
+
                             :<div>
                                 "{problem.title}" is a derivative of&nbsp;
                                 <a href={oerLink} target="_blank" rel="noreferrer">"{oerName}"</a>
