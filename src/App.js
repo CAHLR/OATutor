@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Platform from './ProblemLogic/Platform.js';
-import DebugPlatform from './ProblemLogic/DebugPlatform.js';
-import Firebase from "./ProblemLogic/Firebase.js";
+import Platform from './platform-logic/Platform.js';
+import DebugPlatform from './platform-logic/DebugPlatform.js';
+import Firebase from "@components/Firebase.js";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Notfound from "./notfound.js";
+import NotFound from "@components/NotFound.js";
 
 import {
     DO_FOCUS_TRACKING,
@@ -32,11 +32,11 @@ import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from './config/firebaseConfig.js';
-import skillModel from './config/skillModel.json';
-import bktParams1 from './config/bktParams/bktParams1.json';
-import bktParams2 from './config/bktParams/bktParams2.json';
-import { heuristic as lowestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic1.js';
-import { heuristic as highestHeuristic } from './config/problemSelectHeuristics/problemSelectHeuristic2.js';
+import skillModel from './content-sources/oatutor/skillModel.json';
+import bktParams1 from './content-sources/oatutor/bkt-params/bktParams1.json';
+import bktParams2 from './content-sources/oatutor/bkt-params/bktParams2.json';
+import { heuristic as lowestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic1.js';
+import { heuristic as highestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic2.js';
 import BrowserStorage from "./util/browserStorage";
 // ### END CUSTOMIZABLE IMPORTS ###
 
@@ -280,7 +280,7 @@ class App extends React.Component {
                                     <Route exact path="/session-expired" render={(props) => (
                                         <SessionExpired key={Date.now()} {...props} />
                                     )}/>
-                                    <Route component={Notfound}/>
+                                    <Route component={NotFound}/>
                                 </Switch>
                             </div>
                             {

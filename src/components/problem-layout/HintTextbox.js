@@ -1,16 +1,16 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './common-styles.js';
-import { checkAnswer } from '../../ProblemLogic/checkAnswer.js';
+import { checkAnswer } from '../../platform-logic/checkAnswer.js';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
-import { chooseVariables } from '../../ProblemLogic/renderText.js';
+import { chooseVariables } from '../../platform-logic/renderText.js';
 import { ThemeContext } from '../../config/config.js';
 import ProblemInput from "../problem-input/ProblemInput";
 import { stagingProp } from "../../util/addStagingProperty";
 import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
-import { joinList } from "../util/formListString";
+import { joinList } from "../../util/formListString";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;

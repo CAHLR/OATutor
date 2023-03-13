@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import MultipleChoice from "./MultipleChoice";
 import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
-import { renderText } from "../../ProblemLogic/renderText";
+import { renderText } from "../../platform-logic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
 import { shuffleArray } from "../../util/shuffleArray";

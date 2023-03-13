@@ -1,4 +1,4 @@
-import { Enumify } from "./enumify";
+const { Enumify } = require("./enumify");
 
 class WrongAnswerReasons extends Enumify {
     static wrong = new WrongAnswerReasons();

@@ -78,11 +78,15 @@ Code for this project is located in the `src` directory.
 - `App.js`: Top level script, creates firebase object. Sets up the application context.
 - `index.js`: Renders `App.js`
 
-### /BKT
+### /models/BKT
 
-- `BKTBrains.js`: Contains `update` function that implements the standard BKT update algorithm.
+- `BKT-brain.js`: Contains `update` function that implements the standard BKT update algorithm.
 
-### /ProblemLayout
+### /components
+
+- `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
+
+### /components/problem-layout
 
 - `HintSystem.js`: Expandable panel component to display all the hints.
 
@@ -104,7 +108,7 @@ website for more info on this syntax.
 
 - `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
 
-### /ProblemLogic
+### /platform-logic
 
 - `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
   Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
@@ -123,7 +127,7 @@ website for more info on this syntax.
 - Each problem is contained in its own folder.
 - Problems can contain steps which are contained in their own sub-folder.
 - Steps can contain hints which are stored as pathways in the `tutoring` sub-folder.
-- All problems are pre-processed before being ingested by the frontend platform. All problems are accumulated in the `src/generated/flatProblemPool.json` file prior to each run or build.
+- All problems are pre-processed before being ingested by the frontend platform. All problems are accumulated in the `generated/processed-content-pool/[source_name].json` file prior to each run or build.
 
 #### Markdown Support
 

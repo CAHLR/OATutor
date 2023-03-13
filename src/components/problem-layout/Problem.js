@@ -6,9 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import ProblemCard from './ProblemCard'
 import Grid from '@material-ui/core/Grid';
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
-import update from '../../BKT/BKTBrains.js'
-import { chooseVariables, renderText } from '../../ProblemLogic/renderText.js';
-import styles from './commonStyles.js';
+import update from '../../models/BKT/BKT-brain.js'
+import { chooseVariables, renderText } from '../../platform-logic/renderText.js';
+import styles from './common-styles.js';
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import { NavLink } from "react-router-dom";
@@ -25,7 +25,7 @@ import {
 import { toast } from "react-toastify";
 import to from "await-to-js";
 import ToastID from "../../util/toastIds";
-import Spacer from "../Components/_General/Spacer";
+import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 
