@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           persist-credentials: false
           submodules: 'recurse'
+          ssh-key: |
+            ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
 
       - name: Save original git author and git email
         run: |
