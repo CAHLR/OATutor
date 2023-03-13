@@ -11,8 +11,8 @@ import { _coursePlansNoEditor, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '.
 import Spacer from "../Spacer";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { Typography } from "@material-ui/core";
-import { IS_STAGING_OR_DEVELOPMENT } from "../util/getBuildType";
-import BuildTimeIndicator from "../Components/_General/BuildTimeIndicator";
+import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
+import BuildTimeIndicator from "@components/BuildTimeIndicator";
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;

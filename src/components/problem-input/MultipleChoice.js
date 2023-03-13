@@ -3,7 +3,7 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import { renderText } from '../../ProblemLogic/renderText.js';
+import { renderText } from '../../platform-logic/renderText.js';
 import { ThemeContext } from "../../config/config";
 
 class MultipleChoice extends React.Component {

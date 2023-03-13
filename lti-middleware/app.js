@@ -273,7 +273,7 @@ app.post('/postScore', jwtMiddleware({
     }
 
     // TODO: check if this works properly
-    const coursePlans = require(path.join(__dirname, "..", "src", "config", "coursePlans.json"));
+    const coursePlans = require(path.join(__dirname, "..", "src", "content-sources", "oatutor", "coursePlans.json"));
     const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor)
     let lessonName = null;
 

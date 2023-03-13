@@ -6,7 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HintTextbox from './HintTextbox.js';
-import { renderText, chooseVariables } from '../../ProblemLogic/renderText.js';
+import { renderText, chooseVariables } from '../../platform-logic/renderText.js';
 import Spacer from "../Spacer";
 import { ThemeContext } from "../../config/config";
 

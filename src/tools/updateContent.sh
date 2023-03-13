@@ -58,26 +58,26 @@ fi
 cd "${PLATFORM_REPO_DIR}" || exit
 echo "Removing existing ProblemPool from the platform repository: ${PLATFORM_REPO_DIR}"
 
-rm -rf src/ProblemPool
+rm -rf src/content-sources/oatutor/content-pool
 
 echo "Copying over new ProblemPool from ${CONTENT_REPO_DIR}/${CONTENT_DIR_NAME} to ${PLATFORM_REPO_DIR}"
 
-cp -a "${CONTENT_REPO_DIR}/${CONTENT_DIR_NAME}" src/ProblemPool
+cp -a "${CONTENT_REPO_DIR}/${CONTENT_DIR_NAME}" src/content-sources/oatutor/content-pool
 
 echo "Copying over new Config Files"
 
 cd "${CONTENT_REPO_DIR}" || exit
 
 for FILE in "${CONFIG_FILES[@]}"; do
-    cp "$FILE" "${PLATFORM_REPO_DIR}/src/config"
+    cp "$FILE" "${PLATFORM_REPO_DIR}/src/content-sources/oatutor"
 done
 
 cd "${PLATFORM_REPO_DIR}" || exit
 
-# replace old bktParams with newly generated ones
-rm src/config/bktParams/*.json
-mv src/config/bktParams.json src/config/bktParams/bktParams1.json
-cp src/config/bktParams/bktParams1.json src/config/bktParams/bktParams2.json
+# replace old bkt-params with newly generated ones
+rm src/config/bkt-params/*.json
+mv src/config/bkt-params.json src/config/bkt-params/bktParams1.json
+cp src/config/bkt-params/bktParams1.json src/config/bkt-params/bktParams2.json
 
 echo "Preprocessing the problem pool..."
 
