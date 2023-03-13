@@ -29,8 +29,8 @@ jobs:
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
 
-      - name: Do not log data
-        run: sed -i 's/DO_LOG_DATA = true/DO_LOG_DATA = false/g' src/config/config.js
+#      - name: Do not log data
+#        run: sed -i 's/DO_LOG_DATA = true/DO_LOG_DATA = false/g' src/config/config.js
 
       - name: Cache node modules
         uses: actions/cache@v2
