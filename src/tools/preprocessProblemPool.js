@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const util = require('util');
+const { CONTENT_SOURCE } = require('../../common/global-config')
 
 const copyFile = util.promisify(fs.copyFile)
 const readdir = util.promisify(fs.readdir)
@@ -14,11 +15,11 @@ if (+process.versions.node.split(".")[0] < 10) {
     process.exit(1)
 }
 
-// the current file should be in src/tools so ../ProblemPool should be src/ProblemPool
-const problemPoolPath = path.join(__dirname, '..', 'ProblemPool')
-const generatedPath = path.join(__dirname, '..', 'generated')
-const poolFilePath = path.join(generatedPath, 'flatProblemPool.json')
-const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures')
+// the current file should be in src/tools so ../content-sources/* should be src/content-sources/*
+const problemPoolPath = path.join(__dirname, '..', 'content-sources', CONTENT_SOURCE, 'content-pool')
+const generatedPath = path.join(__dirname, '..', '..', 'generated', 'processed-content-pool')
+const poolFilePath = path.join(generatedPath, `${CONTENT_SOURCE}.json`)
+const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', 'images', 'figures', CONTENT_SOURCE)
 
 ;(async () => {
     // let hasPrevPool = true, config = {};
@@ -70,7 +71,7 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
     // remove existing static figures
     await rm(staticFiguresPath, { recursive: true }).catch(err => {
         console.debug(err)
-        console.error('error removing existing figures')
+        console.error('error removing existing figures (this is ok on the first run)')
         if (err.code !== 'ENOENT') {
             process.exit(1)
         }
