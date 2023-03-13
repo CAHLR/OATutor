@@ -3,8 +3,8 @@ import { findLessonById, _lessonPlansNoEditor, ThemeContext } from "../config/co
 import { AppBar, Box, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
-import BrandLogoNav from "../Components/_General/BrandLogoNav";
-import Spacer from "../Components/_General/Spacer";
+import BrandLogoNav from "@components/BrandLogoNav";
+import Spacer from "@components/Spacer";
 
 const AssignmentAlreadyLinked = (props) => {
     const lessonPlans = _lessonPlansNoEditor;

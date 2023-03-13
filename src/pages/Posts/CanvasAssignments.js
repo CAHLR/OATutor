@@ -1,9 +1,9 @@
 import React from "react";
-import Spacer from "../../Components/_General/Spacer";
+import Spacer from "@components/Spacer";
 import { useStyles } from "./Posts";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
-import ZoomImage from "../../Components/_General/ZoomImage";
+import ZoomImage from "@components/ZoomImage";
 
 const CanvasAssignments = () => {
     const classes = useStyles()

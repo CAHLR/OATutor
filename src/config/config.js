@@ -1,8 +1,8 @@
 import React from 'react';
-import courses from './coursePlans.json';
+import courses from '../content-sources/oatutor/coursePlans.json';
 import { calculateSemester } from "../util/calculateSemester.js";
 
-import { SITE_NAME } from "./shared-config"
+import { SITE_NAME } from "@common/global-config"
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
@@ -87,8 +87,8 @@ for (let i = 0; i < coursePlans.length; i++) {
     const course = coursePlans[i];
     for (let j = 0; j < course.lessons.length; j++) {
         course.lessons[j].learningObjectives = cleanObjectKeys(course.lessons[j].learningObjectives)
-        lessonPlans.push({ ...course.lessons[j], courseName: course.courseName, 
-                                                courseOER: course.courseOER != null ? course.courseOER : "", 
+        lessonPlans.push({ ...course.lessons[j], courseName: course.courseName,
+                                                courseOER: course.courseOER != null ? course.courseOER : "",
                                                 courseLicense: course.courseLicense != null ? course.courseLicense : ""});
     }
 }
