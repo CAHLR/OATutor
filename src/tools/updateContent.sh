@@ -75,9 +75,9 @@ done
 cd "${PLATFORM_REPO_DIR}" || exit
 
 # replace old bkt-params with newly generated ones
-rm src/config/bkt-params/*.json
-mv src/config/bkt-params.json src/config/bkt-params/bktParams1.json
-cp src/config/bkt-params/bktParams1.json src/config/bkt-params/bktParams2.json
+rm src/content-sources/oatutor/bkt-params/*.json
+mv src/content-sources/oatutor/bktParams.json src/content-sources/oatutor/bkt-params/bktParams1.json
+cp src/content-sources/oatutor/bkt-params/bktParams1.json src/content-sources/oatutor/bkt-params/bktParams2.json
 
 echo "Preprocessing the problem pool..."
 
