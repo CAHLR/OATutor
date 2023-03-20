@@ -1,10 +1,12 @@
 # OATutor
 
-OATutor, formerly known as OpenITS, is an open source Intelligent Tutoring System using Bayesian Knowledge Tracing
-implemented in ReactJS and using Firebase for logging. Includes ExpressJS middleware for interoperability
-with LTI-compatible learning management systems (such as [Canvas](https://www.instructure.com/)).
+OATutor is an Open-source Adaptive Tutoring System using Bayesian Knowledge Tracing
+implemented in ReactJS and optionally using [Firebase](https://firebase.google.com/) for logging. 
+The whole tutoring system can be deployed on Github Pages without the use of servers. If desired, 
+a server can be used to operate an included ExpressJS middleware for interoperability with LTI-compatible learning management systems 
+such as [Canvas](https://www.instructure.com/).
 
-> Jump to [OATutor Content](#oatutor-content)
+> Jump to our content repository: [CAHLR/OATutor-Content](https://github.com/CAHLR/OATutor-Content)
 
 ## Requirements
 
@@ -13,7 +15,7 @@ The installation assumes that you already have Git, Node.js, and npm installed.
 ## Installation
 
 ```sh
-git clone https://github.com/CAHLR/OATutor.git
+git clone --recurse-submodules https://github.com/CAHLR/OATutor.git
 cd OATutor
 ```
 
@@ -37,6 +39,8 @@ npm run start
 npm run build
 npx serve -s build
 ```
+> The build folder now contains all of the static assets necessary to make a complete deployment on
+> a static site hosting provider.
 
 ### \[Optional\] Firebase Setup
 
@@ -52,7 +56,7 @@ OATutor can use Firebase to persistently store log data.
 
 1. Scaffolding/hint system - modularize the type of help
 2. Adaptive item selection - Pick items to master weakest skills (isolate skills to master individually)
-3. Centralized skill model - `src/config/skillModel.json`
+3. Centralized skill model - `src/content-sources/*/skillModel.json`
 4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5. User login/registration - JSON Web Tokens
 
@@ -61,7 +65,7 @@ OATutor can use Firebase to persistently store log data.
 * Frontend: ReactJS
     * Theme: Material UI
     * Database: localForage (localStorage, WebSQL, IndexedDB)
-    * Deployment: Github Actions
+    * Deployment: Github Actions to Github Pages
     * \[Optional\] Logging: Firebase (Cloud Firestore)
 * Middleware: ExpressJS
     * Database: Level-DB
@@ -78,15 +82,19 @@ Code for this project is located in the `src` directory.
 - `App.js`: Top level script, creates firebase object. Sets up the application context.
 - `index.js`: Renders `App.js`
 
-### /models/BKT
+### ./models/BKT
 
 - `BKT-brain.js`: Contains `update` function that implements the standard BKT update algorithm.
+- `problem-select-heuristics/*.js`: These files contain a configurable heuristic for adaptive
+  problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
+  probability of mastery across all of its knowledge components, but this can be changed to any heuristic depending
+  on the problem information and the previously completed problems.
 
-### /components
+### ./components
 
 - `Firebase.js`: Class with methods to read/write to Firebase (Cloud Firestore).
 
-### /components/problem-layout
+### ./components/problem-layout
 
 - `HintSystem.js`: Expandable panel component to display all the hints.
 
@@ -108,7 +116,7 @@ website for more info on this syntax.
 
 - `problemCardStyles.js`: This file contains all the styles for `ProblemCard.js`
 
-### /platform-logic
+### ./platform-logic
 
 - `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
   Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
@@ -122,12 +130,11 @@ website for more info on this syntax.
 
 - `renderText.js`: Method called to render text. Fills in dynamic text generation.
 
-### /ProblemPool [Configurable]
+### ./content-sources [Configurable]
 
-- Each problem is contained in its own folder.
-- Problems can contain steps which are contained in their own sub-folder.
-- Steps can contain hints which are stored as pathways in the `tutoring` sub-folder.
-- All problems are pre-processed before being ingested by the frontend platform. All problems are accumulated in the `generated/processed-content-pool/[source_name].json` file prior to each run or build.
+- Each sub-folder can be considered its own isolated content source.
+  -  `oatutor` contains OATutor-curated content but can be removed if the content is not being used.
+- See the [Content Source](#oatutor-content-pool) section for more details.
 
 #### Markdown Support
 
@@ -135,28 +142,14 @@ website for more info on this syntax.
 - Wrap Latex in `$` for inline LaTeX
 - Newlines can be created with `\n`, escaped as `\\n`
 
-### /config [Configurable]
+### ./config [Configurable]
 
 - `config.js`: Central place where options can be configured. Also includes function to get the treatment id given a
   userID, imports all appropriate treatments (Ex. BKTParam, HintPathway, Adaptive Problem selection heuristic)
 
-- `./bktParams/bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used in the
-  BKT model.
-- `./problemSelectHeuristics/problemSelectHeuristic.js`: This file contains a configurable heuristic for adaptive
-  problem selection. The default heuristic iterates across the problems and chooses the one with the lowest average
-  probability of mastery across all of its knowledge components, but this can be changed to any heuristic.
+- `firebaseConfig.js`: File containing firebase set up configuration.
 
-- `skillModel.json`: This file contains all the problem to skill mappings. The format is as follows:
-
-```json5
-{
-    problemID1a: ['skill1', 'skill2'],
-    problemID1b: ['skill2', 'skill3'],
-    // ...
-}
-```
-
-### /tools [Optional]
+### ./tools [Optional]
 
 Data parsing and spreadsheet populating tools are stored in `src/tools`. If you would
 like to use any of the tools in this directory, the following steps must be taken to
@@ -191,7 +184,7 @@ From the `src/tools` directory, `node populateGoogleSheets.js`
 This tool requires no additional set up, and allows you to download a CSV of the Firebase
 collections.
 
-### /util
+### ./util
 
 Contains common helper methods for the frontend React app.
 
@@ -232,11 +225,41 @@ DO_FOCUS_TRACKING = false;
    listener logs.
 4. Configure buffer size and granularity of logging
 
-## Problem Pool<a id='oatutor-content'></a>
+## Content Sources <a id='oatutor-content-pool'></a>
 
-### Adding a problem to the Problem Pool
+- OATutor can support multiple content sources simultaneously, compartmentalizing courses, lessons, and problems of
+  different topics
+- Currently, the `oatutor` content source is included in this repository as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+  to enable separate versioning
+- However, content sources can be copied in as entire folders as well and committed to this repository
 
-1. Create a folder in `/src/ProblemPool/` for that problem (Ex. `circle1`)
+### Content Source Directory Structure
+#### ./content-pool
+- Each _problem_ is contained in its own folder.
+- Problems can contain _steps_ which are contained in their own sub-folder.
+- Steps can contain _hints_ which are stored as _pathways_ in the `tutoring` sub-folder.
+- All problems are pre-processed before being ingested by the frontend platform. 
+  All problems are accumulated in the `generated/processed-content-pool/[source_name].json` file prior to each run or build.
+
+#### ./bkt-params
+- `bktParams.js`: Contains the mastery, transit, slip, and guess probabilities for each skill. Used by the BKT model.
+
+#### Meta / Tagging files
+- `skillModel.json`: This file contains all the problem to skill mappings. The format is as follows:
+```json5
+{
+    problemID1a: ['skill1', 'skill2'],
+    problemID1b: ['skill2', 'skill3'],
+    // ...
+}
+```
+- `coursePlans.json`: This file contains all of the _courses_ relating to this content source. Each course specified in
+  this file is associated with multiple _lessons_. See the [creating lesson plans](#creating-lesson-plans) section for
+  more details.
+
+### Adding a problem to the Content Pool
+
+1. Create a folder in `./content-pool` for that problem (Ex. `circle1`)
 2. Create a metadata json file for that problem id (Ex. `circle1.json`)
 3. Create a folder called `figures` if the problem has image figures
 4. Create a sub-folder for each problem step (Ex. `circle1a`, `circle1b`)
@@ -244,9 +267,9 @@ DO_FOCUS_TRACKING = false;
    1. Ensure that the step name matches the folder name
 6. Create a sub-folder within the step's sub-folder called `tutoring`
 7. Place each hint pathway within the folder (Ex. `circle1aDefaultPathway.json`)
-8. In `/src/config/skillModel.json`, tag each problem with the appropriate skills
-9. If the skill does not already exist in `bktParams`, add its BKT parameters in the appropriate `config/bktParams`
-   files
+8. In `./skillModel.json`, tag each problem with the appropriate skills
+9. If the skill does not already exist in `bktParams` and you are using the BKT model, add its BKT parameters in the 
+   appropriate `bkt-params/bktParams.json` files
 
 ### Types of problems
 
@@ -258,22 +281,28 @@ DO_FOCUS_TRACKING = false;
 ### Example Directory Structure
 
 ```
-ProblemPool
-└───circle1
-│   │   circle1.json
-│   └───steps
-│       └───circle1a
-│       │   │   circle1a.json
-│       │   └───tutoring
-│       │       │   circle1aDefaultPathway.json
-│       │          
-│       └───circle1b
-│           │   circle1b.json
-│           └───tutoring
-│               │   circle1bDefaultPathway.json
-│   
-└───slope1
-    │   ...
+content-sources/
+└── oatutor [submodule]/
+    ├── bkt-params/
+    │   ├── bktParams1.json
+    │   └── bktParams2.json
+    ├── content-pool/
+    │   ├── circle1/
+    │   │   ├── circle1.json
+    │   │   └── steps/
+    │   │       ├── circle1a/
+    │   │       │   ├── circle1a.json
+    │   │       │   └── tutoring/
+    │   │       │       └── circle1aDefaultPathway.json
+    │   │       └── circle1b/
+    │   │           ├── circble1b.json
+    │   │           └── tutoring/
+    │   │               └── circle1bDefaultPathway.json
+    │   └── slope1/
+    │       ├── slope1.json
+    │       └── ...
+    ├── coursePlans.json
+    └── skillModel.json
 ```
 
 ### Example Problem File
@@ -373,9 +402,9 @@ const step = {
 export { step };
 ```
 
-### Creating Lesson Plans
+### Creating Lesson Plans <a id="creating-lesson-plans"><a/>
 
-* Create a lesson plan by making a new item in `config/coursePlans.json`
+* Create a lesson plan by making a new item in `[content_source]/coursePlans.json`
 * Each lesson plan has learning objectives which you can also list the target mastery level
 * Lesson plans can have multiple learning objectives (for cumulative review)
 * Users select a lesson upon visiting the site
