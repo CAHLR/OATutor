@@ -380,28 +380,6 @@ content-sources/
 }
 ```
 
-### ~~Using HTML/React Objects as body text for LaTeX~~ [Deprecated]
-
-```jso
-import hints from './pythag1a-index.js';
-import React from 'react';
-import { InlineMath } from 'react-katex';
-
-const step = {
-    id: 'pythag1a',
-    stepTitle: "1. Vertical Component",
-    stepBody: <div>
-        What is the net force<InlineMath math={"\\sum F_y "}/>, in the vertical direction?
-    </div>,
-    stepAnswer: ["0.10"],
-    problemType: "TextBox",
-    answerType: "algebra",
-    hints: hints
-}
-
-export { step };
-```
-
 ### Creating Lesson Plans <a id="creating-lesson-plans"><a/>
 
 * Create a lesson plan by making a new item in `[content_source]/coursePlans.json`
@@ -419,6 +397,18 @@ export { step };
     {
         pythagorean: 0.95
     }
+}
+```
+## Citation
+To credit this library, please cite our paper published in the Educaitonal Data Mining Conference:
+
+Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E. (In press). OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*. ACM. Hamberg, Germany.
+```
+@inproceedings{pardos2023oat,
+  title={OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research},
+  author={Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E},
+  booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+  year={In press}
 }
 ```
 
