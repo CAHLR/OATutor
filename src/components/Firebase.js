@@ -119,6 +119,10 @@ class Firebase {
             treatment: this.treatment,
             time_stamp: Date.now(),
 
+            ...process.env.REACT_APP_STUDY_ID ? {
+                study_id: process.env.REACT_APP_STUDY_ID
+            } : {},
+
             ...!isArrayElement ?
                 {
                     server_time: serverTimestamp(),
