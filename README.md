@@ -1,12 +1,40 @@
 # OATutor
 
-OATutor is an Open-source Adaptive Tutoring System using Bayesian Knowledge Tracing
-implemented in ReactJS and optionally using [Firebase](https://firebase.google.com/) for logging. 
-The whole tutoring system can be deployed on Github Pages without the use of servers. If desired, 
-a server can be used to operate an included ExpressJS middleware for interoperability with LTI-compatible learning management systems 
-such as [Canvas](https://www.instructure.com/).
+OATutor is an Open-source Adaptive Tutoring System
+implemented in React JS with optional logging via [Firebase](https://firebase.google.com/). 
+The whole tutoring system can be deployed on git-pages without the use of any backend. For LMS integration, 
+a middleware backend is required by Learning Tools Interoperability (LTI). Our backend server can be used to [configure an LMS assignment](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) or the middleware can be launched independently.
 
-> Jump to our content repository: [CAHLR/OATutor-Content](https://github.com/CAHLR/OATutor-Content)
+> View our [quick deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
+> 
+> Jump to our [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
+
+## Paper
+To credit this library, please cite our CHI'23 paper:
+
+Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Ethan Zhang. 2023. OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*. Association for Computing Machinery, New York, NY, USA, Article 416, 1–17. [https://doi.org/10.1145/3544548.3581574](https://doi.org/10.1145/3544548.3581574)
+```
+@inproceedings{pardos2023oat,
+  title={OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research},
+  author={Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E},
+  booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+  pages={1--17},
+  organization={Association for Computing Machinery},
+  doi={https://doi.org/10.1145/3544548.3581574},
+  year={2023}
+}
+```
+### Creative Commons Attribution
+
+The content submodule repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
+the form of hints and scaffolds, authored and edited by the OATutor project, also released under CC BY 4.0.
+
+1. A subset of problems are derivatives of _OpenStax: Elementary Algebra_ by OpenStax, used under CC
+   BY 4.0
+2. A subset of problems are derivatives of _OpenStax: Intermediate Algebra_ by OpenStax, used under CC
+   BY 4.0
+3. A subset of problems are derivatives of _Openstax: College Algebra_ by OpenStax, used under CC
+   BY 4.0
 
 ## Requirements
 
@@ -399,32 +427,6 @@ content-sources/
     }
 }
 ```
-## Citation
-To credit this library, please cite our paper published in the Educaitonal Data Mining Conference:
-
-Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E. (In press). OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*. ACM. Hamberg, Germany.
-```
-@inproceedings{pardos2023oat,
-  title={OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research},
-  author={Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E},
-  booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
-  year={In press}
-}
-```
-
-### Creative Commons Attribution
-
-This repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
-the form of hints and scaffolds, authored and edited by the OAT project.
-
-1. A subset of problems are derivatives of _OpenStax: Elementary Algebra_ by OpenStax, used under CC
-   BY 4.0
-2. A subset of problems are derivatives of _OpenStax: Intermediate Algebra_ by OpenStax, used under CC
-   BY 4.0
-3. A subset of problems are derivatives of _Openstax: College Algebra_ by OpenStax, used under CC
-   BY 4.0
-
-Upon release, our provided content pool will therefore also have the most permissive “CC BY” license.
 
 ## Research
 
