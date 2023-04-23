@@ -6,6 +6,7 @@ The whole tutoring system can be deployed on git-pages without the use of any ba
 a middleware backend is required by Learning Tools Interoperability (LTI). Our backend server can be used to [configure an LMS assignment](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) or the middleware can be launched independently.
 
 > View our quick deploy notebook example: [colab](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
+> 
 > Jump to our Creative Commons content repository: [CAHLR/OATutor-Content](https://github.com/CAHLR/OATutor-Content)
 
 ## Requirements
