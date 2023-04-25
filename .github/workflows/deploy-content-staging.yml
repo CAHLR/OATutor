@@ -23,7 +23,7 @@ jobs:
             ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
             ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
 
-      - run: git submodule update --init --recursive --remote
+      - run: git submodule update --init --recursive
 
       - name: Save original git author and git email
         run: |
