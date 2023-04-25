@@ -1,13 +1,12 @@
 # OATutor
 
-OATutor is an Open-source Adaptive Tutoring System
-implemented in React JS with optional logging via [Firebase](https://firebase.google.com/). 
-The whole tutoring system can be deployed on git-pages without the use of any backend. For LMS integration, 
-a middleware backend is required by Learning Tools Interoperability (LTI). Our backend server can be used to [configure an LMS assignment](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) or the middleware can be launched independently.
+OATutor is an Open-source Adaptive Tutoring System (OAT) based on Intelligent Tutoring System principles. It uses Bayesian Knowledge Tracing for skill mastery estimation and is implemented entirely in React JS with optional logging using [Firebase](https://firebase.google.com/). 
+The system can be deployed to git-pages without the use of any backend. For LMS integration, 
+a middleware backend is required by Learning Tools Interoperability (LTI). Our [hosted backend server](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) can be used or the middleware can be launched independently. OATutor is Section 508 accessibility [compliant](https://cahlr.github.io/OATutor/static/documents/OATutor_Sec508_WCAG.pdf).
 
-> View our [quick deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
+> [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
 > 
-> Jump to our [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
+> [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
 
 ## Paper
 To credit this library, please cite our CHI'23 paper:
