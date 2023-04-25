@@ -22,7 +22,7 @@ jobs:
           ssh-private-key: |
             ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
 
-      - run: git submodule update --init --recursive --remote
+      - run: git submodule update --init --recursive
 
       - name: Save original git author and git email
         run: |
