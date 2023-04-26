@@ -7,6 +7,8 @@ a middleware backend is required by Learning Tools Interoperability (LTI). Our [
 > [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
 > 
 > [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
+>
+> [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
 
 ## Paper
 To credit this library, please cite our CHI'23 paper:
@@ -23,6 +25,9 @@ Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Et
   year={2023}
 }
 ```
+
+Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://arxiv.org/abs/2302.06871](https://arxiv.org/abs/2302.06871)
+
 ### Creative Commons Attribution
 
 The content submodule repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
