@@ -5,8 +5,6 @@ The system can be deployed to git-pages without the use of any backend. For LMS 
 a middleware backend is required by Learning Tools Interoperability (LTI). Our [hosted backend server](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) can be used or the middleware can be launched independently. OATutor is Section 508 accessibility [compliant](https://cahlr.github.io/OATutor/static/documents/OATutor_Sec508_WCAG.pdf).
 
 > [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
-> 
-> [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
 >
 > [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
 
