@@ -36,7 +36,7 @@ class ProblemCard extends React.Component {
         this.unlockFirstHint = props.unlockFirstHint;
         this.allowRetry = this.giveStuFeedback;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
-        this.showCorrectness = this.giveStuFeedback;
+        this.showCorrectness = this.giveStuFeedback && this.step.answerType !== "sa";
         console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway);
         this.hints = JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
 
@@ -142,7 +142,7 @@ class ProblemCard extends React.Component {
     }
 
     editInput = (event) => {
-        this.setInputValState(event.target.value)
+        this.setInputValState(event.target.value);
     }
 
     setInputValState = (inputVal) => {
@@ -150,7 +150,7 @@ class ProblemCard extends React.Component {
     }
 
     handleKey = (event) => {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter' && this.step.answerType !== "sa") {
             this.submit();
         }
     }

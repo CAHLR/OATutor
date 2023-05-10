@@ -152,6 +152,8 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
             }
 
             return [parsed, false, WrongAnswerReasons.wrong];
+        } else if (answerType === "sa") {
+            return [parsed, true, null];
         } else {
             // guess it is a number problem
             parsed = +attempt;
