@@ -146,7 +146,7 @@ class HintTextbox extends React.Component {
                                     {...stagingProp({
                                         "data-selenium-target": `step-correct-img-${hintIndex}`
                                     })}
-                                    src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/info.svg`}/>
                             }
                             {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
                                 <img className={classes.checkImage}
