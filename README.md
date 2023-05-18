@@ -5,11 +5,11 @@ The system can be deployed to git-pages without the use of any backend. For LMS 
 a middleware backend is required by Learning Tools Interoperability (LTI). Our [hosted backend server](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) can be used or the middleware can be launched independently. OATutor is Section 508 accessibility [compliant](https://cahlr.github.io/OATutor/static/documents/OATutor_Sec508_WCAG.pdf).
 
 > [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
-> 
-> [Creative Commons content repository](https://github.com/CAHLR/OATutor-Content)
+>
+> [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
 
 ## Paper
-To credit this library, please cite our CHI'23 paper:
+To credit this system, please cite our CHI'23 paper:
 
 Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Ethan Zhang. 2023. OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*. Association for Computing Machinery, New York, NY, USA, Article 416, 1–17. [https://doi.org/10.1145/3544548.3581574](https://doi.org/10.1145/3544548.3581574)
 ```
@@ -23,6 +23,9 @@ Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Et
   year={2023}
 }
 ```
+
+Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://arxiv.org/abs/2302.06871](https://arxiv.org/abs/2302.06871)
+
 ### Creative Commons Attribution
 
 The content submodule repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
