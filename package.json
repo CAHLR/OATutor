@@ -39,7 +39,8 @@
     "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix-lockfile": "npm install --package-lock-only"
   },
   "browserslist": {
     "production": [
