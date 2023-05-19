@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@common/global-config": "file:./common",
     "@material-ui/core": "~4.12.3",
     "@material-ui/icons": "~4.11.2",
     "algebrite": "~1.4.0",
@@ -38,7 +39,8 @@
     "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix-lockfile": "npm install --package-lock-only"
   },
   "browserslist": {
     "production": [

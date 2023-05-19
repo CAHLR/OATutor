@@ -4,8 +4,8 @@ const lti = require('ims-lti')
 const jwt = require('jsonwebtoken');
 const jwtMiddleware = require('express-jwt');
 const level = require('level')
-const { SITE_NAME } = require("../common/global-config");
 const { lessonMapping, numericalHashMapping } = require("./legacy-lesson-mapping");
+const { SITE_NAME } = require("@common/global-config")
 const { calculateSemester } = require("../src/util/calculateSemester.js");
 const to = require("await-to-js").default;
 const path = require("path");
@@ -15,7 +15,7 @@ const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestor
 const serviceAccount = require('./oatutor-firebase-adminsdk.json');
 
 initializeApp({
-  credential: cert(serviceAccount)
+    credential: cert(serviceAccount)
 });
 
 const firestoredb = getFirestore();
@@ -304,10 +304,10 @@ app.post('/postScore', jwtMiddleware({
     // const submissionsRef = firestoredb.collection('development_problemSubmissions');
 
     const queryRef = submissionsRef.where('semester', '==', semester)
-                        .where('lms_user_id', '==', lmsUserId)
-                        .where('lesson', '==', lesson)
-                        .orderBy('time_stamp', 'asc')
-                        .orderBy('problemID', 'asc');
+        .where('lms_user_id', '==', lmsUserId)
+        .where('lesson', '==', lesson)
+        .orderBy('time_stamp', 'asc')
+        .orderBy('problemID', 'asc');
     const result = await queryRef.get();
 
     var formattedText = `
@@ -334,11 +334,11 @@ app.post('/postScore', jwtMiddleware({
 
     // get time of first action
     const firstQueryRef = submissionsRef.where('semester', '==', semester)
-                        .where('lms_user_id', '==', lmsUserId)
-                        .where('lesson', '==', lesson)
-                        .orderBy('time_stamp', 'asc')
-                        .orderBy('problemID', 'asc')
-                        .limit(1);
+        .where('lms_user_id', '==', lmsUserId)
+        .where('lesson', '==', lesson)
+        .orderBy('time_stamp', 'asc')
+        .orderBy('problemID', 'asc')
+        .limit(1);
     const firstResult = await firstQueryRef.get();
 
     firstResult.forEach(action => {
@@ -349,9 +349,9 @@ app.post('/postScore', jwtMiddleware({
 
     // get time of last action before this lesson
     const prevQueryRef = submissionsRef.where('lms_user_id', '==', lmsUserId)
-                        .where('time_stamp', '<', lastTime)
-                        .orderBy('time_stamp', 'desc')
-                        .limit(1);
+        .where('time_stamp', '<', lastTime)
+        .orderBy('time_stamp', 'desc')
+        .limit(1);
     const prevResult = await prevQueryRef.get();
 
     if (prevResult.size == 0) {
@@ -389,7 +389,7 @@ app.post('/postScore', jwtMiddleware({
         var correct = null;
         if (data["isCorrect"] || data["hintIsCorrect"]) {
             correct = true;
-        } else if (data["isCorrect"] == false || data["hintIsCorrect"] == false ) {
+        } else if (data["isCorrect"] == false || data["hintIsCorrect"] == false) {
             correct = false;
         }
 
@@ -425,14 +425,14 @@ app.post('/postScore', jwtMiddleware({
         <h1> Component Breakdown </h1>
         <h4> Overall score: ${Math.round(score * 10000) / 100}%</h4>
         ${Object
-            .keys(components)
-            .map((key, i) =>
-                `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
+        .keys(components)
+        .map((key, i) =>
+            `<p>${i + 1}) ${key.replace(/_/g, ' ')}: 
         ${"&#9646;".repeat((+components[key]) * 10)}
         ${"&#9647;".repeat(10 - (+components[key]) * 10)}
         </p>`
-            )
-            .join("")}
+        )
+        .join("")}
         <h4 style="padding-top: 10px"> Problem Stats </h4>
         ${formattedText}
     `;
