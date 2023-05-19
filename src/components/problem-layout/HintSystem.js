@@ -13,6 +13,26 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 
+class ChatBot extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            response: "",
+            userinput: ""
+        }
+    }
+
+    submitToBackend(){
+        get(this.state.userinput)
+    }
+    render() {
+        return <div>
+            <input/><button type="submit" onSubmit={}>Send to GPT</button>
+            <div>{this.state.response}</div>
+        </div>;
+    }
+}
+
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
 
@@ -118,11 +138,13 @@ class HintSystem extends React.Component {
 
         return (
             <div className={classes.root}>
+                <ChatBot/>
                 {hints.map((hint, i) =>
                     <Accordion key={`${problemID}-${hint.id}`}
                         onChange={(event, expanded) => this.unlockHint(event, expanded, i)}
                         disabled={this.isLocked(i) && !(use_expanded_view && debug)}
                         expanded={currentExpanded === i || (use_expanded_view != null && use_expanded_view && debug)}
+                        style={true || this.context.hintUIOption == 1 ? {opacity: i <= currentExpanded + 1 || i === 0 ? 1 : 0}: {}}
                         defaultExpanded={false}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon/>}

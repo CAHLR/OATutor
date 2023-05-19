@@ -67,6 +67,10 @@ const treatmentMapping = {
     hintPathway: {
         0: "DefaultPathway",
         1: "DefaultPathway"
+    },
+    hintUIOption: {
+        0: "DefaultUI",
+        1: "ShowHintAfter..."
     }
 }
 
