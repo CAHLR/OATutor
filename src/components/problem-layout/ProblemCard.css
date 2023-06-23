@@ -1,3 +1,40 @@
 .mq-editable-field.mq-math-mode {
     width: 100%;
 }
+
+.dynamicHintContainer {
+    margin: 1rem 0.3rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.45rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 0.1rem 1rem;
+}
+
+.dynamicHintTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.dynamicHintContent {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-grayed-out {
+    border-radius: 50%;
+    padding: 0.28rem;
+    background-color: rgba(0, 0, 0, 0.1); /* Change the opacity as desired */
+    z-index: 1;
+    opacity: 1;
+}
+
+.image {
+    z-index: 2;
+}
