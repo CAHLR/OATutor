@@ -413,7 +413,7 @@ class App extends React.Component {
                                             />
                                         )}
                                     />
-                                    <Route
+                                    {/* <Route
                                         exact
                                         path="/bio-info"
                                         render={(props) => (
@@ -422,7 +422,7 @@ class App extends React.Component {
                                                 {...props}
                                             />
                                         )}
-                                    />
+                                    /> */}
                                     <Route component={NotFound} />
                                 </Switch>
                             </div>
