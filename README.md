@@ -435,14 +435,101 @@ content-sources/
 ### AB testing
 OATutor was designed with the research case in mind and thus supports AB testing for many features. The benefit of the
 open source nature of the platform allows researchers to insert AB testing logic into any part of the platform they
-would like. To show that this is possible, we have included several examples of how one could use AB testing. One
-example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge
+would like. To show that this is possible, we have included several examples of how one could use AB testing. 
+
+AB testing is conducted by randomly assigning users into one of two groups. The treatment split is 50/50 by default,
+but it can be easily changed to a different split percentage or more than two splits. The userID is recorded in all data
+logs to infer the treatment.
+
+```js
+// src/App.js
+this.userID = generateRandomInt().toString();
+getTreatment = () => {
+    return this.userID % 2;
+}
+
+getTreatmentObject = (targetObject) => {
+    return targetObject[this.getTreatment()]
+}
+```
+
+#### Problem Selection Heuristics
+One example is to include different heuristics for problem selection. One heuristic is to choose problems with a knowledge
 component that is lowest (meaning the student is weakest in this subject) to round out the student's knowledge. Another
-heuristic is to choose problems with a knowledge ocmponent that is highest (meaning the student is strongest in this
-subject) to fully master a skill before moving on to another. There is control logic detailed in App.js to select
-between the two heuristics depending on a randomly generated userID. The userID is recorded in data logs so the
-treatment can be inferred from this. Other examples of AB testing included are different BKT parameter files and
-different default hint pathways.
+heuristic is to choose problems with a knowledge component that is highest (meaning the student is strongest in this
+subject) to fully master a skill before moving on to another. New heuristic files can be added to the appropriate folder (see
+below code snippet) and imported accordingly to be used.
+
+```js
+// src/App.js
+import { heuristic as lowestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic1.js';
+import { heuristic as highestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic2.js';
+
+...
+const treatmentMapping = {
+    heuristic: {
+        0: lowestHeuristic,
+        1: highestHeuristic
+    },
+}
+```
+
+#### BKT Parameters
+Different BKT parameters can also be used in AB testing. New bktParam files can be added to the appropriate folder (see
+below code snippet) and imported accordingly to be used.
+
+```js
+// src/App.js
+import bktParams1 from './content-sources/oatutor/bkt-params/bktParams1.json';
+import bktParams2 from './content-sources/oatutor/bkt-params/bktParams2.json';
+
+...
+const treatmentMapping = {
+    bktParams: {
+        0: cleanObjectKeys(bktParams1),
+        1: cleanObjectKeys(bktParams2)
+    },
+}
+```
+
+#### Hint Pathways
+Most content in the OATutor-Content repository currently only contains one hint pathway (the `defaultPathway`), but 
+additional hint pathways can easily be added. AB testing can be done with multiple hint pathways for efficacy tests. 
+New hint pathway files can be added to the tutoring folder of within a step.
+
+```js
+// src/App.js
+const treatmentMapping = {
+    hintPathway: {
+        0: "DefaultPathway",
+        1: "YourNewPathwayHere"
+    }
+}
+```
+
+Example content directory with multiple hint pathways:
+```
+content-sources/
+└── oatutor [submodule]/
+    ├── content-pool/
+    │   ├── circle1/
+    │   │   ├── circle1.json
+    │   │   └── steps/
+    │   │       ├── circle1a/
+    │   │       │   ├── circle1a.json
+    │   │       │   └── tutoring/
+    │   │       │       ├── circle1aDefaultPathway.json
+    │   │       │       └── circle1aYourNewPathwayHere.json  <--- Add your new pathway here
+    │   │       └── circle1b/
+    │   │           ├── circble1b.json
+    │   │           └── tutoring/
+    │   │               ├── circle1bDefaultPathway.json
+    │   │               └── circle1bYourNewPathwayHere.json  <--- Add your new pathway here
+    │   └── slope1/
+    │       ├── slope1.json
+    │       └── ...
+    ├── ...
+```
 
 ### Details of KC model Description (how it works/format)
 Knowledge components (KCs) are assigned at the step level in the file skillModel.json. A KC is defined as a string that
