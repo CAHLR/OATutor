@@ -217,6 +217,10 @@ class ProblemCard extends React.Component {
 
         const isCorrect = !!correctAnswer;
 
+        if (!isCorrect) {
+            this.toggleHints("auto-expand");
+        }
+
         this.context.firebase.log(
             parsed,
             problemID,

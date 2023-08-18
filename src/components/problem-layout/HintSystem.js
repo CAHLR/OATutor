@@ -152,13 +152,15 @@ class HintSystem extends React.Component {
                             this.unlockHint(event, expanded, i)
                         }
                         disabled={
-                            this.isLocked(i) && !(use_expanded_view && debug)
+                            // this.isLocked(i) && !(use_expanded_view && debug)
+                            false
                         }
                         expanded={
-                            currentExpanded === i ||
-                            (use_expanded_view != null &&
-                                use_expanded_view &&
-                                debug)
+                            // currentExpanded === i ||
+                            // (use_expanded_view != null &&
+                            //     use_expanded_view &&
+                            //     debug)
+                            true
                         }
                         defaultExpanded={false}
                     >
