@@ -270,6 +270,12 @@ class Problem extends React.Component {
             const numAttempted = Object.values(nextStepStates).filter(
                 (stepState) => stepState != null
             ).length;
+            // console.log("num attempted: ", numAttempted);
+            // console.log("num steps: ", numSteps);
+            // console.log("step states: ", Object.values(nextStepStates));
+            this.setState({
+                stepStates: nextStepStates,
+            });
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,

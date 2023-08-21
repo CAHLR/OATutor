@@ -9,21 +9,13 @@
 
 .content-container {
     display: flex;
-    padding-top: 7%;
-    width: 55%;
+    padding-top: 2%;
+    width: 60%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .title {
     text-align: center;
-}
-
-.sample-bio {
-    display: flex;
-    flex-direction: column;
-    padding: 0.6rem;
 }
 
 .sample-bio-title {
@@ -49,7 +41,7 @@
 .save-button,
 .delete-button {
     padding: 0.7rem 3rem;
-    margin: 2rem 4rem;
+    margin: 0.5rem 4rem;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -70,5 +62,33 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
-  
+
+.modal-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.confirm-button {
+    padding: 0.5rem 1.5rem;
+}
+
+.cancel-button {
+    padding: 0.5rem 1.5rem;
+}
+
+.survey-text {
+    margin-right: 1rem;
+}
+
+.survey-quest {
+    font-size: large;
+    margin: 0.4rem 0rem;
+}

@@ -144,7 +144,7 @@ class HintSystem extends React.Component {
 
         return (
             <div className={classes.root}>
-                {this.giveDynamicHint && <div>hi</div>}
+                {/* {this.giveDynamicHint && <div>hi</div>} */}
                 {hints.map((hint, i) => (
                     <Accordion
                         key={`${problemID}-${hint.id}`}
