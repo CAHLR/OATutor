@@ -417,42 +417,45 @@ class ProblemCard extends React.Component {
         });
 
         const isCorrect = !!correctAnswer;
-        if (isCorrect) {
-            this.setState({
-                dynamicHint: "Your answer is correct. Ready to submit now.",
-            });
-        } else {
-            axios
-                .post(
-                    DYNAMIC_HINT_URL,
-                    this.generateGPTHintParameters(
-                        this.prompt_template,
-                        this.state.bioInfo
-                    )
+
+        axios
+            .post(
+                DYNAMIC_HINT_URL,
+                this.generateGPTHintParameters(
+                    this.prompt_template,
+                    this.state.bioInfo
                 )
-                .then((response) => {
-                    this.setState({
-                        dynamicHint: response.data.hint,
-                    });
-                    this.context.firebase.log(
-                        parsed,
-                        this.props.problemID,
-                        this.step,
-                        "",
-                        isCorrect,
-                        this.state.hintsFinished,
-                        "requestDynamicHint",
-                        this.props.lesson,
-                        this.props.courseName,
-                        this.giveDynamicHint ? "dynamic" : "regular",
-                        this.state.dynamicHint,
-                        this.state.bioInfo
-                    );
-                })
-                .catch((error) => {
-                    console.error(error);
+            )
+            .then((response) => {
+                this.setState({
+                    dynamicHint: response.data.hint,
                 });
-        }
+                this.context.firebase.log(
+                    parsed,
+                    this.props.problemID,
+                    this.step,
+                    "",
+                    isCorrect,
+                    this.state.hintsFinished,
+                    "requestDynamicHint",
+                    chooseVariables(
+                        Object.assign(
+                            {},
+                            this.props.problemVars,
+                            this.props.variabilization
+                        ),
+                        this.props.seed
+                    ),
+                    this.props.lesson,
+                    this.props.courseName,
+                    "dynamic",
+                    this.state.dynamicHint,
+                    this.state.bioInfo
+                );
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     };
 
     render() {

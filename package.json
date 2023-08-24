@@ -38,6 +38,8 @@
     "build-localhost": "cross-env PUBLIC_URL=/ react-app-rewired build",
     "prebuild": "node src/tools/preprocessProblemPool.js",
     "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject",
@@ -62,5 +64,5 @@
     "react-app-rewire-alias": "~1.1.7",
     "react-app-rewired": "~2.2.1"
   },
-  "homepage": "place-holder"
+  "homepage": "OATutor-DynamicHint-Support"
 }
