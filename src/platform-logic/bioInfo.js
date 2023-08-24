@@ -20,6 +20,7 @@ class BioInfo extends Component {
                 other: "",
             },
             showModal: false,
+            allowSave: true,
         };
     }
 
@@ -38,14 +39,35 @@ class BioInfo extends Component {
                 ...prevState.userInput,
                 [name]: value,
             },
+            allowSave: true,
         }));
+    };
+
+    checkValidAnswer = () => {
+        const { userInput } = this.state;
+        if (
+            !userInput.age ||
+            !userInput.gender ||
+            !userInput.confidenceQ1 ||
+            !userInput.confidenceQ2 ||
+            !userInput.judgementQ1 ||
+            !userInput.judgementQ2 ||
+            !userInput.judgementQ3
+        ) {
+            alert("Empty values detected. Please answer all questions.");
+            return false;
+        }
+        return true;
     };
 
     handleSave = () => {
         const { userInput } = this.state;
-        localStorage.setItem("bioInfo", JSON.stringify(userInput));
-        // console.log(userInput);
-        alert("Information saved successfully!");
+        if (this.checkValidAnswer()) {
+            localStorage.setItem("bioInfo", JSON.stringify(userInput));
+            // console.log(userInput);
+            this.setState({ allowSave: false });
+            alert("Information saved successfully!");
+        }
     };
 
     handleDelete = () => {
@@ -58,15 +80,16 @@ class BioInfo extends Component {
         this.setState({
             userInput: {
                 gender: "",
-                age: null,
-                confidenceQ1: null,
-                confidenceQ2: null,
-                judgementQ1: null,
-                judgementQ2: null,
-                judgementQ3: null,
+                age: "",
+                confidenceQ1: "",
+                confidenceQ2: "",
+                judgementQ1: "",
+                judgementQ2: "",
+                judgementQ3: "",
                 other: "",
             },
             showModal: false,
+            allowSave: true,
         });
     };
 
@@ -103,7 +126,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="gender"
-                            value={this.state.userInput.gender}
+                            value={userInput.gender}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -117,7 +140,7 @@ class BioInfo extends Component {
                         <input
                             type="number"
                             name="age"
-                            value={this.state.userInput.age}
+                            value={userInput.age}
                             onChange={(e) => this.handleInputChange(e)}
                         ></input>
                     </div>
@@ -127,7 +150,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="confidenceQ1"
-                            value={this.state.userInput.confidenceQ1}
+                            value={userInput.confidenceQ1}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -152,7 +175,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="confidenceQ2"
-                            value={this.state.userInput.confidenceQ2}
+                            value={userInput.confidenceQ2}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -181,7 +204,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ1"
-                            value={this.state.userInput.judgementQ1}
+                            value={userInput.judgementQ1}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -203,7 +226,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ2"
-                            value={this.state.userInput.judgementQ2}
+                            value={userInput.judgementQ2}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -225,7 +248,7 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ3"
-                            value={this.state.userInput.judgementQ3}
+                            value={userInput.judgementQ3}
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -245,7 +268,7 @@ class BioInfo extends Component {
                         <textarea
                             className="input-field"
                             name="other"
-                            value={this.state.userInput.other}
+                            value={userInput.other}
                             onChange={(e) => this.handleInputChange(e)}
                             placeholder="Enter your information..."
                         />
@@ -254,6 +277,7 @@ class BioInfo extends Component {
                         <button
                             className="save-button"
                             onClick={this.handleSave}
+                            disabled={!this.state.allowSave}
                         >
                             Save
                         </button>
