@@ -34,6 +34,10 @@ import {
 import { joinList } from "../../util/formListString";
 import axios from "axios";
 
+// Defined when the UpGrade experiment is created
+const UpGradeSite = 'problem-card';
+const hintComponentTarget = 'hint-component';
+
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
 
@@ -51,6 +55,7 @@ class ProblemCard extends React.Component {
         this.giveDynamicHint = props.giveDynamicHint;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
+        this.context = context;
 
         this.problemTitle = props.problemTitle;
         this.problemSubTitle = props.problemSubTitle;
@@ -65,9 +70,32 @@ class ProblemCard extends React.Component {
             "hintPathway",
             context.hintPathway
         );
-        this.hints = this.giveDynamicHint
-            ? []
-            : JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
+        this.state = {
+            isLoaded: false,
+            displayHints: false,
+            isCorrect: false
+        };
+    }
+
+    componentDidMount() {
+        this.setHints(this.context);
+    }
+    setHints = async (context) => {
+        // Call Upgrade.getCondition with userID and context
+        const allConditions = await context.upgradeClient.getAllExperimentConditions();
+        console.log(allConditions);
+        const conditionForTarget = allConditions.find(targets => targets.site === UpGradeSite)
+        let hintCondition = "";
+        if (conditionForTarget) {
+            // Mark the target to enroll the current user, and set the hint pathway
+            const markResp = await context.upgradeClient.markExperimentPoint(UpGradeSite, conditionForTarget.assignedCondition.conditionCode, 'condition applied', hintComponentTarget);
+            console.log(markResp.condition);
+            hintCondition = markResp.condition;
+        }
+        this.hints = JSON.parse(JSON.stringify(this.step.hints[hintCondition]));
+        // this.hints = this.giveDynamicHint
+        // ? []
+        // : JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
 
         for (let hint of this.hints) {
             hint.dependencies = hint.dependencies.map((dependency) =>
@@ -121,18 +149,18 @@ class ProblemCard extends React.Component {
             });
         }
 
-        this.state = {
+        this.setState({
             inputVal: "",
             isCorrect: context.use_expanded_view && context.debug ? true : null,
-            checkMarkOpacity:
-                context.use_expanded_view && context.debug ? "100" : "0",
+            checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             displayHints: false,
             hintsFinished: new Array(this.hints.length).fill(0),
-            equation: "",
+            equation: '',
             usedHints: false,
             dynamicHint: "",
             enableHintGeneration: true,
-        };
+            isLoaded: true
+        })
     }
 
     _findHintId = (hints, targetId) => {
@@ -389,154 +417,155 @@ class ProblemCard extends React.Component {
 
     render() {
         const { classes, problemID, problemVars, seed } = this.props;
-        const { displayHints, isCorrect } = this.state;
+        const { displayHints, isCorrect, isLoaded } = this.state;
         const { debug, use_expanded_view } = this.context;
 
         const problemAttempted = isCorrect != null;
 
         return (
-            <Card className={classes.card}>
-                <CardContent>
-                    <h2 className={classes.stepHeader}>
-                        {renderText(
-                            this.step.stepTitle,
-                            problemID,
-                            chooseVariables(
-                                Object.assign(
-                                    {},
-                                    problemVars,
-                                    this.step.variabilization
+            isLoaded ?
+                <Card className={classes.card}>
+                    <CardContent>
+                        <h2 className={classes.stepHeader}>
+                            {renderText(
+                                this.step.stepTitle,
+                                problemID,
+                                chooseVariables(
+                                    Object.assign(
+                                        {},
+                                        problemVars,
+                                        this.step.variabilization
+                                    ),
+                                    seed
                                 ),
-                                seed
-                            ),
-                            this.context
-                        )}
-                        <hr />
-                    </h2>
+                                this.context
+                            )}
+                            <hr />
+                        </h2>
 
-                    <div className={classes.stepBody}>
-                        {renderText(
-                            this.step.stepBody,
-                            problemID,
-                            chooseVariables(
-                                Object.assign(
-                                    {},
-                                    problemVars,
-                                    this.step.variabilization
+                        <div className={classes.stepBody}>
+                            {renderText(
+                                this.step.stepBody,
+                                problemID,
+                                chooseVariables(
+                                    Object.assign(
+                                        {},
+                                        problemVars,
+                                        this.step.variabilization
+                                    ),
+                                    seed
                                 ),
-                                seed
-                            ),
-                            this.context
-                        )}
-                    </div>
-                    {displayHints && this.giveDynamicHint && (
-                        <div className="dynamicHintContainer">
-                            <h3 className="dynamicHintTitle">
-                                Hint From ChatGPT
-                            </h3>
-                            {this.state.dynamicHint ? (
-                                <div className="dynamicHintContent">
-                                    {this.state.dynamicHint}
-                                </div>
-                            ) : (
-                                <div className="dynamicHintContent">
-                                    loading...
-                                </div>
+                                this.context
                             )}
                         </div>
-                    )}
-                    {(displayHints || (debug && use_expanded_view)) &&
-                        this.showHints && (
-                            <div className="Hints">
-                                <ErrorBoundary
-                                    componentName={"HintSystem"}
-                                    descriptor={"hint"}
-                                >
-                                    <HintSystem
-                                        giveDynamicHint={this.giveDynamicHint}
-                                        giveStuFeedback={this.giveStuFeedback}
-                                        unlockFirstHint={this.unlockFirstHint}
-                                        problemID={this.props.problemID}
-                                        index={this.props.index}
-                                        step={this.step}
-                                        hints={this.hints}
-                                        unlockHint={this.unlockHint}
-                                        hintStatus={this.state.hintsFinished}
-                                        submitHint={this.submitHint}
-                                        seed={this.props.seed}
-                                        stepVars={Object.assign(
-                                            {},
-                                            this.props.problemVars,
-                                            this.step.variabilization
-                                        )}
-                                        answerMade={this.props.answerMade}
-                                        lesson={this.props.lesson}
-                                        courseName={this.props.courseName}
-                                    />
-                                </ErrorBoundary>
-                                <Spacer />
+                        {displayHints && this.giveDynamicHint && (
+                            <div className="dynamicHintContainer">
+                                <h3 className="dynamicHintTitle">
+                                    Hint From ChatGPT
+                                </h3>
+                                {this.state.dynamicHint ? (
+                                    <div className="dynamicHintContent">
+                                        {this.state.dynamicHint}
+                                    </div>
+                                ) : (
+                                    <div className="dynamicHintContent">
+                                        loading...
+                                    </div>
+                                )}
                             </div>
                         )}
-
-                    <div className={classes.root}>
-                        <ProblemInput
-                            variabilization={chooseVariables(
-                                Object.assign(
-                                    {},
-                                    this.props.problemVars,
-                                    this.step.variabilization
-                                ),
-                                this.props.seed
-                            )}
-                            allowRetry={this.allowRetry}
-                            giveStuFeedback={this.giveStuFeedback}
-                            showCorrectness={this.showCorrectness}
-                            classes={classes}
-                            state={this.state}
-                            step={this.step}
-                            seed={this.props.seed}
-                            _setState={(state) => this.setState(state)}
-                            context={this.context}
-                            editInput={this.editInput}
-                            setInputValState={this.setInputValState}
-                            handleKey={this.handleKey}
-                            index={this.props.index}
-                        />
-                    </div>
-                </CardContent>
-                <CardActions>
-                    <Grid
-                        container
-                        spacing={0}
-                        justifyContent="center"
-                        alignItems="center"
-                    >
-                        <Grid item xs={false} sm={false} md={4} />
-                        <Grid item xs={4} sm={4} md={1}>
-                            {this.showHints && (
-                                <center>
-                                    <IconButton
-                                        aria-label="delete"
-                                        onClick={this.toggleHints}
-                                        title="View available hints"
-                                        disabled={
-                                            !this.state.enableHintGeneration
-                                        }
-                                        className="image-container"
-                                        {...stagingProp({
-                                            "data-selenium-target": `hint-button-${this.props.index}`,
-                                        })}
+                        {(displayHints || (debug && use_expanded_view)) &&
+                            this.showHints && (
+                                <div className="Hints">
+                                    <ErrorBoundary
+                                        componentName={"HintSystem"}
+                                        descriptor={"hint"}
                                     >
-                                        <img
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                            className={
-                                                this.state.enableHintGeneration
-                                                    ? "image"
-                                                    : "image image-grayed-out"
-                                            }
-                                            alt="hintToggle"
+                                        <HintSystem
+                                            giveDynamicHint={this.giveDynamicHint}
+                                            giveStuFeedback={this.giveStuFeedback}
+                                            unlockFirstHint={this.unlockFirstHint}
+                                            problemID={this.props.problemID}
+                                            index={this.props.index}
+                                            step={this.step}
+                                            hints={this.hints}
+                                            unlockHint={this.unlockHint}
+                                            hintStatus={this.state.hintsFinished}
+                                            submitHint={this.submitHint}
+                                            seed={this.props.seed}
+                                            stepVars={Object.assign(
+                                                {},
+                                                this.props.problemVars,
+                                                this.step.variabilization
+                                            )}
+                                            answerMade={this.props.answerMade}
+                                            lesson={this.props.lesson}
+                                            courseName={this.props.courseName}
                                         />
-                                        {/* {this.state.enableHintGeneration ? (
+                                    </ErrorBoundary>
+                                    <Spacer />
+                                </div>
+                            )}
+
+                        <div className={classes.root}>
+                            <ProblemInput
+                                variabilization={chooseVariables(
+                                    Object.assign(
+                                        {},
+                                        this.props.problemVars,
+                                        this.step.variabilization
+                                    ),
+                                    this.props.seed
+                                )}
+                                allowRetry={this.allowRetry}
+                                giveStuFeedback={this.giveStuFeedback}
+                                showCorrectness={this.showCorrectness}
+                                classes={classes}
+                                state={this.state}
+                                step={this.step}
+                                seed={this.props.seed}
+                                _setState={(state) => this.setState(state)}
+                                context={this.context}
+                                editInput={this.editInput}
+                                setInputValState={this.setInputValState}
+                                handleKey={this.handleKey}
+                                index={this.props.index}
+                            />
+                        </div>
+                    </CardContent>
+                    <CardActions>
+                        <Grid
+                            container
+                            spacing={0}
+                            justifyContent="center"
+                            alignItems="center"
+                        >
+                            <Grid item xs={false} sm={false} md={4} />
+                            <Grid item xs={4} sm={4} md={1}>
+                                {this.showHints && (
+                                    <center>
+                                        <IconButton
+                                            aria-label="delete"
+                                            onClick={this.toggleHints}
+                                            title="View available hints"
+                                            disabled={
+                                                !this.state.enableHintGeneration
+                                            }
+                                            className="image-container"
+                                            {...stagingProp({
+                                                "data-selenium-target": `hint-button-${this.props.index}`,
+                                            })}
+                                        >
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
+                                                className={
+                                                    this.state.enableHintGeneration
+                                                        ? "image"
+                                                        : "image image-grayed-out"
+                                                }
+                                                alt="hintToggle"
+                                            />
+                                            {/* {this.state.enableHintGeneration ? (
                                             <img
                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
                                                 alt="hintToggle"
@@ -547,103 +576,104 @@ class ProblemCard extends React.Component {
                                                 alt="hintToggle"
                                             />
                                         )} */}
-                                    </IconButton>
-                                </center>
-                            )}
-                        </Grid>
-                        <Grid item xs={4} sm={4} md={2}>
-                            <center>
-                                <Button
-                                    className={classes.button}
-                                    style={{ width: "80%" }}
-                                    size="small"
-                                    onClick={this.submit}
-                                    disabled={
-                                        (use_expanded_view && debug) ||
-                                        (!this.allowRetry && problemAttempted)
-                                    }
-                                    {...stagingProp({
-                                        "data-selenium-target": `submit-button-${this.props.index}`,
-                                    })}
-                                >
-                                    Submit
-                                </Button>
-                            </center>
-                        </Grid>
-                        <Grid item xs={4} sm={3} md={1}>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    alignContent: "center",
-                                    justifyContent: "center",
-                                }}
-                            >
-                                {(!this.showCorrectness ||
-                                    !this.allowRetry) && (
-                                    <img
-                                        className={classes.checkImage}
-                                        style={{
-                                            opacity:
-                                                this.state.isCorrect == null
-                                                    ? 0
-                                                    : 1,
-                                            width: "45%",
-                                        }}
-                                        alt="Exclamation Mark Icon"
-                                        title={`The instructor has elected to ${joinList(
-                                            !this.showCorrectness &&
-                                                "hide correctness",
-                                            !this.allowRetry &&
-                                                "disallow retries"
-                                        )}`}
-                                        {...stagingProp({
-                                            "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                        })}
-                                        src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
-                                    />
+                                        </IconButton>
+                                    </center>
                                 )}
-                                {this.state.isCorrect &&
-                                    this.showCorrectness &&
-                                    this.allowRetry && (
-                                        <img
-                                            className={classes.checkImage}
-                                            style={{
-                                                opacity:
-                                                    this.state.checkMarkOpacity,
-                                                width: "45%",
-                                            }}
-                                            alt="Green Checkmark Icon"
-                                            {...stagingProp({
-                                                "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                            })}
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
-                                        />
-                                    )}
-                                {this.state.isCorrect === false &&
-                                    this.showCorrectness &&
-                                    this.allowRetry && (
-                                        <img
-                                            className={classes.checkImage}
-                                            style={{
-                                                opacity:
-                                                    100 -
-                                                    this.state.checkMarkOpacity,
-                                                width: "45%",
-                                            }}
-                                            alt="Red X Icon"
-                                            {...stagingProp({
-                                                "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                            })}
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
-                                        />
-                                    )}
-                            </div>
+                            </Grid>
+                            <Grid item xs={4} sm={4} md={2}>
+                                <center>
+                                    <Button
+                                        className={classes.button}
+                                        style={{ width: "80%" }}
+                                        size="small"
+                                        onClick={this.submit}
+                                        disabled={
+                                            (use_expanded_view && debug) ||
+                                            (!this.allowRetry && problemAttempted)
+                                        }
+                                        {...stagingProp({
+                                            "data-selenium-target": `submit-button-${this.props.index}`,
+                                        })}
+                                    >
+                                        Submit
+                                    </Button>
+                                </center>
+                            </Grid>
+                            <Grid item xs={4} sm={3} md={1}>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        alignContent: "center",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    {(!this.showCorrectness ||
+                                        !this.allowRetry) && (
+                                            <img
+                                                className={classes.checkImage}
+                                                style={{
+                                                    opacity:
+                                                        this.state.isCorrect == null
+                                                            ? 0
+                                                            : 1,
+                                                    width: "45%",
+                                                }}
+                                                alt="Exclamation Mark Icon"
+                                                title={`The instructor has elected to ${joinList(
+                                                    !this.showCorrectness &&
+                                                    "hide correctness",
+                                                    !this.allowRetry &&
+                                                    "disallow retries"
+                                                )}`}
+                                                {...stagingProp({
+                                                    "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                                })}
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
+                                            />
+                                        )}
+                                    {this.state.isCorrect &&
+                                        this.showCorrectness &&
+                                        this.allowRetry && (
+                                            <img
+                                                className={classes.checkImage}
+                                                style={{
+                                                    opacity:
+                                                        this.state.checkMarkOpacity,
+                                                    width: "45%",
+                                                }}
+                                                alt="Green Checkmark Icon"
+                                                {...stagingProp({
+                                                    "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                                })}
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
+                                            />
+                                        )}
+                                    {this.state.isCorrect === false &&
+                                        this.showCorrectness &&
+                                        this.allowRetry && (
+                                            <img
+                                                className={classes.checkImage}
+                                                style={{
+                                                    opacity:
+                                                        100 -
+                                                        this.state.checkMarkOpacity,
+                                                    width: "45%",
+                                                }}
+                                                alt="Red X Icon"
+                                                {...stagingProp({
+                                                    "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                                })}
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
+                                            />
+                                        )}
+                                </div>
+                            </Grid>
+                            <Grid item xs={false} sm={1} md={4} />
                         </Grid>
-                        <Grid item xs={false} sm={1} md={4} />
-                    </Grid>
-                </CardActions>
-            </Card>
+                    </CardActions>
+                </Card>
+                : ""
         );
     }
 }

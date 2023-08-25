@@ -3,6 +3,7 @@ import "./App.css";
 import Platform from "./platform-logic/Platform.js";
 import DebugPlatform from "./platform-logic/DebugPlatform.js";
 import Firebase from "@components/Firebase.js";
+import UpgradeClient from 'upgrade_client_lib/dist/browser';
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import NotFound from "@components/NotFound.js";
@@ -70,7 +71,7 @@ const treatmentMapping = {
     },
     hintPathway: {
         0: "DefaultPathway",
-        1: "DefaultPathway",
+        1: "NewPathway",
     },
 };
 
@@ -84,6 +85,21 @@ class App extends React.Component {
             localStorage.setItem(USER_ID_STORAGE_KEY, userId);
         }
         this.userID = userId;
+
+
+        // This can be set dynamically when UpGrade is integrated
+        const hostURL = "http://localhost:3030";
+        // The contexts are currently hard-coded in UpGrade, this could be a variable in both 
+        const context = "mul";
+
+        // Call UpGrade init with userID
+        const upgradeClient = new UpgradeClient(userId, hostURL, context);
+        upgradeClient.init().then(resp => {
+            console.log(resp);
+        });
+
+        this.upgradeClient = upgradeClient;
+
         this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams);
 
         this.originalBktParams = JSON.parse(
@@ -230,7 +246,7 @@ class App extends React.Component {
             } else {
                 console.debug("saved progress successfully");
             }
-        }).then((_) => {});
+        }).then((_) => { });
     };
 
     loadBktProgress = async () => {
@@ -267,6 +283,7 @@ class App extends React.Component {
                         userID: this.userID,
                         firebase: this.firebase,
                         getTreatment: this.getTreatment,
+                        upgradeClient: this.upgradeClient,
                         bktParams: this.bktParams,
                         heuristic: this.getTreatmentObject(
                             treatmentMapping.heuristic
