@@ -35,16 +35,23 @@ class HintSystem extends React.Component {
 
         this.giveStuFeedback = props.giveStuFeedback;
         this.unlockFirstHint = props.unlockFirstHint;
+        this.isIncorrect = props.isIncorrect;
 
         this.state = {
             latestStep: 0,
-            currentExpanded: this.unlockFirstHint ? 0 : -1,
+            currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
         };
+        console.log(this.isIncorrect)
+        console.log((this.unlockFirstHint || this.isIncorrect) ? 0 : -1)
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
+            this.props.unlockHint(0, this.props.hints[0].type);
+        }
+
+        if (this.isIncorrect && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
@@ -152,15 +159,13 @@ class HintSystem extends React.Component {
                             this.unlockHint(event, expanded, i)
                         }
                         disabled={
-                            // this.isLocked(i) && !(use_expanded_view && debug)
-                            false
+                            this.isLocked(i) && !(use_expanded_view && debug)
                         }
                         expanded={
-                            // currentExpanded === i ||
-                            // (use_expanded_view != null &&
-                            //     use_expanded_view &&
-                            //     debug)
-                            true
+                            currentExpanded === i ||
+                            (use_expanded_view != null &&
+                                use_expanded_view &&
+                                debug)
                         }
                         defaultExpanded={false}
                     >
