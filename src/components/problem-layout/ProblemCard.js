@@ -51,6 +51,7 @@ class ProblemCard extends React.Component {
         this.giveDynamicHint = props.giveDynamicHint;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
+        this.expandFirstIncorrect = false;
 
         this.problemTitle = props.problemTitle;
         this.problemSubTitle = props.problemSubTitle;
@@ -175,7 +176,8 @@ class ProblemCard extends React.Component {
         const isCorrect = !!correctAnswer;
 
         if (!isCorrect) {
-            this.toggleHints("auto-expand");
+            this.expandFirstIncorrect = true;
+            this.toggleHints('auto-expand');
         }
 
         this.context.firebase.log(
@@ -476,6 +478,7 @@ class ProblemCard extends React.Component {
                                         answerMade={this.props.answerMade}
                                         lesson={this.props.lesson}
                                         courseName={this.props.courseName}
+                                        isIncorrect={this.expandFirstIncorrect}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />
