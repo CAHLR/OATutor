@@ -45,6 +45,8 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+
         this.allowRetry = this.giveStuFeedback;
 
         this.giveStuBottomHint = props.giveStuBottomHint;
@@ -459,6 +461,7 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
+                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}

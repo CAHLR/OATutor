@@ -36,6 +36,7 @@ class HintSystem extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.unlockFirstHint = props.unlockFirstHint;
         this.isIncorrect = props.isIncorrect;
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect
 
         this.state = {
             latestStep: 0,
@@ -44,14 +45,12 @@ class HintSystem extends React.Component {
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
         };
-        console.log(this.isIncorrect)
-        console.log((this.unlockFirstHint || this.isIncorrect) ? 0 : -1)
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
 
-        if (this.isIncorrect && this.props.hintStatus.length > 0) {
+        if (this.giveHintOnIncorrect && this.isIncorrect && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
