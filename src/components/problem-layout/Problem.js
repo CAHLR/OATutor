@@ -45,6 +45,8 @@ class Problem extends React.Component {
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
         const giveStuBottomHint = this.props.lesson?.allowBottomHint;
+
+        this.giveHintOnIncorrect = true;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
         this.giveStuHints = giveStuHints == null || giveStuHints;
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate;
@@ -454,6 +456,7 @@ class Problem extends React.Component {
                                     problemSubTitle={problem.body}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
+                                    giveHintOnIncorrect={this.giveHintOnIncorrect}
                                     unlockFirstHint={this.unlockFirstHint}
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
