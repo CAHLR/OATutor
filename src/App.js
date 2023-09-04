@@ -413,16 +413,6 @@ class App extends React.Component {
                                             />
                                         )}
                                     />
-                                    <Route
-                                        exact
-                                        path="/bio-info"
-                                        render={(props) => (
-                                            <BioInfo
-                                                key={Date.now()}
-                                                {...props}
-                                            />
-                                        )}
-                                    />
                                     <Route component={NotFound} />
                                 </Switch>
                             </div>
