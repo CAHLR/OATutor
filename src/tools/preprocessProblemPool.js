@@ -113,6 +113,9 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
                     problem.steps = await Promise.all(
                         stepDirs.map(
                             async stepDir => {
+                                if (stepDir === ".DS_Store") {
+                                    return;
+                                }
                                 const stepName = stepDir.toString()
                                 const stepPath = path.join(problemPath, 'steps', stepName)
 

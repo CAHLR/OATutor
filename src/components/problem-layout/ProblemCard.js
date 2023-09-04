@@ -52,6 +52,11 @@ class ProblemCard extends React.Component {
         this.giveStuBottomHint = props.giveStuBottomHint;
         this.giveDynamicHint = props.giveDynamicHint;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
+<<<<<<< HEAD
+        this.showCorrectness = this.giveStuFeedback && this.step.answerType !== "sa";
+        console.debug('this.step', this.step, 'showHints', this.showHints, 'hintPathway', context.hintPathway);
+        this.hints = JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
+=======
         this.showCorrectness = this.giveStuFeedback;
         this.expandFirstIncorrect = false;
 
@@ -71,6 +76,7 @@ class ProblemCard extends React.Component {
         this.hints = this.giveDynamicHint
             ? []
             : JSON.parse(JSON.stringify(this.step.hints[context.hintPathway]));
+>>>>>>> origin/main
 
         for (let hint of this.hints) {
             hint.dependencies = hint.dependencies.map((dependency) =>
@@ -260,10 +266,14 @@ class ProblemCard extends React.Component {
 
     editInput = (event) => {
         this.setInputValState(event.target.value);
+<<<<<<< HEAD
+    }
+=======
         this.setState({
             enableHintGeneration: true,
         });
     };
+>>>>>>> origin/main
 
     setInputValState = (inputVal) => {
         this.setState(({ isCorrect }) => ({
@@ -273,7 +283,11 @@ class ProblemCard extends React.Component {
     };
 
     handleKey = (event) => {
+<<<<<<< HEAD
+        if (event.key === 'Enter' && this.step.answerType !== "sa") {
+=======
         if (event.key === "Enter") {
+>>>>>>> origin/main
             this.submit();
         }
     };
@@ -683,6 +697,28 @@ class ProblemCard extends React.Component {
                                         {...stagingProp({
                                             "data-selenium-target": `step-correct-img-${this.props.index}`,
                                         })}
+<<<<<<< HEAD
+                                        src={`${process.env.PUBLIC_URL}/static/images/icons/info.svg`}/>
+                                }
+                                {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
+                                    <img className={classes.checkImage}
+                                         style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
+                                         alt="Green Checkmark Icon"
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
+                                }
+                                {this.state.isCorrect === false && this.showCorrectness && this.allowRetry &&
+                                    <img className={classes.checkImage}
+                                         style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                                         alt="Red X Icon"
+                                         {...stagingProp({
+                                             "data-selenium-target": `step-correct-img-${this.props.index}`
+                                         })}
+                                         src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}/>
+                                }
+=======
                                         src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
                                     />
                                 )}
@@ -721,6 +757,7 @@ class ProblemCard extends React.Component {
                                             src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
                                         />
                                     )}
+>>>>>>> origin/main
                             </div>
                         </Grid>
                         <Grid item xs={false} sm={1} md={4} />

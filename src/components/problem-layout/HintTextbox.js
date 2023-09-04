@@ -9,7 +9,7 @@ import { chooseVariables } from '../../platform-logic/renderText.js';
 import { ThemeContext } from '../../config/config.js';
 import ProblemInput from "../problem-input/ProblemInput";
 import { stagingProp } from "../../util/addStagingProperty";
-import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
+import { toastNotifyCorrectness, toastNotifyCompletion } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 
 class HintTextbox extends React.Component {
@@ -21,7 +21,7 @@ class HintTextbox extends React.Component {
         this.index = props.index;
         this.giveStuFeedback = props.giveStuFeedback
         this.allowRetry = this.giveStuFeedback
-        this.showCorrectness = this.giveStuFeedback
+        this.showCorrectness = this.giveStuFeedback && this.hint.answerType !== "sa"
         this.state = {
             inputVal: "",
             isCorrect: context.use_expanded_view && context.debug ? true : null,
@@ -31,7 +31,7 @@ class HintTextbox extends React.Component {
     }
 
     handleKey = (event) => {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter' && this.hint.answerType !== "sa") {
             this.submit();
         }
     }
@@ -49,7 +49,11 @@ class HintTextbox extends React.Component {
 
         const isCorrect = !!correctAnswer
 
-        toastNotifyCorrectness(isCorrect, reason);
+        if (this.showCorrectness) {
+            toastNotifyCorrectness(isCorrect, reason);
+        } else {
+            toastNotifyCompletion();
+        }
 
         this.setState({
             isCorrect,
@@ -142,7 +146,7 @@ class HintTextbox extends React.Component {
                                     {...stagingProp({
                                         "data-selenium-target": `step-correct-img-${hintIndex}`
                                     })}
-                                    src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/info.svg`}/>
                             }
                             {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
                                 <img className={classes.checkImage}

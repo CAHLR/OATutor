@@ -138,6 +138,37 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
+                    {(problemType === "sa" && this.props.step.answerType === "sa") && (
+                        <TextField
+                            fullWidth
+                            multiline
+                            minRows={6}
+                            maxRows={15}
+                            ref={this.textFieldRef}
+                            inputProps={{
+                                min: 0,
+                                style: { textAlign: 'left' },
+                                "aria-label": "Enter a response to the question above"
+                            }}
+                            {...stagingProp({
+                                "data-selenium-target": `string-answer-${index}`
+                            })}
+                            error={showCorrectness && state.isCorrect === false}
+                            className={classes.inputField}
+                            variant="outlined"
+                            onChange={(evt) => this.props.editInput(evt)}
+                            onKeyPress={(evt) => this.props.handleKey(evt)}
+                            InputProps={{
+                                classes: {
+                                    notchedOutline: ((showCorrectness && state.isCorrect !== false && state.usedHints) ? classes.muiUsedHint : null)
+                                }
+                            }}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: correctAnswer
+                            } : {}}
+                        >
+                        </TextField>
+                    )}
                     {problemType === "MultipleChoice" && (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}

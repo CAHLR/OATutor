@@ -21,6 +21,7 @@ jobs:
         with:
           ssh-private-key: |
             ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
+            ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
 
       - run: git submodule update --init --recursive
 
@@ -66,10 +67,9 @@ jobs:
           REACT_APP_COMMIT_HASH: ${{ github.sha }}
           REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: 'CAHLR/OATutor-Content-Staging'
-          ssh-key: ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
           ref: 'main'
           path: 'content-staging-build'
 
