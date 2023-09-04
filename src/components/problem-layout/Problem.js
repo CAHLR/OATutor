@@ -272,8 +272,12 @@ class Problem extends React.Component {
             const numAttempted = Object.values(nextStepStates).filter(
                 (stepState) => stepState != null
             ).length;
-            this.setState({stepStates: nextStepStates,
-                          });
+            // console.log("num attempted: ", numAttempted);
+            // console.log("num steps: ", numSteps);
+            // console.log("step states: ", Object.values(nextStepStates));
+            this.setState({
+                stepStates: nextStepStates,
+            });
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,
@@ -452,7 +456,9 @@ class Problem extends React.Component {
                                     problemSubTitle={problem.body}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
-                                    giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                    giveHintOnIncorrect={
+                                        this.giveHintOnIncorrect
+                                    }
                                     unlockFirstHint={this.unlockFirstHint}
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}

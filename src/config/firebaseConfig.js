@@ -6,7 +6,7 @@ const config = {
     storageBucket: "[projId].appspot.com",
     messagingSenderId: "[messagingSenderId]",
     appId: "[appId]",
-    measurementId: "[measurementId]"
+    measurementId: "[measurementId]",
 };
 
 export default config;
