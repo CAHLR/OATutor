@@ -20,7 +20,10 @@ class BioInfo extends Component {
                 other: "",
             },
             showModal: false,
+<<<<<<< HEAD
             allowSave: true,
+=======
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
         };
     }
 
@@ -39,6 +42,7 @@ class BioInfo extends Component {
                 ...prevState.userInput,
                 [name]: value,
             },
+<<<<<<< HEAD
             allowSave: true,
         }));
     };
@@ -68,6 +72,16 @@ class BioInfo extends Component {
             this.setState({ allowSave: false });
             alert("Information saved successfully!");
         }
+=======
+        }));
+    };
+
+    handleSave = () => {
+        const { userInput } = this.state;
+        localStorage.setItem("bioInfo", JSON.stringify(userInput));
+        // console.log(userInput);
+        alert("Information saved successfully!");
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
     };
 
     handleDelete = () => {
@@ -80,6 +94,7 @@ class BioInfo extends Component {
         this.setState({
             userInput: {
                 gender: "",
+<<<<<<< HEAD
                 age: "",
                 confidenceQ1: "",
                 confidenceQ2: "",
@@ -90,6 +105,17 @@ class BioInfo extends Component {
             },
             showModal: false,
             allowSave: true,
+=======
+                age: null,
+                confidenceQ1: null,
+                confidenceQ2: null,
+                judgementQ1: null,
+                judgementQ2: null,
+                judgementQ3: null,
+                other: "",
+            },
+            showModal: false,
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
         });
     };
 
@@ -126,7 +152,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="gender"
+<<<<<<< HEAD
                             value={userInput.gender}
+=======
+                            value={this.state.userInput.gender}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -140,7 +170,11 @@ class BioInfo extends Component {
                         <input
                             type="number"
                             name="age"
+<<<<<<< HEAD
                             value={userInput.age}
+=======
+                            value={this.state.userInput.age}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         ></input>
                     </div>
@@ -150,7 +184,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="confidenceQ1"
+<<<<<<< HEAD
                             value={userInput.confidenceQ1}
+=======
+                            value={this.state.userInput.confidenceQ1}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -175,7 +213,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="confidenceQ2"
+<<<<<<< HEAD
                             value={userInput.confidenceQ2}
+=======
+                            value={this.state.userInput.confidenceQ2}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -204,7 +246,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ1"
+<<<<<<< HEAD
                             value={userInput.judgementQ1}
+=======
+                            value={this.state.userInput.judgementQ1}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -226,7 +272,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ2"
+<<<<<<< HEAD
                             value={userInput.judgementQ2}
+=======
+                            value={this.state.userInput.judgementQ2}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -248,7 +298,11 @@ class BioInfo extends Component {
                         </label>
                         <select
                             name="judgementQ3"
+<<<<<<< HEAD
                             value={userInput.judgementQ3}
+=======
+                            value={this.state.userInput.judgementQ3}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                         >
                             <option value="">Select</option>
@@ -268,7 +322,11 @@ class BioInfo extends Component {
                         <textarea
                             className="input-field"
                             name="other"
+<<<<<<< HEAD
                             value={userInput.other}
+=======
+                            value={this.state.userInput.other}
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                             onChange={(e) => this.handleInputChange(e)}
                             placeholder="Enter your information..."
                         />
@@ -277,7 +335,10 @@ class BioInfo extends Component {
                         <button
                             className="save-button"
                             onClick={this.handleSave}
+<<<<<<< HEAD
                             disabled={!this.state.allowSave}
+=======
+>>>>>>> 31c42c6d8e (merge conflicts with Anirduh's code)
                         >
                             Save
                         </button>

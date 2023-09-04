@@ -456,7 +456,9 @@ class Problem extends React.Component {
                                     problemSubTitle={problem.body}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
-                                    giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                    giveHintOnIncorrect={
+                                        this.giveHintOnIncorrect
+                                    }
                                     unlockFirstHint={this.unlockFirstHint}
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
