@@ -1,7 +1,7 @@
-import React from 'react';
-import { InlineMath } from 'react-katex';
-import { dynamicText } from '../config/config.js';
-import { variabilize, chooseVariables } from './variabilize.js';
+import React from "react";
+import { InlineMath } from "react-katex";
+import { dynamicText } from "../config/config.js";
+import { variabilize, chooseVariables } from "./variabilize.js";
 import Spacer from "@components/Spacer";
 import ErrorBoundary from "@components/ErrorBoundary";
 import RenderMedia from "@components/RenderMedia";
@@ -14,11 +14,11 @@ import { CONTENT_SOURCE } from "@common/global-config";
  * @param context
  */
 function renderText(text, problemID, variabilization, context) {
-    if (typeof text !== 'string') {
+    if (typeof text !== "string") {
         return text;
     }
     let result = text;
-    result = parseForMetaVariables(result, context)
+    result = parseForMetaVariables(result, context);
 
     for (const d in dynamicText) {
         const replace = dynamicText[d];
@@ -38,39 +38,54 @@ function renderText(text, problemID, variabilization, context) {
         lineParts = lineParts.map((part, jdx) => {
             const isLaTeX = jdx % 2 !== 0; // implies it is in between two "$$" delimiters
             if (isLaTeX) {
-                return <ErrorBoundary componentName={"InlineMath"}
-                    replacement={part}
-                    inline
-                    key={Math.random() * 2 ** 16}>
-                    <InlineMath math={part} renderError={(error) => {
-                        throw error
-                    }}/>
-                </ErrorBoundary>;
+                return (
+                    <ErrorBoundary
+                        componentName={"InlineMath"}
+                        replacement={part}
+                        inline
+                        key={Math.random() * 2 ** 16}
+                    >
+                        <InlineMath
+                            math={part}
+                            renderError={(error) => {
+                                throw error;
+                            }}
+                        />
+                    </ErrorBoundary>
+                );
             }
 
             const lineSubParts = part.split("##");
             return lineSubParts.map((subPart, kdx) => {
                 const isMedia = kdx % 2 !== 0;
                 if (isMedia) {
-                    return <center key={Math.random() * 2 ** 16}>
-                        <RenderMedia url={subPart} problemID={problemID} contentSource={CONTENT_SOURCE}/>
-                    </center>
+                    return (
+                        <center key={Math.random() * 2 ** 16}>
+                            <RenderMedia
+                                url={subPart}
+                                problemID={problemID}
+                                contentSource={CONTENT_SOURCE}
+                            />
+                        </center>
+                    );
                 }
-                return parseForFillInQuestions(subPart)
+                return parseForFillInQuestions(subPart);
             });
-        })
+        });
         // add a spacer if it isn't the last line
         if (idx !== lines.length - 1) {
-            lineParts.push(<Spacer height={2} width={2} key={Math.random() * 2 ** 16}/>);
+            lineParts.push(
+                <Spacer height={2} width={2} key={Math.random() * 2 ** 16} />
+            );
         }
         return lineParts;
-    })
+    });
 }
 
-const META_REGEX = /%\{([^{}%"]+)}/g
+const META_REGEX = /%\{([^{}%"]+)}/g;
 const mapper = {
-    'oats_user_id': context => context.userID
-}
+    oats_user_id: (context) => context.userID,
+};
 /**
  * Takes in a string and iff there is a part that matches %{variable}, replace it with some context metadata
  * @param {string} str
@@ -80,10 +95,10 @@ const mapper = {
 function parseForMetaVariables(str, context) {
     return str.replaceAll(META_REGEX, (ogMatch, group1) => {
         if (group1 in mapper) {
-            return mapper[group1].call(this, context)
+            return mapper[group1].call(this, context);
         }
-        return ogMatch
-    })
+        return ogMatch;
+    });
 }
 
 /**
@@ -93,33 +108,41 @@ function parseForMetaVariables(str, context) {
  */
 function parseForFillInQuestions(str) {
     const strParts = str.split(/_{3,}/);
-    let result = []
+    let result = [];
     strParts.forEach((part, idx) => {
         if (idx > 0) {
-            result.push(<span key={Math.random() * 2 ** 16} aria-label={"fill in the blank"} style={{
-                // TODO: choose between the following two styles
-                marginLeft: "0.5ch",
-                marginRight: "0.5ch",
-                paddingLeft: "2.5ch",
-                paddingRight: "2.5ch",
-                position: "relative",
-                background: "rgb(242,243,244)",
-                borderRadius: "0.6ch",
-            }}>
-                <div style={{
-                    position: "absolute",
-                    bottom: 3.5,
-                    left: 4,
-                    right: 4,
-                    height: 1.5,
-                    borderRadius: "0.6ch",
-                    background: "rgb(75,76,77)"
-                }}/>
-            </span>)
+            result.push(
+                <span
+                    key={Math.random() * 2 ** 16}
+                    aria-label={"fill in the blank"}
+                    style={{
+                        // TODO: choose between the following two styles
+                        marginLeft: "0.5ch",
+                        marginRight: "0.5ch",
+                        paddingLeft: "2.5ch",
+                        paddingRight: "2.5ch",
+                        position: "relative",
+                        background: "rgb(242,243,244)",
+                        borderRadius: "0.6ch",
+                    }}
+                >
+                    <div
+                        style={{
+                            position: "absolute",
+                            bottom: 3.5,
+                            left: 4,
+                            right: 4,
+                            height: 1.5,
+                            borderRadius: "0.6ch",
+                            background: "rgb(75,76,77)",
+                        }}
+                    />
+                </span>
+            );
         }
         result.push(part);
-    })
-    return result
+    });
+    return result;
 }
 
-export { renderText, chooseVariables }
+export { renderText, chooseVariables };
