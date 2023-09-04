@@ -43,6 +43,7 @@ import { heuristic as lowestHeuristic } from "./models/BKT/problem-select-heuris
 import { heuristic as highestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic2.js";
 import BrowserStorage from "./util/browserStorage";
 // ### END CUSTOMIZABLE IMPORTS ###
+import BioInfo from "./platform-logic/bioInfo";
 
 loadFirebaseEnvConfig(config);
 
