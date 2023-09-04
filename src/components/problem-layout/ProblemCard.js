@@ -134,6 +134,7 @@ class ProblemCard extends React.Component {
             equation: "",
             usedHints: false,
             dynamicHint: "",
+            bioInfo: "",
             enableHintGeneration: true,
         };
     }
@@ -147,6 +148,49 @@ class ProblemCard extends React.Component {
         console.debug("hint not found..?", hints, "target:", targetId);
         return -1;
     };
+
+    updateBioInfo() {
+        const bioInfo = JSON.parse(localStorage.getItem("bioInfo"));
+        if (bioInfo) {
+            const {
+                gender,
+                age,
+                confidenceQ1,
+                confidenceQ2,
+                judgementQ1,
+                judgementQ2,
+                judgementQ3,
+                other,
+            } = bioInfo;
+            const bio = `I'm a ${gender} and I'm ${age} years old. ${confidenceQ1}. ${confidenceQ2}. 
+            For the statement that "if I had more time for practice, I would be better in mathematics", my answer is ${judgementQ1}.
+            For the statement that "if I was more patient while solving mathematical problems, I would be better in mathematics", my answer is ${judgementQ2}.
+            For the statement that "No matter how much time I devote for studying mathematics, I can’t improve my grades", my answer is ${judgementQ3}. 
+            ${other}
+            `;
+            this.setState({ bioInfo: bio });
+        }
+    }
+
+    componentDidMount() {
+        // Start an asynchronous task
+        this.updateBioInfo();
+        console.log("student show hints status: ", this.showHints);
+    }
+
+    componentDidUpdate(prevProps) {
+        // Check if specific props have changed
+        if (
+            this.props.clearStateOnPropChange !==
+            prevProps.clearStateOnPropChange
+        ) {
+            // Clear out state variables
+            this.setState({
+                dynamicHint: "",
+            });
+            this.updateBioInfo();
+        }
+    }
 
     submit = () => {
         console.debug("submitting problem");
@@ -195,7 +239,10 @@ class ProblemCard extends React.Component {
                 seed
             ),
             lesson,
-            courseName
+            courseName,
+            this.giveDynamicHint ? "dynamic" : "regular",
+            this.state.dynamicHint,
+            this.state.bioInfo
         );
 
         if (this.showCorrectness) {
@@ -288,7 +335,10 @@ class ProblemCard extends React.Component {
                             seed
                         ),
                         lesson,
-                        courseName
+                        courseName,
+                        this.giveDynamicHint ? "dynamic" : "regular",
+                        this.state.dynamicHint,
+                        this.state.bioInfo
                     );
                 }
             );
@@ -318,11 +368,14 @@ class ProblemCard extends React.Component {
                 this.props.seed
             ),
             this.props.lesson,
-            this.props.courseName
+            this.props.courseName,
+            this.giveDynamicHint ? "dynamic" : "regular",
+            this.state.dynamicHint,
+            this.state.bioInfo
         );
     };
 
-    generateGPTHintParameters = (prompt_template) => {
+    generateGPTHintParameters = (prompt_template, bio_info) => {
         var inputVal = "";
         if (
             typeof this.state.inputVal === "string" &&
@@ -347,7 +400,7 @@ class ProblemCard extends React.Component {
             correct_answer: correctAnswer,
         };
 
-        return { quest, prompt_template };
+        return { quest, prompt_template, bio_info };
     };
 
     generateHintFromGPT = async () => {
@@ -373,26 +426,45 @@ class ProblemCard extends React.Component {
         });
 
         const isCorrect = !!correctAnswer;
-        if (isCorrect) {
-            this.setState({
-                dynamicHint: "Your answer is correct. Ready to submit now.",
-            });
-        } else {
-            axios
-                .post(
-                    DYNAMIC_HINT_URL,
-                    this.generateGPTHintParameters(this.prompt_template)
+
+        axios
+            .post(
+                DYNAMIC_HINT_URL,
+                this.generateGPTHintParameters(
+                    this.prompt_template,
+                    this.state.bioInfo
                 )
-                .then((response) => {
-                    this.setState({
-                        dynamicHint: response.data.hint,
-                    });
-                    // console.log(response.data.prompt);
-                })
-                .catch((error) => {
-                    console.error(error);
+            )
+            .then((response) => {
+                this.setState({
+                    dynamicHint: response.data.hint,
                 });
-        }
+                this.context.firebase.log(
+                    parsed,
+                    this.props.problemID,
+                    this.step,
+                    "",
+                    isCorrect,
+                    this.state.hintsFinished,
+                    "requestDynamicHint",
+                    chooseVariables(
+                        Object.assign(
+                            {},
+                            this.props.problemVars,
+                            this.props.variabilization
+                        ),
+                        this.props.seed
+                    ),
+                    this.props.lesson,
+                    this.props.courseName,
+                    "dynamic",
+                    this.state.dynamicHint,
+                    this.state.bioInfo
+                );
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     };
 
     render() {
@@ -444,7 +516,19 @@ class ProblemCard extends React.Component {
                             </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
-                                    {this.state.dynamicHint}
+                                    {renderText(
+                                        this.state.dynamicHint,
+                                        problemID,
+                                        chooseVariables(
+                                            Object.assign(
+                                                {},
+                                                problemVars,
+                                                this.step.variabilization
+                                            ),
+                                            seed
+                                        ),
+                                        this.context
+                                    )}
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
@@ -546,17 +630,6 @@ class ProblemCard extends React.Component {
                                             }
                                             alt="hintToggle"
                                         />
-                                        {/* {this.state.enableHintGeneration ? (
-                                            <img
-                                                src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                                alt="hintToggle"
-                                            />
-                                        ) : (
-                                            <img
-                                                src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand_disabled.png`}
-                                                alt="hintToggle"
-                                            />
-                                        )} */}
                                     </IconButton>
                                 </center>
                             )}

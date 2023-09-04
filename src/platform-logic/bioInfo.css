@@ -1,0 +1,94 @@
+.container {
+    background-color: "#F6F6F6";
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content-container {
+    display: flex;
+    padding-top: 2%;
+    width: 60%;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.sample-bio-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.input-field {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.button-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.save-button,
+.delete-button {
+    padding: 0.7rem 3rem;
+    margin: 0.5rem 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.confirm-button {
+    padding: 0.5rem 1.5rem;
+}
+
+.cancel-button {
+    padding: 0.5rem 1.5rem;
+}
+
+.survey-text {
+    margin-right: 1rem;
+}
+
+.survey-quest {
+    font-size: large;
+    margin: 0.4rem 0rem;
+}
