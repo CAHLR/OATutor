@@ -175,6 +175,7 @@ class ProblemCard extends React.Component {
     componentDidMount() {
         // Start an asynchronous task
         this.updateBioInfo();
+        console.log("student show hints status: ", this.showHints);
     }
 
     componentDidUpdate(prevProps) {
@@ -515,7 +516,19 @@ class ProblemCard extends React.Component {
                             </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
-                                    {this.state.dynamicHint}
+                                    {renderText(
+                                        this.state.dynamicHint,
+                                        problemID,
+                                        chooseVariables(
+                                            Object.assign(
+                                                {},
+                                                problemVars,
+                                                this.step.variabilization
+                                            ),
+                                            seed
+                                        ),
+                                        this.context
+                                    )}
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
