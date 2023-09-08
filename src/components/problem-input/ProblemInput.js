@@ -138,6 +138,14 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
+                    {(problemType === "TextBox" && this.props.step.answerType === "essay") && (
+                        <textarea
+                            className="short-essay-input"
+                            onChange={(evt) => this.props.editInput(evt)}
+                            onKeyPress={(evt) => this.props.handleKey(evt)}
+                        >
+                        </textarea>
+                    )}
                     {problemType === "MultipleChoice" && (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
