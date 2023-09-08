@@ -138,7 +138,7 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
-                    {(problemType === "TextBox" && this.props.step.answerType === "essay") && (
+                    {(problemType === "TextBox" && this.props.step.answerType === "short-essay") && (
                         <textarea
                             className="short-essay-input"
                             onChange={(evt) => this.props.editInput(evt)}
