@@ -51,15 +51,9 @@ class Platform extends React.Component {
                 stepIndex++
             ) {
                 const step = problem.steps[stepIndex];
-<<<<<<< HEAD
-                if (step) {
-                    step.knowledgeComponents = cleanArray(context.skillModel[step.id] || []);
-                }
-=======
                 step.knowledgeComponents = cleanArray(
                     context.skillModel[step.id] || []
                 );
->>>>>>> origin/main
             }
         }
         if (this.props.lessonID == null) {
