@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a690481linear16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Approximation Function",
+        "text": "Use the following equation L(x) $$=$$ f(a) + f'(a)(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear16a-h1"
+        ],
+        "title": "Plugging Into the Formula",
+        "text": "Since we are looking for the linear approximation at a $$=$$ $$\\frac{\\pi}{2}$$, we know that the formula is given by L(x) $$=$$ $$f{\\left(\\frac{\\pi}{2}\\right)}$$ + f'(pi/2)(x - pi/2).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear16a-h2"
+        ],
+        "title": "Solving for f(a) and f'(a)",
+        "text": "Now, we must determine the values of f(a) and f'(a) to find L(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a690481linear16a-h3"
+        ],
+        "title": "Determining f(a)",
+        "text": "Given that a $$=$$ $$\\frac{\\pi}{2}$$, what is f(a)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a690481linear16a-h4"
+        ],
+        "title": "Plugging Into $$f{\\left(\\frac{\\pi}{2}\\right)}$$",
+        "text": "f(x) $$=$$ sinx such that $$f{\\left(\\frac{\\pi}{2}\\right)}$$ $$=$$ $$sin\\left(\\frac{\\pi}{2}\\right)$$. What is $$sin\\left(\\frac{\\pi}{2}\\right)$$? Use the graph to guide your answer, where $$x$$ $$=$$ cos(x) and $$y$$ $$=$$ sin(x).\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear16a-h5"
+        ],
+        "title": "Taking the Derivative of f(x) to Get f'(x)",
+        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ sinx where f'(x) $$=$$ cosx.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear16a-h6"
+        ],
+        "title": "Determining f'(a)",
+        "text": "What is $$\\operatorname{f'}\\left(\\frac{\\pi}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear16a-h7"
+        ],
+        "title": "Solving for f'(2)",
+        "text": "$$\\operatorname{f'}\\left(\\frac{\\pi}{2}\\right)$$ $$=$$ $$cos\\left(\\frac{\\pi}{2}\\right)$$. What is $$cos\\left(\\frac{\\pi}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear16a-h8"
+        ],
+        "title": "Putting it Together",
+        "text": "Now that we have found the values of $$f{\\left(\\frac{\\pi}{2}\\right)}$$ and $$\\operatorname{f'}\\left(\\frac{\\pi}{2}\\right)$$, plug them into L(x) $$=$$ f(a) + f'(a)(x - a).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear16a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear16a-h9"
+        ],
+        "title": "Final Answer",
+        "text": "L(x) $$=$$ $$1$$ + 0(x - pi/2) $$=$$ $$1$$ + $$0$$ $$=$$ $$1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

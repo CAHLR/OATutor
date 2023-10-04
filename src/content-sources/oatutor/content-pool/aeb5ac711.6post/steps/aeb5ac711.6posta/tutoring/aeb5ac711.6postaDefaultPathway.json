@@ -1,0 +1,206 @@
+[
+    {
+        "id": "aeb5ac711.6posta-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test of a Single Variance",
+        "text": "Since the claim is that a single line causes less variation, this is a test of a single variance. The parameter is the population variance $$q^2$$ or the population standard deviation q.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: $$q^2={7.2}^2$$, $$H_a$$: $$q^2<{7.2}^2$$"
+        ],
+        "dependencies": [
+            "aeb5ac711.6posta-h1"
+        ],
+        "title": "Which of the following claims follow the situation? Let q denote standard deviation.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: $$q^2={7.2}^2$$, $$H_a$$: $$q^2<{7.2}^2$$",
+            "$$H_0$$: $$q^2>{7.2}^2$$, $$H_a$$: $$q^2 \\leq {7.2}^2$$",
+            "$$H_0$$: $$q^2 \\geq {7.2}^2$$, $$H_a$$: $$q^2<{7.2}^2$$",
+            "$$H_0$$: $$q^2<{7.2}^2$$, $$H_a$$: $$q^2<{7.2}^2$$"
+        ]
+    },
+    {
+        "id": "aeb5ac711.6posta-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h2"
+        ],
+        "title": "Test of a Single Variance",
+        "text": "The null claim is that time variations are the same as we are testing if there is greater variation in the waiting times of the single line.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "s, the standard deviation"
+        ],
+        "dependencies": [
+            "aeb5ac711.6posta-h3"
+        ],
+        "title": "What is the random variable in this test?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "s, the standard deviation",
+            "$$s^2$$, the standard deviation",
+            "$$s^2$$, the variance",
+            "$$x$$, the mean variance"
+        ]
+    },
+    {
+        "id": "aeb5ac711.6posta-h5",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h4"
+        ],
+        "title": "Test of a Single Variance",
+        "text": "Think of s as the random variable in this test, where the test of a single variance can be right tailed, left tailed, or two tailed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h6",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h5"
+        ],
+        "title": "Even though we are given the population standard deviation the test using populaton variance can still follow $$H_0$$: $$q^2={7.2}^2$$, $$H_a$$: $$q^2<{7.2}^2$$ and the random variable will be s.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$left-tailed$$ test"
+        ],
+        "dependencies": [
+            "aeb5ac711.6posta-h6"
+        ],
+        "title": "Test of a Single Variance",
+        "text": "What is the test type that will be used?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$left-tailed$$ test",
+            "$$right-tailed$$ test",
+            "$$two-tailed$$ test",
+            "none of the listed tests work"
+        ]
+    },
+    {
+        "id": "aeb5ac711.6posta-h8",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h7"
+        ],
+        "title": "Test of a Single Variance",
+        "text": "The word \"less\" in the claim that the claim that a single line causes less variation is the key determining factor to how we choose our test-we will be using a left tailed test.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h9",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h8"
+        ],
+        "title": "The distribution for the test from $$25$$ customers is $${X_{24}}^2$$, where $$n$$ is the number of customers sampled, and degrees of freedom $$n-1$$ is used.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h10",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h9"
+        ],
+        "title": "The test statistic formula is $$X^2=\\frac{\\left(n-1\\right) s^2}{q^2}$$, where $$q^2$$ is population variance.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.67$$"
+        ],
+        "dependencies": [
+            "aeb5ac711.6posta-h10"
+        ],
+        "title": "What is the test statistic value? (Round to $$2$$ decimal places)",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h12",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h11"
+        ],
+        "title": "From $$n=25$$, $$s=3.5$$, and population standard deviation $$q=7.2$$, the test statistic found is $$5.67$$, so we can now find $$p-value$$ $$P\\left(X^2<5.67\\right)$$.",
+        "text": "\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h13",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h12"
+        ],
+        "title": "P-value",
+        "text": "The $$p-value$$ is found to be $$0.000042$$, now compare that to our 5% level of significance to make a conclusion.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeb5ac711.6posta-h14",
+        "type": "hint",
+        "dependencies": [
+            "aeb5ac711.6posta-h13"
+        ],
+        "title": "Hypothesis Testing",
+        "text": "Since our significance level $$0.05$$ is less than our $$p-value$$ $$0.000042$$, we reject that the poulation variance is equal to $${7.2}^2$$. We can interpret this as in that we do not think the variation in waiting times is $$7.2$$ minutes and rather think that the variation in waiting times is less.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

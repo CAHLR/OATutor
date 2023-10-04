@@ -1,0 +1,136 @@
+[
+    {
+        "id": "a61f754spread25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine Student's GPAs' Standard Deviations",
+        "text": "For each student, determine how many standard deviations (#ofSTDEVs) their GPA is away from the average, for their school. Pay careful attention to signs when comparing and interpreting the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a61f754spread25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.625$$"
+        ],
+        "dependencies": [
+            "a61f754spread25a-h1"
+        ],
+        "title": "Thuy's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Thuy's GPA? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a61f754spread25a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.625$$"
+                ],
+                "dependencies": [],
+                "title": "Thuy's Standard Deviation",
+                "text": "What is $$\\frac{2.7-3.2}{0.8}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a61f754spread25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6$$"
+        ],
+        "dependencies": [
+            "a61f754spread25a-h2"
+        ],
+        "title": "Vichet's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Vichet's GPA? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a61f754spread25a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.6$$"
+                ],
+                "dependencies": [],
+                "title": "Vichet's Standard Deviation",
+                "text": "What is $$\\frac{87-75}{20}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a61f754spread25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "a61f754spread25a-h3"
+        ],
+        "title": "Kamala's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Kamala's GPA? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a61f754spread25a-h4-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1.5$$"
+                ],
+                "dependencies": [],
+                "title": "Kamala's Standard Deviation",
+                "text": "What is $$\\frac{8.6-8}{0.4}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a61f754spread25a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Kamala"
+        ],
+        "dependencies": [
+            "a61f754spread25a-h4"
+        ],
+        "title": "Determining Which Student's GPA is Better",
+        "text": "Which student's GPA is the highest in comparison to the school they attend? Effectively, which student's GPA had the highest standard deviation score?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Thuy",
+            "Vichet",
+            "Kamala"
+        ]
+    }
+]

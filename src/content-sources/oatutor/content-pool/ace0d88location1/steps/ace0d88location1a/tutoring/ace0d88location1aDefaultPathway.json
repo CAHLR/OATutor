@@ -1,0 +1,133 @@
+[
+    {
+        "id": "ace0d88location1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order the Data",
+        "text": "First order the data from smallest to largest. Here is the ordering: 114,950; 158,000; 230,500; 387,000; 389,950; 479,000; 488,800; 529,000; 575,000; 639,000; 659,000; 1,095,000; 5,500,000.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace0d88location1a-h1"
+        ],
+        "title": "Find the Median",
+        "text": "Remember that the IQR is the formula Quartile $$3$$ - Quartile $$1$$. Therefore, to determine the quartiles, we'll first determine the median.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$488800$$"
+        ],
+        "dependencies": [
+            "ace0d88location1a-h2"
+        ],
+        "title": "Determine the Median",
+        "text": "What is the median of the data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace0d88location1a-h3"
+        ],
+        "title": "Find Quartiles",
+        "text": "The definition for Quartile $$1$$ is the middle value of the lower half of the data. The definition for Quartile $$3$$ is the middle value for the upper half of the data. Remember that the halfpoint of the data is determined by the median, so we now need to find the middle points of the remaining data.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$308750$$"
+        ],
+        "dependencies": [
+            "ace0d88location1a-h4"
+        ],
+        "title": "Find Quartile $$1$$",
+        "text": "What is Quartile 1? What is the middle value of the lower half of the data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$649000$$"
+        ],
+        "dependencies": [
+            "ace0d88location1a-h5"
+        ],
+        "title": "Find Quartile $$3$$",
+        "text": "What is Quartile 3? What is the middle value of the upper half of the data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ace0d88location1a-h6"
+        ],
+        "title": "Definition of IQR",
+        "text": "The definition of IQR (interquartile range) is the number that indicates the spread of the middle half or the middle 50% of the data. It is the difference between the third quartile and the first quartile.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ace0d88location1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$340250$$"
+        ],
+        "dependencies": [
+            "ace0d88location1a-h7"
+        ],
+        "title": "Determine the IQR",
+        "text": "What is the IQR?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ace0d88location1a-h8-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$340250$$"
+                ],
+                "dependencies": [],
+                "title": "Determine the IQR",
+                "text": "What is $$649000-308750$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ab2cac7standard1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify \u03bc and \u03c3",
+        "text": "We know $$X~N(\u03bc,\u03c3)$$. In this problem, $$X~N(12,3)$$. The first step would be to identify what is \u03bc and \u03c3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2cac7standard1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "ab2cac7standard1a-h1"
+        ],
+        "title": "Identify \u03bc",
+        "text": "The first argument in $$N(12,3)$$ is \u03bc. What is \u03bc?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2cac7standard1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ab2cac7standard1a-h1"
+        ],
+        "title": "Identify \u03c3",
+        "text": "The second argument in $$N(12,3)$$ is \u03c3. What is \u03c3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2cac7standard1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab2cac7standard1a-h2",
+            "ab2cac7standard1a-h3"
+        ],
+        "title": "Calculate $$z-score$$",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$. Substitute the variables in the formula for numerical values, and solve for $$z$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2cac7standard1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$z=\\frac{1-12}{3}$$"
+        ],
+        "dependencies": [
+            "ab2cac7standard1a-h4"
+        ],
+        "title": "Substitution",
+        "text": "We know $$x=1$$, $$\u03bc=12$$, and $$\u03c3=3$$. What is $$z$$ after substituting these variables?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$z=\\frac{1-12}{3}$$",
+            "$$z=\\frac{3-12}{1}$$",
+            "$$z=\\frac{12-1}{3}$$",
+            "$$z=\\frac{1-3}{12}$$"
+        ]
+    },
+    {
+        "id": "ab2cac7standard1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-11}{3}$$"
+        ],
+        "dependencies": [
+            "ab2cac7standard1a-h5"
+        ],
+        "title": "Solve for $$z$$",
+        "text": "What is $$\\frac{1-12}{3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

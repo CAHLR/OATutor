@@ -1,0 +1,249 @@
+[
+    {
+        "id": "a8802f1std1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Representations",
+        "text": "The population standard deviations are not known. Let g be the subscript for girls and $$b$$ be the subscript for boys such that $$\u03bc_g$$ is the population mean for girls and $$\u03bc_b$$ is the population mean for boys. This is a test of two independent groups, two population means.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h1"
+        ],
+        "title": "Random Variable",
+        "text": "Two Population Means with Unknown Standard Deviations, Degrees of Freedom, T-Score, Standard Error",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h2"
+        ],
+        "title": "Null and Alternative Hypotheses",
+        "text": "$$H_0$$ is the null hypothesis and $$H_a$$ is the alternative hypothesis. $$H_0$$: $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ where $$\u03bc_g$$ - $$\u03bc_b$$ $$=$$ $$0$$ and $$H_a$$: $$\u03bc_g$$ \u2260 $$\u03bc_b$$ where $$H_a$$: $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ \u2260 $$0$$. When the problems says that the means are the same, this tells you that $$H_0$$ has an equals sign. Since there are no other words to indicate $$H_a$$, assume it says that the means are different. This is a two-tailed test.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h3"
+        ],
+        "title": "Distribution for the Test",
+        "text": "Solve for $$t_{df}$$ (the number of degrees of freedom) where df is calculated using the df formula for independent groups, two population means. Use a calculator to solve for df. Do not pool the variances.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.8462$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h4"
+        ],
+        "title": "Solving for df",
+        "text": "Using a calculator, what is df? Round to the four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h5"
+        ],
+        "title": "P-Value",
+        "text": "Calculate the $$p-value$$ using a student's $$t-distribution$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0054$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h6"
+        ],
+        "title": "Solving for the $$p-value$$",
+        "text": "What is the $$p-value$$?\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h7"
+        ],
+        "title": "$$s_g$$ and $$s_b$$",
+        "text": "Solve for $$s_g$$ and $$s_b$$, the sample standard deviations and estimates of $$\\sigma_g$$ and $$\\sigma_b$$ (the unknown population standard deviations), respectively. When both sample sizes n1 and n2 are five or larger, the Student's $$t$$ approximation is very good. Notice that the sample variances $${s1}^2$$ and $${s2}^2$$ are not pooled.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.866$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h8"
+        ],
+        "title": "$$s_g$$",
+        "text": "What is $$s_g$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h8"
+        ],
+        "title": "$$s_b$$",
+        "text": "What is $$s_b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h9",
+            "a8802f1std1a-h10"
+        ],
+        "title": "$$x\u0304_g$$ - $$x\u0304_b$$",
+        "text": "Solve for $$x\u0304_g$$ - $$x\u0304_b$$, the difference of the sample means.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h11"
+        ],
+        "title": "Solving $$x\u0304_g$$",
+        "text": "What is $$x\u0304_g$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.2$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h12"
+        ],
+        "title": "Solving $$x\u0304_b$$",
+        "text": "What is $$x\u0304_b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.2$$"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h13"
+        ],
+        "title": "Plugging Into $$x\u0304_g$$ - $$x\u0304_b$$",
+        "text": "Plugging your values into the equation, what is $$x\u0304_g$$ - $$x\u0304_b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h14"
+        ],
+        "title": "Rejecting or Accepting $$H_0$$",
+        "text": "If \ud835\udefc > $$p-value$$, reject $$H_0$$. This means that you would be rejecting $$\u03bc_g$$ $$=$$ $$\u03bc_b$$ such that the means are different. If \ud835\udefc $$ \\leq $$ $$p-value$$, accept $$H_0$$ such that $$\u03bc_g$$ $$=$$ $$\u03bc_b$$, and the means are the same.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std1a-h16",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8802f1std1a-h15"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Is the null hypothesis $$H_0$$ rejected?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8802f1std1a-h17",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std1a-h16"
+        ],
+        "title": "Understanding Null Hypothesis",
+        "text": "Since \\alpha > $$p-value$$, reject $$H_0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

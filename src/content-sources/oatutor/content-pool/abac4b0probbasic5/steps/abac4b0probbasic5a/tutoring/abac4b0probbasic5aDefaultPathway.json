@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abac4b0probbasic5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Rules",
+        "text": "To find the probability of our situation, we will use the multiplication rule to combine our two probabilities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abac4b0probbasic5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "abac4b0probbasic5a-h1"
+        ],
+        "title": "M&M Probability",
+        "text": "What is the probability we get a blue M&M?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abac4b0probbasic5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{10}{39}$$"
+        ],
+        "dependencies": [
+            "abac4b0probbasic5a-h2"
+        ],
+        "title": "M&M Probability",
+        "text": "What is the probability we get a red M&M given that we just chose a blue one without replacement?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abac4b0probbasic5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{78}$$"
+        ],
+        "dependencies": [
+            "abac4b0probbasic5a-h3"
+        ],
+        "title": "Answer",
+        "text": "To find our answer, we will calculate our probability as we do normally, then use the multiplication rule to find our new probability. Essentially, we will be multiplying two of our probabilities together. What is our final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

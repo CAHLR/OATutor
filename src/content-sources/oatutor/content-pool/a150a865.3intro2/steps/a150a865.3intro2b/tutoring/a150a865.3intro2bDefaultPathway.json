@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a150a865.3intro2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the minutes cutoff when the probability of both sides of the exponential distribution is equal to $$0.5$$. The diagram shown has the value k, the 50th percentile.",
+        "text": "\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3intro2b-h1"
+        ],
+        "title": "Exponential Distributions",
+        "text": "You may use $$P\\left(X<k\\right)$$ and $$P\\left(X<k\\right)=1-e^{-0.25 k}$$ to find k.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a150a865.3intro2b-h2"
+        ],
+        "title": "Exponential Distributions",
+        "text": "What is the value of $$P\\left(X<k\\right)$$ in this case?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3intro2b-h3"
+        ],
+        "title": "Exponential Distributions",
+        "text": "Great, we can now set up the equation $$0.5=1-e^{-0.25 k}$$ and solve for k.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro2b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3intro2b-h4"
+        ],
+        "title": "Natural Logarithms",
+        "text": "Remember that ln(e) can be used to cancel out natural e's",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

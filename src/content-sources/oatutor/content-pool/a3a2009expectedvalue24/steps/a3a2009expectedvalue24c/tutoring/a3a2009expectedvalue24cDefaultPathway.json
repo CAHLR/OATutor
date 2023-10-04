@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a3a2009expectedvalue24c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3a2009expectedvalue24b-h4"
+        ],
+        "title": "Definition of AT MOST",
+        "text": "When we want to determine the probability that a customer rents at most two DVDs, we know that we need to calculate the probability of getting two OR LESS DVDs. Therefore, we need to add together the probabilities of getting zero DVDs, one DVDs, and two DVDs together.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a2009expectedvalue24c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.77$$"
+        ],
+        "dependencies": [
+            "a3a2009expectedvalue24c-h5"
+        ],
+        "title": "Summing up $$P(x=0)$$, $$P(X=1)$$, and $$P(x=2)$$",
+        "text": "What is P(x=0)+P(x=1)+P(x=2), or the probability that a customer rents at most two DVDs?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a3a2009expectedvalue24c-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.77$$"
+                ],
+                "dependencies": [],
+                "title": "Summing up $$P(x=0)$$, $$P(X=1)$$, and $$P(x=2)$$",
+                "text": "What is $$0.03+0.5+0.24$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "id": "af6b5fcgood13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypotheses",
+        "text": "What are the Null Hypothesis $$H_0$$ and Alternative Hypothesis in this context?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: The absent days occur with equal frequencies, that is, they fit a uniform distribution."
+        ],
+        "dependencies": [
+            "af6b5fcgood13a-h1"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: The absent days occur with equal frequencies, that is, they fit a uniform distribution.",
+            "$$H_0$$: The absent days occur with unequal frequencies, that is, they do not fit a uniform distribution."
+        ]
+    },
+    {
+        "id": "af6b5fcgood13a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_a$$: The absent days occur with unequal frequencies, that is, they do not fit a uniform distribution."
+        ],
+        "dependencies": [],
+        "title": "Alternative Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_a$$: The absent days occur with equal frequencies, that is, they fit a uniform distribution.",
+            "$$H_a$$: The absent days occur with unequal frequencies, that is, they do not fit a uniform distribution."
+        ]
+    },
+    {
+        "id": "af6b5fcgood13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood13a-h2"
+        ],
+        "title": "Consider what distribution is most appropriate to use in this problem.",
+        "text": "Is this a Goodness-of-Fit problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "af6b5fcgood13a-h3"
+        ],
+        "title": "What is the degree of freedom?",
+        "text": "$$df=5-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood13a-h4"
+        ],
+        "title": "Compute the chi-square test statistics",
+        "text": "$$X^2$$ $$=$$ $$3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5578$$"
+        ],
+        "dependencies": [
+            "af6b5fcgood13a-h5"
+        ],
+        "title": "Compute the $$p-value$$, P(X**2 > 3)",
+        "text": "Round the answer to three decimal places.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood13a-h6"
+        ],
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, \\alpha < P. Do not reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood13a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood13a-h7"
+        ],
+        "title": "Interpret the Result",
+        "text": "At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the absent days do not occur with equal frequencies.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

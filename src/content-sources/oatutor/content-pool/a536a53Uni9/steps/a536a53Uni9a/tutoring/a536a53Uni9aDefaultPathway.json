@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a536a53Uni9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "We know that we are looking at a uniform distribution, and also that we are looking at a continuous probability function. What would this probability function look like? As it turns out, this function will look like a straight line from our start to end points. We can calculate the area under this function to get our desired probability.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a536a53Uni9a-h1"
+        ],
+        "title": "If X goes from $$0$$ to $$20$$, how long is the interval of X?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a536a53Uni9a-h2"
+        ],
+        "title": "$$P\\left(0<x<1\\right)$$ $$=$$ $$\\frac{1}{20}$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a536a53Uni9a-h3"
+        ],
+        "title": "$$P\\left(0<x<2\\right)$$ $$=$$ $$\\frac{2}{20}$$. Starting to see a pattern? We can get the length in the interval we want, and divide that by the length of our total interval to get our answer.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{20}$$"
+        ],
+        "dependencies": [
+            "a536a53Uni9a-h4"
+        ],
+        "title": "Knowing how to calculate the probability, what will our answer be?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

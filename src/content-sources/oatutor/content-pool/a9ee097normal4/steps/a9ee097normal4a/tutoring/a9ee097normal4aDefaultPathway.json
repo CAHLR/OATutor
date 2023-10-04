@@ -1,0 +1,203 @@
+[
+    {
+        "id": "a9ee097normal4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample Mean",
+        "text": "Find the sample mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.024$$"
+        ],
+        "dependencies": [
+            "a9ee097normal4a-h1"
+        ],
+        "title": "Sample Mean Using SARs",
+        "text": "Add all the SARs and divide by the number of SARs to get the mean. What is this value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal4a-h2"
+        ],
+        "title": "Calculate the EBM",
+        "text": "Now, calculate the EBM.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal4a-h3"
+        ],
+        "title": "Calculate the EBM",
+        "text": "The EBM is calculated through the formula: $$\\frac{z_\u03b1}{2} \\frac{\\sigma}{\\sqrt{n}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal4a-h4"
+        ],
+        "title": "Calculate the EBM",
+        "text": "We know $$\u03c3=0.337$$. The confidence level (CL) is 98%, and there are $$30$$ entries in the table. Therefore, $$n=30$$. Based on this, calculate the EBM.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.236$$"
+        ],
+        "dependencies": [
+            "a9ee097normal4a-h5"
+        ],
+        "title": "Calculate $$\\frac{z_\u03b1}{2}$$",
+        "text": "What is $$\\frac{z_\u03b1}{2}$$? Remember, $$\\alpha=1-CL$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a9ee097normal4a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.02$$"
+                ],
+                "dependencies": [],
+                "title": "Calculate \ud835\udefc",
+                "text": "What is 1-CL?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a9ee097normal4a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.01$$"
+                ],
+                "dependencies": [],
+                "title": "Calculate $$\\frac{\u03b1}{2}$$",
+                "text": "What is $$\\frac{\u03b1}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a9ee097normal4a-h6-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.01$$"
+                ],
+                "dependencies": [],
+                "title": "Calculator",
+                "text": "Now, we have z_0.01. Use your calculator, a computer, or a probability table for the standard normal distribution to find z_0.01. What is this value?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a9ee097normal4a-h6-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1431$$"
+                ],
+                "dependencies": [],
+                "title": "Calculate the EBM",
+                "text": "What is $$\\operatorname{2.236}\\left(\\frac{0.337}{\\sqrt{30}}\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a9ee097normal4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal4a-h6"
+        ],
+        "title": "Upper and Lower Limits",
+        "text": "The confidence interval estimate is the upper and lower bounds of the mean. Add the EBM to the mean to get the upper limit, and subtract the EBM from the mean to get the lower limit.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.1671$$"
+        ],
+        "dependencies": [
+            "a9ee097normal4a-h7"
+        ],
+        "title": "Upper Limit",
+        "text": "What is $$1.024+0.1431$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8809$$"
+        ],
+        "dependencies": [
+            "a9ee097normal4a-h7"
+        ],
+        "title": "Lower Limit",
+        "text": "What is $$1.024-0.1431$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ee097normal4a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a9ee097normal4a-h8",
+            "a9ee097normal4a-h9"
+        ],
+        "title": "Combine",
+        "text": "Combine information about the upper and lower limits to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

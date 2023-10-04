@@ -1,0 +1,158 @@
+[
+    {
+        "id": "ae2aa31Additional10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up",
+        "text": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h1"
+        ],
+        "title": "Tail",
+        "text": "The 1% level of significance means that $$\\alpha=0.01$$. Based on the problem, $$H_0$$: $$p=0.50$$ and $$H_a$$: $$p\u22600.50$$. The words \"is the same or different from\" tell you this is a two-tailed test.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h2"
+        ],
+        "title": "Distribution",
+        "text": "Determine the distribution needed. The problem contains no mention of a mean. The information is given in terms of percentages. Use the distribution for P\u2032, the estimated proportion. \ud835\udc43\u2032~\ud835\udc41(\ud835\udc5d,sqrt((p * q)/n)). Fill in the equation with values.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "ae2aa31Additional10a-h3"
+        ],
+        "title": "Find $$p$$",
+        "text": "What is $$p$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "ae2aa31Additional10a-h3"
+        ],
+        "title": "Calculate q",
+        "text": "$$q=1-p$$. What is q?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "ae2aa31Additional10a-h3"
+        ],
+        "title": "Calculate $$n$$",
+        "text": "What is $$n$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h4",
+            "ae2aa31Additional10a-h5",
+            "ae2aa31Additional10a-h6"
+        ],
+        "title": "P-value",
+        "text": "p-value=P(p\u2032<0.47 or p\u2032>0.53)=0.5485",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h7"
+        ],
+        "title": "P-value",
+        "text": "$$p\u2032=0.53$$. Since the curve is symmetrical and the test is two-tailed, the p\u2032 for the left tail is equal to $$0.50-0.03=0.47$$ where $$\u03bc=p=0.50$$. $$(0.03$$ is the difference between $$0.53$$ and $$0.50.)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h8"
+        ],
+        "title": "Compare",
+        "text": "Compare \\alpha and the $$p-value$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae2aa31Additional10a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less than"
+        ],
+        "dependencies": [
+            "ae2aa31Additional10a-h9"
+        ],
+        "title": "Compare",
+        "text": "Is \\alpha less than or greater than the $$p-value$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Less than",
+            "Greater than"
+        ]
+    },
+    {
+        "id": "ae2aa31Additional10a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional10a-h10"
+        ],
+        "title": "Interpret",
+        "text": "Since \\alpha<p-value, we cannot reject $$H_0$$. Find the conclusion that matches this.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

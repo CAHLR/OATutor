@@ -1,0 +1,114 @@
+[
+    {
+        "id": "ac541bdIntroPhy12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recollect the significant figure rules for multiplication",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many significant figures are there in $$72.0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "How many significant figures are there in $$2.0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h3"
+        ],
+        "title": "Combining",
+        "text": "How many significant figures should we have in the answer? (Hint: Minimum value of significant figures for the two numbers we are multiplying)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$525600$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h4"
+        ],
+        "title": "Sub-questions",
+        "text": "How many minutes in a year?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1051200$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h5"
+        ],
+        "title": "Sub-questions",
+        "text": "How many minutes in $$2$$ years?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.6$$ * $${10}^7$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy12a-h6"
+        ],
+        "title": "Combining",
+        "text": "How many beats in $$2$$ years? (Remember the answer has to have only $$2$$ significant figures)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

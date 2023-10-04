@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a150a865.3phone1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "Using the decay parameter $$\\frac{1}{12}$$, we know that the average elapsed time of a ohone call in munutes is $$12$$ minutes on an exponential distribution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3phone1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3phone1a-h1"
+        ],
+        "title": "We may use a PDF function and set the decay parameter to $$\\frac{1}{12}$$ and use $$P\\left(X>x\\right)$$, where $$x$$ is the probability cutoff.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3phone1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3phone1a-h2"
+        ],
+        "title": "Set $$x$$ to $$5$$ minutes since we want to find the area under the exponential distribution curve when X is greater than $$5$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

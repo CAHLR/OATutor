@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a916a3bterminology21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology21a-h1"
+        ],
+        "title": "Number of Red Cards",
+        "text": "How many red cards are there in total in the deck?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a916a3bterminology21a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$26$$"
+                ],
+                "dependencies": [],
+                "title": "Number of Red Cards",
+                "text": "We know that hearts and diamonds are red suits, each with $$13$$ cards. Therefore, how many red cards are there in total (sum up the two red suits)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a916a3bterminology21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology21a-h2"
+        ],
+        "title": "Number of Total Cards",
+        "text": "How many total cards is in a standard deck?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{26}{52}$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology21a-h3"
+        ],
+        "title": "Determining Probability of Red Card",
+        "text": "What is the probability of drawing a red card in a standard deck of $$52$$ cards, or what is the number of red cards divided by the total number of cards?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

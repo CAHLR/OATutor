@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a6caf57Kinematics10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Remember the formula for calculating total distance",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6caf57Kinematics10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.001$$"
+        ],
+        "dependencies": [
+            "a6caf57Kinematics10a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "How many km in $$1$$ $$m$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6caf57Kinematics10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$ * $${10}^5$$"
+        ],
+        "dependencies": [
+            "a6caf57Kinematics10a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "How many $$\\frac{km}{s}$$ is $$3$$ * $${10}^8$$ $$\\frac{m}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6caf57Kinematics10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.28$$"
+        ],
+        "dependencies": [
+            "a6caf57Kinematics10a-h3"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the total time taken for the signal to go from the earth to the moon? (The given value is for back and forth signal travel) in seconds",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6caf57Kinematics10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$384000$$"
+        ],
+        "dependencies": [
+            "a6caf57Kinematics10a-h4"
+        ],
+        "title": "Combining",
+        "text": "Distance $$=$$ Speed * Time and in this case what is the distance in kms?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

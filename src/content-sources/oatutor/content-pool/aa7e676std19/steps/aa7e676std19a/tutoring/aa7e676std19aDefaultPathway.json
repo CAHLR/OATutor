@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aa7e676std19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Cohen's $$d$$",
+        "text": "Cohen's $$d$$ is a measure of effect size based on the differences between two means. Specifically, it is the measure of the difference between two means divided by the pooled standard deviation. The calculated value of effect size is then compared to Cohen\u2019s standards of small, medium, and large effect sizes: if the size of effect is small, $$d$$ $$=$$ $$0.2;$$ for medium, $$d$$ $$=$$ $$0.5;$$ for large, $$d$$ $$=$$ $$0.8$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa7e676std19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.834$$"
+        ],
+        "dependencies": [
+            "aa7e676std19a-h1"
+        ],
+        "title": "Solving for $$d$$",
+        "text": "What is $$d$$ (the difference between two means divided by the pooled standard deviation)? Round to the nearest thousandths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa7e676std19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa7e676std19a-h2"
+        ],
+        "title": "Sample Sizes and Means",
+        "text": "The means of the final exam scores for online class and face-to-face class are as follows respectively: $$x\u0304_A$$ $$=$$ $$\\frac{2185.5}{30}$$ $$=$$ $$72.85$$, $$x\u0304_B$$ $$=$$ $$\\frac{2549.4}{30}$$ $$=$$ $$84.98$$, and $$n_1$$ and $$n_2$$ $$=$$ $$30$$. Use a calculator to find $$d$$ if needed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa7e676std19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Large"
+        ],
+        "dependencies": [
+            "aa7e676std19a-h3"
+        ],
+        "title": "Small, Medium, or Large Size of Effect",
+        "text": "Compare the calculated value of effect size (d) to Cohen\u2019s standards of small, medium, and large effect sizes where if the size of effect is small, $$d$$ $$=$$ $$0.2;$$ for medium, $$d$$ $$=$$ $$0.5;$$ for large, $$d$$ $$=$$ $$0.8$$. What is the effect size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Small",
+            "Medium",
+            "Large"
+        ]
+    },
+    {
+        "id": "aa7e676std19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa7e676std19a-h4"
+        ],
+        "title": "Explanation",
+        "text": "$$d$$ $$=$$ $$0.834;$$ Large because $$0.834$$ is greater than Cohen\u2019s $$0.8$$ for a large effect size. The size of the differences between the means of the final exam scores of online students and students in a face-to-face class is large indicating a significant difference.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a47ffd9Ind10a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [],
+        "title": "Calculating Probabilities",
+        "text": "What is the probability we get heads on one flip?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a47ffd9Ind10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$"
+        ],
+        "dependencies": [
+            "a47ffd9Ind10a-h1"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "This problem is equivalent to the situation that we don't get {HH}. What is the probability that we get heads in two flips?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a47ffd9Ind10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.75$$"
+        ],
+        "dependencies": [
+            "a47ffd9Ind10a-h2"
+        ],
+        "title": "Answer",
+        "text": "What is the probability that we don't get {HH} if the probability that we do get {HH} is $$.25$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

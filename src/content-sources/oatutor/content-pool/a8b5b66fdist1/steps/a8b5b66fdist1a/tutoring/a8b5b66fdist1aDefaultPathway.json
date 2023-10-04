@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a8b5b66fdist1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Null and Alternative Hypotheses",
+        "text": "The null and alternative hypotheses are the following, respectively: $$H_0$$: \u03bc1 $$=$$ \u03bc2 $$=$$ \u03bc3 $$=$$ \u03bc4 $$=$$ \u03bc5 and $$H_a$$: \u03bci \u2260 \u03bcj some i \u2260 j",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b5b66fdist1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8b5b66fdist1a-h1"
+        ],
+        "title": "Distribution",
+        "text": "Distribution for the test: df(num) $$=$$ $$5$$ - $$1$$ $$=$$ $$4$$ and df(denom) $$=$$ $$15$$ - $$5$$ $$=$$ $$10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b5b66fdist1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8b5b66fdist1a-h2"
+        ],
+        "title": "Statistic F",
+        "text": "The F statistic is a ratio (a fraction). There are two sets of degrees of freedom: one for the numerator and one for the denominator. To solve for F, find the numerator mean square divided by the denominator mean square. If you would like, you can use a calculator by putting the data in the table into lists L1, L2, L3, and L4. Press STAT and arrow over to TESTS. Arrow down to F:ANOVA. Press ENTER and Enter (L1,L2,L3,L4). The calculator displays the F statistic, the $$p-value$$ and the values for the one-way ANOVA table.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b5b66fdist1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.481$$"
+        ],
+        "dependencies": [
+            "a8b5b66fdist1a-h3"
+        ],
+        "title": "Solving for F",
+        "text": "What is F? Round to three decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a8b5b66fdist1a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$4.481$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging into F",
+                "text": "What is 9,162,140/2,044,672.6? Round to three decimal places.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a8b5b66fdist1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0248$$"
+        ],
+        "dependencies": [
+            "a8b5b66fdist1a-h4"
+        ],
+        "title": "Probability Statement",
+        "text": "What is $$p-value$$ $$=$$ P(F > $$4.481)$$? Round to four decimal places.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b5b66fdist1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8b5b66fdist1a-h5"
+        ],
+        "title": "Compare \ud835\udefc and the $$p-value$$",
+        "text": "Since we are testing at a significance level of 5%, \ud835\udefc $$=$$ $$0.05$$. The $$p-value$$ $$=$$ $$0.0248$$. If \ud835\udefc > $$p-value$$, reject $$H_0$$ if \ud835\udefc < $$p-value$$, accept $$H_0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b5b66fdist1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8b5b66fdist1a-h6"
+        ],
+        "title": "Rejecting or Accepting the Null Hypothesis",
+        "text": "Is \ud835\udefc > $$p-value$$ such that you reject the null hypothesis?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8b5b66fdist1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8b5b66fdist1a-h7"
+        ],
+        "title": "Conclusion",
+        "text": "At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone. We may conclude that at least some of mulches led to different mean yields.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

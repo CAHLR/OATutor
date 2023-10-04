@@ -1,0 +1,65 @@
+[
+    {
+        "id": "abe210aTrigFun12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unit Circle $$1$$",
+        "text": "The value inside the parenthesis of the tan refers to an angle which also corresponds to a point on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210aTrigFun12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe210aTrigFun12a-h1"
+        ],
+        "title": "Unit Circle $$2$$",
+        "text": "The angle $$\\frac{19\\pi}{4}$$ corresponds to more than $$2$$ revolutions around the unit circle and is equal to $$2\\pi+2\\pi+\\frac{3\\pi}{4}$$, thus we can continue to subtract by $$2\\pi$$ or $$1$$ rotation until we get an angle between $$0$$ and $$2\\pi$$ to find the corresponding value on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210aTrigFun12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe210aTrigFun12a-h2"
+        ],
+        "title": "Unit Circle $$3$$",
+        "text": "We know that the angle $$\\frac{3\\pi}{4}$$ corresponds to the point $$(\\left(-\\frac{\\sqrt{2}}{2}\\right),\\frac{\\sqrt{2}}{2})$$ on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210aTrigFun12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abe210aTrigFun12a-h3"
+        ],
+        "title": "Definition of trigonometric functions",
+        "text": "Letting $$x$$ be an angle, sinx $$=$$ $$y$$, cosx $$=$$ $$x$$, and tanx $$=$$ $$\\frac{y}{x}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210aTrigFun12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "abe210aTrigFun12a-h4"
+        ],
+        "title": "Combining",
+        "text": "Based on the above information, what is the value of tanx at the angle $$\\frac{19\\pi}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

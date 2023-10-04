@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aee4076prop15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Type of Test",
+        "text": "Test of Two Proportions",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aee4076prop15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aee4076prop15a-h1"
+        ],
+        "title": "One-tailed or Two-tailed?",
+        "text": "\"Greater than\" implies that the test is right-tailed",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aee4076prop15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.00079$$"
+        ],
+        "dependencies": [
+            "aee4076prop15a-h2"
+        ],
+        "title": "P-value",
+        "text": "What is the $$p-value$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aee4076prop15a-s1",
+        "type": "hint",
+        "dependencies": [
+            "aee4076prop15a-h3"
+        ],
+        "title": "Calculating P-value",
+        "text": "In order to calculate the $$p-value$$, you can use the 2PropZTest function on your calculator",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

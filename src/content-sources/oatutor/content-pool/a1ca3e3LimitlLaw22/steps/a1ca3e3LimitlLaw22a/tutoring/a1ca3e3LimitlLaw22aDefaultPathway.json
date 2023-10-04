@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1ca3e3LimitlLaw22a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} f(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a1ca3e3LimitlLaw22a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} g(x)-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1ca3e3LimitlLaw22a-h2"
+        ],
+        "title": "The limit of functions at same point commute and can be directly divided",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

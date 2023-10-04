@@ -1,0 +1,39 @@
+[
+    {
+        "id": "a1ca3e3LimitLaw10a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^3$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "plug in $$x$$ value to the function $$e^3 x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$e^3$$",
+            "$$e^2$$",
+            "$$e^1$$"
+        ]
+    },
+    {
+        "id": "a1ca3e3LimitLaw10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a1ca3e3LimitLaw10a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What's $$\\ln(e^3)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

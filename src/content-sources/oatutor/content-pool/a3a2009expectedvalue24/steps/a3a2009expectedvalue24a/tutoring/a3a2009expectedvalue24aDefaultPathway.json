@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a3a2009expectedvalue24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Total Probability",
+        "text": "By the definition of probability, the summation of the probabilities of all possible outcomes in a sample space must add up to $$1$$. We know that the possible outcomes here are $$0$$, $$1$$, $$2$$, $$3$$, $$4$$, and $$5$$. Therefore, their probabilities, P(0), P(1), P(2), P(3), P(4), and P(5) must add up to one. We can use subtraction from $$1$$ to calculate $$P(x=3)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a2009expectedvalue24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.12$$"
+        ],
+        "dependencies": [
+            "a3a2009expectedvalue24a-h1"
+        ],
+        "title": "Determining $$P(x=4)$$",
+        "text": "What is P(x=3)=1-[P(x=0)+P(x=1)+P(x=2)+P(x=4)+P(x=5)]?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

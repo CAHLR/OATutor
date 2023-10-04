@@ -1,0 +1,37 @@
+[
+    {
+        "id": "a916a3bterminology4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definitiong of Conditional Probability",
+        "text": "Although we were not given the word GIVEN in this problem, we note that we are picking out of the subset of students that are female. We are finding how many female students have short hair, which can be reworded as the number of students with short hair given they are female. Therefore, we are working with conditional probability. Conditional probability essentially, written as P(A|B) is the probability that event A occurs given that event B already occurs.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "P(S|F)"
+        ],
+        "dependencies": [
+            "a916a3bterminology4a-h1"
+        ],
+        "title": "Determining Given Probability",
+        "text": "What is the probability that a student has short hair, given that they are female?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "P(S",
+            "F)",
+            "P(F",
+            "S)",
+            "P(S AND F)",
+            "P(S OR F)"
+        ]
+    }
+]

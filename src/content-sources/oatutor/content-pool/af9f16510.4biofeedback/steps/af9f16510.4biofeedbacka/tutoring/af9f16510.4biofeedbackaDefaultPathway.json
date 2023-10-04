@@ -1,0 +1,83 @@
+[
+    {
+        "id": "af9f16510.4biofeedbacka-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "There is no need to calculate differences data as the sample mean and standard deviation are given.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4biofeedbacka-h2",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4biofeedbacka-h1"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "Methods to calculate the $$p-value$$ will vary by calculator, make sure to use a $$t-test$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4biofeedbacka-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: $$u \\geq 0$$, $$H_a$$: $$u<0$$"
+        ],
+        "dependencies": [
+            "af9f16510.4biofeedbacka-h2"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "The key testing feature is that blood pressure is decreased after training. Suppose u denotes blood pressure level change, which of the following claims are correct?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: $$u \\geq 0$$, $$H_a$$: $$u<0$$",
+            "$$H_0$$: $$u \\geq 5$$, $$H_a$$: $$u<5$$",
+            "$$H_0$$: $$u=0$$, $$H_a$$: $$u \\leq 0$$",
+            "$$H_0$$: $$u>s$$, $$H_a$$: $$u \\leq s$$"
+        ]
+    },
+    {
+        "id": "af9f16510.4biofeedbacka-h4",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4biofeedbacka-h3"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "Using $$x=-10.2$$, $$s=8.4$$, and $$n=6$$, the test statistic can be found through the formula test statistic $$t=\\frac{x-0}{\\frac{s}{\\sqrt{n}}}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4biofeedbacka-h5",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4biofeedbacka-h4"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "The computed test statistic is $$\\frac{-10.2}{\\frac{8.4}{\\sqrt{6}}}$$, the $$p-value$$ can be found in the form P(t_5<=-10.2/(8.4/sqrt(6)))",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4biofeedbacka-h6",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4biofeedbacka-h5"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "It is found that $$P-value=0.0155$$ approximately, since the $$p-value$$ is less than $$0.05$$, our significance level, the null hypothesis is rejected and there is suffcient evidence to support the alternative hypothesis that blood pressure decreased after the special exercise protocol.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

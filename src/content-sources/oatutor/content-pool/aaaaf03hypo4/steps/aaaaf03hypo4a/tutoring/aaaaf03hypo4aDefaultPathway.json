@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aaaaf03hypo4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample Statistics",
+        "text": "What are some sample statistics stated in the problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaaf03hypo4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$42.3$$"
+        ],
+        "dependencies": [
+            "aaaaf03hypo4a-h1"
+        ],
+        "title": "Sample Mean \u03bc",
+        "text": "What is the sample Mean \u03bc percentage stated in the question?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaaf03hypo4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaaaf03hypo4a-h2"
+        ],
+        "title": "Null Hypothesis vs. Alternative Hypothesis",
+        "text": "The null hypothesis is generally the complement of the alternative hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaaf03hypo4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Not equal to the sample mean"
+        ],
+        "dependencies": [
+            "aaaaf03hypo4a-h3"
+        ],
+        "title": "One Sided vs. Two Sided Hypothesis Test",
+        "text": "What is the guess on the number of hours spent by Americans watching television?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Not equal to the sample mean",
+            "Lower or equal to smaple mean",
+            "Lower to sample mean",
+            "Greater than or equal to sample mean"
+        ]
+    }
+]

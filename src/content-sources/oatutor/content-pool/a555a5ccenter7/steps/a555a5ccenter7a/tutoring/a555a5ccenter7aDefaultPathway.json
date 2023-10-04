@@ -1,0 +1,107 @@
+[
+    {
+        "id": "a555a5ccenter7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definitions of Unimodal and Bimodal",
+        "text": "The mode of a data set is the most frequent value that occurs in that data set. A set is considered unimodal if there is only one mode. A set is considered bimodal if it has two modes. In order to determine the mode(s) of the data set, let's list out the frequencies of each of the points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter7a-h1"
+        ],
+        "title": "Determining Frequency of $$430$$",
+        "text": "How many times does $$430$$ show up in the data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter7a-h2"
+        ],
+        "title": "Determining Frequency of $$480$$",
+        "text": "How many times does $$480$$ show up in the data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter7a-h3"
+        ],
+        "title": "Determining Frequency of $$495$$",
+        "text": "How many times does $$495$$ show up in the data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$430$$, $$480$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter7a-h4"
+        ],
+        "title": "Determining the Mode(s)",
+        "text": "What is/are the mode(s) of the data? Which value(s) have the highest frequency?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$430$$, $$480$$",
+            "$$430$$",
+            "$$480$$",
+            "$$480$$, $$495$$"
+        ]
+    },
+    {
+        "id": "a555a5ccenter7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bimodal"
+        ],
+        "dependencies": [
+            "a555a5ccenter7a-h5"
+        ],
+        "title": "Determining Unimodal or Bimodal",
+        "text": "Based on the number of modes you determined, is this data set unimodal (only has one mode) or bimodal (has two modes)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Unimodal",
+            "Bimodal"
+        ]
+    }
+]

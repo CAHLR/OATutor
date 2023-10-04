@@ -1,0 +1,63 @@
+[
+    {
+        "id": "ac541bdIntroPhy20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Find out the mass of a cell and divide the mass of a hummingbird by that value",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${10}^{-14}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy20a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the mass of a cell in kg?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$70$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy20a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "What is the mass of a human in kg?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac541bdIntroPhy20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$ * $${10}^{15}$$"
+        ],
+        "dependencies": [
+            "ac541bdIntroPhy20a-h3"
+        ],
+        "title": "Combining",
+        "text": "How many cells heavy is a human? (Divide mass of a human by mass of one cell)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a04cbeeSubstitution7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the Integral",
+        "text": "First use the trigonometric identity $${cos}^2 \\theta=\\frac{1+cos2 \\theta}{2}$$ to rewrite the integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeeSubstitution7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "/int{(1+cos2theta)/2,0,pi/2,theta}"
+        ],
+        "dependencies": [
+            "a04cbeeSubstitution7a-h1"
+        ],
+        "title": "Rewrite the Integral",
+        "text": "What is the new integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeeSubstitution7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeeSubstitution7a-h2"
+        ],
+        "title": "Evaluate the Second Integral",
+        "text": "Make a substitution to evaluate the second integral by letting $$u=2theta$$. Then, $$du=2dtheta$$, or $$\\frac{1}{2} du=dtheta$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeeSubstitution7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeeSubstitution7a-h3"
+        ],
+        "title": "Express the Second Integral in Terms of u",
+        "text": "When $$theta=0$$, $$u=0$$, and when $$theta=\\frac{\\pi}{2}$$, $$u=pi$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

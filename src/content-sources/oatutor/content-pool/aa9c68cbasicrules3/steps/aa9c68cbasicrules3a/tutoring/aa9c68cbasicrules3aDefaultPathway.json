@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aa9c68cbasicrules3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of the Multiplication Rule",
+        "text": "If A and B are two events defined on a sample space, then P(A AND $$B)=P\\left(A\\right) P\\left(B|A\\right)$$. We want to find when A and B both occur: this is the formula to use.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa9c68cbasicrules3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.75$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules3a-h1"
+        ],
+        "title": "Finding P(C)",
+        "text": "What is P(C), or the probability that Helen makes the first shot?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa9c68cbasicrules3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.85$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules3a-h2"
+        ],
+        "title": "Finding P(D|C)",
+        "text": "What is P(D|C), or the probability that Helen makes the second free throw given that she made the first?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa9c68cbasicrules3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6375$$"
+        ],
+        "dependencies": [
+            "aa9c68cbasicrules3a-h3"
+        ],
+        "title": "Application of the Multiplication Rule",
+        "text": "What is P(C AND $$D)=P\\left(C\\right) P\\left(D|C\\right)$$, or the probability that Helen makes both free throws?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

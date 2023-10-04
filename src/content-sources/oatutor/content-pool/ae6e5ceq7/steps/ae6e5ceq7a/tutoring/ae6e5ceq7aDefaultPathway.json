@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae6e5ceq7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the mean.",
+        "text": "First, you want to find the mean. This is done by adding all the values together and dividing by the number of entires.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae6e5ceq7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.85$$"
+        ],
+        "dependencies": [
+            "ae6e5ceq7a-h1"
+        ],
+        "title": "Find the mean.",
+        "text": "What is the mean of this data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae6e5ceq7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae6e5ceq7a-h2"
+        ],
+        "title": "Find the median.",
+        "text": "Secondly you want to find the median. This is done by ordering the values and finding the midpoint.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae6e5ceq7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ae6e5ceq7a-h3"
+        ],
+        "title": "Find the median.",
+        "text": "What is the median of this data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae6e5ceq7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae6e5ceq7a-h4"
+        ],
+        "title": "Understanding skewness in relation to mean and median.",
+        "text": "Lastly, seeing that the median and mean are close, and that the mode lies close to the middle of the data, it means the data is symmetrical.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

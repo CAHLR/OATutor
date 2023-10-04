@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a916a3bterminology1f-h15",
+        "type": "hint",
+        "dependencies": [
+            "a916a3bterminology1e-h14"
+        ],
+        "title": "Determine the Outcomes",
+        "text": "To determine the probability of an event occurring, we want to first determine what the possible outcomes that represent the space are.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology1f-h16",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "{14, $$16$$, 18}"
+        ],
+        "dependencies": [
+            "a916a3bterminology1f-h15"
+        ],
+        "title": "Determining A AND B",
+        "text": "What is the list of outcomes that exist in A AND B? Effectively, which numbers between $$1$$ and $$19$$ inclusive are both even AND greater than 13?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "{14, $$16$$, 18}",
+            "{15, $$17$$, 19}",
+            "{2, $$4$$, $$6$$, $$8$$, $$10$$, $$12$$, $$14$$, $$15$$, $$16$$, $$17$$, $$18$$, 19}",
+            "{2, $$4$$, $$6$$, $$8$$, $$10$$, $$12$$, $$14$$, $$16$$, 18}"
+        ]
+    },
+    {
+        "id": "a916a3bterminology1f-h17",
+        "type": "hint",
+        "dependencies": [
+            "a916a3bterminology1f-h16"
+        ],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology1f-h18",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology1f-h17"
+        ],
+        "title": "Size of A AND B",
+        "text": "What is the size of A AND B? Effectively, how many numbers are from one to $$19$$ are even AND greater than 13?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology1f-h19",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology1f-h18"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total whole numbers are there between $$1$$ and $$19$$ inclusive?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a916a3bterminology1f-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{19}$$"
+        ],
+        "dependencies": [
+            "a916a3bterminology1f-h19"
+        ],
+        "title": "Determining P(A AND B)",
+        "text": "What is P(A AND B), or what is the size of A AND B divided by the size of the sample size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

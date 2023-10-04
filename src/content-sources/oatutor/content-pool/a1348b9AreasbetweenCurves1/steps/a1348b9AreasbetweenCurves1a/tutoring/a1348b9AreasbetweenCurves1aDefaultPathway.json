@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1348b9AreasbetweenCurves1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the curves",
+        "text": "First, you need to identify the two curves that define the region whose area you want to find. In this case, f(x) is the upper curve and g(x) is the lower curve",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves1a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "$$A=\\int (f(x)-g(x) \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves1a-h2"
+        ],
+        "title": "Set up the integral",
+        "text": "With $$f(x)=x+4$$ and $$g(x)=3-\\frac{x}{2}$$ over the given integral [1,4], we can complete the integral expression as $$A=\\int_{1}^{4} x+4-3-\\frac{x}{2} \\,dx=\\int_{1}^{4} \\frac{3x}{2}+1 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves1a-h3"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int_{1}^{4} \\frac{3x}{2}+1 \\,dx=\\frac{3x^2}{4}+x$$ as the limits go from $$x=1$$ to $$x=4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves1a-h4"
+        ],
+        "title": "Evaluate",
+        "text": "$$16-\\frac{7}{4}=\\frac{57}{4}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

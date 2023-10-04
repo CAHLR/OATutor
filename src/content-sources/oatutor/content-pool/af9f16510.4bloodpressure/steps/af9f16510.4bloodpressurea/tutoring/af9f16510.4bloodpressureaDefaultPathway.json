@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af9f16510.4bloodpressurea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "T-test",
+        "text": "When you perform a hypothesis test of a single population mean \u03bc using a Student's $$t-distribution$$ (often called a $$t-test)$$, there are fundamental assumptions that need to be met in order for the test to work properly. Your data should be a simple random sample that comes from a population that is approximately normally distributed. You use the sample standard deviation to approximate the population standard deviation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4bloodpressurea-h2",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4bloodpressurea-h1"
+        ],
+        "title": "Z-test",
+        "text": "Recall what decisions must be made to decide what distribution would be best to perform hypothesis tests. When you use a normal distribution for a hypothesis test (often called a $$z-test)$$, a simple random sample is taken from the population and the population that you are working with is normally distributed or the sample size is sufficiently large.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af9f16510.4bloodpressurea-h3",
+        "type": "hint",
+        "dependencies": [
+            "af9f16510.4bloodpressurea-h2"
+        ],
+        "title": "Hypothesis Distribution",
+        "text": "Remember that degrees of freedom for $$t-test$$ distributions is $$n-1$$, where $$n$$ is the population. $$n$$ is $$6$$ in this case.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

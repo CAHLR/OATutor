@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abc36095.3anniversary1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential distributions",
+        "text": "Use the equation $$f(x)=m e^{\\left(-m x\\right)}$$, where $$m$$ is the decay parameter, to get the representative distribution of the amount of time spouses shop for anniversary cards.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abc36095.3anniversary1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{8}$$"
+        ],
+        "dependencies": [
+            "abc36095.3anniversary1a-h1"
+        ],
+        "title": "Exponential distributions",
+        "text": "What is the decay parameter $$m$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abc36095.3anniversary1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abc36095.3anniversary1a-h2"
+        ],
+        "title": "Exponential distributions",
+        "text": "The decay parameter is computed by 1/(average random variable value). In our case, the average is $$8$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "abc36095.3anniversary1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abc36095.3anniversary1a-h3"
+        ],
+        "title": "Exponential distributions",
+        "text": "Plug in the obtained decay parameter into the distiribution formula given earlier into $$m$$ to get the representative exponential distribution\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

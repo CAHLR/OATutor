@@ -1,0 +1,63 @@
+[
+    {
+        "id": "ac3e66ctreeandvenn22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How to Use Tree Diagrams",
+        "text": "When looking at a tree diagram, it consists of \"branches\", sometimes labeled with frequencies (whole numbers) or probabilities (fractions). Each branch of the tree represents a \"choice\" of sorts and each level represents the completion of a choice, and at the bottom of the tree--the leaf--houses the final outcomes. To get to the final outcome, you want to multiply all the probabilities going down the tree from the top to the end of the leaf.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn22a-h1"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate P(HR). That means the coin flip is H. What is P(H)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{12}$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn22a-h2"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate P(HR). That means the chosen bead is R. After traversing down the H row for the coin flip, what's the probability that the bead is red? In effect, what is P(R|H)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{6}{36}$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn22a-h3"
+        ],
+        "title": "Calculating Probability",
+        "text": "Now, multiply the two probabilities, $$P\\left(H\\right) P\\left(R|H\\right)=P(HR)$$. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

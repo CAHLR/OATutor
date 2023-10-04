@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a61f754spread10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine Students' Standard Deviations",
+        "text": "For each student, determine how many standard deviations (#ofSTDEVs) his GPA is away from the average, for his school. Pay careful attention to signs when comparing and interpreting the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a61f754spread10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.21$$"
+        ],
+        "dependencies": [
+            "a61f754spread10a-h1"
+        ],
+        "title": "John's Standard Deviation",
+        "text": "How many standard deviations away from the mean is John? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a61f754spread10a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.21$$"
+                ],
+                "dependencies": [],
+                "title": "John's Standard Deviation",
+                "text": "What is $$\\frac{2.85-3}{0.7}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a61f754spread10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.3$$"
+        ],
+        "dependencies": [
+            "a61f754spread10a-h2"
+        ],
+        "title": "Ali's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Ali? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a61f754spread10a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.3$$"
+                ],
+                "dependencies": [],
+                "title": "Ali's Standard Deviation",
+                "text": "What is $$\\frac{77-80}{10}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a61f754spread10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "John"
+        ],
+        "dependencies": [
+            "a61f754spread10a-h3"
+        ],
+        "title": "Determining Which Student's GPA is Better",
+        "text": "Which student had a higher GPA when compared to their school? Effectively, which student had a higher standard deviation score?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "John",
+            "Ali"
+        ]
+    }
+]

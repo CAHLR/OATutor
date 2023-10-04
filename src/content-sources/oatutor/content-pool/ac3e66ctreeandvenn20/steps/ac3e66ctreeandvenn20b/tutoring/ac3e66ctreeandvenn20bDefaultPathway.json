@@ -1,0 +1,97 @@
+[
+    {
+        "id": "ac3e66ctreeandvenn20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for OR",
+        "text": "Remember, the formula is P(A OR B)=P(A)+P(B)-P(A OR B). Substitute A for O and B for R to find the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn20b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.51$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn20b-h1"
+        ],
+        "title": "Determine P(O)",
+        "text": "What is P(O)? Hint: the answer is in the problem statement.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn20b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.075$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn20b-h2"
+        ],
+        "title": "Determine P(R)",
+        "text": "What is P(R)? Hint: the answer is in the problem statement.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn20b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.04$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn20b-h3"
+        ],
+        "title": "Determine P(O AND R)",
+        "text": "What is P(O AND R)? Hint: the answer is in the problem statement.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac3e66ctreeandvenn20b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.545$$"
+        ],
+        "dependencies": [
+            "ac3e66ctreeandvenn20b-h4"
+        ],
+        "title": "Determining P(O OR R)",
+        "text": "What is P(O)+P(R)-P(O AND R)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ac3e66ctreeandvenn20b-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.545$$"
+                ],
+                "dependencies": [],
+                "title": "Determining P(C OR PT)",
+                "text": "What is $$0.51+0.075-0.04$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

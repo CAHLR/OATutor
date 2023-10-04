@@ -1,0 +1,134 @@
+[
+    {
+        "id": "af6b5fcgood12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypotheses",
+        "text": "What are the Null Hypothesis $$H_0$$ and Alternative Hypothesis in this context?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: The coins are fair."
+        ],
+        "dependencies": [
+            "af6b5fcgood12a-h1"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: The coins are fair.",
+            "$$H_0$$: The data does not fit the distribution."
+        ]
+    },
+    {
+        "id": "af6b5fcgood12a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_a$$: The data does not fit the distribution."
+        ],
+        "dependencies": [],
+        "title": "Alternative Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_a$$: The coins are fair.",
+            "$$H_a$$: The data does not fit the distribution."
+        ]
+    },
+    {
+        "id": "af6b5fcgood12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood12a-h2"
+        ],
+        "title": "Consider what distribution is most appropriate to use in this problem.",
+        "text": "Is this a Goodness-of-Fit problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "af6b5fcgood12a-h3"
+        ],
+        "title": "What is the degree of freedom?",
+        "text": "$$df=3-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood12a-h4"
+        ],
+        "title": "Compute the chi-square test statistics",
+        "text": "$$X^2$$ $$=$$ $$2.14$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.343$$"
+        ],
+        "dependencies": [
+            "af6b5fcgood12a-h5"
+        ],
+        "title": "Compute the $$p-value$$, P(X**2 > $$2.14)$$",
+        "text": "Round the answer to three decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood12a-h6"
+        ],
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, \\alpha < P. Do not reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af6b5fcgood12a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af6b5fcgood12a-h7"
+        ],
+        "title": "Interpret the Result",
+        "text": "At the 5% level of significance, from the data, there is insufficient evidence to conclude that the coins are not fair.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

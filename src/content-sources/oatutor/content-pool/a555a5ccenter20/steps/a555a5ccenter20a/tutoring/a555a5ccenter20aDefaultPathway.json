@@ -1,0 +1,199 @@
+[
+    {
+        "id": "a555a5ccenter20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Calculating Mean from a Frequency Table",
+        "text": "To calculate mean from a frequency table, we want to first find all the midpoints of the grade intervals, and then sum up the product of each interval frequency with the midpoint. Lastly, we'll need to divide that sum by the total frequency. Let's first start by finding all the midpoints.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.725$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h1"
+        ],
+        "title": "Midpoint for Interval $$16-21.45$$",
+        "text": "What is the midpoint for the interval $$16-21.45$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a555a5ccenter20a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$18.725$$"
+                ],
+                "dependencies": [],
+                "title": "Midpoint for Interval $$16-21.45$$",
+                "text": "What is $$\\frac{16+21.45}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a555a5ccenter20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24.175$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h2"
+        ],
+        "title": "Midpoint for Interval $$21.45-26.9$$",
+        "text": "What is the midpoint for the interval $$21.45-26.9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$29.625$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h3"
+        ],
+        "title": "Midpoint for Interval $$26.9-32.35$$",
+        "text": "What is the midpoint for the interval $$26.9-32.35$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$35.075$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h4"
+        ],
+        "title": "Midpoint for Interval $$32.35-37.8$$",
+        "text": "What is the midpoint for the interval $$32.35-37.8$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40.525$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h5"
+        ],
+        "title": "Midpoint for Interval $$37.8-43.25$$",
+        "text": "What is the midpoint for the interval $$37.8-43.25$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45.975$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h6"
+        ],
+        "title": "Midpoint for Interval $$43.25-48.7$$",
+        "text": "What is the midpoint for the interval $$43.25-48.7$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1328.65$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h7"
+        ],
+        "title": "Determining Total Sum",
+        "text": "Now that we know each midpoint for each interval, what is the sum of the product of each interval frequency (right column) and midpoint (just calculated)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a555a5ccenter20a-h8-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1328.65$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Total Sum",
+                "text": "What is $$18.725\\times23+24.175\\times4+29.625\\times9+35.075\\times7+40.525\\times6+45.975\\times1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a555a5ccenter20a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h8"
+        ],
+        "title": "Determining Total Frequency",
+        "text": "What is the total frequency? As in, how many data points are in the table?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a555a5ccenter20a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26.57$$"
+        ],
+        "dependencies": [
+            "a555a5ccenter20a-h9"
+        ],
+        "title": "Estimating the Mean",
+        "text": "What is an estimate of the mean? In other words, what is the total sum that we calculated divided by the total frequency? Round your answer to the nearest hundredths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

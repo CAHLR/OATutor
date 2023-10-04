@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a59a759hypergeometric17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a59a759hypergeometric17a-h2"
+        ],
+        "title": "Structure of Hypergeometric Notation",
+        "text": "Note that the notation for a Hypergeometric distribution is X ~ H(r, $$b$$, n) that reads as \"X is a random variable with a hypergeometric distribution\". The parameters are $$r$$, $$b$$, and $$n$$ where $$r$$ is the size of the group of interest (first group), $$b$$ is the size of the second group, and $$n$$ is the size of the chosen sample.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59a759hypergeometric17b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric17b-h3"
+        ],
+        "title": "Determining the Size of the Group of Interest",
+        "text": "What is the size of the group of interest? In other words, how many not technically proficient volunteers are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59a759hypergeometric17b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric17b-h4"
+        ],
+        "title": "Determining the Size of the Second Group",
+        "text": "What is the size of the second group? In other words, how many technically proficient volunteers are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59a759hypergeometric17b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric17b-h5"
+        ],
+        "title": "Determining the Size of the Chosen Sample",
+        "text": "What is the size of the sample? In other words, how many people will be chosen to be part of the technology task force committee?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59a759hypergeometric17b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "X ~ H(8, $$20$$, 10)"
+        ],
+        "dependencies": [
+            "a59a759hypergeometric17b-h6"
+        ],
+        "title": "Putting it All Together",
+        "text": "Knowing that the size of the group of interest is $$8$$, the size of the second group is $$20$$, and the size of the chosen sample is $$10$$, plug this into the formula to determine the hypergeometric notation of this question.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "X ~ H(8, $$20$$, 10)",
+            "X ~ H(8, $$10$$, 20)",
+            "X ~ H(10, $$8$$, 20)",
+            "X ~ H(20, $$10$$, 8)"
+        ]
+    }
+]
