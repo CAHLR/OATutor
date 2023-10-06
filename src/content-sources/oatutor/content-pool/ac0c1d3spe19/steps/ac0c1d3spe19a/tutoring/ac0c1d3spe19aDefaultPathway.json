@@ -1,0 +1,83 @@
+[
+    {
+        "id": "ac0c1d3spe19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction Binomial Square Formula",
+        "text": "We compare our expression to the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2-2a b+b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac0c1d3spe19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe19a-h1"
+        ],
+        "title": "Compare the Binomial\\n",
+        "text": "$${\\left(a-b\\right)}^2$$\\n$${\\left(\\frac{1}{5} x-\\frac{1}{7} y\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac0c1d3spe19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{5} x$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe19a-h2"
+        ],
+        "title": "Identify a",
+        "text": "What is a in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac0c1d3spe19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{7} y$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe19a-h3"
+        ],
+        "title": "Identify $$b$$",
+        "text": "What is $$b$$ in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac0c1d3spe19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe19a-h3",
+            "ac0c1d3spe19a-h4"
+        ],
+        "title": "Plug in the Terms",
+        "text": "Substitute $$a=\\frac{1}{5} x$$ and $$b=\\frac{1}{7} y$$ into the subtraction binomial square formula:\\n$${\\left(a-b\\right)}^2=a^2+2a b+b^2$$\\n$${\\left(\\frac{1}{5} x-\\frac{1}{7} y\\right)}^2={\\left(\\frac{1}{5} x\\right)}^2-2\\frac{1}{5} x \\frac{1}{7} y+{\\left(\\frac{1}{7} y\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac0c1d3spe19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe19a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{1}{25} x^2-\\frac{2}{35} x y+\\frac{1}{49} y^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

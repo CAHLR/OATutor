@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a4b9bbfrationalnums14a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(m^3\\right)}^{\\frac{1}{3}} {\\left(n^9\\right)}^{\\frac{1}{3}}$$"
+        ],
+        "dependencies": [],
+        "title": "Product to a Power Property",
+        "text": "The Power Property: $${\\left(a^m\\right)}^n$$ $$=$$ $$a^{m n}$$, the Product Property: $$a^m a^n=a^{m+n}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m^{\\frac{3\\times1}{3}} n^{\\frac{9\\times1}{3}}$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums14a-h1"
+        ],
+        "title": "Exponents Multiplication",
+        "text": "To raise a power to a power, we multiply the exponents.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
