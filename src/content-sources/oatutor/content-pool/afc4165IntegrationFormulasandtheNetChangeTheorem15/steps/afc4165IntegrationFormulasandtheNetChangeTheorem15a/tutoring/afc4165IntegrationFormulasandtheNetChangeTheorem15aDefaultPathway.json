@@ -1,0 +1,65 @@
+[
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "The calories lost after \u2018t\u2019 hours have to be the difference between the calories burnt and calories consumed after these \u2018t\u2019 hours. Therefore the calories intake will carry a negative sign $$-100t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "/int{300-(50*t)-100*t,0,3,t}"
+        ],
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "How can we express the integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h2"
+        ],
+        "title": "Simplify the integral",
+        "text": "$$\\int_{0}^{3} 300-50t-100t \\,dt$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h3"
+        ],
+        "title": "Seperating the terms",
+        "text": "Seperate and conpute the integral of each term /int{300,0,3,t}-/int{150*t),0,3,t}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem15a-h4"
+        ],
+        "title": "Use basic integration formulas to compute the following antiderivatives or definite integrals.",
+        "text": "$$300\\times3-150\\frac{3^2}{2}=225$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
