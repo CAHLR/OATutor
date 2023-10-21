@@ -1,0 +1,12 @@
+{
+    "id": "a184cfaVolumesofRevolution:CylindricalShells5a",
+    "stepAnswer": [
+        "/int{pi*x**2,0,1,x}+/int{pi*(2-x)**2,1,2,x}"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "a.The region bounded by the graph of $$y=x, y=2-x$$, and the x-axis. Give an answer using Disk Method.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi {\\left(2-x\\right)}^2 \\,dx$$"
+}
