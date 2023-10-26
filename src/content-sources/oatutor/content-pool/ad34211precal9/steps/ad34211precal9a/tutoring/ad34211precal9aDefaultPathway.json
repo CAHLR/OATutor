@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ad34211precal9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Proof",
+        "text": "$$|A|=|A-B+B|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ad34211precal9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34211precal9a-h1"
+        ],
+        "title": "Triangle Inequality",
+        "text": "$$|A-B+B| \\leq |A-B|+|B|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ad34211precal9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34211precal9a-h2"
+        ],
+        "title": "Triangle Inequality",
+        "text": "Use the triangle inequality $$|x+y| \\leq |x|+|y|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ad34211precal9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34211precal9a-h3"
+        ],
+        "title": "Triangle Inequality",
+        "text": "Now, we have $$|A|=|A-B+B| \\leq |A-B|+|B|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ad34211precal9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad34211precal9a-h4"
+        ],
+        "title": "Triangle Inequality",
+        "text": "Can we prove $$|A-B| \\geq |A|-|B|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "ad34211precal9a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Triangle Inequality",
+                "text": "$$|A|-|B|=|A-B+B| \\leq |A-B|$$, so $$|A|-|B| \\leq |A-B|$$. Proved.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]
