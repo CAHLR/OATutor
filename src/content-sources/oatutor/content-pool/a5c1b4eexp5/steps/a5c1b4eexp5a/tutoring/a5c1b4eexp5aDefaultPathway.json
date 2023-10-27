@@ -1,0 +1,168 @@
+[
+    {
+        "id": "a5c1b4eexp5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "$$\\sqrt[3]{x-3} \\neq 0$$, so $$x \\neq 3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h1"
+        ],
+        "title": "Distributive Law",
+        "text": "Using distributive law for LHS numerator, $${\\left(2x-6\\right)}^2=2^2 {\\left(x-3\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h2"
+        ],
+        "title": "Conversion",
+        "text": "Convert radicals to exponents for LHS denominator using the fact that $$\\sqrt[n]{y}=y^{\\frac{1}{n}}$$, so $$\\sqrt[3]{x-3}={\\left(x-3\\right)}^{\\frac{1}{3}}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h3"
+        ],
+        "title": "LHS",
+        "text": "We have $$\\frac{2^2 {\\left(x-3\\right)}^2}{{\\left(x-3\\right)}^{\\frac{1}{3}}}$$, which is equivalent to $$2^2 \\frac{{\\left(x-3\\right)}^2}{{\\left(x-3\\right)}^{\\frac{1}{3}}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h4"
+        ],
+        "title": "Property",
+        "text": "$$\\frac{a^b}{a^c}=a^{b-c}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2^2 {\\left(x-3\\right)}^{\\frac{5}{3}}$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp5a-h5"
+        ],
+        "title": "Property",
+        "text": "Which option is equivalent to $$2^2 \\frac{{\\left(x-3\\right)}^2}{{\\left(x-3\\right)}^{\\frac{1}{3}}}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2^2 {\\left(x-3\\right)}^{\\frac{5}{3}}$$",
+            "$$2^2 {\\left(x-3\\right)}^{\\frac{7}{3}}$$"
+        ]
+    },
+    {
+        "id": "a5c1b4eexp5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp5a-h6"
+        ],
+        "title": "RHS",
+        "text": "$$2^a=4096$$. What is the value of a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h7"
+        ],
+        "title": "Simplification",
+        "text": "We have $$2^2 {\\left(x-3\\right)}^{\\frac{5}{3}}=2^{12}$$. Divide both sides by $$2^2$$, we get $${\\left(x-3\\right)}^{\\frac{5}{3}}=2^{10}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h8"
+        ],
+        "title": "Simplification",
+        "text": "To transform $${\\left(x-3\\right)}^{\\frac{5}{3}}$$ to $$x-3$$, we can raise both sides of the equation to the power of $$\\frac{3}{5}$$ to get $${\\left({\\left(x-3\\right)}^{\\frac{5}{3}}\\right)}^{\\frac{3}{5}}=\\frac{{\\left(2^{10}\\right)}^3}{5}$$, which can be simplified to $$(x-3)=2^6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp5a-h9"
+        ],
+        "title": "Simplification",
+        "text": "Since $${\\left(a^b\\right)}^c=a^{b c}$$, $${\\left({\\left(x-3\\right)}^{\\frac{5}{3}}\\right)}^{\\frac{3}{5}}=\\frac{{\\left(2^{10}\\right)}^3}{5}$$ can be simplified to $$(x-3)=2^6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp5a-h10"
+        ],
+        "title": "Simplification",
+        "text": "What is $$2^6$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp5a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$67$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp5a-h11"
+        ],
+        "title": "Solve the roots",
+        "text": "$$x-3=64$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]
