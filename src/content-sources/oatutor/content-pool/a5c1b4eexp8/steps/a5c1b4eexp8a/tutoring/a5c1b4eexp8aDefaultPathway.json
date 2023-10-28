@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a5c1b4eexp8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Absolute value",
+        "text": "Since $$x<1$$, then $$x-1<0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1-x$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp8a-h1"
+        ],
+        "title": "Absolute value",
+        "text": "What does $$|x-1|$$ equal to in this case?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$1-x$$",
+            "$$x-1$$"
+        ]
+    },
+    {
+        "id": "a5c1b4eexp8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp8a-h2"
+        ],
+        "title": "LHS",
+        "text": "Now we have $$\\frac{{\\left(1-x\\right)}^3}{\\sqrt{1-x}}$$, which is equivalent to $$\\frac{{\\left(1-x\\right)}^3}{{\\left(1-x\\right)}^{\\frac{1}{2}}}$$ after converting radicals to exponents.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5c1b4eexp8a-h3"
+        ],
+        "title": "LHS",
+        "text": "Since $$\\frac{a^b}{a^c}=a^{b-c}$$, $$\\frac{{\\left(1-x\\right)}^3}{{\\left(1-x\\right)}^{\\frac{1}{2}}}={\\left(1-x\\right)}^{3-\\frac{1}{2}}={\\left(1-x\\right)}^{\\frac{5}{2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a5c1b4eexp8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=1$$, $$R=\\frac{5}{2}$$"
+        ],
+        "dependencies": [
+            "a5c1b4eexp8a-h4"
+        ],
+        "title": "Simplification",
+        "text": "For our simplified expression $${\\left(1-x\\right)}^{\\frac{5}{2}}$$, what are values of A and R respectively?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$A=1$$, $$R=\\frac{5}{2}$$",
+            "$$A=\\frac{5}{2}$$, $$R=1$$"
+        ]
+    }
+]
