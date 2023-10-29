@@ -363,7 +363,7 @@ class Problem extends React.Component {
         var oerArray, licenseArray;
         var oerLink, oerName;
         var licenseLink, licenseName;
-
+	try {
         if (problem.oer != null && problem.oer.includes(" <")) {
             oerArray = problem.oer.split(" <");
         } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
@@ -371,6 +371,9 @@ class Problem extends React.Component {
         } else {
             oerArray = ["https://OATutor.io", "OATutor>"];
         }
+	} catch(error) {
+		oerArray = ["https://OATutor.io", "OATutor>"];
+	}
 
         oerLink = oerArray[0];
         oerName = oerArray[1].substring(0, oerArray[1].length - 1);
