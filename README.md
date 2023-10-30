@@ -565,3 +565,15 @@ masteries together to get the problem mastery. The heuristic will be applied, wh
 first, so the problem with the lowest mastery is selected to give to the user. In the case that the first problem is
 being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's
 mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
+
+#### Supported Meta Tags
+**giveStuFeedback:** controls correctness feedback (i.e. whether a user inputted the correct answer or not)
+**giveStuHints:** controls whether hints should be displayed or not (i.e. controls the hint icon as well)
+**doMasteryUpdate:** controls whether OATutor should track student mastery
+**allowRecycle:** controls whether problems/steps can be repeated or not
+**showStuMastery:** controls whether matters should be displayed to the user in the upper right corner
+**unlockFirstHint:** controls whether the first hint should be auto-expanded when the user clicks the hint icon
+**allowDynamicHint:** controls whether a dynamically generated hint should be given to the user
+**giveStuBottomHint:** controls whether the suer should receive a bottom-out hint (last hint in the hint pathway that contains the answer)
+**giveHintOnIncorrect:** controls whether an incorrect response should automatically force the user into the hint pathway
+**keepMCOrder:** controls whether to preserve the order of MCQ choices in the spreadsheet
