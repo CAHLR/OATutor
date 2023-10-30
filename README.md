@@ -566,7 +566,7 @@ first, so the problem with the lowest mastery is selected to give to the user. I
 being chosen in the session, equation a from the BKT model is used and the default probMastery is considered the user's
 mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken by randomly choosing a problem.
 
-#### Supported Meta Tags
+### Supported Meta Tags
 - **giveStuFeedback:** controls correctness feedback (i.e. whether a user inputted the correct answer or not)
 - **giveStuHints:** controls whether hints should be displayed or not (i.e. controls the hint icon as well)
 - **doMasteryUpdate:** controls whether OATutor should track student mastery
