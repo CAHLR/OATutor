@@ -6,6 +6,8 @@ a middleware backend is required by Learning Tools Interoperability (LTI). Our [
 
 > [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
 >
+> [Quick content authoring notebook example](https://colab.research.google.com/drive/11X3eW9cDnRcvROaCWglPM5VH0NRAXFKp?usp=sharing)
+>
 > [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
 
 ## Paper
