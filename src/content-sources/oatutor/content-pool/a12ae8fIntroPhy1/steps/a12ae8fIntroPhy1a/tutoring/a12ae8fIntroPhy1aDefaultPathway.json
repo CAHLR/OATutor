@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a12ae8fIntroPhy1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Since we are going from $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$, let's convert $$1$$ $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h1"
+        ],
+        "title": "$$\\frac{km}{h}$$ to $$\\frac{m}{h}$$",
+        "text": "First, let's go from $$1$$ $$\\frac{km}{h}$$ to $$\\frac{m}{h}$$. Remember that $$1$$ km $$=$$ $$1000m$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h2"
+        ],
+        "title": "$$\\frac{km}{h}$$ to $$\\frac{m}{h}$$",
+        "text": "How many $$\\frac{m}{h}$$ is $$1$$ $$\\frac{km}{h}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h3"
+        ],
+        "title": "$$\\frac{m}{h}$$ to $$\\frac{m}{s}$$",
+        "text": "We are at $$1000$$ $$\\frac{m}{h}$$. Now, let's convert this to $$\\frac{m}{s}$$. To go from hours to seconds, we should divide by $$3600$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.278$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h4"
+        ],
+        "title": "$$\\frac{m}{h}$$ to $$\\frac{m}{s}$$",
+        "text": "How many $$\\frac{m}{s}$$ is $$1000$$ $$\\frac{m}{h}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h5"
+        ],
+        "title": "Conversion",
+        "text": "This means $$\\frac{1km}{h}$$ $$=$$ $$0.278$$ $$\\frac{m}{s}$$. Now, we need to find what $$\\frac{100km}{h}$$ would be.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.8$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy1a-h6"
+        ],
+        "title": "Conversion",
+        "text": "What is $$0.278$$ * 100?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

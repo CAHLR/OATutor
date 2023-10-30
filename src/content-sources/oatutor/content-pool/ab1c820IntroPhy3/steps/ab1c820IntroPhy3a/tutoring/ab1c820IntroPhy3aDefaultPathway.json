@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ab1c820IntroPhy3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recall the unit-to-unit conversion from years to seconds.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab1c820IntroPhy3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$31536000$$"
+        ],
+        "dependencies": [
+            "ab1c820IntroPhy3a-h1"
+        ],
+        "title": "$$\\frac{Seconds}{Years}$$",
+        "text": "How many seconds are in a year?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab1c820IntroPhy3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.17$$ * $${10}^{-8}$$"
+        ],
+        "dependencies": [
+            "ab1c820IntroPhy3a-h2"
+        ],
+        "title": "$$\\frac{Years}{Seconds}$$",
+        "text": "How many years are in a second? (rounded to $$10$$ decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab1c820IntroPhy3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.04$$"
+        ],
+        "dependencies": [
+            "ab1c820IntroPhy3a-h3"
+        ],
+        "title": "Centimeters to Meters",
+        "text": "Convert $$4$$ cm to meters (rounded to $$10$$ decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab1c820IntroPhy3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab1c820IntroPhy3a-h4"
+        ],
+        "title": "Combining",
+        "text": "Using the conversions we established, let's convert $$4$$ $$\\frac{cm}{year}$$ to $$\\frac{m}{s}$$? (rounded to $$11$$ decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab1c820IntroPhy3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab1c820IntroPhy3a-h5"
+        ],
+        "title": "There are $$0.0000000317$$ years in $$1$$ second. Based on this, $$0.04$$ $$\\frac{m}{year}$$ $$=$$ $$0.04$$ * $$0.0000000317$$ $$\\frac{m}{s}$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

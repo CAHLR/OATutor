@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a406914IntroPhy2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Since we are going from $$\\frac{m}{s}$$ to $$\\frac{km}{h}$$, let's convert $$1$$ $$\\frac{m}{s}$$ to $$\\frac{km}{h}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a406914IntroPhy2a-h1"
+        ],
+        "title": "$$\\frac{m}{s}$$ to $$\\frac{km}{s}$$",
+        "text": "First, let's go from $$1$$ $$\\frac{m}{s}$$ to $$\\frac{km}{s}$$. Remember that $$1$$ $$m$$ $$=$$ $$0.001$$ km.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.001$$"
+        ],
+        "dependencies": [
+            "a406914IntroPhy2a-h2"
+        ],
+        "title": "$$\\frac{m}{s}$$ to $$\\frac{km}{s}$$",
+        "text": "How many $$\\frac{km}{s}$$ is $$1$$ $$\\frac{m}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a406914IntroPhy2a-h3"
+        ],
+        "title": "$$\\frac{km}{s}$$ to $$\\frac{km}{h}$$",
+        "text": "We are at $$0.001$$ $$\\frac{km}{s}$$. Now, let's convert this to $$\\frac{km}{h}$$. To go from seconds to hours, we should multiply by $$3600$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.6$$"
+        ],
+        "dependencies": [
+            "a406914IntroPhy2a-h4"
+        ],
+        "title": "$$\\frac{km}{s}$$ to $$\\frac{km}{h}$$",
+        "text": "How many $$\\frac{km}{h}$$ is $$0.001$$ $$\\frac{km}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a406914IntroPhy2a-h5"
+        ],
+        "title": "Conversion",
+        "text": "This means $$\\frac{1m}{s}$$ $$=$$ $$3.6$$ $$\\frac{km}{h}$$. Now, we need to find what $$\\frac{33m}{s}$$ would be.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a406914IntroPhy2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$118.8$$"
+        ],
+        "dependencies": [
+            "a406914IntroPhy2a-h6"
+        ],
+        "title": "Conversion",
+        "text": "What is $$3.6$$ * 33?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

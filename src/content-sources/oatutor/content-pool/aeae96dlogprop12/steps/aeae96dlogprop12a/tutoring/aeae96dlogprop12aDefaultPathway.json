@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aeae96dlogprop12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Quotient Rule for Logarithms",
+        "text": "Using the quotient rule, log((x**2*y**3)/z**4))=log(x**2*y**3)-log(z**4)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogprop12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogprop12a-h1"
+        ],
+        "title": "Using the Product Rule for Logarithms",
+        "text": "Using the product rule, $$\\ln(x^2 y^3)-\\ln(z^4)=\\ln(x^2)+\\ln(y^3)-\\ln(z^4)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogprop12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogprop12a-h2"
+        ],
+        "title": "Using the Power Rule",
+        "text": "Using the power rule, $$\\ln(x^2)+\\ln(y^3)-\\ln(z^4)=2\\ln(x)+3\\ln(y)-4\\ln(z)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

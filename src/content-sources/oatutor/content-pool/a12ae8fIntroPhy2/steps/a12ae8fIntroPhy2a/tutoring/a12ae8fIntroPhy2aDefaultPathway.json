@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a12ae8fIntroPhy2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Recall the unit conversion from yard to feet and then feet to meters.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy2a-h1"
+        ],
+        "title": "Yards to Feet",
+        "text": "How many feet are in $$1$$ yard?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.281$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy2a-h2"
+        ],
+        "title": "Meters to Feet",
+        "text": "How many feet are in $$1$$ meter?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.304$$"
+        ],
+        "dependencies": [
+            "a12ae8fIntroPhy2a-h3"
+        ],
+        "title": "Feet to Meters",
+        "text": "How many meters are in $$1$$ foot?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a12ae8fIntroPhy2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a12ae8fIntroPhy2a-h4"
+        ],
+        "title": "We have $$100$$ yards of length. Based on our conversions, convert that to feet first and then to meters.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
