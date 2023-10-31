@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Expanding the Inequality",
-        "text": "For some numbers a and b\\geq0 where $$|a|<b$$, this is the same as $$a<b$$ AND $$a>-b$$",
+        "text": "For some numbers a and $$b$$ \\geq $$0$$ $$where$$ $$|a|<b$$, $$this$$ $$is$$ $$the$$ $$same$$ $$as$$ $$a<b$$ $$AND$$ $$a>-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -129,8 +129,8 @@
     {
         "id": "a2a5cd1alginequalabs100b-h10",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$-13$$"
         ],
@@ -141,13 +141,18 @@
         "text": "What is the lower bound of the inequality $$x<-1$$ and $$x>-13$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-\\infty$$",
+            "$$-1$$",
+            "$$-13$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100b-h11",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$-1$$"
         ],
@@ -158,7 +163,12 @@
         "text": "What is the upper bound of the inequality $$x<-1$$ and $$x>-13$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\infty$$",
+            "$$-1$$",
+            "$$-13$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100b-h12",

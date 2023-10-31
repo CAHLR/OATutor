@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Expanding the Inequality",
-        "text": "For some numbers a and b\\geq0 where $$|a|>b$$, this is the same as $$a>b$$ OR $$a<-b$$",
+        "text": "For some numbers a and $$b$$ \\geq $$0$$ $$where$$ $$|a|>b$$, $$this$$ $$is$$ $$the$$ $$same$$ $$as$$ $$a>b$$ $$OR$$ $$a<-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -152,8 +152,8 @@
     {
         "id": "a2a5cd1alginequalabs11b-h12",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$8$$"
         ],
@@ -164,13 +164,17 @@
         "text": "What is the lower bound of the inequality $$x>8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-\\infty$$",
+            "$$8$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h13",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\infty$$"
         ],
@@ -181,7 +185,11 @@
         "text": "What is the upper bound of the inequality $$x>8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\infty$$",
+            "$$8$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h14",
@@ -191,7 +199,7 @@
             "a2a5cd1alginequalabs11b-h13"
         ],
         "title": "Interval Notation: Part A",
-        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\\[ or \\]) should be used. Otherwise, use a paranthesis (\\( or \\)).",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -266,8 +274,8 @@
     {
         "id": "a2a5cd1alginequalabs11b-h18",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$-\\infty$$"
         ],
@@ -278,13 +286,17 @@
         "text": "What is the lower bound of the inequality $$x<8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-\\infty$$",
+            "$$8$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h19",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$8$$"
         ],
@@ -295,7 +307,11 @@
         "text": "What is the upper bound of the inequality $$x<8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\infty$$",
+            "$$8$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h20",
@@ -305,7 +321,7 @@
             "a2a5cd1alginequalabs11b-h19"
         ],
         "title": "Interval Notation: Part B",
-        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\\[ or \\]) should be used. Otherwise, use a paranthesis (\\( or \\)).",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -393,7 +409,7 @@
             "a2a5cd1alginequalabs11b-h23"
         ],
         "title": "Interval Notation",
-        "text": "The bounds for the two equations, $$(-\\infty,8)$$ and $$(8,\\infty)$$, can be ORed together using '\\cup'.",
+        "text": "The bounds for the two equations, $$(-\\infty,8)$$ and $$(8,\\infty)$$, can be ORed together using $$'$$ \\cup $$'$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

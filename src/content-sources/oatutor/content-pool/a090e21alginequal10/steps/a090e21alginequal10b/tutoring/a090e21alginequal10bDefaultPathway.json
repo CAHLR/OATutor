@@ -230,8 +230,8 @@
     {
         "id": "a090e21alginequal10b-h18",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{9}{2}$$"
         ],
@@ -242,13 +242,18 @@
         "text": "What is the lower bound of the inequality $$x<\\frac{16}{3}$$, with the additional constraints $$x>\\frac{9}{2}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-\\infty$$",
+            "$$\\frac{9}{2}$$",
+            "$$\\frac{16}{3}$$"
+        ]
     },
     {
         "id": "a090e21alginequal10b-h19",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{16}{3}$$"
         ],
@@ -259,7 +264,12 @@
         "text": "What is the upper bound of the inequality $$x<\\frac{16}{3}$$, with the additional constraints $$x>\\frac{9}{2}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\infty$$",
+            "$$\\frac{9}{2}$$",
+            "$$\\frac{16}{3}$$"
+        ]
     },
     {
         "id": "a090e21alginequal10b-h20",
@@ -269,7 +279,7 @@
             "a090e21alginequal10b-h19"
         ],
         "title": "Interval Notation",
-        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\\[ or \\]) should be used. Otherwise, use a paranthesis (\\( or \\)).",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

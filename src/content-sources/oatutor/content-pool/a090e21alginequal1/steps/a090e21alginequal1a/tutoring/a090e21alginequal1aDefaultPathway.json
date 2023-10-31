@@ -100,8 +100,8 @@
     {
         "id": "a090e21alginequal1a-h8",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$6$$"
         ],
@@ -112,13 +112,17 @@
         "text": "What is the lower bound of the inequality $$6<x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6$$",
+            "$$-\\infty$$"
+        ]
     },
     {
         "id": "a090e21alginequal1a-h9",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\infty$$"
         ],
@@ -129,7 +133,11 @@
         "text": "What is the upper bound of the inequality $$6<x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6$$",
+            "$$\\infty$$"
+        ]
     },
     {
         "id": "a090e21alginequal1a-h10",
@@ -139,7 +147,7 @@
             "a090e21alginequal1a-h9"
         ],
         "title": "Interval Notation",
-        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\\[ or \\]) should be used. Otherwise, use a paranthesis (\\( or \\)).",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

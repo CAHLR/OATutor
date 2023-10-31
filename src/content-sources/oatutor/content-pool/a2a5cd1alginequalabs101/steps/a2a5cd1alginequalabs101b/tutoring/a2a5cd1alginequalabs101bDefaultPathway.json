@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Expanding $$|3+x|<6$$",
-        "text": "For some numbers a and b\\geq0 where $$|a|<b$$, this is the same as $$a<b$$ AND $$a>-b$$",
+        "text": "For some numbers a and $$b$$ \\geq $$0$$ $$where$$ $$|a|<b$$, $$this$$ $$is$$ $$the$$ $$same$$ $$as$$ $$a<b$$ $$AND$$ $$a>-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -174,8 +174,8 @@
     {
         "id": "a2a5cd1alginequalabs101b-h13",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$-9$$"
         ],
@@ -186,13 +186,19 @@
         "text": "What is the lower bound of $$2<x<8$$ OR $$-9<x<3$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-\\infty$$",
+            "$$-9$$",
+            "$$2$$",
+            "$$3$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101b-h14",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$8$$"
         ],
@@ -203,7 +209,13 @@
         "text": "What is the upper bound of $$2<x<8$$ OR $$-9<x<3$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\infty$$",
+            "$$8$$",
+            "$$2$$",
+            "$$3$$"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101b-h15",
@@ -213,7 +225,7 @@
             "a2a5cd1alginequalabs101b-h14"
         ],
         "title": "Interval Notation",
-        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\\[ or \\]) should be used. Otherwise, use a paranthesis (\\( or \\)).",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
