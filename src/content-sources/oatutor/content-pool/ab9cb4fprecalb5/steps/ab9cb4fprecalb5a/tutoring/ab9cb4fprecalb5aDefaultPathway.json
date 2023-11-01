@@ -1,0 +1,66 @@
+[
+    {
+        "id": "ab9cb4fprecalb5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Absolute value",
+        "text": "Note that for all $$y$$, $$|y| \\geq 0$$ always.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalb5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0>-2$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalb5a-h1"
+        ],
+        "title": "Absolute value",
+        "text": "Which one is correct? $$0>-2$$ or $$0<-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$0>-2$$",
+            "$$0<-2$$"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalb5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalb5a-h2"
+        ],
+        "title": "Absolute value",
+        "text": "Since $$0>-2$$, it is impossible for $$|y|=-2$$ where $$y$$ can be any values.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalb5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalb5a-h3"
+        ],
+        "title": "Absolute value",
+        "text": "Thus, does such an $$x$$ value exist in solving the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

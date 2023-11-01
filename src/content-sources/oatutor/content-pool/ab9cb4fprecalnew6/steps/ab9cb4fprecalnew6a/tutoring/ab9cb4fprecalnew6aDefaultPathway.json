@@ -1,0 +1,230 @@
+[
+    {
+        "id": "ab9cb4fprecalnew6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "Note that the denominator cannot be $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h1"
+        ],
+        "title": "Can't divide by $$0$$",
+        "text": "What value $$x$$ cannot equal if $$x+2 \\neq 0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h2"
+        ],
+        "title": "Property",
+        "text": "Note that $$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h3"
+        ],
+        "title": "Property",
+        "text": "Is $$|\\frac{4}{x+2}|$$ equaled to $$\\frac{|4|}{|x+2|}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h4"
+        ],
+        "title": "Absolute value",
+        "text": "What is the value of $$|4|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h5"
+        ],
+        "title": "Absolute value",
+        "text": "For $$x \\neq -2$$, we have $$\\frac{4}{|x+2|}<3$$, which means $$3|x+2|>4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h6"
+        ],
+        "title": "Absolute value",
+        "text": "Here, we use the fact that for $$b>0$$, $$a<c$$, we can imply $$b a<b c$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h7"
+        ],
+        "title": "Simplification",
+        "text": "$$3|x+2|>4$$, so we have $$|x+2|>\\frac{4}{3}$$ if we divide both side by $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+2>\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h8"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+2 \\geq 0$$, what is $$|x+2|>\\frac{4}{3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x+2>\\frac{4}{3}$$",
+            "$$x+2>\\frac{-4}{3}$$",
+            "$$x+2<\\frac{-4}{3}$$",
+            "$$x+2<\\frac{4}{3}$$"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+2<\\frac{-4}{3}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h9"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+2<0$$, what is $$|x+2|>\\frac{4}{3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x+2>\\frac{4}{3}$$",
+            "$$x+2>\\frac{-4}{3}$$",
+            "$$x+2<\\frac{-4}{3}$$",
+            "$$x+2<\\frac{4}{3}$$"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-2}{3}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h10"
+        ],
+        "title": "Simplification",
+        "text": "$$x+2>\\frac{4}{3}$$, x>?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-10}{3}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h11"
+        ],
+        "title": "Simplification",
+        "text": "x+2<-4/3,x<?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew6a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[(-inf,-10/3)|(-2/3,inf)]"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew6a-h12"
+        ],
+        "title": "Interval Notation",
+        "text": "Write $$x>\\frac{-2}{3}$$ or $$x<\\frac{-10}{3}$$ in interval notation. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "[(-inf,-10/3)",
+            "(-2/3,inf)]",
+            "[(-inf,-10/3)",
+            "(2/3,inf)]"
+        ],
+        "subHints": [
+            {
+                "id": "ab9cb4fprecalnew6a-h13-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Interval Notation",
+                "text": "Remember that $$x \\neq -2$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]

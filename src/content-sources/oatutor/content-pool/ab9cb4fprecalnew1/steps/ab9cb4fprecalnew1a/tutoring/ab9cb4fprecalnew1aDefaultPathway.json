@@ -1,0 +1,165 @@
+[
+    {
+        "id": "ab9cb4fprecalnew1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The property of the absolute value",
+        "text": "$$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{|-6|}{|3-x|}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h1"
+        ],
+        "title": "The property of the absolute value",
+        "text": "How to change $$|\\frac{-6}{3-x}|$$ using the given property?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{|-6|}{|3-x|}$$",
+            "$$\\frac{|-6|}{3-x}$$"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is $$|-6|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Solve the equation $$\\frac{6}{|3-x|}=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Note that $$\\frac{a}{b}=c$$ equals to $$b=\\frac{a}{c}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$|3-x|=\\frac{6}{6}$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified equation using the given hint?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$|3-x|=\\frac{6}{6}$$",
+            "$$|3-x|=\\frac{-6}{6}$$"
+        ]
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h6"
+        ],
+        "title": "Simplify",
+        "text": "Note that $$|3-x|=|x-3|$$ due to the absolute's property. $$\\frac{6}{6}=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h7"
+        ],
+        "title": "Simplify",
+        "text": "$$|x-3|=1$$ can be simplified to $$x-3=\\pm 1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h8"
+        ],
+        "title": "Simplify",
+        "text": "Solve $$x$$ for $$x-3=\\pm 1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h9"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value when $$x-3=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ab9cb4fprecalnew1a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ab9cb4fprecalnew1a-h10"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value when $$x-3=-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]
