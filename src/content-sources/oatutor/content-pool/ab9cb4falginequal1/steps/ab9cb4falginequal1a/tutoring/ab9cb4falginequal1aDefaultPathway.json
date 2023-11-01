@@ -1,0 +1,209 @@
+[
+    {
+        "id": "ab9cb4falginequal1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying the Inequality",
+        "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4falginequal1a-h1"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "Subtract $$2x$$ from the left and add $$7$$ from the right to get $$5+7<4x-2x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h2"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "What is $$4x-2x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h2"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "What is $$5+7$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4falginequal1a-h3",
+            "ab9cb4falginequal1a-h4"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "Divide $$2$$ from both sides of $$12<2x$$ to isolate 'x'.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h5"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "What is $$\\frac{12}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4falginequal1a-h6"
+        ],
+        "title": "Interval Notation",
+        "text": "The inequality $$6<x$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h7"
+        ],
+        "title": "Interval Notation",
+        "text": "What is the lower bound of the inequality $$6<x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6$$",
+            "$$-\\infty$$"
+        ]
+    },
+    {
+        "id": "ab9cb4falginequal1a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\infty$$"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h7"
+        ],
+        "title": "Interval Notation",
+        "text": "What is the upper bound of the inequality $$6<x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6$$",
+            "$$\\infty$$"
+        ]
+    },
+    {
+        "id": "ab9cb4falginequal1a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ab9cb4falginequal1a-h8",
+            "ab9cb4falginequal1a-h9"
+        ],
+        "title": "Interval Notation",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab9cb4falginequal1a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h10"
+        ],
+        "title": "Interval Notation",
+        "text": "Is the lower bound $$6$$ included as a valid value of 'x' in $$6<x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ab9cb4falginequal1a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ab9cb4falginequal1a-h10"
+        ],
+        "title": "Interval Notation",
+        "text": "Is the upper bound $$\\infty$$ included as a valid value of 'x' in $$6<x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "ab9cb4falginequal1a-h12-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Infinity in Interval Notation",
+                "text": "As $$\\infty$$ is not a number, it cannot be included as part of a valid value or bound for 'x'.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]
