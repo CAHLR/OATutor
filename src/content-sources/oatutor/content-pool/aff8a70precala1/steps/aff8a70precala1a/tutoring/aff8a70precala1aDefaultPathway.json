@@ -1,0 +1,165 @@
+[
+    {
+        "id": "aff8a70precala1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The property of the absolute value",
+        "text": "$$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{|-3|}{|2-x|}$$"
+        ],
+        "dependencies": [
+            "aff8a70precala1a-h1"
+        ],
+        "title": "The property of the absolute value",
+        "text": "How to change $$|\\frac{-3}{2-x}|$$ using the given property?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{|-3|}{|2-x|}$$",
+            "$$\\frac{|-3|}{2-x}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precala1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aff8a70precala1a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is $$|-3|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala1a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Solve the equation $$\\frac{3}{|2-x|}=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala1a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Note that $$\\frac{a}{b}=c$$ equals to $$b=\\frac{a}{c}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$|2-x|=\\frac{3}{6}$$"
+        ],
+        "dependencies": [
+            "aff8a70precala1a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified equation using the given hint?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$|2-x|=\\frac{3}{6}$$",
+            "$$|2-x|=\\frac{6}{3}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precala1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala1a-h6"
+        ],
+        "title": "Simplify",
+        "text": "Note that $$|2-x|=|x-2|$$, $$\\frac{3}{6}=\\frac{1}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala1a-h7"
+        ],
+        "title": "Simplify",
+        "text": "$$|x-2|=\\frac{1}{2}$$ can be simplified to $$x-2=\\frac{\\pm 1}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala1a-h8"
+        ],
+        "title": "Simplify",
+        "text": "Solve $$x$$ for $$x-2=\\frac{\\pm 1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precala1a-h9"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value when $$x-2=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precala1a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precala1a-h10"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value when $$x-2=\\frac{-1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

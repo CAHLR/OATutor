@@ -1,0 +1,228 @@
+[
+    {
+        "id": "aff8a70precal6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "Note that the denominator cannot be $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h1"
+        ],
+        "title": "Can't divide by $$0$$",
+        "text": "What value $$x$$ cannot equal if $$x+1 \\neq 0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal6a-h2"
+        ],
+        "title": "Property",
+        "text": "Note that $$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h3"
+        ],
+        "title": "Property",
+        "text": "Is $$|\\frac{3}{x+1}|$$ equaled to $$\\frac{|3|}{|x+1|}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aff8a70precal6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h4"
+        ],
+        "title": "Absolute value",
+        "text": "What is the value of $$|3|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal6a-h5"
+        ],
+        "title": "Absolute value",
+        "text": "For $$x \\neq -1$$, $$\\frac{3}{|x+1|}<2$$, which means $$2|x+1|>3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal6a-h6"
+        ],
+        "title": "Absolute value",
+        "text": "Here, we use the fact that for $$b>0$$, $$a<c$$, we can imply $$b a<b c$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal6a-h7"
+        ],
+        "title": "Simplification",
+        "text": "$$2|x+1|>3$$, so we have $$|x+1|>\\frac{3}{2}$$ if we divide both side by $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+1>\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h8"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+1 \\geq 0$$, what is $$|x+1|>\\frac{3}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x+1>\\frac{3}{2}$$",
+            "$$x+1>\\frac{-3}{2}$$",
+            "$$x+1<\\frac{-3}{2}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precal6a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+1<\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h9"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+1<0$$, what is $$|x+1|>\\frac{3}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x+1>\\frac{3}{2}$$",
+            "$$x+1>\\frac{-3}{2}$$",
+            "$$x+1<\\frac{-3}{2}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precal6a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h10"
+        ],
+        "title": "Simplification",
+        "text": "$$x+1>\\frac{3}{2}$$, x>?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-5}{2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h11"
+        ],
+        "title": "Simplification",
+        "text": "x+1<-3/2,x<?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal6a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[(-inf,-5/2)|(1/2,inf)]"
+        ],
+        "dependencies": [
+            "aff8a70precal6a-h12"
+        ],
+        "title": "Interval Notation",
+        "text": "Write $$x>\\frac{1}{2}$$ or $$x<\\frac{-5}{2}$$ in interval notation. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "[(-inf,-5/2)",
+            "(1/2,inf)]",
+            "[(-inf,-5/2)",
+            "(-1/2,inf)]"
+        ],
+        "subHints": [
+            {
+                "id": "aff8a70precal6a-h13-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Interval Notation",
+                "text": "Remember that $$x \\neq -1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]

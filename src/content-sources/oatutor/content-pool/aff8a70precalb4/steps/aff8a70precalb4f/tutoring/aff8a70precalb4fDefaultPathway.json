@@ -1,0 +1,150 @@
+[
+    {
+        "id": "aff8a70precalb4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "Note that the denominator cannot be $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalb4f-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h1"
+        ],
+        "title": "Can't divide by $$0$$",
+        "text": "What value $$x$$ cannot equal if $$x+2 \\neq 0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalb4f-h3",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precalb4f-h2"
+        ],
+        "title": "Property",
+        "text": "Note we can use the property that $$|a b|=|a| |b|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalb4f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h3"
+        ],
+        "title": "Property",
+        "text": "Can we simplify $$\\frac{|3x+6|}{x+2}$$ to $$\\frac{3|x+2|}{x+2}$$ ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aff8a70precalb4f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3\\left(x+2\\right)}{x+2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h4"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+2>0$$, what should $$\\frac{3|x+2|}{x+2}$$ be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{3\\left(x+2\\right)}{x+2}$$",
+            "$$\\frac{\\left(-3\\right) \\left(x+2\\right)}{x+2}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precalb4f-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-3\\right) \\left(x+2\\right)}{x+2}$$"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h5"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x+2<0$$, what should $$\\frac{3|x+2|}{x+2}$$ be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{3\\left(x+2\\right)}{x+2}$$",
+            "$$\\frac{\\left(-3\\right) \\left(x+2\\right)}{x+2}$$"
+        ]
+    },
+    {
+        "id": "aff8a70precalb4f-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h6"
+        ],
+        "title": "Simplify",
+        "text": "What is $$\\frac{3\\left(x+2\\right)}{x+2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalb4f-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "aff8a70precalb4f-h7"
+        ],
+        "title": "Simplify",
+        "text": "What is $$\\frac{\\left(-3\\right) \\left(x+2\\right)}{x+2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalb4f-h9",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precalb4f-h8"
+        ],
+        "title": "Answer",
+        "text": "$$3$$ if $$x>-2$$ $$-3$$ if $$x<-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

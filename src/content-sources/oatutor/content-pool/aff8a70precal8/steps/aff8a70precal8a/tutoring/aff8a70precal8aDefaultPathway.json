@@ -1,0 +1,287 @@
+[
+    {
+        "id": "aff8a70precal8a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "LHS simplification",
+        "text": "Is $$|\\frac{{\\left(x+2\\right)}^3}{2}|$$ equivalent to $$\\frac{|{\\left(x+2\\right)}^3|}{|2|}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "aff8a70precal8a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "LHS simplification",
+                "text": "Use the property $$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$ to simplify.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aff8a70precal8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aff8a70precal8a-h1"
+        ],
+        "title": "LHS simplification",
+        "text": "Is $$\\frac{|{\\left(x+2\\right)}^3|}{|2|}$$ equivalent to $$\\frac{{|x+2|}^3}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "aff8a70precal8a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "LHS simplification",
+                "text": "Use the property $$|a b|=|a| |b|$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aff8a70precal8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h2"
+        ],
+        "title": "RHS simplification",
+        "text": "$$|2x+4|=2|x+2|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h3"
+        ],
+        "title": "RHS simplification",
+        "text": "Use the property $$|a b|=|a| |b|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h4"
+        ],
+        "title": "Special Case",
+        "text": "Note that $$x=-2$$ gives $$LHS=0$$ and $$RHS=0$$, so $$x \\neq -2$$, which is equivalent to $$x+2 \\neq 0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aff8a70precal8a-h5"
+        ],
+        "title": "Special Case",
+        "text": "Is $$x+2 \\neq 0$$ equivalent to $$|x+2|>0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "aff8a70precal8a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Special Case",
+                "text": "$$|a|=0$$ is equivalent to $$a=0$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aff8a70precal8a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h6"
+        ],
+        "title": "Simplification",
+        "text": "For $$x \\neq 2$$, we now have $$\\frac{{|x+2|}^3}{2}>2|x+2|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h7"
+        ],
+        "title": "Simplification",
+        "text": "Multiply by $$2$$ on both sides, so we get $${|x+2|}^3>4|x+2|$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h8"
+        ],
+        "title": "Simplification",
+        "text": "$${|x+2|}^3>4|x+2|$$ is equivalent to $${|x+2|}^2>4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h10",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h9"
+        ],
+        "title": "Simplification",
+        "text": "For $$b>0$$, $$a b>c b$$ is equivalent to $$a>c$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h10"
+        ],
+        "title": "Simplification",
+        "text": "$${|x+2|}^2>4$$ is equivalent to $$|x+2|>2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h12",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h11"
+        ],
+        "title": "Simplification",
+        "text": "For a,b>0, $$a>b$$ is equivalent to $$\\sqrt{a}>\\sqrt{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h13",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h12"
+        ],
+        "title": "Simplification",
+        "text": "$$|x+2|>2$$ is equivalent to $$x+2>2$$ or $$x+2<-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aff8a70precal8a-h13"
+        ],
+        "title": "Simplification",
+        "text": "$$x+2>2$$, x>?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "aff8a70precal8a-h14"
+        ],
+        "title": "Simplification",
+        "text": "x+2<-2,x<?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h16",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precal8a-h15"
+        ],
+        "title": "Interval Notation",
+        "text": "Write $$x>0$$ or $$x<4$$ in interval notation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precal8a-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[(-inf,-4)|(0,inf)]"
+        ],
+        "dependencies": [
+            "aff8a70precal8a-h16"
+        ],
+        "title": "Interval Notation",
+        "text": "What is the answer in interval notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "[(-inf,-4)",
+            "(0,inf)]",
+            "$$(-4,0)$$"
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "aff8a70precalnew4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two cases",
+        "text": "$$\\left(2x^5+2\\right) x$$ if $$x \\geq 0;$$ $$\\left(2x^5+2\\right) \\left(-x\\right)$$ if $$x<0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aff8a70precalnew4d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^6+2x$$"
+        ],
+        "dependencies": [
+            "aff8a70precalnew4d-h1"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$\\left(2x^5+2\\right) x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^6+2x$$",
+            "$$-2x^6-2x$$"
+        ]
+    },
+    {
+        "id": "aff8a70precalnew4d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2x^6-2x$$"
+        ],
+        "dependencies": [
+            "aff8a70precalnew4d-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$\\left(2x^5+2\\right) \\left(-x\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^6+2x$$",
+            "$$-2x^6-2x$$"
+        ]
+    }
+]
