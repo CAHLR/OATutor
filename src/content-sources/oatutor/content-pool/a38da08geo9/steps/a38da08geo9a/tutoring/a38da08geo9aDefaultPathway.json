@@ -1,0 +1,174 @@
+[
+    {
+        "id": "a38da08geo9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "From the plot",
+        "text": "Note that triangle1 is similar to triangle2 by AAA",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo9a-h1"
+        ],
+        "title": "From the plot",
+        "text": "Ratio of lengths of similar shapes are equal, so $$\\frac{b}{4-b}=\\frac{3-a}{a}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo9a-h2"
+        ],
+        "title": "Simplification",
+        "text": "$$\\frac{b}{4-b}=\\frac{3-a}{a}$$ is equivalent to $$a=\\frac{3}{4} \\left(4-b\\right)$$ by simplification.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo9a-h3"
+        ],
+        "title": "Area of rectangle",
+        "text": "The area of rectangle is $$a b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3b-\\frac{3}{4} b^2$$"
+        ],
+        "dependencies": [
+            "a38da08geo9a-h4"
+        ],
+        "title": "Area of rectangle",
+        "text": "Substitute $$a=\\frac{3}{4} \\left(4-b\\right)$$ into $$a b$$, what is the area expressed in the form of $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3b-\\frac{3}{4} b^2$$",
+            "$$\\frac{3}{4} b-\\frac{3}{4} b^2$$"
+        ]
+    },
+    {
+        "id": "a38da08geo9a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a38da08geo9a-h5"
+        ],
+        "title": "Range of a, $$b$$",
+        "text": "Can a, $$b$$ be negative?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo9a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Range of a, $$b$$",
+                "text": "The length of a and $$b$$ should be nonnegative, so $$a \\geq 0$$ and $$b \\geq 0$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo9a-h6"
+        ],
+        "title": "Simplification",
+        "text": "$$a \\geq 0$$ implies $$\\frac{3}{4} \\left(4-b\\right) \\geq 0$$. Simplify this inequality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo9a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b \\leq 4$$"
+        ],
+        "dependencies": [
+            "a38da08geo9a-h7"
+        ],
+        "title": "Simplification",
+        "text": "What is the result of the simplification?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$b \\leq 4$$",
+            "$$b \\leq -4$$",
+            "$$b \\geq 4$$",
+            "$$b>-4$$",
+            "$$b<4$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo9a-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplification",
+                "text": "$$\\frac{3}{4} \\left(4-b\\right) \\geq 0$$. $$(4-b) \\geq 0$$. So $$b \\leq 4$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo9a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[0,4]"
+        ],
+        "dependencies": [
+            "a38da08geo9a-h8"
+        ],
+        "title": "Values of $$b$$",
+        "text": "What values of $$b$$ are applicable to the problem? (note $$b \\geq 0)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "[0,4]",
+            "[0,4)",
+            "(0,4]",
+            "$$(0,4)$$",
+            "R"
+        ]
+    }
+]
