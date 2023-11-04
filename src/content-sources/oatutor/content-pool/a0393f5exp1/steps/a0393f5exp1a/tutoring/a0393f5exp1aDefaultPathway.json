@@ -1,0 +1,135 @@
+[
+    {
+        "id": "a0393f5exp1a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "1&2"
+        ],
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "$$x$$ cannot equal to which values in this case?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "1&2",
+            "$$-1&2$$",
+            "$$-1&-2$$",
+            "$$1&-2$$"
+        ]
+    },
+    {
+        "id": "a0393f5exp1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0393f5exp1a-h1"
+        ],
+        "title": "RHS",
+        "text": "Using the property $$\\frac{a}{b}=\\frac{a c}{b c}$$, RHS can equal to $$\\frac{\\left(x-2\\right) x^2}{{\\left(x-2\\right)}^2}-\\frac{x+1}{{\\left(x-2\\right)}^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0393f5exp1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0393f5exp1a-h2"
+        ],
+        "title": "RHS",
+        "text": "Using the Distributive Law, $$x^2 \\left(x-2\\right)=x^3-2x^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0393f5exp1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2}$$"
+        ],
+        "dependencies": [
+            "a0393f5exp1a-h3"
+        ],
+        "title": "RHS",
+        "text": "Note $$\\frac{a}{b}-\\frac{c}{b}=\\frac{a-c}{b}$$. Which option is the correct simplification of $$x^3-\\frac{2x^2}{{\\left(x-2\\right)}^2}-\\frac{x+1}{{\\left(x-2\\right)}^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2}$$",
+            "$$\\frac{x^3-2x^2-x+1}{{\\left(x-2\\right)}^2}$$"
+        ]
+    },
+    {
+        "id": "a0393f5exp1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0393f5exp1a-h4"
+        ],
+        "title": "$$LHS=RHS$$",
+        "text": "$$\\frac{P\\left(x\\right)}{Q\\left(x\\right)} \\frac{3}{x-1}=\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2}$$ since $$LHS=RHS$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0393f5exp1a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2} \\left(x-1\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "a0393f5exp1a-h5"
+        ],
+        "title": "$$LHS=RHS$$",
+        "text": "What does $$\\frac{P\\left(x\\right)}{Q\\left(x\\right)}$$ equal to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2} \\left(x-1\\right)}{3}$$",
+            "$$\\frac{3\\frac{x^3-2x^2-x-1}{{\\left(x-2\\right)}^2}}{x-1}$$"
+        ]
+    },
+    {
+        "id": "a0393f5exp1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(x^3-2x^2-x-1\\right) \\left(x-1\\right)}{3{\\left(x-2\\right)}^2}$$"
+        ],
+        "dependencies": [
+            "a0393f5exp1a-h6"
+        ],
+        "title": "Simplification",
+        "text": "Using $$\\frac{a}{b} \\frac{c}{d}=\\frac{a c}{b d}$$, what value can $$\\frac{P\\left(x\\right)}{Q\\left(x\\right)}$$ be simplified?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\left(x^3-2x^2-x-1\\right) \\left(x-1\\right)}{3{\\left(x-2\\right)}^2}$$",
+            "$$\\frac{x^3-2x^2-x-1}{3{\\left(x-2\\right)}^2 \\left(x-1\\right)}$$",
+            "$$\\frac{\\left(x^3-2x^2-x+1\\right) \\left(x-1\\right)}{3{\\left(x-2\\right)}^2}$$"
+        ]
+    },
+    {
+        "id": "a0393f5exp1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a0393f5exp1a-h7"
+        ],
+        "title": "Conclusion",
+        "text": "So we can choose $$P(x)=\\left(x^3-2x^2-x-1\\right) \\left(x-1\\right)$$ and $$Q(x)=3{\\left(x-2\\right)}^2$$ for $$x \\neq 1$$ or $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

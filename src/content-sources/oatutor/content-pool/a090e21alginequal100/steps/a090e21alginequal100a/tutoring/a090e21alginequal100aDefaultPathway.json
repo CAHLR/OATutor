@@ -96,28 +96,128 @@
         "text": "Simplify $$1+2x>0$$. Only input the number after the $$'>'$$ symbol.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a090e21alginequal100a-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplifying the Inequality: $$1+2x>0$$",
+                "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h8-s2",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h8-s1"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x>0$$",
+                "text": "Subtract $$1$$ from the left to get $$2x>0-1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h8-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-1$$"
+                ],
+                "dependencies": [
+                    "a090e21alginequal100a-h8-s2"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x>0$$",
+                "text": "What is $$0-1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h8-s4",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h8-s3"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x>0$$",
+                "text": "Divide $$2$$ from both sides of $$2x>-1$$ to isolate 'x'.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
     },
     {
         "id": "a090e21alginequal100a-h9",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h8"
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
         ],
-        "title": "Simplifying the Inequality: $$1+2x>0$$",
-        "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+        "dependencies": [
+            "a090e21alginequal100a-h7"
+        ],
+        "title": "Simplifying the Inequality: Part A",
+        "text": "Simplify $$x+3>0$$. Only input the number after the $$'>'$$ symbol.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a090e21alginequal100a-h9-s5",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplifying the Inequality: $$x+3>0$$",
+                "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h9-s6",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h9-s5"
+                ],
+                "title": "Simplifying the Inequality: $$x+3>0$$",
+                "text": "Subtract $$3$$ from the left to get $$x>0-3$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h9-s7",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-3$$"
+                ],
+                "dependencies": [
+                    "a090e21alginequal100a-h9-s6"
+                ],
+                "title": "Simplifying the Inequality: $$x+3>0$$",
+                "text": "What is $$0-3$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
     },
     {
         "id": "a090e21alginequal100a-h10",
         "type": "hint",
         "dependencies": [
+            "a090e21alginequal100a-h8",
             "a090e21alginequal100a-h9"
         ],
-        "title": "Simplifying the Inequality: $$1+2x>0$$",
-        "text": "Subtract $$1$$ from the left to get $$2x>0-1$$",
+        "title": "Simplifying the Inequality: Part B",
+        "text": "Simplify $$1+2x<0$$ AND $$x+3<0$$ by isolating 'x'.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -128,31 +228,72 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-1$$"
+            "$$\\frac{-1}{2}$$"
         ],
         "dependencies": [
             "a090e21alginequal100a-h10"
         ],
-        "title": "Simplifying the Inequality: $$1+2x>0$$",
-        "text": "What is $$0-1$$?",
+        "title": "Simplifying the Inequality: Part B",
+        "text": "Simplify $$1+2x<0$$. Only input the number after the $$'<'$$ symbol.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a090e21alginequal100a-h11-s8",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplifying the Inequality: $$1+2x<0$$",
+                "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h11-s9",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h11-s8"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x<0$$",
+                "text": "Subtract $$1$$ from the left to get $$2x<0-1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h11-s10",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-1$$"
+                ],
+                "dependencies": [
+                    "a090e21alginequal100a-h11-s9"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x<0$$",
+                "text": "What is $$0-1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h11-s11",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h11-s10"
+                ],
+                "title": "Simplifying the Inequality: $$1+2x<0$$",
+                "text": "Divide $$2$$ from both sides of $$2x<-1$$ to isolate 'x'.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
     },
     {
         "id": "a090e21alginequal100a-h12",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h11"
-        ],
-        "title": "Simplifying the Inequality: $$1+2x>0$$",
-        "text": "Divide $$2$$ from both sides of $$2x>-1$$ to isolate 'x'.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h13",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -160,10 +301,64 @@
             "$$-3$$"
         ],
         "dependencies": [
+            "a090e21alginequal100a-h10"
+        ],
+        "title": "Simplifying the Inequality: Part B",
+        "text": "Simplify $$x+3<0$$. Only input the number after the $$'<'$$ symbol.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a090e21alginequal100a-h12-s12",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplifying the Inequality: $$x+3<0$$",
+                "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h12-s13",
+                "type": "hint",
+                "dependencies": [
+                    "a090e21alginequal100a-h12-s12"
+                ],
+                "title": "Simplifying the Inequality: $$x+3<0$$",
+                "text": "Subtract $$3$$ from the left to get $$x<0-3$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a090e21alginequal100a-h12-s14",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-3$$"
+                ],
+                "dependencies": [
+                    "a090e21alginequal100a-h12-s13"
+                ],
+                "title": "Simplifying the Inequality: $$x+3<0$$",
+                "text": "What is $$0-3$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a090e21alginequal100a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a090e21alginequal100a-h11",
             "a090e21alginequal100a-h12"
         ],
-        "title": "Simplifying the Inequality: Part A",
-        "text": "Simplify $$x+3>0$$. Only input the number after the $$'>'$$ symbol.",
+        "title": "Interval Notation",
+        "text": "The inequality has been simplified to (x>-1/2 AND x>-3) OR (x<-1/2 AND x<-3).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -174,8 +369,8 @@
         "dependencies": [
             "a090e21alginequal100a-h13"
         ],
-        "title": "Simplifying the Inequality: $$x+3>0$$",
-        "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
+        "title": "Interval Notation",
+        "text": "Since the two inequalities are separated by an OR statement, they will both appear in the final result. First, simplify the ANDs of the two statements.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -186,199 +381,6 @@
         "dependencies": [
             "a090e21alginequal100a-h14"
         ],
-        "title": "Simplifying the Inequality: $$x+3>0$$",
-        "text": "Subtract $$3$$ from the left to get $$x>0-3$$",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h16",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-3$$"
-        ],
-        "dependencies": [
-            "a090e21alginequal100a-h15"
-        ],
-        "title": "Simplifying the Inequality: $$x+3>0$$",
-        "text": "What is $$0-3$$?",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h17",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h16"
-        ],
-        "title": "Simplifying the Inequality: Part B",
-        "text": "Simplify $$1+2x<0$$ AND $$x+3<0$$ by isolating 'x'.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h18",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\frac{-1}{2}$$"
-        ],
-        "dependencies": [
-            "a090e21alginequal100a-h17"
-        ],
-        "title": "Simplifying the Inequality: Part B",
-        "text": "Simplify $$1+2x<0$$. Only input the number after the $$'<'$$ symbol.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h19",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h18"
-        ],
-        "title": "Simplifying the Inequality: $$1+2x<0$$",
-        "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h20",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h19"
-        ],
-        "title": "Simplifying the Inequality: $$1+2x<0$$",
-        "text": "Subtract $$1$$ from the left to get $$2x<0-1$$",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h21",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-1$$"
-        ],
-        "dependencies": [
-            "a090e21alginequal100a-h20"
-        ],
-        "title": "Simplifying the Inequality: $$1+2x<0$$",
-        "text": "What is $$0-1$$?",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h22",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h21"
-        ],
-        "title": "Simplifying the Inequality: $$1+2x<0$$",
-        "text": "Divide $$2$$ from both sides of $$2x<-1$$ to isolate 'x'.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h23",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-3$$"
-        ],
-        "dependencies": [
-            "a090e21alginequal100a-h22"
-        ],
-        "title": "Simplifying the Inequality: Part B",
-        "text": "Simplify $$x+3<0$$. Only input the number after the $$'<'$$ symbol.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h24",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h23"
-        ],
-        "title": "Simplifying the Inequality: $$x+3<0$$",
-        "text": "Rearrange the inequality so that the 'x's are separated from the constants.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h25",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h24"
-        ],
-        "title": "Simplifying the Inequality: $$x+3<0$$",
-        "text": "Subtract $$3$$ from the left to get $$x<0-3$$",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h26",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-3$$"
-        ],
-        "dependencies": [
-            "a090e21alginequal100a-h25"
-        ],
-        "title": "Simplifying the Inequality: $$x+3<0$$",
-        "text": "What is $$0-3$$?",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h27",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h26"
-        ],
-        "title": "Interval Notation",
-        "text": "The inequality has been simplified to (x>-1/2 AND x>-3) OR (x<-1/2 AND x<-3).",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h28",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h27"
-        ],
-        "title": "Interval Notation",
-        "text": "Since the two inequalities are separated by an OR statement, they will both appear in the final result. First, simplify the ANDs of the two statements.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a090e21alginequal100a-h29",
-        "type": "hint",
-        "dependencies": [
-            "a090e21alginequal100a-h28"
-        ],
         "title": "Interval Notation: Part A",
         "text": "The inequality $$x>\\frac{-1}{2}$$ AND $$x>-3$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "variabilization": {},
@@ -386,7 +388,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
-        "id": "a090e21alginequal100a-h30",
+        "id": "a090e21alginequal100a-h16",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -394,7 +396,7 @@
             "$$\\frac{-1}{2}$$"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h29"
+            "a090e21alginequal100a-h15"
         ],
         "title": "Interval Notation: Part A",
         "text": "What is the lower bound of the inequality $$x>\\frac{-1}{2}$$ AND $$x>-3$$?",
@@ -408,7 +410,7 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h31",
+        "id": "a090e21alginequal100a-h17",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -416,7 +418,7 @@
             "$$\\infty$$"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h29"
+            "a090e21alginequal100a-h15"
         ],
         "title": "Interval Notation: Part A",
         "text": "What is the upper bound of the inequality $$x>\\frac{-1}{2}$$ AND $$x>-3$$?",
@@ -430,11 +432,11 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h32",
+        "id": "a090e21alginequal100a-h18",
         "type": "hint",
         "dependencies": [
-            "a090e21alginequal100a-h30",
-            "a090e21alginequal100a-h31"
+            "a090e21alginequal100a-h16",
+            "a090e21alginequal100a-h17"
         ],
         "title": "Interval Notation: Part A",
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
@@ -443,7 +445,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
-        "id": "a090e21alginequal100a-h33",
+        "id": "a090e21alginequal100a-h19",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -451,7 +453,7 @@
             "No"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h32"
+            "a090e21alginequal100a-h18"
         ],
         "title": "Interval Notation: Part A",
         "text": "Is the lower bound $$\\frac{-1}{2}$$ included as a valid value of 'x' in $$\\frac{-1}{2}<x$$?",
@@ -464,7 +466,7 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h34",
+        "id": "a090e21alginequal100a-h20",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -472,7 +474,7 @@
             "No"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h32"
+            "a090e21alginequal100a-h18"
         ],
         "title": "Interval Notation: Part A",
         "text": "Is the upper bound $$\\infty$$ included as a valid value of 'x' in $$\\frac{-1}{2}<x$$?",
@@ -485,7 +487,7 @@
         ],
         "subHints": [
             {
-                "id": "a090e21alginequal100a-h34-s1",
+                "id": "a090e21alginequal100a-h20-s1",
                 "type": "hint",
                 "dependencies": [],
                 "title": "Interval Notation: Part A",
@@ -497,11 +499,11 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h35",
+        "id": "a090e21alginequal100a-h21",
         "type": "hint",
         "dependencies": [
-            "a090e21alginequal100a-h33",
-            "a090e21alginequal100a-h34"
+            "a090e21alginequal100a-h19",
+            "a090e21alginequal100a-h20"
         ],
         "title": "Interval Notation: Part B",
         "text": "The inequality $$x<\\frac{-1}{2}$$ AND $$x<-3$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
@@ -510,7 +512,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
-        "id": "a090e21alginequal100a-h36",
+        "id": "a090e21alginequal100a-h22",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -518,7 +520,7 @@
             "$$-\\infty$$"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h35"
+            "a090e21alginequal100a-h21"
         ],
         "title": "Interval Notation: Part B",
         "text": "What is the lower bound of the inequality $$x<\\frac{-1}{2}$$ AND $$x<-3$$?",
@@ -532,7 +534,7 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h37",
+        "id": "a090e21alginequal100a-h23",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -540,7 +542,7 @@
             "$$-3$$"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h35"
+            "a090e21alginequal100a-h21"
         ],
         "title": "Interval Notation: Part B",
         "text": "What is the upper bound of the inequality $$x<\\frac{-1}{2}$$ AND $$x<-3$$?",
@@ -554,11 +556,11 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h38",
+        "id": "a090e21alginequal100a-h24",
         "type": "hint",
         "dependencies": [
-            "a090e21alginequal100a-h36",
-            "a090e21alginequal100a-h37"
+            "a090e21alginequal100a-h22",
+            "a090e21alginequal100a-h23"
         ],
         "title": "Interval Notation: Part B",
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
@@ -567,7 +569,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
-        "id": "a090e21alginequal100a-h39",
+        "id": "a090e21alginequal100a-h25",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -575,7 +577,7 @@
             "No"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h38"
+            "a090e21alginequal100a-h24"
         ],
         "title": "Interval Notation: Part B",
         "text": "Is the lower bound $$-\\infty$$ included as a valid value of 'x' in $$x<-3$$?",
@@ -588,7 +590,7 @@
         ],
         "subHints": [
             {
-                "id": "a090e21alginequal100a-h39-s1",
+                "id": "a090e21alginequal100a-h25-s1",
                 "type": "hint",
                 "dependencies": [],
                 "title": "Interval Notation: Part B",
@@ -600,7 +602,7 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h40",
+        "id": "a090e21alginequal100a-h26",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -608,7 +610,7 @@
             "No"
         ],
         "dependencies": [
-            "a090e21alginequal100a-h38"
+            "a090e21alginequal100a-h24"
         ],
         "title": "Interval Notation: Part B",
         "text": "Is the upper bound $$-3$$ included as a valid value of 'x' in $$x<-3$$?",
@@ -621,11 +623,11 @@
         ]
     },
     {
-        "id": "a090e21alginequal100a-h41",
+        "id": "a090e21alginequal100a-h27",
         "type": "hint",
         "dependencies": [
-            "a090e21alginequal100a-h39",
-            "a090e21alginequal100a-h40"
+            "a090e21alginequal100a-h25",
+            "a090e21alginequal100a-h26"
         ],
         "title": "Interval Notation",
         "text": "The bounds for the two equations, $$(-\\infty,-3)$$ and $$(\\frac{-1}{2},\\infty)$$, can be ORed together using ' $$\\cup$$ '.",
