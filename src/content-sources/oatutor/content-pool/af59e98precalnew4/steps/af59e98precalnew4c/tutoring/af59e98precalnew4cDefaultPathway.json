@@ -1,0 +1,141 @@
+[
+    {
+        "id": "af59e98precalnew4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Property",
+        "text": "Note we can use the property that $$|a| |b|=|a b|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "af59e98precalnew4c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "af59e98precalnew4c-h1"
+        ],
+        "title": "Property",
+        "text": "Can we change to $$|4\\left(3x-6\\right)|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "af59e98precalnew4c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x-6 \\geq 0$$"
+        ],
+        "dependencies": [
+            "af59e98precalnew4c-h2"
+        ],
+        "title": "Two cases",
+        "text": "Under what condition we can remove the absolute value and change to $$4\\left(3x-6\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3x-6 \\geq 0$$",
+            "$$3x-6<0$$"
+        ]
+    },
+    {
+        "id": "af59e98precalnew4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x-6<0$$"
+        ],
+        "dependencies": [
+            "af59e98precalnew4c-h3"
+        ],
+        "title": "Two cases",
+        "text": "Under what condition we can remove the absolute value and change to $$\\left(-3\\right) \\left(4x-5\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3x-6 \\geq 0$$",
+            "$$3x-6<0$$"
+        ]
+    },
+    {
+        "id": "af59e98precalnew4c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$12x-24$$"
+        ],
+        "dependencies": [
+            "af59e98precalnew4c-h4"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$4\\left(3x-6\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$12x-24$$",
+            "$$\\left(-12\\right) x+24$$"
+        ]
+    },
+    {
+        "id": "af59e98precalnew4c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(-12\\right) x+24$$"
+        ],
+        "dependencies": [
+            "af59e98precalnew4c-h5"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$\\left(-4\\right) \\left(3x-6\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$12x-24$$",
+            "$$\\left(-12\\right) x+24$$"
+        ]
+    },
+    {
+        "id": "af59e98precalnew4c-h7",
+        "type": "hint",
+        "dependencies": [
+            "af59e98precalnew4c-h6"
+        ],
+        "title": "Simplify",
+        "text": "$$3x-6 \\geq 0$$, then $$3x \\geq 6$$, so $$x \\geq 2;$$ $$3x-6<0$$, then $$3x<6$$, so $$x<2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "af59e98precalnew4c-h8",
+        "type": "hint",
+        "dependencies": [
+            "af59e98precalnew4c-h7"
+        ],
+        "title": "Answer",
+        "text": "$$12x-24$$ if $$x \\geq 2;$$ $$\\left(-12\\right) x+24$$ if $$x<2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

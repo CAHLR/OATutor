@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af59e98precalb4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Demonstration",
+        "text": "Two cases: $$x^3 x$$ if $$x \\geq 0;$$ $$x^3 \\left(-x\\right)$$ if $$x<0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "af59e98precalb4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "af59e98precalb4b-h1"
+        ],
+        "title": "Demonstration",
+        "text": "Simplify: $$x^4$$ if $$x \\geq 0;$$ $$-\\left(x^4\\right)$$ if $$x<0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "af59e98precalb4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "af59e98precalb4b-h2"
+        ],
+        "title": "Demonstration",
+        "text": "Note we couldn't easily move $$x^3$$ into the absolute value, as it is sometimes positive and sometimes negative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]
