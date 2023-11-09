@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a4593e0functrans111a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying the Expression",
+        "text": "For some a,b, c $$\\neq$$ 0; $$\\frac{a+b}{c}=\\frac{a}{c}+\\frac{b}{c}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans111a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans111a-h1"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "Split the expression into individual parts to simplify: $$\\frac{14}{7}-\\frac{1}{7} 3^{\\left(-5x+2\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans111a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans111a-h2"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "What is $$\\frac{14}{7}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans111a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans111a-h3"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "The term $$3^{\\left(-5x+2\\right)}$$ can be rewritten in terms of $$f(x)=3^x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans111a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5x+2$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans111a-h4"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "What value of $$x$$ can be substituted to make $$3^x$$ equal to $$3^{\\left(-5x+2\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans111a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans111a-h5"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "If $$f\\left(-5x+2\\right)=3^{\\left(-5x+2\\right)}$$, then $$\\frac{1}{7} 3^{\\left(-5x+2\\right)}=\\frac{1}{7} f\\left(-5x+2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

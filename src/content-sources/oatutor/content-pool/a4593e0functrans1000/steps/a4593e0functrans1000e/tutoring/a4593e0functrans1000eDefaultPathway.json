@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a4593e0functrans1000e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Input or Output?",
+        "text": "A transformation that affects the input is within the function paranetheses, while a transformation that affects the output is outside the function paranetheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans1000e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Output"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000e-h1"
+        ],
+        "title": "Input or Output?",
+        "text": "Does the step affect the input or output of the function?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Input",
+            "Output"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000e-h2"
+        ],
+        "title": "Understanding Reflections",
+        "text": "A reflection that affects the input is over the y-axis, while a reflection that affects the output is over the x-axis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4593e0functrans1000e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x-axis$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000e-h3"
+        ],
+        "title": "Understanding Reflections",
+        "text": "Is the reflection over the y-axis or x-axis?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x-axis$$",
+            "$$y-axis$$"
+        ]
+    }
+]
