@@ -1,0 +1,284 @@
+[
+    {
+        "id": "a0dd0e7corepoly11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving the Equation",
+        "text": "To find the intersection between two functions, you can set them equal to each other: $$x^2=2x+A$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h1"
+        ],
+        "title": "Solving the Equation",
+        "text": "Move $$2x$$ to the left side by subtracting the right side: $$x^2-2x=A$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h2"
+        ],
+        "title": "Solving the Equation",
+        "text": "Complete the square for $$x^2-2x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h3"
+        ],
+        "title": "Solving the Equation",
+        "text": "To find the value to add to $$x^2+b x$$, you must add $${\\left(\\frac{b}{2}\\right)}^2$$ within the parantheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h4"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is $${\\left(-\\frac{2}{2}\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "Add $$1$$ to both sides to simplify the equation: $$x^2-2x+1=A+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h6"
+        ],
+        "title": "Solving the Equation",
+        "text": "For some quadratic $$f(x)=x^2+2b x+b^2$$, it can be simplified to $${\\left(x+b\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(x-1\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h7"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is $$x^2-2x+1$$ simplified?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$${\\left(x-1\\right)}^2$$",
+            "$${\\left(x+1\\right)}^2$$",
+            "$${\\left(x-2\\right)}^2$$",
+            "$${\\left(x+2\\right)}^2$$"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h8"
+        ],
+        "title": "Finding One Intersection Point",
+        "text": "Given $${\\left(x-1\\right)}^2=A+1$$, $$A+1$$ could either be $$A+1>0$$, $$A+1<0$$, $$A+1=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h9"
+        ],
+        "title": "Positive Consant",
+        "text": "When $$A+1>0$$, then it is possible to take the square root where $$x-1=$$ $$\\pm$$ $$\\sqrt{A+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h10"
+        ],
+        "title": "Positive Consant",
+        "text": "Add one to both sides to simplify: $$x=1$$ $$\\pm$$ $$\\sqrt{A+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h11"
+        ],
+        "title": "Positive Consant",
+        "text": "Is there exactly one value that would serve as the intersection?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h12"
+        ],
+        "title": "Negative Consant",
+        "text": "When $$A+1<0$$, then it is impossible for $$x$$ to intersect with the line as $${\\left(x-1\\right)}^2$$ cannot be negative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h13"
+        ],
+        "title": "Zero Constant",
+        "text": "When $$A+1=0$$, then it is possible to take the square root where $$x-1=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h14"
+        ],
+        "title": "Zero Constant",
+        "text": "Add $$-1$$ to both sides to simplify: $$x=0-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h15"
+        ],
+        "title": "Zero Constant",
+        "text": "What is $$0-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h16"
+        ],
+        "title": "Zero Constant",
+        "text": "Is there exactly one value that would serve as the intersection?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h18",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h17"
+        ],
+        "title": "Finding A",
+        "text": "Since there is exactly one intersection when $$A+1=0$$, A can be solved for to get the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h19",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h18"
+        ],
+        "title": "Finding A",
+        "text": "Add $$-1$$ to both sides to simplify: $$A=0-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h19"
+        ],
+        "title": "Finding A",
+        "text": "What is $$0-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
