@@ -521,7 +521,7 @@ class ProblemCard extends React.Component {
 
         axios
             .post(
-                "http://127.0.0.1:8000/get_step_eval",
+                "https://oatutor-backend.herokuapp.com/get_step_eval",
                 this.generateGPTEvaluationParameters()
             )
             .then((response) => {
