@@ -56,6 +56,7 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        this.stepEvaluation = this.props.lesson?.stepEvaluation;
 
         this.state = {
             stepStates: {},
@@ -463,6 +464,7 @@ class Problem extends React.Component {
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
+                                    stepEvaluation={this.stepEvaluation}
                                 />
                             </Element>
                         ))}

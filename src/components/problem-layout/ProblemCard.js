@@ -45,7 +45,7 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
 
         this.allowRetry = this.giveStuFeedback;
 
@@ -60,6 +60,9 @@ class ProblemCard extends React.Component {
         this.prompt_template = props.prompt_template
             ? props.prompt_template
             : DYNAMIC_HINT_TEMPLATE;
+
+        this.stepEvaluation = props.stepEvaluation;
+
         console.debug(
             "this.step",
             this.step,
@@ -135,6 +138,9 @@ class ProblemCard extends React.Component {
             usedHints: false,
             dynamicHint: "",
             bioInfo: "",
+            student_steps: "",
+            dynamicEvaluation: "",
+            displayEvaluation: false,
             enableHintGeneration: true,
         };
     }
@@ -152,23 +158,8 @@ class ProblemCard extends React.Component {
     updateBioInfo() {
         const bioInfo = JSON.parse(localStorage.getItem("bioInfo"));
         if (bioInfo) {
-            const {
-                gender,
-                age,
-                confidenceQ1,
-                confidenceQ2,
-                judgementQ1,
-                judgementQ2,
-                judgementQ3,
-                other,
-            } = bioInfo;
-            const bio = `I'm a ${gender} and I'm ${age} years old. ${confidenceQ1}. ${confidenceQ2}. 
-            For the statement that "if I had more time for practice, I would be better in mathematics", my answer is ${judgementQ1}.
-            For the statement that "if I was more patient while solving mathematical problems, I would be better in mathematics", my answer is ${judgementQ2}.
-            For the statement that "No matter how much time I devote for studying mathematics, I can’t improve my grades", my answer is ${judgementQ3}. 
-            ${other}
-            `;
-            this.setState({ bioInfo: bio });
+            const { other } = bioInfo;
+            this.setState({ bioInfo: other });
         }
     }
 
@@ -223,7 +214,7 @@ class ProblemCard extends React.Component {
 
         if (!isCorrect) {
             this.expandFirstIncorrect = true;
-            this.toggleHints('auto-expand');
+            this.toggleHints("auto-expand");
         }
 
         this.context.firebase.log(
@@ -296,7 +287,23 @@ class ProblemCard extends React.Component {
                 }
             );
         }
-        this.generateHintFromGPT();
+        if (this.giveDynamicHint) {
+            this.generateHintFromGPT();
+        }
+    };
+
+    toggleEvaluation = (event) => {
+        // this.setState({
+        //     enableHintGeneration: false,
+        // });
+        if (!this.state.displayEvaluation) {
+            this.setState((prevState) => ({
+                displayEvaluation: !prevState.displayEvaluation,
+            }));
+        }
+        if (this.stepEvaluation) {
+            this.generateEvaluationFromGPT();
+        }
     };
 
     unlockHint = (hintNum, hintType) => {
@@ -403,6 +410,27 @@ class ProblemCard extends React.Component {
         return { quest, prompt_template, bio_info };
     };
 
+    generateGPTEvaluationParameters = () => {
+        var correctAnswer = "";
+        if (
+            Array.isArray(this.step.stepAnswer) &&
+            this.step.stepAnswer.length > 0
+        ) {
+            correctAnswer = this.step.stepAnswer[0];
+        }
+
+        var quest = {
+            problem_title: this.problemTitle,
+            problem_subtitle: this.problemSubTitle,
+            question_title: this.step.stepTitle,
+            question_subtitle: this.step.stepBody,
+            student_answer: "",
+            correct_answer: correctAnswer,
+        };
+
+        return { quest, stud_submission: this.state.student_steps };
+    };
+
     generateHintFromGPT = async () => {
         // console.log(this.generateGPTHintParameters(this.prompt_template));
         this.setState({
@@ -467,6 +495,52 @@ class ProblemCard extends React.Component {
             });
     };
 
+    generateEvaluationFromGPT = async () => {
+        // console.log(this.generateGPTHintParameters(this.prompt_template));
+        this.setState({
+            dynamicEvaluation: "",
+        });
+        const [parsed, correctAnswer, reason] = checkAnswer({
+            attempt: this.state.inputVal,
+            actual: this.step.stepAnswer,
+            answerType: this.step.answerType,
+            precision: this.step.precision,
+            variabilization: chooseVariables(
+                Object.assign(
+                    {},
+                    this.props.problemVars,
+                    this.props.variabilization
+                ),
+                this.props.seed
+            ),
+            questionText:
+                this.step.stepBody.trim() || this.step.stepTitle.trim(),
+        });
+
+        const isCorrect = !!correctAnswer;
+
+        axios
+            .post(
+                "https://oatutor-backend.herokuapp.com/get_step_eval",
+                this.generateGPTEvaluationParameters()
+            )
+            .then((response) => {
+                console.log(response.data.prompt);
+                this.setState({
+                    dynamicEvaluation: response.data.evaluation,
+                });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
+
+    handleStudStepsChange = (event) => {
+        this.setState({
+            student_steps: event.target.value,
+        });
+    };
+
     render() {
         const { classes, problemID, problemVars, seed } = this.props;
         const { displayHints, isCorrect } = this.state;
@@ -509,6 +583,34 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
+                    {this.state.displayEvaluation && this.stepEvaluation && (
+                        <div className="dynamicHintContainer">
+                            <h3 className="dynamicHintTitle">
+                                Dynamic Evaluation
+                            </h3>
+                            {this.state.dynamicEvaluation ? (
+                                <div className="dynamicHintContent">
+                                    {renderText(
+                                        this.state.dynamicEvaluation,
+                                        problemID,
+                                        chooseVariables(
+                                            Object.assign(
+                                                {},
+                                                problemVars,
+                                                this.step.variabilization
+                                            ),
+                                            seed
+                                        ),
+                                        this.context
+                                    )}
+                                </div>
+                            ) : (
+                                <div className="dynamicHintContent">
+                                    loading...
+                                </div>
+                            )}
+                        </div>
+                    )}
                     {displayHints && this.giveDynamicHint && (
                         <div className="dynamicHintContainer">
                             <h3 className="dynamicHintTitle">
@@ -545,7 +647,9 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -572,31 +676,98 @@ class ProblemCard extends React.Component {
                             </div>
                         )}
 
-                    <div className={classes.root}>
-                        <ProblemInput
-                            variabilization={chooseVariables(
-                                Object.assign(
-                                    {},
-                                    this.props.problemVars,
-                                    this.step.variabilization
-                                ),
-                                this.props.seed
-                            )}
-                            allowRetry={this.allowRetry}
-                            giveStuFeedback={this.giveStuFeedback}
-                            showCorrectness={this.showCorrectness}
-                            classes={classes}
-                            state={this.state}
-                            step={this.step}
-                            seed={this.props.seed}
-                            _setState={(state) => this.setState(state)}
-                            context={this.context}
-                            editInput={this.editInput}
-                            setInputValState={this.setInputValState}
-                            handleKey={this.handleKey}
-                            index={this.props.index}
-                        />
-                    </div>
+                    {this.stepEvaluation ? (
+                        <div
+                            style={{
+                                padding: "0.8rem",
+                                display: "flex",
+                                flexDirection: "row",
+                            }}
+                        >
+                            <div style={{ width: "60%" }}>
+                                <span>Show your steps</span>
+                                <textarea
+                                    type="text"
+                                    // value={userInput}
+                                    onChange={this.handleStudStepsChange}
+                                    placeholder="Type something here..."
+                                    style={{
+                                        width: "100%",
+                                        padding: "1rem",
+                                        minHeight: "20vh",
+                                    }}
+                                />
+                                <Button
+                                    onClick={this.toggleEvaluation}
+                                    className={classes.button}
+                                    style={{ width: "40%" }}
+                                    size="small"
+                                >
+                                    Check your steps
+                                </Button>
+                            </div>
+                            <div
+                                style={{
+                                    width: "40%",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                }}
+                            >
+                                <span>Final Answer</span>
+                                <ProblemInput
+                                    variabilization={chooseVariables(
+                                        Object.assign(
+                                            {},
+                                            this.props.problemVars,
+                                            this.step.variabilization
+                                        ),
+                                        this.props.seed
+                                    )}
+                                    allowRetry={this.allowRetry}
+                                    giveStuFeedback={this.giveStuFeedback}
+                                    showCorrectness={this.showCorrectness}
+                                    classes={classes}
+                                    state={this.state}
+                                    step={this.step}
+                                    seed={this.props.seed}
+                                    _setState={(state) => this.setState(state)}
+                                    context={this.context}
+                                    editInput={this.editInput}
+                                    setInputValState={this.setInputValState}
+                                    handleKey={this.handleKey}
+                                    index={this.props.index}
+                                />
+                            </div>
+                        </div>
+                    ) : (
+                        <div className={classes.root}>
+                            <ProblemInput
+                                variabilization={chooseVariables(
+                                    Object.assign(
+                                        {},
+                                        this.props.problemVars,
+                                        this.step.variabilization
+                                    ),
+                                    this.props.seed
+                                )}
+                                allowRetry={this.allowRetry}
+                                giveStuFeedback={this.giveStuFeedback}
+                                showCorrectness={this.showCorrectness}
+                                classes={classes}
+                                state={this.state}
+                                step={this.step}
+                                seed={this.props.seed}
+                                _setState={(state) => this.setState(state)}
+                                context={this.context}
+                                editInput={this.editInput}
+                                setInputValState={this.setInputValState}
+                                handleKey={this.handleKey}
+                                index={this.props.index}
+                            />
+                        </div>
+                    )}
                 </CardContent>
                 <CardActions>
                     <Grid

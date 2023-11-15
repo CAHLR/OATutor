@@ -10,13 +10,13 @@ class BioInfo extends Component {
 
         this.state = {
             userInput: {
-                gender: "",
-                age: "",
-                confidenceQ1: "",
-                confidenceQ2: "",
-                judgementQ1: "",
-                judgementQ2: "",
-                judgementQ3: "",
+                // gender: "",
+                // age: "",
+                // confidenceQ1: "",
+                // confidenceQ2: "",
+                // judgementQ1: "",
+                // judgementQ2: "",
+                // judgementQ3: "",
                 other: "",
             },
             showModal: false,
@@ -44,19 +44,19 @@ class BioInfo extends Component {
     };
 
     checkValidAnswer = () => {
-        const { userInput } = this.state;
-        if (
-            !userInput.age ||
-            !userInput.gender ||
-            !userInput.confidenceQ1 ||
-            !userInput.confidenceQ2 ||
-            !userInput.judgementQ1 ||
-            !userInput.judgementQ2 ||
-            !userInput.judgementQ3
-        ) {
-            alert("Empty values detected. Please answer all questions.");
-            return false;
-        }
+        // const { userInput } = this.state;
+        // if (
+        //     !userInput.age ||
+        //     !userInput.gender ||
+        //     !userInput.confidenceQ1 ||
+        //     !userInput.confidenceQ2 ||
+        //     !userInput.judgementQ1 ||
+        //     !userInput.judgementQ2 ||
+        //     !userInput.judgementQ3
+        // ) {
+        //     alert("Empty values detected. Please answer all questions.");
+        //     return false;
+        // }
         return true;
     };
 
@@ -64,9 +64,15 @@ class BioInfo extends Component {
         const { userInput } = this.state;
         if (this.checkValidAnswer()) {
             localStorage.setItem("bioInfo", JSON.stringify(userInput));
-            // console.log(userInput);
-            this.setState({ allowSave: false });
-            alert("Information saved successfully!");
+            console.log(userInput);
+            if (userInput.other.length >= 120) {
+                this.setState({ allowSave: false });
+                alert("Information saved successfully!");
+            } else {
+                alert(
+                    "Please enter your bio section with minimum length of 120 characters."
+                );
+            }
         }
     };
 
@@ -79,13 +85,13 @@ class BioInfo extends Component {
         alert("Information deleted successfully!");
         this.setState({
             userInput: {
-                gender: "",
-                age: "",
-                confidenceQ1: "",
-                confidenceQ2: "",
-                judgementQ1: "",
-                judgementQ2: "",
-                judgementQ3: "",
+                // gender: "",
+                // age: "",
+                // confidenceQ1: "",
+                // confidenceQ2: "",
+                // judgementQ1: "",
+                // judgementQ2: "",
+                // judgementQ3: "",
                 other: "",
             },
             showModal: false,
@@ -120,7 +126,7 @@ class BioInfo extends Component {
                 </AppBar>
                 <div className="content-container">
                     <h1 className="title">Enter your Bio Information</h1>
-                    <div className="survey-quest">
+                    {/* <div className="survey-quest">
                         <label className="survey-text">
                             What gender do you identify as?
                         </label>
@@ -262,9 +268,24 @@ class BioInfo extends Component {
                                 Strongly agree
                             </option>
                         </select>
-                    </div>
+                    </div> */}
                     <div className="survey-quest">
-                        <span>Other information</span>
+                        <span>
+                            Please tell us about your current and past math
+                            educational history and anything relevant to how you
+                            learn
+                        </span>
+                        {/* <ul>
+                            <li>
+                                <span>Previous math coursework</span>
+                            </li>
+                            <li>
+                                <span>
+                                    Educational background (high school,
+                                    undergrad, etc)
+                                </span>
+                            </li>
+                        </ul> */}
                         <textarea
                             className="input-field"
                             name="other"
