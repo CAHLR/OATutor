@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ade65cdc4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the value",
+        "text": "$$tan\\theta=\\frac{sintheta}{costheta}$$, where $$sin\\left(\\frac{9\\pi}{2}\\right)$$ is $$1$$ and $$cos\\left(\\frac{9\\pi}{2}\\right)$$ is $$0$$ in this case.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ade65cdc4c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ade65cdc4c-h1"
+        ],
+        "title": "Determine the value",
+        "text": "Is $$tan\\left(\\frac{9\\pi}{2}\\right)$$ defined?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "ade65cdc4c-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Determine the value",
+                "text": "The denominator is $$0$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]
