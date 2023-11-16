@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a0dd0e7corepoly110a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Symetmetry of Quadratics",
+        "text": "Quadratics have the same output left and right of the vertex. So, if there is a vertex V, then $$f(v-c)=f{\\left(v+c\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly110a-h1"
+        ],
+        "title": "Symetmetry of Quadratics",
+        "text": "Since $$V=2$$, then $$f(2-c)=f{\\left(2+c\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly110a-h2"
+        ],
+        "title": "Solving the Offset",
+        "text": "Set the value of $$x$$ to be one of the supposed x-intercepts: $$2+c=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly110a-h3"
+        ],
+        "title": "Solving the Offset",
+        "text": "Subtract $$2$$ from both sides: $$c=-1-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly110a-h4"
+        ],
+        "title": "Solving the Offset",
+        "text": "What is $$-1-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly110a-h5"
+        ],
+        "title": "Finding the Other X-Intercept",
+        "text": "Since c is $$-3$$, the other x-intercept can be found by using the opposite equation: $$f{\\left(2+3\\right)}=f(-1)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly110a-h6"
+        ],
+        "title": "Finding the Other X-Intercept",
+        "text": "What is $$2+3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly110a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly110a-h7"
+        ],
+        "title": "Finding the Other X-Intercept",
+        "text": "Is $$5$$ equal to the other x-intercept of 4?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
