@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ade65cdc2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The general form",
+        "text": "The general form of an exponential function is $$y=a bx$$, where a is the initial value or y-intercept, and $$b$$ is the base of the exponential function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ade65cdc2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade65cdc2a-h1"
+        ],
+        "title": "Use the Given Point",
+        "text": "Plug in the given point $$(-3,\\frac{1}{125})$$ into the general form. This gives you the equation $$\\frac{1}{125}=a b^{\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ade65cdc2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade65cdc2a-h2"
+        ],
+        "title": "Solve for a and $$b$$",
+        "text": "Let $$a=1$$ for simplicity.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ade65cdc2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "ade65cdc2a-h3"
+        ],
+        "title": "Solve for a and $$b$$",
+        "text": "What is the value of $$b$$ when $$a=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "ade65cdc2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ade65cdc2a-h4"
+        ],
+        "title": "Exponential Function",
+        "text": "Does $$f(x)=5^x$$ satisfy the question's condition?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
