@@ -8,7 +8,7 @@
                 "id": "5DUi1qV6-6Ykh-vIBOVeBPEX",
                 "name": "Lesson Phase",
                 "topics": "1",
-                "allowRecycle": true,
+                "allowRecycle": false,
                 "learningObjectives": {
                     "addition_rule": 0.85,
                     "complement_rule": 0.85,
@@ -16,7 +16,12 @@
                     "probability": 0.85,
                     "the_addition_rule": 0.85,
                     "the_multiplication_rule": 0.85
-                }
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
             }
         ]
     }
