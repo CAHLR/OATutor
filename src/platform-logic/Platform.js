@@ -112,13 +112,14 @@ class Platform extends React.Component {
     }
 
     async selectLesson(lesson, updateServer = true, context) {
+        console.log("set lesson called")
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (1)");
             return;
         }
         if (this.isPrivileged && updateServer) {
             // from canvas or other LTI Consumers
-            console.log("setting lesson for assignment, privileged is true")
+            console.log("valid privilege")
             let err, response;
             [err, response] = await to(
                 fetch(`${MIDDLEWARE_URL}/setLesson`, {
