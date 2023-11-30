@@ -118,6 +118,7 @@ class Platform extends React.Component {
         }
         if (this.isPrivileged && updateServer) {
             // from canvas or other LTI Consumers
+            console.log("setting lesson for assignment, privileged is true")
             let err, response;
             [err, response] = await to(
                 fetch(`${MIDDLEWARE_URL}/setLesson`, {
