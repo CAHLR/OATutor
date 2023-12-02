@@ -1,4 +1,4 @@
-const port = process.env.PORT || 1339
+const port = process.env.PORT || 3003
 const express = require('express')
 const lti = require('ims-lti')
 const jwt = require('jsonwebtoken');
