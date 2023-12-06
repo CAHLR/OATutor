@@ -115,7 +115,9 @@ const getJWT = (provider, consumer_secret, consumer_key, linkedLesson, privilege
 
 app.post('/launch', async (req, res) => {
     const use_staging = !!req.body.use_staging || !!req.body.custom_use_staging
-    const host = use_staging ? stagingHost : oatsHost
+    // const host = use_staging ? stagingHost : oatsHost
+    const host = "http://localhost:3001/place-holder"
+
 
     const consumer_key = req.body.oauth_consumer_key || "";
     const consumer_secret = consumerKeySecretMap[consumer_key] || "";
