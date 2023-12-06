@@ -38,10 +38,12 @@ class Platform extends React.Component {
         this.lesson = null;
 
         this.user = context.user || {};
+        console.debug("USER: ", this.user)
         this.studentNameDisplay = context.studentName
             ? decodeURIComponent(context.studentName) + " | "
             : "Not logged in | ";
         this.isPrivileged = !!this.user.privileged;
+        this.context = context;
 
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
@@ -76,7 +78,10 @@ class Platform extends React.Component {
     componentDidMount() {
         this._isMounted = true;
         if (this.props.lessonID != null) {
-            this.selectLesson(findLessonById(this.props.lessonID), false).then(
+            console.log("calling selectLesson from componentDidMount...") 
+            const lesson = findLessonById(this.props.lessonID)
+            console.debug("lesson: ", lesson)
+            this.selectLesson(lesson).then(
                 (_) => {
                     console.debug(
                         "loaded lesson " + this.props.lessonID,
@@ -111,13 +116,16 @@ class Platform extends React.Component {
         }
     }
 
-    async selectLesson(lesson, updateServer = true, context) {
-        console.log("set lesson called")
+    async selectLesson(lesson, updateServer=true) {
+        const context = this.context;
+        console.debug("lesson: ", context)
+        console.debug("update server: ", updateServer)
+        console.debug("context: ", context)
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (1)");
             return;
         }
-        if (this.isPrivileged && updateServer) {
+        if (this.isPrivileged) {
             // from canvas or other LTI Consumers
             console.log("valid privilege")
             let err, response;
