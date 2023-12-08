@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "18": "0.0.0",
     "@common/global-config": "file:./common",
     "@material-ui/core": "~4.12.3",
     "@material-ui/icons": "~4.11.2",
@@ -40,6 +39,8 @@
     "build-localhost": "cross-env PUBLIC_URL=/ react-app-rewired build",
     "prebuild": "node src/tools/preprocessProblemPool.js",
     "prebuild-localhost": "node src/tools/preprocessProblemPool.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject",
@@ -61,6 +62,7 @@
     "@types/react-resizable": "~1.7.4",
     "cross-env": "^7.0.3",
     "gh-pages": "~2.2.0",
+    "mathlive": "^0.98.3",
     "react-app-rewire-alias": "~1.1.7",
     "react-app-rewired": "~2.2.1"
   },
