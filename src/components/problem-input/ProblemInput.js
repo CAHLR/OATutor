@@ -1,6 +1,5 @@
 import React, { createRef } from "react";
 import Grid from "@material-ui/core/Grid";
-import EquationEditor from "equation-editor-react";
 import TextField from "@material-ui/core/TextField";
 import MultipleChoice from "./MultipleChoice";
 import GridInput from "./GridInput";
