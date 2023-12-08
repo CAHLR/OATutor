@@ -29,6 +29,7 @@ console.log("Generated seed");
 class Platform extends React.Component {
     static contextType = ThemeContext;
 
+
     constructor(props, context) {
         super(props);
         this.problemIndex = {
@@ -36,6 +37,7 @@ class Platform extends React.Component {
         };
         this.completedProbs = new Set();
         this.lesson = null;
+        this.isSelected = false;
 
         this.user = context.user || {};
         console.debug("USER: ", this.user)
@@ -161,16 +163,15 @@ class Platform extends React.Component {
                             }
                             switch (message) {
                                 case "resource_already_linked":
-                                    toast.error(
-                                        `${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`,
-                                        {
-                                            toastId:
-                                                ToastID.set_lesson_duplicate_error.toString(),
-                                        }
-                                    );
-                                    this.props.history.push(
-                                        `/assignment-already-linked?to=${addInfo.to}`
-                                    );
+                                    if (!this.isSelected) {
+                                        toast.error(
+                                            `${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`,
+                                            {
+                                                toastId:
+                                                    ToastID.set_lesson_duplicate_error.toString(),
+                                            }
+                                        );
+                                    }
                                     return;
                                 default:
                                     toast.error(`Error: ${responseText}`, {
@@ -205,15 +206,16 @@ class Platform extends React.Component {
                                         ToastID.set_lesson_unknown_error.toString(),
                                 }
                             );
+
                             return;
                     }
                 } else {
-                    toast.success(
-                        `Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.id} "${lesson.topics}"`,
-                        {
-                            toastId: ToastID.set_lesson_success.toString(),
-                        }
+                    this.isSelected = true;
+                    this.props.history.push(
+                        `/assignment-already-linked`
                     );
+                    console.log('REDIRECTED')
+                    return;
                 }
             }
         }
