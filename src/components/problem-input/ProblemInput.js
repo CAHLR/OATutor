@@ -8,6 +8,7 @@ import MatrixInput from "./MatrixInput";
 import { renderText } from "../../platform-logic/renderText";
 import clsx from "clsx";
 import './ProblemInput.css'
+import "mathlive";
 import { shuffleArray } from "../../util/shuffleArray";
 import { EQUATION_EDITOR_AUTO_COMMANDS, EQUATION_EDITOR_AUTO_OPERATORS, ThemeContext } from "../../config/config";
 import { stagingProp } from "../../util/addStagingProperty";
@@ -95,21 +96,15 @@ class ProblemInput extends React.Component {
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
-                        <center
-                            ref={this.equationRef}
-                            className={clsx(showCorrectness && state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}
-                            {...stagingProp({
-                                "data-selenium-target": `arithmetic-answer-${index}`
-                            })}
-                        >
-                            <EquationEditor
-                                value={(use_expanded_view && debug) ? correctAnswer : state.inputVal}
-                                onChange={this.onEquationChange}
-                                style={{ width: "100%" }}
-                                autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
-                                autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
-                            />
-                        </center>
+                        <math-field 
+                        onInput={evt => this.props.setInputValState(evt.target.value)}
+                        style={{"display": "block"}}
+                        value={(use_expanded_view && debug) ? correctAnswer : state.inputVal}
+                        onChange={this.onEquationChange}
+                        autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
+                        autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
+                    >
+                        </math-field>
                     )}
                     {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
