@@ -1,0 +1,60 @@
+[
+    {
+        "id": "adbf85fCenterofMassandMoments1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for the moment of a system.",
+        "text": "M $$=$$ sum{i=1}{n}{m_i*x_i}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "adbf85fCenterofMassandMoments1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adbf85fCenterofMassandMoments1a-h1"
+        ],
+        "title": "What should $$n$$ equal in the summation?",
+        "text": "$$n$$ in this case represents the number of masses given, which equals $$4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "adbf85fCenterofMassandMoments1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adbf85fCenterofMassandMoments1a-h2"
+        ],
+        "title": "Filling in $$n$$ and executing the summation.",
+        "text": "M=sum{i=1}{4}{m_i*x_i}=m_1*x_1+m_2*x_2+m_3*x_3+m_4*x_4",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "adbf85fCenterofMassandMoments1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adbf85fCenterofMassandMoments1a-h3"
+        ],
+        "title": "Replace the variables with their given values and solve.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "adbf85fCenterofMassandMoments1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adbf85fCenterofMassandMoments1a-h4"
+        ],
+        "title": "Find the center of mass.",
+        "text": "To find the center of mass you divide the moment value you caculated by the total mass. $$x\u0304=\\frac{M}{m}$$ where M is the moment value and $$m$$ is the total mass.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
