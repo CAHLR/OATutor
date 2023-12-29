@@ -1,0 +1,152 @@
+[
+    {
+        "id": "a863f05tri3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$cos\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "cos is the x-coordinate of the point on the unit circle. So, $$cos\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$\\frac{1}{\\sqrt{2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri3a-h1"
+        ],
+        "title": "$$sin\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "sin is the y-coordinate of the point on the unit circle. So, $$sin\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$\\frac{1}{\\sqrt{2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri3a-h2"
+        ],
+        "title": "$$tan\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "Tangent is the ratio of sin to cos.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a863f05tri3a-h3"
+        ],
+        "title": "$$tan\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "What is $$tan\\left(\\frac{\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a863f05tri3a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "$$tan\\left(\\frac{\\pi}{4}\\right)$$",
+                "text": "$$tan\\left(\\frac{\\pi}{4}\\right)=\\fracsin^c\\left(\\frac{\\pi}{4}\\right)os\\left(\\frac{\\pi}{4}\\right)}=\\frac{\\frac{1}{\\sqrt{2}}}{\\frac{1}{\\sqrt{2}}}=1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a863f05tri3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri3a-h4"
+        ],
+        "title": "$$\\operatorname{sec}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "sec is the reciprocal of cos.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a863f05tri3a-h5"
+        ],
+        "title": "$$\\operatorname{sec}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "What is $$\\operatorname{sec}\\left(\\frac{\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri3a-h6"
+        ],
+        "title": "$$\\operatorname{csc}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "csc is the reciprocal of sin.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a863f05tri3a-h7"
+        ],
+        "title": "$$\\operatorname{csc}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "What is $$\\operatorname{csc}\\left(\\frac{\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri3a-h8"
+        ],
+        "title": "$$\\operatorname{cot}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "cot is the reciprocal of tan.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri3a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a863f05tri3a-h9"
+        ],
+        "title": "$$\\operatorname{cot}\\left(\\frac{\\pi}{4}\\right)$$",
+        "text": "What is $$\\operatorname{cot}\\left(\\frac{\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

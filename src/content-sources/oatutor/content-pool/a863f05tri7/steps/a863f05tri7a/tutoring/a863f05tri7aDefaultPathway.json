@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a863f05tri7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implication",
+        "text": "$$cos\\left(\\theta\\right)>sin\\left(\\theta\\right)$$ implies that x-coordinate of point $$P>y-coordinate$$ of point P.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a863f05tri7a-h1"
+        ],
+        "title": "From the plot",
+        "text": "Based on the plot, we can conclude that $$\\theta<\\frac{\\pi}{4}$$ or $$\\theta>\\frac{5\\pi}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a863f05tri7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[0,pi/4)\\cup((5*pi)/4,2*pi)"
+        ],
+        "dependencies": [
+            "a863f05tri7a-h2"
+        ],
+        "title": "Interval notation",
+        "text": "Give your answer in interval notation. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$(\\frac{\\pi}{4},\\frac{5\\pi}{4})$$",
+            "[0,pi/4)\\cup((5*pi)/4,2*pi)",
+            "(-\\infty,pi/4)\\cup((5*pi)/4,\\infty)"
+        ]
+    }
+]

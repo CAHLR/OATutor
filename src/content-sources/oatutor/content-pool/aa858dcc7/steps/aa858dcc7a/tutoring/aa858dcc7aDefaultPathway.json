@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aa858dcc7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the constant",
+        "text": "Let $$t$$ be arbitrary. To find the constant, we can find the value of $$\\frac{f{\\left(t+a\\right)}}{f{\\left(t\\right)}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b^a$$"
+        ],
+        "dependencies": [
+            "aa858dcc7a-h1"
+        ],
+        "title": "Find the constant",
+        "text": "What is the result of $$\\frac{f{\\left(t+a\\right)}}{f{\\left(t\\right)}}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$b^a$$",
+            "$$b^t$$",
+            "$$K b^a$$",
+            "$$K b^t$$"
+        ]
+    }
+]

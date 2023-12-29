@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a34898cprecalnew4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "Note that the denominator cannot be $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a34898cprecalnew4e-h1"
+        ],
+        "title": "Can't divide by $$0$$",
+        "text": "What value $$x$$ cannot equal if $$x-1 \\neq 0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a34898cprecalnew4e-h2"
+        ],
+        "title": "Remove the absolute value",
+        "text": "We will discuss cases when $$2x-2>0$$ or $$2x-2<0$$, which is simplified to $$x>1$$ or $$x<1$$. The reason why we do not have $$x=1$$ is because $$x$$ cannot be $$1$$ as the denominator cannot be $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2x-2}{x-1}$$"
+        ],
+        "dependencies": [
+            "a34898cprecalnew4e-h3"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x>1$$, what should $$\\frac{|2x-2|}{x-1}$$ be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-\\left(2x-2\\right)}{x-1}$$"
+        ],
+        "dependencies": [
+            "a34898cprecalnew4e-h4"
+        ],
+        "title": "Remove the absolute value",
+        "text": "If $$x<1$$, what should $$\\frac{|x-1|}{x-1}$$ be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{-\\left(2x-2\\right)}{x-1}$$",
+            "$$\\frac{-\\left(2x-2\\right)}{-\\left(x-1\\right)}$$"
+        ]
+    },
+    {
+        "id": "a34898cprecalnew4e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a34898cprecalnew4e-h5"
+        ],
+        "title": "Simplify",
+        "text": "What is $$\\frac{2x-2}{x-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a34898cprecalnew4e-h6"
+        ],
+        "title": "Simplify",
+        "text": "What is $$\\frac{-\\left(2x-2\\right)}{x-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a34898cprecalnew4e-h8",
+        "type": "hint",
+        "dependencies": [
+            "a34898cprecalnew4e-h7"
+        ],
+        "title": "Answer",
+        "text": "$$2$$ if $$x>1$$ $$-2$$ if $$x<1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

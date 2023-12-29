@@ -1,0 +1,86 @@
+[
+    {
+        "id": "aa858dcc2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The general form",
+        "text": "The general form of a logarithmic function is y=a*log{b}\u200b{x}, where a is a coefficient, $$b$$ is the base of the logarithm, and $$x$$ is the input.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa858dcc2b-h1"
+        ],
+        "title": "Use the Given Point",
+        "text": "Plug in the given point $$(81,4)$$ into the general form. This gives you the equation 4=a*log{b}\u200b{81}.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa858dcc2b-h2"
+        ],
+        "title": "Solve for a and $$b$$",
+        "text": "Let $$a=1$$ for simplicity.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aa858dcc2b-h3"
+        ],
+        "title": "Solve for a and $$b$$",
+        "text": "What is the value of $$b$$ when $$a=1$$? (suppose $$b$$ is positive)",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aa858dcc2b-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve for a and $$b$$",
+                "text": "$$a^4=81$$, $$a^4=3^4$$, so $$a=3$$ is a valid answer.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aa858dcc2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aa858dcc2b-h4"
+        ],
+        "title": "Exponential Function",
+        "text": "Does $$f(x)=\\log_{3}\\left(x\\right)$$ satisfy the question's condition?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

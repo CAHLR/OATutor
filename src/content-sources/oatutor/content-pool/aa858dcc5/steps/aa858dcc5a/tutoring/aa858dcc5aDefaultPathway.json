@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aa858dcc5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting up Equations using Given Information",
+        "text": "$$f(1)=6$$ implies $$K b=6$$. $$f(3)=24$$ implies $$K b^3=24$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa858dcc5a-h1"
+        ],
+        "title": "Solving the Equations",
+        "text": "From the two equations, we can get $$\\frac{24}{6}=\\frac{K b^3}{K b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "aa858dcc5a-h2"
+        ],
+        "title": "Solve the value of $$b$$",
+        "text": "What is the value of $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aa858dcc5a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve the value of $$b$$",
+                "text": "$$b^2=4$$. Since $$b>1$$, $$b=2$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aa858dcc5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa858dcc5a-h3"
+        ],
+        "title": "Solve the value of K",
+        "text": "Substitute $$b=2$$ into $$K b=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aa858dcc5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aa858dcc5a-h4"
+        ],
+        "title": "Solve the value of K",
+        "text": "What is the value of K?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]
