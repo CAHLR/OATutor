@@ -168,9 +168,6 @@ class Platform extends React.Component {
                                                 ToastID.set_lesson_duplicate_error.toString(),
                                         }
                                     );
-                                    this.props.history.push(
-                                        `/assignment-already-linked?to=${addInfo.to}`
-                                    );
                                     return;
                                 default:
                                     toast.error(`Error: ${responseText}`, {
@@ -213,6 +210,11 @@ class Platform extends React.Component {
                         {
                             toastId: ToastID.set_lesson_success.toString(),
                         }
+                    );
+                    const responseText = await response.text();
+                    let [message, ...addInfo] = responseText.split("|");
+                    this.props.history.push(
+                        `/assignment-already-linked?to=${addInfo.to}`
                     );
                 }
             }
