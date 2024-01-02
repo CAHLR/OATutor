@@ -81,7 +81,7 @@
             "a0393f5exp6a-h6"
         ],
         "title": "Log Property",
-        "text": "Can $$10\\times9^x=9^{2x}$$ imply log{9,10*(9**x)}=log{9,9**(2*x)}?",
+        "text": "Can $$10\\times9^x=9^{2x}$$ imply $$\\log_{9}\\left(10\\times9^x\\right)=\\log_{9}\\left(9^{2x}\\right)$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
@@ -150,8 +150,8 @@
     {
         "id": "a0393f5exp6a-h12",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\log_{9}\\left(10\\right)$$"
         ],
@@ -162,6 +162,11 @@
         "text": "$$\\log_{9}\\left(10\\right)+x=2x$$. What is $$x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\log_{9}\\left(10\\right)$$",
+            "$$(1/2)*\\log_{9}\\left(10\\right)$$",
+            "$$0$$"
+        ]
     }
 ]
