@@ -154,7 +154,7 @@ class ProblemInput extends React.Component {
                         >
                         </textarea>
                     )}
-                    {(problemType === "MultipleChoice" && keepMCOrder) && (
+                                        {(problemType === "MultipleChoice" && keepMCOrder) ? (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
                             choices={[...this.props.step.choices].reverse()}
@@ -164,8 +164,8 @@ class ProblemInput extends React.Component {
                             } : {}}
                             variabilization={variabilization}
                         />
-                    )}
-                    {(problemType === "MultipleChoice" && (keepMCOrder === false || keepMCOrder === null)) && (
+                    ) :
+                    (problemType === "MultipleChoice") && (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
                             choices={shuffleArray(this.props.step.choices, this.props.seed)}
