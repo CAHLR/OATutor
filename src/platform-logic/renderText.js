@@ -38,6 +38,10 @@ function renderText(text, problemID, variabilization, context) {
         lineParts = lineParts.map((part, jdx) => {
             const isLaTeX = jdx % 2 !== 0; // implies it is in between two "$$" delimiters
             if (isLaTeX) {
+                const regex = /^_{3,}$/;
+                if (regex.test(part)) {
+                    return parseForFillInQuestions(part);
+                }
                 return <ErrorBoundary componentName={"InlineMath"}
                     replacement={part}
                     inline
