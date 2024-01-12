@@ -1,0 +1,209 @@
+[
+    {
+        "id": "afe8817exp2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logarithmic Laws",
+        "text": "Note $$\\log_{c}\\left(\\frac{a}{b}\\right)=\\log_{c}\\left(a\\right)-\\log_{c}\\left(b\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "afe8817exp2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\log_{3}\\left(3^{2x-1} 9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h1"
+        ],
+        "title": "Logarithmic Laws",
+        "text": "Which option can $$\\log_{3}\\left(\\frac{3^{2x-1} 9^{x^2}}{27}\\right)$$ be simplified using the given property?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\log_{3}\\left(3^{2x-1} 9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$",
+            "$$\\log_{3}\\left(3^{2x-1} 9^{x^2}\\right)+\\log_{3}\\left(27\\right)$$",
+            "$$\\log_{3}\\left(27\\right)-\\log_{3}\\left(3^{2x-1} 9^{x^2}\\right)$$"
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe8817exp2a-h2"
+        ],
+        "title": "Logarithmic Laws",
+        "text": "Note $$\\log_{c}\\left(a b\\right)=\\log_{c}\\left(a\\right)+\\log_{c}\\left(b\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "afe8817exp2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\log_{3}\\left(3^{2x-1}\\right)+\\log_{3}\\left(9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h3"
+        ],
+        "title": "Logarithmic Laws",
+        "text": "Which option can $$\\log_{3}\\left(3^{2x-1} 9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$ be simplified using the given property?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\log_{3}\\left(3^{2x-1}\\right)+\\log_{3}\\left(9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$",
+            "$$\\log_{3}\\left(3^{2x-1}\\right)-\\log_{3}\\left(9^{x^2}\\right)-\\log_{3}\\left(27\\right)$$"
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h4"
+        ],
+        "title": "Simplification",
+        "text": "Is $$9^{x^2}$$ equivalent to $${\\left(3^2\\right)}^{x^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h5"
+        ],
+        "title": "Simplification",
+        "text": "Is $${\\left(3^2\\right)}^{x^2}$$ equivalent to $$3^{2x^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "afe8817exp2a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplification",
+                "text": "Note $${\\left(a^b\\right)}^c=a^{b c}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h6"
+        ],
+        "title": "Simplification",
+        "text": "Does $$27$$ equal to $$3^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h8",
+        "type": "hint",
+        "dependencies": [
+            "afe8817exp2a-h7"
+        ],
+        "title": "Simplification",
+        "text": "Now we have $$\\log_{3}\\left(3^{2x-1}\\right)+\\log_{3}\\left(3^{2x^2}\\right)-\\log_{3}\\left(3^3\\right)$$. Note that we can use an important fact that $$\\log_{b}\\left(b^a\\right)=a$$ to simplify further.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "afe8817exp2a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x-1+2x^2-3$$"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h8"
+        ],
+        "title": "Simplification",
+        "text": "Which option is the result of simplification of $$\\log_{3}\\left(3^{2x-1}\\right)+\\log_{3}\\left(3^{2x^2}\\right)-\\log_{3}\\left(3^3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x-1+2x^2-3$$",
+            "$$2x-1-2x^2-3$$"
+        ]
+    },
+    {
+        "id": "afe8817exp2a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^2+2x-4$$"
+        ],
+        "dependencies": [
+            "afe8817exp2a-h9"
+        ],
+        "title": "Conclusion",
+        "text": "What is the simplified answer of $$\\log_{3}\\left(\\frac{3^{2x-1} 9^{x^2}}{27}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^2+2x-4$$",
+            "$$2x^2+2x+4$$",
+            "$$2x^2+2x-2$$"
+        ],
+        "subHints": [
+            {
+                "id": "afe8817exp2a-h10-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Conclusion",
+                "text": "$$2x-1+2x^2-3=2x^2+2x-4$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]
