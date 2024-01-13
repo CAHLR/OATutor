@@ -34,8 +34,6 @@ function renderText(text, problemID, variabilization, context) {
          * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
          * @type {(string | JSX.Element)[]}
          */
-        line = line.replaceAll("pi", "\\$\\$\\\\pi\\$\\$");
-        line = line.replaceAll("!=", "\\$\\$\\\\neq\\$\\$");
         let lineParts = line.split("$$");
         lineParts = lineParts.map((part, jdx) => {
             const isLaTeX = jdx % 2 !== 0; // implies it is in between two "$$" delimiters
