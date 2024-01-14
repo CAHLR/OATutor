@@ -55,7 +55,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "$$tan\\left(\\frac{\\pi}{4}\\right)$$",
-                "text": "$$tan\\left(\\frac{\\pi}{4}\\right)=\\fracsin^c\\left(\\frac{\\pi}{4}\\right)os\\left(\\frac{\\pi}{4}\\right)}=\\frac{\\frac{1}{\\sqrt{2}}}{\\frac{1}{\\sqrt{2}}}=1$$",
+                "text": "$$tan\\left(\\frac{\\pi}{4}\\right)=\\fracsin^c\\left(\\frac{\\pi}{4}\\right)os\\left(\\frac{\\pi}{4}\\right)}=1$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io",
                 "license": ""
@@ -77,8 +77,8 @@
     {
         "id": "a863f05tri3a-h6",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\sqrt{2}$$"
         ],
@@ -89,7 +89,11 @@
         "text": "What is $$\\operatorname{sec}\\left(\\frac{\\pi}{4}\\right)$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\sqrt{2}$$",
+            "$$-\\sqrt{2}$$"
+        ]
     },
     {
         "id": "a863f05tri3a-h7",
@@ -106,8 +110,8 @@
     {
         "id": "a863f05tri3a-h8",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\sqrt{2}$$"
         ],
@@ -118,7 +122,11 @@
         "text": "What is $$\\operatorname{csc}\\left(\\frac{\\pi}{4}\\right)$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\sqrt{2}$$",
+            "$$-\\sqrt{2}$$"
+        ]
     },
     {
         "id": "a863f05tri3a-h9",
