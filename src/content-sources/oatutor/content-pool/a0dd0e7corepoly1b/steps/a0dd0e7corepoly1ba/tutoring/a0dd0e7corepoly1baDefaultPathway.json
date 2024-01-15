@@ -1,0 +1,141 @@
+[
+    {
+        "id": "a0dd0e7corepoly1ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of a Line",
+        "text": "The slope of a line can be determined using two points $$(x_1,y_1)$$, $$(x_2,y_2)$$ by subtracting the y-values over the x-values: $$\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h1"
+        ],
+        "title": "Slope of a Line",
+        "text": "Substituting the points $$(-3,2)$$, $$(5,-2)$$, the slope is equal to $$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$-2-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$5-(-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h3",
+            "a0dd0e7corepoly1ba-h4"
+        ],
+        "title": "Slope of a Line",
+        "text": "$$\\frac{-4}{8}$$ can be simplified to get the slope of the line: $$\\frac{-1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h5"
+        ],
+        "title": "Point-Slope Form",
+        "text": "The point slope formula can be used to get the function of a line through the given point: $$y-y_1=m \\left(x-x_1\\right)$$ where $$m$$ is the slope and $$(x_1,y_1)$$ is the point.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h6"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Substituing $$m=\\frac{-1}{2}$$ and $$(-3,2)$$ for the point, the formula is equal to $$y-2=-\\left(\\frac{1}{2}\\right) \\left(x+3\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h7"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Distribute $$\\frac{-1}{2}$$ to $$x+3$$. What is $$3-\\left(\\frac{1}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h8"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Add $$2$$ from the left to get $$y=-\\left(\\frac{1}{2}\\right) x-\\frac{3}{2}+2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h9"
+        ],
+        "title": "Point-Slope Form",
+        "text": "What is $$\\frac{-3}{2}+2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

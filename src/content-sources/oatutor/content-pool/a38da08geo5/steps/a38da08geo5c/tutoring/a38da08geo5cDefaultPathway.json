@@ -1,0 +1,161 @@
+[
+    {
+        "id": "a38da08geo5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "When $$w=0$$",
+        "text": "If $$w=0$$, then $$2w^2+4w h=0`32$$, so $$w`0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h1"
+        ],
+        "title": "Simplification",
+        "text": "$$2w^2+4w h=32$$. $$w \\left(w+2h\\right)=16$$. $$\\frac{16}{w}=w+2h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo5c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h=\\frac{8}{w}-\\frac{w}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h2"
+        ],
+        "title": "Simplification",
+        "text": "Express $$\\frac{16}{w}=w+2h$$ in the form of $$h$$. What is the result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$h=\\frac{8}{w}+\\frac{w}{2}$$",
+            "$$h=\\frac{8}{w}-\\frac{w}{2}$$",
+            "$$h=\\frac{8}{w}-\\frac{2}{w}$$",
+            "$$h=\\frac{-8}{w}-\\frac{w}{2}$$"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8w-\\frac{w^3}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h3"
+        ],
+        "title": "Volume",
+        "text": "Substitute $$h=\\frac{8}{w}-\\frac{w}{2}$$ to $$V=w^2 h$$. What is the volume expressed in w only?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$8w-\\frac{w^3}{2}$$",
+            "$$8-\\frac{w^2}{2}$$"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h4"
+        ],
+        "title": "Range",
+        "text": "w must be nonnegative since it represents width, and since $$w`0$$, $$w>0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo5c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h5"
+        ],
+        "title": "Range",
+        "text": "$$h \\geq 0$$, so $$\\frac{8}{w}-\\frac{w}{2} \\geq 0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo5c-h7",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h6"
+        ],
+        "title": "Simplification",
+        "text": "Multiply w on both sides, we get $$8-\\frac{w^2}{2} \\geq 0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo5c-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$w \\leq 4$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h7"
+        ],
+        "title": "Simplification",
+        "text": "What is the range of w?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$w \\leq 4$$",
+            "$$w \\leq -4$$",
+            "$$w \\geq 4$$",
+            "$$w \\geq -4$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo5c-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplification",
+                "text": "$$\\frac{w^2}{2} \\leq 8$$, $$w^2 \\leq 16$$. Since w >0, $$w \\leq 4$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,4]"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h8"
+        ],
+        "title": "Simplification",
+        "text": "What is $$w \\leq 4$$ in interval notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "(0,4]",
+            "[0,4]",
+            "$$(0,4)$$"
+        ]
+    }
+]

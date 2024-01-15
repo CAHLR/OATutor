@@ -94,7 +94,7 @@
             "aff8a70precal8a-h4"
         ],
         "title": "Special Case",
-        "text": "Note that $$x=-2$$ gives $$LHS=0$$ and $$RHS=0$$, so $$x \\neq -2$$, which is equivalent to $$x+2 \\neq 0$$.",
+        "text": "Note that $$x=-2$$ gives $$LHS=0$$ and $$RHS=0$$, so $$x$$ cannot be $$-2$$, which means $$x+2$$ cannot be $$0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -111,7 +111,7 @@
             "aff8a70precal8a-h5"
         ],
         "title": "Special Case",
-        "text": "Is $$x+2 \\neq 0$$ equivalent to $$|x+2|>0$$?",
+        "text": "Is $$x+2`0$$ equivalent to $$|x+2|>0$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
@@ -139,7 +139,7 @@
             "aff8a70precal8a-h6"
         ],
         "title": "Simplification",
-        "text": "For $$x \\neq 2$$, we now have $$\\frac{{|x+2|}^3}{2}>2|x+2|$$",
+        "text": "For $$x`2$$, we now have $$\\frac{{|x+2|}^3}{2}>2|x+2|$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -199,7 +199,7 @@
             "aff8a70precal8a-h11"
         ],
         "title": "Simplification",
-        "text": "For a,b>0, $$a>b$$ is equivalent to $$\\sqrt{a}>\\sqrt{b}$$.",
+        "text": "For a,b > $$0$$, $$a>b$$ is equivalent to $$\\sqrt{a}>\\sqrt{b}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -268,7 +268,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[(-inf,-4)|(0,inf)]"
+            "$$(-\\infty,-4)$$ $$\\cup$$ $$(0,\\infty)$$"
         ],
         "dependencies": [
             "aff8a70precal8a-h16"
@@ -279,8 +279,7 @@
         "oer": "https://OATutor.io",
         "license": "",
         "choices": [
-            "[(-inf,-4)",
-            "(0,inf)]",
+            "$$(-\\infty,-4)$$ $$\\cup$$ $$(0,\\infty)$$",
             "$$(-4,0)$$"
         ]
     }

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a38da08geo3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Follow the hint",
+        "text": "a and $$b$$ must be non-negative implies that $$a \\geq 0$$, $$b \\geq 0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo3d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo3d-h1"
+        ],
+        "title": "Simplification",
+        "text": "$$50a-\\frac{2+\\pi}{4} a \\geq 0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo3d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a \\leq \\frac{200}{2+\\pi}$$"
+        ],
+        "dependencies": [
+            "a38da08geo3d-h2"
+        ],
+        "title": "Simplification",
+        "text": "What is the range of a?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a \\leq \\frac{200}{2+\\pi}$$",
+            "$$a \\leq \\frac{400}{2+\\pi}$$"
+        ]
+    },
+    {
+        "id": "a38da08geo3d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[0,\\frac{200}{2+\\pi}]$$"
+        ],
+        "dependencies": [
+            "a38da08geo3d-h3"
+        ],
+        "title": "Interval Notation",
+        "text": "What is a in interval notation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$[0,\\frac{400}{4+\\pi}]$$",
+            "$$[0,\\frac{200}{2+\\pi}]$$"
+        ]
+    }
+]

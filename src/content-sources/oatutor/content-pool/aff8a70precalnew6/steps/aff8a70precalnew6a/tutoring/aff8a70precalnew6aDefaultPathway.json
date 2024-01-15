@@ -21,7 +21,7 @@
             "aff8a70precalnew6a-h1"
         ],
         "title": "Can't divide by $$0$$",
-        "text": "What value $$x$$ cannot equal if $$x+2 \\neq 0$$?",
+        "text": "What value $$x$$ cannot equal if $$x+2`0$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -83,7 +83,7 @@
             "aff8a70precalnew6a-h5"
         ],
         "title": "Absolute value",
-        "text": "For $$x \\neq -2$$, we have $$\\frac{4}{|x+2|}<3$$, which means $$3|x+2|>4$$.",
+        "text": "For $$x`-2$$, we have $$\\frac{4}{|x+2|}<3$$, which means $$3|x+2|>4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -198,7 +198,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[(-inf,-10/3)|(-2/3,inf)]"
+            "$$(-\\infty,\\frac{-10}{3})$$ $$\\cup$$ $$(\\frac{-2}{3},\\infty)$$"
         ],
         "dependencies": [
             "aff8a70precalnew6a-h12"
@@ -209,10 +209,8 @@
         "oer": "https://OATutor.io",
         "license": "",
         "choices": [
-            "[(-inf,-10/3)",
-            "(-2/3,inf)]",
-            "[(-inf,-10/3)",
-            "(2/3,inf)]"
+            "$$(-\\infty,\\frac{-10}{3})$$ $$\\cup$$ $$(\\frac{-2}{3},\\infty)$$",
+            "$$(-\\infty,\\frac{-10}{3})$$ $$\\cup$$ $$(\\frac{2}{3},\\infty)$$"
         ],
         "subHints": [
             {
@@ -220,7 +218,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Interval Notation",
-                "text": "Remember that $$x \\neq -2$$",
+                "text": "Remember that $$x`-2$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io",
                 "license": ""

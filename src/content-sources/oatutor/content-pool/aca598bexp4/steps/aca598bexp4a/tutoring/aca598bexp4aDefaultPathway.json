@@ -1,0 +1,260 @@
+[
+    {
+        "id": "aca598bexp4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Can't divide by $$0$$",
+        "text": "$$x^2-9`0$$, $$x-3`0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3&-3$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h1"
+        ],
+        "title": "Can't divide by $$0$$",
+        "text": "What values $$x$$ cannot be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3&-3$$",
+            "$$3$$",
+            "$$-3$$"
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h2"
+        ],
+        "title": "LHS",
+        "text": "$$a=\\frac{a b}{b}$$, so $$\\frac{30}{x^2-9}+2=\\frac{30}{x^2-9}+\\frac{2\\left(x^2-9\\right)}{x^2-9}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h3"
+        ],
+        "title": "LHS",
+        "text": "$$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$$, so $$\\frac{30}{x^2-9}+\\frac{2\\left(x^2-9\\right)}{x^2-9}=\\frac{30+2\\left(x^2-9\\right)}{x^2-9}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^2+12$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h4"
+        ],
+        "title": "LHS",
+        "text": "What is $$30+2\\left(x^2-9\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^2+12$$",
+            "$$2x^2+42$$",
+            "$$2x^2-12$$"
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h5"
+        ],
+        "title": "LHS",
+        "text": "$$LHS=\\frac{2x^2+12}{x^2-9}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h6"
+        ],
+        "title": "RHS",
+        "text": "Multiply $$\\frac{x+3}{x+3}$$ to make the denominator of $$LHS=x^{-9}$$ also.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5x+15$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h7"
+        ],
+        "title": "RHS",
+        "text": "$$\\frac{5}{x-3} \\frac{x+3}{x+3}$$. In the numerator, what is $$5\\left(x+3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$5x+15$$",
+            "$$5x-15$$"
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^2-9$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h8"
+        ],
+        "title": "RHS",
+        "text": "$$\\frac{5}{x-3} \\frac{x+3}{x+3}$$. In the denominator, what is $$\\left(x-3\\right) \\left(x+3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x^2-9$$",
+            "$$x^2+9$$"
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h10",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h9"
+        ],
+        "title": "RHS",
+        "text": "$$RHS=\\frac{5x+15}{x^2-9}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h10"
+        ],
+        "title": "$$LHS=RHS$$",
+        "text": "For $$x`\\pm 3$$, $$\\frac{2x^2+12}{x^2-9}=\\frac{5x+15}{x^2-9}$$ means that $$2x^2+12=5x+15$$, which is $$2x^2-5x-3=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h12",
+        "type": "hint",
+        "dependencies": [
+            "aca598bexp4a-h11"
+        ],
+        "title": "Solve the roots",
+        "text": "To solve $$2x^2-5x-3=0$$, use the formula $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4a c}\\right)}{2a}$$ where $$a=2$$, $$b=-5$$, $$c=-3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "aca598bexp4a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$ or $$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h12"
+        ],
+        "title": "Solve the roots",
+        "text": "What is $$x$$ after solving the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3$$ or $$\\frac{-1}{2}$$",
+            "$$-3$$ or $$\\frac{-1}{2}$$",
+            "$$3$$ or $$\\frac{1}{2}$$",
+            "$$-3$$ or $$\\frac{1}{2}$$"
+        ],
+        "subHints": [
+            {
+                "id": "aca598bexp4a-h13-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve the roots",
+                "text": "$$\\frac{5\\pm \\sqrt{25+24}}{4}=\\frac{5\\pm \\sqrt{49}}{4}=\\frac{5\\pm 7}{4}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h13"
+        ],
+        "title": "Solve the roots",
+        "text": "Can we choose $$x=3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aca598bexp4a-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "aca598bexp4a-h14"
+        ],
+        "title": "Conclusion",
+        "text": "What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1}{2}$$",
+            "$$\\frac{1}{2}$$",
+            "$$3$$"
+        ]
+    }
+]

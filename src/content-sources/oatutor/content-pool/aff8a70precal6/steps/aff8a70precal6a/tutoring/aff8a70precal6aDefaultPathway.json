@@ -21,7 +21,7 @@
             "aff8a70precal6a-h1"
         ],
         "title": "Can't divide by $$0$$",
-        "text": "What value $$x$$ cannot equal if $$x+1 \\neq 0$$?",
+        "text": "What value $$x$$ cannot equal if $$x+1`0$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -83,7 +83,7 @@
             "aff8a70precal6a-h5"
         ],
         "title": "Absolute value",
-        "text": "For $$x \\neq -1$$, $$\\frac{3}{|x+1|}<2$$, which means $$2|x+1|>3$$.",
+        "text": "For $$x`-1$$, $$\\frac{3}{|x+1|}<2$$, which means $$2|x+1|>3$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -159,8 +159,8 @@
     {
         "id": "aff8a70precal6a-h11",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{1}{2}$$"
         ],
@@ -171,13 +171,17 @@
         "text": "$$x+1>\\frac{3}{2}$$, x>?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{-1}{2}$$"
+        ]
     },
     {
         "id": "aff8a70precal6a-h12",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{-5}{2}$$"
         ],
@@ -188,7 +192,11 @@
         "text": "x+1<-3/2,x<?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{-5}{2}$$",
+            "$$\\frac{5}{2}$$"
+        ]
     },
     {
         "id": "aff8a70precal6a-h13",
@@ -196,7 +204,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[(-inf,-5/2)|(1/2,inf)]"
+            "$$(-\\infty,\\frac{-5}{2})$$ $$\\cup$$ $$(\\frac{1}{2},\\infty)$$"
         ],
         "dependencies": [
             "aff8a70precal6a-h12"
@@ -207,10 +215,8 @@
         "oer": "https://OATutor.io",
         "license": "",
         "choices": [
-            "[(-inf,-5/2)",
-            "(1/2,inf)]",
-            "[(-inf,-5/2)",
-            "(-1/2,inf)]"
+            "$$(-\\infty,\\frac{-5}{2})$$ $$\\cup$$ $$(\\frac{1}{2},\\infty)$$",
+            "$$(-\\infty,\\frac{-5}{2})$$ $$\\cup$$ $$(\\frac{-1}{2},\\infty)$$"
         ],
         "subHints": [
             {
@@ -218,7 +224,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Interval Notation",
-                "text": "Remember that $$x \\neq -1$$",
+                "text": "Remember that $$x`-1$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io",
                 "license": ""
