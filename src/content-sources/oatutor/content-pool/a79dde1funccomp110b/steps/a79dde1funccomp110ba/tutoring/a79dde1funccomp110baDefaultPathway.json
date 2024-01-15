@@ -1,0 +1,120 @@
+[
+    {
+        "id": "a79dde1funccomp110ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unbounded Functions",
+        "text": "A function is not bounded when its range, or output, can reach $$\\infty$$ or $$-\\infty$$ as $$x$$ grows larger or smaller.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp110ba-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{x^2+1}$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp110ba-h1"
+        ],
+        "title": "Bounds of f",
+        "text": "What is (f $$\\circ$$ g)(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{x^2+1}$$",
+            "$$x^2+1$$"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp110ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a79dde1funccomp110ba-h2"
+        ],
+        "title": "Bounds of f",
+        "text": "Is (f $$\\circ$$ g)(x) bounded?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a79dde1funccomp110ba-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounds of f $$\\circ$$ g",
+                "text": "Since $$f(g(x))=g(x)$$ for all $$x$$, then f $$\\circ$$ $$g=g$$. The bounds of the composition are the same as g.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a79dde1funccomp110ba-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^2+1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp110ba-h3"
+        ],
+        "title": "Bounds of f",
+        "text": "What is (f $$\\circ$$ g)(1/x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{x^2+1}$$",
+            "$$x^2+1$$"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp110ba-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a79dde1funccomp110ba-h4"
+        ],
+        "title": "Bounds of f",
+        "text": "Is (f $$\\circ$$ g)(1/x) bounded?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a79dde1funccomp110ba-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounds of f $$\\circ$$ g",
+                "text": "As $$x$$ approaches $$\\infty$$, $$x^2+1$$ approaches $$\\infty$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

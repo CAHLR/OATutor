@@ -1,0 +1,162 @@
+[
+    {
+        "id": "a79dde1funccomp3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substituting $$x$$",
+        "text": "For all instances of $$x$$, replace with $$2x-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp3a-h1"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "Replacing $$x$$ within $$3x^2$$ results in $$3{\\left(2x-1\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^2-4x+1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h2"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "What is $${\\left(2x-1\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a79dde1funccomp3a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Multiplying Binomials",
+                "text": "For a,b, $${\\left(a x+b\\right)}^2=a^2 x^2+2a b x+b^2$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a79dde1funccomp3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12x^2-12x+3$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h3"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "What is $$3\\left(4x^2-4x+1\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a79dde1funccomp3a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Distributing Terms",
+                "text": "For a,b,c, $$a \\left(b+c\\right)=a b+a c$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a79dde1funccomp3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x-1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h4"
+        ],
+        "title": "Substituting $$x$$ in $$x$$",
+        "text": "What is $$x$$ replaced with $$2x-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h5"
+        ],
+        "title": "Substituting $$x$$ in $$1$$",
+        "text": "What is $$1$$ replaced with $$2x-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp3a-h6"
+        ],
+        "title": "Adding the Terms",
+        "text": "Add up $$12x^2-12x+3$$, $$2x-1$$, and $$1$$ by combining like terms to get the final result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-10x$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h7"
+        ],
+        "title": "Adding the Terms",
+        "text": "What is $$-12x+2x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a79dde1funccomp3a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp3a-h7"
+        ],
+        "title": "Adding the Terms",
+        "text": "What is $$3-1+1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
