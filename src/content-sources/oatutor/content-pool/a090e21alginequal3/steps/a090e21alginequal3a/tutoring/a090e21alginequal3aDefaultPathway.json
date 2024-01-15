@@ -1,0 +1,226 @@
+[
+    {
+        "id": "a090e21alginequal3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Removing the Cube Root",
+        "text": "For some nth root $$b$$, $$\\sqrt[b]{a}>\\sqrt[b]{c}$$ is the same as $$a>c$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x+2$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h1"
+        ],
+        "title": "Removing the Cube Root",
+        "text": "What is $$\\sqrt[3]{3x+2}$$ written without the cube root?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1+4x$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h1"
+        ],
+        "title": "Removing the Cube Root",
+        "text": "What is $$\\sqrt[3]{1+4x}$$ written without the cube root?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a090e21alginequal3a-h2",
+            "a090e21alginequal3a-h3"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a090e21alginequal3a-h4"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "Subtract $$3x$$ from the left and subtract $$1$$ from the right to get $$2-1>4x-3x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h5"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "What is $$2-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h6"
+        ],
+        "title": "Simplifying the Inequality",
+        "text": "What is $$4x-3x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a090e21alginequal3a-h7"
+        ],
+        "title": "Interval Notation",
+        "text": "The inequality $$1>x$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\infty$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h8"
+        ],
+        "title": "Interval Notation",
+        "text": "What is the lower bound of the inequality $$1>x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1$$",
+            "$$-\\infty$$"
+        ]
+    },
+    {
+        "id": "a090e21alginequal3a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h9"
+        ],
+        "title": "Interval Notation",
+        "text": "What is the upper bound of the inequality $$1>x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1$$",
+            "$$\\infty$$"
+        ]
+    },
+    {
+        "id": "a090e21alginequal3a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a090e21alginequal3a-h9",
+            "a090e21alginequal3a-h10"
+        ],
+        "title": "Interval Notation",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a090e21alginequal3a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h11"
+        ],
+        "title": "Interval Notation",
+        "text": "Is the lower bound $$-\\infty$$ included as a valid value of 'x' in $$1>x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a090e21alginequal3a-h12-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Infinity in Interval Notation",
+                "text": "As $$\\infty$$ is not a number, it cannot be included as part of a valid value or bound for 'x'.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a090e21alginequal3a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a090e21alginequal3a-h11"
+        ],
+        "title": "Interval Notation",
+        "text": "Is the upper bound $$\\infty$$ included as a valid value of 'x' in $$1>x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
