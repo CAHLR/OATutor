@@ -6,7 +6,7 @@
         "title": "Equation for a circle",
         "text": "Circle centered at $$(0,0)$$ of radius $$2$$ has equation $$x^2+y^2=2^2$$.",
         "variabilization": {},
-        "oer": "https://OATutor.io",
+        "oer": "",
         "license": ""
     },
     {
@@ -18,7 +18,7 @@
         "title": "Equation for a circle",
         "text": "$$x^2+y^2=2^2$$ is equivalent to $$y=\\pm \\sqrt{4-x^2}$$ for $$x$$ in [-2,2].",
         "variabilization": {},
-        "oer": "https://OATutor.io",
+        "oer": "",
         "license": ""
     },
     {
@@ -35,7 +35,7 @@
         "title": "The shaded region",
         "text": "Which equation fits the upper semicircle region shown in the shaded plot?",
         "variabilization": {},
-        "oer": "https://OATutor.io",
+        "oer": "",
         "license": "",
         "choices": [
             "$$y=\\pm \\sqrt{4-x^2}$$",
@@ -57,14 +57,14 @@
         "title": "Find the height of each rectangle",
         "text": "For the equation $$y=\\sqrt{4-x^2}$$, what is $$y$$ when $$x=0$$?",
         "variabilization": {},
-        "oer": "https://OATutor.io",
+        "oer": "",
         "license": ""
     },
     {
         "id": "a38da08geo10a-h5",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{\\sqrt{15}}{2}$$"
         ],
@@ -75,13 +75,17 @@
         "text": "For the equation $$y=\\sqrt{4-x^2}$$, what is $$y$$ when $$x=0.5$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{15}}{2}$$",
+            "$$-\\left(\\frac{\\sqrt{15}}{2}\\right)$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h6",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\sqrt{3}$$"
         ],
@@ -92,13 +96,17 @@
         "text": "For the equation $$y=\\sqrt{4-x^2}$$, what is $$y$$ when $$x=1$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\sqrt{3}$$",
+            "$$-\\sqrt{3}$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h7",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{\\sqrt{7}}{2}$$"
         ],
@@ -109,7 +117,11 @@
         "text": "For the equation $$y=\\sqrt{4-x^2}$$, what is $$y$$ when $$x=1.5$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{7}}{2}$$",
+            "$$-\\left(\\frac{\\sqrt{7}}{2}\\right)$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h8",
@@ -123,7 +135,7 @@
             "a38da08geo10a-h7"
         ],
         "title": "Find the area of each rectangle",
-        "text": "Using the rectangle area formula $$A=length width$$, what is the area of R1?",
+        "text": "Using the rectangle area formula $$A=length$$ times width, what is the area of R1?",
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": ""
@@ -131,8 +143,8 @@
     {
         "id": "a38da08geo10a-h9",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{\\sqrt{15}}{4}$$"
         ],
@@ -140,16 +152,20 @@
             "a38da08geo10a-h8"
         ],
         "title": "Find the area of each rectangle",
-        "text": "Using the rectangle area formula $$A=length width$$, what is the area of R2?",
+        "text": "Using the rectangle area formula $$A=length$$ times width, what is the area of R2?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{15}}{4}$$",
+            "$$-\\left(\\frac{\\sqrt{15}}{4}\\right)$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h10",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{\\sqrt{3}}{2}$$"
         ],
@@ -157,16 +173,20 @@
             "a38da08geo10a-h9"
         ],
         "title": "Find the area of each rectangle",
-        "text": "Using the rectangle area formula $$A=length width$$, what is the area of R3?",
+        "text": "Using the rectangle area formula $$A=length$$ times width, what is the area of R3?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{3}}{2}$$",
+            "$$-\\left(\\frac{\\sqrt{3}}{2}\\right)$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h11",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{\\sqrt{7}}{4}$$"
         ],
@@ -174,10 +194,14 @@
             "a38da08geo10a-h10"
         ],
         "title": "Find the area of each rectangle",
-        "text": "Using the rectangle area formula $$A=length width$$, what is the area of R4?",
+        "text": "Using the rectangle area formula $$A=length$$ times width, what is the area of R4?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{7}}{4}$$",
+            "$$-\\left(\\frac{\\sqrt{7}}{4}\\right)$$"
+        ]
     },
     {
         "id": "a38da08geo10a-h12",
