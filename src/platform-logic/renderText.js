@@ -17,6 +17,7 @@ function renderText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
     }
+    text = text.replaceAll("\\neq", "≠")
     let result = text;
     result = parseForMetaVariables(result, context);
 
