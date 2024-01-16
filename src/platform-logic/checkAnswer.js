@@ -68,11 +68,17 @@ function parse(_string) {
     return KAS.parse(string)
 }
 
-function validateAndCorrectFractionFormat(input) {
-    const regex = /\\frac(\d)(\d)/g;
+function validateAndCorrectFormat(input) {
+    const fraction = /\\frac(\d)(\d)/g;
 
-    const correctedInput = input.replace(regex, (match, numerator, denominator) => {
+    const correctedInputFraction = input.replace(fraction, (match, numerator, denominator) => {
         return `\\frac{${numerator}}{${denominator}}`;
+    });
+
+    const sqrt = /\\sqrt(\d)/g;
+
+    const correctedInput = correctedInputFraction.replace(sqrt, (match, number) => {
+        return `\\sqrt{${number}}`;
     });
 
     return correctedInput;
@@ -124,7 +130,7 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
 
                 return [attempt, false, WrongAnswerReasons.wrong]
             } else {
-                attempt = validateAndCorrectFractionFormat(attempt);
+                attempt = validateAndCorrectFormat(attempt);
                 parsed = parse(attempt).expr;
                 if (IS_STAGING_OR_DEVELOPMENT) {
                     console.debug("checkAnswer.js: Using KAS to compare answer with solution", "attempt", attempt, "actual", actual, "parsed", parsed)
