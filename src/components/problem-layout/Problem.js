@@ -551,14 +551,7 @@ class Problem extends React.Component {
                     </div>
                 </div>
                 <footer>
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "row",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div style={{ marginLeft: 20, fontSize: 12 }}>
+                    <div style={{ marginLeft: 20, fontSize: 12 }}>
                             {licenseName !== "" && licenseLink !== "" ? (
                                 <div>
                                     "{problem.title}" is a derivative of&nbsp;
@@ -580,6 +573,8 @@ class Problem extends React.Component {
                                 </div>
                             ) : (
                                 <div>
+                                {oerName !== "" && oerLink !== "" ? (
+                                <div>
                                     "{problem.title}" is a derivative of&nbsp;
                                     <a
                                         href={oerLink}
@@ -589,6 +584,10 @@ class Problem extends React.Component {
                                         "{oerName}"
                                     </a>
                                 </div>
+                            ) : (
+                                <></>
+                            )}
+                            </div>
                             )}
                         </div>
                         <div
