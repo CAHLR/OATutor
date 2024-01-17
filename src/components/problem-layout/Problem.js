@@ -373,10 +373,10 @@ class Problem extends React.Component {
         } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
             oerArray = lesson.courseOER.split(" <");
         } else {
-            oerArray = ["https://OATutor.io", "OATutor>"];
+            oerArray = ["", ""];
         }
 	} catch(error) {
-		oerArray = ["https://OATutor.io", "OATutor>"];
+		oerArray = ["", ""];
 	}
 
         oerLink = oerArray[0];
