@@ -551,7 +551,14 @@ class Problem extends React.Component {
                     </div>
                 </div>
                 <footer>
-                    <div style={{ marginLeft: 20, fontSize: 12 }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                        }}
+                    >
+                        <div style={{ marginLeft: 20, fontSize: 12 }}>
                             {licenseName !== "" && licenseLink !== "" ? (
                                 <div>
                                     "{problem.title}" is a derivative of&nbsp;
