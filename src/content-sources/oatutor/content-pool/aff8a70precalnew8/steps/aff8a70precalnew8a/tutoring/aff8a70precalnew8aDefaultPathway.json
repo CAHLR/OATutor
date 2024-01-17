@@ -195,8 +195,8 @@
     {
         "id": "aff8a70precalnew8a-h14",
         "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
         "hintAnswer": [
             "$$\\sqrt{6}-2$$"
         ],
@@ -207,17 +207,13 @@
         "text": "$$x+2>\\sqrt{6}$$, x>?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": "",
-        "choices": [
-            "$$\\sqrt{6}-2$$",
-            "$$-\\sqrt{6}-2$$"
-        ]
+        "license": ""
     },
     {
         "id": "aff8a70precalnew8a-h15",
         "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
         "hintAnswer": [
             "$$-\\sqrt{6}-2$$"
         ],
@@ -225,14 +221,10 @@
             "aff8a70precalnew8a-h14"
         ],
         "title": "Simplification",
-        "text": "$$x+2<\\left(-\\sqrt{6}\\right)$$, x<?",
+        "text": "x+2<-sqrt(6),x<?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": "",
-        "choices": [
-            "$$\\sqrt{6}-2$$",
-            "$$-\\sqrt{6}-2$$"
-        ]
+        "license": ""
     },
     {
         "id": "aff8a70precalnew8a-h16",
@@ -252,7 +244,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$(-\\infty,-\\sqrt{6}-2)$$ $$\\cup$$ $$(\\sqrt{6}-2,\\infty)$$"
+            "[(-inf,-sqrt(6)-2)|(sqrt(6)-2,inf)]"
         ],
         "dependencies": [
             "aff8a70precalnew8a-h16"
@@ -263,7 +255,8 @@
         "oer": "https://OATutor.io",
         "license": "",
         "choices": [
-            "$$(-\\infty,-\\sqrt{6}-2)$$ $$\\cup$$ $$(\\sqrt{6}-2,\\infty)$$",
+            "[(-inf,-sqrt(6)-2)",
+            "(sqrt(6)-2,inf)]",
             "$$(-\\sqrt{6}-2,\\sqrt{6}-2)$$"
         ]
     }
