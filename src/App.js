@@ -3,6 +3,7 @@ import "./App.css";
 import Platform from "./platform-logic/Platform.js";
 import DebugPlatform from "./platform-logic/DebugPlatform.js";
 import Firebase from "@components/Firebase.js";
+import { LocalizationProvider } from "./util/LocalizationContext";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import NotFound from "@components/NotFound.js";
@@ -287,6 +288,7 @@ class App extends React.Component {
                         browserStorage: this.browserStorage,
                     }}
                 >
+                <LocalizationProvider>
                     <GlobalErrorBoundary>
                         <Router>
                             <div className="Router">
@@ -422,6 +424,7 @@ class App extends React.Component {
                             closeOnClick={false}
                         />
                     </GlobalErrorBoundary>
+                    </LocalizationProvider>
                 </ThemeContext.Provider>
             </ThemeProvider>
         );
