@@ -13,6 +13,7 @@ import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { Typography } from "@material-ui/core";
 import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
 import BuildTimeIndicator from "@components/BuildTimeIndicator";
+import withTranslation from "../../util/withTranslation.js"
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -40,6 +41,7 @@ class LessonSelection extends React.Component {
     }
 
     render() {
+        const { translate } = this.props;
         const { classes, courseNum } = this.props;
         const selectionMode = courseNum == null ? "course" : "lesson"
 
@@ -62,8 +64,8 @@ class LessonSelection extends React.Component {
                         <Box width="75%" maxWidth={1500} role={"main"}>
                             <center>
                                 {this.isPrivileged
-                                    ? <h1>Welcome Instructor!</h1>
-                                    : <h1>Welcome to {SITE_NAME.replace(/\s/, "")}!</h1>
+                                    ? <h1>{translate('lessonSelection.welcomeInstructor')}</h1>
+                                    : <h1>{translate('lessonSelection.welcomeTo')} {SITE_NAME.replace(/\s/, "")}!</h1>
                                 }
 
                                 <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
@@ -172,4 +174,4 @@ class LessonSelection extends React.Component {
     }
 }
 
-export default withStyles(styles)(LessonSelection);
+export default withStyles(styles)(withTranslation(LessonSelection));
