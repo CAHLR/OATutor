@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_its=self.webpackChunkopen_its||[]).push([[563],{8563:function(e){e.exports=JSON.parse('{"lessonSelection":{"welcomeInstructor":"Welcome Instructor!","welcomeTo":"Bienvenidos a"},"problem":{}}')}}]);
