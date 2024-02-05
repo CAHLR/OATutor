@@ -1,6 +1,6 @@
 export default function update(model, isCorrect) {
-    let numerator;
-    let masteryAndGuess;
+    let numerator, masteryAndGuess, probMasteryGivenObservation;
+
     if (isCorrect) {
         numerator = model.probMastery * (1 - model.probSlip);
         masteryAndGuess = (1 - model.probMastery) * model.probGuess;
@@ -9,6 +9,11 @@ export default function update(model, isCorrect) {
         masteryAndGuess = (1 - model.probMastery) * (1 - model.probGuess);
     }
 
-    let probMasteryGivenObservation = numerator / (numerator + masteryAndGuess);
-    model.probMastery = probMasteryGivenObservation + ((1 - probMasteryGivenObservation) * model.probTransit);
+    probMasteryGivenObservation = numerator / (numerator + masteryAndGuess);
+
+    let adjustment = (probMasteryGivenObservation - model.probMastery) * model.probTransit;
+
+    model.probMastery += adjustment;
+
+    model.probMastery = Math.max(0, Math.min(1, model.probMastery));
 }
