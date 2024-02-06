@@ -42,10 +42,16 @@ class Problem extends React.Component {
 
         const giveStuFeedback = this.props.lesson?.giveStuFeedback;
         const giveStuHints = this.props.lesson?.giveStuHints;
+        const keepMCOrder = this.props.lesson?.keepMCOrder;
+        const keyboardType = this.props.lesson?.keyboardType;
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
         const giveStuBottomHint = this.props.lesson?.allowBottomHint;
+
+        this.giveHintOnIncorrect = true;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
+        this.keepMCOrder = keepMCOrder != null && keepMCOrder;
+        this.keyboardType = keyboardType != null && keyboardType;
         this.giveStuHints = giveStuHints == null || giveStuHints;
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate;
         this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint;
@@ -57,6 +63,7 @@ class Problem extends React.Component {
 
         this.state = {
             stepStates: {},
+            firstAttempts: {},
             problemFinished: false,
             showFeedback: false,
             feedback: "",
@@ -206,7 +213,7 @@ class Problem extends React.Component {
     };
 
     answerMade = (cardIndex, kcArray, isCorrect) => {
-        const { stepStates } = this.state;
+        const { stepStates, firstAttempts } = this.state;
         const { lesson, problem } = this.props;
 
         console.debug(`answer made and is correct: ${isCorrect}`);
@@ -234,7 +241,8 @@ class Problem extends React.Component {
                     );
                     continue;
                 }
-                if (this.doMasteryUpdate) {
+                if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
+                    firstAttempts[cardIndex] = true;
                     update(this.bktParams[kc], isCorrect);
                 }
             }
@@ -270,6 +278,12 @@ class Problem extends React.Component {
             const numAttempted = Object.values(nextStepStates).filter(
                 (stepState) => stepState != null
             ).length;
+            // console.log("num attempted: ", numAttempted);
+            // console.log("num steps: ", numSteps);
+            // console.log("step states: ", Object.values(nextStepStates));
+            this.setState({
+                stepStates: nextStepStates,
+            });
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,
@@ -313,6 +327,7 @@ class Problem extends React.Component {
 
         this.setState({
             stepStates: {},
+            firstAttempts: {},
             problemFinished: false,
             feedback: "",
             feedbackSubmitted: false,
@@ -355,7 +370,7 @@ class Problem extends React.Component {
         var oerArray, licenseArray;
         var oerLink, oerName;
         var licenseLink, licenseName;
-        try{
+	try {
         if (problem.oer != null && problem.oer.includes(" <")) {
             oerArray = problem.oer.split(" <");
         } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
@@ -363,27 +378,27 @@ class Problem extends React.Component {
         } else {
             oerArray = ["", ""];
         }
-	} catch (error){
+	} catch(error) {
 		oerArray = ["", ""];
 	}
 
         oerLink = oerArray[0];
         oerName = oerArray[1].substring(0, oerArray[1].length - 1);
-	try{
-        if (problem.license != null && problem.license.includes(" ")) {
-            licenseArray = problem.license.split(" <");
-        } else if (
-            lesson.courseLicense != null &&
-            lesson.courseLicense.includes(" ")
-        ) {
-            licenseArray = lesson.courseLicense.split(" <");
-        } else {
+
+        try {
+            if (problem.license != null && problem.license.includes(" ")) {
+                licenseArray = problem.license.split(" <");
+            } else if (
+                lesson.courseLicense != null &&
+                lesson.courseLicense.includes(" ")
+            ) {
+                licenseArray = lesson.courseLicense.split(" <");
+            } else {
+                licenseArray = ["", ""];
+            }
+        } catch(error) {
             licenseArray = ["", ""];
         }
-	} catch (error){
-                licenseArray = ["", ""];
-        }
-
         licenseLink = licenseArray[0];
         licenseName = licenseArray[1].substring(0, licenseArray[1].length - 1);
         return [oerLink, oerName, licenseLink, licenseName];
@@ -454,6 +469,11 @@ class Problem extends React.Component {
                                     problemSubTitle={problem.body}
                                     giveStuFeedback={this.giveStuFeedback}
                                     giveStuHints={this.giveStuHints}
+                                    keepMCOrder={this.keepMCOrder}
+                                    keyboardType={this.keyboardType}
+                                    giveHintOnIncorrect={
+                                        this.giveHintOnIncorrect
+                                    }
                                     unlockFirstHint={this.unlockFirstHint}
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
