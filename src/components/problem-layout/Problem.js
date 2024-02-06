@@ -63,6 +63,7 @@ class Problem extends React.Component {
 
         this.state = {
             stepStates: {},
+            firstAttempts: {},
             problemFinished: false,
             showFeedback: false,
             feedback: "",
@@ -212,7 +213,7 @@ class Problem extends React.Component {
     };
 
     answerMade = (cardIndex, kcArray, isCorrect) => {
-        const { stepStates } = this.state;
+        const { stepStates, firstAttempts } = this.state;
         const { lesson, problem } = this.props;
 
         console.debug(`answer made and is correct: ${isCorrect}`);
@@ -240,7 +241,8 @@ class Problem extends React.Component {
                     );
                     continue;
                 }
-                if (this.doMasteryUpdate) {
+                if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
+                    firstAttempts[cardIndex] = true;
                     update(this.bktParams[kc], isCorrect);
                 }
             }
@@ -325,6 +327,7 @@ class Problem extends React.Component {
 
         this.setState({
             stepStates: {},
+            firstAttempts: {},
             problemFinished: false,
             feedback: "",
             feedbackSubmitted: false,
