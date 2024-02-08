@@ -246,8 +246,8 @@ class Firebase {
             dynamicHint,
             bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
-        // return this.writeData(problemSubmissionsOutput, data);
+        // return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(problemSubmissionsOutput, data);
     }
 
     hintLog(
@@ -288,8 +288,8 @@ class Firebase {
             dynamicHint,
             bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
-        // return this.writeData(problemSubmissionsOutput, data);
+        // return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(problemSubmissionsOutput, data);
     }
 
     mouseLog(payload) {
