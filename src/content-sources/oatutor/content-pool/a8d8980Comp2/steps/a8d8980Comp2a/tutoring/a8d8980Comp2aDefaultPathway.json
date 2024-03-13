@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a8d8980Comp2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Worked Solution",
+        "text": "To express \\(h(x) $$=$$ \\frac{1}{{(x-2)}**2}\\) in the form of \\(h(x) $$=$$ f(g(x))\\), we need to identify functions \\(f(x)\\) and \\(g(x)\\) such that when \\(g(x)\\) is plugged into \\(f(x)\\), it yields \\(h(x)\\).\\n\\nLooking at the given function \\(h(x) $$=$$ \\frac{1}{{(x-2)}**2}\\), it's clear that the inner operation is to subtract $$2$$ from \\(x\\) (yielding $$\\(x-2\\))$$, and then the outer operation is to take the inverse of the square of this result.\\n\\nSo, the correct choice needs to have \\(g(x) $$=$$ $$x-2\\)$$ as the inner function to handle the subtraction from \\(x\\), and \\(f(x)\\) as the outer function to handle the inverse of the square of whatever is fed into it.\\n\\nAmong the provided options:\\n- \\(f(x) $$=$$ $$x^2$$, g(x) $$=$$ $$x-2\\)$$ does not match because \\(f(g(x)) $$=$$ (x-2)**2\\) does not have the inverse operation.\\n- \\(f(x) $$=$$ $$x-2$$, g(x) $$=$$ x**2\\) does not match because it suggests subtracting $$2$$ after squaring \\(x\\), which is not the operation we're looking for.\\n- **\\(f(x) $$=$$ \\frac{1}{x**2}, g(x) $$=$$ x-2\\)** matches perfectly because it first subtracts $$2$$ from \\(x\\) to get \\(g(x)\\), and then \\(f(g(x)) $$=$$ \\frac{1}{{(g(x))}**2} $$=$$ \\frac{1}{{(x-2)}**2}\\), which is exactly \\(h(x)\\).\\n- \\(f(x) $$=$$ $$x-2$$, g(x) $$=$$ \\frac{1}{x**2}\\) does not match because it implies an operation order that does not produce \\(h(x)\\).\\n\\nTherefore, the correct answer is \\(f(x) $$=$$ \\frac{1}{x**2}, g(x) $$=$$ $$x-2\\)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
