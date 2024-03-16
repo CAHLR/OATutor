@@ -1,0 +1,47 @@
+[
+    {
+        "id": "af5870eNewton14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Newton's Method",
+        "text": "The formula for Newton's Method is given by $$x_n+1=x_n-\\frac{f{\\left(x_n\\right)}}{\\operatorname{f'}\\left(x_n\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af5870eNewton14a-h1"
+        ],
+        "title": "Find the Derivative of f(x)",
+        "text": "The derivative of f(x) would be needed to use Newton's method.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f'(x)=3x^2-1$$"
+        ],
+        "dependencies": [
+            "af5870eNewton14a-h2"
+        ],
+        "title": "Find the Derivative of f(x)",
+        "text": "What is the derivative of $$f(x)=x^3-x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f'(x)=3x^2-1$$",
+            "$$f'(x)=3x-1$$",
+            "$$f'(x)=3x^2$$",
+            "$$f'(x)=3x-1$$"
+        ]
+    }
+]

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Let $$u=1-x$$ so $$du=-1dx$$ or $$-du=dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h1"
+        ],
+        "title": "Change the limits",
+        "text": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from $$x$$ to u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h2"
+        ],
+        "title": "New lower limit",
+        "text": "What is the new lower limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New lower limit",
+                "text": "Using $$u=1-x$$ in the first hint, we have $$u=1-(1)=0$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h3"
+        ],
+        "title": "New upper limit",
+        "text": "What is the new upper limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New upper limit",
+                "text": "Using $$u=1-x$$ in the first hint, we have $$u=1-(2)=-1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h4"
+        ],
+        "title": "New integral expression",
+        "text": "The new integral with a variable of u will be $$-\\int e^u \\,du$$ as the limit goes from $$u=0$$ to $$u=-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h5"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int e^u \\,du=e^u$$ as the limit goes from $$u=-1$$ to $$u=0$$. Note that the lower limit always has to be less than the upper limit. To change the order of limits, we multply the integral with $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4IntegralsInvolvingExponentialandLogarithmicFunctions4a-h6"
+        ],
+        "title": "Evaluate the integral",
+        "text": "$$e^0-e^{\\left(-1\\right)}=-\\left(e^{\\left(-1\\right)}\\right)+1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

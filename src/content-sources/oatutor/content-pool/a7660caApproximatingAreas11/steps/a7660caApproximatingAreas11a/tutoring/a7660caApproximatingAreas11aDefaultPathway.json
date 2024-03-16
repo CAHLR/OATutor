@@ -1,0 +1,176 @@
+[
+    {
+        "id": "a7660caApproximatingAreas11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subinterval",
+        "text": "The first step is to divide the interval from $$0$$ to $$1$$ into $$n$$ equal subintervals. These subintervals can be seen as rectangles.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h1"
+        ],
+        "title": "Subinterval",
+        "text": "How many subinterval or rectangle can we create in this problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a7660caApproximatingAreas11a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subinterval",
+                "text": "Since $$n=4$$ is given in this problem, we can divide the interval from $$x=0$$ to $$x=1$$ into $$4$$ rectangles.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h2"
+        ],
+        "title": "Find the step size",
+        "text": "The step size or width of the rectangles can be found using $$\u0394x=\\frac{b-a}{n}$$ where $$b$$ is the upper bound, a is the lower bound and $$n$$ is the number of rectangles.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h3"
+        ],
+        "title": "Find the step size",
+        "text": "What is the upper bound of the interval?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h3"
+        ],
+        "title": "Find the step size",
+        "text": "What is the lower bound of the interval?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h3"
+        ],
+        "title": "Find the step size",
+        "text": "For the $$4$$ rectangles, each rectangle has a width of $$\u0394x=\\frac{1-0}{4}=0.25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h6"
+        ],
+        "title": "Right-endpoint approximation",
+        "text": "The right rectangle approximation is when you make the right hand points of the pieces the height of the rectangles. In other words, the height of each rectangle is equal to the value of the function at the right endpoint of its base.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h7"
+        ],
+        "title": "Right-endpoint approximation",
+        "text": "Using the right-endpoint approximation, what is the height of a rectangle in the interval $$[0.25, 0.5]$$ ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h8"
+        ],
+        "title": "Right-endpoint approximation",
+        "text": "Using a right-endpoint approximation, the heights are f(0.25)=sqrt(2)/2,f(0.5)=0,f(0.75)=-sqrt(2)/2,f(1)=-1",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h9"
+        ],
+        "title": "Find the area of the rectangles",
+        "text": "With the width and height just found, we can easily find the area of each rectangle using area of a rectangle formula $$A=w h$$ then add all of them up to get an approximation for the area under the curve.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h10"
+        ],
+        "title": "Approximating the Area",
+        "text": "Starting with $$x=0.25$$ from the righ-hand point of the first rectangles, we have $$A=f{\\left(x_1\\right)} \\Delta x+f{\\left(x_2\\right)} \\Delta x+f{\\left(x_3\\right)} \\Delta x+f{\\left(x_4\\right)} \\Delta x=\\Delta x \\left(f{\\left(x_1\\right)}+f{\\left(x_2\\right)}+f{\\left(x_3\\right)}+f{\\left(x_4\\right)}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caApproximatingAreas11a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a7660caApproximatingAreas11a-h11"
+        ],
+        "title": "Approximating the Area",
+        "text": "$$0.25\\left(\\frac{\\sqrt{2}}{2}+0-\\frac{\\sqrt{2}}{2}-1\\right)=-0.25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

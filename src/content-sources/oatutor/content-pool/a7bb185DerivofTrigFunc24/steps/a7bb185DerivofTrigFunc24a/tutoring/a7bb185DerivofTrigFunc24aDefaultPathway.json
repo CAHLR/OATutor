@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Do the first derivative and then derive that three more times",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-5sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc24a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's first derivative?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-5sin\\left(x\\right)$$",
+            "$$-5cos\\left(x\\right)$$",
+            "$$5sin\\left(x\\right)$$",
+            "$$5cos\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-5cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc24a-h2"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of first derivative",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-5sin\\left(x\\right)$$",
+            "$$-5cos\\left(x\\right)$$",
+            "$$5sin\\left(x\\right)$$",
+            "$$5cos\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc24a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of second derivative?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-5sin\\left(x\\right)$$",
+            "$$-5cos\\left(x\\right)$$",
+            "$$5sin\\left(x\\right)$$",
+            "$$5cos\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc24a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of the third derivative?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-5sin\\left(x\\right)$$",
+            "$$-5cos\\left(x\\right)$$",
+            "$$5sin\\left(x\\right)$$",
+            "$$5cos\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7bb185DerivofTrigFunc24a-h3"
+        ],
+        "title": "The derivative of the $$n-1th$$ derivative is the nth derivative",
+        "text": "Conclude your answer from sub-questions",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

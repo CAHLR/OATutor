@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a820936InverseFun12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative of inverse trigonometric functions:sin(x)",
+        "text": "The formula for the derivative of Inverse sin(x) is (d/dx)sin**(-1)(x)=(1/(sqrt(1-(x**2))).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936InverseFun12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a820936InverseFun12a-h1"
+        ],
+        "title": "Applying the chain rule",
+        "text": "Because the inverse of sin has a function inside its parentheses, \"x**2\" in this case, we need to apply the chain rule before using the formula from the previous hint. For reference, the chain rule is $$(f(g(x)))'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

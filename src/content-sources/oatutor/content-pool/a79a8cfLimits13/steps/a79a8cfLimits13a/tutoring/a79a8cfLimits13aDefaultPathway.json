@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a79a8cfLimits13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating the limit",
+        "text": "The first step to evaluate the limit is plug in infinity for $$x$$ in the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a79a8cfLimits13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a79a8cfLimits13a-h1"
+        ],
+        "title": "Property of Infinity",
+        "text": "Remember that infinity is theoretically larger than any other real number, so it will have the greatest effect on the function. Thus we can ignore any numbers or coefficent that do not have the \"largest infinity\". (e.g. $$2$$ times infinity squared is larger than 1,000 times $$\\infty$$, so we focus on the effect on $$2$$ times infinity squared)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a79a8cfLimits13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a79a8cfLimits13a-h2"
+        ],
+        "title": "What we are really looking at",
+        "text": "What we are really looking at in this problem is $$\\frac{{\\infty}^2}{\\infty}$$ since the $$-2x+5$$ and $$+2$$ will not have as large an effect on the limit compared to $$\\infty$$. We can cancel out an infinity from the numerator and denominator, which leaves us with an answer of positive $$\\infty$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

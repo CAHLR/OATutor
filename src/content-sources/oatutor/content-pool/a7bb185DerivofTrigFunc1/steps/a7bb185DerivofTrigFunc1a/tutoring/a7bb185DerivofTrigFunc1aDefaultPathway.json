@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a7bb185DerivofTrigFunc1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "We can separate the functions into $$x^2$$ $$-sec(x)$$ and $$1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc1a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of $$x^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x$$",
+            "$$x$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185DerivofTrigFunc1a-h2"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of sec(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$",
+            "sec(x)",
+            "tan(x)"
+        ]
+    },
+    {
+        "id": "a7bb185DerivofTrigFunc1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7bb185DerivofTrigFunc1a-h3"
+        ],
+        "title": "Adding up derivatives",
+        "text": "Add all the derivatives and get the final answer.(Derivatives of constants are 0)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

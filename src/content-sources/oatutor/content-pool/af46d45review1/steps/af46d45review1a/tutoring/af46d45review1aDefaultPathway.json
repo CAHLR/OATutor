@@ -1,0 +1,45 @@
+[
+    {
+        "id": "af46d45review1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "What's the value of $$x$$ that can be taken?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af46d45review1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af46d45review1a-h1"
+        ],
+        "title": "What's the max $$y$$ and min $$y$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af46d45review1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "af46d45review1a-h2"
+        ],
+        "title": "Sub-questions",
+        "text": "Is $$x$$ and $$y$$ one to one?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

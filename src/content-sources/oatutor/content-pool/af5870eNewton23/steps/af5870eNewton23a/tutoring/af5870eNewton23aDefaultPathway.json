@@ -1,0 +1,70 @@
+[
+    {
+        "id": "af5870eNewton23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$x_1$$",
+        "text": "First find $$x_1$$. To find $$x_1$$, use the formula $$x_n=F\\left(x_n-1\\right)$$ with $$n=1$$ and $$x_0=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "af5870eNewton23a-h1"
+        ],
+        "title": "Find $$x_1$$",
+        "text": "What is the value of $$x_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af5870eNewton23a-h2"
+        ],
+        "title": "Find $$x_2$$",
+        "text": "Second, find $$x_2$$. To find $$x_2$$, use the formula $$x_n=F\\left(x_n-1\\right)$$ with $$n=2$$ and the value of $$x_1$$ stored on the calculator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "af5870eNewton23a-h3"
+        ],
+        "title": "Find $$x_2$$",
+        "text": "What is the value of $$x_2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870eNewton23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af5870eNewton23a-h4"
+        ],
+        "title": "Failure of Newton's Method",
+        "text": "Notice that the approximations alternate back and forth between two values. Consequently, the approximations will never approach a root. Continuing to calculate values $$x_3$$, $$x_4$$, $$x_5$$, $$...x_n$$ will result in a cycle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

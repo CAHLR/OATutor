@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a690481linear2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Approximation Function",
+        "text": "Use the following equation L(x) $$=$$ f(a) + f'(a)(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear2a-h1"
+        ],
+        "title": "Plugging Into the Formula",
+        "text": "$$\\frac{\\pi}{3}$$ rad is equivalent to 60\u00b0. Since we are looking for the linear approximation at $$x$$ $$=$$ $$\\frac{\\pi}{3}$$, the formula is given by L(x) $$=$$ $$f{\\left(\\frac{\\pi}{3}\\right)}$$ + f'(pi/3)(x - (pi/3)).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear2a-h2"
+        ],
+        "title": "Solving for f(a) and f'(a)",
+        "text": "Now, we must determine the values of f(a) and f'(a) to find L(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a690481linear2a-h3"
+        ],
+        "title": "Determining f(a)",
+        "text": "Given that $$x$$ $$=$$ $$\\frac{\\pi}{3}$$, what is f(a)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear2a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{\\sqrt{3}}{2}$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging Into $$f{\\left(\\frac{\\pi}{3}\\right)}$$",
+                "text": "f(x) $$=$$ sin(x) such that $$f{\\left(\\frac{\\pi}{3}\\right)}$$ $$=$$ $$sin\\left(\\frac{\\pi}{3}\\right)$$. What is $$sin\\left(\\frac{\\pi}{3}\\right)$$? Remember that $$x$$ $$=$$ cos(x) and $$y$$ $$=$$ sin(x).\\n##figure1.gif##",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear2a-h4"
+        ],
+        "title": "Taking the Derivative of f(x)",
+        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ sin(x) where f'(x) $$=$$ cos(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a690481linear2a-h5"
+        ],
+        "title": "Determining f'(a)",
+        "text": "Given that $$x$$ $$=$$ $$\\frac{\\pi}{3}$$ and f'(x) $$=$$ cos(x), what is f'(a)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear2a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{1}{2}$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging Into $$\\operatorname{f'}\\left(\\frac{\\pi}{3}\\right)$$",
+                "text": "$$\\operatorname{f'}\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$cos\\left(\\frac{\\pi}{3}\\right)$$. What is $$cos\\left(\\frac{\\pi}{3}\\right)$$? Remember that $$x$$ $$=$$ cos(x) and $$y$$ $$=$$ sin(x).\\n##figure2.gif##",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear2a-h6"
+        ],
+        "title": "Putting it Together",
+        "text": "Now that we have found the values of $$f{\\left(\\frac{\\pi}{3}\\right)}$$ and $$\\operatorname{f'}\\left(\\frac{\\pi}{3}\\right)$$, we know that L(x) $$=$$ $$\\frac{\\sqrt{3}}{2}$$ + (1/2)(x - pi/3).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.88348$$"
+        ],
+        "dependencies": [
+            "a690481linear2a-h7"
+        ],
+        "title": "Estimating sin(62\u00b0)",
+        "text": "Solve for sin(62\u00b0) $$=$$ $$f{\\left(\\frac{62\\pi}{180}\\right)}$$ \u2248 $$L\\left(\\frac{62\\pi}{180}\\right)$$ where L(x) $$=$$ $$\\frac{\\sqrt{3}}{2}$$ + (1/2)(x - pi/3). What is the approximation to estimate sin(62\u00b0)? Round your answer to five decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear2a-h8"
+        ],
+        "title": "Final Answer",
+        "text": "sin(62\u00b0) $$=$$ $$\\frac{\\sqrt{3}}{2}$$ + (1/2)((60pi/180) - pi/3) $$=$$ $$\\frac{\\sqrt{3}}{2}$$ + $$\\frac{1}{2} \\frac{2\\pi}{180}$$ $$=$$ $$\\frac{\\sqrt{3}}{2}$$ + $$\\frac{\\pi}{180}$$ $$=$$ $$0.88348$$\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
