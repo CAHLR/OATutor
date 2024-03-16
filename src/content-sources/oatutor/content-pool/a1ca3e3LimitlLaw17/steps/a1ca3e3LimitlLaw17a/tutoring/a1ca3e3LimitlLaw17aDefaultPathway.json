@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1ca3e3LimitlLaw17a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "plug in $$x$$ value to the function sin(x)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a1ca3e3LimitlLaw17a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "plug in $$x$$ value to the function tan(x)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1ca3e3LimitlLaw17a-h2"
+        ],
+        "title": "Write tan(x) as $$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$ by definition of tan(x)",
+        "text": "$$tan(x)=\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1ca3e3LimitlLaw17a-h3"
+        ],
+        "title": "Simplify whole function",
+        "text": "sin(x)/((sin(x)/cos(x))=cosx",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1ca3e3LimitlLaw17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1ca3e3LimitlLaw17a-h4"
+        ],
+        "title": "Plug in $$x$$ values to new simplified function to get the result",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

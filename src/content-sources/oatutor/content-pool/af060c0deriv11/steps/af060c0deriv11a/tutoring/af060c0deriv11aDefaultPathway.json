@@ -1,0 +1,111 @@
+[
+    {
+        "id": "af060c0deriv11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Marginal Revenue Function",
+        "text": "MR(x) $$=$$ R'(x), where R'(x) is the derivative of R(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.06x$$ + $$9$$"
+        ],
+        "dependencies": [
+            "af060c0deriv11a-h1"
+        ],
+        "title": "Solving for R'(x)",
+        "text": "What is R'(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv11a-h2"
+        ],
+        "title": "Taking the Derivative of R'(x)",
+        "text": "R(x) $$=$$ $$-0.03x^2$$ + $$9x$$\\nR'(x) $$=$$ $$2\\left(-0.03\\right) x^{2-1}$$ + $$9$$\\nR'(x) $$=$$ $$-0.06x$$ + $$9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv11a-h3"
+        ],
+        "title": "Estimating the Revenue of the 101st Dinner",
+        "text": "Now that we know that MR(x) $$=$$ R'(x) $$=$$ $$-0.06x$$ + $$9$$, use R'(100) to approximate R(101) - R(100), the revenue obtained from the sale of the 101st dinner.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "af060c0deriv11a-h4"
+        ],
+        "title": "Solving for R'(100)",
+        "text": "What is R'(100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv11a-h5"
+        ],
+        "title": "Plugging in X",
+        "text": "Plug $$x$$ $$=$$ $$100$$ into R'(x) $$=$$ $$-0.06x$$ + $$9$$ to solve for R'(100).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "af060c0deriv11a-h6"
+        ],
+        "title": "Final Calculations",
+        "text": "R'(100) $$=$$ $$-0.06(100)$$ + $$9$$ $$=$$ $$-6$$ + $$9$$. What is R'(100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv11a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv11a-h7"
+        ],
+        "title": "Interpretation of the Answer",
+        "text": "Since R\u2032(100) $$=$$ $$3$$, the revenue obtained from the sale of the 101st dinner is approximately $3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5a59aephysical3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert",
+        "text": "Find the conversion factors that turn $$\\frac{m}{s}$$ into $$\\frac{km}{h}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aephysical3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3600$$ $$\\frac{s}{hr}$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical3a-h1"
+        ],
+        "title": "Answer",
+        "text": "What conversion factor turns $$\\frac{m}{s}$$ into $$\\frac{m}{h}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$3600$$ $$\\frac{s}{hr}$$",
+            "$$3600$$ $$\\frac{hr}{s}$$",
+            "$$\\frac{1}{3600}$$ $$\\frac{s}{hr}$$",
+            "$$\\frac{1}{3600}$$ $$\\frac{hr}{s}$$"
+        ]
+    },
+    {
+        "id": "a5a59aephysical3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{1000}$$ $$\\frac{km}{m}$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical3a-h1"
+        ],
+        "title": "Answer",
+        "text": "What conversion factor turns $$\\frac{m}{s}$$ into $$\\frac{km}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{1000}$$ $$\\frac{km}{m}$$",
+            "$$\\frac{1}{1000}$$ $$\\frac{m}{km}$$",
+            "$$1000$$ $$\\frac{m}{km}$$",
+            "$$1000$$ $$\\frac{km}{m}$$"
+        ]
+    }
+]

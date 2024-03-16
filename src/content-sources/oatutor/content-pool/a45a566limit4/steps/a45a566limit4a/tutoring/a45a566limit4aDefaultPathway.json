@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a45a566limit4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Functional Values Table",
+        "text": "The values of f(x) $$=$$ $$sin\\left(\\frac{1}{x}\\right)$$ as $$x$$ approaches $$0$$ are listed in Table $$2.5$$. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a45a566limit4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a45a566limit4a-h1"
+        ],
+        "title": "The Approaching Limit",
+        "text": "As we read down each $$sin\\left(\\frac{1}{x}\\right)$$ column, are the values in each column approaching one single number?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a45a566limit4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a45a566limit4a-h2"
+        ],
+        "title": "Finding $$lim_x$$ \u2192 $$0$$ $$sin\\left(\\frac{1}{x}\\right)$$",
+        "text": "After examining the table of functional values, we can see that the y-values do not seem to approach any one single value. It appears the limit does not exist. Before drawing this conclusion, let\u2019s take a more systematic approach. Take the following sequence of x-values approaching 0: $$\\frac{2}{\\pi}$$, $$\\frac{2}{3} \\pi$$, $$\\frac{2}{5} \\pi$$, $$\\frac{2}{7} \\pi$$, $$\\frac{2}{9} \\pi$$, $$\\frac{2}{11} \\pi$$, ... The corresponding y-values are $$1$$, $$-1$$, $$1$$, $$-1$$, $$1$$, $$-1$$, ... At this point we can indeed conclude that $$lim_x$$ \u2192 $$0$$ $$sin\\left(\\frac{1}{x}\\right)$$ does not exist. Thus, we would write $$lim_x$$ \u2192 $$0$$ $$sin\\left(\\frac{1}{x}\\right)$$ DNE. The graph of f(x) $$=$$ $$sin\\left(\\frac{1}{x}\\right)$$ is shown in the figure and gives a clearer picture of the behavior of $$sin\\left(\\frac{1}{x}\\right)$$ as $$x$$ approaches $$0$$. You can see that $$sin\\left(\\frac{1}{x}\\right)$$ oscillates ever more wildly between $$-1$$ and $$1$$ as $$x$$ approaches $$0$$.\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the limits",
+        "text": "In order to set up the definite integrals of the $$2$$ functions, we have to find the limits where they intersect by setting them equal to each other and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h1"
+        ],
+        "title": "Find the limits",
+        "text": "$$x^2-3=1$$ then $$x=2$$ and $$x=-2$$. So we obtain $$x=-2$$ as a lower limit and $$x=2$$ as an upper limit.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h2"
+        ],
+        "title": "Define the upper graph",
+        "text": "The area of A is given by $$int{|f(x)-g(x)|, a, b, x$$,} as f(x) is an upper graph and g(x) is the lower one.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(x)"
+        ],
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h3"
+        ],
+        "title": "Define the upper graph",
+        "text": "What is the upper graph in this problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "g(x)",
+            "f(x)"
+        ]
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h4"
+        ],
+        "title": "Set up the integral",
+        "text": "int{1-(x**2)+3,-2,2,x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h5"
+        ],
+        "title": "Compute the integral",
+        "text": "$$4x-\\frac{x^3}{3}$$ as the limtis go from $$x=-2$$ to $$x=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9AreasbetweenCurves6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9AreasbetweenCurves6a-h6"
+        ],
+        "title": "Evaluate",
+        "text": "(4*2)-((2**3)/3)-(4*(-2))-((-2)**3)/3)=32/3",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

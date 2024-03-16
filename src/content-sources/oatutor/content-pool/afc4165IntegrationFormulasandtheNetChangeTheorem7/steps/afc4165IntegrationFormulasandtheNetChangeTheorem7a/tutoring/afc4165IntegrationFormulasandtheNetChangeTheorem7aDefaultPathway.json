@@ -1,0 +1,48 @@
+[
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Symmetry",
+        "text": "We can see the symmetry about the origin by the positive area above the x-axis over [-pi,0] and the negative area below the -axis over [0,pi].",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "$$\\int_{-pi}^{pi} -5sinx \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h2"
+        ],
+        "title": "Compute the integral",
+        "text": "$$-5\\left(-cosx\\right)$$ from pi to -pi",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc4165IntegrationFormulasandtheNetChangeTheorem7a-h3"
+        ],
+        "title": "Evaluate",
+        "text": "(5*cos(pi)-(5*cos(-pi))=0",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

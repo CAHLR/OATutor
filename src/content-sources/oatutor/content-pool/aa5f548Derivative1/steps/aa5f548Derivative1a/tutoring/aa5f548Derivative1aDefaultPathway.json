@@ -1,0 +1,141 @@
+[
+    {
+        "id": "aa5f548Derivative1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548Derivative1a-h1"
+        ],
+        "title": "Application of Power Rule $$1$$",
+        "text": "To get the derivative of $$x^7$$, we multiply our constant (1) by our exponent (7) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7x^6$$"
+        ],
+        "dependencies": [
+            "aa5f548Derivative1a-h2"
+        ],
+        "title": "Application of Power Rule $$2$$",
+        "text": "What is the derivative of $$x^7$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$7x^6$$",
+            "$$x^7$$",
+            "$$7x^7$$",
+            "$$7x$$"
+        ]
+    },
+    {
+        "id": "aa5f548Derivative1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548Derivative1a-h3"
+        ],
+        "title": "The Constant Rule",
+        "text": "If f(x) is a constant c, $$f'(x)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aa5f548Derivative1a-h4"
+        ],
+        "title": "Application of Constant Rule",
+        "text": "What is the derivative of 10?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$10$$"
+        ]
+    },
+    {
+        "id": "aa5f548Derivative1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548Derivative1a-h5"
+        ],
+        "title": "The Sum Rule $$1$$",
+        "text": "The derivative of the sum of a function f and a function g is the same as the sum of the derivative of f and the derivative of g.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548Derivative1a-h6"
+        ],
+        "title": "The Sum Rule $$2$$",
+        "text": "You can add the two separate derivatives that we just found to find our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548Derivative1a-h5"
+        ],
+        "title": "The Constant Rule",
+        "text": "If f(x) is a constant c, $$f'(x)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548Derivative1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aa5f548Derivative1a-h6"
+        ],
+        "title": "Application of Constant Rule",
+        "text": "What is the derivative of 1?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$10$$"
+        ]
+    }
+]

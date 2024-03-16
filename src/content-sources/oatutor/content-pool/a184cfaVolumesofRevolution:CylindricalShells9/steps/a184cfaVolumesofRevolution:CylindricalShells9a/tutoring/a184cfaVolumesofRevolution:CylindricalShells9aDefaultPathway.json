@@ -1,0 +1,178 @@
+[
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graphing",
+        "text": "First, graph the region and the solid of revolution as shown.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h1"
+        ],
+        "title": "Choose a method",
+        "text": "Note that either Wash and Shell method works in this case. Since it will be more convenient to set up a rectangle that is parallel to the y-axis and run it over the x-axis, we proceed to use Shell Method to calculate the volume.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h2"
+        ],
+        "title": "Shell Method",
+        "text": "The general formula of cylindrical shells is given as $$2*pi*\\int_{a}^{b} x f{\\left(x\\right)} \\,dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h3"
+        ],
+        "title": "Define a lower limit",
+        "text": "What is a lower limit of the integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "A point of intersection",
+                "text": "The lower limit is also the point where two graphs intersect each other. To find that point, we set $$y^2=y^2-2y+1$$ and solve for $$x$$. Then $$x=\\frac{1}{4}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h4"
+        ],
+        "title": "Define an upper limit",
+        "text": "The upper limit is already given as $$x=2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "2*sqrt(x)-1"
+        ],
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h5"
+        ],
+        "title": "Define f(x)",
+        "text": "What is the f(x) of the integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Define f(x)",
+                "text": "Since we are working on the change over the x-axis or dx, we will need to rewrite both functions in term of $$x$$ instead of $$y$$ as given.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h6-s2",
+                "type": "hint",
+                "dependencies": [
+                    "a184cfaVolumesofRevolution:CylindricalShells9a-h6-s1"
+                ],
+                "title": "$$x=y^2$$",
+                "text": "To solve for $$y$$, we take the square root of both sides to obtain $$y=\\sqrt{x}$$ and $$y=-\\sqrt{x}$$. Although we have $$2$$ solutions, we only consider the positive solution since it is the upper function of the shaded region.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h6-s3",
+                "type": "hint",
+                "dependencies": [
+                    "a184cfaVolumesofRevolution:CylindricalShells9a-h6-s2"
+                ],
+                "title": "$$x=y^2-2y+1$$",
+                "text": "Recall that $$y^2-2y+1={\\left(y-1\\right)}^2$$ then $$y-1=-\\sqrt{x}$$. After solving for $$y$$, we have $$y=1-\\sqrt{x}$$. Again in this case we chose $$-\\sqrt{x}$$ as an answer to use because it is the lower function of the shaded region.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h6"
+        ],
+        "title": "Find f(x)",
+        "text": "$$\\sqrt{x}-1-\\sqrt{x}=2\\sqrt{x}-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h7"
+        ],
+        "title": "Set up the integral",
+        "text": "$$2*pi*\\int_{\\frac{1}{4}}^{2} x \\left(2\\sqrt{x}-1\\right) \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h8"
+        ],
+        "title": "Find the integral",
+        "text": "$$2\\pi \\left(\\frac{4}{5} \\frac{x^5}{2}-\\frac{x^2}{2}\\right)$$ as the limits going from $$x=\\frac{1}{4}$$ to $$x=2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfaVolumesofRevolution:CylindricalShells9a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a184cfaVolumesofRevolution:CylindricalShells9a-h9"
+        ],
+        "title": "Evaluate",
+        "text": "$$15.9074$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

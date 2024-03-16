@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a5a59aeapproximation4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Atom mass",
+        "text": "Use the given information to find the mass of a bacterium atom",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aeapproximation4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{-26}$$ kg"
+        ],
+        "dependencies": [
+            "a5a59aeapproximation4a-h1"
+        ],
+        "title": "Atom mass",
+        "text": "What is $$10$$ * $${10}^{-27}$$ kg?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$${10}^{-28}$$ kg",
+            "$${10}^{-17}$$ kg",
+            "$${10}^{-26}$$ kg"
+        ]
+    },
+    {
+        "id": "a5a59aeapproximation4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5a59aeapproximation4a-h2"
+        ],
+        "title": "Divide",
+        "text": "Use the bacterium atom mass and the bacterium mass to find how many atoms in a bacturium.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aeapproximation4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{11}$$ kg"
+        ],
+        "dependencies": [
+            "a5a59aeapproximation4a-h3"
+        ],
+        "title": "Divide",
+        "text": "What is $${10}^{-15}$$ kg / $${10}^{-26}$$ kg?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$${10}^{11}$$ kg",
+            "$${10}^{-11}$$ kg",
+            "$${10}^{-41}$$ kg"
+        ]
+    }
+]

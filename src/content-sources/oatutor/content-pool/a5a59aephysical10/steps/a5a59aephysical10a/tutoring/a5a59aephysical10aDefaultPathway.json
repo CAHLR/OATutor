@@ -1,0 +1,113 @@
+[
+    {
+        "id": "a5a59aephysical10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate",
+        "text": "First calculate the average speed in the given units (average speed is distance over time).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aephysical10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical10a-h1"
+        ],
+        "title": "Calculate",
+        "text": "What is the average speed in $$\\frac{km}{min}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a5a59aephysical10a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.5$$"
+                ],
+                "dependencies": [],
+                "title": "Calculate",
+                "text": "What is $$\\frac{10}{20}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a5a59aephysical10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5a59aephysical10a-h2"
+        ],
+        "title": "Convert",
+        "text": "Multiply by the conversion factor that will cancel out minutes and leave us with $$\\frac{km}{hr}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aephysical10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical10a-h3"
+        ],
+        "title": "Convert",
+        "text": "What is $$0.5$$ $$\\frac{km}{min}$$ in $$\\frac{km}{hr}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a5a59aephysical10a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$60$$"
+                ],
+                "dependencies": [],
+                "title": "Convert",
+                "text": "How many minutes are in an hour?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5a59aephysical10a-h4-s2",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$30$$ $$\\frac{km}{hr}$$"
+                ],
+                "dependencies": [],
+                "title": "Answer",
+                "text": "What is $$0.5$$ $$\\frac{km}{min}$$ * $$60$$ $$\\frac{min}{hr}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "choices": [
+                    "$$30$$ $$\\frac{km}{min}$$",
+                    "$$30$$ $$\\frac{km}{hr}$$",
+                    "$$30$$ $$\\frac{km}{{hr}^2}$$",
+                    "$$30$$ $$\\frac{hr}{km}$$"
+                ]
+            }
+        ]
+    }
+]

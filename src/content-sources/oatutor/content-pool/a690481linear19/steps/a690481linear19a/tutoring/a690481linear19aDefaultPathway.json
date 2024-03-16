@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a690481linear19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Obtaining dy",
+        "text": "First, we must determine dy by taking the derivative of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "((x**2 - $$2x$$ - 2)/((x - 1)**2))dx"
+        ],
+        "dependencies": [
+            "a690481linear19a-h1"
+        ],
+        "title": "Solving for y'",
+        "text": "Given that $$y$$ $$=$$ (x**2 + 2)/(x - 1), what is y'?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear19a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "((x**2 - $$2x$$ - 2)/((x - 1)**2))dx"
+                ],
+                "dependencies": [],
+                "title": "Taking the Derivative",
+                "text": "Use the quotient rule such that (d/dx)[f(x)/g(x)] $$=$$ (g(x)(d/dx)[f(x)] - f(x)(d/dx)[g(x)])/(g(x)**2). What is dy?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a690481linear19a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "((x**2 - $$2x$$ - 2)/((x - 1)**2))dx"
+                ],
+                "dependencies": [],
+                "title": "Final Answer",
+                "text": "dy $$=$$ ((x**2 - $$2x$$ - 2)/((x - 1)**2))dx. This is your answer.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

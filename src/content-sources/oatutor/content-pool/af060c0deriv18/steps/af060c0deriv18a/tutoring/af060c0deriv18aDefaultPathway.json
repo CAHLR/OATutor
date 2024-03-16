@@ -1,0 +1,123 @@
+[
+    {
+        "id": "af060c0deriv18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "One use for the derivative is to analyze motion along a line. Let s(t) be a function giving the position of an object at time $$t$$. The velocity of the object at time $$t$$ is given by v(t) $$=$$ s'(t), the derivative of s(t). First, set s(t) to $$14$$ and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv18a-h1"
+        ],
+        "title": "Setting s(t) to $$14$$",
+        "text": "The problem asks us to determine the velocity $$\\frac{ft}{s}$$ of the car when s(t) $$=$$ $$14$$. Solve for s(t) $$=$$ $$t^2$$ - $$3t$$ - $$4$$ $$=$$ $$14$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "af060c0deriv18a-h2"
+        ],
+        "title": "Solving for $$t$$",
+        "text": "What is $$t^2$$ - $$3t$$ - $$4$$ $$=$$ 14?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv18a-h3"
+        ],
+        "title": "Time When s(t) $$=$$ $$14$$",
+        "text": "$$t^2$$ - $$3t$$ - $$4$$ $$=$$ $$14$$\\n$$t$$ $$=$$ (3 +- sqrt(3**2 + $$4$$ $$x$$ 18))/2\\n$$t$$ $$=$$ (3 +- 9)/2\\n$$t$$ $$=$$ (3 + 9)/2 $$=$$ $$\\frac{12}{2}$$ $$=$$ $$6$$ and $$t$$ $$=$$ (3 - 9)/2 $$=$$ $$\\frac{-6}{2}$$ $$=$$ $$-3$$\\nBecause time can only be positive, the time in which s(t) $$=$$ $$14$$ is $$6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv18a-h4"
+        ],
+        "title": "Velocity Function",
+        "text": "Now that we have determined that $$t$$ $$=$$ $$6$$ when s(t) $$=$$ $$14$$, we can plug the time into the velocity function given by v(t) $$=$$ s'(t), the derivative of s(t). Solve for the velocity function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2t$$ - $$3$$"
+        ],
+        "dependencies": [
+            "af060c0deriv18a-h5"
+        ],
+        "title": "Calculating v(t)",
+        "text": "What is s'(t)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv18a-h6"
+        ],
+        "title": "Taking the Derivative of s(t)",
+        "text": "v(t) $$=$$ s'(t)\\ns(t) $$=$$ $$t^2$$ - $$3t$$ - $$4$$\\ns'(t) $$=$$ $$2t^{2-1}$$ - $$3$$\\ns'(t) $$=$$ $$2t$$ - $$3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv18a-h7"
+        ],
+        "title": "Plugging in Time",
+        "text": "Plug $$t$$ $$=$$ $$6$$ into s'(t) $$=$$ $$2t$$ - $$3$$ to determine the velocity $$\\frac{ft}{s}$$ of the car when s(t) $$=$$ $$14$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv18a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "af060c0deriv18a-h8"
+        ],
+        "title": "Final Calculations",
+        "text": "s'(6) $$=$$ 2(6) - $$3$$ $$=$$ $$12$$ - $$3$$. What is the velocity $$\\frac{ft}{s}$$ of the car when s(t) $$=$$ 14?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
