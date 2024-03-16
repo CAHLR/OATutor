@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a7cf7e2SubAdd2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction Property of Equality",
+        "text": "When you subtract the same quantity from both sides of an equation, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7cf7e2SubAdd2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7cf7e2SubAdd2a-h1"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract $$\\frac{1}{4}$$ from each side to get $$b+\\frac{1}{4}-\\frac{1}{4}=\\frac{3}{4}-\\frac{1}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7cf7e2SubAdd2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7cf7e2SubAdd2a-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the equation to get $$b=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7cf7e2SubAdd2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7cf7e2SubAdd2a-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7cf7e2SubAdd2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a7cf7e2SubAdd2a-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$\\frac{1}{2}+\\frac{1}{4}$$ equals $$\\frac{3}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]
