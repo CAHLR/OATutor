@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a7aa4d9elasticity5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shear Formula",
+        "text": "Recall the formula for shearing: delta $$x$$ $$=$$ $$\\frac{\\frac{1}{S} F}{A} L_0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9elasticity5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7aa4d9elasticity5a-h1"
+        ],
+        "title": "S for bone",
+        "text": "Recall that S for bone is $$80\\times {10}^9$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9elasticity5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.49\\times {10}^{-7}$$ $$m$$"
+        ],
+        "dependencies": [
+            "a7aa4d9elasticity5a-h2"
+        ],
+        "title": "Plug in and solve",
+        "text": "What is $$0.03\\frac{500\\frac{1}{80\\times {10}^9}}{\\pi {\\left(0.5\\times0.04\\right)}^2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1.49\\times {10}^{-7}$$ $$m$$",
+            "$$4.78\\times {10}^{-7}$$ $$m$$",
+            "$$3.29\\times {10}^{-7}$$ $$m$$",
+            "$$2.13\\times {10}^{-7}$$ $$m$$"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a5a59aephysical9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert",
+        "text": "Multiply by the conversion factors that turn $$\\frac{cm}{year}$$ into $$\\frac{cm}{sec}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aephysical9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.3{10}^{-9}$$ $$\\frac{cm}{sec}$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical9a-h1"
+        ],
+        "title": "Convert",
+        "text": "What is $$4.0$$ $$\\frac{cm}{year}$$ * $$\\frac{1}{365}$$ $$\\frac{year}{day}$$ * $$\\frac{1}{24}$$ $$\\frac{day}{hr}$$ * $$\\frac{1}{3600}$$ $$\\frac{hr}{sec}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1.3{10}^9$$ $$\\frac{cm}{sec}$$",
+            "$$1.3{10}^{-9}$$ $$\\frac{cm}{sec}$$",
+            "$$1.3{10}^9$$ $$\\frac{sec}{cm}$$",
+            "$$1.3{10}^{-9}$$ $$\\frac{sec}{cm}$$"
+        ]
+    }
+]
