@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a84669eComp3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Worked Solution",
+        "text": "To express \\(h(x) $$=$$ (x+2)**2\\) as a composition of two functions \\(h(x) $$=$$ f(g(x))\\), we need to break it down into two separate functions, \\(f(x)\\) and \\(g(x)\\), where one function is applied inside the other.\\n\\nThe function \\(h(x) $$=$$ (x+2)**2\\) is basically squaring the result of adding $$2$$ to \\(x\\). So, we can divide this operation into two parts: the inner part \\(g(x)\\), which adds $$2$$ to \\(x\\), and the outer part \\(f(x)\\), which squares its input.\\n\\n$$1$$. **For \\(g(x) $$=$$ $$x$$ + 2\\):** This represents the operation of adding $$2$$ to \\(x\\), which matches the inner operation of \\(h(x)\\).\\n\\n$$2$$. **For \\(f(x) $$=$$ x**2\\):** This represents the operation of squaring the input, which is the outer operation applied to the result of \\(g(x)\\).\\n\\nSo, when you combine these two functions, you get \\(h(x) $$=$$ f(g(x)) $$=$$ $${g{\\left(x\\right)}}^2$$ $$=$$ (x + 2)**2\\), which matches the given \\(h(x)\\).\\n\\nTherefore, the correct answer is **g(x) $$=$$ $$x$$ + $$2$$, f(x) $$=$$ x**2**.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

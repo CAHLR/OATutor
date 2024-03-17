@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a8d8980Comp5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Worked Solution",
+        "text": "To express the given function \\( h(x) $$=$$ $$4$$ + \\sqrt[3]{x} \\) in the form \\( h(x) $$=$$ f(g(x)) \\), we need to identify two functions \\( f(x) \\) and \\( g(x) \\) such that \\( f(g(x)) $$=$$ $$4$$ + \\sqrt[3]{x} \\).\\n\\nLet's look at the options you provided:\\n\\n$$1$$. \\( g(x) $$=$$ \\sqrt[3]{x}, f(x) $$=$$ $$4$$ \\): This option does not correctly represent \\( h(x) \\) because if \\( g(x) $$=$$ \\sqrt[3]{x} \\), then \\( f(x) \\) must do more than just equal $$4$$ to reach the desired form of \\( h(x) \\).\\n\\n$$2$$. \\( g(x) $$=$$ $$x$$, f(x) $$=$$ $$4$$ + g(x) \\): This option suggests that \\( g(x) $$=$$ $$x$$ \\) and \\( f(x) $$=$$ $$4$$ + $$x$$ \\). If we substitute \\( g(x) $$=$$ $$x$$ \\) into \\( f(x) \\), we get \\( f(g(x)) $$=$$ $$4$$ + $$x$$ \\), which does not match the given \\( h(x) $$=$$ $$4$$ + \\sqrt[3]{x} \\) since it does not account for the cube root operation on \\( $$x$$ \\).\\n\\n$$3$$. \\( g(x) $$=$$ \\sqrt[3]{x}, f(x) $$=$$ $$x^3$$ + $$4$$ \\): In this option, \\( g(x) \\) correctly represents the cube root part of \\( h(x) \\), but the function \\( f(x) $$=$$ $$x^3$$ + $$4$$ \\) would cube the result of \\( g(x) \\) and then add $$4$$, which is not the structure of the given \\( h(x) \\).\\n\\n$$4$$. \\( g(x) $$=$$ \\sqrt[3]{x}, f(x) $$=$$ $$4$$ + $$x$$ \\): This option correctly identifies \\( g(x) \\) as the cube root part of \\( h(x) \\), and \\( f(x) $$=$$ $$4$$ + $$x$$ \\) correctly adds $$4$$ to the result of \\( g(x) \\). Thus, if you substitute \\( g(x) \\) into \\( f(x) \\), you get \\( f(g(x)) $$=$$ $$4$$ + \\sqrt[3]{x} \\), which matches the given function \\( h(x) \\).\\n\\nTherefore, the correct answer is \\( g(x) $$=$$ \\sqrt[3]{x}, f(x) $$=$$ $$4$$ + $$x$$ \\), which accurately represents the given function \\( h(x) $$=$$ $$4$$ + \\sqrt[3]{x} \\) as \\( h(x) $$=$$ f(g(x)) \\).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
