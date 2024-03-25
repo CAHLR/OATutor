@@ -86,28 +86,30 @@
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-            },
-            {
-                "id": "a5a59aephysical10a-h4-s2",
-                "type": "scaffold",
-                "problemType": "MultipleChoice",
-                "answerType": "string",
-                "hintAnswer": [
-                    "$$30$$ $$\\frac{km}{hr}$$"
-                ],
-                "dependencies": [],
-                "title": "Answer",
-                "text": "What is $$0.5$$ $$\\frac{km}{min}$$ * $$60$$ $$\\frac{min}{hr}$$?",
-                "variabilization": {},
-                "oer": "https://OATutor.io <OATutor>",
-                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-                "choices": [
-                    "$$30$$ $$\\frac{km}{min}$$",
-                    "$$30$$ $$\\frac{km}{hr}$$",
-                    "$$30$$ $$\\frac{km}{{hr}^2}$$",
-                    "$$30$$ $$\\frac{hr}{km}$$"
-                ]
             }
+        ]
+    },
+    {
+        "id": "a5a59aephysical10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$30$$ $$\\frac{km}{hr}$$"
+        ],
+        "dependencies": [
+            "a5a59aephysical10a-h4"
+        ],
+        "title": "Calculate",
+        "text": "What is $$0.5$$ $$\\frac{km}{min}$$ * $$60$$ $$\\frac{min}{hr}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$30$$ $$\\frac{km}{min}$$",
+            "$$30$$ $$\\frac{km}{hr}$$",
+            "$$30$$ $$\\frac{km}{{hr}^2}$$",
+            "$$30$$ $$\\frac{hr}{km}$$"
         ]
     }
 ]

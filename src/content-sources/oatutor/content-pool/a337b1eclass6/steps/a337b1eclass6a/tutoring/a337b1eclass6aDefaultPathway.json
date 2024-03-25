@@ -8,5 +8,46 @@
         "variabilization": {},
         "oer": "",
         "license": ""
+    },
+    {
+        "id": "a337b1eclass6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{\\left(-4\\right)}$$"
+        ],
+        "dependencies": [
+            "a337b1eclass6a-h1"
+        ],
+        "title": "Calculate the slope",
+        "text": "What is the slope of this line?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a337b1eclass6a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Calculate the slope",
+                "text": "$$m=\\frac{4+3}{6-4}=\\frac{7}{2}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a337b1eclass6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a337b1eclass6a-h2"
+        ],
+        "title": "Explanation",
+        "text": "Since $$m>0$$, the line is increasing.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
     }
 ]

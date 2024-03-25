@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a8c5e27c4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition",
+        "text": "If f(x) is discontinuous at a, then $$1$$. f has a removable discontinuity at a if $$\\lim_{x\\toa} f(x)$$ exists $$(=L$$, where L is a real number). $$2$$. f has a jump discontinuity at a if $$\\lim_{x\\toa-} f(x)$$ and /lim{x,a+,f(x)} both exist, but /lim{x,a-,f(x)}!=/lim{x,a+,f(x)}. (Note: when we say 'exist', we mean that both limits are real-valued and that neither take on the values ~inf.) $$3$$. f has an infinite discontinuity at a if $$\\lim_{x\\toa-} f(x)=\\pm \\infty$$ and/or /lim{x,a+,f(x)}=~inf.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27c4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8c5e27c4a-h1"
+        ],
+        "title": "Evaluate the limit",
+        "text": "What is the value of $$\\lim_{x\\to2} f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a8c5e27c4a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Evaluate the limit",
+                "text": "$$\\lim_{x\\to2} f(x)=\\lim_{x\\to2} \\frac{x^2-4}{x-2}=\\lim_{x\\to2} x+2=4$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a8c5e27c4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "removable"
+        ],
+        "dependencies": [
+            "a8c5e27c4a-h2"
+        ],
+        "title": "Determine the type of discontinuity",
+        "text": "Since f is discontinuous at $$2$$ and $$\\lim_{x\\to2} f(x)$$ exists, what is the type of discontinuity at $$x=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "removable",
+            "jump",
+            "infinite"
+        ]
+    }
+]
