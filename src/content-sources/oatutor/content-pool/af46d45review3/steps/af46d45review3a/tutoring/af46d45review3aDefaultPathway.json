@@ -5,7 +5,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "no"
+            "No"
         ],
         "dependencies": [],
         "title": "One to one",
@@ -17,5 +17,17 @@
             "Yes",
             "No"
         ]
+    },
+    {
+        "id": "af46d45review3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af46d45review3a-h1"
+        ],
+        "title": "One to one",
+        "text": "Note that when $$x=1$$, $$y$$ can be $$-3$$ or $$1$$. So $$x$$ and $$y$$ is not one to one.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
     }
 ]
