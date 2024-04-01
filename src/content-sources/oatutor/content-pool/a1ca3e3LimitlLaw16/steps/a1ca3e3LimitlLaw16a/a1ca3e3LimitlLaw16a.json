@@ -5,7 +5,7 @@
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "Use direct substitution to show that each limit leads to the indeterminate form 0/0.Then, evaluate the limit.",
-    "stepBody": "$$/lim{h,0,(1/(a+h)-1/a)/h$$ where a is a non-zero real-valued constant",
+    "stepBody": "$$\\lim_{h\\to0} \\frac{\\frac{1}{a+h}-\\frac{1}{a}}{h}$$ where a is a non-zero real-valued constant",
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$\\frac{1}{a^2}$$",
