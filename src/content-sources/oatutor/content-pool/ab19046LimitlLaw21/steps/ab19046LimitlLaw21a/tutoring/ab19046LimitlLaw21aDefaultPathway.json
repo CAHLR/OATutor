@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ab19046LimitlLaw21a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} f(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw21a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} g(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw21a-h2"
+        ],
+        "title": "The limit of functions at the same point commute",
+        "text": "Mutiply them together, then multiply the coefficient",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
