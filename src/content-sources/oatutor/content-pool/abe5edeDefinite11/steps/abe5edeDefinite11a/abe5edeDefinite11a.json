@@ -1,12 +1,11 @@
 {
     "id": "abe5edeDefinite11a",
     "stepAnswer": [
-        "/int{x,3,6,x}"
+        "/int{xlog{x**2},1,2,x}"
     ],
     "problemType": "TextBox",
-    "stepTitle": "R_n=(3/n)sum{i\\=1}{n}{3+3(i/n)}",
+    "stepTitle": "R_n=(1/n)sum{i\\=1}{n}{i(1+(i/n)log{(1+i/n)**2)}}",
     "stepBody": "",
     "answerType": "string",
-    "variabilization": {},
-    "answerLatex": "$$\\int_{3}^{6} x \\,dx$$"
+    "variabilization": {}
 }

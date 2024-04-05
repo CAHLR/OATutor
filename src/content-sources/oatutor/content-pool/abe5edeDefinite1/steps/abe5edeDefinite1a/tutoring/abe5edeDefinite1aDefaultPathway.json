@@ -1,0 +1,185 @@
+[
+    {
+        "id": "abe5edeDefinite1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up a Riemann Sum",
+        "text": "Based on the limits of integration, we have $$a=0$$ and $$b=2$$. For $$i=0$$, $$1$$, $$2, ...$$, $$n$$, let P={x_i} be a regular partition of [0, 2] then find dx, or $$\\frac{b-a}{n}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{n}$$"
+        ],
+        "dependencies": [
+            "abe5edeDefinite1a-h1"
+        ],
+        "title": "Set Up a Riemann Sum",
+        "text": "What is dx or $$\\frac{b-a}{n}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{n}$$",
+            "$$\\frac{-2}{n}$$",
+            "$$0$$",
+            "$$\\frac{1}{2} n$$"
+        ]
+    },
+    {
+        "id": "abe5edeDefinite1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite1a-h2"
+        ],
+        "title": "Calculate the Function Value at the Right Endpoint",
+        "text": "Since we are using a right-endpoint approximation to generate Riemann sums, for each i, we need to calculate the function value at the right endpoint of the interval [x_i-1, x_i]. The right endpoint of the interval is $$x_i$$, and since P is a regular partition, x_i=x_0+1dx=0+1[2/n]=2i/n.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite1a-h3"
+        ],
+        "title": "Calculate the Function Value at the Right Endpoint",
+        "text": "Find the function value $$f{\\left(x_i\\right)}$$ at the right endpoint.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(4i**2)/n**2"
+        ],
+        "dependencies": [
+            "abe5edeDefinite1a-h4"
+        ],
+        "title": "Calculate the Function Value at the Right Endpoint",
+        "text": "What is $$f{\\left(x_i\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "abe5edeDefinite1a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "string",
+                "hintAnswer": [
+                    "(4i**2)/n**2"
+                ],
+                "dependencies": [],
+                "title": "Calculate the Function Value at the Right Endpoint",
+                "text": "$$f{\\left(x_i\\right)}={x_i}^2={\\left(\\frac{2i}{n}\\right)}^2=$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "abe5edeDefinite1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite1a-h5"
+        ],
+        "title": "Riemann Sum",
+        "text": "Now find the Riemann sum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(8/n**3)sum{i\\=1}{n}{i**2}"
+        ],
+        "dependencies": [
+            "abe5edeDefinite1a-h6"
+        ],
+        "title": "Riemann Sum",
+        "text": "Which of the following is the correct Riemann sum?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "(8/n**3)sum{i\\=1}{n}{i**2}",
+            "(n**2)sum{i\\=1}{n}{i**2}",
+            "(4/n**2)sum{i\\=1}{n}{i}"
+        ]
+    },
+    {
+        "id": "abe5edeDefinite1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite1a-h7"
+        ],
+        "title": "Riemann Sum",
+        "text": "Evaluate the Riemann sum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite1a-h8"
+        ],
+        "title": "Take the Limit as $$n$$ Approaches Infinity",
+        "text": "/int{x**2,0,2,x}=/lim{sum{i\\=1}{n}{f(x_i)dx},n,inf}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8}{3}$$"
+        ],
+        "dependencies": [
+            "abe5edeDefinite1a-h9"
+        ],
+        "title": "Take the Limit as $$n$$ Approaches Infinity",
+        "text": "What is /lim{(8/3)+(4/n)+(8/(6n**2))}?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "abe5edeDefinite1a-h10-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{8}{3}$$"
+                ],
+                "dependencies": [],
+                "title": "Take the Limit as $$n$$ Approaches Infinity",
+                "text": "What is $$\\frac{8}{3}+0+0$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

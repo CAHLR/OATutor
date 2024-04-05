@@ -3,8 +3,8 @@
         "id": "abe5edeDefinite16a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Graph the Function",
-        "text": "If we graph function $$3-|x-3|$$, we notice that the graph represents a symmetrical triangle from [0, 6]. We will use the area of a triangle formula.",
+        "title": "Apply the Integral of a Sum Property",
+        "text": "/int{[f(x)+g(x)],a,b,x}=/int{f(x),a,b,x}+/int{g(x),a,b,x}. In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "abe5edeDefinite16a-h1"
         ],
-        "title": "Find the Area of Two Triangles $$A_1$$ and $$A_2$$",
-        "text": "We can split the triangle vertically into two triangles $$A_1$$ and $$A_2$$ so they both resemble right triangles. We will find the area for these two triangles then add them up together.",
+        "title": "Apply the Integral of the Product Property",
+        "text": "$$\\int_{a}^{b} c f{\\left(x\\right)} \\,dx=c*\\int_{a}^{b} f(x) \\,dx$$ for constant c. In other words, the integral of the produce of a constant and a function is equal to the constant multiplied by the integral of the function. This means taking the constant outside and putting it in front of the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,8 +27,8 @@
         "dependencies": [
             "abe5edeDefinite16a-h2"
         ],
-        "title": "Formula for Area of a Triangle",
-        "text": "The formula for the area of a triangle is $$A=\\frac{1}{2} b h$$.",
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "Now that we applied the properties of definite integrals to the problem to manipulate the expressions, we can evaluate them to find the answer.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -36,47 +36,33 @@
     {
         "id": "abe5edeDefinite16a-h4",
         "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "$$9$$"
+            "$$41$$"
         ],
         "dependencies": [
             "abe5edeDefinite16a-h3"
         ],
-        "title": "Add $$A_1$$ and $$A_2$$",
-        "text": "What is $$A_1$$ + $$A_2$$?",
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "What is $$4*/intf(x),2,4,x}-3*\\int_{2}^{4} g(x) \\,dx$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "",
-        "choices": [
-            "$$8$$",
-            "$$9$$",
-            "$$10$$",
-            "$$11$$"
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite16a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41$$"
         ],
-        "subHints": [
-            {
-                "id": "abe5edeDefinite16a-h4-s1",
-                "type": "scaffold",
-                "problemType": "MultipleChoice",
-                "answerType": "string",
-                "hintAnswer": [
-                    "$$9$$"
-                ],
-                "dependencies": [],
-                "title": "Add $$A_1$$ and $$A_2$$",
-                "text": "What is $$4.5+4.5$$?",
-                "variabilization": {},
-                "oer": "https://OATutor.io <OATutor>",
-                "license": "",
-                "choices": [
-                    "$$8$$",
-                    "$$9$$",
-                    "$$10$$",
-                    "$$11$$"
-                ]
-            }
-        ]
+        "dependencies": [],
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "What is $$32+9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
     }
 ]

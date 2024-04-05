@@ -1,0 +1,97 @@
+[
+    {
+        "id": "abe5edeDefinite2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area of a Circle",
+        "text": "The formula for the area of a circle is $$A=\\pi r^2$$. Look at the figure provided and made a slight modification to the formula for the area of a circle to find the area of the shaded region.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite2a-h1"
+        ],
+        "title": "Area of a Semicircle",
+        "text": "The function describes a semicircle with a radius $$3$$. The area of a semicircle is just one-half the area of a circle, or $$A=\\frac{1}{2} \\pi r^2$$. Now that we know that the function describes a semicircle, we need to make another slight modification to the formula of a semicircle to find the area of the shaded region, half a semicircle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=\\frac{1}{4} \\pi r^2$$"
+        ],
+        "dependencies": [
+            "abe5edeDefinite2a-h2"
+        ],
+        "title": "Area of Half a Semicircle",
+        "text": "What is the formula for the area of half a semicircle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$A=\\pi r^2$$",
+            "$$A=\\frac{1}{2} \\pi r^2$$",
+            "$$A=\\frac{1}{4} \\pi r^2$$"
+        ],
+        "subHints": [
+            {
+                "id": "abe5edeDefinite2a-h3-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$A=\\frac{1}{4} \\pi r^2$$"
+                ],
+                "dependencies": [],
+                "title": "Area of Half a Semicircle",
+                "text": "Recall the formula for the area of a circle is $$A=\\pi r^2$$. Half a semicircle is one quarter, or $$\\frac{1}{4}$$, of a circle.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$A=\\pi r^2$$",
+                    "$$A=\\frac{1}{2} \\pi r^2$$",
+                    "$$A=\\frac{1}{4} \\pi r^2$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "abe5edeDefinite2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abe5edeDefinite2a-h3"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "Evaluate $$\\int_{3}^{6} \\sqrt{9-{\\left(x-3\\right)}^2} \\,dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5edeDefinite2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.069$$"
+        ],
+        "dependencies": [
+            "abe5edeDefinite2a-h4"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "What is $$\\frac{1}{4} {\\operatorname{\\pi}\\left(3\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
