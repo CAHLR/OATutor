@@ -12,10 +12,10 @@
     {
         "id": "a969466InverseFunc10a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "x"
+            "$$x$$"
         ],
         "dependencies": [
             "a969466InverseFunc10a-h1"
@@ -24,15 +24,20 @@
         "text": "What is f(g(x))?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$x$$",
+            "f(x)",
+            "g(x)"
+        ]
     },
     {
         "id": "a969466InverseFunc10a-s2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "x"
+            "$$x$$"
         ],
         "dependencies": [
             "a969466InverseFunc10a-h1"
@@ -41,6 +46,11 @@
         "text": "What is g(f(x))?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$x$$",
+            "f(x)",
+            "g(x)"
+        ]
     }
 ]
