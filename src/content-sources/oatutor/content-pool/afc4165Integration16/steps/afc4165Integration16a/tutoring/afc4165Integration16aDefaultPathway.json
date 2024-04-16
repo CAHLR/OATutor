@@ -1,0 +1,36 @@
+[
+    {
+        "id": "afc4165Integration16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Velocity function",
+        "text": "$$v(t)=v_0+g t$$ where g is the acceleration due to gravity and $$t$$ is the time of function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165Integration16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc4165Integration16a-h1"
+        ],
+        "title": "Substituting the values",
+        "text": "$$v(t)=40+\\left(-9.8\\right) t=40-9.8t$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165Integration16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc4165Integration16a-h2"
+        ],
+        "title": "Set up a function for the height",
+        "text": "$$h(t)=h-v_0 t+\\frac{1}{2} g t^2=1.5+40t+\\frac{1}{2} \\left(-9.8t^2\\right)=1.5+40t-4.9t^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
