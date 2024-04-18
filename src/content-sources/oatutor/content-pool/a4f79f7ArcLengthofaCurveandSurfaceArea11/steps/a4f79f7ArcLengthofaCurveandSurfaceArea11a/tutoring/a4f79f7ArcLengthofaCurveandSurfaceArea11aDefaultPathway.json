@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arc length formula",
+        "text": "Arc Length can be found by computing $$/int{sqrt(1$$ + g'(y)**2), a, $$b$$, y}, g'(y) is derivative of g(y) and interval [a,b]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h1"
+        ],
+        "title": "find derivative fo g(y)",
+        "text": "We have g(y) $$=x=4y$$, so $$g'(y)=4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h2"
+        ],
+        "title": "Plug in",
+        "text": "After we plug g'(y) and interval, we will have Arc Length $$=$$ $$/int{sqrt(1+(4)**2)$$, -1,1,y} $$=$$ $$\\int_{-1}^{1} \\sqrt{17} \\,dy$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h3"
+        ],
+        "title": "evaluate the integral",
+        "text": "We can take $$\\sqrt{17}$$ out of integral, which gives us Arc $$Length=\\sqrt{17}$$ times $$y$$ with limit from $$-1$$ to $$1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\sqrt{17}$$"
+        ],
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea11a-h4"
+        ],
+        "title": "evaluate the integral",
+        "text": "What is $$\\sqrt{17} \\left(1-\\left(-1\\right)\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

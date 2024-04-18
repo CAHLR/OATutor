@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arc length formula",
+        "text": "Arc Length can be found by computing $$/int{sqrt(1$$ + f'(x)**2), a, $$b$$, x}, f'(x) is derivative of f(x) and interval [a,b]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h1"
+        ],
+        "title": "find derivative fo f(x)",
+        "text": "We have f(x) $$=y=-\\left(\\frac{1}{2}\\right) x+25$$, so $$f'(x)=$$ $$-\\left(\\frac{1}{2}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h2"
+        ],
+        "title": "Plug in",
+        "text": "After we plug f'(x) and interval, we will have Arc Length $$=$$ $$/int{sqrt(1+(-(1/2))**2)$$, 1,4,x} $$=$$ $$\\int_{1}^{4} \\sqrt{\\frac{5}{4}} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h3"
+        ],
+        "title": "evaluate the integral",
+        "text": "We can take $$\\sqrt{\\frac{5}{4}}$$ out of integral, which gives us Arc $$Length=\\sqrt{\\frac{5}{4}}$$ times $$x$$ with limit from $$1$$ to $$4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3\\sqrt{5}}{2}$$"
+        ],
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea10a-h4"
+        ],
+        "title": "evaluate the integral",
+        "text": "What is $$\\sqrt{\\frac{5}{4}} \\left(4-1\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
