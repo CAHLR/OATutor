@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find surface area",
+        "text": "The surface area can be found with $$(2*pi)*/int{f(x)*sqrt(1+(f'(x))**2)$$, a,b,x}, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2\\sqrt{x}}$$"
+        ],
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h1"
+        ],
+        "title": "derivative of f(x)",
+        "text": "What is f'(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4x}$$"
+        ],
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h2"
+        ],
+        "title": "Simplify $${\\operatorname{f'}\\left(x\\right)}^2$$",
+        "text": "What is $${\\operatorname{f'}\\left(x\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h3"
+        ],
+        "title": "Find surface area",
+        "text": "after plugging f(x) and the interval into the equation, we will have Surface Area $$=$$ (2*pi)* $$/int{(sqrt(x))*(sqrt(1+1/(4*x)))$$, $$2$$, $$6$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7ArcLengthofaCurveandSurfaceArea14a-h4"
+        ],
+        "title": "Use a computer, calculator, or another device to solve the integral.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

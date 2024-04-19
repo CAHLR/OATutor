@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$tan(Theta)=\\frac{h}{x}$$"
+            "$$tan(Theta)=\\frac{y}{x}$$"
         ],
         "dependencies": [
             "ad8e986RelatedRates18a-h1"
         ],
         "title": "trigonometry",
-        "text": "Let's set the horizontal distance between L and P as $$x$$, distance between P and the point the light hit in the beach as $$h$$, and the angle between PL and light as Theta, what equation can you use from trigonometry?",
+        "text": "Let's set the distance you traveled north as $$x$$, distance the bus traveled west as $$y$$ , and the angle between you and bus as Theta, what equation can you use from trigonometry?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$tan(Theta)=\\frac{x}{h}$$",
-            "$$cos(Theta)=\\frac{h}{x}$$",
-            "$$sin(Theta)=\\frac{x}{h}$$",
-            "$$tan(Theta)=\\frac{h}{x}$$"
+            "$$tan(Theta)=\\frac{x}{y}$$",
+            "$$cos(Theta)=\\frac{y}{x}$$",
+            "$$sin(Theta)=\\frac{x}{y}$$",
+            "$$tan(Theta)=\\frac{y}{x}$$"
         ]
     },
     {
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dh}{dt}-\\frac{h}{x^2} \\frac{dx}{dt}$$"
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$"
         ],
         "dependencies": [
             "ad8e986RelatedRates18a-h3"
@@ -61,9 +61,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{1}{x} \\frac{dh}{dt}$$",
-            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dh}{dt}-\\frac{h}{x^2} \\frac{dx}{dt}$$",
-            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{h}{x^2} \\frac{dx}{dt}$$"
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}$$",
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$",
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{u}{x^2} \\frac{dx}{dt}$$"
         ]
     },
     {
@@ -72,8 +72,8 @@
         "dependencies": [
             "ad8e986RelatedRates18a-h4"
         ],
-        "title": "$$\\frac{dx}{dt}$$",
-        "text": "Because distance between P and L won't chnge, $$\\frac{dx}{dt}=0$$",
+        "title": "strategy",
+        "text": "We want to find $$\\frac{dTheta}{dt}$$ when $$\\frac{dx}{dt}$$ is $$\\frac{2m}{sec}$$, $$\\frac{dy}{dt}=10$$ $$\\frac{m}{sec}$$, $$x=20mi$$, and $$y=10mi$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -84,20 +84,8 @@
         "dependencies": [
             "ad8e986RelatedRates18a-h5"
         ],
-        "title": "strategy",
-        "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dx}{dt}$$ is $$0$$, $$\\frac{dTheta}{dt}=1o$$ $$\\frac{revolution}{min}$$, $$x=4mi$$, and $$h=2mi$$",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "ad8e986RelatedRates18a-h7",
-        "type": "hint",
-        "dependencies": [
-            "ad8e986RelatedRates18a-h6"
-        ],
         "title": "Plug in",
-        "text": "Final step is to plug in the values of $$x$$, $$h$$, $$\\frac{dTheta}{dt}$$. $$\\frac{dx}{dt}$$ , into the differentiated equation to find $$\\frac{dh}{dt}$$",
+        "text": "Final step is to plug in the values of $$x$$, $$y$$, $$\\frac{dy}{dt}$$. $$\\frac{dx}{dt}$$ , into the differentiated equation to find $$\\frac{dTheta}{dt}$$",
         "variabilization": {},
         "oer": "",
         "license": ""

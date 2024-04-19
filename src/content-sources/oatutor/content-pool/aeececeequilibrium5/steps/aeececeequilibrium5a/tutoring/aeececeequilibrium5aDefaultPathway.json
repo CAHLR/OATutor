@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aeececeequilibrium5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Net force",
+        "text": "Recall the first condition of equilibrium: net F $$=$$ $$0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececeequilibrium5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$117.6$$"
+        ],
+        "dependencies": [
+            "aeececeequilibrium5a-h1"
+        ],
+        "title": "Seesaw force",
+        "text": "How much gravitational force does the seesaw exert (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececeequilibrium5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$686$$"
+        ],
+        "dependencies": [
+            "aeececeequilibrium5a-h2"
+        ],
+        "title": "Supporting force",
+        "text": "How much force does the pivot exert upwards to cancel out the downward forces (rounded to the nearest Newton)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "aeececeequilibrium5a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$686$$"
+                ],
+                "dependencies": [],
+                "title": "Supporting force",
+                "text": "Solve for Fp: $$0$$ $$=$$ Fp - $$254.6$$ - $$313.6$$ - $$117.6$$ (round to the nearest Newton)",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

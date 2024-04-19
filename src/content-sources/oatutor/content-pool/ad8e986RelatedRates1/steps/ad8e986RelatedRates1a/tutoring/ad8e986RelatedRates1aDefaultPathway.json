@@ -1,0 +1,124 @@
+[
+    {
+        "id": "ad8e986RelatedRates1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Partial derivatives",
+        "text": "Take the partial derivatives to this equation in relation to the variable $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad8e986RelatedRates1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986RelatedRates1a-h1"
+        ],
+        "title": "Partial derivatives",
+        "text": "When taking partial derivatives, take the derivative of every value as normal, and make sure to include $$\\frac{du}{dx}$$ (with u being the variable involved) to each term with a variable.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad8e986RelatedRates1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{dy}{dt}=\\frac{2x dx}{dt}$$"
+        ],
+        "dependencies": [
+            "ad8e986RelatedRates1a-h2"
+        ],
+        "title": "Derive",
+        "text": "Derive $$y=x^2+3$$ in terms of $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{dy}{dt}=\\frac{2x dx}{dt}$$",
+            "$$\\frac{dy}{dt}=\\frac{4x dx}{dt}$$",
+            "$$\\frac{dy}{dt}=\\frac{\\left(-2x\\right) dx}{dt}$$",
+            "$$\\frac{dy}{dt}=\\frac{x dx}{dt}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ad8e986RelatedRates1a-h3-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{1dy}{dt}$$"
+                ],
+                "dependencies": [],
+                "title": "Derive",
+                "text": "What is the derivative of $$y$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$1\\left(\\frac{dy}{dt}\\right)$$",
+                    "$$y\\left(\\frac{dy}{dt}\\right)$$",
+                    "$$-1\\left(\\frac{dy}{dt}\\right)$$",
+                    "$$y^2 \\frac{dy}{dt}$$"
+                ]
+            },
+            {
+                "id": "ad8e986RelatedRates1a-h3-s2",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{2x dy}{dt}$$"
+                ],
+                "dependencies": [],
+                "title": "Derive",
+                "text": "What is the derivative of $$x^2$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{2x dx}{dt}$$",
+                    "$$\\frac{x^2 dx}{dt}$$",
+                    "$$\\frac{2x^2 dx}{dt}$$",
+                    "$$\\frac{\\left(-2x\\right) dx}{dt}$$"
+                ]
+            },
+            {
+                "id": "ad8e986RelatedRates1a-h3-s3",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$0$$"
+                ],
+                "dependencies": [],
+                "title": "Derive",
+                "text": "What is the derivative of $$3$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$0$$",
+                    "$$\\frac{3x dx}{dt}$$",
+                    "$$1$$",
+                    "$$3$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ad8e986RelatedRates1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986RelatedRates1a-h3"
+        ],
+        "title": "Use $$\\frac{dx}{dt}$$ and $$x$$",
+        "text": "Now, the $$\\frac{dx}{dt}$$ and $$x$$ that were given in the problem statement can be plugged in to solve for the solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

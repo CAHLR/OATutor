@@ -1,0 +1,106 @@
+[
+    {
+        "id": "aae9fdfPhysicalApplications13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mass-Density Formula",
+        "text": "Let p(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is given by $$m=\\int_{0}^{r} 2\\pi p\\left(x\\right) \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "m=/int{2*pi*x*(1+cos(pi*x),0,10,x}= $$2*pi*/int{x,0,10$$, x} + $$2*pi*/int{cos(pi*x),0,10$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "we can evaluate the integral separately: $$1$$. $$2*pi*\\int_{0}^{10} x \\,dx$$ and $$2$$. $$2*pi*/int{cos(pi*x)$$, $$0$$, $$10$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h3"
+        ],
+        "title": "Evaluate first integral",
+        "text": "$$2*pi*/int{x$$, 0,10, x} is 2*pi* $$\\frac{x^2}{2}$$ with the limit from $$x=0$$ to $$x=10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100\\pi$$"
+        ],
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h4"
+        ],
+        "title": "Solve first integral",
+        "text": "What is 2*pi* $$\\frac{{10}^2}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h5"
+        ],
+        "title": "Evaluate second integral",
+        "text": "2*pi* $$/int{cos(pi*x)$$, 0,10, x} is $$-\\left(\\frac{x}{\\pi}\\right)$$ * sin $$\\pi x$$ with the limit from $$x=0$$ to $$x=10$$ + (1/pi)* (-(1/pi)* $$cos\\left(\\pi x\\right)$$ ) with the limit from $$x=0$$ to $$x=10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h6"
+        ],
+        "title": "Solve second integral",
+        "text": "What is $$\\left(-\\frac{10}{\\pi} sin\\left(10\\pi\\right)-0\\right)+\\frac{1}{\\pi} \\left(-\\frac{1}{\\pi} cos\\left(10\\pi\\right)-\\left(-\\frac{1}{\\pi} cos\\left(0\\right)\\right)\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications13a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications13a-h7"
+        ],
+        "title": "add first and secon integral",
+        "text": "Solve $$100\\pi$$ $$+0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
