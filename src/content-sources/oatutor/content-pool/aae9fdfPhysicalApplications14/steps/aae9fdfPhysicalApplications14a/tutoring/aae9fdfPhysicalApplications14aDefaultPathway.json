@@ -1,0 +1,125 @@
+[
+    {
+        "id": "aae9fdfPhysicalApplications14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "cm to $$m$$",
+        "text": "We need to covert all values with cm into $$m$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h1"
+        ],
+        "title": "Find the constant spring k",
+        "text": "from W $$=$$ $$/int$$ {F(x), a,b, x}, where F(x) is $$k x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h2"
+        ],
+        "title": "Find the interval",
+        "text": "Because natural length is $$0.1m$$, when $$x=0$$, the interval will end at $$x=$$ (distance - $$0.1)m$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h3"
+        ],
+        "title": "Find k: Plug information into formula",
+        "text": "$$2$$ $$=$$ $$/int{$$ (k*x ), $$0$$, $$0.05$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h4"
+        ],
+        "title": "Evaluate integral",
+        "text": "$$2$$ $$=$$ k *( (x**2)/2) with the limit from $$x=0$$ to $$x=0.05$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1600$$"
+        ],
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h5"
+        ],
+        "title": "Fint the constant spring k",
+        "text": "What is k when $$2=$$ k* $$\\frac{{0.05}^2}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h6"
+        ],
+        "title": "Define F(x)",
+        "text": "F(x) $$=$$ $$1600$$ *x",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h7"
+        ],
+        "title": "Find work to streach the string from 15cm to 20xm",
+        "text": "$$W=$$ $$/int{1600*x$$, $$0.05$$, $$0.1$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h8"
+        ],
+        "title": "Evaluate integral",
+        "text": "Solve $$1600$$ * $$\\frac{x^2}{2}$$ with the limit from $$x=0.05$$ to $$x=$$ $$0.1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfPhysicalApplications14a-h10",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfPhysicalApplications14a-h9"
+        ],
+        "title": "Solve",
+        "text": "1600*( $$\\frac{{0.1}^2}{2}$$ - $$\\frac{{0.05}^2}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
