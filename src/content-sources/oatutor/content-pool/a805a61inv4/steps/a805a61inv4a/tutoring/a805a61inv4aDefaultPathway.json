@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a805a61inv4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compare Problem with Formulas",
+        "text": "Comparing this problem with the formulas stated in the rule on integration formulas resulting in inverse trigonometric functions, the integrand looks similar to the formula for $${tan}^{-1} u+C$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a805a61inv4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a805a61inv4a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=2x$$, then $$du=2dx$$ and $$\\frac{1}{2} du=dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a805a61inv4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a805a61inv4a-h2"
+        ],
+        "title": "Inverse Tangent Formula",
+        "text": "$$\\int \\frac{1}{a^2+u^2} \\,du=\\frac{1}{a\\left({tan}^{-1}\\right)} \\frac{u}{a}+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

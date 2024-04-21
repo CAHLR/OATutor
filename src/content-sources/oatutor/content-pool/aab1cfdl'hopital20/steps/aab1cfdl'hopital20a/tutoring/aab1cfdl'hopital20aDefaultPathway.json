@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aab1cfdl'hopital20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital20a-h1"
+        ],
+        "title": "Substitute the limit",
+        "text": "$$3^0-\\frac{2^0}{0}=\\frac{1-1}{0}=\\frac{0}{0}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital20a-h2"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(3^x-2^x\\right)}}{d}}{\\operatorname{dx}\\left(x\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital20a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\ln(3) 3^x-\\ln(2) 2^x}{1}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital20a-h3"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{\\ln(3)-\\ln(2)}{1}$$",
+            "$$\\lim_{x\\to0} \\frac{\\ln(3) 3^x-\\ln(2) 2^x}{1}$$",
+            "/lim{x,0,(3**x)-(2**x))/1}",
+            "$$\\lim_{x\\to0} \\frac{\\ln(x) 3^x-\\ln(x) 2^x}{1}$$"
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital20a-h4"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\frac{\\ln(3) 3^x-\\ln(2) 2^x}{1}=\\ln(3) 3^0-\\ln(2) 2^0=1\\ln(3)-1\\ln(2)=ln(3)-ln(2)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

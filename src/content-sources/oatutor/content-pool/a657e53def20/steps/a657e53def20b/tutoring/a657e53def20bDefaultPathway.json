@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a657e53def20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Limit Definition of the Derivative",
+        "text": "The limit defintion of a derivative is /lim{h,0}(f(x+h)-f(x))/(h).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a657e53def20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a657e53def20b-h1"
+        ],
+        "title": "Plugging In",
+        "text": "Plug in $$h=1$$ into the previous equation, approaching the $$h$$ from 0- and 0+.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a657e53def20b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a657e53def20b-h2"
+        ],
+        "title": "Undefined Limits",
+        "text": "Limits are undefined when they do not approach a finite value or when both sides do not approach the same value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

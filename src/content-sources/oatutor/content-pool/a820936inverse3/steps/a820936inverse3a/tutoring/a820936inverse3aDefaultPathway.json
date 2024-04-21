@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a820936inverse3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The inverse function theorem",
+        "text": "The inverse function theorem is that (f**(-1))'(x)=(1/f'((f**-1)(x))).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse3a-h1"
+        ],
+        "title": "Finding the Inverse of f(x) at $$a=0$$.",
+        "text": "To find the inverse of f(x) where $$a=2$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$2$$. In this case, it is when $$x=1$$, so we know that $$2f^{\\left(-1\\right)}=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse3a-h2"
+        ],
+        "title": "Finding the derivative of f(x)",
+        "text": "Next, to find the derivative of f(x), we can use the power rule. To do this, we can multiply the coefficient of each $$x$$ by its current exponent, and then subtract $$1$$ from the exponent. Remember, constants become $$0$$ when we take the derivative of a function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse3a-h3"
+        ],
+        "title": "Applying the Inverse Function Theorem",
+        "text": "Since we already found $$2f^{\\left(-1\\right)}=1$$ and the derivative of f(x), then we can plug what we know into the inverse function theorem.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

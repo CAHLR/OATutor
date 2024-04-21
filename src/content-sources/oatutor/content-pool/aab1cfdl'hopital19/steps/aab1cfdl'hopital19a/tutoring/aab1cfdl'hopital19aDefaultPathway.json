@@ -1,0 +1,201 @@
+[
+    {
+        "id": "aab1cfdl'hopital19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h1"
+        ],
+        "title": "Substitute the limit",
+        "text": "(sin(0)-tan(0))/(0)**3)}=(0-0)/0=0/0",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h2"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(sinx-tan\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(x^3\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{cosx-{sec}^{2\\left(x\\right)}}{3x^2}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital19a-h3"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-{sec}^{2\\left(x\\right)}\\right)}{3x^2}$$",
+            "$$\\lim_{x\\to0} \\frac{cosx-\\operatorname{sec}\\left(x\\right)}{3x^2}$$",
+            "$$\\lim_{x\\to0} \\frac{cosx+{sec}^{2\\left(x\\right)}}{3x^2}$$",
+            "$$\\lim_{x\\to0} \\frac{cosx-{sec}^{2\\left(x\\right)}}{3x^2}$$"
+        ],
+        "subHints": [
+            {
+                "id": "aab1cfdl'hopital19a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Indeterminate forms in answers",
+                "text": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h4"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\fraccos^3\\left(0\\right)-{sec}^{2\\left(0\\right)}\\times0^2}=\\frac{1-1}{0}=\\frac{0}{0}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h5"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule again",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(cosx-{sec}^{2\\left(x\\right)}\\right)}}{d}}{\\operatorname{dx}\\left(3x^2\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}{6x}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital19a-h6"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{sinx-2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}}{6x}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}{6x}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx+2\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)\\right)}{6x}$$",
+            "/lim{x,0,(-sinx-2*tan(x)))/(6*x)}"
+        ],
+        "subHints": [
+            {
+                "id": "aab1cfdl'hopital19a-h7-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Indeterminate forms in answers",
+                "text": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "aab1cfdl'hopital19a-h7-s2",
+                "type": "hint",
+                "dependencies": [
+                    "aab1cfdl'hopital19a-h7-s1"
+                ],
+                "title": "Apply L\u2019H\u00f4pital\u2019s Rule multiple times",
+                "text": "You can keep applying L'Hospital's Rule as long as there is an indeterminate form in the answers. If the problem is out of the indeterminate forms, you will not be able to apply L'Hospital's Rule anymore.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h7"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\frac{\\left(-sin\\left(0\\right)-2{sec}^{2\\left(0\\right)} tan\\left(0\\right)\\right)}{6\\times0}=\\frac{0-2\\times0}{0}=\\frac{0}{0}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h8"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule again",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{dx\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(6x\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital19a-h9"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)+2{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+2{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{2\\left(x\\right)}\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$"
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital19a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital19a-h10"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}=\\frac{\\left(-1-2\\left(0+1\\right)\\right)}{6}=\\frac{\\left(-1-2\\right)}{6}=\\frac{-1}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

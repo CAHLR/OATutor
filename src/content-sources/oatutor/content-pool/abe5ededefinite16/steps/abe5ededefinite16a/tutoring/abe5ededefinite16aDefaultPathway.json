@@ -1,0 +1,68 @@
+[
+    {
+        "id": "abe5ededefinite16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Integral of a Sum Property",
+        "text": "/int{[f(x)+g(x)],a,b,x}=/int{f(x),a,b,x}+/int{g(x),a,b,x}. In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite16a-h1"
+        ],
+        "title": "Apply the Integral of the Product Property",
+        "text": "$$\\int_{a}^{b} c f{\\left(x\\right)} \\,dx=c*\\int_{a}^{b} f(x) \\,dx$$ for constant c. In other words, the integral of the produce of a constant and a function is equal to the constant multiplied by the integral of the function. This means taking the constant outside and putting it in front of the integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite16a-h2"
+        ],
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "Now that we applied the properties of definite integrals to the problem to manipulate the expressions, we can evaluate them to find the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41$$"
+        ],
+        "dependencies": [
+            "abe5ededefinite16a-h3"
+        ],
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "What is $$4*/intf(x),2,4,x}-3*\\int_{2}^{4} g(x) \\,dx$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite16a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the Integrals and Add Them Up Together",
+        "text": "What is $$32+9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

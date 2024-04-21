@@ -1,0 +1,128 @@
+[
+    {
+        "id": "abe5ededefinite4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the $$x-Intercept$$",
+        "text": "Calculate the x-intercept as $$(2,0)$$ by setting $$y=0$$ then solving for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite4a-h1"
+        ],
+        "title": "What is Needed to Find the Total Area",
+        "text": "To find the total area, take the area below the x-axis over the subinterval [0, 2] and add it to the area above the x-axis on the subinterval [2, 6]. From this we have $$\\int_{0}^{6} |x-2| \\,dx=A_2+A_1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite4a-h2"
+        ],
+        "title": "Find the Area of Two Triangles $$A_2$$ and $$A_1$$",
+        "text": "Use the formula for the area of a triangle, $$A=\\frac{1}{2} b h$$ to obtain $$A_2$$ and $$A_1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A_2=2$$, $$A_1=8$$"
+        ],
+        "dependencies": [
+            "abe5ededefinite4a-h3"
+        ],
+        "title": "Find the Area of Two Triangles $$A_2$$ and $$A_1$$",
+        "text": "What is the area of $$A_2$$ and $$A_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$A_2=2$$, $$A_1=4$$",
+            "$$A_2=2$$, $$A_1=4$$",
+            "$$A_2=1$$, $$A_1=4$$",
+            "$$A_2=2$$, $$A_1=6$$"
+        ],
+        "subHints": [
+            {
+                "id": "abe5ededefinite4a-h4-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$A_2=2$$, $$A_1=8$$"
+                ],
+                "dependencies": [],
+                "title": "Find the Area of Two Triangles $$A_2$$ and $$A_1$$",
+                "text": "For $$A_2$$, what is $$A=\\frac{1}{2} b h$$ if $$2$$ is the base and $$2$$ is the height? For $$A_1$$, what is $$A=\\frac{1}{2} b h$$ if $$4$$ is the base and $$4$$ is the height?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$A_2=2$$, $$A_1=4$$",
+                    "$$A_2=2$$, $$A_1=4$$",
+                    "$$A_2=1$$, $$A_1=4$$",
+                    "$$A_2=2$$, $$A_1=6$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "abe5ededefinite4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite4a-h4"
+        ],
+        "title": "Add $$A_1$$ and $$A_2$$ to Find the Total Area",
+        "text": "Now that we know $$A_1$$ and $$A_2$$, we can add the two areas together to find the total area.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "abe5ededefinite4a-h5"
+        ],
+        "title": "Add $$A_1$$ and $$A_2$$ to Find the Total Area",
+        "text": "What is $$A_1+A_2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "abe5ededefinite4a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$10$$"
+                ],
+                "dependencies": [],
+                "title": "Add $$A_1$$ and $$A_2$$ to Find the Total Area",
+                "text": "What is $$8+2$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

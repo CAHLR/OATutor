@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a4f79f7arc5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take the derivative of g(y) and plug it into the integral with the given bounds",
+        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + (9*(y**2))**2), $$1$$, 2,y}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7arc5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7arc5a-h1"
+        ],
+        "title": "Simplify $${\\operatorname{g'}\\left(y\\right)}^2$$",
+        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + $$81y^4$$, $$1$$, $$2$$, y}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7arc5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7arc5a-h2"
+        ],
+        "title": "Use a computer, calculator, or another device to solve the integral.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

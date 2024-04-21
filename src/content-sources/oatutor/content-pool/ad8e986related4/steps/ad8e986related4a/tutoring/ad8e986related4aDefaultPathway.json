@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ad8e986related4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "strategy",
+        "text": "we can use the relationship between the sides of a right triangle and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related4a-h1"
+        ],
+        "title": "Pythagorean theory",
+        "text": "Let's set the distance from tha wall to bottom of ladder as $$x$$, and the distance from the bottom to top of ladder as $$y$$. Then use Pythagorean theory to make equation to differentiate with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^2+y^2={10}^2$$"
+        ],
+        "dependencies": [
+            "ad8e986related4a-h2"
+        ],
+        "title": "Pythagorean theory",
+        "text": "What is the equation by plugging in $$x$$, $$y$$, and the length of ladder into pythagorean theory?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x+y=10$$",
+            "$$x^2+y^2=10$$",
+            "$$x^2+y^2={10}^2$$"
+        ]
+    },
+    {
+        "id": "ad8e986related4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related4a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t) to relate $$\\frac{dx}{dt}$$ and dy/dt\\",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x\\left(\\frac{dx}{dt}\\right)+2y\\left(\\frac{dy}{dt}\\right)=0$$"
+        ],
+        "dependencies": [
+            "ad8e986related4a-h4"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2x\\left(\\frac{dx}{dt}\\right)+2y\\left(\\frac{dy}{dt}\\right)=0$$",
+            "$$2\\left(\\frac{dx}{dt}\\right)+2\\left(\\frac{dy}{dt}\\right)=0$$",
+            "$$x^2 \\frac{dx}{dt}+y^2 \\frac{dy}{dt}=0$$"
+        ]
+    },
+    {
+        "id": "ad8e986related4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related4a-h5"
+        ],
+        "title": "Find $$y$$",
+        "text": "We need to find $$y$$ when $$x=5ft$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5\\left(\\sqrt{3}\\right)$$"
+        ],
+        "dependencies": [
+            "ad8e986related4a-h6"
+        ],
+        "title": "Find $$y$$",
+        "text": "What is $$y$$ when $$x$$ is $$5$$ ft?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related4a-h7"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$x$$, $$y$$, $$\\frac{dy}{dt}$$ , into the differentiated equation to find $$\\frac{dx}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related4a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-2ft}{sec}$$"
+        ],
+        "dependencies": [
+            "ad8e986related4a-h8"
+        ],
+        "title": "Plug in",
+        "text": "What is dy/dt?(we are given this value)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{2ft}{sec}$$",
+            "$$\\frac{-2ft}{sec}$$"
+        ]
+    }
+]

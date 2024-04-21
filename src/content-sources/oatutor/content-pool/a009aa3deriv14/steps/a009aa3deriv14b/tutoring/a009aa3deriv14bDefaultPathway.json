@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a009aa3deriv14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a009aa3deriv14a-h1"
+        ],
+        "title": "The Second Derivative and Concavity",
+        "text": "If $$\\operatorname{f''}\\left(x\\right)>0$$ over interval I, then f is concave up over I.\\nIf $$\\operatorname{f''}\\left(x\\right)<0$$ over interval I, then f is concave down over I.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a009aa3deriv14b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "concave up"
+        ],
+        "dependencies": [
+            "a009aa3deriv14b-h2"
+        ],
+        "title": "Concavity and f",
+        "text": "As the plane lands, it slows down. If the plane decreases in altitude at a decreasing rate, is it concave up or down?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "concave up",
+            "concave down"
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a1348b9areas7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the limits",
+        "text": "In order to set up the definite integrals of the $$2$$ functions, we have to find the limits where they intersect by setting them equal to each other and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas7a-h1"
+        ],
+        "title": "Find the limits",
+        "text": "$$x^3=x^2+x$$ then $$x=0$$, $$x=\\frac{1-\\sqrt{5}}{2}$$ and $$x=\\frac{1+\\sqrt{5}}{2}$$. So we obtain $$x=\\frac{1-\\sqrt{5}}{2}$$ as a lower limit and $$x=0$$ as an upper limit for the region on the left side of the y-axis. The second limit for the region on the right side of the y-axis has a lower limit as $$x=0$$ and an upper limit as $$x=\\frac{1+\\sqrt{5}}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas7a-h2"
+        ],
+        "title": "Define the upper graph",
+        "text": "The area of A is given by $$int{|f(x)-g(x)|, a, b, x$$,} as f(x) is an upper graph and g(x) is the lower one.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "f(x)"
+        ],
+        "dependencies": [
+            "a1348b9areas7a-h3"
+        ],
+        "title": "Define the upper graph",
+        "text": "What is the upper graph for the region on the left side of y-axis?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "g(x)",
+            "f(x)"
+        ]
+    },
+    {
+        "id": "a1348b9areas7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(x)"
+        ],
+        "dependencies": [
+            "a1348b9areas7a-h4"
+        ],
+        "title": "Define the upper graph",
+        "text": "What is the upper graph for the region on the right side of y-axis?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "g(x)",
+            "f(x)"
+        ]
+    },
+    {
+        "id": "a1348b9areas7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas7a-h5"
+        ],
+        "title": "Set up the integral",
+        "text": "int{(x**3)-(x**2)-x,(1-sqrt(5))/2,0,x}+int{(x**2)+x-(x**3),0,(1+sqrt(5))/2,x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas7a-h6"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{13-5\\sqrt{5}}{24}+\\frac{13+5\\sqrt{5}}{24}=\\frac{13}{12}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

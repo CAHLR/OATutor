@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a7bb185deriv25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "The derivative of the function is the slope of the tangent line",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv25a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1+2sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a7bb185deriv25a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's derivative of $$x-2cos\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-2\\operatorname{csc}\\left(x\\right) \\operatorname{cot}\\left(x\\right)$$",
+            "$$-\\operatorname{csc}\\left(x\\right) \\operatorname{cot}\\left(x\\right)$$",
+            "$$\\operatorname{csc}\\left(x\\right) \\operatorname{cot}\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a7bb185deriv25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a7bb185deriv25a-h2"
+        ],
+        "title": "Sub-question",
+        "text": "Solve $$1+2sin\\left(x\\right)=2$$, what will sin(x) be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv25a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7bb185deriv25a-h3"
+        ],
+        "title": "$$sin(x)=0.5$$ find specific $$x$$",
+        "text": "$$x$$ is from $$0$$ to $$2\\pi$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7bb185deriv25a-h4"
+        ],
+        "title": "The derivative of the function is the slope of the tangent line",
+        "text": "Conclude your answer from sub-questions",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

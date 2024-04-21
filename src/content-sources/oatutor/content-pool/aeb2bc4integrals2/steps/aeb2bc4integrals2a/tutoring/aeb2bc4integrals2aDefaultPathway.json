@@ -1,0 +1,65 @@
+[
+    {
+        "id": "aeb2bc4integrals2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the problem",
+        "text": "First rewrite the problem using a rational exponent: $$\\int e^x \\sqrt{1+e^x} \\,dx=\\int \\frac{e^x {\\left(1+e^x\\right)}^1}{2} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals2a-h1"
+        ],
+        "title": "Using u-substitution",
+        "text": "Set $$u=1+e^x$$ then $$du=e^x dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "/int{u**1/2,u}"
+        ],
+        "dependencies": [
+            "aeb2bc4integrals2a-h2"
+        ],
+        "title": "Using u-substitution",
+        "text": "What is the expression of the integral after using the u-substitution?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals2a-h3"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int \\frac{u^1}{2} \\,du=\\frac{\\frac{u^3}{2}}{\\frac{3}{2}}+C=\\frac{2}{3} u^{\\frac{3}{2}}+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals2a-h4"
+        ],
+        "title": "Back-subsitute",
+        "text": "The final step is to convert u back into the original variable $$\\frac{2}{3} {\\left(1+e^x\\right)}^{\\frac{3}{2}}+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

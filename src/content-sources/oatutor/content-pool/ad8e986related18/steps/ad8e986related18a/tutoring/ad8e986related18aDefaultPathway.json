@@ -1,0 +1,93 @@
+[
+    {
+        "id": "ad8e986related18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "strategy",
+        "text": "we can use the trigonometory and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tan(Theta)=\\frac{y}{x}$$"
+        ],
+        "dependencies": [
+            "ad8e986related18a-h1"
+        ],
+        "title": "trigonometry",
+        "text": "Let's set the distance you traveled north as $$x$$, distance the bus traveled west as $$y$$ , and the angle between you and bus as Theta, what equation can you use from trigonometry?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan(Theta)=\\frac{x}{y}$$",
+            "$$cos(Theta)=\\frac{y}{x}$$",
+            "$$sin(Theta)=\\frac{x}{y}$$",
+            "$$tan(Theta)=\\frac{y}{x}$$"
+        ]
+    },
+    {
+        "id": "ad8e986related18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related18a-h2"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$"
+        ],
+        "dependencies": [
+            "ad8e986related18a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}$$",
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$",
+            "$${sec}^{2\\left(\\Theta\\right)} \\frac{dTheta}{dt}=\\frac{u}{x^2} \\frac{dx}{dt}$$"
+        ]
+    },
+    {
+        "id": "ad8e986related18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related18a-h4"
+        ],
+        "title": "strategy",
+        "text": "We want to find $$\\frac{dTheta}{dt}$$ when $$\\frac{dx}{dt}$$ is $$\\frac{2m}{sec}$$, $$\\frac{dy}{dt}=10$$ $$\\frac{m}{sec}$$, $$x=20mi$$, and $$y=10mi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related18a-h5"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$x$$, $$y$$, $$\\frac{dy}{dt}$$. $$\\frac{dx}{dt}$$ , into the differentiated equation to find $$\\frac{dTheta}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad8e986related7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "strategy",
+        "text": "we can use the equation for Volume of cube and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$V=s^3$$"
+        ],
+        "dependencies": [
+            "ad8e986related7a-h1"
+        ],
+        "title": "Volume of cube",
+        "text": "Let's set volume of cube as V, and length of side of cube as s. What is the equation for computing Volume of cube?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$V=s$$",
+            "$$V=s^2$$",
+            "$$V=s^3$$"
+        ]
+    },
+    {
+        "id": "ad8e986related7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related7a-h2"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{dV}{dt}=3s^{2\\left(\\frac{ds}{dt}\\right)}$$"
+        ],
+        "dependencies": [
+            "ad8e986related7a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{dV}{dt}=3s\\left(\\frac{ds}{dt}\\right)$$",
+            "$$\\frac{dV}{dt}=3s^{2\\left(\\frac{ds}{dt}\\right)}$$",
+            "$$\\frac{dV}{dt}=s^{3\\left(\\frac{ds}{dt}\\right)}$$"
+        ]
+    },
+    {
+        "id": "ad8e986related7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related7a-h4"
+        ],
+        "title": "strategy",
+        "text": "We want to find $$\\frac{ds}{dt}$$ when $$\\frac{dV}{dt}$$ is $$\\frac{-10m^3}{s}$$, and when s $$=2m$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related7a-h5"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of s, $$\\frac{dV}{dt}$$ , into the differentiated equation to find $$\\frac{ds}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

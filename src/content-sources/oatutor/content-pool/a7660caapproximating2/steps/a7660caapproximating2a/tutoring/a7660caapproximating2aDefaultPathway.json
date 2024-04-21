@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a7660caapproximating2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sigma Notation",
+        "text": "We express a sigma notation using the initial number as a lower bound and the ending number as an upper bound. The expression is given in this case sum{i\\=1}{200}{(i-3)**2}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating2a-h1"
+        ],
+        "title": "Expand",
+        "text": "According to the expansion of the perfect square formula, the summation can be written as sum{i\\=1}{200}{(i**2)-(6*i)+9}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}+sum{i\\=1}{200}{9}"
+        ],
+        "dependencies": [
+            "a7660caapproximating2a-h2"
+        ],
+        "title": "Properties of Sigma Notation",
+        "text": "How can we separate the resulting three terms using the properties of sigma notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a7660caapproximating2a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "string",
+                "hintAnswer": [
+                    "6*sum{i\\=1}{200}{i}"
+                ],
+                "dependencies": [],
+                "title": "Properties of Sigma Notation",
+                "text": "How can we isolate the constant in the second term sum{i\\=1}{200}{(6*i)} using the properties of sigma notation?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a7660caapproximating2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating2a-h3"
+        ],
+        "title": "Summation Rules",
+        "text": "Applying summation rules to obtain $$\\frac{200\\left(200+1\\right) \\left(400+1\\right)}{6}-\\frac{6\\times200\\left(200+1\\right)}{2}+9\\times200$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating2a-h4"
+        ],
+        "title": "Simplify",
+        "text": "2,686,700-120,600+1800=2567900",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

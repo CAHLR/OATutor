@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aae9fdfphysical15a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20x-x^3$$"
+        ],
+        "dependencies": [],
+        "title": "Define F(x)",
+        "text": "What is the force F(x) applied to stretch the spring?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfphysical15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfphysical15a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "$$W=\\int_{a}^{b} F(x) \\,dx=\\int_{0}^{2} 20x-x^3 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfphysical15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfphysical15a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\frac{20x^2}{2}$$ - $$\\frac{x^4}{4}$$ as the limits going from $$x=0$$ to $$x=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aae9fdfphysical15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aae9fdfphysical15a-h3"
+        ],
+        "title": "Evaluate",
+        "text": "solve (20 * (2**2)/2- $$\\frac{2^4}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a4f79f7arc3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take the derivative of f(x) and plug it into the integral with the given bounds",
+        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + (2*x)**2), $$1$$, $$3$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7arc3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7arc3a-h1"
+        ],
+        "title": "Simplify $${\\operatorname{f'}\\left(x\\right)}^2$$",
+        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + 4*x**2), $$1$$, $$3$$, x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4f79f7arc3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f79f7arc3a-h2"
+        ],
+        "title": "Use a computer, calculator, or another device to solve the integral.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

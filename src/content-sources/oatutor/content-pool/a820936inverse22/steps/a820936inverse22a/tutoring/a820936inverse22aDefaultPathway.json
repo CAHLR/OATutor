@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a820936inverse22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The inverse function theorem",
+        "text": "The inverse function theorem is that (f**(-1))'(x)=(1/f'((f**-1)(x))).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse22a-h1"
+        ],
+        "title": "Finding the Inverse of f(x) at $$a=0$$.",
+        "text": "To find the inverse of f(x) where $$a=0$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$0$$. In this case, it is when $$x=pi$$, so we know that $$0f^{\\left(-1\\right)}=pi$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse22a-h2"
+        ],
+        "title": "Finding the derivative of f(f**(-1)(x)))",
+        "text": "We found that the inverse of f(x) $$=pi$$ in the previous hint, therefore we need next know what f'(pi) equals, which is given to us, it is $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a820936inverse22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a820936inverse22a-h3"
+        ],
+        "title": "Applying the Inverse Function Theorem",
+        "text": "Since we know that $$\\operatorname{f'}\\left(f^{\\left(-1\\right)} \\pi\\right)$$ equals $$-1$$, we can can apply the inverse function theorem by doing 1/(our answer). In this case this is $$\\frac{1}{\\left(-1\\right)}=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

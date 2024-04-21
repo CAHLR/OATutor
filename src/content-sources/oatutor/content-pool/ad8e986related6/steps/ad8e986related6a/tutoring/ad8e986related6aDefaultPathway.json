@@ -1,0 +1,142 @@
+[
+    {
+        "id": "ad8e986related6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "strategy",
+        "text": "we can use the relationship between the sides of a right triangle and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related6a-h1"
+        ],
+        "title": "Pythagorean theory",
+        "text": "Let's set the distance between two buses as $$x$$, the horizontal distance between two buses as $$y$$. Then use Pythagorean theory to make equation to differentiate with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y^2+5^2=x^2$$"
+        ],
+        "dependencies": [
+            "ad8e986related6a-h2"
+        ],
+        "title": "Pythagorean theory",
+        "text": "What is the equation by plugging in $$x$$, $$y$$, and the distance between parallel freeways into pythagorean theory?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y+5=x^2$$",
+            "$$y^2+5^2=x^2$$",
+            "$$y^2+5^2=x$$"
+        ]
+    },
+    {
+        "id": "ad8e986related6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related6a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t) to relate $$\\frac{dx}{dt}$$ and $$\\frac{dy}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2y\\left(\\frac{dy}{dt}\\right)=2x\\left(\\frac{dx}{dt}\\right)$$"
+        ],
+        "dependencies": [
+            "ad8e986related6a-h4"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2y\\left(\\frac{dy}{dt}\\right)=2x\\left(\\frac{dx}{dt}\\right)$$",
+            "$$2\\left(\\frac{dy}{dt}\\right)+5=2\\left(\\frac{dx}{dt}\\right)$$",
+            "$$y^2 \\frac{dy}{dt}+5^2=x^2 \\frac{dx}{dt}$$"
+        ]
+    },
+    {
+        "id": "ad8e986related6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related6a-h5"
+        ],
+        "title": "Find $$y$$",
+        "text": "We need to find $$y$$ when $$x=13mi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "ad8e986related6a-h6"
+        ],
+        "title": "Find $$y$$",
+        "text": "What is $$y$$ when $$x$$ $$=13$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad8e986related6a-h7"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$x$$, $$y$$, $$\\frac{dy}{dt}$$ , into the differentiated equation to find $$\\frac{dx}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad8e986related6a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "110mph"
+        ],
+        "dependencies": [
+            "ad8e986related6a-h8"
+        ],
+        "title": "Plug in",
+        "text": "What is $$\\frac{dy}{dt}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "110mph",
+            "55mph"
+        ]
+    }
+]
