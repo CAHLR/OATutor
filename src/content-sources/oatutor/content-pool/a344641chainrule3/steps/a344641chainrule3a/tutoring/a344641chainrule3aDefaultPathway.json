@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a344641chainrule3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Remember, the chain rule in Leibniz's notation tells us that $$\\frac{dy}{dx}$$ $$=$$ $$\\frac{dy}{du}$$ * du/dx!",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a344641chainrule3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a344641chainrule3a-h1"
+        ],
+        "title": "First, try finding the derivative of $$y$$ in terms of u. Then, find the derivative of u in terms of $$x$$. Multiplying the two should yield the correct answer!",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a344641chainrule3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(u)"
+        ],
+        "dependencies": [
+            "a344641chainrule3a-h2"
+        ],
+        "title": "What is $$\\frac{dy}{du}$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "cos(u)",
+            "$$-cos(u)$$",
+            "sin(u)",
+            "$$-sin(u)$$"
+        ]
+    },
+    {
+        "id": "a344641chainrule3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a344641chainrule3a-h3"
+        ],
+        "title": "What is $$\\frac{du}{dx}$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$5$$",
+            "$$\\frac{5}{2} x^2$$",
+            "$$5x$$",
+            "$$5x^2$$"
+        ]
+    },
+    {
+        "id": "a344641chainrule3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a344641chainrule3a-h4"
+        ],
+        "title": "Don't forget to plug in what we have for u in terms of $$x$$ to give our final answer in terms of $$x!$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
