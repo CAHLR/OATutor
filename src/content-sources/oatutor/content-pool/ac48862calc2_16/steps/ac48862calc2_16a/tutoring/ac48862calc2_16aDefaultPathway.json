@@ -1,49 +1,53 @@
 [
     {
-        "id": "ac48862calc2_11a-h1",
+        "id": "ac48862calc2_16a-h1",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$908.7$$"
+            "$$60$$"
         ],
         "dependencies": [],
-        "title": "Compute h(9)",
-        "text": "What is the value of h(9)?",
+        "title": "Compute $$S(0.5)$$",
+        "text": "What is the value of $$S(0.5)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$908.7$$",
-            "$$900$$"
+            "$$60.1584$$",
+            "$$62.38$$",
+            "$$60$$",
+            "$$59.8384$$"
         ]
     },
     {
-        "id": "ac48862calc2_11a-h2",
+        "id": "ac48862calc2_16a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$908.60151$$"
+            "$$59.8384$$"
         ],
         "dependencies": [
-            "ac48862calc2_11a-h1"
+            "ac48862calc2_16a-h1"
         ],
-        "title": "Compute $$h(9.01)$$",
-        "text": "What is the value of $$h(9.01)$$?",
+        "title": "Compute $$S(0.51)$$",
+        "text": "What is the value of $$S(0.51)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$908.60151$$",
-            "$$906.60151$$"
+            "$$60.1584$$",
+            "$$62.38$$",
+            "$$60$$",
+            "$$59.8384$$"
         ]
     },
     {
-        "id": "ac48862calc2_11a-h3",
+        "id": "ac48862calc2_16a-h3",
         "type": "hint",
         "dependencies": [
-            "ac48862calc2_11a-h2"
+            "ac48862calc2_16a-h2"
         ],
         "title": "Average Velocity",
         "text": "Let f(x) be the position of an object moving along a coordinate axis at time $$t$$. The average velocity of the object over a time interval [a,t] is: $$v_{avg}=\\frac{f{\\left(t\\right)}-f{\\left(a\\right)}}{t-a}$$.",
@@ -52,15 +56,15 @@
         "license": ""
     },
     {
-        "id": "ac48862calc2_11a-h4",
+        "id": "ac48862calc2_16a-h4",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$-9.849$$"
+            "$$-16.16$$"
         ],
         "dependencies": [
-            "ac48862calc2_11a-h3"
+            "ac48862calc2_16a-h3"
         ],
         "title": "Plug-in and Solve",
         "text": "Given the equation, plug in the given interval into the equations to solve for the average velocity. What is the answer of the average velocity?",
@@ -68,18 +72,18 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$166.649$$",
-            "$$-166.649$$",
-            "$$-9.849$$",
-            "$$9.849$$"
+            "$$-16.88$$",
+            "$$-16.16$$",
+            "$$-13.88$$",
+            "$$-13.16$$"
         ],
         "subHints": [
             {
-                "id": "ac48862calc2_11a-h4-s1",
+                "id": "ac48862calc2_16a-h4-s1",
                 "type": "hint",
                 "dependencies": [],
                 "title": "Plug-in and Solve",
-                "text": "$$\\frac{908.60151-908.7}{9.01-9}=-9.849$$",
+                "text": "$$\\frac{59.8384-60}{0.51-0.5}=-16.16$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
