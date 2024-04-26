@@ -9,6 +9,8 @@ a middleware backend is required by Learning Tools Interoperability (LTI). Our [
 > [Quick content authoring notebook example](https://colab.research.google.com/drive/11X3eW9cDnRcvROaCWglPM5VH0NRAXFKp?usp=sharing)
 >
 > [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
+>
+> [Introduction to OATutor press article](https://bse.berkeley.edu/leveraging-ai-improve-adaptive-tutoring-systems)
 
 ## Paper
 To credit this system, please cite our CHI'23 paper:
