@@ -16,7 +16,7 @@
             "aae9fdfphysical13a-h1"
         ],
         "title": "Set up the integral",
-        "text": "m=/int{2*pi*x*(1+cos(pi*x),0,10,x}= $$2*pi*/int{x,0,10$$, x} + $$2*pi*/int{cos(pi*x),0,10$$, x}",
+        "text": "m=/int{2*pi*x*(1+cos(pi*x),0,10,x}=2*pi*/int{x,0,10,x}+2*pi*/int{cos(pi*x),0,10,x}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "aae9fdfphysical13a-h2"
         ],
         "title": "Find the integral",
-        "text": "we can evaluate the integral separately: $$1$$. $$2*pi*\\int_{0}^{10} x \\,dx$$ and $$2$$. $$2*pi*/int{cos(pi*x)$$, $$0$$, $$10$$, x}",
+        "text": "We can evaluate the integral separately: $$1$$. $$2*pi*\\int_{0}^{10} x \\,dx$$ and $$2$$. $$2*pi*\\int_{0}^{10} cos\\left(\\pi x\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "aae9fdfphysical13a-h3"
         ],
         "title": "Evaluate first integral",
-        "text": "$$2*pi*/int{x$$, 0,10, x} is 2*pi* $$\\frac{x^2}{2}$$ with the limit from $$x=0$$ to $$x=10$$",
+        "text": "$$2*pi*\\int_{0}^{10} x \\,dx$$ is $$\\frac{2\\pi x^2}{2}$$ with the limit from $$x=0$$ to $$x=10$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -69,7 +69,7 @@
             "aae9fdfphysical13a-h5"
         ],
         "title": "Evaluate second integral",
-        "text": "2*pi* $$/int{cos(pi*x)$$, 0,10, x} is $$-\\left(\\frac{x}{\\pi}\\right)$$ * sin $$\\pi x$$ with the limit from $$x=0$$ to $$x=10$$ + (1/pi)* (-(1/pi)* $$cos\\left(\\pi x\\right)$$ ) with the limit from $$x=0$$ to $$x=10$$",
+        "text": "$$2*pi*\\int_{0}^{10} cos\\left(\\pi x\\right) \\,dx$$ is $$-\\left(\\frac{x}{\\pi}\\right) sin\\left(\\pi x\\right)$$ with the limit from $$x=0$$ to $$x=10+\\frac{1}{\\pi} \\left(-\\frac{1}{\\pi} cos\\left(\\pi x\\right)\\right)$$ with the limit from $$x=0$$ to $$x=10$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -97,7 +97,7 @@
         "dependencies": [
             "aae9fdfphysical13a-h7"
         ],
-        "title": "add first and secon integral",
+        "title": "Add first and secon integral",
         "text": "Solve $$100\\pi$$ $$+0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
