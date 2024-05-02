@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aaeca35implicit6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit6a-h1"
+        ],
+        "title": "Derivative Rules",
+        "text": "Use the product rule and the chain rule. The product rule is: $$\\frac{d\\left(uv\\right)}{dx}=u\\left(\\frac{dv}{dx}\\right)+v\\left(\\frac{du}{dx}\\right)$$. The chain rule is: $$[f(g(x))]'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit6a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\fracsin^d\\left(xy\\right) dyx}+\\operatorname{ycos}\\left(xy\\right) \\left(\\frac{x dy}{dx}+y\\right)$$"
+        ],
+        "dependencies": [],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left(y sin\\left(xy\\right)\\right)}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{dy}{dx}+\\operatorname{ysin}\\left(xy\\right) \\frac{x dy}{dx}$$",
+            "$$\\fracsin^d\\left(xy\\right) dyx}+\\operatorname{ycos}\\left(xy\\right) \\left(\\frac{x dy}{dx}+y\\right)$$",
+            "$$\\frac{dy}{dx}+\\operatorname{xcos}\\left(xy\\right)$$",
+            "$$\\fraccos^d\\left(xy\\right) dyx}-\\operatorname{xsin}\\left(xy\\right) \\left(\\frac{x dy}{dx}+1\\right)$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit6a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

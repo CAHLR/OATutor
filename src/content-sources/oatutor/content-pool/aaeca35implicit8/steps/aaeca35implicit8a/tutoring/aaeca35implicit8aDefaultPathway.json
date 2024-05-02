@@ -1,0 +1,55 @@
+[
+    {
+        "id": "aaeca35implicit8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit8a-h1"
+        ],
+        "title": "Derivative Rules",
+        "text": "Use the product rule and the chain rule. The product rule is: $$\\frac{d\\left(uv\\right)}{dx}=u\\left(\\frac{dv}{dx}\\right)+v\\left(\\frac{du}{dx}\\right)$$. The chain rule is: $$[f(g(x))]'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit8a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y^3+3{xy}^2 \\frac{dy}{dx}$$"
+        ],
+        "dependencies": [],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left({xy}^3\\right)}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y^3+3{xy}^2 \\frac{dy}{dx}$$",
+            "$$y^3+3{xy}^2 \\frac{dy}{dx}$$",
+            "$$y^3+3{xy}^2 \\frac{dy}{dx}$$",
+            "$$y^3+3{xy}^2 \\frac{dy}{dx}$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit8a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

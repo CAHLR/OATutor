@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aaeca35implicit5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit5a-h1"
+        ],
+        "title": "Derivative Rules",
+        "text": "Use the product rule and the chain rule. The product rule is: $$\\frac{d\\left(uv\\right)}{dx}=u\\left(\\frac{dv}{dx}\\right)+v\\left(\\frac{du}{dx}\\right)$$. The chain rule is: $$[f(g(x))]'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit5a-h2"
+        ],
+        "title": "Differentiating a Term",
+        "text": "To differentiate $$y \\sqrt{x+4}$$, use the product and chain rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit5a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$"
+        ],
+        "dependencies": [
+            "aaeca35implicit5a-h3"
+        ],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left(y \\sqrt{x+4}\\right)}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit5a-h3"
+        ],
+        "title": "Simplifying",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
