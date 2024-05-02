@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a6d6d05DerivativeFunction4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative function",
+        "text": "Start directly with the definition of the derivative function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h1"
+        ],
+        "title": "Derivative function",
+        "text": "We will get $$f'(x)=/lim{h,0$$, $$\\lim_{h\\to0} \\frac{2-3\\left(x+h\\right)-2-3x}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h2"
+        ],
+        "title": "Expand",
+        "text": "Expand $$\\frac{2-3\\left(x+h\\right)-2-3x}{h}$$ and Simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} \\frac{\\left(-3h\\right)}{h}$$"
+        ],
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} \\frac{\\left(-3h\\right)}{h}$$",
+            "$$\\lim_{h\\to0} \\frac{\\left(-3h+x\\right)}{h}$$",
+            "$$\\lim_{h\\to0} \\frac{3h}{h}$$"
+        ]
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Cancel the common factor $$h$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} -3$$"
+        ],
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What will get ?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} 3$$",
+            "$$\\lim_{h\\to0} -3h$$",
+            "$$\\lim_{h\\to0} -3$$"
+        ]
+    },
+    {
+        "id": "a6d6d05DerivativeFunction4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction4a-h6"
+        ],
+        "title": "Evaluate the limit",
+        "text": "To get a final answer, evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
