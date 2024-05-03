@@ -3,20 +3,25 @@
         "id": "afc4165integration16a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Velocity function",
-        "text": "$$v(t)=v_0+g t$$ where g is the acceleration due to gravity and $$t$$ is the time of function.",
+        "title": "Expression",
+        "text": "We can begin by setting the upper and the lower boundaries of the definite integral as the function v(t) starts from $$t=0$$ and $$t=3$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
         "id": "afc4165integration16a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "/int{(3*t)-5,1,3,t}"
+        ],
         "dependencies": [
             "afc4165integration16a-h1"
         ],
-        "title": "Substituting the values",
-        "text": "$$v(t)=40+\\left(-9.8\\right) t=40-9.8t$$",
+        "title": "Expression",
+        "text": "What is the expression of this definite integral?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,8 +32,20 @@
         "dependencies": [
             "afc4165integration16a-h2"
         ],
-        "title": "Set up a function for the height",
-        "text": "$$h(t)=h-v_0 t+\\frac{1}{2} g t^2=1.5+40t+\\frac{1}{2} \\left(-9.8t^2\\right)=1.5+40t-4.9t^2$$",
+        "title": "Compute the integral",
+        "text": "We obtain $$\\frac{3}{2} t^2-5t$$ with $$t=0$$ as the lower boundary and $$t=3$$ as the upper boundary.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration16a-h3"
+        ],
+        "title": "Evaluate the integral",
+        "text": "$$\\frac{3}{2} 3^2-5\\times3-\\frac{3}{2} 0^2-5\\times0=\\frac{-3}{2}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

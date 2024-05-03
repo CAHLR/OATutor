@@ -1,0 +1,76 @@
+[
+    {
+        "id": "afc4165integration1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange",
+        "text": "The first step is to rewrite the function and simplify it so we can apply the power rule: $$\\int_{1}^{4} \\sqrt{t} \\left(1+t\\right) \\,dt=\\int_{1}^{4} t^{\\frac{1}{2}} \\left(1+t\\right) \\,dt$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration1a-h1"
+        ],
+        "title": "Rearrange",
+        "text": "Contribute $$t^{\\frac{1}{2}}$$ into the term inside parenthesis to obtain $$\\int_{1}^{4} t^{\\frac{1}{2}}+t^{\\frac{3}{2}} \\,dt$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{3} t^{\\frac{3}{2}}$$"
+        ],
+        "dependencies": [
+            "afc4165integration1a-h2"
+        ],
+        "title": "Integrate each term seperately",
+        "text": "In term of $$t$$, what will the first term be after being integrated?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{3} t^{\\frac{3}{2}}$$",
+            "(t**(3/2)",
+            "$$t^{\\left(-\\frac{1}{2}\\right)}$$",
+            "$$\\left(-\\frac{1}{2}\\right) t^{\\frac{3}{2}}$$"
+        ]
+    },
+    {
+        "id": "afc4165integration1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(2/5)*t**(5/2)"
+        ],
+        "dependencies": [
+            "afc4165integration1a-h3"
+        ],
+        "title": "Integrate each term seperately",
+        "text": "In term of $$t$$, what will the second term be after being integrated?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration1a-h4"
+        ],
+        "title": "Evaluate the integral",
+        "text": "As the integral is bounded from $$x=1$$ to $$x=4$$, we have $$\\frac{2}{3} 4^{\\frac{3}{2}}+\\frac{2}{5} 4^{\\frac{5}{2}}-\\frac{2}{3} 1^{\\frac{3}{2}}+\\frac{2}{5} 1^{\\frac{5}{2}}=\\frac{256}{15}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
