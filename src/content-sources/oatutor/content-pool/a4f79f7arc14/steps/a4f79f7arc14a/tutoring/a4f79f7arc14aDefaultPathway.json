@@ -3,8 +3,8 @@
         "id": "a4f79f7arc14a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Find surface area",
-        "text": "The surface area can be found with $$(2*pi)*/int{f(x)*sqrt(1+(f'(x))**2)$$, a,b,x}, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
+        "title": "Find the surface area",
+        "text": "The surface area can be found with $$(2*pi)*\\int_{a}^{b} f{\\left(x\\right)} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -20,7 +20,7 @@
         "dependencies": [
             "a4f79f7arc14a-h1"
         ],
-        "title": "derivative of f(x)",
+        "title": "Derivative of f(x)",
         "text": "What is f'(x)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -49,8 +49,8 @@
         "dependencies": [
             "a4f79f7arc14a-h3"
         ],
-        "title": "Find surface area",
-        "text": "after plugging f(x) and the interval into the equation, we will have Surface Area $$=$$ (2*pi)* $$/int{(sqrt(x))*(sqrt(1+1/(4*x)))$$, $$2$$, $$6$$, x}",
+        "title": "Find the surface area",
+        "text": "After plugging f(x) and the interval into the equation, we will have Surface $$Area=(2*pi)*\\int_{2}^{6} \\sqrt{x} \\sqrt{1+\\frac{1}{4x}} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -61,8 +61,8 @@
         "dependencies": [
             "a4f79f7arc14a-h4"
         ],
-        "title": "Use a computer, calculator, or another device to solve the integral.",
-        "text": "",
+        "title": "Evaluate the integral",
+        "text": "Use a computer, calculator, or another device to solve the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

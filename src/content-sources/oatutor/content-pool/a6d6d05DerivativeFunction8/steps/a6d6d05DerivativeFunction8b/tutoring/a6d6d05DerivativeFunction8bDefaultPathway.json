@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a6d6d05DerivativeFunction8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Second derivative",
+        "text": "Use $$f''(x)=/lim{h,0$$, $$\\frac{\\operatorname{f'}\\left(x+h\\right)-\\operatorname{f'}\\left(x\\right)}{h}$$ to find second derivative",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction8b-h1"
+        ],
+        "title": "Derivative function",
+        "text": "We will get $$f''(x)=\\lim_{h\\to0} \\frac{4\\left(x+h\\right)-3-4x-3}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction8b-h2"
+        ],
+        "title": "Expand",
+        "text": "Expand $$\\frac{4\\left(x+h\\right)-3-4x-3}{h}$$ and Simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} 4$$"
+        ],
+        "dependencies": [
+            "a6d6d05DerivativeFunction8b-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} 4$$",
+            "$$\\lim_{h\\to0} 4h$$",
+            "$$\\lim_{h\\to0} \\frac{4}{h}$$"
+        ]
+    },
+    {
+        "id": "a6d6d05DerivativeFunction8b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction8b-h4"
+        ],
+        "title": "Evaluate the limit",
+        "text": "To get a final answer, evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

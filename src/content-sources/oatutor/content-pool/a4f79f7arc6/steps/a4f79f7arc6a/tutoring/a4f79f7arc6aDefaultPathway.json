@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Take the derivative of g(y) and plug it into the integral with the given bounds",
-        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + (1/(y**2))**2), $$1$$, 4,y}",
+        "text": "Arc $$Length=\\int_{1}^{4} \\sqrt{1+{\\left(\\frac{1}{y^2}\\right)}^2} \\,dy$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a4f79f7arc6a-h1"
         ],
         "title": "Simplify $${\\operatorname{g'}\\left(y\\right)}^2$$",
-        "text": "Arc Length $$=$$ $$/int{sqrt(1$$ + $$\\frac{1}{y^4}$$, $$1$$, $$4$$, y}",
+        "text": "Arc Length=/int{sqrt(1+(1/y**4),1,4,y}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,8 +27,8 @@
         "dependencies": [
             "a4f79f7arc6a-h2"
         ],
-        "title": "Use a computer, calculator, or another device to solve the integral.",
-        "text": "",
+        "title": "Evaluate the integral",
+        "text": "Use a computer, calculator, or another device to solve the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

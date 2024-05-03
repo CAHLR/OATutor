@@ -15,8 +15,8 @@
         "dependencies": [
             "a4f79f7arc7a-h1"
         ],
-        "title": "Find surface area",
-        "text": "The surface area can be found with $$/int{2*pi*f(x)*sqrt(1+(f'(x))**2)$$, a,b,x}, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
+        "title": "Find the surface area",
+        "text": "The surface area can be found with $$\\int_{a}^{b} 2\\pi f{\\left(x\\right)} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -32,7 +32,7 @@
         "dependencies": [
             "a4f79f7arc7a-h2"
         ],
-        "title": "derivative of f(x)",
+        "title": "Derivative of f(x)",
         "text": "What is f'(x)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -61,8 +61,8 @@
         "dependencies": [
             "a4f79f7arc7a-h4"
         ],
-        "title": "Find surface area",
-        "text": "after plugging f(x) and the interval into the equation, we will have Surface Area $$=$$ $$/int{2*pi*(sqrt(x))*(sqrt(1+1/(4*x)))$$, $$1$$, $$4$$, x}",
+        "title": "Find the surface area",
+        "text": "After plugging f(x) and the interval into the equation, we will have Surface $$Area=\\int_{1}^{4} 2\\pi \\sqrt{x} \\sqrt{1+\\frac{1}{4x}} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -74,7 +74,7 @@
             "a4f79f7arc7a-h5"
         ],
         "title": "Simpify",
-        "text": "After simplified the equation, we will have Surface Area $$=$$ $$/int{2*pi*(sqrt(x+1/4))$$, $$1$$, $$4$$, x}",
+        "text": "After simplified the equation, we will have Surface $$Area=\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -85,8 +85,8 @@
         "dependencies": [
             "a4f79f7arc7a-h6"
         ],
-        "title": "Solve integral",
-        "text": "Let $$u=x+\\frac{1}{4}$$. Then, $$du=dx$$. When $$x=1$$, $$u=\\frac{5}{4}$$, and when $$x=4$$, $$u=\\frac{17}{4}$$. This gives us $$/int{2*pi*(sqrt(x+1/4))$$, 1,4, x} $$=$$ $$/int{2*pi*(sqrt(u)),5/4$$, $$\\frac{17}{4}$$, u}",
+        "title": "Evaluate the integral",
+        "text": "Let $$u=x+\\frac{1}{4}$$. Then, $$du=dx$$. When $$x=1$$, $$u=\\frac{5}{4}$$, and when $$x=4$$, $$u=\\frac{17}{4}$$. This gives us $$\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx=\\int_{\\frac{5}{4}}^{\\frac{17}{4}} 2\\pi \\sqrt{u} \\,du$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -97,8 +97,8 @@
         "dependencies": [
             "a4f79f7arc7a-h7"
         ],
-        "title": "Use a computer, calculator, or another device to solve the integral.",
-        "text": "",
+        "title": "Evaluate the integral",
+        "text": "Use a computer, calculator, or another device to solve the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
