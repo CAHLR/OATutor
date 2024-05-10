@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a1268beother11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating Two Equations",
+        "text": "Since $$0=-0$$, we actually keep the expression the way it is and take away the absolute value! Our new expression reads $$x+5=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1268beother11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5$$"
+        ],
+        "dependencies": [
+            "a1268beother11a-h1"
+        ],
+        "title": "Solving $$x+5=0$$",
+        "text": "What is $$x$$ when $$x+5=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a1268beother11a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solving $$x+5=0$$",
+                "text": "To solve $$x+5=0$$, subtract $$5$$ from both sides of the equation: $$x=-5$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a1268beother11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother11a-h2"
+        ],
+        "title": "Final Answer",
+        "text": "So, the only value of $$x$$ that would satisfy $$|x+5|=0$$ is $$-5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "aeae96dlogarithmic16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Change-of-Base Formula",
+        "text": "The change-of-base formula can be used to evaluate a logarithm with any base.\\nFor any positive real numbers M,b, and $$n$$, where $$n \\neq 1$$ and $$b \\neq 1$$, $$\\log_{b}\\left(M\\right)=\\log_{n}\\left(M\\right)/\\log_{n}\\left(b\\right)$$.\\n\\n1) Determine the new base $$n$$, remembering that the common log, $$\\ln(x)$$, has base $$10$$, and the natural log, ln(x), has base e.\\n2) Rewrite the log as a quotient using the change-of-base formula\\na) The numerator of the quotient will be a logarithm with base $$n$$ and argument M.\\nb) The denominator of the quotient will be a logarithm with base $$n$$ and argument $$b$$.\\n",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogarithmic16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "e"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic16a-h1"
+        ],
+        "title": "New Base",
+        "text": "What is the new base that we're changing to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogarithmic16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\log_{b}\\left(M\\right)=\\ln{M}/ln(b)$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic16a-h2"
+        ],
+        "title": "Change-of-Base",
+        "text": "What form does the quotient take after the change-of-base to the new base e?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\log_{b}\\left(M\\right)=\\frac{\\ln(M)}{\\ln(b)}$$",
+            "$$\\log_{b}\\left(M\\right)=\\frac{\\ln(M)}{\\ln(b)}$$"
+        ]
+    },
+    {
+        "id": "aeae96dlogarithmic16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln(4.7)}{\\ln(\\frac{1}{2})}$$"
+        ],
+        "dependencies": [
+            "aeae96dlogarithmic16a-h3"
+        ],
+        "title": "Change-of-Base",
+        "text": "Replacing $$M=4.7$$ and $$b=\\frac{1}{2}$$ in the question, what would the equivalent expression be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogarithmic16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogarithmic16a-h4"
+        ],
+        "title": "Using the Calculator",
+        "text": "Use the calculator to evaluate $$\\frac{\\ln(4.7)}{\\ln(\\frac{1}{2})}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a35ba99cou16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Permutations of $$n$$ Distinct Objects",
+        "text": "Substitute $$n=9$$ and $$r=6$$ into the permutation formula: P(n,r)=n!/(n-r)!.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou16a-h1"
+        ],
+        "title": "Substitute",
+        "text": "P(9,6)=9!/(9-6)!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou16a-h2"
+        ],
+        "title": "Simplify",
+        "text": "P(9,6)=9!/3!=60480",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

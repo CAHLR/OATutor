@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a7dc5fftransformation7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of an Even Function",
+        "text": "A function is called an even function if for every input $$x$$, $$g(x)=g(-x)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7dc5fftransformation7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dc5fftransformation7a-h1"
+        ],
+        "title": "Definition of an Odd Function",
+        "text": "A function is called an odd function if for every input $$x$$, $$g(x)=-g(-x)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7dc5fftransformation7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7dc5fftransformation7a-h2"
+        ],
+        "title": "How to Find $$g(-x)$$",
+        "text": "Find $$g(-x)$$ by subsituting $$-x$$ in wherever $$x$$ appears in the original equation. $${\\left(-x\\right)}^n=x^n$$ when $$n$$ is an even, and $${\\left(-x\\right)}^n=-\\left(x^n\\right)$$ when $$n$$ is odd.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7dc5fftransformation7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^4$$"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation7a-h3"
+        ],
+        "title": "Determining $$g(-x)$$",
+        "text": "What is $$g(-x)$$ equal to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-2x^4$$",
+            "$$2x^4$$"
+        ]
+    },
+    {
+        "id": "a7dc5fftransformation7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7dc5fftransformation7a-h4"
+        ],
+        "title": "How to Find $$-g(-x)$$",
+        "text": "Find $$-g(-x)$$ by multiplying each term of $$g(-x)$$ by $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7dc5fftransformation7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2x^4$$"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation7a-h5"
+        ],
+        "title": "Determining $$-g(-x)$$",
+        "text": "What is $$-g(-x)$$ equal to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-2x^4$$",
+            "$$2x^4$$"
+        ]
+    },
+    {
+        "id": "a7dc5fftransformation7a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation7a-h6"
+        ],
+        "title": "Checking if g(x) is Even",
+        "text": "Does $$g(x)=g(-x)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a7dc5fftransformation7a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a7dc5fftransformation7a-h7"
+        ],
+        "title": "Checking if g(x) is Odd",
+        "text": "Does $$g(x)=-g(-x)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

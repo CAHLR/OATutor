@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1268beother5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal",
+        "text": "Raise both sides to the power of 2/3(reciprocal of the exponent on the left side)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1268beother5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother5b-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression by cancelling the left hand side exponent out",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1268beother5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a1268beother5b-h2"
+        ],
+        "title": "Cube Root",
+        "text": "What is $${125}^{\\frac{1}{3}}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1268beother5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother5b-h3"
+        ],
+        "title": "Simplify",
+        "text": "With this information, We can separate the original expression as $${\\left({125}^{\\frac{1}{3}}\\right)}^2$$ to simplify this problem.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1268beother5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a1268beother5b-h4"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression by substituting the value for $${32}^{\\frac{1}{5}}$$. What is the value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
