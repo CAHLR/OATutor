@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a23945econtingency17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Rules",
+        "text": "To find the probability of this situation, we need to first figure out how many total people are in our situation, then we must figure out the total number of people that \"could\" be in our situation (Occurences vs Total Events).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a23945econtingency17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$301$$"
+        ],
+        "dependencies": [
+            "a23945econtingency17a-h1"
+        ],
+        "title": "Number of Night Practicers",
+        "text": "How many people practice at night?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a23945econtingency17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a23945econtingency17a-h2"
+        ],
+        "title": "Probability Rules",
+        "text": "Now that we have the total number of people who are already in our situation, we just need to find out the total number of people who \"could\" be in our situation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a23945econtingency17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$401$$"
+        ],
+        "dependencies": [
+            "a23945econtingency17a-h3"
+        ],
+        "title": "Number of People",
+        "text": "How many people are in this study?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a23945econtingency17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{301}{401}$$"
+        ],
+        "dependencies": [
+            "a23945econtingency17a-h4"
+        ],
+        "title": "Answer",
+        "text": "Now that we have the total number of people who play at night and people in the study, what is our answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

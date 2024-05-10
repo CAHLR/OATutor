@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a4b9bbfrationalnums10b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{{25}^{\\frac{3}{2}}}\\right)$$"
+        ],
+        "dependencies": [],
+        "title": "Applying property",
+        "text": "Rewrite using $$b^{\\left(-p\\right)}$$ $$=$$ $$\\frac{1}{b^p}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums10b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{{\\sqrt{25}}^3}\\right)$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums10b-h1"
+        ],
+        "title": "Rewrite",
+        "text": "Rewrite in radical form",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums10b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{5^3}\\right)$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums10b-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the radical",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{125}$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums10b-h3"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the whole expression",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

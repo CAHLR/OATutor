@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a4b9bbfrationalnums15a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x^{\\frac{2}{4}}}{x^{\\left(-\\frac{6}{4}\\right)}}$$"
+        ],
+        "dependencies": [],
+        "title": "Product Property",
+        "text": "The Power Property: $${\\left(a^m\\right)}^n$$ $$=$$ $$a^{m n}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^{\\frac{8}{4}}$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums15a-h1"
+        ],
+        "title": "Quotient Property",
+        "text": "The Quotient Property: $$\\frac{a^m}{a^n}$$ $$=$$ $$a^{\\frac{m}{n}}$$, a $$ \\neq $$ $$0$$, $$m>n$$, $$\\frac{a^m}{a^n}$$ $$=$$ $$\\frac{1}{a^{n-m}}$$, a $$ \\neq $$ $$0$$, $$m>n$$,",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4b9bbfrationalnums15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2$$"
+        ],
+        "dependencies": [
+            "a4b9bbfrationalnums15a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the whole expression",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

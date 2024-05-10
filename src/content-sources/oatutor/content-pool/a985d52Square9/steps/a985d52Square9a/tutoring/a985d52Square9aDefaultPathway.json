@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a985d52Square9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating a Perfect Square Trinomial",
+        "text": "First identify the coefficient of the term without the square.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a985d52Square9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a985d52Square9a-h1"
+        ],
+        "title": "Creating a Perfect Square Trinomial",
+        "text": "Take the coefficient, divide it by $$2$$, then take the answer and square it. This will complete the square. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a985d52Square9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a985d52Square9a-h2"
+        ],
+        "title": "Creating a Binomial Squared",
+        "text": "Adding the square on both side",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a985d52Square9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(y-5\\right)}^2=-10$$"
+        ],
+        "dependencies": [
+            "a985d52Square9a-h3"
+        ],
+        "title": "Creating a Binomial Squared",
+        "text": "What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a985d52Square9a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Take the square root of both side",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a985d52Square9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a985d52Square9a-h4",
+            "a985d52Square9a-h5"
+        ],
+        "title": "Principle",
+        "text": "$$\\sqrt{-10}$$ does not exist",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

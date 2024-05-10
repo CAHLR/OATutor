@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a012999exa29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa29a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(p^2\\right)$$"
+        ],
+        "dependencies": [
+            "a012999exa29a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is $$-p$$ times $$p$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa29a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15p$$"
+        ],
+        "dependencies": [
+            "a012999exa29a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is $$-p$$ times -15?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa29a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

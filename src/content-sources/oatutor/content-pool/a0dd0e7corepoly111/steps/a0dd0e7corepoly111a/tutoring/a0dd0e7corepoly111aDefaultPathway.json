@@ -1,0 +1,222 @@
+[
+    {
+        "id": "a0dd0e7corepoly111a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the Expression",
+        "text": "The equation can be rewritten in the form of a quadratic by subtituting $$a=x^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a^2-6a-1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h1"
+        ],
+        "title": "Rewriting the Expression",
+        "text": "What equation represents $$f(x)=x^4-6x^2-1$$ in terms of a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$a^2-6a-1$$",
+            "$$a^4-6a-1$$",
+            "$$a^2-6a^2-1$$",
+            "$$a^4-6a^2-1$$"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly111a-h2"
+        ],
+        "title": "Completing the Square",
+        "text": "To find the value to add to $$f(x)=x^2+b x+c$$, you must add $${\\left(\\frac{b}{2}\\right)}^2$$ within the parantheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h3"
+        ],
+        "title": "Completing the Square",
+        "text": "What is $${\\left(-\\frac{6}{2}\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly111a-h4"
+        ],
+        "title": "Completing the Square",
+        "text": "Add $$9$$ and subtract $$9$$ to simplify the equation: $$a^2-6a+9-9-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-10$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h5"
+        ],
+        "title": "Completing the Square",
+        "text": "What is $$-9-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly111a-h6"
+        ],
+        "title": "Completing the Square",
+        "text": "For some quadratic $$f(x)=x^2+2b x+b^2$$, it can be simplified to $${\\left(x+b\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(a-3\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h7"
+        ],
+        "title": "Completing the Square",
+        "text": "What is $$a^2-6a+9$$ simplified?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$${\\left(a-3\\right)}^2$$",
+            "$${\\left(a-6\\right)}^2$$",
+            "$${\\left(a+3\\right)}^2$$",
+            "$${\\left(a+6\\right)}^2$$"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly111a-h8"
+        ],
+        "title": "Rewriting the Expression",
+        "text": "Subtitute $$x^2$$ back in for the final result: $$f(x)={\\left(x^2-3\\right)}^2-10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly111a-h9"
+        ],
+        "title": "Finding the Range",
+        "text": "The range of the function $$f(x)={\\left(x^2-3\\right)}^2-10$$ can be found by breaking the function into parts.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[0,\\infty)$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h10"
+        ],
+        "title": "Finding the Range",
+        "text": "What is the range of $${\\left(x^2-3\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$[0,\\infty)$$",
+            "$$[1,\\infty)$$",
+            "$$[-1,\\infty)$$",
+            "$$(-\\infty,\\infty)$$"
+        ],
+        "subHints": [
+            {
+                "id": "a0dd0e7corepoly111a-h11-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Range of $${\\left(x+a\\right)}^2$$",
+                "text": "The range of $${\\left(x+a\\right)}^2$$ will be $$[0,\\infty)$$. a will only shift the equation left and right, changing the domain but not the range.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly111a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[-10,\\infty)$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly111a-h11"
+        ],
+        "title": "Finding the Range",
+        "text": "What is the range of $${\\left(x^2-3\\right)}^2-10$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$(-\\infty,10]$$",
+            "$$[-10,\\infty)$$",
+            "$$(-\\infty,-10]$$",
+            "$$[10,\\infty)$$"
+        ],
+        "subHints": [
+            {
+                "id": "a0dd0e7corepoly111a-h12-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Range of $$f{\\left(x\\right)}+c$$",
+                "text": "The range [a,b] for the function f(x) will be [a+c, b+c] for the function $$f{\\left(x\\right)}+c$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]
