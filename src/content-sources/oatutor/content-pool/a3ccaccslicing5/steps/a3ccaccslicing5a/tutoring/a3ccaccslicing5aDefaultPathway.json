@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "V=pi*/int{[x**2-(1/x)**2],1,4,x}"
+            "$$V=pi*\\int_{1}^{4} x^2-{\\left(\\frac{1}{x}\\right)}^2 \\,dx$$"
         ],
         "dependencies": [
             "a3ccaccslicing5a-h1"
@@ -26,8 +26,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "V=pi*/int{[x**2-(1/x)**2],1,4,x}",
-            "V=pi*/int{[x**2-(1/x)**2],4,1,x}",
+            "$$V=pi*\\int_{1}^{4} x^2-{\\left(\\frac{1}{x}\\right)}^2 \\,dx$$",
+            "$$V=pi*\\int_{4}^{1} x^2-{\\left(\\frac{1}{x}\\right)}^2 \\,dx$$",
             "$$V=\\int_{1}^{4} \\pi x^2-\\frac{1}{x} \\,dx$$",
             "$$V=\\int_{4}^{1} \\pi x^2-\\frac{1}{x} \\,dx$$"
         ]
@@ -47,10 +47,10 @@
     {
         "id": "a3ccaccslicing5a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(81*pi)/4"
+            "$$\\frac{81\\pi}{4}$$"
         ],
         "dependencies": [
             "a3ccaccslicing5a-h3"
@@ -59,6 +59,10 @@
         "text": "What is the volume of the solid of revolution?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{81\\pi}{4}$$",
+            "$$\\frac{\\left(-81\\pi\\right)}{4}$$"
+        ]
     }
 ]

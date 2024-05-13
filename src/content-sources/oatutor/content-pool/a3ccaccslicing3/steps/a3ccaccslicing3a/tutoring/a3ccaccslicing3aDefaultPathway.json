@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/int{pi[sqrt(x)]**2,1,4,x}"
+            "$$\\int_{1}^{4} \\pi {\\sqrt{x}}^2 \\,dx$$"
         ],
         "dependencies": [
             "a3ccaccslicing3a-h1"
@@ -26,9 +26,9 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "V=/int{pi[sqrt(x)]**2,1,4,x}",
+            "$$V=\\int_{1}^{4} \\pi {\\sqrt{x}}^2 \\,dx$$",
             "$$V=\\int_{1}^{4} {\\sqrt{x}}^2 \\,dx$$",
-            "V=/int{pi[sqrt(x)]**2,4,1,x}",
+            "$$V=\\int_{4}^{1} \\pi {\\sqrt{x}}^2 \\,dx$$",
             "$$V=\\int_{4}^{1} {\\sqrt{x}}^2 \\,dx$$"
         ]
     },

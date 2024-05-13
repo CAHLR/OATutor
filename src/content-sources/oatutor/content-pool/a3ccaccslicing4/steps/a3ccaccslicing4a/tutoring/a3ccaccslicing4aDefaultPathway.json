@@ -27,7 +27,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "V=/int{pi[sqrt(4-y)]**2,0,4,y}"
+            "$$V=\\int_{0}^{4} \\pi {\\sqrt{4-y}}^2 \\,dy$$"
         ],
         "dependencies": [
             "a3ccaccslicing4a-h2"
@@ -38,8 +38,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "V=/int{pi[sqrt(4-y)]**2,0,4,y}",
-            "V=/int{pi[sqrt(4-y)]**2,4,0,y}",
+            "$$V=\\int_{0}^{4} \\pi {\\sqrt{4-y}}^2 \\,dy$$",
+            "$$V=\\int_{4}^{0} \\pi {\\sqrt{4-y}}^2 \\,dy$$",
             "$$V=\\int_{0}^{4} \\sqrt{4-y} \\,dy$$",
             "$$V=\\int_{4}^{0} \\sqrt{4-y} \\,dy$$"
         ]
@@ -51,7 +51,7 @@
             "a3ccaccslicing4a-h3"
         ],
         "title": "Integrate the Formula",
-        "text": "Find the volume of the solid using the disk method. The volume of the solid of revolution formed by revolving R around the y-axis using the disk method is given by V=/int{pi[f(y)]**2,a,b,y}.",
+        "text": "Find the volume of the solid using the disk method. The volume of the solid of revolution formed by revolving R around the y-axis using the disk method is given by $$V=\\int_{a}^{b} \\pi {f{\\left(y\\right)}}^2 \\,dy$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

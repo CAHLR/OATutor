@@ -36,10 +36,10 @@
     {
         "id": "a3ccaccslicing1a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "s=ax/h"
+            "$$s=\\frac{ax}{h}$$"
         ],
         "dependencies": [
             "a3ccaccslicing1a-h3"
@@ -48,7 +48,11 @@
         "text": "What is the formula in terms of s? Please write the full formula.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$s=\\frac{ax}{h}$$",
+            "$$s=a x h$$"
+        ]
     },
     {
         "id": "a3ccaccslicing1a-h5",
@@ -57,7 +61,7 @@
             "a3ccaccslicing1a-h4"
         ],
         "title": "Setting up the Integral: Area of one Cross-Sectional Square",
-        "text": "The area of one of the cross-sectional squares is $$A(x)=s^2={\\left(\\frac{ax}{h}\\right)}^2$$. The integral for the volume of the pyramid is $$V=\\int_{0}^{h} A(x) \\,dx=\\int_{0}^{h} {\\left(\\frac{ax}{h}\\right)}^2 \\,dx=(a**2/h**2)*/int(x**2),0,h,x}$$.",
+        "text": "The area of one of the cross-sectional squares is $$A(x)=s^2={\\left(\\frac{ax}{h}\\right)}^2$$. The integral for the volume of the pyramid is $$V=\\int_{0}^{h} A(x) \\,dx=\\int_{0}^{h} {\\left(\\frac{a x}{h}\\right)}^2 \\,dx=(a**2/h**2)*/int(x**2),0,h,x}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

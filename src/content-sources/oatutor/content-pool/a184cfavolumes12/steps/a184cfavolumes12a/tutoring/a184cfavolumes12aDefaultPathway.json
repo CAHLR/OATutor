@@ -40,7 +40,7 @@
             "a184cfavolumes12a-h3"
         ],
         "title": "Find the volume",
-        "text": "V=/int{2*pi*(x=1)*f(x),1,2,x}=/int{2*pi*(x+1)*x,1,2,x}",
+        "text": "$$V=\\int_{1}^{2} 2\\pi \\left(x+1\\right) f{\\left(x\\right)} \\,dx=\\int_{1}^{2} 2\\pi \\left(x+1\\right) x \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -52,7 +52,7 @@
             "a184cfavolumes12a-h4"
         ],
         "title": "Simplify the equation",
-        "text": "You can $$2\\pi$$ in front of integral, which make it $$2\\pi$$ $$*(/int{(x+1)*x$$, $$1, 2, x})=2*pi*(/int{x**2+x$$, 1,2,x})",
+        "text": "You can put $$2\\pi$$ in front of the integral, which makes it $$2*pi*(\\int_{1}^{2} \\left(x+1\\right) x \\,dx)=2*pi*(/int{x**2+x$$, 1,2,x})",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

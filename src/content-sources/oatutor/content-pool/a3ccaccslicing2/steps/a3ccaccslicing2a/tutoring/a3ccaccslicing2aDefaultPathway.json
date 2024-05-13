@@ -28,7 +28,7 @@
             "a3ccaccslicing2a-h2"
         ],
         "title": "Formula for Area of the Circle",
-        "text": "Since the solid was formed by revolving the region around the x-axis, the cross-sections are circles. The area of the cross-section, then, is the area of a circle, and the radius of the circle is given by f(x). Use the formula for the area of the circle: A(x)=pi*r**2=pi[f(x)]**2=pi(x**2-4x+5)**2",
+        "text": "Since the solid was formed by revolving the region around the x-axis, the cross-sections are circles. The area of the cross-section, then, is the area of a circle, and the radius of the circle is given by f(x). Use the formula for the area of the circle: A(x)=pi*r**2=pi*[f(x)]**2=pi*(x**2-4x+5)**2",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -71,10 +71,10 @@
     {
         "id": "a3ccaccslicing2a-h6",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(78/5)*pi"
+            "$$\\frac{78\\pi}{5}$$"
         ],
         "dependencies": [
             "a3ccaccslicing2a-h5"
@@ -83,6 +83,10 @@
         "text": "What is the volume of the solid?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{78\\pi}{5}$$",
+            "$$\\frac{78\\times5}{\\pi}$$"
+        ]
     }
 ]
