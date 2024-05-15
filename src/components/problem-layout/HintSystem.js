@@ -15,6 +15,7 @@ import { ThemeContext } from "../../config/config";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
+import withTranslation from '../../util/withTranslation';
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -144,6 +145,7 @@ class HintSystem extends React.Component {
     };
 
     render() {
+        const { translate } = this.props;
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
@@ -177,7 +179,7 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                Hint {i + 1}:{" "}
+                                {translate('hintsystem.hint') + (i + 1) + ": "}
                                 {renderText(
                                     hint.title === "nan" ? "" : hint.title,
                                     problemID,
@@ -294,4 +296,4 @@ const styles = (theme) => ({
     },
 });
 
-export default withStyles(styles)(HintSystem);
+export default withStyles(styles)(withTranslation(HintSystem));

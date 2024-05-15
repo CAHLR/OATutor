@@ -68,7 +68,7 @@ class LessonSelection extends React.Component {
                                     : <h1>{translate('lessonSelection.welcomeTo')} {SITE_NAME.replace(/\s/, "")}!</h1>
                                 }
 
-                                <h2>Please select a {selectionMode === "course" ? "course" : "lesson plan"}</h2>
+                                <h2>{translate('lessonSelection.select')} {selectionMode === "course" ? translate('lessonSelection.course') : translate('lessonSelection.lessonplan')}</h2>
                                 {this.isPrivileged
                                     && <h4>(for {this.user.resource_link_title})</h4>
                                 }
@@ -121,11 +121,11 @@ class LessonSelection extends React.Component {
                                                             aria-label={`View Lesson ${lesson.id}`}
                                                             aria-roledescription={`Navigate to lesson ${lesson.id}'s page to start working on problems`}
                                                             role={"link"}
-                                                            style={{ marginBottom: "10px" }}
+                                                            style={{ marginBottom: "10px", minWidth: "auto", width: "auto"}}
                                                             onClick={() => {
                                                                 this.props.history.push(`/lessons/${lesson.id}`)
                                                             }}>
-                                                            Select
+                                                            {translate('lessonSelection.onlyselect')}
                                                         </Button>
                                                     </Paper>
                                                 </center>
@@ -147,7 +147,7 @@ class LessonSelection extends React.Component {
                                     disabled={this.state.removedProgress}>{this.state.removedProgress ? "Progress Reset!" : "Are you sure?"}</Button> :
                                 <Button className={classes.button} style={{ width: "100%" }} size="small"
                                     onClick={this.prepareRemoveProgress}
-                                    disabled={this.state.preparedRemoveProgress}>{"Reset Progress"}</Button>}
+                                    disabled={this.state.preparedRemoveProgress}>{translate('lessonSelection.resetprogress')}</Button>}
                         </Grid>}
                         <Grid item xs={3} sm={3} md={4} key={3}/>
                     </Grid>

@@ -17,6 +17,7 @@ import TextField from "@material-ui/core/TextField";
 import { NavLink } from "react-router-dom";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import withTranslation from "../../util/withTranslation.js"
 
 import {
     CANVAS_WARNING_STORAGE_KEY,
@@ -405,6 +406,7 @@ class Problem extends React.Component {
     };
 
     render() {
+        const { translate } = this.props;
         const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
@@ -502,7 +504,7 @@ class Problem extends React.Component {
                                                 (this.context.needRefresh = true)
                                             }
                                         >
-                                            Previous Problem
+                                            {translate('problem.PreviousProblem')}
                                         </Button>
                                     </NavLink>
                                 </Grid>
@@ -523,13 +525,14 @@ class Problem extends React.Component {
                                                 (this.context.needRefresh = true)
                                             }
                                         >
-                                            Next Problem
+                                           {translate('problem.NextProblem')}
                                         </Button>
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={2} key={4} />
                             </Grid>
                         ) : (
+                            
                             <Grid container spacing={0}>
                                 <Grid item xs={3} sm={3} md={5} key={1} />
                                 <Grid item xs={6} sm={6} md={2} key={2}>
@@ -545,7 +548,7 @@ class Problem extends React.Component {
                                             )
                                         }
                                     >
-                                        Next Problem
+                                        {translate('problem.NextProblem')}
                                     </Button>
                                 </Grid>
                                 <Grid item xs={3} sm={3} md={5} key={3} />
@@ -564,7 +567,7 @@ class Problem extends React.Component {
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
                             {licenseName !== "" && licenseLink !== "" ? (
                                 <div>
-                                    "{problem.title}" is a derivative of&nbsp;
+                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
                                     <a
                                         href={oerLink}
                                         target="_blank"
@@ -572,7 +575,7 @@ class Problem extends React.Component {
                                     >
                                         "{oerName}"
                                     </a>
-                                    , used under&nbsp;
+                                    {translate('problem.Used')}&nbsp;
                                     <a
                                         href={licenseLink}
                                         target="_blank"
@@ -585,7 +588,7 @@ class Problem extends React.Component {
                                 <div>
                                 {oerName !== "" && oerLink !== "" ? (
                                 <div>
-                                    "{problem.title}" is a derivative of&nbsp;
+                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
                                     <a
                                         href={oerLink}
                                         target="_blank"
@@ -638,14 +641,14 @@ class Problem extends React.Component {
                     {this.state.showFeedback ? (
                         <div className="Feedback">
                             <center>
-                                <h1>Feedback</h1>
+                                <h1>{translate('problem.Feedback')}</h1>
                             </center>
                             <div className={classes.textBox}>
                                 <div className={classes.textBoxHeader}>
                                     <center>
                                         {this.state.feedbackSubmitted
-                                            ? "Thank you for your feedback!"
-                                            : "Feel free to submit feedback about this problem if you encounter any bugs. Submit feedback for all parts of the problem at once."}
+                                            ? translate('problem.Thanks')
+                                            : translate('problem.Description')}
                                     </center>
                                 </div>
                                 {this.state.feedbackSubmitted ? (
@@ -668,7 +671,7 @@ class Problem extends React.Component {
                                         >
                                             <TextField
                                                 id="outlined-multiline-flexible"
-                                                label="Response"
+                                                label={translate('problem.Response')}
                                                 multiline
                                                 fullWidth
                                                 minRows="6"
@@ -717,7 +720,7 @@ class Problem extends React.Component {
                                                     this.state.feedback === ""
                                                 }
                                             >
-                                                Submit
+                                                {translate('problem.Submit')}
                                             </Button>
                                         </Grid>
                                         <Grid
@@ -741,4 +744,4 @@ class Problem extends React.Component {
     }
 }
 
-export default withStyles(styles)(Problem);
+export default withStyles(styles)(withTranslation(Problem));
