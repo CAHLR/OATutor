@@ -33,6 +33,7 @@ import {
 } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import axios from "axios";
+import withTranslation from "../../util/withTranslation.js"
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
@@ -469,6 +470,7 @@ class ProblemCard extends React.Component {
     };
 
     render() {
+        const { translate } = this.props;
         const { classes, problemID, problemVars, seed } = this.props;
         const { displayHints, isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
@@ -652,7 +654,7 @@ class ProblemCard extends React.Component {
                                         "data-selenium-target": `submit-button-${this.props.index}`,
                                     })}
                                 >
-                                    Submit
+                                    {translate('problem.Submit')}
                                 </Button>
                             </center>
                         </Grid>
@@ -734,4 +736,4 @@ class ProblemCard extends React.Component {
     }
 }
 
-export default withStyles(styles)(ProblemCard);
+export default withStyles(styles)(withTranslation(ProblemCard));

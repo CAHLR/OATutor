@@ -20,6 +20,7 @@ import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
+import withTranslation from '../util/withTranslation';
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -31,6 +32,7 @@ class Platform extends React.Component {
 
     constructor(props, context) {
         super(props);
+        
         this.problemIndex = {
             problems: problemPool,
         };
@@ -39,9 +41,6 @@ class Platform extends React.Component {
 
         this.user = context.user || {};
         console.debug("USER: ", this.user)
-        this.studentNameDisplay = context.studentName
-            ? decodeURIComponent(context.studentName) + " | "
-            : "Not logged in | ";
         this.isPrivileged = !!this.user.privileged;
         this.context = context;
 
@@ -402,6 +401,10 @@ class Platform extends React.Component {
     };
 
     render() {
+        const { translate } = this.props;
+        this.studentNameDisplay = this.context.studentName
+        ? decodeURIComponent(this.context.studentName) + " | "
+        : translate('platform.LoggedIn') + " | ";
         return (
             <div
                 style={{
@@ -455,7 +458,7 @@ class Platform extends React.Component {
                                     (this.lesson.showStuMastery == null ||
                                         this.lesson.showStuMastery)
                                         ? this.studentNameDisplay +
-                                          "Mastery: " +
+                                        translate('platform.Mastery') +
                                           Math.round(this.state.mastery * 100) +
                                           "%"
                                         : ""}
@@ -526,4 +529,4 @@ class Platform extends React.Component {
     }
 }
 
-export default withRouter(Platform);
+export default withRouter(withTranslation(Platform));

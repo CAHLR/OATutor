@@ -56,9 +56,10 @@ const queryParamToContext = {
     to: "alreadyLinkedLesson",
     use_expanded_view: "use_expanded_view",
     do_not_restore: "noRestore",
+    locale: "locale",
 };
 
-const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore"];
+const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore", "locale"];
 
 const treatmentMapping = {
     bktParams: {
