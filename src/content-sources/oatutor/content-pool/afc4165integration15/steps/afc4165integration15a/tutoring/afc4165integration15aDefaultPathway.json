@@ -12,10 +12,10 @@
     {
         "id": "afc4165integration15a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/int{300-(50*t)-100*t,0,3,t}"
+            "$$\\int_{0}^{3} 300-50t-100t \\,dt$$"
         ],
         "dependencies": [
             "afc4165integration15a-h1"
@@ -24,7 +24,11 @@
         "text": "How can we express the integral?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\int_{0}^{3} 300-50t-100t \\,dt$$",
+            "$$\\int_{1}^{3} 300-50t-100t \\,dt$$"
+        ]
     },
     {
         "id": "afc4165integration15a-h3",
@@ -45,7 +49,7 @@
             "afc4165integration15a-h3"
         ],
         "title": "Seperating the terms",
-        "text": "Seperate and conpute the integral of each term /int{300,0,3,t}-/int{150*t),0,3,t}",
+        "text": "Seperate and conpute the integral of each term $$\\int_{0}^{3} 300 \\,dt-\\int_{0}^{3} 150t \\,dt$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

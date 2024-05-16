@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Apply the Integral of a Sum and Difference Property",
-        "text": "For addition, /int{[f(x)+g(x)],a,b,x}=/int{f(x),a,b,x}+/int{g(x),a,b,x}. In other words, the integral of a sum is the sum of the integrals. For subtraction, /int{[f(x)+g(x)],a,b,x}=/int{f(x),a,b,x}+-int{g(x),a,b,x}. This means separating the terms into three different integrals with the appropriate sign.",
+        "text": "For addition, $$\\int_{a}^{b} f{\\left(x\\right)}+g{\\left(x\\right)} \\,dx=\\int_{a}^{b} f(x) \\,dx+\\int_{a}^{b} g(x) \\,dx$$. In other words, the integral of a sum is the sum of the integrals. For subtraction, $$\\int_{a}^{b} f(x)-g(x) \\,dx=\\int_{a}^{b} f(x) \\,dx-int{g(x),a,b,x}$$. This means separating the terms into three different integrals with the appropriate sign.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

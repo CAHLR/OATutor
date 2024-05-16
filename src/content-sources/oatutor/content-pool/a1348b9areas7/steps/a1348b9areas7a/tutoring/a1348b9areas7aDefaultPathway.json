@@ -28,7 +28,7 @@
             "a1348b9areas7a-h2"
         ],
         "title": "Define the upper graph",
-        "text": "The area of A is given by $$int{|f(x)-g(x)|, a, b, x$$,} as f(x) is an upper graph and g(x) is the lower one.",
+        "text": "The area of A is given by int{abs(f(x)-g(x)),a,b,x}, as f(x) is an upper graph and g(x) is the lower one.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -82,7 +82,7 @@
             "a1348b9areas7a-h5"
         ],
         "title": "Set up the integral",
-        "text": "int{(x**3)-(x**2)-x,(1-sqrt(5))/2,0,x}+int{(x**2)+x-(x**3),0,(1+sqrt(5))/2,x}",
+        "text": "$$\\int_{\\frac{1-\\sqrt{5}}{2}}^{0} x^3-x^2-x \\,dx+\\int_{0}^{\\frac{1+\\sqrt{5}}{2}} x^2+x-x^3 \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

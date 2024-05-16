@@ -47,10 +47,10 @@
     {
         "id": "a04cbeesubstitution1a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/int{u**4,u}"
+            "$$\\int u^4 \\,du$$"
         ],
         "dependencies": [
             "a04cbeesubstitution1a-h3"
@@ -59,7 +59,11 @@
         "text": "Write the integral in terms of u.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\int u^4 \\,du$$",
+            "$$\\int u \\,du$$"
+        ]
     },
     {
         "id": "a04cbeesubstitution1a-h5",
@@ -80,7 +84,7 @@
             "a04cbeesubstitution1a-h5"
         ],
         "title": "Evaluate the Integral",
-        "text": "Replace u with (3x**2+4)** .",
+        "text": "Replace u with $$3x^2+4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

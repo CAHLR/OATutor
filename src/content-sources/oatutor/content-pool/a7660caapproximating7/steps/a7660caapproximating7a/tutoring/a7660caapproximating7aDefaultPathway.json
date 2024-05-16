@@ -70,10 +70,10 @@
     {
         "id": "a7660caapproximating7a-h6",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[pi/12,pi/6]"
+            "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$"
         ],
         "dependencies": [
             "a7660caapproximating7a-h5"
@@ -82,7 +82,11 @@
         "text": "Express in interval notation, what are the starting and ending points of the next rectangle?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$",
+            "$$(\\frac{\\pi}{12},\\frac{\\pi}{6})$$"
+        ]
     },
     {
         "id": "a7660caapproximating7a-h7",
@@ -91,7 +95,7 @@
             "a7660caapproximating7a-h6"
         ],
         "title": "Find the start and end points of each rectangle",
-        "text": "Continuing the process, we obtain $$6$$ intervals which are [0,pi/12],[pi/12,pi/6],[pi/6,pi/4],[pi/4,pi/3],[pi/3,5*pi/12] and $$[\\frac{5\\pi}{12},\\frac{\\pi}{2}]$$.",
+        "text": "Continuing the process, we obtain $$6$$ intervals which are $$[0,\\frac{\\pi}{12}]$$, $$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$, $$[\\frac{\\pi}{6},\\frac{\\pi}{4}]$$, $$[\\frac{\\pi}{4},\\frac{\\pi}{3}]$$, $$[\\frac{\\pi}{3},\\frac{5\\pi}{12}]$$ and $$[\\frac{5\\pi}{12},\\frac{\\pi}{2}]$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -108,7 +112,7 @@
             "a7660caapproximating7a-h7"
         ],
         "title": "Riemann sum",
-        "text": "What is the area under the curve of the given function using the Riemann sum?",
+        "text": "What is the area under the curve of the given function using the Riemann sum? (Three decimal places)",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

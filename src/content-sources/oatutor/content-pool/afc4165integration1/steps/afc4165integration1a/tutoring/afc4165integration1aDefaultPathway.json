@@ -39,7 +39,7 @@
         "license": "",
         "choices": [
             "$$\\frac{2}{3} t^{\\frac{3}{2}}$$",
-            "(t**(3/2)",
+            "$$t^{\\frac{3}{2}}$$",
             "$$t^{\\left(-\\frac{1}{2}\\right)}$$",
             "$$\\left(-\\frac{1}{2}\\right) t^{\\frac{3}{2}}$$"
         ]
@@ -47,10 +47,10 @@
     {
         "id": "afc4165integration1a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(2/5)*t**(5/2)"
+            "$$\\frac{2}{5} t^{\\frac{5}{2}}$$"
         ],
         "dependencies": [
             "afc4165integration1a-h3"
@@ -59,7 +59,11 @@
         "text": "In term of $$t$$, what will the second term be after being integrated?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{5} t^{\\frac{5}{2}}$$",
+            "$$\\frac{2}{5} t^{\\frac{2}{5}}$$"
+        ]
     },
     {
         "id": "afc4165integration1a-h5",

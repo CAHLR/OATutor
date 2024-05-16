@@ -12,10 +12,10 @@
     {
         "id": "a04cbeesubstitution4a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/int{(u**(1/2))+(u**(-1/2)),u}."
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
         ],
         "dependencies": [
             "a04cbeesubstitution4a-h1"
@@ -24,7 +24,11 @@
         "text": "What is the integral in terms of u?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int u^{\\frac{1}{2}} \\,du$$"
+        ]
     },
     {
         "id": "a04cbeesubstitution4a-h3",

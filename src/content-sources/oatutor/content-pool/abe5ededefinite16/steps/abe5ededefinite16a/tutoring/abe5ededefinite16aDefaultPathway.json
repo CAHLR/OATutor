@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Apply the Integral of a Sum Property",
-        "text": "/int{[f(x)+g(x)],a,b,x}=/int{f(x),a,b,x}+/int{g(x),a,b,x}. In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
+        "text": "$$\\int_{a}^{b} f{\\left(x\\right)}+g{\\left(x\\right)} \\,dx=\\int_{a}^{b} f(x) \\,dx+\\int_{a}^{b} g(x) \\,dx$$. In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -45,7 +45,7 @@
             "abe5ededefinite16a-h3"
         ],
         "title": "Evaluate the Integrals and Add Them Up Together",
-        "text": "What is $$4*/intf(x),2,4,x}-3*\\int_{2}^{4} g(x) \\,dx$$?",
+        "text": "What is $$4*\\int_{2}^{4} f(x) \\,dx-3*\\int_{2}^{4} g(x) \\,dx$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

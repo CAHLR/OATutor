@@ -12,10 +12,10 @@
     {
         "id": "a04cbeesubstitution7a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/int{(1+cos2theta)/2,0,pi/2,theta}"
+            "$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{1+cos2 \\theta}{2} \\,dtheta$$"
         ],
         "dependencies": [
             "a04cbeesubstitution7a-h1"
@@ -24,7 +24,11 @@
         "text": "What is the new integral?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{1+cos2 \\theta}{2} \\,dtheta$$",
+            "$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{cos2 \\theta}{2} \\,dtheta$$"
+        ]
     },
     {
         "id": "a04cbeesubstitution7a-h3",

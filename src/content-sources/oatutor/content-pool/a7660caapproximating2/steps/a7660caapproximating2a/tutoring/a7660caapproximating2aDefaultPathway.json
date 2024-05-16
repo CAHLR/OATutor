@@ -24,7 +24,7 @@
     {
         "id": "a7660caapproximating2a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
             "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}+sum{i\\=1}{200}{9}"
@@ -37,11 +37,15 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
+        "choices": [
+            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}+sum{i\\=1}{200}{9}",
+            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}"
+        ],
         "subHints": [
             {
                 "id": "a7660caapproximating2a-h3-s1",
                 "type": "scaffold",
-                "problemType": "TextBox",
+                "problemType": "MultipleChoice",
                 "answerType": "string",
                 "hintAnswer": [
                     "6*sum{i\\=1}{200}{i}"
@@ -51,7 +55,11 @@
                 "text": "How can we isolate the constant in the second term sum{i\\=1}{200}{(6*i)} using the properties of sigma notation?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
-                "license": ""
+                "license": "",
+                "choices": [
+                    "6*sum{i\\=1}{200}{i}",
+                    "sum{i\\=1}{200}{i}"
+                ]
             }
         ]
     },
@@ -62,7 +70,7 @@
             "a7660caapproximating2a-h3"
         ],
         "title": "Summation Rules",
-        "text": "Applying summation rules to obtain $$\\frac{200\\left(200+1\\right) \\left(400+1\\right)}{6}-\\frac{6\\times200\\left(200+1\\right)}{2}+9\\times200$$",
+        "text": "Applying summation rules to obtain $$\\frac{200\\left(200+1\\right) \\left(400+1\\right)}{6}-\\frac{6\\left(200\\left(200+1\\right)\\right)}{2}+9\\times200$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

@@ -27,7 +27,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "1/8*int/{e**u,3,7,u}"
+            "$$1/8*\\int_{3}^{7} e^u \\,du$$"
         ],
         "dependencies": [
             "a04cbeesubstitution6a-h2"
@@ -38,10 +38,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "1/8*int/{e**u,3,7,u}",
-            "int/{e**u,3,7,u}",
-            "1/8*int/{e**u,7,3,u}",
-            "int/{e**u,7,3,u}"
+            "$$1/8*\\int_{3}^{7} e^u \\,du$$",
+            "$$\\int_{3}^{7} e^u \\,du$$",
+            "$$1/8*\\int_{7}^{3} e^u \\,du$$",
+            "$$\\int_{7}^{3} e^u \\,du$$"
         ]
     },
     {
@@ -51,7 +51,7 @@
             "a04cbeesubstitution6a-h3"
         ],
         "title": "Integrate",
-        "text": "",
+        "text": "Integrate the result.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

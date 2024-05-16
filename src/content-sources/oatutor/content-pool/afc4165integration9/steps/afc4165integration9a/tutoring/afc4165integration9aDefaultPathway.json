@@ -12,10 +12,10 @@
     {
         "id": "afc4165integration9a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(1/2)*log|x|+C"
+            "$$\\frac{1}{2} log|x|+C$$"
         ],
         "dependencies": [
             "afc4165integration9a-h1"
@@ -25,6 +25,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
+        "choices": [
+            "$$\\frac{1}{2} log$$",
+            "$$x$$",
+            "$$+C$$",
+            "log",
+            "$$x$$",
+            "$$+C$$"
+        ],
         "subHints": [
             {
                 "id": "afc4165integration9a-h2-s1",

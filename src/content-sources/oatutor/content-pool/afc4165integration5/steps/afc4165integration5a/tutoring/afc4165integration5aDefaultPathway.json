@@ -12,10 +12,10 @@
     {
         "id": "afc4165integration5a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(5*t)-(0.1*(t**4)/4)"
+            "$$5t-\\frac{0.1t^4}{4}$$"
         ],
         "dependencies": [
             "afc4165integration5a-h1"
@@ -24,7 +24,11 @@
         "text": "What is the interal of the function with the lower boundary of $$0$$ and upper boundary of 2?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$5t-\\frac{0.1t^4}{4}$$",
+            "$$5t-0.1t^4$$"
+        ]
     },
     {
         "id": "afc4165integration5a-h3",
