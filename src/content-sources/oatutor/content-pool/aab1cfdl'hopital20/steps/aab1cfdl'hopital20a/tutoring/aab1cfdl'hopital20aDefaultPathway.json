@@ -28,7 +28,7 @@
             "aab1cfdl'hopital20a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(3^x-2^x\\right)}}{d}}{\\operatorname{dx}\\left(x\\right)}$$",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(3^x-2^x\\right)}{\\frac{d}{dx} x}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -52,7 +52,7 @@
         "choices": [
             "$$\\lim_{x\\to0} \\frac{\\ln(3)-\\ln(2)}{1}$$",
             "$$\\lim_{x\\to0} \\frac{\\ln(3) 3^x-\\ln(2) 2^x}{1}$$",
-            "/lim{x,0,(3**x)-(2**x))/1}",
+            "$$\\lim_{x\\to0} \\frac{3^x-2^x}{1}$$",
             "$$\\lim_{x\\to0} \\frac{\\ln(x) 3^x-\\ln(x) 2^x}{1}$$"
         ]
     },
