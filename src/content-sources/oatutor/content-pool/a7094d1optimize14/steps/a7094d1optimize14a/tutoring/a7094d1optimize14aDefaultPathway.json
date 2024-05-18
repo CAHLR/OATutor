@@ -46,7 +46,9 @@
         "hintAnswer": [
             "$$800-\\frac{1}{5} x$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h3"
+        ],
         "title": "$$y$$",
         "text": "First, solve for $$y$$ using the perimeter's equation. $$y=___$$?",
         "variabilization": {},
@@ -61,7 +63,9 @@
         "hintAnswer": [
             "$$-\\left(\\frac{1}{2}\\right) x^2+400x$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h4"
+        ],
         "title": "subsitute $$y$$",
         "text": "Rewrite $$A=xy$$ in terms of only $$x$$ by substituting $$y$$ with $$y=400-\\frac{1}{2} x$$. $$A(x)=___$$?",
         "variabilization": {},
@@ -71,7 +75,9 @@
     {
         "id": "a7094d1optimize14a-h6",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h5"
+        ],
         "title": "critical points",
         "text": "Find the area function's critical point(s) using its derivative.",
         "variabilization": {},
@@ -86,7 +92,9 @@
         "hintAnswer": [
             "$$-x+400$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h6"
+        ],
         "title": "derivative",
         "text": "What is $$A'(x)=___$$?",
         "variabilization": {},
@@ -101,7 +109,9 @@
         "hintAnswer": [
             "400"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h7"
+        ],
         "title": "slope of zero",
         "text": "When $$A'(x)=0$$, $$x=___$$?",
         "variabilization": {},
@@ -111,7 +121,9 @@
     {
         "id": "a7094d1optimize14a-h9",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h8"
+        ],
         "title": "dimensions",
         "text": "Lastly, find the dimension of the width.",
         "variabilization": {},
@@ -126,7 +138,9 @@
         "hintAnswer": [
             "200"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a7094d1optimize14a-h9"
+        ],
         "title": "$$y$$",
         "text": "If $$x=400$$, what is $$y=400-\\frac{1}{2} x=___$$?",
         "variabilization": {},

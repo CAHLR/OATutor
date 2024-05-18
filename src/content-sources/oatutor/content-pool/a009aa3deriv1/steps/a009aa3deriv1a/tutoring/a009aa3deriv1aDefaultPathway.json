@@ -12,10 +12,10 @@
     {
         "id": "a009aa3deriv1a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "3x**2"
+            "$$3x^2$$"
         ],
         "dependencies": [
             "a009aa3deriv1a-h1"
@@ -24,7 +24,11 @@
         "text": "What is f'(x)? Write just the right hand side of the equation.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$3x^2$$",
+            "$$x^2$$"
+        ]
     },
     {
         "id": "a009aa3deriv1a-s1",
