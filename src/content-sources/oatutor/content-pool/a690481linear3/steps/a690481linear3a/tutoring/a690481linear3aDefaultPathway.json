@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Linear Approximation Function",
-        "text": "Use the following equation L(x) $$=$$ f(a) + f'(a)(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "text": "Use the following equation L(x)=f(a)+f'(a)*(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a690481linear3a-h1"
         ],
         "title": "Plugging Into the Formula",
-        "text": "The linear approximation at $$x$$ $$=$$ $$0$$ is given by L(x) $$=$$ f(0) + f'(0)(x - 0).",
+        "text": "The linear approximation at $$x$$ $$=$$ $$0$$ is given by L(x) $$=$$ f(0)+f'(0)*(x - 0).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -60,7 +60,7 @@
                 ],
                 "dependencies": [],
                 "title": "Plugging Into $$f{\\left(\\frac{\\pi}{3}\\right)}$$",
-                "text": "f(x) $$=$$ (1 + x)**n such that f(0) $$=$$ (1 + 0)**n. What is $$1^n$$?",
+                "text": "$$f(x)=(1$$ + x)**n such that $$f(0)=(1$$ + 0)**n. What is $$1^n$$?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -74,7 +74,7 @@
             "a690481linear3a-h4"
         ],
         "title": "Taking the Derivative of f(x)",
-        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ (1 + x)**n where f'(x) $$=$$ n(1 + x)**(n - 1).",
+        "text": "The next step is finding f'(x) by taking the derivative of $$f(x)=(1$$ + x)**n where f'(x)=n*(1 + x)**(n - 1).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -91,7 +91,7 @@
             "a690481linear3a-h5"
         ],
         "title": "Determining f'(a)",
-        "text": "Given that $$x$$ $$=$$ $$0$$ and f'(x) $$=$$ n(1 + x)**(n - 1), what is f'(a)?",
+        "text": "Given that $$x=0$$ and f'(x)=n*(1 + x)**(n - 1), what is f'(a)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -106,7 +106,7 @@
                 ],
                 "dependencies": [],
                 "title": "Plugging Into f'(0)",
-                "text": "f'(0) $$=$$ n(1 + 0)**(n - 1) $$=$$ n(1)**(n - 1). What is n**(n - 1)?",
+                "text": "$$f'(0)=n {\\left(1+0\\right)}^{n-1}$$ $$=$$ $$n 1^{n-1}$$. What is $$n^{n-1}$$?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -120,7 +120,7 @@
             "a690481linear3a-h6"
         ],
         "title": "Putting it Together",
-        "text": "Now that we have found the values of f(0) and f'(0), we know that L(x) $$=$$ $$1$$ + n(x - 0) $$=$$ $$1$$ + nx.",
+        "text": "Now that we have found the values of f(0) and f'(0), we know that $$L(x)=1+n \\left(x-0\\right)=1+n x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

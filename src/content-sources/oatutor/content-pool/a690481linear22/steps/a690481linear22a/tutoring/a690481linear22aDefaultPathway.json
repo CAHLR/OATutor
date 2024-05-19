@@ -16,7 +16,7 @@
             "a690481linear22a-h1"
         ],
         "title": "Solving for y'",
-        "text": "$$y$$ $$=$$ $$x^3$$ + $$2x$$ + $$\\frac{1}{x}$$ such that y' $$=$$ $$3x^{3-1}$$ + $$2$$ + $$\\left(-1x^{-2}\\right)$$ $$=$$ $$3x^2$$ + $$2$$ - $$\\frac{1}{x^2}$$. Thus, dy $$=$$ (3x**2 + $$2$$ - (1/(x**2)))dx.",
+        "text": "$$y$$ $$=$$ $$x^3$$ + $$2x$$ + $$\\frac{1}{x}$$ such that y' $$=$$ $$3x^{3-1}$$ + $$2$$ + $$\\left(-1x^{-2}\\right)$$ $$=$$ $$3x^2$$ + $$2$$ - $$\\frac{1}{x^2}$$. Thus, $$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a690481linear22a-h2"
         ],
         "title": "Plugging Into y'",
-        "text": "Plug $$x$$ $$=$$ $$1$$ and dx $$=$$ $$0.05$$ into dy $$=$$ (3x**2 + $$2$$ - (1/(x**2)))dx to solve for dy.",
+        "text": "Plug $$x$$ $$=$$ $$1$$ and dx $$=$$ $$0.05$$ into $$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx$$ to solve for dy.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -60,7 +60,7 @@
                 ],
                 "dependencies": [],
                 "title": "Substitution and Simplification to Getting dy",
-                "text": "dy $$=$$ (3x**2 + $$2$$ - (1/(x**2)))dx $$=$$ $$3\\left(1^2\\right)$$ + $$2$$ - $$0.05\\frac{1}{1^2}$$ $$=$$ (3 + $$2$$ - $$1)(0.05)$$ $$=$$ $$4\\times0.05$$. What is dy?",
+                "text": "$$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx=3\\times1^2+2-0.05\\frac{1}{1^2}=0.05\\left(3+2-1\\right)=4\\times0.05$$. What is dy?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

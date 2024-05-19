@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Linear Approximation Function",
-        "text": "Use the following equation L(x) $$=$$ f(a) + f'(a)(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "text": "Use the following equation L(x)=f(a)+f'(a)*(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -45,7 +45,7 @@
             "a690481linear1a-h3"
         ],
         "title": "Determining f(a)",
-        "text": "Given that $$x$$ $$=$$ $$9$$, what is f(a)?",
+        "text": "Given that $$x=9$$, what is f(a)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -60,7 +60,7 @@
                 ],
                 "dependencies": [],
                 "title": "Plugging Into f(9)",
-                "text": "f(x) $$=$$ $$\\sqrt{x}$$ such that f(9) $$=$$ $$\\sqrt{9}$$. What is $$\\sqrt{9}$$?",
+                "text": "$$f(x)=\\sqrt{x}$$ such that $$f(9)=\\sqrt{9}$$. What is $$\\sqrt{9}$$?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -74,7 +74,7 @@
             "a690481linear1a-h4"
         ],
         "title": "Taking the Derivative of f(x) to Get f'(x)",
-        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ $$\\sqrt{x}$$:\\nf(x) $$=$$ $$\\sqrt{x}$$ $$=$$ $$x^{\\frac{1}{2}}$$\\nf'(x) $$=$$ (1/2)x**(1/2 - 2/2)\\nf'(x) $$=$$ $$\\frac{1}{2} x^{\\left(-\\frac{1}{2}\\right)}$$\\nf'(x) $$=$$ $$\\frac{1}{2\\sqrt{x}}$$",
+        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ $$\\sqrt{x}$$:\\n$$f(x)=\\sqrt{x}=x^{\\frac{1}{2}}$$\\nf'(x)=(1/2)*x**(1/2 - 2/2)\\n$$f'(x)=\\frac{1}{2} x^{\\left(-\\frac{1}{2}\\right)}$$\\n$$f'(x)=\\frac{1}{2\\sqrt{x}}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -120,7 +120,7 @@
             "a690481linear1a-h6"
         ],
         "title": "Putting it Together",
-        "text": "Now that we have found the values of f(9) and f'(9), we know that L(x) $$=$$ $$3$$ + (1/6)(x - 9).",
+        "text": "Now that we have found the values of f(9) and f'(9), we know that L(x) $$=$$ 3+(1/6)*(x - 9).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -137,7 +137,7 @@
             "a690481linear1a-h7"
         ],
         "title": "Estimating $$\\sqrt{9.1}$$",
-        "text": "Solve for $$\\sqrt{9.1}$$ $$=$$ $$f(9.1)$$ \u2248 $$L(9.1)$$ where L(x) $$=$$ $$3$$ + (1/6)(x - 9). What is the approximation to estimate $$\\sqrt{9.1}$$? Round your answer to four decimal places.",
+        "text": "Solve for $$\\sqrt{9.1}$$ $$=$$ $$f(9.1)$$ \u2248 $$L(9.1)$$ where L(x)=3+(1/6)*(x - 9). What is the approximation to estimate $$\\sqrt{9.1}$$? Round your answer to four decimal places.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

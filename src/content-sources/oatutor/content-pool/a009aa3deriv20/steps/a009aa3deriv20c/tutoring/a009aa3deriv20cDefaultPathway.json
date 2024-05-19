@@ -14,10 +14,10 @@
     {
         "id": "a009aa3deriv20c-s2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "-2/(x-1)**3"
+            "$$\\frac{-2}{{\\left(x-1\\right)}^3}$$"
         ],
         "dependencies": [
             "a009aa3deriv20c-h3"
@@ -26,6 +26,10 @@
         "text": "Find the second derivative of f(x), and then solve to find when f''(x) is greater than $$0$$. What is the second derivative of f(x)?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{-2}{{\\left(x-1\\right)}^3}$$",
+            "$$\\frac{2}{{\\left(x-1\\right)}^3}$$"
+        ]
     }
 ]

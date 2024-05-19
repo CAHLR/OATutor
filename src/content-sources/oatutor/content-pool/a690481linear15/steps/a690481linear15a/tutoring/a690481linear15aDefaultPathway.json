@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Linear Approximation Function",
-        "text": "Use the following equation L(x) $$=$$ f(a) + f'(a)(x - a) to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "text": "Use the following equation $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$ to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a690481linear15a-h1"
         ],
         "title": "Plugging Into the Formula",
-        "text": "Since we are looking for the linear approximation at a $$=$$ $$2$$, we know that the formula is given by L(x) $$=$$ f(2) + f'(2)(x - 2).",
+        "text": "Since we are looking for the linear approximation at a $$=$$ $$2$$, we know that the formula is given by $$L(x)=f{\\left(2\\right)}+\\operatorname{f'}\\left(2\\right) \\left(x-2\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -69,7 +69,7 @@
             "a690481linear15a-h5"
         ],
         "title": "Taking the Derivative of f(x) to Get f'(x)",
-        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ $$\\frac{1}{x}$$:\\nf(x) $$=$$ $$\\frac{1}{x}$$ $$=$$ $$x^{-1}$$\\nf'(x) $$=$$ $$-1x^{\\left(-1-1\\right)}$$ $$=$$ $$-\\left(x^{-2}\\right)$$ $$=$$ $$\\frac{-1}{x^2}$$",
+        "text": "The next step is finding f'(x) by taking the derivative of $$f(x)=\\frac{1}{x}$$:\\n$$f(x)=\\frac{1}{x}=x^{-1}$$\\n$$f'(x)=-1x^{\\left(-1-1\\right)}=-\\left(x^{-2}\\right)=\\frac{-1}{x^2}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -98,7 +98,7 @@
             "a690481linear15a-h7"
         ],
         "title": "Solving for f'(2)",
-        "text": "f'(2) $$=$$ $$\\frac{-1}{2^2}$$ $$=$$ $$\\frac{-1}{4}$$",
+        "text": "$$f'(2)=\\frac{-1}{2^2}=\\frac{-1}{4}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -110,7 +110,7 @@
             "a690481linear15a-h8"
         ],
         "title": "Putting it Together",
-        "text": "Now that we have found the values of f(2) and f'(2), plug them into L(x) $$=$$ f(a) + f'(a)(x - a).",
+        "text": "Now that we have found the values of f(2) and f'(2), plug them into $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -122,7 +122,7 @@
             "a690481linear15a-h9"
         ],
         "title": "Final Answer",
-        "text": "L(x) $$=$$ $$\\frac{1}{2}$$ + (-1/4)(x - 2) $$=$$ $$\\frac{1}{2}$$ - 1/4(x - 2).",
+        "text": "$$L(x)=\\frac{1}{2}+\\left(-\\frac{1}{4}\\right) \\left(x-2\\right)=\\frac{1}{2}-\\frac{1}{4} \\left(x-2\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
