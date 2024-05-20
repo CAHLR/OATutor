@@ -36,10 +36,10 @@
     {
         "id": "a6d6d05DerivativeFunction1a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{h}{h{\\left(\\sqrt{x+h}+\\sqrt{x}\\right)}}|\\frac{1}{\\sqrt{x+h}+\\sqrt{x}}$$"
+            "$$\\frac{1}{\\sqrt{x+h}+\\sqrt{x}}$$"
         ],
         "dependencies": [
             "a6d6d05DerivativeFunction1a-h3"
@@ -49,6 +49,10 @@
         "variabilization": {},
         "oer": "",
         "license": "",
+        "choices": [
+            "$$\\frac{1}{\\sqrt{x+h}+\\sqrt{x}}$$",
+            "$$\\sqrt{x+h}+\\sqrt{x}$$"
+        ],
         "subHints": [
             {
                 "id": "a6d6d05DerivativeFunction1a-h4-s1",

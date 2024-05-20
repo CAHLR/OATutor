@@ -16,7 +16,7 @@
             "a6d6d05DerivativeFunction7a-h1"
         ],
         "title": "Derivative function",
-        "text": "We will get f'(x)=/lim{h,0,((9/(x+h)-9/x)/h}",
+        "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{\\frac{9}{x+h}-\\frac{9}{x}}{h}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -24,8 +24,8 @@
     {
         "id": "a6d6d05DerivativeFunction7a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\frac{-9h}{x^2+xh}$$"
         ],
@@ -36,7 +36,11 @@
         "text": "What is the simplified numerator $$\\frac{9}{x+h}-\\frac{9}{x}$$?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{-9h}{x^2+xh}$$",
+            "$$\\frac{9h}{x^2+xh}$$"
+        ]
     },
     {
         "id": "a6d6d05DerivativeFunction7a-h4",

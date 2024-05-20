@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Second derivative",
-        "text": "Use $$f''(x)=/lim{h,0$$, $$\\frac{\\operatorname{f'}\\left(x+h\\right)-\\operatorname{f'}\\left(x\\right)}{h}$$ to find second derivative",
+        "text": "Use $$f''(x)=\\lim_{h\\to0} \\frac{\\operatorname{f'}\\left(x+h\\right)-\\operatorname{f'}\\left(x\\right)}{h}$$ to find second derivative",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "a6d6d05DerivativeFunction11b-h1"
         ],
         "title": "Derivative function",
-        "text": "We will get f''(x)=/lim{h,0,((1-1/((x+h)**2))-(1-1/(x**2))/h}",
+        "text": "We will get $$f''(x)=\\lim_{h\\to0} \\frac{1-\\frac{1}{{\\left(x+h\\right)}^2}-1-\\frac{1}{x^2}}{h}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "a6d6d05DerivativeFunction11b-h2"
         ],
         "title": "Expand",
-        "text": "Expand ((1-1/((x+h)**2))-(1-1/(x**2))/h and Simplify",
+        "text": "Expand $$1-\\frac{1}{{\\left(x+h\\right)}^2}-\\frac{1-\\frac{1}{x^2}}{h}$$ and Simplify",
         "variabilization": {},
         "oer": "",
         "license": ""

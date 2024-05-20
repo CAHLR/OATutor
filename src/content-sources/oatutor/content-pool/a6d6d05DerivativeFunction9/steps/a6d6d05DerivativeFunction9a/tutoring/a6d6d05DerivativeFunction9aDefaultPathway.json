@@ -73,7 +73,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$/lim{h,0$$, $$2x+h$$}"
+            "$$\\lim_{h\\to0} 2x+h$$"
         ],
         "dependencies": [
             "a6d6d05DerivativeFunction9a-h5"
@@ -84,9 +84,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$/lim{h,0$$, $$x+h$$}",
-            "$$/lim{h,0$$, $$2x+h$$}",
-            "$$/lim{h,0$$, 2x}"
+            "$$\\lim_{h\\to0} x+h$$",
+            "$$\\lim_{h\\to0} 2x+h$$",
+            "$$\\lim_{h\\to0} 2x$$"
         ]
     },
     {

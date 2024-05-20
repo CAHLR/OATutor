@@ -90,7 +90,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$/lim{h,0$$, $$\\frac{2}{\\sqrt{2x+2h}+\\sqrt{2x}}$$"
+            "$$/lim{h,0,2/(sqrt(2x+2h)+sqrt(2x))$$"
         ],
         "dependencies": [
             "a6d6d05DerivativeFunction6a-h5"
@@ -101,9 +101,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$/lim{h,0$$, $$\\frac{2}{\\sqrt{x+h}+\\sqrt{x}}$$",
-            "$$/lim{h,0$$, $$\\frac{2}{\\sqrt{2x+2h}+\\sqrt{2x}}$$",
-            "$$/lim{h,0$$, $$\\frac{1}{\\sqrt{2x+2h}+\\sqrt{2x}}$$"
+            "$$/lim{h,0,2/(sqrt(x+h)+sqrt(x))$$",
+            "$$/lim{h,0,2/(sqrt(2x+2h)+sqrt(2x))$$",
+            "$$/lim{h,0,1/(sqrt(2x+2h)+sqrt(2x))$$"
         ]
     },
     {

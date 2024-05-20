@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Derivative function",
-        "text": "Since $$v(t)=s\u2032(t)$$ and $$a(t)=v\u2032(t)=s''(t)$$, we begin by finding the derivative of s(t): $$s'(t)=/lim{h,0$$, $$\\frac{s\\left(t+h\\right)-s\\left(t\\right)}{h}$$}",
+        "text": "Since $$v(t)=s\u2032(t)$$ and $$a(t)=v\u2032(t)=s''(t)$$, we begin by finding the derivative of s(t): $$s'(t)=\\lim_{h\\to0} \\frac{s\\left(t+h\\right)-s\\left(t\\right)}{h}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -103,7 +103,7 @@
             "a6d6d05DerivativeFunction12a-h7"
         ],
         "title": "Second derivative",
-        "text": "Use $$s''(t)=/lim{h,0$$, $$\\frac{\\operatorname{s'}\\left(t+h\\right)-\\operatorname{s'}\\left(t\\right)}{h}$$ to find second derivative",
+        "text": "Use $$s''(t)=\\lim_{h\\to0} \\frac{\\operatorname{s'}\\left(t+h\\right)-\\operatorname{s'}\\left(t\\right)}{h}$$ to find second derivative",
         "variabilization": {},
         "oer": "",
         "license": ""
