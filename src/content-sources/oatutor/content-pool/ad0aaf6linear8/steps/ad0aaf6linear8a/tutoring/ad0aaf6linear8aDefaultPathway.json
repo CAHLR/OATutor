@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ad0aaf6linear8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The measurement of the side length is accurate to within $$\u00b10.1$$ cm such that $$-0.1$$ $$ \\leq $$ dx $$ \\leq $$ $$0.1$$. Solve for dV.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear8a-h1"
+        ],
+        "title": "Volume Formula",
+        "text": "The volume of a cube is given by V $$=$$ $$x^3$$. Take the derivative of V to get the dV equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear8a-h2"
+        ],
+        "title": "dV Equation",
+        "text": "dV=(3*x**(3 - $$1))dx=3x^2 dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear8a-h3"
+        ],
+        "title": "Plugging Into dV",
+        "text": "Using the measured side length of $$5$$ cm, we can estimate the error by plugging $$x$$ $$=$$ $$5$$ and dx $$=$$ $$0.1$$ into dV $$=$$ $$3x^2 dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.5$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear8a-h4"
+        ],
+        "title": "Solving for dV",
+        "text": "What is dV?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear8a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "dV $$=$$ $$0.1{3\\left(5\\right)}^2$$ $$=$$ $$3\\times35\\times0.1$$ $$=$$ $$7.5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

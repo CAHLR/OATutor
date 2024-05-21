@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a6e12dcextrema16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the given endpoints to the function",
+        "text": "The first step is to evaluate $$y=x+sin\\left(x\\right)$$ at $$x=0$$ and $$x=2\\pi$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a6e12dcextrema16a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f(0)=0=2\\pi$$"
+        ],
+        "dependencies": [
+            "a6e12dcextrema16a-h1"
+        ],
+        "title": "Evaluate the function at the given endpoints",
+        "text": "$$y=x+sin\\left(x\\right)$$ at $$x=0and$$ $$x=2\\pi$$. Remember $$y=f(x)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f(0)=0=2\\pi$$",
+            "$$f(0)=0=2$$",
+            "$$f(0)=0=pi$$"
+        ]
+    },
+    {
+        "id": "a6e12dcextrema16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e12dcextrema16a-h2"
+        ],
+        "title": "Finding the derivative",
+        "text": "To find the critical points, we need to find the first derivative of the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a6e12dcextrema16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y'=1+cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a6e12dcextrema16a-h3"
+        ],
+        "title": "Finding the first derivative",
+        "text": "Find the first derivative of $$y=x+sin\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$y'=1+cos\\left(x\\right)$$",
+            "$$y'=1-cos(x)$$",
+            "$$y'=1+sin\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a6e12dcextrema16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6e12dcextrema16a-h4"
+        ],
+        "title": "Finding the critical point(s)",
+        "text": "The critical point(s) are the values of $$x$$ which cause the first derivative of the function to be equal to zero within the given domain",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a6e12dcextrema16a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "0;pi"
+        ],
+        "dependencies": [
+            "a6e12dcextrema16a-h5"
+        ],
+        "title": "Solve for the value(s) of $$x$$ that set the first derivative of the function to zero.",
+        "text": "Solve for value(s) of $$x$$ in the following: $$0=1+cos\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "0;pi",
+            "$$0$$",
+            "pi",
+            "None"
+        ]
+    },
+    {
+        "id": "a6e12dcextrema16a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6e12dcextrema16a-h6"
+        ],
+        "title": "Finding the local and absolute maxima",
+        "text": "The final step is to compare the resulting $$y$$ values from the endpoints and critical values. The $$x$$ value with the highest corresponding $$y$$ value is the absolute maximum. The $$x$$ value with the lowest corresponding $$y$$ value is the absolute minimum. Any other continuous critical points can be local maxima with the same conditions holding true as for absolute maxima.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

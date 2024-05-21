@@ -1,0 +1,105 @@
+[
+    {
+        "id": "ac1df14related17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strategy",
+        "text": "We can use the trigonometory and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related17a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tan(\\theta)=\\frac{h}{x}$$"
+        ],
+        "dependencies": [
+            "ac1df14related17a-h1"
+        ],
+        "title": "trigonometry",
+        "text": "Let's set the horizontal distance between L and P as $$x$$, distance between P and the point the light hit in the beach as $$h$$, and the angle between PL and light as \u03b8, what equation can you use from trigonometry?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan(\\theta)=\\frac{x}{h}$$",
+            "$$cos(\\theta)=\\frac{h}{x}$$",
+            "$$sin(\\theta)=\\frac{x}{h}$$",
+            "$$tan(\\theta)=\\frac{h}{x}$$"
+        ]
+    },
+    {
+        "id": "ac1df14related17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related17a-h2"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related17a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Let's set the horizontal distance between L and P as $$x$$, distance between P and the point the light hit in the beach as $$h$$, and the angle between PL and light as \u03b8, what equation can you use from trigonometry?"
+        ],
+        "dependencies": [
+            "ac1df14related17a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dh}{dt}$$",
+            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=$$ $$\\frac{1}{x} \\frac{dh}{dt}-\\frac{h}{x^2} \\frac{dx}{dt}$$",
+            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=\\frac{h}{x^2} \\frac{dx}{dt}$$"
+        ]
+    },
+    {
+        "id": "ac1df14related17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related17a-h4"
+        ],
+        "title": "$$\\frac{dx}{dt}$$",
+        "text": "Because distance between P and L won't chnge, $$\\frac{dx}{dt}=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related17a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related17a-h5"
+        ],
+        "title": "Strategy",
+        "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dx}{dt}$$ is $$0$$, $$\\frac{dtheta}{dt}=1o$$ $$\\frac{revolution}{min}$$, $$x=4mi$$, and $$h=2mi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related17a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related17a-h6"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$x$$, $$h$$, $$\\frac{dtheta}{dt}$$. $$\\frac{dx}{dt}$$ , into the differentiated equation to find $$\\frac{dh}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

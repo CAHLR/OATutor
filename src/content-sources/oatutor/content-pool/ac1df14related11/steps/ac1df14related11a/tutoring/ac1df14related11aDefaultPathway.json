@@ -1,0 +1,147 @@
+[
+    {
+        "id": "ac1df14related11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strategy",
+        "text": "We can use similar triangle and the equation for volume of right cone to differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related11a-h1"
+        ],
+        "title": "Similar triangle",
+        "text": "We can find radius when height is 10ft, initial radius, and initial height because $$r$$ and $$h$$ relate by similar triangle",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$r=\\frac{R}{H} h$$"
+        ],
+        "dependencies": [
+            "ac1df14related11a-h2"
+        ],
+        "title": "Similar triangle",
+        "text": "Let's set initial radius as R , inital height as H, asked radius as $$r$$, and asked height (10ft) as $$h$$. What is $$r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$r=\\frac{H}{R} h$$",
+            "$$r=R H h$$",
+            "$$r=\\frac{R}{H} h$$"
+        ]
+    },
+    {
+        "id": "ac1df14related11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$V=\\frac{1}{3} \\pi {\\left(\\frac{R}{H}\\right)}^2 h^3$$"
+        ],
+        "dependencies": [
+            "ac1df14related11a-h3"
+        ],
+        "title": "Area of triangle",
+        "text": "Let's set volume of right cone as V. What is the equation for computing V using $$r$$ from previous and $$h$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$V=\\frac{1}{3} \\pi \\frac{R}{H} h^2$$",
+            "$$V=\\frac{1}{3} \\pi {\\left(\\frac{R}{H}\\right)}^2 h^3$$",
+            "$$V=\\pi {\\left(\\frac{R}{H}\\right)}^2 h$$"
+        ]
+    },
+    {
+        "id": "ac1df14related11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$V=\\frac{1}{3} \\pi \\frac{25}{256} h^3$$"
+        ],
+        "dependencies": [
+            "ac1df14related11a-h4"
+        ],
+        "title": "Area of triangle",
+        "text": "What is equation after plugging R and H?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$V=\\frac{1}{3} \\pi \\frac{25}{256} h^3$$",
+            "$$V=\\frac{1}{3} \\frac{25}{256} h^3$$"
+        ]
+    },
+    {
+        "id": "ac1df14related11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related11a-h5"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t) to relate $$\\frac{dV}{dt}$$ and $$\\frac{dh}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related11a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{dV}{dt}=\\frac{1}{3} \\pi \\frac{25}{256} 3\\left(h^2\\right) \\frac{dh}{dt}$$"
+        ],
+        "dependencies": [
+            "ac1df14related11a-h6"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "dV/dt=(1/3)*pi*(25/256)* 3(h**2)(dh/dt))",
+            "$$\\frac{dV}{dt}=\\frac{1}{3} \\pi \\frac{25}{256} h^3 \\frac{dh}{dt}$$",
+            "$$\\frac{dV}{dt}=3\\frac{1}{3} \\pi \\frac{25}{256} h{\\left(\\frac{dh}{dt}\\right)}$$"
+        ]
+    },
+    {
+        "id": "ac1df14related11a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related11a-h7"
+        ],
+        "title": "Strategy",
+        "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dV}{dt}=$$ $$-10$$ $$\\frac{{ft}^3}{min}$$, $$h=10ft$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related11a-h8"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$\\frac{dV}{dt}$$ and $$h$$ into the differentiated equation to find $$\\frac{dh}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

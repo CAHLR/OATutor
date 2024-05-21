@@ -1,0 +1,104 @@
+[
+    {
+        "id": "acf60f3DerivativeFunction2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative function",
+        "text": "Start directly with the definition of the derivative function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h1"
+        ],
+        "title": "Derivative function",
+        "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{{\\left(x+h\\right)}^2-2\\left(x+h\\right)-x^2-2x}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h2"
+        ],
+        "title": "Expand",
+        "text": "Expand $${\\left(x+h\\right)}^2-2\\left(x+h\\right)$$ and simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} \\frac{2xh-2h+h^2}{h}$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} \\frac{2xh-2h+h^2}{h}$$",
+            "$$\\lim_{h\\to0} \\frac{xh-h+h^2}{h}$$",
+            "$$\\lim_{h\\to0} \\frac{xh-3h}{h}$$"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Factor out $$h$$ from numerator and Cancel $$h$$ out",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$/lim{h,0$$, $$2x-2+h$$}"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What will you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$/lim{h,0$$, $$x+h$$}",
+            "$$/lim{h,0$$, $$(2x-h)$$}",
+            "$$/lim{h,0$$, $$2x-2+h$$}"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction2a-h6"
+        ],
+        "title": "Evaluate the limit",
+        "text": "To get a final answer, evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
