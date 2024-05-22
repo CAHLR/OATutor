@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a526a0cintegration14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the radius",
+        "text": "Use the area of a circle to find the radius at each time then subtract the radius at the time $$t=3$$ with the time $$t=2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a526a0cintegration14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a526a0cintegration14a-h1"
+        ],
+        "title": "At $$t=2$$",
+        "text": "What is the radius of the circle at $$t=2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a526a0cintegration14a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "At $$t=2$$",
+                "text": "With the $$Area=4\\pi$$ given when $$t=2$$, the radius can be calculated as $$Area=4\\pi=\\pi r^2$$ therefore $$r=2$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a526a0cintegration14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a526a0cintegration14a-h1"
+        ],
+        "title": "At $$t=3$$",
+        "text": "What is the radius of the circle at $$t=3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a526a0cintegration14a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "At $$t=3$$",
+                "text": "With the $$Area=9\\pi$$ given when $$t=3$$, the radius can be calculated as $$Area=4\\pi=\\pi r^2$$ therefore $$r=3$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a526a0cintegration14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration14a-h2",
+            "a526a0cintegration14a-h3"
+        ],
+        "title": "Find the net change",
+        "text": "$$\u0394r=3-2=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
