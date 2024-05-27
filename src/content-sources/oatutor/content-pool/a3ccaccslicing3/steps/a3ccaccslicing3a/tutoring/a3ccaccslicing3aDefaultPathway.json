@@ -39,7 +39,7 @@
             "a3ccaccslicing3a-h2"
         ],
         "title": "Integrate the Formula",
-        "text": "Find the volume of the solid using the disk method. The volume of the solid of revolution formed by revolving R around the x-axis using the disk method is given by V=/int{pi[f(x)]**2,a,b,x}.",
+        "text": "Find the volume of the solid using the disk method. The volume of the solid of revolution formed by revolving R around the x-axis using the disk method is given by $$V=\\int_{a}^{b} \\pi {f{\\left(x\\right)}}^2 \\,dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -47,10 +47,10 @@
     {
         "id": "a3ccaccslicing3a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(15*pi)/2"
+            "$$\\frac{15\\pi}{2}$$"
         ],
         "dependencies": [
             "a3ccaccslicing3a-h3"
@@ -59,6 +59,10 @@
         "text": "What is the volume of the solid of revolution?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{15\\pi}{2}$$",
+            "$$15\\pi$$"
+        ]
     }
 ]

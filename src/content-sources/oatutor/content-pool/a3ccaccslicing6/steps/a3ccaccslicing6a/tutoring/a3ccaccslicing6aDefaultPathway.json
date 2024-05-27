@@ -24,10 +24,10 @@
     {
         "id": "a3ccaccslicing6a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "6-x"
+            "$$6-x$$"
         ],
         "dependencies": [
             "a3ccaccslicing6a-h2"
@@ -36,7 +36,11 @@
         "text": "What is $$f{\\left(x\\right)}+2$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$6-x$$",
+            "$$x-6$$"
+        ]
     },
     {
         "id": "a3ccaccslicing6a-h4",
@@ -53,10 +57,10 @@
     {
         "id": "a3ccaccslicing6a-h5",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(160*pi)/3"
+            "$$\\frac{160\\pi}{3}$$"
         ],
         "dependencies": [
             "a3ccaccslicing6a-h4"
@@ -65,6 +69,10 @@
         "text": "What is the volume of the solid of revolution?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\frac{160\\pi}{3}$$",
+            "$$\\frac{160\\times3}{\\pi}$$"
+        ]
     }
 ]
