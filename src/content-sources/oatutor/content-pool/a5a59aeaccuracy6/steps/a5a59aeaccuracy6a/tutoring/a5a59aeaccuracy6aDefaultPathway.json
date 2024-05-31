@@ -3,11 +3,11 @@
         "id": "a5a59aeaccuracy6a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Area of a circle",
-        "text": "Recall the area of a circle formula: a $$=$$ $$\\pi r^2$$",
+        "title": "Significant figures",
+        "text": "Note how many significant figures the answer should have.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a5a59aeaccuracy6a-h2",
@@ -15,32 +15,50 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$4$$"
+            "$$2$$"
         ],
         "dependencies": [
             "a5a59aeaccuracy6a-h1"
         ],
-        "title": "Significant Figures",
-        "text": "How many significant figures should we use in the answer?",
+        "title": "Significant figures",
+        "text": "How many sig. fig. should the answer have?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a5a59aeaccuracy6a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$7.557$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a5a59aeaccuracy6a-h2"
         ],
-        "title": "Calculate",
-        "text": "What is the area, with the correct number of significant figures?",
+        "title": "Distance formula",
+        "text": "Use the distance formula to solve: distance $$=$$ rate * time.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aeaccuracy6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.8$$ $$h$$"
+        ],
+        "dependencies": [
+            "a5a59aeaccuracy6a-h3"
+        ],
+        "title": "Distance formula",
+        "text": "What is $$26.22$$ mi / $$9.5$$ $$\\frac{mi}{h}$$, rounded to the correct number of significant figures?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2.76$$ $$h$$",
+            "$$2.8$$ $$h$$",
+            "$$249.09$$ $$h$$",
+            "$$0.36$$ $$h$$"
+        ]
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "id": "a5a59aeaccuracy9b-h1",
+        "id": "a5a59aeaccuracy8b-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Uncertainty Equation",
@@ -10,24 +10,26 @@
         "license": ""
     },
     {
-        "id": "a5a59aeaccuracy9b-h2",
+        "id": "a5a59aeaccuracy8b-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1.3$$ mmHg"
+            "$$1.0\\%$$ and 1%"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a5a59aeaccuracy8b-h1"
+        ],
         "title": "Plug in and solve",
-        "text": "Solve for x: $$1.7\\%$$ $$=$$ $$x$$ / 80mmHg * 100%",
+        "text": "What is 1/99*100% and 1/100*100%?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$1.3$$ mmHg",
-            "$$13$$ mmHg",
-            "$$2.5$$ mmHg",
-            "$$3.1$$ mmHg"
+            "$$1.0\\%$$ and $$1.0\\%$$",
+            "1% and 1%",
+            "$$1.0\\%$$ and 1%",
+            "1% and $$1.0\\%$$"
         ]
     }
 ]

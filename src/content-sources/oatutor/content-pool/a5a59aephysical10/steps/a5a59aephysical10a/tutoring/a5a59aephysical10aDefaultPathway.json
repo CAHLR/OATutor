@@ -3,7 +3,7 @@
         "id": "a5a59aephysical10a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Calculate",
+        "title": "Average Speed",
         "text": "First calculate the average speed in the given units (average speed is distance over time).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -20,7 +20,7 @@
         "dependencies": [
             "a5a59aephysical10a-h1"
         ],
-        "title": "Calculate",
+        "title": "Average Speed",
         "text": "What is the average speed in $$\\frac{km}{min}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -49,8 +49,8 @@
         "dependencies": [
             "a5a59aephysical10a-h2"
         ],
-        "title": "Convert",
-        "text": "Multiply by the conversion factor that will cancel out minutes and leave us with $$\\frac{km}{hr}$$.",
+        "title": "Convert to $$\\frac{km}{h}$$",
+        "text": "Multiply by the conversion factor that will cancel out minutes and leave us with $$\\frac{km}{h}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -66,8 +66,8 @@
         "dependencies": [
             "a5a59aephysical10a-h3"
         ],
-        "title": "Convert",
-        "text": "What is $$0.5$$ $$\\frac{km}{min}$$ in $$\\frac{km}{hr}$$?",
+        "title": "Convert to $$\\frac{km}{h}$$",
+        "text": "What is $$0.5$$ $$\\frac{km}{min}$$ in $$\\frac{km}{h}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
@@ -81,7 +81,7 @@
                     "$$60$$"
                 ],
                 "dependencies": [],
-                "title": "Convert",
+                "title": "Convert to $$\\frac{km}{h}$$",
                 "text": "How many minutes are in an hour?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
@@ -107,9 +107,9 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "choices": [
             "$$30$$ $$\\frac{km}{min}$$",
-            "$$30$$ $$\\frac{km}{hr}$$",
-            "$$30$$ $$\\frac{km}{{hr}^2}$$",
-            "$$30$$ $$\\frac{hr}{km}$$"
+            "$$30$$ $$\\frac{km}{h}$$",
+            "$$30$$ $$\\frac{km}{h^2}$$",
+            "$$30$$ $$\\frac{h}{km}$$"
         ]
     }
 ]
