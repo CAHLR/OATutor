@@ -12,7 +12,9 @@
     {
         "id": "a0faf26antiderivative14a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative14a-h1"
+        ],
         "title": "Units",
         "text": "$$1mi=5280ft, 1hr=60min$$, and $$1min=60sec$$.",
         "variabilization": {},
@@ -20,14 +22,16 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative14a-s1",
+        "id": "a0faf26antiderivative14a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
             "$$316800$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative14a-h2"
+        ],
         "title": "Units",
         "text": "$$60$$ miles equals $$___feet$$.",
         "variabilization": {},
@@ -35,14 +39,16 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative14a-s2",
+        "id": "a0faf26antiderivative14a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
             "$$3600$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative14a-h3"
+        ],
         "title": "Units",
         "text": "$$1$$ hour equals $$___$$ seconds.",
         "variabilization": {},
@@ -50,41 +56,47 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative14a-s3",
+        "id": "a0faf26antiderivative14a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
             "$$88$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative14a-h4"
+        ],
         "title": "Units",
-        "text": "What is $$\\frac{316800ft}{3600} sec=___$$?",
+        "text": "What is $$\\frac{316800}{3600}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative14a-h3",
+        "id": "a0faf26antiderivative14a-h6",
         "type": "hint",
-        "dependencies": [],
-        "title": "Next, find out how many seconds until the car stops.",
-        "text": "",
+        "dependencies": [
+            "a0faf26antiderivative14a-h5"
+        ],
+        "title": "Next Step",
+        "text": "Next, find out how many seconds until the car stops.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative14a-s4",
+        "id": "a0faf26antiderivative14a-h7",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "7.333"
+            "$$7.333$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative14a-h6"
+        ],
         "title": "Seconds",
-        "text": "What is $$\\frac{88}{12}=___$$? Round to the third decimal place.",
+        "text": "What is $$\\frac{88}{12}$$? Round to the third decimal place.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

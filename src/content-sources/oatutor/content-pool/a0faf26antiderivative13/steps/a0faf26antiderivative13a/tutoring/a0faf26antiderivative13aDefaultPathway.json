@@ -12,7 +12,9 @@
     {
         "id": "a0faf26antiderivative13a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h1"
+        ],
         "title": "Units",
         "text": "$$1mi=5280ft, 1hr=60min$$, and $$1min=60sec$$.",
         "variabilization": {},
@@ -20,14 +22,16 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative13a-s1",
+        "id": "a0faf26antiderivative13a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "211200"
+            "$$211200$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h2"
+        ],
         "title": "Units",
         "text": "$$40$$ miles equals $$___feet$$.",
         "variabilization": {},
@@ -35,14 +39,16 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative13a-s2",
+        "id": "a0faf26antiderivative13a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "3600"
+            "$$3600$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h3"
+        ],
         "title": "Units",
         "text": "$$1$$ hour equals $$___$$ seconds.",
         "variabilization": {},
@@ -50,24 +56,28 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative13a-s3",
+        "id": "a0faf26antiderivative13a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "58.67"
+            "$$58.67$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h4"
+        ],
         "title": "Units",
-        "text": "What is $$\\frac{211200}{3600}=___$$? In other words, the car travels at a rate of $$___\\frac{feet}{sec}$$. Round to the second decimal place.",
+        "text": "What is $$\\frac{211200}{3600}$$? In other words, the car travels at a rate of ( ) $$\\frac{feet}{sec}$$. Round to the second decimal place.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative13a-h3",
+        "id": "a0faf26antiderivative13a-h6",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h5"
+        ],
         "title": "Next, find out how many seconds until the car stops.",
         "text": "",
         "variabilization": {},
@@ -75,16 +85,18 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative13a-s4",
+        "id": "a0faf26antiderivative13a-h7",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "5.867"
+            "$$5.867$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative13a-h6"
+        ],
         "title": "Seconds",
-        "text": "What is $$\\frac{58.67}{10}=___$$? Round to the third decimal place.",
+        "text": "What is $$\\frac{58.67}{10}$$? Round to the third decimal place.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

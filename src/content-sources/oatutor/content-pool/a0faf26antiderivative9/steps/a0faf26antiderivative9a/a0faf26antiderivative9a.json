@@ -3,10 +3,14 @@
     "stepAnswer": [
         "$$-cos\\left(x\\right)+C$$"
     ],
-    "problemType": "TextBox",
-    "stepTitle": "/int{tan(x)*cos(x)}",
+    "problemType": "MultipleChoice",
+    "stepTitle": "$$\\int tan\\left(x\\right) cos\\left(x\\right) \\,dx$$",
     "stepBody": "",
-    "answerType": "arithmetic",
+    "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$-cos\\left(x\\right)+C$$"
+    "answerLatex": "$$-cos\\left(x\\right)+C$$",
+    "choices": [
+        "$$-cos\\left(x\\right)+C$$",
+        "$$-cos(x)$$"
+    ]
 }

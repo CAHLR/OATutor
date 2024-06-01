@@ -10,24 +10,32 @@
         "license": ""
     },
     {
-        "id": "a0faf26antiderivative8a-s1",
+        "id": "a0faf26antiderivative8a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "4/int{1/(1+x**2}"
+            "$$4*\\int \\frac{1}{1+x^2} \\,dx$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative8a-h1"
+        ],
         "title": "Constant Multiplies",
-        "text": "Using the constant multiples properties of indefinite integrals, /int{4/(1+x**2} can be rewritten as $$___$$?",
+        "text": "Using the constant multiples properties of indefinite integrals, $$\\int \\frac{4}{1+x^2} \\,dx$$ can be rewritten as?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$4*\\int \\frac{1}{1+x^2} \\,dx$$",
+            "$$\\int \\frac{1}{1+x^2} \\,dx$$"
+        ]
     },
     {
-        "id": "a0faf26antiderivative8a-h2",
+        "id": "a0faf26antiderivative8a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a0faf26antiderivative8a-h2"
+        ],
         "title": "Tangent",
         "text": "Use the fact that $${tan}^{\\left(-1\\right)} x$$ is an antiderivative of $$\\frac{1}{1+x^2}$$.",
         "variabilization": {},
