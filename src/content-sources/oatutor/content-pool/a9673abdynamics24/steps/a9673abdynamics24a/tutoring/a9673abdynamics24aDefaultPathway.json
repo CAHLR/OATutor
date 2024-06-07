@@ -3,20 +3,52 @@
         "id": "a9673abdynamics24a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Hint",
-        "text": "Use the kinematic equation relating initial and final velocities, acceleration, and displacement to calculate the deceleration. Then, apply Newton's second law to find the force exerted.",
+        "title": "Calculate the Acceleration",
+        "text": "Calculate the avergae acceleration by $$v_1$$ - $$v_2$$ / $$t$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a9673abdynamics24a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.957$$"
+        ],
         "dependencies": [
             "a9673abdynamics24a-h1"
         ],
-        "title": "Steps",
-        "text": "Step 1: Use the kinematic equation to calculate the deceleration of the dolphin. Step 2: Apply Newton's second law to find the average force exerted. Step 3: Clearly show all calculations and units. Step 4: Check your answer for correctness and proper units.",
+        "title": "Calculate the Acceleration",
+        "text": "What is (12 - 7.5)/2.3?Keep three decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9673abdynamics24a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Newton's second law",
+        "text": "Use Newton's second law $$(F=ma)$$ to find the net force.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9673abdynamics24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$68.5$$"
+        ],
+        "dependencies": [
+            "a9673abdynamics24a-h3"
+        ],
+        "title": "Use Newton's second law",
+        "text": "What is $$35\\times1.957$$? Keep one demical place.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
