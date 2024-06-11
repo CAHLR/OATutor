@@ -10,12 +10,12 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit15a-s1",
+        "id": "aaeca35implicit15a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "2x/[3(y**2-9)]"
+            "$$\\frac{2x}{3\\left(y^2-9\\right)}$$"
         ],
         "dependencies": [
             "aaeca35implicit15a-h1"
@@ -29,14 +29,15 @@
             "$$\\frac{x-2y+1}{x^2}$$",
             "$$\\frac{\\left(-x-y\\right)}{x-3y}$$",
             "$$\\frac{x+y}{3y}$$",
-            "$$\\frac{3xy}{2+x}$$"
+            "$$\\frac{3xy}{2+x}$$",
+            "$$\\frac{2x}{3\\left(y^2-9\\right)}$$"
         ]
     },
     {
-        "id": "aaeca35implicit15a-h2",
+        "id": "aaeca35implicit15a-h3",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit15a-h1"
+            "aaeca35implicit15a-h2"
         ],
         "title": "Finding the Slope",
         "text": "Find $$\\frac{dy}{dx}$$ such that it is undefined to find vertical slopes.",

@@ -34,12 +34,12 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit5a-s1",
+        "id": "aaeca35implicit5a-h4",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$"
+            "$$\\frac{dy}{dx} \\left(\\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}\\right)$$"
         ],
         "dependencies": [
             "aaeca35implicit5a-h3"
@@ -50,17 +50,15 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
-            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
-            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$",
-            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}$$"
+            "$$\\frac{dy}{dx} \\left(\\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}\\right)$$",
+            "$$\\frac{dy}{dx} \\sqrt{x+4}$$"
         ]
     },
     {
-        "id": "aaeca35implicit5a-h4",
+        "id": "aaeca35implicit5a-h5",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit5a-h3"
+            "aaeca35implicit5a-h4"
         ],
         "title": "Simplifying",
         "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",

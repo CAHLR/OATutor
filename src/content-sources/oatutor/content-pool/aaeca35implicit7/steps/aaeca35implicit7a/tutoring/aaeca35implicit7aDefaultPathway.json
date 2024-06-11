@@ -22,14 +22,16 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit7a-s1",
+        "id": "aaeca35implicit7a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\operatorname{xy}\\left(\\frac{x dy}{dx}+y\\right)$$"
+            "$$2x y \\left(\\frac{x dy}{dx}+y\\right)$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit7a-h2"
+        ],
         "title": "$$\\frac{dy}{dx}$$",
         "text": "What is $$\\frac{d\\left({xy}^2\\right)}{dx}$$?",
         "variabilization": {},
@@ -37,15 +39,15 @@
         "license": "",
         "choices": [
             "$$\\frac{2x dy}{dx}+2y$$",
-            "$$\\frac{x dy}{dx}+xy$$",
-            "$$2\\operatorname{xy}\\left(\\frac{x dy}{dx}+y\\right)$$",
-            "2x*dy/dx)"
+            "$$2x y \\left(\\frac{x dy}{dx}+y\\right)$$"
         ]
     },
     {
-        "id": "aaeca35implicit7a-h3",
+        "id": "aaeca35implicit7a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit7a-h3"
+        ],
         "title": "Simplifying",
         "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
         "variabilization": {},

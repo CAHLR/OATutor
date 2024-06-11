@@ -22,30 +22,32 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit6a-s1",
+        "id": "aaeca35implicit6a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fracsin^d\\left(xy\\right) dyx}+\\operatorname{ycos}\\left(xy\\right) \\left(\\frac{x dy}{dx}+y\\right)$$"
+            "Yes"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit6a-h2"
+        ],
         "title": "$$\\frac{dy}{dx}$$",
-        "text": "What is $$\\frac{d\\left(y sin\\left(xy\\right)\\right)}{dx}$$?",
+        "text": "What is $$\\frac{d\\left(y sin\\left(xy\\right)\\right)}{dx}$$? Is $$sin\\left(x y\\right) \\frac{dy}{dx}+y cos\\left(x y\\right) \\left(\\frac{x dy}{dx}+y\\right)$$ the correct answer?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{dy}{dx}+\\operatorname{ysin}\\left(xy\\right) \\frac{x dy}{dx}$$",
-            "$$\\fracsin^d\\left(xy\\right) dyx}+\\operatorname{ycos}\\left(xy\\right) \\left(\\frac{x dy}{dx}+y\\right)$$",
-            "$$\\frac{dy}{dx}+\\operatorname{xcos}\\left(xy\\right)$$",
-            "$$\\fraccos^d\\left(xy\\right) dyx}-\\operatorname{xsin}\\left(xy\\right) \\left(\\frac{x dy}{dx}+1\\right)$$"
+            "Yes",
+            "No"
         ]
     },
     {
-        "id": "aaeca35implicit6a-h3",
+        "id": "aaeca35implicit6a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit6a-h3"
+        ],
         "title": "Simplifying",
         "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
         "variabilization": {},

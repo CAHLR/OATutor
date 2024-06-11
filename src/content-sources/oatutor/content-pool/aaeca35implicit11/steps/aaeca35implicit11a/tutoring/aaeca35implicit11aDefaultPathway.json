@@ -10,12 +10,12 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit11a-s1",
+        "id": "aaeca35implicit11a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(-y**2+4x)/[2xy+pi*cos(pi*y)]"
+            "$$\\frac{\\left(-y^2+4x\\right)}{2x y+\\pi cos\\left(\\pi y\\right)}$$"
         ],
         "dependencies": [
             "aaeca35implicit11a-h1"
@@ -26,17 +26,15 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\left(-y^2+4x\\right)$$",
-            "xy/[2xy+pi*cos(pi*y)]",
-            "(-y**2+4x)/[2xy+pi*cos(pi*y)]",
-            "(-y**2)/[2(pi*cos(xy)]"
+            "$$\\frac{\\left(-y^2+4x\\right)}{2x y+\\pi cos\\left(\\pi y\\right)}$$",
+            "$$\\frac{\\left(-y^2+4x\\right)}{2x y+cos\\left(y\\right)}$$"
         ]
     },
     {
-        "id": "aaeca35implicit11a-h2",
+        "id": "aaeca35implicit11a-h3",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit11a-h1"
+            "aaeca35implicit11a-h2"
         ],
         "title": "Finding the Slope",
         "text": "To find the slope, plug $$(2,-3)$$ into $$\\frac{dy}{dx}$$.",
@@ -45,10 +43,10 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit11a-h3",
+        "id": "aaeca35implicit11a-h4",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit11a-h2"
+            "aaeca35implicit11a-h3"
         ],
         "title": "Point-Slope Form",
         "text": "Substitute into the point-slope equation of the line to obtain the equation.",

@@ -3,7 +3,7 @@
         "id": "a7094d1optimize10a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "plug in $$x$$ and $$y$$",
+        "title": "Plug in $$x$$ and $$y$$",
         "text": "Plug in the $$x$$ and $$y$$ values into the surface area formula to find the surface area.",
         "variabilization": {},
         "oer": "",
@@ -12,18 +12,22 @@
     {
         "id": "a7094d1optimize10a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "108*sqrt(3,4)"
+            "$$108\\sqrt[3]{4}$$"
         ],
         "dependencies": [
             "a7094d1optimize10a-h1"
         ],
-        "title": "surface area",
-        "text": "If $$S=4xy+x^2$$, what does $$4\\left(6\\sqrt[3]{2}\\right) 3\\sqrt[3]{2}+{\\left(6\\sqrt[3]{2}\\right)}^2=___$$?",
+        "title": "Surface area",
+        "text": "If $$S=4x y+x^2$$, what does $$4\\times6\\sqrt[3]{2} 3\\sqrt[3]{2}+{\\left(6\\sqrt[3]{2}\\right)}^2=$$ ?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$108\\sqrt[3]{4}$$",
+            "$$52\\sqrt[3]{4}$$"
+        ]
     }
 ]

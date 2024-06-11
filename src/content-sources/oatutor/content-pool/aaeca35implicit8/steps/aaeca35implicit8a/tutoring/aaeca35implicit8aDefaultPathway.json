@@ -22,14 +22,16 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit8a-s1",
+        "id": "aaeca35implicit8a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
             "$$y^3+3{xy}^2 \\frac{dy}{dx}$$"
         ],
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit8a-h2"
+        ],
         "title": "$$\\frac{dy}{dx}$$",
         "text": "What is $$\\frac{d\\left({xy}^3\\right)}{dx}$$?",
         "variabilization": {},
@@ -43,9 +45,11 @@
         ]
     },
     {
-        "id": "aaeca35implicit8a-h3",
+        "id": "aaeca35implicit8a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit8a-h3"
+        ],
         "title": "Simplifying",
         "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
         "variabilization": {},

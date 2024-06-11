@@ -10,12 +10,12 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit13a-s1",
+        "id": "aaeca35implicit13a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[-y+cos(x)]/x"
+            "$$\\frac{\\left(-y+cos\\left(x\\right)\\right)}{x}$$"
         ],
         "dependencies": [
             "aaeca35implicit13a-h1"
@@ -26,17 +26,17 @@
         "oer": "",
         "license": "",
         "choices": [
-            "[-y+cos(x)]/x",
-            "x/[-y+cos(xy)]",
-            "[1+cos(x)]",
-            "[-xy+sin(x)]/2"
+            "$$\\frac{\\left(-y+cos\\left(x\\right)\\right)}{x}$$",
+            "$$\\frac{x}{\\left(-y+cos\\left(xy\\right)\\right)}$$",
+            "$$1+cos\\left(x\\right)$$",
+            "$$\\frac{\\left(-xy+sin\\left(x\\right)\\right)}{2}$$"
         ]
     },
     {
-        "id": "aaeca35implicit13a-h2",
+        "id": "aaeca35implicit13a-h3",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit13a-h1"
+            "aaeca35implicit13a-h2"
         ],
         "title": "Finding the Slope",
         "text": "To find the slope, plug $$(\\frac{\\pi}{2},0)$$ into $$\\frac{dy}{dx}$$.",
@@ -45,10 +45,10 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit13a-h3",
+        "id": "aaeca35implicit13a-h4",
         "type": "hint",
         "dependencies": [
-            "aaeca35implicit13a-h2"
+            "aaeca35implicit13a-h3"
         ],
         "title": "Point-Slope Form",
         "text": "Substitute into the point-slope equation of the line to obtain the equation.",

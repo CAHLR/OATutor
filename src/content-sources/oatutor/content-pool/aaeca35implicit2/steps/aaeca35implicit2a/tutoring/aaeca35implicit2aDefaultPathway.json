@@ -10,7 +10,7 @@
         "license": ""
     },
     {
-        "id": "aaeca35implicit2a-s1",
+        "id": "aaeca35implicit2a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -33,9 +33,11 @@
         ]
     },
     {
-        "id": "aaeca35implicit2a-h2",
+        "id": "aaeca35implicit2a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "aaeca35implicit2a-h2"
+        ],
         "title": "Simplifying",
         "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
         "variabilization": {},
