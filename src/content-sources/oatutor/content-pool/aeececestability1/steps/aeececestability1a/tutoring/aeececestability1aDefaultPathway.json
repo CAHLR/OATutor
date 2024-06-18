@@ -3,8 +3,8 @@
         "id": "aeececestability1a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Torque formula",
-        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$.",
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be (in Nm)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "aeececestability1a-h1"
         ],
-        "title": "Net torque",
-        "text": "What should the net torque be (in Nm)?",
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be when the seesaw is balanced (in Nm)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -30,9 +30,9 @@
         "id": "aeececestability1a-h3",
         "type": "hint",
         "dependencies": [
-            "aeececestability1a-h2"
+            "aeececestability1a-h1"
         ],
-        "title": "Direction",
+        "title": "Calculate the Forces",
         "text": "Assume the first child pushes in the negative direction and the second child pushes in the positive direction.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -50,7 +50,7 @@
             "aeececestability1a-h3"
         ],
         "title": "Force from first child",
-        "text": "What force is exerted by the first child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$",
+        "text": "What force is exerted by the first child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -76,11 +76,10 @@
         "id": "aeececestability1a-h6",
         "type": "hint",
         "dependencies": [
-            "aeececestability1a-h4",
-            "aeececestability1a-h5"
+            "aeececestability1a-h3"
         ],
-        "title": "Distances",
-        "text": "Note that if child one sits $$x$$ meters away from the pivot, child $$2$$ sits $$3-x$$ meters away from the pivot.",
+        "title": "Solve for the Distance",
+        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$. Note that if child one sits $$x$$ meters away from the pivot, child $$2$$ sits $$3-x$$ meters away from the pivot. Solve for $$x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -96,8 +95,8 @@
         "dependencies": [
             "aeececestability1a-h6"
         ],
-        "title": "Plug in and solve",
-        "text": "Solve for x: $$0$$ $$=$$ $$-196$$ * $$x$$ + $$294$$ * $$(3-x)$$ (give answer in meters)",
+        "title": "Solve for the Distance",
+        "text": "Solve for x: $$0$$ $$=$$ $$-196$$ * $$x$$ + $$294$$ * $$(3-x)$$ (give answer in meters).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
