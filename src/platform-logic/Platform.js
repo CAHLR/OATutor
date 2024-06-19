@@ -12,6 +12,7 @@ import {
     MIDDLEWARE_URL,
     SITE_NAME,
     ThemeContext,
+    MASTERY_THRESHOLD,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -327,8 +328,7 @@ class Platform extends React.Component {
         if (
             !Object.keys(context.bktParams).some(
                 (skill) =>
-                    context.bktParams[skill].probMastery <=
-                    this.lesson.learningObjectives[skill]
+                    context.bktParams[skill].probMastery <= MASTERY_THRESHOLD
             )
         ) {
             this.setState({ status: "graduated" });
@@ -389,11 +389,8 @@ class Platform extends React.Component {
     };
 
     displayMastery = (mastery) => {
-        //TODO fix
-        const MASTERED = 0.85;
-        const score = Math.min(mastery / MASTERED, 1.0);
-        this.setState({ mastery: score });
-        if (score === 1.0) {
+        this.setState({ mastery: mastery });
+        if (mastery >= MASTERY_THRESHOLD) {
             toast.success("You've successfully completed this assignment!", {
                 toastId: ToastID.successfully_completed_lesson.toString(),
             });
