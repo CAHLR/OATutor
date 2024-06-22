@@ -50,6 +50,12 @@ const DO_FOCUS_TRACKING = true;
 const DO_LOG_MOUSE_DATA = false;
 
 /**
+ * Flag to enable or disable A/B testing
+ * @type {boolean}
+ */
+const AB_TEST_MODE = false;
+
+/**
  * If reach bottom of provided hints, give correct answer to question
  * @type {boolean}
  */
@@ -123,6 +129,7 @@ export {
     ENABLE_FIREBASE,
     DO_LOG_DATA,
     DO_LOG_MOUSE_DATA,
+    AB_TEST_MODE,
     dynamicText,
     ENABLE_BOTTOM_OUT_HINTS,
     lessonPlans,
