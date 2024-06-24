@@ -6,13 +6,18 @@ export const useTranslation = () => {
   const [translations, setTranslations] = useState({});
 
   useEffect(() => {
-    import(`../locales/${language}.json`)
-      .then((module) => {
+    const loadTranslations = async (lang) => {
+      try {
+        const module = await import(`../locales/${lang}.json`);
         setTranslations(module.default || module);
-      })
-      .catch((error) => {
-        console.error(`Could not load ${language}.json`, error);
-      });
+      } catch (error) {
+        console.error(`Could not load ${lang}.json`, error);
+      }
+    };
+
+    if (['en', 'es', 'se'].includes(language)) {
+      loadTranslations(language);
+    }
   }, [language]);
 
   const translate = (key) => {
