@@ -6,7 +6,7 @@ import { SITE_NAME } from "@common/global-config";
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.5.1";
+const SITE_VERSION = "1.6";
 
 const CURRENT_SEMESTER = calculateSemester(Date.now());
 
@@ -95,6 +95,7 @@ const DYNAMIC_HINT_URL = "https://oatutor-backend.herokuapp.com/get_hint";
 const DYNAMIC_HINT_TEMPLATE =
     "<{problem_title}.> <{problem_subtitle}.> <{question_title}.> <{question_subtitle}.> <Student's answer is: {student_answer}.> <The correct answer is: {correct_answer}.> Please give a hint for this.";
 
+const MASTERY_THRESHOLD = 0.95
 // const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 const coursePlans = courses;
 const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
@@ -143,6 +144,7 @@ export {
     MIDDLEWARE_URL,
     DYNAMIC_HINT_URL,
     DYNAMIC_HINT_TEMPLATE,
+    MASTERY_THRESHOLD,
     USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME,
