@@ -4,6 +4,9 @@ import Platform from "./platform-logic/Platform.js";
 import DebugPlatform from "./platform-logic/DebugPlatform.js";
 import Firebase from "@components/Firebase.js";
 import { LocalizationProvider } from "./util/LocalizationContext";
+import {
+    AB_TEST_MODE
+} from "./config/config.js";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import NotFound from "@components/NotFound.js";
@@ -61,20 +64,21 @@ const queryParamToContext = {
 
 const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore", "locale"];
 
-const treatmentMapping = {
-    bktParams: {
-        0: cleanObjectKeys(bktParams1),
-        1: cleanObjectKeys(bktParams2),
-    },
-    heuristic: {
-        0: lowestHeuristic,
-        1: highestHeuristic,
-    },
-    hintPathway: {
-        0: "DefaultPathway",
-        1: "DefaultPathway",
-    },
-};
+let treatmentMapping;
+
+if (!AB_TEST_MODE) {
+    treatmentMapping = {
+        bktParams: cleanObjectKeys(bktParams1),
+        heuristic: lowestHeuristic,
+        hintPathway: "DefaultPathway"
+    };
+} else {
+    treatmentMapping = {
+        bktParams: { 0: cleanObjectKeys(bktParams1), 1: cleanObjectKeys(bktParams2) },
+        heuristic: { 0: lowestHeuristic, 1: highestHeuristic },
+        hintPathway: { 0: "DefaultPathway", 1: "DefaultPathway" }
+    };
+}
 
 class App extends React.Component {
     constructor(props) {
@@ -193,6 +197,9 @@ class App extends React.Component {
     };
 
     getTreatmentObject = (targetObject) => {
+        if (!AB_TEST_MODE) {
+            return targetObject;
+        }
         return targetObject[this.getTreatment()];
     };
 
