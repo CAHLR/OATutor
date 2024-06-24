@@ -50,6 +50,12 @@ const DO_FOCUS_TRACKING = true;
 const DO_LOG_MOUSE_DATA = false;
 
 /**
+ * Flag to enable or disable A/B testing
+ * @type {boolean}
+ */
+const AB_TEST_MODE = false;
+
+/**
  * If reach bottom of provided hints, give correct answer to question
  * @type {boolean}
  */
@@ -79,9 +85,7 @@ const EQUATION_EDITOR_AUTO_COMMANDS =
     "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
 const EQUATION_EDITOR_AUTO_OPERATORS = "sin cos tan";
 
-const MIDDLEWARE_URL =
-    process.env.REACT_APP_MIDDLEWARE_URL ||
-    "https://oatutor.askoski.berkeley.edu";
+const MIDDLEWARE_URL = "https://di2iygvxtg.execute-api.us-west-1.amazonaws.com/prod";
 
 const HELP_DOCUMENT =
     "https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub";
@@ -126,6 +130,7 @@ export {
     ENABLE_FIREBASE,
     DO_LOG_DATA,
     DO_LOG_MOUSE_DATA,
+    AB_TEST_MODE,
     dynamicText,
     ENABLE_BOTTOM_OUT_HINTS,
     lessonPlans,
