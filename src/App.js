@@ -64,11 +64,21 @@ const queryParamToContext = {
 
 const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore", "locale"];
 
-const treatmentMapping = {
-    bktParams: AB_TEST_MODE ? { 0: cleanObjectKeys(bktParams1), 1: cleanObjectKeys(bktParams2) } : { 0: cleanObjectKeys(bktParams1), 1: cleanObjectKeys(bktParams1) },
-    heuristic: AB_TEST_MODE ? { 0: lowestHeuristic, 1: highestHeuristic } : { 0: lowestHeuristic, 1: lowestHeuristic },
-    hintPathway: { 0: "DefaultPathway", 1: "DefaultPathway" }
-};
+let treatmentMapping;
+
+if (!AB_TEST_MODE) {
+    treatmentMapping = {
+        bktParams: cleanObjectKeys(bktParams1),
+        heuristic: lowestHeuristic,
+        hintPathway: "DefaultPathway"
+    };
+} else {
+    treatmentMapping = {
+        bktParams: { 0: cleanObjectKeys(bktParams1), 1: cleanObjectKeys(bktParams2) },
+        heuristic: { 0: lowestHeuristic, 1: highestHeuristic },
+        hintPathway: { 0: "DefaultPathway", 1: "DefaultPathway" }
+    };
+}
 
 class App extends React.Component {
     constructor(props) {
@@ -187,6 +197,9 @@ class App extends React.Component {
     };
 
     getTreatmentObject = (targetObject) => {
+        if (!AB_TEST_MODE) {
+            return targetObject;
+        }
         return targetObject[this.getTreatment()];
     };
 
