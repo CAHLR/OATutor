@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a0b8589mass1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for a Balanced Equation",
+        "text": "Check if the equation is balanced or not. If not, balance the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0b8589mass1a-h1"
+        ],
+        "title": "Calculate the Molar Amount of $$\\operatorname{Mg}\\left(OH\\right) _2$$",
+        "text": "Use the equation Moles of Reactant A $$=$$ Mass of Reactant A * (Moles of Reactant A)/(Molar Mass of Reactant A).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.274$$"
+        ],
+        "dependencies": [
+            "a0b8589mass1a-h2"
+        ],
+        "title": "Calculate the Molar Amount of $$\\operatorname{Mg}\\left(OH\\right) _2$$",
+        "text": "What is (16 g MgOH_2)*(1 mol $$MgOH_2$$ / $$58.3$$ g MgOH_2)? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0b8589mass1a-h3"
+        ],
+        "title": "Identify the Stoichiometric Factor",
+        "text": "The stoichiometric factor relating the two substances of interest is $$2$$ mol NaOH / $$1$$ mol $$\\operatorname{Mg}\\left(OH\\right) _2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0b8589mass1a-h4"
+        ],
+        "title": "Calculate the Molar Amount of NaOH",
+        "text": "The molar amount of NaOH is derived by multiplying the provided molar amount of $$\\operatorname{Mg}\\left(OH\\right) _2$$ by multiplying the stoichiometric factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.548$$"
+        ],
+        "dependencies": [
+            "a0b8589mass1a-h5"
+        ],
+        "title": "Calculate the Molar Amount of NaOH",
+        "text": "What is $$(0.274$$ mol Mg(OH)_2)*(2 mol NaOH / $$1$$ mol Mg(OH)_2)? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0b8589mass1a-h6"
+        ],
+        "title": "Calculate the Mass of NaOH",
+        "text": "Calculate the Mass of NaOH with Mass of Reactant A $$=$$ (Molar Mass of Reactant A)/(Moles of Reactant A)*Moles of Reactant A)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b8589mass1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$22$$"
+        ],
+        "dependencies": [
+            "a0b8589mass1a-h7"
+        ],
+        "title": "Calculate the Mass of NaOH",
+        "text": "What is $$(0.548$$ mol NaOH)*(40.0 g NaOH)/(mol NaOH)? Give your answer as an integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
