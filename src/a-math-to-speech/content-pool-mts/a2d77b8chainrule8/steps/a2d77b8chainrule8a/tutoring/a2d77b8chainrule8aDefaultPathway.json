@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a2d77b8chainrule8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Chain Rule",
+        "text": "Remember, the chain rule in Leibniz's notation tells us that $$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule8a-h1"
+        ],
+        "title": "Decompose the Function",
+        "text": "First we need to decompose our function $$y$$ into the form $$y=f(u)$$ and $$u=g(x)$$, try finding what f(u) and g(x) should be in this case!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u^7$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule8a-h2"
+        ],
+        "title": "Find f(u)",
+        "text": "What is f(u)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$u^3$$",
+            "$$u^2$$",
+            "$$u^6$$",
+            "$$u^7$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{x}{7}+\\frac{7}{x}$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule8a-h3"
+        ],
+        "title": "Find g(x)",
+        "text": "What is g(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{x}{7}+\\frac{7}{x}$$",
+            "$$7\\ln(x)$$",
+            "$$\\frac{x}{7}$$",
+            "$$\\frac{7}{x}$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule8a-h4"
+        ],
+        "title": "Find the Derivative",
+        "text": "Next, we take the derivative of f(u) in terms of u, $$\\frac{dy}{du}$$, and the derivative of g(x) in terms of $$x$$, $$\\frac{du}{dx}$$. Multiplying these two expressions together yields our final answer, dy/dx!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule8a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7u^6$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule8a-h5"
+        ],
+        "title": "Find $$\\frac{dy}{du}$$",
+        "text": "What is $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$7u^6$$",
+            "$$7u^7$$",
+            "$$u^6$$",
+            "$$\\frac{1}{8} u^8$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule8a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{7}-\\frac{7}{x^2}$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule8a-h6"
+        ],
+        "title": "Find $$\\frac{du}{dx}$$",
+        "text": "What is $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1-\\frac{7}{x^2}$$",
+            "$$\\frac{1}{7}-\\frac{1}{x^2}$$",
+            "$$1-\\frac{1}{x^2}$$",
+            "$$\\frac{1}{7}-\\frac{7}{x^2}$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule8a-h7"
+        ],
+        "title": "Plug in",
+        "text": "Finally, we only need to multiply these two expressions to find our final answer. Don't forget to plug in what we have for u in terms of $$x$$ into our final answer!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

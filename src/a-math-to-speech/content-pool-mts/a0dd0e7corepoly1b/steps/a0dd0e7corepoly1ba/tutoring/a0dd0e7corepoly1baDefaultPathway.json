@@ -1,0 +1,151 @@
+[
+    {
+        "id": "a0dd0e7corepoly1ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of a Line",
+        "text": "The slope of a line can be determined using two points $$(x_1,y_1)$$, $$(x_2,y_2)$$ by subtracting the y-values over the x-values: $$\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The slope of a line can be determined using two points ; open paren, x sub 1 comma y sub 1, close paren; , , open paren, x sub 2 comma y sub 2, close paren;  by subtracting the y-values over the x-values: ; fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1, end fraction; ."
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h1"
+        ],
+        "title": "Slope of a Line",
+        "text": "Substituting the points $$(-3,2)$$, $$(5,-2)$$, the slope is equal to $$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Substituting the points ; times, open paren, negative 3 comma 2, close paren; , , open paren, 5 comma negative 2, close paren; , the slope is equal to ; fraction, open paren, negative 2 minus 2, close paren, over, 5 minus negative 3, end fraction;"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$-2-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is ; minus 2 minus 2; ?"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$5-(-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is , 5 minus negative 3, ?"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h3",
+            "a0dd0e7corepoly1ba-h4"
+        ],
+        "title": "Slope of a Line",
+        "text": "$$\\frac{-4}{8}$$ can be simplified to get the slope of the line: $$\\frac{-1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "; fraction, negative 4, over 8, end fraction;  can be simplified to get the slope of the line: , fraction, negative 1, over 2, end fraction; ."
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h5"
+        ],
+        "title": "Point-Slope Form",
+        "text": "The point slope formula can be used to get the function of a line through the given point: $$y-y_1=m \\left(x-x_1\\right)$$ where $$m$$ is the slope and $$(x_1,y_1)$$ is the point.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The point slope formula can be used to get the function of a line through the given point: ; y minus y sub 1, is equal to; m, open paren, x minus x sub 1, close paren;  where  m  is the slope and , open paren, x sub 1 comma y sub 1, close paren;  is the point."
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h6"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Substituing $$m=\\frac{-1}{2}$$ and $$(-3,2)$$ for the point, the formula is equal to $$y-2=-\\left(\\frac{1}{2}\\right) \\left(x+3\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Substituing   m is equal to; fraction, negative 1, over 2, end fraction;  and , open paren, negative 3 comma 2, close paren;  for the point, the formula is equal to  y; minus 2; is equal to; negative 1 half times, open paren x plus 3, close paren; ."
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h7"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Distribute $$\\frac{-1}{2}$$ to $$x+3$$. What is $$3-\\left(\\frac{1}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Distribute ; fraction, negative 1, over 2, end fraction;  to  x; plus 3 . What is  3, minus 1 half; ?"
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h8"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Add $$2$$ from the left to get $$y=-\\left(\\frac{1}{2}\\right) x-\\frac{3}{2}+2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add ; 2  from the left to get  y, is equal to; negative 1 half x, minus 3 halves plus 2; ."
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h9"
+        ],
+        "title": "Point-Slope Form",
+        "text": "What is $$\\frac{-3}{2}+2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is ; fraction, negative 3, over 2, end fraction; plus 2; ?"
+    }
+]

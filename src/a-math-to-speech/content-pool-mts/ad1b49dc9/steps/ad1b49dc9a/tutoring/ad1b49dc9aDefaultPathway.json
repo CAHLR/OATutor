@@ -1,0 +1,94 @@
+[
+    {
+        "id": "ad1b49dc9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Intermediate Value Theorem",
+        "text": "The Intermediate Value Theorem: Let f be continuous over a closed, bounded interval [a,b]. If $$z$$ is any real number between f(a) and f(b), then there is a number c in [a,b] satisfying $$f(c)=z$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad1b49dc9a-h1"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "Since $$f(x)=x-cos(x)$$ is continuous over $$(-\\infty,\\infty)$$, it is continuous over any closed interval of the form [a,b].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad1b49dc9a-h2"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "If you can find an interval [a,b] such that f(a) and f(b) have opposite signs, you can use the Intermediate Value Theorem to conclude there must be a real number c in (a,b) that satisfies $$f(c)=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "ad1b49dc9a-h3"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "What is the value of f(0)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "ad1b49dc9a-h4"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "What is the value of $$f{\\left(\\frac{\\pi}{2}\\right)}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad1b49dc9a-h5"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "Since we find an interval [a,b] such that f(a) and f(b) have opposite signs, we can apply the Intermediate Value Theorem. we can see that there must be a real number c in $$[0,\\frac{\u03c0}{2}]$$ that satisfies $$\ud835\udc53(\ud835\udc50)=0$$. Therefore, $$\ud835\udc53(x)=x-cosx$$ has at least one zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1b49dc9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad1b49dc9a-h6"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "We can see that there must be a real number c in $$[0,\\frac{\\pi}{2}]$$ that satisfies $$f(c)=0$$. Therefore, $$f(x)=x-cos(x)$$ has at least one zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

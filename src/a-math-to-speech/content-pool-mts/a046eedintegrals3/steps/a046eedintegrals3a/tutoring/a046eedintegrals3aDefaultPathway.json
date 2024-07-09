@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a046eedintegrals3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choosing u",
+        "text": "We need to choose an appropriate u to perform substitution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We need to choose an appropriate u to perform substitution."
+    },
+    {
+        "id": "a046eedintegrals3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^3$$"
+        ],
+        "dependencies": [
+            "a046eedintegrals3a-h1"
+        ],
+        "title": "Choosing u",
+        "text": "Which function should we set as 'u'?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x^3$$",
+            "$$2x$$",
+            "$$3x^2$$",
+            "$$e^2 x^3$$"
+        ],
+        "speech": "Which function should we set as 'u'?"
+    },
+    {
+        "id": "a046eedintegrals3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h2"
+        ],
+        "title": "Find the derivative of u",
+        "text": "Since $$u=2x^3$$ then $$du=6x^2 dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Since ; u is equal to, 2 x cubed,  then  d u; is equal to, 6 x squared d x;"
+    },
+    {
+        "id": "a046eedintegrals3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h3"
+        ],
+        "title": "Adjusting the constant coefficient",
+        "text": "As we've determined that du $$=$$ $$6x^2$$ dx, and the original function incorporates a factor of $$3x^2$$ (rather than 6x**2), we need to make a minor adjustment to the constant multiplier to align it with the function we intend to substitute.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "As we've determined that du ; is equal to;   6 x squared,  dx, and the original function incorporates a factor of  3 x squared;  (rather than 6x**2), we need to make a minor adjustment to the constant multiplier to align it with the function we intend to substitute."
+    },
+    {
+        "id": "a046eedintegrals3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h4"
+        ],
+        "title": "Adjusting the constant coefficient",
+        "text": "We can easily see that $$3$$ is $$\\frac{1}{2}$$ of $$6$$ so we will divide both side of the expression by $$2$$ and obtain $$\\frac{du}{2}=3x^2 dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We can easily see that ; 3  is  1 half  of  6  so we will divide both side of the expression by  2  and obtain , fraction, d u, over 2, end fraction; is equal to, 3 x squared d x;"
+    },
+    {
+        "id": "a046eedintegrals3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h5"
+        ],
+        "title": "Using u-substitution",
+        "text": "$$\\int 3x^2 e^2 x^3 \\,dx=(1/2)*\\int e^u \\,du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "; the integral of 3 x squared e squared x cubed d x; is equal to; open paren 1 divided by 2, close paren; times, the integral of e to the u-th d u;"
+    },
+    {
+        "id": "a046eedintegrals3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h6"
+        ],
+        "title": "Find the integral",
+        "text": "Integrate the expression in u and then substitute the original expression in $$x$$ back into the u integral: $$(1/2)*\\int e^u \\,du=\\frac{1}{2} e^u+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Integrate the expression in u and then substitute the original expression in ; x  back into the u integral: ; open paren 1 divided by 2, close paren; times, the integral of e to the u-th d u; is equal to, 1 half e to the u-th, plus  cap c;"
+    },
+    {
+        "id": "a046eedintegrals3a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals3a-h7"
+        ],
+        "title": "Back-subsitute",
+        "text": "The final step is to convert u back into the original variable $$\\frac{1}{2} e^{2x^3}+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The final step is to convert u back into the original variable ; 1 half, e raised to the 2 x cubed power; plus  cap c;"
+    }
+]

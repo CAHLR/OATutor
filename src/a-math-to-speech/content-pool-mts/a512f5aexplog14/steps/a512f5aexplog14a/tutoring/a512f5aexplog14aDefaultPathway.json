@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a512f5aexplog14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using properties of logarithms to combine logarithmic terms",
+        "text": "If one side of the equation has multiple logarithmic terms, combine them using properties of logarithms.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a512f5aexplog14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog14a-h1"
+        ],
+        "title": "Properties of logs",
+        "text": "Recall that ln(a) + ln(b) $$=$$ $$\\ln(a b)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a512f5aexplog14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog14a-h2"
+        ],
+        "title": "One-to-One property of logarithms",
+        "text": "The One-to-One property of logarithms states that for any algebraic expressions S and T and any positive real number $$b$$, where $$b$$ does NOT equal $$1$$, log(base b)S $$=$$ log(base b)T if and only if $$S=T$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a512f5aexplog14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a512f5aexplog14a-h3"
+        ],
+        "title": "Extraneous solutions",
+        "text": "Use the domain of the logarithmic function to determine whether a solution is extraneous.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a512f5aexplog14a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$ < $$-\\sqrt{10}$$ or $$x$$ > $$\\sqrt{10}$$"
+        ],
+        "dependencies": [
+            "a512f5aexplog14a-h4"
+        ],
+        "title": "Finding extraneous solutions",
+        "text": "For what values of $$x$$ will $$\\ln(x^2-10)$$ be defined?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x$$ < $$-\\sqrt{10}$$ or $$x$$ > $$\\sqrt{10}$$",
+            "$$x$$ < $$-\\sqrt{10}$$ and $$x$$ > $$\\sqrt{10}$$",
+            "All real numbers"
+        ]
+    }
+]

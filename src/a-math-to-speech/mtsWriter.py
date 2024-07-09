@@ -7,7 +7,7 @@ import json
 # output_file = 'src/a-math-to-speech/hintStrings.txt'
 
 filepaths = []
-for root, dirs, files in os.walk('src/a-math-to-speech/oatutor/content-pool-mts'):
+for root, dirs, files in os.walk('src/a-math-to-speech/content-pool-mts'):
     for file in files:
         if 'DefaultPathway' in file:
             filepaths.append(os.path.join(root, file))
@@ -28,12 +28,12 @@ for source_file in filepaths:
 
         # Update the "text" attribute with hints[i]
         for obj in data:
-            obj['text'] = hints[i]
+            obj['speech'] = hints[i]
             i+=1
-
+       
         # Write the updated JSON object to the source file
         file.seek(0)
-        file.write(json.dumps(data))
+        file.write(json.dumps(data, indent=4))
         file.truncate()
 
     file.close()

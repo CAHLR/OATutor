@@ -1,0 +1,150 @@
+[
+    {
+        "id": "aef8b03optimize14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Constraint Equation",
+        "text": "First, write a constraint equation representing the perimeter in terms of its length(x) and width(y).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+2y$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h1"
+        ],
+        "title": "Perimeter",
+        "text": "Let $$x$$ denote the side of the pen parallel to the river, and $$y$$ denote the side perpendicular to the river. What is the perimeter in terms of $$x$$ and $$y$$? $$P=800=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize14a-h2"
+        ],
+        "title": "A(x)",
+        "text": "Write the area as a function of side $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$800-\\frac{1}{5} x$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h3"
+        ],
+        "title": "$$y$$",
+        "text": "First, solve for $$y$$ using the perimeter's equation. $$y=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{2}\\right) x^2+400x$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h4"
+        ],
+        "title": "subsitute $$y$$",
+        "text": "Rewrite $$A=xy$$ in terms of only $$x$$ by substituting $$y$$ with $$y=400-\\frac{1}{2} x$$. $$A(x)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize14a-h5"
+        ],
+        "title": "critical points",
+        "text": "Find the area function's critical point(s) using its derivative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-x+400$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h6"
+        ],
+        "title": "derivative",
+        "text": "What is $$A'(x)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "400"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h7"
+        ],
+        "title": "slope of zero",
+        "text": "When $$A'(x)=0$$, $$x=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize14a-h8"
+        ],
+        "title": "dimensions",
+        "text": "Lastly, find the dimension of the width.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize14a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "200"
+        ],
+        "dependencies": [
+            "aef8b03optimize14a-h9"
+        ],
+        "title": "$$y$$",
+        "text": "If $$x=400$$, what is $$y=400-\\frac{1}{2} x=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

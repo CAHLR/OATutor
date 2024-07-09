@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ac1df14related10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strategy",
+        "text": "We can use the equation for area of triangle from two sides and differentiate it with respect to time",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=\\frac{1}{2} a b sin\\left(C\\right)$$"
+        ],
+        "dependencies": [
+            "ac1df14related10a-h1"
+        ],
+        "title": "Area of triangle",
+        "text": "Let's set area of triangle as A, two sides as a and $$b$$, and angle between a and be as C. What is the equation for computing A?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=a b cos\\left(C\\right)$$",
+            "$$A=\\frac{1}{2} a b cos\\left(C\\right)$$",
+            "$$A=\\frac{1}{2} a b sin\\left(C\\right)$$"
+        ]
+    },
+    {
+        "id": "ac1df14related10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related10a-h2"
+        ],
+        "title": "Differentiate",
+        "text": "Next step is to differentiate both sides of the equation with respect to time (t)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{dA}{dt}=\\frac{1}{2} a b cos\\left(C\\right) \\frac{dC}{dt}$$"
+        ],
+        "dependencies": [
+            "ac1df14related10a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is differentiated equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{dA}{dt}=a b cos\\left(C\\right) \\frac{dC}{dt}$$",
+            "$$\\frac{dA}{dt}=\\frac{1}{2} a b cos\\left(C\\right) \\frac{dC}{dt}$$",
+            "$$\\frac{dA}{dt}=\\frac{1}{2} a b sin\\left(C\\right) \\frac{dC}{dt}$$"
+        ]
+    },
+    {
+        "id": "ac1df14related10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related10a-h4"
+        ],
+        "title": "Strategy",
+        "text": "We want to find $$\\frac{dA}{dt}$$ when $$\\frac{dC}{dt}=0.1$$ $$\\frac{rad}{sec}$$, $$a=3ft$$, $$b=5ft$$, and $$C=\\frac{\\pi}{6}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related10a-h5"
+        ],
+        "title": "Plug in",
+        "text": "Final step is to plug in the values of $$\\frac{dC}{dt}$$, a,b,and C into the differentiated equation to find $$\\frac{dA}{dt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

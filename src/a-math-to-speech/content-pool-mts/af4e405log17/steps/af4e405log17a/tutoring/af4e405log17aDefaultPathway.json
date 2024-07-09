@@ -1,0 +1,52 @@
+[
+    {
+        "id": "af4e405log17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$\\log_{a}\\left(64\\right)=3$$. Rewrite this expression first into exponential form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log17a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a^3=64$$"
+        ],
+        "dependencies": [
+            "af4e405log17a-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{a}\\left(64\\right)=3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$a^3=64$$",
+            "$${64}^3=a$$",
+            "$${64}^a=3$$",
+            "$$3^a=64$$"
+        ]
+    },
+    {
+        "id": "af4e405log17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "af4e405log17a-h2"
+        ],
+        "title": "Solve for a",
+        "text": "What is the solution for a in the exponential equation $$a^3=64$$? Note that the domain of logarithmic equations is non-negative, so a must be non-negative!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

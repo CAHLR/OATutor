@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ab19046LimitlLaw16a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "Plug in the $$h$$ value to the function $$\\frac{1}{a+h}-\\frac{1}{a}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw16a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "Plug in the $$h$$ value to the function $$h$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw16a-h2"
+        ],
+        "title": "Combine the numerator",
+        "text": "$$\\frac{1}{a+h}-\\frac{1}{a}=\\frac{a+h-a}{a \\left(a+h\\right)}=\\frac{h}{a \\left(a+h\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw16a-h3"
+        ],
+        "title": "Simplify the whole function",
+        "text": "$$\\frac{\\frac{h}{a \\left(a+h\\right)}}{h}=\\frac{1}{a \\left(a+h\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw16a-h4"
+        ],
+        "title": "Plug in $$h$$ values to the new simplified function to get the result",
+        "text": "$$\\frac{1}{a a}=\\frac{1}{a^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

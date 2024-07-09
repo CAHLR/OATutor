@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a2d77b8chainrule2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Chain Rule",
+        "text": "Remember, the chain rule in Leibniz's notation tells us that $$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule2a-h1"
+        ],
+        "title": "Find the Derivative",
+        "text": "First, try finding the derivative of $$y$$ in terms of u. Then, find the derivative of u in terms of $$x$$. Multiplying the two should yield the correct answer!",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$18u^2$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule2a-h2"
+        ],
+        "title": "Find $$\\frac{dy}{du}$$",
+        "text": "What is $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$18u^2$$",
+            "$$18u^3$$",
+            "18u",
+            "$$18$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule2a-h3"
+        ],
+        "title": "Find $$\\frac{du}{dx}$$",
+        "text": "What is $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$7$$",
+            "$$\\frac{7}{2} x^2$$",
+            "$$7x$$",
+            "$$7x^2$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule2a-h4"
+        ],
+        "title": "Plug in",
+        "text": "Don't forget to plug in what we have for u in terms of $$x$$ to give our final answer in terms of $$x!$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

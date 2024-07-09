@@ -1,0 +1,311 @@
+[
+    {
+        "id": "a4a0f7dradicalroot4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setup",
+        "text": "Simplifying the equation to $$m=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h1"
+        ],
+        "title": "Setup",
+        "text": "Isolating $$m$$ function by moving $$-m$$ to right side",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h2"
+        ],
+        "title": "Operation",
+        "text": "Subtracting $$3$$ on both sides to remove the $$+3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h3"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$\\sqrt{m+9}=m-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h4"
+        ],
+        "title": "Order of Operation",
+        "text": "Solving the square root",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h5"
+        ],
+        "title": "Calculation",
+        "text": "Square root can be removed by squaring both sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m+9$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h6"
+        ],
+        "title": "Squaring",
+        "text": "What is the square of $$\\sqrt{m+9}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h7"
+        ],
+        "title": "Operation",
+        "text": "Square root can be canceled by squaring",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m+9$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h8"
+        ],
+        "title": "Operation",
+        "text": "What is $$\\sqrt{m+9}$$ without square root?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h9"
+        ],
+        "title": "Principle of Operation",
+        "text": "$$m-3$$ on the right side also has to be squared",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h10"
+        ],
+        "title": "Binomial Squares",
+        "text": "Recall the binomial square formula: $${\\left(a+b\\right)}^2=a^2+2ab+b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h11"
+        ],
+        "title": "Substitution",
+        "text": "For $$m-3$$, $$a=m$$ $$b=-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m^2-2m+1$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h12"
+        ],
+        "title": "Substitution",
+        "text": "What is $${\\left(m-1\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m^2$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h13"
+        ],
+        "title": "Substitution",
+        "text": "What is $$a^2$$ when $$a=m$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6m$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h14"
+        ],
+        "title": "Substitution",
+        "text": "What is 2ab when $$a=m$$, $$b=-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h15"
+        ],
+        "title": "Substitution",
+        "text": "What is $$b^2$$ when $$b=-3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h17",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h16"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$m+9=m^2-6m+9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h18",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h17"
+        ],
+        "title": "Subtraction",
+        "text": "Subtracting $$9$$ on both sides to remove the $$+9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h19",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h18"
+        ],
+        "title": "Organizing",
+        "text": "Moving the $$m$$ term on left side to right side, forming a new equation as $$m^2-7m$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h20",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h19"
+        ],
+        "title": "Factor",
+        "text": "Factor out $$m$$ from $$m^2-7m$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h21",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h20"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$m(m-7)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h22",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h21"
+        ],
+        "title": "Principle",
+        "text": "To make equation to $$0$$, either $$m=0$$ or $$m-7=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot4a-h23",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot4a-h22"
+        ],
+        "title": "Calculation",
+        "text": "If $$m-7=0$$, $$m=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

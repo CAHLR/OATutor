@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ad16e82class24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equation for Slope",
+        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad16e82class24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad16e82class24a-h1"
+        ],
+        "title": "Explanation",
+        "text": "After eighteen years, the price will be $$250000\\times2=500000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad16e82class24a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$13888.89$$"
+        ],
+        "dependencies": [
+            "ad16e82class24a-h2"
+        ],
+        "title": "Solve the Value",
+        "text": "What is the fixed value?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$13888.89$$",
+            "$$13800$$",
+            "$$15888.89$$"
+        ],
+        "subHints": [
+            {
+                "id": "ad16e82class24a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve the Value",
+                "text": "$$\\frac{500000-250000}{18}=13888.89$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

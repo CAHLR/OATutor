@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a750210trig15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Angles",
+        "text": "The value inside the parenthesis of the sin refers to an angle which also corresponds to a point on the unit circle, but in this case does not.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a750210trig15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a750210trig15a-h1"
+        ],
+        "title": "Replacement Angles",
+        "text": "Since $$\\frac{\\pi}{12}$$ is not on the common uniform circle, we can use the replacement angles $$\\frac{\\pi}{3}$$ and $$\\frac{\\pi}{4}$$. (I.e. $$\\frac{\\pi}{12}$$ $$=$$ pi/3-pi/4)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a750210trig15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a750210trig15a-h2"
+        ],
+        "title": "Subtraction formula of sinx",
+        "text": "The subtraction formula for sinx is sin $$(A-B)=sinA CosB-cosA sinB$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a750210trig15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}-1}{2-\\sqrt{2}}$$"
+        ],
+        "dependencies": [
+            "a750210trig15a-h3"
+        ],
+        "title": "Calculate",
+        "text": "Calculate $$sin\\left(\\frac{\\pi}{3}\\right) cos\\left(\\frac{\\pi}{4}\\right)-cos\\left(\\frac{\\pi}{3}\\right) sin\\left(\\frac{\\pi}{4}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "(sqrt(3)-1)/(2-sqrt(2)",
+            "(sqrt(2)-1)/(3-sqrt(2)",
+            "(sqrt(1)-1)/(3-sqrt(2)",
+            "(sqrt(3)-1)/(1-sqrt(2)"
+        ]
+    },
+    {
+        "id": "a750210trig15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a750210trig15a-h3"
+        ],
+        "title": "Unit Circle",
+        "text": "The replacement angles $$\\frac{\\pi}{3}$$ and $$\\frac{\\pi}{4}$$ are on the common unit circle and sinx $$=$$ the $$y$$ value while cosx $$=$$ the $$x$$ value of the corresponding point on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

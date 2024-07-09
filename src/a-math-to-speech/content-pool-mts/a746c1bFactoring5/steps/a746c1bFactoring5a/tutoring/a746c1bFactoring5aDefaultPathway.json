@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a746c1bFactoring5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Greatest Common Factor",
+        "text": "The greatest common factor amongst the three terms in the expression is $$1$$. So we need to use other approaches.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(2a\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h1"
+        ],
+        "title": "Perfect square",
+        "text": "Is the first term in the expression a perfect square? How do you rewrite $$4a^2$$ into a perfect square?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(3b\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h1"
+        ],
+        "title": "Perfect square",
+        "text": "Is the last term in the expression a perfect square? How do you rewrite $$9b^2$$ into perfect square?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring5a-h3",
+            "a746c1bFactoring5a-h2"
+        ],
+        "title": "Formula",
+        "text": "We can rewrite the expression $$4a^2-12a b+9b^2={\\left(2a\\right)}^2-12a b+{\\left(3b\\right)}^2$$. Does it fit the pattern $$x^2-2x y+y^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2a$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h4"
+        ],
+        "title": "Finding $$x$$",
+        "text": "If $$4a^2-12a b+9b^2={\\left(2a\\right)}^2-12a b+{\\left(3b\\right)}^2$$ fits the pattern $$x^2-2x y+y^2$$, then what is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3b$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h4"
+        ],
+        "title": "Finding $$y$$",
+        "text": "If $$4a^2-12a b+9b^2={\\left(2a\\right)}^2-12a b+{\\left(3b\\right)}^2$$ fits the pattern $$x^2-2x y+y^2$$, then what is $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12a b$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h5",
+            "a746c1bFactoring5a-h6"
+        ],
+        "title": "Finding 2xy",
+        "text": "If $$x=2a$$ and $$y=3b$$, then what is $$2x y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring5a-h7"
+        ],
+        "title": "Find the pattern",
+        "text": "If we let $$x=2a$$, $$y=3b$$, then $$2x y=12a b$$, and $$x^2-2x y+y^2=4a^2-12a b+9b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a746c1bFactoring5a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(2a-3b\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring5a-h8"
+        ],
+        "title": "Factor first term",
+        "text": "Given that $$x^2-2x y+y^2=2\\left(x-y\\right)$$, how do we factor $$4a^2-12a b+9b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a746c1bFactoring5a-h9-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$${\\left(2a-3b\\right)}^2$$"
+                ],
+                "dependencies": [],
+                "title": "Rewrite",
+                "text": "Based on the above steps, we observe that when $$x=2a$$, $$y=3b$$, $$4a^2-12a b+9b^2$$ fits the pattern $$x^2-2x y+y^2$$. Given that $$x^2-2x y+y^2=2\\left(x-y\\right)$$. How do we rewrite $$4a^2-12a b+9b^2$$ as a perfect square?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]
