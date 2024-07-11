@@ -2,9 +2,8 @@ import os
 import json
 
 # Path to the source file
-#source_file = 'src/content-sources/oatutor/content-pool/a0a04b1divmonomial1/steps/a0a04b1divmonomial1a/tutoring/a0a04b1divmonomial1aDefaultPathway.json'
 # Retrieve filepath of all files with DefaultPathway in content-pool directory
-output_file = 'src/a-math-to-speech/hintStrings.txt'
+output_file = 'src/a-math-to-speech/hintStringsA.txt'
 
 filepaths = []
 for root, dirs, files in os.walk('src/content-sources/oatutor/content-pool'):

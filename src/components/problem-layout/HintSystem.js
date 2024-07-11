@@ -179,6 +179,7 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
+                                 
                                 {translate('hintsystem.hint') + (i + 1) + ": "}
                                 {renderText(
                                     hint.title === "nan" ? "" : hint.title,
