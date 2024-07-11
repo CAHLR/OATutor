@@ -179,7 +179,7 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                 
+                                HERE 
                                 {translate('hintsystem.hint') + (i + 1) + ": "}
                                 {renderText(
                                     hint.title === "nan" ? "" : hint.title,
