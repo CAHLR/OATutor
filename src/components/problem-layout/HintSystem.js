@@ -146,6 +146,14 @@ class HintSystem extends React.Component {
         );
     };
 
+    /*
+    openWhiteboard  = (event) => {
+        // opens accordionDetails with only math 
+
+    };
+
+    */
+
     render() {
         const { translate } = this.props;
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
@@ -283,7 +291,11 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            <Button>AI HELP</Button>
+                            <Button // here have onClick={this.openWhiteboard}
+                            >
+                                AI HELP
+                            </Button>
+                            
                         </AccordionActions>
                     </Accordion>
                 ))}
