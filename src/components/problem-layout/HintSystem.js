@@ -17,6 +17,7 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
 import Button from '@material-ui/core/Button';
+import AccordionActions from '@material-ui/core/AccordionActions';
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -195,9 +196,7 @@ class HintSystem extends React.Component {
                                     this.context
                                 )}
                             </Typography>
-                            <Button variant={'contained'} color={'primary'} >
-                                    Next
-                            </Button>
+                            
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography
@@ -283,6 +282,9 @@ class HintSystem extends React.Component {
                                 )}
                             </Typography>
                         </AccordionDetails>
+                        <AccordionActions>
+                            <Button>AI HELP</Button>
+                        </AccordionActions>
                     </Accordion>
                 ))}
             </div>
