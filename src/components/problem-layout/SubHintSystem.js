@@ -56,6 +56,7 @@ class SubHintSystem extends React.Component {
 
         return (
             <div className={classes.root}>
+                {console.log("SubhintSystem")}
                 {this.props.hints.map((hint, i) => {
                         return <Accordion key={i}
                             onChange={(event, expanded) => this.unlockHint(event, expanded, i)}

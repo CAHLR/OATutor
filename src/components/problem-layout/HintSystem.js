@@ -16,6 +16,7 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
+import Button from '@material-ui/core/Button';
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -178,8 +179,7 @@ class HintSystem extends React.Component {
                                 "data-selenium-target": `hint-expand-${i}-${index}`,
                             })}
                         >
-                            <Typography className={classes.heading}>
-                                HERE 
+                            <Typography className={classes.heading}> 
                                 {translate('hintsystem.hint') + (i + 1) + ": "}
                                 {renderText(
                                     hint.title === "nan" ? "" : hint.title,
@@ -195,6 +195,9 @@ class HintSystem extends React.Component {
                                     this.context
                                 )}
                             </Typography>
+                            <Button variant={'contained'} color={'primary'} >
+                                    Next
+                            </Button>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography
@@ -213,7 +216,7 @@ class HintSystem extends React.Component {
                                         seed
                                     ),
                                     this.context
-                                )}
+                                )} 
                                 {hint.type === "scaffold" ? (
                                     <div>
                                         <Spacer />
