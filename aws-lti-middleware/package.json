@@ -1,0 +1,27 @@
+{
+  "name": "oatutor-lti-server",
+  "version": "1.0.0",
+  "description": "LTI server",
+  "main": "server.js",
+  "dependencies": {
+    "@common/global-config": "file:../common",
+    "await-to-js": "~3.0.0",
+    "aws-serverless-express": "^3.4.0",
+    "express": "~4.17.1",
+    "express-jwt": "~6.1.0",
+    "firebase-admin": "^11.0.0",
+    "ims-lti": "~3.0.2",
+    "jsonwebtoken": "~8.5.1",
+    "level": "~7.0.1",
+    "lodash.memoize": "^4.1.2",
+    "serverless-http": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Tang",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/level": "^6.0.0"
+  }
+}
