@@ -47,6 +47,7 @@ class HintSystem extends React.Component {
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
+            aiHint: false, // new
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -146,18 +147,16 @@ class HintSystem extends React.Component {
         );
     };
 
-    /*
-    openWhiteboard  = (event) => {
+    openWhiteboard = (event) => {
         // opens accordionDetails with only math 
-
+        this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
     };
 
-    */
 
     render() {
         const { translate } = this.props;
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
-        const { currentExpanded, showSubHints } = this.state;
+        const { currentExpanded, showSubHints, aiHint } = this.state;
         const { debug, use_expanded_view } = this.context;
 
         return (
@@ -212,7 +211,7 @@ class HintSystem extends React.Component {
                                 style={{ width: "100%" }}
                             >
                                 {renderText(
-                                    hint.text,
+                                    aiHint? "Hej" : hint.text, // change Hej to the math :)
                                     problemID,
                                     chooseVariables(
                                         Object.assign(
@@ -291,9 +290,9 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            <Button // here have onClick={this.openWhiteboard}
+                            <Button onClick={this.openWhiteboard}
                             >
-                                AI HELP
+                                {this.state.aiHint === true? "TEXT HINT" : "AI HINT"}
                             </Button>
                             
                         </AccordionActions>
