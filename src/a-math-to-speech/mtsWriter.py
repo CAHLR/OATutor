@@ -17,7 +17,7 @@ file.close()
 
 with open('src/a-math-to-speech/hint-text-files/math.txt', 'r', encoding='utf-8') as file: 
     maths = file.readlines()
-    maths = [math.strip().split('@') for math in maths]
+    maths = [ "$$" + math.strip().split('@') + "$$" for math in maths]
 file.close()
 
 i = 0

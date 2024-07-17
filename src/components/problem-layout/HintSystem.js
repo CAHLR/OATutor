@@ -48,6 +48,7 @@ class HintSystem extends React.Component {
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
             aiHint: false, // new
+            agentSpeak: false, // new
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -150,6 +151,12 @@ class HintSystem extends React.Component {
     openWhiteboard = (event) => {
         // opens accordionDetails with only math 
         this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
+    };
+
+    
+    playAgent = (event) => {
+        // opens accordionDetails with only math 
+        this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
     };
 
 
@@ -290,11 +297,17 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
+                            {this.state.aiHint === true?
+                            <Button onClick={this.playAgent}
+                            >
+                                {this.state.agentSpeak === true? "PAUSE" : "PLAY"}
+                            </Button>:" "}
+
                             <Button onClick={this.openWhiteboard}
                             >
-                                {this.state.aiHint === true? "TEXT HINT" : "AI HINT"}
+                                {this.state.aiHint === true? "TEXT" : "AGENT"}
                             </Button>
-                            
+
                         </AccordionActions>
                     </Accordion>
                 ))}
