@@ -7,7 +7,14 @@
         "text": "Given matrices A and B of like dimensions, addition and subtraction of A and B will produce matrix C or matrix D of the same dimension.\\n$$A+B=C$$ such that $$a_{i,j}+b_{i,j}=c_{i,j}$$\\n$$A-B=D$$ such that $$a_{i,j}-b_{i,j}=d_{i,j}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given matrices A and B of like dimensions, addition and subtraction of A and B will produce matrix C or matrix D of the same dimension.\\n;  cap a plus  cap b, is equal to;  cap c  such that , a sub i comma j end sub; plus b sub i comma j end sub; is equal to; c sub i comma j end sub; \\n  cap a; minus  cap b; is equal to;  cap d  such that , a sub i comma j end sub; minus, b sub i comma j end sub; is equal to, d sub i comma j end sub;",
+        "math": [
+            "A+B=C",
+            "a_{i,j}+b_{i,j}=c_{i,j}",
+            "A-B=D",
+            "a_{i,j}-b_{i,j}=d_{i,j}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h2",
@@ -19,7 +26,12 @@
         "text": "Since the dimension of the matrices are the same, we perform matrix addition $$A+B=D$$ such that $$a_{i,j}+b_{i,j}=d_{i,j}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the dimension of the matrices are the same, we perform matrix addition ;  cap a plus  cap b, is equal to;  cap d  such that , a sub i comma j end sub; plus b sub i comma j end sub; is equal to, d sub i comma j end sub; .",
+        "math": [
+            "A+B=D",
+            "a_{i,j}+b_{i,j}=d_{i,j}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h3",
@@ -36,7 +48,13 @@
         "text": "We will start by adding the top left entry of A, $$a_{1,1}$$, and B, $$b_{1,1}$$. What is $$a_{1,1}+b_{1,1}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We will start by adding the top left entry of A, ; a sub 1 comma 1 end sub; , and B, , b sub 1 comma 1 end sub; . What is , a sub 1 comma 1 end sub; plus b sub 1 comma 1 end sub; ?",
+        "math": [
+            "a_{1,1}",
+            "b_{1,1}",
+            "a_{1,1}+b_{1,1}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h4",
@@ -53,7 +71,13 @@
         "text": "We will next add the top right entry of A, $$a_{1,2}$$, and B, $$b_{1,2}$$. What is $$a_{1,2}+b_{1,2}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We will next add the top right entry of A, ; a sub 1 comma 2 end sub; , and B, , b sub 1 comma 2 end sub; . What is , a sub 1 comma 2 end sub; plus b sub 1 comma 2 end sub; ?",
+        "math": [
+            "a_{1,2}",
+            "b_{1,2}",
+            "a_{1,2}+b_{1,2}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h5",
@@ -65,7 +89,11 @@
         "text": "Repeat the same process for each corresponding entries to compute the addition of the two matrices, A and B. This would enable us to proceed to perform the subtractoin of matrices",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Repeat the same process for each corresponding entries to compute the addition of the two matrices, A and B. This would enable us to proceed to perform the subtractoin of matrices",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a41316cmatrices10a-h6",
@@ -77,7 +105,12 @@
         "text": "Since the dimension of the matrices are the same, we perform matrix subtraction $$D-C=E$$ such that $$d_{i,j}-c_{i,j}=e_{i,j}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the dimension of the matrices are the same, we perform matrix subtraction ;  cap d minus  cap c, is equal to;  cap e  such that , d sub i comma j end sub; minus, c sub i comma j end sub; is equal to, e sub i comma j end sub;",
+        "math": [
+            "D-C=E",
+            "d_{i,j}-c_{i,j}=e_{i,j}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h7",
@@ -94,7 +127,13 @@
         "text": "We will start by subtracting the top left entry of C, $$c_{1,1}$$, from D, $$d_{1,1}$$. What is $$d_{1,1}-c_{1,1}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We will start by subtracting the top left entry of C, ; c sub 1 comma 1 end sub; , from D, , d sub 1 comma 1 end sub; . What is , d sub 1 comma 1 end sub; minus, c sub 1 comma 1 end sub; ?",
+        "math": [
+            "c_{1,1}",
+            "d_{1,1}",
+            "d_{1,1}-c_{1,1}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h8",
@@ -111,7 +150,13 @@
         "text": "We will next subtract the top right entry of C, $$c_{1,2}$$, from D, $$d_{1,2}$$. What is $$d_{1,2}-c_{1,2}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We will next subtract the top right entry of C, ; c sub 1 comma 2 end sub; , from D, , d sub 1 comma 2 end sub; . What is , d sub 1 comma 2 end sub; minus, c sub 1 comma 2 end sub; ?",
+        "math": [
+            "c_{1,2}",
+            "d_{1,2}",
+            "d_{1,2}-c_{1,2}"
+        ]
     },
     {
         "id": "a41316cmatrices10a-h9",
@@ -123,6 +168,10 @@
         "text": "Repeat the same process for each corresponding entries to compute the subtraction between the two matrices.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Repeat the same process for each corresponding entries to compute the subtraction between the two matrices.",
+        "math": [
+            ""
+        ]
     }
 ]

@@ -18,6 +18,10 @@
             ">",
             "$$\\leq$$",
             "$$\\geq$$"
+        ],
+        "speech": "What symbol does 'less than or equal to' refer to?",
+        "math": [
+            ""
         ]
     },
     {
@@ -30,7 +34,12 @@
         "text": "The sentence 'a is less than or equal to b' means that a $$\\leq$$ $$b$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The sentence 'a is less than or equal to b' means that a ; is less than or equal to,   b; .",
+        "math": [
+            "\\leq",
+            "b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1a-h3",
@@ -51,6 +60,10 @@
         "choices": [
             "$$x$$ $$\\leq$$ $$3$$",
             "$$3$$ $$\\leq$$ $$x$$"
+        ],
+        "speech": "What inequality represents 'x' is less than or equal to 3'?",
+        "math": [
+            ""
         ]
     },
     {
@@ -74,6 +87,10 @@
             ">",
             "$$\\leq$$",
             "$$\\geq$$"
+        ],
+        "speech": "What symbol does 'greater than' refer to?",
+        "math": [
+            ""
         ]
     },
     {
@@ -86,7 +103,11 @@
         "text": "The sentence 'a is greater than b' means that $$a>b$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The sentence 'a is greater than b' means that , a is greater than b; .",
+        "math": [
+            "a>b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1a-h6",
@@ -107,6 +128,10 @@
         "choices": [
             "$$x>-1$$",
             "$$-1>x$$"
+        ],
+        "speech": "What inequality represents 'x is greater than -1'?",
+        "math": [
+            ""
         ]
     },
     {
@@ -119,7 +144,11 @@
         "text": "When ANDing two inequalities together, this means that both inequalities must be true for the value of 'x' to be valid.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "When ANDing two inequalities together, this means that both inequalities must be true for the value of 'x' to be valid.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1a-h8",
@@ -131,6 +160,16 @@
         "text": "For some values a,b where $$a<x$$ and $$x$$ $$\\leq$$ $$b$$, these two inequalities can be combined to say $$a<x$$ $$\\leq$$ $$b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some values a,b where ; a is less than; x  and  x  ; is less than or equal to;   b , these two inequalities can be combined to say  a, is less than, x  , is less than or equal to,   b;",
+        "math": [
+            "a<x",
+            "x",
+            "\\leq",
+            "b",
+            "a<x",
+            "\\leq",
+            "b"
+        ]
     }
 ]

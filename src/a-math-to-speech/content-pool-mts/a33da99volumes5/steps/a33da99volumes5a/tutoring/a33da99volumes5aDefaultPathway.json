@@ -7,7 +7,11 @@
         "text": "First, sketch the region and the solid of revolution as shown.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "First, sketch the region and the solid of revolution as shown.\\n##figure1.gif##",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a33da99volumes5a-h2",
@@ -19,7 +23,11 @@
         "text": "If we want to integrate with respect to $$x$$, we would have to break the integral into two pieces, because we have different functions bounding the region over [0,1] and [1,2]. In this case, using the disk method,",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "If we want to integrate with respect to  x; , we would have to break the integral into two pieces, because we have different functions bounding the region over [0,1] and [1,2]. In this case, using the disk method,",
+        "math": [
+            "x"
+        ]
     },
     {
         "id": "a33da99volumes5a-h3",
@@ -40,6 +48,10 @@
         "choices": [
             "$$y=x$$",
             "$$y=2-x$$"
+        ],
+        "speech": "What is the function bounding over [0,1]?",
+        "math": [
+            ""
         ]
     },
     {
@@ -52,7 +64,11 @@
         "text": "$$V=\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi {\\left(2-x\\right)}^2 \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": ";  cap v is equal to; the integral from 0 to 1 of; pi x squared d x; plus; the integral from 1 to 2 of; pi times, open paren 2 minus x, close paren squared; d x;",
+        "math": [
+            "V=\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi {\\left(2-x\\right)}^2 \\,dx"
+        ]
     },
     {
         "id": "a33da99volumes5a-h5",
@@ -86,6 +102,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "What would the function be if we used the shell method instead?",
+        "math": [
+            ""
         ]
     },
     {
@@ -103,7 +123,11 @@
         "text": "What would the limits of the function revolving around the y-axis? Express in Interval Expression",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What would the limits of the function revolving around the y-axis? Express in Interval Expression",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a33da99volumes5a-h7",
@@ -115,6 +139,10 @@
         "text": "The integral of the Shell Method can be set up as $$V=\\int_{0}^{1} 2\\pi y \\left(2-y-y\\right) \\,dy=\\int_{0}^{1} 2\\pi y \\left(2-2y\\right) \\,dy$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The integral of the Shell Method can be set up as ;  cap v is equal to; the integral from 0 to 1 of; 2 pi y, open paren, 2 minus y minus y, close paren; times d y; is equal to; the integral from 0 to 1 of; 2 pi y, open paren, 2 minus 2 y, close paren; times d y;",
+        "math": [
+            "V=\\int_{0}^{1} 2\\pi y \\left(2-y-y\\right) \\,dy=\\int_{0}^{1} 2\\pi y \\left(2-2y\\right) \\,dy"
+        ]
     }
 ]

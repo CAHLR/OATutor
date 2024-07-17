@@ -8,7 +8,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "First rewrite the problem using a rational exponent: ; the integral of e to the x-th, the square root of 1 plus e to the x-th end root; d x; is equal to; the integral of fraction, e to the x-th times; open paren, 1 plus e to the x-th, close paren to the first, over 2, end fraction; d x;"
+        "speech": "First rewrite the problem using a rational exponent: ; the integral of e to the x-th, the square root of 1 plus e to the x-th end root; d x; is equal to; the integral of fraction, e to the x-th times; open paren, 1 plus e to the x-th, close paren to the first, over 2, end fraction; d x;",
+        "math": [
+            "\\int e^x \\sqrt{1+e^x} \\,dx=\\int \\frac{e^x {\\left(1+e^x\\right)}^1}{2} \\,dx"
+        ]
     },
     {
         "id": "a046eedintegrals2a-h2",
@@ -21,7 +24,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Set ; u is equal to; 1 plus, e to the x-th  then  d u; is equal to, e to the x-th d x;"
+        "speech": "Set ; u is equal to; 1 plus, e to the x-th  then  d u; is equal to, e to the x-th d x;",
+        "math": [
+            "u=1+e^x",
+            "du=e^x dx"
+        ]
     },
     {
         "id": "a046eedintegrals2a-h3",
@@ -39,7 +46,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "What is the expression of the integral after using the u-substitution?"
+        "speech": "What is the expression of the integral after using the u-substitution?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a046eedintegrals2a-h4",
@@ -52,7 +62,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral of fraction, u to the first, over 2, end fraction; d u; is equal to; fraction, fraction, u cubed, over 2, end fraction; over, 3 halves, end fraction; plus  cap c; is equal to; 2 thirds u raised to the 3 halves power; plus  cap c;"
+        "speech": "; the integral of fraction, u to the first, over 2, end fraction; d u; is equal to; fraction, fraction, u cubed, over 2, end fraction; over, 3 halves, end fraction; plus  cap c; is equal to; 2 thirds u raised to the 3 halves power; plus  cap c;",
+        "math": [
+            "\\int \\frac{u^1}{2} \\,du=\\frac{\\frac{u^3}{2}}{\\frac{3}{2}}+C=\\frac{2}{3} u^{\\frac{3}{2}}+C"
+        ]
     },
     {
         "id": "a046eedintegrals2a-h5",
@@ -65,6 +78,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "The final step is to convert u back into the original variable ; 2 thirds times; open paren, 1 plus e to the x-th, close paren raised to the 3 halves power; plus  cap c;"
+        "speech": "The final step is to convert u back into the original variable ; 2 thirds times; open paren, 1 plus e to the x-th, close paren raised to the 3 halves power; plus  cap c;",
+        "math": [
+            "\\frac{2}{3} {\\left(1+e^x\\right)}^{\\frac{3}{2}}+C"
+        ]
     }
 ]

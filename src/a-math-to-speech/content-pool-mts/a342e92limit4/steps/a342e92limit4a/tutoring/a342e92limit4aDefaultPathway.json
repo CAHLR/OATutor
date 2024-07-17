@@ -7,7 +7,14 @@
         "text": "The values of $$f(x)=sin\\left(\\frac{1}{x}\\right)$$ as $$x$$ approaches $$0$$ are listed in Table $$2.5$$. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "The values of ; f of x is equal to; sine of, open paren 1 over x, close paren;  as  x  approaches  0  are listed in Table  2.5; . Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure2.gif##",
+        "math": [
+            "f(x)=sin\\left(\\frac{1}{x}\\right)",
+            "x",
+            "0",
+            "2.5"
+        ]
     },
     {
         "id": "a342e92limit4a-h2",
@@ -28,6 +35,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "As we read down each , sine of, open paren 1 over x, close paren;  column, are the values in each column approaching one single number?",
+        "math": [
+            "sin\\left(\\frac{1}{x}\\right)"
         ]
     },
     {
@@ -40,6 +51,37 @@
         "text": "After examining the table of functional values, we can see that the y-values do not seem to approach any one single value. It appears the limit does not exist. Before drawing this conclusion, let\u2019s take a more systematic approach. Take the following sequence of x-values approaching 0: $$\\frac{2}{\\pi}$$, $$\\frac{2}{3} \\pi$$, $$\\frac{2}{5} \\pi$$, $$\\frac{2}{7} \\pi$$, $$\\frac{2}{9} \\pi$$, $$\\frac{2}{11} \\pi$$, ... The corresponding y-values are $$1$$, $$-1$$, $$1$$, $$-1$$, $$1$$, $$-1$$, ... At this point we can indeed conclude that $$lim_x$$ \u2192 $$0$$ $$sin\\left(\\frac{1}{x}\\right)$$ does not exist. Thus, we would write $$lim_x$$ \u2192 $$0$$ $$sin\\left(\\frac{1}{x}\\right)$$ DNE. The graph of f(x) $$=$$ $$sin\\left(\\frac{1}{x}\\right)$$ is shown in the figure and gives a clearer picture of the behavior of $$sin\\left(\\frac{1}{x}\\right)$$ as $$x$$ approaches $$0$$. You can see that $$sin\\left(\\frac{1}{x}\\right)$$ oscillates ever more wildly between $$-1$$ and $$1$$ as $$x$$ approaches $$0$$.\\n##figure3.gif##",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "After examining the table of functional values, we can see that the y-values do not seem to approach any one single value. It appears the limit does not exist. Before drawing this conclusion, let\u2019s take a more systematic approach. Take the following sequence of x-values approaching 0: ; 2 over pi, ,  2 thirds pi, ,  2 fifths pi, ,  2 sevenths pi, ,  2 ninths pi, ,  2 over 11, pi, , ... The corresponding y-values are  1 ,  negative 1 ,  1 ,  negative 1 ,  1 ,  negative 1 , ... At this point we can indeed conclude that , l i m sub x,  \u2192  0  , sine of, open paren 1 over x, close paren;  does not exist. Thus, we would write , l i m sub x,  \u2192  0  , sine of, open paren 1 over x, close paren;  DNE. The graph of f(x) ; is equal to;  , sine of, open paren 1 over x, close paren;  is shown in the figure and gives a clearer picture of the behavior of , sine of, open paren 1 over x, close paren;  as  x  approaches  0 . You can see that , sine of, open paren 1 over x, close paren;  oscillates ever more wildly between  negative 1  and  1  as  x  approaches  0; .\\n##figure3.gif##",
+        "math": [
+            "\\frac{2}{\\pi}",
+            "\\frac{2}{3} \\pi",
+            "\\frac{2}{5} \\pi",
+            "\\frac{2}{7} \\pi",
+            "\\frac{2}{9} \\pi",
+            "\\frac{2}{11} \\pi",
+            "1",
+            "-1",
+            "1",
+            "-1",
+            "1",
+            "-1",
+            "lim_x",
+            "0",
+            "sin\\left(\\frac{1}{x}\\right)",
+            "lim_x",
+            "0",
+            "sin\\left(\\frac{1}{x}\\right)",
+            "=",
+            "sin\\left(\\frac{1}{x}\\right)",
+            "sin\\left(\\frac{1}{x}\\right)",
+            "x",
+            "0",
+            "sin\\left(\\frac{1}{x}\\right)",
+            "-1",
+            "1",
+            "x",
+            "0"
+        ]
     }
 ]

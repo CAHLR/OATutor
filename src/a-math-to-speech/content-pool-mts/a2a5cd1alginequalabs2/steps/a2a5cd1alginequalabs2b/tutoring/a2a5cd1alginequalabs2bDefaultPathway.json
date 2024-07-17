@@ -7,7 +7,13 @@
         "text": "Distance' is used to refer to the absolute value between two numbers a,b: $$|a-b|$$ since distance does not care about whether the value is positive or negative. For example, four units away from zero could either refer to $$4$$ or $$-4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Distance' is used to refer to the absolute value between two numbers a,b: ; the absolute value of a minus b, end absolute value;  since distance does not care about whether the value is positive or negative. For example, four units away from zero could either refer to  4  or  negative 4; .",
+        "math": [
+            "|a-b|",
+            "4",
+            "-4"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h2",
@@ -28,6 +34,11 @@
         "choices": [
             "$$|42-x|$$",
             "$$|42+x|$$"
+        ],
+        "speech": "What is the distance between  42  and  x;  written as an absolute value?",
+        "math": [
+            "42",
+            "x"
         ]
     },
     {
@@ -51,6 +62,10 @@
             ">",
             "$$\\leq$$",
             "$$\\geq$$"
+        ],
+        "speech": "What symbol does 'greater than' refer to?",
+        "math": [
+            ""
         ]
     },
     {
@@ -72,6 +87,11 @@
         "choices": [
             "$$|42-x|>17$$",
             "$$17>|42-x|$$"
+        ],
+        "speech": "What inequality represents 'the distance between  42  and  x,  is greater than 17'?",
+        "math": [
+            "42",
+            "x"
         ]
     },
     {
@@ -84,7 +104,16 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|>b$$, this is the same as $$a>b$$ OR $$a<-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is greater than, b , this is the same as  a, is greater than, b  OR  a, is less than negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|>b",
+            "a>b",
+            "a<-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h6",
@@ -107,6 +136,10 @@
             "$$42-x>17$$ or $$42-x<17$$",
             "$$42-x>17$$ or $$42-x>-17$$",
             "$$42-x>17$$"
+        ],
+        "speech": "What is ; the absolute value of 42 minus x, end absolute value; is greater than 17;  rewritten without the absolute value sign?",
+        "math": [
+            "|42-x|>17"
         ]
     },
     {
@@ -119,7 +152,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h8",
@@ -131,7 +168,13 @@
         "text": "Subtract $$17$$ from the left and add $$x$$ from the right to get $$42-17>x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract ; 17  from the left and add  x  from the right to get  42, minus 17; is greater than x; .",
+        "math": [
+            "17",
+            "x",
+            "42-17>x"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h9",
@@ -148,7 +191,11 @@
         "text": "What is $$42-17$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  42 minus 17; ?",
+        "math": [
+            "42-17"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h10",
@@ -160,7 +207,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h11",
@@ -172,7 +223,13 @@
         "text": "Add $$17$$ from the left and add $$x$$ from the right to get $$42+17<x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add ; 17  from the left and add  x  from the right to get  42, plus 17; is less than x; .",
+        "math": [
+            "17",
+            "x",
+            "42+17<x"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h12",
@@ -189,7 +246,11 @@
         "text": "What is $$42+17$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  42 plus 17; ?",
+        "math": [
+            "42+17"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs2b-h13",
@@ -201,6 +262,10 @@
         "text": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together.",
+        "math": [
+            ""
+        ]
     }
 ]

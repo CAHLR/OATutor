@@ -7,7 +7,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital15a-h2",
@@ -19,7 +27,11 @@
         "text": "$$\\frac{e^0-0-1}{0^2}=\\frac{1-0-1}{0}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "fraction, e to the 0 minus 0 minus 1, over, 0 squared, end fraction; is equal to; fraction, 1 minus 0 minus 1, over 0, end fraction; is equal to 0 over 0;",
+        "math": [
+            "\\frac{e^0-0-1}{0^2}=\\frac{1-0-1}{0}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital15a-h3",
@@ -31,7 +43,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(e^x-x-1\\right)}{\\frac{d}{dx} x^2}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches 0, of; fraction, fraction, d over, d x, end fraction; times; open paren, e to the x-th minus x minus 1; close paren, over, fraction, d over, d x, end fraction; x squared, end fraction;",
+        "math": [
+            "\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(e^x-x-1\\right)}{\\frac{d}{dx} x^2}"
+        ]
     },
     {
         "id": "a343428l'hopital15a-h4",
@@ -54,6 +70,10 @@
             "$$\\lim_{x\\to0} \\frac{x e^x-1}{2} x$$",
             "$$\\lim_{x\\to0} \\frac{e^x-1}{2} x$$",
             "$$\\lim_{x\\to0} \\frac{e^x-1}{2}$$"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -66,7 +86,11 @@
         "text": "$$0\\frac{e^0-1}{2}=\\frac{1-1}{0}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; 0, fraction, e to the 0 minus 1, over 2, end fraction; is equal to, fraction, 1 minus 1, over 0, end fraction; is equal to 0 over 0;",
+        "math": [
+            "0\\frac{e^0-1}{2}=\\frac{1-1}{0}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital15a-h6",
@@ -78,7 +102,11 @@
         "text": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital15a-h7",
@@ -90,7 +118,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0,d/dx((e**(x))-1))/d/dx(2*x)}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: /lim{x,0,d/dx((e**(x))-1))/d/dx(2*x)}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital15a-h8",
@@ -113,6 +145,10 @@
             "$$\\lim_{x\\to0} 2\\left(e^x\\right)$$",
             "$$\\lim_{x\\to0} \\frac{x e^x}{2}$$",
             "$$\\lim_{x\\to0} \\frac{x e^{x-1}}{2}$$"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -125,6 +161,10 @@
         "text": "$$\\frac{e^0}{2}=\\frac{1}{2}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, e to the 0, over 2, end fraction; is equal to 1 half;",
+        "math": [
+            "\\frac{e^0}{2}=\\frac{1}{2}"
+        ]
     }
 ]

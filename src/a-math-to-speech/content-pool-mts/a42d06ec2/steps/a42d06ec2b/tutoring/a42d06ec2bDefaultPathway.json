@@ -7,7 +7,13 @@
         "text": "If a is a coefficient, $$b$$ is the base of the logarithm, and $$x$$ is the input, the general form of a logarithmic function is $$a\\log_{b}{x}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "If a is a coefficient, ; b  is the base of the logarithm, and  x  is the input, the general form of a logarithmic function is , a the log base b of x; .",
+        "math": [
+            "b",
+            "x",
+            "a\\log_{b}{x}"
+        ]
     },
     {
         "id": "a42d06ec2b-h2",
@@ -19,7 +25,12 @@
         "text": "Plug in the given point $$(81,4)$$ into the general form. This gives you the equation $$4=a\\log_{b}{81}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Plug in the given point ; times, open paren 81 comma 4, close paren;  into the general form. This gives you the equation  4; is equal to, a the log base b of 81; .",
+        "math": [
+            "(81,4)",
+            "4=a\\log_{b}{81}"
+        ]
     },
     {
         "id": "a42d06ec2b-h3",
@@ -31,7 +42,11 @@
         "text": "Let $$a=1$$ for simplicity.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Let  a is equal to 1,  for simplicity.",
+        "math": [
+            "a=1"
+        ]
     },
     {
         "id": "a42d06ec2b-h4",
@@ -60,6 +75,12 @@
                 "oer": "https://OATutor.io",
                 "license": ""
             }
+        ],
+        "speech": "What is the value of , b  when  a, is equal to 1 ? (suppose  b;  is positive)",
+        "math": [
+            "b",
+            "a=1",
+            "b"
         ]
     },
     {
@@ -81,6 +102,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Does , f of x is equal to, the log base 3 of x;  satisfy the question's condition?",
+        "math": [
+            "f(x)=\\log_{3}\\left(x\\right)"
         ]
     }
 ]

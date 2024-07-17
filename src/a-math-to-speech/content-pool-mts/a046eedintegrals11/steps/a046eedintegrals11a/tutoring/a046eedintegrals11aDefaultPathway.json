@@ -8,7 +8,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Rewritting the expression will make it more convenient to use u-substitution. This can be rewritten as ; the integral of open paren, 2 x cubed, plus 3 x; close paren; times; open paren, x to the fourth plus 3 x squared; close paren to the negative 1; d x;"
+        "speech": "Rewritting the expression will make it more convenient to use u-substitution. This can be rewritten as ; the integral of open paren, 2 x cubed, plus 3 x; close paren; times; open paren, x to the fourth plus 3 x squared; close paren to the negative 1; d x;",
+        "math": [
+            "\\int \\left(2x^3+3x\\right) {\\left(x^4+3x^2\\right)}^{-1} \\,dx"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h2",
@@ -26,7 +29,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "What should we set u equal to?"
+        "speech": "What should we set u equal to?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a046eedintegrals11a-h3",
@@ -39,7 +45,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "As we set ; u is equal to; x to the fourth plus, 3 x squared,  then  d u; is equal to; open paren, 4 x cubed, plus 6 x; close paren; times d x; ."
+        "speech": "As we set ; u is equal to; x to the fourth plus, 3 x squared,  then  d u; is equal to; open paren, 4 x cubed, plus 6 x; close paren; times d x; .",
+        "math": [
+            "u=x^4+3x^2",
+            "du=\\left(4x^3+6x\\right) dx"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h4",
@@ -52,7 +62,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Alter du by factoring out the ; 2  to obtain  d u, is equal to; 2 times; open paren, 2 x cubed, plus 3 x; close paren; times d x; ."
+        "speech": "Alter du by factoring out the ; 2  to obtain  d u, is equal to; 2 times; open paren, 2 x cubed, plus 3 x; close paren; times d x; .",
+        "math": [
+            "2",
+            "du=2\\left(2x^3+3x\\right) dx"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h5",
@@ -65,7 +79,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Dividing both side by ; 2  to obtain , fraction, d u, over 2, end fraction; is equal to; open paren, 2 x cubed, plus 3 x; close paren; times d x;"
+        "speech": "Dividing both side by ; 2  to obtain , fraction, d u, over 2, end fraction; is equal to; open paren, 2 x cubed, plus 3 x; close paren; times d x;",
+        "math": [
+            "2",
+            "\\frac{du}{2}=\\left(2x^3+3x\\right) dx"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h6",
@@ -78,7 +96,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Rewite an integrand in u: ; open paren 1 divided by 2, close paren; times; the integral of u raised to the open paren negative 1 close paren power; d u;"
+        "speech": "Rewite an integrand in u: ; open paren 1 divided by 2, close paren; times; the integral of u raised to the open paren negative 1 close paren power; d u;",
+        "math": [
+            "(1/2)*\\int u^{\\left(-1\\right)} \\,du"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h7",
@@ -91,7 +112,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; open paren 1 divided by 2, close paren; times; the integral of u raised to the open paren negative 1 close paren power; d u; is equal to; 1 half l n the absolute value of u; plus  cap c;"
+        "speech": "; open paren 1 divided by 2, close paren; times; the integral of u raised to the open paren negative 1 close paren power; d u; is equal to; 1 half l n the absolute value of u; plus  cap c;",
+        "math": [
+            "(1/2)*\\int u^{\\left(-1\\right)} \\,du=\\frac{1}{2} ln|u|+C"
+        ]
     },
     {
         "id": "a046eedintegrals11a-h8",
@@ -104,6 +128,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; 1 half l n; the absolute value of x to the fourth plus 3 x squared; vertical line positive  cap c;"
+        "speech": "; 1 half l n; the absolute value of x to the fourth plus 3 x squared; vertical line positive  cap c;",
+        "math": [
+            "\\frac{1}{2} ln|x^4+3x^2|+C"
+        ]
     }
 ]

@@ -7,7 +7,12 @@
         "text": "If A and B are independent, then $$P(A|B)=P(A)$$ and P(A AND $$B)=P(A)P(B)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If A and B are independent, then ;  cap p, open paren,  cap a vertical line  cap b, close paren; is equal to,  cap p of  cap a,  and P(A AND   cap b; close paren; is equal to,  cap p of  cap a,  cap p of  cap b; .",
+        "math": [
+            "P(A|B)=P(A)",
+            "B)=P(A)P(B)"
+        ]
     },
     {
         "id": "a38bd54basicrules2c-h2",
@@ -28,6 +33,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Are A and B independent events?",
+        "math": [
+            ""
         ]
     },
     {
@@ -45,7 +54,11 @@
         "text": "What is P(B AND A), solved for above?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is P(B AND A), solved for above?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a38bd54basicrules2c-h4",
@@ -62,7 +75,11 @@
         "text": "What is $$P\\left(A\\right) P\\left(B\\right)$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is ,  cap p of  cap a,  cap p of  cap b; ?",
+        "math": [
+            "P\\left(A\\right) P\\left(B\\right)"
+        ]
     },
     {
         "id": "a38bd54basicrules2c-h5",
@@ -83,6 +100,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is P(A AND B) equal to ,  cap p of  cap a,  cap p of  cap b; ? If yes, then A and B are independent: if no, then A and B are not independent.",
+        "math": [
+            "P\\left(A\\right) P\\left(B\\right)"
         ]
     }
 ]

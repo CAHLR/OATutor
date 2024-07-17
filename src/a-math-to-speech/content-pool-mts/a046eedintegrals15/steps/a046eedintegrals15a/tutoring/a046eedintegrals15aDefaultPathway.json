@@ -8,7 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Set ; u is equal to, l n x,  then  d u; is equal to, 1 over x, d x; ."
+        "speech": "Set ; u is equal to, l n x,  then  d u; is equal to, 1 over x, d x; .",
+        "math": [
+            "u=lnx",
+            "du=\\frac{1}{x} dx"
+        ]
     },
     {
         "id": "a046eedintegrals15a-h2",
@@ -21,7 +25,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral of u raised to the open paren negative 2 close paren power; d u;"
+        "speech": "; the integral of u raised to the open paren negative 2 close paren power; d u;",
+        "math": [
+            "\\int u^{\\left(-2\\right)} \\,du"
+        ]
     },
     {
         "id": "a046eedintegrals15a-h3",
@@ -34,7 +41,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral of u raised to the open paren negative 2 close paren power; d u; is equal to; negative open paren, u raised to the open paren negative 1 close paren power; close paren; plus  cap c;"
+        "speech": "; the integral of u raised to the open paren negative 2 close paren power; d u; is equal to; negative open paren, u raised to the open paren negative 1 close paren power; close paren; plus  cap c;",
+        "math": [
+            "\\int u^{\\left(-2\\right)} \\,du=-\\left(u^{\\left(-1\\right)}\\right)+C"
+        ]
     },
     {
         "id": "a046eedintegrals15a-h4",
@@ -47,6 +57,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": ", fraction, negative 1, over, l n, end fraction; end absolute value; x; vertical line positive  cap c;"
+        "speech": ", fraction, negative 1, over, l n, end fraction; end absolute value; x; vertical line positive  cap c;",
+        "math": [
+            "\\frac{-1}{ln}|x|+C"
+        ]
     }
 ]

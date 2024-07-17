@@ -7,7 +7,16 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|<b$$, this is the same as $$a<b$$ AND $$a>-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is less than b , this is the same as  a, is less than, b  AND  a, is greater than negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|<b",
+            "a<b",
+            "a>-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h2",
@@ -30,6 +39,10 @@
             "$$2-x<10$$ and $$2-x<-10$$",
             "$$2-x<10$$ and $$2-x>10$$",
             "$$2-x<10$$"
+        ],
+        "speech": "What is ; the absolute value of 2 minus x, end absolute value; is less than 10;  rewritten without the absolute value sign?",
+        "math": [
+            "|2-x|<10"
         ]
     },
     {
@@ -42,7 +55,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h4",
@@ -54,7 +71,13 @@
         "text": "Add $$x$$ from the left and subtract $$10$$ from the right to get $$2-10<x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add ; x  from the left and subtract  10  from the right to get  2, minus 10; is less than x; .",
+        "math": [
+            "x",
+            "10",
+            "2-10<x"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h5",
@@ -71,7 +94,11 @@
         "text": "What is $$2-10$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  2 minus 10; ?",
+        "math": [
+            "2-10"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h6",
@@ -83,7 +110,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h7",
@@ -95,7 +126,13 @@
         "text": "Add $$x$$ from the left and add $$10$$ from the right to get $$2+10>x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add ; x  from the left and add  10  from the right to get  2, plus 10; is greater than x; .",
+        "math": [
+            "x",
+            "10",
+            "2+10>x"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h8",
@@ -112,7 +149,11 @@
         "text": "What is $$2+10$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  2 plus 10; ?",
+        "math": [
+            "2+10"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h9",
@@ -124,7 +165,11 @@
         "text": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together: $$-8<x<12$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together: ; minus 8; is less than x is less than 12; .",
+        "math": [
+            "-8<x<12"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h10",
@@ -136,7 +181,20 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|$$ $$\\geq$$ $$b$$, this is the same as a $$\\geq$$ $$b$$ OR a $$\\leq$$ $$-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a;  ; is greater than or equal to,   b , this is the same as a , is greater than or equal to;   b  OR a , is less than or equal to,   negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|",
+            "\\geq",
+            "b",
+            "\\geq",
+            "b",
+            "\\leq",
+            "-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h11",
@@ -159,6 +217,12 @@
             "$$x+4$$ $$\\geq$$ $$5$$ or $$x+4$$ $$\\leq$$ $$5$$",
             "$$x+4$$ $$\\geq$$ $$5$$ or $$x+4$$ $$\\geq$$ $$-5$$",
             "$$x+4$$ $$\\geq$$ $$5$$"
+        ],
+        "speech": "What is ; the absolute value of x plus 4, end absolute value;  ; is greater than or equal to,   5;  rewritten without the absolute value sign?",
+        "math": [
+            "|x+4|",
+            "\\geq",
+            "5"
         ]
     },
     {
@@ -171,7 +235,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h13",
@@ -183,7 +251,14 @@
         "text": "Subtract $$4$$ from the left to get $$x$$ $$\\geq$$ $$5-4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract ; 4  from the left to get  x  ; is greater than or equal to,   5 minus 4; .",
+        "math": [
+            "4",
+            "x",
+            "\\geq",
+            "5-4"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h14",
@@ -200,7 +275,11 @@
         "text": "What is $$5-4$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  5 minus 4; ?",
+        "math": [
+            "5-4"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h15",
@@ -212,7 +291,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h16",
@@ -224,7 +307,14 @@
         "text": "Subtract $$4$$ from the left to get $$x$$ $$\\leq$$ $$-5-4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract ; 4  from the left to get  x  ; is less than or equal to,   negative 5, minus 4; .",
+        "math": [
+            "4",
+            "x",
+            "\\leq",
+            "-5-4"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h17",
@@ -241,7 +331,11 @@
         "text": "What is $$-5-4$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is ; minus 5 minus 4; ?",
+        "math": [
+            "-5-4"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h18",
@@ -253,7 +347,16 @@
         "text": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together: $$x$$ $$\\geq$$ $$1$$ or $$x$$ $$\\leq$$ $$-9$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together: ; x  , is greater than or equal to;   1  or  x  ; is less than or equal to,   negative 9;",
+        "math": [
+            "x",
+            "\\geq",
+            "1",
+            "x",
+            "\\leq",
+            "-9"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h19",
@@ -265,7 +368,17 @@
         "text": "Since the two inequalities are separated by an AND statement, the result will contain the intersection or overlap of $$-8<x<12$$ AND $$x$$ $$\\leq$$ $$-9$$ or $$x$$ $$\\geq$$ $$1$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the two inequalities are separated by an AND statement, the result will contain the intersection or overlap of ; minus 8; is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to,   1;",
+        "math": [
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq",
+            "1"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h20",
@@ -277,7 +390,17 @@
         "text": "The inequality $$-8<x<12$$ AND $$x$$ $$\\leq$$ $$-9$$ or $$x$$ $$\\geq$$ $$1$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The inequality ; minus 8; is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to,   1;  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "math": [
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq",
+            "1"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h21",
@@ -300,6 +423,15 @@
             "$$-8$$",
             "$$-9$$",
             "$$1$$"
+        ],
+        "speech": "What is the lower bound that overlaps both ; minus 8; is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to;  1?",
+        "math": [
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq"
         ]
     },
     {
@@ -323,6 +455,15 @@
             "$$-8$$",
             "$$12$$",
             "$$1$$"
+        ],
+        "speech": "What is the upper bound that overlaps both ; negative 8 is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to;  1?",
+        "math": [
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq"
         ]
     },
     {
@@ -336,7 +477,11 @@
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs101a-h24",
@@ -357,6 +502,16 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the lower bound ; 1  included as a valid value of 'x' in  negative 8, is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to;  1?",
+        "math": [
+            "1",
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq"
         ]
     },
     {
@@ -378,6 +533,16 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the upper bound ; 12  included as a valid value of 'x' in  negative 8, is less than x is less than; 12  AND  x  ; is less than or equal to;   negative 9  or  x  ; is greater than or equal to;  1?",
+        "math": [
+            "12",
+            "-8<x<12",
+            "x",
+            "\\leq",
+            "-9",
+            "x",
+            "\\geq"
         ]
     }
 ]

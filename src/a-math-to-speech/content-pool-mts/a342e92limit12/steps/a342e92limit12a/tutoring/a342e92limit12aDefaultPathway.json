@@ -7,7 +7,11 @@
         "text": "Use the table to guide your answer.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Use the table to guide your answer.\\n##figure1.gif##",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a342e92limit12a-h2",
@@ -45,6 +49,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "Is  n  an even or odd integer?",
+        "math": [
+            "n"
         ]
     },
     {
@@ -67,6 +75,10 @@
             "$$-\\infty$$",
             "$$+\\infty$$",
             "DNE"
+        ],
+        "speech": "Given that  n  is a positive even integer, what is the limit?",
+        "math": [
+            "n"
         ]
     },
     {
@@ -79,6 +91,18 @@
         "text": "From the function $$\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}$$, we know that $$n$$ $$=$$ $$4$$ in $$\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}$$. According to the Infinite Limits from Positive Integers Theorem, if $$n$$ is a positive even integer, then $$\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}=+\\infty$$. Since $$4$$ is a positive even integer, this means that $$\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}=+\\infty$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "From the function ; the limit as x \toa, of; fraction, 1 over, open paren x minus a, close paren to the n-th, end fraction; , we know that  n  ; is equal to;   4  in ; the limit as x approaches negative 3, of; fraction, 1 over, open paren x plus 3, close paren to the fourth, end fraction; . According to the Infinite Limits from Positive Integers Theorem, if  n  is a positive even integer, then ; the limit as x \toa, of; fraction, 1 over, open paren x minus a, close paren to the n-th, end fraction; is equal to; positive infinity . Since  4  is a positive even integer, this means that ; the limit as x approaches negative 3, of; fraction, 1 over, open paren x plus 3, close paren to the fourth, end fraction; is equal to positive infinity; .",
+        "math": [
+            "\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}",
+            "n",
+            "=",
+            "4",
+            "\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}",
+            "n",
+            "\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}=+\\infty",
+            "4",
+            "\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}=+\\infty"
+        ]
     }
 ]

@@ -7,7 +7,15 @@
         "text": "The sum, $$S_n$$, of the first $$n$$ terms of a geometric sequence is $$S_n=\\frac{a_1 \\left(1-r^n\\right)}{1-r}$$. We note that the form that is given is sum{i\\=1}{15}{2*(3)**i} and this is written in the form sum{i\\=1}{k}{a*(r)**i} where we're summing the first k terms where $$r$$ is the common ratio and $$a r$$ is the starting value.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The sum, ;  cap s sub n , of the first  n  terms of a geometric sequence is   cap s sub n; is equal to; fraction, a sub 1, open paren, 1 minus r to the n-th, close paren, over, 1 minus r, end fraction; . We note that the form that is given is sum{i\\=1}{15}{2*(3)**i} and this is written in the form sum{i\\=1}{k}{a*(r)**i} where we're summing the first k terms where  r  is the common ratio and  a r;  is the starting value.",
+        "math": [
+            "S_n",
+            "n",
+            "S_n=\\frac{a_1 \\left(1-r^n\\right)}{1-r}",
+            "r",
+            "a r"
+        ]
     },
     {
         "id": "a18d102geometric16a-h2",
@@ -41,6 +49,12 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What is ; a sub 1 ? As in, if you plug in  i, is equal to, 1 , what is , 2 times 3 to the i-th; ?",
+        "math": [
+            "a_1",
+            "i=1",
+            "2\\times3^i"
         ]
     },
     {
@@ -58,7 +72,11 @@
         "text": "What is $$r$$? What is the common ratio? This is usually the base of the exponent in the summation.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  r ? What is the common ratio? This is usually the base of the exponent in the summation.",
+        "math": [
+            "r"
+        ]
     },
     {
         "id": "a18d102geometric16a-h4",
@@ -75,7 +93,11 @@
         "text": "What is $$n$$? As in, how many values are in the summation?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  n ? As in, how many values are in the summation?",
+        "math": [
+            "n"
+        ]
     },
     {
         "id": "a18d102geometric16a-h5",
@@ -109,6 +131,11 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "Plug in the values into the equation for ,  cap s sub n  and solve. What is the sum of the first  15,  terms of the geometric sequence?",
+        "math": [
+            "S_n",
+            "15"
         ]
     }
 ]

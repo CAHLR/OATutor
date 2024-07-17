@@ -7,7 +7,11 @@
         "text": "Find $$P(X=10)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find ;  cap p, open paren,  cap x is equal to 10, close paren; .",
+        "math": [
+            "P(X=10)"
+        ]
     },
     {
         "id": "a29c32b4.4pancrea1a-h2",
@@ -19,7 +23,13 @@
         "text": "Remember that $$X\\pm G p$$ can be read as \"X is a random variable with a geometric distribution.\" The parameter is p; $$p$$ $$=$$ the probability of a\\nsuccess for each trial.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that ;  cap x plus or minus,  cap g p  can be read as \"X is a random variable with a geometric distribution.\" The parameter is p:  p  ; is equal to;  the probability of a\\nsuccess for each trial.",
+        "math": [
+            "X\\pm G p",
+            "p",
+            "="
+        ]
     },
     {
         "id": "a29c32b4.4pancrea1a-h3",
@@ -42,6 +52,11 @@
             "$$10$$",
             "$$78$$",
             "$$\\frac{1}{78}$$"
+        ],
+        "speech": "To find ;  cap p, open paren,  cap x is equal to 10, close paren; , you can use a calculator function ; geometpdf; open paren; 0.0128 , _) to find the probability.",
+        "math": [
+            "P(X=10)",
+            "geometpdf(0.0128"
         ]
     }
 ]

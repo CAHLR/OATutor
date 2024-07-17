@@ -7,7 +7,16 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|<b$$, this is the same as $$a<b$$ AND $$a>-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is less than b , this is the same as  a, is less than, b  AND  a, is greater than negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|<b",
+            "a<b",
+            "a>-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h2",
@@ -30,6 +39,10 @@
             "$$x-A<B$$ and $$x-A<-B$$",
             "$$x-A<B$$ and $$x-A>B$$",
             "$$x-A<B$$"
+        ],
+        "speech": "What is ; the absolute value of x minus  cap a, end absolute value; is less than  cap b;  rewritten without the absolute value sign?",
+        "math": [
+            "|x-A|<B"
         ]
     },
     {
@@ -42,7 +55,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h4",
@@ -54,7 +71,11 @@
         "text": "Add A from the left to get $$x<A+B$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add A from the left to get , x is less than,  cap a plus  cap b; .",
+        "math": [
+            "x<A+B"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h5",
@@ -66,7 +87,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h6",
@@ -78,7 +103,11 @@
         "text": "Add A from the left to get $$x>A-B$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add A from the left to get , x is greater than,  cap a minus  cap b; .",
+        "math": [
+            "x>A-B"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h7",
@@ -90,7 +119,11 @@
         "text": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h8",
@@ -113,6 +146,11 @@
             "$$A+B$$",
             "A",
             "B"
+        ],
+        "speech": "What is the lower bound of the inequality ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "math": [
+            "x<A+B",
+            "x>A-B"
         ]
     },
     {
@@ -136,6 +174,11 @@
             "$$A+B$$",
             "A",
             "B"
+        ],
+        "speech": "What is the upper bound of the inequality ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "math": [
+            "x<A+B",
+            "x>A-B"
         ]
     },
     {
@@ -149,7 +192,11 @@
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h11",
@@ -170,6 +217,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the lower bound A-B included as a valid value of 'x' in ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "math": [
+            "x<A+B",
+            "x>A-B"
         ]
     },
     {
@@ -191,6 +243,12 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the upper bound ;  cap a plus  cap b  included as a valid value of 'x' in  x; is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "math": [
+            "A+B",
+            "x<A+B",
+            "x>A-B"
         ]
     },
     {
@@ -204,7 +262,14 @@
         "text": "Since $$x$$ is contained in $$(-3,9)$$ if and only if $$x$$ is in $$(A-B,A+B)$$, A and B can be found by solving the system of linear equations.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since ; x  is contained in , open paren, negative 3 comma 9, close paren;  if and only if  x  is in ; open paren;  cap a minus  cap b, comma  cap a plus  cap b; close paren; , A and B can be found by solving the system of linear equations.",
+        "math": [
+            "x",
+            "(-3,9)",
+            "x",
+            "(A-B,A+B)"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h14",
@@ -225,6 +290,10 @@
         "choices": [
             "$$A-B=-3$$ and $$A+B=9$$",
             "$$A-B=9$$ and $$A+B=-3$$"
+        ],
+        "speech": "What system of linear equations can be extrapolated from ; times, open paren, negative 3 comma 9, close paren;  and (A-B, A+B)?",
+        "math": [
+            "(-3,9)"
         ]
     },
     {
@@ -237,7 +306,11 @@
         "text": "The two equations can be added together to eliminate B from the equation to solve for A.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The two equations can be added together to eliminate B from the equation to solve for A.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h16",
@@ -260,6 +333,11 @@
             "$$A=6$$",
             "$$2A=12$$",
             "$$A=12$$"
+        ],
+        "speech": "What equation is left when you add ;  cap a minus  cap b, is equal to, negative 3  and   cap a, plus  cap b; is equal to 9;  together?",
+        "math": [
+            "A-B=-3",
+            "A+B=9"
         ]
     },
     {
@@ -272,7 +350,12 @@
         "text": "Divide $$2$$ from both sides of $$2A=6$$ to isolate 'x'.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Divide , 2  from both sides of  2  cap a; is equal to 6;  to isolate 'x'.",
+        "math": [
+            "2",
+            "2A=6"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h18",
@@ -289,7 +372,11 @@
         "text": "What is $$\\frac{6}{2}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  6 halves ?",
+        "math": [
+            "\\frac{6}{2}"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h19",
@@ -301,7 +388,13 @@
         "text": "Since $$A=3$$, substitute A into $$A+B=9$$ and solve for B: $$3+B=9$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since ;  cap a is equal to, 3 , substitute A into   cap a, plus  cap b; is equal to, 9  and solve for B:  3, plus  cap b; is equal to 9;",
+        "math": [
+            "A=3",
+            "A+B=9",
+            "3+B=9"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h20",
@@ -313,7 +406,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h21",
@@ -325,7 +422,12 @@
         "text": "Subtract $$3$$ from the left to get $$B=9-3$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract ; 3  from the left to get   cap b, is equal to 9 minus 3; .",
+        "math": [
+            "3",
+            "B=9-3"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h22",
@@ -342,7 +444,11 @@
         "text": "What is $$9-3$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  9 minus 3, ?",
+        "math": [
+            "9-3"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h23",
@@ -354,7 +460,18 @@
         "text": "b' had an assumption that $$b$$ $$\\geq$$ $$0$$ such that $$|a|<b$$ is the same as $$a<b$$ AND $$a>-b$$. Since B is equivalent to 'b', B $$\\geq$$ $$0$$ for the answer to be correct.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "b' had an assumption that ; b  , is greater than or equal to;   0  such that  the absolute value of a; is less than b  is the same as  a, is less than; b  AND  a, is greater than; negative b . Since B is equivalent to 'b', B , is greater than or equal to,   0;  for the answer to be correct.",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|<b",
+            "a<b",
+            "a>-b",
+            "\\geq",
+            "0"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs100a-h24",
@@ -375,6 +492,12 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is B ; is greater than or equal to;   0  when   cap b, is equal to 6; ?",
+        "math": [
+            "\\geq",
+            "0",
+            "B=6"
         ]
     }
 ]

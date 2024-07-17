@@ -7,7 +7,13 @@
         "text": "Let $$y=x^{\\frac{1}{x}}$$. Using one-to-one property of logarithms, we obtain $$ln(y)=\\ln(x^{\\frac{1}{x}})$$. According to the Power Properties of Logarithms, the expression can be written as $$ln(y)=\\frac{1}{x} \\ln(x)=\\frac{\\ln(x)}{x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Let ; y is equal to; x raised to the 1 over x, power; . Using one-to-one property of logarithms, we obtain  l n of y; is equal to; the natural log of, open paren, x raised to the 1 over x, power; close paren; . According to the Power Properties of Logarithms, the expression can be written as  l n of y; is equal to, 1 over x, the natural log of, x; is equal to; fraction, the natural log of, x, over x, end fraction;",
+        "math": [
+            "y=x^{\\frac{1}{x}}",
+            "ln(y)=\\ln(x^{\\frac{1}{x}})",
+            "ln(y)=\\frac{1}{x} \\ln(x)=\\frac{\\ln(x)}{x}"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h2",
@@ -19,7 +25,11 @@
         "text": "If we immediately evaluate the limit of the given function, the result would be $${\\infty}^0$$ which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "If we immediately evaluate the limit of the given function, the result would be  infinity to the 0  which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "{\\infty}^0"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h3",
@@ -31,7 +41,11 @@
         "text": "We set up a new limit based on the function we just created $$\\lim_{x\\to\\infty} \\frac{\\ln(x)}{x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "We set up a new limit based on the function we just created ; the limit as x approaches infinity, of, fraction, the natural log of, x, over x, end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\ln(x)}{x}"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h4",
@@ -43,7 +57,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h5",
@@ -76,6 +98,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "Does direct substitution of this limit yield any required indeterminate form?",
+        "math": [
+            ""
         ]
     },
     {
@@ -90,7 +116,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} \\ln(x)}{\\frac{d}{dx} x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches infinity, of; fraction, fraction, d over, d x, end fraction; the natural log of, x, over, fraction, d over, d x, end fraction; x, end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} \\ln(x)}{\\frac{d}{dx} x}"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h7",
@@ -113,6 +143,10 @@
             "$$\\lim_{x\\to\\infty} x$$",
             "$$/l\\lim_{x\\to\\infty} \\frac{1}{x^2}$$",
             "/lim{x,inf,x**2)}"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -125,7 +159,11 @@
         "text": "$$\\frac{\\frac{1}{\\infty}}{1}=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, fraction, 1 over infinity, end fraction; over 1, end fraction; is equal to 0;",
+        "math": [
+            "\\frac{\\frac{1}{\\infty}}{1}=0"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h9",
@@ -149,6 +187,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "; the limit as x approaches infinity, of, fraction, the natural log of, x, over x, end fraction; is equal to; the limit as x approaches infinity, of l; n of y; is equal to 0;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\ln(x)}{x}=\\lim_{x\\to\\infty} ln(y)=0"
         ]
     },
     {
@@ -161,7 +203,11 @@
         "text": "$$\\lim_{x\\to\\infty} ln(y)=ln(\\lim_{x\\to\\infty} (y))=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; the limit as x approaches infinity, of l; n of y; is equal to; l n; open paren, the limit as x approaches infinity, of y; close paren; is equal to 0;",
+        "math": [
+            "\\lim_{x\\to\\infty} ln(y)=ln(\\lim_{x\\to\\infty} (y))=0"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h11",
@@ -173,7 +219,11 @@
         "text": "$$ln(\\lim_{x\\to\\infty} (y))=\\lim_{x\\to\\infty} (y)=e^0=1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; l n; open paren, the limit as x approaches infinity, of y; close paren; is equal to, the limit as x approaches infinity, of y; is equal to e to the 0 is equal to 1;",
+        "math": [
+            "ln(\\lim_{x\\to\\infty} (y))=\\lim_{x\\to\\infty} (y)=e^0=1"
+        ]
     },
     {
         "id": "a343428l'hopital13a-h12",
@@ -186,6 +236,10 @@
         "text": "$$\\lim_{x\\to\\infty} y=\\lim_{x\\to\\infty} x^{\\frac{1}{x}}=1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; the limit as x approaches infinity, of y; is equal to; the limit as x approaches infinity, of x raised to the 1 over x, power; is equal to 1;",
+        "math": [
+            "\\lim_{x\\to\\infty} y=\\lim_{x\\to\\infty} x^{\\frac{1}{x}}=1"
+        ]
     }
 ]

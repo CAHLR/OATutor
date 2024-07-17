@@ -16,6 +16,11 @@
         "choices": [
             "yes",
             "no"
+        ],
+        "speech": "Is the exponent of the leading term, , x to the fourth , double the exponent of the second term,  x squared; ?",
+        "math": [
+            "x^4",
+            "x^2"
         ]
     },
     {
@@ -33,7 +38,11 @@
         "text": "Since the equation fits the criteria for subsitution, let $$u=x^2$$. What is the expression on the left side in terms of u?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the equation fits the criteria for subsitution, let , u is equal to x squared; . What is the expression on the left side in terms of u?",
+        "math": [
+            "u=x^2"
+        ]
     },
     {
         "id": "a1268beother23a-h3",
@@ -56,6 +65,10 @@
             "$$u=-9, 1$$",
             "$$u=9, 1$$",
             "$$u=-9, -1$$"
+        ],
+        "speech": "",
+        "math": [
+            ""
         ]
     },
     {
@@ -68,7 +81,12 @@
         "text": "The next step if to subsitute u back into $$x^2$$, and then solve for $$x$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The next step if to subsitute u back into , x squared , and then solve for  x, .",
+        "math": [
+            "x^2",
+            "x"
+        ]
     },
     {
         "id": "a1268beother23a-h5",
@@ -91,6 +109,11 @@
             "$$x=3$$",
             "$$x=-3$$",
             "$$x=9$$"
+        ],
+        "speech": ", u is equal to 9 ,  x, is equal to; ?",
+        "math": [
+            "u=9",
+            "x="
         ]
     },
     {
@@ -103,6 +126,11 @@
         "text": "$$u=-1$$, $$x=\\sqrt{-1}=i$$, which is not a real number. So we ignore it here.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "; u is equal to, negative 1 ,  x, is equal to, the square root of negative 1 end root; is equal to i; , which is not a real number. So we ignore it here.",
+        "math": [
+            "u=-1",
+            "x=\\sqrt{-1}=i"
+        ]
     }
 ]

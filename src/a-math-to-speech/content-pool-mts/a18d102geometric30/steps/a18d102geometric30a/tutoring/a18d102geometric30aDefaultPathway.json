@@ -7,7 +7,15 @@
         "text": "We can rewrite $$0.5$$ as $$0.5555..$$. with repeating 5s forever. We can represent this summation as $$0.5+0.05+0.005+0.0005+...$$, which is an infinite sum. Now, we use this infinite geometric series and find $$a_1$$ and $$r$$ to find the fraction.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can rewrite , 0.5  as  0.5555; dot; dot; . with repeating 5s forever. We can represent this summation as  0.5; plus 0.05 plus 0.005 plus 0.0005 plus, dot dot dot , which is an infinite sum. Now, we use this infinite geometric series and find  a sub 1  and  r;  to find the fraction.",
+        "math": [
+            "0.5",
+            "0.5555..",
+            "0.5+0.05+0.005+0.0005+...",
+            "a_1",
+            "r"
+        ]
     },
     {
         "id": "a18d102geometric30a-h2",
@@ -101,6 +109,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What is the common ratio between the consecutive terms?",
+        "math": [
+            ""
         ]
     },
     {
@@ -118,7 +130,11 @@
         "text": "What is $$a_1$$? What is the first term in the series?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a sub 1 ? What is the first term in the series?",
+        "math": [
+            "a_1"
+        ]
     },
     {
         "id": "a18d102geometric30a-h4",
@@ -130,7 +146,13 @@
         "text": "The sum, S, of an infinite geometric series with starting term $$a_1$$ and common ratio $$r$$ given |r|<1 is $$S=\\frac{a_1}{1-r}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The sum, S, of an infinite geometric series with starting term ; a sub 1  and common ratio  r  given |r|<1 is   cap s; is equal to; fraction, a sub 1, over, 1 minus r, end fraction; .",
+        "math": [
+            "a_1",
+            "r",
+            "S=\\frac{a_1}{1-r}"
+        ]
     },
     {
         "id": "a18d102geometric30a-h5",
@@ -151,6 +173,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is |r|<1? We can only find a sum if |r|<1.",
+        "math": [
+            ""
         ]
     },
     {
@@ -185,6 +211,11 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "Substitute  a sub 1  and  r;  into the summation formula. What is the sum? Leave this in fraction form.",
+        "math": [
+            "a_1",
+            "r"
         ]
     }
 ]

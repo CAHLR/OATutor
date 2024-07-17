@@ -7,7 +7,13 @@
         "text": "For an infinite geometric series whose first term is $$a_1$$ and common ratio $$r$$, if |r|<1, then the sum is $$S=\\frac{a_1}{1-r}$$. If |r|>1, then the infinite geometric series does not have a sum and diverges.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For an infinite geometric series whose first term is ; a sub 1  and common ratio  r , if |r|<1, then the sum is   cap s; is equal to; fraction, a sub 1, over, 1 minus r, end fraction; . If |r|>1, then the infinite geometric series does not have a sum and diverges.",
+        "math": [
+            "a_1",
+            "r",
+            "S=\\frac{a_1}{1-r}"
+        ]
     },
     {
         "id": "a18d102geometric20a-h2",
@@ -24,7 +30,11 @@
         "text": "What is $$a_1$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a sub 1 ?",
+        "math": [
+            "a_1"
+        ]
     },
     {
         "id": "a18d102geometric20a-h3",
@@ -41,7 +51,14 @@
         "text": "What is $$r$$? What is $$\\frac{24}{48}$$? What is $$\\frac{12}{24}$$? What is $$\\frac{6}{12}$$? These should all be the same number.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is ; r ? What is  24 over 48, ? What is  12 over 24, ? What is  6 over 12; ? These should all be the same number.",
+        "math": [
+            "r",
+            "\\frac{24}{48}",
+            "\\frac{12}{24}",
+            "\\frac{6}{12}"
+        ]
     },
     {
         "id": "a18d102geometric20a-h4",
@@ -62,6 +79,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is |r|<1? We can only find a sum if |r|<1.",
+        "math": [
+            ""
         ]
     },
     {
@@ -96,6 +117,11 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "Substitute  a sub 1  and  r,  into the summation formula. What is the sum?",
+        "math": [
+            "a_1",
+            "r"
         ]
     }
 ]

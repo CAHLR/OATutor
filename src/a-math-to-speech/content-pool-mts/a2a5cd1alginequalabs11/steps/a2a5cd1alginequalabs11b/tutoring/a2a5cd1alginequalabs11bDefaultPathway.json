@@ -7,7 +7,16 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|>b$$, this is the same as $$a>b$$ OR $$a<-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is greater than, b , this is the same as  a, is greater than, b  OR  a, is less than negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|>b",
+            "a>b",
+            "a<-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h2",
@@ -29,6 +38,10 @@
             "$$x-8>0$$ or $$x-8<0$$",
             "$$x-8>0$$",
             "$$x-8<0$$"
+        ],
+        "speech": "What is ; the absolute value of x minus 8, end absolute value; is greater than 0;  rewritten without the absolute value sign?",
+        "math": [
+            "|x-8|>0"
         ]
     },
     {
@@ -41,7 +54,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h4",
@@ -53,7 +70,12 @@
         "text": "Add $$8$$ from the left to get $$x>0+8$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add , 8  from the left to get  x, is greater than, 0 plus 8; .",
+        "math": [
+            "8",
+            "x>0+8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h5",
@@ -70,7 +92,11 @@
         "text": "What is $$0+8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  0 plus 8; ?",
+        "math": [
+            "0+8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h6",
@@ -82,7 +108,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h7",
@@ -94,7 +124,12 @@
         "text": "Add $$8$$ from the left to get $$x<0+8$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Add , 8  from the left to get  x, is less than 0 plus 8; .",
+        "math": [
+            "8",
+            "x<0+8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h8",
@@ -111,7 +146,11 @@
         "text": "What is $$0+8$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  0 plus 8; ?",
+        "math": [
+            "0+8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h9",
@@ -123,7 +162,11 @@
         "text": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is greater than a value, the value outside of the distance are considered valid, ORing the two inequalities together.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h10",
@@ -135,7 +178,11 @@
         "text": "Since the two inequalities are separated by an OR statement, they will both appear in the final result.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the two inequalities are separated by an OR statement, they will both appear in the final result.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h11",
@@ -147,7 +194,11 @@
         "text": "The inequality $$x>8$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The inequality , x is greater than 8,  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "math": [
+            "x>8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h12",
@@ -168,6 +219,10 @@
         "choices": [
             "$$-\\infty$$",
             "$$8$$"
+        ],
+        "speech": "What is the lower bound of the inequality , x is greater than 8, ?",
+        "math": [
+            "x>8"
         ]
     },
     {
@@ -189,6 +244,10 @@
         "choices": [
             "$$\\infty$$",
             "$$8$$"
+        ],
+        "speech": "What is the upper bound of the inequality , x is greater than 8; ?",
+        "math": [
+            "x>8"
         ]
     },
     {
@@ -202,7 +261,11 @@
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h15",
@@ -223,6 +286,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the lower bound , 8  included as a valid value of 'x' in  x, is greater than 8; ?",
+        "math": [
+            "8",
+            "x>8"
         ]
     },
     {
@@ -256,6 +324,11 @@
                 "oer": "https://OATutor.io",
                 "license": ""
             }
+        ],
+        "speech": "Is the upper bound , infinity  included as a valid value of 'x' in  x, is greater than 8; ?",
+        "math": [
+            "\\infty",
+            "x>8"
         ]
     },
     {
@@ -269,7 +342,11 @@
         "text": "The inequality $$x<8$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The inequality  x is less than 8,  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "math": [
+            "x<8"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h18",
@@ -290,6 +367,10 @@
         "choices": [
             "$$-\\infty$$",
             "$$8$$"
+        ],
+        "speech": "What is the lower bound of the inequality  x is less than 8, ?",
+        "math": [
+            "x<8"
         ]
     },
     {
@@ -311,6 +392,10 @@
         "choices": [
             "$$\\infty$$",
             "$$8$$"
+        ],
+        "speech": "What is the upper bound of the inequality  x is less than 8; ?",
+        "math": [
+            "x<8"
         ]
     },
     {
@@ -324,7 +409,11 @@
         "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs11b-h21",
@@ -357,6 +446,11 @@
                 "oer": "https://OATutor.io",
                 "license": ""
             }
+        ],
+        "speech": "Is the lower bound ; minus infinity  included as a valid value of 'x' in  x; is less than 8; ?",
+        "math": [
+            "-\\infty",
+            "x<8"
         ]
     },
     {
@@ -378,6 +472,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the upper bound , 8  included as a valid value of 'x' in  x, is less than 8; ?",
+        "math": [
+            "8",
+            "x<8"
         ]
     },
     {
@@ -400,6 +499,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Can ; the open interval from negative infinity to 8;  and , the open interval from 8 to infinity;  be combined into one interval?",
+        "math": [
+            "(-\\infty,8)",
+            "(8,\\infty)"
         ]
     },
     {
@@ -412,6 +516,12 @@
         "text": "The bounds for the two equations, $$(-\\infty,8)$$ and $$(8,\\infty)$$, can be ORed together using ' $$\\cup$$ '.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "The bounds for the two equations, ; the open interval from negative infinity to 8;  and , the open interval from 8 to infinity, , can be ORed together using ' ; union;  '.",
+        "math": [
+            "(-\\infty,8)",
+            "(8,\\infty)",
+            "\\cup"
+        ]
     }
 ]

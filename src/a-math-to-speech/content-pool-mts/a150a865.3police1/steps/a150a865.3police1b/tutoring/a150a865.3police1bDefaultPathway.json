@@ -7,7 +7,13 @@
         "text": "Let T equal the time elapsed between calls. From part a, the mean is found to be $$0.25$$, so the decay parameter is $$1$$ divided by the mean, $$0.25$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let T equal the time elapsed between calls. From part a, the mean is found to be , 0.25 , so the decay parameter is  1  divided by the mean,  0.25; .",
+        "math": [
+            "0.25",
+            "1",
+            "0.25"
+        ]
     },
     {
         "id": "a150a865.3police1b-h2",
@@ -19,7 +25,13 @@
         "text": "The cumulative distribution function is $$P\\left(T<t\\right)$$ $$=$$ $$1-e^{\\left(-4t\\right)}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The cumulative distribution function is ;  cap p, open paren,  cap t is less than t, close paren;  ; is equal to;   1 minus; e raised to the open paren negative 4 t, close paren power; .",
+        "math": [
+            "P\\left(T<t\\right)",
+            "=",
+            "1-e^{\\left(-4t\\right)}"
+        ]
     },
     {
         "id": "a150a865.3police1b-h3",
@@ -31,7 +43,11 @@
         "text": "We want to find the area under the exponential distiributiion function where T is less than the $$t=\\frac{1}{6}$$ minutes boundary.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We want to find the area under the exponential distiributiion function where T is less than the , t is equal to 1 sixth,  minutes boundary.",
+        "math": [
+            "t=\\frac{1}{6}"
+        ]
     },
     {
         "id": "a150a865.3police1b-h4",
@@ -43,6 +59,15 @@
         "text": "The probability that the next call occurs in less than $$10$$ seconds (where $$10$$ seconds is equal to $$\\frac{1}{6}$$ minutes) is $$P\\left(T<\\frac{1}{6}\\right)=1-e^{\\left(-4t\\right)}$$, where $$t$$ is $$\\frac{1}{6}$$.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The probability that the next call occurs in less than ; 10  seconds (where  10  seconds is equal to  1 sixth  minutes) is ;  cap p, open paren,  cap t is less than 1 sixth, close paren; is equal to; 1 minus; e raised to the open paren negative 4 t, close paren power; , where  t  is  1 sixth; .\\n##figure1.gif##",
+        "math": [
+            "10",
+            "10",
+            "\\frac{1}{6}",
+            "P\\left(T<\\frac{1}{6}\\right)=1-e^{\\left(-4t\\right)}",
+            "t",
+            "\\frac{1}{6}"
+        ]
     }
 ]

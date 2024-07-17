@@ -7,7 +7,13 @@
         "text": "Circle centered at $$(0,0)$$ of radius $$2$$ has equation $$x^2+y^2=2^2$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Circle centered at ; times, open paren 0 comma 0, close paren;  of radius  2  has equation  x squared; plus y squared; is equal to 2 squared; .",
+        "math": [
+            "(0,0)",
+            "2",
+            "x^2+y^2=2^2"
+        ]
     },
     {
         "id": "a38da08geo10a-h2",
@@ -19,7 +25,13 @@
         "text": "$$x^2+y^2=2^2$$ is equivalent to $$y=\\pm \\sqrt{4-x^2}$$ for $$x$$ in [-2,2].",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; x squared plus y squared, is equal to, 2 squared  is equivalent to  y, is equal to; plus or minus, the square root of 4 minus x squared end root;  for  x;  in [-2,2].",
+        "math": [
+            "x^2+y^2=2^2",
+            "y=\\pm \\sqrt{4-x^2}",
+            "x"
+        ]
     },
     {
         "id": "a38da08geo10a-h3",
@@ -41,6 +53,10 @@
             "$$y=\\pm \\sqrt{4-x^2}$$",
             "$$y=-\\sqrt{4-x^2}$$",
             "$$y=\\sqrt{4-x^2}$$"
+        ],
+        "speech": "Which equation fits the upper semicircle region shown in the shaded plot?",
+        "math": [
+            ""
         ]
     },
     {
@@ -58,7 +74,13 @@
         "text": "For the equation $$y=\\sqrt{4-x^2}$$, what is $$y$$ when $$x=0$$?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "For the equation ; y is equal to; the square root of 4 minus x squared end root; , what is  y  when  x; is equal to 0; ?",
+        "math": [
+            "y=\\sqrt{4-x^2}",
+            "y",
+            "x=0"
+        ]
     },
     {
         "id": "a38da08geo10a-h5",
@@ -79,6 +101,12 @@
         "choices": [
             "$$\\frac{\\sqrt{15}}{2}$$",
             "$$-\\left(\\frac{\\sqrt{15}}{2}\\right)$$"
+        ],
+        "speech": "For the equation ; y is equal to; the square root of 4 minus x squared end root; , what is  y  when  x; is equal to 0.5; ?",
+        "math": [
+            "y=\\sqrt{4-x^2}",
+            "y",
+            "x=0.5"
         ]
     },
     {
@@ -100,6 +128,12 @@
         "choices": [
             "$$\\sqrt{3}$$",
             "$$-\\sqrt{3}$$"
+        ],
+        "speech": "For the equation ; y is equal to; the square root of 4 minus x squared end root; , what is  y  when  x; is equal to 1; ?",
+        "math": [
+            "y=\\sqrt{4-x^2}",
+            "y",
+            "x=1"
         ]
     },
     {
@@ -121,6 +155,12 @@
         "choices": [
             "$$\\frac{\\sqrt{7}}{2}$$",
             "$$-\\left(\\frac{\\sqrt{7}}{2}\\right)$$"
+        ],
+        "speech": "For the equation ; y is equal to; the square root of 4 minus x squared end root; , what is  y  when  x; is equal to 1.5; ?",
+        "math": [
+            "y=\\sqrt{4-x^2}",
+            "y",
+            "x=1.5"
         ]
     },
     {
@@ -138,7 +178,11 @@
         "text": "Using the rectangle area formula $$A=length$$ times width, what is the area of R1?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Using the rectangle area formula ,  cap a is equal to length,  times width, what is the area of R1?",
+        "math": [
+            "A=length"
+        ]
     },
     {
         "id": "a38da08geo10a-h9",
@@ -159,6 +203,10 @@
         "choices": [
             "$$\\frac{\\sqrt{15}}{4}$$",
             "$$-\\left(\\frac{\\sqrt{15}}{4}\\right)$$"
+        ],
+        "speech": "Using the rectangle area formula ,  cap a is equal to length,  times width, what is the area of R2?",
+        "math": [
+            "A=length"
         ]
     },
     {
@@ -180,6 +228,10 @@
         "choices": [
             "$$\\frac{\\sqrt{3}}{2}$$",
             "$$-\\left(\\frac{\\sqrt{3}}{2}\\right)$$"
+        ],
+        "speech": "Using the rectangle area formula ,  cap a is equal to length,  times width, what is the area of R3?",
+        "math": [
+            "A=length"
         ]
     },
     {
@@ -201,6 +253,10 @@
         "choices": [
             "$$\\frac{\\sqrt{7}}{4}$$",
             "$$-\\left(\\frac{\\sqrt{7}}{4}\\right)$$"
+        ],
+        "speech": "Using the rectangle area formula ,  cap a is equal to length;  times width, what is the area of R4?",
+        "math": [
+            "A=length"
         ]
     },
     {
@@ -223,6 +279,10 @@
             "$$\\frac{4+\\sqrt{15}+2\\sqrt{3}+\\sqrt{7}}{4}$$",
             "$$\\frac{1+\\sqrt{15}+2\\sqrt{3}+\\sqrt{7}}{4}$$",
             "$$\\frac{4+\\sqrt{15}+\\sqrt{3}+\\sqrt{7}}{4}$$"
+        ],
+        "speech": "Calculate the exact area of the shaded rectangles. (What is the total area?)",
+        "math": [
+            ""
         ]
     }
 ]

@@ -8,7 +8,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Setting ; u is equal to, negative x , and then  d u; is equal to; negative 1 d x, . Multiply the du equation by  negative 1 , so now you have  d x; is equal to negative d u;"
+        "speech": "Setting ; u is equal to, negative x , and then  d u; is equal to; negative 1 d x, . Multiply the du equation by  negative 1 , so now you have  d x; is equal to negative d u;",
+        "math": [
+            "u=-x",
+            "du=-1dx",
+            "-1",
+            "dx=-du"
+        ]
     },
     {
         "id": "a046eedintegrals1a-h2",
@@ -21,7 +27,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral of e raised to the negative x power; d x; is equal to, negative the integral of e to the x-th d x;"
+        "speech": "; the integral of e raised to the negative x power; d x; is equal to, negative the integral of e to the x-th d x;",
+        "math": [
+            "\\int e^{-x} \\,dx=-\\int e^x \\,dx"
+        ]
     },
     {
         "id": "a046eedintegrals1a-h3",
@@ -39,7 +48,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "What is the result of the integration?"
+        "speech": "What is the result of the integration?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a046eedintegrals1a-h4",
@@ -52,6 +64,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "As we set ; u is equal to; negative x  at the beginning, we then obtain ; negative open paren, e raised to the open paren negative x close paren power; close paren; plus  cap c;"
+        "speech": "As we set ; u is equal to; negative x  at the beginning, we then obtain ; negative open paren, e raised to the open paren negative x close paren power; close paren; plus  cap c;",
+        "math": [
+            "u=-x",
+            "-\\left(e^{\\left(-x\\right)}\\right)+C"
+        ]
     }
 ]

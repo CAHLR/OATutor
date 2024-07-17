@@ -7,7 +7,13 @@
         "text": "We want to find the probability when a car passes by within a $$20$$ second interval. Therefore, any car may pass by within these $$20$$ seconds. Find $$P\\left(X<20\\right)$$, where X is the time in seconds between successive cars.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We want to find the probability when a car passes by within a ; 20  second interval. Therefore, any car may pass by within these  20  seconds. Find ;  cap p, open paren,  cap x is less than 20, close paren; , where X is the time in seconds between successive cars.",
+        "math": [
+            "20",
+            "20",
+            "P\\left(X<20\\right)"
+        ]
     },
     {
         "id": "a150a865.3highway1c-h2",
@@ -24,7 +30,11 @@
         "text": "Find the probability in respect to a distribution modeled after seconds. Decay parameter $$m=$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the probability in respect to a distribution modeled after seconds. Decay parameter  m is equal to, ?",
+        "math": [
+            "m="
+        ]
     },
     {
         "id": "a150a865.3highway1c-h3",
@@ -36,7 +46,12 @@
         "text": "$$m$$ is denoted as the decay parameter where $$1$$ is divided by the random variable average.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "m  is denoted as the decay parameter where  1,  is divided by the random variable average.",
+        "math": [
+            "m",
+            "1"
+        ]
     },
     {
         "id": "a150a865.3highway1c-h4",
@@ -48,7 +63,12 @@
         "text": "Note that the decay parameter must be in seconds. We know that it takes $$5$$ cars in a minute to pass by on average, and earlier calculated that there are on average12 seconds between each car. Use the $$12$$ seconds as the average.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Note that the decay parameter must be in seconds. We know that it takes  5  cars in a minute to pass by on average, and earlier calculated that there are on average12 seconds between each car. Use the  12,  seconds as the average.",
+        "math": [
+            "5",
+            "12"
+        ]
     },
     {
         "id": "a150a865.3highway1c-h5",
@@ -60,6 +80,15 @@
         "text": "$$P\\left(X<x\\right)$$ $$=$$ $$1-e^{\\left(-m x\\right)}$$, where $$x$$ is the desired conditional random variable cut off. We are finding $$P\\left(X<20\\right)$$ because within the $$20$$ second interval, there may be a car.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ";  cap p, open paren,  cap x is less than x, close paren;  ; is equal to;   1 minus; e raised to the open paren negative m x, close paren power; , where  x  is the desired conditional random variable cut off. We are finding ;  cap p, open paren,  cap x is less than 20, close paren;  because within the  20;  second interval, there may be a car.",
+        "math": [
+            "P\\left(X<x\\right)",
+            "=",
+            "1-e^{\\left(-m x\\right)}",
+            "x",
+            "P\\left(X<20\\right)",
+            "20"
+        ]
     }
 ]

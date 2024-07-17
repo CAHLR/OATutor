@@ -7,7 +7,16 @@
         "text": "For some numbers a and $$b$$ $$\\geq$$ $$0$$ where $$|a|<b$$, this is the same as $$a<b$$ AND $$a>-b$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is less than b , this is the same as  a, is less than, b  AND  a, is greater than negative b;",
+        "math": [
+            "b",
+            "\\geq",
+            "0",
+            "|a|<b",
+            "a<b",
+            "a>-b"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h2",
@@ -30,6 +39,10 @@
             "$$x+7<6$$ and $$x+7<-6$$",
             "$$x+7<6$$ and $$x+7>6$$",
             "$$x+7<6$$"
+        ],
+        "speech": "What is ; the absolute value of x plus 7, end absolute value; is less than 6;  rewritten without the absolute value sign?",
+        "math": [
+            "|x+7|<6"
         ]
     },
     {
@@ -42,7 +55,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h4",
@@ -54,7 +71,12 @@
         "text": "Subtract $$7$$ from the left to get $$x<6-7$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract , 7  from the left to get  x, is less than 6 minus 7; .",
+        "math": [
+            "7",
+            "x<6-7"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h5",
@@ -71,7 +93,11 @@
         "text": "What is $$6-7$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is  6 minus 7; ?",
+        "math": [
+            "6-7"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h6",
@@ -83,7 +109,11 @@
         "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h7",
@@ -95,7 +125,12 @@
         "text": "Subtract $$7$$ from the left to get $$x>-6-7$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Subtract ; 7  from the left to get  x, is greater than, negative 6 minus 7; .",
+        "math": [
+            "7",
+            "x>-6-7"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h8",
@@ -112,7 +147,11 @@
         "text": "What is $$-6-7$$?",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "What is ; minus 6 minus 7; ?",
+        "math": [
+            "-6-7"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h9",
@@ -124,7 +163,11 @@
         "text": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the distance is less than a value, the inequalities provide the upper and lower bounds of the value by ANDing them together.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h10",
@@ -146,6 +189,11 @@
             "$$-\\infty$$",
             "$$-1$$",
             "$$-13$$"
+        ],
+        "speech": "What is the lower bound of the inequality ; x is less than; negative 1  and  x, is greater than negative 13; ?",
+        "math": [
+            "x<-1",
+            "x>-13"
         ]
     },
     {
@@ -168,6 +216,11 @@
             "$$\\infty$$",
             "$$-1$$",
             "$$-13$$"
+        ],
+        "speech": "What is the upper bound of the inequality ; x is less than; negative 1  and  x, is greater than negative 13; ?",
+        "math": [
+            "x<-1",
+            "x>-13"
         ]
     },
     {
@@ -181,7 +234,11 @@
         "text": "Since the question asks for all positive numbers 'x', $$x>0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Since the question asks for all positive numbers 'x',  x is greater than 0, .",
+        "math": [
+            "x>0"
+        ]
     },
     {
         "id": "a2a5cd1alginequalabs1002a-h13",
@@ -202,6 +259,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Are any values between ; minus 13; is less than x is less than negative 1;  positive?",
+        "math": [
+            "-13<x<-1"
         ]
     }
 ]

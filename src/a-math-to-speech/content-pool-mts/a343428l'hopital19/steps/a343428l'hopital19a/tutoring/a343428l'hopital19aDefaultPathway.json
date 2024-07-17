@@ -7,7 +7,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h2",
@@ -19,7 +27,11 @@
         "text": "(sin(0)-tan(0))/(0)**3)}=(0-0)/0=0/0",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "(sin(0)-tan(0))/(0)**3)}=(0-0)/0=0/0",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital19a-h3",
@@ -31,7 +43,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(sinx-tan\\left(x\\right)\\right)}{\\frac{d}{dx} x^3}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches 0, of; fraction, fraction, d over, d x, end fraction; times, open paren, sinx minus tangent of x; close paren, over, fraction, d over, d x, end fraction; x cubed, end fraction;",
+        "math": [
+            "\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(sinx-tan\\left(x\\right)\\right)}{\\frac{d}{dx} x^3}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h4",
@@ -66,6 +82,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -78,7 +98,11 @@
         "text": "$$\\fraccos^3\\left(0\\right)-{sec}^{2\\left(0\\right)}\\times0^2}=\\frac{1-1}{0}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, cosine cubed of 0, minus, secant raised to the 2 times 0 power; times 0 squared, over is equal to, end fraction; fraction, 1 minus 1, over 0, end fraction; is equal to 0 over 0;",
+        "math": [
+            "\\fraccos^3\\left(0\\right)-{sec}^{2\\left(0\\right)}\\times0^2}=\\frac{1-1}{0}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h6",
@@ -90,7 +114,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(cosx-{sec}^{2\\left(x\\right)}\\right)}}{d}}{\\operatorname{dx}\\left(3x^2\\right)}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches 0, of; fraction, fraction, fraction, d over, dx of; open paren; c o s x, minus, secant raised to the 2 times x power; close paren, end fraction; over d, end fraction; over, dx of, open paren 3 x squared, close paren, end fraction;",
+        "math": [
+            "\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(cosx-{sec}^{2\\left(x\\right)}\\right)}}{d}}{\\operatorname{dx}\\left(3x^2\\right)}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h7",
@@ -137,6 +165,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -149,7 +181,11 @@
         "text": "$$\\frac{\\left(-sin\\left(0\\right)-2{sec}^{2\\left(0\\right)} tan\\left(0\\right)\\right)}{6\\times0}=\\frac{0-2\\times0}{0}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, open paren; minus sine of 0 minus; 2, the 2 times 0 power of, secant of tangent of 0; close paren, over, 6 times 0, end fraction; is equal to; fraction, 0 minus 2 times 0, over 0, end fraction; is equal to 0 over 0;",
+        "math": [
+            "\\frac{\\left(-sin\\left(0\\right)-2{sec}^{2\\left(0\\right)} tan\\left(0\\right)\\right)}{6\\times0}=\\frac{0-2\\times0}{0}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h9",
@@ -161,7 +197,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{dx\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(6x\\right)}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches 0, of; fraction, fraction, fraction, d over, d x; open paren; negative sinx minus; 2, the 2 times x power of, secant of tangent of x; close paren, end fraction; over d, end fraction; over, dx of 6 x, end fraction;",
+        "math": [
+            "\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{dx\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(6x\\right)}"
+        ]
     },
     {
         "id": "a343428l'hopital19a-h10",
@@ -184,6 +224,10 @@
             "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+2{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$",
             "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{2\\left(x\\right)}\\right)\\right)}{6}$$",
             "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -196,6 +240,10 @@
         "text": "$$\\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}=\\frac{\\left(-1-2\\left(0+1\\right)\\right)}{6}=\\frac{\\left(-1-2\\right)}{6}=\\frac{-1}{2}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, open paren; negative c o s x; minus; 2 times; open paren; 2; the 2 times x power of, secant of, tangent raised to the 2 times x power; plus, secant raised to the 4 times x power; close paren; close paren, over 6, end fraction; is equal to; fraction, open paren; negative 1 minus, 2 times, open paren 0 plus 1, close paren; close paren, over 6, end fraction; is equal to; fraction, open paren, negative 1 minus 2, close paren, over 6, end fraction; is equal to, fraction, negative 1, over 2, end fraction;",
+        "math": [
+            "\\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}=\\frac{\\left(-1-2\\left(0+1\\right)\\right)}{6}=\\frac{\\left(-1-2\\right)}{6}=\\frac{-1}{2}"
+        ]
     }
 ]

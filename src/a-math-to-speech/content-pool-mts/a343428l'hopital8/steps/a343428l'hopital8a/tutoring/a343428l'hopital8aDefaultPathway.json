@@ -7,7 +7,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital8a-h2",
@@ -19,7 +27,11 @@
         "text": "$$\\lim_{x\\to\\infty} \\frac{x^2}{e^x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; the limit as x approaches infinity, of, fraction, x squared, over, e to the x-th, end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{x^2}{e^x}"
+        ]
     },
     {
         "id": "a343428l'hopital8a-h3",
@@ -31,7 +43,11 @@
         "text": "$$\\frac{{\\infty}^2}{e^{\\infty}}=\\frac{\\infty}{\\infty}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, infinity squared, over, e to the infinity-th, end fraction; is equal to, infinity over infinity;",
+        "math": [
+            "\\frac{{\\infty}^2}{e^{\\infty}}=\\frac{\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital8a-h4",
@@ -43,7 +59,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} x^2}{\\frac{d}{dx} e^x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches infinity, of; fraction, fraction, d over, d x, end fraction; x squared, over, fraction, d over, d x, end fraction; e to the x-th, end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} x^2}{\\frac{d}{dx} e^x}"
+        ]
     },
     {
         "id": "a343428l'hopital8a-h5",
@@ -66,6 +86,10 @@
             "$$\\lim_{x\\to\\infty} \\frac{2x e^x-e^x x^2}{e^2} x$$",
             "$$\\lim_{x\\to\\infty} \\frac{2x}{e^2} x$$",
             "$$\\lim_{x\\to\\infty} \\frac{2x^2}{e^x}$$"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -90,6 +114,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+        "math": [
+            ""
         ]
     },
     {
@@ -102,7 +130,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} 2x}{\\frac{d}{dx} e^x}=\\lim_{x\\to\\infty} \\frac{2}{e^x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches infinity, of; fraction, fraction, d over, d x, end fraction; 2 x, over, fraction, d over, d x, end fraction; e to the x-th, end fraction; is equal to; the limit as x approaches infinity, of, fraction, 2 over, e to the x-th, end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} 2x}{\\frac{d}{dx} e^x}=\\lim_{x\\to\\infty} \\frac{2}{e^x}"
+        ]
     },
     {
         "id": "a343428l'hopital8a-h8",
@@ -114,6 +146,10 @@
         "text": "$$\\frac{2}{e^{\\infty}}=\\frac{2}{\\infty}=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, 2 over, e to the infinity-th, end fraction; is equal to 2 over infinity; is equal to 0;",
+        "math": [
+            "\\frac{2}{e^{\\infty}}=\\frac{2}{\\infty}=0"
+        ]
     }
 ]

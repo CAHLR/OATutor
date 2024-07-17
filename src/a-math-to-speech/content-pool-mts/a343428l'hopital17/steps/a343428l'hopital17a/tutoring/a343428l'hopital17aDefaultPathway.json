@@ -7,7 +7,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital17a-h2",
@@ -19,7 +27,11 @@
         "text": "$$\\fractan^\\\\left(0\\right)sqrt{0}}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, the open paren 0 close paren power of, tangent of, s q r t 0, over is equal to, end fraction; 0 over 0;",
+        "math": [
+            "\\fractan^\\\\left(0\\right)sqrt{0}}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital17a-h3",
@@ -31,7 +43,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,((d/dx)*tan(x))/((d/dx)*sqrt(x))}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,((d/dx)*tan(x))/((d/dx)*sqrt(x))}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital17a-h4",
@@ -54,6 +70,10 @@
             "/lim{x,0**+,sec(x)/(1/sqrt(x))}",
             "/lim{x,0**+,(sec**2(x))/-(1/sqrt(x))}",
             "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -66,7 +86,11 @@
         "text": "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}=/lim{x,0**+,(sec**2(x))*2*sqrt(x)}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}=/lim{x,0**+,(sec**2(x))*2*sqrt(x)}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital17a-h6",
@@ -78,6 +102,10 @@
         "text": "$$2{sec}^{2\\left(0\\right)} \\sqrt{0}=0\\times2\\times0=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; 2; the 2 times 0 power of, secant of the square root of 0; is equal to, 0 times 2 times 0, is equal to 0;",
+        "math": [
+            "2{sec}^{2\\left(0\\right)} \\sqrt{0}=0\\times2\\times0=0"
+        ]
     }
 ]

@@ -8,7 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some value a, ; f of, open paren x minus a, close paren;  means that f(x) is translated to the right by a units. Similarly, , f of, open paren x plus a, close paren;  means that f(x) is translated to the left by a units."
+        "speech": "For some value a, ; f of, open paren x minus a, close paren;  means that f(x) is translated to the right by a units. Similarly, , f of, open paren x plus a, close paren;  means that f(x) is translated to the left by a units.",
+        "math": [
+            "f(x-a)",
+            "f{\\left(x+a\\right)}"
+        ]
     },
     {
         "id": "a0dd0e7corepoly211a-h2",
@@ -21,7 +25,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since a is ; minus; 2 , , f of, open paren x plus 2, close paren;  means that the graph is translated left by  2; ."
+        "speech": "Since a is ; minus; 2 , , f of, open paren x plus 2, close paren;  means that the graph is translated left by  2; .",
+        "math": [
+            "-2",
+            "f{\\left(x+2\\right)}",
+            "2"
+        ]
     },
     {
         "id": "a0dd0e7corepoly211a-h3",
@@ -34,7 +43,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some value a not equal to ; 0 ,  a f of x,  means that f(x) is stretched vertically by a. Similarly, , fraction, f of x, over a, end fraction;  means that f(x) is compressed vertically by a."
+        "speech": "For some value a not equal to ; 0 ,  a f of x,  means that f(x) is stretched vertically by a. Similarly, , fraction, f of x, over a, end fraction;  means that f(x) is compressed vertically by a.",
+        "math": [
+            "0",
+            "a f{\\left(x\\right)}",
+            "\\frac{f{\\left(x\\right)}}{a}"
+        ]
     },
     {
         "id": "a0dd0e7corepoly211a-h4",
@@ -47,7 +61,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since a is ; 3 , ; 3, f of, open paren x plus 2, close paren;  means that the graph is stretched vertically by  3; ."
+        "speech": "Since a is ; 3 , ; 3, f of, open paren x plus 2, close paren;  means that the graph is stretched vertically by  3; .",
+        "math": [
+            "3",
+            "3f{\\left(x+2\\right)}",
+            "3"
+        ]
     },
     {
         "id": "a0dd0e7corepoly211a-h5",
@@ -60,7 +79,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some value a, ; f of x plus a  means that f(x) is translated up by a units. Similarly,  f of x, minus a;  means that f(x) is translated down by a units."
+        "speech": "For some value a, ; f of x plus a  means that f(x) is translated up by a units. Similarly,  f of x, minus a;  means that f(x) is translated down by a units.",
+        "math": [
+            "f{\\left(x\\right)}+a",
+            "f(x)-a"
+        ]
     },
     {
         "id": "a0dd0e7corepoly211a-h6",
@@ -73,6 +96,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since a is ; minus; 5 , ; 3, f of, open paren x plus 2, close paren; minus 5  means that the graph is translated down by  5; ."
+        "speech": "Since a is ; minus; 5 , ; 3, f of, open paren x plus 2, close paren; minus 5  means that the graph is translated down by  5; .",
+        "math": [
+            "-5",
+            "3f{\\left(x+2\\right)}-5",
+            "5"
+        ]
     }
 ]

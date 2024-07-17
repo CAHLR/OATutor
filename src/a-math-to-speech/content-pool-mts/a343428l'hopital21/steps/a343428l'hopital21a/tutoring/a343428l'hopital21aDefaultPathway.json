@@ -7,7 +7,11 @@
         "text": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital21a-h2",
@@ -19,7 +23,11 @@
         "text": "$$\\lim_{x\\to\\infty} \\fracsin^x\\left(\\frac{1}{x}\\right)^{\\left(-1\\right)}}=\\lim_{x\\to\\infty} \\fracsin^\\\\left(\\frac{1}{x}\\right)frac{1}{x}}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; the limit as x approaches infinity, of; open paren; fraction, the x power of, sine of, open paren, fraction, 1 over x, end fraction; close paren, over, open paren 1 over x, close paren to the negative 1, end fraction; close paren; is equal to; the limit as x approaches infinity, of; open paren; fraction, sine of, open paren, fraction, 1 over x, end fraction; close paren, over, fraction, 1 over x, end fraction; end fraction; close paren;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\fracsin^x\\left(\\frac{1}{x}\\right)^{\\left(-1\\right)}}=\\lim_{x\\to\\infty} \\fracsin^\\\\left(\\frac{1}{x}\\right)frac{1}{x}}"
+        ]
     },
     {
         "id": "a343428l'hopital21a-h3",
@@ -31,7 +39,11 @@
         "text": "$$\\fracsin^\\\\left(\\frac{1}{\\infty}\\right)frac{1}{\\infty}}=\\fracsin^0\\left(0\\right)}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, sine of, open paren, fraction, 1 over infinity, end fraction; close paren, over, fraction, 1 over infinity, end fraction; end fraction; is equal to, fraction, sine of 0, over 0, end fraction; is equal to 0 over 0;",
+        "math": [
+            "\\fracsin^\\\\left(\\frac{1}{\\infty}\\right)frac{1}{\\infty}}=\\fracsin^0\\left(0\\right)}=\\frac{0}{0}"
+        ]
     },
     {
         "id": "a343428l'hopital21a-h4",
@@ -43,7 +55,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} sin\\left(\\frac{1}{x}\\right)}{\\frac{d}{dx} \\frac{1}{x}}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches infinity, of; fraction, fraction, d over, d x, end fraction; sine of, open paren, fraction, 1 over x, end fraction; close paren, over, fraction, d over, d x, end fraction; fraction, 1 over x, end fraction; end fraction;",
+        "math": [
+            "\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} sin\\left(\\frac{1}{x}\\right)}{\\frac{d}{dx} \\frac{1}{x}}"
+        ]
     },
     {
         "id": "a343428l'hopital21a-h5",
@@ -83,6 +99,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -95,7 +115,11 @@
         "text": "$$\\frac{\\left(-\\frac{1}{x^2}\\right) cos\\left(\\frac{1}{x}\\right)}{\\left(-\\frac{1}{x^2}\\right)}=cos\\left(\\frac{1}{x}\\right)$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, open paren, negative fraction, 1 over, x squared, end fraction; close paren; times; cosine of, open paren, fraction, 1 over x, end fraction; close paren, over, open paren, negative fraction, 1 over, x squared, end fraction; close paren, end fraction; is equal to, cosine of, open paren 1 over x, close paren;",
+        "math": [
+            "\\frac{\\left(-\\frac{1}{x^2}\\right) cos\\left(\\frac{1}{x}\\right)}{\\left(-\\frac{1}{x^2}\\right)}=cos\\left(\\frac{1}{x}\\right)"
+        ]
     },
     {
         "id": "a343428l'hopital21a-h7",
@@ -107,6 +131,10 @@
         "text": "$$cos\\left(\\frac{1}{\\infty}\\right)=cos(0)=1$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "; cosine of, open paren 1 over infinity; close paren; is equal to cosine of 0, is equal to 1;",
+        "math": [
+            "cos\\left(\\frac{1}{\\infty}\\right)=cos(0)=1"
+        ]
     }
 ]

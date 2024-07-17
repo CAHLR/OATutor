@@ -7,7 +7,20 @@
         "text": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables.\\nConsider a system of two linear equations in two variables.\\n$$a_1 x+b_1 y=c_1$$\\n$$a_2 x+b_2 y=c_2$$\\n\\nThe solution using Cramer's Rule is given as\\n$$x=\\frac{D_x}{D}=$$ |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|, $$D \\neq 0;$$\\n$$y=\\frac{D_y}{D}=$$ |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|, $$D \\neq 0;$$\\nIf we are solving for $$x$$, the $$x$$ column is replaced with the constant column. If we are solving for $$y$$, the $$y$$ column is replaced with the constant column.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables.\\nConsider a system of two linear equations in two variables.\\n; a sub 1 x plus b sub 1 y; is equal to; c sub 1 \\n a sub 2 x; plus b sub 2 y; is equal to, c sub 2 \\n\\nThe solution using Cramer's Rule is given as\\n x, is equal to, fraction,  cap d sub x, over  cap d, end fraction; is equal to,  |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|,   cap d, is not equal to 0; colon; \\n y is equal to, fraction,  cap d sub y, over  cap d, end fraction; is equal to,  |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|,   cap d, is not equal to 0; colon, \\nIf we are solving for  x , the  x  column is replaced with the constant column. If we are solving for  y , the  y;  column is replaced with the constant column.",
+        "math": [
+            "a_1 x+b_1 y=c_1",
+            "a_2 x+b_2 y=c_2",
+            "x=\\frac{D_x}{D}=",
+            "D \\neq 0:",
+            "y=\\frac{D_y}{D}=",
+            "D \\neq 0:",
+            "x",
+            "x",
+            "y",
+            "y"
+        ]
     },
     {
         "id": "a372017cramer18a-h2",
@@ -19,7 +32,12 @@
         "text": "The determinant of a 2\u00d72 matrix, given $$A=\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$ is defined as $$det(A)=a d-c b$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The determinant of a 2\u00d72 matrix, given ;  cap a is equal to; the 2 by 2 matrix; row 1; a, b; row 2; c, d;  is defined as  det of  cap a; is equal to, a d minus c b; .",
+        "math": [
+            "A=\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}",
+            "det(A)=a d-c b"
+        ]
     },
     {
         "id": "a372017cramer18a-h3",
@@ -31,7 +49,13 @@
         "text": "Using the Cramer's Rule, replace the column for $$x$$ with the constant column, then find the determinant of $$D_x$$ and D to solve for $$x=\\frac{D_x}{D}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the Cramer's Rule, replace the column for ; x  with the constant column, then find the determinant of   cap d sub x  and D to solve for  x; is equal to, fraction,  cap d sub x, over  cap d, end fraction; .",
+        "math": [
+            "x",
+            "D_x",
+            "x=\\frac{D_x}{D}"
+        ]
     },
     {
         "id": "a372017cramer18a-h4",
@@ -48,7 +72,13 @@
         "text": "Find the determinant $$D_x$$ $$=$$ $$|(-11,2),(-13,1)|$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the determinant ;  cap d sub x  , is equal to;  ; the absolute value of open paren, negative 11 comma 2, close paren; comma, open paren, negative 13 comma 1, close paren, end absolute value; ?",
+        "math": [
+            "D_x",
+            "=",
+            "|(-11,2),(-13,1)|"
+        ]
     },
     {
         "id": "a372017cramer18a-h5",
@@ -65,7 +95,12 @@
         "text": "Find the determinant D $$=$$ $$|(1,2),(-2,1)|$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the determinant D ; is equal to;  ; the absolute value of open paren 1 comma 2, close paren; comma, open paren, negative 2 comma 1, close paren, end absolute value; ?",
+        "math": [
+            "=",
+            "|(1,2),(-2,1)|"
+        ]
     },
     {
         "id": "a372017cramer18a-h6",
@@ -82,7 +117,11 @@
         "text": "What is $$\\frac{D_x}{D}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , fraction,  cap d sub x, over  cap d, end fraction; ?",
+        "math": [
+            "\\frac{D_x}{D}"
+        ]
     },
     {
         "id": "a372017cramer18a-h7",
@@ -94,7 +133,13 @@
         "text": "Using the Cramer's Rule, replace the column for $$y$$ with the constant column, then find the determinant of $$D_y$$ and D to solve for $$y=\\frac{D_y}{D}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the Cramer's Rule, replace the column for ; y  with the constant column, then find the determinant of   cap d sub y  and D to solve for  y; is equal to, fraction,  cap d sub y, over  cap d, end fraction; .",
+        "math": [
+            "y",
+            "D_y",
+            "y=\\frac{D_y}{D}"
+        ]
     },
     {
         "id": "a372017cramer18a-h8",
@@ -111,7 +156,13 @@
         "text": "Find the determinant $$D_y$$ $$=$$ $$|(1,-11),(-2,-13)|$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the determinant ;  cap d sub y  , is equal to;  ; the absolute value of open paren, 1 comma negative 11, close paren; comma, open paren, negative 2 comma negative 13, close paren, end absolute value; ?",
+        "math": [
+            "D_y",
+            "=",
+            "|(1,-11),(-2,-13)|"
+        ]
     },
     {
         "id": "a372017cramer18a-h9",
@@ -128,7 +179,12 @@
         "text": "Find the determinant D $$=$$ $$|(1,2),(-2,1)|$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the determinant D ; is equal to;  ; the absolute value of open paren 1 comma 2, close paren; comma, open paren, negative 2 comma 1, close paren, end absolute value; ?",
+        "math": [
+            "=",
+            "|(1,2),(-2,1)|"
+        ]
     },
     {
         "id": "a372017cramer18a-h10",
@@ -145,6 +201,10 @@
         "text": "What is $$\\frac{D_y}{D}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , fraction,  cap d sub y, over  cap d, end fraction; ?",
+        "math": [
+            "\\frac{D_y}{D}"
+        ]
     }
 ]

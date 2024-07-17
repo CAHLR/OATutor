@@ -7,7 +7,11 @@
         "text": "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure1.gif##",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a342e92limit9a-h2",
@@ -28,6 +32,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "As we read down the  1 over x;  columns, does /lim{x,0**-,1/x} and /lim{x,0**+,1/x} approach the same values?",
+        "math": [
+            "\\frac{1}{x}"
         ]
     },
     {
@@ -40,6 +48,13 @@
         "text": "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that $$/lim(x$$ , $$0$$, $$\\frac{1}{x}$$ )DNE. The graph of $$f(x)=\\frac{1}{x}$$ in the figure confirms these conclusions.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that ; divided by; lim of; open paren; x  ,  0 ,  1 over x,  )DNE. The graph of  f of x; is equal to 1 over x;  in the figure confirms these conclusions.\\n##figure2.gif##",
+        "math": [
+            "/lim(x",
+            "0",
+            "\\frac{1}{x}",
+            "f(x)=\\frac{1}{x}"
+        ]
     }
 ]

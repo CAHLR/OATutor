@@ -7,7 +7,12 @@
         "text": "If A and B are independent, then $$P(A|B)=P(A)$$ and P(A AND $$B)=P(A)P(B)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If A and B are independent, then ;  cap p; open paren;  cap a, vertical line  cap b close paren; is equal to,  cap p of  cap a,  and P(A AND   cap b; close paren; is equal to,  cap p of  cap a,  cap p of  cap b; .",
+        "math": [
+            "P(A|B)=P(A)",
+            "B)=P(A)P(B)"
+        ]
     },
     {
         "id": "a38bd54basicrules5b-h2",
@@ -24,7 +29,12 @@
         "text": "If we let A $$=$$ the member is a novice swimmer and B $$=$$ the member practices four times per week, what is P(A AND B)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If we let A ; is equal to  the member is a novice swimmer and B  is equal to;  the member practices four times per week, what is P(A AND B)?",
+        "math": [
+            "=",
+            "="
+        ]
     },
     {
         "id": "a38bd54basicrules5b-h3",
@@ -41,7 +51,11 @@
         "text": "What is $$P\\left(A\\right) P\\left(B\\right)$$, or the probability that the member is a novice multiplied by the probability that the member practices four times a week?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is ,  cap p of  cap a,  cap p of  cap b; , or the probability that the member is a novice multiplied by the probability that the member practices four times a week?",
+        "math": [
+            "P\\left(A\\right) P\\left(B\\right)"
+        ]
     },
     {
         "id": "a38bd54basicrules5b-h4",
@@ -62,6 +76,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is P(A AND B) equal to ,  cap p of  cap a,  cap p of  cap b; ? If yes, then A and B are independent: if no, then A and B are not independent.",
+        "math": [
+            "P\\left(A\\right) P\\left(B\\right)"
         ]
     }
 ]

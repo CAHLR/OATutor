@@ -7,7 +7,15 @@
         "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "x",
+            "x",
+            "\\frac{0}{0}",
+            "\\frac{\\infty}{\\infty}",
+            "\\frac{-\\infty}{\\infty}"
+        ]
     },
     {
         "id": "a343428l'hopital5a-h2",
@@ -19,7 +27,14 @@
         "text": "As $$x$$ approaches $$0$$ from the right side of the $$y$$ axis, the graph of lnx approaches negative infinity and the graph of cotx approaches $$\\infty$$. Therefore, /lim{x,0**+,lnx/cotx}=-inf/inf.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "As , x  approaches  0  from the right side of the  y  axis, the graph of lnx approaches negative infinity and the graph of cotx approaches  infinity; . Therefore, /lim{x,0**+,lnx/cotx}=-inf/inf.",
+        "math": [
+            "x",
+            "0",
+            "y",
+            "\\infty"
+        ]
     },
     {
         "id": "a343428l'hopital5a-h3",
@@ -31,7 +46,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(lnx)/d/dx(cotx)}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(lnx)/d/dx(cotx)}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital5a-h4",
@@ -66,6 +85,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -78,7 +101,11 @@
         "text": "In order to make the expression easier to apply the L\u2019H\u00f4pital\u2019s Rule a second time, we need to rearrange the expression using the definition of cscx. We then apply the apply L\u2019H\u00f4pital\u2019s Rule and Evaluate the limit",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "In order to make the expression easier to apply the L\u2019H\u00f4pital\u2019s Rule a second time, we need to rearrange the expression using the definition of cscx. We then apply the apply L\u2019H\u00f4pital\u2019s Rule and Evaluate the limit",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital5a-h6",
@@ -90,7 +117,11 @@
         "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(sin**2(x)/-x)/d/dx(-x)}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(sin**2(x)/-x)/d/dx(-x)}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a343428l'hopital5a-h7",
@@ -136,6 +167,10 @@
                     "$$sinx {cos}^{2\\left(x\\right)}$$"
                 ]
             }
+        ],
+        "speech": "What is the answer of the function after the L\u2019H\u00f4pital\u2019s Rule and the Chain Rule are applied?",
+        "math": [
+            ""
         ]
     },
     {
@@ -148,6 +183,10 @@
         "text": "$$\\frac{2sin\\left(0\\right) cos\\left(0\\right)}{-1}=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "; fraction, 2 sine of 0 cosine of 0, over, negative 1, end fraction; is equal to 0;",
+        "math": [
+            "\\frac{2sin\\left(0\\right) cos\\left(0\\right)}{-1}=0"
+        ]
     }
 ]

@@ -7,7 +7,13 @@
         "text": "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes $$x$$ by the probability of $$x$$, $$x P\\left(x\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes ; x  by the probability of  x , , x  cap p of x; .",
+        "math": [
+            "x",
+            "x",
+            "x P\\left(x\\right)"
+        ]
     },
     {
         "id": "a298b40expectedvalue6a-h2",
@@ -30,6 +36,10 @@
             "$$0$$, $$256$$",
             "$$0$$, $$255$$",
             "$$-1$$, $$255$$"
+        ],
+        "speech": "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?",
+        "math": [
+            ""
         ]
     },
     {
@@ -64,6 +74,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "Determine the probability of earning $256 in profit. This means that for all four cards, you guess their suit correctly.",
+        "math": [
+            ""
         ]
     },
     {
@@ -81,7 +95,11 @@
         "text": "Determine the probability of earning -$1 in profit. This means that you did NOT get all four suits correct. Hint: this is the complement rule applied to the previous step.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the probability of earning -$1 in profit. This means that you did NOT get all four suits correct. Hint: this is the complement rule applied to the previous step.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a298b40expectedvalue6a-h5",
@@ -98,7 +116,12 @@
         "text": "Determine $$x P\\left(x\\right)$$ for $$x=\\$256$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine ; x  cap p of x,  for  x; is equal to dollars 256; .",
+        "math": [
+            "x P\\left(x\\right)",
+            "x=\\$256"
+        ]
     },
     {
         "id": "a298b40expectedvalue6a-h6",
@@ -115,7 +138,12 @@
         "text": "Determine $$x P\\left(x\\right)$$ for $$x=-\\$1$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine ; x  cap p of x,  for  x; is equal to, negative dollars 1; .",
+        "math": [
+            "x P\\left(x\\right)",
+            "x=-\\$1"
+        ]
     },
     {
         "id": "a298b40expectedvalue6a-h7",
@@ -132,6 +160,12 @@
         "text": "To find the expected value, sum up the answers for $$x P\\left(x\\right)$$ for $$x=\\$256$$ and $$x=-\\$1$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find the expected value, sum up the answers for ; x  cap p of x,  for  x; is equal to, dollars 256,  and  x; is equal to, negative dollars 1; .",
+        "math": [
+            "x P\\left(x\\right)",
+            "x=\\$256",
+            "x=-\\$1"
+        ]
     }
 ]

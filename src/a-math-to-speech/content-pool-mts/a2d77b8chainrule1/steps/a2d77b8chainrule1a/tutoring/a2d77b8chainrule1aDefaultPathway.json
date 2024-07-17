@@ -7,7 +7,11 @@
         "text": "Remember, the chain rule in Leibniz's notation tells us that $$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember, the chain rule in Leibniz's notation tells us that ; fraction, d y, over, d x, end fraction; is equal to; fraction, d y, over, d u, end fraction; fraction, d u, over, d x, end fraction;",
+        "math": [
+            "\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}"
+        ]
     },
     {
         "id": "a2d77b8chainrule1a-h2",
@@ -19,7 +23,12 @@
         "text": "First, try finding the derivative of $$y$$ in terms of u. Then, find the derivative of u in terms of $$x$$. Multiplying the two should yield the correct answer!",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, try finding the derivative of  y  in terms of u. Then, find the derivative of u in terms of  x, . Multiplying the two should yield the correct answer!",
+        "math": [
+            "y",
+            "x"
+        ]
     },
     {
         "id": "a2d77b8chainrule1a-h3",
@@ -42,6 +51,10 @@
             "$$\\frac{3}{2} u^2$$",
             "3u",
             "$$3u^2$$"
+        ],
+        "speech": "What is ; fraction, d y, over, d u, end fraction; ?",
+        "math": [
+            "\\frac{dy}{du}"
         ]
     },
     {
@@ -65,6 +78,10 @@
             "$$\\frac{2}{3} x^3$$",
             "$$4x^2$$",
             "$$2x^3$$"
+        ],
+        "speech": "What is ; fraction, d u, over, d x, end fraction; ?",
+        "math": [
+            "\\frac{du}{dx}"
         ]
     },
     {
@@ -77,6 +94,11 @@
         "text": "Don't forget to plug in what we have for u in terms of $$x$$ to give our final answer in terms of $$x!$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Don't forget to plug in what we have for u in terms of , x  to give our final answer in terms of  x factorial,",
+        "math": [
+            "x",
+            "x!"
+        ]
     }
 ]

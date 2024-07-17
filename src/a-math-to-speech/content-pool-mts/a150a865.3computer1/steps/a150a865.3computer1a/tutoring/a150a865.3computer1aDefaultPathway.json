@@ -7,7 +7,12 @@
         "text": "To do any calculations, you must know $$m$$, the decay parameter. $$m=\\frac{1}{mean}$$. It is given that the mean amount of years that the certain computer lasts is ten years.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To do any calculations, you must know , m , the decay parameter.  m, is equal to 1 over mean; . It is given that the mean amount of years that the certain computer lasts is ten years.",
+        "math": [
+            "m",
+            "m=\\frac{1}{mean}"
+        ]
     },
     {
         "id": "a150a865.3computer1a-h2",
@@ -24,7 +29,11 @@
         "text": "What is the decay parameter value $$m$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the decay parameter value  m ?",
+        "math": [
+            "m"
+        ]
     },
     {
         "id": "a150a865.3computer1a-h1",
@@ -34,7 +43,12 @@
         "text": "$$\\frac{1}{mean}=decay$$ parameter. The mean is $$10$$ years.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ", 1 over mean, is equal to, decay  parameter. The mean is  10;  years.",
+        "math": [
+            "\\frac{1}{mean}=decay",
+            "10"
+        ]
     },
     {
         "id": "a150a865.3computer1a-h1",
@@ -46,7 +60,11 @@
         "text": "Find the $$P\\left(X>7\\right)=1-P\\left(X<7\\right)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the ;  cap p, open paren,  cap x is greater than 7, close paren; is equal to; 1 minus;  cap p, open paren,  cap x is less than 7, close paren;",
+        "math": [
+            "P\\left(X>7\\right)=1-P\\left(X<7\\right)"
+        ]
     },
     {
         "id": "a150a865.3computer1a-h2",
@@ -58,7 +76,17 @@
         "text": "Since $$P\\left(X<x\\right)$$ $$=$$ $$1-e^{\\left(-m x\\right)}$$, then we can use $$P\\left(X>x\\right)=1-1-e^{\\left(-m x\\right)}$$ $$=$$ $$e^{\\left(-m x\\right)}$$. Remember that $$m$$ is our decay parameter respective to the problem that we are facing.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since ;  cap p, open paren,  cap x is less than x, close paren;  ; is equal to;   1 minus; e raised to the open paren negative m x, close paren power; , then we can use ;  cap p, open paren,  cap x is greater than x, close paren; is equal to; 1 minus 1 minus; e raised to the open paren negative m x, close paren power;  ; is equal to;  ; e raised to the open paren negative m x, close paren power; . Remember that  m;  is our decay parameter respective to the problem that we are facing.",
+        "math": [
+            "P\\left(X<x\\right)",
+            "=",
+            "1-e^{\\left(-m x\\right)}",
+            "P\\left(X>x\\right)=1-1-e^{\\left(-m x\\right)}",
+            "=",
+            "e^{\\left(-m x\\right)}",
+            "m"
+        ]
     },
     {
         "id": "a150a865.3computer1a-h3",
@@ -70,6 +98,10 @@
         "text": "$$P\\left(X>7\\right)=e^{7\\left(-0.1\\right)}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ";  cap p, open paren,  cap x is greater than 7, close paren; is equal to, e raised to the 7 times negative 0.1 power;",
+        "math": [
+            "P\\left(X>7\\right)=e^{7\\left(-0.1\\right)}"
+        ]
     }
 ]
