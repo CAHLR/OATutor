@@ -209,9 +209,9 @@ class HintSystem extends React.Component {
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
-                            >
+                            >{console.log("hint.math", hint.math)}
                                 {renderText(
-                                    aiHint? "Hej" : hint.text, // change Hej to the math :)
+                                    aiHint? (hint.math? hint.math : "no math available " ) : hint.text, // new
                                     problemID,
                                     chooseVariables(
                                         Object.assign(
