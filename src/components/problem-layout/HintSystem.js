@@ -157,10 +157,10 @@ class HintSystem extends React.Component {
         this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
     };
 
-    // renderWhiteboard = (event) => {
-
-        
-    // }:
+    renderWhiteboard = (hint) => {
+        return this.state.aiHint? (hint.math? 
+            hint.math.map(math => renderText(math)) : "no math available " ) : hint.text;
+    };
     
     playAgent = (event) => {
         // opens accordionDetails with only math 
@@ -226,7 +226,7 @@ class HintSystem extends React.Component {
                                 style={{ width: "100%" }}
                             > {console.log("hint", hint)}
                                 {renderText(
-                                    aiHint? (hint.math? hint.math : "no math available " ) : hint.text, // new
+                                    this.renderWhiteboard(hint), // new
                                     problemID,
                                     chooseVariables(
                                         Object.assign(
