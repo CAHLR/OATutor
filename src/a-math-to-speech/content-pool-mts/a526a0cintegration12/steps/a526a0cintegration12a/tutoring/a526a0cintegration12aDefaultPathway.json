@@ -7,7 +7,12 @@
         "text": "We will start by converting the word problem into the mathematical expession. According to the Net change theorem, the rate of change of surface of a cube formula will be integrated with the boundaries go from $$x=s$$ to $$x=2s$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "We will start by converting the word problem into the mathematical expession. According to the Net change theorem, the rate of change of surface of a cube formula will be integrated with the boundaries go from  x is equal to s  to  x, is equal to 2 s .",
+        "math": [
+            "$$x=s$$",
+            "$$x=2s$$"
+        ]
     },
     {
         "id": "a526a0cintegration12a-h2",
@@ -42,6 +47,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "With the information given in hint  1 , how can we express the integral?",
+        "math": [
+            "$$1$$"
         ]
     },
     {
@@ -54,7 +63,13 @@
         "text": "The Net Change Theorem giving the integral for determining change in a function F(x) when $$x$$ changes from a to $$b$$ is stated as $$F(b)-F(a)=\\int_{a}^{b} \\frac{d}{\\operatorname{dx}\\left(F\\left(x\\right)\\right)} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The Net Change Theorem giving the integral for determining change in a function F(x) when  x  changes from a to  b  is stated as    f of b minus   f of a is equal to the integral from a to b of fraction, d over, dx of   f of x,  d x",
+        "math": [
+            "$$x$$",
+            "$$b$$",
+            "$$F(b)-F(a)=\\int_{a}^{b} \\frac{d}{\\operatorname{dx}\\left(F\\left(x\\right)\\right)} \\,dx$$"
+        ]
     },
     {
         "id": "a526a0cintegration12a-h4",
@@ -66,7 +81,11 @@
         "text": "$$\\frac{d}{dx} F\\left(x\\right)=\\frac{d}{dx} 6x^2=12x$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "fraction, d over, d x,    f of x is equal to fraction, d over, d x,  6 x squared is equal to 12 x",
+        "math": [
+            "$$\\frac{d}{dx} F\\left(x\\right)=\\frac{d}{dx} 6x^2=12x$$"
+        ]
     },
     {
         "id": "a526a0cintegration12a-h5",
@@ -78,7 +97,14 @@
         "text": "$$\\int_{s}^{2s} 12x \\,dx=\\frac{12x^2}{2}$$ with $$x$$ running from $$x=s$$ to $$x=2s$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "the integral from s to 2 s of 12 x d x is equal to fraction, 12 x squared, over 2,   with  x  running from  x is equal to s  to  x, is equal to 2 s",
+        "math": [
+            "$$\\int_{s}^{2s} 12x \\,dx=\\frac{12x^2}{2}$$",
+            "$$x$$",
+            "$$x=s$$",
+            "$$x=2s$$"
+        ]
     },
     {
         "id": "a526a0cintegration12a-h6",
@@ -90,6 +116,10 @@
         "text": "$$\\frac{12{\\left(2s\\right)}^2}{2}-\\frac{12s^2}{2}=18s^2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "fraction, 12 times, parentheses 2 s  squared, over 2,  minus, fraction, 12 s squared, over 2,  is equal to, 18 s squared",
+        "math": [
+            "$$\\frac{12{\\left(2s\\right)}^2}{2}-\\frac{12s^2}{2}=18s^2$$"
+        ]
     }
 ]

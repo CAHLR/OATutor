@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Scalar multiplication involves finding the product of a constant by each entry in the matrix. Given ;  cap a is equal to; the 2 by 2 matrix; row 1; column 1; a sub 1 comma 1 end sub; column 2; a sub 1 comma 2 end sub; row 2; column 1; a sub 2 comma 1 end sub; column 2; a sub 2 comma 2 end sub; , the scalar multiple\\n c  cap a,  is  c  cap a; is equal to; c times; the 2 by 2 matrix; row 1; column 1; a sub 1 comma 1 end sub; column 2; a sub 1 comma 2 end sub; row 2; column 1; a sub 2 comma 1 end sub; column 2; a sub 2 comma 2 end sub; is equal to; the 2 by 2 matrix; row 1; column 1; c, a sub 1 comma 1 end sub; column 2; c, a sub 1 comma 2 end sub; row 2; column 1; c, a sub 2 comma 1 end sub; column 2; c, a sub 2 comma 2 end sub;",
+        "speech": "Scalar multiplication involves finding the product of a constant by each entry in the matrix. Given    a is equal to the 2 by 2 matrix row 1 column 1 a sub 1 comma 1 end sub column 2 a sub 1 comma 2 end sub row 2 column 1 a sub 2 comma 1 end sub column 2 a sub 2 comma 2 end sub , the scalar multiple\\n c   a,  is  c   a is equal to c times the 2 by 2 matrix row 1 column 1 a sub 1 comma 1 end sub column 2 a sub 1 comma 2 end sub row 2 column 1 a sub 2 comma 1 end sub column 2 a sub 2 comma 2 end sub is equal to the 2 by 2 matrix row 1 column 1 c, a sub 1 comma 1 end sub column 2 c, a sub 1 comma 2 end sub row 2 column 1 c, a sub 2 comma 1 end sub column 2 c, a sub 2 comma 2 end sub",
         "math": [
-            "A=\\begin{bmatrix} a_{1,1} & a_{1,2} \\\\ a_{2,1} & a_{2,2} \\end{bmatrix}",
-            "c A",
-            "c A=c*\\begin{bmatrix} a_{1,1} & a_{1,2} \\\\ a_{2,1} & a_{2,2} \\end{bmatrix}=\\begin{bmatrix} c a_{1,1} & c a_{1,2} \\\\ c a_{2,1} & c a_{2,2} \\end{bmatrix}"
+            "$$A=\\begin{bmatrix} a_{1,1} & a_{1,2} \\\\ a_{2,1} & a_{2,2} \\end{bmatrix}$$",
+            "$$c A$$",
+            "$$c A=c*\\begin{bmatrix} a_{1,1} & a_{1,2} \\\\ a_{2,1} & a_{2,2} \\end{bmatrix}=\\begin{bmatrix} c a_{1,1} & c a_{1,2} \\\\ c a_{2,1} & c a_{2,2} \\end{bmatrix}$$"
         ]
     },
     {
@@ -31,10 +31,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Multiply each entry in C by scalar , 1 half . What is the top left entry, , c sub 1 comma 1 end sub; ?",
+        "speech": "Multiply each entry in C by scalar , 1 half . What is the top left entry, , c sub 1 comma 1 end sub ?",
         "math": [
-            "\\frac{1}{2}",
-            "c_{1,1}"
+            "$$\\frac{1}{2}$$",
+            "$$c_{1,1}$$"
         ]
     },
     {
@@ -53,10 +53,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "What is the bottom left entry, , c sub 2 comma 1 end sub; , after multiplying by  1 half; ?",
+        "speech": "What is the bottom left entry, , c sub 2 comma 1 end sub , after multiplying by  1 half ?",
         "math": [
-            "c_{2,1}",
-            "\\frac{1}{2}"
+            "$$c_{2,1}$$",
+            "$$\\frac{1}{2}$$"
         ]
     },
     {

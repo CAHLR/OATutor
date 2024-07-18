@@ -8,13 +8,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "speech": "Substitute  x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity  or , fraction, negative infinity, over infinity,  , we apply L\u2019H\u00f4pital\u2019s Rule.",
         "math": [
-            "x",
-            "x",
-            "\\frac{0}{0}",
-            "\\frac{\\infty}{\\infty}",
-            "\\frac{-\\infty}{\\infty}"
+            "$$x$$",
+            "$$x$$",
+            "$$\\frac{0}{0}$$",
+            "$$\\frac{\\infty}{\\infty}$$",
+            "$$\\frac{-\\infty}{\\infty}$$"
         ]
     },
     {
@@ -65,12 +65,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "L'H\u00f4pital's rule is a technique to evaluate limits of indeterminate forms: ; 0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; . Since  1 over 0;  is not an indeterminate form, we then have to try another approach. In addition, this problem can be double-checked with a graphing calculator to prove this point.",
+        "speech": "L'H\u00f4pital's rule is a technique to evaluate limits of indeterminate forms:  0 over 0, ,  infinity over infinity  or , fraction, negative infinity, over infinity,  . Since  1 over 0  is not an indeterminate form, we then have to try another approach. In addition, this problem can be double-checked with a graphing calculator to prove this point.",
         "math": [
-            "\\frac{0}{0}",
-            "\\frac{\\infty}{\\infty}",
-            "\\frac{-\\infty}{\\infty}",
-            "\\frac{1}{0}"
+            "$$\\frac{0}{0}$$",
+            "$$\\frac{\\infty}{\\infty}$$",
+            "$$\\frac{-\\infty}{\\infty}$$",
+            "$$\\frac{1}{0}$$"
         ]
     },
     {
@@ -84,9 +84,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the limit as x approaches 0, of cosine of x; 1 over x;",
+        "speech": "the limit as x approaches 0, of cosine of x 1 over x",
         "math": [
-            "\\lim_{x\\to0} cos\\left(x\\right) \\frac{1}{x}"
+            "$$\\lim_{x\\to0} cos\\left(x\\right) \\frac{1}{x}$$"
         ]
     },
     {
@@ -123,10 +123,10 @@
                 "license": ""
             }
         ],
-        "speech": "What is a value of the limit as  x  approaches  0;  from the right side of the origin?",
+        "speech": "What is a value of the limit as  x  approaches  0  from the right side of the origin?",
         "math": [
-            "x",
-            "0"
+            "$$x$$",
+            "$$0$$"
         ]
     },
     {
@@ -156,9 +156,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the limit as x approaches 0, of; fraction, fraction, d over, d x, end fraction; cosine of x, over, fraction, d over, d x, end fraction; x, end fraction; is equal to; the limit as x approaches 0, of, fraction, negative sine of x, over 1, end fraction;",
+        "speech": "the limit as x approaches 0, of fraction, fraction, d over, d x,  cosine of x, over, fraction, d over, d x,  x,  is equal to the limit as x approaches 0, of, fraction, negative sine of x, over 1,",
         "math": [
-            "\\lim_{x\\to0} \\frac{\\frac{d}{dx} cos\\left(x\\right)}{\\frac{d}{dx} x}=\\lim_{x\\to0} \\frac{-sin\\left(x\\right)}{1}"
+            "$$\\lim_{x\\to0} \\frac{\\frac{d}{dx} cos\\left(x\\right)}{\\frac{d}{dx} x}=\\lim_{x\\to0} \\frac{-sin\\left(x\\right)}{1}$$"
         ]
     },
     {
@@ -172,9 +172,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; fraction, negative sine of 0, over 1, end fraction; is equal to 0;",
+        "speech": "fraction, negative sine of 0, over 1,  is equal to 0",
         "math": [
-            "\\frac{-sin\\left(0\\right)}{1}=0"
+            "$$\\frac{-sin\\left(0\\right)}{1}=0$$"
         ]
     }
 ]

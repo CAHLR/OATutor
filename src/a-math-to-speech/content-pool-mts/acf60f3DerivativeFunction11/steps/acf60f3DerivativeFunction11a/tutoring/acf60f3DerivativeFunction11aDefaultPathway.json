@@ -7,7 +7,11 @@
         "text": "Start directly with the definition of the derivative function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Start directly with the definition of the derivative function.  f prime times x, is equal to the limit as h approaches 0, of fraction, f of, parentheses x plus h,  minus f of x, over h,",
+        "math": [
+            "$$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction11a-h2",
@@ -19,7 +23,11 @@
         "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{x+h+\\frac{1}{x+h}-x+\\frac{1}{x}}{h}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "We will get  f prime, of x, is equal to the limit as h approaches 0, of fraction, x plus h plus, fraction, 1 over, x plus h,  minus x plus, fraction, 1 over x,  over h,",
+        "math": [
+            "$$f'(x)=\\lim_{h\\to0} \\frac{x+h+\\frac{1}{x+h}-x+\\frac{1}{x}}{h}$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction11a-h3",
@@ -31,7 +39,11 @@
         "text": "Expand $$\\frac{x+h+\\frac{1}{x+h}-x+\\frac{1}{x}}{h}$$ and Simplify",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Expand  fraction, x plus h plus, fraction, 1 over, x plus h,  minus x plus, fraction, 1 over x,  over h,   and Simplify",
+        "math": [
+            "$$\\frac{x+h+\\frac{1}{x+h}-x+\\frac{1}{x}}{h}$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction11a-h4",
@@ -53,6 +65,10 @@
             "$$\\lim_{h\\to0} \\frac{1}{x^2+xh}$$",
             "$$\\lim_{h\\to0} 1-\\frac{1}{x^2+xh}$$",
             "$$\\lim_{h\\to0} 1+\\frac{1}{x^2+xh}$$"
+        ],
+        "speech": "What will get?",
+        "math": [
+            ""
         ]
     },
     {
@@ -65,6 +81,11 @@
         "text": "Evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Evaluate the limit by inserting h-->0  is equal to   h is equal to 0",
+        "math": [
+            "$$=$$",
+            "$$h=0$$"
+        ]
     }
 ]

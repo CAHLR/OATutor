@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Let ; y is equal to, x to the x-th . Using one-to-one property of logarithms, we obtain  l n of y; is equal to; the natural log of, open paren x to the x-th close paren; . According to the Power Properties of Logarithms, the expression can be written as  l n of y; is equal to, x the natural log of, x; .",
+        "speech": "Let  y is equal to, x to the x-th . Using one-to-one property of logarithms, we obtain  l n of y is equal to the natural log of, parentheses x to the x-th  . According to the Power Properties of Logarithms, the expression can be written as  l n of y is equal to, x the natural log of, x .",
         "math": [
-            "y=x^x",
-            "ln(y)=\\ln(x^x)",
-            "ln(y)=x \\ln(x)"
+            "$$y=x^x$$",
+            "$$ln(y)=\\ln(x^x)$$",
+            "$$ln(y)=x \\ln(x)$$"
         ]
     },
     {
@@ -26,9 +26,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "If we immediately evaluate the limit of the given function, the result would be  0 to the 0;  which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
+        "speech": "If we immediately evaluate the limit of the given function, the result would be  0 to the 0  which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
         "math": [
-            "0^0"
+            "$$0^0$$"
         ]
     },
     {
@@ -58,13 +58,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Substitute ; x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity;  or , fraction, negative infinity, over infinity, end fraction; , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "speech": "Substitute  x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity  or , fraction, negative infinity, over infinity,  , we apply L\u2019H\u00f4pital\u2019s Rule.",
         "math": [
-            "x",
-            "x",
-            "\\frac{0}{0}",
-            "\\frac{\\infty}{\\infty}",
-            "\\frac{-\\infty}{\\infty}"
+            "$$x$$",
+            "$$x$$",
+            "$$\\frac{0}{0}$$",
+            "$$\\frac{\\infty}{\\infty}$$",
+            "$$\\frac{-\\infty}{\\infty}$$"
         ]
     },
     {
@@ -127,9 +127,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; fraction, the natural log of, 0, over, fraction, 1 over 0, end fraction; end fraction; is equal to, fraction, negative infinity, over infinity, end fraction;",
+        "speech": "fraction, the natural log of, 0, over, fraction, 1 over 0,   is equal to, fraction, negative infinity, over infinity,",
         "math": [
-            "\\frac{\\ln(0)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}"
+            "$$\\frac{\\ln(0)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}$$"
         ]
     },
     {
@@ -202,9 +202,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; minus 0; is equal to 0;",
+        "speech": "minus 0 is equal to 0",
         "math": [
-            "-(0)=0"
+            "$$-(0)=0$$"
         ]
     },
     {
@@ -219,9 +219,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "We set ; l n of y, is equal to, x the natural log of, x;  in the very first step therefore we can obtain /lim{x,0**+,x*ln(x)}=/lim{x,0**+,ln(y)}=0.",
+        "speech": "We set  l n of y, is equal to, x the natural log of, x  in the very first step therefore we can obtain /lim{x,0**+,x*ln(x)}=/lim{x,0**+,ln(y)}=0.",
         "math": [
-            "ln(y)=x \\ln(x)"
+            "$$ln(y)=x \\ln(x)$$"
         ]
     },
     {
@@ -268,9 +268,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the limit as x approaches 0, of y; is equal to; the limit as x approaches 0, of x to the x-th; is equal to 1;",
+        "speech": "the limit as x approaches 0, of y is equal to the limit as x approaches 0, of x to the x-th is equal to 1",
         "math": [
-            "/lim{x,0,(y)=\\lim_{x\\to0} x^x=1"
+            "$$/lim{x,0,(y)=\\lim_{x\\to0} x^x=1$$"
         ]
     }
 ]

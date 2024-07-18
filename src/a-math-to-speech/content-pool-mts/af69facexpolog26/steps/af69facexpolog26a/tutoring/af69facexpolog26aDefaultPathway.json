@@ -7,7 +7,12 @@
         "text": "We are able to use the formula $$y=A_0 e^{k t}$$ where $$A_0$$ is equal to the value at time zero, e is Euler\u2019s constant, and k is a positive constant that determines the rate of growth or decay to model exponential growth or decay respectively. In the case of an exponential growth, the k value is positive while in the case of an exponential decay, the k value is negative.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are able to use the formula  y is equal to   a sub 0, e raised to the k t power  where    a sub 0  is equal to the value at time zero, e is Euler\u2019s constant, and k is a positive constant that determines the rate of growth or decay to model exponential growth or decay respectively. In the case of an exponential growth, the k value is positive while in the case of an exponential decay, the k value is negative.",
+        "math": [
+            "$$y=A_0 e^{k t}$$",
+            "$$A_0$$"
+        ]
     },
     {
         "id": "af69facexpolog26a-h2",
@@ -19,7 +24,15 @@
         "text": "We were given that the count was $$360$$ at $$5$$ minutes and the count was $$1000$$ at $$20$$ minutes. We can express this as two equations that can be used to solve for the initial population, $$A_0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We were given that the count was  360  at  5  minutes and the count was  1000  at  20  minutes. We can express this as two equations that can be used to solve for the initial population,    a sub 0 .",
+        "math": [
+            "$$360$$",
+            "$$5$$",
+            "$$1000$$",
+            "$$20$$",
+            "$$A_0$$"
+        ]
     },
     {
         "id": "af69facexpolog26a-h3",
@@ -41,6 +54,12 @@
             "$$360=A_0 e^{5k}$$",
             "$$y=360e^{5k}$$",
             "$$360=A_0 e^{5t}$$"
+        ],
+        "speech": "Find the first equation. Substitute  y is equal to 360  and  t, is equal to 5  into the exponential growth model,  y, is equal to,   a sub 0, e raised to the k t power . What is the expression now?",
+        "math": [
+            "$$y=360$$",
+            "$$t=5$$",
+            "$$y=A_0 e^{k t}$$"
         ]
     },
     {
@@ -63,6 +82,12 @@
             "$$1000=A_0 e^{20k}$$",
             "$$y=1000e^{20k}$$",
             "$$1000=A_0 e^{20t}$$"
+        ],
+        "speech": "Find the second equation. Substitute  y is equal to 1000  and  t, is equal to 20  into the exponential growth model,  y, is equal to,   a sub 0, e raised to the k t power . What is the expression now?",
+        "math": [
+            "$$y=1000$$",
+            "$$t=20$$",
+            "$$y=A_0 e^{k t}$$"
         ]
     },
     {
@@ -75,7 +100,14 @@
         "text": "If we let $$g=e^{5k}$$, then in the first equation, $$360=g A_0$$ and $$1000=g^4 A_0$$. We can use this information to solve for $$A_0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If we let  g is equal to, e raised to the 5 k power , then in the first equation,  360 is equal to, g   a sub 0,  and  1000 is equal to g to the fourth   a sub 0, . We can use this information to solve for    a sub 0 .",
+        "math": [
+            "$$g=e^{5k}$$",
+            "$$360=g A_0$$",
+            "$$1000=g^4 A_0$$",
+            "$$A_0$$"
+        ]
     },
     {
         "id": "af69facexpolog26a-h6",
@@ -92,7 +124,11 @@
         "text": "Solve for g. We can do so by dividing the second equation by the first equation to obtain $$g^3$$. Then, cube root the value to obtain g. What is g?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve for g. We can do so by dividing the second equation by the first equation to obtain  g cubed . Then, cube root the value to obtain g. What is g?",
+        "math": [
+            "$$g^3$$"
+        ]
     },
     {
         "id": "af69facexpolog26a-h7",
@@ -109,6 +145,11 @@
         "text": "Substitute $$g=\\sqrt[3]{\\frac{1000}{360}}$$ into the first equation to obtain $$A_0$$. Round to the nearest whole number.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  g is equal to the cube root of 1000 over 360, end root  into the first equation to obtain    a sub 0 . Round to the nearest whole number.",
+        "math": [
+            "$$g=\\sqrt[3]{\\frac{1000}{360}}$$",
+            "$$A_0$$"
+        ]
     }
 ]

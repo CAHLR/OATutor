@@ -7,7 +7,11 @@
         "text": "First use the trigonometric identity $${cos}^2 \\theta=\\frac{1+cos2 \\theta}{2}$$ to rewrite the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "First use the trigonometric identity  cosine squared of theta, is equal to fraction, 1 plus, cosine of 2 theta, over 2,   to rewrite the integral.",
+        "math": [
+            "$${cos}^2 \\theta=\\frac{1+cos2 \\theta}{2}$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution7a-h2",
@@ -28,6 +32,10 @@
         "choices": [
             "$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{1+cos2 \\theta}{2} \\,dtheta$$",
             "$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{cos2 \\theta}{2} \\,dtheta$$"
+        ],
+        "speech": "What is the new integral?",
+        "math": [
+            ""
         ]
     },
     {
@@ -40,7 +48,13 @@
         "text": "Make a substitution to evaluate the second integral by letting $$u=2theta$$. Then, $$du=2dtheta$$, or $$\\frac{1}{2} du=dtheta$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Make a substitution to evaluate the second integral by letting  u is equal to, 2 theta, . Then,  d u is equal to 2 dtheta, , or  1 half d u is equal to dtheta .",
+        "math": [
+            "$$u=2theta$$",
+            "$$du=2dtheta$$",
+            "$$\\frac{1}{2} du=dtheta$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution7a-h4",
@@ -52,6 +66,13 @@
         "text": "When $$theta=0$$, $$u=0$$, and when $$theta=\\frac{\\pi}{2}$$, $$u=pi$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "When  theta is equal to 0 ,  u, is equal to, 0 , and when  theta, is equal to, pi over 2, ,  u, is equal to p i .",
+        "math": [
+            "$$theta=0$$",
+            "$$u=0$$",
+            "$$theta=\\frac{\\pi}{2}$$",
+            "$$u=pi$$"
+        ]
     }
 ]

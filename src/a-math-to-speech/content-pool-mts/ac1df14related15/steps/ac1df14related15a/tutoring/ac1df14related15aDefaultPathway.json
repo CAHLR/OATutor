@@ -7,7 +7,11 @@
         "text": "We can use the equation for volume of cone and differentiate it with respect to time",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "We can use the equation for volume of cone and differentiate it with respect to time",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "ac1df14related15a-h2",
@@ -29,6 +33,11 @@
             "$$V=\\frac{1}{3} \\pi r h$$",
             "$$V=\\frac{1}{3} \\pi r^2 h$$",
             "$$V=\\frac{1}{3} \\pi r^3 h$$"
+        ],
+        "speech": "Let's set volume of cone as V, height as  h  and radius as  r, . What is the equation for computing V?",
+        "math": [
+            "$$h$$",
+            "$$r$$"
         ]
     },
     {
@@ -51,6 +60,11 @@
             "$$r=h$$",
             "$$r=2h$$",
             "$$r=3h$$"
+        ],
+        "speech": "What is  r  using  h, ?",
+        "math": [
+            "$$r$$",
+            "$$h$$"
         ]
     },
     {
@@ -73,6 +87,10 @@
             "$$V=3\\pi h$$",
             "$$V=3\\pi h^2$$",
             "$$V=3\\pi h^3$$"
+        ],
+        "speech": "What is the equation for volume after plugging in , r is equal to 3 h, ?",
+        "math": [
+            "$$r=3h$$"
         ]
     },
     {
@@ -85,7 +103,11 @@
         "text": "Next step is to differentiate both sides of the equation with respect to time (t) to relate $$\\frac{dh}{dt}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Next step is to differentiate both sides of the equation with respect to time (t) to relate  fraction, d h, over, d t,",
+        "math": [
+            "$$\\frac{dh}{dt}$$"
+        ]
     },
     {
         "id": "ac1df14related15a-h6",
@@ -107,6 +129,10 @@
             "$$\\frac{dV}{dt}=3\\operatorname{\\pi}\\left(h^2\\right) \\frac{dh}{dt}$$",
             "$$\\frac{dV}{dt}=9\\pi h \\frac{dh}{dt}$$",
             "$$\\frac{dV}{dt}=9\\pi h^2 \\frac{dh}{dt}$$"
+        ],
+        "speech": "What is differentiated equation?",
+        "math": [
+            ""
         ]
     },
     {
@@ -119,7 +145,14 @@
         "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dV}{dt}$$ is $$\\frac{\\operatorname{10}\\left({ft}^3\\right)}{min}$$, and $$h=5ft$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "We want to find  fraction, d h, over, d t,   when  fraction, d   v, over, d t,   is  fraction, 10 of, parentheses f t cubed, , over min,  , and  h is equal to, 5 f t",
+        "math": [
+            "$$\\frac{dh}{dt}$$",
+            "$$\\frac{dV}{dt}$$",
+            "$$\\frac{\\operatorname{10}\\left({ft}^3\\right)}{min}$$",
+            "$$h=5ft$$"
+        ]
     },
     {
         "id": "ac1df14related15a-h8",
@@ -131,6 +164,12 @@
         "text": "Final step is to plug in the values of $$h$$, $$\\frac{dV}{dt}$$ , into the differentiated equation to find $$\\frac{dh}{dt}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Final step is to plug in the values of  h ,  fraction, d   v, over, d t,   , into the differentiated equation to find , fraction, d h, over, d t,",
+        "math": [
+            "$$h$$",
+            "$$\\frac{dV}{dt}$$",
+            "$$\\frac{dh}{dt}$$"
+        ]
     }
 ]

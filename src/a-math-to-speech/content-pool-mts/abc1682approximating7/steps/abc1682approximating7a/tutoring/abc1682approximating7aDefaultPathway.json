@@ -7,7 +7,13 @@
         "text": "The first step is to divide the interval from $$0$$ to $$\\frac{\\pi}{2}$$ into $$n$$ equal subintervals. These subintervals can be seen as rectangles.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The first step is to divide the interval from , 0  to  pi over 2,  into  n  equal subintervals. These subintervals can be seen as rectangles.\\n##figure1.gif##",
+        "math": [
+            "$$0$$",
+            "$$\\frac{\\pi}{2}$$",
+            "$$n$$"
+        ]
     },
     {
         "id": "abc1682approximating7a-h2",
@@ -24,7 +30,11 @@
         "text": "How many subinterval or rectangle can we create in this problem?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "How many subinterval or rectangle can we create in this problem?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating7a-h3",
@@ -41,7 +51,11 @@
         "text": "What is the \u0394x of each rectangle?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the \u0394x of each rectangle?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating7a-h4",
@@ -53,7 +67,12 @@
         "text": "The graph of $$y=sinx$$ is divided into six rectangle: $$\u0394x=\\frac{\\frac{\\pi}{2}}{6}=\\frac{\\pi}{12}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The graph of  y is equal to, sinx  is divided into six rectangle:    delta x is equal to fraction, fraction, pi over 2,  over 6,  is equal to pi over 12",
+        "math": [
+            "$$y=sinx$$",
+            "$$\u0394x=\\frac{\\frac{\\pi}{2}}{6}=\\frac{\\pi}{12}$$"
+        ]
     },
     {
         "id": "abc1682approximating7a-h5",
@@ -65,7 +84,14 @@
         "text": "As the graphs increases in the intervals $$[0,\\frac{\\pi}{2}]$$, we will use left-endpoint approximation to calculate the lower sum. We begin with the first rectangle whose starting point of $$x=0$$ and a width of $$\\frac{\\pi}{12}$$. The rectangle will end at the point $$x=\\frac{\\pi}{12}$$ and that endpoint of the current rectangle is also the starting point of the next rectangle.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "As the graphs increases in the intervals  the closed interval from 0 to pi over 2 , we will use left-endpoint approximation to calculate the lower sum. We begin with the first rectangle whose starting point of  x is equal to, 0  and a width of  pi over 12, . The rectangle will end at the point  x is equal to pi over 12  and that endpoint of the current rectangle is also the starting point of the next rectangle.",
+        "math": [
+            "$$[0,\\frac{\\pi}{2}]$$",
+            "$$x=0$$",
+            "$$\\frac{\\pi}{12}$$",
+            "$$x=\\frac{\\pi}{12}$$"
+        ]
     },
     {
         "id": "abc1682approximating7a-h6",
@@ -86,6 +112,10 @@
         "choices": [
             "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$",
             "$$(\\frac{\\pi}{12},\\frac{\\pi}{6})$$"
+        ],
+        "speech": "Express in interval notation, what are the starting and ending points of the next rectangle?",
+        "math": [
+            ""
         ]
     },
     {
@@ -98,7 +128,17 @@
         "text": "Continuing the process, we obtain $$6$$ intervals which are $$[0,\\frac{\\pi}{12}]$$, $$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$, $$[\\frac{\\pi}{6},\\frac{\\pi}{4}]$$, $$[\\frac{\\pi}{4},\\frac{\\pi}{3}]$$, $$[\\frac{\\pi}{3},\\frac{5\\pi}{12}]$$ and $$[\\frac{5\\pi}{12},\\frac{\\pi}{2}]$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Continuing the process, we obtain  6  intervals which are , the closed interval from 0 to pi over 12 , , the closed interval from pi over 12, to pi over 6 , , the closed interval from pi over 6, to pi over 4 , , the closed interval from pi over 4, to pi over 3 ,  the closed interval from pi over 3, to fraction, 5 pi, over 12,   and  the closed interval from fraction, 5 pi, over 12,  to pi over 2 .",
+        "math": [
+            "$$6$$",
+            "$$[0,\\frac{\\pi}{12}]$$",
+            "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$",
+            "$$[\\frac{\\pi}{6},\\frac{\\pi}{4}]$$",
+            "$$[\\frac{\\pi}{4},\\frac{\\pi}{3}]$$",
+            "$$[\\frac{\\pi}{3},\\frac{5\\pi}{12}]$$",
+            "$$[\\frac{5\\pi}{12},\\frac{\\pi}{2}]$$"
+        ]
     },
     {
         "id": "abc1682approximating7a-h8",
@@ -115,7 +155,11 @@
         "text": "What is the area under the curve of the given function using the Riemann sum? (Three decimal places)",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the area under the curve of the given function using the Riemann sum? (Three decimal places)",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating7a-h9",
@@ -127,7 +171,11 @@
         "text": "sum{i\\=0}{5}{sin(x_i)*(pi/12)}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "sum{i\\=0}{5}{sin(x_i)*(pi/12)}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating7a-h10",
@@ -139,6 +187,10 @@
         "text": "$$A=sin\\left(0\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{12}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{6}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{4}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{3}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{5\\pi}{12}\\right) \\frac{\\pi}{12}=0.863$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "a is equal to sine of 0 pi over 12 plus sine of, parentheses pi over 12,  pi over 12 plus sine of, parentheses pi over 6,  pi over 12 plus sine of, parentheses pi over 4,  pi over 12 plus sine of, parentheses pi over 3,  pi over 12 plus sine of parentheses, fraction, 5 pi, over 12,   pi over 12 is equal to 0.863",
+        "math": [
+            "$$A=sin\\left(0\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{12}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{6}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{4}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{3}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{5\\pi}{12}\\right) \\frac{\\pi}{12}=0.863$$"
+        ]
     }
 ]

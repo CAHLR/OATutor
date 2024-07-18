@@ -24,11 +24,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Yes, ; fraction, 9 x plus 14, over, x plus 7, end fraction;  and , fraction, x squared, over, x plus 7, end fraction;  shared the same common denominator of  x; plus 7; .",
+        "speech": "Yes,  fraction, 9 x plus 14, over, x plus 7,   and , fraction, x squared, over, x plus 7,   shared the same common denominator of  x plus 7 .",
         "math": [
-            "\\frac{9x+14}{x+7}",
-            "\\frac{x^2}{x+7}",
-            "x+7"
+            "$$\\frac{9x+14}{x+7}$$",
+            "$$\\frac{x^2}{x+7}$$",
+            "$$x+7$$"
         ]
     },
     {
@@ -63,10 +63,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "What is the sum of numerators for ; fraction, 9 x plus 14, over, x plus 7, end fraction;  and , fraction, x squared, over, x plus 7, end fraction; ?",
+        "speech": "What is the sum of numerators for  fraction, 9 x plus 14, over, x plus 7,   and , fraction, x squared, over, x plus 7,  ?",
         "math": [
-            "\\frac{9x+14}{x+7}",
-            "\\frac{x^2}{x+7}"
+            "$$\\frac{9x+14}{x+7}$$",
+            "$$\\frac{x^2}{x+7}$$"
         ]
     },
     {
@@ -101,9 +101,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Factor , x squared plus 9 x plus 14; .",
+        "speech": "Factor , x squared plus 9 x plus 14 .",
         "math": [
-            "x^2+9x+14"
+            "$$x^2+9x+14$$"
         ]
     },
     {
@@ -122,18 +122,18 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "In order to ; factor of, open paren x squared close paren; plus 9 x plus; 14 , you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling. ; open paren x plus a, close paren; times, open paren x plus b, close paren; is equal to; x squared plus, open paren a plus b, close paren; times x; plus, a b . In this case, we get  a b; is equal to, 14  and  a, plus b, is equal to, 9 . Assume both a and  b  are integers,  a; is equal to 2  and  b, is equal to, 7  is only one possible combination that satisfies  a b, is equal to, 14  and  a, plus b, is equal to; 9 . So you can factor  x squared, plus 9 x plus 14;  as ?",
+        "speech": "In order to  factor of, parentheses x squared  plus 9 x plus 14 , you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling.  parentheses x plus a,  times, parentheses x plus b,  is equal to x squared plus, parentheses a plus b,  times x plus, a b . In this case, we get  a b is equal to, 14  and  a, plus b, is equal to, 9 . Assume both a and  b  are integers,  a is equal to 2  and  b, is equal to, 7  is only one possible combination that satisfies  a b, is equal to, 14  and  a, plus b, is equal to 9 . So you can factor  x squared, plus 9 x plus 14  as ?",
         "math": [
-            "\\operatorname{factor}\\left(x^2\\right)+9x+14",
-            "\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab",
-            "a b=14",
-            "a+b=9",
-            "b",
-            "a=2",
-            "b=7",
-            "a b=14",
-            "a+b=9",
-            "x^2+9x+14"
+            "$$\\operatorname{factor}\\left(x^2\\right)+9x+14$$",
+            "$$\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab$$",
+            "$$a b=14$$",
+            "$$a+b=9$$",
+            "$$b$$",
+            "$$a=2$$",
+            "$$b=7$$",
+            "$$a b=14$$",
+            "$$a+b=9$$",
+            "$$x^2+9x+14$$"
         ]
     },
     {
@@ -147,11 +147,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "From above steps, we get the sum of numerator is ; open paren x plus 2, close paren; times, open paren x plus 7, close paren;  and the denominator is  x; plus; 7 . So we can rewrite((9*x+14)/(x+7))+((x**2)/(x+7))as ; fraction, open paren x plus 2, close paren; times, open paren x plus 7, close paren, over, x plus 7, end fraction;",
+        "speech": "From above steps, we get the sum of numerator is  parentheses x plus 2,  times, parentheses x plus 7,   and the denominator is  x plus 7 . So we can rewrite((9*x+14)/(x+7))+((x**2)/(x+7))as  fraction, parentheses x plus 2,  times, parentheses x plus 7, , over, x plus 7,",
         "math": [
-            "\\left(x+2\\right) \\left(x+7\\right)",
-            "x+7",
-            "\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}"
+            "$$\\left(x+2\\right) \\left(x+7\\right)$$",
+            "$$x+7$$",
+            "$$\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}$$"
         ]
     },
     {
@@ -165,9 +165,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Are there any ways to simplify ; fraction, open paren x plus 2, close paren; times, open paren x plus 7, close paren, over, x plus 7, end fraction; ?",
+        "speech": "Are there any ways to simplify  fraction, parentheses x plus 2,  times, parentheses x plus 7, , over, x plus 7,  ?",
         "math": [
-            "\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}"
+            "$$\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}$$"
         ]
     },
     {
@@ -186,9 +186,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "What is the greatest common factor shared by the numerator and denominator in ; fraction, open paren x plus 2, close paren; times, open paren x plus 7, close paren, over, x plus 7, end fraction; ?",
+        "speech": "What is the greatest common factor shared by the numerator and denominator in  fraction, parentheses x plus 2,  times, parentheses x plus 7, , over, x plus 7,  ?",
         "math": [
-            "\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}"
+            "$$\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}$$"
         ]
     },
     {
@@ -207,10 +207,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "As the final step, we cancel out ; x plus; 7  on both numerator and denominator, what is the simplified form of ; fraction, open paren x plus 2, close paren; times, open paren x plus 7, close paren, over, x plus 7, end fraction; ?",
+        "speech": "As the final step, we cancel out  x plus 7  on both numerator and denominator, what is the simplified form of  fraction, parentheses x plus 2,  times, parentheses x plus 7, , over, x plus 7,  ?",
         "math": [
-            "x+7",
-            "\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}"
+            "$$x+7$$",
+            "$$\\frac{\\left(x+2\\right) \\left(x+7\\right)}{x+7}$$"
         ]
     },
     {
@@ -224,17 +224,17 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Note that the ; expression of; open paren; fraction, 9 x plus 14, over, x plus 7, end fraction; close paren; plus; fraction, x squared, over, x plus 7, end fraction;  and  x; plus; 2  are different because the domain of ; fraction, 9 x plus 14, over, x plus 7, end fraction; plus; fraction, x squared, over, x plus 7, end fraction;  does not include  x; is equal to; negative 7 . The domain of  x, plus 2  includes  x; is equal to; negative 7 . Strictly speaking, ; fraction, 9 x plus 14, over, x plus 7, end fraction; plus; fraction, x squared, over, x plus 7, end fraction;  equals  x; plus 2  excluding the domain  x; is equal to negative 7; .",
+        "speech": "Note that the  expression of parentheses fraction, 9 x plus 14, over, x plus 7,   plus fraction, x squared, over, x plus 7,   and  x plus 2  are different because the domain of  fraction, 9 x plus 14, over, x plus 7,  plus fraction, x squared, over, x plus 7,   does not include  x is equal to negative 7 . The domain of  x, plus 2  includes  x is equal to negative 7 . Strictly speaking,  fraction, 9 x plus 14, over, x plus 7,  plus fraction, x squared, over, x plus 7,   equals  x plus 2  excluding the domain  x is equal to negative 7 .",
         "math": [
-            "\\operatorname{expression}\\left(\\frac{9x+14}{x+7}\\right)+\\frac{x^2}{x+7}",
-            "x+2",
-            "\\frac{9x+14}{x+7}+\\frac{x^2}{x+7}",
-            "x=-7",
-            "x+2",
-            "x=-7",
-            "\\frac{9x+14}{x+7}+\\frac{x^2}{x+7}",
-            "x+2",
-            "x=-7"
+            "$$\\operatorname{expression}\\left(\\frac{9x+14}{x+7}\\right)+\\frac{x^2}{x+7}$$",
+            "$$x+2$$",
+            "$$\\frac{9x+14}{x+7}+\\frac{x^2}{x+7}$$",
+            "$$x=-7$$",
+            "$$x+2$$",
+            "$$x=-7$$",
+            "$$\\frac{9x+14}{x+7}+\\frac{x^2}{x+7}$$",
+            "$$x+2$$",
+            "$$x=-7$$"
         ]
     }
 ]

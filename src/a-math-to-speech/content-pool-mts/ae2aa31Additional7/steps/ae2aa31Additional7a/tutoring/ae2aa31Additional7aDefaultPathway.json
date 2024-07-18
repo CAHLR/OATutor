@@ -7,7 +7,11 @@
         "text": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h2",
@@ -19,7 +23,14 @@
         "text": "Based on the problem, $$H_0$$: $$\u03bc=16.43$$ $$H_a$$: $$\u03bc<16.43$$. The \"<\" tells you this is left-tailed.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Based on the problem,    h sub 0 :  mu, is equal to 16.43     h sub a :  mu is less than 16.43 . The \"<\" tells you this is left-tailed.",
+        "math": [
+            "$$H_0$$",
+            "$$\u03bc=16.43$$",
+            "$$H_a$$",
+            "$$\u03bc<16.43$$"
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h3",
@@ -31,7 +42,11 @@
         "text": "Determine the distribution needed. $$\ud835\udc4b~\ud835\udc41(\ud835\udf07,\\frac{\u03c3_X}{\\sqrt{n}})$$. Fill this in with values.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the distribution needed.    x   n of parentheses mu comma fraction, sigma sub   x, over, the square root of n   . Fill this in with values.",
+        "math": [
+            "$$\ud835\udc4b~\ud835\udc41(\ud835\udf07,\\frac{\u03c3_X}{\\sqrt{n}})$$"
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h4",
@@ -65,6 +80,11 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "We know  sigma is equal to 0.8  and  n, is equal to 15 . What is \u03bc?",
+        "math": [
+            "$$\u03c3=0.8$$",
+            "$$n=15$$"
         ]
     },
     {
@@ -77,7 +97,11 @@
         "text": "Calculate the $$p-value$$ using the normal distribution for a mean. We need to know the sample mean for this.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the  p minus value  using the normal distribution for a mean. We need to know the sample mean for this.",
+        "math": [
+            "$$p-value$$"
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h6",
@@ -94,7 +118,11 @@
         "text": "What does the problem say is the sample mean?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What does the problem say is the sample mean?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h7",
@@ -106,7 +134,12 @@
         "text": "$$p-value=P\\left(x<16\\right)=0.0187$$. The $$p-value$$ is the area to the left of the sample mean.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "p minus value, is equal to   p, parentheses, x is less than 16,  is equal to, 0.0187 . The  p, minus value  is the area to the left of the sample mean.",
+        "math": [
+            "$$p-value=P\\left(x<16\\right)=0.0187$$",
+            "$$p-value$$"
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h8",
@@ -118,7 +151,11 @@
         "text": "Compare \\alpha and the $$p-value$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Compare \\alpha and the  p minus value, .",
+        "math": [
+            "$$p-value$$"
+        ]
     },
     {
         "id": "ae2aa31Additional7a-h9",
@@ -139,6 +176,10 @@
         "choices": [
             "Less than",
             "Greater than"
+        ],
+        "speech": "Is \\alpha less than or greater than the  p minus value, ?",
+        "math": [
+            "$$p-value$$"
         ]
     },
     {
@@ -151,6 +192,12 @@
         "text": "Since \\alpha>p-value, we would reject $$H_0$$. This means that you reject $$\u03bc=16.43$$. In other words, you do not think Jeffrey swims the 25-yard freestyle in $$16.43$$ seconds but faster with the new goggles. Find the conclusion that matches with this idea.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since \\alpha>p-value, we would reject    h sub 0 . This means that you reject  mu, is equal to, 16.43 . In other words, you do not think Jeffrey swims the 25-yard freestyle in  16.43  seconds but faster with the new goggles. Find the conclusion that matches with this idea.",
+        "math": [
+            "$$H_0$$",
+            "$$\u03bc=16.43$$",
+            "$$16.43$$"
+        ]
     }
 ]

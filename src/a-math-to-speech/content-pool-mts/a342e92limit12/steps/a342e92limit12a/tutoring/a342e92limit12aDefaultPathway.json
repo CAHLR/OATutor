@@ -52,7 +52,7 @@
         ],
         "speech": "Is  n  an even or odd integer?",
         "math": [
-            "n"
+            "$$n$$"
         ]
     },
     {
@@ -78,7 +78,7 @@
         ],
         "speech": "Given that  n  is a positive even integer, what is the limit?",
         "math": [
-            "n"
+            "$$n$$"
         ]
     },
     {
@@ -92,17 +92,17 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "From the function ; the limit as x \toa, of; fraction, 1 over, open paren x minus a, close paren to the n-th, end fraction; , we know that  n  ; is equal to;   4  in ; the limit as x approaches negative 3, of; fraction, 1 over, open paren x plus 3, close paren to the fourth, end fraction; . According to the Infinite Limits from Positive Integers Theorem, if  n  is a positive even integer, then ; the limit as x \toa, of; fraction, 1 over, open paren x minus a, close paren to the n-th, end fraction; is equal to; positive infinity . Since  4  is a positive even integer, this means that ; the limit as x approaches negative 3, of; fraction, 1 over, open paren x plus 3, close paren to the fourth, end fraction; is equal to positive infinity; .",
+        "speech": "From the function  the limit as x \toa, of fraction, 1 over, parentheses x minus a,  to the n-th,  , we know that  n   is equal to   4  in  the limit as x approaches negative 3, of fraction, 1 over, parentheses x plus 3,  to the fourth,  . According to the Infinite Limits from Positive Integers Theorem, if  n  is a positive even integer, then  the limit as x \toa, of fraction, 1 over, parentheses x minus a,  to the n-th,  is equal to positive infinity . Since  4  is a positive even integer, this means that  the limit as x approaches negative 3, of fraction, 1 over, parentheses x plus 3,  to the fourth,  is equal to positive infinity .",
         "math": [
-            "\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}",
-            "n",
-            "=",
-            "4",
-            "\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}",
-            "n",
-            "\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}=+\\infty",
-            "4",
-            "\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}=+\\infty"
+            "$$\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}$$",
+            "$$n$$",
+            "$$=$$",
+            "$$4$$",
+            "$$\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}$$",
+            "$$n$$",
+            "$$\\lim_{x\\toa} \\frac{1}{{\\left(x-a\\right)}^n}=+\\infty$$",
+            "$$4$$",
+            "$$\\lim_{x\\to-3} \\frac{1}{{\\left(x+3\\right)}^4}=+\\infty$$"
         ]
     }
 ]

@@ -7,7 +7,11 @@
         "text": "Start directly with the definition of the derivative function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Start directly with the definition of the derivative function.  f prime times x, is equal to the limit as h approaches 0, of fraction, f of, parentheses x plus h,  minus f of x, over h,",
+        "math": [
+            "$$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction7a-h2",
@@ -19,7 +23,11 @@
         "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{\\frac{9}{x+h}-\\frac{9}{x}}{h}$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "We will get  f prime, of x, is equal to the limit as h approaches 0, of fraction, fraction, 9 over, x plus h,  minus, fraction, 9 over x,  over h,",
+        "math": [
+            "$$f'(x)=\\lim_{h\\to0} \\frac{\\frac{9}{x+h}-\\frac{9}{x}}{h}$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction7a-h3",
@@ -40,6 +48,10 @@
         "choices": [
             "$$\\frac{-9h}{x^2+xh}$$",
             "$$\\frac{9h}{x^2+xh}$$"
+        ],
+        "speech": "What is the simplified numerator  fraction, 9 over, x plus h,  minus 9 over x ?",
+        "math": [
+            "$$\\frac{9}{x+h}-\\frac{9}{x}$$"
         ]
     },
     {
@@ -52,7 +64,12 @@
         "text": "$$\\frac{\\left(-\\frac{9}{x^2+xh}\\right)}{h}$$ equals to $$\\frac{1}{h} \\left(-\\frac{9}{x^2+xh}\\right)$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "fraction, parentheses negative fraction, 9 over, x squared plus x h,  , over h,   equals to  1 over h, times parentheses negative fraction, 9 over, x squared plus x h,",
+        "math": [
+            "$$\\frac{\\left(-\\frac{9}{x^2+xh}\\right)}{h}$$",
+            "$$\\frac{1}{h} \\left(-\\frac{9}{x^2+xh}\\right)$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction7a-h5",
@@ -64,7 +81,11 @@
         "text": "Cancel the common factor $$h$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Cancel the common factor  h",
+        "math": [
+            "$$h$$"
+        ]
     },
     {
         "id": "acf60f3DerivativeFunction7a-h6",
@@ -86,6 +107,10 @@
             "$$/lim{h,0$$, $$\\frac{-9h}{x^2+xh}$$}",
             "$$/lim{h,0$$, $$\\frac{-9}{x^2+xh}$$}",
             "$$/lim{h,0$$, $$\\frac{-9}{h{\\left(x^2+xh\\right)}}$$}"
+        ],
+        "speech": "What will get ?",
+        "math": [
+            ""
         ]
     },
     {
@@ -98,6 +123,11 @@
         "text": "To get a final answer, evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "To get a final answer, evaluate the limit by inserting h-->0  is equal to   h is equal to 0",
+        "math": [
+            "$$=$$",
+            "$$h=0$$"
+        ]
     }
 ]

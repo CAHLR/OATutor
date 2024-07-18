@@ -8,18 +8,18 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "For a conic with a focus at the origin, if the directrix is ; x is equal to p  or  x, is equal to, negative p , where  p  is a positive real number, and the eccentricity is a positive real number e, the conic has a polar equation\\n r; is equal to; fraction, e p, over, 1 plus ecos of theta, end fraction;  or  r; is equal to; fraction, e p, over, 1 minus ecos of theta, end fraction; \\nFor a conic with a focus at the origin, if the directrix is  y; is equal to p  or  y, is equal to, negative p , where  p  is a positive real number, and the eccentricity is a positive real number e, the conic has a polar equation\\n r; is equal to; fraction, e p, over, 1 plus esin of theta, end fraction;  or  r; is equal to; fraction, e p, over, 1 minus esin of theta, end fraction;",
+        "speech": "For a conic with a focus at the origin, if the directrix is  x is equal to p  or  x, is equal to, negative p , where  p  is a positive real number, and the eccentricity is a positive real number e, the conic has a polar equation\\n r is equal to fraction, e p, over, 1 plus ecos of theta,   or  r is equal to fraction, e p, over, 1 minus ecos of theta,  \\nFor a conic with a focus at the origin, if the directrix is  y is equal to p  or  y, is equal to, negative p , where  p  is a positive real number, and the eccentricity is a positive real number e, the conic has a polar equation\\n r is equal to fraction, e p, over, 1 plus esin of theta,   or  r is equal to fraction, e p, over, 1 minus esin of theta,",
         "math": [
-            "x=p",
-            "x=-p",
-            "p",
-            "r=\\frac{e p}{1+e cos\\left(\\theta\\right)}",
-            "r=\\frac{e p}{1-e cos\\left(\\theta\\right)}",
-            "y=p",
-            "y=-p",
-            "p",
-            "r=\\frac{e p}{1+e sin\\left(\\theta\\right)}",
-            "r=\\frac{e p}{1-e sin\\left(\\theta\\right)}"
+            "$$x=p$$",
+            "$$x=-p$$",
+            "$$p$$",
+            "$$r=\\frac{e p}{1+e cos\\left(\\theta\\right)}$$",
+            "$$r=\\frac{e p}{1-e cos\\left(\\theta\\right)}$$",
+            "$$y=p$$",
+            "$$y=-p$$",
+            "$$p$$",
+            "$$r=\\frac{e p}{1+e sin\\left(\\theta\\right)}$$",
+            "$$r=\\frac{e p}{1-e sin\\left(\\theta\\right)}$$"
         ]
     },
     {
@@ -38,9 +38,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We want to multiply the numerator and denominator by the reciprocal of the constant of the original equation,  1 over c; , where c is the constant so that we can change the equation to the standard polar form. What is the reciprocal that we want to multiply?",
+        "speech": "We want to multiply the numerator and denominator by the reciprocal of the constant of the original equation,  1 over c , where c is the constant so that we can change the equation to the standard polar form. What is the reciprocal that we want to multiply?",
         "math": [
-            "\\frac{1}{c}"
+            "$$\\frac{1}{c}$$"
         ]
     },
     {
@@ -80,10 +80,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "In the standard polar form, the coefficient in front of , sine of theta,  or  cosine of theta;  is the eccentricity. What is the eccentricity?",
+        "speech": "In the standard polar form, the coefficient in front of , sine of theta,  or  cosine of theta  is the eccentricity. What is the eccentricity?",
         "math": [
-            "sin\\left(\\theta\\right)",
-            "cos\\left(\\theta\\right)"
+            "$$sin\\left(\\theta\\right)$$",
+            "$$cos\\left(\\theta\\right)$$"
         ]
     },
     {
@@ -106,11 +106,11 @@
             "$$x$$",
             "$$y$$"
         ],
-        "speech": "Since , sine of theta,  is in the denominator, is the directrix along the  y  or  x;  axis?",
+        "speech": "Since , sine of theta,  is in the denominator, is the directrix along the  y  or  x  axis?",
         "math": [
-            "sin\\left(\\theta\\right)",
-            "y",
-            "x"
+            "$$sin\\left(\\theta\\right)$$",
+            "$$y$$",
+            "$$x$$"
         ]
     },
     {
@@ -145,11 +145,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "For a conic with eccentricity e,\\n- if ; 0 is less than or equal to; e is less than; 1 , the conic is ellipse\\n- if  e, is equal to, 1 . the conic is a parabola\\n- if  e, is greater than 1; , the conic is a hyperbola",
+        "speech": "For a conic with eccentricity e,\\n- if  0 is less than or equal to e is less than 1 , the conic is ellipse\\n- if  e, is equal to, 1 . the conic is a parabola\\n- if  e, is greater than 1 , the conic is a hyperbola",
         "math": [
-            "0 \\leq e<1",
-            "e=1",
-            "e>1"
+            "$$0 \\leq e<1$$",
+            "$$e=1$$",
+            "$$e>1$$"
         ]
     },
     {
@@ -175,7 +175,7 @@
         ],
         "speech": "Given that we have found the eccentricity , e is equal to 2 thirds, , what type of conic is this?",
         "math": [
-            "e=\\frac{2}{3}"
+            "$$e=\\frac{2}{3}$$"
         ]
     }
 ]

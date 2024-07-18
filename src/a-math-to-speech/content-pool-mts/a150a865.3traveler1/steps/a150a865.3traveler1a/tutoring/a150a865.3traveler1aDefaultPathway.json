@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "To do any calculations, you must know ; m , the decay parameter.  m, is equal to, 1 over mean, . It is given that the mean amount of days that travelers purchase their airline tickets is equal to  15;  days.",
+        "speech": "To do any calculations, you must know  m , the decay parameter.  m, is equal to, 1 over mean, . It is given that the mean amount of days that travelers purchase their airline tickets is equal to  15  days.",
         "math": [
-            "m",
-            "m=\\frac{1}{mean}",
-            "15"
+            "$$m$$",
+            "$$m=\\frac{1}{mean}$$",
+            "$$15$$"
         ]
     },
     {
@@ -33,7 +33,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "What is the value of  m ?",
         "math": [
-            "m"
+            "$$m$$"
         ]
     },
     {
@@ -47,10 +47,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "The probability desnsity function is ; f of x is equal to; m; e raised to the open paren negative m x, close paren power; , where e is the natural number  e; is equal to 2.7182818; dot; dot; .",
+        "speech": "The probability desnsity function is  f of x is equal to m e raised to the parentheses negative m x,  power , where e is the natural number  e is equal to 2.7182818 dot dot .",
         "math": [
-            "f(x)=m e^{\\left(-m x\\right)}",
-            "e=2.7182818.."
+            "$$f(x)=m e^{\\left(-m x\\right)}$$",
+            "$$e=2.7182818..$$"
         ]
     },
     {
@@ -64,11 +64,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "To find the certain probability in an exponential distribution, set the random vairable ; x  to the desired probability condition: For example  f of 5, is equal to; m; e raised to the open paren negative 5 m, close paren power;  will yield the probability that a random trial yields  x; is equal to 5; .",
+        "speech": "To find the certain probability in an exponential distribution, set the random vairable  x  to the desired probability condition: For example  f of 5, is equal to m e raised to the parentheses negative 5 m,  power  will yield the probability that a random trial yields  x is equal to 5 .",
         "math": [
-            "x",
-            "f(5)=m e^{\\left(-5m\\right)}",
-            "x=5"
+            "$$x$$",
+            "$$f(5)=m e^{\\left(-5m\\right)}$$",
+            "$$x=5$$"
         ]
     },
     {
@@ -82,13 +82,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We are trying to find the probability that travelers purchase their tickets fewer than ; 10  days in advance, we must find ;  cap p, open paren, x is less than 10, close paren; , so we may do  1; minus;  cap p, open paren x is equal to 1, close paren; minus;  cap p, open paren x is equal to 2, close paren; minus dot dot dot minus;  cap p, open paren x is equal to 10, close paren; , using  f of x; is equal to; m; e raised to the open paren negative m x, close paren power; , but to do it faster, we may use the CDF function to find the total area of the values that  x; is less than 10; .",
+        "speech": "We are trying to find the probability that travelers purchase their tickets fewer than  10  days in advance, we must find    p, parentheses, x is less than 10,  , so we may do  1 minus   p, parentheses x is equal to 1,  minus   p, parentheses x is equal to 2,  minus dot dot dot minus   p, parentheses x is equal to 10,  , using  f of x is equal to m e raised to the parentheses negative m x,  power , but to do it faster, we may use the CDF function to find the total area of the values that  x is less than 10 .",
         "math": [
-            "10",
-            "P\\left(x<10\\right)",
-            "1-P(x=1)-P(x=2)-...-P(x=10)",
-            "f(x)=m e^{\\left(-m x\\right)}",
-            "x<10"
+            "$$10$$",
+            "$$P\\left(x<10\\right)$$",
+            "$$1-P(x=1)-P(x=2)-...-P(x=10)$$",
+            "$$f(x)=m e^{\\left(-m x\\right)}$$",
+            "$$x<10$$"
         ]
     },
     {
@@ -102,11 +102,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Using CDF of X < , 10  and rounding to the nearest  3  decimals, we get  0.067;",
+        "speech": "Using CDF of X < , 10  and rounding to the nearest  3  decimals, we get  0.067",
         "math": [
-            "10",
-            "3",
-            "0.067"
+            "$$10$$",
+            "$$3$$",
+            "$$0.067$$"
         ]
     }
 ]

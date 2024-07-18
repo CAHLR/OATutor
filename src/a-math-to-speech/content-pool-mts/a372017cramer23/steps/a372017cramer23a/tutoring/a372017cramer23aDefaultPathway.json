@@ -8,18 +8,18 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables.\\nConsider a system of two linear equations in two variables.\\n; a sub 1 x plus b sub 1 y; is equal to; c sub 1 \\n a sub 2 x; plus b sub 2 y; is equal to, c sub 2 \\n\\nThe solution using Cramer's Rule is given as\\n x, is equal to, fraction,  cap d sub x, over  cap d, end fraction; is equal to,  |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|,   cap d, is not equal to 0; colon; \\n y is equal to, fraction,  cap d sub y, over  cap d, end fraction; is equal to,  |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|,   cap d, is not equal to 0; colon, \\nIf we are solving for  x , the  x  column is replaced with the constant column. If we are solving for  y , the  y;  column is replaced with the constant column.",
+        "speech": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables.\\nConsider a system of two linear equations in two variables.\\n a sub 1 x plus b sub 1 y is equal to c sub 1 \\n a sub 2 x plus b sub 2 y is equal to, c sub 2 \\n\\nThe solution using Cramer's Rule is given as\\n x, is equal to, fraction,   d sub x, over   d,  is equal to,  |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|,    d, is not equal to 0 colon \\n y is equal to, fraction,   d sub y, over   d,  is equal to,  |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|,    d, is not equal to 0 colon, \\nIf we are solving for  x , the  x  column is replaced with the constant column. If we are solving for  y , the  y  column is replaced with the constant column.",
         "math": [
-            "a_1 x+b_1 y=c_1",
-            "a_2 x+b_2 y=c_2",
-            "x=\\frac{D_x}{D}=",
-            "D \\neq 0:",
-            "y=\\frac{D_y}{D}=",
-            "D \\neq 0:",
-            "x",
-            "x",
-            "y",
-            "y"
+            "$$a_1 x+b_1 y=c_1$$",
+            "$$a_2 x+b_2 y=c_2$$",
+            "$$x=\\frac{D_x}{D}=$$",
+            "$$D \\neq 0:$$",
+            "$$y=\\frac{D_y}{D}=$$",
+            "$$D \\neq 0:$$",
+            "$$x$$",
+            "$$x$$",
+            "$$y$$",
+            "$$y$$"
         ]
     },
     {
@@ -33,10 +33,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "The determinant of a 2\u00d72 matrix, given ;  cap a is equal to; the 2 by 2 matrix; row 1; a, b; row 2; c, d;  is defined as  det of  cap a; is equal to, a d minus c b; .",
+        "speech": "The determinant of a 2\u00d72 matrix, given    a is equal to the 2 by 2 matrix row 1 a, b row 2 c, d  is defined as  det of   a is equal to, a d minus c b .",
         "math": [
-            "A=\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}",
-            "det(A)=a d-c b"
+            "$$A=\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$",
+            "$$det(A)=a d-c b$$"
         ]
     },
     {
@@ -55,9 +55,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Find the determinant ;  cap d is equal to; the absolute value of open paren, 3 comma negative 2, close paren; comma, open paren, 6 comma negative 4, close paren, end absolute value; .",
+        "speech": "Find the determinant    d is equal to the absolute value of parentheses, 3 comma negative 2,  comma, parentheses, 6 comma negative 4, , end absolute value .",
         "math": [
-            "D=|(3,-2),(6,-4)|"
+            "$$D=|(3,-2),(6,-4)|$$"
         ]
     },
     {
@@ -103,9 +103,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Multiply the first equation by ; minus 2; .",
+        "speech": "Multiply the first equation by  minus 2 .",
         "math": [
-            "-2"
+            "$$-2$$"
         ]
     },
     {
@@ -137,7 +137,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "Adding the scaled first equation with the second equation, we obtain the equation , 0 is equal to negative 8, , which is false. Therefore, the system has no solution. Graphing the system reveals two parallel lines.\\n##figure1.gif##",
         "math": [
-            "0=-8"
+            "$$0=-8$$"
         ]
     }
 ]

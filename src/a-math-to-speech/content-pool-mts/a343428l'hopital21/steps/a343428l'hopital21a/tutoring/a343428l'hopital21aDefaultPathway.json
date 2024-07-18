@@ -24,9 +24,9 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "; the limit as x approaches infinity, of; open paren; fraction, the x power of, sine of, open paren, fraction, 1 over x, end fraction; close paren, over, open paren 1 over x, close paren to the negative 1, end fraction; close paren; is equal to; the limit as x approaches infinity, of; open paren; fraction, sine of, open paren, fraction, 1 over x, end fraction; close paren, over, fraction, 1 over x, end fraction; end fraction; close paren;",
+        "speech": "the limit as x approaches infinity, of parentheses fraction, the x power of, sine of, parentheses, fraction, 1 over x,  , over, parentheses 1 over x,  to the negative 1,   is equal to the limit as x approaches infinity, of parentheses fraction, sine of, parentheses, fraction, 1 over x,  , over, fraction, 1 over x,",
         "math": [
-            "\\lim_{x\\to\\infty} \\fracsin^x\\left(\\frac{1}{x}\\right)^{\\left(-1\\right)}}=\\lim_{x\\to\\infty} \\fracsin^\\\\left(\\frac{1}{x}\\right)frac{1}{x}}"
+            "$$\\lim_{x\\to\\infty} \\fracsin^x\\left(\\frac{1}{x}\\right)^{\\left(-1\\right)}}=\\lim_{x\\to\\infty} \\fracsin^\\\\left(\\frac{1}{x}\\right)frac{1}{x}}$$"
         ]
     },
     {
@@ -40,9 +40,9 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "; fraction, sine of, open paren, fraction, 1 over infinity, end fraction; close paren, over, fraction, 1 over infinity, end fraction; end fraction; is equal to, fraction, sine of 0, over 0, end fraction; is equal to 0 over 0;",
+        "speech": "fraction, sine of, parentheses, fraction, 1 over infinity,  , over, fraction, 1 over infinity,   is equal to, fraction, sine of 0, over 0,  is equal to 0 over 0",
         "math": [
-            "\\fracsin^\\\\left(\\frac{1}{\\infty}\\right)frac{1}{\\infty}}=\\fracsin^0\\left(0\\right)}=\\frac{0}{0}"
+            "$$\\fracsin^\\\\left(\\frac{1}{\\infty}\\right)frac{1}{\\infty}}=\\fracsin^0\\left(0\\right)}=\\frac{0}{0}$$"
         ]
     },
     {
@@ -56,9 +56,9 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "Differentiate the denominator and the numerator seperatedly: ; the limit as x approaches infinity, of; fraction, fraction, d over, d x, end fraction; sine of, open paren, fraction, 1 over x, end fraction; close paren, over, fraction, d over, d x, end fraction; fraction, 1 over x, end fraction; end fraction;",
+        "speech": "Differentiate the denominator and the numerator seperatedly:  the limit as x approaches infinity, of fraction, fraction, d over, d x,  sine of, parentheses, fraction, 1 over x,  , over, fraction, d over, d x,  fraction, 1 over x,",
         "math": [
-            "\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} sin\\left(\\frac{1}{x}\\right)}{\\frac{d}{dx} \\frac{1}{x}}"
+            "$$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} sin\\left(\\frac{1}{x}\\right)}{\\frac{d}{dx} \\frac{1}{x}}$$"
         ]
     },
     {
@@ -116,9 +116,9 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "; fraction, open paren, negative fraction, 1 over, x squared, end fraction; close paren; times; cosine of, open paren, fraction, 1 over x, end fraction; close paren, over, open paren, negative fraction, 1 over, x squared, end fraction; close paren, end fraction; is equal to, cosine of, open paren 1 over x, close paren;",
+        "speech": "fraction, parentheses, negative fraction, 1 over, x squared,   times cosine of, parentheses, fraction, 1 over x,  , over, parentheses, negative fraction, 1 over, x squared,  ,  is equal to, cosine of, parentheses 1 over x,",
         "math": [
-            "\\frac{\\left(-\\frac{1}{x^2}\\right) cos\\left(\\frac{1}{x}\\right)}{\\left(-\\frac{1}{x^2}\\right)}=cos\\left(\\frac{1}{x}\\right)"
+            "$$\\frac{\\left(-\\frac{1}{x^2}\\right) cos\\left(\\frac{1}{x}\\right)}{\\left(-\\frac{1}{x^2}\\right)}=cos\\left(\\frac{1}{x}\\right)$$"
         ]
     },
     {
@@ -132,9 +132,9 @@
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "; cosine of, open paren 1 over infinity; close paren; is equal to cosine of 0, is equal to 1;",
+        "speech": "cosine of, parentheses 1 over infinity  is equal to cosine of 0, is equal to 1",
         "math": [
-            "cos\\left(\\frac{1}{\\infty}\\right)=cos(0)=1"
+            "$$cos\\left(\\frac{1}{\\infty}\\right)=cos(0)=1$$"
         ]
     }
 ]

@@ -8,10 +8,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "This problem requires some rewriting to simplify applying the properties. First, rewrite the exponent on e as a power of , x , then bring the  x squared;  in the denominator up to the numerator using a negative exponent.",
+        "speech": "This problem requires some rewriting to simplify applying the properties. First, rewrite the exponent on e as a power of , x , then bring the  x squared  in the denominator up to the numerator using a negative exponent.",
         "math": [
-            "x",
-            "x^2"
+            "$$x$$",
+            "$$x^2$$"
         ]
     },
     {
@@ -25,9 +25,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "We have ; the integral from 1 to 2 of; fraction, e raised to the 1 over x, power; over, x squared, end fraction; d x; is equal to; the integral from 1 to 2 of; e raised to the x raised to the open paren negative 1 close paren power; end exponent; x raised to the open paren negative 2 close paren power; d x;",
+        "speech": "We have  the integral from 1 to 2 of fraction, e raised to the 1 over x, power over, x squared,  d x is equal to the integral from 1 to 2 of e raised to the x raised to the parentheses negative 1  power end exponent x raised to the parentheses negative 2  power d x",
         "math": [
-            "\\int_{1}^{2} \\frac{e^{\\frac{1}{x}}}{x^2} \\,dx=\\int_{1}^{2} e^{x^{\\left(-1\\right)}} x^{\\left(-2\\right)} \\,dx"
+            "$$\\int_{1}^{2} \\frac{e^{\\frac{1}{x}}}{x^2} \\,dx=\\int_{1}^{2} e^{x^{\\left(-1\\right)}} x^{\\left(-2\\right)} \\,dx$$"
         ]
     },
     {
@@ -41,11 +41,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Let ; u is equal to; x raised to the open paren negative 1 close paren power; , the exponent on e then  d u; is equal to; open paren; negative x raised to the open paren negative 2 close paren power; close paren; times d x;  or  negative d u; is equal to; x raised to the open paren negative 2 close paren power; d x;",
+        "speech": "Let  u is equal to x raised to the parentheses negative 1  power , the exponent on e then  d u is equal to parentheses negative x raised to the parentheses negative 2  power  times d x  or  negative d u is equal to x raised to the parentheses negative 2  power d x",
         "math": [
-            "u=x^{\\left(-1\\right)}",
-            "du=\\left(-x^{\\left(-2\\right)}\\right) dx",
-            "-du=x^{\\left(-2\\right)} dx"
+            "$$u=x^{\\left(-1\\right)}$$",
+            "$$du=\\left(-x^{\\left(-2\\right)}\\right) dx$$",
+            "$$-du=x^{\\left(-2\\right)} dx$$"
         ]
     },
     {
@@ -59,9 +59,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Bringing the negative sign outside the integral sign, the problem now reads ; minus, the integral of e to the u-th d x; .",
+        "speech": "Bringing the negative sign outside the integral sign, the problem now reads  minus, the integral of e to the u-th d x .",
         "math": [
-            "-\\int e^u \\,dx"
+            "$$-\\int e^u \\,dx$$"
         ]
     },
     {
@@ -77,7 +77,7 @@
         "license": "",
         "speech": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from  x  to u.",
         "math": [
-            "x"
+            "$$x$$"
         ]
     },
     {
@@ -91,11 +91,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "With ; u is equal to; x raised to the open paren negative 1 close paren power; , we will have upper and lower limits  x; is equal to 1  and  x, is equal to 1 half;  respectively.",
+        "speech": "With  u is equal to x raised to the parentheses negative 1  power , we will have upper and lower limits  x is equal to 1  and  x, is equal to 1 half  respectively.",
         "math": [
-            "u=x^{\\left(-1\\right)}",
-            "x=1",
-            "x=\\frac{1}{2}"
+            "$$u=x^{\\left(-1\\right)}$$",
+            "$$x=1$$",
+            "$$x=\\frac{1}{2}$$"
         ]
     },
     {
@@ -109,9 +109,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Notice that now the limits begin with the larger number, meaning we must multiply by ; minus 1;  and interchange the limits.",
+        "speech": "Notice that now the limits begin with the larger number, meaning we must multiply by  minus 1  and interchange the limits.",
         "math": [
-            "-1"
+            "$$-1$$"
         ]
     },
     {
@@ -125,11 +125,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral from 1 half to 1 of; e to the u-th d u; is equal to, e to the u-th  with the limit goes from  u, is equal to, 1 half  to  u, is equal to 1; .",
+        "speech": "the integral from 1 half to 1 of e to the u-th d u is equal to, e to the u-th  with the limit goes from  u, is equal to, 1 half  to  u, is equal to 1 .",
         "math": [
-            "\\int_{\\frac{1}{2}}^{1} e^u \\,du=e^u",
-            "u=\\frac{1}{2}",
-            "u=1"
+            "$$\\int_{\\frac{1}{2}}^{1} e^u \\,du=e^u$$",
+            "$$u=\\frac{1}{2}$$",
+            "$$u=1$$"
         ]
     },
     {
@@ -143,9 +143,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": ", e minus e raised to the 1 half power;",
+        "speech": ", e minus e raised to the 1 half power",
         "math": [
-            "e-e^{\\frac{1}{2}}"
+            "$$e-e^{\\frac{1}{2}}$$"
         ]
     }
 ]

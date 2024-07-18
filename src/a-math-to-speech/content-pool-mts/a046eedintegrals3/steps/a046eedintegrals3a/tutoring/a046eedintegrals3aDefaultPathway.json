@@ -51,10 +51,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Since ; u is equal to, 2 x cubed,  then  d u; is equal to, 6 x squared d x;",
+        "speech": "Since  u is equal to, 2 x cubed,  then  d u is equal to, 6 x squared d x",
         "math": [
-            "u=2x^3",
-            "du=6x^2 dx"
+            "$$u=2x^3$$",
+            "$$du=6x^2 dx$$"
         ]
     },
     {
@@ -68,11 +68,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "As we've determined that du ; is equal to;   6 x squared,  dx, and the original function incorporates a factor of  3 x squared;  (rather than 6x**2), we need to make a minor adjustment to the constant multiplier to align it with the function we intend to substitute.",
+        "speech": "As we've determined that du  is equal to   6 x squared,  dx, and the original function incorporates a factor of  3 x squared  (rather than 6x**2), we need to make a minor adjustment to the constant multiplier to align it with the function we intend to substitute.",
         "math": [
-            "=",
-            "6x^2",
-            "3x^2"
+            "$$=$$",
+            "$$6x^2$$",
+            "$$3x^2$$"
         ]
     },
     {
@@ -86,13 +86,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "We can easily see that ; 3  is  1 half  of  6  so we will divide both side of the expression by  2  and obtain , fraction, d u, over 2, end fraction; is equal to, 3 x squared d x;",
+        "speech": "We can easily see that  3  is  1 half  of  6  so we will divide both side of the expression by  2  and obtain , fraction, d u, over 2,  is equal to, 3 x squared d x",
         "math": [
-            "3",
-            "\\frac{1}{2}",
-            "6",
-            "2",
-            "\\frac{du}{2}=3x^2 dx"
+            "$$3$$",
+            "$$\\frac{1}{2}$$",
+            "$$6$$",
+            "$$2$$",
+            "$$\\frac{du}{2}=3x^2 dx$$"
         ]
     },
     {
@@ -106,9 +106,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral of 3 x squared e squared x cubed d x; is equal to; open paren 1 divided by 2, close paren; times, the integral of e to the u-th d u;",
+        "speech": "the integral of 3 x squared e squared x cubed d x is equal to parentheses 1 divided by 2,  times, the integral of e to the u-th d u",
         "math": [
-            "\\int 3x^2 e^2 x^3 \\,dx=(1/2)*\\int e^u \\,du"
+            "$$\\int 3x^2 e^2 x^3 \\,dx=(1/2)*\\int e^u \\,du$$"
         ]
     },
     {
@@ -122,10 +122,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Integrate the expression in u and then substitute the original expression in ; x  back into the u integral: ; open paren 1 divided by 2, close paren; times, the integral of e to the u-th d u; is equal to, 1 half e to the u-th, plus  cap c;",
+        "speech": "Integrate the expression in u and then substitute the original expression in  x  back into the u integral:  parentheses 1 divided by 2,  times, the integral of e to the u-th d u is equal to, 1 half e to the u-th, plus   c",
         "math": [
-            "x",
-            "(1/2)*\\int e^u \\,du=\\frac{1}{2} e^u+C"
+            "$$x$$",
+            "$$(1/2)*\\int e^u \\,du=\\frac{1}{2} e^u+C$$"
         ]
     },
     {
@@ -139,9 +139,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "The final step is to convert u back into the original variable ; 1 half, e raised to the 2 x cubed power; plus  cap c;",
+        "speech": "The final step is to convert u back into the original variable  1 half, e raised to the 2 x cubed power plus   c",
         "math": [
-            "\\frac{1}{2} e^{2x^3}+C"
+            "$$\\frac{1}{2} e^{2x^3}+C$$"
         ]
     }
 ]

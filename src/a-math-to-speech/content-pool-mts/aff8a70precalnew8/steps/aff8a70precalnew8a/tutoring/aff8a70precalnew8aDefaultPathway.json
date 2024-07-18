@@ -28,6 +28,11 @@
                 "oer": "https://OATutor.io",
                 "license": ""
             }
+        ],
+        "speech": "Is  the absolute value of fraction, parentheses x plus 2,  cubed, over 2,  end absolute value  equivalent to  fraction, the absolute value of parentheses x plus 2,  cubed, end absolute value over, the absolute value of 2  ?",
+        "math": [
+            "$$|\\frac{{\\left(x+2\\right)}^3}{2}|$$",
+            "$$\\frac{|{\\left(x+2\\right)}^3|}{|2|}$$"
         ]
     },
     {
@@ -49,6 +54,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is  fraction, the absolute value of parentheses x plus 2,  cubed, end absolute value over, the absolute value of 2   equivalent to  fraction, the absolute value of x plus 2, end absolute value, cubed, over 2,  ?",
+        "math": [
+            "$$\\frac{|{\\left(x+2\\right)}^3|}{|2|}$$",
+            "$$\\frac{{|x+2|}^3}{2}$$"
         ]
     },
     {
@@ -61,7 +71,11 @@
         "text": "Use the property $$|a b|=|a| |b|$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Use the property  the absolute value of a b, end absolute value is equal to, the absolute value of a the absolute value of b",
+        "math": [
+            "$$|a b|=|a| |b|$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h4",
@@ -73,7 +87,11 @@
         "text": "$$|3x+6|=3|x+2|$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "the absolute value of 3 x plus 6, end absolute value is equal to 3, the absolute value of x plus 2, end absolute value",
+        "math": [
+            "$$|3x+6|=3|x+2|$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h5",
@@ -85,7 +103,11 @@
         "text": "Use the property $$|a b|=|a| |b|$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Use the property  the absolute value of a b, end absolute value is equal to, the absolute value of a the absolute value of b",
+        "math": [
+            "$$|a b|=|a| |b|$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h6",
@@ -106,6 +128,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is there any value  x  cannot be?",
+        "math": [
+            "$$x$$"
         ]
     },
     {
@@ -118,7 +144,11 @@
         "text": "We now have $$\\frac{{|x+2|}^3}{2}>3|x+2|$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "We now have  fraction, the absolute value of x plus 2, end absolute value, cubed, over 2,  is greater than 3, the absolute value of x plus 2, end absolute value",
+        "math": [
+            "$$\\frac{{|x+2|}^3}{2}>3|x+2|$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h8",
@@ -130,7 +160,12 @@
         "text": "Multiply by $$2$$ on both sides, so we get $${|x+2|}^3>6|x+2|$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Multiply by  2  on both sides, so we get , the absolute value of x plus 2, end absolute value, cubed is greater than 6, the absolute value of x plus 2, end absolute value .",
+        "math": [
+            "$$2$$",
+            "$${|x+2|}^3>6|x+2|$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h9",
@@ -142,7 +177,12 @@
         "text": "$${|x+2|}^3>6|x+2|$$ is equivalent to $${|x+2|}^2>6$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "the absolute value of x plus 2, end absolute value, cubed is greater than 6, the absolute value of x plus 2, end absolute value  is equivalent to , the absolute value of x plus 2, end absolute value, squared is greater than 6",
+        "math": [
+            "$${|x+2|}^3>6|x+2|$$",
+            "$${|x+2|}^2>6$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h10",
@@ -154,7 +194,13 @@
         "text": "For $$b>0$$, $$a b>c b$$ is equivalent to $$a>c$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For  b is greater than, 0 ,  a b, is greater than, c b  is equivalent to  a, is greater than c .",
+        "math": [
+            "$$b>0$$",
+            "$$a b>c b$$",
+            "$$a>c$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h11",
@@ -166,7 +212,12 @@
         "text": "$${|x+2|}^2>6$$ is equivalent to $$|x+2|>\\sqrt{6}$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "the absolute value of x plus 2, end absolute value, squared is greater than 6  is equivalent to , the absolute value of x plus 2, end absolute value is greater than, the square root of 6",
+        "math": [
+            "$${|x+2|}^2>6$$",
+            "$$|x+2|>\\sqrt{6}$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h12",
@@ -178,7 +229,12 @@
         "text": "For a,b>0, $$a>b$$ is equivalent to $$\\sqrt{a}>\\sqrt{b}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "For a,b>0,  a is greater than, b  is equivalent to  the square root of a is greater than, the square root of b .",
+        "math": [
+            "$$a>b$$",
+            "$$\\sqrt{a}>\\sqrt{b}$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h13",
@@ -190,7 +246,13 @@
         "text": "$$|x+2|>\\sqrt{6}$$ is equivalent to $$x+2>\\sqrt{6}$$ or $$x+2<-\\sqrt{6}$$",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "the absolute value of x plus 2, end absolute value is greater than the square root of 6  is equivalent to  x plus 2 is greater than the square root of 6  or  x plus 2 is less than, negative the square root of 6",
+        "math": [
+            "$$|x+2|>\\sqrt{6}$$",
+            "$$x+2>\\sqrt{6}$$",
+            "$$x+2<-\\sqrt{6}$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h14",
@@ -211,6 +273,10 @@
         "choices": [
             "$$\\sqrt{6}-2$$",
             "$$-\\sqrt{6}-2$$"
+        ],
+        "speech": ", x plus 2, is greater than, the square root of 6 , x>?",
+        "math": [
+            "$$x+2>\\sqrt{6}$$"
         ]
     },
     {
@@ -232,6 +298,10 @@
         "choices": [
             "$$\\sqrt{6}-2$$",
             "$$-\\sqrt{6}-2$$"
+        ],
+        "speech": "x plus 2, is less than parentheses, negative the square root of 6  , x<?",
+        "math": [
+            "$$x+2<\\left(-\\sqrt{6}\\right)$$"
         ]
     },
     {
@@ -244,7 +314,12 @@
         "text": "Write $$x>\\sqrt{6}-2$$ or $$x<-\\sqrt{6}-2$$ in interval notation.",
         "variabilization": {},
         "oer": "https://OATutor.io",
-        "license": ""
+        "license": "",
+        "speech": "Write  x is greater than the square root of 6 minus 2  or  x is less than, negative the square root of 6 minus 2  in interval notation.",
+        "math": [
+            "$$x>\\sqrt{6}-2$$",
+            "$$x<-\\sqrt{6}-2$$"
+        ]
     },
     {
         "id": "aff8a70precalnew8a-h17",
@@ -265,6 +340,10 @@
         "choices": [
             "$$(-\\infty,-\\sqrt{6}-2)$$ $$\\cup$$ $$(\\sqrt{6}-2,\\infty)$$",
             "$$(-\\sqrt{6}-2,\\sqrt{6}-2)$$"
+        ],
+        "speech": "What is the answer in interval notation?",
+        "math": [
+            ""
         ]
     }
 ]

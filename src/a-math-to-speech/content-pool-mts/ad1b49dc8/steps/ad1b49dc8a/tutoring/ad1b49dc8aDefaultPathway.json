@@ -7,7 +7,11 @@
         "text": "The given function is a composite of cos(x) and $$x-\\frac{\\pi}{2}$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "The given function is a composite of cos(x) and , x minus pi over 2 .",
+        "math": [
+            "$$x-\\frac{\\pi}{2}$$"
+        ]
     },
     {
         "id": "ad1b49dc8a-h2",
@@ -19,7 +23,12 @@
         "text": "If f(x) is continuous at L and $$\\lim_{x\\toa} g(x)=L, then$$ $$\\lim_{x\\toa} f(g(x))=f(\\lim_{x\\toa} g(x))=f(L)$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "If f(x) is continuous at L and  the limit as x \toa, of g of x is equal to   l comma then  , the limit as x \toa, of f of g of x is equal to f of parentheses, the limit as x \toa, of g of x  is equal to f of   l .",
+        "math": [
+            "$$\\lim_{x\\toa} g(x)=L, then$$",
+            "$$\\lim_{x\\toa} f(g(x))=f(\\lim_{x\\toa} g(x))=f(L)$$"
+        ]
     },
     {
         "id": "ad1b49dc8a-h3",
@@ -36,7 +45,11 @@
         "text": "What is the value of $$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}$$?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "What is the value of  the limit as x approaches pi over 2 of x minus pi over 2 ?",
+        "math": [
+            "$$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}$$"
+        ]
     },
     {
         "id": "ad1b49dc8a-h4",
@@ -57,6 +70,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is cos(x) continuous at  x is equal to 0, ?",
+        "math": [
+            "$$x=0$$"
         ]
     },
     {
@@ -69,7 +86,12 @@
         "text": "Since $$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}=0$$ (a real number) and cos(x)is continuous at $$x=0$$, we may apply the composite function theorem.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Since  the limit as x approaches pi over 2 of x minus pi over 2 is equal to 0  (a real number) and cos(x)is continuous at  x, is equal to 0 , we may apply the composite function theorem.",
+        "math": [
+            "$$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}=0$$",
+            "$$x=0$$"
+        ]
     },
     {
         "id": "ad1b49dc8a-h6",
@@ -98,6 +120,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "What is the value of  the limit as x approaches pi over 2 of cosine of, parentheses, x minus pi over 2  ?",
+        "math": [
+            "$$\\lim_{x\\to\\frac{\\pi}{2}} cos\\left(x-\\frac{\\pi}{2}\\right)$$"
         ]
     }
 ]

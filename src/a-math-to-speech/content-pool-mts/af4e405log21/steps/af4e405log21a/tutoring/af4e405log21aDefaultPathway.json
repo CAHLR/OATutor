@@ -7,7 +7,11 @@
         "text": "We can use the decibel level of sound formula. The loudness level, D, measured in decibels, of a sound of intensity, I, measured in watts per square inch is $$D=10*\\log_{10}\\left(\\frac{I}{{10}^{\\left(-12\\right)}}\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can use the decibel level of sound formula. The loudness level, D, measured in decibels, of a sound of intensity, I, measured in watts per square inch is    d is equal to 10 times the log base 10 of parentheses fraction,   i over, 10 raised to the parentheses negative 12  power   .",
+        "math": [
+            "$$D=10*\\log_{10}\\left(\\frac{I}{{10}^{\\left(-12\\right)}}\\right)$$"
+        ]
     },
     {
         "id": "af4e405log21a-h2",
@@ -30,6 +34,10 @@
             "$$D=10*\\log_{10}\\left(\\frac{{10}^{\\left(-12\\right)}}{{10}^{\\left(-2\\right)}}\\right)$$",
             "$${10}^{\\left(-12\\right)}=10*\\log_{10}\\left(\\frac{D}{{10}^{\\left(-12\\right)}}\\right)$$",
             "$${10}^{\\left(-2\\right)}=10*\\log_{10}\\left(\\frac{{10}^{\\left(-12\\right)}}{D}\\right)$$"
+        ],
+        "speech": "Plug in the value for the intensity level, I.",
+        "math": [
+            ""
         ]
     },
     {
@@ -53,6 +61,11 @@
             "$${10}^{\\left(-10\\right)}$$",
             "$${10}^{\\left(-14\\right)}$$",
             "$${10}^{14}$$"
+        ],
+        "speech": "We see log{10**(-2)/10**(-12)}. We can simplify the expression insid ethe logarithm, noting that  fraction, x to the a-th, over, x to the b-th,  is equal to x raised to the a minus b power . What is  fraction, 10 raised to the parentheses negative 2  power over, 10 raised to the parentheses negative 12  power   simplified?",
+        "math": [
+            "$$\\frac{x^a}{x^b}=x^{a-b}$$",
+            "$$\\frac{{10}^{\\left(-2\\right)}}{{10}^{\\left(-12\\right)}}$$"
         ]
     },
     {
@@ -106,6 +119,11 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "Now, we have    d is equal to 10 times, the log base 10 of, parentheses 10 to the tenth  . What is  the log base 10 of, parentheses 10 to the tenth  ?",
+        "math": [
+            "$$D=10*\\log_{10}\\left({10}^{10}\\right)$$",
+            "$$\\log_{10}\\left({10}^{10}\\right)$$"
         ]
     },
     {
@@ -123,6 +141,10 @@
         "text": "Now, we have $$D=10\\times10$$. What is D?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, we have ,   d is equal to 10 times 10 . What is D?",
+        "math": [
+            "$$D=10\\times10$$"
+        ]
     }
 ]

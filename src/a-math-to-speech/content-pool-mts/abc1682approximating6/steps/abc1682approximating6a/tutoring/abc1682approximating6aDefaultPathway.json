@@ -7,7 +7,13 @@
         "text": "The first step is to divide the interval from $$1$$ to $$2$$ into $$n$$ equal subintervals. These subintervals can be seen as rectangles.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The first step is to divide the interval from , 1  to  2  into  n  equal subintervals. These subintervals can be seen as rectangles.",
+        "math": [
+            "$$1$$",
+            "$$2$$",
+            "$$n$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h2",
@@ -36,6 +42,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "How many subinterval or rectangle can we create in this problem?",
+        "math": [
+            ""
         ]
     },
     {
@@ -48,7 +58,13 @@
         "text": "The step size or width of the rectangles can be found using $$\u0394x=\\frac{b-a}{n}$$ where $$b$$ is the upper bound, a is the lower bound and $$n$$ is the number of rectangles.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The step size or width of the rectangles can be found using    delta x, is equal to fraction, b minus a, over n,   where  b  is the upper bound, a is the lower bound and  n  is the number of rectangles.",
+        "math": [
+            "$$\u0394x=\\frac{b-a}{n}$$",
+            "$$b$$",
+            "$$n$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h4",
@@ -65,7 +81,11 @@
         "text": "What is the upper bound of the interval?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the upper bound of the interval?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating6a-h5",
@@ -82,7 +102,11 @@
         "text": "What is the lower bound of the interval?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the lower bound of the interval?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating6a-h6",
@@ -94,7 +118,12 @@
         "text": "For the $$4$$ rectangles, each rectangle has a width of $$\u0394x=\\frac{2-1}{4}=0.25$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "For the  4  rectangles, each rectangle has a width of    delta x is equal to, fraction, 2 minus 1, over 4,  is equal to 0.25",
+        "math": [
+            "$$4$$",
+            "$$\u0394x=\\frac{2-1}{4}=0.25$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h7",
@@ -106,7 +135,14 @@
         "text": "We begin with the first rectangle whose left starting point of $$x=1$$ and a width of $$0.25$$. The rectangle will end at the point $$x=1.25$$ so the first interval will be $$[1, 1.25]$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "We begin with the first rectangle whose left starting point of  x is equal to, 1  and a width of  0.25 . The rectangle will end at the point  x is equal to, 1.25  so the first interval will be , the closed interval from 1 to 1.25 .",
+        "math": [
+            "$$x=1$$",
+            "$$0.25$$",
+            "$$x=1.25$$",
+            "$$[1, 1.25]$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h8",
@@ -127,6 +163,10 @@
         "choices": [
             "$$[1.5, 1.75]$$",
             "$$[1.5, 1.75)$$"
+        ],
+        "speech": "Express in interval notation, what are the starting and ending points of the 3rd rectangle in the illustration?",
+        "math": [
+            ""
         ]
     },
     {
@@ -139,7 +179,13 @@
         "text": "Continuing the process, we obtain $$4$$ intervals which are $$[1, 1.25], [1.25, 1.5], [1.5, 1.75]$$ and $$[1.75, 2]$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Continuing the process, we obtain  4  intervals which are , the closed interval from 1 to 1.25 comma the closed interval from 1.25 to 1.5, comma the closed interval from 1.5 to 1.75,  and , the closed interval from 1.75 to 2 .",
+        "math": [
+            "$$4$$",
+            "$$[1, 1.25], [1.25, 1.5], [1.5, 1.75]$$",
+            "$$[1.75, 2]$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h10",
@@ -151,7 +197,11 @@
         "text": "Because the function is decreasing over the interval [1,2], a lower sum is obtained by using the right endpoints. In addition, the graph of $$f(x)=10-x^2$$ is set up for a right-endpoint approximation of the area bounded by the curve and the x-axis on [1,2], and it shows a lower sum.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Because the function is decreasing over the interval [1,2], a lower sum is obtained by using the right endpoints. In addition, the graph of , f of x is equal to, 10 minus x squared  is set up for a right-endpoint approximation of the area bounded by the curve and the x-axis on [1,2], and it shows a lower sum.",
+        "math": [
+            "$$f(x)=10-x^2$$"
+        ]
     },
     {
         "id": "abc1682approximating6a-h11",
@@ -192,6 +242,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "What is the area under the curve of the given function using the Riemann sum?",
+        "math": [
+            ""
         ]
     },
     {
@@ -204,6 +258,10 @@
         "text": "Since we are asked to find a lower sum of the area of the function under the curve, the righ-endpoint approximation would be the most suitable method to use because it gives us an underestimate.Instead, approximating the left endpoint will give us an overestimation, which is not necessary in this case.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Since we are asked to find a lower sum of the area of the function under the curve, the righ-endpoint approximation would be the most suitable method to use because it gives us an underestimate.Instead, approximating the left endpoint will give us an overestimation, which is not necessary in this case.",
+        "math": [
+            ""
+        ]
     }
 ]

@@ -7,7 +7,11 @@
         "text": "Rewrite the integral as $$\\int z\\left({\\left(z^2-5\\right)}^{\\frac{1}{2}}\\right) \\,dz$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Rewrite the integral as  the integral of z of parentheses parentheses, z squared minus 5,  raised to the 1 half power  d z .",
+        "math": [
+            "$$\\int z\\left({\\left(z^2-5\\right)}^{\\frac{1}{2}}\\right) \\,dz$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution2a-h2",
@@ -19,7 +23,13 @@
         "text": "Let $$u=z^2-5$$ and $$du=2zdz$$. Our new concern is that $$du=2zdz$$ and the original expression has only xdz.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Let  u is equal to, z squared minus, 5  and  d u is equal to 2 z d z, . Our new concern is that  d u is equal to, 2 z d z  and the original expression has only xdz.",
+        "math": [
+            "$$u=z^2-5$$",
+            "$$du=2zdz$$",
+            "$$du=2zdz$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution2a-h3",
@@ -31,7 +41,11 @@
         "text": "Alter the expression for du or the integral in u will be twice as large as it should be. We can do this by multiplying both sides of the du equation by $$\\frac{1}{2}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Alter the expression for du or the integral in u will be twice as large as it should be. We can do this by multiplying both sides of the du equation by  1 half .",
+        "math": [
+            "$$\\frac{1}{2}$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution2a-h4",
@@ -43,7 +57,11 @@
         "text": "Write the integral in terms of u, but pull the $$\\frac{1}{2}$$ outside the integration symbol.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Write the integral in terms of u, but pull the  1 half  outside the integration symbol.",
+        "math": [
+            "$$\\frac{1}{2}$$"
+        ]
     },
     {
         "id": "a82ea5csubstitution2a-h5",
@@ -66,6 +84,10 @@
             "$$1/2*\\int u \\,du$$",
             "$$\\int u \\frac{1}{2} \\,du$$",
             "$$\\int u \\,du$$"
+        ],
+        "speech": "What would the integral look like?",
+        "math": [
+            ""
         ]
     },
     {
@@ -78,6 +100,10 @@
         "text": "Integrate the expression in u.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Integrate the expression in u.",
+        "math": [
+            ""
+        ]
     }
 ]

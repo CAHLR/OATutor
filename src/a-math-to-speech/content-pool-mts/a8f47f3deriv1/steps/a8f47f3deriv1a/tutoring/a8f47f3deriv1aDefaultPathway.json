@@ -7,7 +7,16 @@
         "text": "If f\u2032 changes sign from positive when $$x<c$$ to negative when $$x>c$$, then f(c) is a local maximum of f.\\nIf f\u2032 changes sign from negative when $$x<c$$ to positive when $$x>c$$, then f(c) is a local minimum of f.\\nIf f' has the same sign for $$x<c$$ and $$x>c$$, then f(c) is neither a local maximum nor a local minimum of f.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "If f\u2032 changes sign from positive when  x is less than c  to negative when  x, is greater than c , then f(c) is a local maximum of f.\\nIf f\u2032 changes sign from negative when  x, is less than c  to positive when  x, is greater than c , then f(c) is a local minimum of f.\\nIf f' has the same sign for  x, is less than, c  and  x, is greater than c , then f(c) is neither a local maximum nor a local minimum of f.",
+        "math": [
+            "$$x<c$$",
+            "$$x>c$$",
+            "$$x<c$$",
+            "$$x>c$$",
+            "$$x<c$$",
+            "$$x>c$$"
+        ]
     },
     {
         "id": "a8f47f3deriv1a-h2",
@@ -28,6 +37,10 @@
         "choices": [
             "$$3x^2$$",
             "$$x^2$$"
+        ],
+        "speech": "What is f'(x)? Write just the right hand side of the equation.",
+        "math": [
+            ""
         ]
     },
     {
@@ -49,6 +62,10 @@
         "choices": [
             "positive",
             "negative"
+        ],
+        "speech": "Is f'(x) positive or negative when , x is greater than 0, ?",
+        "math": [
+            "$$x>0$$"
         ]
     },
     {
@@ -70,6 +87,10 @@
         "choices": [
             "positive",
             "negative"
+        ],
+        "speech": "Is f'(x) positive or negative when  x is less than 0, ?",
+        "math": [
+            "$$x<0$$"
         ]
     }
 ]

@@ -7,7 +7,11 @@
         "text": "Let X $$=$$ the number of texts that a user sends or receives in one hour. Find the average number of texts received per hour.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let X , is equal to,  the number of texts that a user sends or receives in one hour. Find the average number of texts received per hour.",
+        "math": [
+            "$$=$$"
+        ]
     },
     {
         "id": "aeec340Poisson13a-h2",
@@ -24,7 +28,11 @@
         "text": "What is $$\\frac{41.5}{24}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  41.5 over 24, ?",
+        "math": [
+            "$$\\frac{41.5}{24}$$"
+        ]
     },
     {
         "id": "aeec340Poisson13a-h3",
@@ -36,7 +44,11 @@
         "text": "We know the average number of texts received per hour is $$1.7292$$, and we are looking for the probability that a text message user receives or sends two messages per hour. Use this information for a calculator procedure.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know the average number of texts received per hour is  1.7292 , and we are looking for the probability that a text message user receives or sends two messages per hour. Use this information for a calculator procedure.",
+        "math": [
+            "$$1.7292$$"
+        ]
     },
     {
         "id": "aeec340Poisson13a-h4",
@@ -48,7 +60,15 @@
         "text": "$$P\\left(x>2\\right)$$ $$=$$ $$1-P(x \\leq 2)$$ $$=$$ $$1-poissoncdf(1.7292$$, 2). Put this into the calculator to get the answer. poissoncdf is being used because we are finding the probability of a range of values, rather than an exact value.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "p, parentheses, x is greater than 2,    is equal to   1 minus   p, parentheses, x is less than or equal to 2,    is equal to   1 minus poissoncdf parentheses 1.7292 , 2). Put this into the calculator to get the answer. poissoncdf is being used because we are finding the probability of a range of values, rather than an exact value.",
+        "math": [
+            "$$P\\left(x>2\\right)$$",
+            "$$=$$",
+            "$$1-P(x \\leq 2)$$",
+            "$$=$$",
+            "$$1-poissoncdf(1.7292$$"
+        ]
     },
     {
         "id": "aeec340Poisson13a-h5",
@@ -60,6 +80,11 @@
         "text": "Calculator steps: press $$1$$ - and then press 2nd DISTR, arrow down to poissonpdf. Press ENTER. Enter $$(1.7292$$, 2).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculator steps: press  1  - and then press 2nd DISTR, arrow down to poissonpdf. Press ENTER. Enter  parentheses 1.7292 , 2).",
+        "math": [
+            "$$1$$",
+            "$$(1.7292$$"
+        ]
     }
 ]

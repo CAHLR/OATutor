@@ -7,7 +7,11 @@
         "text": "Think about what would result if you expand it?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Think about what would result if you expand it?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "afbe5ccpower15a-h2",
@@ -28,6 +32,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the function in the form , k x to the p-th ?",
+        "math": [
+            "$${kx}^p$$"
         ]
     },
     {
@@ -49,6 +57,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Does this mean it is a power function?",
+        "math": [
+            ""
         ]
     },
     {
@@ -70,6 +82,11 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is the function in the form  a x to the p-th,  +  b x to the p-th minus 1  + c?",
+        "math": [
+            "$${ax}^p$$",
+            "$${bx}^p-1$$"
         ]
     }
 ]

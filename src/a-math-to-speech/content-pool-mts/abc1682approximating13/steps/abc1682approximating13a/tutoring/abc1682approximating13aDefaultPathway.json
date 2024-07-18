@@ -7,7 +7,13 @@
         "text": "The first step is to divide the interval from $$0$$ to $$1$$ into $$n$$ equal subintervals. These subintervals can be seen as rectangles.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The first step is to divide the interval from , 0  to  1  into  n  equal subintervals. These subintervals can be seen as rectangles.",
+        "math": [
+            "$$0$$",
+            "$$1$$",
+            "$$n$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h2",
@@ -36,6 +42,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "How many subinterval or rectangle can we create in this problem?",
+        "math": [
+            ""
         ]
     },
     {
@@ -48,7 +58,13 @@
         "text": "The step size or width of the rectangles can be found using $$\u0394x=\\frac{b-a}{n}$$ where $$b$$ is the upper bound, a is the lower bound and $$n$$ is the number of rectangles.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The step size or width of the rectangles can be found using    delta x, is equal to fraction, b minus a, over n,   where  b  is the upper bound, a is the lower bound and  n  is the number of rectangles.",
+        "math": [
+            "$$\u0394x=\\frac{b-a}{n}$$",
+            "$$b$$",
+            "$$n$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h4",
@@ -65,7 +81,11 @@
         "text": "What is the upper bound of the interval?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the upper bound of the interval?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating13a-h5",
@@ -83,7 +103,11 @@
         "text": "What is the lower bound of the interval?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "What is the lower bound of the interval?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating13a-h6",
@@ -97,7 +121,12 @@
         "text": "For the $$8$$ rectangles, each rectangle has a width of $$\u0394x=\\frac{8-0}{8}=1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "For the  8  rectangles, each rectangle has a width of    delta x is equal to, fraction, 8 minus 0, over 8,  is equal to 1",
+        "math": [
+            "$$8$$",
+            "$$\u0394x=\\frac{8-0}{8}=1$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h7",
@@ -109,7 +138,11 @@
         "text": "The left rectangle approximation is when you make the left hand points of the pieces the height of the rectangles. In other words, the height of each rectangle is equal to the value of the function at the left endpoint of its base.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "The left rectangle approximation is when you make the left hand points of the pieces the height of the rectangles. In other words, the height of each rectangle is equal to the value of the function at the left endpoint of its base.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating13a-h8",
@@ -126,7 +159,11 @@
         "text": "Using the left-endpoint approximation, what is the height of a rectangle in the interval [4,5] ?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Using the left-endpoint approximation, what is the height of a rectangle in the interval [4,5] ?",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "abc1682approximating13a-h9",
@@ -138,7 +175,11 @@
         "text": "Using a left-endpoint approximation, the heights of each rectangle are $$f(0)=3, f(1)=2, f(2)=1, f(3)=2, f(4)=3, f(5)=4, f(6)=5, f(7)=4$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Using a left-endpoint approximation, the heights of each rectangle are  f of 0 is equal to 3, comma, f of 1 is equal to 2, comma, f of 2 is equal to 1, comma, f of 3 is equal to 2, comma, f of 4 is equal to 3, comma, f of 5 is equal to 4, comma, f of 6 is equal to 5, comma, f of 7 is equal to 4",
+        "math": [
+            "$$f(0)=3, f(1)=2, f(2)=1, f(3)=2, f(4)=3, f(5)=4, f(6)=5, f(7)=4$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h10",
@@ -150,7 +191,11 @@
         "text": "With the width and height just found, we can easily find the area of each rectangle using area of a rectangle formula $$A=w h$$ then add all of them up to get an approximation for the area under the curve.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "With the width and height just found, we can easily find the area of each rectangle using area of a rectangle formula ,   a is equal to w h  then add all of them up to get an approximation for the area under the curve.",
+        "math": [
+            "$$A=w h$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h11",
@@ -162,7 +207,12 @@
         "text": "Starting with $$x=0$$ from the left-hand point of the first rectangles, we have $$A=f{\\left(x_1\\right)} \\Delta x+f{\\left(x_2\\right)} \\Delta x+f{\\left(x_3\\right)} \\Delta x+f{\\left(x_4\\right)} \\Delta x+f{\\left(x_5\\right)} \\Delta x+f{\\left(x_6\\right)} \\Delta x+f{\\left(x_7\\right)} \\Delta x+f{\\left(x_8\\right)} \\Delta x=\\Delta x \\left(f{\\left(x_1\\right)}+f{\\left(x_2\\right)}+f{\\left(x_3\\right)}+f{\\left(x_4\\right)}+f{\\left(x_5\\right)}+f{\\left(x_6\\right)}+f{\\left(x_7\\right)}+f{\\left(x_8\\right)}\\right)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Starting with  x is equal to, 0  from the left-hand point of the first rectangles, we have    a, is equal to f of, parentheses x sub 1    delta x plus f of, parentheses x sub 2    delta x plus f of, parentheses x sub 3    delta x plus f of, parentheses x sub 4    delta x plus f of, parentheses x sub 5    delta x plus f of, parentheses x sub 6    delta x plus f of, parentheses x sub 7    delta x plus f of, parentheses x sub 8    delta x is equal to   delta x parentheses f of, parentheses x sub 1  plus, f of, parentheses x sub 2  plus, f of, parentheses x sub 3  plus, f of, parentheses x sub 4  plus, f of, parentheses x sub 5  plus, f of, parentheses x sub 6  plus, f of, parentheses x sub 7  plus, f of, parentheses x sub 8",
+        "math": [
+            "$$x=0$$",
+            "$$A=f{\\left(x_1\\right)} \\Delta x+f{\\left(x_2\\right)} \\Delta x+f{\\left(x_3\\right)} \\Delta x+f{\\left(x_4\\right)} \\Delta x+f{\\left(x_5\\right)} \\Delta x+f{\\left(x_6\\right)} \\Delta x+f{\\left(x_7\\right)} \\Delta x+f{\\left(x_8\\right)} \\Delta x=\\Delta x \\left(f{\\left(x_1\\right)}+f{\\left(x_2\\right)}+f{\\left(x_3\\right)}+f{\\left(x_4\\right)}+f{\\left(x_5\\right)}+f{\\left(x_6\\right)}+f{\\left(x_7\\right)}+f{\\left(x_8\\right)}\\right)$$"
+        ]
     },
     {
         "id": "abc1682approximating13a-h12",
@@ -174,6 +224,10 @@
         "text": "$$1\\left(3+2+1+2+3+4+5+4\\right)=24$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "1 times parentheses 3 plus 2 plus 1 plus 2 plus 3 plus 4 plus 5 plus 4  is equal to 24",
+        "math": [
+            "$$1\\left(3+2+1+2+3+4+5+4\\right)=24$$"
+        ]
     }
 ]

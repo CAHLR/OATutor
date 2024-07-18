@@ -8,13 +8,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "First, find out how to get the probability that a computer lasts ; 9  years and  11  years separately. We know that  m; is equal to; 0.1 , and using the formula to find the probability at certain years, the probability of  x  years is equal to , e raised to the negative 0.1 x power; .",
+        "speech": "First, find out how to get the probability that a computer lasts  9  years and  11  years separately. We know that  m is equal to 0.1 , and using the formula to find the probability at certain years, the probability of  x  years is equal to , e raised to the negative 0.1 x power .",
         "math": [
-            "9",
-            "11",
-            "m=0.1",
-            "x",
-            "e^{-0.1 x}"
+            "$$9$$",
+            "$$11$$",
+            "$$m=0.1$$",
+            "$$x$$",
+            "$$e^{-0.1 x}$$"
         ]
     },
     {
@@ -28,10 +28,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We can alternatively use a PDF function to get the ;  cap p, open paren,  cap x is greater than 9, close paren;  and ;  cap p, open paren,  cap x is greater than 11, close paren; . Afterwards, we can subtract the probabilities from each other and set the value to positive since probability is always positive.",
+        "speech": "We can alternatively use a PDF function to get the    p, parentheses,   x is greater than 9,   and    p, parentheses,   x is greater than 11,  . Afterwards, we can subtract the probabilities from each other and set the value to positive since probability is always positive.",
         "math": [
-            "P\\left(X>9\\right)",
-            "P\\left(X>11\\right)"
+            "$$P\\left(X>9\\right)$$",
+            "$$P\\left(X>11\\right)$$"
         ]
     },
     {
@@ -45,9 +45,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": ";  cap p; open paren, 9 is less than  cap x is less than 11; close paren; is equal to; the absolute value of  cap p, open paren,  cap x is less than 9, close paren; minus;  cap p, open paren,  cap x is less than 11, close paren, end absolute value;",
+        "speech": "p parentheses, 9 is less than   x is less than 11  is equal to the absolute value of   p, parentheses,   x is less than 9,  minus   p, parentheses,   x is less than 11, , end absolute value",
         "math": [
-            "P\\left(9<X<11\\right)=|P\\left(X<9\\right)-P\\left(X<11\\right)|"
+            "$$P\\left(9<X<11\\right)=|P\\left(X<9\\right)-P\\left(X<11\\right)|$$"
         ]
     }
 ]

@@ -7,7 +7,12 @@
         "text": "We know that we're trying to determine $$x$$ such that $$x=\\log_{2}\\left(\\frac{1}{32}\\right)$$. Rewrite this expression first into exponential form.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know that we're trying to determine  x  such that  x, is equal to the log base 2 of, parentheses 1 over 32,  . Rewrite this expression first into exponential form.",
+        "math": [
+            "$$x$$",
+            "$$x=\\log_{2}\\left(\\frac{1}{32}\\right)$$"
+        ]
     },
     {
         "id": "af4e405log11c-h2",
@@ -30,6 +35,10 @@
             "$${\\left(\\frac{1}{32}\\right)}^x=2$$",
             "$$x^2=\\frac{1}{32}$$",
             "$$x^{\\frac{1}{32}}=2$$"
+        ],
+        "speech": "What is the exponential form of  the log base 2 of, parentheses 1 over 32,  is equal to x ?",
+        "math": [
+            "$$\\log_{2}\\left(\\frac{1}{32}\\right)=x$$"
         ]
     },
     {
@@ -51,6 +60,14 @@
         "choices": [
             "$${\\left(\\frac{1}{2}\\right)}^5$$",
             "$$5^{\\frac{1}{2}}$$"
+        ],
+        "speech": "Since  2 to the fifth is equal to 32 , we can actually rewrite  1 over 32,  in terms of  1 half . What is  1 over 32,  equal to in terms of  1 half ?",
+        "math": [
+            "$$2^5=32$$",
+            "$$\\frac{1}{32}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{32}$$",
+            "$$\\frac{1}{2}$$"
         ]
     },
     {
@@ -74,6 +91,11 @@
             "$${\\left(-5\\right)}^2$$",
             "$${\\left(-32\\right)}^2$$",
             "$$2^{\\left(-32\\right)}$$"
+        ],
+        "speech": "We note that  parentheses 1 over x,  to the y-th is equal to x raised to the parentheses negative y  power . How can we rewrite  1 over 32 is equal to, parentheses 1 half  to the fifth  in terms of powers of 2?",
+        "math": [
+            "$${\\left(\\frac{1}{x}\\right)}^y=x^{\\left(-y\\right)}$$",
+            "$$\\frac{1}{32}={\\left(\\frac{1}{2}\\right)}^5$$"
         ]
     },
     {
@@ -91,6 +113,12 @@
         "text": "Substitution $$2^{\\left(-5\\right)}$$ into the exponential equation we found before, we get $$2^x=2^{\\left(-5\\right)}$$. What is $$x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitution  2 raised to the parentheses negative 5  power  into the exponential equation we found before, we get  2 to the x-th is equal to 2 raised to the parentheses negative 5  power . What is  x ?",
+        "math": [
+            "$$2^{\\left(-5\\right)}$$",
+            "$$2^x=2^{\\left(-5\\right)}$$",
+            "$$x$$"
+        ]
     }
 ]

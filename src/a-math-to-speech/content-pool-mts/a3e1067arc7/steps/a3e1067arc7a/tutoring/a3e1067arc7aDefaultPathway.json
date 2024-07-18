@@ -24,9 +24,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "The surface area can be found with ; the integral from a to b of; 2 pi f of x; the square root of 1 plus f prime, of x squared end root; d x; , where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
+        "speech": "The surface area can be found with  the integral from a to b of 2 pi f of x the square root of 1 plus f prime, of x squared end root d x , where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
         "math": [
-            "\\int_{a}^{b} 2\\pi f{\\left(x\\right)} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx"
+            "$$\\int_{a}^{b} 2\\pi f{\\left(x\\right)} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$"
         ]
     },
     {
@@ -68,7 +68,7 @@
         "license": "",
         "speech": "What is , f prime, of x squared, ?",
         "math": [
-            "{\\operatorname{f'}\\left(x\\right)}^2"
+            "$${\\operatorname{f'}\\left(x\\right)}^2$$"
         ]
     },
     {
@@ -82,9 +82,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "After plugging f(x) and the interval into the equation, we will have Surface ; Area is equal to; the integral from 1 to 4 of; 2 pi the square root of x; the square root of 1 plus, fraction, 1 over, 4 x, end fraction; end root; d x;",
+        "speech": "After plugging f(x) and the interval into the equation, we will have Surface  Area is equal to the integral from 1 to 4 of 2 pi the square root of x the square root of 1 plus, fraction, 1 over, 4 x,  end root d x",
         "math": [
-            "Area=\\int_{1}^{4} 2\\pi \\sqrt{x} \\sqrt{1+\\frac{1}{4x}} \\,dx"
+            "$$Area=\\int_{1}^{4} 2\\pi \\sqrt{x} \\sqrt{1+\\frac{1}{4x}} \\,dx$$"
         ]
     },
     {
@@ -98,9 +98,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "After simplified the equation, we will have Surface ; Area is equal to; the integral from 1 to 4 of; 2 pi, the square root of x plus 1 fourth end root; d x;",
+        "speech": "After simplified the equation, we will have Surface  Area is equal to the integral from 1 to 4 of 2 pi, the square root of x plus 1 fourth end root d x",
         "math": [
-            "Area=\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx"
+            "$$Area=\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx$$"
         ]
     },
     {
@@ -114,15 +114,15 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Let ; u is equal to, x plus, 1 fourth . Then,  d u; is equal to, d x . When  x, is equal to 1 ,  u, is equal to, 5 fourths , and when  x, is equal to 4 ,  u, is equal to; 17 fourths . This gives us ; the integral from 1 to 4 of; 2 pi, the square root of x plus 1 fourth end root; d x; is equal to; the integral from 5 fourths to 17 fourths of; 2 pi the square root of u; d u;",
+        "speech": "Let  u is equal to, x plus, 1 fourth . Then,  d u is equal to, d x . When  x, is equal to 1 ,  u, is equal to, 5 fourths , and when  x, is equal to 4 ,  u, is equal to 17 fourths . This gives us  the integral from 1 to 4 of 2 pi, the square root of x plus 1 fourth end root d x is equal to the integral from 5 fourths to 17 fourths of 2 pi the square root of u d u",
         "math": [
-            "u=x+\\frac{1}{4}",
-            "du=dx",
-            "x=1",
-            "u=\\frac{5}{4}",
-            "x=4",
-            "u=\\frac{17}{4}",
-            "\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx=\\int_{\\frac{5}{4}}^{\\frac{17}{4}} 2\\pi \\sqrt{u} \\,du"
+            "$$u=x+\\frac{1}{4}$$",
+            "$$du=dx$$",
+            "$$x=1$$",
+            "$$u=\\frac{5}{4}$$",
+            "$$x=4$$",
+            "$$u=\\frac{17}{4}$$",
+            "$$\\int_{1}^{4} 2\\pi \\sqrt{x+\\frac{1}{4}} \\,dx=\\int_{\\frac{5}{4}}^{\\frac{17}{4}} 2\\pi \\sqrt{u} \\,du$$"
         ]
     },
     {

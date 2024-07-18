@@ -8,9 +8,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember, the chain rule in Leibniz's notation tells us that ; fraction, d y, over, d x, end fraction; is equal to; fraction, d y, over, d u, end fraction; fraction, d u, over, d x, end fraction;",
+        "speech": "Remember, the chain rule in Leibniz's notation tells us that  fraction, d y, over, d x,  is equal to fraction, d y, over, d u,  fraction, d u, over, d x,",
         "math": [
-            "\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}"
+            "$$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$"
         ]
     },
     {
@@ -26,8 +26,8 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "First, try finding the derivative of  y  in terms of u. Then, find the derivative of u in terms of  x, . Multiplying the two should yield the correct answer!",
         "math": [
-            "y",
-            "x"
+            "$$y$$",
+            "$$x$$"
         ]
     },
     {
@@ -52,9 +52,9 @@
             "3u",
             "$$3u^2$$"
         ],
-        "speech": "What is ; fraction, d y, over, d u, end fraction; ?",
+        "speech": "What is  fraction, d y, over, d u,  ?",
         "math": [
-            "\\frac{dy}{du}"
+            "$$\\frac{dy}{du}$$"
         ]
     },
     {
@@ -79,9 +79,9 @@
             "$$4x^2$$",
             "$$2x^3$$"
         ],
-        "speech": "What is ; fraction, d u, over, d x, end fraction; ?",
+        "speech": "What is  fraction, d u, over, d x,  ?",
         "math": [
-            "\\frac{du}{dx}"
+            "$$\\frac{du}{dx}$$"
         ]
     },
     {
@@ -97,8 +97,8 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "Don't forget to plug in what we have for u in terms of , x  to give our final answer in terms of  x factorial,",
         "math": [
-            "x",
-            "x!"
+            "$$x$$",
+            "$$x!$$"
         ]
     }
 ]

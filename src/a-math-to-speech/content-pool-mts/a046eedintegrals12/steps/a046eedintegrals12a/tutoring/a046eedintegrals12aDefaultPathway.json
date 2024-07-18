@@ -61,9 +61,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Bringing the negative sign outside the integral sign, the problem now reads ; minus; the integral of u raised to the open paren negative 1 close paren power; d u; .",
+        "speech": "Bringing the negative sign outside the integral sign, the problem now reads  minus the integral of u raised to the parentheses negative 1  power d u .",
         "math": [
-            "-\\int u^{\\left(-1\\right)} \\,du"
+            "$$-\\int u^{\\left(-1\\right)} \\,du$$"
         ]
     },
     {
@@ -79,7 +79,7 @@
         "license": "",
         "speech": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from  x  to u.",
         "math": [
-            "x"
+            "$$x$$"
         ]
     },
     {
@@ -93,11 +93,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "As ; u is equal to; 1 plus, c o s x, , we will have upper and lower limits  x; is equal to 1  and  x, is equal to 2;  respectively.",
+        "speech": "As  u is equal to 1 plus, c o s x, , we will have upper and lower limits  x is equal to 1  and  x, is equal to 2  respectively.",
         "math": [
-            "u=1+cosx",
-            "x=1",
-            "x=2"
+            "$$u=1+cosx$$",
+            "$$x=1$$",
+            "$$x=2$$"
         ]
     },
     {
@@ -111,9 +111,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Notice that now the limits begin with the larger number, meaning we must multiply the whole integral by ; minus 1;  and interchange the limits.",
+        "speech": "Notice that now the limits begin with the larger number, meaning we must multiply the whole integral by  minus 1  and interchange the limits.",
         "math": [
-            "-1"
+            "$$-1$$"
         ]
     },
     {
@@ -127,9 +127,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; minus; the integral from 2 to 1 of; u raised to the open paren negative 1 close paren power; d u; is equal to; the integral from 1 to 2 of; u raised to the open paren negative 1 close paren power; d u;",
+        "speech": "minus the integral from 2 to 1 of u raised to the parentheses negative 1  power d u is equal to the integral from 1 to 2 of u raised to the parentheses negative 1  power d u",
         "math": [
-            "-\\int_{2}^{1} u^{\\left(-1\\right)} \\,du=\\int_{1}^{2} u^{\\left(-1\\right)} \\,du"
+            "$$-\\int_{2}^{1} u^{\\left(-1\\right)} \\,du=\\int_{1}^{2} u^{\\left(-1\\right)} \\,du$$"
         ]
     },
     {
@@ -143,11 +143,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; the integral from 1 to 2 of; u raised to the open paren negative 1 close paren power; d u; is equal to; l n the absolute value of u;  with the limit goes from  u; is equal to 1  to  u, is equal to 2;",
+        "speech": "the integral from 1 to 2 of u raised to the parentheses negative 1  power d u is equal to l n the absolute value of u  with the limit goes from  u is equal to 1  to  u, is equal to 2",
         "math": [
-            "\\int_{1}^{2} u^{\\left(-1\\right)} \\,du=ln|u|",
-            "u=1",
-            "u=2"
+            "$$\\int_{1}^{2} u^{\\left(-1\\right)} \\,du=ln|u|$$",
+            "$$u=1$$",
+            "$$u=2$$"
         ]
     },
     {
@@ -161,9 +161,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "; l n 2, minus l n 1; is equal to, l n 2;",
+        "speech": "l n 2, minus l n 1 is equal to, l n 2",
         "math": [
-            "ln2-ln1=ln2"
+            "$$ln2-ln1=ln2$$"
         ]
     }
 ]

@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Notice that we are revolving the curve around the y-axis, and the interval is in terms of ; y , so we want to rewrite the function as a function of  y . We get  x; is equal to g of y is equal to, 1 third y cubed;",
+        "speech": "Notice that we are revolving the curve around the y-axis, and the interval is in terms of  y , so we want to rewrite the function as a function of  y . We get  x is equal to g of y is equal to, 1 third y cubed",
         "math": [
-            "y",
-            "y",
-            "x=g(y)=\\frac{1}{3} y^3"
+            "$$y$$",
+            "$$y$$",
+            "$$x=g(y)=\\frac{1}{3} y^3$$"
         ]
     },
     {
@@ -42,9 +42,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "The surface area can be found with ; the integral from a to b of; 2 pi g of y; the square root of 1 plus g prime, of y squared end root; d y; , where g'(y) indicates the derivative of g(y). We need to plug g(y) and intervals into this equation",
+        "speech": "The surface area can be found with  the integral from a to b of 2 pi g of y the square root of 1 plus g prime, of y squared end root d y , where g'(y) indicates the derivative of g(y). We need to plug g(y) and intervals into this equation",
         "math": [
-            "\\int_{a}^{b} 2\\pi g{\\left(y\\right)} \\sqrt{1+{\\operatorname{g'}\\left(y\\right)}^2} \\,dy"
+            "$$\\int_{a}^{b} 2\\pi g{\\left(y\\right)} \\sqrt{1+{\\operatorname{g'}\\left(y\\right)}^2} \\,dy$$"
         ]
     },
     {
@@ -86,7 +86,7 @@
         "license": "",
         "speech": "What is , g prime, of y squared, ?",
         "math": [
-            "{\\operatorname{g'}\\left(y\\right)}^2"
+            "$${\\operatorname{g'}\\left(y\\right)}^2$$"
         ]
     },
     {
@@ -100,9 +100,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "After plugging g(y) and the interval into the equation, we will have Surface ; Area is equal to; the integral from 0 to 2 of; 2 pi 1 third y cubed, the square root of 1 plus y to the fourth end root; d y;",
+        "speech": "After plugging g(y) and the interval into the equation, we will have Surface  Area is equal to the integral from 0 to 2 of 2 pi 1 third y cubed, the square root of 1 plus y to the fourth end root d y",
         "math": [
-            "Area=\\int_{0}^{2} 2\\pi \\frac{1}{3} y^3 \\sqrt{1+y^4} \\,dy"
+            "$$Area=\\int_{0}^{2} 2\\pi \\frac{1}{3} y^3 \\sqrt{1+y^4} \\,dy$$"
         ]
     },
     {
@@ -116,9 +116,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "After simplified the equation, we will have Surface ; Area is equal to; open paren; open paren, 2 times p i, close paren; divided by 3; close paren; times; open paren; the integral from 0 to 2 of; y cubed, the square root of 1 plus y to the fourth end root; d y; close paren;",
+        "speech": "After simplified the equation, we will have Surface  Area is equal to parentheses parentheses, 2 times p i,  divided by 3  times parentheses the integral from 0 to 2 of y cubed, the square root of 1 plus y to the fourth end root d y",
         "math": [
-            "Area=((2*pi)/3)*(\\int_{0}^{2} y^3 \\sqrt{1+y^4} \\,dy)"
+            "$$Area=((2*pi)/3)*(\\int_{0}^{2} y^3 \\sqrt{1+y^4} \\,dy)$$"
         ]
     },
     {
@@ -132,15 +132,15 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "Let ; u is equal to, y to the fourth plus 1 . Then  d u; is equal to, 4 y cubed d y; . When  y; is equal to 0 ,  u, is equal to 1 , and when  y, is equal to 2 ,  u, is equal to; 17 . Then, ; open paren; open paren, 2 times p i, close paren; divided by 3; close paren; times; open paren; the integral from 0 to 2 of; y cubed, the square root of 1 plus y to the fourth end root; d y; close paren; is equal to; open paren; open paren, 2 times p i, close paren; divided by 3; close paren; times; the integral from 1 to 17 of; 1 fourth the square root of u; d u;",
+        "speech": "Let  u is equal to, y to the fourth plus 1 . Then  d u is equal to, 4 y cubed d y . When  y is equal to 0 ,  u, is equal to 1 , and when  y, is equal to 2 ,  u, is equal to 17 . Then,  parentheses parentheses, 2 times p i,  divided by 3  times parentheses the integral from 0 to 2 of y cubed, the square root of 1 plus y to the fourth end root d y  is equal to parentheses parentheses, 2 times p i,  divided by 3  times the integral from 1 to 17 of 1 fourth the square root of u d u",
         "math": [
-            "u=y^4+1",
-            "du=4y^3 dy",
-            "y=0",
-            "u=1",
-            "y=2",
-            "u=17",
-            "((2*pi)/3)*(\\int_{0}^{2} y^3 \\sqrt{1+y^4} \\,dy)=((2*pi)/3)*\\int_{1}^{17} \\frac{1}{4} \\sqrt{u} \\,du"
+            "$$u=y^4+1$$",
+            "$$du=4y^3 dy$$",
+            "$$y=0$$",
+            "$$u=1$$",
+            "$$y=2$$",
+            "$$u=17$$",
+            "$$((2*pi)/3)*(\\int_{0}^{2} y^3 \\sqrt{1+y^4} \\,dy)=((2*pi)/3)*\\int_{1}^{17} \\frac{1}{4} \\sqrt{u} \\,du$$"
         ]
     },
     {

@@ -7,7 +7,14 @@
         "text": "The 95% Critical Values of the Sample Correlation Coefficient Table can be used to determine whether the computed value of $$r$$, the sample correlation coefficient, is significant or not. Compare $$r$$ to the appropriate critical value in the table. If $$r$$ is not between the positive and negative critical values, then the correlation coefficient is significant. If $$r$$ is significant, then you may want to use the line for prediction.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The 95% Critical Values of the Sample Correlation Coefficient Table can be used to determine whether the computed value of , r , the sample correlation coefficient, is significant or not. Compare  r  to the appropriate critical value in the table. If  r  is not between the positive and negative critical values, then the correlation coefficient is significant. If  r  is significant, then you may want to use the line for prediction.",
+        "math": [
+            "$$r$$",
+            "$$r$$",
+            "$$r$$",
+            "$$r$$"
+        ]
     },
     {
         "id": "a805812corr3a-h2",
@@ -56,6 +63,12 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What are the degrees of freedom (df): , n  -  2 , where  n  is the number of data points?",
+        "math": [
+            "$$n$$",
+            "$$2$$",
+            "$$n$$"
         ]
     },
     {
@@ -73,7 +86,11 @@
         "text": "What positive and negative critical value is associated with df $$=$$ 6? Reference the 95% Critical Values of the Sample Correlation Coefficient Table.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What positive and negative critical value is associated with df  is equal to  6? Reference the 95% Critical Values of the Sample Correlation Coefficient Table.",
+        "math": [
+            "$$=$$"
+        ]
     },
     {
         "id": "a805812corr3a-h4",
@@ -94,6 +111,20 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "The critical values associated with df  is equal to   6  are  negative 0.707  and  positive 0.707 . Keep in mind that  r   is equal to   negative 0.7204 . If  r  < negative critical value or  r  > positive critical value, then  r  is significant. Is  r  significant?",
+        "math": [
+            "$$=$$",
+            "$$6$$",
+            "$$-0.707$$",
+            "$$+0.707$$",
+            "$$r$$",
+            "$$=$$",
+            "$$-0.7204$$",
+            "$$r$$",
+            "$$r$$",
+            "$$r$$",
+            "$$r$$"
         ]
     },
     {
@@ -106,6 +137,15 @@
         "text": "Since $$r$$ $$=$$ $$-0.7204$$ and $$-0.7204$$ < $$-0.707$$, $$r$$ is significant and the line may be used for prediction.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  r   is equal to   negative 0.7204  and  negative 0.7204  <  negative 0.707 ,  r  is significant and the line may be used for prediction.",
+        "math": [
+            "$$r$$",
+            "$$=$$",
+            "$$-0.7204$$",
+            "$$-0.7204$$",
+            "$$-0.707$$",
+            "$$r$$"
+        ]
     }
 ]

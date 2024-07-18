@@ -7,7 +7,12 @@
         "text": "We know that we're trying to determine $$x$$ such that $$x=\\log_{3}\\left(\\frac{1}{9}\\right)$$. Rewrite this expression first into exponential form.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know that we're trying to determine  x  such that  x, is equal to, the log base 3 of 1 ninth . Rewrite this expression first into exponential form.",
+        "math": [
+            "$$x$$",
+            "$$x=\\log_{3}\\left(\\frac{1}{9}\\right)$$"
+        ]
     },
     {
         "id": "af4e405log12c-h2",
@@ -30,6 +35,10 @@
             "$${\\left(\\frac{1}{9}\\right)}^x=3$$",
             "$$x^3=\\frac{1}{9}$$",
             "$$x^{\\frac{1}{9}}=3$$"
+        ],
+        "speech": "What is the exponential form of , the log base 3 of 1 ninth, is equal to x ?",
+        "math": [
+            "$$\\log_{3}\\left(\\frac{1}{9}\\right)=x$$"
         ]
     },
     {
@@ -51,6 +60,14 @@
         "choices": [
             "$${\\left(\\frac{1}{3}\\right)}^2$$",
             "$$2^{\\frac{1}{3}}$$"
+        ],
+        "speech": "Since  3 squared is equal to 9 , we can actually rewrite  1 ninth  in terms of  1 third . What is  1 ninth  equal to in terms of  1 third ?",
+        "math": [
+            "$$3^2=9$$",
+            "$$\\frac{1}{9}$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{1}{9}$$",
+            "$$\\frac{1}{3}$$"
         ]
     },
     {
@@ -74,6 +91,11 @@
             "$${\\left(-2\\right)}^3$$",
             "$${\\left(-9\\right)}^3$$",
             "$$3^{\\left(-9\\right)}$$"
+        ],
+        "speech": "We note that  parentheses 1 over x,  to the y-th is equal to x raised to the parentheses negative y  power . How can we rewrite  1 over 32 is equal to, parentheses 1 half  to the fifth  in terms of powers of 2?",
+        "math": [
+            "$${\\left(\\frac{1}{x}\\right)}^y=x^{\\left(-y\\right)}$$",
+            "$$\\frac{1}{32}={\\left(\\frac{1}{2}\\right)}^5$$"
         ]
     },
     {
@@ -91,6 +113,12 @@
         "text": "Substitution $$3^{\\left(-2\\right)}$$ into the exponential equation we found before, we get $$3^x=3^{\\left(-2\\right)}$$. What is $$x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitution  3 raised to the parentheses negative 2  power  into the exponential equation we found before, we get  3 to the x-th is equal to 3 raised to the parentheses negative 2  power . What is  x ?",
+        "math": [
+            "$$3^{\\left(-2\\right)}$$",
+            "$$3^x=3^{\\left(-2\\right)}$$",
+            "$$x$$"
+        ]
     }
 ]

@@ -10,7 +10,7 @@
         "license": "",
         "speech": "The logarithm of some value 'b' cannot be negative or zero, so , b is greater than 0, .",
         "math": [
-            "b>0"
+            "$$b>0$$"
         ]
     },
     {
@@ -24,10 +24,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ; the log base 2 of; open paren; fraction, 1 plus 2 x, over, x plus 3, end fraction; close paren;  cannot be negative or zero, then ; fraction, 1 plus 2 x, over, x plus 3, end fraction; is greater than 0; .",
+        "speech": "Since  the log base 2 of parentheses fraction, 1 plus 2 x, over, x plus 3,    cannot be negative or zero, then  fraction, 1 plus 2 x, over, x plus 3,  is greater than 0 .",
         "math": [
-            "\\log_{2}\\left(\\frac{1+2x}{x+3}\\right)",
-            "\\frac{1+2x}{x+3}>0"
+            "$$\\log_{2}\\left(\\frac{1+2x}{x+3}\\right)$$",
+            "$$\\frac{1+2x}{x+3}>0$$"
         ]
     },
     {
@@ -41,9 +41,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ; fraction, 1 plus 2 x, over, x plus 3, end fraction; is greater than 0; , the fraction is positive and must be considered in the inequality.",
+        "speech": "Since  fraction, 1 plus 2 x, over, x plus 3,  is greater than 0 , the fraction is positive and must be considered in the inequality.",
         "math": [
-            "\\frac{1+2x}{x+3}>0"
+            "$$\\frac{1+2x}{x+3}>0$$"
         ]
     },
     {
@@ -57,11 +57,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some values a,b where ; b   is not equal to, 0 , the fraction  a over b;  is positive when (a>0 AND b>0) OR (a<0 AND b<0).",
+        "speech": "For some values a,b where  b   is not equal to, 0 , the fraction  a over b  is positive when (a>0 AND b>0) OR (a<0 AND b<0).",
         "math": [
-            "b",
-            " \\neq 0",
-            "\\frac{a}{b}"
+            "$$b$$",
+            "$$ \\neq 0$$",
+            "$$\\frac{a}{b}$$"
         ]
     },
     {
@@ -75,9 +75,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "The fraction ; fraction, 1 plus 2 x, over, x plus 3, end fraction;  is positive when (1+2*x>0 AND x+3>0) OR (1+2*x<0 AND x+3<0).",
+        "speech": "The fraction  fraction, 1 plus 2 x, over, x plus 3,   is positive when (1+2*x>0 AND x+3>0) OR (1+2*x<0 AND x+3<0).",
         "math": [
-            "\\frac{1+2x}{x+3}"
+            "$$\\frac{1+2x}{x+3}$$"
         ]
     },
     {
@@ -107,10 +107,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Simplify ; 1 plus 2 x, is greater than, 0  AND  x, plus 3; is greater than 0;  by isolating 'x'.",
+        "speech": "Simplify  1 plus 2 x, is greater than, 0  AND  x, plus 3 is greater than 0  by isolating 'x'.",
         "math": [
-            "1+2x>0",
-            "x+3>0"
+            "$$1+2x>0$$",
+            "$$x+3>0$$"
         ]
     },
     {
@@ -182,10 +182,10 @@
                 "license": ""
             }
         ],
-        "speech": "Simplify ; 1 plus 2 x, is greater than, 0 . Only input the number after the  prime; is greater than prime;  symbol.",
+        "speech": "Simplify  1 plus 2 x, is greater than, 0 . Only input the number after the  prime is greater than prime  symbol.",
         "math": [
-            "1+2x>0",
-            "'>'"
+            "$$1+2x>0$$",
+            "$$'>'$$"
         ]
     },
     {
@@ -245,10 +245,10 @@
                 "license": ""
             }
         ],
-        "speech": "Simplify ; x plus 3, is greater than, 0 . Only input the number after the  prime; is greater than prime;  symbol.",
+        "speech": "Simplify  x plus 3, is greater than, 0 . Only input the number after the  prime is greater than prime  symbol.",
         "math": [
-            "x+3>0",
-            "'>'"
+            "$$x+3>0$$",
+            "$$'>'$$"
         ]
     },
     {
@@ -263,10 +263,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Simplify ; 1 plus 2 x, is less than, 0  AND  x, plus 3, is less than 0;  by isolating 'x'.",
+        "speech": "Simplify  1 plus 2 x, is less than, 0  AND  x, plus 3, is less than 0  by isolating 'x'.",
         "math": [
-            "1+2x<0",
-            "x+3<0"
+            "$$1+2x<0$$",
+            "$$x+3<0$$"
         ]
     },
     {
@@ -338,10 +338,10 @@
                 "license": ""
             }
         ],
-        "speech": "Simplify ; 1 plus 2 x, is less than, 0 . Only input the number after the  prime; is less than prime;  symbol.",
+        "speech": "Simplify  1 plus 2 x, is less than, 0 . Only input the number after the  prime is less than prime  symbol.",
         "math": [
-            "1+2x<0",
-            "'<'"
+            "$$1+2x<0$$",
+            "$$'<'$$"
         ]
     },
     {
@@ -401,10 +401,10 @@
                 "license": ""
             }
         ],
-        "speech": "Simplify ; x plus 3, is less than, 0 . Only input the number after the  prime; is less than prime;  symbol.",
+        "speech": "Simplify  x plus 3, is less than, 0 . Only input the number after the  prime is less than prime  symbol.",
         "math": [
-            "x+3<0",
-            "'<'"
+            "$$x+3<0$$",
+            "$$'<'$$"
         ]
     },
     {
@@ -451,10 +451,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "The inequality ; x is greater than; fraction, negative 1, over 2, end fraction;  AND  x; is greater than negative 3;  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "speech": "The inequality  x is greater than fraction, negative 1, over 2,   AND  x is greater than negative 3  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "math": [
-            "x>\\frac{-1}{2}",
-            "x>-3"
+            "$$x>\\frac{-1}{2}$$",
+            "$$x>-3$$"
         ]
     },
     {
@@ -478,10 +478,10 @@
             "$$\\frac{-1}{2}$$",
             "$$-3$$"
         ],
-        "speech": "What is the lower bound of the inequality ; x is greater than; fraction, negative 1, over 2, end fraction;  AND  x; is greater than negative 3; ?",
+        "speech": "What is the lower bound of the inequality  x is greater than fraction, negative 1, over 2,   AND  x is greater than negative 3 ?",
         "math": [
-            "x>\\frac{-1}{2}",
-            "x>-3"
+            "$$x>\\frac{-1}{2}$$",
+            "$$x>-3$$"
         ]
     },
     {
@@ -505,10 +505,10 @@
             "$$\\frac{-1}{2}$$",
             "$$-3$$"
         ],
-        "speech": "What is the upper bound of the inequality ; x is greater than; fraction, negative 1, over 2, end fraction;  AND  x; is greater than negative 3; ?",
+        "speech": "What is the upper bound of the inequality  x is greater than fraction, negative 1, over 2,   AND  x is greater than negative 3 ?",
         "math": [
-            "x>\\frac{-1}{2}",
-            "x>-3"
+            "$$x>\\frac{-1}{2}$$",
+            "$$x>-3$$"
         ]
     },
     {
@@ -548,10 +548,10 @@
             "Yes",
             "No"
         ],
-        "speech": "Is the lower bound ; fraction, negative 1, over 2, end fraction;  included as a valid value of 'x' in , fraction, negative 1, over 2, end fraction; is less than x; ?",
+        "speech": "Is the lower bound  fraction, negative 1, over 2,   included as a valid value of 'x' in , fraction, negative 1, over 2,  is less than x ?",
         "math": [
-            "\\frac{-1}{2}",
-            "\\frac{-1}{2}<x"
+            "$$\\frac{-1}{2}$$",
+            "$$\\frac{-1}{2}<x$$"
         ]
     },
     {
@@ -586,10 +586,10 @@
                 "license": ""
             }
         ],
-        "speech": "Is the upper bound ; infinity  included as a valid value of 'x' in , fraction, negative 1, over 2, end fraction; is less than x; ?",
+        "speech": "Is the upper bound  infinity  included as a valid value of 'x' in , fraction, negative 1, over 2,  is less than x ?",
         "math": [
-            "\\infty",
-            "\\frac{-1}{2}<x"
+            "$$\\infty$$",
+            "$$\\frac{-1}{2}<x$$"
         ]
     },
     {
@@ -604,10 +604,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "The inequality ; x is less than; fraction, negative 1, over 2, end fraction;  AND  x; is less than negative 3;  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "speech": "The inequality  x is less than fraction, negative 1, over 2,   AND  x is less than negative 3  can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
         "math": [
-            "x<\\frac{-1}{2}",
-            "x<-3"
+            "$$x<\\frac{-1}{2}$$",
+            "$$x<-3$$"
         ]
     },
     {
@@ -631,10 +631,10 @@
             "$$\\frac{-1}{2}$$",
             "$$-3$$"
         ],
-        "speech": "What is the lower bound of the inequality ; x is less than; fraction, negative 1, over 2, end fraction;  AND  x; is less than negative 3; ?",
+        "speech": "What is the lower bound of the inequality  x is less than fraction, negative 1, over 2,   AND  x is less than negative 3 ?",
         "math": [
-            "x<\\frac{-1}{2}",
-            "x<-3"
+            "$$x<\\frac{-1}{2}$$",
+            "$$x<-3$$"
         ]
     },
     {
@@ -658,10 +658,10 @@
             "$$\\frac{-1}{2}$$",
             "$$-3$$"
         ],
-        "speech": "What is the upper bound of the inequality ; x is less than; fraction, negative 1, over 2, end fraction;  AND  x; is less than negative 3; ?",
+        "speech": "What is the upper bound of the inequality  x is less than fraction, negative 1, over 2,   AND  x is less than negative 3 ?",
         "math": [
-            "x<\\frac{-1}{2}",
-            "x<-3"
+            "$$x<\\frac{-1}{2}$$",
+            "$$x<-3$$"
         ]
     },
     {
@@ -713,10 +713,10 @@
                 "license": ""
             }
         ],
-        "speech": "Is the lower bound ; minus infinity  included as a valid value of 'x' in  x; is less than negative 3; ?",
+        "speech": "Is the lower bound  minus infinity  included as a valid value of 'x' in  x is less than negative 3 ?",
         "math": [
-            "-\\infty",
-            "x<-3"
+            "$$-\\infty$$",
+            "$$x<-3$$"
         ]
     },
     {
@@ -739,10 +739,10 @@
             "Yes",
             "No"
         ],
-        "speech": "Is the upper bound ; minus 3  included as a valid value of 'x' in  x; is less than negative 3; ?",
+        "speech": "Is the upper bound  minus 3  included as a valid value of 'x' in  x is less than negative 3 ?",
         "math": [
-            "-3",
-            "x<-3"
+            "$$-3$$",
+            "$$x<-3$$"
         ]
     },
     {
@@ -757,11 +757,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "The bounds for the two equations, ; the open interval from negative infinity to negative 3;  and ; the open interval from fraction, negative 1, over 2, end fraction; to infinity; , can be ORed together using ' ; union;  '.",
+        "speech": "The bounds for the two equations,  the open interval from negative infinity to negative 3  and  the open interval from fraction, negative 1, over 2,  to infinity , can be ORed together using '  union  '.",
         "math": [
-            "(-\\infty,-3)",
-            "(\\frac{-1}{2},\\infty)",
-            "\\cup"
+            "$$(-\\infty,-3)$$",
+            "$$(\\frac{-1}{2},\\infty)$$",
+            "$$\\cup$$"
         ]
     }
 ]

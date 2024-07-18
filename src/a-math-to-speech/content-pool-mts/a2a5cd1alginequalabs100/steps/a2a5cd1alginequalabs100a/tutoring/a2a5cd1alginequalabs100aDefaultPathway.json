@@ -8,14 +8,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some numbers a and ; b  , is greater than or equal to;   0  where  the absolute value of a; is less than b , this is the same as  a, is less than, b  AND  a, is greater than negative b;",
+        "speech": "For some numbers a and  b  , is greater than or equal to   0  where  the absolute value of a is less than b , this is the same as  a, is less than, b  AND  a, is greater than negative b",
         "math": [
-            "b",
-            "\\geq",
-            "0",
-            "|a|<b",
-            "a<b",
-            "a>-b"
+            "$$b$$",
+            "$$\\geq$$",
+            "$$0$$",
+            "$$|a|<b$$",
+            "$$a<b$$",
+            "$$a>-b$$"
         ]
     },
     {
@@ -40,9 +40,9 @@
             "$$x-A<B$$ and $$x-A>B$$",
             "$$x-A<B$$"
         ],
-        "speech": "What is ; the absolute value of x minus  cap a, end absolute value; is less than  cap b;  rewritten without the absolute value sign?",
+        "speech": "What is  the absolute value of x minus   a, end absolute value is less than   b  rewritten without the absolute value sign?",
         "math": [
-            "|x-A|<B"
+            "$$|x-A|<B$$"
         ]
     },
     {
@@ -72,9 +72,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Add A from the left to get , x is less than,  cap a plus  cap b; .",
+        "speech": "Add A from the left to get , x is less than,   a plus   b .",
         "math": [
-            "x<A+B"
+            "$$x<A+B$$"
         ]
     },
     {
@@ -104,9 +104,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Add A from the left to get , x is greater than,  cap a minus  cap b; .",
+        "speech": "Add A from the left to get , x is greater than,   a minus   b .",
         "math": [
-            "x>A-B"
+            "$$x>A-B$$"
         ]
     },
     {
@@ -147,10 +147,10 @@
             "A",
             "B"
         ],
-        "speech": "What is the lower bound of the inequality ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "speech": "What is the lower bound of the inequality  x is less than   a plus   b  and  x is greater than,   a minus   b ?",
         "math": [
-            "x<A+B",
-            "x>A-B"
+            "$$x<A+B$$",
+            "$$x>A-B$$"
         ]
     },
     {
@@ -175,10 +175,10 @@
             "A",
             "B"
         ],
-        "speech": "What is the upper bound of the inequality ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "speech": "What is the upper bound of the inequality  x is less than   a plus   b  and  x is greater than,   a minus   b ?",
         "math": [
-            "x<A+B",
-            "x>A-B"
+            "$$x<A+B$$",
+            "$$x>A-B$$"
         ]
     },
     {
@@ -218,10 +218,10 @@
             "Yes",
             "No"
         ],
-        "speech": "Is the lower bound A-B included as a valid value of 'x' in ; x is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "speech": "Is the lower bound A-B included as a valid value of 'x' in  x is less than   a plus   b  and  x is greater than,   a minus   b ?",
         "math": [
-            "x<A+B",
-            "x>A-B"
+            "$$x<A+B$$",
+            "$$x>A-B$$"
         ]
     },
     {
@@ -244,11 +244,11 @@
             "Yes",
             "No"
         ],
-        "speech": "Is the upper bound ;  cap a plus  cap b  included as a valid value of 'x' in  x; is less than;  cap a plus  cap b  and  x; is greater than,  cap a minus  cap b; ?",
+        "speech": "Is the upper bound    a plus   b  included as a valid value of 'x' in  x is less than   a plus   b  and  x is greater than,   a minus   b ?",
         "math": [
-            "A+B",
-            "x<A+B",
-            "x>A-B"
+            "$$A+B$$",
+            "$$x<A+B$$",
+            "$$x>A-B$$"
         ]
     },
     {
@@ -263,12 +263,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ; x  is contained in , open paren, negative 3 comma 9, close paren;  if and only if  x  is in ; open paren;  cap a minus  cap b, comma  cap a plus  cap b; close paren; , A and B can be found by solving the system of linear equations.",
+        "speech": "Since  x  is contained in , parentheses, negative 3 comma 9,   if and only if  x  is in  parentheses   a minus   b, comma   a plus   b  , A and B can be found by solving the system of linear equations.",
         "math": [
-            "x",
-            "(-3,9)",
-            "x",
-            "(A-B,A+B)"
+            "$$x$$",
+            "$$(-3,9)$$",
+            "$$x$$",
+            "$$(A-B,A+B)$$"
         ]
     },
     {
@@ -291,9 +291,9 @@
             "$$A-B=-3$$ and $$A+B=9$$",
             "$$A-B=9$$ and $$A+B=-3$$"
         ],
-        "speech": "What system of linear equations can be extrapolated from ; times, open paren, negative 3 comma 9, close paren;  and (A-B, A+B)?",
+        "speech": "What system of linear equations can be extrapolated from  times, parentheses, negative 3 comma 9,   and (A-B, A+B)?",
         "math": [
-            "(-3,9)"
+            "$$(-3,9)$$"
         ]
     },
     {
@@ -334,10 +334,10 @@
             "$$2A=12$$",
             "$$A=12$$"
         ],
-        "speech": "What equation is left when you add ;  cap a minus  cap b, is equal to, negative 3  and   cap a, plus  cap b; is equal to 9;  together?",
+        "speech": "What equation is left when you add    a minus   b, is equal to, negative 3  and    a, plus   b is equal to 9  together?",
         "math": [
-            "A-B=-3",
-            "A+B=9"
+            "$$A-B=-3$$",
+            "$$A+B=9$$"
         ]
     },
     {
@@ -351,10 +351,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Divide , 2  from both sides of  2  cap a; is equal to 6;  to isolate 'x'.",
+        "speech": "Divide , 2  from both sides of  2   a is equal to 6  to isolate 'x'.",
         "math": [
-            "2",
-            "2A=6"
+            "$$2$$",
+            "$$2A=6$$"
         ]
     },
     {
@@ -375,7 +375,7 @@
         "license": "",
         "speech": "What is  6 halves ?",
         "math": [
-            "\\frac{6}{2}"
+            "$$\\frac{6}{2}$$"
         ]
     },
     {
@@ -389,11 +389,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ;  cap a is equal to, 3 , substitute A into   cap a, plus  cap b; is equal to, 9  and solve for B:  3, plus  cap b; is equal to 9;",
+        "speech": "Since    a is equal to, 3 , substitute A into    a, plus   b is equal to, 9  and solve for B:  3, plus   b is equal to 9",
         "math": [
-            "A=3",
-            "A+B=9",
-            "3+B=9"
+            "$$A=3$$",
+            "$$A+B=9$$",
+            "$$3+B=9$$"
         ]
     },
     {
@@ -423,10 +423,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Subtract ; 3  from the left to get   cap b, is equal to 9 minus 3; .",
+        "speech": "Subtract  3  from the left to get    b, is equal to 9 minus 3 .",
         "math": [
-            "3",
-            "B=9-3"
+            "$$3$$",
+            "$$B=9-3$$"
         ]
     },
     {
@@ -447,7 +447,7 @@
         "license": "",
         "speech": "What is  9 minus 3, ?",
         "math": [
-            "9-3"
+            "$$9-3$$"
         ]
     },
     {
@@ -461,16 +461,16 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "b' had an assumption that ; b  , is greater than or equal to;   0  such that  the absolute value of a; is less than b  is the same as  a, is less than; b  AND  a, is greater than; negative b . Since B is equivalent to 'b', B , is greater than or equal to,   0;  for the answer to be correct.",
+        "speech": "b' had an assumption that  b  , is greater than or equal to   0  such that  the absolute value of a is less than b  is the same as  a, is less than b  AND  a, is greater than negative b . Since B is equivalent to 'b', B , is greater than or equal to,   0  for the answer to be correct.",
         "math": [
-            "b",
-            "\\geq",
-            "0",
-            "|a|<b",
-            "a<b",
-            "a>-b",
-            "\\geq",
-            "0"
+            "$$b$$",
+            "$$\\geq$$",
+            "$$0$$",
+            "$$|a|<b$$",
+            "$$a<b$$",
+            "$$a>-b$$",
+            "$$\\geq$$",
+            "$$0$$"
         ]
     },
     {
@@ -493,11 +493,11 @@
             "Yes",
             "No"
         ],
-        "speech": "Is B ; is greater than or equal to;   0  when   cap b, is equal to 6; ?",
+        "speech": "Is B  is greater than or equal to   0  when    b, is equal to 6 ?",
         "math": [
-            "\\geq",
-            "0",
-            "B=6"
+            "$$\\geq$$",
+            "$$0$$",
+            "$$B=6$$"
         ]
     }
 ]

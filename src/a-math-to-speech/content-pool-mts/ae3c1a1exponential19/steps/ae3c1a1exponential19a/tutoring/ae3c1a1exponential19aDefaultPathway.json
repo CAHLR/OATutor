@@ -7,7 +7,20 @@
         "text": "For all real numbers $$t$$, and all positive numbers a and $$r$$, continuous growth or decay is represented by the formula $$A(t)=a e^{r t}$$ where:\\na is the initial value,\\n$$r$$ is the continuous growth rate per unit time,\\nand $$t$$ is the elapsed time.\\n\\nIf $$r>0$$ , then the formula represents continuous growth. If $$r<0$$ , then the formula represents continuous decay.\\n\\nFor business applications, the continuous growth formula is called the continuous compounding formula and takes the form $$A(t)=P e^{r t}$$\\nwhere:\\nP is the principal or the initial invested,\\n$$r$$ is the growth or interest rate per unit time,\\nand $$t$$ is the period or term of the investment.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For all real numbers  t , and all positive numbers a and  r , continuous growth or decay is represented by the formula    a of t is equal to a, e raised to the r t power  where:\\na is the initial value,\\n r  is the continuous growth rate per unit time,\\nand  t  is the elapsed time.\\n\\nIf  r is greater than 0  , then the formula represents continuous growth. If  r, is less than 0  , then the formula represents continuous decay.\\n\\nFor business applications, the continuous growth formula is called the continuous compounding formula and takes the form    a of t is equal to   p, e raised to the r t power \\nwhere:\\nP is the principal or the initial invested,\\n r  is the growth or interest rate per unit time,\\nand  t  is the period or term of the investment.",
+        "math": [
+            "$$t$$",
+            "$$r$$",
+            "$$A(t)=a e^{r t}$$",
+            "$$r$$",
+            "$$t$$",
+            "$$r>0$$",
+            "$$r<0$$",
+            "$$A(t)=P e^{r t}$$",
+            "$$r$$",
+            "$$t$$"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h2",
@@ -28,6 +41,10 @@
         "choices": [
             "Continuous Growth",
             "Continuous Decay"
+        ],
+        "speech": "What type of model is this?",
+        "math": [
+            ""
         ]
     },
     {
@@ -49,6 +66,10 @@
         "choices": [
             "Continuous growth rate per unit time, $$r$$",
             "initial value, a"
+        ],
+        "speech": "Identify the terms of the model,    a of t, is equal to, a, e raised to the r t power , that are given and the terms that you would have to find. Which terms are not given?",
+        "math": [
+            "$$A(t)=a e^{r t}$$"
         ]
     },
     {
@@ -61,7 +82,11 @@
         "text": "Find the continuous Growth Rate per unit time.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the continuous Growth Rate per unit time.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h5",
@@ -83,6 +108,12 @@
             "$$50=100e^{35r}$$",
             "$$100=50e^r$$",
             "$$50=a e^{35r}$$"
+        ],
+        "speech": "Substitute all known terms (a - initial values,  t  - elapsed time, A(t) - model's estimate) provided in the question into the exponential decay model,    a of t is equal to a, e raised to the r t power  and find  r , the continuous growth rate. What is the equation after substituting the values in?",
+        "math": [
+            "$$t$$",
+            "$$A(t)=a e^{r t}$$",
+            "$$r$$"
         ]
     },
     {
@@ -95,7 +126,11 @@
         "text": "Divide by $$100$$ on both sides.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by  100  on both sides.",
+        "math": [
+            "$$100$$"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h7",
@@ -107,7 +142,11 @@
         "text": "Take ln on both sides.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Take ln on both sides.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h8",
@@ -119,7 +158,12 @@
         "text": "Divide by $$35$$ on both sides. You would have successfully isolated $$r$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by  35  on both sides. You would have successfully isolated  r, .",
+        "math": [
+            "$$35$$",
+            "$$r$$"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h9",
@@ -136,7 +180,11 @@
         "text": "Evaluate $$r$$ numerically. Leave the answer in four decimal places.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Evaluate  r  numerically. Leave the answer in four decimal places.",
+        "math": [
+            "$$r$$"
+        ]
     },
     {
         "id": "ae3c1a1exponential19a-h10",
@@ -148,6 +196,10 @@
         "text": "Now that you have found all the terms for your exponential model, substitute $$t=54$$ to find the weight of the radioactive substance.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now that you have found all the terms for your exponential model, substitute  t is equal to 54  to find the weight of the radioactive substance.",
+        "math": [
+            "$$t=54$$"
+        ]
     }
 ]

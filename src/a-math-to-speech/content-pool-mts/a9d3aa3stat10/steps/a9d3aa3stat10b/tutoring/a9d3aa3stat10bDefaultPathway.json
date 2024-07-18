@@ -7,7 +7,11 @@
         "text": "Qualitative data usually involves categorizing (working with categorical data) and therefore usually isn't numeric in context. Quantitative data, in contrast, always words with numbers whether that be counting or measuring.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Qualitative data usually involves categorizing (working with categorical data) and therefore usually isn't numeric in context. Quantitative data, in contrast, always words with numbers whether that be counting or measuring.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a9d3aa3stat10b-h2",
@@ -28,6 +32,10 @@
         "choices": [
             "Quantitative",
             "Qualitative"
+        ],
+        "speech": "We want to measure the duration (amount of time). Is this qualitative (uses categories) or quantitative (counting, measuring numerical values)?",
+        "math": [
+            ""
         ]
     },
     {
@@ -49,6 +57,12 @@
         "choices": [
             "Discrete",
             "Continuous"
+        ],
+        "speech": "Discrete data we know usually deals with integer or \"discrete\" values (in the sense that, for instance, you can't have half a person). Counting people would be an example of discrete data. On the other hand, continuous data can be represented as fractions or decimals. For instance, we can have  1.2  miles  parentheses 0.2  miles is valid, even though it's not a full mile). Is the duration (amount of time) therefore discrete or continuous? Similarly, can you split up time into  0.5,  minutes or something of that nature?",
+        "math": [
+            "$$1.2$$",
+            "$$(0.2$$",
+            "$$0.5$$"
         ]
     }
 ]

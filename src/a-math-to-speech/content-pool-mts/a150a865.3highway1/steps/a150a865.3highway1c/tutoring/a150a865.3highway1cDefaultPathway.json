@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We want to find the probability when a car passes by within a ; 20  second interval. Therefore, any car may pass by within these  20  seconds. Find ;  cap p, open paren,  cap x is less than 20, close paren; , where X is the time in seconds between successive cars.",
+        "speech": "We want to find the probability when a car passes by within a  20  second interval. Therefore, any car may pass by within these  20  seconds. Find    p, parentheses,   x is less than 20,  , where X is the time in seconds between successive cars.",
         "math": [
-            "20",
-            "20",
-            "P\\left(X<20\\right)"
+            "$$20$$",
+            "$$20$$",
+            "$$P\\left(X<20\\right)$$"
         ]
     },
     {
@@ -33,7 +33,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "Find the probability in respect to a distribution modeled after seconds. Decay parameter  m is equal to, ?",
         "math": [
-            "m="
+            "$$m=$$"
         ]
     },
     {
@@ -49,8 +49,8 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "m  is denoted as the decay parameter where  1,  is divided by the random variable average.",
         "math": [
-            "m",
-            "1"
+            "$$m$$",
+            "$$1$$"
         ]
     },
     {
@@ -66,8 +66,8 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "Note that the decay parameter must be in seconds. We know that it takes  5  cars in a minute to pass by on average, and earlier calculated that there are on average12 seconds between each car. Use the  12,  seconds as the average.",
         "math": [
-            "5",
-            "12"
+            "$$5$$",
+            "$$12$$"
         ]
     },
     {
@@ -81,14 +81,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": ";  cap p, open paren,  cap x is less than x, close paren;  ; is equal to;   1 minus; e raised to the open paren negative m x, close paren power; , where  x  is the desired conditional random variable cut off. We are finding ;  cap p, open paren,  cap x is less than 20, close paren;  because within the  20;  second interval, there may be a car.",
+        "speech": "p, parentheses,   x is less than x,    is equal to   1 minus e raised to the parentheses negative m x,  power , where  x  is the desired conditional random variable cut off. We are finding    p, parentheses,   x is less than 20,   because within the  20  second interval, there may be a car.",
         "math": [
-            "P\\left(X<x\\right)",
-            "=",
-            "1-e^{\\left(-m x\\right)}",
-            "x",
-            "P\\left(X<20\\right)",
-            "20"
+            "$$P\\left(X<x\\right)$$",
+            "$$=$$",
+            "$$1-e^{\\left(-m x\\right)}$$",
+            "$$x$$",
+            "$$P\\left(X<20\\right)$$",
+            "$$20$$"
         ]
     }
 ]

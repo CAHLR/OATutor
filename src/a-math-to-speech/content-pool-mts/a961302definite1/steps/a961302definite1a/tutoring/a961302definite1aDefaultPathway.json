@@ -7,7 +7,17 @@
         "text": "Based on the limits of integration, we have $$a=0$$ and $$b=2$$. For $$i=0$$, $$1$$, $$2, ...$$, $$n$$, let P={x_i} be a regular partition of [0, 2] then find dx, or $$\\frac{b-a}{n}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Based on the limits of integration, we have  a is equal to 0  and  b, is equal to 2 . For  i, is equal to, 0 ,  1 ,  2 comma dot dot dot ,  n , let P={x_i} be a regular partition of [0, 2] then find dx, or , fraction, b minus a, over n,  .",
+        "math": [
+            "$$a=0$$",
+            "$$b=2$$",
+            "$$i=0$$",
+            "$$1$$",
+            "$$2, ...$$",
+            "$$n$$",
+            "$$\\frac{b-a}{n}$$"
+        ]
     },
     {
         "id": "a961302definite1a-h2",
@@ -30,6 +40,10 @@
             "$$\\frac{-2}{n}$$",
             "$$0$$",
             "$$\\frac{1}{2} n$$"
+        ],
+        "speech": "What is dx or , fraction, b minus a, over n,  ?",
+        "math": [
+            "$$\\frac{b-a}{n}$$"
         ]
     },
     {
@@ -42,7 +56,12 @@
         "text": "Since we are using a right-endpoint approximation to generate Riemann sums, for each i, we need to calculate the function value at the right endpoint of the interval [x_i-1, x_i]. The right endpoint of the interval is $$x_i$$, and since P is a regular partition, $$x_i=\\left(x_0+1\\right) dx=\\frac{2i}{n}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Since we are using a right-endpoint approximation to generate Riemann sums, for each i, we need to calculate the function value at the right endpoint of the interval [x_i-1, x_i]. The right endpoint of the interval is  x sub i , and since P is a regular partition,  x sub i, is equal to parentheses x sub 0 plus 1,  times d x is equal to, fraction, 2 i, over n,  .",
+        "math": [
+            "$$x_i$$",
+            "$$x_i=\\left(x_0+1\\right) dx=\\frac{2i}{n}$$"
+        ]
     },
     {
         "id": "a961302definite1a-h4",
@@ -54,7 +73,11 @@
         "text": "Find the function value $$f{\\left(x_i\\right)}$$ at the right endpoint.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Find the function value , f of, parentheses x sub i   at the right endpoint.",
+        "math": [
+            "$$f{\\left(x_i\\right)}$$"
+        ]
     },
     {
         "id": "a961302definite1a-h5",
@@ -96,6 +119,10 @@
                     "$$\\frac{4i^2}{n}$$"
                 ]
             }
+        ],
+        "speech": "What is , f of, parentheses x sub i  ?",
+        "math": [
+            "$$f{\\left(x_i\\right)}$$"
         ]
     },
     {
@@ -108,7 +135,11 @@
         "text": "Now find the Riemann sum.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Now find the Riemann sum.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a961302definite1a-h7",
@@ -130,6 +161,10 @@
             "(8/n**3)sum{i\\=1}{n}{i**2}",
             "(n**2)sum{i\\=1}{n}{i**2}",
             "(4/n**2)sum{i\\=1}{n}{i}"
+        ],
+        "speech": "Which of the following is the correct Riemann sum?",
+        "math": [
+            ""
         ]
     },
     {
@@ -142,7 +177,11 @@
         "text": "Evaluate the Riemann sum.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "Evaluate the Riemann sum.",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a961302definite1a-h9",
@@ -154,7 +193,11 @@
         "text": "/int{x**2,0,2,x}=/lim{sum{i\\=1}{n}{f(x_i)dx},n,inf}",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "speech": "/int{x**2,0,2,x}=/lim{sum{i\\=1}{n}{f(x_i)dx},n,inf}",
+        "math": [
+            ""
+        ]
     },
     {
         "id": "a961302definite1a-h10",
@@ -188,6 +231,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
             }
+        ],
+        "speech": "What is /lim{(8/3)+(4/n)+(8/(6n**2))}?",
+        "math": [
+            ""
         ]
     }
 ]

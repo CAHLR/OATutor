@@ -24,11 +24,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Yes, ; fraction, x squared plus 8 x, over, x plus 5, end fraction;  and , fraction, 15 over, x plus 5, end fraction;  shared the same common denominator of  x; plus 5; .",
+        "speech": "Yes,  fraction, x squared plus 8 x, over, x plus 5,   and , fraction, 15 over, x plus 5,   shared the same common denominator of  x plus 5 .",
         "math": [
-            "\\frac{x^2+8x}{x+5}",
-            "\\frac{15}{x+5}",
-            "x+5"
+            "$$\\frac{x^2+8x}{x+5}$$",
+            "$$\\frac{15}{x+5}$$",
+            "$$x+5$$"
         ]
     },
     {
@@ -63,10 +63,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "What is the sum of numerators for ; fraction, x squared plus 8 x, over, x plus 5, end fraction;  and , fraction, 15 over, x plus 5, end fraction; ?",
+        "speech": "What is the sum of numerators for  fraction, x squared plus 8 x, over, x plus 5,   and , fraction, 15 over, x plus 5,  ?",
         "math": [
-            "\\frac{x^2+8x}{x+5}",
-            "\\frac{15}{x+5}"
+            "$$\\frac{x^2+8x}{x+5}$$",
+            "$$\\frac{15}{x+5}$$"
         ]
     },
     {
@@ -101,9 +101,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Factor , x squared plus 8 x plus 15; .",
+        "speech": "Factor , x squared plus 8 x plus 15 .",
         "math": [
-            "x^2+8x+15"
+            "$$x^2+8x+15$$"
         ]
     },
     {
@@ -122,18 +122,18 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "In order to factor ; x squared plus 8 x plus; 15 , you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling. ; open paren x plus a, close paren; times, open paren x plus b, close paren; is equal to; x squared plus, open paren a plus b, close paren; times x; plus, a b . In this case, we get  a b; is equal to, 15  and  a, plus b, is equal to, 8 . Assume both a and  b  are integers,  a; is equal to 3  and  b, is equal to, 5  is only one possible combination that satisfies  a b, is equal to, 15  and  a, plus b, is equal to; 8 . So you can factor  x squared, plus 8 x plus 15;  as ?",
+        "speech": "In order to factor  x squared plus 8 x plus 15 , you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling.  parentheses x plus a,  times, parentheses x plus b,  is equal to x squared plus, parentheses a plus b,  times x plus, a b . In this case, we get  a b is equal to, 15  and  a, plus b, is equal to, 8 . Assume both a and  b  are integers,  a is equal to 3  and  b, is equal to, 5  is only one possible combination that satisfies  a b, is equal to, 15  and  a, plus b, is equal to 8 . So you can factor  x squared, plus 8 x plus 15  as ?",
         "math": [
-            "x^2+8x+15",
-            "\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab",
-            "a b=15",
-            "a+b=8",
-            "b",
-            "a=3",
-            "b=5",
-            "a b=15",
-            "a+b=8",
-            "x^2+8x+15"
+            "$$x^2+8x+15$$",
+            "$$\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab$$",
+            "$$a b=15$$",
+            "$$a+b=8$$",
+            "$$b$$",
+            "$$a=3$$",
+            "$$b=5$$",
+            "$$a b=15$$",
+            "$$a+b=8$$",
+            "$$x^2+8x+15$$"
         ]
     },
     {
@@ -147,11 +147,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "From above steps, we get the sum of numerator is ; open paren x plus 3, close paren; times, open paren x plus 5, close paren;  and the denominator is  x; plus; 5 . So we can rewrite((x**2+8*x)/(x+5))+((15)/(x+5))as ; fraction, open paren x plus 3, close paren; times, open paren x plus 5, close paren, over, x plus 5, end fraction;",
+        "speech": "From above steps, we get the sum of numerator is  parentheses x plus 3,  times, parentheses x plus 5,   and the denominator is  x plus 5 . So we can rewrite((x**2+8*x)/(x+5))+((15)/(x+5))as  fraction, parentheses x plus 3,  times, parentheses x plus 5, , over, x plus 5,",
         "math": [
-            "\\left(x+3\\right) \\left(x+5\\right)",
-            "x+5",
-            "\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}"
+            "$$\\left(x+3\\right) \\left(x+5\\right)$$",
+            "$$x+5$$",
+            "$$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$"
         ]
     },
     {
@@ -165,9 +165,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Are there any ways to simplify ; fraction, open paren x plus 3, close paren; times, open paren x plus 5, close paren, over, x plus 5, end fraction; ?",
+        "speech": "Are there any ways to simplify  fraction, parentheses x plus 3,  times, parentheses x plus 5, , over, x plus 5,  ?",
         "math": [
-            "\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}"
+            "$$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$"
         ]
     },
     {
@@ -186,9 +186,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "What is the greatest common factor shared by the numerator and denominator in ; fraction, open paren x plus 3, close paren; times, open paren x plus 5, close paren, over, x plus 5, end fraction; ?",
+        "speech": "What is the greatest common factor shared by the numerator and denominator in  fraction, parentheses x plus 3,  times, parentheses x plus 5, , over, x plus 5,  ?",
         "math": [
-            "\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}"
+            "$$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$"
         ]
     },
     {
@@ -207,10 +207,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "As the final step, we cancel out ; x plus; 5  on both numerator and denominator, what is the simplified form of ; fraction, open paren x plus 3, close paren; times, open paren x plus 5, close paren, over, x plus 5, end fraction; ?",
+        "speech": "As the final step, we cancel out  x plus 5  on both numerator and denominator, what is the simplified form of  fraction, parentheses x plus 3,  times, parentheses x plus 5, , over, x plus 5,  ?",
         "math": [
-            "x+5",
-            "\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}"
+            "$$x+5$$",
+            "$$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$"
         ]
     },
     {
@@ -224,16 +224,16 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Note that the expression ; fraction, x squared plus 8 x, over, x plus 5, end fraction; plus; fraction, 15 over, x plus 5, end fraction;  and  x; plus 3  are different because the domain of ((x**2+8*x)/(x+5))+((15)/(x+5))) does not include  x; is equal to; negative 5 . The domain of  x, plus 3  does not exclude  x; is equal to; negative 5 . Strictly ; speaking of; open paren; fraction, x squared plus 8 x, over, x plus 5, end fraction; close paren; plus; fraction, 15 over, x plus 5, end fraction;  equals  x; plus 3  excluding the domain  x; is equal to negative 5; .",
+        "speech": "Note that the expression  fraction, x squared plus 8 x, over, x plus 5,  plus fraction, 15 over, x plus 5,   and  x plus 3  are different because the domain of ((x**2+8*x)/(x+5))+((15)/(x+5))) does not include  x is equal to negative 5 . The domain of  x, plus 3  does not exclude  x is equal to negative 5 . Strictly  speaking of parentheses fraction, x squared plus 8 x, over, x plus 5,   plus fraction, 15 over, x plus 5,   equals  x plus 3  excluding the domain  x is equal to negative 5 .",
         "math": [
-            "\\frac{x^2+8x}{x+5}+\\frac{15}{x+5}",
-            "x+3",
-            "x=-5",
-            "x+3",
-            "x=-5",
-            "\\operatorname{speaking}\\left(\\frac{x^2+8x}{x+5}\\right)+\\frac{15}{x+5}",
-            "x+3",
-            "x=-5"
+            "$$\\frac{x^2+8x}{x+5}+\\frac{15}{x+5}$$",
+            "$$x+3$$",
+            "$$x=-5$$",
+            "$$x+3$$",
+            "$$x=-5$$",
+            "$$\\operatorname{speaking}\\left(\\frac{x^2+8x}{x+5}\\right)+\\frac{15}{x+5}$$",
+            "$$x+3$$",
+            "$$x=-5$$"
         ]
     }
 ]

@@ -7,7 +7,12 @@
         "text": "A function is called an even function if for every input $$x$$, $$f(x)=f(-x)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "A function is called an even function if for every input  x ,  f of x, is equal to, f of negative x .",
+        "math": [
+            "$$x$$",
+            "$$f(x)=f(-x)$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h2",
@@ -19,7 +24,12 @@
         "text": "A function is called an odd function if for every input $$x$$, $$f(x)=-f(-x)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "A function is called an odd function if for every input  x ,  f of x, is equal to, negative f of negative x .",
+        "math": [
+            "$$x$$",
+            "$$f(x)=-f(-x)$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h3",
@@ -31,7 +41,20 @@
         "text": "Find $$f(-x)$$ by subsituting $$-x$$ in wherever $$x$$ appears in the original equation. $${\\left(-x\\right)}^n=x^n$$ when $$n$$ is an even, and $${\\left(-x\\right)}^n=-\\left(x^n\\right)$$ when $$n$$ is odd-- for example, $${\\left(x+5\\right)}^2$$ $$=$$ $${\\left(-\\left(-x-5\\right)\\right)}^2={\\left(x+5\\right)}^2$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find  f of negative x,  by subsituting  negative x  in wherever  x  appears in the original equation. , parentheses negative x  to the n-th is equal to x to the n-th  when  n  is an even, and , parentheses negative x  to the n-th is equal to negative parentheses x to the n-th   when  n  is odd-- for example, , parentheses x plus 5,  squared   is equal to   parentheses negative parentheses, negative x minus 5,   squared is equal to, parentheses x plus 5,  squared .",
+        "math": [
+            "$$f(-x)$$",
+            "$$-x$$",
+            "$$x$$",
+            "$${\\left(-x\\right)}^n=x^n$$",
+            "$$n$$",
+            "$${\\left(-x\\right)}^n=-\\left(x^n\\right)$$",
+            "$$n$$",
+            "$${\\left(x+5\\right)}^2$$",
+            "$$=$$",
+            "$${\\left(-\\left(-x-5\\right)\\right)}^2={\\left(x+5\\right)}^2$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h4",
@@ -53,6 +76,10 @@
             "$$-\\left({\\left(x+2\\right)}^2\\right)$$",
             "$${\\left(x+2\\right)}^2$$",
             "$${\\left(x-2\\right)}^2$$"
+        ],
+        "speech": "What is  f of negative x  equal to?",
+        "math": [
+            "$$f(-x)$$"
         ]
     },
     {
@@ -65,7 +92,13 @@
         "text": "Find $$-f(-x)$$ by multiplying each term of $$f(-x)$$ by $$-1$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find  minus f of negative x,  by multiplying each term of  f of negative x,  by  negative 1 .",
+        "math": [
+            "$$-f(-x)$$",
+            "$$f(-x)$$",
+            "$$-1$$"
+        ]
     },
     {
         "id": "a7dc5fftransformation6a-h6",
@@ -87,6 +120,10 @@
             "$$-\\left({\\left(x+2\\right)}^2\\right)$$",
             "$${\\left(x+2\\right)}^2$$",
             "$${\\left(x-2\\right)}^2$$"
+        ],
+        "speech": "What is  minus f of negative x  equal to?",
+        "math": [
+            "$$-f(-x)$$"
         ]
     },
     {
@@ -108,6 +145,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Does , f of x is equal to, f of negative x ?",
+        "math": [
+            "$$f(x)=f(-x)$$"
         ]
     },
     {
@@ -129,6 +170,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Does , f of x is equal to, negative f of negative x ?",
+        "math": [
+            "$$f(x)=-f(-x)$$"
         ]
     }
 ]

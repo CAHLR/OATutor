@@ -7,7 +7,19 @@
         "text": "Step 1: check to see if f(a) is defined. If f(a) is undefined, we need go no further. The function is not continuous at a. If f(a) is defined, continue to step $$2$$. Step 2: Compute $$\\lim_{x\\toa} f(x)$$. In some cases, we may need to do this by first computing $$\\lim_{x\\toa-} f(x)$$ and /lim{x,a+,f(x)}. If $$\\lim_{x\\toa} f(x)$$ does not exist (that is, it is not a real number), then the function is not continuous at a and the problem is solved. If $$\\lim_{x\\toa} f(x)$$ exists, then continue to step $$3$$. Step 3: Compare f(a) and $$\\lim_{x\\toa} f(x)$$. If $$\\lim_{x\\toa} f(x)$$ does not equal to f(a), then the function is not continuous at a. If $$\\lim_{x\\toa} f(x)=f(a)$$, then the function is continuous at a.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Step 1: check to see if f(a) is defined. If f(a) is undefined, we need go no further. The function is not continuous at a. If f(a) is defined, continue to step  2 . Step 2: Compute , the limit as x \toa, of f of x . In some cases, we may need to do this by first computing , the limit as x \toa minus, of f of x  and /lim{x,a+,f(x)}. If , the limit as x \toa, of f of x  does not exist (that is, it is not a real number), then the function is not continuous at a and the problem is solved. If , the limit as x \toa, of f of x  exists, then continue to step  3 . Step 3: Compare f(a) and , the limit as x \toa, of f of x . If , the limit as x \toa, of f of x  does not equal to f(a), then the function is not continuous at a. If , the limit as x \toa, of f of x is equal to f of a , then the function is continuous at a.",
+        "math": [
+            "$$2$$",
+            "$$\\lim_{x\\toa} f(x)$$",
+            "$$\\lim_{x\\toa-} f(x)$$",
+            "$$\\lim_{x\\toa} f(x)$$",
+            "$$\\lim_{x\\toa} f(x)$$",
+            "$$3$$",
+            "$$\\lim_{x\\toa} f(x)$$",
+            "$$\\lim_{x\\toa} f(x)$$",
+            "$$\\lim_{x\\toa} f(x)=f(a)$$"
+        ]
     },
     {
         "id": "ad1b49dc1a-h2",
@@ -19,7 +31,11 @@
         "text": "Following the definitions, let\u2019s begin by trying to calculate f(2). We can see that $$f(2)=\\frac{0}{0}$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "speech": "Following the definitions, let\u2019s begin by trying to calculate f(2). We can see that , f of 2 is equal to 0 over 0 .",
+        "math": [
+            "$$f(2)=\\frac{0}{0}$$"
+        ]
     },
     {
         "id": "ad1b49dc1a-h3",
@@ -40,6 +56,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Is it defined?",
+        "math": [
+            ""
         ]
     },
     {
@@ -73,6 +93,10 @@
                 "oer": "",
                 "license": ""
             }
+        ],
+        "speech": "Is the function continuous at  x is equal to 2, ?",
+        "math": [
+            "$$x=2$$"
         ]
     }
 ]

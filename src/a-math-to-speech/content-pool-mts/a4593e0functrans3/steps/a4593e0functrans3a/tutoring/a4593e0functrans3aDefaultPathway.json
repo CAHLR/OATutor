@@ -8,13 +8,13 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some value ; h , , f of, open paren x minus h, close paren;  means that f(x) is translated to the right by  h  units. Similarly, , f of, open paren x plus h, close paren;  means that f(x) is translated to the left by  h;  units.",
+        "speech": "For some value  h , , f of, parentheses x minus h,   means that f(x) is translated to the right by  h  units. Similarly, , f of, parentheses x plus h,   means that f(x) is translated to the left by  h  units.",
         "math": [
-            "h",
-            "f(x-h)",
-            "h",
-            "f{\\left(x+h\\right)}",
-            "h"
+            "$$h$$",
+            "$$f(x-h)$$",
+            "$$h$$",
+            "$$f{\\left(x+h\\right)}$$",
+            "$$h$$"
         ]
     },
     {
@@ -28,11 +28,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ; h  is  negative 4 , , f of, open paren x plus 4, close paren;  means that the graph is translated four units to the left.",
+        "speech": "Since  h  is  negative 4 , , f of, parentheses x plus 4,   means that the graph is translated four units to the left.",
         "math": [
-            "h",
-            "-4",
-            "f{\\left(x+4\\right)}"
+            "$$h$$",
+            "$$-4$$",
+            "$$f{\\left(x+4\\right)}$$"
         ]
     },
     {
@@ -46,12 +46,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "; f of, open paren x plus 4, close paren;  means that  f of negative 4; is equal to, 2 ,  f of negative 2; is equal to, 0 , and  f of 0, is equal to 1; .",
+        "speech": "f of, parentheses x plus 4,   means that  f of negative 4 is equal to, 2 ,  f of negative 2 is equal to, 0 , and  f of 0, is equal to 1 .",
         "math": [
-            "f{\\left(x+4\\right)}",
-            "f(-4)=2",
-            "f(-2)=0",
-            "f(0)=1"
+            "$$f{\\left(x+4\\right)}$$",
+            "$$f(-4)=2$$",
+            "$$f(-2)=0$$",
+            "$$f(0)=1$$"
         ]
     },
     {
@@ -65,14 +65,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "For some value ; h  not equal to  0 ,  h f of x,  means that f(x) is stretched vertically by  h . Similarly, , fraction, f of x, over h, end fraction;  means that f(x) is compressed vertically by  h; .",
+        "speech": "For some value  h  not equal to  0 ,  h f of x,  means that f(x) is stretched vertically by  h . Similarly, , fraction, f of x, over h,   means that f(x) is compressed vertically by  h .",
         "math": [
-            "h",
-            "0",
-            "h f{\\left(x\\right)}",
-            "h",
-            "\\frac{f{\\left(x\\right)}}{h}",
-            "h"
+            "$$h$$",
+            "$$0$$",
+            "$$h f{\\left(x\\right)}$$",
+            "$$h$$",
+            "$$\\frac{f{\\left(x\\right)}}{h}$$",
+            "$$h$$"
         ]
     },
     {
@@ -86,12 +86,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "Since ; h  is  2 ,  2 f of x,  means that the graph is stretched vertically by  2; .",
+        "speech": "Since  h  is  2 ,  2 f of x,  means that the graph is stretched vertically by  2 .",
         "math": [
-            "h",
-            "2",
-            "2f{\\left(x\\right)}",
-            "2"
+            "$$h$$",
+            "$$2$$",
+            "$$2f{\\left(x\\right)}$$",
+            "$$2$$"
         ]
     },
     {
@@ -105,12 +105,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io",
         "license": "",
-        "speech": "; 2, f of, open paren x plus 4, close paren;  means that  f of negative 4; is equal to, 4 ,  f of negative 2; is equal to, 0 , and  f of 0, is equal to 2; .",
+        "speech": "2, f of, parentheses x plus 4,   means that  f of negative 4 is equal to, 4 ,  f of negative 2 is equal to, 0 , and  f of 0, is equal to 2 .",
         "math": [
-            "2f{\\left(x+4\\right)}",
-            "f(-4)=4",
-            "f(-2)=0",
-            "f(0)=2"
+            "$$2f{\\left(x+4\\right)}$$",
+            "$$f(-4)=4$$",
+            "$$f(-2)=0$$",
+            "$$f(0)=2$$"
         ]
     }
 ]

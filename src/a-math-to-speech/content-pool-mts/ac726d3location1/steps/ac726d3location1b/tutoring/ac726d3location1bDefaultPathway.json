@@ -9,7 +9,12 @@
         "text": "The IQR can help to determine potential outliers. A value is a potential outlier if it is less than $$(1.5)(IQR)$$ below the first quartile or more than $$(1.5)(IQR)$$ above the third quartile.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The IQR can help to determine potential outliers. A value is a potential outlier if it is less than  times 1.5 times parentheses,   i   q   r   below the first quartile or more than  1.5 times parentheses,   i   q   r   above the third quartile.",
+        "math": [
+            "$$(1.5)(IQR)$$",
+            "$$(1.5)(IQR)$$"
+        ]
     },
     {
         "id": "ac726d3location1b-h10",
@@ -43,6 +48,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What is  times 1.5 times parentheses,   i   q   r  ?",
+        "math": [
+            "$$(1.5)(IQR)$$"
         ]
     },
     {
@@ -77,6 +86,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What is Quartile  1 minus 1.5 times parentheses,   i   q   r  ?",
+        "math": [
+            "$$1-(1.5)(IQR)$$"
         ]
     },
     {
@@ -111,6 +124,10 @@
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
             }
+        ],
+        "speech": "What is Quartile  3 plus, 1.5,   i   q   r ?",
+        "math": [
+            "$$3+1.5IQR$$"
         ]
     },
     {
@@ -132,6 +149,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Are there any values in the data set that are less than  times 1.5 times parentheses,   i   q   r   below the first quartile?",
+        "math": [
+            "$$(1.5)(IQR)$$"
         ]
     },
     {
@@ -153,6 +174,10 @@
         "choices": [
             "Yes",
             "No"
+        ],
+        "speech": "Are there any values in the data set that are greater than  times 1.5 times parentheses,   i   q   r   above the third quartile?",
+        "math": [
+            "$$(1.5)(IQR)$$"
         ]
     },
     {
@@ -176,6 +201,10 @@
             "$$1095000$$",
             "$$659000$$",
             "$$639000$$"
+        ],
+        "speech": "What is the potential outlier that is greater than  times 1.5 times parentheses,   i   q   r   above Quartile 3?",
+        "math": [
+            "$$(1.5)(IQR)$$"
         ]
     }
 ]

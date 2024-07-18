@@ -8,9 +8,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember, the chain rule in Leibniz's notation tells us that ; fraction, d y, over, d x, end fraction; is equal to; fraction, d y, over, d u, end fraction; fraction, d u, over, d x, end fraction;",
+        "speech": "Remember, the chain rule in Leibniz's notation tells us that  fraction, d y, over, d x,  is equal to fraction, d y, over, d u,  fraction, d u, over, d x,",
         "math": [
-            "\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}"
+            "$$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$"
         ]
     },
     {
@@ -24,11 +24,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "First we need to decompose our function ; y  into the form  y, is equal to, f of u  and  u, is equal to g of x; , try finding what f(u) and g(x) should be in this case!",
+        "speech": "First we need to decompose our function  y  into the form  y, is equal to, f of u  and  u, is equal to g of x , try finding what f(u) and g(x) should be in this case!",
         "math": [
-            "y",
-            "y=f(u)",
-            "u=g(x)"
+            "$$y$$",
+            "$$y=f(u)$$",
+            "$$u=g(x)$$"
         ]
     },
     {
@@ -96,11 +96,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Next, we take the derivative of f(u) in terms of u, ; fraction, d y, over, d u, end fraction; , and the derivative of g(x) in terms of  x , , fraction, d u, over, d x, end fraction; . Multiplying these two expressions together yields our final answer, dy/dx!",
+        "speech": "Next, we take the derivative of f(u) in terms of u,  fraction, d y, over, d u,  , and the derivative of g(x) in terms of  x , , fraction, d u, over, d x,  . Multiplying these two expressions together yields our final answer, dy/dx!",
         "math": [
-            "\\frac{dy}{du}",
-            "x",
-            "\\frac{du}{dx}"
+            "$$\\frac{dy}{du}$$",
+            "$$x$$",
+            "$$\\frac{du}{dx}$$"
         ]
     },
     {
@@ -125,9 +125,9 @@
             "$$u^6$$",
             "$$\\frac{1}{8} u^8$$"
         ],
-        "speech": "What is ; fraction, d y, over, d u, end fraction; ?",
+        "speech": "What is  fraction, d y, over, d u,  ?",
         "math": [
-            "\\frac{dy}{du}"
+            "$$\\frac{dy}{du}$$"
         ]
     },
     {
@@ -152,9 +152,9 @@
             "$$1-\\frac{1}{x^2}$$",
             "$$\\frac{1}{7}-\\frac{7}{x^2}$$"
         ],
-        "speech": "What is ; fraction, d u, over, d x, end fraction; ?",
+        "speech": "What is  fraction, d u, over, d x,  ?",
         "math": [
-            "\\frac{du}{dx}"
+            "$$\\frac{du}{dx}$$"
         ]
     },
     {
@@ -170,7 +170,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "Finally, we only need to multiply these two expressions to find our final answer. Don't forget to plug in what we have for u in terms of  x  into our final answer!",
         "math": [
-            "x"
+            "$$x$$"
         ]
     }
 ]

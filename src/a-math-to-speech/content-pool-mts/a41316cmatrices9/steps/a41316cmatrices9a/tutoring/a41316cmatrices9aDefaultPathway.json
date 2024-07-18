@@ -24,14 +24,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "For a matrix ;  cap a  cap b, is equal to;  cap c , we can obtain entry , c sub i comma j end sub;  by multipying the entries in row i of A by column of j in B and adding them. For example, given matrices A and B, where the dimensions of A are 2x3 and the dimensions of B are 3x3, the product of AB will be a 2x3 matrix.\\n  cap a; is equal to; divided by; the 2 by 3 matrix; row 1; column 1; a sub 1 comma 1 end sub; column 2; a sub 1 comma 2 end sub; column 3; a sub 1 comma 3 end sub; row 2; column 1; a sub 2 comma 1 end sub; column 2; a sub 2 comma 2 end sub; column 3; a sub 2 comma 3 end sub;  and   cap b; is equal to; the 3 by 3 matrix; row 1; column 1; b sub 1 comma 1 end sub; column 2; b sub 1 comma 2 end sub; column 3; b sub 1 comma 3 end sub; row 2; column 1; b sub 2 comma 1 end sub; column 2; b sub 2 comma 2 end sub; column 3; b sub 2 comma 3 end sub; row 3; column 1; b sub 3 comma 1 end sub; column 2; b sub 3 comma 2 end sub; column 3; b sub 3 comma 3 end sub; .\\nTo obtain , c sub 1 comma 1 end sub;  we multiply the first row of A with the first column of B and add. Thus, , c sub 1 comma 1 end sub; is equal to; a sub 1 comma 1 end sub;, b sub 1 comma 1 end sub; plus; a sub 1 comma 2 end sub;, b sub 2 comma 1 end sub; plus; a sub 1 comma 3 end sub;, b sub 3 comma 1 end sub; .",
+        "speech": "For a matrix    a   b, is equal to   c , we can obtain entry , c sub i comma j end sub  by multipying the entries in row i of A by column of j in B and adding them. For example, given matrices A and B, where the dimensions of A are 2x3 and the dimensions of B are 3x3, the product of AB will be a 2x3 matrix.\\n   a is equal to divided by the 2 by 3 matrix row 1 column 1 a sub 1 comma 1 end sub column 2 a sub 1 comma 2 end sub column 3 a sub 1 comma 3 end sub row 2 column 1 a sub 2 comma 1 end sub column 2 a sub 2 comma 2 end sub column 3 a sub 2 comma 3 end sub  and    b is equal to the 3 by 3 matrix row 1 column 1 b sub 1 comma 1 end sub column 2 b sub 1 comma 2 end sub column 3 b sub 1 comma 3 end sub row 2 column 1 b sub 2 comma 1 end sub column 2 b sub 2 comma 2 end sub column 3 b sub 2 comma 3 end sub row 3 column 1 b sub 3 comma 1 end sub column 2 b sub 3 comma 2 end sub column 3 b sub 3 comma 3 end sub .\\nTo obtain , c sub 1 comma 1 end sub  we multiply the first row of A with the first column of B and add. Thus, , c sub 1 comma 1 end sub is equal to a sub 1 comma 1 end sub, b sub 1 comma 1 end sub plus a sub 1 comma 2 end sub, b sub 2 comma 1 end sub plus a sub 1 comma 3 end sub, b sub 3 comma 1 end sub .",
         "math": [
-            "AB=C",
-            "c_{i,j}",
-            "A=/\\begin{bmatrix} a_{1,1} & a_{1,2} & a_{1,3} \\\\ a_{2,1} & a_{2,2} & a_{2,3} \\end{bmatrix}",
-            "B=\\begin{bmatrix} b_{1,1} & b_{1,2} & b_{1,3} \\\\ b_{2,1} & b_{2,2} & b_{2,3} \\\\ b_{3,1} & b_{3,2} & b_{3,3} \\end{bmatrix}",
-            "c_{1,1}",
-            "c_{1,1}=a_{1,1} b_{1,1}+a_{1,2} b_{2,1}+a_{1,3} b_{3,1}"
+            "$$AB=C$$",
+            "$$c_{i,j}$$",
+            "$$A=/\\begin{bmatrix} a_{1,1} & a_{1,2} & a_{1,3} \\\\ a_{2,1} & a_{2,2} & a_{2,3} \\end{bmatrix}$$",
+            "$$B=\\begin{bmatrix} b_{1,1} & b_{1,2} & b_{1,3} \\\\ b_{2,1} & b_{2,2} & b_{2,3} \\\\ b_{3,1} & b_{3,2} & b_{3,3} \\end{bmatrix}$$",
+            "$$c_{1,1}$$",
+            "$$c_{1,1}=a_{1,1} b_{1,1}+a_{1,2} b_{2,1}+a_{1,3} b_{3,1}$$"
         ]
     },
     {
@@ -50,9 +50,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We will start by computing the top left entry of CB. We can do so by calculating ; c sub 1 comma 1 end sub;, b sub 1 comma 1 end sub; plus; c sub 1 comma 2 end sub;, b sub 2 comma 1 end sub; plus; c sub 1 comma 3 end sub;, b sub 3 comma 1 end sub; . What is the value?",
+        "speech": "We will start by computing the top left entry of CB. We can do so by calculating  c sub 1 comma 1 end sub, b sub 1 comma 1 end sub plus c sub 1 comma 2 end sub, b sub 2 comma 1 end sub plus c sub 1 comma 3 end sub, b sub 3 comma 1 end sub . What is the value?",
         "math": [
-            "c_{1,1} b_{1,1}+c_{1,2} b_{2,1}+c_{1,3} b_{3,1}"
+            "$$c_{1,1} b_{1,1}+c_{1,2} b_{2,1}+c_{1,3} b_{3,1}$$"
         ]
     },
     {
@@ -71,10 +71,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We will next compute the middle entry of the first row of CB, ; c, b sub 1 comma 2 end sub; . We can do so by calculating ; c sub 1 comma 1 end sub;, b sub 1 comma 2 end sub; plus; c sub 1 comma 2 end sub;, b sub 2 comma 2 end sub; plus; c sub 1 comma 3 end sub;, b sub 3 comma 2 end sub; . What is the value?",
+        "speech": "We will next compute the middle entry of the first row of CB,  c, b sub 1 comma 2 end sub . We can do so by calculating  c sub 1 comma 1 end sub, b sub 1 comma 2 end sub plus c sub 1 comma 2 end sub, b sub 2 comma 2 end sub plus c sub 1 comma 3 end sub, b sub 3 comma 2 end sub . What is the value?",
         "math": [
-            "cb_{1,2}",
-            "c_{1,1} b_{1,2}+c_{1,2} b_{2,2}+c_{1,3} b_{3,2}"
+            "$$cb_{1,2}$$",
+            "$$c_{1,1} b_{1,2}+c_{1,2} b_{2,2}+c_{1,3} b_{3,2}$$"
         ]
     },
     {

@@ -24,9 +24,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "If we want to integrate with respect to  x; , we would have to break the integral into two pieces, because we have different functions bounding the region over [0,1] and [1,2]. In this case, using the disk method,",
+        "speech": "If we want to integrate with respect to  x , we would have to break the integral into two pieces, because we have different functions bounding the region over [0,1] and [1,2]. In this case, using the disk method,",
         "math": [
-            "x"
+            "$$x$$"
         ]
     },
     {
@@ -65,9 +65,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": ";  cap v is equal to; the integral from 0 to 1 of; pi x squared d x; plus; the integral from 1 to 2 of; pi times, open paren 2 minus x, close paren squared; d x;",
+        "speech": "v is equal to the integral from 0 to 1 of pi x squared d x plus the integral from 1 to 2 of pi times, parentheses 2 minus x,  squared d x",
         "math": [
-            "V=\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi {\\left(2-x\\right)}^2 \\,dx"
+            "$$V=\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi {\\left(2-x\\right)}^2 \\,dx$$"
         ]
     },
     {
@@ -140,9 +140,9 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
-        "speech": "The integral of the Shell Method can be set up as ;  cap v is equal to; the integral from 0 to 1 of; 2 pi y, open paren, 2 minus y minus y, close paren; times d y; is equal to; the integral from 0 to 1 of; 2 pi y, open paren, 2 minus 2 y, close paren; times d y;",
+        "speech": "The integral of the Shell Method can be set up as    v is equal to the integral from 0 to 1 of 2 pi y, parentheses, 2 minus y minus y,  times d y is equal to the integral from 0 to 1 of 2 pi y, parentheses, 2 minus 2 y,  times d y",
         "math": [
-            "V=\\int_{0}^{1} 2\\pi y \\left(2-y-y\\right) \\,dy=\\int_{0}^{1} 2\\pi y \\left(2-2y\\right) \\,dy"
+            "$$V=\\int_{0}^{1} 2\\pi y \\left(2-y-y\\right) \\,dy=\\int_{0}^{1} 2\\pi y \\left(2-2y\\right) \\,dy$$"
         ]
     }
 ]

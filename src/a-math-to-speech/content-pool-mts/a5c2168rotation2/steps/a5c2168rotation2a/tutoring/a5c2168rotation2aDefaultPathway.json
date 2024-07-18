@@ -7,7 +7,11 @@
         "text": "If a point (x,y) on the Cartesian plane is represented on a new coordinate plane where the axes of rotation are formed by rotating an angle $$\\theta$$ from the positive x-axis, then the coordinates of the point with respect to the new axes are (x\u2032,y\u2032). We can use the following equations of rotation to define the relationship between (x,y) and (x\u2032,y\u2032):\\nx=x\u2032*cos(\\theta)-y\u2032*sin(\\theta)\\nand\\ny=x\u2032*sin(\\theta)+y\u2032*cos(\\theta)",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If a point (x,y) on the Cartesian plane is represented on a new coordinate plane where the axes of rotation are formed by rotating an angle  theta  from the positive x-axis, then the coordinates of the point with respect to the new axes are (x\u2032,y\u2032). We can use the following equations of rotation to define the relationship between (x,y) and (x\u2032,y\u2032):\\nx=x\u2032*cos(\\theta)-y\u2032*sin(\\theta)\\nand\\ny=x\u2032*sin(\\theta)+y\u2032*cos(\\theta)",
+        "math": [
+            "$$\\theta$$"
+        ]
     },
     {
         "id": "a5c2168rotation2a-h2",
@@ -19,7 +23,13 @@
         "text": "We want to substitute x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta) and y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta) into the equation so that we can manipulate the equation into the new representation. Before we do so, we can also substitute $$\\theta={45}^o$$ into the $$sin\\left(\\theta\\right)$$ and $$cos\\left(\\theta\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We want to substitute x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta) and y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta) into the equation so that we can manipulate the equation into the new representation. Before we do so, we can also substitute  theta is equal to 45 to the o-th  into the  sine of theta,  and  cosine of theta .",
+        "math": [
+            "$$\\theta={45}^o$$",
+            "$$sin\\left(\\theta\\right)$$",
+            "$$cos\\left(\\theta\\right)$$"
+        ]
     },
     {
         "id": "a5c2168rotation2a-h3",
@@ -36,7 +46,11 @@
         "text": "$$sin\\left({45}^o\\right)=cos\\left({45}^o\\right)$$. What are they equal to?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "sine of, parentheses 45 to the o-th  is equal to cosine of, parentheses 45 to the o-th  . What are they equal to?",
+        "math": [
+            "$$sin\\left({45}^o\\right)=cos\\left({45}^o\\right)$$"
+        ]
     },
     {
         "id": "a5c2168rotation2a-h4",
@@ -53,7 +67,13 @@
         "text": "Simplifying the equation of rotation for the $$x$$ term where x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta), what is $$x$$ equals to after substituting in $$\\theta={45}^o$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplifying the equation of rotation for the  x  term where x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta), what is  x  equals to after substituting in  theta is equal to 45 to the o-th ?",
+        "math": [
+            "$$x$$",
+            "$$x$$",
+            "$$\\theta={45}^o$$"
+        ]
     },
     {
         "id": "a5c2168rotation2a-h5",
@@ -70,7 +90,13 @@
         "text": "Simplifying the equation of rotation for the $$y$$ term where y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta), what is $$y$$ equals to after substituting in $$\\theta={45}^o$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplifying the equation of rotation for the  y  term where y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta), what is  y  equals to after substituting in  theta is equal to 45 to the o-th ?",
+        "math": [
+            "$$y$$",
+            "$$y$$",
+            "$$\\theta={45}^o$$"
+        ]
     },
     {
         "id": "a5c2168rotation2a-h6",
@@ -91,6 +117,12 @@
         "choices": [
             "$$2{\\left(\\frac{x'-y'}{\\sqrt{2}}\\right)}^2-\\frac{x'-y'}{\\sqrt{2}} \\frac{x'+y'}{\\sqrt{2}}+2{\\left(\\frac{x'+y'}{\\sqrt{2}}\\right)}^2-30=0$$",
             "$$2{\\left(\\frac{x'-y'}{\\sqrt{2}}\\right)}^2-\\frac{x'+y'}{\\sqrt{2}} \\frac{x'+y'}{\\sqrt{2}}+2{\\left(\\frac{x'-y'}{\\sqrt{2}}\\right)}^2-30=0$$"
+        ],
+        "speech": "Substituting  x is equal to fraction, x prime, minus y prime over, the square root of 2   and  y is equal to fraction, x prime, plus y prime over, the square root of 2   into  2 x squared minus x y plus 2 y squared, minus 30 is equal to 0 , what is the expression?",
+        "math": [
+            "$$x=\\frac{x'-y'}{\\sqrt{2}}$$",
+            "$$y=\\frac{x'+y'}{\\sqrt{2}}$$",
+            "$$2x^2-x y+2y^2-30=0$$"
         ]
     },
     {
@@ -112,6 +144,10 @@
         "choices": [
             "$$\\left(x'-y'\\right) \\left(x'-y'\\right)-\\frac{\\left(x'-y'\\right) \\left(x'+y'\\right)}{2}+\\left(x'+y'\\right) \\left(x'+y'\\right)-30=0$$",
             "$$\\left(x'+y'\\right) \\left(x'-y'\\right)-\\frac{\\left(x'-y'\\right) \\left(x'+y'\\right)}{2}+\\frac{\\left(x'+y'\\right) \\left(x'+y'\\right)}{2}-30=0$$"
+        ],
+        "speech": "We can start our simplification by first squaring the denominators and cancelling out with the coefficients of the squared terms. What is the equation?",
+        "math": [
+            ""
         ]
     },
     {
@@ -133,6 +169,10 @@
         "choices": [
             "$${x'}^2-2x' y'+{y'}^2-\\frac{{x'}^2-{y'}^2}{2}+{x'}^2+2x' y'+{y'}^2-30=0$$",
             "$${x'}^2+2x' y'+{y'}^2-\\frac{{x'}^2-{y'}^2}{2}+{x'}^2+2x' y'+{y'}^2-30=0$$"
+        ],
+        "speech": "With the equation that we obtained, we will first start by expanding out the binomials using the FOIL method. What is the equation after doing so?",
+        "math": [
+            ""
         ]
     },
     {
@@ -154,6 +194,10 @@
         "choices": [
             "$$2{x'}^2+2{y'}^2-\\frac{{x'}^2-{y'}^2}{2}-30=0$$",
             "$$2{x'}^2+2{y'}^2+\\frac{{x'}^2-{y'}^2}{2}-30=0$$"
+        ],
+        "speech": "Next we will combine the like terms. What is the current equation?",
+        "math": [
+            ""
         ]
     },
     {
@@ -175,6 +219,10 @@
         "choices": [
             "$$3{x'}^2+5{y'}^2=60$$",
             "$$3{x'}^2+3{y'}^2=60$$"
+        ],
+        "speech": "Multiply all the terms by  2  and shift the constant term to the RHS. What is the equation now?",
+        "math": [
+            "$$2$$"
         ]
     },
     {
@@ -197,6 +245,11 @@
             "$$\\frac{{x'}^2}{20}+\\frac{{y'}^2}{12}=1$$",
             "$$\\frac{{x'}^2}{12}+\\frac{{y'}^2}{20}=1$$",
             "$$\\frac{{x'}^2}{20}-\\frac{{y'}^2}{12}=1$$"
+        ],
+        "speech": "Set the RHS to  1  by dividing by  60, . We can write the equation with x' and y' in the standard form by dividing each term by the constant in the denominator. What is the equation now? The equation is an ellipse.\\n##figure1.gif##",
+        "math": [
+            "$$1$$",
+            "$$60$$"
         ]
     }
 ]

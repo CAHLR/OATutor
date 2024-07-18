@@ -8,11 +8,11 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Useful identities to switch from polar form to rectangular form are\\n; r is equal to; the square root of x squared plus y squared end root; \\n x; is equal to, rcos of theta, \\n y; is equal to rsin of theta;",
+        "speech": "Useful identities to switch from polar form to rectangular form are\\n r is equal to the square root of x squared plus y squared end root \\n x is equal to, rcos of theta, \\n y is equal to rsin of theta",
         "math": [
-            "r=\\sqrt{x^2+y^2}",
-            "x=r cos\\left(\\theta\\right)",
-            "y=r sin\\left(\\theta\\right)"
+            "$$r=\\sqrt{x^2+y^2}$$",
+            "$$x=r cos\\left(\\theta\\right)$$",
+            "$$y=r sin\\left(\\theta\\right)$$"
         ]
     },
     {
@@ -44,7 +44,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "We can distribute the  r  that was initially on the LHS into the (1+2*cos(\\theta))) that was multiplied to the LHS.",
         "math": [
-            "r"
+            "$$r$$"
         ]
     },
     {
@@ -58,10 +58,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We want to isolate the , r  terms that are not associated multiplied to a trigonometric function. We do so by subtracting , 2 rcos of theta;  across both sides.",
+        "speech": "We want to isolate the , r  terms that are not associated multiplied to a trigonometric function. We do so by subtracting , 2 rcos of theta  across both sides.",
         "math": [
-            "r",
-            "2r cos\\left(\\theta\\right)"
+            "$$r$$",
+            "$$2r cos\\left(\\theta\\right)$$"
         ]
     },
     {
@@ -75,10 +75,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Square both sides of the equation. The goal is to obtain the ; r squared  so that we can utilize the identity  r, is equal to, the square root of x squared plus y squared end root;  without the square root.",
+        "speech": "Square both sides of the equation. The goal is to obtain the  r squared  so that we can utilize the identity  r, is equal to, the square root of x squared plus y squared end root  without the square root.",
         "math": [
-            "r^2",
-            "r=\\sqrt{x^2+y^2}"
+            "$$r^2$$",
+            "$$r=\\sqrt{x^2+y^2}$$"
         ]
     },
     {
@@ -92,10 +92,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Substitute identities ; r is equal to; the square root of x squared plus y squared end root;  and  x; is equal to rcos of theta;  into the current equation.",
+        "speech": "Substitute identities  r is equal to the square root of x squared plus y squared end root  and  x is equal to rcos of theta  into the current equation.",
         "math": [
-            "r=\\sqrt{x^2+y^2}",
-            "x=r cos\\left(\\theta\\right)"
+            "$$r=\\sqrt{x^2+y^2}$$",
+            "$$x=r cos\\left(\\theta\\right)$$"
         ]
     },
     {
@@ -127,7 +127,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "We notice that there are multiple terms involving  x . We want to convert to the standard rectangular form, thus we would want to combine all like terms.",
         "math": [
-            "x"
+            "$$x$$"
         ]
     },
     {
@@ -146,14 +146,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Notice that we have ; y squared is equal to; 3 x squared, minus 8 x plus, 4  or something similar if you have rearranged differently. We would like to complete the square on the RHS. For  a x squared; plus b x plus; c , we can complete the square as ; a times, open paren x plus d, close paren squared; plus e  where  d; is equal to; fraction, b over, 2 a, end fraction;  and  e; is equal to; c minus; fraction, b squared, over, 4 a, end fraction; . Completing the square on  3 x squared; minus 8 x plus 4; , what expression do you get?",
+        "speech": "Notice that we have  y squared is equal to 3 x squared, minus 8 x plus, 4  or something similar if you have rearranged differently. We would like to complete the square on the RHS. For  a x squared plus b x plus c , we can complete the square as  a times, parentheses x plus d,  squared plus e  where  d is equal to fraction, b over, 2 a,   and  e is equal to c minus fraction, b squared, over, 4 a,  . Completing the square on  3 x squared minus 8 x plus 4 , what expression do you get?",
         "math": [
-            "y^2=3x^2-8x+4",
-            "a x^2+b x+c",
-            "a {\\left(x+d\\right)}^2+e",
-            "d=\\frac{b}{2a}",
-            "e=c-\\frac{b^2}{4a}",
-            "3x^2-8x+4"
+            "$$y^2=3x^2-8x+4$$",
+            "$$a x^2+b x+c$$",
+            "$$a {\\left(x+d\\right)}^2+e$$",
+            "$$d=\\frac{b}{2a}$$",
+            "$$e=c-\\frac{b^2}{4a}$$",
+            "$$3x^2-8x+4$$"
         ]
     },
     {
@@ -169,8 +169,8 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "We rearrange so that the constant is on one side and the variables are on the other. Lastly, we divide by constant,  4 thirds , across both side to set the constant to  1, .",
         "math": [
-            "\\frac{4}{3}",
-            "1"
+            "$$\\frac{4}{3}$$",
+            "$$1$$"
         ]
     },
     {
@@ -184,10 +184,10 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "If there is a constant coefficient in the numerator, we shift the multiplier to the denominator by multiplying by the reciprocal of the constant. For e.g., a(x-h)**/b will be divided by ; fraction, fraction, 1 over a, end fraction; over, fraction, 1 over a, end fraction; end fraction;  so that it becomes ; fraction, open paren x minus h, close paren squared, over, fraction, b over a, end fraction; end fraction; . This will allow us to obtain the standard form.",
+        "speech": "If there is a constant coefficient in the numerator, we shift the multiplier to the denominator by multiplying by the reciprocal of the constant. For e.g., a(x-h)**/b will be divided by  fraction, fraction, 1 over a,  over, fraction, 1 over a,    so that it becomes  fraction, parentheses x minus h,  squared, over, fraction, b over a,   . This will allow us to obtain the standard form.",
         "math": [
-            "\\frac{\\frac{1}{a}}{\\frac{1}{a}}",
-            "\\frac{{\\left(x-h\\right)}^2}{\\frac{b}{a}}"
+            "$$\\frac{\\frac{1}{a}}{\\frac{1}{a}}$$",
+            "$$\\frac{{\\left(x-h\\right)}^2}{\\frac{b}{a}}$$"
         ]
     }
 ]
