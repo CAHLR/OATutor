@@ -3,7 +3,7 @@ import json
 
 
 filepaths = []
-for root, dirs, files in os.walk('src/a-math-to-speech/content-pool-mts'):
+for root, dirs, files in os.walk('src/content-sources/oatutor/content-pool'): 
     for file in files:
         if 'DefaultPathway' in file:
             filepaths.append(os.path.join(root, file))
