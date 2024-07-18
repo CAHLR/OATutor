@@ -150,6 +150,7 @@ class HintSystem extends React.Component {
 
     openWhiteboard = (event) => {
         // opens accordionDetails with only math 
+        console.log("openWhiteboard", event);
         this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
     };
 
@@ -216,7 +217,7 @@ class HintSystem extends React.Component {
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
-                            >{console.log("hint.math", hint.math)}
+                            > 
                                 {renderText(
                                     aiHint? (hint.math? hint.math : "no math available " ) : hint.text, // new
                                     problemID,
