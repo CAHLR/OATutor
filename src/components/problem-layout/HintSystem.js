@@ -16,8 +16,23 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
+
 import Button from '@material-ui/core/Button';
 import AccordionActions from '@material-ui/core/AccordionActions';
+import Grid from '@material-ui/core/Grid';
+
+import Paper from '@material-ui/core/Paper'; // remove later?
+import { styled } from '@material-ui/core/styles';
+
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.primary,
+}));
+
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -159,9 +174,18 @@ class HintSystem extends React.Component {
 
     renderWhiteboard = (hint) => {
         return this.state.aiHint? (hint.math? 
-            hint.math.map(math => renderText(math)) : "no math available " ) : hint.text;
+            <Grid container spacing={2} justifyContent="center" alignItems="center">
+                    {hint.math.map(math => ( 
+                        <Grid item xs={12} sm={8} md={4}>
+                            <Item>{renderText(math)}</Item>
+                            </Grid>))
+                    }
+            </Grid>
+            : "no math available " ) : hint.text;
     };
-    
+
+
+
     playAgent = (event) => {
         // opens accordionDetails with only math 
         this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
