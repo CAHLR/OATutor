@@ -62,7 +62,7 @@ class HintSystem extends React.Component {
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
-            aiHint: false, // new
+            agentMode: false, // new
             agentSpeak: false, // new
         };
 
@@ -163,28 +163,32 @@ class HintSystem extends React.Component {
         );
     };
 
-    openWhiteboard = (event) => {
-        // opens accordionDetails with only math 
+    toggleWhiteboard = (event) => {
+        /* If agentMode === true whiteboard will show. 
+        Also sends furhat ID to start speak (to be added)*/
 
-        // when pressed the agent starts speaking instantaniously
-        // sending https request stepID
-        this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
+        this.state.agentMode === false? this.setState({agentMode: true}) : this.setState({agentMode: false});
+        // this.sendAgentRequest(hint); // enable for https request
     };
+
+    sendAgentRequest = (stepID) => {
+        /*  send stepID to agent  */
+    }
 
     renderWhiteboard = (hint) => {
         console.log("hint.speech: ", hint.speech);
-        return this.state.aiHint? (hint.math? 
-            (hint.math == ''? " " :     // if no math show nothing
+        return this.state.agentMode? (hint.math? 
+            (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {hint.math.map(math => ( 
-                            <Grid item xs={12} > 
+                            <Grid item xs={12} md ={6} > 
                                 <Item>{renderText(math)}</Item>
                                 </Grid>))}
                 </Grid>) // for 2 col: md ={6} 
 
             : hint.text )    // if math attribute nonexistent
-            : hint.text;                // if in text mode
+            : hint.text;     // if in text mode
     };
 
 
@@ -197,7 +201,7 @@ class HintSystem extends React.Component {
     render() {
         const { translate } = this.props;
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
-        const { currentExpanded, showSubHints, aiHint } = this.state;
+        const { currentExpanded, showSubHints, agentMode } = this.state;
         const { debug, use_expanded_view } = this.context;
 
         return (
@@ -331,13 +335,13 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            {this.state.aiHint === true? 
+                            {this.state.agentMode === true? 
                                 <Button onClick={this.playAgent}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             :" "}
 
-                            {this.state.aiHint === true?
+                            {this.state.agentMode === true?
                                 <Button onClick={this.playAgent}>
                                     {this.state.agentSpeak === true?
                                     <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
@@ -345,9 +349,9 @@ class HintSystem extends React.Component {
                                 </Button>
                                 :" "}
 
-                            <Button onClick={this.openWhiteboard}
+                            <Button onClick={this.toggleWhiteboard}
                             >
-                                {this.state.aiHint === true? "TEXT" : "AGENT"}
+                                {this.state.agentMode === true? "TEXT" : "AGENT"}
                             </Button>
 
                         </AccordionActions>
