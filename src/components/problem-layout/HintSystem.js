@@ -168,22 +168,23 @@ class HintSystem extends React.Component {
 
         // when pressed the agent starts speaking instantaniously
         // sending https request stepID
-        console.log("openWhiteboard", event);
         this.state.aiHint === false? this.setState({aiHint: true}) : this.setState({aiHint: false});
     };
 
     renderWhiteboard = (hint) => {
         return this.state.aiHint? (hint.math? 
-            <Grid container spacing={2} justifyContent="center" alignItems="center">
-                    {hint.math.map(math => ( 
-                        <Grid item xs={12} sm={8} md={4}>
-                            <Item>{renderText(math)}</Item>
-                            </Grid>))
-                    }
-            </Grid>
-            : "no math available " ) : hint.text;
-    };
+            (hint.math == ''? " " :     // if no math show nothing
 
+                <Grid container spacing={2} justifyContent="center" alignItems="center">
+                        {hint.math.map(math => ( 
+                            <Grid item xs={12} sm={8} md={4}>
+                                <Item>{renderText(math)}</Item>
+                                </Grid>))}
+                </Grid>)
+                
+            : "no math available " )    // if math attribute nonexistent
+            : hint.text;                // if in text mode
+    };
 
 
     playAgent = (event) => {
@@ -248,7 +249,7 @@ class HintSystem extends React.Component {
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
-                            > {console.log("hint", hint)}
+                            > 
                                 {renderText(
                                     this.renderWhiteboard(hint), // new
                                     problemID,
