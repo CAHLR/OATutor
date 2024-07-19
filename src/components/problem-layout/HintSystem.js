@@ -178,12 +178,12 @@ class HintSystem extends React.Component {
 
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {hint.math.map(math => ( 
-                            <Grid item xs={12} sm={8} md={4}>
+                            <Grid item xs={12} > 
                                 <Item>{renderText(math)}</Item>
                                 </Grid>))}
-                </Grid>)
+                </Grid>) // for 2 col: md ={6} 
 
-            : "no math available " )    // if math attribute nonexistent
+            : hint.text )    // if math attribute nonexistent
             : hint.text;                // if in text mode
     };
 
