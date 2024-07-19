@@ -172,6 +172,7 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
+        console.log("hint.speech: ", hint.speech);
         return this.state.aiHint? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing
 
@@ -181,7 +182,7 @@ class HintSystem extends React.Component {
                                 <Item>{renderText(math)}</Item>
                                 </Grid>))}
                 </Grid>)
-                
+
             : "no math available " )    // if math attribute nonexistent
             : hint.text;                // if in text mode
     };
@@ -330,11 +331,19 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
+                            {this.state.aiHint === true? 
+                                <Button onClick={this.playAgent}>
+                                    <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
+                                </Button>
+                            :" "}
+
                             {this.state.aiHint === true?
-                            <Button onClick={this.playAgent}
-                            >
-                                {this.state.agentSpeak === true? "PAUSE" : "PLAY"}
-                            </Button>:" "}
+                                <Button onClick={this.playAgent}>
+                                    {this.state.agentSpeak === true?
+                                    <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
+                                    : <img src={`${process.env.PUBLIC_URL}/play_icon.svg`} alt="Play Icon" width={15} height={15} />}
+                                </Button>
+                                :" "}
 
                             <Button onClick={this.openWhiteboard}
                             >
