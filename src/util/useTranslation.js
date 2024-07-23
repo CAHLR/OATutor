@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocalization } from './LocalizationContext';
+import { LOCALES_URL } from '../config/config';
 
 export const useTranslation = () => {
   const { language } = useLocalization();
@@ -8,8 +9,16 @@ export const useTranslation = () => {
   useEffect(() => {
     const loadTranslations = async (lang) => {
       try {
-        const module = await import(`../locales/${lang}.json`);
-        setTranslations(module.default || module);
+        const response = await fetch(`${LOCALES_URL}/fetch-locale/?locale=${lang}`);
+        if (!response.ok) {
+          throw new Error(`Could not fetch ${lang}.json`);
+        }
+        const data = await response.json();
+        if (data.error) {
+          throw new Error(data.error);
+        }
+        setTranslations(data);
+        console.log("Translations for " + lang + " loaded successfully");
       } catch (error) {
         console.error(`Could not load ${lang}.json`, error);
       }
