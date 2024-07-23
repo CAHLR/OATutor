@@ -1,3 +1,5 @@
+# Writes all updated speech and math information to the content-source json files
+
 import os
 import json
 
@@ -10,7 +12,7 @@ for root, dirs, files in os.walk('src/content-sources/oatutor/content-pool'):
 
 
 # Read the contents of the combinedFinishedHints.txt file
-with open('src/math-to-speech/hint-text-files/conversion-math/combinedFinishedHints.txt', 'r', encoding='utf-8') as file:  # TODO: Change this path
+with open('src/math-to-speech/hint-text-files/conversion-math/translatedHintsPost.txt', 'r', encoding='utf-8') as file:  # TODO: Change this path
     hints = file.readlines()
     hints = [hint.strip() for hint in hints]
 file.close()
