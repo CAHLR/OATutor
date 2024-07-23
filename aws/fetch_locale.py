@@ -16,12 +16,20 @@ def lambda_handler(event, context):
         return {
             'statusCode': 200,
             'headers': {
-                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*', 
+                'Access-Control-Allow-Methods': 'GET,OPTIONS',  
+                'Access-Control-Allow-Headers': '*', 
             },
             'body': json.dumps(json_body)
         }
     except Exception as e:
         return {
             'statusCode': 500,
-            'body': json.dumps({'message': 'Could not fetch the JSON file', 'error': str(e)})
+            'headers': {
+                'Access-Control-Allow-Origin': '*', 
+                'Access-Control-Allow-Methods': 'GET,OPTIONS',  
+                'Access-Control-Allow-Headers': '*', 
+            },
+            'body': json.dumps({'message': 'Could not fetch the JSON file', 'error': str(e)}),
+
         }
