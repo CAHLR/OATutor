@@ -31,6 +31,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.primary,
+  
 }));
 
 
@@ -72,7 +73,7 @@ class HintSystem extends React.Component {
 
         if (this.giveHintOnIncorrect && this.isIncorrect && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
-        }
+        } 
     }
 
     unlockHint = (event, expanded, i) => {
