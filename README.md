@@ -466,14 +466,14 @@ below code snippet) and imported accordingly to be used.
 
 ```js
 // src/App.js
-import { heuristic as lowestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic1.js';
-import { heuristic as highestHeuristic } from './models/BKT/problem-select-heuristics/problemSelectHeuristic2.js';
+import { heuristic as defaultHeuristic } from "./models/BKT/problem-select-heuristics/defaultHeuristic.js";
+import { heuristic as experimentalHeuristic } from "./models/BKT/problem-select-heuristics/experimentalHeuristic.js";
 
 ...
 const treatmentMapping = {
     heuristic: {
-        0: lowestHeuristic,
-        1: highestHeuristic
+        0: defaultHeuristic,
+        1: experimentalHeuristic
     },
 }
 ```
@@ -484,14 +484,14 @@ below code snippet) and imported accordingly to be used.
 
 ```js
 // src/App.js
-import bktParams1 from './content-sources/oatutor/bkt-params/bktParams1.json';
-import bktParams2 from './content-sources/oatutor/bkt-params/bktParams2.json';
+import defaultBKTParams from "./content-sources/oatutor/bkt-params/defaultBKTParams.json";
+import experimentalBKTParams from "./content-sources/oatutor/bkt-params/experimentalBKTParams.json";
 
 ...
 const treatmentMapping = {
     bktParams: {
-        0: cleanObjectKeys(bktParams1),
-        1: cleanObjectKeys(bktParams2)
+        0: cleanObjectKeys(defaultBKTParams),
+        1: cleanObjectKeys(experimentalBKTParams)
     },
 }
 ```

@@ -41,10 +41,10 @@ import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from "./config/firebaseConfig.js";
 import skillModel from "./content-sources/oatutor/skillModel.json";
-import bktParams1 from "./content-sources/oatutor/bkt-params/bktParams1.json";
-import bktParams2 from "./content-sources/oatutor/bkt-params/bktParams2.json";
-import { heuristic as lowestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic1.js";
-import { heuristic as highestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic2.js";
+import defaultBKTParams from "./content-sources/oatutor/bkt-params/defaultBKTParams.json";
+import experimentalBKTParams from "./content-sources/oatutor/bkt-params/experimentalBKTParams.json";
+import { heuristic as defaultHeuristic } from "./models/BKT/problem-select-heuristics/defaultHeuristic.js";
+import { heuristic as experimentalHeuristic } from "./models/BKT/problem-select-heuristics/experimentalHeuristic.js";
 import BrowserStorage from "./util/browserStorage";
 // ### END CUSTOMIZABLE IMPORTS ###
 
@@ -68,14 +68,14 @@ let treatmentMapping;
 
 if (!AB_TEST_MODE) {
     treatmentMapping = {
-        bktParams: cleanObjectKeys(bktParams1),
-        heuristic: lowestHeuristic,
+        bktParams: cleanObjectKeys(defaultBKTParams),
+        heuristic: defaultHeuristic,
         hintPathway: "DefaultPathway"
     };
 } else {
     treatmentMapping = {
-        bktParams: { 0: cleanObjectKeys(bktParams1), 1: cleanObjectKeys(bktParams2) },
-        heuristic: { 0: lowestHeuristic, 1: highestHeuristic },
+        bktParams: { 0: cleanObjectKeys(defaultBKTParams), 1: cleanObjectKeys(experimentalBKTParams) },
+        heuristic: { 0: defaultHeuristic, 1: experimentalHeuristic },
         hintPathway: { 0: "DefaultPathway", 1: "DefaultPathway" }
     };
 }
