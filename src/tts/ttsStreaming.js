@@ -1,7 +1,5 @@
 const OpenAI = require("openai");
 require('dotenv').config();
-// const fs = require("fs");
-// const path = require("path");
 const Speaker = require("speaker");
 const axios = require("axios");
 
