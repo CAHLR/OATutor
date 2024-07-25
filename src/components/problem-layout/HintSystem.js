@@ -21,17 +21,19 @@ import Button from '@material-ui/core/Button';
 import AccordionActions from '@material-ui/core/AccordionActions';
 import Grid from '@material-ui/core/Grid';
 
-import Paper from '@material-ui/core/Paper'; // remove later?
+import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
+// import { tts } from 'src/tts/tts.js'; 
 
-const Item = styled(Paper)(({ theme }) => ({
+
+const Item = styled(Paper)(({ theme, showBoarder }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.primary,
-  
+  border: showBoarder? '1px solid black': 'none',
 }));
 
 
@@ -65,6 +67,7 @@ class HintSystem extends React.Component {
             subHintsFinished: subHintsFinished,
             agentMode: false, // new
             agentSpeak: false, // new
+            hintIndex: 0,
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -169,12 +172,15 @@ class HintSystem extends React.Component {
         Also sends furhat ID to start speak (to be added)*/
 
         this.state.agentMode === false? this.setState({agentMode: true}) : this.setState({agentMode: false});
-        // this.sendAgentRequest(hint); // enable for https request
     };
 
     sendAgentRequest = (stepID) => {
-        /*  send stepID to agent  */
+        /*  send hint to agent  */
     }
+
+/*     changeBoarder = (event) => {
+        // this.setState({hintIndex: hintIndex + 1})
+    } */
 
     renderWhiteboard = (hint) => {
         console.log("hint.speech: ", hint.speech);
@@ -182,14 +188,15 @@ class HintSystem extends React.Component {
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
-                        {hint.math.map(math => ( 
+                        {hint.math.map((math, index) => ( 
                             <Grid item xs={12} md ={6} > 
-                                <Item>{renderText(math)}</Item>
+                                <Item showBoarder={index === this.state.hintIndex}>
+                                    {renderText(math)}</Item>
                                 </Grid>))}
                 </Grid>) // for 2 col: md ={6} 
 
             : hint.text )    // if math attribute nonexistent
-            : hint.text;     // if in text mode
+        : hint.text;     // if in text mode
     };
 
 
@@ -198,11 +205,15 @@ class HintSystem extends React.Component {
         this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
     };
 
+    agentSpeak = () => {
+        // run tts
+    }
+
 
     render() {
         const { translate } = this.props;
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
-        const { currentExpanded, showSubHints, agentMode } = this.state;
+        const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
 
         return (
