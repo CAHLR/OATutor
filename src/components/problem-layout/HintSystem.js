@@ -24,16 +24,16 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-// import { tts } from 'src/tts/tts.js'; 
+// import { tts } from '../../tts/tts.js'; 
 
 
-const Item = styled(Paper)(({ theme, showBoarder }) => ({
+const Item = styled(Paper)(({ theme, show_boarder }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.primary,
-  border: showBoarder? '1px solid black': 'none',
+  border: show_boarder === "true"? '1px solid black': 'none',
 }));
 
 
@@ -168,29 +168,30 @@ class HintSystem extends React.Component {
     };
 
     toggleWhiteboard = (event) => {
-        /* If agentMode === true whiteboard will show. 
-        Also sends furhat ID to start speak (to be added)*/
-
         this.state.agentMode === false? this.setState({agentMode: true}) : this.setState({agentMode: false});
+        // call playAgent here later (automatic start)
     };
 
-    sendAgentRequest = (stepID) => {
-        /*  send hint to agent  */
-    }
-
-/*     changeBoarder = (event) => {
-        // this.setState({hintIndex: hintIndex + 1})
-    } */
+    nextBoarder = (hint) => {
+        // will run after agent speaks their hint[i]
+        if (hint.math !== undefined){
+            if (hint.math.length -1 > this.state.hintIndex) {
+                this.setState({hintIndex: this.state.hintIndex + 1});
+            }
+            else{
+                this.setState({hintIndex: 0});
+            }
+        }
+    };
 
     renderWhiteboard = (hint) => {
-        console.log("hint.speech: ", hint.speech);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {hint.math.map((math, index) => ( 
                             <Grid item xs={12} md ={6} > 
-                                <Item showBoarder={index === this.state.hintIndex}>
+                                <Item show_boarder={index === this.state.hintIndex? "true": "false"}>
                                     {renderText(math)}</Item>
                                 </Grid>))}
                 </Grid>) // for 2 col: md ={6} 
@@ -199,15 +200,17 @@ class HintSystem extends React.Component {
         : hint.text;     // if in text mode
     };
 
-
-    playAgent = (event) => {
-        // opens accordionDetails with only math 
-        this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
+    reloadSpeech = (event) => {
+        this.setState({hintIndex: 0});
+        // call playAgent here later
     };
 
-    agentSpeak = () => {
-        // run tts
-    }
+    playAgent = (event) => {
+        // have hint be spoken  
+
+        // if speaking => pause, if not speaking => play
+        this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
+    };
 
 
     render() {
@@ -348,13 +351,13 @@ class HintSystem extends React.Component {
                         </AccordionDetails>
                         <AccordionActions>
                             {this.state.agentMode === true? 
-                                <Button onClick={this.playAgent}>
+                                <Button onClick={this.reloadSpeech}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             :" "}
-
+                            
                             {this.state.agentMode === true?
-                                <Button onClick={this.playAgent}>
+                                <Button onClick={() => this.nextBoarder(hint) /* Temporary method placement to show switching boarders, change to playAgent  */}>
                                     {this.state.agentSpeak === true?
                                     <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
                                     : <img src={`${process.env.PUBLIC_URL}/play_icon.svg`} alt="Play Icon" width={15} height={15} />}

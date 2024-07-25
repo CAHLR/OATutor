@@ -55,7 +55,7 @@ function playSpeech(speechPath){
   playSpeech(speechPath);
 }
 
-tts("Hi Nora");
+// tts("Hi Nora");
 
 // HI
 // will add play_mp3 later
