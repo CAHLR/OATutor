@@ -24,7 +24,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-// import { tts } from '../../tts/tts.js'; 
+import { BackendCommunication } from '../../tts/BackendCommunication.js'; 
 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
@@ -80,6 +80,7 @@ class HintSystem extends React.Component {
     }
 
     unlockHint = (event, expanded, i) => {
+        // Verona calls here
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
         } else {
@@ -176,7 +177,7 @@ class HintSystem extends React.Component {
         // will run after agent speaks their hint[i]
         if (hint.math !== undefined){
             if (hint.math.length -1 > this.state.hintIndex) {
-                this.setState({hintIndex: this.state.hintIndex + 1});
+                this.setState({hintIndex: this.state.hintIndex + 1}); // TODO: Change: this.setState((prevState) => ({ count: prevState.count + 1 }));
             }
             else{
                 this.setState({hintIndex: 0});
@@ -197,7 +198,7 @@ class HintSystem extends React.Component {
                 </Grid>) // for 2 col: md ={6} 
 
             : hint.text )    // if math attribute nonexistent
-        : hint.text;     // if in text mode
+        : hint.text;         // if in text mode
     };
 
     reloadSpeech = (event) => {
@@ -221,6 +222,7 @@ class HintSystem extends React.Component {
 
         return (
             <div className={classes.root}>
+                <BackendCommunication />
                 {/* {this.giveDynamicHint && <div>hi</div>} */}
                 {hints.map((hint, i) => (
                     <Accordion
