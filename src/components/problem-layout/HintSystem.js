@@ -65,9 +65,9 @@ class HintSystem extends React.Component {
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
-            agentMode: false, // new
-            agentSpeak: false, // new
-            hintIndex: 0,
+            agentMode: false,  // showing text or agent whiteboard
+            agentSpeak: false, // speaking or not
+            hintIndex: 0,      // index of hint to highlight
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {

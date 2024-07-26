@@ -56,10 +56,3 @@ function playSpeech(speechPath){
 }
 
 // tts("Hi Nora");
-
-// HI
-// will add play_mp3 later
-// TODO: Get API key from .env instead
-// TODO: successfull import of speaker or other package
-
-// Lastly: export function to be used in hintSystem.
