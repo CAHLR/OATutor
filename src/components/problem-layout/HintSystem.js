@@ -186,6 +186,7 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
+        console.log(hint);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
