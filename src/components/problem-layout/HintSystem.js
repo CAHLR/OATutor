@@ -202,8 +202,12 @@ class HintSystem extends React.Component {
     };
 
     reloadSpeech = (event) => {
+        // plays agent after hintIndex (async) have been updated
         this.setState({hintIndex: 0});
-        // call playAgent here later
+        //,
+        //     () => {
+        //         this.playAgent(hint);
+        //     });
     };
 
     playAgent = (hint) => {
