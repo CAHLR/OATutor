@@ -170,10 +170,6 @@ class HintSystem extends React.Component {
         );
     };
 
-    toggleWhiteboard = (event) => {
-        this.state.agentMode === false? this.setState({agentMode: true}) : this.setState({agentMode: false});
-        // call playAgent here later (automatic start) nope
-    };
 
     nextBoarder = (hint) => {
         // will run after agent speaks their hint[i]
@@ -215,12 +211,23 @@ class HintSystem extends React.Component {
 
         // (DONE) called when: hint is just opened AND agentMode is true
         // or when Play button is pressed and agentSpeek becomes true
-        // or when Agent button is pressed is toggeld to 
+        // (DONE) or when Agent button is pressed is toggeld to 
+        // should not play answers 
         if( this.state.agentMode ){ 
             console.log("play agent");
             console.log(hint);
          }
         
+    };
+
+
+    toggleWhiteboard = (hint) => {
+        
+        this.setState( prevState => ({ agentMode: !prevState.agentMode }),
+        () => {
+          this.playAgent(hint); // Calls playAgent with the updated state
+        })
+
     };
 
     togglePlayPause = (event) => {
@@ -389,7 +396,7 @@ class HintSystem extends React.Component {
                                 </Button>
                                 :" "}
 
-                            <Button onClick={this.toggleWhiteboard}
+                            <Button onClick={() => this.toggleWhiteboard(hint)}
                             >
                                 {this.state.agentMode === true? "TEXT" : "AGENT"}
                             </Button>
