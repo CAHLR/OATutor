@@ -172,7 +172,7 @@ class HintSystem extends React.Component {
 
     toggleWhiteboard = (event) => {
         this.state.agentMode === false? this.setState({agentMode: true}) : this.setState({agentMode: false});
-        // call playAgent here later (automatic start)
+        // call playAgent here later (automatic start) nope
     };
 
     nextBoarder = (hint) => {
@@ -188,8 +188,8 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
-        console.log("hint: ", hint);
-        console.log("currentExpanded", this.state.currentExpanded);
+        // console.log("hint: ", hint);
+        // console.log("currentExpanded", this.state.currentExpanded);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
@@ -210,13 +210,30 @@ class HintSystem extends React.Component {
         // call playAgent here later
     };
 
-    playAgent = (event) => {
-        // have hint be spoken  
-        // if(this.agentMode){console.log("play agent");};
+    playAgent = (hint) => {
+        // have hint (same i as  this.state.currentExpanded) be spoken  
+
+        // (DONE) called when: hint is just opened AND agentMode is true
+        // or when Play button is pressed and agentSpeek becomes true
+        // or when Agent button is pressed is toggeld to 
+        if( this.state.agentMode ){ 
+            console.log("play agent");
+            console.log(hint);
+         }
         
+    };
+
+    togglePlayPause = (event) => {
         // if speaking => pause, if not speaking => play
+        // not used currently (showing nextBoarder instead)
         this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
     };
+
+    handleOnChange = (event, expanded, index, hint) => {
+        // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
+        this.unlockHint(event, expanded, index);
+        this.playAgent(hint);
+      }
 
 
     render() {
@@ -232,8 +249,9 @@ class HintSystem extends React.Component {
                 {hints.map((hint, i) => (
                     <Accordion
                         key={`${problemID}-${hint.id}`}
-                        onChange={(event, expanded) =>
-                            this.unlockHint(event, expanded, i)
+                        onChange={(event, expanded) => this.handleOnChange(event, expanded, i, hint)
+                        // onChange={(event, expanded) =>
+                        //     this.unlockHint(event, expanded, i)
                         }
                         disabled={
                             this.isLocked(i) && !(use_expanded_view && debug)
