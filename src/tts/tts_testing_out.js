@@ -54,5 +54,3 @@ function playSpeech(speechPath){
   retrieveSpeech(speechPath, inputText);
   playSpeech(speechPath);
 }
-
-// tts("Hi Nora");

@@ -90,6 +90,8 @@ class HintSystem extends React.Component {
             }
             this.setState({ latestStep: i });
         }
+
+        // this.playAgent()
     };
 
     isLocked = (hintNum) => {
@@ -186,7 +188,8 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
-        console.log(hint);
+        console.log("hint: ", hint);
+        console.log("currentExpanded", this.state.currentExpanded);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
 
@@ -209,7 +212,8 @@ class HintSystem extends React.Component {
 
     playAgent = (event) => {
         // have hint be spoken  
-
+        // if(this.agentMode){console.log("play agent");};
+        
         // if speaking => pause, if not speaking => play
         this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
     };
@@ -274,7 +278,7 @@ class HintSystem extends React.Component {
                                 style={{ width: "100%" }}
                             > 
                                 {renderText(
-                                    this.renderWhiteboard(hint), // new
+                                    currentExpanded === i? this.renderWhiteboard(hint): "", // only render whiteboard for current hint
                                     problemID,
                                     chooseVariables(
                                         Object.assign(
