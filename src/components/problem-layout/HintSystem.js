@@ -24,7 +24,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-import { BackendCommunication } from '../../tts/BackendCommunication.js'; 
+import { backendCommunication } from '../../tts/BackendCommunication.js'; 
 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
@@ -90,8 +90,6 @@ class HintSystem extends React.Component {
             }
             this.setState({ latestStep: i });
         }
-
-        // this.playAgent()
     };
 
     isLocked = (hintNum) => {
@@ -149,6 +147,7 @@ class HintSystem extends React.Component {
 
     submitSubHint = (parsed, hint, isCorrect, i, hintNum) => {
         if (isCorrect) {
+            this.agentPraise();
             this.setState((prevState) => {
                 prevState.subHintsFinished[i][hintNum] = 1;
                 return { subHintsFinished: prevState.subHintsFinished };
@@ -170,7 +169,6 @@ class HintSystem extends React.Component {
         );
     };
 
-
     nextBoarder = (hint) => {
         // will run after agent speaks their hint[i]
         if (hint.math !== undefined){
@@ -184,11 +182,8 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
-        // console.log("hint: ", hint);
-        // console.log("currentExpanded", this.state.currentExpanded);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
-
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {hint.math.map((math, index) => ( 
                             <Grid item xs={12} md ={6} > 
@@ -196,40 +191,44 @@ class HintSystem extends React.Component {
                                     {renderText(math)}</Item>
                                 </Grid>))}
                 </Grid>) // for 2 col: md ={6} 
-
             : hint.text )    // if math attribute nonexistent
         : hint.text;         // if in text mode
     };
 
-    reloadSpeech = (event) => {
-        // plays agent after hintIndex (async) have been updated
-        this.setState({hintIndex: 0});
-        //,
-        //     () => {
-        //         this.playAgent(hint);
-        //     });
+    agentPraise = () => {
+        const praises = ["Good job!", "Well done!", "Great work!", "Very nice!"];
+        const randomIndex = Math.floor(Math.random() * praises.length);
+        const randomPraise = praises[randomIndex];
+        console.log(randomPraise);
+        // backendCommunication(randomPraise);
     };
 
     playAgent = (hint) => {
-        // have hint (same i as  this.state.currentExpanded) be spoken  
+        // send to backend for text-to-speech if conditions are met
 
         // (DONE) called when: hint is just opened AND agentMode is true
         // or when Play button is pressed and agentSpeek becomes true
         // (DONE) or when Agent button is pressed is toggeld to 
-        // should not play answers 
-        if( this.state.agentMode ){ 
-            console.log("play agent");
-            console.log(hint);
-         }
-        
+        // (DONE) should not play answers 
+        if( this.state.agentMode ){
+            if (hint.speech) {
+                console.log("play agent");
+                backendCommunication(hint.speech);
+            }
+        }
     };
 
+    reloadSpeech = (hint) => {
+        this.setState({hintIndex: 0},
+            () => {
+                this.playAgent(hint);
+            });
+    };
 
     toggleWhiteboard = (hint) => {
-        
         this.setState( prevState => ({ agentMode: !prevState.agentMode }),
         () => {
-          this.playAgent(hint); // Calls playAgent with the updated state
+          this.playAgent(hint); 
         })
 
     };
@@ -244,7 +243,7 @@ class HintSystem extends React.Component {
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
         this.playAgent(hint);
-      }
+    };
 
 
     render() {
@@ -255,14 +254,11 @@ class HintSystem extends React.Component {
 
         return (
             <div className={classes.root}>
-                <BackendCommunication />
                 {/* {this.giveDynamicHint && <div>hi</div>} */}
                 {hints.map((hint, i) => (
                     <Accordion
                         key={`${problemID}-${hint.id}`}
                         onChange={(event, expanded) => this.handleOnChange(event, expanded, i, hint)
-                        // onChange={(event, expanded) =>
-                        //     this.unlockHint(event, expanded, i)
                         }
                         disabled={
                             this.isLocked(i) && !(use_expanded_view && debug)
@@ -387,7 +383,7 @@ class HintSystem extends React.Component {
                         </AccordionDetails>
                         <AccordionActions>
                             {this.state.agentMode === true? 
-                                <Button onClick={this.reloadSpeech}>
+                                <Button onClick={() => this.reloadSpeech(hint)}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             :" "}

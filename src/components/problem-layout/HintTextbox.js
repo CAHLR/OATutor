@@ -50,7 +50,7 @@ class HintTextbox extends React.Component {
         const isCorrect = !!correctAnswer
 
         toastNotifyCorrectness(isCorrect, reason);
-
+    
         this.setState({
             isCorrect,
             checkMarkOpacity: isCorrect ? '100' : '0'
