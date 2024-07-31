@@ -147,7 +147,6 @@ class HintSystem extends React.Component {
 
     submitSubHint = (parsed, hint, isCorrect, i, hintNum) => {
         if (isCorrect) {
-            this.agentPraise();
             this.setState((prevState) => {
                 prevState.subHintsFinished[i][hintNum] = 1;
                 return { subHintsFinished: prevState.subHintsFinished };
