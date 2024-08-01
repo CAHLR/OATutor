@@ -212,7 +212,7 @@ class HintSystem extends React.Component {
         if( this.state.agentMode ){
             if (hint.speech) {
                 console.log("play agent");
-                backendCommunication(hint.speech);
+                backendCommunication(hint.pacedSpeech);
             }
         }
     };

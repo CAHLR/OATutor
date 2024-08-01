@@ -1,20 +1,52 @@
-const OpenAI = require("openai");
+const Speaker = require('speaker');
+const { PassThrough } = require('stream');
+const { BufferListStream } = require('bl');
+const ffmpeg = require('fluent-ffmpeg');
+const ffmpegPath = require("ffmpeg-static");
+ffmpeg.setFfmpegPath(ffmpegPath);
 
-// solve the file download without using fs
 
-export async function retrieveSpeech(inputText) {
+function playAudioStream(response) {
+  // takes in mp3 and plays it
   
-  const outputPath = "src/tts/speech-files/speech.mp3"; //path.resolve(speechPath);
-  const secretKey = process.env.REACT_APP_OPENAI_API_KEY 
-  const openai = new OpenAI({
-      apiKey: secretKey,
-  }); 
+  return new Promise((resolve, reject) => {  // resolving the promise when the Speaker has finished playing
+      const audioStream = new PassThrough();
+      response.data.pipe(audioStream);
+      const speaker = new Speaker({
+          channels: 2, 
+          bitDepth: 16,
+          sampleRate: 44100,
+      });
 
-  const mp3 = await openai.audio.speech.creaste({
-    model: "tts-1",
-    voice: "alloy",
-    input: inputText,
+      const bufferedStream = new BufferListStream();
+      audioStream.pipe(bufferedStream);
+
+      bufferedStream.on('finish', () => {
+          const playbackStream = new PassThrough();
+          playbackStream.end(bufferedStream.slice());
+          
+          // Convert the response to the desired audio format and play it
+          ffmpeg(playbackStream)
+          .toFormat("s16le")
+          .audioChannels(2)
+          .audioFrequency(44100)
+          .pipe(speaker)
+          .on('finish', resolve) // when finished spoken => resolved => return to for loop for next sentence
+          .on('error', reject);
+      });
   });
-  const buffer = Buffer.from(await mp3.arrayBuffer());
-  await fs.promises.writeFile(outputPath, buffer);
+}
+
+export async function synthesize(responses) {
+   try{
+        // play them one by one 
+        for (const response of responses) {
+            await playAudioStream(response);        // frontend - send over all responses
+            console.log("Finished playing audio");
+            // SEND MESSAGE TO TOGGLE MATH HERE 
+        }
+    }
+    catch(error){
+        console.log(error);
+    }
 }
