@@ -11,7 +11,7 @@ module.exports = {
       "stream": require.resolve("stream-browserify"),
       "os": require.resolve("os-browserify/browser"),
       "path": require.resolve("path-browserify"),
-      "util": false,
+      "util":  require.resolve("util"),
     }
   },
   module: {

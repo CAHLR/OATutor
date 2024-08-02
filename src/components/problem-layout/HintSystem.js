@@ -172,7 +172,9 @@ class HintSystem extends React.Component {
         // will run after agent speaks their hint[i]
         if (hint.math !== undefined){
             if (hint.math.length -1 > this.state.hintIndex) {
-                this.setState({hintIndex: this.state.hintIndex + 1}); // TODO: Change: this.setState((prevState) => ({ count: prevState.count + 1 }));
+                this.setState((prevState) => ({
+                    hintIndex: prevState.hintIndex + 1
+                  }));
             }
             else{
                 this.setState({hintIndex: 0});
@@ -189,7 +191,7 @@ class HintSystem extends React.Component {
                                 <Item show_boarder={index === this.state.hintIndex? "true": "false"}>
                                     {renderText(math)}</Item>
                                 </Grid>))}
-                </Grid>) // for 2 col: md ={6} 
+                </Grid>)     // for 2 col: md ={6} 
             : hint.text )    // if math attribute nonexistent
         : hint.text;         // if in text mode
     };
@@ -203,19 +205,24 @@ class HintSystem extends React.Component {
     };
 
     playAgent = (hint) => {
-        // send to backend for text-to-speech if conditions are met
-
         // (DONE) called when: hint is just opened AND agentMode is true
         // or when Play button is pressed and agentSpeek becomes true
         // (DONE) or when Agent button is pressed is toggeld to 
         // (DONE) should not play answers 
         if( this.state.agentMode ){
-            if (hint.speech) {
-                console.log("play agent");
-                backendCommunication(hint.pacedSpeech);
-            }
-        }
+            if (hint.pacedSpeech) {
+                backendCommunication(hint.pacedSpeech); 
+                //response = backendCommunication(hint.pacedSpeech)
+                //this.handleResponse(response);
+            };
+        };
     };
+
+    handleResponse = (response) => {
+        // play the audio
+        // synthesize(response); // later for borders params (responses, hint, nextBorder)
+
+    }
 
     reloadSpeech = (hint) => {
         this.setState({hintIndex: 0},
@@ -235,7 +242,10 @@ class HintSystem extends React.Component {
     togglePlayPause = (event) => {
         // if speaking => pause, if not speaking => play
         // not used currently (showing nextBoarder instead)
-        this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
+        // this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
+        this.setState((prevState) => ({
+            agentSpeak: !prevState.agentSpeak
+          }));
     };
 
     handleOnChange = (event, expanded, index, hint) => {
