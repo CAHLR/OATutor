@@ -183,6 +183,7 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
+        console.log("hint.math:", hint.math.type);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
@@ -242,7 +243,6 @@ class HintSystem extends React.Component {
     togglePlayPause = (event) => {
         // if speaking => pause, if not speaking => play
         // not used currently (showing nextBoarder instead)
-        // this.state.agentSpeak === false? this.setState({agentSpeak: true}) : this.setState({agentSpeak: false});
         this.setState((prevState) => ({
             agentSpeak: !prevState.agentSpeak
           }));
@@ -391,22 +391,21 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            {this.state.agentMode === true? 
+                            {this.state.agentMode === true? ( 
+                                <>
                                 <Button onClick={() => this.reloadSpeech(hint)}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
-                            :" "}
                             
-                            {this.state.agentMode === true?
                                 <Button onClick={() => this.nextBoarder(hint) /* Temporary method placement to show switching boarders, change to playAgent  */}>
                                     {this.state.agentSpeak === true?
                                     <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
                                     : <img src={`${process.env.PUBLIC_URL}/play_icon.svg`} alt="Play Icon" width={15} height={15} />}
                                 </Button>
-                                :" "}
+                                </>
+                                ) :" "}              
 
-                            <Button onClick={() => this.toggleWhiteboard(hint)}
-                            >
+                            <Button onClick={() => this.toggleWhiteboard(hint)}>
                                 {this.state.agentMode === true? "TEXT" : "AGENT"}
                             </Button>
 
