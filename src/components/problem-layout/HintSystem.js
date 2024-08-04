@@ -25,6 +25,8 @@ import Paper from '@material-ui/core/Paper';
 import { styled } from '@material-ui/core/styles';
 
 import { backendCommunication } from '../../tts/BackendCommunication.js'; 
+import { websocketClient } from '../../tts/websocketClient.js'; 
+// import useAudioFetcher from '../../tts/AudioFetcher.js';
 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
@@ -211,10 +213,9 @@ class HintSystem extends React.Component {
         // (DONE) or when Agent button is pressed is toggeld to 
         // (DONE) should not play answers 
         if( this.state.agentMode ){
-            if (hint.pacedSpeech) {
-                backendCommunication(hint.pacedSpeech); 
-                //response = backendCommunication(hint.pacedSpeech)
-                //this.handleResponse(response);
+            if (hint.speech) {
+                // backendCommunication(hint.speech); 
+                websocketClient(hint.speech);
             };
         };
     };

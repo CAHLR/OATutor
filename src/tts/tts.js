@@ -37,13 +37,14 @@ function playAudioStream(response) {
   });
 }
 
-export async function synthesize(responses) {
+
+export async function synthesize(responses) { // add params: (responses, hint, nextBorder)
    try{
         // play them one by one 
         for (const response of responses) {
             await playAudioStream(response);        // frontend - send over all responses
             console.log("Finished playing audio");
-            // SEND MESSAGE TO TOGGLE MATH HERE 
+            // nextBorder(hint); // frontend - next border
         }
     }
     catch(error){
