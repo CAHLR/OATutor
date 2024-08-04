@@ -24,9 +24,12 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-import { backendCommunication } from '../../tts/BackendCommunication.js'; 
+// import { backendCommunication } from '../../tts/BackendCommunication.js'; 
 import { websocketClient } from '../../tts/websocketClient.js'; 
 // import useAudioFetcher from '../../tts/AudioFetcher.js';
+import io from 'socket.io-client';
+const socket = io('http://localhost:3000'); 
+
 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
@@ -185,7 +188,7 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
-        console.log("hint.math:", hint.math.type);
+        // console.log("hint.math:", hint.math.type);
         return this.state.agentMode? (hint.math? 
             (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
@@ -213,11 +216,15 @@ class HintSystem extends React.Component {
         // (DONE) or when Agent button is pressed is toggeld to 
         // (DONE) should not play answers 
         if( this.state.agentMode ){
-            if (hint.speech) {
+            if (hint.pacedSpeech) {
                 // backendCommunication(hint.speech); 
-                websocketClient(hint.speech);
-            };
-        };
+                // websocketClient(hint.speech);
+                socket.emit('sendMessage', hint.pacedSpeech);   
+            }; 
+        };               
+        socket.on('message', (data) => {
+            console.log('Message from server:', data);
+        });
     };
 
     handleResponse = (response) => {
