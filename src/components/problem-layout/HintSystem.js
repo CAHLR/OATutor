@@ -216,14 +216,24 @@ class HintSystem extends React.Component {
             }; 
         };               
         socket.on('message', (data) => {
-            console.log('Message from server:', data);
+            // console.log('Message from server:', data);
             this.setState({hintIndex: parseInt(data)}); // later make method with some error catching
         });
+
+         // dont know if this should be placed here
+         socket.on('finish', () => {
+            // console.log('Finished hint');
+            this.setState({playing: false});
+        });
+
     };
 
-    reloadSpeech = () => {
+    reloadSpeech = (hint) => {
         socket.emit('reload');
-        this.setState(() => ({hintIndex: 0}));
+        this.setState(() => ({hintIndex: 0}), () => {
+            this.playAgent(hint);
+            // not fully working yet need to quit previous audio first
+        });
     };
 
     stopSpeech = () => {
@@ -235,6 +245,8 @@ class HintSystem extends React.Component {
         () => {
           this.playAgent(hint); 
         })
+
+        // should play when whiteboard opens and stop when closes
 
     };
 
@@ -252,7 +264,13 @@ class HintSystem extends React.Component {
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
         // TODO: Add conditional so it wont play if hint is being closed...
-        this.playAgent(hint);
+        if (expanded){
+            this.playAgent(hint);
+        }
+        // else {
+        //     this.stopSpeech();
+        // }
+       
     };
 
 
@@ -394,7 +412,7 @@ class HintSystem extends React.Component {
                         <AccordionActions>
                             {this.state.agentMode? ( 
                                 <>
-                                <Button onClick={() => this.reloadSpeech()}>
+                                <Button onClick={() => this.reloadSpeech(hint)}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             
