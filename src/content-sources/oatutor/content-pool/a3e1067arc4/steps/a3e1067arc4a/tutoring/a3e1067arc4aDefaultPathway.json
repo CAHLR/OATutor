@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a3e1067arc4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take the derivative of f(x)",
+        "text": "$$f'(x)=cos(x)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": ", f prime, of x, is equal to cosine of x",
+        "math": [
+            "$$f'(x)=cos(x)$$"
+        ],
+        "pacedSpeech": [
+            ", f prime, of x, is equal to cosine of x"
+        ]
+    },
+    {
+        "id": "a3e1067arc4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc4a-h1"
+        ],
+        "title": "Plug the f'(x) into the arc length formula with the given bounds.",
+        "text": "Arc $$Length=\\int_{0}^{pi} \\sqrt{1+cos^2\\left(x\\right)} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Arc  Length is equal to the integral from 0 to p i of the square root of 1 plus, c o s squared of x end root d x",
+        "math": [
+            "$$Length=\\int_{0}^{pi} \\sqrt{1+cos^2\\left(x\\right)} \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "Arc   Length is equal to the integral from 0 to p i of the square root of 1 plus, c o s squared of x end root d x"
+        ]
+    },
+    {
+        "id": "a3e1067arc4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc4a-h2"
+        ],
+        "title": "Evaluate the integral",
+        "text": "Use a computer, calculator, or another device to solve the integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Use a computer, calculator, or another device to solve the integral.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Use a computer, calculator, or another device to solve the integral."
+        ]
+    }
+]

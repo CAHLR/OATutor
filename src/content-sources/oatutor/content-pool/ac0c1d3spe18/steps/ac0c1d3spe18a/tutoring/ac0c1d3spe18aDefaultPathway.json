@@ -1,0 +1,134 @@
+[
+    {
+        "id": "ac0c1d3spe18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction Binomial Square Formula",
+        "text": "We compare our expression to the subtraction binomial square formula: $${\\left(a-b\\right)}^2=a^2-2a b+b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We compare our expression to the subtraction binomial square formula:  parentheses a minus b,  squared is equal to a squared minus 2 a b, plus b squared .",
+        "math": [
+            "$${\\left(a-b\\right)}^2=a^2-2a b+b^2$$"
+        ],
+        "pacedSpeech": [
+            "We compare our expression to the subtraction binomial square formula:    a minus b,  squared is equal to a squared minus 2 a b, plus b squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe18a-h1"
+        ],
+        "title": "Compare the Binomial\\n",
+        "text": "$${\\left(a-b\\right)}^2$$\\n$${\\left(2y-3z\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "parentheses a minus b,  squared \\n parentheses, 2 y minus 3 z  squared",
+        "math": [
+            "$${\\left(a-b\\right)}^2$$",
+            "$${\\left(2y-3z\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "a minus b,  squared ",
+            "  , 2 y minus 3 z  squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2y$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe18a-h2"
+        ],
+        "title": "Identify a",
+        "text": "What is a in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is a in the expression?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is a in the expression?"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3z$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe18a-h3"
+        ],
+        "title": "Identify $$b$$",
+        "text": "What is $$b$$ in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b  in the expression?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is   b ",
+            " in the expression?"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe18a-h3",
+            "ac0c1d3spe18a-h4"
+        ],
+        "title": "Plug in the Terms",
+        "text": "Substitute $$a=2y$$ and $$b=3z$$ into the subtraction binomial square formula:\\n$${\\left(a-b\\right)}^2=a^2+2a b+b^2$$\\n$${\\left(3x-y\\right)}^2={\\left(2y\\right)}^2-2\\times2y 3z+{\\left(3z\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  a is equal to, 2 y  and  b, is equal to 3 z  into the subtraction binomial square formula:\\n, parentheses a minus b,  squared is equal to a squared plus 2 a b, plus b squared \\n, parentheses, 3 x minus y,  squared is equal to parentheses 2 y  squared minus, 2 times 2 y 3 z plus, parentheses 3 z  squared",
+        "math": [
+            "$$a=2y$$",
+            "$$b=3z$$",
+            "$${\\left(a-b\\right)}^2=a^2+2a b+b^2$$",
+            "$${\\left(3x-y\\right)}^2={\\left(2y\\right)}^2-2\\times2y 3z+{\\left(3z\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   a is equal to, 2 y ",
+            " and   b, is equal to 3 z ",
+            " into the subtraction binomial square formula: ,  a minus b,  squared is equal to a squared plus 2 a b, plus b squared ",
+            " , , 3 x minus y,  squared is equal to  2 y  squared minus, 2 times 2 y 3 z plus,  3 z  squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe18a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$4y^2-12y z+9z^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "4 y squared, minus 12 y z, plus 9 z squared",
+        "math": [
+            "$$4y^2-12y z+9z^2$$"
+        ],
+        "pacedSpeech": [
+            "4 y squared, minus 12 y z, plus 9 z squared"
+        ]
+    }
+]

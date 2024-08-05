@@ -1,0 +1,146 @@
+[
+    {
+        "id": "ab8934ethreevar28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting Up",
+        "text": "Set up three equations in variable form to represent the situation $$(b=BMW$$, $$j=Jeep$$, and $$t=Toyota)$$. We have $$b+j+t=140000$$, $$b=j+7000$$, and $$1.08b+1.05j+1.12t=151830$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Set up three equations in variable form to represent the situation  times parentheses b is equal to,   b   m   w ,  j is equal to Jeep , and  t, is equal to Toyota  . We have  b plus j plus t is equal to, 140000 ,  b, is equal to j plus, 7000 , and  1.08 b, plus 1.05 j plus 1.12 t is equal to 151830",
+        "math": [
+            "$$(b=BMW$$",
+            "$$j=Jeep$$",
+            "$$t=Toyota)$$",
+            "$$b+j+t=140000$$",
+            "$$b=j+7000$$",
+            "$$1.08b+1.05j+1.12t=151830$$"
+        ],
+        "pacedSpeech": [
+            "Set up three equations in variable form to represent the situation   times  b is equal to,   b   m   w ",
+            ",   j is equal to Jeep ",
+            ", and   t, is equal to Toyota  ",
+            ". We have   b plus j plus t is equal to, 140000 ",
+            ",   b, is equal to j plus, 7000 ",
+            ", and   1.08 b, plus 1.05 j plus 1.12 t is equal to 151830"
+        ]
+    },
+    {
+        "id": "ab8934ethreevar28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab8934ethreevar28a-h1"
+        ],
+        "title": "Plugging In",
+        "text": "Substitute $$b=j+7000$$ into both of the equations containing all three variables so that only the variables j and $$t$$ are present",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute , b is equal to, j plus 7000  into both of the equations containing all three variables so that only the variables j and  t  are present",
+        "math": [
+            "$$b=j+7000$$",
+            "$$t$$"
+        ],
+        "pacedSpeech": [
+            "Substitute  , b is equal to, j plus 7000 ",
+            " into both of the equations containing all three variables so that only the variables j and   t ",
+            " are present"
+        ]
+    },
+    {
+        "id": "ab8934ethreevar28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab8934ethreevar28a-h2"
+        ],
+        "title": "Rearranging Equation",
+        "text": "Rearrange one of the two equations to represent an expression for j",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Rearrange one of the two equations to represent an expression for j",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Rearrange one of the two equations to represent an expression for j"
+        ]
+    },
+    {
+        "id": "ab8934ethreevar28a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$42636$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar28a-h3"
+        ],
+        "title": "Solving for j",
+        "text": "Substitute the expression for j into the other equation not rearranged and solve for j",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute the expression for j into the other equation not rearranged and solve for j",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Substitute the expression for j into the other equation not rearranged and solve for j"
+        ]
+    },
+    {
+        "id": "ab8934ethreevar28a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$49636$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar28a-h4"
+        ],
+        "title": "Solving for $$b$$",
+        "text": "Substitute the value for j into $$b=j+7000$$ to solve for $$b$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute the value for j into , b is equal to, j plus 7000  to solve for  b",
+        "math": [
+            "$$b=j+7000$$",
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "Substitute the value for j into  , b is equal to, j plus 7000 ",
+            " to solve for   b"
+        ]
+    },
+    {
+        "id": "ab8934ethreevar28a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$47747$$"
+        ],
+        "dependencies": [
+            "ab8934ethreevar28a-h5"
+        ],
+        "title": "Solving for $$t$$",
+        "text": "Use any of the three variable equations to plug in the values of $$b$$ and j to solve for $$t$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Use any of the three variable equations to plug in the values of  b  and j to solve for  t",
+        "math": [
+            "$$b$$",
+            "$$t$$"
+        ],
+        "pacedSpeech": [
+            "Use any of the three variable equations to plug in the values of   b ",
+            " and j to solve for   t"
+        ]
+    }
+]

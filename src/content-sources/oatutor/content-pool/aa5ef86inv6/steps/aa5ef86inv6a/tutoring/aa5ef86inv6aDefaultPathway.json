@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aa5ef86inv6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing the System in Terms of Matrices",
+        "text": "Write the system in terms of a coefficient matrix, a variable matrix, and a constant matrix. $$A=\\begin{bmatrix} 3 & 8 \\\\ 4 & 11 \\end{bmatrix}$$, $$X=\\begin{bmatrix} x \\\\ y \\end{bmatrix}$$, $$B=\\begin{bmatrix} 5 \\\\ 7 \\end{bmatrix}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Write the system in terms of a coefficient matrix, a variable matrix, and a constant matrix.    a is equal to the 2 by 2 matrix row 1 3, 8 row 2 4, 11 ,    x is equal to, the 2 by 1 column matrix x y ,    b is equal to, the 2 by 1 column matrix 5 7 .",
+        "math": [
+            "$$A=\\begin{bmatrix} 3 & 8 \\\\ 4 & 11 \\end{bmatrix}$$",
+            "$$X=\\begin{bmatrix} x \\\\ y \\end{bmatrix}$$",
+            "$$B=\\begin{bmatrix} 5 \\\\ 7 \\end{bmatrix}$$"
+        ],
+        "pacedSpeech": [
+            "Write the system in terms of a coefficient matrix, a variable matrix, and a constant matrix.     a is equal to the 2 by 2 matrix row 1 3, 8 row 2 4, 11 ",
+            ",     x is equal to, the 2 by 1 column matrix x y ",
+            ",     b is equal to, the 2 by 1 column matrix 5 7"
+        ]
+    },
+    {
+        "id": "aa5ef86inv6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa5ef86inv6a-h1"
+        ],
+        "title": "Writing The Equation",
+        "text": "Next, using the matrices we wrote above, $$AX=B$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Next, using the matrices we wrote above, ,   a   x, is equal to   b .",
+        "math": [
+            "$$AX=B$$"
+        ],
+        "pacedSpeech": [
+            "Next, using the matrices we wrote above,  ,   a   x, is equal to   b"
+        ]
+    },
+    {
+        "id": "aa5ef86inv6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa5ef86inv6a-h2"
+        ],
+        "title": "Calculating $$A^{\\left(-1\\right)}$$",
+        "text": "Calculate $$A^{\\left(-1\\right)}$$. We can use the formula to find the inverse of 2x2 matrix: $$A^{\\left(-1\\right)}=1/(ad-bc)*\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate    a raised to the parentheses negative 1  power . We can use the formula to find the inverse of 2x2 matrix: ,   a raised to the parentheses negative 1  power is equal to 1 divided by parentheses, a d minus b c  times the 2 by 2 matrix row 1 d, negative b row 2 negative c, a .",
+        "math": [
+            "$$A^{\\left(-1\\right)}$$",
+            "$$A^{\\left(-1\\right)}=1/(ad-bc)*\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$$"
+        ],
+        "pacedSpeech": [
+            "Calculate     a raised to the  negative 1  power ",
+            ". We can use the formula to find the inverse of 2x2 matrix:  this expression"
+        ]
+    },
+    {
+        "id": "aa5ef86inv6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa5ef86inv6a-h3"
+        ],
+        "title": "Multiplying Each Side of the Equation",
+        "text": "Multiply both sides of the equation by $$A^{\\left(-1\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply both sides of the equation by    a raised to the parentheses negative 1  power .",
+        "math": [
+            "$$A^{\\left(-1\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Multiply both sides of the equation by     a raised to the  negative 1  power"
+        ]
+    }
+]

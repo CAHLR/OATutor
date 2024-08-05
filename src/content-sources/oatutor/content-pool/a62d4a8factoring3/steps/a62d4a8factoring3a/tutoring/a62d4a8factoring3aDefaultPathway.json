@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a62d4a8factoring3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a preliminary strategy",
+        "text": "As there is a greatest common factor(5), factor it out. The expression should look like this: $$5\\left(k^2-3k-10\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "As there is a greatest common factor(5), factor it out. The expression should look like this:  5 times parentheses, k squared minus 3 k minus 10  .",
+        "math": [
+            "$$5\\left(k^2-3k-10\\right)$$"
+        ],
+        "pacedSpeech": [
+            "As there is a greatest common factor(5), factor it out. The expression should look like this:   5 times , k squared minus 3 k minus 10"
+        ]
+    },
+    {
+        "id": "a62d4a8factoring3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h1"
+        ],
+        "title": "Identify",
+        "text": "Inside the parentheses, is it a binomial, trinomial, or are there more than three terms? Since it is a trinomial with a coefficient of $$1$$, undo FOIL.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Inside the parentheses, is it a binomial, trinomial, or are there more than three terms? Since it is a trinomial with a coefficient of  1 , undo FOIL.",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "Inside the parentheses, is it a binomial, trinomial, or are there more than three terms? Since it is a trinomial with a coefficient of   1 ",
+            ", undo FOIL."
+        ]
+    },
+    {
+        "id": "a62d4a8factoring3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h2"
+        ],
+        "title": "Use factors",
+        "text": "Use the factors of $$-10$$ to finish FOIL.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Use the factors of  minus 10  to finish FOIL.",
+        "math": [
+            "$$-10$$"
+        ],
+        "pacedSpeech": [
+            "Use the factors of   minus 10 ",
+            " to finish FOIL."
+        ]
+    },
+    {
+        "id": "a62d4a8factoring3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$5\\left(k+2\\right) \\left(k-5\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The answer is  5 times, parentheses k plus 2,  times, parentheses k minus 5,  .",
+        "math": [
+            "$$5\\left(k+2\\right) \\left(k-5\\right)$$"
+        ],
+        "pacedSpeech": [
+            "The answer is   5 times,  k plus 2,  times,  k minus 5,"
+        ]
+    }
+]

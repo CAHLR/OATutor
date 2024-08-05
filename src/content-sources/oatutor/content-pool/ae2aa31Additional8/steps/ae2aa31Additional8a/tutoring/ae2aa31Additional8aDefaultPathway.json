@@ -1,0 +1,242 @@
+[
+    {
+        "id": "ae2aa31Additional8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up",
+        "text": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "First, set up the hypothesis test. Since the problem is about a mean, this is a test of a single population mean."
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h1"
+        ],
+        "title": "Tail",
+        "text": "Based on the problem, $$H_0$$: $$\u03bc=275$$ and $$H_a$$: $$\u03bc>275$$. Therefore, this is a right-tailed test.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Based on the problem,    h sub 0 :  mu, is equal to 275  and    h sub a :  mu is greater than 275 . Therefore, this is a right-tailed test.",
+        "math": [
+            "$$H_0$$",
+            "$$\u03bc=275$$",
+            "$$H_a$$",
+            "$$\u03bc>275$$"
+        ],
+        "pacedSpeech": [
+            "Based on the problem,     h sub 0 ",
+            ":   mu, is equal to 275 ",
+            " and     h sub a ",
+            ":   mu is greater than 275 ",
+            ". Therefore, this is a right-tailed test."
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h2"
+        ],
+        "title": "Distribution",
+        "text": "Determine the distribution needed. \ud835\udf0e is known so the distribution is normal. $$\ud835\udc4b~\ud835\udc41(\ud835\udf07,\\frac{\u03c3_X}{\\sqrt{n}})$$. Fill this in with values.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the distribution needed. \ud835\udf0e is known so the distribution is normal.    x   n of parentheses mu comma fraction, sigma sub   x, over, the square root of n   . Fill this in with values.",
+        "math": [
+            "$$\ud835\udc4b~\ud835\udc41(\ud835\udf07,\\frac{\u03c3_X}{\\sqrt{n}})$$"
+        ],
+        "pacedSpeech": [
+            "Determine the distribution needed. \ud835\udf0e is known so the distribution is normal.     x   n of  mu comma fraction, sigma sub   x, over, the square root of n   ",
+            ". Fill this in with values."
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$275$$"
+        ],
+        "dependencies": [
+            "ae2aa31Additional8a-h3"
+        ],
+        "title": "Find \u03bc",
+        "text": "We know $$\u03c3=55$$ and $$n=30$$. What is \u03bc?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae2aa31Additional8a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$275$$"
+                ],
+                "dependencies": [],
+                "title": "Find \u03bc",
+                "text": "What is $$H_0$$? This is the value of \u03bc.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "We know  sigma is equal to 55  and  n, is equal to 30 . What is \u03bc?",
+        "math": [
+            "$$\u03c3=55$$",
+            "$$n=30$$"
+        ],
+        "pacedSpeech": [
+            "We know   sigma is equal to 55 ",
+            " and   n, is equal to 30 ",
+            ". What is \u03bc?"
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h4"
+        ],
+        "title": "P-value",
+        "text": "Calculate the $$p-value$$ using the normal distribution for a mean. We need to know the sample mean for this.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the  p minus value  using the normal distribution for a mean. We need to know the sample mean for this.",
+        "math": [
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "Calculate the   p minus value ",
+            " using the normal distribution for a mean. We need to know the sample mean for this."
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$286.2$$"
+        ],
+        "dependencies": [
+            "ae2aa31Additional8a-h5"
+        ],
+        "title": "Mean",
+        "text": "What does the problem say is the sample mean?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What does the problem say is the sample mean?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What does the problem say is the sample mean?"
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h6"
+        ],
+        "title": "P-value",
+        "text": "$$p-value=P\\left(x>286.2\\right)=0.1323$$. The $$p-value$$ is the area to the right of the sample mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "p minus value, is equal to   p, parentheses, x is greater than 286.2,  is equal to, 0.1323 . The  p, minus value  is the area to the right of the sample mean.",
+        "math": [
+            "$$p-value=P\\left(x>286.2\\right)=0.1323$$",
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "p minus value, is equal to   p, , x is greater than 286.2,  is equal to, 0.1323 ",
+            ". The   p, minus value ",
+            " is the area to the right of the sample mean."
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h7"
+        ],
+        "title": "Compare",
+        "text": "Compare \\alpha and the $$p-value$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Compare \\alpha and the  p minus value, .",
+        "math": [
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "Compare \\alpha and the   p minus value,"
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less than"
+        ],
+        "dependencies": [
+            "ae2aa31Additional8a-h8"
+        ],
+        "title": "Compare",
+        "text": "Is \\alpha less than or greater than the $$p-value$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Less than",
+            "Greater than"
+        ],
+        "speech": "Is \\alpha less than or greater than the  p minus value, ?",
+        "math": [
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "Is \\alpha less than or greater than the   p minus value,"
+        ]
+    },
+    {
+        "id": "ae2aa31Additional8a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ae2aa31Additional8a-h9"
+        ],
+        "title": "Interpret",
+        "text": "Since \\alpha<p-value, we would not reject $$H_0$$. Select the answer choice with a valid conclusion based on this.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since \\alpha<p-value, we would not reject    h sub 0 . Select the answer choice with a valid conclusion based on this.",
+        "math": [
+            "$$H_0$$"
+        ],
+        "pacedSpeech": [
+            "Since \\alpha<p-value, we would not reject     h sub 0 ",
+            ". Select the answer choice with a valid conclusion based on this."
+        ]
+    }
+]

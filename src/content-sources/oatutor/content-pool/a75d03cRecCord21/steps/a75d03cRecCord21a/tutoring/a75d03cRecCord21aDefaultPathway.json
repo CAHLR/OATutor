@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a75d03cRecCord21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercepts",
+        "text": "An intercept is where the function intersects either the $$x$$ or $$y$$ axis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "An intercept is where the function intersects either the  x  or  y,  axis.",
+        "math": [
+            "$$x$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "An intercept is where the function intersects either the   x ",
+            " or   y, ",
+            " axis."
+        ]
+    },
+    {
+        "id": "a75d03cRecCord21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a75d03cRecCord21a-h1"
+        ],
+        "title": "Intercepts",
+        "text": "To find an intercept, set either $$x$$ or $$y$$ to $$0$$ and solve for the other variable.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find an intercept, set either , x  or  y  to  0,  and solve for the other variable.",
+        "math": [
+            "$$x$$",
+            "$$y$$",
+            "$$0$$"
+        ],
+        "pacedSpeech": [
+            "To find an intercept, set either  , x ",
+            " or   y ",
+            " to   0, ",
+            " and solve for the other variable."
+        ]
+    },
+    {
+        "id": "a75d03cRecCord21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a75d03cRecCord21a-h2"
+        ],
+        "title": "Intercepts",
+        "text": "In this case, let's set $$x$$ to $$0$$. What is the $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In this case, let's set , x  to  0 . What is the  y, ?",
+        "math": [
+            "$$x$$",
+            "$$0$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "In this case, let's set  , x ",
+            " to   0 ",
+            ". What is the   y,"
+        ]
+    },
+    {
+        "id": "a75d03cRecCord21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a75d03cRecCord21a-h3"
+        ],
+        "title": "Intercepts",
+        "text": "Let's also set $$y$$ to $$0$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let's also set , y  to  0 . What is  x ?",
+        "math": [
+            "$$y$$",
+            "$$0$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Let's also set  , y ",
+            " to   0 ",
+            ". What is   x"
+        ]
+    },
+    {
+        "id": "a75d03cRecCord21a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,-4)$$ $$(8,0)$$"
+        ],
+        "dependencies": [
+            "a75d03cRecCord21a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "Write our two intercepts as points (x,y).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(0,4)$$ $$(8,0)$$",
+            "$$(0,-4)$$ $$(8,0)$$",
+            "$$(0,4)$$ $$(-8,0)$$",
+            "$$(0,-4)$$ $$(-8,0)$$"
+        ],
+        "speech": "Write our two intercepts as points (x,y).",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Write our two intercepts as points (x,y)."
+        ]
+    }
+]

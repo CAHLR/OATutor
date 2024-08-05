@@ -1,0 +1,110 @@
+[
+    {
+        "id": "a57f999ser7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$a_1$$ and $$a_n$$",
+        "text": "We are given $$a_1=-1.7$$ and $$a_n=4.8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are given  a sub 1 is equal to, negative 1.7  and  a sub n, is equal to 4.8",
+        "math": [
+            "$$a_1=-1.7$$",
+            "$$a_n=4.8$$"
+        ],
+        "pacedSpeech": [
+            "We are given   a sub 1 is equal to, negative 1.7 ",
+            " and   a sub n, is equal to 4.8"
+        ]
+    },
+    {
+        "id": "a57f999ser7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser7a-h1"
+        ],
+        "title": "Find $$n$$",
+        "text": "Count the number of terms in the sequence to find $$n=6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Count the number of terms in the sequence to find  n is equal to 6, .",
+        "math": [
+            "$$n=6$$"
+        ],
+        "pacedSpeech": [
+            "Count the number of terms in the sequence to find   n is equal to 6,"
+        ]
+    },
+    {
+        "id": "a57f999ser7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser7a-h2"
+        ],
+        "title": "Formula for Sum of the first $$n$$ terms of Arithmetic Sequence",
+        "text": "Substitute values for $$a_1$$, $$a_n$$ , and $$n$$ into the formula: $$S_n=\\frac{n \\left(a_1+a_n\\right)}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute values for  a sub 1 ,  a sub n  , and  n  into the formula:    s sub n is equal to fraction, n, parentheses, a sub 1 plus a sub n, , over 2,",
+        "math": [
+            "$$a_1$$",
+            "$$a_n$$",
+            "$$n$$",
+            "$$S_n=\\frac{n \\left(a_1+a_n\\right)}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Substitute values for   a sub 1 ",
+            ",   a sub n ",
+            " , and   n ",
+            " into the formula:     s sub n is equal to fraction, n, , a sub 1 plus a sub n, , over 2,"
+        ]
+    },
+    {
+        "id": "a57f999ser7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.3$$"
+        ],
+        "dependencies": [
+            "a57f999ser7a-h3"
+        ],
+        "title": "Solve for $$S_6$$",
+        "text": "What is $$S_6=\\frac{6\\left(-1.7+4.8\\right)}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is    s sub 6 is equal to fraction, 6 times, parentheses, negative 1.7 plus 4.8, , over 2,  ?",
+        "math": [
+            "$$S_6=\\frac{6\\left(-1.7+4.8\\right)}{2}$$"
+        ],
+        "pacedSpeech": [
+            "What is     s sub 6 is equal to fraction, 6 times, , negative 1.7 plus 4.8, , over 2,"
+        ]
+    },
+    {
+        "id": "a57f999ser7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser7a-h4"
+        ],
+        "title": "Sum of the first $$6$$ terms of Arithmetic Sequence",
+        "text": "The Sum of the first $$6$$ terms of Arithmetic Series is $$9.3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The Sum of the first  6  terms of Arithmetic Series is  9.3,",
+        "math": [
+            "$$6$$",
+            "$$9.3$$"
+        ],
+        "pacedSpeech": [
+            "The Sum of the first   6 ",
+            " terms of Arithmetic Series is   9.3,"
+        ]
+    }
+]

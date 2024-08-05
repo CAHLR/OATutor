@@ -1,0 +1,186 @@
+[
+    {
+        "id": "a3d6ae2sys10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=0$$ and $$y=0$$ into both equations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitue , x is equal to 0  and  y, is equal to 0  into both equations.",
+        "math": [
+            "$$x=0$$",
+            "$$y=0$$"
+        ],
+        "pacedSpeech": [
+            "We substitue  , x is equal to 0 ",
+            " and   y, is equal to 0 ",
+            " into both equations."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys10b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$3x+y=0$$\\n$$3\\times0+0=0$$\\n$$0=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "3 x plus y, is equal to, 0 \\n 3 times 0, plus 0 is equal to 0 \\n 0, is equal to 0",
+        "math": [
+            "$$3x+y=0$$",
+            "$$3\\times0+0=0$$",
+            "$$0=0$$"
+        ],
+        "pacedSpeech": [
+            "3 x plus y, is equal to, 0 ",
+            "  3 times 0, plus 0 is equal to 0 ",
+            "  0, is equal to 0"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys10b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys10b-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(0,0)$$ satisfies the first equation, but it must also safisfy the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses 0 comma 0,   satisfies the first equation, but it must also safisfy the second equation.",
+        "math": [
+            "$$(0,0)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times,  0 comma 0,  ",
+            " satisfies the first equation, but it must also safisfy the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys10b-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$x+2y=-5$$\\n$$0+2\\times0=-5$$\\n$$0=-5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "x plus 2 y, is equal to, negative 5 \\n 0, plus 2 times 0 is equal to, negative 5 \\n 0, is equal to negative 5",
+        "math": [
+            "$$x+2y=-5$$",
+            "$$0+2\\times0=-5$$",
+            "$$0=-5$$"
+        ],
+        "pacedSpeech": [
+            "x plus 2 y, is equal to, negative 5 ",
+            "  0, plus 2 times 0 is equal to, negative 5 ",
+            "  0, is equal to negative 5"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys10b-h5"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys10b-h6"
+        ],
+        "title": "Solution to Second Equation",
+        "text": "Therefore, $$(0,0)$$ does not satisfies the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses 0 comma 0,   does not satisfies the second equation.",
+        "math": [
+            "$$(0,0)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times,  0 comma 0,  ",
+            " does not satisfies the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys10b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys10b-h7"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(0,0)$$ does not make both equations true. $$(0,0)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses 0 comma 0,   does not make both equations true. , parentheses 0 comma 0,   is not a solution.",
+        "math": [
+            "$$(0,0)$$",
+            "$$(0,0)$$"
+        ],
+        "pacedSpeech": [
+            "times,  0 comma 0,  ",
+            " does not make both equations true.  ,  0 comma 0,  ",
+            " is not a solution."
+        ]
+    }
+]

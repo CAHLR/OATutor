@@ -1,0 +1,83 @@
+[
+    {
+        "id": "ac3d94dProperties3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Commutative Property of Addition",
+        "text": "The commutative property of addition states that if a, $$b$$ are real numbers, then $$a+b=b+a$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The commutative property of addition states that if a,  b  are real numbers, then  a, plus b, is equal to b plus a .",
+        "math": [
+            "$$b$$",
+            "$$a+b=b+a$$"
+        ],
+        "pacedSpeech": [
+            "The commutative property of addition states that if a,   b ",
+            " are real numbers, then   a, plus b, is equal to b plus a"
+        ]
+    },
+    {
+        "id": "ac3d94dProperties3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties3a-h1"
+        ],
+        "title": "Re-ordering",
+        "text": "Using the commutative property of addition on the last two terms, we can reorder the expression into $$\\frac{1}{2}+\\left(-\\frac{1}{2}\\right)+\\frac{7}{8}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the commutative property of addition on the last two terms, we can reorder the expression into , 1 half plus negative 1 half plus 7 eights .",
+        "math": [
+            "$$\\frac{1}{2}+\\left(-\\frac{1}{2}\\right)+\\frac{7}{8}$$"
+        ],
+        "pacedSpeech": [
+            "Using the commutative property of addition on the last two terms, we can reorder the expression into  , 1 half plus negative 1 half plus 7 eights"
+        ]
+    },
+    {
+        "id": "ac3d94dProperties3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ac3d94dProperties3a-h2"
+        ],
+        "title": "Addition",
+        "text": "What is $$\\frac{1}{2}+\\left(-\\frac{1}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , 1 half plus negative 1 half, ?",
+        "math": [
+            "$$\\frac{1}{2}+\\left(-\\frac{1}{2}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 1 half plus negative 1 half,"
+        ]
+    },
+    {
+        "id": "ac3d94dProperties3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac3d94dProperties3a-h3"
+        ],
+        "title": "Final Answer",
+        "text": "So our final answer is $$0+\\frac{7}{8}=\\frac{7}{8}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "So our final answer is , 0 plus 7 eights, is equal to 7 eights .",
+        "math": [
+            "$$0+\\frac{7}{8}=\\frac{7}{8}$$"
+        ],
+        "pacedSpeech": [
+            "So our final answer is  , 0 plus 7 eights, is equal to 7 eights"
+        ]
+    }
+]

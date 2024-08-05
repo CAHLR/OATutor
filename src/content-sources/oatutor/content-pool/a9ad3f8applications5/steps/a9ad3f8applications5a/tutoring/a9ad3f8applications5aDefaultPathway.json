@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a9ad3f8applications5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify",
+        "text": "We are looking for the age of Noelle and her dad.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are looking for the age of Noelle and her dad.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We are looking for the age of Noelle and her dad."
+        ]
+    },
+    {
+        "id": "a9ad3f8applications5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications5a-h1"
+        ],
+        "title": "First equation",
+        "text": "Since their ages together are $$74$$, we can write the first equation as $$n+d=74$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since their ages together are , 74 , we can write the first equation as  n, plus d is equal to 74",
+        "math": [
+            "$$74$$",
+            "$$n+d=74$$"
+        ],
+        "pacedSpeech": [
+            "Since their ages together are  , 74 ",
+            ", we can write the first equation as   n, plus d is equal to 74"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications5a-h2"
+        ],
+        "title": "Second equation",
+        "text": "Since the age of Noelle\u2019s dad is six less than three times Noelle\u2019s age, we can write the second equation as $$d=3n-6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the age of Noelle\u2019s dad is six less than three times Noelle\u2019s age, we can write the second equation as , d is equal to, 3 n minus 6",
+        "math": [
+            "$$d=3n-6$$"
+        ],
+        "pacedSpeech": [
+            "Since the age of Noelle\u2019s dad is six less than three times Noelle\u2019s age, we can write the second equation as  , d is equal to, 3 n minus 6"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications5a-h3"
+        ],
+        "title": "Solve",
+        "text": "Next, using the system of equations just created, solve for $$n$$. What does it equal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Next, using the system of equations just created, solve for  n . What does it equal?",
+        "math": [
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            "Next, using the system of equations just created, solve for   n ",
+            ". What does it equal?"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$54$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications5a-h4"
+        ],
+        "title": "Solve",
+        "text": "What does $$d$$ equal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What does  d  equal?",
+        "math": [
+            "$$d$$"
+        ],
+        "pacedSpeech": [
+            "What does   d ",
+            " equal?"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications5a-h5"
+        ],
+        "title": "Answer",
+        "text": "Noelle is $$20$$ and her dad is $$54$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Noelle is , 20  and her dad is  54 .",
+        "math": [
+            "$$20$$",
+            "$$54$$"
+        ],
+        "pacedSpeech": [
+            "Noelle is  , 20 ",
+            " and her dad is   54"
+        ]
+    }
+]

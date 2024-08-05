@@ -1,0 +1,148 @@
+[
+    {
+        "id": "ab303f8factoring14a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2y^2$$"
+        ],
+        "dependencies": [],
+        "title": "Common Factor",
+        "text": "What is the common factor of the polynomial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the common factor of the polynomial?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the common factor of the polynomial?"
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring14a-h1"
+        ],
+        "title": "Factor",
+        "text": "Factor out the GCF.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor out the GCF.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Factor out the GCF."
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring14a-h2"
+        ],
+        "title": "Goal",
+        "text": "Determine if the trinomial is a perfect square.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine if the trinomial is a perfect square.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Determine if the trinomial is a perfect square."
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring14a-h3"
+        ],
+        "title": "Standard form of a trinomial",
+        "text": "Check if the trinomial follow the pattern of $$a^2-b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Check if the trinomial follow the pattern of , a squared minus b squared,",
+        "math": [
+            "$$a^2-b^2$$"
+        ],
+        "pacedSpeech": [
+            "Check if the trinomial follow the pattern of  , a squared minus b squared,"
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring14a-h4"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of $$64y^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the square root of  64 y squared ?",
+        "math": [
+            "$$64y^2$$"
+        ],
+        "pacedSpeech": [
+            "What is the square root of   64 y squared"
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring14a-h5"
+        ],
+        "title": "Square Roots",
+        "text": "What is the square root of 9?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the square root of 9?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the square root of 9?"
+        ]
+    },
+    {
+        "id": "ab303f8factoring14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring14a-h6"
+        ],
+        "title": "Manipulate",
+        "text": "Organize the term into $$2y^{2\\left(x^2-4\\right)} \\left(x^2+4\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Organize the term into  2 y raised to the 2 times, parentheses, x squared minus 4,  power parentheses x squared plus 4,",
+        "math": [
+            "$$2y^{2\\left(x^2-4\\right)} \\left(x^2+4\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Organize the term into   2 y raised to the 2 times, , x squared minus 4,  power  x squared plus 4,"
+        ]
+    }
+]

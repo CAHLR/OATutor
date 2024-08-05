@@ -1,0 +1,129 @@
+[
+    {
+        "id": "a63563bnewton23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$x_1$$",
+        "text": "First find $$x_1$$. To find $$x_1$$, use the formula $$x_n=F\\left(x_n-1\\right)$$ with $$n=1$$ and $$x_0=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "First find  x sub 1 . To find  x sub 1 , use the formula  x sub n is equal to   f of, parentheses x sub n minus 1,   with  n is equal to, 1  and  x sub 0, is equal to negative 1 .",
+        "math": [
+            "$$x_1$$",
+            "$$x_1$$",
+            "$$x_n=F\\left(x_n-1\\right)$$",
+            "$$n=1$$",
+            "$$x_0=-1$$"
+        ],
+        "pacedSpeech": [
+            "First find   x sub 1 ",
+            ". To find   x sub 1 ",
+            ", use the formula   x sub n is equal to   f of,  x sub n minus 1,  ",
+            " with   n is equal to, 1 ",
+            " and   x sub 0, is equal to negative 1"
+        ]
+    },
+    {
+        "id": "a63563bnewton23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a63563bnewton23a-h1"
+        ],
+        "title": "Find $$x_1$$",
+        "text": "What is the value of $$x_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the value of  x sub 1 ?",
+        "math": [
+            "$$x_1$$"
+        ],
+        "pacedSpeech": [
+            "What is the value of   x sub 1"
+        ]
+    },
+    {
+        "id": "a63563bnewton23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton23a-h2"
+        ],
+        "title": "Find $$x_2$$",
+        "text": "Second, find $$x_2$$. To find $$x_2$$, use the formula $$x_n=F\\left(x_n-1\\right)$$ with $$n=2$$ and the value of $$x_1$$ stored on the calculator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Second, find  x sub 2 . To find  x sub 2 , use the formula  x sub n is equal to   f of, parentheses x sub n minus 1,   with  n is equal to, 2  and the value of  x sub 1  stored on the calculator.",
+        "math": [
+            "$$x_2$$",
+            "$$x_2$$",
+            "$$x_n=F\\left(x_n-1\\right)$$",
+            "$$n=2$$",
+            "$$x_1$$"
+        ],
+        "pacedSpeech": [
+            "Second, find   x sub 2 ",
+            ". To find   x sub 2 ",
+            ", use the formula   x sub n is equal to   f of,  x sub n minus 1,  ",
+            " with   n is equal to, 2 ",
+            " and the value of   x sub 1 ",
+            " stored on the calculator."
+        ]
+    },
+    {
+        "id": "a63563bnewton23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a63563bnewton23a-h3"
+        ],
+        "title": "Find $$x_2$$",
+        "text": "What is the value of $$x_2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the value of  x sub 2 ?",
+        "math": [
+            "$$x_2$$"
+        ],
+        "pacedSpeech": [
+            "What is the value of   x sub 2"
+        ]
+    },
+    {
+        "id": "a63563bnewton23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton23a-h4"
+        ],
+        "title": "Failure of Newton's Method",
+        "text": "Notice that the approximations alternate back and forth between two values. Consequently, the approximations will never approach a root. Continuing to calculate values $$x_3$$, $$x_4$$, $$x_5$$, $$...x_n$$ will result in a cycle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Notice that the approximations alternate back and forth between two values. Consequently, the approximations will never approach a root. Continuing to calculate values  x sub 3 ,  x sub 4 ,  x sub 5 ,  dot dot dot x sub n  will result in a cycle.",
+        "math": [
+            "$$x_3$$",
+            "$$x_4$$",
+            "$$x_5$$",
+            "$$...x_n$$"
+        ],
+        "pacedSpeech": [
+            "Notice that the approximations alternate back and forth between two values. Consequently, the approximations will never approach a root. Continuing to calculate values   x sub 3 ",
+            ",   x sub 4 ",
+            ",   x sub 5 ",
+            ",   dot dot dot x sub n ",
+            " will result in a cycle."
+        ]
+    }
+]

@@ -1,0 +1,131 @@
+[
+    {
+        "id": "a8583b4FracDec14a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Getting Rid of Fraction Denominators",
+        "text": "What is the LCD (largest common denominator) of $$\\frac{1}{2}$$ and $$\\frac{1}{4}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the LCD (largest common denominator) of , 1 half  and  1 fourth, ?",
+        "math": [
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{4}$$"
+        ],
+        "pacedSpeech": [
+            "What is the LCD (largest common denominator) of  , 1 half ",
+            " and   1 fourth,"
+        ]
+    },
+    {
+        "id": "a8583b4FracDec14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec14a-h1"
+        ],
+        "title": "Getting Rid of Fraction Denominators",
+        "text": "Now we must multiply both sides by the LCD. We now have $$\\frac{4\\times1}{2\\left(m-3\\right)}=\\frac{4\\times1}{4\\left(m-7\\right)}$$. This simplifies to $$2(m-3)=(m-7)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now we must multiply both sides by the LCD. We now have  fraction, 4 times 1, over, 2 times, parentheses m minus 3, ,  is equal to fraction, 4 times 1, over, 4 times, parentheses m minus 7, ,  . This simplifies to , 2 times, parentheses m minus 3,  is equal to, parentheses m minus 7,",
+        "math": [
+            "$$\\frac{4\\times1}{2\\left(m-3\\right)}=\\frac{4\\times1}{4\\left(m-7\\right)}$$",
+            "$$2(m-3)=(m-7)$$"
+        ],
+        "pacedSpeech": [
+            "Now we must multiply both sides by the LCD. We now have   fraction, 4 times 1, over, 2 times,  m minus 3, ,  is equal to fraction, 4 times 1, over, 4 times,  m minus 7, ,  ",
+            ". This simplifies to  , 2 times,  m minus 3,  is equal to,  m minus 7,"
+        ]
+    },
+    {
+        "id": "a8583b4FracDec14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec14a-h2"
+        ],
+        "title": "Distributive Property",
+        "text": "We can now use the distributive property to simplify the left-hand side of the equation. We now have $$2m-6=m-7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can now use the distributive property to simplify the left-hand side of the equation. We now have  2 m minus 6, is equal to m minus 7 .",
+        "math": [
+            "$$2m-6=m-7$$"
+        ],
+        "pacedSpeech": [
+            "We can now use the distributive property to simplify the left-hand side of the equation. We now have   2 m minus 6, is equal to m minus 7"
+        ]
+    },
+    {
+        "id": "a8583b4FracDec14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec14a-h3"
+        ],
+        "title": "Solving the New Equation",
+        "text": "We must now isolate the \"m\" term so that we can solve the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We must now isolate the \"m\" term so that we can solve the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We must now isolate the \"m\" term so that we can solve the equation."
+        ]
+    },
+    {
+        "id": "a8583b4FracDec14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec14a-h4"
+        ],
+        "title": "Solving the New Equation",
+        "text": "We can do this by first adding $$6$$ to both sides of the equation. We now have $$2m=m-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can do this by first adding  6  to both sides of the equation. We now have  2 m, is equal to m minus 1 .",
+        "math": [
+            "$$6$$",
+            "$$2m=m-1$$"
+        ],
+        "pacedSpeech": [
+            "We can do this by first adding   6 ",
+            " to both sides of the equation. We now have   2 m, is equal to m minus 1"
+        ]
+    },
+    {
+        "id": "a8583b4FracDec14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a8583b4FracDec14a-h5"
+        ],
+        "title": "Solving the New Equation",
+        "text": "Now, we can subtract $$m$$ from both sides of the equation. What is the solution to this equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, we can subtract  m  from both sides of the equation. What is the solution to this equation?",
+        "math": [
+            "$$m$$"
+        ],
+        "pacedSpeech": [
+            "Now, we can subtract   m ",
+            " from both sides of the equation. What is the solution to this equation?"
+        ]
+    }
+]

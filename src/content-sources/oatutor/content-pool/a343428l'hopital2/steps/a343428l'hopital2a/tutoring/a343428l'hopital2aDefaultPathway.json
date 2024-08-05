@@ -1,0 +1,327 @@
+[
+    {
+        "id": "a343428l'hopital2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Operation",
+        "text": "Let $$y=x^x$$. Using one-to-one property of logarithms, we obtain $$ln(y)=\\ln(x^x)$$. According to the Power Properties of Logarithms, the expression can be written as $$ln(y)=x \\ln(x)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Let  y is equal to, x to the x-th . Using one-to-one property of logarithms, we obtain  l n of y is equal to the natural log of, parentheses x to the x-th  . According to the Power Properties of Logarithms, the expression can be written as  l n of y is equal to, x the natural log of, x .",
+        "math": [
+            "$$y=x^x$$",
+            "$$ln(y)=\\ln(x^x)$$",
+            "$$ln(y)=x \\ln(x)$$"
+        ],
+        "pacedSpeech": [
+            "Let   y is equal to, x to the x-th ",
+            ". Using one-to-one property of logarithms, we obtain   l n of y is equal to the natural log of,  x to the x-th  ",
+            ". According to the Power Properties of Logarithms, the expression can be written as   l n of y is equal to, x the natural log of, x"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h1"
+        ],
+        "title": "Operation",
+        "text": "If we immediately evaluate the limit of the given function, the result would be $$0^0$$ which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "If we immediately evaluate the limit of the given function, the result would be  0 to the 0  which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "$$0^0$$"
+        ],
+        "pacedSpeech": [
+            "If we immediately evaluate the limit of the given function, the result would be   0 to the 0 ",
+            " which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule."
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h2"
+        ],
+        "title": "Operation",
+        "text": "We set up a new limit based on the function we just created /lim{x,0**+,x*ln(x)}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We set up a new limit based on the function we just created /lim{x,0**+,x*ln(x)}",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We set up a new limit based on the function we just created /lim{x,0**+,x*ln(x)}"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h3"
+        ],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Substitute  x  with the value  x  approaches to. If the function results in one of these indeterminate form:  0 over 0, ,  infinity over infinity  or , fraction, negative infinity, over infinity,  , we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "math": [
+            "$$x$$",
+            "$$x$$",
+            "$$\\frac{0}{0}$$",
+            "$$\\frac{\\infty}{\\infty}$$",
+            "$$\\frac{-\\infty}{\\infty}$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   x ",
+            " with the value   x ",
+            " approaches to. If the function results in one of these indeterminate form:   0 over 0, ",
+            ",   infinity over infinity ",
+            " or  , fraction, negative infinity, over infinity,  ",
+            ", we apply L\u2019H\u00f4pital\u2019s Rule."
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "/lim{x,0**+,ln(x)/(1/x)}"
+        ],
+        "dependencies": [
+            "a343428l'hopital2a-h4"
+        ],
+        "title": "Rearrange the expression",
+        "text": "The purpose of rearranging an expression is to make it fit the indeterminate form and from there we can apply L\u2019H\u00f4pital\u2019s Rule. Using the Negative Exponents Law, how can we rearrange the new expression so that it could fit the indeterminate form?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "/lim{x,0**+,ln(x)/(1/x)}",
+            "/lim{x,0**+,x/(1/ln(x))}"
+        ],
+        "subHints": [
+            {
+                "id": "a343428l'hopital2a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Rearrange the expression",
+                "text": "/lim{x,0**+,ln(x)/x**(-1)}=/lim{x,0**+,ln(x)/(1/x)}",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a343428l'hopital2a-h5-s2",
+                "type": "hint",
+                "dependencies": [
+                    "a343428l'hopital2a-h5-s1"
+                ],
+                "title": "Rearrange the expression",
+                "text": "Note that the other way of rearrangement does not give us a proper indeterminate form.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ],
+        "speech": "The purpose of rearranging an expression is to make it fit the indeterminate form and from there we can apply L\u2019H\u00f4pital\u2019s Rule. Using the Negative Exponents Law, how can we rearrange the new expression so that it could fit the indeterminate form?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The purpose of rearranging an expression is to make it fit the indeterminate form and from there we can apply L\u2019H\u00f4pital\u2019s Rule. Using the Negative Exponents Law, how can we rearrange the new expression so that it could fit the indeterminate form?"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h5"
+        ],
+        "title": "Substitute the limit",
+        "text": "$$\\frac{\\ln(0)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "fraction, the natural log of, 0, over, fraction, 1 over 0,   is equal to, fraction, negative infinity, over infinity,",
+        "math": [
+            "$$\\frac{\\ln(0)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}$$"
+        ],
+        "pacedSpeech": [
+            "fraction, the natural log of, 0, over, fraction, 1 over 0,   is equal to, fraction, negative infinity, over infinity,"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h6"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(ln(x))/d/dx(1/x)}=/lim{x,0**+,(1/x)/-(1/x**2)}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(ln(x))/d/dx(1/x)}=/lim{x,0**+,(1/x)/-(1/x**2)}",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(ln(x))/d/dx(1/x)}=/lim{x,0**+,(1/x)/-(1/x**2)}"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "/lim{x,0**+,(1/x)/-(1/x**2)}"
+        ],
+        "dependencies": [
+            "a343428l'hopital2a-h7"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "/lim{x,0**+,x/-(1/x**2)}",
+            "/lim{x,0**+,(1/x)/(1/x**2)}",
+            "/lim{x,0**+,(x**2/x)/-(1/x**2)}",
+            "/lim{x,0**+,(1/x)/-(1/x**2)}"
+        ],
+        "speech": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h8"
+        ],
+        "title": "Rearrange the expression",
+        "text": "/lim{x,0**+,(1/x)/-(1/x**2)}=/lim{x,0**+,-x}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "/lim{x,0**+,(1/x)/-(1/x**2)}=/lim{x,0**+,-x}",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "/lim{x,0**+,(1/x)/-(1/x**2)}=/lim{x,0**+,-x}"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h9"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$-(0)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "minus 0 is equal to 0",
+        "math": [
+            "$$-(0)=0$$"
+        ],
+        "pacedSpeech": [
+            "minus 0 is equal to 0"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h1",
+            "a343428l'hopital2a-h10"
+        ],
+        "title": "Operation",
+        "text": "We set $$ln(y)=x \\ln(x)$$ in the very first step therefore we can obtain /lim{x,0**+,x*ln(x)}=/lim{x,0**+,ln(y)}=0.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We set  l n of y, is equal to, x the natural log of, x  in the very first step therefore we can obtain /lim{x,0**+,x*ln(x)}=/lim{x,0**+,ln(y)}=0.",
+        "math": [
+            "$$ln(y)=x \\ln(x)$$"
+        ],
+        "pacedSpeech": [
+            "We set   l n of y, is equal to, x the natural log of, x ",
+            " in the very first step therefore we can obtain /lim{x,0**+,x*ln(x)}=/lim{x,0**+,ln(y)}=0."
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h11"
+        ],
+        "title": "Limit of Logarithm Rule",
+        "text": "/lim{x,0**+,ln(y)}=ln(/lim{x,0**+,(y)})=0",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "/lim{x,0**+,ln(y)}=ln(/lim{x,0**+,(y)})=0",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "/lim{x,0**+,ln(y)}=ln(/lim{x,0**+,(y)})=0"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h12"
+        ],
+        "title": "Properties of Exponents and Natural Logarithms",
+        "text": "ln(/lim{x,0**+,(y)})=/lim{x,0**+,(y)}=e**0=1",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "ln(/lim{x,0**+,(y)})=/lim{x,0**+,(y)}=e**0=1",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "ln(/lim{x,0**+,(y)})=/lim{x,0**+,(y)}=e**0=1"
+        ]
+    },
+    {
+        "id": "a343428l'hopital2a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a343428l'hopital2a-h1",
+            "a343428l'hopital2a-h13"
+        ],
+        "title": "Conclusion",
+        "text": "$$/lim{x,0,(y)=\\lim_{x\\to0} x^x=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the limit as x approaches 0, of y is equal to the limit as x approaches 0, of x to the x-th is equal to 1",
+        "math": [
+            "$$/lim{x,0,(y)=\\lim_{x\\to0} x^x=1$$"
+        ],
+        "pacedSpeech": [
+            "the limit as x approaches 0, of y is equal to the limit as x approaches 0, of x to the x-th is equal to 1"
+        ]
+    }
+]

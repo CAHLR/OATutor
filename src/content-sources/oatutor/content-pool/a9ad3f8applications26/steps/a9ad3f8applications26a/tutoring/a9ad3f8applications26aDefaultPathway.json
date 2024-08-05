@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a9ad3f8applications26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Create Variables",
+        "text": "We are looking to find the measure of two angles. Let $$x=measure$$ of larger angle and $$y=measure$$ of smaller angle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are looking to find the measure of two angles. Let  x is equal to, measure  of larger angle and  y, is equal to measure  of smaller angle.",
+        "math": [
+            "$$x=measure$$",
+            "$$y=measure$$"
+        ],
+        "pacedSpeech": [
+            "We are looking to find the measure of two angles. Let   x is equal to, measure ",
+            " of larger angle and   y, is equal to measure ",
+            " of smaller angle."
+        ]
+    },
+    {
+        "id": "a9ad3f8applications26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications26a-h1"
+        ],
+        "title": "Translate to a System of Equations",
+        "text": "The two angles are supplementary, translating into $$x+y=180$$. The larger angle is twelve degrees less than five times the smaller angle, translating into $$x=5y-12$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The two angles are supplementary, translating into  x plus y, is equal to, 180 . The larger angle is twelve degrees less than five times the smaller angle, translating into  x, is equal to, 5 y minus 12 .",
+        "math": [
+            "$$x+y=180$$",
+            "$$x=5y-12$$"
+        ],
+        "pacedSpeech": [
+            "The two angles are supplementary, translating into   x plus y, is equal to, 180 ",
+            ". The larger angle is twelve degrees less than five times the smaller angle, translating into   x, is equal to, 5 y minus 12"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications26a-h2"
+        ],
+        "title": "Solve the System",
+        "text": "Using substitution we can substitute $$x=5y-12$$ into $$x+y=180$$ to solve for $$y$$, the smaller angle.\\n$$x+y=180$$\\n$$5y-12+y=180$$\\n$$6y-12=180$$\\n$$6y=192$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using substitution we can substitute  x is equal to 5 y minus 12  into  x, plus y is equal to 180  to solve for  y , the smaller angle.\\n x plus y is equal to 180 \\n 5, y, minus 12 plus y is equal to, 180 \\n 6, y, minus 12 is equal to, 180 \\n 6, y is equal to 192",
+        "math": [
+            "$$x=5y-12$$",
+            "$$x+y=180$$",
+            "$$y$$",
+            "$$x+y=180$$",
+            "$$5y-12+y=180$$",
+            "$$6y-12=180$$",
+            "$$6y=192$$"
+        ],
+        "pacedSpeech": [
+            "Using substitution we can substitute   x is equal to 5 y minus 12 ",
+            " into   x, plus y is equal to 180 ",
+            " to solve for   y ",
+            ", the smaller angle.  x plus y is equal to 180 ",
+            "  5, y, minus 12 plus y is equal to, 180 ",
+            "  6, y, minus 12 is equal to, 180 ",
+            "  6, y is equal to 192"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications26a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$32$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications26a-h3"
+        ],
+        "title": "Finding Smaller Angle",
+        "text": "What is the measure of angle $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the measure of angle  y ?",
+        "math": [
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "What is the measure of angle   y"
+        ]
+    },
+    {
+        "id": "a9ad3f8applications26a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$148$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications26a-h4"
+        ],
+        "title": "Finding Larger Angle",
+        "text": "Given $$y=12$$, plug the known value into $$x=5y-12$$ to solve for $$x$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given  y is equal to, 12 , plug the known value into  x, is equal to 5 y minus, 12  to solve for  x . What is  x ?",
+        "math": [
+            "$$y=12$$",
+            "$$x=5y-12$$",
+            "$$x$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Given   y is equal to, 12 ",
+            ", plug the known value into   x, is equal to 5 y minus, 12 ",
+            " to solve for   x ",
+            ". What is   x"
+        ]
+    }
+]

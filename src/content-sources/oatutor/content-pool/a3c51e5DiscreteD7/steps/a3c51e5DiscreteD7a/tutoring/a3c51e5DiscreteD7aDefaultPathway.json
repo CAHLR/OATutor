@@ -1,0 +1,155 @@
+[
+    {
+        "id": "a3c51e5DiscreteD7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Expected Values",
+        "text": "To calculate the expected value of something, we can use the equation E[X] $$=$$ sum{i\\=0}{...}{p(X_i)*X_i}, where $$p\\left(X_i\\right)$$ is the probability of $$X_i$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To calculate the expected value of something, we can use the equation E[X]  is equal to  sum{i\\=0}{...}{p(X_i)*X_i}, where , p of, parentheses   x sub i   is the probability of    x sub i .",
+        "math": [
+            "$$=$$",
+            "$$p\\left(X_i\\right)$$",
+            "$$X_i$$"
+        ],
+        "pacedSpeech": [
+            "To calculate the expected value of something, we can use the equation E[X]   is equal to ",
+            " sum{i\\=0}{...}{p(X_i)*X_i}, where  , p of,    x sub i  ",
+            " is the probability of     x sub i"
+        ]
+    },
+    {
+        "id": "a3c51e5DiscreteD7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3c51e5DiscreteD7a-h1"
+        ],
+        "title": "What is X?",
+        "text": "We can set $$X_0$$ $$=$$ Getting no points, $$X_1$$ $$=$$ Getting $$1$$ point, and $$X_2$$ $$=$$ Getting $$2$$ points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can set    x sub 0  , is equal to,  Getting no points,    x sub 1  , is equal to,  Getting  1  point, and    x sub 2   is equal to  Getting  2  points.",
+        "math": [
+            "$$X_0$$",
+            "$$=$$",
+            "$$X_1$$",
+            "$$=$$",
+            "$$1$$",
+            "$$X_2$$",
+            "$$=$$",
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "We can set     x sub 0 ",
+            "  , is equal to, ",
+            " Getting no points,     x sub 1 ",
+            "  , is equal to, ",
+            " Getting   1 ",
+            " point, and     x sub 2 ",
+            "   is equal to ",
+            " Getting   2 ",
+            " points."
+        ]
+    },
+    {
+        "id": "a3c51e5DiscreteD7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6944$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD7a-h2"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "What is the probability that we get no points?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the probability that we get no points?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the probability that we get no points?"
+        ]
+    },
+    {
+        "id": "a3c51e5DiscreteD7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2777$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD7a-h3"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "What is the probability that we get $$1$$ point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the probability that we get  1  point?",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "What is the probability that we get   1 ",
+            " point?"
+        ]
+    },
+    {
+        "id": "a3c51e5DiscreteD7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0277$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD7a-h4"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "What is the probability that we get $$2$$ points?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the probability that we get  2,  points?",
+        "math": [
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "What is the probability that we get   2, ",
+            " points?"
+        ]
+    },
+    {
+        "id": "a3c51e5DiscreteD7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD7a-h5"
+        ],
+        "title": "Answer",
+        "text": "Now that we have all of our variables, what is our final answer going to be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now that we have all of our variables, what is our final answer going to be?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Now that we have all of our variables, what is our final answer going to be? ,"
+        ]
+    }
+]

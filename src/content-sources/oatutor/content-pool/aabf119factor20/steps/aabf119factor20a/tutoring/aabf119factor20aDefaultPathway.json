@@ -1,0 +1,95 @@
+[
+    {
+        "id": "aabf119factor20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the expression",
+        "text": "Split $$-73d$$ to $$-72d$$ and $$-d$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Split  minus 73 d  to  negative 72 d,  and  negative d",
+        "math": [
+            "$$-73d$$",
+            "$$-72d$$",
+            "$$-d$$"
+        ],
+        "pacedSpeech": [
+            "Split   minus 73 d ",
+            " to   negative 72 d, ",
+            " and   negative d"
+        ]
+    },
+    {
+        "id": "aabf119factor20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9d(d-8)$$"
+        ],
+        "dependencies": [
+            "aabf119factor20a-h1"
+        ],
+        "title": "Factor the expression",
+        "text": "What is the factoring of $$9d^2-72d$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is the factoring of , 9 d squared, minus 72 d ?",
+        "math": [
+            "$$9d^2-72d$$"
+        ],
+        "pacedSpeech": [
+            "What is the factoring of  , 9 d squared, minus 72 d"
+        ]
+    },
+    {
+        "id": "aabf119factor20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1(d-8)$$"
+        ],
+        "dependencies": [
+            "aabf119factor20a-h2"
+        ],
+        "title": "Factor the expression",
+        "text": "What is the factoring of $$-d+8$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is the factoring of  minus d plus 8 ?",
+        "math": [
+            "$$-d+8$$"
+        ],
+        "pacedSpeech": [
+            "What is the factoring of   minus d plus 8"
+        ]
+    },
+    {
+        "id": "aabf119factor20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$(9d-1)(d-8)$$"
+        ],
+        "dependencies": [
+            "aabf119factor20a-h3"
+        ],
+        "title": "Factor the expression",
+        "text": "Factor out the common term of both $$d+8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Factor out the common term of both  d plus 8 .",
+        "math": [
+            "$$d+8$$"
+        ],
+        "pacedSpeech": [
+            "Factor out the common term of both   d plus 8"
+        ]
+    }
+]

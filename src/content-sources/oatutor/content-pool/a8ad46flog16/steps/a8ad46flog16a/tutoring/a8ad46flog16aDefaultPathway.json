@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a8ad46flog16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Equation for New Balance",
+        "text": "For a principal, P, invested at an interest rate, $$r$$, for $$t$$ years, the new balance, A is:\\n$$A={Pe}^{r t}$$ when compounded continuously.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For a principal, P, invested at an interest rate,  r , for  t  years, the new balance, A is:\\n   a is equal to,   p e raised to the r t power  when compounded continuously.",
+        "math": [
+            "$$r$$",
+            "$$t$$",
+            "$$A={Pe}^{r t}$$"
+        ],
+        "pacedSpeech": [
+            "For a principal, P, invested at an interest rate,   r ",
+            ", for   t ",
+            " years, the new balance, A is:    a is equal to,   p e raised to the r t power ",
+            " when compounded continuously."
+        ]
+    },
+    {
+        "id": "a8ad46flog16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog16a-h1"
+        ],
+        "title": "Subsitute the Values into Equation",
+        "text": "$$A=50000$$, $$P=10000$$, $$t=17$$. $$50000=10000e^{17r}$$. Solve for $$r$$. We get $$r=\\frac{\\ln(5)}{17}$$ which approximately equals $$0.095$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "a is equal to, 50000 ,    p, is equal to, 10000 ,  t, is equal to, 17 .  50000, is equal to 10000, e raised to the 17 r power . Solve for  r . We get  r is equal to fraction, the natural log of, 5, over 17,   which approximately equals  0.095 .",
+        "math": [
+            "$$A=50000$$",
+            "$$P=10000$$",
+            "$$t=17$$",
+            "$$50000=10000e^{17r}$$",
+            "$$r$$",
+            "$$r=\\frac{\\ln(5)}{17}$$",
+            "$$0.095$$"
+        ],
+        "pacedSpeech": [
+            "a is equal to, 50000 ",
+            ",     p, is equal to, 10000 ",
+            ",   t, is equal to, 17 ",
+            ".   50000, is equal to 10000, e raised to the 17 r power ",
+            ". Solve for   r ",
+            ". We get   r is equal to fraction, the natural log of, 5, over 17,  ",
+            " which approximately equals   0.095"
+        ]
+    }
+]

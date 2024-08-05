@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a6d440d7.3q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Probability",
+        "text": "The 95th percentile $$=$$ $$invNorm(0.95, 30.9, 1.1)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The 95th percentile  is equal to   invNorm of parentheses, 0.95 comma 30.9 comma 1.1",
+        "math": [
+            "$$=$$",
+            "$$invNorm(0.95, 30.9, 1.1)$$"
+        ],
+        "pacedSpeech": [
+            "The 95th percentile   is equal to ",
+            "   invNorm of , 0.95 comma 30.9 comma 1.1"
+        ]
+    },
+    {
+        "id": "a6d440d7.3q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6d440d7.3q14a-h1"
+        ],
+        "title": "Explanation",
+        "text": "This indicates that 95% of the prostitutes in the sample of $$65$$ are younger than $$32.7$$ years, on average.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "This indicates that 95% of the prostitutes in the sample of  65  are younger than  32.7  years, on average.",
+        "math": [
+            "$$65$$",
+            "$$32.7$$"
+        ],
+        "pacedSpeech": [
+            "This indicates that 95% of the prostitutes in the sample of   65 ",
+            " are younger than   32.7 ",
+            " years, on average."
+        ]
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a38bd54basicrules2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Independence",
+        "text": "If A and B are independent, then $$P(A|B)=P(A)$$ and P(A AND $$B)=P(A)P(B)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If A and B are independent, then    p, parentheses,   a vertical line   b,  is equal to,   p of   a,  and P(A AND    b  is equal to,   p of   a,   p of   b .",
+        "math": [
+            "$$P(A|B)=P(A)$$",
+            "$$B)=P(A)P(B)$$"
+        ],
+        "pacedSpeech": [
+            "If A and B are independent, then     p, ,   a vertical line   b,  is equal to,   p of   a, ",
+            " and P(A AND     b  is equal to,   p of   a,   p of   b"
+        ]
+    },
+    {
+        "id": "a38bd54basicrules2c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2c-h1"
+        ],
+        "title": "Application of Independence",
+        "text": "Are A and B independent events?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "Are A and B independent events?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Are A and B independent events?"
+        ]
+    },
+    {
+        "id": "a38bd54basicrules2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.585$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2c-h2"
+        ],
+        "title": "Application of Independence",
+        "text": "What is P(B AND A), solved for above?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is P(B AND A), solved for above?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is P(B AND A), solved for above?"
+        ]
+    },
+    {
+        "id": "a38bd54basicrules2c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.423$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2c-h3"
+        ],
+        "title": "Application of Independence",
+        "text": "What is $$P\\left(A\\right) P\\left(B\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is ,   p of   a,   p of   b ?",
+        "math": [
+            "$$P\\left(A\\right) P\\left(B\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,   p of   a,   p of   b"
+        ]
+    },
+    {
+        "id": "a38bd54basicrules2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2c-h4"
+        ],
+        "title": "Application of Independence",
+        "text": "Is P(A AND B) equal to $$P\\left(A\\right) P\\left(B\\right)$$? If yes, then A and B are independent; if no, then A and B are not independent.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "Is P(A AND B) equal to ,   p of   a,   p of   b ? If yes, then A and B are independent: if no, then A and B are not independent.",
+        "math": [
+            "$$P\\left(A\\right) P\\left(B\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Is P(A AND B) equal to  ,   p of   a,   p of   b ",
+            "? If yes, then A and B are independent if no, then A and B are not independent."
+        ]
+    }
+]

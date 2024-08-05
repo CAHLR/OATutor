@@ -1,0 +1,181 @@
+[
+    {
+        "id": "a5e282bSolvquad13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Quadratic Term",
+        "text": "We add $$3$$ on both sides to get $$y^2$$ by itself which gives $$\\frac{3}{4} y^2=21$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We add  3  on both sides to get  y squared  by itself which gives  3 fourths y squared is equal to 21 .",
+        "math": [
+            "$$3$$",
+            "$$y^2$$",
+            "$$\\frac{3}{4} y^2=21$$"
+        ],
+        "pacedSpeech": [
+            "We add   3 ",
+            " on both sides to get   y squared ",
+            " by itself which gives   3 fourths y squared is equal to 21"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad13a-h1"
+        ],
+        "title": "Find Leading Coefficient",
+        "text": "What's the coefficient of $$u^2$$ now?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What's the coefficient of  u squared  now?",
+        "math": [
+            "$$u^2$$"
+        ],
+        "pacedSpeech": [
+            "What's the coefficient of   u squared ",
+            " now?"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad13a-h2"
+        ],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "Divide by the leading coefficient on both sides which gives $$y^2=28$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by the leading coefficient on both sides which gives , y squared is equal to 28, .",
+        "math": [
+            "$$y^2=28$$"
+        ],
+        "pacedSpeech": [
+            "Divide by the leading coefficient on both sides which gives  , y squared is equal to 28,"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad13a-h3"
+        ],
+        "title": "Use Square root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then $$x$$ $$=$$ $$\\sqrt{k}$$, or $$x$$ $$=$$ $$-\\sqrt{k}$$, or $$x$$ $$=\\sqrt{k}$$. $$y^2=28$$, we can take square root both sides and get $$y=\\sqrt{28}$$ or $$y=-\\sqrt{28}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The square root property: if  x squared  , is equal to,  k, then  x  , is equal to   the square root of k , or  x   is equal to  , negative the square root of k , or  x   is equal to, the square root of k .  y squared is equal to 28 , we can take square root both sides and get  y, is equal to, the square root of 28  or  y is equal to, negative the square root of 28 .",
+        "math": [
+            "$$x^2$$",
+            "$$=$$",
+            "$$x$$",
+            "$$=$$",
+            "$$\\sqrt{k}$$",
+            "$$x$$",
+            "$$=$$",
+            "$$-\\sqrt{k}$$",
+            "$$x$$",
+            "$$=\\sqrt{k}$$",
+            "$$y^2=28$$",
+            "$$y=\\sqrt{28}$$",
+            "$$y=-\\sqrt{28}$$"
+        ],
+        "pacedSpeech": [
+            "The square root property: if   x squared ",
+            "  , is equal to, ",
+            " k, then   x ",
+            "  , is equal to ",
+            "   the square root of k ",
+            ", or   x ",
+            "   is equal to ",
+            "  , negative the square root of k ",
+            ", or   x ",
+            "   is equal to, the square root of k ",
+            ".   y squared is equal to 28 ",
+            ", we can take square root both sides and get   y, is equal to, the square root of 28 ",
+            " or   y is equal to, negative the square root of 28"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2\\sqrt{7}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad13a-h4"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$-\\sqrt{28}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify  minus the square root of 28 .",
+        "math": [
+            "$$-\\sqrt{28}$$"
+        ],
+        "pacedSpeech": [
+            "Simplify   minus the square root of 28"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\sqrt{7}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad13a-h5"
+        ],
+        "title": "Simplify the Radical",
+        "text": "Simplify $$\\sqrt{28}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify  the square root of 28 .",
+        "math": [
+            "$$\\sqrt{28}$$"
+        ],
+        "pacedSpeech": [
+            "Simplify   the square root of 28"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad13a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$\\frac{3}{4} y^2-3=18$$ has two solutions which are $$y=-2\\sqrt{7}$$, and $$y=2\\sqrt{7}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  3 fourths y squared, minus 3 is equal to 18  has two solutions which are  y, is equal to, negative 2 the square root of 7 , and  y is equal to, 2 the square root of 7 .",
+        "math": [
+            "$$\\frac{3}{4} y^2-3=18$$",
+            "$$y=-2\\sqrt{7}$$",
+            "$$y=2\\sqrt{7}$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   3 fourths y squared, minus 3 is equal to 18 ",
+            " has two solutions which are   y, is equal to, negative 2 the square root of 7 ",
+            ", and   y is equal to, 2 the square root of 7"
+        ]
+    }
+]

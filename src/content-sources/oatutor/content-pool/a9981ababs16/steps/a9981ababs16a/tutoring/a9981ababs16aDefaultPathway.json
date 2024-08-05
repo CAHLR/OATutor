@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a9981ababs16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute $$0$$ for $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  0  for  y .",
+        "math": [
+            "$$0$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   0 ",
+            " for   y"
+        ]
+    },
+    {
+        "id": "a9981ababs16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9981ababs16a-h1"
+        ],
+        "title": "Isolate",
+        "text": "Isolate the absolute value on one side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Isolate the absolute value on one side of the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Isolate the absolute value on one side of the equation."
+        ]
+    },
+    {
+        "id": "a9981ababs16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9981ababs16a-h2"
+        ],
+        "title": "Separate",
+        "text": "Break $$4=|x+3|$$ into two separate equations and solve.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Break  4 is equal to, the absolute value of x plus 3, end absolute value  into two separate equations and solve.",
+        "math": [
+            "$$4=|x+3|$$"
+        ],
+        "pacedSpeech": [
+            "Break   4 is equal to, the absolute value of x plus 3, end absolute value ",
+            " into two separate equations and solve."
+        ]
+    },
+    {
+        "id": "a9981ababs16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7$$"
+        ],
+        "dependencies": [
+            "a9981ababs16a-h3"
+        ],
+        "title": "Separate",
+        "text": "What do we get for $$x$$ after solving $$-4=x+3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What do we get for  x  after solving  negative 4, is equal to x plus 3 ?",
+        "math": [
+            "$$x$$",
+            "$$-4=x+3$$"
+        ],
+        "pacedSpeech": [
+            "What do we get for   x ",
+            " after solving   negative 4, is equal to x plus 3"
+        ]
+    },
+    {
+        "id": "a9981ababs16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a9981ababs16a-h4"
+        ],
+        "title": "Separate",
+        "text": "What do we get for $$x$$ after solving $$4=x+3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What do we get for , x  after solving  4, is equal to x plus 3 ?",
+        "math": [
+            "$$x$$",
+            "$$4=x+3$$"
+        ],
+        "pacedSpeech": [
+            "What do we get for  , x ",
+            " after solving   4, is equal to x plus 3"
+        ]
+    }
+]

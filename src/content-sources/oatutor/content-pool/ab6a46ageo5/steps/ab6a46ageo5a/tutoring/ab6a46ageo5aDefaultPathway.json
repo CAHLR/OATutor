@@ -1,0 +1,205 @@
+[
+    {
+        "id": "ab6a46ageo5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$a_1$$",
+        "text": "$$a_1$$ is the first term of the sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "a sub 1  is the first term of the sequence.",
+        "math": [
+            "$$a_1$$"
+        ],
+        "pacedSpeech": [
+            "a sub 1 ",
+            " is the first term of the sequence."
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo5a-h1"
+        ],
+        "title": "Find $$a_1$$",
+        "text": "What is $$a_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a sub 1 ?",
+        "math": [
+            "$$a_1$$"
+        ],
+        "pacedSpeech": [
+            "What is   a sub 1"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo5a-h2"
+        ],
+        "title": "Find $$r$$",
+        "text": "The common ratio can be found by dividing the second term by the first term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The common ratio can be found by dividing the second term by the first term.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The common ratio can be found by dividing the second term by the first term."
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo5a-h3"
+        ],
+        "title": "Find $$r$$",
+        "text": "What is $$\\frac{2}{-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , fraction, 2 over, negative 1,  ?",
+        "math": [
+            "$$\\frac{2}{-1}$$"
+        ],
+        "pacedSpeech": [
+            "What is  , fraction, 2 over, negative 1,"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo5a-h2",
+            "ab6a46ageo5a-h4"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence\\n",
+        "text": "Since $$a_1=-1$$ and $$r=-2$$, substitute $$-1$$ and $$-2$$ into the formula: $$a_n=a_1 r^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  a sub 1 is equal to, negative 1  and  r, is equal to negative 2 , substitute  negative 1  and  negative 2  into the formula:  a sub n is equal to, a sub 1, r raised to the n minus 1 power .",
+        "math": [
+            "$$a_1=-1$$",
+            "$$r=-2$$",
+            "$$-1$$",
+            "$$-2$$",
+            "$$a_n=a_1 r^{n-1}$$"
+        ],
+        "pacedSpeech": [
+            "Since   a sub 1 is equal to, negative 1 ",
+            " and   r, is equal to negative 2 ",
+            ", substitute   negative 1 ",
+            " and   negative 2 ",
+            " into the formula:   a sub n is equal to, a sub 1, r raised to the n minus 1 power"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a_n=-1-\\left(2^{n-1}\\right)$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo5a-h5"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence\\n",
+        "text": "What is the explicit formula for this geometric sequence?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the explicit formula for this geometric sequence?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the explicit formula for this geometric sequence?"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo5a-h6"
+        ],
+        "title": "Find $$a_{12}$$",
+        "text": "Since we want to find the 12th term, $$n=12$$. Substitute $$12$$ into $$a_n=-1{\\left(-2\\right)}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since we want to find the 12th term,  n is equal to, 12 . Substitute  12  into  a sub n is equal to negative 1 times parentheses negative 2  raised to the n minus 1 power .",
+        "math": [
+            "$$n=12$$",
+            "$$12$$",
+            "$$a_n=-1{\\left(-2\\right)}^{n-1}$$"
+        ],
+        "pacedSpeech": [
+            "Since we want to find the 12th term,   n is equal to, 12 ",
+            ". Substitute   12 ",
+            " into   a sub n is equal to negative 1 times  negative 2  raised to the n minus 1 power"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2048$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo5a-h7"
+        ],
+        "title": "Solve for $$a_{12}$$",
+        "text": "What is $$-1{\\left(-2\\right)}^{12-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  minus 1 times parentheses negative 2  raised to the 12 minus 1 power ?",
+        "math": [
+            "$$-1{\\left(-2\\right)}^{12-1}$$"
+        ],
+        "pacedSpeech": [
+            "What is   minus 1 times  negative 2  raised to the 12 minus 1 power"
+        ]
+    },
+    {
+        "id": "ab6a46ageo5a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo5a-h8"
+        ],
+        "title": "12th term",
+        "text": "$$a_{12}=2048$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ", a sub 12 is equal to 2048,",
+        "math": [
+            "$$a_{12}=2048$$"
+        ],
+        "pacedSpeech": [
+            ", a sub 12 is equal to 2048,"
+        ]
+    }
+]

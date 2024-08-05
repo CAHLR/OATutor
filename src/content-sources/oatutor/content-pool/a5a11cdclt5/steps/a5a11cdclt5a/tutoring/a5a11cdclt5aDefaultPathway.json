@@ -1,0 +1,260 @@
+[
+    {
+        "id": "a5a11cdclt5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "\u2211x Equation Boundaries",
+        "text": "Solve for P(1500 < \u2211x < 1800).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve for P(1500 < \u2211x < 1800).",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Solve for P(1500 < \u2211x < 1800)."
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5a11cdclt5a-h1"
+        ],
+        "title": "Normalcdf Equivalence",
+        "text": "To find P(1500 < \u2211x < 1800), use the normalcdf(lower value, upper value, mean of sums, stdev of sums) function on a calculator. To navigate normalcdf, press the 2nd key, vars, and then $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find P(1500 < \u2211x < 1800), use the normalcdf(lower value, upper value, mean of sums, stdev of sums) function on a calculator. To navigate normalcdf, press the 2nd key, vars, and then  2 .",
+        "math": [
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "To find P(1500 < \u2211x < 1800), use the normalcdf(lower value, upper value, mean of sums, stdev of sums) function on a calculator. To navigate normalcdf, press the 2nd key, vars, and then   2"
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1500$$"
+        ],
+        "dependencies": [
+            "a5a11cdclt5a-h2"
+        ],
+        "title": "Lower Value",
+        "text": "What is the lower value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the lower value?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the lower value?"
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1800$$"
+        ],
+        "dependencies": [
+            "a5a11cdclt5a-h2"
+        ],
+        "title": "Upper Value",
+        "text": "What is the upper value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the upper value?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the upper value?"
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1700$$"
+        ],
+        "dependencies": [
+            "a5a11cdclt5a-h2"
+        ],
+        "title": "Mean of Sums",
+        "text": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where $$n$$ is the sample size and \u03bc\u2093 is the mean of X?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a5a11cdclt5a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$50$$"
+                ],
+                "dependencies": [],
+                "title": "Sample Size",
+                "text": "What is $$n$$, the sample size?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5a11cdclt5a-h5-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$34$$"
+                ],
+                "dependencies": [],
+                "title": "Mean of Tablet Users",
+                "text": "What is \u03bc\u2093, the mean of X (tablet users)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5a11cdclt5a-h5-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1700$$"
+                ],
+                "dependencies": [],
+                "title": "Calculating the Mean of Sums",
+                "text": "What is (50)(34)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where  n  is the sample size and \u03bc\u2093 is the mean of X?",
+        "math": [
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            "What is the mean of sums? In other words, what is (n)(\u03bc\u2093) where   n ",
+            " is the sample size and \u03bc\u2093 is the mean of X?"
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$106.067$$"
+        ],
+        "dependencies": [
+            "a5a11cdclt5a-h2"
+        ],
+        "title": "Standard Deviation of the Sums",
+        "text": "What is the standard deviation of the sums? In other words, what is $$\\sqrt{n}$$ \u03c3\u2093 where $$n$$ is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a5a11cdclt5a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$7.071$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for sqrt(Sample Size)",
+                "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5a11cdclt5a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15$$"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of Tablet Users",
+                "text": "What is \u03c3\u2093, the standard deviation of X (tablet users)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5a11cdclt5a-h6-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$106.067$$"
+                ],
+                "dependencies": [],
+                "title": "Standard Deviation of the Sums",
+                "text": "What is $$15\\sqrt{50}$$? Round to the nearest hundredths place.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "What is the standard deviation of the sums? In other words, what is , the square root of n  \u03c3\u2093 where  n  is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place.",
+        "math": [
+            "$$\\sqrt{n}$$",
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            "What is the standard deviation of the sums? In other words, what is  , the square root of n ",
+            " \u03c3\u2093 where   n ",
+            " is the sample size and \u03c3\u2093 is the standard deviation of X (tablet users)? Round to the nearest hundredths place."
+        ]
+    },
+    {
+        "id": "a5a11cdclt5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.7974$$"
+        ],
+        "dependencies": [
+            "a5a11cdclt5a-h3",
+            "a5a11cdclt5a-h4",
+            "a5a11cdclt5a-h5",
+            "a5a11cdclt5a-h6"
+        ],
+        "title": "Plugging Into Normalcdf",
+        "text": "Using the calculator, what is normalcdf(1500, $$1800$$, (50)(34), sqrt(50)(15))? Round your answer to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the calculator, what is normalcdf(1500,  1800 , (50)(34), sqrt(50)(15))? Round your answer to four decimal places.",
+        "math": [
+            "$$1800$$"
+        ],
+        "pacedSpeech": [
+            "Using the calculator, what is normalcdf(1500,   1800 ",
+            ", (50)(34), sqrt(50)(15))? Round your answer to four decimal places."
+        ]
+    }
+]

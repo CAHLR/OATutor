@@ -1,0 +1,64 @@
+[
+    {
+        "id": "af1a2a0roots8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying Square Root",
+        "text": "$$8^2=64$$ and $${15}^2=225$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "8 squared is equal to, 64  and  15 squared, is equal to 225",
+        "math": [
+            "$$8^2=64$$",
+            "$${15}^2=225$$"
+        ],
+        "pacedSpeech": [
+            "8 squared is equal to, 64 ",
+            " and   15 squared, is equal to 225"
+        ]
+    },
+    {
+        "id": "af1a2a0roots8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "af1a2a0roots8b-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "$$8+15$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "8 plus 15",
+        "math": [
+            "$$8+15$$"
+        ],
+        "pacedSpeech": [
+            "8 plus 15"
+        ]
+    },
+    {
+        "id": "af1a2a0roots8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "af1a2a0roots8b-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the simplified expression?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the simplified expression?"
+        ]
+    }
+]

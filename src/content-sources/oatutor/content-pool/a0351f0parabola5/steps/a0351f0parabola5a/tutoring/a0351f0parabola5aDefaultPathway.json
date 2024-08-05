@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a0351f0parabola5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use focus",
+        "text": "The endpoints of the latus rectum have the same x-coordinate at the focus.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The endpoints of the latus rectum have the same x-coordinate at the focus.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The endpoints of the latus rectum have the same x-coordinate at the focus."
+        ]
+    },
+    {
+        "id": "a0351f0parabola5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(6,12)$$ and $$(6,-12)$$"
+        ],
+        "dependencies": [
+            "a0351f0parabola5a-h1"
+        ],
+        "title": "Plug in",
+        "text": "Plug $$x$$ $$=6$$ into the original equation to find the $$y$$ coordinates of the endpoints of the equation. Submit your answer as $$2$$ coordinate pairs.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(6,12)$$ and $$(6,-12)$$",
+            "$$(6,11)$$ and $$(6,-11)$$",
+            "$$(6,10)$$ and $$(6,-10)$$"
+        ],
+        "subHints": [
+            {
+                "id": "a0351f0parabola5a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Answer",
+                "text": "The answer is $$(6,12)$$ and $$(6,-12)$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "Plug  x   is equal to, 6  into the original equation to find the  y  coordinates of the endpoints of the equation. Submit your answer as  2  coordinate pairs.",
+        "math": [
+            "$$x$$",
+            "$$=6$$",
+            "$$y$$",
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "Plug   x ",
+            "   is equal to, 6 ",
+            " into the original equation to find the   y ",
+            " coordinates of the endpoints of the equation. Submit your answer as   2 ",
+            " coordinate pairs."
+        ]
+    },
+    {
+        "id": "a0351f0parabola5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0351f0parabola5a-h2"
+        ],
+        "title": "Answer",
+        "text": "Therefore, the answer is $$(6,12)$$ and $$(6,-12)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore, the answer is  times, parentheses 6 comma 12,   and , parentheses, 6 comma negative 12,  .",
+        "math": [
+            "$$(6,12)$$",
+            "$$(6,-12)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore, the answer is   times,  6 comma 12,  ",
+            " and  , , 6 comma negative 12,"
+        ]
+    }
+]

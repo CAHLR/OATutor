@@ -1,0 +1,178 @@
+[
+    {
+        "id": "a046eedintegrals5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Let $$u=2x$$ so $$du=2dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Let  u is equal to, 2 x  so  d u is equal to, 2 d x",
+        "math": [
+            "$$u=2x$$",
+            "$$du=2dx$$"
+        ],
+        "pacedSpeech": [
+            "Let   u is equal to, 2 x ",
+            " so   d u is equal to, 2 d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals5a-h1"
+        ],
+        "title": "Change the limits",
+        "text": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from $$x$$ to u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from  x  to u.",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from   x ",
+            " to u."
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a046eedintegrals5a-h2"
+        ],
+        "title": "New lower limit",
+        "text": "What is the new lower limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a046eedintegrals5a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New lower limit",
+                "text": "Using $$u=2x$$ in the first hint, we have $$u=2\\times0=0$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ],
+        "speech": "What is the new lower limit in term of u?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the new lower limit in term of u?"
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a046eedintegrals5a-h3"
+        ],
+        "title": "New upper limit",
+        "text": "What is the new upper limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a046eedintegrals5a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New upper limit",
+                "text": "Using $$u=2x$$ in the first hint, we have $$u=2\\times2=4$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ],
+        "speech": "What is the new upper limit in term of u?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the new upper limit in term of u?"
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals5a-h4"
+        ],
+        "title": "New integral expression",
+        "text": "The new integral with a variable of u will be $$\\int e^u \\,du$$ as the limit goes from $$u=0$$ to $$u=4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The new integral with a variable of u will be  the integral of e to the u-th d u,  as the limit goes from  u is equal to 0  to  u, is equal to 4",
+        "math": [
+            "$$\\int e^u \\,du$$",
+            "$$u=0$$",
+            "$$u=4$$"
+        ],
+        "pacedSpeech": [
+            "The new integral with a variable of u will be   the integral of e to the u-th d u, ",
+            " as the limit goes from   u is equal to 0 ",
+            " to   u, is equal to 4"
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals5a-h5"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int e^u \\,du=e^u$$ as the limit goes from $$u=0$$ to $$u=4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral of e to the u-th d u is equal to, e to the u-th  as the limit goes from  u, is equal to 0  to  u, is equal to 4",
+        "math": [
+            "$$\\int e^u \\,du=e^u$$",
+            "$$u=0$$",
+            "$$u=4$$"
+        ],
+        "pacedSpeech": [
+            "the integral of e to the u-th d u is equal to, e to the u-th ",
+            " as the limit goes from   u, is equal to 0 ",
+            " to   u, is equal to 4"
+        ]
+    },
+    {
+        "id": "a046eedintegrals5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals5a-h6"
+        ],
+        "title": "Evaluate the integral",
+        "text": "$$e^4-e^0=e^4-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "e to the fourth minus e to the 0 is equal to, e to the fourth minus 1",
+        "math": [
+            "$$e^4-e^0=e^4-1$$"
+        ],
+        "pacedSpeech": [
+            "e to the fourth minus e to the 0 is equal to, e to the fourth minus 1"
+        ]
+    }
+]

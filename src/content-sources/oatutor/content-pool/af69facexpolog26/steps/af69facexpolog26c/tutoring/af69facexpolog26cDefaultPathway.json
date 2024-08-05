@@ -1,0 +1,117 @@
+[
+    {
+        "id": "af69facexpolog26c-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2A_0$$"
+        ],
+        "dependencies": [],
+        "title": "Population Count",
+        "text": "The population doubles when $$y$$ is equal to? Express in terms of $$A_0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The population doubles when , y  is equal to? Express in terms of    a sub 0, .",
+        "math": [
+            "$$y$$",
+            "$$A_0$$"
+        ],
+        "pacedSpeech": [
+            "The population doubles when  , y ",
+            " is equal to? Express in terms of     a sub 0,"
+        ]
+    },
+    {
+        "id": "af69facexpolog26c-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog26c-h1"
+        ],
+        "title": "Doubling Time",
+        "text": "We can substitute $$y=2A_0$$ and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can substitute  y is equal to, 2   a sub 0,  and solve for  t .",
+        "math": [
+            "$$y=2A_0$$",
+            "$$t$$"
+        ],
+        "pacedSpeech": [
+            "We can substitute   y is equal to, 2   a sub 0, ",
+            " and solve for   t"
+        ]
+    },
+    {
+        "id": "af69facexpolog26c-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog26c-h2"
+        ],
+        "title": "Doubling Time",
+        "text": "Divide by $$A_0$$ on both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by    a sub 0  on both sides.",
+        "math": [
+            "$$A_0$$"
+        ],
+        "pacedSpeech": [
+            "Divide by     a sub 0 ",
+            " on both sides."
+        ]
+    },
+    {
+        "id": "af69facexpolog26c-h4",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog26c-h3"
+        ],
+        "title": "Doubling Time",
+        "text": "Take natural log on both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Take natural log on both sides.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Take natural log on both sides."
+        ]
+    },
+    {
+        "id": "af69facexpolog26c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "af69facexpolog26c-h4"
+        ],
+        "title": "Doubling Time",
+        "text": "Divide by k on both sides. This should have isolated $$t$$. Substitute $$A_0$$ and k that was previously found to solve for $$t$$. What is $$t$$? Round to the nearest minute",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by k on both sides. This should have isolated  t . Substitute    a sub 0  and k that was previously found to solve for  t . What is  t ? Round to the nearest minute",
+        "math": [
+            "$$t$$",
+            "$$A_0$$",
+            "$$t$$",
+            "$$t$$"
+        ],
+        "pacedSpeech": [
+            "Divide by k on both sides. This should have isolated   t ",
+            ". Substitute     a sub 0 ",
+            " and k that was previously found to solve for   t ",
+            ". What is   t ",
+            "? Round to the nearest minute"
+        ]
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a7b98f9composition23b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Composition",
+        "text": "Remember that to solve g(f(x)), we need to plug in the value of f(x) into the value of $$x$$ in g(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that to solve g(f(x)), we need to plug in the value of f(x) into the value of  x  in g(x).",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Remember that to solve g(f(x)), we need to plug in the value of f(x) into the value of   x ",
+            " in g(x)."
+        ]
+    },
+    {
+        "id": "a7b98f9composition23b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition23b-h1"
+        ],
+        "title": "Composition",
+        "text": "We need to plug in f(x), or $$x^2+1$$, for the $$x$$ in the function f: $$\\sqrt{x^2+1+2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We need to plug in f(x), or  x squared plus 1 , for the  x  in the function f: , the square root of x squared plus 1 plus 2 end root .",
+        "math": [
+            "$$x^2+1$$",
+            "$$x$$",
+            "$$\\sqrt{x^2+1+2}$$"
+        ],
+        "pacedSpeech": [
+            "We need to plug in f(x), or   x squared plus 1 ",
+            ", for the   x ",
+            " in the function f:  , the square root of x squared plus 1 plus 2 end root"
+        ]
+    },
+    {
+        "id": "a7b98f9composition23b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition23b-h2"
+        ],
+        "title": "Addition",
+        "text": "We need to add the constants: $$\\sqrt{x^2+2+1}=\\sqrt{x^2+3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We need to add the constants:  the square root of x squared plus 2 plus 1 end root is equal to, the square root of x squared plus 3 end root .",
+        "math": [
+            "$$\\sqrt{x^2+2+1}=\\sqrt{x^2+3}$$"
+        ],
+        "pacedSpeech": [
+            "We need to add the constants:   the square root of x squared plus 2 plus 1 end root is equal to, the square root of x squared plus 3 end root"
+        ]
+    }
+]

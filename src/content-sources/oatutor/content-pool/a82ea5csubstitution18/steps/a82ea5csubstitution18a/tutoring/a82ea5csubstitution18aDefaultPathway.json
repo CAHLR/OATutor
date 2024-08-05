@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a82ea5csubstitution18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Let $$u=1+t^3$$, so $$du=2t^2 dt$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Let  u is equal to, 1 plus, t cubed , so  d u is equal to, 2 t squared d t .",
+        "math": [
+            "$$u=1+t^3$$",
+            "$$du=2t^2 dt$$"
+        ],
+        "pacedSpeech": [
+            "Let   u is equal to, 1 plus, t cubed ",
+            ", so   d u is equal to, 2 t squared d t"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution18a-h1"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "To adjust the limits of integration, we note that when $$t=0$$, $$u=1+0^3$$, and when $$t=1$$, $$u=1+1^3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "To adjust the limits of integration, we note that when  t is equal to 0 ,  u, is equal to, 1 plus 0 cubed , and when  t is equal to 1 ,  u, is equal to, 1 plus 1 cubed .",
+        "math": [
+            "$$t=0$$",
+            "$$u=1+0^3$$",
+            "$$t=1$$",
+            "$$u=1+1^3$$"
+        ],
+        "pacedSpeech": [
+            "To adjust the limits of integration, we note that when   t is equal to 0 ",
+            ",   u, is equal to, 1 plus 0 cubed ",
+            ", and when   t is equal to 1 ",
+            ",   u, is equal to, 1 plus 1 cubed"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution18a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/3*\\int 12u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution18a-h2"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "What is the result of adjusting the limits of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1/3*\\int 12u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$1/3*\\int 21u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int 12u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int 21u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ],
+        "speech": "What is the result of adjusting the limits of integration?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the result of adjusting the limits of integration?"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution18a-h3"
+        ],
+        "title": "Evaluate the Definite Integral",
+        "text": "Evaluate the definite integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Evaluate the definite integral.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Evaluate the definite integral."
+        ]
+    }
+]

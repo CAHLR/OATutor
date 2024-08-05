@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a394625deriv18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Write sec(x) as sin(x) and cos(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Write sec(x) as sin(x) and cos(x)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Write sec(x) as sin(x) and cos(x)"
+        ]
+    },
+    {
+        "id": "a394625deriv18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}cos^$\\left(x\\righ$$"
+        ],
+        "dependencies": [
+            "a394625deriv18a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's sec(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{cosx}$$",
+            "$$\\frac{1}sin^$\\left(x\\righ$$",
+            "$$\\frac{1}tan^$\\left(x\\righ$$"
+        ],
+        "speech": "What's sec(x)?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What's sec(x)?"
+        ]
+    },
+    {
+        "id": "a394625deriv18a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-sin(x)$$"
+        ],
+        "dependencies": [
+            "a394625deriv18a-h2"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of cos(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "sin(x)",
+            "$$-sin(x)$$"
+        ],
+        "speech": "What's the derivative of cos(x)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What's the derivative of cos(x)"
+        ]
+    },
+    {
+        "id": "a394625deriv18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{sin^2\\left(x\\right)}cos^$\\left(x\\righ$$"
+        ],
+        "dependencies": [
+            "a394625deriv18a-h3"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of $$\\frac{1}cos^$\\left(x\\righ$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{-sin\\left(x\\right)}cos^$\\left(x\\righ$$",
+            "$$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$",
+            "$$\\frac{sin^2\\left(x\\right)}cos^$\\left(x\\righ$$"
+        ],
+        "speech": "What's the derivative of , fraction, 1 over, cosine of x,",
+        "math": [
+            "$$\\frac{1}cos^$\\left(x\\righ$$"
+        ],
+        "pacedSpeech": [
+            "What's the derivative of  , fraction, 1 over, cosine of x,"
+        ]
+    },
+    {
+        "id": "a394625deriv18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a394625deriv18a-h4"
+        ],
+        "title": "Change Representations",
+        "text": "Change sin and cos to tan and sec",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Change sin and cos to tan and sec",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Change sin and cos to tan and sec"
+        ]
+    }
+]

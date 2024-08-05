@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a7b98f9composition19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subtraction",
+        "text": "Remember that f-g is the same as $$(f-g)(x)$$. All we have to do is subtract the two functions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  times x . All we have to do is subtract the two functions.",
+        "math": [
+            "$$(f-g)(x)$$"
+        ],
+        "pacedSpeech": [
+            "Remember that f-g is the same as   times,  f minus g,  times x ",
+            ". All we have to do is subtract the two functions."
+        ]
+    },
+    {
+        "id": "a7b98f9composition19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19b-h1"
+        ],
+        "title": "Subtraction",
+        "text": "Again, because these functions are fractions, we need to find a common denominator. Our common denominator is still $$(x-4)(6-x)$$. Just like in the addition step, we need to multiply the fractions by a factor of $$1$$ to get them to have the common denominator. We are left with(6-x)/((x-4)(6-x) and (x-4)/((x-4)(6-x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Again, because these functions are fractions, we need to find a common denominator. Our common denominator is still  times, parentheses x minus 4,  times, parentheses 6 minus x,  . Just like in the addition step, we need to multiply the fractions by a factor of  1  to get them to have the common denominator. We are left with(6-x)/((x-4)(6-x) and (x-4)/((x-4)(6-x).",
+        "math": [
+            "$$(x-4)(6-x)$$",
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "Again, because these functions are fractions, we need to find a common denominator. Our common denominator is still   times,  x minus 4,  times,  6 minus x,  ",
+            ". Just like in the addition step, we need to multiply the fractions by a factor of   1 ",
+            " to get them to have the common denominator. We are left with(6-x)/((x-4)(6-x) and (x-4)/((x-4)(6-x)."
+        ]
+    },
+    {
+        "id": "a7b98f9composition19b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19b-h2"
+        ],
+        "title": "Subtraction",
+        "text": "Our last step is to add the numerators. By subtracting the $$x$$ terms and the constants, $$\\frac{6-x-x-4}{\\left(x-4\\right) \\left(6-x\\right)}$$ becomes our final solution: $$\\frac{10-2x}{\\left(x-4\\right) \\left(6-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Our last step is to add the numerators. By subtracting the  x  terms and the constants,  fraction, 6 minus x minus x minus 4, over, parentheses x minus 4,  times, parentheses 6 minus x, ,   becomes our final solution:  fraction, 10 minus 2 x, over, parentheses x minus 4,  times, parentheses 6 minus x, ,  .",
+        "math": [
+            "$$x$$",
+            "$$\\frac{6-x-x-4}{\\left(x-4\\right) \\left(6-x\\right)}$$",
+            "$$\\frac{10-2x}{\\left(x-4\\right) \\left(6-x\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Our last step is to add the numerators. By subtracting the   x ",
+            " terms and the constants,   fraction, 6 minus x minus x minus 4, over,  x minus 4,  times,  6 minus x, ,  ",
+            " becomes our final solution:   fraction, 10 minus 2 x, over,  x minus 4,  times,  6 minus x, ,"
+        ]
+    }
+]

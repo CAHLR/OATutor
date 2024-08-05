@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a7b98f9composition21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division",
+        "text": "Remember that $$\\frac{g}{f}$$ is the same as $$\\frac{g}{f} x$$. All we have to do is divide the two functions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that , g over f,  is the same as  g over f, x . All we have to do is divide the two functions.",
+        "math": [
+            "$$\\frac{g}{f}$$",
+            "$$\\frac{g}{f} x$$"
+        ],
+        "pacedSpeech": [
+            "Remember that  , g over f, ",
+            " is the same as   g over f, x ",
+            ". All we have to do is divide the two functions."
+        ]
+    },
+    {
+        "id": "a7b98f9composition21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition21a-h1"
+        ],
+        "title": "Division",
+        "text": "Let's write the quotient of these functions as a fraction: $$\\frac{|x-3|}{\\sqrt{x}}$$. Because the bottom of the function is a square root, we need to rationalize the function by getting rid of the square root in the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let's write the quotient of these functions as a fraction:  fraction, the absolute value of x minus 3, end absolute value over, the square root of x  . Because the bottom of the function is a square root, we need to rationalize the function by getting rid of the square root in the denominator.",
+        "math": [
+            "$$\\frac{|x-3|}{\\sqrt{x}}$$"
+        ],
+        "pacedSpeech": [
+            "Let's write the quotient of these functions as a fraction:   fraction, the absolute value of x minus 3, end absolute value over, the square root of x  ",
+            ". Because the bottom of the function is a square root, we need to rationalize the function by getting rid of the square root in the denominator."
+        ]
+    },
+    {
+        "id": "a7b98f9composition21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition21a-h2"
+        ],
+        "title": "Rationalization",
+        "text": "To do this, we need to square $$\\sqrt{x}$$ so that the denominator doesn't have a square root. So, we have to multiply $$\\frac{|x-3|}{\\sqrt{x}}$$ by $$\\frac{\\sqrt{x}}{\\sqrt{x}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To do this, we need to square  the square root of x  so that the denominator doesn't have a square root. So, we have to multiply  fraction, the absolute value of x minus 3, end absolute value over, the square root of x   by  fraction, the square root of x over, the square root of x  .",
+        "math": [
+            "$$\\sqrt{x}$$",
+            "$$\\frac{|x-3|}{\\sqrt{x}}$$",
+            "$$\\frac{\\sqrt{x}}{\\sqrt{x}}$$"
+        ],
+        "pacedSpeech": [
+            "To do this, we need to square   the square root of x ",
+            " so that the denominator doesn't have a square root. So, we have to multiply   fraction, the absolute value of x minus 3, end absolute value over, the square root of x  ",
+            " by   fraction, the square root of x over, the square root of x"
+        ]
+    },
+    {
+        "id": "a7b98f9composition21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition21a-h3"
+        ],
+        "title": "Multiplication",
+        "text": "Since there is no way to simplify the product of $$\\sqrt{x} |x-3|$$, this leaves us with $$\\frac{\\sqrt{x} |x-3|}{x}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since there is no way to simplify the product of  the square root of x, the absolute value of x minus 3, end absolute value , this leaves us with  fraction, the square root of x, the absolute value of x minus 3, end absolute value over x,  .",
+        "math": [
+            "$$\\sqrt{x} |x-3|$$",
+            "$$\\frac{\\sqrt{x} |x-3|}{x}$$"
+        ],
+        "pacedSpeech": [
+            "Since there is no way to simplify the product of   the square root of x, the absolute value of x minus 3, end absolute value ",
+            ", this leaves us with   fraction, the square root of x, the absolute value of x minus 3, end absolute value over x,"
+        ]
+    }
+]

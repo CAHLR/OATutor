@@ -1,0 +1,54 @@
+[
+    {
+        "id": "aa97d5brate4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\frac{Equation}{Substitute}$$",
+        "text": "The equation for calculuating the rate of change is $$\\frac{f{\\left(x_1\\right)}-f{\\left(x_2\\right)}}{x_1-x_2}$$. So to find the answer, we can start by plugging in $$x+h$$ for $$x_1$$ and $$x$$ for $$x_2$$, and we get the expression $$\\frac{{3\\left(x+h\\right)}^2-2-3x^2-2}{x+h-x}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The equation for calculuating the rate of change is  fraction, f of, parentheses x sub 1  minus, f of, parentheses x sub 2 , over, x sub 1 minus x sub 2,  . So to find the answer, we can start by plugging in  x plus h  for  x sub 1  and  x  for  x sub 2 , and we get the expression  fraction, 3 times, parentheses x plus h,  squared minus 2 minus 3 x squared, minus 2, over, x plus h minus x,  .",
+        "math": [
+            "$$\\frac{f{\\left(x_1\\right)}-f{\\left(x_2\\right)}}{x_1-x_2}$$",
+            "$$x+h$$",
+            "$$x_1$$",
+            "$$x$$",
+            "$$x_2$$",
+            "$$\\frac{{3\\left(x+h\\right)}^2-2-3x^2-2}{x+h-x}$$"
+        ],
+        "pacedSpeech": [
+            "The equation for calculuating the rate of change is   fraction, f of,  x sub 1  minus, f of,  x sub 2 , over, x sub 1 minus x sub 2,  ",
+            ". So to find the answer, we can start by plugging in   x plus h ",
+            " for   x sub 1 ",
+            " and   x ",
+            " for   x sub 2 ",
+            ", and we get the expression   fraction, 3 times,  x plus h,  squared minus 2 minus 3 x squared, minus 2, over, x plus h minus x,"
+        ]
+    },
+    {
+        "id": "aa97d5brate4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6x+3h$$"
+        ],
+        "dependencies": [
+            "aa97d5brate4a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression $$\\frac{{3\\left(x+h\\right)}^2-2-3x^2-2}{x+h-x}$$. What do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the expression  fraction, 3 times, parentheses x plus h,  squared minus 2 minus 3 x squared, minus 2, over, x plus h minus x,  . What do you get?",
+        "math": [
+            "$$\\frac{{3\\left(x+h\\right)}^2-2-3x^2-2}{x+h-x}$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the expression   fraction, 3 times,  x plus h,  squared minus 2 minus 3 x squared, minus 2, over, x plus h minus x,  ",
+            ". What do you get?"
+        ]
+    }
+]

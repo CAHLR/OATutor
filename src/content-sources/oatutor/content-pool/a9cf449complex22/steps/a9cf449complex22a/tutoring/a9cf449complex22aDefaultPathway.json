@@ -1,0 +1,205 @@
+[
+    {
+        "id": "a9cf449complex22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying $$i^2$$ using $$i^4$$",
+        "text": "Simplify the problem by factoring out as many factors of $$i^4$$ as possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the problem by factoring out as many factors of  i to the fourth  as possible.",
+        "math": [
+            "$$i^4$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the problem by factoring out as many factors of   i to the fourth ",
+            " as possible."
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex22a-h1"
+        ],
+        "title": "Simplifying $$i^2$$ using $$i^4$$",
+        "text": "Determine how many times $$4$$ goes into $$22$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine how many times  4  goes into  22, .",
+        "math": [
+            "$$4$$",
+            "$$22$$"
+        ],
+        "pacedSpeech": [
+            "Determine how many times   4 ",
+            " goes into   22,"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h2"
+        ],
+        "title": "Division",
+        "text": "How many times does $$4$$ fully go into 22?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "How many times does  4  fully go into 22?",
+        "math": [
+            "$$4$$"
+        ],
+        "pacedSpeech": [
+            "How many times does   4 ",
+            " fully go into 22?"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h3"
+        ],
+        "title": "Division",
+        "text": "What is the remainder for $$\\frac{22}{4}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the remainder for  22 over 4, ?",
+        "math": [
+            "$$\\frac{22}{4}$$"
+        ],
+        "pacedSpeech": [
+            "What is the remainder for   22 over 4,"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex22a-h4"
+        ],
+        "title": "Writing Expressions",
+        "text": "Rewrite the expression as $${\\left(i^4\\right)}^5 i^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Rewrite the expression as  parentheses i to the fourth  to the fifth i squared .",
+        "math": [
+            "$${\\left(i^4\\right)}^5 i^2$$"
+        ],
+        "pacedSpeech": [
+            "Rewrite the expression as    i to the fourth  to the fifth i squared"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h5"
+        ],
+        "title": "Evaluate $$i^4$$",
+        "text": "What is $$i^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  i to the fourth ?",
+        "math": [
+            "$$i^4$$"
+        ],
+        "pacedSpeech": [
+            "What is   i to the fourth"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h6"
+        ],
+        "title": "Exponents",
+        "text": "What is $$1^{25}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  1 to the twenty fifth, ?",
+        "math": [
+            "$$1^{25}$$"
+        ],
+        "pacedSpeech": [
+            "What is   1 to the twenty fifth,"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h7"
+        ],
+        "title": "Evaluate $$i^2$$",
+        "text": "What is $$i^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  i squared ?",
+        "math": [
+            "$$i^2$$"
+        ],
+        "pacedSpeech": [
+            "What is   i squared"
+        ]
+    },
+    {
+        "id": "a9cf449complex22a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a9cf449complex22a-h8"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$(1)(-1)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  times 1 times negative 1 ?",
+        "math": [
+            "$$(1)(-1)$$"
+        ],
+        "pacedSpeech": [
+            "What is   times 1 times negative 1"
+        ]
+    }
+]

@@ -1,0 +1,579 @@
+[
+    {
+        "id": "a79dde1funccomp10ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$\\frac{f}{g}$$",
+        "text": "$$\\frac{f}{g}$$ is the same as saying $$\\frac{f{\\left(x\\right)}}{g{\\left(x\\right)}}=\\frac{\\sqrt{2x+1}}{3x-1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "f over g,  is the same as saying , fraction, f of x, over, g of x,  is equal to fraction, the square root of 2 x plus 1 end root over, 3 x minus 1,",
+        "math": [
+            "$$\\frac{f}{g}$$",
+            "$$\\frac{f{\\left(x\\right)}}{g{\\left(x\\right)}}=\\frac{\\sqrt{2x+1}}{3x-1}$$"
+        ],
+        "pacedSpeech": [
+            "f over g, ",
+            " is the same as saying  , fraction, f of x, over, g of x,  is equal to fraction, the square root of 2 x plus 1 end root over, 3 x minus 1,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cannot take the square root of negatives"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h1"
+        ],
+        "title": "Restrictions of f",
+        "text": "Are there any restrictions to the domain for the function $$f(x)=\\sqrt{2x+1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Cannot take the square root of negatives",
+            "No restrictions",
+            "Can only take the square root of positives",
+            "Cannot be any number"
+        ],
+        "subHints": [
+            {
+                "id": "a79dde1funccomp10ca-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounds of the Square Root",
+                "text": "For some a, $$\\sqrt{a}$$ if and only if a $$\\geq$$ $$0$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ],
+        "speech": "Are there any restrictions to the domain for the function  f of x is equal to, the square root of 2 x plus 1 end root ?",
+        "math": [
+            "$$f(x)=\\sqrt{2x+1}$$"
+        ],
+        "pacedSpeech": [
+            "Are there any restrictions to the domain for the function   f of x is equal to, the square root of 2 x plus 1 end root"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x+1$$ $$\\geq$$ $$0$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h2"
+        ],
+        "title": "Restrictions of f",
+        "text": "Which inequality represents the restriction placed on $$f(x)=\\sqrt{2x+1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x+1$$ $$\\geq$$ $$0$$",
+            "$$2x+1$$ $$\\leq$$ $$0$$",
+            "$$2x+1$$ $$>$$ $$0$$",
+            "$$2x+1$$ $$<$$ $$0$$"
+        ],
+        "speech": "Which inequality represents the restriction placed on  f of x is equal to, the square root of 2 x plus 1 end root ?",
+        "math": [
+            "$$f(x)=\\sqrt{2x+1}$$"
+        ],
+        "pacedSpeech": [
+            "Which inequality represents the restriction placed on   f of x is equal to, the square root of 2 x plus 1 end root"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h4",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h3"
+        ],
+        "title": "Restrictions of f",
+        "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h5",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h4"
+        ],
+        "title": "Restrictions of f",
+        "text": "Subtract $$1$$ from the left to get $$2x$$ $$\\geq$$ $$0-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Subtract  1  from the left to get  2 x   is greater than or equal to,   0 minus 1 .",
+        "math": [
+            "$$1$$",
+            "$$2x$$",
+            "$$\\geq$$",
+            "$$0-1$$"
+        ],
+        "pacedSpeech": [
+            "Subtract   1 ",
+            " from the left to get   2 x ",
+            "   is greater than or equal to, ",
+            "   0 minus 1"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h5"
+        ],
+        "title": "Restrictions of f",
+        "text": "What is $$0-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  0 minus 1, ?",
+        "math": [
+            "$$0-1$$"
+        ],
+        "pacedSpeech": [
+            "What is   0 minus 1,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h7",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h6"
+        ],
+        "title": "Restrictions of f",
+        "text": "Divide $$2$$ from both sides of $$2x$$ $$\\geq$$ $$-1$$ to isolate 'x'.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Divide  2  from both sides of  2 x   is greater than or equal to,   negative 1  to isolate 'x'.",
+        "math": [
+            "$$2$$",
+            "$$2x$$",
+            "$$\\geq$$",
+            "$$-1$$"
+        ],
+        "pacedSpeech": [
+            "Divide   2 ",
+            " from both sides of   2 x ",
+            "   is greater than or equal to, ",
+            "   negative 1 ",
+            " to isolate 'x'."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h8",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h7"
+        ],
+        "title": "Restrictions of f",
+        "text": "The inequality $$x$$ $$\\geq$$ $$\\frac{-1}{2}$$ can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The inequality  x  , is greater than or equal to  , fraction, negative 1, over 2,   can be written in interval notation by specifying the lower bound first, followed by the upper bound.",
+        "math": [
+            "$$x$$",
+            "$$\\geq$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "The inequality   x ",
+            "  , is greater than or equal to ",
+            "  , fraction, negative 1, over 2,  ",
+            " can be written in interval notation by specifying the lower bound first, followed by the upper bound."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h8"
+        ],
+        "title": "Restrictions of f",
+        "text": "What is the lower bound of the inequality $$x$$ $$\\geq$$ $$\\frac{-1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1}{2}$$",
+            "$$-\\infty$$"
+        ],
+        "speech": "What is the lower bound of the inequality  x  , is greater than or equal to  , fraction, negative 1, over 2,  ?",
+        "math": [
+            "$$x$$",
+            "$$\\geq$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "What is the lower bound of the inequality   x ",
+            "  , is greater than or equal to ",
+            "  , fraction, negative 1, over 2,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\infty$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h8"
+        ],
+        "title": "Restrictions of f",
+        "text": "These questions are challenging, requiring mastery of each concept and their interrelations. Let f and g be decreasing functions. Show, directly from the definition, that f $$\\circ$$ g is increasing.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1}{2}$$",
+            "$$\\infty$$"
+        ],
+        "speech": "These questions are challenging, requiring mastery of each concept and their interrelations. Let f and g be decreasing functions. Show, directly from the definition, that f  composed with  g is increasing.",
+        "math": [
+            "$$\\circ$$"
+        ],
+        "pacedSpeech": [
+            "These questions are challenging, requiring mastery of each concept and their interrelations. Let f and g be decreasing functions. Show, directly from the definition, that f   composed with ",
+            " g is increasing."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h11",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h9",
+            "a79dde1funccomp10ca-h10"
+        ],
+        "title": "Restrictions of f",
+        "text": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\").",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "If the bound itself should be included as a valid answer of 'x', meaning it can be equal to that value, then a bracket (\"[\" or \"]\") should be used. Otherwise, use a paranthesis (\"(\" or \")\")."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h11"
+        ],
+        "title": "Restrictions of f",
+        "text": "Is the lower bound $$\\frac{-1}{2}$$ included as a valid value of 'x' in $$x$$ $$\\geq$$ $$\\frac{-1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "Is the lower bound  fraction, negative 1, over 2,   included as a valid value of 'x' in  x   is greater than or equal to  , fraction, negative 1, over 2,  ?",
+        "math": [
+            "$$\\frac{-1}{2}$$",
+            "$$x$$",
+            "$$\\geq$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Is the lower bound   fraction, negative 1, over 2,  ",
+            " included as a valid value of 'x' in   x ",
+            "   is greater than or equal to ",
+            "  , fraction, negative 1, over 2,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h11"
+        ],
+        "title": "Restrictions of f",
+        "text": "Is the upper bound $$\\infty$$ included as a valid value of 'x' in $$x$$ $$\\geq$$ $$\\frac{-1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a79dde1funccomp10ca-h13-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Infinity in Interval Notation",
+                "text": "As $$\\infty$$ is not a number, it cannot be included as part of a valid value or bound for 'x'.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ],
+        "speech": "Is the upper bound  infinity  included as a valid value of 'x' in  x   is greater than or equal to  , fraction, negative 1, over 2,  ?",
+        "math": [
+            "$$\\infty$$",
+            "$$x$$",
+            "$$\\geq$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Is the upper bound   infinity ",
+            " included as a valid value of 'x' in   x ",
+            "   is greater than or equal to ",
+            "  , fraction, negative 1, over 2,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cannot be $$0$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h12",
+            "a79dde1funccomp10ca-h13"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "Are there any restrictions to the domain for the function $$\\frac{1}{g{\\left(x\\right)}}=\\frac{1}{3x-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Cannot be a negative number",
+            "No restrictions",
+            "Cannot be $$0$$",
+            "Cannot be any number"
+        ],
+        "subHints": [
+            {
+                "id": "a79dde1funccomp10ca-h14-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounds of a Reciprocal",
+                "text": "For some a, $$\\frac{1}{a}$$ if and only if a $$\\neq$$ $$0$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ],
+        "speech": "Are there any restrictions to the domain for the function  fraction, 1 over, g of x,  is equal to fraction, 1 over, 3 x minus 1,  ?",
+        "math": [
+            "$$\\frac{1}{g{\\left(x\\right)}}=\\frac{1}{3x-1}$$"
+        ],
+        "pacedSpeech": [
+            "Are there any restrictions to the domain for the function   fraction, 1 over, g of x,  is equal to fraction, 1 over, 3 x minus 1,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x-1 \\neq 0$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h14"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "Which inequality represents the restriction placed on $$\\frac{1}{g{\\left(x\\right)}}=\\frac{1}{3x-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$3x-1 \\neq 0$$",
+            "$$3x-1=0$$",
+            "$$3x-1$$ $$\\geq$$ $$0$$",
+            "$$3x-1$$ $$\\leq$$ $$0$$"
+        ],
+        "speech": "Which inequality represents the restriction placed on  fraction, 1 over, g of x,  is equal to fraction, 1 over, 3 x minus 1,  ?",
+        "math": [
+            "$$\\frac{1}{g{\\left(x\\right)}}=\\frac{1}{3x-1}$$"
+        ],
+        "pacedSpeech": [
+            "Which inequality represents the restriction placed on   fraction, 1 over, g of x,  is equal to fraction, 1 over, 3 x minus 1,"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h16",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h15"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Rearrange the inequality such that all the 'x's are on one side and the constants are on the other."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h17",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h16"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "Add $$1$$ from the left to get $$3x$$ not equal to $$0+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add  1  from the left to get  3 x  not equal to  0 plus 1 .",
+        "math": [
+            "$$1$$",
+            "$$3x$$",
+            "$$0+1$$"
+        ],
+        "pacedSpeech": [
+            "Add   1 ",
+            " from the left to get   3 x ",
+            " not equal to   0 plus 1"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h18",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp10ca-h17"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "What is $$0+1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  0 plus 1 ?",
+        "math": [
+            "$$0+1$$"
+        ],
+        "pacedSpeech": [
+            "What is   0 plus 1"
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h19",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h18"
+        ],
+        "title": "Restrictions of $$\\frac{1}{g}$$",
+        "text": "Divide $$3$$ from both sides of $$3x \\neq 1$$ to isolate 'x'.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Divide , 3  from both sides of  3 x, is not equal to 1  to isolate 'x'.",
+        "math": [
+            "$$3$$",
+            "$$3x \\neq 1$$"
+        ],
+        "pacedSpeech": [
+            "Divide  , 3 ",
+            " from both sides of   3 x, is not equal to 1 ",
+            " to isolate 'x'."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h20",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h19"
+        ],
+        "title": "Restrictions of $$\\frac{f}{g}$$",
+        "text": "Since f's domain is $$[\\frac{-1}{2},\\infty)$$ and g's domain is $$x \\neq \\frac{1}{3}$$, the final domain will be where both statements are true.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Since f's domain is  the closed open interval from fraction, negative 1, over 2,  to infinity  and g's domain is  x is not equal to 1 third , the final domain will be where both statements are true.",
+        "math": [
+            "$$[\\frac{-1}{2},\\infty)$$",
+            "$$x \\neq \\frac{1}{3}$$"
+        ],
+        "pacedSpeech": [
+            "Since f's domain is   the closed open interval from fraction, negative 1, over 2,  to infinity ",
+            " and g's domain is   x is not equal to 1 third ",
+            ", the final domain will be where both statements are true."
+        ]
+    },
+    {
+        "id": "a79dde1funccomp10ca-h21",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp10ca-h20"
+        ],
+        "title": "Restrictions of $$\\frac{f}{g}$$",
+        "text": "For some interval [a,b] where c is between a and $$b$$, if $$x \\neq c$$, then the interval would be [a,c) $$\\cup$$ (c,b].",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "For some interval [a,b] where c is between a and  b , if  x, is not equal to, c , then the interval would be [a,c)  union  (c,b].",
+        "math": [
+            "$$b$$",
+            "$$x \\neq c$$",
+            "$$\\cup$$"
+        ],
+        "pacedSpeech": [
+            "For some interval [a,b] where c is between a and   b ",
+            ", if   x, is not equal to, c ",
+            ", then the interval would be [a,c)   union ",
+            " (c,b]."
+        ]
+    }
+]

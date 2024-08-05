@@ -1,0 +1,91 @@
+[
+    {
+        "id": "aeb11eedomain11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Number of Formulas Needed",
+        "text": "Two different formulas will be needed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Two different formulas will be needed.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Two different formulas will be needed."
+        ]
+    },
+    {
+        "id": "aeb11eedomain11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain11a-h1"
+        ],
+        "title": "$$0<n<10$$ Equation",
+        "text": "For $$n-values$$ under $$10$$, $$C=5n$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For  n minus, values  under  10 ,    c is equal to 5 n .",
+        "math": [
+            "$$n-values$$",
+            "$$10$$",
+            "$$C=5n$$"
+        ],
+        "pacedSpeech": [
+            "For   n minus, values ",
+            " under   10 ",
+            ",     c is equal to 5 n"
+        ]
+    },
+    {
+        "id": "aeb11eedomain11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain11a-h2"
+        ],
+        "title": "$$n \\geq 10$$ Equation",
+        "text": "For values of $$n$$ that are $$10$$ or greater, $$C=50$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For values of  n  that are  10  or greater,    c is equal to 50 .",
+        "math": [
+            "$$n$$",
+            "$$10$$",
+            "$$C=50$$"
+        ],
+        "pacedSpeech": [
+            "For values of   n ",
+            " that are   10 ",
+            " or greater,     c is equal to 50"
+        ]
+    },
+    {
+        "id": "aeb11eedomain11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain11a-h3"
+        ],
+        "title": "Answer",
+        "text": "C(n) $$=$$ {5n if $$0<n<10$$, $$50$$ if $$n \\geq 10$$}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "C(n)  is equal to  {5n if  0 is less than n is less than 10 ,  50  if  n is greater than or equal to 10 }",
+        "math": [
+            "$$=$$",
+            "$$0<n<10$$",
+            "$$50$$",
+            "$$n \\geq 10$$"
+        ],
+        "pacedSpeech": [
+            "C(n)   is equal to ",
+            " {5n if   0 is less than n is less than 10 ",
+            ",   50 ",
+            " if   n is greater than or equal to 10 ",
+            "}"
+        ]
+    }
+]

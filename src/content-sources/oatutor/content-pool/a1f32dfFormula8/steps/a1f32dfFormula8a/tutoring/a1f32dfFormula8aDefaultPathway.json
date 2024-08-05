@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1f32dfFormula8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Unknown",
+        "text": "The formula is $$d=rt$$, and we want to find $$r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The formula is , d is equal to, r t , and we want to find  r .",
+        "math": [
+            "$$d=rt$$",
+            "$$r$$"
+        ],
+        "pacedSpeech": [
+            "The formula is  , d is equal to, r t ",
+            ", and we want to find   r"
+        ]
+    },
+    {
+        "id": "a1f32dfFormula8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f32dfFormula8a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Since we know that $$d=180$$, $$t=12$$ we can substitute these values into the formula and get $$180=12r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since we know that  d is equal to 180 ,  t, is equal to, 12  we can substitute these values into the formula and get  180, is equal to 12 r .",
+        "math": [
+            "$$d=180$$",
+            "$$t=12$$",
+            "$$180=12r$$"
+        ],
+        "pacedSpeech": [
+            "Since we know that   d is equal to 180 ",
+            ",   t, is equal to, 12 ",
+            " we can substitute these values into the formula and get   180, is equal to 12 r"
+        ]
+    },
+    {
+        "id": "a1f32dfFormula8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45$$"
+        ],
+        "dependencies": [
+            "a1f32dfFormula8a-h2"
+        ],
+        "title": "Solve",
+        "text": "To solve for $$r$$, we can divide both sides of the equation by $$4$$. What is $$r$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve for , r , we can divide both sides of the equation by  4 . What is  r, ?",
+        "math": [
+            "$$r$$",
+            "$$4$$",
+            "$$r$$"
+        ],
+        "pacedSpeech": [
+            "To solve for  , r ",
+            ", we can divide both sides of the equation by   4 ",
+            ". What is   r,"
+        ]
+    }
+]

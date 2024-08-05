@@ -1,0 +1,279 @@
+[
+    {
+        "id": "a3abd22AddRational6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Do all the terms in the expression have common denominator?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Do all the terms in the expression have common denominator?"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Yes, $$\\frac{6x^2-x+20}{x^2-81}$$ and $$\\frac{5x^2+11x-7}{x^2-81}$$ shared the same common denominator of $$x^2-81$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Yes,  fraction, 6 x squared, minus x plus 20, over, x squared minus 81,   and  fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,   shared the same common denominator of  x squared minus 81",
+        "math": [
+            "$$\\frac{6x^2-x+20}{x^2-81}$$",
+            "$$\\frac{5x^2+11x-7}{x^2-81}$$",
+            "$$x^2-81$$"
+        ],
+        "pacedSpeech": [
+            "Yes,   fraction, 6 x squared, minus x plus 20, over, x squared minus 81,  ",
+            " and   fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,  ",
+            " shared the same common denominator of   x squared minus 81"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h2"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the sum over the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the sum over the common denominator.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the sum over the common denominator."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2-12x+27$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational6a-h3"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "What is the difference of the numerators for $$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the difference of the numerators for  fraction, 6 x squared, minus x plus 20, over, x squared minus 81,  minus fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,  ?",
+        "math": [
+            "$$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$"
+        ],
+        "pacedSpeech": [
+            "What is the difference of the numerators for  this expression"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h4"
+        ],
+        "title": "Factor the Numerator",
+        "text": "We can factor the difference of numerator we yield from step above to check if we can simplify the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can factor the difference of numerator we yield from step above to check if we can simplify the expression.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We can factor the difference of numerator we yield from step above to check if we can simplify the expression."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-3\\right) \\left(x-9\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational6a-h5"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$x^2-12x+27$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor , x squared minus 12 x plus 27 .",
+        "math": [
+            "$$x^2-12x+27$$"
+        ],
+        "pacedSpeech": [
+            "Factor  , x squared minus 12 x plus 27"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h6"
+        ],
+        "title": "Rewrite the expression",
+        "text": "From above steps, we get the difference of numerator is $$\\left(x-3\\right) \\left(x-9\\right)$$ and the denominator is $$x^2-81$$. So we can rewrite $$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$ as $$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{x^2-81}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "From above steps, we get the difference of numerator is  parentheses x minus 3,  times, parentheses x minus 9,   and the denominator is  x squared minus 81 . So we can rewrite  fraction, 6 x squared, minus x plus 20, over, x squared minus 81,  minus fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,   as  fraction, parentheses x minus 3,  times, parentheses x minus 9, , over, x squared minus 81,",
+        "math": [
+            "$$\\left(x-3\\right) \\left(x-9\\right)$$",
+            "$$x^2-81$$",
+            "$$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$",
+            "$$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{x^2-81}$$"
+        ],
+        "pacedSpeech": [
+            "From above steps, we get the difference of numerator is    x minus 3,  times,  x minus 9,  ",
+            " and the denominator is   x squared minus 81 ",
+            ". So we can rewrite  this expression",
+            " as   fraction,  x minus 3,  times,  x minus 9, , over, x squared minus 81,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h7"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "Are there any ways to simplify $$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{x^2-81}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Are there any ways to simplify  fraction, parentheses x minus 3,  times, parentheses x minus 9, , over, x squared minus 81,  ?",
+        "math": [
+            "$$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{x^2-81}$$"
+        ],
+        "pacedSpeech": [
+            "Are there any ways to simplify   fraction,  x minus 3,  times,  x minus 9, , over, x squared minus 81,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-9\\right) \\left(x+9\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational6a-h8"
+        ],
+        "title": "Factor the Denominator",
+        "text": "Factor $$x^2-81$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor  x squared minus 81, .",
+        "math": [
+            "$$x^2-81$$"
+        ],
+        "pacedSpeech": [
+            "Factor   x squared minus 81,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x-9$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational6a-h9"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "Put back together, we can rewrite $$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$ as $$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$. What is the greatest common factor shared by the numerator and denominator in $$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put back together, we can rewrite  fraction, 6 x squared, minus x plus 20, over, x squared minus 81,  minus fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,   as  fraction, parentheses x minus 3,  times, parentheses x minus 9, , over, parentheses x minus 9,  times, parentheses x plus 9, ,  . What is the greatest common factor shared by the numerator and denominator in  fraction, parentheses x minus 3,  times, parentheses x minus 9, , over, parentheses x minus 9,  times, parentheses x plus 9, ,  ?",
+        "math": [
+            "$$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$",
+            "$$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$",
+            "$$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Put back together, we can rewrite  this expression",
+            " as   fraction,  x minus 3,  times,  x minus 9, , over,  x minus 9,  times,  x plus 9, ,  ",
+            ". What is the greatest common factor shared by the numerator and denominator in   fraction,  x minus 3,  times,  x minus 9, , over,  x minus 9,  times,  x plus 9, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-3}{x+9}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational6a-h10"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "As the final step, we cancel out $$x-9$$ on both numerator and denominator, what is the simplified form of $$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "As the final step, we cancel out  x minus 9  on both numerator and denominator, what is the simplified form of  fraction, parentheses x minus 3,  times, parentheses x minus 9, , over, parentheses x minus 9,  times, parentheses x plus 9, ,  ?",
+        "math": [
+            "$$x-9$$",
+            "$$\\frac{\\left(x-3\\right) \\left(x-9\\right)}{\\left(x-9\\right) \\left(x+9\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "As the final step, we cancel out   x minus 9 ",
+            " on both numerator and denominator, what is the simplified form of   fraction,  x minus 3,  times,  x minus 9, , over,  x minus 9,  times,  x plus 9, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational6a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational6a-h11"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the $$\\operatorname{expression}\\left(\\frac{6x^2-x+20}{x^2-81}\\right)-\\frac{5x^2+11x-7}{x^2-81}$$ and $$\\frac{x-3}{x+9}$$ are different because the domain of $$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$ does not include $$x=9$$. The domain of $$\\frac{x-3}{x+9}$$ does not exclude $$x=9$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Note that the  expression of parentheses fraction, 6 x squared, minus x plus 20, over, x squared minus 81,   minus fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,   and  fraction, x minus 3, over, x plus 9,   are different because the domain of  fraction, 6 x squared, minus x plus 20, over, x squared minus 81,  minus fraction, 5 x squared, plus 11 x minus 7, over, x squared minus 81,   does not include  x is equal to 9 . The domain of  fraction, x minus 3, over, x plus 9,   does not exclude  x is equal to 9 .",
+        "math": [
+            "$$\\operatorname{expression}\\left(\\frac{6x^2-x+20}{x^2-81}\\right)-\\frac{5x^2+11x-7}{x^2-81}$$",
+            "$$\\frac{x-3}{x+9}$$",
+            "$$\\frac{6x^2-x+20}{x^2-81}-\\frac{5x^2+11x-7}{x^2-81}$$",
+            "$$x=9$$",
+            "$$\\frac{x-3}{x+9}$$",
+            "$$x=9$$"
+        ],
+        "pacedSpeech": [
+            "Note that the  this expression",
+            " and   fraction, x minus 3, over, x plus 9,  ",
+            " are different because the domain of  this expression",
+            " does not include   x is equal to 9 ",
+            ". The domain of   fraction, x minus 3, over, x plus 9,  ",
+            " does not exclude   x is equal to 9"
+        ]
+    }
+]

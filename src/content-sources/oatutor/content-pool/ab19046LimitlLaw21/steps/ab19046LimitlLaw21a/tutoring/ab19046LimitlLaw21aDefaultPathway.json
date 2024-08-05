@@ -1,0 +1,67 @@
+[
+    {
+        "id": "ab19046LimitlLaw21a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What's , the limit as x approaches 6, of f of x ?",
+        "math": [
+            "$$\\lim_{x\\to6} f(x)$$"
+        ],
+        "pacedSpeech": [
+            "What's  , the limit as x approaches 6, of f of x"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw21a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What's $$\\lim_{x\\to6} g(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What's , the limit as x approaches 6, of g of x ?",
+        "math": [
+            "$$\\lim_{x\\to6} g(x)$$"
+        ],
+        "pacedSpeech": [
+            "What's  , the limit as x approaches 6, of g of x"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw21a-h2"
+        ],
+        "title": "The limit of functions at the same point commute",
+        "text": "Mutiply the values together, then multiply the coefficient.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Mutiply the values together, then multiply the coefficient.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Mutiply the values together, then multiply the coefficient."
+        ]
+    }
+]

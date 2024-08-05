@@ -1,0 +1,150 @@
+[
+    {
+        "id": "a38da08geo7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define k",
+        "text": "Scaling by factor k multiplies volumes by $$k^3$$ and areas by $$k^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Scaling by factor k multiplies volumes by , k cubed  and areas by  k squared, .",
+        "math": [
+            "$$k^3$$",
+            "$$k^2$$"
+        ],
+        "pacedSpeech": [
+            "Scaling by factor k multiplies volumes by  , k cubed ",
+            " and areas by   k squared,"
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{\\left(-\\frac{2}{3}\\right)}$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h1"
+        ],
+        "title": "Define k",
+        "text": "$$1000k^3=10$$. What is k?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${10}^{\\left(-\\frac{2}{3}\\right)}$$",
+            "$${10}^{\\left(-2\\right)}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo7a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Define k",
+                "text": "$$k^3=\\frac{10}{1000}={10}^{\\left(-2\\right)}$$, so $$k={10}^{\\left(-\\frac{2}{3}\\right)}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": ", 1000 k cubed, is equal to 10 . What is k?",
+        "math": [
+            "$$1000k^3=10$$"
+        ],
+        "pacedSpeech": [
+            ", 1000 k cubed, is equal to 10 ",
+            ". What is k?"
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{\\left(-\\frac{4}{3}\\right)}$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h2"
+        ],
+        "title": "Computation",
+        "text": "What is $$k^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${10}^{\\left(-\\frac{4}{3}\\right)}$$",
+            "$${10}^{\\left(-\\frac{3}{4}\\right)}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo7a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Computation",
+                "text": "$$k^2={10}^{\\left(-\\frac{4}{3}\\right)}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": "What is  k squared ?",
+        "math": [
+            "$$k^2$$"
+        ],
+        "pacedSpeech": [
+            "What is   k squared"
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo7a-h3"
+        ],
+        "title": "Computation",
+        "text": "New surface $$area=250k^2=250\\times {10}^{\\left(-\\frac{4}{3}\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "New surface  area is equal to, 250 k squared, is equal to 250 times, 10 raised to the parentheses negative 4 thirds  power .",
+        "math": [
+            "$$area=250k^2=250\\times {10}^{\\left(-\\frac{4}{3}\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "New surface   area is equal to, 250 k squared, is equal to 250 times, 10 raised to the  negative 4 thirds  power"
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$11.6$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h4"
+        ],
+        "title": "Computation",
+        "text": "What is the approximate value of the new surface area?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$11.6$$",
+            "$$12.5$$"
+        ],
+        "speech": "What is the approximate value of the new surface area?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the approximate value of the new surface area?"
+        ]
+    }
+]

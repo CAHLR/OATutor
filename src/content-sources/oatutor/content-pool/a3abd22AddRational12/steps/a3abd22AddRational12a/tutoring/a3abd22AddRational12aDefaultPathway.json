@@ -1,0 +1,228 @@
+[
+    {
+        "id": "a3abd22AddRational12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine if the Expression Have a Common Denominator",
+        "text": "The expression does not have a common denominator, so we need to find the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The expression does not have a common denominator, so we need to find the common denominator.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The expression does not have a common denominator, so we need to find the common denominator."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(m+3\\right) \\left(m+4\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational12a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Since both $$m+3$$ and $$m+4$$ are linear factors and they are not multiple of each other. What is the least common denominator for $$\\frac{4}{m+3}+\\frac{3}{m+4}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since both  m plus 3  and  m, plus 4  are linear factors and they are not multiple of each other. What is the least common denominator for , fraction, 4 over, m plus 3,  plus, fraction, 3 over, m plus 4,",
+        "math": [
+            "$$m+3$$",
+            "$$m+4$$",
+            "$$\\frac{4}{m+3}+\\frac{3}{m+4}$$"
+        ],
+        "pacedSpeech": [
+            "Since both   m plus 3 ",
+            " and   m, plus 4 ",
+            " are linear factors and they are not multiple of each other. What is the least common denominator for  , fraction, 4 over, m plus 3,  plus, fraction, 3 over, m plus 4,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational12a-h2"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Rewrite each rational expression as an equivalent rational expression with the LCD.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Rewrite each rational expression as an equivalent rational expression with the LCD.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Rewrite each rational expression as an equivalent rational expression with the LCD."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4\\left(m+4\\right)}{\\left(m+4\\right) \\left(m+3\\right)}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational12a-h3"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "What is the equivalent rational expression with the LCD $$\\left(m+3\\right) \\left(m+4\\right)$$ for $$\\frac{4}{m+3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the equivalent rational expression with the LCD  parentheses m plus 3,  times, parentheses m plus 4,   for , fraction, 4 over, m plus 3,  ?",
+        "math": [
+            "$$\\left(m+3\\right) \\left(m+4\\right)$$",
+            "$$\\frac{4}{m+3}$$"
+        ],
+        "pacedSpeech": [
+            "What is the equivalent rational expression with the LCD    m plus 3,  times,  m plus 4,  ",
+            " for  , fraction, 4 over, m plus 3,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational12a-h4"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Since $$\\frac{m+4}{m+4}=1$$ and $$1\\frac{4}{m+3}=\\frac{4}{m+3}$$, we can rewrite 4/(m+3)) as $$\\frac{4\\left(m+4\\right)}{\\left(m+4\\right) \\left(m+3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  fraction, m plus 4, over, m plus 4,  is equal to 1  and  1, fraction, 4 over, m plus 3,  is equal to fraction, 4 over, m plus 3,  , we can rewrite 4/(m+3)) as  fraction, 4 times, parentheses m plus 4, , over, parentheses m plus 4,  times, parentheses m plus 3, ,",
+        "math": [
+            "$$\\frac{m+4}{m+4}=1$$",
+            "$$1\\frac{4}{m+3}=\\frac{4}{m+3}$$",
+            "$$\\frac{4\\left(m+4\\right)}{\\left(m+4\\right) \\left(m+3\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Since   fraction, m plus 4, over, m plus 4,  is equal to 1 ",
+            " and   1, fraction, 4 over, m plus 3,  is equal to fraction, 4 over, m plus 3,  ",
+            ", we can rewrite 4/(m+3)) as   fraction, 4 times,  m plus 4, , over,  m plus 4,  times,  m plus 3, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3\\left(m+3\\right)}{\\left(m+3\\right) \\left(m+4\\right)}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational12a-h5"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "What is the equivalent rational expression with the LCD $$\\left(m+3\\right) \\left(m+4\\right)$$ for $$\\frac{3}{m+4}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the equivalent rational expression with the LCD  parentheses m plus 3,  times, parentheses m plus 4,   for , fraction, 3 over, m plus 4,  ?",
+        "math": [
+            "$$\\left(m+3\\right) \\left(m+4\\right)$$",
+            "$$\\frac{3}{m+4}$$"
+        ],
+        "pacedSpeech": [
+            "What is the equivalent rational expression with the LCD    m plus 3,  times,  m plus 4,  ",
+            " for  , fraction, 3 over, m plus 4,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational12a-h6"
+        ],
+        "title": "Add the Numerators for Expression",
+        "text": "Add the numerators and place the sum over the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Add the numerators and place the sum over the common denominator.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Add the numerators and place the sum over the common denominator."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7m+25$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational12a-h7"
+        ],
+        "title": "Add the Numerators for Expression",
+        "text": "What is the sum of numerators for $$\\frac{4\\left(m+4\\right)}{\\left(m+4\\right) \\left(m+3\\right)}+\\frac{3\\left(m+3\\right)}{\\left(m+3\\right) \\left(m+4\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the sum of numerators for  fraction, 4 times, parentheses m plus 4, , over, parentheses m plus 4,  times, parentheses m plus 3, ,  plus fraction, 3 times, parentheses m plus 3, , over, parentheses m plus 3,  times, parentheses m plus 4, ,  ?",
+        "math": [
+            "$$\\frac{4\\left(m+4\\right)}{\\left(m+4\\right) \\left(m+3\\right)}+\\frac{3\\left(m+3\\right)}{\\left(m+3\\right) \\left(m+4\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "What is the sum of numerators for  this expression"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational12a-h8"
+        ],
+        "title": "Simplify the Expression",
+        "text": "According to the above steps, we can rewrite $$\\frac{4}{m+3}+\\frac{3}{m+4}$$ as $$\\frac{7m+25}{\\left(m+3\\right) \\left(m+4\\right)}$$, are there any ways to simplify the new expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "According to the above steps, we can rewrite  fraction, 4 over, m plus 3,  plus fraction, 3 over, m plus 4,   as  fraction, 7 m plus 25, over, parentheses m plus 3,  times, parentheses m plus 4, ,  , are there any ways to simplify the new expression?",
+        "math": [
+            "$$\\frac{4}{m+3}+\\frac{3}{m+4}$$",
+            "$$\\frac{7m+25}{\\left(m+3\\right) \\left(m+4\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "According to the above steps, we can rewrite   fraction, 4 over, m plus 3,  plus fraction, 3 over, m plus 4,  ",
+            " as   fraction, 7 m plus 25, over,  m plus 3,  times,  m plus 4, ,  ",
+            ", are there any ways to simplify the new expression?"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational12a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational12a-h9"
+        ],
+        "title": "Simplify the Expression",
+        "text": "The answer of $$\\frac{7m+25}{\\left(m+3\\right) \\left(m+4\\right)}$$ is simplified because $$7m+25$$ cannot be factored.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The answer of  fraction, 7 m plus 25, over, parentheses m plus 3,  times, parentheses m plus 4, ,   is simplified because  7 m plus 25  cannot be factored.",
+        "math": [
+            "$$\\frac{7m+25}{\\left(m+3\\right) \\left(m+4\\right)}$$",
+            "$$7m+25$$"
+        ],
+        "pacedSpeech": [
+            "The answer of   fraction, 7 m plus 25, over,  m plus 3,  times,  m plus 4, ,  ",
+            " is simplified because   7 m plus 25 ",
+            " cannot be factored."
+        ]
+    }
+]

@@ -1,0 +1,464 @@
+[
+    {
+        "id": "a0dd0e7corepoly11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving the Equation",
+        "text": "To find the intersection between two functions, you can set them equal to each other: $$x^2=2x+A$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "To find the intersection between two functions, you can set them equal to each other: , x squared is equal to, 2 x plus   a",
+        "math": [
+            "$$x^2=2x+A$$"
+        ],
+        "pacedSpeech": [
+            "To find the intersection between two functions, you can set them equal to each other:  , x squared is equal to, 2 x plus   a"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h1"
+        ],
+        "title": "Solving the Equation",
+        "text": "Move $$2x$$ to the left side by subtracting the right side: $$x^2-2x=A$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Move  2 x  to the left side by subtracting the right side:  x squared minus 2 x is equal to   a .",
+        "math": [
+            "$$2x$$",
+            "$$x^2-2x=A$$"
+        ],
+        "pacedSpeech": [
+            "Move   2 x ",
+            " to the left side by subtracting the right side:   x squared minus 2 x is equal to   a"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h2"
+        ],
+        "title": "Solving the Equation",
+        "text": "Complete the square for $$x^2-2x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Complete the square for , x squared minus 2 x .",
+        "math": [
+            "$$x^2-2x$$"
+        ],
+        "pacedSpeech": [
+            "Complete the square for  , x squared minus 2 x"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h3"
+        ],
+        "title": "Solving the Equation",
+        "text": "To find the value to add to $$x^2+b x$$, you must add $${\\left(\\frac{b}{2}\\right)}^2$$ within the parantheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "To find the value to add to  x squared plus b x , you must add , parentheses b over 2,  squared  within the parantheses.",
+        "math": [
+            "$$x^2+b x$$",
+            "$${\\left(\\frac{b}{2}\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "To find the value to add to   x squared plus b x ",
+            ", you must add  ,  b over 2,  squared ",
+            " within the parantheses."
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h4"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is $${\\left(-\\frac{2}{2}\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is , parentheses negative 2 halves  squared ?",
+        "math": [
+            "$${\\left(-\\frac{2}{2}\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,  negative 2 halves  squared"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "Add $$1$$ to both sides to simplify the equation: $$x^2-2x+1=A+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add  1  to both sides to simplify the equation:  x squared, minus 2 x plus 1 is equal to   a plus 1 .",
+        "math": [
+            "$$1$$",
+            "$$x^2-2x+1=A+1$$"
+        ],
+        "pacedSpeech": [
+            "Add   1 ",
+            " to both sides to simplify the equation:   x squared, minus 2 x plus 1 is equal to   a plus 1"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h6"
+        ],
+        "title": "Solving the Equation",
+        "text": "For some quadratic $$f(x)=x^2+2b x+b^2$$, it can be simplified to $${\\left(x+b\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "For some quadratic  f of x is equal to x squared plus 2 b x, plus b squared , it can be simplified to , parentheses x plus b,  squared .",
+        "math": [
+            "$$f(x)=x^2+2b x+b^2$$",
+            "$${\\left(x+b\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "For some quadratic   f of x is equal to x squared plus 2 b x, plus b squared ",
+            ", it can be simplified to  ,  x plus b,  squared"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(x-1\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h7"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is $$x^2-2x+1$$ simplified?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$${\\left(x-1\\right)}^2$$",
+            "$${\\left(x+1\\right)}^2$$",
+            "$${\\left(x-2\\right)}^2$$",
+            "$${\\left(x+2\\right)}^2$$"
+        ],
+        "speech": "What is , x squared minus 2 x plus 1  simplified?",
+        "math": [
+            "$$x^2-2x+1$$"
+        ],
+        "pacedSpeech": [
+            "What is  , x squared minus 2 x plus 1 ",
+            " simplified?"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h8"
+        ],
+        "title": "Finding One Intersection Point",
+        "text": "Given $${\\left(x-1\\right)}^2=A+1$$, $$A+1$$ could either be $$A+1>0$$, $$A+1<0$$, $$A+1=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Given  parentheses x minus 1,  squared is equal to   a plus 1 ,    a, plus 1  could either be    a, plus 1 is greater than 0 ,    a, plus 1 is less than 0 ,    a, plus 1 is equal to 0",
+        "math": [
+            "$${\\left(x-1\\right)}^2=A+1$$",
+            "$$A+1$$",
+            "$$A+1>0$$",
+            "$$A+1<0$$",
+            "$$A+1=0$$"
+        ],
+        "pacedSpeech": [
+            "Given    x minus 1,  squared is equal to   a plus 1 ",
+            ",     a, plus 1 ",
+            " could either be     a, plus 1 is greater than 0 ",
+            ",     a, plus 1 is less than 0 ",
+            ",     a, plus 1 is equal to 0"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h9"
+        ],
+        "title": "Positive Consant",
+        "text": "When $$A+1>0$$, then it is possible to take the square root where $$x-1=$$ $$\\pm$$ $$\\sqrt{A+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "When    a plus 1, is greater than 0 , then it is possible to take the square root where  x, minus 1, is equal to   plus or minus  , the square root of   a plus 1 end root",
+        "math": [
+            "$$A+1>0$$",
+            "$$x-1=$$",
+            "$$\\pm$$",
+            "$$\\sqrt{A+1}$$"
+        ],
+        "pacedSpeech": [
+            "When     a plus 1, is greater than 0 ",
+            ", then it is possible to take the square root where   x, minus 1, is equal to ",
+            "   plus or minus ",
+            "  , the square root of   a plus 1 end root"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h10"
+        ],
+        "title": "Positive Consant",
+        "text": "Add one to both sides to simplify: $$x=1$$ $$\\pm$$ $$\\sqrt{A+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add one to both sides to simplify:  x is equal to 1   plus or minus  , the square root of   a plus 1 end root",
+        "math": [
+            "$$x=1$$",
+            "$$\\pm$$",
+            "$$\\sqrt{A+1}$$"
+        ],
+        "pacedSpeech": [
+            "Add one to both sides to simplify:   x is equal to 1 ",
+            "   plus or minus ",
+            "  , the square root of   a plus 1 end root"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h11"
+        ],
+        "title": "Positive Consant",
+        "text": "Is there exactly one value that would serve as the intersection?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "Is there exactly one value that would serve as the intersection?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is there exactly one value that would serve as the intersection?"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h12"
+        ],
+        "title": "Negative Consant",
+        "text": "When $$A+1<0$$, then it is impossible for $$x$$ to intersect with the line as $${\\left(x-1\\right)}^2$$ cannot be negative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "When    a plus 1, is less than 0 , then it is impossible for  x  to intersect with the line as , parentheses x minus 1,  squared  cannot be negative.",
+        "math": [
+            "$$A+1<0$$",
+            "$$x$$",
+            "$${\\left(x-1\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "When     a plus 1, is less than 0 ",
+            ", then it is impossible for   x ",
+            " to intersect with the line as  ,  x minus 1,  squared ",
+            " cannot be negative."
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h13"
+        ],
+        "title": "Zero Constant",
+        "text": "When $$A+1=0$$, then it is possible to take the square root where $$x-1=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "When    a plus 1, is equal to, 0 , then it is possible to take the square root where  x, minus 1, is equal to 0 .",
+        "math": [
+            "$$A+1=0$$",
+            "$$x-1=0$$"
+        ],
+        "pacedSpeech": [
+            "When     a plus 1, is equal to, 0 ",
+            ", then it is possible to take the square root where   x, minus 1, is equal to 0"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h14"
+        ],
+        "title": "Zero Constant",
+        "text": "Add $$-1$$ to both sides to simplify: $$x=0-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add  minus 1  to both sides to simplify:  x is equal to 0 minus 1",
+        "math": [
+            "$$-1$$",
+            "$$x=0-1$$"
+        ],
+        "pacedSpeech": [
+            "Add   minus 1 ",
+            " to both sides to simplify:   x is equal to 0 minus 1"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h15"
+        ],
+        "title": "Zero Constant",
+        "text": "What is $$0-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  0 minus 1 ?",
+        "math": [
+            "$$0-1$$"
+        ],
+        "pacedSpeech": [
+            "What is   0 minus 1"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h16"
+        ],
+        "title": "Zero Constant",
+        "text": "Is there exactly one value that would serve as the intersection?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "Is there exactly one value that would serve as the intersection?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is there exactly one value that would serve as the intersection?"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h18",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h17"
+        ],
+        "title": "Finding A",
+        "text": "Since there is exactly one intersection when $$A+1=0$$, A can be solved for to get the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Since there is exactly one intersection when ,   a plus 1, is equal to 0 , A can be solved for to get the result.",
+        "math": [
+            "$$A+1=0$$"
+        ],
+        "pacedSpeech": [
+            "Since there is exactly one intersection when  ,   a plus 1, is equal to 0 ",
+            ", A can be solved for to get the result."
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h19",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly11a-h18"
+        ],
+        "title": "Finding A",
+        "text": "Add $$-1$$ to both sides to simplify: $$A=0-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add  minus 1  to both sides to simplify:    a is equal to 0 minus 1",
+        "math": [
+            "$$-1$$",
+            "$$A=0-1$$"
+        ],
+        "pacedSpeech": [
+            "Add   minus 1 ",
+            " to both sides to simplify:     a is equal to 0 minus 1"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly11a-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly11a-h19"
+        ],
+        "title": "Finding A",
+        "text": "What is $$0-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  0 minus 1, ?",
+        "math": [
+            "$$0-1$$"
+        ],
+        "pacedSpeech": [
+            "What is   0 minus 1,"
+        ]
+    }
+]

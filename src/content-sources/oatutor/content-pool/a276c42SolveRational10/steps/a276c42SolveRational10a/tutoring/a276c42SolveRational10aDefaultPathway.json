@@ -1,0 +1,434 @@
+[
+    {
+        "id": "a276c42SolveRational10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Put The Equation In The Correct Form with Zero By Itself On One Side",
+        "text": "Write the inequality as one quotient on the left and zero on the right.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Write the inequality as one quotient on the left and zero on the right.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Write the inequality as one quotient on the left and zero on the right."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h1"
+        ],
+        "title": "Put The Equation In The Correct Form with Zero By Itself On One Side",
+        "text": "By subtracting $$2$$ to get zero on the right, we get $$\\frac{6x}{x-6}-2>0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "By subtracting  2  to get zero on the right, we get  fraction, 6 x, over, x minus 6,  minus 2 is greater than 0",
+        "math": [
+            "$$2$$",
+            "$$\\frac{6x}{x-6}-2>0$$"
+        ],
+        "pacedSpeech": [
+            "By subtracting   2 ",
+            " to get zero on the right, we get   fraction, 6 x, over, x minus 6,  minus 2 is greater than 0"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h2"
+        ],
+        "title": "Rewrite $$2$$ As a Fraction Using the LCD.",
+        "text": "LCD for $$\\frac{6x}{x-6}$$ and $$2$$ is $$(x-6)$$, we can rewrite $$2$$ as $$\\frac{2\\left(x-6\\right)}{x-6}$$. We can rewrite $$\\frac{6x}{x-6}-2$$ as $$\\frac{6x}{x-6}-\\frac{2\\left(x-6\\right)}{x-6}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "LCD for  fraction, 6 x, over, x minus 6,   and  2  is , parentheses x minus 6,  , we can rewrite  2  as  fraction, 2 times, parentheses x minus 6, , over, x minus 6,  . We can rewrite  fraction, 6 x, over, x minus 6,  minus 2  as  fraction, 6 x, over, x minus 6,  minus fraction, 2 times, parentheses x minus 6, , over, x minus 6,  .",
+        "math": [
+            "$$\\frac{6x}{x-6}$$",
+            "$$2$$",
+            "$$(x-6)$$",
+            "$$2$$",
+            "$$\\frac{2\\left(x-6\\right)}{x-6}$$",
+            "$$\\frac{6x}{x-6}-2$$",
+            "$$\\frac{6x}{x-6}-\\frac{2\\left(x-6\\right)}{x-6}$$"
+        ],
+        "pacedSpeech": [
+            "LCD for   fraction, 6 x, over, x minus 6,  ",
+            " and   2 ",
+            " is  ,  x minus 6,  ",
+            ", we can rewrite   2 ",
+            " as   fraction, 2 times,  x minus 6, , over, x minus 6,  ",
+            ". We can rewrite   fraction, 6 x, over, x minus 6,  minus 2 ",
+            " as   fraction, 6 x, over, x minus 6,  minus fraction, 2 times,  x minus 6, , over, x minus 6,"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h3"
+        ],
+        "title": "Rewrite $$2$$ As a Fraction Using the LCD.",
+        "text": "By subtracting the numerators and placing the difference over the common denominator, we can rewrite ((6*x)/(x-6))-(2(x-6)/(x-6))) as $$\\frac{6x-2\\left(x-6\\right)}{x-6}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "By subtracting the numerators and placing the difference over the common denominator, we can rewrite ((6*x)/(x-6))-(2(x-6)/(x-6))) as  fraction, 6 x minus, 2 times, parentheses x minus 6, , over, x minus 6,  .",
+        "math": [
+            "$$\\frac{6x-2\\left(x-6\\right)}{x-6}$$"
+        ],
+        "pacedSpeech": [
+            "By subtracting the numerators and placing the difference over the common denominator, we can rewrite ((6*x)/(x-6))-(2(x-6)/(x-6))) as   fraction, 6 x minus, 2 times,  x minus 6, , over, x minus 6,"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h4"
+        ],
+        "title": "Simplify $$\\frac{6x-2\\left(x-6\\right)}{x-6}$$",
+        "text": "$$\\frac{6x-2\\left(x-6\\right)}{x-6}=\\frac{4x+12}{x-6}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "fraction, 6 x minus, 2 times, parentheses x minus 6, , over, x minus 6,  is equal to fraction, 4 x plus 12, over, x minus 6,",
+        "math": [
+            "$$\\frac{6x-2\\left(x-6\\right)}{x-6}=\\frac{4x+12}{x-6}$$"
+        ],
+        "pacedSpeech": [
+            "fraction, 6 x minus, 2 times,  x minus 6, , over, x minus 6,  is equal to fraction, 4 x plus 12, over, x minus 6,"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h5"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Determine the critical points\u2014the points where the rational expression will be zero or undefined.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the critical points\u2014the points where the rational expression will be zero or undefined.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Determine the critical points\u2014the points where the rational expression will be zero or undefined."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h6"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "When is the equation undefine? Note that the equation is undefined when the denominator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When is the equation undefine? Note that the equation is undefined when the denominator equal to zero.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "When is the equation undefine? Note that the equation is undefined when the denominator equal to zero."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational10a-h7"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Solve the equation $$x-6=0$$. What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve the equation , x minus 6, is equal to 0 . What is the value of  x ?",
+        "math": [
+            "$$x-6=0$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Solve the equation  , x minus 6, is equal to 0 ",
+            ". What is the value of   x"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h8"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "When does the equation equal zero? Note that the equation is undefined when the numerator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When does the equation equal zero? Note that the equation is undefined when the numerator equal to zero.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "When does the equation equal zero? Note that the equation is undefined when the numerator equal to zero."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational10a-h9"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Solve the equation $$4x+12=0$$. What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve the equation  4 x plus 12, is equal to 0 . What is the value of  x ?",
+        "math": [
+            "$$4x+12=0$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Solve the equation   4 x plus 12, is equal to 0 ",
+            ". What is the value of   x"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h10"
+        ],
+        "title": "Use the Critical Points to Divide the Number Line into Intervals.",
+        "text": "Given that the $$x=-3$$ and $$x=6$$ are the two critical points, we can divide the number line into three intervals, namely, $$(-\\infty,-3)$$, $$(-3,6)$$ and $$(6,\\infty)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given that the  x is equal to, negative 3  and  x, is equal to 6  are the two critical points, we can divide the number line into three intervals, namely, , the open interval from negative infinity to negative 3 , , parentheses, negative 3 comma 6,   and , the open interval from 6 to infinity .",
+        "math": [
+            "$$x=-3$$",
+            "$$x=6$$",
+            "$$(-\\infty,-3)$$",
+            "$$(-3,6)$$",
+            "$$(6,\\infty)$$"
+        ],
+        "pacedSpeech": [
+            "Given that the   x is equal to, negative 3 ",
+            " and   x, is equal to 6 ",
+            " are the two critical points, we can divide the number line into three intervals, namely,  , the open interval from negative infinity to negative 3 ",
+            ",  , , negative 3 comma 6,  ",
+            " and  , the open interval from 6 to infinity"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h11"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "To find the sign of each factor in an interval, we choose any point in that interval and use it as a test point. Any point in the interval will give the expression the same sign, so we can choose any point in the interval.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find the sign of each factor in an interval, we choose any point in that interval and use it as a test point. Any point in the interval will give the expression the same sign, so we can choose any point in the interval.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "To find the sign of each factor in an interval, we choose any point in that interval and use it as a test point. Any point in the interval will give the expression the same sign, so we can choose any point in the interval."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{5}$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational10a-h12"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(-\\infty,-3)$$, take the point $$x=-4$$ within the interval and plug it into the quotient $$\\frac{4x+12}{x-6}$$. What is the value of $$\\frac{4x+2}{x-2}$$ after plugging in the value $$x=-4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For the interval  the open interval from negative infinity to negative 3 , take the point  x is equal to negative 4  within the interval and plug it into the quotient  fraction, 4 x plus 12, over, x minus 6,  . What is the value of  fraction, 4 x plus 2, over, x minus 2,   after plugging in the value  x is equal to negative 4 ?",
+        "math": [
+            "$$(-\\infty,-3)$$",
+            "$$x=-4$$",
+            "$$\\frac{4x+12}{x-6}$$",
+            "$$\\frac{4x+2}{x-2}$$",
+            "$$x=-4$$"
+        ],
+        "pacedSpeech": [
+            "For the interval   the open interval from negative infinity to negative 3 ",
+            ", take the point   x is equal to negative 4 ",
+            " within the interval and plug it into the quotient   fraction, 4 x plus 12, over, x minus 6,  ",
+            ". What is the value of   fraction, 4 x plus 2, over, x minus 2,  ",
+            " after plugging in the value   x is equal to negative 4"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h13"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "Since $$\\frac{2}{5}$$ is a positive numer greater than $$0$$, we get the sign of quotient is positive in the interval $$(-\\infty,-3)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  2 fifths  is a positive numer greater than  0 , we get the sign of quotient is positive in the interval , the open interval from negative infinity to negative 3 .",
+        "math": [
+            "$$\\frac{2}{5}$$",
+            "$$0$$",
+            "$$(-\\infty,-3)$$"
+        ],
+        "pacedSpeech": [
+            "Since   2 fifths ",
+            " is a positive numer greater than   0 ",
+            ", we get the sign of quotient is positive in the interval  , the open interval from negative infinity to negative 3"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h14"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(-3,6)$$, take the point $$x=0$$ within the interval and plug it into the original expression $$\\frac{4x+12}{x-6}$$. We get $$-2$$ after plugging in $$x=0$$ into the quotient $$\\frac{4x+12}{x-6}$$. $$-2$$ is a negative number, so we can mark the quotient negative in the interval $$(-3,6)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For the interval  times, parentheses, negative 3 comma 6,  , take the point  x is equal to 0  within the interval and plug it into the original expression  fraction, 4 x plus 12, over, x minus 6,  . We get  negative 2  after plugging in  x is equal to 0  into the quotient  fraction, 4 x plus 12, over, x minus 6,  .  negative 2  is a negative number, so we can mark the quotient negative in the interval , parentheses, negative 3 comma 6,  .",
+        "math": [
+            "$$(-3,6)$$",
+            "$$x=0$$",
+            "$$\\frac{4x+12}{x-6}$$",
+            "$$-2$$",
+            "$$x=0$$",
+            "$$\\frac{4x+12}{x-6}$$",
+            "$$-2$$",
+            "$$(-3,6)$$"
+        ],
+        "pacedSpeech": [
+            "For the interval   times, , negative 3 comma 6,  ",
+            ", take the point   x is equal to 0 ",
+            " within the interval and plug it into the original expression   fraction, 4 x plus 12, over, x minus 6,  ",
+            ". We get   negative 2 ",
+            " after plugging in   x is equal to 0 ",
+            " into the quotient   fraction, 4 x plus 12, over, x minus 6,  ",
+            ".   negative 2 ",
+            " is a negative number, so we can mark the quotient negative in the interval  , , negative 3 comma 6,"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h16",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h15"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(6,\\infty)$$, take the point $$x=7$$ within the interval and plug it into the original expression $$\\frac{4x+12}{x-6}$$. We get $$40$$ after plugging in $$x=7$$ into the quotient $$\\frac{4x+12}{x-6}$$. $$40$$ is a positive number, so we can mark the quotient positive in the interval $$(6,\\infty)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "For the interval  the open interval from 6 to infinity , take the point  x is equal to 7  within the interval and plug it into the original expression  fraction, 4 x plus 12, over, x minus 6,  . We get  40  after plugging in  x is equal to 7  into the quotient  fraction, 4 x plus 12, over, x minus 6,  .  40  is a positive number, so we can mark the quotient positive in the interval , the open interval from 6 to infinity .",
+        "math": [
+            "$$(6,\\infty)$$",
+            "$$x=7$$",
+            "$$\\frac{4x+12}{x-6}$$",
+            "$$40$$",
+            "$$x=7$$",
+            "$$\\frac{4x+12}{x-6}$$",
+            "$$40$$",
+            "$$(6,\\infty)$$"
+        ],
+        "pacedSpeech": [
+            "For the interval   the open interval from 6 to infinity ",
+            ", take the point   x is equal to 7 ",
+            " within the interval and plug it into the original expression   fraction, 4 x plus 12, over, x minus 6,  ",
+            ". We get   40 ",
+            " after plugging in   x is equal to 7 ",
+            " into the quotient   fraction, 4 x plus 12, over, x minus 6,  ",
+            ".   40 ",
+            " is a positive number, so we can mark the quotient positive in the interval  , the open interval from 6 to infinity"
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h17",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational10a-h16"
+        ],
+        "title": "Determine the Intervals Where the Inequality is Correct.",
+        "text": "We want the quotient to be greater than zero, so the numbers in the interval $$(-\\infty,-3)$$ or $$(6,\\infty)$$ are the solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We want the quotient to be greater than zero, so the numbers in the interval  the open interval from negative infinity to negative 3  or , the open interval from 6 to infinity  are the solution.",
+        "math": [
+            "$$(-\\infty,-3)$$",
+            "$$(6,\\infty)$$"
+        ],
+        "pacedSpeech": [
+            "We want the quotient to be greater than zero, so the numbers in the interval   the open interval from negative infinity to negative 3 ",
+            " or  , the open interval from 6 to infinity ",
+            " are the solution."
+        ]
+    },
+    {
+        "id": "a276c42SolveRational10a-h18",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-inf,-3)U(6,inf)"
+        ],
+        "dependencies": [
+            "a276c42SolveRational10a-h17"
+        ],
+        "title": "Write the Final Answer in the interval Form",
+        "text": "We know that $$(-\\infty,-3)$$ and $$(6,\\infty)$$ are the answer, please use \"[ ]\". \"( )\" and U to write it in a mathematical form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know that  the open interval from negative infinity to negative 3  and , the open interval from 6 to infinity  are the answer, please use \"[ ]\". \"( )\" and U to write it in a mathematical form.",
+        "math": [
+            "$$(-\\infty,-3)$$",
+            "$$(6,\\infty)$$"
+        ],
+        "pacedSpeech": [
+            "We know that   the open interval from negative infinity to negative 3 ",
+            " and  , the open interval from 6 to infinity ",
+            " are the answer, please use \"[ ]\". \"( )\" and U to write it in a mathematical form."
+        ]
+    }
+]

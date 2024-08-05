@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a8f47f3deriv2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concave Down",
+        "text": "If a function is concave down, it indicates that $$\\operatorname{f''}\\left(x\\right)<0$$ for the interval I.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "If a function is concave down, it indicates that , f double prime, of x, is less than 0  for the interval I.",
+        "math": [
+            "$$\\operatorname{f''}\\left(x\\right)<0$$"
+        ],
+        "pacedSpeech": [
+            "If a function is concave down, it indicates that  , f double prime, of x, is less than 0 ",
+            " for the interval I."
+        ]
+    },
+    {
+        "id": "a8f47f3deriv2a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a8f47f3deriv2a-h1"
+        ],
+        "title": "Considering an Example",
+        "text": "Consider the function $$f(x)=\\sqrt{x}$$. Is f''(x) positive or negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative"
+        ],
+        "speech": "Consider the function , f of x is equal to the square root of x . Is f''(x) positive or negative?",
+        "math": [
+            "$$f(x)=\\sqrt{x}$$"
+        ],
+        "pacedSpeech": [
+            "Consider the function  , f of x is equal to the square root of x ",
+            ". Is f''(x) positive or negative?"
+        ]
+    }
+]

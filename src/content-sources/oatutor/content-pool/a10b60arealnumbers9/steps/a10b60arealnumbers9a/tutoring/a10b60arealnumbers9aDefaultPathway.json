@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a10b60arealnumbers9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dividing Exponents",
+        "text": "If two exponent expressions in a quotient have the same base (ex: (x**a)/(x**b)) then this is the same as $$x^{a-b}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "If two exponent expressions in a quotient have the same base (ex: (x**a)/(x**b)) then this is the same as , x raised to the a minus b power",
+        "math": [
+            "$$x^{a-b}$$"
+        ],
+        "pacedSpeech": [
+            "If two exponent expressions in a quotient have the same base (ex: (x**a)/(x**b)) then this is the same as  , x raised to the a minus b power"
+        ]
+    },
+    {
+        "id": "a10b60arealnumbers9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a^3$$"
+        ],
+        "dependencies": [
+            "a10b60arealnumbers9a-h1"
+        ],
+        "title": "SImplifying the Quotient",
+        "text": "What does $$\\frac{a^8}{a^5}$$ simplify to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What does  fraction, a to the eighth, over, a to the fifth,   simplify to?",
+        "math": [
+            "$$\\frac{a^8}{a^5}$$"
+        ],
+        "pacedSpeech": [
+            "What does   fraction, a to the eighth, over, a to the fifth,  ",
+            " simplify to?"
+        ]
+    },
+    {
+        "id": "a10b60arealnumbers9a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying Odd Roots",
+        "text": "When taking the nth root of some integer $$x$$ $$ \\geq $$ $$2$$, if $$n$$ is odd, the answer is $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When taking the nth root of some integer  x  , is greater than or equal to   2 , if  n  is odd, the answer is  x",
+        "math": [
+            "$$x$$",
+            "$$ \\geq $$",
+            "$$2$$",
+            "$$n$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "When taking the nth root of some integer   x ",
+            "  , is greater than or equal to ",
+            "   2 ",
+            ", if   n ",
+            " is odd, the answer is   x"
+        ]
+    },
+    {
+        "id": "a10b60arealnumbers9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "a"
+        ],
+        "dependencies": [
+            "a10b60arealnumbers9a-h3"
+        ],
+        "title": "Simplifying the Root",
+        "text": "What is $$\\sqrt[3]{a^3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , the cube root of a cubed end root ?",
+        "math": [
+            "$$\\sqrt[3]{a^3}$$"
+        ],
+        "pacedSpeech": [
+            "What is  , the cube root of a cubed end root"
+        ]
+    }
+]

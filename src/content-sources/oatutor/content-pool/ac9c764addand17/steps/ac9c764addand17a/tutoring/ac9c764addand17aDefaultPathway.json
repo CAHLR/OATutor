@@ -1,0 +1,117 @@
+[
+    {
+        "id": "ac9c764addand17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute $$9$$ for $$x$$, $$-18$$ for $$y$$, and $$-6$$ for $$z$$ in the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  9  for  x ,  negative 18  for  y , and  negative 6  for  z  in the expression.",
+        "math": [
+            "$$9$$",
+            "$$x$$",
+            "$$-18$$",
+            "$$y$$",
+            "$$-6$$",
+            "$$z$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   9 ",
+            " for   x ",
+            ",   negative 18 ",
+            " for   y ",
+            ", and   negative 6 ",
+            " for   z ",
+            " in the expression."
+        ]
+    },
+    {
+        "id": "ac9c764addand17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac9c764addand17a-h1"
+        ],
+        "title": "Substitute",
+        "text": "We get $$\\frac{9+\\left(-18\\right)}{\\left(-6\\right)}$$ after the substitution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We get  fraction, 9 plus negative 18, over, negative 6,   after the substitution.",
+        "math": [
+            "$$\\frac{9+\\left(-18\\right)}{\\left(-6\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "We get   fraction, 9 plus negative 18, over, negative 6,  ",
+            " after the substitution."
+        ]
+    },
+    {
+        "id": "ac9c764addand17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac9c764addand17a-h2"
+        ],
+        "title": "Numerator",
+        "text": "Add in the numerator first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Add in the numerator first.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Add in the numerator first."
+        ]
+    },
+    {
+        "id": "ac9c764addand17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9$$"
+        ],
+        "dependencies": [
+            "ac9c764addand17a-h3"
+        ],
+        "title": "Numerator",
+        "text": "What do we get for the numerator after adding the two together?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What do we get for the numerator after adding the two together?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What do we get for the numerator after adding the two together?"
+        ]
+    },
+    {
+        "id": "ac9c764addand17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "ac9c764addand17a-h4"
+        ],
+        "title": "Simplify",
+        "text": "What do we get after simplifying the fraction?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What do we get after simplifying the fraction?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What do we get after simplifying the fraction?"
+        ]
+    }
+]

@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a046eedintegrals1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Setting $$u=-x$$, and then $$du=-1dx$$. Multiply the du equation by $$-1$$, so now you have $$dx=-du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Setting  u is equal to, negative x , and then  d u is equal to negative 1 d x, . Multiply the du equation by  negative 1 , so now you have  d x is equal to negative d u",
+        "math": [
+            "$$u=-x$$",
+            "$$du=-1dx$$",
+            "$$-1$$",
+            "$$dx=-du$$"
+        ],
+        "pacedSpeech": [
+            "Setting   u is equal to, negative x ",
+            ", and then   d u is equal to negative 1 d x, ",
+            ". Multiply the du equation by   negative 1 ",
+            ", so now you have   d x is equal to negative d u"
+        ]
+    },
+    {
+        "id": "a046eedintegrals1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals1a-h1"
+        ],
+        "title": "Setting the Integral",
+        "text": "$$\\int e^{-x} \\,dx=-\\int e^x \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral of e raised to the negative x power d x is equal to, negative the integral of e to the x-th d x",
+        "math": [
+            "$$\\int e^{-x} \\,dx=-\\int e^x \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "the integral of e raised to the negative x power d x is equal to, negative the integral of e to the x-th d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-e**u)+C"
+        ],
+        "dependencies": [
+            "a046eedintegrals1a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "What is the result of the integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the result of the integration?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the result of the integration?"
+        ]
+    },
+    {
+        "id": "a046eedintegrals1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals1a-h3"
+        ],
+        "title": "Back-subsitute",
+        "text": "As we set $$u=-x$$ at the beginning, we then obtain $$-\\left(e^{\\left(-x\\right)}\\right)+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "As we set  u is equal to negative x  at the beginning, we then obtain  negative parentheses, e raised to the parentheses negative x  power  plus   c",
+        "math": [
+            "$$u=-x$$",
+            "$$-\\left(e^{\\left(-x\\right)}\\right)+C$$"
+        ],
+        "pacedSpeech": [
+            "As we set   u is equal to negative x ",
+            " at the beginning, we then obtain   negative , e raised to the  negative x  power  plus   c"
+        ]
+    }
+]

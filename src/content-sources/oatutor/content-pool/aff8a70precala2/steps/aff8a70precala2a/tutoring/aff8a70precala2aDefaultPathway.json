@@ -1,0 +1,329 @@
+[
+    {
+        "id": "aff8a70precala2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The property of the absolute value",
+        "text": "Use the property $$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$ to simplify $$|\\frac{2x+1}{3}|$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Use the property  the absolute value of a over b end absolute value is equal to fraction, the absolute value of a over, the absolute value of b   to simplify  the absolute value of fraction, 2 x plus 1, over 3,  end absolute value",
+        "math": [
+            "$$|\\frac{a}{b}|=\\frac{|a|}{|b|}$$",
+            "$$|\\frac{2x+1}{3}|$$"
+        ],
+        "pacedSpeech": [
+            "Use the property   the absolute value of a over b end absolute value is equal to fraction, the absolute value of a over, the absolute value of b  ",
+            " to simplify   the absolute value of fraction, 2 x plus 1, over 3,  end absolute value"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{|2x+1|}{|3|}$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h1"
+        ],
+        "title": "The property of the absolute value",
+        "text": "How to change $$|\\frac{2x+1}{3}|$$ using the given property?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{|2x+1|}{|3|}$$",
+            "$$\\frac{2x+1}{|3|}$$"
+        ],
+        "speech": "How to change  the absolute value of fraction, 2 x plus 1, over 3,  end absolute value  using the given property?",
+        "math": [
+            "$$|\\frac{2x+1}{3}|$$"
+        ],
+        "pacedSpeech": [
+            "How to change   the absolute value of fraction, 2 x plus 1, over 3,  end absolute value ",
+            " using the given property?"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is $$|3|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  the absolute value of 3 ?",
+        "math": [
+            "$$|3|$$"
+        ],
+        "pacedSpeech": [
+            "What is   the absolute value of 3"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Now we have $$\\frac{|2x+1|}{3} \\leq 3$$. Think about how we can simplify in the next step.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Now we have  fraction, the absolute value of 2 x plus 1, end absolute value over 3,  is less than or equal to 3 . Think about how we can simplify in the next step.",
+        "math": [
+            "$$\\frac{|2x+1|}{3} \\leq 3$$"
+        ],
+        "pacedSpeech": [
+            "Now we have   fraction, the absolute value of 2 x plus 1, end absolute value over 3,  is less than or equal to 3 ",
+            ". Think about how we can simplify in the next step."
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Note that $$\\frac{a}{b}=c$$ equals to $$b=\\frac{a}{c}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Note that  a over b, is equal to c  equals to  b, is equal to a over c .",
+        "math": [
+            "$$\\frac{a}{b}=c$$",
+            "$$b=\\frac{a}{c}$$"
+        ],
+        "pacedSpeech": [
+            "Note that   a over b, is equal to c ",
+            " equals to   b, is equal to a over c"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$|2x+1| \\leq 9$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified equation using the given hint?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$|2x+1| \\leq 9$$",
+            "$$|2x+1| \\geq 9$$",
+            "$$|2x+1| \\leq -9$$",
+            "$$|2x+1| \\geq -9$$"
+        ],
+        "speech": "What is the simplified equation using the given hint?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the simplified equation using the given hint?"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h6"
+        ],
+        "title": "Simplify",
+        "text": "$$|2x+1| \\leq 9$$ is equivalent to $$2x+1 \\leq 9$$ or $$2x+1 \\geq -9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "the absolute value of 2 x plus 1, end absolute value is less than or equal to 9  is equivalent to  2 x, plus 1 is less than or equal to 9  or  2 x, plus 1 is greater than or equal to, negative 9",
+        "math": [
+            "$$|2x+1| \\leq 9$$",
+            "$$2x+1 \\leq 9$$",
+            "$$2x+1 \\geq -9$$"
+        ],
+        "pacedSpeech": [
+            "the absolute value of 2 x plus 1, end absolute value is less than or equal to 9 ",
+            " is equivalent to   2 x, plus 1 is less than or equal to 9 ",
+            " or   2 x, plus 1 is greater than or equal to, negative 9"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x \\leq 4$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h7"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value for $$2x+1 \\leq 9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x \\leq 4$$",
+            "$$x \\geq 4$$",
+            "$$x \\leq -4$$",
+            "$$x \\geq -4$$"
+        ],
+        "speech": "What is the  x  value for  2 x, plus 1 is less than or equal to 9",
+        "math": [
+            "$$x$$",
+            "$$2x+1 \\leq 9$$"
+        ],
+        "pacedSpeech": [
+            "What is the   x ",
+            " value for   2 x, plus 1 is less than or equal to 9"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h8"
+        ],
+        "title": "Explanation",
+        "text": "$$2x \\leq 8$$, so $$x \\leq 4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "2 x, is less than or equal to, 8 , so  x, is less than or equal to 4",
+        "math": [
+            "$$2x \\leq 8$$",
+            "$$x \\leq 4$$"
+        ],
+        "pacedSpeech": [
+            "2 x, is less than or equal to, 8 ",
+            ", so   x, is less than or equal to 4"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x \\geq -5$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h9"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the $$x$$ value for $$2x+1 \\geq -9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$x \\geq -5$$",
+            "$$x \\leq -5$$",
+            "$$x \\geq 5$$",
+            "$$x \\leq 5$$"
+        ],
+        "speech": "What is the  x  value for  2 x, plus 1 is greater than or equal to, negative 9 ?",
+        "math": [
+            "$$x$$",
+            "$$2x+1 \\geq -9$$"
+        ],
+        "pacedSpeech": [
+            "What is the   x ",
+            " value for   2 x, plus 1 is greater than or equal to, negative 9"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h10"
+        ],
+        "title": "Explanation",
+        "text": "$$2x \\geq -10$$, so $$x \\geq -5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "2 x, is greater than or equal to, negative 10 , so  x, is greater than or equal to, negative 5",
+        "math": [
+            "$$2x \\geq -10$$",
+            "$$x \\geq -5$$"
+        ],
+        "pacedSpeech": [
+            "2 x, is greater than or equal to, negative 10 ",
+            ", so   x, is greater than or equal to, negative 5"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h12",
+        "type": "hint",
+        "dependencies": [
+            "aff8a70precala2a-h11"
+        ],
+        "title": "In interval notation",
+        "text": "Write $$x \\leq 4$$ and $$x \\geq -5$$ in interval notation",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Write  x is less than or equal to 4  and  x, is greater than or equal to, negative 5  in interval notation",
+        "math": [
+            "$$x \\leq 4$$",
+            "$$x \\geq -5$$"
+        ],
+        "pacedSpeech": [
+            "Write   x is less than or equal to 4 ",
+            " and   x, is greater than or equal to, negative 5 ",
+            " in interval notation"
+        ]
+    },
+    {
+        "id": "aff8a70precala2a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[-5,4]$$"
+        ],
+        "dependencies": [
+            "aff8a70precala2a-h12"
+        ],
+        "title": "In interval notation",
+        "text": "What is $$x \\leq 4$$ and $$x \\geq -5$$ in interval notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$[-5,4]$$",
+            "$$[-5,-4]$$",
+            "[4,5]",
+            "$$[-4,5]$$"
+        ],
+        "speech": "What is  x is less than or equal to 4  and  x, is greater than or equal to, negative 5  in interval notation?",
+        "math": [
+            "$$x \\leq 4$$",
+            "$$x \\geq -5$$"
+        ],
+        "pacedSpeech": [
+            "What is   x is less than or equal to 4 ",
+            " and   x, is greater than or equal to, negative 5 ",
+            " in interval notation?"
+        ]
+    }
+]

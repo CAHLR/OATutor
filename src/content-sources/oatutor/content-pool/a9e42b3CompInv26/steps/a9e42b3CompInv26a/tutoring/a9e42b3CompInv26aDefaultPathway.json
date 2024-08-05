@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a9e42b3CompInv26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What does it mean by (f\u00b0g)(x)?",
+        "text": "it means \"evaluate g at $$x$$, then evaluate f at the result g(x)\" which is f(g(x)).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "it means \"evaluate g at  x , then evaluate f at the result g(x)\" which is f(g(x)).",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "it means \"evaluate g at   x ",
+            ", then evaluate f at the result g(x)\" which is f(g(x))."
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv26a-h1"
+        ],
+        "title": "Substitute $$2x+5$$ for f(x)",
+        "text": "Substitute $$2x+5$$ for $$x$$ in f(x) and get $$f{\\left(2x+5\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  2 x plus 5  for  x  in f(x) and get  f of, parentheses, 2 x plus 5,",
+        "math": [
+            "$$2x+5$$",
+            "$$x$$",
+            "$$f{\\left(2x+5\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   2 x plus 5 ",
+            " for   x ",
+            " in f(x) and get   f of, , 2 x plus 5,"
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv26a-h2"
+        ],
+        "title": "Calculate f(x) with new $$x$$",
+        "text": "Calculate f(x) $$=$$ $$4x+3$$ with $$x$$ replaced by $$2x+5$$, which is $$f(x)=4\\left(2x+5\\right)$$ + $$3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate f(x)  is equal to   4 x, plus, 3  with  x  replaced by  2 x plus 5 , which is  f of x is equal to 4 times, parentheses, 2 x plus 5,   +  3",
+        "math": [
+            "$$=$$",
+            "$$4x+3$$",
+            "$$x$$",
+            "$$2x+5$$",
+            "$$f(x)=4\\left(2x+5\\right)$$",
+            "$$3$$"
+        ],
+        "pacedSpeech": [
+            "Calculate f(x)   is equal to ",
+            "   4 x, plus, 3 ",
+            " with   x ",
+            " replaced by   2 x plus 5 ",
+            ", which is   f of x is equal to 4 times, , 2 x plus 5,  ",
+            " +   3"
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv26a-h3"
+        ],
+        "title": "Simplify",
+        "text": "$$f(x)=4\\left(2x+5\\right)$$ + $$3=8x+23$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "f of x is equal to 4 times, parentheses, 2 x plus 5,   +  3 is equal to, 8 x plus 23",
+        "math": [
+            "$$f(x)=4\\left(2x+5\\right)$$",
+            "$$3=8x+23$$"
+        ],
+        "pacedSpeech": [
+            "f of x is equal to 4 times, , 2 x plus 5,  ",
+            " +   3 is equal to, 8 x plus 23"
+        ]
+    }
+]

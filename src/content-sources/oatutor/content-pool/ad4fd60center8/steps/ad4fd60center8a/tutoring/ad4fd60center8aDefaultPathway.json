@@ -1,0 +1,176 @@
+[
+    {
+        "id": "ad4fd60center8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The depicted region",
+        "text": "The graphs of the functions intersect at $$(-2,-3)$$ and $$(1,0)$$, so we integrate from $$-2$$ to $$1$$. For the sake of convenience, assume $$\ud835\udf0c=1$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "The graphs of the functions intersect at  times, parentheses, negative 2 comma negative 3,   and , parentheses 1 comma 0,  , so we integrate from  negative 2  to  1 . For the sake of convenience, assume  rho is equal to 1 .\\n##figure1.gif##",
+        "math": [
+            "$$(-2,-3)$$",
+            "$$(1,0)$$",
+            "$$-2$$",
+            "$$1$$",
+            "$$\ud835\udf0c=1$$"
+        ],
+        "pacedSpeech": [
+            "The graphs of the functions intersect at   times, , negative 2 comma negative 3,  ",
+            " and  ,  1 comma 0,  ",
+            ", so we integrate from   negative 2 ",
+            " to   1 ",
+            ". For the sake of convenience, assume   rho is equal to 1 ",
+            ".##figure1.gif##"
+        ]
+    },
+    {
+        "id": "ad4fd60center8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{2}$$"
+        ],
+        "dependencies": [
+            "ad4fd60center8a-h1"
+        ],
+        "title": "Total mass",
+        "text": "First, we calculate the total mass: $$\ud835\udf0c*\\int_{a}^{b} f(x)-g(x) \\,dx=\\int_{-2}^{1} 1-x^2-x-1 \\,dx$$. What is the value of the total mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "First, we calculate the total mass:  rho times, the integral from a to b of, f of x minus, g of x d x is equal to the integral from negative 2 to 1 of 1, minus x squared minus x minus 1 d x . What is the value of the total mass?",
+        "math": [
+            "$$\ud835\udf0c*\\int_{a}^{b} f(x)-g(x) \\,dx=\\int_{-2}^{1} 1-x^2-x-1 \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "First, we calculate the total mass:  this expression",
+            ". What is the value of the total mass?"
+        ]
+    },
+    {
+        "id": "ad4fd60center8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-27}{10}$$"
+        ],
+        "dependencies": [
+            "ad4fd60center8a-h2"
+        ],
+        "title": "The moments",
+        "text": "Next, we calculate the moments. $$\ud835\udc40x=\ud835\udf0c*\\int_{a}^{b} \\frac{1}{2} \\left({f{\\left(x\\right)}}^2-{g{\\left(x\\right)}}^2\\right) \\,dx=(1/2)*\\int_{-2}^{1} {\\left(1-x^2\\right)}^2-{\\left(x-1\\right)}^2 \\,dx$$. What is the value of\ud835\udc40x?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Next, we calculate the moments.    m x, is equal to rho times the integral from a to b of 1 half times parentheses, f of x squared, minus g of x squared  times d x is equal to parentheses 1 divided by 2,  times the integral from negative 2 to 1 of parentheses, 1 minus x squared,  squared minus parentheses x minus 1,  squared d x . What is the value of\ud835\udc40x?",
+        "math": [
+            "$$\ud835\udc40x=\ud835\udf0c*\\int_{a}^{b} \\frac{1}{2} \\left({f{\\left(x\\right)}}^2-{g{\\left(x\\right)}}^2\\right) \\,dx=(1/2)*\\int_{-2}^{1} {\\left(1-x^2\\right)}^2-{\\left(x-1\\right)}^2 \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "Next, we calculate the moments.  this expression",
+            ". What is the value of\ud835\udc40x?"
+        ]
+    },
+    {
+        "id": "ad4fd60center8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-9}{4}$$"
+        ],
+        "dependencies": [
+            "ad4fd60center8a-h3"
+        ],
+        "title": "The moments",
+        "text": "$$M_y=\ud835\udf0c*\\int_{a}^{b} x \\left(f{\\left(x\\right)}-g{\\left(x\\right)}\\right) \\,dx=\\int_{-2}^{1} x \\left(1-x^2-x-1\\right) \\,dx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "m sub y is equal to rho times the integral from a to b of x parentheses, f of x minus g of x  times d x is equal to the integral from negative 2 to 1 of x parentheses, 1 minus x squared minus x minus 1  times d x",
+        "math": [
+            "$$M_y=\ud835\udf0c*\\int_{a}^{b} x \\left(f{\\left(x\\right)}-g{\\left(x\\right)}\\right) \\,dx=\\int_{-2}^{1} x \\left(1-x^2-x-1\\right) \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "this expression"
+        ]
+    },
+    {
+        "id": "ad4fd60center8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "ad4fd60center8a-h4"
+        ],
+        "title": "The centroid of the region",
+        "text": "What is the value of x\u0304?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad4fd60center8a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "The centroid of the region",
+                "text": "$$x\u0304=\\frac{M_y}{m}=\\left(-\\frac{9}{4}\\right) \\frac{2}{9}=\\frac{-1}{2}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": "What is the value of x\u0304?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the value of x\u0304?"
+        ]
+    },
+    {
+        "id": "ad4fd60center8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{5}$$"
+        ],
+        "dependencies": [
+            "ad4fd60center8a-h5"
+        ],
+        "title": "The centroid of the region",
+        "text": "What is the value of \u0233?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad4fd60center8a-h6-s1",
+                "type": "hint",
+                "dependencies": [
+                    "ad4fd60center8a-h6"
+                ],
+                "title": "The centroid of the region",
+                "text": "$$\u0233=\\frac{M_x}{m}=-\\left(\\frac{27}{10}\\right) \\frac{2}{9}=\\frac{-3}{5}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": "What is the value of \u0233?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the value of \u0233?"
+        ]
+    }
+]

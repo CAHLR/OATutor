@@ -1,0 +1,144 @@
+[
+    {
+        "id": "abc1682approximating15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Properties of Sigma Notation",
+        "text": "We firstly separate $$2$$ terms In the sum then use the Properties of Sigma Notation to calculate them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We firstly separate  2  terms In the sum then use the Properties of Sigma Notation to calculate them.",
+        "math": [
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "We firstly separate   2 ",
+            " terms In the sum then use the Properties of Sigma Notation to calculate them."
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abc1682approximating15a-h1"
+        ],
+        "title": "Properties of Sigma Notation",
+        "text": "We can rewrite the sum as 2**2*sum{k\\=1}{25}{k**2)}-100*sum{j\\=1}{25}{k}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We can rewrite the sum as 2**2*sum{k\\=1}{25}{k**2)}-100*sum{j\\=1}{25}{k}",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We can rewrite the sum as 2**2*sum{k\\=1}{25}{k**2)}-100*sum{j\\=1}{25}{k}"
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$22100$$"
+        ],
+        "dependencies": [
+            "abc1682approximating15a-h2"
+        ],
+        "title": "Evaluate the sum",
+        "text": "What is the answer for the term 4*sum{k\\=1}{25}{k**2)} ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the answer for the term 4*sum{k\\=1}{25}{k**2)} ?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the answer for the term 4*sum{k\\=1}{25}{k**2)} ?"
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abc1682approximating15a-h3"
+        ],
+        "title": "Evaluate the sum",
+        "text": "Using Sums and Powers of Integers to obtain $$\\frac{50\\times51\\times101}{6}=42925$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Using Sums and Powers of Integers to obtain  fraction, 50 times 51 times 101, over 6,  is equal to 42925",
+        "math": [
+            "$$\\frac{50\\times51\\times101}{6}=42925$$"
+        ],
+        "pacedSpeech": [
+            "Using Sums and Powers of Integers to obtain   fraction, 50 times 51 times 101, over 6,  is equal to 42925"
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$32500$$"
+        ],
+        "dependencies": [
+            "abc1682approximating15a-h4"
+        ],
+        "title": "Evaluate the sum",
+        "text": "What is the answer for th term 100*sum{k\\=1}{25}{k} ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the answer for th term 100*sum{k\\=1}{25}{k} ?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the answer for th term 100*sum{k\\=1}{25}{k} ?"
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abc1682approximating15a-h5"
+        ],
+        "title": "Evaluate the sum",
+        "text": "Using Sums and Powers of Integers to obtain $$\\frac{50\\times51\\times2}{2}=2550$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Using Sums and Powers of Integers to obtain  fraction, 50 times 51 times 2, over 2,  is equal to 2550",
+        "math": [
+            "$$\\frac{50\\times51\\times2}{2}=2550$$"
+        ],
+        "pacedSpeech": [
+            "Using Sums and Powers of Integers to obtain   fraction, 50 times 51 times 2, over 2,  is equal to 2550"
+        ]
+    },
+    {
+        "id": "abc1682approximating15a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abc1682approximating15a-h6"
+        ],
+        "title": "Evaluate the sum",
+        "text": "$$22100-32500=-10400$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": ", 22100 minus 32500, is equal to negative 10400",
+        "math": [
+            "$$22100-32500=-10400$$"
+        ],
+        "pacedSpeech": [
+            ", 22100 minus 32500, is equal to negative 10400"
+        ]
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "id": "acff542gra2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=7$$ and $$y=1$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute , x is equal to 7  and  y, is equal to 1  into both inequalities.",
+        "math": [
+            "$$x=7$$",
+            "$$y=1$$"
+        ],
+        "pacedSpeech": [
+            "We substitute  , x is equal to 7 ",
+            " and   y, is equal to 1 ",
+            " into both inequalities."
+        ]
+    },
+    {
+        "id": "acff542gra2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra2b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$3x+y>5$$\\n$$3\\times7+1>5$$\\n$$22>5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "3 x plus y, is greater than, 5 \\n 3 times 7, plus 1 is greater than, 5 \\n 22, is greater than 5",
+        "math": [
+            "$$3x+y>5$$",
+            "$$3\\times7+1>5$$",
+            "$$22>5$$"
+        ],
+        "pacedSpeech": [
+            "3 x plus y, is greater than, 5 ",
+            "  3 times 7, plus 1 is greater than, 5 ",
+            "  22, is greater than 5"
+        ]
+    },
+    {
+        "id": "acff542gra2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "acff542gra2b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra2b-h3"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$2x-y \\leq 10$$\\n$$2\\times7-1 \\leq 10$$\\n$$13 \\leq 10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "2 x minus y, is less than or equal to 10 \\n 2 times 7, minus 1 is less than or equal to, 10 \\n 13, is less than or equal to 10",
+        "math": [
+            "$$2x-y \\leq 10$$",
+            "$$2\\times7-1 \\leq 10$$",
+            "$$13 \\leq 10$$"
+        ],
+        "pacedSpeech": [
+            "2 x minus y, is less than or equal to 10 ",
+            "  2 times 7, minus 1 is less than or equal to, 10 ",
+            "  13, is less than or equal to 10"
+        ]
+    },
+    {
+        "id": "acff542gra2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acff542gra2b-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra2b-h6",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra2b-h5"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(7,1)$$ does not make both inequalities true. $$(7,1)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses 7 comma 1,   does not make both inequalities true. , parentheses 7 comma 1,   is not a solution.",
+        "math": [
+            "$$(7,1)$$",
+            "$$(7,1)$$"
+        ],
+        "pacedSpeech": [
+            "times,  7 comma 1,  ",
+            " does not make both inequalities true.  ,  7 comma 1,  ",
+            " is not a solution."
+        ]
+    }
+]

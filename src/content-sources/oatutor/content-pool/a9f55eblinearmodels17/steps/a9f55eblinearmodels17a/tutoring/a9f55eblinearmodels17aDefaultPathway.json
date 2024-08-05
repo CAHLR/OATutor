@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a9f55eblinearmodels17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Building a Linear Model",
+        "text": "The first step is to build a linear model. For simplicity, we will define the input as years from $$2008$$, and the output as population. The initial value is $$28200$$ and the rate of change is $$\\frac{36800-28200}{4-0}$$, or the change in output over the change in input.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The first step is to build a linear model. For simplicity, we will define the input as years from  2008 , and the output as population. The initial value is  28200  and the rate of change is  fraction, 36800 minus 28200, over, 4 minus 0,  , or the change in output over the change in input.",
+        "math": [
+            "$$2008$$",
+            "$$28200$$",
+            "$$\\frac{36800-28200}{4-0}$$"
+        ],
+        "pacedSpeech": [
+            "The first step is to build a linear model. For simplicity, we will define the input as years from   2008 ",
+            ", and the output as population. The initial value is   28200 ",
+            " and the rate of change is   fraction, 36800 minus 28200, over, 4 minus 0,  ",
+            ", or the change in output over the change in input."
+        ]
+    },
+    {
+        "id": "a9f55eblinearmodels17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2150$$"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels17a-h1"
+        ],
+        "title": "Calculating the Rate of Change",
+        "text": "What is $$\\frac{36800-28200}{4-0}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  fraction, 36800 minus 28200, over, 4 minus 0,  ?",
+        "math": [
+            "$$\\frac{36800-28200}{4-0}$$"
+        ],
+        "pacedSpeech": [
+            "What is   fraction, 36800 minus 28200, over, 4 minus 0,"
+        ]
+    },
+    {
+        "id": "a9f55eblinearmodels17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9f55eblinearmodels17a-h2"
+        ],
+        "title": "Final Linear Model",
+        "text": "The rate of change is $$2150$$ $$\\frac{people}{year}$$, so the equation is $$P(t)=2150t+28200$$, where $$t$$ is years since $$2008$$ and P(t) is the population.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The rate of change is  2150   people over year , so the equation is    p of t is equal to 2150 t plus, 28200 , where  t  is years since  2008  and P(t) is the population.",
+        "math": [
+            "$$2150$$",
+            "$$\\frac{people}{year}$$",
+            "$$P(t)=2150t+28200$$",
+            "$$t$$",
+            "$$2008$$"
+        ],
+        "pacedSpeech": [
+            "The rate of change is   2150 ",
+            "   people over year ",
+            ", so the equation is     p of t is equal to 2150 t plus, 28200 ",
+            ", where   t ",
+            " is years since   2008 ",
+            " and P(t) is the population."
+        ]
+    },
+    {
+        "id": "a9f55eblinearmodels17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41100$$"
+        ],
+        "dependencies": [
+            "a9f55eblinearmodels17a-h3"
+        ],
+        "title": "Calculating the Final Answer",
+        "text": "$$P(t)=2150t+28200$$ when $$t$$ $$=$$ $$6$$ (since $$2014$$ is $$6$$ years after 2008), $$P(6)=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "p of t, is equal to 2150 t plus, 28200  when  t   is equal to   6  (since  2014  is  6  years after 2008),    p of 6 is equal to ?",
+        "math": [
+            "$$P(t)=2150t+28200$$",
+            "$$t$$",
+            "$$=$$",
+            "$$6$$",
+            "$$2014$$",
+            "$$6$$",
+            "$$P(6)=$$"
+        ],
+        "pacedSpeech": [
+            "p of t, is equal to 2150 t plus, 28200 ",
+            " when   t ",
+            "   is equal to ",
+            "   6 ",
+            " (since   2014 ",
+            " is   6 ",
+            " years after 2008),     p of 6 is equal to"
+        ]
+    }
+]

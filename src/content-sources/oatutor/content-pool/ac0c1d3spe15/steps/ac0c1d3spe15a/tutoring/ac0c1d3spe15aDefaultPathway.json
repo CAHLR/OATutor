@@ -1,0 +1,134 @@
+[
+    {
+        "id": "ac0c1d3spe15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Addition Binomial Square Formula",
+        "text": "We compare our expression to the addition binomial square formula: $${\\left(a+b\\right)}^2=a^2+2a b+b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We compare our expression to the addition binomial square formula:  parentheses a plus b,  squared is equal to a squared plus 2 a b, plus b squared .",
+        "math": [
+            "$${\\left(a+b\\right)}^2=a^2+2a b+b^2$$"
+        ],
+        "pacedSpeech": [
+            "We compare our expression to the addition binomial square formula:    a plus b,  squared is equal to a squared plus 2 a b, plus b squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe15a-h1"
+        ],
+        "title": "Compare the Binomial\\n",
+        "text": "$${\\left(a+b\\right)}^2$$\\n$${\\left(3z+\\frac{1}{5}\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "parentheses a plus b,  squared \\n parentheses, 3 z plus 1 fifth,  squared",
+        "math": [
+            "$${\\left(a+b\\right)}^2$$",
+            "$${\\left(3z+\\frac{1}{5}\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "a plus b,  squared ",
+            "  , 3 z plus 1 fifth,  squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3z$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe15a-h2"
+        ],
+        "title": "Identify a",
+        "text": "What is a in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is a in the expression?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is a in the expression?"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{5}$$"
+        ],
+        "dependencies": [
+            "ac0c1d3spe15a-h3"
+        ],
+        "title": "Identify $$b$$",
+        "text": "What is $$b$$ in the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b  in the expression?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is   b ",
+            " in the expression?"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe15a-h3",
+            "ac0c1d3spe15a-h4"
+        ],
+        "title": "Plug in the Terms",
+        "text": "Substitute $$a=3z$$ and $$b=\\frac{1}{5}$$ into the addition binomial square formula:\\n$${\\left(a+b\\right)}^2=a^2+2a b+b^2$$\\n$${\\left(3z+\\frac{1}{5}\\right)}^2={\\left(3z\\right)}^2+\\frac{2\\times3z\\times1}{5}+{\\left(\\frac{1}{5}\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  a is equal to, 3 z  and  b, is equal to 1 fifth  into the addition binomial square formula:\\n, parentheses a plus b,  squared is equal to a squared plus 2 a b, plus b squared \\n parentheses, 3 z plus 1 fifth,  squared is equal to parentheses 3 z  squared plus fraction, 2 times 3 z times 1, over 5,  plus, parentheses 1 fifth  squared",
+        "math": [
+            "$$a=3z$$",
+            "$$b=\\frac{1}{5}$$",
+            "$${\\left(a+b\\right)}^2=a^2+2a b+b^2$$",
+            "$${\\left(3z+\\frac{1}{5}\\right)}^2={\\left(3z\\right)}^2+\\frac{2\\times3z\\times1}{5}+{\\left(\\frac{1}{5}\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   a is equal to, 3 z ",
+            " and   b, is equal to 1 fifth ",
+            " into the addition binomial square formula: ,  a plus b,  squared is equal to a squared plus 2 a b, plus b squared ",
+            "  , 3 z plus 1 fifth,  squared is equal to  3 z  squared plus fraction, 2 times 3 z times 1, over 5,  plus,  1 fifth  squared"
+        ]
+    },
+    {
+        "id": "ac0c1d3spe15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac0c1d3spe15a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$9z^2+\\frac{6}{5} z+\\frac{1}{25}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "9 z squared, plus 6 fifths z plus 1 over 25",
+        "math": [
+            "$$9z^2+\\frac{6}{5} z+\\frac{1}{25}$$"
+        ],
+        "pacedSpeech": [
+            "9 z squared, plus 6 fifths z plus 1 over 25"
+        ]
+    }
+]

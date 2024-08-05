@@ -1,0 +1,170 @@
+[
+    {
+        "id": "ab3c11fVisualize3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining Simplified Fraction",
+        "text": "A fraction is considered simplified if there are no common factors in its numerator and denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "A fraction is considered simplified if there are no common factors in its numerator and denominator.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "A fraction is considered simplified if there are no common factors in its numerator and denominator."
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize3a-h1"
+        ],
+        "title": "General Approach",
+        "text": "Since it is hard to find all the common factors between the numerator and the denominator by observation, we will rewrite $$210$$ and $$385$$ as the product of primes and divide out the common factors from there.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since it is hard to find all the common factors between the numerator and the denominator by observation, we will rewrite  210  and  385,  as the product of primes and divide out the common factors from there.",
+        "math": [
+            "$$210$$",
+            "$$385$$"
+        ],
+        "pacedSpeech": [
+            "Since it is hard to find all the common factors between the numerator and the denominator by observation, we will rewrite   210 ",
+            " and   385, ",
+            " as the product of primes and divide out the common factors from there."
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\times3\\times5\\times7$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize3a-h2"
+        ],
+        "title": "Rewriting $$210$$",
+        "text": "What is $$210$$ written as the product of primes?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$10\\times21$$",
+            "$$2\\times5\\times21$$",
+            "$$2\\times3\\times5\\times7$$",
+            "$$2\\times3\\times3\\times5\\times7$$"
+        ],
+        "speech": "What is  210  written as the product of primes?",
+        "math": [
+            "$$210$$"
+        ],
+        "pacedSpeech": [
+            "What is   210 ",
+            " written as the product of primes?"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5\\times7\\times11$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize3a-h2"
+        ],
+        "title": "Rewriting $$385$$",
+        "text": "What is $$385$$ written as the product of primes?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$5\\times77$$",
+            "$$5\\times7\\times11$$",
+            "$$3\\times5\\times8$$",
+            "$$3\\times5\\times7$$"
+        ],
+        "speech": "What is  385  written as the product of primes?",
+        "math": [
+            "$$385$$"
+        ],
+        "pacedSpeech": [
+            "What is   385 ",
+            " written as the product of primes?"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize3a-h3",
+            "ab3c11fVisualize3a-h4"
+        ],
+        "title": "Rewriting Fraction",
+        "text": "Plug in the prime factoriazation of both the numerator and the denominator, we can rewrite the fraction as $$\\frac{-\\left(2\\times3\\times5\\times7\\right)}{5\\times7\\times11}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Plug in the prime factoriazation of both the numerator and the denominator, we can rewrite the fraction as  fraction, negative parentheses, 2 times 3 times 5 times 7 , over, 5 times 7 times 11,  .",
+        "math": [
+            "$$\\frac{-\\left(2\\times3\\times5\\times7\\right)}{5\\times7\\times11}$$"
+        ],
+        "pacedSpeech": [
+            "Plug in the prime factoriazation of both the numerator and the denominator, we can rewrite the fraction as   fraction, negative , 2 times 3 times 5 times 7 , over, 5 times 7 times 11,"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab3c11fVisualize3a-h5"
+        ],
+        "title": "Dividing Common Factors",
+        "text": "We can now divide out the common factors $$5$$ and $$7$$ from both the top and the bottom, which gives us the fraction $$\\frac{-\\left(2\\times3\\right)}{11}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can now divide out the common factors  5  and  7  from both the top and the bottom, which gives us the fraction  fraction, negative parentheses 2 times 3, , over 11,  .",
+        "math": [
+            "$$5$$",
+            "$$7$$",
+            "$$\\frac{-\\left(2\\times3\\right)}{11}$$"
+        ],
+        "pacedSpeech": [
+            "We can now divide out the common factors   5 ",
+            " and   7 ",
+            " from both the top and the bottom, which gives us the fraction   fraction, negative  2 times 3, , over 11,"
+        ]
+    },
+    {
+        "id": "ab3c11fVisualize3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-6}{11}$$"
+        ],
+        "dependencies": [
+            "ab3c11fVisualize3a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "Multiply the top. What simplified fraction do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply the top. What simplified fraction do you get?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Multiply the top. What simplified fraction do you get?"
+        ]
+    }
+]

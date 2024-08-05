@@ -1,0 +1,184 @@
+[
+    {
+        "id": "a4593e0functrans101a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Vertical Translations",
+        "text": "A vertical translation means that the output is translated by some amount of units a: $$f{\\left(x\\right)}+a$$. Translating up adds a while translating down subtracts a.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A vertical translation means that the output is translated by some amount of units a: , f of x plus a, . Translating up adds a while translating down subtracts a.",
+        "math": [
+            "$$f{\\left(x\\right)}+a$$"
+        ],
+        "pacedSpeech": [
+            "A vertical translation means that the output is translated by some amount of units a:  , f of x plus a, ",
+            ". Translating up adds a while translating down subtracts a."
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101a-h1"
+        ],
+        "title": "Understanding Vertical $$\\frac{Stretch}{Compression}$$",
+        "text": "A vertical $$\\frac{stretch}{compression}$$ means that the output is multiplied by some value b: $$b f{\\left(x\\right)}$$. Stretching multiplies $$b$$, while compressing multiplies $$\\frac{1}{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A vertical  stretch over compression  means that the output is multiplied by some value b:  b f of x, . Stretching multiplies  b , while compressing multiplies  1 over b .",
+        "math": [
+            "$$\\frac{stretch}{compression}$$",
+            "$$b f{\\left(x\\right)}$$",
+            "$$b$$",
+            "$$\\frac{1}{b}$$"
+        ],
+        "pacedSpeech": [
+            "A vertical   stretch over compression ",
+            " means that the output is multiplied by some value b:   b f of x, ",
+            ". Stretching multiplies   b ",
+            ", while compressing multiplies   1 over b"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101a-h2"
+        ],
+        "title": "Solving the Equation",
+        "text": "A vertical translation by a units, then a vertical $$\\frac{stretch}{compression}$$ by $$b$$ units can be combined to create one equation to solve: $$y=b \\left(f{\\left(x\\right)}+a\\right)=3x-6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A vertical translation by a units, then a vertical  stretch over compression  by  b  units can be combined to create one equation to solve:  y is equal to b, parentheses, f of x plus a,  is equal to, 3 x minus 6 .",
+        "math": [
+            "$$\\frac{stretch}{compression}$$",
+            "$$b$$",
+            "$$y=b \\left(f{\\left(x\\right)}+a\\right)=3x-6$$"
+        ],
+        "pacedSpeech": [
+            "A vertical translation by a units, then a vertical   stretch over compression ",
+            " by   b ",
+            " units can be combined to create one equation to solve:   y is equal to b, , f of x plus a,  is equal to, 3 x minus 6"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101a-h3"
+        ],
+        "title": "Solving the Equation",
+        "text": "Since the transformations are from $$y=x$$, the equation to solve is $$b \\left(x+a\\right)=3x-6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Since the transformations are from  y is equal to x , the equation to solve is , b, parentheses x plus a,  is equal to, 3 x minus 6 .",
+        "math": [
+            "$$y=x$$",
+            "$$b \\left(x+a\\right)=3x-6$$"
+        ],
+        "pacedSpeech": [
+            "Since the transformations are from   y is equal to x ",
+            ", the equation to solve is  , b,  x plus a,  is equal to, 3 x minus 6"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101a-h4"
+        ],
+        "title": "Solving the Equation",
+        "text": "The equation can be solved as a system of linear equations by looking at like terms:\\n\\n$$b=3$$\\n$$b a=-6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The equation can be solved as a system of linear equations by looking at like terms:\\n\\n b is equal to, 3 \\n b a, is equal to negative 6",
+        "math": [
+            "$$b=3$$",
+            "$$b a=-6$$"
+        ],
+        "pacedSpeech": [
+            "The equation can be solved as a system of linear equations by looking at like terms:  b is equal to, 3 ",
+            "  b a, is equal to negative 6"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans101a-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is the value of $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is the value of  b ?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is the value of   b"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans101a-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is the value of a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is the value of a?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the value of a?"
+        ]
+    },
+    {
+        "id": "a4593e0functrans101a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101a-h6",
+            "a4593e0functrans101a-h7"
+        ],
+        "title": "Translating into Words",
+        "text": "Since $$a=-2$$ and $$b=3$$, the transformations can now be written out. Translating up adds a while translating down subtracts a. Stretching multiplies $$b$$, while compressing multiplies $$\\frac{1}{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Since  a is equal to, negative 2  and  b, is equal to, 3 , the transformations can now be written out. Translating up adds a while translating down subtracts a. Stretching multiplies  b , while compressing multiplies  1 over b .",
+        "math": [
+            "$$a=-2$$",
+            "$$b=3$$",
+            "$$b$$",
+            "$$\\frac{1}{b}$$"
+        ],
+        "pacedSpeech": [
+            "Since   a is equal to, negative 2 ",
+            " and   b, is equal to, 3 ",
+            ", the transformations can now be written out. Translating up adds a while translating down subtracts a. Stretching multiplies   b ",
+            ", while compressing multiplies   1 over b"
+        ]
+    }
+]

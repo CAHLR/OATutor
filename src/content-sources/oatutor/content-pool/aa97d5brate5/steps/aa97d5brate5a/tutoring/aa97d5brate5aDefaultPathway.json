@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aa97d5brate5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\frac{Equation}{Substitute}$$",
+        "text": "The equation for calculuating the rate of change is $$\\frac{a\\left(x_1\\right)-a\\left(x_2\\right)}{x_1-x_2}$$. So to find the answer, we can start by plugging in $$9+h$$ for $$x_1$$ and $$9$$ for $$x_2$$, and we get the expression $$\\frac{\\frac{1}{9+h+4}-\\frac{1}{9+4}}{9+h-9}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The equation for calculuating the rate of change is  fraction, a of, parentheses x sub 1  minus, a of, parentheses x sub 2 , over, x sub 1 minus x sub 2,  . So to find the answer, we can start by plugging in  9 plus h  for  x sub 1  and  9  for  x sub 2 , and we get the expression  fraction, fraction, 1 over, 9 plus h plus 4,  minus, fraction, 1 over, 9 plus 4,  over, 9 plus h minus 9,  .",
+        "math": [
+            "$$\\frac{a\\left(x_1\\right)-a\\left(x_2\\right)}{x_1-x_2}$$",
+            "$$9+h$$",
+            "$$x_1$$",
+            "$$9$$",
+            "$$x_2$$",
+            "$$\\frac{\\frac{1}{9+h+4}-\\frac{1}{9+4}}{9+h-9}$$"
+        ],
+        "pacedSpeech": [
+            "The equation for calculuating the rate of change is   fraction, a of,  x sub 1  minus, a of,  x sub 2 , over, x sub 1 minus x sub 2,  ",
+            ". So to find the answer, we can start by plugging in   9 plus h ",
+            " for   x sub 1 ",
+            " and   9 ",
+            " for   x sub 2 ",
+            ", and we get the expression   fraction, fraction, 1 over, 9 plus h plus 4,  minus, fraction, 1 over, 9 plus 4,  over, 9 plus h minus 9,"
+        ]
+    },
+    {
+        "id": "aa97d5brate5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-1}{\\operatorname{13}\\left(13+h\\right)}$$"
+        ],
+        "dependencies": [
+            "aa97d5brate5a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression $$\\frac{\\frac{1}{9+h+4}-\\frac{1}{9+4}}{9+h-9}$$. What do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{\\operatorname{13}\\left(13+h\\right)}$$",
+            "$$\\frac{-1}{\\operatorname{13}\\left(13+h\\right)}$$",
+            "$$\\frac{1}{13h}$$",
+            "$$\\frac{-1}{13h}$$"
+        ],
+        "speech": "Simplify the expression  fraction, fraction, 1 over, 9 plus h plus 4,  minus, fraction, 1 over, 9 plus 4,  over, 9 plus h minus 9,  . What do you get?",
+        "math": [
+            "$$\\frac{\\frac{1}{9+h+4}-\\frac{1}{9+4}}{9+h-9}$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the expression   fraction, fraction, 1 over, 9 plus h plus 4,  minus, fraction, 1 over, 9 plus 4,  over, 9 plus h minus 9,  ",
+            ". What do you get?"
+        ]
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "id": "ab19046LimitlLaw13a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "Plug in the $$x$$ value to the function $$3x-18$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Plug in the , x  value to the function  3 x, minus 18",
+        "math": [
+            "$$x$$",
+            "$$3x-18$$"
+        ],
+        "pacedSpeech": [
+            "Plug in the  , x ",
+            " value to the function   3 x, minus 18"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw13a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "Plug in the $$x$$ value to the function $$2x-12$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Plug in the , x  value to the function  2 x, minus 12",
+        "math": [
+            "$$x$$",
+            "$$2x-12$$"
+        ],
+        "pacedSpeech": [
+            "Plug in the  , x ",
+            " value to the function   2 x, minus 12"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw13a-h2"
+        ],
+        "title": "Simplify $$3x-18$$",
+        "text": "$$3x-18=3\\left(x-6\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "3 x minus 18, is equal to 3 times, parentheses x minus 6,",
+        "math": [
+            "$$3x-18=3\\left(x-6\\right)$$"
+        ],
+        "pacedSpeech": [
+            "3 x minus 18, is equal to 3 times,  x minus 6,"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw13a-h3"
+        ],
+        "title": "Simplify $$2x-12$$",
+        "text": "$$2x-12=2\\left(x-6\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "2 x minus 12, is equal to 2 times, parentheses x minus 6,",
+        "math": [
+            "$$2x-12=2\\left(x-6\\right)$$"
+        ],
+        "pacedSpeech": [
+            "2 x minus 12, is equal to 2 times,  x minus 6,"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw13a-h4"
+        ],
+        "title": "Simplify the whole function",
+        "text": "$$\\frac{3\\left(x-6\\right)}{2\\left(x-6\\right)}=\\frac{3}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "fraction, 3 times, parentheses x minus 6, , over, 2 times, parentheses x minus 6, ,  is equal to 3 halves",
+        "math": [
+            "$$\\frac{3\\left(x-6\\right)}{2\\left(x-6\\right)}=\\frac{3}{2}$$"
+        ],
+        "pacedSpeech": [
+            "fraction, 3 times,  x minus 6, , over, 2 times,  x minus 6, ,  is equal to 3 halves"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw13a-h5"
+        ],
+        "title": "Plug in $$x$$ values to the new simplified function to get the result",
+        "text": "$$\\frac{3}{2}=1.5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": ", 3 halves is equal to 1.5,",
+        "math": [
+            "$$\\frac{3}{2}=1.5$$"
+        ],
+        "pacedSpeech": [
+            ", 3 halves is equal to 1.5,"
+        ]
+    }
+]

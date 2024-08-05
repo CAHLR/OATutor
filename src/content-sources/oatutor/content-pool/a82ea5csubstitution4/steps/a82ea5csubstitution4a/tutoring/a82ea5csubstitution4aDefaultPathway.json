@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a82ea5csubstitution4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Express $$x$$ in terms of u. If $$u=x-1$$, then $$x=u+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Express  x  in terms of u. If  u, is equal to, x minus 1 , then  x is equal to u plus 1 .",
+        "math": [
+            "$$x$$",
+            "$$u=x-1$$",
+            "$$x=u+1$$"
+        ],
+        "pacedSpeech": [
+            "Express   x ",
+            " in terms of u. If   u, is equal to, x minus 1 ",
+            ", then   x is equal to u plus 1"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution4a-h1"
+        ],
+        "title": "Rewrite the Integral in Terms of u",
+        "text": "What is the integral in terms of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int u^{\\frac{1}{2}} \\,du$$"
+        ],
+        "speech": "What is the integral in terms of u?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the integral in terms of u?"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution4a-h2"
+        ],
+        "title": "Integrate the Expression",
+        "text": "Integrate by replacing u with the original expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Integrate by replacing u with the original expression.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Integrate by replacing u with the original expression."
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution4a-h3"
+        ],
+        "title": "Factor and Simplify",
+        "text": "Factor and simplify the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Factor and simplify the result.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Factor and simplify the result."
+        ]
+    }
+]

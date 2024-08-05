@@ -1,0 +1,106 @@
+[
+    {
+        "id": "ab303f8factoring15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Goal",
+        "text": "Consider the binomial as $$a^3+b^3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Consider the binomial as , a cubed plus b cubed,",
+        "math": [
+            "$$a^3+b^3$$"
+        ],
+        "pacedSpeech": [
+            "Consider the binomial as  , a cubed plus b cubed,"
+        ]
+    },
+    {
+        "id": "ab303f8factoring15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring15a-h1"
+        ],
+        "title": "Formulas",
+        "text": "Recall: $$a^3+b^3=\\left(a+b\\right) \\left(a^2-ab+b^2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Recall:  a cubed plus b cubed, is equal to parentheses a plus b,  times parentheses, a squared minus a b plus b squared  .",
+        "math": [
+            "$$a^3+b^3=\\left(a+b\\right) \\left(a^2-ab+b^2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Recall:   a cubed plus b cubed, is equal to  a plus b,  times , a squared minus a b plus b squared"
+        ]
+    },
+    {
+        "id": "ab303f8factoring15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring15a-h2"
+        ],
+        "title": "Find a",
+        "text": "What is a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is a?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is a?"
+        ]
+    },
+    {
+        "id": "ab303f8factoring15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring15a-h3"
+        ],
+        "title": "Find $$b$$",
+        "text": "What is $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b ?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is   b"
+        ]
+    },
+    {
+        "id": "ab303f8factoring15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring15a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute the value of a and $$b$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute the value of a and  b  into the formula",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "Substitute the value of a and   b ",
+            " into the formula"
+        ]
+    }
+]

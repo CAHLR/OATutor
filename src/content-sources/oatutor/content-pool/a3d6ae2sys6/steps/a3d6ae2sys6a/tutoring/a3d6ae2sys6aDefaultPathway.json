@@ -1,0 +1,188 @@
+[
+    {
+        "id": "a3d6ae2sys6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=\\frac{8}{7}$$ and $$y=\\frac{6}{7}$$ into both equations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitue  x is equal to, 8 sevenths  and  y, is equal to 6 sevenths  into both equations.",
+        "math": [
+            "$$x=\\frac{8}{7}$$",
+            "$$y=\\frac{6}{7}$$"
+        ],
+        "pacedSpeech": [
+            "We substitue   x is equal to, 8 sevenths ",
+            " and   y, is equal to 6 sevenths ",
+            " into both equations."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys6a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$x+y=2$$\\n$$\\frac{8}{7}+\\frac{6}{7}=2$$\\n$$\\frac{14}{7}=2$$\\n$$2=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "x plus y, is equal to, 2 \\n 8 sevenths, plus 6 sevenths is equal to, 2 \\n 14 sevenths, is equal to 2 \\n 2, is equal to 2",
+        "math": [
+            "$$x+y=2$$",
+            "$$\\frac{8}{7}+\\frac{6}{7}=2$$",
+            "$$\\frac{14}{7}=2$$",
+            "$$2=2$$"
+        ],
+        "pacedSpeech": [
+            "x plus y, is equal to, 2 ",
+            "  8 sevenths, plus 6 sevenths is equal to, 2 ",
+            "  14 sevenths, is equal to 2 ",
+            "  2, is equal to 2"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys6a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys6a-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(\\frac{8}{7},\\frac{6}{7})$$ satisfies the first equation, but it must also safisfy the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, 8 sevenths comma 6 sevenths,   satisfies the first equation, but it must also safisfy the second equation.",
+        "math": [
+            "$$(\\frac{8}{7},\\frac{6}{7})$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , 8 sevenths comma 6 sevenths,  ",
+            " satisfies the first equation, but it must also safisfy the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys6a-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$y=\\frac{3}{4} x$$\\n$$\\frac{6}{7}=\\frac{8\\frac{3}{4}}{7}$$\\n$$\\frac{6}{7}=\\frac{6}{7}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "y is equal to, 3 fourths x, \\n 6 sevenths is equal to fraction, 8 and 3 fourths, over 7,  \\n 6 sevenths is equal to 6 sevenths",
+        "math": [
+            "$$y=\\frac{3}{4} x$$",
+            "$$\\frac{6}{7}=\\frac{8\\frac{3}{4}}{7}$$",
+            "$$\\frac{6}{7}=\\frac{6}{7}$$"
+        ],
+        "pacedSpeech": [
+            "y is equal to, 3 fourths x, ",
+            "  6 sevenths is equal to fraction, 8 and 3 fourths, over 7,  ",
+            "  6 sevenths is equal to 6 sevenths"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys6a-h5"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys6a-h6"
+        ],
+        "title": "Solution to Second Equation",
+        "text": "Therefore, $$(\\frac{8}{7},\\frac{6}{7})$$ does satisfies the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, 8 sevenths comma 6 sevenths,   does satisfies the second equation.",
+        "math": [
+            "$$(\\frac{8}{7},\\frac{6}{7})$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , 8 sevenths comma 6 sevenths,  ",
+            " does satisfies the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys6a-h7"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(\\frac{8}{7},\\frac{6}{7})$$ does make both equations true. $$(\\frac{8}{7},\\frac{6}{7})$$ is a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses, 8 sevenths comma 6 sevenths,   does make both equations true. , parentheses, 8 sevenths comma 6 sevenths,   is a solution.",
+        "math": [
+            "$$(\\frac{8}{7},\\frac{6}{7})$$",
+            "$$(\\frac{8}{7},\\frac{6}{7})$$"
+        ],
+        "pacedSpeech": [
+            "times, , 8 sevenths comma 6 sevenths,  ",
+            " does make both equations true.  , , 8 sevenths comma 6 sevenths,  ",
+            " is a solution."
+        ]
+    }
+]

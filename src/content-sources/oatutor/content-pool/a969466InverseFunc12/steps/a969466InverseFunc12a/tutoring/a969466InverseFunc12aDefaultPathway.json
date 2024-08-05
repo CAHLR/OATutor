@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a969466InverseFunc12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Composition",
+        "text": "If $$f(g(x))=x$$ for all $$x$$ in the domain g, and if $$g(f(x))=x$$ for all $$x$$ in the domain, then f and g are inverses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "If  f of g of x, is equal to x  for all  x  in the domain g, and if  g of f of x is equal to x  for all  x  in the domain, then f and g are inverses.",
+        "math": [
+            "$$f(g(x))=x$$",
+            "$$x$$",
+            "$$g(f(x))=x$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "If   f of g of x, is equal to x ",
+            " for all   x ",
+            " in the domain g, and if   g of f of x is equal to x ",
+            " for all   x ",
+            " in the domain, then f and g are inverses."
+        ]
+    },
+    {
+        "id": "a969466InverseFunc12a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a969466InverseFunc12a-h1"
+        ],
+        "title": "Functions in functions",
+        "text": "What is f(g(x))?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$x$$",
+            "f(x)",
+            "g(x)"
+        ],
+        "speech": "What is f(g(x))?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is f(g(x))?"
+        ]
+    },
+    {
+        "id": "a969466InverseFunc12a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a969466InverseFunc12a-h1"
+        ],
+        "title": "Functions in functions",
+        "text": "What is g(f(x))?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$x$$",
+            "f(x)",
+            "g(x)"
+        ],
+        "speech": "What is g(f(x))?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is g(f(x))?"
+        ]
+    }
+]

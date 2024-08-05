@@ -1,0 +1,146 @@
+[
+    {
+        "id": "acff542gra1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=-2$$ and $$y=4$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute  x is equal to, negative 2  and  y, is equal to 4  into both inequalities.",
+        "math": [
+            "$$x=-2$$",
+            "$$y=4$$"
+        ],
+        "pacedSpeech": [
+            "We substitute   x is equal to, negative 2 ",
+            " and   y, is equal to 4 ",
+            " into both inequalities."
+        ]
+    },
+    {
+        "id": "acff542gra1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra1a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$x+4y \\geq 10$$\\n$$-2+4\\times4 \\geq 10$$\\n$$14 \\geq 10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "x plus 4 y is greater than or equal to 10 \\n negative 2, plus 4 times 4 is greater than or equal to, 10 \\n 14, is greater than or equal to 10",
+        "math": [
+            "$$x+4y \\geq 10$$",
+            "$$-2+4\\times4 \\geq 10$$",
+            "$$14 \\geq 10$$"
+        ],
+        "pacedSpeech": [
+            "x plus 4 y is greater than or equal to 10 ",
+            "  negative 2, plus 4 times 4 is greater than or equal to, 10 ",
+            "  14, is greater than or equal to 10"
+        ]
+    },
+    {
+        "id": "acff542gra1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "acff542gra1a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra1a-h3"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$3x-2y<12$$\\n$$3\\left(-2\\right)-2\\times4<12$$\\n$$-14<12$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "3 x minus 2 y is less than 12 \\n 3 times negative 2 minus 2 times 4 is less than, 12 \\n negative 14, is less than 12",
+        "math": [
+            "$$3x-2y<12$$",
+            "$$3\\left(-2\\right)-2\\times4<12$$",
+            "$$-14<12$$"
+        ],
+        "pacedSpeech": [
+            "3 x minus 2 y is less than 12 ",
+            "  3 times negative 2 minus 2 times 4 is less than, 12 ",
+            "  negative 14, is less than 12"
+        ]
+    },
+    {
+        "id": "acff542gra1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "acff542gra1a-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra1a-h5"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(-2,4)$$ does make both inequalities true. $$(-2,4)$$ is a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses, negative 2 comma 4,   does make both inequalities true. , parentheses, negative 2 comma 4,   is a solution.",
+        "math": [
+            "$$(-2,4)$$",
+            "$$(-2,4)$$"
+        ],
+        "pacedSpeech": [
+            "times, , negative 2 comma 4,  ",
+            " does make both inequalities true.  , , negative 2 comma 4,  ",
+            " is a solution."
+        ]
+    }
+]

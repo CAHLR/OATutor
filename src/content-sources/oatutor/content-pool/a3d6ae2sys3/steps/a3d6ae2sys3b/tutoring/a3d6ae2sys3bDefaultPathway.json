@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a3d6ae2sys3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=1$$ and $$y=-2$$ into both equations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitue  x is equal to 1  and  y, is equal to negative 2  into both equations.",
+        "math": [
+            "$$x=1$$",
+            "$$y=-2$$"
+        ],
+        "pacedSpeech": [
+            "We substitue   x is equal to 1 ",
+            " and   y, is equal to negative 2 ",
+            " into both equations."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys3b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$7x-4y=-1$$\\n$$7\\times1-4\\times-2=-1$$\\n$$15=-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "7 x minus 4 y is equal to negative 1 \\n 7 times 1 minus 4 times negative 2 is equal to, negative 1 \\n 15, is equal to negative 1",
+        "math": [
+            "$$7x-4y=-1$$",
+            "$$7\\times1-4\\times-2=-1$$",
+            "$$15=-1$$"
+        ],
+        "pacedSpeech": [
+            "7 x minus 4 y is equal to negative 1 ",
+            "  7 times 1 minus 4 times negative 2 is equal to, negative 1 ",
+            "  15, is equal to negative 1"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys3b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys3b-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(1,-2)$$ does not satisfies the first equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, 1 comma negative 2,   does not satisfies the first equation.",
+        "math": [
+            "$$(1,-2)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , 1 comma negative 2,  ",
+            " does not satisfies the first equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys3b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys3b-h4"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(1,-2)$$ does not make both equations true. $$(1,-2)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses, 1 comma negative 2,   does not make both equations true. , parentheses, 1 comma negative 2,   is not a solution.",
+        "math": [
+            "$$(1,-2)$$",
+            "$$(1,-2)$$"
+        ],
+        "pacedSpeech": [
+            "times, , 1 comma negative 2,  ",
+            " does not make both equations true.  , , 1 comma negative 2,  ",
+            " is not a solution."
+        ]
+    }
+]

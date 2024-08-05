@@ -1,0 +1,145 @@
+[
+    {
+        "id": "a4593e0functrans111b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Input or Output?",
+        "text": "A transformation that affects the input is within the function paranetheses, while a transformation that affects the output is outside the function paranetheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A transformation that affects the input is within the function paranetheses, while a transformation that affects the output is outside the function paranetheses.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "A transformation that affects the input is within the function paranetheses, while a transformation that affects the output is outside the function paranetheses."
+        ]
+    },
+    {
+        "id": "a4593e0functrans111b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Input"
+        ],
+        "dependencies": [
+            "a4593e0functrans111b-h1"
+        ],
+        "title": "Input or Output?",
+        "text": "Does the step affect the input or output of the function?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Input",
+            "Output"
+        ],
+        "speech": "Does the step affect the input or output of the function?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Does the step affect the input or output of the function?"
+        ]
+    },
+    {
+        "id": "a4593e0functrans111b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans111b-h2"
+        ],
+        "title": "Horizontal or Vertical?",
+        "text": "A translation that affects the input is horizontal, while a translation that affects the output is vertical.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A translation that affects the input is horizontal, while a translation that affects the output is vertical.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "A translation that affects the input is horizontal, while a translation that affects the output is vertical."
+        ]
+    },
+    {
+        "id": "a4593e0functrans111b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Horizontal"
+        ],
+        "dependencies": [
+            "a4593e0functrans111b-h3"
+        ],
+        "title": "Horizontal or Vertical?",
+        "text": "Is the translation horizontal or vertical?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Horizontal",
+            "Vertical"
+        ],
+        "speech": "Is the translation horizontal or vertical?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the translation horizontal or vertical?"
+        ]
+    },
+    {
+        "id": "a4593e0functrans111b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans111b-h4"
+        ],
+        "title": "Understanding Translation",
+        "text": "A hoirzontal translation means that the input is added by some value b: $$f{\\left(x+b\\right)}$$. Translating left adds $$b$$, while translating right subtracts $$b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "A hoirzontal translation means that the input is added by some value b:  f of, parentheses x plus b,  . Translating left adds  b , while translating right subtracts  b .",
+        "math": [
+            "$$f{\\left(x+b\\right)}$$",
+            "$$b$$",
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "A hoirzontal translation means that the input is added by some value b:   f of,  x plus b,  ",
+            ". Translating left adds   b ",
+            ", while translating right subtracts   b"
+        ]
+    },
+    {
+        "id": "a4593e0functrans111b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Left"
+        ],
+        "dependencies": [
+            "a4593e0functrans111b-h5"
+        ],
+        "title": "Understanding Translation",
+        "text": "Is the horizontal translation left or right?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Left",
+            "Right"
+        ],
+        "speech": "Is the horizontal translation left or right?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the horizontal translation left or right?"
+        ]
+    }
+]

@@ -1,0 +1,205 @@
+[
+    {
+        "id": "a79a53dgood10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypotheses",
+        "text": "What are the Null Hypothesis $$H_0$$ and Alternative Hypothesis in this context?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What are the Null Hypothesis    h sub 0  and Alternative Hypothesis in this context?",
+        "math": [
+            "$$H_0$$"
+        ],
+        "pacedSpeech": [
+            "What are the Null Hypothesis     h sub 0 ",
+            " and Alternative Hypothesis in this context?"
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: The actual college majors of graduating females fit the distribution of their expected majors"
+        ],
+        "dependencies": [
+            "a79a53dgood10a-h1"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: The actual college majors of graduating females fit the distribution of their expected majors",
+            "$$H_0$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ],
+        "speech": "Choose the answer from the following.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Choose the answer from the following."
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_a$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ],
+        "dependencies": [],
+        "title": "Alternative Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_a$$: The actual college majors of graduating females fit the distribution of their expected majors",
+            "$$H_a$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ],
+        "speech": "Choose the answer from the following.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Choose the answer from the following."
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a79a53dgood10a-h2"
+        ],
+        "title": "Consider what distribution is most appropriate to use in this problem.",
+        "text": "Is this a Goodness-of-Fit problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Is this a Goodness-of-Fit problem?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is this a Goodness-of-Fit problem?"
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a79a53dgood10a-h3"
+        ],
+        "title": "What is the degree of freedom?",
+        "text": "$$df=11-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ", d f is equal to 11 minus 1",
+        "math": [
+            "$$df=11-1$$"
+        ],
+        "pacedSpeech": [
+            ", d f is equal to 11 minus 1"
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a79a53dgood10a-h4"
+        ],
+        "title": "Compute the chi-square test statistics",
+        "text": "$$X^2$$ $$=$$ $$11.48$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ",   x squared  , is equal to   11.48",
+        "math": [
+            "$$X^2$$",
+            "$$=$$",
+            "$$11.48$$"
+        ],
+        "pacedSpeech": [
+            ",   x squared ",
+            "  , is equal to ",
+            "   11.48"
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3211$$"
+        ],
+        "dependencies": [
+            "a79a53dgood10a-h5"
+        ],
+        "title": "Compute the $$p-value$$.",
+        "text": "Round the answer to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Round the answer to four decimal places.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Round the answer to four decimal places."
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a79a53dgood10a-h6"
+        ],
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, P < \\alpha. Reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "At 5% significance level, \\alpha  is equal to   0.05 . For this data, P < \\alpha. Reject the null hypothesis.",
+        "math": [
+            "$$=$$",
+            "$$0.05$$"
+        ],
+        "pacedSpeech": [
+            "At 5% significance level, \\alpha   is equal to ",
+            "   0.05 ",
+            ". For this data, P < \\alpha. Reject the null hypothesis."
+        ]
+    },
+    {
+        "id": "a79a53dgood10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a79a53dgood10a-h7"
+        ],
+        "title": "Interpret the Result",
+        "text": "At the 5% level of significance, from the data, there is insufficient evidence to conclude that the distribution of actual college majors of graduating females do not fit the distribution of their expected majors.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "At the 5% level of significance, from the data, there is insufficient evidence to conclude that the distribution of actual college majors of graduating females do not fit the distribution of their expected majors.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "At the 5% level of significance, from the data, there is insufficient evidence to conclude that the distribution of actual college majors of graduating females do not fit the distribution of their expected majors."
+        ]
+    }
+]

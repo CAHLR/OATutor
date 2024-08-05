@@ -1,0 +1,324 @@
+[
+    {
+        "id": "a3abd22AddRational4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Do all the terms in the expression have common denominator?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Do all the terms in the expression have common denominator?"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h1"
+        ],
+        "title": "Common Denominator",
+        "text": "Yes, $$\\frac{5x^2-7x+3}{x^2-3x-18}$$ and $$\\frac{4x^2+x-9}{x^2-3x-18}$$ shared the same common denominator of $$x^2-3x-18$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Yes,  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,   and  fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,   shared the same common denominator of  x squared minus 3 x minus 18 .",
+        "math": [
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}$$",
+            "$$\\frac{4x^2+x-9}{x^2-3x-18}$$",
+            "$$x^2-3x-18$$"
+        ],
+        "pacedSpeech": [
+            "Yes,   fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  ",
+            " and   fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,  ",
+            " shared the same common denominator of   x squared minus 3 x minus 18"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h2"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the difference over the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the difference over the common denominator.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Since all of fractions in the expression have common denominator, we can subtract the numerators and place the difference over the common denominator."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2-8x+12$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h3"
+        ],
+        "title": "Subtract the Numerators for Expression",
+        "text": "What is the difference of numerators for $$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the difference of numerators for  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  minus fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,  ?",
+        "math": [
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$"
+        ],
+        "pacedSpeech": [
+            "What is the difference of numerators for  this expression"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h4"
+        ],
+        "title": "Factor the Numerator",
+        "text": "We can factor the difference of numerator we yield from step above to check if we can simplify the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can factor the difference of numerator we yield from step above to check if we can simplify the expression.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We can factor the difference of numerator we yield from step above to check if we can simplify the expression."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-2\\right) \\left(x-6\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h5"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$x^2-8x+12$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor , x squared minus 8 x plus 12 .",
+        "math": [
+            "$$x^2-8x+12$$"
+        ],
+        "pacedSpeech": [
+            "Factor  , x squared minus 8 x plus 12"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-2\\right) \\left(x-6\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h6"
+        ],
+        "title": "Factor the Numerator",
+        "text": "In order to factor $$x^2-8x+12$$, you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling. $$\\left(x-a\\right) \\left(x-b\\right)=x^2-\\left(a+b\\right) x+ab$$. In this case, we get $$a b=12$$ and $$-\\left(a+b\\right)=-8$$. Assume both a and $$b$$ are integers, $$a=2$$ and $$b=6$$ is only one possible combination that satisfies $$a b=12$$ and $$-\\left(a+b\\right)=-8$$. So you can factor $$x^2-8x+12$$ as ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In order to factor  x squared minus 8 x plus 12 , you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling.  parentheses x minus a,  times, parentheses x minus b,  is equal to x squared minus, parentheses a plus b,  times x plus, a b . In this case, we get  a b is equal to 12  and , negative parentheses a plus b,  is equal to, negative 8 . Assume both a and  b  are integers,  a is equal to 2  and  b, is equal to, 6  is only one possible combination that satisfies  a b, is equal to 12  and , negative parentheses a plus b,  is equal to negative 8 . So you can factor  x squared, minus 8 x plus 12  as ?",
+        "math": [
+            "$$x^2-8x+12$$",
+            "$$\\left(x-a\\right) \\left(x-b\\right)=x^2-\\left(a+b\\right) x+ab$$",
+            "$$a b=12$$",
+            "$$-\\left(a+b\\right)=-8$$",
+            "$$b$$",
+            "$$a=2$$",
+            "$$b=6$$",
+            "$$a b=12$$",
+            "$$-\\left(a+b\\right)=-8$$",
+            "$$x^2-8x+12$$"
+        ],
+        "pacedSpeech": [
+            "In order to factor   x squared minus 8 x plus 12 ",
+            ", you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling.    x minus a,  times,  x minus b,  is equal to x squared minus,  a plus b,  times x plus, a b ",
+            ". In this case, we get   a b is equal to 12 ",
+            " and  , negative  a plus b,  is equal to, negative 8 ",
+            ". Assume both a and   b ",
+            " are integers,   a is equal to 2 ",
+            " and   b, is equal to, 6 ",
+            " is only one possible combination that satisfies   a b, is equal to 12 ",
+            " and  , negative  a plus b,  is equal to negative 8 ",
+            ". So you can factor   x squared, minus 8 x plus 12 ",
+            " as ?"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h7"
+        ],
+        "title": "Rewrite the expression",
+        "text": "From above steps, we get the difference of numerator is $$\\left(x-2\\right) \\left(x-6\\right)$$ and the denominator is $$x^2-3x-18$$. So we can rewrite $$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$ as $$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{x^2-3x-18}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "From above steps, we get the difference of numerator is  parentheses x minus 2,  times, parentheses x minus 6,   and the denominator is  x squared minus 3 x minus 18 . So we can rewrite  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  minus fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,   as  fraction, parentheses x minus 2,  times, parentheses x minus 6, , over, x squared minus 3 x minus 18,",
+        "math": [
+            "$$\\left(x-2\\right) \\left(x-6\\right)$$",
+            "$$x^2-3x-18$$",
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$",
+            "$$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{x^2-3x-18}$$"
+        ],
+        "pacedSpeech": [
+            "From above steps, we get the difference of numerator is    x minus 2,  times,  x minus 6,  ",
+            " and the denominator is   x squared minus 3 x minus 18 ",
+            ". So we can rewrite  this expression",
+            " as   fraction,  x minus 2,  times,  x minus 6, , over, x squared minus 3 x minus 18,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h8"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "Are there any ways to simplify $$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{x^2-3x-18}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Are there any ways to simplify  fraction, parentheses x minus 2,  times, parentheses x minus 6, , over, x squared minus 3 x minus 18,  ?",
+        "math": [
+            "$$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{x^2-3x-18}$$"
+        ],
+        "pacedSpeech": [
+            "Are there any ways to simplify   fraction,  x minus 2,  times,  x minus 6, , over, x squared minus 3 x minus 18,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-6\\right) \\left(x+3\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h9"
+        ],
+        "title": "Factor the Denominator",
+        "text": "Factor $$x^2-3x-18$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor , x squared minus 3 x minus 18 .",
+        "math": [
+            "$$x^2-3x-18$$"
+        ],
+        "pacedSpeech": [
+            "Factor  , x squared minus 3 x minus 18"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x-6$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h10"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "Put back together, we can rewrite $$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$ as $$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$. What is the greatest common factor shared by the numerator and denominator in $$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put back together, we can rewrite  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  minus fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,   as  fraction, parentheses x minus 2,  times, parentheses x minus 6, , over, parentheses x plus 3,  times, parentheses x minus 6, ,  . What is the greatest common factor shared by the numerator and denominator in  fraction, parentheses x minus 2,  times, parentheses x minus 6, , over, parentheses x plus 3,  times, parentheses x minus 6, ,  ?",
+        "math": [
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$",
+            "$$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$",
+            "$$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Put back together, we can rewrite  this expression",
+            " as   fraction,  x minus 2,  times,  x minus 6, , over,  x plus 3,  times,  x minus 6, ,  ",
+            ". What is the greatest common factor shared by the numerator and denominator in   fraction,  x minus 2,  times,  x minus 6, , over,  x plus 3,  times,  x minus 6, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-2}{x+3}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational4a-h11"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "As the final step, we cancel out $$x-6$$ on both numerator and denominator, what is the simplified form of $$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "As the final step, we cancel out  x minus 6  on both numerator and denominator, what is the simplified form of  fraction, parentheses x minus 2,  times, parentheses x minus 6, , over, parentheses x plus 3,  times, parentheses x minus 6, ,  ?",
+        "math": [
+            "$$x-6$$",
+            "$$\\frac{\\left(x-2\\right) \\left(x-6\\right)}{\\left(x+3\\right) \\left(x-6\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "As the final step, we cancel out   x minus 6 ",
+            " on both numerator and denominator, what is the simplified form of   fraction,  x minus 2,  times,  x minus 6, , over,  x plus 3,  times,  x minus 6, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational4a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational4a-h12"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the expression $$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$ and $$\\frac{x-2}{x+3}$$ are different because the domain of $$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$ does not include $$x=-3$$ and $$x=6$$. The domain of $$\\frac{x-2}{x+3}$$ does not exclude $$x=6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Note that the expression  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  minus fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,   and  fraction, x minus 2, over, x plus 3,   are different because the domain of  fraction, 5 x squared, minus 7 x plus 3, over, x squared minus 3 x minus 18,  minus fraction, 4 x squared, plus x minus 9, over, x squared minus 3 x minus 18,   does not include  x is equal to, negative 3  and  x, is equal to 6 . The domain of  fraction, x minus 2, over, x plus 3,   does not exclude  x is equal to 6 .",
+        "math": [
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$",
+            "$$\\frac{x-2}{x+3}$$",
+            "$$\\frac{5x^2-7x+3}{x^2-3x-18}-\\frac{4x^2+x-9}{x^2-3x-18}$$",
+            "$$x=-3$$",
+            "$$x=6$$",
+            "$$\\frac{x-2}{x+3}$$",
+            "$$x=6$$"
+        ],
+        "pacedSpeech": [
+            "Note that the expression  this expression",
+            " and   fraction, x minus 2, over, x plus 3,  ",
+            " are different because the domain of  this expression",
+            " does not include   x is equal to, negative 3 ",
+            " and   x, is equal to 6 ",
+            ". The domain of   fraction, x minus 2, over, x plus 3,  ",
+            " does not exclude   x is equal to 6"
+        ]
+    }
+]

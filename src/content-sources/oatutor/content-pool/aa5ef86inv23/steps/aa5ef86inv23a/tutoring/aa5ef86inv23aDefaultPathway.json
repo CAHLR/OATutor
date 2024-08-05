@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aa5ef86inv23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Inverse Matrix",
+        "text": "We must find the inverse of the matrix $$\\begin{bmatrix} \\frac{-8}{5} & \\frac{-4}{5} \\\\ \\frac{-8}{5} & \\frac{1}{5} \\end{bmatrix}$$, which is $$\\begin{bmatrix} \\frac{-1}{8} & \\frac{-1}{2} \\\\ -1 & 1 \\end{bmatrix}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We must find the inverse of the matrix  the 2 by 2 matrix row 1 column 1 fraction, negative 8, over 5,  column 2 fraction, negative 4, over 5,  row 2 column 1 fraction, negative 8, over 5,  column 2 1 fifth , which is  the 2 by 2 matrix row 1 column 1 fraction, negative 1, over 8,  column 2 fraction, negative 1, over 2,  row 2 column 1 negative 1, column 2 1",
+        "math": [
+            "$$\\begin{bmatrix} \\frac{-8}{5} & \\frac{-4}{5} \\\\ \\frac{-8}{5} & \\frac{1}{5} \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} \\frac{-1}{8} & \\frac{-1}{2} \\\\ -1 & 1 \\end{bmatrix}$$"
+        ],
+        "pacedSpeech": [
+            "We must find the inverse of the matrix  this expression",
+            ", which is  this expression"
+        ]
+    },
+    {
+        "id": "aa5ef86inv23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa5ef86inv23a-h1"
+        ],
+        "title": "Multiplying the constant matrix and the coefficient matrix.",
+        "text": "Now, we can multiply $$\\begin{bmatrix} \\frac{2}{5} \\\\ \\frac{7}{10} \\end{bmatrix}$$ by $$\\begin{bmatrix} \\frac{-1}{8} & \\frac{-1}{2} \\\\ -1 & 1 \\end{bmatrix}$$, giving us $$\\begin{bmatrix} \\frac{-2}{3} \\\\ \\frac{-11}{6} \\end{bmatrix}$$. Our answer is $$(\\frac{-2}{3},\\frac{-11}{6})$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, we can multiply  the 2 by 1 column matrix 2 fifths 7 tenths  by  the 2 by 2 matrix row 1 column 1 fraction, negative 1, over 8,  column 2 fraction, negative 1, over 2,  row 2 column 1 negative 1, column 2 1 , giving us  the 2 by 1 column matrix row 1 fraction, negative 2, over 3,  row 2 fraction, negative 11, over 6,  . Our answer is  parentheses fraction, negative 2, over 3,  comma, fraction, negative 11, over 6,",
+        "math": [
+            "$$\\begin{bmatrix} \\frac{2}{5} \\\\ \\frac{7}{10} \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} \\frac{-1}{8} & \\frac{-1}{2} \\\\ -1 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} \\frac{-2}{3} \\\\ \\frac{-11}{6} \\end{bmatrix}$$",
+            "$$(\\frac{-2}{3},\\frac{-11}{6})$$"
+        ],
+        "pacedSpeech": [
+            "Now, we can multiply   the 2 by 1 column matrix 2 fifths 7 tenths ",
+            " by  this expression",
+            ", giving us   the 2 by 1 column matrix row 1 fraction, negative 2, over 3,  row 2 fraction, negative 11, over 6,  ",
+            ". Our answer is    fraction, negative 2, over 3,  comma, fraction, negative 11, over 6,"
+        ]
+    }
+]

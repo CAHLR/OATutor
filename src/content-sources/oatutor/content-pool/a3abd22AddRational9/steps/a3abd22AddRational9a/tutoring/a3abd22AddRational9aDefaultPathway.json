@@ -1,0 +1,273 @@
+[
+    {
+        "id": "a3abd22AddRational9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Do all the terms in the expression have common denominator?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Do all the terms in the expression have common denominator?"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "No, the denominators of terms in the expression are different. We can find the common denominator for both terms. Notice that $$n^2-1=-1\\left(1-n^2\\right)$$. We can multiply $$\\frac{\\left(-1\\right)}{\\left(-1\\right)}$$ with $$\\frac{n^2-7n-1}{1-n^2}$$. We can rewrite the expression as $$\\frac{2n^2+8n-1}{n^2-1}-\\left(-\\frac{n^2-7n-1}{n^2-1}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "No, the denominators of terms in the expression are different. We can find the common denominator for both terms. Notice that  n squared minus 1, is equal to negative 1 times, parentheses, 1 minus n squared,  . We can multiply , fraction, negative 1, over, negative 1,   with  fraction, n squared minus 7 n minus 1, over, 1 minus n squared,  . We can rewrite the expression as  fraction, 2 n squared, plus 8 n minus 1, over, n squared minus 1,  minus parentheses negative fraction, n squared minus 7 n minus 1, over, n squared minus 1,",
+        "math": [
+            "$$n^2-1=-1\\left(1-n^2\\right)$$",
+            "$$\\frac{\\left(-1\\right)}{\\left(-1\\right)}$$",
+            "$$\\frac{n^2-7n-1}{1-n^2}$$",
+            "$$\\frac{2n^2+8n-1}{n^2-1}-\\left(-\\frac{n^2-7n-1}{n^2-1}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "No, the denominators of terms in the expression are different. We can find the common denominator for both terms. Notice that   n squared minus 1, is equal to negative 1 times, , 1 minus n squared,  ",
+            ". We can multiply  , fraction, negative 1, over, negative 1,  ",
+            " with   fraction, n squared minus 7 n minus 1, over, 1 minus n squared,  ",
+            ". We can rewrite the expression as  this expression"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h2"
+        ],
+        "title": "Subtract Numerators",
+        "text": "Since all the terms in the expression have the same denominator, we can directly subtract their numerators.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since all the terms in the expression have the same denominator, we can directly subtract their numerators.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Since all the terms in the expression have the same denominator, we can directly subtract their numerators."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3n^2+n-2$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational9a-h3"
+        ],
+        "title": "Subtract Numerators",
+        "text": "What is the difference of numerators for $$\\frac{2n^2+8n-1}{n^2-1}-\\left(-\\frac{n^2-7n-1}{n^2-1}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the difference of numerators for  fraction, 2 n squared, plus 8 n minus 1, over, n squared minus 1,  minus parentheses negative fraction, n squared minus 7 n minus 1, over, n squared minus 1,   ?",
+        "math": [
+            "$$\\frac{2n^2+8n-1}{n^2-1}-\\left(-\\frac{n^2-7n-1}{n^2-1}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is the difference of numerators for  this expression"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h4"
+        ],
+        "title": "Rewrite the expression",
+        "text": "We can rewrite $$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$ as $$\\frac{3n^2+n-2}{n^2-1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can rewrite  fraction, 2 n squared, plus 8 n minus 1, over, n squared minus 1,  minus fraction, n squared minus 7 n minus 1, over, 1 minus n squared,   as  fraction, 3 n squared, plus n minus 2, over, n squared minus 1,",
+        "math": [
+            "$$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$",
+            "$$\\frac{3n^2+n-2}{n^2-1}$$"
+        ],
+        "pacedSpeech": [
+            "We can rewrite  this expression",
+            " as   fraction, 3 n squared, plus n minus 2, over, n squared minus 1,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h5"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "We can try to factor the numerator and denominator to see if we can further simplify the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can try to factor the numerator and denominator to see if we can further simplify the expression.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We can try to factor the numerator and denominator to see if we can further simplify the expression."
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(3n-2\\right) \\left(n+1\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational9a-h6"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$3n^2+n-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor , 3 n squared, plus n minus 2",
+        "math": [
+            "$$3n^2+n-2$$"
+        ],
+        "pacedSpeech": [
+            "Factor  , 3 n squared, plus n minus 2"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(n-1\\right) \\left(n+1\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational9a-h7"
+        ],
+        "title": "Factor the Denominator",
+        "text": "Factor $$n^2-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Factor  n squared minus 1,",
+        "math": [
+            "$$n^2-1$$"
+        ],
+        "pacedSpeech": [
+            "Factor   n squared minus 1,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h8"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "We can rewrite $$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$ as $$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can rewrite  fraction, 2 n squared, plus 8 n minus 1, over, n squared minus 1,  minus fraction, n squared minus 7 n minus 1, over, 1 minus n squared,   as  fraction, parentheses, 3 n minus 2,  times, parentheses n plus 1, , over, parentheses n minus 1,  times, parentheses n plus 1, ,  .",
+        "math": [
+            "$$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$",
+            "$$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "We can rewrite  this expression",
+            " as   fraction, , 3 n minus 2,  times,  n plus 1, , over,  n minus 1,  times,  n plus 1, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n+1$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational9a-h9"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "What is the greatest common factor in numerator and denominator of $$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the greatest common factor in numerator and denominator of  fraction, parentheses, 3 n minus 2,  times, parentheses n plus 1, , over, parentheses n minus 1,  times, parentheses n plus 1, ,  ?",
+        "math": [
+            "$$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "What is the greatest common factor in numerator and denominator of   fraction, , 3 n minus 2,  times,  n plus 1, , over,  n minus 1,  times,  n plus 1, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3n-2}{n-1}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational9a-h10"
+        ],
+        "title": "Simplify Expression By Canceling out Terms",
+        "text": "As the last step, we will cancel out $$n+1$$ from both numerator and denominator, what is the simplified form of $$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "As the last step, we will cancel out  n plus 1  from both numerator and denominator, what is the simplified form of  fraction, parentheses, 3 n minus 2,  times, parentheses n plus 1, , over, parentheses n minus 1,  times, parentheses n plus 1, ,  ?",
+        "math": [
+            "$$n+1$$",
+            "$$\\frac{\\left(3n-2\\right) \\left(n+1\\right)}{\\left(n-1\\right) \\left(n+1\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "As the last step, we will cancel out   n plus 1 ",
+            " from both numerator and denominator, what is the simplified form of   fraction, , 3 n minus 2,  times,  n plus 1, , over,  n minus 1,  times,  n plus 1, ,"
+        ]
+    },
+    {
+        "id": "a3abd22AddRational9a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational9a-h11"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the expression (((2n**2)+8*n-1)/(n**2-1))-((n**2-7*n-1)/(1-n**2))) and $$\\frac{3n-2}{n-1}$$ are different because the domain of $$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$ does not include $$x=-1$$ and the domain of $$\\frac{3n-2}{n-1}$$ does not exclude $$x=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Note that the expression (((2n**2)+8*n-1)/(n**2-1))-((n**2-7*n-1)/(1-n**2))) and  fraction, 3 n minus 2, over, n minus 1,   are different because the domain of  fraction, 2 n squared, plus 8 n minus 1, over, n squared minus 1,  minus fraction, n squared minus 7 n minus 1, over, 1 minus n squared,   does not include  x is equal to negative 1  and the domain of  fraction, 3 n minus 2, over, n minus 1,   does not exclude  x is equal to negative 1 .",
+        "math": [
+            "$$\\frac{3n-2}{n-1}$$",
+            "$$\\frac{2n^2+8n-1}{n^2-1}-\\frac{n^2-7n-1}{1-n^2}$$",
+            "$$x=-1$$",
+            "$$\\frac{3n-2}{n-1}$$",
+            "$$x=-1$$"
+        ],
+        "pacedSpeech": [
+            "Note that the expression (((2n**2)+8*n-1)/(n**2-1))-((n**2-7*n-1)/(1-n**2))) and   fraction, 3 n minus 2, over, n minus 1,  ",
+            " are different because the domain of  this expression",
+            " does not include   x is equal to negative 1 ",
+            " and the domain of   fraction, 3 n minus 2, over, n minus 1,  ",
+            " does not exclude   x is equal to negative 1"
+        ]
+    }
+]

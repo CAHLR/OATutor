@@ -1,0 +1,243 @@
+[
+    {
+        "id": "a38da08geo5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "When $$w=0$$",
+        "text": "If $$w=0$$, then $$2w^2+4w h=0 \\neq 32$$, so $$w \\neq 0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "If  w is equal to 0 , then  2 w squared plus 4 w h is equal to 0 is not equal to, 32 , so  w, is not equal to 0 .",
+        "math": [
+            "$$w=0$$",
+            "$$2w^2+4w h=0 \\neq 32$$",
+            "$$w \\neq 0$$"
+        ],
+        "pacedSpeech": [
+            "If   w is equal to 0 ",
+            ", then   2 w squared plus 4 w h is equal to 0 is not equal to, 32 ",
+            ", so   w, is not equal to 0"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h1"
+        ],
+        "title": "Simplification",
+        "text": "$$2w^2+4w h=32$$. $$w \\left(w+2h\\right)=16$$. $$\\frac{16}{w}=w+2h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "2 w squared, plus 4 w h is equal to 32 .  w, parentheses, w plus 2 h,  is equal to, 16 .  16 over w is equal to, w plus 2 h .",
+        "math": [
+            "$$2w^2+4w h=32$$",
+            "$$w \\left(w+2h\\right)=16$$",
+            "$$\\frac{16}{w}=w+2h$$"
+        ],
+        "pacedSpeech": [
+            "2 w squared, plus 4 w h is equal to 32 ",
+            ".   w, , w plus 2 h,  is equal to, 16 ",
+            ".   16 over w is equal to, w plus 2 h"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h=\\frac{8}{w}-\\frac{w}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h2"
+        ],
+        "title": "Simplification",
+        "text": "Express $$\\frac{16}{w}=w+2h$$ in the form of $$h$$. What is the result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$h=\\frac{8}{w}+\\frac{w}{2}$$",
+            "$$h=\\frac{8}{w}-\\frac{w}{2}$$",
+            "$$h=\\frac{8}{w}-\\frac{2}{w}$$",
+            "$$h=\\frac{-8}{w}-\\frac{w}{2}$$"
+        ],
+        "speech": "Express  16 over w, is equal to, w plus 2 h  in the form of  h . What is the result?",
+        "math": [
+            "$$\\frac{16}{w}=w+2h$$",
+            "$$h$$"
+        ],
+        "pacedSpeech": [
+            "Express   16 over w, is equal to, w plus 2 h ",
+            " in the form of   h ",
+            ". What is the result?"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8w-\\frac{w^3}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h3"
+        ],
+        "title": "Volume",
+        "text": "Substitute $$h=\\frac{8}{w}-\\frac{w}{2}$$ to $$V=w^2 h$$. What is the volume expressed in w only?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$8w-\\frac{w^3}{2}$$",
+            "$$8-\\frac{w^2}{2}$$"
+        ],
+        "speech": "Substitute  h is equal to 8 over w, minus, w over 2,  to    v is equal to w squared h . What is the volume expressed in w only?",
+        "math": [
+            "$$h=\\frac{8}{w}-\\frac{w}{2}$$",
+            "$$V=w^2 h$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   h is equal to 8 over w, minus, w over 2, ",
+            " to     v is equal to w squared h ",
+            ". What is the volume expressed in w only?"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h4"
+        ],
+        "title": "Range",
+        "text": "w must be nonnegative since it represents width, and since $$w \\neq 0$$, $$w>0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "w must be nonnegative since it represents width, and since  w is not equal to, 0 ,  w, is greater than 0 .",
+        "math": [
+            "$$w \\neq 0$$",
+            "$$w>0$$"
+        ],
+        "pacedSpeech": [
+            "w must be nonnegative since it represents width, and since   w is not equal to, 0 ",
+            ",   w, is greater than 0"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h5"
+        ],
+        "title": "Range",
+        "text": "$$h \\geq 0$$, so $$\\frac{8}{w}-\\frac{w}{2} \\geq 0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "h is greater than or equal to 0 , so  8 over w minus w over 2 is greater than or equal to 0",
+        "math": [
+            "$$h \\geq 0$$",
+            "$$\\frac{8}{w}-\\frac{w}{2} \\geq 0$$"
+        ],
+        "pacedSpeech": [
+            "h is greater than or equal to 0 ",
+            ", so   8 over w minus w over 2 is greater than or equal to 0"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h7",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo5c-h6"
+        ],
+        "title": "Simplification",
+        "text": "Multiply w on both sides, we get $$8-\\frac{w^2}{2} \\geq 0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Multiply w on both sides, we get  8 minus, fraction, w squared, over 2,  is greater than or equal to 0 .",
+        "math": [
+            "$$8-\\frac{w^2}{2} \\geq 0$$"
+        ],
+        "pacedSpeech": [
+            "Multiply w on both sides, we get   8 minus, fraction, w squared, over 2,  is greater than or equal to 0"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$w \\leq 4$$"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h7"
+        ],
+        "title": "Simplification",
+        "text": "What is the range of w?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$w \\leq 4$$",
+            "$$w \\leq -4$$",
+            "$$w \\geq 4$$",
+            "$$w \\geq -4$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo5c-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Simplification",
+                "text": "$$\\frac{w^2}{2} \\leq 8$$, $$w^2 \\leq 16$$. Since w >0, $$w \\leq 4$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ],
+        "speech": "What is the range of w?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the range of w?"
+        ]
+    },
+    {
+        "id": "a38da08geo5c-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,4]"
+        ],
+        "dependencies": [
+            "a38da08geo5c-h8"
+        ],
+        "title": "Simplification",
+        "text": "What is $$w \\leq 4$$ in interval notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "(0,4]",
+            "[0,4]",
+            "$$(0,4)$$"
+        ],
+        "speech": "What is , w is less than or equal to 4,  in interval notation?",
+        "math": [
+            "$$w \\leq 4$$"
+        ],
+        "pacedSpeech": [
+            "What is  , w is less than or equal to 4, ",
+            " in interval notation?"
+        ]
+    }
+]

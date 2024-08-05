@@ -1,0 +1,186 @@
+[
+    {
+        "id": "a3d6ae2sys5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=-5$$ and $$y=-7$$ into both equations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitue  x is equal to, negative 5  and  y, is equal to negative 7  into both equations.",
+        "math": [
+            "$$x=-5$$",
+            "$$y=-7$$"
+        ],
+        "pacedSpeech": [
+            "We substitue   x is equal to, negative 5 ",
+            " and   y, is equal to negative 7 ",
+            " into both equations."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$-3x+y=8$$\\n$$-3\\times-5-7=8$$\\n$$8=8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "minus 3 x plus y is equal to 8 \\n, negative 3 times negative 5 minus 7 is equal to 8 \\n 8, is equal to 8",
+        "math": [
+            "$$-3x+y=8$$",
+            "$$-3\\times-5-7=8$$",
+            "$$8=8$$"
+        ],
+        "pacedSpeech": [
+            "minus 3 x plus y is equal to 8 ",
+            " , negative 3 times negative 5 minus 7 is equal to 8 ",
+            "  8, is equal to 8"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys5a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5a-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(-5,-7)$$ satisfies the first equation, but it must also safisfy the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, negative 5 comma negative 7,   satisfies the first equation, but it must also safisfy the second equation.",
+        "math": [
+            "$$(-5,-7)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , negative 5 comma negative 7,  ",
+            " satisfies the first equation, but it must also safisfy the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5a-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$-x+2y=-9$$\\n$$-\\left(-5\\right)+2\\times-7=-9$$\\n$$-9=-9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "minus x plus 2 y is equal to negative 9 \\n negative negative 5 plus 2 times negative 7 is equal to, negative 9 \\n negative 9 is equal to negative 9",
+        "math": [
+            "$$-x+2y=-9$$",
+            "$$-\\left(-5\\right)+2\\times-7=-9$$",
+            "$$-9=-9$$"
+        ],
+        "pacedSpeech": [
+            "minus x plus 2 y is equal to negative 9 ",
+            "  negative negative 5 plus 2 times negative 7 is equal to, negative 9 ",
+            "  negative 9 is equal to negative 9"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys5a-h5"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5a-h6"
+        ],
+        "title": "Solution to Second Equation",
+        "text": "Therefore, $$(-5,-7)$$ does satisfies the second equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, negative 5 comma negative 7,   does satisfies the second equation.",
+        "math": [
+            "$$(-5,-7)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , negative 5 comma negative 7,  ",
+            " does satisfies the second equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5a-h7"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(-5,-7)$$ does make both equations true. $$(-5,-7)$$ is a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses, negative 5 comma negative 7,   does make both equations true. , parentheses, negative 5 comma negative 7,   is a solution.",
+        "math": [
+            "$$(-5,-7)$$",
+            "$$(-5,-7)$$"
+        ],
+        "pacedSpeech": [
+            "times, , negative 5 comma negative 7,  ",
+            " does make both equations true.  , , negative 5 comma negative 7,  ",
+            " is a solution."
+        ]
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "id": "a20771equad2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Completing the Square",
+        "text": "To complete the square, we need to add a term to make the entire expression of the form $$a^2+2ab+b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To complete the square, we need to add a term to make the entire expression of the form  a squared plus 2 a b, plus b squared .",
+        "math": [
+            "$$a^2+2ab+b^2$$"
+        ],
+        "pacedSpeech": [
+            "To complete the square, we need to add a term to make the entire expression of the form   a squared plus 2 a b, plus b squared"
+        ]
+    },
+    {
+        "id": "a20771equad2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad2a-h1"
+        ],
+        "title": "Completing the Square",
+        "text": "In this case, we want to add a term to $$2x^2-3x$$ to make it a perfect square. Assume $$2x^2$$ is the $$a^2$$ term and $$-3x$$ is the 2ab term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In this case, we want to add a term to  2 x squared, minus 3 x  to make it a perfect square. Assume  2 x squared,  is the  a squared  term and  negative 3 x  is the 2ab term.",
+        "math": [
+            "$$2x^2-3x$$",
+            "$$2x^2$$",
+            "$$a^2$$",
+            "$$-3x$$"
+        ],
+        "pacedSpeech": [
+            "In this case, we want to add a term to   2 x squared, minus 3 x ",
+            " to make it a perfect square. Assume   2 x squared, ",
+            " is the   a squared ",
+            " term and   negative 3 x ",
+            " is the 2ab term."
+        ]
+    },
+    {
+        "id": "a20771equad2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{8}$$"
+        ],
+        "dependencies": [
+            "a20771equad2a-h2"
+        ],
+        "title": "Completing the Square",
+        "text": "What term should we add to both sides of the equation to make this true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What term should we add to both sides of the equation to make this true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What term should we add to both sides of the equation to make this true?"
+        ]
+    },
+    {
+        "id": "a20771equad2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad2a-h3"
+        ],
+        "title": "Simplification",
+        "text": "Now that we added $$\\frac{9}{8}$$ to both sides, we get that $${\\left(\\sqrt{2} x-\\frac{3\\sqrt{2}}{4}\\right)}^2=1+\\frac{9}{8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now that we added  9 eights  to both sides, we get that  parentheses the square root of 2 x, minus fraction, 3 the square root of 2 over 4,   squared is equal to, 1 plus 9 eights",
+        "math": [
+            "$$\\frac{9}{8}$$",
+            "$${\\left(\\sqrt{2} x-\\frac{3\\sqrt{2}}{4}\\right)}^2=1+\\frac{9}{8}$$"
+        ],
+        "pacedSpeech": [
+            "Now that we added   9 eights ",
+            " to both sides, we get that    the square root of 2 x, minus fraction, 3 the square root of 2 over 4,   squared is equal to, 1 plus 9 eights"
+        ]
+    },
+    {
+        "id": "a20771equad2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(3+sqrt(17)/4, (3-sqrt(17)/4"
+        ],
+        "dependencies": [
+            "a20771equad2a-h4"
+        ],
+        "title": "Simplification",
+        "text": "By taking the square root of both sides, what two answers do we get for $$z$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "By taking the square root of both sides, what two answers do we get for  z ?",
+        "math": [
+            "$$z$$"
+        ],
+        "pacedSpeech": [
+            "By taking the square root of both sides, what two answers do we get for   z"
+        ]
+    }
+]

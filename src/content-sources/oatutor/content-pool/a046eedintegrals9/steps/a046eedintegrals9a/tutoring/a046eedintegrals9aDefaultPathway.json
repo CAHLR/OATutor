@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a046eedintegrals9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring",
+        "text": "First factor the $$3$$ outside the integral symbol. Then use the $$u^{\\left(-1\\right)}$$ rule. Thus, $$\\int \\frac{3}{x-10} \\,dx=3*\\int \\frac{1}{x-10} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "First factor the  3  outside the integral symbol. Then use the , u raised to the parentheses negative 1  power  rule. Thus,  the integral of fraction, 3 over, x minus 10,  d x is equal to 3 times the integral of fraction, 1 over, x minus 10,  d x",
+        "math": [
+            "$$3$$",
+            "$$u^{\\left(-1\\right)}$$",
+            "$$\\int \\frac{3}{x-10} \\,dx=3*\\int \\frac{1}{x-10} \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "First factor the   3 ",
+            " outside the integral symbol. Then use the  , u raised to the  negative 1  power ",
+            " rule. Thus,   the integral of fraction, 3 over, x minus 10,  d x is equal to 3 times the integral of fraction, 1 over, x minus 10,  d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals9a-h1"
+        ],
+        "title": "U-substitution",
+        "text": "Set $$u=x-10$$ then $$du=dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Set  u is equal to, x minus, 10  then  d u is equal to d x",
+        "math": [
+            "$$u=x-10$$",
+            "$$du=dx$$"
+        ],
+        "pacedSpeech": [
+            "Set   u is equal to, x minus, 10 ",
+            " then   d u is equal to d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals9a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$3*\\int \\frac{1}{u} \\,du=3ln|u|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "3 times, the integral of 1 over u, d u is equal to 3 l n the absolute value of u plus   c",
+        "math": [
+            "$$3*\\int \\frac{1}{u} \\,du=3ln|u|+C$$"
+        ],
+        "pacedSpeech": [
+            "3 times, the integral of 1 over u, d u is equal to 3 l n the absolute value of u plus   c"
+        ]
+    },
+    {
+        "id": "a046eedintegrals9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals9a-h3"
+        ],
+        "title": "Back-subsitute",
+        "text": "As we set $$u=x-10$$ at the beginning, we then obtain $$3ln|x-10|+C$$ with $$x$$ is different from $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "As we set  u is equal to x minus 10  at the beginning, we then obtain  3 l n, the absolute value of x minus 10, end absolute value plus,   c  with  x  is different from  0 .",
+        "math": [
+            "$$u=x-10$$",
+            "$$3ln|x-10|+C$$",
+            "$$x$$",
+            "$$0$$"
+        ],
+        "pacedSpeech": [
+            "As we set   u is equal to x minus 10 ",
+            " at the beginning, we then obtain   3 l n, the absolute value of x minus 10, end absolute value plus,   c ",
+            " with   x ",
+            " is different from   0"
+        ]
+    }
+]

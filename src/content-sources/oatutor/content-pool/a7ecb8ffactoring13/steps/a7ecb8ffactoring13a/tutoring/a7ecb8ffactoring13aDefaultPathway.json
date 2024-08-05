@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a7ecb8ffactoring13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "General Factoring Procedure",
+        "text": "When given a trinomial in the form $$x^2+bx+c$$, we must find two numbers (m and n) that multiply to c and add to $$b$$. The factored solution is $$\\left(x+m\\right) \\left(x+n\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When given a trinomial in the form  x squared plus b x plus c , we must find two numbers (m and n) that multiply to c and add to  b . The factored solution is  parentheses x plus m,  times, parentheses x plus n,  .",
+        "math": [
+            "$$x^2+bx+c$$",
+            "$$b$$",
+            "$$\\left(x+m\\right) \\left(x+n\\right)$$"
+        ],
+        "pacedSpeech": [
+            "When given a trinomial in the form   x squared plus b x plus c ",
+            ", we must find two numbers (m and n) that multiply to c and add to   b ",
+            ". The factored solution is    x plus m,  times,  x plus n,"
+        ]
+    },
+    {
+        "id": "a7ecb8ffactoring13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7ecb8ffactoring13a-h1"
+        ],
+        "title": "Rearranging our Trinomial",
+        "text": "We must rearrange our trinomial to fix the form $$x^2+bx+c$$. We get $$x^2+5x-6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We must rearrange our trinomial to fix the form  x squared plus b x plus c . We get  x squared, plus 5 x minus 6 .",
+        "math": [
+            "$$x^2+bx+c$$",
+            "$$x^2+5x-6$$"
+        ],
+        "pacedSpeech": [
+            "We must rearrange our trinomial to fix the form   x squared plus b x plus c ",
+            ". We get   x squared, plus 5 x minus 6"
+        ]
+    },
+    {
+        "id": "a7ecb8ffactoring13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7ecb8ffactoring13a-h2"
+        ],
+        "title": "Finding $$m$$ and $$n$$",
+        "text": "$$c=-6$$, and $$b=5$$. $$m=6$$ and $$m=-1$$ multiply to c and add to $$b$$. So, our solution is $$\\left(x+6\\right) \\left(x-1\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "c is equal to, negative 6 , and  b, is equal to 5 .  m, is equal to 6  and  m, is equal to negative 1  multiply to c and add to  b . So, our solution is  parentheses x plus 6,  times, parentheses x minus 1,  .",
+        "math": [
+            "$$c=-6$$",
+            "$$b=5$$",
+            "$$m=6$$",
+            "$$m=-1$$",
+            "$$b$$",
+            "$$\\left(x+6\\right) \\left(x-1\\right)$$"
+        ],
+        "pacedSpeech": [
+            "c is equal to, negative 6 ",
+            ", and   b, is equal to 5 ",
+            ".   m, is equal to 6 ",
+            " and   m, is equal to negative 1 ",
+            " multiply to c and add to   b ",
+            ". So, our solution is    x plus 6,  times,  x minus 1,"
+        ]
+    }
+]

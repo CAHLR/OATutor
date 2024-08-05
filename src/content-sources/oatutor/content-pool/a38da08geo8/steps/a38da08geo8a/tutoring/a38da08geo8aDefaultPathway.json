@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a38da08geo8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "From the plot",
+        "text": "(a,b) is on the curve $$y=x^2$$, implying $$b=a^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "(a,b) is on the curve  y is equal to, x squared , implying  b, is equal to a squared",
+        "math": [
+            "$$y=x^2$$",
+            "$$b=a^2$$"
+        ],
+        "pacedSpeech": [
+            "(a,b) is on the curve   y is equal to, x squared ",
+            ", implying   b, is equal to a squared"
+        ]
+    },
+    {
+        "id": "a38da08geo8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo8a-h1"
+        ],
+        "title": "Distance",
+        "text": "To find the distance between (a,b) and $$(2,-1)$$, we can use the distance formula $$d=\\sqrt{{\\left(x2-x1\\right)}^2+{\\left(y2-y1\\right)}^2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "To find the distance between (a,b) and  times, parentheses, 2 comma negative 1,  , we can use the distance formula  d is equal to the square root of parentheses, x 2 minus x 1  squared plus parentheses, y 2 minus y 1  squared end root",
+        "math": [
+            "$$(2,-1)$$",
+            "$$d=\\sqrt{{\\left(x2-x1\\right)}^2+{\\left(y2-y1\\right)}^2}$$"
+        ],
+        "pacedSpeech": [
+            "To find the distance between (a,b) and   times, , 2 comma negative 1,  ",
+            ", we can use the distance formula   d is equal to the square root of , x 2 minus x 1  squared plus , y 2 minus y 1  squared end root"
+        ]
+    },
+    {
+        "id": "a38da08geo8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sqrt{a^4+3a^2-4a+5}$$"
+        ],
+        "dependencies": [
+            "a38da08geo8a-h2"
+        ],
+        "title": "Distance",
+        "text": "What is the distance between (a,b) and $$(2,-1)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sqrt{a^4+3a^2-4a+5}$$",
+            "$$\\sqrt{a^4+3a^2-4a+3}$$",
+            "$$\\sqrt{a^4-3a^2+4a+5}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo8a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Distance",
+                "text": "Using the distance formula, $$d=\\sqrt{{\\left(a-2\\right)}^2+{\\left(b+1\\right)}^2}=\\sqrt{{\\left(a-2\\right)}^2+{\\left(a^2+1\\right)}^2}=\\sqrt{a^2-4a+4+a^4+2a^2+1}=\\sqrt{a^4+3a^2-4a+5}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": "What is the distance between (a,b) and  times, parentheses, 2 comma negative 1,  ?",
+        "math": [
+            "$$(2,-1)$$"
+        ],
+        "pacedSpeech": [
+            "What is the distance between (a,b) and   times, , 2 comma negative 1,"
+        ]
+    },
+    {
+        "id": "a38da08geo8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo8a-h3"
+        ],
+        "title": "Values of a",
+        "text": "$$a^4+3a^2-4a+5={\\left(a-2\\right)}^2+{\\left(a^2+1\\right)}^2 \\geq 0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "a to the fourth plus 3 a squared, minus 4 a plus 5 is equal to parentheses a minus 2,  squared plus, parentheses a squared plus 1,  squared is greater than or equal to 0",
+        "math": [
+            "$$a^4+3a^2-4a+5={\\left(a-2\\right)}^2+{\\left(a^2+1\\right)}^2 \\geq 0$$"
+        ],
+        "pacedSpeech": [
+            "this expression"
+        ]
+    },
+    {
+        "id": "a38da08geo8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All values in R"
+        ],
+        "dependencies": [
+            "a38da08geo8a-h4"
+        ],
+        "title": "Values of a",
+        "text": "What values of a are applicable to the problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "All values in R",
+            "Not all values in R"
+        ],
+        "speech": "What values of a are applicable to the problem?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What values of a are applicable to the problem?"
+        ]
+    }
+]

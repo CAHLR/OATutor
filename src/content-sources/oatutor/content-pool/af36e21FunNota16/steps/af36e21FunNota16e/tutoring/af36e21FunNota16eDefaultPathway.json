@@ -1,0 +1,63 @@
+[
+    {
+        "id": "af36e21FunNota16e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating functions",
+        "text": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result."
+        ]
+    },
+    {
+        "id": "af36e21FunNota16e-h2",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota16e-h1"
+        ],
+        "title": "Replacement",
+        "text": "Replace the variable $$x$$ with $$a+h$$, and we get $$f{\\left(a+h\\right)}=-5{\\left(a+h\\right)}^2+2\\left(a+h\\right)-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Replace the variable  x  with  a, plus h , and we get , f of, parentheses a plus h,  is equal to negative 5 times, parentheses a plus h,  squared plus, 2 times, parentheses a plus h,  minus 1 .",
+        "math": [
+            "$$x$$",
+            "$$a+h$$",
+            "$$f{\\left(a+h\\right)}=-5{\\left(a+h\\right)}^2+2\\left(a+h\\right)-1$$"
+        ],
+        "pacedSpeech": [
+            "Replace the variable   x ",
+            " with   a, plus h ",
+            ", and we get  , f of,  a plus h,  is equal to negative 5 times,  a plus h,  squared plus, 2 times,  a plus h,  minus 1"
+        ]
+    },
+    {
+        "id": "af36e21FunNota16e-h3",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota16e-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expression $$-5{\\left(a+h\\right)}^2+2\\left(a+h\\right)-1$$, and we get $$-5a^2-10ah-5h^2+2a+2h-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the expression  minus 5 times, parentheses a plus h,  squared plus, 2 times, parentheses a plus h,  minus, 1 , and we get , negative 5 a squared minus 10 a h, minus 5 h squared, plus 2 a plus 2 h minus 1 .",
+        "math": [
+            "$$-5{\\left(a+h\\right)}^2+2\\left(a+h\\right)-1$$",
+            "$$-5a^2-10ah-5h^2+2a+2h-1$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the expression   minus 5 times,  a plus h,  squared plus, 2 times,  a plus h,  minus, 1 ",
+            ", and we get  , negative 5 a squared minus 10 a h, minus 5 h squared, plus 2 a plus 2 h minus 1"
+        ]
+    }
+]

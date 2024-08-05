@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a7b98f9composition19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Addition",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "math": [
+            "$$f+g$$",
+            "$$\\left(f+g\\right) x$$"
+        ],
+        "pacedSpeech": [
+            "Remember that   f plus g ",
+            " is the same as  ,  f plus g,  times x ",
+            ". All we have to do is add the two functions."
+        ]
+    },
+    {
+        "id": "a7b98f9composition19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h1"
+        ],
+        "title": "Addition",
+        "text": "First, because these functions are fractions, we need to find a common denominator. Our common denominator is the product of the two existing denominators: $$(x-4)(6-x)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, because these functions are fractions, we need to find a common denominator. Our common denominator is the product of the two existing denominators:  times, parentheses x minus 4,  times, parentheses 6 minus x,  .",
+        "math": [
+            "$$(x-4)(6-x)$$"
+        ],
+        "pacedSpeech": [
+            "First, because these functions are fractions, we need to find a common denominator. Our common denominator is the product of the two existing denominators:   times,  x minus 4,  times,  6 minus x,"
+        ]
+    },
+    {
+        "id": "a7b98f9composition19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h2"
+        ],
+        "title": "Addition",
+        "text": "Now we need to multiply the fractions by a factor of $$1$$ to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now we need to multiply the fractions by a factor of  1  to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together.",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "Now we need to multiply the fractions by a factor of   1 ",
+            " to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together."
+        ]
+    },
+    {
+        "id": "a7b98f9composition19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h3"
+        ],
+        "title": "Addition",
+        "text": "Our last step is to add the numerators. By adding the $$x$$ terms and the constants, $$\\frac{x-4+6-x}{\\left(x-4\\right) \\left(6-x\\right)}$$ becomes our final solution: $$\\frac{2}{\\left(x-4\\right) \\left(6-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Our last step is to add the numerators. By adding the  x  terms and the constants,  fraction, x minus 4 plus 6 minus x, over, parentheses x minus 4,  times, parentheses 6 minus x, ,   becomes our final solution:  fraction, 2 over, parentheses x minus 4,  times, parentheses 6 minus x, ,  .",
+        "math": [
+            "$$x$$",
+            "$$\\frac{x-4+6-x}{\\left(x-4\\right) \\left(6-x\\right)}$$",
+            "$$\\frac{2}{\\left(x-4\\right) \\left(6-x\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Our last step is to add the numerators. By adding the   x ",
+            " terms and the constants,   fraction, x minus 4 plus 6 minus x, over,  x minus 4,  times,  6 minus x, ,  ",
+            " becomes our final solution:   fraction, 2 over,  x minus 4,  times,  6 minus x, ,"
+        ]
+    }
+]

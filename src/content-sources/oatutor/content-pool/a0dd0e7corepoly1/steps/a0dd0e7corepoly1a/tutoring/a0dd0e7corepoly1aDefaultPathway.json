@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a0dd0e7corepoly1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of a Line",
+        "text": "The slope of a line can be determined using two points $$(x_1,y_1)$$, $$(x_2,y_2)$$ by subtracting the y-values over the x-values: $$\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The slope of a line can be determined using two points  parentheses, x sub 1 comma y sub 1,  , , parentheses, x sub 2 comma y sub 2,   by subtracting the y-values over the x-values:  fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,  .",
+        "math": [
+            "$$(x_1,y_1)$$",
+            "$$(x_2,y_2)$$",
+            "$$\\frac{y_2-y_1}{x_2-x_1}$$"
+        ],
+        "pacedSpeech": [
+            "The slope of a line can be determined using two points   , x sub 1 comma y sub 1,  ",
+            ",  , , x sub 2 comma y sub 2,  ",
+            " by subtracting the y-values over the x-values:   fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1a-h1"
+        ],
+        "title": "Slope of a Line",
+        "text": "Substituting the points $$(-3,2)$$, $$(5,-2)$$, the slope is equal to $$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Substituting the points  times, parentheses, negative 3 comma 2,  , , parentheses, 5 comma negative 2,  , the slope is equal to  fraction, parentheses, negative 2 minus 2, , over, 5 minus negative 3,",
+        "math": [
+            "$$(-3,2)$$",
+            "$$(5,-2)$$",
+            "$$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Substituting the points   times, , negative 3 comma 2,  ",
+            ",  , , 5 comma negative 2,  ",
+            ", the slope is equal to   fraction, , negative 2 minus 2, , over, 5 minus negative 3,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1a-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$-2-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  minus 2 minus 2 ?",
+        "math": [
+            "$$-2-2$$"
+        ],
+        "pacedSpeech": [
+            "What is   minus 2 minus 2"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1a-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$5-(-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is , 5 minus negative 3, ?",
+        "math": [
+            "$$5-(-3)$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 5 minus negative 3,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1a-h3",
+            "a0dd0e7corepoly1a-h4"
+        ],
+        "title": "Slope of a Line",
+        "text": "$$\\frac{-4}{8}$$ can be simplified to get the slope of the line.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": ", fraction, negative 4, over 8,   can be simplified to get the slope of the line.",
+        "math": [
+            "$$\\frac{-4}{8}$$"
+        ],
+        "pacedSpeech": [
+            ", fraction, negative 4, over 8,  ",
+            " can be simplified to get the slope of the line."
+        ]
+    }
+]

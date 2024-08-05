@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a8ad46flog15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Exponential Term",
+        "text": "Divide by $$5$$ both sides and get $$e^{2x}=5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by  5  both sides and get , e raised to the 2 x power is equal to 5 .",
+        "math": [
+            "$$5$$",
+            "$$e^{2x}=5$$"
+        ],
+        "pacedSpeech": [
+            "Divide by   5 ",
+            " both sides and get  , e raised to the 2 x power is equal to 5"
+        ]
+    },
+    {
+        "id": "a8ad46flog15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog15a-h1"
+        ],
+        "title": "Bring Down the Exponential",
+        "text": "Take the logarithm of both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Take the logarithm of both sides.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Take the logarithm of both sides."
+        ]
+    },
+    {
+        "id": "a8ad46flog15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog15a-h2"
+        ],
+        "title": "Take Natural log Both Sides",
+        "text": "Definition of Natural log: $$ln(a)=\\log_{e}\\left(a\\right)$$\\n$$\\ln(a^b)=b \\ln(a)$$\\n$$ln(e)=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Definition of Natural log:  l n of a, is equal to the log base e of a, \\n, the natural log of, parentheses a to the b-th  is equal to b the natural log of, a, \\n l n of e is equal to 1",
+        "math": [
+            "$$ln(a)=\\log_{e}\\left(a\\right)$$",
+            "$$\\ln(a^b)=b \\ln(a)$$",
+            "$$ln(e)=1$$"
+        ],
+        "pacedSpeech": [
+            "Definition of Natural log:   l n of a, is equal to the log base e of a, ",
+            " , the natural log of,  a to the b-th  is equal to b the natural log of, a, ",
+            "  l n of e is equal to 1"
+        ]
+    },
+    {
+        "id": "a8ad46flog15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog15a-h3"
+        ],
+        "title": "Use the log Rule",
+        "text": "$$\\ln(e^{2x})=2x \\ln(e)=ln(5)$$\\n$$2x=ln(5)$$ $$x=\\frac{1}{2} \\ln(5)$$ which approximately equals $$0.805$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "the natural log of, parentheses, e raised to the 2 x power  is equal to, 2 x the natural log of, e is equal to, l n of 5, \\n 2 x is equal to, l n of 5,   x is equal to 1 half the natural log of, 5  which approximately equals  0.805 .",
+        "math": [
+            "$$\\ln(e^{2x})=2x \\ln(e)=ln(5)$$",
+            "$$2x=ln(5)$$",
+            "$$x=\\frac{1}{2} \\ln(5)$$",
+            "$$0.805$$"
+        ],
+        "pacedSpeech": [
+            "the natural log of, , e raised to the 2 x power  is equal to, 2 x the natural log of, e is equal to, l n of 5, ",
+            "  2 x is equal to, l n of 5, ",
+            "   x is equal to 1 half the natural log of, 5 ",
+            " which approximately equals   0.805"
+        ]
+    }
+]

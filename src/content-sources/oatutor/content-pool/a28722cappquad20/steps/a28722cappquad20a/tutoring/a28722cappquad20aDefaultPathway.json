@@ -1,0 +1,178 @@
+[
+    {
+        "id": "a28722cappquad20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify what we are looking for.",
+        "text": "We are looking for the length of the driveway.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are looking for the length of the driveway.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We are looking for the length of the driveway."
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad20a-h1"
+        ],
+        "title": "Name what we are looking for.",
+        "text": "Let $$x=width$$ of the driveway, $$5+3x=length$$ of the driveway",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let  x is equal to, width  of the driveway,  5, plus 3 x is equal to length  of the driveway",
+        "math": [
+            "$$x=width$$",
+            "$$5+3x=length$$"
+        ],
+        "pacedSpeech": [
+            "Let   x is equal to, width ",
+            " of the driveway,   5, plus 3 x is equal to length ",
+            " of the driveway"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad20a-h2"
+        ],
+        "title": "Translate into an equation.",
+        "text": "We know the area, and we could use the formula for the area of a rectangle to solve for x: $$x \\left(5+3x\\right)=350$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know the area, and we could use the formula for the area of a rectangle to solve for x:  x, parentheses, 5 plus 3 x,  is equal to 350",
+        "math": [
+            "$$x \\left(5+3x\\right)=350$$"
+        ],
+        "pacedSpeech": [
+            "We know the area, and we could use the formula for the area of a rectangle to solve for x:   x, , 5 plus 3 x,  is equal to 350"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad20a-h3"
+        ],
+        "title": "Rewrite in standard form.",
+        "text": "$$3x^2+5x-350=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "3 x squared, plus 5 x minus 350 is equal to 0",
+        "math": [
+            "$$3x^2+5x-350=0$$"
+        ],
+        "pacedSpeech": [
+            "3 x squared, plus 5 x minus 350 is equal to 0"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad20a-h4"
+        ],
+        "title": "Solve the equation using the Quadratic Formula.",
+        "text": "Idenfity the a, $$b$$, c value: $$a=3$$, $$b=5$$ $$c=-350$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Idenfity the a,  b , c value:  a, is equal to 3 ,  b, is equal to 5   c, is equal to negative 350 .",
+        "math": [
+            "$$b$$",
+            "$$a=3$$",
+            "$$b=5$$",
+            "$$c=-350$$"
+        ],
+        "pacedSpeech": [
+            "Idenfity the a,   b ",
+            ", c value:   a, is equal to 3 ",
+            ",   b, is equal to 5 ",
+            "   c, is equal to negative 350"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=\\frac{\\left(-5\\pm \\sqrt{4225}\\right)}{6}$$"
+        ],
+        "dependencies": [
+            "a28722cappquad20a-h5"
+        ],
+        "title": "Solve the equation.",
+        "text": "We could solve the equation using the Quadratic Formula, $$h=\\frac{\\left(-b\\pm \\sqrt{b^2-4a c}\\right)}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We could solve the equation using the Quadratic Formula,  h is equal to fraction, parentheses negative b plus or minus the square root of b squared minus 4 a c end root , over, 2 a,  .",
+        "math": [
+            "$$h=\\frac{\\left(-b\\pm \\sqrt{b^2-4a c}\\right)}{2a}$$"
+        ],
+        "pacedSpeech": [
+            "We could solve the equation using the Quadratic Formula,   h is equal to fraction,  negative b plus or minus the square root of b squared minus 4 a c end root , over, 2 a,"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a28722cappquad20a-h6"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Simplify the equation and solve for $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the equation and solve for  x",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the equation and solve for   x"
+        ]
+    },
+    {
+        "id": "a28722cappquad20a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$35$$"
+        ],
+        "dependencies": [
+            "a28722cappquad20a-h7"
+        ],
+        "title": "Solve for $$5+3x$$",
+        "text": "Using the value of $$x$$ to solve for $$5+3x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the value of , x  to solve for  5, plus 3 x",
+        "math": [
+            "$$x$$",
+            "$$5+3x$$"
+        ],
+        "pacedSpeech": [
+            "Using the value of  , x ",
+            " to solve for   5, plus 3 x"
+        ]
+    }
+]

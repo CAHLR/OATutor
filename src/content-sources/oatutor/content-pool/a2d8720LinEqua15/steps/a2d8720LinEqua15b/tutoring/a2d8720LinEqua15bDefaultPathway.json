@@ -1,0 +1,213 @@
+[
+    {
+        "id": "a2d8720LinEqua15b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Excluded values",
+        "text": "The excluded values are those making a denominator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The excluded values are those making a denominator equal to zero.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The excluded values are those making a denominator equal to zero."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua15b-h1"
+        ],
+        "title": "Denominator",
+        "text": "The only denominator is $$x-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The only denominator is  x minus 1 .",
+        "math": [
+            "$$x-1$$"
+        ],
+        "pacedSpeech": [
+            "The only denominator is   x minus 1"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua15b-h2"
+        ],
+        "title": "Excluded values",
+        "text": "State the excluded value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "State the excluded value.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "State the excluded value."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua15b-h3"
+        ],
+        "title": "Factoring the denominator",
+        "text": "The denominator in factored form is $$x-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The denominator in factored form is  x minus 1 .",
+        "math": [
+            "$$x-1$$"
+        ],
+        "pacedSpeech": [
+            "The denominator in factored form is   x minus 1"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua15b-h4"
+        ],
+        "title": "Find LCD",
+        "text": "The LCD is the smallest expression that is divisible by each one of the denominators.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The LCD is the smallest expression that is divisible by each one of the denominators.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The LCD is the smallest expression that is divisible by each one of the denominators."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x-1$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua15b-h5"
+        ],
+        "title": "LCD",
+        "text": "What is the LCD of this equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the LCD of this equation?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the LCD of this equation?"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x+2x-2=3$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua15b-h6"
+        ],
+        "title": "Eliminating",
+        "text": "Simplify $$\\left(x-1\\right) \\frac{3x}{x-1}+2\\left(x-1\\right)=\\left(x-1\\right) \\frac{3}{x-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify  parentheses x minus 1,  times fraction, 3 x, over, x minus 1,  plus, 2 times, parentheses x minus 1,  is equal to parentheses x minus 1,  times, fraction, 3 over, x minus 1,  .",
+        "math": [
+            "$$\\left(x-1\\right) \\frac{3x}{x-1}+2\\left(x-1\\right)=\\left(x-1\\right) \\frac{3}{x-1}$$"
+        ],
+        "pacedSpeech": [
+            "Simplify  this expression"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua15b-h7"
+        ],
+        "title": "Solve equation",
+        "text": "Then we should solve the linear equation obtained.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Then we should solve the linear equation obtained.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Then we should solve the linear equation obtained."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua15b-h8"
+        ],
+        "title": "Linear equation",
+        "text": "Solve the equation $$3x+2x-2=3$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve the equation  3 x plus 2 x minus 2 is equal to 3 . What is  x ?",
+        "math": [
+            "$$3x+2x-2=3$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Solve the equation   3 x plus 2 x minus 2 is equal to 3 ",
+            ". What is   x"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua15b-h10",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua15b-h9"
+        ],
+        "title": "Check the solution",
+        "text": "Since $$1$$ is an excluded value, it is not the true solution for the original rational function. As a result, there is no solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  1  is an excluded value, it is not the true solution for the original rational function. As a result, there is no solution.",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "Since   1 ",
+            " is an excluded value, it is not the true solution for the original rational function. As a result, there is no solution."
+        ]
+    }
+]

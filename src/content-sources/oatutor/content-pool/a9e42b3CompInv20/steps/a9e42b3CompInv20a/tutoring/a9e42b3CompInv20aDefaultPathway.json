@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a9e42b3CompInv20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interchange the variables $$x$$ and $$y$$",
+        "text": "Replace $$x$$ with $$y$$ and then $$y$$ with $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Replace , x  with  y  and then  y  with  x .",
+        "math": [
+            "$$x$$",
+            "$$y$$",
+            "$$y$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Replace  , x ",
+            " with   y ",
+            " and then   y ",
+            " with   x"
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv20a-h1"
+        ],
+        "title": "What's the equation after replacing $$x$$ with $$y$$ and $$y$$ with $$x$$",
+        "text": "$$x$$ $$=$$ $$5y-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "x   is equal to,   5 y, minus 3",
+        "math": [
+            "$$x$$",
+            "$$=$$",
+            "$$5y-3$$"
+        ],
+        "pacedSpeech": [
+            "x ",
+            "   is equal to, ",
+            "   5 y, minus 3"
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv20a-h2"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Solve for $$y$$ and find the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve for  y  and find the result.",
+        "math": [
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "Solve for   y ",
+            " and find the result."
+        ]
+    },
+    {
+        "id": "a9e42b3CompInv20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9e42b3CompInv20a-h3"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "We can add $$3$$ from each side then divide by $$5$$. It gives us $$y$$ $$=$$ $$\\frac{x-3}{5}$$. We can further simplify it into $$y$$ $$=$$ $$\\frac{x}{5}+\\frac{3}{5}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can add  3  from each side then divide by  5 . It gives us  y   is equal to  , fraction, x minus 3, over 5,  . We can further simplify it into  y   is equal to,   x over 5 plus 3 fifths .",
+        "math": [
+            "$$3$$",
+            "$$5$$",
+            "$$y$$",
+            "$$=$$",
+            "$$\\frac{x-3}{5}$$",
+            "$$y$$",
+            "$$=$$",
+            "$$\\frac{x}{5}+\\frac{3}{5}$$"
+        ],
+        "pacedSpeech": [
+            "We can add   3 ",
+            " from each side then divide by   5 ",
+            ". It gives us   y ",
+            "   is equal to ",
+            "  , fraction, x minus 3, over 5,  ",
+            ". We can further simplify it into   y ",
+            "   is equal to, ",
+            "   x over 5 plus 3 fifths"
+        ]
+    }
+]

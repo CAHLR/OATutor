@@ -1,0 +1,73 @@
+[
+    {
+        "id": "af36e21FunNota6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating functions",
+        "text": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result."
+        ]
+    },
+    {
+        "id": "af36e21FunNota6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota6c-h1"
+        ],
+        "title": "Replacement",
+        "text": "Replace the variable $$x$$ with the $$a+h$$. We get the expression $${\\left(a+h\\right)}^2+3\\left(a+h\\right)-4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Replace the variable  x  with the  a, plus h . We get the expression , parentheses a plus h,  squared plus, 3 times, parentheses a plus h,  minus 4 .",
+        "math": [
+            "$$x$$",
+            "$$a+h$$",
+            "$${\\left(a+h\\right)}^2+3\\left(a+h\\right)-4$$"
+        ],
+        "pacedSpeech": [
+            "Replace the variable   x ",
+            " with the   a, plus h ",
+            ". We get the expression  ,  a plus h,  squared plus, 3 times,  a plus h,  minus 4"
+        ]
+    },
+    {
+        "id": "af36e21FunNota6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a^2+2ah+h^2+3a+3h-4$$"
+        ],
+        "dependencies": [
+            "af36e21FunNota6c-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expression $${\\left(a+h\\right)}^2+3\\left(a+h\\right)-4$$. What do we get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$a^2+3a+3h-4$$",
+            "$$a^2+2ah+2h^2+6a+6h-4$$",
+            "$$a^2+2ah+h^2+3a$$",
+            "$$a^2+2ah+h^2+3a+3h-4$$"
+        ],
+        "speech": "Simplify the expression  parentheses a plus h,  squared plus, 3 times, parentheses a plus h,  minus 4 . What do we get?",
+        "math": [
+            "$${\\left(a+h\\right)}^2+3\\left(a+h\\right)-4$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the expression    a plus h,  squared plus, 3 times,  a plus h,  minus 4 ",
+            ". What do we get?"
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "id": "ab6a46ageometric8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$r$$",
+        "text": "First, find the common ratio. Divide the second term by the first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, find the common ratio. Divide the second term by the first.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "First, find the common ratio. Divide the second term by the first."
+        ]
+    },
+    {
+        "id": "ab6a46ageometric8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "ab6a46ageometric8a-h1"
+        ],
+        "title": "Find $$r$$",
+        "text": "What does $$r$$ equal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ab6a46ageometric8a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Answer",
+                "text": "The answer is $$5$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "What does  r  equal?",
+        "math": [
+            "$$r$$"
+        ],
+        "pacedSpeech": [
+            "What does   r ",
+            " equal?"
+        ]
+    },
+    {
+        "id": "ab6a46ageometric8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ab6a46ageometric8a-h2"
+        ],
+        "title": "$$a_1$$",
+        "text": "What is $$a_1$$? It is the first term of the sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a sub 1 ? It is the first term of the sequence.",
+        "math": [
+            "$$a_1$$"
+        ],
+        "pacedSpeech": [
+            "What is   a sub 1 ",
+            "? It is the first term of the sequence."
+        ]
+    },
+    {
+        "id": "ab6a46ageometric8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageometric8a-h3"
+        ],
+        "title": "Plug in",
+        "text": "Plug in $$a_1$$ and $$r$$ into the explicit formula.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Plug in  a sub 1  and  r,  into the explicit formula.",
+        "math": [
+            "$$a_1$$",
+            "$$r$$"
+        ],
+        "pacedSpeech": [
+            "Plug in   a sub 1 ",
+            " and   r, ",
+            " into the explicit formula."
+        ]
+    },
+    {
+        "id": "ab6a46ageometric8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageometric8a-h4"
+        ],
+        "title": "Answer",
+        "text": "Therefore, the answer is $$a_n=2\\times5^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore, the answer is  a sub n is equal to, 2 times, 5 raised to the n minus 1 power .",
+        "math": [
+            "$$a_n=2\\times5^{n-1}$$"
+        ],
+        "pacedSpeech": [
+            "Therefore, the answer is   a sub n is equal to, 2 times, 5 raised to the n minus 1 power"
+        ]
+    }
+]

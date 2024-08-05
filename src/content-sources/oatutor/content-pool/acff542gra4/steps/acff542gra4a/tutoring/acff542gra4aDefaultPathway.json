@@ -1,0 +1,95 @@
+[
+    {
+        "id": "acff542gra4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=6$$ and $$y=-4$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute  x is equal to 6  and  y, is equal to negative 4  into both inequalities.",
+        "math": [
+            "$$x=6$$",
+            "$$y=-4$$"
+        ],
+        "pacedSpeech": [
+            "We substitute   x is equal to 6 ",
+            " and   y, is equal to negative 4 ",
+            " into both inequalities."
+        ]
+    },
+    {
+        "id": "acff542gra4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra4a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$y>\\frac{2}{3} x-5$$\\n$$-4>6\\frac{2}{3}-5$$\\n$$-4>-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "y is greater than 2 thirds x minus 5 \\n negative 4 is greater than 6 and 2 thirds, minus 5 \\n negative 4 is greater than negative 1",
+        "math": [
+            "$$y>\\frac{2}{3} x-5$$",
+            "$$-4>6\\frac{2}{3}-5$$",
+            "$$-4>-1$$"
+        ],
+        "pacedSpeech": [
+            "y is greater than 2 thirds x minus 5 ",
+            "  negative 4 is greater than 6 and 2 thirds, minus 5 ",
+            "  negative 4 is greater than negative 1"
+        ]
+    },
+    {
+        "id": "acff542gra4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acff542gra4a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra4a-h3"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "Since $$(6,-4)$$ does not satisfy the first inequality, then it cannot make both inequalities true. $$(6,-4)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  times, parentheses, 6 comma negative 4,   does not satisfy the first inequality, then it cannot make both inequalities true. , parentheses, 6 comma negative 4,   is not a solution.",
+        "math": [
+            "$$(6,-4)$$",
+            "$$(6,-4)$$"
+        ],
+        "pacedSpeech": [
+            "Since   times, , 6 comma negative 4,  ",
+            " does not satisfy the first inequality, then it cannot make both inequalities true.  , , 6 comma negative 4,  ",
+            " is not a solution."
+        ]
+    }
+]

@@ -1,0 +1,181 @@
+[
+    {
+        "id": "a298b40expectedvalue22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How to Calculate Expected Value",
+        "text": "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes $$x$$ by the probability of $$x$$, $$x P\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes  x  by the probability of  x , , x   p of x .",
+        "math": [
+            "$$x$$",
+            "$$x$$",
+            "$$x P\\left(x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes   x ",
+            " by the probability of   x ",
+            ",  , x   p of x"
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2$$, $$30$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h1"
+        ],
+        "title": "Determining Possible Outcomes",
+        "text": "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-2$$, $$30$$",
+            "$$0$$, $$28$$",
+            "$$0$$, $$30$$",
+            "$$-2$$, $$28$$"
+        ],
+        "speech": "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?"
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{12}{52}$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h2"
+        ],
+        "title": "Determining Probability of $30",
+        "text": "Determine the probability of earning $30in profit. This means that the card is a face card.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the probability of earning $30in profit. This means that the card is a face card.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Determine the probability of earning $30in profit. This means that the card is a face card."
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{40}{52}$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h3"
+        ],
+        "title": "Determining Probability of -$2",
+        "text": "Determine the probability of earning -$2 in profit. This means that the card is NOT a face card.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine the probability of earning -$2 in profit. This means that the card is NOT a face card.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Determine the probability of earning -$2 in profit. This means that the card is NOT a face card."
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.92$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h4"
+        ],
+        "title": "$$x P\\left(x\\right)$$ for $$x=30$$",
+        "text": "Determine $$x P\\left(x\\right)$$ for $$x=\\$30$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine  x   p of x,  for  x is equal to dollars 30 .",
+        "math": [
+            "$$x P\\left(x\\right)$$",
+            "$$x=\\$30$$"
+        ],
+        "pacedSpeech": [
+            "Determine   x   p of x, ",
+            " for   x is equal to dollars 30"
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.54$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h5"
+        ],
+        "title": "$$x P\\left(x\\right)$$ for $$x=-2$$",
+        "text": "Determine $$x P\\left(x\\right)$$ for $$x=-\\$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine  x   p of x,  for  x is equal to, negative dollars 2 .",
+        "math": [
+            "$$x P\\left(x\\right)$$",
+            "$$x=-\\$2$$"
+        ],
+        "pacedSpeech": [
+            "Determine   x   p of x, ",
+            " for   x is equal to, negative dollars 2"
+        ]
+    },
+    {
+        "id": "a298b40expectedvalue22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.38$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue22a-h6"
+        ],
+        "title": "Summation of $$x P\\left(x\\right)$$",
+        "text": "To find the expected value, sum up the answers for $$x P\\left(x\\right)$$ for $$x=\\$30$$ and $$x=-\\$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find the expected value, sum up the answers for  x   p of x,  for  x is equal to, dollars 30,  and  x is equal to, negative dollars 2 .",
+        "math": [
+            "$$x P\\left(x\\right)$$",
+            "$$x=\\$30$$",
+            "$$x=-\\$2$$"
+        ],
+        "pacedSpeech": [
+            "To find the expected value, sum up the answers for   x   p of x, ",
+            " for   x is equal to, dollars 30, ",
+            " and   x is equal to, negative dollars 2"
+        ]
+    }
+]

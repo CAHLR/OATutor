@@ -1,0 +1,186 @@
+[
+    {
+        "id": "a746c1bFactoring12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor out the greatest common factor",
+        "text": "What is the greatest common factor of all the terms in the expression $$2p^3+54q^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the greatest common factor of all the terms in the expression , 2 p cubed, plus 54 q cubed ?",
+        "math": [
+            "$$2p^3+54q^3$$"
+        ],
+        "pacedSpeech": [
+            "What is the greatest common factor of all the terms in the expression  , 2 p cubed, plus 54 q cubed"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring12a-h1"
+        ],
+        "title": "Factor out the greatest common factor",
+        "text": "What is the greatest common factor of $$2p^3$$ and $$54q^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the greatest common factor of , 2 p cubed,  and  54 q cubed ?",
+        "math": [
+            "$$2p^3$$",
+            "$$54q^3$$"
+        ],
+        "pacedSpeech": [
+            "What is the greatest common factor of  , 2 p cubed, ",
+            " and   54 q cubed"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p^3+27q^3$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring12a-h2"
+        ],
+        "title": "Factor out the greatest common factor",
+        "text": "(2*p**3)+(54*q**3)=2*(?) What is (?)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "(2*p**3)+(54*q**3)=2*(?) What is (?)?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "(2*p**3)+(54*q**3)=2*(?) What is (?)?"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3q$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring12a-h3"
+        ],
+        "title": "Rewrite the individual terms",
+        "text": "Are there any ways to write $$27q^3$$ into $$a^3$$? If so, what is a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a746c1bFactoring12a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3q$$"
+                ],
+                "dependencies": [],
+                "title": "Rewrite the individual terms",
+                "text": "Given that $${\\left(a b\\right)}^c$$ where a, $$b$$ and c are real numbers, $${\\left(a b\\right)}^c=a^c b^c$$, $$27q^3=27q^3$$ and $$27=3^3$$, we can rewrite the expression as 27*q**3=(3**3)*(q**3)=(?)**3. What is (?)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ],
+        "speech": "Are there any ways to write , 27 q cubed,  into  a cubed ? If so, what is a?",
+        "math": [
+            "$$27q^3$$",
+            "$$a^3$$"
+        ],
+        "pacedSpeech": [
+            "Are there any ways to write  , 27 q cubed, ",
+            " into   a cubed ",
+            "? If so, what is a?"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring12a-h4"
+        ],
+        "title": "Use sum of cube rule",
+        "text": "We observe that $$p^3+27q^3=p^3+{\\left(3q\\right)}^3$$ which is the sum of cubes. We can use the sum of cubes rule to factor. Sum of cube rule: $$a^3+b^3$$ can be factored completely into $$\\left(a+b\\right) \\left(a^2-a b+b^2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We observe that  p cubed plus 27 q cubed is equal to p cubed plus parentheses 3 q  cubed  which is the sum of cubes. We can use the sum of cubes rule to factor. Sum of cube rule:  a cubed plus b cubed  can be factored completely into  parentheses a plus b,  times parentheses, a squared minus a b plus b squared  .",
+        "math": [
+            "$$p^3+27q^3=p^3+{\\left(3q\\right)}^3$$",
+            "$$a^3+b^3$$",
+            "$$\\left(a+b\\right) \\left(a^2-a b+b^2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "We observe that   p cubed plus 27 q cubed is equal to p cubed plus  3 q  cubed ",
+            " which is the sum of cubes. We can use the sum of cubes rule to factor. Sum of cube rule:   a cubed plus b cubed ",
+            " can be factored completely into    a plus b,  times , a squared minus a b plus b squared"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(p+3q\\right) \\left(p^2-p 3q+{\\left(3q\\right)}^2\\right)$$"
+        ],
+        "dependencies": [
+            "a746c1bFactoring12a-h5"
+        ],
+        "title": "Use sum of cube rule",
+        "text": "By using the sum of cube rule, we can factor $$p^3+27q^3$$ as?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "By using the sum of cube rule, we can factor , p cubed plus 27 q cubed  as?",
+        "math": [
+            "$$p^3+27q^3$$"
+        ],
+        "pacedSpeech": [
+            "By using the sum of cube rule, we can factor  , p cubed plus 27 q cubed ",
+            " as?"
+        ]
+    },
+    {
+        "id": "a746c1bFactoring12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a746c1bFactoring12a-h6"
+        ],
+        "title": "Put together all factors",
+        "text": "Since there is no way to further factor $$p+3q$$ and $$p^2-p 3q+{\\left(3q\\right)}^2$$, $$2p^3+54q^3$$ can be factored completely into $$2\\left(p+3q\\right) \\left(p^2-p 3q+{\\left(3q\\right)}^2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since there is no way to further factor  p plus, 3 q  and  p squared minus p 3 q, plus parentheses 3 q  squared ,  2 p cubed plus 54 q cubed,  can be factored completely into  2 times, parentheses, p plus 3 q,  times parentheses p squared minus p 3 q, plus, parentheses 3 q  squared  .",
+        "math": [
+            "$$p+3q$$",
+            "$$p^2-p 3q+{\\left(3q\\right)}^2$$",
+            "$$2p^3+54q^3$$",
+            "$$2\\left(p+3q\\right) \\left(p^2-p 3q+{\\left(3q\\right)}^2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Since there is no way to further factor   p plus, 3 q ",
+            " and   p squared minus p 3 q, plus  3 q  squared ",
+            ",   2 p cubed plus 54 q cubed, ",
+            " can be factored completely into   2 times, , p plus 3 q,  times  p squared minus p 3 q, plus,  3 q  squared"
+        ]
+    }
+]

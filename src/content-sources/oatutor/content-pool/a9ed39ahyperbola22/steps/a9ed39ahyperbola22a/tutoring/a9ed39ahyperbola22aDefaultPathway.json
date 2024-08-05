@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a9ed39ahyperbola22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding \"a\"",
+        "text": "The vertices are $$(3,0)$$ and $$(-3,0)$$, so $$a=3$$ and $$a^2=9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The vertices are  times, parentheses 3 comma 0,   and , parentheses, negative 3 comma 0,  , so  a is equal to, 3  and  a squared, is equal to 9",
+        "math": [
+            "$$(3,0)$$",
+            "$$(-3,0)$$",
+            "$$a=3$$",
+            "$$a^2=9$$"
+        ],
+        "pacedSpeech": [
+            "The vertices are   times,  3 comma 0,  ",
+            " and  , , negative 3 comma 0,  ",
+            ", so   a is equal to, 3 ",
+            " and   a squared, is equal to 9"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola22a-h1"
+        ],
+        "title": "Finding \"c\"",
+        "text": "The foci is $$(5,0)$$, so $$c=5$$ and $$c^2=25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The foci is  times, parentheses 5 comma 0,  , so  c is equal to, 5  and  c squared, is equal to 25",
+        "math": [
+            "$$(5,0)$$",
+            "$$c=5$$",
+            "$$c^2=25$$"
+        ],
+        "pacedSpeech": [
+            "The foci is   times,  5 comma 0,  ",
+            ", so   c is equal to, 5 ",
+            " and   c squared, is equal to 25"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola22a-h2"
+        ],
+        "title": "Finding \"b\"",
+        "text": "To solve for $$b^2$$ use $$b^2=c^2-a^2$$ and plug in known values $$b^2=25-9=16$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve for  b squared  use  b squared, is equal to, c squared minus, a squared  and plug in known values  b squared is equal to 25 minus 9, is equal to 16",
+        "math": [
+            "$$b^2$$",
+            "$$b^2=c^2-a^2$$",
+            "$$b^2=25-9=16$$"
+        ],
+        "pacedSpeech": [
+            "To solve for   b squared ",
+            " use   b squared, is equal to, c squared minus, a squared ",
+            " and plug in known values   b squared is equal to 25 minus 9, is equal to 16"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x^2}{9}-\\frac{y^2}{16}=1$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola22a-h3"
+        ],
+        "title": "Substitute All Values",
+        "text": "Substitute $$a^2$$ and $$b^2$$ into the standard equation form, $$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  a squared  and  b squared  into the standard equation form, , fraction, x squared, over, a squared,  minus, fraction, y squared, over, b squared,  is equal to 1",
+        "math": [
+            "$$a^2$$",
+            "$$b^2$$",
+            "$$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   a squared ",
+            " and   b squared ",
+            " into the standard equation form,  , fraction, x squared, over, a squared,  minus, fraction, y squared, over, b squared,  is equal to 1"
+        ]
+    }
+]

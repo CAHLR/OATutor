@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a1f0162sequences22c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute $$n=3$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  n is equal to 3  into the formula",
+        "math": [
+            "$$n=3$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   n is equal to 3 ",
+            " into the formula"
+        ]
+    },
+    {
+        "id": "a1f0162sequences22c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences22c-h1"
+        ],
+        "title": "Simplification",
+        "text": "Calculate the expression a_3=(5*3)/((3+2)!)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the expression a_3=(5*3)/((3+2)!)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Calculate the expression a_3=(5*3)/((3+2)!)"
+        ]
+    },
+    {
+        "id": "a1f0162sequences22c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences22c-h2"
+        ],
+        "title": "Calculate the numerator",
+        "text": "What is $$5\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  5 times 3,",
+        "math": [
+            "$$5\\times3$$"
+        ],
+        "pacedSpeech": [
+            "What is   5 times 3,"
+        ]
+    },
+    {
+        "id": "a1f0162sequences22c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$120$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences22c-h3"
+        ],
+        "title": "Calculate the denominator",
+        "text": "((3+2)!) is equal to 5! What is $$5\\times4\\times3\\times2\\times1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "((3+2)!) is equal to 5! What is , 5 times 4 times 3 times 2 times 1 ?",
+        "math": [
+            "$$5\\times4\\times3\\times2\\times1$$"
+        ],
+        "pacedSpeech": [
+            "((3+2)!) is equal to 5! What is  , 5 times 4 times 3 times 2 times 1"
+        ]
+    },
+    {
+        "id": "a1f0162sequences22c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences22c-h4"
+        ],
+        "title": "Putting It Together",
+        "text": "Put the numerator and denominator together to create a fraction",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put the numerator and denominator together to create a fraction",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Put the numerator and denominator together to create a fraction"
+        ]
+    }
+]

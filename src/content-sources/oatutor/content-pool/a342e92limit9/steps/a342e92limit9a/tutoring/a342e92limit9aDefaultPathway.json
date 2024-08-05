@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a342e92limit9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Functional Values Table",
+        "text": "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure1.gif##",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.##figure1.gif##"
+        ]
+    },
+    {
+        "id": "a342e92limit9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a342e92limit9a-h1"
+        ],
+        "title": "The Approaching Limit",
+        "text": "As we read down the $$\\frac{1}{x}$$ columns, does /lim{x,0**-,1/x} and /lim{x,0**+,1/x} approach the same values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "As we read down the  1 over x  columns, does /lim{x,0**-,1/x} and /lim{x,0**+,1/x} approach the same values?",
+        "math": [
+            "$$\\frac{1}{x}$$"
+        ],
+        "pacedSpeech": [
+            "As we read down the   1 over x ",
+            " columns, does /lim{x,0**-,1/x} and /lim{x,0**+,1/x} approach the same values?"
+        ]
+    },
+    {
+        "id": "a342e92limit9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a342e92limit9a-h2"
+        ],
+        "title": "Finding $$/lim{x$$ ,0,1/x}",
+        "text": "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that $$/lim(x$$ , $$0$$, $$\\frac{1}{x}$$ )DNE. The graph of $$f(x)=\\frac{1}{x}$$ in the figure confirms these conclusions.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that  divided by lim of parentheses x  ,  0 ,  1 over x,  )DNE. The graph of  f of x is equal to 1 over x  in the figure confirms these conclusions.\\n##figure2.gif##",
+        "math": [
+            "$$/lim(x$$",
+            "$$0$$",
+            "$$\\frac{1}{x}$$",
+            "$$f(x)=\\frac{1}{x}$$"
+        ],
+        "pacedSpeech": [
+            "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that   divided by lim of  x ",
+            " ,   0 ",
+            ",   1 over x, ",
+            " )DNE. The graph of   f of x is equal to 1 over x ",
+            " in the figure confirms these conclusions.##figure2.gif##"
+        ]
+    }
+]

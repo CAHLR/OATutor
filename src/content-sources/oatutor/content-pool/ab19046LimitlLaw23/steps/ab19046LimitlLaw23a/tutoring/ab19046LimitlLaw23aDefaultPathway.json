@@ -1,0 +1,67 @@
+[
+    {
+        "id": "ab19046LimitlLaw23a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Sub-questions",
+        "text": "What is $$\\lim_{x\\to6} f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is , the limit as x approaches 6, of f of x ?",
+        "math": [
+            "$$\\lim_{x\\to6} f(x)$$"
+        ],
+        "pacedSpeech": [
+            "What is  , the limit as x approaches 6, of f of x"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw23a-h1"
+        ],
+        "title": "Sub-questions",
+        "text": "What is $$1/3*\\lim_{x\\to6} g(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is  1 divided by 3, times, the limit as x approaches 6, of g of x ?",
+        "math": [
+            "$$1/3*\\lim_{x\\to6} g(x)$$"
+        ],
+        "pacedSpeech": [
+            "What is   1 divided by 3, times, the limit as x approaches 6, of g of x"
+        ]
+    },
+    {
+        "id": "ab19046LimitlLaw23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw23a-h2"
+        ],
+        "title": "The property of the limit",
+        "text": "The limit of functions at same point commute and can be added linearly with coefficients applied.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The limit of functions at same point commute and can be added linearly with coefficients applied.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The limit of functions at same point commute and can be added linearly with coefficients applied."
+        ]
+    }
+]

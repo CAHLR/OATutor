@@ -1,0 +1,97 @@
+[
+    {
+        "id": "af4e405log27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to determine $$x$$ such that x=log{}5{1}. Rewrite this expression first into exponential form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know that we're trying to determine  x  such that x=log{}5{1}. Rewrite this expression first into exponential form.",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "We know that we're trying to determine   x ",
+            " such that x=log{}5{1}. Rewrite this expression first into exponential form."
+        ]
+    },
+    {
+        "id": "af4e405log27b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5^x=1$$"
+        ],
+        "dependencies": [
+            "af4e405log27b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$\\log_{5}\\left(1\\right)=x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$5^x=1$$",
+            "$$1^x=5$$",
+            "$$x^5=1$$",
+            "$$x^1=5$$"
+        ],
+        "speech": "What is the exponential form of , the log base 5 of 1, is equal to x ?",
+        "math": [
+            "$$\\log_{5}\\left(1\\right)=x$$"
+        ],
+        "pacedSpeech": [
+            "What is the exponential form of  , the log base 5 of 1, is equal to x"
+        ]
+    },
+    {
+        "id": "af4e405log27b-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4e405log27b-h2"
+        ],
+        "title": "Power of $$0$$",
+        "text": "We note that for any number, $$x$$, $$x^0=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We note that for any number, , x ,  x to the 0, is equal to 1 .",
+        "math": [
+            "$$x$$",
+            "$$x^0=1$$"
+        ],
+        "pacedSpeech": [
+            "We note that for any number,  , x ",
+            ",   x to the 0, is equal to 1"
+        ]
+    },
+    {
+        "id": "af4e405log27b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "af4e405log27b-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is $$x$$ in $$5^x=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , x  in  5 to the x-th, is equal to 1 ?",
+        "math": [
+            "$$x$$",
+            "$$5^x=1$$"
+        ],
+        "pacedSpeech": [
+            "What is  , x ",
+            " in   5 to the x-th, is equal to 1"
+        ]
+    }
+]

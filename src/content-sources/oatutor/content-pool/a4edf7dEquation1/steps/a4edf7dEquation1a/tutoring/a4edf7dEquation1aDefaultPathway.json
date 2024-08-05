@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a4edf7dEquation1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Assumption",
+        "text": "Assume one number is $$m$$ and the other is $$n$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Assume one number is  m  and the other is  n,",
+        "math": [
+            "$$m$$",
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            "Assume one number is   m ",
+            " and the other is   n,"
+        ]
+    },
+    {
+        "id": "a4edf7dEquation1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation1a-h1"
+        ],
+        "title": "Translation",
+        "text": "Converting the first statement to $$m+n=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Converting the first statement to , m plus n, is equal to 0",
+        "math": [
+            "$$m+n=0$$"
+        ],
+        "pacedSpeech": [
+            "Converting the first statement to  , m plus n, is equal to 0"
+        ]
+    },
+    {
+        "id": "a4edf7dEquation1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation1a-h1"
+        ],
+        "title": "Translation",
+        "text": "Converting the second statement to $$m-n=9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Converting the second statement to , m minus n, is equal to 9",
+        "math": [
+            "$$m-n=9$$"
+        ],
+        "pacedSpeech": [
+            "Converting the second statement to  , m minus n, is equal to 9"
+        ]
+    },
+    {
+        "id": "a4edf7dEquation1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation1a-h2",
+            "a4edf7dEquation1a-h3"
+        ],
+        "title": "Addition",
+        "text": "Combining the two equation together",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Combining the two equation together",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Combining the two equation together"
+        ]
+    },
+    {
+        "id": "a4edf7dEquation1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{2}$$"
+        ],
+        "dependencies": [
+            "a4edf7dEquation1a-h4"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of $$m$$ when $$2m=9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the value of , m  when  2 m, is equal to 9 ?",
+        "math": [
+            "$$m$$",
+            "$$2m=9$$"
+        ],
+        "pacedSpeech": [
+            "What is the value of  , m ",
+            " when   2 m, is equal to 9"
+        ]
+    },
+    {
+        "id": "a4edf7dEquation1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation1a-h5"
+        ],
+        "title": "Calculation",
+        "text": "Find the value of $$n$$ with the known value of $$m$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find the value of  n  with the known value of  m,",
+        "math": [
+            "$$n$$",
+            "$$m$$"
+        ],
+        "pacedSpeech": [
+            "Find the value of   n ",
+            " with the known value of   m,"
+        ]
+    }
+]

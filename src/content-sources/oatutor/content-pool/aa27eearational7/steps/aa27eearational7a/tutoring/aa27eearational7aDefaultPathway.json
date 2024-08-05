@@ -1,0 +1,87 @@
+[
+    {
+        "id": "aa27eearational7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "The LCD of $$\\frac{2}{x+2}$$, $$\\frac{4}{x-2}$$, and $$\\frac{x-1}{x^2-4}$$ is $$\\left(x+2\\right) \\left(x-2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The LCD of  fraction, 2 over, x plus 2,  , , fraction, 4 over, x minus 2,  , and  fraction, x minus 1, over, x squared minus 4,   is  parentheses x plus 2,  times, parentheses x minus 2,  .",
+        "math": [
+            "$$\\frac{2}{x+2}$$",
+            "$$\\frac{4}{x-2}$$",
+            "$$\\frac{x-1}{x^2-4}$$",
+            "$$\\left(x+2\\right) \\left(x-2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "The LCD of   fraction, 2 over, x plus 2,  ",
+            ",  , fraction, 4 over, x minus 2,  ",
+            ", and   fraction, x minus 1, over, x squared minus 4,  ",
+            " is    x plus 2,  times,  x minus 2,"
+        ]
+    },
+    {
+        "id": "aa27eearational7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational7a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$2\\left(x-2\\right)+4\\left(x+2\\right)=(x-1)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We must multiply each fraction by the LCD. We get  2 times, parentheses x minus 2,  plus, 4 times, parentheses x plus 2,  is equal to, parentheses x minus 1,  .",
+        "math": [
+            "$$2\\left(x-2\\right)+4\\left(x+2\\right)=(x-1)$$"
+        ],
+        "pacedSpeech": [
+            "We must multiply each fraction by the LCD. We get   2 times,  x minus 2,  plus, 4 times,  x plus 2,  is equal to,  x minus 1,"
+        ]
+    },
+    {
+        "id": "aa27eearational7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational7a-h2"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Let's simplify this equation: $$2x-4+4x+8=x-1$$ becomes $$5x=-5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let's simplify this equation:  2 x minus 4 plus 4 x plus 8 is equal to, x minus, 1  becomes  5 x is equal to negative 5",
+        "math": [
+            "$$2x-4+4x+8=x-1$$",
+            "$$5x=-5$$"
+        ],
+        "pacedSpeech": [
+            "Let's simplify this equation:   2 x minus 4 plus 4 x plus 8 is equal to, x minus, 1 ",
+            " becomes   5 x is equal to negative 5"
+        ]
+    },
+    {
+        "id": "aa27eearational7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational7a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "$$5x=-5$$ can be solved as $$x=-1$$. This solution is not extraneous.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "5 x is equal to, negative 5  can be solved as  x, is equal to negative 1 . This solution is not extraneous.",
+        "math": [
+            "$$5x=-5$$",
+            "$$x=-1$$"
+        ],
+        "pacedSpeech": [
+            "5 x is equal to, negative 5 ",
+            " can be solved as   x, is equal to negative 1 ",
+            ". This solution is not extraneous."
+        ]
+    }
+]

@@ -1,0 +1,156 @@
+[
+    {
+        "id": "a6014eaSubAdd1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute the number in for the variable in the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute the number in for the variable in the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Substitute the number in for the variable in the equation."
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6014eaSubAdd1a-h1"
+        ],
+        "title": "Substitution",
+        "text": "After substituting $$x=\\frac{3}{2}$$ into the equation, we get $$4\\frac{3}{2}-2=2\\frac{3}{2}+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "After substituting  x is equal to 3 halves  into the equation, we get  4 and 3 halves minus 2 is equal to, 2 and 3 halves, plus 1 .",
+        "math": [
+            "$$x=\\frac{3}{2}$$",
+            "$$4\\frac{3}{2}-2=2\\frac{3}{2}+1$$"
+        ],
+        "pacedSpeech": [
+            "After substituting   x is equal to 3 halves ",
+            " into the equation, we get   4 and 3 halves minus 2 is equal to, 2 and 3 halves, plus 1"
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6014eaSubAdd1a-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expressions on both sides of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the expressions on both sides of the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Simplify the expressions on both sides of the equation."
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6-2$$"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd1a-h3"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the left side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the left side of the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Simplify the left side of the equation."
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3+1$$"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd1a-h4"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the right side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the right side of the equation.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Simplify the right side of the equation."
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6014eaSubAdd1a-h5"
+        ],
+        "title": "Comparison",
+        "text": "Determine whether the resulting equation is true.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Determine whether the resulting equation is true.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Determine whether the resulting equation is true."
+        ]
+    },
+    {
+        "id": "a6014eaSubAdd1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd1a-h6"
+        ],
+        "title": "Comparison",
+        "text": "Determine whether $$6-2$$ equals $$3+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Determine whether , 6 minus 2  equals  3, plus 1 .",
+        "math": [
+            "$$6-2$$",
+            "$$3+1$$"
+        ],
+        "pacedSpeech": [
+            "Determine whether  , 6 minus 2 ",
+            " equals   3, plus 1"
+        ]
+    }
+]

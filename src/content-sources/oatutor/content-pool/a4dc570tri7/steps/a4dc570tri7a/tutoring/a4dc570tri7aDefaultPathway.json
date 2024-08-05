@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a4dc570tri7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implication",
+        "text": "$$cos\\left(\\theta\\right)>sin\\left(\\theta\\right)$$ implies that x-coordinate of point $$P>y-coordinate$$ of point P.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "cosine of theta, is greater than, sine of theta,  implies that x-coordinate of point    p is greater than, y minus coordinate  of point P.",
+        "math": [
+            "$$cos\\left(\\theta\\right)>sin\\left(\\theta\\right)$$",
+            "$$P>y-coordinate$$"
+        ],
+        "pacedSpeech": [
+            "cosine of theta, is greater than, sine of theta, ",
+            " implies that x-coordinate of point     p is greater than, y minus coordinate ",
+            " of point P."
+        ]
+    },
+    {
+        "id": "a4dc570tri7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri7a-h1"
+        ],
+        "title": "From the plot",
+        "text": "Based on the plot, we can conclude that $$\\theta<\\frac{\\pi}{4}$$ or $$\\theta>\\frac{5\\pi}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Based on the plot, we can conclude that  theta is less than pi over 4,  or  theta is greater than, fraction, 5 pi, over 4,  .",
+        "math": [
+            "$$\\theta<\\frac{\\pi}{4}$$",
+            "$$\\theta>\\frac{5\\pi}{4}$$"
+        ],
+        "pacedSpeech": [
+            "Based on the plot, we can conclude that   theta is less than pi over 4, ",
+            " or   theta is greater than, fraction, 5 pi, over 4,"
+        ]
+    },
+    {
+        "id": "a4dc570tri7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[0,\\frac{\\pi}{4})$$ $$\\cup$$ $$(\\frac{5\\pi}{4},2\\pi)$$"
+        ],
+        "dependencies": [
+            "a4dc570tri7a-h2"
+        ],
+        "title": "Interval notation",
+        "text": "Give your answer in interval notation. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$(\\frac{\\pi}{4},\\frac{5\\pi}{4})$$",
+            "$$[0,\\frac{\\pi}{4})$$ $$\\cup$$ $$(\\frac{5\\pi}{4},2\\pi)$$",
+            "$$(-\\infty,\\frac{\\pi}{4})$$ $$\\cup$$ $$(\\frac{5\\pi}{4},\\infty)$$"
+        ],
+        "speech": "Give your answer in interval notation. What is the answer?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Give your answer in interval notation. What is the answer?"
+        ]
+    }
+]

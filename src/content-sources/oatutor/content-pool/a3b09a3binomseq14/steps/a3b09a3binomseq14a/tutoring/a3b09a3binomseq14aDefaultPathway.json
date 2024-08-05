@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a3b09a3binomseq14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equation",
+        "text": "Use the equation C(n,r)=(n!)/(r!(n-r)!) to solve",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Use the equation C(n,r)=(n!)/(r!(n-r)!) to solve",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Use the equation C(n,r)=(n!)/(r!(n-r)!) to solve"
+        ]
+    },
+    {
+        "id": "a3b09a3binomseq14a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug In Values",
+        "text": "Plug in the values to the equation",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Plug in the values to the equation",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Plug in the values to the equation"
+        ]
+    },
+    {
+        "id": "a3b09a3binomseq14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$39916800$$"
+        ],
+        "dependencies": [],
+        "title": "Solve For the Numerator",
+        "text": "What is 11!?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is 11!?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is 11!?"
+        ]
+    },
+    {
+        "id": "a3b09a3binomseq14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq14a-h3"
+        ],
+        "title": "Solve For the Denominator: Part $$1$$",
+        "text": "What is 4!?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is 4!?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is 4!?"
+        ]
+    },
+    {
+        "id": "a3b09a3binomseq14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5040$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq14a-h4"
+        ],
+        "title": "Solve For the Denominator: Part $$2$$",
+        "text": "What is $$(11-4)!$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  parentheses 11 minus 4,  factorial ?",
+        "math": [
+            "$$(11-4)!$$"
+        ],
+        "pacedSpeech": [
+            "What is    11 minus 4,  factorial"
+        ]
+    },
+    {
+        "id": "a3b09a3binomseq14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$330$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq14a-h5"
+        ],
+        "title": "Solve",
+        "text": "What is $$\\frac{39916800}{24\\times5040}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  fraction, 39916800 over, 24 times 5040,",
+        "math": [
+            "$$\\frac{39916800}{24\\times5040}$$"
+        ],
+        "pacedSpeech": [
+            "What is   fraction, 39916800 over, 24 times 5040,"
+        ]
+    }
+]

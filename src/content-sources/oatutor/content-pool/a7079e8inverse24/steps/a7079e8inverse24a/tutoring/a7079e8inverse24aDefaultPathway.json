@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a7079e8inverse24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The inverse function theorem",
+        "text": "The inverse function theorem is that (f**(-1))'(x)=(1/f'((f**-1)(x))).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The inverse function theorem is that (f**(-1))'(x)=(1/f'((f**-1)(x))).",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The inverse function theorem is that (f**(-1))'(x)=(1/f'((f**-1)(x)))."
+        ]
+    },
+    {
+        "id": "a7079e8inverse24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse24a-h1"
+        ],
+        "title": "Finding the Inverse of f(x) at $$a=0$$.",
+        "text": "To find the inverse of f(x) where $$a=-8$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$-8$$. In this case, it is when $$x=\\frac{1}{3}$$, so we know that $$f^{\\left(-1\\right)} \\left(-8\\right)=\\frac{1}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "To find the inverse of f(x) where  a is equal to negative 8 , then we need to first find what value of  x  when we plug it into f(x) will give us a value of  negative 8 . In this case, it is when  x is equal to 1 third , so we know that  the parentheses negative 1  power of, f of negative 8 is equal to 1 third .",
+        "math": [
+            "$$a=-8$$",
+            "$$x$$",
+            "$$-8$$",
+            "$$x=\\frac{1}{3}$$",
+            "$$f^{\\left(-1\\right)} \\left(-8\\right)=\\frac{1}{3}$$"
+        ],
+        "pacedSpeech": [
+            "To find the inverse of f(x) where   a is equal to negative 8 ",
+            ", then we need to first find what value of   x ",
+            " when we plug it into f(x) will give us a value of   negative 8 ",
+            ". In this case, it is when   x is equal to 1 third ",
+            ", so we know that   the  negative 1  power of, f of negative 8 is equal to 1 third"
+        ]
+    },
+    {
+        "id": "a7079e8inverse24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse24a-h2"
+        ],
+        "title": "Finding the derivative of f(f**(-1)(x)))",
+        "text": "We found that the inverse of f(x) $$=\\frac{1}{3}$$ in the previous hint, therefore we need next know what $$\\operatorname{f'}\\left(\\frac{1}{3}\\right)$$ equals, which is given to us, it is $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We found that the inverse of f(x)  is equal to 1 third  in the previous hint, therefore we need next know what , f prime, of 1 third,  equals, which is given to us, it is  2 .",
+        "math": [
+            "$$=\\frac{1}{3}$$",
+            "$$\\operatorname{f'}\\left(\\frac{1}{3}\\right)$$",
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "We found that the inverse of f(x)   is equal to 1 third ",
+            " in the previous hint, therefore we need next know what  , f prime, of 1 third, ",
+            " equals, which is given to us, it is   2"
+        ]
+    },
+    {
+        "id": "a7079e8inverse24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse24a-h3"
+        ],
+        "title": "Applying the Inverse Function Theorem",
+        "text": "Since we know that $$\\operatorname{f'}\\left(f^{\\left(-1\\right)} \\frac{1}{3}\\right)$$ equals $$2$$, we can can apply the inverse function theorem by doing 1/(our answer). In this case this is $$\\frac{1}{2}=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Since we know that  f prime, of parentheses f raised to the parentheses negative 1  power 1 third   equals  2 , we can can apply the inverse function theorem by doing 1/(our answer). In this case this is  1 half is equal to 1 half .",
+        "math": [
+            "$$\\operatorname{f'}\\left(f^{\\left(-1\\right)} \\frac{1}{3}\\right)$$",
+            "$$2$$",
+            "$$\\frac{1}{2}=\\frac{1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Since we know that   f prime, of  f raised to the  negative 1  power 1 third  ",
+            " equals   2 ",
+            ", we can can apply the inverse function theorem by doing 1/(our answer). In this case this is   1 half is equal to 1 half"
+        ]
+    }
+]

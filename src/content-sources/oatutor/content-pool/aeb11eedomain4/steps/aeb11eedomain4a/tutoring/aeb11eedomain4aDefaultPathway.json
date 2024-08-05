@@ -1,0 +1,93 @@
+[
+    {
+        "id": "aeb11eedomain4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dealing with Square Root",
+        "text": "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand."
+        ]
+    },
+    {
+        "id": "aeb11eedomain4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain4a-h1"
+        ],
+        "title": "Solving for $$x$$ When the Square Root is $$0$$",
+        "text": "The first step is to set the square root to greater than or equal to to zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The first step is to set the square root to greater than or equal to to zero and solve for  x .",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "The first step is to set the square root to greater than or equal to to zero and solve for   x"
+        ]
+    },
+    {
+        "id": "aeb11eedomain4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x \\leq 7$$"
+        ],
+        "dependencies": [
+            "aeb11eedomain4a-h2"
+        ],
+        "title": "Equation for When the Square Root is $$0$$",
+        "text": "$$(7-x) \\geq 0;$$ what is the inequality for $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x \\geq 7$$",
+            "$$x \\leq -7$$",
+            "$$x \\geq -7$$",
+            "$$x \\leq 7$$"
+        ],
+        "speech": "times, parentheses 7 minus x,  is greater than or equal to 0 colon  what is the inequality for  x ?",
+        "math": [
+            "$$(7-x) \\geq 0:$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "times,  7 minus x,  is greater than or equal to 0 colon ",
+            " what is the inequality for   x"
+        ]
+    },
+    {
+        "id": "aeb11eedomain4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeb11eedomain4a-h3"
+        ],
+        "title": "Answer",
+        "text": "Now, we will exclude any number greater than $$7$$ from the domain. The answers are all real numbers less than or equal to $$7$$, or $$(-\\infty,7]$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, we will exclude any number greater than  7  from the domain. The answers are all real numbers less than or equal to  7 , or , the open closed interval from negative infinity to 7 .",
+        "math": [
+            "$$7$$",
+            "$$7$$",
+            "$$(-\\infty,7]$$"
+        ],
+        "pacedSpeech": [
+            "Now, we will exclude any number greater than   7 ",
+            " from the domain. The answers are all real numbers less than or equal to   7 ",
+            ", or  , the open closed interval from negative infinity to 7"
+        ]
+    }
+]

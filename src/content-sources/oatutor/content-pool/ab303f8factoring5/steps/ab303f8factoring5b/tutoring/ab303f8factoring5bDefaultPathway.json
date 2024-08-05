@@ -1,0 +1,137 @@
+[
+    {
+        "id": "ab303f8factoring5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Difference of Squares Formula",
+        "text": "Notice that the problem is a difference of squares and can be factored into the $$\\operatorname{form}\\left(k a+b\\right) \\left(k a-b\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Notice that the problem is a difference of squares and can be factored into the form of, parentheses, k a plus b,  times, parentheses, k a minus b,  .",
+        "math": [
+            "$$\\operatorname{form}\\left(k a+b\\right) \\left(k a-b\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Notice that the problem is a difference of squares and can be factored into the  form of, , k a plus b,  times, , k a minus b,"
+        ]
+    },
+    {
+        "id": "ab303f8factoring5b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25x^2$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring5b-h1"
+        ],
+        "title": "Finding $$a^2$$",
+        "text": "What is $$a^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a squared ?",
+        "math": [
+            "$$a^2$$"
+        ],
+        "pacedSpeech": [
+            "What is   a squared"
+        ]
+    },
+    {
+        "id": "ab303f8factoring5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring5b-h2"
+        ],
+        "title": "Finding $$b^2$$",
+        "text": "What is $$b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b squared ?",
+        "math": [
+            "$$b^2$$"
+        ],
+        "pacedSpeech": [
+            "What is   b squared"
+        ]
+    },
+    {
+        "id": "ab303f8factoring5b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5x$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring5b-h3"
+        ],
+        "title": "Finding a",
+        "text": "What is a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is a?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is a?"
+        ]
+    },
+    {
+        "id": "ab303f8factoring5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ab303f8factoring5b-h4"
+        ],
+        "title": "Finding $$b$$",
+        "text": "What is $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b ?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is   b"
+        ]
+    },
+    {
+        "id": "ab303f8factoring5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab303f8factoring5b-h5",
+            "ab303f8factoring5b-h4"
+        ],
+        "title": "Use formula",
+        "text": "Put a and $$b$$ in the form $$\\left(a+b\\right) \\left(a-b\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put a and  b  in the form  parentheses a plus b,  times, parentheses a minus b,  .",
+        "math": [
+            "$$b$$",
+            "$$\\left(a+b\\right) \\left(a-b\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Put a and   b ",
+            " in the form    a plus b,  times,  a minus b,"
+        ]
+    }
+]

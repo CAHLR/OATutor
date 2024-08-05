@@ -1,0 +1,326 @@
+[
+    {
+        "id": "aef8b03optimize4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$R=Revenue$$",
+        "text": "Let R be the revenue per day. First, make a function for R using the variables $$n$$ and $$p$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Let R be the revenue per day. First, make a function for R using the variables  n  and  p .",
+        "math": [
+            "$$n$$",
+            "$$p$$"
+        ],
+        "pacedSpeech": [
+            "Let R be the revenue per day. First, make a function for R using the variables   n ",
+            " and   p"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$R=n p$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h1"
+        ],
+        "title": "$$R=___$$?",
+        "text": "Which of the following represent R correctly?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$R=\\frac{n}{p}$$",
+            "$$R=n+p$$",
+            "$$R=n p$$"
+        ],
+        "speech": "Which of the following represent R correctly?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Which of the following represent R correctly?"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5p^2+1000p$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h2"
+        ],
+        "title": "$$R(x)=___$$?",
+        "text": "Subsitute $$n$$ in $$R=n p$$ with $$n(p)=1000-5p$$. Simplify that function",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Subsitute  n  in    r, is equal to, n p  with  n of p is equal to, 1000 minus 5 p . Simplify that function",
+        "math": [
+            "$$n$$",
+            "$$R=n p$$",
+            "$$n(p)=1000-5p$$"
+        ],
+        "pacedSpeech": [
+            "Subsitute   n ",
+            " in     r, is equal to, n p ",
+            " with   n of p is equal to, 1000 minus 5 p ",
+            ". Simplify that function"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize4a-h3"
+        ],
+        "title": "Domain",
+        "text": "Secondly, find the domain of interest.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Secondly, find the domain of interest.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Secondly, find the domain of interest."
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[50,200]"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h4"
+        ],
+        "title": "Domain",
+        "text": "If the owners plan to charge between $50 and $200 per day to rent a car, the domain is $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$(50,200)$$",
+            "(0,200]",
+            "[50,200]",
+            "$$-50, 200]$$"
+        ],
+        "speech": "If the owners plan to charge between $50 and $200 per day to rent a car, the domain is  blank ?",
+        "math": [
+            "$$blank$$"
+        ],
+        "pacedSpeech": [
+            "If the owners plan to charge between $50 and $200 per day to rent a car, the domain is   blank"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize4a-h5"
+        ],
+        "title": "Critical Points",
+        "text": "Thirdly, find the critical points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Thirdly, find the critical points.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Thirdly, find the critical points."
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-10p+1000$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h6"
+        ],
+        "title": "Derivative",
+        "text": "What is the derivative of R(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-10p+1000$$",
+            "$$10p+1000$$",
+            "$$-100+10009$$"
+        ],
+        "speech": "What is the derivative of R(x)?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the derivative of R(x)?"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "100"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h7"
+        ],
+        "title": "R'(0)",
+        "text": "To find the critical point, set $$R'(p)=0$$ and solve for $$p$$. $$P=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "To find the critical point, set    r prime, of p, is equal to, 0  and solve for  p .    p is equal to blank ?",
+        "math": [
+            "$$R'(p)=0$$",
+            "$$p$$",
+            "$$P=blank$$"
+        ],
+        "pacedSpeech": [
+            "To find the critical point, set     r prime, of p, is equal to, 0 ",
+            " and solve for   p ",
+            ".     p is equal to blank"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize4a-h8"
+        ],
+        "title": "Max or Min",
+        "text": "Lastly, show if the critical point is a minimum or maximum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Lastly, show if the critical point is a minimum or maximum.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Lastly, show if the critical point is a minimum or maximum."
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "50000"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h9"
+        ],
+        "title": "Critical Points",
+        "text": "What is $$R(100)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is ,   r of 100, is equal to blank ?",
+        "math": [
+            "$$R(100)=blank$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,   r of 100, is equal to blank"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "37500"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h10"
+        ],
+        "title": "Left End Point",
+        "text": "What is $$R(50)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is ,   r of 50, is equal to blank ?",
+        "math": [
+            "$$R(50)=blank$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,   r of 50, is equal to blank"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h11"
+        ],
+        "title": "Right End Point",
+        "text": "What is $$R(200)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is ,   r of 200, is equal to blank ?",
+        "math": [
+            "$$R(200)=blank$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,   r of 200, is equal to blank"
+        ]
+    },
+    {
+        "id": "aef8b03optimize4a-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "maximum"
+        ],
+        "dependencies": [
+            "aef8b03optimize4a-h12"
+        ],
+        "title": "Max or Min",
+        "text": "Because R(100) is greater than R(50) and R(200), that means that $$p=100$$ is a $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "neither",
+            "maximum",
+            "minimum"
+        ],
+        "speech": "Because R(100) is greater than R(50) and R(200), that means that , p is equal to, 100  is a  blank ?",
+        "math": [
+            "$$p=100$$",
+            "$$blank$$"
+        ],
+        "pacedSpeech": [
+            "Because R(100) is greater than R(50) and R(200), that means that  , p is equal to, 100 ",
+            " is a   blank"
+        ]
+    }
+]

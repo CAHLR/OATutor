@@ -1,0 +1,158 @@
+[
+    {
+        "id": "aaa317eLinIneq11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Problem",
+        "text": "We are trying to determine where $$y<0$$, which is when $$-\\left(\\frac{1}{2}\\right) |4x-5|+3<0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We are trying to determine where  y is less than 0 , which is when  negative 1 half the absolute value of 4 x minus 5, end absolute value plus 3 is less than 0 .",
+        "math": [
+            "$$y<0$$",
+            "$$-\\left(\\frac{1}{2}\\right) |4x-5|+3<0$$"
+        ],
+        "pacedSpeech": [
+            "We are trying to determine where   y is less than 0 ",
+            ", which is when   negative 1 half the absolute value of 4 x minus 5, end absolute value plus 3 is less than 0"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq11a-h1"
+        ],
+        "title": "Isolating the Absolute Value",
+        "text": "We can subtract $$3$$ from both side, then multiply both sides by $$-2$$, which gives us $$|4x-5|>6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can subtract  3  from both side, then multiply both sides by  negative 2 , which gives us  the absolute value of 4 x minus 5, end absolute value is greater than 6 .",
+        "math": [
+            "$$3$$",
+            "$$-2$$",
+            "$$|4x-5|>6$$"
+        ],
+        "pacedSpeech": [
+            "We can subtract   3 ",
+            " from both side, then multiply both sides by   negative 2 ",
+            ", which gives us   the absolute value of 4 x minus 5, end absolute value is greater than 6"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq11a-h2"
+        ],
+        "title": "Solve Equality",
+        "text": "We proceed to solve for the equality $$|4x-5|=6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We proceed to solve for the equality  the absolute value of 4 x minus 5, end absolute value is equal to 6 .",
+        "math": [
+            "$$|4x-5|=6$$"
+        ],
+        "pacedSpeech": [
+            "We proceed to solve for the equality   the absolute value of 4 x minus 5, end absolute value is equal to 6"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq11a-h3"
+        ],
+        "title": "Solve Equality",
+        "text": "We can write out $$|4x-5|=6$$ as $$4x-5=6$$ and $$4x-5=-6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can write out  the absolute value of 4 x minus 5, end absolute value is equal to, 6  as  4 x, minus 5 is equal to, 6  and  4 x, minus 5 is equal to negative 6",
+        "math": [
+            "$$|4x-5|=6$$",
+            "$$4x-5=6$$",
+            "$$4x-5=-6$$"
+        ],
+        "pacedSpeech": [
+            "We can write out   the absolute value of 4 x minus 5, end absolute value is equal to, 6 ",
+            " as   4 x, minus 5 is equal to, 6 ",
+            " and   4 x, minus 5 is equal to negative 6"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11}{4}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq11a-h4"
+        ],
+        "title": "Solve Equality",
+        "text": "Solve $$4x-5=6$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve  4 x minus 5, is equal to 6 . What is  x ?",
+        "math": [
+            "$$4x-5=6$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Solve   4 x minus 5, is equal to 6 ",
+            ". What is   x"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{4}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq11a-h4"
+        ],
+        "title": "Solve Equality",
+        "text": "Solve $$4x-5=-6$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Solve  4 x minus 5, is equal to, negative 6 . What is  x ?",
+        "math": [
+            "$$4x-5=-6$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Solve   4 x minus 5, is equal to, negative 6 ",
+            ". What is   x"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aaa317eLinIneq11a-h6"
+        ],
+        "title": "Examine Graph",
+        "text": "Now, we can examine the graph to observe where the y-values are negative. We observe where the branches are below the x-axis. Notice that it is not important exactly what the graph looks like, as long as we know that it crosses the horizontal axis at $$x=\\frac{-1}{4}$$ and x=11/4,and that the graph opens downward.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, we can examine the graph to observe where the y-values are negative. We observe where the branches are below the x-axis. Notice that it is not important exactly what the graph looks like, as long as we know that it crosses the horizontal axis at  x is equal to, fraction, negative 1, over 4,   and x=11/4,and that the graph opens downward.\\n##figure1.gif##",
+        "math": [
+            "$$x=\\frac{-1}{4}$$"
+        ],
+        "pacedSpeech": [
+            "Now, we can examine the graph to observe where the y-values are negative. We observe where the branches are below the x-axis. Notice that it is not important exactly what the graph looks like, as long as we know that it crosses the horizontal axis at   x is equal to, fraction, negative 1, over 4,  ",
+            " and x=11/4,and that the graph opens downward.##figure1.gif##"
+        ]
+    }
+]

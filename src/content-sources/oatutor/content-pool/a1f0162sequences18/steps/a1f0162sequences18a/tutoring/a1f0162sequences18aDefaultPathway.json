@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a1f0162sequences18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute $$n=1$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  n is equal to 1,  into the formula",
+        "math": [
+            "$$n=1$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   n is equal to 1, ",
+            " into the formula"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences18a-h1"
+        ],
+        "title": "Simplification",
+        "text": "Calculate the expression $$\\frac{{\\left(-1\\right)}^1 1^2}{1+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the expression  fraction, parentheses negative 1  to the first 1 squared, over, 1 plus 1,",
+        "math": [
+            "$$\\frac{{\\left(-1\\right)}^1 1^2}{1+1}$$"
+        ],
+        "pacedSpeech": [
+            "Calculate the expression   fraction,  negative 1  to the first 1 squared, over, 1 plus 1,"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences18a-h2"
+        ],
+        "title": "Calculate the numerator",
+        "text": "What is $${\\left(-1\\right)}^1 1^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  parentheses negative 1  to the first 1 squared",
+        "math": [
+            "$${\\left(-1\\right)}^1 1^2$$"
+        ],
+        "pacedSpeech": [
+            "What is    negative 1  to the first 1 squared"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences18a-h3"
+        ],
+        "title": "Calculate the denominator",
+        "text": "What is $$1+1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  1 plus 1",
+        "math": [
+            "$$1+1$$"
+        ],
+        "pacedSpeech": [
+            "What is   1 plus 1"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences18a-h4"
+        ],
+        "title": "Putting It Together",
+        "text": "Put the numerator and denominator together to create a fraction",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put the numerator and denominator together to create a fraction",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Put the numerator and denominator together to create a fraction"
+        ]
+    }
+]

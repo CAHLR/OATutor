@@ -1,0 +1,182 @@
+[
+    {
+        "id": "a046eedintegrals4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Let $$u=1-x$$ so $$du=-1dx$$ or $$-du=dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Let  u is equal to, 1 minus, x  so  d u is equal to negative 1 d x,  or  negative d u is equal to d x",
+        "math": [
+            "$$u=1-x$$",
+            "$$du=-1dx$$",
+            "$$-du=dx$$"
+        ],
+        "pacedSpeech": [
+            "Let   u is equal to, 1 minus, x ",
+            " so   d u is equal to negative 1 d x, ",
+            " or   negative d u is equal to d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals4a-h1"
+        ],
+        "title": "Change the limits",
+        "text": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from $$x$$ to u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from  x  to u.",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from   x ",
+            " to u."
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a046eedintegrals4a-h2"
+        ],
+        "title": "New lower limit",
+        "text": "What is the new lower limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a046eedintegrals4a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New lower limit",
+                "text": "Using $$u=1-x$$ in the first hint, we have $$u=1-(1)=0$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ],
+        "speech": "What is the new lower limit in term of u?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the new lower limit in term of u?"
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a046eedintegrals4a-h3"
+        ],
+        "title": "New upper limit",
+        "text": "What is the new upper limit in term of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a046eedintegrals4a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "New upper limit",
+                "text": "Using $$u=1-x$$ in the first hint, we have $$u=1-(2)=-1$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ],
+        "speech": "What is the new upper limit in term of u?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the new upper limit in term of u?"
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals4a-h4"
+        ],
+        "title": "New integral expression",
+        "text": "The new integral with a variable of u will be $$-\\int e^u \\,du$$ as the limit goes from $$u=0$$ to $$u=-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The new integral with a variable of u will be  minus, the integral of e to the u-th d u,  as the limit goes from  u is equal to 0  to  u, is equal to negative 1",
+        "math": [
+            "$$-\\int e^u \\,du$$",
+            "$$u=0$$",
+            "$$u=-1$$"
+        ],
+        "pacedSpeech": [
+            "The new integral with a variable of u will be   minus, the integral of e to the u-th d u, ",
+            " as the limit goes from   u is equal to 0 ",
+            " to   u, is equal to negative 1"
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals4a-h5"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int e^u \\,du=e^u$$ as the limit goes from $$u=-1$$ to $$u=0$$. Note that the lower limit always has to be less than the upper limit. To change the order of limits, we multply the integral with $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral of e to the u-th d u is equal to, e to the u-th  as the limit goes from  u, is equal to, negative 1  to  u, is equal to, 0 . Note that the lower limit always has to be less than the upper limit. To change the order of limits, we multply the integral with  negative 1 .",
+        "math": [
+            "$$\\int e^u \\,du=e^u$$",
+            "$$u=-1$$",
+            "$$u=0$$",
+            "$$-1$$"
+        ],
+        "pacedSpeech": [
+            "the integral of e to the u-th d u is equal to, e to the u-th ",
+            " as the limit goes from   u, is equal to, negative 1 ",
+            " to   u, is equal to, 0 ",
+            ". Note that the lower limit always has to be less than the upper limit. To change the order of limits, we multply the integral with   negative 1"
+        ]
+    },
+    {
+        "id": "a046eedintegrals4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals4a-h6"
+        ],
+        "title": "Evaluate the integral",
+        "text": "$$e^0-e^{\\left(-1\\right)}=-\\left(e^{\\left(-1\\right)}\\right)+1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "e to the 0 minus, e raised to the parentheses negative 1  power is equal to negative parentheses, e raised to the parentheses negative 1  power  plus 1",
+        "math": [
+            "$$e^0-e^{\\left(-1\\right)}=-\\left(e^{\\left(-1\\right)}\\right)+1$$"
+        ],
+        "pacedSpeech": [
+            "e to the 0 minus, e raised to the  negative 1  power is equal to negative , e raised to the  negative 1  power  plus 1"
+        ]
+    }
+]

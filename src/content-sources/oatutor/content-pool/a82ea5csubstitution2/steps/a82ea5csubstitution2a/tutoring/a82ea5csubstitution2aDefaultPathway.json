@@ -1,0 +1,131 @@
+[
+    {
+        "id": "a82ea5csubstitution2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the Integral",
+        "text": "Rewrite the integral as $$\\int z\\left({\\left(z^2-5\\right)}^{\\frac{1}{2}}\\right) \\,dz$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Rewrite the integral as  the integral of z of parentheses parentheses, z squared minus 5,  raised to the 1 half power  d z .",
+        "math": [
+            "$$\\int z\\left({\\left(z^2-5\\right)}^{\\frac{1}{2}}\\right) \\,dz$$"
+        ],
+        "pacedSpeech": [
+            "Rewrite the integral as   the integral of z of  , z squared minus 5,  raised to the 1 half power  d z"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution2a-h1"
+        ],
+        "title": "Choose an Expression",
+        "text": "Let $$u=z^2-5$$ and $$du=2zdz$$. Our new concern is that $$du=2zdz$$ and the original expression has only xdz.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Let  u is equal to, z squared minus, 5  and  d u is equal to 2 z d z, . Our new concern is that  d u is equal to, 2 z d z  and the original expression has only xdz.",
+        "math": [
+            "$$u=z^2-5$$",
+            "$$du=2zdz$$",
+            "$$du=2zdz$$"
+        ],
+        "pacedSpeech": [
+            "Let   u is equal to, z squared minus, 5 ",
+            " and   d u is equal to 2 z d z, ",
+            ". Our new concern is that   d u is equal to, 2 z d z ",
+            " and the original expression has only xdz."
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution2a-h2"
+        ],
+        "title": "Alter the Expression by Multiplying by $$\\frac{1}{2}$$",
+        "text": "Alter the expression for du or the integral in u will be twice as large as it should be. We can do this by multiplying both sides of the du equation by $$\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Alter the expression for du or the integral in u will be twice as large as it should be. We can do this by multiplying both sides of the du equation by  1 half .",
+        "math": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Alter the expression for du or the integral in u will be twice as large as it should be. We can do this by multiplying both sides of the du equation by   1 half"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution2a-h3"
+        ],
+        "title": "Write the Integral in Terms of u",
+        "text": "Write the integral in terms of u, but pull the $$\\frac{1}{2}$$ outside the integration symbol.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Write the integral in terms of u, but pull the  1 half  outside the integration symbol.",
+        "math": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Write the integral in terms of u, but pull the   1 half ",
+            " outside the integration symbol."
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2*\\int u \\frac{1}{2} \\,du$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution2a-h4"
+        ],
+        "title": "Write the Integral in Terms of u",
+        "text": "What would the integral look like?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1/2*\\int u \\frac{1}{2} \\,du$$",
+            "$$1/2*\\int u \\,du$$",
+            "$$\\int u \\frac{1}{2} \\,du$$",
+            "$$\\int u \\,du$$"
+        ],
+        "speech": "What would the integral look like?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What would the integral look like?"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution2a-h5"
+        ],
+        "title": "Integrate the Expression in Terms of u",
+        "text": "Integrate the expression in u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Integrate the expression in u.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Integrate the expression in u."
+        ]
+    }
+]

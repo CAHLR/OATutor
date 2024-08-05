@@ -1,0 +1,236 @@
+[
+    {
+        "id": "a0dd0e7corepoly1ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of a Line",
+        "text": "The slope of a line can be determined using two points $$(x_1,y_1)$$, $$(x_2,y_2)$$ by subtracting the y-values over the x-values: $$\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The slope of a line can be determined using two points  parentheses, x sub 1 comma y sub 1,  , , parentheses, x sub 2 comma y sub 2,   by subtracting the y-values over the x-values:  fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,  .",
+        "math": [
+            "$$(x_1,y_1)$$",
+            "$$(x_2,y_2)$$",
+            "$$\\frac{y_2-y_1}{x_2-x_1}$$"
+        ],
+        "pacedSpeech": [
+            "The slope of a line can be determined using two points   , x sub 1 comma y sub 1,  ",
+            ",  , , x sub 2 comma y sub 2,  ",
+            " by subtracting the y-values over the x-values:   fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h1"
+        ],
+        "title": "Slope of a Line",
+        "text": "Substituting the points $$(-3,2)$$, $$(5,-2)$$, the slope is equal to $$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Substituting the points  times, parentheses, negative 3 comma 2,  , , parentheses, 5 comma negative 2,  , the slope is equal to  fraction, parentheses, negative 2 minus 2, , over, 5 minus negative 3,",
+        "math": [
+            "$$(-3,2)$$",
+            "$$(5,-2)$$",
+            "$$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Substituting the points   times, , negative 3 comma 2,  ",
+            ",  , , 5 comma negative 2,  ",
+            ", the slope is equal to   fraction, , negative 2 minus 2, , over, 5 minus negative 3,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$-2-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  minus 2 minus 2 ?",
+        "math": [
+            "$$-2-2$$"
+        ],
+        "pacedSpeech": [
+            "What is   minus 2 minus 2"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$5-(-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is , 5 minus negative 3, ?",
+        "math": [
+            "$$5-(-3)$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 5 minus negative 3,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h3",
+            "a0dd0e7corepoly1ba-h4"
+        ],
+        "title": "Slope of a Line",
+        "text": "$$\\frac{-4}{8}$$ can be simplified to get the slope of the line: $$\\frac{-1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "fraction, negative 4, over 8,   can be simplified to get the slope of the line: , fraction, negative 1, over 2,  .",
+        "math": [
+            "$$\\frac{-4}{8}$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "fraction, negative 4, over 8,  ",
+            " can be simplified to get the slope of the line:  , fraction, negative 1, over 2,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h5"
+        ],
+        "title": "Point-Slope Form",
+        "text": "The point slope formula can be used to get the function of a line through the given point: $$y-y_1=m \\left(x-x_1\\right)$$ where $$m$$ is the slope and $$(x_1,y_1)$$ is the point.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The point slope formula can be used to get the function of a line through the given point:  y minus y sub 1, is equal to m, parentheses, x minus x sub 1,   where  m  is the slope and , parentheses, x sub 1 comma y sub 1,   is the point.",
+        "math": [
+            "$$y-y_1=m \\left(x-x_1\\right)$$",
+            "$$m$$",
+            "$$(x_1,y_1)$$"
+        ],
+        "pacedSpeech": [
+            "The point slope formula can be used to get the function of a line through the given point:   y minus y sub 1, is equal to m, , x minus x sub 1,  ",
+            " where   m ",
+            " is the slope and  , , x sub 1 comma y sub 1,  ",
+            " is the point."
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h6"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Substituing $$m=\\frac{-1}{2}$$ and $$(-3,2)$$ for the point, the formula is equal to $$y-2=-\\left(\\frac{1}{2}\\right) \\left(x+3\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Substituing  m is equal to fraction, negative 1, over 2,   and , parentheses, negative 3 comma 2,   for the point, the formula is equal to  y minus 2 is equal to negative 1 half times, parentheses x plus 3,  .",
+        "math": [
+            "$$m=\\frac{-1}{2}$$",
+            "$$(-3,2)$$",
+            "$$y-2=-\\left(\\frac{1}{2}\\right) \\left(x+3\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Substituing   m is equal to fraction, negative 1, over 2,  ",
+            " and  , , negative 3 comma 2,  ",
+            " for the point, the formula is equal to   y minus 2 is equal to negative 1 half times,  x plus 3,"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h7"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Distribute $$\\frac{-1}{2}$$ to $$x+3$$. What is $$3-\\left(\\frac{1}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Distribute  fraction, negative 1, over 2,   to  x plus 3 . What is  3, minus 1 half ?",
+        "math": [
+            "$$\\frac{-1}{2}$$",
+            "$$x+3$$",
+            "$$3-\\left(\\frac{1}{2}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Distribute   fraction, negative 1, over 2,  ",
+            " to   x plus 3 ",
+            ". What is   3, minus 1 half"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h9",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h8"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Add $$2$$ from the left to get $$y=-\\left(\\frac{1}{2}\\right) x-\\frac{3}{2}+2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add  2  from the left to get  y, is equal to negative 1 half x, minus 3 halves plus 2 .",
+        "math": [
+            "$$2$$",
+            "$$y=-\\left(\\frac{1}{2}\\right) x-\\frac{3}{2}+2$$"
+        ],
+        "pacedSpeech": [
+            "Add   2 ",
+            " from the left to get   y, is equal to negative 1 half x, minus 3 halves plus 2"
+        ]
+    },
+    {
+        "id": "a0dd0e7corepoly1ba-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1ba-h9"
+        ],
+        "title": "Point-Slope Form",
+        "text": "What is $$\\frac{-3}{2}+2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  fraction, negative 3, over 2,  plus 2 ?",
+        "math": [
+            "$$\\frac{-3}{2}+2$$"
+        ],
+        "pacedSpeech": [
+            "What is   fraction, negative 3, over 2,  plus 2"
+        ]
+    }
+]

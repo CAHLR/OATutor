@@ -1,0 +1,104 @@
+[
+    {
+        "id": "af9dcc3physical1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mass-Density Formula",
+        "text": "Given a thin rod oriented along the x-axis over the interval [a,b], let p(x) denote a linear density function giving the density of the rod at a point $$x$$ in the interval. Then the mass of the rod is given by $$m=\\int_{a}^{b} p(x) \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Given a thin rod oriented along the x-axis over the interval [a,b], let p(x) denote a linear density function giving the density of the rod at a point  x  in the interval. Then the mass of the rod is given by  m, is equal to the integral from a to b of, p of x d x",
+        "math": [
+            "$$x$$",
+            "$$m=\\int_{a}^{b} p(x) \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "Given a thin rod oriented along the x-axis over the interval [a,b], let p(x) denote a linear density function giving the density of the rod at a point   x ",
+            " in the interval. Then the mass of the rod is given by   m, is equal to the integral from a to b of, p of x d x"
+        ]
+    },
+    {
+        "id": "af9dcc3physical1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sinx"
+        ],
+        "dependencies": [
+            "af9dcc3physical1a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "What is the density of the rod?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the density of the rod?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the density of the rod?"
+        ]
+    },
+    {
+        "id": "af9dcc3physical1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical1a-h2"
+        ],
+        "title": "Set up the integral",
+        "text": "$$\\int_{pi}^{\\frac{\\pi}{2}} sinx \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral from p i to pi over 2, of sinx d x",
+        "math": [
+            "$$\\int_{pi}^{\\frac{\\pi}{2}} sinx \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "the integral from p i to pi over 2, of sinx d x"
+        ]
+    },
+    {
+        "id": "af9dcc3physical1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical1a-h3"
+        ],
+        "title": "Find the integral",
+        "text": "-cosx as the limits going from $$x=\\frac{\\pi}{2}$$ to $$x=pi$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "-cosx as the limits going from  x is equal to, pi over 2,  to  x, is equal to p i",
+        "math": [
+            "$$x=\\frac{\\pi}{2}$$",
+            "$$x=pi$$"
+        ],
+        "pacedSpeech": [
+            "-cosx as the limits going from   x is equal to, pi over 2, ",
+            " to   x, is equal to p i"
+        ]
+    },
+    {
+        "id": "af9dcc3physical1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical1a-h4"
+        ],
+        "title": "Evaluate",
+        "text": "$$-cos\\left(\\pi\\right)+cos\\left(\\frac{\\pi}{2}\\right)=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "minus cosine of pi plus, cosine of, parentheses pi over 2,  is equal to 1",
+        "math": [
+            "$$-cos\\left(\\pi\\right)+cos\\left(\\frac{\\pi}{2}\\right)=1$$"
+        ],
+        "pacedSpeech": [
+            "minus cosine of pi plus, cosine of,  pi over 2,  is equal to 1"
+        ]
+    }
+]

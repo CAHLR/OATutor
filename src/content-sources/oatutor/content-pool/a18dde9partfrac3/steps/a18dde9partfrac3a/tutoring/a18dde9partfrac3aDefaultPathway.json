@@ -1,0 +1,170 @@
+[
+    {
+        "id": "a18dde9partfrac3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the definition of partial fraction decomposition",
+        "text": "Since the denominator contains one linear factor and one irreducible quadratic factor, the numerator of the linear factor will be a constant (A), and the numerator of the quadratic factor will be a linear expression (e.g. Bx+C)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the denominator contains one linear factor and one irreducible quadratic factor, the numerator of the linear factor will be a constant (A), and the numerator of the quadratic factor will be a linear expression (e.g. Bx+C)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Since the denominator contains one linear factor and one irreducible quadratic factor, the numerator of the linear factor will be a constant (A), and the numerator of the quadratic factor will be a linear expression (e.g. Bx+C)"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac3a-h1"
+        ],
+        "title": "Removing the denominator",
+        "text": "Multiply both sides of the equation by the common denominator",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply both sides of the equation by the common denominator",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Multiply both sides of the equation by the common denominator"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac3a-h2"
+        ],
+        "title": "Finding the resulting equation",
+        "text": "Expand the right side and combine like terms.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Expand the right side and combine like terms.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Expand the right side and combine like terms."
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac3a-h3"
+        ],
+        "title": "Resulting equation",
+        "text": "The resulting equation is: $$8x^2+12x-20=\\left(A+B\\right) x^2+\\left(A+3B+C\\right) x+2A+3C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The resulting equation is:  8 x squared, plus 12 x minus 20 is equal to parentheses,   a plus   b,  times x squared plus parentheses,   a plus 3   b, plus   c  times x plus 2   a, plus 3   c",
+        "math": [
+            "$$8x^2+12x-20=\\left(A+B\\right) x^2+\\left(A+3B+C\\right) x+2A+3C$$"
+        ],
+        "pacedSpeech": [
+            "The resulting equation is:  this expression"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac3a-h4"
+        ],
+        "title": "Setting up the system of equations",
+        "text": "Compare the coefficients of both sides, which will give rise to a system of equations in three variables.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Compare the coefficients of both sides, which will give rise to a system of equations in three variables.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Compare the coefficients of both sides, which will give rise to a system of equations in three variables."
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac3a-h5"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "What coefficient does $$A+B$$ correspond to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What coefficient does ,   a plus   b,  correspond to?",
+        "math": [
+            "$$A+B$$"
+        ],
+        "pacedSpeech": [
+            "What coefficient does  ,   a plus   b, ",
+            " correspond to?"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac3a-h6"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "What coefficient does $$A+3B+C$$ correspond to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What coefficient does ,   a plus 3   b, plus   c  correspond to?",
+        "math": [
+            "$$A+3B+C$$"
+        ],
+        "pacedSpeech": [
+            "What coefficient does  ,   a plus 3   b, plus   c ",
+            " correspond to?"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-20$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac3a-h7"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "What coefficient does $$2A+3C$$ correspond to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What coefficient does , 2   a, plus 3   c  correspond to?",
+        "math": [
+            "$$2A+3C$$"
+        ],
+        "pacedSpeech": [
+            "What coefficient does  , 2   a, plus 3   c ",
+            " correspond to?"
+        ]
+    }
+]

@@ -1,0 +1,136 @@
+[
+    {
+        "id": "a57f999ser16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$a_1$$",
+        "text": "Find $$a_1$$ by substituting $$n=1$$ into the given explicit formula: $$-2{\\left(\\frac{1}{2}\\right)}^{n-1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Find  a sub 1  by substituting  n, is equal to 1  into the given explicit formula:  negative 2 times parentheses 1 half  raised to the n minus 1 power",
+        "math": [
+            "$$a_1$$",
+            "$$n=1$$",
+            "$$-2{\\left(\\frac{1}{2}\\right)}^{n-1}$$"
+        ],
+        "pacedSpeech": [
+            "Find   a sub 1 ",
+            " by substituting   n, is equal to 1 ",
+            " into the given explicit formula:   negative 2 times  1 half  raised to the n minus 1 power"
+        ]
+    },
+    {
+        "id": "a57f999ser16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a57f999ser16a-h1"
+        ],
+        "title": "Solve for $$a_1$$",
+        "text": "What is $$a_1=-2{\\left(\\frac{1}{2}\\right)}^{1-1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  a sub 1 is equal to negative 2 times parentheses 1 half  raised to the 1 minus 1 power",
+        "math": [
+            "$$a_1=-2{\\left(\\frac{1}{2}\\right)}^{1-1}$$"
+        ],
+        "pacedSpeech": [
+            "What is   a sub 1 is equal to negative 2 times  1 half  raised to the 1 minus 1 power"
+        ]
+    },
+    {
+        "id": "a57f999ser16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser16a-h2"
+        ],
+        "title": "Identify $$r$$",
+        "text": "We can see from the given explicit formula that $$r=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can see from the given explicit formula that , r is equal to 1 half, .",
+        "math": [
+            "$$r=\\frac{1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "We can see from the given explicit formula that  , r is equal to 1 half,"
+        ]
+    },
+    {
+        "id": "a57f999ser16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser16a-h3"
+        ],
+        "title": "Identify $$n$$",
+        "text": "The upper limit of summation is $$10$$, so $$n=10$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The upper limit of summation is , 10 , so  n, is equal to 10 .",
+        "math": [
+            "$$10$$",
+            "$$n=10$$"
+        ],
+        "pacedSpeech": [
+            "The upper limit of summation is  , 10 ",
+            ", so   n, is equal to 10"
+        ]
+    },
+    {
+        "id": "a57f999ser16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a57f999ser16a-h4"
+        ],
+        "title": "Formula for the Sum of the first $$n$$ terms of a Geometric Series",
+        "text": "Substitute values for $$a_1$$, $$r$$, and $$n$$ into the formula: $$S_n=\\frac{a_1 \\left(1-r^n\\right)}{1-r}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute values for  a sub 1 ,  r , and  n  into the formula:    s sub n is equal to fraction, a sub 1, parentheses, 1 minus r to the n-th, , over, 1 minus r,  .",
+        "math": [
+            "$$a_1$$",
+            "$$r$$",
+            "$$n$$",
+            "$$S_n=\\frac{a_1 \\left(1-r^n\\right)}{1-r}$$"
+        ],
+        "pacedSpeech": [
+            "Substitute values for   a sub 1 ",
+            ",   r ",
+            ", and   n ",
+            " into the formula:     s sub n is equal to fraction, a sub 1, , 1 minus r to the n-th, , over, 1 minus r,"
+        ]
+    },
+    {
+        "id": "a57f999ser16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1023}{256}$$"
+        ],
+        "dependencies": [
+            "a57f999ser16a-h5"
+        ],
+        "title": "Simplify to find $$S_{10}$$",
+        "text": "What is $$S_{10}=\\frac{-2\\left(1-{\\left(\\frac{1}{2}\\right)}^{10}\\right)}{1-\\frac{1}{2}}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is    s sub 10 is equal to fraction, negative 2 times parentheses 1 minus, parentheses 1 half  to the tenth , over, 1 minus 1 half,  ?",
+        "math": [
+            "$$S_{10}=\\frac{-2\\left(1-{\\left(\\frac{1}{2}\\right)}^{10}\\right)}{1-\\frac{1}{2}}$$"
+        ],
+        "pacedSpeech": [
+            "What is     s sub 10 is equal to fraction, negative 2 times  1 minus,  1 half  to the tenth , over, 1 minus 1 half,"
+        ]
+    }
+]

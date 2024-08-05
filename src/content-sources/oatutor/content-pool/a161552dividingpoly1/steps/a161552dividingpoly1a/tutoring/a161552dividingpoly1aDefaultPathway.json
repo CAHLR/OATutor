@@ -1,0 +1,181 @@
+[
+    {
+        "id": "a161552dividingpoly1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division",
+        "text": "Divide the leading term in the dividend by the leading term of the divisor. $$\\frac{x^2}{x}=x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide the leading term in the dividend by the leading term of the divisor.  fraction, x squared, over x,  is equal to x",
+        "math": [
+            "$$\\frac{x^2}{x}=x$$"
+        ],
+        "pacedSpeech": [
+            "Divide the leading term in the dividend by the leading term of the divisor.   fraction, x squared, over x,  is equal to x"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h1"
+        ],
+        "title": "Multiplication",
+        "text": "Multiply the result by the divisor. $$x \\left(x+8\\right)=x^2+8x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply the result by the divisor.  x, parentheses x plus 8,  is equal to, x squared plus 8 x",
+        "math": [
+            "$$x \\left(x+8\\right)=x^2+8x$$"
+        ],
+        "pacedSpeech": [
+            "Multiply the result by the divisor.   x,  x plus 8,  is equal to, x squared plus 8 x"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h2"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract the divident from the result. $$x^2+11x+16-x^2+8x=3x+16$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Subtract the divident from the result.  x squared plus 11 x plus 16 minus x squared plus 8 x is equal to, 3 x plus 16",
+        "math": [
+            "$$x^2+11x+16-x^2+8x=3x+16$$"
+        ],
+        "pacedSpeech": [
+            "Subtract the divident from the result.   x squared plus 11 x plus 16 minus x squared plus 8 x is equal to, 3 x plus 16"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h3"
+        ],
+        "title": "Division",
+        "text": "Divide the leading term of the remainder. $$\\frac{3x}{x}=3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide the leading term of the remainder.  fraction, 3 x, over x,  is equal to 3",
+        "math": [
+            "$$\\frac{3x}{x}=3$$"
+        ],
+        "pacedSpeech": [
+            "Divide the leading term of the remainder.   fraction, 3 x, over x,  is equal to 3"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h4"
+        ],
+        "title": "Multiplication",
+        "text": "Multiply the result by the divisor. $$3\\left(x+8\\right)=3x+24$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply the result by the divisor.  3 times, parentheses x plus 8,  is equal to, 3 x plus 24",
+        "math": [
+            "$$3\\left(x+8\\right)=3x+24$$"
+        ],
+        "pacedSpeech": [
+            "Multiply the result by the divisor.   3 times,  x plus 8,  is equal to, 3 x plus 24"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract the remainder from the new result. $$3x+16-3x+24=-8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Subtract the remainder from the new result.  3 x plus 16 minus 3 x plus 24 is equal to negative 8",
+        "math": [
+            "$$3x+16-3x+24=-8$$"
+        ],
+        "pacedSpeech": [
+            "Subtract the remainder from the new result.   3 x plus 16 minus 3 x plus 24 is equal to negative 8"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h6"
+        ],
+        "title": "Remainder",
+        "text": "Since the degree of the remainder is less than the divisor, our last term is $$\\frac{-8}{x+8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since the degree of the remainder is less than the divisor, our last term is  fraction, negative 8, over, x plus 8,",
+        "math": [
+            "$$\\frac{-8}{x+8}$$"
+        ],
+        "pacedSpeech": [
+            "Since the degree of the remainder is less than the divisor, our last term is   fraction, negative 8, over, x plus 8,"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3-\\frac{8}{x+8}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly1a-h7"
+        ],
+        "title": "Division",
+        "text": "What is our final result after combining all the terms?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is our final result after combining all the terms?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is our final result after combining all the terms?"
+        ]
+    },
+    {
+        "id": "a161552dividingpoly1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3-\\frac{8}{x+8}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly1a-h8"
+        ],
+        "title": "Division",
+        "text": "$$x+3-\\frac{8}{x+8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "x plus 3 minus, fraction, 8 over, x plus 8,",
+        "math": [
+            "$$x+3-\\frac{8}{x+8}$$"
+        ],
+        "pacedSpeech": [
+            "x plus 3 minus, fraction, 8 over, x plus 8,"
+        ]
+    }
+]

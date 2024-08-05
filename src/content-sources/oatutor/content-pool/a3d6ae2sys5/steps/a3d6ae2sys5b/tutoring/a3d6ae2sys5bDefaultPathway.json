@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a3d6ae2sys5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitue $$x=-5$$ and $$y=7$$ into both equations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitue  x is equal to, negative 5  and  y, is equal to 7  into both equations.",
+        "math": [
+            "$$x=-5$$",
+            "$$y=7$$"
+        ],
+        "pacedSpeech": [
+            "We substitue   x is equal to, negative 5 ",
+            " and   y, is equal to 7 ",
+            " into both equations."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$-3x+y=8$$\\n$$-3\\times-5+7=8$$\\n$$22=8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "minus 3 x plus y is equal to 8 \\n, negative 3 times negative 5 plus 7 is equal to 8 \\n 22, is equal to 8",
+        "math": [
+            "$$-3x+y=8$$",
+            "$$-3\\times-5+7=8$$",
+            "$$22=8$$"
+        ],
+        "pacedSpeech": [
+            "minus 3 x plus y is equal to 8 ",
+            " , negative 3 times negative 5 plus 7 is equal to 8 ",
+            "  22, is equal to 8"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a3d6ae2sys5b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the equation above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ],
+        "speech": "Is the equation above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the equation above true?"
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h3"
+        ],
+        "title": "Solution to First Equation",
+        "text": "Therefore, $$(-5,7)$$ does not satisfies the first equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  times, parentheses, negative 5 comma 7,   does not satisfies the first equation.",
+        "math": [
+            "$$(-5,7)$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   times, , negative 5 comma 7,  ",
+            " does not satisfies the first equation."
+        ]
+    },
+    {
+        "id": "a3d6ae2sys5b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d6ae2sys5b-h4"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(-5,7)$$ does not make both equations true. $$(-5,7)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses, negative 5 comma 7,   does not make both equations true. , parentheses, negative 5 comma 7,   is not a solution.",
+        "math": [
+            "$$(-5,7)$$",
+            "$$(-5,7)$$"
+        ],
+        "pacedSpeech": [
+            "times, , negative 5 comma 7,  ",
+            " does not make both equations true.  , , negative 5 comma 7,  ",
+            " is not a solution."
+        ]
+    }
+]

@@ -1,0 +1,267 @@
+[
+    {
+        "id": "a4593e0functrans1000a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Inverse Property",
+        "text": "To transform a function into a similar form, any value can be applied as long as its inverse is also in the function. For example, $$x=3+x-3$$ or $$x=\\frac{4}{4} x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "To transform a function into a similar form, any value can be applied as long as its inverse is also in the function. For example,  x is equal to, 3 plus x minus 3  or  x is equal to 4 fourths x .",
+        "math": [
+            "$$x=3+x-3$$",
+            "$$x=\\frac{4}{4} x$$"
+        ],
+        "pacedSpeech": [
+            "To transform a function into a similar form, any value can be applied as long as its inverse is also in the function. For example,   x is equal to, 3 plus x minus 3 ",
+            " or   x is equal to 4 fourths x"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h1"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Add and subtract $$1$$ within the square root: $$\\sqrt{1+x-1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add and subtract  1  within the square root: , the square root of 1 plus x minus 1 end root",
+        "math": [
+            "$$1$$",
+            "$$\\sqrt{1+x-1}$$"
+        ],
+        "pacedSpeech": [
+            "Add and subtract   1 ",
+            " within the square root:  , the square root of 1 plus x minus 1 end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h2"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Multiply $$\\frac{-2}{-2}$$ to $$(x-1)$$: $$\\sqrt{1+\\left(-\\frac{2}{-2}\\right) \\left(x-1\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Multiply  fraction, negative 2, over, negative 2,   to , parentheses x minus 1,  :  the square root of 1 plus parentheses, negative fraction, 2 over, negative 2,   times, parentheses x minus 1,  end root",
+        "math": [
+            "$$\\frac{-2}{-2}$$",
+            "$$(x-1)$$",
+            "$$\\sqrt{1+\\left(-\\frac{2}{-2}\\right) \\left(x-1\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "Multiply   fraction, negative 2, over, negative 2,  ",
+            " to  ,  x minus 1,  ",
+            ":   the square root of 1 plus , negative fraction, 2 over, negative 2,   times,  x minus 1,  end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{2}\\right) x+\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000a-h3"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Distribute $$\\frac{-1}{2}$$ to $$(x-1)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Distribute  fraction, negative 1, over 2,   to , parentheses x minus 1,",
+        "math": [
+            "$$\\frac{-1}{2}$$",
+            "$$(x-1)$$"
+        ],
+        "pacedSpeech": [
+            "Distribute   fraction, negative 1, over 2,  ",
+            " to  ,  x minus 1,"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h4"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "To recap, $$\\sqrt{x}=\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "To re,  the square root of x is equal to the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root",
+        "math": [
+            "$$\\sqrt{x}=\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "To recap,   the square root of x is equal to the square root of 1 minus 2 times , negative 1 half x, plus 1 half  end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h5"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Multiply $$\\frac{-2}{-2}$$: $$-\\left(\\frac{1}{2}\\right) \\left(-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Multiply  fraction, negative 2, over, negative 2,  :  negative 1 half times parentheses negative 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root",
+        "math": [
+            "$$\\frac{-2}{-2}$$",
+            "$$-\\left(\\frac{1}{2}\\right) \\left(-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Multiply   fraction, negative 2, over, negative 2,  ",
+            ":   negative 1 half times  negative 2 the square root of 1 minus 2 times , negative 1 half x, plus 1 half  end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h6"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Add and subtract $$3$$ within the parantheses: $$-\\left(\\frac{1}{2}\\right) \\left(-3+3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Add and subtract  3  within the parantheses:  negative 1 half times parentheses negative 3 plus 3 minus 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root",
+        "math": [
+            "$$3$$",
+            "$$-\\left(\\frac{1}{2}\\right) \\left(-3+3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Add and subtract   3 ",
+            " within the parantheses:   negative 1 half times  negative 3 plus 3 minus 2 the square root of 1 minus 2 times , negative 1 half x, plus 1 half  end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h7"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "Pull out the $$-3$$ from the parantheses by multiplying the equation by $$\\frac{-1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Pull out the  minus, 3  from the parantheses by multiplying the equation by , fraction, negative 1, over 2,  .",
+        "math": [
+            "$$-3$$",
+            "$$\\frac{-1}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Pull out the   minus, 3 ",
+            " from the parantheses by multiplying the equation by  , fraction, negative 1, over 2,"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000a-h8"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "What is $$-3\\left(-\\frac{1}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What is  minus 3 times negative 1 half ?",
+        "math": [
+            "$$-3\\left(-\\frac{1}{2}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is   minus 3 times negative 1 half"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h9"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "The term $$3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$ can be rewritten in terms of $$f(x)=3-2\\sqrt{1-2x}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "The term  3 minus 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root  can be rewritten in terms of  f of x is equal to 3 minus 2, the square root of 1 minus 2 x end root .",
+        "math": [
+            "$$3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$",
+            "$$f(x)=3-2\\sqrt{1-2x}$$"
+        ],
+        "pacedSpeech": [
+            "The term   3 minus 2 the square root of 1 minus 2 times , negative 1 half x, plus 1 half  end root ",
+            " can be rewritten in terms of   f of x is equal to 3 minus 2, the square root of 1 minus 2 x end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{1}{2}\\right) x+\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000a-h10"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "What value of $$x$$ can be substituted to make $$3-2\\sqrt{1-2x}$$ equal to $$3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "What value of  x  can be substituted to make  3, minus 2, the square root of 1 minus 2 x end root  equal to  3 minus 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root ?",
+        "math": [
+            "$$x$$",
+            "$$3-2\\sqrt{1-2x}$$",
+            "$$3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "What value of   x ",
+            " can be substituted to make   3, minus 2, the square root of 1 minus 2 x end root ",
+            " equal to   3 minus 2 the square root of 1 minus 2 times , negative 1 half x, plus 1 half  end root"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000a-h11"
+        ],
+        "title": "Transforming $$\\sqrt{x}$$",
+        "text": "If $$f\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)=3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$, then $$\\frac{3}{2}-\\frac{1}{2} \\left(3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)=\\frac{3}{2}-\\frac{1}{2} f\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "If  f of parentheses, negative 1 half x, plus 1 half  is equal to 3 minus 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root , then  3 halves minus 1 half times parentheses 3 minus 2 the square root of 1 minus 2 times parentheses, negative 1 half x, plus 1 half  end root  is equal to 3 halves minus 1 half f of parentheses, negative 1 half x, plus 1 half  .",
+        "math": [
+            "$$f\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)=3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}$$",
+            "$$\\frac{3}{2}-\\frac{1}{2} \\left(3-2\\sqrt{1-2\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)}\\right)=\\frac{3}{2}-\\frac{1}{2} f\\left(-\\frac{1}{2} x+\\frac{1}{2}\\right)$$"
+        ],
+        "pacedSpeech": [
+            "If  this expression",
+            ", then  this expression"
+        ]
+    }
+]

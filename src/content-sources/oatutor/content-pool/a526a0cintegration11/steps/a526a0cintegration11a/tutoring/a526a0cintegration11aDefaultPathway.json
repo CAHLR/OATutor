@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a526a0cintegration11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Seperating the terms",
+        "text": "We will start by seperating the $$2$$ terms in this integrals and apply the basic inegration rules on each of them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "We will start by seperating the  2  terms in this integrals and apply the basic inegration rules on each of them.",
+        "math": [
+            "$$2$$"
+        ],
+        "pacedSpeech": [
+            "We will start by seperating the   2 ",
+            " terms in this integrals and apply the basic inegration rules on each of them."
+        ]
+    },
+    {
+        "id": "a526a0cintegration11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration11a-h1"
+        ],
+        "title": "Seperating the terms",
+        "text": "$$\\int_{0}^{pi} sinx-cosx \\,dx=\\int_{0}^{pi} sinx \\,dx-\\int_{0}^{pi} cosx \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral from 0 to p i of, sinx minus, c o s x d x is equal to the integral from 0 to p i of sinx d x minus the integral from 0 to p i of c o s x d x",
+        "math": [
+            "$$\\int_{0}^{pi} sinx-cosx \\,dx=\\int_{0}^{pi} sinx \\,dx-\\int_{0}^{pi} cosx \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "this expression"
+        ]
+    },
+    {
+        "id": "a526a0cintegration11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "-cosx"
+        ],
+        "dependencies": [
+            "a526a0cintegration11a-h2"
+        ],
+        "title": "Integrating the first term",
+        "text": "What is the integration of the first term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the integration of the first term?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the integration of the first term?"
+        ]
+    },
+    {
+        "id": "a526a0cintegration11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "sinx"
+        ],
+        "dependencies": [
+            "a526a0cintegration11a-h3"
+        ],
+        "title": "Integrating the second term",
+        "text": "What is the integration of the second term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the integration of the second term?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the integration of the second term?"
+        ]
+    },
+    {
+        "id": "a526a0cintegration11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration11a-h4"
+        ],
+        "title": "Combine two integrations",
+        "text": "$$(-cos(pi)-cos(0))-(sin(pi)-sin(0))=\\left(-\\left(-1\\right)+1\\right)-0-0=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "times parentheses minus cosine of p i, minus cosine of 0  minus parentheses, sine of p i, minus sine of 0  is equal to parentheses, negative negative 1 plus 1,  minus 0 minus 0 is equal to 2",
+        "math": [
+            "$$(-cos(pi)-cos(0))-(sin(pi)-sin(0))=\\left(-\\left(-1\\right)+1\\right)-0-0=2$$"
+        ],
+        "pacedSpeech": [
+            "this expression"
+        ]
+    }
+]

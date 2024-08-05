@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a750210trig26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal Triginometric Identity",
+        "text": "Recall that tanx is equal to $$\\frac{sinx}{cosx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Recall that tanx is equal to  fraction, sinx over, c o s x,",
+        "math": [
+            "$$\\frac{sinx}{cosx}$$"
+        ],
+        "pacedSpeech": [
+            "Recall that tanx is equal to   fraction, sinx over, c o s x,"
+        ]
+    },
+    {
+        "id": "a750210trig26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a750210trig26a-h1"
+        ],
+        "title": "Pythagorean identities",
+        "text": "Recall that $$1$$ + $$tan\\left(x\\right) tan\\left(x\\right)$$ is equal to $$\\operatorname{sec}\\left(x\\right) \\operatorname{sec}\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Recall that  1  + , tangent of x, tangent of x  is equal to , secant of x secant of x",
+        "math": [
+            "$$1$$",
+            "$$tan\\left(x\\right) tan\\left(x\\right)$$",
+            "$$\\operatorname{sec}\\left(x\\right) \\operatorname{sec}\\left(x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Recall that   1 ",
+            " +  , tangent of x, tangent of x ",
+            " is equal to  , secant of x secant of x"
+        ]
+    },
+    {
+        "id": "a750210trig26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a750210trig26a-h2"
+        ],
+        "title": "Expanding",
+        "text": "It may be helpful to expand $${\\left(1+tan\\left(x\\right)\\right)}^2$$ into $$1+2tan\\left(x\\right)+tan\\left(x\\right) tan\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "It may be helpful to expand  parentheses, 1 plus tangent of x,  squared  into  1 plus 2 tangent of x, plus, tangent of x, tangent of x",
+        "math": [
+            "$${\\left(1+tan\\left(x\\right)\\right)}^2$$",
+            "$$1+2tan\\left(x\\right)+tan\\left(x\\right) tan\\left(x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "It may be helpful to expand   , 1 plus tangent of x,  squared ",
+            " into   1 plus 2 tangent of x, plus, tangent of x, tangent of x"
+        ]
+    },
+    {
+        "id": "a750210trig26a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\operatorname{sec}\\left(x\\right) \\operatorname{sec}\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a750210trig26a-h3"
+        ],
+        "title": "Use the above to simplify the following",
+        "text": "$$1+2tan\\left(x\\right)+tan\\left(x\\right) tan\\left(x\\right)-2tan\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{sec}\\left(x\\right) \\operatorname{sec}\\left(x\\right)$$",
+            "$$1$$",
+            "(cos(x)*cos(x)",
+            "sin(x)"
+        ],
+        "speech": "1 plus 2 tangent of x, plus, tangent of x, tangent of x minus 2 tangent of x",
+        "math": [
+            "$$1+2tan\\left(x\\right)+tan\\left(x\\right) tan\\left(x\\right)-2tan\\left(x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "1 plus 2 tangent of x, plus, tangent of x, tangent of x minus 2 tangent of x"
+        ]
+    }
+]

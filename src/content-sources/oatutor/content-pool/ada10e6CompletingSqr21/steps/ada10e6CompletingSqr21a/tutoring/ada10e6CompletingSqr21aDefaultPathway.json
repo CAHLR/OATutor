@@ -1,0 +1,233 @@
+[
+    {
+        "id": "ada10e6CompletingSqr21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "The pattern of perfect square $$=$$ $$a^2+2ab+b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The pattern of perfect square  is equal to   a squared, plus 2 a b, plus b squared",
+        "math": [
+            "$$=$$",
+            "$$a^2+2ab+b^2$$"
+        ],
+        "pacedSpeech": [
+            "The pattern of perfect square   is equal to ",
+            "   a squared, plus 2 a b, plus b squared"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$q^2$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h1"
+        ],
+        "title": "Identification",
+        "text": "What is $$a^2$$ $$=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , a squared  , is equal to ?",
+        "math": [
+            "$$a^2$$",
+            "$$=$$"
+        ],
+        "pacedSpeech": [
+            "What is  , a squared ",
+            "  , is equal to"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "q"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h2"
+        ],
+        "title": "Identification",
+        "text": "$$a=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "a is equal to, ?",
+        "math": [
+            "$$a=$$"
+        ],
+        "pacedSpeech": [
+            "a is equal to,"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2q}{3}$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h3"
+        ],
+        "title": "Identification",
+        "text": "What is 2ab?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is 2ab?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is 2ab?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h4"
+        ],
+        "title": "Substitution",
+        "text": "With the known a and 2ab, $$b$$ can be calculated",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "With the known a and 2ab,  b  can be calculated",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "With the known a and 2ab,   b ",
+            " can be calculated"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h5"
+        ],
+        "title": "Calculation",
+        "text": "$$b=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "b is equal to, ?",
+        "math": [
+            "$$b=$$"
+        ],
+        "pacedSpeech": [
+            "b is equal to,"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h6"
+        ],
+        "title": "Calculation",
+        "text": "$$2q b=\\frac{2q}{3}$$, what is $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "2 q b, is equal to fraction, 2 q, over 3,  , what is  b ?",
+        "math": [
+            "$$2q b=\\frac{2q}{3}$$",
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "2 q b, is equal to fraction, 2 q, over 3,  ",
+            ", what is   b"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{9}$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h7"
+        ],
+        "title": "Substitution",
+        "text": "What is the third term $$b^2$$ in the perfect square?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the third term  b squared  in the perfect square?",
+        "math": [
+            "$$b^2$$"
+        ],
+        "pacedSpeech": [
+            "What is the third term   b squared ",
+            " in the perfect square?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{9}$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h8"
+        ],
+        "title": "Squaring",
+        "text": "What is $${\\left(\\frac{1}{3}\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , parentheses 1 third  squared ?",
+        "math": [
+            "$${\\left(\\frac{1}{3}\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,  1 third  squared"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr21a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr21a-h9"
+        ],
+        "title": "Principle",
+        "text": "Recall that $$a^2+2ab+b^2={\\left(a+b\\right)}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Recall that  a squared plus 2 a b, plus b squared is equal to, parentheses a plus b,  squared",
+        "math": [
+            "$$a^2+2ab+b^2={\\left(a+b\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "Recall that   a squared plus 2 a b, plus b squared is equal to,  a plus b,  squared"
+        ]
+    }
+]

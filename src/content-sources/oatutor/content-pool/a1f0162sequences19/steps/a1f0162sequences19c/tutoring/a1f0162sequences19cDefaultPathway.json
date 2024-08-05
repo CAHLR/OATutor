@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a1f0162sequences19c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute $$n=3$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  n is equal to 3,  into the formula",
+        "math": [
+            "$$n=3$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   n is equal to 3, ",
+            " into the formula"
+        ]
+    },
+    {
+        "id": "a1f0162sequences19c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences19c-h1"
+        ],
+        "title": "Simplification",
+        "text": "Calculate the expression $$\\frac{4\\times3}{{\\left(-2\\right)}^3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the expression  fraction, 4 times 3, over, parentheses negative 2  cubed,",
+        "math": [
+            "$$\\frac{4\\times3}{{\\left(-2\\right)}^3}$$"
+        ],
+        "pacedSpeech": [
+            "Calculate the expression   fraction, 4 times 3, over,  negative 2  cubed,"
+        ]
+    },
+    {
+        "id": "a1f0162sequences19c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences19c-h2"
+        ],
+        "title": "Calculate the numerator",
+        "text": "What is $$4\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  4 times 3,",
+        "math": [
+            "$$4\\times3$$"
+        ],
+        "pacedSpeech": [
+            "What is   4 times 3,"
+        ]
+    },
+    {
+        "id": "a1f0162sequences19c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-8$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences19c-h3"
+        ],
+        "title": "Calculate the denominator",
+        "text": "What is $${\\left(-2\\right)}^3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , parentheses negative 2  cubed",
+        "math": [
+            "$${\\left(-2\\right)}^3$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,  negative 2  cubed"
+        ]
+    },
+    {
+        "id": "a1f0162sequences19c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences19c-h4"
+        ],
+        "title": "Putting It Together",
+        "text": "Put the numerator and denominator together to create a fraction",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put the numerator and denominator together to create a fraction",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Put the numerator and denominator together to create a fraction"
+        ]
+    }
+]

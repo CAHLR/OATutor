@@ -1,0 +1,81 @@
+[
+    {
+        "id": "aff8a70precalnew41a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two cases",
+        "text": "$$\\left(2x^5+2\\right) x$$ if $$x \\geq 0$$ and $$\\left(2x^5+2\\right) \\left(-x\\right)$$ if $$x<0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "parentheses, 2 x to the fifth, plus 2  times x  if  x is greater than or equal to 0  and  parentheses, 2 x to the fifth, plus 2  times negative x  if  x is less than 0",
+        "math": [
+            "$$\\left(2x^5+2\\right) x$$",
+            "$$x \\geq 0$$",
+            "$$\\left(2x^5+2\\right) \\left(-x\\right)$$",
+            "$$x<0$$"
+        ],
+        "pacedSpeech": [
+            ", 2 x to the fifth, plus 2  times x ",
+            " if   x is greater than or equal to 0 ",
+            " and   , 2 x to the fifth, plus 2  times negative x ",
+            " if   x is less than 0"
+        ]
+    },
+    {
+        "id": "aff8a70precalnew41a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^6+2x$$"
+        ],
+        "dependencies": [
+            "aff8a70precalnew41a-h1"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$\\left(2x^5+2\\right) x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^6+2x$$",
+            "$$-2x^6-2x$$"
+        ],
+        "speech": "What is the simplified version of  parentheses, 2 x to the fifth, plus 2  times x ?",
+        "math": [
+            "$$\\left(2x^5+2\\right) x$$"
+        ],
+        "pacedSpeech": [
+            "What is the simplified version of   , 2 x to the fifth, plus 2  times x"
+        ]
+    },
+    {
+        "id": "aff8a70precalnew41a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2x^6-2x$$"
+        ],
+        "dependencies": [
+            "aff8a70precalnew41a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the simplified version of $$\\left(2x^5+2\\right) \\left(-x\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$2x^6+2x$$",
+            "$$-2x^6-2x$$"
+        ],
+        "speech": "What is the simplified version of  parentheses, 2 x to the fifth, plus 2  times negative x ?",
+        "math": [
+            "$$\\left(2x^5+2\\right) \\left(-x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is the simplified version of   , 2 x to the fifth, plus 2  times negative x"
+        ]
+    }
+]

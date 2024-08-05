@@ -1,0 +1,146 @@
+[
+    {
+        "id": "acff542gra5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=8$$ and $$y=3$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute , x is equal to 8  and  y, is equal to 3  into both inequalities.",
+        "math": [
+            "$$x=8$$",
+            "$$y=3$$"
+        ],
+        "pacedSpeech": [
+            "We substitute  , x is equal to 8 ",
+            " and   y, is equal to 3 ",
+            " into both inequalities."
+        ]
+    },
+    {
+        "id": "acff542gra5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra5b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$y>\\frac{3}{2} x+3$$\\n$$3>8\\frac{3}{2}+3$$\\n$$3>15$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "y is greater than, 3 halves x plus 3 \\n 3 is greater than 8 and 3 halves, plus 3 \\n 3 is greater than 15",
+        "math": [
+            "$$y>\\frac{3}{2} x+3$$",
+            "$$3>8\\frac{3}{2}+3$$",
+            "$$3>15$$"
+        ],
+        "pacedSpeech": [
+            "y is greater than, 3 halves x plus 3 ",
+            "  3 is greater than 8 and 3 halves, plus 3 ",
+            "  3 is greater than 15"
+        ]
+    },
+    {
+        "id": "acff542gra5b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "acff542gra5b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra5b-h3"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "$$\\frac{3}{4} x-2y<5$$\\n$$8\\frac{3}{4}-2\\times3<5$$\\n$$0<5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "3 fourths x, minus 2 y is less than 5 \\n 8 and 3 fourths minus 2 times 3 is less than 5 \\n 0, is less than 5",
+        "math": [
+            "$$\\frac{3}{4} x-2y<5$$",
+            "$$8\\frac{3}{4}-2\\times3<5$$",
+            "$$0<5$$"
+        ],
+        "pacedSpeech": [
+            "3 fourths x, minus 2 y is less than 5 ",
+            "  8 and 3 fourths minus 2 times 3 is less than 5 ",
+            "  0, is less than 5"
+        ]
+    },
+    {
+        "id": "acff542gra5b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "T"
+        ],
+        "dependencies": [
+            "acff542gra5b-h4"
+        ],
+        "title": "Substitute into Second Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra5b-h5"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "$$(8,3)$$ makes both inequalities true. $$(8,3)$$ is a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "times, parentheses 8 comma 3,   makes both inequalities true. , parentheses 8 comma 3,   is a solution.",
+        "math": [
+            "$$(8,3)$$",
+            "$$(8,3)$$"
+        ],
+        "pacedSpeech": [
+            "times,  8 comma 3,  ",
+            " makes both inequalities true.  ,  8 comma 3,  ",
+            " is a solution."
+        ]
+    }
+]

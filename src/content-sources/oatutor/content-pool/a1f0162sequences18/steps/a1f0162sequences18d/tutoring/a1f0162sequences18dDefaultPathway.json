@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a1f0162sequences18d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute $$n=4$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  n is equal to 4,  into the formula",
+        "math": [
+            "$$n=4$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   n is equal to 4, ",
+            " into the formula"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences18d-h1"
+        ],
+        "title": "Simplification",
+        "text": "Calculate the expression $$\\frac{{\\left(-1\\right)}^4 4^2}{4+1}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the expression  fraction, parentheses negative 1  to the fourth 4 squared, over, 4 plus 1,",
+        "math": [
+            "$$\\frac{{\\left(-1\\right)}^4 4^2}{4+1}$$"
+        ],
+        "pacedSpeech": [
+            "Calculate the expression   fraction,  negative 1  to the fourth 4 squared, over, 4 plus 1,"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences18d-h2"
+        ],
+        "title": "Calculate the numerator",
+        "text": "What is $${\\left(-1\\right)}^4 4^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  parentheses negative 1  to the fourth 4 squared",
+        "math": [
+            "$${\\left(-1\\right)}^4 4^2$$"
+        ],
+        "pacedSpeech": [
+            "What is    negative 1  to the fourth 4 squared"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences18d-h3"
+        ],
+        "title": "Calculate the denominator",
+        "text": "What is $$4+1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  4 plus 1",
+        "math": [
+            "$$4+1$$"
+        ],
+        "pacedSpeech": [
+            "What is   4 plus 1"
+        ]
+    },
+    {
+        "id": "a1f0162sequences18d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences18d-h4"
+        ],
+        "title": "Putting It Together",
+        "text": "Put the numerator and denominator together to create a fraction",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Put the numerator and denominator together to create a fraction",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Put the numerator and denominator together to create a fraction"
+        ]
+    }
+]

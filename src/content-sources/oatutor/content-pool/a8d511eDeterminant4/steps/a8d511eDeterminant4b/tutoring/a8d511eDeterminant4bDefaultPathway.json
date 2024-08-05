@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a8d511eDeterminant4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Eliminant the row and column that contains b2",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Eliminant the row and column that contains b2",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Eliminant the row and column that contains b2"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant4b-h1"
+        ],
+        "title": "Principle",
+        "text": "Calculate the 2x2 matrix",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Calculate the 2x2 matrix",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Calculate the 2x2 matrix"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant4b-h2"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the products of the diagonals",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Subtract the products of the diagonals",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Subtract the products of the diagonals"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a8d511eDeterminant4b-h3"
+        ],
+        "title": "Calculation",
+        "text": "What is $$1\\times3-4\\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , 1 times 3 minus 4 times negative 2 ?",
+        "math": [
+            "$$1\\times3-4\\left(-2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 1 times 3 minus 4 times negative 2"
+        ]
+    }
+]

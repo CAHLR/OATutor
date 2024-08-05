@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a63563bnewton6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Derivative of f(x)",
+        "text": "The derivative of f(x) would be needed for this problem.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The derivative of f(x) would be needed for this problem.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The derivative of f(x) would be needed for this problem."
+        ]
+    },
+    {
+        "id": "a63563bnewton6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f'(x)=e^x$$"
+        ],
+        "dependencies": [
+            "a63563bnewton6a-h1"
+        ],
+        "title": "Find the Derivative of f(x)",
+        "text": "What is the derivative of f(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f'(x)={xe}^x$$",
+            "$$f'(x)=e$$",
+            "$$f'(x)=e^x$$",
+            "$$f'(x)=xe$$"
+        ],
+        "speech": "What is the derivative of f(x)?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the derivative of f(x)?"
+        ]
+    },
+    {
+        "id": "a63563bnewton6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton6a-h2"
+        ],
+        "title": "Newton's Method",
+        "text": "The formula for Newton's Method is given by $$x_n+1=x_n-\\frac{f{\\left(x_n\\right)}}{\\operatorname{f'}\\left(x_n\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The formula for Newton's Method is given by  x sub n plus 1, is equal to x sub n minus fraction, f of, parentheses x sub n , over, f prime, of, parentheses x sub n ,  .",
+        "math": [
+            "$$x_n+1=x_n-\\frac{f{\\left(x_n\\right)}}{\\operatorname{f'}\\left(x_n\\right)}$$"
+        ],
+        "pacedSpeech": [
+            "The formula for Newton's Method is given by   x sub n plus 1, is equal to x sub n minus fraction, f of,  x sub n , over, f prime, of,  x sub n ,"
+        ]
+    },
+    {
+        "id": "a63563bnewton6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton6a-h3"
+        ],
+        "title": "Newton's Method",
+        "text": "Define $$f{\\left(x_n\\right)}$$ and $$\\operatorname{f'}\\left(x_n\\right)$$ then plug into formula.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Define  f of, parentheses x sub n   and , f prime, of, parentheses x sub n   then plug into formula.",
+        "math": [
+            "$$f{\\left(x_n\\right)}$$",
+            "$$\\operatorname{f'}\\left(x_n\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Define   f of,  x sub n  ",
+            " and  , f prime, of,  x sub n  ",
+            " then plug into formula."
+        ]
+    }
+]

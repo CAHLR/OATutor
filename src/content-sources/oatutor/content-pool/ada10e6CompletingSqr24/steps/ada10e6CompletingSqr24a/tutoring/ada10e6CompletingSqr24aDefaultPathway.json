@@ -1,0 +1,431 @@
+[
+    {
+        "id": "ada10e6CompletingSqr24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "$${\\left(a+b\\right)}^2$$ $$=$$ $$a^2+2ab+b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "parentheses a plus b,  squared   is equal to   a squared, plus 2 a b, plus b squared",
+        "math": [
+            "$${\\left(a+b\\right)}^2$$",
+            "$$=$$",
+            "$$a^2+2ab+b^2$$"
+        ],
+        "pacedSpeech": [
+            "a plus b,  squared ",
+            "   is equal to ",
+            "   a squared, plus 2 a b, plus b squared"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^2$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h1"
+        ],
+        "title": "Identification",
+        "text": "What is $$a^2$$ $$=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , a squared  , is equal to ?",
+        "math": [
+            "$$a^2$$",
+            "$$=$$"
+        ],
+        "pacedSpeech": [
+            "What is  , a squared ",
+            "  , is equal to"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h2"
+        ],
+        "title": "Identification",
+        "text": "$$a=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "a is equal to, ?",
+        "math": [
+            "$$a=$$"
+        ],
+        "pacedSpeech": [
+            "a is equal to,"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6y$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h3"
+        ],
+        "title": "Identification",
+        "text": "What is 2ab?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is 2ab?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is 2ab?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h4"
+        ],
+        "title": "Substitution",
+        "text": "With the known a and 2ab, $$b$$ can be calculated",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "With the known a and 2ab,  b  can be calculated",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "With the known a and 2ab,   b ",
+            " can be calculated"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h5"
+        ],
+        "title": "Calculation",
+        "text": "$$b=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "b is equal to, ?",
+        "math": [
+            "$$b=$$"
+        ],
+        "pacedSpeech": [
+            "b is equal to,"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h6"
+        ],
+        "title": "Calculation",
+        "text": "$$2y b=-6y$$, what is $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "2 y b, is equal to, negative 6 y, , what is  b ?",
+        "math": [
+            "$$2y b=-6y$$",
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "2 y b, is equal to, negative 6 y, ",
+            ", what is   b"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h7"
+        ],
+        "title": "Substitution",
+        "text": "What is the third term $$b^2$$ in the perfect square?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the third term  b squared  in the perfect square?",
+        "math": [
+            "$$b^2$$"
+        ],
+        "pacedSpeech": [
+            "What is the third term   b squared ",
+            " in the perfect square?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h8"
+        ],
+        "title": "Squaring",
+        "text": "What is $${\\left(-3\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , parentheses negative 3  squared ?",
+        "math": [
+            "$${\\left(-3\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "What is  ,  negative 3  squared"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h9"
+        ],
+        "title": "Organizing",
+        "text": "In order to form a perfect square on left side, $$b^2$$ has to be added on both sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In order to form a perfect square on left side,  b squared  has to be added on both sides",
+        "math": [
+            "$$b^2$$"
+        ],
+        "pacedSpeech": [
+            "In order to form a perfect square on left side,   b squared ",
+            " has to be added on both sides"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h10"
+        ],
+        "title": "Addition",
+        "text": "What will be the number on right side after adding 9?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What will be the number on right side after adding 9?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What will be the number on right side after adding 9?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h11"
+        ],
+        "title": "Addition",
+        "text": "What is $$16+9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  16 plus 9, ?",
+        "math": [
+            "$$16+9$$"
+        ],
+        "pacedSpeech": [
+            "What is   16 plus 9,"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h13",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h12"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$y^2-6y+9=25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The equation becomes  nyradhejy squared minus 6 y plus 9 is equal to 25",
+        "math": [
+            "$$y^2-6y+9=25$$"
+        ],
+        "pacedSpeech": [
+            "The equation becomes   y squared minus 6 y plus 9 is equal to 25"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h14",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h13"
+        ],
+        "title": "Simplifying",
+        "text": "It can be simplified to $${\\left(y-3\\right)}^2=25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "It can be simplified to  parentheses y minus 3,  squared is equal to 25",
+        "math": [
+            "$${\\left(y-3\\right)}^2=25$$"
+        ],
+        "pacedSpeech": [
+            "It can be simplified to    y minus 3,  squared is equal to 25"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h15",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h14"
+        ],
+        "title": "Square Root",
+        "text": "The square can be removed by square root",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The square can be removed by square root",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The square can be removed by square root"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y-3$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h15"
+        ],
+        "title": "Square Root",
+        "text": "What is the sqrt[(y-3)**2]?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the sqrt[(y-3)**2]?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the sqrt[(y-3)**2]?"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h17",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pm 5$$"
+        ],
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h16"
+        ],
+        "title": "Square Root",
+        "text": "What is $$\\sqrt{25}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  the square root of 25 ?",
+        "math": [
+            "$$\\sqrt{25}$$"
+        ],
+        "pacedSpeech": [
+            "What is   the square root of 25"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h18",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h17"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$y-3=5$$ or $$y-3=-5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The equation becomes  y minus 3, is equal to, 5  or  y, minus 3, is equal to negative 5",
+        "math": [
+            "$$y-3=5$$",
+            "$$y-3=-5$$"
+        ],
+        "pacedSpeech": [
+            "The equation becomes   y minus 3, is equal to, 5 ",
+            " or   y, minus 3, is equal to negative 5"
+        ]
+    },
+    {
+        "id": "ada10e6CompletingSqr24a-h19",
+        "type": "hint",
+        "dependencies": [
+            "ada10e6CompletingSqr24a-h18"
+        ],
+        "title": "Subtraction",
+        "text": "$$y=8$$ or $$-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": ", y is equal to, 8  or  negative 2",
+        "math": [
+            "$$y=8$$",
+            "$$-2$$"
+        ],
+        "pacedSpeech": [
+            ", y is equal to, 8 ",
+            " or   negative 2"
+        ]
+    }
+]

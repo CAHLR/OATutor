@@ -1,0 +1,100 @@
+[
+    {
+        "id": "aadff92AppQuad21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "We know that the initial velocity $$v=640$$ and the desire height is $$1200$$. We can set up the equation as $$-16t^2+640t=1200$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We know that the initial velocity  v is equal to 640  and the desire height is  1200 . We can set up the equation as , negative 16 t squared plus 640 t is equal to 1200 .",
+        "math": [
+            "$$v=640$$",
+            "$$1200$$",
+            "$$-16t^2+640t=1200$$"
+        ],
+        "pacedSpeech": [
+            "We know that the initial velocity   v is equal to 640 ",
+            " and the desire height is   1200 ",
+            ". We can set up the equation as  , negative 16 t squared plus 640 t is equal to 1200"
+        ]
+    },
+    {
+        "id": "aadff92AppQuad21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad21a-h1"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The quadratic formula states  a x squared, plus b x plus c is equal to 0 , then  x, is equal to fraction, parentheses negative b plus or minus the square root of b squared minus 4 a c end root , over, 2 a,  .",
+        "math": [
+            "$${ax}^2+bx+c=0$$",
+            "$$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$"
+        ],
+        "pacedSpeech": [
+            "The quadratic formula states   a x squared, plus b x plus c is equal to 0 ",
+            ", then   x, is equal to fraction,  negative b plus or minus the square root of b squared minus 4 a c end root , over, 2 a,"
+        ]
+    },
+    {
+        "id": "aadff92AppQuad21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1.97,38.03)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad21a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "$$-16t^2+640t=1200$$ Solve for $$t$$ using the quadratic formula. Round your answer to the nearest hundredth. If there is more than one answer, please enter it as (a,b) where $$a<b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "minus 16 t squared, plus 640 t is equal to, 1200  Solve for  t  using the quadratic formula. Round your answer to the nearest hundredth. If there is more than one answer, please enter it as (a,b) where  a is less than b .",
+        "math": [
+            "$$-16t^2+640t=1200$$",
+            "$$t$$",
+            "$$a<b$$"
+        ],
+        "pacedSpeech": [
+            "minus 16 t squared, plus 640 t is equal to, 1200 ",
+            " Solve for   t ",
+            " using the quadratic formula. Round your answer to the nearest hundredth. If there is more than one answer, please enter it as (a,b) where   a is less than b"
+        ]
+    },
+    {
+        "id": "aadff92AppQuad21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad21a-h3"
+        ],
+        "title": "Final Answer",
+        "text": "Since both $$1.97$$ and $$38.03$$ are positive, they are valid answer for the problem. Therefore, at $$1.97$$ second and $$38.03$$ second, the height of the firework rocket will be $$1200$$ feet.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since both  1.97  and  38.03  are positive, they are valid answer for the problem. Therefore, at  1.97  second and  38.03  second, the height of the firework rocket will be  1200  feet.",
+        "math": [
+            "$$1.97$$",
+            "$$38.03$$",
+            "$$1.97$$",
+            "$$38.03$$",
+            "$$1200$$"
+        ],
+        "pacedSpeech": [
+            "Since both   1.97 ",
+            " and   38.03 ",
+            " are positive, they are valid answer for the problem. Therefore, at   1.97 ",
+            " second and   38.03 ",
+            " second, the height of the firework rocket will be   1200 ",
+            " feet."
+        ]
+    }
+]

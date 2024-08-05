@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8d511eDeterminant5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Expand the minors along the first row to $$2*\\begin{bmatrix} 2 & 0 \\\\ -1 & -2 \\end{bmatrix}-(-3)*\\begin{bmatrix} 3 & 0 \\\\ -1 & -2 \\end{bmatrix}+(-1)*\\begin{bmatrix} 3 & 2 \\\\ -1 & -1 \\end{bmatrix}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Expand the minors along the first row to  2 times the 2 by 2 matrix row 1 2, 0 row 2 negative 1, negative 2 minus negative 3 times the 2 by 2 matrix row 1 3, 0 row 2 negative 1, negative 2 plus negative 1 times the 2 by 2 matrix row 1 3, 2 row 2 negative 1, negative 1",
+        "math": [
+            "$$2*\\begin{bmatrix} 2 & 0 \\\\ -1 & -2 \\end{bmatrix}-(-3)*\\begin{bmatrix} 3 & 0 \\\\ -1 & -2 \\end{bmatrix}+(-1)*\\begin{bmatrix} 3 & 2 \\\\ -1 & -1 \\end{bmatrix}$$"
+        ],
+        "pacedSpeech": [
+            "Expand the minors along the first row to  this expression"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant5a-h1"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Evaluate the 2x2 determinants",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Evaluate the 2x2 determinants"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-25$$"
+        ],
+        "dependencies": [
+            "a8d511eDeterminant5a-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is $$2\\left(-4\\right)+3\\left(-6\\right)-1\\left(-1\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  2 times negative 4, plus 3 times negative 6, minus 1 times negative 1 ?",
+        "math": [
+            "$$2\\left(-4\\right)+3\\left(-6\\right)-1\\left(-1\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is   2 times negative 4, plus 3 times negative 6, minus 1 times negative 1"
+        ]
+    }
+]

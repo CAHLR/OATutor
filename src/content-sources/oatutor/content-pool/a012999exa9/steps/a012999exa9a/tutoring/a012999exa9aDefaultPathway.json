@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a012999exa9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply the outside value with each of the inside parenthesis values",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Multiply the outside value with each of the inside parenthesis values"
+        ]
+    },
+    {
+        "id": "a012999exa9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12p^2$$"
+        ],
+        "dependencies": [
+            "a012999exa9a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is $$2p$$ times $$6p$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , 2 p  times  6 p ?",
+        "math": [
+            "$$2p$$",
+            "$$6p$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 2 p ",
+            " times   6 p"
+        ]
+    },
+    {
+        "id": "a012999exa9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2pr"
+        ],
+        "dependencies": [
+            "a012999exa9a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is $$2p$$ times $$r$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , 2 p  times  r ?",
+        "math": [
+            "$$2p$$",
+            "$$r$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 2 p ",
+            " times   r"
+        ]
+    },
+    {
+        "id": "a012999exa9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa9a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Combine the values multiplied",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Combine the values multiplied"
+        ]
+    }
+]

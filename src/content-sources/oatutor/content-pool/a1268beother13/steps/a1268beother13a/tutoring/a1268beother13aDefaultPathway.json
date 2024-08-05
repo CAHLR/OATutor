@@ -1,0 +1,167 @@
+[
+    {
+        "id": "a1268beother13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute Variable",
+        "text": "Let's start by setting a variable $$y$$ equal to $$x^2-1$$. Now we can substitute $$y$$ into the equation and solve like a normal quadradic: $$y^2+y-12=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Let's start by setting a variable  y  equal to  x squared, minus, 1 . Now we can substitute  y  into the equation and solve like a normal quadradic:  y squared plus y minus 12 is equal to 0 .",
+        "math": [
+            "$$y$$",
+            "$$x^2-1$$",
+            "$$y$$",
+            "$$y^2+y-12=0$$"
+        ],
+        "pacedSpeech": [
+            "Let's start by setting a variable   y ",
+            " equal to   x squared, minus, 1 ",
+            ". Now we can substitute   y ",
+            " into the equation and solve like a normal quadradic:   y squared plus y minus 12 is equal to 0"
+        ]
+    },
+    {
+        "id": "a1268beother13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h1"
+        ],
+        "title": "Factor",
+        "text": "Here, we can factor the quadratic. Since $$4$$ and $$-3$$ multiply to $$-12$$ and add to $$1$$, we factor the quadratic as $$\\left(y+4\\right) \\left(y-3\\right)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Here, we can factor the quadratic. Since  4  and  negative 3  multiply to  negative 12  and add to  1 , we factor the quadratic as  parentheses y plus 4,  times, parentheses y minus 3,  is equal to 0 .",
+        "math": [
+            "$$4$$",
+            "$$-3$$",
+            "$$-12$$",
+            "$$1$$",
+            "$$\\left(y+4\\right) \\left(y-3\\right)=0$$"
+        ],
+        "pacedSpeech": [
+            "Here, we can factor the quadratic. Since   4 ",
+            " and   negative 3 ",
+            " multiply to   negative 12 ",
+            " and add to   1 ",
+            ", we factor the quadratic as    y plus 4,  times,  y minus 3,  is equal to 0"
+        ]
+    },
+    {
+        "id": "a1268beother13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h2"
+        ],
+        "title": "$$x^2-1=y$$",
+        "text": "Now, because we need to find the answer in terms of $$x$$, we need to substitute $$x^2-1$$ back in for $$y$$. So we must solve for $$x^2-1=-4$$ and $$x^2-1=3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Now, because we need to find the answer in terms of  x , we need to substitute  x squared, minus, 1  back in for  y . So we must solve for  x squared minus 1 is equal to, negative 4  and  x squared, minus 1 is equal to 3 .",
+        "math": [
+            "$$x$$",
+            "$$x^2-1$$",
+            "$$y$$",
+            "$$x^2-1=-4$$",
+            "$$x^2-1=3$$"
+        ],
+        "pacedSpeech": [
+            "Now, because we need to find the answer in terms of   x ",
+            ", we need to substitute   x squared, minus, 1 ",
+            " back in for   y ",
+            ". So we must solve for   x squared minus 1 is equal to, negative 4 ",
+            " and   x squared, minus 1 is equal to 3"
+        ]
+    },
+    {
+        "id": "a1268beother13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h3"
+        ],
+        "title": "Solve First Equation",
+        "text": "To solve $$x^2-1=-4$$, we start by adding $$1$$ to both sides, then square rooting both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve  x squared minus 1, is equal to, negative 4 , we start by adding  1  to both sides, then square rooting both sides.",
+        "math": [
+            "$$x^2-1=-4$$",
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "To solve   x squared minus 1, is equal to, negative 4 ",
+            ", we start by adding   1 ",
+            " to both sides, then square rooting both sides."
+        ]
+    },
+    {
+        "id": "a1268beother13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h4"
+        ],
+        "title": "Solve First Equation",
+        "text": "Since $$-4+1=-3$$ is a negative number, the square root of it is unreal. So we will ignore this solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  minus 4 plus 1 is equal to negative 3  is a negative number, the square root of it is unreal. So we will ignore this solution.",
+        "math": [
+            "$$-4+1=-3$$"
+        ],
+        "pacedSpeech": [
+            "Since   minus 4 plus 1 is equal to negative 3 ",
+            " is a negative number, the square root of it is unreal. So we will ignore this solution."
+        ]
+    },
+    {
+        "id": "a1268beother13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h3"
+        ],
+        "title": "Solve Second Equation",
+        "text": "To solve $$x^2-1=3$$, we start by adding $$1$$ to both sides, then square rooting both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve  x squared minus 1, is equal to 3 , we start by adding  1  to both sides, then square rooting both sides.",
+        "math": [
+            "$$x^2-1=3$$",
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "To solve   x squared minus 1, is equal to 3 ",
+            ", we start by adding   1 ",
+            " to both sides, then square rooting both sides."
+        ]
+    },
+    {
+        "id": "a1268beother13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a1268beother13a-h6"
+        ],
+        "title": "Solve Second Equation",
+        "text": "$$\\sqrt{3+1}=2$$, $$-2$$. So our solutions for $$x$$ are 2,-2.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "the square root of 3 plus 1 end root is equal to, 2 ,  negative 2 . So our solutions for  x  are 2,-2.",
+        "math": [
+            "$$\\sqrt{3+1}=2$$",
+            "$$-2$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "the square root of 3 plus 1 end root is equal to, 2 ",
+            ",   negative 2 ",
+            ". So our solutions for   x ",
+            " are 2,-2."
+        ]
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "id": "a4dc570tri5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Follow the hint",
+        "text": "Identify the point on the unit circle where $$cos(\\theta)=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "Identify the point on the unit circle where , cosine of theta, is equal to 1 .",
+        "math": [
+            "$$cos(\\theta)=1$$"
+        ],
+        "pacedSpeech": [
+            "Identify the point on the unit circle where  , cosine of theta, is equal to 1"
+        ]
+    },
+    {
+        "id": "a4dc570tri5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(1,0)$$"
+        ],
+        "dependencies": [
+            "a4dc570tri5b-h1"
+        ],
+        "title": "Follow the hint",
+        "text": "What is the corresponding point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$(0,-1)$$",
+            "$$(0,1)$$",
+            "$$(1,0)$$",
+            "$$(-1,0)$$"
+        ],
+        "speech": "What is the corresponding point?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the corresponding point?"
+        ]
+    },
+    {
+        "id": "a4dc570tri5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri5b-h2"
+        ],
+        "title": "Find all angles",
+        "text": "To find all angles \u03b8 in the given interval with $$cos(\\theta)=1$$, express the solutions in the general form: $$\\theta=0+2n \\pi$$, where $$n$$ is an integer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "To find all angles \u03b8 in the given interval with  cosine of theta, is equal to, 1 , express the solutions in the general form:  theta, is equal to, 0 plus, 2 n pi, , where  n  is an integer.",
+        "math": [
+            "$$cos(\\theta)=1$$",
+            "$$\\theta=0+2n \\pi$$",
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            "To find all angles \u03b8 in the given interval with   cosine of theta, is equal to, 1 ",
+            ", express the solutions in the general form:   theta, is equal to, 0 plus, 2 n pi, ",
+            ", where   n ",
+            " is an integer."
+        ]
+    },
+    {
+        "id": "a4dc570tri5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri5b-h3"
+        ],
+        "title": "Interval",
+        "text": "\u03b8 is in $$(-3\\pi,3\\pi)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "speech": "\u03b8 is in  times parentheses, negative 3 pi, comma 3 pi  .",
+        "math": [
+            "$$(-3\\pi,3\\pi)$$"
+        ],
+        "pacedSpeech": [
+            "\u03b8 is in   times , negative 3 pi, comma 3 pi"
+        ]
+    },
+    {
+        "id": "a4dc570tri5b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$, $$\\pm 2 \\pi$$"
+        ],
+        "dependencies": [
+            "a4dc570tri5b-h4"
+        ],
+        "title": "Interval",
+        "text": "What are possible values of \u03b8?\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$0$$, $$\\pm 2 \\pi$$",
+            "$$0$$, $$2\\pi$$",
+            "$$2n \\pi$$"
+        ],
+        "speech": "What are possible values of \u03b8?\\n##figure3.gif##",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What are possible values of \u03b8?##figure3.gif##"
+        ]
+    }
+]

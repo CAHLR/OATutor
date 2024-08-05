@@ -1,0 +1,273 @@
+[
+    {
+        "id": "ad0aaf6linear17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Approximation Function",
+        "text": "Use the following equation $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$ to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Use the following equation    l of x, is equal to f of a plus f prime, of a, times, parentheses x minus a,   to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "math": [
+            "$$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Use the following equation     l of x, is equal to f of a plus f prime, of a, times,  x minus a,  ",
+            " to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function."
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear17a-h1"
+        ],
+        "title": "Plugging Into the Formula",
+        "text": "Since we are looking for the linear approximation at a $$=$$ $$0$$, we know that the formula is given by L(x) $$=$$ f(0) + f'(0)(x - 0).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Since we are looking for the linear approximation at a  is equal to,   0 , we know that the formula is given by L(x) , is equal to  f(0) + f'(0)(x - 0).",
+        "math": [
+            "$$=$$",
+            "$$0$$",
+            "$$=$$"
+        ],
+        "pacedSpeech": [
+            "Since we are looking for the linear approximation at a   is equal to, ",
+            "   0 ",
+            ", we know that the formula is given by L(x)  , is equal to ",
+            " f(0) + f'(0)(x - 0)."
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear17a-h2"
+        ],
+        "title": "Solving for f(a) and f'(a)",
+        "text": "Now, we must determine the values of f(a) and f'(a) to find L(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Now, we must determine the values of f(a) and f'(a) to find L(x).",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Now, we must determine the values of f(a) and f'(a) to find L(x)."
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear17a-h3"
+        ],
+        "title": "Determining f(a)",
+        "text": "Given that a $$=$$ $$0$$, what is f(a)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Given that a , is equal to   0 , what is f(a)?",
+        "math": [
+            "$$=$$",
+            "$$0$$"
+        ],
+        "pacedSpeech": [
+            "Given that a  , is equal to ",
+            "   0 ",
+            ", what is f(a)?"
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear17a-h4"
+        ],
+        "title": "Plugging Into $$f{\\left(\\frac{\\pi}{2}\\right)}$$",
+        "text": "f(x) $$=$$ $${sin}^2 x$$ such that f(0) $$=$$ $${sin}^{2\\left(0\\right)}$$. What is $${sin}^{2\\left(0\\right)}$$? Use the graph to guide your answer, where $$x$$ $$=$$ cos(x) and $$y$$ $$=$$ sin(x). Remember that $${sin}^2 x$$ $$=$$ $$sin\\left(x\\right) sin\\left(x\\right)$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "f(x)  is equal to,   sine squared of x,  such that f(0)  is equal to  , sine raised to the 2 times 0 power . What is , sine raised to the 2 times 0 power ? Use the graph to guide your answer, where  x   is equal to,  cos(x) and  y  , is equal to,  sin(x). Remember that  sine squared of x,   is equal to,  , sine of x sine of x .\\n##figure1.gif##",
+        "math": [
+            "$$=$$",
+            "$${sin}^2 x$$",
+            "$$=$$",
+            "$${sin}^{2\\left(0\\right)}$$",
+            "$${sin}^{2\\left(0\\right)}$$",
+            "$$x$$",
+            "$$=$$",
+            "$$y$$",
+            "$$=$$",
+            "$${sin}^2 x$$",
+            "$$=$$",
+            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "f(x)   is equal to, ",
+            "   sine squared of x, ",
+            " such that f(0)   is equal to ",
+            "  , sine raised to the 2 times 0 power ",
+            ". What is  , sine raised to the 2 times 0 power ",
+            "? Use the graph to guide your answer, where   x ",
+            "   is equal to, ",
+            " cos(x) and   y ",
+            "  , is equal to, ",
+            " sin(x). Remember that   sine squared of x, ",
+            "   is equal to, ",
+            "  , sine of x sine of x ",
+            ".##figure1.gif##"
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear17a-h5"
+        ],
+        "title": "Taking the Derivative of f(x) to Get f'(x)",
+        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ $${sin}^2 x$$. By using the chain rule $$F'(x)=f'(g(x))(g'(x))$$, we first take the derivative of the outer function such that $$\\frac{d}{dx} u^2$$ $$=$$ 2u. Next, we take the derivative of the inner function where $$\\frac{d}{dx} \\operatorname{sinx}\\left(x\\right)$$ $$=$$ cos(x). Lastly, we combine the two steps through multiplication to get $$\\frac{d}{dx} {sin}^2 x$$ $$=$$ f'(x) $$=$$ $$2u cos\\left(x\\right)$$ $$=$$ 2sin(x)cos(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "The next step is finding f'(x) by taking the derivative of f(x)  is equal to   sine squared of x, . By using the chain rule    f prime, of x is equal to f prime, of g of x, times, parentheses g prime, of x,  , we first take the derivative of the outer function such that  fraction, d over, d x,  u squared   is equal to  2u. Next, we take the derivative of the inner function where  fraction, d over, d x,  sinx of x   is equal to  cos(x). Lastly, we combine the two steps through multiplication to get  fraction, d over, d x,  sine squared of x   is equal to  f'(x)  is equal to,   2 ucos of x,   is equal to  2sin(x)cos(x).",
+        "math": [
+            "$$=$$",
+            "$${sin}^2 x$$",
+            "$$F'(x)=f'(g(x))(g'(x))$$",
+            "$$\\frac{d}{dx} u^2$$",
+            "$$=$$",
+            "$$\\frac{d}{dx} \\operatorname{sinx}\\left(x\\right)$$",
+            "$$=$$",
+            "$$\\frac{d}{dx} {sin}^2 x$$",
+            "$$=$$",
+            "$$=$$",
+            "$$2u cos\\left(x\\right)$$",
+            "$$=$$"
+        ],
+        "pacedSpeech": [
+            "The next step is finding f'(x) by taking the derivative of f(x)   is equal to ",
+            "   sine squared of x, ",
+            ". By using the chain rule     f prime, of x is equal to f prime, of g of x, times,  g prime, of x,  ",
+            ", we first take the derivative of the outer function such that   fraction, d over, d x,  u squared ",
+            "   is equal to ",
+            " 2u. Next, we take the derivative of the inner function where   fraction, d over, d x,  sinx of x ",
+            "   is equal to ",
+            " cos(x). Lastly, we combine the two steps through multiplication to get   fraction, d over, d x,  sine squared of x ",
+            "   is equal to ",
+            " f'(x)   is equal to, ",
+            "   2 ucos of x, ",
+            "   is equal to ",
+            " 2sin(x)cos(x)."
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear17a-h6"
+        ],
+        "title": "Determining f'(a)",
+        "text": "Given that f'(a) $$=$$ 2sin(x)cos(x), what is f'(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Given that f'(a)  is equal to  2sin(x)cos(x), what is f'(0)?",
+        "math": [
+            "$$=$$"
+        ],
+        "pacedSpeech": [
+            "Given that f'(a)   is equal to ",
+            " 2sin(x)cos(x), what is f'(0)?"
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear17a-h7"
+        ],
+        "title": "Solving for f'(0)",
+        "text": "f'(0) $$=$$ $$2sin\\left(0\\right) cos\\left(0\\right)$$ $$=$$ $$2\\times0\\times1$$. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "f'(0)  is equal to  , 2 sine of 0 cosine of 0   is equal to,  , 2 times 0 times 1 . What is the answer?",
+        "math": [
+            "$$=$$",
+            "$$2sin\\left(0\\right) cos\\left(0\\right)$$",
+            "$$=$$",
+            "$$2\\times0\\times1$$"
+        ],
+        "pacedSpeech": [
+            "f'(0)   is equal to ",
+            "  , 2 sine of 0 cosine of 0 ",
+            "   is equal to, ",
+            "  , 2 times 0 times 1 ",
+            ". What is the answer?"
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear17a-h8"
+        ],
+        "title": "Putting it Together",
+        "text": "Now that we have found the values of f(0) and f'(0), plug them into $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Now that we have found the values of f(0) and f'(0), plug them into    l of x, is equal to f of a plus f prime, of a, times, parentheses x minus a,  .",
+        "math": [
+            "$$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$"
+        ],
+        "pacedSpeech": [
+            "Now that we have found the values of f(0) and f'(0), plug them into     l of x, is equal to f of a plus f prime, of a, times,  x minus a,"
+        ]
+    },
+    {
+        "id": "ad0aaf6linear17a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear17a-h9"
+        ],
+        "title": "Final Answer",
+        "text": "$$L(x)=0+0\\left(x-0\\right)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "l of x, is equal to 0 plus, 0 times, parentheses x minus 0,  is equal to 0",
+        "math": [
+            "$$L(x)=0+0\\left(x-0\\right)=0$$"
+        ],
+        "pacedSpeech": [
+            "l of x, is equal to 0 plus, 0 times,  x minus 0,  is equal to 0"
+        ]
+    }
+]

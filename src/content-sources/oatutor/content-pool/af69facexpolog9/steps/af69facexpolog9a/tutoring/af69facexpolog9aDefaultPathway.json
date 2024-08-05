@@ -1,0 +1,196 @@
+[
+    {
+        "id": "af69facexpolog9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Formula",
+        "text": "What is the formula for Newton's Law of Cooling?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the formula for Newton's Law of Cooling?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the formula for Newton's Law of Cooling?"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$35$$"
+        ],
+        "dependencies": [
+            "af69facexpolog9a-h1"
+        ],
+        "title": "Substituting Known Values",
+        "text": "What will be substituting for $$T_s$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What will be substituting for    t sub s ?",
+        "math": [
+            "$$T_s$$"
+        ],
+        "pacedSpeech": [
+            "What will be substituting for     t sub s"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog9a-h2"
+        ],
+        "title": "Solve for A",
+        "text": "Plug in the initial temperature value and set the time as $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Plug in the initial temperature value and set the time as  0 .",
+        "math": [
+            "$$0$$"
+        ],
+        "pacedSpeech": [
+            "Plug in the initial temperature value and set the time as   0"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$130$$"
+        ],
+        "dependencies": [
+            "af69facexpolog9a-h3"
+        ],
+        "title": "Solve for A",
+        "text": "What is A?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is A?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is A?"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog9a-h4"
+        ],
+        "title": "Solve for K",
+        "text": "Another value given in the problem is 150\u00b0F at $$10$$ minutes. Plug in those values to solve for K.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Another value given in the problem is 150\u00b0F at  10  minutes. Plug in those values to solve for K.",
+        "math": [
+            "$$10$$"
+        ],
+        "pacedSpeech": [
+            "Another value given in the problem is 150\u00b0F at   10 ",
+            " minutes. Plug in those values to solve for K."
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.0123$$"
+        ],
+        "dependencies": [
+            "af69facexpolog9a-h5"
+        ],
+        "title": "Solve for K",
+        "text": "What is K? (round to the nearest ten-thousandths place)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is K? (round to the nearest ten-thousandths place)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is K? (round to the nearest ten-thousandths place)"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog9a-h6"
+        ],
+        "title": "Final Formula",
+        "text": "After solve for K and A, plug in those values into the original Newton's cooling formula.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "After solve for K and A, plug in those values into the original Newton's cooling formula.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "After solve for K and A, plug in those values into the original Newton's cooling formula."
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af69facexpolog9a-h7"
+        ],
+        "title": "Solve for T",
+        "text": "To find the time it takes for the cake to cool to $$70$$ degrees, plug in $$70$$ for T(t) and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To find the time it takes for the cake to cool to , 70  degrees, plug in  70  for T(t) and solve for  t .",
+        "math": [
+            "$$70$$",
+            "$$70$$",
+            "$$t$$"
+        ],
+        "pacedSpeech": [
+            "To find the time it takes for the cake to cool to  , 70 ",
+            " degrees, plug in   70 ",
+            " for T(t) and solve for   t"
+        ]
+    },
+    {
+        "id": "af69facexpolog9a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$106.68$$"
+        ],
+        "dependencies": [
+            "af69facexpolog9a-h8"
+        ],
+        "title": "Solve for T",
+        "text": "What is T? (round to nearest hundreths place)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is T? (round to nearest hundreths place)",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is T? (round to nearest hundreths place)"
+        ]
+    }
+]

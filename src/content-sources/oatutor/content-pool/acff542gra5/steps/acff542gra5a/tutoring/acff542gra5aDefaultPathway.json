@@ -1,0 +1,95 @@
+[
+    {
+        "id": "acff542gra5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=-4$$ and $$y=-1$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute  x is equal to, negative 4  and  y, is equal to negative 1  into both inequalities.",
+        "math": [
+            "$$x=-4$$",
+            "$$y=-1$$"
+        ],
+        "pacedSpeech": [
+            "We substitute   x is equal to, negative 4 ",
+            " and   y, is equal to negative 1 ",
+            " into both inequalities."
+        ]
+    },
+    {
+        "id": "acff542gra5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra5a-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$y>\\frac{3}{2} x+3$$\\n$$-1>-4\\frac{3}{2}+3$$\\n$$-1>-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "y is greater than 3 halves x plus 3 \\n negative 1 is greater than negative 4 and 3 halves, plus 3 \\n negative 1 is greater than negative 3",
+        "math": [
+            "$$y>\\frac{3}{2} x+3$$",
+            "$$-1>-4\\frac{3}{2}+3$$",
+            "$$-1>-3$$"
+        ],
+        "pacedSpeech": [
+            "y is greater than 3 halves x plus 3 ",
+            "  negative 1 is greater than negative 4 and 3 halves, plus 3 ",
+            "  negative 1 is greater than negative 3"
+        ]
+    },
+    {
+        "id": "acff542gra5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acff542gra5a-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ],
+        "speech": "Is the inequality above true?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is the inequality above true?"
+        ]
+    },
+    {
+        "id": "acff542gra5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra5a-h3"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "Since $$(-4,-1)$$ does not satisfy the first inequality, then it cannot make both inequalities true. $$(-4,-1)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since  times, parentheses, negative 4 comma negative 1,   does not satisfy the first inequality, then it cannot make both inequalities true. , parentheses, negative 4 comma negative 1,   is not a solution.",
+        "math": [
+            "$$(-4,-1)$$",
+            "$$(-4,-1)$$"
+        ],
+        "pacedSpeech": [
+            "Since   times, , negative 4 comma negative 1,  ",
+            " does not satisfy the first inequality, then it cannot make both inequalities true.  , , negative 4 comma negative 1,  ",
+            " is not a solution."
+        ]
+    }
+]

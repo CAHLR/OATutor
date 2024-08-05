@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a60a373solverat15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Clear the fractions",
+        "text": "The first step is to clear the fractions by multiplying the entire equation by the lowest common denominator: ab",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The first step is to clear the fractions by multiplying the entire equation by the lowest common denominator: ab",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "The first step is to clear the fractions by multiplying the entire equation by the lowest common denominator: ab"
+        ]
+    },
+    {
+        "id": "a60a373solverat15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat15a-h1"
+        ],
+        "title": "Isolate a",
+        "text": "To isolate a, we must first bring all a values to one side and then factoring out the a values",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To isolate a, we must first bring all a values to one side and then factoring out the a values",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "To isolate a, we must first bring all a values to one side and then factoring out the a values"
+        ]
+    },
+    {
+        "id": "a60a373solverat15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a(1-bc)=b$$"
+        ],
+        "dependencies": [
+            "a60a373solverat15a-h2"
+        ],
+        "title": "Isolate a",
+        "text": "What is the result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the result?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the result?"
+        ]
+    },
+    {
+        "id": "a60a373solverat15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a60a373solverat15a-h3"
+        ],
+        "title": "Isolate a",
+        "text": "Divide the entire equation by $$(1-bc)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide the entire equation by  times, parentheses, 1 minus b c,",
+        "math": [
+            "$$(1-bc)$$"
+        ],
+        "pacedSpeech": [
+            "Divide the entire equation by   times, , 1 minus b c,"
+        ]
+    },
+    {
+        "id": "a60a373solverat15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a=\\frac{b}{1-bc}$$"
+        ],
+        "dependencies": [
+            "a60a373solverat15a-h4"
+        ],
+        "title": "Isolate a",
+        "text": "What is the result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the result?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the result?"
+        ]
+    }
+]

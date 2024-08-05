@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a7811e5normal1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Total area under the normal distribution curve",
+        "text": "The total area under the normal distribution curve is $$1$$ or 100%.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The total area under the normal distribution curve is  1  or 100%.",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "The total area under the normal distribution curve is   1 ",
+            " or 100%."
+        ]
+    },
+    {
+        "id": "a7811e5normal1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify area to the right and left",
+        "text": "What is the area to the left and right accordingly?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the area to the left and right accordingly?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the area to the left and right accordingly? ,"
+        ]
+    },
+    {
+        "id": "a7811e5normal1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.012$$"
+        ],
+        "dependencies": [
+            "a7811e5normal1a-h2"
+        ],
+        "title": "Area to the left",
+        "text": "What is $$P\\left(X<x\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is    p, parentheses,   x is less than x,  ?",
+        "math": [
+            "$$P\\left(X<x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is     p, ,   x is less than x,"
+        ]
+    },
+    {
+        "id": "a7811e5normal1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.988$$"
+        ],
+        "dependencies": [
+            "a7811e5normal1a-h2"
+        ],
+        "title": "Area to the right",
+        "text": "What is $$P\\left(X>x\\right)$$? Or consider $$P\\left(X>x\\right)$$ as $$1-P\\left(X<x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is    p, parentheses,   x is greater than x,  ? Or consider    p, parentheses,   x is greater than x,   as  1 minus   p, parentheses,   x is less than x,",
+        "math": [
+            "$$P\\left(X>x\\right)$$",
+            "$$P\\left(X>x\\right)$$",
+            "$$1-P\\left(X<x\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is     p, ,   x is greater than x,  ",
+            "? Or consider     p, ,   x is greater than x,  ",
+            " as   1 minus   p, ,   x is less than x,"
+        ]
+    }
+]

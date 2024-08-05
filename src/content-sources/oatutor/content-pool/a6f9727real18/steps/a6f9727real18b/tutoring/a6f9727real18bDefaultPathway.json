@@ -1,0 +1,118 @@
+[
+    {
+        "id": "a6f9727real18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute $$z=5$$ into the equation to obtain $$4\\left(5\\right)-2\\left(5\\right) \\left(1+4\\right)-36$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  z is equal to 5  into the equation to obtain  4 times 5, minus 2 times 5 times, parentheses 1 plus 4,  minus 36",
+        "math": [
+            "$$z=5$$",
+            "$$4\\left(5\\right)-2\\left(5\\right) \\left(1+4\\right)-36$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   z is equal to 5 ",
+            " into the equation to obtain   4 times 5, minus 2 times 5 times,  1 plus 4,  minus 36"
+        ]
+    },
+    {
+        "id": "a6f9727real18b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a6f9727real18b-h1"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$1+4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  1 plus 4 ?",
+        "math": [
+            "$$1+4$$"
+        ],
+        "pacedSpeech": [
+            "What is   1 plus 4"
+        ]
+    },
+    {
+        "id": "a6f9727real18b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a6f9727real18b-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is 4(5)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is 4(5)?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is 4(5)?"
+        ]
+    },
+    {
+        "id": "a6f9727real18b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-50$$"
+        ],
+        "dependencies": [
+            "a6f9727real18b-h3"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$-2(5)(5)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  minus, 2 times 5 times 5 ?",
+        "math": [
+            "$$-2(5)(5)$$"
+        ],
+        "pacedSpeech": [
+            "What is   minus, 2 times 5 times 5"
+        ]
+    },
+    {
+        "id": "a6f9727real18b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-66$$"
+        ],
+        "dependencies": [
+            "a6f9727real18b-h3",
+            "a6f9727real18b-h4"
+        ],
+        "title": "Addition",
+        "text": "What is $$20-50-36$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is , 20 minus 50 minus 36 ?",
+        "math": [
+            "$$20-50-36$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 20 minus 50 minus 36"
+        ]
+    }
+]

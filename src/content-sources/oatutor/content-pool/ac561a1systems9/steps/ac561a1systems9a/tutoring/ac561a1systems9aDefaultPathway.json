@@ -1,0 +1,313 @@
+[
+    {
+        "id": "ac561a1systems9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Eliminating Variables",
+        "text": "When both equations in the system have like variables of the second degree, solving them using elimination by addition is often easier than substitution. Generally, elimination is a far simpler method when the system involves only two equations in two variables (a two-by-two system), rather than a three-by-three system, as there are fewer steps.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "When both equations in the system have like variables of the second degree, solving them using elimination by addition is often easier than substitution. Generally, elimination is a far simpler method when the system involves only two equations in two variables (a two-by-two system), rather than a three-by-three system, as there are fewer steps.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "When both equations in the system have like variables of the second degree, solving them using elimination by addition is often easier than substitution. Generally, elimination is a far simpler method when the system involves only two equations in two variables (a two-by-two system), rather than a three-by-three system, as there are fewer steps."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h1"
+        ],
+        "title": "Shifting Terms",
+        "text": "We can shift all the terms in the equations to the left hand side to make the equations tidier and to make future steps easier.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can shift all the terms in the equations to the left hand side to make the equations tidier and to make future steps easier.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We can shift all the terms in the equations to the left hand side to make the equations tidier and to make future steps easier."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y^2-y-1=0$$"
+        ],
+        "dependencies": [
+            "ac561a1systems9a-h2"
+        ],
+        "title": "Subtracting Equations",
+        "text": "We observe that by subtracting the second equation from the first, we can remove the $$x^2$$ term. What is the equation obtained after subtracting the second equation from the first?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$y^2-y-1=0$$",
+            "$$y^2+y+1=0$$",
+            "$$y^2-y+1=0$$"
+        ],
+        "speech": "We observe that by subtracting the second equation from the first, we can remove the  x squared  term. What is the equation obtained after subtracting the second equation from the first?",
+        "math": [
+            "$$x^2$$"
+        ],
+        "pacedSpeech": [
+            "We observe that by subtracting the second equation from the first, we can remove the   x squared ",
+            " term. What is the equation obtained after subtracting the second equation from the first?"
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h3"
+        ],
+        "title": "Solving for $$y$$",
+        "text": "With the equation $$y^2-y-1=0$$, we can solve for $$y$$. The y-coordinate found indicates a possible solution where an intersection may occur if the system of equations yield a feasible solution later on.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "With the equation  y squared minus y minus 1 is equal to 0 , we can solve for  y . The y-coordinate found indicates a possible solution where an intersection may occur if the system of equations yield a feasible solution later on.",
+        "math": [
+            "$$y^2-y-1=0$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "With the equation   y squared minus y minus 1 is equal to 0 ",
+            ", we can solve for   y ",
+            ". The y-coordinate found indicates a possible solution where an intersection may occur if the system of equations yield a feasible solution later on."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1-sqrt(5))/2,(1+sqrt(5))/2"
+        ],
+        "dependencies": [
+            "ac561a1systems9a-h4"
+        ],
+        "title": "Solving for $$y$$",
+        "text": "We can use the quadratic formula $$y=\\frac{\\left(-b+-\\sqrt{b^2-4a c}\\right)}{2a}$$ to obtain the solutions. What are the $$y$$ coordinates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "(1-sqrt(5))/2,(1+sqrt(5))/2",
+            "(sqrt(5)-1)/2,(1+sqrt(5))/2"
+        ],
+        "speech": "We can use the quadratic formula  y is equal to fraction, parentheses negative b plus negative the square root of b squared minus 4 a c end root , over, 2 a,   to obtain the solutions. What are the  y  coordinates?",
+        "math": [
+            "$$y=\\frac{\\left(-b+-\\sqrt{b^2-4a c}\\right)}{2a}$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "We can use the quadratic formula   y is equal to fraction,  negative b plus negative the square root of b squared minus 4 a c end root , over, 2 a,  ",
+            " to obtain the solutions. What are the   y ",
+            " coordinates?"
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h5"
+        ],
+        "title": "Subsituting Possible Values",
+        "text": "We substitute all possible $$y$$ coordinates back into one of the two equations to find the corresponding $$x$$ coordinate to each $$y$$ coordinate. Using any of the two equations work because the $$y$$ coordinate found is a solution to the system of equations. We usually use the equation that is easier to calculate the other coordinate with.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We substitute all possible , y  coordinates back into one of the two equations to find the corresponding  x  coordinate to each  y  coordinate. Using any of the two equations work because the  y  coordinate found is a solution to the system of equations. We usually use the equation that is easier to calculate the other coordinate with.",
+        "math": [
+            "$$y$$",
+            "$$x$$",
+            "$$y$$",
+            "$$y$$"
+        ],
+        "pacedSpeech": [
+            "We substitute all possible  , y ",
+            " coordinates back into one of the two equations to find the corresponding   x ",
+            " coordinate to each   y ",
+            " coordinate. Using any of the two equations work because the   y ",
+            " coordinate found is a solution to the system of equations. We usually use the equation that is easier to calculate the other coordinate with."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h6"
+        ],
+        "title": "Substitution #1",
+        "text": "Substituting $$y=\\frac{1-\\sqrt{5}}{2}$$ into $$y=-\\left(x^2\\right)$$. What is the corresponding $$x$$ coordinate?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substituting  y is equal to fraction, 1 minus the square root of 5 over 2,   into  y is equal to negative parentheses x squared  . What is the corresponding  x  coordinate?",
+        "math": [
+            "$$y=\\frac{1-\\sqrt{5}}{2}$$",
+            "$$y=-\\left(x^2\\right)$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Substituting   y is equal to fraction, 1 minus the square root of 5 over 2,  ",
+            " into   y is equal to negative  x squared  ",
+            ". What is the corresponding   x ",
+            " coordinate?"
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h7"
+        ],
+        "title": "Substitution #1",
+        "text": "Multiply by $$-1$$ on both sides then take square root on both sides. The corresponding $$x$$ coordinates are $$-\\sqrt{\\frac{\\sqrt{5}-1}{2}}$$, $$\\sqrt{\\frac{\\sqrt{5}-1}{2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Multiply by  minus 1  on both sides then take square root on both sides. The corresponding  x  coordinates are  negative the square root of fraction, the square root of 5 minus 1, over 2,  end root ,  the square root of fraction, the square root of 5 minus 1, over 2,  end root .",
+        "math": [
+            "$$-1$$",
+            "$$x$$",
+            "$$-\\sqrt{\\frac{\\sqrt{5}-1}{2}}$$",
+            "$$\\sqrt{\\frac{\\sqrt{5}-1}{2}}$$"
+        ],
+        "pacedSpeech": [
+            "Multiply by   minus 1 ",
+            " on both sides then take square root on both sides. The corresponding   x ",
+            " coordinates are   negative the square root of fraction, the square root of 5 minus 1, over 2,  end root ",
+            ",   the square root of fraction, the square root of 5 minus 1, over 2,  end root"
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h8"
+        ],
+        "title": "Substitution #2",
+        "text": "Substituting $$y=\\frac{19}{20}$$ into $$y=20x^2-1$$. Find all possible corresponding $$x$$ coordinates.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substituting  y is equal to, 19 over 20,  into  y, is equal to, 20 x squared, minus 1 . Find all possible corresponding  x  coordinates.",
+        "math": [
+            "$$y=\\frac{19}{20}$$",
+            "$$y=20x^2-1$$",
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Substituting   y is equal to, 19 over 20, ",
+            " into   y, is equal to, 20 x squared, minus 1 ",
+            ". Find all possible corresponding   x ",
+            " coordinates."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h9"
+        ],
+        "title": "Substitution #2",
+        "text": "Add $$1$$ to both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Add  1  to both sides.",
+        "math": [
+            "$$1$$"
+        ],
+        "pacedSpeech": [
+            "Add   1 ",
+            " to both sides."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems9a-h10"
+        ],
+        "title": "Substitution #2",
+        "text": "Divide by $$20$$ to both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Divide by  20  to both sides.",
+        "math": [
+            "$$20$$"
+        ],
+        "pacedSpeech": [
+            "Divide by   20 ",
+            " to both sides."
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-sqrt(39)/20,sqrt(39)/20"
+        ],
+        "dependencies": [
+            "ac561a1systems9a-h11"
+        ],
+        "title": "Substitution #2",
+        "text": "Take square root on both sides. What are the corresponding $$x$$ coordinates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "-sqrt(39)/20,sqrt(39)/20",
+            "-sqrt(39)/40,sqrt(39)/40"
+        ],
+        "speech": "Take square root on both sides. What are the corresponding  x  coordinates?",
+        "math": [
+            "$$x$$"
+        ],
+        "pacedSpeech": [
+            "Take square root on both sides. What are the corresponding   x ",
+            " coordinates?"
+        ]
+    },
+    {
+        "id": "ac561a1systems9a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ac561a1systems9a-h12"
+        ],
+        "title": "Verifying the Number Of Intersections",
+        "text": "We have found the coordinates of all intersections. How many are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We have found the coordinates of all intersections. How many are there?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "We have found the coordinates of all intersections. How many are there?"
+        ]
+    }
+]

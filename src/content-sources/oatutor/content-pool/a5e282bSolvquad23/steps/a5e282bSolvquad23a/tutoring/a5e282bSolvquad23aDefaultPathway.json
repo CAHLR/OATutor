@@ -1,0 +1,213 @@
+[
+    {
+        "id": "a5e282bSolvquad23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the Perfect Square",
+        "text": "Does the expression match any of these formats: $${\\left(a x\\right)}^2+2a b x$$ + $$b^2={\\left(a x+b\\right)}^2$$, $${\\left(a x\\right)}^2-2a b x+b^2={\\left(a x-b\\right)}^2$$ ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Does the expression match any of these formats:  parentheses a x  squared plus, 2 a b x,  +  b squared is equal to parentheses, a x plus b,  squared , , parentheses a x  squared minus, 2 a b x, plus b squared is equal to parentheses, a x minus b,  squared  ?",
+        "math": [
+            "$${\\left(a x\\right)}^2+2a b x$$",
+            "$$b^2={\\left(a x+b\\right)}^2$$",
+            "$${\\left(a x\\right)}^2-2a b x+b^2={\\left(a x-b\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "Does the expression match any of these formats:    a x  squared plus, 2 a b x, ",
+            " +   b squared is equal to , a x plus b,  squared ",
+            ",  ,  a x  squared minus, 2 a b x, plus b squared is equal to , a x minus b,  squared ",
+            " ?"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad23a-h1"
+        ],
+        "title": "Factor the Perfect Square",
+        "text": "In this case, we can see that 4n**2+4n+1as $${\\left(a x\\right)}^2+2a b x$$ + $$b^2={\\left(a x+b\\right)}^2$$ where $$ax=2n$$ and $$b=1$$. We can factor $$4n^2+4n+1$$ as $${\\left(2n+1\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In this case, we can see that 4n**2+4n+1as  parentheses a x  squared plus, 2 a b x,  +  b squared is equal to parentheses, a x plus b,  squared  where  a x is equal to, 2 n  and  b, is equal to 1 . We can factor  4 n squared plus 4 n plus 1  as , parentheses, 2 n plus 1,  squared .",
+        "math": [
+            "$${\\left(a x\\right)}^2+2a b x$$",
+            "$$b^2={\\left(a x+b\\right)}^2$$",
+            "$$ax=2n$$",
+            "$$b=1$$",
+            "$$4n^2+4n+1$$",
+            "$${\\left(2n+1\\right)}^2$$"
+        ],
+        "pacedSpeech": [
+            "In this case, we can see that 4n**2+4n+1as    a x  squared plus, 2 a b x, ",
+            " +   b squared is equal to , a x plus b,  squared ",
+            " where   a x is equal to, 2 n ",
+            " and   b, is equal to 1 ",
+            ". We can factor   4 n squared plus 4 n plus 1 ",
+            " as  , , 2 n plus 1,  squared"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad23a-h2"
+        ],
+        "title": "Rewrite the Equation",
+        "text": "We can rewrite $$4n^2+4n+1=16$$ as $${\\left(2n+1\\right)}^2=16$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can rewrite  4 n squared, plus 4 n plus 1 is equal to 16  as , parentheses, 2 n plus 1,  squared is equal to 16 .",
+        "math": [
+            "$$4n^2+4n+1=16$$",
+            "$${\\left(2n+1\\right)}^2=16$$"
+        ],
+        "pacedSpeech": [
+            "We can rewrite   4 n squared, plus 4 n plus 1 is equal to 16 ",
+            " as  , , 2 n plus 1,  squared is equal to 16"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad23a-h3"
+        ],
+        "title": "Solve for Unknown Variable",
+        "text": "$${\\left(2n+1\\right)}^2=16$$. What is $$n$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "parentheses, 2 n plus 1,  squared is equal to 16 . What is  n ?",
+        "math": [
+            "$${\\left(2n+1\\right)}^2=16$$",
+            "$$n$$"
+        ],
+        "pacedSpeech": [
+            ", 2 n plus 1,  squared is equal to 16 ",
+            ". What is   n"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad23a-h4"
+        ],
+        "title": "Use Square Root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then $$x$$ $$=$$ $$\\sqrt{k}$$, or $$x$$ $$=$$ $$-\\sqrt{k}$$, or $$x$$ $$=\\sqrt{k}$$. $${\\left(2n+1\\right)}^2=16$$, we can take square root both sides and get $$2n+1=4$$ or $$2n+1=-4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The square root property: if  x squared  , is equal to,  k, then  x  , is equal to   the square root of k , or  x   is equal to  , negative the square root of k , or  x   is equal to the square root of k . , parentheses, 2 n plus 1,  squared is equal to, 16 , we can take square root both sides and get  2 n, plus 1 is equal to, 4  or  2 n, plus 1 is equal to negative 4 .",
+        "math": [
+            "$$x^2$$",
+            "$$=$$",
+            "$$x$$",
+            "$$=$$",
+            "$$\\sqrt{k}$$",
+            "$$x$$",
+            "$$=$$",
+            "$$-\\sqrt{k}$$",
+            "$$x$$",
+            "$$=\\sqrt{k}$$",
+            "$${\\left(2n+1\\right)}^2=16$$",
+            "$$2n+1=4$$",
+            "$$2n+1=-4$$"
+        ],
+        "pacedSpeech": [
+            "The square root property: if   x squared ",
+            "  , is equal to, ",
+            " k, then   x ",
+            "  , is equal to ",
+            "   the square root of k ",
+            ", or   x ",
+            "   is equal to ",
+            "  , negative the square root of k ",
+            ", or   x ",
+            "   is equal to the square root of k ",
+            ".  , , 2 n plus 1,  squared is equal to, 16 ",
+            ", we can take square root both sides and get   2 n, plus 1 is equal to, 4 ",
+            " or   2 n, plus 1 is equal to negative 4"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-5}{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad23a-h5"
+        ],
+        "title": "Solve for $$n$$ in $$2n+1=-4$$",
+        "text": "What is $$n$$ when $$2n+1=-4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  n  when  2 n, plus 1 is equal to negative 4 ?",
+        "math": [
+            "$$n$$",
+            "$$2n+1=-4$$"
+        ],
+        "pacedSpeech": [
+            "What is   n ",
+            " when   2 n, plus 1 is equal to negative 4"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad23a-h6"
+        ],
+        "title": "Solve for $$n$$ in $$2n+1=4$$",
+        "text": "What is $$n$$ when $$2n+1=4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  n  when  2 n, plus 1 is equal to 4 ?",
+        "math": [
+            "$$n$$",
+            "$$2n+1=4$$"
+        ],
+        "pacedSpeech": [
+            "What is   n ",
+            " when   2 n, plus 1 is equal to 4"
+        ]
+    },
+    {
+        "id": "a5e282bSolvquad23a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad23a-h7"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$4n^2+4n+1=16$$ has two solutions which are $$n=\\frac{-5}{2}$$ and $$n=\\frac{3}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Therefore,  4 n squared, plus 4 n plus 1 is equal to 16  has two solutions which are  n, is equal to fraction, negative 5, over 2,   and  n is equal to 3 halves .",
+        "math": [
+            "$$4n^2+4n+1=16$$",
+            "$$n=\\frac{-5}{2}$$",
+            "$$n=\\frac{3}{2}$$"
+        ],
+        "pacedSpeech": [
+            "Therefore,   4 n squared, plus 4 n plus 1 is equal to 16 ",
+            " has two solutions which are   n, is equal to fraction, negative 5, over 2,  ",
+            " and   n is equal to 3 halves"
+        ]
+    }
+]

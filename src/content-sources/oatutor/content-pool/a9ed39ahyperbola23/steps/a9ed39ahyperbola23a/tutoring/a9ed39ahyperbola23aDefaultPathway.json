@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a9ed39ahyperbola23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding \"a\"",
+        "text": "The vertices are $$(0,6)$$ and $$(0,-6)$$, so $$a=6$$ and $$a^2=36$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The vertices are  times, parentheses 0 comma 6,   and , parentheses, 0 comma negative 6,  , so  a is equal to, 6  and  a squared, is equal to 36 .",
+        "math": [
+            "$$(0,6)$$",
+            "$$(0,-6)$$",
+            "$$a=6$$",
+            "$$a^2=36$$"
+        ],
+        "pacedSpeech": [
+            "The vertices are   times,  0 comma 6,  ",
+            " and  , , 0 comma negative 6,  ",
+            ", so   a is equal to, 6 ",
+            " and   a squared, is equal to 36"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola23a-h1"
+        ],
+        "title": "Finding \"c\"",
+        "text": "The foci is $$(0,-8)$$, so $$c=-8$$ and $$c^2=64$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The foci is  times, parentheses, 0 comma negative 8,  , so  c is equal to, negative 8  and  c squared, is equal to 64",
+        "math": [
+            "$$(0,-8)$$",
+            "$$c=-8$$",
+            "$$c^2=64$$"
+        ],
+        "pacedSpeech": [
+            "The foci is   times, , 0 comma negative 8,  ",
+            ", so   c is equal to, negative 8 ",
+            " and   c squared, is equal to 64"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola23a-h2"
+        ],
+        "title": "Finding \"b\"",
+        "text": "To solve for $$b^2$$ use $$b^2=c^2-a^2$$ and plug in known values $$b^2=64-36=28$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve for  b squared  use  b squared, is equal to, c squared minus, a squared  and plug in known values  b squared is equal to 64 minus 36, is equal to 28",
+        "math": [
+            "$$b^2$$",
+            "$$b^2=c^2-a^2$$",
+            "$$b^2=64-36=28$$"
+        ],
+        "pacedSpeech": [
+            "To solve for   b squared ",
+            " use   b squared, is equal to, c squared minus, a squared ",
+            " and plug in known values   b squared is equal to 64 minus 36, is equal to 28"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{y^2}{36}-\\frac{x^2}{28}=1$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola23a-h3"
+        ],
+        "title": "Substitute All Values",
+        "text": "Substitute $$a^2$$ and $$b^2$$ into the standard equation form, $$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  a squared  and  b squared  into the standard equation form, , fraction, y squared, over, a squared,  minus, fraction, x squared, over, b squared,  is equal to 1",
+        "math": [
+            "$$a^2$$",
+            "$$b^2$$",
+            "$$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   a squared ",
+            " and   b squared ",
+            " into the standard equation form,  , fraction, y squared, over, a squared,  minus, fraction, x squared, over, b squared,  is equal to 1"
+        ]
+    }
+]

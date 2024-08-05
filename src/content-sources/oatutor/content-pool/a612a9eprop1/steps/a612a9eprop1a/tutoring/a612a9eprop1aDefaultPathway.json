@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a612a9eprop1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Type of Test",
+        "text": "Test of Two Proportions",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Test of Two Proportions",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Test of Two Proportions"
+        ]
+    },
+    {
+        "id": "a612a9eprop1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a612a9eprop1a-h1"
+        ],
+        "title": "One-tailed or Two-tailed?",
+        "text": "This is a two-tailed test as the question asks for the difference in proportions",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "This is a two-tailed test as the question asks for the difference in proportions",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "This is a two-tailed test as the question asks for the difference in proportions"
+        ]
+    },
+    {
+        "id": "a612a9eprop1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1404$$"
+        ],
+        "dependencies": [
+            "a612a9eprop1a-h2"
+        ],
+        "title": "P-value",
+        "text": "What is the $$p-value$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the  p minus value, ?",
+        "math": [
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "What is the   p minus value,"
+        ]
+    },
+    {
+        "id": "a612a9eprop1a-s1",
+        "type": "hint",
+        "dependencies": [
+            "a612a9eprop1a-h3"
+        ],
+        "title": "Calculating P-value",
+        "text": "In order to calculate the $$p-value$$, you can use the 2PropZTest function on your calculator",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "In order to calculate the  p minus value , you can use the 2PropZTest function on your calculator",
+        "math": [
+            "$$p-value$$"
+        ],
+        "pacedSpeech": [
+            "In order to calculate the   p minus value ",
+            ", you can use the 2PropZTest function on your calculator"
+        ]
+    }
+]

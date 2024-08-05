@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a1f32dfFormula10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Unknown",
+        "text": "The formula is $$A=0.5bh$$, and we want to find $$h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The formula is    a is equal to, 0.5 b h, , and we want to find  h .",
+        "math": [
+            "$$A=0.5bh$$",
+            "$$h$$"
+        ],
+        "pacedSpeech": [
+            "The formula is     a is equal to, 0.5 b h, ",
+            ", and we want to find   h"
+        ]
+    },
+    {
+        "id": "a1f32dfFormula10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f32dfFormula10a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Since we know that $$A=170$$ and $$b=17$$, we can substitute these values into the formula and get $$170=0.5(17)(h)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since we know that    a is equal to 170  and  b, is equal to, 17 , we can substitute these values into the formula and get  170, is equal to, 0.5 times 17 times h .",
+        "math": [
+            "$$A=170$$",
+            "$$b=17$$",
+            "$$170=0.5(17)(h)$$"
+        ],
+        "pacedSpeech": [
+            "Since we know that     a is equal to 170 ",
+            " and   b, is equal to, 17 ",
+            ", we can substitute these values into the formula and get   170, is equal to, 0.5 times 17 times h"
+        ]
+    },
+    {
+        "id": "a1f32dfFormula10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1f32dfFormula10a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplifying the equation, we get $$170=(8.5)(h)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplifying the equation, we get , 170 is equal to 8.5 times h .",
+        "math": [
+            "$$170=(8.5)(h)$$"
+        ],
+        "pacedSpeech": [
+            "Simplifying the equation, we get  , 170 is equal to 8.5 times h"
+        ]
+    },
+    {
+        "id": "a1f32dfFormula10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a1f32dfFormula10a-h3"
+        ],
+        "title": "Solve",
+        "text": "To solve for $$h$$, we can divide both sides of the equation by $$8.5$$. What is $$h$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "To solve for , h , we can divide both sides of the equation by  8.5 . What is  h ?",
+        "math": [
+            "$$h$$",
+            "$$8.5$$",
+            "$$h$$"
+        ],
+        "pacedSpeech": [
+            "To solve for  , h ",
+            ", we can divide both sides of the equation by   8.5 ",
+            ". What is   h"
+        ]
+    }
+]

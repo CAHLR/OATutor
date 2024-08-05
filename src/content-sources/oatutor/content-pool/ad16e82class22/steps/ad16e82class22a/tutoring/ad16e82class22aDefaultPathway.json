@@ -1,0 +1,76 @@
+[
+    {
+        "id": "ad16e82class22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explanation",
+        "text": "We want to find a line that passes through $$(0, 42.3)$$ and $$(1, 48.1)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "We want to find a line that passes through  times, parentheses 0 comma 42.3,   and , parentheses 1 comma 48.1,  .",
+        "math": [
+            "$$(0, 42.3)$$",
+            "$$(1, 48.1)$$"
+        ],
+        "pacedSpeech": [
+            "We want to find a line that passes through   times,  0 comma 42.3,  ",
+            " and  ,  1 comma 48.1,"
+        ]
+    },
+    {
+        "id": "ad16e82class22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad16e82class22a-h1"
+        ],
+        "title": "Equation for Slope",
+        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "m is equal to fraction, y 1 minus y 2, over, x 1 minus x 2,",
+        "math": [
+            "$$m=\\frac{y1-y2}{x1-x2}$$"
+        ],
+        "pacedSpeech": [
+            "m is equal to fraction, y 1 minus y 2, over, x 1 minus x 2,"
+        ]
+    },
+    {
+        "id": "ad16e82class22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.8$$"
+        ],
+        "dependencies": [
+            "ad16e82class22a-h2"
+        ],
+        "title": "Solve the Value",
+        "text": "Following the given equation, what is the slope of the function?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad16e82class22a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve the Value",
+                "text": "$$\\frac{48.1-42.3}{1-0}=5.8$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ],
+        "speech": "Following the given equation, what is the slope of the function?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Following the given equation, what is the slope of the function?"
+        ]
+    }
+]

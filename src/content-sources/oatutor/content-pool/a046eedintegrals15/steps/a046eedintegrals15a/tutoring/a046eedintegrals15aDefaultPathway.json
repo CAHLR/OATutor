@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a046eedintegrals15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "U-substitution",
+        "text": "Set $$u=lnx$$ then $$du=\\frac{1}{x} dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Set  u is equal to, l n x,  then  d u is equal to, 1 over x, d x .",
+        "math": [
+            "$$u=lnx$$",
+            "$$du=\\frac{1}{x} dx$$"
+        ],
+        "pacedSpeech": [
+            "Set   u is equal to, l n x, ",
+            " then   d u is equal to, 1 over x, d x"
+        ]
+    },
+    {
+        "id": "a046eedintegrals15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals15a-h1"
+        ],
+        "title": "Rewrite the integral in term of u",
+        "text": "$$\\int u^{\\left(-2\\right)} \\,du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral of u raised to the parentheses negative 2  power d u",
+        "math": [
+            "$$\\int u^{\\left(-2\\right)} \\,du$$"
+        ],
+        "pacedSpeech": [
+            "the integral of u raised to the  negative 2  power d u"
+        ]
+    },
+    {
+        "id": "a046eedintegrals15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals15a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int u^{\\left(-2\\right)} \\,du=-\\left(u^{\\left(-1\\right)}\\right)+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "the integral of u raised to the parentheses negative 2  power d u is equal to negative parentheses, u raised to the parentheses negative 1  power  plus   c",
+        "math": [
+            "$$\\int u^{\\left(-2\\right)} \\,du=-\\left(u^{\\left(-1\\right)}\\right)+C$$"
+        ],
+        "pacedSpeech": [
+            "the integral of u raised to the  negative 2  power d u is equal to negative , u raised to the  negative 1  power  plus   c"
+        ]
+    },
+    {
+        "id": "a046eedintegrals15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals15a-h3"
+        ],
+        "title": "Back-substitute",
+        "text": "$$\\frac{-1}{ln}|x|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": ", fraction, negative 1, over, l n,  end absolute value x vertical line positive   c",
+        "math": [
+            "$$\\frac{-1}{ln}|x|+C$$"
+        ],
+        "pacedSpeech": [
+            ", fraction, negative 1, over, l n,  end absolute value x vertical line positive   c"
+        ]
+    }
+]

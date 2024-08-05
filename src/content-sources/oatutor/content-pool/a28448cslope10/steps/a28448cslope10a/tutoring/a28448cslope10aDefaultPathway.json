@@ -1,0 +1,158 @@
+[
+    {
+        "id": "a28448cslope10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$y$$",
+        "text": "Isolate $$y$$ to one side: $$4x+y=8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Isolate  y  to one side:  4 x, plus y is equal to 8",
+        "math": [
+            "$$y$$",
+            "$$4x+y=8$$"
+        ],
+        "pacedSpeech": [
+            "Isolate   y ",
+            " to one side:   4 x, plus y is equal to 8"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a28448cslope10a-h1"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Substract $$4x$$ from each side: $$y=-4x+8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substract  4 x  from each side:  y, is equal to, negative 4 x, plus 8",
+        "math": [
+            "$$4x$$",
+            "$$y=-4x+8$$"
+        ],
+        "pacedSpeech": [
+            "Substract   4 x ",
+            " from each side:   y, is equal to, negative 4 x, plus 8"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a28448cslope10a-h2"
+        ],
+        "title": "Slope-Intercept Form of an Equation of a Line",
+        "text": "We compare our equation to the slope-intercept form of the equation.\\n$$y=m x+b$$\\n$$y=-4x+8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We compare our equation to the slope-intercept form of the equation.\\n y is equal to, m x plus b \\n y is equal to, negative 4 x, plus 8",
+        "math": [
+            "$$y=m x+b$$",
+            "$$y=-4x+8$$"
+        ],
+        "pacedSpeech": [
+            "We compare our equation to the slope-intercept form of the equation.  y is equal to, m x plus b ",
+            "  y is equal to, negative 4 x, plus 8"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a28448cslope10a-h3"
+        ],
+        "title": "Identify the slope.",
+        "text": "What is $$m$$ in our given equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  m  in our given equation?",
+        "math": [
+            "$$m$$"
+        ],
+        "pacedSpeech": [
+            "What is   m ",
+            " in our given equation?"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a28448cslope10a-h4"
+        ],
+        "title": "Identify $$b$$.",
+        "text": "What is $$b$$ in our given equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  b  in our given equation?",
+        "math": [
+            "$$b$$"
+        ],
+        "pacedSpeech": [
+            "What is   b ",
+            " in our given equation?"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a28448cslope10a-h5"
+        ],
+        "title": "Identify the y-intercept.",
+        "text": "The y-intercept is (0,b). Since $$b$$ is $$8$$, the y-intercept would be $$(0,8)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The y-intercept is (0,b). Since  b  is  8 , the y-intercept would be , parentheses 0 comma 8,",
+        "math": [
+            "$$b$$",
+            "$$8$$",
+            "$$(0,8)$$"
+        ],
+        "pacedSpeech": [
+            "The y-intercept is (0,b). Since   b ",
+            " is   8 ",
+            ", the y-intercept would be  ,  0 comma 8,"
+        ]
+    },
+    {
+        "id": "a28448cslope10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a28448cslope10a-h4",
+            "a28448cslope10a-h6"
+        ],
+        "title": "Slope and y-intercept",
+        "text": "The slope is $$-4$$ and the y-intercept is $$(0,8)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The slope is  minus, 4  and the y-intercept is , parentheses 0 comma 8,  .",
+        "math": [
+            "$$-4$$",
+            "$$(0,8)$$"
+        ],
+        "pacedSpeech": [
+            "The slope is   minus, 4 ",
+            " and the y-intercept is  ,  0 comma 8,"
+        ]
+    }
+]

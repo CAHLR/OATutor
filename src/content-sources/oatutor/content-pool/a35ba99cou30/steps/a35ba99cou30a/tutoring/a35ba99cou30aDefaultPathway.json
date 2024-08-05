@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a35ba99cou30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the elements",
+        "text": "There are $$7$$ letters. R is repeated $$3$$ times.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "There are  7  letters. R is repeated  3,  times.",
+        "math": [
+            "$$7$$",
+            "$$3$$"
+        ],
+        "pacedSpeech": [
+            "There are   7 ",
+            " letters. R is repeated   3, ",
+            " times."
+        ]
+    },
+    {
+        "id": "a35ba99cou30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou30a-h1"
+        ],
+        "title": "Formula for Finding the Number of Permutations of $$n$$ Non-Distinct Objects",
+        "text": "Substitute $$n=7$$, $$r_1=3$$ into the formula: n!/(r!*r_2!...r_k!)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Substitute  n is equal to, 7 ,  r sub 1, is equal to 3  into the formula: n!/(r!*r_2!...r_k!)",
+        "math": [
+            "$$n=7$$",
+            "$$r_1=3$$"
+        ],
+        "pacedSpeech": [
+            "Substitute   n is equal to, 7 ",
+            ",   r sub 1, is equal to 3 ",
+            " into the formula: n!/(r!*r_2!...r_k!)"
+        ]
+    },
+    {
+        "id": "a35ba99cou30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou30a-h2"
+        ],
+        "title": "Substitute and Simplify",
+        "text": "7!/3!=840",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "7!/3!=840",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "7!/3!=840"
+        ]
+    }
+]

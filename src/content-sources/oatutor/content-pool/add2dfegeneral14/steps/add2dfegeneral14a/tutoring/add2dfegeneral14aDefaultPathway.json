@@ -1,0 +1,115 @@
+[
+    {
+        "id": "add2dfegeneral14a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "no"
+        ],
+        "dependencies": [],
+        "title": "Is there a greatest common factor?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "speech": "",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            ""
+        ]
+    },
+    {
+        "id": "add2dfegeneral14a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Other"
+        ],
+        "dependencies": [
+            "add2dfegeneral14a-h1"
+        ],
+        "title": "Is the polynomial a binomial, trinomial, or are there more than three terms?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Binomial",
+            "Trinomial",
+            "Other"
+        ],
+        "speech": "",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            ""
+        ]
+    },
+    {
+        "id": "add2dfegeneral14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral14a-h2"
+        ],
+        "title": "More than three terms",
+        "text": "Since there are more than three terms, factor by grouping.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Since there are more than three terms, factor by grouping.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Since there are more than three terms, factor by grouping."
+        ]
+    },
+    {
+        "id": "add2dfegeneral14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral14a-h3"
+        ],
+        "title": "Grouping",
+        "text": "By grouping, you should be left have $$6a \\left(2b-1\\right)+5\\left(2b-1\\right)$$. Group together.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "By grouping, you should be left have  6 a, parentheses, 2 b minus 1,  plus 5 times, parentheses, 2 b minus 1,  . Group together.",
+        "math": [
+            "$$6a \\left(2b-1\\right)+5\\left(2b-1\\right)$$"
+        ],
+        "pacedSpeech": [
+            "By grouping, you should be left have   6 a, , 2 b minus 1,  plus 5 times, , 2 b minus 1,  ",
+            ". Group together."
+        ]
+    },
+    {
+        "id": "add2dfegeneral14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral14a-h4"
+        ],
+        "title": "Check",
+        "text": "Is it factored completely? Do the factors multiply back to the original polynomial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Is it factored completely? Do the factors multiply back to the original polynomial?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Is it factored completely? Do the factors multiply back to the original polynomial?"
+        ]
+    }
+]

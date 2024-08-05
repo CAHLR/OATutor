@@ -1,0 +1,208 @@
+[
+    {
+        "id": "a2d8720LinEqua21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope",
+        "text": "First, we calculate the slope using the slope formula and two points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "First, we calculate the slope using the slope formula and two points.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "First, we calculate the slope using the slope formula and two points."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua21a-h1"
+        ],
+        "title": "Slope Formula",
+        "text": "The slope of a line, $$m$$, represents the change in $$y$$ over the change in $$x$$. Given two points, $$(x_1,y_1)$$ and $$(x_2,y_2)$$, the following formula determines the slope of a line containing these points: $$m=\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "The slope of a line,  m , represents the change in  y  over the change in  x . Given two points, , parentheses, x sub 1 comma y sub 1,   and , parentheses, x sub 2 comma y sub 2,  , the following formula determines the slope of a line containing these points:  m is equal to fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,  .",
+        "math": [
+            "$$m$$",
+            "$$y$$",
+            "$$x$$",
+            "$$(x_1,y_1)$$",
+            "$$(x_2,y_2)$$",
+            "$$m=\\frac{y_2-y_1}{x_2-x_1}$$"
+        ],
+        "pacedSpeech": [
+            "The slope of a line,   m ",
+            ", represents the change in   y ",
+            " over the change in   x ",
+            ". Given two points,  , , x sub 1 comma y sub 1,  ",
+            " and  , , x sub 2 comma y sub 2,  ",
+            ", the following formula determines the slope of a line containing these points:   m is equal to fraction, y sub 2 minus y sub 1, over, x sub 2 minus x sub 1,"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{3}$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua21a-h2"
+        ],
+        "title": "Calculate the slope",
+        "text": "What is the slope of the line given two points $$(3,4)$$ and $$(0,-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is the slope of the line given two points  times, parentheses 3 comma 4,   and , parentheses, 0 comma negative 3,  ?",
+        "math": [
+            "$$(3,4)$$",
+            "$$(0,-3)$$"
+        ],
+        "pacedSpeech": [
+            "What is the slope of the line given two points   times,  3 comma 4,  ",
+            " and  , , 0 comma negative 3,"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua21a-h3"
+        ],
+        "title": "Write the equation",
+        "text": "Next, we use the point-slope formula with the slope of $$\\frac{7}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Next, we use the point-slope formula with the slope of  7 thirds .",
+        "math": [
+            "$$\\frac{7}{3}$$"
+        ],
+        "pacedSpeech": [
+            "Next, we use the point-slope formula with the slope of   7 thirds"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua21a-h4"
+        ],
+        "title": "The point-slope formula",
+        "text": "Given one point and the slope, the point-slope formula will lead to the equation of a line: $$y-y_1=m(x$$ -x_1).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Given one point and the slope, the point-slope formula will lead to the equation of a line:  y minus y sub 1, is equal to m of parentheses x  -x_1).",
+        "math": [
+            "$$y-y_1=m(x$$"
+        ],
+        "pacedSpeech": [
+            "Given one point and the slope, the point-slope formula will lead to the equation of a line:   y minus y sub 1, is equal to m of  x ",
+            " -x_1)."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a2d8720LinEqua21a-h5"
+        ],
+        "title": "Picking a point",
+        "text": "We can pick either $$(3,4)$$ or $$(0,-3)$$ as $$(x_1,y_1)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "We can pick either  times, parentheses 3 comma 4,   or , parentheses, 0 comma negative 3,   as , parentheses, x sub 1 comma y sub 1,  .",
+        "math": [
+            "$$(3,4)$$",
+            "$$(0,-3)$$",
+            "$$(x_1,y_1)$$"
+        ],
+        "pacedSpeech": [
+            "We can pick either   times,  3 comma 4,  ",
+            " or  , , 0 comma negative 3,  ",
+            " as  , , x sub 1 comma y sub 1,"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y-4=\\frac{7}{3} \\left(x-3\\right)$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua21a-h6"
+        ],
+        "title": "Substitute",
+        "text": "Write the point-slope formula using the point $$(3,4)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Write the point-slope formula using the point  times, parentheses 3 comma 4,  .",
+        "math": [
+            "$$(3,4)$$"
+        ],
+        "pacedSpeech": [
+            "Write the point-slope formula using the point   times,  3 comma 4,"
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y-4=\\frac{7}{3} x-7$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua21a-h7"
+        ],
+        "title": "Parentheses",
+        "text": "Using the distributive property.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Using the distributive property.",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Using the distributive property."
+        ]
+    },
+    {
+        "id": "a2d8720LinEqua21a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=\\frac{7}{3} x-3$$"
+        ],
+        "dependencies": [
+            "a2d8720LinEqua21a-h8"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the equation $$y-4=\\frac{7}{3} x-7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Simplify the equation  y minus 4, is equal to, 7 thirds x minus 7 .",
+        "math": [
+            "$$y-4=\\frac{7}{3} x-7$$"
+        ],
+        "pacedSpeech": [
+            "Simplify the equation   y minus 4, is equal to, 7 thirds x minus 7"
+        ]
+    }
+]

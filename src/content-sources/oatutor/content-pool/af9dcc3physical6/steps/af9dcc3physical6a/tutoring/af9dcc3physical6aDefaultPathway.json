@@ -1,0 +1,162 @@
+[
+    {
+        "id": "af9dcc3physical6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the spring constant",
+        "text": "Since $$x=6$$ in and $$F(x)=8$$ lb are given, we have $$8$$ lb=k*(6 in) then $$k=\\frac{4}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "Since  x is equal to, 6  in and    f of x is equal to, 8  lb are given, we have  8  lb=k*(6 in) then  k is equal to 4 thirds .",
+        "math": [
+            "$$x=6$$",
+            "$$F(x)=8$$",
+            "$$8$$",
+            "$$k=\\frac{4}{3}$$"
+        ],
+        "pacedSpeech": [
+            "Since   x is equal to, 6 ",
+            " in and     f of x is equal to, 8 ",
+            " lb are given, we have   8 ",
+            " lb=k*(6 in) then   k is equal to 4 thirds"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3} x$$"
+        ],
+        "dependencies": [
+            "af9dcc3physical6a-h1"
+        ],
+        "title": "Define F(x)",
+        "text": "What is the force F(x) applied to stretch the spring?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is the force F(x) applied to stretch the spring?",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the force F(x) applied to stretch the spring?"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical6a-h2"
+        ],
+        "title": "Set up the integral",
+        "text": "$$W=\\int_{a}^{b} F(x) \\,dx=\\int_{0}^{12} \\frac{4}{3} x \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "w is equal to the integral from a to b of   f of x d x is equal to the integral from 0 to 12 of 4 thirds x d x",
+        "math": [
+            "$$W=\\int_{a}^{b} F(x) \\,dx=\\int_{0}^{12} \\frac{4}{3} x \\,dx$$"
+        ],
+        "pacedSpeech": [
+            "w is equal to the integral from a to b of   f of x d x is equal to the integral from 0 to 12 of 4 thirds x d x"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical6a-h3"
+        ],
+        "title": "Feet to inch",
+        "text": "$$1$$ ft is $$12$$ inches",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "1  ft is  12,  inches",
+        "math": [
+            "$$1$$",
+            "$$12$$"
+        ],
+        "pacedSpeech": [
+            "1 ",
+            " ft is   12, ",
+            " inches"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical6a-h4"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\frac{2}{3} x^2$$ as the limits going from $$x=0$$ to $$x=12$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "2 thirds x squared,  as the limits going from  x is equal to 0  to  x, is equal to 12",
+        "math": [
+            "$$\\frac{2}{3} x^2$$",
+            "$$x=0$$",
+            "$$x=12$$"
+        ],
+        "pacedSpeech": [
+            "2 thirds x squared, ",
+            " as the limits going from   x is equal to 0 ",
+            " to   x, is equal to 12"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$96$$"
+        ],
+        "dependencies": [
+            "af9dcc3physical6a-h5"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$\\frac{2}{3} {12}^2$$ ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "What is , 2 thirds 12 squared,  ?",
+        "math": [
+            "$$\\frac{2}{3} {12}^2$$"
+        ],
+        "pacedSpeech": [
+            "What is  , 2 thirds 12 squared, ",
+            " ?"
+        ]
+    },
+    {
+        "id": "af9dcc3physical6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical6a-h6"
+        ],
+        "title": "Inch to feet",
+        "text": "$$96$$ in-lb is $$\\frac{96}{12}$$ ft-lb $$=8$$ ft-lb",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "speech": "96  in-lb is  96 over 12,  ft-lb  is equal to 8  ft-lb",
+        "math": [
+            "$$96$$",
+            "$$\\frac{96}{12}$$",
+            "$$=8$$"
+        ],
+        "pacedSpeech": [
+            "96 ",
+            " in-lb is   96 over 12, ",
+            " ft-lb   is equal to 8 ",
+            " ft-lb"
+        ]
+    }
+]

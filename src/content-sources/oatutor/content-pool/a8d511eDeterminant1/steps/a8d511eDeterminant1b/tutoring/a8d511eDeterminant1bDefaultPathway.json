@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8d511eDeterminant1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Write the matrix in determinant form",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Write the matrix in determinant form",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Write the matrix in determinant form"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant1b-h1"
+        ],
+        "title": "Calculation",
+        "text": "Subtract the products of the diagonals",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Subtract the products of the diagonals",
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "Subtract the products of the diagonals"
+        ]
+    },
+    {
+        "id": "a8d511eDeterminant1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-8$$"
+        ],
+        "dependencies": [
+            "a8d511eDeterminant1b-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is $$0\\left(-3\\right)-\\left(-4\\right) \\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  0 times negative 3, minus, negative 4 times negative 2 ?",
+        "math": [
+            "$$0\\left(-3\\right)-\\left(-4\\right) \\left(-2\\right)$$"
+        ],
+        "pacedSpeech": [
+            "What is   0 times negative 3, minus, negative 4 times negative 2"
+        ]
+    }
+]
