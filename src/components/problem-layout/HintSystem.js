@@ -71,7 +71,7 @@ class HintSystem extends React.Component {
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
             agentMode: false,  // showing text or agent whiteboard
-            agentSpeak: false, // speaking or not
+            playing: false, // speaking or not
             hintIndex: 0,      // index of hint to highlight
         };
 
@@ -214,16 +214,18 @@ class HintSystem extends React.Component {
         // (DONE) called when: hint is just opened AND agentMode is true
         // or when Play button is pressed and agentSpeek becomes true
         // (DONE) or when Agent button is pressed is toggeld to 
-        // (DONE) should not play answers 
+        // (DONE) should not play answers
+
+        this.setState({hintIndex: 0});
+
         if( this.state.agentMode ){
             if (hint.pacedSpeech) {
-                // backendCommunication(hint.speech); 
-                // websocketClient(hint.speech);
                 socket.emit('sendMessage', hint.pacedSpeech);   
             }; 
         };               
         socket.on('message', (data) => {
             console.log('Message from server:', data);
+            this.setState({hintIndex: parseInt(data)}); // later make method with some error catching
         });
     };
 
@@ -249,16 +251,26 @@ class HintSystem extends React.Component {
     };
 
     togglePlayPause = (event) => {
-        // if speaking => pause, if not speaking => play
-        // not used currently (showing nextBoarder instead)
+        if (this.state.playing) {
+            // pause
+            console.log('pausing')
+            socket.emit('pause');
+        }
+        else
+        {
+            // play
+            console.log('playing')
+            socket.emit('play');
+        }
         this.setState((prevState) => ({
-            agentSpeak: !prevState.agentSpeak
+            playing: !prevState.playing
           }));
     };
 
     handleOnChange = (event, expanded, index, hint) => {
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
+        // TODO: Add conditional so it wont play if hint is being closed...
         this.playAgent(hint);
     };
 
@@ -399,14 +411,14 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            {this.state.agentMode === true? ( 
+                            {this.state.agentMode? ( 
                                 <>
                                 <Button onClick={() => this.reloadSpeech(hint)}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             
-                                <Button onClick={() => this.nextBoarder(hint) /* Temporary method placement to show switching boarders, change to playAgent  */}>
-                                    {this.state.agentSpeak === true?
+                                <Button onClick={() => this.togglePlayPause(hint) /* Temporary method placement to show switching boarders, change to playAgent  */}>
+                                    {this.state.playing?
                                     <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
                                     : <img src={`${process.env.PUBLIC_URL}/play_icon.svg`} alt="Play Icon" width={15} height={15} />}
                                 </Button>
@@ -414,7 +426,7 @@ class HintSystem extends React.Component {
                                 ) :" "}              
 
                             <Button onClick={() => this.toggleWhiteboard(hint)}>
-                                {this.state.agentMode === true? "TEXT" : "AGENT"}
+                                {this.state.agentMode? "TEXT" : "AGENT"}
                             </Button>
 
                         </AccordionActions>
