@@ -24,13 +24,8 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-// import { backendCommunication } from '../../tts/BackendCommunication.js'; 
-import { websocketClient } from '../../tts/websocketClient.js'; 
-// import useAudioFetcher from '../../tts/AudioFetcher.js';
 import io from 'socket.io-client';
 const socket = io('http://localhost:3000'); 
-
-
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -173,6 +168,7 @@ class HintSystem extends React.Component {
         );
     };
 
+    // Sagas added methods
     nextBoarder = (hint) => {
         // will run after agent speaks their hint[i]
         if (hint.math !== undefined){
@@ -211,15 +207,11 @@ class HintSystem extends React.Component {
     };
 
     playAgent = (hint) => {
-        // (DONE) called when: hint is just opened AND agentMode is true
-        // or when Play button is pressed and agentSpeek becomes true
-        // (DONE) or when Agent button is pressed is toggeld to 
-        // (DONE) should not play answers
-
-        this.setState({hintIndex: 0});
 
         if( this.state.agentMode ){
             if (hint.pacedSpeech) {
+                this.setState({hintIndex: 0})
+                this.setState(() => ({playing: true}));
                 socket.emit('sendMessage', hint.pacedSpeech);   
             }; 
         };               
@@ -229,18 +221,14 @@ class HintSystem extends React.Component {
         });
     };
 
-    handleResponse = (response) => {
-        // play the audio
-        // synthesize(response); // later for borders params (responses, hint, nextBorder)
-
-    }
-
-    reloadSpeech = (hint) => {
-        this.setState({hintIndex: 0},
-            () => {
-                this.playAgent(hint);
-            });
+    reloadSpeech = () => {
+        socket.emit('reload');
+        this.setState(() => ({hintIndex: 0}));
     };
+
+    stopSpeech = () => {
+        // will stop the speech
+    }
 
     toggleWhiteboard = (hint) => {
         this.setState( prevState => ({ agentMode: !prevState.agentMode }),
@@ -251,20 +239,13 @@ class HintSystem extends React.Component {
     };
 
     togglePlayPause = (event) => {
-        if (this.state.playing) {
-            // pause
-            console.log('pausing')
-            socket.emit('pause');
+        if (this.state.playing) {    // pause
+            socket.emit('pause'); 
         }
-        else
-        {
-            // play
-            console.log('playing')
-            socket.emit('play');
+        else{  // play
+            socket.emit('play', this.state.hintIndex);
         }
-        this.setState((prevState) => ({
-            playing: !prevState.playing
-          }));
+        this.setState((prevState) => ({playing: !prevState.playing}));
     };
 
     handleOnChange = (event, expanded, index, hint) => {
@@ -413,7 +394,7 @@ class HintSystem extends React.Component {
                         <AccordionActions>
                             {this.state.agentMode? ( 
                                 <>
-                                <Button onClick={() => this.reloadSpeech(hint)}>
+                                <Button onClick={() => this.reloadSpeech()}>
                                     <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
                                 </Button>
                             
