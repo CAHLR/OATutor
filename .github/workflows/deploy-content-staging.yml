@@ -20,29 +20,8 @@ jobs:
           ref: 'main'
           path: 'content-staging-build'
 
-      - name: Add SSH private keys for submodule repositories
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: |
-            ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
-
-      - run: git submodule update --init --recursive
-
-      - name: Save original git author and git email
-        run: |
-          echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
-          echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
-
-      - name: Get build time
-        run: echo "build_timestamp=$(date +%s%3N)" >> $GITHUB_ENV
-
-      - uses: actions/setup-node@v2.4.1
-
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
-
-#      - name: Do not log data
-#        run: sed -i 's/DO_LOG_DATA = true/DO_LOG_DATA = false/g' src/config/config.js
 
       - name: Cache node modules
         uses: actions/cache@v2
