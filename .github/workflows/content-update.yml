@@ -14,7 +14,7 @@ jobs:
         ref: 'content-staging'  # Checkout the content-staging branch
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git
+      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
     - name: List contents of the root directory
       run: ls -la /home/runner/work/
@@ -23,7 +23,7 @@ jobs:
       run: ls -la /home/runner/work/OATutor/OATutor
 
     - name: List contents of OATutor-Tooling directory
-      run: ls -la /home/runner/work/OATutor
+      run: ls -la /home/runner/work/OATutor-Tooling
 
     - name: Set up Python
       uses: actions/setup-python@v2
