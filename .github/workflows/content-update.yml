@@ -43,6 +43,15 @@ jobs:
     - name: Create Content Directory
       run: mkdir -p /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
 
+    - name: List contents of /home/runner/work/
+      run: ls -la /home/runner/work/
+
+    - name: List contents of /home/runner/work/OATutor
+      run: ls -la /home/runner/work/OATutor
+
+    - name: List contents of /home/runner/work/OATutor/OATutor
+      run: ls -la /home/runner/work/OATutor/OATutor
+
     - name: Run content update script
       run: |
         cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
