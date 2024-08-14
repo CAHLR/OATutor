@@ -35,7 +35,7 @@ jobs:
       run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > oatutor-askoski-f122840466c4.json
 
     - name: Set environment variable for spreadsheet key
-      run: echo "SPREADSHEET_KEY=${{ secrets.SPREADSHEET_KEY }}" >> $GITHUB_ENV
+      run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
     - name: Remove existing content
       run: rm -rf /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/*
