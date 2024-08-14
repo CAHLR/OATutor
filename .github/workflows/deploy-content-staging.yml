@@ -3,9 +3,11 @@ name: Content Staging CI
 on:
   push:
     branches: [ content-staging ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Automated Content Update"]
+    types:
+      - completed
 
 jobs:
   buildAndDeploy:
