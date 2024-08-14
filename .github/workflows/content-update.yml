@@ -16,6 +16,15 @@ jobs:
     - name: Clone OATutor-Tooling repository
       run: git clone https://github.com/CAHLR/OATutor-Tooling.git
 
+    - name: List contents of the root directory
+      run: ls -la /home/runner/work/
+
+    - name: List contents of OATutor directory
+      run: ls -la /home/runner/work/OATutor/OATutor
+
+    - name: List contents of OATutor-Tooling directory
+      run: ls -la /home/runner/work/OATutor-Tooling/OATutor-Tooling
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
