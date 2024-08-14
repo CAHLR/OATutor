@@ -23,7 +23,7 @@ jobs:
       run: ls -la /home/runner/work/OATutor/OATutor
 
     - name: List contents of OATutor-Tooling directory
-      run: ls -la /home/runner/work/OATutor-Tooling/OATutor-Tooling
+      run: ls -la /home/runner/work/OATutor
 
     - name: Set up Python
       uses: actions/setup-python@v2
