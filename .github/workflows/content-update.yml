@@ -45,6 +45,7 @@ jobs:
 
     - name: Run content update script
       run: |
+        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
         python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
 
     - name: Move and prepare files
