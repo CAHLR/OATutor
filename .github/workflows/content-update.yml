@@ -27,7 +27,7 @@ jobs:
         pip install -r requirements.txt || true  # Ignore if installation fails
 
     - name: Create credentials JSON file
-      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" > OATutor-Tooling/oatutor-askoski-f122840466c4.json
+      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" > oatutor-askoski-f122840466c4.json
 
     - name: Set environment variable for spreadsheet key
       run: echo "SPREADSHEET_KEY=${{ secrets.SPREADSHEET_KEY }}" >> $GITHUB_ENV
