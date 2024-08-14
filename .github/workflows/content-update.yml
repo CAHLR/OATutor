@@ -32,7 +32,7 @@ jobs:
         pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
 
     - name: Create credentials JSON file
-      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" > oatutor-askoski-f122840466c4.json
+      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > oatutor-askoski-f122840466c4.json
 
     - name: Set environment variable for spreadsheet key
       run: echo "SPREADSHEET_KEY=${{ secrets.SPREADSHEET_KEY }}" >> $GITHUB_ENV
