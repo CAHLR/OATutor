@@ -16,6 +16,11 @@ jobs:
     - name: Clone OATutor-Tooling repository
       run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
+    - name: Install distutils
+      run: |
+        sudo apt-get update
+        sudo apt-get install python3-distutils -y
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
