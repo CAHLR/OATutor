@@ -29,6 +29,9 @@ jobs:
 
       - uses: actions/setup-node@v2.4.1
 
+      - name: List files in the current directory
+        run: ls -la
+
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
 
