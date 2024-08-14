@@ -29,13 +29,10 @@ jobs:
 
       - uses: actions/setup-node@v2.4.1
 
-      - name: List files in the current directory
-        run: |
-          cd content-staging-build 
-          ls -la
-
       - name: Change homepage in package.json
-        run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
+        run: |
+          cd content-staging-build
+          sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
 
       - name: Cache node modules
         uses: actions/cache@v2
