@@ -11,7 +11,8 @@ jobs:
     - name: Checkout OATutor repository
       uses: actions/checkout@v2
       with:
-        ref: 'content-staging'  # Checkout the content-staging branch
+        ref: 'content-staging'
+        persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
       run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
