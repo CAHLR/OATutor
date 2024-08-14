@@ -19,6 +19,15 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: 'main'
           path: 'content-staging-build'
+          
+      - name: Save original git author and git email
+        run: |
+          echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
+          echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
+      - name: Get build time
+        run: echo "build_timestamp=$(date +%s%3N)" >> $GITHUB_ENV
+
+      - uses: actions/setup-node@v2.4.1
 
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
