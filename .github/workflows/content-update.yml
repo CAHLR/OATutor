@@ -1,0 +1,69 @@
+name: Automated Content Update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout OATutor repository
+      uses: actions/checkout@v2
+      with:
+        ref: 'content-staging'  # Checkout the content-staging branch
+
+    - name: Clone OATutor-Tooling repository
+      run: git clone https://github.com/CAHLR/OATutor-Tooling.git
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Use your required Python version
+
+    - name: Install Python dependencies (ignore failures)
+      run: |
+        cd OATutor-Tooling/content_script
+        pip install -r requirements.txt || true  # Ignore if installation fails
+
+    - name: Create credentials JSON file
+      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" > OATutor-Tooling/oatutor-askoski-f122840466c4.json
+
+    - name: Set environment variable for spreadsheet key
+      run: echo "SPREADSHEET_KEY=${{ secrets.SPREADSHEET_KEY }}" >> $GITHUB_ENV
+
+    - name: Remove existing content
+      run: rm -rf /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/*
+
+    - name: Create Content Directory
+      run: mkdir -p /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
+
+    - name: Run content update script
+      run: |
+        python3 /home/runner/work/OATutor-Tooling/OATutor-Tooling/content_script/final.py online full
+
+    - name: Move and prepare files
+      run: |
+        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor
+        mv "OpenStax Content" "content-pool"
+        mkdir -p bkt-params
+        mv bktParams.json bkt-params/bktParams1.json
+        cp bkt-params/bktParams1.json bkt-params/bktParams2.json
+
+    - name: Run Node.js preprocessing script
+      run: |
+        cd /home/runner/work/OATutor/OATutor/src/tools
+        node preprocessProblemPool.js
+
+    - name: Configure Git
+      run: |
+        git config user.email "generic@example.com"
+        git config user.name "Generic User"
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Automated content update"
+        git push origin content-staging
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
