@@ -16,15 +16,6 @@ jobs:
     - name: Clone OATutor-Tooling repository
       run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
-    - name: List contents of the root directory
-      run: ls -la /home/runner/work/
-
-    - name: List contents of OATutor directory
-      run: ls -la /home/runner/work/OATutor/OATutor
-
-    - name: List contents of OATutor-Tooling directory
-      run: ls -la /home/runner/work/OATutor-Tooling
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -32,7 +23,7 @@ jobs:
 
     - name: Install Python dependencies (ignore failures)
       run: |
-        cd OATutor-Tooling/content_script
+        cd /home/runner/work/OATutor-Tooling/content_script
         pip install -r requirements.txt || true  # Ignore if installation fails
 
     - name: Create credentials JSON file
