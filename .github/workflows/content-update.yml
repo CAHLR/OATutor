@@ -79,7 +79,11 @@ jobs:
     - name: Commit and push changes
       run: |
         git add .
-        git commit -m "Automated content update"
-        git push origin content-staging
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m "Automated content update"
+          git push origin content-staging
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
