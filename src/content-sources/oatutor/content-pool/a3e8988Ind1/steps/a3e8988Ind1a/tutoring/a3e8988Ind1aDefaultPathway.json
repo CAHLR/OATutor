@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3e8988Ind1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Given Probabilities",
+        "text": "When we see the notation P(D|C), this is essentially asking us \"What is the probability that D happens, given that C already happened?\".",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3e8988Ind1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e8988Ind1a-h1"
+        ],
+        "title": "Given Probabilities",
+        "text": "We can find P(D|C) through this formula: P(D|C) $$=$$ P(D and C)/P(C).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3e8988Ind1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3$$"
+        ],
+        "dependencies": [
+            "a3e8988Ind1a-h2"
+        ],
+        "title": "Answer",
+        "text": "Knowing the formula of the final equation, what will our answer be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a04e066SubAdd1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Addition Property of Equality",
+        "text": "When you add the same quantity to both sides of an equation, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a04e066SubAdd1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a04e066SubAdd1a-h1"
+        ],
+        "title": "Addition",
+        "text": "Add $$0.63$$ to each side of the equation to get $$n-0.63+0.63=-4.2+0.63$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a04e066SubAdd1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a04e066SubAdd1a-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the equation to get $$n=-3.57$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a04e066SubAdd1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a04e066SubAdd1a-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a04e066SubAdd1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a04e066SubAdd1a-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$-3.57-0.63$$ equals $$-4.2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]
