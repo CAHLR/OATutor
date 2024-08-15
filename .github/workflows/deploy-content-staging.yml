@@ -3,11 +3,9 @@ name: Content Staging CI
 on:
   push:
     branches: [ content-staging ]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Automated Content Update"]
-    types:
-      - completed
 
 jobs:
   buildAndDeploy:
@@ -16,23 +14,31 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          ref: 'main'
-          path: 'content-staging-build'
-          
+          persist-credentials: false
+
+      - name: Add SSH private keys for submodule repositories
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: |
+            ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
+
+      - run: git submodule update --init --recursive
+
       - name: Save original git author and git email
         run: |
           echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
           echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
+
       - name: Get build time
         run: echo "build_timestamp=$(date +%s%3N)" >> $GITHUB_ENV
 
       - uses: actions/setup-node@v2.4.1
 
       - name: Change homepage in package.json
-        run: |
-          cd content-staging-build
-          sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
+        run: sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
+
+#      - name: Do not log data
+#        run: sed -i 's/DO_LOG_DATA = true/DO_LOG_DATA = false/g' src/config/config.js
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -48,19 +54,10 @@ jobs:
                 ${{ runner.os }}-
 
       - name: Run CI install
-        run: |
-          cd content-staging-build
-          npm ci
-
-      - name: Run Node.js preprocessing script
-        run: |
-          cd content-staging-build/src/tools
-          node preprocessProblemPool.js
+        run: npm ci
 
       - name: Run build
-        run: |
-          cd content-staging-build
-          npm run build
+        run: npm run build
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           CI: false
@@ -87,6 +84,4 @@ jobs:
           git config --local user.name "${{ env.git_name }}"
           git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
           git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/CAHLR/OATutor-Content-Staging.git main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GITHUB_TOKEN for authentication
+          git push
