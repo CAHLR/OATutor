@@ -12,10 +12,11 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: 'content-staging'
+        path: 'content-staging-build'
         persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
+      run: git clone https://github.com/CAHLR/OATutor-Tooling.git content-staging-build/OATutor-Tooling
 
     - name: Install distutils and build tools
       run: |
@@ -30,28 +31,28 @@ jobs:
     - name: Upgrade pip and install Python dependencies
       run: |
         pip install --upgrade pip
-        pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
+        pip install --prefer-binary -r content-staging-build/OATutor-Tooling/content_script/requirements.txt
 
     - name: Create credentials JSON file
-      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > oatutor-askoski-705644bfdf34.json
+      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > content-staging-build/oatutor-askoski-705644bfdf34.json
 
     - name: Set environment variable for spreadsheet key
       run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
     - name: Remove existing content
-      run: rm -rf /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/*
+      run: rm -rf content-staging-build/src/content-sources/oatutor/*
 
     - name: Create Content Directory
-      run: mkdir -p /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
+      run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
 
     - name: Run content update script
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
-        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+        cd content-staging-build/src/content-sources/oatutor/Content
+        python3 ../../../OATutor-Tooling/content_script/final.py online full
 
     - name: Move and prepare files
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor
+        cd content-staging-build/src/content-sources/oatutor
         mv "OpenStax Content" "content-pool"
         mkdir -p bkt-params
         mv bktParams.json bkt-params/bktParams1.json
@@ -59,22 +60,23 @@ jobs:
 
     - name: Run Node.js preprocessing script
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/tools
+        cd content-staging-build/src/tools
         node preprocessProblemPool.js
 
     - name: Configure Git
       run: |
+        cd content-staging-build
         git config user.email "generic@example.com"
         git config user.name "Generic User"
 
     - name: Commit and push changes
       run: |
+        cd content-staging-build
         git add .
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
         else
           git commit -m "Automated content update"
           git push origin content-staging
-        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
