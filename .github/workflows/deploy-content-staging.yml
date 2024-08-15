@@ -66,11 +66,10 @@ jobs:
           REACT_APP_COMMIT_HASH: ${{ github.sha }}
           REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: 'CAHLR/OATutor-Content-Staging'
-          ssh-key: ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
-          ref: 'main'
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: 'content-staging-build'
 
       - name: Push
@@ -85,3 +84,5 @@ jobs:
           git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
           git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
