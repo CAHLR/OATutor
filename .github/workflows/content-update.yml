@@ -81,6 +81,11 @@ jobs:
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
+        
+    - name: Save original git author and git email
+      run: |
+        echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
+        echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
     
     - name: Run CI install
       run: |
