@@ -52,6 +52,11 @@ jobs:
           cd content-staging-build
           npm ci
 
+      - name: Run Node.js preprocessing script
+        run: |
+          cd content-staging-build/src/tools
+          node preprocessProblemPool.js
+
       - name: Run build
         run: |
           cd content-staging-build
