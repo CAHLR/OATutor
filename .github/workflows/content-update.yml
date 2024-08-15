@@ -58,6 +58,11 @@ jobs:
         mv bktParams.json bkt-params/bktParams1.json
         cp bkt-params/bktParams1.json bkt-params/bktParams2.json
 
+    - name: Run CI install
+      run: |
+          cd content-staging-build
+          npm ci
+          
     - name: Run Node.js preprocessing script
       run: |
         cd content-staging-build/src/tools
