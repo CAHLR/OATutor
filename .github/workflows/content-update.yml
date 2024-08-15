@@ -78,5 +78,6 @@ jobs:
         else
           git commit -m "Automated content update"
           git push origin content-staging
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
