@@ -80,7 +80,7 @@ jobs:
           git push origin content-staging
         fi
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
     
     - name: Run CI install
       run: |
@@ -99,14 +99,15 @@ jobs:
         REACT_APP_COMMIT_HASH: ${{ github.sha }}
         REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
 
-    - uses: actions/checkout@v2
+    - name: Checkout Content Staging
+      uses: actions/checkout@v3
       with:
-        repository: 'CAHLR/OATutor-Content-Staging'
-        ssh-key: ${{ secrets.CONTENT_STAGING_SSH_PRIVATE_KEY }}
-        ref: 'main'
-        path: 'content-staging-build'
+          repository: 'CAHLR/OATutor-Content-Staging'
+          ref: 'main'
+          token: ${{ secrets.CONTENT_STAGING_PAT }}
+          path: 'content-staging-build'
 
-    - name: Push
+    - name: Push changes
       run: |
           cd content-staging-build
           git rm -rf .
@@ -115,6 +116,11 @@ jobs:
           git add .
           git config --local user.email "${{ env.git_email }}"
           git config --local user.name "${{ env.git_name }}"
+          git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
+          git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
+          git push
+      env:
+          GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
           git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
           git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
           git push
