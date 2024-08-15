@@ -83,7 +83,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Run CI install
-      run: npm ci
+      run: |
+        cd content-staging-build
+        npm ci
 
     - name: Run build
       run: npm run build
