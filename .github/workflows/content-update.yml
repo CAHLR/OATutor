@@ -15,7 +15,7 @@ jobs:
         persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
+      run: git clone https://github.com/CAHLR/OATutor-Tooling.git OATutor-Tooling
 
     - name: Install distutils and build tools
       run: |
@@ -30,7 +30,7 @@ jobs:
     - name: Upgrade pip and install Python dependencies
       run: |
         pip install --upgrade pip
-        pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
+        pip install --prefer-binary -r OATutor-Tooling/content_script/requirements.txt
 
     - name: Create credentials JSON file
       run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > oatutor-askoski-705644bfdf34.json
@@ -39,19 +39,19 @@ jobs:
       run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
     - name: Remove existing content
-      run: rm -rf /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/*
+      run: rm -rf OATutor/src/content-sources/oatutor/*
 
     - name: Create Content Directory
-      run: mkdir -p /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
+      run: mkdir -p OATutor/src/content-sources/oatutor/Content
 
     - name: Run content update script
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor/Content
-        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+        cd OATutor/src/content-sources/oatutor/Content
+        python3 ../../../OATutor-Tooling/content_script/final.py online full
 
     - name: Move and prepare files
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/content-sources/oatutor
+        cd OATutor/src/content-sources/oatutor
         mv "OpenStax Content" "content-pool"
         mkdir -p bkt-params
         mv bktParams.json bkt-params/bktParams1.json
@@ -59,7 +59,7 @@ jobs:
 
     - name: Run Node.js preprocessing script
       run: |
-        cd /home/runner/work/OATutor/OATutor/src/tools
+        cd OATutor/src/tools
         node preprocessProblemPool.js
 
     - name: Configure Git
@@ -75,6 +75,5 @@ jobs:
         else
           git commit -m "Automated content update"
           git push origin content-staging
-        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
