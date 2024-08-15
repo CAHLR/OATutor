@@ -81,6 +81,11 @@ jobs:
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
+
+    - name: Change homepage in package.json
+      run: |
+        cd content-staging-build
+        sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
     
     - name: Run CI install
       run: |
