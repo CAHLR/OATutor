@@ -22,7 +22,6 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y python3-distutils build-essential meson ninja-build python3-dev
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -32,7 +31,6 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
-
     - name: Create credentials JSON file
       run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > /home/runner/work/oatutor-askoski-705644bfdf34.json
 
@@ -49,7 +47,6 @@ jobs:
       run: |
         cd content-staging-build/src/content-sources/oatutor/Content
         python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
-
     - name: Move and prepare files
       run: |
         cd content-staging-build/src/content-sources/oatutor
@@ -57,23 +54,15 @@ jobs:
         mkdir -p bkt-params
         mv bktParams.json bkt-params/bktParams1.json
         cp bkt-params/bktParams1.json bkt-params/bktParams2.json
-
-    - name: Run CI install
-      run: |
-          cd content-staging-build
-          npm ci
-          
     - name: Run Node.js preprocessing script
       run: |
         cd content-staging-build/src/tools
         node preprocessProblemPool.js
-
     - name: Configure Git
       run: |
         cd content-staging-build
         git config user.email "generic@example.com"
         git config user.name "Generic User"
-
     - name: Commit and push changes
       run: |
         cd content-staging-build
