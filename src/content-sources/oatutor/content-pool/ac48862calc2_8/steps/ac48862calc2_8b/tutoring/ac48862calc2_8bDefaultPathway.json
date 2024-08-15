@@ -1,0 +1,47 @@
+[
+    {
+        "id": "ac48862calc2_8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Secant Line Slope",
+        "text": "The secant to the function f(x) through the points (a, f(a)) and (x, f(x)) is the line passing through these points. Its slope is given by: $$m_{sec}=\\frac{f{\\left(x\\right)}-f{\\left(a\\right)}}{x-a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac48862calc2_8b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.001$$"
+        ],
+        "dependencies": [
+            "ac48862calc2_8b-h1"
+        ],
+        "title": "Finding the Slope",
+        "text": "Given the equation to the secant line slope, what is the slope?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2.1$$",
+            "$$2.01$$",
+            "$$2$$",
+            "$$2.001$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac48862calc2_8b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Finding the Slope",
+                "text": "$$\\frac{2.002001-2}{1.001-1}=2.001$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

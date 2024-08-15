@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aaeca35implicit18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Use implicit differentiation to find $$\\frac{dy}{dx}$$. Differentiate both sides of the equation, then simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x \\left({\\left(x+y\\right)}^2+1\\right)-1$$"
+        ],
+        "dependencies": [
+            "aaeca35implicit18a-h1"
+        ],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2x \\left({\\left(x+y\\right)}^2+1\\right)-1$$",
+            "$$y {\\left(x+y\\right)}^2$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit18a-h2"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Plug $$(0,\\frac{1}{2})$$ into the $$\\frac{dy}{dx}$$ equation for the slope. Then substitute into the point-slope equation of the line to obtain the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
