@@ -107,6 +107,12 @@ jobs:
         token: ${{ secrets.CONTENT_STAGING_PAT }}
         path: 'content-staging-build'
 
+    - name: List files in root directory
+      run: ls -la
+
+    - name: List files in content-staging-build directory before build
+      run: ls -la content-staging-build
+
     - name: Push changes
       run: |
         cd content-staging-build
