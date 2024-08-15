@@ -16,7 +16,7 @@ jobs:
         persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git content-staging-build/OATutor-Tooling
+      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
     - name: Install distutils and build tools
       run: |
@@ -31,7 +31,7 @@ jobs:
     - name: Upgrade pip and install Python dependencies
       run: |
         pip install --upgrade pip
-        pip install --prefer-binary -r content-staging-build/OATutor-Tooling/content_script/requirements.txt
+        pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
 
     - name: Create credentials JSON file
       run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > content-staging-build/oatutor-askoski-705644bfdf34.json
@@ -48,7 +48,7 @@ jobs:
     - name: Run content update script
       run: |
         cd content-staging-build/src/content-sources/oatutor/Content
-        python3 /home/runner/work/content-staging-build/OATutor-Tooling/content_script/final.py online full
+        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
 
     - name: Move and prepare files
       run: |
