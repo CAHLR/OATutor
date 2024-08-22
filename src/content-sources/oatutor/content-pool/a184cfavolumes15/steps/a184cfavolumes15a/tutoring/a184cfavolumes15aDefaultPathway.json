@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a184cfavolumes15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define the region",
+        "text": "According to the problem note, the region is under the line of $$y=5x^3$$ over the interval [0,1] on x-axis",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfavolumes15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a184cfavolumes15a-h1"
+        ],
+        "title": "Find the volume",
+        "text": "Using the shell, $$V=\\int_{0}^{1} 2\\pi x 5x^3 \\,dx=2*pi*\\int_{0}^{1} 5x^4 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a184cfavolumes15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a184cfavolumes15a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "So we need to solve $$2\\pi$$ times $$\\frac{5x^5}{5}$$ with limits from $$0$$ to $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a690481linear17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Approximation Function",
+        "text": "Use the following equation $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$ to make a linear approximation, where f(a) is the function and f'(a) is the derivative of the function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear17a-h1"
+        ],
+        "title": "Plugging Into the Formula",
+        "text": "Since we are looking for the linear approximation at a $$=$$ $$0$$, we know that the formula is given by L(x) $$=$$ f(0) + f'(0)(x - 0).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear17a-h2"
+        ],
+        "title": "Solving for f(a) and f'(a)",
+        "text": "Now, we must determine the values of f(a) and f'(a) to find L(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear17a-h3"
+        ],
+        "title": "Determining f(a)",
+        "text": "Given that a $$=$$ $$0$$, what is f(a)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear17a-h4"
+        ],
+        "title": "Plugging Into $$f{\\left(\\frac{\\pi}{2}\\right)}$$",
+        "text": "f(x) $$=$$ $${sin}^2 x$$ such that f(0) $$=$$ $${sin}^{2\\left(0\\right)}$$. What is $${sin}^{2\\left(0\\right)}$$? Use the graph to guide your answer, where $$x$$ $$=$$ cos(x) and $$y$$ $$=$$ sin(x). Remember that $${sin}^2 x$$ $$=$$ $$sin\\left(x\\right) sin\\left(x\\right)$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear17a-h5"
+        ],
+        "title": "Taking the Derivative of f(x) to Get f'(x)",
+        "text": "The next step is finding f'(x) by taking the derivative of f(x) $$=$$ $${sin}^2 x$$. By using the chain rule $$F'(x)=f'(g(x))(g'(x))$$, we first take the derivative of the outer function such that $$\\frac{d}{dx} u^2$$ $$=$$ 2u. Next, we take the derivative of the inner function where $$\\frac{d}{dx} \\operatorname{sinx}\\left(x\\right)$$ $$=$$ cos(x). Lastly, we combine the two steps through multiplication to get $$\\frac{d}{dx} {sin}^2 x$$ $$=$$ f'(x) $$=$$ $$2u cos\\left(x\\right)$$ $$=$$ 2sin(x)cos(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear17a-h6"
+        ],
+        "title": "Determining f'(a)",
+        "text": "Given that f'(a) $$=$$ 2sin(x)cos(x), what is f'(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a690481linear17a-h7"
+        ],
+        "title": "Solving for f'(0)",
+        "text": "f'(0) $$=$$ $$2sin\\left(0\\right) cos\\left(0\\right)$$ $$=$$ $$2\\times0\\times1$$. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear17a-h8"
+        ],
+        "title": "Putting it Together",
+        "text": "Now that we have found the values of f(0) and f'(0), plug them into $$L(x)=f{\\left(a\\right)}+\\operatorname{f'}\\left(a\\right) \\left(x-a\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear17a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear17a-h9"
+        ],
+        "title": "Final Answer",
+        "text": "$$L(x)=0+0\\left(x-0\\right)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a7660caapproximating10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Properties of Sigma Notation",
+        "text": "We firstly separate $$2$$ terms In the sum then use the Properties of Sigma Notation to calculate them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating10a-h1"
+        ],
+        "title": "Properties of Sigma Notation",
+        "text": "We can rewrite the sum as sum{j\\=1}{50}{j**2)}-2*sum{j\\=1}{50}{j}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$42925$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating10a-h2"
+        ],
+        "title": "Evaluate the sum",
+        "text": "What is the answer for the term sum{j\\=1}{50}{j**2)} ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating10a-h3"
+        ],
+        "title": "Evaluate the sum",
+        "text": "Using Sums and Powers of Integers to obtain $$\\frac{50\\times51\\times101}{6}=42925$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2550$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating10a-h4"
+        ],
+        "title": "Evaluate the sum",
+        "text": "What is the answer for th term 2*sum{j\\=1}{50}{j} ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating10a-h5"
+        ],
+        "title": "Evaluate the sum",
+        "text": "Using Sums and Powers of Integers to obtain $$\\frac{50\\times51\\times2}{2}=2550$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating10a-h6"
+        ],
+        "title": "Evaluate the sum",
+        "text": "$$42925-2550=40375$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

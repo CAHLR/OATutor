@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a046eedintegrals13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "U-substitution",
+        "text": "Set $$u=2x$$ then $$du=2dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals13a-h1"
+        ],
+        "title": "Rewrite the integral in term of u",
+        "text": "$$\\int e^u \\,du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals13a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$e^u+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals13a-h3"
+        ],
+        "title": "Back-subsitute",
+        "text": "$$e^{2x}+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ab0d3bdfluid2a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$83.33$$"
+        ],
+        "dependencies": [],
+        "title": "Convert to $$\\frac{{cm}^3}{s}$$",
+        "text": "Calculate the flow rate of blood in $$\\frac{{cm}^3}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab0d3bdfluid2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab0d3bdfluid2a-h1"
+        ],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for flow rate to find the speed of blood.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab0d3bdfluid2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab0d3bdfluid2a-h2"
+        ],
+        "title": "Units",
+        "text": "$$1$$ L $$=$$ $$1000$$ $${cm}^3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab0d3bdfluid2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab0d3bdfluid2a-h3"
+        ],
+        "title": "Flow Rate Formula",
+        "text": "Flow Rate $$=$$ Speed * Cross-Sectional Area.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

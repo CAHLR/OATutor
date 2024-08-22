@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a7aa4d9friction8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Friction Formula",
+        "text": "Recall the friction formula: f $$=$$ mu * N.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9friction8a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Coefficient of Friction",
+        "text": "Recall the coefficient of static friction between steel and ice is $$0.04$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9friction8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$637$$"
+        ],
+        "dependencies": [
+            "a7aa4d9friction8a-h1"
+        ],
+        "title": "Normal Force",
+        "text": "What is the normal force of the ice skater (in Newtons)? (65kg * $$9.8$$ m/s**2)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9friction8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25.48$$"
+        ],
+        "dependencies": [
+            "a7aa4d9friction8a-h2",
+            "a7aa4d9friction8a-h3"
+        ],
+        "title": "Solve for f",
+        "text": "Using the N we just calculated and our mu, solve for f (in Newtons).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9friction8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7aa4d9friction8a-h4"
+        ],
+        "title": "Acceleration",
+        "text": "Use f $$=$$ ma to find the acceleration.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7aa4d9friction8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.39$$"
+        ],
+        "dependencies": [
+            "a7aa4d9friction8a-h5"
+        ],
+        "title": "Acceleration",
+        "text": "Solve for a (in $$\\frac{m}{s^2}$$, rounded to $$2$$ decimal places): $$25.48$$ $$=$$ $$65a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

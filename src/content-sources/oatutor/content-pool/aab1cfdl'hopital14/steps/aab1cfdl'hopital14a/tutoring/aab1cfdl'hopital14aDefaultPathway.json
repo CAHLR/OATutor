@@ -1,0 +1,178 @@
+[
+    {
+        "id": "aab1cfdl'hopital14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing the Growth Rates",
+        "text": "In order to determine which function grows more quickly than the other as $$x$$ approaches $$infinty$$, we can choose to set up ONE of these two limits $$\\lim_{x\\to\\infty} \\frac{f{\\left(x\\right)}}{g{\\left(x\\right)}}$$ or $$\\lim_{x\\to\\infty} \\frac{g{\\left(x\\right)}}{f{\\left(x\\right)}}$$. If evaluating the limits results in $$0$$, the function in the denominator is greater and grows faster than the function on the numerator. If evaluating the limits results in $$\\infty$$, the function in the numerator is is greater and grows fastethan the function on the denominator. In this case, let's use $$\\lim_{x\\to\\infty} \\frac{f{\\left(x\\right)}}{g{\\left(x\\right)}}=\\lim_{x\\to\\infty} \\frac{x^2}{e^x}$$ .",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h1"
+        ],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h2"
+        ],
+        "title": "Substitute the limit",
+        "text": "$$\\frac{{\\infty}^2}{e^{\\infty}}=\\frac{\\infty}{\\infty}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h3"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} x^2}{\\frac{d}{dx} e^x}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{e^x}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital14a-h4"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{e^x}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{{xe}^{x-1}}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{x e}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{e}$$"
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h5"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\frac{2\\infty}{e^{\\infty}}=\\frac{\\infty}{\\infty}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h6"
+        ],
+        "title": "Indeterminate forms in answers",
+        "text": "If the result is still in an indeterminate form after we apply L\u2019H\u00f4pital\u2019s Rule and evaluate the limit, we repeat the process.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h7"
+        ],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h8"
+        ],
+        "title": "Substitute the limit",
+        "text": "$$\\frac{2\\infty}{e^{\\infty}}=\\frac{\\infty}{\\infty}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h10",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h9"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} 2x}{\\frac{d}{dx} e^x}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to\\infty} \\frac{2}{e^x}$$"
+        ],
+        "dependencies": [
+            "aab1cfdl'hopital14a-h10"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to\\infty} \\frac{2x}{e^x}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2}{{xe}^{x-1}}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2}{x e}$$",
+            "$$\\lim_{x\\to\\infty} \\frac{2}{e^x}$$"
+        ]
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h12",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h11"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$\\frac{2}{e^{\\infty}}=\\frac{2}{\\infty}=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aab1cfdl'hopital14a-h13",
+        "type": "hint",
+        "dependencies": [
+            "aab1cfdl'hopital14a-h12"
+        ],
+        "title": "Conclusion",
+        "text": "As the result is $$\\infty$$, we can conclude that the function in the denominator which is $$e^x$$ is greater and grows faster.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
