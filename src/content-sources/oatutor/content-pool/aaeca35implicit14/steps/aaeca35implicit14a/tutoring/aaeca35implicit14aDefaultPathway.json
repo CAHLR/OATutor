@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aaeca35implicit14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "First, use implicit differentiation to find $$\\frac{dy}{dx}$$. Differentiate both sides of the equation, then simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit14a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-x-y\\right)}{x-3y}$$"
+        ],
+        "dependencies": [
+            "aaeca35implicit14a-h1"
+        ],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{x-2y+1}{x^2}$$",
+            "$$\\frac{\\left(-x-y\\right)}{x-3y}$$",
+            "$$\\frac{x+y}{3y}$$",
+            "$$\\frac{3xy}{2+x}$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit14a-h2"
+        ],
+        "title": "Finding the Slope",
+        "text": "To find the slope, plug $$(1,1)$$ into $$\\frac{dy}{dx}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit14a-h3"
+        ],
+        "title": "Point-Slope Form",
+        "text": "Substitute into the point-slope equation of the line to obtain the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

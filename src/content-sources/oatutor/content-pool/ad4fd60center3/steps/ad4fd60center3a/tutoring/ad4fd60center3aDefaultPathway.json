@@ -1,0 +1,135 @@
+[
+    {
+        "id": "ad4fd60center3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the total mass of the system.",
+        "text": "Add the mass values together, the sum is written as such: m=sum{i\\=1}{3}{m_i}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad4fd60center3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "ad4fd60center3a-h1"
+        ],
+        "title": "Find the total mass.",
+        "text": "What is the value of the total mass (m)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad4fd60center3a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find the total mass.",
+                "text": "$$2+6+4=12kg$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad4fd60center3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad4fd60center3a-h2"
+        ],
+        "title": "Find the moments with respect to the $$x-$$ and $$y-axes$$.",
+        "text": "Find both M_y=sum{i\\=1}{3}{m_i*x_i} and M_x=sum{i\\=1}{3}{m_i*y_i}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad4fd60center3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "ad4fd60center3a-h3"
+        ],
+        "title": "Find the moment with respect to the x-axis.",
+        "text": "What is the value of $$M_y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad4fd60center3a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find the moment with respect to the x-axis.",
+                "text": "$$-2+6+8=12$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad4fd60center3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ad4fd60center3a-h4"
+        ],
+        "title": "Find the moment with respect to the y-axis.",
+        "text": "What is the value of $$M_x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad4fd60center3a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find the moment with respect to the y-axis.",
+                "text": "$$6+6-8=4$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad4fd60center3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad4fd60center3a-h5"
+        ],
+        "title": "Find the center of mass x\u0304 and \u0233.",
+        "text": "Then we have $$x\u0304=\\frac{M_y}{m}=\\frac{12}{12}=1$$ and $$\u0233=\\frac{M_x}{m}=\\frac{4}{12}=\\frac{1}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad4fd60center3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad4fd60center3a-h6"
+        ],
+        "title": "How to write and interpret the result.",
+        "text": "The center of mass of the system is $$(1,\\frac{1}{3})$$, in meters.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

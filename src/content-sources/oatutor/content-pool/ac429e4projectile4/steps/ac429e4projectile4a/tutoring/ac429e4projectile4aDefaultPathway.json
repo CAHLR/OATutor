@@ -1,0 +1,121 @@
+[
+    {
+        "id": "ac429e4projectile4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Best angle",
+        "text": "Recall that the angle which gives the farthest distance is $$45$$ degrees.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac429e4projectile4a-h1"
+        ],
+        "title": "Y-Component",
+        "text": "Use an appropriate trigonometric function to fine the $$y-component$$ of velocity.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21.2$$"
+        ],
+        "dependencies": [
+            "ac429e4projectile4a-h2"
+        ],
+        "title": "Y-Component",
+        "text": "What is $$30sin\\left(45\\right)$$ (Rounded to $$1$$ decimal place)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac429e4projectile4a-h3"
+        ],
+        "title": "Time",
+        "text": "Use $$y=y0+vt+\\frac{1}{2} a t^2$$ to find the time.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac429e4projectile4a-h4"
+        ],
+        "title": "Time",
+        "text": "Solve for t: $$0=0+21.2t+\\frac{1}{2} \\left(-9.8\\right) t^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac429e4projectile4a-h5"
+        ],
+        "title": "X-Component",
+        "text": "Plug in the time and $$x-component$$ of velocity into $$x=x0+vt$$ to get $$x$$, the maximum range.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac429e4projectile4a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$92$$ $$m$$"
+        ],
+        "dependencies": [
+            "ac429e4projectile4a-h6"
+        ],
+        "title": "X-Component",
+        "text": "What is the approximate maximum distance the goalie can kick the ball?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$105$$ $$m$$",
+            "$$83$$ $$m$$",
+            "$$92$$ $$m$$",
+            "$$54$$ $$m$$"
+        ]
+    },
+    {
+        "id": "ac429e4projectile4a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ac429e4projectile4a-h7"
+        ],
+        "title": "Final answer",
+        "text": "Is this enough for the goalie to kick the ball into the opposing goal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

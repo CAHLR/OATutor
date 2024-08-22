@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aaeca35implicit4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation. On the left, use the sum rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit4a-h1"
+        ],
+        "title": "Derivative Rules",
+        "text": "Use the product rule and the chain rule. The product rule is: $$\\frac{d\\left(uv\\right)}{dx}=u\\left(\\frac{dv}{dx}\\right)+v\\left(\\frac{du}{dx}\\right)$$. The chain rule is: $$[f(g(x))]'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit4a-h2"
+        ],
+        "title": "Differentiating a Term",
+        "text": "To differentiate cos(xy), use the Chain Rule and then the product rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-sin\\left(xy\\right) \\left(y+x\\left(\\frac{dy}{dx}\\right)\\right)$$"
+        ],
+        "dependencies": [
+            "aaeca35implicit4a-h3"
+        ],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left(cos\\left(xy\\right)\\right)}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-sin(xy)$$",
+            "$$-sin\\left(xy\\right) \\left(y+x\\left(\\frac{dy}{dx}\\right)\\right)$$",
+            "$$cos\\left(y+x\\left(\\frac{dy}{dx}\\right)\\right)$$",
+            "$$cos\\left(x\\right) \\left(y+x\\left(\\frac{dy}{dx}\\right)\\right)$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit4a-h4"
+        ],
+        "title": "Simplifying",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a82ea5csubstitution19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Let $$u=1+x^2$$, so $$du=2xdx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution19a-h1"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "To adjust the limits of integration, we note that when $$x=0$$, $$u=1+0^2$$, and when $$x=1$$, $$u=1+1^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2*\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution19a-h2"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "What is the result of adjusting the limits of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1/2*\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$1/2*\\int_{2}^{1} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int_{2}^{1} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution19a-h3"
+        ],
+        "title": "Evaluate the Definite Integral",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

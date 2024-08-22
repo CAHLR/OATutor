@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5a59aeapproximation3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Conversion to Seconds",
+        "text": "Assume human lifetime of $$70$$ years. Determine the conversion factors to convert this to seconds.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aeapproximation3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2{10}^9$$"
+        ],
+        "dependencies": [
+            "a5a59aeapproximation3a-h1"
+        ],
+        "title": "Conversion to Seconds",
+        "text": "What is $$60$$ $$\\frac{sec}{min}$$ * $$60$$ $$\\frac{min}{hr}$$ * $$24$$ $$\\frac{hr}{day}$$ * $$365$$ $$\\frac{days}{year}$$ * $$70$$ $$\\frac{years}{life}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2{10}^4$$",
+            "$$2{10}^9$$",
+            "$$2{10}^{15}$$",
+            "$$2{10}^{20}$$"
+        ]
+    },
+    {
+        "id": "a5a59aeapproximation3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5a59aeapproximation3a-h2"
+        ],
+        "title": "Divide",
+        "text": "Divide the number of seconds in a human lifetime by the number of seconds in an unstable nucleus lifetime.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5a59aeapproximation3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2{10}^{31}$$"
+        ],
+        "dependencies": [
+            "a5a59aeapproximation3a-h3"
+        ],
+        "title": "Divide",
+        "text": "What is $$2{10}^9$$ / $${10}^{-22}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2{10}^{-13}$$",
+            "$$2{10}^{11}$$",
+            "$$2{10}^{31}$$",
+            "$$2{10}^{20}$$"
+        ]
+    }
+]
