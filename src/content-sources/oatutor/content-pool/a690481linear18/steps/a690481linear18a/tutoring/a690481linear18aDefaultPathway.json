@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a690481linear18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Obtaining dy",
+        "text": "In order to determine dy, we must take the derivative of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(cosx - xsinx)dx"
+        ],
+        "dependencies": [
+            "a690481linear18a-h1"
+        ],
+        "title": "Solving for y'",
+        "text": "Given that $$y$$ $$=$$ xcosx, what is y'?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear18a-h2"
+        ],
+        "title": "Taking the Derivative",
+        "text": "y' $$=$$ 1(cosx) + $$x(-sinx)$$ $$=$$ cosx - xsinx. Thus, dy $$=$$ (cosx - xsinx)dx.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

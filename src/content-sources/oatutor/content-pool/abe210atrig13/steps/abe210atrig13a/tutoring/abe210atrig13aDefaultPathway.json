@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abe210atrig13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unit Circle $$1$$",
+        "text": "The value inside the parenthesis of the sin refers to an angle which also corresponds to a point on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210atrig13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe210atrig13a-h1"
+        ],
+        "title": "Unit Circle $$2$$",
+        "text": "The angle $$\\frac{\\left(-3\\pi\\right)}{4}$$ corresponds to a revolution in the negative direction, thus we need to add $$2\\pi$$ to get the angle $$\\frac{5\\pi}{4}$$ which corresponds to the point $$(\\left(-\\frac{\\sqrt{2}}{2}\\right),\\left(-\\frac{\\sqrt{2}}{2}\\right))$$ on the unit circle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210atrig13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe210atrig13a-h2"
+        ],
+        "title": "Definition of trigonometric functions",
+        "text": "Letting $$x$$ be an angle, sinx $$=$$ $$y$$, cosx $$=$$ $$x$$, and tanx $$=$$ $$\\frac{y}{x}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe210atrig13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "abe210atrig13a-h3"
+        ],
+        "title": "Combining",
+        "text": "Based on the above information, what is the value of sinx at the angle $$\\frac{\\left(-3\\pi\\right)}{4}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

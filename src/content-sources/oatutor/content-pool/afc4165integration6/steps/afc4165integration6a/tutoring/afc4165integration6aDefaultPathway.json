@@ -1,0 +1,108 @@
+[
+    {
+        "id": "afc4165integration6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Symmetry",
+        "text": "Graph (a) shows the region below the curve and above the x-axis. We have to zoom in to this graph by a huge amount to see the region. Graph (b) shows the region above the curve and below the x-axis. The signed area of this region is negative. Both views illustrate the symmetry about the y-axis of an even function.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "$$\\int_{-2}^{2} 3x-2 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h2"
+        ],
+        "title": "Compute the integral",
+        "text": "$$\\frac{x^9}{3}-2x$$ from $$x=-2$$ to $$x=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h3"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{2^9}{3}-2\\times2-\\frac{{\\left(-2\\right)}^9}{3}-2\\left(-2\\right)=\\frac{1000}{3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h4"
+        ],
+        "title": "Verifying",
+        "text": "To verify the integration formula for even functions, we can calculate the integral from $$0$$ to $$2$$ and double it, then check to make sure we get the same answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h5"
+        ],
+        "title": "Set up the integral",
+        "text": "$$\\int_{0}^{2} 3x-2 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h6"
+        ],
+        "title": "Compute the integral",
+        "text": "$$\\frac{x^9}{3}-2x$$ from $$x=-2$$ to $$x=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h7"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{512}{3}-4=\\frac{500}{3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration6a-h9",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration6a-h8"
+        ],
+        "title": "Conclusion",
+        "text": "Since $$\\frac{2\\times500}{3}=\\frac{1000}{3}$$, we have verified the formula for even functions in this particular example.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

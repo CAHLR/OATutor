@@ -1,0 +1,154 @@
+[
+    {
+        "id": "a690481linear25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Volume of a Cylinder Formula",
+        "text": "The volume of a circular cylinder is given by V $$=$$ $$3\\operatorname{\\pi}\\left(r^2\\right)$$. Find $$\\frac{dV}{dr}$$, the derivative of V.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear25a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6\\pi r$$"
+        ],
+        "dependencies": [
+            "a690481linear25a-h1"
+        ],
+        "title": "Calcuating $$\\frac{dV}{dr}$$",
+        "text": "What is $$\\frac{dV}{dr}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$6\\pi r$$",
+            "$$\\pi r$$"
+        ],
+        "subHints": [
+            {
+                "id": "a690481linear25a-h2-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$6\\pi r$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for the Derivative",
+                "text": "$$\\frac{dV}{dr}=2\\times3 \\pi r^{2-1}$$. What is $$\\frac{dV}{dr}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$6\\pi r$$",
+                    "$$\\pi r$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "a690481linear25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear25a-h2"
+        ],
+        "title": "Differential dV",
+        "text": "Given that $$\\frac{dV}{dr}=6\\pi r$$, we know that the differential dV is given by $$dV=6\\pi r dr$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.1$$"
+        ],
+        "dependencies": [
+            "a690481linear25a-h3"
+        ],
+        "title": "Difference Between $$r$$",
+        "text": "What is the difference between $$r$$ $$=$$ $$2$$ and $$r$$ $$=$$ $$1.9$$ cm? Remember that the change is a decrease in $$r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear25a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Calculating the Difference",
+                "text": "What is $$1.9-2$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear25a-h4"
+        ],
+        "title": "Plugging in the Radius",
+        "text": "Substitute $$r$$ $$=$$ $$2$$ and dr $$=$$ $$-0.1$$ into $$dV=6\\pi r dr$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear25a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1.2\\pi$$"
+        ],
+        "dependencies": [
+            "a690481linear25a-h5"
+        ],
+        "title": "Solving for dV",
+        "text": "What is dV?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-1.2\\pi$$",
+            "$$-1.2\\pi r$$"
+        ],
+        "subHints": [
+            {
+                "id": "a690481linear25a-h6-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$-1.2\\pi$$"
+                ],
+                "dependencies": [],
+                "title": "Final Simplification",
+                "text": "What is $$dV=6\\times2 \\left(-0.1\\right) \\pi$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$-1.2\\pi$$",
+                    "$$-1.2\\pi r$$"
+                ]
+            }
+        ]
+    }
+]

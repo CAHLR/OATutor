@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a046eedintegrals8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting",
+        "text": "This problem requires some rewriting to simplify applying the properties. First, rewrite the exponent on e as a power of $$x$$, then bring the $$x^2$$ in the denominator up to the numerator using a negative exponent.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h1"
+        ],
+        "title": "Rewriting",
+        "text": "We have $$\\int_{1}^{2} \\frac{e^{\\frac{1}{x}}}{x^2} \\,dx=\\int_{1}^{2} e^{x^{\\left(-1\\right)}} x^{\\left(-2\\right)} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h2"
+        ],
+        "title": "Using u-substitution",
+        "text": "Let $$u=x^{\\left(-1\\right)}$$, the exponent on e then $$du=\\left(-x^{\\left(-2\\right)}\\right) dx$$ or $$-du=x^{\\left(-2\\right)} dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h3"
+        ],
+        "title": "Using u-substitution",
+        "text": "Bringing the negative sign outside the integral sign, the problem now reads $$-\\int e^u \\,dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h4"
+        ],
+        "title": "Change the limits",
+        "text": "After setting f(x) to f(u), you need to change the limits of integration because the variable of integration has changed from $$x$$ to u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h5"
+        ],
+        "title": "Change the limits",
+        "text": "With $$u=x^{\\left(-1\\right)}$$, we will have upper and lower limits $$x=1$$ and $$x=\\frac{1}{2}$$ respectively.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h6"
+        ],
+        "title": "Interchange the limits",
+        "text": "Notice that now the limits begin with the larger number, meaning we must multiply by $$-1$$ and interchange the limits.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h7"
+        ],
+        "title": "Find the limit",
+        "text": "$$\\int_{\\frac{1}{2}}^{1} e^u \\,du=e^u$$ with the limit goes from $$u=\\frac{1}{2}$$ to $$u=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a046eedintegrals8a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a046eedintegrals8a-h8"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$e-e^{\\frac{1}{2}}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

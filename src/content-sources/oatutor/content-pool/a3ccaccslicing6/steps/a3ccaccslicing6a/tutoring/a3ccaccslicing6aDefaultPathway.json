@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a3ccaccslicing6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graph of the Function and Solid of Revolution",
+        "text": "The graph of the region and the solid of revolution are shown in the following figure. (a) The region between the graph of the function $$f(x)=4-x$$ and the x-axis over the interval [0,4]. (b) Revolving the region about the line $$y=-2$$ generates a solid of revolution with a cylindrical hole through its middle.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3ccaccslicing6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3ccaccslicing6a-h1"
+        ],
+        "title": "Area of the Cross-Section",
+        "text": "We cannot apply the formula to this problem directly because the axis of revolution is not one of the coordinate axes. However, we still know that the area of the cross-section is the area of the outer circle less the area of the inner circle. Looking at the graph of the function, we see the radius of the outer circle is given by $$f{\\left(x\\right)}+2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3ccaccslicing6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6-x$$"
+        ],
+        "dependencies": [
+            "a3ccaccslicing6a-h2"
+        ],
+        "title": "Area of the Cross-Section",
+        "text": "What is $$f{\\left(x\\right)}+2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$6-x$$",
+            "$$x-6$$"
+        ]
+    },
+    {
+        "id": "a3ccaccslicing6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3ccaccslicing6a-h3"
+        ],
+        "title": "Radius of the Inner Circle",
+        "text": "The radius of the inner circle is $$g(x)=2$$. Therefore, we have $$V=\\int_{0}^{4} \\pi {\\left(6-x\\right)}^2-2^2 \\,dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3ccaccslicing6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{160\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a3ccaccslicing6a-h4"
+        ],
+        "title": "Integrate the Formula",
+        "text": "What is the volume of the solid of revolution?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{160\\pi}{3}$$",
+            "$$\\frac{160\\times3}{\\pi}$$"
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a7bb185deriv11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking down the question",
+        "text": "Find the derivative value and that will be the slope",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-cos(x)$$"
+        ],
+        "dependencies": [
+            "a7bb185deriv11a-h1"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative of $$-sin(x)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "$$-cos(x)$$",
+            "sin(x)"
+        ]
+    },
+    {
+        "id": "a7bb185deriv11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a7bb185deriv11a-h2"
+        ],
+        "title": "Sub-question",
+        "text": "What's the derivative value at $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a7bb185deriv11a-h3"
+        ],
+        "title": "Sub-question",
+        "text": "What's the function value at $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7bb185deriv11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7bb185deriv11a-h4"
+        ],
+        "title": "One fixed point and determined slope determines the line",
+        "text": "We got the line passed the tangent point and we got its slope to be the derivative value, so we can determine the line",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
