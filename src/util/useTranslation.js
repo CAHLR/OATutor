@@ -1,37 +1,24 @@
-import { useState, useEffect } from 'react';
-import { useLocalization } from './LocalizationContext';
-import { LOCALES_URL } from '../config/config';
+import { useState, useEffect } from "react";
+import { useLocalization } from "./LocalizationContext";
 
 export const useTranslation = () => {
-  const { language } = useLocalization();
-  const [translations, setTranslations] = useState({});
+    const { language } = useLocalization();
+    const [translations, setTranslations] = useState({});
 
-  useEffect(() => {
-    const loadTranslations = async (lang) => {
-      try {
-        const response = await fetch(`${LOCALES_URL}/fetch-locale/?locale=${lang}`);
-        if (!response.ok) {
-          throw new Error(`Could not fetch ${lang}.json`);
+    useEffect(() => {
+        const loadTranslations = async (lang) => {
+            const module = await import(`../locales/${lang}.json`);
+            setTranslations(module.default || module);
+        };
+
+        if (["en", "es", "se"].includes(language)) {
+            loadTranslations(language);
         }
-        const data = await response.json();
-        if (data.error) {
-          throw new Error(data.error);
-        }
-        setTranslations(data);
-        console.log("Translations for " + lang + " loaded successfully");
-      } catch (error) {
-        console.error(`Could not load ${lang}.json`, error);
-      }
+    }, [language]);
+
+    const translate = (key) => {
+        return key.split(".").reduce((obj, k) => (obj || {})[k], translations);
     };
 
-    if (['en', 'es', 'se'].includes(language)) {
-      loadTranslations(language);
-    }
-  }, [language]);
-
-  const translate = (key) => {
-    return key.split('.').reduce((obj, k) => (obj || {})[k], translations);
-  };
-
-  return translate;
+    return translate;
 };
