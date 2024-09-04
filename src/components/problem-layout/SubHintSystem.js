@@ -9,6 +9,7 @@ import HintTextbox from './HintTextbox.js';
 import { renderText, chooseVariables } from '../../platform-logic/renderText.js';
 import Spacer from "../Spacer";
 import { ThemeContext } from "../../config/config";
+import withTranslation from "../../util/withTranslation.js"
 
 
 class SubHintSystem extends React.Component {
@@ -50,6 +51,7 @@ class SubHintSystem extends React.Component {
     }
 
     render() {
+        const { translate } = this.props;
         const { classes, index, parent, hintVars, problemID, seed } = this.props;
         const { currentExpanded } = this.state;
         const { debug, use_expanded_view } = this.context;
@@ -68,7 +70,7 @@ class SubHintSystem extends React.Component {
                                 id="panel1a-header"
                             >
                                 <Typography className={classes.heading}>
-                                    Hint {i + 1}: {renderText(hint.title, problemID,
+                                {translate('hintsystem.hint') + (i + 1) + ": "} {renderText(hint.title, problemID,
                                     chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)} </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
@@ -106,4 +108,4 @@ const styles = theme => ({
 });
 
 
-export default withStyles(styles)(SubHintSystem);
+export default withStyles(styles)(withTranslation(SubHintSystem));
