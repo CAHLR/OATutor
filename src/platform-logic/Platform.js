@@ -2,7 +2,7 @@ import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Problem from "@components/problem-layout/Problem.js";
-import LessonSelection from "@components/problem-layout/LessonSelection.js";
+import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
 
 import {
@@ -116,6 +116,7 @@ class Platform extends React.Component {
         }
     }
 
+    
     async selectLesson(lesson, updateServer=true) {
         const context = this.context;
         console.debug("lesson: ", context)
@@ -465,7 +466,7 @@ class Platform extends React.Component {
                     </Toolbar>
                 </AppBar>
                 {this.state.status === "courseSelection" ? (
-                    <LessonSelection
+                    <LessonSelectionWrapper
                         selectLesson={this.selectLesson}
                         selectCourse={this.selectCourse}
                         history={this.props.history}
@@ -475,7 +476,7 @@ class Platform extends React.Component {
                     ""
                 )}
                 {this.state.status === "lessonSelection" ? (
-                    <LessonSelection
+                    <LessonSelectionWrapper
                         selectLesson={this.selectLesson}
                         removeProgress={this.props.removeProgress}
                         history={this.props.history}

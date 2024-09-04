@@ -45,3 +45,5 @@ export const LocalizationProvider = ({ children }) => {
 };
 
 export const useLocalization = () => useContext(LocalizationContext);
+
+export const LocalizationConsumer = LocalizationContext.Consumer;
