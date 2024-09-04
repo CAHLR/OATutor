@@ -104,6 +104,7 @@ class Platform extends React.Component {
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
+    
     onComponentUpdate(prevProps, prevState, snapshot) {
         if (
             Boolean(this.state.currProblem?.id) &&
@@ -115,7 +116,6 @@ class Platform extends React.Component {
             this.context.problemID = "n/a";
         }
     }
-
     
     async selectLesson(lesson, updateServer=true) {
         const context = this.context;
