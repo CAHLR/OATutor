@@ -1,20 +1,19 @@
-import { useState, useEffect } from "react";
 import { useLocalization } from "./LocalizationContext";
+
+import translationsEn from "../locales/en.json";
+import translationsEs from "../locales/es.json";
+import translationsSe from "../locales/se.json";
 
 export const useTranslation = () => {
     const { language } = useLocalization();
-    const [translations, setTranslations] = useState({});
 
-    useEffect(() => {
-        const loadTranslations = async (lang) => {
-            const module = await import(`../locales/${lang}.json`);
-            setTranslations(module.default || module);
-        };
+    const translationsMap = {
+        en: translationsEn,
+        es: translationsEs,
+        se: translationsSe,
+    };
 
-        if (["en", "es", "se"].includes(language)) {
-            loadTranslations(language);
-        }
-    }, [language]);
+    const translations = translationsMap[language] || translationsMap['en'];
 
     const translate = (key) => {
         return key.split(".").reduce((obj, k) => (obj || {})[k], translations);

@@ -1,30 +1,30 @@
 import { toast } from "react-toastify";
 import WrongAnswerReasons from "../../util/wrongAnswerReasons";
 
-export function toastNotifyCorrectness(isCorrect, reason) {
+export function toastNotifyCorrectness(isCorrect, reason, translate) {
     if (isCorrect) {
-        toast.success("Correct Answer!", {
+        toast.success(translate("toast.correct"), {
             autoClose: 3000
         })
     } else {
         if (reason === WrongAnswerReasons.wrong) {
-            toast.error("Incorrect Answer!", {
+            toast.error(translate("toast.incorrect"), {
                 autoClose: 3000
             })
         } else if (reason === WrongAnswerReasons.sameAsProblem) {
-            toast.error("Please simplify!", {
+            toast.error(translate("toast.simplify"), {
                 autoClose: 3000
             })
         } else if (reason === WrongAnswerReasons.errored) {
-            toast.error("Our system could not process that answer", {
+            toast.error(translate("toast.cantProcess"), {
                 autoClose: 3000
             })
         }
     }
 }
 
-export function toastNotifyCompletion() {
-    toast.info("Step Completed!", {
+export function toastNotifyCompletion(translate) {
+    toast.info(translate("toast.stepComplete"), {
         autoClose: 3000
     })
 }

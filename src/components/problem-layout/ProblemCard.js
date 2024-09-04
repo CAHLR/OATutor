@@ -41,6 +41,7 @@ class ProblemCard extends React.Component {
     constructor(props, context) {
         super(props);
         // console.log("problem lesson props:", props);
+        this.translate = props.translate
         this.step = props.step;
         this.index = props.index;
         this.giveStuFeedback = props.giveStuFeedback;
@@ -96,8 +97,8 @@ class ProblemCard extends React.Component {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length + 1),
-                title: "Answer",
-                text: "The answer is " + this.step.stepAnswer,
+                title: this.translate('hintsystem.answer'),
+                text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
                 type: "bottomOut",
                 dependencies: Array.from(Array(this.hints.length).keys()),
             });
@@ -114,8 +115,8 @@ class ProblemCard extends React.Component {
                             i +
                             "-s" +
                             (hint.subHints.length + 1),
-                        title: "Answer",
-                        text: "The answer is " + hint.hintAnswer[0],
+                        title: this.translate('hintsystem.answer'),
+                        text: this.translate('hintsystem.answerIs') + hint.hintAnswer[0],
                         type: "bottomOut",
                         dependencies: Array.from(
                             Array(hint.subHints.length).keys()
@@ -248,9 +249,9 @@ class ProblemCard extends React.Component {
         );
 
         if (this.showCorrectness) {
-            toastNotifyCorrectness(isCorrect, reason);
+            toastNotifyCorrectness(isCorrect, reason, this.translate);
         } else {
-            toastNotifyCompletion();
+            toastNotifyCompletion(this.translate);
         }
 
         this.setState({
