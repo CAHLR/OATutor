@@ -23,7 +23,9 @@ class LessonSelection extends React.Component {
         const { courseNum, setLanguage } = this.props;
         const selectionMode = courseNum == null ? "course" : "lesson"
 
-        if (selectionMode == 'lesson' && courseNum == 7) {
+        console.log(courseNum)
+
+        if (selectionMode == 'lesson' && courseNum == 6) {
             setLanguage('se')
         }
 
