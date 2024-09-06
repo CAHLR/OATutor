@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import Problem from "@components/problem-layout/Problem.js";
+import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
 
@@ -490,7 +490,7 @@ class Platform extends React.Component {
                         componentName={"Problem"}
                         descriptor={"problem"}
                     >
-                        <Problem
+                        <ProblemWrapper
                             problem={this.state.currProblem}
                             problemComplete={this.problemComplete}
                             lesson={this.lesson}

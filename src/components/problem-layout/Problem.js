@@ -38,6 +38,12 @@ class Problem extends React.Component {
 
     constructor(props, context) {
         super(props);
+
+        const { setLanguage } = this.props;
+        if (props.lesson.courseName == "Matematik 4") {
+            setLanguage('se')
+        }
+
         this.bktParams = context.bktParams;
         this.heuristic = context.heuristic;
 

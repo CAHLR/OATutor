@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Problem from "@components/problem-layout/Problem.js";
+import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 
 import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
@@ -220,7 +220,7 @@ class DebugPlatform extends React.Component {
                     </Toolbar>
                 </AppBar>
                 {this.state.currProblem
-                    ? <Problem problem={this.state.currProblem} problemComplete={this.problemComplete}
+                    ? <ProblemWrapper problem={this.state.currProblem} problemComplete={this.problemComplete}
                                lesson={this.lesson}
                                seed={this.state.seed}/>
                     : <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
