@@ -24,7 +24,9 @@ class LessonSelection extends React.Component {
 
         if (courseNum == 6) {
             setLanguage('se')
-        } else {
+        } 
+        
+        if (props.history.location.pathname == '/') {
             const defaultLocale = localStorage.getItem('defaultLocale');
             setLanguage(defaultLocale)
         }
