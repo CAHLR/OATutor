@@ -21,15 +21,10 @@ class LessonSelection extends React.Component {
     constructor(props, context) {
         super(props);
         const { courseNum, setLanguage } = this.props;
-        const selectionMode = courseNum == null ? "course" : "lesson"
 
-        console.log(courseNum)
-
-        if (selectionMode == 'lesson' && courseNum == 6) {
+        if (courseNum == 6) {
             setLanguage('se')
-        }
-
-        if (props.history.location.pathname == '/') {
+        } else {
             const defaultLocale = localStorage.getItem('defaultLocale');
             setLanguage(defaultLocale)
         }
