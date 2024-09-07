@@ -76,14 +76,6 @@ class Platform extends React.Component {
     }
 
     componentDidMount() {
-        const { setLanguage } = this.props;
-        if (this.props.lessonID == 5) {
-            setLanguage('se')
-        } else {
-            const defaultLocale = localStorage.getItem('defaultLocale');
-            setLanguage(defaultLocale)
-        }
-
         this._isMounted = true;
         if (this.props.lessonID != null) {
             console.log("calling selectLesson from componentDidMount...") 
@@ -97,6 +89,14 @@ class Platform extends React.Component {
                     );
                 }
             );
+
+            const { setLanguage } = this.props;
+            if (lesson.courseName == 'Matematik 4') {
+                setLanguage('se')
+            } else {
+                const defaultLocale = localStorage.getItem('defaultLocale');
+                setLanguage(defaultLocale)
+            }
         } else if (this.props.courseNum != null) {
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
