@@ -29,7 +29,7 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import {
     toastNotifyCompletion,
-    toastNotifyCorrectness,
+    toastNotifyCorrectness, toastNotifyEmpty
 } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import axios from "axios";
@@ -210,6 +210,11 @@ class ProblemCard extends React.Component {
         } = this.step;
         const { seed, problemVars, problemID, courseName, answerMade, lesson } =
             this.props;
+
+        if (inputVal == '') {
+            toastNotifyEmpty()
+            return;
+        }
 
         const [parsed, correctAnswer, reason] = checkAnswer({
             attempt: inputVal,
