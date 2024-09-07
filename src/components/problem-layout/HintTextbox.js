@@ -52,7 +52,7 @@ class HintTextbox extends React.Component {
         });
 
         if (parsed == '') {
-            toastNotifyEmpty()
+            toastNotifyEmpty(this.translate)
             return;
         }
         

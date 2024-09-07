@@ -29,8 +29,8 @@ export function toastNotifyCompletion(translate) {
     })
 }
 
-export function toastNotifyEmpty() {
-    toast.info("Please input an answer.", {
+export function toastNotifyEmpty(translate) {
+    toast.info(translate("toast.provideAnswer"), {
         autoClose: 3000
     })
 }

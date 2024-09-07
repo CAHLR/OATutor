@@ -122,8 +122,6 @@ const _lessonPlansNoEditor = lessonPlans.filter(
 );
 
 const findLessonById = (ID) => {
-    console.log(ID)
-    console.log(_lessonPlansNoEditor)
     return _lessonPlansNoEditor.find((lessonPlan) => lessonPlan.id === ID);
 };
 

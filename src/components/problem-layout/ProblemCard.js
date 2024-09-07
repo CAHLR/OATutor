@@ -212,7 +212,7 @@ class ProblemCard extends React.Component {
             this.props;
 
         if (inputVal == '') {
-            toastNotifyEmpty()
+            toastNotifyEmpty(this.translate)
             return;
         }
 
