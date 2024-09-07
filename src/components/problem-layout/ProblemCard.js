@@ -230,11 +230,6 @@ class ProblemCard extends React.Component {
 
         const isCorrect = !!correctAnswer;
 
-        if (!isCorrect) {
-            this.expandFirstIncorrect = true;
-            this.toggleHints('auto-expand');
-        }
-
         this.context.firebase.log(
             parsed,
             problemID,
@@ -305,7 +300,9 @@ class ProblemCard extends React.Component {
                 }
             );
         }
-        this.generateHintFromGPT();
+        if (this.giveDynamicHint) {
+            this.generateHintFromGPT();
+        }
     };
 
     unlockHint = (hintNum, hintType) => {
