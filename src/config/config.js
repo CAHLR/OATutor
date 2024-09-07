@@ -102,6 +102,7 @@ const coursePlans = courses;
 const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
 
 const lessonPlans = [];
+console.log(coursePlans.length)
 for (let i = 0; i < coursePlans.length; i++) {
     const course = coursePlans[i];
     for (let j = 0; j < course.lessons.length; j++) {
