@@ -12,6 +12,9 @@ import { stagingProp } from "../../util/addStagingProperty";
 import { toastNotifyCorrectness } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
+import {
+    toastNotifyEmpty
+} from "./ToastNotifyCorrectness";
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -47,6 +50,12 @@ class HintTextbox extends React.Component {
             variabilization: chooseVariables(this.props.hintVars, this.props.seed),
             questionText: this.hint.text
         });
+
+        if (parsed == '') {
+            toastNotifyEmpty()
+            return;
+        }
+        
         this.props.submitHint(parsed, this.hint, correctAnswer, this.props.hintNum);
 
         const isCorrect = !!correctAnswer
