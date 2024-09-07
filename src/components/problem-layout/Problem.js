@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import ProblemCard from "./ProblemCard";
+import ProblemCardWrapper from "./ProblemCardWrapper";
 import Grid from "@material-ui/core/Grid";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
 import update from "../../models/BKT/BKT-brain.js";
@@ -39,7 +39,7 @@ class Problem extends React.Component {
     constructor(props, context) {
         super(props);
 
-        const { setLanguage } = this.props;
+        const { setLanguage } = props;
         if (props.lesson.courseName == "Matematik 4") {
             setLanguage('se')
         }
@@ -464,7 +464,7 @@ class Problem extends React.Component {
                                 name={idx.toString()}
                                 key={`${problem.id}-${step.id}`}
                             >
-                                <ProblemCard
+                                <ProblemCardWrapper
                                     problemID={problem.id}
                                     step={step}
                                     index={idx}

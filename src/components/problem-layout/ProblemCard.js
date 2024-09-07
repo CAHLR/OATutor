@@ -41,6 +41,7 @@ class ProblemCard extends React.Component {
     constructor(props, context) {
         super(props);
         // console.log("problem lesson props:", props);
+
         this.translate = props.translate
         this.step = props.step;
         this.index = props.index;
