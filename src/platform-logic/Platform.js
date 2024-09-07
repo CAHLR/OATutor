@@ -76,6 +76,14 @@ class Platform extends React.Component {
     }
 
     componentDidMount() {
+        const { setLanguage } = this.props;
+        if (this.props.lessonID == 5) {
+            setLanguage('se')
+        } else {
+            const defaultLocale = localStorage.getItem('defaultLocale');
+            setLanguage(defaultLocale)
+        }
+
         this._isMounted = true;
         if (this.props.lessonID != null) {
             console.log("calling selectLesson from componentDidMount...") 
