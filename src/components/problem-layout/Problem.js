@@ -50,12 +50,13 @@ class Problem extends React.Component {
         const giveStuFeedback = this.props.lesson?.giveStuFeedback;
         const giveStuHints = this.props.lesson?.giveStuHints;
         const keepMCOrder = this.props.lesson?.keepMCOrder;
+        const giveHintOnIncorrect = this.props.lesson?.giveHintOnIncorrect;
         const keyboardType = this.props.lesson?.keyboardType;
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
         const giveStuBottomHint = this.props.lesson?.allowBottomHint;
 
-        this.giveHintOnIncorrect = true;
+        this.giveHintOnIncorrect = giveHintOnIncorrect != null && giveHintOnIncorrect;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
         this.keepMCOrder = keepMCOrder != null && keepMCOrder;
         this.keyboardType = keyboardType != null && keyboardType;
