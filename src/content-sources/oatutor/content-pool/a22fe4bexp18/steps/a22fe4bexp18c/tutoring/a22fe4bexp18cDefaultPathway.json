@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a22fe4bexp18c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scientific Notation",
+        "text": "Scientific notation is a way of expressing very large or very small numbers conveniently. It involves writing a number as a product of a number between $$1$$ and $$10$$ and a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18c-h1"
+        ],
+        "title": "Converting to Scientific Notation",
+        "text": "To convert a decimal like $$0.0000000715$$ into scientific notation, you need to move the decimal point to the right until you have a number between $$1$$ and $$10$$. Count the number of moves; this will be the power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18c-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.15$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp18c-h2"
+        ],
+        "title": "Identify the Number Between $$1$$ and $$10$$",
+        "text": "What is the number between $$1$$ and $$10$$ when you move the decimal point in $$0.0000000715$$ to make it so?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18c-s1"
+        ],
+        "title": "Counting the Decimal Points",
+        "text": "In the number $$0.0000000715$$, you've moved the decimal point to the right how many times until you got $$7.15$$? Each move represents a division by $$10$$, so the power of $$10$$ will be negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp18c-h3"
+        ],
+        "title": "Determine the Power of $$10$$",
+        "text": "How many places did you move the decimal point to get from $$0.0000000715$$ to $$7.15$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18c-s2"
+        ],
+        "title": "Combine the Components",
+        "text": "Put together the number $$7.15$$ and $$10$$ to the power of $$-8$$ to write the scientific notation for $$0.0000000715$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

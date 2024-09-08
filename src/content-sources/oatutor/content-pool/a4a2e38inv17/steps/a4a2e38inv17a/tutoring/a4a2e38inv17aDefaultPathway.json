@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a4a2e38inv17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inverse of a Matrix",
+        "text": "To find the inverse of a 2x2 matrix, first recall that not all matrices have inverses. An inverse exists if and only if the determinant of the matrix is not zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4a2e38inv17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4a2e38inv17a-h1"
+        ],
+        "title": "Determinant Calculation",
+        "text": "The determinant of a 2x2 matrix $$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$ is calculated as 'ad-bc'. Make sure to calculate this first before trying to find the inverse.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4a2e38inv17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4a2e38inv17a-h2"
+        ],
+        "title": "Formula for Inverse of 2x2 Matrix",
+        "text": "Once you have a non-zero determinant, the inverse of $$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$ is given by $$\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}*(1/(ad-bc))$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4a2e38inv17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4a2e38inv17a-h3"
+        ],
+        "title": "Creating A New Matrix",
+        "text": "Substitute the values from the matrix $$\\begin{bmatrix} 1 & 1 \\\\ 2 & 2 \\end{bmatrix}$$ into the formula to form a new matrix. Note the positions and sign changes for certain elements: Swap the positions of $$1$$ and $$2$$ for the largest diagonal and change the signs of the other diagonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4a2e38inv17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4a2e38inv17a-h4"
+        ],
+        "title": "Check Your Determinant",
+        "text": "What was the value of your determinant? Did you find 'ad-bc' to be non-zero? If not, the inverse doesn't exist, and you'll need to enter 'NAN'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

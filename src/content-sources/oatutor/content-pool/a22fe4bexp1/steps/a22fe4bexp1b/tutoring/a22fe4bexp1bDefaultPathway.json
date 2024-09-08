@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a22fe4bexp1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Product Rule",
+        "text": "The product rule for exponents states that when you multiply two powers with the same base, you can add their exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp1b-h1"
+        ],
+        "title": "Identify the Base and Exponents",
+        "text": "In the expression $${\\left(-3\\right)}^5 \\left(-3\\right)$$, notice that both parts have the same base, which is $$-3$$. When the base is the same, you're allowed to add the exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp1b-h2"
+        ],
+        "title": "What is the Implicit Exponent?",
+        "text": "Recognize that the second part of the expression is $${\\left(-3\\right)}^1$$. Write down the exponent on the second base explicitly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp1b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp1b-h3"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Add the exponents of the two powers. This means adding $$5$$ and $$1$$, since $${\\left(-3\\right)}^5 {\\left(-3\\right)}^1$$ becomes $${\\left(-3\\right)}^{5+1}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp1b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp1b-h4"
+        ],
+        "title": "Calculate the New Exponent",
+        "text": "Find the sum of the exponents: $$5+1$$. This will give you the exponent for the single base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp1b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\left(-3\\right)}^6$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp1b-h5"
+        ],
+        "title": "Combine into Single Base",
+        "text": "Based on your calculations, what should the expression $${\\left(-3\\right)}^5 \\left(-3\\right)$$ simplify to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\left(-3\\right)}^5$$",
+            "$${\\left(-3\\right)}^6$$",
+            "$${\\left(-3\\right)}^4$$",
+            "$${\\left(-3\\right)}^{-5}$$"
+        ]
+    }
+]

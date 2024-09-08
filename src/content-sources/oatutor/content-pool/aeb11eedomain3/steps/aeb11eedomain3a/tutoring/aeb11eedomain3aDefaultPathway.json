@@ -1,0 +1,66 @@
+[
+    {
+        "id": "aeb11eedomain3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Denominator",
+        "text": "When finding the domain of a function, you need to ensure the denominator of any fraction isn't zero, as dividing by zero is undefined. Can you identify the values of $$x$$ that would make the denominator $$(2-x)$$ equal to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aeb11eedomain3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=2$$"
+        ],
+        "dependencies": [
+            "aeb11eedomain3a-h1"
+        ],
+        "title": "Solving for Zero in Denominator",
+        "text": "To find when the denominator becomes zero, set it equal to zero and solve for $$x$$ in the equation $$(2-x)=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aeb11eedomain3a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rational Functions and Domain",
+        "text": "The domain of the function is all the possible input values (x values) except those that make any denominator zero. This is because dividing by zero is undefined in mathematics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aeb11eedomain3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x<2$$ or $$x>2$$"
+        ],
+        "dependencies": [
+            "aeb11eedomain3a-h2"
+        ],
+        "title": "Combining Information",
+        "text": "You have found that $$x=2$$ makes the denominator zero. So, the domain includes all real numbers except $$x=2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aeb11eedomain3a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding 'All real numbers'",
+        "text": "In mathematics, 'all real numbers' mean any point on a continuous number line. So when we exclude a number, like $$x=2$$, it simply becomes not accessible for this function's input.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

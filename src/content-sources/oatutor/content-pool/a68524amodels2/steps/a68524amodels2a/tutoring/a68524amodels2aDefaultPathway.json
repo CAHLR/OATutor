@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a68524amodels2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation Values",
+        "text": "A correlation coefficient (r) tells us the strength and direction of a linear relationship between two variables. A value close to $$-1$$ indicates a strong negative linear correlation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68524amodels2a-h1"
+        ],
+        "title": "Examining the Scatter Plots",
+        "text": "Look at each scatter plot and see how well the points fit a straight line. For a strong negative correlation $$(r=-0.89)$$, the points should form a tight cluster around a line that slopes downward.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a68524amodels2a-h2"
+        ],
+        "title": "Focusing on Direction",
+        "text": "Since $$r$$ is negative, the trend should be downward. The line that best fits the data will decrease from left to right.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a68524amodels2a-h3"
+        ],
+        "title": "Strong Correlation Identification",
+        "text": "For a correlation of $$-0.89$$, the points should be close to a straight line but with some scatter. Think of a pattern that looks almost like an angled line with small gaps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph C"
+        ],
+        "dependencies": [
+            "a68524amodels2a-h4"
+        ],
+        "title": "Selecting the Correct Plot",
+        "text": "Which plot has points that are tightly clustered around a line trending downward?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Graph A",
+            "Graph B",
+            "Graph C",
+            "Graph D"
+        ]
+    }
+]

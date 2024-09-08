@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a22fe4bexp17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scientific Notation",
+        "text": "Scientific notation is a way of expressing very large or very small numbers. It is written as the product of a number between $$1$$ and $$10$$, and a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17b-h1"
+        ],
+        "title": "Identifying the Coefficient",
+        "text": "The number between $$1$$ and $$10$$ in scientific notation is called the coefficient. Identify the coefficient from the given number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp17b-h2"
+        ],
+        "title": "Finding the Coefficient",
+        "text": "Determine the coefficient for the number 1,000,000,000,000 when expressed in scientific notation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17b-s1"
+        ],
+        "title": "Counting the Decimal Places",
+        "text": "The power of $$10$$ represents the number of decimal places you move to get the coefficient. Count the number of decimal places in 1,000,000,000,000.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp17b-h3"
+        ],
+        "title": "Determining the Power of $$10$$",
+        "text": "Calculate the power of $$10$$ to represent the original number with the identified coefficient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17b-s2"
+        ],
+        "title": "Combining the Coefficient and Power",
+        "text": "To write the number 1,000,000,000,000 in scientific notation, combine the coefficient and the power of $$10$$ determined from the previous steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1{10}^{12}$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp17b-h4"
+        ],
+        "title": "Final Scientific Notation",
+        "text": "What is 1,000,000,000,000 in scientific notation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

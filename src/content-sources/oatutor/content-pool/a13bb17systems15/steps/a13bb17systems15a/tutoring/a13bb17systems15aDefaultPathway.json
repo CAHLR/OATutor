@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a13bb17systems15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Substitution",
+        "text": "The substitution method involves solving one equation for a variable and substituting it into the other equation. This helps simplify the system to one equation with one variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13bb17systems15a-h1"
+        ],
+        "title": "Solving for a Variable",
+        "text": "Choose one of the equations and solve for one variable in terms of the other. You can choose either $$x$$ or $$y$$. Which equation seems easier to solve for a variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems15a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9x-5y=1.3$$ with substitute for $$y$$"
+        ],
+        "dependencies": [
+            "a13bb17systems15a-h2"
+        ],
+        "title": "Substitute Simplified Equation",
+        "text": "Have you substituted the expression you obtained for one variable into the other equation yet? What does the resulting equation look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems15a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=-0.3$$"
+        ],
+        "dependencies": [
+            "a13bb17systems15a-s1"
+        ],
+        "title": "Simplify and Solve",
+        "text": "Simplify the resulting equation from your substitution. What is the value of the remaining variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems15a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=-0.8$$"
+        ],
+        "dependencies": [
+            "a13bb17systems15a-s2"
+        ],
+        "title": "Back Substitution",
+        "text": "Take the value of the solved variable and substitute it back into the original simplified equation. What is the value of the other variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

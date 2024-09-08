@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a22fe4bexp20d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Introduction to Scientific Notation",
+        "text": "Scientific notation is a way to express very large or very small numbers. It is written as the product of a number (usually between $$1$$ and 10) and a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp20d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp20d-h1"
+        ],
+        "title": "Understanding the Negative Exponent",
+        "text": "When there's a negative exponent in scientific notation, it signifies the number is less than one. However, we must move the decimal point to the left instead of the right as in a positive exponent case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp20d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$ places to the left"
+        ],
+        "dependencies": [
+            "a22fe4bexp20d-h2"
+        ],
+        "title": "Decimal Placement",
+        "text": "How will the decimal place move when converting $$8{10}^{-6}$$ to standard notation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$ places to the right",
+            ">6 places to the left",
+            ">8 places to the right",
+            ">8 places to the left"
+        ]
+    },
+    {
+        "id": "a22fe4bexp20d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp20d-h3"
+        ],
+        "title": "Shifting the Decimal Point",
+        "text": "In the number $$8{10}^{-6}$$, you start with the number $$8$$, then move the decimal point $$6$$ places to the left due to the negative exponent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp20d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.000008$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp20d-h4"
+        ],
+        "title": "Final Conversion",
+        "text": "What is the standard notation form of $$8{10}^{-6}$$ after moving the decimal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

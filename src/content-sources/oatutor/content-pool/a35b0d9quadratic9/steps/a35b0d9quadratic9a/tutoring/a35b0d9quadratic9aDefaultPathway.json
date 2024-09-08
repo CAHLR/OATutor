@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a35b0d9quadratic9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearranging to General Form",
+        "text": "The general form of a quadratic equation is written as ax\u00b2+bx+c. Can you rearrange the terms of $$g(x)=13+x^2-6x$$ to match this form?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic9a-h1"
+        ],
+        "title": "Checking the Rearranged Equation",
+        "text": "Once you have rearranged the equation, verify the order of the terms. Is it possible to write the equation with the x\u00b2 term first, followed by the $$x$$ term, and finally the constant?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g(x)=x^2-6x+13$$"
+        ],
+        "dependencies": [
+            "a35b0d9quadratic9a-h2"
+        ],
+        "title": "Rearranging Complete",
+        "text": "Now, you should have $$g(x)=x^2-6x+13$$. This is the general form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic9a-h3"
+        ],
+        "title": "Finding Standard Form Using Completing the Square",
+        "text": "To convert the equation into standard form, can you identify what terms are needed to complete the square for the equation $$g(x)=x^2-6x+13$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic9a-h4"
+        ],
+        "title": "Completing the Square",
+        "text": "What do you get when you complete the square on $$x^2-6x$$? How can this be written as a perfect square expression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic9a-h5"
+        ],
+        "title": "Writing the Expression as a Square",
+        "text": "We know that $$x^2-6x$$ becomes $${\\left(x-3\\right)}^2$$ when a correction term is added. What is the correction term? How does this affect the constant in the equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a35b0d9quadratic9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g(x)={\\left(x-3\\right)}^2+4$$"
+        ],
+        "dependencies": [
+            "a35b0d9quadratic9a-h6"
+        ],
+        "title": "Forming the Standard Form",
+        "text": "Now include the correction term and finally subtract and add inside the equation. What expression do you get for g(x)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

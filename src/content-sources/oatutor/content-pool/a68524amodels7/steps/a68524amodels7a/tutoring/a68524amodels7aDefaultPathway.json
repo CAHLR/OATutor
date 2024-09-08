@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a68524amodels7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Axes",
+        "text": "Look closely at the axes of each graph. Think about the range of x-values and y-values given in the data points. Which graph's axes seem to match these data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68524amodels7a-h1"
+        ],
+        "title": "Plot the Points",
+        "text": "Try sketching points for the data given: $$(16,46)$$, $$(18,50)$$, $$(20,54)$$, $$(25,55)$$, and $$(30,62)$$. Where would these points fit best among the graphs shown?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a68524amodels7a-h2"
+        ],
+        "title": "Look for Patterns",
+        "text": "Observe if there is a trend in the data points. Are they increasing or decreasing? Which graph reflects this pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68524amodels7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph A"
+        ],
+        "dependencies": [
+            "a68524amodels7a-h3"
+        ],
+        "title": "Analyze Graph A",
+        "text": "Does Graph A have a scale on the $$x$$ and $$y$$ axis that matches the data points? What would you expect the plot to look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Graph A",
+            "Graph B",
+            "Graph C",
+            "Graph D"
+        ]
+    }
+]

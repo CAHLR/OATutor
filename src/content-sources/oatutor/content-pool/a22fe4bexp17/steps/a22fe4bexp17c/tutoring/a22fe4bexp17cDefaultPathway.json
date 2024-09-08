@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a22fe4bexp17c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scientific Notation",
+        "text": "Scientific notation is a way of expressing numbers that are too large or too small to be conveniently written in decimal form. It involves a number between $$1$$ and $$10$$ multiplied by a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17c-h1"
+        ],
+        "title": "Identifying the Significant Figures",
+        "text": "To convert a number to scientific notation, first identify the significant figures in the number. For the diameter of an electron: $$0.00000000000094$$, the significant figure is $$9.4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17c-h2"
+        ],
+        "title": "Determining the Power of $$10$$",
+        "text": "Count how many places you need to move the decimal point to the right to get a number between $$1$$ and $$10$$. This will determine the power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17c-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.4$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp17c-h3"
+        ],
+        "title": "Scaffold 1: Move the Decimal Point",
+        "text": "Move the decimal point of $$0.00000000000094$$ to the right until you get a number between $$1$$ and $$10$$. Record the number after moving the decimal point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp17c-s1"
+        ],
+        "title": "Scaffold 2: Count the Decimal Moves",
+        "text": "How many places do you move the decimal point to the right?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp17c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp17c-s2"
+        ],
+        "title": "Writing the Final Answer in Scientific Notation",
+        "text": "Combine the number from Scaffold $$1$$ with the power of $$10$$ from Scaffold $$2$$ in the format: (number) * $${10}^{power}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

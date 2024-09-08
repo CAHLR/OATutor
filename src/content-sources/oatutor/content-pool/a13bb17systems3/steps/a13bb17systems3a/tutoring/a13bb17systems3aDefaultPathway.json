@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a13bb17systems3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Substitution",
+        "text": "When solving systems of equations by substitution, you substitute one variable with an equivalent expression from the other equation. This allows you to solve for the remaining variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13bb17systems3a-h1"
+        ],
+        "title": "Choose the Right Equation",
+        "text": "Look at which of the two equations would be easier to solve for one variable. In this case, either can be quickly manipulated to show \\(y\\) in terms of \\(x\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=x-5$$"
+        ],
+        "dependencies": [
+            "a13bb17systems3a-h2"
+        ],
+        "title": "Isolate $$y$$ in the First Equation",
+        "text": "Rewrite the first equation \\(-x+y=-5\\) to solve for \\(y\\). What does it become?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x-5(x-5)=1$$"
+        ],
+        "dependencies": [
+            "a13bb17systems3a-s1"
+        ],
+        "title": "Substitution in the Second Equation",
+        "text": "Substitute $$\\(y=x-5\\)$$ into the second equation $$\\(2x-5y=1\\)$$. What is the equation you get after substitution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{7}$$"
+        ],
+        "dependencies": [
+            "a13bb17systems3a-s2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Now solve the equation $$\\(2x-5(x-5)=1\\)$$ for \\(x\\). What is the value of \\(x\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a13bb17systems3a-s3"
+        ],
+        "title": "Substitute Back to Find $$y$$",
+        "text": "Substitute $$\\(x=8\\)$$ back into $$\\(y=x-5\\)$$ to find \\(y\\). What is the value of \\(y\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13bb17systems3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a13bb17systems3a-s4"
+        ],
+        "title": "Solution Check",
+        "text": "It's always good practice to check your solutions. Substitute $$\\(x=8\\)$$ and $$\\(y=3\\)$$ back into the original equations to ensure they satisfy both.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

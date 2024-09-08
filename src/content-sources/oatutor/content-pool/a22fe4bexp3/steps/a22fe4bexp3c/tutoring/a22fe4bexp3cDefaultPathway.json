@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a22fe4bexp3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Quotient Rule",
+        "text": "The Quotient Rule allows you to simplify expressions where one term is divided by another. When dividing terms with the same base, you can subtract the exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp3c-h1"
+        ],
+        "title": "Identifying the Base",
+        "text": "In the given expression $$\\frac{{\\left(z \\sqrt{2}\\right)}^5}{z \\sqrt{2}}$$, the base is the repeated element inside the division, which is $$z \\sqrt{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp3c-h2"
+        ],
+        "title": "Calculate the Exponent Change",
+        "text": "What is the simplified exponent when subtracting the exponent of the denominator from the exponent of the numerator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp3c-h3"
+        ],
+        "title": "Applying the Exponent Rule",
+        "text": "When dividing powers with the same base, subtract the exponents of the denominator from the numerator. This helps combine the expression into a single power term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(z \\sqrt{2}\\right)}^4$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp3c-h4"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "Apply what you know about the quotient rule to write the expression $$\\frac{{\\left(z \\sqrt{2}\\right)}^5}{z \\sqrt{2}}$$ as a single power.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

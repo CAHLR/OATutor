@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a22fe4bexp18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scientific Notation",
+        "text": "Scientific notation is a way to express very large or very small numbers. A number is written in scientific notation when it is represented as a product of a number between $$1$$ and $$10$$ and a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18a-h1"
+        ],
+        "title": "Analyzing the Given Number",
+        "text": "When converting to scientific notation, identify the significant digits of the number and determine the power of $$10$$ by counting how many places you move the decimal point to get a number between $$1$$ and $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.158$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp18a-h2"
+        ],
+        "title": "Identify the Significant Digits",
+        "text": "What are the significant digits of 7,158,000,000? Provide your answer in the form of a decimal between $$1$$ and $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18a-h3"
+        ],
+        "title": "Determine the Power of $$10$$",
+        "text": "To find the power of $$10$$, count the number of places you need to move the decimal point to turn the number into its significant digits form $$(7.158)$$. This provides the exponent for the power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp18a-h4"
+        ],
+        "title": "Count the Decimal Places",
+        "text": "How many places will the decimal point move to the left to convert 7,158,000,000 to $$7.158$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp18a-h5"
+        ],
+        "title": "Form the Scientific Notation",
+        "text": "Combine the significant digits with the power of $$10$$ calculated using the format $$a {10}^n$$, where 'a' is the significant digits and 'n' is the power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp18a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.158\\times {10}^9$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp18a-h6"
+        ],
+        "title": "Write in Scientific Notation",
+        "text": "Combine the significant digits and the power of $$10$$ to express 7,158,000,000 in scientific notation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

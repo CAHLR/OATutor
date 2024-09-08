@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a68590dgraphlog6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Natural Logarithm",
+        "text": "The natural logarithm function, represented as ln(x), is only defined for positive values of $$x$$. This means that the argument inside the ln function must be greater than zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68590dgraphlog6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68590dgraphlog6a-h1"
+        ],
+        "title": "Setting Conditions for the Argument Inside the Logarithm",
+        "text": "Since $$\\ln(4x+17)$$ requires the argument to be positive, set up the inequality $$4x+17>0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a68590dgraphlog6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "domain: $$(\\frac{-17}{4},\\infty)$$"
+        ],
+        "dependencies": [
+            "a68590dgraphlog6a-h2"
+        ],
+        "title": "Determine the Domain from the Inequality",
+        "text": "Solve the inequality $$4x+17>0$$ to find the domain of the function h(x).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "domain: $$(\\frac{-17}{4},\\infty)$$",
+            "$$domain:(-\\infty,\\frac{17}{4})$$",
+            "none of the above"
+        ]
+    },
+    {
+        "id": "a68590dgraphlog6a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Shift in Range Caused by Subtraction",
+        "text": "The function $$\\ln(4x+17)-5$$ is a vertical shift of the function $$\\ln(4x+17)$$. Subtracting $$5$$ shifts the entire graph downward but does not change the range from $$(-\\infty,\\infty)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a22fe4bexp3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Quotient Rule",
+        "text": "When dividing powers with the same base, you subtract the exponents. This is known as the Quotient Rule of Exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a22fe4bexp3b-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "In the expression $$\\frac{t^{23}}{t^{15}}$$, it is important to recognize the common base. Both terms have a base of 't'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a22fe4bexp3b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a22fe4bexp3b-h2"
+        ],
+        "title": "Apply the Quotient Rule",
+        "text": "Subtract the exponents of the common base t: $$23$$ - $$15$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
