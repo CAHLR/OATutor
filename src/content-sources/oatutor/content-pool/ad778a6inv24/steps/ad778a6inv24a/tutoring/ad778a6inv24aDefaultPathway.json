@@ -24,8 +24,8 @@
     {
         "id": "ad778a6inv24a-s1",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$\\begin{bmatrix} 8 & 4 \\\\ 3 & -4 \\end{bmatrix}*\\begin{bmatrix} x & y \\end{bmatrix}=\\begin{bmatrix} -100 & 1 \\end{bmatrix}$$"
         ],
@@ -36,7 +36,13 @@
         "text": "Create the matrix representation of the system. Write down how each equation looks in the matrix form $$A X=B$$.",
         "variabilization": {},
         "oer": "openai",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} 8 & 4 \\\\ 3 & -4 \\end{bmatrix}*\\begin{bmatrix} x & y \\end{bmatrix}=\\begin{bmatrix} -100 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 8 & 4 \\\\ -4 & 3 \\end{bmatrix}*\\begin{bmatrix} x & y \\end{bmatrix}=\\begin{bmatrix} -100 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 4 & 8 \\\\ 3 & -4 \\end{bmatrix}*\\begin{bmatrix} x & y \\end{bmatrix}=\\begin{bmatrix} -100 & 1 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 4 & 8 \\\\ -4 & 3 \\end{bmatrix}*\\begin{bmatrix} x & y \\end{bmatrix}=\\begin{bmatrix} -100 & 1 \\end{bmatrix}$$"
+        ]
     },
     {
         "id": "ad778a6inv24a-h3",
