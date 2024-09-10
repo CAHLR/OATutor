@@ -24,10 +24,10 @@
     {
         "id": "a41ed9crotation4a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "A=13, B=-6*sqrt(3), C=7"
+            "$$A=13$$, $$B=-6\\sqrt{3}$$, $$C=7$$"
         ],
         "dependencies": [
             "a41ed9crotation4a-h2"
@@ -36,7 +36,13 @@
         "text": "Given the equation $$13x^2-6\\sqrt{3} x y+7y^2=16$$, identify the values of A, B, and C. What are the values respectively? Please enter your answer in the for of $$A=?$$, $$B=?$$, $$C=$$? replacing the question marks with the answer.",
         "variabilization": {},
         "oer": "openai",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$A=13$$, $$B=-6\\sqrt{3}$$, $$C=7$$",
+            "$$A=-6\\sqrt{3}$$, $$B=13$$, $$C=7$$",
+            "$$A=-6\\sqrt{3}$$, $$B=7$$, $$C=13$$",
+            "$$A=13$$, $$B=13$$, $$C=-6\\sqrt{3}$$"
+        ]
     },
     {
         "id": "a41ed9crotation4a-h4",
