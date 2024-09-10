@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a161cc0exp8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scientific Notation",
+        "text": "Scientific notation is a way of expressing very large or very small numbers. It is written in the form of a number between $$1$$ and $$10$$ multiplied by a power of $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161cc0exp8a-h1"
+        ],
+        "title": "Identify the Components",
+        "text": "In the expression $$7.03\\times {10}^5$$, identify the two main components: the decimal part $$(7.03)$$ and the power of ten $${10}^5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161cc0exp8a-h2"
+        ],
+        "title": "Multiplying by Powers of Ten",
+        "text": "Multiplying a number by $${10}^5$$ in scientific notation means moving the decimal point to the right by $$5$$ places to convert it to standard notation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$703000$$"
+        ],
+        "dependencies": [
+            "a161cc0exp8a-h3"
+        ],
+        "title": "Move the Decimal Place",
+        "text": "Calculate the new number when the decimal point of $$7.03$$ is shifted right by $$5$$ places.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a161cc0exp8a-h4"
+        ],
+        "title": "Check Your Work",
+        "text": "Ensure you have moved the decimal point by the correct number of places and filled in any missing zeros if needed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

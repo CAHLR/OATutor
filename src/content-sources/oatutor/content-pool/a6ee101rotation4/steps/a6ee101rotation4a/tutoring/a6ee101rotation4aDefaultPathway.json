@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a6ee101rotation4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotations of Conics",
+        "text": "Consider the goal of eliminating the xy-term in the conic equation by rotating the coordinate system. This is done using rotation formulas for conics, which involve converting xy terms into x'y' terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6ee101rotation4a-h1"
+        ],
+        "title": "Identifying the Rotation Angle",
+        "text": "The angle of rotation, theta, for eliminating the xy-term is found using the formula $$tan\\left(2\\theta\\right)=\\frac{B}{A-C}$$. For this specific equation, identify A, B, and C before calculating theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=13$$, $$B=-6\\sqrt{3}$$, $$C=7$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation4a-h2"
+        ],
+        "title": "Calculate A, B, and C",
+        "text": "Given the equation $$13x^2-6\\sqrt{3} x y+7y^2=16$$, identify the values of A, B, and C. What are the values respectively? Please enter your answer in the for of $$A=?$$, $$B=?$$, $$C=$$? replacing the question marks with the answer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$A=13$$, $$B=-6\\sqrt{3}$$, $$C=7$$",
+            "$$A=-6\\sqrt{3}$$, $$B=13$$, $$C=7$$",
+            "$$A=-6\\sqrt{3}$$, $$B=7$$, $$C=13$$",
+            "$$A=7$$, $$B=13$$, $$C=-6\\sqrt{3}$$"
+        ]
+    },
+    {
+        "id": "a6ee101rotation4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$theta=\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation4a-h3"
+        ],
+        "title": "Find Theta Using the Tan Formula",
+        "text": "Using $$tan\\left(2\\theta\\right)=\\frac{B}{A-C}$$ with the calculated A, B, and C values, find the angle theta needed for the rotation. What is theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{{x'}^2}{4}+\\frac{{y'}^2}{1}=1$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation4a-h4"
+        ],
+        "title": "Apply the Rotation Matrix",
+        "text": "Use the rotation matrix $$\\begin{bmatrix} costheta & sintheta & -sintheta & costheta \\end{bmatrix}$$ to transform the original equation's terms. What is the rotated equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{{x'}^2}{4}+\\frac{{y'}^2}{1}=1$$",
+            "$$\\frac{{x'}^2}{1}+\\frac{{y'}^2}{4}=1$$"
+        ]
+    }
+]

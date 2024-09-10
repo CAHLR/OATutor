@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a6f85bfmodels11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scatter Plots",
+        "text": "A scatter plot represents the relationship between two variables. Look at the points on the plot and think about whether they form a straight line or if they're scattered in a different pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels11a-h1"
+        ],
+        "title": "Identify the Pattern",
+        "text": "Focus on the points to see if they create a recognizable pattern. Do they align in a straight path, curve, or show no specific formation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels11a-h2"
+        ],
+        "title": "Analyzing the Point Coordinates",
+        "text": "Let's try and plot these points to visualize them better! For example, the first point is $$(1,1)$$ and the next is $$(3,9)$$. What does this tell us about their relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels11a-h3"
+        ],
+        "title": "Connect the Dots!",
+        "text": "Now that you have plotted some points, try connecting them with lines. Are they making a straight line or a different pattern? What does that tell you about their relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "N"
+        ],
+        "dependencies": [
+            "a6f85bfmodels11a-h4"
+        ],
+        "title": "Final Decision - Linear or Not?",
+        "text": "Having plotted and tried connecting the dots, would you say that the data points align to suggest a linear relationship? Recall what a linear pattern looks like!",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels11a-h5"
+        ],
+        "title": "Reflection",
+        "text": "Reflect on what made you decide if the relationship is linear or not. Was it based on the plot, the shape formed, or other algebraic observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

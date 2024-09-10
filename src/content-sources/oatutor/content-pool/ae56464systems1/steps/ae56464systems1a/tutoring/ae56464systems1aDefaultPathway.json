@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ae56464systems1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Problem",
+        "text": "You need to substitute the values of $$x$$ and $$y$$ from the ordered pair into both equations. If both equations are true with these values, then the ordered pair is a solution to the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae56464systems1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae56464systems1a-h1"
+        ],
+        "title": "Check Each Equation",
+        "text": "An ordered pair is a solution if it makes each equation true. Plug in $$x=5$$ and $$y=1$$ into each equation separately and see if both are satisfied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae56464systems1a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ae56464systems1a-h2"
+        ],
+        "title": "Substitute in First Equation",
+        "text": "Let's substitute $$x=5$$ and $$y=1$$ into the first equation: $$x+3y=8$$. What does the left side equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae56464systems1a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae56464systems1a-s1"
+        ],
+        "title": "First Equation Validity",
+        "text": "Does substituting $$x=5$$ and $$y=1$$ give us a true statement in the first equation? Use your result from the previous scaffold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae56464systems1a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ae56464systems1a-h2"
+        ],
+        "title": "Substitute in Second Equation",
+        "text": "Now, substitute $$x=5$$ and $$y=1$$ into the second equation: $$2x-9=y$$. What does the left side equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae56464systems1a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae56464systems1a-s3"
+        ],
+        "title": "Second Equation Validity",
+        "text": "Does substituting $$x=5$$ and $$y=1$$ give us a true statement in the second equation? Use your result from the previous scaffold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

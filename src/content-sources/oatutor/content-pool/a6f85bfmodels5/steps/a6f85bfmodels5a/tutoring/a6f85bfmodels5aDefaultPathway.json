@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a6f85bfmodels5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Correlation Coefficient",
+        "text": "Let's first understand what a correlation coefficient means. A correlation coefficient of $$-0.26$$ indicates a weak negative correlation. This means that as one variable increases, the other tends to decrease slightly, but not in a strong or consistent way.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels5a-h1"
+        ],
+        "title": "Analyzing the Scatter Plots",
+        "text": "Look at each scatter plot and consider how tightly the points cluster around a line. A weak correlation will look more scattered. Can you identify which plot is more scattered than others while still having a slight downward trend?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels5a-h2"
+        ],
+        "title": "Comparing Strength of Correlation",
+        "text": "Compare the plots: which ones show a stronger downward trend and which show little to no consistent pattern? Remember, we're looking for a weak negative relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph A"
+        ],
+        "dependencies": [
+            "a6f85bfmodels5a-h3"
+        ],
+        "title": "Choosing the Correct Graph",
+        "text": "Focus on each plot individually. Graph A appears to have scattered points with a slight downward trend. Does this fit with what you know about a correlation of $$-0.26$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Graph A",
+            "Graph B",
+            "Graph C",
+            "Graph D"
+        ]
+    }
+]

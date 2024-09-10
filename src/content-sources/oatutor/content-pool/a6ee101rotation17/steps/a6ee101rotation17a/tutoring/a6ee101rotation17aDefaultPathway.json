@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a6ee101rotation17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotation of Axes",
+        "text": "Rotating the coordinate axes can eliminate the xy term from the equation of the conic section. This technique simplifies the equation by aligning it with the principal axes of the conic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6ee101rotation17a-h1"
+        ],
+        "title": "Identifying the Rotation Formula",
+        "text": "The formula to find the angle \u03b8 for eliminating the xy term is \u03b8 $$=$$ $$0.5$$ * $$\\arctan(\\frac{2B}{A-C})$$, given the conic equation in the form Ax\u00b2+2Bxy+Cy\u00b2+Dx+Ey+F=0.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$tan(2\\theta)=\\sqrt{3}$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation17a-h2"
+        ],
+        "title": "Calculate Tan(2\u03b8)",
+        "text": "Given the equation $$x**2+3\\sqrt{3}xy+4y**2+y-2=0$$, $$identify$$ $$A$$, $$B$$, $$and$$ $$C$$. $$What$$ $$is$$ $$tan(2\\theta)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta=30$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation17a-h3"
+        ],
+        "title": "Find \u03b8 Using Arctan",
+        "text": "You found that $$tan(2\\theta)=\\sqrt{3}$$. Use arctan to determine 2\u03b8 and then \u03b8. What is \u03b8?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

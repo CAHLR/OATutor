@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a6db52abinomseq1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Binomial Theorem",
+        "text": "The binomial theorem provides a formula to expand expressions of the form $${\\left(a+b\\right)}^n$$ without fully expanding it. Instead, you can find specific terms in the expansion using a specific formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6db52abinomseq1a-h1"
+        ],
+        "title": "Identify Term Formula",
+        "text": "The formula for a specific term in a binomial expansion is given by $$\\binom{n}{k}a**{n-k}b**k$$, $$where$$ $$n$$ $$is$$ $$the$$ $$power$$, $$k$$ $$is$$ $$the$$ $$term$$ $$number$$ $$minus$$ $$1$$, $$and$$ $$a$$, $$b$$ $$are$$ $$the$$ $$terms$$ $$in$$ $$the$$ $$binomial$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4368$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq1a-h2"
+        ],
+        "title": "Calculate the Binomial Coefficient",
+        "text": "Use the formula (n choose k) to calculate the binomial coefficient for the tenth term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x^7, y^9"
+        ],
+        "dependencies": [
+            "a6db52abinomseq1a-h3"
+        ],
+        "title": "Calculate Powers of Each Term",
+        "text": "What are the powers of $$x$$ and $$2y$$ for the tenth term in the expansion? Please enter your answer as \"x**a, y**b\" where a and $$b$$ are the respective powers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5857280x^7 y^9$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq1a-h4"
+        ],
+        "title": "Combine the Terms",
+        "text": "Multiply the binomial coefficient by the corresponding powers of $$x$$ and $$y$$ to find the term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

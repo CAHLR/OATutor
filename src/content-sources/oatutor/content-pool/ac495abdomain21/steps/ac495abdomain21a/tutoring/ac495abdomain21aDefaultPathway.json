@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ac495abdomain21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Function",
+        "text": "We have the function $$f(x)=3\\sqrt{x-2}$$. Look at the expression inside the square root: $$x-2$$. This will help us find the domain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain21a-h1"
+        ],
+        "title": "Recognize the Square Root",
+        "text": "The square root function, $$\\sqrt{x}$$, only works for non-negative numbers (0 or positive values). This is because the square root of a negative number is not a real number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain21a-h2"
+        ],
+        "title": "What Must be True?",
+        "text": "Since we know $$\\sqrt{x-2}$$ needs to work, $$x-2$$ must be at least $$0$$. Set up an inequality: $$x-2 \\geq 0$$ to find when it will work.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x \\geq 2$$"
+        ],
+        "dependencies": [
+            "ac495abdomain21a-h3"
+        ],
+        "title": "Solve the Inequality",
+        "text": "Add $$2$$ to both sides of the inequality $$x-2 \\geq 0$$. What does $$x$$ need to be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain21a-h4"
+        ],
+        "title": "The Domain in Interval Notation",
+        "text": "Interval notation uses brackets and parentheses to describe all the possible x-values (domain) of the function. Square brackets, [ or ], mean the endpoint is included. Parentheses, ( or ), mean the endpoint is not included. Your answer from the last step gives the lower limit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

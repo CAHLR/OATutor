@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a0ade94quadratic16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Standard Form",
+        "text": "The standard form for a quadratic equation is typically expressed as $${a\\left(x-h\\right)}^2+k$$. Do you know what this form is used for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic16a-h1"
+        ],
+        "title": "Identifying Components",
+        "text": "In the equation $$x^2+5x-2$$, how can we identify terms that we can manipulate to form a perfect square trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic16a-h2"
+        ],
+        "title": "Completing the Square",
+        "text": "Completing the square involves creating a perfect square trinomial. How can we adjust $$x^2+5x$$ to form such a trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic16a-h3"
+        ],
+        "title": "Perfect Square Trinomial",
+        "text": "For $$x^2+5x$$, what value should you add and subtract to create a perfect square trinomial? Remember, it's based on $${\\left(\\frac{b}{2}\\right)}^2$$, where $$b$$ is the coefficient of $$x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(x+\\frac{5}{2}\\right)}^2-8.25$$"
+        ],
+        "dependencies": [
+            "a0ade94quadratic16a-h4"
+        ],
+        "title": "Using the Value to Complete the Square",
+        "text": "Can you rewrite $$x^2+5x-2$$ by adding and subtracting $${\\left(\\frac{5}{2}\\right)}^2$$? What expression do you get when you factor the completed square?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic16a-h5"
+        ],
+        "title": "Vertex Form Significance",
+        "text": "Now that you completed the square, do you see how the vertex form reveals the function's vertex, $$h$$ and k? What are those values in your rewritten equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

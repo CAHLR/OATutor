@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ac45ea9quad37a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Structure",
+        "text": "The equation given is $${\\left(x-1\\right)}^2=25$$. Think about what it means to have a square on one side equal to a number on the other side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac45ea9quad37a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac45ea9quad37a-h1"
+        ],
+        "title": "Apply the Square Root Property",
+        "text": "To remove the square, you'll need to take the square root of both sides. What happens to the equation when you do this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac45ea9quad37a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac45ea9quad37a-h2"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Once the square root is applied, the equation becomes $$x-1=\\sqrt{25}$$ or $$x-1=-\\sqrt{25}$$. Can you write these as separate equations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac45ea9quad37a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac45ea9quad37a-h3"
+        ],
+        "title": "Solving Each Equation",
+        "text": "For each of the separate equations $$x-1=5$$ and $$x-1=-5$$, add $$1$$ to both sides. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac45ea9quad37a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac45ea9quad37a-h4"
+        ],
+        "title": "Final Solution",
+        "text": "You should end up with $$x=6$$ and $$x=-4$$. Check if these values satisfy the original equation $${\\left(x-1\\right)}^2=25$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

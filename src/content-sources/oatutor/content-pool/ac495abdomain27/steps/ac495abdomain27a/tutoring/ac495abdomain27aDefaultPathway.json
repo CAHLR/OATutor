@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ac495abdomain27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Forbidden Values",
+        "text": "To find the domain of the function $$f(x)=\\frac{9}{x-6}$$, we need to identify any values of $$x$$ that make the denominator zero, as division by zero is undefined.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain27a-h1"
+        ],
+        "title": "Check if $$x=6$$ is Allowed",
+        "text": "Substitute $$x=6$$ into the denominator to check if it makes the denominator zero: $$(6-6)=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain27a-h2"
+        ],
+        "title": "Exclude $$x=6$$ from the Domain",
+        "text": "Since the denominator becomes zero when $$x=6$$, $$x=6$$ is not part of the domain. We need to exclude this value in our domain interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac495abdomain27a-h3"
+        ],
+        "title": "Express Domain Using Interval Notation",
+        "text": "The domain consists of all other real numbers except $$x=6$$. In interval notation, this is represented as $$(-\\infty,6) \\cup (6,\\infty)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac495abdomain27a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-\\infty,6) \\cup (6,\\infty)$$"
+        ],
+        "dependencies": [
+            "ac495abdomain27a-h4"
+        ],
+        "title": "Select the Correct Interval Notation",
+        "text": "Select the answer that correctly represents the domain of f(x):",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(-\\infty,\\infty)$$",
+            "$$(-\\infty,6)$$",
+            "$$(6,\\infty)$$",
+            "$$(-\\infty,6) \\cup (6,\\infty)$$"
+        ]
+    }
+]

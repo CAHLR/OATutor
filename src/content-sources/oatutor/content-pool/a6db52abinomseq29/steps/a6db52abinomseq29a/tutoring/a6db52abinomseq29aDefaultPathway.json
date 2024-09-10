@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a6db52abinomseq29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Binomial Expansion",
+        "text": "The binomial expansion allows us to expand expressions in the form of $${\\left(a+b\\right)}^n$$. Each term in the expansion will have coefficients determined by the binomial theorem.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6db52abinomseq29a-h1"
+        ],
+        "title": "Identify $$n$$ and the Terms",
+        "text": "In the expression $${\\left(4x+2y\\right)}^5$$, identify the values of a and $$b$$, and $$n$$ for the binomial theorem application.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq29a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2560$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq29a-h2"
+        ],
+        "title": "Calculate Coefficient using Binomial Theorem",
+        "text": "Use the binomial coefficient formula \\(C(n,k)=(n!)/(k!(n-k)!)\\) to find the coefficient for each term. What is the coefficient for the term associated with $$x^4 y$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq29a-h3"
+        ],
+        "title": "Determine the Powers of $$x$$ and $$y$$",
+        "text": "For each term, determine the power of $$x$$ and $$y$$ by \\(x**{(5-k)}y**k\\) where k is the term index. What is the power of $$x$$ for the term with $$x^4 y$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq29a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1024x^5$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq29a-h4"
+        ],
+        "title": "Expand the Expression Term-by-Term",
+        "text": "Use the coefficients and powers calculated to write each term of the expansion. Write down the first term including its coefficient and the powers of $$x$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

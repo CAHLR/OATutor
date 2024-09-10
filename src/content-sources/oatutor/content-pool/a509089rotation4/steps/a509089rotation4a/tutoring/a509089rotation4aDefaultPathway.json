@@ -1,0 +1,306 @@
+[
+    {
+        "id": "a509089rotation4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "To transform the equation of a conic given in the form $$A x^2+B x y+C y^2+D x+E y+F=0$$ into standard form by rotating the axes, we will rewrite the general form as an equation in the x' and y' coordinate system without the x'y' term, by rotating the axes by a measure of $$\\theta$$ that satisfies $$\\operatorname{cot}\\left(2\\theta\\right)=\\frac{A-C}{B}$$.\\nIf $$\\operatorname{cot}\\left(2\\theta\\right)>0$$, then $$2\\theta$$ is in the first quadrant, and $$\\theta$$ is between $$(0^o,{45}^o)$$.\\nIf $$\\operatorname{cot}\\left(2\\theta\\right)<0$$, then $$2\\theta$$ is in the second quadrant, and $$\\theta$$ is between $$({45}^o,{90}^o)$$.\\nIf $$A=C$$, then $$\\theta={45}^o$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a509089rotation4a-h1"
+        ],
+        "title": "Equations of Rotation",
+        "text": "If a point (x,y) on the Cartesian plane is represented on a new coordinate plane where the axes of rotation are formed by rotating an angle $$\\theta$$ from the positive x-axis, then the coordinates of the point with respect to the new axes are (x\u2032,y\u2032). We can use the following equations of rotation to define the relationship between (x,y) and (x\u2032,y\u2032):\\nx=x\u2032*cos(\\theta)-y\u2032*sin(\\theta)\\nand\\ny=x\u2032*sin(\\theta)+y\u2032*cos(\\theta)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a509089rotation4a-h2"
+        ],
+        "title": "Finding $$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "We want to find $$sin\\left(\\theta\\right)$$ and $$cos\\left(\\theta\\right)$$ so that we can use them for substitution later on. To do so, we would start by finding $$\\operatorname{cot}\\left(2\\theta\\right)=\\frac{A-C}{B}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h3"
+        ],
+        "title": "Finding $$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "What is A?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6\\sqrt{3}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h4"
+        ],
+        "title": "Finding $$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "What is B?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h5"
+        ],
+        "title": "Finding $$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "What is C?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{\\sqrt{3}}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h6"
+        ],
+        "title": "Finding $$\\operatorname{Cot}\\left(2\\theta\\right)$$",
+        "text": "What is $$\\operatorname{cot}\\left(2\\theta\\right)=\\frac{A-C}{B}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h7"
+        ],
+        "title": "Hypotenuse",
+        "text": "For the angle $$2\\theta$$, the adjacent is of length $$-1$$ unit and the opposite side is of length $$\\sqrt{3}$$ unit. What is the length of the hypotenuse? You can use the Pythagorean Theorem to calculate.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h8"
+        ],
+        "title": "Finding $$\\operatorname{Sin}\\left(\\theta\\right)$$",
+        "text": "Since we have the angle $$2\\theta$$, we will use the trigonometry identity, sin(\\theta)=sqrt((1-cos(2*\\theta)/2). We can calculate $$cos\\left(2\\theta\\right)$$ from the diagram as $$\\frac{adjacent}{hypotenuse}$$ for an angle $$2\\theta$$. What is $$sin\\left(\\theta\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h9"
+        ],
+        "title": "Finding $$\\operatorname{Cos}\\left(\\theta\\right)$$",
+        "text": "Since we have the angle $$2\\theta$$, we will use the trigonometry identity, cos(\\theta)=sqrt((1+cos(2*\\theta)/2). We can calculate $$cos\\left(2\\theta\\right)$$ from the diagram as $$\\frac{adjacent}{hypotenuse}$$ for an angle $$2\\theta$$. What is $$cos\\left(\\theta\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a509089rotation4a-h10"
+        ],
+        "title": "Substitution",
+        "text": "We want to substitute x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta) and y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta) into the equation so that we can manipulate the equation into the new representation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x'-\\sqrt{3} y'}{2}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h11"
+        ],
+        "title": "Substitution",
+        "text": "Simplifying the equation of rotation for the $$x$$ term where x=x\u2032*cos(\\theta)-y\u2032*sin(\\theta), what is $$x$$ equals to after substituting in $$sin\\left(\\theta\\right)$$ and $$cos\\left(\\theta\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3} x'+y'}{2}$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h12"
+        ],
+        "title": "Substitution",
+        "text": "Simplifying the equation of rotation for the $$y$$ term where y=x\u2032*sin(\\theta)+y\u2032*cos(\\theta), what is $$y$$ equals to after substituting in $$sin\\left(\\theta\\right)$$ and $$cos\\left(\\theta\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a509089rotation4a-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$13{\\left(\\frac{x'-\\sqrt{3} y'}{2}\\right)}^2-6\\sqrt{3} \\frac{x'-\\sqrt{3} y'}{2} \\frac{\\sqrt{3} x'+y'}{2}+7{\\left(\\frac{\\sqrt{3} x'+y'}{2}\\right)}^2=16$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h13"
+        ],
+        "title": "Substitution",
+        "text": "Substituting $$x=\\frac{x'-\\sqrt{3} y'}{2}$$ and $$y=\\frac{\\sqrt{3} x'+y'}{2}$$ into $$13x^2-6\\sqrt{3} x y+7y^2=16$$, what is the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$13{\\left(\\frac{x'-\\sqrt{3} y'}{2}\\right)}^2-6\\sqrt{3} \\frac{x'-\\sqrt{3} y'}{2} \\frac{\\sqrt{3} x'+y'}{2}+7{\\left(\\frac{\\sqrt{3} x'+y'}{2}\\right)}^2=16$$",
+            "$$13{\\left(\\frac{\\sqrt{3} x'+y'}{2}\\right)}^2-6\\sqrt{3} \\frac{x'-\\sqrt{3} y'}{2} \\frac{\\sqrt{3} x'+y'}{2}+7{\\left(\\frac{x'-\\sqrt{3} y'}{2}\\right)}^2=16$$"
+        ]
+    },
+    {
+        "id": "a509089rotation4a-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$13\\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(x'-\\sqrt{3} y'\\right)}{4}-6\\sqrt{3} \\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}+7\\frac{\\left(\\sqrt{3} x'+y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}=16$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h14"
+        ],
+        "title": "Simplification",
+        "text": "We can start our simplification by first squaring the denominators,. What is the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$13\\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(x'-\\sqrt{3} y'\\right)}{4}-6\\sqrt{3} \\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}+7\\frac{\\left(\\sqrt{3} x'+y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}=16$$",
+            "$$7\\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(x'-\\sqrt{3} y'\\right)}{4}-6\\sqrt{3} \\frac{\\left(x'-\\sqrt{3} y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}+13\\frac{\\left(\\sqrt{3} x'+y'\\right) \\left(\\sqrt{3} x'+y'\\right)}{4}=16$$"
+        ]
+    },
+    {
+        "id": "a509089rotation4a-h16",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$13\\left({x'}^2-2\\sqrt{3} x' y'+3{y'}^2\\right)-6\\sqrt{3} \\left(\\sqrt{3} {x'}^2-2\\sqrt{3} x' y'-\\sqrt{3} {y'}^2\\right)+7\\left(3{x'}^2+2\\sqrt{3} x' y'+{y'}^2\\right)=64$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h15"
+        ],
+        "title": "Simplification",
+        "text": "Next, we will multiply by $$4$$ on both sides so that we can remove the denominators and expand out the binomials using the FOIL method. What is the equation now?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$13\\left({x'}^2-2\\sqrt{3} x' y'+3{y'}^2\\right)-6\\sqrt{3} \\left(\\sqrt{3} {x'}^2-2\\sqrt{3} x' y'-\\sqrt{3} {y'}^2\\right)+7\\left(3{x'}^2+2\\sqrt{3} x' y'+{y'}^2\\right)=64$$",
+            "$$7\\left({x'}^2-2\\sqrt{3} x' y'+3{y'}^2\\right)-6\\sqrt{3} \\left(\\sqrt{3} {x'}^2-2\\sqrt{3} x' y'-\\sqrt{3} {y'}^2\\right)+13\\left(3{x'}^2+2\\sqrt{3} x' y'+{y'}^2\\right)=64$$"
+        ]
+    },
+    {
+        "id": "a509089rotation4a-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$16{x'}^2+64{y'}^2=64$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h16"
+        ],
+        "title": "Simplification",
+        "text": "Next we will distribute the scalar multiples and combine like terms. What is the current equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$16{x'}^2+64{y'}^2=64$$",
+            "$$64{x'}^2+16{y'}^2=64$$"
+        ]
+    },
+    {
+        "id": "a509089rotation4a-h18",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{{x'}^2}{4}+\\frac{{y'}^2}{1}=1$$"
+        ],
+        "dependencies": [
+            "a509089rotation4a-h17"
+        ],
+        "title": "Simplification",
+        "text": "Set the RHS to $$1$$ by dividing by $$64$$. We can write the equation with x' and y' in the standard form by dividing each term by the constant in the denominator. What is the equation now? The equation is an ellipse.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{{x'}^2}{4}+\\frac{{y'}^2}{1}=1$$",
+            "$$\\frac{{x'}^2}{1}+\\frac{{y'}^2}{4}=1$$"
+        ]
+    }
+]

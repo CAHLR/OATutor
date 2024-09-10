@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a6db52abinomseq8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Binomial Coefficient Notation",
+        "text": "The notation C(n,k), or the binomial coefficient, represents the number of ways to choose k items from a group of $$n$$ items without regard to the order of selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6db52abinomseq8a-h1"
+        ],
+        "title": "Recall the Formula for Binomial Coefficients",
+        "text": "The formula for calculating C(n,k) is $$\\frac{n!}{k!(n-k)!}.$$ This formula uses factorials to determine the number of combinations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$355687428096000$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq8a-h2"
+        ],
+        "title": "Calculate 17!",
+        "text": "Start by calculating the factorial for $$17$$. What is $$17$$ factorial, or 17!?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$720$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq8a-h3"
+        ],
+        "title": "Calculate 6!",
+        "text": "Next, calculate the factorial for $$6$$. What is $$6$$ factorial, or 6!?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$39916800$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq8a-h4"
+        ],
+        "title": "Calculate $$(17-6)!$$",
+        "text": "Now, find the factorial for the difference $$(17-6)$$. What is $$(17-6)$$ factorial, or 11!?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12376$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq8a-h5"
+        ],
+        "title": "Apply the Formula",
+        "text": "Using the values you've calculated, apply them to the formula C(n,k) $$=$$ n!/(k!*(n-k)!). What do you get for $$C(17,6)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

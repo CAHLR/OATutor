@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a0ade94quadratic21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "For a quadratic function in the form $${ax}^2+bx+c$$, the graph is a parabola. Parabolas either open upwards or downwards. Can you recall how the sign of 'a' affects this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic21a-h1"
+        ],
+        "title": "Identify 'a' in the Function",
+        "text": "What is the value of 'a' in the equation $$y(x)=2x^2-10x+4$$? Based on this, does the parabola open upwards or downwards?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic21a-h2"
+        ],
+        "title": "Determine Minimum or Maximum",
+        "text": "If a parabola opens upwards, does it have a minimum point or a maximum point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=2.5$$"
+        ],
+        "dependencies": [],
+        "title": "Find the Axis of Symmetry",
+        "text": "The axis of symmetry for a quadratic function in the form of $${ax}^2+bx+c$$ can be calculated using $$x=\\frac{-b}{2a}$$. Substitute the values of 'b' and 'a' from $$y(x)=2x^2-10x+4$$ into this formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=-8.5$$"
+        ],
+        "dependencies": [
+            "a0ade94quadratic21a-h4"
+        ],
+        "title": "Calculate the Minimum Value",
+        "text": "To find the minimum value of the function, substitute the x-coordinate of the axis of symmetry into the original equation $$y(x)=2x^2-10x+4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

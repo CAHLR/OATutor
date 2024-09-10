@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ad1d3adgraphlog18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding x-intercept",
+        "text": "The x-intercept occurs where the function value h(x) is $$0$$. This means you'll set the equation $$\\log_{4}\\left(x-1\\right)+1$$ equal to $$0$$ to find the x-intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog18a-h1"
+        ],
+        "title": "Isolating the Logarithm",
+        "text": "To solve for $$x$$, start by isolating the logarithm term $$\\log_{4}\\left(x-1\\right)$$. This can be done by subtracting $$1$$ from both sides of the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog18a-h2"
+        ],
+        "title": "Rewriting the Equation",
+        "text": "Rewrite the equation so that you can see it more clearly. You should have $$\\log_{4}\\left(x-1\\right)=-1$$ after subtracting $$1$$ from both sides.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog18a-h3"
+        ],
+        "title": "Exponential Form",
+        "text": "Convert the logarithmic equation $$\\log_{4}\\left(x-1\\right)=-1$$ into an exponential equation. The base here is $$4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x-1=\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog18a-h4"
+        ],
+        "title": "Transforming the Equation",
+        "text": "By using the definition of a logarithm, transform $$\\log_{4}\\left(x-1\\right)=-1$$ to its exponential form: $$4^{-1}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x-1=\\frac{1}{4}$$",
+            "$$x-1=4$$",
+            "$$x-1=-4$$"
+        ]
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=5/4"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog18a-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "Once you have the equation $$x-1=\\frac{1}{4}$$, solve for $$x$$. Please enter your answer in the form $$x=a$$ where a is the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog18a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(5/4,0)"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog18a-h6"
+        ],
+        "title": "Finding the Coordinate Pair",
+        "text": "To write the x-intercept as a coordinate pair, remember that it is in the form (x, 0) since h(x) equals $$0$$ at the intercept. Please enter your answer in the form (a, 0) where a is the solution for $$x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

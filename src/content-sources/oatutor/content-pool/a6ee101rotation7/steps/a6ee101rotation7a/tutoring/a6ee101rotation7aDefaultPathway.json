@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a6ee101rotation7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Type of Conic",
+        "text": "A conic section can be a circle, ellipse, hyperbola, or parabola. The general equation for conic sections is typically in the form Ax\u00b2 + Bxy + Cy\u00b2 + Dx + Ey + F $$=$$ $$0$$. To identify the type, check the coefficients A, B, and C in this equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6ee101rotation7a-h1"
+        ],
+        "title": "Understanding Conic Discriminants",
+        "text": "To determine the type of conic from its equation, consider the discriminant, B\u00b2 - 4AC. This value helps identify the conic section type:\\n- If B\u00b2 - 4AC < $$0$$, it's either an ellipse or circle.\\n- If B\u00b2 - 4AC $$=$$ $$0$$, it's a parabola.\\n- If B\u00b2 - 4AC > $$0$$, it's a hyperbola.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation7a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ellipse"
+        ],
+        "dependencies": [
+            "a6ee101rotation7a-h2"
+        ],
+        "title": "Simplify the Concept",
+        "text": "For the given equation 9x\u00b2 + 4y\u00b2 + $$72x$$ + $$36y$$ - $$500$$ $$=$$ $$0$$, find the values for A, B, and C and calculate the discriminant B\u00b2 - 4AC. What do the values suggest about the type of conic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ellipse",
+            "Circle",
+            "Hyperbola",
+            "Parabola"
+        ]
+    },
+    {
+        "id": "a6ee101rotation7a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ellipse"
+        ],
+        "dependencies": [
+            "a6ee101rotation7a-s1"
+        ],
+        "title": "Explore the Conic's Geometry",
+        "text": "Notice the positive coefficients in front of x\u00b2 and y\u00b2 and evaluate the discriminant obtained. Given that these coefficients lead to a discriminant with a unique value state, which conic are you likely dealing with?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ellipse",
+            "Circle",
+            "Hyperbola",
+            "Parabola"
+        ]
+    }
+]

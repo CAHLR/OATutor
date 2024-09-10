@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a161cc0exp6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Power of a Product Rule",
+        "text": "The power of a product rule states that when you have a product raised to a power, you apply the exponent to each factor in the product.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161cc0exp6a-h1"
+        ],
+        "title": "Applying the Power to Individual Factors",
+        "text": "For an expression like $${\\left(x y\\right)}^n$$, apply the exponent $$n$$ to both $$x$$ and $$y$$, resulting in $$x^n y^n$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp6a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a^3$$"
+        ],
+        "dependencies": [
+            "a161cc0exp6a-h2"
+        ],
+        "title": "Finding the Power on Each Base",
+        "text": "What is $$a^3$$ when applying the exponent $$3$$ to a?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp6a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$b^6$$"
+        ],
+        "dependencies": [
+            "a161cc0exp6a-s1"
+        ],
+        "title": "Finding the Power on Each Base",
+        "text": "What does $${\\left(b^2\\right)}^3$$ simplify to when applying the exponent $$3$$ to $$b^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a161cc0exp6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161cc0exp6a-s2"
+        ],
+        "title": "Combining the Results",
+        "text": "Combine the results of raising each base to the power individually.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

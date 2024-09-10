@@ -1,0 +1,94 @@
+[
+    {
+        "id": "adff2b5inv15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Inversion",
+        "text": "Before trying to find the inverse, let's discuss when a matrix can have an inverse. A 2x2 matrix has an inverse if and only if its determinant is not zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adff2b5inv15a-h1"
+        ],
+        "title": "Calculating the Determinant",
+        "text": "For a matrix $$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$, the determinant is calculated as ad-bc. Try calculating the determinant for $$\\begin{bmatrix} -3 & 7 \\\\ 9 & 2 \\end{bmatrix}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-69$$"
+        ],
+        "dependencies": [
+            "adff2b5inv15a-h2"
+        ],
+        "title": "Evaluate the Determinant",
+        "text": "Compute the value of the determinant for $$\\begin{bmatrix} -3 & 7 \\\\ 9 & 2 \\end{bmatrix}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adff2b5inv15a-h3"
+        ],
+        "title": "Condition for Invertibility",
+        "text": "Since the determinant is not zero, the matrix $$\\begin{bmatrix} -3 & 7 \\\\ 9 & 2 \\end{bmatrix}$$ has an inverse. Let's proceed to find it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adff2b5inv15a-h4"
+        ],
+        "title": "Formula for the Inverse Matrix",
+        "text": "If the determinant of the matrix is non-zero, the inverse of a matrix $$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$ is $$\\frac{1}{ad-bc}$$ times $$\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$$. Remember this involves calculating the reciprocal of the determinant!",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 2 & -7 \\\\ \\frac{-9}{69} & \\frac{-3}{69} \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "adff2b5inv15a-h5"
+        ],
+        "title": "Apply the Inverse Formula",
+        "text": "Substitute the values from $$\\begin{bmatrix} -3 & 7 \\\\ 9 & 2 \\end{bmatrix}$$ into the inverse formula and simplify to find each matrix element.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adff2b5inv15a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adff2b5inv15a-h6"
+        ],
+        "title": "Final Thoughts on Matrix Inversion",
+        "text": "After applying the inverse formula, check your calculations to ensure each step correctly follows the determinant and inverse formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

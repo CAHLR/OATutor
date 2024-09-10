@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a0ade94quadratic4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Domain of a Quadratic Function",
+        "text": "What is usually the domain for any quadratic function? Remember, think about what `x` values can be plugged into `f(x)`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic4a-h1"
+        ],
+        "title": "Characteristics of a Quadratic Function's Domain",
+        "text": "Does the equation $$`f(x)=-5x^2+9x-1`$$ contain any terms that could restrict the values that `x` can take, such as square roots or divisions by zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic4a-h2"
+        ],
+        "title": "Identifying Real-Number Restrictions",
+        "text": "Is there any possibility that the function could be undefined for certain values of `x`?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all real numbers"
+        ],
+        "dependencies": [
+            "a0ade94quadratic4a-h3"
+        ],
+        "title": "Determining the Domain",
+        "text": "Since quadratic functions have no terms that restrict `x`, what is the domain of `f(x)`?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x>0$$",
+            "all real numbers",
+            "all real numbers except $$0$$"
+        ]
+    },
+    {
+        "id": "a0ade94quadratic4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic4a-h4"
+        ],
+        "title": "Finding the Range in a Downward Opening Parabola",
+        "text": "For $$`f(x)=-5x^2+9x-1`$$, what is the vertex form of the quadratic equation, and how does it indicate whether the parabola opens upward or downward?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic4a-h5"
+        ],
+        "title": "Vertex and Maximum Point",
+        "text": "The coefficient of $$`x^2`$$ is negative. What does this tell you about the direction of opening of the parabola and the nature of the vertex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic4a-h6"
+        ],
+        "title": "Calculating the Vertex",
+        "text": "To find the vertex, use the formula $$`x=\\frac{-b}{2a}`$$. After finding `x`, substitute it back to find the `y` value, giving you the coordinates of the vertex.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-inf, y-coordinate of vertex]"
+        ],
+        "dependencies": [
+            "a0ade94quadratic4a-h7"
+        ],
+        "title": "Determine the Range",
+        "text": "Once you've identified the vertex, what does it tell you about the possible `y` values, or range, that `f(x)` can take? Please enter your answer as (x, y].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

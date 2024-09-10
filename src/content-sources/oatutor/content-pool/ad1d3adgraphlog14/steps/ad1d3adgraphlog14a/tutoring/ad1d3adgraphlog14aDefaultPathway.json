@@ -1,0 +1,68 @@
+[
+    {
+        "id": "ad1d3adgraphlog14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logarithm Functions",
+        "text": "Logarithmic functions, such as $$\\ln(x)$$, are only defined for positive values of $$x$$. This means the expression inside the log function must be greater than zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog14a-h1"
+        ],
+        "title": "Analyzing the Expression Inside the Logarithm",
+        "text": "For the function $$f(x)=\\ln(x-\\frac{3}{7})$$, focus on the expression $$x-\\frac{3}{7}$$. To maintain the domain of the function, this expression must be greater than zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog14a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x>3/7"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog14a-h2"
+        ],
+        "title": "Determining the Domain",
+        "text": "To solve for the domain, find the values of $$x$$ for which $$x-\\frac{3}{7}>0$$. Solve this inequality. Please enter your answer as $$x>a$$ where a is the solution to the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog14a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Vertical Asymptotes",
+        "text": "A vertical asymptote occurs where the function becomes undefined or approaches $$\\infty$$. For logarithmic functions, vertical asymptotes appear where the expression inside the log function equals zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog14a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=3/7"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog14a-h3"
+        ],
+        "title": "Finding the Vertical Asymptote",
+        "text": "To determine the vertical asymptote, identify the x-value that makes $$x-\\frac{3}{7}$$ equal to zero. Please enter your answer in the form $$x=a$$ where a is the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

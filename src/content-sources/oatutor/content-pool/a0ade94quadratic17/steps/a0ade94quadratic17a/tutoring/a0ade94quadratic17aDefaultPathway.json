@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a0ade94quadratic17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying the Standard Form",
+        "text": "What is the standard form of a quadratic function? Hint: It looks like $${ax}^2$$ + bx + c.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic17a-h1"
+        ],
+        "title": "Completing the Square for the Quadratic $$2x^2$$ + $$8x$$ - $$10$$",
+        "text": "To rewrite in standard form, try completing the square. What steps do you take to complete the square for the expression $$2x^2$$ + $$8x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic17a-h2"
+        ],
+        "title": "Factor Out the Coefficient of $$x^2$$",
+        "text": "First, factor out the $$2$$ from the terms involving $$x$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic17a-h3"
+        ],
+        "title": "Complete the Square Inside the Parentheses",
+        "text": "Now, focus on the quadratic expression inside the parentheses. What constant needs to be added and subtracted to complete the square?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic17a-h4"
+        ],
+        "title": "Write the Completed Square Form",
+        "text": "After completing the square, what is the new expression inside the parentheses? Remember to simplify the expression fully.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic17a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$f(x)=2{\\left(x+2\\right)}^2-18$$"
+        ],
+        "dependencies": [
+            "a0ade94quadratic17a-h5"
+        ],
+        "title": "Final Step: Consolidate the Coefficients and the Constant",
+        "text": "After adjusting for the constant term from completing the square, what is the quadratic expression in vertex form? Remember to identify the new constant value after distributing. Please enter your answer as $$f(x)=a$$ where a is the standard form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

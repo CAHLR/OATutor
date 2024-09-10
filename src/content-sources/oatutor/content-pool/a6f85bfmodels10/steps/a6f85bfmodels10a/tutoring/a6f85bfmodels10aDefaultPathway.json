@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a6f85bfmodels10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand Scatter Plots",
+        "text": "A scatter plot shows the relationship between two variables by displaying data points on a graph. Your job is to determine if these data points form a straight line. That's when we say they are linearly related.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels10a-h1"
+        ],
+        "title": "Check for Patterns",
+        "text": "Look at the data points. Do they appear to form a straight line when you draw an imaginary line through them, or do they create a curve or cluster arbitrarily? This visual check can help you decide if there is a linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels10a-h2"
+        ],
+        "title": "Account for Trends",
+        "text": "Try to see whether there's a consistent increase or decrease in the values as you move from one point to the next. A sharp increase or decrease might indicate a non-linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6f85bfmodels10a-h3"
+        ],
+        "title": "Plot in Your Mind",
+        "text": "Imagine plotting the points $$(1,46)...(6,136)$$ is each point adding up smoothly to form a straight line, or are there jumps and curves? This will help you visualize the pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6f85bfmodels10a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "N"
+        ],
+        "dependencies": [
+            "a6f85bfmodels10a-h4"
+        ],
+        "title": "Draw an Imaginary Line",
+        "text": "Try drawing an imaginary straight line through these points. If points are closely hugging this line, the relationship is likely linear. If they don't, then it might be more complex.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

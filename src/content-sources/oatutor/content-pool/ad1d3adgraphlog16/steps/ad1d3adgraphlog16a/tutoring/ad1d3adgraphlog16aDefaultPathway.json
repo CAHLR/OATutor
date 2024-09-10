@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad1d3adgraphlog16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logarithmic Functions",
+        "text": "The natural logarithm function, ln(x), is only defined for positive values of $$x$$. This means that whatever is inside the logarithm (the argument) must be greater than zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog16a-h1"
+        ],
+        "title": "Identify the Inner Function",
+        "text": "For the function $$g(x)=\\ln(2x+6)-5$$, the argument of the ln function is $$2x+6$$. We need to ensure that this expression is greater than zero to determine the domain of g(x).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x>-3$$"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog16a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Set the argument $$2x+6$$ greater than zero and solve for $$x$$ to find the domain. Once you find the critical point where $$x$$ causes the argument to be zero, determine the domain. Please enter your answer as $$x>a$$ where a is the solution to the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad1d3adgraphlog16a-h3"
+        ],
+        "title": "Vertical Asymptote Characteristics",
+        "text": "Vertical asymptotes occur where the logarithmic function tends towards negative $$\\infty$$. This usually happens when the argument equals zero, since ln(0) is undefined.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=-3$$"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog16a-h4"
+        ],
+        "title": "Determine the Vertical Asymptote",
+        "text": "To find the vertical asymptote, set the argument $$2x+6$$ equal to zero and solve for $$x$$. This value indicates the x-coordinate where the vertical asymptote occurs. Please enter your answer in the form $$x=a$$ where a is the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad1d3adgraphlog16a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$domain:(-3,\\infty)$$, vertical $$asymptote:x=-3$$"
+        ],
+        "dependencies": [
+            "ad1d3adgraphlog16a-h5"
+        ],
+        "title": "Summarizing Domain and Asymptote",
+        "text": "Review the solutions for the domain and vertical asymptote. Which pair correctly represents the domain and vertical asymptote for $$g(x)=\\ln(2x+6)-5$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$domain:(-3,\\infty)$$, vertical $$asymptote:x=-3$$",
+            "$$domain:(-\\infty,\\infty)$$, vertical $$asymptote:x=-3$$",
+            "none of the above"
+        ]
+    }
+]

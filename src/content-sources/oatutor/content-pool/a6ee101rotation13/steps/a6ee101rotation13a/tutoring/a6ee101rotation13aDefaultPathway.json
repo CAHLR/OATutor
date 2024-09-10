@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a6ee101rotation13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotation of Axes",
+        "text": "Rotating the coordinate axes involves transforming the equation of the conic to eliminate the xy-term. This allows for simplifying the equation to one that's easier to interpret.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation13a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Angle of Rotation Formula",
+        "text": "To rotate axes by an angle theta, you use trigonometric transformations:\\nNew coordinates (x',y') from (x,y) are given by:\\n$$x$$ $$=$$ x'cos(theta) - y'sin(theta), and\\n$$y$$ $$=$$ x'sin(theta) + y'cos(theta).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6ee101rotation13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7x**{\\prime2}+9y**{\\prime2}-4=0$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation13a-h2"
+        ],
+        "title": "Calculate Transformation for xy-Term Elimination",
+        "text": "Substitute $$x$$ $$=$$ x'cos(45\u00b0) - y'sin(45\u00b0) and $$y$$ $$=$$ x'sin(45\u00b0) + y'cos(45\u00b0) in the original equation, and simplify.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7x**{\\prime2}+9y**{\\prime2}-4=0$$",
+            "$$6x**{\\prime2}+8y**{\\prime2}-3=0$$",
+            "$$5x**{\\prime2}+7y**{\\prime2}-1=0$$",
+            "$$9x**{\\prime2}+3y**{\\prime2}-5=0$$"
+        ]
+    },
+    {
+        "id": "a6ee101rotation13a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7x**{\\prime2}+9y**{\\prime2}-4=0$$"
+        ],
+        "dependencies": [
+            "a6ee101rotation13a-h3"
+        ],
+        "title": "Simplifying the Transformed Equation",
+        "text": "Once substituted, combine like terms and simplify expressions involving trig values (since cos(45\u00b0) $$=$$ sin(45\u00b0) $$=$$ sqrt(2)/2) to reach the new equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7x**{\\prime2}+9y**{\\prime2}-4=0$$",
+            "$$6x**{\\prime2}+8y**{\\prime2}-3=0$$",
+            "$$5x**{\\prime2}+7y**{\\prime2}-1=0$$",
+            "$$9x**{\\prime2}+3y**{\\prime2}-5=0$$"
+        ]
+    }
+]

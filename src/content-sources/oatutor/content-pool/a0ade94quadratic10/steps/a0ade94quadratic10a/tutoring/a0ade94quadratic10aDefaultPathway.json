@@ -1,0 +1,117 @@
+[
+    {
+        "id": "a0ade94quadratic10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Domain",
+        "text": "What values can $$x$$ take in any quadratic function? Are there any restrictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Range",
+        "text": "What does the 'a' value (the coefficient of the squared term) tell us about the direction in which the parabola opens?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(4/7, 8/11)"
+        ],
+        "dependencies": [
+            "a0ade94quadratic10a-h2"
+        ],
+        "title": "Finding the Vertex",
+        "text": "The vertex form of a quadratic function is $$f(x)={a\\left(x-h\\right)}^2+k$$. What are the vertex coordinates for $$f(x)={2\\left(x-\\frac{4}{7}\\right)}^2+\\frac{8}{11}$$? Please enter your answer in the form (x, y).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic10a-h3"
+        ],
+        "title": "Range Based on Vertex",
+        "text": "Does the vertex represent a maximum or minimum value for the function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$f(x) \\geq \\frac{8}{11}$$"
+        ],
+        "dependencies": [
+            "a0ade94quadratic10a-h4"
+        ],
+        "title": "Determining the Range",
+        "text": "Since the coefficient of the squared term is positive, the parabola opens upward. Thus, what is the range of f(x)? Please enter your answer in the form $$f(x) \\geq a$$ where a is the appropriate answer",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u2212\u221e<x<\u221e"
+        ],
+        "dependencies": [],
+        "title": "Finding the Domain",
+        "text": "Since any real number $$x$$ can be plugged into the quadratic function, what is the domain for f(x)? Please enter your answer in the form $$a<x<b$$ where a and $$b$$ are the appropriate answers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a0ade94quadratic10a-h5"
+        ],
+        "title": "Final Verification",
+        "text": "Combine the domain and range of f(x) to express the complete answer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0ade94quadratic10a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f(x) \\geq \\frac{8}{11}-\\infty<x<\\infty$$"
+        ],
+        "dependencies": [
+            "a0ade94quadratic10a-h7"
+        ],
+        "title": "Final Answer",
+        "text": "State both the domain and range for the function $$f(x)={2\\left(x-\\frac{4}{7}\\right)}^2+\\frac{8}{11}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$f(x) \\geq \\frac{8}{11}-\\infty<x<\\infty$$",
+            "$$f(x) \\geq \\frac{6}{11}-\\infty<x<\\infty$$",
+            "$$f(x) \\geq \\frac{10}{11}-\\infty<x<0$$"
+        ]
+    }
+]

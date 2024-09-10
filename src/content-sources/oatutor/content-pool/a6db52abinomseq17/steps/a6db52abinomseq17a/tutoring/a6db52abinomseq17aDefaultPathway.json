@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a6db52abinomseq17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Problem",
+        "text": "To find the fourth term of the binomial expansion, you will use the Binomial Theorem. This theorem helps you figure out each term of the expansion $${\\left(a+b\\right)}^n$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6db52abinomseq17a-h1"
+        ],
+        "title": "Identify Variables and Powers",
+        "text": "In $${\\left(2x-3y\\right)}^4$$, identify the first term $$a=2x$$ and the second term $$b=-3y$$. Note that the power $$n$$ is $$4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq17a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq17a-h2"
+        ],
+        "title": "Determine the Combination Coefficient",
+        "text": "Use C(n,k) to find the combination number where C(4,3)=4!/(3!(4-3)!). What is $$C(4,3)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq17a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq17a-s1"
+        ],
+        "title": "Calculate the First Term's Contribution",
+        "text": "For the fourth term, calculate $${\\left(2x\\right)}^{4-3}$$. What is the result of $${\\left(2x\\right)}^1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq17a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-27y^3$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq17a-s2"
+        ],
+        "title": "Calculate the Second Term's Contribution",
+        "text": "For the fourth term, calculate $${\\left(-3y\\right)}^3$$. What is $${\\left(-3y\\right)}^3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6db52abinomseq17a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-216{xy}^3$$"
+        ],
+        "dependencies": [
+            "a6db52abinomseq17a-s3"
+        ],
+        "title": "Combine All Parts to Find the Term",
+        "text": "Multiply the combination coefficient, the first term's contribution, and the second term's contribution: $$4$$ * (2x) * $$\\left(-27y^3\\right)$$. What does this equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
