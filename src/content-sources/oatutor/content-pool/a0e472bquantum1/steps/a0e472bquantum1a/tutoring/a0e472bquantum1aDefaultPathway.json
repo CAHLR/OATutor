@@ -3,78 +3,8 @@
         "id": "a0e472bquantum1a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Determine the Atomic Number of Iodine",
-        "text": "The atomic number of iodine is $$53$$. This means that a neutral iodine atom has $$53$$ protons.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a0e472bquantum1a-h2",
-        "type": "hint",
-        "dependencies": [
-            "a0e472bquantum1a-h1"
-        ],
-        "title": "Determine the Number of Protons in a Neutral Atom",
-        "text": "Number of protons for a neutral atom $$=$$ atomic number.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a0e472bquantum1a-h3",
-        "type": "hint",
-        "dependencies": [
-            "a0e472bquantum1a-h2"
-        ],
-        "title": "Determine the Number of Neutrons for a Neutral Atom",
-        "text": "Number of neutrons for a neutral atom $$=$$ mass number - atomic number",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a0e472bquantum1a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$74$$"
-        ],
-        "dependencies": [
-            "a0e472bquantum1a-h3"
-        ],
-        "title": "Determine the Number of Neutrons for a Neutral Atom",
-        "text": "What is $$127-53$$?",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a0e472bquantum1a-h5",
-        "type": "hint",
-        "dependencies": [
-            "a0e472bquantum1a-h3"
-        ],
-        "title": "Determine the Number of Electrons for a Neutral Atom",
-        "text": "Electrons $$=$$ (# of electrons for a neutral atom) - (ion charge)",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a0e472bquantum1a-h6",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$54$$"
-        ],
-        "dependencies": [
-            "a0e472bquantum1a-h5"
-        ],
-        "title": "Determine the Number of Electrons for a Neutral Atom",
-        "text": "What is $$53$$ - $$(-1)$$?",
+        "title": "Worked Solution",
+        "text": "For the iodine anion in question, we can determine the number of protons, neutrons, and electrons as follows:\\n\\n$$1$$. Protons: The atomic number of iodine (I) is $$53$$, which means it has $$53$$ protons.\\n\\n$$2$$. Neutrons: The mass number is given as $$127$$. The number of neutrons can be found by subtracting the atomic number from the mass number:\\n\\nNumber of neutrons $$=$$ $$127$$ - $$53$$ $$=$$ $$74$$\\n\\nSo, there are $$74$$ neutrons.\\n\\n$$3$$. Electrons: Since this is an iodine anion (I\u207b), it has gained one extra electron. Normally, a neutral iodine atom has $$53$$ electrons (equal to the number of protons). With the extra electron, the total number of electrons in the I\u207b anion is:\\n\\nNumber of electrons $$=$$ $$53$$ + $$1$$ $$=$$ $$54$$\\n\\nThus, one iodine anion (I\u207b) has:\\n- $$53$$ protons,\\n- $$74$$ neutrons, and\\n- $$54$$ electrons.",
         "variabilization": {},
         "oer": "",
         "license": ""
