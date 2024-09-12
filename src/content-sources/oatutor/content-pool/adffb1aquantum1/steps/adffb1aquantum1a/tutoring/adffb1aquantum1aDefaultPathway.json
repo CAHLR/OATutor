@@ -1,0 +1,82 @@
+[
+    {
+        "id": "adffb1aquantum1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Atomic Number of Iodine",
+        "text": "The atomic number of iodine is $$53$$. This means that a neutral iodine atom has $$53$$ protons.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1aquantum1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adffb1aquantum1a-h1"
+        ],
+        "title": "Determine the Number of Protons in a Neutral Atom",
+        "text": "Number of protons for a neutral atom $$=$$ atomic number.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1aquantum1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adffb1aquantum1a-h2"
+        ],
+        "title": "Determine the Number of Neutrons for a Neutral Atom",
+        "text": "Number of neutrons for a neutral atom $$=$$ mass number - atomic number",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1aquantum1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$74$$"
+        ],
+        "dependencies": [
+            "adffb1aquantum1a-h3"
+        ],
+        "title": "Determine the Number of Neutrons for a Neutral Atom",
+        "text": "What is $$127-53$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1aquantum1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adffb1aquantum1a-h3"
+        ],
+        "title": "Determine the Number of Electrons for a Neutral Atom",
+        "text": "Electrons $$=$$ (# of electrons for a neutral atom) - (ion charge)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1aquantum1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$54$$"
+        ],
+        "dependencies": [
+            "adffb1aquantum1a-h5"
+        ],
+        "title": "Determine the Number of Electrons for a Neutral Atom",
+        "text": "What is $$53$$ - $$(-1)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

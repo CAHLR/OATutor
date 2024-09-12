@@ -1,0 +1,94 @@
+[
+    {
+        "id": "adffb1ashrodinger2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Principal Quantum Number",
+        "text": "The principal quantum number N tells us the energy level. Here, $$N=3$$, which indicates that the orbital is on the third energy level.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adffb1ashrodinger2a-h1"
+        ],
+        "title": "Match the Angular Momentum Quantum Number to the Corresponding Orbital.",
+        "text": "Match the angular momentum quantum number to the corresponding orbital. For reference, l $$=$$ 0: s orbital, $$l=1$$: $$p$$ orbital, $$l=2$$: $$d$$ orbital, $$l=3$$: f orbital, etc.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adffb1ashrodinger2a-h2"
+        ],
+        "title": "Calculate the Number of Angular Nodes",
+        "text": "Calculate the number of angular nodes: angular nodes $$=$$ l.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "adffb1ashrodinger2a-h2"
+        ],
+        "title": "Calculate the Number of Angular Nodes",
+        "text": "What is l?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adffb1ashrodinger2a-h4"
+        ],
+        "title": "Calculate the Number of Radial Nodes",
+        "text": "Calculate the number of radial nodes: radial nodes $$=$$ $$n$$ - l - $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "adffb1ashrodinger2a-h5"
+        ],
+        "title": "Calculate the Number of Radial Nodes",
+        "text": "What is $$3$$ - $$2$$ - 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adffb1ashrodinger2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adffb1ashrodinger2a-h6"
+        ],
+        "title": "Select Visual Representation",
+        "text": "Given the orbital and number of nodes, select the corresponding visual representation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
