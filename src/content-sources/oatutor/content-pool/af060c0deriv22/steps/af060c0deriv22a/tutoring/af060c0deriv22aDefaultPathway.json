@@ -1,0 +1,111 @@
+[
+    {
+        "id": "af060c0deriv22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "Let s(t) be a function giving the position of an object at time $$t$$. The velocity of the object at time $$t$$ is given by v(t) $$=$$ s'(t), the derivative of s(t). The speed is |v(t)|, the absolute value of v(t). First, solve for the v(t) function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-32t$$ + $$100$$"
+        ],
+        "dependencies": [
+            "af060c0deriv22a-h1"
+        ],
+        "title": "Solving for v(t)",
+        "text": "What is s'(t)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv22a-h2"
+        ],
+        "title": "Taking the Derivative of s(t)",
+        "text": "s(t) $$=$$ $$-16t^2$$ + $$100t$$ + $$85$$\\ns'(t) $$=$$ $$2\\left(-16\\right) t^{2-1}$$ + $$100$$\\ns'(t) $$=$$ $$-32t$$ + $$100$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv22a-h3"
+        ],
+        "title": "Plugging in Time",
+        "text": "Plug $$t$$ $$=$$ $$5.75$$ into v(t) $$=$$ $$-32t$$ + $$100$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-84$$"
+        ],
+        "dependencies": [
+            "af060c0deriv22a-h4"
+        ],
+        "title": "Solving for $$v(5.75)$$",
+        "text": "What is $$v(5.75)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv22a-h5"
+        ],
+        "title": "Calculating $$v(5.75)$$",
+        "text": "$$v(5.75)$$ $$=$$ $$-32(5.75)$$ + $$100$$ $$=$$ $$-184$$ + $$100$$ $$=$$ $$-84$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$84$$"
+        ],
+        "dependencies": [
+            "af060c0deriv22a-h6"
+        ],
+        "title": "Solving for Speed",
+        "text": "Given that speed $$=$$ |v(t)|, what is the speed $$\\frac{ft}{s}$$ of the potato?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv22a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv22a-h7"
+        ],
+        "title": "Taking the Absolute Value of v(t)",
+        "text": "Speed $$=$$ |-84| $$=$$ $$84$$ $$\\frac{ft}{s}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

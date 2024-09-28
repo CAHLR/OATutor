@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a7991e1fundamental6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "antiderivative",
+        "text": "Remember that the power rule for antiderivative is- if $$y=x^n$$, then $$\\int x n \\,dx=\\frac{x^{n+1}}{n+1}+C$$. Using this, first, find the antiderivative of the integrand.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3} x^{\\frac{3}{2}}-2\\sqrt{x}$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental6a-h1"
+        ],
+        "title": "antiderivative",
+        "text": "What is the antiderivative of $$\\frac{x-1}{\\sqrt{x}}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7991e1fundamental6a-h2"
+        ],
+        "title": "theorem",
+        "text": "Now that you know the antiderivative, find $$F(a)-F(b)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{40}{3}$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental6a-h3"
+        ],
+        "title": "theorem",
+        "text": "What is $$\\frac{2}{3} 9^{\\frac{3}{2}}-2\\sqrt{9}-\\frac{2}{3} 1^{\\frac{3}{2}}-2\\sqrt{1}=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aeececestability10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Equilibirum Condition",
+        "text": "In order to find the force on the elbow joint, we need to find the other forces since the total forces should sum to zero allowing to solve for the elbow joint force if we know all other forces.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeececestability10a-h1"
+        ],
+        "title": "Use Torque",
+        "text": "While the arm and book forces can be solved using Newton's second law, we must use torque to find the bicep force. The total torque should sum to zero so since we can solve for the torques of the other values, we can find the torque on the bicep.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeececestability10a-h2"
+        ],
+        "title": "Determine Net Torque",
+        "text": "The bicep torque will be positive, arm torque will be negative, and book torque will be negative. Now we can solve for torque: F * $$r$$ (all forces are perpendicular so we don't need to worry about sine).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.816$$"
+        ],
+        "dependencies": [
+            "aeececestability10a-h3"
+        ],
+        "title": "Calculate the Bicep Torque",
+        "text": "Solve for Bicep Torque: $$2.5\\times9.8\\times0.16$$ + $$4\\times9.8\\times0.38$$. Keep three decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$470.4$$"
+        ],
+        "dependencies": [
+            "aeececestability10a-h4"
+        ],
+        "title": "Calculate Bicep Force",
+        "text": "We know Bicep torque so we just need to divide the torque by its distance to the elbow to get the force. Solve for Bicep Force.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aeececestability10a-h5"
+        ],
+        "title": "Calculate Elbow Force",
+        "text": "Now that we know Bicep Force as well as Arm Force and Book Force, we can find Elbow force.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$406.7$$"
+        ],
+        "dependencies": [
+            "aeececestability10a-h6"
+        ],
+        "title": "Calculate the Elbow Force",
+        "text": "Solve for Elbow Force: $$2.5\\times9.8$$ + $$4\\times9.8$$ - $$470.4$$ (Remember we're asking for the magnitude of the force).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

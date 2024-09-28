@@ -1,0 +1,70 @@
+[
+    {
+        "id": "af060c0deriv15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "One use for the derivative is to analyze motion along a line. Let s(t) be a function giving the position of an object at time $$t$$. The velocity of the object at time $$t$$ is given by v(t) $$=$$ s'(t), the derivative of s(t). First, solve for s'(t).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$464$$"
+        ],
+        "dependencies": [
+            "af060c0deriv15a-h1"
+        ],
+        "title": "Solving for s'(t)",
+        "text": "What is s'(t)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv15a-h2"
+        ],
+        "title": "Taking the Derivative of s(t)",
+        "text": "v(t) $$=$$ s'(t)\\ns(t) $$=$$ $$-16t^2$$ + $$560t$$\\ns'(t) $$=$$ $$2\\left(-16\\right) t^{2-1}$$ + $$560$$\\ns'(t) $$=$$ $$-32t$$ + $$560$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv15a-h3"
+        ],
+        "title": "Substituting Time",
+        "text": "Plug $$t$$ $$=$$ $$3$$ into s'(t) $$=$$ $$-32t$$ + $$560$$ to solve for the velocity (ft/ s**2) of the rocket $$3$$ seconds after being fired.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$464$$"
+        ],
+        "dependencies": [
+            "af060c0deriv15a-h4"
+        ],
+        "title": "Final Calculations",
+        "text": "s'(3) $$=$$ $$-32(3)$$ + $$560$$ $$=$$ $$-96$$ + $$560$$. What is the velocity (ft/ s**2) of the rocket $$3$$ seconds after being fired?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

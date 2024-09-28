@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abe5ededefinite14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graph the Function",
+        "text": "If we graph function $$3-|x-3|$$, we notice that the graph represents a symmetrical triangle from [0, 6]. We will use the area of a triangle formula.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite14a-h1"
+        ],
+        "title": "Find the Area of Two Triangles $$A_1$$ and $$A_2$$",
+        "text": "We can split the triangle vertically into two triangles $$A_1$$ and $$A_2$$ so they both resemble right triangles. We will find the area for these two triangles then add them up together.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abe5ededefinite14a-h2"
+        ],
+        "title": "Formula for Area of a Triangle",
+        "text": "The formula for the area of a triangle is $$A=\\frac{1}{2} b h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abe5ededefinite14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "abe5ededefinite14a-h3"
+        ],
+        "title": "Add $$A_1$$ and $$A_2$$",
+        "text": "What is $$A_1$$ + $$A_2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$9$$",
+            "$$10$$",
+            "$$11$$"
+        ],
+        "subHints": [
+            {
+                "id": "abe5ededefinite14a-h4-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$9$$"
+                ],
+                "dependencies": [],
+                "title": "Add $$A_1$$ and $$A_2$$",
+                "text": "What is $$4.5+4.5$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$8$$",
+                    "$$9$$",
+                    "$$10$$",
+                    "$$11$$"
+                ]
+            }
+        ]
+    }
+]

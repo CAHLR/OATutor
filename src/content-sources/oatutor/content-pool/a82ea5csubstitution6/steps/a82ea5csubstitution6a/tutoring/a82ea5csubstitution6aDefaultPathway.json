@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a82ea5csubstitution6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Let $$u=4x^2+3$$. Then, $$du=8xdx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution6a-h1"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "To adjust the limits of integration, we note that when $$x=0$$, $$u=3$$, and when $$x=1$$, $$u=7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/8*\\int_{3}^{7} e^u \\,du$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution6a-h2"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "What is the result of adjusting the limits of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1/8*\\int_{3}^{7} e^u \\,du$$",
+            "$$\\int_{3}^{7} e^u \\,du$$",
+            "$$1/8*\\int_{7}^{3} e^u \\,du$$",
+            "$$\\int_{7}^{3} e^u \\,du$$"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution6a-h3"
+        ],
+        "title": "Integrate",
+        "text": "Integrate the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

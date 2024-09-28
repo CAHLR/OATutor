@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a82ea5csubstitution20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Estimate the Coefficients",
+        "text": "The graph is a function of the form $$f(x)=\\arccos(nt)+\\operatorname{bcos}\\left(mt\\right)$$. Take a look at the graph and note the frequencies. Note the frequency parameters are $$n$$ and $$m$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f(t)=2cos(3t)-cos(2t)$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution20a-h1"
+        ],
+        "title": "Estimate the Coefficients",
+        "text": "2cos",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f(t)=2cos(3t)-cos(2t)$$",
+            "$$f(t)=3cos(2t)-cos(3t)$$",
+            "$$f(t)=cos(3t)-cos(2t)$$",
+            "$$f(t)=3cos(3t)-cos(2t)$$"
+        ]
+    },
+    {
+        "id": "a82ea5csubstitution20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a82ea5csubstitution20a-h2"
+        ],
+        "title": "Set Up the Integral",
+        "text": "Use the correct function to approximate $$\\int_{0}^{pi} f(t) \\,dt$$. Evaluate the integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a82ea5csubstitution20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a82ea5csubstitution20a-h3"
+        ],
+        "title": "Approximate the Integral",
+        "text": "The integral would be set up as $$\\int_{0}^{pi} 2cos(3t)-cos(2t) \\,dt$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a82ea5csubstitution20a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0$$"
+                ],
+                "dependencies": [],
+                "title": "Approximate the Integral",
+                "text": "What is $$0-0$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]
