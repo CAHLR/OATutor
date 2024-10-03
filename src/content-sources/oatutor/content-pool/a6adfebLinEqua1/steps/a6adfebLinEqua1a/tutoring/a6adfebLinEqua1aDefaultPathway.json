@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a6adfebLinEqua1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolation",
+        "text": "First we should isolate the variable on one side of the equation by adding, subtracting, multiplying or dividing the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x=12$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua1a-h1"
+        ],
+        "title": "Subtraction",
+        "text": "What is the result after subtracting $$7$$ from both sides?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6adfebLinEqua1a-h2"
+        ],
+        "title": "Normalization",
+        "text": "When the variable is multiplied by a coefficient in the final stage, multiply both sides of the equation by the reciprocal of the cofficient.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=6$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua1a-h3"
+        ],
+        "title": "Multiplication",
+        "text": "What is the result after multiplying both sides by $$\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

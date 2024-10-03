@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a690481linear5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Obtaining dy",
+        "text": "In order to determine dy, we must take the derivative of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear5a-h1"
+        ],
+        "title": "Solving for y'",
+        "text": "$$y$$ $$=$$ cos(x) such that y' $$=$$ $$-sin(x)$$. Thus, dy $$=$$ $$(-sin(x))dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear5a-h2"
+        ],
+        "title": "Plugging Into y'",
+        "text": "Plug $$x$$ $$=$$ $$3$$ and dx $$=$$ $$0.1$$ into dy $$=$$ $$(-sin(x))dx$$ to solve for dy.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.1sin(3)$$"
+        ],
+        "dependencies": [
+            "a690481linear5a-h3"
+        ],
+        "title": "Determining dy",
+        "text": "What is dy?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear5a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.1sin(3)$$"
+                ],
+                "dependencies": [],
+                "title": "Substitution and Simplification to Getting dy",
+                "text": "dy $$=$$ $$(-sin(x))dx$$ $$=$$ $$(-sin(3))(0.1)$$. What is dy?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

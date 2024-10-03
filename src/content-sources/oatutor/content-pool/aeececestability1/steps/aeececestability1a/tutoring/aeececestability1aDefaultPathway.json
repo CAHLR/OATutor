@@ -1,0 +1,104 @@
+[
+    {
+        "id": "aeececestability1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be (in Nm)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aeececestability1a-h1"
+        ],
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be when the seesaw is balanced (in Nm)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeececestability1a-h1"
+        ],
+        "title": "Calculate the Forces",
+        "text": "Assume the first child pushes in the negative direction and the second child pushes in the positive direction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-196$$"
+        ],
+        "dependencies": [
+            "aeececestability1a-h3"
+        ],
+        "title": "Force from First Fhild",
+        "text": "What force is exerted by the first child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$294$$"
+        ],
+        "dependencies": [
+            "aeececestability1a-h3"
+        ],
+        "title": "Force from Second Child",
+        "text": "What force is exerted by the second child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aeececestability1a-h3"
+        ],
+        "title": "Use the Torque Formula",
+        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$. Note that if child one sits $$x$$ meters away from the pivot, child $$2$$ sits $$3-x$$ meters away from the pivot. Solve for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeececestability1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.25$$"
+        ],
+        "dependencies": [
+            "aeececestability1a-h6"
+        ],
+        "title": "Solve for the Distance",
+        "text": "Solve for x: $$0$$ $$=$$ $$-196$$ * $$x$$ + $$294$$ * $$(3-x)$$ (give answer in meters).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

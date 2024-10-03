@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a7991e1fundamental2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area Under",
+        "text": "First, find the area under the function in the first quadrant that is bounded by the $$x-$$ and $$y-axes$$. Integrate f(x) between the limits of a and $$b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental2a-h1"
+        ],
+        "title": "Area Under",
+        "text": "What is $$\\frac{3^3}{3}-\\frac{0^3}{3}=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7991e1fundamental2a-h2"
+        ],
+        "title": "Average Value",
+        "text": "Next, find the average value by multiplying the area by $$\\frac{1}{b-a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental2a-h3"
+        ],
+        "title": "Average Value",
+        "text": "What is $$9\\frac{1}{3-0}=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7991e1fundamental2a-h4"
+        ],
+        "title": "c",
+        "text": "Lastly, set the average value to f(c) and solve for c.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental2a-h5"
+        ],
+        "title": "c",
+        "text": "Given the interval of [0,3} and $$c^2=3$$, what is $$c=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "id": "afc4165integration12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "We will start by converting the word problem into the mathematical expession. According to the Net change theorem, the rate of change of surface of a cube formula will be integrated with the boundaries go from $$x=s$$ to $$x=2s$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int_{s}^{2s} 12x \\,dx$$"
+        ],
+        "dependencies": [
+            "afc4165integration12a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "With the information given in hint $$1$$, how can we express the integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int_{s}^{2s} 12x \\,dx$$",
+            "$$\\int_{s}^{2s} 2x \\,dx$$",
+            "$$\\int_{s}^{2s} 6x \\,dx$$",
+            "$$\\int_{2s}^{4s} x \\,dx$$"
+        ],
+        "subHints": [
+            {
+                "id": "afc4165integration12a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Set up the integral",
+                "text": "The surface of a cube formula originally is $$6x^2$$ with $$x$$ is the length of the cube.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "afc4165integration12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration12a-h2"
+        ],
+        "title": "Net change theorem",
+        "text": "The Net Change Theorem giving the integral for determining change in a function F(x) when $$x$$ changes from a to $$b$$ is stated as $$F(b)-F(a)=\\int_{a}^{b} \\frac{d}{\\operatorname{dx}\\left(F\\left(x\\right)\\right)} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration12a-h3"
+        ],
+        "title": "Calculate the derivative",
+        "text": "$$\\frac{d}{dx} F\\left(x\\right)=\\frac{d}{dx} 6x^2=12x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration12a-h4"
+        ],
+        "title": "Compute the integral",
+        "text": "$$\\int_{s}^{2s} 12x \\,dx=\\frac{12x^2}{2}$$ with $$x$$ running from $$x=s$$ to $$x=2s$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration12a-h5"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{12{\\left(2s\\right)}^2}{2}-\\frac{12s^2}{2}=18s^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

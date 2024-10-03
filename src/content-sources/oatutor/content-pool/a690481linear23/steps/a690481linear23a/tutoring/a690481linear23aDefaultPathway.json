@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a690481linear23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Surface Area of a Cube Formula",
+        "text": "The surface area of a cube is given by A $$=$$ $$6x^2$$. Find the derivative of A.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12x$$"
+        ],
+        "dependencies": [
+            "a690481linear23a-h1"
+        ],
+        "title": "Taking the Derivative",
+        "text": "What is A'?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear23a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$12x$$"
+                ],
+                "dependencies": [],
+                "title": "Calculating A'",
+                "text": "A' $$=$$ $$26\\left(x^{2-1}\\right)$$ $$=$$ $$2\\times6 x$$. What is A'?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear23a-h2"
+        ],
+        "title": "Final Answer",
+        "text": "Now that we have calculated A', we know that dA $$=$$ 12xdx.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

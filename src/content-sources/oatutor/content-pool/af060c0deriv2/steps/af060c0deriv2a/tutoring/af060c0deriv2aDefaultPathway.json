@@ -1,0 +1,148 @@
+[
+    {
+        "id": "af060c0deriv2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "One use for the derivative is to analyze motion along a line. Let s(t) be a function giving the position of an object at time $$t$$. The instantaneous velocity of the object at time $$t$$ is given by v(t) $$=$$ s'(t), the derivative of s(t).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv2a-h1"
+        ],
+        "title": "Solving for Time When s(t) $$=$$ $$0$$",
+        "text": "The first step is determining how long it takes the ball to reach the ground. To do this, set s(t) $$=$$ $$0$$ and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "af060c0deriv2a-h2"
+        ],
+        "title": "Determining $$t$$",
+        "text": "What is $$t$$, the time (in seconds) that it takes for the ball to reach the ground?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "af060c0deriv2a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$2$$"
+                ],
+                "dependencies": [],
+                "title": "Step by Step to Solving for $$t$$",
+                "text": "s(t) $$=$$ $$-16t^2$$ + $$64$$\\nSet s(t) to 0: $$-16t^2$$ + $$64$$ $$=$$ $$0$$\\nSubtract $$64$$ from both sides: $$-16t^2$$ $$=$$ $$-64$$\\nDivide $$-16$$ from both sides: $$\\frac{\\left(-16t^2\\right)}{-16}$$ $$=$$ $$\\frac{-64}{-16}$$ => $$t^2$$ $$=$$ $$4$$\\nTake the square root of both sides: $$\\sqrt{t^2}$$ $$=$$ $$\\sqrt{4}$$\\nWhat is $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "af060c0deriv2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-64$$"
+        ],
+        "dependencies": [
+            "af060c0deriv2a-h3"
+        ],
+        "title": "Solving for the Instantaneous Velocity",
+        "text": "Now that we have determined that $$t$$ $$=$$ $$2$$ when the ball hits the ground, we can solve for the instantaneous velocity of the ball at v(2). If v(t) $$=$$ s'(t), what is v(2)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv2a-h4"
+        ],
+        "title": "Taking the Derivative",
+        "text": "Given s(t) $$=$$ $$-16t^2$$ + $$64$$, find s'(t) by taking the derivative of s(t).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv2a-h5"
+        ],
+        "title": "Solving for s'(t)",
+        "text": "s(t) $$=$$ $$-16t^2$$ + $$64$$\\ns'(t) $$=$$ 2(-16)t**(2-1) + $$0$$\\ns'(t) $$=$$ $$-32t$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-64$$"
+        ],
+        "dependencies": [
+            "af060c0deriv2a-h6"
+        ],
+        "title": "Finding v(2)",
+        "text": "Given that s'(t) $$=$$ $$-32t$$ and v(t) $$=$$ s'(t), what is v(2)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "af060c0deriv2a-h7-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-64$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging Into the Equation",
+                "text": "Plug $$t$$ $$=$$ $$2$$ into s'(t) $$=$$ $$-32t$$ to solve for v(2). What answer do you get?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "af060c0deriv2a-h7-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-64$$"
+                ],
+                "dependencies": [],
+                "title": "Steps to Obtaining the Answer",
+                "text": "v(t) $$=$$ s'(t) $$=$$ $$-32t$$\\nv(2) $$=$$ s'(2) $$=$$ $$-32(2)$$\\nWhat is v(2), the instantaneous velocity $$\\frac{ft}{s}$$ of the ball when it hits the ground?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]
