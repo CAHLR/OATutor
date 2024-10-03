@@ -42,6 +42,9 @@ jobs:
     - name: Set environment variable for spreadsheet key
       run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
+    - name: Remove existing content
+      run: rm -rf content-staging-build/src/content-sources/oatutor/*
+
     - name: Create Content Directory
       run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
 
@@ -49,10 +52,6 @@ jobs:
       run: |
         cd content-staging-build/src/content-sources/oatutor/Content
         python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
-
-    - name: Merge new content into existing content
-      run: |
-        rsync -av content-staging-build/src/content-sources/oatutor/Content/ content-staging-build/src/content-sources/oatutor/
 
     - name: Move and prepare files
       run: |
