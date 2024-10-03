@@ -3,7 +3,8 @@ name: Automated Content Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 3 * * *'
+    - cron: '0 15 * * *'
 
 jobs:
   update-content:
