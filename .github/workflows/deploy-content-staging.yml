@@ -49,13 +49,9 @@ jobs:
       run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
 
     - name: Run content update script
-      uses: softrams/steps-retry-action@v2
-      with:
-        retryCount: 4
-        timeBetweenRetries: 60
-        command: |
-          cd content-staging-build/src/content-sources/oatutor/Content
-          python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+      run: |
+        cd content-staging-build/src/content-sources/oatutor/Content
+        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
 
     - name: Move and prepare files
       run: |
