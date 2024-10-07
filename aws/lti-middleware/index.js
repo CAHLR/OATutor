@@ -29,8 +29,7 @@ const consumerKeySecretMap = {
   key: "secret",
 };
 
-const oatsHost = "https://cahlr.github.io/OATutor/#";
-const stagingHost = "https://cahlr.github.io/OATutor-Staging/#";
+const oatsHost = "https://quadro.ist.berkeley.edu:2030/#";
 const unlinkedPage = "assignment-not-linked";
 const alreadyLinkedPage = "assignment-already-linked";
 const jwtAlgorithm = "HS256";

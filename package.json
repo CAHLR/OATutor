@@ -33,7 +33,7 @@
     "use-window-focus": "^1.4.1"
   },
   "scripts": {
-    "start": "cross-env PORT=3001 react-app-rewired start",
+    "start": "HTTPS=true SSL_CRT_FILE=/etc/letsencrypt/live/quadro.ist.berkeley.edu/fullchain.pem SSL_KEY_FILE=/etc/letsencrypt/live/quadro.ist.berkeley.edu/privkey.pem PORT=2030 HOST=quadro.ist.berkeley.edu react-scripts start",
     "prestart": "node src/tools/preprocessProblemPool.js",
     "build": "react-app-rewired build",
     "build-localhost": "cross-env PUBLIC_URL=/ react-app-rewired build",
