@@ -9,6 +9,7 @@ import {
     coursePlans,
     findLessonById,
     LESSON_PROGRESS_STORAGE_KEY,
+    CANVAS_LESSON_PROGRESS_KEY,
     MIDDLEWARE_URL,
     SITE_NAME,
     ThemeContext,
@@ -232,16 +233,23 @@ class Platform extends React.Component {
         this.lesson = lesson;
 
         const loadLessonProgress = async () => {
-            const { getByKey } = this.context.browserStorage;
-            return await getByKey(
-                LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)
-            ).catch((err) => {});
+            if (this.context?.jwt) {
+                console.log("loading lesson progress")
+                const key = CANVAS_LESSON_PROGRESS_KEY(this.context.jwt, this.lesson.id);
+                return await this.context.firebase.getCompletedProblems(key).catch((err) => {});
+            } else {
+                const { getByKey } = this.context.browserStorage;
+                return await getByKey(
+                    LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)
+                ).catch((err) => {});
+            }
         };
 
         const [, prevCompletedProbs] = await Promise.all([
             this.props.loadBktProgress(),
             loadLessonProgress(),
         ]);
+        console.log("GOT THE COMPLETED PROBS, HERE THEY ARE: ", prevCompletedProbs)
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (2)");
             return;
@@ -377,23 +385,45 @@ class Platform extends React.Component {
 
     problemComplete = async (context) => {
         this.completedProbs.add(this.state.currProblem.id);
-        const { setByKey } = this.context.browserStorage;
-        await setByKey(
-            LESSON_PROGRESS_STORAGE_KEY(this.lesson.id),
-            this.completedProbs
-        ).catch((error) => {
-            this.context.firebase.submitSiteLog(
-                "site-error",
-                `componentName: Platform.js`,
-                {
-                    errorName: error.name || "n/a",
-                    errorCode: error.code || "n/a",
-                    errorMsg: error.message || "n/a",
-                    errorStack: error.stack || "n/a",
-                },
-                this.state.currProblem.id
-            );
-        });
+        console.log(this.context)
+        console.log(this.context.jwt)
+        if (this.context?.jwt) {
+            const key = CANVAS_LESSON_PROGRESS_KEY(this.context.jwt, this.lesson.id)
+            await this.context.firebase.setCompletedProblems(
+                key,
+                Array.from(this.completedProbs)
+            ).catch((error) => {
+                this.context.firebase.submitSiteLog(
+                    "site-error",
+                    `componentName: Platform.js`,
+                    {
+                        errorName: error.name || "n/a",
+                        errorCode: error.code || "n/a",
+                        errorMsg: error.message || "n/a",
+                        errorStack: error.stack || "n/a",
+                    },
+                    this.state.currProblem.id
+                );
+            });
+        } else {
+            const { setByKey } = this.context.browserStorage;
+            await setByKey(
+                LESSON_PROGRESS_STORAGE_KEY(this.lesson.id),
+                this.completedProbs
+            ).catch((error) => {
+                this.context.firebase.submitSiteLog(
+                    "site-error",
+                    `componentName: Platform.js`,
+                    {
+                        errorName: error.name || "n/a",
+                        errorCode: error.code || "n/a",
+                        errorMsg: error.message || "n/a",
+                        errorStack: error.stack || "n/a",
+                    },
+                    this.state.currProblem.id
+                );
+            });
+        }
         this._nextProblem(context);
     };
 
