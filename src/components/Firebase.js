@@ -10,10 +10,12 @@ import {
 import { initializeApp } from "firebase/app";
 import {
     arrayUnion,
+    connectFirestoreEmulator,
     doc,
     getFirestore,
     serverTimestamp,
     setDoc,
+    getDoc,
 } from "firebase/firestore";
 import daysSinceEpoch from "../util/daysSinceEpoch";
 import {
@@ -25,6 +27,7 @@ import {
 
 const problemSubmissionsOutput = "problemSubmissions";
 const canvasLessonProgress = "canvasLessonProgress";
+const canvasProblemMastery = "canvasProblemMastery";
 const problemStartLogOutput = "problemStartLogs";
 const GPTExperimentOutput = "GPTExperimentOutput";
 const feedbackOutput = "feedbacks";
@@ -334,9 +337,8 @@ class Firebase {
 
     async getCompletedProblems(docID) {
         const collectionName = this.getCollectionName(canvasLessonProgress);
-        const docRef = this.db.collection(collectionName).doc(docID);
-        
-        const docSnapshot = await docRef.get();
+        const docRef = doc(this.db, collectionName, docID);
+        const docSnapshot = await getDoc(docRef);
     
         if (!docSnapshot.exists) {
             throw new Error(`Document with ID ${docID} does not exist.`);
@@ -346,14 +348,37 @@ class Firebase {
         if (!data || !data.problems) {
             throw new Error(`Document with ID ${docID} does not contain "problems" field.`);
         }
-        console.log("in get completed problems", data.problems);
+
         return data.problems;
     }
 
     async setCompletedProblems(docID, problems) {
-        console.log("in set completed problems", problems);
         const problemObject = {"problems": problems};
         this.writeData(canvasLessonProgress, problemObject, docID);
+    }
+
+    async getMastery(docID) {
+        const collectionName = this.getCollectionName(canvasProblemMastery);
+        const docRef = doc(this.db, collectionName, docID);
+        
+        const docSnapshot = await getDoc(docRef);
+    
+        if (!docSnapshot.exists) {
+            throw new Error(`Document with ID ${docID} does not exist.`);
+        }
+    
+        const data = docSnapshot.data();
+        if (!data) {
+            throw new Error(`Document with ID ${docID} does not contain "mastery" field.`);
+        }
+
+        console.log("got mastery from firebase: ", data.mastery);
+        return data.mastery;
+    }
+
+    async setMastery(docID, masteryObject) {
+        masteryObject = {"mastery": masteryObject};
+        this.writeData(canvasProblemMastery, masteryObject, docID);
     }
 
     startedProblem(problemID, courseName, lesson, lessonObjectives) {

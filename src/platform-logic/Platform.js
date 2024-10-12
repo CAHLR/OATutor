@@ -234,7 +234,6 @@ class Platform extends React.Component {
 
         const loadLessonProgress = async () => {
             if (this.context?.jwt) {
-                console.log("loading lesson progress")
                 const key = CANVAS_LESSON_PROGRESS_KEY(this.context.jwt, this.lesson.id);
                 return await this.context.firebase.getCompletedProblems(key).catch((err) => {});
             } else {
@@ -249,7 +248,6 @@ class Platform extends React.Component {
             this.props.loadBktProgress(),
             loadLessonProgress(),
         ]);
-        console.log("GOT THE COMPLETED PROBS, HERE THEY ARE: ", prevCompletedProbs)
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (2)");
             return;
@@ -385,8 +383,6 @@ class Platform extends React.Component {
 
     problemComplete = async (context) => {
         this.completedProbs.add(this.state.currProblem.id);
-        console.log(this.context)
-        console.log(this.context.jwt)
         if (this.context?.jwt) {
             const key = CANVAS_LESSON_PROGRESS_KEY(this.context.jwt, this.lesson.id)
             await this.context.firebase.setCompletedProblems(
