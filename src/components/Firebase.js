@@ -216,7 +216,8 @@ class Firebase {
         courseName,
         hintType,
         dynamicHint,
-        bioInfo
+        bioInfo,
+        keylog_data
     ) {
         if (!DO_LOG_DATA) {
             console.debug("Not using firebase for logging (2)");
@@ -245,9 +246,10 @@ class Firebase {
             hintType,
             dynamicHint,
             bioInfo,
+            keylog_data,
         };
-        // return this.writeData(GPTExperimentOutput, data);
-        return this.writeData(problemSubmissionsOutput, data);
+        return this.writeData(GPTExperimentOutput, data);
+        // return this.writeData(problemSubmissionsOutput, data);
     }
 
     hintLog(
@@ -288,8 +290,8 @@ class Firebase {
             dynamicHint,
             bioInfo,
         };
-        // return this.writeData(GPTExperimentOutput, data);
-        return this.writeData(problemSubmissionsOutput, data);
+        return this.writeData(GPTExperimentOutput, data);
+        // return this.writeData(problemSubmissionsOutput, data);
     }
 
     mouseLog(payload) {

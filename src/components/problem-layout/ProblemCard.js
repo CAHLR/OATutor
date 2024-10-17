@@ -29,26 +29,59 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import {
     toastNotifyCompletion,
-    toastNotifyCorrectness, toastNotifyEmpty
+    toastNotifyCorrectness,
+    toastNotifyEmpty,
 } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import axios from "axios";
-import withTranslation from "../../util/withTranslation.js"
+import withTranslation from "../../util/withTranslation.js";
+import { ActivityDetector } from "@components/keystroke/ActivityDetector.jsx";
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
+
+    // keystroke logging class features
+    userId = 0;
+    sessionId = "XXX";
+    quizId = "YYY";
+    endpoint = "https://XXXX";
+
+    TextareaTouch = false;
+    taskonset = 0; // set the value as the time when the target question is loaded.
+    EventID = 0;
+    startSelect = [];
+    endSelect = [];
+    ActivityCancel = []; // to keep track of changes caused by control + z
+    TextChangeCancel = []; // to keep track of changes caused by control + z
+    sessionQuiz = this.sessionId + "-" + this.quizId;
+    keylog = {
+        //Proprieties
+        TaskOnSet: [], ///
+        TaskEnd: [],
+        PartitionKey: [],
+        RowKey: [],
+        EventID: [], ////
+        EventTime: [], ////
+        Output: [], ////
+        CursorPosition: [], ////
+        TextContent: [], ////
+        finalAnswer: [], ////
+        TextChange: [], ////
+        Activity: [], /////
+        FinalProduct: [], /////
+    };
 
     constructor(props, context) {
         super(props);
         // console.log("problem lesson props:", props);
 
-        this.translate = props.translate
+        this.translate = props.translate;
         this.step = props.step;
         this.index = props.index;
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
         this.keepMCOrder = props.keepMCOrder;
         this.keyboardType = props.keyboardType;
         this.allowRetry = this.giveStuFeedback;
@@ -98,8 +131,10 @@ class ProblemCard extends React.Component {
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length + 1),
-                title: this.translate('hintsystem.answer'),
-                text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
+                title: this.translate("hintsystem.answer"),
+                text:
+                    this.translate("hintsystem.answerIs") +
+                    this.step.stepAnswer,
                 type: "bottomOut",
                 dependencies: Array.from(Array(this.hints.length).keys()),
             });
@@ -116,8 +151,10 @@ class ProblemCard extends React.Component {
                             i +
                             "-s" +
                             (hint.subHints.length + 1),
-                        title: this.translate('hintsystem.answer'),
-                        text: this.translate('hintsystem.answerIs') + hint.hintAnswer[0],
+                        title: this.translate("hintsystem.answer"),
+                        text:
+                            this.translate("hintsystem.answerIs") +
+                            hint.hintAnswer[0],
                         type: "bottomOut",
                         dependencies: Array.from(
                             Array(hint.subHints.length).keys()
@@ -141,7 +178,118 @@ class ProblemCard extends React.Component {
             bioInfo: "",
             enableHintGeneration: true,
         };
+
+        // keystroke logging part
+        this.finalAnswerAreaRef = React.createRef();
+        this.submitButtonRef = React.createRef();
     }
+
+    // keystroke logging functionalities
+    handleCursor = (refType, keylog, startSelect, endSelect) => {
+        if (refType == "finalAnswerAreaRef") {
+            keylog.CursorPosition.push(
+                this.finalAnswerAreaRef.current.selectionEnd
+            );
+            startSelect.push(this.finalAnswerAreaRef.current.selectionStart);
+            endSelect.push(this.finalAnswerAreaRef.current.selectionEnd);
+        }
+    };
+
+    logCurrentText = (e) => {
+        this.keylog.TextContent.push(e.target.value);
+    };
+
+    handleKeyDown = (e) => {
+        let d_press = new Date();
+        this.keylog.EventTime.push(d_press.getTime() - this.taskonset); // start time
+
+        this.EventID = this.EventID + 1;
+        this.keylog.EventID.push(this.EventID);
+
+        // Add a unique RowKey
+        this.keylog.RowKey.push(this.sessionQuiz + "-" + String(this.EventID));
+
+        /// when logging space, it is better to use the letter space for the output column
+        if (e.key === " ") {
+            this.keylog.Output.push("Space");
+        } else if (e.key === "unidentified") {
+            this.keylog.Output.push("VirtualKeyboardTouch");
+        } else {
+            this.keylog.Output.push(e.key);
+        }
+
+        this.logCurrentText(e);
+        this.handleCursor(this.keylog, this.startSelect, this.endSelect);
+
+        // use a customized function to detect and record different activities and the according text changes these activities bring about
+        ActivityDetector(
+            this.keylog,
+            this.startSelect,
+            this.endSelect,
+            this.ActivityCancel,
+            this.TextChangeCancel
+        );
+        // console.log(textNow);
+    };
+
+    handleTouch = () => {
+        this.TextareaTouch = true;
+    };
+
+    handleMouseClick = (e) => {
+        let mouseDown_m = new Date();
+        let MouseDownTime = mouseDown_m.getTime() - this.taskonset;
+
+        this.EventID = this.EventID + 1;
+        this.keylog.EventID.push(this.EventID);
+
+        // Add a unique RowKey
+        this.keylog.RowKey.push(this.sessionQuiz + "-" + String(this.EventID));
+
+        //////Start logging for this current click down event
+        this.keylog.EventTime.push(MouseDownTime); // starttime
+        if (e.button === 0) {
+            if (this.TextareaTouch) {
+                this.keylog.Output.push("TextareaTouch");
+            } else {
+                this.keylog.Output.push("Leftclick");
+            }
+        } else if (e.button === 1) {
+            if (this.state.TextareaTouch) {
+                this.keylog.Output.push("TextareaTouch");
+            } else {
+                this.keylog.Output.push("Middleclick");
+            }
+        } else if (e.button === 2) {
+            if (this.state.TextareaTouch) {
+                this.keylog.Output.push("TextareaTouch");
+            } else {
+                this.keylog.Output.push("Rightclick");
+            }
+        } else {
+            if (this.state.TextareaTouch) {
+                this.keylog.Output.push("TextareaTouch");
+            } else {
+                this.keylog.Output.push("Unknownclick");
+            }
+        }
+
+        this.logCurrentText(e);
+        // log cursor position
+        this.handleCursor(this.keylog, this.startSelect, this.endSelect);
+        /////// use a customized function to detect and record different activities and the according text changes these activities bring about
+        ActivityDetector(
+            this.keylog,
+            this.startSelect,
+            this.endSelect,
+            this.ActivityCancel,
+            this.TextChangeCancel
+        );
+        // set TextareaTouch back as false
+        this.setState((prevState) => ({
+            TextareaTouch: false,
+        }));
+    };
 
     _findHintId = (hints, targetId) => {
         for (var i = 0; i < hints.length; i++) {
@@ -179,7 +327,46 @@ class ProblemCard extends React.Component {
     componentDidMount() {
         // Start an asynchronous task
         this.updateBioInfo();
-        console.log("student show hints status: ", this.showHints);
+        const isFinalAnswerAreaRef = this.finalAnswerAreaRef.current;
+        // console.log("finalAnswer", this.finalAnswerAreaRef);
+
+        const isSubmitButton =
+            this.submitButtonRef.current &&
+            this.submitButtonRef.current.tagName === "BUTTON";
+
+        if (isFinalAnswerAreaRef) {
+            this.finalAnswerAreaRef.current.addEventListener("keydown", (e) => {
+                console.log("I hear a keydown event.");
+                if (
+                    e.key === "Enter" &&
+                    !e.ctrlKey &&
+                    !e.shiftKey &&
+                    !e.altKey &&
+                    !e.metaKey
+                ) {
+                    this.keylog.Output.push("Enter");
+                } else {
+                    this.handleKeyDown(e);
+                }
+            });
+
+            this.finalAnswerAreaRef.current.addEventListener(
+                "touchstart",
+                this.handleTouch
+            );
+            this.finalAnswerAreaRef.current.addEventListener(
+                "mousedown",
+                this.handleMouseClick
+            );
+        }
+
+        if (isSubmitButton) {
+            this.submitButtonRef.current.addEventListener("click", () => {
+                this.keylog.Output.push("Click Submit");
+                this.EventID = this.EventID + 1;
+                this.keylog.EventID.push(this.EventID);
+            });
+        }
     }
 
     componentDidUpdate(prevProps) {
@@ -193,6 +380,50 @@ class ProblemCard extends React.Component {
                 dynamicHint: "",
             });
             this.updateBioInfo();
+        }
+    }
+
+    componentWillUnmount() {
+        const isFinalAnswerAreaRef =
+            this.finalAnswerAreaRef.current &&
+            this.finalAnswerAreaRef.current.tagName === "TEXTAREA";
+
+        const isSubmitButton =
+            this.submitButtonRef.current &&
+            this.submitButtonRef.current.tagName === "BUTTON";
+
+        if (isFinalAnswerAreaRef) {
+            this.finalAnswerAreaRef.current.removeEventListener(
+                "keydown",
+                (e) => {
+                    if (
+                        e.key === "Enter" &&
+                        !e.ctrlKey &&
+                        !e.shiftKey &&
+                        !e.altKey &&
+                        !e.metaKey
+                    ) {
+                        this.keylog.Output.push("Remove Enter");
+                    } else {
+                        this.handleKeyDown(e);
+                    }
+                }
+            );
+
+            this.finalAnswerAreaRef.current.removeEventListener(
+                "touchstart",
+                this.handleTouch
+            );
+            this.finalAnswerAreaRef.current.removeEventListener(
+                "mousedown",
+                this.handleMouseClick
+            );
+        }
+
+        if (isSubmitButton) {
+            this.submitButtonRef.current.removeEventListener("click", () => {
+                this.keylog.Output.push("Remove Submit");
+            });
         }
     }
 
@@ -211,8 +442,8 @@ class ProblemCard extends React.Component {
         const { seed, problemVars, problemID, courseName, answerMade, lesson } =
             this.props;
 
-        if (inputVal == '') {
-            toastNotifyEmpty(this.translate)
+        if (inputVal == "") {
+            toastNotifyEmpty(this.translate);
             return;
         }
 
@@ -260,6 +491,114 @@ class ProblemCard extends React.Component {
             checkMarkOpacity: isCorrect ? "100" : "0",
         });
         answerMade(this.index, knowledgeComponents, isCorrect);
+
+        // keystroke logging part
+        if (this.EventID != 0) {
+            console.log("start logging");
+            this.keylog.TaskOnSet.push(this.taskonset); //record task onset time
+
+            ///// adjust the keylog data
+            // record current text
+            // this.keylog.TextContent.push(
+            //     String(this.showYourWorkAreaRef.current.value)
+            // );
+
+            if (this.finalAnswerAreaRef && this.finalAnswerAreaRef.current) {
+                this.keylog.finalAnswer.push(
+                    String(this.finalAnswerAreaRef.current.value)
+                );
+            }
+
+            // record the final product
+            this.keylog.FinalProduct = String(
+                this.keylog.TextContent.slice(-1)
+            );
+
+            // log cursor position
+            this.handleCursor(this.keylog, this.startSelect, this.endSelect);
+            /////// use a customized function to detect and record different activities and the according text changes these activities bring about
+            ActivityDetector(
+                this.keylog,
+                this.startSelect,
+                this.endSelect,
+                this.ActivityCancel,
+                this.TextChangeCancel
+            );
+
+            //Add PartitionKey
+            this.keylog.PartitionKey.push(this.userId);
+
+            //Textchange and Activity adjustment
+            this.keylog.TextChange.shift();
+            this.keylog.Activity.shift();
+
+            // cursor information adjustment
+            this.keylog.CursorPosition.shift();
+
+            let d_end = new Date();
+            let taskend = d_end.getTime();
+            this.keylog.TaskEnd.push(taskend); //record task end time
+
+            //post the data to the serve and lead to the next page
+            let keylog_data = {
+                PartitionKey: this.keylog.PartitionKey.toString(),
+                RowKey: this.keylog.RowKey.join(),
+                EventID: this.keylog.EventID.join(),
+                EventTime: this.keylog.EventTime.join(),
+                Output: this.keylog.Output.join("<=@=>"),
+                CursorPosition: this.keylog.CursorPosition.join(),
+                TextChange: this.keylog.TextChange.join("<=@=>"),
+                Activity: this.keylog.Activity.join("<=@=>"),
+            };
+
+            // console.log("keylog_eedi: ", keylog_data);
+
+            this.context.firebase.log(
+                parsed,
+                problemID,
+                this.step,
+                null,
+                isCorrect,
+                hintsFinished,
+                "answerStep",
+                chooseVariables(
+                    Object.assign({}, problemVars, variabilization),
+                    seed
+                ),
+                lesson,
+                courseName,
+                this.state.displayHintType,
+                this.state.dynamicHint,
+                this.state.studentProgress,
+                keylog_data
+            );
+
+            //empty keylog
+            this.keylog.PartitionKey = [];
+            this.keylog.RowKey = [];
+            this.keylog.EventID = [];
+            this.keylog.EventTime = [];
+            this.keylog.FinalProduct = [];
+            this.keylog.CursorPosition = [];
+            this.keylog.Output = [];
+            this.keylog.TaskEnd = [];
+            this.keylog.TaskOnSet = [];
+            this.keylog.TextChange = [];
+            this.keylog.Activity = [];
+            this.keylog.TextContent = [];
+            this.EventID = 0;
+        }
+
+        // reset variables
+        this.EventID = 0;
+        this.startSelect = [];
+        this.endSelect = [];
+        this.ActivityCancel = []; // to keep track of changes caused by control + z
+        this.TextChangeCancel = []; // to keep track of changes caused by control + z
+
+        console.log(
+            `Inner submit! e.g. submit the keystroke logging data... (your code) for ${this.sessionId}`
+        );
     };
 
     editInput = (event) => {
@@ -552,7 +891,9 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -581,6 +922,7 @@ class ProblemCard extends React.Component {
 
                     <div className={classes.root}>
                         <ProblemInput
+                            finalAnswerAreaRef={this.finalAnswerAreaRef}
                             variabilization={chooseVariables(
                                 Object.assign(
                                     {},
@@ -654,11 +996,12 @@ class ProblemCard extends React.Component {
                                         (use_expanded_view && debug) ||
                                         (!this.allowRetry && problemAttempted)
                                     }
+                                    ref={this.submitButtonRef}
                                     {...stagingProp({
                                         "data-selenium-target": `submit-button-${this.props.index}`,
                                     })}
                                 >
-                                    {translate('problem.Submit')}
+                                    {translate("problem.Submit")}
                                 </Button>
                             </center>
                         </Grid>
