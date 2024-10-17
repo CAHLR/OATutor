@@ -27,14 +27,14 @@ const SHOW_COPYRIGHT = false;
  * feedback, user interactions, and site logs.
  * @type {boolean}
  */
-const ENABLE_FIREBASE = true;
+const ENABLE_FIREBASE = process.env.ENABLE_FIREBASE === 'true';
 
 /**
  * If ENABLE_FIREBASE, indicates whether the site should use Firebase to store, process, and analyze general user
  * interactions.
  * @type {boolean}
  */
-const DO_LOG_DATA = true;
+const DO_LOG_DATA = process.env.DO_LOG_DATA === 'true';
 
 /**
  * Indicates whether a log event should be fired everytime a user leaves or returns to this window.
@@ -47,13 +47,13 @@ const DO_FOCUS_TRACKING = true;
  * the README.md to properly enable this feature.
  * @type {boolean}
  */
-const DO_LOG_MOUSE_DATA = false;
+const DO_LOG_MOUSE_DATA = process.env.DO_LOG_MOUSE_DATA === 'true';
 
 /**
  * Flag to enable or disable A/B testing
  * @type {boolean}
  */
-const AB_TEST_MODE = false;
+const AB_TEST_MODE = process.env.AB_TEST_MODE === 'true';
 
 /**
  * If reach bottom of provided hints, give correct answer to question
@@ -85,13 +85,13 @@ const EQUATION_EDITOR_AUTO_COMMANDS =
     "pi theta sqrt sum prod int alpha beta gamma rho nthroot pm";
 const EQUATION_EDITOR_AUTO_OPERATORS = "sin cos tan";
 
-const MIDDLEWARE_URL =
-    "https://di2iygvxtg.execute-api.us-west-1.amazonaws.com/prod";
+const MIDDLEWARE_URL = process.env.REACT_APP_MIDDLEWARE_URL;
+const DYNAMIC_HINT_URL = process.env.REACT_APP_DYNAMIC_HINT_URL;
+
 
 const HELP_DOCUMENT =
     "https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub";
 
-const DYNAMIC_HINT_URL = "https://oatutor-backend.herokuapp.com/get_hint";
 
 const DYNAMIC_HINT_TEMPLATE =
     "<{problem_title}.> <{problem_subtitle}.> <{question_title}.> <{question_subtitle}.> <Student's answer is: {student_answer}.> <The correct answer is: {correct_answer}.> Please give a hint for this.";
