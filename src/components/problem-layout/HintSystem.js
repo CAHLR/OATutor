@@ -15,25 +15,28 @@ import { ThemeContext } from "../../config/config";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
-import withTranslation from '../../util/withTranslation';
+import withTranslation from "../../util/withTranslation";
 
-import Button from '@material-ui/core/Button';
-import AccordionActions from '@material-ui/core/AccordionActions';
-import Grid from '@material-ui/core/Grid';
+import Button from "@material-ui/core/Button";
+import AccordionActions from "@material-ui/core/AccordionActions";
+import Grid from "@material-ui/core/Grid";
 
-import Paper from '@material-ui/core/Paper'; 
-import { styled } from '@material-ui/core/styles';
+import Paper from "@material-ui/core/Paper";
+import { styled } from "@material-ui/core/styles";
 
-import io from 'socket.io-client';
-const socket = io('http://localhost:3000'); 
+import axios from "axios";
+import HintVoiceBoard from "./HintVoiceBoard.js";
+
+// import io from "socket.io-client";
+// const socket = io("http://localhost:3000");
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.primary,
-  border: show_boarder === "true"? '1px solid black': 'none',
+    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: "center",
+    color: theme.palette.text.primary,
+    border: show_boarder === "true" ? "1px solid black" : "none",
 }));
 // HELLO
 
@@ -57,26 +60,31 @@ class HintSystem extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.unlockFirstHint = props.unlockFirstHint;
         this.isIncorrect = props.isIncorrect;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
+        this.audioRef = null;
 
         this.state = {
             latestStep: 0,
-            currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
+            currentExpanded: this.unlockFirstHint || this.isIncorrect ? 0 : -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
-            agentMode: false,  // showing text or agent whiteboard
+            agentMode: false, // showing text or agent whiteboard
             playing: false, // speaking or not
-            hintIndex: 0,      // index of hint to highlight
+            hintIndex: 0, // index of hint to highlight
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
 
-        if (this.giveHintOnIncorrect && this.isIncorrect && this.props.hintStatus.length > 0) {
+        if (
+            this.giveHintOnIncorrect &&
+            this.isIncorrect &&
+            this.props.hintStatus.length > 0
+        ) {
             this.props.unlockHint(0, this.props.hints[0].type);
-        } 
+        }
     }
 
     unlockHint = (event, expanded, i) => {
@@ -84,6 +92,9 @@ class HintSystem extends React.Component {
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
         } else {
+            // if (!this.props.hints[i].audios) {
+            //     this.fetchAudioData(this.props.hints[i]);
+            // }
             this.setState({ currentExpanded: i });
             if (expanded && i < this.props.hintStatus.length) {
                 this.props.unlockHint(i, this.props.hints[i].type);
@@ -168,38 +179,100 @@ class HintSystem extends React.Component {
         );
     };
 
+    // Sharon added methods
+    fetchAudioData = async (hint) => {
+        console.log("hint pacedSpeech: ", hint.pacedSpeech);
+        try {
+            const response = await axios.post(
+                "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
+                {
+                    segments: hint.pacedSpeech, // Send the data in the body
+                },
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+            hint.audios = JSON.parse(response.data.body).audios; // Store audio data
+            console.log("success:", response, hint.audios);
+        } catch (error) {
+            console.error("Error fetching audio:", error);
+        }
+    };
+
+    playAudioForSegment = (segmentIndex, audioData) => {
+        if (audioData.length > 0 && segmentIndex < audioData.length) {
+            const audioBlob = new Blob(
+                [
+                    new Uint8Array(
+                        atob(audioData[segmentIndex])
+                            .split("")
+                            .map((c) => c.charCodeAt(0))
+                    ),
+                ],
+                { type: "audio/mp3" }
+            );
+            const audioUrl = window.URL.createObjectURL(audioBlob);
+            this.audioRef = new Audio(audioUrl);
+
+            this.audioRef.play();
+            this.audioRef.onended = () => {
+                if (segmentIndex + 1 < audioData.length) {
+                    this.setState(
+                        (prevState) => ({
+                            hintIndex: prevState.hintIndex + 1,
+                        }),
+                        () => {
+                            this.playAudioForSegment(
+                                segmentIndex + 1,
+                                audioData
+                            ); // Play next segment
+                        }
+                    );
+                } else {
+                    this.setState({ playing: false }); // End of audio sequence
+                    this.setState({ hintIndex: 0 });
+                }
+            };
+        }
+    };
+
     // Sagas added methods
     nextBoarder = (hint) => {
         // will run after agent speaks their hint[i]
-        if (hint.math !== undefined){
-            if (hint.math.length -1 > this.state.hintIndex) {
+        if (hint.math !== undefined) {
+            if (hint.math.length - 1 > this.state.hintIndex) {
                 this.setState((prevState) => ({
-                    hintIndex: prevState.hintIndex + 1
-                  }));
-            }
-            else{
-                this.setState({hintIndex: 0});
+                    hintIndex: prevState.hintIndex + 1,
+                }));
+            } else {
+                this.setState({ hintIndex: 0 });
             }
         }
     };
 
     renderWhiteboard = (hint) => {
-        // console.log("hint.math:", hint.math.type);
-        return this.state.agentMode? (hint.math? 
-            (hint.math == ''? " " :     // if no math show nothing (only == works not ===)
-                <Grid container spacing={2} justifyContent="center" alignItems="center">
-                        {hint.math.map((math, index) => ( 
-                            <Grid item xs={12} md ={6} > 
-                                <Item show_boarder={index === this.state.hintIndex? "true": "false"}>
-                                    {renderText(math)}</Item>
-                                </Grid>))}
-                </Grid>)     // for 2 col: md ={6} 
-            : hint.text )    // if math attribute nonexistent
-        : hint.text;         // if in text mode
+        // console.log("hint:", hint);
+
+        return this.state.agentMode ? (
+            <HintVoiceBoard
+                hint={hint}
+                hintIndex={this.state.hintIndex}
+                playAgent={this.playAgent}
+            ></HintVoiceBoard>
+        ) : (
+            hint.text
+        ); // if in text mode
     };
 
     agentPraise = () => {
-        const praises = ["Good job!", "Well done!", "Great work!", "Very nice!"];
+        const praises = [
+            "Good job!",
+            "Well done!",
+            "Great work!",
+            "Very nice!",
+        ];
         const randomIndex = Math.floor(Math.random() * praises.length);
         const randomPraise = praises[randomIndex];
         console.log(randomPraise);
@@ -207,72 +280,65 @@ class HintSystem extends React.Component {
     };
 
     playAgent = (hint) => {
-
-        if( this.state.agentMode ){
-            if (hint.pacedSpeech) {
-                this.setState({hintIndex: 0})
-                this.setState(() => ({playing: true}));
-                socket.emit('sendMessage', hint.pacedSpeech);   
-            }; 
-        };               
-        socket.on('message', (data) => {
-            // console.log('Message from server:', data);
-            this.setState({hintIndex: parseInt(data)}); // later make method with some error catching
-        });
-
-         // dont know if this should be placed here
-         socket.on('finish', () => {
-            // console.log('Finished hint');
-            this.setState({playing: false});
-        });
-
+        if (this.state.agentMode) {
+            if (hint.pacedSpeech && hint.audios) {
+                this.setState({ hintIndex: 0 });
+                this.setState(() => ({ playing: true }));
+                this.playAudioForSegment(0, hint.audios);
+            }
+        }
     };
 
     reloadSpeech = (hint) => {
-        socket.emit('reload');
-        this.setState(() => ({hintIndex: 0}), () => {
-            this.playAgent(hint);
-            // not fully working yet need to quit previous audio first
-        });
+        // socket.emit("reload");
+        this.setState(
+            () => ({ hintIndex: 0 }),
+            () => {
+                this.playAgent(hint);
+                // not fully working yet need to quit previous audio first
+            }
+        );
     };
 
     stopSpeech = () => {
         // will stop the speech
-    }
+    };
 
     toggleWhiteboard = (hint) => {
-        this.setState( prevState => ({ agentMode: !prevState.agentMode }),
-        () => {
-          this.playAgent(hint); 
-        })
+        this.setState(
+            (prevState) => ({ agentMode: !prevState.agentMode }),
+            () => {
+                this.playAgent(hint);
+            }
+        );
 
         // should play when whiteboard opens and stop when closes
-
     };
 
     togglePlayPause = (event) => {
-        if (this.state.playing) {    // pause
-            socket.emit('pause'); 
+        console.log("pause called");
+        if (this.state.playing) {
+            // pause
+            // socket.emit("pause");
+        } else {
+            // play
+            // socket.emit("play", this.state.hintIndex);
         }
-        else{  // play
-            socket.emit('play', this.state.hintIndex);
-        }
-        this.setState((prevState) => ({playing: !prevState.playing}));
+        this.setState((prevState) => ({ playing: !prevState.playing }));
     };
 
     handleOnChange = (event, expanded, index, hint) => {
+        this.setState({ agentMode: false });
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
         // TODO: Add conditional so it wont play if hint is being closed...
-        if (expanded){
-            this.playAgent(hint);
-        }
+        // if (expanded) {
+        //     this.playAgent(hint);
+        // }
         // else {
         //     this.stopSpeech();
         // }
-       
     };
-
 
     render() {
         const { translate } = this.props;
@@ -286,7 +352,8 @@ class HintSystem extends React.Component {
                 {hints.map((hint, i) => (
                     <Accordion
                         key={`${problemID}-${hint.id}`}
-                        onChange={(event, expanded) => this.handleOnChange(event, expanded, i, hint)
+                        onChange={(event, expanded) =>
+                            this.handleOnChange(event, expanded, i, hint)
                         }
                         disabled={
                             this.isLocked(i) && !(use_expanded_view && debug)
@@ -307,8 +374,8 @@ class HintSystem extends React.Component {
                                 "data-selenium-target": `hint-expand-${i}-${index}`,
                             })}
                         >
-                            <Typography className={classes.heading}> 
-                                {translate('hintsystem.hint') + (i + 1) + ": "}
+                            <Typography className={classes.heading}>
+                                {translate("hintsystem.hint") + (i + 1) + ": "}
                                 {renderText(
                                     hint.title === "nan" ? "" : hint.title,
                                     problemID,
@@ -323,15 +390,16 @@ class HintSystem extends React.Component {
                                     this.context
                                 )}
                             </Typography>
-                            
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
-                            > 
+                            >
                                 {renderText(
-                                    currentExpanded === i? this.renderWhiteboard(hint): "", // only render whiteboard for current hint
+                                    currentExpanded === i
+                                        ? this.renderWhiteboard(hint)
+                                        : "", // only render whiteboard for current hint
                                     problemID,
                                     chooseVariables(
                                         Object.assign(
@@ -342,7 +410,7 @@ class HintSystem extends React.Component {
                                         seed
                                     ),
                                     this.context
-                                )} 
+                                )}
                                 {hint.type === "scaffold" ? (
                                     <div>
                                         <Spacer />
@@ -410,24 +478,48 @@ class HintSystem extends React.Component {
                             </Typography>
                         </AccordionDetails>
                         <AccordionActions>
-                            {this.state.agentMode? ( 
+                            {this.state.agentMode ? (
                                 <>
-                                <Button onClick={() => this.reloadSpeech(hint)}>
-                                    <img src={`${process.env.PUBLIC_URL}/reload_icon.svg`} alt="Reload Icon" width={15} height={15} />
-                                </Button>
-                            
-                                <Button onClick={() => this.togglePlayPause(hint) /* Temporary method placement to show switching boarders, change to playAgent  */}>
-                                    {this.state.playing?
-                                    <img src={`${process.env.PUBLIC_URL}/pause_icon.svg`} alt="Pause Icon" width={15} height={15} />
-                                    : <img src={`${process.env.PUBLIC_URL}/play_icon.svg`} alt="Play Icon" width={15} height={15} />}
-                                </Button>
+                                    <Button
+                                        onClick={() => this.reloadSpeech(hint)}
+                                    >
+                                        <img
+                                            src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
+                                            alt="Reload Icon"
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </Button>
+
+                                    <Button
+                                        onClick={() => {
+                                            this.togglePlayPause(hint);
+                                        }}
+                                    >
+                                        {this.state.playing ? (
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/pause_icon.svg`}
+                                                alt="Pause Icon"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/play_icon.svg`}
+                                                alt="Play Icon"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        )}
+                                    </Button>
                                 </>
-                                ) :" "}              
+                            ) : (
+                                " "
+                            )}
 
                             <Button onClick={() => this.toggleWhiteboard(hint)}>
-                                {this.state.agentMode? "TEXT" : "AGENT"}
+                                {this.state.agentMode ? "TEXT" : "AGENT"}
                             </Button>
-
                         </AccordionActions>
                     </Accordion>
                 ))}
