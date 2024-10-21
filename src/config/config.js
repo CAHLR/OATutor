@@ -1,4 +1,5 @@
 import React from "react";
+import { jwtDecode } from 'jwt-decode';
 import courses from "../content-sources/oatutor/coursePlans.json";
 import { calculateSemester } from "../util/calculateSemester.js";
 
@@ -74,6 +75,18 @@ const USER_ID_STORAGE_KEY = `${_SHORT_SITE_NAME}-user_id`;
 const PROGRESS_STORAGE_KEY = `${_SHORT_SITE_NAME}-progress`;
 export const LESSON_PROGRESS_STORAGE_KEY = (lessonId) =>
     `${PROGRESS_STORAGE_KEY}-${lessonId}`;
+
+export const CANVAS_PROBLEM_SCORE_KEY = (jwtToken) => {
+    const decodedToken = jwtDecode(jwtToken);
+    const userId = decodedToken.user_id;
+    return `${PROGRESS_STORAGE_KEY}-${userId}`;
+}
+export const CANVAS_LESSON_PROGRESS_KEY = (jwtToken, lessonId) => {
+    const decodedToken = jwtDecode(jwtToken);
+    const userId = decodedToken.user_id;
+    return `${PROGRESS_STORAGE_KEY}-${userId}-${lessonId}`;
+};
+
 
 const CANVAS_WARNING_STORAGE_KEY = `${_SHORT_SITE_NAME}-canvas-warning-dismissed`;
 
