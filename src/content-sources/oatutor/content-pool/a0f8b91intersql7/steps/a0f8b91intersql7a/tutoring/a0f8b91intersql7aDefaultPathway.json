@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a0f8b91intersql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Returned Text",
+        "text": "The returned text is determined by what is written in the SELECT clause, not what is specified in the FROM clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql7a-h1"
+        ],
+        "title": "Using the FROM clause",
+        "text": "The FROM clause for the table \"Items\" is only referring to the singular column, so the number of results corresponds with the number of rows in the column.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql7a-h2"
+        ],
+        "title": "String Literal",
+        "text": "Since \"Name\" is in quotes, it is interpreted as the text and not the field (column) name with the same name.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql7a-h3"
+        ],
+        "title": "Return from SELECT function",
+        "text": "The Select function will return the \"Name\" text corresponding to the number of items in the column in the table.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

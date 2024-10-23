@@ -1,0 +1,198 @@
+[
+    {
+        "id": "af060c0deriv10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining the Population",
+        "text": "Let P(t) be the population (in thousands) $$t$$ years from now.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h1"
+        ],
+        "title": "The Current Population",
+        "text": "What is P(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30000$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h2"
+        ],
+        "title": "Tripling the Population",
+        "text": "Since the current population is 10,000 and P(t) is the population (in thousands) $$t$$ years from now, we know that P(0) $$=$$ $$10$$. Based on this information, what can we anticipate that the population is if it triples every $$5$$ years?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h3"
+        ],
+        "title": "Estimating the Current Growth Rate",
+        "text": "The population of the city is tripling every $$5$$ years such that we can anticipate that the population is 30,000. In other words, P(5) $$=$$ $$30$$. Estimate P'(0), the current growth rate, using P'(0) \u2248 (P(t_2) - P(t_1))/(t_2 - t_1).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h4"
+        ],
+        "title": "Solving for P'(0)",
+        "text": "What is P'(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h5"
+        ],
+        "title": "Defining $$t_1$$ and $$t_2$$",
+        "text": "P'(0) \u2248 (P(t_2) - P(t_1))/(t_2 - t_1), where $$t_1$$ $$=$$ $$0$$ and $$t_2$$ $$=$$ $$5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h6"
+        ],
+        "title": "Plugging in the Times",
+        "text": "P'(0) \u2248 (P(5) - P(0))/(5 - 0)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h7"
+        ],
+        "title": "Pluggin in the Populations, in Thousands",
+        "text": "P'(0) \u2248 (30 - 10)/(5 - 0)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h8"
+        ],
+        "title": "Simplification",
+        "text": "P'(0) \u2248 $$\\frac{20}{5}$$. What is P'(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h10",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h9"
+        ],
+        "title": "Amount of Change Formula",
+        "text": "For small enough values of $$h$$, f'(a) \u2248 f(a + h) - f(a)h. We can then solve for $$f{\\left(a+h\\right)}$$ to get the amount of change formula: f(a + h) \u2248 f(a) + f'(a)h. Apply this equation to P(t) to estimate the population $$2$$ years from now.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h11",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h10"
+        ],
+        "title": "Solving for P(2)",
+        "text": "P(2) \u2248 P(0) + (2)P'(0)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h12",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv10a-h11"
+        ],
+        "title": "Simplification",
+        "text": "P(2) \u2248 $$10$$ + 2(4)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h12"
+        ],
+        "title": "Finding P(2)",
+        "text": "P(2) \u2248 $$10$$ + $$8$$. What is P(2)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv10a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18000$$"
+        ],
+        "dependencies": [
+            "af060c0deriv10a-h13"
+        ],
+        "title": "Final Answer",
+        "text": "P(2) $$=$$ $$18$$. Remember that P(t) is the population (in thousands) $$t$$ years from now. This means that P(2) is the population (in thousands) $$2$$ years from now. What is the approximate population $$2$$ years from now in thousands?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

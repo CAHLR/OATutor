@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a0faf26antiderivative6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sums and Differences",
+        "text": "Rewrite the integrand $$\\frac{x^2+4\\sqrt[3]{x}}{x}$$ as $$\\frac{x^2}{x}+\\frac{4\\sqrt[3]{x}}{x}$$ and then use the sums and differences property of indefinite integrals to rewrite the integrands again.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0faf26antiderivative6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int x \\,dx+4*\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$"
+        ],
+        "dependencies": [
+            "a0faf26antiderivative6a-h1"
+        ],
+        "title": "Sums and Differences",
+        "text": "Using the properties of indefinite integrals of sums and differeces, /int{(x**2+4sqrt(3,x)/x} can be rewritten as?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int x \\,dx+4*\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$",
+            "$$\\int x \\,dx+\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$"
+        ]
+    },
+    {
+        "id": "a0faf26antiderivative6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0faf26antiderivative6a-h2"
+        ],
+        "title": "Constant Multiplies",
+        "text": "Next, use the properties of constant multiples so you can rewrite the problem again.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0faf26antiderivative6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int x \\,dx+4*\\int x^{\\left(-\\frac{2}{3}\\right)} \\,dx$$"
+        ],
+        "dependencies": [
+            "a0faf26antiderivative6a-h3"
+        ],
+        "title": "Constant Multiplies",
+        "text": "Using the constant multiples properties of indefinite integrals, /int{(x)}+/int{((4x**(-2/3))} can be rewritten as?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int x \\,dx+4*\\int x^{\\left(-\\frac{2}{3}\\right)} \\,dx$$",
+            "$$\\int x \\,dx+\\int x^{\\left(-\\frac{2}{3}\\right)} \\,dx$$"
+        ]
+    },
+    {
+        "id": "a0faf26antiderivative6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0faf26antiderivative6a-h4"
+        ],
+        "title": "Adding Constants",
+        "text": "Make sure to add \"+C\" after your intial antiderivative to account for the unknown constant.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

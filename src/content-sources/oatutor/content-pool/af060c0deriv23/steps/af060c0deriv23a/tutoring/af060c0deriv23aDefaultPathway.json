@@ -1,0 +1,87 @@
+[
+    {
+        "id": "af060c0deriv23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The velocity of the object at time $$t$$ is given by v(t) $$=$$ s'(t), the derivative of s(t). The potato reaches its maximum height when v(t) $$=$$ $$0$$. First, solve for the v(t) function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-32t$$ + $$100$$"
+        ],
+        "dependencies": [
+            "af060c0deriv23a-h1"
+        ],
+        "title": "Solving for v(t)",
+        "text": "What is s'(t)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv23a-h2"
+        ],
+        "title": "Taking the Derivative of s(t)",
+        "text": "s(t) $$=$$ $$-16t^2$$ + $$100t$$ + $$85$$\\ns'(t) $$=$$ $$2\\left(-16\\right) t^{2-1}$$ + $$100$$\\ns'(t) $$=$$ $$-32t$$ + $$100$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{25}{8}$$"
+        ],
+        "dependencies": [
+            "af060c0deriv23a-h3"
+        ],
+        "title": "Solving for Time",
+        "text": "What is $$t$$ (in seconds) when v(t) $$=$$ 0?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{25}{8}$$"
+        ],
+        "dependencies": [
+            "af060c0deriv23a-h4"
+        ],
+        "title": "Calculating $$t$$ when v(t) $$=$$ $$0$$",
+        "text": "v(t) $$=$$ $$-32t$$ + $$100$$\\n$$-32t$$ + $$100$$ $$=$$ $$0$$ Set the v(t) function to $$0$$\\n$$-32t$$ $$=$$ $$-100$$ Subtract $$100$$ from both sides\\n$$t$$ $$=$$ $$\\frac{-32}{-100}$$ Divide $$-32$$ from both sides\\nWhat is $$t$$? Simplify your answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af060c0deriv23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "af060c0deriv23a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "$$t$$ $$=$$ $$\\frac{-32}{-100}$$ $$=$$ $$\\frac{25}{8}$$ s. Thus, the potato reaches its maximum height at $$\\frac{25}{8}$$ seconds.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

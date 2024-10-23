@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aeb2bc4integrals1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Setting $$u=-x$$, and then $$du=-1dx$$. Multiply the du equation by $$-1$$, so now you have $$dx=-du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals1a-h1"
+        ],
+        "title": "Setting the Integral",
+        "text": "$$\\int e^{-x} \\,dx=-\\int e^x \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(-e^u\\right)+C$$"
+        ],
+        "dependencies": [
+            "aeb2bc4integrals1a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "What is the result of the integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\left(-e^u\\right)+C$$",
+            "$$\\left(-e^u\\right)$$"
+        ]
+    },
+    {
+        "id": "aeb2bc4integrals1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals1a-h3"
+        ],
+        "title": "Back-subsitute",
+        "text": "As we set $$u=-x$$ at the beginning, we then obtain $$-\\left(e^{\\left(-x\\right)}\\right)+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
