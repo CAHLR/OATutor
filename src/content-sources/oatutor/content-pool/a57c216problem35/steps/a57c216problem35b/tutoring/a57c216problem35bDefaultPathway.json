@@ -3,20 +3,25 @@
         "id": "a57c216problem35b-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Mars Dimensions",
-        "text": "We know the mass and radius of Mars.",
+        "title": "Formula for Gravitational Force",
+        "text": "The acceleration due to gravity g at the surface of the Mars is given by the equation:g $$=$$ \\frac{G \\cdot M}{r**2}.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a57c216problem35b-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.75$$"
+        ],
         "dependencies": [
             "a57c216problem35b-h1"
         ],
-        "title": "Acceleration due to Gravity",
-        "text": "Calculate the acceleration due to gravity on Mars using its mass and radius.",
+        "title": "Plug in the Values",
+        "text": "As we know the mass of Mars is $$6.418{10}^{23} kg$$ and its radius is $$3.38{10}^6 m$$, what is g after we substitute those values into the formula?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

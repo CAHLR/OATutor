@@ -3,20 +3,25 @@
         "id": "a57c216problem30a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Normal Force",
-        "text": "Because of the incline plane, remember that the normal force will be at an angle.",
+        "title": "Use the Formula for the Ideal Banking Angle",
+        "text": "The ideal banking angle \u03b8 for a curve of radius $$r$$ and speed v is given by tan(\u03b8) $$=$$ $$\\frac{v^2}{r} g$$. Then take the arctangent to find \ud835\udf03.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a57c216problem30a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16.2$$"
+        ],
         "dependencies": [
             "a57c216problem30a-h1"
         ],
-        "title": "X Direction Forces",
-        "text": "Solve for the $$x$$ direction forces which will be related to the normal force. Then equate it to the circular motion function and solve for the velocity.",
+        "title": "Solve for v",
+        "text": "What is v $$=$$ v $$=$$ \\sqrt{r \\cdot g \\cdot \\tan(\\theta)}= \\sqrt{100 , \\text{m} \\cdot $$9.8$$ , \\text{m/s}**2 \\cdot \\tan(15.0**\\circ)}? (keep one decimal places)",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
