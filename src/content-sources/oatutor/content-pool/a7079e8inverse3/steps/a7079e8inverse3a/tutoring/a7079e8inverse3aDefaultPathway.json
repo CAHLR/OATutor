@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "The Inverse Function Theorem",
-        "text": "The inverse function theorem is that (f**(-1))'*(x)=1/(f'*(f**-1)*(x)).",
+        "text": "The Inverse Function Theorem is $$g'(x)=\\frac{1}{h{\\left(g{\\left(x\\right)}\\right)}}$$ where g(x) is the inverse of f(x) and $$h(x)=f'(x)$$ or in other words h(x) is the derivative of f(x).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a7079e8inverse3a-h1"
         ],
         "title": "Finding the Inverse of f(x) at $$a=0$$.",
-        "text": "To find the inverse of f(x) where $$a=2$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$2$$. In this case, it is when $$x=1$$, so we know that $$2f^{\\left(-1\\right)}=1$$.",
+        "text": "To find the inverse of f(x) where $$a=2$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$2$$. In this case, it is when $$x=1$$, so we know that $$g(2)=1$$ where g(x) is the inverse of f(x).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "a7079e8inverse3a-h3"
         ],
         "title": "Applying the Inverse Function Theorem",
-        "text": "Since we already found $$2f^{\\left(-1\\right)}=1$$ and the derivative of f(x), then we can plug what we know into the inverse function theorem.",
+        "text": "Since we already found $$g(2)=1$$ (remember g(x) is the inverse of f(x)) and the derivative of f(x), then we can plug what we know into the inverse function theorem.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
