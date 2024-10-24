@@ -64,6 +64,7 @@ jobs:
           token: ${{ secrets.CONTENT_STAGING_PAT }}
           ref: 'main'
           path: 'staging-build'
+          repository: 'CAHLR/OATutor-Staging'
 
       - name: Push
         run: |
