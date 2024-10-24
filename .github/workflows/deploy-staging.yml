@@ -62,7 +62,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'CAHLR/OATutor-Staging'
-          ssh-key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
+          ssh-key: ${{ secrets.CONTENT_STAGING_PAT }}
           ref: 'main'
           path: 'staging-build'
 
