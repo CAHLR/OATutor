@@ -73,8 +73,10 @@ jobs:
           git clean -fxd
           rsync -av ../build/ .
           git add .
-          git config --local user.email "${{ env.git_email }}"
-          git config --local user.name "${{ env.git_name }}"
+          git config --global user.email "${{ env.git_email || 'oatutor@example.com' }}"
+          git config --global user.name "${{ env.git_name || 'OATutor' }}"
           git diff --cached --quiet --exit-code && echo "no changes to platform, exiting early" && exit 0
           git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
