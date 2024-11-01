@@ -3,7 +3,7 @@
         "id": "a046eedintegrals11a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Rewriting",
+        "title": "Rewriting the Integral",
         "text": "Rewritting the expression will make it more convenient to use u-substitution. This can be rewritten as $$\\int \\left(2x^3+3x\\right) {\\left(x^4+3x^2\\right)}^{-1} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -20,7 +20,7 @@
         "dependencies": [
             "a046eedintegrals11a-h1"
         ],
-        "title": "U-substitution",
+        "title": "Apply u-Substitution",
         "text": "What should we set u equal to?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -32,7 +32,7 @@
         "dependencies": [
             "a046eedintegrals11a-h2"
         ],
-        "title": "U-substitution",
+        "title": "Result of Applying u-Substitution",
         "text": "As we set $$u=x^4+3x^2$$ then $$du=\\left(4x^3+6x\\right) dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -44,7 +44,7 @@
         "dependencies": [
             "a046eedintegrals11a-h3"
         ],
-        "title": "Factoring",
+        "title": "Factoring Constants",
         "text": "Alter du by factoring out the $$2$$ to obtain $$du=2\\left(2x^3+3x\\right) dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -68,7 +68,7 @@
         "dependencies": [
             "a046eedintegrals11a-h5"
         ],
-        "title": "Rewriting",
+        "title": "Rewriting Integrand",
         "text": "Rewite an integrand in u: $$(1/2)*\\int u^{\\left(-1\\right)} \\,du$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -80,7 +80,7 @@
         "dependencies": [
             "a046eedintegrals11a-h6"
         ],
-        "title": "Find the integral",
+        "title": "Find the Integral",
         "text": "$$(1/2)*\\int u^{\\left(-1\\right)} \\,du=\\frac{1}{2} ln|u|+C$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -92,7 +92,7 @@
         "dependencies": [
             "a046eedintegrals11a-h7"
         ],
-        "title": "Back-subsitute",
+        "title": "Back-Subsitute",
         "text": "$$\\frac{1}{2} ln|x^4+3x^2|+C$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
