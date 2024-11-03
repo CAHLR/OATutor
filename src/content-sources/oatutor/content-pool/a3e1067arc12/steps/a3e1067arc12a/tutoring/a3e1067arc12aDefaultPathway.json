@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a3e1067arc12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arc length formula",
+        "text": "Arc Length can be found by computing $$\\int_{a}^{b} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$, f'(x) is derivative of f(x) and interval [a,b]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3e1067arc12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc12a-h1"
+        ],
+        "title": "Find the derivative of f(x)",
+        "text": "We have f(x) $$=y=x^{\\frac{3}{2}}$$, so $$f'(x)=$$ $$\\frac{3}{2} x^{\\frac{1}{2}}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3e1067arc12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc12a-h2"
+        ],
+        "title": "Find the interval",
+        "text": "We need to find the interval on x-axis, which is [0,1]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3e1067arc12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc12a-h3"
+        ],
+        "title": "Plug in",
+        "text": "After we plug f'(x) and interval, we will have Arc $$Length=\\int_{0}^{1} \\sqrt{1+{\\left(\\frac{3}{2} x^{\\frac{1}{2}}\\right)}^2} \\,dx=\\int_{0}^{1} \\sqrt{1+\\frac{9}{4} x} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3e1067arc12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3e1067arc12a-h4"
+        ],
+        "title": "Evaluate the integral",
+        "text": "Use a computer, calculator, or another device to solve the integral.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

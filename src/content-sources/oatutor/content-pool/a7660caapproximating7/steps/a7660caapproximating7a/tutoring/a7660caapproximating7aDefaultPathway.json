@@ -1,0 +1,144 @@
+[
+    {
+        "id": "a7660caapproximating7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subinterval",
+        "text": "The first step is to divide the interval from $$0$$ to $$\\frac{\\pi}{2}$$ into $$n$$ equal subintervals. These subintervals can be seen as rectangles.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating7a-h1"
+        ],
+        "title": "Subinterval",
+        "text": "How many subinterval or rectangle can we create in this problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{12}$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating7a-h2"
+        ],
+        "title": "Subinterval",
+        "text": "What is the \u0394x of each rectangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating7a-h3"
+        ],
+        "title": "Subinterval",
+        "text": "The graph of $$y=sinx$$ is divided into six rectangle: $$\u0394x=\\frac{\\frac{\\pi}{2}}{6}=\\frac{\\pi}{12}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating7a-h4"
+        ],
+        "title": "Find the start and end points of each rectangle",
+        "text": "As the graphs increases in the intervals $$[0,\\frac{\\pi}{2}]$$, we will use left-endpoint approximation to calculate the lower sum. We begin with the first rectangle whose starting point of $$x=0$$ and a width of $$\\frac{\\pi}{12}$$. The rectangle will end at the point $$x=\\frac{\\pi}{12}$$ and that endpoint of the current rectangle is also the starting point of the next rectangle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating7a-h5"
+        ],
+        "title": "Find the start and end points of each rectangle",
+        "text": "Express in interval notation, what are the starting and ending points of the next rectangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$",
+            "$$(\\frac{\\pi}{12},\\frac{\\pi}{6})$$"
+        ]
+    },
+    {
+        "id": "a7660caapproximating7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating7a-h6"
+        ],
+        "title": "Find the start and end points of each rectangle",
+        "text": "Continuing the process, we obtain $$6$$ intervals which are $$[0,\\frac{\\pi}{12}]$$, $$[\\frac{\\pi}{12},\\frac{\\pi}{6}]$$, $$[\\frac{\\pi}{6},\\frac{\\pi}{4}]$$, $$[\\frac{\\pi}{4},\\frac{\\pi}{3}]$$, $$[\\frac{\\pi}{3},\\frac{5\\pi}{12}]$$ and $$[\\frac{5\\pi}{12},\\frac{\\pi}{2}]$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.863$$"
+        ],
+        "dependencies": [
+            "a7660caapproximating7a-h7"
+        ],
+        "title": "Riemann sum",
+        "text": "What is the area under the curve of the given function using the Riemann sum? (Three decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating7a-h8"
+        ],
+        "title": "Riemann sum",
+        "text": "sum{i\\=0}{5}{sin(x_i)*(pi/12)}",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7660caapproximating7a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a7660caapproximating7a-h9"
+        ],
+        "title": "Riemann sum",
+        "text": "$$A=sin\\left(0\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{12}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{6}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{4}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{\\pi}{3}\\right) \\frac{\\pi}{12}+sin\\left(\\frac{5\\pi}{12}\\right) \\frac{\\pi}{12}=0.863$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

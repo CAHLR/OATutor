@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aeececestability4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Torque Formula",
+        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aeececestability4a-h1"
+        ],
+        "title": "Net Torque",
+        "text": "What should the net torque be (in Nm)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$78.4$$"
+        ],
+        "dependencies": [
+            "aeececestability4a-h2"
+        ],
+        "title": "Force at Center of Gravity",
+        "text": "What force is exerted by the horse's center of gravity (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeececestability4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21.6$$"
+        ],
+        "dependencies": [
+            "aeececestability4a-h3"
+        ],
+        "title": "Solve for the Tension",
+        "text": "Solve for the tension in the chain using the information given (in Newtons)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

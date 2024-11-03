@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a04cbeesubstitution4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Express $$x$$ in terms of u. If $$u=x-1$$, then $$x=u+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+        ],
+        "dependencies": [
+            "a04cbeesubstitution4a-h1"
+        ],
+        "title": "Rewrite the Integral in Terms of u",
+        "text": "What is the integral in terms of u?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int u^{\\frac{1}{2}}+u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int u^{\\frac{1}{2}} \\,du$$"
+        ]
+    },
+    {
+        "id": "a04cbeesubstitution4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution4a-h2"
+        ],
+        "title": "Integrate the Expression",
+        "text": "Integrate by replacing u with the original expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution4a-h3"
+        ],
+        "title": "Factor and Simplify",
+        "text": "Factor and simplify the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

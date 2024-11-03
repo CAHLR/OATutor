@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a8c5e27continuity10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Intermediate Value Theorem",
+        "text": "The Intermediate Value Theorem: Let f be continuous over a closed, bounded interval [a,b]. If $$z$$ is any real number between f(a) and f(b), then there is a number c in [a,b] satisfying $$f(c)=z$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27continuity10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8c5e27continuity10a-h1"
+        ],
+        "title": "Determine the continuity",
+        "text": "Is the function continuous over [-1,1]?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ],
+        "subHints": [
+            {
+                "id": "a8c5e27continuity10a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Determine the continuity",
+                "text": "f(x) is undefined at $$x=0$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a8c5e27continuity10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8c5e27continuity10a-h2"
+        ],
+        "title": "The Intermediate Value Theorem",
+        "text": "Therefore, can we apply the Intermediate Value Theorem?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aaeca35implicit1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation. On the left, use the sum rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaeca35implicit1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2y\\left(\\frac{dy}{dx}\\right)$$"
+        ],
+        "dependencies": [
+            "aaeca35implicit1a-h1"
+        ],
+        "title": "$$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left(y^2\\right)}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2y$$",
+            "$$2x\\left(\\frac{dx}{dy}\\right)$$",
+            "$$2x$$",
+            "$$2y\\left(\\frac{dy}{dx}\\right)$$"
+        ]
+    },
+    {
+        "id": "aaeca35implicit1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaeca35implicit1a-h2"
+        ],
+        "title": "Simplifying",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

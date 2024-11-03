@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a9673abdynamics18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate magnitude of the total dragging force",
+        "text": "Calculate the magnitude of the combine force produced by $$F_1$$ and $$F_2$$, where the horizontal component is $$cos\\left(30\\right) F2$$ + $$cos\\left(45\\right) F1$$, and the vertical component is $$sin\\left(45\\right) F1$$ - $$sin\\left(30\\right) F2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9673abdynamics18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14.333$$"
+        ],
+        "dependencies": [
+            "a9673abdynamics18a-h1"
+        ],
+        "title": "Calculate magnitude of the total dragging force",
+        "text": "What is sqrt((cos(30)*8 + cos(45)*10)**2 + (sin(45)*F1 - sin(30)*F2)**2)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9673abdynamics18a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Newton's Second Law",
+        "text": "Given Newton's Second Law $$(F=ma)$$, find the acceleration that makes $$F_{combined}$$ - friction $$=$$ ma.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9673abdynamics18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.139$$"
+        ],
+        "dependencies": [
+            "a9673abdynamics18a-h3"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "What is $$(14.333$$ - 7.5)/49?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
