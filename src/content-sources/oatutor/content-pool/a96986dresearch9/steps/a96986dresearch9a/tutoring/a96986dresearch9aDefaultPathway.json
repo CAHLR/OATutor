@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Criticisms",
-        "text": "Limitations or possible weaknesses in your methods",
+        "text": "Criticisms refers to the limitations or possible weaknesses in your methods. Criticisms should be taken care of during the experimentation process and are not included in the final research proposal.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -12,9 +12,11 @@
     {
         "id": "a96986dresearch9a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch9a-h1"
+        ],
         "title": "Problem Statement",
-        "text": "The core issue or problem your study will address",
+        "text": "The core issue or problem your study will address, which should be an integral part of the research proposal.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -22,9 +24,11 @@
     {
         "id": "a96986dresearch9a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch9a-h2"
+        ],
         "title": "Methodology",
-        "text": "The approach or strategy used to gather and analyze data",
+        "text": "Methodology is the approach or strategy used to gather and analyze data, which is a key component of a research paper.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -32,7 +36,9 @@
     {
         "id": "a96986dresearch9a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch9a-h3"
+        ],
         "title": "Analysis",
         "text": "The tools and techniques you will use to interpret your data",
         "variabilization": {},

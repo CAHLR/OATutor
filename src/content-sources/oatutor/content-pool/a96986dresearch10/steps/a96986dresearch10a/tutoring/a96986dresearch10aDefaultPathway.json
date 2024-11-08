@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Representative Sample",
-        "text": "This represents methodology and getting a representative sample",
+        "text": "One of the key purposes of sampling from the population is to attempt to get a representative sample.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -12,9 +12,11 @@
     {
         "id": "a96986dresearch10a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch10a-h1"
+        ],
         "title": "Exclusion of Participants",
-        "text": "This option suggests errors in participant suggestion",
+        "text": "The population that is being sampled should include all participants that should be included, not the ones to be excluded.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -22,9 +24,11 @@
     {
         "id": "a96986dresearch10a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch10a-h2"
+        ],
         "title": "Choosing at Random",
-        "text": "This refers to random sampling",
+        "text": "This refers to random sampling, which may not always be representative for a population.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -32,9 +36,11 @@
     {
         "id": "a96986dresearch10a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch10a-h3"
+        ],
         "title": "Fitting Population Contours",
-        "text": "This suggests that all participants fit certain criteria",
+        "text": "This suggests that all participants fit certain criteria, which would not be a sampling procedure.",
         "variabilization": {},
         "oer": "",
         "license": ""

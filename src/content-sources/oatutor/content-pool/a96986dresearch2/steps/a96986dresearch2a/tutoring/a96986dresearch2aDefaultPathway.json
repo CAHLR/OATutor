@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Significant and Ethical",
-        "text": "Significance refers to statistical outcomes rather than structure. Ethicality additionally does not refer to an instrument's structure.",
+        "text": "Significance refers to statistical outcomes rather than structure. Ethicality additionally does not refer to an instrument's structure, and is regarding to the ethics or morals of the situation.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -12,8 +12,10 @@
     {
         "id": "a96986dresearch2a-h2",
         "type": "hint",
-        "dependencies": [],
-        "title": "Deductive and confidential",
+        "dependencies": [
+            "a96986dresearch2a-h1"
+        ],
+        "title": "Deductive and Confidential",
         "text": "Deductive reasoning refers to the logical process of drawing conclusions and confidentiality refers to protecting an individuals privacy.",
         "variabilization": {},
         "oer": "",
@@ -22,7 +24,9 @@
     {
         "id": "a96986dresearch2a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch2a-h2"
+        ],
         "title": "Correlational and Probabilistic",
         "text": "These terms describe types of research or statistical relationships",
         "variabilization": {},
@@ -32,9 +36,11 @@
     {
         "id": "a96986dresearch2a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a96986dresearch2a-h3"
+        ],
         "title": "Reliable and Valid",
-        "text": "Correct",
+        "text": "A reliable instrument is one that is dependable to produce accurate results. Validity refers to whether the instrument is useful.",
         "variabilization": {},
         "oer": "",
         "license": ""
