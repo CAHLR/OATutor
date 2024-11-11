@@ -1,0 +1,33 @@
+{
+  "name": "@hapi/call",
+  "description": "HTTP Router",
+  "version": "9.0.1",
+  "repository": "git://github.com/hapijs/call",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "HTTP",
+    "router"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/hoek": "^11.0.2"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.1.2"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L",
+    "test-cov-html": "lab -a @hapi/code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}
