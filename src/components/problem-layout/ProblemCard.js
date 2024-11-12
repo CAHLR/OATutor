@@ -40,7 +40,7 @@ class ProblemCard extends React.Component {
 
     constructor(props, context) {
         super(props);
-        // console.log("problem lesson props:", props);
+        console.log("problem lesson props:", props);
 
         this.translate = props.translate
         this.step = props.step;
@@ -140,6 +140,7 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
+            activeHintType: "none" // "none", "normal", or "ai"
         };
     }
 
@@ -283,14 +284,15 @@ class ProblemCard extends React.Component {
     };
 
     toggleHints = (event) => {
-        this.setState({
-            enableHintGeneration: false,
-        });
+        // this.setState({
+        //     enableHintGeneration: false,
+        //     activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
+        // });
         if (!this.state.displayHints) {
             this.setState(
                 (prevState) => ({
-                    displayHints: !prevState.displayHints,
-                }),
+                    enableHintGeneration: false,
+                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"                }),
                 () => {
                     this.props.answerMade(
                         this.index,
@@ -300,9 +302,9 @@ class ProblemCard extends React.Component {
                 }
             );
         }
-        if (this.giveDynamicHint) {
-            this.generateHintFromGPT();
-        }
+        // if (this.giveDynamicHint) {
+        //     this.generateHintFromGPT();
+        // }
     };
 
     unlockHint = (hintNum, hintType) => {
@@ -382,38 +384,68 @@ class ProblemCard extends React.Component {
     };
 
     generateGPTHintParameters = (prompt_template, bio_info) => {
-        var inputVal = "";
-        if (
-            typeof this.state.inputVal === "string" &&
-            this.state.inputVal.length > 0
-        ) {
-            inputVal = this.state.inputVal;
-        }
-        var correctAnswer = "";
-        if (
-            Array.isArray(this.step.stepAnswer) &&
-            this.step.stepAnswer.length > 0
-        ) {
-            correctAnswer = this.step.stepAnswer[0];
-        }
+        // var inputVal = "";
+        // if (
+        //     typeof this.state.inputVal === "string" &&
+        //     this.state.inputVal.length > 0
+        // ) {
+        //     inputVal = this.state.inputVal;
+        // }
+        // var correctAnswer = "";
+        // if (
+        //     Array.isArray(this.step.stepAnswer) &&
+        //     this.step.stepAnswer.length > 0
+        // ) {
+        //     correctAnswer = this.step.stepAnswer[0];
+        // }
 
-        var quest = {
-            problem_title: this.problemTitle,
-            problem_subtitle: this.problemSubTitle,
-            question_title: this.step.stepTitle,
-            question_subtitle: this.step.stepBody,
-            student_answer: inputVal,
-            correct_answer: correctAnswer,
+        // var quest = {
+        //     problem_title: this.problemTitle,
+        //     problem_subtitle: this.problemSubTitle,
+        //     question_title: this.step.stepTitle,
+        //     question_subtitle: this.step.stepBody,
+        //     student_answer: inputVal,
+        //     correct_answer: correctAnswer,
+        // };
+
+        // return { quest, prompt_template, bio_info };
+        let inputVal = this.state.inputVal || "The student did not provide an answer.";
+        let correctAnswer = Array.isArray(this.step.stepAnswer) ? this.step.stepAnswer[0] : "";
+        const problemTitle = this.problemTitle || "Problem Title";
+        const problemSubTitle = this.problemSubTitle || "Problem Subtitle";
+        const questionTitle = this.step.stepTitle || "Question Title";
+        const questionSubTitle = this.step.stepBody || "Question Subtitle";
+
+        // Replace placeholders in the template with actual values
+        const promptContent = prompt_template
+            .replace("{problem_title}", problemTitle)
+            .replace("{problem_subtitle}", problemSubTitle)
+            .replace("{question_title}", questionTitle)
+            .replace("{question_subtitle}", questionSubTitle)
+            .replace("{student_answer}", inputVal)
+            .replace("{correct_answer}", correctAnswer);
+
+        console.log("input val", inputVal);
+        console.log("correct answer", correctAnswer);
+        console.log("PROMPT template", promptContent);
+        return {
+            prompt: [
+                    {
+                        role: "user",
+                        content: promptContent
+                    }
+                ]
+            };
         };
-
-        return { quest, prompt_template, bio_info };
-    };
 
     generateHintFromGPT = async () => {
         // console.log(this.generateGPTHintParameters(this.prompt_template));
+        
         this.setState({
-            dynamicHint: "",
+            activeHintType: "ai", // Set AI hints as active
+            dynamicHint: "", // Clear previous hint
         });
+
         const [parsed, correctAnswer, reason] = checkAnswer({
             attempt: this.state.inputVal,
             actual: this.step.stepAnswer,
@@ -442,8 +474,9 @@ class ProblemCard extends React.Component {
                 )
             )
             .then((response) => {
+                console.log(response);
                 this.setState({
-                    dynamicHint: response.data.hint,
+                    dynamicHint: response.data,
                 });
                 this.context.firebase.log(
                     parsed,
@@ -516,7 +549,7 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
-                    {displayHints && this.giveDynamicHint && (
+                    {this.state.activeHintType && (this.state.activeHintType === "ai") && (
                         <div className="dynamicHintContainer">
                             <h3 className="dynamicHintTitle">
                                 Hint From ChatGPT
@@ -539,12 +572,12 @@ class ProblemCard extends React.Component {
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
-                                    loading...
+                                    {this.state.dynamicHint || "Loading..."}
                                 </div>
                             )}
                         </div>
                     )}
-                    {(displayHints || (debug && use_expanded_view)) &&
+                    {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
                         this.showHints && (
                             <div className="Hints">
                                 <ErrorBoundary
@@ -643,6 +676,24 @@ class ProblemCard extends React.Component {
                                 </center>
                             )}
                         </Grid>
+
+                        {this.giveDynamicHint && (
+                            <Grid item xs={4} sm={4} md={2}>
+                                <center>
+                                    <Button
+                                        className={classes.button}
+                                        style={{ width: "80%", backgroundColor: "blue", color: "white" }}
+                                        size="small"
+                                        onClick={this.generateHintFromGPT}
+                                        {...stagingProp({
+                                            "data-selenium-target": `ai-hint-button-${this.props.index}`,
+                                        })}
+                                    >
+                                        AI Hint
+                                    </Button>
+                                </center>
+                            </Grid>
+                        )}
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button
