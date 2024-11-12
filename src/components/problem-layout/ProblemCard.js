@@ -14,6 +14,7 @@ import HintSystem from "./HintSystem.js";
 import {
     chooseVariables,
     renderText,
+    renderGPTText,
 } from "../../platform-logic/renderText.js";
 import {
     DYNAMIC_HINT_URL,
@@ -556,7 +557,7 @@ class ProblemCard extends React.Component {
                             </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
-                                    {renderText(
+                                    {renderGPTText(
                                         this.state.dynamicHint,
                                         problemID,
                                         chooseVariables(
@@ -572,7 +573,7 @@ class ProblemCard extends React.Component {
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
-                                    {this.state.dynamicHint || "Loading..."}
+                                    {"Loading..."}
                                 </div>
                             )}
                         </div>
@@ -647,8 +648,8 @@ class ProblemCard extends React.Component {
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <Grid item xs={false} sm={false} md={4} />
-                        <Grid item xs={4} sm={4} md={1}>
+                        <Grid item xs={false} sm={false} md={3} />
+                        <Grid item xs={4} sm={4} md={1} >
                             {this.showHints && (
                                 <center>
                                     <IconButton
@@ -676,24 +677,8 @@ class ProblemCard extends React.Component {
                                 </center>
                             )}
                         </Grid>
+                        {/* <Grid item xs={4} sm={4} md={1} /> */}
 
-                        {this.giveDynamicHint && (
-                            <Grid item xs={4} sm={4} md={2}>
-                                <center>
-                                    <Button
-                                        className={classes.button}
-                                        style={{ width: "80%", backgroundColor: "blue", color: "white" }}
-                                        size="small"
-                                        onClick={this.generateHintFromGPT}
-                                        {...stagingProp({
-                                            "data-selenium-target": `ai-hint-button-${this.props.index}`,
-                                        })}
-                                    >
-                                        AI Hint
-                                    </Button>
-                                </center>
-                            </Grid>
-                        )}
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button
@@ -713,6 +698,23 @@ class ProblemCard extends React.Component {
                                 </Button>
                             </center>
                         </Grid>
+                        {this.giveDynamicHint && (
+                            <Grid item xs={4} sm={4} md={2}>
+                                <center>
+                                    <Button
+                                        className={classes.button}
+                                        style={{ width: "80%", backgroundColor: "blue", color: "white" }}
+                                        size="small"
+                                        onClick={this.generateHintFromGPT}
+                                        {...stagingProp({
+                                            "data-selenium-target": `ai-hint-button-${this.props.index}`,
+                                        })}
+                                    >
+                                        AI Hint
+                                    </Button>
+                                </center>
+                            </Grid>
+                        )}
                         <Grid item xs={4} sm={3} md={1}>
                             <div
                                 style={{
@@ -783,7 +785,7 @@ class ProblemCard extends React.Component {
                                     )}
                             </div>
                         </Grid>
-                        <Grid item xs={false} sm={1} md={4} />
+                        <Grid item xs={false} sm={1} md={3} />
                     </Grid>
                 </CardActions>
             </Card>
