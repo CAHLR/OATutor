@@ -16,7 +16,7 @@
             "a343428l'hopital5a-h1"
         ],
         "title": "Substitute the limit",
-        "text": "As $$x$$ approaches $$0$$ from the right side of the $$y$$ axis, the graph of lnx approaches negative infinity and the graph of cotx approaches $$\\infty$$. Therefore, /lim{x,0**+,lnx/cotx}=-inf/inf.",
+        "text": "As $$x$$ approaches $$0$$ from the right side of the $$y$$ axis, the graph of lnx approaches negative infinity and the graph of cotx approaches $$\\infty$$. Therefore, $$\\lim_{x\\to0} \\frac{lnx}{cotx}=\\frac{-\\infty}{\\infty}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a343428l'hopital5a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(lnx)/d/dx(cotx)}",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(lnx\\right)}}{d}}{\\operatorname{dx}\\left(cotx\\right)}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,1/-(x*csc**2(x))}"
+            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {csc}^{2\\left(x\\right)}\\right)}$$"
         ],
         "dependencies": [
             "a343428l'hopital5a-h3"
@@ -50,10 +50,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,1/(x*csc**2(x))}",
-            "/lim{x,0**+,1/-(x*csc**2(x))}",
-            "/lim{x,0**+,x/(-csc**2(x))}",
-            "/lim{x,0**+,-csc**2(x)/x}"
+            "$$\\lim_{x\\to0} \\frac{1}{x {csc}^{2\\left(x\\right)}}$$",
+            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {csc}^{2\\left(x\\right)}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\left(-{csc}^{2\\left(x\\right)}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{-\\left({csc}^{2\\left(x\\right)}\\right)}{x}$$"
         ],
         "subHints": [
             {
@@ -98,7 +98,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,2*sinx*cosx/(-1)}"
+            "$$\\lim_{x\\to0} \\frac{2sinx cosx}{\\left(-1\\right)}$$"
         ],
         "dependencies": [
             "a343428l'hopital5a-h6"
@@ -109,10 +109,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,(2*sinx*cosx)/(-1)}",
-            "/lim{x,0**+,(2*sin**2(x))/(-1)}",
-            "/lim{x,0**+,(2*sinx)/(-1)}",
-            "lim{x,0**+,(sinx*cos**2(x))/(-1)}"
+            "$$\\lim_{x\\to0} \\frac{2sinx cosx}{\\left(-1\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{2{sin}^{2\\left(x\\right)}}{\\left(-1\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{2sinx}{\\left(-1\\right)}$$",
+            "lim{x,0,(sinx*cos**2(x))/(-1)}"
         ],
         "subHints": [
             {

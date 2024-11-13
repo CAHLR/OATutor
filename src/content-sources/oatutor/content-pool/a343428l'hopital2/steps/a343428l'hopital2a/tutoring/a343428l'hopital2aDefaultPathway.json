@@ -28,7 +28,7 @@
             "a343428l'hopital2a-h2"
         ],
         "title": "Operation",
-        "text": "We set up a new limit based on the function we just created /lim{x,0**+,x*ln(x)}",
+        "text": "We set up a new limit based on the function we just created $$\\lim_{x\\to0} x \\ln(x)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -51,7 +51,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,ln(x)/(1/x)}"
+            "$$\\lim_{x\\to0} \\frac{\\ln(x)}{\\frac{1}{x}}$$"
         ],
         "dependencies": [
             "a343428l'hopital2a-h4"
@@ -62,8 +62,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,ln(x)/(1/x)}",
-            "/lim{x,0**+,x/(1/ln(x))}"
+            "$$\\lim_{x\\to0} \\frac{\\ln(x)}{\\frac{1}{x}}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\frac{1}{\\ln(x)}}$$"
         ],
         "subHints": [
             {
@@ -71,7 +71,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Rearrange the expression",
-                "text": "/lim{x,0**+,ln(x)/x**(-1)}=/lim{x,0**+,ln(x)/(1/x)}",
+                "text": "$$\\lim_{x\\to0} \\frac{\\ln(x)}{x^{\\left(-1\\right)}}=\\lim_{x\\to0} \\frac{\\ln(x)}{\\frac{1}{x}}$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -109,7 +109,7 @@
             "a343428l'hopital2a-h6"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(ln(x))/d/dx(1/x)}=/lim{x,0**+,(1/x)/-(1/x**2)}",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(\\ln(x)\\right)}}{d}}{\\operatorname{dx}\\left(\\frac{1}{x}\\right)}=\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -120,7 +120,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,(1/x)/-(1/x**2)}"
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
         ],
         "dependencies": [
             "a343428l'hopital2a-h7"
@@ -131,10 +131,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,x/-(1/x**2)}",
-            "/lim{x,0**+,(1/x)/(1/x**2)}",
-            "/lim{x,0**+,(x**2/x)/-(1/x**2)}",
-            "/lim{x,0**+,(1/x)/-(1/x**2)}"
+            "$$\\lim_{x\\to0} \\frac{x}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{\\frac{1}{x^2}}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{x^2}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
         ]
     },
     {
@@ -144,7 +144,7 @@
             "a343428l'hopital2a-h8"
         ],
         "title": "Rearrange the expression",
-        "text": "/lim{x,0**+,(1/x)/-(1/x**2)}=/lim{x,0**+,-x}",
+        "text": "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}=\\lim_{x\\to0} -x$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -181,7 +181,7 @@
             "a343428l'hopital2a-h11"
         ],
         "title": "Limit of Logarithm Rule",
-        "text": "/lim{x,0**+,ln(y)}=ln(/lim{x,0**+,(y)})=0",
+        "text": "$$\\lim_{x\\to0} ln(y)=ln(\\lim_{x\\to0} (y))=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -193,7 +193,7 @@
             "a343428l'hopital2a-h12"
         ],
         "title": "Properties of Exponents and Natural Logarithms",
-        "text": "ln(/lim{x,0**+,(y)})=/lim{x,0**+,(y)}=e**0=1",
+        "text": "$$ln(\\lim_{x\\to0} (y))=\\lim_{x\\to0} (y)=e^0=1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
