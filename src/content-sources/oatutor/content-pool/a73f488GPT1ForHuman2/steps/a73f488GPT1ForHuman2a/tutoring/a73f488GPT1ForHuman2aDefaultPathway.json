@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "The Gibbs free energy change (\u0394G) for a process can be calculated using the following equation:\\n\\n\u0394G $$=$$ \u0394H - $$T \\Delta S$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2a-h1"
+        ],
+        "title": "Know the Units for Enthalpy and Entropy",
+        "text": "Since \u0394H is given in $$\\frac{kJ}{mol}$$ and \u0394S is in $$\\frac{J}{mol} K$$, make sure to convert \u0394H to the same unit as \u0394S by multiplying with $$1000$$. This way, both energy terms will be in Joules.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40790$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2a-h2"
+        ],
+        "title": "Convert Enthalpy to Joules",
+        "text": "Calculate \u0394H in Joules instead of kJ:\\n\\n\u0394H $$=$$ $$40.79$$ $$\\frac{kJ}{mol}$$ * $$1000$$ $$\\frac{J}{kJ}$$ $$=$$ ?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2465$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2a-h3"
+        ],
+        "title": "Calculate Gibbs Free Energy Change",
+        "text": "Using the equation \u0394G $$=$$ \u0394H - $$T \\Delta S$$, substitute values:\\n\\n\u0394G $$=$$ $$40790$$ $$\\frac{J}{mol}$$ - $$350$$ K * $$109.5$$ $$\\frac{J}{mol} K$$ $$=$$ ?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

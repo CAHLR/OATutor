@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "The Gibbs free energy change \u0394G for a process is given by the equation: \u0394G $$=$$ \u0394H - T \u0394S , where \u0394H is the enthalpy change, T is the temperature in Kelvin, and \u0394S is the entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Units Consistency",
+        "text": "Consider the units:\\n- \u0394H is given in $$\\frac{kJ}{mol}$$ $$(40.79$$ kJ/mol).\\n- \u0394S is given in $$\\frac{J}{K\u00b7mol}$$ $$(109.2$$ J/(K\u00b7mol)).\\n- Convert \u0394H into J (1 kJ $$=$$ $$1000$$ J) to match the units of \u0394S .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40790$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman2a-h2"
+        ],
+        "title": "Convert Enthalpy to J",
+        "text": "Convert the molar enthalpy of vaporization of water from $$\\frac{kJ}{mol}$$ to $$\\frac{J}{mol}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2570$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman2a-h3"
+        ],
+        "title": "Calculate Gibbs Free Energy",
+        "text": "Now use the values \u0394H $$=$$ $$40790$$ $$\\frac{J}{mol}$$ and \u0394S $$=$$ $$109.2$$ $$\\frac{J}{K\u00b7mol}$$ along with the temperature T $$=$$ $$350$$ K in the equation \u0394G $$=$$ \u0394H - T \u0394S . Calculate \u0394G .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

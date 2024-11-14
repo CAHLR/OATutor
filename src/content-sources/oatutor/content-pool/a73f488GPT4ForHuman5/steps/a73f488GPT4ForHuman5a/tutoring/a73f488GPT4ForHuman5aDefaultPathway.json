@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spontaneity",
+        "text": "Spontaneity in reactions can be influenced by both entropy and enthalpy changes. The relationship is encapsulated in the Gibbs Free Energy equation: \u0394G $$=$$ \u0394H - T\u0394S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman5a-h1"
+        ],
+        "title": "Entropy Change and Temperature",
+        "text": "When \u0394S is negative, it affects the spontaneity of the reaction depending on the temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\Delta H-T \\Delta S<0$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman5a-h2"
+        ],
+        "title": "Using Gibbs Free Energy",
+        "text": "For a reaction to be spontaneous, \u0394G must be negative. Write the inequality that represents this condition using the expression \u0394G $$=$$ \u0394H - T\u0394S assuming \u0394S is negative.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\Delta H-T \\Delta S<0$$",
+            "$$\\Delta H-T \\Delta S>0$$"
+        ]
+    },
+    {
+        "id": "a73f488GPT4ForHuman5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$T>\\frac{\\Delta H}{\\Delta S}$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman5a-h3"
+        ],
+        "title": "Finding Temperature Range",
+        "text": "Rearrange the inequality \u0394H - $$T\\Delta S<0$$ to find the expression for temperature range when \u0394S is negative.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$T>\\frac{\\Delta H}{\\Delta S}$$",
+            "$$T<\\frac{\\Delta H}{\\Delta S}$$"
+        ]
+    },
+    {
+        "id": "a73f488GPT4ForHuman5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Spontaneous only at low temperatures"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman5a-h4"
+        ],
+        "title": "Conclusion on Temperature Range",
+        "text": "Interpreting the inequality for temperature, determine the conditions under which the temperature causes the reaction to be spontaneous.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Always spontaneous at any temperature",
+            "Spontaneous only at low temperatures",
+            "Spontaneous only at high temperatures",
+            "Never spontaneous at any temperature"
+        ]
+    }
+]

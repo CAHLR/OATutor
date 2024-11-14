@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint 1: Recalling the Equation for Equilibrium",
+        "text": "To find the temperature at which the liquid and vapor phases of water are in equilibrium, use the Gibbs free energy equation at standard conditions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h1"
+        ],
+        "title": "Hint 2: Understanding Gibbs Free Energy",
+        "text": "The Gibbs free energy change (\u0394G) for a process at equilibrium is zero. The equation is given by $$\u0394G=\u0394H-T\u0394S$$, where \u0394H is the enthalpy change, T is the temperature, and \u0394S is the entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h2"
+        ],
+        "title": "Scaffold 1: Rearrange the Equation",
+        "text": "Rearrange the equation $$\u0394G=\u0394H-T\u0394S$$ to solve for T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h3"
+        ],
+        "title": "Hint 3: Check Units Consistency",
+        "text": "Ensure the units are consistent. Convert all quantities to the same units before substituting into the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1095$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h4"
+        ],
+        "title": "Scaffold 2: Convert Units",
+        "text": "Convert the molar entropy from $$\\frac{J}{K}$$ mol to $$\\frac{kJ}{K}$$ mol.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h5"
+        ],
+        "title": "Scaffold 3: Substitute Values",
+        "text": "Substitute the enthalpy and entropy values into the rearranged equation $$T=\\frac{\\Delta H}{\\Delta S}$$ to find the equilibrium temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2d-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$373$$ K"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2d-h6"
+        ],
+        "title": "Scaffold 4: Calculate Temperature",
+        "text": "Perform the calculation using the values from the previous step.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

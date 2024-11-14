@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a73f488Human2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gibbs Free Energy Equation",
+        "text": "The Gibbs free energy change (\u0394G) for a reaction can be calculated using the equation: \u0394G $$=$$ \u0394H - T\u0394S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2b-h1"
+        ],
+        "title": "Components of the Equation",
+        "text": "Identify the values given in the problem:\\n- Molar enthalpy of fusion (\u0394H) $$=$$ $$5.65$$ $$\\frac{kJ}{mol}$$\\n- Molar entropy of fusion (\u0394S) $$=$$ $$28.9$$ $$\\frac{J}{K\u00b7mol}$$\\n- Temperature (T) $$=$$ $$170$$ K\\n\\nNote: Convert units of \u0394H from $$\\frac{kJ}{mol}$$ to $$\\frac{J}{mol}$$ for consistency.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5650$$"
+        ],
+        "dependencies": [
+            "a73f488Human2b-h2"
+        ],
+        "title": "Unit Conversion",
+        "text": "Convert the molar enthalpy of fusion from $$\\frac{kJ}{mol}$$ to $$\\frac{J}{mol}$$. Remember that $$1$$ kJ $$=$$ $$1000$$ J.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4913$$"
+        ],
+        "dependencies": [
+            "a73f488Human2b-h3"
+        ],
+        "title": "Calculation Setup",
+        "text": "Substitute the given values into the Gibbs free energy equation:\\n\u0394G $$=$$ $$(5.65$$ $$\\frac{kJ}{mol}$$ * 1000) - (170 K * $$28.9$$ J/(K\u00b7mol))\\nSimplify the equation by first multiplying (170 K * $$28.9$$ J/(K\u00b7mol)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2653$$"
+        ],
+        "dependencies": [
+            "a73f488Human2b-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Complete the equation:\\n$$\u0394G=5650$$ $$\\frac{J}{mol}$$ - $$4913$$ $$\\frac{J}{mol}$$.\\nCalculate \u0394G for $$3.60$$ mol ammonia.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thermodynamic Cycles",
+        "text": "In a thermodynamic cycle, the system undergoes various processes and returns to its initial state. Consider the flow of energy and internal properties within the system.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman3a-h1"
+        ],
+        "title": "Analyzing Enthalpy in Cycles",
+        "text": "When analyzing cycles, remember that certain system properties like enthalpy, a state function, are path-independent. What happens to these properties when the system returns to its original state?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman3a-h2"
+        ],
+        "title": "Relating State Functions and Processes",
+        "text": "Even if a system undergoes irreversible and reversible processes, state functions like enthalpy depend only on initial and final states. What does this tell us about the change in enthalpy?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman3a-h3"
+        ],
+        "title": "Updating System Properties",
+        "text": "Given that the system returns to its original state, what can you say about the change in its enthalpy (\u0394H) over the entire cycle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

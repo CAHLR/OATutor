@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start by Using Gibbs Free Energy Equation",
+        "text": "To find the temperature at which this reaction becomes non-spontaneous, you can use the Gibbs Free Energy equation:\\n$$G=H-T S$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h1"
+        ],
+        "title": "Understand the Necessary Conditions",
+        "text": "A reaction becomes non-spontaneous when the Gibbs Free Energy, G, becomes non-negative (greater than 0).\\nTherefore, set $$G=0$$ and solve for T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h2"
+        ],
+        "title": "Relate Gibbs Equation to Equilibrium",
+        "text": "For $$G=0$$, the equation simplifies to:\\n$$0=H-T S$$.\\nRearrrange the equation to find T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h3"
+        ],
+        "title": "Make Rearrangements to Isolate T",
+        "text": "Isolate T by rearranging the equation:\\n$$T=\\frac{H}{S}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h4"
+        ],
+        "title": "Perform Calculation to Determine T",
+        "text": "Use the known values, $$\u2206G=$$ $$-33.30$$ $$\\frac{kJ}{mol}$$ and \u2206H(which is \u2206H\u00b0_f) $$=$$ $$-45.90$$ $$\\frac{kJ}{mol}$$, and substitute them into the equation:\\nT=\u2206H/\u2206S\\nFirst, calculate \u2206S using \u2206G $$=$$ \u2206H-T*\u2206S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h5"
+        ],
+        "title": "Calculate the Gibbs at Equilibrium",
+        "text": "Calculate \u2206S by setting \u2206G \u2248 $$0$$ at the equilibrium temperature to find the equation:\\n0=\u2206H-T*\u2206S",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h7",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h6"
+        ],
+        "title": "Find \u2206S and Solve for T",
+        "text": "After rearranging to solve for \u2206S:\\n\u2206S=\u2206H/T\\nUse $$\u2206H=\\frac{-45.9kJ}{mol}$$ and the provided equilibrium condition to estimate when $$\u2206H=\\frac{-33.3kJ}{mol}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman4c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$468$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman4c-h7"
+        ],
+        "title": "Substitute Values & Calculate Temperature",
+        "text": "After finding \u2206S, take the temperature value, convert to Kelvin if needed, and input into the equation:\\nT=\u2206H/\u2206S,\\nwhich provides the temperature at which the reaction becomes non-spontaneous.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

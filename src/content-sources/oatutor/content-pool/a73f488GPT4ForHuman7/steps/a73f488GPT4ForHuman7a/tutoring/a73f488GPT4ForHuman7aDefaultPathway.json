@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "The Gibbs free energy (\u0394G) is calculated using the formula: \u0394G $$=$$ \u0394H - T\u0394S. Here, \u0394H is the change in enthalpy, T is the temperature in Kelvin, and \u0394S is the change in entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h1"
+        ],
+        "title": "Conversion Entropy and Enthalpy",
+        "text": "To find \u0394G\u00b0 for the conversion: O\u2083 \u2192 $$\\frac{3}{2}$$ O\u2082, we need:\\n$$1$$. The change in enthalpy: \u0394H\u00b0.\\n$$2$$. The change in entropy: \u0394S\u00b0.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-142.67$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h2"
+        ],
+        "title": "Calculate \u0394H\u00b0 for Conversion",
+        "text": "\u0394H\u00b0 for the conversion of ozone to O\u2082 can be found using:\\n\u0394H\u00b0 $$=$$ \u0394H\u00b0_f(O\u2082) - \u0394H\u00b0_f(O\u2083).\\nGiven \u0394H\u00b0_f(O\u2082) $$=$$ $$0$$ $$\\frac{kJ}{mol}$$ and \u0394H\u00b0_f(O\u2083) $$=$$ $$142.67$$ $$\\frac{kJ}{mol}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h3"
+        ],
+        "title": "Calculate \u0394S\u00b0 for Conversion",
+        "text": "\u0394S\u00b0 for the conversion of ozone to O\u2082 can be found using:\\n\u0394S\u00b0 $$=$$ S\u00b0(O\u2082) - S\u00b0(O\u2083).\\nNote: Use the fact that when O\u2083 converts to $$\\frac{3}{2}$$ O\u2082, it's $$\\frac{3}{2}$$ times S\u00b0(O\u2082).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h4"
+        ],
+        "title": "Gibbs Free Energy Calculation",
+        "text": "Now use the Gibbs free energy formula with $$T=298$$ K:\\n\u0394G $$=$$ \u0394H - T\u0394S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h5"
+        ],
+        "title": "Calculate \u0394G\u00b0 at $$298$$ K",
+        "text": "Use the formula:\\n\u0394G $$=$$ \u0394H - T\u0394S\\n$$=$$ $$(-142.67)$$ - $$298$$ * (\u0394S calculated).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman7a-h6"
+        ],
+        "title": "Determine Stability",
+        "text": "The form of oxygen with a more negative \u0394G is more stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

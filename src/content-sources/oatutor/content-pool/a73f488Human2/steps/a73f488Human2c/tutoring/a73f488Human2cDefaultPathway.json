@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a73f488Human2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand Spontaneity of Reaction",
+        "text": "The spontaneity of a reaction is determined by the Gibbs Free Energy change. For a process to be spontaneous, the change in Gibbs Free Energy (\u0394G) should be negative.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2c-h1"
+        ],
+        "title": "Gibbs Free Energy Formula",
+        "text": "Recall the formula for Gibbs Free Energy: $$\u0394G=\\Delta H-T \\Delta S$$, where \u0394H is enthalpy change, T is temperature in Kelvin, and \u0394S is entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5650$$"
+        ],
+        "dependencies": [
+            "a73f488Human2c-h2"
+        ],
+        "title": "Determine Enthalpy and Entropy",
+        "text": "Given the enthalpy of fusion (\u0394H_{fusion}) is $$5.65$$ $$\\frac{kJ}{mol}$$ and the entropy of fusion (\u0394S_{fusion}) is $$28.9$$ J/K*mol., convert \u0394H_{fusion} to $$\\frac{J}{mol}$$ for consistency.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2c-h3"
+        ],
+        "title": "Calculate \u0394G for Ammonia at 170K",
+        "text": "Using the formula $$\u0394G=\\Delta H-T \\Delta S$$, calculate \u0394G at $$170$$ K. Use \u0394H_{fusion} $$=$$ $$5650$$ $$\\frac{J}{mol}$$ and \u0394S_{fusion} $$=$$ $$28.9$$ $$\\frac{J}{K} mol$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$737$$"
+        ],
+        "dependencies": [
+            "a73f488Human2c-h4"
+        ],
+        "title": "Solve for \u0394G",
+        "text": "Calculate the value of \u0394G from the previous step: $$\u0394G=5650-170\\times28.9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2c-h5"
+        ],
+        "title": "Interpret \u0394G",
+        "text": "If \u0394G is negative, the process is spontaneous. If positive or zero, it is non-spontaneous or at equilibrium.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488Human1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the process",
+        "text": "When a building is demolished, is there more or less disorder in the system of debris compared to the intact building?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human1b-h1"
+        ],
+        "title": "Relate destruction to entropy",
+        "text": "Think about what happens to the structure of the building during demolition. How does this affect the level of disorganization or randomness in the system?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human1b-h2"
+        ],
+        "title": "Analyze the components",
+        "text": "As the building is demolished, does the number of possible arrangements of objects increase or decrease? How does this relate to entropy?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a73f488Human1b-h3"
+        ],
+        "title": "Determine entropy change",
+        "text": "Entropy measures the degree of disorder. When the building is demolished, does the system's disorder increase, decrease, or remain the same?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

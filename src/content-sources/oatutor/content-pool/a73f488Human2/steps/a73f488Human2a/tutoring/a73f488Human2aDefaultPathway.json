@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a73f488Human2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Gibbs Free Energy Equation",
+        "text": "To calculate the Gibbs free energy change for a process, we use the equation:\\n\\n\u0394G $$=$$ \u0394H - T\u0394S\\n\\nwhere:\\n- \u0394G is the Gibbs free energy change\\n- \u0394H is the enthalpy change\\n- T is the temperature in Kelvin\\n- \u0394S is the entropy change",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2a-h1"
+        ],
+        "title": "Convert Units Appropriately",
+        "text": "Before substituting the values into the equation, it's important to note that the units of \u0394H and \u0394S must match. The enthalpy given is in $$\\frac{kJ}{mol}$$, and the entropy is in $$\\frac{J}{K} mol$$.\\n\\nYou need to convert the enthalpy from $$\\frac{kJ}{mol}$$ to $$\\frac{J}{mol}$$. How can you do that?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5650$$"
+        ],
+        "dependencies": [
+            "a73f488Human2a-h2"
+        ],
+        "title": "Convert \u0394H from $$\\frac{kJ}{mol}$$ to $$\\frac{J}{mol}$$",
+        "text": "The molar enthalpy of fusion is $$5.65$$ $$\\frac{kJ}{mol}$$. Convert this value into $$\\frac{J}{mol}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4913$$"
+        ],
+        "dependencies": [
+            "a73f488Human2a-h3"
+        ],
+        "title": "Calculate T\u0394S",
+        "text": "Now that we know the temperature T and \u0394S , calculate the term T\u0394S . Use the values:\\n- T $$=$$ $$170$$ K\\n- \u0394S $$=$$ $$28.9$$ $$\\frac{J}{K} mol$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$737$$"
+        ],
+        "dependencies": [
+            "a73f488Human2a-h4"
+        ],
+        "title": "Final Calculation of \u0394G",
+        "text": "Now that you have both values, substitute them into the equation for Gibbs free energy:\\n\\n\u0394G $$=$$ \u0394H - T\u0394S\\n\\nUse \u0394H $$=$$ $$5650$$ $$\\frac{J}{mol}$$ and T\u0394S $$=$$ $$4913$$ $$\\frac{J}{mol}$$ to find \u0394G .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

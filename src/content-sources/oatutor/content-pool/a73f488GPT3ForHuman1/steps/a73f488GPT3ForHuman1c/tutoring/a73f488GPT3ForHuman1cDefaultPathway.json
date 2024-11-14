@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy Change",
+        "text": "When a substance dissolves, the molecules become more spread out. How does this affect disorder and entropy?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman1c-h1"
+        ],
+        "title": "Key Characteristics of Entropy",
+        "text": "Entropy is a measure of disorder. Systems with more disorder have a higher entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman1c-h2"
+        ],
+        "title": "Analyzing the Process",
+        "text": "When a sugar cube dissolves, the sugar molecules move from an ordered, structured form to a more random distribution in the tea.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman1c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman1c-h3"
+        ],
+        "title": "Conclusion on Entropy Change",
+        "text": "Based on the increase in randomness when a sugar cube dissolves, predict the sign of the change in entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

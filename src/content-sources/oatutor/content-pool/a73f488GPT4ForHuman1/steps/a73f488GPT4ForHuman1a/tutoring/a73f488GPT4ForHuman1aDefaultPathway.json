@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy in Phase Changes",
+        "text": "When a substance undergoes a phase change, such as ice melting into water, the order of molecules within the substance changes. With ice turning to liquid water, what happens to the structure and order of the molecules?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman1a-h1"
+        ],
+        "title": "Molecular Order During Melting",
+        "text": "Ice at 0\u00b0C has a structured, solid lattice. When it melts, this ordered structure is disrupted. Is the system becoming more or less ordered as ice turns to water?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman1a-h2"
+        ],
+        "title": "Determining the Entropy Change",
+        "text": "Melting involves breaking the rigid lattice structure of ice, leading to a more disordered state as liquid water. Given that entropy is a measure of disorder, what happens to the entropy when ice melts?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

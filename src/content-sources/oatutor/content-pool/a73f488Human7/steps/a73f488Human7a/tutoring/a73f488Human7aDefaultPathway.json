@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a73f488Human7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Gibbs Free Energy",
+        "text": "Before solving, recall the Gibbs free energy formula: \u0394G\u00b0 $$=$$ \u0394H\u00b0 - T \u0394S\u00b0 where T is the temperature in Kelvin, \u0394H\u00b0 is the change in enthalpy, and \u0394S\u00b0 is the change in entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human7a-h1"
+        ],
+        "title": "Calculate Gibbs Free Energy for White Phosphorus",
+        "text": "Use the formula \u0394G\u00b0_{white} $$=$$ \u0394H\u00b0_f_{(white)} - T*S\u00b0_{(white)} to find the Gibbs free energy of white phosphorus.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6.9434$$"
+        ],
+        "dependencies": [
+            "a73f488Human7a-h2"
+        ],
+        "title": "Calculation for White Phosphorus",
+        "text": "Calculate using the given values for white phosphorus: \u0394G\u00b0_{white} $$=$$ $$0$$ - $$\\frac{298\\times23.3}{1000}$$ (convert S\u00b0 to $$\\frac{kJ}{mol\u00b7K}$$ by dividing by 1000).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human7a-h3"
+        ],
+        "title": "Calculate Gibbs Free Energy for Red Phosphorus",
+        "text": "Now, calculate \u0394G\u00b0_{red} $$=$$ \u0394H\u00b0_f_{(red)} - T*S\u00b0_{(red)} to determine the Gibbs free energy of red phosphorus.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-24.3795$$"
+        ],
+        "dependencies": [
+            "a73f488Human7a-h4"
+        ],
+        "title": "Calculation for Red Phosphorus",
+        "text": "Find the Gibbs free energy using the values for red phosphorus: \u0394G\u00b0_{red} $$=$$ $$-17.60$$ - $$\\frac{298\\times22.75}{1000}$$ .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human7a-h5"
+        ],
+        "title": "Comparing Gibbs Free Energies",
+        "text": "Compare the \u0394G\u00b0 values calculated for both allotropes. The more negative the \u0394G\u00b0, the more stable the allotrope at $$298$$ K.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
