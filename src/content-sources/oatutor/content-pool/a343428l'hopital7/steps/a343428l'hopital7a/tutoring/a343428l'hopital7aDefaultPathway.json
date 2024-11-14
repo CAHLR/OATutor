@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,ln(x**4)/(1/x)}"
+            "$$\\lim_{x\\to0} \\frac{\\ln(x^4)}{\\frac{1}{x}}$$"
         ],
         "dependencies": [],
         "title": "Rearrange the expression",
@@ -24,8 +24,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,ln(x**4)/(1/x)}",
-            "/lim{x,0**+,x/(1/ln(x**4))}"
+            "$$\\lim_{x\\to0} \\frac{\\ln(x^4)}{\\frac{1}{x}}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\frac{1}{\\ln(x^4)}}$$"
         ],
         "subHints": [
             {
@@ -33,7 +33,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Rearrange the expression",
-                "text": "/lim{x,0+,ln(x**4)/x**(-1)}=/lim{x,0+,ln(x**4)/(1/x)}",
+                "text": "$$\\lim_{x\\to0} \\frac{\\ln(x^4)}{x^{\\left(-1\\right)}}=\\lim_{x\\to0} \\frac{\\ln(x^4)}{\\frac{1}{x}}$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -71,7 +71,7 @@
             "a343428l'hopital7a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,d/dx(ln(x**4))/d/dx(1/x)}",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(\\ln(x^4)\\right)}}{d}}{\\operatorname{dx}\\left(\\frac{1}{x}\\right)}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -82,7 +82,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,(4/x)/-(1/x**2)}"
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
         ],
         "dependencies": [
             "a343428l'hopital7a-h3"
@@ -93,10 +93,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,(4*x)/-(1/x**2)}",
-            "/lim{x,0**+,(4/x)/(1/x**2)}",
-            "/lim{x,0**+,(4*x**2/x)/-(1/x**2)}",
-            "/lim{x,0**+,(4/x)/-(1/x**2)}"
+            "$$\\lim_{x\\to0} \\frac{4x}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{\\frac{1}{x^2}}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4x^2}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
         ],
         "subHints": [
             {

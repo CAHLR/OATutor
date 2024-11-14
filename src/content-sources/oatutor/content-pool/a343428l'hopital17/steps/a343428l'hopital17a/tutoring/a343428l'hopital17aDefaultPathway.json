@@ -28,7 +28,7 @@
             "a343428l'hopital17a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: /lim{x,0**+,((d/dx)*tan(x))/((d/dx)*sqrt(x))}",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} tan\\left(x\\right)}{\\frac{d}{dx} \\sqrt{x}}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}"
+            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}$$"
         ],
         "dependencies": [
             "a343428l'hopital17a-h3"
@@ -50,10 +50,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "/lim{x,0**+,(sec**2(x))/(1/sqrt(x))}",
-            "/lim{x,0**+,sec(x)/(1/sqrt(x))}",
-            "/lim{x,0**+,(sec**2(x))/-(1/sqrt(x))}",
-            "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}"
+            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{\\sqrt{x}}}$$",
+            "$$\\lim_{x\\to0} \\frac{\\operatorname{sec}\\left(x\\right)}{\\frac{1}{\\sqrt{x}}}$$",
+            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{-\\left(\\frac{1}{\\sqrt{x}}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}$$"
         ]
     },
     {
@@ -63,7 +63,7 @@
             "a343428l'hopital17a-h4"
         ],
         "title": "Rearrange the expression",
-        "text": "/lim{x,0**+,(sec**2(x))/(1/(2*sqrt(x)))}=/lim{x,0**+,(sec**2(x))*2*sqrt(x)}",
+        "text": "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}=\\lim_{x\\to0} 2{sec}^{2\\left(x\\right)} \\sqrt{x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
