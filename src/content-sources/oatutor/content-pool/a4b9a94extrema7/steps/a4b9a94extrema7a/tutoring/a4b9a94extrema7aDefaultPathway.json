@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a4b9a94extrema7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the derivative",
+        "text": "To find the critical points, we need to find the first derivative of the function. For reference, we can use the power rule to differentiate this function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4b9a94extrema7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y'=\\frac{3}{2} x^{\\frac{1}{2}}-\\frac{15}{2} x^{\\frac{3}{2}}$$"
+        ],
+        "dependencies": [
+            "a4b9a94extrema7a-h1"
+        ],
+        "title": "Finding the first derivative",
+        "text": "Find the first derivative of $$y=x^{\\frac{3}{2}}-3x^{\\frac{5}{2}}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$y'=\\frac{3}{2} x^{\\frac{1}{2}}-\\frac{15}{2} x^{\\frac{3}{2}}$$",
+            "$$y'=\\frac{3}{2} x^{\\frac{1}{2}}-\\frac{5}{2} x^{\\frac{3}{2}}$$",
+            "$$y'=\\frac{3}{2} x^{\\frac{1}{2}}+\\frac{15}{2} x^{\\frac{3}{2}}$$"
+        ]
+    },
+    {
+        "id": "a4b9a94extrema7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4b9a94extrema7a-h2"
+        ],
+        "title": "Finding the critical point(s)",
+        "text": "The critical point(s) are the values of $$x$$ which cause the first derivative of the function to be equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a4b9a94extrema7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a4b9a94extrema7a-h3"
+        ],
+        "title": "Solve for the value(s) of $$x$$ that set the first derivative of the function to zero.",
+        "text": "Solve for value(s) of $$x$$ in the following: $$0=\\frac{3}{2} x^{\\frac{1}{2}}-\\frac{15}{2} x^{\\frac{3}{2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "0;5",
+            "$$0$$",
+            "None"
+        ]
+    }
+]

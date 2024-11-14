@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a7fb17bvalidity3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Error in Own Reporting",
+        "text": "As a data producer, you have the responsibility to versee the data quality rules on your own report.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity3a-h1"
+        ],
+        "title": "Remediation Prior to Report",
+        "text": "As the data consumer, you are not responsible for remediating issues surrounding the data source because you are not the producer of the data in the source.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity3a-h2"
+        ],
+        "title": "Quality of Fields Produced",
+        "text": "The data quality team monitors data quality dashboards to hold parties accountable for remediating data quality issues.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

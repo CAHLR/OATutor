@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a04cbeesubstitution1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression for u",
+        "text": "First choose an expression for u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u=3x^2+4$$"
+        ],
+        "dependencies": [
+            "a04cbeesubstitution1a-h1"
+        ],
+        "title": "Choose an Expression for u",
+        "text": "Which expression for u would be most appropriate for substitution?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$u=6x^4$$",
+            "$$u=3x^2+4$$",
+            "$$u=6x$$",
+            "$$u={\\left(3x^2+4\\right)}^4$$"
+        ]
+    },
+    {
+        "id": "a04cbeesubstitution1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution1a-h2"
+        ],
+        "title": "Choose an Expression for u",
+        "text": "We choose $$u=3x^2+4$$ because then $$du=6xdx$$, and we already have du in the integrand.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int u^4 \\,du$$"
+        ],
+        "dependencies": [
+            "a04cbeesubstitution1a-h3"
+        ],
+        "title": "Write the Integral in Terms of u",
+        "text": "Write the integral in terms of u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int u^4 \\,du$$",
+            "$$\\int u \\,du$$"
+        ]
+    },
+    {
+        "id": "a04cbeesubstitution1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution1a-h4"
+        ],
+        "title": "Evaluate the Integral",
+        "text": "Remember that du is the derivative of the expresion chosen for u, regardless of what is inside the integrand. Evaluate the integral with respect to u.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution1a-h5"
+        ],
+        "title": "Evaluate the Integral",
+        "text": "Replace u with $$3x^2+4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a1348b9areas2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the limits of integration",
+        "text": "You'll need to find the x-values where the two curves intersect by setting the given $$2$$ functions equal to each other $$f(x)=g(x)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[-2,6]$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the limits of integration",
+        "text": "What are the limits of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$[-2,6]$$",
+            "$$[-5.5, 5.5]$$",
+            "[0,10]"
+        ]
+    },
+    {
+        "id": "a1348b9areas2a-s1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the limits of integration",
+        "text": "As $$f(x)=g(x)$$, we then have $$9-{\\left(\\frac{x}{2}\\right)}^2=6-x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas2a-s2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$x$$",
+        "text": "$$9-\\frac{x}{4}=6-x$$ then $$\\left(x-6\\right) \\left(x+2\\right)=0$$. The graphs of functions intersect when $$x=6$$ and $$x=-2$$ so we want to integrate from $$-2$$ to $$6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas2a-h2"
+        ],
+        "title": "Set up the integral",
+        "text": "$$\\int_{-2}^{6} 9-{\\left(\\frac{x}{2}\\right)}^2-6-x \\,dx=\\int_{-2}^{6} 3-\\frac{x^2}{4}+x \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas2a-h3"
+        ],
+        "title": "Evaluate",
+        "text": "$$3x-\\frac{x^3}{12}+\\frac{x^2}{2}$$ as the limits go from $$x=-2$$ to $$x=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a1348b9areas2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1348b9areas2a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "The area of the region is $$\\frac{64}{3}$$ $${unit}^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

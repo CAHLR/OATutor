@@ -1,0 +1,24 @@
+[
+    {
+        "id": "af5870enewton1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Newton's Method With $$n=5$$",
+        "text": "To find $$x_5$$, use the equation $$x_n=x_n-1-\\frac{f{\\left(x_n-1\\right)}}{\\operatorname{f'}\\left(x_n-1\\right)}$$ with $$n=5$$ and the value of $$x_4$$ stored on the calculator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af5870enewton1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "af5870enewton1e-h1"
+        ],
+        "title": "Same Value With Subsequent Application of Newton's Method",
+        "text": "$$x_6$$ also approximates to $$1.532088886$$. We note that we obtained the same value for $$x_5$$ and $$x_6$$. Therefore, any subsequent application of Newton\u2019s method will most likely give the same value for $$x_n$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

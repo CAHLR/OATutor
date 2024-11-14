@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aeb2bc4integrals15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "U-substitution",
+        "text": "Set $$u=lnx$$ then $$du=\\frac{1}{x} dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals15a-h1"
+        ],
+        "title": "Rewrite the integral in term of u",
+        "text": "$$\\int u^{\\left(-2\\right)} \\,du$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals15a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int u^{\\left(-2\\right)} \\,du=-\\left(u^{\\left(-1\\right)}\\right)+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals15a-h3"
+        ],
+        "title": "Back-substitute",
+        "text": "$$\\frac{-1}{ln}|x|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

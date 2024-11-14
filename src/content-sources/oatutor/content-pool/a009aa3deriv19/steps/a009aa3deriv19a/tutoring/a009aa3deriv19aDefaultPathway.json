@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a009aa3deriv19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The First Derivative",
+        "text": "If f\u2032 is greater than $$0$$, f is increasing. If f' is less than $$0$$, f is decreasing. If f is $$0$$ or undefined, it may be a local minimum or maximum.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a009aa3deriv19a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$cos\\left(x\\right)+{sec}^{2\\left(x\\right)}$$"
+        ],
+        "dependencies": [
+            "a009aa3deriv19a-h1"
+        ],
+        "title": "Finding f'(x)",
+        "text": "Find the derivative of f, and then solve to find when f'(x) is greater than $$0$$. What is the derivative of f(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan^2\\left(x\\right)+sin\\left(x\\right)$$",
+            "$$cos\\left(x\\right)+{sec}^{2\\left(x\\right)}$$",
+            "$$tan(x)-cos(x)$$",
+            "$${sin}^{2\\left(x\\right)}+{sec}^{2\\left(x\\right)}$$"
+        ]
+    }
+]

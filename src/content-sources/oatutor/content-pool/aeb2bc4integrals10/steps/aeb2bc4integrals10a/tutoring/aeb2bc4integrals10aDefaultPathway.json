@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aeb2bc4integrals10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using u-substitution",
+        "text": "Starting by setting $$u=x+2$$ then $$du=dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals10a-h1"
+        ],
+        "title": "Find the integral",
+        "text": "$$\\int \\frac{1}{u} \\,du=ln|u|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aeb2bc4integrals10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeb2bc4integrals10a-h2"
+        ],
+        "title": "Back-subsitute",
+        "text": "Plug $$x+2$$ back into u to obtain $$ln|x+2|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
