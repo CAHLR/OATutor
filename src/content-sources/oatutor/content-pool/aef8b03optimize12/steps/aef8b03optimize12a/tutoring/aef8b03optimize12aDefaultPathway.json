@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$l^2+h$$ is less than or equal to $$62$$"
+            "$$2l+h$$ is less than or equal to $$62$$"
         ],
         "dependencies": [
             "aef8b03optimize12a-h1"
@@ -27,7 +27,7 @@
         "license": "",
         "choices": [
             "$$l^2+h$$ is less than or equal to $$62$$",
-            "$$l+h^2$$ is less than or equal to $$62$$",
+            "$$2l+h$$ is less than or equal to $$62$$",
             "$$l+w+h$$ is less than $$62$$"
         ]
     },
@@ -93,13 +93,13 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$${\\left(31-\\frac{1}{2} h\\right)}^2$$"
+            "$$31-\\frac{1}{2} h$$"
         ],
         "dependencies": [
             "aef8b03optimize12a-h5"
         ],
         "title": "Find the Length",
-        "text": "Because $$V=h l^2$$ part of $$V={h{\\left(31-\\frac{1}{2} h\\right)}}^2$$ equals the length? In other words, $$l=___$$?",
+        "text": "We need to represent the volume in terms of only $$h$$. If $$2l$$ + $$h$$ $$=$$ $$62$$, $$l=___$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -116,20 +116,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$${\\left(31-\\frac{1}{2} h\\right)}^2+h$$ is less than or equal to $$62$$"
+            "$${h{\\left(31-\\frac{1}{2} h\\right)}}^2$$"
         ],
         "dependencies": [
             "aef8b03optimize12a-h6"
         ],
         "title": "Rewrite the Equation",
-        "text": "Choose the correct reqriting of \"l**2+h is less than or equal to 62\" in terms of $$h$$ using the fact that $$l={\\left(31-\\frac{1}{2} h\\right)}^2$$.",
+        "text": "If V $$=$$ $$l^2 h$$ and l $$=$$ $$31-\\frac{1}{2} h$$, then what is V in terms of only $$h$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$${\\left(31-\\frac{1}{2} h\\right)}^2+h$$ is less than or equal to $$62$$",
-            "$${\\left(31-\\frac{1}{2} h\\right)}^2$$ is less than or equal to $$62$$",
-            "$$h+w+31-\\frac{1}{2} h$$ is less than or equal to $$62$$"
+            "$${h{\\left(31-\\frac{1}{2} h\\right)}}^2$$",
+            "$$h{\\left(31-\\frac{1}{2} h\\right)}$$",
+            "$$h \\sqrt{31-\\frac{1}{2} h}$$"
         ]
     },
     {
