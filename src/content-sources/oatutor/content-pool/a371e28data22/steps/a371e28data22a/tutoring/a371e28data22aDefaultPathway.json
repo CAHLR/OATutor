@@ -12,9 +12,11 @@
     {
         "id": "a371e28data22a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a371e28data22a-h1"
+        ],
         "title": "Where",
-        "text": "Incorrect: Order by is not a necessary part of a query",
+        "text": "Incorrect: Where by is not a necessary part of a query",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -22,7 +24,9 @@
     {
         "id": "a371e28data22a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a371e28data22a-h2"
+        ],
         "title": "From",
         "text": "Correct",
         "variabilization": {},
