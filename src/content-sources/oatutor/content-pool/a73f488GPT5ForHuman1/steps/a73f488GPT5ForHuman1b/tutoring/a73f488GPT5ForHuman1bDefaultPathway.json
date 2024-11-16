@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT5ForHuman1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Entropy Change",
+        "text": "Entropy, a measure of disorder or randomness in a system, typically increases with processes that disperse energy or matter. Think about whether the carbon dioxide is more dispersed or more contained when dissolved in water.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT5ForHuman1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT5ForHuman1b-h1"
+        ],
+        "title": "Comparing Gaseous and Liquid States",
+        "text": "In which state, gas or liquid, do molecules have more freedom to move around? Consider how this affects the entropy of the system.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT5ForHuman1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT5ForHuman1b-h2"
+        ],
+        "title": "Focusing on the Process Dynamics",
+        "text": "In this scenario, carbon dioxide gas, which has high entropy due to its freedom to move, is being trapped in water. Does this increase or decrease the randomness of the carbon dioxide molecules?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT5ForHuman1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "negative"
+        ],
+        "dependencies": [
+            "a73f488GPT5ForHuman1b-h3"
+        ],
+        "title": "Evaluating Entropy in Carbonation",
+        "text": "When gaseous carbon dioxide dissolves in water to form carbonated water, does it lead to a more ordered system or a more disordered one?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

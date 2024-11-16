@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine if the reaction is spontaneous at 298K",
+        "text": "To determine if this reaction is spontaneous at 298K, consider the sign of the standard Gibbs free energy change (\u2206G\u00b0).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman4b-h1"
+        ],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "Recall that a negative value for \u0394G\u00b0 indicates a spontaneous reaction under standard conditions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman4b-h2"
+        ],
+        "title": "Compare \u0394G\u00b0 value",
+        "text": "Given that $$\u0394G\\degree=\\frac{-32.89kJ}{mol}$$. Is the value negative? If yes, the reaction is spontaneous.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman4b-h3"
+        ],
+        "title": "Make your conclusion",
+        "text": "Based on the given Gibbs free energy change (\u0394G\u00b0=-32.89kJ/mol), is the reaction spontaneous?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes"
+        ]
+    }
+]

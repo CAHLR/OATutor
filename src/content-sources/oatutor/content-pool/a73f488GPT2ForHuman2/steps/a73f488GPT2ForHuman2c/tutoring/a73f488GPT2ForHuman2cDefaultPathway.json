@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a73f488GPT2ForHuman2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding spontaneous vaporization",
+        "text": "For a process to occur spontaneously, the change in Gibbs free energy (\u0394G) should be less than zero (negative).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman2c-h1"
+        ],
+        "title": "Gibbs Free Energy",
+        "text": "The formula for Gibbs free energy change is $$\u0394G=\u0394H-T\u0394S$$, where \u0394H is the change in enthalpy, T is the temperature in Kelvin, and \u0394S is the change in entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman2c-h2"
+        ],
+        "title": "Substituting given values",
+        "text": "Given that $$\u0394H=40.67$$ $$\\frac{kJ}{mol}$$ and $$\u0394S=109.3$$ J/K\u2022mol (convert this to kJ/K\u2022mol for consistency), and $$T=350$$ K, substitute these values into the formula for \u0394G.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman2c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40632$$"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman2c-h3"
+        ],
+        "title": "Calculating gibbs free energy change",
+        "text": "Calculate whether the Gibbs free energy change is negative using the formula $$\u0394G=\u0394H-T\u0394S$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman2c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman2c-h4"
+        ],
+        "title": "Determining spontaneity from \u0394G",
+        "text": "If \u0394G is negative, the process will be spontaneous. Check your calculation from the last step.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman2c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman2c-h5"
+        ],
+        "title": "Final verdict based on your calculation",
+        "text": "Based on your calculation of \u0394G, will water vaporize spontaneously at $$350$$ K?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes"
+        ]
+    }
+]

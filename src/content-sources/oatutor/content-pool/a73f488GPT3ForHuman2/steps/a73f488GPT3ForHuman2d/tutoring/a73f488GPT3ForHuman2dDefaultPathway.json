@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "To determine the equilibrium temperature at which solid and liquid benzene coexist, you'll need to relate the molar enthalpy of fusion to the molar entropy of fusion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2d-h1"
+        ],
+        "title": "Using Gibbs Free Energy",
+        "text": "Recall that the Gibbs free energy change at equilibrium is zero. The equation \u0394G $$=$$ \u0394H - T \u0394S can be rearranged to solve for T, where \u0394H is the molar enthalpy and \u0394S is the molar entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$T=\\frac{\\Delta H}{\\Delta S}$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2d-h2"
+        ],
+        "title": "Rearrange the Equation",
+        "text": "Using the formula $$\u0394G=\u0394H-T\u0394S$$ , set \u0394G to $$0$$ and solve for T.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$T=\\frac{\\Delta H}{\\Delta S}$$",
+            "$$T=\\frac{\\Delta S}{\\Delta H}$$"
+        ]
+    },
+    {
+        "id": "a73f488GPT3ForHuman2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2d-h3"
+        ],
+        "title": "Convert Units",
+        "text": "Ensure that the units for enthalpy and entropy are consistent when calculating. Convert the molar entropy from $$\\frac{J}{K\u00b7mol}$$ to $$\\frac{kJ}{K\u00b7mol}$$ (1kJ $$=$$ 1000J).\\n\\n$$\u0394S=\\frac{35.7}{1000}$$ $$\\frac{\\pm kJ}{K} mol$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2d-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Now compute the equilibrium temperature using the rearranged equation with the consistent units.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

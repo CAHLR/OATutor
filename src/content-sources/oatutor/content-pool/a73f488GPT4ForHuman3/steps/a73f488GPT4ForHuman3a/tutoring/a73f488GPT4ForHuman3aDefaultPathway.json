@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint 1: Understanding Enthalpy",
+        "text": "Enthalpy is a state function, which means its change only depends on the initial and final states of a system, not on the path taken.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h1"
+        ],
+        "title": "Scaffold 1: Isothermal Process",
+        "text": "During an isothermal process, what happens to the temperature of the gas?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h2"
+        ],
+        "title": "Hint 2: Adiabatic Process",
+        "text": "In an adiabatic process, there is no heat transfer between the system and its surroundings.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h3"
+        ],
+        "title": "Scaffold 2: Adiabatic Expansion",
+        "text": "If the process is adiabatic, does heat enter or leave the system?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h4"
+        ],
+        "title": "Hint 3: Reversible Process",
+        "text": "A reversible process is an ideal process that happens infinitely slowly, allowing the system to remain in equilibrium.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h5"
+        ],
+        "title": "Scaffold 3: Reversible Compression",
+        "text": "What does a reversible isothermal compression imply about the system and surroundings' temperature?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h6"
+        ],
+        "title": "Hint 4: Heat Exchange",
+        "text": "The gas returns to its initial state A after a heat exchange, completing the cycle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u0394H=0$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman3a-h7"
+        ],
+        "title": "Scaffold 4: Net Change in Enthalpy",
+        "text": "Since the gas returns to its initial state A, what can you infer about the net change in enthalpy (\u0394H)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\u0394H=0$$",
+            "$$\\Delta H>0$$",
+            "$$\\Delta H<0$$",
+            "$$\u0394H \\geq 0$$",
+            "$$\u0394H \\leq 0$$"
+        ]
+    }
+]

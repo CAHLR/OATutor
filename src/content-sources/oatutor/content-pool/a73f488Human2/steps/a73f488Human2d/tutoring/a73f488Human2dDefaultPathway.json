@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a73f488Human2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the temperature at which solid and liquid ammonia are in equilibrium, use the relationship between enthalpy (\u2206H) and entropy (\u2206S).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2d-h1"
+        ],
+        "title": "Gibbs Free Energy Equation",
+        "text": "Use the Gibbs free energy equation for phase equilibrium: [\u0394G $$=$$ \u0394H - T \u00d7 \u0394S $$=$$ 0] where \u0394H is the enthalpy of fusion and \u0394S is entropy of fusion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2d-h2"
+        ],
+        "title": "Calculate Temperature",
+        "text": "Rearrange the equation \u0394G $$=$$ \u0394H - T \u00d7 \u0394S $$=$$ $$0$$ to find the temperature T: [T $$=$$ \u0394H/\u0394S].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488Human2d-h3"
+        ],
+        "title": "Units Conversion",
+        "text": "Ensure the units are compatible when calculating. Convert kilojoules to joules if needed: $$1$$ kJ $$=$$ $$1000$$ J .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488Human2d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$196$$"
+        ],
+        "dependencies": [
+            "a73f488Human2d-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Use the given values: \u0394H $$=$$ $$5.65$$ $$\\frac{kJ}{mol}$$ $$=$$ $$5650$$ $$\\frac{J}{mol}$$ and \u0394S $$=$$ $$28.9$$ $$\\frac{J}{K\u00b7mol}$$ . Calculate the temperature T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

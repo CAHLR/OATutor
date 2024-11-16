@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Enthalpy in Cycles",
+        "text": "When a system undergoes a complete cycle of processes, it begins and ends at the same state. What does this imply about extensive properties?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman3a-h1"
+        ],
+        "title": "Properties of a Cycle",
+        "text": "In thermodynamics, which properties are extensive and changed when a system returns to its initial state after a cycle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman3a-h2"
+        ],
+        "title": "Change in Enthalpy for a Cycle",
+        "text": "Since enthalpy is a state function, when a system undergoes a complete cycle, does the enthalpy change? Why or why not?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\u0394H=0$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman3a-h3"
+        ],
+        "title": "Determining the Change in Enthalpy (\u0394H)",
+        "text": "Given that the system returns to its original state at the end of the cycle, the change in enthalpy (\u0394H) over the cycle is..",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\u0394H=0$$",
+            "$$\\Delta H>0$$",
+            "$$\\Delta H<0$$",
+            "$$\u0394H \\neq 0$$"
+        ]
+    }
+]

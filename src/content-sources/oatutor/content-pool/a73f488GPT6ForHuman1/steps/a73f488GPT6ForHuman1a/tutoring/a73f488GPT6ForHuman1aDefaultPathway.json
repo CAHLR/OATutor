@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a73f488GPT6ForHuman1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy Change",
+        "text": "Entropy, a measure of disorder or randomness, often increases when a solid melts to liquid because the particles move more freely.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT6ForHuman1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT6ForHuman1a-h1"
+        ],
+        "title": "Energy and Heat Transfer",
+        "text": "When ice melts, it absorbs heat from the water, leading to a more disordered system as the particles spread out.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT6ForHuman1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a73f488GPT6ForHuman1a-h2"
+        ],
+        "title": "Reabsorbing Heat and Entropy",
+        "text": "Consider how the absorption of heat as ice melts affects the overall system entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

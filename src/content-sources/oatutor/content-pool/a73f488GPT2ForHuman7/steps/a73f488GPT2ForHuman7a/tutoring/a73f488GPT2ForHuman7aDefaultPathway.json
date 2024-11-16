@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a73f488GPT2ForHuman7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "For a phase to be thermodynamically stable, it should have the lowest Gibbs Free Energy (\u0394G) at a given temperature. Remember, $$\u0394G=\u0394H-T\u0394S$$. How can you use this equation to determine stability?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h1"
+        ],
+        "title": "Calculate Gibbs Free Energy for White Tin",
+        "text": "Calculate the Gibbs Free Energy: \u0394G=\u0394H\u00b0_f-T \u00d7 S\u00b0 using the data for white tin $$(\u03b2-form)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h2"
+        ],
+        "title": "Calculate Gibbs Free Energy for White Tin",
+        "text": "Use the provided values: \u0394H\u00b0_f=0 $$\\frac{kJ}{mol}$$ and $$S\\degree=51.2$$ $$\\frac{J}{mol\u00b7K}$$ for white tin. At $$298$$ K, calculate \u0394G.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h3"
+        ],
+        "title": "Calculate Gibbs Free Energy for Gray Tin",
+        "text": "Next, calculate the Gibbs Free Energy for gray tin $$(\\alpha-form)$$ using \u0394H\u00b0_f and S\u00b0 values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h4"
+        ],
+        "title": "Calculate Gibbs Free Energy for Gray Tin",
+        "text": "Use the values: \u0394H\u00b0_f=-2.12 $$\\frac{kJ}{mol}$$ and $$S\\degree=44.1$$ $$\\frac{J}{mol\u00b7K}$$ for gray tin. At $$298$$ K, compute \u0394G.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h5"
+        ],
+        "title": "Compare Gibbs Free Energies",
+        "text": "Compare the \u0394G values for white tin and gray tin. The phase with the lower \u0394G at $$298$$ K will be thermodynamically more stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman7a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "White tin $$(\u03b2-form)$$ is more stable."
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman7a-h6"
+        ],
+        "title": "Determine the Stable Form",
+        "text": "Based on your calculations, which allotrope of tin is more stable at $$298$$ K?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "White tin $$(\u03b2-form)$$ is more stable.",
+            "Gray tin $$(\\alpha-form)$$ is more stable.",
+            "Both allotropes are equally stable."
+        ]
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Concepts",
+        "text": "The Gibbs free energy change (\u0394G) can be calculated using the equation:\\n\\n\u0394G $$=$$ \u0394H - T\u0394S\\n\\nWhere:\\n- \u0394H is the enthalpy change.\\n- T is the temperature in Kelvin.\\n- \u0394S is the entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h1"
+        ],
+        "title": "Identify Known Values",
+        "text": "You're given:\\n- \u0394H $$=$$ $$9.87$$ $$\\frac{kJ}{mol}$$\\n- \u0394S $$=$$ $$35.7$$ J/K\u2219mol\\n- T $$=$$ $$279$$ K\\n- $$n$$ $$=$$ $$2.50$$ mol\\n\\nConvert \u0394H and \u0394S to $$\\frac{J}{mol}$$ if necessary.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h2"
+        ],
+        "title": "Calculate \u0394G for $$1$$ Mole of Benzene",
+        "text": "Now, calculate \u0394G for $$1$$ mole of benzene:\\n\\n\u0394G $$=$$ \u0394H - T\u0394S\\n\\nPlug in the known values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9950.3$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h3"
+        ],
+        "title": "Perform the Calculation",
+        "text": "First, perform the multiplication:\\n\\n$$279$$ \u00d7 $$35.7$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-90.3$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h4"
+        ],
+        "title": "Find \u0394G for $$1$$ Mole",
+        "text": "Subtract the result from \u0394H:\\n\\n$$9870$$ - $$9950.3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h5"
+        ],
+        "title": "Scale for Moles",
+        "text": "Find the \u0394G for $$2.50$$ mol of benzene by scaling the result you obtained from the previous step.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h7",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h6"
+        ],
+        "title": "Calculate \u0394G for $$2.50$$ Moles",
+        "text": "Multiply the result from \u0394G for $$1$$ mole by $$2.50$$:\\n\\n$$2.50$$ \u00d7 $$(-90.3)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-226$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2b-h7"
+        ],
+        "title": "Final Gibbs Free Energy Change",
+        "text": "Perform the final calculation to find the \u0394G for $$2.50$$ moles of benzene.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

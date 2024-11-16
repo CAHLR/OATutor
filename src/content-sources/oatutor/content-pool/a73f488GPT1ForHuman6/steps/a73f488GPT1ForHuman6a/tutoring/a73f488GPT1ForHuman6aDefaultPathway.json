@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spontaneity with Gibbs Free Energy",
+        "text": "A reaction is spontaneous if the change in Gibbs Free Energy (\u0394G) is negative. The equation to calculate \u0394G is:\\n\\n$$\u0394G=\u0394H-T$$ \u00d7 \u0394S\\n\\nwhere \u0394H is the change in enthalpy, T is the temperature in Kelvin, and \u0394S is the change in entropy. Use this to analyze the reaction.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman6a-h1"
+        ],
+        "title": "Calculate Temperature for Spontaneity",
+        "text": "To find the temperature at which the reaction becomes spontaneous, set $$\u0394G=0$$ and solve -114000-T \u00d7 $$(-146)$$ for T. Consider the units: \u0394H is in $$\\frac{kJ}{mol}$$ and \u0394S is in $$\\frac{J}{mol\u00b7K}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$781$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman6a-h2"
+        ],
+        "title": "Solve for Temperature (T)",
+        "text": "Using the equation $$0=-114000-T$$ \u00d7 $$(-146)$$, solve for T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman6a-h3"
+        ],
+        "title": "Understanding Temperature Range for Spontaneity",
+        "text": "Once you have solved for T, remember that the reaction is spontaneous when $$\\Delta G<0$$, meaning T must be lower than the calculated value to ensure spontaneity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

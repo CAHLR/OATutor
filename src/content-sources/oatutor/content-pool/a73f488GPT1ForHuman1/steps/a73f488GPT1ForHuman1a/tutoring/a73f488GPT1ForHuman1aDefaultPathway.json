@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Change in Physical State",
+        "text": "Think about how the state of water changes when ice cubes melt.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman1a-h1"
+        ],
+        "title": "Understanding Entropy Change",
+        "text": "Entropy is a measure of disorder or randomness in a system. Adding ice cubes and causing them to melt changes the orderliness of the system.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman1a-h2"
+        ],
+        "title": "Molecular Motion",
+        "text": "Melting ice increases the molecular motion as water molecules move from solid to liquid, leading to an increase in randomness or disorder.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman1a-h3"
+        ],
+        "title": "Final Decision",
+        "text": "Based on the change in state and molecular motion, determine the sign of the entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "nochange"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a73f488GPT3ForHuman2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy",
+        "text": "The Gibbs free energy change (\u0394G) for a process can be calculated using the formula: \u0394G $$=$$ \u0394H - T\u0394S, where \u0394H is the enthalpy change, T is the temperature in kelvin, and \u0394S is the entropy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2a-h1"
+        ],
+        "title": "Calculate \u0394G for Benzene",
+        "text": "In this problem, you're asked to calculate the Gibbs free energy change (\u0394G) for melting $$1$$ mol of benzene at $$279$$ K using the given values for \u0394H and \u0394S. What values do we substitute into the equation \u0394G $$=$$ \u0394H - T\u0394S?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9870$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2a-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Given the enthalpy of fusion for benzene as $$9.87$$ $$\\frac{kJ}{mol}$$ and the entropy of fusion as $$35.7$$ J/(K\u2219mol), convert \u0394H into the same unit as \u0394S before substituting them into the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT3ForHuman2a-h3"
+        ],
+        "title": "Calculate \u0394G",
+        "text": "Now substitute the values into the equation \u0394G $$=$$ \u0394H - T\u0394S. Remember to use the given temperature, $$279$$ K.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT3ForHuman2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-90$$"
+        ],
+        "dependencies": [
+            "a73f488GPT3ForHuman2a-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the value of \u0394G after substituting the values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a73f488GPT2ForHuman4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Components of the Gibbs Free Energy Equation",
+        "text": "To compute the temperature at which the reaction becomes spontaneous, we use the Gibbs free energy equation: $$\u2206G=\u2206H-T$$ \u00d7 \u2206S. Rearrange it to find T when $$\u2206G=0$$: T=\u2206H/\u2206S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h1"
+        ],
+        "title": "Determine \u2206H for the Reaction",
+        "text": "The equation for the reaction's enthalpy change (\u2206H) at 298K is: \u2206H=\u2206H\u00b0_f(products)-\u2206H\u00b0_f(reactants). For C(s)+H_2O(g)\u21ccCO(g)+H_2(g), calculate \u2206H using values:\\n\\n\u2206H\u00b0_f(H_2O(g)) $$=$$ $$-241.8$$ $$\\frac{kJ}{mol}$$\\n\u2206H\u00b0_f(CO(g)) $$=$$ $$-110.5$$ $$\\frac{kJ}{mol}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$131.3$$"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h2"
+        ],
+        "title": "Calculate \u2206H for the Reaction",
+        "text": "Calculate \u2206H using \u2206H=\u2206H\u00b0_f(CO)+\u2206H\u00b0_f(H_2)-\u2206H\u00b0_f(H_2O):\\n$$\u2206H=-110.5$$ + $$0$$ - $$(-241.8)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h3"
+        ],
+        "title": "Calculate \u2206S for the Reaction",
+        "text": "Since $$\u2206G=\u2206H-T$$ \u00d7 \u2206S, rearrange to find \u2206S when $$\u2206G=0$$.\\n\\n\u2206S=\u2206H\u00b0/T for the reaction when T makes $$\u2206G=0$$, with given $$\u2206G\\degree=110.5$$ $$\\frac{kJ}{mol}$$ and the calculated \u2206H.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.07$$"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h4"
+        ],
+        "title": "Calculate \u2206S",
+        "text": "Calculate \u2206S using:\\n$$\u2206G=\u2206H-T$$ \u00d7 \u2206S\\n$$110.5=131.3-T$$ \u00d7 \u2206S\\nSolve for \u2206S assuming $$T=298K$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h5"
+        ],
+        "title": "Find the Minimum Temperature",
+        "text": "Now use the expression T=\u2206H/\u2206S found earlier to determine the minimum temperature at which $$\u2206G=0$$ and the reaction becomes spontaneous. Use the values of \u2206H and \u2206S you calculated.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman4c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1881$$"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman4c-h6"
+        ],
+        "title": "Calculate the Minimum Temperature",
+        "text": "Using T=\u2206H/\u2206S, where $$\u2206H=131.3$$ $$\\frac{kJ}{mol}$$ and $$\u2206S=0.07$$ $$\\frac{kJ}{mol}$$:\\n\\n$$\\frac{131.3}{0.07}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

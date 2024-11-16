@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT1ForHuman2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gibbs Free Energy Change",
+        "text": "The Gibbs free energy change (\u0394G) for any process is calculated using the formula $$\u0394G=\u0394H-T$$ \u00d7 \u0394S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2465$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2b-h1"
+        ],
+        "title": "Step 1: Calculate Gibbs Free Energy Change",
+        "text": "First, calculate \u0394G using the given values for \u0394H, T, and \u0394S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT1ForHuman2b-h2"
+        ],
+        "title": "Step 2: Calculate for $$2.50$$ mol of water",
+        "text": "Energy is required for $$1$$ mole, so for $$2.50$$ moles, multiply \u0394G by $$2.50$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT1ForHuman2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6163$$"
+        ],
+        "dependencies": [
+            "a73f488GPT1ForHuman2b-h3"
+        ],
+        "title": "Result: Calculate Total Gibbs Free Energy",
+        "text": "Calculate the total Gibbs free energy change for $$2.50$$ mol of water at $$350$$ K.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

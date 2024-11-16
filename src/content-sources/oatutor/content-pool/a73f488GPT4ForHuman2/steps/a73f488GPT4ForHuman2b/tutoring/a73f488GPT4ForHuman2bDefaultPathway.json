@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a73f488GPT4ForHuman2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Formula for Gibbs Free Energy Change",
+        "text": "Gibbs free energy change (\u0394G) can be calculated using the $$formula:[\u0394G=\u0394H-T\u0394S]$$ where:\\n- \u0394H is the enthalpy change\\n- T is the temperature (in Kelvin)\\n- \u0394S is the entropy change",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman2b-h1"
+        ],
+        "title": "Substitute Values into the Equation",
+        "text": "We need to substitute the given values into the formula $$\u0394G=\u0394H-T\u0394S$$:\\n$$-\u0394H=40.79$$ $$\\frac{kJ}{mol}$$\\n$$-T=350$$ K\\n$$-\u0394S=109.2$$ $$\\frac{J}{K}$$ mol\\n\\nMake sure to convert(\u0394H into the same units as(\u0394S. Decide what the values should be after conversion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2570$$"
+        ],
+        "dependencies": [
+            "a73f488GPT4ForHuman2b-h2"
+        ],
+        "title": "Convert Units and Calculate the Result",
+        "text": "Convert the enthalpy change((\u0394H) from kilojoules to joules before plugging it into the formula, and then perform the calculations to find(\u0394G.\\n\\n$$Calculate:(40.79$$ \u00d7 $$1000)-(350$$ \u00d7 $$109.2)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT4ForHuman2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT4ForHuman2b-h3"
+        ],
+        "title": "Final Calculation of \u0394G",
+        "text": "Multiply the result from \u0394G for $$1$$ mole by $$0.5$$:\\n\\n$$0.50$$ \u00d7 (2570)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

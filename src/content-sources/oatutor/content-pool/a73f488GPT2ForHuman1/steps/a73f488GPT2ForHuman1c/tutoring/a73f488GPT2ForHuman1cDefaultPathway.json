@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73f488GPT2ForHuman1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy Change in Phase Transitions",
+        "text": "When a gas turns into a liquid, what happens to its orderliness and energy distribution?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman1c-h1"
+        ],
+        "title": "Nature of Condensation",
+        "text": "Condensation involves a gas transforming into a liquid. Does this process generally increase or decrease molecular disorder?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73f488GPT2ForHuman1c-h2"
+        ],
+        "title": "Entropy and Order",
+        "text": "Entropy is often associated with the level of disorder in a system. A decrease typically indicates an increase in order.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73f488GPT2ForHuman1c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "negative"
+        ],
+        "dependencies": [
+            "a73f488GPT2ForHuman1c-h3"
+        ],
+        "title": "Entropy Change in Condensation",
+        "text": "What is the sign of the entropy change when water vapor condenses to form liquid water?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]
