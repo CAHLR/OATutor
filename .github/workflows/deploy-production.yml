@@ -57,6 +57,7 @@ jobs:
           CI: false
           REACT_APP_BUILD_TYPE: "production"
           REACT_APP_COMMIT_HASH: ${{ github.sha }}
+          REACT_APP_AI_HINT_GENERATION_AWS_ENDPOINT: ${{ secrets.AI_HINT_GENERATION_AWS_ENDPOINT }}
 
       - uses: actions/checkout@v2
         with:
