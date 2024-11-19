@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a2ee4dfsql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating a Name",
+        "text": "Creating a name would require another instruction alongisde the use of the ON in the clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql10a-h1"
+        ],
+        "title": "Limiting Output Records",
+        "text": "The ON portion implies the number of output records, but not directly. There are cases where the number of output records are not limited by the ON portion.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql10a-h2"
+        ],
+        "title": "Using the ON with the JOIN",
+        "text": "The JOIN function requires a condition that is specified to join \"on\" such condition.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

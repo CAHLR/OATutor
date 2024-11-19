@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a45a566limit3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "Look at the g(x) values as the x-values approach $$-1$$ from either side to determine the limit of the function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a45a566limit3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a45a566limit3a-h1"
+        ],
+        "title": "The Approaching Limit",
+        "text": "What number do the g(x) values approach as the x-values approach -1?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a45a566limit3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a45a566limit3a-h2"
+        ],
+        "title": "Determining $$/lim(x$$ ,-1, g(x))",
+        "text": "Despite the fact that $$g(-1)$$ $$=$$ $$4$$, as the x-values approach $$-1$$ from either side, the g(x) values approach $$3$$. Therefore, $$lim_x$$ \u2192 $$-1$$ g(x) $$=$$ $$3$$. Note that we can determine this limit without even knowing the algebraic expression of the function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

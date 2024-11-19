@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a2fbd09foundational3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyze the Data",
+        "text": "Start by observing how many rows are less than $$65.95$$ inches",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "a2fbd09foundational3a-h1"
+        ],
+        "title": "Finding the Numerator",
+        "text": "How many total players have heights less than $$65.95$$ inches?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "a2fbd09foundational3a-h2"
+        ],
+        "title": "Finding the Denominator",
+        "text": "How many total players are there?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2fbd09foundational3a-h3"
+        ],
+        "title": "Solve by Division",
+        "text": "Find the percentage by dividing people shorter than $$65.95$$ inches by the total amount of players.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a6d6d05DerivativeFunction1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative function",
+        "text": "Start directly with the definition of the derivative function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction1a-h1"
+        ],
+        "title": "Derivative function",
+        "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{\\sqrt{x+h}-\\sqrt{x}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction1a-h2"
+        ],
+        "title": "Simplify",
+        "text": "To simplify, Multiply numerator and denominator by $$\\sqrt{h+x}+\\sqrt{x}$$ without distributing in the denominator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6d6d05DerivativeFunction1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{\\sqrt{x+h}+\\sqrt{x}}$$"
+        ],
+        "dependencies": [
+            "a6d6d05DerivativeFunction1a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will get after multipling?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{\\sqrt{x+h}+\\sqrt{x}}$$",
+            "$$\\sqrt{x+h}+\\sqrt{x}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a6d6d05DerivativeFunction1a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "string",
+                "hintAnswer": [
+                    "h"
+                ],
+                "dependencies": [],
+                "title": "Simplify",
+                "text": "What is $$\\left(\\sqrt{x+h}-\\sqrt{x}\\right) \\left(\\sqrt{x+h}+\\sqrt{x}\\right)$$?",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a6d6d05DerivativeFunction1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6d6d05DerivativeFunction1a-h4"
+        ],
+        "title": "Evaluate the limit",
+        "text": "To get a final answer, evaluate the limit by inserting h-->0 $$=$$ $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

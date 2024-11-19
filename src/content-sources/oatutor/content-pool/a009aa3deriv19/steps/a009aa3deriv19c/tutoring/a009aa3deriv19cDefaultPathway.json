@@ -1,0 +1,37 @@
+[
+    {
+        "id": "a009aa3deriv19c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a009aa3deriv19b-h2"
+        ],
+        "title": "Second Derivative and Concavity",
+        "text": "If $$\\operatorname{f''}\\left(x\\right)>0$$ over interval I, then f is concave up over I.\\nIf $$\\operatorname{f''}\\left(x\\right)<0$$ over interval I, then f is concave down over I.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a009aa3deriv19c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2{sec}^{2\\left(x\\right)} tan\\left(x\\right)-sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a009aa3deriv19c-h3"
+        ],
+        "title": "Finding f''(x)",
+        "text": "Find the second derivative of f(x), and then solve to find when f''(x) is greater than $$0$$. What is the second derivative of f(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${tan}^{2\\left(x\\right)}+{sec}^{2\\left(x\\right)}$$",
+            "$$sin\\left(x\\right) cos\\left(x\\right)+{sec}^{2\\left(x\\right)}$$",
+            "$$2{sec}^{2\\left(x\\right)} tan\\left(x\\right)-cos\\left(x\\right)$$",
+            "$${tan}^{2\\left(x\\right)}+\\operatorname{sec}\\left(x\\right)$$"
+        ]
+    }
+]

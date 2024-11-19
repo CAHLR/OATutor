@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a2fbd09foundational5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Errors in the Chart",
+        "text": "The table entries for data values $$2$$, $$3$$, $$10$$, and $$18$$ are incorrect. This affects cumulative relative frequency for most values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2fbd09foundational5a-h1"
+        ],
+        "title": "Percent of People",
+        "text": "To find the percent of people that commute a certain distance, convert the relative frequency for that category into a percent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a2fbd09foundational5a-h2"
+        ],
+        "title": "Frequency for Three Miles",
+        "text": "What is the correct frequency for three miles?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a2fbd09foundational5a-h3"
+        ],
+        "title": "Frequency for Two Miles",
+        "text": "What is the correct frequency for two miles?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

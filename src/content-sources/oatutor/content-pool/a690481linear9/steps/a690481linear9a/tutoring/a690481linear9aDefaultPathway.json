@@ -1,0 +1,148 @@
+[
+    {
+        "id": "a690481linear9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Volume Formula",
+        "text": "The volume of a cube is given by V $$=$$ $$x^3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$117.649$$"
+        ],
+        "dependencies": [
+            "a690481linear9a-h1"
+        ],
+        "title": "Calculating $$V(4.9)$$",
+        "text": "If the side length is actually $$4.9$$ cm, then the volume of the cube is $$V(4.9)$$ $$=$$ $${4.9}^3$$. What is $$V(4.9)$$ in $${cm}^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear9a-h2"
+        ],
+        "title": "Understanding the Problem",
+        "text": "From what we calculated, the actual volume of the cube will be between $$117.649$$ and V(the higher side length). Since the side length is measured to be $$5$$ cm, the computed volume is V(5).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$125$$"
+        ],
+        "dependencies": [
+            "a690481linear9a-h3"
+        ],
+        "title": "Solving for V(5)",
+        "text": "What is V(5)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear9a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$125$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging into V(5)",
+                "text": "V(5) $$=$$ $$5^3$$. What is V(5)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear9a-h4"
+        ],
+        "title": "Calculating the Difference",
+        "text": "To find the error in the computed volume, we must find the difference between the actual volume, $$V(4.9)$$, and the calculated volume, V(5).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7.351$$"
+        ],
+        "dependencies": [
+            "a690481linear9a-h5"
+        ],
+        "title": "Error in the Computed Volume",
+        "text": "What is the error in the computed volume?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear9a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-7.351$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging in the Difference",
+                "text": "What is $$V(4.9)$$ - V(5)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a690481linear9a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-7.351$$"
+                ],
+                "dependencies": [],
+                "title": "Final Difference",
+                "text": "What is $$117.649$$ - 125?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a690481linear9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear9a-h6"
+        ],
+        "title": "Interpretation",
+        "text": "From our answer, we know that the error in the computed volume is $$-7.351$$ $$ \\leq $$ \u0394V $$ \\leq $$ the difference of the higher side length. The estimated error dV is relatively close to the actual potential error in the computed volume.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

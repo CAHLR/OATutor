@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a0f8b91intersql18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Aggregation Syntax",
+        "text": "An aggregation must have a GROUP BY defined.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql18a-h1"
+        ],
+        "title": "Max aggregation",
+        "text": "The MAX aggregation expects a singular argument.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql18a-h2"
+        ],
+        "title": "Grouping",
+        "text": "To find a specific value for each office, the data must be grouped by office.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
