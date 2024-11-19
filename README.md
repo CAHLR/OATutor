@@ -32,6 +32,8 @@ Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-b
 
 ### Creative Commons Attribution
 
+Content Repository: [Link](https://github.com/CAHLR/OATutor-Content)
+
 The content submodule repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
 the form of hints and scaffolds, authored and edited by the OATutor project, also released under CC BY 4.0.
 
