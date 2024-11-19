@@ -31,6 +31,7 @@ Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Et
 Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://arxiv.org/abs/2302.06871](https://arxiv.org/abs/2302.06871)
 
 ### Content
+Content Repository: [Link](https://github.com/CAHLR/OATutor-Content)
 
 This content repository contains problems curated from [OpenStax](https://openstax.org/) and classroom syllabus with hints and scaffolds authored by the OATutor Project. 
 As of Fall 2024, these materials have been piloted in classrooms. The hints and scaffolds for the problems have been curated by the OATutor team. 
