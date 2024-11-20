@@ -141,8 +141,22 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
-            activeHintType: "none" // "none", "normal", or "ai"
+            activeHintType: "none", // "none", or "normal". If `giveDynamicHint` is true, "normal" will show both manual and AI hints
+            hints: this.hints
         };
+
+         // This is used for AI hint generation
+         if (this.giveDynamicHint) {
+            const gptHint = {
+                id: this.step.id + "-h0",  // Unique ID for the GPT hint
+                title: "ChatGPT AI Hint",  // Translated title
+                text: "Loading...",
+                type: "gptHint",  // Custom type for GPT hint
+                dependencies: [],
+            };
+        
+            this.hints.unshift(gptHint);
+        }
     }
 
     _findHintId = (hints, targetId) => {
@@ -293,7 +307,8 @@ class ProblemCard extends React.Component {
             this.setState(
                 (prevState) => ({
                     enableHintGeneration: false,
-                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"                }),
+                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
+                    }),
                 () => {
                     this.props.answerMade(
                         this.index,
@@ -303,9 +318,9 @@ class ProblemCard extends React.Component {
                 }
             );
         }
-        // if (this.giveDynamicHint) {
-        //     this.generateHintFromGPT();
-        // }
+        if (this.giveDynamicHint) {
+            this.generateHintFromGPT();
+        }
     };
 
     unlockHint = (hintNum, hintType) => {
@@ -443,7 +458,6 @@ class ProblemCard extends React.Component {
         // console.log(this.generateGPTHintParameters(this.prompt_template));
         
         this.setState({
-            activeHintType: "ai", // Set AI hints as active
             dynamicHint: "", // Clear previous hint
         });
 
@@ -476,9 +490,38 @@ class ProblemCard extends React.Component {
             )
             .then((response) => {
                 console.log(response);
-                this.setState({
-                    dynamicHint: response.data,
+                const fetchedHint = response.data;
+                const parsedHint = renderGPTText(
+                    fetchedHint,
+                    this.props.problemID,
+                    chooseVariables(
+                        Object.assign(
+                            {},
+                            this.props.problemVars,
+                            this.step.variabilization
+                        ),
+                        this.props.seed
+                    ),
+                    this.context
+                );
+                this.setState(prevState => {
+                    // Log the current state before the update
+                    console.log("Prev State hints:", prevState.hints);
+                    console.log("Parsed Hint:", parsedHint);
+                
+                    // Ensure `hints` is an array with objects containing the `type` property
+                    const updatedHints = prevState.hints.map((hint, index) => {
+                        console.log("Hint at index", index, ":", hint);  // Log the value of 'hint' at each iteration
+                        return hint.type === "gptHint"
+                            ? { ...hint, text: parsedHint[0][0][0][0] || this.translate('hintsystem.errorHint') }
+                            : hint;
+                    });
+                
+                    console.log("Updated hints:", updatedHints);  // Log the updated hints array
+                
+                    return { hints: updatedHints, dynamicHint: parsedHint };  // Update `hints` instead of `hintsFinished`
                 });
+   
                 this.context.firebase.log(
                     parsed,
                     this.props.problemID,
@@ -550,7 +593,7 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
-                    {this.state.activeHintType && (this.state.activeHintType === "ai") && (
+                    {/* {this.state.activeHintType && (this.state.activeHintType == "normal") && (
                         <div className="dynamicHintContainer">
                             <h3 className="dynamicHintTitle">
                                 Hint From ChatGPT
@@ -577,7 +620,7 @@ class ProblemCard extends React.Component {
                                 </div>
                             )}
                         </div>
-                    )}
+                    )} */}
                     {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
                         this.showHints && (
                             <div className="Hints">
@@ -593,7 +636,7 @@ class ProblemCard extends React.Component {
                                         problemID={this.props.problemID}
                                         index={this.props.index}
                                         step={this.step}
-                                        hints={this.hints}
+                                        hints={this.state.hints}
                                         unlockHint={this.unlockHint}
                                         hintStatus={this.state.hintsFinished}
                                         submitHint={this.submitHint}
@@ -678,7 +721,6 @@ class ProblemCard extends React.Component {
                             )}
                         </Grid>
                         {/* <Grid item xs={4} sm={4} md={1} /> */}
-
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button
@@ -698,23 +740,6 @@ class ProblemCard extends React.Component {
                                 </Button>
                             </center>
                         </Grid>
-                        {this.giveDynamicHint && (
-                            <Grid item xs={4} sm={4} md={2}>
-                                <center>
-                                    <Button
-                                        className={classes.button}
-                                        style={{ width: "80%", backgroundColor: "blue", color: "white" }}
-                                        size="small"
-                                        onClick={this.generateHintFromGPT}
-                                        {...stagingProp({
-                                            "data-selenium-target": `ai-hint-button-${this.props.index}`,
-                                        })}
-                                    >
-                                        AI Hint
-                                    </Button>
-                                </center>
-                            </Grid>
-                        )}
                         <Grid item xs={4} sm={3} md={1}>
                             <div
                                 style={{
