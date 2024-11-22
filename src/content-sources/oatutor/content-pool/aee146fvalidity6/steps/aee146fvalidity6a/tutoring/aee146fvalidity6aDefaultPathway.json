@@ -1,0 +1,77 @@
+[
+    {
+        "id": "aee146fvalidity6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Absolute References",
+        "text": "In Excel, an absolute reference is a way to keep a cell reference constant when copying a formula to another cell. This is done by adding a dollar sign ($) before the column letter and row number. For example, $H$1.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity6a-h1"
+        ],
+        "title": "Moving Formulas Without Changing Addresses",
+        "text": "When you copy a formula in Excel, the cell references within the formula may change based on the new location. Using absolute references ensures the original cell addresses are maintained.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity6a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Select Absolute Reference in Reference Panel",
+        "text": "The option to \"select absolute reference in the reference panel\" is not a feature in Excel for making formulas constant. Excel requires the use of the '$' symbol in formulas to create absolute references.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity6a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Copying Formulas vs Numeric Values",
+        "text": "Copying a formula copies both the formula and its format, while copying a numeric value only copies the displayed number, not any underlying formulas. Therefore, the statement \"You cannot copy a formula, only numeric values\" is incorrect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity6a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Freeze Pane Function",
+        "text": "The 'freeze pane' option in Excel is used to keep certain rows or columns visible while scrolling through the rest of the spreadsheet. It does not affect the cell references in formulas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "She can turn it into an absolute reference by changing the formula to =$H1+$H8"
+        ],
+        "dependencies": [
+            "aee146fvalidity6a-h2"
+        ],
+        "title": "Turning a Formula into an Absolute Reference",
+        "text": "To maintain the formula $$=H1+H8$$ as constant even after copying, change it to =$H1+$H8, where the $ signs ensure the reference remains unchanged regardless of where it is pasted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "She can make it auto update by selecting absolute reference in the reference panel",
+            "You cannot copy a formula, only numeric values",
+            "She can turn it into an absolute reference by changing the formula to =$H1+$H8",
+            "She can select the freeze pane"
+        ]
+    }
+]

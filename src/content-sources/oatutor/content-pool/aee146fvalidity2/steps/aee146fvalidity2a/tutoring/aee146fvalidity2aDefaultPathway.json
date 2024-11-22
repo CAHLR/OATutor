@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aee146fvalidity2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of SLA",
+        "text": "SLA stands for Service Level Agreement. It's a contract or agreement that outlines the expected level of service, response times, uptime, and procedures between service providers and clients. In terms of data governance, an SLA might specify the timeframe within which data quality issues should be resolved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity2a-h1"
+        ],
+        "title": "Role of the Data Governance Team",
+        "text": "The data governance team plays a critical role in maintaining and monitoring data quality, establishing data standards, guidelines, and policies. They also facilitate the resolution of data issues and ensure compliance with established standards.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity2a-h2"
+        ],
+        "title": "Is Remediation Data Governance Team's Task",
+        "text": "The data governance team is not directly responsible for remediating data quality issues. Remediation usually involves identifying, diagnosing, and resolving these issues, typically performed by data analysts or IT departments.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity2a-h3"
+        ],
+        "title": "Is Rule Defining Data Governance Team's Task",
+        "text": "While the data governance team may help define data quality rules and guidelines initially, the specific task of defining rules for a given dataset is generally the responsibility of subject matter experts who understand the data's context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity2a-h4"
+        ],
+        "title": "Is Escalating Resolution Data Governance Team's Task",
+        "text": "The data governance team's responsibility encompasses overseeing the adherence to data policies, including escalating unresolved issues past their remediation deadlines. When the timeframe for fixing a data quality issue as outlined by the SLA has passed without resolution, the data governance team is responsible for escalating the matter for higher-level intervention.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
