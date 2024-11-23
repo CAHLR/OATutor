@@ -1,0 +1,47 @@
+[
+    {
+        "id": "adf3b8edatapresentation5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of Data Literacy",
+        "text": "Consider why accurate data interpretation is essential when sharing information with others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation5a-h1"
+        ],
+        "title": "Implications of Data Literacy",
+        "text": "Think about what happens if you misunderstand the data you are presenting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "You need to understand data in order to present it effectively."
+        ],
+        "dependencies": [
+            "adf3b8edatapresentation5a-h2"
+        ],
+        "title": "Presenting Data Accurately",
+        "text": "When presenting data, is it more about knowing the statistics, becoming a data scientist, or understanding and communicating data accurately?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You need to understand data in order to present it effectively.",
+            "Without data literacy, you can't be a data scientist.",
+            "You need to know statistics to work with data.",
+            "You need to be fluent in data in order to present it accurately."
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a4f0186spreadsheet2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding File Formats",
+        "text": "A .csv file is a type of file that stores data in a tabular format, plain text form. It is commonly used for transferring simple data sets between programs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet2a-h1"
+        ],
+        "title": "Explore the Import Feature",
+        "text": "In Google Sheets, the import feature lets you bring data from external sources into your spreadsheet. This function is essential for adding new information without manually copying and pasting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet2a-h2"
+        ],
+        "title": "Insert or Import Location",
+        "text": "When importing a .csv file, think about where this new data should appear. Consider using the 'Insert New Sheet' under the import location to add new data into the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet2a-h3"
+        ],
+        "title": "Maintaining Organized Sheets",
+        "text": "For clarity and better management of data, adding the .csv data as a new sheet is an effective approach. This keeps your current data separate from the newly imported information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet2a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Select \"Insert New Sheet\" under Import location when you import the .csv file."
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet2a-h4"
+        ],
+        "title": "Steps to Take When Importing",
+        "text": "Here is what you should do: $$1$$. Go to File -> Import. $$2$$. Select the .csv file you want to import. $$3$$. Choose 'Insert New Sheet' when asked about import location.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Paste the .csv data into a new sheet in your Google Sheets spreadsheet.",
+            "Under \"Separator Type\", select \"New Sheet\".",
+            "Upload the .csv file as a separate file, then move it to your existing Google Sheets spreadsheet.",
+            "Select \"Insert New Sheet\" under Import location when you import the .csv file."
+        ]
+    }
+]

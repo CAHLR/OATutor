@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a4f0186spreadsheet1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Save Functions",
+        "text": "Unlike conventional file applications, Google Sheets doesn't have a dedicated save button. You manage your data and changes in a different way.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet1a-h1"
+        ],
+        "title": "Navigating the Interface",
+        "text": "Focus on actions you can perform within the Google Sheets interface to ensure your work isn't lost.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet1a-h2"
+        ],
+        "title": "Input-Related Actions",
+        "text": "Think about actions that involve modifying or adding information directly within your spreadsheet, which may automatically update your document.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "name or enter text in your spreadsheet"
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet1a-h3"
+        ],
+        "title": "Identifying the Correct Approach",
+        "text": "Google Sheets automatically saves any change you make as you enter text or data into your spreadsheet, so there's no need for a manual save function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "drag it to a folder on Google Drive",
+            "click the Save button",
+            "select \"Save as\" from the File menu",
+            "name or enter text in your spreadsheet"
+        ]
+    }
+]

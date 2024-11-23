@@ -1,0 +1,101 @@
+[
+    {
+        "id": "aee146fvalidity7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Consistency",
+        "text": "Data consistency refers to ensuring that the data remains accurate, valid, and synchronized across all systems and datasets. It's about maintaining the same data values across different instances and preventing discrepancies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Completeness",
+        "text": "Data completeness implies that all the required data is present within the dataset. It's about ensuring that no required information is missing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Uniqueness",
+        "text": "Data uniqueness ensures that each entry in a dataset is distinctive and not duplicated. This means that no two or more rows should have identical records.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Timeliness",
+        "text": "Data timeliness means that the information is up-to-date and available when needed. It stresses the importance of the data being current during its use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity7a-h2"
+        ],
+        "title": "Problem with Completeness",
+        "text": "Since the expected row count is $$10000$$ but now shows $$50000$$, the issue cannot be about missing data. In fact, there is more data than expected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity7a-h3"
+        ],
+        "title": "Issue with Uniqueness",
+        "text": "The problem would have been about uniqueness if the additional $$40000$$ rows were exact duplicates of existing records. However, this isn't implied in the scenario.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity7a-h4"
+        ],
+        "title": "Challenge with Timeliness",
+        "text": "The problem would be related to timeliness if the data drew from a delayed source or updated poorly. However, the issue here isn't about the currency or timing of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity7a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "consistency"
+        ],
+        "dependencies": [
+            "aee146fvalidity7a-h1"
+        ],
+        "title": "Understanding Consistency",
+        "text": "When the row count vastly exceeds expectations, it suggests a potential inconsistency in the data sources or in the data itself, since the expected state was for the row count to match the anticipated $$10000$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "completeness",
+            "uniqueness",
+            "consistency",
+            "timeliness"
+        ]
+    }
+]

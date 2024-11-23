@@ -1,0 +1,59 @@
+[
+    {
+        "id": "adf3b8edatapresentation17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Audience Engagement",
+        "text": "Think about where a listener\u2019s focus should be during a presentation. What are they ideally engaging with?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation17a-h1"
+        ],
+        "title": "Focusing on the Speaker",
+        "text": "Consider the difference between consuming information passively from a slide and actively listening to a speaker. Which one might be more effective for conveying the speaker\u2019s message?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation17a-h2"
+        ],
+        "title": "The Role of Visual Aids",
+        "text": "Visual aids are there to support your message, not replace it. What impact might reading have on your audience's attention during your talk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation17a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "If they're reading, they're not listening, and that means your message isn't getting through."
+        ],
+        "dependencies": [
+            "adf3b8edatapresentation17a-h3"
+        ],
+        "title": "Finding the Right Balance",
+        "text": "Consider the effects on your communication if your audience is busy with reading instead of listening.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "If they're reading, they're not listening, and that means your message isn't getting through.",
+            "Your audience will be very tired by the end of the presentation, so you won't have as active a Q&A session.",
+            "If they're reading, they'll miss the visuals.",
+            "The visuals and the text might say different things, so you need to explain that context to them."
+        ]
+    }
+]

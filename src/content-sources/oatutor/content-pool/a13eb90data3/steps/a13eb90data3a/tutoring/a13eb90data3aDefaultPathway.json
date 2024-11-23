@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a13eb90data3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding 'Macro'",
+        "text": "In Excel, a 'macro' is a set of actions that you can run to automate tasks in spreadsheets. It saves time by executing repetitive processes through a single command or button.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meta Information of 'Programming Language'",
+        "text": "Programming Language' refers to a syntax and set of instructions used to write computer programs. It's the medium you use to interact with computers to carry out tasks and solve problems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "VBA"
+        ],
+        "dependencies": [
+            "a13eb90data3a-h1"
+        ],
+        "title": "Finding Out Which Programming Language",
+        "text": "If you are editing and cleaning macros in Excel, the programming language most directly associated with these tasks is a variant of BASIC used within the Microsoft Office suite.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "VBA (Visual Basic for Applications)",
+            "Perl",
+            "Java",
+            "Python"
+        ]
+    },
+    {
+        "id": "a13eb90data3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data3a-h2"
+        ],
+        "title": "Explanation of 'Visual Basic for Applications' (VBA)",
+        "text": "VBA' stands for Visual Basic for Applications. It is a programming language created by Microsoft and is used within Microsoft Office applications to enhance their capabilities through automation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

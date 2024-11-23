@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a4f0186spreadsheet4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explore the File Menu Options",
+        "text": "While looking at the top of your Google Sheets interface, locate the 'File' menu. This menu contains various options related to file operations, including saving, importing, and exporting files.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet4a-h1"
+        ],
+        "title": "Identify the Right Item",
+        "text": "The 'File' menu in Google Sheets includes an option to duplicate or clone your current spreadsheet. This is often located near the top of the list.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet4a-h2"
+        ],
+        "title": "Understanding 'Make a copy'",
+        "text": "The option you are looking for typically uses the phrase 'Make a copy'. This allows you to create an identical duplicate of your current spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Select 'Make a copy' from the File menu."
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet4a-h3"
+        ],
+        "title": "Use the 'Make a copy' Instruction",
+        "text": "Select 'Make a copy' from the File menu to create a new copy of your spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Select 'Save as' from the File menu.",
+            "Rename your spreadsheet to add the words 'Copy of' to the beginning of the title.",
+            "Click the Save button and select 'Save a copy' from the pop up.",
+            "Select 'Make a copy' from the File menu."
+        ]
+    }
+]

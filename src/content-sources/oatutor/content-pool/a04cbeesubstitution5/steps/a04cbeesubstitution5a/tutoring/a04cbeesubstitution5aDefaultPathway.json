@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a04cbeesubstitution5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose an Expression",
+        "text": "Let $$u=1+2x^3$$, so $$du=6x^2 dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution5a-h1"
+        ],
+        "title": "Choose an Expression",
+        "text": "Since the original function includes one factor of $$x^2$$ and $$du=6x^2 dx$$, multiply both sides of the du equation by $$\\frac{1}{6}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution5a-h2"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "To adjust the limits of integration, note that when $$x=0$$, $$u=1+2\\left(0\\right)=1$$, and when $$x=1$$, $$u=1+2\\left(1\\right)=3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a04cbeesubstitution5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/6*\\int_{1}^{3} u^5 \\,du$$"
+        ],
+        "dependencies": [
+            "a04cbeesubstitution5a-h3"
+        ],
+        "title": "Adjust the Limits of Integration",
+        "text": "What is the result of adjusting the limits of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1/6*\\int_{1}^{3} u^5 \\,du$$",
+            "$$\\int_{1}^{3} u^5 \\,du$$",
+            "$$1/6*\\int_{1}^{3} u^4 \\,du$$",
+            "$$1/6*\\int_{1}^{3} u^4 \\,du$$"
+        ]
+    },
+    {
+        "id": "a04cbeesubstitution5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a04cbeesubstitution5a-h4"
+        ],
+        "title": "Evaluate the Expression",
+        "text": "Evaluate the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

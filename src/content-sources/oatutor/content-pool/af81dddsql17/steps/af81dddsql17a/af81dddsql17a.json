@@ -1,0 +1,17 @@
+{
+    "id": "af81dddsql17a",
+    "stepAnswer": [
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in ascending order based on the ZIP values."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "For Query $$1$$, Taylor enters SELECT Street, ZIP FROM Customers. For Query $$2$$, Taylor enters SELECT Street, ZIP FROM Customers ORDER BY $$2$$.\\n",
+    "stepBody": "How does the use of ORDER BY $$2$$ change the appearance of the query results?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in ascending order based on the ZIP values.",
+    "choices": [
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show ZIP values that begin with the number $$2$$.",
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in ascending order based on the ZIP values.",
+        "The query results for Query $$1$$ will show without any error message, while Query $$2$$ will show an error message.\\n"
+    ]
+}
