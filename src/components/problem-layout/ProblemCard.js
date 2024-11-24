@@ -6,6 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
+import { fetchDynamicHint } from "./DynamicHintHelper";
 
 import { checkAnswer } from "../../platform-logic/checkAnswer.js";
 import styles from "./common-styles.js";
@@ -453,102 +454,83 @@ class ProblemCard extends React.Component {
                 ]
             };
         };
-
-    generateHintFromGPT = async () => {
-        // console.log(this.generateGPTHintParameters(this.prompt_template));
-        
-        this.setState({
-            dynamicHint: "", // Clear previous hint
-        });
-
-        const [parsed, correctAnswer, reason] = checkAnswer({
-            attempt: this.state.inputVal,
-            actual: this.step.stepAnswer,
-            answerType: this.step.answerType,
-            precision: this.step.precision,
-            variabilization: chooseVariables(
-                Object.assign(
-                    {},
-                    this.props.problemVars,
-                    this.props.variabilization
-                ),
-                this.props.seed
-            ),
-            questionText:
-                this.step.stepBody.trim() || this.step.stepTitle.trim(),
-        });
-
-        const isCorrect = !!correctAnswer;
-
-        axios
-            .post(
-                DYNAMIC_HINT_URL,
-                this.generateGPTHintParameters(
-                    this.prompt_template,
-                    this.state.bioInfo
-                )
-            )
-            .then((response) => {
-                console.log(response);
-                const fetchedHint = response.data;
-                const parsedHint = renderGPTText(
-                    fetchedHint,
-                    this.props.problemID,
-                    chooseVariables(
-                        Object.assign(
-                            {},
-                            this.props.problemVars,
-                            this.step.variabilization
-                        ),
-                        this.props.seed
-                    ),
-                    this.context
-                );
-                this.setState(prevState => {
-                    // Log the current state before the update
-                    console.log("Prev State hints:", prevState.hints);
-                    console.log("Parsed Hint:", parsedHint);
-                
-                    // Ensure `hints` is an array with objects containing the `type` property
-                    const updatedHints = prevState.hints.map((hint, index) => {
-                        console.log("Hint at index", index, ":", hint);  // Log the value of 'hint' at each iteration
-                        return hint.type === "gptHint"
-                            ? { ...hint, text: parsedHint[0][0][0][0] || this.translate('hintsystem.errorHint') }
-                            : hint;
-                    });
-                
-                    console.log("Updated hints:", updatedHints);  // Log the updated hints array
-                
-                    return { hints: updatedHints, dynamicHint: parsedHint };  // Update `hints` instead of `hintsFinished`
-                });
-   
-                this.context.firebase.log(
-                    parsed,
-                    this.props.problemID,
-                    this.step,
-                    "",
-                    isCorrect,
-                    this.state.hintsFinished,
-                    "requestDynamicHint",
-                    chooseVariables(
-                        Object.assign(
-                            {},
-                            this.props.problemVars,
-                            this.props.variabilization
-                        ),
-                        this.props.seed
-                    ),
-                    this.props.lesson,
-                    this.props.courseName,
-                    "dynamic",
-                    this.state.dynamicHint,
-                    this.state.bioInfo
-                );
-            })
-            .catch((error) => {
-                console.error(error);
+        generateHintFromGPT = async () => {
+            this.setState({
+                dynamicHint: "Loading...", // Clear previous hint
             });
-    };
+        
+            const [parsed, correctAnswer, reason] = checkAnswer({
+                attempt: this.state.inputVal,
+                actual: this.step.stepAnswer,
+                answerType: this.step.answerType,
+                precision: this.step.precision,
+                variabilization: chooseVariables(
+                    Object.assign(
+                        {},
+                        this.props.problemVars,
+                        this.props.variabilization
+                    ),
+                    this.props.seed
+                ),
+                questionText:
+                    this.step.stepBody.trim() || this.step.stepTitle.trim(),
+            });
+        
+            const isCorrect = !!correctAnswer;
+        
+            // Define callbacks
+            const onChunkReceived = (streamedHint) => {
+                this.setState((prevState) => ({
+                    hints: prevState.hints.map((hint) =>
+                        hint.type === "gptHint"
+                            ? { ...hint, text: streamedHint || this.translate("hintsystem.errorHint") }
+                            : hint
+                    ),
+                }));
+            };
+        
+            const onError = (error) => {
+                this.setState((prevState) => ({
+                    hints: prevState.hints.map((hint) =>
+                        hint.type === "gptHint"
+                            ? { ...hint, text: this.translate("hintsystem.errorHint") }
+                            : hint
+                    ),
+                }));
+            };
+        
+            // Call the helper function
+            fetchDynamicHint(
+                DYNAMIC_HINT_URL,
+                this.generateGPTHintParameters(this.prompt_template, this.state.bioInfo),
+                onChunkReceived,
+                onError
+            );
+        
+            this.context.firebase.log(
+                parsed,
+                this.props.problemID,
+                this.step,
+                "",
+                isCorrect,
+                this.state.hintsFinished,
+                "requestDynamicHint",
+                chooseVariables(
+                    Object.assign(
+                        {},
+                        this.props.problemVars,
+                        this.props.variabilization
+                    ),
+                    this.props.seed
+                ),
+                this.props.lesson,
+                this.props.courseName,
+                "dynamic",
+                this.state.dynamicHint,
+                this.state.bioInfo
+            );
+        };
+        
 
     render() {
         const { translate } = this.props;
