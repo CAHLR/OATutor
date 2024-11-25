@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: "OATutor-AI-Hint-Generation",
-        script: 'index.js',
+        script: 'index.mjs',
         watch: '.',
         watch_delay: 1000,
 
