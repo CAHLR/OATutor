@@ -1,0 +1,70 @@
+[
+    {
+        "id": "af81dddsql8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the WHERE Clause",
+        "text": "The WHERE clause is used in SQL to filter records. It specifies the conditions that must be met for the rows to be included in the result set. Make sure to check whether the condition you're setting requires any specific syntax (like single quotes, etc.).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql8a-h1"
+        ],
+        "title": "Comparison with Strings",
+        "text": "When using the WHERE clause for strings, it is crucial to use single quotes around the string values. This is because SQL treats string literals as identifiers when they are enclosed in single quotes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql8a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE City $$=$$ 'New York'"
+        ],
+        "dependencies": [
+            "af81dddsql8a-h2"
+        ],
+        "title": "Choosing the Correct Syntax",
+        "text": "Which of the following statements correctly filters the records where the 'City' is 'New York'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE City $$=$$ 'New York'",
+            "WHERE City IN New York",
+            "WHERE City : 'New York'",
+            "WHERE City $$=$$ NewYork"
+        ]
+    },
+    {
+        "id": "af81dddsql8a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE Age IS $$30$$"
+        ],
+        "dependencies": [
+            "af81dddsql8a-s1"
+        ],
+        "title": "Identifying Incorrect Syntax",
+        "text": "Which condition format is incorrect when specifying the 'Age' should be 30?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE Age $$=$$ $$30$$",
+            "WHERE Age IS $$30$$",
+            "WHERE Age $$=$$ '30'",
+            "WHERE Age : $$30$$"
+        ]
+    }
+]

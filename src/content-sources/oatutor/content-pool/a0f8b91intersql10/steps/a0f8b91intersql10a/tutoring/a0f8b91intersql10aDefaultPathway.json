@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a0f8b91intersql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "LIMIT clause",
+        "text": "The LIMIT clause specifies the number of records that the query returns.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql10a-h1"
+        ],
+        "title": "OFFSET clause",
+        "text": "The number specified in the OFFSET clause specifies the number of records that are skipped at the beginning.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql10a-h2"
+        ],
+        "title": "Inclusive OFFSET clause",
+        "text": "The OFFSET clause skips the values, inclusive of the last record that is specified in the query.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

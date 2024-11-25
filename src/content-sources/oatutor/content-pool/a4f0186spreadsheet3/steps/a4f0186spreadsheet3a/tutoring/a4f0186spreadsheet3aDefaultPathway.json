@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a4f0186spreadsheet3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Google Sheets",
+        "text": "Google Sheets is an online spreadsheet tool, allowing you to view and edit data from your browser.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Starting Point",
+        "text": "Begin by opening a new Google Sheets spreadsheet. This sets up a blank canvas for your data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet3a-h2"
+        ],
+        "title": "Importing Files",
+        "text": "You can import files into Google Sheets. Locate the 'File' menu on the toolbar; it often holds the import feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet3a-h3"
+        ],
+        "title": "Understanding Formats",
+        "text": "Excel files, typically ending with '.xlsx', can be directly imported into Google Sheets without converting to other formats.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet3a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Open a new Google Sheets spreadsheet and import the Excel file"
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet3a-h4"
+        ],
+        "title": "Direction to Check",
+        "text": "Use the 'Import' tool from the 'File' menu to select and open your Excel file directly in Google Sheets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Open a new Google Sheets spreadsheet and import the Excel file",
+            "Convert the Excel spreadsheet to an .ods file, then import to Google Sheets.",
+            "Install the Excel add on to Google Sheets.",
+            "Save the Excel file as a .pdf file, then upload to Google Sheets."
+        ]
+    }
+]

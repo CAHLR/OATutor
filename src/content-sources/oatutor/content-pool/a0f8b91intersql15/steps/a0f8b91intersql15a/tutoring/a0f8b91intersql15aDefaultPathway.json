@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a0f8b91intersql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "CONNECT keyword",
+        "text": "The CONNECT keyword is not a valid keyword in SQL for joining data.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql15a-h1"
+        ],
+        "title": "Table name",
+        "text": "The table name to join on, Contacts, must be specified as what to join ON.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql15a-h2"
+        ],
+        "title": "Table Context",
+        "text": "The JOIN clause requires specifying the fields and their tables on which the association will be made. Specify the table before the field and separate by period.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

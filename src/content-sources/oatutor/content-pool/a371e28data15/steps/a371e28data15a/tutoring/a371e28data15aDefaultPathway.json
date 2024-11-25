@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a371e28data15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Right Outer Join",
+        "text": "A right outer join will keep all the rows from the right table and matching values from the left table, not just the rows that match in both tables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data15a-h1"
+        ],
+        "title": "Inner Join",
+        "text": "An inner join will combine the records from both tables based on the ones that match in the fields of both tables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data15a-h2"
+        ],
+        "title": "Left Outer Join",
+        "text": "A left outer join will keep all the rows from the left table and matching values from the right table, which does not include just the fields that match in both tables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data15a-h3"
+        ],
+        "title": "Cross Join",
+        "text": "A cross join combines each row from the first table with each row from the second table, and does not find fields that match.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

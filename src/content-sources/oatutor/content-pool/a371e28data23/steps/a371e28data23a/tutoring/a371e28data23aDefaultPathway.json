@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a371e28data23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "calculations",
+        "text": "The number of calculations does not give insight into whether the query is valid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data23a-h1"
+        ],
+        "title": "fields",
+        "text": "Knowing the number of fields will not help in validating the query since the query is changing the data and not the fields.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data23a-h2"
+        ],
+        "title": "records",
+        "text": "If the number of records is reasonable for the query, then it means it is valid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data23a-h3"
+        ],
+        "title": "data types",
+        "text": "Knowing the different amounts of data type will not help with validating whether the query was correct because the data might have changed.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

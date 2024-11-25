@@ -1,0 +1,103 @@
+[
+    {
+        "id": "a8c5e27continuity8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Composite Function",
+        "text": "The given function is a composite of cos(x) and $$x-\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27continuity8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c5e27continuity8a-h1"
+        ],
+        "title": "Composite Function Theorem",
+        "text": "If f(x) is continuous at L and $$\\lim_{x\\toa} g(x)=L, then$$ $$\\lim_{x\\toa} f(g(x))=f(\\lim_{x\\toa} g(x))=f(L)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27continuity8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8c5e27continuity8a-h2"
+        ],
+        "title": "Determine the limit",
+        "text": "What is the value of $$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27continuity8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c5e27continuity8a-h3"
+        ],
+        "title": "Determine the continuity",
+        "text": "Is cos(x) continuous at $$x=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c5e27continuity8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8c5e27continuity8a-h4"
+        ],
+        "title": "Composite Function Theorem",
+        "text": "Since $$\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2}=0$$ (a real number) and cos(x)is continuous at $$x=0$$, we may apply the composite function theorem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5e27continuity8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8c5e27continuity8a-h5"
+        ],
+        "title": "Determine the limit",
+        "text": "What is the value of $$\\lim_{x\\to\\frac{\\pi}{2}} cos\\left(x-\\frac{\\pi}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a8c5e27continuity8a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Determine the limit",
+                "text": "$$\\lim_{x\\to\\frac{\\pi}{2}} cos\\left(x-\\frac{\\pi}{2}\\right)=cos(\\lim_{x\\to\\frac{\\pi}{2}} x-\\frac{\\pi}{2})=cos(0)=1$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

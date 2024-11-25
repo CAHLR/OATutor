@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a371e28data14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Only Records or Matching Records",
+        "text": "Showing equal or matching records is accomplished when you set the join and do not change the default join type, which is considered an inner join and not a $$\\frac{cross}{no}$$ join.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data14a-h1"
+        ],
+        "title": "No Records",
+        "text": "When you link tables together and you use the wrong field to join them, it will produce an invalid result, and oftentimes no results at all will show when you run your query.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data14a-h2"
+        ],
+        "title": "Association",
+        "text": "A cross join or no join will correctly associate every record to the records in both tables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a371e28data14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a371e28data14a-h3"
+        ],
+        "title": "Left Table Records",
+        "text": "To show all records from a table means a join line was established and set with a join type of Left Outer, and not cross or none.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

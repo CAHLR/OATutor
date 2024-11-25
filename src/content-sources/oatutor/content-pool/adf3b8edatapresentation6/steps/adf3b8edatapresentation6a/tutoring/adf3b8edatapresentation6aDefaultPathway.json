@@ -1,0 +1,45 @@
+[
+    {
+        "id": "adf3b8edatapresentation6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Think about the outcome",
+        "text": "Consider focusing on the implications or next steps after you present your data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The conclusion matters",
+        "text": "What's a word that connects what has been said and suggests what comes next?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "And"
+        ],
+        "dependencies": [
+            "adf3b8edatapresentation6a-h2"
+        ],
+        "title": "Connecting parts of a narrative",
+        "text": "In storytelling, connecting different parts smoothly can happen with a single conjunction. Which word among the choices creates a transition pointing forward?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "And",
+            "Or",
+            "But",
+            "Meanwhile"
+        ]
+    }
+]

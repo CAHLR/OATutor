@@ -1,0 +1,59 @@
+[
+    {
+        "id": "adf3b8edatapresentation19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What are you trying to hide?",
+        "text": "Think about the kind of information that could be useful later but doesn't need to be the focus right now.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation19a-h1"
+        ],
+        "title": "Must you include it?",
+        "text": "Consider if the information is necessary for the main body or if it's more supportive in nature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation19a-h2"
+        ],
+        "title": "Balancing Detail with Brevity",
+        "text": "Where can supplemental, yet possibly complex, material be accessed without distracting from your main points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The Appendix"
+        ],
+        "dependencies": [
+            "adf3b8edatapresentation19a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "In presentations, there should be a space dedicated for additional information that isn't crucial for the primary content but could be valuable if needed later on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The Footer",
+            "A Separate Website",
+            "The Appendix",
+            "The Header"
+        ]
+    }
+]

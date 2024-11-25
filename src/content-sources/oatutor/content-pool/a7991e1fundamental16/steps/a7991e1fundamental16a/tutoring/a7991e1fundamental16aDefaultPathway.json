@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a7991e1fundamental16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "antiderivative",
+        "text": "The first step is to find the antiderivative of the integrand.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x^3}{3}+\\frac{1}{x}$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental16a-h1"
+        ],
+        "title": "antiderivative",
+        "text": "What is the antiderivative of $$x^2-\\frac{1}{x^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7991e1fundamental16a-h2"
+        ],
+        "title": "$$F(b)-F(a)$$",
+        "text": "If F(x) is the antiderivative of f(x), then find $$F(b)-F(a)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{259}{12}$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental16a-h3"
+        ],
+        "title": "F(b)",
+        "text": "What is $$F(4)=\\frac{4^3}{3}+\\frac{1}{4}=___$$? If the answer is not a whole number, answer with an improper fraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7991e1fundamental16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{769}{192}$$"
+        ],
+        "dependencies": [
+            "a7991e1fundamental16a-h4"
+        ],
+        "title": "F(a)",
+        "text": "What is $$F\\left(\\frac{1}{4}\\right)=\\frac{{\\left(\\frac{1}{4}\\right)}^3}{3}+\\frac{1}{\\frac{1}{4}}=___$$? If the answer is not a whole number, answer with an improper fraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

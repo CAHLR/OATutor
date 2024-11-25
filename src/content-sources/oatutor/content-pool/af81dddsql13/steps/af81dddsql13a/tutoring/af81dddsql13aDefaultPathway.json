@@ -1,0 +1,73 @@
+[
+    {
+        "id": "af81dddsql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the Range Formula",
+        "text": "The range of a set of numbers is the difference between the largest and smallest values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "MAX(Total)"
+        ],
+        "dependencies": [
+            "af81dddsql13a-h1"
+        ],
+        "title": "Identify the Maximum Data Value",
+        "text": "What function would you use to find the maximum value in the column named Total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "MIN(Total)"
+        ],
+        "dependencies": [
+            "af81dddsql13a-s1"
+        ],
+        "title": "Identify the Minimum Data Value",
+        "text": "What function would you use to find the minimum value in the column named Total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$MAX(Total)-MIN(Total)$$"
+        ],
+        "dependencies": [
+            "af81dddsql13a-s2"
+        ],
+        "title": "Compute the Range",
+        "text": "Using the information from the previous steps, how would you calculate the range of values in the Total column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Aggregate Functions",
+        "text": "SQL includes several aggregate functions such as MIN(), MAX(), SUM(), AVG(), and COUNT(). These help in summarizing large volumes of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

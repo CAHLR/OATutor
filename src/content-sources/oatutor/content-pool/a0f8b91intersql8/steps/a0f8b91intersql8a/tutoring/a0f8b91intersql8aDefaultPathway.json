@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a0f8b91intersql8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sorting in Descending Order",
+        "text": "To sort in descending, specify DESC after the column name that should be sorted in descending order within the ORDER BY clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql8a-h1"
+        ],
+        "title": "Order of SELECT clause",
+        "text": "In most queries, a FROM clause is required to be included before an ORDER BY clause for a valid SQL query.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql8a-h2"
+        ],
+        "title": "Valid SQL Clauses",
+        "text": "The WHERE ORDER BY is not a valid SQL clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

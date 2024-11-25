@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a13eb90data5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Alignment",
+        "text": "When working with data, how numbers and text are aligned in cells can vary. The alignment is controlled by how the software or table is set up.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data5a-h1"
+        ],
+        "title": "Right Alignment",
+        "text": "By default, numbers are typically aligned to the right in data tables. This means they are positioned starting from the right margin of the cell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data5a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Right"
+        ],
+        "dependencies": [
+            "a13eb90data5a-h2"
+        ],
+        "title": "Key Concept: Right Alignment",
+        "text": "When numbers are right-aligned, they line up on the right edge of a cell. Consider this related to numerical values appearing neat and consistent in columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Justified",
+            "Left",
+            "Right",
+            "Center"
+        ]
+    }
+]

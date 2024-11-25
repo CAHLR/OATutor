@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a6adfebLinEqua15c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Excluded values",
+        "text": "The excluded values are those making a denominator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6adfebLinEqua15c-h1"
+        ],
+        "title": "Denominator",
+        "text": "The denominators are $$x$$ and $$2x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua15c-h2"
+        ],
+        "title": "Excluded values",
+        "text": "State the excluded value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6adfebLinEqua15c-h3"
+        ],
+        "title": "Factoring the denominator",
+        "text": "The denominator in factored form is $$x$$ and $$2x$$ $$=$$ $$2x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6adfebLinEqua15c-h4"
+        ],
+        "title": "Find LCD",
+        "text": "The LCD is the smallest expression that is divisible by each one of the denominators.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua15c-h5"
+        ],
+        "title": "LCD",
+        "text": "What is the LCD of this equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2=\\frac{2x}{5}+3$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua15c-h6"
+        ],
+        "title": "Eliminating",
+        "text": "Simplify $$2x\\left(\\frac{1}{x}\\right)=2x\\left(\\frac{1}{5}\\right)+2x\\left(\\frac{3}{2} x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h8",
+        "type": "hint",
+        "dependencies": [
+            "a6adfebLinEqua15c-h7"
+        ],
+        "title": "Solve equation",
+        "text": "Then we should solve the linear equation obtained.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6adfebLinEqua15c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-5}{2}$$"
+        ],
+        "dependencies": [
+            "a6adfebLinEqua15c-h8"
+        ],
+        "title": "Linear equation",
+        "text": "Solve the equation $$2=\\frac{2x}{5}+3$$. What is $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

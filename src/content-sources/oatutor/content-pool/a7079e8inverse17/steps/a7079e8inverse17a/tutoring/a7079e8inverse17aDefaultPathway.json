@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a7079e8inverse17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Product Rule",
+        "text": "Because we are multiplying $$2$$ functions, we need to use the product rule in order to find the derivative. For reference the product rule is $$\\frac{d}{dy} f{\\left(x\\right)} g{\\left(x\\right)}=\\operatorname{f'}\\left(x\\right) g{\\left(x\\right)}+f{\\left(x\\right)} \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7079e8inverse17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse17a-h1"
+        ],
+        "title": "Derivative of Inverse Trigonometric Functions: cos(x) and sin(x)",
+        "text": "The formula for the derivative of Inverse sin(x) is $$\\frac{d}{dx} {sin}^{-1} x=\\frac{1}{\\sqrt{1-x^2}}$$. The formula for the derivative of inverse cos(x) is $$\\frac{d}{dx} {cos}^{-1} x=\\frac{-1}{\\sqrt{1-x^2}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7079e8inverse17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse17a-h2"
+        ],
+        "title": "Applying the Chain Rule",
+        "text": "Because the inverse of cos and sin have a function inside theirs parentheses, \"2x\" in this case, we need to apply the chain rule before using the formula from the previous hint. For reference, the chain rule is $$(f(g(x)))'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

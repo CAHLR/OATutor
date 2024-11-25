@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7fb17bvalidity8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Completeness",
+        "text": "Refers to whether all the data necessary is there and there is no data missing.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity8a-h1"
+        ],
+        "title": "Uniqueness",
+        "text": "Uniqueness refers to whether or not each value shows up just once.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity8a-h2"
+        ],
+        "title": "Consistency",
+        "text": "Consistency ensures data values are consistent across different systems and data sets, as well as throughout the data science process.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity8a-h3"
+        ],
+        "title": "Validity",
+        "text": "Validity is the property where the data makes sense in the context of the situation and the data that is being collected.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
