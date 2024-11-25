@@ -5,9 +5,8 @@ export async function fetchDynamicHint(DYNAMIC_HINT_URL, promptParameters, onChu
             headers: {
                 "Content-Type": "application/json",
             },
-            queryStringParameters: JSON.stringify(promptParameters),
+            body: JSON.stringify(promptParameters),
         });
-
         if (!response.body) {
             throw new Error("No response body from server.");
         }
@@ -19,9 +18,7 @@ export async function fetchDynamicHint(DYNAMIC_HINT_URL, promptParameters, onChu
         while (true) {
             const { done, value } = await reader.read();
             if (done) break;
-            console.log(streamedHint);
             streamedHint += decoder.decode(value, { stream: true });
-
             // Callback to process chunks
             onChunkReceived(streamedHint);
         }

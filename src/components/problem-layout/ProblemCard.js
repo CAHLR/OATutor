@@ -445,14 +445,11 @@ class ProblemCard extends React.Component {
         console.log("input val", inputVal);
         console.log("correct answer", correctAnswer);
         console.log("PROMPT template", promptContent);
-        return {
-            prompt: [
-                    {
-                        role: "user",
-                        content: promptContent
-                    }
-                ]
-            };
+        return  {
+            role: "user",
+            message: promptContent
+            }
+        
         };
         generateHintFromGPT = async () => {
             this.setState({
