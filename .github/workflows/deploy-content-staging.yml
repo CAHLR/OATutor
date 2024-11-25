@@ -106,7 +106,8 @@ jobs:
         REACT_APP_MIDDLEWARE_URL: ${{ secrets.STAGING_MIDDLEWARE_URL }}
         REACT_APP_COMMIT_HASH: ${{ github.sha }}
         REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
-    
+        REACT_APP_AI_HINT_GENERATION_AWS_ENDPOINT: ${{ secrets.AI_HINT_GENERATION_AWS_ENDPOINT }}
+
     - name: Checkout Content Staging
       uses: actions/checkout@v3
       with:

@@ -6,6 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
+import { fetchDynamicHint } from "./DynamicHintHelper";
 
 import { checkAnswer } from "../../platform-logic/checkAnswer.js";
 import styles from "./common-styles.js";
@@ -14,6 +15,7 @@ import HintSystem from "./HintSystem.js";
 import {
     chooseVariables,
     renderText,
+    renderGPTText,
 } from "../../platform-logic/renderText.js";
 import {
     DYNAMIC_HINT_URL,
@@ -40,7 +42,7 @@ class ProblemCard extends React.Component {
 
     constructor(props, context) {
         super(props);
-        // console.log("problem lesson props:", props);
+        console.log("problem lesson props:", props);
 
         this.translate = props.translate
         this.step = props.step;
@@ -140,7 +142,22 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
+            activeHintType: "none", // "none", or "normal". If `giveDynamicHint` is true, "normal" will show both manual and AI hints
+            hints: this.hints
         };
+
+         // This is used for AI hint generation
+         if (this.giveDynamicHint) {
+            const gptHint = {
+                id: this.step.id + "-h0",  // Unique ID for the GPT hint
+                title: "ChatGPT AI Hint",  // Translated title
+                text: "Loading...",
+                type: "gptHint",  // Custom type for GPT hint
+                dependencies: [],
+            };
+        
+            this.hints.unshift(gptHint);
+        }
     }
 
     _findHintId = (hints, targetId) => {
@@ -283,14 +300,16 @@ class ProblemCard extends React.Component {
     };
 
     toggleHints = (event) => {
-        this.setState({
-            enableHintGeneration: false,
-        });
+        // this.setState({
+        //     enableHintGeneration: false,
+        //     activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
+        // });
         if (!this.state.displayHints) {
             this.setState(
                 (prevState) => ({
-                    displayHints: !prevState.displayHints,
-                }),
+                    enableHintGeneration: false,
+                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
+                    }),
                 () => {
                     this.props.answerMade(
                         this.index,
@@ -382,96 +401,133 @@ class ProblemCard extends React.Component {
     };
 
     generateGPTHintParameters = (prompt_template, bio_info) => {
-        var inputVal = "";
-        if (
-            typeof this.state.inputVal === "string" &&
-            this.state.inputVal.length > 0
-        ) {
-            inputVal = this.state.inputVal;
-        }
-        var correctAnswer = "";
-        if (
-            Array.isArray(this.step.stepAnswer) &&
-            this.step.stepAnswer.length > 0
-        ) {
-            correctAnswer = this.step.stepAnswer[0];
-        }
+        // var inputVal = "";
+        // if (
+        //     typeof this.state.inputVal === "string" &&
+        //     this.state.inputVal.length > 0
+        // ) {
+        //     inputVal = this.state.inputVal;
+        // }
+        // var correctAnswer = "";
+        // if (
+        //     Array.isArray(this.step.stepAnswer) &&
+        //     this.step.stepAnswer.length > 0
+        // ) {
+        //     correctAnswer = this.step.stepAnswer[0];
+        // }
 
-        var quest = {
-            problem_title: this.problemTitle,
-            problem_subtitle: this.problemSubTitle,
-            question_title: this.step.stepTitle,
-            question_subtitle: this.step.stepBody,
-            student_answer: inputVal,
-            correct_answer: correctAnswer,
+        // var quest = {
+        //     problem_title: this.problemTitle,
+        //     problem_subtitle: this.problemSubTitle,
+        //     question_title: this.step.stepTitle,
+        //     question_subtitle: this.step.stepBody,
+        //     student_answer: inputVal,
+        //     correct_answer: correctAnswer,
+        // };
+
+        // return { quest, prompt_template, bio_info };
+        let inputVal = this.state.inputVal || "The student did not provide an answer.";
+        let correctAnswer = Array.isArray(this.step.stepAnswer) ? this.step.stepAnswer[0] : "";
+        const problemTitle = this.problemTitle || "Problem Title";
+        const problemSubTitle = this.problemSubTitle || "Problem Subtitle";
+        const questionTitle = this.step.stepTitle || "Question Title";
+        const questionSubTitle = this.step.stepBody || "Question Subtitle";
+
+        // Replace placeholders in the template with actual values
+        const promptContent = prompt_template
+            .replace("{problem_title}", problemTitle)
+            .replace("{problem_subtitle}", problemSubTitle)
+            .replace("{question_title}", questionTitle)
+            .replace("{question_subtitle}", questionSubTitle)
+            .replace("{student_answer}", inputVal)
+            .replace("{correct_answer}", correctAnswer);
+
+        console.log("input val", inputVal);
+        console.log("correct answer", correctAnswer);
+        console.log("PROMPT template", promptContent);
+        return  {
+            role: "user",
+            message: promptContent
+            }
+        
         };
-
-        return { quest, prompt_template, bio_info };
-    };
-
-    generateHintFromGPT = async () => {
-        // console.log(this.generateGPTHintParameters(this.prompt_template));
-        this.setState({
-            dynamicHint: "",
-        });
-        const [parsed, correctAnswer, reason] = checkAnswer({
-            attempt: this.state.inputVal,
-            actual: this.step.stepAnswer,
-            answerType: this.step.answerType,
-            precision: this.step.precision,
-            variabilization: chooseVariables(
-                Object.assign(
-                    {},
-                    this.props.problemVars,
-                    this.props.variabilization
-                ),
-                this.props.seed
-            ),
-            questionText:
-                this.step.stepBody.trim() || this.step.stepTitle.trim(),
-        });
-
-        const isCorrect = !!correctAnswer;
-
-        axios
-            .post(
-                DYNAMIC_HINT_URL,
-                this.generateGPTHintParameters(
-                    this.prompt_template,
-                    this.state.bioInfo
-                )
-            )
-            .then((response) => {
-                this.setState({
-                    dynamicHint: response.data.hint,
-                });
-                this.context.firebase.log(
-                    parsed,
-                    this.props.problemID,
-                    this.step,
-                    "",
-                    isCorrect,
-                    this.state.hintsFinished,
-                    "requestDynamicHint",
-                    chooseVariables(
-                        Object.assign(
-                            {},
-                            this.props.problemVars,
-                            this.props.variabilization
-                        ),
-                        this.props.seed
-                    ),
-                    this.props.lesson,
-                    this.props.courseName,
-                    "dynamic",
-                    this.state.dynamicHint,
-                    this.state.bioInfo
-                );
-            })
-            .catch((error) => {
-                console.error(error);
+        generateHintFromGPT = async () => {
+            this.setState({
+                dynamicHint: "Loading...", // Clear previous hint
             });
-    };
+        
+            const [parsed, correctAnswer, reason] = checkAnswer({
+                attempt: this.state.inputVal,
+                actual: this.step.stepAnswer,
+                answerType: this.step.answerType,
+                precision: this.step.precision,
+                variabilization: chooseVariables(
+                    Object.assign(
+                        {},
+                        this.props.problemVars,
+                        this.props.variabilization
+                    ),
+                    this.props.seed
+                ),
+                questionText:
+                    this.step.stepBody.trim() || this.step.stepTitle.trim(),
+            });
+        
+            const isCorrect = !!correctAnswer;
+        
+            // Define callbacks
+            const onChunkReceived = (streamedHint) => {
+                this.setState((prevState) => ({
+                    hints: prevState.hints.map((hint) =>
+                        hint.type === "gptHint"
+                            ? { ...hint, text: streamedHint || this.translate("hintsystem.errorHint") }
+                            : hint
+                    ),
+                }));
+            };
+        
+            const onError = (error) => {
+                this.setState((prevState) => ({
+                    hints: prevState.hints.map((hint) =>
+                        hint.type === "gptHint"
+                            ? { ...hint, text: this.translate("hintsystem.errorHint") }
+                            : hint
+                    ),
+                }));
+            };
+        
+            // Call the helper function
+            fetchDynamicHint(
+                DYNAMIC_HINT_URL,
+                this.generateGPTHintParameters(this.prompt_template, this.state.bioInfo),
+                onChunkReceived,
+                onError
+            );
+        
+            this.context.firebase.log(
+                parsed,
+                this.props.problemID,
+                this.step,
+                "",
+                isCorrect,
+                this.state.hintsFinished,
+                "requestDynamicHint",
+                chooseVariables(
+                    Object.assign(
+                        {},
+                        this.props.problemVars,
+                        this.props.variabilization
+                    ),
+                    this.props.seed
+                ),
+                this.props.lesson,
+                this.props.courseName,
+                "dynamic",
+                this.state.dynamicHint,
+                this.state.bioInfo
+            );
+        };
+        
 
     render() {
         const { translate } = this.props;
@@ -516,14 +572,14 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
-                    {displayHints && this.giveDynamicHint && (
+                    {/* {this.state.activeHintType && (this.state.activeHintType == "normal") && (
                         <div className="dynamicHintContainer">
                             <h3 className="dynamicHintTitle">
                                 Hint From ChatGPT
                             </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
-                                    {renderText(
+                                    {renderGPTText(
                                         this.state.dynamicHint,
                                         problemID,
                                         chooseVariables(
@@ -539,12 +595,12 @@ class ProblemCard extends React.Component {
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
-                                    loading...
+                                    {"Loading..."}
                                 </div>
                             )}
                         </div>
-                    )}
-                    {(displayHints || (debug && use_expanded_view)) &&
+                    )} */}
+                    {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
                         this.showHints && (
                             <div className="Hints">
                                 <ErrorBoundary
@@ -559,7 +615,7 @@ class ProblemCard extends React.Component {
                                         problemID={this.props.problemID}
                                         index={this.props.index}
                                         step={this.step}
-                                        hints={this.hints}
+                                        hints={this.state.hints}
                                         unlockHint={this.unlockHint}
                                         hintStatus={this.state.hintsFinished}
                                         submitHint={this.submitHint}
@@ -614,8 +670,8 @@ class ProblemCard extends React.Component {
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <Grid item xs={false} sm={false} md={4} />
-                        <Grid item xs={4} sm={4} md={1}>
+                        <Grid item xs={false} sm={false} md={3} />
+                        <Grid item xs={4} sm={4} md={1} >
                             {this.showHints && (
                                 <center>
                                     <IconButton
@@ -643,6 +699,7 @@ class ProblemCard extends React.Component {
                                 </center>
                             )}
                         </Grid>
+                        {/* <Grid item xs={4} sm={4} md={1} /> */}
                         <Grid item xs={4} sm={4} md={2}>
                             <center>
                                 <Button
@@ -732,7 +789,7 @@ class ProblemCard extends React.Component {
                                     )}
                             </div>
                         </Grid>
-                        <Grid item xs={false} sm={1} md={4} />
+                        <Grid item xs={false} sm={1} md={3} />
                     </Grid>
                 </CardActions>
             </Card>
