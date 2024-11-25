@@ -15,7 +15,6 @@ import HintSystem from "./HintSystem.js";
 import {
     chooseVariables,
     renderText,
-    renderGPTText,
 } from "../../platform-logic/renderText.js";
 import {
     DYNAMIC_HINT_URL,
@@ -496,12 +495,22 @@ class ProblemCard extends React.Component {
                 }));
             };
         
-            // Call the helper function
+            // Call ChatGPT to fetch the dynamic hint using streaming
             fetchDynamicHint(
                 DYNAMIC_HINT_URL,
                 this.generateGPTHintParameters(this.prompt_template, this.state.bioInfo),
                 onChunkReceived,
-                onError
+                onError,
+                this.props.problemID,
+                chooseVariables(
+                    Object.assign(
+                        {},
+                        this.props.problemVars,
+                        this.step.variabilization
+                    ),
+                    this.props.seed
+                ),
+                this.context
             );
         
             this.context.firebase.log(
@@ -572,34 +581,6 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
-                    {/* {this.state.activeHintType && (this.state.activeHintType == "normal") && (
-                        <div className="dynamicHintContainer">
-                            <h3 className="dynamicHintTitle">
-                                Hint From ChatGPT
-                            </h3>
-                            {this.state.dynamicHint ? (
-                                <div className="dynamicHintContent">
-                                    {renderGPTText(
-                                        this.state.dynamicHint,
-                                        problemID,
-                                        chooseVariables(
-                                            Object.assign(
-                                                {},
-                                                problemVars,
-                                                this.step.variabilization
-                                            ),
-                                            seed
-                                        ),
-                                        this.context
-                                    )}
-                                </div>
-                            ) : (
-                                <div className="dynamicHintContent">
-                                    {"Loading..."}
-                                </div>
-                            )}
-                        </div>
-                    )} */}
                     {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
                         this.showHints && (
                             <div className="Hints">
