@@ -4,6 +4,8 @@ import { calculateSemester } from "../util/calculateSemester.js";
 
 import { SITE_NAME } from "@common/global-config";
 import { cleanObjectKeys } from "../util/cleanObject";
+import dotenv from "dotenv";
+dotenv.config();
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.6";
@@ -91,7 +93,7 @@ const MIDDLEWARE_URL =
 const HELP_DOCUMENT =
     "https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub";
 
-const DYNAMIC_HINT_URL = "https://oatutor-backend.herokuapp.com/get_hint";
+const DYNAMIC_HINT_URL = process.env.AI_HINT_GENERATION_AWS_ENDPOINT;
 
 const DYNAMIC_HINT_TEMPLATE =
     "<{problem_title}.> <{problem_subtitle}.> <{question_title}.> <{question_subtitle}.> <Student's answer is: {student_answer}.> <The correct answer is: {correct_answer}.> Please give a hint for this.";
