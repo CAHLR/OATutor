@@ -442,9 +442,9 @@ class ProblemCard extends React.Component {
             .replace("{student_answer}", inputVal)
             .replace("{correct_answer}", correctAnswer);
 
-        console.log("input val", inputVal);
-        console.log("correct answer", correctAnswer);
-        console.log("PROMPT template", promptContent);
+        // console.log("input val", inputVal);
+        // console.log("correct answer", correctAnswer);
+        // console.log("PROMPT template", promptContent);
         return  {
             role: "user",
             message: promptContent
