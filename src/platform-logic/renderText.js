@@ -17,8 +17,99 @@ function renderText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
     }
-    text = text.replaceAll("\\neq", "≠")
-    text = text.replaceAll("**", "^")
+    text = text.replaceAll("\\neq", "≠");
+    text = text.replaceAll("**", "^");
+    let result = text;
+    result = parseForMetaVariables(result, context);
+
+    for (const d in dynamicText) {
+        const replace = dynamicText[d];
+        result = result.split(d).join(replace); // expands all "%dynamic%" text to their specific counterparts
+    }
+    if (variabilization) {
+        result = variabilize(result, variabilization);
+    }
+
+    const lines = result.split("\\n");
+    return lines.map((line, idx) => {
+        /**
+         * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
+         * @type {(string | JSX.Element)[]}
+         */
+        let lineParts = line.split("$$");
+        lineParts = lineParts.map((part, jdx) => {
+            const isLaTeX = jdx % 2 !== 0; // implies it is in between two "$$" delimiters
+            if (isLaTeX) {
+                const regex = /^_{3,}$/;
+                if (regex.test(part)) {
+                    return parseForFillInQuestions(part);
+                }
+                return (
+                    <ErrorBoundary
+                        componentName={"InlineMath"}
+                        replacement={part}
+                        inline
+                        key={Math.random() * 2 ** 16}
+                    >
+                        <InlineMath
+                            math={part}
+                            renderError={(error) => {
+                                throw error;
+                            }}
+                        />
+                    </ErrorBoundary>
+                );
+            }
+
+            const lineSubParts = part.split("##");
+            return lineSubParts.map((subPart, kdx) => {
+                const isMedia = kdx % 2 !== 0;
+                if (isMedia) {
+                    return (
+                        <center key={Math.random() * 2 ** 16}>
+                            <RenderMedia
+                                url={subPart}
+                                problemID={problemID}
+                                contentSource={CONTENT_SOURCE}
+                            />
+                        </center>
+                    );
+                }
+                return parseForFillInQuestions(subPart);
+            });
+        });
+        // add a spacer if it isn't the last line
+        if (idx !== lines.length - 1) {
+            lineParts.push(
+                <Spacer height={2} width={2} key={Math.random() * 2 ** 16} />
+            );
+        }
+        return lineParts;
+    });
+}
+
+function convertSingleDollarToDouble(text) {
+    // This regular expression matches dollar signs that are not part of double dollars
+    return text.replace(/(?<!\$)\$(?!\$)/g, "$$$$");
+}
+
+/**
+ * @param {string|*} text
+ * @param problemID
+ * @param {*} variabilization
+ * @param context
+ */
+// TODO: Fix this to handle something like: "The 3 chairs  cost $20, $30, and $50."
+// This should not take out the dollar signs here.
+function renderGPTText(text, problemID, variabilization, context) {
+    if (typeof text !== "string") {
+        return text;
+    }
+    console.log(text);
+    text = convertSingleDollarToDouble(text);
+
+    text = text.replaceAll("\\neq", "≠");
+    text = text.replaceAll("**", "^");
     let result = text;
     result = parseForMetaVariables(result, context);
 
@@ -151,4 +242,4 @@ function parseForFillInQuestions(str) {
     return result;
 }
 
-export { renderText, chooseVariables };
+export { renderText, renderGPTText, chooseVariables };
