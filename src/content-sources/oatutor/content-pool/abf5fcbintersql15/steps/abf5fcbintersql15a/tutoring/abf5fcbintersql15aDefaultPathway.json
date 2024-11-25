@@ -1,0 +1,80 @@
+[
+    {
+        "id": "abf5fcbintersql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "CONNECT keyword",
+        "text": "The CONNECT keyword is not a valid keyword in SQL for joining data.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql15a-h1"
+        ],
+        "title": "Table name",
+        "text": "The table name to join on, Contacts, must be specified as what to join ON.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql15a-h2"
+        ],
+        "title": "Table Context",
+        "text": "The JOIN clause requires specifying the fields and their tables on which the association will be made. Specify the table before the field and separate by period.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Customers.Phone=Contacts.Number1$$"
+        ],
+        "dependencies": [
+            "abf5fcbintersql15a-h3"
+        ],
+        "title": "Specify the fields",
+        "text": "Which fields should be specified when joining the tables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Customers.Phone=Contacts.Number1$$",
+            "$$Contacts.Number1=Customers.ID$$",
+            "$$Contacts.Name=Customers.Phone$$"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "JOIN Contacts ON $$Customers.Phone=Contacts.Number1$$"
+        ],
+        "dependencies": [
+            "abf5fcbintersql15a-h4"
+        ],
+        "title": "Select the SQL clause",
+        "text": "To connect two tables based on a common column, which of these SQL clauses can be used in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "JOIN",
+            "CONNECT",
+            "LINK"
+        ]
+    }
+]
