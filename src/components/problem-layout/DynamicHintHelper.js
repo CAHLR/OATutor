@@ -1,16 +1,52 @@
 import { renderGPTText } from "../../platform-logic/renderText.js";
-export async function fetchDynamicHint(DYNAMIC_HINT_URL, 
-    promptParameters, onChunkReceived, onError, problemID, variabilization, context) {
+import AWS from "aws-sdk";
+
+export async function fetchDynamicHint(
+    DYNAMIC_HINT_URL, 
+    promptParameters, 
+    onChunkReceived, 
+    onError, 
+    problemID, 
+    variabilization, 
+    context
+    ) {
     try {
-        const response = await fetch(DYNAMIC_HINT_URL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(promptParameters),
+        AWS.config.update({
+            accessKeyId: "",
+            secretAccessKey: "",
+            region: "us-west-1",
         });
+        
+        const request = new AWS.HttpRequest(DYNAMIC_HINT_URL, AWS.config.region);
+        request.method = "POST";
+        request.headers["Content-Type"] = "application/json";
+        request.headers['Host'] = new URL(DYNAMIC_HINT_URL).host;
+        request.body = JSON.stringify(promptParameters);
+
+        const signer = new AWS.Signers.V4(request, "lambda");
+        signer.addAuthorization(AWS.config.credentials, new Date());
+
+        // Send the signed request using fetch
+        let response;
+        try {
+            response = await fetch(DYNAMIC_HINT_URL, {
+            mode: 'cors',
+            method: request.method,
+            headers: request.headers,
+            body: request.body,
+        });
+        } catch (error) {
+            console.error('Error sending request:', error);
+            throw error;
+        }
+
         if (!response.body) {
             throw new Error("No response body from server.");
+        }
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error("AWS Error Response:", errorText);
+            throw new Error(`Request failed with status ${response.status}`);
         }
 
         const reader = response.body.getReader();
@@ -21,7 +57,7 @@ export async function fetchDynamicHint(DYNAMIC_HINT_URL,
             const { done, value } = await reader.read();
             if (done) {
                 streamedHint = renderGPTText(streamedHint, problemID, variabilization, context);
-                console.log(streamedHint);
+                console.log("GPT OUTPUT " + streamedHint);
                 break;
             } else {
                 let chunk = decoder.decode(value, { stream: true });
@@ -30,6 +66,7 @@ export async function fetchDynamicHint(DYNAMIC_HINT_URL,
                 chunk = ensureProperTermination(chunk);
                 // Add the chunk to the streamedHint
                 streamedHint += chunk;
+                console.log(streamedHint);
             }
             // Callback to process chunks
             onChunkReceived(streamedHint);

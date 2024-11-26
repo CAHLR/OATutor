@@ -140,8 +140,8 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
-            activeHintType: "none", // "none", or "normal". If `giveDynamicHint` is true, "normal" will show both manual and AI hints
-            hints: this.hints
+            activeHintType: "none", // "none", or "normal".
+            hints: this.hints,
         };
 
          // This is used for AI hint generation
@@ -161,6 +161,7 @@ class ProblemCard extends React.Component {
     _findHintId = (hints, targetId) => {
         for (var i = 0; i < hints.length; i++) {
             if (hints[i].id === targetId) {
+                console.log("HINT FIND", hints, targetId);
                 return i;
             }
         }
@@ -485,14 +486,71 @@ class ProblemCard extends React.Component {
             };
         
             const onError = (error) => {
-                this.setState((prevState) => ({
-                    hints: prevState.hints.map((hint) =>
-                        hint.type === "gptHint"
-                            ? { ...hint, text: this.translate("hintsystem.errorHint") }
-                            : hint
-                    ),
-                }));
-            };
+                console.error("Error generating AI hint:", error);
+            
+                // Revert to manual hints and update state
+                this.hints = JSON.parse(
+                    JSON.stringify(this.step.hints[this.context.hintPathway])
+                );
+                for (let hint of this.hints) {
+                    hint.dependencies = hint.dependencies.map((dependency) =>
+                        this._findHintId(this.hints, dependency)
+                    );
+                    if (hint.subHints) {
+                        for (let subHint of hint.subHints) {
+                            subHint.dependencies = subHint.dependencies.map(
+                                (dependency) =>
+                                    this._findHintId(hint.subHints, dependency)
+                            );
+                        }
+                    }
+                }
+
+                  // Bottom out hints option
+                if (
+                    this.giveStuBottomHint
+                ) {
+                    // Bottom out hints
+                    this.hints.push({
+                        id: this.step.id + "-h" + (this.hints.length + 1),
+                        title: this.translate('hintsystem.answer'),
+                        text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
+                        type: "bottomOut",
+                        dependencies: Array.from(Array(this.hints.length).keys()),
+                    });
+                    // Bottom out sub hints
+                    this.hints.map((hint, i) => {
+                        if (hint.type === "scaffold") {
+                            if (hint.subHints == null) {
+                                hint.subHints = [];
+                            }
+                            hint.subHints.push({
+                                id:
+                                    this.step.id +
+                                    "-h" +
+                                    i +
+                                    "-s" +
+                                    (hint.subHints.length + 1),
+                                title: this.translate('hintsystem.answer'),
+                                text: this.translate('hintsystem.answerIs') + hint.hintAnswer[0],
+                                type: "bottomOut",
+                                dependencies: Array.from(
+                                    Array(hint.subHints.length).keys()
+                                ),
+                            });
+                        }
+                        return null;
+                    });
+                }
+            
+                this.setState({
+                    hints: this.hints,
+                    giveDynamicHint: false, // Switch to manual hints
+                    activeHintType: "normal",
+                    dynamicHint: "Failed to generate AI hint. Displaying manual hints.",
+                    hintsFinished: new Array(this.hints.length).fill(0),
+                });
+            };            
         
             // Call ChatGPT to fetch the dynamic hint using streaming
             fetchDynamicHint(
@@ -588,6 +646,7 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
+                                        key={`hints-${this.giveDynamicHint ? 'dynamic' : 'manual'}`}
                                         giveHintOnIncorrect={this.giveHintOnIncorrect}
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
