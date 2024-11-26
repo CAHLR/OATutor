@@ -17,7 +17,7 @@ import TextField from "@material-ui/core/TextField";
 import { NavLink } from "react-router-dom";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
-import withTranslation from "../../util/withTranslation.js"
+import withTranslation from "../../util/withTranslation.js";
 
 import {
     CANVAS_WARNING_STORAGE_KEY,
@@ -48,6 +48,7 @@ class Problem extends React.Component {
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
         const giveStuBottomHint = this.props.lesson?.allowBottomHint;
+        const agentMode = this.props.lesson?.agentMode;
 
         this.giveHintOnIncorrect = true;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
@@ -61,6 +62,7 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        this.agentMode = agentMode != null && agentMode;
 
         this.state = {
             stepStates: {},
@@ -242,7 +244,11 @@ class Problem extends React.Component {
                     );
                     continue;
                 }
-                if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
+                if (
+                    this.doMasteryUpdate &&
+                    (firstAttempts[cardIndex] === undefined ||
+                        firstAttempts[cardIndex] === false)
+                ) {
                     firstAttempts[cardIndex] = true;
                     update(this.bktParams[kc], isCorrect);
                 }
@@ -371,17 +377,20 @@ class Problem extends React.Component {
         var oerArray, licenseArray;
         var oerLink, oerName;
         var licenseLink, licenseName;
-	try {
-        if (problem.oer != null && problem.oer.includes(" <")) {
-            oerArray = problem.oer.split(" <");
-        } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
-            oerArray = lesson.courseOER.split(" <");
-        } else {
+        try {
+            if (problem.oer != null && problem.oer.includes(" <")) {
+                oerArray = problem.oer.split(" <");
+            } else if (
+                lesson.courseOER != null &&
+                lesson.courseOER.includes(" ")
+            ) {
+                oerArray = lesson.courseOER.split(" <");
+            } else {
+                oerArray = ["", ""];
+            }
+        } catch (error) {
             oerArray = ["", ""];
         }
-	} catch(error) {
-		oerArray = ["", ""];
-	}
 
         oerLink = oerArray[0];
         oerName = oerArray[1].substring(0, oerArray[1].length - 1);
@@ -397,7 +406,7 @@ class Problem extends React.Component {
             } else {
                 licenseArray = ["", ""];
             }
-        } catch(error) {
+        } catch (error) {
             licenseArray = ["", ""];
         }
         licenseLink = licenseArray[0];
@@ -480,6 +489,7 @@ class Problem extends React.Component {
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
+                                    agentMode={this.agentMode}
                                 />
                             </Element>
                         ))}
@@ -504,7 +514,9 @@ class Problem extends React.Component {
                                                 (this.context.needRefresh = true)
                                             }
                                         >
-                                            {translate('problem.PreviousProblem')}
+                                            {translate(
+                                                "problem.PreviousProblem"
+                                            )}
                                         </Button>
                                     </NavLink>
                                 </Grid>
@@ -525,14 +537,13 @@ class Problem extends React.Component {
                                                 (this.context.needRefresh = true)
                                             }
                                         >
-                                           {translate('problem.NextProblem')}
+                                            {translate("problem.NextProblem")}
                                         </Button>
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={2} key={4} />
                             </Grid>
                         ) : (
-                            
                             <Grid container spacing={0}>
                                 <Grid item xs={3} sm={3} md={5} key={1} />
                                 <Grid item xs={6} sm={6} md={2} key={2}>
@@ -548,7 +559,7 @@ class Problem extends React.Component {
                                             )
                                         }
                                     >
-                                        {translate('problem.NextProblem')}
+                                        {translate("problem.NextProblem")}
                                     </Button>
                                 </Grid>
                                 <Grid item xs={3} sm={3} md={5} key={3} />
@@ -567,7 +578,8 @@ class Problem extends React.Component {
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
                             {licenseName !== "" && licenseLink !== "" ? (
                                 <div>
-                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
+                                    "{problem.title}"{" "}
+                                    {translate("problem.Derivative")}&nbsp;
                                     <a
                                         href={oerLink}
                                         target="_blank"
@@ -575,7 +587,7 @@ class Problem extends React.Component {
                                     >
                                         "{oerName}"
                                     </a>
-                                    {translate('problem.Used')}&nbsp;
+                                    {translate("problem.Used")}&nbsp;
                                     <a
                                         href={licenseLink}
                                         target="_blank"
@@ -586,21 +598,23 @@ class Problem extends React.Component {
                                 </div>
                             ) : (
                                 <div>
-                                {oerName !== "" && oerLink !== "" ? (
-                                <div>
-                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
-                                    <a
-                                        href={oerLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        "{oerName}"
-                                    </a>
+                                    {oerName !== "" && oerLink !== "" ? (
+                                        <div>
+                                            "{problem.title}"{" "}
+                                            {translate("problem.Derivative")}
+                                            &nbsp;
+                                            <a
+                                                href={oerLink}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                "{oerName}"
+                                            </a>
+                                        </div>
+                                    ) : (
+                                        <></>
+                                    )}
                                 </div>
-                            ) : (
-                                <></>
-                            )}
-                            </div>
                             )}
                         </div>
                         <div
@@ -641,14 +655,14 @@ class Problem extends React.Component {
                     {this.state.showFeedback ? (
                         <div className="Feedback">
                             <center>
-                                <h1>{translate('problem.Feedback')}</h1>
+                                <h1>{translate("problem.Feedback")}</h1>
                             </center>
                             <div className={classes.textBox}>
                                 <div className={classes.textBoxHeader}>
                                     <center>
                                         {this.state.feedbackSubmitted
-                                            ? translate('problem.Thanks')
-                                            : translate('problem.Description')}
+                                            ? translate("problem.Thanks")
+                                            : translate("problem.Description")}
                                     </center>
                                 </div>
                                 {this.state.feedbackSubmitted ? (
@@ -671,7 +685,9 @@ class Problem extends React.Component {
                                         >
                                             <TextField
                                                 id="outlined-multiline-flexible"
-                                                label={translate('problem.Response')}
+                                                label={translate(
+                                                    "problem.Response"
+                                                )}
                                                 multiline
                                                 fullWidth
                                                 minRows="6"
@@ -720,7 +736,7 @@ class Problem extends React.Component {
                                                     this.state.feedback === ""
                                                 }
                                             >
-                                                {translate('problem.Submit')}
+                                                {translate("problem.Submit")}
                                             </Button>
                                         </Grid>
                                         <Grid

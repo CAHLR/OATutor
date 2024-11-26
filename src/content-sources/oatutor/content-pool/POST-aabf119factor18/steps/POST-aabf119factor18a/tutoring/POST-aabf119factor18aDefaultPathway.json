@@ -1,0 +1,97 @@
+[
+    {
+        "id": "POST-aabf119factor18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the expression.",
+        "text": "Split $$-5p$$ to $$-7p$$ and $$2p$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Split  minus 5 p  to  negative 7 p,  and  2 p .",
+        "math": [
+            "$$-5p$$",
+            "$$-7p$$",
+            "$$2p$$"
+        ],
+        "pacedSpeech": [
+            "Split   minus 5 p ",
+            " to   negative 7 p, ",
+            " and   2 p"
+        ]
+    },
+    {
+        "id": "POST-aabf119factor18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2p\\left(p+1\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor18a-h1"
+        ],
+        "title": "Factor the expression.",
+        "text": "What is the factoring of $$2p^2$$ $$\\left(+2\\right) p$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is the factoring of  2 p squared,  , parentheses positive 2  times p ?",
+        "math": [
+            "$$2p^2$$",
+            "$$\\left(+2\\right) p$$"
+        ],
+        "pacedSpeech": [
+            "What is the factoring of   2 p squared, ",
+            "  ,  positive 2  times p"
+        ]
+    },
+    {
+        "id": "POST-aabf119factor18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7\\left(p+1\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor18a-h2"
+        ],
+        "title": "Factor the expression.",
+        "text": "What is the factoring of $$-7p-7$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "What is the factoring of  minus 7 p minus 7 ?",
+        "math": [
+            "$$-7p-7$$"
+        ],
+        "pacedSpeech": [
+            "What is the factoring of   minus 7 p minus 7"
+        ]
+    },
+    {
+        "id": "POST-aabf119factor18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(2p-7\\right) \\left(p+1\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor18a-h3"
+        ],
+        "title": "Factor the expression.",
+        "text": "Factor out the common term of both $$p+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "speech": "Factor out the common term of both  p plus 1 .",
+        "math": [
+            "$$p+1$$"
+        ],
+        "pacedSpeech": [
+            "Factor out the common term of both   p plus 1"
+        ]
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "id": "POST-a7b98f9composition18c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiplication",
+        "text": "Remember that fg is the same as $$f g x$$. All we have to do is use foil to multiply the two functions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "Remember that fg is the same as  f g x, . All we have to do is use foil to multiply the two functions.",
+        "math": [
+            "$$f g x$$"
+        ],
+        "pacedSpeech": [
+            "Remember that fg is the same as   f g x, ",
+            ". All we have to do is use foil to multiply the two functions."
+        ]
+    },
+    {
+        "id": "POST-a7b98f9composition18c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24x^3+48x^2$$"
+        ],
+        "dependencies": [
+            "a7b98f9composition18c-h1"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$\\left(2x^2+4x\\right) 12x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "What is  parentheses, 2 x squared, plus 4 x  times 12 x ?",
+        "math": [
+            "$$\\left(2x^2+4x\\right) 12x$$"
+        ],
+        "pacedSpeech": [
+            "What is   , 2 x squared, plus 4 x  times 12 x"
+        ]
+    },
+    {
+        "id": "POST-a7b98f9composition18c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition18c-h2"
+        ],
+        "title": "Combining Like Terms",
+        "text": "After multiplying the products, there are no like terms to combine, so we will be left with $$24x^3+48x^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "speech": "After multiplying the products, there are no like terms to combine, so we will be left with , 24 x cubed, plus 48 x squared .",
+        "math": [
+            "$$24x^3+48x^2$$"
+        ],
+        "pacedSpeech": [
+            "After multiplying the products, there are no like terms to combine, so we will be left with  , 24 x cubed, plus 48 x squared"
+        ]
+    }
+]

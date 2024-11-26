@@ -19,6 +19,7 @@ class HintVoiceBoard extends React.Component {
         super(props);
         this.state = {
             isLoading: false,
+            isExpanded: props.isExpanded,
         };
     }
 
@@ -29,24 +30,30 @@ class HintVoiceBoard extends React.Component {
     }
 
     fetchAudioData = async (hint) => {
-        console.log("hint pacedSpeech: ", hint.pacedSpeech);
+        // console.log("hint pacedSpeech: ", hint.pacedSpeech);
         try {
             this.setState({ isLoading: true });
-            const response = await axios.post(
-                "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
-                {
-                    segments: hint.pacedSpeech, // Send the data in the body
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json",
+            if (!hint.audios) {
+                const response = await axios.post(
+                    "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
+                    {
+                        segments: hint.pacedSpeech, // Send the data in the body
                     },
+                    {
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    }
+                );
+                hint.audios = JSON.parse(response.data.body).audios; // Store audio data
+                // console.log("success:", response, hint.audios);
+            }
+            this.setState({ isLoading: false }, () => {
+                console.log("state is expanded:", this.state.isExpanded, hint);
+                if (this.state.isExpanded) {
+                    this.props.playAgent(hint);
                 }
-            );
-            hint.audios = JSON.parse(response.data.body).audios; // Store audio data
-            console.log("success:", response, hint.audios);
-            this.setState({ isLoading: false });
-            this.props.playAgent(hint);
+            });
         } catch (error) {
             console.error("Error fetching audio:", error);
             this.setState({ isLoading: false });

@@ -55,6 +55,13 @@ class HintSystem extends React.Component {
                         : 0
                 ).fill(0)
             );
+            // set hint audios agentMode to be true/false
+            this.props.hints[i].agentMode = true;
+            // pre-cache all the audios when the hintsystem shows up
+            if (!this.props.hints[i].audios) {
+                console.log("Pre cache ongoing for", i);
+                this.fetchAudioData(this.props.hints[i]);
+            }
         }
 
         this.giveStuFeedback = props.giveStuFeedback;
@@ -69,7 +76,7 @@ class HintSystem extends React.Component {
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
-            agentMode: false, // showing text or agent whiteboard
+            agentMode: this.props.agentMode, // showing text or agent whiteboard
             playing: false, // speaking or not
             hintIndex: 0, // index of hint to highlight
         };
@@ -91,8 +98,24 @@ class HintSystem extends React.Component {
         // Verona calls here
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
+            console.log("closed");
+            this.audioRef.pause();
+            // this.props.hints[i].agentMode = true;
         } else {
+            if (this.state.playing) {
+                this.audioRef.pause();
+                this.audioRef = null;
+            }
+
+            this.setState({ agentMode: this.props.agentMode }, () => {
+                if (this.state.agentMode) {
+                    // console.log("print hint:", this.props.hints[i]);
+                    this.playAgent(this.props.hints[i]);
+                }
+            });
+            // // pre-cache the audio before the white board appears
             // if (!this.props.hints[i].audios) {
+            //     console.log("Pre cache ongoing for", i);
             //     this.fetchAudioData(this.props.hints[i]);
             // }
             this.setState({ currentExpanded: i });
@@ -181,7 +204,7 @@ class HintSystem extends React.Component {
 
     // Sharon added methods
     fetchAudioData = async (hint) => {
-        console.log("hint pacedSpeech: ", hint.pacedSpeech);
+        // console.log("hint pacedSpeech: ", hint.pacedSpeech);
         try {
             const response = await axios.post(
                 "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
@@ -195,7 +218,8 @@ class HintSystem extends React.Component {
                 }
             );
             hint.audios = JSON.parse(response.data.body).audios; // Store audio data
-            console.log("success:", response, hint.audios);
+            // console.log("success:", response, hint.audios);
+            console.log("hint audio pre-cached");
         } catch (error) {
             console.error("Error fetching audio:", error);
         }
@@ -253,13 +277,19 @@ class HintSystem extends React.Component {
     };
 
     renderWhiteboard = (hint) => {
-        // console.log("hint:", hint);
+        let hintLocation = null;
+        this.props.hints.forEach((hint_i, i) => {
+            if (hint === hint_i) {
+                hintLocation = i;
+            }
+        });
 
         return this.state.agentMode ? (
             <HintVoiceBoard
                 hint={hint}
                 hintIndex={this.state.hintIndex}
                 playAgent={this.playAgent}
+                isExpanded={this.state.currentExpanded == hintLocation}
             ></HintVoiceBoard>
         ) : (
             hint.text
@@ -295,7 +325,18 @@ class HintSystem extends React.Component {
             () => ({ hintIndex: 0 }),
             () => {
                 this.playAgent(hint);
-                // not fully working yet need to quit previous audio first
+                this.context.firebase.log(
+                    null,
+                    this.props.problemID,
+                    this.step,
+                    null,
+                    null,
+                    this.state.subHintsFinished,
+                    "Restart playing",
+                    chooseVariables(this.props.stepVars, this.props.seed),
+                    this.props.lesson,
+                    this.props.courseName
+                );
             }
         );
     };
@@ -305,39 +346,97 @@ class HintSystem extends React.Component {
     };
 
     toggleWhiteboard = (hint) => {
+        // console.log("hint", hint, hint.agentMode);
+        // hint.agentMode = !hint.agentMode;
+        if (this.state.playing && this.audioRef) {
+            // pause
+            this.audioRef.pause();
+        }
         this.setState(
-            (prevState) => ({ agentMode: !prevState.agentMode }),
+            (prevState) => ({
+                agentMode: !prevState.agentMode,
+            }),
             () => {
                 this.playAgent(hint);
+                this.context.firebase.log(
+                    null,
+                    this.props.problemID,
+                    this.step,
+                    null,
+                    null,
+                    this.state.subHintsFinished,
+                    this.state.agentMode == true
+                        ? "Switch to agent"
+                        : "Switch to text",
+                    chooseVariables(this.props.stepVars, this.props.seed),
+                    this.props.lesson,
+                    this.props.courseName
+                );
             }
         );
-
         // should play when whiteboard opens and stop when closes
     };
 
-    togglePlayPause = (event) => {
+    togglePlayPause = (hint) => {
         console.log("pause called");
         if (this.state.playing) {
             // pause
-            // socket.emit("pause");
+            this.audioRef.pause();
+            this.context.firebase.log(
+                null,
+                this.props.problemID,
+                this.step,
+                null,
+                null,
+                this.state.subHintsFinished,
+                "Paused playing",
+                chooseVariables(this.props.stepVars, this.props.seed),
+                this.props.lesson,
+                this.props.courseName
+            );
         } else {
             // play
-            // socket.emit("play", this.state.hintIndex);
+            if (this.state.hintIndex == 0) {
+                if (this.state.agentMode) {
+                    if (hint.pacedSpeech && hint.audios) {
+                        this.playAudioForSegment(0, hint.audios);
+                    }
+                }
+                this.context.firebase.log(
+                    null,
+                    this.props.problemID,
+                    this.step,
+                    null,
+                    null,
+                    this.state.subHintsFinished,
+                    "Restart playing",
+                    chooseVariables(this.props.stepVars, this.props.seed),
+                    this.props.lesson,
+                    this.props.courseName
+                );
+            } else {
+                this.audioRef.play();
+                this.context.firebase.log(
+                    null,
+                    this.props.problemID,
+                    this.step,
+                    null,
+                    null,
+                    this.state.subHintsFinished,
+                    "Continued Playing",
+                    chooseVariables(this.props.stepVars, this.props.seed),
+                    this.props.lesson,
+                    this.props.courseName
+                );
+            }
         }
         this.setState((prevState) => ({ playing: !prevState.playing }));
     };
 
     handleOnChange = (event, expanded, index, hint) => {
-        this.setState({ agentMode: false });
+        console.log("handle on change:", index);
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
-        // TODO: Add conditional so it wont play if hint is being closed...
-        // if (expanded) {
-        //     this.playAgent(hint);
-        // }
-        // else {
-        //     this.stopSpeech();
-        // }
     };
 
     render() {
@@ -477,50 +576,56 @@ class HintSystem extends React.Component {
                                 )}
                             </Typography>
                         </AccordionDetails>
-                        <AccordionActions>
-                            {this.state.agentMode ? (
-                                <>
-                                    <Button
-                                        onClick={() => this.reloadSpeech(hint)}
-                                    >
-                                        <img
-                                            src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
-                                            alt="Reload Icon"
-                                            width={15}
-                                            height={15}
-                                        />
-                                    </Button>
-
-                                    <Button
-                                        onClick={() => {
-                                            this.togglePlayPause(hint);
-                                        }}
-                                    >
-                                        {this.state.playing ? (
+                        {this.props.agentMode && (
+                            <AccordionActions>
+                                {this.state.agentMode ? (
+                                    <>
+                                        <Button
+                                            onClick={() =>
+                                                this.reloadSpeech(hint)
+                                            }
+                                        >
                                             <img
-                                                src={`${process.env.PUBLIC_URL}/pause_icon.svg`}
-                                                alt="Pause Icon"
+                                                src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
+                                                alt="Reload Icon"
                                                 width={15}
                                                 height={15}
                                             />
-                                        ) : (
-                                            <img
-                                                src={`${process.env.PUBLIC_URL}/play_icon.svg`}
-                                                alt="Play Icon"
-                                                width={15}
-                                                height={15}
-                                            />
-                                        )}
-                                    </Button>
-                                </>
-                            ) : (
-                                " "
-                            )}
+                                        </Button>
 
-                            <Button onClick={() => this.toggleWhiteboard(hint)}>
-                                {this.state.agentMode ? "TEXT" : "AGENT"}
-                            </Button>
-                        </AccordionActions>
+                                        <Button
+                                            onClick={() => {
+                                                this.togglePlayPause(hint);
+                                            }}
+                                        >
+                                            {this.state.playing ? (
+                                                <img
+                                                    src={`${process.env.PUBLIC_URL}/pause_icon.svg`}
+                                                    alt="Pause Icon"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                            ) : (
+                                                <img
+                                                    src={`${process.env.PUBLIC_URL}/play_icon.svg`}
+                                                    alt="Play Icon"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                            )}
+                                        </Button>
+                                    </>
+                                ) : (
+                                    " "
+                                )}
+
+                                <Button
+                                    onClick={() => this.toggleWhiteboard(hint)}
+                                >
+                                    {this.state.agentMode ? "TEXT" : "AGENT"}
+                                </Button>
+                            </AccordionActions>
+                        )}
                     </Accordion>
                 ))}
             </div>

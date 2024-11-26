@@ -33,7 +33,7 @@ import {
 } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import axios from "axios";
-import withTranslation from "../../util/withTranslation.js"
+import withTranslation from "../../util/withTranslation.js";
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
@@ -46,7 +46,7 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
         this.keepMCOrder = props.keepMCOrder;
         this.keyboardType = props.keyboardType;
         this.allowRetry = this.giveStuFeedback;
@@ -62,6 +62,9 @@ class ProblemCard extends React.Component {
         this.prompt_template = props.prompt_template
             ? props.prompt_template
             : DYNAMIC_HINT_TEMPLATE;
+
+        this.agentMode = props.agentMode;
+
         console.debug(
             "this.step",
             this.step,
@@ -225,7 +228,7 @@ class ProblemCard extends React.Component {
 
         if (!isCorrect) {
             this.expandFirstIncorrect = true;
-            this.toggleHints('auto-expand');
+            this.toggleHints("auto-expand");
         }
 
         this.context.firebase.log(
@@ -548,7 +551,9 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -569,6 +574,7 @@ class ProblemCard extends React.Component {
                                         lesson={this.props.lesson}
                                         courseName={this.props.courseName}
                                         isIncorrect={this.expandFirstIncorrect}
+                                        agentMode={this.agentMode}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />
@@ -654,7 +660,7 @@ class ProblemCard extends React.Component {
                                         "data-selenium-target": `submit-button-${this.props.index}`,
                                     })}
                                 >
-                                    {translate('problem.Submit')}
+                                    {translate("problem.Submit")}
                                 </Button>
                             </center>
                         </Grid>
