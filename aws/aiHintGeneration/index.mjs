@@ -15,8 +15,6 @@ export const handler = awslambda.streamifyResponse(
       statusCode: 200,
       headers: {
         "Content-Type": "application/json",
-        // TODO: Change allow origin to only work with https://cahlr.github.io/OATutor/#/ and localhost:3001
-        //"Access-Control-Allow-Origin": "*", // Set to the allowed origin
         "Access-Control-Allow-Methods": "POST, GET, OPTIONS", // Allowed HTTP methods
         "Access-Control-Allow-Headers": "Origin, Content-Type, Authorization", // Allow specific headers
       },
