@@ -107,6 +107,8 @@ jobs:
         REACT_APP_COMMIT_HASH: ${{ github.sha }}
         REACT_APP_BUILD_TIMESTAMP: ${{ env.build_timestamp }}
         REACT_APP_AI_HINT_GENERATION_AWS_ENDPOINT: ${{ secrets.AI_HINT_GENERATION_AWS_ENDPOINT }}
+        REACT_APP_AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+        REACT_APP_AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
 
     - name: Checkout Content Staging
       uses: actions/checkout@v3
