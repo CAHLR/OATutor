@@ -298,30 +298,39 @@ class ProblemCard extends React.Component {
         }
     };
 
-    toggleHints = (event) => {
-        // this.setState({
-        //     enableHintGeneration: false,
-        //     activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
-        // });
-        if (!this.state.displayHints) {
+    toggleHints = () => {
+
+        // If AI hints are active
+        if (this.giveDynamicHint) {
+            // AI hints: Always show and regenerate on click
+            this.setState(
+                {
+                    activeHintType: "normal", // Ensure AI hints are always visible
+                },
+                () => {
+                    this.generateHintFromGPT(); // Regenerate AI hint
+                }
+            );
+        } else {
+            // Otherwise, toggle the hint system visibility
             this.setState(
                 (prevState) => ({
                     enableHintGeneration: false,
-                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
-                    }),
+                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal",
+                }),
                 () => {
-                    this.props.answerMade(
-                        this.index,
-                        this.step.knowledgeComponents,
-                        false
-                    );
+                    if (!this.state.displayHints) {
+                        this.props.answerMade(
+                            this.index,
+                            this.step.knowledgeComponents,
+                            false
+                        );
+                    }
                 }
             );
         }
-        if (this.giveDynamicHint) {
-            this.generateHintFromGPT();
-        }
     };
+    
 
     unlockHint = (hintNum, hintType) => {
         // Mark question as wrong if hints are used (on the first time)
@@ -714,9 +723,9 @@ class ProblemCard extends React.Component {
                             {this.showHints && (
                                 <center>
                                     <IconButton
-                                        aria-label="delete"
+                                        aria-label="hint-toggle"
                                         onClick={this.toggleHints}
-                                        title="View available hints"
+                                        title={this.giveDynamicHint ? "Regenerate AI Hint" : "View/Hide Hints"}
                                         disabled={
                                             !this.state.enableHintGeneration
                                         }
