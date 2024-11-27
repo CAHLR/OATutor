@@ -88,11 +88,6 @@ function renderText(text, problemID, variabilization, context) {
     });
 }
 
-function convertSingleDollarToDouble(text) {
-    // This regular expression matches dollar signs that are not part of double dollars
-    return text.replace(/(?<!\$)\$(?!\$)/g, "$$$$");
-}
-
 /**
  * @param {string|*} text
  * @param problemID
@@ -105,8 +100,8 @@ function renderGPTText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
     }
-    console.log(text);
-    text = convertSingleDollarToDouble(text);
+    console.log("BEFORE PROCESSED", text);
+    text = preprocessChatGPTResponse(text);
 
     text = text.replaceAll("\\neq", "≠");
     text = text.replaceAll("**", "^");
@@ -121,8 +116,9 @@ function renderGPTText(text, problemID, variabilization, context) {
         result = variabilize(result, variabilization);
     }
 
-    const lines = result.split("\\n");
-    return lines.map((line, idx) => {
+    let lines = result.split("\\n");
+    console.log("LINES", lines);
+    lines = lines.map((line, idx) => {
         /**
          * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
          * @type {(string | JSX.Element)[]}
@@ -169,6 +165,7 @@ function renderGPTText(text, problemID, variabilization, context) {
                 return parseForFillInQuestions(subPart);
             });
         });
+
         // add a spacer if it isn't the last line
         if (idx !== lines.length - 1) {
             lineParts.push(
@@ -177,6 +174,15 @@ function renderGPTText(text, problemID, variabilization, context) {
         }
         return lineParts;
     });
+     // Convert the East Asian dollar sign back to the standard dollar sign
+     const finalOutput = lines.map((linePart) => {
+        if (typeof linePart === "string") {
+            return linePart.replace(/\uFF04/g, "$");
+        }
+        return linePart;
+    });
+
+    return finalOutput;
 }
 
 const META_REGEX = /%\{([^{}%"]+)}/g;
@@ -196,6 +202,25 @@ function parseForMetaVariables(str, context) {
         }
         return ogMatch;
     });
+}
+
+function preprocessChatGPTResponse(input) {
+    // Step 1: Replace ChatGPT '\n' new lines with '\\n'
+    input = input.replace(/\n/g, "\\n");
+    // Step 2: Replace monetary values ($12,000) with (\uFF04)12,000
+    const moneyRegex = /\$(\d{1,3}(,\d{3})*(\.\d{2})?|(\d+))/g;
+    input = input.replace(moneyRegex, (_, moneyValue) => `\uFF04${moneyValue}`);
+    console.log("TRANSFORMATION 1", input);
+
+    // Step 3: Convert any remaining single dollar signs (not part of monetary values) to double dollars
+    input = input.replace(/(?<!\$)\$(?!\$)/g, "$$$$");
+    console.log("TRANSFORMATION 2", input);
+
+    // Step 4: Replace all instances of \uFF04 back to $
+    console.log((input.match(/\uFF04/g) || []).length);
+    input = input.replace(/\uFF04/g, "$");
+    console.log("TRANSFORMATION 3", input);
+    return input;
 }
 
 /**
