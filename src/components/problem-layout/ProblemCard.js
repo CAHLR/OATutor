@@ -34,6 +34,7 @@ import {
 } from "./ToastNotifyCorrectness";
 import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
+import CryptoJS from "crypto-js";
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
@@ -142,6 +143,8 @@ class ProblemCard extends React.Component {
             enableHintGeneration: true,
             activeHintType: "none", // "none", or "normal".
             hints: this.hints,
+            isGeneratingHint: false,
+            lastAIHintHash: null,
         };
 
          // This is used for AI hint generation
@@ -157,6 +160,10 @@ class ProblemCard extends React.Component {
             this.hints.unshift(gptHint);
         }
     }
+
+    hashAnswer = (answer) => {
+        return CryptoJS.SHA256(answer).toString();
+    };
 
     _findHintId = (hints, targetId) => {
         for (var i = 0; i < hints.length; i++) {
@@ -298,39 +305,28 @@ class ProblemCard extends React.Component {
         }
     };
 
-    toggleHints = () => {
-
-        // If AI hints are active
-        if (this.giveDynamicHint) {
-            // AI hints: Always show and regenerate on click
+    toggleHints = (event) => {
+        if (this.giveDynamicHint && !this.state.activeHintType !== "normal") {
+            this.generateHintFromGPT();
+        } else if (!this.state.displayHints) {
             this.setState(
-                {
-                    activeHintType: "normal", // Ensure AI hints are always visible
-                },
-                () => {
-                    this.generateHintFromGPT(); // Regenerate AI hint
-                }
-            );
-        } else {
-            // Otherwise, toggle the hint system visibility
-            this.setState(
-                (prevState) => ({
+                () => ({
                     enableHintGeneration: false,
-                    activeHintType: prevState.activeHintType === "normal" ? "none" : "normal",
-                }),
-                () => {
-                    if (!this.state.displayHints) {
-                        this.props.answerMade(
-                            this.index,
-                            this.step.knowledgeComponents,
-                            false
-                        );
-                    }
-                }
-            );
+            }))
         }
+        this.setState(
+            (prevState) => ({
+                activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
+                }),
+            () => {
+                this.props.answerMade(
+                    this.index,
+                    this.step.knowledgeComponents,
+                    false
+                );
+            }
+        );
     };
-    
 
     unlockHint = (hintNum, hintType) => {
         // Mark question as wrong if hints are used (on the first time)
@@ -459,9 +455,28 @@ class ProblemCard extends React.Component {
             }
         
         };
-        generateHintFromGPT = async () => {
+
+        generateHintFromGPT = async (forceRegenerate) => {
+            const { inputVal, lastAIHintHash, isGeneratingHint } = this.state;
+
+            const currentHash = this.hashAnswer(inputVal);
+
+            // If a hint is currently being generated through streaming, 
+            // do not generate a new hint
+            if (isGeneratingHint) {
+                return;
+            }
+
+            // If the current hash matches the last hash, skip regeneration
+            if ((currentHash === lastAIHintHash) && !forceRegenerate) {
+                console.log("Hint already generated for this answer, skipping regeneration.");
+                return;
+            }
+
             this.setState({
                 dynamicHint: "Loading...", // Clear previous hint
+                isGeneratingHint: true,
+                lastAIHintHash: currentHash,
             });
         
             const [parsed, correctAnswer, reason] = checkAnswer({
@@ -493,8 +508,21 @@ class ProblemCard extends React.Component {
                     ),
                 }));
             };
+
+            /** When the hint generation is completed, set the `isGeneratingHint` state to false
+             * in order to regenerate the hint.
+             */
+            const onSuccessfulCompletion = () => {
+                this.setState({
+                    isGeneratingHint: false,
+                });
+            }
         
             const onError = (error) => {
+
+                this.setState({
+                    isGeneratingHint: false,
+                })
                 console.error("Error generating AI hint:", error);
             
                 // Revert to manual hints and update state
@@ -566,6 +594,7 @@ class ProblemCard extends React.Component {
                 DYNAMIC_HINT_URL,
                 this.generateGPTHintParameters(this.prompt_template, this.state.bioInfo),
                 onChunkReceived,
+                onSuccessfulCompletion,
                 onError,
                 this.props.problemID,
                 chooseVariables(
@@ -677,6 +706,8 @@ class ProblemCard extends React.Component {
                                         lesson={this.props.lesson}
                                         courseName={this.props.courseName}
                                         isIncorrect={this.expandFirstIncorrect}
+                                        generateHintFromGPT={this.generateHintFromGPT}
+                                        isGeneratingHint={this.state.isGeneratingHint}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />
@@ -723,9 +754,9 @@ class ProblemCard extends React.Component {
                             {this.showHints && (
                                 <center>
                                     <IconButton
-                                        aria-label="hint-toggle"
+                                        aria-label="delete"
                                         onClick={this.toggleHints}
-                                        title={this.giveDynamicHint ? "Regenerate AI Hint" : "View/Hide Hints"}
+                                        title="View available hints"
                                         disabled={
                                             !this.state.enableHintGeneration
                                         }

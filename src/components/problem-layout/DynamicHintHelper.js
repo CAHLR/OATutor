@@ -4,16 +4,17 @@ import AWS from "aws-sdk";
 export async function fetchDynamicHint(
     DYNAMIC_HINT_URL, 
     promptParameters, 
-    onChunkReceived, 
-    onError, 
+    onChunkReceived,
+    onSuccessfulCompletion,
+    onError,
     problemID, 
     variabilization, 
     context
     ) {
     try {
         AWS.config.update({
-            accessKeyId: "",
-            secretAccessKey: "",
+            accessKeyId: process.env.AWS_ACCESS_KEY,
+            secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
             region: "us-west-1",
         });
         
@@ -56,8 +57,10 @@ export async function fetchDynamicHint(
         while (true) {
             const { done, value } = await reader.read();
             if (done) {
-                streamedHint = renderGPTText(streamedHint, problemID, variabilization, context);
-                console.log("GPT OUTPUT " + streamedHint);
+                const finalHint = renderGPTText(streamedHint, problemID, variabilization, context);
+                console.log("GPT OUTPUT: ", finalHint);
+                onChunkReceived(finalHint); // Call the final processing callback
+                onSuccessfulCompletion(); //Set `isHintGenerating` to false
                 break;
             } else {
                 let chunk = decoder.decode(value, { stream: true });
@@ -66,9 +69,7 @@ export async function fetchDynamicHint(
                 chunk = ensureProperTermination(chunk);
                 // Add the chunk to the streamedHint
                 streamedHint += chunk;
-                console.log(streamedHint);
             }
-            // Callback to process chunks
             onChunkReceived(streamedHint);
         }
     } catch (error) {
