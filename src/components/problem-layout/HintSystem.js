@@ -291,25 +291,25 @@ class HintSystem extends React.Component {
                             </Typography>
                              {/* Check if the hint is dynamic (AI-generated) */}
                              {hint.type === "gptHint" 
-            && !this.props.isGeneratingHint
-            && (
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "flex-end", // Align to the right
-                }}
-            >
-                <ReloadIcon
-                    style={{
-                        cursor: "pointer",      // Add pointer cursor for interactivity
-                        fontSize: "24px",       // Adjust size if necessary
-                    }}
-                    onClick={() => this.generateHintFromGPT(true)}
-                    title="Regenerate Hint"
-                />
-            </div>
-        )}
-        </div>
+                                && !this.props.isGeneratingHint
+                                && (
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "flex-end",
+                                    }}
+                                >
+                                    <ReloadIcon
+                                        style={{
+                                            cursor: "pointer",
+                                            fontSize: "24px",
+                                        }}
+                                        onClick={() => this.generateHintFromGPT(true)}
+                                        title="Regenerate Hint"
+                                    />
+                                </div>
+                            )}
+                            </div>
                         </AccordionDetails>
                     </Accordion>
                 ))}
