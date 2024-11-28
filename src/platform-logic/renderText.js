@@ -89,13 +89,12 @@ function renderText(text, problemID, variabilization, context) {
 }
 
 /**
+ * Renders the text generated from ChatGPT.
  * @param {string|*} text
  * @param problemID
  * @param {*} variabilization
  * @param context
  */
-// TODO: Fix this to handle something like: "The 3 chairs  cost $20, $30, and $50."
-// This should not take out the dollar signs here.
 function renderGPTText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
