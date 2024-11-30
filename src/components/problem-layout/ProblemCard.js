@@ -301,7 +301,9 @@ class ProblemCard extends React.Component {
                 }
             );
         }
-        this.generateHintFromGPT();
+        if (this.giveDynamicHint) {
+            this.generateHintFromGPT();
+        }
     };
 
     unlockHint = (hintNum, hintType) => {

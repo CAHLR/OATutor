@@ -29,6 +29,7 @@ const GPTExperimentOutput = "GPTExperimentOutput";
 const feedbackOutput = "feedbacks";
 const siteLogOutput = "siteLogs";
 const focusStatus = "focusStatus";
+const whisper = "whisperExperiment";
 
 class Firebase {
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
@@ -247,7 +248,7 @@ class Firebase {
             bioInfo,
         };
         // return this.writeData(GPTExperimentOutput, data);
-        return this.writeData(problemSubmissionsOutput, data);
+        return this.writeData(whisper, data);
     }
 
     hintLog(
@@ -289,7 +290,7 @@ class Firebase {
             bioInfo,
         };
         // return this.writeData(GPTExperimentOutput, data);
-        return this.writeData(problemSubmissionsOutput, data);
+        return this.writeData(whisper, data);
     }
 
     mouseLog(payload) {

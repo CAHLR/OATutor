@@ -100,29 +100,48 @@ class HintSystem extends React.Component {
             this.setState({ currentExpanded: -1 });
             console.log("closed");
             this.audioRef.pause();
-            // this.props.hints[i].agentMode = true;
+            this.context.firebase.log(
+                null,
+                this.props.problemID,
+                this.step,
+                null,
+                null,
+                this.state.subHintsFinished,
+                "Stopped playing by closing the hint",
+                chooseVariables(this.props.stepVars, this.props.seed),
+                this.props.lesson,
+                this.props.courseName
+            );
         } else {
             if (this.state.playing) {
                 this.audioRef.pause();
                 this.audioRef = null;
             }
 
-            this.setState({ agentMode: this.props.agentMode }, () => {
-                if (this.state.agentMode) {
-                    // console.log("print hint:", this.props.hints[i]);
-                    this.playAgent(this.props.hints[i]);
-                }
-            });
-            // // pre-cache the audio before the white board appears
-            // if (!this.props.hints[i].audios) {
-            //     console.log("Pre cache ongoing for", i);
-            //     this.fetchAudioData(this.props.hints[i]);
-            // }
             this.setState({ currentExpanded: i });
             if (expanded && i < this.props.hintStatus.length) {
                 this.props.unlockHint(i, this.props.hints[i].type);
             }
             this.setState({ latestStep: i });
+
+            this.setState({ agentMode: this.props.agentMode }, () => {
+                if (this.state.agentMode) {
+                    // console.log("print hint:", this.props.hints[i]);
+                    this.playAgent(this.props.hints[i]);
+                    this.context.firebase.log(
+                        null,
+                        this.props.problemID,
+                        this.step,
+                        null,
+                        null,
+                        this.state.subHintsFinished,
+                        "Start playing",
+                        chooseVariables(this.props.stepVars, this.props.seed),
+                        this.props.lesson,
+                        this.props.courseName
+                    );
+                }
+            });
         }
     };
 
