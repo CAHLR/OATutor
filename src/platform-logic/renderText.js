@@ -171,14 +171,6 @@ function renderGPTText(text, problemID, variabilization, context) {
         }
         return lineParts;
     });
-     // Convert the East Asian dollar sign back to the standard dollar sign
-     const finalOutput = lines.map((linePart) => {
-        if (typeof linePart === "string") {
-            return linePart.replace(/\uFF04/g, "$");
-        }
-        return linePart;
-    });
-
     return finalOutput;
 }
 
