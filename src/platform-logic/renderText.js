@@ -171,7 +171,7 @@ function renderGPTText(text, problemID, variabilization, context) {
         }
         return lineParts;
     });
-    return finalOutput;
+    return lines;
 }
 
 const META_REGEX = /%\{([^{}%"]+)}/g;
