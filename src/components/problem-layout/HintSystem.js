@@ -58,14 +58,10 @@ class HintSystem extends React.Component {
     }
 
     unlockHint = (event, expanded, i) => {
-        //console.log("UNLOCK HINT", i);
-        //console.log(this.state.currentExpanded);
         if (this.state.currentExpanded === i ) {
             this.setState({ currentExpanded: -1 });
         } else {
             this.setState({ currentExpanded: i });
-            //console.log("EXPANDED", expanded);
-            //console.log("HINTSTATUS LENGTH", this.props.hintStatus.length);
             if (expanded && i < this.props.hintStatus.length) {
                 this.props.unlockHint(i, this.props.hints[i].type);
             }
@@ -78,12 +74,9 @@ class HintSystem extends React.Component {
             return false;
         }
         var dependencies = this.props.hints[hintNum].dependencies;
-        //console.log("DEPENDENCIES", dependencies);
-        //console.log(this.props.hintStatus);
         var isSatisfied = dependencies.every(
             (dependency) => this.props.hintStatus[dependency] === 1
         );
-        //console.log("IS SATSIFIED", hintNum, isSatisfied);
         return !isSatisfied;
     };
 

@@ -99,7 +99,6 @@ function renderGPTText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
     }
-    console.log("BEFORE PROCESSED", text);
     text = preprocessChatGPTResponse(text);
 
     text = text.replaceAll("\\neq", "≠");
@@ -116,7 +115,6 @@ function renderGPTText(text, problemID, variabilization, context) {
     }
 
     let lines = result.split("\\n");
-    console.log("LINES", lines);
     lines = lines.map((line, idx) => {
         /**
          * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
@@ -209,16 +207,10 @@ function preprocessChatGPTResponse(input) {
     // Step 2: Replace monetary values ($12,000) with (\uFF04)12,000
     const moneyRegex = /\$(\d{1,3}(,\d{3})*(\.\d{2})?|(\d+))/g;
     input = input.replace(moneyRegex, (_, moneyValue) => `\uFF04${moneyValue}`);
-    //console.log("TRANSFORMATION 1", input);
-
     // Step 3: Convert any remaining single dollar signs (not part of monetary values) to double dollars
     input = input.replace(/(?<!\$)\$(?!\$)/g, "$$$$");
-    //console.log("TRANSFORMATION 2", input);
-
     // Step 4: Replace all instances of \uFF04 back to $
-    //console.log((input.match(/\uFF04/g) || []).length);
     input = input.replace(/\uFF04/g, "$");
-    //console.log("TRANSFORMATION 3", input);
     return input;
 }
 
