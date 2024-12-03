@@ -17,8 +17,8 @@ function renderText(text, problemID, variabilization, context) {
     if (typeof text !== "string") {
         return text;
     }
-    text = text.replaceAll("\\neq", "≠")
-    text = text.replaceAll("**", "^")
+    text = text.replaceAll("\\neq", "≠");
+    text = text.replaceAll("**", "^");
     let result = text;
     result = parseForMetaVariables(result, context);
 
@@ -88,6 +88,92 @@ function renderText(text, problemID, variabilization, context) {
     });
 }
 
+/**
+ * Renders the text generated from ChatGPT.
+ * @param {string|*} text
+ * @param problemID
+ * @param {*} variabilization
+ * @param context
+ */
+function renderGPTText(text, problemID, variabilization, context) {
+    if (typeof text !== "string") {
+        return text;
+    }
+    text = preprocessChatGPTResponse(text);
+
+    text = text.replaceAll("\\neq", "≠");
+    text = text.replaceAll("**", "^");
+    let result = text;
+    result = parseForMetaVariables(result, context);
+
+    for (const d in dynamicText) {
+        const replace = dynamicText[d];
+        result = result.split(d).join(replace); // expands all "%dynamic%" text to their specific counterparts
+    }
+    if (variabilization) {
+        result = variabilize(result, variabilization);
+    }
+
+    let lines = result.split("\\n");
+    lines = lines.map((line, idx) => {
+        /**
+         * If line has LaTeX, split by the "&&" delimiter to separate plain text from LaTeX
+         * @type {(string | JSX.Element)[]}
+         */
+        let lineParts = line.split("$$");
+        lineParts = lineParts.map((part, jdx) => {
+            const isLaTeX = jdx % 2 !== 0; // implies it is in between two "$$" delimiters
+            if (isLaTeX) {
+                const regex = /^_{3,}$/;
+                if (regex.test(part)) {
+                    return parseForFillInQuestions(part);
+                }
+                return (
+                    <ErrorBoundary
+                        componentName={"InlineMath"}
+                        replacement={part}
+                        inline
+                        key={Math.random() * 2 ** 16}
+                    >
+                        <InlineMath
+                            math={part}
+                            renderError={(error) => {
+                                throw error;
+                            }}
+                        />
+                    </ErrorBoundary>
+                );
+            }
+
+            const lineSubParts = part.split("##");
+            return lineSubParts.map((subPart, kdx) => {
+                const isMedia = kdx % 2 !== 0;
+                if (isMedia) {
+                    return (
+                        <center key={Math.random() * 2 ** 16}>
+                            <RenderMedia
+                                url={subPart}
+                                problemID={problemID}
+                                contentSource={CONTENT_SOURCE}
+                            />
+                        </center>
+                    );
+                }
+                return parseForFillInQuestions(subPart);
+            });
+        });
+
+        // add a spacer if it isn't the last line
+        if (idx !== lines.length - 1) {
+            lineParts.push(
+                <Spacer height={2} width={2} key={Math.random() * 2 ** 16} />
+            );
+        }
+        return lineParts;
+    });
+    return lines;
+}
+
 const META_REGEX = /%\{([^{}%"]+)}/g;
 const mapper = {
     oats_user_id: (context) => context.userID,
@@ -105,6 +191,19 @@ function parseForMetaVariables(str, context) {
         }
         return ogMatch;
     });
+}
+
+function preprocessChatGPTResponse(input) {
+    // Step 1: Replace ChatGPT '\n' new lines with '\\n'
+    input = input.replace(/\n/g, "\\n");
+    // Step 2: Replace monetary values ($12,000) with (\uFF04)12,000
+    const moneyRegex = /\$(\d{1,3}(,\d{3})*(\.\d{2})?|(\d+))/g;
+    input = input.replace(moneyRegex, (_, moneyValue) => `\uFF04${moneyValue}`);
+    // Step 3: Convert any remaining single dollar signs (not part of monetary values) to double dollars
+    input = input.replace(/(?<!\$)\$(?!\$)/g, "$$$$");
+    // Step 4: Replace all instances of \uFF04 back to $
+    input = input.replace(/\uFF04/g, "$");
+    return input;
 }
 
 /**
@@ -151,4 +250,4 @@ function parseForFillInQuestions(str) {
     return result;
 }
 
-export { renderText, chooseVariables };
+export { renderText, renderGPTText, chooseVariables };

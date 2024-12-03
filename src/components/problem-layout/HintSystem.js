@@ -16,6 +16,7 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
+import ReloadIcon from './ReloadIcon';
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -38,7 +39,7 @@ class HintSystem extends React.Component {
         this.unlockFirstHint = props.unlockFirstHint;
         this.isIncorrect = props.isIncorrect;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect
-
+        this.generateHintFromGPT = props.generateHintFromGPT;
         this.state = {
             latestStep: 0,
             currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
@@ -57,7 +58,7 @@ class HintSystem extends React.Component {
     }
 
     unlockHint = (event, expanded, i) => {
-        if (this.state.currentExpanded === i) {
+        if (this.state.currentExpanded === i ) {
             this.setState({ currentExpanded: -1 });
         } else {
             this.setState({ currentExpanded: i });
@@ -78,6 +79,8 @@ class HintSystem extends React.Component {
         );
         return !isSatisfied;
     };
+
+    
 
     toggleSubHints = (event, i) => {
         this.setState(
@@ -195,7 +198,8 @@ class HintSystem extends React.Component {
                                 )}
                             </Typography>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails >
+                        <div style={{ width: "100%" }}>
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
@@ -278,6 +282,27 @@ class HintSystem extends React.Component {
                                     ""
                                 )}
                             </Typography>
+                             {/* Check if the hint is dynamic (AI-generated) */}
+                             {hint.type === "gptHint" 
+                                && !this.props.isGeneratingHint
+                                && (
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "flex-end",
+                                    }}
+                                >
+                                    <ReloadIcon
+                                        style={{
+                                            cursor: "pointer",
+                                            fontSize: "24px",
+                                        }}
+                                        onClick={() => this.generateHintFromGPT(true)}
+                                        title="Regenerate Hint"
+                                    />
+                                </div>
+                            )}
+                            </div>
                         </AccordionDetails>
                     </Accordion>
                 ))}
