@@ -28,28 +28,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "a13eb90data14a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "It associates every record to every record in both tables"
-        ],
-        "dependencies": [
-            "a13eb90data14a-h3"
-        ],
-        "title": "Choosing the Correct Outcome of a Cross Join",
-        "text": "Consider what happens when every row in a table A is paired with every row in table B. Which answer choice best describes this situation?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "It shows only records or matching records on both tables",
-            ">It shows no records",
-            ">It associates every record to every record in both tables",
-            ">It shows every record from the left table"
-        ]
     }
 ]

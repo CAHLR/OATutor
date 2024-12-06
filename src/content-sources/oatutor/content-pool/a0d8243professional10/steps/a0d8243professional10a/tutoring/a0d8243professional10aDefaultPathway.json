@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a0d8243professional10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Context",
+        "text": "Nan is trying to predict the number of school-age kids in her district. Consider resources that provide data or trends related to population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional10a-h1"
+        ],
+        "title": "Keyword: Statistical Database",
+        "text": "A statistical database is a collection of data that allows for analysis and patterns to be drawn. It typically contains numerical data used for statistical analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional10a-h1"
+        ],
+        "title": "Keyword: Research Resource",
+        "text": "Research resources are diverse types of tools or collections used to gather information. They can include databases, archives, or libraries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistical database"
+        ],
+        "dependencies": [
+            "a0d8243professional10a-h1"
+        ],
+        "title": "Identifying the Right Resource",
+        "text": "Think about which resource provides large sets of data that can be analyzed to predict future trends.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Objects and artifacts",
+            "Statistical database",
+            "Maps",
+            "Materials collections"
+        ]
+    }
+]
