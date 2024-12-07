@@ -22,13 +22,8 @@
         "license": ""
     },
     {
-        "id": "af81dddsql6a-s1",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "WHERE $$department='Sales'$$"
-        ],
+        "id": "af81dddsql6a-h3",
+        "type": "hint",
         "dependencies": [
             "af81dddsql6a-h2"
         ],
@@ -39,25 +34,8 @@
         "license": ""
     },
     {
-        "id": "af81dddsql6a-h3",
+        "id": "af81dddsql6a-h4",
         "type": "hint",
-        "dependencies": [
-            "af81dddsql6a-s1"
-        ],
-        "title": "Order of SQL Statements",
-        "text": "Remember the general order of clauses in an SQL statement:\\n$$1$$. SELECT: Columns\\n$$2$$. FROM: Table\\n$$3$$. WHERE: Condition\\nThis order ensures efficient retrieval and filtering of data.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "af81dddsql6a-s2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "SELECT * FROM employees WHERE $$department='Sales'$$"
-        ],
         "dependencies": [
             "af81dddsql6a-h3"
         ],

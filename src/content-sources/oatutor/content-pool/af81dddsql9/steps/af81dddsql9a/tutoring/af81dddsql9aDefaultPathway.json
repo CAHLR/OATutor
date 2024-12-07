@@ -41,28 +41,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "af81dddsql9a-s2",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "The 'Customers' table has customer details and the 'Orders' table has spending records. Joining them provides a comprehensive view."
-        ],
-        "dependencies": [
-            "af81dddsql9a-h2"
-        ],
-        "title": "Example Scenario",
-        "text": "Consider a database with a 'Customers' table and an 'Orders' table. If you're tasked with finding out the total amount each customer has spent, why would you join these two tables?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Both tables have irrelevant information that needs merging.",
-            "The 'Customers' table lacks spending records, and the 'Orders' table lacks customer details.",
-            ">Joining them provides a comprehensive view.",
-            "Joining is needed to create a backup of the database."
-        ]
     }
 ]
