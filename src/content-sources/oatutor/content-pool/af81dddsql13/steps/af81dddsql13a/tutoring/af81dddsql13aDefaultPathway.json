@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af81dddsql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the Range Formula",
+        "text": "The range of a set of numbers is the difference between the largest and smallest values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql13a-h1"
+        ],
+        "title": "Identify the Maximum Data Value",
+        "text": "The MAX() function would return the maximum value of a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql13a-h1"
+        ],
+        "title": "Identify the Minimum Data Value",
+        "text": "What MIN() function would return the minimum value of a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql13a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Aggregate Functions",
+        "text": "SQL includes several aggregate functions such as MIN(), MAX(), SUM(), AVG(), and COUNT(). These help in summarizing large volumes of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
