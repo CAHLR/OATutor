@@ -141,9 +141,7 @@ class ProblemInput extends React.Component {
         }
 
         return (
-            <Grid 
-                ref={this.gridRef} 
-                container spacing={0} justifyContent="center" alignItems="center"
+            <Grid container spacing={0} justifyContent="center" alignItems="center"
                 className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
@@ -254,7 +252,6 @@ class ProblemInput extends React.Component {
                 </Grid>
                 <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
             </Grid>
-
         )
     }
 }
