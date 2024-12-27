@@ -1,3 +1,20 @@
+
+body {
+    --keyboard-accent-color: #8C94FF;
+    --keycap-background-hover: #8C94FF;
+    --keycap-secondary-background: #8C94FF;
+    --keycap-height: 12px;
+    --keycap-font-size: 24px;
+    --keycap-shift-font-size: 14px;
+    --keycap-small-font-size: 14px;
+    --keycap-extra-small-font-size: 14px;
+    --keyboard-toolbar-font-size: 24px;
+}
+
+math-field::part(menu-toggle) {
+    display: none;
+  }
+
 .react-resizable-handle {
     display: none;
 }
