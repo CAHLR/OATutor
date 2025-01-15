@@ -142,6 +142,11 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
             } else {
                 attempt = validateAndCorrectFormat(attempt);
                 parsed = parse(attempt).expr;
+
+                if (!parsed) {
+                    parsed = attempt
+                }
+                
                 if (IS_STAGING_OR_DEVELOPMENT) {
                     console.debug("checkAnswer.js: Using KAS to compare answer with solution", "attempt", attempt, "actual", actual, "parsed", parsed)
 
