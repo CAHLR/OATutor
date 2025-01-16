@@ -1,36 +1,30 @@
-import React, { useEffect } from "react";
-import "./Popup.css";
+import React from "react";
+import Modal from "@material-ui/core/Modal";
+import Box from "@material-ui/core/Box";
+import IconButton from '@material-ui/core/IconButton';
+import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+import { withStyles } from "@material-ui/core/styles";
+import { popupStyles } from "./popup-styles.js";
 
-const Popup = ({ isOpen, onClose, children }) => {
-  useEffect(() => {
-    if (isOpen) {
-      console.log("Popup open")    
-      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    }
-    
-    return () => {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    };
-  }, [isOpen]);
-  
-  if (!isOpen) return null;
-
+const Popup = ({ classes, isOpen, onClose, children }) => {
   return (
-    <div className="popup">
-      <div className="popup-content">
-        <button className="close-popup" onClick={onClose}>
-            <img src={`${process.env.PUBLIC_URL}/static/images/icons/close_icon.png`} 
-            alt="closeIcon" 
-            className="close-icon" />
-        </button>
+    <Modal
+      open={isOpen}
+      onClose={onClose}
+    > 
+      <Box className={classes.popupContent}>
+        <IconButton
+          onClick={onClose}
+          className={classes.button}
+        >
+            <CloseRoundedIcon 
+              className={classes.iconButton} 
+            />
+        </IconButton>
         {children}                          
-      </div>
-    </div>
+      </Box>
+    </Modal>
   );
 };
 
-export default Popup;
+export default withStyles(popupStyles)(Popup);
