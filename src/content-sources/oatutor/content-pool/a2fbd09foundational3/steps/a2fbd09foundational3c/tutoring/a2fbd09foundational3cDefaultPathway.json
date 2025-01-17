@@ -3,10 +3,10 @@
         "id": "a2fbd09foundational3c-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Analyze the Data",
-        "text": "Start by observing how many rows are between $$67.95-71.95$$ inches.",
+        "title": "Understanding Cumulative Relative Frequency",
+        "text": "Cumulative relative frequency is the sum of the relative frequencies for all classes up to and including the current class.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -15,20 +15,27 @@
         "dependencies": [
             "a2fbd09foundational3c-h1"
         ],
-        "title": "Relative Frequency",
-        "text": "Relative frequencies are the number of players in each number bin divided by the total amount of players.",
+        "title": "Identify the Relevant Range",
+        "text": "Look for the cumulative relative frequency corresponding to heights less than $$65.95$$ inches.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a2fbd09foundational3c-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Frequencies",
-        "text": "Add the relative frequencies of the rows you observed in the previous hint.",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "a2fbd09foundational3c-h2"
+        ],
+        "title": "Read the Table",
+        "text": "What is the cumulative relative frequency for heights less than $$65.95$$ inches?",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     }
 ]

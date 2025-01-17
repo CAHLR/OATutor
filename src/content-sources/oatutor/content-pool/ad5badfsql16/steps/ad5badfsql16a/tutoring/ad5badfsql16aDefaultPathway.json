@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad5badfsql16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL SELECT Statement",
+        "text": "The SELECT statement in SQL is used to select data from a database. The data returned is stored in a result table, sometimes called the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql16a-h1"
+        ],
+        "title": "Order of Columns in SQL",
+        "text": "In SQL, the order of columns in the SELECT statement determines the order of columns in the result set. The first column listed in the SELECT statement will appear first in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$."
+        ],
+        "dependencies": [
+            "ad5badfsql16a-h2"
+        ],
+        "title": "Comparing Query $$1$$ and Query $$2$$",
+        "text": "Consider the order of columns in the SELECT statement for both queries. How does this affect the result set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The rows for Street show above ZIP in Query $$1$$, while the rows for ZIP show above Street in Query $$2$$.",
+            "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$.",
+            "The query results for Query $$1$$ will show an error message, while Query $$2$$ will show without any error message.",
+            "The query results appear exactly the same for Query $$1$$ and Query $$2$$."
+        ]
+    },
+    {
+        "id": "ad5badfsql16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL SELECT Statement",
+        "text": "The SELECT statement in SQL is used to select data from a database. The data returned is stored in a result table, sometimes called the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql16a-h1"
+        ],
+        "title": "Order of Columns in SQL",
+        "text": "In SQL, the order of columns in the SELECT statement determines the order of columns in the result set. The first column listed in the SELECT statement will appear first in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$."
+        ],
+        "dependencies": [
+            "ad5badfsql16a-h2"
+        ],
+        "title": "Comparing Query $$1$$ and Query $$2$$",
+        "text": "Consider the order of columns in the SELECT statement for both queries. How does this affect the result set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The rows for Street show above ZIP in Query $$1$$, while the rows for ZIP show above Street in Query $$2$$.",
+            "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$.",
+            "The query results for Query $$1$$ will show an error message, while Query $$2$$ will show without any error message.",
+            "The query results appear exactly the same for Query $$1$$ and Query $$2$$."
+        ]
+    }
+]

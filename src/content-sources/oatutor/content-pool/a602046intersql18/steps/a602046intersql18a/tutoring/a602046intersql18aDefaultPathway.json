@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a602046intersql18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Aggregation",
+        "text": "In SQL, aggregation functions like MAX, MIN, SUM, and AVG are used to perform calculations on a set of values and return a single value. These functions are often used with the GROUP BY clause to group rows that have the same values in specified columns into summary rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql18a-h1"
+        ],
+        "title": "Using the MAX Function",
+        "text": "The MAX function in SQL is used to find the maximum value in a set of values. When used with GROUP BY, it can return the maximum value for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql18a-h2"
+        ],
+        "title": "Understanding GROUP BY",
+        "text": "The GROUP BY statement in SQL is used to arrange identical data into groups. This is often used with aggregate functions to perform operations on each group of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT MAX(Amount) FROM Sales GROUP BY Office;"
+        ],
+        "dependencies": [
+            "a602046intersql18a-h3"
+        ],
+        "title": "Constructing the Query",
+        "text": "To find the highest sale amount for every office, you need to use the MAX function to get the maximum sale amount and GROUP BY to group the results by office.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT Office FROM Sales GROUP BY MAX(Amount);",
+            "SELECT MAX(Amount, Office) FROM Sales;",
+            "SELECT MAX(Amount) FROM Sales GROUP BY Office;",
+            "SELECT MAX(Amount), Office FROM Sales;"
+        ]
+    },
+    {
+        "id": "a602046intersql18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Aggregation",
+        "text": "In SQL, aggregation functions like MAX, MIN, SUM, and AVG are used to perform calculations on a set of values and return a single value. These functions are often used with the GROUP BY clause to group rows that have the same values in specified columns into summary rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql18a-h1"
+        ],
+        "title": "Using the MAX Function",
+        "text": "The MAX function in SQL is used to find the maximum value in a set of values. When used with GROUP BY, it can return the maximum value for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql18a-h2"
+        ],
+        "title": "Understanding GROUP BY",
+        "text": "The GROUP BY statement in SQL is used to arrange identical data into groups. This is often used with aggregate functions to perform operations on each group of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT MAX(Amount) FROM Sales GROUP BY Office;"
+        ],
+        "dependencies": [
+            "a602046intersql18a-h3"
+        ],
+        "title": "Constructing the Query",
+        "text": "To find the highest sale amount for every office, you need to use the MAX function to get the maximum sale amount and GROUP BY to group the results by office.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT Office FROM Sales GROUP BY MAX(Amount);",
+            "SELECT MAX(Amount, Office) FROM Sales;",
+            "SELECT MAX(Amount) FROM Sales GROUP BY Office;",
+            "SELECT MAX(Amount), Office FROM Sales;"
+        ]
+    }
+]

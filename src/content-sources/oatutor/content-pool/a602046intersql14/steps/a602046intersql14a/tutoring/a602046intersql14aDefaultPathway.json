@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a602046intersql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Joins",
+        "text": "A SQL JOIN clause is used to combine rows from two or more tables, based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql14a-h1"
+        ],
+        "title": "Types of Joins",
+        "text": "There are several types of joins in SQL: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Each type determines how the rows from the tables are combined.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql14a-h2"
+        ],
+        "title": "LEFT JOIN Definition",
+        "text": "A LEFT JOIN returns all rows from the left table (Customer), and the matched rows from the right table (CustomerDetail). If there is no match, the result is NULL on the side of the right table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;"
+        ],
+        "dependencies": [
+            "a602046intersql14a-h3"
+        ],
+        "title": "Identifying the Correct SQL Statement",
+        "text": "Which SQL statement will return a row for every row in the Customer table, and also associated information from the CustomerDetail table if there is any?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM CustomerDetail RIGHT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+            "SELECT * FROM Customer WHERE CustomerDetail.CustomerId $$=$$ Customer.Id;",
+            "SELECT * FROM Customer;"
+        ]
+    },
+    {
+        "id": "a602046intersql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Joins",
+        "text": "A SQL JOIN clause is used to combine rows from two or more tables, based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql14a-h1"
+        ],
+        "title": "Types of Joins",
+        "text": "There are several types of joins in SQL: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Each type determines how the rows from the tables are combined.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql14a-h2"
+        ],
+        "title": "LEFT JOIN Definition",
+        "text": "A LEFT JOIN returns all rows from the left table (Customer), and the matched rows from the right table (CustomerDetail). If there is no match, the result is NULL on the side of the right table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;"
+        ],
+        "dependencies": [
+            "a602046intersql14a-h3"
+        ],
+        "title": "Identifying the Correct SQL Statement",
+        "text": "Which SQL statement will return a row for every row in the Customer table, and also associated information from the CustomerDetail table if there is any?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM CustomerDetail RIGHT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+            "SELECT * FROM Customer WHERE CustomerDetail.CustomerId $$=$$ Customer.Id;",
+            "SELECT * FROM Customer;"
+        ]
+    }
+]

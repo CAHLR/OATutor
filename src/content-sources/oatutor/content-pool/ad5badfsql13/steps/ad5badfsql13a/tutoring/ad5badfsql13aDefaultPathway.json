@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ad5badfsql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Range",
+        "text": "The range of a set of data values is the difference between the maximum and minimum values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql13a-h1"
+        ],
+        "title": "Using SQL Functions",
+        "text": "In SQL, you can use the MAX() function to find the maximum value and the MIN() function to find the minimum value in a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$MAX(Total)-MIN(Total)$$"
+        ],
+        "dependencies": [
+            "ad5badfsql13a-h2"
+        ],
+        "title": "Calculating Range in SQL",
+        "text": "To calculate the range of data values in the field Total, you need to subtract the minimum value from the maximum value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Subtract MIN(Total) from MAX(Total).",
+            "Divide SUM(Total) by AVG(Total).",
+            "Add COUNT(Total) to MIN(Total)."
+        ]
+    },
+    {
+        "id": "ad5badfsql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Range",
+        "text": "The range of a set of data values is the difference between the maximum and minimum values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql13a-h1"
+        ],
+        "title": "Using SQL Functions",
+        "text": "In SQL, you can use the MAX() function to find the maximum value and the MIN() function to find the minimum value in a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$MAX(Total)-MIN(Total)$$"
+        ],
+        "dependencies": [
+            "ad5badfsql13a-h2"
+        ],
+        "title": "Calculating Range in SQL",
+        "text": "To calculate the range of data values in the field Total, you need to subtract the minimum value from the maximum value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Subtract MIN(Total) from MAX(Total).",
+            "Divide SUM(Total) by AVG(Total).",
+            "Add COUNT(Total) to MIN(Total)."
+        ]
+    }
+]

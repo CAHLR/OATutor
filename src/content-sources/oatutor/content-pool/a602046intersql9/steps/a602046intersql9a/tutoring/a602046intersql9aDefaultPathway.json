@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a602046intersql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the WHERE Clause",
+        "text": "The WHERE clause in SQL is used to filter records. It specifies a condition that each row must meet to be included in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logical Operators in SQL",
+        "text": "In SQL, logical operators such as AND, OR, and NOT are used to combine multiple conditions in a WHERE clause. The AND operator requires both conditions to be true, while the OR operator requires at least one condition to be true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql9a-h1"
+        ],
+        "title": "Evaluating the Condition",
+        "text": "The condition WHERE $$Color \\neq 'B'$$ OR $$(Size='L'$$ AND Price>20) will include rows where the color is not 'B' or where the size is 'L' and the price is greater than $$20$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Color is 'B', Size is 'XL' and Price is $$10$$."
+        ],
+        "dependencies": [
+            "a602046intersql9a-h3"
+        ],
+        "title": "Identifying the Excluded Row",
+        "text": "Which data row will be left out with this condition in your statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Color is 'B', Size is 'L' and Price is $$30$$.",
+            "Color is 'W', Size is 'S' and Price is $$20$$.",
+            "Color is 'G', Size is 'L' and Price is $$25$$.",
+            "Color is 'B', Size is 'XL' and Price is $$10$$."
+        ]
+    },
+    {
+        "id": "a602046intersql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the WHERE Clause",
+        "text": "The WHERE clause in SQL is used to filter records. It specifies a condition that each row must meet to be included in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logical Operators in SQL",
+        "text": "In SQL, logical operators such as AND, OR, and NOT are used to combine multiple conditions in a WHERE clause. The AND operator requires both conditions to be true, while the OR operator requires at least one condition to be true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql9a-h1"
+        ],
+        "title": "Evaluating the Condition",
+        "text": "The condition WHERE $$Color \\neq 'B'$$ OR $$(Size='L'$$ AND Price>20) will include rows where the color is not 'B' or where the size is 'L' and the price is greater than $$20$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Color is 'B', Size is 'XL' and Price is $$10$$."
+        ],
+        "dependencies": [
+            "a602046intersql9a-h3"
+        ],
+        "title": "Identifying the Excluded Row",
+        "text": "Which data row will be left out with this condition in your statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Color is 'B', Size is 'L' and Price is $$30$$.",
+            "Color is 'W', Size is 'S' and Price is $$20$$.",
+            "Color is 'G', Size is 'L' and Price is $$25$$.",
+            "Color is 'B', Size is 'XL' and Price is $$10$$."
+        ]
+    }
+]

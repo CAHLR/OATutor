@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a602046intersql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DISTINCT Clause",
+        "text": "The DISTINCT clause is used in SQL to filter out duplicate records from the results of a query. It ensures that the output contains only unique values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql13a-h1"
+        ],
+        "title": "When to Use DISTINCT",
+        "text": "Use the DISTINCT clause when you want to retrieve only unique values from a column in a database table. This is particularly useful when you want to eliminate duplicate entries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "New York, Los Angeles, Chicago"
+        ],
+        "dependencies": [
+            "a602046intersql13a-h2"
+        ],
+        "title": "Applying the DISTINCT Clause",
+        "text": "Consider a table with a column 'City' that contains the following values: New York, Los Angeles, New York, Chicago. What would be the result of using the DISTINCT clause on the 'City' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "New York, Los Angeles, Chicago",
+            "New York, Los Angeles, New York, Chicago",
+            "Los Angeles, Chicago",
+            "New York, Chicago"
+        ]
+    },
+    {
+        "id": "a602046intersql13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql13a-h1"
+        ],
+        "title": "Syntax of the DISTINCT Clause",
+        "text": "The syntax for using the DISTINCT clause in a SQL query is: SELECT DISTINCT $$column_{name}$$ FROM $$table_{name}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DISTINCT Clause",
+        "text": "The DISTINCT clause is used in SQL to filter out duplicate records from the results of a query. It ensures that the output contains only unique values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql13a-h1"
+        ],
+        "title": "When to Use DISTINCT",
+        "text": "Use the DISTINCT clause when you want to retrieve only unique values from a column in a database table. This is particularly useful when you want to eliminate duplicate entries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "New York, Los Angeles, Chicago"
+        ],
+        "dependencies": [
+            "a602046intersql13a-h2"
+        ],
+        "title": "Applying the DISTINCT Clause",
+        "text": "Consider a table with a column 'City' that contains the following values: New York, Los Angeles, New York, Chicago. What would be the result of using the DISTINCT clause on the 'City' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "New York, Los Angeles, Chicago",
+            "New York, Los Angeles, New York, Chicago",
+            "Los Angeles, Chicago",
+            "New York, Chicago"
+        ]
+    },
+    {
+        "id": "a602046intersql13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql13a-h1"
+        ],
+        "title": "Syntax of the DISTINCT Clause",
+        "text": "The syntax for using the DISTINCT clause in a SQL query is: SELECT DISTINCT $$column_{name}$$ FROM $$table_{name}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

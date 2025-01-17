@@ -1,0 +1,116 @@
+[
+    {
+        "id": "ad5badfsql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Grouping in SQL",
+        "text": "Grouping in SQL is used to aggregate data based on one or more columns. It helps in organizing data into categories for better analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql15a-h1"
+        ],
+        "title": "Why Use Multiple Grouping Columns?",
+        "text": "Using multiple columns in a GROUP BY clause allows you to create subgroups within your data, providing more detailed insights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql15a-h2"
+        ],
+        "title": "Example of Grouping by Two Columns",
+        "text": "If you have a dataset with cities and counties, grouping by both can help differentiate between cities with the same name in different counties.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To distinguish Hart in Bell county from Hart in Joshua county"
+        ],
+        "dependencies": [
+            "ad5badfsql15a-h3"
+        ],
+        "title": "Applying the Concept to Jamal's Database",
+        "text": "Consider Jamal's database with internet traffic data. Why would grouping by both city and county be beneficial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To order the results first by county and then by city",
+            "To eliminate the state field from the results",
+            "To distinguish Hart in Bell county from Hart in Joshua county",
+            "To see countywide aggregates"
+        ]
+    },
+    {
+        "id": "ad5badfsql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Grouping in SQL",
+        "text": "Grouping in SQL is used to aggregate data based on one or more columns. It helps in organizing data into categories for better analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql15a-h1"
+        ],
+        "title": "Why Use Multiple Grouping Columns?",
+        "text": "Using multiple columns in a GROUP BY clause allows you to create subgroups within your data, providing more detailed insights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql15a-h2"
+        ],
+        "title": "Example of Grouping by Two Columns",
+        "text": "If you have a dataset with cities and counties, grouping by both can help differentiate between cities with the same name in different counties.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To distinguish Hart in Bell county from Hart in Joshua county"
+        ],
+        "dependencies": [
+            "ad5badfsql15a-h3"
+        ],
+        "title": "Applying the Concept to Jamal's Database",
+        "text": "Consider Jamal's database with internet traffic data. Why would grouping by both city and county be beneficial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To order the results first by county and then by city",
+            "To eliminate the state field from the results",
+            "To distinguish Hart in Bell county from Hart in Joshua county",
+            "To see countywide aggregates"
+        ]
+    }
+]

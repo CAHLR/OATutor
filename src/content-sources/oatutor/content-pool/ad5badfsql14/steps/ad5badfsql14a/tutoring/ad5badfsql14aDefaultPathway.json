@@ -1,0 +1,116 @@
+[
+    {
+        "id": "ad5badfsql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Clauses Order",
+        "text": "In SQL, the order of clauses is important. The WHERE clause is used to filter records before any grouping is done. The GROUP BY clause is used to group records that have the same values in specified columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql14a-h1"
+        ],
+        "title": "Purpose of the WHERE Clause",
+        "text": "The WHERE clause is used to filter records based on specified conditions. It is applied before any grouping or aggregation is done.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql14a-h2"
+        ],
+        "title": "Purpose of the GROUP BY Clause",
+        "text": "The GROUP BY clause is used to arrange identical data into groups. It is often used with aggregate functions like AVG, COUNT, MAX, MIN, and SUM.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The WHERE clause should come before the GROUP BY clause."
+        ],
+        "dependencies": [
+            "ad5badfsql14a-h3"
+        ],
+        "title": "Correcting the Query Syntax",
+        "text": "To correct the query, place the WHERE clause before the GROUP BY clause.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The WHERE clause should come before the GROUP BY clause.",
+            "The WHERE clause should not use a wildcard.",
+            "HouSiz should be rounded to two decimal places.",
+            "The results should be grouped by housing size."
+        ]
+    },
+    {
+        "id": "ad5badfsql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Clauses Order",
+        "text": "In SQL, the order of clauses is important. The WHERE clause is used to filter records before any grouping is done. The GROUP BY clause is used to group records that have the same values in specified columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql14a-h1"
+        ],
+        "title": "Purpose of the WHERE Clause",
+        "text": "The WHERE clause is used to filter records based on specified conditions. It is applied before any grouping or aggregation is done.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql14a-h2"
+        ],
+        "title": "Purpose of the GROUP BY Clause",
+        "text": "The GROUP BY clause is used to arrange identical data into groups. It is often used with aggregate functions like AVG, COUNT, MAX, MIN, and SUM.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The WHERE clause should come before the GROUP BY clause."
+        ],
+        "dependencies": [
+            "ad5badfsql14a-h3"
+        ],
+        "title": "Correcting the Query Syntax",
+        "text": "To correct the query, place the WHERE clause before the GROUP BY clause.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The WHERE clause should come before the GROUP BY clause.",
+            "The WHERE clause should not use a wildcard.",
+            "HouSiz should be rounded to two decimal places.",
+            "The results should be grouped by housing size."
+        ]
+    }
+]

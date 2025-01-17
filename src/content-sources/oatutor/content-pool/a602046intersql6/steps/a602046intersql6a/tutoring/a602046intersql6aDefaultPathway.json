@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a602046intersql6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the LIKE Operator",
+        "text": "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql6a-h1"
+        ],
+        "title": "Using Wildcards with LIKE",
+        "text": "Wildcards are special characters used with the LIKE operator to search for a pattern. The percentage sign (%) represents zero, one, or multiple characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql6a-h2"
+        ],
+        "title": "Pattern Matching with %",
+        "text": "To find any record containing the word 'priority' anywhere in the Comment column, use the pattern '%priority%'. This pattern allows for any characters before and after 'priority'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE Comment LIKE '%priority%'"
+        ],
+        "dependencies": [
+            "a602046intersql6a-h3"
+        ],
+        "title": "Constructing the WHERE Clause",
+        "text": "Use the LIKE operator with the correct pattern to match any record containing 'priority'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE Comment LIKE '%priority%'",
+            "WHERE Comment LIKE 'priority%'",
+            "WHERE Comment LIKE 'priority'",
+            "WHERE Comment LIKE '%priority'"
+        ]
+    },
+    {
+        "id": "a602046intersql6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the LIKE Operator",
+        "text": "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql6a-h1"
+        ],
+        "title": "Using Wildcards with LIKE",
+        "text": "Wildcards are special characters used with the LIKE operator to search for a pattern. The percentage sign (%) represents zero, one, or multiple characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql6a-h2"
+        ],
+        "title": "Pattern Matching with %",
+        "text": "To find any record containing the word 'priority' anywhere in the Comment column, use the pattern '%priority%'. This pattern allows for any characters before and after 'priority'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE Comment LIKE '%priority%'"
+        ],
+        "dependencies": [
+            "a602046intersql6a-h3"
+        ],
+        "title": "Constructing the WHERE Clause",
+        "text": "Use the LIKE operator with the correct pattern to match any record containing 'priority'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE Comment LIKE '%priority%'",
+            "WHERE Comment LIKE 'priority%'",
+            "WHERE Comment LIKE 'priority'",
+            "WHERE Comment LIKE '%priority'"
+        ]
+    }
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "id": "ad5badfsql12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding String Functions",
+        "text": "String functions are used to perform operations on string data types. They can manipulate, format, or extract information from strings.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql12a-h1"
+        ],
+        "title": "Common String Functions",
+        "text": "Some common string functions include UPPER(), LOWER(), and TRIM(). These functions are used to change the case of strings or remove whitespace.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql12a-h1"
+        ],
+        "title": "Non-String Functions",
+        "text": "Functions like COUNT(), SUM(), and AVG() are not string functions. They are aggregate functions used for numerical data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "UPPER(), TRIM(), and LOWER()"
+        ],
+        "dependencies": [
+            "ad5badfsql12a-h2"
+        ],
+        "title": "Identifying Valid String Functions",
+        "text": "Which of the following are valid string functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UPPER(), TRIM(), and LOWER()",
+            "COUNT(), SUM(), and AVG()",
+            "TIME(), STRFTIME(), and TRIM()",
+            "DATE(), MIN(), and MAX()"
+        ]
+    },
+    {
+        "id": "ad5badfsql12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding String Functions",
+        "text": "String functions are used to perform operations on string data types. They can manipulate, format, or extract information from strings.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql12a-h1"
+        ],
+        "title": "Common String Functions",
+        "text": "Some common string functions include UPPER(), LOWER(), and TRIM(). These functions are used to change the case of strings or remove whitespace.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql12a-h1"
+        ],
+        "title": "Non-String Functions",
+        "text": "Functions like COUNT(), SUM(), and AVG() are not string functions. They are aggregate functions used for numerical data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "UPPER(), TRIM(), and LOWER()"
+        ],
+        "dependencies": [
+            "ad5badfsql12a-h2"
+        ],
+        "title": "Identifying Valid String Functions",
+        "text": "Which of the following are valid string functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UPPER(), TRIM(), and LOWER()",
+            "COUNT(), SUM(), and AVG()",
+            "TIME(), STRFTIME(), and TRIM()",
+            "DATE(), MIN(), and MAX()"
+        ]
+    }
+]

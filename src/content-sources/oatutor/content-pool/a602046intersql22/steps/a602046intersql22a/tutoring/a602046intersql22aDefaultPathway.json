@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a602046intersql22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Syntax",
+        "text": "In SQL, table names and column names are case-sensitive and should be enclosed in backticks (`) if they contain spaces or special characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql22a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common SQL Mistakes",
+        "text": "A common mistake in SQL is not enclosing table names with spaces in backticks (`). This can lead to syntax errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql22a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Bank Deposits;"
+        ],
+        "dependencies": [
+            "a602046intersql22a-h1"
+        ],
+        "title": "Identifying the Mistake",
+        "text": "Which SQL query demonstrates a common mistake?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM Bank Deposits;",
+            "SELECT * FROM Accounts WHERE $$Name='John$$ Smith';",
+            "DELETE FROM Accounts WHERE AccountID IS NULL;",
+            "SELECT * FROM `Bank Deposits`;"
+        ]
+    },
+    {
+        "id": "a602046intersql22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Syntax",
+        "text": "In SQL, table names and column names are case-sensitive and should be enclosed in backticks (`) if they contain spaces or special characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql22a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common SQL Mistakes",
+        "text": "A common mistake in SQL is not enclosing table names with spaces in backticks (`). This can lead to syntax errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql22a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Bank Deposits;"
+        ],
+        "dependencies": [
+            "a602046intersql22a-h1"
+        ],
+        "title": "Identifying the Mistake",
+        "text": "Which SQL query demonstrates a common mistake?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM Bank Deposits;",
+            "SELECT * FROM Accounts WHERE $$Name='John$$ Smith';",
+            "DELETE FROM Accounts WHERE AccountID IS NULL;",
+            "SELECT * FROM `Bank Deposits`;"
+        ]
+    }
+]

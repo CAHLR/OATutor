@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ad5badfsql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the ON Clause",
+        "text": "The ON clause is used in SQL to define the condition for joining tables. It specifies how the records from two tables should be combined based on a related column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql10a-h1"
+        ],
+        "title": "Purpose of the ON Clause",
+        "text": "In a JOIN operation, the ON clause determines which rows from each table are matched and combined in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies the matching condition for combining records."
+        ],
+        "dependencies": [
+            "ad5badfsql10a-h2"
+        ],
+        "title": "Identifying the Correct Function",
+        "text": "Which of the following best describes the function of the ON portion of a JOIN clause?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It creates the name for the resulting combination.",
+            "It limits the total number of output records.",
+            "It specifies the matching condition for combining records."
+        ]
+    },
+    {
+        "id": "ad5badfsql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the ON Clause",
+        "text": "The ON clause is used in SQL to define the condition for joining tables. It specifies how the records from two tables should be combined based on a related column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql10a-h1"
+        ],
+        "title": "Purpose of the ON Clause",
+        "text": "In a JOIN operation, the ON clause determines which rows from each table are matched and combined in the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies the matching condition for combining records."
+        ],
+        "dependencies": [
+            "ad5badfsql10a-h2"
+        ],
+        "title": "Identifying the Correct Function",
+        "text": "Which of the following best describes the function of the ON portion of a JOIN clause?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It creates the name for the resulting combination.",
+            "It limits the total number of output records.",
+            "It specifies the matching condition for combining records."
+        ]
+    }
+]

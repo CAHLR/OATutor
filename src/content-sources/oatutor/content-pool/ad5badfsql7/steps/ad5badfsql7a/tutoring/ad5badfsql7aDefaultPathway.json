@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad5badfsql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the ELSE Phrase",
+        "text": "The ELSE phrase in an IF-THEN statement is used to specify what should happen if none of the specified conditions are true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql7a-h1"
+        ],
+        "title": "Purpose of ELSE",
+        "text": "Think of the ELSE phrase as a fallback option. It ensures that there is a defined action even when all other conditions fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It defines what to do if none of the explicit IF conditions are met."
+        ],
+        "dependencies": [
+            "ad5badfsql7a-h2"
+        ],
+        "title": "Defining ELSE in IF-THEN",
+        "text": "What does the ELSE phrase do in an IF-THEN statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It defines what to do if none of the explicit IF conditions are met.",
+            "It introduces a list of conditions defining various categories.",
+            "It defines the category name.",
+            "It terminates the CASE clause."
+        ]
+    },
+    {
+        "id": "ad5badfsql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the ELSE Phrase",
+        "text": "The ELSE phrase in an IF-THEN statement is used to specify what should happen if none of the specified conditions are true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql7a-h1"
+        ],
+        "title": "Purpose of ELSE",
+        "text": "Think of the ELSE phrase as a fallback option. It ensures that there is a defined action even when all other conditions fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It defines what to do if none of the explicit IF conditions are met."
+        ],
+        "dependencies": [
+            "ad5badfsql7a-h2"
+        ],
+        "title": "Defining ELSE in IF-THEN",
+        "text": "What does the ELSE phrase do in an IF-THEN statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It defines what to do if none of the explicit IF conditions are met.",
+            "It introduces a list of conditions defining various categories.",
+            "It defines the category name.",
+            "It terminates the CASE clause."
+        ]
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "id": "a602046intersql19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the SQL Statement",
+        "text": "The SQL statement `SELECT $$2\\left(5+1\\right)`$$ is asking you to perform an arithmetic operation. The operation inside the parentheses is calculated first, following the order of operations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql19a-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "Remember the order of operations: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a602046intersql19a-h2"
+        ],
+        "title": "Calculate Inside the Parentheses",
+        "text": "What is the result of the operation inside the parentheses $$5+1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a602046intersql19a-h3"
+        ],
+        "title": "Multiply the Result",
+        "text": "Now multiply the result from the parentheses by $$2$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the SQL Statement",
+        "text": "The SQL statement `SELECT $$2\\left(5+1\\right)`$$ is asking you to perform an arithmetic operation. The operation inside the parentheses is calculated first, following the order of operations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql19a-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "Remember the order of operations: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a602046intersql19a-h2"
+        ],
+        "title": "Calculate Inside the Parentheses",
+        "text": "What is the result of the operation inside the parentheses $$5+1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a602046intersql19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a602046intersql19a-h3"
+        ],
+        "title": "Multiply the Result",
+        "text": "Now multiply the result from the parentheses by $$2$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

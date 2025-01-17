@@ -1,0 +1,112 @@
+[
+    {
+        "id": "ad5badfsql5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL WHERE Clause",
+        "text": "The WHERE clause in SQL is used to filter records based on specific conditions. It is used to extract only those records that fulfill a specified condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using DATE Function in SQL",
+        "text": "The DATE() function in SQL is used to extract the date part from a date or datetime expression. It is useful when you want to compare only the date part of a datetime value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining Conditions with AND",
+        "text": "In SQL, the AND operator is used to combine multiple conditions in a WHERE clause. All conditions must be true for the record to be selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "WHERE DATE(Day)<'2016-01-10' AND $$Amount>1000$$"
+        ],
+        "dependencies": [
+            "ad5badfsql5a-h1",
+            "ad5badfsql5a-h2",
+            "ad5badfsql5a-h3"
+        ],
+        "title": "Formulating the SQL Query",
+        "text": "To select records with a Day entry before January $$10$$, $$2016$$, and an Amount value more than $1000, you need to use the WHERE clause with the DATE function and the AND operator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE DATE(Day)<'2016-01-10' AND $$Amount>1000$$",
+            "WHERE $$Day='2016-01-10'$$ AND $$Amount=1000$$",
+            "WHERE Day<'10-1-2016' AND $$Amount>1000$$",
+            "WHERE DATE(Day)>'2016-01-10' AND $$Amount<1000$$"
+        ]
+    },
+    {
+        "id": "ad5badfsql5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL WHERE Clause",
+        "text": "The WHERE clause in SQL is used to filter records based on specific conditions. It is used to extract only those records that fulfill a specified condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using DATE Function in SQL",
+        "text": "The DATE() function in SQL is used to extract the date part from a date or datetime expression. It is useful when you want to compare only the date part of a datetime value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining Conditions with AND",
+        "text": "In SQL, the AND operator is used to combine multiple conditions in a WHERE clause. All conditions must be true for the record to be selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "WHERE DATE(Day)<'2016-01-10' AND $$Amount>1000$$"
+        ],
+        "dependencies": [
+            "ad5badfsql5a-h1",
+            "ad5badfsql5a-h2",
+            "ad5badfsql5a-h3"
+        ],
+        "title": "Formulating the SQL Query",
+        "text": "To select records with a Day entry before January $$10$$, $$2016$$, and an Amount value more than $1000, you need to use the WHERE clause with the DATE function and the AND operator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE DATE(Day)<'2016-01-10' AND $$Amount>1000$$",
+            "WHERE $$Day='2016-01-10'$$ AND $$Amount=1000$$",
+            "WHERE Day<'10-1-2016' AND $$Amount>1000$$",
+            "WHERE DATE(Day)>'2016-01-10' AND $$Amount<1000$$"
+        ]
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad5badfsql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Table Joins",
+        "text": "In SQL, joining tables is a way to combine rows from two or more tables based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql9a-h1"
+        ],
+        "title": "Why Join Multiple Tables?",
+        "text": "Sometimes, the data you need is spread across multiple tables. Joining them allows you to retrieve all necessary information in a single query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The necessary information is not available in fewer tables."
+        ],
+        "dependencies": [
+            "ad5badfsql9a-h2"
+        ],
+        "title": "Reason for Joining Three or More Tables",
+        "text": "Consider a scenario where you have a database with tables for customers, orders, and products. To find out which products a customer has ordered, you might need to join all three tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The necessary information is not available in fewer tables.",
+            "There are too many tables in your database.",
+            "You need to create a central repository.",
+            "You need to reduce storage requirements."
+        ]
+    },
+    {
+        "id": "ad5badfsql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Table Joins",
+        "text": "In SQL, joining tables is a way to combine rows from two or more tables based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad5badfsql9a-h1"
+        ],
+        "title": "Why Join Multiple Tables?",
+        "text": "Sometimes, the data you need is spread across multiple tables. Joining them allows you to retrieve all necessary information in a single query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad5badfsql9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The necessary information is not available in fewer tables."
+        ],
+        "dependencies": [
+            "ad5badfsql9a-h2"
+        ],
+        "title": "Reason for Joining Three or More Tables",
+        "text": "Consider a scenario where you have a database with tables for customers, orders, and products. To find out which products a customer has ordered, you might need to join all three tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The necessary information is not available in fewer tables.",
+            "There are too many tables in your database.",
+            "You need to create a central repository.",
+            "You need to reduce storage requirements."
+        ]
+    }
+]

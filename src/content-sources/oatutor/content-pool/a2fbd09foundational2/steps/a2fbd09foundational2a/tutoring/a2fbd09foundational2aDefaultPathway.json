@@ -3,46 +3,33 @@
         "id": "a2fbd09foundational2a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "S",
-        "text": "S represents the sample standard deviation. How does this relate to variation?",
+        "title": "Understanding Variance Symbol",
+        "text": "The symbol for the variance of a population is a Greek letter followed by a square.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a2fbd09foundational2a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u03c3\u00b2"
+        ],
         "dependencies": [
             "a2fbd09foundational2a-h1"
         ],
-        "title": "\u03c3",
-        "text": "\u03c3 represents the standard deviation. How does this relate to variance?",
+        "title": "Identifying the Correct Symbol",
+        "text": "Which of the following symbols represents the variance of a population?",
         "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a2fbd09foundational2a-h3",
-        "type": "hint",
-        "dependencies": [
-            "a2fbd09foundational2a-h2"
-        ],
-        "title": "$$2^2$$",
-        "text": "This is a constant number. A variance depends on what values are in the data, and is not a fixed value.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a2fbd09foundational2a-h4",
-        "type": "hint",
-        "dependencies": [
-            "a2fbd09foundational2a-h3"
-        ],
-        "title": "\u03a3",
-        "text": "\"\u03a3\" is the summation of numbers. How does this relate to variance?",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "S",
+            "\u03c3\u00b2",
+            "2\u00b2",
+            "\u03a3"
+        ]
     }
 ]
