@@ -9,7 +9,7 @@ export const popupStyles = {
         transform: 'translate(-50%, -50%)',
         maxWidth: '53%',
         maxHeight: '77%',
-        fontSize: '9.5px',
+        fontSize: '19px',
         overflowY: 'scroll',
         scrollbarWidth: 'none',
         '& ul': {
