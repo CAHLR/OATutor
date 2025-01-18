@@ -13,7 +13,9 @@ import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { Typography } from "@material-ui/core";
 import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
 import BuildTimeIndicator from "@components/BuildTimeIndicator";
-import withTranslation from "../../util/withTranslation.js"
+import withTranslation from "../../util/withTranslation.js";
+import Popup from '../Popup/Popup.js';
+import About from '../../pages/Posts/About.js';
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -35,12 +37,22 @@ class LessonSelection extends React.Component {
         this.isPrivileged = !!this.user.privileged
 
         this.coursePlans = _coursePlansNoEditor;
+        this.togglePopup = this.togglePopup.bind(this);
+
         this.state = {
             preparedRemoveProgress: false,
-            removedProgress: false
+            removedProgress: false,
+            showPopup: false
         }
     }
 
+    togglePopup = () => {
+        console.log("Toggling popup visibility");
+        this.setState((prevState) => ({
+          showPopup: !prevState.showPopup,
+        }));
+      };
+      
     removeProgress = () => {
         this.setState({ removedProgress: true });
         this.props.removeProgress();
@@ -54,6 +66,7 @@ class LessonSelection extends React.Component {
         const { translate } = this.props;
         const { classes, courseNum } = this.props;
         const selectionMode = courseNum == null ? "course" : "lesson"
+        const { showPopup } = this.state;
 
         if (selectionMode === "lesson" && courseNum >= this.coursePlans.length) {
             return <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
@@ -169,14 +182,17 @@ class LessonSelection extends React.Component {
                             {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
                         <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                            <IconButton aria-label="help" title={`How to use ${SITE_NAME}?`}
-                                href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}>
+                            <IconButton aria-label="about" title={`About ${SITE_NAME}`}
+                                onClick={this.togglePopup}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
                                     fontSize: 36,
                                     margin: -2
                                 }}/>
                             </IconButton>
                         </div>
+                        <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                            <About />
+                        </Popup>
                     </div>
                 </footer>
             </>
