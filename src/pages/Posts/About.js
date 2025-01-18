@@ -24,7 +24,7 @@ const About = () => {
         
         <h3>Learn more</h3>
         <ul>
-            <li>Visit <a href="https:/cahlr.github.io/OATWeb/" target={"_blank"} rel={"noreferrer"}>https:/cahlr.github.io/OATWeb/</a> to explore more about OATutor, our mission, and how it can benefit you.</li>
+            <li>Visit <a href="https://www.oatutor.io/" target={"_blank"} rel={"noreferrer"}>https://www.oatutor.io/</a> to explore more about OATutor, our mission, and how it can benefit you.</li>
             <li>Read our <a href="https://dl.acm.org/doi/10.1145/3544548.3581574" target={"_blank"} rel={"noreferrer"}>research paper</a> to learn more about the scientific foundation and methodology behind OATutor.</li>
         </ul>
 
