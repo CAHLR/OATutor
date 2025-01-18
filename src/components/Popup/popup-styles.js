@@ -13,7 +13,7 @@ export const popupStyles = {
         overflowY: 'scroll',
         scrollbarWidth: 'none',
         '& ul': {
-            paddingLeft: '15px',
+            paddingLeft: '30px',
         },
         '& h2, & h3': {
             marginBottom: '5px',
