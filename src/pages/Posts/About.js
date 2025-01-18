@@ -7,6 +7,7 @@ const VPAT_LINK = `${process.env.PUBLIC_URL}/static/documents/OATutor_Sec508_WCA
 
 const About = () => {
     const classes = useStyles()
+    const currentYear = new Date().getFullYear();
 
     return <>
         <h2>
@@ -52,7 +53,7 @@ const About = () => {
 
         <sub>
             <p>OATutor code is licensed under a MIT Open Source License, with its adaptive learning content made available under a CC BY 4.0 license.</p> 
-            <p>© 2024, CAHL Research Lab, UC Berkley School of Education.</p>
+            <p>© {currentYear}, CAHL Research Lab, UC Berkley School of Education.</p>
         </sub>
     </>
 }
