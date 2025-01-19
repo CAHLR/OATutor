@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ad126feaccessible_presentation_designa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Color Contrast",
+        "text": "High contrast colors make text and visuals easier to distinguish.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feaccessible_presentation_designa-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126feaccessible_presentation_designa-h1"
+        ],
+        "title": "Avoid Small Fonts",
+        "text": "Small font sizes can be difficult for visually impaired individuals to read.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feaccessible_presentation_designa-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126feaccessible_presentation_designa-h2"
+        ],
+        "title": "Limit Complex Backgrounds",
+        "text": "Complex backgrounds can make text hard to read for those with visual impairments.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feaccessible_presentation_designa-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126feaccessible_presentation_designa-h3"
+        ],
+        "title": "Minimize Animations",
+        "text": "Detailed animations can be distracting and may not be accessible to all users.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feaccessible_presentation_designa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use high contrast colors"
+        ],
+        "dependencies": [
+            "ad126feaccessible_presentation_designa-h4"
+        ],
+        "title": "Select the Best Option",
+        "text": "Choose the option that ensures the best accessibility for visually impaired individuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use high contrast colors",
+            "Include detailed animations",
+            "Use small font sizes",
+            "Add complex backgrounds"
+        ]
+    }
+]

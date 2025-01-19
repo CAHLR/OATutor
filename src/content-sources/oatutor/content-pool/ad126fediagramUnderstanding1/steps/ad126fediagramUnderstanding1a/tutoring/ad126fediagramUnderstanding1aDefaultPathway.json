@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ad126fediagramUnderstanding1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Purpose",
+        "text": "A diagram that shows the sequence of steps in a process is needed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fediagramUnderstanding1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126fediagramUnderstanding1a-h1"
+        ],
+        "title": "Consider the Flow",
+        "text": "The diagram should illustrate how one step leads to the next.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fediagramUnderstanding1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126fediagramUnderstanding1a-h2"
+        ],
+        "title": "Visualize the Process",
+        "text": "Think of a diagram that uses arrows to show direction and sequence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fediagramUnderstanding1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126fediagramUnderstanding1a-h3"
+        ],
+        "title": "Common Usage",
+        "text": "This type of diagram is often used in programming and project management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fediagramUnderstanding1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Flowchart"
+        ],
+        "dependencies": [
+            "ad126fediagramUnderstanding1a-h4"
+        ],
+        "title": "Select the Diagram",
+        "text": "Choose the diagram that best represents a process flow.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bar chart",
+            "Pie chart",
+            "Flowchart",
+            "Scatter plot"
+        ]
+    }
+]

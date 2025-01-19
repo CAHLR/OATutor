@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ad126fevisualizationScaling1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Consistency",
+        "text": "Consistent scales help in comparing data accurately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fevisualizationScaling1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126fevisualizationScaling1a-h1"
+        ],
+        "title": "Avoid Exaggeration",
+        "text": "Exaggerating differences can mislead the viewer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fevisualizationScaling1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126fevisualizationScaling1a-h2"
+        ],
+        "title": "Uniformity Across Axes",
+        "text": "Using different scales for each axis can distort the data representation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fevisualizationScaling1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126fevisualizationScaling1a-h3"
+        ],
+        "title": "Importance of Scale",
+        "text": "Ignoring scale can lead to misinterpretation of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fevisualizationScaling1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use consistent scales"
+        ],
+        "dependencies": [
+            "ad126fevisualizationScaling1a-h4"
+        ],
+        "title": "Choose the Best Practice",
+        "text": "The best practice is to use consistent scales.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use consistent scales",
+            "Exaggerate differences for emphasis",
+            "Use different scales for each axis",
+            "Ignore scale for simplicity"
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ad126feengagingPresentation1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Audience's Interest",
+        "text": "Engaging the audience from the start is crucial for maintaining their attention.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feengagingPresentation1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126feengagingPresentation1a-h1"
+        ],
+        "title": "Avoid Lengthy Introductions",
+        "text": "Starting with a lengthy introduction might cause the audience to lose interest quickly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feengagingPresentation1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126feengagingPresentation1a-h2"
+        ],
+        "title": "Focus on Interaction",
+        "text": "Interactive elements can make the audience feel more involved and attentive.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feengagingPresentation1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126feengagingPresentation1a-h3"
+        ],
+        "title": "Use Questions to Engage",
+        "text": "Asking a question can prompt the audience to think and engage with the topic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126feengagingPresentation1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ask a $$thought-provoking$$ question"
+        ],
+        "dependencies": [
+            "ad126feengagingPresentation1a-h4"
+        ],
+        "title": "Select the Best Option",
+        "text": "The most effective way to start a presentation is to ask a thought-provoking question.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Provide a detailed agenda",
+            "List all your credentials",
+            "Ask a $$thought-provoking$$ question",
+            "Start with a lengthy introduction"
+        ]
+    }
+]
