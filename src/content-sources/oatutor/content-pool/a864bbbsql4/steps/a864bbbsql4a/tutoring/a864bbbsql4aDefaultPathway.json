@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a864bbbsql4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL JOINs",
+        "text": "In SQL, a JOIN clause is used to combine rows from two or more tables based on a related column between them. This is essential for retrieving data that is spread across multiple tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a864bbbsql4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To retrieve data from multiple tables based on a related column."
+        ],
+        "dependencies": [
+            "a864bbbsql4a-h1"
+        ],
+        "title": "Identifying the Purpose of JOINs",
+        "text": "Why would you use a JOIN operation in SQL?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To retrieve data from multiple tables based on a related column.",
+            "To create a new table with unrelated data.",
+            "To delete rows from multiple tables simultaneously.",
+            "To update data in a single table."
+        ]
+    },
+    {
+        "id": "a864bbbsql4a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Types of JOINs",
+        "text": "There are several types of JOINs in SQL, including INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Each type serves a different purpose in how it combines data from tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a864bbbsql4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "LEFT JOIN"
+        ],
+        "dependencies": [
+            "a864bbbsql4a-h3"
+        ],
+        "title": "Choosing the Correct JOIN Type",
+        "text": "Which type of JOIN would you use to include all records from the left table and the matched records from the right table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"
+        ]
+    },
+    {
+        "id": "a864bbbsql4a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "JOIN Syntax",
+        "text": "The basic syntax for a JOIN operation in SQL is: SELECT columns FROM table1 JOIN table2 ON table1.column $$=$$ table2.column;",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a864bbbsql4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "SELECT * FROM employees JOIN departments ON employees.department_id $$=$$ departments.department_id;"
+        ],
+        "dependencies": [
+            "a864bbbsql4a-h5"
+        ],
+        "title": "Writing a JOIN Query",
+        "text": "How would you write a query to join two tables, 'employees' and 'departments', on the $$'department_{id'}$$ column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
