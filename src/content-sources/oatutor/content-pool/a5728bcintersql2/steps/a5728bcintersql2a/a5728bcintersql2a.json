@@ -1,0 +1,17 @@
+{
+    "id": "a5728bcintersql2a",
+    "stepAnswer": [
+        "Five"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "SELECT Name, Age FROM Employees WHERE $$Department='HR'$$ GROUP BY Age HAVING COUNT(*)>1;",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+    ]
+}

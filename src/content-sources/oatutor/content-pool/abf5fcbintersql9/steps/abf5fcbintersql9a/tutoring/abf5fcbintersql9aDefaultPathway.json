@@ -1,0 +1,99 @@
+[
+    {
+        "id": "abf5fcbintersql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the OR operator",
+        "text": "The data row is kept if either conditional on the two sides of the OR statement are satisfied.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql9a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Color \\neq 'B'$$"
+        ],
+        "dependencies": [],
+        "title": "Understanding the given SQL condition",
+        "text": "The condition in the WHERE clause is given as $$`Color \\neq 'B'$$ OR $$(Size='L'$$ AND Price>20)`. Which part of the condition excludes rows based on Color?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Color='B'$$",
+            "$$Price>20$$",
+            "$$Size='L'$$",
+            "$$Color \\neq 'L'$$"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It includes rows where Size is 'L' and Price is greater than $$20$$."
+        ],
+        "dependencies": [
+            "abf5fcbintersql9a-h1"
+        ],
+        "title": "Understanding the given SQL condition",
+        "text": "The condition in the WHERE clause uses `OR`. What does the statement $$`(Size='L'$$ AND Price>20)` mean in the context of filtering data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It includes rows where Size is 'L' and Price is greater than $$20$$.",
+            "It excludes rows where Size is 'L'.",
+            "It excludes rows where Price is equal to or less than $$20$$."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The rows are included if Size is 'L' and Price is >20, even if Color is 'B'."
+        ],
+        "dependencies": [
+            "abf5fcbintersql9a-h2"
+        ],
+        "title": "Analyzing combined conditions effect",
+        "text": "Considering the condition $$`Color \\neq 'B'$$ OR $$(Size='L'$$ AND Price>20)`, what happens if the Color is 'B'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The row is excluded if Color is 'B'.",
+            "The rows are included if Size is 'L' and Price is >20, even if Color is 'B'.",
+            "Only Price needs to be >20 to include the row."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, because the color is 'B', which excludes it based on the condition."
+        ],
+        "dependencies": [
+            "abf5fcbintersql9a-h3"
+        ],
+        "title": "Validation and exclusion of a specific row",
+        "text": "Given the conditions, does a row with $$`Color='B'$$, $$Size='XL'$$, and $$Price=10`$$ satisfy the WHERE clause?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes, because the condition is satisfied with Size and Price.",
+            "No, because the color is 'B', which excludes it based on the condition.",
+            "Yes, because Price is not greater than $$20$$."
+        ]
+    }
+]

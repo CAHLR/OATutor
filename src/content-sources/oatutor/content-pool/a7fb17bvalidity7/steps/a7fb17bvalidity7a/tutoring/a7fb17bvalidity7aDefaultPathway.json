@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7fb17bvalidity7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Completeness",
+        "text": "Refers to whether all the data necessary is there and there is no data missing.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity7a-h1"
+        ],
+        "title": "Uniqueness",
+        "text": "Uniqueness refers to whether or not each value shows up just once.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity7a-h2"
+        ],
+        "title": "Consistency",
+        "text": "Consistency ensures data values are consistent across different systems and data sets, as well as throughout the data science process.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity7a-h3"
+        ],
+        "title": "Timeliness",
+        "text": "Timeliness refers to whether data is up to date.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

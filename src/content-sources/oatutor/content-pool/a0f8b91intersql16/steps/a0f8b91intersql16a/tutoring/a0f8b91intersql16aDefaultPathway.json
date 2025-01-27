@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a0f8b91intersql16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Purpose of Outer Join",
+        "text": "The outer join returns all rows from both tables, even those rows on one side that do not have a match on the other side.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql16a-h1"
+        ],
+        "title": "Purpose of Right Join",
+        "text": "A right join returns all rows in the right table, even if they do not have a match on the left table.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql16a-h2"
+        ],
+        "title": "Purpose of Left Join",
+        "text": "A left join returns all rows in the left table, even if they do not have a match on the right table.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql16a-h3"
+        ],
+        "title": "Purpose of Inner Join",
+        "text": "An inner join only returns matches for items in the left table that are also found in the right table.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

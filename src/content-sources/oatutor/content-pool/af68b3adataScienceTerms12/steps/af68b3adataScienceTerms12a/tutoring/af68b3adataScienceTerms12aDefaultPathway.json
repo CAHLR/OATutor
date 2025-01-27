@@ -1,0 +1,59 @@
+[
+    {
+        "id": "af68b3adataScienceTerms12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Cleaning",
+        "text": "Data cleaning involves identifying and correcting errors or inconsistencies in a dataset to ensure it is accurate and ready for analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms12a-h1"
+        ],
+        "title": "Identifying Common Issues",
+        "text": "Common issues in datasets include missing data, duplicate entries, and inconsistent data formats.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms12a-h2"
+        ],
+        "title": "First Step in Data Cleaning",
+        "text": "The first step in data cleaning is to identify any missing or inconsistent data entries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Check for missing or inconsistent data entries"
+        ],
+        "dependencies": [
+            "af68b3adataScienceTerms12a-h3"
+        ],
+        "title": "Selecting the Correct Action",
+        "text": "The analyst should start by checking for missing or inconsistent data entries in the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Check for missing or inconsistent data entries",
+            "Perform data visualization",
+            "Run a machine learning model",
+            "Publish the data report"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad126fedata_visualization_best_practicesa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Audience",
+        "text": "Ensure that the labels are understandable to the intended audience.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fedata_visualization_best_practicesa-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126fedata_visualization_best_practicesa-h1"
+        ],
+        "title": "Clarity Over Brevity",
+        "text": "Avoid using abbreviations that might confuse the viewer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fedata_visualization_best_practicesa-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126fedata_visualization_best_practicesa-h2"
+        ],
+        "title": "Descriptive Labels",
+        "text": "Labels should provide enough information to explain what the data represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fedata_visualization_best_practicesa-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126fedata_visualization_best_practicesa-h3"
+        ],
+        "title": "Avoid Omitting Labels",
+        "text": "Omitting labels can lead to misunderstandings about the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fedata_visualization_best_practicesa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use clear and descriptive labels that explain the data being represented."
+        ],
+        "dependencies": [
+            "ad126fedata_visualization_best_practicesa-h4"
+        ],
+        "title": "Select the Best Practice",
+        "text": "Choose the option that emphasizes clarity and understanding for the viewer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use abbreviations to save space.",
+            "Use clear and descriptive labels that explain the data being represented.",
+            "Omit labels to keep the visualization clean."
+        ]
+    }
+]

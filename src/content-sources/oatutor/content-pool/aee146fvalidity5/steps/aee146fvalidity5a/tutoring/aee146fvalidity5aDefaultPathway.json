@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aee146fvalidity5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of 'Theme'",
+        "text": "In spreadsheet software, a 'Theme' is a predefined set of colors, fonts, and designs that can be applied to a document or a spreadsheet to give it a consistent look. By using themes, you ensure all your reports have a uniform appearance even if they are created at different times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding 'Themes' vs 'Paint Format'",
+        "text": "While using the Paint format tool can copy formats from one section to another, it requires manually selecting areas each time and is not suitable for automating entire document formats. This is not as time-saving and consistent as applying a predefined theme.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Limitations of 'Data Validation' for Formatting",
+        "text": "Data validation is typically used to control what data can be entered into a cell, such as only allowing numbers between $$1-10$$. It's not meant for setting the consistent design or overall appearance of a spreadsheet, making it unsuitable for applying formatting automatically.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity5a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why 'Protected Sheets and Ranges' is Not Ideal",
+        "text": "Protecting sheets and ranges ensures that specific parts of the spreadsheet cannot be edited by others, but it does not relate to format consistency. It doesn't automatically apply formats over new spreadsheets each month.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "She can open the Format menu, select Theme, then choose an option from the panel. Each month, she can use the same theme"
+        ],
+        "dependencies": [],
+        "title": "Applying Themes for Consistency",
+        "text": "Using a theme applies predefined sets of formatting to all elements of a spreadsheet. It's efficient because Seroja can simply choose the same theme each month without manually formatting each new report. This method ensures every report looks consistent with minimal effort.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "She can open the Format menu, select Theme, then choose an option from the panel. Each month, she can use the same theme",
+            "She can select a cell range, click the Paint format button, then select a different range in order to copy the formatting",
+            "She can open the Data menu, select Data validation, then create rules that set the colors of each cell in the sheet. Each month, she can run the Data validation on her new sheet",
+            "She can select the cell range, open the Data menu, then select Protected sheets and ranges. Each month, she can copy the Protect range to her new spreadsheet"
+        ]
+    }
+]

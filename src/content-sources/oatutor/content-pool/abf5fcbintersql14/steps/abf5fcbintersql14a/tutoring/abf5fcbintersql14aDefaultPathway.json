@@ -1,0 +1,117 @@
+[
+    {
+        "id": "abf5fcbintersql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Merging results from more than one table",
+        "text": "In order to merge results from more than one table, we need to use a JOIN clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql14a-h1"
+        ],
+        "title": "Returning from Multiple Tables",
+        "text": "To return information from both tables, they must be included and referenced by name.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql14a-h2"
+        ],
+        "title": "Right Join",
+        "text": "Join returns all records from the table specified, and the associated information in the other table. The table listed after the right or left join will not have all rows returned, only the ones that have a corresponding value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql14a-h3"
+        ],
+        "title": "Returning All Rows",
+        "text": "To return all rows in the Customer table, the Customer table must be specified first as what we are joining by.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql14a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;"
+        ],
+        "dependencies": [
+            "abf5fcbintersql14a-h4"
+        ],
+        "title": "Determine the Basic SQL Structure",
+        "text": "Which of the following SQL statements represents a join operation between two tables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM Customer, CustomerDetail;",
+            "SELECT Customer.Name FROM Customer;",
+            "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+            "SELECT COUNT(*) FROM Customer;"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql14a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "LEFT JOIN"
+        ],
+        "dependencies": [
+            "abf5fcbintersql14a-h5"
+        ],
+        "title": "Identify the Type of Join",
+        "text": "What type of join is used if we want to include all records from the Customer table and the matching records from the CustomerDetail table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL OUTER JOIN"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql14a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ON Customer.Id $$=$$ CustomerDetail.CustomerId"
+        ],
+        "dependencies": [
+            "abf5fcbintersql14a-h6"
+        ],
+        "title": "Choose the Correct Join Criteria",
+        "text": "What condition should be used to match records from the Customer table with the CustomerDetail table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ON $$Customer.Id=CustomerDetail.Id$$",
+            "ON $$Customer.Name=CustomerDetail.CustomerName$$",
+            "ON $$Customer.Id=CustomerDetail.CustomerId$$",
+            "ON $$Customer.Email=CustomerDetail.CustomerEmail$$"
+        ]
+    }
+]

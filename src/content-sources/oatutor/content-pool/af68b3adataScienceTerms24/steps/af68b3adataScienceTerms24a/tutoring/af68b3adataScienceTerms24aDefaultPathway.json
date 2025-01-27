@@ -1,0 +1,59 @@
+[
+    {
+        "id": "af68b3adataScienceTerms24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Excel Functions",
+        "text": "Excel provides various functions to perform calculations on data. These functions can help in summarizing and analyzing data efficiently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms24a-h1"
+        ],
+        "title": "Identifying the Purpose of Functions",
+        "text": "Each Excel function has a specific purpose. For example, some functions are used to add numbers, while others are used to find the average or count the number of entries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms24a-h2"
+        ],
+        "title": "Focusing on the Average Function",
+        "text": "The function used to calculate the average of a range of numbers in Excel is specifically designed to find the mean value of the numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms24a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AVERAGE"
+        ],
+        "dependencies": [
+            "af68b3adataScienceTerms24a-h3"
+        ],
+        "title": "Choosing the Correct Function",
+        "text": "The function that calculates the average of a range of numbers is called AVERAGE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SUM",
+            "AVERAGE",
+            "COUNT",
+            "MIN"
+        ]
+    }
+]

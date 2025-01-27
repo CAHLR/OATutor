@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a4f0186spreadhseet6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying the Need for Rows and Columns",
+        "text": "Consider what functions a spreadsheet serves. Often, you might need to organize additional information that your current table doesn't accommodate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadhseet6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spreadsheet Structure",
+        "text": "A spreadsheet is made up of rows and columns which intersect to form cells. You can place data in these cells, and sometimes you need to expand your table by adding more rows or columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadhseet6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "If you'd like a new row or column adjacent to an existing row or column"
+        ],
+        "dependencies": [
+            "a4f0186spreadhseet6a-h1"
+        ],
+        "title": "When to Add Columns or Rows",
+        "text": "Think of a scenario where you've run out of space in your table. Sometimes, expanding your table by adding extra rows or columns helps fit all your data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "If you want to clear the contents of a row or column",
+            "If you want to hide an existing row or column from your spreadsheet",
+            "If you'd like a new row or column adjacent to an existing row or column",
+            "If you want to remove or revise the data in your spreadsheet"
+        ]
+    }
+]
