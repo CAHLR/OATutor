@@ -1,0 +1,18 @@
+{
+    "id": "a0f8b91intersql14a",
+    "stepAnswer": [
+        "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "This statement will return a row for every row in the Customer table, and also associated information from the CustomerDetail table if there is any.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+    "choices": [
+        "SELECT * FROM CustomerDetail RIGHT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+        "SELECT * FROM Customer LEFT JOIN CustomerDetail ON Customer.Id $$=$$ CustomerDetail.CustomerId;",
+        "SELECT * FROM Customer WHERE CustomerDetail.CustomerId $$=$$ Customer.Id;",
+        "SELECT * FROM Customer;"
+    ]
+}

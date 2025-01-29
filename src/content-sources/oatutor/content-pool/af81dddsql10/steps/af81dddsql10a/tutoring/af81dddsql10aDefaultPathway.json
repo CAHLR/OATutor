@@ -1,0 +1,32 @@
+[
+    {
+        "id": "af81dddsql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding JOINs",
+        "text": "In SQL, a JOIN is used to combine rows from two or more tables. The key is understanding how these rows are matched, which is defined in the ON portion of the JOIN clause.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql10a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognizing Matching Conditions",
+        "text": "The ON portion of a JOIN specifies how rows from one table can be matched to rows in another. This usually involves checking for equality between columns that relate the two tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql10a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why Specify a Matching Condition?",
+        "text": "Specifying the matching condition in a JOIN is crucial because it determines how records from different tables are related. If done incorrectly, you may retrieve unrelated records.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a13eb90data20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ETL",
+        "text": "ETL is an acronym used in data warehousing. It involves three major processes to facilitate the management and transformation of data between different storage systems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data20a-h1"
+        ],
+        "title": "The 'Extract' Process",
+        "text": "The first step in ETL is 'Extract', meaning to retrieve data from different sources that might be in varied formats.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data20a-h2"
+        ],
+        "title": "The 'Transform' Process",
+        "text": "The 'Transform' step involves modifying the data to fit the operational needs or analytical purposes, potentially involving cleaning or restructuring.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data20a-h3"
+        ],
+        "title": "The 'Load' Process",
+        "text": "The 'Load' phase of ETL is where transformed data gets written into the target system, usually a data warehouse or database.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

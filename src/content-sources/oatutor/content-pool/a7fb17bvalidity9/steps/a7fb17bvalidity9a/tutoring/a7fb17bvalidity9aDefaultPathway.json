@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7fb17bvalidity9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula Staying the Same",
+        "text": "When copying a formula from one cell to another, the formula changes accordingly.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity9a-h1"
+        ],
+        "title": "Updates to I formula",
+        "text": "Moving the formula from Column H to Column I would automatically update the formula to reference Column I in place of H.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity9a-h2"
+        ],
+        "title": "Updates to H formula",
+        "text": "The formula would not automatically update to be an absolute reference unless it is manually changed to be an absolute reference.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7fb17bvalidity9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7fb17bvalidity9a-h3"
+        ],
+        "title": "Copy Formulas",
+        "text": "Users have the ability to copy formulas from one cell to another.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

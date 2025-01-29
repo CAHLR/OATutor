@@ -1,0 +1,69 @@
+[
+    {
+        "id": "aee146fvalidity1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Data Quality",
+        "text": "Data quality refers to the condition of data based on its ability to accurately represent the situation it is intended to reflect, ensuring that it is accurate, complete, consistent, reliable, and timely for the intended purpose.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity1a-h1"
+        ],
+        "title": "Misinterpretation of 'Assessment Post-Usage'",
+        "text": "Data quality should not be evaluated only after the report is completed. Waiting for the report's completion can lead to inaccurate analyses based on poor data, and any errors might necessitate re-evaluation, wasting resources and time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity1a-h1"
+        ],
+        "title": "Ignoring Data Quality Due to Audience Size",
+        "text": "Data quality is critical regardless of how many people use the report. Incorrect or poor-quality data can lead to erroneous conclusions or decisions, which might have significant implications even within smaller groups.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity1a-h1"
+        ],
+        "title": "Impossible 100% Quality Assurance Beforehand",
+        "text": "While it's essential to ensure high data quality, insisting on 100% perfection may not be feasible. Prioritizing aspects of data quality according to the data's impact on decisions is often more practical.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Data quality is a measurement of the degree to which the CustomerName and CustomerBirthDate fields are fit to be used in the report"
+        ],
+        "dependencies": [],
+        "title": "Correct Understanding of Data Quality",
+        "text": "The correct definition of data quality in this context is tied to the specific use of the CustomerName and CustomerBirthDate fields. These fields must be fit for use in the report, meaning they should be accurate, relevant, and reliable for the analysis they are part of.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Data quality is a measurement of the CustomerName and CustomerBirthDate fields which can be assessed after the data is used in the report as the report is due today",
+            "Data quality is something that does not need to be managed for the fields on this report as only a small group of people use the report",
+            "Data quality is a measurement of the degree to which the CustomerName and CustomerBirthDate fields are fit to be used in the report",
+            "Data quality is a measurement of the CustomerName and CustomerBirthDate fields which should be 100% before using the fields on the report"
+        ]
+    }
+]

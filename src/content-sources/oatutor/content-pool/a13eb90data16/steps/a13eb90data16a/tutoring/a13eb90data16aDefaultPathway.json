@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a13eb90data16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Cleaning",
+        "text": "Data cleaning involves preparing and validating data for analysis. This helps maintain quality, reduce errors, and enhance understanding of the dataset. Think about tasks that improve data consistency and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data16a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating Data Tasks",
+        "text": "Evaluate each of the tasks provided closely to see which directly relate to data cleaning. Data connecting or manipulation tasks are typically not considered cleaning activities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a13eb90data16a-h2"
+        ],
+        "title": "Removing Unnecessary Columns",
+        "text": "Is removing unnecessary columns an act of cleaning or preparing data? Cleaning involves removing or correcting unwanted data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a13eb90data16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a13eb90data16a-h3"
+        ],
+        "title": "Changing Case of Data",
+        "text": "Consider whether uniformly changing text case in the data affects its cleanliness. Does it help maintain data consistency?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a13eb90data16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data16a-h4"
+        ],
+        "title": "Connecting to the Data",
+        "text": "Think about whether direct connection to a data source involves data preparation or transformation, or if it's a data cleaning activity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data16a-h5"
+        ],
+        "title": "Removing Unnecessary Spaces",
+        "text": "Reflect on whether removing unnecessary white spaces in data entries results in higher data quality by improving readability and consistency.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data16a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data16a-h6"
+        ],
+        "title": "Making the Right Choice",
+        "text": "Remember, data cleaning tasks involve enhancing data's usability by eliminating errors and inconsistencies. Review your choices to include only those aligned with this definition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

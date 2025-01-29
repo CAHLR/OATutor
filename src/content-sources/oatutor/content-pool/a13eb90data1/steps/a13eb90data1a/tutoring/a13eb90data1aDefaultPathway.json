@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a13eb90data1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand Data Types",
+        "text": "In computer science, different kinds of data are categorized into types. For example, text is usually a 'string', numbers are 'int' or 'float', etc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data1a-h1"
+        ],
+        "title": "All Data Can Have Types",
+        "text": "Every piece of data, whether it is a number, text, or complex object, has a specific data type that defines its nature and what kind of operations can be performed on it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a13eb90data1a-h2"
+        ],
+        "title": "Does Text Have a Type?",
+        "text": "Consider whether bits of text have associated types when programming?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a13eb90data1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a13eb90data1a-h3"
+        ],
+        "title": "Do Numbers Have a Type?",
+        "text": "Think about numbers you use in coding. Are they associated with specific types?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

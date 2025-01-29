@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abf5fcbintersql19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operations",
+        "text": "SQL operations follow the math order of operations",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql19a-h1"
+        ],
+        "title": "Parentheses",
+        "text": "The number in the parentheses is evaluated first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "abf5fcbintersql19a-h2"
+        ],
+        "title": "Understanding the Arithmetic Operation",
+        "text": "What is the result of the operation inside the parentheses $$5+1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$5$$",
+            "$$4$$",
+            "$$7$$"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql19a-h3"
+        ],
+        "title": "Multiplying Operator",
+        "text": "The asterisk denotes multiplication in SQL.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql19a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "abf5fcbintersql19a-h4"
+        ],
+        "title": "Evaluating the Multiplication",
+        "text": "Multiply the result from the previous step by $$2$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$12$$",
+            "$$14$$",
+            "$$8$$"
+        ]
+    }
+]

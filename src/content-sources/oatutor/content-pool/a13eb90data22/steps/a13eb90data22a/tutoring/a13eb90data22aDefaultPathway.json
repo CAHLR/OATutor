@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a13eb90data22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Keywords",
+        "text": "SQL, or Structured Query Language, is used to communicate with databases. It allows us to manage the data held in a relational database management system (RDBMS).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data22a-h1"
+        ],
+        "title": "What is a SELECT statement?",
+        "text": "In SQL, the 'SELECT' statement is used to select data from a database. The data returned is stored in a result table, sometimes called the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data22a-h2"
+        ],
+        "title": "Understanding the FROM clause",
+        "text": "The 'FROM' clause in SQL is used to specify the tables from which to retrieve the data. Without specifying where to retrieve the data from, it's impossible to perform a query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

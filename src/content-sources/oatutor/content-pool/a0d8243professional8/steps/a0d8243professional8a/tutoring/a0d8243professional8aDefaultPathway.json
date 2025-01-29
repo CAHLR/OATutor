@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a0d8243professional8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Wikipedia",
+        "text": "Start by understanding what Wikipedia is. It's a free online encyclopedia created by volunteers. Remember, anyone can edit its content.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional8a-h1"
+        ],
+        "title": "Role in Research",
+        "text": "Wikipedia provides an overview of topics and concepts. It's a good starting point for general information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It can help you identify keywords and concepts to research elsewhere."
+        ],
+        "dependencies": [],
+        "title": "Keyword Identification",
+        "text": "While reading a Wikipedia article, identify key terms and phrases to research further in other academic sources.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It can be referred to for unbiased information on any topic.",
+            "It can help you identify keywords and concepts to research elsewhere.",
+            "It can be used as a sole source since it's so comprehensive.",
+            "It can be used as primary source material."
+        ]
+    }
+]

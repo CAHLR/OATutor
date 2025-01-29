@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a906d9aresearch1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Correlational Study",
+        "text": "A correlational study is a type of research design that examines the relationship between two or more variables, without manipulation or influence from the researcher. A correlational study can show an association between two variables in a study.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a906d9aresearch1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a906d9aresearch1a-h1"
+        ],
+        "title": "Correlation vs Causation",
+        "text": "A correlation between two variables is not the same thing as causation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a906d9aresearch1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a906d9aresearch1a-h1"
+        ],
+        "title": "Reflection on Correlational Study",
+        "text": "Can a correlational study establish a direct cause and effect relationship between variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

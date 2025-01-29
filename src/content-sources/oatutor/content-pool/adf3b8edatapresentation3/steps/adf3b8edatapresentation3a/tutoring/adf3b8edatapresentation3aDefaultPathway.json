@@ -1,0 +1,59 @@
+[
+    {
+        "id": "adf3b8edatapresentation3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Historical Analysis Limitations",
+        "text": "While understanding past trends is valuable, what does this approach lack in terms of future planning? Consider how having insights into future events could enhance decision-making.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation3a-h1"
+        ],
+        "title": "The Power of Prediction",
+        "text": "Think about the advantage businesses have when they can anticipate future trends or events. How can this foresight create more value than just reacting to past data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adf3b8edatapresentation3a-h2"
+        ],
+        "title": "Prescriptive Recommendations",
+        "text": "Consider how making informed recommendations based on predictions can impact strategic planning. How does suggesting improvements provide additional value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "adf3b8edatapresentation3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "You bring more value when you don't simply understand what's happened, but you understand what will happen and can recommend conditions to improve on that."
+        ],
+        "dependencies": [
+            "adf3b8edatapresentation3a-h3"
+        ],
+        "title": "Connecting Past, Present, and Future",
+        "text": "Link your understanding of past events to probable future outcomes and make recommendations. How does this create a comprehensive approach to problem-solving?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predicting the future is exciting and interesting to people.",
+            "You bring more value when you don't simply understand what's happened, but you understand what will happen and can recommend conditions to improve on that.",
+            "Understanding what has happened in the past is all you need to do.",
+            "The more work you do, the happier your boss will be."
+        ]
+    }
+]

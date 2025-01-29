@@ -1,0 +1,59 @@
+[
+    {
+        "id": "ac59208visualization3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What is a scatter plot?",
+        "text": "A scatter plot displays values for two variables for a set of data, using Cartesian coordinates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac59208visualization3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac59208visualization3b-h1"
+        ],
+        "title": "Correlation and Visualization",
+        "text": "Correlation shows how two variables change together. Which type of plot best shows this relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac59208visualization3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac59208visualization3b-h2"
+        ],
+        "title": "Visual Appearance of a Scatter Plot",
+        "text": "In a scatter plot, each dot represents a data point, typically mapping one quantitative variable to the x-axis and another to the y-axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ac59208visualization3b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "scatter plot"
+        ],
+        "dependencies": [
+            "ac59208visualization3b-h3"
+        ],
+        "title": "Understanding the Options",
+        "text": "From the following options, which one do you think best shows the relationship or correlation between two variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "scatter plot",
+            "radar plot",
+            "stacked bar chart",
+            "choropleth map"
+        ]
+    }
+]

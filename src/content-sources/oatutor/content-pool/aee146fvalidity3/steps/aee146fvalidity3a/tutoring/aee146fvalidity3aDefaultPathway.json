@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aee146fvalidity3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Data Quality Rules",
+        "text": "Data Quality Rules are guidelines or criteria that ensure the data being used is accurate, consistent, and reliable for its intended purpose. Developing these rules helps in identifying, correcting, and preventing data integrity problems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Requirement",
+        "text": "Your report includes calculated fields, and it is essential to ensure the integrity and accuracy of the data used in these fields. This means that you need to implement data quality rules where necessary to detect and remedy any errors that could affect the output of your report.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity3a-h2"
+        ],
+        "title": "Managing Responsibility for Source Data",
+        "text": "This option implies that your responsibility is limited to the source data and not the calculated fields in your report. However, calculated fields, being derivative, can have unique errors that require separate attention beyond the source quality.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity3a-h3"
+        ],
+        "title": "Ensure Accuracy in Calculation",
+        "text": "Although focusing on calculated fields is important, your responsibility also involves ensuring that any errors in the calculations themselves are addressed. Simply monitoring the source data alone won't safeguard the integrity of your report's calculations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity3a-h4"
+        ],
+        "title": "Comprehensive Responsibility for Quality",
+        "text": "You are responsible for implementing data quality rules and addressing any errors that arise due to your report. This ensures that even if there are issues upstream, the integrity of your report's data is continuously evaluated and maintained through corrective actions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

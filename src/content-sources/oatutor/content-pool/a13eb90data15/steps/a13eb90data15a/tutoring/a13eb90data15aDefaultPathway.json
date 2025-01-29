@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a13eb90data15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Joins",
+        "text": "When you want to combine data from two tables based on a related column, you select a type of join. Each join type serves a different purpose and has a different outcome.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data15a-h1"
+        ],
+        "title": "Key Join Types",
+        "text": "$$1$$. **Inner Join**: Returns records that have matching values in both tables.\\n$$2$$. **Left Outer Join**: Returns all records from the left table, and the matched records from the right table.\\n$$3$$. **Right Outer Join**: Returns all records from the right table, and the matched records from the left table.\\n$$4$$. **Cross Join**: Returns the Cartesian product of both tables, meaning each row from the first table is combined with all rows of the second table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data15a-h2"
+        ],
+        "title": "Focus on Matching",
+        "text": "The question asks for a join that focuses on matching fields between tables. Consider which join returns only records where the matching condition is met in both tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

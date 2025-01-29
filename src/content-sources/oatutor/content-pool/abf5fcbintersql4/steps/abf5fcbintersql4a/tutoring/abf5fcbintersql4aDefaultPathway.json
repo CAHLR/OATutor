@@ -1,0 +1,78 @@
+[
+    {
+        "id": "abf5fcbintersql4a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT"
+        ],
+        "dependencies": [],
+        "title": "Confirm the syntax of the SQL query clauses",
+        "text": "Which clause usually comes first in an SQL query?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT",
+            "FROM",
+            "WHERE"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT, FROM"
+        ],
+        "dependencies": [
+            "abf5fcbintersql4a-h1"
+        ],
+        "title": "Identify the foundational structure of an SQL query",
+        "text": "What is the basic structure needed to extract data from a database in SQL?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT, FROM",
+            "WHERE, SELECT",
+            "FROM, WHERE"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT, FROM, WHERE"
+        ],
+        "dependencies": [
+            "abf5fcbintersql4a-h2"
+        ],
+        "title": "Determine the correct placement of the WHERE clause",
+        "text": "When using a condition to filter results, where is the WHERE clause placed in relation to SELECT and FROM?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT, FROM, WHERE",
+            "WHERE, SELECT, FROM",
+            "SELECT, WHERE, FROM"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql4a-h3"
+        ],
+        "title": "Final Hint",
+        "text": "In SQL, the logical processing order of clauses is critical to arrive at the correct data extraction process. The WHERE clause helps filter records after the data table is identified, but before the result set is selected. Remember: The query is executed FROM the base tables, then WHERE conditions are applied, and finally, the SELECT fields are populated from the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

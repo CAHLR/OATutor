@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a0f8b91intersql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Merging results from more than one table",
+        "text": "In order to merge results from more than one table, we need to use a JOIN clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql14a-h1"
+        ],
+        "title": "Returning from Multiple Tables",
+        "text": "To return information from both tables, they must be included and referenced by name.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql14a-h2"
+        ],
+        "title": "Right Join",
+        "text": "Join returns all records from the table specified, and the associated information in the other table. The table listed after the right or left join will not have all rows returned, only the ones that have a corresponding value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a0f8b91intersql14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0f8b91intersql14a-h3"
+        ],
+        "title": "Returning All Rows",
+        "text": "To return all rows in the Customer table, the Customer table must be specified first as what we are joining by.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

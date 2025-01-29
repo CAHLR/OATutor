@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a4f0186spreadsheet11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Header Row",
+        "text": "Before sorting any data, it's crucial to distinguish data entries from column titles. Headers usually contain text giving context to the data below them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Freeze the header row."
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet11a-h1"
+        ],
+        "title": "Using Google Sheets",
+        "text": "When using Google Sheets, you can keep certain rows or columns visible while you scroll. This feature is helpful to prevent mixing header rows with main data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Delete the header row.",
+            "Create a filter and filter out the header row.",
+            "Freeze the header row.",
+            "Hide the header row."
+        ]
+    },
+    {
+        "id": "a4f0186spreadsheet11a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Purpose of Freezing",
+        "text": "Freezing a header row ensures that it remains visible regardless of how much data you scroll through, which helps in managing large datasets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

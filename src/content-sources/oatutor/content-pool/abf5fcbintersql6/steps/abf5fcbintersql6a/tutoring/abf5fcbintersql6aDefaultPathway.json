@@ -1,0 +1,105 @@
+[
+    {
+        "id": "abf5fcbintersql6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Purpose of %",
+        "text": "The % wildcard is used with the LIKE operator to represent any sequence of characters, as a placeholder.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql6a-h1"
+        ],
+        "title": "Returning all Records",
+        "text": "The question asks for returning all records with the text \"priority\" meaning the search term can show up in the beginning, middle, or end of a word.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql6a-h2"
+        ],
+        "title": "Placement of %",
+        "text": "When the % is placed both in front of and behind a word we are searching for, it allows a match in case there is any text before or after the search term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql6a-h3"
+        ],
+        "title": "Matching with Other Text",
+        "text": "If a % is not included, SQL will only return records that match exactly the search term. If there is other text before or after in the field, it will not return.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Comment"
+        ],
+        "dependencies": [
+            "abf5fcbintersql6a-h4"
+        ],
+        "title": "Identify the column and pattern for the LIKE clause",
+        "text": "What column should be used with the LIKE operator to search for the text 'priority'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Comment",
+            "Description",
+            "Remarks"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "%priority%'"
+        ],
+        "dependencies": [
+            "abf5fcbintersql6a-h5"
+        ],
+        "title": "Select the wildcard pattern for the LIKE clause",
+        "text": "What wildcard pattern must be used to find entries that contain the word 'priority' anywhere in the text?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "%priority%'",
+            "'priority%'",
+            "'priority'",
+            "'%priority'"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql6a-h6"
+        ],
+        "title": "Combine column and pattern",
+        "text": "Combine the chosen column and pattern to find the correct WHERE clause to return the desired results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
