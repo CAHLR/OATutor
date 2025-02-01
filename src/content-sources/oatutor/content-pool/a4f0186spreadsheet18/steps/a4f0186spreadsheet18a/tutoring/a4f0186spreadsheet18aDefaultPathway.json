@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a4f0186spreadsheet18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Cleanup Menu",
+        "text": "The 'Data cleanup' menu in Google Sheets is a feature designed to help organize and refine your data entries. It includes several tools that you may have seen before.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet18a-h1"
+        ],
+        "title": "Familiar Cleaning Options",
+        "text": "Consider processes like removing duplicate entries or excessive spaces which are common data refinement steps within spreadsheets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet18a-h2"
+        ],
+        "title": "Think of Typical Document Processes",
+        "text": "Some options often associated with document writing rather than spreadsheets may not appear in the 'Data cleanup' menu.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Spell check"
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet18a-h3"
+        ],
+        "title": "Identify the Outlier",
+        "text": "Which option on the list seems more like a spell-checking tool than a data-cleaning tool?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cleanup suggestions",
+            "Removing duplicates",
+            "Trim whitespace",
+            "Spell check"
+        ]
+    }
+]

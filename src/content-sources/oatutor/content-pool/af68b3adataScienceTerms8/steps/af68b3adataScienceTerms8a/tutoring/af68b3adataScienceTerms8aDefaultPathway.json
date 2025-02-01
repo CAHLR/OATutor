@@ -1,0 +1,71 @@
+[
+    {
+        "id": "af68b3adataScienceTerms8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph Type",
+        "text": "A graphical representation of data where individual data points are plotted on a two-dimensional graph is often used to show the relationship between two variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms8a-h1"
+        ],
+        "title": "Identifying the Graph",
+        "text": "This type of graph is useful for identifying patterns, trends, and correlations between the two variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms8a-h2"
+        ],
+        "title": "Common Graph Types",
+        "text": "Consider the common types of graphs: Scatter Plot, Bar Chart, Histogram, and Line Graph. Each serves a different purpose in data visualization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af68b3adataScienceTerms8a-h3"
+        ],
+        "title": "Focus on Data Points",
+        "text": "The graph type in question specifically plots individual data points, not bars or lines connecting points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af68b3adataScienceTerms8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter Plot"
+        ],
+        "dependencies": [
+            "af68b3adataScienceTerms8a-h4"
+        ],
+        "title": "Choosing the Correct Graph",
+        "text": "The correct term for a graphical representation of data where individual data points are plotted on a two-dimensional graph is a Scatter Plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scatter Plot",
+            "Bar Chart",
+            "Histogram",
+            "Line Graph"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a4f0186spreadsheet16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conditional Formatting",
+        "text": "Conditional formatting is a feature that allows you to apply a specific format to cells that meet certain criteria. It helps to visually distinguish data based on conditions you set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet16a-h1"
+        ],
+        "title": "Identifying Incomplete Tasks",
+        "text": "Highlighting incomplete tasks involves checking which tasks have a status that indicates they are not finished, such as \"in progress,\" \"to do,\" or another similar status.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet16a-h2"
+        ],
+        "title": "Locating the 'Status' Column",
+        "text": "Find the column in your spreadsheet labeled \"Status.\" This will typically be where the completion state of a task is recorded, such as \"complete,\" \"incomplete,\" or \"in progress.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet16a-h3"
+        ],
+        "title": "Applying Conditional Formatting",
+        "text": "To apply conditional formatting, you must define a rule that will look at each row's status and apply a different background color if the condition (not equal to \"complete\") is true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet16a-h4"
+        ],
+        "title": "Choosing the Condition",
+        "text": "Consider setting a condition that checks if the status is anything other than \"complete.\" This can be done by creating a rule such as \"Status is not equal to 'complete'.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet16a-h5"
+        ],
+        "title": "Formatting Options",
+        "text": "You can choose a different background color to apply to these rows to make them stand out. This will serve as a visual cue for tasks that still need attention.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

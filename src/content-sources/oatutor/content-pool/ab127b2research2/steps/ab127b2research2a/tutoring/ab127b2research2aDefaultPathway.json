@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ab127b2research2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Collection",
+        "text": "Data collection is a systematic approach to gathering and measuring information from various sources to get a complete and accurate picture of an area of interest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab127b2research2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Interviews"
+        ],
+        "dependencies": [
+            "ab127b2research2a-h1"
+        ],
+        "title": "Identifying Primary Data Collection Methods",
+        "text": "Which of the following is a primary data collection method used in research?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Interviews",
+            "Systematic Review",
+            "Data Analysis",
+            "Case Study"
+        ]
+    },
+    {
+        "id": "ab127b2research2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab127b2research2a-h2"
+        ],
+        "title": "Definition of Interviews",
+        "text": "Interviews involve direct interaction between the researcher and the participant, allowing for in-depth data collection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab127b2research2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Literature Review"
+        ],
+        "dependencies": [],
+        "title": "Exploring Secondary Data Collection Methods",
+        "text": "Which of the following is a secondary data collection method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Literature Review",
+            "Focus Groups",
+            "Experiments",
+            "Surveys"
+        ]
+    },
+    {
+        "id": "ab127b2research2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab127b2research2a-h4"
+        ],
+        "title": "Definition of Literature Review",
+        "text": "A literature review involves analyzing existing research and publications to gather information on a specific topic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

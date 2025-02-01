@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ad126fescaling_visualizationsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Purpose of the Visualization",
+        "text": "The scale should help the audience understand the data accurately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fescaling_visualizationsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad126fescaling_visualizationsa-h1"
+        ],
+        "title": "Avoid Misleading Scales",
+        "text": "A scale that exaggerates or minimizes differences can mislead the audience.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fescaling_visualizationsa-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad126fescaling_visualizationsa-h2"
+        ],
+        "title": "Focus on Data Representation",
+        "text": "The scale should represent the data as it is, without distortion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fescaling_visualizationsa-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad126fescaling_visualizationsa-h3"
+        ],
+        "title": "Consider the Audience's Understanding",
+        "text": "The audience should be able to interpret the data correctly with the chosen scale.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad126fescaling_visualizationsa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ensure the scale accurately represents the data"
+        ],
+        "dependencies": [
+            "ad126fescaling_visualizationsa-h4"
+        ],
+        "title": "Select the Correct Scale",
+        "text": "Ensure the scale accurately represents the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use a scale that exaggerates differences",
+            "Ensure the scale accurately represents the data",
+            "Choose a scale that minimizes differences",
+            "Select a scale that fits the slide size"
+        ]
+    }
+]

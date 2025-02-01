@@ -1,0 +1,18 @@
+{
+    "id": "abf5fcbintersql9a",
+    "stepAnswer": [
+        "Color is 'B', Size is 'XL' and Price is $$10$$."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which data row will be left out with this condition in your statement?",
+    "stepBody": "WHERE $$Color \\neq $$ 'B' OR $$(Size='L'$$ AND Price>20)",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "Color is 'B', Size is 'XL' and Price is $$10$$.",
+    "choices": [
+        "Color is 'B', Size is 'L' and Price is $$30$$.",
+        "Color is 'W', Size is 'S' and Price is $$20$$.",
+        "Color is 'G', Size is 'L' and Price is $$25$$.",
+        "Color is 'B', Size is 'XL' and Price is $$10$$."
+    ]
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a13eb90data6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Data Replication",
+        "text": "Which enhancement might require duplicating data across multiple locations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact of Copies on Storage",
+        "text": "How does replicating the same data in multiple locations affect storage needs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data6a-h1"
+        ],
+        "title": "Assessing Storage Needs",
+        "text": "Among the options, which requires the most duplication of existing data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data6a-h2"
+        ],
+        "title": "Understanding Metadata",
+        "text": "What is metadata and how does adding it to a trip itinerary impact storage? Compare it with making multiple copies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

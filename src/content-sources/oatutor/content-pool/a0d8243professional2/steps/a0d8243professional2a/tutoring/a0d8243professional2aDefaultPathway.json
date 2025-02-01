@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a0d8243professional2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What Are Product Lifetime and Repair Incidents?",
+        "text": "Product \"lifetime\" refers to the duration a product typically lasts before it needs to be replaced. \"Repair incidents\" refer to the instances when a product needs servis or repair due to failures or malfunctions. Knowing these can help predict service needs and product replacements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional2a-h1"
+        ],
+        "title": "What to Consider When Data is Unavailable",
+        "text": "If critical data is missing, consider using related or proxy data. This data might not be an exact replacement but can offer useful insights. For example, sales of replacement parts can indicate product failure rates indirectly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional2a-h2"
+        ],
+        "title": "Understanding Substitute Data",
+        "text": "\"Substitute data\" refers to data used in place of the unavailable information. It should be closely related to the main data. For example, if product lifetime data isn't available, looking into how often repair parts are sold can provide insight into how often products fail and their longevity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sales of replacement part"
+        ],
+        "dependencies": [
+            "a0d8243professional2a-h3"
+        ],
+        "title": "Analyzing Substitute Options",
+        "text": "Out of the options given, which one likely indicates how often a product might fail or need repair? Consider which choice directly ties to the product's performance over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "YouTube videos demonstrating product use",
+            "Sales of replacement parts",
+            "Technician training and availability",
+            "New product sales"
+        ]
+    }
+]

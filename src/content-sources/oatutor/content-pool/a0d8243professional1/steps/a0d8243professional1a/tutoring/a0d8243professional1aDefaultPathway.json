@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a0d8243professional1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why Inventory Data",
+        "text": "Understanding the term 'inventory' in this context means to list out or catalog what data your organization currently accesses or has in its possession.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional1a-h1"
+        ],
+        "title": "Capabilities and Needs",
+        "text": "The term 'capabilities' refers to what your organization is currently able to do with the data it has. 'Needs' refers to what your organization requires or might require in the future to achieve its goals using data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional1a-h1"
+        ],
+        "title": "Justifying IT Investments",
+        "text": "To 'justify IT investments' means to provide reasons or a business case for spending money on IT-related resources, based on the data needs and capabilities identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional1a-h1"
+        ],
+        "title": "Creating a Large Database",
+        "text": "When we mention 'creating a large database,' it suggests building a substantial collection of data for use or reference in the future, beyond immediate needs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional1a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To know your capabilities and needs"
+        ],
+        "dependencies": [],
+        "title": "Determine Your Organizational Objectives",
+        "text": "Review your organization's objectives to understand why knowing your data capabilities and needs is essential.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To know your capabilities and needs",
+            "To justify IT investments",
+            "To create a large database for future reference"
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "af81dddsql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Aggregation",
+        "text": "Aggregation involves summarizing data points. Grouping by a field combines rows with similar values in one field to calculate totals, averages, counts, etc. Usually, aggregation functions like SUM, AVG, COUNT can be applied to grouped data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql15a-h1"
+        ],
+        "title": "Why Use Multiple Groupings",
+        "text": "When you have data categorized by both cities and counties, grouping by both instead of just one helps preserve details specific to combinations of these fields.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

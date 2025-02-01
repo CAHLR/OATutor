@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a13eb90data9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Types",
+        "text": "Look at the image to identify which departments generate different types of data and their average size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a13eb90data9a-h1"
+        ],
+        "title": "Comparing Data Sizes",
+        "text": "Grayscale images from radiology (1024x1024) take more space than text from other departments.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a13eb90data9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1024\\times1024$$"
+        ],
+        "dependencies": [
+            "a13eb90data9a-h2"
+        ],
+        "title": "Imagery Size",
+        "text": "How large is one image typically in radio imaging?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

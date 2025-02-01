@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a2ee4dfsql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Specifics of GROUP BY clause",
+        "text": "The GROUP BY clause does not change the order of what is grouped first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql15a-h1"
+        ],
+        "title": "Eliminating a Field",
+        "text": "The elimination of a field can be achieved using the SELECT clause.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql15a-h2"
+        ],
+        "title": "Unique Aggregation",
+        "text": "Aggregating results should differentiate between two cities with the same name that appear in two different counties.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

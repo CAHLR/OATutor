@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a4f0186spreadsheet5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Google Drive Interface",
+        "text": "To move files in Google Drive, familiarize yourself with the interface. You'll see a list of your files, and on the left, folders are displayed. This structure is central to either dragging files or using menu options for file movements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet5a-h1"
+        ],
+        "title": "Exploring File Actions",
+        "text": "When you right-click or CTRL-click on a file, a menu appears. This menu provides various options for managing the file, including potentially moving it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4f0186spreadsheet5a-h2"
+        ],
+        "title": "Navigating Menu Options Within Files",
+        "text": "Inside a Google Sheets file, navigate to the 'File' menu located in the top left corner. This menu gives specific options that apply to the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a4f0186spreadsheet5a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A, B, D"
+        ],
+        "dependencies": [
+            "a4f0186spreadsheet5a-h3"
+        ],
+        "title": "Executing a Move Operation",
+        "text": "Combine your understanding of file interactions outside and inside Google Sheets. Use tools like drag and drop, right-click menu options, and File menu options within the spreadsheet to perform file movements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A, B, C",
+            "B, C, D",
+            "A, B, C",
+            "B, C, D"
+        ]
+    }
+]

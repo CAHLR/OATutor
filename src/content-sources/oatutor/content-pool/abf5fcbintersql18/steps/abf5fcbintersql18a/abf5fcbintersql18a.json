@@ -1,0 +1,17 @@
+{
+    "id": "abf5fcbintersql18a",
+    "stepAnswer": [
+        "SELECT MAX(Amount) FROM Sales GROUP BY Office;"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which query will return the highest sale amount for every office?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "SELECT Office FROM Sales GROUP BY MAX(Amount);",
+        "SELECT MAX(Amount, Office) FROM Sales;",
+        "SELECT MAX(Amount) FROM Sales GROUP BY Office;",
+        "SELECT MAX(Amount), Office FROM Sales;"
+    ]
+}

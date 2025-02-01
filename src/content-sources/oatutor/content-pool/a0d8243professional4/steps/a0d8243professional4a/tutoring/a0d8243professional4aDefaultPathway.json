@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a0d8243professional4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Clarifying Key Concepts",
+        "text": "To identify data that can justify a decision, it's crucial to start with asking fundamental questions. These questions help define what is truly needed to support an argument or perspective.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0d8243professional4a-h1"
+        ],
+        "title": "Understanding 'Fundamental Questions'",
+        "text": "Fundamental questions' are queries that go to the essence of the decision-making process. They might include questions like: What is the primary objective? What data is available and reliable? What are the possible outcomes of different actions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0d8243professional4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ask fundamental questions"
+        ],
+        "dependencies": [
+            "a0d8243professional4a-h2"
+        ],
+        "title": "Exploring Examples of Fundamental Questions",
+        "text": "Consider the decision to implement a new work policy. An example of fundamental questions could be: 'What are the costs and benefits of the new policy?' and 'How will the policy impact employee productivity?'",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evaluate the available data.",
+            "Build a table or spreadsheet.",
+            "Ask fundamental questions."
+        ]
+    }
+]
