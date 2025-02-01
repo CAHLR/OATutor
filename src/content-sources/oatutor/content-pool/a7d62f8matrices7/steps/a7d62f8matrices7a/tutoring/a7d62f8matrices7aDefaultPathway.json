@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a7d62f8matrices7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "1) Identify the dimensions of the matrices:\\n\u2022 B is a 2\u00d73 matrix.\\n\u2022 D is a 3\u00d73 matrix.\\n\\n2) Since the number of columns of B (3) matches the number of rows of D (3), the product BD is well-defined and will be a 2\u00d73 matrix.\\n\\n3) Label the entries: let\\nB $$=$$ [ [3, $$6$$, 4],\\n[-8, $$0$$, 12] ]\\nand\\nD $$=$$ [ [2, $$-3$$, 12],\\n[9, $$3$$, 1],\\n[0, $$8$$, -10] ].\\n\\n4) Compute each entry of BD by taking the dot product of the corresponding row of B with the corresponding column of D:\\n\\nRow $$1$$ of B \u00b7 Column $$1$$ of D: (3)(2) + (6)(9) + (4)(0) $$=$$ $$6$$ + $$54$$ + $$0$$ $$=$$ $$60$$\\nRow $$1$$ of B \u00b7 Column $$2$$ of D: $$(3)(-3)$$ + (6)(3) + (4)(8) $$=$$ $$-9$$ + $$18$$ + $$32$$ $$=$$ $$41$$\\n...",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
