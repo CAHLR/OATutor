@@ -3,56 +3,60 @@
         "id": "a2fbd09foundational5a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Errors in the Chart",
-        "text": "The table entries for data values $$2$$, $$3$$, $$10$$, and $$18$$ are incorrect. This affects cumulative relative frequency for most values.",
+        "title": "Understanding the Frequency Table",
+        "text": "Look at the frequency of people commuting $$3$$ miles. How many people commute this distance?",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a2fbd09foundational5a-h2",
-        "type": "hint",
-        "dependencies": [
-            "a2fbd09foundational5a-h1"
-        ],
-        "title": "Percent of People",
-        "text": "To find the percent of people that commute a certain distance, convert the relative frequency for that category into a percent.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a2fbd09foundational5a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$1$$"
+            "$$15.79$$"
         ],
+        "dependencies": [
+            "a2fbd09foundational5a-h1"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "The frequency of people commuting $$3$$ miles is $$3$$. Calculate the percentage: $$100\\frac{3}{19}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational5a-h3",
+        "type": "hint",
         "dependencies": [
             "a2fbd09foundational5a-h2"
         ],
-        "title": "Frequency for Three Miles",
-        "text": "What is the correct frequency for three miles?",
+        "title": "Compare with 3%",
+        "text": "Is $$15.79\\%$$ equal to 3%?",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a2fbd09foundational5a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "$$2$$"
+            "FALSE"
         ],
         "dependencies": [
             "a2fbd09foundational5a-h3"
         ],
-        "title": "Frequency for Two Miles",
-        "text": "What is the correct frequency for two miles?",
+        "title": "Conclusion",
+        "text": "Since $$15.79\\%$$ is not equal to 3%, the statement is false.",
         "variabilization": {},
-        "oer": "",
-        "license": ""
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
     }
 ]
