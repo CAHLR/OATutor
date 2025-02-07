@@ -3,8 +3,8 @@
         "id": "a7c7754data19a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Query",
-        "text": "A query is a request from a data base, not a file",
+        "title": "Updating Data",
+        "text": "What kind of file is received in a static format, meaning it does not automatically update when the source data changes?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,20 +15,8 @@
         "dependencies": [
             "a7c7754data19a-h1"
         ],
-        "title": "Flat File",
-        "text": "A flat file refers to a file that is not updated live when the data is changed.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a7c7754data19a-h3",
-        "type": "hint",
-        "dependencies": [
-            "a7c7754data19a-h2"
-        ],
-        "title": "Excel file",
-        "text": "An excel file can be connected to data; however when it is not, it is a flat file",
+        "title": "File Types",
+        "text": "One of these options describes a request for data, not a file format, and the other can update based on the source instead of being snapshot of the data at the time it was sent.",
         "variabilization": {},
         "oer": "",
         "license": ""
