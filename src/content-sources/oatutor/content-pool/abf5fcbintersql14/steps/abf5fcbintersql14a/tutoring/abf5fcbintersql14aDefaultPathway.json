@@ -110,7 +110,7 @@
         "choices": [
             "ON $$Customer.Id=CustomerDetail.Id$$",
             "ON $$Customer.Name=CustomerDetail.CustomerName$$",
-            "ON $$Customer.Id=CustomerDetail.CustomerId$$",
+            "ON Customer.Id $$=$$ CustomerDetail.CustomerId",
             "ON $$Customer.Email=CustomerDetail.CustomerEmail$$"
         ]
     }
