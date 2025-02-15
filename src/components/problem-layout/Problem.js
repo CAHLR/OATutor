@@ -32,6 +32,8 @@ import ToastID from "../../util/toastIds";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
+import Popup from '../Popup/Popup.js';
+import About from '../../pages/Posts/About.js';
 
 class Problem extends React.Component {
     static contextType = ThemeContext;
@@ -76,6 +78,7 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
+            showPopup: false
         };
     }
 
@@ -364,6 +367,13 @@ class Problem extends React.Component {
             showFeedback: !prevState.showFeedback,
         }));
     };
+    
+    togglePopup = () => {
+        console.log("Toggling popup visibility");
+        this.setState((prevState) => ({
+          showPopup: !prevState.showPopup,
+        }));
+    };
 
     _getNextDebug = (offset) => {
         return (
@@ -417,6 +427,7 @@ class Problem extends React.Component {
         const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
+        const { showPopup } = this.state;
         if (problem == null) {
             return <div></div>;
         }
@@ -619,9 +630,9 @@ class Problem extends React.Component {
                             }}
                         >
                             <IconButton
-                                aria-label="help"
-                                title={`How to use ${SITE_NAME}?`}
-                                href={`${window.location.origin}${window.location.pathname}#/posts/how-to-use`}
+                                aria-label="about"
+                                title={`About ${SITE_NAME}`}
+                                onClick={this.togglePopup}
                             >
                                 <HelpOutlineOutlinedIcon
                                     htmlColor={"#000"}
@@ -644,6 +655,9 @@ class Problem extends React.Component {
                                 />
                             </IconButton>
                         </div>
+                        <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                            <About />
+                        </Popup>
                     </div>
                     {this.state.showFeedback ? (
                         <div className="Feedback">
