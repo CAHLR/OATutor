@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Purpose",
-        "text": "Consider why the story within the data might be more impactful than individual facts.",
+        "text": "Consider why the story within or insights from the data might be more impactful than individual facts.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -16,7 +16,7 @@
             "a3d07aadatapresentation10a-h1"
         ],
         "title": "Significance of Clarity",
-        "text": "Think about how presenting data clearly could affect an audience's understanding or engagement.",
+        "text": "Think about how presenting data clearly could affect an audience's understanding or engagement. Does it makes sense to assume that the audience can arrive at insights simply from the raw data?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -32,27 +32,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "a3d07aadatapresentation10a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "You need to step back from the data to be able to focus on the true \"so what\" (the story in the data)."
-        ],
-        "dependencies": [
-            "a3d07aadatapresentation10a-h3"
-        ],
-        "title": "Focusing on the \"So What\"",
-        "text": "When presenting data, the main aim is often to drive a certain point or action. Reflect on how stepping back might help emphasize this.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "You need to step back from the data to be able to focus on the true \"so what\" (the story in the data).",
-            "You need to forget your data and focus on the visuals.",
-            "You need to emulate an audience that knows nothing about your data to communicate it."
-        ]
     }
 ]

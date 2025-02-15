@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "What are you trying to hide?",
-        "text": "Think about the kind of information that could be useful later but doesn't need to be the focus right now.",
+        "text": "Think about the kind of information that could be useful later to supplement information but doesn't need to be the focus right now.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -32,28 +32,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "a3d07aadatapresentation19a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "The Appendix"
-        ],
-        "dependencies": [
-            "a3d07aadatapresentation19a-h3"
-        ],
-        "title": "Conclusion",
-        "text": "In presentations, there should be a space dedicated for additional information that isn't crucial for the primary content but could be valuable if needed later on.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "The Footer",
-            "A Separate Website",
-            "The Appendix",
-            "The Header"
-        ]
     }
 ]
