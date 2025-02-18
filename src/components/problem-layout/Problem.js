@@ -333,7 +333,6 @@ class Problem extends React.Component {
 
     clickNextProblem = async () => {
         scroll.scrollToTop({ duration: 900, smooth: true });
-
         await this.props.problemComplete(this.context);
 
         this.setState({

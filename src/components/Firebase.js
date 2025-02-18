@@ -10,10 +10,12 @@ import {
 import { initializeApp } from "firebase/app";
 import {
     arrayUnion,
+    connectFirestoreEmulator,
     doc,
     getFirestore,
     serverTimestamp,
     setDoc,
+    getDoc,
 } from "firebase/firestore";
 import daysSinceEpoch from "../util/daysSinceEpoch";
 import {
@@ -24,6 +26,8 @@ import {
 } from "../util/getBuildType";
 
 const problemSubmissionsOutput = "problemSubmissions";
+const canvasLessonProgress = "canvasLessonProgress";
+const canvasProblemMastery = "canvasProblemMastery";
 const problemStartLogOutput = "problemStartLogs";
 const GPTExperimentOutput = "GPTExperimentOutput";
 const feedbackOutput = "feedbacks";
@@ -108,24 +112,24 @@ class Firebase {
       Document: Key - How you will access this data later. Usually username
       Data: Value - JSON object of data you want to store
     */
-    async writeData(_collection, data) {
+    async writeData(_collection, data, docID = null) {
         if (!ENABLE_FIREBASE) return;
         const collection = this.getCollectionName(_collection);
         const payload = this.addMetaData(data);
-
         if (IS_STAGING_OR_DEVELOPMENT) {
-            // console.log("payload: ", payload);
             console.debug("Writing this payload to firebase: ", payload);
         }
+        
+        docID = docID || this._getReadableID();
 
         await setDoc(
-            doc(this.db, collection, this._getReadableID()),
+            doc(this.db, collection, docID),
             payload
-        ).catch((err) => {
-            console.log("a non-critical error occurred.");
-            console.log("Error is: ", err);
-            console.debug(err);
+        )
+        .catch((err) => {
+            console.log("Error while writing to Firebase: ", err);
         });
+
     }
 
     /**
@@ -329,6 +333,52 @@ class Firebase {
         this.mouseLogBuffer = [];
         console.debug("Logged mouseMovement");
         return this.writeData("mouseMovement", data);
+    }
+
+    async getCompletedProblems(docID) {
+        const collectionName = this.getCollectionName(canvasLessonProgress);
+        const docRef = doc(this.db, collectionName, docID);
+        const docSnapshot = await getDoc(docRef);
+    
+        if (!docSnapshot.exists) {
+            throw new Error(`Document with ID ${docID} does not exist.`);
+        }
+    
+        const data = docSnapshot.data();
+        if (!data || !data.problems) {
+            throw new Error(`Document with ID ${docID} does not contain "problems" field.`);
+        }
+
+        return data.problems;
+    }
+
+    async setCompletedProblems(docID, problems) {
+        const problemObject = {"problems": problems};
+        this.writeData(canvasLessonProgress, problemObject, docID);
+    }
+
+    async getMastery(docID) {
+        const collectionName = this.getCollectionName(canvasProblemMastery);
+        const docRef = doc(this.db, collectionName, docID);
+        
+        const docSnapshot = await getDoc(docRef);
+    
+        if (!docSnapshot.exists) {
+            throw new Error(`Document with ID ${docID} does not exist.`);
+        }
+    
+        const data = docSnapshot.data();
+        if (!data) {
+            throw new Error(`Document with ID ${docID} does not contain "mastery" field.`);
+        }
+
+        console.log("got mastery from firebase: ", data.mastery);
+        return data.mastery;
+    }
+
+    async setMastery(docID, masteryObject) {
+        masteryObject = {"mastery": masteryObject};
+        this.writeData(canvasProblemMastery, masteryObject, docID);
     }
 
     startedProblem(problemID, courseName, lesson, lessonObjectives) {
