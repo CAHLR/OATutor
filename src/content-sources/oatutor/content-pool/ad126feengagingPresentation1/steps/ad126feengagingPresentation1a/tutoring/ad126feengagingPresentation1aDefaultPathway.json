@@ -16,7 +16,7 @@
             "ad126feengagingPresentation1a-h1"
         ],
         "title": "Avoid Lengthy Introductions",
-        "text": "Starting with a lengthy introduction might cause the audience to lose interest quickly.",
+        "text": "Starting with a lengthy introduction might cause the audience to lose interest quickly and is not related to the rest of the presentation.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "ad126feengagingPresentation1a-h2"
         ],
         "title": "Focus on Interaction",
-        "text": "Interactive elements can make the audience feel more involved and attentive.",
+        "text": "Interactive elements can make the audience feel more involved and attentive, especially if it makes them think.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -39,33 +39,10 @@
         "dependencies": [
             "ad126feengagingPresentation1a-h3"
         ],
-        "title": "Use Questions to Engage",
-        "text": "Asking a question can prompt the audience to think and engage with the topic.",
+        "title": "Additional Information",
+        "text": "Credentials and an agenda are important, but can be included later in the presentation.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "ad126feengagingPresentation1a-h5",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Ask a $$thought-provoking$$ question"
-        ],
-        "dependencies": [
-            "ad126feengagingPresentation1a-h4"
-        ],
-        "title": "Select the Best Option",
-        "text": "The most effective way to start a presentation is to ask a thought-provoking question.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Provide a detailed agenda",
-            "List all your credentials",
-            "Ask a $$thought-provoking$$ question",
-            "Start with a lengthy introduction"
-        ]
     }
 ]

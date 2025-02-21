@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the Purpose",
-        "text": "Consider what type of diagram is used to show relationships and hierarchy within an organization.",
+        "text": "Consider what type of diagram is used to show relationships and levels of a hierarchy within an organization.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "ad126fediagramUnderstanding2a-h1"
         ],
-        "title": "Focus on Structure",
-        "text": "Think about which diagram is specifically designed to represent the structure of an organization.",
+        "title": "Distribution Charts",
+        "text": "Pie charts are meant to display the distribution of categorical variables, and a histogram is the distribution of one particular variable.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -27,20 +27,8 @@
         "dependencies": [
             "ad126fediagramUnderstanding2a-h2"
         ],
-        "title": "Consider the Options",
-        "text": "Eliminate diagrams that are not typically used for showing hierarchical relationships.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "ad126fediagramUnderstanding2a-h4",
-        "type": "hint",
-        "dependencies": [
-            "ad126fediagramUnderstanding2a-h3"
-        ],
-        "title": "Recognize Common Diagrams",
-        "text": "An organizational chart is commonly used to display the hierarchy of an organization.",
+        "title": "Chronological Charts",
+        "text": "A flowchart shows a chronological path of a process, and do not usually have multilayered structures.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

@@ -16,7 +16,7 @@
             "af68b3adataScienceTerms15a-h1"
         ],
         "title": "Examples of Categorical Data",
-        "text": "Examples of categorical data include gender, colors, or types of animals. These are labels that do not have a numerical value.",
+        "text": "Examples of categorical data include gender, colors, or types of animals. These are labels that do not have a numerical value and only discrete values.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -35,25 +35,14 @@
     },
     {
         "id": "af68b3adataScienceTerms15a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Categorical"
-        ],
+        "type": "hint",
         "dependencies": [
             "af68b3adataScienceTerms15a-h3"
         ],
-        "title": "Identifying Categorical Data",
-        "text": "Categorical data is used to represent categories or labels. It is not numerical and does not have a natural order.",
+        "title": "Comparing Ordinal and Categorical Data",
+        "text": "Ordinal data is also sorted into categories, but the order of the categories matter compared to categorical data where the categories can be in any order.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Categorical",
-            "Numerical",
-            "Ordinal",
-            "Continuous"
-        ]
+        "license": ""
     }
 ]

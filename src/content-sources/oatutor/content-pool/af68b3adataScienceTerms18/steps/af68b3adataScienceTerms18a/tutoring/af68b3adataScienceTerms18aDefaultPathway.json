@@ -59,25 +59,14 @@
     },
     {
         "id": "af68b3adataScienceTerms18a-h6",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Full Outer Join"
-        ],
+        "type": "hint",
         "dependencies": [
             "af68b3adataScienceTerms18a-h2"
         ],
         "title": "Full Outer Join",
-        "text": "A Full Outer Join returns all rows when there is a match in either left or right table records. It fills in NULLs for missing matches.",
+        "text": "An outer join keeps the records from both of the tables. If there is no corresponding value, the \"full\" indicates that it will be filled.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Inner Join",
-            "Left Join",
-            "Right Join",
-            "Full Outer Join"
-        ]
+        "license": ""
     }
 ]

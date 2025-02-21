@@ -16,7 +16,7 @@
             "af68b3adataScienceTerms19a-h1"
         ],
         "title": "Order of Units",
-        "text": "The order of these units from smallest to largest is: kilobyte, megabyte, gigabyte, terabyte.",
+        "text": "The order of these units from smallest to largest is: kilobyte, megabyte, gigabyte, terabyte, and they increase by $$___$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -32,28 +32,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "af68b3adataScienceTerms19a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Terabyte"
-        ],
-        "dependencies": [
-            "af68b3adataScienceTerms19a-h3"
-        ],
-        "title": "Select the Larger Unit",
-        "text": "Based on the order of units, select the larger unit between gigabyte and terabyte.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Kilobyte",
-            "Megabyte",
-            "Gigabyte",
-            "Terabyte"
-        ]
     }
 ]

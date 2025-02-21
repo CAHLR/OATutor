@@ -28,32 +28,21 @@
             "af68b3adataScienceTerms10a-h2"
         ],
         "title": "Differentiate Between Regression Types",
-        "text": "Linear regression is used for predicting continuous outcomes, while logistic regression is used for predicting categorical outcomes. Clustering and decision trees are not primarily used for predicting continuous outcomes.",
+        "text": "Linear regression is used for predicting continuous outcomes, while logistic regression is used for predicting categorical outcomes of either one or the other.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "af68b3adataScienceTerms10a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Linear Regression"
-        ],
+        "type": "hint",
         "dependencies": [
             "af68b3adataScienceTerms10a-h3"
         ],
-        "title": "Select the Correct Term",
-        "text": "The method that predicts a continuous outcome variable based on one or more predictor variables is called linear regression.",
+        "title": "Categorical Classifications",
+        "text": "Clustering and decision trees are not primarily used for predicting continuous outcomes, and are more commonly used for prediction of categorical variables.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Linear Regression",
-            "Logistic Regression",
-            "Clustering",
-            "Decision Tree"
-        ]
+        "license": ""
     }
 ]

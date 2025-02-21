@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Question",
-        "text": "The question asks for a method used to find patterns and relationships in large datasets. Think about techniques that involve analyzing data to uncover hidden patterns.",
+        "text": "The question asks for a method used to find patterns and relationships in large datasets. Think about techniques or tools that involve analyzing data to uncover hidden patterns.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "af68b3adataScienceTerms23a-h1"
         ],
-        "title": "Consider the Options",
-        "text": "Look at the options provided: Machine Learning, Descriptive Statistics, and Data Visualization. Consider which of these is most associated with pattern recognition.",
+        "title": "Focus on Machine Learning",
+        "text": "Machine Learning is a method that uses algorithms to analyze data, learn from it, and make predictions or decisions. It is often used to find patterns in large datasets.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -27,32 +27,22 @@
         "dependencies": [
             "af68b3adataScienceTerms23a-h2"
         ],
-        "title": "Focus on Machine Learning",
-        "text": "Machine Learning is a method that uses algorithms to analyze data, learn from it, and make predictions or decisions. It is often used to find patterns in large datasets.",
+        "title": "Descriptive Statistics",
+        "text": "Descriptive statistics are measures such as mean, median, and standard deviation that are calculated at the beginning of analyzing data.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "af68b3adataScienceTerms23a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Machine Learning"
-        ],
+        "type": "hint",
         "dependencies": [
             "af68b3adataScienceTerms23a-h3"
         ],
-        "title": "Select the Correct Method",
-        "text": "Based on the hints, the method primarily used for finding patterns and relationships in large datasets is Machine Learning.",
+        "title": "Visualizing",
+        "text": "Visualizations often help find patterns, but can get cluttered with too much data.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Machine Learning",
-            "Descriptive Statistics",
-            "Data Visualization"
-        ]
+        "license": ""
     }
 ]

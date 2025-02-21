@@ -16,7 +16,7 @@
             "af68b3adataScienceTerms17a-h1"
         ],
         "title": "Types of Data Joins",
-        "text": "The main types of data joins are Inner Join, Left Join, Right Join, and Full Outer Join. Each has a specific way of combining data from two tables.",
+        "text": "The main types of data joins are Inner Join, Left Join, Right Join, and Full Outer Join. Each has a specific way of combining data from two tables and what data to omit.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -68,28 +68,5 @@
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "af68b3adataScienceTerms17a-h7",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Left Join"
-        ],
-        "dependencies": [
-            "af68b3adataScienceTerms17a-h4"
-        ],
-        "title": "Choosing the Correct Join",
-        "text": "To keep all records from the first table and only matching records from the second table, one should use a Left Join.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Inner Join",
-            "Left Join",
-            "Right Join",
-            "Full Outer Join"
-        ]
     }
 ]

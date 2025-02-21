@@ -3,8 +3,8 @@
         "id": "ad126fediagramUnderstanding1a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Identify the Purpose",
-        "text": "A diagram that shows the sequence of steps in a process is needed.",
+        "title": "Consider the Flow",
+        "text": "The diagram should illustrate how one step leads to the next.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "ad126fediagramUnderstanding1a-h1"
         ],
-        "title": "Consider the Flow",
-        "text": "The diagram should illustrate how one step leads to the next.",
+        "title": "Visualize the Process",
+        "text": "The flowchart uses arrows to show direction and sequence of one event happening after the other.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -27,45 +27,10 @@
         "dependencies": [
             "ad126fediagramUnderstanding1a-h2"
         ],
-        "title": "Visualize the Process",
-        "text": "Think of a diagram that uses arrows to show direction and sequence.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "ad126fediagramUnderstanding1a-h4",
-        "type": "hint",
-        "dependencies": [
-            "ad126fediagramUnderstanding1a-h3"
-        ],
         "title": "Common Usage",
-        "text": "This type of diagram is often used in programming and project management.",
+        "text": "This type of diagram is often used in programming and project management because it is able to categorize things chronologically.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
-    },
-    {
-        "id": "ad126fediagramUnderstanding1a-h5",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Flowchart"
-        ],
-        "dependencies": [
-            "ad126fediagramUnderstanding1a-h4"
-        ],
-        "title": "Select the Diagram",
-        "text": "Choose the diagram that best represents a process flow.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Bar chart",
-            "Pie chart",
-            "Flowchart",
-            "Scatter plot"
-        ]
     }
 ]
