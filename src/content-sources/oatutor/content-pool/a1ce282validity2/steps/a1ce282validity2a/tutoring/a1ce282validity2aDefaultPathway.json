@@ -27,7 +27,7 @@
         "license": "",
         "choices": [
             "Ignoring data errors",
-            "Performing data validation checks to ensure data is accurate and complete",
+            "Checking the data to ensure it is accurate and complete",
             "Assuming data is valid if it looks correct"
         ]
     },
@@ -45,31 +45,9 @@
     },
     {
         "id": "a1ce282validity2a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Implementing data synchronization processes to keep data consistent across systems."
-        ],
-        "dependencies": [
-            "a1ce282validity2a-h3"
-        ],
-        "title": "Ensuring Data Consistency",
-        "text": "How can you ensure that data remains consistent across different systems?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Ignoring discrepancies between systems",
-            "Implementing data synchronization processes to keep data consistent across systems",
-            "Assuming data is consistent if it is stored in a central database"
-        ]
-    },
-    {
-        "id": "a1ce282validity2a-h5",
         "type": "hint",
         "dependencies": [
-            "a1ce282validity2a-h4"
+            "a1ce282validity2a-h3"
         ],
         "title": "Data Synchronization",
         "text": "Data synchronization involves ensuring that data is consistent and up-to-date across different systems or databases. This can be achieved through regular updates and checks.",
