@@ -11,6 +11,18 @@
     },
     {
         "id": "ab127b2research1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab127b2research1a-h1"
+        ],
+        "title": "Consistent Measurement",
+        "text": "When designing a research instrument, it's important to ensure that it consistently measures what it is intended to measure. This consistency is crucial for the instrument's effectiveness.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab127b2research1a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -18,7 +30,7 @@
             "Reliability and Validity"
         ],
         "dependencies": [
-            "ab127b2research1a-h1"
+            "ab127b2research1a-h2"
         ],
         "title": "Identifying Key Characteristics",
         "text": "What are the two key characteristics that a research instrument must possess to ensure the accuracy and consistency of data collection?",

@@ -3,8 +3,8 @@
         "id": "a371e28data15a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "a right outer join",
-        "text": "Incorrect: This keeps all the rows from the right table and matching values from the left table",
+        "title": "Right Outer join",
+        "text": "This keeps all the rows from the right table and matching values from the left table",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a371e28data15a-h1"
         ],
-        "title": "an inner join",
-        "text": "Correct",
+        "title": "Cross join",
+        "text": "This combines each row from the first table with each row from the second table",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -27,20 +27,8 @@
         "dependencies": [
             "a371e28data15a-h2"
         ],
-        "title": "a left outer join",
-        "text": "Incorrect: This keeps all the rows from the left table and matching values from the right table",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a371e28data15a-h4",
-        "type": "hint",
-        "dependencies": [
-            "a371e28data15a-h3"
-        ],
-        "title": "a cross join",
-        "text": "Incorrect: This combines each row from the first table with each row from the second table",
+        "title": "Matching records",
+        "text": "Think about which join will combine data that matches.",
         "variabilization": {},
         "oer": "",
         "license": ""

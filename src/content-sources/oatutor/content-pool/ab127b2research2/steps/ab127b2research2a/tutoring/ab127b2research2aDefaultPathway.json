@@ -3,34 +3,23 @@
         "id": "ab127b2research2a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding Data Collection",
-        "text": "Data collection is a systematic approach to gathering and measuring information from various sources to get a complete and accurate picture of an area of interest.",
+        "title": "Understanding Primary Data Collection",
+        "text": "Primary data collection methods involve gathering new data directly from sources. These methods are crucial for obtaining firsthand information that hasn't been previously recorded or analyzed.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "ab127b2research2a-h2",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Interviews"
-        ],
+        "type": "hint",
         "dependencies": [
             "ab127b2research2a-h1"
         ],
         "title": "Identifying Primary Data Collection Methods",
-        "text": "Which of the following is a primary data collection method used in research?",
+        "text": "Consider methods that involve direct interaction with subjects or environments to gather new data. These methods often require designing tools or processes to collect the data firsthand.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Interviews",
-            "Systematic Review",
-            "Data Analysis",
-            "Case Study"
-        ]
+        "license": ""
     },
     {
         "id": "ab127b2research2a-h3",
@@ -38,41 +27,20 @@
         "dependencies": [
             "ab127b2research2a-h2"
         ],
-        "title": "Definition of Interviews",
-        "text": "Interviews involve direct interaction between the researcher and the participant, allowing for in-depth data collection.",
+        "title": "Secondary vs Primary",
+        "text": "Primary data is collected directly from the source for the first time, while secondary data involves analyzing existing data collected by others. Think about methods that involve direct engagement with participants or environments.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "ab127b2research2a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Literature Review"
-        ],
-        "dependencies": [],
-        "title": "Exploring Secondary Data Collection Methods",
-        "text": "Which of the following is a secondary data collection method?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Literature Review",
-            "Focus Groups",
-            "Experiments",
-            "Surveys"
-        ]
-    },
-    {
-        "id": "ab127b2research2a-h5",
         "type": "hint",
         "dependencies": [
-            "ab127b2research2a-h4"
+            "ab127b2research2a-h3"
         ],
-        "title": "Definition of Literature Review",
-        "text": "A literature review involves analyzing existing research and publications to gather information on a specific topic.",
+        "title": "Focus on Direct Interaction",
+        "text": "Think about methods that require direct interaction with individuals or environments to gather data. These methods are often structured to collect specific information directly from the source.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
