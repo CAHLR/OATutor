@@ -1,1 +1,47 @@
-[]
+[
+    {
+        "id": "aa1594efoundational1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "In statistics, a variable is a characteristic or attribute that can assume different values. Think about what X represents in this context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa1594efoundational1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa1594efoundational1b-h1"
+        ],
+        "title": "Types of Statistical Terms",
+        "text": "Consider the definitions of the following terms: - Variable:\u2217\u2217 A characteristic that can take on different values. - Statistic:\u2217\u2217 A numerical measurement describing some characteristic of a sample. - Parameter:\u2217\u2217 A numerical measurement describing some characteristic of a population. - Data:\u2217\u2217 The actual values of the variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa1594efoundational1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variable"
+        ],
+        "dependencies": [
+            "aa1594efoundational1b-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given the definitions, which term best describes X, the number of days a student is absent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Statistic",
+            "Parameter",
+            "Data"
+        ]
+    }
+]
