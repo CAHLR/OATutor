@@ -4,7 +4,7 @@
         "WHERE DATE(OrderDate)>'2020-03-15' AND $$TotalPrice<500$$"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "Date Filter",
+    "stepTitle": "",
     "stepBody": "How would you correctly select records where the 'OrderDate' is after March $$15$$, $$2020$$, and the 'TotalPrice' is less than $500?",
     "answerType": "string",
     "variabilization": {},

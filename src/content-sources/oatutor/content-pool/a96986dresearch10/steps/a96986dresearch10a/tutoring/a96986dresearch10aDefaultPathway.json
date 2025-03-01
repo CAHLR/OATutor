@@ -3,10 +3,10 @@
         "id": "a96986dresearch10a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Representative Sample",
-        "text": "One of the key purposes of sampling from the population is to attempt to get a representative sample.",
+        "title": "Understanding Population Sampling",
+        "text": "Population sampling is a crucial step in research. It involves selecting a group of individuals from a larger population to participate in a study. This process helps researchers make inferences about the entire population based on the sample data.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -15,10 +15,10 @@
         "dependencies": [
             "a96986dresearch10a-h1"
         ],
-        "title": "Exclusion of Participants",
-        "text": "The population that is being sampled should include all participants that should be included, not the ones to be excluded.",
+        "title": "Why is it Important?",
+        "text": "Consider why researchers can't always study an entire population. Think about the resources, time, and feasibility involved in studying every individual in a population.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -27,22 +27,33 @@
         "dependencies": [
             "a96986dresearch10a-h2"
         ],
-        "title": "Choosing at Random",
-        "text": "This refers to random sampling, which may not always be representative for a population.",
+        "title": "Types of Sampling Methods",
+        "text": "There are various methods to achieve a representative sample. Some common methods include random sampling, stratified sampling, and cluster sampling. Each method has its own advantages and is suitable for different types of studies.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a96986dresearch10a-h4",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The methodology used to achieve a representative sample of people to participate in your study"
+        ],
         "dependencies": [
             "a96986dresearch10a-h3"
         ],
-        "title": "Fitting Population Contours",
-        "text": "This suggests that all participants fit certain criteria, which would not be a sampling procedure.",
+        "title": "Identifying the Correct Definition",
+        "text": "Review the options provided and identify which one accurately describes the process of selecting a representative group from a larger population.",
         "variabilization": {},
-        "oer": "",
-        "license": ""
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The methodology used to achieve a representative sample of people to participate in your study",
+            "Finding the people who take part in your study but should not have",
+            "Choosing participants at random to ensure probability",
+            "Engineering the participants in your study to align with the contours of the population"
+        ]
     }
 ]

@@ -3,58 +3,64 @@
         "id": "a864bbbsql7a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding SQL Clauses Order",
-        "text": "In SQL, the order of clauses is important. The typical order is: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY.",
+        "title": "Understanding SQL Aggregate Functions",
+        "text": "In SQL, aggregate functions are used to perform calculations on a set of values and return a single value. Common aggregate functions include SUM(), AVG(), MIN(), MAX(), and COUNT().",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a864bbbsql7a-h2",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "The WHERE clause should come before the ORDER BY clause."
-        ],
+        "type": "hint",
         "dependencies": [
             "a864bbbsql7a-h1"
         ],
-        "title": "Identifying the Error",
-        "text": "What is wrong with the following query? SELECT City, COUNT(*) FROM Customers ORDER BY City WHERE City LIKE 'New%'",
+        "title": "Using MIN() and MAX() Functions",
+        "text": "The MIN() function returns the smallest value in a set, while the MAX() function returns the largest value. These functions are often used to find the range of values in a column.",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "The WHERE clause should come before the ORDER BY clause.",
-            "The ORDER BY clause should not use a wildcard.",
-            "COUNT should be used with a specific column.",
-            "The results should be ordered by customer ID."
-        ]
+        "license": ""
     },
     {
         "id": "a864bbbsql7a-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Using COUNT in SQL",
-        "text": "The COUNT function is used to return the number of rows that match a specified condition. It can be used with or without a specific column.",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$MAX(Price)-MIN(Price)$$"
+        ],
+        "dependencies": [
+            "a864bbbsql7a-h2"
+        ],
+        "title": "Calculating the Range of Values",
+        "text": "To find the range of values in a column, you can subtract the result of the MIN() function from the result of the MAX() function.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a864bbbsql7a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "SQL Query Structure",
+        "text": "A basic SQL query structure includes SELECT, FROM, and WHERE clauses. The SELECT clause specifies the columns to retrieve, FROM specifies the table, and WHERE filters the results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a864bbbsql7a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "SELECT City (comma) COUNT(*) FROM Customers WHERE City LIKE 'New%' ORDER BY City"
+            "SELECT $$MAX(Price)-MIN(Price)$$ AS PriceRange FROM Products;"
         ],
         "dependencies": [
-            "a864bbbsql7a-h2"
+            "a864bbbsql7a-h3"
         ],
-        "title": "Correcting the Query",
-        "text": "Rewrite the query to correct the order of clauses.",
+        "title": "Writing a SQL Query to Find the Range",
+        "text": "How would you write a SQL query to find the range of values in the 'Price' column of a table named 'Products'?",
         "variabilization": {},
         "oer": "openai",
         "license": ""

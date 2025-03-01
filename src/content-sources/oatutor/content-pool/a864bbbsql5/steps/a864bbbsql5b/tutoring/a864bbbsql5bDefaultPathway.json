@@ -3,8 +3,8 @@
         "id": "a864bbbsql5b-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding SQL String Functions",
-        "text": "SQL string functions are used to manipulate and analyze string data. Common functions include:\\n\\n- **CONCAT()**: Combines two or more strings into one.\\n- **LENGTH()**: Returns the length of a string.\\n- **SUBSTRING()**: Extracts a part of a string.\\n\\nThese functions are essential for handling text data in SQL databases.",
+        "title": "Understanding the USING Clause",
+        "text": "The USING clause is used in SQL JOINs to specify the column(s) that should be used for matching records between tables when the column names are the same in both tables.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,21 +15,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "CONCAT(), LENGTH(), and SUBSTRING()"
+            "It specifies the column(s) that should be used for matching records between tables."
         ],
         "dependencies": [
             "a864bbbsql5b-h1"
         ],
-        "title": "Identify SQL String Functions",
-        "text": "Which of the following are valid SQL string functions?",
+        "title": "Purpose of the USING Clause",
+        "text": "What is the purpose of the USING clause in a SQL JOIN statement?",
         "variabilization": {},
         "oer": "openai",
         "license": "",
         "choices": [
-            "CONCAT(), LENGTH(), and SUBSTRING()",
-            "SUM(), AVG(), and COUNT()",
-            "DATE(), TIME(), and NOW()",
-            "ROUND(), FLOOR(), and CEIL()"
+            "It defines the order of the output columns.",
+            "It specifies the column(s) that should be used for matching records between tables.",
+            "It limits the number of rows returned."
         ]
     }
 ]

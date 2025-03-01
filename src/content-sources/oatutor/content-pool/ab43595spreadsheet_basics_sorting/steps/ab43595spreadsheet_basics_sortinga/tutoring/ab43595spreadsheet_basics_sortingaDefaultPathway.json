@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the Tool's Purpose",
-        "text": "The 'Sort Ascending' tool is used to organize data in a specific order.",
+        "text": "The 'Sort Descending' tool is used to organize data in a specific order.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -16,7 +16,7 @@
             "ab43595spreadsheet_basics_sortinga-h1"
         ],
         "title": "Consider the Order",
-        "text": "The tool arranges data starting from the smallest value and moving to the largest.",
+        "text": "The tool arranges data starting from the largest value and moving to the smallest.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -51,18 +51,18 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "To arrange data from smallest to largest"
+            "To arrange data from largest to smallest"
         ],
         "dependencies": [
             "ab43595spreadsheet_basics_sortinga-h4"
         ],
         "title": "Select the Correct Function",
-        "text": "The primary function of the 'Sort Ascending' tool is to arrange data from smallest to largest.",
+        "text": "The primary function of the 'Sort Ascending' tool is to arrange data from largest to smallest.",
         "variabilization": {},
         "oer": "openai",
         "license": "",
         "choices": [
-            "To arrange data from smallest to largest",
+            "To arrange data from largest to smallest",
             "To change the font color of text",
             "To merge multiple cells into one",
             "To calculate the sum of a column"

@@ -21,26 +21,10 @@
     },
     {
         "id": "a864bbbsql1a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "WHERE DATE(OrderDate)>'2020-03-15' AND $$TotalPrice<500$$"
-        ],
+        "type": "hint",
         "dependencies": [
-            "a864bbbsql1a-h1",
             "a864bbbsql1a-h2"
         ],
-        "title": "Constructing the SQL Query",
-        "text": "Write the SQL query to select records where the 'OrderDate' is after March $$15$$, $$2020$$, and the 'TotalPrice' is less than $500.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a864bbbsql1a-h4",
-        "type": "hint",
-        "dependencies": [],
         "title": "Using the DATE Function",
         "text": "The DATE function in SQL is used to extract the date part from a datetime expression. This can be useful when comparing dates.",
         "variabilization": {},
@@ -48,7 +32,7 @@
         "license": ""
     },
     {
-        "id": "a864bbbsql1a-h5",
+        "id": "a864bbbsql1a-h4",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",

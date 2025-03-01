@@ -1,17 +1,16 @@
 {
     "id": "a864bbbsql5b",
     "stepAnswer": [
-        "CONCAT(), LENGTH(), and SUBSTRING()"
+        "It specifies the column(s) that should be used for matching records between tables."
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "",
-    "stepBody": "Which of the following are valid SQL string functions?",
+    "stepTitle": "Purpose of the USING Clause",
+    "stepBody": "What is the purpose of the USING clause in a SQL JOIN statement?",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "CONCAT(), LENGTH(), and SUBSTRING()",
-        "SUM(), AVG(), and COUNT()",
-        "DATE(), TIME(), and NOW()",
-        "ROUND(), FLOOR(), and CEIL()"
+        "It defines the order of the output columns.",
+        "It specifies the column(s) that should be used for matching records between tables.",
+        "It limits the number of rows returned."
     ]
 }

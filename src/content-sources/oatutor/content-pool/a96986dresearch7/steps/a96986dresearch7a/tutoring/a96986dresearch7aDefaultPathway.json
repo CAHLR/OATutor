@@ -3,10 +3,10 @@
         "id": "a96986dresearch7a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Recitation",
-        "text": "A literature review does not just recite all the relevant sources, but instead critically analyzes research",
+        "title": "Understanding the Purpose",
+        "text": "Consider what the main goal of a literature review is. Is it just to list sources, or is there a deeper purpose?",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -15,10 +15,10 @@
         "dependencies": [
             "a96986dresearch7a-h1"
         ],
-        "title": "No difference between the two",
-        "text": "A literature review integrates sources into a broader discussion, while an annotated bibliography provides individual summaries of each source.",
+        "title": "Focus on Analysis",
+        "text": "Think about whether a literature review involves analyzing the sources or simply summarizing them.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -27,22 +27,33 @@
         "dependencies": [
             "a96986dresearch7a-h2"
         ],
-        "title": "Including all literature",
-        "text": "A literature review includes only the most important sources, and builds a narrative with the sources.",
+        "title": "Narrative vs. Notes",
+        "text": "Reflect on whether a literature review is more narrative in nature or if it resembles a collection of notes.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a96986dresearch7a-h4",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A literature review provides a thorough dive into the field from a narrative perspective, not just notes"
+        ],
         "dependencies": [
             "a96986dresearch7a-h3"
         ],
-        "title": "Thorough dive into Field",
-        "text": "An annotated biography is more about noting down sources, while a literature review selects relevant past research and integrates it into the relevance of the study.",
+        "title": "Identify the Key Difference",
+        "text": "What is the key difference between a literature review and an annotated bibliography?",
         "variabilization": {},
-        "oer": "",
-        "license": ""
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A literature review is a straightforward recitation of what you read, like a book report",
+            "There is no difference; a literature review is the research term for annotated bibliography",
+            "A literature review must include all of the literature you have read on the topic",
+            "A literature review provides a thorough dive into the field from a narrative perspective, not just notes"
+        ]
     }
 ]

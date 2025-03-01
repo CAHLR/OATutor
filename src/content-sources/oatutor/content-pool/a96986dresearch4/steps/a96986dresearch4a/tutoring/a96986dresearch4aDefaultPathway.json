@@ -3,10 +3,10 @@
         "id": "a96986dresearch4a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Independent Variables",
-        "text": "The independent variable is what is changed and the dependent variable measures the results of the change.",
+        "title": "Understanding Variables",
+        "text": "In research, variables are elements that can change or be changed. The independent variable is the one you manipulate to observe its effect on another variable.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -15,10 +15,43 @@
         "dependencies": [
             "a96986dresearch4a-h1"
         ],
-        "title": "Changing the Independent Variable",
-        "text": "If the independent variable is changed and there is a change in the dependent variable, then there is a relationship between the two variables.",
+        "title": "Identifying the Independent Variable",
+        "text": "Think about what you are changing in your experiment. This is the independent variable. It is what you control to see how it affects the dependent variable.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
+    },
+    {
+        "id": "a96986dresearch4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a96986dresearch4a-h2"
+        ],
+        "title": "Relationship Between Variables",
+        "text": "The independent variable is used to determine if it has an effect on the dependent variable. Consider how changing one might influence the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a96986dresearch4a-h3"
+        ],
+        "title": "Defining the Independent Variable",
+        "text": "The independent variable is the variable your research will manipulate to see potential relationships with dependent variables. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
     }
 ]

@@ -1,17 +1,16 @@
 {
     "id": "a864bbbsql7a",
     "stepAnswer": [
-        "The WHERE clause should come before the ORDER BY clause."
+        "Subtract MIN(Price) from MAX(Price)."
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "",
-    "stepBody": "What is wrong with the following query? SELECT City, COUNT(*) FROM Customers ORDER BY City WHERE City LIKE 'New%'",
+    "stepBody": "How would you determine the difference between the highest and lowest values in the column 'Price'?",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "The WHERE clause should come before the ORDER BY clause.",
-        "The ORDER BY clause should not use a wildcard.",
-        "COUNT should be used with a specific column.",
-        "The results should be ordered by customer ID."
+        "Subtract MIN(Price) from MAX(Price).",
+        "Multiply AVG(Price) by COUNT(Price).",
+        "Add SUM(Price) to MIN(Price)."
     ]
 }

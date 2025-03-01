@@ -3,10 +3,10 @@
         "id": "a96986dresearch8a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Relationship of Variables",
-        "text": "This refers to how the different variables or elements are connected or interact with one another, and should be considered for what kind of research you are conducting.",
+        "title": "Understanding Research Topic Considerations",
+        "text": "When narrowing down a research topic, it's important to consider factors that will help you focus your study effectively. Think about what aspects are crucial for defining a clear and manageable research scope.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -15,10 +15,10 @@
         "dependencies": [
             "a96986dresearch8a-h1"
         ],
-        "title": "Aspect",
-        "text": "Narrowing your focus to a particular angle or topic",
+        "title": "Key Considerations",
+        "text": "Considerations like the relationship of variables, the specific aspect of the topic, and the methodology are essential in narrowing down a research topic. These help in defining the scope and direction of your research.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
@@ -27,22 +27,33 @@
         "dependencies": [
             "a96986dresearch8a-h2"
         ],
-        "title": "Validity",
-        "text": "Validity refers to the accuracy and reliability of your research, which should not be a key concern in the early brainstorming stages.",
+        "title": "What is Validity?",
+        "text": "Validity refers to the accuracy and truthfulness of the research findings. While important, it is not a primary consideration when initially narrowing down a research topic.",
         "variabilization": {},
-        "oer": "",
+        "oer": "openai",
         "license": ""
     },
     {
         "id": "a96986dresearch8a-h4",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validity"
+        ],
         "dependencies": [
             "a96986dresearch8a-h3"
         ],
-        "title": "Methodology",
-        "text": "The approach or strategy used to gather and analyze data is important to consider for whether the research question is feasible.",
+        "title": "Identifying the Odd One Out",
+        "text": "Among the options given, identify which one does not directly help in narrowing down a research topic.",
         "variabilization": {},
-        "oer": "",
-        "license": ""
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Relationship of Variables",
+            "Aspect",
+            "Validity",
+            "Methodology"
+        ]
     }
 ]
