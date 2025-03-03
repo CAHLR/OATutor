@@ -11,29 +11,6 @@
     },
     {
         "id": "a5728bcintersql16a-h2",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;"
-        ],
-        "dependencies": [
-            "a5728bcintersql16a-h1"
-        ],
-        "title": "Identify the Correct SQL Structure",
-        "text": "Which SQL structure allows you to count the number of employees in each department?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "SELECT Department FROM Employees GROUP BY COUNT(EmployeeID);",
-            "SELECT COUNT(EmployeeID, Department) FROM Employees;",
-            "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;",
-            "SELECT COUNT(EmployeeID), Department FROM Employees;"
-        ]
-    },
-    {
-        "id": "a5728bcintersql16a-h3",
         "type": "hint",
         "dependencies": [],
         "title": "Using GROUP BY in SQL",
@@ -43,20 +20,27 @@
         "license": ""
     },
     {
-        "id": "a5728bcintersql16a-h4",
+        "id": "a5728bcintersql16a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;"
         ],
         "dependencies": [
-            "a5728bcintersql16a-h3"
+            "a5728bcintersql16a-h1",
+            "a5728bcintersql16a-h2"
         ],
         "title": "Formulate the SQL Query",
-        "text": "Write a query to find the total number of employees in each department.",
+        "text": "What is the query to find the total number of employees in each department.",
         "variabilization": {},
         "oer": "openai",
-        "license": ""
+        "license": "",
+        "choices": [
+            "SELECT Department FROM Employees GROUP BY COUNT(EmployeeID);",
+            "SELECT COUNT(EmployeeID, Department) FROM Employees;",
+            "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;",
+            "SELECT COUNT(EmployeeID), Department FROM Employees;"
+        ]
     }
 ]

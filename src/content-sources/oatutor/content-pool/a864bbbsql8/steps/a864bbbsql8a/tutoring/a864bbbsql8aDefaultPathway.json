@@ -31,32 +31,5 @@
             "COUNT should be used with a specific column.",
             "The results should be ordered by customer ID."
         ]
-    },
-    {
-        "id": "a864bbbsql8a-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Using COUNT in SQL",
-        "text": "The COUNT function is used to return the number of rows that match a specified condition. It can be used with or without a specific column.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a864bbbsql8a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "SELECT City (comma) COUNT(*) FROM Customers WHERE City LIKE 'New%' ORDER BY City"
-        ],
-        "dependencies": [
-            "a864bbbsql8a-h2"
-        ],
-        "title": "Correcting the Query",
-        "text": "Rewrite the query to correct the order of clauses.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
     }
 ]

@@ -31,32 +31,5 @@
             "ONLY",
             "SINGLE"
         ]
-    },
-    {
-        "id": "a5728bcintersql10a-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "SQL SELECT Statement",
-        "text": "The SELECT statement is used to select data from a database. The data returned is stored in a result table, sometimes called the result set.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql10a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "SELECT DISTINCT name FROM employees;"
-        ],
-        "dependencies": [
-            "a5728bcintersql10a-h3"
-        ],
-        "title": "Using SELECT with DISTINCT",
-        "text": "How would you write a query to select unique values from the 'name' column in a table called 'employees'?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
     }
 ]

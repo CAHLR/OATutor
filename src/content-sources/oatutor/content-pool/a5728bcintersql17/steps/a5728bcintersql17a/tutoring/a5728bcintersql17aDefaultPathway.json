@@ -15,74 +15,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$6$$"
+            "$$18$$"
         ],
         "dependencies": [
             "a5728bcintersql17a-h1"
         ],
         "title": "Calculate the Expression Inside Parentheses",
-        "text": "First, calculate the expression inside the parentheses: $$4+2$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql17a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$18$$"
-        ],
-        "dependencies": [
-            "a5728bcintersql17a-h2"
-        ],
-        "title": "Multiply the Result by $$3$$",
-        "text": "Now, multiply the result from the previous step by 3: $$3\\times6$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql17a-h4",
-        "type": "hint",
-        "dependencies": [],
-        "title": "SQL Arithmetic Example",
-        "text": "Consider the SQL statement: SELECT $$5\\left(2+3\\right)$$ What would be the result?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql17a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$5$$"
-        ],
-        "dependencies": [
-            "a5728bcintersql17a-h4"
-        ],
-        "title": "Calculate the Expression Inside Parentheses",
-        "text": "First, calculate the expression inside the parentheses: $$2+3$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql17a-h6",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$25$$"
-        ],
-        "dependencies": [
-            "a5728bcintersql17a-h5"
-        ],
-        "title": "Multiply the Result by $$5$$",
-        "text": "Now, multiply the result from the previous step by 5: $$5\\times5$$.",
+        "text": "Simplify the expression using PEMDAS",
         "variabilization": {},
         "oer": "openai",
         "license": ""

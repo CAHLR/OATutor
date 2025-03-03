@@ -11,6 +11,18 @@
     },
     {
         "id": "a864bbbsql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a864bbbsql10a-h1"
+        ],
+        "title": "SQL Syntax Reminder",
+        "text": "Remember that SQL keywords are not case-sensitive, but it's a good practice to write them in uppercase for better readability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a864bbbsql10a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -30,15 +42,5 @@
             "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show Salary values that begin with the number $$5$$.",
             "The query results for Query $$1$$ will show without any error message, while Query $$2$$ will show an error message."
         ]
-    },
-    {
-        "id": "a864bbbsql10a-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "SQL Syntax Reminder",
-        "text": "Remember that SQL keywords are not case-sensitive, but it's a good practice to write them in uppercase for better readability.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
     }
 ]

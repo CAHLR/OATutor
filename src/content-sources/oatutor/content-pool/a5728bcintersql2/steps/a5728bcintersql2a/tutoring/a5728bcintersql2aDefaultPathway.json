@@ -15,46 +15,13 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "Four"
+            "Five"
         ],
         "dependencies": [
             "a5728bcintersql2a-h1"
         ],
         "title": "Identify the Clauses",
-        "text": "How many clauses are present in the following SQL statement?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "Three",
-            "Four",
-            "Five",
-            "Six"
-        ]
-    },
-    {
-        "id": "a5728bcintersql2a-h3",
-        "type": "hint",
-        "dependencies": [],
-        "title": "SQL Statement Example",
-        "text": "Consider the SQL statement: SELECT ProductName, Price FROM Products WHERE $$Price>20$$ ORDER BY Price DESC;",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a5728bcintersql2a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Four"
-        ],
-        "dependencies": [
-            "a5728bcintersql2a-h3"
-        ],
-        "title": "Count the Clauses",
-        "text": "How many clauses are in the SQL statement provided in the example?",
+        "text": "How many clauses are present in the following SQL statement? - SELECT Name, Age FROM Employees WHERE $$Department='HR'$$ GROUP BY Age HAVING COUNT(*)>1;",
         "variabilization": {},
         "oer": "openai",
         "license": "",
