@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a31f566linalg15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Property of Linear Functions",
+        "text": "Linear functions preserve vector addition. For example, $$f{\\left(x+y\\right)}=f{\\left(x\\right)}+f{\\left(y\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg15a-h1"
+        ],
+        "title": "Property of Linear Functions",
+        "text": "Linear functions also must preserve scalar multiplication. For example, $$f(cx)=cf(x)$$ for a constant value c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg15a-h2"
+        ],
+        "title": "Linear Combinations",
+        "text": "The name for the function that preserves both vector addition and scalar multiplication is a function that preserves linear combinations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg15a-h3"
+        ],
+        "title": "Simple Checking",
+        "text": "The easiest vectors to input into the function to check that linear combinations are preserved are the elementary basis vectors e_1,...,e_n",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg15a-h4"
+        ],
+        "title": "Meaning of $$n$$",
+        "text": "The $$n$$ denotes the dimension of the input vector, or more specifically that $$x$$ has two components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg15a-h4"
+        ],
+        "title": "$$x$$ values in f(x)",
+        "text": "Since the function only has a $$x_1$$ value, the $$x_2$$ component of the function does not matter.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg15a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a31f566linalg15a-h6"
+        ],
+        "title": "Checking for Linear Combinations",
+        "text": "Is the outcome equal for f(\\mat{(1),(0)}+\\mat{(1),(0)}) and f(\\mat{(1),(0)})+f(\\mat{(1),(0)})?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
