@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a31f566linalg11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Basis Vectors",
+        "text": "The e vectors denote the standard basis vectors, where all components are $$0$$ except for the nth component for $$e_n$$ that is equal to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg11a-h1"
+        ],
+        "title": "Domain Dimension",
+        "text": "Since the linear function has a domain of $$R^3$$, the coefficient vectors a have three components",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg11a-h2"
+        ],
+        "title": "Linear Function",
+        "text": "The nth component of the coefficient vector of a is the value of the function evaluated at the nth elementary basis vector.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a31f566linalg11a-h3"
+        ],
+        "title": "First Component",
+        "text": "What is the first component of a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

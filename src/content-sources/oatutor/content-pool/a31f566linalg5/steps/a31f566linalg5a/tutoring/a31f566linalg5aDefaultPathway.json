@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a31f566linalg5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vector Representation",
+        "text": "Since the function has an input that is denoted as three dimensional from the $$R^3$$, it means that the $$x$$ vector has three components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg5a-h1"
+        ],
+        "title": "Distance",
+        "text": "To find the distance between two vectors, subtract the corresponding components and square their difference. Then, take the square root of the sum of all the squared component differences.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg5a-h2"
+        ],
+        "title": "Function Variables",
+        "text": "The function will be written in terms of the components of $$x$$ (x_1 , $$x_2$$ , and x_3), which are kept as variables. Treat the components of the $$x$$ vector as if they were numerals when plugging into the distance formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg5a-h3"
+        ],
+        "title": "Dimension of a Line",
+        "text": "Since a line is one dimensional, it means that the vector representation only has one variable component, and the other two are determined in the problem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 0 \\\\ 0 \\\\ x_3 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a31f566linalg5a-h3"
+        ],
+        "title": "Vector Representation of Line",
+        "text": "What is the vector representation of the line $$x_1=x_2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg5a-h4"
+        ],
+        "title": "Properties of Distances",
+        "text": "Since distance is representing physical space, the distance is always nonnegative.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

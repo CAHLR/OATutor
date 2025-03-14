@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a31f566linalg19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Row and Column Vectors",
+        "text": "To multiply a row and column vector, multiply the corresponding components in the row vector by the same component in the column vector. Then, add the components together.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg19a-h1"
+        ],
+        "title": "Limitations",
+        "text": "We can only multiply a row and column if they have the same number of components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg19a-h2"
+        ],
+        "title": "Dot product",
+        "text": "The product of a row $$n-vector$$ and column $$n-vector$$ is the same formula as the dot product between the row vector transposed and the column vector.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg19a-h3"
+        ],
+        "title": "Transpose and Vector Values",
+        "text": "The transpose does not change the values in the vector, but only changes the operation used.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 1 \\\\ 3 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a31f566linalg19a-h4"
+        ],
+        "title": "Taking the Transpose",
+        "text": "What is the transpose of the row vector as a column vector?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg19a-h4"
+        ],
+        "title": "Calculating Dot Product",
+        "text": "To take the dot product of two column vectors, multiply the first, second, etc. components of both vectors and add the pairs of components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
