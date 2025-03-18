@@ -3,39 +3,10 @@
         "id": "a2fbd09foundational4a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding the Table",
-        "text": "Look at the cumulative relative frequency column. It shows the percentage of data points that fall below the upper boundary of each interval.",
+        "title": "Cumulative Frequency",
+        "text": "The cumulative frequency value for a certain range of values is the proportion less than the specific number. Find the cumulative frequency for $$9.01$$ in the table.",
         "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a2fbd09foundational4a-h2",
-        "type": "hint",
-        "dependencies": [
-            "a2fbd09foundational4a-h1"
-        ],
-        "title": "Identify the Relevant Interval",
-        "text": "Find the cumulative relative frequency for the interval just below $$9.01$$ inches.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a2fbd09foundational4a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$56$$"
-        ],
-        "dependencies": [
-            "a2fbd09foundational4a-h2"
-        ],
-        "title": "Calculate the Percentage",
-        "text": "The cumulative relative frequency for rainfall less than $$9.01$$ inches is $$0.56$$. Convert this to a percentage.",
-        "variabilization": {},
-        "oer": "openai",
+        "oer": "",
         "license": ""
     }
 ]
