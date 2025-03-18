@@ -1,0 +1,18 @@
+{
+    "id": "a0f8b91intersql23a",
+    "stepAnswer": [
+        "I recommend reviewing how the join was written, because it doesn't look right to see Los Angeles CA showing next to different state names besides California."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "A coworker writes a query using a join and wants you to review their results. Based on the results shown in the image, what would be an appropriate response for your coworker?",
+    "stepBody": "##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "I recommend reviewing how the join was written, because it doesn't look right to see Los Angeles CA showing next to different state names besides California.",
+        "I recommend reviewing how the join was written, because it doesn't look right to see Los Angeles CA showing next to different state names besides California.",
+        "It looks good! Los Angeles is a valid city name and it is part of a state abbreviated using CA, so the results make sense.",
+        "It looks good! Los Angeles is a valid city name, it is part of a state abbreviated using CA, and all of the state names are valid, so the results make sense.",
+        "It looks good! Since the query ran successfully and didn't return an error message, it must be correct."
+    ]
+}
