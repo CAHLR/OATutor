@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a2ee4dfsql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Table Storage Size",
+        "text": "When multiple tables are joined together, the same amount of storage is required.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql9a-h1"
+        ],
+        "title": "Use of Central Repository",
+        "text": "A central repository does not need to be made because all of the relevant data is already included in the tables. A central repository doesn't necessarily mean all the tables are joined, just that all the tables are available in a central location.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql9a-h2"
+        ],
+        "title": "Complexity of Tables",
+        "text": "Joining tables together does not necessarily decrease the amount of tables in the database as each individual table could still contain important information not reflected in the joined table.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

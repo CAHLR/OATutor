@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a31f566linalg12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dimension of vector a",
+        "text": "Since the vector a \u2208 $$R^3$$ , this means that the vector has three components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg12a-h1"
+        ],
+        "title": "Standard Basis Vectors",
+        "text": "The e vectors denote the standard basis vectors, where all components are $$0$$ except for the nth component for $$e_n$$ that is equal to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg12a-h2"
+        ],
+        "title": "Special Properties",
+        "text": "Because only the nth component of the standard basis vector is not zero, only the coefficient of the $$x_n$$ term is kept a nontrivial value when the $$e_n$$ vector is plugged in.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg12a-h3"
+        ],
+        "title": "Linear Function Properties",
+        "text": "For linear functions, the nth component of the coefficient vector a is the value of the function evaluated with the nth elementary basis vector.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a31f566linalg12a-h4"
+        ],
+        "title": "Calculating components of a",
+        "text": "What is the first component of a corresponding to the function being evaluated at $$e_1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg12a-h5"
+        ],
+        "title": "Missing Values",
+        "text": "Since the $$e_1$$ and $$e_2$$ are the only two basis vectors evaluated, the third component of a that would correspond to $$e_3$$ can be any arbitrary value $$t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a2ee4dfsql14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use of wildcards",
+        "text": "The use of wildcards (in this case the %) is especially useful in WHERE clauses to find any word with \"Lake\" within in regardless of letters that come prior.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql14a-h1"
+        ],
+        "title": "Decimal Place",
+        "text": "The decimal place that HouSiz is rounded to does not need to be specified, any number of decimal places can be rounded to.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql14a-h2"
+        ],
+        "title": "Grouping and Filtering",
+        "text": "To group results, it is more logical to first filter the relevant conditions and then group based on the filtered data.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

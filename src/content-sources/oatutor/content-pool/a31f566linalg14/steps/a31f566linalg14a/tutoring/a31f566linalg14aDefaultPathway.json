@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a31f566linalg14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaning of $$n$$",
+        "text": "The $$n$$ denotes the dimension of the input vectors of $$x$$, which means that the input vectors $$x$$ have two components.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg14a-h1"
+        ],
+        "title": "Property of Linear Functions",
+        "text": "Linear functions preserve vector addition. For example, $$f{\\left(x+y\\right)}=f{\\left(x\\right)}+f{\\left(y\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg14a-h2"
+        ],
+        "title": "Property of Linear Functions",
+        "text": "Linear functions also must preserve scalar multiplication. For example, $$f(cx)=cf(x)$$ for a constant value c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg14a-h3"
+        ],
+        "title": "Linear Combinations",
+        "text": "The name for the function that preserves both vector addition and scalar multiplication is a function that preserves linear combinations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg14a-h4"
+        ],
+        "title": "Checking if a function is linear",
+        "text": "To check if a function is linear, input example vectors to check that linear combinations are preserved.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg14a-h5"
+        ],
+        "title": "Simple Checking",
+        "text": "The easiest vectors to input into the function to check for linearity are the elementary basis vectors $$e_1$$ ,..., $$e_n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg14a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a31f566linalg14a-h6"
+        ],
+        "title": "Checking by Plugging in",
+        "text": "Does the function satisfy scalar multiplication when an inputted vector is multiplied by $$-1$$ and the output is also multiplied by $$-1$$ ?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes"
+        ]
+    }
+]

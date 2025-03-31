@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf5fcbintersql3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Data Type",
+        "text": "All of the data for the three people is the same kind, and can be classified together as data about age.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql3a-h1"
+        ],
+        "title": "Data in a Row",
+        "text": "Data in a row corresponds with all of the attribute values collected from one $$\\frac{object}{person}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql3a-h2"
+        ],
+        "title": "Data in a Table",
+        "text": "There is not enough data attributes collected for each person to create a full table.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql3a-h3"
+        ],
+        "title": "Purpose of a Schema",
+        "text": "A schema is made to show the relationship between tables and is made of multiple tables with significant amounts of data for each person.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

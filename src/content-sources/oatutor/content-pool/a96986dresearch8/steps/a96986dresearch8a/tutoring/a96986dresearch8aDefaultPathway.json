@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a96986dresearch8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Research Topic Considerations",
+        "text": "When narrowing down a research topic, it's important to consider factors that will help you focus your study effectively. Think about what aspects are crucial for defining a clear and manageable research scope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96986dresearch8a-h1"
+        ],
+        "title": "Key Considerations",
+        "text": "Considerations like the relationship of variables, the specific aspect of the topic, and the methodology are essential in narrowing down a research topic. These help in defining the scope and direction of your research.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a96986dresearch8a-h2"
+        ],
+        "title": "What is Validity?",
+        "text": "Validity refers to the accuracy and truthfulness of the research findings. While important, it is not a primary consideration when initially narrowing down a research topic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validity"
+        ],
+        "dependencies": [
+            "a96986dresearch8a-h3"
+        ],
+        "title": "Identifying the Odd One Out",
+        "text": "Among the options given, identify which one does not directly help in narrowing down a research topic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Relationship of Variables",
+            "Aspect",
+            "Validity",
+            "Methodology"
+        ]
+    }
+]

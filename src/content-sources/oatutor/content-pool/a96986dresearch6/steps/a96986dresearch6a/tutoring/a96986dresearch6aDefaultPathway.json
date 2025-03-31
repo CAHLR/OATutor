@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a96986dresearch6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Null Hypothesis",
+        "text": "The null hypothesis is a fundamental concept in statistics. It serves as a starting point for statistical testing. Think about why researchers might want to assume no effect or no relationship between variables initially.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96986dresearch6a-h1"
+        ],
+        "title": "Role of Random Chance",
+        "text": "Consider how random chance can influence the results of an experiment. The null hypothesis helps to determine if the observed effects are due to random variation or if there is a significant relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a96986dresearch6a-h2"
+        ],
+        "title": "Testing the Null Hypothesis",
+        "text": "When conducting a statistical test, the null hypothesis is what you are trying to disprove. Think about how this process helps in validating the results of a study.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a96986dresearch6a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A null hypothesis accounts for random chance as the reason for a perceived relationship between variables"
+        ],
+        "dependencies": [
+            "a96986dresearch6a-h3"
+        ],
+        "title": "Identifying the Correct Answer",
+        "text": "Review the choices and identify which one explains the role of the null hypothesis in accounting for random chance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "There needs to be more than an educated guess about a phenomenon",
+            "Statistics are a soft science and need a different hypothesis than a hard science",
+            "A null hypothesis accounts for random chance as the reason for a perceived relationship between variables",
+            "Quantitative research is about certainty rather than probability. The null hypothesis is not a certainty measure"
+        ]
+    }
+]

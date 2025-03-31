@@ -1,0 +1,17 @@
+{
+    "id": "abf5fcbintersql17a",
+    "stepAnswer": [
+        "Yes, using this syntax: GROUP BY Field1, Field2"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Is it possible to group by two fields, and if so what would be the correct syntax?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Yes, using this syntax: GROUP BY Field1 GROUP BY Field2",
+        "No, applying multiple grouping in the same statement is not allowed.",
+        "Yes, using this syntax: GROUP BY Field1, Field2",
+        "Yes, multiple grouping is allowed, but only if the grouped fields have the same data type."
+    ]
+}

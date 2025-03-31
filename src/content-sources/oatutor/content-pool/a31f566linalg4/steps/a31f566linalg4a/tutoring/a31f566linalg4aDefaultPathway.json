@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a31f566linalg4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vector Representation",
+        "text": "Since the function has an input that is denoted as three dimensional from the $$R^3$$, it means that the $$x$$ vector has three components that all must be accounted for in the function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg4a-h1"
+        ],
+        "title": "Distance",
+        "text": "To find the distance between two vectors, subtract the corresponding components and square their difference. Then, take the square root of the sum of all the squared component differences.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg4a-h2"
+        ],
+        "title": "Function Variables",
+        "text": "The function will be written in terms of the components of $$x$$ (x_1, $$x_2$$, and x_3), which are kept as variables. Treat the components of $$x$$ as if they were numerals.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg4a-h3"
+        ],
+        "title": "Value of Origin",
+        "text": "The vector value of the origin is a vector with components that are all zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a31f566linalg4a-h3"
+        ],
+        "title": "Vector of the Origin",
+        "text": "What is the vector representation of the origin in $$R^3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg4a-h4"
+        ],
+        "title": "Square of the Distance",
+        "text": "Make sure that the final answer is the calculated distance from the distance formula squared.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

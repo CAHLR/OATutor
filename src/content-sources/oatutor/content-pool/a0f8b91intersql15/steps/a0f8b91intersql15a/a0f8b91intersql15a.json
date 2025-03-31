@@ -1,0 +1,18 @@
+{
+    "id": "a0f8b91intersql15a",
+    "stepAnswer": [
+        "JOIN Contacts ON $$Customers.Phone=Contacts.Number1$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which SQL clause will you add to this query in order to associate the \"Phone\" field with the \"Number1\" field in the \"Contacts\" table?",
+    "stepBody": "SELECT * FROM Customers",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "JOIN Contacts ON $$Customers.Phone=Contacts.Number1$$",
+    "choices": [
+        "JOIN Contacts ON $$Phone=Number1$$",
+        "JOIN ON $$Customers.Phone=Contacts.Number1$$",
+        "JOIN Contacts ON $$Customers.Phone=Contacts.Number1$$",
+        "CONNECT $$Customers.Phone=Contacts.Number1$$"
+    ]
+}
