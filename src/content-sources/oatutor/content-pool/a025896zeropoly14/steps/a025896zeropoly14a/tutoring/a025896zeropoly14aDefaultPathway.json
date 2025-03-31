@@ -1,6 +1,6 @@
 [
     {
-        "id": "a025896zeropoly13a-h1",
+        "id": "a025896zeropoly14a-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Using the given root",
@@ -10,27 +10,27 @@
         "license": ""
     },
     {
-        "id": "a025896zeropoly13a-h2",
+        "id": "a025896zeropoly14a-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$2x^2-x+3$$"
+            "$$x^2+4$$"
         ],
         "dependencies": [
-            "a025896zeropoly13a-h1"
+            "a025896zeropoly14a-h1"
         ],
         "title": "Quotient",
-        "text": "What is the quotient polynomial we get after dividing by $$x$$ + 2?",
+        "text": "What is the quotient polynomial we get after dividing by $$x$$ + 3?",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "a025896zeropoly13a-h3",
+        "id": "a025896zeropoly14a-h3",
         "type": "hint",
         "dependencies": [
-            "a025896zeropoly13a-h1"
+            "a025896zeropoly14a-h1"
         ],
         "title": "Remaining factors",
         "text": "How can we use the remaning polynomial to get the zeros?",
@@ -39,10 +39,10 @@
         "license": ""
     },
     {
-        "id": "a025896zeropoly13a-h4",
+        "id": "a025896zeropoly14a-h4",
         "type": "hint",
         "dependencies": [
-            "a025896zeropoly13a-h3"
+            "a025896zeropoly14a-h3"
         ],
         "title": "Finding other zeros",
         "text": "What formula can we use to find the other roots of the quadratic equation?",
@@ -51,15 +51,15 @@
         "license": ""
     },
     {
-        "id": "a025896zeropoly13a-h5",
+        "id": "a025896zeropoly14a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-2$$"
+            "$$-3$$"
         ],
         "dependencies": [
-            "a025896zeropoly13a-h4"
+            "a025896zeropoly14a-h4"
         ],
         "title": "All roots",
         "text": "What are the roots?",
