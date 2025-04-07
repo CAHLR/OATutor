@@ -3,22 +3,27 @@
         "id": "a2fbd09foundational3a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding Cumulative Relative Frequency",
-        "text": "Cumulative relative frequency is the sum of the relative frequencies for all classes up to and including the current class.",
+        "title": "Analyze the Data",
+        "text": "Start by observing how many rows are less than $$65.95$$ inches",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "",
         "license": ""
     },
     {
         "id": "a2fbd09foundational3a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
         "dependencies": [
             "a2fbd09foundational3a-h1"
         ],
-        "title": "Identify the Relevant Range",
-        "text": "Look for the cumulative relative frequency corresponding to heights less than $$65.95$$ inches.",
+        "title": "Finding the Numerator",
+        "text": "How many total players have heights less than $$65.95$$ inches?",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "",
         "license": ""
     },
     {
@@ -27,15 +32,27 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$23$$"
+            "$$100$$"
         ],
         "dependencies": [
             "a2fbd09foundational3a-h2"
         ],
-        "title": "Read the Table",
-        "text": "What is the cumulative relative frequency for heights less than $$65.95$$ inches?",
+        "title": "Finding the Denominator",
+        "text": "How many total players are there?",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2fbd09foundational3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2fbd09foundational3a-h3"
+        ],
+        "title": "Solve by Division",
+        "text": "Find the percentage by dividing people shorter than $$65.95$$ inches by the total amount of players.",
+        "variabilization": {},
+        "oer": "",
         "license": ""
     }
 ]
