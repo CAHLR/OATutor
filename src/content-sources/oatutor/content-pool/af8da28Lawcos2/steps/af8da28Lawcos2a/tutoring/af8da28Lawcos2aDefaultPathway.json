@@ -1,6 +1,6 @@
 [
     {
-        "id": "af8da28Lawcos1a-h1",
+        "id": "af8da28Lawcos2a-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Law of Cosines",
@@ -10,10 +10,10 @@
         "license": ""
     },
     {
-        "id": "af8da28Lawcos1a-h2",
+        "id": "af8da28Lawcos2a-h2",
         "type": "hint",
         "dependencies": [
-            "af8da28Lawcos1a-h1"
+            "af8da28Lawcos2a-h1"
         ],
         "title": "Side",
         "text": "Which side length are we solving for? What is the formula to find the side length using the law of cosines? (It is a genrealized version of the pythagorean theorem)",
@@ -22,32 +22,32 @@
         "license": ""
     },
     {
-        "id": "af8da28Lawcos1a-h3",
+        "id": "af8da28Lawcos2a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-0.5$$"
+            "$$-0.42$$"
         ],
         "dependencies": [
-            "af8da28Lawcos1a-h2"
+            "af8da28Lawcos2a-h2"
         ],
         "title": "Angle value",
-        "text": "What is cos(120\u00b0)? How does this value help us in the formula for the law of cosines? (Round to the nearest tenth)",
+        "text": "What is cos(115\u00b0)? How does this value help us in the formula for the law of cosines? (Round to the nearest tenth)",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "af8da28Lawcos1a-h4",
+        "id": "af8da28Lawcos2a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$11.3$$"
+            "$$34.7$$"
         ],
         "dependencies": [
-            "af8da28Lawcos1a-h2"
+            "af8da28Lawcos2a-h2"
         ],
         "title": "Final answer",
         "text": "After simplifying the equation using the law of cosines what is our side length rounded to the nearest tenth?",
