@@ -1,6 +1,6 @@
 [
     {
-        "id": "aad15capolarcoord11a-h1",
+        "id": "aad15capolarcoord15a-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Recall Rectangular to Polar Conversions",
@@ -10,15 +10,15 @@
         "license": ""
     },
     {
-        "id": "aad15capolarcoord11a-h2",
+        "id": "aad15capolarcoord15a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sqrt{20}$$"
+            "$$\\sqrt{269}$$"
         ],
         "dependencies": [
-            "aad15capolarcoord11a-h1"
+            "aad15capolarcoord15a-h1"
         ],
         "title": "Find $$r$$",
         "text": "",
@@ -26,32 +26,32 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sqrt{20}$$",
-            "$$\\sqrt{5}$$",
-            "$$\\frac{1}{2}$$"
+            "$$-23$$",
+            "$$13$$",
+            "$$\\sqrt{269}$$"
         ]
     },
     {
-        "id": "aad15capolarcoord11a-h3",
+        "id": "aad15capolarcoord15a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\arctan\\left(\\frac{1}{2}\\right)$$"
+            "Quadrant III"
         ],
         "dependencies": [
-            "aad15capolarcoord11a-h2"
+            "aad15capolarcoord15a-h2"
         ],
-        "title": "Find theta",
+        "title": "Determine Quadrant and Adjust Angle",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{1}{2}$$",
-            "arctan(2)",
-            "$$\\operatorname{arctannegneg}\\left(\\frac{1}{2}\\right)$$",
-            "$$\\arctan\\left(\\frac{1}{2}\\right)$$"
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
         ]
     }
 ]

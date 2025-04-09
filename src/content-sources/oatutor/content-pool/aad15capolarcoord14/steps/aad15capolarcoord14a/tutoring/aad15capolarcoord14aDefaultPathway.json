@@ -1,6 +1,6 @@
 [
     {
-        "id": "aad15capolarcoord11a-h1",
+        "id": "aad15capolarcoord14a-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Recall Rectangular to Polar Conversions",
@@ -10,15 +10,15 @@
         "license": ""
     },
     {
-        "id": "aad15capolarcoord11a-h2",
+        "id": "aad15capolarcoord14a-h2",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sqrt{20}$$"
+            "$$\\sqrt{34}$$"
         ],
         "dependencies": [
-            "aad15capolarcoord11a-h1"
+            "aad15capolarcoord14a-h1"
         ],
         "title": "Find $$r$$",
         "text": "",
@@ -26,21 +26,21 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sqrt{20}$$",
-            "$$\\sqrt{5}$$",
-            "$$\\frac{1}{2}$$"
+            "$$6$$",
+            "$$-2$$",
+            "$$\\sqrt{34}$$"
         ]
     },
     {
-        "id": "aad15capolarcoord11a-h3",
+        "id": "aad15capolarcoord14a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\arctan\\left(\\frac{1}{2}\\right)$$"
+            "$$2\\pi-\\arctan\\left(\\frac{5}{3}\\right)$$"
         ],
         "dependencies": [
-            "aad15capolarcoord11a-h2"
+            "aad15capolarcoord14a-h2"
         ],
         "title": "Find theta",
         "text": "",
@@ -48,10 +48,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{1}{2}$$",
-            "arctan(2)",
-            "$$\\operatorname{arctannegneg}\\left(\\frac{1}{2}\\right)$$",
-            "$$\\arctan\\left(\\frac{1}{2}\\right)$$"
+            "$$2\\pi-\\arctan\\left(\\frac{5}{3}\\right)$$",
+            "$$\\arctan\\left(\\frac{5}{3}\\right)$$",
+            "$$2\\pi$$"
         ]
     }
 ]
