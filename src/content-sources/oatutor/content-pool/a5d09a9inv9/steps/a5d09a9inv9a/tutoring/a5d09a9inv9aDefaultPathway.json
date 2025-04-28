@@ -12,7 +12,9 @@
     {
         "id": "a5d09a9inv9a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a5d09a9inv9a-h1"
+        ],
         "title": "Approach $$2$$",
         "text": "We can solve for the inverse of the matrix using matrix multiplication. This will involve writing the inverse matrix as a collection of variables which we can then solve after simplifying the matrix product. This works well for $$2$$ by $$2$$ matrices but is not very effective for bigger matrices.",
         "variabilization": {},
@@ -22,7 +24,9 @@
     {
         "id": "a5d09a9inv9a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a5d09a9inv9a-h2"
+        ],
         "title": "Approach $$3$$",
         "text": "We can directly use the formula for an inverse. This has a simple soultion for $$2$$ by $$2$$ matrices but the formula is complex for bigger matrices and so other approaches may be better.",
         "variabilization": {},
@@ -31,12 +35,7 @@
     },
     {
         "id": "a5d09a9inv9a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-4/7*\\begin{bmatrix} -0.5 & -1.5 \\\\ -1 & 0.5 \\end{bmatrix}$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a5d09a9inv9a-h1",
             "a5d09a9inv9a-h2",

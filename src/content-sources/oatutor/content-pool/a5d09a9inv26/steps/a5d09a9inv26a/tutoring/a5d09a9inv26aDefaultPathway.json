@@ -12,7 +12,9 @@
     {
         "id": "a5d09a9inv26a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a5d09a9inv26a-h1"
+        ],
         "title": "Alternative approaches",
         "text": "Other approaches that we can use for $$2$$ by $$2$$ matrices do not work well here as we have a larger matrix. So, it is recommended to take the augmented matrix and perform Gaussian elimination to get the answer",
         "variabilization": {},
@@ -21,12 +23,7 @@
     },
     {
         "id": "a5d09a9inv26a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\begin{bmatrix} 1 & 0 & 0 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 & 0 & 0 \\\\ 0 & 0 & 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 0 & 1 & 0 \\\\ -1 & -1 & -1 & -1 & -1 & 1 \\end{bmatrix}$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a5d09a9inv26a-h1",
             "a5d09a9inv26a-h2"

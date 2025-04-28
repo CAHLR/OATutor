@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Binomial Theorem",
-        "text": "Recollect the definition of the binomial theorem which gives us sum{k\\=0}{n}{nCk*x**{n-k}*y**k} for the binomial expansion $$\\left(x+y\\right)^n$$",
+        "text": "Recollect the definition of the binomial theorem which gives us sum{k\\=0}{n}{nCk x**{n-k}*y**k} for the binomial expansion $$\\left(x+y\\right)^n$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -35,12 +35,7 @@
     },
     {
         "id": "aa6292fbin9a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$64a^3-48a^2 b+12a b^2-b^3$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "aa6292fbin9a-h1",
             "aa6292fbin9a-h2",
