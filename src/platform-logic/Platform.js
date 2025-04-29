@@ -21,7 +21,7 @@ import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
-import withTranslation from '../util/withTranslation';
+import withTranslation from "../util/withTranslation";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -33,7 +33,7 @@ class Platform extends React.Component {
 
     constructor(props, context) {
         super(props);
-        
+
         this.problemIndex = {
             problems: problemPool,
         };
@@ -41,7 +41,7 @@ class Platform extends React.Component {
         this.lesson = null;
 
         this.user = context.user || {};
-        console.debug("USER: ", this.user)
+        console.debug("USER: ", this.user);
         this.isPrivileged = !!this.user.privileged;
         this.context = context;
 
@@ -78,17 +78,15 @@ class Platform extends React.Component {
     componentDidMount() {
         this._isMounted = true;
         if (this.props.lessonID != null) {
-            console.log("calling selectLesson from componentDidMount...") 
-            const lesson = findLessonById(this.props.lessonID)
-            console.debug("lesson: ", lesson)
-            this.selectLesson(lesson).then(
-                (_) => {
-                    console.debug(
-                        "loaded lesson " + this.props.lessonID,
-                        this.lesson
-                    );
-                }
-            );
+            console.log("calling selectLesson from componentDidMount...");
+            const lesson = findLessonById(this.props.lessonID);
+            console.debug("lesson: ", lesson);
+            this.selectLesson(lesson).then((_) => {
+                console.debug(
+                    "loaded lesson " + this.props.lessonID,
+                    this.lesson
+                );
+            });
         } else if (this.props.courseNum != null) {
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
@@ -116,18 +114,18 @@ class Platform extends React.Component {
         }
     }
 
-    async selectLesson(lesson, updateServer=true) {
+    async selectLesson(lesson, updateServer = true) {
         const context = this.context;
-        console.debug("lesson: ", context)
-        console.debug("update server: ", updateServer)
-        console.debug("context: ", context)
+        console.debug("lesson: ", context);
+        console.debug("update server: ", updateServer);
+        console.debug("context: ", context);
         if (!this._isMounted) {
             console.debug("component not mounted, returning early (1)");
             return;
         }
         if (this.isPrivileged) {
             // from canvas or other LTI Consumers
-            console.log("valid privilege")
+            console.log("valid privilege");
             let err, response;
             [err, response] = await to(
                 fetch(`${MIDDLEWARE_URL}/setLesson`, {
@@ -400,8 +398,8 @@ class Platform extends React.Component {
     render() {
         const { translate } = this.props;
         this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName) + " | "
-        : translate('platform.LoggedIn') + " | ";
+            ? decodeURIComponent(this.context.studentName) + " | "
+            : translate("platform.LoggedIn") + " | ";
         return (
             <div
                 style={{
@@ -455,7 +453,7 @@ class Platform extends React.Component {
                                     (this.lesson.showStuMastery == null ||
                                         this.lesson.showStuMastery)
                                         ? this.studentNameDisplay +
-                                        translate('platform.Mastery') +
+                                          translate("platform.Mastery") +
                                           Math.round(this.state.mastery * 100) +
                                           "%"
                                         : ""}

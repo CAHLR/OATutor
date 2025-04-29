@@ -59,7 +59,7 @@ class HintSystem extends React.Component {
             this.props.hints[i].agentMode = true;
             // pre-cache all the audios when the hintsystem shows up
             if (!this.props.hints[i].audios) {
-                console.log("Pre cache ongoing for", i);
+                // console.log("Pre cache ongoing for", i);
                 this.fetchAudioData(this.props.hints[i]);
             }
         }
@@ -98,7 +98,7 @@ class HintSystem extends React.Component {
         // Verona calls here
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
-            console.log("closed");
+            // console.log("closed");
             this.audioRef.pause();
             this.context.firebase.log(
                 null,
@@ -238,7 +238,7 @@ class HintSystem extends React.Component {
             );
             hint.audios = JSON.parse(response.data.body).audios; // Store audio data
             // console.log("success:", response, hint.audios);
-            console.log("hint audio pre-cached");
+            // console.log("hint audio pre-cached");
         } catch (error) {
             console.error("Error fetching audio:", error);
         }
@@ -303,6 +303,7 @@ class HintSystem extends React.Component {
             }
         });
 
+        // console.log("hint:", hint, renderText(hint.text));
         return this.state.agentMode ? (
             <HintVoiceBoard
                 hint={hint}
@@ -311,7 +312,7 @@ class HintSystem extends React.Component {
                 isExpanded={this.state.currentExpanded == hintLocation}
             ></HintVoiceBoard>
         ) : (
-            hint.text
+            <div>{renderText(hint.text)}</div>
         ); // if in text mode
     };
 
@@ -324,7 +325,7 @@ class HintSystem extends React.Component {
         ];
         const randomIndex = Math.floor(Math.random() * praises.length);
         const randomPraise = praises[randomIndex];
-        console.log(randomPraise);
+        // console.log(randomPraise);
         // backendCommunication(randomPraise);
     };
 
@@ -397,7 +398,7 @@ class HintSystem extends React.Component {
     };
 
     togglePlayPause = (hint) => {
-        console.log("pause called");
+        // console.log("pause called");
         if (this.state.playing) {
             // pause
             this.audioRef.pause();
@@ -453,7 +454,7 @@ class HintSystem extends React.Component {
     };
 
     handleOnChange = (event, expanded, index, hint) => {
-        console.log("handle on change:", index);
+        // console.log("handle on change:", index);
         // opening a new hint should eventually also play agent - had to make a method to call both methods in 1 event
         this.unlockHint(event, expanded, index);
     };

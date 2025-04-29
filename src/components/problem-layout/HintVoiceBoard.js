@@ -91,7 +91,7 @@ class HintVoiceBoard extends React.Component {
                 </Grid>
             ) // for 2 col: md ={6}
         ) : (
-            hint.text
+            renderText(hint.text)
         ); // if math attribute nonexistent
     }
 }
