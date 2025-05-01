@@ -1,1 +1,60 @@
-[]
+[
+    {
+        "id": "aaf9513chem18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Relationship",
+        "text": "Recall that the pressure of a gas is related to its temperature. This relationship is described by the ideal gas law, which can be simplified to $$\\frac{P1}{T1}$$ $$=$$ $$\\frac{P2}{T2}$$ when the volume and amount of gas are constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf9513chem18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf9513chem18a-h1"
+        ],
+        "title": "Convert Temperatures to Kelvin",
+        "text": "To use the formula $$\\frac{P1}{T1}$$ $$=$$ $$\\frac{P2}{T2}$$, you need to convert the temperatures from Celsius to Kelvin. Remember, Kelvin $$=$$ Celsius + $$273.15$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf9513chem18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf9513chem18a-h2"
+        ],
+        "title": "Calculate Initial Temperature in Kelvin",
+        "text": "Convert the initial temperature of $$23$$ \u00b0C to Kelvin. Use the formula: T1 $$=$$ $$23+273.15$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf9513chem18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaf9513chem18a-h3"
+        ],
+        "title": "Calculate Final Temperature in Kelvin",
+        "text": "Convert the final temperature of $$535$$ \u00b0C to Kelvin. Use the formula: T2 $$=$$ $$535+273.15$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf9513chem18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaf9513chem18a-h4"
+        ],
+        "title": "Apply the Formula",
+        "text": "Now that you have both temperatures in Kelvin, use the formula $$\\frac{P1}{T1}$$ $$=$$ $$\\frac{P2}{T2}$$ to solve for the final pressure P2. Rearrange the formula to find P2: P2 $$=$$ $$P1 \\frac{T2}{T1}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
