@@ -37,6 +37,7 @@ import { cleanObjectKeys } from "./util/cleanObject";
 import GlobalErrorBoundary from "./components/GlobalErrorBoundary";
 import { IS_STAGING_OR_DEVELOPMENT } from "./util/getBuildType";
 import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
+import ViewAllProblems from "./components/problem-layout/ViewAllProblems";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from "./config/firebaseConfig.js";
@@ -342,6 +343,12 @@ class App extends React.Component {
                                         )}
                                     />
                                     <Route
+                                      exact
+                                      path="/lessons/:lessonID/problems"
+                                        component={ViewAllProblems}
+                                       />
+                                    <Route
+                                    exact
                                         path="/lessons/:lessonID"
                                         render={(props) => (
                                             <Platform
