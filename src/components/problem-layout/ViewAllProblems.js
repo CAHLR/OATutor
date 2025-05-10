@@ -1,83 +1,82 @@
-// src/pages/ViewAllProblems.js
-import React, {
-  useEffect,
-  useState,
-  useMemo,
-  lazy,
-  Suspense,
-  useContext,
-  useRef,
-  useLayoutEffect,
-} from 'react';
+import React, { useEffect, useState, useMemo, Suspense, lazy, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
-  Box,
   Container,
   Grid,
-  Divider,
-  Typography,
-  IconButton,
   Card,
   CardContent,
+  Typography,
+  Divider,
+  IconButton,
+  Box,
+  makeStyles,
+  useTheme,
 } from '@material-ui/core';
-import styles from "./common-styles.js";
-import { withStyles } from '@material-ui/core/styles';
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 
 import BrandLogoNav from '@components/BrandLogoNav';
 import Popup from '@components/Popup/Popup';
 import About from '../../pages/Posts/About';
-
-import {
-  findLessonById,
-  ThemeContext,
-  SHOW_COPYRIGHT,
-  SITE_NAME,
-} from '../../config/config.js';
+import { findLessonById, ThemeContext, SHOW_COPYRIGHT, SITE_NAME } from '../../config/config.js';
 import { CONTENT_SOURCE } from '@common/global-config';
 import { renderText, chooseVariables } from '../../platform-logic/renderText.js';
 import withTranslation from '../../util/withTranslation.js';
 
-import { VariableSizeList as List } from 'react-window';
+const ProblemCardWrapper = lazy(() => import('@components/problem-layout/ProblemCardWrapper'));
 
-const ROW_GAP = 16;
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.background.default,
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  container: {
+    flexGrow: 1,
+    padding: theme.spacing(4, 0),
+  },
+  problemCard: {
+    marginBottom: theme.spacing(4),
+  },
+  title: {
+    marginBottom: theme.spacing(2),
+  },
+  stepWrapper: {
+    margin: theme.spacing(2, 0),
+  },
+  footer: {
+    marginTop: 'auto',
+    padding: theme.spacing(2),
+    display: 'flex',
+    alignItems: 'center',
+  },
+  spacer: {
+    flexGrow: 1,
+  },
+}));
 
-// Code-split the heavy ProblemCardWrapper
-const ProblemCardWrapper = lazy(() =>
-  import('@components/problem-layout/ProblemCardWrapper')
-);
-
-const ViewAllProblems = ({ classes, translate }) => {
+const ViewAllProblems = ({ translate }) => {
+  const classes = useStyles();
   const { lessonID } = useParams();
   const context = useContext(ThemeContext);
-  const listRef = useRef();
-  const sizeMap = useRef({});
-
   const [lesson, setLesson] = useState(null);
   const [problemPool, setProblemPool] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [seed] = useState(() => Date.now().toString());
 
-  // 1) Lazy-load the JSON pool
   useEffect(() => {
-    import(
-      `@generated/processed-content-pool/${CONTENT_SOURCE}.json`
-    )
-      .then(module => setProblemPool(module.default))
-      .catch(err => console.error('Failed to load problems', err));
+    import(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`)
+      .then(module => setProblemPool(module.default || []))
+      .catch(console.error);
   }, []);
 
-  // 2) Load the lesson object
   useEffect(() => {
-    const l = findLessonById(lessonID);
-    if (l) {
-      setLesson(l);
-    }
+    const found = findLessonById(lessonID);
+    if (found) setLesson(found);
   }, [lessonID]);
 
-  // 3) Memoize the filtered list
   const filteredProblems = useMemo(() => {
     if (!lesson || !problemPool.length) return [];
     return problemPool.filter(problem =>
@@ -86,159 +85,94 @@ const ViewAllProblems = ({ classes, translate }) => {
         return kcs.some(kc => kc in lesson.learningObjectives);
       })
     );
-  }, [lesson, context.skillModel, problemPool]);
+  }, [lesson, problemPool, context.skillModel]);
 
-  // 4) Reset measurements when content changes
-  useEffect(() => {
-    if (listRef.current) {
-      listRef.current.resetAfterIndex(0, true);
-    }
-  }, [filteredProblems]);
-
-  // 5) Size getter: use measured height or fallback (including gap)
-  const getItemSize = index => sizeMap.current[index] || 400 + ROW_GAP;
-
-  // 6) Row renderer with measurement
-  const Row = ({ index, style }) => {
-    const problem = filteredProblems[index];
-    const rowRef = useRef(null);
-
-    useLayoutEffect(() => {
-      if (!rowRef.current) return;
-      const contentHeight = rowRef.current.getBoundingClientRect().height;
-      const totalHeight = contentHeight + ROW_GAP;
-      if (sizeMap.current[index] !== totalHeight) {
-        sizeMap.current[index] = totalHeight;
-        listRef.current.resetAfterIndex(index);
-      }
-    }, [filteredProblems, index]);
-
-    return (
-      <Box ref={rowRef} style={style} px={2}>
-        <Card className={classes.titleCard} elevation={2}>
-          <CardContent>
-            <Typography
-              variant="h5"
-              component="h2"
-              className={classes.problemHeader}
-              align="center"
-              gutterBottom
-            >
-              {renderText(
-                problem.title,
-                problem.id,
-                chooseVariables(problem.variabilization, seed),
-                context
-              )}
-            </Typography>
-            <Divider />
-            <Typography
-              component="div"
-              className={classes.problemBody}
-              align="center"
-            >
-              {renderText(
-                problem.body,
-                problem.id,
-                chooseVariables(problem.variabilization, seed),
-                context
-              )}
-            </Typography>
-          </CardContent>
-        </Card>
-
-        {problem.steps.map((step, idx) => (
-          <React.Fragment key={step.id}>
-            <Box display="flex" justifyContent="center" mt={2}>
-              <Box width="100%" maxWidth={1000}>
-                <Suspense fallback={<Typography>Loading step…</Typography>}>
-                  <ProblemCardWrapper
-                    step={step}
-                    index={idx}
-                    seed={seed}
-                    problemID={problem.id}
-                    problemVars={problem.problemVars || {}}
-                    lesson={lesson}
-                    courseName={problem.courseName}
-                    giveStuFeedback
-                    giveStuHints
-                    giveStuBottomHint
-                    unlockFirstHint
-                    giveHintOnIncorrect
-                    keepMCOrder
-                    keyboardType={undefined}
-                    answerMade={() => {}}
-                    clearStateOnPropChange={lessonID}
-                  />
-                </Suspense>
-              </Box>
-            </Box>
-            {idx < problem.steps.length - 1 && (
-              <Divider style={{ margin: `${ROW_GAP}px 0` }} />
-            )}
-          </React.Fragment>
-        ))}
-      </Box>
-    );
-  };
+  const topicsText = lesson && lesson.topics
+    ? Array.isArray(lesson.topics)
+      ? lesson.topics.join(', ')
+      : String(lesson.topics)
+    : '';
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      style={{ backgroundColor: '#F6F6F6', minHeight: '100vh' }}
-    >
-      {/* App Bar */}
+    <Box className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Grid container alignItems="center" justifyContent="space-between">
+          <Grid container alignItems="center">
             <Grid item xs={3}>
               <BrandLogoNav />
             </Grid>
-            <Grid
-              item
-              xs={6}
-              style={{ textAlign: 'center', paddingTop: 3 }}
-            >
-              {lesson?.name} {lesson?.topics}
+            <Grid item xs={6}>
+              <Typography variant="h6" align="center">
+                {lesson?.name}{topicsText && `: ${topicsText}`}
+              </Typography>
             </Grid>
-            <Grid item xs={3} style={{ textAlign: 'right' }} />
+            <Grid item xs={3} style={{ textAlign: 'right' }}>
+              <IconButton onClick={() => setShowPopup(true)}>
+                <HelpOutlineOutlinedIcon />
+              </IconButton>
+            </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
 
-      {/* Main Content */}
-      <Container maxWidth="lg" style={{ flexGrow: 1, padding: '16px 0' }}>
-        <List
-          ref={listRef}
-          height={window.innerHeight - 200}
-          itemCount={filteredProblems.length}
-          itemSize={getItemSize}
-          width="100%"
-          overscanCount={5}
-        >
-          {Row}
-        </List>
+      <Container maxWidth="lg" className={classes.container}>
+        {filteredProblems.length ? (
+          filteredProblems.map((problem, pIndex) => (
+            <Box key={problem.id} className={classes.problemCard}>
+              <Card elevation={2}>
+                <CardContent>
+                  <Typography variant="h5" className={classes.title} align="center">
+                    {renderText(
+                      problem.title,
+                      problem.id,
+                      chooseVariables(problem.variabilization, seed),
+                      context
+                    )}
+                  </Typography>
+                  <Divider />
+                  <Box mt={2}>
+                    <Typography align="center">
+                      {renderText(
+                        problem.body,
+                        problem.id,
+                        chooseVariables(problem.variabilization, seed),
+                        context
+                      )}
+                    </Typography>
+                  </Box>
+                </CardContent>
+              </Card>
+
+              {problem.steps.map((step, idx) => (
+                <Box key={step.id} className={classes.stepWrapper}>
+                  <Suspense fallback={<Typography>Loading step…</Typography>}>
+                    <ProblemCardWrapper
+                      {...{ step, idx, seed, lesson, problem }}
+                      clearStateOnPropChange={lessonID}
+                    />
+                  </Suspense>
+                  {idx < problem.steps.length - 1 && <Divider />}
+                </Box>
+              ))}
+            </Box>
+          ))
+        ) : (
+          <Typography align="center"></Typography>
+        )}
       </Container>
 
-      {/* Footer */}
-      <Box display="flex" alignItems="center" p={2}>
-        <Box fontSize={16} flexGrow={1}>
-          {SHOW_COPYRIGHT && <>{`© ${new Date().getFullYear()} ${SITE_NAME}`}</>}
-        </Box>
-        <IconButton
-          aria-label="about"
-          title={`About ${SITE_NAME}`}
-          onClick={() => setShowPopup(true)}
-        >
-          <HelpOutlineOutlinedIcon htmlColor="#000" style={{ fontSize: 36 }} />
-        </IconButton>
-        <Popup isOpen={showPopup} nClose={() => setShowPopup(false)}>
-          <About />
-        </Popup>
+      <Box className={classes.footer}>
+        <Typography variant="body2">
+          {SHOW_COPYRIGHT && `© ${new Date().getFullYear()} ${SITE_NAME}`}
+        </Typography>
+        <div className={classes.spacer} />
       </Box>
+
+      <Popup isOpen={showPopup} nClose={() => setShowPopup(false)}>
+        <About />
+      </Popup>
     </Box>
   );
 };
 
-export default withStyles(styles)(withTranslation(ViewAllProblems));
+export default withTranslation(ViewAllProblems);
