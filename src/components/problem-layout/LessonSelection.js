@@ -16,6 +16,7 @@ import BuildTimeIndicator from "@components/BuildTimeIndicator";
 import withTranslation from "../../util/withTranslation.js";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -130,29 +131,34 @@ class LessonSelection extends React.Component {
                                     : this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>
-                                                <center>
-                                                    <Paper className={classes.paper}>
-                                                        <h2 style={{
-                                                            marginTop: "5px",
-                                                            marginBottom: "10px"
-                                                        }}>
-                                                            {lesson.name.toString().replace(/##/g, "")}
-                                                        </h2>
-                                                        <h3 style={{ marginTop: "5px" }}>{lesson.topics}</h3>
-                                                        <Button variant="contained" color="primary"
-                                                            className={classes.button}
-                                                            aria-label={`View Lesson ${lesson.id}`}
-                                                            aria-roledescription={`Navigate to lesson ${lesson.id}'s page to start working on problems`}
-                                                            role={"link"}
-                                                            style={{ marginBottom: "10px", minWidth: "auto", width: "auto"}}
-                                                            onClick={() => {
-                                                                this.props.history.push(`/lessons/${lesson.id}`)
-                                                            }}>
-                                                            {translate('lessonSelection.onlyselect')}
-                                                        </Button>
-                                                    </Paper>
-                                                </center>
-                                            </Grid>
+    <center>
+      <Paper className={classes.paper} style={{ position: 'relative' }}>
+        {/* top-right “view all problems” button */}
+        <IconButton
+          size="small"
+          style={{ position: 'absolute', top: 8, right: 8 }}
+          aria-label={`View all problems for lesson ${lesson.id}`}
+          onClick={() => this.props.history.push(`/lessons/${lesson.id}/problems`)}
+        >
+          <MenuBookIcon fontSize="small" />
+        </IconButton>
+
+        <h2 style={{ marginTop: 5, marginBottom: 10 }}>
+          {lesson.name.replace(/##/g, "")}
+        </h2>
+        <h3 style={{ marginTop: 5 }}>{lesson.topics}</h3>
+
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
+        >
+          {translate('lessonSelection.onlyselect')}
+        </Button>
+      </Paper>
+    </center>
+  </Grid>
                                         )
                                     })
                                 }

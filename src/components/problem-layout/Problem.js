@@ -36,6 +36,9 @@ import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
 
 class Problem extends React.Component {
+    static defaultProps = {
+        autoScroll: true
+      };
     static contextType = ThemeContext;
 
     constructor(props, context) {
@@ -314,11 +317,13 @@ class Problem extends React.Component {
                     "not last step so not done w/ problem, step states:",
                     nextStepStates
                 );
-                scroller.scrollTo((cardIndex + 1).toString(), {
-                    duration: 500,
-                    smooth: true,
-                    offset: -100,
-                });
+                if (this.props.autoScroll) {
+                    scroller.scrollTo((cardIndex + 1).toString(), {
+                        duration: 500,
+                        smooth: true,
+                        offset: -100,
+                    });
+                }
                 this.setState({
                     stepStates: nextStepStates,
                 });
