@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(4, 0),
   },
   problemCard: {
+    position: 'relative',  // allow absolute positioning of id badge
     marginBottom: theme.spacing(4),
   },
   noFooterWrapper: {
@@ -59,6 +60,14 @@ const useStyles = makeStyles(theme => ({
   },
   spacer: {
     flexGrow: 1,
+  },
+  idBadge: {
+    position: 'absolute',
+    top: theme.spacing(1),
+    right: theme.spacing(1),
+    backgroundColor: 'rgba(255,255,255,0.8)',
+    padding: theme.spacing(0.5, 1),
+    borderRadius: theme.shape.borderRadius,
   },
 }));
 
@@ -147,8 +156,15 @@ const ViewAllProblems = ({ translate }) => {
       <Container maxWidth="lg" className={classes.container}>
         {visibleProblems.length ? visibleProblems.map(problem => (
           <Box key={problem.id} className={classes.problemCard}>
+            {/* ID badge */}
+            <Box className={classes.idBadge}>
+              <Typography variant="caption" color="textSecondary">
+                {problem.id}
+              </Typography>
+            </Box>
             <Box className={classes.noFooterWrapper}>
               <ProblemWrapper
+                autoScroll={false}
                 problem={problem}
                 lesson={lesson}
                 seed={seed}
