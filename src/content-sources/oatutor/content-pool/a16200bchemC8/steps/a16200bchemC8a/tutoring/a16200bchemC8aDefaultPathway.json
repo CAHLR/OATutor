@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16200bchemC8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Compound Type",
+        "text": "Is $$CaBr_2$$ an ionic or covalent compound?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bchemC8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16200bchemC8a-h1"
+        ],
+        "title": "Dissociation in Water",
+        "text": "What happens to ionic compounds when they dissolve in water?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bchemC8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\operatorname{CaBr_2}\\left(s\\right)$$ -> $${Ca}^2+aq$$ + $$2{Br}^{-aq}$$"
+        ],
+        "dependencies": [
+            "a16200bchemC8a-h2"
+        ],
+        "title": "Write the Dissociation Equation",
+        "text": "Write the dissociation equation for $$CaBr_2$$ in water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bchemC8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16200bchemC8a-h3"
+        ],
+        "title": "Check Ion Charges",
+        "text": "What are the charges of Ca and Br ions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bchemC8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\operatorname{CaBr_2}\\left(s\\right)$$ -> $${Ca}^2+aq$$ + $$2{Br}^{-aq}$$"
+        ],
+        "dependencies": [
+            "a16200bchemC8a-h4"
+        ],
+        "title": "Balance the Equation",
+        "text": "Ensure the equation is balanced in terms of charge and atoms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

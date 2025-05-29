@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a16200bc2_6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Lewis Structures",
+        "text": "A Lewis structure is a diagram that shows the bonding between atoms of a molecule and the lone pairs of electrons that may exist in the molecule. It helps in predicting the shape, bond angles, and polarity of the molecule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bc2_6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bond Angles in Molecules",
+        "text": "The bond angle is the angle formed between three atoms across at least two bonds. In a linear molecule, the bond angle is typically 180\u00b0. In a bent or angular molecule, the bond angle is less than 180\u00b0.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bc2_6a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Molecular Shape",
+        "text": "The shape of a molecule is determined by the number of bonding pairs and lone pairs around the central atom. For example, a molecule with two bonding pairs and no lone pairs is linear, while a molecule with two bonding pairs and one lone pair is bent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bc2_6a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Polar Bonds and Polarity",
+        "text": "A polar bond is a covalent bond between two atoms where the electrons forming the bond are unequally distributed. The overall polarity of a molecule depends on both the individual polarities of the bonds and the shape of the molecule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bc2_6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A. 180\u00b0"
+        ],
+        "dependencies": [
+            "a16200bc2_6a-h1"
+        ],
+        "title": "Determine the Bond Angle",
+        "text": "What is the bond angle in NH\u2082\u207b?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A. 180\u00b0",
+            "B. 90\u00b0",
+            "C. 120\u00b0",
+            "D. $$109.5\\degree$$"
+        ]
+    },
+    {
+        "id": "a16200bc2_6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B. Linear"
+        ],
+        "dependencies": [
+            "a16200bc2_6a-h2"
+        ],
+        "title": "Identify the Molecular Shape",
+        "text": "What is the molecular shape of NH\u2082\u207b?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A. Linear",
+            "B. Bent",
+            "C. Trigonal Planar",
+            "D. Tetrahedral"
+        ]
+    },
+    {
+        "id": "a16200bc2_6a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "C. Yes"
+        ],
+        "dependencies": [
+            "a16200bc2_6a-h3"
+        ],
+        "title": "Check for Polar Bonds",
+        "text": "Does NH\u2082\u207b have any polar bonds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A. Yes",
+            "B. No"
+        ]
+    },
+    {
+        "id": "a16200bc2_6a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "D. Polar"
+        ],
+        "dependencies": [
+            "a16200bc2_6a-h4"
+        ],
+        "title": "Determine Overall Polarity",
+        "text": "Is the overall species NH\u2082\u207b polar or non-polar?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A. Polar",
+            "B. $$Non-Polar$$"
+        ]
+    }
+]

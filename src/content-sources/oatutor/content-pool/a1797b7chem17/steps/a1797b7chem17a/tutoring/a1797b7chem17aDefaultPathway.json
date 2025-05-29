@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a1797b7chem17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To solve this problem, we need to understand how the volume of a gas changes with temperature. This is described by Charles's Law.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem17a-h1"
+        ],
+        "title": "Charles's Law Formula",
+        "text": "Charles's Law states that the volume of a gas is directly proportional to its temperature in Kelvin, given by the formula: $$\\frac{V1}{T1}=\\frac{V2}{T2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem17a-h2"
+        ],
+        "title": "Convert Temperatures to Kelvin",
+        "text": "To use Charles's Law, convert the temperatures from Celsius to Kelvin by adding $$273.15$$. So, $$17.0\\degreeC$$ becomes $$290.15K$$ and $$34.0\\degreeC$$ becomes $$307.15K$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem17a-h3"
+        ],
+        "title": "Set Up the Equation",
+        "text": "Using the formula $$\\frac{V1}{T1}=\\frac{V2}{T2}$$, substitute the known values: $$V1=2.30L$$, $$T1=290.15K$$, and $$T2=307.15K$$. Solve for V2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.43$$"
+        ],
+        "dependencies": [
+            "a1797b7chem17a-h4"
+        ],
+        "title": "Solve for V2",
+        "text": "Rearrange the equation to solve for V2: $$V2=\\frac{V1 T2}{T1}$$. Substitute the values to find V2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

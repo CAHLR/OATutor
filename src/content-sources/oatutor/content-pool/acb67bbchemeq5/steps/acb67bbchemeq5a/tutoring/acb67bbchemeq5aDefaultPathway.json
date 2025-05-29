@@ -1,0 +1,60 @@
+[
+    {
+        "id": "acb67bbchemeq5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Kp",
+        "text": "The equilibrium constant for gases, Kp, is calculated using the partial pressures of the gases involved in the reaction. Remember, solids and liquids do not appear in the expression for Kp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acb67bbchemeq5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acb67bbchemeq5a-h1"
+        ],
+        "title": "Writing the Kp Expression",
+        "text": "For the reaction Fe3O4(s)+4H2(g)\u21cc3Fe(s)+4H2O(g), the Kp expression is based on the partial pressures of the gaseous products and reactants. Write the expression as $$Kp=\\frac{P_{H2} O^4}{{P_{H2}}^4}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acb67bbchemeq5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acb67bbchemeq5a-h2"
+        ],
+        "title": "Substituting Values",
+        "text": "Substitute the given partial pressures into the Kp expression. Use $$P_{H2}=0.60$$ atm and $$P_{H2} O=1.20$$ atm in the expression $$Kp=\\frac{P_{H2} O^4}{{P_{H2}}^4}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acb67bbchemeq5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acb67bbchemeq5a-h3"
+        ],
+        "title": "Calculating Powers",
+        "text": "Calculate the fourth power of the partial pressures: $$P_{H2} O^4$$ and $${P_{H2}}^4$$. This means you need to compute $${1.2}^4$$ and $${0.6}^4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acb67bbchemeq5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acb67bbchemeq5a-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Divide the result of $$P_{H2} O^4$$ by $${P_{H2}}^4$$ to find the value of Kp. Ensure your calculations are accurate to find the correct equilibrium constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
