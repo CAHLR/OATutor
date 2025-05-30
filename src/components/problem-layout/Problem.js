@@ -83,6 +83,8 @@ class Problem extends React.Component {
             feedbackSubmitted: false,
             showPopup: false
         };
+
+        this.togglePopup = this.togglePopup.bind(this);
     }
 
     componentDidMount() {
@@ -626,6 +628,8 @@ class Problem extends React.Component {
                             </div>
                             )}
                         </div>
+
+
                         <div
                             style={{
                                 display: "flex",
@@ -664,6 +668,10 @@ class Problem extends React.Component {
                             <About />
                         </Popup>
                     </div>
+
+
+
+
                     {this.state.showFeedback ? (
                         <div className="Feedback">
                             <center>
@@ -764,6 +772,8 @@ class Problem extends React.Component {
                     ) : (
                         ""
                     )}
+
+                    
                 </footer>
             </>
         );

@@ -23,6 +23,21 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from '../util/withTranslation';
 
+import userIcon from "../assets/UserThumb.svg";
+import IconButton from '@material-ui/core/IconButton';
+import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined"
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import leftArrow from "../assets/chevron-left.svg";
+
+import Popup from '../components/Popup/Popup';
+import About from '../pages/Posts/About.js';
+
+import { animateScroll as scroll, Element, scroller } from "react-scroll";
+import { chooseVariables } from "../platform-logic/renderText.js";
+import TextField from "@material-ui/core/TextField";
+import Spacer from "../components/Spacer";
+import Button from "@material-ui/core/Button";
+
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
 let seed = Date.now().toString();
@@ -44,6 +59,12 @@ class Platform extends React.Component {
         console.debug("USER: ", this.user)
         this.isPrivileged = !!this.user.privileged;
         this.context = context;
+
+        this.state = {
+            showPopup: false
+        }
+
+        this.togglePopup = this.togglePopup.bind(this);
 
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
@@ -270,6 +291,7 @@ class Platform extends React.Component {
         this.course = course;
         this.setState({
             status: "lessonSelection",
+            selectedCourse: course
         });
     };
 
@@ -406,131 +428,259 @@ class Platform extends React.Component {
         }
     };
 
+    togglePopup() {
+    this.setState(prevState => ({
+        showPopup: !prevState.showPopup
+    }));
+    }
+
     render() {
         const { translate } = this.props;
-        this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName) + " | "
-        : translate('platform.LoggedIn') + " | ";
+        const { showPopup } = this.state;
+        const { classes, problem, seed } = this.props;
+        // this.studentNameDisplay = this.context.studentName
+        this.studentNameDisplay = "Placeholder Name";
+        //? decodeURIComponent(this.context.studentName) + " | "
+        // : translate('platform.LoggedIn') + " | ";
         return (
-            <div
-                style={{
-                    backgroundColor: "#F6F6F6",
-                    paddingBottom: 20,
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                <AppBar position="static">
-                    <Toolbar>
-                        <Grid
-                            container
-                            spacing={0}
-                            role={"navigation"}
-                            alignItems={"center"}
-                        >
-                            <Grid item xs={3} key={1}>
-                                <BrandLogoNav
-                                    isPrivileged={this.isPrivileged}
-                                />
+            <>
+                <div
+                    style={{
+                        backgroundColor: "#F6F6F6",
+                        paddingBottom: 20,
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+
+                    <AppBar position="static" style = {{backgroundColor: '#FFFFFF'}}>
+                        <Toolbar>
+                            <Grid
+                                container
+                                spacing={0}
+                                role={"navigation"}
+                                alignItems={"center"}
+                            >
+                                <Grid item xs={3} key = {1}>
+                                    <BrandLogoNav
+                                        isPrivileged={this.isPrivileged}
+                                    />
+                                </Grid>
+                                <Grid item xs={6} key={2}>
+                                    {/* <div
+                                        style={{
+                                            textAlign: "center",
+                                            textAlignVertical: "center",
+                                            paddingTop: "3px",
+                                        }}
+                                    >
+                                        {Boolean(
+                                            findLessonById(this.props.lessonID)
+                                        )
+                                            ? findLessonById(this.props.lessonID)
+                                                .name +
+                                            " " +
+                                            findLessonById(this.props.lessonID)
+                                                .topics
+                                            : ""}
+                                    </div> */}
+                                </Grid>
+
+                                <Grid xs = {3} item key={3}>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "flex-end",
+                                            alignItems: "center", 
+                                            gap: "9px",
+                                            color: "#344054",
+                                        }}
+                                    >
+                                        <img src={userIcon} alt="User Icon" />
+                                        <div style={{ fontWeight: 600 }}>
+                                            {this.studentNameDisplay}
+                                        </div>
+                                    </div>
+                                </Grid>
+
                             </Grid>
-                            <Grid item xs={6} key={2}>
-                                <div
-                                    style={{
-                                        textAlign: "center",
-                                        textAlignVertical: "center",
-                                        paddingTop: "3px",
-                                    }}
-                                >
-                                    {Boolean(
-                                        findLessonById(this.props.lessonID)
+                        </Toolbar>
+                    </AppBar>
+
+
+                    <AppBar position="static" >
+                        <Toolbar style={{ minHeight: '56px'}}>
+                            <Grid
+                                container
+                                spacing={0}
+                                role={"secondary-navigation"}
+                                alignItems={"center"}
+                            >
+                                <Grid item xs={9} key={1}>
+                                {
+                                    this.state.selectedCourse? (
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "flex-start",
+                                                alignItems: "center", 
+                                                gap: "8px"
+                                            }}
+                                        >
+
+                                            <IconButton 
+                                                onClick = {() => this.props.history.goBack()}
+                                                aria-label = "Back" 
+                                            >
+                                                <img src={leftArrow} alt="Back Arrow" />
+
+                                            </IconButton>
+
+                                            <div style={{ fontWeight: 600 }}> {this.state.selectedCourse.courseName} </div>
+                                            
+                                        </div>
                                     )
-                                        ? findLessonById(this.props.lessonID)
-                                              .name +
-                                          " " +
-                                          findLessonById(this.props.lessonID)
-                                              .topics
-                                        : ""}
-                                </div>
+                                
+                                    : findLessonById(this.props.lessonID)?  (
+
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "flex-start",
+                                                alignItems: "center", 
+                                                gap: "8px"
+                                            }}
+                                        >
+                                        
+                                            <IconButton 
+                                                onClick = {() => this.props.history.goBack()}
+                                                aria-label = "Back" 
+                                            >
+                                                <img src={leftArrow} alt="Back Arrow" />
+
+                                            </IconButton>
+
+                                            <div style={{ fontWeight: 600 }}> {findLessonById(this.props.lessonID).courseName} </div>
+                                            
+                                        </div>
+                                        
+                                    )
+                                        : ""
+                                }
+                                </Grid>
+
+
+                                <Grid xs = {3} item key={3}>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            flexGrow: 1,
+                                            justifyContent: "flex-end",
+                                            border: 'none'
+                                        }}
+                                    >
+
+                                        <IconButton
+                                            aria-label="about"
+                                            title={`About ${SITE_NAME}`}
+                                            onClick={this.togglePopup}
+                                        >
+                                            <HelpOutlineOutlinedIcon
+                                                htmlColor={"#ffffff"}
+                                                style={{
+                                                    fontSize: 36,
+                                                    margin: -2,
+                                                }}
+                                            />
+                                        </IconButton>
+
+                                        <IconButton
+                                            aria-label="report problem"
+                                            onClick={this.toggleFeedback}
+                                            title={"Report Problem"}
+                                        >
+                                            <FeedbackOutlinedIcon
+                                                htmlColor={"#ffffff"}
+                                                style={{
+                                                    fontSize: 32,
+                                                }}
+                                            />
+                                        </IconButton>
+                                    </div>
+                                    <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                                        <About />
+                                    </Popup>
+                                    
+                                </Grid>
+
                             </Grid>
-                            <Grid item xs={3} key={3}>
-                                <div
-                                    style={{
-                                        textAlign: "right",
-                                        paddingTop: "3px",
-                                    }}
-                                >
-                                    {this.state.status !== "courseSelection" &&
-                                    this.state.status !== "lessonSelection" &&
-                                    (this.lesson.showStuMastery == null ||
-                                        this.lesson.showStuMastery)
-                                        ? this.studentNameDisplay +
-                                        translate('platform.Mastery') +
-                                          Math.round(this.state.mastery * 100) +
-                                          "%"
-                                        : ""}
-                                </div>
-                            </Grid>
-                        </Grid>
-                    </Toolbar>
-                </AppBar>
-                {this.state.status === "courseSelection" ? (
-                    <LessonSelectionWrapper
-                        selectLesson={this.selectLesson}
-                        selectCourse={this.selectCourse}
-                        history={this.props.history}
-                        removeProgress={this.props.removeProgress}
-                    />
-                ) : (
-                    ""
-                )}
-                {this.state.status === "lessonSelection" ? (
-                    <LessonSelectionWrapper
-                        selectLesson={this.selectLesson}
-                        removeProgress={this.props.removeProgress}
-                        history={this.props.history}
-                        courseNum={this.props.courseNum}
-                    />
-                ) : (
-                    ""
-                )}
-                {this.state.status === "learning" ? (
-                    <ErrorBoundary
-                        componentName={"Problem"}
-                        descriptor={"problem"}
-                    >
-                        <ProblemWrapper
-                            problem={this.state.currProblem}
-                            problemComplete={this.problemComplete}
-                            lesson={this.lesson}
-                            seed={this.state.seed}
-                            lessonID={this.props.lessonID}
-                            displayMastery={this.displayMastery}
+                        </Toolbar>
+                    </AppBar>             
+
+
+
+
+                    {this.state.status === "courseSelection" ? (
+                        <LessonSelectionWrapper
+                            selectLesson={this.selectLesson}
+                            selectCourse={this.selectCourse}
+                            history={this.props.history}
+                            removeProgress={this.props.removeProgress}
                         />
-                    </ErrorBoundary>
-                ) : (
-                    ""
-                )}
-                {this.state.status === "exhausted" ? (
-                    <center>
-                        <h2>
-                            Thank you for learning with {SITE_NAME}. You have
-                            finished all problems.
-                        </h2>
-                    </center>
-                ) : (
-                    ""
-                )}
-                {this.state.status === "graduated" ? (
-                    <center>
-                        <h2>
-                            Thank you for learning with {SITE_NAME}. You have
-                            mastered all the skills for this session!
-                        </h2>
-                    </center>
-                ) : (
-                    ""
-                )}
-            </div>
+                    ) : (
+                        ""
+                    )}
+                    {this.state.status === "lessonSelection" ? (
+                        <LessonSelectionWrapper
+                            selectLesson={this.selectLesson}
+                            removeProgress={this.props.removeProgress}
+                            history={this.props.history}
+                            courseNum={this.props.courseNum}
+                        />
+                    ) : (
+                        ""
+                    )}
+                    {this.state.status === "learning" ? (
+                        <ErrorBoundary
+                            componentName={"Problem"}
+                            descriptor={"problem"}
+                        >
+                            <ProblemWrapper
+                                problem={this.state.currProblem}
+                                problemComplete={this.problemComplete}
+                                lesson={this.lesson}
+                                seed={this.state.seed}
+                                lessonID={this.props.lessonID}
+                                displayMastery={this.displayMastery}
+                            />
+                        </ErrorBoundary>
+                    ) : (
+                        ""
+                    )}
+                    {this.state.status === "exhausted" ? (
+                        <center>
+                            <h2>
+                                Thank you for learning with {SITE_NAME}. You have
+                                finished all problems.
+                            </h2>
+                        </center>
+                    ) : (
+                        ""
+                    )}
+                    {this.state.status === "graduated" ? (
+                        <center>
+                            <h2>
+                                Thank you for learning with {SITE_NAME}. You have
+                                mastered all the skills for this session!
+                            </h2>
+                        </center>
+                    ) : (
+                        ""
+                    )}
+                </div>
+
+            </>
+
         );
     }
 }
