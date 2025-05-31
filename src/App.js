@@ -18,11 +18,10 @@ import {
     ThemeContext,
     USER_ID_STORAGE_KEY,
 } from "./config/config.js";
-import {
-    createTheme,
-    responsiveFontSizes,
-    ThemeProvider,
-} from "@material-ui/core/styles";
+
+import { ThemeProvider } from "@material-ui/core/styles";
+import { theme } from './theme';
+
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -50,9 +49,6 @@ import BrowserStorage from "./util/browserStorage";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config);
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
 
 const queryParamToContext = {
     token: "jwt",
