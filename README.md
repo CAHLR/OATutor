@@ -26,7 +26,7 @@ Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Et
 }
 ```
 
-Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://arxiv.org/abs/2302.06871](https://arxiv.org/abs/2302.06871)
+Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://doi.org/10.1371/journal.pone.0304013](https://doi.org/10.1371/journal.pone.0304013)
 
 ### Content
 Content Repository: [Link](https://github.com/CAHLR/OATutor-Content)
