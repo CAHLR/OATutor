@@ -1,0 +1,130 @@
+[
+    {
+        "id": "aa5f548derivative2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548derivative2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548derivative2a-h1"
+        ],
+        "title": "Application of Power Rule $$1$$",
+        "text": "To get the derivative of $$5x^3$$, we multiply our constant (5) by our exponent (3) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548derivative2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$15x^2$$"
+        ],
+        "dependencies": [
+            "aa5f548derivative2a-h2"
+        ],
+        "title": "Application of Power Rule $$2$$",
+        "text": "What is the derivative of $$5x^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$15x^2-1$$",
+            "$$5x^3-x$$",
+            "$$15x^2-x$$",
+            "$$4x^2+1$$",
+            "$$15x^2$$"
+        ]
+    },
+    {
+        "id": "aa5f548derivative2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548derivative2a-h3"
+        ],
+        "title": "Application of Power Rule $$3$$",
+        "text": "To get the derivative of $$-x$$, we multiply our constant $$(-1)$$ by our exponent (1) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548derivative2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "aa5f548derivative2a-h4"
+        ],
+        "title": "Application of Power Rule $$2$$",
+        "text": "What is the derivative of $$-x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "aa5f548derivative2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548derivative2a-h5"
+        ],
+        "title": "The Constant Rule",
+        "text": "If f(x) is a constant c, $$f'(x)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa5f548derivative2a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aa5f548derivative2a-h6"
+        ],
+        "title": "Application of Constant Rule",
+        "text": "What is the derivative of 1?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$10$$"
+        ]
+    },
+    {
+        "id": "aa5f548derivative2a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aa5f548derivative2a-h7"
+        ],
+        "title": "The Sum Rule",
+        "text": "You can add the two separate derivatives that we just found to find our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

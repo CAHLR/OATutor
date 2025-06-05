@@ -1,0 +1,62 @@
+[
+    {
+        "id": "af81dddsql17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Select Statement",
+        "text": "The SELECT statement is used to retrieve data from a database, with the option to specify which columns to return. In this case, Taylor is selecting the 'Street' and 'ZIP' columns from the 'Customers' table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql17a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "ORDER BY Clause",
+        "text": "The ORDER BY clause is used to sort the result set of a query by one or more columns. The number after ORDER BY, like $$2$$ in \"ORDER BY 2\", refers to the position of the column in the SELECT list.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql17a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Street, ZIP"
+        ],
+        "dependencies": [],
+        "title": "Identify the columns being selected",
+        "text": "In both queries, what column names are used in the SELECT statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Street, ZIP",
+            "ZIP, Name",
+            "Street, City"
+        ]
+    },
+    {
+        "id": "af81dddsql17a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ascending order based on ZIP values"
+        ],
+        "dependencies": [],
+        "title": "Effect of ORDER BY Clause",
+        "text": "What would be the order of the rows in the query results for Query 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Random order without any specific sorting",
+            "Ascending order based on ZIP values",
+            "Descending order based on Street names"
+        ]
+    }
+]

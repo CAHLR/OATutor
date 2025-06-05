@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a690481linear22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Obtaining dy",
+        "text": "In order to determine dy, we must take the derivative of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear22a-h1"
+        ],
+        "title": "Solving for y'",
+        "text": "$$y$$ $$=$$ $$x^3$$ + $$2x$$ + $$\\frac{1}{x}$$ such that y' $$=$$ $$3x^{3-1}$$ + $$2$$ + $$\\left(-1x^{-2}\\right)$$ $$=$$ $$3x^2$$ + $$2$$ - $$\\frac{1}{x^2}$$. Thus, $$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a690481linear22a-h2"
+        ],
+        "title": "Plugging Into y'",
+        "text": "Plug $$x$$ $$=$$ $$1$$ and dx $$=$$ $$0.05$$ into $$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx$$ to solve for dy.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a690481linear22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2$$"
+        ],
+        "dependencies": [
+            "a690481linear22a-h3"
+        ],
+        "title": "Determining dy",
+        "text": "What is dy?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a690481linear22a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.2$$"
+                ],
+                "dependencies": [],
+                "title": "Substitution and Simplification to Getting dy",
+                "text": "$$dy=\\left(3x^2+2-\\frac{1}{x^2}\\right) dx=3\\times1^2+2-0.05\\frac{1}{1^2}=0.05\\left(3+2-1\\right)=4\\times0.05$$. What is dy?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a31f566linalg8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaning of the $$n$$",
+        "text": "The $$n$$ denotes the amount of components that the coefficient vector a should have.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg8a-h1"
+        ],
+        "title": "Meaning of $$x_1$$ , $$x_2$$ ,..., $$x_n$$",
+        "text": "The underscores of the $$x$$ denote the different components of $$x$$, which are multiplied by the coefficient vector by the dot product in order based on index value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg8a-h2"
+        ],
+        "title": "Dot Product",
+        "text": "The dot product multiplies the corresponding components of the two vectors and adds them all together.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg8a-h3"
+        ],
+        "title": "Reordering $$x$$ variables",
+        "text": "To more easily calculate the coefficient vector, reorder the components of $$x$$ in the function to go from $$x_1$$ in increasing index.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$f(x)=3x_1+x_2+x_4$$"
+        ],
+        "dependencies": [
+            "a31f566linalg8a-h3"
+        ],
+        "title": "Reordering Function Variables",
+        "text": "What is the function rewritten so the $$x$$ indeces go from smallest to largest?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg8a-h4"
+        ],
+        "title": "Expanded Dot Product",
+        "text": "When the a and the $$x$$ are dot product multiplied, the resulting expansion is in the form $$a_1 x_1+a_2 x_2+...+a_{nx,n}$$. If there is no term for that index, the component in the coefficient vector is $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

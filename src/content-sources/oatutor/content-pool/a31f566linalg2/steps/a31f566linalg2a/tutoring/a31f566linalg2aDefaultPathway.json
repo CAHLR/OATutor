@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a31f566linalg2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vector Representation",
+        "text": "A vector is represented by each of its components, which are denoted by the $$x_1$$, $$x_2$$, and $$x_3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg2a-h1"
+        ],
+        "title": "Standard Basis Vectors",
+        "text": "Since the input is in $$R^3$$, the standard basis vectors for $$\\pm e_1$$ and $$\\pm e_2$$ have three components. The component that corresponds to the number of the basis vector is $$1$$ while all other components are $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a31f566linalg2a-h2"
+        ],
+        "title": "First Standard Basis Vector",
+        "text": "What is the first standard basis vector in R3 with $$3$$ components?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg2a-h2"
+        ],
+        "title": "Evaluating the Function",
+        "text": "To evaluate the function, plug in the components of the standard basis vectors that correspond to $$x_1$$, $$x_2$$, and $$x_3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a31f566linalg2a-h4"
+        ],
+        "title": "Plugging in Components",
+        "text": "What is the output for the first standard basis vector when $$1$$ is plugged in as $$x_1$$ and $$0$$ as both $$x_2$$ and $$x_3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg2a-h4"
+        ],
+        "title": "Negation of basis vectors",
+        "text": "To find the negative of the vector, multiply each of its components by $$-1$$ and change the sign.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg2a-h6"
+        ],
+        "title": "Trigonometry",
+        "text": "The sine and cosine values for positive and negative pi are either $$0$$ or $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

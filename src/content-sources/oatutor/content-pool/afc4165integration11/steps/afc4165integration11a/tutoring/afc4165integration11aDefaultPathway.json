@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afc4165integration11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Seperating the terms",
+        "text": "We will start by seperating the $$2$$ terms in this integrals and apply the basic inegration rules on each of them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration11a-h1"
+        ],
+        "title": "Seperating the terms",
+        "text": "$$\\int_{0}^{pi} sinx-cosx \\,dx=\\int_{0}^{pi} sinx \\,dx-\\int_{0}^{pi} cosx \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "-cosx"
+        ],
+        "dependencies": [
+            "afc4165integration11a-h2"
+        ],
+        "title": "Integrating the first term",
+        "text": "What is the integration of the first term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "sinx"
+        ],
+        "dependencies": [
+            "afc4165integration11a-h3"
+        ],
+        "title": "Integrating the second term",
+        "text": "What is the integration of the second term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afc4165integration11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afc4165integration11a-h4"
+        ],
+        "title": "Combine two integrations",
+        "text": "$$(-cos(pi)-cos(0))-(sin(pi)-sin(0))=\\left(-\\left(-1\\right)+1\\right)-0-0=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a31f566linalg13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Properties of Linear Functions",
+        "text": "Linear functions preserve vector addition. For example, $$f{\\left(x+y\\right)}=f{\\left(x\\right)}+f{\\left(y\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg13a-h1"
+        ],
+        "title": "Properties of Linear Functions",
+        "text": "Linear functions also must preserve scalar multiplication. For example, $$f(cx)=cf(x)$$ for a constant value c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg13a-h2"
+        ],
+        "title": "Linear Combinations",
+        "text": "A function that preserves both vector addition and scalar multiplication is one that preserves linear combinations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg13a-h3"
+        ],
+        "title": "Checking Linearity",
+        "text": "To check if a function is linear, input example vectors to check that linear combinations are preserved.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a31f566linalg13a-h4"
+        ],
+        "title": "Simple Checking",
+        "text": "The easiest vectors to input into the function to check for linearity are the elementary basis vectors $$e_1$$ ,..., $$e_n$$ or vectors with every component equal to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31f566linalg13a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a31f566linalg13a-h5"
+        ],
+        "title": "Checking Vector Addition",
+        "text": "Does calculating $$f(\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}+f(\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$$ give the same answer as $$f(\\begin{bmatrix} 2 \\\\ 2 \\\\ 2 \\end{bmatrix}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes"
+        ]
+    },
+    {
+        "id": "a31f566linalg13a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a31f566linalg13a-h5"
+        ],
+        "title": "Checking Scalar Multiplication",
+        "text": "Does calculating $$f(\\begin{bmatrix} 2 \\\\ 2 \\\\ 2 \\end{bmatrix}$$ give the same answer as $$2f(\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$$ with $$2$$ as the constant scalar multiple?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "id": "af81dddsql16a",
+    "stepAnswer": [
+        "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "For Query $$1$$, Jordan enters SELECT Street, ZIP FROM Customers. For Query $$2$$, Jordan enters SELECT ZIP, Street FROM Customers",
+    "stepBody": "How should Jordan expect the query results to appear for Query $$1$$ compared to Query 2?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$.",
+    "choices": [
+        "The rows for Street show above ZIP in Query $$1$$, while the rows for ZIP show above Street in Query $$2$$.",
+        "The column for Street shows to the left of ZIP in Query $$1$$, while the column for ZIP show to the left of Street in Query $$2$$.",
+        "The query results for Query $$1$$ will show an error message, while Query $$2$$ will show without any error message.",
+        "The query results appear exactly the same for Query $$1$$ and Query $$2$$."
+    ]
+}
