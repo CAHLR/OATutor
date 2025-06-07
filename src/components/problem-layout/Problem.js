@@ -353,7 +353,7 @@ class Problem extends React.Component {
     };
 
     submitFeedback = () => {
-        const { problem } = this.props;
+        const problem = this.state.currProblem;
 
         console.debug("problem when submitting feedback", problem);
         this.context.firebase.submitFeedback(
@@ -444,12 +444,14 @@ class Problem extends React.Component {
                 <div>
                     <div className={classes.prompt} role={"banner"}>
                         <Card className={classes.titleCard}>
-                            <CardContent
-                                {...stagingProp({
-                                    "data-selenium-target": "problem-header",
-                                })}
+
+                            <div 
+                                style = {{
+                                    backgroundColor: "#EBF4FA",
+                                    padding: 20
+                                }}
                             >
-                                <h1 className={classes.problemHeader}>
+                                <div className={classes.problemHeader}>
                                     {renderText(
                                         problem.title,
                                         problem.id,
@@ -459,8 +461,19 @@ class Problem extends React.Component {
                                         ),
                                         this.context
                                     )}
-                                    <hr />
-                                </h1>
+                                    
+                                </div>
+                            </div>
+
+                            <CardContent
+                                {...stagingProp({
+                                    "data-selenium-target": "problem-header",
+                                })}
+                                style={{ 
+                                    padding: 20
+                                }}
+                            >
+
                                 <div className={classes.problemBody}>
                                     {renderText(
                                         problem.body,
@@ -475,8 +488,9 @@ class Problem extends React.Component {
                             </CardContent>
                         </Card>
                         <Spacer height={8} />
-                        <hr />
+                        
                     </div>
+
                     <div role={"main"}>
                         {problem.steps.map((step, idx) => (
                             <Element
@@ -558,11 +572,16 @@ class Problem extends React.Component {
                             </Grid>
                         ) : (
                             
-                            <Grid container spacing={0}>
-                                <Grid item xs={3} sm={3} md={5} key={1} />
-                                <Grid item xs={6} sm={6} md={2} key={2}>
+                            <Grid 
+                                container 
+                                justifyContent="flex-end"
+                                style={{ marginTop: 32, marginBottom: 32}}
+                            >
+                                <Grid item
+                                    style={{marginRight: 24}}
+                                >
                                     <Button
-                                        className={classes.button}
+                                        className={classes.button} 
                                         style={{ width: "100%" }}
                                         size="small"
                                         onClick={this.clickNextProblem}
@@ -576,11 +595,12 @@ class Problem extends React.Component {
                                         {translate('problem.NextProblem')}
                                     </Button>
                                 </Grid>
-                                <Grid item xs={3} sm={3} md={5} key={3} />
                             </Grid>
+
                         )}
                     </div>
                 </div>
+
                 <footer>
                     <div
                         style={{
@@ -630,7 +650,7 @@ class Problem extends React.Component {
                         </div>
 
 
-                        <div
+                        {/* <div
                             style={{
                                 display: "flex",
                                 flexGrow: 1,
@@ -666,14 +686,20 @@ class Problem extends React.Component {
                         </div>
                         <Popup isOpen={showPopup} onClose={this.togglePopup}>
                             <About />
-                        </Popup>
+                        </Popup> */}
                     </div>
 
 
-
-
-                    {this.state.showFeedback ? (
-                        <div className="Feedback">
+                    {/* {this.state.showFeedback ? (
+                        <div className="Feedback" 
+                            style={{
+                                marginTop: 0,
+                                paddingTop: 0,
+                                paddingBottom: 690,
+                                backgroundColor: "#F6F6F6",
+                            }}
+                        
+                        >
                             <center>
                                 <h1>{translate('problem.Feedback')}</h1>
                             </center>
@@ -771,8 +797,7 @@ class Problem extends React.Component {
                         </div>
                     ) : (
                         ""
-                    )}
-
+                    )} */}
                     
                 </footer>
             </>

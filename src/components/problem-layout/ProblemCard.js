@@ -36,6 +36,10 @@ import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
 import CryptoJS from "crypto-js";
 
+import fileCheck from "../../assets/file-check-02.svg"
+import stars from "../../assets/stars-02.svg"
+import teacherGuide from "../../assets/teacher guidance-cropped.svg"
+
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
 
@@ -146,6 +150,7 @@ class ProblemCard extends React.Component {
             // When we are currently streaming the response from ChatGPT, this variable is `true`
             isGeneratingHint: false, 
             lastAIHintHash: null,
+            answerSelected: false,
         };
 
          // This is used for AI hint generation
@@ -297,6 +302,7 @@ class ProblemCard extends React.Component {
         this.setState(({ isCorrect }) => ({
             inputVal,
             isCorrect: isCorrect ? true : null,
+            answerSelected: inputVal.trim() !== ""
         }));
     };
 
@@ -619,7 +625,11 @@ class ProblemCard extends React.Component {
 
         return (
             <Card className={classes.card}>
-                <CardContent>
+                <CardContent 
+                    style={{ 
+                        padding: '20px',
+                        marginBottom: -20 
+                    }}>
                     <h2 className={classes.stepHeader}>
                         {renderText(
                             this.step.stepTitle,
@@ -718,17 +728,24 @@ class ProblemCard extends React.Component {
                         />
                     </div>
                 </CardContent>
-                <CardActions>
+
+
+
+                <CardActions style = {{padding: "0px"}}>
                     <Grid
                         container
                         spacing={0}
-                        justifyContent="center"
+                        justifyContent="flex-start"
                         alignItems="center"
                     >
-                        <Grid item xs={false} sm={false} md={4} />
-                        <Grid item xs={4} sm={4} md={1}>
+                        {/* <Grid item xs={false} sm={false} md={4} /> */}
+
+
+                        {/* <Grid item xs={4} sm={4} md={1}>
                             {this.showHints && (
                                 <center>
+
+
                                     <IconButton
                                         aria-label="delete"
                                         onClick={this.toggleHints}
@@ -751,100 +768,203 @@ class ProblemCard extends React.Component {
                                             alt="hintToggle"
                                         />
                                     </IconButton>
+
+
                                 </center>
                             )}
-                        </Grid>
-                        <Grid item xs={4} sm={4} md={2}>
-                            <center>
-                                <Button
-                                    className={classes.button}
-                                    style={{ width: "80%" }}
-                                    size="small"
-                                    onClick={this.submit}
-                                    disabled={
-                                        (use_expanded_view && debug) ||
-                                        (!this.allowRetry && problemAttempted)
-                                    }
-                                    {...stagingProp({
-                                        "data-selenium-target": `submit-button-${this.props.index}`,
-                                    })}
-                                >
-                                    {translate('problem.Submit')}
-                                </Button>
-                            </center>
-                        </Grid>
-                        <Grid item xs={4} sm={3} md={1}>
+                        </Grid> */}
+
+
+                        <Grid item xs={12} sm={6} md={3}>
                             <div
                                 style={{
                                     display: "flex",
                                     flexDirection: "row",
-                                    alignContent: "center",
-                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    justifyContent: "flex-start",
+                                    gap: "12px",
                                 }}
                             >
-                                {(!this.showCorrectness ||
-                                    !this.allowRetry) && (
+                            <Button
+                                className={classes.button}
+                                style={{ 
+                                    width: "100%", 
+                                    marginLeft: 20,
+                                    marginBottom: 20,
+                                    marginTop: 40,
+                                    flexShrink: 0
+                                }}
+                                size="small"
+                                onClick={this.submit}
+                                disabled={
+                                    !this.state.inputVal ||
+                                    (use_expanded_view && debug) ||
+                                    (!this.allowRetry && problemAttempted)
+                                }
+                                {...stagingProp({
+                                    "data-selenium-target": `submit-button-${this.props.index}`,
+                                })}
+                            >
+                                {translate('problem.Submit')}
+                            </Button>
+
+                            
+                            {(!this.showCorrectness ||
+                                !this.allowRetry) && (
+                                <img
+                                    className={classes.checkImage}
+                                    style={{
+                                        opacity:
+                                            this.state.isCorrect == null
+                                                ? 0
+                                                : 1,
+                                        width: 30,
+                                        height: 30,
+                                        marginTop: 20
+                                    }}
+                                    alt="Exclamation Mark Icon"
+                                    title={`The instructor has elected to ${joinList(
+                                        !this.showCorrectness &&
+                                            "hide correctness",
+                                        !this.allowRetry &&
+                                            "disallow retries"
+                                    )}`}
+                                    {...stagingProp({
+                                        "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                    })}
+                                    src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
+                                />
+                            )}
+                            {this.state.isCorrect &&
+                                this.showCorrectness &&
+                                this.allowRetry && (
                                     <img
                                         className={classes.checkImage}
                                         style={{
                                             opacity:
-                                                this.state.isCorrect == null
-                                                    ? 0
-                                                    : 1,
-                                            width: "45%",
+                                                this.state.checkMarkOpacity,
+                                            width: 30,
+                                            height: 30,
+                                            marginTop: 20
                                         }}
-                                        alt="Exclamation Mark Icon"
-                                        title={`The instructor has elected to ${joinList(
-                                            !this.showCorrectness &&
-                                                "hide correctness",
-                                            !this.allowRetry &&
-                                                "disallow retries"
-                                        )}`}
+                                        alt="Green Checkmark Icon"
                                         {...stagingProp({
                                             "data-selenium-target": `step-correct-img-${this.props.index}`,
                                         })}
-                                        src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
+                                        src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
                                     />
                                 )}
-                                {this.state.isCorrect &&
-                                    this.showCorrectness &&
-                                    this.allowRetry && (
-                                        <img
-                                            className={classes.checkImage}
-                                            style={{
-                                                opacity:
-                                                    this.state.checkMarkOpacity,
-                                                width: "45%",
-                                            }}
-                                            alt="Green Checkmark Icon"
-                                            {...stagingProp({
-                                                "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                            })}
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
-                                        />
-                                    )}
-                                {this.state.isCorrect === false &&
-                                    this.showCorrectness &&
-                                    this.allowRetry && (
-                                        <img
-                                            className={classes.checkImage}
-                                            style={{
-                                                opacity:
-                                                    100 -
-                                                    this.state.checkMarkOpacity,
-                                                width: "45%",
-                                            }}
-                                            alt="Red X Icon"
-                                            {...stagingProp({
-                                                "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                            })}
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
-                                        />
-                                    )}
+                            {this.state.isCorrect === false &&
+                                this.showCorrectness &&
+                                this.allowRetry && (
+                                    <img
+                                        className={classes.checkImage}
+                                        style={{
+                                            opacity:
+                                                100 -
+                                                this.state.checkMarkOpacity,
+                                            width: 30,
+                                            height: 30,
+                                            marginTop: 20
+                                        }}
+                                        alt="Red X Icon"
+                                        {...stagingProp({
+                                            "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                        })}
+                                        src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
+                                    />
+                                )}
                             </div>
                         </Grid>
-                        <Grid item xs={false} sm={1} md={4} />
+                        
+                        
+                        {/* <Grid item xs={false} sm={1} md={4} /> */}
                     </Grid>
+
+                    <Grid item xs={12}
+                        container
+                        style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            justifyContent: "flex-end",
+                            marginTop: 40,
+                            marginBottom: 20,
+                            gap: "20px"
+                        }}
+                    >
+                            
+                        <Button className={classes.button}
+                            style={{ 
+                                marginLeft: 0,
+                                marginRight: 0, 
+                                minWidth: "180px"
+                            }}
+                            variant="contained"
+                            color="secondary"
+                        >
+                            <div 
+                                style = {{
+                                    marginRight: 8,
+                                    width: "20px",
+                                    height: "20px"
+                                }}
+                            
+                            >
+                               <img src={stars} alt="AI Hint" />
+                            </div>
+
+                            AI Hint
+                        </Button>
+
+                        <Button className={classes.button}
+                            style={{ 
+                                marginLeft: 0,
+                                marginRight: 0,
+                                minWidth: "180px"
+                            }}
+                            variant="contained"
+                            color="secondary"
+                        >
+
+                            <div 
+                                style = {{
+                                    marginRight: 8,
+                                    width: "20px",
+                                    height: "20px"
+                                }}
+                            
+                            >
+                                <img src={fileCheck} alt="AI Solution" />
+                            </div>
+
+
+                            AI Solution
+                        </Button>
+
+                        <Button className={classes.button}
+                            style={{ 
+                                marginLeft: 0,
+                                marginRight: 20,
+                                minWidth: "180px",
+                            }}
+                            variant="contained"
+                            color="secondary"
+                        >
+                            <div 
+                                style = {{
+                                    marginRight: 8,
+                                    width: "20px",
+                                    height: "20px"
+                                }}
+                            
+                            >
+                                <img src={teacherGuide} alt="Teacher Guidance" />
+                            </div>
+                            
+                            Teacher Guidance
+                        </Button>
+                    </Grid>                    
                 </CardActions>
             </Card>
         );

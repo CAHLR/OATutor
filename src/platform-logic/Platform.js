@@ -38,6 +38,9 @@ import TextField from "@material-ui/core/TextField";
 import Spacer from "../components/Spacer";
 import Button from "@material-ui/core/Button";
 
+import { withStyles } from "@material-ui/core/styles";
+import styles from "../components/problem-layout/common-styles.js";
+
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
 let seed = Date.now().toString();
@@ -61,10 +64,13 @@ class Platform extends React.Component {
         this.context = context;
 
         this.state = {
-            showPopup: false
-        }
+            showPopup: false,
+            feedback: "",
+            feedbackSubmitted: false,
+        };
 
         this.togglePopup = this.togglePopup.bind(this);
+        this.toggleFeedback = this.toggleFeedback.bind(this);
 
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
@@ -84,12 +90,16 @@ class Platform extends React.Component {
                 currProblem: null,
                 status: "courseSelection",
                 seed: seed,
+                feedback: "",
+                feedbackSubmitted: false,               
             };
         } else {
             this.state = {
                 currProblem: null,
                 status: "courseSelection",
                 seed: seed,
+                feedback: "",
+                feedbackSubmitted: false,
             };
         }
 
@@ -434,6 +444,35 @@ class Platform extends React.Component {
     }));
     }
 
+    submitFeedback = () => {
+        const problem = this.state.currProblem;
+
+        console.debug("problem when submitting feedback", problem);
+        this.context.firebase.submitFeedback(
+            problem.id,
+            this.state.feedback,
+            this.state.problemFinished,
+            chooseVariables(problem.variabilization, this.props.seed),
+            problem.courseName,
+            problem.steps,
+            problem.lesson
+        );
+        this.setState({ feedback: "", feedbackSubmitted: true });
+    };
+
+    toggleFeedback = () => {
+        this.setState((prevState) => ({
+            showFeedback: !prevState.showFeedback,
+            }),
+        
+            () => {
+                if (this.state.showFeedback && !this.state.showpopup) {
+                    scroll.scrollToBottom({ duration: 500, smooth: true });
+                }
+            }
+        );
+    };
+
     render() {
         const { translate } = this.props;
         const { showPopup } = this.state;
@@ -594,18 +633,23 @@ class Platform extends React.Component {
                                             />
                                         </IconButton>
 
-                                        <IconButton
-                                            aria-label="report problem"
-                                            onClick={this.toggleFeedback}
-                                            title={"Report Problem"}
-                                        >
-                                            <FeedbackOutlinedIcon
-                                                htmlColor={"#ffffff"}
-                                                style={{
-                                                    fontSize: 32,
-                                                }}
-                                            />
-                                        </IconButton>
+ 
+                                        {this.state.status === "learning" && (
+                                            <IconButton
+                                                aria-label="report problem"
+                                                onClick={this.toggleFeedback}
+                                                title={"Report Problem"}
+                                                
+                                            >
+                                                <FeedbackOutlinedIcon
+                                                    htmlColor={"#ffffff"}
+                                                    style={{
+                                                        fontSize: 32,
+                                                    }}
+                                                />
+                                            </IconButton>
+                                        )}
+
                                     </div>
                                     <Popup isOpen={showPopup} onClose={this.togglePopup}>
                                         <About />
@@ -616,8 +660,6 @@ class Platform extends React.Component {
                             </Grid>
                         </Toolbar>
                     </AppBar>             
-
-
 
 
                     {this.state.status === "courseSelection" ? (
@@ -677,12 +719,111 @@ class Platform extends React.Component {
                     ) : (
                         ""
                     )}
-                </div>
 
+                {this.state.showFeedback && (
+                    <div className="Feedback" 
+                        style={{
+                            marginBottom: 100,
+                            marginTop: -70
+                        }}
+                    >
+                        <center>
+                            <h1>{translate('problem.Feedback')}</h1>
+                        </center>
+                        <div className={classes.textBox}>
+                            <div className={classes.textBoxHeader}>
+                                <center>
+                                    {this.state.feedbackSubmitted
+                                        ? translate('problem.Thanks')
+                                        : translate('problem.Description')}
+                                </center>
+                            </div>
+                            {this.state.feedbackSubmitted ? (
+                                <Spacer />
+                            ) : (
+                                <Grid container spacing={0}>
+                                    <Grid
+                                        item
+                                        xs={1}
+                                        sm={2}
+                                        md={2}
+                                        key={1}
+                                    />
+                                    <Grid
+                                        item
+                                        xs={10}
+                                        sm={8}
+                                        md={8}
+                                        key={2}
+                                    >
+                                        <TextField
+                                            id="outlined-multiline-flexible"
+                                            label={translate('problem.Response')}
+                                            multiline
+                                            fullWidth
+                                            minRows="6"
+                                            maxRows="20"
+                                            value={this.state.feedback}
+                                            onChange={(event) =>
+                                                this.setState({
+                                                    feedback:
+                                                        event.target.value,
+                                                })
+                                            }
+                                            className={classes.textField}
+                                            margin="normal"
+                                            variant="outlined"
+                                        />{" "}
+                                    </Grid>
+                                    <Grid
+                                        item
+                                        xs={1}
+                                        sm={2}
+                                        md={2}
+                                        key={3}
+                                    />
+                                </Grid>
+                            )}
+                        </div>
+                        {this.state.feedbackSubmitted ? (
+                            ""
+                        ) : (
+                            <div className="submitFeedback">
+                                <Grid container spacing={0}>
+                                    <Grid
+                                        item
+                                        xs={3}
+                                        sm={3}
+                                        md={5}
+                                        key={1}
+                                    />
+                                    <Grid item xs={6} sm={6} md={2} key={2}>
+                                        <Button
+                                            className={classes.button}
+                                            onClick={this.submitFeedback}
+                                            style={{ width: "100%" }}
+                                            disabled={this.state.feedback.trim() === ""}
+                                        >
+                                            {translate('problem.Submit')}
+                                        </Button>
+                                    </Grid>
+                                    <Grid
+                                        item
+                                        xs={3}
+                                        sm={3}
+                                        md={5}
+                                        key={3}
+                                    />
+                                </Grid>
+                            </div>
+                        )}
+                    </div>
+                )}
+                </div>
             </>
 
         );
     }
 }
 
-export default withRouter(withTranslation(Platform));
+export default withStyles(styles)(withRouter(withTranslation(Platform)));

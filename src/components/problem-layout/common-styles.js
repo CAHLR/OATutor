@@ -1,9 +1,9 @@
 const styles = theme => ({
     card: {
-        width: '65%',
+        width: '75%',
         marginLeft: 'auto',
         marginRight: 'auto',
-        marginBottom: 20
+        marginBottom: 32
     },
     hintCard: {
         width: '40em',
@@ -31,18 +31,20 @@ const styles = theme => ({
         width: "20%"
     },
 
+    
+
     stepHeader: {
         //textAlign: 'center',
         fontSize: 20,
         marginTop: 0,
-        marginLeft: 10
+        marginBottom: 20
+        //marginLeft: 10
     },
 
     stepBody: {
         //textAlign: 'center',
         fontSize: 20,
         marginTop: 10,
-        marginBottom: 30,
         marginLeft: 10
     },
 
@@ -87,7 +89,8 @@ const styles = theme => ({
         marginLeft: 0,
         marginRight: 0,
         marginTop: 20,
-        textAlign: 'center',
+        marginBottom: 32,
+        textAlign: 'left',
         fontSize: 20,
         fontFamily: 'Titillium Web, sans-serif',
     },
@@ -98,12 +101,13 @@ const styles = theme => ({
         paddingBottom: 0,
     },
     problemHeader: {
-        fontSize: 25,
+        fontSize: 22,
+        fontWeight: 700,
         marginTop: 0,
     },
     problemBody: {
-        fontSize: 20,
-        marginTop: 10,
+        fontSize: 18,
+        marginTop: 0,
     },
     problemStepHeader: {
         fontSize: 25,
