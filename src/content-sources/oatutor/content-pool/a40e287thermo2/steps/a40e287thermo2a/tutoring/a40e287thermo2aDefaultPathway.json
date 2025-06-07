@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a40e287thermo2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Phase Change",
+        "text": "Look at the graph and identify where the phase change from solid to liquid occurs. This is where the temperature remains constant for a period of time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40e287thermo2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40e287thermo2a-h1"
+        ],
+        "title": "Locate the Plateau",
+        "text": "Find the first plateau on the graph. This is the section where the temperature does not increase despite the passage of time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40e287thermo2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40e287thermo2a-h2"
+        ],
+        "title": "Read the Temperature",
+        "text": "Read the temperature value on the y-axis that corresponds to the first plateau. This is the melting point of the substance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40e287thermo2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40e287thermo2a-h3"
+        ],
+        "title": "Check the Units",
+        "text": "Ensure that the temperature is read in degrees Celsius (\u02daC) as indicated on the y-axis of the graph.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40e287thermo2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1500$$"
+        ],
+        "dependencies": [
+            "a40e287thermo2a-h4"
+        ],
+        "title": "Determine the Melting Point",
+        "text": "What is the temperature at the first plateau on the graph?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
