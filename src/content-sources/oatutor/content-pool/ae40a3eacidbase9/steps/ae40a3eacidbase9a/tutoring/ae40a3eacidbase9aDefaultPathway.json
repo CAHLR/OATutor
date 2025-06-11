@@ -1,0 +1,94 @@
+[
+    {
+        "id": "ae40a3eacidbase9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Weak Acid Dissociation",
+        "text": "To calculate the pH of a weak acid solution, you need to understand how the acid dissociates in water. HF partially dissociates into H\u207a and F\u207b ions. The dissociation can be represented by the equation: HF \u21cc H\u207a + F\u207b.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase9a-h1"
+        ],
+        "title": "Using the Acid Dissociation Constant (Ka)",
+        "text": "The acid dissociation constant (Ka) is a measure of the strength of an acid in solution. For HF, Ka is given as $$6.8\\times{10}^{-4}$$. This value helps us determine the concentration of H\u207a ions in the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase9a-h2"
+        ],
+        "title": "Setting Up the Equilibrium Expression",
+        "text": "The equilibrium expression for the dissociation of HF is: Ka $$=$$ (H\u207a)(F\u207b)/(HF). You can assume that the initial concentration of HF is $$0.560$$ M and that the change in concentration of HF is $$x$$, where $$x$$ is the concentration of H\u207a and F\u207b at equilibrium.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase9a-h3"
+        ],
+        "title": "Solving for H\u207a Concentration",
+        "text": "Substitute the known values into the equilibrium expression: $$6.8\\times{10}^{-4}$$ $$=$$ $$\\frac{x x}{0.56-x}$$. Since HF is a weak acid, you can assume $$x$$ is much smaller than $$0.560$$, simplifying the expression to $$6.8\\times{10}^{-4}$$ $$=$$ $$\\frac{x^2}{0.56}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0195$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase9a-h4"
+        ],
+        "title": "Calculate $$x$$",
+        "text": "Solve the simplified equation for x: $$x^2$$ $$=$$ $$6.8\\times{10}^{-4}$$ * $$0.560$$. Then, find $$x$$ by taking the square root of the result.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase9a-h5"
+        ],
+        "title": "Calculating pH from H\u207a Concentration",
+        "text": "The pH of a solution is calculated using the formula: pH $$=$$ -log(H\u207a). Use the value of $$x$$ you found to calculate the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.7$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase9a-h6"
+        ],
+        "title": "Final pH Calculation",
+        "text": "Substitute the value of $$x$$ (H\u207a concentration) into the pH formula: pH $$=$$ $$-\\ln\\left(0.0195\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

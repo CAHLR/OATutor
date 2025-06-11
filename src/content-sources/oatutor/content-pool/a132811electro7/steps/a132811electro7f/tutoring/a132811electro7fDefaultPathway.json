@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a132811electro7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Half Reactions",
+        "text": "Look at the cell diagram. Which metal is oxidized and which is reduced?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro7f-h1"
+        ],
+        "title": "Oxidation and Reduction",
+        "text": "In the cell, Zn is oxidized to Zn\u00b2\u207a and Co\u00b2\u207a is reduced to Co. Write the half-reactions for these processes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro7f-h2"
+        ],
+        "title": "Standard Reduction Potentials",
+        "text": "Use the standard reduction potential table to find the potentials for the Zn\u00b2\u207a/Zn and Co\u00b2\u207a/Co half-reactions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro7f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.48$$"
+        ],
+        "dependencies": [
+            "a132811electro7f-h3"
+        ],
+        "title": "Calculate E\u00b0cell",
+        "text": "Use the formula E\u00b0cell $$=$$ E\u00b0cathode - E\u00b0anode. Substitute the values you found from the table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

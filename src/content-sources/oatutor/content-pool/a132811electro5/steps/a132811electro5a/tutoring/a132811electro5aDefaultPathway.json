@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a132811electro5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Anode Reaction",
+        "text": "In a galvanic cell, the anode is where oxidation occurs. This means that the metal at the anode loses electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5a-h1"
+        ],
+        "title": "Identifying the Anode",
+        "text": "In the given galvanic cell, the zinc electrode is the anode. Consider what happens to zinc during the reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5a-h2"
+        ],
+        "title": "Oxidation Reaction at the Anode",
+        "text": "Zinc metal (Zn) loses electrons to form zinc ions (Zn\u00b2\u207a). Write the equation for this oxidation process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zn(s)\u2192Zn2+(aq)+2e-"
+        ],
+        "dependencies": [
+            "a132811electro5a-h3"
+        ],
+        "title": "Write the Anode Reaction",
+        "text": "Combine the information to write the half-reaction for the anode. Remember to include phase symbols.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

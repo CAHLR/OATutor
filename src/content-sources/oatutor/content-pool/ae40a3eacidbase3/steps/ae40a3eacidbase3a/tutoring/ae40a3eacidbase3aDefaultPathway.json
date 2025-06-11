@@ -1,0 +1,120 @@
+[
+    {
+        "id": "ae40a3eacidbase3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conjugate $$\\frac{Acid}{Base}$$ Pairs",
+        "text": "A conjugate $$\\frac{acid}{base}$$ pair consists of two species that differ by a single proton (H+). The acid donates a proton to become its conjugate base, and the base accepts a proton to become its conjugate acid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase3a-h1"
+        ],
+        "title": "Identifying the Pairs",
+        "text": "Look at each pair and determine if they differ by just one proton. If they do, they are a conjugate $$\\frac{acid}{base}$$ pair.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase3a-h2"
+        ],
+        "title": "Analyzing SO42- / HSO4-",
+        "text": "Does SO42- become HSO4- by gaining a single proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ae40a3eacidbase3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase3a-h2"
+        ],
+        "title": "Analyzing HC2H3O2 / C2H3O2-",
+        "text": "Does HC2H3O2 become C2H3O2- by losing a single proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ae40a3eacidbase3a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase3a-h2"
+        ],
+        "title": "Analyzing HO- / H3O+",
+        "text": "Does HO- become H3O+ by gaining a single proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ae40a3eacidbase3a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase3a-h2"
+        ],
+        "title": "Analyzing H2SO3 / HSO3-",
+        "text": "Does H2SO3 become HSO3- by losing a single proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ae40a3eacidbase3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase3a-h5"
+        ],
+        "title": "Conclusion",
+        "text": "The pair that does not differ by a single proton is not a conjugate $$\\frac{acid}{base}$$ pair.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

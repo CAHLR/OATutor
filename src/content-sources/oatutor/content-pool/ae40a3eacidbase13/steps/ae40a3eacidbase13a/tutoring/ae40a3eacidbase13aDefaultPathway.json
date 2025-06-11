@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae40a3eacidbase13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Buffer Solutions",
+        "text": "A buffer solution consists of a weak acid and its conjugate base. The pH of the solution is influenced by the ratio of these two components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase13a-h1"
+        ],
+        "title": "Using the Henderson-Hasselbalch Equation",
+        "text": "The Henderson-Hasselbalch equation relates the pH of a buffer solution to the pKa of the weak acid and the ratio of the concentrations of the conjugate base and the weak acid: pH=pKa+log{[A-]/[HA]}",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase13a-h2"
+        ],
+        "title": "Solving for the Concentration Ratio",
+        "text": "Rearrange the Henderson-Hasselbalch equation to solve for the ratio $$\\frac{[A-]/[HA]}{[A-]/[HA]}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$[C6H5COO-]=10[HC6*H5*COO]$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase13a-h3"
+        ],
+        "title": "Calculate the Concentration Ratio",
+        "text": "Given $$pH=5.19$$ and $$pKa=4.19$$, use the equation 5.19=4.19+log{[C6H5COO-]/[HC6H5COO]} to find the ratio.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$[HC6H5COO]=[C6H5COO-]$$",
+            "$$[C6H5COO-]=10[HC6*H5*COO]$$",
+            "$$[C6H5COO-]=\\frac{1}{10} [HC6*H5*COO]$$"
+        ]
+    }
+]

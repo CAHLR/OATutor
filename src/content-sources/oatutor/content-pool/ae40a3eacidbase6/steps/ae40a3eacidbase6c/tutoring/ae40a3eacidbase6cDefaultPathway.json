@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ae40a3eacidbase6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Salt Types",
+        "text": "To classify a salt as acidic, basic, or neutral, consider the strength of the acid and base from which it is derived. A salt formed from a strong acid and a weak base is acidic, while a salt from a weak acid and a strong base is basic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase6c-h1"
+        ],
+        "title": "Identify the Parent Acid and Base",
+        "text": "For Na+F-, identify the acid and base that form this salt. Na+ comes from NaOH, a strong base, and F- comes from HF, a weak acid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Basic Salt"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase6c-h2"
+        ],
+        "title": "Determine the Salt Type",
+        "text": "Given that Na+ comes from a strong base and F- comes from a weak acid, what type of salt is Na+F-?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Acidic Salt",
+            "Basic Salt",
+            "Neutral Salt"
+        ]
+    }
+]

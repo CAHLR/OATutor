@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ae40a3eacidbase6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Salt Types",
+        "text": "To classify a salt as acidic, basic, or neutral, consider the nature of the acid and base from which it is derived. A salt formed from a strong base and a weak acid is typically basic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase6e-h1"
+        ],
+        "title": "Identify the Components",
+        "text": "K+CN- is derived from KOH (a strong base) and HCN (a weak acid).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Basic Salt"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase6e-h2"
+        ],
+        "title": "Determine the Salt Type",
+        "text": "Given that KOH is a strong base and HCN is a weak acid, what type of salt is K+CN-?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Acidic Salt",
+            "Basic Salt",
+            "Neutral Salt"
+        ]
+    }
+]

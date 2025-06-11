@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ae40a3eacidbase10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the pH of a weak base solution, we need to first calculate the pOH and then convert it to pH. Remember, $$pH+pOH=14$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase10a-h1"
+        ],
+        "title": "Calculate Hydroxide Ion Concentration",
+        "text": "Use the formula for the base dissociation constant: $$Kb=\\frac{[OH-][NH4+]/[NH3][OH-][NH4+]/[NH3]}{[OH-][NH4+]/[NH3]}$$. Assume $$[OH-]=[NH4+]$$ and solve for [OH-].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.85\\times{10}^{-3}$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase10a-h2"
+        ],
+        "title": "Solve for [OH-]",
+        "text": "Given $$Kb=1.8\\times{10}^{-5}$$ and $$[NH3]=0.19$$ M, set up the equation: $$1.8\\times{10}^{-5}=\\frac{{[OH-]}^2}{0.19}$$. Solve for [OH-].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase10a-h3"
+        ],
+        "title": "Calculate pOH",
+        "text": "Once you have [OH-], use the formula $$pOH=-log[OH-]$$ to find the pOH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.73$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase10a-h4"
+        ],
+        "title": "Find pOH",
+        "text": "Calculate pOH using the formula: $$pOH=-\\ln\\left(1.85\\times{10}^{-3}\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase10a-h5"
+        ],
+        "title": "Convert pOH to pH",
+        "text": "Use the relationship $$pH+pOH=14$$ to find the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.3$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase10a-h6"
+        ],
+        "title": "Calculate pH",
+        "text": "Subtract the pOH from $$14$$ to find the pH: $$pH=14-2.73$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a132811electro9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ecell\u25e6 and Spontaneity",
+        "text": "The standard cell potential (Ecell\u25e6) is a measure of the driving force behind an electrochemical reaction. A positive Ecell\u25e6 indicates a spontaneous reaction under standard conditions. What does this imply about the Gibbs free energy change (\u2206Go)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro9b-h1"
+        ],
+        "title": "Relationship Between Ecell\u25e6 and \u2206Go",
+        "text": "Recall the relationship between the standard cell potential (Ecell\u25e6) and the Gibbs free energy change (\u2206Go): $$\u2206Go=-nFEcell\u25e6$$. What does a positive Ecell\u25e6 mean for \u2206Go?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a132811electro9b-h2"
+        ],
+        "title": "Calculating \u2206Go from Ecell\u25e6",
+        "text": "Given the equation $$\u2206Go=-nFEcell\u25e6$$, if Ecell\u25e6 is positive, what will be the sign of \u2206Go?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro9b-h3"
+        ],
+        "title": "Conclusion on Spontaneity",
+        "text": "If \u2206Go is negative, what does this indicate about the spontaneity of the reaction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a132811electro9b-h4"
+        ],
+        "title": "Final Answer",
+        "text": "Based on the relationship between Ecell\u25e6 and \u2206Go, is the statement 'Positive Ecell\u25e6 value is an indicator of a non-spontaneous reaction and hence the Gibbs free energy change (\u2206Go) will be positive' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

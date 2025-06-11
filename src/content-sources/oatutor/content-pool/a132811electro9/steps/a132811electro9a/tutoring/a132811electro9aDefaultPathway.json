@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a132811electro9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spontaneity and Ecell",
+        "text": "Recall that a spontaneous reaction is one that occurs naturally without external input. How does the sign of Ecell\u25e6 relate to spontaneity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro9a-h1"
+        ],
+        "title": "Gibbs Free Energy and Ecell Relationship",
+        "text": "The relationship between Gibbs free energy change (\u2206G) and the standard cell potential (Ecell\u25e6) is given by the equation: $$\u2206G=-nFEcell\u25e6$$. What does this equation tell you about the sign of \u2206G when Ecell\u25e6 is negative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a132811electro9a-h2"
+        ],
+        "title": "Analyzing the Equation",
+        "text": "Given the equation $$\u2206G=-nFEcell\u25e6$$, if Ecell\u25e6 is negative, what will be the sign of \u2206G?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro9a-h3"
+        ],
+        "title": "Conclusion on Spontaneity",
+        "text": "If \u2206G is positive, is the reaction spontaneous or non-spontaneous?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a132811electro9a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "Based on your understanding of the relationship between Ecell\u25e6, \u2206G, and spontaneity, is the statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

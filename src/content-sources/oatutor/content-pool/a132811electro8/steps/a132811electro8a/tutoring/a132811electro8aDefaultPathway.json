@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a132811electro8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Cell Components",
+        "text": "Identify the anode and cathode in the galvanic cell. The anode is where oxidation occurs, and the cathode is where reduction occurs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro8a-h1"
+        ],
+        "title": "Oxidation and Reduction Reactions",
+        "text": "Write the half-reactions for the oxidation and reduction processes. Use the given standard reduction potentials.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro8a-h2"
+        ],
+        "title": "Calculating the Standard Cell Potential",
+        "text": "Use the formula: E\u00b0cell $$=$$ E\u00b0cathode - E\u00b0anode. Substitute the given values for the reduction potentials.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Anode: Mg. Cathode: Cr"
+        ],
+        "dependencies": [
+            "a132811electro8a-h1"
+        ],
+        "title": "Identify the Anode and Cathode",
+        "text": "Which metal acts as the anode and which as the cathode in this cell?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Anode: Mg->Mg**2++2e- Cathode: Cr**3++3e-->Cr"
+        ],
+        "dependencies": [
+            "a132811electro8a-h2"
+        ],
+        "title": "Write the Half-Reactions",
+        "text": "What are the half-reactions for the anode and cathode?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.63$$"
+        ],
+        "dependencies": [
+            "a132811electro8a-h3"
+        ],
+        "title": "Calculate E\u00b0cell",
+        "text": "Calculate the standard cell potential using the formula E\u00b0cell $$=$$ E\u00b0cathode - E\u00b0anode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

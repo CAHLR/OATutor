@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae40a3eacidbase17d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Initial pH",
+        "text": "The initial pH of the solution is given as $$10.5$$. This pH corresponds to the concentration of hydroxide ions in the solution. Use this information to find the concentration of the weak base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase17d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase17d-h1"
+        ],
+        "title": "Relating pH to pOH",
+        "text": "Remember that pH and pOH are related by the equation: pH + pOH $$=$$ $$14$$. Use this to find the pOH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase17d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase17d-h2"
+        ],
+        "title": "Finding Hydroxide Ion Concentration",
+        "text": "Once you have the pOH, you can find the concentration of hydroxide ions using the formula: $$[OH**-]$$ $$=$$ $${10}^{\\left(-pOH\\right)}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase17d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase17d-h3"
+        ],
+        "title": "Using the pkb Value",
+        "text": "The pkb value from question c is needed to find the concentration of the weak base. Use the relationship: pkb $$=$$ $$-\\ln\\left(kb\\right)$$ to find kb.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase17d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.2$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase17d-h4"
+        ],
+        "title": "Calculating the Concentration of the Weak Base",
+        "text": "Use the formula: [B] $$=$$ $${[OH**-]}^2$$ / kb to find the concentration of the weak base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
