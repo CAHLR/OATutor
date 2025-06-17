@@ -3,107 +3,89 @@
         "id": "a0afc81chem4a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding Rydberg's Equation",
-        "text": "Rydberg's equation is used to calculate the wavelength of light emitted when an electron transitions between energy levels in a hydrogen atom. The formula is: $$\\frac{1}{\\lambda}=R_H \\left(\\frac{1}{{n_1}^2}-\\frac{1}{{n_2}^2}\\right)$$, where \u03bb is the wavelength, $$R_H$$ is the Rydberg constant (1.097*10**7 m**-1), $$n_1$$ is the lower energy level, and $$n_2$$ is the higher energy level.",
+        "title": "Identify the Variables",
+        "text": "First, identify the initial and final energy levels. In this problem, the initial energy level $$n_i$$ is $$3$$, and the final energy level $$n_f$$ is $$1$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$1$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h1"
         ],
-        "title": "Identify the Energy Levels",
-        "text": "For this problem, the electron transitions from $$n=3$$ to $$n=1$$. Identify the $$n_1$$ for the equation.",
+        "title": "Understand Rydberg's Equation",
+        "text": "Rydberg's equation is $$\\frac{1}{\\lambda}=\\operatorname{R_H}\\left(\\frac{1}{{n_f}^2}-\\frac{1}{{n_i}^2}\\right)$$. Here, \u03bb is the wavelength, $$R_H$$ is the Rydberg constant, $$n_f$$ is the final energy level, and $$n_i$$ is the initial energy level.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$3$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h2"
         ],
-        "title": "Identify the Energy Levels",
-        "text": "For this problem, the electron transitions from $$n=3$$ to $$n=1$$. Identify the $$n_2$$ for the equation.",
+        "title": "Substitute the Values",
+        "text": "Substitute the known values into Rydberg's equation: $$\\frac{1}{\\lambda}=\\operatorname{R_H}\\left(\\frac{1}{1^2}-\\frac{1}{3^2}\\right)$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\frac{1}{\\lambda}=1.097\\times{10}^7 \\left(1-\\frac{1}{9}\\right)$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h3"
         ],
-        "title": "Substitute Values into Rydberg's Equation",
-        "text": "Substitute the known values into Rydberg's equation: $$\\frac{1}{\\lambda}=1.097\\times{10}^7 \\left(\\frac{1}{1^2}-\\frac{1}{3^2}\\right)$$.",
+        "title": "Calculate the Difference",
+        "text": "Calculate the difference inside the parentheses: $$\\frac{1}{1^2}-\\frac{1}{3^2}=1-\\frac{1}{9}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\frac{8}{9}$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h4"
         ],
-        "title": "Simplify the Equation",
-        "text": "Simplify the expression inside the parentheses: $$1-\\frac{1}{9}$$.",
+        "title": "Simplify the Expression",
+        "text": "Simplify the expression: $$1-\\frac{1}{9}=\\frac{8}{9}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h6",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\lambda=102.52\\times{10}^{-9}$$ $$m$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h5"
         ],
-        "title": "Calculate the Wavelength",
-        "text": "Now calculate the wavelength using the simplified equation: $$\\frac{1}{\\lambda}=1.097\\times{10}^7 \\frac{8}{9}$$.",
+        "title": "Calculate $$\\frac{1}{\\lambda}$$",
+        "text": "Now, calculate $$\\frac{1}{\\lambda}=\\frac{8R_H}{9}$$. Use the Rydberg constant $$R_H=1.097373{x10}^7$$ $$m^{-1}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a0afc81chem4a-h7",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$\\lambda=102.52$$ nm"
-        ],
+        "type": "hint",
         "dependencies": [
             "a0afc81chem4a-h6"
+        ],
+        "title": "Find \u03bb",
+        "text": "Finally, find \u03bb by taking the reciprocal of the result from the previous step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a0afc81chem4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a0afc81chem4a-h7"
         ],
         "title": "Convert to Nanometers",
         "text": "Convert the wavelength from meters to nanometers by multiplying by $${10}^9$$.",
