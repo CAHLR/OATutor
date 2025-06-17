@@ -3,8 +3,8 @@
         "id": "a16200bchemC1e-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Identify the Elements",
-        "text": "What elements make up $$SO_3$$?",
+        "title": "Identify the Elements in $$SO_3$$",
+        "text": "First, identify the elements present in the compound $$SO_3$$. What are the elements involved?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,32 +15,23 @@
         "dependencies": [
             "a16200bchemC1e-h1"
         ],
-        "title": "Bond Type",
-        "text": "Is the bond between sulfur and oxygen typically ionic or covalent?",
+        "title": "Determine Metal or Nonmetal",
+        "text": "Sulfur (S) and Oxygen (O) are both nonmetals. Remember, nonmetals tend to form covalent bonds with each other.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a16200bchemC1e-h3",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "small"
-        ],
+        "type": "hint",
         "dependencies": [
             "a16200bchemC1e-h2"
         ],
-        "title": "Electronegativity Difference",
-        "text": "Consider the electronegativity difference between sulfur and oxygen. Is it large or small?",
+        "title": "Type of Bond Between Nonmetals",
+        "text": "When two nonmetals bond, they typically share electrons. What type of bond does this indicate?",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "large",
-            "small"
-        ]
+        "license": ""
     },
     {
         "id": "a16200bchemC1e-h4",
@@ -48,8 +39,8 @@
         "dependencies": [
             "a16200bchemC1e-h3"
         ],
-        "title": "Molecular Structure",
-        "text": "Does $$SO_3$$ form a molecule or a lattice structure?",
+        "title": "Review Covalent Bond Characteristics",
+        "text": "Covalent bonds involve the sharing of electron pairs between atoms. This is common in compounds formed by nonmetals.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -65,8 +56,8 @@
         "dependencies": [
             "a16200bchemC1e-h4"
         ],
-        "title": "Final Classification",
-        "text": "Based on the bond type and structure, classify $$SO_3$$.",
+        "title": "Classify the Bond in $$SO_3$$",
+        "text": "Based on the elements involved and their bonding characteristics, classify the bond in $$SO_3$$.",
         "variabilization": {},
         "oer": "openai",
         "license": "",
