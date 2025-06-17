@@ -169,7 +169,6 @@ const ViewAllProblems = ({ translate }) => {
                 lesson={lesson}
                 seed={seed}
                 clearStateOnPropChange={lessonID}
-                displayMastery={displayMastery}
                 problemComplete={problemComplete}
               />
             </Box>

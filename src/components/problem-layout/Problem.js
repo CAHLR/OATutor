@@ -336,19 +336,19 @@ class Problem extends React.Component {
         }
     };
 
-    clickNextProblem = async () => {
-        scroll.scrollToTop({ duration: 900, smooth: true });
+  clickNextProblem = async () => {
+      scroll.scrollToTop({ duration: 900, smooth: true });
 
-        await this.props.problemComplete(this.context);
+      await this.props.problemComplete(this.context);
 
-        this.setState({
-            stepStates: {},
-            firstAttempts: {},
-            problemFinished: false,
-            feedback: "",
-            feedbackSubmitted: false,
-        });
-    };
+      this.setState({
+          stepStates: {},
+          firstAttempts: {},
+          problemFinished: false,
+          feedback: "",
+          feedbackSubmitted: false,
+      });
+  };
 
     submitFeedback = () => {
         const { problem } = this.props;
@@ -429,6 +429,9 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
+        const { progressInfo } = this.props;
+        const total = progressInfo?.total || 0;
+        const completed = progressInfo?.completed || 0;
         const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
@@ -441,6 +444,94 @@ class Problem extends React.Component {
             <>
                 <div>
                     <div className={classes.prompt} role={"banner"}>
+                   {progressInfo?.total > 0 && (() => {
+                     const progressPercent = progressInfo.completed / progressInfo.total;
+                     const mascotLeft = Math.max(0, progressPercent * 888 - 44); // Adjust for mascot centering
+
+                     return (
+                       <div style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}>
+                         <div
+                           style={{
+                             display: "flex",
+                             flexDirection: "row",
+                             alignItems: "center",
+                             width: "1112px",            // from Figma
+                             padding: "16px 0",          // top/bottom padding
+                             gap: "12px",                // space between label and bar
+                           }}
+                         >
+                           {/* Question Label */}
+                           <div
+                             style={{
+                               fontSize: "16px",
+                               fontWeight: 600,
+                               lineHeight: "24px",
+                               width: "156px",          // fixed width for label
+                             }}
+                           >
+                             Question {progressInfo.completed}/{progressInfo.total}
+                           </div>
+
+                           {/* Progress Bar */}
+                           <div style={{ position: "relative", width: "888px", height: "48px" }}>
+                             {/* Background */}
+                             <img
+                               src="/place-holder/static/images/icons/progress-bar-bg.png"
+                               alt="Progress bar background"
+                               style={{
+                                 position: "absolute",
+                                 top: 0,
+                                 left: 0,
+                                 width: "888px",
+                                 height: "48px",
+                                 zIndex: 1,
+                               }}
+                             />
+
+                             {/* Fill */}
+                             <div
+                               style={{
+                                 position: "absolute",
+                                 top: "3px",
+                                 left: "3px",
+                                 width: `${progressPercent * 888}px`,
+                                 height: "42px",
+                                 overflow: "hidden",
+                                 borderRadius: "99px",
+                                 zIndex: 2,
+                               }}
+                             >
+                               <img
+                                 src="/place-holder/static/images/icons/progress-bar-fill.png"
+                                 alt="Progress bar fill"
+                                 style={{
+                                   width: "352px",
+                                   height: "42px",
+                                   objectFit: "cover",
+                                 }}
+                               />
+                               {/* Mascot */}
+                               <img
+                                 src="/place-holder/static/images/icons/progress-avatar.png"
+                                 alt="Progress mascot"
+                                 style={{
+                                   position: "absolute",
+                                   top: "1px", // or adjust lower to show the full top
+                                   left:`${mascotLeft}px`,
+                                   width: "40px",
+                                   height: "40px",
+                                   transform: "rotate(180deg)",
+                                   transition: "left 0.3s ease-in-out",
+                                   zIndex: 3,
+                                 }}
+                               />
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     );
+                   })()}
+
                         <Card className={classes.titleCard}>
                             <CardContent
                                 {...stagingProp({

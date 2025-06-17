@@ -33,7 +33,7 @@ class Platform extends React.Component {
 
     constructor(props, context) {
         super(props);
-        
+
         this.problemIndex = {
             problems: problemPool,
         };
@@ -78,7 +78,7 @@ class Platform extends React.Component {
     componentDidMount() {
         this._isMounted = true;
         if (this.props.lessonID != null) {
-            console.log("calling selectLesson from componentDidMount...") 
+            console.log("calling selectLesson from componentDidMount...")
             const lesson = findLessonById(this.props.lessonID)
             console.debug("lesson: ", lesson)
             this.selectLesson(lesson).then(
@@ -112,7 +112,7 @@ class Platform extends React.Component {
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
-    
+
     onComponentUpdate(prevProps, prevState, snapshot) {
         if (
             Boolean(this.state.currProblem?.id) &&
@@ -124,7 +124,7 @@ class Platform extends React.Component {
             this.context.problemID = "n/a";
         }
     }
-    
+
     async selectLesson(lesson, updateServer=true) {
         const context = this.context;
         console.debug("lesson: ", context)
@@ -230,6 +230,10 @@ class Platform extends React.Component {
         }
 
         this.lesson = lesson;
+        const lessonName = String(lesson.name.replace("Lesson ", "") + " " + lesson.topics);
+        this.lessonProblems = this.problemIndex.problems
+          .filter(({ lesson: probLesson }) => String(probLesson).includes(lessonName))
+          .sort((a, b) => a.id.localeCompare(b.id));
 
         const loadLessonProgress = async () => {
             const { getByKey } = this.context.browserStorage;
@@ -329,7 +333,6 @@ class Platform extends React.Component {
             return x + context.bktParams[y].probMastery;
         }, 0);
         score /= objectives.length;
-        this.displayMastery(score);
         //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
         // There exists a skill that has not yet been mastered (a True)
@@ -397,20 +400,11 @@ class Platform extends React.Component {
         this._nextProblem(context);
     };
 
-    displayMastery = (mastery) => {
-        this.setState({ mastery: mastery });
-        if (mastery >= MASTERY_THRESHOLD) {
-            toast.success("You've successfully completed this assignment!", {
-                toastId: ToastID.successfully_completed_lesson.toString(),
-            });
-        }
-    };
-
     render() {
         const { translate } = this.props;
         this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName) + " | "
-        : translate('platform.LoggedIn') + " | ";
+        ? decodeURIComponent(this.context.studentName)
+        : translate('platform.LoggedIn');
         return (
             <div
                 style={{
@@ -460,13 +454,8 @@ class Platform extends React.Component {
                                     }}
                                 >
                                     {this.state.status !== "courseSelection" &&
-                                    this.state.status !== "lessonSelection" &&
-                                    (this.lesson.showStuMastery == null ||
-                                        this.lesson.showStuMastery)
-                                        ? this.studentNameDisplay +
-                                        translate('platform.Mastery') +
-                                          Math.round(this.state.mastery * 100) +
-                                          "%"
+                                     this.state.status !== "lessonSelection"
+                                        ? this.studentNameDisplay
                                         : ""}
                                 </div>
                             </Grid>
@@ -498,13 +487,92 @@ class Platform extends React.Component {
                         componentName={"Problem"}
                         descriptor={"problem"}
                     >
+                    {this.lessonProblems?.length > 0 && (() => {
+                      const progressPercent = this.completedProbs.size / this.lessonProblems.length;
+                      const mascotLeft = Math.max(0, progressPercent * 888 - 44); // mascot center adjustment
+
+                      return (
+                        <div style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "row",
+                              alignItems: "center",
+                              width: "1112px",
+                              padding: "16px 0",
+                              gap: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                fontSize: "16px",
+                                fontWeight: 600,
+                                lineHeight: "24px",
+                                width: "156px",
+                              }}
+                            >
+                              Question {this.completedProbs.size}/{this.lessonProblems.length}
+                            </div>
+                            <div style={{ position: "relative", width: "888px", height: "48px" }}>
+                              <img
+                                src="/place-holder/static/images/icons/progress-bar-bg.png"
+                                alt="Progress bar background"
+                                style={{
+                                  position: "absolute",
+                                  top: 0,
+                                  left: 0,
+                                  width: "888px",
+                                  height: "48px",
+                                  zIndex: 1,
+                                }}
+                              />
+                              <div
+                                style={{
+                                  position: "absolute",
+                                  top: "3px",
+                                  left: "3px",
+                                  width: `${progressPercent * 888}px`,
+                                  height: "42px",
+                                  overflow: "hidden",
+                                  borderRadius: "99px",
+                                  zIndex: 2,
+                                }}
+                              >
+                                <img
+                                  src="/place-holder/static/images/icons/progress-bar-fill.png"
+                                  alt="Progress bar fill"
+                                  style={{
+                                    width: "352px",
+                                    height: "42px",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                                <img
+                                  src="/place-holder/static/images/icons/progress-avatar.png"
+                                  alt="Progress mascot"
+                                  style={{
+                                    position: "absolute",
+                                    top: "1px",
+                                    left: `${mascotLeft}px`,
+                                    width: "40px",
+                                    height: "40px",
+                                    transform: "rotate(180deg)",
+                                    transition: "left 0.3s ease-in-out",
+                                    zIndex: 3,
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
                         <ProblemWrapper
-                            problem={this.state.currProblem}
-                            problemComplete={this.problemComplete}
-                            lesson={this.lesson}
-                            seed={this.state.seed}
-                            lessonID={this.props.lessonID}
-                            displayMastery={this.displayMastery}
+                          problem={this.state.currProblem}
+                          problemComplete={this.problemComplete}
+                          lesson={this.lesson}
+                          seed={this.state.seed}
+                          lessonID={this.props.lessonID}
                         />
                     </ErrorBoundary>
                 ) : (
