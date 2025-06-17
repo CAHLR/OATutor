@@ -23,6 +23,29 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from '../util/withTranslation';
 
+import userIcon from "../assets/UserThumb.svg";
+import IconButton from '@material-ui/core/IconButton';
+import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined"
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import leftArrow from "../assets/chevron-left.svg";
+
+import Popup from '../components/Popup/Popup';
+import About from '../pages/Posts/About.js';
+
+import { animateScroll as scroll, Element, scroller } from "react-scroll";
+import { chooseVariables } from "../platform-logic/renderText.js";
+import TextField from "@material-ui/core/TextField";
+import Spacer from "../components/Spacer";
+import Button from "@material-ui/core/Button";
+
+import menuToggle from "../assets/menuIcon.svg";
+
+import { withStyles } from "@material-ui/core/styles";
+import styles from "../components/problem-layout/common-styles.js";
+
+import Drawer from '@material-ui/core/Drawer';
+import TableOfContents from '../components/tableOfContents.js';
+
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
 let seed = Date.now().toString();
@@ -45,6 +68,17 @@ class Platform extends React.Component {
         this.isPrivileged = !!this.user.privileged;
         this.context = context;
 
+        this.state = {
+            showPopup: false,
+            feedback: "",
+            feedbackSubmitted: false,
+
+            drawerOpen: false
+        };
+
+        this.togglePopup = this.togglePopup.bind(this);
+        this.toggleFeedback = this.toggleFeedback.bind(this);
+
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
             for (
@@ -63,12 +97,18 @@ class Platform extends React.Component {
                 currProblem: null,
                 status: "courseSelection",
                 seed: seed,
+                feedback: "",
+                feedbackSubmitted: false,  
+                drawerOpen: false             
             };
         } else {
             this.state = {
                 currProblem: null,
                 status: "courseSelection",
                 seed: seed,
+                feedback: "",
+                feedbackSubmitted: false,
+                drawerOpen: false
             };
         }
 
@@ -270,6 +310,7 @@ class Platform extends React.Component {
         this.course = course;
         this.setState({
             status: "lessonSelection",
+            selectedCourse: course
         });
     };
 
@@ -406,133 +447,501 @@ class Platform extends React.Component {
         }
     };
 
+    togglePopup() {
+    this.setState(prevState => ({
+        showPopup: !prevState.showPopup
+    }));
+    }
+
+    submitFeedback = () => {
+        const problem = this.state.currProblem;
+
+        console.debug("problem when submitting feedback", problem);
+        this.context.firebase.submitFeedback(
+            problem.id,
+            this.state.feedback,
+            this.state.problemFinished,
+            chooseVariables(problem.variabilization, this.props.seed),
+            problem.courseName,
+            problem.steps,
+            problem.lesson
+        );
+        this.setState({ feedback: "", feedbackSubmitted: true });
+    };
+
+    toggleFeedback = () => {
+        this.setState((prevState) => ({
+            showFeedback: !prevState.showFeedback,
+            }),
+        
+            () => {
+                if (this.state.showFeedback && !this.state.showpopup) {
+                    scroll.scrollToBottom({ duration: 500, smooth: true });
+                }
+            }
+        );
+    };
+
+    toggleDrawer = (open) => {
+        this.setState({ drawerOpen: open });
+    };
+
     render() {
         const { translate } = this.props;
+        const { showPopup } = this.state;
+        const { classes, problem, seed } = this.props;
+        const drawerWidth = 320;
         this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName) + " | "
-        : translate('platform.LoggedIn') + " | ";
+        ? decodeURIComponent(this.context.studentName)
+        : translate('platform.LoggedIn');
         return (
-            <div
-                style={{
-                    backgroundColor: "#F6F6F6",
-                    paddingBottom: 20,
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                <AppBar position="static">
-                    <Toolbar>
-                        <Grid
-                            container
-                            spacing={0}
-                            role={"navigation"}
-                            alignItems={"center"}
+            <>
+                
+                <Drawer
+                    variant="persistent"
+                    anchor="left"
+                    open={this.state.drawerOpen}
+                    classes={{
+                        paper: this.props.classes.drawerPaper,
+                    }}
+                    style={{
+                        position: "fixed",
+                        width: 320,
+                        flexShrink: 0,
+                    }}
+                >
+                    
+                    <div style={{ width: drawerWidth, padding: 16 }}>
+                        <Button onClick={() => this.toggleDrawer(false)}>Close</Button>
+                        <TableOfContents />
+                    </div>
+                </Drawer>                
+
+                <div
+                    style={{
+                        backgroundColor: "#F6F6F6",
+                        paddingBottom: 20,
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+
+                    <AppBar position="fixed" style = {{backgroundColor: '#FFFFFF'}}>
+                        <Toolbar>
+                            <Grid
+                                container
+                                spacing={0}
+                                role={"navigation"}
+                                alignItems={"center"}
+                            >
+                                <Grid item xs={3} key = {1}>
+                                    <BrandLogoNav
+                                        isPrivileged={this.isPrivileged}
+                                    />
+                                </Grid>
+                                <Grid item xs={5} key={2}>
+                                    {/* <div
+                                        style={{
+                                            textAlign: "center",
+                                            textAlignVertical: "center",
+                                            paddingTop: "3px",
+                                        }}
+                                    >
+                                        {Boolean(
+                                            findLessonById(this.props.lessonID)
+                                        )
+                                            ? findLessonById(this.props.lessonID)
+                                                .name +
+                                            " " +
+                                            findLessonById(this.props.lessonID)
+                                                .topics
+                                            : ""}
+                                    </div> */}
+                                </Grid>
+
+                                <Grid xs = {4} item key={3}>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "flex-end",
+                                            alignItems: "center", 
+                                            gap: "9px",
+                                            color: "#344054",
+                                        }}
+                                    >
+                                        <img src={userIcon} alt="User Icon" />
+                                        <div style={{ fontWeight: 600 }}>
+                                            {this.studentNameDisplay}
+                                        </div>
+                                    </div>
+                                </Grid>
+
+
+                            </Grid>
+                        </Toolbar>
+                    </AppBar>
+                    
+                    <div className={classes.toolbarOffset} />
+                 
+                    <AppBar position="fixed" className={classes.secondBarOffset}>
+
+                        <Toolbar 
+                            style={{ minHeight: '56px'}}
                         >
-                            <Grid item xs={3} key={1}>
-                                <BrandLogoNav
-                                    isPrivileged={this.isPrivileged}
-                                />
-                            </Grid>
-                            <Grid item xs={6} key={2}>
-                                <div
-                                    style={{
-                                        textAlign: "center",
-                                        textAlignVertical: "center",
-                                        paddingTop: "3px",
-                                    }}
-                                >
-                                    {Boolean(
-                                        findLessonById(this.props.lessonID)
+                            <Grid
+                                container
+                                spacing={0}
+                                role={"secondary-navigation"}
+                                alignItems={"center"}
+                            >
+                                <Grid item xs={9} key={1}>
+                                {
+                                    this.state.selectedCourse? (
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "flex-start",
+                                                alignItems: "center", 
+                                                gap: "8px"
+                                            }}
+                                        >
+
+                                            <IconButton 
+                                                onClick = {() => this.props.history.goBack()}
+                                                aria-label = "Back" 
+                                            >
+                                                <img src={leftArrow} alt="Back Arrow" />
+
+                                            </IconButton>
+
+                                            <div style={{ fontWeight: 600 }}> {this.state.selectedCourse.courseName} </div>
+                                            
+                                        </div>
                                     )
-                                        ? findLessonById(this.props.lessonID)
-                                              .name +
-                                          " " +
-                                          findLessonById(this.props.lessonID)
-                                              .topics
-                                        : ""}
-                                </div>
+                                
+                                    : findLessonById(this.props.lessonID)?  (
+
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "flex-start",
+                                                alignItems: "center", 
+                                                gap: "8px"
+                                            }}
+                                        >
+                                        
+                                            <IconButton 
+                                                onClick = {() => this.props.history.goBack()}
+                                                aria-label = "Back" 
+                                            >
+                                                <img src={leftArrow} alt="Back Arrow" />
+
+                                            </IconButton>
+
+                                            <div style={{ fontWeight: 600 }}> {findLessonById(this.props.lessonID).courseName} </div>
+                                            
+                                        </div>
+                                        
+                                    )
+                                        : ""
+                                }
+                                </Grid>
+
+
+                                <Grid xs = {3} item key={3}>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            flexGrow: 1,
+                                            justifyContent: "flex-end",
+                                            border: 'none'
+                                        }}
+                                    >
+
+                                        <IconButton
+                                            aria-label="about"
+                                            title={`About ${SITE_NAME}`}
+                                            onClick={this.togglePopup}
+                                        >
+                                            <HelpOutlineOutlinedIcon
+                                                htmlColor={"#ffffff"}
+                                                style={{
+                                                    fontSize: 36,
+                                                    margin: -2,
+                                                }}
+                                            />
+                                        </IconButton>
+
+ 
+                                        {this.state.status === "learning" && (
+                                            <IconButton
+                                                aria-label="report problem"
+                                                onClick={this.toggleFeedback}
+                                                title={"Report Problem"}
+                                                
+                                            >
+                                                <FeedbackOutlinedIcon
+                                                    htmlColor={"#ffffff"}
+                                                    style={{
+                                                        fontSize: 32,
+                                                    }}
+                                                />
+                                            </IconButton>
+                                        )}
+
+                                    </div>
+                                    <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                                        <About />
+                                    </Popup>
+                                    
+                                </Grid>
+
                             </Grid>
-                            <Grid item xs={3} key={3}>
-                                <div
-                                    style={{
-                                        textAlign: "right",
-                                        paddingTop: "3px",
-                                    }}
-                                >
-                                    {this.state.status !== "courseSelection" &&
-                                    this.state.status !== "lessonSelection" &&
-                                    (this.lesson.showStuMastery == null ||
-                                        this.lesson.showStuMastery)
-                                        ? this.studentNameDisplay +
-                                        translate('platform.Mastery') +
-                                          Math.round(this.state.mastery * 100) +
-                                          "%"
-                                        : ""}
-                                </div>
-                            </Grid>
-                        </Grid>
-                    </Toolbar>
-                </AppBar>
-                {this.state.status === "courseSelection" ? (
-                    <LessonSelectionWrapper
-                        selectLesson={this.selectLesson}
-                        selectCourse={this.selectCourse}
-                        history={this.props.history}
-                        removeProgress={this.props.removeProgress}
-                    />
-                ) : (
-                    ""
-                )}
-                {this.state.status === "lessonSelection" ? (
-                    <LessonSelectionWrapper
-                        selectLesson={this.selectLesson}
-                        removeProgress={this.props.removeProgress}
-                        history={this.props.history}
-                        courseNum={this.props.courseNum}
-                    />
-                ) : (
-                    ""
-                )}
-                {this.state.status === "learning" ? (
-                    <ErrorBoundary
-                        componentName={"Problem"}
-                        descriptor={"problem"}
+                        </Toolbar>
+                    </AppBar>            
+
+                    <div style={{ height: 56 }} />
+
+                    <div 
+                        style = {{
+                            marginLeft: this.state.drawerOpen 
+                                ? drawerWidth 
+                                : 0,  
+                            transition: "margin 0.1s ease",   
+                        }}
                     >
-                        <ProblemWrapper
-                            problem={this.state.currProblem}
-                            problemComplete={this.problemComplete}
-                            lesson={this.lesson}
-                            seed={this.state.seed}
-                            lessonID={this.props.lessonID}
-                            displayMastery={this.displayMastery}
-                        />
-                    </ErrorBoundary>
-                ) : (
-                    ""
-                )}
-                {this.state.status === "exhausted" ? (
-                    <center>
-                        <h2>
-                            Thank you for learning with {SITE_NAME}. You have
-                            finished all problems.
-                        </h2>
-                    </center>
-                ) : (
-                    ""
-                )}
-                {this.state.status === "graduated" ? (
-                    <center>
-                        <h2>
-                            Thank you for learning with {SITE_NAME}. You have
-                            mastered all the skills for this session!
-                        </h2>
-                    </center>
-                ) : (
-                    ""
-                )}
-            </div>
+
+                        {/* {this.state.status === "learning" ? (
+                            <AppBar position="static" 
+                                style = {{
+                                    backgroundColor: '#F6F8FA',
+                                    boxShadow: 'none',
+                                }}>
+                                <Toolbar style={{ minHeight: '80px'}}>
+                                    <Grid
+                                        container
+                                        spacing={2}
+                                        role={"progress-bar"}
+                                        alignItems={"center"}
+                                    >
+
+                                        {!this.state.drawerOpen && (
+                                            <Grid item xs={1} >
+                                                
+                                                <div style={{color: '#4C7D9F'}}>
+                                                    <IconButton 
+                                                        aria-label = "Table of Contents Toggle" 
+                                                        onClick = {() => this.toggleDrawer(true)}
+                                                        disabled = {this.state.drawerOpen}
+                                                    >
+                                                        <img 
+                                                            src={menuToggle} 
+                                                            alt="Table of Contents" 
+                                                            style={{
+                                                                width: 40,
+                                                                height: 40
+                                                            }}
+                                                        />
+
+                                                    </IconButton>
+                                                </div>
+                                            </Grid>
+                                        )}
+
+                                        <Grid item xs={3}>
+                                            
+                                            <div style={{
+                                                color: "#21272A",
+                                                fontWeight: 600,
+                                                fontFamily: 'Titillium Web',
+                                                marginLeft: 35
+                                            }}>
+                                                question yada / yada
+                                            </div>
+
+                                        </Grid>
+
+                                        <Grid item xs={5} >
+                                            
+                                            <div style={{color: '#4C7D9F'}}>
+                                                progress bar goes here 
+                                            </div>
+
+                                        </Grid>
+                                    </Grid>
+                                </Toolbar>
+
+                            </AppBar>
+                        ) : (
+                            ""
+                        )} */}
+
+
+
+                        {this.state.status === "courseSelection" ? (
+                            <LessonSelectionWrapper
+                                selectLesson={this.selectLesson}
+                                selectCourse={this.selectCourse}
+                                history={this.props.history}
+                                removeProgress={this.props.removeProgress}
+                            />
+                        ) : (
+                            ""
+                        )}
+                        {this.state.status === "lessonSelection" ? (
+                            <LessonSelectionWrapper
+                                selectLesson={this.selectLesson}
+                                removeProgress={this.props.removeProgress}
+                                history={this.props.history}
+                                courseNum={this.props.courseNum}
+                            />
+                        ) : (
+                            ""
+                        )}
+                        {this.state.status === "learning" ? (
+                            <ErrorBoundary
+                                componentName={"Problem"}
+                                descriptor={"problem"}
+                            >
+                                <ProblemWrapper
+                                    problem={this.state.currProblem}
+                                    problemComplete={this.problemComplete}
+                                    lesson={this.lesson}
+                                    seed={this.state.seed}
+                                    lessonID={this.props.lessonID}
+                                    displayMastery={this.displayMastery}
+                                />
+                            </ErrorBoundary>
+                        ) : (
+                            ""
+                        )}
+                        {this.state.status === "exhausted" ? (
+                            <center>
+                                <h2>
+                                    Thank you for learning with {SITE_NAME}. You have
+                                    finished all problems.
+                                </h2>
+                            </center>
+                        ) : (
+                            ""
+                        )}
+                        {this.state.status === "graduated" ? (
+                            <center>
+                                <h2>
+                                    Thank you for learning with {SITE_NAME}. You have
+                                    mastered all the skills for this session!
+                                </h2>
+                            </center>
+                        ) : (
+                            ""
+                        )}
+
+                        {this.state.showFeedback && (
+                        <div className="Feedback" 
+                            style={{
+                                marginBottom: 100,
+                                marginTop: -70
+                            }}
+                        >
+                            <center>
+                                <h1>{translate('problem.Feedback')}</h1>
+                            </center>
+                            <div className={classes.textBox}>
+                                <div className={classes.textBoxHeader}>
+                                    <center>
+                                        {this.state.feedbackSubmitted
+                                            ? translate('problem.Thanks')
+                                            : translate('problem.Description')}
+                                    </center>
+                                </div>
+                                {this.state.feedbackSubmitted ? (
+                                    <Spacer />
+                                ) : (
+                                    <Grid container spacing={0}>
+                                        <Grid
+                                            item
+                                            xs={1}
+                                            sm={2}
+                                            md={2}
+                                            key={1}
+                                        />
+                                        <Grid
+                                            item
+                                            xs={10}
+                                            sm={8}
+                                            md={8}
+                                            key={2}
+                                        >
+                                            <TextField
+                                                id="outlined-multiline-flexible"
+                                                label={translate('problem.Response')}
+                                                multiline
+                                                fullWidth
+                                                minRows="6"
+                                                maxRows="20"
+                                                value={this.state.feedback}
+                                                onChange={(event) =>
+                                                    this.setState({
+                                                        feedback:
+                                                            event.target.value,
+                                                    })
+                                                }
+                                                className={classes.textField}
+                                                margin="normal"
+                                                variant="outlined"
+                                            />{" "}
+                                        </Grid>
+                                        <Grid
+                                            item
+                                            xs={1}
+                                            sm={2}
+                                            md={2}
+                                            key={3}
+                                        />
+                                    </Grid>
+                                )}
+                            </div>
+                            {this.state.feedbackSubmitted ? (
+                                ""
+                            ) : (
+                                <div className="submitFeedback">
+                                    <Grid container spacing={0}>
+                                        <Grid
+                                            item
+                                            xs={3}
+                                            sm={3}
+                                            md={5}
+                                            key={1}
+                                        />
+                                        <Grid item xs={6} sm={6} md={2} key={2}>
+                                            <Button
+                                                className={classes.button}
+                                                onClick={this.submitFeedback}
+                                                style={{ width: "100%" }}
+                                                disabled={this.state.feedback.trim() === ""}
+                                            >
+                                                {translate('problem.Submit')}
+                                            </Button>
+                                        </Grid>
+                                        <Grid
+                                            item
+                                            xs={3}
+                                            sm={3}
+                                            md={5}
+                                            key={3}
+                                        />
+                                    </Grid>
+                                </div>
+                            )}
+                        </div>
+                        
+                    )}
+                    </div>
+                </div>
+            </>
+
         );
     }
 }
 
-export default withRouter(withTranslation(Platform));
+export default withStyles(styles)(withRouter(withTranslation(Platform)));
