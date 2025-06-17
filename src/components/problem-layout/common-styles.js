@@ -159,8 +159,35 @@ const styles = theme => ({
         '&:focus-within': {
             border: "1px solid GoldenRod",
         },
-    }
+    },
 
+
+    toolbarOffset: theme.mixins.toolbar,
+
+    secondBarOffset: {
+        top: 56,
+        [theme.breakpoints.up("sm")]: {
+            top: 64,
+        },
+        position: 'fixed',
+        zIndex: theme.zIndex.appBar,
+    },
+
+    drawerPaper: {
+        top: 112,
+        height: 'calc(100vh - 112px)',
+        [theme.breakpoints.up('sm')]: {
+            top: 120,
+            height: 'calc(100vh - 120px)',
+        },
+        zIndex: theme.zIndex.drawer,
+    },
+
+    content: {
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.default,
+        padding: theme.spacing(3),
+    }
 });
 
 export default styles;

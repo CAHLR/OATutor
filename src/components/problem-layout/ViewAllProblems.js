@@ -91,6 +91,10 @@ const ViewAllProblems = ({ translate, history }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [seed] = useState(() => Date.now().toString());
 
+  const studentNameDisplay = context.studentName
+  ? decodeURIComponent(context.studentName)
+  : translate('platform.LoggedIn');
+
   // no-op handlers for ProblemWrapper
   const displayMastery = () => {};
   const problemComplete = () => {};
@@ -174,7 +178,7 @@ const ViewAllProblems = ({ translate, history }) => {
                 >
                     <img src={userIcon} alt="User Icon" />
                     <div style={{ fontWeight: 600 }}>
-                        [Placeholder Name]
+                        {studentNameDisplay}
                     </div>
                 </div>
             </Grid>

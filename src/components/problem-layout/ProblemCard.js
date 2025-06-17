@@ -40,6 +40,10 @@ import fileCheck from "../../assets/file-check-02.svg"
 import stars from "../../assets/stars-02.svg"
 import teacherGuide from "../../assets/teacher guidance-cropped.svg"
 
+import clsx from 'clsx';
+import {Accordion, AccordionSummary, AccordionDetails, typography} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
 
@@ -647,326 +651,316 @@ class ProblemCard extends React.Component {
                         <hr />
                     </h2>
 
-                    <div className={classes.stepBody}>
-                        {renderText(
-                            this.step.stepBody,
-                            problemID,
-                            chooseVariables(
-                                Object.assign(
-                                    {},
-                                    problemVars,
-                                    this.step.variabilization
-                                ),
-                                seed
-                            ),
-                            this.context
-                        )}
-                    </div>
-                    {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
-                        this.showHints && (
-                            <div className="Hints">
-                                <ErrorBoundary
-                                    componentName={"HintSystem"}
-                                    descriptor={"hint"}
-                                >
-                                    <HintSystem
-                                        key={`hints-${this.giveDynamicHint ? 'dynamic' : 'manual'}`}
-                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
-                                        giveDynamicHint={this.giveDynamicHint}
-                                        giveStuFeedback={this.giveStuFeedback}
-                                        unlockFirstHint={this.unlockFirstHint}
-                                        problemID={this.props.problemID}
-                                        index={this.props.index}
-                                        step={this.step}
-                                        hints={this.state.hints}
-                                        unlockHint={this.unlockHint}
-                                        hintStatus={this.state.hintsFinished}
-                                        submitHint={this.submitHint}
-                                        seed={this.props.seed}
-                                        stepVars={Object.assign(
+                            <div className={classes.stepBody}>
+                                {renderText(
+                                    this.step.stepBody,
+                                    problemID,
+                                    chooseVariables(
+                                        Object.assign(
+                                            {},
+                                            problemVars,
+                                            this.step.variabilization
+                                        ),
+                                        seed
+                                    ),
+                                    this.context
+                                )}
+                            </div>
+                            {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
+                                this.showHints && (
+                                    <div className="Hints">
+                                        <ErrorBoundary
+                                            componentName={"HintSystem"}
+                                            descriptor={"hint"}
+                                        >
+                                            <HintSystem
+                                                key={`hints-${this.giveDynamicHint ? 'dynamic' : 'manual'}`}
+                                                giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                                giveDynamicHint={this.giveDynamicHint}
+                                                giveStuFeedback={this.giveStuFeedback}
+                                                unlockFirstHint={this.unlockFirstHint}
+                                                problemID={this.props.problemID}
+                                                index={this.props.index}
+                                                step={this.step}
+                                                hints={this.state.hints}
+                                                unlockHint={this.unlockHint}
+                                                hintStatus={this.state.hintsFinished}
+                                                submitHint={this.submitHint}
+                                                seed={this.props.seed}
+                                                stepVars={Object.assign(
+                                                    {},
+                                                    this.props.problemVars,
+                                                    this.step.variabilization
+                                                )}
+                                                answerMade={this.props.answerMade}
+                                                lesson={this.props.lesson}
+                                                courseName={this.props.courseName}
+                                                isIncorrect={this.expandFirstIncorrect}
+                                                generateHintFromGPT={this.generateHintFromGPT}
+                                                isGeneratingHint={this.state.isGeneratingHint}
+                                            />
+                                        </ErrorBoundary>
+                                        <Spacer />
+                                    </div>
+                                )}
+
+                            <div className={classes.root}>
+                                <ProblemInput
+                                    variabilization={chooseVariables(
+                                        Object.assign(
                                             {},
                                             this.props.problemVars,
                                             this.step.variabilization
-                                        )}
-                                        answerMade={this.props.answerMade}
-                                        lesson={this.props.lesson}
-                                        courseName={this.props.courseName}
-                                        isIncorrect={this.expandFirstIncorrect}
-                                        generateHintFromGPT={this.generateHintFromGPT}
-                                        isGeneratingHint={this.state.isGeneratingHint}
-                                    />
-                                </ErrorBoundary>
-                                <Spacer />
+                                        ),
+                                        this.props.seed
+                                    )}
+                                    allowRetry={this.allowRetry}
+                                    giveStuFeedback={this.giveStuFeedback}
+                                    showCorrectness={this.showCorrectness}
+                                    classes={classes}
+                                    state={this.state}
+                                    step={this.step}
+                                    seed={this.props.seed}
+                                    keepMCOrder={this.props.keepMCOrder}
+                                    keyboardType={this.props.keyboardType}
+                                    _setState={(state) => this.setState(state)}
+                                    context={this.context}
+                                    editInput={this.editInput}
+                                    setInputValState={this.setInputValState}
+                                    handleKey={this.handleKey}
+                                    index={this.props.index}
+                                />
                             </div>
-                        )}
-
-                    <div className={classes.root}>
-                        <ProblemInput
-                            variabilization={chooseVariables(
-                                Object.assign(
-                                    {},
-                                    this.props.problemVars,
-                                    this.step.variabilization
-                                ),
-                                this.props.seed
-                            )}
-                            allowRetry={this.allowRetry}
-                            giveStuFeedback={this.giveStuFeedback}
-                            showCorrectness={this.showCorrectness}
-                            classes={classes}
-                            state={this.state}
-                            step={this.step}
-                            seed={this.props.seed}
-                            keepMCOrder={this.props.keepMCOrder}
-                            keyboardType={this.props.keyboardType}
-                            _setState={(state) => this.setState(state)}
-                            context={this.context}
-                            editInput={this.editInput}
-                            setInputValState={this.setInputValState}
-                            handleKey={this.handleKey}
-                            index={this.props.index}
-                        />
-                    </div>
-                </CardContent>
+                        </CardContent>
 
 
 
-                <CardActions style = {{padding: "0px"}}>
-                    <Grid
-                        container
-                        spacing={0}
-                        justifyContent="flex-start"
-                        alignItems="center"
-                    >
-                        {/* <Grid item xs={false} sm={false} md={4} /> */}
+                        <CardActions style = {{padding: "0px"}}>
+                            
+
+                            {/* <Grid item xs={4} sm={4} md={1}>
+                                {this.showHints && (
+                                    <center>
 
 
-                        {/* <Grid item xs={4} sm={4} md={1}>
-                            {this.showHints && (
-                                <center>
+                                        <IconButton
+                                            aria-label="delete"
+                                            onClick={this.toggleHints}
+                                            title="View available hints"
+                                            disabled={
+                                                !this.state.enableHintGeneration
+                                            }
+                                            className="image-container"
+                                            {...stagingProp({
+                                                "data-selenium-target": `hint-button-${this.props.index}`,
+                                            })}
+                                        >
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
+                                                className={
+                                                    this.state.enableHintGeneration
+                                                        ? "image"
+                                                        : "image image-grayed-out"
+                                                }
+                                                alt="hintToggle"
+                                            />
+                                        </IconButton>
 
 
-                                    <IconButton
-                                        aria-label="delete"
-                                        onClick={this.toggleHints}
-                                        title="View available hints"
+                                    </center>
+                                )}
+                            </Grid> */}
+
+                        
+                            <Grid 
+                                container
+                                spacing = {2}
+                                alignItems = "center"
+                                justifyContent= "space-between"
+                                style={{ 
+                                    marginTop: 40, 
+                                    marginBottom: 20,
+                                    marginLeft: 20,
+                                    marginRight: 20
+                                }}
+                            >
+
+                                <Grid item  
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center", 
+                                        justifyContent: "flex-start",
+                                        gap: "20px",
+                                    }}
+                                >
+                                    
+                                    <Button
+                                        className={classes.button}
+                                        style={{ 
+                                            width: "118px", 
+                                            flexShrink: 0
+                                        }}
+                                        size="small"
+                                        onClick={this.submit}
                                         disabled={
-                                            !this.state.enableHintGeneration
+                                            !this.state.inputVal ||
+                                            (use_expanded_view && debug) ||
+                                            (!this.allowRetry && problemAttempted)
                                         }
-                                        className="image-container"
                                         {...stagingProp({
-                                            "data-selenium-target": `hint-button-${this.props.index}`,
+                                            "data-selenium-target": `submit-button-${this.props.index}`,
                                         })}
                                     >
+                                        {translate('problem.Submit')}
+                                    </Button>
+
+                                    
+                                    {(!this.showCorrectness ||
+                                        !this.allowRetry) && (
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/static/images/icons/raise_hand.png`}
-                                            className={
-                                                this.state.enableHintGeneration
-                                                    ? "image"
-                                                    : "image image-grayed-out"
-                                            }
-                                            alt="hintToggle"
+                                            className={classes.checkImage}
+                                            style={{
+                                                opacity:
+                                                    this.state.isCorrect == null
+                                                        ? 0
+                                                        : 1,
+                                                width: 42,
+                                                height: 42,
+                                            }}
+                                            alt="Exclamation Mark Icon"
+                                            title={`The instructor has elected to ${joinList(
+                                                !this.showCorrectness &&
+                                                    "hide correctness",
+                                                !this.allowRetry &&
+                                                    "disallow retries"
+                                            )}`}
+                                            {...stagingProp({
+                                                "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                            })}
+                                            src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
                                         />
-                                    </IconButton>
+                                    )}
+                                    {this.state.isCorrect &&
+                                        this.showCorrectness &&
+                                        this.allowRetry && (
+                                            <img
+                                                className={classes.checkImage}
+                                                style={{
+                                                    opacity:
+                                                        this.state.checkMarkOpacity,
+                                                    width: 42,
+                                                    height: 42,
+                                                }}
+                                                alt="Green Checkmark Icon"
+                                                {...stagingProp({
+                                                    "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                                })}
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
+                                            />
+                                        )}
+                                    {this.state.isCorrect === false &&
+                                        this.showCorrectness &&
+                                        this.allowRetry && (
+                                            <img
+                                                className={classes.checkImage}
+                                                style={{
+                                                    opacity:
+                                                        100 -
+                                                        this.state.checkMarkOpacity,
+                                                    width: 42,
+                                                    height: 42,
+                                                }}
+                                                alt="Red X Icon"
+                                                {...stagingProp({
+                                                    "data-selenium-target": `step-correct-img-${this.props.index}`,
+                                                })}
+                                                src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
+                                            />
+                                        )}
+                                </Grid>
 
 
-                                </center>
-                            )}
-                        </Grid> */}
-
-
-                        <Grid item xs={12} sm={6} md={3}>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    alignItems: "center",
-                                    justifyContent: "flex-start",
-                                    gap: "12px",
-                                }}
-                            >
-                            <Button
-                                className={classes.button}
-                                style={{ 
-                                    width: "100%", 
-                                    marginLeft: 20,
-                                    marginBottom: 20,
-                                    marginTop: 40,
-                                    flexShrink: 0
-                                }}
-                                size="small"
-                                onClick={this.submit}
-                                disabled={
-                                    !this.state.inputVal ||
-                                    (use_expanded_view && debug) ||
-                                    (!this.allowRetry && problemAttempted)
-                                }
-                                {...stagingProp({
-                                    "data-selenium-target": `submit-button-${this.props.index}`,
-                                })}
-                            >
-                                {translate('problem.Submit')}
-                            </Button>
-
-                            
-                            {(!this.showCorrectness ||
-                                !this.allowRetry) && (
-                                <img
-                                    className={classes.checkImage}
+                                <Grid item 
                                     style={{
-                                        opacity:
-                                            this.state.isCorrect == null
-                                                ? 0
-                                                : 1,
-                                        width: 30,
-                                        height: 30,
-                                        marginTop: 20
+                                        display: "flex",
+                                        gap: 20,
+                                        flexWrap: "wrap",
                                     }}
-                                    alt="Exclamation Mark Icon"
-                                    title={`The instructor has elected to ${joinList(
-                                        !this.showCorrectness &&
-                                            "hide correctness",
-                                        !this.allowRetry &&
-                                            "disallow retries"
-                                    )}`}
-                                    {...stagingProp({
-                                        "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                    })}
-                                    src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}
-                                />
-                            )}
-                            {this.state.isCorrect &&
-                                this.showCorrectness &&
-                                this.allowRetry && (
-                                    <img
-                                        className={classes.checkImage}
-                                        style={{
-                                            opacity:
-                                                this.state.checkMarkOpacity,
-                                            width: 30,
-                                            height: 30,
-                                            marginTop: 20
+                                >
+                                
+                                    {/* <Button 
+                                        className={classes.button}
+                                        style={{ 
+                                            minWidth: "180px"
                                         }}
-                                        alt="Green Checkmark Icon"
-                                        {...stagingProp({
-                                            "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                        })}
-                                        src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}
-                                    />
-                                )}
-                            {this.state.isCorrect === false &&
-                                this.showCorrectness &&
-                                this.allowRetry && (
-                                    <img
-                                        className={classes.checkImage}
-                                        style={{
-                                            opacity:
-                                                100 -
-                                                this.state.checkMarkOpacity,
-                                            width: 30,
-                                            height: 30,
-                                            marginTop: 20
+                                        variant="contained"
+                                        color="secondary"
+                                    >
+                                        <div 
+                                            style = {{
+                                                marginRight: 8,
+                                                width: "20px",
+                                                height: "20px"
+                                            }}
+                                        >
+                                            <img src={stars} alt="AI Hint" />
+                                        </div>
+
+                                        AI Hint
+                                    </Button>
+                                
+                                    <Button 
+                                        className={classes.button}
+                                        style={{ 
+                                            minWidth: "180px"
                                         }}
-                                        alt="Red X Icon"
+                                        variant="contained"
+                                        color="secondary"
+                                    >
+
+                                        <div 
+                                            style = {{
+                                                marginRight: 8,
+                                                width: "20px",
+                                                height: "20px"
+                                            }}
+                                        
+                                        >
+                                            <img src={fileCheck} alt="AI Solution" />
+                                        </div>
+
+                                        AI Solution
+                                    </Button> */}
+
+                                    <Button 
+                                        className={clsx(classes.button, {active: this.state.activeHintType==='normal',})}
+                                        style={{ 
+                                            minWidth: "190px",
+                                        }}
+                                        variant="contained"
+                                        color="secondary"
+                                        title="Teacher Guided Hints"
+                                        onClick={this.toggleHints}
                                         {...stagingProp({
-                                            "data-selenium-target": `step-correct-img-${this.props.index}`,
-                                        })}
-                                        src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
-                                    />
-                                )}
-                            </div>
-                        </Grid>
-                        
-                        
-                        {/* <Grid item xs={false} sm={1} md={4} /> */}
-                    </Grid>
+                                                "data-selenium-target": `hint-button-${this.props.index}`,
+                                            })}
+                                        >
 
-                    <Grid item xs={12}
-                        container
-                        style={{
-                            display: "flex",
-                            flexDirection: "row",
-                            alignItems: "center",
-                            justifyContent: "flex-end",
-                            marginTop: 40,
-                            marginBottom: 20,
-                            gap: "20px"
-                        }}
-                    >
-                            
-                        <Button className={classes.button}
-                            style={{ 
-                                marginLeft: 0,
-                                marginRight: 0, 
-                                minWidth: "180px"
-                            }}
-                            variant="contained"
-                            color="secondary"
-                        >
-                            <div 
-                                style = {{
-                                    marginRight: 8,
-                                    width: "20px",
-                                    height: "20px"
-                                }}
-                            
-                            >
-                               <img src={stars} alt="AI Hint" />
-                            </div>
-
-                            AI Hint
-                        </Button>
-
-                        <Button className={classes.button}
-                            style={{ 
-                                marginLeft: 0,
-                                marginRight: 0,
-                                minWidth: "180px"
-                            }}
-                            variant="contained"
-                            color="secondary"
-                        >
-
-                            <div 
-                                style = {{
-                                    marginRight: 8,
-                                    width: "20px",
-                                    height: "20px"
-                                }}
-                            
-                            >
-                                <img src={fileCheck} alt="AI Solution" />
-                            </div>
-
-
-                            AI Solution
-                        </Button>
-
-                        <Button className={classes.button}
-                            style={{ 
-                                marginLeft: 0,
-                                marginRight: 20,
-                                minWidth: "180px",
-                            }}
-                            variant="contained"
-                            color="secondary"
-                        >
-                            <div 
-                                style = {{
-                                    marginRight: 8,
-                                    width: "20px",
-                                    height: "20px"
-                                }}
-                            
-                            >
-                                <img src={teacherGuide} alt="Teacher Guidance" />
-                            </div>
-                            
-                            Teacher Guidance
-                        </Button>
-                    </Grid>                    
-                </CardActions>
-            </Card>
+                                        <div 
+                                            style = {{
+                                                marginRight: 8,
+                                                width: "20px",
+                                                height: "20px"
+                                            }}
+                                        >
+                                            <img src={teacherGuide} alt="Teacher Guidance" />
+                                        </div>
+                                        Teacher Guidance
+                                    </Button>
+                                </Grid>
+                            </Grid>                     
+                        </CardActions> 
+                    </Card>
         );
     }
 }

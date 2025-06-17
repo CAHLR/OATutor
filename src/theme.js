@@ -73,7 +73,7 @@ let theme = createTheme({
           backgroundColor: 'rgba(128, 174, 206, 0.10)',
           boxShadow: 'none',
         },
-        '&:active': {
+        '&.active': {
           backgroundColor: '#80AECE40',
           boxShadow: 'none',
         },

@@ -35,6 +35,9 @@ import { cleanArray } from "../../util/cleanObject";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
 
+import {Accordion, AccordionSummary, AccordionDetails, typography} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 class Problem extends React.Component {
     static defaultProps = {
         autoScroll: true
@@ -81,7 +84,8 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false
+            showPopup: false, 
+            expandedAccordion: null
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -429,6 +433,14 @@ class Problem extends React.Component {
         return [oerLink, oerName, licenseLink, licenseName];
     };
 
+    accordionChange = (panel) => (event, isExpanded) => {
+        this.setState({
+            expandedAccordion: isExpanded
+                ? panel
+                : null,
+        });
+    };
+
     render() {
         const { translate } = this.props;
         const { classes, problem, seed } = this.props;
@@ -498,6 +510,9 @@ class Problem extends React.Component {
                                 key={`${problem.id}-${step.id}`}
                             >
                                 <ProblemCardWrapper
+                                    isAccordion={true}
+                                    expanded={this.state.expandedAccordion===idx}
+                                    onChange={this.accordionChange(idx)}
                                     problemID={problem.id}
                                     step={step}
                                     index={idx}
@@ -520,7 +535,7 @@ class Problem extends React.Component {
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
                                 />
-                            </Element>
+                            </Element>                          
                         ))}
                     </div>
                     <div width="100%">
