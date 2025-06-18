@@ -65,17 +65,10 @@
     },
     {
         "id": "a16200bchemC7b-h6",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$3$$"
-        ],
-        "dependencies": [
-            "a16200bchemC7b-h5"
-        ],
-        "title": "Bond Pairs",
-        "text": "How many bond pairs are formed between nitrogen and bromine?",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check Octet Rule",
+        "text": "Arrange the valence electrons around the nitrogen and three bromines making sure to satisfy the octet rule.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -83,9 +76,7 @@
     {
         "id": "a16200bchemC7b-h7",
         "type": "hint",
-        "dependencies": [
-            "a16200bchemC7b-h6"
-        ],
+        "dependencies": [],
         "title": "Lone Pairs on Nitrogen",
         "text": "How many lone pairs are on the nitrogen atom after forming bonds?",
         "variabilization": {},
@@ -100,11 +91,24 @@
         "hintAnswer": [
             "$$3$$"
         ],
-        "dependencies": [
-            "a16200bchemC7b-h6"
-        ],
+        "dependencies": [],
         "title": "Lone Pairs on Bromine",
         "text": "How many lone pairs does each bromine atom have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16200bchemC7b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "Bond Pairs",
+        "text": "How many bond pairs are formed between nitrogen and bromine?",
         "variabilization": {},
         "oer": "openai",
         "license": ""

@@ -43,6 +43,27 @@
     {
         "id": "a16200bchemC5a-h4",
         "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [],
+        "title": "Bromide Ion Charge",
+        "text": "What is the charge of the bromide ion in $$CaBr_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            "$$-2$$",
+            "$$+1$$",
+            "$$+2$$"
+        ]
+    },
+    {
+        "id": "a16200bchemC5a-h5",
+        "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
@@ -51,16 +72,6 @@
         "dependencies": [],
         "title": "Bromide Ion Count",
         "text": "How many bromide ions are produced from one formula unit of $$CaBr_2$$?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16200bchemC5a-h5",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Equation Balance",
-        "text": "Check if the number of ions on both sides of the equation is equal.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
