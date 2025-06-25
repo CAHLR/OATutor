@@ -333,6 +333,7 @@ class Platform extends React.Component {
             return x + context.bktParams[y].probMastery;
         }, 0);
         score /= objectives.length;
+        this.displayMastery(score);
         //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
 
         // There exists a skill that has not yet been mastered (a True)
@@ -400,11 +401,20 @@ class Platform extends React.Component {
         this._nextProblem(context);
     };
 
+    displayMastery = (mastery) => {
+        this.setState({ mastery: mastery });
+        if (mastery >= MASTERY_THRESHOLD) {
+            toast.success("You've successfully completed this assignment!", {
+                toastId: ToastID.successfully_completed_lesson.toString(),
+            });
+        }
+    };
+
     render() {
         const { translate } = this.props;
         this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName)
-        : translate('platform.LoggedIn');
+        ? decodeURIComponent(this.context.studentName) + " | "
+        : translate('platform.LoggedIn') + " | ";
         return (
             <div
                 style={{
@@ -454,8 +464,13 @@ class Platform extends React.Component {
                                     }}
                                 >
                                     {this.state.status !== "courseSelection" &&
-                                     this.state.status !== "lessonSelection"
-                                        ? this.studentNameDisplay
+                                    this.state.status !== "lessonSelection" &&
+                                    (this.lesson.showStuMastery == null ||
+                                        this.lesson.showStuMastery)
+                                        ? this.studentNameDisplay +
+                                        translate('platform.Mastery') +
+                                          Math.round(this.state.mastery * 100) +
+                                          "%"
                                         : ""}
                                 </div>
                             </Grid>
@@ -489,7 +504,7 @@ class Platform extends React.Component {
                     >
                     {this.lessonProblems?.length > 0 && (() => {
                       const progressPercent = this.completedProbs.size / this.lessonProblems.length;
-                      const mascotLeft = Math.max(0, progressPercent * 888 - 44); // mascot center adjustment
+                      const mascotLeft = Math.max(0, progressPercent * 888 - 44);
 
                       return (
                         <div style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}>
@@ -569,10 +584,11 @@ class Platform extends React.Component {
                     })()}
                         <ProblemWrapper
                           problem={this.state.currProblem}
-                          problemComplete={this.problemComplete}
-                          lesson={this.lesson}
-                          seed={this.state.seed}
-                          lessonID={this.props.lessonID}
+                            problemComplete={this.problemComplete}
+                            lesson={this.lesson}
+                            seed={this.state.seed}
+                            lessonID={this.props.lessonID}
+                            displayMastery={this.displayMastery}
                         />
                     </ErrorBoundary>
                 ) : (
