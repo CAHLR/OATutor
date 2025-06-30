@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import {
     coursePlans,
@@ -494,21 +495,117 @@ class Platform extends React.Component {
                     ""
                 )}
                 {this.state.status === "learning" ? (
-                    <ErrorBoundary
-                        componentName={"Problem"}
-                        descriptor={"problem"}
-                    >
-                        <ProblemWrapper
-                            problem={this.state.currProblem}
-                            problemComplete={this.problemComplete}
-                            lesson={this.lesson}
-                            seed={this.state.seed}
-                            lessonID={this.props.lessonID}
-                            displayMastery={this.displayMastery}
-                        />
-                    </ErrorBoundary>
+                  <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                    <div style={{ display: "flex", justifyContent: "center", margin: "16px 0" }}>
+                      <Tooltip
+                        placement="bottom-start"
+                        interactive
+                        title={
+                          <div style={{ padding: 8 }}>
+                            {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
+                              const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+                              const formattedKC = kc
+                                .replace(/_/g, " ")
+                                .replace(/\b\w/g, (c) => c.toUpperCase());
+                              return (
+                                <div key={kc} style={{ marginBottom: 12 }}>
+                                  <div style={{ fontSize: "14px", fontWeight: 500, marginBottom: 4 }}>
+                                    {formattedKC}
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <div
+                                      style={{
+                                        width: "32px",
+                                        fontSize: "12px",
+                                        fontWeight: 500,
+                                        color: "white",
+                                        textAlign: "right",
+                                      }}
+                                    >
+                                      {Math.round(mastery * 100)}%
+                                    </div>
+                                    <div
+                                      style={{
+                                        width: "160px",
+                                        height: "10px",
+                                        backgroundColor: "#E8EDEC",
+                                        borderRadius: "5px",
+                                        overflow: "hidden",
+                                      }}
+                                    >
+                                      <div
+                                        style={{
+                                          width: `${Math.round(mastery * 100)}%`,
+                                          height: "100%",
+                                          backgroundColor: "#83CDC1",
+                                          transition: "width 0.3s ease-in-out",
+                                        }}
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        }
+                      >
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            width: "888px",
+                            gap: "16px",
+                            cursor: "pointer",
+                          }}
+                        >
+                          <div style={{ fontWeight: 600 }}>Mastery Progress</div>
+                          <div style={{ display: "flex", alignItems: "center", flexGrow: 1, gap: "8px" }}>
+                            <div
+                              style={{
+                                width: "40px",
+                                fontSize: "13px",
+                                fontWeight: 600,
+                                color: "#333",
+                                textAlign: "right",
+                              }}
+                            >
+                              {Math.round((this.state.mastery || 0) * 100)}%
+                            </div>
+                            <div
+                              style={{
+                                backgroundColor: "#E8EDEC",
+                                width: "100%",
+                                height: "20px",
+                                borderRadius: "10px",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <div
+                                style={{
+                                  backgroundColor: "#83CDC1",
+                                  width: `${(this.state.mastery || 0) * 100}%`,
+                                  height: "100%",
+                                  borderRadius: "10px",
+                                  transition: "width 0.3s ease",
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </Tooltip>
+                    </div>
+
+                    <ProblemWrapper
+                      problem={this.state.currProblem}
+                      problemComplete={this.problemComplete}
+                      lesson={this.lesson}
+                      seed={this.state.seed}
+                      lessonID={this.props.lessonID}
+                      displayMastery={this.displayMastery}
+                    />
+                  </ErrorBoundary>
                 ) : (
-                    ""
+                  ""
                 )}
                 {this.state.status === "exhausted" ? (
                     <center>
