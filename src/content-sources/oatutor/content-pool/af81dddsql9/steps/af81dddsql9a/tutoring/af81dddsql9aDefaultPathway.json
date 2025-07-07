@@ -1,0 +1,45 @@
+[
+    {
+        "id": "af81dddsql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Joins in Databases",
+        "text": "A join in SQL allows you to combine rows from two or more tables based on a related column between them. By joining tables, you can retrieve data in a way that is meaningful for your analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The information you need can only be obtained by using multiple tables."
+        ],
+        "dependencies": [],
+        "title": "Breaking Down the Problem",
+        "text": "When faced with a question about why join tables, think about the necessity of combining data from multiple tables to meet specific criteria. Which of the following scenarios would typically require joining multiple tables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "There are duplicates in your database that need to be merged.",
+            "The information you need can only be obtained by using multiple tables.",
+            "Joins are needed to break down large tables into smaller ones.",
+            "Joins help to convert numerical data to string."
+        ]
+    },
+    {
+        "id": "af81dddsql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql9a-s1"
+        ],
+        "title": "Identifying the Need for Data",
+        "text": "Analyzing why you need to join tables involves identifying the data needs of your query. Often, information is spread across multiple tables, and joining them ensures you have access to all necessary details. Remember: a single table might not have all the attributes needed for a comprehensive analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

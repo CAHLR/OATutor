@@ -1,0 +1,17 @@
+{
+    "id": "a2ee4dfsql14a",
+    "stepAnswer": [
+        "The WHERE clause should come before the GROUP BY clause."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "What is wrong with the following query?",
+    "stepBody": "SELECT SubUrb, Round(AVG(HouSiz),1) FROM Housing GROUP BY SubUrb WHERE SubUrb LIKE '%Lake'",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "The WHERE clause should come before the GROUP BY clause.",
+        "The WHERE clause should not use a wildcard.",
+        "HouSiz should be rounded to two decimal places.",
+        "The results should be grouped by housing size."
+    ]
+}

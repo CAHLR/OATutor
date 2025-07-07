@@ -1,0 +1,44 @@
+[
+    {
+        "id": "af81dddsql3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define Descending Order",
+        "text": "Sorting in Descending order is sorting from greatest to least.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Lexicographically Greatest String",
+        "text": "Think about which word comes last when arranged alphabetically.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Zebra"
+        ],
+        "dependencies": [
+            "af81dddsql3a-h2"
+        ],
+        "title": "Test with an Example",
+        "text": "If you sort 'Zebra', 'Apple', and 'Monkey' in descending order, which word comes first?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Zebra",
+            "Apple",
+            "Monkey"
+        ]
+    }
+]

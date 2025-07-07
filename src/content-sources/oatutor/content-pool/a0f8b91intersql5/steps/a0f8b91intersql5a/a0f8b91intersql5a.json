@@ -1,0 +1,18 @@
+{
+    "id": "a0f8b91intersql5a",
+    "stepAnswer": [
+        "SELECT FirstName, LastName FROM Student WHERE State $$ \\neq $$ 'NY';"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Choose the correct statement that returns the students from all states except New York.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "SELECT FirstName, LastName FROM Student WHERE State $$ \\neq $$ 'NY';",
+    "choices": [
+        "SELECT FirstName, LastName FROM Student WHERE State $$ \\geq $$ 'NY';",
+        "SELECT FirstName, LastName FROM Student WHERE State IS 'CA' AND NOT 'NY';",
+        "SELECT FirstName, LastName FROM Student WHERE State $$ \\neq $$ 'NY';",
+        "SELECT FirstName, LastName FROM Student WHERE State $$=$$ 'CA', 'GA', 'NH';"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "a0f8b91intersql21a",
+    "stepAnswer": [
+        "It will add a new row to the table."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which statement is true regarding this query executed on an SQLite database?",
+    "stepBody": "INSERT INTO Parts (Price, Description) VALUES $$(35.00$$, 'Battery');",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "It will add a new row to the table.",
+        "It will update an existing row in the table.",
+        "It will fail if the table has additional columns besides Price and Description.",
+        "It will fail if the Description column is defined as a numeric field."
+    ]
+}

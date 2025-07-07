@@ -1,0 +1,78 @@
+[
+    {
+        "id": "af81dddsql12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand String Functions",
+        "text": "String functions are used in SQL to manipulate and format string data. Commonly used string functions include those that convert the case, trim spaces, and concatenate strings.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql12a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "UPPER()"
+        ],
+        "dependencies": [],
+        "title": "Identifying Common String Functions",
+        "text": "Which of the following functions is used to convert text to uppercase in SQL?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UPPER()",
+            "LOWER()",
+            "TRIM()",
+            "CONCAT()"
+        ]
+    },
+    {
+        "id": "af81dddsql12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql12a-h1"
+        ],
+        "title": "Case Conversion Functions",
+        "text": "SQL provides functions to convert the case of strings. UPPER() is used to convert any string to uppercase, while LOWER() converts it to lowercase.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql12a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRIM()"
+        ],
+        "dependencies": [],
+        "title": "Trimming Spaces",
+        "text": "Which SQL function is used to remove spaces at the beginning and end of a string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UPPER()",
+            "LOWER()",
+            "TRIM()",
+            "SUBSTRING()"
+        ]
+    },
+    {
+        "id": "af81dddsql12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql12a-h1"
+        ],
+        "title": "Useful String Functions",
+        "text": "Functions like UPPER(), LOWER(), and TRIM() are common for text manipulation in SQL, allowing for text formatting and space management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
