@@ -336,19 +336,19 @@ class Problem extends React.Component {
         }
     };
 
-    clickNextProblem = async () => {
-        scroll.scrollToTop({ duration: 900, smooth: true });
+  clickNextProblem = async () => {
+      scroll.scrollToTop({ duration: 900, smooth: true });
 
-        await this.props.problemComplete(this.context);
+      await this.props.problemComplete(this.context);
 
-        this.setState({
-            stepStates: {},
-            firstAttempts: {},
-            problemFinished: false,
-            feedback: "",
-            feedbackSubmitted: false,
-        });
-    };
+      this.setState({
+          stepStates: {},
+          firstAttempts: {},
+          problemFinished: false,
+          feedback: "",
+          feedbackSubmitted: false,
+      });
+  };
 
     submitFeedback = () => {
         const { problem } = this.props;
@@ -429,6 +429,9 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
+        const { progressInfo } = this.props;
+        const total = progressInfo?.total || 0;
+        const completed = progressInfo?.completed || 0;
         const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
