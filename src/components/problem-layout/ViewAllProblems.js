@@ -105,11 +105,13 @@ const ViewAllProblems = ({ translate }) => {
   // Filter by objectives
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
-    return problemPool.filter(problem =>
+    const pool = problemPool.filter(problem =>
       problem.steps.some(step =>
         (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
       )
     );
+
+    return pool;
   }, [lesson, problemPool, context.skillModel]);
 
   useEffect(() => {
@@ -118,19 +120,8 @@ const ViewAllProblems = ({ translate }) => {
 
   // Chunk rendering
   useEffect(() => {
-    setVisibleProblems([]);
-    if (filteredProblems.length === 0) return;
-    let idx = 0;
-    function batch() {
-      setVisibleProblems(prev => [
-        ...prev,
-        ...filteredProblems.slice(idx, idx + BATCH_SIZE)
-      ]);
-      idx += BATCH_SIZE;
-      if (idx < filteredProblems.length) setTimeout(batch, 16);
-    }
-    batch();
-  }, [filteredProblems]);
+  setVisibleProblems(filteredProblems);
+}, [filteredProblems]);
 
   // Safely build topics string
   const topicsText = lesson?.topics
