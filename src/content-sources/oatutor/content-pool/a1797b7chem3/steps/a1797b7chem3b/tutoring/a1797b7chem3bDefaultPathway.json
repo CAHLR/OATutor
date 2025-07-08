@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a1797b7chem3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bond Angles",
+        "text": "Consider the geometry around the carbon atom. Is it linear, trigonal planar, or tetrahedral?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem3b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hybridization of Carbon",
+        "text": "Think about the number of sigma bonds and lone pairs around the carbon atom. How does this relate to hybridization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem3b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining Molecular Shape",
+        "text": "Based on the hybridization and bond angles, what is the shape of the molecule around the carbon atom?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem3b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$109.5\u25e6$$"
+        ],
+        "dependencies": [
+            "a1797b7chem3b-h1"
+        ],
+        "title": "Bond Angle Calculation",
+        "text": "The bond angle for a tetrahedral geometry is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "180\u25e6",
+            "~120\u25e6",
+            "$$109.5\u25e6$$"
+        ]
+    },
+    {
+        "id": "a1797b7chem3b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sp3"
+        ],
+        "dependencies": [
+            "a1797b7chem3b-h2"
+        ],
+        "title": "Hybridization Identification",
+        "text": "The hybridization for a carbon atom with four sigma bonds is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sp",
+            "sp2",
+            "sp3"
+        ]
+    },
+    {
+        "id": "a1797b7chem3b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Tetrahedral"
+        ],
+        "dependencies": [
+            "a1797b7chem3b-h3"
+        ],
+        "title": "Molecular Shape Determination",
+        "text": "The shape of a molecule with sp3 hybridization and $$109.5\u25e6$$ bond angles is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear",
+            "Trigonal Planar",
+            "Tetrahedral"
+        ]
+    }
+]

@@ -1,0 +1,109 @@
+[
+    {
+        "id": "a1797b7chem1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Bonding",
+        "text": "Look at the bonds around the highlighted carbon atom. How many sigma and pi bonds are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem1a-h1"
+        ],
+        "title": "Determine the Hybridization",
+        "text": "Based on the number of sigma bonds and lone pairs, determine the hybridization of the carbon atom.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sp2"
+        ],
+        "dependencies": [
+            "a1797b7chem1a-h2"
+        ],
+        "title": "Hybridization Type",
+        "text": "What is the hybridization of a carbon atom with three sigma bonds and no lone pairs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Sp2",
+            "Sp3",
+            "Sp"
+        ]
+    },
+    {
+        "id": "a1797b7chem1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem1a-h3"
+        ],
+        "title": "Bond Angles",
+        "text": "What are the typical bond angles associated with sp2 hybridization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$120$$"
+        ],
+        "dependencies": [
+            "a1797b7chem1a-h4"
+        ],
+        "title": "Bond Angle Value",
+        "text": "What is the bond angle for sp2 hybridized atoms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem1a-h5"
+        ],
+        "title": "Molecular Shape",
+        "text": "What is the shape of a molecule with sp2 hybridization and no lone pairs on the central atom?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Trigonal planar"
+        ],
+        "dependencies": [
+            "a1797b7chem1a-h6"
+        ],
+        "title": "Shape of the Molecule",
+        "text": "What is the shape of a molecule with sp2 hybridization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Trigonal planar",
+            "Tetrahedral",
+            "Linear"
+        ]
+    }
+]

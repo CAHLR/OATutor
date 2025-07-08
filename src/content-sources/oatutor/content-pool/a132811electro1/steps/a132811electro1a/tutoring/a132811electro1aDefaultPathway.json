@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a132811electro1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidized Substance",
+        "text": "In a redox reaction, the substance that loses electrons is oxidized. Look at the reactants and products to determine which substance loses electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Fe"
+        ],
+        "dependencies": [
+            "a132811electro1a-h1"
+        ],
+        "title": "Determine the Oxidation State",
+        "text": "Determine the oxidation state of Fe in the reactants and products. Compare the changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro1a-h2"
+        ],
+        "title": "Which Substance Gains Electrons?",
+        "text": "In a redox reaction, the substance that gains electrons is reduced. Look at the reactants and products to determine which substance gains electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Ag"
+        ],
+        "dependencies": [
+            "a132811electro1a-h3"
+        ],
+        "title": "Determine the Reduction",
+        "text": "Determine the oxidation state of Ag in the reactants and products. Compare the changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

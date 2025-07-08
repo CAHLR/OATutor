@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae40a3eacidbase2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conjugate Acids",
+        "text": "A conjugate acid is formed when a base gains a proton (H+). Think about what happens when CO3**(2-) gains a proton.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase2a-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "CO3**(2-) is a base. What happens when it accepts a proton (H+)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "HCO3-"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase2a-h2"
+        ],
+        "title": "Add a Proton",
+        "text": "Add a proton (H+) to CO3**(2-). What is the resulting chemical formula?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae40a3eacidbase14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Reaction",
+        "text": "When ammonia (NH3) reacts with hydrochloric acid (HCl), it forms ammonium chloride (NH4Cl). Think about how the ions are exchanged in this reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14a-h1"
+        ],
+        "title": "Identify the Ions",
+        "text": "Ammonia (NH3) acts as a base and accepts a proton (H+) from hydrochloric acid (HCl), which is a strong acid. This results in the formation of ammonium ion (NH4+) and chloride ion $$(Cl-)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "NH3+HCl\u21ccNH4++Cl-"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase14a-h2"
+        ],
+        "title": "Write the Balanced Equation",
+        "text": "Combine the ions to form the balanced chemical equation for the reaction between NH3 and HCl.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

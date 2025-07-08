@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a1797b7chem2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bond Angles",
+        "text": "Consider the geometry around the nitrogen atom. What is the typical bond angle for a trigonal planar arrangement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hybridization of Nitrogen",
+        "text": "Think about the number of sigma bonds and lone pairs around the nitrogen atom. How does this affect its hybridization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem2b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining Molecular Shape",
+        "text": "Based on the hybridization and bond angles, what is the molecular shape around the nitrogen atom?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1797b7chem2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "~120\u25e6"
+        ],
+        "dependencies": [
+            "a1797b7chem2b-h1"
+        ],
+        "title": "Bond Angle Identification",
+        "text": "Identify the bond angle for a trigonal planar arrangement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "180\u25e6",
+            "~120\u25e6",
+            "$$109.5\u25e6$$"
+        ]
+    },
+    {
+        "id": "a1797b7chem2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sp2"
+        ],
+        "dependencies": [
+            "a1797b7chem2b-h2"
+        ],
+        "title": "Hybridization Determination",
+        "text": "Determine the hybridization of nitrogen with three sigma bonds and no lone pairs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sp",
+            "sp2",
+            "sp3"
+        ]
+    },
+    {
+        "id": "a1797b7chem2b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "trigonal planar"
+        ],
+        "dependencies": [
+            "a1797b7chem2b-h3"
+        ],
+        "title": "Molecular Shape Conclusion",
+        "text": "Conclude the molecular shape based on sp2 hybridization and ~120\u25e6 bond angles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "linear",
+            "trigonal planar",
+            "tetrahedral"
+        ]
+    }
+]

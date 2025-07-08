@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a132811electro2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidized Substance",
+        "text": "In a redox reaction, the substance that loses electrons is oxidized. Look at the changes in oxidation states.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$ to $$+2$$"
+        ],
+        "dependencies": [
+            "a132811electro2a-h1"
+        ],
+        "title": "Determine the Oxidation State of Mg",
+        "text": "What is the oxidation state of Mg in the reactants and products?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Reduced Substance",
+        "text": "In a redox reaction, the substance that gains electrons is reduced. Look at the changes in oxidation states.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$ to $$-1$$"
+        ],
+        "dependencies": [
+            "a132811electro2a-h3"
+        ],
+        "title": "Determine the Oxidation State of Br2",
+        "text": "What is the oxidation state of Br2 in the reactants and products?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidizing Agent",
+        "text": "The oxidizing agent is the substance that gets reduced. It gains electrons from the substance that is oxidized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2a-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Reducing Agent",
+        "text": "The reducing agent is the substance that gets oxidized. It loses electrons to the substance that is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

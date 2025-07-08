@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae40a3eacidbase5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding pH and $$[H3*O+]$$",
+        "text": "The pH of a solution is determined by the concentration of hydronium ions, $$[H3*O+]$$. A higher concentration of $$[H3*O+]$$ indicates an acidic solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase5a-h1"
+        ],
+        "title": "pH Scale Basics",
+        "text": "The pH scale ranges from $$0$$ to $$14$$. A pH less than $$7$$ indicates an acidic solution, a pH of $$7$$ is neutral, and a pH greater than $$7$$ is basic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase5a-h2"
+        ],
+        "title": "Calculating pH from $$[H3*O+]$$",
+        "text": "The pH of a solution can be calculated using the formula: $$pH=-\\log_{10}\\left([H3*O+]\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase5a-h3"
+        ],
+        "title": "Calculate the pH",
+        "text": "Given $$[H3*O+]=1\\times{10}^{-4}$$, calculate the pH using the formula: $$pH=-\\log_{10}\\left([H3*O+]\\right)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase5a-h4"
+        ],
+        "title": "Determine the Nature of the Solution",
+        "text": "With the calculated pH, determine if the solution is acidic, basic, or neutral. Remember, a pH less than $$7$$ indicates an acidic solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

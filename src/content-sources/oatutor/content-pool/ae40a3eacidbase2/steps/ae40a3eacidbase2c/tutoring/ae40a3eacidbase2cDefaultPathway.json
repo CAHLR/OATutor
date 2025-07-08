@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae40a3eacidbase2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conjugate Acids",
+        "text": "A conjugate acid is formed when a base gains a proton (H+).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase2c-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "Look at the given species, HPO4**2-. What happens if it gains a proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "H2PO4-"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase2c-h2"
+        ],
+        "title": "Add a Proton",
+        "text": "Add an H+ to HPO4**2-. What is the resulting chemical formula?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

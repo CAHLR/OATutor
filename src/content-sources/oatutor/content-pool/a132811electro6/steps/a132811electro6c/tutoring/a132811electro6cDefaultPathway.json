@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a132811electro6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Anode and Cathode",
+        "text": "In a galvanic cell, the anode is where oxidation occurs, and the cathode is where reduction occurs. Look at the image to identify which is the anode and which is the cathode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro6c-h1"
+        ],
+        "title": "Oxidation Reaction at the Anode",
+        "text": "At the anode, zinc (Zn) is oxidized. Write the half-reaction for the oxidation of zinc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zn(s)\u2192Zn2+(aq)+2e-"
+        ],
+        "dependencies": [
+            "a132811electro6c-h2"
+        ],
+        "title": "Oxidation Half-Reaction",
+        "text": "Write the oxidation half-reaction for zinc at the anode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro6c-h1"
+        ],
+        "title": "Reduction Reaction at the Cathode",
+        "text": "At the cathode, hydrogen ions (H+) are reduced. Write the half-reaction for the reduction of hydrogen ions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2H+(aq)+2e-\u2192H2(g)"
+        ],
+        "dependencies": [
+            "a132811electro6c-h4"
+        ],
+        "title": "Reduction Half-Reaction",
+        "text": "Write the reduction half-reaction for hydrogen ions at the cathode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro6c-h3"
+        ],
+        "title": "Combine the Half-Reactions",
+        "text": "Combine the oxidation and reduction half-reactions to write the overall cell reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zn(s)+2H+(aq)\u2192Zn2+(aq)+H2(g)"
+        ],
+        "dependencies": [
+            "a132811electro6c-h6"
+        ],
+        "title": "Overall Cell Reaction",
+        "text": "Combine the half-reactions to write the overall cell reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

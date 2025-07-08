@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ae40a3eacidbase14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equivalence Point",
+        "text": "The equivalence point in a titration is reached when the amount of titrant added is stoichiometrically equivalent to the amount of substance in the sample. For a reaction between a weak base and a strong acid, this means the moles of acid added equals the moles of base present.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14b-h1"
+        ],
+        "title": "Calculate Moles of NH3",
+        "text": "To find the moles of NH3 in the solution, use the formula: moles $$=$$ concentration * volume. Remember to convert the volume from ml to liters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.02$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase14b-h2"
+        ],
+        "title": "Calculate Moles of NH3",
+        "text": "Calculate the moles of NH3 using the formula: moles $$=$$ concentration * volume. Use 1M for concentration and $$0.02L$$ for volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14b-h3"
+        ],
+        "title": "Determine Volume of HCl Needed",
+        "text": "Once you have the moles of NH3, use the stoichiometry of the reaction to find the volume of HCl needed. The reaction is 1:1, so the moles of HCl needed will be equal to the moles of NH3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.04$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase14b-h4"
+        ],
+        "title": "Calculate Volume of HCl",
+        "text": "Use the formula: volume $$=$$ moles / concentration. Use the moles of NH3 you calculated and the concentration of HCl $$(0.5M)$$ to find the volume in liters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14b-h5"
+        ],
+        "title": "Convert Volume to Milliliters",
+        "text": "After calculating the volume of HCl in liters, convert it to milliliters by multiplying by $$1000$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase14b-h6"
+        ],
+        "title": "Final Volume in Milliliters",
+        "text": "Convert the volume of HCl from liters to milliliters. If the volume in liters is $$0.04$$, what is it in milliliters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
