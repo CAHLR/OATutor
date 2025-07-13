@@ -3,16 +3,6 @@
         "id": "a1797b7chem13a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding Kinetic Energy",
-        "text": "Kinetic energy is related to the motion of particles. At a given temperature, the average kinetic energy of gas particles is the same for all gases.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a1797b7chem13a-h2",
-        "type": "hint",
-        "dependencies": [],
         "title": "Average Kinetic Energy Formula",
         "text": "The average kinetic energy of gas particles can be calculated using the formula: $$KE_{avg}=\\frac{3}{2} k T$$, where k is the Boltzmann constant and T is the temperature in Kelvin.",
         "variabilization": {},
@@ -20,9 +10,11 @@
         "license": ""
     },
     {
-        "id": "a1797b7chem13a-h3",
+        "id": "a1797b7chem13a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a1797b7chem13a-h1"
+        ],
         "title": "Temperature and Kinetic Energy",
         "text": "Remember that the average kinetic energy of gas particles depends only on the temperature, not on the type of gas.",
         "variabilization": {},
@@ -30,7 +22,7 @@
         "license": ""
     },
     {
-        "id": "a1797b7chem13a-h4",
+        "id": "a1797b7chem13a-h3",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -38,7 +30,7 @@
             "They all have the same average kinetic energy"
         ],
         "dependencies": [
-            "a1797b7chem13a-h3"
+            "a1797b7chem13a-h2"
         ],
         "title": "Comparing Gases at the Same Temperature",
         "text": "If all gases are at the same temperature, what can you say about their average kinetic energy?",
@@ -49,7 +41,20 @@
             "$$N_2$$",
             "$$H_2 S$$",
             "$$SO_2$$",
-            "They all have the same average $$ \\cup _{rms}$$"
+            "They all have the same average $$ \\cup _{rms}$$",
+            "They all have the same average kinetic energy"
         ]
+    },
+    {
+        "id": "a1797b7chem13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1797b7chem13a-h3"
+        ],
+        "title": "Understanding Kinetic Energy",
+        "text": "Kinetic energy is related to the motion of particles. At a given temperature, the average kinetic energy of gas particles is the same for all gases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
     }
 ]
