@@ -38,13 +38,15 @@ import TextField from "@material-ui/core/TextField";
 import Spacer from "../components/Spacer";
 import Button from "@material-ui/core/Button";
 
-import menuToggle from "../assets/menuIcon.svg";
+import ToCButton from "../assets/layoutLeft.svg";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "../components/problem-layout/common-styles.js";
 
 import Drawer from '@material-ui/core/Drawer';
 import TableOfContents from '../components/tableOfContents.js';
+
+import withWidth from "@material-ui/core/withWidth";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -72,8 +74,8 @@ class Platform extends React.Component {
             showPopup: false,
             feedback: "",
             feedbackSubmitted: false,
-
-            drawerOpen: false
+            drawerOpen: true,
+            hasAutoClosedDrawer: false,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -99,7 +101,7 @@ class Platform extends React.Component {
                 seed: seed,
                 feedback: "",
                 feedbackSubmitted: false,  
-                drawerOpen: false             
+                drawerOpen: false,           
             };
         } else {
             this.state = {
@@ -108,10 +110,11 @@ class Platform extends React.Component {
                 seed: seed,
                 feedback: "",
                 feedbackSubmitted: false,
-                drawerOpen: false
+                drawerOpen: false,
             };
         }
 
+        // this.state.mastery = {};
         this.selectLesson = this.selectLesson.bind(this);
     }
 
@@ -149,8 +152,25 @@ class Platform extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null) {
+        console.log("lessonID changed:", this.props.lessonID);
+        const lesson = findLessonById(this.props.lessonID);
+        if (lesson) {
+            this.selectLesson(lesson).then(() => {
+                console.debug("loaded lesson " + this.props.lessonID, this.lesson);
+            });
+        } else {
+            console.warn("Lesson not found for ID:", this.props.lessonID);
+        }
+        }
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
+
+    handleLessonClick = (lesson) => {
+        if (lesson && lesson.id) {
+            this.props.history.push(`/lessons/${lesson.id}`);
+        }
+    };
 
     
     onComponentUpdate(prevProps, prevState, snapshot) {
@@ -486,11 +506,22 @@ class Platform extends React.Component {
         this.setState({ drawerOpen: open });
     };
 
+    // updateLessonMastery = (lessonId, newMastery) => {
+    //     this.setState(prevState => ({
+    //         mastery: {
+    //         ...prevState.mastery,
+    //         [lessonId]: newMastery,
+    //         }
+    //     }));
+    // };
+
     render() {
         const { translate } = this.props;
         const { showPopup } = this.state;
         const { classes, problem, seed } = this.props;
-        const drawerWidth = 320;
+        const drawerWidth = 356;
+        const isMobile = this.props.width === "xs"; 
+
         this.studentNameDisplay = this.context.studentName
         ? decodeURIComponent(this.context.studentName)
         : translate('platform.LoggedIn');
@@ -509,11 +540,37 @@ class Platform extends React.Component {
                         width: 320,
                         flexShrink: 0,
                     }}
+                    PaperProps={{
+                        style: {
+                        padding: 0,
+                        },
+                    }}
                 >
                     
                     <div style={{ width: drawerWidth, padding: 16 }}>
-                        <Button onClick={() => this.toggleDrawer(false)}>Close</Button>
-                        <TableOfContents />
+                        <IconButton 
+                        aria-label = "Table of Contents Toggle" 
+                        onClick = {() => this.toggleDrawer(false)}
+                        >
+                            <img 
+                            src={ToCButton} 
+                            alt="Table of Contents" 
+                            style={{
+                                width: 24,
+                                height: 24,
+                            }}
+                            />
+                        </IconButton>                        
+                        <TableOfContents 
+                            courseName={
+                                this.state.selectedCourse?.courseName ||
+                                findLessonById(this.props.lessonID)?.courseName
+                            } 
+                            mastery={this.state.mastery}
+                            onLessonClick={this.handleLessonClick}
+                            selectedLessonId={this.props.lessonID}
+                            updateMastery={this.updateLessonMastery}
+                        />
                     </div>
                 </Drawer>                
 
@@ -539,6 +596,7 @@ class Platform extends React.Component {
                                         isPrivileged={this.isPrivileged}
                                     />
                                 </Grid>
+                                
                                 <Grid item xs={5} key={2}>
                                     {/* <div
                                         style={{
@@ -711,7 +769,7 @@ class Platform extends React.Component {
                         }}
                     >
 
-                        {/* {this.state.status === "learning" ? (
+                        {this.state.status === "learning" ? (
                             <AppBar position="static" 
                                 style = {{
                                     backgroundColor: '#F6F8FA',
@@ -735,11 +793,11 @@ class Platform extends React.Component {
                                                         disabled = {this.state.drawerOpen}
                                                     >
                                                         <img 
-                                                            src={menuToggle} 
+                                                            src={ToCButton} 
                                                             alt="Table of Contents" 
                                                             style={{
-                                                                width: 40,
-                                                                height: 40
+                                                                width: 24,
+                                                                height: 24,
                                                             }}
                                                         />
 
@@ -748,33 +806,42 @@ class Platform extends React.Component {
                                             </Grid>
                                         )}
 
-                                        <Grid item xs={3}>
-                                            
-                                            <div style={{
-                                                color: "#21272A",
-                                                fontWeight: 600,
-                                                fontFamily: 'Titillium Web',
-                                                marginLeft: 35
-                                            }}>
-                                                question yada / yada
+                                        <div
+                                            style={{
+                                                position: isMobile ? "static" : "absolute",
+                                                left: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                width: '100%',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                pointerEvents: "none",
+                                            }}
+                                        >
+                                            <div
+                                            style={{
+                                                width: "85%",
+                                                // width: this.props.drawerOpen ? '95%' : '75%',
+                                                // transition: 'width 0.3s ease',
+                                                height: 20,
+                                                backgroundColor: '#ddd',
+                                                color: "#000000",
+                                                textAlign: "center",
+                                            }}
+                                            >
+                                            Progress Bar Placeholder
                                             </div>
+                                        </div>                                    
 
-                                        </Grid>
 
-                                        <Grid item xs={5} >
-                                            
-                                            <div style={{color: '#4C7D9F'}}>
-                                                progress bar goes here 
-                                            </div>
-
-                                        </Grid>
                                     </Grid>
                                 </Toolbar>
 
                             </AppBar>
                         ) : (
                             ""
-                        )} */}
+                        )}
 
 
 
@@ -810,6 +877,7 @@ class Platform extends React.Component {
                                     seed={this.state.seed}
                                     lessonID={this.props.lessonID}
                                     displayMastery={this.displayMastery}
+                                    drawerOpen={this.state.drawerOpen}
                                 />
                             </ErrorBoundary>
                         ) : (
@@ -944,4 +1012,4 @@ class Platform extends React.Component {
     }
 }
 
-export default withStyles(styles)(withRouter(withTranslation(Platform)));
+export default withWidth()(withStyles(styles)(withRouter(withTranslation(Platform))));

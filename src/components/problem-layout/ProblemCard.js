@@ -44,6 +44,8 @@ import clsx from 'clsx';
 import {Accordion, AccordionSummary, AccordionDetails, typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import withWidth from '@material-ui/core/withWidth';
+
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
 
@@ -625,10 +627,16 @@ class ProblemCard extends React.Component {
         const { isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
 
+        const isMobile = this.props.width === "xs"; 
+
         const problemAttempted = isCorrect != null;
 
         return (
-            <Card className={classes.card}>
+            // <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <Card 
+                className={classes.card} 
+                // style={{ width: this.props.drawerOpen ? '95%' : '75%' }}
+            >
                 <CardContent 
                     style={{ 
                         padding: '20px',
@@ -776,6 +784,7 @@ class ProblemCard extends React.Component {
                                 container
                                 spacing = {2}
                                 alignItems = "center"
+                                direction={isMobile ? "column" : "row'"}
                                 justifyContent= "space-between"
                                 style={{ 
                                     marginTop: 40, 
@@ -961,8 +970,9 @@ class ProblemCard extends React.Component {
                             </Grid>                     
                         </CardActions> 
                     </Card>
+            // </div>
         );
     }
 }
 
-export default withStyles(styles)(withTranslation(ProblemCard));
+export default withWidth()(withStyles(styles)(withTranslation(ProblemCard)));

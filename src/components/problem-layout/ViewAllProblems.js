@@ -53,6 +53,7 @@ const useStyles = makeStyles(theme => ({
     '& div[width="100%"]': {
       display: 'none',
     },
+    paddingRight: theme.spacing(8),
   },
   loadingBox: {
     textAlign: 'center',
@@ -284,14 +285,14 @@ const ViewAllProblems = ({ translate, history }) => {
           {SHOW_COPYRIGHT && `© ${new Date().getFullYear()} ${SITE_NAME}`}
         </Box>
         <Box className={classes.spacer} />
-        <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
+        {/* <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
           <HelpOutlineOutlinedIcon />
-        </IconButton>
+        </IconButton> */}
       </Box>
 
-      <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
+      {/* <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
         <About />
-      </Popup>
+      </Popup> */}
     </Box>
   );
 };

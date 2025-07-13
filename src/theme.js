@@ -19,7 +19,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Titillium Web', Inter, Roboto, sans-serif",
+    fontFamily: "Titillium Web, Inter, Roboto, sans-serif",
     h1: {
       fontWeight: 700,
       fontSize: '3rem',

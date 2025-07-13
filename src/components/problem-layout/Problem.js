@@ -453,166 +453,180 @@ class Problem extends React.Component {
 
         return (
             <>
-                <div>
-                    <div className={classes.prompt} role={"banner"}>
-                        <Card className={classes.titleCard}>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "100%",
+                    }}
+                >
+                    <div
+                        style={{
+                            width: "85%"
+                        // width: this.props.drawerOpen ? "95%" : "75%",
+                        // transition: "width 0.3s ease",
+                        }}
+                    >
+                        <div className={classes.prompt} role={"banner"}>
+                            <Card className={classes.titleCard}>
 
-                            <div 
-                                style = {{
-                                    backgroundColor: "#EBF4FA",
-                                    padding: 20
-                                }}
-                            >
-                                <div className={classes.problemHeader}>
-                                    {renderText(
-                                        problem.title,
-                                        problem.id,
-                                        chooseVariables(
-                                            problem.variabilization,
-                                            seed
-                                        ),
-                                        this.context
-                                    )}
-                                    
-                                </div>
-                            </div>
-
-                            <CardContent
-                                {...stagingProp({
-                                    "data-selenium-target": "problem-header",
-                                })}
-                                style={{ 
-                                    padding: 20
-                                }}
-                            >
-
-                                <div className={classes.problemBody}>
-                                    {renderText(
-                                        problem.body,
-                                        problem.id,
-                                        chooseVariables(
-                                            problem.variabilization,
-                                            seed
-                                        ),
-                                        this.context
-                                    )}
-                                </div>
-                            </CardContent>
-                        </Card>
-                        <Spacer height={8} />
-                        
-                    </div>
-
-                    <div role={"main"}>
-                        {problem.steps.map((step, idx) => (
-                            <Element
-                                name={idx.toString()}
-                                key={`${problem.id}-${step.id}`}
-                            >
-                                <ProblemCardWrapper
-                                    isAccordion={true}
-                                    expanded={this.state.expandedAccordion===idx}
-                                    onChange={this.accordionChange(idx)}
-                                    problemID={problem.id}
-                                    step={step}
-                                    index={idx}
-                                    answerMade={this.answerMade}
-                                    seed={seed}
-                                    problemVars={problem.variabilization}
-                                    lesson={problem.lesson}
-                                    courseName={problem.courseName}
-                                    problemTitle={problem.title}
-                                    problemSubTitle={problem.body}
-                                    giveStuFeedback={this.giveStuFeedback}
-                                    giveStuHints={this.giveStuHints}
-                                    keepMCOrder={this.keepMCOrder}
-                                    keyboardType={this.keyboardType}
-                                    giveHintOnIncorrect={
-                                        this.giveHintOnIncorrect
-                                    }
-                                    unlockFirstHint={this.unlockFirstHint}
-                                    giveStuBottomHint={this.giveStuBottomHint}
-                                    giveDynamicHint={this.giveDynamicHint}
-                                    prompt_template={this.prompt_template}
-                                />
-                            </Element>                          
-                        ))}
-                    </div>
-                    <div width="100%">
-                        {this.context.debug ? (
-                            <Grid container spacing={0}>
-                                <Grid item xs={2} key={0} />
-                                <Grid item xs={2} key={1}>
-                                    <NavLink
-                                        activeClassName="active"
-                                        className="link"
-                                        to={this._getNextDebug(-1)}
-                                        type="menu"
-                                        style={{ marginRight: "10px" }}
-                                    >
-                                        <Button
-                                            className={classes.button}
-                                            style={{ width: "100%" }}
-                                            size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
-                                        >
-                                            {translate('problem.PreviousProblem')}
-                                        </Button>
-                                    </NavLink>
-                                </Grid>
-                                <Grid item xs={4} key={2} />
-                                <Grid item xs={2} key={3}>
-                                    <NavLink
-                                        activeClassName="active"
-                                        className="link"
-                                        to={this._getNextDebug(1)}
-                                        type="menu"
-                                        style={{ marginRight: "10px" }}
-                                    >
-                                        <Button
-                                            className={classes.button}
-                                            style={{ width: "100%" }}
-                                            size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
-                                        >
-                                           {translate('problem.NextProblem')}
-                                        </Button>
-                                    </NavLink>
-                                </Grid>
-                                <Grid item xs={2} key={4} />
-                            </Grid>
-                        ) : (
-                            
-                            <Grid 
-                                container 
-                                justifyContent="flex-end"
-                                style={{ marginTop: 32, marginBottom: 32}}
-                            >
-                                <Grid item
-                                    style={{marginRight: 24}}
+                                <div 
+                                    style = {{
+                                        backgroundColor: "#EBF4FA",
+                                        padding: 20
+                                    }}
                                 >
-                                    <Button
-                                        className={classes.button} 
-                                        style={{ width: "100%" }}
-                                        size="small"
-                                        onClick={this.clickNextProblem}
-                                        disabled={
-                                            !(
-                                                this.state.problemFinished ||
-                                                this.state.feedbackSubmitted
-                                            )
-                                        }
-                                    >
-                                        {translate('problem.NextProblem')}
-                                    </Button>
-                                </Grid>
-                            </Grid>
+                                    <div className={classes.problemHeader}>
+                                        {renderText(
+                                            problem.title,
+                                            problem.id,
+                                            chooseVariables(
+                                                problem.variabilization,
+                                                seed
+                                            ),
+                                            this.context
+                                        )}
+                                        
+                                    </div>
+                                </div>
 
-                        )}
+                                <CardContent
+                                    {...stagingProp({
+                                        "data-selenium-target": "problem-header",
+                                    })}
+                                    style={{ 
+                                        padding: 20
+                                    }}
+                                >
+
+                                    <div className={classes.problemBody}>
+                                        {renderText(
+                                            problem.body,
+                                            problem.id,
+                                            chooseVariables(
+                                                problem.variabilization,
+                                                seed
+                                            ),
+                                            this.context
+                                        )}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Spacer height={8} />
+                            
+                        </div>
+
+                        <div role={"main"}>
+                            {problem.steps.map((step, idx) => (
+                                <Element
+                                    name={idx.toString()}
+                                    key={`${problem.id}-${step.id}`}
+                                >
+                                    <ProblemCardWrapper
+                                        isAccordion={true}
+                                        expanded={this.state.expandedAccordion===idx}
+                                        onChange={this.accordionChange(idx)}
+                                        problemID={problem.id}
+                                        step={step}
+                                        index={idx}
+                                        answerMade={this.answerMade}
+                                        seed={seed}
+                                        problemVars={problem.variabilization}
+                                        lesson={problem.lesson}
+                                        courseName={problem.courseName}
+                                        problemTitle={problem.title}
+                                        problemSubTitle={problem.body}
+                                        giveStuFeedback={this.giveStuFeedback}
+                                        giveStuHints={this.giveStuHints}
+                                        keepMCOrder={this.keepMCOrder}
+                                        keyboardType={this.keyboardType}
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
+                                        unlockFirstHint={this.unlockFirstHint}
+                                        giveStuBottomHint={this.giveStuBottomHint}
+                                        giveDynamicHint={this.giveDynamicHint}
+                                        prompt_template={this.prompt_template}
+                                    />
+                                </Element>                          
+                            ))}
+                        </div>
+                        <div width="100%">
+                            {this.context.debug ? (
+                                <Grid container spacing={0}>
+                                    <Grid item xs={2} key={0} />
+                                    <Grid item xs={2} key={1}>
+                                        <NavLink
+                                            activeClassName="active"
+                                            className="link"
+                                            to={this._getNextDebug(-1)}
+                                            type="menu"
+                                            style={{ marginRight: "10px" }}
+                                        >
+                                            <Button
+                                                className={classes.button}
+                                                style={{ width: "100%" }}
+                                                size="small"
+                                                onClick={() =>
+                                                    (this.context.needRefresh = true)
+                                                }
+                                            >
+                                                {translate('problem.PreviousProblem')}
+                                            </Button>
+                                        </NavLink>
+                                    </Grid>
+                                    <Grid item xs={4} key={2} />
+                                    <Grid item xs={2} key={3}>
+                                        <NavLink
+                                            activeClassName="active"
+                                            className="link"
+                                            to={this._getNextDebug(1)}
+                                            type="menu"
+                                            style={{ marginRight: "10px" }}
+                                        >
+                                            <Button
+                                                className={classes.button}
+                                                style={{ width: "100%" }}
+                                                size="small"
+                                                onClick={() =>
+                                                    (this.context.needRefresh = true)
+                                                }
+                                            >
+                                            {translate('problem.NextProblem')}
+                                            </Button>
+                                        </NavLink>
+                                    </Grid>
+                                    <Grid item xs={2} key={4} />
+                                </Grid>
+                            ) : (
+                                
+                                <Grid 
+                                    container 
+                                    justifyContent="flex-end"
+                                    style={{ marginTop: 32, marginBottom: 32}}
+                                >
+                                    <Grid item
+                                        style={{width: 167}}
+                                    >
+                                        <Button
+                                            className={classes.button} 
+                                            style={{ width: "100%" }}
+                                            size="small"
+                                            onClick={this.clickNextProblem}
+                                            disabled={
+                                                !(
+                                                    this.state.problemFinished ||
+                                                    this.state.feedbackSubmitted
+                                                )
+                                            }
+                                        >
+                                            {translate('problem.NextProblem')}
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+
+                            )}
+                        </div>
                     </div>
                 </div>
 

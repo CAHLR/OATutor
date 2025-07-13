@@ -1,9 +1,8 @@
 const styles = theme => ({
     card: {
-        width: '75%',
         marginLeft: 'auto',
         marginRight: 'auto',
-        marginBottom: 32
+        marginBottom: 32,
     },
     hintCard: {
         width: '40em',
@@ -30,8 +29,6 @@ const styles = theme => ({
         paddingRight: 10,
         width: "20%"
     },
-
-    
 
     stepHeader: {
         //textAlign: 'center',
@@ -92,10 +89,9 @@ const styles = theme => ({
         marginBottom: 32,
         textAlign: 'left',
         fontSize: 20,
-        fontFamily: 'Titillium Web, sans-serif',
+        fontFamily: 'Titillium Web, Inter, sans-serif',
     },
     titleCard: {
-        width: '75%',
         marginLeft: 'auto',
         marginRight: 'auto',
         paddingBottom: 0,
