@@ -35,18 +35,6 @@
     },
     {
         "id": "a40e287thermo2b-h4",
-        "type": "hint",
-        "dependencies": [
-            "a40e287thermo2b-h3"
-        ],
-        "title": "Check the Units",
-        "text": "Ensure that the temperature is read in degrees Celsius as indicated on the y-axis of the graph.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a40e287thermo2b-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -54,7 +42,7 @@
             "$$2800$$"
         ],
         "dependencies": [
-            "a40e287thermo2b-h4"
+            "a40e287thermo2b-h3"
         ],
         "title": "Determine the Temperature of Vaporization",
         "text": "What is the temperature at the plateau where the substance changes from liquid to gas?",
