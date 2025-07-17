@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae40a3eacidbase7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Acid Dissociation",
+        "text": "When an acid like HF dissociates in water, it releases a hydrogen ion (H+) and forms its conjugate base. The conjugate base is what remains of the acid after it donates a proton.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7b-h1"
+        ],
+        "title": "Identify the Conjugate Base",
+        "text": "The conjugate base of an acid is the species that is left after the acid has donated a proton (H+). For HF, think about what remains after it loses an H+.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "HF -> H+ + F-"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase7b-h2"
+        ],
+        "title": "Write the Dissociation Reaction",
+        "text": "Write the chemical equation for the dissociation of HF in water. Identify the products formed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7b-h3"
+        ],
+        "title": "Recognize the Conjugate Base",
+        "text": "In the dissociation reaction of HF, the species that is not the hydrogen ion (H+) is the conjugate base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "F-"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase7b-h4"
+        ],
+        "title": "Identify the Conjugate Base",
+        "text": "From the dissociation equation HF -> H+ + F-, identify the conjugate base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

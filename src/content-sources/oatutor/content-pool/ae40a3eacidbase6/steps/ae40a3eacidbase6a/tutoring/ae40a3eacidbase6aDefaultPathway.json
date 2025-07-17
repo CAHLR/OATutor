@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ae40a3eacidbase6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Salt Types",
+        "text": "To classify a salt as acidic, basic, or neutral, consider the nature of the ions that make up the salt. Think about the parent acid and base from which the salt is derived.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase6a-h1"
+        ],
+        "title": "Identify the Parent Acid and Base",
+        "text": "NH4+Cl- is formed from NH4OH (a weak base) and HCl (a strong acid). What does this tell you about the nature of the salt?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Acidic Salt"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase6a-h2"
+        ],
+        "title": "Determine the Salt Type",
+        "text": "Since NH4+Cl- is derived from a weak base and a strong acid, it is classified as an acidic salt.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Acidic Salt",
+            "Basic Salt",
+            "Neutral Salt"
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae40a3eacidbase7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Acid Dissociation",
+        "text": "The acid dissociation constant, Ka, is a measure of the strength of an acid in solution. It is the equilibrium constant for the dissociation of an acid into its ions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7d-h1"
+        ],
+        "title": "Identify the Species Involved",
+        "text": "For hydrofluoric acid (HF), identify the species that are present in the dissociation reaction. What ions does HF dissociate into?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7d-h2"
+        ],
+        "title": "Write the Dissociation Reaction",
+        "text": "Write the chemical equation for the dissociation of HF in water. Remember that HF dissociates into H3O+ and F-.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "H3O+*F-/HF"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase7d-h3"
+        ],
+        "title": "Formulate the Ka Expression",
+        "text": "Using the dissociation reaction, write the expression for the acid dissociation constant (Ka) for HF. Remember that Ka is the product of the concentrations of the products divided by the concentration of the reactant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

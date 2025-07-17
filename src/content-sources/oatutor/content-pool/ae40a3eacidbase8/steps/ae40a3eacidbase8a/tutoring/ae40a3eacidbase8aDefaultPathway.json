@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae40a3eacidbase8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding HCl as a Strong Acid",
+        "text": "Remember that HCl is a strong acid, which means it completely dissociates in water. This implies that the concentration of HCl is equal to the concentration of hydrogen ions (H\u207a) in the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase8a-h1"
+        ],
+        "title": "Using the pH Formula",
+        "text": "The pH of a solution is calculated using the formula: $$pH=-\\log_{10}\\left([H\u207a]\\right)$$. Use this formula to find the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.56$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase8a-h1"
+        ],
+        "title": "Calculate the Hydrogen Ion Concentration",
+        "text": "Since HCl is a strong acid, the concentration of H\u207a ions is the same as the concentration of HCl. Therefore, $$[H\u207a]=0.560$$ M.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.26$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase8a-h3"
+        ],
+        "title": "Calculate the pH",
+        "text": "Use the formula $$pH=-\\log_{10}\\left([H\u207a]\\right)$$ with $$[H\u207a]=0.560$$ to find the pH.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

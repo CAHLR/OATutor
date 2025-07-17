@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae40a3eacidbase6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Salt Types",
+        "text": "To classify a salt as acidic, basic, or neutral, consider the strength of the acid and base from which it is derived. A salt formed from a strong acid and a weak base is acidic, while a salt from a weak acid and a strong base is basic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase6b-h1"
+        ],
+        "title": "Identify the Parent Acid and Base",
+        "text": "For Na+CH3COO-, identify the acid and base that form this salt. Sodium acetate is derived from acetic acid (CH3COOH) and sodium hydroxide (NaOH).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase6b-h2"
+        ],
+        "title": "Determine the Strength of the Acid and Base",
+        "text": "Acetic acid (CH3COOH) is a weak acid, and sodium hydroxide (NaOH) is a strong base. What does this imply about the nature of the salt?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Basic Salt"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase6b-h3"
+        ],
+        "title": "Classify the Salt",
+        "text": "Based on the strength of the parent acid and base, classify Na+CH3COO- as acidic, basic, or neutral.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Acidic Salt",
+            "Basic Salt",
+            "Neutral Salt"
+        ]
+    }
+]
