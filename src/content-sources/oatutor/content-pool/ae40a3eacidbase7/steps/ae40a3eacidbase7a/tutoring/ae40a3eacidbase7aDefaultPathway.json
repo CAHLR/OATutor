@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae40a3eacidbase7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Weak Acids",
+        "text": "Hydrofluoric acid (HF) is a weak acid, which means it does not completely dissociate in water. Consider what happens when HF is added to water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7a-h1"
+        ],
+        "title": "Identify the Ions Formed",
+        "text": "When HF dissociates in water, it forms two ions. Can you identify these ions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7a-h2"
+        ],
+        "title": "Role of Water in the Reaction",
+        "text": "Remember that water (H2O) acts as a base in this reaction, accepting a proton from HF. What does this form?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "HF(aq)+H2O(l)\u21ccF-(aq)+H3O+(aq)"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase7a-h3"
+        ],
+        "title": "Write the Dissociation Equation",
+        "text": "Combine your knowledge of the ions formed and the role of water to write the dissociation equation for HF in water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

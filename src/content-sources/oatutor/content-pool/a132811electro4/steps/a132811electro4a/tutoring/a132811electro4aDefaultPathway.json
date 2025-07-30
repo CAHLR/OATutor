@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a132811electro4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidation and Reduction Half-Reactions",
+        "text": "To balance the redox equation, start by identifying the oxidation and reduction half-reactions. Which species is being oxidized and which is being reduced?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro4a-h1"
+        ],
+        "title": "Write the Half-Reactions",
+        "text": "Write the oxidation and reduction half-reactions separately. Remember to include the electrons in each half-reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro4a-h2"
+        ],
+        "title": "Balance the Electrons",
+        "text": "Ensure that the number of electrons lost in the oxidation half-reaction equals the number of electrons gained in the reduction half-reaction. Adjust the coefficients accordingly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro4a-h3"
+        ],
+        "title": "Combine the Half-Reactions",
+        "text": "Add the balanced half-reactions together to form the overall balanced redox equation. Make sure to cancel out the electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3Pb2+(aq)+2Au(s)\u21923Pb(s)+2Au3+(aq)"
+        ],
+        "dependencies": [
+            "a132811electro4a-h4"
+        ],
+        "title": "Final Balanced Equation",
+        "text": "Combine the balanced half-reactions to get the final balanced equation for the redox reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

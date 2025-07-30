@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a132811electro6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Galvanic Cell",
+        "text": "In a galvanic cell, the anode is where oxidation occurs, and the cathode is where reduction occurs. The cell voltage is the difference between the reduction potentials of the cathode and anode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro6d-h1"
+        ],
+        "title": "Standard Hydrogen Electrode (SHE)",
+        "text": "The standard hydrogen electrode (SHE) has a standard reduction potential of $$0$$ V. This is used as a reference electrode in electrochemistry.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro6d-h2"
+        ],
+        "title": "Cell Voltage Equation",
+        "text": "The cell voltage $$E_{cell}$$ is given by the equation: $$E_{cell}$$ $$=$$ $$E_{cathode}$$ - $$E_{anode}$$. You need to find the standard reduction potential for the Zn2+/Zn system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro6d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.76$$"
+        ],
+        "dependencies": [
+            "a132811electro6d-h3"
+        ],
+        "title": "Calculate the Standard Reduction Potential",
+        "text": "Given that the cell voltage is $$0.76$$ V and the standard reduction potential for SHE is $$0$$ V, use the equation $$E_{cell}$$ $$=$$ $$E_{cathode}$$ - $$E_{anode}$$ to find the standard reduction potential for Zn2+/Zn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

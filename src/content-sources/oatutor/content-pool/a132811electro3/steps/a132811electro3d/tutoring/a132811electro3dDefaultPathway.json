@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a132811electro3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the species being reduced",
+        "text": "In a redox reaction, reduction involves the gain of electrons. Look for the species that gains electrons in the reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro3d-h1"
+        ],
+        "title": "Determine the oxidation states",
+        "text": "Determine the oxidation states of the elements in the reactants and products to identify which species is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Ag+ + e \u2192 Ag"
+        ],
+        "dependencies": [
+            "a132811electro3d-h2"
+        ],
+        "title": "Write the reduction half-reaction",
+        "text": "Write the half-reaction for the species that gains electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

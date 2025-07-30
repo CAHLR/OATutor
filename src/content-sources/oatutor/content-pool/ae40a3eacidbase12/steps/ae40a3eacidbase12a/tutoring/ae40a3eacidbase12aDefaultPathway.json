@@ -1,0 +1,116 @@
+[
+    {
+        "id": "ae40a3eacidbase12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Type of Solution",
+        "text": "This problem involves a weak acid (HC2H3O2) and its conjugate base (C2H3O2Na). What type of solution does this create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase12a-h1"
+        ],
+        "title": "Use the Henderson-Hasselbalch Equation",
+        "text": "The Henderson-Hasselbalch equation is useful for calculating the pH of a buffer solution. Do you remember the formula?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "pH=pKa+log{[A-]/[HA]}"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase12a-h2"
+        ],
+        "title": "Write the Henderson-Hasselbalch Equation",
+        "text": "The equation is: pH=pKa+log{[A-]/[HA]}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase12a-h3"
+        ],
+        "title": "Calculate pKa",
+        "text": "The pKa is calculated from the Ka value. How do you find pKa from Ka?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$pKa=4.74$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase12a-h4"
+        ],
+        "title": "Calculate pKa from Ka",
+        "text": "pKa=-log{Ka}. Given $$Ka=1.8\\times{10}^{-5}$$, calculate pKa.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase12a-h5"
+        ],
+        "title": "Identify [A-] and [HA]",
+        "text": "In the equation pH=pKa+log{[A-]/[HA]}, what do [A-] and [HA] represent in this problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "pH=4.74+log{0.2/0.5}"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase12a-h6"
+        ],
+        "title": "Substitute Values into the Equation",
+        "text": "Substitute the values: $$[A-]=0.2$$ $$\\frac{mol}{L}$$, $$[HA]=0.5$$ $$\\frac{mol}{L}$$, and $$pKa=4.74$$ into the equation pH=pKa+log{[A-]/[HA]}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase12a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$pH=4.34$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase12a-h7"
+        ],
+        "title": "Calculate the pH",
+        "text": "Calculate the pH using the equation: pH=4.74+log{0.2/0.5}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "id": "ae40a3eacidbase11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the pH of a solution, we need to understand the relationship between the concentration of the solution and the dissociation constant (Ka) of the acid involved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase11a-h1"
+        ],
+        "title": "Identify the Reaction",
+        "text": "NaF is a salt that dissociates into Na+ and F- ions in solution. The F- ion is the conjugate base of HF, a weak acid. The reaction in water is: F- + H2O \u21cc HF + OH-.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase11a-h2"
+        ],
+        "title": "Use the Kb Expression",
+        "text": "Since F- is the conjugate base of HF, we can find the base dissociation constant (Kb) using the relation: Kb $$=$$ $$\\frac{Kw}{Ka}$$, where Kw is the ion-product constant of water $$1\\times{10}^{-14}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.47\\times{10}^{-11}$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase11a-h3"
+        ],
+        "title": "Calculate Kb",
+        "text": "Calculate Kb using the formula: Kb $$=$$ $$\\frac{Kw}{Ka}$$. Given Kw $$=$$ $$1\\times{10}^{-14}$$ and Ka $$=$$ $$6.8\\times{10}^{-4}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase11a-h4"
+        ],
+        "title": "Set Up the ICE Table",
+        "text": "Set up an ICE (Initial, Change, Equilibrium) table for the reaction F- + H2O \u21cc HF + OH-. Use the initial concentration of F- and the change in concentration to find the equilibrium concentrations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.71\\times{10}^{-6}$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase11a-h5"
+        ],
+        "title": "Solve for OH- Concentration",
+        "text": "Using the Kb expression: Kb $$=$$ $$\\frac{[HF][OH-]/[F-][HF][OH-]/[F-]}{[HF][OH-]/[F-]}$$, solve for the concentration of OH- at equilibrium.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase11a-h6"
+        ],
+        "title": "Calculate pOH",
+        "text": "Once you have the concentration of OH-, calculate the pOH using the formula: pOH $$=$$ -log[OH-].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.77$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase11a-h7"
+        ],
+        "title": "Find pOH",
+        "text": "Calculate pOH using the concentration of OH-: pOH $$=$$ $$-\\ln\\left(1.71\\times{10}^{-6}\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase11a-h8"
+        ],
+        "title": "Convert pOH to pH",
+        "text": "Use the relationship between pH and pOH: pH + pOH $$=$$ $$14$$, to find the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase11a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.23$$"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase11a-h9"
+        ],
+        "title": "Calculate pH",
+        "text": "Using the formula pH $$=$$ $$14$$ - pOH, calculate the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

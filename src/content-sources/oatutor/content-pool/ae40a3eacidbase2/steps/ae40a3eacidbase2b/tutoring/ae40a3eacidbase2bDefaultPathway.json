@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae40a3eacidbase2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conjugate Acids",
+        "text": "A conjugate acid is formed when a base gains a proton (H\u207a).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase2b-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "In the given problem, identify the base that will accept a proton to form the conjugate acid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase2b-h2"
+        ],
+        "title": "Add a Proton",
+        "text": "To find the conjugate acid, add an H\u207a ion to the base CN\u207b.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "HCN"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase2b-h3"
+        ],
+        "title": "Form the Conjugate Acid",
+        "text": "What is the chemical formula of the conjugate acid formed when CN\u207b gains a proton?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

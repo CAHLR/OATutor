@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae40a3eacidbase14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equivalence Point",
+        "text": "At the equivalence point in a titration, the amount of acid equals the amount of base. Consider what happens to the products formed at this point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14c-h1"
+        ],
+        "title": "Identify the Products",
+        "text": "When NH3 reacts with HCl, it forms NH4+ and Cl-. Think about what happens to NH4+ in water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase14c-h2"
+        ],
+        "title": "Reaction of NH4+ in Water",
+        "text": "NH4+ can react with water to form NH3 and H3O+. This reaction can affect the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase14c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "NH4+ + H2O \u21cc NH3 + H3O+"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase14c-h3"
+        ],
+        "title": "Write the Reaction Equation",
+        "text": "Write the equation for the reaction of NH4+ with water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "NH4+ + H2O \u21cc NH3 + H3O+",
+            "$$Cl-$$ + H2O \u21cc HCl + $$OH-$$",
+            "NH4+ + $$OH-$$ \u21cc NH3 + H2O"
+        ]
+    }
+]

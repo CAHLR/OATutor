@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae40a3eacidbase7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conjugate Acids",
+        "text": "In an acid-base reaction, the conjugate acid is formed when the base gains a proton (H+).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7c-h1"
+        ],
+        "title": "Dissociation of HF",
+        "text": "When HF dissociates in water, it donates a proton to water (H2O).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae40a3eacidbase7c-h2"
+        ],
+        "title": "Identify the Products",
+        "text": "The dissociation of HF in water results in the formation of F- and H3O+.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae40a3eacidbase7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "H3O+"
+        ],
+        "dependencies": [
+            "ae40a3eacidbase7c-h3"
+        ],
+        "title": "Determine the Conjugate Acid",
+        "text": "Which species is formed when water gains a proton from HF?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
