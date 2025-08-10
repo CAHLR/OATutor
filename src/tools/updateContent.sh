@@ -77,7 +77,7 @@ cd "${PLATFORM_REPO_DIR}" || exit
 # replace old bkt-params with newly generated ones
 rm src/content-sources/oatutor/bkt-params/*.json
 mv src/content-sources/oatutor/bktParams.json src/content-sources/oatutor/bkt-params/defaultBKTParams.json
-cp src/content-sources/oatutor/bkt-params/bktParams1.json src/content-sources/oatutor/bkt-params/experimentalBKTParams.json
+cp src/content-sources/oatutor/bkt-params/defaultBKTParams.json src/content-sources/oatutor/bkt-params/experimentalBKTParams.json
 
 echo "Preprocessing the problem pool..."
 
