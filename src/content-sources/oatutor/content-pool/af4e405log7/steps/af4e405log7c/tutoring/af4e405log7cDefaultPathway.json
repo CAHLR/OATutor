@@ -1,0 +1,73 @@
+[
+    {
+        "id": "af4e405log7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "First, convert the expression to exponential form. To convert a logarithmic equation to exponential form, we need to identify the base of the exponential, a, and the exponent $$y$$ since $$y=\\log_{a}\\left(x\\right)$$ is equivalent to $$x=a^y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log7c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{1}{2}\\right)^x=\\frac{1}{8}$$"
+        ],
+        "dependencies": [
+            "af4e405log7c-h1"
+        ],
+        "title": "Determining the Exponential Form",
+        "text": "What is the exponential form of the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\left(\\frac{1}{2}\\right)^x=\\frac{1}{8}$$",
+            "$$\\left(\\frac{1}{8}\\right)^x=\\frac{1}{2}$$",
+            "$$x^{\\frac{1}{2}}=\\frac{1}{8}$$",
+            "$$\\left(\\frac{1}{8}\\right)^{\\frac{1}{2}}=x$$"
+        ]
+    },
+    {
+        "id": "af4e405log7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{1}{2}\\right)^3$$"
+        ],
+        "dependencies": [
+            "af4e405log7c-h2"
+        ],
+        "title": "Rewrite $$\\frac{1}{8}$$ with base $$\\frac{1}{2}$$",
+        "text": "Since $$2^3=8$$, we can actually rewrite $$\\frac{1}{8}$$ in terms of $$\\frac{1}{2}$$. What is $$\\frac{1}{8}$$ equal to in terms of $$\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\left(\\frac{1}{2}\\right)^3$$",
+            "$$3^{\\frac{1}{2}}$$"
+        ]
+    },
+    {
+        "id": "af4e405log7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "af4e405log7c-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Substituting $$\\left(\\frac{1}{2}\\right)^3$$ into the exponential equation we found before, we get $$\\left(\\frac{1}{2}\\right)^x=\\left(\\frac{1}{2}\\right)^3$$. What is the solution for $$x$$ in this exponential equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

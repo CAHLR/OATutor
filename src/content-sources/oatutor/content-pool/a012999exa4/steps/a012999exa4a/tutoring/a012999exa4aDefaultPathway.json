@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a012999exa4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "Multiply the outside value with each of the inside parenthesis values",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^2$$"
+        ],
+        "dependencies": [
+            "a012999exa4a-h1"
+        ],
+        "title": "Multiply pt2",
+        "text": "What is $$y$$ times $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2y$$"
+        ],
+        "dependencies": [
+            "a012999exa4a-h2"
+        ],
+        "title": "Multiply pt3",
+        "text": "What is $$y$$ times -2?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a012999exa4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a012999exa4a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine the values multiplied",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
