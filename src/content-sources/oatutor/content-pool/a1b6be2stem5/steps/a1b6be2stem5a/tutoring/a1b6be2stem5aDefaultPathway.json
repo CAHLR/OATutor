@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a1b6be2stem5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of a Stem-and-Leaf Plot",
+        "text": "A stem-and-leaf graph (also known as a stemplot) is used for exploratory data analysis. On the \"leaf\" side of the table, we will list out the final significant digit (the last digit important to the data set). All other digits go in the \"stem\" side of the table. For instance, $$23$$ has stem $$2$$ and leaf 3; $$5432$$ has stem $$543$$ and leaf 2; $$9.3$$ has stem $$9$$ and leaf $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1b6be2stem5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph A, Graph C"
+        ],
+        "dependencies": [
+            "a1b6be2stem5a-h1"
+        ],
+        "title": "Identifying the Correct Stems",
+        "text": "Which two stem-and-leaf graphs include all the stems required for this question?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Graph A, Graph D",
+            "Graph A, Graph C",
+            "Graph A, Graph B",
+            "Graph B, Graph C"
+        ],
+        "subHints": [
+            {
+                "id": "a1b6be2stem5a-h2-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "Graph A, Graph C"
+                ],
+                "dependencies": [],
+                "title": "Identifying the Correct Stems",
+                "text": "Which two stem-and-leaf graphs include stems from $$0$$ (for data points in the 0s) to $$8$$ (for data points in the 8s)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "choices": [
+                    "Graph A, Graph D",
+                    "Graph A, Graph C",
+                    "Graph A, Graph B",
+                    "Graph B, Graph C"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "a1b6be2stem5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1b6be2stem5a-h2"
+        ],
+        "title": "Determining Duplicates in Stem-and-Leaf",
+        "text": "All data points will be visible on the stem-and-leaf graph, even duplicates. For instance, if $$1.2$$ appears twice in the given data set, it will appear twice in the stem-and-leaf graph as well.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1b6be2stem5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Graph C"
+        ],
+        "dependencies": [
+            "a1b6be2stem5a-h3"
+        ],
+        "title": "Identifying the Correct Stem-and-Leaf Graph",
+        "text": "Which graph includes all the correct data values for the given data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Graph A",
+            "Graph C"
+        ],
+        "subHints": [
+            {
+                "id": "a1b6be2stem5a-h4-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "Graph C"
+                ],
+                "dependencies": [],
+                "title": "Identifying the Correct Stem-and-Leaf Graph",
+                "text": "Which graph includes all the duplicates? For instance, $$1.2$$, $$1.3$$, $$1.5$$, and $$1.7$$ should appear twice in the graph while $$2.8$$ should appear three times.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "choices": [
+                    "Graph A",
+                    "Graph C"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a642536polar28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identities",
+        "text": "We have the identities $$r^2=x^2+y^2$$, $$x=rcos\\theta$$, and $$y=rsin\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar28a-h1"
+        ],
+        "title": "Substitute",
+        "text": "$$4rcostheta rsintheta+2r^2=r^{2\\left(4costheta sintheta+2\\right)}=9$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar28a-h2"
+        ],
+        "title": "Trigonometric Identity",
+        "text": "$$2sin\\thetacos\\theta=2sin2\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar28a-h3"
+        ],
+        "title": "Substitute",
+        "text": "$$r^{2\\left(2sin2theta+2\\right)}=9$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar28a-h4"
+        ],
+        "title": "Isolate $$r$$",
+        "text": "$$r^2=\\frac{9}{2sin2theta+2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar28a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar28a-h5"
+        ],
+        "title": "Isolate $$r$$",
+        "text": "r=\u221a(9/(2sin2\u03b8+2))=3/\u221a(2sin2\u03b8+2)=3/\u221a(2(1+sin2\u03b8))",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a005bd5real15a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "A(d)=4"
+        ],
+        "dependencies": [],
+        "title": "Define Variables",
+        "text": "What is given pain level assigned to A(d)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "d=milligrams of a pain-reducing drug"
+        ],
+        "dependencies": [],
+        "title": "Define Variables",
+        "text": "What does the pain level, A(d), take as its input?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "m(t)=milligrams of the drug in the patient's system after t minutes"
+        ],
+        "dependencies": [
+            "a005bd5real15a-h2"
+        ],
+        "title": "Define Variables",
+        "text": "What is m(t)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real15a-h3"
+        ],
+        "title": "Composition of Functions",
+        "text": "A(d) gives us the pain level from the amount of milligrams and m(t) gives us the amount of milligrams after $$t$$ time. A(m(t)) gives us pain level after $$t$$ time.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real15a-h4"
+        ],
+        "title": "Composition of Functions",
+        "text": "To find $$t$$ from pain level, solve $$A(m(t))=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

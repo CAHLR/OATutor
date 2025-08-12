@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a6348524.4pancrea1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Geometric distribution notation",
+        "text": "Remember that $$X\\pm G p$$ can be read as \"X is a random variable with a geometric distribution.\" The parameter is p; $$p$$ $$=$$ the probability of a\\nsuccess for each trial.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6348524.4pancrea1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6348524.4pancrea1b-h1"
+        ],
+        "title": "Geometric distribution",
+        "text": "To find $$P(X=20)$$, you can use a calculator function $$geometpdf(0.0128$$, _) to find the probability.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6348524.4pancrea1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a6348524.4pancrea1b-h2"
+        ],
+        "title": "Geometric distribution",
+        "text": "To find $$P(X=10)$$, you can use a calculator function $$geometpdf(0.0128$$, _) to find the probability.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$10$$",
+            "$$20$$",
+            "$$30$$",
+            "$$78$$",
+            "$$\\frac{1}{78}$$"
+        ]
+    }
+]
