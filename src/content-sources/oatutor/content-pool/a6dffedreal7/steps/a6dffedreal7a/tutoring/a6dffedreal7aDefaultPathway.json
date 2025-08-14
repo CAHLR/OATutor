@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a6dffedreal7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute the Value",
+        "text": "Because we don\u2019t have the initial value, we substitute both points into an equation of the form $$f(x)={ab}^x$$, and then solve the system for a and $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal7a-h1"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substituting $$(0,2000)$$ gives $$2000={ab}^0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal7a-h2"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substituting $$(2,20)$$ gives $$20={ab}^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal7a-h3"
+        ],
+        "title": "Solve for a In Terms of $$b$$",
+        "text": "Use the first equation to solve for a.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2000$$"
+        ],
+        "dependencies": [
+            "a6dffedreal7a-h4"
+        ],
+        "title": "Solve for a",
+        "text": "From the first equation, what is the value of a?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a6dffedreal7a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Solve for $$b$$",
+                "text": "Use the value of a in the second equation to solve for the value of $$b$$. What is the value of $$b$$?",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

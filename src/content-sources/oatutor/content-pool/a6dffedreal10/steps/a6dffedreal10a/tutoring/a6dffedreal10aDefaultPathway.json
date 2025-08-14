@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a6dffedreal10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute the Value",
+        "text": "Because we don\u2019t have the initial value, we substitute both points into an equation of the form $$f(x)={ab}^x$$, and then solve the system for a and $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal10a-h1"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substituting $$(3,1)$$ gives $$1={ab}^3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal10a-h2"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substituting $$(5,4)$$ gives $$4={ab}^5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal10a-h3"
+        ],
+        "title": "Solve for a In Terms of $$b$$",
+        "text": "Use the first equation to solve for a in terms of $$b$$. $$a=b^{\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a6dffedreal10a-h4"
+        ],
+        "title": "Solve for $$b$$",
+        "text": "Substitute a in the second equation, and solve for $$b$$. What is the value of $$b$$? (b is positive)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a6dffedreal10a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{1}{8}$$"
+                ],
+                "dependencies": [],
+                "title": "Solve for a",
+                "text": "Use the value of $$b$$ in the first equation to solve for the value of a. What is the value of a?",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

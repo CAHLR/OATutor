@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a25b88enonlinear16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strategy of Substitution",
+        "text": "To use substitution, write the first equation in terms of $$y$$ and plug into the second equation. This writes the second equation only in terms of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^2-6x=0$$"
+        ],
+        "dependencies": [
+            "a25b88enonlinear16a-h1"
+        ],
+        "title": "Expression in terms of $$x$$",
+        "text": "What is the resulting expression in terms of only $$x$$ after simplifying?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear16a-h2"
+        ],
+        "title": "Factor Expression",
+        "text": "To solve for the values of $$x$$, factor out an $$x$$ from both terms and use the zero product property to calculate the values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear16a-h3"
+        ],
+        "title": "Values of $$y$$",
+        "text": "To solve for the values of $$y$$, substitute each of the x-values into the first equation of $$x+y=3$$ and isolate $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

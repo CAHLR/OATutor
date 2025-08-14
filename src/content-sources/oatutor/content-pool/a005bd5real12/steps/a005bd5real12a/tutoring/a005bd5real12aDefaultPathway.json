@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a005bd5real12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define Composition of Functions",
+        "text": "$$(g\u2218f)(x)=g(f(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real12a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$x=f(x)$$: $$g(f(x))=g{\\left(x^5\\right)}=x^5+1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real12a-h2"
+        ],
+        "title": "Check",
+        "text": "$$g(f(x))=x^5+1 \\neq \\left(x+1\\right)^5=F(x)$$, so False",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

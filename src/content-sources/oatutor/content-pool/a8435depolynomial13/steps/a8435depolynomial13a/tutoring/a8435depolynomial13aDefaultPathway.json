@@ -1,0 +1,150 @@
+[
+    {
+        "id": "a8435depolynomial13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up",
+        "text": "Set up the synthetic division. The divisor is $$x+k=0$$, so solve for $$x$$ to get the divisor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h1"
+        ],
+        "title": "Dividing",
+        "text": "What do you get when you multiply $$4$$ (the first coefficient) by $$2$$ (the divisor k)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$4$$",
+            "$$2$$",
+            "$$16$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h2"
+        ],
+        "title": "Dividing",
+        "text": "What do you get when you add $$8$$ to the second coefficient 0?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$16$$",
+            "$$4$$",
+            "$$0$$",
+            "$$8$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial13a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h3"
+        ],
+        "title": "Dividing",
+        "text": "What is $$8$$ multiplied by 2?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$18$$",
+            "$$32$$",
+            "$$16$$",
+            "$$8$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial13a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h4"
+        ],
+        "title": "Dividing",
+        "text": "What do you get when you add $$16$$ to the next coefficient 0?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$32$$",
+            "$$4$$",
+            "$$16$$",
+            "$$0$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial13a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$32$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h5"
+        ],
+        "title": "Dividing",
+        "text": "What is $$16$$ multiplied by 2?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$18$$",
+            "$$32$$",
+            "$$8$$",
+            "$$36$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial13a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial13a-h6"
+        ],
+        "title": "Dividing",
+        "text": "What do you get when you add $$32$$ to -33?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$55$$",
+            "$$-55$$",
+            "$$-1$$",
+            "$$1$$"
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aa6a8c8add7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Working Inside the Parentheses",
+        "text": "The first step is to work on the expression inside the parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa6a8c8add7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "aa6a8c8add7a-h1"
+        ],
+        "title": "Expression Inside Parentheses",
+        "text": "What is $$7-5$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa6a8c8add7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "aa6a8c8add7a-h2"
+        ],
+        "title": "Multiplying the Expression in the Parentheses",
+        "text": "The next step is to multiply the expression in the parentheses by the factor outside of it, which is $$4$$. What is $$4(7-5)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa6a8c8add7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aa6a8c8add7a-h3"
+        ],
+        "title": "Subtracting Inside the Absolute Value Bars",
+        "text": "Then, subtract within the absolute value bar. What is $$8-4(7-5)$$? Remember that you've calculated the second term in the previous step.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa6a8c8add7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa6a8c8add7a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "The value $$8-4(7-5)$$, calculated in the previous step, is $$0$$, so we can rid of it. What remains in the expression is just $$9$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

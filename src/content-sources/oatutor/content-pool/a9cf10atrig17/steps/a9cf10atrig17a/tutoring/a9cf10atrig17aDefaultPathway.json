@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a9cf10atrig17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$tanx=\\frac{sinx}{cosx}$$, $$secx=\\frac{1}{cosx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig17a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identities into $$tanxsinx+{\\operatorname{secxcos}\\left(x\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig17a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{sinx}{cosx} sinx+\\frac{1}{cosx} cos^2\\left(x\\right)=\\frac{sin^2\\left(x\\right)}{cosx}+\\frac{cos^2\\left(x\\right)}{cosx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig17a-h3"
+        ],
+        "title": "Identity",
+        "text": "$$sin^2\\left(x\\right)+cos^2\\left(x\\right)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig17a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identities into $$\\frac{sin^2\\left(x\\right)+cos^2\\left(x\\right)}{cosx}=\\frac{1}{cosx}=secx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
