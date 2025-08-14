@@ -86,12 +86,14 @@ const staticFiguresPath = path.join(__dirname, '..', '..', 'public', 'static', '
                     const problemName = problemDir.toString()
                     const problemPath = path.join(problemPoolPath, problemName)
 
-                    const problem = require(path.join(problemPath, `${problemName}.json`))
+                    // const problem = require(path.join(problemPath, `${problemName}.json`))
 
                     const stepDirs = await readdir(path.join(problemPath, 'steps'))
                     if (!stepDirs || stepDirs.length === 0) {
                         throw Error(`${problemName.toString()} has no steps.`)
                     }
+
+                    const problem = require(path.join(problemPath, 'steps',stepDirs[0], `${stepDirs[0]}.json`))
 
                     const figurePaths = await readdir(path.join(problemPath, 'figures')).catch(err => {
                         // ignore, see below
