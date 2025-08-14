@@ -1,0 +1,92 @@
+[
+    {
+        "id": "abf5fcbintersql5a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies a condition for selecting rows."
+        ],
+        "dependencies": [],
+        "title": "Understanding the WHERE Clause",
+        "text": "To filter results in SQL, we use the WHERE clause. What does this clause do?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It sorts the database rows.",
+            "It specifies a condition for selecting rows.",
+            "It deletes rows that do not match the condition.",
+            "It aggregates rows based on the condition."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$ \\neq $$"
+        ],
+        "dependencies": [
+            "abf5fcbintersql5a-h1"
+        ],
+        "title": "Identifying Operators in SQL",
+        "text": "Which SQL operator can be used to select all students except those from a specific state, like 'NY'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$ \\neq $$",
+            "$$ \\leq $$",
+            "AND",
+            "LIKE"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "State $$ \\neq $$ 'NY'"
+        ],
+        "dependencies": [
+            "abf5fcbintersql5a-h2"
+        ],
+        "title": "Structuring the SQL Query",
+        "text": "Given the desired task to select students from all states except New York, which of these clauses correctly uses the identified operator from the previous hint?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "State $$=$$ 'NY'",
+            "State $$=!$$ 'NY'",
+            "State $$ \\neq $$ 'NY'",
+            "State IS NOT 'NY'"
+        ]
+    },
+    {
+        "id": "abf5fcbintersql5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT FirstName, LastName FROM Student WHERE State $$ \\neq $$ 'NY';"
+        ],
+        "dependencies": [
+            "abf5fcbintersql5a-h3"
+        ],
+        "title": "Complete SQL Statement",
+        "text": "Putting it all together, which full SQL statement will correctly return the desired students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT FirstName, LastName FROM Student WHERE State $$ \\geq $$ 'NY';",
+            "SELECT FirstName, LastName FROM Student WHERE State IS 'CA' AND NOT 'NY';",
+            "SELECT FirstName, LastName FROM Student WHERE State $$ \\neq $$ 'NY';",
+            "SELECT FirstName, LastName FROM Student WHERE State $$=$$ 'CA', 'GA', 'NH';"
+        ]
+    }
+]

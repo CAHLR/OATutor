@@ -1,0 +1,34 @@
+[
+    {
+        "id": "af81dddsql5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand Variable Comparisons",
+        "text": "Remember, when you're comparing dates or amounts within a SQL statement, make sure you're checking if one thing is either less than or greater than another. You do this by using the < or > operators.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combine Conditions with AND",
+        "text": "To meet both criteria at once (date before a certain day and amount greater than a value), you'll need to use the AND operator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql5a-h2"
+        ],
+        "title": "Combining Both Conditions",
+        "text": "How do you combine the two conditions: one for the date and another for the amount, to ensure both must be true for the record? A specific keyword used to ensure multiple conditions are true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

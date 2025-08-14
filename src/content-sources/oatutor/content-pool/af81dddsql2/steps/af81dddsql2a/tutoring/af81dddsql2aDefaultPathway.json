@@ -1,0 +1,68 @@
+[
+    {
+        "id": "af81dddsql2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL",
+        "text": "Understanding Structured Query Language (SQL) is vital as it helps in managing and manipulating relational databases efficiently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql2a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both"
+        ],
+        "dependencies": [
+            "af81dddsql2a-h1"
+        ],
+        "title": "What is a Structured Query?",
+        "text": "In SQL, what is the primary purpose of forming a structured query? Is it for:\\n$$1$$. Organizing data?\\n$$2$$. Accessing specific data?\\n$$3$$. Both?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Organizing data",
+            "Accessing specific data",
+            "Both"
+        ]
+    },
+    {
+        "id": "af81dddsql2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql2a-s1"
+        ],
+        "title": "Practice Makes Perfect",
+        "text": "Regular practice by translating real-world problems or questions into structured SQL queries will enhance your understanding and proficiency.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql2a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Creating sample queries based on questions."
+        ],
+        "dependencies": [
+            "af81dddsql2a-h2"
+        ],
+        "title": "Practical Approach to Learning SQL",
+        "text": "Which of the following methods would best support your SQL learning journey?\\n$$1$$. Reviewing multiple databases.\\n$$2$$. Creating sample queries based on questions.\\n$$3$$. Memorizing SQL commands.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Reviewing multiple databases",
+            "Creating sample queries based on questions.",
+            "Memorizing SQL commands."
+        ]
+    }
+]

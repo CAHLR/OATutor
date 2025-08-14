@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aee146fvalidity4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Conditional Formatting",
+        "text": "Conditional formatting in Google Sheets allows you to automatically apply formatting\u2014such as colors\u2014based on the content of a cell. It's a way to visually highlight or draw attention to important cells in your tables and spreadsheets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity4a-h1"
+        ],
+        "title": "Named Ranges Function",
+        "text": "Named ranges in Google Sheets allow you to assign a name to a range of cells. This can be useful for reference in formulas, but it does not automatically apply formatting or provide visual alerts for changing values, such as falling below a threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity4a-h1"
+        ],
+        "title": "Create a Filter Function",
+        "text": "Creating a filter in Google Sheets enables you to view and sort data more efficiently. Filters allow you to focus on specific data points, but they do not automatically format or highlight cells based on conditions such as inventory falling below $$100$$ bags.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aee146fvalidity4a-h1"
+        ],
+        "title": "Alternating Colors Function",
+        "text": "Alternating colors in a Google Sheet provides a visual distinction between rows or columns, which can make reading the data easier. However, it does not automatically change or update in response to changes in the data, such as inventory levels falling below a certain threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aee146fvalidity4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "He can highlight the range with the flour inventory, open the Format menu, then select conditional formatting"
+        ],
+        "dependencies": [
+            "aee146fvalidity4a-h1"
+        ],
+        "title": "Conditional Formatting Function",
+        "text": "When Yousef wants to automatically identify when his inventory drops below a certain level, conditional formatting is the correct tool. It allows him to set up rules that change the appearance of cells instantly based on their values, alerting him visually without manual updates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "He can highlight the cells with flour inventory, open the Data menu, then select Named ranges",
+            "He can highlight the range with the flour inventory, open the Format menu, then select conditional formatting",
+            "He can highlight the column with flour inventory, open the Data menu, then select Create a filter",
+            "He can highlight the cells with flour inventory, open the Format menu, then select Alternating colors"
+        ]
+    }
+]

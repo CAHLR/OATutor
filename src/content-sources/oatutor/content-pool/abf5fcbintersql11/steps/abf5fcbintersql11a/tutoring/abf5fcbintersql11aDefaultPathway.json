@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf5fcbintersql11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Default Sorting Order",
+        "text": "If no sorting order is specified, the default is to sort ascending (earliest to latest)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql11a-h1"
+        ],
+        "title": "Specifying Sorting Option",
+        "text": "The ASC sorting option will sort whatever is being ordered in ascending order with the earliest dates first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql11a-h1"
+        ],
+        "title": "Specifying Sorting Option",
+        "text": "The DESC sorting option will sort whatever is being ordered in descending order with the latest dates first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql11a-h3"
+        ],
+        "title": "Sorting Order Syntax",
+        "text": "CURRENT is not a valid sort order syntax.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
