@@ -7,9 +7,9 @@ export const ProgressTooltip = withStyles((theme) => ({
     color: "#fff",
     padding: 16,
     borderRadius: 6,
-    width: 280,              // fixed width per spec
+    width: 280,
     maxWidth: 280,
-    boxSizing: "border-box", // ✅ include padding in the 280px
+    boxSizing: "border-box",
     fontFamily: theme.typography.fontFamily,
     boxShadow: "none",
   },

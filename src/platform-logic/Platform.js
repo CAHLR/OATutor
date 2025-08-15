@@ -497,10 +497,8 @@ class Platform extends React.Component {
                 )}
                 {this.state.status === "learning" ? (
                   <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
-                    {/* ⬇️ Mastery header row (ONLY the bar has a tooltip) */}
                     <div style={{ display: "flex", justifyContent: "center", padding: "24px 0" }}>
                       <div style={{ display: "flex", alignItems: "center", width: 880, gap: 20 }}>
-                        {/* Left label (no tooltip) */}
                         <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
                           <img
                             src="/place-holder/static/images/icons/mastery-bolt.png"
@@ -514,14 +512,12 @@ class Platform extends React.Component {
                           </span>
                         </div>
 
-                        {/* Tooltip ONLY on the progress bar */}
                         <ProgressTooltip
                           arrow
                           placement="bottom"
                           interactive
                           title={
                             <div style={{ width: "100%", boxSizing: "border-box" }}>
-                              {/* Header: text left, bolt + X/Y right */}
                               <div
                                 style={{
                                   display: "flex",
@@ -555,7 +551,6 @@ class Platform extends React.Component {
                                 })()}
                               </div>
 
-                              {/* Rows: label + % + bar (Inter 12/500, bar 8px) */}
                               {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
                                 const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
                                 const pct = Math.round(mastery * 100);
@@ -621,7 +616,7 @@ class Platform extends React.Component {
                             </div>
                           }
                         >
-                          {/* 👇 REQUIRED single child */}
+
                           <div
                             role="progressbar"
                             aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
@@ -648,19 +643,17 @@ class Platform extends React.Component {
                           </div>
                         </ProgressTooltip>
 
-                        {/* Info icon tooltip (separate) */}
+
                        <InfoTooltip
                          arrow
                          placement="bottom"
-                         enterTouchDelay={0}     // tap opens immediately
-                         leaveTouchDelay={3000}  // stays open briefly on touch
+                         enterTouchDelay={0}
+                         leaveTouchDelay={3000}
                          title={
                            <div style={{ width: "100%", boxSizing: "border-box" }}>
-                             {/* Title: 12px, Inter, Semibold */}
                              <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, marginBottom: 4 }}>
                                What is Mastery?
                              </div>
-                             {/* Body: 12px, Inter, Regular */}
                              <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: "16px" }}>
                                Mastery estimates your understanding based on lesson objectives completed.
                              </div>
@@ -678,7 +671,6 @@ class Platform extends React.Component {
                       </div>
                     </div>
 
-                    {/* ⬇️ Keep this where it was */}
                     <ProblemWrapper
                       problem={this.state.currProblem}
                       problemComplete={this.problemComplete}
