@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
-import Tooltip from "@material-ui/core/Tooltip";
+import { ProgressTooltip, InfoTooltip } from "@components/Tooltips";
 
 import {
     coursePlans,
@@ -28,6 +28,7 @@ let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.j
 
 let seed = Date.now().toString();
 console.log("Generated seed");
+
 
 class Platform extends React.Component {
     static contextType = ThemeContext;
@@ -496,125 +497,188 @@ class Platform extends React.Component {
                 )}
                 {this.state.status === "learning" ? (
                   <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
-                     <div style={{ display: "flex", justifyContent: "center", padding: "24px 0" }}>
-                       <Tooltip
-                         placement="bottom-start"
-                         interactive
-                         title={
-                           <div
-                             style={{
-                               width: "280px",
-                               padding: "16px",
-                               background: "rgba(97, 97, 97, 0.9)",
-                               borderRadius: "6px",
-                               fontFamily: "Inter, sans-serif",
-                               color: "white",
-                             }}
-                           >
-                             {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
-                               const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
-                               const formattedKC = kc
-                                 .replace(/_/g, " ")
-                                 .replace(/\b\w/g, (c) => c.toUpperCase());
+                    {/* ⬇️ Mastery header row (ONLY the bar has a tooltip) */}
+                    <div style={{ display: "flex", justifyContent: "center", padding: "24px 0" }}>
+                      <div style={{ display: "flex", alignItems: "center", width: 880, gap: 20 }}>
+                        {/* Left label (no tooltip) */}
+                        <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                          <img
+                            src="/place-holder/static/images/icons/mastery-bolt.png"
+                            alt="Mastery Icon"
+                            width={20}
+                            height={20}
+                            style={{ display: "block" }}
+                          />
+                          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500 }}>
+                            Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
+                          </span>
+                        </div>
 
-                               return (
-                                 <div key={kc} style={{ marginBottom: "12px" }}>
-                                   <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "4px" }}>
-                                     {formattedKC}
-                                   </div>
-                                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                     <div
-                                       style={{
-                                         width: "32px",
-                                         fontSize: "12px",
-                                         fontWeight: 500,
-                                         textAlign: "right",
-                                       }}
-                                     >
-                                       {Math.round(mastery * 100)}%
-                                     </div>
-                                     <div
-                                       style={{
-                                         width: "160px",
-                                         height: "8px",
-                                         backgroundColor: "#E8EDEC",
-                                         borderRadius: "4px",
-                                         overflow: "hidden",
-                                       }}
-                                     >
-                                       <div
-                                         style={{
-                                           width: `${Math.round(mastery * 100)}%`,
-                                           height: "100%",
-                                           backgroundColor: "#83CDC1",
-                                           transition: "width 0.3s ease-in-out",
-                                         }}
-                                       />
-                                     </div>
-                                   </div>
-                                 </div>
-                               );
-                             })}
+                        {/* Tooltip ONLY on the progress bar */}
+                        <ProgressTooltip
+                          arrow
+                          placement="bottom"
+                          interactive
+                          title={
+                            <div style={{ width: "100%", boxSizing: "border-box" }}>
+                              {/* Header: text left, bolt + X/Y right */}
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "space-between",
+                                  marginBottom: 8,
+                                  lineHeight: "28px",
+                                }}
+                              >
+                                <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>
+                                  Learning Objectives:
+                                </div>
+                                {(() => {
+                                  const keys = Object.keys(this.lesson.learningObjectives || {});
+                                  const mastered = keys.filter(
+                                    (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+                                  ).length;
+                                  return (
+                                    <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                                      <img
+                                        src="/place-holder/static/images/icons/mastery-bolt.png"
+                                        alt=""
+                                        width={20}
+                                        height={20}
+                                      />
+                                      <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                                        {mastered}/{keys.length}
+                                      </div>
+                                    </div>
+                                  );
+                                })()}
+                              </div>
+
+                              {/* Rows: label + % + bar (Inter 12/500, bar 8px) */}
+                              {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
+                                const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+                                const pct = Math.round(mastery * 100);
+                                const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+                                return (
+                                  <div key={kc} style={{ marginBottom: 12 }}>
+                                    <div
+                                      style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "space-between",
+                                        marginBottom: 4,
+                                      }}
+                                    >
+                                      <div
+                                        title={label}
+                                        style={{
+                                          fontFamily: "Inter, sans-serif",
+                                          fontSize: 12,
+                                          fontWeight: 500,
+                                          overflow: "hidden",
+                                          textOverflow: "ellipsis",
+                                          whiteSpace: "nowrap",
+                                          marginRight: 8,
+                                        }}
+                                      >
+                                        {label}
+                                      </div>
+                                      <div
+                                        style={{
+                                          fontFamily: "Inter, sans-serif",
+                                          fontSize: 12,
+                                          fontWeight: 500,
+                                          whiteSpace: "nowrap",
+                                        }}
+                                      >
+                                        {pct}%
+                                      </div>
+                                    </div>
+
+                                    <div
+                                      style={{
+                                        width: "100%",
+                                        height: 8,
+                                        backgroundColor: "#E8EDEC",
+                                        borderRadius: 4,
+                                        overflow: "hidden",
+                                      }}
+                                    >
+                                      <div
+                                        style={{
+                                          width: `${pct}%`,
+                                          height: "100%",
+                                          backgroundColor: "#83CDC1",
+                                          transition: "width 0.3s ease-in-out",
+                                        }}
+                                      />
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          }
+                        >
+                          {/* 👇 REQUIRED single child */}
+                          <div
+                            role="progressbar"
+                            aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                            style={{
+                              width: 631,
+                              height: 16,
+                              backgroundColor: "#E8EDEC",
+                              borderRadius: 18,
+                              overflow: "hidden",
+                              cursor: "pointer",
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                height: "100%",
+                                backgroundColor: "#67CDBC",
+                                borderRadius: 18,
+                                transition: "width 0.3s ease",
+                              }}
+                            />
+                          </div>
+                        </ProgressTooltip>
+
+                        {/* Info icon tooltip (separate) */}
+                       <InfoTooltip
+                         arrow
+                         placement="bottom"
+                         enterTouchDelay={0}     // tap opens immediately
+                         leaveTouchDelay={3000}  // stays open briefly on touch
+                         title={
+                           <div style={{ width: "100%", boxSizing: "border-box" }}>
+                             {/* Title: 12px, Inter, Semibold */}
+                             <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, marginBottom: 4 }}>
+                               What is Mastery?
+                             </div>
+                             {/* Body: 12px, Inter, Regular */}
+                             <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: "16px" }}>
+                               Mastery estimates your understanding based on lesson objectives completed.
+                             </div>
                            </div>
                          }
                        >
-                         <div
-                           style={{
-                             display: "flex",
-                             alignItems: "center",
-                             width: "880px",
-                             gap: "20px",
-                             cursor: "pointer",
-                           }}
-                         >
-                           {/* Left Label */}
-                           <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-                             <img
-                               src="/static/images/icons/mastery-bolt.png"
-                               alt="Mastery Icon"
-                               width={20}
-                               height={20}
-                               style={{ display: "block" }}
-                             />
-                             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500 }}>
-                               Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
-                             </span>
-                           </div>
+                         <img
+                           src="/place-holder/static/images/icons/information-icon.png"
+                           alt="Info"
+                           width={20}
+                           height={20}
+                           style={{ display: "block", cursor: "pointer" }}
+                         />
+                       </InfoTooltip>
+                      </div>
+                    </div>
 
-                           {/* Center Progress Bar */}
-                           <div
-                             style={{
-                               width: "631px",
-                               height: "16px",
-                               backgroundColor: "#E8EDEC",
-                               borderRadius: "18px",
-                               overflow: "hidden",
-                               position: "relative",
-                             }}
-                           >
-                             <div
-                               style={{
-                                 width: `${Math.round((this.state.mastery || 0) * 100)}%`,
-                                 height: "100%",
-                                 backgroundColor: "#67CDBC",
-                                 borderRadius: "18px",
-                                 transition: "width 0.3s ease",
-                               }}
-                             />
-                           </div>
-
-                           {/* Info Icon */}
-                           <img
-                             src="/static/images/icons/information-icon.png"
-                             alt="Info"
-                             width={20}
-                             height={20}
-                             style={{ display: "block" }}
-                             title="Mastery measures your understanding of this lesson. Based on objective completion."
-                           />
-                         </div>
-                       </Tooltip>
-                     </div>
+                    {/* ⬇️ Keep this where it was */}
                     <ProblemWrapper
                       problem={this.state.currProblem}
                       problemComplete={this.problemComplete}
