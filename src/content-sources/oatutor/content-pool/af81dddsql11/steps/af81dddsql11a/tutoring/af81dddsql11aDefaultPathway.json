@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af81dddsql11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Strings in SQL",
+        "text": "In SQL, functions can perform operations on string data types, such as converting to uppercase or extracting a substring.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql11a-h1"
+        ],
+        "title": "The UPPER() Function",
+        "text": "The UPPER() function is used to convert all letters in a string to uppercase. It is often used to standardize text data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql11a-h1"
+        ],
+        "title": "Understanding substr() Function",
+        "text": "The substr() function is used to extract a part of a string. The typical syntax is substr(column, start, length), where 'start' is the starting position and 'length' is the number of characters to extract.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

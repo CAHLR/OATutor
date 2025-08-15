@@ -1,0 +1,36 @@
+[
+    {
+        "id": "abf5fcbintersql21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Type Checks",
+        "text": "An SQLite database does not perform strong type checks, and the query will actually be successful.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql21a-h1"
+        ],
+        "title": "Field Values for INSERT",
+        "text": "An INSERT statement can specify the values for some of the fields and leave others unspecified.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql21a-h2"
+        ],
+        "title": "INSERT statement",
+        "text": "An INSERT statement adds a new record to the table and does not update records.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

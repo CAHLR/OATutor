@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a2ee4dfsql11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Uppercase Word",
+        "text": "We want the output to be an uppercase string.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql11a-h1"
+        ],
+        "title": "Letter Indeces",
+        "text": "To get the first letter of the output string to be F, it is the 5th letter. Thus, the second parameter should be $$5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a2ee4dfsql11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2ee4dfsql11a-h2"
+        ],
+        "title": "Length of Word Output",
+        "text": "To produce a $$4$$ letter output string, the third parameter for the substring function in the field text0 should be $$4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

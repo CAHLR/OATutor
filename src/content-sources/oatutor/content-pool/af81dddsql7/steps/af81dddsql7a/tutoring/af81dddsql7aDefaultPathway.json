@@ -1,0 +1,47 @@
+[
+    {
+        "id": "af81dddsql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding IF-THEN-ELSE",
+        "text": "The IF-THEN-ELSE statement is a control flow statement often used in programming and SQL queries to execute different blocks of code or actions depending on whether a certain condition is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql7a-h1"
+        ],
+        "title": "Importance of ELSE",
+        "text": "The ELSE part of the IF-THEN-ELSE statement is crucial as it catches any cases not already handled by specific IF conditions. Think of it as a safety net for unaddressed possibilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql7a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is the ELSE action, performed when neither 'if it rains' nor 'if it snows' conditions are true."
+        ],
+        "dependencies": [
+            "af81dddsql7a-h2"
+        ],
+        "title": "Creating a Simple IF-THEN-ELSE Flow",
+        "text": "Imagine a situation: If it rains, we'll stay indoors. If it snows, we'll make a snowman. Otherwise, we'll go on a picnic. What is the role of 'Otherwise, we'll go on a picnic' in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is the ELSE action, performed when neither 'if it rains' nor 'if it snows' conditions are true.",
+            "It is an IF condition for a picnic",
+            "It is not a part of the $$IF-THEN-ELSE$$ structure",
+            "It acts as an alternate IF condition for no condition"
+        ]
+    }
+]

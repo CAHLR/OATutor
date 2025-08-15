@@ -1,0 +1,18 @@
+{
+    "id": "a2ee4dfsql5a",
+    "stepAnswer": [
+        "WHERE DATE(Day) < $$'2016-01-10'$$ AND Amount > $$1000$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "How would you correctly select a record with a Day entry before January $$10$$, $$2016$$, and an Amount value more than $1000?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "WHERE DATE(Day) < $$'2016-01-10'$$ AND Amount > $$1000$$",
+    "choices": [
+        "WHERE DATE(Day) < $$'2016-01-10'$$ AND Amount > $$1000$$",
+        "WHERE Day $$=$$ $$'2016-01-10'$$ AND Amount $$=$$ $$1000$$",
+        "WHERE Day < $$'10-1-2016'$$ AND Amount > $$1000$$",
+        "WHERE DATE(Day) > $$'2016-01-10'$$ AND Amount < $$1000$$"
+    ]
+}

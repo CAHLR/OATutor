@@ -1,0 +1,48 @@
+[
+    {
+        "id": "af81dddsql6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Function of SQL Keywords",
+        "text": "Each SQL keyword serves a specific function in a query. Review the common ones:\\n- 'SELECT' chooses columns to display.\\n- 'FROM' designates the source table.\\n- 'WHERE' filters results based on a condition.\\n- 'AS' renames a column or table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql6a-h1"
+        ],
+        "title": "Understanding WHERE Clause",
+        "text": "The 'WHERE' clause is used to filter records that meet specific conditions. This is crucial when you want results for specific data points only.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql6a-h2"
+        ],
+        "title": "Use of WHERE Clause",
+        "text": "Try using the 'WHERE' clause in this example:\\nImagine you have a table of employees, and you want to find those who work in the 'Sales' department only. What clause do you apply?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "af81dddsql6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af81dddsql6a-h3"
+        ],
+        "title": "Creating a Complete SQL Query",
+        "text": "Starting with data retrieval, design a basic query. You want all sales employees:\\n$$1$$. Choose columns to display.\\n$$2$$. Identify the correct table.\\n$$3$$. Filter for sales department.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

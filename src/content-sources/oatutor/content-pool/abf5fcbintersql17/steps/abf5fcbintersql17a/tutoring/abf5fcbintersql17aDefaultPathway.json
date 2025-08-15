@@ -1,0 +1,36 @@
+[
+    {
+        "id": "abf5fcbintersql17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Grouping by Data Type",
+        "text": "Even if the fields have different data types, multiple grouping is allowed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql17a-h1"
+        ],
+        "title": "Using GROUP BY clauses",
+        "text": "It is not possible to define two separate GROUP BY clauses in the same statement.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql17a-h2"
+        ],
+        "title": "Adding Multiple to Group By",
+        "text": "Grouping by two fields is possible, separate the fields in the GROUP BY clause with commas.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

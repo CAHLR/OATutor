@@ -1,0 +1,115 @@
+[
+    {
+        "id": "abf5fcbintersql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "LIMIT clause",
+        "text": "The LIMIT clause specifies the number of records that the query returns.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql10a-h1"
+        ],
+        "title": "OFFSET clause",
+        "text": "The number specified in the OFFSET clause specifies the number of records that are skipped at the beginning.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql10a-h2"
+        ],
+        "title": "Inclusive OFFSET clause",
+        "text": "The OFFSET clause skips the values, inclusive of the last record that is specified in the query.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "abf5fcbintersql10a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies the number of rows to skip before starting to return rows."
+        ],
+        "dependencies": [],
+        "title": "Understanding OFFSET in SQL",
+        "text": "What does the OFFSET keyword in a SQL query do?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It limits the number of rows returned.",
+            "It specifies the number of rows to skip before starting to return rows.",
+            "It filters rows based on conditions.",
+            "It's used to select columns."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It limits the results to the first $$10$$ rows after the OFFSET is applied."
+        ],
+        "dependencies": [
+            "abf5fcbintersql10a-h1"
+        ],
+        "title": "Interpreting the LIMIT Clause",
+        "text": "What does LIMIT $$10$$ do in a SQL query?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It skips the first $$10$$ results.",
+            "It limits the results to a maximum of $$10$$ rows.",
+            "It filters results to rows matching specific conditions.",
+            "It limits the results to the first $$10$$ rows after the OFFSET is applied."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It returns $$10$$ records starting from the 6th record."
+        ],
+        "dependencies": [
+            "abf5fcbintersql10a-h2"
+        ],
+        "title": "Combining LIMIT and OFFSET",
+        "text": "Consider a SQL query ending with LIMIT $$10$$ OFFSET $$5$$. How does it affect the data returned?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It returns all records.",
+            "It returns records $$1$$ through $$10$$.",
+            "It returns $$10$$ records starting from the 5th record.",
+            "It returns $$10$$ records starting from the 6th record."
+        ]
+    },
+    {
+        "id": "abf5fcbintersql10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf5fcbintersql10a-h3"
+        ],
+        "title": "Final Answer",
+        "text": "Summary: A LIMIT of $$10$$ with an OFFSET of $$5$$ means the first five records are skipped, and then $$10$$ records are selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
