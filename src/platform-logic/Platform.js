@@ -34,7 +34,7 @@ class Platform extends React.Component {
 
     constructor(props, context) {
         super(props);
-        
+
         this.problemIndex = {
             problems: problemPool,
         };
@@ -79,7 +79,7 @@ class Platform extends React.Component {
     componentDidMount() {
         this._isMounted = true;
         if (this.props.lessonID != null) {
-            console.log("calling selectLesson from componentDidMount...") 
+            console.log("calling selectLesson from componentDidMount...")
             const lesson = findLessonById(this.props.lessonID)
             console.debug("lesson: ", lesson)
             this.selectLesson(lesson).then(
@@ -113,7 +113,7 @@ class Platform extends React.Component {
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
-    
+
     onComponentUpdate(prevProps, prevState, snapshot) {
         if (
             Boolean(this.state.currProblem?.id) &&
@@ -125,7 +125,7 @@ class Platform extends React.Component {
             this.context.problemID = "n/a";
         }
     }
-    
+
     async selectLesson(lesson, updateServer=true) {
         const context = this.context;
         console.debug("lesson: ", context)
@@ -496,105 +496,125 @@ class Platform extends React.Component {
                 )}
                 {this.state.status === "learning" ? (
                   <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
-                    <div style={{ display: "flex", justifyContent: "center", margin: "16px 0" }}>
-                      <Tooltip
-                        placement="bottom-start"
-                        interactive
-                        title={
-                          <div style={{ padding: 8 }}>
-                            {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
-                              const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
-                              const formattedKC = kc
-                                .replace(/_/g, " ")
-                                .replace(/\b\w/g, (c) => c.toUpperCase());
-                              return (
-                                <div key={kc} style={{ marginBottom: 12 }}>
-                                  <div style={{ fontSize: "14px", fontWeight: 500, marginBottom: 4 }}>
-                                    {formattedKC}
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                    <div
-                                      style={{
-                                        width: "32px",
-                                        fontSize: "12px",
-                                        fontWeight: 500,
-                                        color: "white",
-                                        textAlign: "right",
-                                      }}
-                                    >
-                                      {Math.round(mastery * 100)}%
-                                    </div>
-                                    <div
-                                      style={{
-                                        width: "160px",
-                                        height: "10px",
-                                        backgroundColor: "#E8EDEC",
-                                        borderRadius: "5px",
-                                        overflow: "hidden",
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          width: `${Math.round(mastery * 100)}%`,
-                                          height: "100%",
-                                          backgroundColor: "#83CDC1",
-                                          transition: "width 0.3s ease-in-out",
-                                        }}
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        }
-                      >
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            width: "888px",
-                            gap: "16px",
-                            cursor: "pointer",
-                          }}
-                        >
-                          <div style={{ fontWeight: 600 }}>Mastery Progress</div>
-                          <div style={{ display: "flex", alignItems: "center", flexGrow: 1, gap: "8px" }}>
-                            <div
-                              style={{
-                                width: "40px",
-                                fontSize: "13px",
-                                fontWeight: 600,
-                                color: "#333",
-                                textAlign: "right",
-                              }}
-                            >
-                              {Math.round((this.state.mastery || 0) * 100)}%
-                            </div>
-                            <div
-                              style={{
-                                backgroundColor: "#E8EDEC",
-                                width: "100%",
-                                height: "20px",
-                                borderRadius: "10px",
-                                overflow: "hidden",
-                              }}
-                            >
-                              <div
-                                style={{
-                                  backgroundColor: "#83CDC1",
-                                  width: `${(this.state.mastery || 0) * 100}%`,
-                                  height: "100%",
-                                  borderRadius: "10px",
-                                  transition: "width 0.3s ease",
-                                }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </Tooltip>
-                    </div>
+                     <div style={{ display: "flex", justifyContent: "center", padding: "24px 0" }}>
+                       <Tooltip
+                         placement="bottom-start"
+                         interactive
+                         title={
+                           <div
+                             style={{
+                               width: "280px",
+                               padding: "16px",
+                               background: "rgba(97, 97, 97, 0.9)",
+                               borderRadius: "6px",
+                               fontFamily: "Inter, sans-serif",
+                               color: "white",
+                             }}
+                           >
+                             {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
+                               const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+                               const formattedKC = kc
+                                 .replace(/_/g, " ")
+                                 .replace(/\b\w/g, (c) => c.toUpperCase());
 
+                               return (
+                                 <div key={kc} style={{ marginBottom: "12px" }}>
+                                   <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "4px" }}>
+                                     {formattedKC}
+                                   </div>
+                                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                     <div
+                                       style={{
+                                         width: "32px",
+                                         fontSize: "12px",
+                                         fontWeight: 500,
+                                         textAlign: "right",
+                                       }}
+                                     >
+                                       {Math.round(mastery * 100)}%
+                                     </div>
+                                     <div
+                                       style={{
+                                         width: "160px",
+                                         height: "8px",
+                                         backgroundColor: "#E8EDEC",
+                                         borderRadius: "4px",
+                                         overflow: "hidden",
+                                       }}
+                                     >
+                                       <div
+                                         style={{
+                                           width: `${Math.round(mastery * 100)}%`,
+                                           height: "100%",
+                                           backgroundColor: "#83CDC1",
+                                           transition: "width 0.3s ease-in-out",
+                                         }}
+                                       />
+                                     </div>
+                                   </div>
+                                 </div>
+                               );
+                             })}
+                           </div>
+                         }
+                       >
+                         <div
+                           style={{
+                             display: "flex",
+                             alignItems: "center",
+                             width: "880px",
+                             gap: "20px",
+                             cursor: "pointer",
+                           }}
+                         >
+                           {/* Left Label */}
+                           <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                             <img
+                               src="/static/images/icons/mastery-bolt.png"
+                               alt="Mastery Icon"
+                               width={20}
+                               height={20}
+                               style={{ display: "block" }}
+                             />
+                             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500 }}>
+                               Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
+                             </span>
+                           </div>
+
+                           {/* Center Progress Bar */}
+                           <div
+                             style={{
+                               width: "631px",
+                               height: "16px",
+                               backgroundColor: "#E8EDEC",
+                               borderRadius: "18px",
+                               overflow: "hidden",
+                               position: "relative",
+                             }}
+                           >
+                             <div
+                               style={{
+                                 width: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                 height: "100%",
+                                 backgroundColor: "#67CDBC",
+                                 borderRadius: "18px",
+                                 transition: "width 0.3s ease",
+                               }}
+                             />
+                           </div>
+
+                           {/* Info Icon */}
+                           <img
+                             src="/static/images/icons/information-icon.png"
+                             alt="Info"
+                             width={20}
+                             height={20}
+                             style={{ display: "block" }}
+                             title="Mastery measures your understanding of this lesson. Based on objective completion."
+                           />
+                         </div>
+                       </Tooltip>
+                     </div>
                     <ProblemWrapper
                       problem={this.state.currProblem}
                       problemComplete={this.problemComplete}
