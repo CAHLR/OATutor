@@ -3,8 +3,8 @@
         "id": "abe601dresearch9a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding Research Proposal Sections",
-        "text": "A research proposal typically includes several key sections that outline the research plan. These sections help in organizing the research process and ensuring that all necessary components are addressed.",
+        "title": "Definition of Criticisms",
+        "text": "Criticisms refers to the limitations or possible weaknesses in your methods. Criticisms should be taken care of during the experimentation process and are not included in the final research proposal.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "abe601dresearch9a-h1"
         ],
-        "title": "Common Sections in a Research Proposal",
-        "text": "Some common sections in a research proposal include the introduction, literature review, methodology, and analysis. Each section serves a specific purpose in outlining the research plan.",
+        "title": "Definition of Problem Statement",
+        "text": "The core issue or problem your study will address, which should be an integral part of the research proposal.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -27,33 +27,22 @@
         "dependencies": [
             "abe601dresearch9a-h2"
         ],
-        "title": "Identifying the Odd One Out",
-        "text": "Consider which option does not fit the typical structure of a research proposal. Think about the purpose of each section and whether it contributes to the research plan.",
+        "title": "Definition of Methodology",
+        "text": "Methodology is the approach or strategy used to gather and analyze data, which is a key component of a research paper.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "abe601dresearch9a-h4",
-        "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
-        "hintAnswer": [
-            "Criticisms"
-        ],
+        "type": "hint",
         "dependencies": [
             "abe601dresearch9a-h3"
         ],
-        "title": "Analyzing the Options",
-        "text": "Review the options: Criticisms, Problem Statement, Methodology, and Analysis. Which one does not typically appear as a section in a research proposal?",
+        "title": "Definition of Analysis",
+        "text": "The tools and techniques you will use to interpret your data",
         "variabilization": {},
         "oer": "openai",
-        "license": "",
-        "choices": [
-            "Criticisms",
-            "Problem Statement",
-            "Methodology",
-            "Analysis"
-        ]
+        "license": ""
     }
 ]
