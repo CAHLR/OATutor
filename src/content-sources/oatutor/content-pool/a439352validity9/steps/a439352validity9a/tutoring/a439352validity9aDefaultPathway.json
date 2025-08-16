@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a439352validity9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative References",
+        "text": "When you copy a formula from one cell to another, Excel uses relative references by default. This means that the cell references in the formula adjust based on the position where you paste it. Try to think about how the formula in H30 will change when moved to I30.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a439352validity9a-h1"
+        ],
+        "title": "Analyzing the Formula",
+        "text": "The original formula in H30 is $$H1+H8$$. When you copy this formula to I30, consider how the column references (H) will change. Will they remain the same or adjust to the new column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a439352validity9a-h2"
+        ],
+        "title": "Focus on Column Changes",
+        "text": "Since you are copying the formula from column H to column I, think about how the column letters in the formula will change. The row numbers should remain the same, but what about the column letters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$I1+I8$$"
+        ],
+        "dependencies": [
+            "a439352validity9a-h3"
+        ],
+        "title": "Determine the New Formula",
+        "text": "Based on the understanding of relative references, what will the new formula in I30 be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The formula stays as $$H1+H8$$",
+            "The formula automatically updates to $$I1+I8$$",
+            "The formula automatically updates to $H1+$H8",
+            "You cannot copy a formula, only numeric values"
+        ]
+    }
+]
