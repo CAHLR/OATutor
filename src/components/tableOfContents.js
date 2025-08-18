@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     lessonCard: {
         backgroundColor: "#ffffff",
         padding: "16px",
-        borderLeft: "4px solid #EBEFF2", 
+        borderLeft: "4px solid #EBEFF2",
         listStyle: "none",
         display: "flex",
         alignItems: "center",
@@ -34,6 +34,8 @@ const useStyles = makeStyles(() => ({
 
 
 }));
+
+const TOC_RING_STATE_KEY = (course) => `toc:ring-state:v1:${course}`;
 
 // currently uses incorrect mastery calculation - will replace once each lesson mastery is noted
 const MasteryRing = ({ mastery = 0 }) => {
@@ -54,7 +56,7 @@ const MasteryRing = ({ mastery = 0 }) => {
                 value={progressPercent}
                 size={56}
                 thickness={4}
-                style={{ 
+                style={{
                     color: "#0B9B8A",
                     position: "absolute",
                     top: 0,
@@ -104,7 +106,7 @@ const LessonCompletionRing = () => {
                 value={50}
                 size={28}
                 thickness={4}
-                style={{ 
+                style={{
                     color: "primary",
                     position: "absolute",
                     top: 0,
@@ -122,20 +124,20 @@ const LessonCompletionRing = () => {
                 alignItems="center"
                 justifyContent="center"
             >
-                {/* <img 
-                    src={BookIcon} 
-                    alt="Lesson Completion Icon" 
+                {/* <img
+                    src={BookIcon}
+                    alt="Lesson Completion Icon"
                     style={{
                         width: 16,
                         height: 16,
                     }}
                 /> */}
 
-                <BookIcon 
-                    style={{ 
+                <BookIcon
+                    style={{
                         width: 16,
                         height: 16
-                    }} 
+                    }}
                 />
             </Box>
         </Box>
@@ -180,9 +182,9 @@ const SublessonCompletionRing = ({ mastery }) => {
                 alignItems="center"
                 justifyContent="center"
             >
-                <img 
-                    src={CheckMark} 
-                    alt="Lesson Complete" 
+                <img
+                    src={CheckMark}
+                    alt="Lesson Complete"
                     style={{
                         width: 28,
                         height: 28,
@@ -212,7 +214,7 @@ const SublessonCompletionRing = ({ mastery }) => {
                     value={50}
                     size={28}
                     thickness={4}
-                    style={{ 
+                    style={{
                         color: "primary",
                         position: "absolute",
                         top: 0,
@@ -235,9 +237,9 @@ const SublessonCompletionRing = ({ mastery }) => {
             >
 
                 {completionStatus === "not-started" && (
-                    <img 
-                        src={GreyLightningBoltIcon} 
-                        alt="Sublesson Greyed Icon" 
+                    <img
+                        src={GreyLightningBoltIcon}
+                        alt="Sublesson Greyed Icon"
                         style={{
                             width: 16,
                             height: 16,
@@ -246,9 +248,9 @@ const SublessonCompletionRing = ({ mastery }) => {
                 )}
 
                 {completionStatus === "in-progress" && (
-                    <img 
-                        src={LightningBoltIcon} 
-                        alt="Sublesson Completion Icon" 
+                    <img
+                        src={LightningBoltIcon}
+                        alt="Sublesson Completion Icon"
                         style={{
                             width: 16,
                             height: 16,
@@ -261,13 +263,79 @@ const SublessonCompletionRing = ({ mastery }) => {
 };
 
 
-const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLessonId})  => {
+const TableOfContents = ({ courseName, mastery = 0, lessonMastery = {}, onLessonClick, selectedLessonId})  => {
     const coursePlans = courses.filter(
         course => courseName && course.courseName === courseName
     );
 
     const classes = useStyles();
     const selectedLessonRef = useRef(null);
+
+    const [ringState, setRingState] = useState({});
+
+    useEffect(() => {
+      try {
+        const raw = localStorage.getItem(TOC_RING_STATE_KEY(courseName));
+        setRingState(raw ? JSON.parse(raw) : {});
+      } catch {
+        setRingState({});
+      }
+    }, [courseName]);
+
+    // 1) Seed missing lessons from the incoming mastery map (one-time per course)
+    //    This lets every sublesson show empty/half/full immediately.
+    useEffect(() => {
+      if (!lessonMastery || typeof lessonMastery !== "object") return;
+      setRingState(prev => {
+        let changed = false;
+        const next = { ...prev };
+        for (const [id, val] of Object.entries(lessonMastery)) {
+          const key = String(id);                                 // normalize the id
+          if (typeof val === "number" && typeof next[key] !== "number") {
+            next[key] = val;                                      // seed only if missing
+            changed = true;
+          }
+        }
+        return changed ? next : prev;
+      });
+    }, [courseName, lessonMastery]);
+
+    // 2) Update ONLY the currently selected lesson (monotonic: never regress)
+    useEffect(() => {
+      if (!selectedLessonId) return;
+      const key = String(selectedLessonId);
+      const incoming =
+        typeof lessonMastery?.[selectedLessonId] === "number"
+          ? lessonMastery[selectedLessonId]
+          : undefined;
+      if (incoming == null) return;
+
+      setRingState(prev => {
+        const prevVal = typeof prev[key] === "number" ? prev[key] : 0;
+        const nextVal = Math.max(prevVal, incoming);
+        return nextVal === prevVal ? prev : { ...prev, [key]: nextVal };
+      });
+    }, [selectedLessonId, lessonMastery]);
+
+    // Persist after any change
+    useEffect(() => {
+      try {
+        localStorage.setItem(TOC_RING_STATE_KEY(courseName), JSON.stringify(ringState));
+      } catch {}
+    }, [ringState, courseName]);
+
+    // update ONLY the selected lesson from real mastery (never regress, never touch others)
+    useEffect(() => {
+      if (!selectedLessonId) return;
+      const incoming = typeof lessonMastery === "object" ? lessonMastery[selectedLessonId] : undefined;
+      if (typeof incoming !== "number") return;
+
+      setRingState((prev) => {
+        const prevVal = typeof prev[selectedLessonId] === "number" ? prev[selectedLessonId] : 0;
+        const nextVal = Math.max(prevVal, incoming); // monotonic
+        return nextVal === prevVal ? prev : { ...prev, [selectedLessonId]: nextVal };
+      });
+    }, [selectedLessonId, lessonMastery]);
 
     useEffect(() => {
         if (selectedLessonRef.current) {
@@ -287,8 +355,8 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
     }
 
     const getLessonGroup = (title) => {
-        const match = title.match(/Lesson\s*(\d+)\.\d+/i); 
-        return match 
+        const match = title.match(/Lesson\s*(\d+)\.\d+/i);
+        return match
             ? `Lesson ${match[1]}`
             : "Other";
     }
@@ -296,7 +364,7 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
     const groupedLessons = {}
     lessonPlans.forEach((lesson) => {
         const title = lesson.name || lesson.topics || " ";
-        const group = getLessonGroup(title); 
+        const group = getLessonGroup(title);
 
         if (!groupedLessons[group]) {
             groupedLessons[group] = [];
@@ -317,15 +385,15 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
 
     return (
         <>
-            
+
             {/* COURSE NAME AND PROGRESS RING */}
-            <div 
+            <div
                 style = {{
                     marginBottom: 16,
                     marginTop: 10
                 }}
             >
-                <div 
+                <div
                     style={{
                         display: "flex",
                         alignItems: "center",
@@ -335,9 +403,9 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
                     }}
                 >
                     <Grid item>
-                        <img 
-                            src={GeometryIcon} 
-                            alt="Lesson Icon Symbol Geometry" 
+                        <img
+                            src={GeometryIcon}
+                            alt="Lesson Icon Symbol Geometry"
                             style={{
                                 width: 40,
                                 height: 40,
@@ -370,16 +438,16 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
 
             {/* LESSON ACCORDION CARDS */}
             {/* <div style={{width: "100%", borderTop: "2px solid ddd"}}> */}
-            
+
             <div style={{ width: "100%" }}>
                 {Object.entries(groupedLessons).map(([groupTitle, lessons], index) => (
-                
-                <Accordion 
+
+                <Accordion
                     disableGutters
-                    key={groupTitle} 
+                    key={groupTitle}
                     expanded={expanded === groupTitle}
                     onChange={handleChange(groupTitle)}
-                    style={{ 
+                    style={{
                         marginLeft: '-16px',
                         marginRight: '-16px',
                         marginBottom: 0,
@@ -413,11 +481,11 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
                             margin: 0
                         }}
                     >
-                        <div 
-                            style={{ 
-                                display: "flex", 
-                                alignItems: "center", 
-                                gap: "12px", 
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
                             }}
                         >
                             <LessonCompletionRing />
@@ -427,21 +495,27 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
                         </div>
                     </AccordionSummary>
 
-                    <AccordionDetails 
-                        style={{ 
-                            display: "block", 
+                    <AccordionDetails
+                        style={{
+                            display: "block",
                             paddingLeft: 16,
                             paddingTop: 0,
                             paddingBottom: 0,
                             borderBottom: "1px solid #E5E7EB",
                         }}
-                    
+
                     >
                         {lessons.map((lesson, index) => {
                             const isSelected = selectedLessonId === lesson.id;
+                            const thisLessonMastery =
+                                (typeof ringState[String(lesson.id)] === 'number'
+                                  ? ringState[String(lesson.id)]
+                                  : (typeof lessonMastery?.[lesson.id] === 'number'
+                                      ? lessonMastery[lesson.id]
+                                      : 0));
 
                             return (
-                                <Box 
+                                <Box
                                     key={lesson.id || index}
                                     className={classes.lessonCard}
                                     ref={isSelected ? selectedLessonRef : null}
@@ -449,21 +523,22 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
                                     style={{
                                         marginLeft: "24px",
                                         marginRight: isSelected ? "-16px" : "24px",
-                                        cursor: "pointer", 
+                                        cursor: "pointer",
                                         backgroundColor: isSelected ? "#E9F4FB" : "#ffffff",
                                         borderLeft: isSelected ? "4px solid #4C7D9F" : "4px solid #EBEFF2",
                                         fontWeight: isSelected ? 600 : 400,
                                         color: isSelected? "#4C7D9F" : "#4A4E58",
                                     }}
                                 >
-                                    <div 
-                                        style={{ 
-                                            display: "flex", 
-                                            alignItems: "center", 
-                                            gap: "12px" 
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "12px"
                                         }}
                                     >
-                                        <SublessonCompletionRing mastery={mastery} />
+
+                                    <SublessonCompletionRing mastery={thisLessonMastery} />
 
                                         {/* <SublessonCompletionRing mastery={mastery?.[lesson.id] ?? 0} /> */}
                                         <div>
@@ -475,8 +550,8 @@ const TableOfContents = ({ courseName, mastery = {}, onLessonClick, selectedLess
                         })}
                     </AccordionDetails>
                 </Accordion>
-                ))}   
-            </div> 
+                ))}
+            </div>
         </>
     )};
 export default TableOfContents;
