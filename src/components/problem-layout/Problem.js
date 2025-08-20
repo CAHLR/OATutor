@@ -588,44 +588,35 @@ class Problem extends React.Component {
                         }}
                     >
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
-                            {licenseName !== "" && licenseLink !== "" ? (
+                            {(oerName !== "" || licenseName !== "") && (
                                 <div>
-                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
-                                    <a
-                                        href={oerLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                "{problem.title}" {translate("problem.Derivative")}&nbsp;
+                                {oerName !== "" && (
+                                    <>
+                                    {oerLink !== "" ? (
+                                        <a href={oerLink} target="_blank" rel="noreferrer">
                                         "{oerName}"
-                                    </a>
-                                    {translate('problem.Used')}&nbsp;
-                                    <a
-                                        href={licenseLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                        </a>
+                                    ) : (
+                                        <span>"{oerName}"</span>
+                                    )}
+                                    </>
+                                )}
+                                {licenseName !== "" && (
+                                    <>
+                                    &nbsp;{translate("problem.Used")}&nbsp;
+                                    {licenseLink !== "" ? (
+                                        <a href={licenseLink} target="_blank" rel="noreferrer">
                                         {licenseName}
-                                    </a>
+                                        </a>
+                                    ) : (
+                                        <span>{licenseName}</span>
+                                    )}
+                                    </>
+                                )}
                                 </div>
-                            ) : (
-                                <div>
-                                {oerName !== "" && oerLink !== "" ? (
-                                <div>
-                                    "{problem.title}" {translate('problem.Derivative')}&nbsp;
-                                    <a
-                                        href={oerLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        "{oerName}"
-                                    </a>
-                                </div>
-                            ) : (
-                                <></>
                             )}
                             </div>
-                            )}
-                        </div>
                         <div
                             style={{
                                 display: "flex",
