@@ -390,40 +390,54 @@ class Problem extends React.Component {
 
     getOerLicense = () => {
         const { lesson, problem } = this.props;
-        var oerArray, licenseArray;
-        var oerLink, oerName;
-        var licenseLink, licenseName;
-	try {
-        if (problem.oer != null && problem.oer.includes(" <")) {
-            oerArray = problem.oer.split(" <");
-        } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
-            oerArray = lesson.courseOER.split(" <");
-        } else {
-            oerArray = ["", ""];
-        }
-	} catch(error) {
-		oerArray = ["", ""];
-	}
+        // var oerArray, licenseArray;
+        // var oerLink, oerName;
+        // var licenseLink, licenseName;
 
-        oerLink = oerArray[0];
-        oerName = oerArray[1].substring(0, oerArray[1].length - 1);
+        let oerArray = ["", ""];
+        let licenseArray = ["", ""];
+
+        // try {
+        //     if (problem.oer != null && problem.oer.includes(" <")) {
+        //         oerArray = problem.oer.split(" <");
+        //     } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
+        //         oerArray = lesson.courseOER.split(" <");
+        //     } else {
+        //         oerArray = ["", ""];
+        //     }
+        // } catch(error) {
+        //     oerArray = ["", ""];
+        // }
 
         try {
-            if (problem.license != null && problem.license.includes(" ")) {
+            if (problem.oer && problem.oer.includes(" <")) {
+                oerArray = problem.oer.split(" <");
+            } else if (lesson.courseOER && lesson.courseOER.includes(" <")) {
+                oerArray = lesson.courseOER.split(" <");
+            }
+        } catch (error) {
+            oerArray = ["", ""];
+        }
+
+        const oerLink = oerArray[0] || "";
+        const oerName = oerArray[1] ? oerArray[1].substring(0, oerArray[1].length - 1) : "";
+
+        try {
+            if (problem.license && problem.license.includes(" ")) {
                 licenseArray = problem.license.split(" <");
             } else if (
-                lesson.courseLicense != null &&
+                lesson.courseLicense &&
                 lesson.courseLicense.includes(" ")
             ) {
                 licenseArray = lesson.courseLicense.split(" <");
-            } else {
-                licenseArray = ["", ""];
-            }
-        } catch(error) {
+            } 
+        } catch (error) {
             licenseArray = ["", ""];
         }
-        licenseLink = licenseArray[0];
-        licenseName = licenseArray[1].substring(0, licenseArray[1].length - 1);
+
+        const licenseLink = licenseArray[0] || "";
+        const licenseName = licenseArray[1] ? licenseArray[1].substring(0, licenseArray[1].length - 1) : "";
+        
         return [oerLink, oerName, licenseLink, licenseName];
     };
 
@@ -604,14 +618,14 @@ class Problem extends React.Component {
                                 )}
                                 {licenseName !== "" && (
                                     <>
-                                    &nbsp;{translate("problem.Used")}&nbsp;
-                                    {licenseLink !== "" ? (
-                                        <a href={licenseLink} target="_blank" rel="noreferrer">
-                                        {licenseName}
-                                        </a>
-                                    ) : (
-                                        <span>{licenseName}</span>
-                                    )}
+                                        &nbsp;{translate("problem.Used")}&nbsp;
+                                        {licenseLink !== "" ? (
+                                            <a href={licenseLink} target="_blank" rel="noreferrer">
+                                            {licenseName}
+                                            </a>
+                                        ) : (
+                                            <span>{licenseName}</span>
+                                        )}
                                     </>
                                 )}
                                 </div>
