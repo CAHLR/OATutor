@@ -1,0 +1,133 @@
+[
+    {
+        "id": "a161552dividing10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use distributive property",
+        "text": "Use distributive property to rewrite the expression $$\\frac{20y^2+12y-1}{\\left(-4y\\right)}=\\frac{20y^2}{\\left(-4y\\right)}+\\frac{12y}{\\left(-4y\\right)}+\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividing10a-h1"
+        ],
+        "title": "Use distributive property",
+        "text": "As a reminder, the distributive law states $$\\left(a+b+d\\right) c=a c+b c+d c$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividing10a-h2"
+        ],
+        "title": "Use distributive property",
+        "text": "in this case, we can see divided by $$\\left(-4y\\right)$$ same as multiply by $$\\frac{1}{\\left(-4y\\right)}$$, $$a=20y^2$$ , $$b=12y$$, $$d=$$ $$-1$$, $$c=\\frac{1}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5y$$"
+        ],
+        "dependencies": [
+            "a161552dividing10a-h3"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "$$\\frac{\\operatorname{Simplify}\\left(20y^2\\right)}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a161552dividing10a-h4"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "Simplify $$\\frac{12y}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4y}$$"
+        ],
+        "dependencies": [
+            "a161552dividing10a-h5"
+        ],
+        "title": "Simplify each term in expression",
+        "text": "Simplify $$\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4y}$$"
+        ],
+        "dependencies": [
+            "a161552dividing10a-h6"
+        ],
+        "title": "Simplify $$\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$",
+        "text": "the only common factor in both numerator and denominator is $$-1$$, so the only thing we can do to simplify this term is divided both numerator and denominator by $$-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing10a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(-2x\\right)-1+\\frac{4}{5x}$$"
+        ],
+        "dependencies": [
+            "a161552dividing10a-h7"
+        ],
+        "title": "Combine the simplified terms",
+        "text": "As our last step, we can put the simplified terms back to the expression $$\\frac{20y^2}{\\left(-4y\\right)}+\\frac{12y}{\\left(-4y\\right)}+\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividing10a-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Combine the simplified terms",
+                "text": "in the expression $$\\frac{20y^2}{\\left(-4y\\right)}+\\frac{12y}{\\left(-4y\\right)}+\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$, replace $$\\frac{20y^2}{\\left(-4y\\right)}$$ with-5*y, replace $$\\frac{12y}{\\left(-4y\\right)}$$ with $$-3$$, and replace $$\\frac{\\left(-1\\right)}{\\left(-4y\\right)}$$ with $$\\frac{1}{4y}$$, then we yield a new simplified expression",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

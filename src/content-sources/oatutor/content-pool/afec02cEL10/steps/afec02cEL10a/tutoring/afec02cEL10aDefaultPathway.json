@@ -1,0 +1,57 @@
+[
+    {
+        "id": "afec02cEL10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Domain",
+        "text": "Determine whether or not there are values of $$x$$ that make the exponential function equal to a number that is not real.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afec02cEL10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afec02cEL10a-h1"
+        ],
+        "title": "Domain",
+        "text": "If there are any, the domain doesn't include all real numbers. If there aren't any, the domain includes all real numbers",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "afec02cEL10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afec02cEL10a-h2"
+        ],
+        "title": "Check the Domain",
+        "text": "Does the domain include all real numbers?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afec02cEL10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afec02cEL10a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Therefore, the domain of the exponential function includes all real numbers.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

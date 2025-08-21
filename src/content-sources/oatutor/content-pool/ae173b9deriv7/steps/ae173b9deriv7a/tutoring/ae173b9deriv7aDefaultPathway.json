@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae173b9deriv7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What to Solve For",
+        "text": "The particle is at rest when v(t) $$=$$ $$0$$. Set $$3t^2$$ - $$18t$$ + $$24$$ $$=$$ $$0$$ and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "2,4"
+        ],
+        "dependencies": [
+            "ae173b9deriv7a-h1"
+        ],
+        "title": "Time(s) the Particle is at Rest",
+        "text": "What is $$t$$? If your answer has multiple times, separate them by commas. For example, \"1,2\".",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv7a-h2"
+        ],
+        "title": "Calculating $$3t^2$$ - $$18t$$ + $$24$$ $$=$$ $$0$$",
+        "text": "Factor the left-hand side of the equation to produce 3(t - 2)(t - 4) $$=$$ $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv7a-h3"
+        ],
+        "title": "Simplifying the Equation",
+        "text": "When solving for $$t$$, we can simplify the equation 3(t - 2)(t - 4) $$=$$ $$0$$ to get $$t$$ - $$2$$ $$=$$ $$0$$ and $$t$$ - $$4$$ $$=$$ $$0$$ by dividing by $$3$$ on both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv7a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "We find that the particle is at rest at $$t$$ $$=$$ $$2$$ and $$t$$ $$=$$ $$4$$. Thus, your answer should be \"2,4\".",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

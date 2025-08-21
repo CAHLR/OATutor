@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a005bd5real22a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "G(r) input=distance and G(r) output=force. a(F) input=force and a(F) output=accelaration."
+        ],
+        "dependencies": [],
+        "title": "Define Input and Output",
+        "text": "Define the input and output for each function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real22a-h1"
+        ],
+        "title": "Composition of Functions",
+        "text": "We see that G(r) has the same output as the input of a(F) (force). So, a(G(r)) is meaningful.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real22a-h2"
+        ],
+        "title": "Interpretation",
+        "text": "So, reading a(G(r)) from left to $$right, a(G(r))=acceleration$$ of the gravitational force for a planet from a distance $$r$$ from the sun.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

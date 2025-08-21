@@ -1,0 +1,120 @@
+[
+    {
+        "id": "a7c96ccslope29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve the first equation for $$y$$",
+        "text": "$$2x-6y=4$$\\n$$-6y=-2x+4$$\\n$$\\frac{\\left(-6y\\right)}{-6}=\\frac{\\left(-2x+4\\right)}{-6}$$\\n$$y=\\frac{1}{3} x-\\frac{2}{3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h1"
+        ],
+        "title": "Slope-Intercept Form of an Equation of Second Line",
+        "text": "Compare the second equation to the slope-intercept form of the equation.\\n$$y=m x+b$$\\n$$y=\\frac{1}{3} x-\\frac{2}{3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a7c96ccslope29a-h2"
+        ],
+        "title": "Identify the Slope of First Line",
+        "text": "What is $$m$$ in the first equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h3"
+        ],
+        "title": "Solve the second equation for $$y$$",
+        "text": "$$12x+4y=9$$\\n$$4y=-12x+9$$\\n$$\\frac{4y}{4}=\\frac{\\left(-12x+9\\right)}{4}$$\\n$$y=-3x+\\frac{9}{4}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h4"
+        ],
+        "title": "Slope-Intercept Form of an Equation of Second Line",
+        "text": "Compare the second equation to the slope-intercept form of the equation.\\n$$y=m x+b$$\\n$$y=-3x+\\frac{9}{4}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a7c96ccslope29a-h5"
+        ],
+        "title": "Identify the Slope of Second Line",
+        "text": "What is $$m$$ in the second equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h6"
+        ],
+        "title": "Perpendicular Lines",
+        "text": "Perpendicular lines have slopes that are negative reciprocals of each other. We check by multiplying the slopes and see if it equals $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h3",
+            "a7c96ccslope29a-h6",
+            "a7c96ccslope29a-h7"
+        ],
+        "title": "Checking if perpendicular",
+        "text": "$$m_1 m_2$$\\n$$-3\\frac{1}{3}=-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7c96ccslope29a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a7c96ccslope29a-h8"
+        ],
+        "title": "Perpendicular Lines",
+        "text": "The slopes are negative reciprocals of each other, so the lines are perpendicular.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
