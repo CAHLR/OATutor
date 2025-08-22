@@ -420,23 +420,32 @@ class Problem extends React.Component {
             // }
 
 
-            if (problem.oer) {
-                if (problem.oer.includes(" <")) {
-                    // case of including both link and name
-                    oerArray = problem.oer.split(" <");
-                } 
-                else if (problem.oer.startsWith("<") && problem.oer.endsWith(">")) {
-                    // case of only including <name>
-                    oerArray = ["", problem.oer];
-                }
-            } 
-            else if (lesson.courseOER) {
-                if (lesson.courseOER.includes(" <")) {
-                    oerArray = lesson.courseOER.split(" <");
-                } 
-                else if (lesson.courseOER.startsWith("<") && lesson.courseOER.endsWith(">")) {
-                    oerArray = ["", lesson.courseOER];
-                }
+            // if (problem.oer) {
+            //     if (problem.oer.includes(" <")) {
+            //         // case of including both link and name
+            //         oerArray = problem.oer.split(" <");
+            //     } 
+            //     else if (problem.oer.startsWith("<") && problem.oer.endsWith(">")) {
+            //         // case of only including <name>
+            //         oerArray = ["", problem.oer];
+            //     }
+            // } 
+            // else if (lesson.courseOER) {
+            //     if (lesson.courseOER.includes(" <")) {
+            //         oerArray = lesson.courseOER.split(" <");
+            //     } 
+            //     else if (lesson.courseOER.startsWith("<") && lesson.courseOER.endsWith(">")) {
+            //         oerArray = ["", lesson.courseOER];
+            //     }
+            // }
+
+            const rawOER =  lesson.courseOER || problem.oer || "";
+
+            const match = rawOER.match(/^(.*?)\s*<(.+)>$/);
+            if (match) {
+                oerArray = [match[1] || "", match[2] || ""];
+            } else {
+                oerArray = ["", rawOER];
             }
         } 
         catch (error) {
@@ -444,11 +453,14 @@ class Problem extends React.Component {
         }
 
         const oerLink = oerArray[0] || "";
-        // const oerName = oerArray[1] ? oerArray[1].substring(0, oerArray[1].length - 1) : "";
+        const oerName = oerArray[1] || "";
 
-        const oerName = oerArray[1]
-        ? oerArray[1].substring(0, oerArray[1].length - 1).replace(/^</, "")
-        : "";
+
+
+        console.log("oerArray:", oerArray);
+        console.log("oerLink:", oerLink);
+        console.log("oerName:", `"${oerName}"`);  // quotes help see empty strings
+        console.log("oerName length:", oerName.length);
 
         try {
             // if (problem.license && problem.license.includes(" ")) {
@@ -487,7 +499,7 @@ class Problem extends React.Component {
         const licenseName = licenseArray[1]
         ? licenseArray[1].substring(0, licenseArray[1].length - 1).replace(/^</, "")
         : "";
-        
+
         return [oerLink, oerName, licenseLink, licenseName];
     };
 
@@ -652,23 +664,22 @@ class Problem extends React.Component {
                         }}
                     >
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
-                            {(oerName !== "" || licenseName !== "") && (
+                            {(oerName || licenseName) && (
                                 <div>
                                 "{problem.title}" {translate("problem.Derivative")}&nbsp;
+
                                 {oerName !== "" && (
-                                    <>
-                                    {oerLink !== "" ? (
+                                    oerLink ? (
                                         <a href={oerLink} target="_blank" rel="noreferrer">
-                                        "{oerName}"
+                                        {oerName}
                                         </a>
                                     ) : (
-                                        <span>"{oerName}"</span>
-                                    )}
-                                    </>
+                                        <span>{oerName}</span>
+                                    )
                                 )}
                                 {licenseName !== "" && (
                                     <>
-                                        &nbsp;{translate("problem.Used")}&nbsp;
+                                        {translate("problem.Used")}&nbsp;
                                         {licenseLink !== "" ? (
                                             <a href={licenseLink} target="_blank" rel="noreferrer">
                                             {licenseName}
