@@ -409,34 +409,84 @@ class Problem extends React.Component {
         //     oerArray = ["", ""];
         // }
 
+        //Problem OER is the link in the problem content spreadsheets (will only use if <> included and not the link)
+        //Lesson course OER is listed in the problem bank URL spreadsheet, second level after problem specific 
+        
         try {
-            if (problem.oer && problem.oer.includes(" <")) {
-                oerArray = problem.oer.split(" <");
-            } else if (lesson.courseOER && lesson.courseOER.includes(" <")) {
-                oerArray = lesson.courseOER.split(" <");
+            // if (problem.oer && problem.oer.includes(" <")) {
+            //     oerArray = problem.oer.split(" <");
+            // } else if (lesson.courseOER && lesson.courseOER.includes(" <")) {
+            //     oerArray = lesson.courseOER.split(" <");
+            // }
+
+
+            if (problem.oer) {
+                if (problem.oer.includes(" <")) {
+                    // case of including both link and name
+                    oerArray = problem.oer.split(" <");
+                } 
+                else if (problem.oer.startsWith("<") && problem.oer.endsWith(">")) {
+                    // case of only including <name>
+                    oerArray = ["", problem.oer];
+                }
+            } 
+            else if (lesson.courseOER) {
+                if (lesson.courseOER.includes(" <")) {
+                    oerArray = lesson.courseOER.split(" <");
+                } 
+                else if (lesson.courseOER.startsWith("<") && lesson.courseOER.endsWith(">")) {
+                    oerArray = ["", lesson.courseOER];
+                }
             }
-        } catch (error) {
+        } 
+        catch (error) {
             oerArray = ["", ""];
         }
 
         const oerLink = oerArray[0] || "";
-        const oerName = oerArray[1] ? oerArray[1].substring(0, oerArray[1].length - 1) : "";
+        // const oerName = oerArray[1] ? oerArray[1].substring(0, oerArray[1].length - 1) : "";
+
+        const oerName = oerArray[1]
+        ? oerArray[1].substring(0, oerArray[1].length - 1).replace(/^</, "")
+        : "";
 
         try {
-            if (problem.license && problem.license.includes(" ")) {
-                licenseArray = problem.license.split(" <");
-            } else if (
-                lesson.courseLicense &&
-                lesson.courseLicense.includes(" ")
-            ) {
-                licenseArray = lesson.courseLicense.split(" <");
-            } 
-        } catch (error) {
+            // if (problem.license && problem.license.includes(" ")) {
+            //     licenseArray = problem.license.split(" <");
+            // } else if (
+            //     lesson.courseLicense &&
+            //     lesson.courseLicense.includes(" ")
+            // ) {
+            //     licenseArray = lesson.courseLicense.split(" <");
+            // } 
+
+            if (problem.license) {
+                if (problem.license.includes(" <")) {
+                    licenseArray = problem.license.split(" <");
+                } else if (problem.license.startsWith("<") && problem.license.endsWith(">")) {
+                    licenseArray = ["", problem.license];
+                }
+            }
+            else if (lesson.courseLicense) {
+                if (lesson.courseLicense.includes(" <")) {
+                    licenseArray = lesson.courseLicense.split(" <");
+                } else if (lesson.courseLicense.startsWith("<") && lesson.courseLicense.endsWith(">")) {
+                    licenseArray = ["", lesson.courseLicense];
+                }
+            }
+        } 
+        
+        
+        catch (error) {
             licenseArray = ["", ""];
         }
 
         const licenseLink = licenseArray[0] || "";
-        const licenseName = licenseArray[1] ? licenseArray[1].substring(0, licenseArray[1].length - 1) : "";
+        // const licenseName = licenseArray[1] ? licenseArray[1].substring(0, licenseArray[1].length - 1) : "";
+
+        const licenseName = licenseArray[1]
+        ? licenseArray[1].substring(0, licenseArray[1].length - 1).replace(/^</, "")
+        : "";
         
         return [oerLink, oerName, licenseLink, licenseName];
     };
@@ -630,7 +680,7 @@ class Problem extends React.Component {
                                 )}
                                 </div>
                             )}
-                            </div>
+                        </div>
                         <div
                             style={{
                                 display: "flex",
