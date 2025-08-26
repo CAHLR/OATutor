@@ -14,6 +14,7 @@ import NotFound from "@components/NotFound.js";
 import {
     DO_FOCUS_TRACKING,
     PROGRESS_STORAGE_KEY,
+    CANVAS_PROBLEM_SCORE_KEY,
     SITE_VERSION,
     ThemeContext,
     USER_ID_STORAGE_KEY,
@@ -128,6 +129,7 @@ class App extends React.Component {
                 const user = parseJwt(additionalContext.jwt);
                 additionalContext["user"] = user;
                 additionalContext["studentName"] = user.full_name;
+                this.jwt = additionalContext.jwt;
             }
 
             // Firebase creation
@@ -230,24 +232,46 @@ class App extends React.Component {
                 );
             })
         );
-        const { setByKey } = this.browserStorage;
-        setByKey(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
-            if (err) {
-                console.debug("save progress error: ", err);
-                toast.warn("Unable to save mastery progress :(", {
+        console.log(progressedBktParams)
+
+        if (this.jwt) {
+            const key = CANVAS_PROBLEM_SCORE_KEY(this.jwt);
+            this.firebase.setMastery(key, progressedBktParams)
+            .then((_) => {})
+            .catch((err) => {
+                toast.warn("Unable to save mastery progress to Firebase", {
                     toastId: "unable_to_save_progress",
                 });
-            } else {
-                console.debug("saved progress successfully");
-            }
-        }).then((_) => {});
+            });
+        } else {
+            const { setByKey } = this.browserStorage;
+            setByKey(PROGRESS_STORAGE_KEY, progressedBktParams, (err) => {
+                if (err) {
+                    console.debug("save progress error: ", err);
+                    toast.warn("Unable to save mastery progress :(", {
+                        toastId: "unable_to_save_progress",
+                    });
+                } else {
+                    console.debug("saved progress successfully");
+                }
+            }).then((_) => {});
+        }
     };
 
     loadBktProgress = async () => {
-        const { getByKey } = this.browserStorage;
-        const progress = await getByKey(PROGRESS_STORAGE_KEY).catch((_e) => {
-            console.debug("error with getting previous progress", _e);
-        });
+        let progress;
+        if (this.jwt) {
+            const key = CANVAS_PROBLEM_SCORE_KEY(this.jwt);
+            progress = await this.firebase.getMastery(key).catch((_e) => {
+                console.debug("error with getting previous progress", _e);
+            });
+        } else {
+            const { getByKey } = this.browserStorage;
+            progress = await getByKey(PROGRESS_STORAGE_KEY).catch((_e) => {
+                console.debug("error with getting previous progress", _e);
+            });
+        }
+
         if (
             progress == null ||
             typeof progress !== "object" ||
