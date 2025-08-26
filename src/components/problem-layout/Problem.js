@@ -666,7 +666,7 @@ class Problem extends React.Component {
                         <div style={{ marginLeft: 20, fontSize: 12 }}>
                             {(oerName || licenseName) && (
                                 <div>
-                                "{problem.title}" {translate("problem.Derivative")}&nbsp;
+                                "{problem.title}" is sourced from &nbsp;
 
                                 {oerName !== "" && (
                                     oerLink ? (
