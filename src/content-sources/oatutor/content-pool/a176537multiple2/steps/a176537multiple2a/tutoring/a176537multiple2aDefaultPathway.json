@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a176537multiple2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for a Balanced Equation",
+        "text": "Check if the equation is balanced or not. If not, balance the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a176537multiple2a-h1"
+        ],
+        "title": "Calculate the Molar Amount of $$CaCO_3$$",
+        "text": "Use the equation Moles of Reactant A $$=$$ Mass of Reactant A * (Moles of Reactant A)/(Molar Mass of Reactant A).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.013$$"
+        ],
+        "dependencies": [
+            "a176537multiple2a-h2"
+        ],
+        "title": "Calculate the Molar Amount of $$CaCO_3$$",
+        "text": "What is $$(1.31$$ g $$CaCO_3$$ )*(1 mol $$CaCO_3$$ / $$100.09$$ g $$CaCO_3$$ )? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a176537multiple2a-h3"
+        ],
+        "title": "Identify the Stoichiometric Factor",
+        "text": "The stoichiometric factor relating the two substances of interest is $$1$$ mol CO2 / $$1$$ mol $$CaCO_3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a176537multiple2a-h4"
+        ],
+        "title": "Calculate the Molar Amount of $$CO_2$$",
+        "text": "The molar amount of $$CO_2$$ is derived by multiplying the provided molar amount of $$CaCO_3$$ by multiplying the stoichiometric factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.013$$"
+        ],
+        "dependencies": [
+            "a176537multiple2a-h5"
+        ],
+        "title": "Calculate the Molar Amount of $$CO_2$$",
+        "text": "What is $$(0.013$$ mol $$CO_2$$ )*(1 mol $$CO_2$$ / $$1$$ mol $$CaCO_3$$ )? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a176537multiple2a-h6"
+        ],
+        "title": "Calculate the Mass of $$CO_2$$",
+        "text": "Calculate the Mass of $$CO_2$$ with Mass of Reactant A $$=$$ (Molar Mass of Reactant A)/(Moles of Reactant A)*Moles of Reactant A)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.572$$"
+        ],
+        "dependencies": [
+            "a176537multiple2a-h7"
+        ],
+        "title": "Calculate the Mass of $$CO_2$$",
+        "text": "What is $$(0.013$$ mol $$CO_2$$ )*(44.01 g $$CO_2$$ )/(mol $$CO_2$$ )? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a176537multiple2a-h8"
+        ],
+        "title": "Calculate the Percentage Yield",
+        "text": "Calculate the percentage yield with $$___$$ % yield $$=$$ (Experimental (actual) yield of product C)/(Theoretical (calculated) yield of product C)*100.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537multiple2a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$93$$"
+        ],
+        "dependencies": [
+            "a176537multiple2a-h9"
+        ],
+        "title": "Calculate the Percentage Yield",
+        "text": "What is $$0.53$$ g $$CO_2$$ /0.572 g $$CO_2$$? Give your answer as an integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

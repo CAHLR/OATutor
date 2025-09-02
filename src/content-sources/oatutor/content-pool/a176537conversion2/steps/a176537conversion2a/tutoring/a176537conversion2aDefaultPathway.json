@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a176537conversion2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for a Balanced Equation",
+        "text": "Check if the equation is balanced or not. If not, balance the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537conversion2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a176537conversion2a-h1"
+        ],
+        "title": "Identify the Stoichiometric Factor",
+        "text": "The stoichiometric factor relating the two substances of interest is $$2$$ mol $$2\\text{H}_3\\text{PO}_4$$ / $$3$$ mol $$\\text{Ca(OH)}_2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537conversion2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a176537conversion2a-h2"
+        ],
+        "title": "Calculate the Molar Amount of $$\\operatorname{Ca}\\left(OH\\right) _2$$",
+        "text": "The molar amount of $$\\operatorname{Ca}\\left(OH\\right) _2$$ is derived by multiplying the provided molar amount of $$H_3 PO_4$$ by multiplying the stoichiometric factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537conversion2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.04$$"
+        ],
+        "dependencies": [
+            "a176537conversion2a-h3"
+        ],
+        "title": "Calculate the Molar Amount of $$\\operatorname{Ca}\\left(OH\\right) _2$$",
+        "text": "What is $$(1.36$$ mol $$\\text{H}_3\\text{PO}_4$$)*(2 $$mol$$ $$2\\text{H}_3\\text{PO}_4$$ / $$3$$ mol $$\\text{Ca(OH)}_2)?$$ Keep two decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
