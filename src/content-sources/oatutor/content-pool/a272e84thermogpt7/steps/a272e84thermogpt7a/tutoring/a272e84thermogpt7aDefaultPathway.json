@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a272e84thermogpt7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Enthalpy Change",
+        "text": "The standard enthalpy change for a reaction, \u0394H\u00b0, can be calculated using the equation: \u0394H\u00b0 $$=$$ \u03a3\u0394H_f\u00b0(products) - \u03a3\u0394H_f\u00b0(reactants).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt7a-h1"
+        ],
+        "title": "Molar Enthalpy of Formation",
+        "text": "Remember that the standard enthalpy of formation, \u0394H_f\u00b0, is the change in enthalpy when one mole of a compound is formed from its elements in their standard state. Values for O\u2082 is $$0$$ $$\\frac{kJ}{mol}$$ because it's an element in its standard state.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt7a-h2"
+        ],
+        "title": "Stoichiometry Considerations",
+        "text": "Pay attention to the stoichiometric coefficients in the balanced reaction. They affect how you calculate the total enthalpy change for the substances involved.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-965.16$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt7a-h3"
+        ],
+        "title": "Calculate \u0394H\u00b0 for Products",
+        "text": "Find the sum of the standard enthalpies of formation for the products using stoichiometric coefficients: \u0394H\u00b0(products) $$=$$ \u0394H_f\u00b0(CO\u2082) + 2*\u0394H_f\u00b0(H\u2082O).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-74.81$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt7a-h4"
+        ],
+        "title": "Calculate \u0394H\u00b0 for Reactants",
+        "text": "Calculate the sum of the standard enthalpies of formation for the reactants: \u0394H\u00b0(reactants) $$=$$ \u0394H_f\u00b0(CH\u2084) + 2*\u0394H_f\u00b0(O\u2082).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-890.35$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt7a-h5"
+        ],
+        "title": "Final Calculation for \u0394H\u00b0",
+        "text": "Subtract the sum of the enthalpies of the reactants from the sum of the enthalpies of the products to find \u0394H\u00b0 of the reaction: \u0394H\u00b0 $$=$$ [\u0394H\u00b0(products)] - [\u0394H\u00b0(reactants)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

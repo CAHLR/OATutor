@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272e84thermogpt4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the given expressions",
+        "text": "First, identify the expression for calculating the change in enthalpy, \u0394H, when the temperature changes at constant pressure. You can use the formula for a polyatomic gas:\\n\\n\u0394H $$=$$ $$n$$ \u00b7 $$C_p$$ \u00b7 \u0394T.\\n\\nWhere:\\n\u0394H is the change in enthalpy\\n$$n$$ is the number of moles\\n$$C_p$$ is the molar heat capacity at constant pressure\\n\u0394T is the change in temperature",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt4b-h1"
+        ],
+        "title": "Evaluate given values",
+        "text": "List the known values from the problem statement:\\n\\n- Number of moles, $$n$$ $$=$$ $$3.00$$\\nMolar heat capacity, $$C_p=\\frac{7}{2}$$ \u00b7 R\\nGas constant, R $$=$$ $$8.314$$ $$\\frac{J}{mol}$$ \u00b7 K\\nChange in temperature is given by the problem (assumed constant for this step)\\n\\nUse these values to substitute into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$43.6$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt4b-h2"
+        ],
+        "title": "Substitute and calculate",
+        "text": "Calculate the change in enthalpy using the formula and known values:\\n\\n\u0394H $$=$$ $$3.00$$ \u00b7 (7/2 \u00b7 $$8.314)$$ \u00b7 \u0394T\\n\\nTo complete the calculation, you need to multiply the coefficients and solve for \u0394H.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

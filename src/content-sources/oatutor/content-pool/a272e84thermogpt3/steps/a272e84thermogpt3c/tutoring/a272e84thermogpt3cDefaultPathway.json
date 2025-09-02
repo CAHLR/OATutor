@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a272e84thermogpt3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Key Variables",
+        "text": "When calculating the internal energy change, it's important to identify the initial and final states of the gas. What are the initial and final volumes here?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3c-h1"
+        ],
+        "title": "Relate Volume Change to Temperature Change",
+        "text": "With the volume doubling (from $$40.0L$$ to $$80.0L)$$ and pressure remaining constant, there should be a proportional change in temperature. Can you determine the new temperature using the initial temperature?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3c-h2"
+        ],
+        "title": "Calculating the Temperature Change",
+        "text": "Since pressure is constant, the relationship between temperature and volume is: $$\\frac{V_1}{T_1}=$$ $$\\frac{V_2}{T_2}$$. Calculate the final temperature T2 using this formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$600$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3c-h3"
+        ],
+        "title": "Finding the Final Temperature $$T_2$$",
+        "text": "Use the formula:\\n$$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$$\\n\\nGiven:\\n$$V_1=40.0$$, $$T1=300$$, $$V2=80.0$$. Calculate T2.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3c-h4"
+        ],
+        "title": "Understanding $$c_V$$",
+        "text": "Remember, $$c_V$$ (molar heat capacity at constant volume) is derived by subtracting R from $$c_P$$. Apply this for helium.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12.486$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3c-h5"
+        ],
+        "title": "Calculating $$c_V$$",
+        "text": "Given: $$c_P=20.8$$ and $$R=8.314$$, calculate $$c_V$$ for helium.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h7",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3c-h6"
+        ],
+        "title": "Internal Energy Change Formula",
+        "text": "The change in internal energy is given by \u0394U $$=$$ $$n$$ * $$c_V$$ * \u0394T. Do you have all values to calculate this?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$300$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3c-h7"
+        ],
+        "title": "Calculate the Temperature Change \u0394T",
+        "text": "The temperature change, \u0394T, is calculated by (T_2 - T_1). With $$T_1=300$$ and $$T_2=600$$, find \u0394T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11233$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3c-h8"
+        ],
+        "title": "Calculate Internal Energy Change \u0394U",
+        "text": "Using \u0394U $$=$$ $$n$$ * $$c_V$$ * \u0394T where $$n=3.00$$, $$c_V=12.486$$, $$\u0394T=300$$, find \u0394U.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

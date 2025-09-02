@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a272e84thermogpt4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the formula for enthalpy change",
+        "text": "The change in enthalpy \u0394H when a gas is heated is calculated using the formula: \u0394H $$=n$$ * $$C_p$$ * \u0394T where $$n$$ is the number of moles, $$C_p$$ is the molar heat capacity at constant pressure, and \u0394T is the change in temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt4a-h1"
+        ],
+        "title": "Compute the temperature change",
+        "text": "To find \u0394T, subtract the initial temperature from the final temperature: \u0394T $$=$$ T_{final} - T_{initial}. In this problem, T_{final} $$=$$ 800K andT_{initial} $$=$$ 300K. What's the value of \u0394T?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$500$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt4a-h2"
+        ],
+        "title": "Calculate \u0394T",
+        "text": "What is the change in temperature (\u0394T) when neon is heated from $$300$$ K to $$800$$ K?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt4a-h3"
+        ],
+        "title": "Apply the formula for enthalpy change",
+        "text": "Use the formula \u0394H $$=$$ $$n$$ * $$C_p$$ * \u0394T with $$n$$ $$=$$ $$3.00$$, $$C_p$$ $$=$$ $$\\frac{5}{2}$$ R, and \u0394T you've calculated.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20.785$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt4a-h4"
+        ],
+        "title": "Calculate $$C_p$$",
+        "text": "Given that $$C_p$$ $$=$$ $$\\frac{5}{2}$$ R and the value of R $$=$$ $$8.314$$ $$\\frac{J}{mol\u00b7K}$$, compute the value of $$C_p$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt4a-h5"
+        ],
+        "title": "Calculate the change in enthalpy",
+        "text": "Substitute $$n$$ $$=$$ $$3.00$$, $$C_p$$ $$=$$ $$20.785$$ $$\\frac{J}{mol\u00b7K}$$, and \u0394T $$=$$ 500K into the equation \u0394H $$=n$$ * $$C_p$$ * \u0394T to find the enthalpy change in J.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$31$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt4a-h6"
+        ],
+        "title": "Convert \u0394H to kilojoules",
+        "text": "After calculating \u0394H in joules, convert it into kilojoules by dividing by $$1000$$. What is the final answer in kilojoules?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

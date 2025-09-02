@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a272e84thermo4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Enthalpy Change",
+        "text": "Enthalpy change at constant pressure can be calculated using the formula: \u0394H $$=$$ $$nC_{p\\Delta T}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4a-h1"
+        ],
+        "title": "Moles and Heat Capacity Relationship",
+        "text": "In the formula \u0394H $$=$$ $$nC_{p\\Delta T}$$, the term $$n$$ represents the number of moles, $$C_p$$ is the molar heat capacity at constant pressure, and \u0394T is the change in temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4a-h2"
+        ],
+        "title": "Find the Change in Temperature",
+        "text": "Calculate the temperature change by subtracting the initial temperature from the final temperature: \u0394T $$=$$ T_{final}-T_{initial}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$273$$"
+        ],
+        "dependencies": [
+            "a272e84thermo4a-h3"
+        ],
+        "title": "Calculate \\( \\Delta T \\)",
+        "text": "Temperature changes from $$298$$ K to $$573$$ K. Calculate \u0394T.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4a-h4"
+        ],
+        "title": "Molar Heat Capacity for Argon",
+        "text": "Argon is a monoatomic gas with a molar heat capacity $$C_p$$ of approximately $$20.8$$ $$\\frac{J}{mol} K$$ under constant pressure.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11344$$"
+        ],
+        "dependencies": [
+            "a272e84thermo4a-h5"
+        ],
+        "title": "Calculate the Change in Enthalpy",
+        "text": "Using $$n$$ $$=$$ $$2.00$$ moles, $$C_p$$ $$=$$ $$20.8$$ $$\\frac{J}{mol} K$$, and \u0394T $$=$$ $$275$$ K, calculate \u0394H in J.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4a-h6"
+        ],
+        "title": "Convert Energy to kJ",
+        "text": "Remember to convert the enthalpy change from Joules to kilojoules by dividing by $$1000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a272e84thermo4a-h7"
+        ],
+        "title": "Calculate \u0394H in kJ",
+        "text": "Convert joules to kilojoules: $$11344$$ J $$=$$ ? kJ.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

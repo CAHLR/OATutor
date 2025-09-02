@@ -1,0 +1,122 @@
+[
+    {
+        "id": "a272e84thermogpt5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start by Identifying Components",
+        "text": "Identify the two main components involved in this heat exchange problem: the ice block and the water.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt5a-h1"
+        ],
+        "title": "Understand Heat Transfer",
+        "text": "When two bodies at different temperatures are in contact, heat will flow from the hotter body to the cooler one until thermal equilibrium is reached.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$522.5$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt5a-h2"
+        ],
+        "title": "Calculate the Heat Needed to Raise the Ice to 0\u00b0C",
+        "text": "Use the formula: $$Q=cm\u0394T$$ where c is the specific heat, $$m$$ is the mass, and \u0394T is the change in temperature. For ice, the specific heat is $$2.09$$ J g**-1\u00b0C**-1.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Q=(6.007$$ kJ/mol)*(50/18.015)"
+        ],
+        "dependencies": [
+            "a272e84thermogpt5a-h3"
+        ],
+        "title": "Calculate Heat Required to Melt Ice at 0\u00b0C",
+        "text": "Use the enthalpy of fusion: $$\u0394H=\\frac{Q}{m}$$. Convert mass of ice in grams to moles.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$Q=(6.007$$ kJ/mol)*(50/18.015)",
+            "$$Q=(6.007$$ kJ/mol)+(50/18.015)",
+            "$$Q=(18.015$$ kJ/mol)*(50/6.007)",
+            "$$Q=(18.015$$ kJ/mol)*(6.007/50)"
+        ]
+    },
+    {
+        "id": "a272e84thermogpt5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Q=4.18\u00d7500(25-T)$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt5a-h4"
+        ],
+        "title": "Calcualate Heat Lost by Water",
+        "text": "Apply: $$Q=cm\u0394T$$ to calculate the heat lost by water as it cools from 25\u00b0C to equilibrium temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$Q=4.18\u00d7500(25-T)$$",
+            "$$Q=4.18\u00d7500(25\u00d7T)$$",
+            "Q=4.18+500(25\u00d7T)",
+            "Q=25+500(4.18\u00d7T)"
+        ]
+    },
+    {
+        "id": "a272e84thermogpt5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt5a-h5"
+        ],
+        "title": "Apply Conservation of Energy",
+        "text": "At thermal equilibrium, the total heat gained by the ice equals the heat lost by the water.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt5a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$finalTemp=\\frac{heatLostByWaterHeatGainedByIce}{massOfWater}$$ * specificHeat"
+        ],
+        "dependencies": [
+            "a272e84thermogpt5a-h6"
+        ],
+        "title": "Calculate Final Temperature",
+        "text": "Set up the equation for thermal equilibrium, calculate, and solve for final temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$finalTemp=\\frac{heatLostByWaterHeatGainedByIce}{massOfWater}$$ * specificHeat",
+            "$$finalTemp=\\frac{heatLostByWaterHeatGainedByIce}{massOfWater}$$",
+            "$$finalTemp=\\frac{massOfWater}{heatLostByWaterHeatGainedByIce}$$ * specificHeat",
+            "$$finalTemp=\\frac{massOfWater}{heatLostByWaterHeatGainedByIce}$$"
+        ]
+    }
+]

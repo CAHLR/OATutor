@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a272e84thermo1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Work Done in Thermodynamics",
+        "text": "In thermodynamics, work done by the system during an expansion can be computed based on the pressure and the change in volume.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo1a-h1"
+        ],
+        "title": "Formula for Work Done",
+        "text": "Recall that work W done by a gas when it is expanded or compressed at constant pressure P can be calculated using the formula: W=P(V_f-V_i, where $$V_i$$ is the initial volume and $$V_f$$ is the final volume.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$432$$"
+        ],
+        "dependencies": [
+            "a272e84thermo1a-h2"
+        ],
+        "title": "Calculating the Change in Volume",
+        "text": "What is the change in volume $$V_f-V_i$$ given $$V_i=542L$$ and $$V_f=974L$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21600$$"
+        ],
+        "dependencies": [
+            "a272e84thermo1a-h3"
+        ],
+        "title": "Calculate Work Done in Latm",
+        "text": "Using the pressure $$P=50.0atm$$ and change in volume $$\u0394V=432L$$, find work done in Latm.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo1a-h4"
+        ],
+        "title": "Converting $$L atm$$ to Joules",
+        "text": "$$1$$ Latm equals $$101.3$$ J. Use this conversion to express the work done in joules.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2188620$$"
+        ],
+        "dependencies": [
+            "a272e84thermo1a-h5"
+        ],
+        "title": "Compute Work Done in Joules",
+        "text": "Compute the work done using (21600 L*atm)*(101.3J/L*atm).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
