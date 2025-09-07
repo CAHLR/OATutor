@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
+import { ProgressTooltip, InfoTooltip } from "@components/Tooltips";
 
 import {
     coursePlans,
@@ -28,12 +29,13 @@ let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.j
 let seed = Date.now().toString();
 console.log("Generated seed");
 
+
 class Platform extends React.Component {
     static contextType = ThemeContext;
 
     constructor(props, context) {
         super(props);
-        
+
         this.problemIndex = {
             problems: problemPool,
         };
@@ -78,7 +80,7 @@ class Platform extends React.Component {
     componentDidMount() {
         this._isMounted = true;
         if (this.props.lessonID != null) {
-            console.log("calling selectLesson from componentDidMount...") 
+            console.log("calling selectLesson from componentDidMount...")
             const lesson = findLessonById(this.props.lessonID)
             console.debug("lesson: ", lesson)
             this.selectLesson(lesson).then(
@@ -112,7 +114,7 @@ class Platform extends React.Component {
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
-    
+
     onComponentUpdate(prevProps, prevState, snapshot) {
         if (
             Boolean(this.state.currProblem?.id) &&
@@ -124,7 +126,7 @@ class Platform extends React.Component {
             this.context.problemID = "n/a";
         }
     }
-    
+
     async selectLesson(lesson, updateServer=true) {
         const context = this.context;
         console.debug("lesson: ", context)
@@ -494,21 +496,192 @@ class Platform extends React.Component {
                     ""
                 )}
                 {this.state.status === "learning" ? (
-                    <ErrorBoundary
-                        componentName={"Problem"}
-                        descriptor={"problem"}
-                    >
-                        <ProblemWrapper
-                            problem={this.state.currProblem}
-                            problemComplete={this.problemComplete}
-                            lesson={this.lesson}
-                            seed={this.state.seed}
-                            lessonID={this.props.lessonID}
-                            displayMastery={this.displayMastery}
-                        />
-                    </ErrorBoundary>
+                  <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                    <div style={{ display: "flex", justifyContent: "center", padding: "24px 0" }}>
+                      <div style={{ display: "flex", alignItems: "center", width: 880, gap: 20 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                          <img
+                            src="/place-holder/static/images/icons/mastery-bolt.png"
+                            alt="Mastery Icon"
+                            width={20}
+                            height={20}
+                            style={{ display: "block" }}
+                          />
+                          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500 }}>
+                            Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
+                          </span>
+                        </div>
+
+                        <ProgressTooltip
+                          arrow
+                          placement="bottom"
+                          interactive
+                          title={
+                            <div style={{ width: "100%", boxSizing: "border-box" }}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "space-between",
+                                  marginBottom: 8,
+                                  lineHeight: "28px",
+                                }}
+                              >
+                                <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>
+                                  Learning Objectives:
+                                </div>
+                                {(() => {
+                                  const keys = Object.keys(this.lesson.learningObjectives || {});
+                                  const mastered = keys.filter(
+                                    (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+                                  ).length;
+                                  return (
+                                    <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                                      <img
+                                        src="/place-holder/static/images/icons/mastery-bolt.png"
+                                        alt=""
+                                        width={20}
+                                        height={20}
+                                      />
+                                      <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                                        {mastered}/{keys.length}
+                                      </div>
+                                    </div>
+                                  );
+                                })()}
+                              </div>
+
+                              {Object.entries(this.lesson.learningObjectives).map(([kc]) => {
+                                const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+                                const pct = Math.round(mastery * 100);
+                                const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+                                return (
+                                  <div key={kc} style={{ marginBottom: 12 }}>
+                                    <div
+                                      style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "space-between",
+                                        marginBottom: 4,
+                                      }}
+                                    >
+                                      <div
+                                        title={label}
+                                        style={{
+                                          fontFamily: "Inter, sans-serif",
+                                          fontSize: 12,
+                                          fontWeight: 500,
+                                          overflow: "hidden",
+                                          textOverflow: "ellipsis",
+                                          whiteSpace: "nowrap",
+                                          marginRight: 8,
+                                        }}
+                                      >
+                                        {label}
+                                      </div>
+                                      <div
+                                        style={{
+                                          fontFamily: "Inter, sans-serif",
+                                          fontSize: 12,
+                                          fontWeight: 500,
+                                          whiteSpace: "nowrap",
+                                        }}
+                                      >
+                                        {pct}%
+                                      </div>
+                                    </div>
+
+                                    <div
+                                      style={{
+                                        width: "100%",
+                                        height: 8,
+                                        backgroundColor: "#E8EDEC",
+                                        borderRadius: 4,
+                                        overflow: "hidden",
+                                      }}
+                                    >
+                                      <div
+                                        style={{
+                                          width: `${pct}%`,
+                                          height: "100%",
+                                          backgroundColor: "#83CDC1",
+                                          transition: "width 0.3s ease-in-out",
+                                        }}
+                                      />
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          }
+                        >
+
+                          <div
+                            role="progressbar"
+                            aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                            style={{
+                              width: 631,
+                              height: 16,
+                              backgroundColor: "#E8EDEC",
+                              borderRadius: 18,
+                              overflow: "hidden",
+                              cursor: "pointer",
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                height: "100%",
+                                backgroundColor: "#67CDBC",
+                                borderRadius: 18,
+                                transition: "width 0.3s ease",
+                              }}
+                            />
+                          </div>
+                        </ProgressTooltip>
+
+
+                       <InfoTooltip
+                         arrow
+                         placement="bottom"
+                         enterTouchDelay={0}
+                         leaveTouchDelay={3000}
+                         title={
+                           <div style={{ width: "100%", boxSizing: "border-box" }}>
+                             <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, marginBottom: 4 }}>
+                               What is Mastery?
+                             </div>
+                             <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: "16px" }}>
+                               Mastery estimates your understanding based on lesson objectives completed.
+                             </div>
+                           </div>
+                         }
+                       >
+                         <img
+                           src="/place-holder/static/images/icons/information-icon.png"
+                           alt="Info"
+                           width={20}
+                           height={20}
+                           style={{ display: "block", cursor: "pointer" }}
+                         />
+                       </InfoTooltip>
+                      </div>
+                    </div>
+
+                    <ProblemWrapper
+                      problem={this.state.currProblem}
+                      problemComplete={this.problemComplete}
+                      lesson={this.lesson}
+                      seed={this.state.seed}
+                      lessonID={this.props.lessonID}
+                      displayMastery={this.displayMastery}
+                    />
+                  </ErrorBoundary>
                 ) : (
-                    ""
+                  ""
                 )}
                 {this.state.status === "exhausted" ? (
                     <center>
