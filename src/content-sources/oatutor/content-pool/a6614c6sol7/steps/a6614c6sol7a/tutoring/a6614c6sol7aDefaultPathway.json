@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a6614c6sol7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Eliminate a Variable",
+        "text": "The y's are already opposites so they will be eliminated once we add up the two equations.\\n$$3x-2y=1$$\\n$$-x+2y=9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol7a-h1"
+        ],
+        "title": "Add the Equations to Eliminate One Variable",
+        "text": "Add the x's, y's, and constants. $$y$$ will be eliminated and then solve for $$x$$.\\n$$2x=10$$\\n$$x=5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol7a-h2"
+        ],
+        "title": "Substitute Solution into Original Equations",
+        "text": "Substitute $$x=5$$ into the first equation, $$3x-2y=1$$. Then solve for $$y$$.\\n$$3x-2y=1$$\\n$$3\\times5-2y=1$$\\n$$15-2y=1$$\\n$$-2y=-14$$\\n$$y=7$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol7a-h2",
+            "a6614c6sol7a-h3"
+        ],
+        "title": "Solution as Ordered Pair",
+        "text": "Solution to the system of equations is $$(5,7)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

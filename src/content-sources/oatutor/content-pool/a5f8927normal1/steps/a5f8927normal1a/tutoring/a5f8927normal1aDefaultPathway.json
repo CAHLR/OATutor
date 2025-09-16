@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5f8927normal1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Upper and Lower Limits",
+        "text": "The confidence interval estimate is the upper and lower bounds of the mean. Add the error to the mean to get the upper limit, and subtract the error from the mean to get the lower limit.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f8927normal1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.2$$"
+        ],
+        "dependencies": [
+            "a5f8927normal1a-h1"
+        ],
+        "title": "Upper Limit",
+        "text": "What is $$15+3.2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f8927normal1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.8$$"
+        ],
+        "dependencies": [
+            "a5f8927normal1a-h1"
+        ],
+        "title": "Lower Limit",
+        "text": "What is $$15-3.2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f8927normal1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5f8927normal1a-h2",
+            "a5f8927normal1a-h3"
+        ],
+        "title": "Combine",
+        "text": "Combine information about the upper and lower limits to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

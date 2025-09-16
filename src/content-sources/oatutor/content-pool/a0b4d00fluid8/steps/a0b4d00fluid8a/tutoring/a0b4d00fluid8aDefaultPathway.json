@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a0b4d00fluid8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dynamic Pressure Formula",
+        "text": "Use the relation between dynamic pressure and the square of velocity: $$p=\\frac{1}{2} \u03c1 v^2$$ where $$p$$ is the dynamic pressure, \u03c1 is the density of the fluid, and v is the speed of the fluid.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0b4d00fluid8a-h1"
+        ],
+        "title": "Relate the Two Pressure Readings",
+        "text": "Since the altitude (and thus air density \u03c1) remains constant, the ratio of the pressures is proportional to the square of the ratio of the speeds: $$\\frac{p_2}{p_1}=\\left(\\frac{v_2}{v_1}\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$184$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid8a-h2"
+        ],
+        "title": "Calculate the Pressure at the New Speed",
+        "text": "Plug in the values $$v_1=\\frac{200km}{h}$$, $$v_2=\\frac{700km}{h}$$, $$p_1=15mm$$ Hg, and solve for $$p_2$$ in mm Hg. (round to integer)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "adbbf3bpower3a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.003$$"
+        ],
+        "dependencies": [],
+        "title": "Convert to Kilowatt",
+        "text": "What is the power of the clock in Kilowatts?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "adbbf3bpower3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8760$$"
+        ],
+        "dependencies": [],
+        "title": "Hours in a Year",
+        "text": "How many hours are there in a year?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "adbbf3bpower3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.37$$"
+        ],
+        "dependencies": [
+            "adbbf3bpower3a-h1",
+            "adbbf3bpower3a-h2"
+        ],
+        "title": "Solve For the Cost",
+        "text": "Now mulitply everything together to get the amount of money. What is $$0.003\\times8760\\times0.09$$? (keep two decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

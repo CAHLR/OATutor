@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a2e88ferotational11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Rotational Kinetic Energy",
+        "text": "Use the formula for rotational kinetic $$energy:KE=\\frac{1}{2} I {\\omega}^2$$. We need to first calculate for the moment of inertia and then plug in the value to get KE.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$84.375$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational11a-h1"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "The moment of Inertia of the merry-go-round and a child is given by $$I=I_m+I_{child}=\\frac{1}{2} M_m r^2+M_{child} r^2$$. Plug in their masses and the radius to get the moment of Inertia.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$185$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational11a-h2"
+        ],
+        "title": "Calculate the Rotational Kinetic Energy",
+        "text": "Plug in the values and calculate the KE. Remember to convert the angular velocity $$20.0$$ rpm to radians per second first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

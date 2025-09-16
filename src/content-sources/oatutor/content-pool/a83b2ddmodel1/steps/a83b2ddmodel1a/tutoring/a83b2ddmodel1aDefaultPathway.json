@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a83b2ddmodel1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify $$\\frac{Input}{Output}$$",
+        "text": "Think about the variables that are usually assigned to input and output. We are given years, which is time, and this is the input. So, population must be the output.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel1a-h1"
+        ],
+        "title": "Defining y-intercept",
+        "text": "We will define our input, time, as years after $$2004$$. So, given a 6,200 population in $$2004$$, we have the point (0, 2,400), our y-intercept.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel1a-h2"
+        ],
+        "title": "Finding Slope",
+        "text": "Find slope by solving (output2 - output1)/(input2-input1), which gets us (8,100-6,200)/(5-0)=380 $$\\frac{population}{year}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel1a-h3"
+        ],
+        "title": "Writing a Linear Model",
+        "text": "Because we have the y-intercept and the slope, we can write an equation: y=380*x+6,200",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel1a-h4"
+        ],
+        "title": "Applying a Linear Model",
+        "text": "To predict the population in $$2013$$, we recognize that $$2013$$ $$=$$ $$9$$ years after $$2004$$ and $$x=9$$. Plug in to find y=380*9+6,200=9,620",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

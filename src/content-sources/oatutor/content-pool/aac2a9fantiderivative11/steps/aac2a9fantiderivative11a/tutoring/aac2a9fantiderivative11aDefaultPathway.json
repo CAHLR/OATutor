@@ -1,0 +1,62 @@
+[
+    {
+        "id": "aac2a9fantiderivative11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve the Differential Equation",
+        "text": "First, solve the differential equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aac2a9fantiderivative11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-\\frac{1}{2}\\right)}{x^2}+C$$"
+        ],
+        "dependencies": [
+            "aac2a9fantiderivative11a-h1"
+        ],
+        "title": "$$\\int x^{\\left(-3\\right)} \\,dx=$$?",
+        "text": "What is the value of this expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\left(-\\frac{1}{2}\\right)}{x^2}+C$$",
+            "$$\\frac{\\left(-\\frac{1}{2}\\right)}{x^2}$$"
+        ]
+    },
+    {
+        "id": "aac2a9fantiderivative11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac2a9fantiderivative11a-h2"
+        ],
+        "title": "Find the Value of C",
+        "text": "Next, find the value of C that satisfies the condition $$y(1)=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aac2a9fantiderivative11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "aac2a9fantiderivative11a-h3"
+        ],
+        "title": "Evaluate the Expression",
+        "text": "$$C=1+\\frac{1}{2\\times1^2}=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

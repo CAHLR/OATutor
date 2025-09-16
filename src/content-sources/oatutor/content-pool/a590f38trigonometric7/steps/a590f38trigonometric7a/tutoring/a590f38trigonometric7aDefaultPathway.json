@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a590f38trigonometric7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring equation",
+        "text": "Factor the equation so it looks like: $$(2sin\\theta-1)(sin\\theta-1)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric7a-h1"
+        ],
+        "title": "Solving equation",
+        "text": "Now, set each factor equal to $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric7a-h2"
+        ],
+        "title": "Solving equation",
+        "text": "What does sin\u03b8 equal when we solve $$2sin\\theta-1=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric7a-h3"
+        ],
+        "title": "Solving equation",
+        "text": "What does sin\u03b8 equal when we solve $$sin\\theta-1=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric7a-h4"
+        ],
+        "title": "Solving for \u03b8",
+        "text": "Solve each of the equations for \u03b8 using the unit circle. Keep in mind that the domain is $$0 \\leq \\theta<2\\pi$$. Some of the factors may have no solution on the given domain.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

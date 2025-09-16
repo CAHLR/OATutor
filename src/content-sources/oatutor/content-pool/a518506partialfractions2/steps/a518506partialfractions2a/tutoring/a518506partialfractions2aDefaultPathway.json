@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a518506partialfractions2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separating Denominator Factors",
+        "text": "Separate the denominator factors and give each numerator a symbolic label like A and B",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions2a-h1"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "The equation should now look like: $$\\frac{x}{\\left(x-3\\right) \\left(x-2\\right)}=\\frac{A}{x-3}+\\frac{B}{x-2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions2a-h2"
+        ],
+        "title": "Eliminating Fractions",
+        "text": "Multiply both sides of the equation by the common denominator to eliminate the fractions. The resulting equation is $$x=A\\left(x-2\\right)+B\\left(x-3\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions2a-h3"
+        ],
+        "title": "System of Equations",
+        "text": "Expand the right side of the equation and collect like terms, and then set up a system of equations associating corresponding coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions2a-h4"
+        ],
+        "title": "Solving Equations",
+        "text": "The two equations are $$1=A+B$$ and $$0=-2A-3B$$. Add the two equations and solve for B. What is B equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions2a-h5"
+        ],
+        "title": "Solving Equations",
+        "text": "Substitute $$B=-2$$ into one of the original equations in the system and solve for A. What is A equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions2a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3}{x-3}-\\frac{2}{x-2}$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions2a-h6"
+        ],
+        "title": "Partial Fraction Decomposition",
+        "text": "What is the partial fraction decomposition after plugging in the values for A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3}{x-3}-\\frac{2}{x-2}$$",
+            "$$\\frac{3}{x-3}+\\frac{2}{x-2}$$",
+            "3x/(x-3)-2/(x-2))",
+            "$$\\frac{2}{x-3}+\\frac{1}{x-2}$$"
+        ]
+    }
+]

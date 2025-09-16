@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a0b4d00fluid6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for volume flow rate: $$Q=A v$$ where Q is the volume flow rate, A is the cross-sectional area, and v is the speed of the flow.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.08$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid6a-h1"
+        ],
+        "title": "Convert the Flow Rate from $$\\frac{L}{s}$$ to m\u00b3/s",
+        "text": "Since $$1L=0.001m^3$$, what is $$\\frac{80L}{s}$$ in $$\\frac{m^3}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.00636$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid6a-h2"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "What is $$A={pir}^2=A=\\pi \\left(9cm\\right)^2$$ in $$m^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$0.00636$$",
+            "$$0.045$$",
+            "$$254.5$$",
+            "$$0.636$$"
+        ]
+    },
+    {
+        "id": "a0b4d00fluid6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12.6$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid6a-h2",
+            "a0b4d00fluid6a-h3"
+        ],
+        "title": "Calculate the Speed of the River",
+        "text": "Using the formula Q $$=$$ A \u00d7 v, solve for v: $$v=\\frac{Q}{A}=\\frac{0.08}{0.00636}=$$? in $$\\frac{m}{s}$$ (keep one decimal place)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

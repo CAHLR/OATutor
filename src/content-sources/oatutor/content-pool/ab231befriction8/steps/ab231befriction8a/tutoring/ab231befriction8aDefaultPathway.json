@@ -1,0 +1,86 @@
+[
+    {
+        "id": "ab231befriction8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Friction Formula",
+        "text": "Recall the friction formula: f $$=$$ \\mu * N.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction8a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Coefficient of Friction",
+        "text": "Recall the coefficient of static friction between steel and ice is $$0.04$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$637$$"
+        ],
+        "dependencies": [
+            "ab231befriction8a-h1"
+        ],
+        "title": "Use Newton's Second Law to Calculate Normal Force",
+        "text": "By Newton's Second Law (F=m*a), we have $$N=m g$$. What is the normal force (in Newtons)? What is $$N=m g=65kg$$ * $$9.8$$ $$\\frac{m}{s^2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25.48$$"
+        ],
+        "dependencies": [
+            "ab231befriction8a-h2",
+            "ab231befriction8a-h3"
+        ],
+        "title": "Solve for f",
+        "text": "Using the f and \\mu that we found, solve for f in newtons. What is f=\\mu*N=0.04*637? (keep $$2$$ digit after the decimal point)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab231befriction8a-h4"
+        ],
+        "title": "Newton's Second Law",
+        "text": "Use Newton's Second Law (F=m*a) to find the acceleration.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.39$$"
+        ],
+        "dependencies": [
+            "ab231befriction8a-h5"
+        ],
+        "title": "Find the Acceleration",
+        "text": "Solve for a (in $$\\frac{m}{s^2}$$, rounded to $$2$$ decimal places): $$a=\\frac{F}{m}=\\frac{25.48}{65}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

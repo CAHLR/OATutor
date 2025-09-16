@@ -1,0 +1,213 @@
+[
+    {
+        "id": "aaaec44conf9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What to Solve For",
+        "text": "Find $$n$$ where $$n$$ $$=$$ $$\\frac{z^2 p'q'}{{EBP}^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaaec44conf9a-h1"
+        ],
+        "title": "Z Equation",
+        "text": "To find Z, solve for $$\\frac{Z_\u03b1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.645$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h1",
+            "aaaec44conf9a-h2"
+        ],
+        "title": "Solving for $$z$$",
+        "text": "What is $$\\frac{z_\u03b1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "aaaec44conf9a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for \ud835\udefc",
+                "text": "\ud835\udefc $$=$$ $$1$$ - CL. Given that CL $$=$$ $$0.90$$, what is \ud835\udefc?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "aaaec44conf9a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.05$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for $$\\frac{\u03b1}{2}$$",
+                "text": "What is $$\\frac{\u03b1}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "aaaec44conf9a-h3-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1.645$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for $$\\frac{Z_\u03b1}{2}$$",
+                "text": "What is Z_0.05?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "aaaec44conf9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.03$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h1"
+        ],
+        "title": "EBP Equation",
+        "text": "What is EBP?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaaec44conf9a-h1"
+        ],
+        "title": "Solving for p' and q'",
+        "text": "Test different products between p' and q' that results in the largest product.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h5"
+        ],
+        "title": "Testing Products",
+        "text": "What is the value of p' and q'?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h6"
+        ],
+        "title": "Testing Products Explanation",
+        "text": "Suppose we test the products of p' and q' as $$(0.6)(0.4)$$ $$=$$ $$0.24$$, $$(0.3)(0.7)$$ $$=$$ $$0.21$$, $$(0.2)(0.8)$$ $$=$$ $$0.16$$ and so on. What is the largest possible product?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "aaaec44conf9a-h7-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.25$$"
+                ],
+                "dependencies": [],
+                "title": "Largest Possible Product",
+                "text": "If p' $$=$$ $$0.5$$ and q' $$=$$ $$0.5$$, what is the product (p' * q')?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "aaaec44conf9a-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plugging in Variables",
+        "text": "Plug $$z$$, p', q', and EBP into the equation $$n$$ $$=$$ (z\u00b2p'q')/EBP\u00b2.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$751.7$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h8"
+        ],
+        "title": "Solving for $$n$$",
+        "text": "What is $$n$$ $$=$$ $$\\frac{z^2 p'q'}{{EBP}^2}$$ where $$z$$ $$=$$ $$1.645$$, p' $$=$$ $$0.5$$, q' $$=$$ $$0.5$$, and EBP $$=$$ $$0.03$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaaec44conf9a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$752$$"
+        ],
+        "dependencies": [
+            "aaaec44conf9a-h9"
+        ],
+        "title": "Rounding $$n$$",
+        "text": "The answer is a sample size of the number of cell phone customers, meaning that it must be a whole number. What is $$n$$ rounded to the next whole number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

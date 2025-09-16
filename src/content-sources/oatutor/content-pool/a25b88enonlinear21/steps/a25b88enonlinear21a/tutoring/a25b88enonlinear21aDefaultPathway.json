@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a25b88enonlinear21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Since the first equation already expresses $$y$$ in terms of $$x$$, substitute the first equation into the second equation for an equation only in terms of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^2=9$$"
+        ],
+        "dependencies": [
+            "a25b88enonlinear21a-h1"
+        ],
+        "title": "Substituted Expression",
+        "text": "What is the resulting expression in terms of only $$x$$ after simplifying?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear21a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "To solve for the value(s) of $$x$$, isolate the variable from the equation. Note the positive and negative answers resulting from taking a square root.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear21a-h3"
+        ],
+        "title": "Values of $$y$$",
+        "text": "To solve for the two values of $$y$$, substitute each of the $$x$$ values into the first equation of $$y=x$$. The value of $$x$$ and $$y$$ should be equal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear21a-h4"
+        ],
+        "title": "Larger x-coordinate",
+        "text": "Out of the two possible solution points, choose the point with the larger positive coordinate for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
