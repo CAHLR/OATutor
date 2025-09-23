@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a3d3e89log23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Variables",
+        "text": "$$f=8$$, $$t=2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log23a-h1"
+        ],
+        "title": "Substitute",
+        "text": "$$\\operatorname{log2}\\left(\\frac{8^2}{2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log23a-h2"
+        ],
+        "title": "Simplify",
+        "text": "log2(32)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log23a-h3"
+        ],
+        "title": "Change of Base",
+        "text": "Knowing log2(32) is of base $$2$$, rewrite $$32$$ as $$2$$ to a power.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log23a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$\\operatorname{log2}\\left(2^5\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
