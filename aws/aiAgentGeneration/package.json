@@ -1,0 +1,20 @@
+{
+  "name": "oatutor-aws-lambda-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Agent chatbot for OATutor - provides TA-like assistance to students",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.mjs",
+    "deploy": "echo 'Deploy to AWS Lambda'"
+  },
+  "keywords": ["oatutor", "ai", "agent", "chatbot", "tutoring"],
+  "author": "Gilbert Harijanto",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.70.2"
+  }
+}
