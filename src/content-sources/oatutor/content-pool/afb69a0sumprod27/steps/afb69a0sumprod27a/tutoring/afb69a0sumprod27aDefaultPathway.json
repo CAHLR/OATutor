@@ -1,0 +1,58 @@
+[
+    {
+        "id": "afb69a0sumprod27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Sine and Cosine",
+        "text": "To evaluate, rewrite the product of cosine and sine as a sum or difference using the following formula: cos(a)sin(b)=1/2[sin(a+b)-sin(a-b)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod27a-h1"
+        ],
+        "title": "Identifying Unknown Angles",
+        "text": "From the formula, what is the value of the unknown angle a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod27a-h2"
+        ],
+        "title": "Identifying Unknown Angles",
+        "text": "From the formula, what is the value of the unknown angle $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod27a-h3"
+        ],
+        "title": "Evaluating the Product",
+        "text": "Plug in the identified values of a and $$b$$ into the product-to-sum formula. Leave the answer unsimplified, including sine in the final answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

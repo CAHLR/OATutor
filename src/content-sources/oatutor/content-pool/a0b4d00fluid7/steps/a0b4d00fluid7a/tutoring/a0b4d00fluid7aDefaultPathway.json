@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a0b4d00fluid7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for volume flow rate: $$Q=A v$$ where Q is the volume flow rate, A is the cross-sectional area, and v is the speed of the flow.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.01\\times{10}^{\\left(-4\\right)}$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid7a-h1"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "What is $$A={pir}^2=A=\\pi \\left(1.6cm\\right)^2$$ in $$m^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$7.85\\times{10}^{\\left(-4\\right)}$$",
+            "$$2.01\\times{10}^{\\left(-4\\right)}$$",
+            "$$5\\times{10}^{\\left(-5\\right)}$$",
+            "$$2.01\\times{10}^{\\left(-2\\right)}$$"
+        ]
+    },
+    {
+        "id": "a0b4d00fluid7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.402$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid7a-h2"
+        ],
+        "title": "Calculate the Volume Flow Rate in Cubic Meters per Second",
+        "text": "What is $$Q=A v=\\frac{2.01\\times{10}^{\\left(-4\\right)} m^2\\times2 m}{s}$$ in $$\\frac{L}{s}$$? (Remember to convert unit to L/s)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

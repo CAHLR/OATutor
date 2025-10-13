@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a005bd5real18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area Function",
+        "text": "We will make a function for the area of a circle: $$A(r)={pir}^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real18a-h1"
+        ],
+        "title": "Function Composition",
+        "text": "Since we are given $$r(t)=2t+1$$, to have the area as a function of time, we will plug in r(t) for $$r$$ as A(r(t)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real18a-h2"
+        ],
+        "title": "Substitute",
+        "text": "$$A(r(t))=\\pi \\left(2t+1\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real18a-h3"
+        ],
+        "title": "Substitute",
+        "text": "For $$t=2$$, $$A(r(2))=\\pi \\left(4+1\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real18a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$A(r(2))=\\pi \\left(4+1\\right)^2=25\\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "af36e21FunNota17e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating functions",
+        "text": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af36e21FunNota17e-h2",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota17e-h1"
+        ],
+        "title": "Replacement",
+        "text": "Replace the variable $$x$$ with a + $$h$$, and we get $$f{\\left(a+h\\right)}=\\sqrt{2-a+h}+5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af36e21FunNota17e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2-a-h}+5$$"
+        ],
+        "dependencies": [
+            "af36e21FunNota17e-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expression $$\\sqrt{2-a+h}+5$$. What do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a1a1ee1measure13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert",
+        "text": "Multiply by a unit conversion factor relating km and mi.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.61$$"
+        ],
+        "dependencies": [
+            "a1a1ee1measure13a-h1"
+        ],
+        "title": "Convert",
+        "text": "How many km are in one mile?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a1ee1measure13a-h2"
+        ],
+        "title": "Multiply",
+        "text": "Multiply $$100$$ km by $$1$$ $$\\frac{mile}{1.61}$$ km (km should be in the denominator so that km will divide out).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$62$$"
+        ],
+        "dependencies": [
+            "a1a1ee1measure13a-h3"
+        ],
+        "title": "Multiply",
+        "text": "What do we get after the multiplication?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

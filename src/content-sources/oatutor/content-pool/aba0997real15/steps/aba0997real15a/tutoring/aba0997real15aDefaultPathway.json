@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aba0997real15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolating our absolute value equation",
+        "text": "We want to get our equation in the form |A| $$=$$ B, which we are in, so do nothing.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u2223(1/3)*x+5\u2223=14"
+        ],
+        "dependencies": [
+            "aba0997real15a-h1"
+        ],
+        "title": "What is our new equation?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real15a-h2"
+        ],
+        "title": "Cases",
+        "text": "We can split the equation up into two cases, mainly $$\\frac{1}{3} x+5=14$$ and $$\\frac{1}{3} x+5=-14$$, by definition of absolute value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real15a-h3"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$\\frac{1}{3} x+5=14$$, subtract $$5$$ from both sides and divide by $$\\frac{1}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27$$"
+        ],
+        "dependencies": [
+            "aba0997real15a-h4"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real15a-h5"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$\\frac{1}{3} x+5=-14$$, subtract $$5$$ from both sides and divide by $$\\frac{1}{3}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real15a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-57$$"
+        ],
+        "dependencies": [
+            "aba0997real15a-h6"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

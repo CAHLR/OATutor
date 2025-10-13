@@ -1,0 +1,118 @@
+[
+    {
+        "id": "a161552dividingpoly1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division",
+        "text": "Divide the leading term in the dividend by the leading term of the divisor. $$\\frac{x^2}{x}=x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h1"
+        ],
+        "title": "Multiplication",
+        "text": "Multiply the result by the divisor. $$x \\left(x+8\\right)=x^2+8x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h2"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract the divident from the result. $$x^2+11x+16-x^2+8x=3x+16$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h3"
+        ],
+        "title": "Division",
+        "text": "Divide the leading term of the remainder. $$\\frac{3x}{x}=3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h4"
+        ],
+        "title": "Multiplication",
+        "text": "Multiply the result by the divisor. $$3\\left(x+8\\right)=3x+24$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract the remainder from the new result. $$3x+16-3x+24=-8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividingpoly1a-h6"
+        ],
+        "title": "Remainder",
+        "text": "Since the degree of the remainder is less than the divisor, our last term is $$\\frac{-8}{x+8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3-\\frac{8}{x+8}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly1a-h7"
+        ],
+        "title": "Division",
+        "text": "What is our final result after combining all the terms?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3-\\frac{8}{x+8}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly1a-h8"
+        ],
+        "title": "Division",
+        "text": "$$x+3-\\frac{8}{x+8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

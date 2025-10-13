@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a73b129counting27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arrangement Formula",
+        "text": "The formula for finding the number of arrangements with repeated elements is (n!)/((r base 1)!*(r base k)!), where $$n$$ is the total number of elements and (r base 1),...,(r base k) are the frequencies of the repeated elements.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a73b129counting27a-h1"
+        ],
+        "title": "Repeated Lettings",
+        "text": "Since most of the letters are only repeated once, the denominator only needs to be the factorials of the letters repeated more than once. How many letters show up more than once?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a73b129counting27a-h2"
+        ],
+        "title": "Counting Letters",
+        "text": "How many letters are in \"juggernaut\"?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting27a-h3"
+        ],
+        "title": "Using the Formula",
+        "text": "Now, factorialize the frequencies and plug them into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

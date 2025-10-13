@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1c9712Sim12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify Expression",
+        "text": "Simplify the numerator and denominator by finding a common denominator and multiplying each fraction by the denominator over the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1c9712Sim12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1c9712Sim12a-h1"
+        ],
+        "title": "Distribute",
+        "text": "Distribute the products in the fraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1c9712Sim12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\left(x-6\\right)}{4\\left(x+6\\right)-4}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim12a-h2"
+        ],
+        "title": "Simplify Expression",
+        "text": "Simplify the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1c9712Sim12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1c9712Sim12a-h3"
+        ],
+        "title": "Common Factors",
+        "text": "We can then remove common factors after we multiply.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1c9712Sim12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-6}{2\\left(x+5\\right)}$$"
+        ],
+        "dependencies": [
+            "a1c9712Sim12a-h4"
+        ],
+        "title": "Simplify Expression",
+        "text": "When we simplify, what is our answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

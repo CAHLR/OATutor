@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aba0997real9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolating our absolute value equation",
+        "text": "We want to get our equation in the form |A| $$=$$ B, so first add $$7$$ and divide by $$5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "|x-4|=9/5"
+        ],
+        "dependencies": [
+            "aba0997real9a-h1"
+        ],
+        "title": "What is our new equation?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real9a-h2"
+        ],
+        "title": "Cases",
+        "text": "We can split the equation up into two cases, mainly $$|x-4|=\\frac{9}{5}$$ and $$|x-4|=\\frac{-9}{5}$$, by definition of absolute value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real9a-h3"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$x-4=\\frac{9}{5}$$, add $$4$$ to both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{29}{5}$$"
+        ],
+        "dependencies": [
+            "aba0997real9a-h4"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real9a-h5"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$x-4=\\frac{-9}{5}$$, add $$4$$ to both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11}{5}$$"
+        ],
+        "dependencies": [
+            "aba0997real9a-h6"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

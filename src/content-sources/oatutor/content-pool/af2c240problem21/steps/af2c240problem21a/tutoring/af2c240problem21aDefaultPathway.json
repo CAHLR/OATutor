@@ -1,0 +1,58 @@
+[
+    {
+        "id": "af2c240problem21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Conservation of Energy",
+        "text": "At the top of the arc, the ship's kinetic energy is zero, and all of its energy is potential energy. At the bottom of the arc, all of the energy is kinetic energy: PE_{top} $$=$$ KE_{bottom}. Use conservation of energy to find the radius of path of the ship.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.94$$"
+        ],
+        "dependencies": [
+            "af2c240problem21a-h1"
+        ],
+        "title": "Apply Conservation of Mechanical Energy",
+        "text": "As $$$$ PE_{top} $$=$$ $$m$$ \\cdot g \\cdot h=KE_{bottom} $$=$$ \\frac{1}{2} \\cdot $$m$$ \\cdot $$v^2$$ $$$$, $$solve$$ $$for$$ $$r$$ $$in$$ $$meter$$: $$$$ $$r$$ $$=$$ \\frac{v**2}{2 \\cdot g} $$$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af2c240problem21a-h2"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is $$a_c=v^2 r$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19.6$$"
+        ],
+        "dependencies": [
+            "af2c240problem21a-h3"
+        ],
+        "title": "Calculate the Centripetal Acceleration",
+        "text": "Plug into values to calculate $$a_c$$. What is a_c=\\frac{(23.4\\text{m/s})**2}{27.94\\text{m}}?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

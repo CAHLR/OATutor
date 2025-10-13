@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aadff92AppQuad15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Up Equation For Problem",
+        "text": "Since it is a right triangle, we can employ pythagorean theorem. $$a^2+b^2=c^2$$ where a and $$b$$ are legs of triangles and c is the hypotenuse. Let $$x$$ be the length of unknown leg. We can set up the equation as $$3^2+x^2=\\left(2x\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad15a-h1"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-1.73,1.73)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad15a-h2"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "$$3^2+x^2=\\left(2x\\right)^2$$ Solve for $$x$$ using the quadratic formula and round $$x$$ to the nearest hundredth. If there is more than one solution for $$x$$, please enter your answer as (a,b) where $$a<b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad15a-h3"
+        ],
+        "title": "Solve For Unknown Using Quadratic Formula",
+        "text": "Since the length of the side of a triangle has to be positive, we can omit the negative answer. Therefore the length of one side of the triangle is $$1.73$$. The hypotenuse is twice the length which is $$3.46$$. We need to round the final answer to the nearest tenth, so the length of the side is $$1.7$$ and the length of the hypotenuse is $$3.5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

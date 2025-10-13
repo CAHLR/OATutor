@@ -1,0 +1,80 @@
+[
+    {
+        "id": "adb00fecramers12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determinant Expansion",
+        "text": "Use cofactor expansion along row $$1$$. det $$=$$ a11 * M11 - a12 * M12 + a13 * M13",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-70$$"
+        ],
+        "dependencies": [
+            "adb00fecramers12a-h1"
+        ],
+        "title": "Find M11",
+        "text": "Det([2, -8; $$-8$$, -3]) $$=$$ $$2\\left(-3\\right)$$ - $$\\left(-8\\right) \\left(-8\\right)$$ $$=$$ $$-6$$ - $$64$$ $$=$$ $$-70$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-35$$"
+        ],
+        "dependencies": [
+            "adb00fecramers12a-h2"
+        ],
+        "title": "Find M12",
+        "text": "Det([1, -8; $$-4$$, -3]) $$=$$ $$1\\left(-3\\right)$$ - $$\\left(-8\\right) \\left(-4\\right)$$ $$=$$ $$-3$$ - $$32$$ $$=$$ $$-35$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "adb00fecramers12a-h3"
+        ],
+        "title": "Find M13",
+        "text": "Det([1, 2; $$-4$$, -8]) $$=$$ $$1\\left(-8\\right)$$ - $$2\\left(-4\\right)$$ $$=$$ $$-8$$ + $$8$$ $$=$$ $$0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$56$$"
+        ],
+        "dependencies": [
+            "adb00fecramers12a-h4"
+        ],
+        "title": "Compute determinant",
+        "text": "$$-2\\left(-70\\right)$$ - $$\\left(-4\\right) \\left(-35\\right)$$ + $$2\\times0$$ $$=$$ $$140$$ - $$140$$ + $$0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

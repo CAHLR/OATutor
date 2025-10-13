@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ad047cddynamics10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate Tension in the Rope",
+        "text": "Given that in equilibrium vertical tensions from left and right side it the rope evens out weight (2T-vertical $$=$$ mg), and the strand sags $$12$$ degrees below $$(T-vertical=sin(12$$ degrees)*T), solve for T.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad047cddynamics10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.89\\times{10}^{\\left(-3\\right)}$$"
+        ],
+        "dependencies": [
+            "ad047cddynamics10a-h1"
+        ],
+        "title": "Calculate Tension in the Rope",
+        "text": "What is 8.00*10**(-5)*9.8/2/sin(12 degrees)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a005bd5real14a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "p=6"
+        ],
+        "dependencies": [],
+        "title": "Define Variables",
+        "text": "What is the given price assigned to $$p$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=amount of items"
+        ],
+        "dependencies": [],
+        "title": "Define Variables",
+        "text": "What does the production cost, C(x), take as its input?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "D(p)"
+        ],
+        "dependencies": [
+            "a005bd5real14a-h2"
+        ],
+        "title": "Define Variables",
+        "text": "Since C(x) doesn't take price, but instead $$x=amount$$ of items, how do we get from $$p$$ to amount of items?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real14a-h3"
+        ],
+        "title": "Composition of Functions",
+        "text": "D(p) gives us the amount of items demanded from $$p=6$$, which we will then put into C(x) to get the cost of production.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

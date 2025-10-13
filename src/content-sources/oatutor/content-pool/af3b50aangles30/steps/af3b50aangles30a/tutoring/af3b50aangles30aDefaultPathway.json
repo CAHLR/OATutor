@@ -1,0 +1,82 @@
+[
+    {
+        "id": "af3b50aangles30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Distance",
+        "text": "To find the distance, we can use the formula for arc length.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles30a-h1"
+        ],
+        "title": "Arc Length Formula",
+        "text": "The formula for arc length is $$r \\theta$$, where $$r$$ is the radius of the Earth and theta is the central angle between the two cities in radians.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles30a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "21\u00b0"
+        ],
+        "dependencies": [
+            "af3b50aangles30a-h2"
+        ],
+        "title": "Difference in Latitudes",
+        "text": "What is the difference in latitudes between the two cities?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "55\u00b0",
+            "28\u00b0",
+            "21\u00b0",
+            "73\u00b0"
+        ]
+    },
+    {
+        "id": "af3b50aangles30a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{60}$$"
+        ],
+        "dependencies": [
+            "af3b50aangles30a-h3"
+        ],
+        "title": "Converting to Radians",
+        "text": "What is the central angle in radians? (divide by 180\u00b0 and multiply by pi)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{7\\pi}{60}$$",
+            "$$\\frac{\\pi}{8}$$",
+            "$$\\frac{\\pi}{10}$$",
+            "$$\\frac{3\\pi}{8}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles30a-h4"
+        ],
+        "title": "Substitution",
+        "text": "Substitute the values into the formula for arc length.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
