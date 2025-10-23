@@ -38,6 +38,8 @@ jobs:
           path: ./build
 
   deploy:
+    environment:
+      name: github-pages
     needs: build
     runs-on: ubuntu-latest
     steps:
