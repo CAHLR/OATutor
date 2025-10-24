@@ -9,6 +9,11 @@
 //     measurementId: "[measurementId]",
 // };
 
+
+// config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+// export default firebase;
+
+
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
@@ -20,7 +25,7 @@ try {
   console.error("Firebase config parse failed. Make sure REACT_APP_FIREBASE_CONFIG is set correctly.", e);
 }
 
-if (!firebase.apps.length) {
+if (!firebase.apps.length && Object.keys(config).length) {
   firebase.initializeApp(config);
 }
 
