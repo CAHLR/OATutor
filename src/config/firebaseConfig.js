@@ -13,8 +13,15 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
-const config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+let config = {};
+try {
+  config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+} catch (e) {
+  console.error("Firebase config parse failed. Make sure REACT_APP_FIREBASE_CONFIG is set correctly.", e);
+}
 
-firebase.initializeApp(config);
+if (!firebase.apps.length) {
+  firebase.initializeApp(config);
+}
 
 export default firebase;
