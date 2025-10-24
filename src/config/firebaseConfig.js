@@ -12,7 +12,7 @@
 
 config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
 
-export default firebase;
+export default config;
 
 
 // import firebase from "firebase/compat/app";
