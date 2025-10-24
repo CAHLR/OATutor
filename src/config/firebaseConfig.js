@@ -9,11 +9,12 @@
 //     measurementId: "[measurementId]",
 // };
 
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/auth";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+import "firebase/compat/auth";
 
 const config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+
 firebase.initializeApp(config);
 
-export default config;
+export default firebase;
