@@ -10,7 +10,7 @@
 // };
 
 
-config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+const config = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
 
 export default config;
 
