@@ -32,7 +32,6 @@ jobs:
         env:
           CI: false
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
-          REACT_APP_BUILD_TYPE: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
