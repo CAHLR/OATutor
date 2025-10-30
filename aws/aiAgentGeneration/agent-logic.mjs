@@ -1,11 +1,3 @@
-/**
- * Shared agent logic for both local testing and Lambda deployment
- * This contains all the core AI agent functionality
- */
-
-/**
- * Analyze student's current state and identify areas of struggle
- */
 export function analyzeStudentState(studentState, problemContext) {
     const analysis = {
         strugglingWith: [],
@@ -14,13 +6,11 @@ export function analyzeStudentState(studentState, problemContext) {
         confidenceLevel: "unknown"
     };
 
-    // Analyze attempt patterns
     if (studentState.attemptCount > 3) {
         analysis.strugglingWith.push("multiple_attempts");
         analysis.confidenceLevel = "low";
     }
 
-    // Analyze skill mastery levels
     if (studentState.skillMastery) {
         const lowMasterySkills = Object.entries(studentState.skillMastery)
             .filter(([skill, level]) => level < 0.5)
@@ -31,11 +21,9 @@ export function analyzeStudentState(studentState, problemContext) {
         }
     }
 
-    // Analyze current answer patterns
     if (studentState.currentAnswer) {
         const answer = studentState.currentAnswer.toLowerCase();
         
-        // Common mistake patterns
         if (answer.includes("x + x + x") && problemContext.currentStep?.correctAnswer?.includes("x + (x+1) + (x+2)")) {
             analysis.commonMistakes.push("consecutive_integers_concept");
             analysis.suggestedApproach = "explain_consecutive_integers";
@@ -50,9 +38,6 @@ export function analyzeStudentState(studentState, problemContext) {
     return analysis;
 }
 
-/**
- * Build intelligent prompt for the AI agent
- */
 export function buildAgentPrompt({ userMessage, problemContext, studentState, studentAnalysis, conversationHistory, agentConfig }) {
     const teachingStyle = agentConfig?.teachingStyle || "socratic";
     const personalityMode = agentConfig?.personalityMode || "encouraging";
@@ -115,50 +100,42 @@ Remember: You're helping them learn, not just get the answer. Guide them to unde
     ];
 }
 
-/**
- * Generate agent response using OpenAI
- */
 export async function generateAgentResponse(openai, prompt, responseStream = null) {
-    try {
-        const stream = await openai.chat.completions.create({
-            model: "gpt-4",
-            messages: prompt,
-            stream: true,
-            temperature: 0.7,
-            max_tokens: 500
-        });
+    const stream = await openai.chat.completions.create({
+        model: "gpt-4",
+        messages: prompt,
+        stream: true,
+        temperature: 0.7,
+        max_tokens: 500
+    });
 
-        let fullResponse = "";
+    let fullResponse = "";
+    
+    for await (const chunk of stream) {
+        const content = chunk.choices[0]?.delta?.content || "";
         
-        for await (const chunk of stream) {
-            const content = chunk.choices[0]?.delta?.content || "";
+        if (content) {
             fullResponse += content;
             
-            // Stream response if responseStream is provided (Lambda)
             if (responseStream) {
                 responseStream.write(JSON.stringify({
                     type: "content",
                     content: content,
                     timestamp: Date.now()
-                }));
+                }) + '\n');
             } else {
-                // Direct output for local testing
                 process.stdout.write(content);
             }
         }
-
-        // Send completion signal if responseStream is provided
-        if (responseStream) {
-            responseStream.write(JSON.stringify({
-                type: "complete",
-                fullResponse: fullResponse,
-                timestamp: Date.now()
-            }));
-        }
-
-        return fullResponse;
-    } catch (error) {
-        console.error("Error generating agent response:", error);
-        throw error;
     }
+
+    if (responseStream) {
+        responseStream.write(JSON.stringify({
+            type: "complete",
+            fullResponse: fullResponse,
+            timestamp: Date.now()
+        }) + '\n');
+    }
+
+    return fullResponse;
 }

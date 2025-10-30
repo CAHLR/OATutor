@@ -13,8 +13,15 @@
   "author": "Gilbert Harijanto",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@hapi/validate": "^2.0.1",
+    "@types/node": "^22.8.7",
+    "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1692.0",
     "dotenv": "^16.4.5",
-    "openai": "^4.70.2"
+    "node-fetch": "^3.3.2",
+    "openai": "^4.70.2",
+    "serverless-offline": "^14.3.3"
   }
 }

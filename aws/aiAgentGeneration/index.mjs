@@ -1,27 +1,43 @@
-"use strict";
-
 import dotenv from "dotenv";
 import OpenAI from "openai";
-// AWS SDK is built into Lambda, no need to import
+import AWS from "aws-sdk";
 import { analyzeStudentState, buildAgentPrompt, generateAgentResponse } from "./agent-logic.mjs";
 
-// Load environment variables from .env file
 dotenv.config();
 
-console.log("AI Agent Lambda started");
-
-// Initialize AWS clients (uses built-in AWS SDK)
-import AWS from 'aws-sdk';
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
-
-// Initialize OpenAI
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export const handler = awslambda.streamifyResponse(
     async (event, responseStream, _context) => {
-        console.log("Agent request started:", event);
+        const httpMethod = event.requestContext?.http?.method || 
+                          event.httpMethod || 
+                          event.method ||
+                          event.requestContext?.method;
+        
+        const isOptionsRequest = httpMethod === 'OPTIONS' || 
+                                event.requestContext?.http?.method === 'OPTIONS' ||
+                                event.httpMethod === 'OPTIONS' ||
+                                event.method === 'OPTIONS';
+        
+        if (isOptionsRequest) {
+            const metadata = {
+                statusCode: 200,
+                headers: {
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+                    "Access-Control-Allow-Headers": "Content-Type,Authorization,Origin",
+                    "Access-Control-Max-Age": "86400",
+                    "Content-Type": "application/json"
+                },
+            };
+            const httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
+            httpResponseStream.write("");
+            httpResponseStream.end();
+            return;
+        }
+
+        let httpResponseStream;
 
         try {
             const requestBody = JSON.parse(event.body);
@@ -34,29 +50,25 @@ export const handler = awslambda.streamifyResponse(
                 agentConfig = {}
             } = requestBody;
 
-            const startTime = process.hrtime();
-
-            // Set up response metadata
             const metadata = {
                 statusCode: 200,
                 headers: {
                     "Content-Type": "application/json",
                     "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
-                    "Access-Control-Allow-Headers": "Origin, Content-Type, Authorization",
+                    "Access-Control-Allow-Headers": "Origin,Content-Type,Authorization",
+                    "Transfer-Encoding": "chunked",
+                    "X-Content-Type-Options": "nosniff"
                 },
             };
 
-            responseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
+            httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
-            // Load existing conversation from DynamoDB
             const existingConversation = await loadConversationHistory(sessionId);
             const fullConversationHistory = [...existingConversation, ...conversationHistory];
 
-            // Analyze student state and build context
             const studentAnalysis = analyzeStudentState(studentState, problemContext);
             
-            // Build intelligent prompt
             const agentPrompt = buildAgentPrompt({
                 userMessage,
                 problemContext,
@@ -66,72 +78,69 @@ export const handler = awslambda.streamifyResponse(
                 agentConfig
             });
 
-            // Generate response
-            const response = await generateAgentResponse(openai, agentPrompt, responseStream);
+            const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream);
 
-            // Update conversation history in DynamoDB
-            await updateConversationHistory(sessionId, userMessage, response);
-
-            // Log execution time
-            const hrTime = process.hrtime(startTime);
-            const totalSeconds = hrTime[0] + hrTime[1] / 1e9;
-            console.log(`Agent execution time: ${totalSeconds.toFixed(2)} seconds`);
+            if (response) {
+                await updateConversationHistory(sessionId, userMessage, response);
+            }
 
         } catch (error) {
             console.error("Agent error:", error);
-            responseStream.write(JSON.stringify({
-                error: error.message,
-                type: "error"
-            }));
+            if (httpResponseStream) {
+                httpResponseStream.write(JSON.stringify({
+                    error: error.message,
+                    type: "error"
+                }));
+            }
         } finally {
-            responseStream.end();
+            if (httpResponseStream) {
+                httpResponseStream.end();
+            }
         }
     }
 );
 
-/**
- * Load conversation history from DynamoDB
- */
 async function loadConversationHistory(sessionId) {
     try {
         const params = {
             TableName: process.env.CONVERSATION_TABLE_NAME || "agent-conversations",
-            Key: {
-                sessionId: sessionId
-            }
+            Key: { sessionId: sessionId }
         };
 
         const result = await dynamoClient.get(params).promise();
         return result.Item?.messages || [];
     } catch (error) {
-        console.log("No existing conversation found or error loading:", error.message);
         return [];
     }
 }
 
-/**
- * Update conversation history in DynamoDB
- */
 async function updateConversationHistory(sessionId, userMessage, agentResponse) {
+    if (!agentResponse) return;
+    
     try {
+        const existingMessages = await loadConversationHistory(sessionId);
+        
+        const updatedMessages = [
+            ...existingMessages,
+            {
+                role: "user",
+                content: userMessage,
+                timestamp: Date.now()
+            },
+            {
+                role: "assistant",
+                content: agentResponse,
+                timestamp: Date.now()
+            }
+        ];
+        
         const params = {
             TableName: process.env.CONVERSATION_TABLE_NAME || "agent-conversations",
             Item: {
                 sessionId: sessionId,
-                messages: [
-                    {
-                        role: "user",
-                        content: userMessage,
-                        timestamp: Date.now()
-                    },
-                    {
-                        role: "assistant",
-                        content: agentResponse,
-                        timestamp: Date.now()
-                    }
-                ],
+                messages: updatedMessages,
                 lastUpdated: Date.now(),
-                ttl: Math.floor(Date.now() / 1000) + (24 * 60 * 60) // 24 hours
+                ttl: Math.floor(Date.now() / 1000) + (24 * 60 * 60)
             }
         };
 
@@ -140,6 +149,3 @@ async function updateConversationHistory(sessionId, userMessage, agentResponse) 
         console.error("Error updating conversation history:", error);
     }
 }
-
-
-// Functions moved to agent-logic.mjs for shared use
