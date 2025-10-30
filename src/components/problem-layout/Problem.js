@@ -34,6 +34,7 @@ import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
+import AgentIntegration from './AgentIntegration';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -765,6 +766,22 @@ class Problem extends React.Component {
                         ""
                     )}
                 </footer>
+                
+                {/* AI Agent Integration */}
+                <AgentIntegration
+                    problem={problem}
+                    step={this.props.step}
+                    lesson={this.props.lesson}
+                    courseName={this.props.lesson?.courseName}
+                    inputVal={this.state.inputVal}
+                    isCorrect={this.state.isCorrect}
+                    attempts={this.state.attempts}
+                    hintsFinished={this.state.hintsFinished}
+                    user={this.props.user}
+                    bktParams={this.props.bktParams}
+                    problemVars={this.props.problemVars}
+                    seed={seed}
+                />
             </>
         );
     }
