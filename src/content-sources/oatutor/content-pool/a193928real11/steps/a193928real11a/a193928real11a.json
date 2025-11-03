@@ -3,9 +3,16 @@
     "stepAnswer": [
         "[6, inf)"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Find the domain of the function f(x) $$=$$ $$\\frac{\\sqrt{x-6}}{\\sqrt{x-4}}$$. Represent infinity as $$'inf'$$ and use '[' and ']' for inclusive intervals and '(' and ')' for non-including intervals.",
     "stepBody": "",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "choices": [
+        "$$(6,\\infty)$$",
+        "$$[-\\infty,6)$$",
+        "$$[-\\infty,6]$$",
+        "[6, inf)",
+        "$$[6,\\infty)$$"
+    ]
 }

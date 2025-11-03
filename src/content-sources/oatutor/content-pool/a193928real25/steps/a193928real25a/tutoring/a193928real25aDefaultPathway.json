@@ -12,10 +12,10 @@
     {
         "id": "a193928real25a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "[-4,4]"
+            "$$[-4,4]$$"
         ],
         "dependencies": [
             "a193928real25a-h1"
@@ -24,7 +24,12 @@
         "text": "What is the horizontal extent of the graph? Express it in the form of interval.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$[-4,4]$$",
+            "$$(-4,4)$$",
+            "$$(-4,4]$$"
+        ]
     },
     {
         "id": "a193928real25a-h3",
@@ -41,7 +46,7 @@
     {
         "id": "a193928real25a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
             "[0,2]"
@@ -53,6 +58,11 @@
         "text": "What is the vertical extent of the graph? Express it in the form of interval.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "[0,2]",
+            "$$(0,2)$$",
+            "[0,2)"
+        ]
     }
 ]

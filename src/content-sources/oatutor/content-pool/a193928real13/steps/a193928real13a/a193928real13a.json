@@ -1,12 +1,17 @@
 {
     "id": "a193928real13a",
     "stepAnswer": [
-        "(-inf, -2)\u222a(-2, 3)\u222a(3, inf)"
+        "(-inf, $$-2) \\cup (-2,3) \\cup (3$$, inf)"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Find the domain of the function f(x) $$=$$ $$\\frac{1}{x^2-x-6}$$. Represent infinity as $$'inf'$$ and use '[' and ']' for inclusive intervals and '(' and ')' for non-including intervals.",
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
-    "answerLatex": "(-inf, $$-2) \\cup (-2,3) \\cup (3$$, inf)"
+    "answerLatex": "(-inf, $$-2) \\cup (-2,3) \\cup (3$$, inf)",
+    "choices": [
+        "(-inf, $$-2) \\cup (3$$, inf)",
+        "(-inf, $$-2) \\cup (0,3) \\cup (3$$, inf)",
+        "(-inf, $$-2) \\cup (-2,3) \\cup (3$$, inf)"
+    ]
 }

@@ -12,10 +12,10 @@
     {
         "id": "a193928real20a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(-inf,inf)"
+            "$$(-\\infty,\\infty)$$"
         ],
         "dependencies": [
             "a193928real20a-h1"
@@ -24,6 +24,12 @@
         "text": "What is the interval of $$x$$?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$(-\\infty,\\infty)$$",
+            "$$(-\\infty,\\infty]$$",
+            "$$[-\\infty,\\infty]$$",
+            "$$[-\\infty,\\infty)$$"
+        ]
     }
 ]

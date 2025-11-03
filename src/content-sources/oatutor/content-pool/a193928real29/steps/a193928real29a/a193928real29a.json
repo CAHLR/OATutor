@@ -3,9 +3,16 @@
     "stepAnswer": [
         "(3, inf)"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Find the domain of the function f(x) $$=$$ $$\\frac{5}{\\sqrt{x-3}}$$. Represent infinity as $$'inf'$$ and use '[' and ']' for inclusive intervals and '(' and ')' for non-including intervals.",
     "stepBody": "",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "choices": [
+        "$$(-\\infty,3)$$",
+        "$$(-\\infty,3]$$",
+        "(3, inf)",
+        "$$(3,\\infty)$$",
+        "$$[3,\\infty)$$"
+    ]
 }

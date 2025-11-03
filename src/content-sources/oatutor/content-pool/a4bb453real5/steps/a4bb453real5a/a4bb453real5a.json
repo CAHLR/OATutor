@@ -3,9 +3,15 @@
     "stepAnswer": [
         "local maximum"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Based on the graph given, is the point $$(1.333, 5.185)$$ a: local maximum, vertex, absolute maximum, or zero?",
     "stepBody": "",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "choices": [
+        "local maximum",
+        "local minimum",
+        "vertex",
+        "zero"
+    ]
 }

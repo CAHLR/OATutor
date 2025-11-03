@@ -36,10 +36,10 @@
     {
         "id": "a193928real29a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(3,inf)"
+            "$$(3,\\infty)$$"
         ],
         "dependencies": [
             "a193928real29a-h3"
@@ -48,6 +48,12 @@
         "text": "Solve the inequation $$x-3>0$$. Express the solution in the form of interval.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$(3,\\infty)$$",
+            "$$[3,\\infty)$$",
+            "$$(-\\infty,3]$$",
+            "$$(-\\infty,3)$$"
+        ]
     }
 ]
