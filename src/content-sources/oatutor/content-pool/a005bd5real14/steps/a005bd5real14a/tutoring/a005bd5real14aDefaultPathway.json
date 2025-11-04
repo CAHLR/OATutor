@@ -3,9 +3,9 @@
         "id": "a005bd5real14a-h1",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "p=6"
+            "$$6$$"
         ],
         "dependencies": [],
         "title": "Define Variables",
@@ -17,22 +17,27 @@
     {
         "id": "a005bd5real14a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "x=amount of items"
+            "$$x=amount$$ of items"
         ],
         "dependencies": [],
         "title": "Define Variables",
         "text": "What does the production cost, C(x), take as its input?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$x=amount$$ of items",
+            "$$x=cost$$",
+            "$$x=total$$"
+        ]
     },
     {
         "id": "a005bd5real14a-h3",
         "type": "scaffold",
-        "problemType": "TextBox",
+        "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
             "D(p)"
@@ -44,7 +49,13 @@
         "text": "Since C(x) doesn't take price, but instead $$x=amount$$ of items, how do we get from $$p$$ to amount of items?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "D(x)",
+            "D(c)",
+            "D(p)",
+            "C(D(p))"
+        ]
     },
     {
         "id": "a005bd5real14a-h4",
