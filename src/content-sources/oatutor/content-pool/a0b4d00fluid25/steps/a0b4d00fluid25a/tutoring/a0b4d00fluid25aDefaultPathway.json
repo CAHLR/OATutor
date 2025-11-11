@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a0b4d00fluid25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Gravitational Potential Energy Converted to Power",
+        "text": "$$P=\u03c1ghQ$$ where P is the power in watts (W), \u03c1 is the density of water (1000 kg/m\u00b3), g is the acceleration due to gravity $$(9.81$$ m/s\u00b2), $$h$$ is the height (150 $$m$$ in this case), and Q is the flow rate (650 m\u00b3/s).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$956$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid25a-h1"
+        ],
+        "title": "Calculate the Power",
+        "text": "Substitute the values into the formula and calculate the power P in MW. (round to the nearest integer)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

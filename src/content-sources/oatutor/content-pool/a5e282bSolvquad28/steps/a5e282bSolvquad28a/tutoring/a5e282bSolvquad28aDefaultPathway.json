@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a5e282bSolvquad28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the Perfect Square",
+        "text": "Does the expression match any of these formats: $$\\left(a x\\right)^2+2a b x$$ + $$b^2$$ $$=$$ $$\\left(a x+b\\right)^2$$, $$\\left(a x\\right)^2-2a b x+b^2$$ $$=$$ $$\\left(a x-b\\right)^2$$ ? Yes.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad28a-h1"
+        ],
+        "title": "Factor the Perfect Square",
+        "text": "In this case, we can see that $$25n^2+20n+4$$ as $$\\left(a x\\right)^2+2a b x+b^2=\\left(ax+b\\right)^2$$ where $$ax=5n$$ and $$b=2$$. We can factor $$25n^2+20n+4$$ as $$\\left(5n+2\\right)^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad28a-h2"
+        ],
+        "title": "Rewrite the Equation",
+        "text": "We can rewrite $$25n^2+20n+4=18$$ as $$\\left(5n+2\\right)^2=18$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad28a-h3"
+        ],
+        "title": "Solve for Unknown Variable",
+        "text": "$$\\left(5n+2\\right)^2=18$$. What is $$n$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad28a-h4"
+        ],
+        "title": "Use Square Root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then $$x$$ $$=$$ $$\\sqrt{k}$$, or $$x$$ $$=$$ $$-\\sqrt{k}$$, or $$x$$ $$=\\sqrt{k}$$. $$\\left(5n+2\\right)^2=18$$, we can take square root both sides and get $$5n+2=\\sqrt{18}$$ and $$5n+2=-\\sqrt{18}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{5}+\\frac{3}{5} \\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad28a-h5"
+        ],
+        "title": "Solve for $$n$$ in $$5n+2=\\sqrt{18}$$",
+        "text": "What is $$n$$ when $$5n+2=-\\sqrt{18}$$? Simplify the square root as much as possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{5}-\\frac{3}{5} \\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad28a-h6"
+        ],
+        "title": "Solve for $$n$$ in $$5n+2=-\\sqrt{18}$$",
+        "text": "What is $$n$$ when $$5n+2=\\sqrt{18}$$? Simplify the square root as much as possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad28a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad28a-h7"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$25n^2+20n+4=18$$ has two solutions which are $$n=\\frac{2}{5}+\\frac{3}{5} \\sqrt{2}$$ and $$n=\\frac{2}{5}-\\frac{3}{5} \\sqrt{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

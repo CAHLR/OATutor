@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a0b4d00fluid3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for volume flow rate: $$Q=A v$$ where Q is the volume flow rate, A is the cross-sectional area, and v is the speed of the flow.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$300$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid3a-h1"
+        ],
+        "title": "Convert the Flow Rate from $$\\frac{L}{s}$$ to m\u00b3/s",
+        "text": "What is 300,000 $$\\frac{L}{s}$$ $$=$$ 300,000 \u00d7 $$0.001$$ m\u00b3/s=? in $$\\frac{m^3}{s}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid3a-h2"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "The width of the river w is $$20$$ $$m$$, and the depth\\n$$d$$ is $$20$$ $$m$$. The cross-sectional area, A, is given by: A $$=$$ w \u00d7 $$d$$. Calculate A in $$m^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.75$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid3a-h2",
+            "a0b4d00fluid3a-h3"
+        ],
+        "title": "Calculate the Speed of the River",
+        "text": "Using the formula Q $$=$$ A \u00d7 v, solve for v: $$v=\\frac{Q}{A}=\\frac{300}{400}=$$? in $$\\frac{m}{s}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

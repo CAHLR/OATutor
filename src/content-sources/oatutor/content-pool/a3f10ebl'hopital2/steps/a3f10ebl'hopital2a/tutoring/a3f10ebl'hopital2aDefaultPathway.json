@@ -1,0 +1,214 @@
+[
+    {
+        "id": "a3f10ebl'hopital2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Operation",
+        "text": "Let $$y=x^x$$. Using one-to-one property of logarithms, we obtain $$ln(y)=\\ln\\left(x^x\\right)$$. According to the Power Properties of Logarithms, the expression can be written as $$ln(y)=x \\ln\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h1"
+        ],
+        "title": "Operation",
+        "text": "If we immediately evaluate the limit of the given function, the result would be $$0^0$$ which is not the indeterminate form we need in order to apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h2"
+        ],
+        "title": "Operation",
+        "text": "We set up a new limit based on the function we just created $$\\lim_{x\\to0} x \\ln\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h3"
+        ],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\ln\\left(x\\right)}{\\frac{1}{x}}$$"
+        ],
+        "dependencies": [
+            "a3f10ebl'hopital2a-h4"
+        ],
+        "title": "Rearrange the expression",
+        "text": "The purpose of rearranging an expression is to make it fit the indeterminate form and from there we can apply L\u2019H\u00f4pital\u2019s Rule. Using the Negative Exponents Law, how can we rearrange the new expression so that it could fit the indeterminate form?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{\\ln\\left(x\\right)}{\\frac{1}{x}}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\frac{1}{\\ln\\left(x\\right)}}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a3f10ebl'hopital2a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Rearrange the expression",
+                "text": "$$\\lim_{x\\to0} \\frac{\\ln\\left(x\\right)}{x^{\\left(-1\\right)}}=\\lim_{x\\to0} \\frac{\\ln\\left(x\\right)}{\\frac{1}{x}}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a3f10ebl'hopital2a-h5-s2",
+                "type": "hint",
+                "dependencies": [
+                    "a3f10ebl'hopital2a-h5-s1"
+                ],
+                "title": "Rearrange the expression",
+                "text": "Note that the other way of rearrangement does not give us a proper indeterminate form.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h5"
+        ],
+        "title": "Substitute the limit",
+        "text": "$$\\frac{\\ln\\left(0\\right)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h6"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(\\ln\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(\\frac{1}{x}\\right)}=\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
+        ],
+        "dependencies": [
+            "a3f10ebl'hopital2a-h7"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{x}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{\\frac{1}{x^2}}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{x^2}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
+        ]
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h8"
+        ],
+        "title": "Rearrange the expression",
+        "text": "$$\\lim_{x\\to0} \\frac{\\frac{1}{x}}{-\\left(\\frac{1}{x^2}\\right)}=\\lim_{x\\to0} -x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h9"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$-(0)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h1",
+            "a3f10ebl'hopital2a-h10"
+        ],
+        "title": "Operation",
+        "text": "We set $$ln(y)=x \\ln\\left(x\\right)$$ in the very first step therefore we can obtain $$\\lim_{x\\to0} x \\ln\\left(x\\right)=\\lim_{x\\to0} ln(y)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h11"
+        ],
+        "title": "Limit of Logarithm Rule",
+        "text": "$$\\lim_{x\\to0} ln(y)=ln(\\lim_{x\\to0} (y))=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h12"
+        ],
+        "title": "Properties of Exponents and Natural Logarithms",
+        "text": "$$ln(\\lim_{x\\to0} (y))=\\lim_{x\\to0} (y)=e^0=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3f10ebl'hopital2a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a3f10ebl'hopital2a-h1",
+            "a3f10ebl'hopital2a-h13"
+        ],
+        "title": "Conclusion",
+        "text": "$$/lim{x,0,(y)=\\lim_{x\\to0} x^x=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a5d54dagcf1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring",
+        "text": "The first step is to factor out the primes of all the coefficients and write the variables with exponents in expanded form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5d54dagcf1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "3,7"
+        ],
+        "dependencies": [
+            "a5d54dagcf1a-h1"
+        ],
+        "title": "Factoring",
+        "text": "What are the prime factors of 21? (Write with commas in between numbers and no spaces)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5d54dagcf1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "3,3"
+        ],
+        "dependencies": [
+            "a5d54dagcf1a-h1"
+        ],
+        "title": "Factoring",
+        "text": "What are the prime factors of 9? (Write with commas in between numbers and no spaces)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5d54dagcf1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "3,5"
+        ],
+        "dependencies": [
+            "a5d54dagcf1a-h1"
+        ],
+        "title": "Factoring",
+        "text": "What are the prime factors of 15? (Write with commas in between numbers and no spaces)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5d54dagcf1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a5d54dagcf1a-h2",
+            "a5d54dagcf1a-h3",
+            "a5d54dagcf1a-h4"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "What is the greatest common factor of only the coefficients?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5d54dagcf1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5d54dagcf1a-h5"
+        ],
+        "title": "Greatest Common Factor",
+        "text": "The final step is to find the greatest common factor between the variables with exponents, namely $$x$$, $$x^2$$, and $$x^3$$, which is $$x$$. That combined with the coefficient greatest common factor gives a solutions of $$3x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

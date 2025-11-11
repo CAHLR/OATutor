@@ -1,0 +1,255 @@
+[
+    {
+        "id": "a3476d7optimize1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Constraint Equation",
+        "text": "Firstly, set up the constraint equation. In this case, we want to find the maximum possible area subject to the constraint of limited fencing.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x+y=100$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h1"
+        ],
+        "title": "Perimeter Equation",
+        "text": "Let $$x$$ denote the length of the side of the garden perpendicular to the rock wall and $$y$$ denote the length of the side parallel to the rock wall. Write the equation that accurately represents this garden's fencing in terms of $$x$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$x+2y=100$$",
+            "$$2x+y=100$$",
+            "$$x+100=-2y$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize1a-h2"
+        ],
+        "title": "Represent Area in Terms of $$x$$ and $$y$$",
+        "text": "Secondly, set up the equation for the area in terms of $$x$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$A=x y$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h3"
+        ],
+        "title": "Represent Area in Terms of $$x$$ and $$y$$",
+        "text": "If the area of a rectangle is the length times width, write the equation that accurately represents the area (A) in terms of $$x$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize1a-h4"
+        ],
+        "title": "Represent Area in Terms of $$x$$",
+        "text": "Thirdly, rewrite the area as a function of only $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100-2x$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h5"
+        ],
+        "title": "Represent $$y$$ in Terms of $$x$$",
+        "text": "Solve for $$y$$ from the perimeter's constraint equation. $$Y=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100x-2x^2$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h6"
+        ],
+        "title": "Represent Area in Terms of $$x$$",
+        "text": "Subsitute the $$y$$ in $$A=x y$$ with the answer from the previous step. Therefore, you can rewrite the area as $$A(x)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize1a-h7"
+        ],
+        "title": "Consider the Domains",
+        "text": "Then, determine the domain under consideration.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h8"
+        ],
+        "title": "Positive Values",
+        "text": "To construct a rectangular garden, we certainly need the lengths of both sides to be positive. Therefore we need $$x$$ and $$y$$ to both be greater $$than___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less than $$50$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h9"
+        ],
+        "title": "X's Upper Bound",
+        "text": "Considering the constraint equation of $$y=100-2x$$ and that $$y>0$$, we need $$x$$ to $$be___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Less than $$50$$",
+            "Greater than $$0$$",
+            "Greater than $$50$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize1a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "[0,50]"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h10"
+        ],
+        "title": "X's Domain",
+        "text": "If we need $$x>0$$ and $$x<50$$, write the domain for $$x$$ in interval format. Ex: [-30,25]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize1a-h11"
+        ],
+        "title": "Find Critical Points",
+        "text": "Differentiate the function A(x) to find the critical point.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100-4x$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h12"
+        ],
+        "title": "Derive the Derivative",
+        "text": "What is $$A'(x)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h13"
+        ],
+        "title": "Equate the Derivative with Zero",
+        "text": "In order to find a critical point, you must find out when a differentiated function equals $$0$$. What is the $$x$$ that makes the $$A'(x)=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h15",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$x$$ and $$y$$",
+        "text": "Find the $$x$$ and $$y$$ dimensions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize1a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize1a-h15"
+        ],
+        "title": "Find $$y$$ from $$x$$",
+        "text": "If $$x=25$$, use the equation $$y=100-2x$$. In other words $$y=100-2(25)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "25,50",
+            "50,25",
+            "50,50"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a15666breview1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Domain",
+        "text": "The values of $$x$$ that can be taken are integers from $$-3$$ to $$3$$. The lowest $$x$$ value point is $$(-3,9)$$ and highest $$x$$ value point is $$(3,9)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a15666breview1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a15666breview1a-h1"
+        ],
+        "title": "Determine the Range",
+        "text": "The values of $$y$$ that can be taken are integers from $$0$$ to $$9$$. The lowest $$y$$ value point being $$(0,0)$$ and the highest $$y$$ value point being $$(-3,9)$$ or $$(3,9)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a15666breview1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a15666breview1a-h2"
+        ],
+        "title": "One to One Functions",
+        "text": "Is $$x$$ and $$y$$ one to one? Recall that a one to one function is a function in which each input value is mapped to one unique output value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

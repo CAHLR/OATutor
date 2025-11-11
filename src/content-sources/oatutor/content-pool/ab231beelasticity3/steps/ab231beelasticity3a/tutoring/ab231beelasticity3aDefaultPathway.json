@@ -1,0 +1,40 @@
+[
+    {
+        "id": "ab231beelasticity3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strain Formula",
+        "text": "Recall the formula for strain: \u0394L $$=$$ $$\\frac{F L_0}{A Y}$$, where \u0394L is the change in length, F the applied force, Y is a factor, called the elastic modulus or Young\u2019s modulus, that depends on the substance, A is the cross-sectional area, and $$L_0$$ is the original length.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231beelasticity3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unit Conversion",
+        "text": "$$0.50mm$$ $$=$$ $$0.0005m$$, and 60mm $$=$$ $$0.006m$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231beelasticity3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ab231beelasticity3a-h1",
+            "ab231beelasticity3a-h2"
+        ],
+        "title": "Plug In and Solve for the Change in Length",
+        "text": "What is $$0.006\\frac{4\\frac{1}{1\\times{10}^9}}{\\pi \\left(0.5\\times0.0005\\right)^2}$$ (in mm, rounded to nearest whole number)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

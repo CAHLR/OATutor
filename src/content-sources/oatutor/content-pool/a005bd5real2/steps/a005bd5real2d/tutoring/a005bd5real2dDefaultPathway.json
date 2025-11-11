@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a005bd5real2d-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(f/g)(x)=f(x)/g(x)"
+        ],
+        "dependencies": [],
+        "title": "Division of Functions",
+        "text": "Give the formula for dividing two functions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x^2+2x}{6-x^2}$$"
+        ],
+        "dependencies": [
+            "a005bd5real2d-h1"
+        ],
+        "title": "Substitute",
+        "text": "Plug in the given f(x) and g(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, so (x**2+2x)/(6-x**2) is our final answer."
+        ],
+        "dependencies": [
+            "a005bd5real2d-h2"
+        ],
+        "title": "Reasoning",
+        "text": "Can we factor or divide either function?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,200 @@
+[
+    {
+        "id": "a3476d7optimize5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$R=Revenue$$",
+        "text": "Let R be the revenue per day. First, make a function for R using the variables $$n$$ and $$p$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5p^2+750p$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h1"
+        ],
+        "title": "$$R(x)=___$$?",
+        "text": "If $$R=n p$$, substitute $$n$$ with $$n(p)=750-5p$$. Simplify that function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize5a-h2"
+        ],
+        "title": "Find the Domain",
+        "text": "Secondly, find the domain of interest.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[60,150]"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h3"
+        ],
+        "title": "Find the Domain",
+        "text": "Write $$60 \\leq p \\leq 150$$ in the correct mathematical connotation. Ex:[0,1000]",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$(60,150)$$",
+            "(0,150]",
+            "[60,150]",
+            "$$[-60,150]$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize5a-h4"
+        ],
+        "title": "Find the Critical Points",
+        "text": "Thirdly, find the critical points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-10p+750$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h5"
+        ],
+        "title": "Find the Derivative",
+        "text": "What is the derivative of R(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-10p+1000$$",
+            "$$10p+1000$$",
+            "$$-10p+750$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$75$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h6"
+        ],
+        "title": "Find the R'(0)",
+        "text": "To find the critical point, set $$R'(p)=0$$ and solve for $$p$$. $$P=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize5a-h7"
+        ],
+        "title": "Max or Min",
+        "text": "Lastly, show if the critical point is a minimum or maximum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$28152$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h8"
+        ],
+        "title": "Critical Points",
+        "text": "What is $$R(75)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27000$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h9"
+        ],
+        "title": "Left End Point",
+        "text": "What is $$R(60)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h10"
+        ],
+        "title": "Right End Point",
+        "text": "What is $$R(150)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize5a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Maximum"
+        ],
+        "dependencies": [
+            "a3476d7optimize5a-h11"
+        ],
+        "title": "Max or Min",
+        "text": "Because R(100) is greater than R(50) and R(200), that means that $$p=100$$ is a $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Neither",
+            "Maximum",
+            "Minimum"
+        ]
+    }
+]

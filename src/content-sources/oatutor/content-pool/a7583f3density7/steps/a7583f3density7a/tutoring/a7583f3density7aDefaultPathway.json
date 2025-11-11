@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a7583f3density7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Density Formula",
+        "text": "Density is mass per unit volume, and the formula is $$p=\\frac{m}{v}$$ where $$p$$ is the density, $$m$$ is the mass, and v is the volume occupied by the substance.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3density7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7583f3density7a-h1"
+        ],
+        "title": "Factor of Density Increase Formula",
+        "text": "Factor of Density $$Increase=\\frac{p_f}{p_i}=\\frac{\\frac{m}{v_f}}{\\frac{m}{v_i}}=\\frac{v_i}{v_f}$$, where $$p_f$$ is the final density while $$p_i$$ is the initial density.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3density7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.86$$"
+        ],
+        "dependencies": [
+            "a7583f3density7a-h2"
+        ],
+        "title": "Calculate the Factor of Density Increase",
+        "text": "Notice that the final volume is $$0.350$$ times the initial volume. What is $$\\frac{1}{0.35}$$? (keep two decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

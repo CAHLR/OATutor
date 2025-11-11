@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a7583f3pressure2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Pressure Formula",
+        "text": "The formula for pressure is $$P=$$ $$\\frac{F}{A}$$ where F is a force applied to an area A that is perpendicular to the force.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3pressure2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.00981$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Force Exerted by the Needle",
+        "text": "The force due to weight is given by $$F=m g=1g \\frac{9.81m}{s^2}=$$? in N (remember to first convert the mass from g to kg)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3pressure2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6.28\\times{10}^{\\left(-4\\right)}$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Area of the Tip",
+        "text": "The area A of the tip is the area of a circle: $$A={pir}^2$$. First convert the radius $$r$$ from mm to $$m$$ and then plug in the value for the Area.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6.28\\times{10}^{\\left(-3\\right)}$$",
+            "$$6.28\\times{10}^{\\left(-4\\right)}$$",
+            "$$3.14\\times{10}^{\\left(-3\\right)}$$",
+            "$$3.14\\times{10}^{\\left(-4\\right)}$$"
+        ]
+    },
+    {
+        "id": "a7583f3pressure2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7.8\\times{10}^4$$"
+        ],
+        "dependencies": [
+            "a7583f3pressure2a-h1",
+            "a7583f3pressure2a-h2",
+            "a7583f3pressure2a-h3"
+        ],
+        "title": "Calculate the Pressure",
+        "text": "Substitute the force and area into the pressure formula: what is $$P=\\frac{F}{A}={10}^{\\left(-4\\right)}\\frac{0.00981}{6.28}$$ in $$\\frac{N}{m^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$7.8\\times{10}^4$$",
+            "$$5.93\\times{10}^3$$",
+            "$$2.36\\times{10}^3$$",
+            "$$3.59\\times{10}^6$$"
+        ]
+    }
+]

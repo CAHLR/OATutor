@@ -1,0 +1,65 @@
+[
+    {
+        "id": "aadff92AppQuad29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the Conditions",
+        "text": "Let $$x=$$ the number of hours that the more experienced painter takes to paint the room. Then $$x+3$$ will be the number of hours that the less experienced painter takes to paint the room. In one hour, the less experienced painter gets $$\\frac{1}{x+3}$$ part of the job done and the more experienced painter gets $$\\frac{1}{x}$$ part of the job done. Together, in one hour, if both painters work together, they will get $$\\frac{1}{x}+\\frac{1}{x+3}$$ part of the job done.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad29a-h1"
+        ],
+        "title": "Set Up Equation For Problem",
+        "text": "We know that, in one hour, if both the painters work together they will get $$\\frac{1}{x}+\\frac{1}{x+3}$$ part of the job done. Given that if both painters work together, it takes $$2$$ hours to paint the room. In other words, they get $$\\frac{1}{2}$$ the job done in one hour. We can set the equation as $$\\frac{1}{x}+\\frac{1}{x+3}=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad29a-h2"
+        ],
+        "title": "Solve for Unknown Using Quadratic Formula",
+        "text": "$$\\frac{1}{x}+\\frac{1}{x+3}=\\frac{1}{2}$$ Solve for $$x$$. We can multiply both sides by the LCD which is $$x \\left(x+3\\right)$$. We get $$x+3+x=\\frac{1}{2} x \\left(x+3\\right)$$. We can futher simplify it into $$\\frac{1}{2} x^2-\\frac{1}{2} x-3=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-2,3)"
+        ],
+        "dependencies": [
+            "aadff92AppQuad29a-h3"
+        ],
+        "title": "Solve for Unknown Using Quadratic Formula",
+        "text": "The quadratic formula states $${ax}^2+bx+c=0$$, then $$x=\\frac{\\left(-b\\pm \\sqrt{b^2-4ac}\\right)}{2a}$$. Given $$\\frac{1}{2} x^2-\\frac{1}{2} x-3=0$$, solve for $$x$$. If there are two answers, please enter them as (a,b) where $$a<b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aadff92AppQuad29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aadff92AppQuad29a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "Time can not be negative, so we can omit the negative answer. Therefore, the more experienced painter takes $$3$$ hours to get the job done alone. The less experienced painter takes $$3+3=6$$ hours to get the job done alone.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

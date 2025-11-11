@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aa47907trig24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal Triginometric Identity",
+        "text": "Recall that tanx is equal to $$\\frac{sinx}{cosx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa47907trig24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa47907trig24a-h1"
+        ],
+        "title": "Reciprocal Triginometric Identity",
+        "text": "Recall that secx is equal to $$\\frac{1}{cosx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa47907trig24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa47907trig24a-h2"
+        ],
+        "title": "Finding Reciprocals of Fractions",
+        "text": "Remember that instead of dividing $$2$$ fractions, we can multiply the fraction in the numerator by the reciprocal of the fraction in the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aa47907trig24a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "aa47907trig24a-h3"
+        ],
+        "title": "Use the above to simplify the following",
+        "text": "$$\\left(\\frac{sinx}{cosx}\\right)^2 \\left(\\frac{1}{cosx}\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{csc}\\left(x\\right) \\operatorname{csc}\\left(x\\right)$$",
+            "$$1$$",
+            "(cos(x)",
+            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+        ]
+    }
+]
