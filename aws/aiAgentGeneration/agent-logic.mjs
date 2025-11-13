@@ -1,112 +1,89 @@
-export function analyzeStudentState(studentState, problemContext) {
-    const analysis = {
-        strugglingWith: [],
-        commonMistakes: [],
-        suggestedApproach: "",
-        confidenceLevel: "unknown"
-    };
 
-    if (studentState.attemptCount > 3) {
-        analysis.strugglingWith.push("multiple_attempts");
-        analysis.confidenceLevel = "low";
-    }
+export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory }) {
+    const skillMasteryText = studentState.skillMastery && Object.keys(studentState.skillMastery).length > 0
+        ? Object.entries(studentState.skillMastery)
+            .map(([skill, level]) => `- ${skill}: ${(level * 100).toFixed(0)}% mastery`)
+            .join('\n')
+        : 'No skill mastery data available for this step';
 
-    if (studentState.skillMastery) {
-        const lowMasterySkills = Object.entries(studentState.skillMastery)
-            .filter(([skill, level]) => level < 0.5)
-            .map(([skill]) => skill);
-        
-        if (lowMasterySkills.length > 0) {
-            analysis.strugglingWith.push(...lowMasterySkills);
-        }
-    }
+    // Format hints used
+    const hintsText = studentState.hintsUsed?.length > 0 
+        ? `${studentState.hintsUsed.length} hint(s) viewed` 
+        : 'No hints viewed yet';
 
-    if (studentState.currentAnswer) {
-        const answer = studentState.currentAnswer.toLowerCase();
-        
-        if (answer.includes("x + x + x") && problemContext.currentStep?.correctAnswer?.includes("x + (x+1) + (x+2)")) {
-            analysis.commonMistakes.push("consecutive_integers_concept");
-            analysis.suggestedApproach = "explain_consecutive_integers";
-        }
-        
-        if (answer.includes("=") && !answer.includes("x")) {
-            analysis.commonMistakes.push("missing_variable_setup");
-            analysis.suggestedApproach = "guide_variable_identification";
-        }
-    }
+    // Format answer correctness
+    const correctnessText = studentState.isCorrect === null 
+        ? 'Not attempted yet' 
+        : studentState.isCorrect 
+            ? 'Correct ✓' 
+            : 'Incorrect ✗';
 
-    return analysis;
-}
+    const systemPrompt = `You are an expert math tutor helping a student with an OATutor problem.
 
-export function buildAgentPrompt({ userMessage, problemContext, studentState, studentAnalysis, conversationHistory, agentConfig }) {
-    const teachingStyle = agentConfig?.teachingStyle || "socratic";
-    const personalityMode = agentConfig?.personalityMode || "encouraging";
-    const maxHintLevel = agentConfig?.maxHintLevel || 4;
+PROBLEM CONTEXT:
+Course: ${problemContext.courseName || 'Math'}
+Problem: ${problemContext.problemTitle || 'Math Problem'}
 
-    const systemPrompt = `You are an expert math tutor and Teaching Assistant (TA) helping a student with OATutor problems. 
+CURRENT STEP:
+Question: ${problemContext.currentStep?.title || 'Problem Step'}
+${problemContext.currentStep?.body ? `Details: ${problemContext.currentStep.body}` : ''}
 
-STUDENT CONTEXT:
-- Name: ${studentState.user?.full_name || 'Student'}
-- Course: ${problemContext.courseName || 'Math'}
-- Current Problem: ${problemContext.problemTitle || 'Math Problem'}
-- Current Step: ${problemContext.currentStep?.title || 'Problem Step'}
-
-PROBLEM DETAILS:
-- Problem: ${problemContext.problemTitle}
-- Question: ${problemContext.currentStep?.body || 'No question provided'}
-- Correct Answer: ${problemContext.currentStep?.correctAnswer || 'Not provided'}
-- Answer Type: ${problemContext.currentStep?.answerType || 'unknown'}
+Correct Answer: ${Array.isArray(problemContext.currentStep?.correctAnswer) 
+    ? problemContext.currentStep.correctAnswer[0] 
+    : problemContext.currentStep?.correctAnswer || 'Not provided'}
 
 STUDENT'S CURRENT STATE:
-- Their Answer: "${studentState.currentAnswer || 'No answer yet'}"
-- Correctness: ${studentState.isCorrect === null ? 'Not attempted' : studentState.isCorrect ? 'Correct' : 'Incorrect'}
-- Attempt #: ${studentState.attemptCount || 0}
-- Time on step: ${studentState.timeOnStep || 0} seconds
-- Hints used: ${studentState.hintsUsed?.length || 0}
+Their Answer: "${studentState.currentAnswer || 'No answer provided yet'}"
+Status: ${correctnessText}
+Hints: ${hintsText}
 
-STUDENT'S SKILL LEVELS:
-${studentState.skillMastery ? Object.entries(studentState.skillMastery)
-    .map(([skill, level]) => `- ${skill}: ${(level * 100).toFixed(0)}% mastery`)
-    .join('\n') : 'No mastery data available'}
+RELEVANT SKILL LEVELS FOR THIS PROBLEM:
+${skillMasteryText}
 
-ANALYSIS OF STUDENT'S STRUGGLES:
-${studentAnalysis.strugglingWith.length > 0 ? `- Areas of difficulty: ${studentAnalysis.strugglingWith.join(', ')}` : '- No specific struggles identified'}
-${studentAnalysis.commonMistakes.length > 0 ? `- Common mistakes: ${studentAnalysis.commonMistakes.join(', ')}` : ''}
-${studentAnalysis.suggestedApproach ? `- Suggested approach: ${studentAnalysis.suggestedApproach}` : ''}
+TEACHING GUIDELINES:
+- Use the Socratic method - ask guiding questions
+- Help them discover the answer, don't just give it
+- Be encouraging and patient
+- If you know their answer, reference it and where they might have gone wrong
+- If you don't know their answer, ask them what they got or what they're confused about
+- Break problems into smaller steps when needed
+- Acknowledge their effort and progress
 
-YOUR TEACHING APPROACH:
-- Method: ${teachingStyle} (ask guiding questions, help student discover answers)
-- Personality: ${personalityMode} (be supportive and patient)
-- Max hint level: ${maxHintLevel}/5 (1=very subtle, 5=direct answer)
-- Role: Act like a helpful TA who walks students through problems step-by-step
+NOTE: If "Their Answer" shows "No answer provided yet", ask the student what they tried or what they're stuck on.
 
-CONVERSATION HISTORY:
-${conversationHistory.length > 0 ? conversationHistory.map(msg => `${msg.role}: ${msg.content}`).join('\n') : 'This is the start of our conversation.'}
+Student asks: "${userMessage}"
 
-INSTRUCTIONS:
-1. Respond as a helpful TA who knows the student's context
-2. Use the Socratic method - ask questions to guide discovery
-3. Be encouraging and patient
-4. Don't give direct answers immediately - help them work through it
-5. Reference their specific problem and current step
-6. If they're stuck, break the problem into smaller parts
-7. Acknowledge their progress and effort
+Provide helpful, step-by-step guidance.`;
 
-Remember: You're helping them learn, not just get the answer. Guide them to understand the concepts!`;
-
-    return [
-        { role: "system", content: systemPrompt },
-        { role: "user", content: userMessage }
+    // Build message array with conversation history
+    const messages = [
+        { role: "system", content: systemPrompt }
     ];
+
+    // Add conversation history if it exists
+    if (conversationHistory && conversationHistory.length > 0) {
+        messages.push(...conversationHistory);
+    }
+
+    // Add current user message
+    messages.push({ role: "user", content: userMessage });
+
+    return messages;
 }
 
-export async function generateAgentResponse(openai, prompt, responseStream = null) {
+export async function generateAgentResponse(openai, prompt, responseStream = null, config = {}) {
+    const {
+        model = "gpt-4o",
+        temperature = 0.7,
+        max_tokens = 800  
+    } = config;
+
     const stream = await openai.chat.completions.create({
-        model: "gpt-4",
+        model,
         messages: prompt,
         stream: true,
-        temperature: 0.7,
-        max_tokens: 500
+        temperature,
+        max_tokens
     });
 
     let fullResponse = "";

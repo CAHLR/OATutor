@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import OpenAI from "openai";
 import AWS from "aws-sdk";
-import { analyzeStudentState, buildAgentPrompt, generateAgentResponse } from "./agent-logic.mjs";
+import { buildAgentPrompt, generateAgentResponse } from "./agent-logic.mjs";
 
 dotenv.config();
 
@@ -46,8 +46,7 @@ export const handler = awslambda.streamifyResponse(
                 userMessage,
                 problemContext,
                 studentState,
-                conversationHistory = [],
-                agentConfig = {}
+                conversationHistory = []
             } = requestBody;
 
             const metadata = {
@@ -66,16 +65,12 @@ export const handler = awslambda.streamifyResponse(
 
             const existingConversation = await loadConversationHistory(sessionId);
             const fullConversationHistory = [...existingConversation, ...conversationHistory];
-
-            const studentAnalysis = analyzeStudentState(studentState, problemContext);
             
             const agentPrompt = buildAgentPrompt({
                 userMessage,
                 problemContext,
                 studentState,
-                studentAnalysis,
-                conversationHistory: fullConversationHistory,
-                agentConfig
+                conversationHistory: fullConversationHistory
             });
 
             const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream);
