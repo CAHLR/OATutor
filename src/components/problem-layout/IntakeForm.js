@@ -77,7 +77,6 @@ export default function IntakeForm() {
     q1: "",
     q2: "",
     q3: "",
-    q4: "",
   });
   // DOM-visible stored payload used for test assertions
   const [stored, setStored] = useState(null);
@@ -85,7 +84,7 @@ export default function IntakeForm() {
   const headerTitle = `Course Intake Form`;
 
   const allFilled =
-    form.q1.trim() && form.q2.trim() && form.q3.trim() && form.q4.trim();
+    form.q1.trim() && form.q2.trim() && form.q3.trim();
 
   const onChange = (k) => (e) => {
       const { value } = e.target;
@@ -157,7 +156,7 @@ export default function IntakeForm() {
 
           <Box className={classes.field}>
             <Typography variant="subtitle1" gutterBottom>
-              What did you intend to achieve by enrolling in the program? <span style={{ color: "#d32f2f" }}>(Required)*</span>
+              What is your primary career goal? <span style={{ color: "#d32f2f" }}>(Required)*</span>
             </Typography>
             <TextField
               variant="outlined"
@@ -175,7 +174,7 @@ export default function IntakeForm() {
 
           <Box className={classes.field}>
             <Typography variant="subtitle1" gutterBottom>
-              How do you hope this course will help you achieve your goals? <span style={{ color: "#d32f2f" }}>(Required)*</span>
+              What industry or field do you currently work in, or want to work in? <span style={{ color: "#d32f2f" }}>(Required)*</span>
             </Typography>
             <TextField
               variant="outlined"
@@ -190,23 +189,6 @@ export default function IntakeForm() {
             />
           </Box>
 
-          <Box className={classes.field}>
-            <Typography variant="subtitle1" gutterBottom>
-              What is your desired field of work? <span style={{ color: "#d32f2f" }}>(Required)*</span>
-            </Typography>
-            <TextField
-              variant="outlined"
-              fullWidth
-              required
-              multiline
-              minRows={4}
-              maxRows={10}
-              placeholder="Enter your response..."
-              value={form.q4}
-              onChange={onChange("q4")}
-            />
-          </Box>
-
           <Box display="flex" justifyContent="center" mt={1}>
             <Button
               type="submit"
@@ -218,7 +200,7 @@ export default function IntakeForm() {
             </Button>
 
             {/* Test button: save to localStorage and render stored JSON into the DOM for easy test assertions */}
-            <Box ml={2}>
+            {/* <Box ml={2}>
               <Button
                 type="button"
                 variant="outlined"
@@ -249,12 +231,12 @@ export default function IntakeForm() {
               >
                 Save to local (test DOM)
               </Button>
-            </Box>
+            </Box> */}
           </Box>
         </Paper>
 
         {/* DOM-visible storage debug area for tests */}
-        {stored && (
+        {/* {stored && (
           <Box mt={2} width="100%" style={{ display: "flex", justifyContent: "center" }}>
             <Box width="100%" maxWidth={900}>
               <Typography variant="subtitle2" gutterBottom>
@@ -265,7 +247,7 @@ export default function IntakeForm() {
               </pre>
             </Box>
           </Box>
-        )}
+        )} */}
 
       </Container>
 
