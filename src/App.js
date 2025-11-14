@@ -216,6 +216,11 @@ class App extends React.Component {
         await Promise.allSettled(
             lessonStorageKeys.map(async (key) => await removeByKey(key))
         );
+        
+        // Also clear all intake-related localStorage entries
+        const intakeKeys = Object.keys(localStorage).filter(key => key.startsWith('intake:'));
+        intakeKeys.forEach(key => localStorage.removeItem(key));
+        
         this.bktParams = this.getTreatmentObject(treatmentMapping.bktParams);
         window.location.reload();
     };
@@ -353,7 +358,7 @@ class App extends React.Component {
 
                                     <Route
                                         exact
-                                        path="/intake/:lessonID"
+                                        path="/intake/course/:courseNum"
                                         component={IntakeForm}
                                         />
                                     <Route

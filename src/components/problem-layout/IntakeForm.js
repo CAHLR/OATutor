@@ -1,4 +1,4 @@
-    import React, { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import {
   AppBar,
@@ -22,6 +22,7 @@ import {
   findLessonById,
   SHOW_COPYRIGHT,
   SITE_NAME,
+  USER_ID_STORAGE_KEY,
 } from "../../config/config.js";
 
 const useStyles = makeStyles((theme) => ({
@@ -69,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 export default function IntakeForm() {
   const classes = useStyles();
   const history = useHistory();
-  const { lessonID } = useParams();
+  const { courseNum } = useParams();
 
   const [showPopup, setShowPopup] = useState(false);
   const [form, setForm] = useState({
@@ -78,24 +79,10 @@ export default function IntakeForm() {
     q3: "",
     q4: "",
   });
+  // DOM-visible stored payload used for test assertions
+  const [stored, setStored] = useState(null);
 
-  const lesson = useMemo(() => {
-    try {
-      return findLessonById(lessonID);
-    } catch {
-      return null;
-    }
-  }, [lessonID]);
-
-  const topicsText = lesson?.topics
-    ? Array.isArray(lesson.topics)
-      ? lesson.topics.join(", ")
-      : String(lesson.topics)
-    : "";
-
-  const headerTitle = lesson
-    ? `${lesson.name}${topicsText ? `: ${topicsText}` : ""}`
-    : `Lesson ${lessonID}`;
+  const headerTitle = `Course Intake Form`;
 
   const allFilled =
     form.q1.trim() && form.q2.trim() && form.q3.trim() && form.q4.trim();
@@ -108,12 +95,18 @@ export default function IntakeForm() {
     e.preventDefault();
     if (!allFilled) return;
     try {
+      // Prefer an app-exposed Firebase instance id, otherwise fall back to stored user id.
+      const userId =
+        (window?.appFirebase?.oats_user_id) ||
+        localStorage.getItem(USER_ID_STORAGE_KEY);
+
       localStorage.setItem(
-        `intake:${lessonID}`,
+        `intake:${userId}:course:${courseNum}`,
         JSON.stringify({ ...form, ts: Date.now() })
       );
     } catch {}
-    history.push(`/confirm/${lessonID}`);
+    // After submission, go back to course selection (parent will handle navigation)
+    history.push(`/courses/${courseNum}`);
   };
 
   return (
@@ -223,8 +216,57 @@ export default function IntakeForm() {
             >
               Submit
             </Button>
+
+            {/* Test button: save to localStorage and render stored JSON into the DOM for easy test assertions */}
+            <Box ml={2}>
+              <Button
+                type="button"
+                variant="outlined"
+                color="default"
+                disabled={!allFilled}
+                onClick={() => {
+                  try {
+                    const userId =
+                      (window?.appFirebase?.oats_user_id) ||
+                      localStorage.getItem(USER_ID_STORAGE_KEY);
+
+                    const payload = { ...form, ts: Date.now() };
+
+                    localStorage.setItem(`intake:${userId}`, JSON.stringify(payload));
+
+                    const readBack = localStorage.getItem(`intake:${userId}`);
+                    if (readBack) {
+                      const parsed = JSON.parse(readBack);
+
+                      setStored(JSON.stringify(parsed, null, 2));
+                    } else {
+                      setStored(`No saved intake found for user: ${userId}`);
+                    }
+                  } catch (err) {
+                    setStored(`Error loading intake: ${String(err)}`);
+                  }
+                }}
+              >
+                Save to local (test DOM)
+              </Button>
+            </Box>
           </Box>
         </Paper>
+
+        {/* DOM-visible storage debug area for tests */}
+        {stored && (
+          <Box mt={2} width="100%" style={{ display: "flex", justifyContent: "center" }}>
+            <Box width="100%" maxWidth={900}>
+              <Typography variant="subtitle2" gutterBottom>
+                Saved intake (test DOM)
+              </Typography>
+              <pre id="intake-storage-check" style={{whiteSpace:'pre-wrap', wordBreak:'break-word', background:'#f5f5f5', padding:12, borderRadius:8}}>
+{stored}
+              </pre>
+            </Box>
+          </Box>
+        )}
+
       </Container>
 
       <Box className={classes.footer}>

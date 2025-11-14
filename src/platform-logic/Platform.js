@@ -13,6 +13,7 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
+    USER_ID_STORAGE_KEY,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -268,6 +269,24 @@ class Platform extends React.Component {
 
     selectCourse = (course, context) => {
         this.course = course;
+        // Find the course index for intake form routing
+        const courseIndex = coursePlans.findIndex(c => c.courseName === course.courseName);
+        
+        // Check if intake has already been submitted for this course
+        const userId =
+            (window?.appFirebase?.oats_user_id) ||
+            localStorage.getItem(USER_ID_STORAGE_KEY);
+        
+        const intakeKey = `intake:${userId}:course:${courseIndex}`;
+        const hasSubmittedIntake = !!localStorage.getItem(intakeKey);
+        
+        if (!hasSubmittedIntake) {
+            // Redirect to intake form for this course
+            this.props.history.push(`/intake/course/${courseIndex}`);
+            return;
+        }
+        
+        // User has already submitted intake, proceed to lesson selection
         this.setState({
             status: "lessonSelection",
         });

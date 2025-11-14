@@ -152,7 +152,7 @@ class LessonSelection extends React.Component {
           variant="contained"
           color="primary"
           className={classes.button}
-          onClick={() => this.props.history.push(`/intake/${lesson.id}`)}
+          onClick={() => this.props.history.push(`/confirm/${lesson.id}`)}
         >
           {translate('lessonSelection.onlyselect')}
         </Button>
