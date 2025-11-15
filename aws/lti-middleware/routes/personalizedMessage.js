@@ -1,5 +1,6 @@
 const express = require("express");
 const OpenAI = require("openai");
+const logger = require("../logger");
 
 const router = express.Router();
 
@@ -45,6 +46,10 @@ Guidelines:
 router.post("/api/generate-personalized-message", async (req, res) => {
   try {
     if (!openai) {
+      logger.error(
+        { hasKey: Boolean(process.env.OPENAI_API_KEY) },
+        "OPENAI_API_KEY not configured; personalization unavailable"
+      );
       return res.status(500).json({
         error: "OPENAI_API_KEY not configured on the server",
       });
@@ -55,10 +60,19 @@ router.post("/api/generate-personalized-message", async (req, res) => {
     );
 
     if (missing.length) {
+      logger.warn({ missing }, "Personalized message request missing fields");
       return res.status(400).json({
         error: `Missing or invalid fields: ${missing.join(", ")}`,
       });
     }
+
+    logger.info(
+      {
+        lessonTitle: req.body.lessonTitle,
+        hasIntake: Boolean(req.body.motivation || req.body.enrollmentReason),
+      },
+      "Generating personalized lesson message"
+    );
 
     const prompt = buildPrompt(req.body);
 
@@ -80,16 +94,30 @@ router.post("/api/generate-personalized-message", async (req, res) => {
       completion?.choices?.[0]?.message?.content?.trim() || "";
 
     if (!message) {
+      logger.warn(
+        { lessonTitle: req.body.lessonTitle },
+        "Language model returned empty personalization"
+      );
       return res
         .status(502)
         .json({ error: "No message returned from language model" });
     }
 
+    logger.info(
+      {
+        lessonTitle: req.body.lessonTitle,
+        messageLength: message.length,
+      },
+      "Personalized lesson message generated"
+    );
     res.json({ message });
   } catch (error) {
-    console.error(
-      "[personalizedMessage] error generating message",
-      error
+    logger.error(
+      {
+        err: error,
+        lessonTitle: req.body?.lessonTitle,
+      },
+      "Error generating personalized lesson message"
     );
     res.status(500).json({
       error: "Failed to generate personalized message",
