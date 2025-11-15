@@ -44,6 +44,8 @@ firebaseAdmin.initializeApp({
 });
 const firestoredb = firebaseAdmin.firestore()
 
+const personalizedMessageRoute = require("./routes/personalizedMessage");
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -60,6 +62,8 @@ app.use((req, res, next) => {
 
 // trust that the reverse proxy has the correct protocol
 app.enable("trust proxy");
+
+app.use(personalizedMessageRoute);
 
 const getLinkedLesson = async (resource_link_id) => {
   console.log("getting linked lesson");
