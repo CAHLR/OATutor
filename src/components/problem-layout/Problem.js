@@ -25,6 +25,8 @@ import {
     SHOW_NOT_CANVAS_WARNING,
     SITE_NAME,
     ThemeContext,
+    USER_ID_STORAGE_KEY,
+    coursePlans,
 } from "../../config/config.js";
 import { toast } from "react-toastify";
 import to from "await-to-js";
@@ -34,6 +36,7 @@ import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
+import PersonalizedMessageModal from "./PersonalizedMessageModal";
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -81,11 +84,17 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false
+            showPopup: false,
+            showPersonalizedModal: false,
+            personalizedMessage: "",
+            personalizationLoading: false,
+            personalizationError: null,
+            personalizedLessonId: null,
         };
     }
 
     componentDidMount() {
+        this._isMounted = true;
         const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
@@ -97,12 +106,190 @@ class Problem extends React.Component {
         for (const annotation of document.querySelectorAll("annotation")) {
             annotation.ariaLabel = annotation.textContent;
         }
+
+        this.maybeStartPersonalizedMessage();
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.lesson?.id !== this.props.lesson?.id) {
+            this.maybeStartPersonalizedMessage(true);
+        }
     }
 
     componentWillUnmount() {
+        this._isMounted = false;
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
     }
+
+    resolveCourseKey = () => {
+        const { courseNum, lesson } = this.props;
+        if (courseNum != null && courseNum !== "") {
+            return String(courseNum);
+        }
+        const lessonCourseName = lesson?.courseName;
+        if (!lessonCourseName) {
+            return null;
+        }
+        const idx = coursePlans.findIndex(
+            (course) => course.courseName === lessonCourseName
+        );
+        return idx > -1 ? String(idx) : null;
+    };
+
+    loadIntakeResponses = () => {
+        if (typeof window === "undefined") {
+            return null;
+        }
+        try {
+            const userId =
+                window?.appFirebase?.oats_user_id ||
+                localStorage.getItem(USER_ID_STORAGE_KEY);
+            if (!userId) {
+                return null;
+            }
+            const courseKey = this.resolveCourseKey();
+            if (courseKey == null) {
+                return null;
+            }
+            const storageKey = `intake:${userId}:course:${courseKey}`;
+            const stored = localStorage.getItem(storageKey);
+            if (!stored) {
+                return null;
+            }
+            const parsed = JSON.parse(stored);
+            return {
+                motivation: parsed.q1 || "",
+                enrollmentReason: parsed.q2 || "",
+                personalChoice: parsed.q2 || "",
+                desiredField: parsed.q3 || "",
+            };
+        } catch (error) {
+            console.debug("Unable to load intake responses", error);
+            return null;
+        }
+    };
+
+    buildLessonSummary = () => {
+        const { lesson } = this.props;
+        if (!lesson) {
+            return "";
+        }
+        const parts = [];
+        if (lesson.topics) {
+            parts.push(`Topics: ${lesson.topics}`);
+        }
+        if (lesson.description) {
+            parts.push(lesson.description);
+        }
+        if (lesson.courseName) {
+            parts.push(`Course: ${lesson.courseName}`);
+        }
+        const objectives = Object.keys(lesson.learningObjectives || {});
+        if (objectives.length) {
+            parts.push(`Learning objectives covered: ${objectives.length}`);
+        }
+        return parts.join(" | ");
+    };
+
+    maybeStartPersonalizedMessage = (force = false) => {
+        const lessonId = this.props.lesson?.id;
+        if (!lessonId) {
+            return;
+        }
+        if (!force && this.state.personalizedLessonId === lessonId) {
+            return;
+        }
+        const intakePayload = this.loadIntakeResponses();
+        if (!intakePayload) {
+            this.setState({
+                personalizedLessonId: lessonId,
+                showPersonalizedModal: false,
+                personalizedMessage: "",
+                personalizationLoading: false,
+                personalizationError: null,
+            });
+            return;
+        }
+        this.setState(
+            {
+                personalizedLessonId: lessonId,
+                showPersonalizedModal: true,
+                personalizedMessage: "",
+                personalizationLoading: true,
+                personalizationError: null,
+            },
+            () => this.fetchPersonalizedMessage(intakePayload)
+        );
+    };
+
+    fetchPersonalizedMessage = async (intakePayload) => {
+        const { lesson } = this.props;
+        if (!lesson) {
+            this.setState({
+                showPersonalizedModal: false,
+                personalizationLoading: false,
+            });
+            return;
+        }
+        const requestBody = {
+            motivation: intakePayload.motivation || "",
+            enrollmentReason: intakePayload.enrollmentReason || "",
+            personalChoice: intakePayload.personalChoice || "",
+            desiredField: intakePayload.desiredField || "",
+            lessonTitle: lesson.name || lesson.title || "Your Lesson",
+            lessonContent: this.buildLessonSummary(),
+        };
+        try {
+            const response = await fetch(
+                `${MIDDLEWARE_URL}/api/generate-personalized-message`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(requestBody),
+                }
+            );
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || "Failed to personalize");
+            }
+            const data = await response.json();
+            const message = data?.message?.trim();
+            if (!this._isMounted) {
+                return;
+            }
+            if (!message) {
+                this.setState({
+                    personalizationLoading: false,
+                    personalizationError:
+                        "We couldn't personalize this lesson right now, but you can still continue.",
+                    personalizedMessage: "",
+                });
+                return;
+            }
+            this.setState({
+                personalizedMessage: message,
+                personalizationLoading: false,
+            });
+        } catch (error) {
+            console.error("Failed to fetch personalized message", error);
+            if (!this._isMounted) {
+                return;
+            }
+            this.setState({
+                personalizationLoading: false,
+                personalizationError:
+                    "We couldn't personalize this lesson right now, but you can still continue.",
+                personalizedMessage: "",
+            });
+        }
+    };
+
+    closePersonalizedModal = () => {
+        this.setState({ showPersonalizedModal: false });
+    };
 
     updateCanvas = async (mastery, components) => {
         if (this.context.jwt) {
@@ -831,6 +1018,13 @@ class Problem extends React.Component {
                         ""
                     )}
                 </footer>
+                <PersonalizedMessageModal
+                    open={this.state.showPersonalizedModal}
+                    loading={this.state.personalizationLoading}
+                    message={this.state.personalizedMessage}
+                    error={this.state.personalizationError}
+                    onClose={this.closePersonalizedModal}
+                />
             </>
         );
     }

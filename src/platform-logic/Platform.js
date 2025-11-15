@@ -523,6 +523,7 @@ class Platform extends React.Component {
                             lesson={this.lesson}
                             seed={this.state.seed}
                             lessonID={this.props.lessonID}
+                            courseNum={this.props.courseNum}
                             displayMastery={this.displayMastery}
                         />
                     </ErrorBoundary>
