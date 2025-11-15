@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const lti = require("ims-lti");
 const jwt = require("jsonwebtoken");
