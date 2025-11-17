@@ -43,6 +43,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
   const [elapsed, setElapsed] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
   const [personalizedMessage, setPersonalizedMessage] = useState("");
+  const [extractedIndustry, setExtractedIndustry] = useState("");
   const [personalizationLoading, setPersonalizationLoading] = useState(false);
   const [personalizationError, setPersonalizationError] = useState(null);
 
@@ -118,6 +119,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
     const intakePayload = loadIntakeResponses();
     if (!intakePayload) {
       setPersonalizedMessage("");
+      setExtractedIndustry("");
       return;
     }
     setPersonalizationLoading(true);
@@ -147,17 +149,21 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
       }
       const data = await response.json();
       const message = data?.message?.trim();
+      const industry = data?.industry?.trim() || "Your Chosen Field";
       if (!message) {
         setPersonalizedMessage("");
+        setExtractedIndustry("");
         setPersonalizationError(
           "We couldn't personalize this lesson right now, but you can still continue."
         );
       } else {
         setPersonalizedMessage(message);
+        setExtractedIndustry(industry);
       }
     } catch (error) {
       console.error("Failed to fetch personalized message", error);
       setPersonalizedMessage("");
+      setExtractedIndustry("");
       setPersonalizationError(
         "We couldn't personalize this lesson right now, but you can still continue."
       );
@@ -249,7 +255,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
               align="center"
               style={{ fontWeight: 700, marginBottom: 8 }}
             >
-              How This Lesson Supports Your Career
+              How This Lesson Supports Your Career in {extractedIndustry || "Your Chosen Field"}
             </Typography>
             {personalizationLoading ? (
               <Box display="flex" alignItems="center" justifyContent="center" py={2}>
