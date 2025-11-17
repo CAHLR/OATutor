@@ -24,7 +24,34 @@ import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
-import withTranslation from '../util/withTranslation';
+import withTranslation from "../util/withTranslation";
+
+import userIcon from "../assets/UserThumb.svg";
+import IconButton from "@material-ui/core/IconButton";
+import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import leftArrow from "../assets/chevron-left.svg";
+
+import Popup from "../components/Popup/Popup";
+import About from "../pages/Posts/About.js";
+
+import { animateScroll as scroll } from "react-scroll";
+import { chooseVariables } from "../platform-logic/renderText.js";
+import TextField from "@material-ui/core/TextField";
+import Spacer from "../components/Spacer";
+import Button from "@material-ui/core/Button";
+
+import ToCButton from "../assets/layoutLeft.svg";
+
+import { withStyles } from "@material-ui/core/styles";
+import styles from "../components/problem-layout/common-styles.js";
+
+import Drawer from "@material-ui/core/Drawer";
+import TableOfContents from "../components/tableOfContents.js";
+
+import withWidth from "@material-ui/core/withWidth";
+
+import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
 import { LocalizationConsumer } from '../util/LocalizationContext';
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
@@ -32,52 +59,66 @@ let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.j
 let seed = Date.now().toString();
 console.log("Generated seed");
 
+const TOC_DRAWER_OPEN_KEY = "toc:drawer-open:v1";
+
 class Platform extends React.Component {
-    static contextType = ThemeContext;
+  static contextType = ThemeContext;
 
-    constructor(props, context) {
-        super(props);
-        
-        this.problemIndex = {
-            problems: problemPool,
-        };
-        this.completedProbs = new Set();
-        this.lesson = null;
+  constructor(props, context) {
+    super(props);
 
-        this.user = context.user || {};
-        console.debug("USER: ", this.user)
-        this.isPrivileged = !!this.user.privileged;
-        this.context = context;
+    this.problemIndex = {
+      problems: problemPool,
+    };
+    this.completedProbs = new Set();
+    this.lesson = null;
 
-        // Add each Q Matrix skill model attribute to each step
-        for (const problem of this.problemIndex.problems) {
-            for (
-                let stepIndex = 0;
-                stepIndex < problem.steps.length;
-                stepIndex++
-            ) {
-                const step = problem.steps[stepIndex];
-                step.knowledgeComponents = cleanArray(
-                    context.skillModel[step.id] || []
-                );
-            }
-        }
-        if (this.props.lessonID == null) {
-            this.state = {
-                currProblem: null,
-                status: "courseSelection",
-                seed: seed,
-            };
-        } else {
-            this.state = {
-                currProblem: null,
-                status: "courseSelection",
-                seed: seed,
-            };
-        }
+    this.user = context.user || {};
+    this.isPrivileged = !!this.user.privileged;
+    this.context = context;
+    const saved = typeof window !== "undefined" ? localStorage.getItem(TOC_DRAWER_OPEN_KEY) : null;
+    const defaultOpenIfNoPref = Boolean(props.lessonID);
+    const initialDrawerOpen = saved === null ? defaultOpenIfNoPref : saved === "1";
 
-        this.selectLesson = this.selectLesson.bind(this);
+    this.state = {
+      showPopup: false,
+      feedback: "",
+      feedbackSubmitted: false,
+      drawerOpen: initialDrawerOpen,
+      hasAutoClosedDrawer: false,
+    };
+
+    this.togglePopup = this.togglePopup.bind(this);
+    this.toggleFeedback = this.toggleFeedback.bind(this);
+
+    for (const problem of this.problemIndex.problems) {
+      for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
+        const step = problem.steps[stepIndex];
+        step.knowledgeComponents = cleanArray(context.skillModel[step.id] || []);
+      }
     }
+    if (this.props.lessonID == null) {
+      this.state = {
+        currProblem: null,
+        status: "courseSelection",
+        seed: seed,
+        feedback: "",
+        feedbackSubmitted: false,
+        drawerOpen: initialDrawerOpen,
+      };
+    } else {
+      this.state = {
+        currProblem: null,
+        status: "courseSelection",
+        seed: seed,
+        feedback: "",
+        feedbackSubmitted: false,
+        drawerOpen: initialDrawerOpen,
+      };
+    }
+
+    this.selectLesson = this.selectLesson.bind(this);
+  }
 
     componentDidMount() {
         this._isMounted = true;
@@ -136,10 +177,10 @@ class Platform extends React.Component {
         this.onComponentUpdate(null, null, null);
     }
 
-    componentWillUnmount() {
-        this._isMounted = false;
-        this.context.problemID = "n/a";
-    }
+  componentWillUnmount() {
+    this._isMounted = false;
+    this.context.problemID = "n/a";
+  }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         
@@ -307,151 +348,92 @@ class Platform extends React.Component {
             }
         }
 
-        this.lesson = lesson;
+    this.lesson = lesson;
 
-        const loadLessonProgress = async () => {
-            const { getByKey } = this.context.browserStorage;
-            return await getByKey(
-                LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)
-            ).catch((err) => {});
-        };
+    const loadLessonProgress = async () => {
+      const { getByKey } = this.context.browserStorage;
+      return await getByKey(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)).catch((err) => {});
+    };
 
-        const [, prevCompletedProbs] = await Promise.all([
-            this.props.loadBktProgress(),
-            loadLessonProgress(),
-        ]);
-        if (!this._isMounted) {
-            console.debug("component not mounted, returning early (2)");
-            return;
+    const [, prevCompletedProbs] = await Promise.all([this.props.loadBktProgress(), loadLessonProgress()]);
+    if (!this._isMounted) return;
+    if (prevCompletedProbs) {
+      this.completedProbs = new Set(prevCompletedProbs);
+    }
+    this.setState({
+      currProblem: this._nextProblem(this.context ? this.context : context),
+    });
+  }
+
+  selectCourse = (course, context) => {
+    this.course = course;
+    this.setState({
+      status: "lessonSelection",
+      selectedCourse: course,
+    });
+  };
+
+  _nextProblem = (context) => {
+    seed = Date.now().toString();
+    this.setState({ seed: seed });
+    this.props.saveProgress();
+    const problems = this.problemIndex.problems.filter(({ courseName }) => !courseName.toString().startsWith("!!"));
+    let chosenProblem;
+
+    for (const problem of problems) {
+      let probMastery = 1;
+      let isRelevant = false;
+      for (const step of problem.steps) {
+        if (typeof step.knowledgeComponents === "undefined") continue;
+        for (const kc of step.knowledgeComponents) {
+          if (typeof context.bktParams[kc] === "undefined") continue;
+          if (kc in this.lesson.learningObjectives) {
+            isRelevant = true;
+          }
+          if (!(kc in context.bktParams)) continue;
+          probMastery *= context.bktParams[kc].probMastery;
         }
-        if (prevCompletedProbs) {
-            console.debug(
-                "student has already made progress w/ problems in this lesson before",
-                prevCompletedProbs
-            );
-            this.completedProbs = new Set(prevCompletedProbs);
-        }
-        this.setState(
-            {
-                currProblem: this._nextProblem(
-                    this.context ? this.context : context
-                ),
-            },
-            () => {
-                //console.log(this.state.currProblem);
-                //console.log(this.lesson);
-            }
-        );
+      }
+      if (isRelevant) {
+        problem.probMastery = probMastery;
+      } else {
+        problem.probMastery = null;
+      }
     }
 
-    selectCourse = (course, context) => {
-        this.course = course;
-        this.setState({
-            status: "lessonSelection",
-        });
-    };
+    chosenProblem = context.heuristic(problems, this.completedProbs);
 
-    _nextProblem = (context) => {
-        seed = Date.now().toString();
-        this.setState({ seed: seed });
-        this.props.saveProgress();
-        const problems = this.problemIndex.problems.filter(
-            ({ courseName }) => !courseName.toString().startsWith("!!")
-        );
-        let chosenProblem;
+    const objectives = Object.keys(this.lesson.learningObjectives);
+    let score = objectives.reduce((x, y) => {
+      return x + context.bktParams[y].probMastery;
+    }, 0);
+    score /= objectives.length;
+    this.displayMastery(score);
 
-        console.debug(
-            "Platform.js: sample of available problems",
-            problems.slice(0, 10)
-        );
-
-        for (const problem of problems) {
-            // Calculate the mastery for this problem
-            let probMastery = 1;
-            let isRelevant = false;
-            for (const step of problem.steps) {
-                if (typeof step.knowledgeComponents === "undefined") {
-                    continue;
-                }
-                for (const kc of step.knowledgeComponents) {
-                    if (typeof context.bktParams[kc] === "undefined") {
-                        console.log("BKT Parameter " + kc + " does not exist.");
-                        continue;
-                    }
-                    if (kc in this.lesson.learningObjectives) {
-                        isRelevant = true;
-                    }
-                    // Multiply all the mastery priors
-                    if (!(kc in context.bktParams)) {
-                        console.log("Missing BKT parameter: " + kc);
-                    }
-                    probMastery *= context.bktParams[kc].probMastery;
-                }
-            }
-            if (isRelevant) {
-                problem.probMastery = probMastery;
-            } else {
-                problem.probMastery = null;
-            }
-        }
-
-        console.debug(
-            `Platform.js: available problems ${problems.length}, completed problems ${this.completedProbs.size}`
-        );
+    if (!Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD)) {
+      this.setState({ status: "graduated" });
+      return null;
+    } else if (chosenProblem == null) {
+      if (this.lesson && !this.lesson.allowRecycle) {
+        this.setState({ status: "exhausted" });
+        return null;
+      } else {
+        this.completedProbs = new Set();
         chosenProblem = context.heuristic(problems, this.completedProbs);
-        console.debug("Platform.js: chosen problem", chosenProblem);
+      }
+    }
 
-        const objectives = Object.keys(this.lesson.learningObjectives);
-        console.debug("Platform.js: objectives", objectives);
-        let score = objectives.reduce((x, y) => {
-            return x + context.bktParams[y].probMastery;
-        }, 0);
-        score /= objectives.length;
-        this.displayMastery(score);
-        //console.log(Object.keys(context.bktParams).map((skill) => (context.bktParams[skill].probMastery <= this.lesson.learningObjectives[skill])));
-
-        // There exists a skill that has not yet been mastered (a True)
-        // Note (number <= null) returns false
-        if (
-            !Object.keys(context.bktParams).some(
-                (skill) =>
-                    context.bktParams[skill].probMastery <= MASTERY_THRESHOLD
-            )
-        ) {
-            this.setState({ status: "graduated" });
-            console.log("Graduated");
-            return null;
-        } else if (chosenProblem == null) {
-            console.debug("no problems were chosen");
-            // We have finished all the problems
-            if (this.lesson && !this.lesson.allowRecycle) {
-                // If we do not allow problem recycle then we have exhausted the pool
-                this.setState({ status: "exhausted" });
-                return null;
-            } else {
-                this.completedProbs = new Set();
-                chosenProblem = context.heuristic(
-                    problems,
-                    this.completedProbs
-                );
-            }
-        }
-
-        if (chosenProblem) {
-            this.setState({ currProblem: chosenProblem, status: "learning" });
-            // console.log("Next problem: ", chosenProblem.id);
-            console.debug("problem information", chosenProblem);
-            this.context.firebase.startedProblem(
-                chosenProblem.id,
-                chosenProblem.courseName,
-                chosenProblem.lesson,
-                this.lesson.learningObjectives
-            );
-            return chosenProblem;
-        } else {
-            console.debug("still no chosen problem..? must be an error");
-        }
-    };
+    if (chosenProblem) {
+      this.setState({ currProblem: chosenProblem, status: "learning" });
+      this.context.firebase.startedProblem(
+        chosenProblem.id,
+        chosenProblem.courseName,
+        chosenProblem.lesson,
+        this.lesson.learningObjectives
+      );
+      return chosenProblem;
+    }
+  };
 
     problemComplete = async (context) => {
         this.completedProbs.add(this.state.currProblem.id);
@@ -618,62 +600,397 @@ class Platform extends React.Component {
     };
 
 
-    displayMastery = (mastery) => {
-        this.setState({ mastery: mastery });
-        if (mastery >= MASTERY_THRESHOLD) {
-            toast.success("You've successfully completed this assignment!", {
-                toastId: ToastID.successfully_completed_lesson.toString(),
-            });
-        }
-    };
+  displayMastery = (mastery) => {
+    this.setState({ mastery: mastery });
+    if (mastery >= MASTERY_THRESHOLD) {
+      toast.success("You've successfully completed this assignment!", {
+        toastId: ToastID.successfully_completed_lesson.toString(),
+      });
+    }
+  };
 
-    render() {
-        const { translate } = this.props;
-        this.studentNameDisplay = this.context.studentName
-        ? decodeURIComponent(this.context.studentName) + " | "
-        : translate('platform.LoggedIn') + " | ";
-        return (
-            <div
-                style={{
-                    backgroundColor: "#F6F6F6",
-                    paddingBottom: 20,
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                <AppBar position="static">
-                    <Toolbar>
-                        <Grid
-                            container
-                            spacing={0}
-                            role={"navigation"}
-                            alignItems={"center"}
+  togglePopup() {
+    this.setState((prevState) => ({
+      showPopup: !prevState.showPopup,
+    }));
+  }
+
+  submitFeedback = () => {
+    const problem = this.state.currProblem;
+    this.context.firebase.submitFeedback(
+      problem.id,
+      this.state.feedback,
+      this.state.problemFinished,
+      chooseVariables(problem.variabilization, this.props.seed),
+      problem.courseName,
+      problem.steps,
+      problem.lesson
+    );
+    this.setState({ feedback: "", feedbackSubmitted: true });
+  };
+
+  toggleFeedback = () => {
+    this.setState(
+      (prevState) => ({
+        showFeedback: !prevState.showFeedback,
+      }),
+      () => {
+        if (this.state.showFeedback && !this.state.showpopup) {
+          scroll.scrollToBottom({ duration: 500, smooth: true });
+        }
+      }
+    );
+  };
+
+  toggleDrawer = (open) => {
+    try {
+      localStorage.setItem(TOC_DRAWER_OPEN_KEY, open ? "1" : "0");
+    } catch (e) {}
+    this.setState({ drawerOpen: open, hasAutoClosedDrawer: false });
+  };
+
+  getLessonMasteryMap = (courseName) => {
+    if (!courseName) return {};
+    const course = coursePlans.find((c) => c.courseName === courseName);
+    if (!course) return {};
+
+    const map = {};
+    for (const lesson of course.lessons) {
+      const kcs = Object.keys(lesson.learningObjectives || {});
+      if (kcs.length === 0) {
+        map[lesson.id] = 0;
+        continue;
+      }
+      let sum = 0;
+      let count = 0;
+      for (const kc of kcs) {
+        const m = this.context?.bktParams?.[kc]?.probMastery;
+        if (typeof m === "number" && !Number.isNaN(m)) {
+          sum += m;
+          count += 1;
+        }
+      }
+      map[lesson.id] = count ? sum / count : 0;
+    }
+    return map;
+  };
+
+  render() {
+    const { translate } = this.props;
+    const { showPopup } = this.state;
+    const { classes } = this.props;
+    const drawerWidth = 340;
+
+    this.studentNameDisplay = this.context.studentName ? decodeURIComponent(this.context.studentName) : translate("platform.LoggedIn");
+
+    const tocCourseName = this.state.selectedCourse?.courseName || findLessonById(this.props.lessonID)?.courseName;
+
+    const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
+    const inLesson = Boolean(this.props.lessonID);
+
+    // Shared, centered max-width container for BOTH progress area and problem area
+    const CONTAINER_MAX_WIDTH = "100vw";
+    const CONTAINER_STYLE = {
+      maxWidth: CONTAINER_MAX_WIDTH,
+      width: "100%",
+      margin: inLesson && this.state.drawerOpen ? "0 0 0 16px" : "0 0 0 32px",
+      padding: "0 16px",
+      boxSizing: "border-box",
+    };
+    const PROGRESS_GAP = 20;            // keep the same spacing you had before
+    const MAX_PROGRESS_BAR_WIDTH = 602;
+    const MIN_PROGRESS_BAR_WIDTH = 200;
+
+    return (
+      <>
+        {inLesson && (
+          <Drawer
+            variant="persistent"
+            anchor="left"
+            open={this.state.drawerOpen}
+            classes={{ paper: this.props.classes.drawerPaper }}
+            style={{ position: "fixed", width: 320, flexShrink: 0 }}
+            PaperProps={{ style: { padding: 0 } }}
+          >
+            <div style={{ width: drawerWidth, padding: 16 }}>
+              <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(false)}>
+                <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
+              </IconButton>
+
+              <TableOfContents
+                courseName={tocCourseName}
+                courseMastery={this.state.mastery || 0}
+                mastery={lessonMasteryMap}
+                onLessonClick={this.handleLessonClick}
+                selectedLessonId={this.props.lessonID}
+                drawerOpen={this.state.drawerOpen}
+              />
+            </div>
+          </Drawer>
+        )}
+
+        <div
+          style={{
+            backgroundColor: "#F6F6F6",
+            paddingBottom: 20,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          {/* Top bar: "OATutor" logo, user icon and name */}
+          <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF" }}>
+            <Toolbar>
+              <Grid container spacing={0} role={"navigation"} alignItems={"center"}>
+                <Grid item xs={3} key={1}>
+                  <BrandLogoNav isPrivileged={this.isPrivileged} />
+                </Grid>
+                <Grid item xs={5} key={2}></Grid>
+                <Grid xs={4} item key={3}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      alignItems: "center",
+                      gap: "9px",
+                      color: "#344054",
+                    }}
+                  >
+                    <img src={userIcon} alt="User Icon" />
+                    <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                  </div>
+                </Grid>
+              </Grid>
+            </Toolbar>
+          </AppBar>
+
+          <div className={classes.toolbarOffset} />
+          
+          {/* Second top bar:  course name, about and report problem buttons */}
+          <AppBar position="fixed" className={classes.secondBarOffset}>
+            <Toolbar style={{ minHeight: "56px" }}>
+              <Grid container spacing={0} role={"secondary-navigation"} alignItems={"center"}>
+                <Grid item xs={9} key={1}>
+                  {this.state.selectedCourse ? (
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "center",
+                        gap: "8px",
+                      }}
+                    >
+                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back">
+                        <img src={leftArrow} alt="Back Arrow" />
+                      </IconButton>
+
+                      <div style={{ fontWeight: 600 }}> {this.state.selectedCourse.courseName} </div>
+                    </div>
+                  ) : findLessonById(this.props.lessonID) ? (
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "center",
+                        gap: "8px",
+                      }}
+                    >
+                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back">
+                        <img src={leftArrow} alt="Back Arrow" />
+                      </IconButton>
+
+                      <div style={{ fontWeight: 600 }}> {findLessonById(this.props.lessonID).courseName} </div>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </Grid>
+
+                <Grid xs={3} item key={3}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexGrow: 1,
+                      justifyContent: "flex-end",
+                      border: "none",
+                    }}
+                  >
+                    <IconButton aria-label="about" title={`About ${SITE_NAME}`} onClick={this.togglePopup}>
+                      <HelpOutlineOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 36, margin: -2 }} />
+                    </IconButton>
+
+                    {this.state.status === "learning" && (
+                      <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
+                        <FeedbackOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 32 }} />
+                      </IconButton>
+                    )}
+                  </div>
+                  <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                    <About />
+                  </Popup>
+                </Grid>
+              </Grid>
+            </Toolbar>
+          </AppBar>
+
+          <div style={{ height: 56 }} />
+
+          {/* Progress Bar */}
+          <div
+            style={{
+              marginLeft: inLesson && this.state.drawerOpen ? drawerWidth : 0,
+              transition: "margin 0.1s ease",
+            }}
+          >
+            {this.state.status === "learning" ? (
+              <AppBar position="sticky" style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 1, marginLeft: "16px" }}>
+                <Toolbar disableGutters style={{ minHeight: 80 }}>
+                  <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
+                    {!this.state.drawerOpen && (
+                      <IconButton
+                        aria-label="Table of Contents Toggle"
+                        onClick={() => this.toggleDrawer(true)}
+                        disabled={this.state.drawerOpen}
+                        style={{ position: "absolute", left: 24, top: "50%", transform: "translateY(-50%)" }}
+                      >
+                        <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
+                      </IconButton>
+                    )}
+                    
+                    <Grid item xs={12}>
+                      <div style={CONTAINER_STYLE}>
+                        {/* One centered row, 3 columns: [label] [bar (min..max)] [info] */}
+                        <div
+                          style={{
+                            display: "grid",
+                            // Middle column gets a real width range so it NEVER collapses
+                            gridTemplateColumns: `auto minmax(${MIN_PROGRESS_BAR_WIDTH}px, ${MAX_PROGRESS_BAR_WIDTH}px) auto`,
+                            alignItems: "center",
+                            justifyContent: "center",    // center the whole trio as a group
+                            columnGap: PROGRESS_GAP,
+                            width: "100%",
+                            maxWidth: "100%",
+                          }}
                         >
-                            <Grid item xs={3} key={1}>
-                                <BrandLogoNav
-                                    isPrivileged={this.isPrivileged}
-                                />
-                            </Grid>
-                            <Grid item xs={6} key={2}>
-                                <div
+                          {/* Left: lightning + label */}
+                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                            <img
+                              src="/place-holder/static/images/icons/mastery-bolt.png"
+                              alt="Mastery Icon"
+                              width={20}
+                              height={20}
+                              style={{ display: "block" }}
+                            />
+                            <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500, color: "#000" }}>
+                              Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
+                            </span>
+                          </div>
+
+                          {/* Middle: progress bar (cannot collapse; capped at MAX_PROGRESS_BAR_WIDTH) */}
+                          <div style={{ minWidth: 0 /* allow inner 100% to shrink within minmax */ }}>
+                            <ProgressTooltip
+                              arrow
+                              placement="bottom"
+                              interactive
+                              title={
+                                <div style={{ width: "100%", boxSizing: "border-box" }}>
+                                  <div
                                     style={{
-                                        textAlign: "center",
-                                        textAlignVertical: "center",
-                                        paddingTop: "3px",
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "space-between",
+                                      marginBottom: 8,
+                                      lineHeight: "28px",
                                     }}
-                                >
-                                    {Boolean(
-                                        findLessonById(this.props.lessonID)
-                                    )
-                                        ? findLessonById(this.props.lessonID)
-                                              .name +
-                                          " " +
-                                          findLessonById(this.props.lessonID)
-                                              .topics
-                                        : ""}
+                                  >
+                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>Learning Objectives:</div>
+                                    {(() => {
+                                      const keys = Object.keys(this.lesson?.learningObjectives || {});
+                                      const mastered = keys.filter(
+                                        (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+                                      ).length;
+                                      return (
+                                        <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                                          <img src="/place-holder/static/images/icons/mastery-bolt.png" alt="" width={20} height={20} />
+                                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                                            {mastered}/{keys.length}
+                                          </div>
+                                        </div>
+                                      );
+                                    })()}
+                                  </div>
+
+                                  {Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
+                                    const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+                                    const pct = Math.round(mastery * 100);
+                                    const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+                                    return (
+                                      <div key={kc} style={{ marginBottom: 12 }}>
+                                        <div
+                                          style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "space-between",
+                                            marginBottom: 4,
+                                          }}
+                                        >
+                                          <div
+                                            title={label}
+                                            style={{
+                                              fontFamily: "Inter, sans-serif",
+                                              fontSize: 12,
+                                              fontWeight: 500,
+                                              overflow: "hidden",
+                                              textOverflow: "ellipsis",
+                                              whiteSpace: "nowrap",
+                                              marginRight: 8,
+                                            }}
+                                          >
+                                            {label}
+                                          </div>
+                                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 500, whiteSpace: "nowrap" }}>
+                                            {pct}%
+                                          </div>
+                                        </div>
+
+                                        <div
+                                          style={{
+                                            width: "100%",
+                                            height: 8,
+                                            backgroundColor: "#E8EDEC",
+                                            borderRadius: 4,
+                                            overflow: "hidden",
+                                          }}
+                                        >
+                                          <div
+                                            style={{
+                                              width: `${pct}%`,
+                                              height: "100%",
+                                              backgroundColor: "#83CDC1",
+                                              transition: "width 0.3s ease-in-out",
+                                            }}
+                                          />
+                                        </div>
+                                      </div>
+                                    );
+                                  })}
                                 </div>
-                            </Grid>
-                            <Grid item xs={3} key={3}>
+                              }
+                            >
+                              {/* Track fills the minmax column width (never 0, never > MAX) */}
+                              <div
+                                role="progressbar"
+                                aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
+                                aria-valuemin={0}
+                                aria-valuemax={100}
+                                style={{
+                                  width: "100%",
+                                  height: 16,
+                                  backgroundColor: "#E8EDEC",
+                                  borderRadius: 18,
+                                  overflow: "hidden",
+                                  cursor: "pointer",
+                                }}
+                              >
                                 <div
                                     style={{
                                         textAlign: "right",
