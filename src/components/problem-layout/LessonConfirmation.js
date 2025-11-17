@@ -1,5 +1,5 @@
 // src/pages/LessonConfirmation.js
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import {
   AppBar,
   Toolbar,
@@ -11,6 +11,7 @@ import {
   Checkbox,
   FormControlLabel,
   IconButton,
+  CircularProgress,
 } from "@material-ui/core";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { withStyles } from "@material-ui/core/styles";
@@ -21,7 +22,7 @@ import Popup from "@components/Popup/Popup";
 import About from '../../pages/Posts/About';
 
 import styles from "./common-styles.js";
-import { findLessonById, SHOW_COPYRIGHT, SITE_NAME } from '../../config/config.js';
+import { findLessonById, SHOW_COPYRIGHT, SITE_NAME, USER_ID_STORAGE_KEY, MIDDLEWARE_URL, coursePlans } from '../../config/config.js';
 
 const DURATION_MS = 15000;
 const TICK_MS = 100;
@@ -41,6 +42,9 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
   const [ack, setAck] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+  const [personalizedMessage, setPersonalizedMessage] = useState("");
+  const [personalizationLoading, setPersonalizationLoading] = useState(false);
+  const [personalizationError, setPersonalizationError] = useState(null);
 
   const rafRef = useRef(null);
   const startRef = useRef(null);
@@ -56,6 +60,117 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
   );
 
   const canStart = ack && timerDone;
+
+  const resolveCourseKey = () => {
+    if (!lesson?.courseName) return null;
+    const idx = coursePlans.findIndex(
+      (course) => course.courseName === lesson.courseName
+    );
+    return idx > -1 ? String(idx) : null;
+  };
+
+  const loadIntakeResponses = () => {
+    if (typeof window === "undefined") return null;
+    try {
+      const userId =
+        window?.appFirebase?.oats_user_id ||
+        localStorage.getItem(USER_ID_STORAGE_KEY);
+      if (!userId) return null;
+      const courseKey = resolveCourseKey();
+      if (courseKey == null) return null;
+      const storageKey = `intake:${userId}:course:${courseKey}`;
+      const stored = localStorage.getItem(storageKey);
+      if (!stored) return null;
+      const parsed = JSON.parse(stored);
+      return {
+        motivation: parsed.q1 || "",
+        enrollmentReason: parsed.q2 || "",
+        personalChoice: parsed.q2 || "",
+        desiredField: parsed.q3 || "",
+      };
+    } catch (error) {
+      console.debug("Unable to load intake responses", error);
+      return null;
+    }
+  };
+
+  const buildLessonSummary = () => {
+    if (!lesson) return "";
+    const parts = [];
+    if (lesson.topics) {
+      parts.push(`Topics: ${lesson.topics}`);
+    }
+    if (lesson.description) {
+      parts.push(lesson.description);
+    }
+    if (lesson.courseName) {
+      parts.push(`Course: ${lesson.courseName}`);
+    }
+    const objectives = Object.keys(lesson.learningObjectives || {});
+    if (objectives.length) {
+      parts.push(`Learning objectives covered: ${objectives.length}`);
+    }
+    return parts.join(" | ");
+  };
+
+  const fetchPersonalizedMessage = useCallback(async () => {
+    if (!lesson) return;
+    const intakePayload = loadIntakeResponses();
+    if (!intakePayload) {
+      setPersonalizedMessage("");
+      return;
+    }
+    setPersonalizationLoading(true);
+    setPersonalizationError(null);
+    const requestBody = {
+      motivation: intakePayload.motivation || "",
+      enrollmentReason: intakePayload.enrollmentReason || "",
+      personalChoice: intakePayload.personalChoice || "",
+      desiredField: intakePayload.desiredField || "",
+      lessonTitle: lesson.name || lesson.title || "Your Lesson",
+      lessonContent: buildLessonSummary(),
+    };
+    try {
+      const response = await fetch(
+        `${MIDDLEWARE_URL}/api/generate-personalized-message`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestBody),
+        }
+      );
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(errorText || "Failed to personalize");
+      }
+      const data = await response.json();
+      const message = data?.message?.trim();
+      if (!message) {
+        setPersonalizedMessage("");
+        setPersonalizationError(
+          "We couldn't personalize this lesson right now, but you can still continue."
+        );
+      } else {
+        setPersonalizedMessage(message);
+      }
+    } catch (error) {
+      console.error("Failed to fetch personalized message", error);
+      setPersonalizedMessage("");
+      setPersonalizationError(
+        "We couldn't personalize this lesson right now, but you can still continue."
+      );
+    } finally {
+      setPersonalizationLoading(false);
+    }
+  }, [lesson]);
+
+  useEffect(() => {
+    if (lesson) {
+      fetchPersonalizedMessage();
+    }
+  }, [lesson, fetchPersonalizedMessage]);
 
   useEffect(() => {
     let lastTick = 0;
@@ -134,11 +249,32 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
               align="center"
               style={{ fontWeight: 700, marginBottom: 8 }}
             >
-              How This Lesson Supports Your Career in [xxx]
+              How This Lesson Supports Your Career
             </Typography>
-            <Typography variant="body1" align="left" color="textSecondary">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
+            {personalizationLoading ? (
+              <Box display="flex" alignItems="center" justifyContent="center" py={2}>
+                <CircularProgress size={24} />
+                <Typography
+                  variant="body2"
+                  style={{ marginLeft: 12 }}
+                  color="textSecondary"
+                >
+                  Crafting a personalized orientation for you...
+                </Typography>
+              </Box>
+            ) : personalizationError ? (
+              <Typography variant="body1" align="left" color="textSecondary">
+                {personalizationError}
+              </Typography>
+            ) : personalizedMessage ? (
+              <Typography variant="body1" align="left" color="textSecondary">
+                {personalizedMessage}
+              </Typography>
+            ) : (
+              <Typography variant="body1" align="left" color="textSecondary">
+                This lesson will help you build the skills you need to achieve your career goals.
+              </Typography>
+            )}
           </Box>
 
           <Box
