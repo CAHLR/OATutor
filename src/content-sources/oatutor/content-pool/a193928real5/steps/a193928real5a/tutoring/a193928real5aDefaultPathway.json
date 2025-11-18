@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a193928real5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Even Roots",
+        "text": "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a193928real5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a193928real5a-h1"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Set the radicand greater than or equal to zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a193928real5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[2, inf)"
+        ],
+        "dependencies": [
+            "a193928real5a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Solve the inequation $$x-2 \\geq 0$$. Express the solution in the form of interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(2,\\infty)$$",
+            "$$(2,\\infty]$$",
+            "$$[2,\\infty]$$",
+            "$$[2,\\infty)$$"
+        ]
+    }
+]

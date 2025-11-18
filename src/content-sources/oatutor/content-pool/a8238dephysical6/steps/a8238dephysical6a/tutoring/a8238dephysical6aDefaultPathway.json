@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8238dephysical6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convertinging Feet to Inches",
+        "text": "Convert the person's height from ft to inches, as we know $$12$$ $$inches=1$$ ft.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a8238dephysical6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$73$$ in"
+        ],
+        "dependencies": [
+            "a8238dephysical6a-h1"
+        ],
+        "title": "Find the Conversion Factor from Feet to Inches",
+        "text": "What is (6 ft * $$12$$ in/ft) + $$1$$ in?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$72$$ in",
+            "$$73$$ in",
+            "$$84$$ in",
+            "$$72$$ ft"
+        ]
+    },
+    {
+        "id": "a8238dephysical6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8238dephysical6a-h2"
+        ],
+        "title": "Convertinging Inches to Meters",
+        "text": "Convert the height from inches to meters, as we know $$1$$ $$meter=39.37$$ in.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a8238dephysical6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.85$$ $$m$$"
+        ],
+        "dependencies": [
+            "a8238dephysical6a-h3"
+        ],
+        "title": "Multiplying by the Conversion Factor",
+        "text": "What is $$73$$ in * $$\\frac{1}{39.37}$$ m/in?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1.85$$ $$m$$",
+            "$$1.85$$ ft",
+            "$$185$$ in",
+            "$$18.5$$ $$m$$"
+        ]
+    }
+]

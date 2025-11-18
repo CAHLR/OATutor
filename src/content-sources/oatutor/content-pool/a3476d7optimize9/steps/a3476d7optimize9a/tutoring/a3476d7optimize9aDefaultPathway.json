@@ -1,0 +1,276 @@
+[
+    {
+        "id": "a3476d7optimize9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Surface Area",
+        "text": "Let S equal the surface area of the box. Find the equation that represents S.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4x y+x^2$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h1"
+        ],
+        "title": "$$S=___$$?",
+        "text": "What is $$S=___$$ in terms of $$x$$ and $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$4x y+x^2$$",
+            "$$4x y+y^2$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize9a-h2"
+        ],
+        "title": "Volume",
+        "text": "Let V equal the volume of the box. Find the equation that represents $$V=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2 y$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h3"
+        ],
+        "title": "$$V=___$$?",
+        "text": "In terms of the box's dimensions, what is V in terms of $$x$$ and $$y$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "216"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h4"
+        ],
+        "title": "Volume",
+        "text": "According to the information provided in the problem, $$V=216$$. Therefore, $$x^2 y$$ equals what numeric value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize9a-h5"
+        ],
+        "title": "S(x)",
+        "text": "Rewrite the surface area equation as a function in terms of $$x$$ only.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{216}{x^2}$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h6"
+        ],
+        "title": "Solving for $$y$$",
+        "text": "Solving for the constraint equation for $$y$$, $$y=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{216}{x^2}$$",
+            "$$\\frac{216}{x}$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{864}{x}+x^2$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h7"
+        ],
+        "title": "Subsitute $$y$$",
+        "text": "Substitute $$y$$ in $$4xy+x^2$$ with $$y=\\frac{216}{x^2}$$. Thus, we can rewrite $$S(x)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize9a-h8"
+        ],
+        "title": "Domain",
+        "text": "Find the domain of interest.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h9"
+        ],
+        "title": "Left Endpoint",
+        "text": "Because we need $$x^2 y=216$$, also written as $$y=\\frac{216}{x^2}$$, we cannot have $$x=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h10"
+        ],
+        "title": "Right Endpoint",
+        "text": "Fill in the blank. X is allowed to have any $$___$$ value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "positive and negative"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,\\infty)$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h11"
+        ],
+        "title": "Domain in Mathmatical Connotation",
+        "text": "Write the domain in this format. Ex: \"[3, 8)\"",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$(0,\\infty)$$",
+            "$$(-\\infty,\\infty)$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a3476d7optimize9a-h12"
+        ],
+        "title": "Find Critical Point",
+        "text": "Find the x-value for when S(x) is at a minimum by finding the derivative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3476d7optimize9a-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\left(\\frac{864}{x^2}\\right)+2x$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h13"
+        ],
+        "title": "Find S'(x)",
+        "text": "What is S'(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-\\left(\\frac{864}{x^2}\\right)+2x$$",
+            "$$-\\left(\\frac{864}{x^2}\\right)$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6\\sqrt[3]{2}$$"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h14"
+        ],
+        "title": "Find $$S'(x)=0$$",
+        "text": "Set $$S'(x)=0$$ to find the critical point and solve for $$x$$. $$X=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$6\\sqrt[3]{2}$$",
+            "$$6\\sqrt{2}$$"
+        ]
+    },
+    {
+        "id": "a3476d7optimize9a-h16",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "True"
+        ],
+        "dependencies": [
+            "a3476d7optimize9a-h15"
+        ],
+        "title": "Max or Min",
+        "text": "$$x=6\\sqrt[3]{2}$$ is the only critical point of S and the absolute minimum. True or False?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "False",
+            "True"
+        ]
+    }
+]

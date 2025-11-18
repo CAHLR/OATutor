@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a66decea2d77b8chainrule8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Kedjeregeln",
+        "text": "Kom ih\u00e5g, kedjeregeln i Leibniz notation s\u00e4ger oss att $$\\frac{dy}{dx}=\\frac{dy}{du$$} $$\\frac{du}{dx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h1"
+        ],
+        "title": "Dekomponera funktionen",
+        "text": "F\u00f6rst beh\u00f6ver vi dela upp v\u00e5r funktion $$y$$ i formen $$y=f(u)$$ och $$u=g(x)$$, $$f\u00f6rs\u00f6k$$ $$att$$ $$hitta$$ $$vad$$ $$f(u)$$ $$och$$ $$g(x)$$ $$b\u00f6r$$ $$vara$$ $$i$$ $$detta$$ $$fall!$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$u^7$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h2"
+        ],
+        "title": "Hitta f(u)",
+        "text": "Vad \u00e4r f(u)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x}{7$$} + $$\\frac{7}{x}$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h3"
+        ],
+        "title": "Hitta g(x)",
+        "text": "Vad \u00e4r g(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h4"
+        ],
+        "title": "Hitta derivatan",
+        "text": "N\u00e4sta tar vi derivatan av f(u) med avseende p\u00e5 u, $$\\frac{dy}{du}$$, $$och$$ $$derivatan$$ $$av$$ $$g(x)$$ $$med$$ $$avseende$$ $$p\u00e5$$ $$x$$, $$\\frac{du}{dx}$$. $$Att$$ $$multiplicera$$ $$dessa$$ $$tv\u00e5$$ $$uttryck$$ $$tillsammans$$ $$ger$$ $$v\u00e5rt$$ $$slutgiltiga$$ $$svar$$, dy/dx!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7u^6$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h5"
+        ],
+        "title": "Hitta $$\\frac{dy}{du}$$",
+        "text": "Vad \u00e4r $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{7$$} $$-$$ \\frac{7}{x**2}$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h6"
+        ],
+        "title": "Hitta $$\\frac{du}{dx}$$",
+        "text": "Vad \u00e4r $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a66decea2d77b8chainrule8a-h7"
+        ],
+        "title": "S\u00e4tt in",
+        "text": "Slutligen beh\u00f6ver vi bara multiplicera dessa tv\u00e5 uttryck f\u00f6r att hitta v\u00e5rt slutgiltiga svar. Gl\u00f6m inte att s\u00e4tta in vad vi har f\u00f6r u i termer av $$x$$ i v\u00e5rt slutgiltiga svar!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

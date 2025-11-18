@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a2e88ferotational8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find Initial and Final Angular Velocities",
+        "text": "Based on the knowledge of the Earth and the definition of angular velocity, we know that the inital velocity is $$\\omega_i=\\frac{1rev}{24} hrs=\\frac{7.27\\times{10}^{\\left(-5\\right)} rad}{s}$$ while the final velocity is $$\\omega_f=\\frac{1rev}{28} hrs=\\frac{6.23\\times{10}^{\\left(-5\\right)} rad}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2e88ferotational8a-h1"
+        ],
+        "title": "Kinematics of Rotational Motion",
+        "text": "Based on the formula \u03c9_f=\u03c9_i+\\alpha*t, we see that $$t=$$ (\u03c9_f-\u03c9_i)/\\alpha. Thus, to get the $$t$$ we want, first we need to calculate the angular acceleration \\alpha using the formula \u03c4=I*\\alpha, where I is the moment of inertia and \u03c4 is the net torque.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.71\\times{10}^{37}$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational8a-h2"
+        ],
+        "title": "Calculate the Moment of Inertia of the Earth",
+        "text": "The moment of inertia \ud835\udc3c of a solid sphere is given by: $$I=\\frac{2}{5} m r^2$$. Plug in the value of Earth's mass $$5.97\\times{10}^{24} kg$$ and radius $$6.378\\times{10}^6 m$$. What is the moment of inertia in $$kg m^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.63\\times{10}^{-24}$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational8a-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "As $$\\alpha=\\frac{\\tau}{I}=\\frac{F r}{I}$$, what is $${10}^{37}\\frac{4\\times{10}^7\\times6.378\\times{10}^6}{9.71}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3.96$$ * $${10}^{18}$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational8a-h4"
+        ],
+        "title": "Calculate for Time",
+        "text": "Plug in the values and calculate for $$t=$$ (\u03c9_f-\u03c9_i)/\\alpha.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$3.96$$ * $${10}^{18}$$",
+            "$$4.87$$ * $${10}^{18}$$",
+            "$$3.96$$ * $${10}^{17}$$",
+            "$$4.87$$ * $${10}^{17}$$"
+        ]
+    }
+]

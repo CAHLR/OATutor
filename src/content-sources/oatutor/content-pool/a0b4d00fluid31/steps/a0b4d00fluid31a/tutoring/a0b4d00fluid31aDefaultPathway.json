@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a0b4d00fluid31a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate to Viscosity",
+        "text": "To determine the new flow rate when the viscosity of the fluid changes, we can use Poiseuille's Law, which states that the flow rate Q is inversely proportional to the viscosity \u03b7 of the fluid.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid31a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0b4d00fluid31a-h1"
+        ],
+        "title": "Set Up the Proportion",
+        "text": "$$\\frac{Q_2}{Q_1}=\\frac{\\eta_1}{\\eta_2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid31a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid31a-h2"
+        ],
+        "title": "Solve for the New Flow Rate $$Q_2$$",
+        "text": "As we know $$\\eta_2=2.5\\eta_1$$, and $$Q_1=\\frac{4{cm}^3}{min}$$, what is $$Q_2$$ in cm**3.min?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

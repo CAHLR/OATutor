@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ab19046LimitlLaw14a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Plug In $$h=0$$ and Solve for $$h$$",
+        "text": "Plug in the $$h$$ value to the function $$\\left(1+h\\right)^2-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw14a-h1"
+        ],
+        "title": "Plug In $$h=0$$ and Solve for $$\\frac{\\left(1+h\\right)^2-1}{h}$$",
+        "text": "Plug in the $$h$$ value to the function $$h$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw14a-h2"
+        ],
+        "title": "Expand $$\\left(1+h\\right)^2-1$$",
+        "text": "$$h^2+2h$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw14a-h3"
+        ],
+        "title": "Simplify the Whole Function",
+        "text": "$$\\frac{h^2+2h}{h}=h+2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw14a-h4"
+        ],
+        "title": "Plug In $$h=0$$ for Result",
+        "text": "$$0+2=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a649252angle20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The useful formula here is: $${cos}^{2\\left(\\theta\\right)}=\\frac{1+cos\\left(2\\theta\\right)}{2}$$ and $${sin}^{\\theta}=\\frac{1-cos\\left(2\\theta\\right)}{2}$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle20a-h1"
+        ],
+        "title": "Using the sin formula above, rewrite $${sin}^{4\\left(x\\right)}$$ as $$\\left(\\frac{1-cos\\left(2x\\right)}{2}\\right)^2$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle20a-h2"
+        ],
+        "title": "Use the cosine formula on $${cos}^{2\\left(x\\right)}$$. Then, expand the numerator after using the sin formula from earlier, and use the cosine formula on $${cos}^{2\\left(2x\\right)}$$. After multiplying together, you will have to use the cosine formula one more time on $${cos}^{3\\left(2x\\right)}$$. Using algebra, simplify from here.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

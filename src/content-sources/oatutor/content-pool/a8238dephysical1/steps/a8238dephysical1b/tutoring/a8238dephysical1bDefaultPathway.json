@@ -1,0 +1,39 @@
+[
+    {
+        "id": "a8238dephysical1b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$01:01.6$$"
+        ],
+        "dependencies": [],
+        "title": "Find the Conversion Factor",
+        "text": "What is the conversion ratio between km and mile?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8238dephysical1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$62.1$$ $$\\frac{mi}{h}$$"
+        ],
+        "dependencies": [
+            "a8238dephysical1b-h1"
+        ],
+        "title": "Convertinging $$\\frac{km}{h}$$ to $$\\frac{mi}{h}$$",
+        "text": "Multiply by the conversion factors. What is $$0.621$$ $$\\frac{mi}{km}$$ * $$100$$ $$\\frac{km}{h}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$62.1$$ $$\\frac{h}{mi}$$",
+            "$$6.21$$ $$\\frac{mi}{h}$$",
+            "$$62.1$$ $$\\frac{mi}{h}$$"
+        ]
+    }
+]

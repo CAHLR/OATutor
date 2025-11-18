@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a0b4d00fluid23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Continuity Equation",
+        "text": "The continuity equation states $$Q=A_1 v_1$$ $$=$$ $$A_2 v_2$$ where $$A_1$$ and $$v_1$$ are the cross-sectional area and velocity of the water in the hose and $$A_2$$ and $$v_2$$ are the cross-sectional area and velocity of the water in the nozzle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid23a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6.36\\times{10}^{\\left(-3\\right)}$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid23a-h1"
+        ],
+        "title": "Calculate the Cross-Sectional Areas $$A_1$$",
+        "text": "The formula for the area of a circle is: A $$=$$ $${pir}^2$$. For the fire hose with a DIAMETER of $$9.00$$ cm, what is $$A_1$$ in $$m^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2.68\\times{10}^{\\left(-3\\right)}$$",
+            "$$6.36\\times{10}^{\\left(-3\\right)}$$",
+            "$$5\\times{10}^{\\left(-3\\right)}$$",
+            "$$2.01\\times{10}^{\\left(-2\\right)}$$"
+        ]
+    },
+    {
+        "id": "a0b4d00fluid23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7.07\\times{10}^{\\left(-4\\right)}$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid23a-h1"
+        ],
+        "title": "Calculate the Cross-Sectional Areas $$A_2$$",
+        "text": "The formula for the area of a circle is: A $$=$$ $${pir}^2$$. For the nozzle with a DIAMETER of $$3.00$$ cm, what is $$A_2$$ in $$m^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$3.08\\times{10}^{\\left(-3\\right)}$$",
+            "$$6.36\\times{10}^{\\left(-3\\right)}$$",
+            "$$5\\times{10}^{\\left(-3\\right)}$$",
+            "$$7.07\\times{10}^{\\left(-4\\right)}$$"
+        ]
+    },
+    {
+        "id": "a0b4d00fluid23a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6.3, 56.6$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid23a-h3"
+        ],
+        "title": "Use the Continuity Equation to Find the Velocities",
+        "text": "As $$Q=\\frac{40L}{s}$$, what is $$v_1=\\frac{Q}{A_1}$$ and $$v_2=\\frac{Q}{A_2}$$ in $$\\frac{m^3}{s}$$? (keep one decimal place)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$6.3, 56.6$$",
+            "$$23, 5.66$$",
+            "$$63, 56.6$$",
+            "$$6.3, 5.66$$"
+        ]
+    },
+    {
+        "id": "a0b4d00fluid23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1582$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid23a-h4"
+        ],
+        "title": "Use Bernoulli\u2019s Equation to Calculate the Pressure Drop",
+        "text": "Bernoulli\u2019s equation is: $$P_1$$ + \\frac{1}{2} \\rho $${v_1}^2$$ $$=$$ $$P_2$$ + \\frac{1}{2} \\rho $${v_2}^2$$. Rearranging for the pressure drop $$\u0394P=P_1-P_2$$. Assuming the density of water $$\ud835\udf0c=\\frac{1000kg}{m^3}$$, what is \u0394P in kPa?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

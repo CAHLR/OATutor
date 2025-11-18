@@ -1,0 +1,158 @@
+[
+    {
+        "id": "ab3bde5multistep11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplification",
+        "text": "Simplify each side of the equation as much as possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h1"
+        ],
+        "title": "Simplification",
+        "text": "Use the distributive property to simplify each side of the equation to get $$2u+1=7-u$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h2"
+        ],
+        "title": "Variable Terms",
+        "text": "Collect all variable terms on the left side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h3"
+        ],
+        "title": "Addition property of equality",
+        "text": "When you add the same quantity to both sides of an equation, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h4"
+        ],
+        "title": "Addition",
+        "text": "Add u to each side of the equation to get $$3u+1=7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h5"
+        ],
+        "title": "Constant Terms",
+        "text": "Collect all constant terms on the right side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h6"
+        ],
+        "title": "Subtraction property of equality",
+        "text": "When you subtract the same quantity from both sides of an equation, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h7"
+        ],
+        "title": "Subtraction",
+        "text": "Subtract $$1$$ from each side to get $$3u=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h8"
+        ],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ab3bde5multistep11a-h9"
+        ],
+        "title": "Division",
+        "text": "What is $$6$$ divided by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ab3bde5multistep11a-h10"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab3bde5multistep11a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "True"
+        ],
+        "dependencies": [
+            "ab3bde5multistep11a-h11"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$\\frac{1}{3} \\left(6\\times2+3\\right)$$ equals $$7-2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

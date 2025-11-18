@@ -1,0 +1,57 @@
+[
+    {
+        "id": "acff542gra1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We substitute $$x=3$$ and $$y=1$$ into both inequalities.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acff542gra1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra1b-h1"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "$$x+4y \\geq 10$$\\n$$3+4\\times1 \\geq 10$$\\n$$7 \\geq 10$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acff542gra1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acff542gra1b-h2"
+        ],
+        "title": "Substitute into First Equation",
+        "text": "Is the inequality above true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "T",
+            "F"
+        ]
+    },
+    {
+        "id": "acff542gra1b-h4",
+        "type": "hint",
+        "dependencies": [
+            "acff542gra1b-h3"
+        ],
+        "title": "Solutions of a System of Equations",
+        "text": "Since $$(3,1)$$ does not satisfy the first inequality, then it cannot make both inequalities true. $$(3,1)$$ is not a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
