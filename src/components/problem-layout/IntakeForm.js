@@ -11,6 +11,10 @@ import {
   Typography,
   TextField,
   Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
   makeStyles,
 } from "@material-ui/core";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
@@ -73,6 +77,7 @@ export default function IntakeForm() {
   const { courseNum } = useParams();
 
   const [showPopup, setShowPopup] = useState(false);
+  const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [form, setForm] = useState({
     q1: "",
     q2: "",
@@ -80,6 +85,13 @@ export default function IntakeForm() {
   });
   // DOM-visible stored payload used for test assertions
   const [stored, setStored] = useState(null);
+
+  /**
+   * Handles form submission by saving intake responses to localStorage
+   * and showing a confirmation modal before navigating to course selection.
+   * 
+   * @author Aritro Datta
+   */
 
   const headerTitle = `Course Intake Form`;
 
@@ -104,7 +116,16 @@ export default function IntakeForm() {
         JSON.stringify({ ...form, ts: Date.now() })
       );
     } catch {}
-    // After submission, go back to course selection (parent will handle navigation)
+    setShowSubmitModal(true);
+  };
+
+  /**
+   * Closes the submission confirmation modal and navigates to course selection.
+   * 
+   * @author Aritro Datta
+   */
+  const handleSubmitModalClose = () => {
+    setShowSubmitModal(false);
     history.push(`/courses/${courseNum}`);
   };
 
@@ -264,6 +285,23 @@ export default function IntakeForm() {
       <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
         <About />
       </Popup>
+      <Dialog
+        open={showSubmitModal}
+        onClose={handleSubmitModalClose}
+        aria-labelledby="intake-submitted-title"
+      >
+        <DialogTitle id="intake-submitted-title">Thanks for sharing!</DialogTitle>
+        <DialogContent dividers>
+          <Typography variant="body2" color="textSecondary">
+            We saved your responses. Next, you&apos;ll head back to the course list to begin your lesson.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button color="primary" onClick={handleSubmitModalClose}>
+            Continue
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }

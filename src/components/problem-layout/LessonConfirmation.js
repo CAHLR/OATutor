@@ -114,6 +114,12 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
     return parts.join(" | ");
   };
 
+  /**
+   * Fetches personalized lesson message and industry from the backend API.
+   * Uses student intake responses to generate personalized orientation content.
+   * 
+   * @author Aritro Datta
+   */
   const fetchPersonalizedMessage = useCallback(async () => {
     if (!lesson) return;
     const intakePayload = loadIntakeResponses();
@@ -149,7 +155,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
       }
       const data = await response.json();
       const message = data?.message?.trim();
-      const industry = data?.industry?.trim() || "Your Chosen Field";
+      const industry = data?.industry?.trim() || "";
       if (!message) {
         setPersonalizedMessage("");
         setExtractedIndustry("");
@@ -255,7 +261,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
               align="center"
               style={{ fontWeight: 700, marginBottom: 8 }}
             >
-              How This Lesson Supports Your Career in {extractedIndustry || "Your Chosen Field"}
+              How This Lesson Supports Your Career in {extractedIndustry}
             </Typography>
             {personalizationLoading ? (
               <Box display="flex" alignItems="center" justifyContent="center" py={2}>

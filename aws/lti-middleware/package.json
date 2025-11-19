@@ -4,6 +4,8 @@
   "description": "LTI server",
   "main": "server.js",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.932.0",
+    "@aws-sdk/lib-dynamodb": "^3.932.0",
     "@common/global-config": "file:../common",
     "await-to-js": "~3.0.0",
     "aws-serverless-express": "^3.4.0",
