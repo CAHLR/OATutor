@@ -38,6 +38,7 @@ import About from '../../pages/Posts/About.js';
 
 import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AgentIntegration from './AgentIntegration';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -1070,8 +1071,58 @@ class Problem extends React.Component {
                     )} */}
                     
                 </footer>
+
+                {/* AI Agent Chatbot */}
+                <AgentIntegration
+                    problem={problem}
+                    lesson={this.props.lesson}
+                    seed={seed}
+                    problemVars={this.props.problemVars}
+                    stepStates={this.state.stepStates}
+                    bktParams={this.bktParams}
+                    getActiveStepData={this.getActiveStepData}
+                    user={this.props.user}
+                />
             </>
         );
+    }
+
+    /**
+     * Find the step that needs help (first incorrect or last attempted)
+     * Used by AI Agent to determine which step student is working on
+     */
+    getActiveStepData = () => {
+        const { problem } = this.props;
+        const { stepStates } = this.state;
+        
+        // Find first incorrect step
+        for (let i = 0; i < problem.steps.length; i++) {
+            if (stepStates[i] === false) {
+                return {
+                    step: problem.steps[i],
+                    stepIndex: i,
+                    isIncorrect: true
+                };
+            }
+        }
+        
+        // If no incorrect, find last attempted step
+        const attemptedIndices = Object.keys(stepStates).map(k => parseInt(k));
+        if (attemptedIndices.length > 0) {
+            const lastAttempted = Math.max(...attemptedIndices);
+            return {
+                step: problem.steps[lastAttempted],
+                stepIndex: lastAttempted,
+                isIncorrect: false
+            };
+        }
+        
+        // If nothing attempted, return first step
+        return {
+            step: problem.steps[0],
+            stepIndex: 0,
+            isIncorrect: false
+        };
     }
 }
 
