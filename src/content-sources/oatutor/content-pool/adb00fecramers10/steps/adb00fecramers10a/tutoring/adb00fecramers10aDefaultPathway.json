@@ -1,0 +1,63 @@
+[
+    {
+        "id": "adb00fecramers10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determinant Expansion",
+        "text": "Use cofactor expansion along the second row or simplify by row swaps.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "adb00fecramers10a-h1"
+        ],
+        "title": "Use cofactor expansion",
+        "text": "Expand along row 2: det $$=$$ $$-1^1$$ * a21 * det(M21)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "adb00fecramers10a-h2"
+        ],
+        "title": "Find minor M21",
+        "text": "What is the determinant of [0,1;0,0]?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "adb00fecramers10a-h3"
+        ],
+        "title": "Combine with other terms",
+        "text": "Only a13 has non-zero minor: det $$=$$ $$1$$ * $$1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

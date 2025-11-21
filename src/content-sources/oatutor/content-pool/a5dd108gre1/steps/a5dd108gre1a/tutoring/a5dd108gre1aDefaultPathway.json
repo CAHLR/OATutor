@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a5dd108gre1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor into Primes",
+        "text": "Factor each coefficient into primes. A prime number is a counting number greater than $$1$$, whose only factors are $$1$$ and itself. The first few prime numbers are: $$2$$, $$3$$, $$5$$, $$7$$, $$11$$, $$13$$, etc.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gre1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gre1a-h1"
+        ],
+        "title": "Factor First Number",
+        "text": "$$54=9\\times6$$\\n$$54=3\\times3 2\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gre1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gre1a-h2"
+        ],
+        "title": "Factor Second Number",
+        "text": "$$36=6\\times6$$\\n$$36=2\\times3 2\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gre1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gre1a-h2",
+            "a5dd108gre1a-h3"
+        ],
+        "title": "Identify Common Factors in each Column",
+        "text": "$$54=3\\times3 2\\times3$$\\n$$36=2\\times3 2\\times3$$\\n$$2$$, $$3$$, and $$3$$ are shared by both numbers.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gre1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gre1a-h4"
+        ],
+        "title": "Multiply Common Factors",
+        "text": "Bring down the $$2$$, $$3$$, and $$3$$, and then multiply.\\n$$GCF=2\\times3\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gre1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gre1a-h5"
+        ],
+        "title": "Multiply Common Factors",
+        "text": "$$GCF=18$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

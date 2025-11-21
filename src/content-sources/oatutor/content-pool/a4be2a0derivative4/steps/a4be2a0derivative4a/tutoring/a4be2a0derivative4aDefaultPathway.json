@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a4be2a0derivative4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "lim h\u21920 $$\\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$ $$=$$ lim h\u21920 $$\\frac{\\left(-\\frac{1}{x+h-2}-\\left(-\\frac{1}{x-2}\\right)\\right)}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative4a-h1"
+        ],
+        "title": "Distribute",
+        "text": "lim h\u21920 $$\\frac{\\left(-\\frac{1}{x+h-2}-\\left(-\\frac{1}{x-2}\\right)\\right)}{h}$$ $$=$$ lim h\u21920 $$\\frac{\\left(-\\frac{1}{x+h-2}+\\frac{1}{x-2}\\right)}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative4a-h2"
+        ],
+        "title": "Common Denominator",
+        "text": "lim h\u21920 $$\\frac{1}{h} \\left(-\\frac{\\frac{1}{x+h-2} \\left(x-2\\right)}{x-2}+\\frac{\\frac{1}{x-2} \\left(x+h-2\\right)}{x+h-2}\\right)$$ $$=$$ lim h\u21920 1/h*(-(x-2)+(x+h-2)/[(x+h-2)(x-2)])",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative4a-h3"
+        ],
+        "title": "Simplify",
+        "text": "lim h\u21920 1/h*(-(x-2)+(x+h-2)/[(x+h-2)(x-2)]) $$=$$ lim h\u21920 1/h*h/[(x+h-2)(x-2)]) $$=$$ lim h\u21920 1/[(x+h-2)(x-2)])",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative4a-h4"
+        ],
+        "title": "Apply Limit",
+        "text": "lim h\u21920 1/[(x+h-2)(x-2)]) $$=$$ 1/[(x+0-2)(x-2)]) $$=$$ $$\\frac{1}{\\left(x-2\\right)^2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ac26263ThreeVariables10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculation",
+        "text": "Add the first equation to the second equation: $$x+2y+6z+\\left(-x+y-2z\\right)=5+3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac26263ThreeVariables10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables10a-h1"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$3y+4z=8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac26263ThreeVariables10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables10a-h2"
+        ],
+        "title": "Calculation",
+        "text": "Add the second equation to the third equation: $$\\left(-x+y-2z\\right)+x-4y-2z=3+1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac26263ThreeVariables10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables10a-h3"
+        ],
+        "title": "Calculation",
+        "text": "The equation becomes $$-3y-4z=4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac26263ThreeVariables10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables10a-h4"
+        ],
+        "title": "Subtraction",
+        "text": "Add $$3y+4z=8$$ to $$-3y-4z=4$$. $$3y+4z+\\left(-3y-4z\\right)=8+4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac26263ThreeVariables10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac26263ThreeVariables10a-h5"
+        ],
+        "title": "Subtraction",
+        "text": "The equation becomes $$0=12$$, which is a false statement",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,88 @@
+[
+    {
+        "id": "ab8f575addsubeq11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying the Left Side",
+        "text": "We can simplify the left side by collecting and combining all the like terms.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab8f575addsubeq11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ab8f575addsubeq11a-h1"
+        ],
+        "title": "Coefficient of $$x$$",
+        "text": "What is the coefficient of $$x$$ after simplifying?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab8f575addsubeq11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-11$$"
+        ],
+        "dependencies": [
+            "ab8f575addsubeq11a-h1"
+        ],
+        "title": "Constant Term",
+        "text": "What is the constant term on the left side after simplifying?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab8f575addsubeq11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab8f575addsubeq11a-h2",
+            "ab8f575addsubeq11a-h3"
+        ],
+        "title": "Simplified Equation",
+        "text": "The simplified equation is $$x-11=7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab8f575addsubeq11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab8f575addsubeq11a-h4"
+        ],
+        "title": "Adding the constant term",
+        "text": "To get rid of the $$-11$$ on the left, we can add $$11$$ to both sides of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab8f575addsubeq11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "ab8f575addsubeq11a-h5"
+        ],
+        "title": "Adding the constant term",
+        "text": "What is $$7+11$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

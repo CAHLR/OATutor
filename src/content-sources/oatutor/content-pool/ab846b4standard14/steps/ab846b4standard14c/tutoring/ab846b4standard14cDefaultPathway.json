@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ab846b4standard14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining right or left",
+        "text": "When $$z$$ is positive, $$x$$ is to the right of the mean, \u03bc. When $$z$$ is negative, $$x$$ is to the left of \u03bc.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.96$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14c-h1"
+        ],
+        "title": "Z-score",
+        "text": "What is the value of $$z$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "ab846b4standard14c-h2"
+        ],
+        "title": "Positive or negative",
+        "text": "Is this positive or negative?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Negative",
+            "Positive"
+        ]
+    }
+]

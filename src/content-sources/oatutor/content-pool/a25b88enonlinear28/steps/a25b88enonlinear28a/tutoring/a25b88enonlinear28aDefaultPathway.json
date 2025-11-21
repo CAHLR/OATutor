@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a25b88enonlinear28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Strategy of Elimination",
+        "text": "To eliminate variables, add the second equation to the first equation to remove the $$y^2$$ term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^2=26$$"
+        ],
+        "dependencies": [
+            "a25b88enonlinear28a-h1"
+        ],
+        "title": "Resulting Expression",
+        "text": "What is the resulting expression only in terms of $$x$$ when the first and second equations are added?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear28a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "To solve for the value(s) of $$x$$, divide both sides by $$2$$ and take the square root. Remember to include the ~ for the square root result.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear28a-h3"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "To solve for y-coordinates, plug in both x-values to either the first or second equation and isolate the value of $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear28a-h4"
+        ],
+        "title": "Number of Answers",
+        "text": "Since both $$x$$ and $$y$$ are squared, there are $$4$$ possible answers (positive and negative) for both $$x$$ and $$y$$. Choose the answer that falls in the second coordinate when graphed.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

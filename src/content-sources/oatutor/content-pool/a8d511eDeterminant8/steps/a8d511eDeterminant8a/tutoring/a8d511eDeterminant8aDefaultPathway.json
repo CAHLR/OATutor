@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8d511eDeterminant8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Expanding the rows containing $$0$$ will be easy for calculation",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8d511eDeterminant8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant8a-h1"
+        ],
+        "title": "Order of Operation",
+        "text": "Expand the minors along the second row",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8d511eDeterminant8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant8a-h2"
+        ],
+        "title": "Principle",
+        "text": "Remember the sign of the second row is (-,+,-)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8d511eDeterminant8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8d511eDeterminant8a-h3"
+        ],
+        "title": "Operation",
+        "text": "Evaluate the 2x2 determinants",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8d511eDeterminant8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-11$$"
+        ],
+        "dependencies": [
+            "a8d511eDeterminant8a-h4"
+        ],
+        "title": "Calculation",
+        "text": "What is $$0+3\\times3-\\left(-4\\right) \\left(-5\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

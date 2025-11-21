@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a7583f3density9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Density Formula",
+        "text": "Density is mass per unit volume, and the formula is $$p=\\frac{m}{v}$$ where $$p$$ is the density, $$m$$ is the mass, and v is the volume occupied by the substance.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3density9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Densities of the Constituents",
+        "text": "We take the density of gold p_gold=19.32g/cm\u00b3, the density of silver p_silver=10.1g/cm\u00b3, and the density of copper p_copper=8.8g/cm\u00b3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3density9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7583f3density9a-h1"
+        ],
+        "title": "Formula for the Weighted Average Density",
+        "text": "The weighted average density is $$p_{mix}=\\frac{m_g}{M} p_{gold}+\\frac{m_s}{M} p_{silver}+\\frac{m_c}{M} p_{copper}$$, where M is the total mass and $$m_g$$, $$m_s$$, $$m_c$$ are the masses of gold, silver, and copper.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7583f3density9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.6$$"
+        ],
+        "dependencies": [
+            "a7583f3density9a-h2",
+            "a7583f3density9a-h3"
+        ],
+        "title": "Calculate the Weighted Average Density",
+        "text": "The mass fractions are provided: $$\\frac{18}{24}$$ for gold, $$\\frac{5}{24}$$ for silver, and $$\\frac{1}{24}$$ for copper. Now plug in the values and calculate the weighted average density $$p_{mix}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

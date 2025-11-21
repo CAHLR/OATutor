@@ -1,0 +1,56 @@
+[
+    {
+        "id": "ab04f69Addtional3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Tail",
+        "text": "$$H_a$$ tells you the whether the tail is left-, right, or two-tailed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab04f69Addtional3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Greater"
+        ],
+        "dependencies": [
+            "ab04f69Addtional3a-h1"
+        ],
+        "title": "Compare",
+        "text": "Is $$H_a$$ greater, less, or not equal to the mean?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Greater",
+            "Less",
+            "Not Equal"
+        ]
+    },
+    {
+        "id": "ab04f69Addtional3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Right"
+        ],
+        "dependencies": [
+            "ab04f69Addtional3a-h2"
+        ],
+        "title": "Interpret",
+        "text": "Does that mean we are looking to the left, right, or both sides of the mean?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Left",
+            "Right",
+            "Both Sides"
+        ]
+    }
+]

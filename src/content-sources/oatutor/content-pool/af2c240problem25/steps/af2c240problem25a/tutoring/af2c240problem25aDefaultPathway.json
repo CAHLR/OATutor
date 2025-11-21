@@ -1,0 +1,29 @@
+[
+    {
+        "id": "af2c240problem25a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$29.17$$"
+        ],
+        "dependencies": [],
+        "title": "Convert Speed to Meters per Second",
+        "text": "First, convert the speed from $$105$$ $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$, what is v $$=$$ \\frac{105\\text{km/h} \\times 1000\\text{m/km}}{3600\\text{s/h}}?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af2c240problem25a-h1"
+        ],
+        "title": "Use the Formula for the Ideal Banking Angle",
+        "text": "The ideal banking angle \u03b8 for a curve of radius $$r$$ and speed v is given by tan(\u03b8) $$=$$ $$\\frac{v^2}{r} g$$. Then take the arctangent to find \ud835\udf03.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

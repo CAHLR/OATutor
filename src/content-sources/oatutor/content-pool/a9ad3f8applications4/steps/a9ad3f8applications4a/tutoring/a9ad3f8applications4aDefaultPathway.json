@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a9ad3f8applications4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify",
+        "text": "We are looking for the age of each sister.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ad3f8applications4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications4a-h1"
+        ],
+        "title": "First equation",
+        "text": "Since the sisters ages together are $$44$$, we can write the first equation as $$a+b=44$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ad3f8applications4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications4a-h2"
+        ],
+        "title": "Second equation",
+        "text": "Since Alyssa is twelve years older than her sister, we can write the second equatiion as $$a=b+12$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ad3f8applications4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$28$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications4a-h3"
+        ],
+        "title": "Solve",
+        "text": "Next, using the system of equations just created, solve for a. What does it equal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ad3f8applications4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a9ad3f8applications4a-h4"
+        ],
+        "title": "Solve",
+        "text": "What does $$b$$ equal?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ad3f8applications4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9ad3f8applications4a-h5"
+        ],
+        "title": "Answer",
+        "text": "Alyssa is $$28$$ while Bethany is $$16$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

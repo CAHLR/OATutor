@@ -1,0 +1,63 @@
+[
+    {
+        "id": "afa63f8real6a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=e$$, $$a=2$$"
+        ],
+        "dependencies": [],
+        "title": "Find an equation of the form $$f(x)={ab}^{x+c}$$ $$+d$$. What are the variables?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=1$$, $$a=2$$",
+            "$$e=1$$, $$a=-2$$",
+            "$$b=e$$, $$a=2$$",
+            "$$b=-e$$, $$a=-2$$"
+        ]
+    },
+    {
+        "id": "afa63f8real6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2e^{\\left(-x\\right)}+4$$ $$(-Inf,Inf)$$ (4,Inf)"
+        ],
+        "dependencies": [
+            "afa63f8real6a-h1"
+        ],
+        "title": "Substitute the general form to get a function; find the domain $$(x-values)$$ and range $$(y-values)$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2e^{\\left(-x\\right)}-4$$ $$(-Inf,Inf)$$ $$(-4,Inf)$$",
+            "$$2e^{\\left(-x\\right)}+4$$ $$(-Inf,Inf)$$ (4,Inf)",
+            "$$3e^{\\left(-x\\right)}+3$$ $$(-Inf,Inf)$$ (4,Inf)",
+            "$$2e^x-4$$ $$(-Inf,Inf)$$ $$(-4,Inf)$$"
+        ]
+    },
+    {
+        "id": "afa63f8real6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "afa63f8real6a-h2"
+        ],
+        "title": "Find the horizontal asymptote.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a25b88enonlinear4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Steps to Solving",
+        "text": "Solve the first equation for $$y$$ and then substitute the resulting expression into the second equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^2-3x-2=0$$"
+        ],
+        "dependencies": [
+            "a25b88enonlinear4a-h1"
+        ],
+        "title": "Resulting Substitued Expression",
+        "text": "What is the equation when the expression for $$y$$ is substituted in?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear4a-h2"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "To solve for $$x$$, factorize the quadratic.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(2x+1\\right) \\left(x-2\\right)$$"
+        ],
+        "dependencies": [
+            "a25b88enonlinear4a-h3"
+        ],
+        "title": "Factorization",
+        "text": "What is the factorized form of the quadratic?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear4a-h4"
+        ],
+        "title": "Zero Product Property",
+        "text": "Use the Zero Product Property to find the value of $$x$$ from each of the factors.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a25b88enonlinear4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a25b88enonlinear4a-h5"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "To solve for $$y$$, substitute each value for $$y$$ into the first equation of $$3x-y=-2$$ to solve for $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

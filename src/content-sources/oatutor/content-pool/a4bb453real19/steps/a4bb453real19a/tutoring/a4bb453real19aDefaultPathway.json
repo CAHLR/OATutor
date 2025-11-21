@@ -1,0 +1,39 @@
+[
+    {
+        "id": "a4bb453real19a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x^2+6xh+3h^2$$, $$3x^2$$"
+        ],
+        "dependencies": [],
+        "title": "Find the f(x) for each value of $$x$$ given by the interval.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3x^2-6xh-3h^2$$, $$3x^2$$",
+            "$$3x^2+6xh+3h^2$$, $$3x^2$$",
+            "$$3x^2+6xh+3h^2$$, $$3x$$"
+        ]
+    },
+    {
+        "id": "a4bb453real19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6x+3h$$"
+        ],
+        "dependencies": [
+            "a4bb453real19a-h1"
+        ],
+        "title": "Definition of average rate of change",
+        "text": "The average rate of change is the change in $$y$$ values divided by the change in $$x$$ values",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
