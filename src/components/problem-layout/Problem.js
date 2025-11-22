@@ -1088,14 +1088,26 @@ class Problem extends React.Component {
     }
 
     /**
-     * Find the step that needs help (first incorrect or last attempted)
+     * Find the step that needs help
+     * Priority: hintToggleIndex (currently expanded) > first incorrect > last attempted > first step
      * Used by AI Agent to determine which step student is working on
      */
     getActiveStepData = () => {
         const { problem } = this.props;
-        const { stepStates } = this.state;
+        const { stepStates, expandedAccordion } = this.state;
         
-        // Find first incorrect step
+        // PRIORITY 1: Use expandedAccordion (which accordion is actually open)
+        if (expandedAccordion !== null && expandedAccordion >= 0 && problem.steps[expandedAccordion]) {
+            return {
+                step: problem.steps[expandedAccordion],
+                stepIndex: expandedAccordion,
+                isIncorrect: stepStates[expandedAccordion] === false
+            };
+        }
+        
+        // If NO accordion is expanded, use smart fallbacks:
+        
+        // PRIORITY 2: Find first INCORRECT (wrong) step - student needs help here!
         for (let i = 0; i < problem.steps.length; i++) {
             if (stepStates[i] === false) {
                 return {
@@ -1106,21 +1118,22 @@ class Problem extends React.Component {
             }
         }
         
-        // If no incorrect, find last attempted step
-        const attemptedIndices = Object.keys(stepStates).map(k => parseInt(k));
-        if (attemptedIndices.length > 0) {
-            const lastAttempted = Math.max(...attemptedIndices);
-            return {
-                step: problem.steps[lastAttempted],
-                stepIndex: lastAttempted,
-                isIncorrect: false
-            };
+        // PRIORITY 3: Find first UNANSWERED step - student is working on this next
+        for (let i = 0; i < problem.steps.length; i++) {
+            if (stepStates[i] === undefined || stepStates[i] === null) {
+                return {
+                    step: problem.steps[i],
+                    stepIndex: i,
+                    isIncorrect: false
+                };
+            }
         }
         
-        // If nothing attempted, return first step
+        // PRIORITY 4: All steps completed correctly! Use last step for congratulations
+        const lastStepIndex = problem.steps.length - 1;
         return {
-            step: problem.steps[0],
-            stepIndex: 0,
+            step: problem.steps[lastStepIndex],
+            stepIndex: lastStepIndex,
             isIncorrect: false
         };
     }

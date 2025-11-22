@@ -12,9 +12,6 @@ export class AgentHelper {
         // AWS Lambda Function URL from environment
         this.agentEndpoint = process.env.REACT_APP_AI_AGENT_URL || "";
         this.sessionId = null;
-        
-        console.log("🤖 AgentHelper initialized");
-        console.log("🤖 Endpoint:", this.agentEndpoint || "⚠️ NOT SET - Add REACT_APP_AI_AGENT_URL to .env");
     }
 
     /**
@@ -23,7 +20,6 @@ export class AgentHelper {
      */
     initializeSession() {
         this.sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-        console.log("🤖 New session created:", this.sessionId);
         return this.sessionId;
     }
 
@@ -39,13 +35,6 @@ export class AgentHelper {
             studentState: studentState,
             conversationHistory: []  // Lambda loads from DynamoDB
         };
-
-        console.log("🤖 Request built:", {
-            sessionId: this.sessionId,
-            messageLength: userMessage.length,
-            problemTitle: problemContext.problemTitle,
-            currentStep: problemContext.currentStep?.title,
-        });
 
         return request;
     }
@@ -78,8 +67,6 @@ export class AgentHelper {
 
             // Build request
             const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState);
-            
-            console.log("🤖 Sending to Lambda:", this.agentEndpoint);
 
             // Send POST request with streaming
             const response = await fetch(this.agentEndpoint, {
@@ -103,7 +90,6 @@ export class AgentHelper {
                 const { done, value } = await reader.read();
                 
                 if (done) {
-                    console.log("🤖 Stream complete");
                     break;
                 }
 
@@ -124,13 +110,12 @@ export class AgentHelper {
                             // Call chunk callback for real-time UI update
                             onChunkReceived(fullResponse);
                         } else if (data.type === 'complete') {
-                            console.log("🤖 Response complete");
+                            // Response complete
                         } else if (data.type === 'error') {
                             throw new Error(data.error || 'Unknown error from agent');
                         }
                     } catch (parseError) {
                         // Sometimes chunks split JSON, accumulate and try again
-                        console.warn("🤖 JSON parse warning:", parseError.message);
                     }
                 }
             }
@@ -140,7 +125,6 @@ export class AgentHelper {
             return fullResponse;
 
         } catch (error) {
-            console.error("🤖 Agent error:", error);
             onError(error);
             throw error;
         }
@@ -157,7 +141,6 @@ export class AgentHelper {
      * Clear session (for starting fresh)
      */
     clearSession() {
-        console.log("🤖 Clearing session:", this.sessionId);
         this.sessionId = null;
     }
 }

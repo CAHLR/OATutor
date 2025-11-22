@@ -1,5 +1,6 @@
 import React from 'react';
 import { agentHelper } from './AgentHelper';
+import MessageRenderer from './MessageRenderer';
 import { withStyles } from '@material-ui/core/styles';
 import {
     Card,
@@ -150,7 +151,6 @@ class AgentChatbox extends React.Component {
     }
 
     componentDidMount() {
-        console.log("🤖 AgentChatbox mounted");
         agentHelper.initializeSession();
         this.setState({ agentSessionId: agentHelper.getSessionId() });
     }
@@ -161,7 +161,6 @@ class AgentChatbox extends React.Component {
         const prevProblemID = prevProps.problem?.id;
         
         if (currentProblemID && prevProblemID && currentProblemID !== prevProblemID) {
-            console.log("🔄 Problem changed! Starting new agent session...");
             this.clearConversation();
         }
         
@@ -181,7 +180,6 @@ class AgentChatbox extends React.Component {
     };
 
     clearConversation = () => {
-        console.log("🗑️ Clearing conversation...");
         agentHelper.initializeSession();
         this.setState({
             messages: [],
@@ -234,11 +232,6 @@ class AgentChatbox extends React.Component {
         // Get context from props
         const problemContext = this.getProblemContext();
         const studentState = this.getStudentState();
-        
-        console.log("🤖 Sending message with context:", {
-            problemContext,
-            studentState
-        });
 
         // Send to agent
         try {
@@ -286,7 +279,7 @@ class AgentChatbox extends React.Component {
                 }
             );
         } catch (error) {
-            console.error("🤖 Error sending message:", error);
+            // Error already handled in callbacks
         }
     };
 
@@ -427,9 +420,17 @@ class AgentChatbox extends React.Component {
                                 className={`${classes.messageBubble} ${message.role === 'user' ? classes.userBubble : classes.assistantBubble}`}
                                 elevation={1}
                             >
-                                <Typography variant="body2">
-                                    {message.content || (message.isGenerating ? 'Thinking...' : '')}
-                                </Typography>
+                                {message.content ? (
+                                    message.role === 'user' ? (
+                                        <Typography variant="body2">{message.content}</Typography>
+                                    ) : (
+                                        <MessageRenderer content={message.content} />
+                                    )
+                                ) : (
+                                    <Typography variant="body2">
+                                        {message.isGenerating ? 'Thinking...' : ''}
+                                    </Typography>
+                                )}
                                 {message.isGenerating && (
                                     <CircularProgress size={16} style={{ marginLeft: 8 }} />
                                 )}
