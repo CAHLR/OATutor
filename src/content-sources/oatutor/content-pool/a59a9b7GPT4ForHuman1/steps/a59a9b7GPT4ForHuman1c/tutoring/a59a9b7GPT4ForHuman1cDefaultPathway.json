@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a59a9b7GPT4ForHuman1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy",
+        "text": "Entropy measures the degree of disorder or randomness in a system.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT4ForHuman1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT4ForHuman1c-h1"
+        ],
+        "title": "Entropy Change in Expanding Gas",
+        "text": "When a gas is allowed to expand into a vacuum, how is its entropy affected?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT4ForHuman1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a59a9b7GPT4ForHuman1c-h2"
+        ],
+        "title": "Effect of Expansion on Entropy",
+        "text": "Think about how the gas molecules are distributed after the expansion.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

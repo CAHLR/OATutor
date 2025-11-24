@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a272e84thermo6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Hess's Law Concept",
+        "text": "Hess's Law states that the enthalpy change of a chemical reaction is the same, no matter the route taken. This means you can rearrange given reactions to obtain the desired reaction, then sum their enthalpy changes.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo6a-h1"
+        ],
+        "title": "Identify Target and Given Reactions",
+        "text": "Reactions given:\\n$$1$$. CH\u2082CO+2O\u2082\u21922CO\u2082+H\u2082O (\u0394H_1=-981.1kJ)\\n$$2$$. CH\u2084+2O\u2082\u2192CO\u2082+2H\u2082O (\u0394H_2=-802.3kJ)\\n\\nTarget reaction:\\n2CH\u2084+2O\u2082\u2192CH\u2082CO+3H\u2082O\\n\\nIdentify if you need to reverse or scale these reactions to obtain the target reaction.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2(CO\u2082+2H\u2082O\u2192CH\u2084+2O\u2082) $$\\Delta H_3=-2(-802.3)kJ=1604.6kJ$$"
+        ],
+        "dependencies": [
+            "a272e84thermo6a-h2"
+        ],
+        "title": "Reverse and Scale the Methane Reaction",
+        "text": "In order to achieve the target reaction, reverse the burning of methane reaction and adjust the coefficients to match the stoichiometry:\\n\\n- Reverse CH\u2084+2O\u2082\u2192CO\u2082+2H\u2082O\\n\\nScale it by $$2$$ for stoichiometry.\\n\\nWhat is the new reaction and the adjusted enthalpy?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "2(CO\u2082+2H\u2082O\u2192CH\u2084+2O\u2082) $$\\Delta H_3=-2(-802.3)kJ=1604.6kJ$$",
+            "2(CO\u2082+2H\u2082O\u2192CH\u2084+2O\u2082) $$\\Delta H_3=-802.3kJ$$",
+            "2(CO\u2082+2H\u2082O\u2192CH\u2084+2O\u2082) $$\\Delta H_3=-2(-981.1)kJ=1962.2kJ$$",
+            "2(CH\u2082CO+2O\u2082\u21922CO\u2082+H\u2082O) $$\\Delta H_3=-2(-802.3)kJ=1604.6kJ$$"
+        ]
+    },
+    {
+        "id": "a272e84thermo6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2CH\u2084+2O\u2082\u2192CH\u2082CO+3H\u2082O $$\u0394H=1604.6kJ-981.1kJ$$"
+        ],
+        "dependencies": [
+            "a272e84thermo6a-h3"
+        ],
+        "title": "Combine Adjusted Reactions Using Hess's Law",
+        "text": "Combine the adjusted methane reaction with the burning of ketene reaction:\\n\\n2(CO\u2082+2H\u2082O\u2192CH\u2084+2O\u2082) $$\\Delta H_3=1604.6kJ$$\\n\\nCH\u2082CO+2O\u2082\u21922CO\u2082+H\u2082O $$\\Delta H_1$$ $$=-981.1kJ$$\\n\\nAdd these reactions and their enthalpy changes to derive the target reaction.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "2CH\u2084+2O\u2082\u2192CH\u2082CO+3H\u2082O $$\u0394H=1604.6kJ-981.1kJ$$",
+            "CH\u2084+O\u2082\u2192CH\u2082CO+3H\u2082O $$\u0394H=1604.6kJ-981.1kJ$$",
+            "2CH\u2084+2O\u2082\u2192CH\u2082CO+3H\u2082O $$\u0394H=981.1kJ-1604.6kJ$$",
+            "CH\u2084+O\u2082\u21922CH\u2082CO+2H\u2082O $$\u0394H=981.1kJ-1604.6kJ$$"
+        ]
+    },
+    {
+        "id": "a272e84thermo6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$623.5$$"
+        ],
+        "dependencies": [
+            "a272e84thermo6a-h4"
+        ],
+        "title": "Final Calculation of Enthalpy Change",
+        "text": "The final enthalpy change for the target reaction can now be calculated:\\n\\n2CH\u2084+2O\u2082\u2192CH\u2082CO+3H\u2082O\\n\\nCompute the final enthalpy change.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

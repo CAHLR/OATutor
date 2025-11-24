@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a272e84thermogpt1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Work Formula",
+        "text": "The work done on a gas during compression can be calculated using the formula: W $$=$$ -P_{ext} * \u0394V, where P_{ext} is the constant external pressure and \u0394V is the change in volume.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-350$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt1a-h1"
+        ],
+        "title": "Calculate Change in Volume",
+        "text": "Find the change in volume \u0394V by subtracting the final volume from the initial volume: \u0394V $$=$$ V_{final} - V_{initial}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt1a-h2"
+        ],
+        "title": "Convert Pressure-Volume Work to Joules",
+        "text": "Remember to convert the work from L\u00b7atm to Joules using the conversion factor: $$1$$ L\u00b7atm $$=$$ $$101.3$$ J.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14000$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt1a-h3"
+        ],
+        "title": "Calculate the Work Done in L\u00b7atm",
+        "text": "Use the work formula W $$=$$ -P_{ext} * \u0394V \\) to find the work done in L\u00b7atm.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1418200$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt1a-h4"
+        ],
+        "title": "Convert Work to Joules",
+        "text": "Convert the calculated work from L\u00b7atm to Joules: W(J) $$=$$ W(L \u00b7 atm) * $$101.3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

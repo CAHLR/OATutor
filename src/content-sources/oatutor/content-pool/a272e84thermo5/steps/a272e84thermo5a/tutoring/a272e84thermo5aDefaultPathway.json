@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a272e84thermo5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Heat Transfer",
+        "text": "To solve this problem, we need to consider the heat lost by the water and the heat gained by the ice until they reach thermal equilibrium. Remember that for heat transfer, the heat lost by a substance equals the heat gained.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo5a-h1"
+        ],
+        "title": "Heat Transfer Formula",
+        "text": "The formula for heat transfer is $$q=mc\u0394T$$, where q is the heat transferred, $$m$$ is the mass, c is the specific heat capacity, and \u0394T is the change in temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "q_{water}=360\u00d775(20-T_{eq})"
+        ],
+        "dependencies": [
+            "a272e84thermo5a-h2"
+        ],
+        "title": "Calculating Heat for Water",
+        "text": "Start by calculating the heat lost by the water when it reaches equilibrium temperature T_{eq}.\\n\u200b\\n$$q_{water}$$ $$=$$ m_water*c_water*(T_initial_water - T_eq)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "q_{water}=360\u00d775(20-T_{eq})",
+            "q_{water}=360+75(20-T_{eq})",
+            "q_{water}=360+75(T_{eq}-20)",
+            "q_{water}=360\u00d775(T_{eq}\u00d720)"
+        ]
+    },
+    {
+        "id": "a272e84thermo5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13680$$"
+        ],
+        "dependencies": [
+            "a272e84thermo5a-h3"
+        ],
+        "title": "Calculating Heat for Ice",
+        "text": "Next, calculate the heat gained by the ice. The ice undergoes two processes: warming from -10\u00b0C to 0\u00b0C, then melting to water at 0\u00b0C and further warming to $$T_{eq}$$.\\nFirst, let's compute the heat required to raise the temperature to 0\u00b0C $$q_{ice,warm}$$:\\n$$q_{ice,warm}$$ $$=$$ m_ice*c_ice*(T_fusion - T_initial_ice)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12014$$"
+        ],
+        "dependencies": [
+            "a272e84thermo5a-h4"
+        ],
+        "title": "Calculating Melting Heat for Ice",
+        "text": "After the ice reaches 0\u00b0C, it melts. Calculate the heat required to melt the ice $$q_{ice,melt}$$:\\nq_ice_melt=n_{ice}\u0394H_{fus}",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo5a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "360\u00d775(20-T_{eq})=36\u00d738\u00d710+12014+36\u00d775T_{eq}\\n"
+        ],
+        "dependencies": [
+            "a272e84thermo5a-h5"
+        ],
+        "title": "Equating Heat Lost and Gained",
+        "text": "At equilibrium, the heat lost by the water equals the total heat gained by the ice. Therefore:\\nq_{water}=q_ice_warm+q_ice_melt+q_{ice to water}",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "360\u00d775(20-T_{eq})=36\u00d738\u00d710+12014+36\u00d775T_{eq}",
+            "360\u00d775(20-T_{eq})=36+38+10+12014+36\u00d775T_{eq}",
+            "360\u00d775(20-T_{eq})=36\u00d738\u00d710\u00d712014\u00d736\u00d775T_{eq}",
+            "360+75(20\u00d7T_{eq})=36\u00d738+10\u00d712014\u00d736\u00d775T_{eq}"
+        ]
+    },
+    {
+        "id": "a272e84thermo5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo5a-h6"
+        ],
+        "title": "Solve for Equilibrium Temperature",
+        "text": "With the complete equation, simplify and solve for the equilibrium temperature, T_{eq}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

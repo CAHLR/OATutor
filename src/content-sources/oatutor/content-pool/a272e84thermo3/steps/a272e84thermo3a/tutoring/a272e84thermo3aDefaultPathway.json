@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a272e84thermo3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ideal Gas Laws",
+        "text": "Since hydrogen behaves as an ideal gas under given conditions, use the ideal gas law $$(PV=nRT)$$. Try to find a relationship between the initial and final temperatures using this law.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$T_2=\\frac{V_2 T_1}{V_1}$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3a-h1"
+        ],
+        "title": "Using the Ideal Gas Law",
+        "text": "Write down the ideal gas law equation: $$\\frac{P_1 V_1}{n_1}$$ $$R_1$$ $$=$$ $$T_1$$ and $$\\frac{P_2 V_2}{n_2}$$ $$R_2$$ $$=$$ $$T_2$$. Identify what's constant and what's changing.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$T_2=$$ $$\\frac{V_1 T_1}{V_2}$$",
+            "$$T_2=\\frac{V_2 T_1}{V_1}$$",
+            "$$T_2=$$ $$\\frac{P_1 T_1}{P_2}$$",
+            "$$T_2=$$ $$\\frac{P_1 V_1}{P_2}$$"
+        ]
+    },
+    {
+        "id": "a272e84thermo3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo3a-h2"
+        ],
+        "title": "Canceling Constants",
+        "text": "Since the process is at constant pressure and R (the ideal gas constant) is also constant, these will cancel out in your equation transformations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$T_2=\\frac{50T_1}{100}$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3a-h3"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the equation $$\\frac{V_2 T_1}{V_1}=$$ $$T_2$$. Remember the initial volume $$V_1=100$$ L, the final volume $$V_2=50$$ L, and the initial pressure $$P_1=2$$ atm.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$T_2=\\frac{50T_1}{100}$$",
+            "$$T_2=\\frac{T_1}{100}$$",
+            "$$T_1=\\frac{100T_2}{50}$$",
+            "$$T_2=\\frac{T_1}{50}$$"
+        ]
+    },
+    {
+        "id": "a272e84thermo3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo3a-h4"
+        ],
+        "title": "Find the Initial Temperature",
+        "text": "To complete the calculation, you'll first need to compute the initial temperature $$T_1$$ using $$T_1=\\frac{P_1 V_1}{nR}$$. Use $$R=0.0821$$ $$\\frac{atmL}{mol}$$ K.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$203$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3a-h5"
+        ],
+        "title": "Compute Final Temperature",
+        "text": "Using calculated T1, substitute back into $$T_2=\\frac{50T_1}{100}$$ to find the final temperature T2.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

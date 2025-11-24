@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272e84thermogpt3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the relationship between volume and temperature in isobaric processes",
+        "text": "An isobaric process means that the pressure remains constant. For an ideal gas, the relationship between pressure (P), volume (V), and temperature (T) is given by the ideal gas law: $$PV=nRT$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3a-h1"
+        ],
+        "title": "Using the equation for an isobaric process",
+        "text": "Since the pressure is constant, we can rearrange the ideal gas law as follows: $$\\frac{V}{T}=constant$$ or V_1\u200b/T_1\u200b=V_2\u200b/T_2\u200b. This equation shows the relationship between initial and final volumes and temperatures in an isobaric process.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$600$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3a-h2"
+        ],
+        "title": "Solving for the final temperature",
+        "text": "Using the equation $$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$$, solve for $$T_2$$ (the final temperature).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
