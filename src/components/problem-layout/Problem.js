@@ -35,6 +35,8 @@ import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
+import ChatbotAvatar from "../../components/ChatbotUI/ChatbotAvatar";
+
 
 import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -90,6 +92,7 @@ class Problem extends React.Component {
             hintToggleTrigger: 0,
             hintToggleIndex: null,
             isHintPortalOpen: false,
+            isChatOpen: false,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -477,6 +480,13 @@ class Problem extends React.Component {
         });
     };
 
+    handleChatAvatarClick = () => {
+        this.setState((prevState) => ({
+            isChatOpen: !prevState.isChatOpen
+        }));
+    };
+
+
     handleHintAvatarKeyDown = (event) => {
         if (
             (event.key === "Enter" || event.key === " ") &&
@@ -808,64 +818,128 @@ class Problem extends React.Component {
                         <div
                             style={bubbleContainerStyle}
                         >
-                        {/* Speech Bubble */}
-                        <div
-                        style={speechBubbleStyle}
-                        {...stagingProp({
-                            "data-selenium-target": "hint-avatar-toggle",
-                        })}
-                        role="button"
-                        tabIndex={0}
-                        aria-expanded={this.state.isHintPortalOpen}
-                        aria-controls="hint-portal-content"
-                        onClick={this.handleHintAvatarClick}
-                        onKeyDown={this.handleHintAvatarKeyDown}
-                        aria-label="Toggle hints"
-                        >
-                        <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
-                        {!this.state.isHintPortalOpen && (
-                            <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
-                        )}
-                        <div
-                            ref={this.hintPortalRef}
-                            id="hint-portal-content"
-                            role="region"
-                            aria-live="polite"
-                            aria-label="Hints"
-                            aria-hidden={!this.state.isHintPortalOpen}
-                            style={hintPortalStyle}
-                        />
+                            <div style={{ marginBottom: 16 }} />
+                                {/* Speech Bubble + Hint Tail */}
+                                <div
+                                    style={speechBubbleStyle}
+                                    {...stagingProp({
+                                        "data-selenium-target": "hint-avatar-toggle",
+                                    })}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-expanded={this.state.isHintPortalOpen}
+                                    aria-controls="hint-portal-content"
+                                    onClick={this.handleHintAvatarClick}
+                                    onKeyDown={this.handleHintAvatarKeyDown}
+                                    aria-label="Toggle hints"
+                                >
+                                <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
+                                {!this.state.isHintPortalOpen && (
+                                    <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
+                                )}
+                                <div
+                                    ref={this.hintPortalRef}
+                                    id="hint-portal-content"
+                                    role="region"
+                                    aria-live="polite"
+                                    aria-label="Hints"
+                                    aria-hidden={!this.state.isHintPortalOpen}
+                                    style={hintPortalStyle}
+                                    onClick={(e) => e.stopPropagation()}
+                                />
 
-                        {/* Tail at top right, pointing upward */}
-                        <div
-                            style={{
-                                position: "absolute",
-                                top: "-8px",
-                                right: "24px",
-                                width: 0,
-                                height: 0,
-                                borderLeft: "8px solid transparent",
-                                borderRight: "8px solid transparent",
-                                borderBottom: "8px solid #FFF3CC"
-                            }}
-                        />
+                                {/* Tail at top right, pointing upward */}
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        top: "-8px",
+                                        right: "24px",
+                                        width: 0,
+                                        height: 0,
+                                        borderLeft: "8px solid transparent",
+                                        borderRight: "8px solid transparent",
+                                        borderBottom: "8px solid #FFF3CC"
+                                    }}
+                                />
+                                {/* Avatar Icon */}
+                                <img
+                                    src={avatar}
+                                    alt="Whisper"
+                                    style={{
+                                        width: 64,
+                                        height: 64,
+                                        position: "absolute",
+                                        top: "-55px",
+                                        right: "-10px",
+                                        zIndex: 0,
+                                    }}
+                                />
                         </div>
+                        {/* Chatbot Bubble */}
+                            <div
+                                style={{
+                                    ...speechBubbleStyle,
+                                    background: "#D0F0FF", // different color
+                                    marginTop: 16, // spacing from hint bubble
+                                }}
+                                role="button"
+                                tabIndex={0}
+                                aria-expanded={this.state.isChatOpen}
+                                aria-controls="chatbot-content"
+                                onClick={this.handleChatAvatarClick}
+                                onKeyDown={(e) => {
+                                    if (e.key === "Enter" || e.key === " ") {
+                                        this.handleChatAvatarClick();
+                                    }
+                                }}
+                                aria-label="Toggle chatbot"
+                            >
+                                <p style={{ margin: 0, fontWeight: 600 }}>Chat with me!</p>
+                                {!this.state.isChatOpen && <p style={{ margin: 0 }}>Tap to start chatting</p>}
 
-                        {/* Avatar Icon */}
-                        <img
-                        src={avatar}
-                        alt="Whisper"
-                        style={{
-                            width: 64,
-                            height: 64,
-                            position: "absolute",
-                            top: "-55px",
-                            right: "-10px",
-                            zIndex: 0,
-                        }}
-                        />
+                                {this.state.isChatOpen && (
+                                    <div
+                                        id="chatbot-content"
+                                        role="region"
+                                        aria-live="polite"
+                                        style={{
+                                            marginTop: 8,
+                                            padding: 12,
+                                            background: "#F5F5F5",
+                                            borderRadius: 6,
+                                            maxHeight: "40vh",
+                                            overflowY: "auto",
+                                        }}
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        <textarea
+                                            placeholder="Type your message..."
+                                            style={{
+                                                width: "100%",
+                                                minHeight: 100,
+                                                resize: "vertical",
+                                                padding: 8,
+                                            }}
+                                        />
+                                        <button
+                                            style={{
+                                                marginTop: 8,
+                                                backgroundColor: "#4E7DAA",
+                                                color: "white",
+                                                border: "none",
+                                                padding: "6px 12px",
+                                                borderRadius: 4,
+                                                cursor: "pointer",
+                                            }}
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            Send
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                    </div>
+                        </div>
                     </Grid>
                 </Grid>
 
@@ -1066,7 +1140,7 @@ class Problem extends React.Component {
                     ) : (
                         ""
                     )} */}
-                    
+
                 </footer>
             </>
         );
