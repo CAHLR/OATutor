@@ -185,6 +185,28 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
   }, [lesson, fetchPersonalizedMessage]);
 
   useEffect(() => {
+    // Only start timer after both LLM messages have loaded (or loading is complete)
+    // Wait until personalization is done loading
+    if (personalizationLoading) {
+      return;
+    }
+
+    // Check if we have intake data that would generate messages
+    const hasIntake = loadIntakeResponses() !== null;
+    
+    if (hasIntake) {
+      // If we have intake data, wait for both personalizedMessage and extractedIndustry
+      // to be available (both must be non-empty) OR wait for error state
+      if (!personalizationError && (!personalizedMessage || !extractedIndustry)) {
+        return;
+      }
+    }
+    // If no intake data, messages will be empty strings, which is fine - start timer
+
+    // Reset timer state when starting
+    startRef.current = null;
+    setElapsed(0);
+
     let lastTick = 0;
     const loop = (ts) => {
       if (startRef.current == null) startRef.current = ts;
@@ -205,7 +227,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, []);
+  }, [personalizationLoading, personalizedMessage, extractedIndustry, personalizationError]);
 
   const handleStart = () => {
     if (!canStart) return;
@@ -349,7 +371,7 @@ function LessonConfirmation({ classes, onConfirm, onCancel }) {
                 }}
               />
               <Box position="relative" zIndex={1} px={1}>
-                { ! timerDone
+                { elapsed > 0 && ! timerDone
                   ? `Start Lesson (${remaining})`
                   : "Start Lesson"}
               </Box>
