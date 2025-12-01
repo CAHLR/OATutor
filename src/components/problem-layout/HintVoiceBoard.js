@@ -34,10 +34,16 @@ class HintVoiceBoard extends React.Component {
         try {
             this.setState({ isLoading: true });
             if (!hint.audios) {
+                const segments =
+                    Array.isArray(hint.pacedSpeech) &&
+                    hint.pacedSpeech.length > 0
+                        ? hint.pacedSpeech
+                        : [hint.text || ""];
+
                 const response = await axios.post(
-                    "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
+                    "https://7g3tiigt6paiqrcfub5f6vouqq0gynjn.lambda-url.us-east-2.on.aws/",
                     {
-                        segments: hint.pacedSpeech, // Send the data in the body
+                        segments, // Send the data in the body
                     },
                     {
                         headers: {
@@ -45,8 +51,27 @@ class HintVoiceBoard extends React.Component {
                         },
                     }
                 );
-                hint.audios = JSON.parse(response.data.body).audios; // Store audio data
-                // console.log("success:", response, hint.audios);
+
+                let audios;
+                if (response.data && Array.isArray(response.data.audios)) {
+                    audios = response.data.audios;
+                } else if (
+                    response.data &&
+                    typeof response.data.body === "string"
+                ) {
+                    const parsed = JSON.parse(response.data.body);
+                    audios = parsed.audios;
+                } else {
+                    console.error(
+                        "Unexpected TTS response shape in HintVoiceBoard:",
+                        response.data
+                    );
+                    this.setState({ isLoading: false });
+                    return;
+                }
+
+                hint.audios = audios; // Store audio data
+                // console.log("success:", hint.audios);
             }
             this.setState({ isLoading: false }, () => {
                 console.log("state is expanded:", this.state.isExpanded, hint);

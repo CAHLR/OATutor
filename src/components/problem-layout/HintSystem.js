@@ -225,10 +225,16 @@ class HintSystem extends React.Component {
     fetchAudioData = async (hint) => {
         // console.log("hint pacedSpeech: ", hint.pacedSpeech);
         try {
+            // 如果没有有效的 pacedSpeech，就退回用整个 hint 文本作为一个 segment
+            const segments =
+                Array.isArray(hint.pacedSpeech) && hint.pacedSpeech.length > 0
+                    ? hint.pacedSpeech
+                    : [hint.text || ""];
+
             const response = await axios.post(
-                "https://627d80hft0.execute-api.us-east-1.amazonaws.com/v0",
+                "https://7g3tiigt6paiqrcfub5f6vouqq0gynjn.lambda-url.us-east-2.on.aws/",
                 {
-                    segments: hint.pacedSpeech, // Send the data in the body
+                    segments,
                 },
                 {
                     headers: {
@@ -236,9 +242,27 @@ class HintSystem extends React.Component {
                     },
                 }
             );
-            hint.audios = JSON.parse(response.data.body).audios; // Store audio data
-            // console.log("success:", response, hint.audios);
-            // console.log("hint audio pre-cached");
+
+            // Lambda 可能直接返回 { audios: [...] }，也可能通过 API Gateway 包装成 { body: "..." }
+            let audios;
+            if (response.data && Array.isArray(response.data.audios)) {
+                audios = response.data.audios;
+            } else if (
+                response.data &&
+                typeof response.data.body === "string"
+            ) {
+                const parsed = JSON.parse(response.data.body);
+                audios = parsed.audios;
+            } else {
+                console.error(
+                    "Unexpected TTS response shape in HintSystem:",
+                    response.data
+                );
+                return;
+            }
+
+            hint.audios = audios; // Store audio data
+            // console.log("success:", hint.audios);
         } catch (error) {
             console.error("Error fetching audio:", error);
         }
