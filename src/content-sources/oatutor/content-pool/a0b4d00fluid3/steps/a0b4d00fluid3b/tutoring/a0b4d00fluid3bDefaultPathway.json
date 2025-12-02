@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a0b4d00fluid3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for volume flow rate: $$Q=A v$$ where Q is the volume flow rate, A is the cross-sectional area, and v is the speed of the flow.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b4d00fluid3b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2400$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid3b-h1"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "The width of the river w is $$60$$ $$m$$, and the depth\\n$$d$$ is $$40$$ $$m$$. The cross-sectional area, A, is given by: A $$=$$ w \u00d7 $$d$$. Calculate A in $$m^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0b4d00fluid3b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.125$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid3b-h2"
+        ],
+        "title": "Calculate the Speed of the River",
+        "text": "Using the formula Q $$=$$ A \u00d7 v, solve for v: $$v=\\frac{Q}{A}=\\frac{300}{2400}=$$? in $$\\frac{m}{s}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

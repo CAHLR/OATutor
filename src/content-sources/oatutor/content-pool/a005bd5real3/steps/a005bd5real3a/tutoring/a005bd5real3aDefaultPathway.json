@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a005bd5real3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Plug in g(x) for $$x$$ in f(x): $$f(g(x))={\\sqrt{x+2}}^2+1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real3a-h1"
+        ],
+        "title": "Simplify",
+        "text": "$${\\sqrt{x+2}}^2$$ simplifies to $$x+2$$, giving us $$f(g(x))=x+2+1=x+3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g(f(x))=\\sqrt{x^2+3}$$"
+        ],
+        "dependencies": [
+            "a005bd5real3a-h2"
+        ],
+        "title": "What is g(f(x)), given $$f(x)=x^2+1$$ and $$g(x)=\\sqrt{x+2}$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real3a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Plug in f(x) for $$x$$ in g(x): $$g(f(x))=\\sqrt{x^2+1+2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g(f(x))=\\sqrt{x^2+3}$$"
+        ],
+        "dependencies": [
+            "a005bd5real3a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$\\sqrt{x^2+1+2}$$ simplifies to $$\\sqrt{x^2+3}$$, which we can't simplify further.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

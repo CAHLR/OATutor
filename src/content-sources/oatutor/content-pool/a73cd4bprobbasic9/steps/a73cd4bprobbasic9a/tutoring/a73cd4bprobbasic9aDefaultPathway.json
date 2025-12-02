@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a73cd4bprobbasic9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Rules",
+        "text": "To find the probability of our situation, we first need to find out how many M&M's we can choose from.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic9a-h1"
+        ],
+        "title": "Total M&M's",
+        "text": "How many M&M's are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73cd4bprobbasic9a-h2"
+        ],
+        "title": "Probability Rules",
+        "text": "Next, we need to find the amount of M&M's that correspond to our initial condition.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic9a-h3"
+        ],
+        "title": "Total Brown M&M's",
+        "text": "How many M&M's are not blue?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic9a-h4"
+        ],
+        "title": "Answer",
+        "text": "To find our answer, we can take our first proportion and divide it by our second to get the probability. What is our final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

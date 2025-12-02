@@ -1,0 +1,47 @@
+[
+    {
+        "id": "ab231beelasticity5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shear Formula",
+        "text": "Recall the formula for shearing: \u0394x $$=$$ $$\\frac{\\frac{1}{S} F}{A} L_0$$ where S is the shear modulus and F is the force applied perpendicular to L0 and parallel to the cross-sectional area A.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231beelasticity5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab231beelasticity5a-h1"
+        ],
+        "title": "Find the Shear Modulus S for Bone",
+        "text": "Recall that S for bone is $$80\\times{10}^9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab231beelasticity5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.49\\times{10}^{-7}$$ $$m$$"
+        ],
+        "dependencies": [
+            "ab231beelasticity5a-h2"
+        ],
+        "title": "Plug In and Solve for \u0394x",
+        "text": "What is $$0.03\\frac{500\\frac{1}{80\\times{10}^9}}{\\pi \\left(0.5\\times0.04\\right)^2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1.49\\times{10}^{-7}$$ $$m$$",
+            "$$4.78\\times{10}^{-7}$$ $$m$$",
+            "$$3.29\\times{10}^{-7}$$ $$m$$",
+            "$$2.13\\times{10}^{-7}$$ $$m$$"
+        ]
+    }
+]

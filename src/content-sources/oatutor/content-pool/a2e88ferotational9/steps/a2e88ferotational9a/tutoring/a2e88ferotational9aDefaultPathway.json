@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a2e88ferotational9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Torque",
+        "text": "The torque \u03c4 is related to angular acceleration by \u03c4=I*\\alpha.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational9a-h1"
+        ],
+        "title": "Calculate the Angular Acceleration",
+        "text": "Rearrange the equation to solve for \\alpha: $$\\alpha=\\frac{\\tau}{I}=\\frac{500N m}{0.05kg m^2}=$$? in $$\\frac{rad}{s^2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2e88ferotational9a-h2"
+        ],
+        "title": "Kinematics of Rotational Motion",
+        "text": "Based on the formula \u03c9_f=\u03c9_i+\\alpha*t, as we know the final angular velocity $$\\omega_f$$ is $$0$$ (the gymnast stops spinning), we see that $$t=$$ -\u03c9_i)/\\alpha",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.001$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational9a-h3"
+        ],
+        "title": "Find the Stopping Time",
+        "text": "What is $$\\frac{\\frac{10rad}{s}}{\\frac{10000rad}{s^2}}$$ in s?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

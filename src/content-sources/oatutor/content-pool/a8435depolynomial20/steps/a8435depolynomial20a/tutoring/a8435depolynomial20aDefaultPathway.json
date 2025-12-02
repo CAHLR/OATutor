@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a8435depolynomial20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plugging in values",
+        "text": "Using CAS, you need to compute the values of $$k=1$$, $$k=3$$, and $$k=5$$. Do this by inputting the equation into your calculator and plugging in the value for k.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial20a-h1"
+        ],
+        "title": "Finding $$k=1$$",
+        "text": "What do you get when you plug in $$k=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x+1$$",
+            "$$x$$",
+            "$$1$$",
+            "$$0$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial20a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^2-x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial20a-h2"
+        ],
+        "title": "Finding $$k=3$$",
+        "text": "What do you get when you plug in $$k=3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x+1$$",
+            "$$x^2+1$$",
+            "$$x+x$$",
+            "$$x^2-x+1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial20a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^4-x^3+x^2-x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial20a-h3"
+        ],
+        "title": "Finding $$k=5$$",
+        "text": "What do you get when you plug in $$k=5$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^4-x^3+x^2-x+1$$",
+            "$$x^2-x+1$$",
+            "$$x+1$$",
+            "$$x^5+1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial20a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$k-1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial20a-h4"
+        ],
+        "title": "Polynomial Degree",
+        "text": "Based on the previous computations, what would be the predicted degree of the resulting polynomial?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "k",
+            "$$k+1$$",
+            "$$k-1$$",
+            "$$k-2$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial20a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^6-x^5+x^4-x^3+x^2-x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial20a-h5"
+        ],
+        "title": "Finding $$k=7$$",
+        "text": "What do you get when you plug in $$k=7$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^5-x^4+x^3-x^2+x+1$$",
+            "$$x^7-x^6+x^5$$",
+            "$$x^4+x^3+x^2$$",
+            "$$x^6+x^5+x^4+x^3+x^2+x+1$$",
+            "$$x^6-x^5+x^4-x^3+x^2-x+1$$"
+        ]
+    }
+]

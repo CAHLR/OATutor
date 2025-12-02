@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a53b893whole9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rule",
+        "text": "If the sum of the digits is divisible by $$3$$, then the number is divisible by $$3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a53b893whole9b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21$$"
+        ],
+        "dependencies": [
+            "a53b893whole9b-h1"
+        ],
+        "title": "Sum",
+        "text": "What is the sum of the digits?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a53b893whole9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a53b893whole9b-h2"
+        ],
+        "title": "Divisibility",
+        "text": "Based on the information above, is 3,765 divisible by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

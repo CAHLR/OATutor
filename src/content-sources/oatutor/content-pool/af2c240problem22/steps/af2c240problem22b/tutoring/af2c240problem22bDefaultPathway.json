@@ -1,0 +1,63 @@
+[
+    {
+        "id": "af2c240problem22b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Total Force at the Bottom",
+        "text": "At the lowest point, the total force exerted by the child on the seat includes two components: the centripetal force\\nand the gravitational force, acting downwards. F_{total} $$=$$ $$F_c$$ + $$F_g$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem22b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$729$$"
+        ],
+        "dependencies": [
+            "af2c240problem22b-h1"
+        ],
+        "title": "Calculate Centripetal force",
+        "text": "What is $$F_c$$ $$=$$ $$18.0\\text{kg$$} \\cdot 40.5\\text{m/s}**2 in N?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem22b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$176$$"
+        ],
+        "dependencies": [
+            "af2c240problem22b-h2"
+        ],
+        "title": "Calculate Centripetal force",
+        "text": "What is $$F_g$$ $$=$$ $$m$$ \\cdot $$g=$$ $$18.0\\text{kg$$} \\cdot 9.8\\text{m/s}**2 in N?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af2c240problem22b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$905$$"
+        ],
+        "dependencies": [
+            "af2c240problem22b-h3"
+        ],
+        "title": "Sum Up",
+        "text": "What is F_{total} $$=$$ $$F_c$$ + $$F_g$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a2e88ferotational15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for the the Angular Momentum",
+        "text": "Angular momentum is given by $$L=I \\omega$$ where I is the moment of inertia of an object about an axis and \u03c9 is its angular velocity about that axis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.34\\times{10}^{47}$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational15a-h1"
+        ],
+        "title": "Calculate the Moment of Inertia of Earth in Its Orbit",
+        "text": "The Earth can be treated as a point mass orbiting the Sun, so the moment of inertia is $$I=m^{r^2}$$ where $$m$$ is the mass of the Earth, approximately 5.97\u00d710**24 kg, $$r$$ is the average distance from the Earth to the Sun, approximately 1.496\u00d710**11 $$m$$. What is I?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1.07\\times{10}^{43}$$",
+            "$$1.34\\times{10}^{47}$$",
+            "$$2.66\\times{10}^{40}$$",
+            "$$1.34\\times{10}^{46}$$"
+        ]
+    },
+    {
+        "id": "a2e88ferotational15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2e88ferotational15a-h2"
+        ],
+        "title": "Find the Angular Velocity in $$\\frac{rad}{s}$$",
+        "text": "The Earth completes one revolution around the Sun in approximately one year $$(365.25$$ $$days=31557600$$ second). Use the formula \u03c9=2pi\u200b/T for the angular velocity.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2e88ferotational15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.66\\times{10}^{40}$$"
+        ],
+        "dependencies": [
+            "a2e88ferotational15a-h2",
+            "a2e88ferotational15a-h3"
+        ],
+        "title": "Calculate the Angular Momentum",
+        "text": "Now, substitute the values of I and \u03c9 to find the angular momentum $$L=I \\omega$$ in $$\\frac{kg m^2}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$7.07\\times{10}^{33}$$",
+            "$$7.07\\times{10}^{40}$$",
+            "$$2.66\\times{10}^{40}$$",
+            "$$2.66\\times{10}^{33}$$"
+        ]
+    }
+]

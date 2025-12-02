@@ -1,0 +1,94 @@
+[
+    {
+        "id": "acf3da9gaussian12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Augmented Matrix",
+        "text": "First, write the system of equations as an Augmented matrix.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acf3da9gaussian12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 4 & 3 & 11 \\\\ 1 & -3 & -1 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "acf3da9gaussian12a-h1"
+        ],
+        "title": "Augmented Matrix",
+        "text": "How do you write the system as an Augmented matrix?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acf3da9gaussian12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acf3da9gaussian12a-h2"
+        ],
+        "title": "Obtain row-echelon form",
+        "text": "Now, perform row operations to get row-echelon form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acf3da9gaussian12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "acf3da9gaussian12a-h3"
+        ],
+        "title": "Obtain row-echelon form",
+        "text": "What is the matrix in row-echelon form?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "acf3da9gaussian12a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Answer",
+                "text": "The answer is $$\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 1 & 1 \\end{bmatrix}$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "acf3da9gaussian12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acf3da9gaussian12a-h4"
+        ],
+        "title": "Form",
+        "text": "Now, you have the appropriate form to find $$x$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acf3da9gaussian12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "acf3da9gaussian12a-h5"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$(2,1)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

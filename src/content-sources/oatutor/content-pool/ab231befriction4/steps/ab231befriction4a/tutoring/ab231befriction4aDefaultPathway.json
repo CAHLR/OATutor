@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ab231befriction4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Friction Formula",
+        "text": "Recall the friction formula: f $$=$$ \\mu * N.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Coefficient of Friction",
+        "text": "Recall the coefficient of static friction between wood and wood is $$0.5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1176$$"
+        ],
+        "dependencies": [
+            "ab231befriction4a-h1"
+        ],
+        "title": "Use Newton's Second Law to Calculate Normal Force",
+        "text": "By Newton's Second Law (F=m*a), we have $$N=m g$$. What is the normal force (in Newtons)? What is $$N=m g=120kg$$ * $$9.8$$ $$\\frac{m}{s^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab231befriction4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$588$$"
+        ],
+        "dependencies": [
+            "ab231befriction4a-h1",
+            "ab231befriction4a-h2",
+            "ab231befriction4a-h3"
+        ],
+        "title": "Solve for f",
+        "text": "Using the f and \\mu that we found, solve for f in newtons. What is f=\\mu*N=0.5*1176?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

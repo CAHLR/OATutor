@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a37e07emodels28a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "linear"
+        ],
+        "dependencies": [],
+        "title": "Choosing model",
+        "text": "Which model can we reject based on the fact that the points do not lie on a straight line?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "linear",
+            "exponential",
+            "logarithmic",
+            "logistic"
+        ]
+    },
+    {
+        "id": "a37e07emodels28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels28a-h1"
+        ],
+        "title": "Choosing model",
+        "text": "Notice how if we draw a line between any two of the points, most or all of the points between those two points lie above the line.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels28a-h2"
+        ],
+        "title": "Choosing model",
+        "text": "The graph is concave down, which suggests which type of model?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

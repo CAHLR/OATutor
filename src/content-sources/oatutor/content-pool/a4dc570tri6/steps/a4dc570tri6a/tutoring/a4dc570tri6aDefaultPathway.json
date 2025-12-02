@@ -1,0 +1,174 @@
+[
+    {
+        "id": "a4dc570tri6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Distance",
+        "text": "Distance between $$(0,0)$$ and $$(4,3)$$ is $$\\sqrt{4^2+3^2}=\\sqrt{25}=5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri6a-h1"
+        ],
+        "title": "Similar triangles",
+        "text": "Since similar triangles have equal ratios of lengths, then $$\\frac{\\cos(\\theta)}{1}=\\frac{4}{5},\\quad\\frac{\\sin(\\theta)}{1}=\\frac{3}{5}$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{5}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h2"
+        ],
+        "title": "cos(\u03b8)",
+        "text": "What is the value of cos(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{5}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h3"
+        ],
+        "title": "sin(\u03b8)",
+        "text": "What is the value of sin(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri6a-h4"
+        ],
+        "title": "tan(\u03b8)",
+        "text": "Tangent is the ratio of sin to cos.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h5"
+        ],
+        "title": "tan(\u03b8)",
+        "text": "What is the value of tan(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri6a-h6"
+        ],
+        "title": "sec(\u03b8)",
+        "text": "sec is the reciprocal of cos.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{4}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h7"
+        ],
+        "title": "sec(\u03b8)",
+        "text": "What is the value of sec(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri6a-h8"
+        ],
+        "title": "csc(\u03b8)",
+        "text": "csc is the reciprocal of sin.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{3}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h9"
+        ],
+        "title": "csc(\u03b8)",
+        "text": "What is the value of csc(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri6a-h10"
+        ],
+        "title": "cot(\u03b8)",
+        "text": "cot is the reciprocal of tan.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri6a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri6a-h11"
+        ],
+        "title": "cot(\u03b8)",
+        "text": "What is the value of cot(\u03b8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

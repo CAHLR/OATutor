@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a0b4d00fluid53a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reynold's Number Formula",
+        "text": "Use the formula for Reynold's Number $$Re=$$ $$\\frac{\u03c1vD}{\\eta}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid53a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25.51$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Velocity of the Water",
+        "text": "What is $$v=\\frac{Q}{A}=\\frac{\\frac{0.5L}{s}}{{0.0025}^2\\pi}$$ in $$\\frac{m}{s}$$? (remember to convert $$0.500$$ $$\\frac{L}{s}$$ to $$\\frac{m}{s}$$ first)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0b4d00fluid53a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$127550$$"
+        ],
+        "dependencies": [
+            "a0b4d00fluid53a-h1",
+            "a0b4d00fluid53a-h2"
+        ],
+        "title": "Calculate the Reynolds Number",
+        "text": "As $$D=2r=2\\times0.25 cm=0.005m$$, what is Re=(1000kg.m**3*25.51m/s*0.005m)/(1*10**(-3)Pa*s)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

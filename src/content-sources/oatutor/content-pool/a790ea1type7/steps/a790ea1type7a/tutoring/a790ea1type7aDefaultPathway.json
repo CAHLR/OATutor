@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a790ea1type7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Type Error",
+        "text": "What is the definition of a Type I Error?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a790ea1type7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true."
+        ],
+        "dependencies": [
+            "a790ea1type7a-h1"
+        ],
+        "title": "Type I error",
+        "text": "Choose the best answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true.",
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ]
+    },
+    {
+        "id": "a790ea1type7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a790ea1type7a-h2"
+        ],
+        "title": "Type I error under problem setting",
+        "text": "Type I error: This results when a true null hypothesis is rejected. In the context of this scenario, we would state that we believe that It\u2019s a Boy Genetic Labs influences the gender outcome, when in fact it has no effect. The probability of this error occurring is denoted by the Greek letter alpha, \\alpha.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a790ea1type7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a790ea1type7a-h3"
+        ],
+        "title": "The Type Error",
+        "text": "What is the definition of a Type II Error?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a790ea1type7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ],
+        "dependencies": [
+            "a790ea1type7a-h4"
+        ],
+        "title": "Type II error",
+        "text": "Choose the best answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true.",
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ]
+    },
+    {
+        "id": "a790ea1type7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a790ea1type7a-h5"
+        ],
+        "title": "Type II error under problem setting",
+        "text": "Type II error: This results when we fail to reject a false null hypothesis. In context, we would state that It\u2019s a Boy Genetic Labs does not influence the gender outcome of a pregnancy when, in fact, it does. The probability of this error occurring is denoted by the Greek letter beta, \u03b2.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a790ea1type7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a790ea1type7a-h6"
+        ],
+        "title": "Type I vs. Type II error",
+        "text": "The error of greater consequence would be the Type I error since couples would use the It\u2019s a Boy Genetic Labs product in hopes of increasing the chances of having a boy.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

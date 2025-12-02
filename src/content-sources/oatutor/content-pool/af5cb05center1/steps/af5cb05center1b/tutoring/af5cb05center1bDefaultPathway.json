@@ -1,0 +1,117 @@
+[
+    {
+        "id": "af5cb05center1b-h5",
+        "type": "hint",
+        "dependencies": [
+            "af5cb05center1a-h4"
+        ],
+        "title": "Find the Location of the Median",
+        "text": "To find the median of a data set, we want to first determine the location of the median. Remember the formula for that data point is $$\\frac{n+1}{2}$$ where $$n$$ represents the total number of data points in the set.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af5cb05center1b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20.5$$"
+        ],
+        "dependencies": [
+            "af5cb05center1b-h5"
+        ],
+        "title": "Determining Location of the Median",
+        "text": "What is the location of the median? What is $$\\frac{n+1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "af5cb05center1b-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$20.5$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Location of the Median",
+                "text": "What is $$\\frac{40+1}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "af5cb05center1b-h7",
+        "type": "hint",
+        "dependencies": [
+            "af5cb05center1b-h6"
+        ],
+        "title": "Finding the Correct Data Points to Calculate Median",
+        "text": "Because the location of the median is $$20.5$$, this means we need to find the average between the 20th and 21st data points. Since the data is in order, we need to just find those two data points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af5cb05center1b-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$24$$, $$24$$"
+        ],
+        "dependencies": [
+            "af5cb05center1b-h7"
+        ],
+        "title": "Finding the 20th and 21st Data Values",
+        "text": "What are the 20th and 21st data values?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$24$$, $$24$$",
+            "$$22$$, $$24$$",
+            "$$24$$, $$25$$",
+            "$$25$$, $$26$$"
+        ]
+    },
+    {
+        "id": "af5cb05center1b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "af5cb05center1b-h8"
+        ],
+        "title": "Calculating Median from Data Points",
+        "text": "What is the median? In other words, what is the average between the 20th and 21st data values?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "af5cb05center1b-h9-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$24$$"
+                ],
+                "dependencies": [],
+                "title": "Calculating Median from Data Points",
+                "text": "What is $$\\frac{24+24}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]
