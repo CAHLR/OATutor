@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a2b6a8bcorr12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Random ccatter vs. Near zero correlation",
+        "text": "Random points suggest no linear relationship. No clear pattern means correlation close to zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2b6a8bcorr12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, there is no visible $$trend--the$$ points look random"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr12a-h1"
+        ],
+        "title": "Check for pattern",
+        "text": "Is there any visible upward or downward trend?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes, it shows a clear upward trend",
+            "Yes, it shows a clear downward trend",
+            "No, there is no visible $$trend--the$$ points look random",
+            "Yes, it shows both upward and downward trends at the same time"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Spread out randomly with no pattern"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr12a-h2"
+        ],
+        "title": "Assess clustering",
+        "text": "Are the points tightly grouped or spread out?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Tightly grouped along a straight line",
+            "Tightly grouped along a curved pattern",
+            "Spread out randomly with no pattern",
+            "Grouped into two clear clusters."
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Close to $$0$$"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr12a-h3"
+        ],
+        "title": "Correlation value",
+        "text": "What does this say about the correlation value: close to $$0$$, or closer to $$1$$ or -1?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Close to $$+1$$",
+            "Close to $$-1$$",
+            "Close to $$0$$",
+            "Exactly $$+0.75$$"
+        ]
+    }
+]

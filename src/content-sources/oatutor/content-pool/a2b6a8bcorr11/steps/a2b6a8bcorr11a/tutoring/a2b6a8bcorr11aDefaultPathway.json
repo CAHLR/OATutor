@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a2b6a8bcorr11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Direction and strenght",
+        "text": "When both variables rise, the correlation is positive. Tight clustering shows a strong relationship.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2b6a8bcorr11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They move together: as study hours increase, test scores increase"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr11a-h1"
+        ],
+        "title": "Identify the trend",
+        "text": "Do the variables move together or apart?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "They move together: as study hours increase, test scores increase",
+            "They move apart: as study hours increase, test scores decrease",
+            "They show no consistent pattern",
+            "They move randomly back and forth"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They form a tight upward line with little scatter"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr11a-h2"
+        ],
+        "title": "Judge tightness",
+        "text": "Are the points closely grouped?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "They are widely scattered with no pattern",
+            "They form a tight upward line with little scatter",
+            "They form a tight downward line",
+            "They are in a perfect circle"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A correlation close to $$+1$$"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr11a-h3"
+        ],
+        "title": "Numerical estimate",
+        "text": "How would you describe this relationship numerically (e.g., closer to $$0$$ or closer to 1)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "A correlation close to $$0$$",
+            "A correlation close to $$-1$$",
+            "A correlation close to $$+1$$",
+            "A correlation exactly equal to $$+0.25$$"
+        ]
+    }
+]
