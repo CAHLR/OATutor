@@ -553,9 +553,9 @@ class Problem extends React.Component {
         const hintPortalStyle = {
             display: isHintPortalOpen ? "block" : "none",
             width: "100%",
-            height: isHintPortalOpen ? "50vh" : "auto",
+            height: isHintPortalOpen ? "18vh" : "auto",
             marginTop: isHintPortalOpen ? 8 : 0,
-            maxHeight: "60vh",
+            maxHeight: "25vh",
             overflowY: "auto",
         };
 

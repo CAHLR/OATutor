@@ -4,12 +4,11 @@ import { withStyles } from '@material-ui/core/styles';
 import { CircularProgress } from '@material-ui/core';
 
 import agentHelper from './AgentHelper';
-
+// UI consistent with v2 hint bubble design
 const styles = (theme) => ({
-    // Styles are inline for this component
 });
 
-class AgentChatbox extends React.Component {
+class AgentChatBubble extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -217,8 +216,10 @@ class AgentChatbox extends React.Component {
             borderRadius: 8,
             boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
             position: "relative",
-            width: "auto",
-            maxWidth: 240,
+            width: isChatOpen ? "100%" : "240px",
+            maxWidth: isChatOpen ? "100%" : 240,
+            maxHeight: isChatOpen ? "45vh" : "auto",
+            overflow: "hidden",
             alignSelf: "flex-end",
             textAlign: "left",
             cursor: isChatOpen ? "default" : "pointer",
@@ -258,11 +259,14 @@ class AgentChatbox extends React.Component {
                             padding: 12,
                             background: "#F5F5F5",
                             borderRadius: 6,
-                            maxHeight: "40vh",
-                            overflowY: "auto",
+                            //height: "calc(40vh - 60px)",
+                            height: "35vh",
+                            overflowY: "hidden",
+                            display: "flex",
+                            flexDirection: "column",
                         }}
                     >
-                        <div style={{ marginBottom: 12 }}>
+                        <div style={{ marginBottom: 12, flex: 1, overflowY: "auto",}}>
                             {messages.length === 0 && (
                                 <div style={{ 
                                     textAlign: "center", 
@@ -302,6 +306,7 @@ class AgentChatbox extends React.Component {
                             <div ref={this.messagesEndRef} />
                         </div>
 
+                        <div style={{ flexShrink: 0 }}>
                         <textarea
                             placeholder="Type your message..."
                             value={currentMessage}
@@ -310,13 +315,15 @@ class AgentChatbox extends React.Component {
                             disabled={isGenerating}
                             style={{
                                 width: "100%",
-                                minHeight: 80,
-                                resize: "vertical",
+                                minHeight: 60,
+                                maxHeight: 120,
+                                resize: "none",
                                 padding: 8,
                                 border: "1px solid #ddd",
                                 borderRadius: 4,
                                 fontFamily: "inherit",
                                 fontSize: 14,
+                                boxSizing: "border-box",
                             }}
                         />
                         <button
@@ -337,6 +344,7 @@ class AgentChatbox extends React.Component {
                         >
                             {isGenerating ? "Thinking..." : "Send"}
                         </button>
+                        </div>
                     </div>
                 )}
 
@@ -358,4 +366,4 @@ class AgentChatbox extends React.Component {
     }
 }
 
-export default withStyles(styles)(AgentChatbox);
+export default withStyles(styles)(AgentChatBubble);
