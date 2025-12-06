@@ -33,8 +33,6 @@ import ToastID from "../../util/toastIds";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
-import Popup from '../Popup/Popup.js';
-import About from '../../pages/Posts/About.js';
 import AgentChatBubble from './AgentChatBubble';
 
 
@@ -66,7 +64,7 @@ class Problem extends React.Component {
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
         const giveStuBottomHint = this.props.lesson?.allowBottomHint;
-
+        
         this.giveHintOnIncorrect = giveHintOnIncorrect != null && giveHintOnIncorrect;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
         this.keepMCOrder = keepMCOrder != null && keepMCOrder;
@@ -79,6 +77,9 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        //change booleans HERE to toggle on/off hints and chatbot
+        this.showHintBubble = true;
+        this.showChatbot = true;
 
         this.state = {
             stepStates: {},
@@ -808,82 +809,86 @@ class Problem extends React.Component {
 
                             <div style={bubbleContainerStyle}>
                                 <div style={{ marginBottom: 16 }} />
+                                {/* Avatar Icon */}
+                                <img
+                                    src={avatar}
+                                    alt="Whisper"
+                                    style={{
+                                        width: 64,
+                                        height: 64,
+                                        position: "absolute",
+                                        top: "-55px",
+                                        right: "-10px",
+                                        zIndex: 0,
+                                    }}
+                                />
 
                                 {/* Speech Bubble + Hint Tail */}
-                                <div
-                                    style={speechBubbleStyle}
-                                    {...stagingProp({ "data-selenium-target": "hint-avatar-toggle" })}
-                                    role="button"
-                                    tabIndex={0}
-                                    aria-expanded={this.state.isHintPortalOpen}
-                                    aria-controls="hint-portal-content"
-                                    onClick={this.handleHintAvatarClick}
-                                    onKeyDown={this.handleHintAvatarKeyDown}
-                                    aria-label="Toggle hints"
-                                >
-                                    <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
-                                    {!this.state.isHintPortalOpen && (
-                                        <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
-                                    )}
+                                {this.showHintBubble && (
                                     <div
-                                        ref={this.hintPortalRef}
-                                        id="hint-portal-content"
-                                        role="region"
-                                        aria-live="polite"
-                                        aria-label="Hints"
-                                        aria-hidden={!this.state.isHintPortalOpen}
-                                        style={hintPortalStyle}
-                                        onClick={(e) => e.stopPropagation()}
-                                    />
+                                        style={speechBubbleStyle}
+                                        {...stagingProp({ "data-selenium-target": "hint-avatar-toggle" })}
+                                        role="button"
+                                        tabIndex={0}
+                                        aria-expanded={this.state.isHintPortalOpen}
+                                        aria-controls="hint-portal-content"
+                                        onClick={this.handleHintAvatarClick}
+                                        onKeyDown={this.handleHintAvatarKeyDown}
+                                        aria-label="Toggle hints"
+                                    >
+                                        <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
+                                        {!this.state.isHintPortalOpen && (
+                                            <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
+                                        )}
+                                        <div
+                                            ref={this.hintPortalRef}
+                                            id="hint-portal-content"
+                                            role="region"
+                                            aria-live="polite"
+                                            aria-label="Hints"
+                                            aria-hidden={!this.state.isHintPortalOpen}
+                                            style={hintPortalStyle}
+                                            onClick={(e) => e.stopPropagation()}
+                                        />
 
-                                    {/* Tail at top right, pointing upward */}
-                                    <div
-                                        style={{
-                                            position: "absolute",
-                                            top: "-8px",
-                                            right: "24px",
-                                            width: 0,
-                                            height: 0,
-                                            borderLeft: "8px solid transparent",
-                                            borderRight: "8px solid transparent",
-                                            borderBottom: "8px solid #FFF3CC",
-                                        }}
-                                    />
+                                        {/* Tail at top right, pointing upward */}
+                                        <div
+                                            style={{
+                                                position: "absolute",
+                                                top: "-8px",
+                                                right: "24px",
+                                                width: 0,
+                                                height: 0,
+                                                borderLeft: "8px solid transparent",
+                                                borderRight: "8px solid transparent",
+                                                borderBottom: "8px solid #FFF3CC",
+                                            }}
+                                        />
+                                    </div>
+                                )}
 
-                                    {/* Avatar Icon */}
-                                    <img
-                                        src={avatar}
-                                        alt="Whisper"
-                                        style={{
-                                            width: 64,
-                                            height: 64,
-                                            position: "absolute",
-                                            top: "-55px",
-                                            right: "-10px",
-                                            zIndex: 0,
-                                        }}
-                                    />
-                                </div>
 
                                 {/* Chatbot Bubble */}
-                                <AgentChatBubble
-                                    problem={problem}
-                                    lesson={this.props.lesson}
-                                    seed={seed}
-                                    stepStates={this.state.stepStates}
-                                    bktParams={this.bktParams}
-                                    getActiveStepData={() => {
-                                        const expandedIndex = this.state.expandedAccordion;
-                                        if (expandedIndex === null || !problem.steps[expandedIndex]) {
-                                            return null;
-                                        }
-                                        return {
-                                            stepIndex: expandedIndex,
-                                            step: problem.steps[expandedIndex]
-                                        };
-                                    }}
-                                        
-                                />
+                                {this.showChatbot && (
+                                    <AgentChatBubble
+                                        problem={problem}
+                                        lesson={this.props.lesson}
+                                        seed={seed}
+                                        stepStates={this.state.stepStates}
+                                        bktParams={this.bktParams}
+                                        getActiveStepData={() => {
+                                            const expandedIndex = this.state.expandedAccordion;
+                                            if (expandedIndex === null || !problem.steps[expandedIndex]) {
+                                                return null;
+                                            }
+                                            return {
+                                                stepIndex: expandedIndex,
+                                                step: problem.steps[expandedIndex]
+                                            };
+                                        }}
+                                            
+                                    />
+                                )}    
                             </div>
                         </div>
                     </Grid>
