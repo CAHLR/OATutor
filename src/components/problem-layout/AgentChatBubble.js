@@ -255,17 +255,6 @@ class AgentChatBubble extends React.Component {
                         role="region"
                         aria-live="polite"
                         style={{
-                            /*marginTop: 8,
-                            padding: 12,
-                            background: "#F5F5F5",
-                            borderRadius: 6,
-                            //height: "calc(40vh - 60px)",
-                            flex: 1,
-                            minHeight: 0,
-                            height: "30vh",
-                            overflowY: "hidden",
-                            display: "flex",
-                            flexDirection: "column",*/
                             position: "absolute",
                             top: "60px",
                             left: "12px",

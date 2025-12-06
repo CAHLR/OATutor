@@ -540,7 +540,6 @@ class Problem extends React.Component {
             position: "relative",
             width: isHintPortalOpen ? "100%" : "auto",
             maxWidth: isHintPortalOpen ? "100%" : 240,
-            // height: isHintPortalOpen ? "70vh" : "auto",
             maxHeight: "50vh",
             alignSelf: isHintPortalOpen ? "stretch" : "flex-end",
             textAlign: "left",
