@@ -218,7 +218,7 @@ class AgentChatBubble extends React.Component {
             position: "relative",
             width: isChatOpen ? "100%" : "240px",
             maxWidth: isChatOpen ? "100%" : 240,
-            maxHeight: isChatOpen ? "45vh" : "auto",
+            height: isChatOpen ? "37vh" : "auto",
             overflow: "hidden",
             alignSelf: "flex-end",
             textAlign: "left",
@@ -255,18 +255,31 @@ class AgentChatBubble extends React.Component {
                         role="region"
                         aria-live="polite"
                         style={{
-                            marginTop: 8,
+                            /*marginTop: 8,
                             padding: 12,
                             background: "#F5F5F5",
                             borderRadius: 6,
                             //height: "calc(40vh - 60px)",
-                            height: "35vh",
+                            flex: 1,
+                            minHeight: 0,
+                            height: "30vh",
                             overflowY: "hidden",
                             display: "flex",
+                            flexDirection: "column",*/
+                            position: "absolute",
+                            top: "60px",
+                            left: "12px",
+                            right: "12px",
+                            bottom: "12px",
+                            padding: 12,
+                            background: "#F5F5F5",
+                            borderRadius: 6,
+                            display: "flex",
                             flexDirection: "column",
+                            overflow: "hidden",
                         }}
                     >
-                        <div style={{ marginBottom: 12, flex: 1, overflowY: "auto",}}>
+                        <div style={{ marginBottom: 12, flex: 1, overflowY: "auto", minHeight: 0, position: "relative"}}>
                             {messages.length === 0 && (
                                 <div style={{ 
                                     textAlign: "center", 
