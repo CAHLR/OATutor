@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a146974analytical30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Type of Analysis",
+        "text": "Consider the purpose of the sensor. Is it meant to measure, identify, or develop a new understanding of carbon monoxide detection?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical30a-h1"
+        ],
+        "title": "Different Types of Analysis",
+        "text": "In analytical chemistry, analysis can be qualitative, quantitative, characterization, or fundamental. Which category does developing a sensor fall into?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical30a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fundamental"
+        ],
+        "dependencies": [
+            "a146974analytical30a-h2"
+        ],
+        "title": "Defining Fundamental Analysis",
+        "text": "Fundamental analysis often involves developing new methods or technologies. Does this align with the development of a new sensor?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

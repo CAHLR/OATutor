@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2crandomErrorsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Errors",
+        "text": "Random errors are unpredictable variations that occur in measurements. They can arise from various sources, such as environmental changes or instrument fluctuations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2crandomErrorsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2crandomErrorsa-h1"
+        ],
+        "title": "Characteristics of Random Errors",
+        "text": "Unlike systematic errors, random errors do not have a consistent pattern. They can be positive or negative and vary in magnitude.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2crandomErrorsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "An error that varies unpredictably from one measurement to another."
+        ],
+        "dependencies": [
+            "a70bb2crandomErrorsa-h2"
+        ],
+        "title": "Identifying Random Errors",
+        "text": "Which of the following best describes a random error in measurements?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "An error that is consistent in one direction.",
+            "An error that varies unpredictably from one measurement to another.",
+            "An error that is always positive.",
+            "An error that is always negative."
+        ]
+    }
+]

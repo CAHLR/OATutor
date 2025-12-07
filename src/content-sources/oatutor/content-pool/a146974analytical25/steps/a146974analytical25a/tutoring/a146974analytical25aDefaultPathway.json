@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a146974analytical25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Tensile Strength",
+        "text": "Tensile strength refers to the maximum amount of tensile (pulling) stress that a material can withstand before failure. It is a critical property for materials used in construction, manufacturing, and textiles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical25a-h1"
+        ],
+        "title": "Types of Analysis",
+        "text": "In analytical chemistry, different types of analysis are used to determine various properties of substances. These include qualitative, quantitative, characterization, and fundamental analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical25a-h2"
+        ],
+        "title": "Characterization Analysis",
+        "text": "Characterization analysis is used to determine the physical and chemical properties of a material. It helps in understanding the material's structure, composition, and performance under different conditions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical25a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "characterization"
+        ],
+        "dependencies": [
+            "a146974analytical25a-h3"
+        ],
+        "title": "Choosing the Right Analysis",
+        "text": "Given that tensile strength is a property of the material, which type of analysis would be most appropriate to determine it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

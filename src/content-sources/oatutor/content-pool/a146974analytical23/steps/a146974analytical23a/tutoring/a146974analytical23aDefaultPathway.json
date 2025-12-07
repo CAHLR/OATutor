@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a146974analytical23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Type of Analysis",
+        "text": "Consider the purpose of the analysis. Are you trying to identify, quantify, or develop a new method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical23a-h1"
+        ],
+        "title": "Focus on Method Development",
+        "text": "When developing a new method, the focus is often on the underlying principles and techniques rather than just measuring or identifying substances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fundamental"
+        ],
+        "dependencies": [
+            "a146974analytical23a-h2"
+        ],
+        "title": "Identifying the Analysis Type",
+        "text": "What type of analysis involves developing a method for heavy metal detection in soil?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

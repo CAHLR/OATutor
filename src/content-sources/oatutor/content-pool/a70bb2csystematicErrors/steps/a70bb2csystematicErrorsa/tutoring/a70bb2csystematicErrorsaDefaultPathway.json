@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a70bb2csystematicErrorsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Systematic Errors",
+        "text": "Systematic errors are consistent, repeatable errors associated with faulty equipment or flawed experimental design. They can skew results in a particular direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2csystematicErrorsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2csystematicErrorsa-h1"
+        ],
+        "title": "Identifying Causes of Systematic Errors",
+        "text": "Consider the equipment and procedures used in the experiment. Are there any potential sources of error that could consistently affect the results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2csystematicErrorsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Faulty equipment or calibration."
+        ],
+        "dependencies": [
+            "a70bb2csystematicErrorsa-h2"
+        ],
+        "title": "Common Causes of Systematic Errors",
+        "text": "Which of the following is a common cause of systematic errors in experiments?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Random fluctuations.",
+            "Faulty equipment or calibration.",
+            "Human error.",
+            "Environmental changes."
+        ]
+    },
+    {
+        "id": "a70bb2csystematicErrorsa-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2csystematicErrorsa-h3"
+        ],
+        "title": "Impact of Calibration on Systematic Errors",
+        "text": "Calibration errors occur when instruments are not properly calibrated, leading to consistent deviations in measurements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2csystematicErrorsa-h5",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2csystematicErrorsa-h4"
+        ],
+        "title": "Distinguishing Systematic from Random Errors",
+        "text": "Unlike random errors, which vary unpredictably, systematic errors are predictable and can often be corrected once identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

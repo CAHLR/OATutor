@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a8737dcspectroscopy_methods_overviewa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectroscopy",
+        "text": "Spectroscopy involves the study of how matter interacts with electromagnetic radiation. Different types of spectroscopy are used to analyze various properties of substances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcspectroscopy_methods_overviewa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcspectroscopy_methods_overviewa-h1"
+        ],
+        "title": "Types of Spectroscopy",
+        "text": "There are several types of spectroscopy, including absorption, emission, and scattering spectroscopy. Each type has its unique applications in chemical analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcspectroscopy_methods_overviewa-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcspectroscopy_methods_overviewa-h2"
+        ],
+        "title": "Absorption Spectroscopy",
+        "text": "Absorption spectroscopy measures the amount of light absorbed by a sample at specific wavelengths. It is commonly used to determine the concentration of a substance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcspectroscopy_methods_overviewa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Absorption spectroscopy"
+        ],
+        "dependencies": [
+            "a8737dcspectroscopy_methods_overviewa-h3"
+        ],
+        "title": "Identifying the Method",
+        "text": "Which spectroscopic method is primarily used to determine the concentration of a substance by measuring the amount of light absorbed at a specific wavelength?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Absorption spectroscopy",
+            "Emission spectroscopy",
+            "Scattering spectroscopy",
+            "Photoluminescent spectroscopy"
+        ]
+    }
+]

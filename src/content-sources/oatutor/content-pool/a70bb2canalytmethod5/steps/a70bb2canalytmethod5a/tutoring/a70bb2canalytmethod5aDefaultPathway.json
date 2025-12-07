@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a70bb2canalytmethod5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$p-value$$",
+        "text": "A $$p-value$$ is a measure of the probability that an observed difference could have occurred just by random chance. It helps in determining the significance of your results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2canalytmethod5a-h1"
+        ],
+        "title": "Significance Level",
+        "text": "The significance level, often denoted as alpha, is the threshold at which you decide whether a $$p-value$$ indicates a statistically significant result. Commonly, this is set at $$0.05$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2canalytmethod5a-h2"
+        ],
+        "title": "Interpreting $$p-value$$ < $$0.05$$",
+        "text": "If the $$p-value$$ is less than $$0.05$$, it suggests that the observed data is unlikely under the null hypothesis, leading to the rejection of the null hypothesis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There is a statistically significant difference between the sample means."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod5a-h3"
+        ],
+        "title": "Conclusion from $$p-value$$",
+        "text": "What conclusion can you draw if the $$p-value$$ is less than $$0.05$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sample means are identical.",
+            "There is a statistically significant difference between the sample means.",
+            "The sample means are not significantly different.",
+            "The test is invalid."
+        ]
+    }
+]

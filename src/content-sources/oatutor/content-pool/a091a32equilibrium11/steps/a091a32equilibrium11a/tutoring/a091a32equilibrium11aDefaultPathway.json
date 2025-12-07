@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a091a32equilibrium11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We need to calculate the pH of a weak acid solution. The given concentration of the acid is $$0.0500$$ M, and the acid dissociation constant (Ka) is $$3.5e-5$$. We will use the approximation that the dissociation is small compared to the initial concentration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium11a-h1"
+        ],
+        "title": "Setting Up the Equation",
+        "text": "For a weak acid HA, the dissociation in water can be represented as: HA \u21cc H\u207a + A\u207b. The expression for the acid dissociation constant (Ka) is: Ka $$=$$ (H\u207a)(A\u207b)/(HA).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium11a-h2"
+        ],
+        "title": "Using the Approximation",
+        "text": "Since the dissociation is small, we can assume that the concentration of HA remains approximately $$0.0500$$ M. Therefore, the equation simplifies to: Ka $$=$$ $$\\frac{x x}{0.05-x}$$ \u2248 $$\\frac{x x}{0.05}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=\\sqrt{3.5e-5\\times0.05}$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium11a-h3"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Solve the equation Ka $$=$$ x\u00b2/0.0500 for $$x$$, where Ka $$=$$ $$3.5e-5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium11a-h4"
+        ],
+        "title": "Calculating pH",
+        "text": "Once you have the value of $$x$$, which represents the concentration of H\u207a ions, calculate the pH using the formula: pH $$=$$ $$-\\ln\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$pH=-\\ln\\left(\\sqrt{3.5e-5\\times0.05}\\right)$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium11a-h5"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the pH using the value of $$x$$ obtained from the previous step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

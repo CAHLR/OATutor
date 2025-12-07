@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a70bb2canalytmethod11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance is a measure of how much the data points in a dataset differ from the mean. It gives us an idea of the spread or dispersion of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2canalytmethod11a-h1"
+        ],
+        "title": "Steps to Calculate Variance",
+        "text": "To calculate variance, follow these steps:\\n$$1$$. Find the mean of the dataset.\\n$$2$$. Subtract the mean from each data point and square the result.\\n$$3$$. Average these squared differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Find the mean of the dataset."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod11a-h2"
+        ],
+        "title": "Calculating the Mean",
+        "text": "What is the first step in calculating variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Find the mean of the dataset.",
+            "Subtract the mean from each data point.",
+            "Square the differences.",
+            "Average the squared differences."
+        ]
+    },
+    {
+        "id": "a70bb2canalytmethod11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Subtract the mean from each data point and square the result."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod11a-h3"
+        ],
+        "title": "Subtracting the Mean",
+        "text": "What do you do after finding the mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Subtract the mean from each data point and square the result.",
+            "Average the squared differences.",
+            "Find the mean of the dataset.",
+            "Sum all data values."
+        ]
+    },
+    {
+        "id": "a70bb2canalytmethod11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Average the squared differences."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod11a-h4"
+        ],
+        "title": "Averaging Squared Differences",
+        "text": "What is the final step in calculating variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Average the squared differences.",
+            "Subtract the mean from each data point.",
+            "Find the mean of the dataset.",
+            "Sum all data values."
+        ]
+    }
+]

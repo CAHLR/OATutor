@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a091a32equilibrium10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Buffer Capacity",
+        "text": "Buffer capacity is an important concept in analytical chemistry. It refers to the ability of a buffer solution to resist changes in pH when an acid or base is added.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium10a-h1"
+        ],
+        "title": "Factors Affecting Buffer Capacity",
+        "text": "The buffer capacity depends on the concentration of the acid and its conjugate base in the solution. Higher concentrations generally lead to a higher buffer capacity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A measure of how much strong acid or strong base a buffer can absorb before its pH changes significantly."
+        ],
+        "dependencies": [
+            "a091a32equilibrium10a-h2"
+        ],
+        "title": "Identifying Buffer Capacity",
+        "text": "Which of the following best describes buffer capacity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The exact pH of a buffer at any temperature.",
+            "A measure of how much strong acid or strong base a buffer can absorb before its pH changes significantly.",
+            "The solubility of the buffer components.",
+            "The ratio of conjugate base to weak acid only."
+        ]
+    }
+]

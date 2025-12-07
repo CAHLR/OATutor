@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a70bb2cgaussianVariancea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance is a measure of how much the values in a data set differ from the mean. In a Gaussian distribution, it is closely related to the standard deviation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianVariancea-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cgaussianVariancea-h1"
+        ],
+        "title": "Relationship Between Variance and Standard Deviation",
+        "text": "The variance is the square of the standard deviation. This means if you know the standard deviation, you can find the variance by squaring it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianVariancea-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a70bb2cgaussianVariancea-h2"
+        ],
+        "title": "Calculating Variance",
+        "text": "If the standard deviation of a Gaussian distribution is \\( \\sigma \\), what is the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianVariancea-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common Misconceptions",
+        "text": "Remember, variance is not the same as the mean or the range of the data. It specifically measures the spread of the data around the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianVariancea-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is the square of the standard deviation."
+        ],
+        "dependencies": [
+            "a70bb2cgaussianVariancea-h2"
+        ],
+        "title": "Multiple Choice Check",
+        "text": "Which of the following correctly describes the variance of a Gaussian distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is the square of the mean.",
+            ">It is the square of the standard deviation.",
+            "It is the sum of all data points.",
+            "It is the difference between the maximum and minimum values."
+        ]
+    }
+]

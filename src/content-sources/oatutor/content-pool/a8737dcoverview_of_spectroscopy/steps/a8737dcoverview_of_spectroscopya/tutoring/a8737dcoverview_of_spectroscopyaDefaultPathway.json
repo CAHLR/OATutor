@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a8737dcoverview_of_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectroscopy",
+        "text": "Spectroscopy is a technique that involves the study of the interaction between matter and electromagnetic radiation. It is used to analyze the composition and properties of substances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcoverview_of_spectroscopya-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcoverview_of_spectroscopya-h1"
+        ],
+        "title": "Types of Spectroscopy",
+        "text": "There are various types of spectroscopy, including UV-Vis, IR, NMR, and Mass Spectroscopy, each focusing on different aspects of the electromagnetic spectrum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcoverview_of_spectroscopya-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Interaction of light with matter"
+        ],
+        "dependencies": [
+            "a8737dcoverview_of_spectroscopya-h2"
+        ],
+        "title": "Fundamental Principle of Spectroscopy",
+        "text": "What is the fundamental principle that spectroscopy relies on?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Interaction of light with matter",
+            "Chemical reactions",
+            "Mechanical forces",
+            "Thermal expansion"
+        ]
+    },
+    {
+        "id": "a8737dcoverview_of_spectroscopya-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcoverview_of_spectroscopya-h3"
+        ],
+        "title": "Importance of Spectroscopy",
+        "text": "Spectroscopy is crucial in scientific research as it helps in identifying substances, determining their structure, and understanding their properties.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

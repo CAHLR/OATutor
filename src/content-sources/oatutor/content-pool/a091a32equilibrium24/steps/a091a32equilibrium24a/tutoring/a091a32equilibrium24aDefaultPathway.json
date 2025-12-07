@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a091a32equilibrium24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Solubility Product",
+        "text": "The solubility product constant (Ksp) is a measure of the solubility of a compound. It is the product of the concentrations of the ions each raised to the power of their coefficients in the balanced equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium24a-h1"
+        ],
+        "title": "Write the Dissolution Equation",
+        "text": "Write the balanced chemical equation for the dissolution of $$\\operatorname{Mg}\\left(OH\\right) _2$$ in water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\operatorname{Mg}\\left(OH\\right) \\operatorname{_2}\\left(s\\right)$$ \u21cc $${Mg}^2+aq$$ + $$2{OH}^{-aq}$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium24a-h2"
+        ],
+        "title": "Balanced Equation for Mg(OH)2 Dissolution",
+        "text": "The balanced equation for the dissolution of $$\\operatorname{Mg}\\left(OH\\right) _2$$ is: $$\\operatorname{Mg}\\left(OH\\right) \\operatorname{_2}\\left(s\\right)$$ \u21cc $${Mg}^2+aq$$ + $$2{OH}^{-aq}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium24a-h3"
+        ],
+        "title": "Express Ksp in Terms of Ion Concentrations",
+        "text": "Using the balanced equation, express the solubility product (Ksp) in terms of the concentrations of Mg**2+ and OH**- ions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Ksp={[Mg**2+][OH**-][Mg**2+][OH**-]}^2$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium24a-h4"
+        ],
+        "title": "Ksp Expression",
+        "text": "The expression for Ksp is: Ksp $$=$$ $${[Mg**2+][OH**-][Mg**2+][OH**-]}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium24a-h5"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the Ksp expression. You know Ksp and $$[OH**-]$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$[Mg**2+]=1.2e-\\frac{11}{\\left(1e-7\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium24a-h6"
+        ],
+        "title": "Substitute and Solve",
+        "text": "Substitute $$Ksp=1.2e-11$$ and $$[OH**-]=1.0e-7$$ into the expression: $$1.2e-11$$ $$=$$ $${\\operatorname{[Mg**2+]}\\left(1e-7\\right)}^2$$. Solve for $$[Mg**2+]$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium24a-h7"
+        ],
+        "title": "Calculate the Molar Solubility",
+        "text": "Calculate the molar solubility of $$\\operatorname{Mg}\\left(OH\\right) _2$$ using the expression you derived.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium24a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1200$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium24a-h8"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate $$[Mg**2+]$$ $$=$$ $$1.2e-\\frac{11}{\\left(1e-7\\right)^2}$$ $$=$$ $$1.2e-\\frac{11}{1} e-14$$ $$=$$ $$1200$$ M.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

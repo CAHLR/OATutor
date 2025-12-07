@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a091a32equilibrium17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Formation Constant",
+        "text": "The formation constant, Kf, is a measure of the stability of the complex ML2. A large Kf value indicates that the complex is very stable and that most of the metal M will be in the form of ML2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium17a-h1"
+        ],
+        "title": "Approximate Mass Balance",
+        "text": "Since Kf is large, we can assume that almost all of the metal M is bound as ML2. This means that the concentration of free M is very small compared to the initial concentration of M.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium17a-h2"
+        ],
+        "title": "Using the Formation Constant",
+        "text": "The formation constant Kf is given by the equation: $$Kf=\\frac{[ML2]}{[ML2] {[ML2]}^2}$$. Since [ML2] is approximately equal to the initial concentration of M, you can use this equation to solve for [M].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.12E-07$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium17a-h3"
+        ],
+        "title": "Calculate [M]",
+        "text": "Using the equation $$Kf=\\frac{[ML2]}{[ML2] {[ML2]}^2}$$, and knowing that [ML2] is approximately $$0.0100$$ M and [L] is $$0.0500$$ M, solve for [M].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium17a-h4"
+        ],
+        "title": "Calculating pM",
+        "text": "Once you have calculated [M], you can find pM using the formula $$pM=-log10([M])$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium17a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.95$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium17a-h5"
+        ],
+        "title": "Calculate pM",
+        "text": "Using the value of [M] you calculated, find pM using the formula $$pM=-log10([M])$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a091a32equilibrium22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the pH of a weak acid solution, we need to use the acid dissociation constant (Ka) and the initial concentration of the acid. The formula for Ka is: Ka $$=$$ $$\\frac{[H+][A-]/[HA][H+][A-]/[HA]}{[H+][A-]/[HA]}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium22a-h1"
+        ],
+        "title": "Setting Up the Mass Balance Equation",
+        "text": "The mass balance equation for the weak acid HA is: $$[HA]_{initial}$$ $$=$$ [HA] + [A-]. This equation helps us relate the initial concentration of the acid to the concentrations of the dissociated and undissociated forms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium22a-h2"
+        ],
+        "title": "Using the Ka Expression",
+        "text": "Substitute the expressions for $$[H+]$$ and [A-] from the mass balance into the Ka expression: Ka $$=$$ [H+]**2/([HA]_initial - [H+]).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium22a-h3"
+        ],
+        "title": "Solving for $$[H+]$$",
+        "text": "Rearrange the equation to solve for $$[H+]$$: $${[H+]}^2$$ $$=$$ Ka * ([HA]_initial - [H+]). This is a quadratic equation in terms of $$[H+]$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$[H+]$$ $$=$$ $$0.00355$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium22a-h4"
+        ],
+        "title": "Solving the Quadratic Equation",
+        "text": "Use the quadratic formula to solve for $$[H+]$$: $$[H+]$$ $$=$$ $$(-b$$ $$\\frac{plus}{minus}$$ sqrt(b**2 - 4ac))/(2a), where a $$=$$ $$1$$, $$b$$ $$=$$ -Ka, and c $$=$$ $$-Ka [HA]_{initial}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium22a-h5"
+        ],
+        "title": "Calculating the pH",
+        "text": "Once you have $$[H+]$$, calculate the pH using the formula: pH $$=$$ $$-log[H+]$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.45$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium22a-h6"
+        ],
+        "title": "Final pH Calculation",
+        "text": "Substitute the value of $$[H+]$$ into the pH formula: pH $$=$$ $$-\\ln\\left(0.00355\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

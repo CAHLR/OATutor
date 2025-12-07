@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a091a32equilibrium16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Common Ion Effect",
+        "text": "The presence of a common ion in a solution can affect the solubility of a sparingly soluble salt. In this case, the common ion is Cl- from NaCl. How do you think this will affect the solubility of PbCl2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium16a-h1"
+        ],
+        "title": "Setting Up the Equilibrium Expression",
+        "text": "The solubility product expression for PbCl2 is Ksp ext{=}Pb**{2+}*Cl**{-}**2. How can you express the concentrations of these ions in terms of the solubility of PbCl2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium16a-h2"
+        ],
+        "title": "Considering the Initial Concentration of Cl-",
+        "text": "Since NaCl is a strong electrolyte, it completely dissociates in solution. What is the initial concentration of Cl- from NaCl?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1+2s$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium16a-h3"
+        ],
+        "title": "Solving for Molar Solubility",
+        "text": "Given that the concentration of Cl- from NaCl is $$0.10$$ M, and the solubility of PbCl2 is s, write the expression for the total concentration of Cl- in the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6e-5$$ ext{=}s*(0.10+2s)**2"
+        ],
+        "dependencies": [
+            "a091a32equilibrium16a-h4"
+        ],
+        "title": "Substituting into the Ksp Expression",
+        "text": "Substitute the expressions for Pb**{2+} and Cl**{-} into the Ksp expression: Ksp ext{=}Pb**{2+}*Cl**{-}**2. Solve for s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium16a-h5"
+        ],
+        "title": "Approximating the Solution",
+        "text": "Since $$0.10$$ is much larger than 2s, you can approximate $$0.1+2s$$ as $$0.10$$. Solve for s using this approximation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium16a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0016$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium16a-h6"
+        ],
+        "title": "Final Calculation",
+        "text": "Using the approximation, solve for s in the equation $$1.6e-5$$ ext{=}s*0.10**2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

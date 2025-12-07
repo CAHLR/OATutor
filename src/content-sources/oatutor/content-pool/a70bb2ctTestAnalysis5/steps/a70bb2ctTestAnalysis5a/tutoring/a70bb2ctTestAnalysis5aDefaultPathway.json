@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a70bb2ctTestAnalysis5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$p-values$$",
+        "text": "A $$p-value$$ is a measure of the probability that an observed difference could have occurred just by random chance. In hypothesis testing, it helps determine the significance of your results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestAnalysis5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2ctTestAnalysis5a-h1"
+        ],
+        "title": "Threshold for significance",
+        "text": "In many scientific studies, a $$p-value$$ threshold of $$0.05$$ is commonly used to determine statistical significance. This means that there is a 5% chance that the observed results are due to random variation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestAnalysis5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2ctTestAnalysis5a-h2"
+        ],
+        "title": "Interpreting $$p-values$$",
+        "text": "If the $$p-value$$ is less than $$0.05$$, it suggests that the null hypothesis can be rejected, indicating that the results are statistically significant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestAnalysis5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The result is statistically significant"
+        ],
+        "dependencies": [
+            "a70bb2ctTestAnalysis5a-h3"
+        ],
+        "title": "Choosing the correct interpretation",
+        "text": "Given a $$p-value$$ less than $$0.05$$, what does this imply about the statistical significance of the test results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The result is statistically significant",
+            "The result is not statistically significant",
+            "The test is invalid",
+            "The sample size is too small"
+        ]
+    }
+]

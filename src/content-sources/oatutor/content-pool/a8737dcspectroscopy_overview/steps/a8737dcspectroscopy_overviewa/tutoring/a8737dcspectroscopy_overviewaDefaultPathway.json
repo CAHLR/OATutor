@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a8737dcspectroscopy_overviewa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectroscopy",
+        "text": "Spectroscopy is a technique that involves the interaction of light with matter. Can you think of how this interaction might help in identifying substances?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcspectroscopy_overviewa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcspectroscopy_overviewa-h1"
+        ],
+        "title": "Types of Spectroscopy",
+        "text": "There are different types of spectroscopy, such as UV-Vis, IR, and NMR. Each type uses different parts of the electromagnetic spectrum. How might these different types be useful in chemical analysis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcspectroscopy_overviewa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To identify and quantify substances based on their interaction with light"
+        ],
+        "dependencies": [
+            "a8737dcspectroscopy_overviewa-h2"
+        ],
+        "title": "Purpose of Spectroscopy",
+        "text": "What is the primary purpose of using spectroscopy in chemical analysis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To identify and quantify substances based on their interaction with light",
+            "To measure the temperature of a substance",
+            "To determine the pH of a solution",
+            "To calculate the density of a material"
+        ]
+    }
+]

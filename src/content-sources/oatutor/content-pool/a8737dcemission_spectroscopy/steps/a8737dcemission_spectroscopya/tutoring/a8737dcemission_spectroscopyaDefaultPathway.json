@@ -1,0 +1,103 @@
+[
+    {
+        "id": "a8737dcemission_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Emission Spectroscopy",
+        "text": "Emission spectroscopy involves analyzing the light emitted by a sample when it is excited by an energy source. Can you think of what happens to the electrons in the sample during this process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcemission_spectroscopya-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Absorption Spectroscopy",
+        "text": "In absorption spectroscopy, the focus is on the light absorbed by a sample. What do you think happens to the energy levels of the electrons in the sample when light is absorbed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcemission_spectroscopya-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Emission"
+        ],
+        "dependencies": [
+            "a8737dcemission_spectroscopya-h1"
+        ],
+        "title": "Energy Transitions in Emission Spectroscopy",
+        "text": "In emission spectroscopy, electrons in a sample absorb energy and move to higher energy levels. When they return to lower energy levels, they emit light. What is this process called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Emission",
+            "Absorption",
+            "Reflection",
+            "Refraction"
+        ]
+    },
+    {
+        "id": "a8737dcemission_spectroscopya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is transmitted or reflected."
+        ],
+        "dependencies": [
+            "a8737dcemission_spectroscopya-h2"
+        ],
+        "title": "Energy Transitions in Absorption Spectroscopy",
+        "text": "In absorption spectroscopy, electrons in a sample absorb light and move to higher energy levels. What happens to the light that is not absorbed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is transmitted or reflected.",
+            "It is absorbed completely.",
+            "It is emitted as fluorescence.",
+            "It is converted to heat."
+        ]
+    },
+    {
+        "id": "a8737dcemission_spectroscopya-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcemission_spectroscopya-h3"
+        ],
+        "title": "Comparing Emission and Absorption",
+        "text": "Both emission and absorption spectroscopy involve energy transitions in electrons. How do these transitions differ between the two techniques?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcemission_spectroscopya-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Emission spectroscopy measures light emitted by a sample, while absorption spectroscopy measures light absorbed by a sample."
+        ],
+        "dependencies": [
+            "a8737dcemission_spectroscopya-h5"
+        ],
+        "title": "Key Difference Between Techniques",
+        "text": "What is the main difference between emission and absorption spectroscopy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Emission spectroscopy measures light emitted by a sample, while absorption spectroscopy measures light absorbed by a sample",
+            "Emission spectroscopy measures light absorbed by a sample, while absorption spectroscopy measures light emitted by a sample",
+            "Both techniques measure light absorbed by a sample",
+            "Both techniques measure light emitted by a sample"
+        ]
+    }
+]

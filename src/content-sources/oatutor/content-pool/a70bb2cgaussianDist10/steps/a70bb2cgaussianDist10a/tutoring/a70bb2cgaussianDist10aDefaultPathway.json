@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2cgaussianDist10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Central Limit Theorem",
+        "text": "The central limit theorem is a fundamental concept in statistics. It states that the distribution of sample means will tend to be normal, or Gaussian, as the sample size increases, regardless of the shape of the population distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianDist10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cgaussianDist10a-h1"
+        ],
+        "title": "Sample Size and Distribution",
+        "text": "Consider how increasing the sample size affects the distribution of sample means. Does it become more or less like a Gaussian distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianDist10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It approaches a Gaussian distribution"
+        ],
+        "dependencies": [
+            "a70bb2cgaussianDist10a-h2"
+        ],
+        "title": "Analyzing the Distribution",
+        "text": "As the sample size increases, the distribution of sample means becomes more like which type of distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It becomes skewed",
+            "It approaches a Gaussian distribution",
+            "It becomes uniform",
+            "It remains unchanged"
+        ]
+    }
+]

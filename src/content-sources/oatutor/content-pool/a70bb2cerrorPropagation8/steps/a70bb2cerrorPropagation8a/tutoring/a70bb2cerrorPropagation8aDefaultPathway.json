@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a70bb2cerrorPropagation8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Error",
+        "text": "Relative error is a measure of the uncertainty of a measurement compared to the size of the measurement itself. It is often expressed as a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cerrorPropagation8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cerrorPropagation8a-h1"
+        ],
+        "title": "Formula for Relative Error in Multiplication",
+        "text": "When multiplying two measurements, the relative error of the product is the sum of the relative errors of the individual measurements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cerrorPropagation8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e_A+e_B$$"
+        ],
+        "dependencies": [
+            "a70bb2cerrorPropagation8a-h2"
+        ],
+        "title": "Calculating Relative Error",
+        "text": "If you have two measurements, A and B, with relative errors of $$e_A$$ and $$e_B$$ respectively, what is the relative error of the product $$A B$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cerrorPropagation8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cerrorPropagation8a-h2"
+        ],
+        "title": "Relative Error in Division",
+        "text": "Similar to multiplication, when dividing two measurements, the relative error of the quotient is the sum of the relative errors of the individual measurements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cerrorPropagation8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e_A+e_B$$"
+        ],
+        "dependencies": [
+            "a70bb2cerrorPropagation8a-h4"
+        ],
+        "title": "Calculating Relative Error in Division",
+        "text": "If you have two measurements, A and B, with relative errors of $$e_A$$ and $$e_B$$ respectively, what is the relative error of the quotient $$\\frac{A}{B}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cerrorPropagation8a-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Absolute vs. Relative Error",
+        "text": "Remember that absolute error is the difference between the measured value and the true value, while relative error is the absolute error divided by the true value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a70bb2canalytmethod12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Type I Error",
+        "text": "A Type I error occurs when you incorrectly reject a true null hypothesis. This is often referred to as a 'false positive.'",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Rejecting the null hypothesis when it is actually true."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod12a-h1"
+        ],
+        "title": "Identifying Type I Error",
+        "text": "Which of the following best describes a Type I error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Rejecting the null hypothesis when it is actually true.",
+            "Failing to reject the null hypothesis when it is false.",
+            "Accepting the alternative hypothesis when it is false.",
+            "Accepting the null hypothesis when it is true."
+        ]
+    },
+    {
+        "id": "a70bb2canalytmethod12a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Type II Error",
+        "text": "A Type II error occurs when you fail to reject a false null hypothesis. This is often referred to as a 'false negative.'",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Failing to reject the null hypothesis when it is false."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod12a-h3"
+        ],
+        "title": "Identifying Type II Error",
+        "text": "Which of the following best describes a Type II error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Rejecting the null hypothesis when it is actually true.",
+            "Failing to reject the null hypothesis when it is false.",
+            "Accepting the alternative hypothesis when it is false.",
+            "Accepting the null hypothesis when it is true."
+        ]
+    },
+    {
+        "id": "a70bb2canalytmethod12a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Balancing Errors",
+        "text": "In hypothesis testing, balancing Type I and Type II errors is crucial. Reducing one type of error often increases the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
