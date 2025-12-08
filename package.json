@@ -21,7 +21,6 @@
         "fluent-ffmpeg": "^2.1.3",
         "http2": "~3.3.7",
         "list-react-files": "~0.2.0",
-        "latex2mathml": "^3.77.0",
         "localforage": "~1.10.0",
         "mathlive": "^0.98.3",
         "node-web-audio-api": "^0.21.1",
@@ -64,7 +63,13 @@
         "fix-lockfile": "npm install --package-lock-only",
         "process-hints": "node src/math-to-speech/scripts/autoHintProcessor.js",
         "process-hints:force": "node src/math-to-speech/scripts/autoHintProcessor.js --force",
-        "process-hints:dry-run": "node src/math-to-speech/scripts/autoHintProcessor.js --dry-run --verbose"
+        "process-hints:dry-run": "node src/math-to-speech/scripts/autoHintProcessor.js --dry-run --verbose",
+        "process-tts": "node src/math-to-speech/scripts/autoTTSProcessor.js",
+        "process-tts:force": "node src/math-to-speech/scripts/autoTTSProcessor.js --force",
+        "process-tts:dry-run": "node src/math-to-speech/scripts/autoTTSProcessor.js --dry-run --verbose",
+        "process-tts:hints": "node src/math-to-speech/scripts/autoTTSProcessor.js --types hints",
+        "process-tts:steps": "node src/math-to-speech/scripts/autoTTSProcessor.js --types steps",
+        "process-tts:problems": "node src/math-to-speech/scripts/autoTTSProcessor.js --types problems"
     },
     "browserslist": {
         "production": [

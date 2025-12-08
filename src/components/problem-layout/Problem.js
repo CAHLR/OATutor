@@ -11,6 +11,8 @@ import {
     chooseVariables,
     renderText,
 } from "../../platform-logic/renderText.js";
+import { variabilize } from "../../platform-logic/variabilize.js";
+import axios from "axios";
 import styles from "./common-styles.js";
 import IconButton from "@material-ui/core/IconButton";
 import TextField from "@material-ui/core/TextField";
@@ -71,7 +73,12 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
+            problemBodyPlaying: false,
+            problemBodyAudios: null,
         };
+        
+        this.problemBodyAudioRef = null;
+        this.problemBodyAudioUrl = null;
     }
 
     componentDidMount() {
@@ -85,6 +92,24 @@ class Problem extends React.Component {
         // query selects all katex annotation and adds aria label attribute to it
         for (const annotation of document.querySelectorAll("annotation")) {
             annotation.ariaLabel = annotation.textContent;
+        }
+        
+        // Pre-load problem body audio
+        this.fetchProblemBodyAudio();
+    }
+    
+    componentWillUnmount() {
+        document["oats-meta-courseName"] = "";
+        document["oats-meta-textbookName"] = "";
+        
+        // Clean up audio when component unmounts
+        if (this.problemBodyAudioRef) {
+            this.problemBodyAudioRef.pause();
+            this.problemBodyAudioRef = null;
+        }
+        if (this.problemBodyAudioUrl) {
+            window.URL.revokeObjectURL(this.problemBodyAudioUrl);
+            this.problemBodyAudioUrl = null;
         }
     }
 
@@ -372,6 +397,183 @@ class Problem extends React.Component {
         );
     };
 
+    // Get problem body text with variabilization applied
+    // If pacedSpeech exists in problem, use it (already processed with SRE)
+    // Otherwise, use basic LaTeX conversion as fallback
+    getProblemBodyText = () => {
+        const { problem, seed } = this.props;
+        if (!problem || !problem.body) {
+            return "";
+        }
+        
+        // Check if problem has pacedSpeech (from backend SRE processing)
+        if (problem.pacedSpeech && Array.isArray(problem.pacedSpeech) && problem.pacedSpeech.length > 0) {
+            // Use the SRE-processed text (combine all segments into one)
+            return problem.pacedSpeech.join(' ').trim();
+        }
+        
+        // Fallback: basic processing if pacedSpeech not available
+        const variabilization = chooseVariables(
+            problem.variabilization,
+            seed
+        );
+        
+        let bodyText = problem.body;
+        
+        // Apply variabilization using the same function as renderText
+        if (variabilization) {
+            bodyText = variabilize(bodyText, variabilization);
+        }
+        
+        // Basic LaTeX to text conversion for TTS (fallback only)
+        bodyText = bodyText.replace(/\$\$(.*?)\$\$/g, (match, latex) => {
+            let text = latex
+                .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1 over $2')
+                .replace(/\\sqrt\{([^}]+)\}/g, 'square root of $1')
+                .replace(/\\sqrt\[([^\]]+)\]\{([^}]+)\}/g, '$1 root of $2')
+                .replace(/\\times/g, 'times')
+                .replace(/\\div/g, 'divided by')
+                .replace(/\\pm/g, 'plus or minus')
+                .replace(/\\leq/g, 'less than or equal to')
+                .replace(/\\geq/g, 'greater than or equal to')
+                .replace(/\\neq/g, 'not equal to')
+                .replace(/\\approx/g, 'approximately')
+                .replace(/\\cdot/g, 'times')
+                .replace(/\^(\d+)/g, 'to the power of $1')
+                .replace(/_(\d+)/g, 'subscript $1')
+                .replace(/\\left\(/g, '')
+                .replace(/\\right\)/g, '')
+                .replace(/\\left\[/g, '')
+                .replace(/\\right\]/g, '')
+                .replace(/\\left\{/g, '')
+                .replace(/\\right\}/g, '')
+                .replace(/\\,/g, '')
+                .replace(/\{/g, '')
+                .replace(/\}/g, '');
+            return text;
+        });
+        
+        bodyText = bodyText.replace(/\s+/g, ' ').trim();
+        return bodyText;
+    };
+
+    // Fetch problem body audio using TTS API - use single continuous text
+    fetchProblemBodyAudio = async () => {
+        try {
+            const bodyText = this.getProblemBodyText();
+            if (!bodyText) {
+                return;
+            }
+
+            // Use single continuous text (not segments array) for natural speech
+            const segments = [bodyText];
+
+            const response = await axios.post(
+                "https://7g3tiigt6paiqrcfub5f6vouqq0gynjn.lambda-url.us-east-2.on.aws/",
+                {
+                    segments,
+                },
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+
+            let audios;
+            if (response.data && Array.isArray(response.data.audios)) {
+                audios = response.data.audios;
+            } else if (
+                response.data &&
+                typeof response.data.body === "string"
+            ) {
+                const parsed = JSON.parse(response.data.body);
+                audios = parsed.audios;
+            } else {
+                console.error(
+                    "Unexpected TTS response shape for problem body:",
+                    response.data
+                );
+                return;
+            }
+
+            this.setState({ problemBodyAudios: audios });
+        } catch (error) {
+            console.error("Error fetching problem body audio:", error);
+        }
+    };
+
+    // Play problem body audio - play single continuous audio
+    playProblemBodyAudio = (fromStart = false) => {
+        const { problemBodyAudios } = this.state;
+        if (!problemBodyAudios || problemBodyAudios.length === 0) {
+            return;
+        }
+
+        // Stop current audio if playing
+        if (this.problemBodyAudioRef) {
+            this.problemBodyAudioRef.pause();
+            this.problemBodyAudioRef = null;
+        }
+
+        // Clean up previous audio URL if exists
+        if (this.problemBodyAudioUrl) {
+            window.URL.revokeObjectURL(this.problemBodyAudioUrl);
+            this.problemBodyAudioUrl = null;
+        }
+
+        // Play the single continuous audio segment
+        const audioBlob = new Blob(
+            [
+                new Uint8Array(
+                    atob(problemBodyAudios[0])
+                        .split("")
+                        .map((c) => c.charCodeAt(0))
+                ),
+            ],
+            { type: "audio/mp3" }
+        );
+        this.problemBodyAudioUrl = window.URL.createObjectURL(audioBlob);
+        this.problemBodyAudioRef = new Audio(this.problemBodyAudioUrl);
+
+        this.problemBodyAudioRef.play();
+        this.problemBodyAudioRef.onended = () => {
+            this.setState({ problemBodyPlaying: false });
+            if (this.problemBodyAudioUrl) {
+                window.URL.revokeObjectURL(this.problemBodyAudioUrl);
+                this.problemBodyAudioUrl = null;
+            }
+        };
+
+        this.setState({ problemBodyPlaying: true });
+    };
+
+    // Toggle problem body play/pause
+    toggleProblemBodyPlayPause = () => {
+        if (this.state.problemBodyPlaying) {
+            // Pause
+            if (this.problemBodyAudioRef) {
+                this.problemBodyAudioRef.pause();
+            }
+            this.setState({ problemBodyPlaying: false });
+        } else {
+            // Play
+            if (this.problemBodyAudioRef && this.problemBodyAudioRef.currentTime > 0 && !this.problemBodyAudioRef.ended) {
+                // Resume if already loaded and not ended
+                this.problemBodyAudioRef.play();
+                this.setState({ problemBodyPlaying: true });
+            } else {
+                // Start playing from beginning
+                this.playProblemBodyAudio(true);
+            }
+        }
+    };
+
+    // Replay problem body audio from the beginning
+    replayProblemBodyAudio = () => {
+        this.playProblemBodyAudio(true);
+    };
+
     getOerLicense = () => {
         const { lesson, problem } = this.props;
         var oerArray, licenseArray;
@@ -432,7 +634,58 @@ class Problem extends React.Component {
                                 {...stagingProp({
                                     "data-selenium-target": "problem-header",
                                 })}
+                                style={{ position: "relative" }}
                             >
+                                {/* Play/Pause and Replay buttons for problem body TTS - positioned at top right */}
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        top: 16,
+                                        right: 16,
+                                        zIndex: 10,
+                                        display: "flex",
+                                        gap: "8px",
+                                    }}
+                                >
+                                    <IconButton
+                                        onClick={this.toggleProblemBodyPlayPause}
+                                        size="small"
+                                        aria-label={
+                                            this.state.problemBodyPlaying
+                                                ? "Pause problem description"
+                                                : "Play problem description"
+                                        }
+                                    >
+                                        {this.state.problemBodyPlaying ? (
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/pause_icon.svg`}
+                                                alt="Pause Icon"
+                                                width={20}
+                                                height={20}
+                                            />
+                                        ) : (
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/play_icon.svg`}
+                                                alt="Play Icon"
+                                                width={20}
+                                                height={20}
+                                            />
+                                        )}
+                                    </IconButton>
+                                    <IconButton
+                                        onClick={this.replayProblemBodyAudio}
+                                        size="small"
+                                        aria-label="Replay problem description"
+                                    >
+                                        <img
+                                            src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
+                                            alt="Replay Icon"
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </IconButton>
+                                </div>
+
                                 <h1 className={classes.problemHeader}>
                                     {renderText(
                                         problem.title,

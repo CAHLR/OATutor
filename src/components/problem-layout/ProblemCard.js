@@ -15,6 +15,7 @@ import {
     chooseVariables,
     renderText,
 } from "../../platform-logic/renderText.js";
+import { variabilize } from "../../platform-logic/variabilize.js";
 import {
     DYNAMIC_HINT_URL,
     DYNAMIC_HINT_TEMPLATE,
@@ -141,7 +142,12 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
+            questionPlaying: false,
+            questionAudios: null,
         };
+        
+        this.questionAudioRef = null;
+        this.questionAudioUrl = null;
     }
 
     _findHintId = (hints, targetId) => {
@@ -181,6 +187,20 @@ class ProblemCard extends React.Component {
         // Start an asynchronous task
         this.updateBioInfo();
         console.log("student show hints status: ", this.showHints);
+        // Pre-load question audio
+        this.fetchQuestionAudio();
+    }
+    
+    componentWillUnmount() {
+        // Clean up audio when component unmounts
+        if (this.questionAudioRef) {
+            this.questionAudioRef.pause();
+            this.questionAudioRef = null;
+        }
+        if (this.questionAudioUrl) {
+            window.URL.revokeObjectURL(this.questionAudioUrl);
+            this.questionAudioUrl = null;
+        }
     }
 
     componentDidUpdate(prevProps) {
@@ -474,6 +494,186 @@ class ProblemCard extends React.Component {
             });
     };
 
+    // Get question text with variabilization applied
+    // If pacedSpeech exists in step, use it (already processed with SRE)
+    // Otherwise, use basic LaTeX conversion as fallback
+    getQuestionText = () => {
+        // Check if step has pacedSpeech (from backend SRE processing)
+        if (this.step.pacedSpeech && Array.isArray(this.step.pacedSpeech) && this.step.pacedSpeech.length > 0) {
+            // Use the SRE-processed text (combine all segments into one)
+            return this.step.pacedSpeech.join(' ').trim();
+        }
+        
+        // Fallback: basic processing if pacedSpeech not available
+        const { problemVars, seed } = this.props;
+        const variabilization = chooseVariables(
+            Object.assign(
+                {},
+                problemVars,
+                this.step.variabilization
+            ),
+            seed
+        );
+        
+        // Combine stepTitle and stepBody
+        const title = this.step.stepTitle || "";
+        const body = this.step.stepBody || "";
+        let questionText = title + (title && body ? " " : "") + body;
+        
+        // Apply variabilization using the same function as renderText
+        if (variabilization) {
+            questionText = variabilize(questionText, variabilization);
+        }
+        
+        // Basic LaTeX to text conversion for TTS (fallback only)
+        questionText = questionText.replace(/\$\$(.*?)\$\$/g, (match, latex) => {
+            let text = latex
+                .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1 over $2')
+                .replace(/\\sqrt\{([^}]+)\}/g, 'square root of $1')
+                .replace(/\\sqrt\[([^\]]+)\]\{([^}]+)\}/g, '$1 root of $2')
+                .replace(/\\times/g, 'times')
+                .replace(/\\div/g, 'divided by')
+                .replace(/\\pm/g, 'plus or minus')
+                .replace(/\\leq/g, 'less than or equal to')
+                .replace(/\\geq/g, 'greater than or equal to')
+                .replace(/\\neq/g, 'not equal to')
+                .replace(/\\approx/g, 'approximately')
+                .replace(/\\cdot/g, 'times')
+                .replace(/\^(\d+)/g, 'to the power of $1')
+                .replace(/_(\d+)/g, 'subscript $1')
+                .replace(/\\left\(/g, '')
+                .replace(/\\right\)/g, '')
+                .replace(/\\left\[/g, '')
+                .replace(/\\right\]/g, '')
+                .replace(/\\left\{/g, '')
+                .replace(/\\right\}/g, '')
+                .replace(/\\,/g, '')
+                .replace(/\{/g, '')
+                .replace(/\}/g, '');
+            return text;
+        });
+        
+        questionText = questionText.replace(/\s+/g, ' ').trim();
+        return questionText;
+    };
+
+    // Fetch question audio using TTS API - use single continuous text
+    fetchQuestionAudio = async () => {
+        try {
+            const questionText = this.getQuestionText();
+            if (!questionText) {
+                return;
+            }
+
+            // Use single continuous text (not segments array) for natural speech
+            const segments = [questionText];
+
+            const response = await axios.post(
+                "https://7g3tiigt6paiqrcfub5f6vouqq0gynjn.lambda-url.us-east-2.on.aws/",
+                {
+                    segments,
+                },
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+
+            let audios;
+            if (response.data && Array.isArray(response.data.audios)) {
+                audios = response.data.audios;
+            } else if (
+                response.data &&
+                typeof response.data.body === "string"
+            ) {
+                const parsed = JSON.parse(response.data.body);
+                audios = parsed.audios;
+            } else {
+                console.error(
+                    "Unexpected TTS response shape for question:",
+                    response.data
+                );
+                return;
+            }
+
+            this.setState({ questionAudios: audios });
+        } catch (error) {
+            console.error("Error fetching question audio:", error);
+        }
+    };
+
+    // Play question audio - play single continuous audio
+    playQuestionAudio = (fromStart = false) => {
+        const { questionAudios } = this.state;
+        if (!questionAudios || questionAudios.length === 0) {
+            return;
+        }
+
+        // Stop current audio if playing
+        if (this.questionAudioRef) {
+            this.questionAudioRef.pause();
+            this.questionAudioRef = null;
+        }
+
+        // Clean up previous audio URL if exists
+        if (this.questionAudioUrl) {
+            window.URL.revokeObjectURL(this.questionAudioUrl);
+            this.questionAudioUrl = null;
+        }
+
+        // Play the single continuous audio segment
+        const audioBlob = new Blob(
+            [
+                new Uint8Array(
+                    atob(questionAudios[0])
+                        .split("")
+                        .map((c) => c.charCodeAt(0))
+                ),
+            ],
+            { type: "audio/mp3" }
+        );
+        this.questionAudioUrl = window.URL.createObjectURL(audioBlob);
+        this.questionAudioRef = new Audio(this.questionAudioUrl);
+
+        this.questionAudioRef.play();
+        this.questionAudioRef.onended = () => {
+            this.setState({ questionPlaying: false });
+            if (this.questionAudioUrl) {
+                window.URL.revokeObjectURL(this.questionAudioUrl);
+                this.questionAudioUrl = null;
+            }
+        };
+
+        this.setState({ questionPlaying: true });
+    };
+
+    // Toggle question play/pause
+    toggleQuestionPlayPause = () => {
+        if (this.state.questionPlaying) {
+            // Pause
+            if (this.questionAudioRef) {
+                this.questionAudioRef.pause();
+            }
+            this.setState({ questionPlaying: false });
+        } else {
+            // Play
+            if (this.questionAudioRef && this.questionAudioRef.currentTime > 0 && !this.questionAudioRef.ended) {
+                // Resume if already loaded and not ended
+                this.questionAudioRef.play();
+                this.setState({ questionPlaying: true });
+            } else {
+                // Start playing from beginning
+                this.playQuestionAudio(true);
+            }
+        }
+    };
+
+    // Replay question audio from the beginning
+    replayQuestionAudio = () => {
+        this.playQuestionAudio(true);
+    };
+
     render() {
         const { translate } = this.props;
         const { classes, problemID, problemVars, seed } = this.props;
@@ -484,7 +684,57 @@ class ProblemCard extends React.Component {
 
         return (
             <Card className={classes.card}>
-                <CardContent>
+                <CardContent style={{ position: "relative" }}>
+                    {/* Play/Pause and Replay buttons for question TTS - positioned at top right */}
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: 16,
+                            right: 16,
+                            zIndex: 10,
+                            display: "flex",
+                            gap: "8px",
+                        }}
+                    >
+                        <IconButton
+                            onClick={this.toggleQuestionPlayPause}
+                            size="small"
+                            aria-label={
+                                this.state.questionPlaying
+                                    ? "Pause question"
+                                    : "Play question"
+                            }
+                        >
+                            {this.state.questionPlaying ? (
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/pause_icon.svg`}
+                                    alt="Pause Icon"
+                                    width={20}
+                                    height={20}
+                                />
+                            ) : (
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/play_icon.svg`}
+                                    alt="Play Icon"
+                                    width={20}
+                                    height={20}
+                                />
+                            )}
+                        </IconButton>
+                        <IconButton
+                            onClick={this.replayQuestionAudio}
+                            size="small"
+                            aria-label="Replay question"
+                        >
+                            <img
+                                src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
+                                alt="Replay Icon"
+                                width={20}
+                                height={20}
+                            />
+                        </IconButton>
+                    </div>
+
                     <h2 className={classes.stepHeader}>
                         {renderText(
                             this.step.stepTitle,

@@ -4,6 +4,286 @@ OATutor is an Open-source Adaptive Tutoring System (OAT) based on Intelligent Tu
 The system can be deployed to git-pages without the use of any backend. For LMS integration, 
 a middleware backend is required by Learning Tools Interoperability (LTI). Our [hosted backend server](https://cahlr.github.io/OATutor/#/posts/set-up-canvas-integration) can be used or the middleware can be launched independently. OATutor is Section 508 accessibility [compliant](https://cahlr.github.io/OATutor/static/documents/OATutor_Sec508_WCAG.pdf).
 
+---
+
+## Text-to-Speech (TTS) System
+
+OATutor includes a comprehensive text-to-speech system that provides audio narration for hints, questions, and problem descriptions. The system uses Speech Rule Engine (SRE) for mathematical formula conversion and AWS Lambda with OpenAI TTS API for audio generation.
+
+### Overview
+
+The TTS system consists of three main components:
+
+1. **SRE Conversion Pipeline** - Converts LaTeX mathematical expressions to readable speech text
+2. **Automated Processing Scripts** - Batch processes all content files to generate `pacedSpeech` fields
+3. **AWS Lambda TTS Service** - Generates audio files using OpenAI TTS API with S3 caching
+
+### Quick Start
+
+#### 1. Generate Speech Text for Content
+
+Before using TTS features, you need to process your content files to generate `pacedSpeech` fields:
+
+```bash
+# Process all content (hints, steps, problems)
+npm run process-tts
+
+# Force regenerate all content
+npm run process-tts:force
+
+# Preview mode (no file changes)
+npm run process-tts:dry-run
+```
+
+This will:
+- Scan all content files in `src/content-sources/oatutor/content-pool/`
+- Convert LaTeX expressions to speech text using SRE
+- Add `pacedSpeech` fields to JSON files
+- Track processing state in `.tts-state.json` for incremental updates
+
+#### 2. AWS Lambda Setup
+
+The TTS system requires an AWS Lambda function to generate audio. The Lambda function should:
+
+- Use Node.js 24.x runtime (ESM mode)
+- Have Lambda Function URL enabled
+- Use the provided Lambda code (see below)
+- Configure environment variables (see AWS Configuration section)
+
+**Lambda Function Code:**
+
+The Lambda function handles TTS requests and S3 caching. Key features:
+- Receives `segments` array (text segments to convert)
+- Checks S3 cache before calling OpenAI API
+- Generates audio using OpenAI TTS API
+- Stores results in S3 for future requests
+- Returns base64-encoded MP3 audio array
+
+**Lambda Endpoint:**
+
+The frontend is configured to use:
+```
+https://7g3tiigt6paiqrcfub5f6vouqq0gynjn.lambda-url.us-east-2.on.aws/
+```
+
+To use a different endpoint, update the URL in:
+- `src/components/problem-layout/HintSystem.js`
+- `src/components/problem-layout/HintVoiceBoard.js`
+- `src/components/problem-layout/ProblemCard.js`
+- `src/components/problem-layout/Problem.js`
+
+#### 3. AWS Configuration
+
+**Required Environment Variables (Lambda):**
+
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_TTS_MODEL=gpt-4o-mini-tts  # or "tts-1"
+OPENAI_TTS_VOICE=alloy  # Options: alloy, echo, fable, onyx, nova, shimmer
+AUDIO_CACHE_BUCKET=your-s3-bucket-name
+AUDIO_CACHE_PREFIX=tts-cache/hints/  # Optional, default shown
+```
+
+**S3 Bucket Setup:**
+
+1. Create an S3 bucket (e.g., `oatutor-tts-audio`)
+2. Configure bucket permissions to allow Lambda read/write access
+3. Set `AUDIO_CACHE_BUCKET` environment variable in Lambda
+4. Cache files are stored as: `{AUDIO_CACHE_PREFIX}{hash}.json`
+
+**Lambda Function URL CORS Configuration:**
+
+Configure CORS settings in Lambda Function URL:
+- Allowed origins: Your frontend domain (e.g., `http://localhost:3001` for development)
+- Allowed methods: `POST`, `OPTIONS`
+- Allowed headers: `Content-Type`
+
+### SRE Conversion Workflow
+
+The SRE (Speech Rule Engine) conversion process transforms LaTeX mathematical expressions into readable speech text:
+
+```
+Original Text (with $$LaTeX$$)
+  ↓
+Extract LaTeX expressions
+  ↓
+LaTeX → MathML (using latexToMathML.py)
+  ↓
+MathML → Speech (using sreNode.js + SRE engine)
+  ↓
+Clean speech text (remove SRE markers, optimize readability)
+  ↓
+Generate pacedSpeech array
+  ↓
+Save to JSON file
+```
+
+**Key Functions:**
+
+- `generatePacedSpeech(text)` - Main conversion function in `src/math-to-speech/utils/hintProcessor.js`
+- Processes text with LaTeX expressions
+- Returns array with single continuous speech text (for Whisper TTS model)
+- Handles variabilization and text cleaning
+
+### Automated Processing
+
+The automated processing system (`autoTTSProcessor.js`) handles batch conversion of content:
+
+**Supported Content Types:**
+- **Hints** - From `*DefaultPathway.json` files
+- **Steps** - From step JSON files (e.g., `circle1a.json`)
+- **Problems** - From problem JSON files (e.g., `circle1.json`)
+
+**Processing Features:**
+- Incremental updates (only processes changed content via hash checking)
+- State management (tracks processed content in `.tts-state.json`)
+- Error handling and reporting
+- Dry-run mode for preview
+
+**Usage Examples:**
+
+```bash
+# Process all content types
+npm run process-tts
+
+# Process only hints
+npm run process-tts:hints
+
+# Process only steps
+npm run process-tts:steps
+
+# Process only problems
+npm run process-tts:problems
+
+# Process specific directory
+node src/math-to-speech/scripts/autoTTSProcessor.js --dir path/to/dir
+
+# Process specific file
+node src/math-to-speech/scripts/autoTTSProcessor.js --file path/to/file.json
+
+# Show detailed output
+node src/math-to-speech/scripts/autoTTSProcessor.js --verbose --stats
+```
+
+### Frontend Integration
+
+The frontend automatically uses `pacedSpeech` fields when available:
+
+**Priority Order:**
+1. If `pacedSpeech` exists in JSON → Use SRE-converted text
+2. If not → Use basic LaTeX conversion as fallback
+
+**TTS Features:**
+
+1. **Hint Audio** - Play/pause buttons in agent mode
+2. **Question Audio** - Play/pause/replay buttons in top-right of question cards
+3. **Problem Body Audio** - Play/pause/replay buttons in top-right of problem description
+
+**Audio Playback:**
+- Audio is fetched from Lambda on-demand
+- Base64-encoded MP3 audio is decoded and played
+- Supports pause/resume functionality
+- Automatic cleanup of audio resources
+
+### File Structure
+
+**Core Processing Files:**
+- `src/math-to-speech/utils/hintProcessor.js` - SRE conversion logic
+- `src/math-to-speech/scripts/autoTTSProcessor.js` - Automated batch processing
+- `src/math-to-speech/scripts/sreNode.js` - SRE engine wrapper
+- `src/math-to-speech/scripts/latexToMathML.py` - LaTeX to MathML conversion
+
+**Frontend Components:**
+- `src/components/problem-layout/HintSystem.js` - Hint TTS integration
+- `src/components/problem-layout/HintVoiceBoard.js` - Hint display with audio
+- `src/components/problem-layout/ProblemCard.js` - Question TTS integration
+- `src/components/problem-layout/Problem.js` - Problem body TTS integration
+
+**State Files:**
+- `.tts-state.json` - Tracks processing state (auto-generated)
+
+### JSON File Format
+
+After processing, JSON files contain `pacedSpeech` fields:
+
+**Hint Example:**
+```json
+{
+  "id": "circle1a-h1",
+  "text": "The known quantities are $$20$$ and $$0.05$$.",
+  "pacedSpeech": ["The known quantities are 20 and 0.05."]
+}
+```
+
+**Step Example:**
+```json
+{
+  "id": "circle1a",
+  "stepTitle": "1. Maximum Radius",
+  "stepBody": "What is the maximum radius?",
+  "pacedSpeech": ["1. Maximum Radius What is the maximum radius?"]
+}
+```
+
+**Problem Example:**
+```json
+{
+  "id": "circle1",
+  "title": "Buying a Big Rug",
+  "body": "Bob wants to surprise Alice...",
+  "pacedSpeech": ["Bob wants to surprise Alice..."]
+}
+```
+
+### AWS Lambda Implementation
+
+The Lambda function uses the following structure:
+
+**Dependencies:**
+- `@aws-sdk/client-s3` - S3 client for caching
+- Node.js built-in `crypto` - Hash generation
+- Node.js built-in `fetch` - HTTP requests (Node.js 20+)
+
+**Cache Strategy:**
+- Cache key: SHA256 hash of `{segments, model, voice}`
+- Cache location: S3 bucket at `{AUDIO_CACHE_PREFIX}{hash}.json`
+- Cache format: `{ audios: [base64_string, ...] }`
+- Cache check happens before OpenAI API call
+- Cache write happens after successful API call
+
+**Error Handling:**
+- Graceful fallback if S3 cache fails
+- Detailed error logging
+- User-friendly error responses
+
+### Troubleshooting
+
+**Processing Issues:**
+- Ensure Python and Node.js are installed
+- Check file permissions for JSON files
+- Use `--verbose` flag to see detailed output
+- Use `--dry-run` to preview changes
+
+**Lambda Issues:**
+- Verify environment variables are set correctly
+- Check Lambda function logs in CloudWatch
+- Verify S3 bucket permissions
+- Test Lambda Function URL CORS settings
+
+**Frontend Issues:**
+- Check browser console for errors
+- Verify Lambda endpoint URL is correct
+- Ensure `pacedSpeech` fields exist in JSON files
+- Check network requests in browser DevTools
+
+### Additional Resources
+
+- SRE Documentation: [Speech Rule Engine](https://github.com/zorkow/speech-rule-engine)
+- OpenAI TTS API: [OpenAI Audio API](https://platform.openai.com/docs/guides/text-to-speech)
+- AWS Lambda: [Lambda Function URLs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html)
+
+---
+
 > [Quick clone and deploy notebook example](https://colab.research.google.com/drive/15rzSOLT8EtfJM_Ts1ZQZYuT-FvJp2SW1?usp=sharing)
 >
 > [Quick content authoring notebook example](https://colab.research.google.com/drive/11X3eW9cDnRcvROaCWglPM5VH0NRAXFKp?usp=sharing)

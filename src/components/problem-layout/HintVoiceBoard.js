@@ -86,38 +86,15 @@ class HintVoiceBoard extends React.Component {
     };
 
     render() {
-        const { hint, hintIndex } = this.props;
+        const { hint } = this.props;
 
         if (this.state.isLoading) {
             return <div>Loading...</div>;
         }
 
-        return hint.math ? (
-            hint.math == "" ? (
-                "" // if no math show nothing (only == works not ===)
-            ) : (
-                <Grid
-                    container
-                    spacing={2}
-                    justifyContent="center"
-                    alignItems="center"
-                >
-                    {hint.math.map((math, index) => (
-                        <Grid item xs={12} md={6} key={`voice-board-${index}`}>
-                            <Item
-                                show_boarder={
-                                    index === hintIndex ? "true" : "false"
-                                }
-                            >
-                                {renderText(math)}
-                            </Item>
-                        </Grid>
-                    ))}
-                </Grid>
-            ) // for 2 col: md ={6}
-        ) : (
-            renderText(hint.text)
-        ); // if math attribute nonexistent
+        // Agent mode now displays text directly, same as text mode
+        // The play/pause buttons are handled by HintSystem
+        return <div>{renderText(hint.text)}</div>;
     }
 }
 

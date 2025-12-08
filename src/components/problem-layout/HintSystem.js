@@ -331,7 +331,6 @@ class HintSystem extends React.Component {
         return this.state.agentMode ? (
             <HintVoiceBoard
                 hint={hint}
-                hintIndex={this.state.hintIndex}
                 playAgent={this.playAgent}
                 isExpanded={this.state.currentExpanded == hintLocation}
             ></HintVoiceBoard>

@@ -9,26 +9,38 @@
         "oer": "",
         "license": "",
         "speech": "Split 9a to 12a and minus 3a.",
-        "math": ["$$9a$$", "$$12a$$", "$$-3a$$"],
-        "pacedSpeech": ["Split 9a", " to 12a", " and minus 3a."]
+        "math": [
+            "$$9a$$",
+            "$$12a$$",
+            "$$-3a$$"
+        ],
+        "pacedSpeech": [
+            "Split 9 a to 12 a and minus 3 a"
+        ]
     },
     {
         "id": "aabf119factor16a-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
-        "hintAnswer": ["$$2a\\left(a+6\\right)$$"],
-        "dependencies": ["aabf119factor16a-h1"],
+        "hintAnswer": [
+            "$$2a\\left(a+6\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor16a-h1"
+        ],
         "title": "Factor the expression",
         "text": "What is the factoring of $$2a^2$$ $$\\left(+12\\right) a$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "speech": "What is the factoring of  2 a squared,  , parentheses positive 12  times a ?",
-        "math": ["$$2a^2$$", "$$\\left(+12\\right) a$$"],
+        "math": [
+            "$$2a^2$$",
+            "$$\\left(+12\\right) a$$"
+        ],
         "pacedSpeech": [
-            "What is the factoring of   2 a squared, ",
-            "  ,  positive 12  times a"
+            "What is the factoring of 2 a squared positive 12 times a?"
         ]
     },
     {
@@ -36,31 +48,47 @@
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
-        "hintAnswer": ["$$-3\\left(a+6\\right)$$"],
-        "dependencies": ["aabf119factor16a-h2"],
+        "hintAnswer": [
+            "$$-3\\left(a+6\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor16a-h2"
+        ],
         "title": "Factor the expression",
         "text": "What is the factoring of -3a - 18?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "speech": "What is the factoring of -3a - 18?",
-        "math": [""],
-        "pacedSpeech": ["What is the factoring of -3a - 18?"]
+        "math": [
+            ""
+        ],
+        "pacedSpeech": [
+            "What is the factoring of -3a - 18?"
+        ]
     },
     {
         "id": "aabf119factor16a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
-        "hintAnswer": ["$$\\left(a+6\\right) \\left(2a-3\\right)$$"],
-        "dependencies": ["aabf119factor16a-h3"],
+        "hintAnswer": [
+            "$$\\left(a+6\\right) \\left(2a-3\\right)$$"
+        ],
+        "dependencies": [
+            "aabf119factor16a-h3"
+        ],
         "title": "Factor the expression",
         "text": "Factor out the common term of both $$a+6$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "speech": "Factor out the common term of both  a plus 6 .",
-        "math": ["$$a+6$$"],
-        "pacedSpeech": ["Factor out the common term of both   a plus 6"]
+        "math": [
+            "$$a+6$$"
+        ],
+        "pacedSpeech": [
+            "Factor out the common term of both a plus 6"
+        ]
     }
 ]
