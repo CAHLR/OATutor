@@ -15,6 +15,7 @@ import withTranslation from "../../util/withTranslation.js"
 import {
     toastNotifyEmpty
 } from "./ToastNotifyCorrectness";
+import Spacer from '@components/Spacer.js';
 
 class HintTextbox extends React.Component {
     static contextType = ThemeContext;
@@ -32,6 +33,7 @@ class HintTextbox extends React.Component {
             isCorrect: context.use_expanded_view && context.debug ? true : null,
             checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             showHints: false,
+            answerSelected: false
         }
     }
 
@@ -74,7 +76,11 @@ class HintTextbox extends React.Component {
 
     setInputValState = (inputVal) => {
         // console.debug("new inputVal state: ", inputVal)
-        this.setState(({ isCorrect }) => ({ inputVal, isCorrect: isCorrect ? true : null }))
+        this.setState(({ isCorrect }) => ({ 
+            inputVal, 
+            isCorrect: isCorrect ? true : null,
+            answerSelected: inputVal.trim() !== "" 
+        }))
     }
 
     render() {
@@ -88,26 +94,33 @@ class HintTextbox extends React.Component {
 
         return (
             <div>
-                <ProblemInput
-                    variabilization={chooseVariables(this.props.hintVars, this.props.seed)}
-                    allowRetry={this.allowRetry}
-                    giveStuFeedback={this.giveStuFeedback}
-                    showCorrectness={this.showCorrectness}
-                    classes={classes}
-                    state={this.state}
-                    step={this.hint}
-                    seed={this.props.seed}
-                    _setState={(state) => this.setState(state)}
-                    context={this.context}
-                    editInput={this.editInput}
-                    setInputValState={this.setInputValState}
-                    handleKey={this.handleKey}
-                    index={hintIndex}
-                />
+                <Grid container spacing={0} justifyContent="flex-start" alignItems="center">
+                    <Grid item xs={12}>
 
-                <Grid container spacing={0} justifyContent="center" alignItems="center">
-                    <Grid item xs={false} sm={false} md={4}/>
-                    <Grid item xs={4} sm={4} md={1}>
+                        <ProblemInput
+                            variabilization={chooseVariables(this.props.hintVars, this.props.seed)}
+                            allowRetry={this.allowRetry}
+                            giveStuFeedback={this.giveStuFeedback}
+                            showCorrectness={this.showCorrectness}
+                            classes={classes}
+                            state={this.state}
+                            step={this.hint}
+                            seed={this.props.seed}
+                            _setState={(state) => this.setState(state)}
+                            context={this.context}
+                            editInput={this.editInput}
+                            setInputValState={this.setInputValState}
+                            handleKey={this.handleKey}
+                            index={hintIndex}
+                            textBoxLayout={{ leftMd: 0, mainMd: 5, rightMd: 2 }}
+                        />              
+                        <Spacer> </Spacer> 
+                    </Grid>
+                    </Grid>
+
+                <Grid container spacing={0} justifyContent="flex-start" alignItems="center">
+                    <Grid item xs={false} sm={false} md={false}/>
+                    {/* <Grid item xs={4} sm={4} md={1}>
                         {this.props.type !== "subHintTextbox" && this.hint.subHints !== undefined ?
                             <center>
                                 <IconButton aria-label="delete" onClick={this.props.toggleHints}
@@ -125,19 +138,17 @@ class HintTextbox extends React.Component {
                                  alt="hintToggle"
                                  style={{ visibility: "hidden" }}/>
                         }
-                    </Grid>
+                    </Grid> */}
                     <Grid item xs={4} sm={4} md={2}>
-                        <center>
-                            <Button className={classes.button} style={{ width: "80%" }} size="small"
-                                    onClick={this.submit}
-                                    disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted)}
-                                    {...stagingProp({
-                                        "data-selenium-target": `submit-button-${hintIndex}`
-                                    })}
-                            >
-                                {translate('problem.Submit')}
-                            </Button>
-                        </center>
+                        <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                onClick={this.submit}
+                                disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted) || !this.state.answerSelected}
+                                {...stagingProp({
+                                    "data-selenium-target": `submit-button-${hintIndex}`
+                                })}
+                        >
+                            {translate('problem.Submit')}
+                        </Button>
                     </Grid>
                     <Grid item xs={4} sm={3} md={1}>
                         <div style={{
