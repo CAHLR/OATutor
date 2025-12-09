@@ -80,9 +80,10 @@ class Platform extends React.Component {
       showPopup: false,
       feedback: "",
       feedbackSubmitted: false,
-      drawerOpen: initialDrawerOpen,
-      hasAutoClosedDrawer: false,
-    };
+        drawerOpen: initialDrawerOpen,
+        hasAutoClosedDrawer: false,
+        metaCollapsed: false,
+      };
 
     this.togglePopup = this.togglePopup.bind(this);
     this.toggleFeedback = this.toggleFeedback.bind(this);
@@ -452,8 +453,8 @@ class Platform extends React.Component {
       padding: "0 16px",
       boxSizing: "border-box",
     };
-    const PROGRESS_GAP = 20;            // keep the same spacing you had before
-    const MAX_PROGRESS_BAR_WIDTH = 602;
+    const PROGRESS_GAP = 20;
+    const MAX_PROGRESS_BAR_WIDTH = 900;
     const MIN_PROGRESS_BAR_WIDTH = 200;
 
     return (
@@ -593,11 +594,13 @@ class Platform extends React.Component {
           <div
             style={{
               marginLeft: inLesson && this.state.drawerOpen ? drawerWidth : 0,
+              marginBottom: 0,
               transition: "margin 0.1s ease",
             }}
           >
             {this.state.status === "learning" ? (
-              <AppBar position="sticky" style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 1, marginLeft: "16px" }}>
+              <AppBar position="sticky" 
+                      style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3, marginLeft: "16px", paddingRight: "32px" }}>
                 <Toolbar disableGutters style={{ minHeight: 80 }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
                     {!this.state.drawerOpen && (

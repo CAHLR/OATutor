@@ -798,6 +798,7 @@ class ProblemCard extends React.Component {
                                     setInputValState={this.setInputValState}
                                     handleKey={this.handleKey}
                                     index={this.props.index}
+                                    textBoxLayout={{ leftMd: 0, mainMd: 5, rightMd: 2 }}
                                 />
                             </div>
                         </CardContent>
@@ -867,8 +868,9 @@ class ProblemCard extends React.Component {
                                     <Button
                                         className={classes.button}
                                         style={{ 
-                                            width: "118px", 
-                                            flexShrink: 0
+                                            width: "84px", 
+                                            flexShrink: 0,
+                                            marginLeft: -8
                                         }}
                                         size="small"
                                         onClick={this.submit}
