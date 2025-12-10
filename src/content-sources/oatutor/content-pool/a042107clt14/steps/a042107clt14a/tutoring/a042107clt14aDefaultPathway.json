@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a042107clt14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using a calculator",
+        "text": "Using normalcdf",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a042107clt14a-h1"
+        ],
+        "title": "First parameter",
+        "text": "Lower Value",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.5$$"
+        ],
+        "dependencies": [
+            "a042107clt14a-h2"
+        ],
+        "title": "What is the lower value?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a042107clt14a-h3"
+        ],
+        "title": "Second parameter",
+        "text": "Upper Value",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.7$$"
+        ],
+        "dependencies": [
+            "a042107clt14a-h4"
+        ],
+        "title": "What is the upper value?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a042107clt14a-h5"
+        ],
+        "title": "Third parameter",
+        "text": "Mean",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.59$$"
+        ],
+        "dependencies": [
+            "a042107clt14a-h6"
+        ],
+        "title": "What is the mean?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a042107clt14a-h7"
+        ],
+        "title": "Fourth parameter",
+        "text": "Standard Deviation",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a042107clt14a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "a042107clt14a-h8"
+        ],
+        "title": "What is the standard deviation?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

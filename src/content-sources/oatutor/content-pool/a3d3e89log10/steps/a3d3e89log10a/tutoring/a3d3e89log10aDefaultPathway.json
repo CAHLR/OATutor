@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a3d3e89log10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "Recall relationship between logarithmic form and exponential form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=9$$, $$x=x$$, $$y=\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a3d3e89log10a-h1"
+        ],
+        "title": "Identify Variables",
+        "text": "What is $$b$$? What is $$x$$? What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=9$$, $$x=x$$, $$y=\\frac{1}{2}$$",
+            "$$b=x$$, $$x=5$$, $$y=\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log10a-h2"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$b$$, $$x$$, $$y$$ into $$b^y=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log10a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$x=9^{\\frac{1}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a518506partialfractions1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separating Denominator Factors",
+        "text": "Separate the denominator factors and give each numerator a symbolic label like A and B",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions1a-h1"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "The equation should now look like: $$\\frac{3x}{\\left(x+2\\right) \\left(x-1\\right)}=\\frac{A}{x+2}+\\frac{B}{x-1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions1a-h2"
+        ],
+        "title": "Eliminating Fractions",
+        "text": "Multiply both sides of the equation by the common denominator to eliminate the fractions. The resulting equation is $$3x=A\\left(x-1\\right)+B\\left(x+2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions1a-h3"
+        ],
+        "title": "System of Equations",
+        "text": "Expand the right side of the equation and collect like terms, and then set up a system of equations associating corresponding coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions1a-h4"
+        ],
+        "title": "Solving Equations",
+        "text": "The two equations are $$3=A+B$$ and $$0=-A+2B$$. Add the two equations and solve for B. What is B equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions1a-h5"
+        ],
+        "title": "Solving Equations",
+        "text": "Substitute $$B=1$$ into one of the original equations in the system and solve for A. What is A equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{x+2}+\\frac{1}{x-1}$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions1a-h6"
+        ],
+        "title": "Partial Fraction Decomposition",
+        "text": "What is the partial fraction decomposition after plugging in the values for A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{x+2}+\\frac{2}{x-1}$$",
+            "$$\\frac{2}{x+2}+\\frac{1}{x-1}$$",
+            "$$\\frac{3x}{x+2}+\\frac{3}{x-1}$$",
+            "$$\\frac{4}{x+2}+\\frac{2}{x-1}$$"
+        ]
+    }
+]

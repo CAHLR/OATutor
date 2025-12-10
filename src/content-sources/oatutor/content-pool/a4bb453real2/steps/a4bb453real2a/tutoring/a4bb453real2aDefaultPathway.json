@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a4bb453real2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of average rate of change",
+        "text": "The average rate of change is the change in $$y$$ values divided by the change in $$x$$ values",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4bb453real2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a^2+3a+1$$"
+        ],
+        "dependencies": [
+            "a4bb453real2a-h1"
+        ],
+        "title": "Solve for g(a)",
+        "text": "We can input a into the function g(t). What are the results?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4bb453real2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a^2+3a+1-\\frac{1}{a}=$$ $$a+3$$"
+        ],
+        "dependencies": [
+            "a4bb453real2a-h2"
+        ],
+        "title": "Difference between changes",
+        "text": "We can subtract g(0) from g(a) and $$0$$ from a to get $$\\frac{g{\\left(a\\right)}-g{\\left(0\\right)}}{a-0}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

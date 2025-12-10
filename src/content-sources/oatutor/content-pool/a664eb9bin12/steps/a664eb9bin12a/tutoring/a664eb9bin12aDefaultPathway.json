@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a664eb9bin12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding out the pattern with Pascal's Triangle.",
+        "text": "We know that the variables in this pattern will follow the pattern in Pascal's triangle. You should use the row of Pascal's triangle where the second number is $$4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a664eb9bin12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a664eb9bin12a-h1"
+        ],
+        "title": "Finding out the coefficients.",
+        "text": "The coefficients according to Pascal's triangle are $$1$$, $$4$$, $$6$$, $$4$$, $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a664eb9bin12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a664eb9bin12a-h2"
+        ],
+        "title": "Expanding the polynomial.",
+        "text": "Use the formula: $$\\left(a+b\\right)^n$$ $$=$$ $$a^n$$ + $$___$$ $$a^n-1b^1$$ + $$___$$ $$a^n-2b^2$$ +... + $$___$$ $$a^1 b^n-1$$ + $$b^n$$ and fill in the blanks with the values from Pascal's triangle.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a664eb9bin12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a664eb9bin12a-h3"
+        ],
+        "title": "Plugging in the coefficients.",
+        "text": "By plugging in the coefficients found earlier, we get $$x^4+4x^3 y^1+6x^2 y^2+4x^1 y^3+y^4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

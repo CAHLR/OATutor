@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aa47f81type3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Type Error",
+        "text": "What is the definition of a Type I Error?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa47f81type3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true."
+        ],
+        "dependencies": [
+            "aa47f81type3a-h1"
+        ],
+        "title": "Type I error",
+        "text": "Choose the best answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true.",
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ]
+    },
+    {
+        "id": "aa47f81type3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa47f81type3a-h2"
+        ],
+        "title": "What is the Null Hypothesis in the context?",
+        "text": "Combine with the context of the question, the null hypothesis is what the statistics instructor believes in, in which is less than 20% of the students attended the midnight showing.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "id": "a8435depolynomial25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area of a Rectangle",
+        "text": "The area of a rectangle is given by the product of the length and width. Here, the area is $$4x^3+10x^2+6x+15$$, and the length is $$2x+5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8435depolynomial25a-h1"
+        ],
+        "title": "Solving for Width",
+        "text": "In order to solve for the width, you will have to divide the area by the length. This means $$4x^3+10x^2+6x+15$$ will be divided by $$2x+5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial25a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h2"
+        ],
+        "title": "Setting Up the Long Division",
+        "text": "Start by dividing the first term of the numerator, $$4x^3$$, by the first term of the divisor, $$2x$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3x^2$$",
+            "$$2x$$",
+            "$$4x^2$$",
+            "$$2x^2$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial25a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4x^3+10x^2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h3"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, multiply $$2x^2$$ by $$2x+5$$ and subtract the result from $$4x^3+10x^2+6x+15$$. What is the result after performing this step?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$4x^3+10x^2+15$$",
+            "$$4x^3+10x^2+6x+15$$",
+            "$$4x^3+10x^2$$",
+            "$$4x^3+10x^2+6x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial25a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6x+15$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h4"
+        ],
+        "title": "Subtract the Polynomials",
+        "text": "Now, subtract $$4x^3+10x^2$$ from $$4x^3+10x^2+6x+15$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$6x+25$$",
+            "$$6x+10$$",
+            "$$6x+5$$",
+            "$$6x+15$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial25a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6x^4-8x^3$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h5"
+        ],
+        "title": "Divide Again",
+        "text": "Now, divide the first term of the new result, $$6x$$, by the first term of the divisor, $$2x$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$2x$$",
+            "$$3x$$",
+            "$$6x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial25a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h6"
+        ],
+        "title": "Multiply and Subtract Again",
+        "text": "Now, multiply $$3$$ by $$2x+5$$ and subtract the result from $$6x+15$$. What is the result after performing this step?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$6x+15$$",
+            "$$6x+10$$",
+            "$$6x+15-6x$$",
+            "$$15$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial25a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial25a-h7"
+        ],
+        "title": "Final Step",
+        "text": "Now, divide the first term $$6x$$ by $$2x$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$5$$",
+            "$$3$$",
+            "$$2$$"
+        ]
+    }
+]

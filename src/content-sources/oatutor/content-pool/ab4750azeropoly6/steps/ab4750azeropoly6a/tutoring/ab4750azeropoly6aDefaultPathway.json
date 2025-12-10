@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ab4750azeropoly6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factors",
+        "text": "What are the factors of the polynomial based on the roots that we have been given?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab4750azeropoly6a-h1"
+        ],
+        "title": "Last Factor",
+        "text": "We have been given $$2$$ roots,how can we find the third one?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2i"
+        ],
+        "dependencies": [
+            "ab4750azeropoly6a-h2"
+        ],
+        "title": "Complex Conjugate Theorem",
+        "text": "What is the last root since one of our roots is not real?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab4750azeropoly6a-h3"
+        ],
+        "title": "Constant term",
+        "text": "How can we find the constant term in the function after we have all of the factors?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "ab4750azeropoly6a-h4"
+        ],
+        "title": "Constant term",
+        "text": "After we multiply the factors and plug in the given value of f(1) $$=$$ $$10$$, what is our constant term?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{2} x^3+\\frac{5}{2} x^2-2x+10$$"
+        ],
+        "dependencies": [
+            "ab4750azeropoly6a-h5"
+        ],
+        "title": "Finding the entire Polynomial",
+        "text": "What is the simplifed polynomial?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

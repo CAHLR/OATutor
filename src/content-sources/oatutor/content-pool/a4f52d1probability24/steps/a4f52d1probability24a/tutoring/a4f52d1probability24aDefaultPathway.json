@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a4f52d1probability24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypergeometric Probability",
+        "text": "P $$=$$ C(number of $$blue,5)/C(total,5)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$C(12,5)$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability24a-h1"
+        ],
+        "title": "Choose blue",
+        "text": "How many ways to choose $$5$$ blue from 12?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$C(8,5)$$",
+            "$$C(4,5)$$",
+            "$$C(48,5)$$",
+            "$$C(12,5)$$"
+        ]
+    },
+    {
+        "id": "a4f52d1probability24a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$C(48,5)$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability24a-h2"
+        ],
+        "title": "Total ways",
+        "text": "How many ways to choose $$5$$ from 48?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$C(8,5)$$",
+            "$$C(4,5)$$",
+            "$$C(48,5)$$",
+            "$$C(12,5)$$"
+        ]
+    }
+]
