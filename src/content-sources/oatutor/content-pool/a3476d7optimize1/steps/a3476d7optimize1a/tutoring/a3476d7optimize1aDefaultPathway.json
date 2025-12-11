@@ -12,8 +12,8 @@
     {
         "id": "a3476d7optimize1a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$2x+y=100$$"
         ],
@@ -46,8 +46,8 @@
     {
         "id": "a3476d7optimize1a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$A=x y$$"
         ],
@@ -58,7 +58,12 @@
         "text": "If the area of a rectangle is the length times width, write the equation that accurately represents the area (A) in terms of $$x$$ and $$y$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$A=x y$$",
+            "$$A=x+y$$",
+            "$$A=\\frac{x}{y}$$"
+        ]
     },
     {
         "id": "a3476d7optimize1a-h5",
@@ -75,8 +80,8 @@
     {
         "id": "a3476d7optimize1a-h6",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$100-2x$$"
         ],
@@ -87,13 +92,18 @@
         "text": "Solve for $$y$$ from the perimeter's constraint equation. $$Y=___$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$100-2x$$",
+            "$$100$$",
+            "$$100-x$$"
+        ]
     },
     {
         "id": "a3476d7optimize1a-h7",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$100x-2x^2$$"
         ],
@@ -104,7 +114,12 @@
         "text": "Subsitute the $$y$$ in $$A=x y$$ with the answer from the previous step. Therefore, you can rewrite the area as $$A(x)=___$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$100x-2x^2$$",
+            "$$100-2x^2$$",
+            "$$100x-x^2$$"
+        ]
     },
     {
         "id": "a3476d7optimize1a-h8",
@@ -189,8 +204,8 @@
     {
         "id": "a3476d7optimize1a-h13",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$100-4x$$"
         ],
@@ -201,7 +216,12 @@
         "text": "What is $$A'(x)=___$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$100-2x$$",
+            "$$100-4x$$",
+            "$$100-x$$"
+        ]
     },
     {
         "id": "a3476d7optimize1a-h14",

@@ -6,14 +6,14 @@
         "title": "$$R=Revenue$$",
         "text": "Let R be the revenue per day. First, make a function for R using the variables $$n$$ and $$p$$.",
         "variabilization": {},
-        "oer": "",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
         "id": "a3476d7optimize5a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$-5p^2+750p$$"
         ],
@@ -24,7 +24,12 @@
         "text": "If $$R=n p$$, substitute $$n$$ with $$n(p)=750-5p$$. Simplify that function.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$-5p^2+750p$$",
+            "$$5p^2+750p$$",
+            "$$-5p^2+75p$$"
+        ]
     },
     {
         "id": "a3476d7optimize5a-h3",
@@ -130,7 +135,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$28152$$"
+            "$$28125$$"
         ],
         "dependencies": [
             "a3476d7optimize5a-h8"
