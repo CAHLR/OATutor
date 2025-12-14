@@ -307,7 +307,10 @@ class ProblemCard extends React.Component {
             isCorrect,
             checkMarkOpacity: isCorrect ? "100" : "0",
         });
-        answerMade(this.index, knowledgeComponents, isCorrect);
+        
+        // Pass attempt info to Problem.js for tracking
+        const questionText = stepBody.trim() || stepTitle.trim();
+        answerMade(this.index, knowledgeComponents, isCorrect, parsed, questionText);
     };
 
     editInput = (event) => {

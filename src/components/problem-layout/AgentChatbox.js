@@ -25,16 +25,16 @@ const styles = (theme) => ({
         position: 'fixed',
         bottom: 20,
         right: 20,
-        width: 400,
-        maxWidth: '90vw',
-        height: 600,
-        maxHeight: '80vh',
         display: 'flex',
         flexDirection: 'column',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
         zIndex: 1000,
         borderRadius: 12,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        minWidth: 300,
+        minHeight: 400,
+        maxWidth: '95vw',
+        maxHeight: '90vh'
     },
     chatHeader: {
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -133,6 +133,25 @@ const styles = (theme) => ({
         width: 60,
         height: 60,
         boxShadow: '0 4px 12px rgba(102, 126, 234, 0.4)'
+    },
+    resizeHandle: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: 20,
+        height: 20,
+        cursor: 'nwse-resize',
+        zIndex: 10,
+        '&::after': {
+            content: '""',
+            position: 'absolute',
+            top: 2,
+            left: 2,
+            width: 16,
+            height: 16,
+            borderTop: '2px solid rgba(102, 126, 234, 0.4)',
+            borderLeft: '2px solid rgba(102, 126, 234, 0.4)'
+        }
     }
 });
 
@@ -145,9 +164,13 @@ class AgentChatbox extends React.Component {
             currentMessage: '',
             isTyping: false,
             isGenerating: false,
-            agentSessionId: null
+            agentSessionId: null,
+            chatWidth: 400,
+            chatHeight: 600,
+            isResizing: false
         };
         this.messagesEndRef = React.createRef();
+        this.chatContainerRef = React.createRef();
     }
 
     componentDidMount() {
@@ -155,8 +178,7 @@ class AgentChatbox extends React.Component {
         this.setState({ agentSessionId: agentHelper.getSessionId() });
     }
 
-    componentDidUpdate(prevProps) {
-        // Check if problem changed - start new session
+    componentDidUpdate(prevProps, prevState) {
         const currentProblemID = this.props.problem?.id;
         const prevProblemID = prevProps.problem?.id;
         
@@ -164,12 +186,24 @@ class AgentChatbox extends React.Component {
             this.clearConversation();
         }
         
-        this.scrollToBottom();
+        // Only scroll when a new message is added, not when content is updated
+        if (this.state.messages.length > prevState.messages.length) {
+            this.scrollToBottom();
+        }
     }
-
+    
     scrollToBottom = () => {
         if (this.messagesEndRef.current) {
-            this.messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+            const messagesContainer = this.messagesEndRef.current.parentElement;
+            if (messagesContainer) {
+                // Check if user is already near the bottom (within 100px threshold)
+                const isNearBottom = messagesContainer.scrollHeight - messagesContainer.scrollTop - messagesContainer.clientHeight < 100;
+                
+                // Only auto-scroll if user hasn't manually scrolled up
+                if (isNearBottom) {
+                    this.messagesEndRef.current.scrollIntoView({ behavior: 'auto' });
+                }
+            }
         }
     };
 
@@ -185,6 +219,38 @@ class AgentChatbox extends React.Component {
             messages: [],
             agentSessionId: agentHelper.getSessionId()
         });
+    };
+
+    handleResizeStart = (event) => {
+        event.preventDefault();
+        this.setState({ isResizing: true });
+        
+        const startX = event.clientX;
+        const startY = event.clientY;
+        const startWidth = this.state.chatWidth;
+        const startHeight = this.state.chatHeight;
+
+        const handleMouseMove = (e) => {
+            const deltaX = startX - e.clientX; // Reverse for left-side resize
+            const deltaY = startY - e.clientY; // Reverse for top-side resize
+            
+            const newWidth = Math.max(300, Math.min(startWidth + deltaX, window.innerWidth * 0.95));
+            const newHeight = Math.max(400, Math.min(startHeight + deltaY, window.innerHeight * 0.9));
+            
+            this.setState({
+                chatWidth: newWidth,
+                chatHeight: newHeight
+            });
+        };
+
+        const handleMouseUp = () => {
+            this.setState({ isResizing: false });
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
+        };
+
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
     };
 
     handleInputChange = (event) => {
@@ -206,32 +272,36 @@ class AgentChatbox extends React.Component {
         }
 
         const userMessage = currentMessage.trim();
+        const messageId = Date.now(); // Unique ID for tracking the assistant message
         
-        // Add user message to UI
+        // Add user message and assistant placeholder in a single setState
         this.setState(prevState => ({
-            messages: [...prevState.messages, {
-                role: 'user',
-                content: userMessage,
-                timestamp: Date.now()
-            }],
+            messages: [
+                ...prevState.messages,
+                {
+                    id: `user-${messageId}`,
+                    role: 'user',
+                    content: userMessage,
+                    timestamp: Date.now()
+                },
+                {
+                    id: `assistant-${messageId}`,
+                    role: 'assistant',
+                    content: '',
+                    timestamp: Date.now(),
+                    isGenerating: true
+                }
+            ],
             currentMessage: '',
             isGenerating: true,
             isTyping: true
         }));
 
-        // Add assistant placeholder
-        this.setState(prevState => ({
-            messages: [...prevState.messages, {
-                role: 'assistant',
-                content: '',
-                timestamp: Date.now(),
-                isGenerating: true
-            }]
-        }));
-
         // Get context from props
         const problemContext = this.getProblemContext();
         const studentState = this.getStudentState();
+
+        const assistantMessageId = `assistant-${messageId}`;
 
         // Send to agent
         try {
@@ -242,8 +312,8 @@ class AgentChatbox extends React.Component {
                 {
                     onChunkReceived: (partialResponse) => {
                         this.setState(prevState => ({
-                            messages: prevState.messages.map((msg, index) =>
-                                index === prevState.messages.length - 1 && msg.role === 'assistant'
+                            messages: prevState.messages.map(msg =>
+                                msg.id === assistantMessageId
                                     ? { ...msg, content: partialResponse }
                                     : msg
                             )
@@ -251,8 +321,8 @@ class AgentChatbox extends React.Component {
                     },
                     onSuccessfulCompletion: (fullResponse) => {
                         this.setState(prevState => ({
-                            messages: prevState.messages.map((msg, index) =>
-                                index === prevState.messages.length - 1 && msg.role === 'assistant'
+                            messages: prevState.messages.map(msg =>
+                                msg.id === assistantMessageId
                                     ? { ...msg, content: fullResponse, isGenerating: false }
                                     : msg
                             ),
@@ -262,8 +332,8 @@ class AgentChatbox extends React.Component {
                     },
                     onError: (error) => {
                         this.setState(prevState => ({
-                            messages: prevState.messages.map((msg, index) =>
-                                index === prevState.messages.length - 1 && msg.role === 'assistant'
+                            messages: prevState.messages.map(msg =>
+                                msg.id === assistantMessageId
                                     ? { 
                                         ...msg, 
                                         content: `Sorry, I encountered an error: ${error.message}`, 
@@ -316,7 +386,7 @@ class AgentChatbox extends React.Component {
      * This is what the agent needs to know about the student
      */
     getStudentState() {
-        const { stepStates, bktParams, getActiveStepData } = this.props;
+        const { stepStates, bktParams, getActiveStepData, attemptHistory, problem } = this.props;
         
         // Get active step
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
@@ -333,7 +403,8 @@ class AgentChatbox extends React.Component {
             currentAnswer: "",  // ProblemCard-level data, not available here
             isCorrect: isCorrect,
             hintsUsed: [],  // ProblemCard-level data, not available here
-            skillMastery: skillMastery
+            skillMastery: skillMastery,
+            attemptHistory: attemptHistory || {}
         };
     }
 
@@ -357,7 +428,7 @@ class AgentChatbox extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { isVisible, messages, currentMessage, isGenerating } = this.state;
+        const { isVisible, messages, currentMessage, isGenerating, chatWidth, chatHeight } = this.state;
 
         // Toggle button (always visible)
         if (!isVisible) {
@@ -374,7 +445,21 @@ class AgentChatbox extends React.Component {
 
         // Chat window
         return (
-            <Card className={classes.chatContainer}>
+            <Card 
+                ref={this.chatContainerRef}
+                className={classes.chatContainer}
+                style={{
+                    width: chatWidth,
+                    height: chatHeight
+                }}
+            >
+                {/* Resize handle */}
+                <div 
+                    className={classes.resizeHandle}
+                    onMouseDown={this.handleResizeStart}
+                    title="Drag to resize"
+                />
+
                 <div className={classes.chatHeader}>
                     <div className={classes.chatTitle}>
                         <BotIcon />
@@ -411,9 +496,9 @@ class AgentChatbox extends React.Component {
                         </Box>
                     )}
 
-                    {messages.map((message, index) => (
+                    {messages.map((message) => (
                         <div
-                            key={index}
+                            key={message.id}
                             className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
                         >
                             <Paper

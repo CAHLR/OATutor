@@ -91,6 +91,7 @@ class Problem extends React.Component {
             hintToggleTrigger: 0,
             hintToggleIndex: null,
             isHintPortalOpen: false,
+            attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -240,11 +241,29 @@ class Problem extends React.Component {
         }
     };
 
-    answerMade = (cardIndex, kcArray, isCorrect) => {
-        const { stepStates, firstAttempts } = this.state;
+    answerMade = (cardIndex, kcArray, isCorrect, attemptedAnswer, questionText) => {
+        const { stepStates, firstAttempts, attemptHistory } = this.state;
         const { lesson, problem } = this.props;
 
         console.debug(`answer made and is correct: ${isCorrect}`);
+
+        // Record attempt history
+        if (attemptedAnswer && questionText) {
+            const problemTitle = problem.title;
+            const updatedHistory = { ...attemptHistory };
+            
+            if (!updatedHistory[problemTitle]) {
+                updatedHistory[problemTitle] = {};
+            }
+            
+            if (!updatedHistory[problemTitle][questionText]) {
+                updatedHistory[problemTitle][questionText] = [];
+            }
+            
+            updatedHistory[problemTitle][questionText].push(attemptedAnswer);
+            
+            this.setState({ attemptHistory: updatedHistory });
+        }
 
         if (stepStates[cardIndex] === true) {
             return;
@@ -1081,6 +1100,7 @@ class Problem extends React.Component {
                     stepStates={this.state.stepStates}
                     bktParams={this.bktParams}
                     getActiveStepData={this.getActiveStepData}
+                    attemptHistory={this.state.attemptHistory}
                     user={this.props.user}
                 />
             </>
