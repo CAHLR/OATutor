@@ -15,8 +15,22 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
     const correctnessText = studentState.isCorrect === null 
         ? 'Not attempted yet' 
         : studentState.isCorrect 
-            ? 'Correct ✓' 
-            : 'Incorrect ✗';
+            ? 'Correct' 
+            : 'Incorrect';
+
+    // Format attempt history
+    let attemptHistoryText = 'No previous attempts recorded';
+    if (studentState.attemptHistory && Object.keys(studentState.attemptHistory).length > 0) {
+        const histories = [];
+        for (const [problemTitle, questions] of Object.entries(studentState.attemptHistory)) {
+            for (const [question, attempts] of Object.entries(questions)) {
+                if (attempts.length > 0) {
+                    histories.push(`  Question: "${question}"\n  Attempts: ${attempts.join(', ')}`);
+                }
+            }
+        }
+        attemptHistoryText = histories.length > 0 ? histories.join('\n\n') : 'No previous attempts recorded';
+    }
 
     const systemPrompt = `You are an expert math tutor helping a student with an OATutor problem.
 
@@ -37,8 +51,17 @@ Their Answer: "${studentState.currentAnswer || 'No answer provided yet'}"
 Status: ${correctnessText}
 Hints: ${hintsText}
 
+ATTEMPT HISTORY (all questions in this problem):
+${attemptHistoryText}
+
 RELEVANT SKILL LEVELS FOR THIS PROBLEM:
 ${skillMasteryText}
+
+CRITICAL RULES - YOU MUST FOLLOW THESE:
+- NEVER reveal the final answer, even if asked directly
+- NEVER complete the final calculation - always ask them to do it
+- Guide them to the last step, then prompt: "What do you get?" or "Can you calculate that?"
+- If asked to "walk through it", break it into steps but Stop ONE step before the final answer - let THEM do the last calculation
 
 TEACHING GUIDELINES:
 - Use the Socratic method - ask guiding questions
@@ -48,6 +71,7 @@ TEACHING GUIDELINES:
 - If you don't know their answer, ask them what they got or what they're confused about
 - Break problems into smaller steps when needed
 - Acknowledge their effort and progress
+- Use the attempt history to understand what mistakes they've made before
 
 NOTE: If "Their Answer" shows "No answer provided yet", ask the student what they tried or what they're stuck on.
 

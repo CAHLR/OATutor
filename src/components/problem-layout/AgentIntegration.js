@@ -17,6 +17,7 @@ class AgentIntegration extends React.Component {
             stepStates,
             bktParams,
             getActiveStepData,
+            attemptHistory,
             user
         } = this.props;
 
@@ -29,6 +30,7 @@ class AgentIntegration extends React.Component {
                 stepStates={stepStates}
                 bktParams={bktParams}
                 getActiveStepData={getActiveStepData}
+                attemptHistory={attemptHistory}
                 user={user}
             />
         );
