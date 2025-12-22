@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a8737dcabsorption_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Beer's Law",
+        "text": "Beer's Law is a fundamental principle in absorption spectroscopy. It relates the absorbance of light to the properties of the material through which the light is traveling.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcabsorption_spectroscopya-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcabsorption_spectroscopya-h1"
+        ],
+        "title": "Components of Beer's Law",
+        "text": "Beer's Law can be expressed as $$A=\\varepsilonlc$$, where A is the absorbance, \u03b5 is the molar absorptivity, l is the path length, and c is the concentration of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcabsorption_spectroscopya-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Absorbance is directly proportional to concentration"
+        ],
+        "dependencies": [
+            "a8737dcabsorption_spectroscopya-h2"
+        ],
+        "title": "Direct Proportionality",
+        "text": "According to Beer's Law, how does absorbance relate to concentration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Absorbance is directly proportional to concentration",
+            "Absorbance is inversely proportional to concentration",
+            "Absorbance is independent of concentration",
+            "Absorbance is proportional to the square of concentration"
+        ]
+    },
+    {
+        "id": "a8737dcabsorption_spectroscopya-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcabsorption_spectroscopya-h2"
+        ],
+        "title": "Molar Absorptivity",
+        "text": "The molar absorptivity (\u03b5) is a constant that indicates how strongly a substance absorbs light at a particular wavelength.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcabsorption_spectroscopya-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcabsorption_spectroscopya-h2"
+        ],
+        "title": "Path Length",
+        "text": "The path length (l) is the distance that light travels through the solution, typically measured in centimeters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcabsorption_spectroscopya-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcabsorption_spectroscopya-h3"
+        ],
+        "title": "Practical Application",
+        "text": "In practice, you can determine the concentration of an unknown solution by measuring its absorbance and using a calibration curve or Beer's Law equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

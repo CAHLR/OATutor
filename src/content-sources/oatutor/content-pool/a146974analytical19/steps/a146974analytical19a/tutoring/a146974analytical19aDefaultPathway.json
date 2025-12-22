@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a146974analytical19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thermal Stability",
+        "text": "Thermal stability refers to a material's ability to maintain its properties at elevated temperatures. Consider what type of analysis would help determine this property.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical19a-h1"
+        ],
+        "title": "Types of Analysis",
+        "text": "There are several types of analysis in chemistry: qualitative, quantitative, characterization, and fundamental. Which one focuses on understanding the properties and behavior of materials?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "characterization"
+        ],
+        "dependencies": [
+            "a146974analytical19a-h2"
+        ],
+        "title": "Choosing the Right Analysis",
+        "text": "Which analysis type examines thermal stability of a material?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

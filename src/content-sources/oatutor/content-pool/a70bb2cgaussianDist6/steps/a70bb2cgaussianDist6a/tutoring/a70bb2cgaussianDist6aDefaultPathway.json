@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a70bb2cgaussianDist6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gaussian Distribution",
+        "text": "A Gaussian distribution, also known as a normal distribution, is a bell-shaped curve that is symmetric about the mean. It is characterized by its mean and standard deviation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianDist6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cgaussianDist6a-h1"
+        ],
+        "title": "Standard Deviation in Gaussian Distribution",
+        "text": "In a Gaussian distribution, the standard deviation is a measure of the spread of the data around the mean. It tells us how much the data deviates from the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianDist6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cgaussianDist6a-h2"
+        ],
+        "title": "Empirical Rule",
+        "text": "The empirical rule states that for a normal distribution, approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and $$99.7\\%$$ within three standard deviations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cgaussianDist6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "68%"
+        ],
+        "dependencies": [
+            "a70bb2cgaussianDist6a-h3"
+        ],
+        "title": "Applying the Empirical Rule",
+        "text": "Based on the empirical rule, what percentage of data falls within one standard deviation of the mean in a Gaussian distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "50%",
+            "68%",
+            "95%",
+            "99%"
+        ]
+    }
+]

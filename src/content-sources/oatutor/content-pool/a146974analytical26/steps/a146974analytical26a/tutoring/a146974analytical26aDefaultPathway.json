@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a146974analytical26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Type of Analysis",
+        "text": "In analytical chemistry, different types of analyses are used to achieve various objectives. Consider what the primary goal is when developing a new technique for measuring trace gases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical26a-h1"
+        ],
+        "title": "Focus on the Objective",
+        "text": "Think about whether the objective is to quantify, identify, or improve the precision of measurements. Which category does this fall into?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical26a-h2"
+        ],
+        "title": "Different Types of Analysis",
+        "text": "Recall the types of analysis: qualitative, quantitative, characterization, and fundamental. Which one involves developing new techniques?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical26a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fundamental"
+        ],
+        "dependencies": [
+            "a146974analytical26a-h3"
+        ],
+        "title": "Identifying the Analysis Type",
+        "text": "Which type of analysis focuses on developing new methods or techniques to enhance measurement precision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

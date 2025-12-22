@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2canalytmethod1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$t-tests$$",
+        "text": "A $$t-test$$ is a statistical test used to compare the means of two groups. It helps determine if the differences between the groups are statistically significant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2canalytmethod1a-h1"
+        ],
+        "title": "When to use a $$t-test$$",
+        "text": "Consider using a $$t-test$$ when you have two sets of data and you want to know if their means are significantly different from each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Comparing the means of two sets of data to determine if they are significantly different."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod1a-h2"
+        ],
+        "title": "Identifying the correct application",
+        "text": "Which of the following options correctly describes the application of a $$t-test$$ in analytical chemistry?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Determining the standard deviation of a single dataset.",
+            "Comparing the means of two sets of data to determine if they are significantly different.",
+            "Calculating the median of a dataset.",
+            "Finding the mode of a dataset."
+        ]
+    }
+]

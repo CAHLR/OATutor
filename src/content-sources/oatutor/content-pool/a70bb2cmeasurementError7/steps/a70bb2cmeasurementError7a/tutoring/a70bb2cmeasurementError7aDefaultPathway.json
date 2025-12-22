@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2cmeasurementError7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Systematic Errors",
+        "text": "Systematic errors are consistent and repeatable errors that occur due to a flaw in the measurement system. They can often be identified and corrected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cmeasurementError7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cmeasurementError7a-h1"
+        ],
+        "title": "Identifying the Source of Error",
+        "text": "Consider whether the error is due to a consistent issue with the equipment or method used. If it is, it is likely a systematic error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cmeasurementError7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Systematic error"
+        ],
+        "dependencies": [
+            "a70bb2cmeasurementError7a-h2"
+        ],
+        "title": "Classifying the Error Type",
+        "text": "Which type of error is consistent and predictable, often due to faulty equipment?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Random error",
+            "Systematic error",
+            "Gross error",
+            "Human error"
+        ]
+    }
+]

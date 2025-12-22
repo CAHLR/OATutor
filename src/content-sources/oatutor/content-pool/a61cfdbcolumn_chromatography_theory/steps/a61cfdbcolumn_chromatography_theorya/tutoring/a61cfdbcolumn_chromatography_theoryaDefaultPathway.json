@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a61cfdbcolumn_chromatography_theorya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Basics",
+        "text": "Column chromatography is a technique used to separate compounds based on their different affinities for the stationary and mobile phases. Can you identify what these phases are?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbcolumn_chromatography_theorya-h2",
+        "type": "hint",
+        "dependencies": [
+            "a61cfdbcolumn_chromatography_theorya-h1"
+        ],
+        "title": "Role of the Stationary Phase",
+        "text": "The stationary phase in column chromatography is typically a solid material packed into a column. What role does it play in the separation process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbcolumn_chromatography_theorya-h3",
+        "type": "hint",
+        "dependencies": [
+            "a61cfdbcolumn_chromatography_theorya-h2"
+        ],
+        "title": "Mobile Phase Movement",
+        "text": "The mobile phase moves through the column, carrying the compounds with it. How does the movement of the mobile phase affect the separation of compounds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbcolumn_chromatography_theorya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Different affinities of compounds for the stationary and mobile phases"
+        ],
+        "dependencies": [
+            "a61cfdbcolumn_chromatography_theorya-h3"
+        ],
+        "title": "Identifying the Principle",
+        "text": "What is the principle behind the separation of compounds in column chromatography?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Different affinities of compounds for the stationary and mobile phases",
+            "The boiling points of the compounds",
+            "The color of the compounds",
+            "The pH of the mobile phase"
+        ]
+    }
+]

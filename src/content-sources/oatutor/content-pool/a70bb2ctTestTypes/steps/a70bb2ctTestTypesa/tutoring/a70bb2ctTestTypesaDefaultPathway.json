@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a70bb2ctTestTypesa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Paired and Unpaired $$t-tests$$",
+        "text": "A paired $$t-test$$ is used when the samples are related or matched in some way. An unpaired $$t-test$$ is used when the samples are independent of each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestTypesa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2ctTestTypesa-h1"
+        ],
+        "title": "When to Use a Paired $$t-test$$",
+        "text": "Consider using a paired $$t-test$$ when you have two sets of data that are related, such as measurements taken from the same subjects before and after a treatment.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestTypesa-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2ctTestTypesa-h1"
+        ],
+        "title": "When to Use an Unpaired $$t-test$$",
+        "text": "An unpaired $$t-test$$ is appropriate when comparing two independent groups, such as comparing the test scores of students from two different classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestTypesa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A paired $$t-test$$ compares two related groups, while an unpaired $$t-test$$ compares two independent groups."
+        ],
+        "dependencies": [
+            "a70bb2ctTestTypesa-h1"
+        ],
+        "title": "Identifying the Correct $$t-test$$",
+        "text": "Given two groups of data, determine whether they are related or independent to choose the correct $$t-test$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A paired $$t-test$$ compares two independent groups, while an unpaired $$t-test$$ compares two related groups.",
+            "A paired $$t-test$$ is used for large samples, while an unpaired $$t-test$$ is for small samples.",
+            "A paired $$t-test$$ compares two related groups, while an unpaired $$t-test$$ compares two independent groups.",
+            "There is no difference."
+        ]
+    }
+]

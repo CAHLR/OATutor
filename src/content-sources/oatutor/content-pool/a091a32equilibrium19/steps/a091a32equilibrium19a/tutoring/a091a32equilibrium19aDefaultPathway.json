@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a091a32equilibrium19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Strong Acids",
+        "text": "Remember that strong acids, like HCl, completely dissociate in water. This means that the concentration of HCl will be equal to the concentration of H\u207a ions in the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium19a-h1"
+        ],
+        "title": "Mass Balance Equation",
+        "text": "For a solution of HCl, the mass balance equation is straightforward. Since HCl dissociates completely, the concentration of HCl is equal to the concentration of H\u207a ions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium19a-h2"
+        ],
+        "title": "Charge Balance Equation",
+        "text": "In a solution of HCl, the charge balance equation is: [H\u207a] $$=$$ [Cl\u207b]. This is because the number of positive charges from H\u207a ions must equal the number of negative charges from Cl\u207b ions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium19a-h3"
+        ],
+        "title": "Equilibrium Relationships",
+        "text": "For strong acids like HCl, the equilibrium relationship is simplified because the acid dissociates completely. Therefore, the equilibrium constant is not needed for calculations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium19a-h4"
+        ],
+        "title": "Calculate the pH",
+        "text": "Given that the concentration of H\u207a ions is $$0.0100$$ M, use the formula pH $$=$$ -log[H\u207a] to find the pH of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

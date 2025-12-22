@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Electronic Transitions",
+        "text": "Consider which type of spectroscopy is used to study the absorption of light that causes electrons to move to higher energy levels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$ \\cup \\frac{V}{Vis}$$ spectroscopy"
+        ],
+        "dependencies": [
+            "a8737dcuv_vis_ir_spectroscopya-h1"
+        ],
+        "title": "Identifying the Spectroscopy Type",
+        "text": "Which type of spectroscopy is primarily used to study electronic transitions in molecules?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$ \\cup \\frac{V}{Vis}$$ spectroscopy",
+            "IR spectroscopy",
+            "NMR spectroscopy",
+            "Mass spectrometry"
+        ]
+    },
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vibrational Transitions",
+        "text": "Think about which spectroscopy technique is used to study the vibrations of molecules.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "IR spectroscopy"
+        ],
+        "dependencies": [
+            "a8737dcuv_vis_ir_spectroscopya-h3"
+        ],
+        "title": "Identifying Vibrational Spectroscopy",
+        "text": "Which type of spectroscopy is primarily used to study vibrational transitions in molecules?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$ \\cup \\frac{V}{Vis}$$ spectroscopy",
+            "IR spectroscopy",
+            "NMR spectroscopy",
+            "Mass spectrometry"
+        ]
+    },
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applications of $$ \\cup \\frac{V}{Vis}$$ Spectroscopy",
+        "text": "Consider the applications of $$ \\cup \\frac{V}{Vis}$$ spectroscopy in determining the concentration of solutions and studying conjugated systems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcuv_vis_ir_spectroscopya-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applications of IR Spectroscopy",
+        "text": "Think about how IR spectroscopy is used to identify functional groups in organic compounds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

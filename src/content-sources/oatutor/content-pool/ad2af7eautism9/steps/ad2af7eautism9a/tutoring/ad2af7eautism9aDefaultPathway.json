@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad2af7eautism9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Link",
+        "text": "Consider the scientific consensus on the relationship between vaccines and autism spectrum disorder (ASD).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad2af7eautism9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad2af7eautism9a-h1"
+        ],
+        "title": "Review Scientific Studies",
+        "text": "Think about the findings from multiple large-scale studies conducted by reputable health organizations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad2af7eautism9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad2af7eautism9a-h2"
+        ],
+        "title": "Analyzing the Evidence",
+        "text": "What do the majority of scientific studies conclude about the link between vaccines and ASD?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

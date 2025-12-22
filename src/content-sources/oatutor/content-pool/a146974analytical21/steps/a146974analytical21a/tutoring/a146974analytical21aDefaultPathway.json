@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a146974analytical21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Analysis Types",
+        "text": "In analytical chemistry, different types of analysis are used to determine various properties of a substance. Can you recall the main types of analysis and what they are used for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical21a-h1"
+        ],
+        "title": "Quantitative vs. Qualitative Analysis",
+        "text": "Quantitative analysis measures the amount of a substance, while qualitative analysis identifies the presence of a substance. Which type would be more appropriate for ensuring the correct amount of active ingredients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical21a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "quantitative"
+        ],
+        "dependencies": [
+            "a146974analytical21a-h2"
+        ],
+        "title": "Choosing the Right Analysis",
+        "text": "Given the need to ensure the correct amount of active ingredients, which type of analysis should be used?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

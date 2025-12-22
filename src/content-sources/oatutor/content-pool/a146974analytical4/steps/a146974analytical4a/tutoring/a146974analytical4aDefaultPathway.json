@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a146974analytical4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Purity Analysis",
+        "text": "To verify the purity of a substance, you need to determine its composition and identify any impurities present. This often involves using specific analytical techniques.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical4a-h1"
+        ],
+        "title": "Types of Analytical Techniques",
+        "text": "There are several types of analytical techniques, including qualitative, quantitative, and characterization methods. Each serves a different purpose in analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical4a-h2"
+        ],
+        "title": "Characterization Techniques",
+        "text": "Characterization techniques are used to determine the physical and chemical properties of a material, which is essential for verifying purity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "characterization"
+        ],
+        "dependencies": [
+            "a146974analytical4a-h3"
+        ],
+        "title": "Choosing the Right Analysis Type",
+        "text": "Which analysis type is used to verify the purity of gold jewelry?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

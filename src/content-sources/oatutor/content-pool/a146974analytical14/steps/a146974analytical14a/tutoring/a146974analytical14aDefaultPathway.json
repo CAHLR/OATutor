@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a146974analytical14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Analysis Types",
+        "text": "In analytical chemistry, different types of analyses are used to determine the composition of a substance. These include qualitative, quantitative, and characterization analyses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical14a-h1"
+        ],
+        "title": "Qualitative vs. Quantitative Analysis",
+        "text": "Qualitative analysis identifies the presence of certain chemicals, while quantitative analysis measures the amount of these chemicals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical14a-h1"
+        ],
+        "title": "Characterization Analysis",
+        "text": "Characterization analysis provides detailed information about the structure and properties of a substance, but not necessarily its chemical composition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "qualitative"
+        ],
+        "dependencies": [
+            "a146974analytical14a-h2"
+        ],
+        "title": "Choosing the Right Analysis",
+        "text": "To ensure a product is free from harmful chemicals, which type of analysis would you choose?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

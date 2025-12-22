@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a091a32equilibrium1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Equilibrium",
+        "text": "In a chemical equilibrium, the system is dynamic, meaning that reactions are still occurring, but at equal rates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium1a-h1"
+        ],
+        "title": "Reaction Rates at Equilibrium",
+        "text": "Consider what happens to the rates of the forward and reverse reactions when a system reaches equilibrium.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium1a-h2"
+        ],
+        "title": "Concentration Changes",
+        "text": "At equilibrium, the concentrations of reactants and products do not change over time. This does not mean they are equal, but they remain constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The forward and reverse reaction rates are equal, and the concentrations of reactants and products remain constant over time."
+        ],
+        "dependencies": [
+            "a091a32equilibrium1a-h3"
+        ],
+        "title": "Identify the Correct Statement",
+        "text": "Which statement best describes a system at equilibrium in analytical chemistry?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All reactions have stopped and no further chemical change occurs.",
+            "The forward and reverse reaction rates are equal, and the concentrations of reactants and products remain constant over time.",
+            "Reactants have been fully converted to products.",
+            "The reaction mixture contains equal moles of reactants and products."
+        ]
+    }
+]

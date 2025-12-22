@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a146974analytical20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Type of Analysis",
+        "text": "When developing a sensor, consider whether the goal is to measure, identify, or understand a fundamental property.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical20a-h1"
+        ],
+        "title": "Different Types of Analysis",
+        "text": "In analytical chemistry, analysis can be qualitative, quantitative, characterization, or fundamental. Think about what each type involves.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a146974analytical20a-h2"
+        ],
+        "title": "Focus on Fundamental Analysis",
+        "text": "Fundamental analysis often involves understanding the basic principles or mechanisms behind a phenomenon, such as sensor development.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a146974analytical20a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fundamental"
+        ],
+        "dependencies": [
+            "a146974analytical20a-h3"
+        ],
+        "title": "Identify the Analysis Type",
+        "text": "Based on the goal of developing a sensor for methane detection, what type of analysis is being conducted?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "qualitative",
+            "quantitative",
+            "characterization",
+            "fundamental"
+        ]
+    }
+]

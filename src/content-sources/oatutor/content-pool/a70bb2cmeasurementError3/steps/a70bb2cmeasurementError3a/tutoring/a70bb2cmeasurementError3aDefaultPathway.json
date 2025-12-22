@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2cmeasurementError3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Errors",
+        "text": "Random errors are caused by unpredictable fluctuations in the measurement process. They can arise from environmental changes, slight variations in measurement technique, or inherent noise in the measurement system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cmeasurementError3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2cmeasurementError3a-h1"
+        ],
+        "title": "Characteristics of Random Errors",
+        "text": "Random errors are typically characterized by their lack of pattern. They can be reduced by taking multiple measurements and averaging the results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2cmeasurementError3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Random error"
+        ],
+        "dependencies": [
+            "a70bb2cmeasurementError3a-h2"
+        ],
+        "title": "Identifying Random Errors",
+        "text": "Which type of error is caused by unpredictable fluctuations in measurements?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Systematic error",
+            "Random error",
+            "Gross error",
+            "Instrumental error"
+        ]
+    }
+]

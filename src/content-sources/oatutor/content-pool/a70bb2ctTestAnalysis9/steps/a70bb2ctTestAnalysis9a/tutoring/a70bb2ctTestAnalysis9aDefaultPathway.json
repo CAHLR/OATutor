@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2ctTestAnalysis9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Paired $$t-test$$",
+        "text": "A paired $$t-test$$ is used when you have two sets of related data. Can you think of a scenario where this might be applicable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestAnalysis9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2ctTestAnalysis9a-h1"
+        ],
+        "title": "Identifying the Groups",
+        "text": "In a paired $$t-test$$, the two sets of data are often from the same group measured at two different times. What might these two times represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2ctTestAnalysis9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To compare means from the same group at different times"
+        ],
+        "dependencies": [
+            "a70bb2ctTestAnalysis9a-h2"
+        ],
+        "title": "Purpose of Paired $$t-test$$",
+        "text": "What is the main purpose of a paired $$t-test$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To compare means from two different groups",
+            "To compare means from the same group at different times",
+            "To test for correlation",
+            "To analyze variance"
+        ]
+    }
+]

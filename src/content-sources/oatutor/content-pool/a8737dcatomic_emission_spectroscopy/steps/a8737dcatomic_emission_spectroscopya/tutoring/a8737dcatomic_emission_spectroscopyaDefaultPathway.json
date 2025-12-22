@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a8737dcatomic_emission_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Atomic Emission",
+        "text": "Atomic emission spectroscopy relies on the principle that atoms emit light when they transition from a higher energy state to a lower one. This emitted light is characteristic of the element.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcatomic_emission_spectroscopya-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcatomic_emission_spectroscopya-h1"
+        ],
+        "title": "Energy States and Emission",
+        "text": "When atoms absorb energy, they move to an excited state. As they return to their ground state, they emit light at specific wavelengths.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcatomic_emission_spectroscopya-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Excited atoms returning to lower energy states"
+        ],
+        "dependencies": [
+            "a8737dcatomic_emission_spectroscopya-h2"
+        ],
+        "title": "Identifying the Cause of Emission",
+        "text": "What happens to atoms that causes them to emit light in atomic emission spectroscopy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Excited atoms returning to lower energy states",
+            "Atoms absorbing energy from a light source",
+            "Atoms undergoing a chemical reaction",
+            "Atoms being ionized by an electric field"
+        ]
+    },
+    {
+        "id": "a8737dcatomic_emission_spectroscopya-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcatomic_emission_spectroscopya-h3"
+        ],
+        "title": "Analyzing the Emission Spectrum",
+        "text": "Each element emits light at specific wavelengths, creating a unique emission spectrum. This spectrum can be used to identify the elements present in a sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcatomic_emission_spectroscopya-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcatomic_emission_spectroscopya-h4"
+        ],
+        "title": "Practical Applications",
+        "text": "Atomic emission spectroscopy is widely used in fields such as environmental analysis, metallurgy, and pharmaceuticals to determine the composition of samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

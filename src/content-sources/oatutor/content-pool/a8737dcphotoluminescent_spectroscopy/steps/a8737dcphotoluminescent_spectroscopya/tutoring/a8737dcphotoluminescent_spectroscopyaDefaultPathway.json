@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8737dcphotoluminescent_spectroscopya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Photoluminescence",
+        "text": "Photoluminescence involves the absorption and re-emission of light. Can you think of a common example where this occurs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcphotoluminescent_spectroscopya-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcphotoluminescent_spectroscopya-h1"
+        ],
+        "title": "Energy Levels in Photoluminescence",
+        "text": "When a substance absorbs photons, it moves to a higher energy state. What happens when it returns to a lower energy state?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcphotoluminescent_spectroscopya-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Light is emitted when a substance returns to a lower energy state."
+        ],
+        "dependencies": [
+            "a8737dcphotoluminescent_spectroscopya-h2"
+        ],
+        "title": "Emission of Light",
+        "text": "What is emitted when a substance returns to a lower energy state after absorbing photons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Light",
+            "Heat",
+            "Sound",
+            "Electricity"
+        ]
+    },
+    {
+        "id": "a8737dcphotoluminescent_spectroscopya-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8737dcphotoluminescent_spectroscopya-h3"
+        ],
+        "title": "Applications of Photoluminescence",
+        "text": "Photoluminescence is used in various fields. Can you name one application in spectroscopy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8737dcphotoluminescent_spectroscopya-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Photoluminescence is used to analyze the composition and properties of materials."
+        ],
+        "dependencies": [
+            "a8737dcphotoluminescent_spectroscopya-h4"
+        ],
+        "title": "Spectroscopy Application",
+        "text": "How is photoluminescence used in spectroscopy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To analyze the composition and properties of materials",
+            "To measure temperature",
+            "To detect sound waves",
+            "To generate electricity"
+        ]
+    }
+]

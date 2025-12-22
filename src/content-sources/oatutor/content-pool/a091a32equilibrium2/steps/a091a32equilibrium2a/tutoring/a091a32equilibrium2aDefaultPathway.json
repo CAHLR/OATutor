@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a091a32equilibrium2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ka",
+        "text": "The acid dissociation constant, Ka, is a measure of the strength of an acid in solution. It is specifically used for weak acids.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium2a-h1"
+        ],
+        "title": "Reaction Representation",
+        "text": "For a weak acid HA in water, the dissociation can be represented as: HA+H2O\u21ccH3O++A-.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium2a-h2"
+        ],
+        "title": "Equilibrium Constant",
+        "text": "The equilibrium constant expression for the dissociation of HA in water is given by: $$Ka=\\frac{[H3*O+][A-]/[HA][H3*O+][A-]/[HA]}{[H3*O+][A-]/[HA]}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The equilibrium constant for the reaction HA+H2O\u21ccH3O++A-."
+        ],
+        "dependencies": [
+            "a091a32equilibrium2a-h3"
+        ],
+        "title": "Identify the Correct Expression",
+        "text": "Which of the following correctly describes the acid dissociation constant Ka for a weak acid HA in water?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The rate at which HA dissolves in water.",
+            "The equilibrium constant for the reaction HA+H2O\u21ccH3O++A-.",
+            "The equilibrium constant for the reaction A-+H2O\u21ccHA+OH-.",
+            "The solubility product of HA."
+        ]
+    }
+]

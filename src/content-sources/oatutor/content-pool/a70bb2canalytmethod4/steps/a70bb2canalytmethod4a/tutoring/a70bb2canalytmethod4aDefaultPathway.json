@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a70bb2canalytmethod4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Error Propagation",
+        "text": "When you add two measurements, each with its own error, how do you determine the error in the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70bb2canalytmethod4a-h1"
+        ],
+        "title": "Absolute vs. Relative Error",
+        "text": "Consider whether you should be adding absolute errors or relative errors when combining measurements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70bb2canalytmethod4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The absolute errors are added together."
+        ],
+        "dependencies": [
+            "a70bb2canalytmethod4a-h2"
+        ],
+        "title": "Adding Absolute Errors",
+        "text": "When adding two measurements, the total error is the sum of the absolute errors of each measurement. Which option correctly describes this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The absolute errors are subtracted.",
+            "The relative errors are added together.",
+            "The absolute errors are added together.",
+            "The relative errors are subtracted."
+        ]
+    }
+]

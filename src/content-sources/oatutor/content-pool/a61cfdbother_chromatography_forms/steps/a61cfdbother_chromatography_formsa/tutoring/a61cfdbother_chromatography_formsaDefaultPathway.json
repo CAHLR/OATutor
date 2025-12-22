@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a61cfdbother_chromatography_formsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Chromatography",
+        "text": "Chromatography is a technique used to separate components in a mixture. It relies on the differential partitioning between the mobile and stationary phases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbother_chromatography_formsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a61cfdbother_chromatography_formsa-h1"
+        ],
+        "title": "Types of Chromatography",
+        "text": "Besides gas and liquid chromatography, there are other forms such as thin-layer chromatography (TLC), ion-exchange chromatography, and size-exclusion chromatography.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbother_chromatography_formsa-h3",
+        "type": "hint",
+        "dependencies": [
+            "a61cfdbother_chromatography_formsa-h2"
+        ],
+        "title": "Thin-Layer Chromatography (TLC)",
+        "text": "TLC involves a stationary phase of a thin layer of adsorbent material on a flat, inert substrate. The mobile phase is a solvent that moves up the plate by capillary action.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a61cfdbother_chromatography_formsa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Thin-layer$$ chromatography (TLC)"
+        ],
+        "dependencies": [
+            "a61cfdbother_chromatography_formsa-h3"
+        ],
+        "title": "Identifying TLC",
+        "text": "Which of the following is a form of chromatography not based on gas or liquid phases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Thin-layer$$ chromatography (TLC)",
+            "Gas chromatography",
+            "$$High-performance$$ liquid chromatography (HPLC)",
+            "$$Ion-exchange$$ chromatography"
+        ]
+    }
+]

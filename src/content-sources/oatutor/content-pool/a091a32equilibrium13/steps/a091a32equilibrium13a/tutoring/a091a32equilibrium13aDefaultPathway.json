@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a091a32equilibrium13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Henderson-Hasselbalch Equation",
+        "text": "The Henderson-Hasselbalch equation is used to estimate the pH of a buffer solution. It is given by: pH=pKa+log{10}{(A-/HA)}. Here, pKa is the negative logarithm of the acid dissociation constant (Ka), and A- and HA are the concentrations of the conjugate base and the weak acid, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium13a-h1"
+        ],
+        "title": "Calculate pKa from Ka",
+        "text": "To find pKa, use the formula: $$pKa=-\\log_{10}\\left(Ka\\right)$$. Given that $$Ka=1.8e-5$$, calculate pKa.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.74$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium13a-h2"
+        ],
+        "title": "Calculate pKa",
+        "text": "Calculate pKa using the formula: $$pKa=-\\log_{10}\\left(1.8e-5\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium13a-h3"
+        ],
+        "title": "Determine the Concentration Ratio",
+        "text": "The concentration ratio of the conjugate base to the weak acid is given by (A-/HA). Use the given moles of A- and HA to find this ratio.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6667$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium13a-h4"
+        ],
+        "title": "Calculate the Concentration Ratio",
+        "text": "Calculate the concentration ratio using the formula: (A-/HA)=0.0200/0.0300.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a091a32equilibrium13a-h5"
+        ],
+        "title": "Apply the Henderson-Hasselbalch Equation",
+        "text": "Now that you have pKa and the concentration ratio, substitute these values into the Henderson-Hasselbalch equation: pH=pKa+log{10}{(A-/HA)}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a091a32equilibrium13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.57$$"
+        ],
+        "dependencies": [
+            "a091a32equilibrium13a-h6"
+        ],
+        "title": "Calculate the pH",
+        "text": "Substitute the values into the equation: $$pH=4.74+\\log_{10}\\left(0.6667\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
