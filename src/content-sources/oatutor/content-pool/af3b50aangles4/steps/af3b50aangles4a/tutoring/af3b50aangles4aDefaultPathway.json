@@ -1,0 +1,47 @@
+[
+    {
+        "id": "af3b50aangles4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula of arc length",
+        "text": "The formula for the arc length of a sector is the $$radius the$$ central angle in radians (theta).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{9}$$"
+        ],
+        "dependencies": [
+            "af3b50aangles4a-h1"
+        ],
+        "title": "Converting to Radians",
+        "text": "The first step is to convert 140\u00b0 to radians. To do so, the formula is (pi/180\u00b0)*140\u00b0. What is 140\u00b0 in radians?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{5\\pi}{9}$$",
+            "$$\\frac{5\\pi}{18}$$",
+            "$$\\frac{7\\pi}{9}$$",
+            "$$\\frac{7\\pi}{18}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles4a-h2"
+        ],
+        "title": "Calculating Arc Length",
+        "text": "Now that you have the central angle in radians, you can calculate the arc length using the formula $$radius \\theta$$. What is the arc length?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

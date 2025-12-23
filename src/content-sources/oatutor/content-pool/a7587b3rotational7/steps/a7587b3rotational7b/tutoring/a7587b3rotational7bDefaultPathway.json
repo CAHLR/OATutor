@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a7587b3rotational7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Moment of Inertia",
+        "text": "The grindstone is a solid disk, so its moment of inertia I is given by: $$I=\\frac{1}{2} m r^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7587b3rotational7b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.94$$"
+        ],
+        "dependencies": [
+            "a7587b3rotational7b-h1"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "What is $$75\\frac{1}{2}\\times{0.28}^2$$ in $$kg m^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7587b3rotational7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7587b3rotational7b-h2"
+        ],
+        "title": "Formula for Angular Acceleration",
+        "text": "The relationship between torque and angular acceleration is: $$\\alpha=\\frac{\\tau}{I}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7587b3rotational7b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17.1$$"
+        ],
+        "dependencies": [
+            "a7587b3rotational7b-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "What is $$\\frac{50.4}{2.94}$$ in $$\\frac{rad}{s^2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

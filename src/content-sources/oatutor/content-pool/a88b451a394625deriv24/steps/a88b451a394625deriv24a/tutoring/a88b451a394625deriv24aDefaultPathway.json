@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a88b451a394625deriv24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bryta ner fr\u00e5gan",
+        "text": "G\u00f6r f\u00f6rstaderivatan och derivera sedan den tre g\u00e5nger till",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5\\sin\\left(x\\right)$$\\n"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv24a-h1"
+        ],
+        "title": "Delfr\u00e5ga",
+        "text": "Vad \u00e4r f\u00f6rstaderivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5\\cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv24a-h2"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av f\u00f6rstaderivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5\\sin\\left(x\\right)$$\\n"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv24a-h3"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av andraderivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5\\cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv24a-h4"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av tredjederivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88b451a394625deriv24a-h5"
+        ],
+        "title": "Derivatan av $$n-1th$$ derivatan \u00e4r den n:te derivatan",
+        "text": "Dra slutsatsen fr\u00e5n dina del-fr\u00e5gor",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

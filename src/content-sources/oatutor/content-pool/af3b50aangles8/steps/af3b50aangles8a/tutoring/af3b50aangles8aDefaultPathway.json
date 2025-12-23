@@ -1,0 +1,47 @@
+[
+    {
+        "id": "af3b50aangles8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Conversion Formula",
+        "text": "The formula for coverting from radians to degrees is (180\u00b0/pi)*radians.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(180\u00b0/3)"
+        ],
+        "dependencies": [
+            "af3b50aangles8a-h1"
+        ],
+        "title": "Cancelling Pi",
+        "text": "What do you get after cancelling pi in the numerator and denominator?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "(180\u00b0/2)",
+            "(180\u00b0/4)",
+            "(180\u00b0/3)",
+            "180\u00b0"
+        ]
+    },
+    {
+        "id": "af3b50aangles8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles8a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the equation to complete the conversion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

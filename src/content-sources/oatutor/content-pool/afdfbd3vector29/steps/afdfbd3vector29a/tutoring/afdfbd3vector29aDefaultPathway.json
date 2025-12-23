@@ -1,0 +1,108 @@
+[
+    {
+        "id": "afdfbd3vector29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "cos\u03b8=v/|v|*u/|u|",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h1"
+        ],
+        "title": "Magnitude",
+        "text": "How do we find the magnitude of a vector: |v|=\u221a(a**2+b**2)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h2"
+        ],
+        "title": "Substitute",
+        "text": "|v|=\u221a(5**2+12**2), |u|=\u221a((-3)**2+4**2)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h3"
+        ],
+        "title": "Simplify",
+        "text": "\u221a(5**2+12**2)=\u221a(25+144)=\u221a169=13, \u221a((-3)**2+4**2)=\u221a(9+16)=\u221a25=5",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h4"
+        ],
+        "title": "Substitute",
+        "text": "cos\u03b8=\u27e85,12\u27e9/13*\u27e8-3,4\u27e9/5",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h5"
+        ],
+        "title": "Formula",
+        "text": "$$v u=ac+bd$$ for $$v=\u27e8a, b\u27e9$$ and $$u=$$ \u27e8c,d\u27e9",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h7",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h6"
+        ],
+        "title": "Substitute",
+        "text": "v*u=ac+bd=5/13(-3/5)+12/13(4/5)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h8",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h7"
+        ],
+        "title": "Simplify",
+        "text": "5/13(-3/5)+12/13(4/5)=-3/13+48/65=-15/13+48/65=33/65",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector29a-h9",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector29a-h8"
+        ],
+        "title": "Solve",
+        "text": "\u03b8=cos**(-1)(33/65)\u224859.5\u00b0",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

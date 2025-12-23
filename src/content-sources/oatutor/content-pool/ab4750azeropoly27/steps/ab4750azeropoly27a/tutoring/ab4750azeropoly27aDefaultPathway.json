@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ab4750azeropoly27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the rational root theorem",
+        "text": "What are the possible rational roots when we use the rational root theorem given the leading coeffcient and the constant term?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab4750azeropoly27a-h1"
+        ],
+        "title": "Rational root theorem",
+        "text": "How do the denominators of the possible rationa root relate to the $$\\frac{constant}{leading}$$ coefficient. Similarly how does the numerator relate to these coefficients?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly27a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1,1/2,1/3,1/6)"
+        ],
+        "dependencies": [
+            "ab4750azeropoly27a-h1",
+            "ab4750azeropoly27a-h2"
+        ],
+        "title": "Positive roots",
+        "text": "What are the roots. Only select the positive roots but keep in mind the negative values of each of these roots would also be a potential rational root.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "(1,1/3,1/6)",
+            "(1,1/2,1/3,1/6)",
+            "(1/2,1/3,1/6)",
+            "(6,1,1/2,1/3,1/6)"
+        ]
+    }
+]

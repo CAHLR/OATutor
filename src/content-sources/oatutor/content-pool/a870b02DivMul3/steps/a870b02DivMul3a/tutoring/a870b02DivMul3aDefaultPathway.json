@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a870b02DivMul3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a870b02DivMul3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{4} z=\\frac{-55}{4}$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul3a-h1"
+        ],
+        "title": "Division",
+        "text": "Divide $$4$$ from each side.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a870b02DivMul3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-55}{4}$$"
+        ],
+        "dependencies": [
+            "a870b02DivMul3a-h2"
+        ],
+        "title": "Simplification",
+        "text": "What do we get for $$z$$ after simplifying the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a870b02DivMul3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a870b02DivMul3a-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a870b02DivMul3a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a870b02DivMul3a-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$4\\left(-\\frac{55}{4}\\right)$$ equals $$-55$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

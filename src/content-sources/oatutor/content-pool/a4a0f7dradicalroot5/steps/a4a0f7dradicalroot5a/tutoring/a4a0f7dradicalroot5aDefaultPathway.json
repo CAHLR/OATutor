@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a4a0f7dradicalroot5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Solving the square root",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h1"
+        ],
+        "title": "Calculation",
+        "text": "Square root can be removed by squaring both sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4z-3$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h2"
+        ],
+        "title": "Squaring",
+        "text": "What is the square of $$\\sqrt{4z-3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3z+2$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h3"
+        ],
+        "title": "Squaring",
+        "text": "What is the square of $$\\sqrt{3z+2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h4"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$4z-3=3z+2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h5"
+        ],
+        "title": "Organizing",
+        "text": "Isolating the $$z$$ term to left side",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h6"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$4z-3z=3+2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$z$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h7"
+        ],
+        "title": "Calculation",
+        "text": "What is $$4z-3z$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot5a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot5a-h8"
+        ],
+        "title": "Addition",
+        "text": "What is $$3+2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

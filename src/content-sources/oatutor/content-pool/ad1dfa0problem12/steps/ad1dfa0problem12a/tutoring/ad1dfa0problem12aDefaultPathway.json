@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad1dfa0problem12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Number of Orbits",
+        "text": "The age of Earth is approximately $$4\\times{10}^9$$ years. Since Earth completes one orbit around the Sun in one year, the total number of orbits is exactly $$4\\times{10}^9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1dfa0problem12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.42\\times{10}^{11}$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Circumference of Earth's Orbit",
+        "text": "The formula for the circumference of a circle is $$C=2\u03c0 r$$ where we have the radius $$r=1.5\\times{10}^{11} m$$. What is the circumference of the Earth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1dfa0problem12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad1dfa0problem12a-h1",
+            "ad1dfa0problem12a-h2"
+        ],
+        "title": "Total Distance Formula",
+        "text": "The total distance Earth has traveled is the number of orbits multiplied by the circumference of its orbit: Total $$Distance=Number$$ of orbits\u00d7Circumference",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad1dfa0problem12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem12a-h3"
+        ],
+        "title": "Calculate the Total Distance Traveled",
+        "text": "Plug in the values and calculate the total distance. What is $$4\\times{10}^9 9.42\\times{10}^{11}$$? (in units of $${10}^{20}$$ meters)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

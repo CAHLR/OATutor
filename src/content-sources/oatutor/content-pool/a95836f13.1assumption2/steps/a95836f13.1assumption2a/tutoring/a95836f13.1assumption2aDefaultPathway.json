@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a95836f13.1assumption2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Variable types",
+        "text": "Consider the option that the response is a categorical variable. This is the dependent variable measurement that we are testing, therefore the variable must be a numerical variable.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a95836f13.1assumption2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a95836f13.1assumption2a-h1"
+        ],
+        "title": "One-way ANOVA",
+        "text": "Consider the option that all the group means are not approximately equal to one another. In an ANOVA test, the alternative hypothesis is that out of all the group means considered, at least two of the group means are different, while the null prevailing belief is that the group means are approximately the same.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a95836f13.1assumption2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a95836f13.1assumption2a-h2"
+        ],
+        "title": "Distribution shape",
+        "text": "Consider the option that each population from which a sample is taken is assumed to form left skewed distribution. ANOVA only operates with normal group data and there are no assumptions related to the skewness of the data.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a95836f13.1assumption2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a95836f13.1assumption2a-h3"
+        ],
+        "title": "One-way ANOVA",
+        "text": "Analysis of variance extends the comparison of two groups to several, each a level of a categorical variable (factor). Samples from each group are independent, and must be randomly selected from normal populations with equal variances. We test the null hypothesis of equal means of the response in every group versus the alternative hypothesis of one or more group means being different from the others. A one-way ANOVA hypothesis test determines if several population means are equal. The distribution for the test is the F distribution with two different degrees of freedom.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

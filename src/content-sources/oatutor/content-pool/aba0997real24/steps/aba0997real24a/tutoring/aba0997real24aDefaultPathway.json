@@ -1,0 +1,141 @@
+[
+    {
+        "id": "aba0997real24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choosing a value",
+        "text": "Choose $$x=0$$ to find the y-intercepts.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-8$$"
+        ],
+        "dependencies": [
+            "aba0997real24a-h1"
+        ],
+        "title": "What is the function at f(0)?",
+        "text": "Plug in $$0$$ for all $$x$$, and solve.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real24a-h2"
+        ],
+        "title": "Setting $$f(x)=0$$",
+        "text": "Set $$f(x)=0$$, and solve to find the x-intercepts.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2|x+1|-10=0$$"
+        ],
+        "dependencies": [
+            "aba0997real24a-h3"
+        ],
+        "title": "What is our equation?",
+        "text": "Type our equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$x+1$$",
+            "$$-1=10$$",
+            "$$x+1$$",
+            "$$-10=0$$",
+            "$$2$$",
+            "$$x-1$$",
+            "$$-2=0$$",
+            "$$2$$",
+            "$$x+1$$",
+            "$$-10=0$$"
+        ]
+    },
+    {
+        "id": "aba0997real24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real24a-h4"
+        ],
+        "title": "Cases",
+        "text": "Split our equation into two cases by first isolating |A|, as we have done before. Mainly, $$x+1=5$$ and $$x+1=-5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real24a-h5"
+        ],
+        "title": "Isolate $$x$$",
+        "text": "Isolate $$x$$ in the equation $$x+1=5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aba0997real24a-h6"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real24a-h7"
+        ],
+        "title": "Isolate $$x$$",
+        "text": "Isolate $$x$$ in the equation $$x+1=-5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real24a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6$$"
+        ],
+        "dependencies": [
+            "aba0997real24a-h8"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

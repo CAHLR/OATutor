@@ -1,0 +1,169 @@
+[
+    {
+        "id": "acf60f3DerivativeFunction12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative Function",
+        "text": "Since $$v(t)=s\u2032(t)$$ and $$a(t)=v\u2032(t)=s''(t)$$, we begin by finding the derivative of s(t): $$s'(t)=\\lim_{h\\to0} \\frac{s\\left(t+h\\right)-s\\left(t\\right)}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h1"
+        ],
+        "title": "Derivative Function",
+        "text": "We will get $$s'(t)=\\lim_{h\\to0} \\frac{3\\left(t+h\\right)^2-4\\left(t+h\\right)+1-3t^2-4t+1}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h2"
+        ],
+        "title": "Expand",
+        "text": "Expand $$\\frac{3\\left(t+h\\right)^2-4\\left(t+h\\right)+1-3t^2-4t+1}{h}$$ and Simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} 6t+3h-4$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} 6t+3th-4h$$",
+            "$$\\lim_{h\\to0} 6t+3h-4$$",
+            "$$\\lim_{h\\to0} 6th+3h-4$$"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h4"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "Evaluate the Limit by inserting $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t-4$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h5"
+        ],
+        "title": "Derivative of s(t)",
+        "text": "What is s'(t)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h6"
+        ],
+        "title": "Second Derivative",
+        "text": "Next, need to find s''(t) from $$s'(t)=6t-4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h8",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h7"
+        ],
+        "title": "Second Derivative",
+        "text": "Use $$s''(t)=\\lim_{h\\to0} \\frac{\\operatorname{s'}\\left(t+h\\right)-\\operatorname{s'}\\left(t\\right)}{h}$$ to find Second Derivative",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h9",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h8"
+        ],
+        "title": "Derivative Function",
+        "text": "We will get $$s''(t)=\\lim_{h\\to0} \\frac{6\\left(t+h\\right)-4-6t+4}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h10",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h9"
+        ],
+        "title": "Expand",
+        "text": "Expand $$\\frac{6\\left(t+h\\right)-4-6t+4}{h}$$ and Simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} 6$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h10"
+        ],
+        "title": "Simplify",
+        "text": "What will get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} 6$$",
+            "$$\\lim_{h\\to0} 6h$$",
+            "$$\\lim_{h\\to0} 6x$$"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction12a-h12",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction12a-h11"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "To get a final answer, Evaluate the Limit by inserting $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a18d102geometric22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for an Infinite Geometric Series",
+        "text": "We can represent this as an infinite geometric series. Every time money goes into the economy, 80% of it is spent and is then in the economy to be spent. Therefore, we have an infinite geometric series 1000+1000(0.8)+1000(0.8)**2+... For an infinite geometric series whose first term is $$a_1$$ and common ratio $$r$$, if |r|<1, then the sum is $$S=\\frac{a_1}{1-r}$$. If |r|>1, then the infinite geometric series does not have a sum and diverges.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "a18d102geometric22a-h1"
+        ],
+        "title": "Determine $$a_1$$",
+        "text": "What is $$a_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "a18d102geometric22a-h2"
+        ],
+        "title": "Determine $$r$$",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric22a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a18d102geometric22a-h3"
+        ],
+        "title": "Determining if there is a Sum",
+        "text": "Is |r|<1? We can only find a sum if |r|<1.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a18d102geometric22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5000$$"
+        ],
+        "dependencies": [
+            "a18d102geometric22a-h4"
+        ],
+        "title": "Using the Formula",
+        "text": "Substitute $$a_1$$ and $$r$$ into the summation formula. What is the sum? This will be the overall total effect of the rebate on the economy.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a18d102geometric22a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$5000$$"
+                ],
+                "dependencies": [],
+                "title": "Using the Formula",
+                "text": "What is $$\\frac{1000}{1-0.8}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

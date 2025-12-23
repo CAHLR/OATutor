@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a4bb453real25a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Maxima: $$(-2,16)(2,16)$$"
+        ],
+        "dependencies": [],
+        "title": "What are the highest points in the graph?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Maxima: $$(-2,16)(2,16)$$",
+            "Maxima: $$(3,-10)(2,16)$$",
+            "Maxima: $$(-2,16)(3,-10)$$"
+        ]
+    },
+    {
+        "id": "a4bb453real25a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Maxima: $$(-2,16)(2,16)$$ $$Minima:(3,-10)$$"
+        ],
+        "dependencies": [
+            "a4bb453real25a-h1"
+        ],
+        "title": "The absolute maxima is the highest point in the graph, and the minima is the lowest point in the graph.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Maxima: $$(-2,16)(2,16)$$ $$Minima:(3,-10)$$",
+            "Maxima: $$(-2,16)(2,16)(3,-10)$$",
+            "Maxima: $$(-2,16)$$ $$Minima:(3,-10)(2,16)$$"
+        ]
+    }
+]

@@ -1,0 +1,97 @@
+[
+    {
+        "id": "acbd1a5basicrules25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Addition Rule",
+        "text": "The addition rule states that P(C OR N)=P(C)+P(N)-P(C AND N). Since we want to find the probability that a cookie contains chocolate or nuts, this works well with us as it uses an OR statement.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acbd1a5basicrules25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.36$$"
+        ],
+        "dependencies": [
+            "acbd1a5basicrules25a-h1"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(C), the probability that the cookie contians choclate?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acbd1a5basicrules25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.12$$"
+        ],
+        "dependencies": [
+            "acbd1a5basicrules25a-h2"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(N), the probability the cookie contains nuts?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acbd1a5basicrules25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.08$$"
+        ],
+        "dependencies": [
+            "acbd1a5basicrules25a-h3"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(C AND N), the probability the cookie contains both chocolate and nuts?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acbd1a5basicrules25a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "acbd1a5basicrules25a-h4"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is P(C OR N)=P(C)+P(N)-P(C AND N)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acbd1a5basicrules25a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "acbd1a5basicrules25a-h5"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is $$0.36+0.12-0.08$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
