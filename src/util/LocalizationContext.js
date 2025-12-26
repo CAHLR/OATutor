@@ -6,20 +6,20 @@ export const LocalizationProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     const hashParams = new URLSearchParams(window.location.hash.split('?')[1]);
     const langFromUrl = hashParams.get('locale');
-    if (langFromUrl && ['en', 'es', 'se'].includes(langFromUrl)) {
+    if (langFromUrl && ['en', 'es', 'se', 'de'].includes(langFromUrl)) {
       localStorage.setItem('locale', langFromUrl);
       localStorage.setItem('defaultLocale', langFromUrl);
       return langFromUrl;
     }
     const storedLocale = localStorage.getItem('locale');
-    return storedLocale && ['en', 'es', 'se'].includes(storedLocale) ? storedLocale : 'en';
+    return storedLocale && ['en', 'es', 'se', 'de'].includes(storedLocale) ? storedLocale : 'en';
   });
 
   useEffect(() => {
     const updateLanguageFromUrl = () => {
       const hashParams = new URLSearchParams(window.location.hash.split('?')[1]);
       const langFromUrl = hashParams.get('locale');
-      if (langFromUrl && ['en', 'es', 'se'].includes(langFromUrl)) {
+      if (langFromUrl && ['en', 'es', 'se', 'de'].includes(langFromUrl)) {
         setLanguage(langFromUrl);
         localStorage.setItem('locale', langFromUrl);
         localStorage.setItem('defaultLocale', langFromUrl);
@@ -34,7 +34,7 @@ export const LocalizationProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (['en', 'es', 'se'].includes(language)) {
+    if (['en', 'es', 'se', 'de'].includes(language)) {
       localStorage.setItem('locale', language);
     }
   }, [language]);

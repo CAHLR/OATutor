@@ -3,6 +3,8 @@ import { useLocalization } from "./LocalizationContext";
 import translationsEn from "../locales/en.json";
 import translationsEs from "../locales/es.json";
 import translationsSe from "../locales/se.json";
+import translationsDe from "../locales/de.json";
+
 
 export const useTranslation = () => {
     const { language, setLanguage } = useLocalization();
@@ -11,6 +13,7 @@ export const useTranslation = () => {
         en: translationsEn,
         es: translationsEs,
         se: translationsSe,
+	    de: translationsDe,
     };
 
     const translations = translationsMap[language] || translationsMap['en'];
