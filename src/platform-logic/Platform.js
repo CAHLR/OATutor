@@ -394,7 +394,28 @@ class Platform extends React.Component {
                 this.state.currProblem.id
             );
         });
-        this._nextProblem(context);
+
+        if (this.lesson.enableCompletionMode) {
+            const relevantKc = {};
+            Object.keys(this.lesson.learningObjectives).forEach((x) => {
+                relevantKc[x] = context.bktParams[x]?.probMastery ?? 0;
+            });
+
+            // Check if all problems are completed or all skills 
+            const progressData = this.getProgressBarData();
+            const progressPercent = progressData.percent / 100;
+
+            const allProblemsCompleted = progressData.completed === progressData.total;
+            if (allProblemsCompleted) {
+                console.debug("updateCanvas called because lesson is complete");
+                this.updateCanvas(progressPercent, relevantKc);
+            }
+
+            this.updateCanvas(progressPercent, relevantKc);
+            this._nextProblem(context);
+        } else {
+            this._nextProblem(context);
+        }
     };
 
     displayMastery = (mastery) => {
@@ -505,6 +526,7 @@ class Platform extends React.Component {
                             seed={this.state.seed}
                             lessonID={this.props.lessonID}
                             displayMastery={this.displayMastery}
+                            progressPercent={this.getProgressBarData().percent / 100}
                         />
                     </ErrorBoundary>
                 ) : (
