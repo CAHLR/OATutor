@@ -120,7 +120,7 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state, index, showCorrectness, allowRetry, variabilization } = this.props;
+        const { classes, state, index, showCorrectness, allowRetry, variabilization, textBoxLayout } = this.props;
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer, units } = this.props.step;
         const keepMCOrder = this.props.keepMCOrder;
@@ -140,11 +140,21 @@ class ProblemInput extends React.Component {
             window.mathVirtualKeyboard.layouts = ["default"];
         }
 
+        const defaultLayout = {
+            leftMd: 2,
+            mainMd: 6,
+            rightMd: 3,
+        };
+        const { leftMd, mainMd, rightMd } = {
+            ...defaultLayout,
+            ...(textBoxLayout || {}),
+        };
+
         return (
-            <Grid container spacing={0} justifyContent="center" alignItems="center"
+            <Grid container spacing={0} justifyContent="flex-start" alignItems="center"
                 className={clsx(disableInput && 'disable-interactions')}>
-                <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
-                <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
+                <Grid item xs={false} md={problemType === "TextBox" ? leftMd : false}/>
+                <Grid item xs={9} md={problemType === "TextBox" ? mainMd : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <math-field
                             ref={this.mathFieldRef}
@@ -158,8 +168,7 @@ class ProblemInput extends React.Component {
                             autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
                             autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
                         >
-                            </math-field>
-
+                        </math-field>
                     )}               
                     {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
@@ -250,7 +259,7 @@ class ProblemInput extends React.Component {
                         {units && renderText(units, this.context.problemID, variabilization, this.context)}
                     </div>
                 </Grid>
-                <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
+                <Grid item xs={false} md={problemType === "TextBox" ? rightMd : false}/>
             </Grid>
         )
     }
