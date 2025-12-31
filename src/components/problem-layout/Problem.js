@@ -1102,6 +1102,7 @@ class Problem extends React.Component {
                     getActiveStepData={this.getActiveStepData}
                     attemptHistory={this.state.attemptHistory}
                     user={this.props.user}
+                    lessonMasteryMap={this.props.lessonMasteryMap}
                 />
             </>
         );

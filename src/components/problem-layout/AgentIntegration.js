@@ -18,7 +18,8 @@ class AgentIntegration extends React.Component {
             bktParams,
             getActiveStepData,
             attemptHistory,
-            user
+            user,
+            lessonMasteryMap
         } = this.props;
 
         return (
@@ -32,6 +33,7 @@ class AgentIntegration extends React.Component {
                 getActiveStepData={getActiveStepData}
                 attemptHistory={attemptHistory}
                 user={user}
+                lessonMasteryMap={lessonMasteryMap}
             />
         );
     }

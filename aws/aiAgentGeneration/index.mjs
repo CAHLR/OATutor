@@ -73,6 +73,14 @@ export const handler = awslambda.streamifyResponse(
                 conversationHistory: fullConversationHistory
             });
 
+            console.log('================================================================================');
+            console.log('SYSTEM PROMPT:');
+            console.log('================================================================================');
+            console.log(agentPrompt[0].content);
+            console.log('================================================================================');
+            console.log('USER MESSAGE:', agentPrompt[1].content);
+            console.log('================================================================================');
+
             const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream);
 
             if (response) {

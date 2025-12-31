@@ -1060,7 +1060,8 @@ class Platform extends React.Component {
                             lessonID={this.props.lessonID}
                             displayMastery={this.displayMastery}
                             progressPercent={this.getProgressBarData().percent / 100}
-                        />
+                          lessonMasteryMap={lessonMasteryMap}
+                  />
                     </ErrorBoundary>
                 ) : (
                     ""

@@ -45,6 +45,21 @@ async function testAgent() {
         console.log('📏 Total messages:', agentPrompt.length);
         console.log('📏 System prompt length:', agentPrompt[0].content.length, 'characters');
         
+        // Display lesson group mastery section
+        if (requestBody.studentState.lessonGroupMastery) {
+            console.log('\n📊 Lesson Group Mastery (formatted for LLM):');
+            requestBody.studentState.lessonGroupMastery.forEach(lesson => {
+                console.log(`   - ${lesson.name}: ${lesson.mastery}%`);
+            });
+        }
+        
+        // Display full system prompt
+        console.log('\n' + '='.repeat(80));
+        console.log('📋 FULL SYSTEM PROMPT SENT TO LLM:');
+        console.log('='.repeat(80));
+        console.log(agentPrompt[0].content);
+        console.log('='.repeat(80));
+        
         // Generate AI response
         console.log('\n🤖 Calling OpenAI...');
         console.log('\n--- AI Response (Streaming) ---\n');

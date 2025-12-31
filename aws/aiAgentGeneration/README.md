@@ -1,191 +1,226 @@
-# OATutor AI Agent
+# AI Agent Data Flow Guide
 
-An intelligent chatbot agent that provides TA-like assistance to students working on OATutor math problems.
+## Overview
+This guide explains how each variable in the LLM prompt is accessed and passed through the system.
 
-## Features
+---
 
-- **Context-Aware**: Knows which problem the student is working on
-- **Personalized**: Adapts to student's skill level and learning patterns
-- **Socratic Method**: Guides students to discover answers through questions
-- **Conversation Memory**: Remembers previous interactions in the session
-- **Real-time Streaming**: Provides responses as they're generated
-
-## Architecture
+## Data Flow Chain
 
 ```
-Frontend Chat UI → Agent Helper → AWS Lambda Agent → OpenAI GPT-4.1
-                      ↓                    ↓
-                 Rich Context        DynamoDB Storage
-                 Data Collection     Conversation History
+Platform.js → ProblemWrapper → Problem.js → AgentIntegration → AgentChatbox → AgentHelper → AWS Lambda → OpenAI
 ```
 
-## Local Development
+---
 
-### Prerequisites
+## Variables Fed to LLM
 
-1. **OpenAI API Key**: Get from Professor Pardos (GPT-5 access)
-2. **Node.js**: Version 20+ 
-3. **AWS Credentials**: For DynamoDB access (optional for local testing)
+### 1. **Problem Context**
 
-### Setup
+| Variable | Source | Path |
+|----------|--------|------|
+| `problemID` | `problem.id` | Props from Platform.js → Problem.js → AgentChatbox |
+| `problemTitle` | `problem.title` | Props from Platform.js → Problem.js → AgentChatbox |
+| `problemBody` | `problem.body` | Props from Platform.js → Problem.js → AgentChatbox |
+| `courseName` | `lesson.courseName` | Props from Platform.js → Problem.js → AgentChatbox |
+| `seed` | `this.state.seed` | Platform.js state → Problem.js props → AgentChatbox |
+| `currentStep` | `getActiveStepData()` | Problem.js method → AgentChatbox calls it |
+| `totalSteps` | `problem.steps.length` | Props from Platform.js → Problem.js → AgentChatbox |
 
-1. **Install dependencies**:
-   ```bash
-   cd aws/aiAgentGeneration
-   npm install
-   ```
+**Key Method:** `AgentChatbox.getProblemContext()`
 
-2. **Set environment variables**:
-   ```bash
-   export OPENAI_API_KEY="your-openai-key"
-   export CONVERSATION_TABLE_NAME="agent-conversations"
-   ```
+---
 
-3. **Test locally**:
-   ```bash
-   node test-clean.mjs
-   ```
+### 2. **Current Step (Active Question)**
 
-### Environment Variables
+| Variable | Source | Path |
+|----------|--------|------|
+| `stepId` | `step.stepId` | Problem.js.getActiveStepData() |
+| `stepTitle` | `step.stepTitle` | Problem.js.getActiveStepData() |
+| `stepBody` | `step.stepBody` | Problem.js.getActiveStepData() |
+| `correctAnswer` | `step.correctAnswer` | Problem.js.getActiveStepData() |
+| `knowledgeComponents` | `step.knowledgeComponents` | Problem.js.getActiveStepData() |
 
-- `OPENAI_API_KEY`: Your OpenAI API key for GPT-4.1/GPT-5 access
-- `CONVERSATION_TABLE_NAME`: DynamoDB table for storing conversations (default: "agent-conversations")
-- `NODE_ENV`: Environment (development/production)
+**Key Method:** `Problem.js.getActiveStepData()`
+- Prioritizes `this.state.expandedAccordion` (currently open accordion)
+- Falls back to first incorrect step
+- Then first unanswered step
+- Finally, last step
 
-## API Usage
+---
 
-### Request Format
+### 3. **Student State**
 
+| Variable | Source | Path |
+|----------|--------|------|
+| `isCorrect` | `this.state.stepStates[stepIndex]` | Problem.js state → AgentChatbox |
+
+**Key Method:** `AgentChatbox.getStudentState()`
+
+---
+
+### 4. **Attempt History**
+
+| Variable | Source | Path |
+|----------|--------|------|
+| `attemptHistory` | `this.state.attemptHistory` | Problem.js state → AgentChatbox |
+
+**Structure:**
 ```javascript
 {
-  "sessionId": "unique-session-id",
-  "userMessage": "I don't understand how to set up the equation",
-  "problemContext": {
-    "problemID": "a01e792probsolve1",
-    "lessonID": "5pH5Clb8-w1p3-vwGhVvzSof",
-    "courseName": "OpenStax: Elementary Algebra",
-    "problemTitle": "Solve Number Problems",
-    "problemBody": "Find three consecutive integers whose sum is 24",
-    "currentStep": {
-      "id": "a01e792probsolve1a",
-      "title": "Set up the equation",
-      "body": "What equation represents the sum of three consecutive integers?",
-      "answerType": "expression",
-      "correctAnswer": "x + (x+1) + (x+2) = 24"
-    },
-    "variables": { "n": 8, "sum": 24 },
-    "seed": "1703123456789"
-  },
-  "studentState": {
-    "currentAnswer": "x + x + x = 24",
-    "isCorrect": false,
-    "attemptCount": 2,
-    "hintsUsed": ["hint1"],
-    "timeOnStep": 45,
-    "skillMastery": {
-      "linear_equations": 0.73,
-      "consecutive_integers": 0.45,
-      "algebraic_expressions": 0.82
-    },
-    "user": {
-      "user_id": "student123",
-      "full_name": "John Doe",
-      "course_name": "Math 101"
-    }
-  },
-  "conversationHistory": [],
-  "agentConfig": {
-    "teachingStyle": "socratic",
-    "personalityMode": "encouraging",
-    "maxHintLevel": 4
+  "Problem Title": {
+    "Question Text (Step Title)": ["attempt1", "attempt2", "attempt3"]
   }
 }
 ```
 
-### Response Format
+**Updated By:** `Problem.js.answerMade()`
+- Called when student submits an answer
+- Records: `attemptedAnswer` and `questionText` (step.stepTitle)
 
-The agent streams responses in real-time:
+---
 
+### 5. **Lesson Mastery**
+
+| Variable | Source | Path |
+|----------|--------|------|
+| `lessonMasteryMap` | `Platform.js.getLessonMasteryMap()` | Platform → ProblemWrapper → Problem → AgentIntegration → AgentChatbox |
+
+**Structure:**
 ```javascript
-// Content chunks
-{"type": "content", "content": "I see you're working on consecutive integers...", "timestamp": 1703123456789}
-
-// Completion signal
-{"type": "complete", "fullResponse": "Complete response text", "timestamp": 1703123456789}
+{
+  "lesson-id-1": 0.49,  // 49% mastery
+  "lesson-id-2": 0.20,  // 20% mastery
+}
 ```
 
-## Teaching Approach
+**Processed By:** `AgentChatbox.getLessonGroupMastery()`
+- Filters lessons in same main group (e.g., all Lesson 1.x)
+- Excludes lessons with mastery < 15% (not attempted)
+- Converts to array: `[{name: "Lesson 1.1 ...", mastery: 49}, ...]`
 
-The agent uses several teaching strategies:
+**Calculation:** `Platform.js.getLessonMasteryMap()`
+- Averages all KC (Knowledge Component) masteries per lesson
+- Uses `this.context.bktParams[kc].probMastery`
 
-1. **Socratic Method**: Asks guiding questions to help students discover answers
-2. **Scaffolding**: Breaks complex problems into manageable steps
-3. **Personalization**: Adapts to individual student skill levels
-4. **Encouragement**: Provides positive reinforcement and motivation
-5. **Misconception Detection**: Identifies and addresses common student errors
+---
 
-## Integration with OATutor
+### 6. **Skill Mastery (for Current Problem)**
 
-The agent integrates with the existing OATutor system by:
+| Variable | Source | Path |
+|----------|--------|------|
+| `skillMastery` | `this.bktParams` | Problem.js (from ThemeContext) → AgentChatbox |
 
-1. **Receiving rich context** from the frontend about the current problem
-2. **Accessing student mastery data** from the BKT system
-3. **Storing conversation history** in DynamoDB for session continuity
-4. **Providing streaming responses** for real-time chat experience
+**Extracted By:** `AgentChatbox.extractRelevantSkillMastery()`
+- Takes `currentStep.knowledgeComponents` (KC IDs for this problem)
+- Looks up each KC in `bktParams`
+- Returns object: `{kc1: 0.73, kc2: 0.45, ...}`
 
-## Deployment
+**Structure:**
+```javascript
+{
+  "linear_equations": 0.73,          // 73% mastery
+  "consecutive_integers": 0.45,      // 45% mastery
+  "algebraic_expressions": 0.82      // 82% mastery
+}
+```
 
-### AWS Lambda Deployment
+---
 
-1. **Package the function**:
-   ```bash
-   zip -r aiAgentGeneration.zip . -x "*.git*" "node_modules/.cache/*"
-   ```
+### 7. **BKT Parameters (Bayesian Knowledge Tracing)**
 
-2. **Deploy to AWS Lambda**:
-   - Create new Lambda function
-   - Upload the zip file
-   - Set environment variables
-   - Configure API Gateway trigger
+| Variable | Source | Path |
+|----------|--------|------|
+| `bktParams` | `this.context.bktParams` | ThemeContext → Problem.js → AgentChatbox |
 
-### DynamoDB Setup
+**Contains:**
+```javascript
+{
+  "kc_name": {
+    probMastery: 0.73,    // Current mastery probability
+    probTransit: 0.15,    // Learning rate
+    probSlip: 0.10,       // Slip probability
+    probGuess: 0.25       // Guess probability
+  }
+}
+```
 
-Create a table named `agent-conversations` with:
-- **Partition Key**: `sessionId` (String)
-- **TTL**: `ttl` (Number)
-- **Attributes**: `messages` (List), `lastUpdated` (Number)
+**Updated By:** Backend BKT algorithm when student answers questions
 
-## Future Enhancements
+---
 
-- **GPT-5 Integration**: Upgrade to GPT-5 when available
-- **Advanced Analytics**: Track learning effectiveness
-- **Multi-modal Support**: Handle images and diagrams
-- **Voice Integration**: Support voice interactions
-- **Adaptive Learning**: Improve based on student outcomes
+## Final Prompt Structure
 
-## Troubleshooting
+```
+PROBLEM CONTEXT:
+  - courseName, problemTitle, currentStep, correctAnswer
 
-### Common Issues
+STUDENT'S CURRENT STATE:
+  - isCorrect (correct/incorrect/not attempted)
 
-1. **OpenAI API Errors**: Check API key and rate limits
-2. **DynamoDB Errors**: Verify table exists and permissions
-3. **Streaming Issues**: Check response format and headers
-4. **Context Errors**: Ensure all required data is provided
+ATTEMPT HISTORY:
+  - All previous attempts per question in this problem
 
-### Debug Mode
+LESSON MASTERY:
+  - All attempted sub-lessons in same main lesson group
+  - Format: "Lesson 1.1 Order of Operations: 49%"
 
-Enable detailed logging by setting:
+RELEVANT SKILL LEVELS:
+  - KCs specific to current problem step
+  - Format: "linear_equations: 73% mastery"
+
+CRITICAL RULES & TEACHING GUIDELINES:
+  - Hardcoded prompting rules for LLM behavior
+```
+
+---
+
+## Key Differences
+
+| Feature | Lesson Mastery | Skill Mastery |
+|---------|----------------|---------------|
+| **Scope** | Entire sub-lessons (e.g., all of Lesson 1.1) | Individual KCs for current step |
+| **Granularity** | Coarse (sub-lesson level) | Fine (KC level) |
+| **Purpose** | Context about related lessons | Skill detail for this problem |
+| **Example** | "Lesson 1.1 Order of Operations: 49%" | "linear_equations: 73%" |
+| **Calculation** | Average of all KCs in sub-lesson | Direct from bktParams for step KCs |
+
+---
+
+## Testing
+
+### Browser Console:
 ```bash
-export DEBUG=agent:*
+npm start
+# Open http://localhost:3000
+# F12 → Console → Look for [getLessonGroupMastery] logs
 ```
 
-## Contributing
+### Backend Prompt:
+```bash
+cd aws/aiAgentGeneration
+node test-clean.mjs
+# See full prompt with LESSON MASTERY section
+```
 
-1. Follow the existing code style
-2. Add tests for new features
-3. Update documentation
-4. Test locally before deploying
+### AWS CloudWatch:
+```
+1. Deploy updated Lambda
+2. Use AI Tutor in browser
+3. Check CloudWatch Logs for full prompt
+```
 
-## License
+---
 
-ISC - See main OATutor repository for details.
+## Summary
+
+**All data flows through props/context:**
+1. `Platform.js` calculates lesson mastery & holds BKT params
+2. `Problem.js` tracks attempt history & current step state
+3. `AgentChatbox` aggregates everything into `problemContext` + `studentState`
+4. `AgentHelper` sends to AWS Lambda
+5. `agent-logic.mjs` builds final LLM prompt
+6. OpenAI receives complete context
+
+**Result:** LLM has full visibility into student's progress, struggles, and current problem context.
+
