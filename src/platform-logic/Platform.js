@@ -91,12 +91,15 @@ class Platform extends React.Component {
             );
 
             const { setLanguage } = this.props;
-            if (lesson.courseName == 'Matematik 4') {
-                setLanguage('se')
-            } else {
-                const defaultLocale = localStorage.getItem('defaultLocale');
-                setLanguage(defaultLocale)
-            }
+            const language = lesson.language || localStorage.getItem('defaultLocale');
+            setLanguage(language);
+
+            // if (lesson.courseName == 'Matematik 4') {
+            //     setLanguage('se')
+            // } else {
+            //     const defaultLocale = localStorage.getItem('defaultLocale');
+            //     setLanguage(defaultLocale)
+            // }
         } else if (this.props.courseNum != null) {
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
