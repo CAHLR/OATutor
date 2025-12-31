@@ -6,12 +6,6 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
             .join('\n')
         : 'No skill mastery data available for this step';
 
-    // Format hints used
-    const hintsText = studentState.hintsUsed?.length > 0 
-        ? `${studentState.hintsUsed.length} hint(s) viewed` 
-        : 'No hints viewed yet';
-
-    // Format answer correctness
     const correctnessText = studentState.isCorrect === null 
         ? 'Not attempted yet' 
         : studentState.isCorrect 
@@ -32,6 +26,14 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
         attemptHistoryText = histories.length > 0 ? histories.join('\n\n') : 'No previous attempts recorded';
     }
 
+    // Format lesson group mastery
+    let lessonGroupMasteryText = 'No lesson mastery data available';
+    if (studentState.lessonGroupMastery && studentState.lessonGroupMastery.length > 0) {
+        lessonGroupMasteryText = studentState.lessonGroupMastery
+            .map(lesson => `- ${lesson.name}: ${lesson.mastery}%`)
+            .join('\n');
+    }
+
     const systemPrompt = `You are an expert math tutor helping a student with an OATutor problem.
 
 PROBLEM CONTEXT:
@@ -47,12 +49,13 @@ Correct Answer: ${Array.isArray(problemContext.currentStep?.correctAnswer)
     : problemContext.currentStep?.correctAnswer || 'Not provided'}
 
 STUDENT'S CURRENT STATE:
-Their Answer: "${studentState.currentAnswer || 'No answer provided yet'}"
 Status: ${correctnessText}
-Hints: ${hintsText}
 
 ATTEMPT HISTORY (all questions in this problem):
 ${attemptHistoryText}
+
+LESSON MASTERY (sub-lessons student has attempted):
+${lessonGroupMasteryText}
 
 RELEVANT SKILL LEVELS FOR THIS PROBLEM:
 ${skillMasteryText}
@@ -72,8 +75,6 @@ TEACHING GUIDELINES:
 - Break problems into smaller steps when needed
 - Acknowledge their effort and progress
 - Use the attempt history to understand what mistakes they've made before
-
-NOTE: If "Their Answer" shows "No answer provided yet", ask the student what they tried or what they're stuck on.
 
 Student asks: "${userMessage}"
 

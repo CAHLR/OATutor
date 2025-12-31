@@ -24,8 +24,7 @@ export class AgentHelper {
     }
 
     /**
-     * Build request payload with ONLY real data from Problem.js and ProblemCard.js
-     * No fabricated data!
+     * Build request payload from Problem.js and ProblemCard.js
      */
     buildAgentRequest(userMessage, problemContext, studentState) {
         const request = {

@@ -825,6 +825,7 @@ class Platform extends React.Component {
                     lessonID={this.props.lessonID}
                     displayMastery={this.displayMastery}
                     drawerOpen={this.state.drawerOpen}
+                    lessonMasteryMap={lessonMasteryMap}
                   />
                 </div>
               </ErrorBoundary>
