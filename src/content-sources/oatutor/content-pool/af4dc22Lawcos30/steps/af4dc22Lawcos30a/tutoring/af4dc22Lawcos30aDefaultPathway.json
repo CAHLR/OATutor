@@ -1,0 +1,53 @@
+[
+    {
+        "id": "af4dc22Lawcos30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Picture",
+        "text": "First try to draw a triangle given the description and see which sides and angles are given to us.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af4dc22Lawcos30a-h1"
+        ],
+        "title": "Law of Cosines",
+        "text": "How could we use the law of cosines to find the length of the third side?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4dc22Lawcos30a-h2"
+        ],
+        "title": "Side",
+        "text": "Which side length are we solving for? What is the formula to find the side length using the law of cosines? (It is a generalized version of the pythagorean theorem)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos30a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "af4dc22Lawcos30a-h3"
+        ],
+        "title": "Final answer",
+        "text": "After simplifying the equation using the law of cosines what is our side length rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

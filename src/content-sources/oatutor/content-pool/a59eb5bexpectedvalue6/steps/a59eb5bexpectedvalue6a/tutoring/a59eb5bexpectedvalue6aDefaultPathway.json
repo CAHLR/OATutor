@@ -1,0 +1,137 @@
+[
+    {
+        "id": "a59eb5bexpectedvalue6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How to Calculate Expected Value",
+        "text": "Expected value, or the long-term average or mean can be calculated as the overall summation of each individual possible value of the random variable multiplied by the probability in the sample space of that outcome. Therefore, if we have a random variable X, the expected value of X can be calculated as the summation of all possible outcomes $$x$$ by the probability of $$x$$, $$x P\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$, $$256$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h1"
+        ],
+        "title": "Determining Possible Outcomes",
+        "text": "First, we need to determine the possible outcomes (how much profit) you can earn from the game. What are the possible outcomes?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-1$$, $$256$$",
+            "$$0$$, $$256$$",
+            "$$0$$, $$255$$",
+            "$$-1$$, $$255$$"
+        ]
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{256}$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h2"
+        ],
+        "title": "Determining Probability of $256",
+        "text": "Determine the probability of earning $256 in profit. This means that for all four cards, you guess their suit correctly.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a59eb5bexpectedvalue6a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{1}{256}$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Probability of $256",
+                "text": "The probability of guessing the suit correctly is $$\\frac{1}{4}$$ since there are $$4$$ suits, each with an even number of cards. Then, we need to guess correctly $$4$$ times. Therefore, we have to take $$\\frac{1}{4}$$ to the power of $$4$$. What is $$\\frac{1}{4}$$ to the power of 4?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{255}{256}$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h3"
+        ],
+        "title": "Determining Probability of -$1",
+        "text": "Determine the probability of earning -$1 in profit. This means that you did NOT get all four suits correct. Hint: this is the complement rule applied to the previous step.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h4"
+        ],
+        "title": "$$x P\\left(x\\right)$$ for $$x=256$$",
+        "text": "Determine $$x P\\left(x\\right)$$ for $$x=\\$256$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-255}{256}$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h5"
+        ],
+        "title": "$$x P\\left(x\\right)$$ for $$x=-1$$",
+        "text": "Determine $$x P\\left(x\\right)$$ for $$x=-\\$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a59eb5bexpectedvalue6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{256}$$"
+        ],
+        "dependencies": [
+            "a59eb5bexpectedvalue6a-h6"
+        ],
+        "title": "Summation of $$x P\\left(x\\right)$$",
+        "text": "To find the expected value, sum up the answers for $$x P\\left(x\\right)$$ for $$x=\\$256$$ and $$x=-\\$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a095e7dlog25a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "left"
+        ],
+        "dependencies": [],
+        "title": "Lets apply and think about the horizontal shift first. Are we shifting left by $$2$$ or right by 2?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "left",
+            "right"
+        ]
+    },
+    {
+        "id": "a095e7dlog25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a095e7dlog25a-h1"
+        ],
+        "title": "Now, solve for the new lower bound of the domain. What is the value?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a095e7dlog25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a095e7dlog25a-h2"
+        ],
+        "title": "Afterwards, apply a vertical stretch of $$5$$. Does this change the value of the domain? Think about this carefully.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

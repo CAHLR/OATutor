@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a28896cdef6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Tangent Line Equation",
+        "text": "The tangent line to f(x) at a is the line passing through the point (a,f(a)) having slope $$\\lim_{h\\to0} \\frac{f{\\left(a+h\\right)}-f{\\left(a\\right)}}{h}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a28896cdef6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a28896cdef6a-h1"
+        ],
+        "title": "Plugging In",
+        "text": "As $$a=2$$ in this equation, plug $$2$$ into every f(a).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a28896cdef6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a28896cdef6a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the resulting equation: $$\\frac{3-4\\left(2+h\\right)-\\left(-4\\times2\\right)}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

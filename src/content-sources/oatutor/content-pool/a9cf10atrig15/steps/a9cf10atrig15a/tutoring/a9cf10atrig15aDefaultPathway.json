@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a9cf10atrig15a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "For the real numbers: division by $$0$$, square root of a negative, log of something less than or equal to $$0$$"
+        ],
+        "dependencies": [],
+        "title": "Definition",
+        "text": "When is a function undefined at a certain point?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "For the real numbers: division by $$0$$, square root of a negative, log of something less than or equal to $$0$$",
+            "For the real numbers: division by $$0$$, square root of a negative",
+            "For the real numbers: division by $$0$$ only"
+        ]
+    },
+    {
+        "id": "a9cf10atrig15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig15a-h1"
+        ],
+        "title": "Identity",
+        "text": "$$sect=\\frac{1}{cost}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig15a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "$$cost=0$$ at $$t=\\frac{\\pi}{2}+n \\pi$$, for any integer $$n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig15a-h3"
+        ],
+        "title": "Substitute",
+        "text": "So, we have that $$sect=\\frac{1}{0}$$ at $$t=\\frac{\\pi}{2}+n \\pi$$ for any integer $$n$$, making sect undefined at these points.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

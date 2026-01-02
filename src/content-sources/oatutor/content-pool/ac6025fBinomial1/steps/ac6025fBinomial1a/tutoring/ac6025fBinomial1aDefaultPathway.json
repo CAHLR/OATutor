@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ac6025fBinomial1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Success Example",
+        "text": "At ABC College, the withdrawal rate from an elementary physics course is 30% for any given term. This implies that, for any given term, 70% of the students stay in the class for the entire term. A \"success\" could be defined as an individual who withdrew.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac6025fBinomial1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac6025fBinomial1a-h1"
+        ],
+        "title": "Binomial Distributions",
+        "text": "Since our distribution is Binomial, we can think of our distribution as being a series of Bernoulli trials. What would a success look like in a Bernoulli trial? Is it the same as a success in our Binomial trial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac6025fBinomial1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A school lunch having fruit."
+        ],
+        "dependencies": [
+            "ac6025fBinomial1a-h2"
+        ],
+        "title": "Answer",
+        "text": "With the example fresh in our minds, what is our final answer going to be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "A school lunch having fruit.",
+            "A school lunch not having fruit."
+        ]
+    }
+]
