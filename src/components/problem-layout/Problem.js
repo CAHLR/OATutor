@@ -767,4 +767,4 @@ class Problem extends React.Component {
     }
 }
 
-export default withStyles(styles)(withTranslation(Problem));
+export default withTranslation()(withStyles(styles)(Problem));
