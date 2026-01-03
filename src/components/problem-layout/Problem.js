@@ -44,6 +44,9 @@ class Problem extends React.Component {
     constructor(props, context) {
         super(props);
 
+        const { setLanguage } = props;
+        setLanguage(props.lesson.language);
+
         this.bktParams = context.bktParams;
         this.heuristic = context.heuristic;
 
