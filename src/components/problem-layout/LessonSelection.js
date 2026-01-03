@@ -63,6 +63,15 @@ class LessonSelection extends React.Component {
         this.setState({ preparedRemoveProgress: true });
     }
 
+    handleCourseSelect = (course, courseIndex) => {
+        const { setLanguage, history } = this.props;
+
+        setLanguage(course.language);
+        localStorage.setItem("defaultLocale", course.language); 
+
+        history.push(`/courses/${courseIndex}`);
+    };
+
     render() {
         const { translate } = this.props;
         const { classes, courseNum } = this.props;
@@ -116,9 +125,11 @@ class LessonSelection extends React.Component {
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
                                                             role={"link"}
-                                                            onClick={() => {
-                                                                this.props.history.push(`/courses/${i}`)
-                                                            }}>
+                                                            // onClick={() => {
+                                                            //     this.props.history.push(`/courses/${i}`)
+                                                            // }}
+                                                            onClick={() => this.handleCourseSelect(course, i)}
+                                                            >
                                                             <img
                                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
                                                                 width="64px"

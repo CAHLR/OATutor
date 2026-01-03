@@ -92,7 +92,7 @@ class Platform extends React.Component {
             );
 
             const { setLanguage } = this.props;
-            const language = lesson.language || localStorage.getItem('defaultLocale');
+            const language = localStorage.getItem("defaultLocale") || "en";
             setLanguage(language);
 
         } else if (this.props.courseNum != null) {
