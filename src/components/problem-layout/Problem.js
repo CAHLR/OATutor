@@ -44,9 +44,6 @@ class Problem extends React.Component {
     constructor(props, context) {
         super(props);
 
-        const { setLanguage } = props;
-        setLanguage(props.lesson.language);
-
         this.bktParams = context.bktParams;
         this.heuristic = context.heuristic;
 
@@ -84,7 +81,9 @@ class Problem extends React.Component {
     }
 
     componentDidMount() {
-        const { lesson } = this.props;
+        const { lesson, setLanguage } = this.props;
+        setLanguage(lesson.language);
+
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
