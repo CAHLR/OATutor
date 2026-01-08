@@ -94,10 +94,9 @@ Platform.js → ProblemWrapper → Problem.js → AgentIntegration → AgentChat
 }
 ```
 
-**Processed By:** `AgentChatbox.getLessonGroupMastery()`
-- Filters lessons in same main group (e.g., all Lesson 1.x)
-- Excludes lessons with mastery < 15% (not attempted)
-- Converts to array: `[{name: "Lesson 1.1 ...", mastery: 49}, ...]`
+**Processed By:** `AgentChatbox.getCurrentLessonMastery()`
+- Gets mastery for current lesson (e.g., Lesson 1.2)
+- Returns single percentage value
 
 **Calculation:** `Platform.js.getLessonMasteryMap()`
 - Averages all KC (Knowledge Component) masteries per lesson
@@ -161,9 +160,9 @@ STUDENT'S CURRENT STATE:
 ATTEMPT HISTORY:
   - All previous attempts per question in this problem
 
-LESSON MASTERY:
-  - All attempted sub-lessons in same main lesson group
-  - Format: "Lesson 1.1 Order of Operations: 49%"
+CURRENT LESSON MASTERY:
+  - Single percentage for current lesson only
+  - Format: "58%"
 
 RELEVANT SKILL LEVELS:
   - KCs specific to current problem step
@@ -219,8 +218,72 @@ node test-clean.mjs
 2. `Problem.js` tracks attempt history & current step state
 3. `AgentChatbox` aggregates everything into `problemContext` + `studentState`
 4. `AgentHelper` sends to AWS Lambda
-5. `agent-logic.mjs` builds final LLM prompt
+5. `agent-logic.mjs` loads template from `prompt.txt` and builds final LLM prompt
 6. OpenAI receives complete context
 
 **Result:** LLM has full visibility into student's progress, struggles, and current problem context.
+
+
+---
+
+## System Prompt
+
+**Template file:** [`aws/aiAgentGeneration/prompt.txt`](./prompt.txt)
+
+**What the LLM actually sees:**
+
+```
+You are an expert math tutor helping a student with an OATutor problem.
+
+PROBLEM CONTEXT:
+Course: OpenStax: Elementary Algebra
+Problem: Solve Number Problems
+
+CURRENT STEP:
+Question: Set up the equation
+Details: What equation represents the sum of three consecutive integers?
+Correct Answer: x + (x+1) + (x+2) = 24
+
+STUDENT'S CURRENT STATE:
+Status: Incorrect
+
+ATTEMPT HISTORY (all questions in this problem):
+  Question: "Set up the equation"
+  Most recent attempt: 3x = 24
+  Previous attempts: x + x + x = 24
+
+  Question: "What is x?"
+  Most recent attempt: 8
+  Previous attempts: 7
+
+CURRENT LESSON MASTERY:
+Lesson 2.5 Solving One-Variable Equations: 58%
+
+RELEVANT SKILL LEVELS FOR THIS PROBLEM:
+- linear_equations: 73% mastery
+- consecutive_integers: 45% mastery
+- algebraic_expressions: 82% mastery
+
+CRITICAL RULES - YOU MUST FOLLOW THESE:
+- NEVER reveal the final answer, even if asked directly
+- NEVER complete the final calculation - always ask them to do it
+- Guide them to the last step, then prompt: "What do you get?" or "Can you calculate that?"
+- If asked to "walk through it", break it into steps but Stop ONE step before the final answer - let THEM do the last calculation
+
+TEACHING GUIDELINES:
+- Use the Socratic method - ask guiding questions
+- Help them discover the answer, don't just give it
+- Be encouraging and patient
+- Reference their most recent attempt when providing guidance
+- Look at their previous attempts to identify patterns in their thinking
+- Break problems into smaller steps when needed
+- Acknowledge their effort and progress
+- Use the attempt history to understand what mistakes they've made before
+- If they seem stuck, ask clarifying questions about their approach
+
+Student asks: "I don't understand how to set up the equation for this problem"
+
+Provide helpful, step-by-step guidance.
+```
+
 

@@ -1,32 +1,41 @@
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory }) {
+    // Load prompt template
+    const promptTemplate = readFileSync(join(__dirname, 'prompt.txt'), 'utf-8');
+    
+    // Format skill mastery
     const skillMasteryText = studentState.skillMastery && Object.keys(studentState.skillMastery).length > 0
         ? Object.entries(studentState.skillMastery)
             .map(([skill, level]) => `- ${skill}: ${(level * 100).toFixed(0)}% mastery`)
             .join('\n')
         : 'No skill mastery data available for this step';
 
+    // Format hints used
+    const hintsText = studentState.hintsUsed?.length > 0 
+        ? `${studentState.hintsUsed.length} hint(s) viewed` 
+        : 'No hints viewed yet';
+
+    // Format answer correctness
     const correctnessText = studentState.isCorrect === null 
         ? 'Not attempted yet' 
         : studentState.isCorrect 
             ? 'Correct' 
             : 'Incorrect';
 
-    // Format attempt history with most recent attempt highlighted
+    // Format attempt history
     let attemptHistoryText = 'No previous attempts recorded';
     if (studentState.attemptHistory && Object.keys(studentState.attemptHistory).length > 0) {
         const histories = [];
         for (const [problemTitle, questions] of Object.entries(studentState.attemptHistory)) {
             for (const [question, attempts] of Object.entries(questions)) {
                 if (attempts.length > 0) {
-                    const mostRecent = attempts[attempts.length - 1];
-                    const previous = attempts.slice(0, -1);
-                    
-                    let historyText = `  Question: "${question}"\n  Most recent attempt: ${mostRecent}`;
-                    if (previous.length > 0) {
-                        historyText += `\n  Previous attempts: ${previous.join(', ')}`;
-                    }
-                    histories.push(historyText);
+                    histories.push(`  Question: "${question}"\n  Attempts: ${attempts.join(', ')}`);
                 }
             }
         }
@@ -41,52 +50,22 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
             .join('\n');
     }
 
-    const systemPrompt = `You are an expert math tutor helping a student with an OATutor problem.
-
-PROBLEM CONTEXT:
-Course: ${problemContext.courseName || 'Math'}
-Problem: ${problemContext.problemTitle || 'Math Problem'}
-
-CURRENT STEP:
-Question: ${problemContext.currentStep?.title || 'Problem Step'}
-${problemContext.currentStep?.body ? `Details: ${problemContext.currentStep.body}` : ''}
-
-Correct Answer: ${Array.isArray(problemContext.currentStep?.correctAnswer) 
-    ? problemContext.currentStep.correctAnswer[0] 
-    : problemContext.currentStep?.correctAnswer || 'Not provided'}
-
-STUDENT'S CURRENT STATE:
-Status: ${correctnessText}
-
-ATTEMPT HISTORY (all questions in this problem):
-${attemptHistoryText}
-
-CURRENT LESSON MASTERY:
-${currentLessonMasteryText}
-
-RELEVANT SKILL LEVELS FOR THIS PROBLEM:
-${skillMasteryText}
-
-CRITICAL RULES - YOU MUST FOLLOW THESE:
-- NEVER reveal the final answer, even if asked directly
-- NEVER complete the final calculation - always ask them to do it
-- Guide them to the last step, then prompt: "What do you get?" or "Can you calculate that?"
-- If asked to "walk through it", break it into steps but Stop ONE step before the final answer - let THEM do the last calculation
-
-TEACHING GUIDELINES:
-- Use the Socratic method - ask guiding questions
-- Help them discover the answer, don't just give it
-- Be encouraging and patient
-- Reference their most recent attempt when providing guidance
-- Look at their previous attempts to identify patterns in their thinking
-- Break problems into smaller steps when needed
-- Acknowledge their effort and progress
-- Use the attempt history to understand what mistakes they've made before
-- If they seem stuck, ask clarifying questions about their approach
-
-Student asks: "${userMessage}"
-
-Provide helpful, step-by-step guidance.`;
+    // Build system prompt by replacing placeholders
+    const systemPrompt = promptTemplate
+        .replace('{courseName}', problemContext.courseName || 'Math')
+        .replace('{problemTitle}', problemContext.problemTitle || 'Math Problem')
+        .replace('{stepTitle}', problemContext.currentStep?.title || 'Problem Step')
+        .replace('{stepBody}', problemContext.currentStep?.body ? `Details: ${problemContext.currentStep.body}` : '')
+        .replace('{correctAnswer}', Array.isArray(problemContext.currentStep?.correctAnswer) 
+            ? problemContext.currentStep.correctAnswer[0] 
+            : problemContext.currentStep?.correctAnswer || 'Not provided')
+        .replace('{studentAnswer}', studentState.currentAnswer || 'No answer provided yet')
+        .replace('{correctnessStatus}', correctnessText)
+        .replace('{hintsUsed}', hintsText)
+        .replace('{attemptHistory}', attemptHistoryText)
+        .replace('{currentLessonMastery}', currentLessonMasteryText)
+        .replace('{skillMastery}', skillMasteryText)
+        .replace('{userMessage}', userMessage);
 
     // Build message array with conversation history
     const messages = [
