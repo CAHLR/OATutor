@@ -12,14 +12,21 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
             ? 'Correct' 
             : 'Incorrect';
 
-    // Format attempt history
+    // Format attempt history with most recent attempt highlighted
     let attemptHistoryText = 'No previous attempts recorded';
     if (studentState.attemptHistory && Object.keys(studentState.attemptHistory).length > 0) {
         const histories = [];
         for (const [problemTitle, questions] of Object.entries(studentState.attemptHistory)) {
             for (const [question, attempts] of Object.entries(questions)) {
                 if (attempts.length > 0) {
-                    histories.push(`  Question: "${question}"\n  Attempts: ${attempts.join(', ')}`);
+                    const mostRecent = attempts[attempts.length - 1];
+                    const previous = attempts.slice(0, -1);
+                    
+                    let historyText = `  Question: "${question}"\n  Most recent attempt: ${mostRecent}`;
+                    if (previous.length > 0) {
+                        historyText += `\n  Previous attempts: ${previous.join(', ')}`;
+                    }
+                    histories.push(historyText);
                 }
             }
         }
@@ -70,11 +77,12 @@ TEACHING GUIDELINES:
 - Use the Socratic method - ask guiding questions
 - Help them discover the answer, don't just give it
 - Be encouraging and patient
-- If you know their answer, reference it and where they might have gone wrong
-- If you don't know their answer, ask them what they got or what they're confused about
+- Reference their most recent attempt when providing guidance
+- Look at their previous attempts to identify patterns in their thinking
 - Break problems into smaller steps when needed
 - Acknowledge their effort and progress
 - Use the attempt history to understand what mistakes they've made before
+- If they seem stuck, ask clarifying questions about their approach
 
 Student asks: "${userMessage}"
 
