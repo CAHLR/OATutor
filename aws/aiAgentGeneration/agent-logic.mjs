@@ -33,10 +33,10 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
         attemptHistoryText = histories.length > 0 ? histories.join('\n\n') : 'No previous attempts recorded';
     }
 
-    // Format lesson group mastery
-    let lessonGroupMasteryText = 'No lesson mastery data available';
-    if (studentState.lessonGroupMastery && studentState.lessonGroupMastery.length > 0) {
-        lessonGroupMasteryText = studentState.lessonGroupMastery
+    // Format current lesson mastery
+    let currentLessonMasteryText = 'No lesson mastery data available (student has not attempted this lesson yet)';
+    if (studentState.currentLessonMastery && studentState.currentLessonMastery.length > 0) {
+        currentLessonMasteryText = studentState.currentLessonMastery
             .map(lesson => `- ${lesson.name}: ${lesson.mastery}%`)
             .join('\n');
     }
@@ -61,8 +61,8 @@ Status: ${correctnessText}
 ATTEMPT HISTORY (all questions in this problem):
 ${attemptHistoryText}
 
-LESSON MASTERY (sub-lessons student has attempted):
-${lessonGroupMasteryText}
+CURRENT LESSON MASTERY:
+${currentLessonMasteryText}
 
 RELEVANT SKILL LEVELS FOR THIS PROBLEM:
 ${skillMasteryText}

@@ -18,7 +18,6 @@ import {
     Android as BotIcon,
     Delete as DeleteIcon
 } from '@material-ui/icons';
-import { coursePlans } from '../../config/config';
 
 const styles = (theme) => ({
     chatContainer: {
@@ -399,14 +398,14 @@ class AgentChatbox extends React.Component {
             bktParams
         );
 
-        // Get mastery for all sub-lessons in the same main lesson group
-        const lessonGroupMastery = this.getLessonGroupMastery();
+        // Get mastery for the current lesson
+        const currentLessonMastery = this.getCurrentLessonMastery();
 
         return {
             isCorrect: isCorrect,
             skillMastery: skillMastery,
             attemptHistory: attemptHistory || {},
-            lessonGroupMastery: lessonGroupMastery
+            currentLessonMastery: currentLessonMastery
         };
     }
 
@@ -429,68 +428,29 @@ class AgentChatbox extends React.Component {
     }
 
     /**
-     * Extract main lesson number from lesson name
-     * E.g., "Lesson 2.5" -> "2", "Lesson 10.3" -> "10"
+     * Get mastery for the CURRENT lesson only (no grouping)
+     * Returns array with 0 or 1 element: [{ name: "Lesson 1.1 Order of Operations", mastery: 49 }]
      */
-    extractMainLessonNumber(lessonName) {
-        if (!lessonName) return null;
-        const match = lessonName.match(/Lesson\s*(\d+)\.\d+/i);
-        return match ? match[1] : null;
-    }
-
-    /**
-     * Get mastery for all sub-lessons in the same main lesson group using pre-calculated data
-     * Returns array like: [{ name: "Lesson 1.1 Order of Operations", mastery: 49 }, ...]
-     */
-    getLessonGroupMastery() {
+    getCurrentLessonMastery() {
         const { lesson, lessonMasteryMap } = this.props;
         
-        console.log('[getLessonGroupMastery] lessonMasteryMap:', lessonMasteryMap);
-        
-        if (!lesson || !lesson.courseName || !lessonMasteryMap) {
-            console.log('[getLessonGroupMastery] Missing data, returning []');
+        if (!lesson || !lesson.id || !lessonMasteryMap) {
             return [];
         }
 
-        // Find the course
-        const course = coursePlans.find(c => c.courseName === lesson.courseName);
-        if (!course) {
-            console.log('[getLessonGroupMastery] Course not found:', lesson.courseName);
-            return [];
-        }
-
-        // Extract main lesson number from current lesson (e.g., "1" from "Lesson 1.3")
-        const mainLessonNum = this.extractMainLessonNumber(lesson.name);
-        console.log('[getLessonGroupMastery] mainLessonNum:', mainLessonNum);
-        if (!mainLessonNum) return [];
-
-        // Get all sub-lessons in the same main lesson group
-        const lessonGroupMastery = [];
+        // Get mastery for current lesson only
+        const mastery = lessonMasteryMap[lesson.id];
         
-        for (const subLesson of course.lessons) {
-            const subLessonNum = this.extractMainLessonNumber(subLesson.name);
-            
-            // Only include sub-lessons in the same main lesson group
-            if (subLessonNum === mainLessonNum) {
-                const mastery = lessonMasteryMap[subLesson.id];
-                
-                // Only include if mastery > 0.15 (student has attempted)
-                // This filters out the ~10% BKT baseline for unattempted lessons
-                if (mastery && mastery > 0.15) {
-                    const entry = {
-                        name: `${subLesson.name} ${subLesson.topics}`,
-                        mastery: Math.round(mastery * 100) // As percentage
-                    };
-                    console.log('[getLessonGroupMastery] Adding:', entry);
-                    lessonGroupMastery.push(entry);
-                } else {
-                    console.log('[getLessonGroupMastery] Skipping:', subLesson.name, 'mastery:', Math.round((mastery || 0) * 100) + '%');
-                }
-            }
+        // Only include if mastery > 0.15 (student has attempted)
+        // This filters out the ~10% BKT baseline for unattempted lessons
+        if (mastery && mastery > 0.15) {
+            return [{
+                name: `${lesson.name} ${lesson.topics}`,
+                mastery: Math.round(mastery * 100)
+            }];
         }
-
-        console.log('[getLessonGroupMastery] Final result:', lessonGroupMastery);
-        return lessonGroupMastery;
+        
+        return [];
     }
 
     render() {
