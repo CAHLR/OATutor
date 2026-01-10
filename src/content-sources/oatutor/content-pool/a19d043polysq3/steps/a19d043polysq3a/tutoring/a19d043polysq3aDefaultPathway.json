@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a19d043polysq3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square",
+        "text": "We can use the formula $$\\left(a+b\\right)^2=a^2+2ab+b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8x$$"
+        ],
+        "dependencies": [
+            "a19d043polysq3a-h1"
+        ],
+        "title": "Finding a",
+        "text": "What is the a in this case?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$8x$$",
+            "$$8$$",
+            "$$2$$",
+            "$$-2$$"
+        ]
+    },
+    {
+        "id": "a19d043polysq3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a19d043polysq3a-h1"
+        ],
+        "title": "Finding $$b$$",
+        "text": "What is the $$b$$ in this case?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64x^2$$"
+        ],
+        "dependencies": [
+            "a19d043polysq3a-h2"
+        ],
+        "title": "Finding $$a^2$$",
+        "text": "What is $$a^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$64$$",
+            "$$\\left(64x\\right)^2$$",
+            "$$64x^2$$"
+        ]
+    },
+    {
+        "id": "a19d043polysq3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a19d043polysq3a-h3"
+        ],
+        "title": "Finding $$b^2$$",
+        "text": "What is $$b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq3a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-32x$$"
+        ],
+        "dependencies": [
+            "a19d043polysq3a-h2",
+            "a19d043polysq3a-h3"
+        ],
+        "title": "Finding 2ab",
+        "text": "What is 2ab?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$32x$$",
+            "$$-32x$$",
+            "$$-64x$$",
+            "$$64x$$"
+        ]
+    }
+]

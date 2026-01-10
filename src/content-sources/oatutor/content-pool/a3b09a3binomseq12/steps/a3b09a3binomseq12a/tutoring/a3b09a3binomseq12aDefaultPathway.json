@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a3b09a3binomseq12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equation",
+        "text": "Use the equation C(n,r)=(n!)/(r!(n-r)!) to solve",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3b09a3binomseq12a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug In Values",
+        "text": "Plug in the values to the equation",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3b09a3binomseq12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$362880$$"
+        ],
+        "dependencies": [],
+        "title": "Solve For the Numerator",
+        "text": "What is 9!?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3b09a3binomseq12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5040$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq12a-h3"
+        ],
+        "title": "Solve For the Denominator: Part $$1$$",
+        "text": "What is 7!?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3b09a3binomseq12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq12a-h4"
+        ],
+        "title": "Solve For the Denominator: Part $$2$$",
+        "text": "What is $$(9-7)!$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3b09a3binomseq12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36$$"
+        ],
+        "dependencies": [
+            "a3b09a3binomseq12a-h5"
+        ],
+        "title": "Solve",
+        "text": "What is $$\\frac{362880}{5040\\times2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

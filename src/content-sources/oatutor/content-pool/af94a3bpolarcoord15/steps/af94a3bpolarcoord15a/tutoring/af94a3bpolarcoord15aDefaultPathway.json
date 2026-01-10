@@ -1,0 +1,57 @@
+[
+    {
+        "id": "af94a3bpolarcoord15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall Rectangular to Polar Conversions",
+        "text": "Use $$r=\\sqrt{x^2+y^2}$$ and $$theta=\\arctan\\left(\\frac{y}{x}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af94a3bpolarcoord15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sqrt{269}$$"
+        ],
+        "dependencies": [
+            "af94a3bpolarcoord15a-h1"
+        ],
+        "title": "Find $$r$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-23$$",
+            "$$13$$",
+            "$$\\sqrt{269}$$"
+        ]
+    },
+    {
+        "id": "af94a3bpolarcoord15a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant III"
+        ],
+        "dependencies": [
+            "af94a3bpolarcoord15a-h2"
+        ],
+        "title": "Determine Quadrant and Adjust Angle",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    }
+]

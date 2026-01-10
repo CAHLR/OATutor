@@ -1,0 +1,269 @@
+[
+    {
+        "id": "ab6a46ageo1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explicit Formula for a Geometric Sequence\\n",
+        "text": "Plug in the two terms into the explicit formula of a geometric sequence: $$a_n=a_1 r^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h1"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence\\n",
+        "text": "Plug in $$a_7=64$$ into the formula to obtain $$a_7=a_1 r^{7-1}$$, which simplifies to $$64=a_1 r^6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h1"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence\\n",
+        "text": "Plug in $$a_{10}=512$$ into the formula to obtain $$a_{10}=a_1 r^{10-1}$$, which simplifies to $$512=a_1 r^9$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h2",
+            "ab6a46ageo1a-h3"
+        ],
+        "title": "Systems of Equations",
+        "text": "Since both equations contain $$a_1$$, divide the equations from one another to solve for $$r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8=r^3$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h4"
+        ],
+        "title": "Systems of Equations",
+        "text": "What is the equation obtained for (512=a_1*r**9)/(64=a_1*r**6)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ab6a46ageo1a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$2$$"
+                ],
+                "dependencies": [],
+                "title": "Solve for $$r$$",
+                "text": "What is $$r$$ if $$r=\\sqrt[3]{8}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ab6a46ageo1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h5"
+        ],
+        "title": "Solve for $$a_1$$",
+        "text": "Since $$r=2$$, substitute $$2$$ into $$64=a_1 r^6$$ to find $$a_1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h6"
+        ],
+        "title": "Solve for $$a_1$$",
+        "text": "What is $$a_1=\\frac{64}{2^6}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h5",
+            "ab6a46ageo1a-h7"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence",
+        "text": "Since $$r=2$$ and $$a_1=1$$, substitute $$2$$ and $$1$$ into $$a_n=a_1 r^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h8"
+        ],
+        "title": "Explicit Formula for a Geometric Sequence",
+        "text": "The formula for this geometric sequence is $$a_n=1\\times2^{n-1}$$ which simplifies to $$a_n=2^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h9"
+        ],
+        "title": "Find $$a_2$$",
+        "text": "To find the second term, let $$n=2$$ and plug in $$2$$ into $$a_n=2^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h10"
+        ],
+        "title": "Find $$a_2$$",
+        "text": "What is $$a_2=2^{2-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h12",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h9"
+        ],
+        "title": "Find $$a_3$$",
+        "text": "To find the third term, let $$n=3$$ and plug in $$3$$ into $$a_n=2^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h12"
+        ],
+        "title": "Find $$a_3$$",
+        "text": "What is $$a_3=2^{3-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h14",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h9"
+        ],
+        "title": "Find $$a_4$$",
+        "text": "To find the fourth term, let $$n=4$$ and plug in $$4$$ into $$a_n=2^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h14"
+        ],
+        "title": "Find $$a_4$$",
+        "text": "What is $$a_4=2^{4-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h16",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h9"
+        ],
+        "title": "Find $$a_5$$",
+        "text": "To find the fifth term, let $$n=5$$ and plug in $$5$$ into $$a_n=2^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h17",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo1a-h16"
+        ],
+        "title": "Find $$a_5$$",
+        "text": "What is $$a_5=2^{5-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo1a-h18",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo1a-h7",
+            "ab6a46ageo1a-h11",
+            "ab6a46ageo1a-h13",
+            "ab6a46ageo1a-h15",
+            "ab6a46ageo1a-h17"
+        ],
+        "title": "First $$5$$ terms",
+        "text": "The first five terms are 1,2,4,8,16.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

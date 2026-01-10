@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a41316cmatrices27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Detemine if Multipliable",
+        "text": "Two matrices are Multipliable(able to be multiplied) if their inner dimensions are the same. Since A is 2x2 and B is 2x2, the matrices can be multiplied.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41316cmatrices27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a41316cmatrices27a-h1"
+        ],
+        "title": "Following the Algorithm",
+        "text": "Follow the algorithm for multiplying matrices to get the final matrix.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41316cmatrices27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a41316cmatrices27a-h2"
+        ],
+        "title": "Matrix Multiplication Operations",
+        "text": "The operations for multiplying the matrices are as follows: $$\\begin{bmatrix} -10\\times40+20\\times-20 & -10\\times10+20\\times30 \\\\ 5\\times40+25\\times-20 & 5\\times10+25\\times30 \\end{bmatrix}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41316cmatrices27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} -800 & 500 \\\\ -300 & 800 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a41316cmatrices27a-h3"
+        ],
+        "title": "Simplifying Operations",
+        "text": "Simplify these operations: $$\\begin{bmatrix} -10\\times40+20\\times-20 & -10\\times10+20\\times30 \\\\ 5\\times40+25\\times-20 & 5\\times10+25\\times30 \\end{bmatrix}$$. What do you get as your final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "ad1dfa0problem20d-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.8$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Bacterium's Weight",
+        "text": "What is weight W of the bacterium given by: $$W=m g=(1.00$$ * $${10}^{\\left(-15\\right)}$$ kg)*(9.8 m/s\u00b2) in $${10}^{\\left(-15\\right)}$$ N?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem20d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$864$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem20d-h1"
+        ],
+        "title": "Calculate the Ratio of Centripetal Force to Weight",
+        "text": "Substituting the values from the previous steps: $$F_c$$ $$=$$ $$8.4706$$ * $${10}^{\\left(-12\\right)}$$ N, W $$=$$ $$9.8$$ * $${10}^{\\left(-15\\right)}$$ N. What is $$F_c$$ / W?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

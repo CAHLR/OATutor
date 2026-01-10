@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a75a1f8standard4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify \u03bc and \u03c3",
+        "text": "We know $$Y~N(\u03bc,\u03c3)$$. In this problem, $$Y~N(2,1)$$. The first step would be to identify what is \u03bc and \u03c3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard4a-h1"
+        ],
+        "title": "Identify \u03bc",
+        "text": "The first argument in $$N(2,1)$$ is \u03bc. What is \u03bc?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard4a-h1"
+        ],
+        "title": "Identify \u03c3",
+        "text": "The second argument in $$N(2,1)$$ is \u03c3. What is \u03c3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a75a1f8standard4a-h2",
+            "a75a1f8standard4a-h3"
+        ],
+        "title": "Calculate $$z-score$$",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$. Substitute the variables in the formula for numerical values, and solve for $$z$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$z=\\frac{4-2}{1}$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard4a-h4"
+        ],
+        "title": "Substitution",
+        "text": "We know $$y=4$$, $$\u03bc=2$$, and $$\u03c3=1$$. What is $$z$$ after substituting these variables?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$z=\\frac{4-2}{1}$$",
+            "$$z=\\frac{4-1}{2}$$",
+            "$$z=\\frac{2-1}{4}$$",
+            "$$z=\\frac{1-4}{2}$$"
+        ]
+    },
+    {
+        "id": "a75a1f8standard4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard4a-h5"
+        ],
+        "title": "Solve for $$z$$",
+        "text": "What is $$\\frac{4-2}{1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

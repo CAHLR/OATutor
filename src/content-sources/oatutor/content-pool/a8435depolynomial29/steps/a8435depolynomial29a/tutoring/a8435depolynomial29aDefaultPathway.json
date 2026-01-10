@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a8435depolynomial29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Volume of a Cylinder",
+        "text": "The volume of a cylinder is the product of \ud835\udf0b, the radius squared, and the height: V $$=$$ $$\\pi r^2 h$$. Here, we are given the volume and the radius. To find the height, square the radius by multiplying the radius by itself, then divide the volume by that product.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial29a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$25x^2+10x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial29a-h1"
+        ],
+        "title": "Setting Up the Division",
+        "text": "We are dividing $$25x^3-65x^2-29x-3$$ by $$\\left(5x+1\\right)^2$$. First, expand $$\\left(5x+1\\right)^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$25x^2+20x+4$$",
+            "$$25x^2+x+1$$",
+            "$$25x^2+10x+1$$",
+            "$$25x^2+15x+1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial29a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-75x^3-30x-3$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial29a-h2"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, multiply $$x$$ by $$25x^2+10x+1$$ and subtract the result from $$25x^3-65x^2-29x-3$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$40x^3-20x-6$$",
+            "$$-75x^3-30x-3$$",
+            "$$40x^3-30x-3$$",
+            "$$-75x^3-60x-12$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial29a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial29a-h3"
+        ],
+        "title": "Divide Again",
+        "text": "Now, divide $$-75x^2$$ by $$25x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$-3$$",
+            "$$2$$",
+            "$$-2$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial29a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial29a-h4"
+        ],
+        "title": "Multiply and Subtract Again",
+        "text": "Now, multiply $$-3$$ by $$25x2+10x+1$$ and subtract the result from $$-75x2-30x-3$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$-29x-3$$",
+            "$$-30x-4$$",
+            "$$-40x-3$$"
+        ]
+    }
+]

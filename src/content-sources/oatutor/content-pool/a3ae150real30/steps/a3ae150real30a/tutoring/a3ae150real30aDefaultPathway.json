@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a3ae150real30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining Constants",
+        "text": "Find A, B, and C",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real30a-h1"
+        ],
+        "title": "Finding tan(2angle)",
+        "text": "Calculate $$tan(2angle)=\\frac{B}{A-C}$$ to find angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real30a-h2"
+        ],
+        "title": "Substitution",
+        "text": "Substitute the angle back into $$x=x'cos(angle)-y'sin(angle)$$ and $$y=\\operatorname{x'sin}\\left(angle\\right)+\\operatorname{y'cos}\\left(angle\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real30a-h3"
+        ],
+        "title": "Into Original Equation",
+        "text": "Simplify back into original equation",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real30a-h4"
+        ],
+        "title": "Graph the equation.",
+        "text": "\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

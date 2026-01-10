@@ -1,0 +1,41 @@
+[
+    {
+        "id": "afb3ccdlang6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Replace",
+        "text": "First, we replace all the $$x$$ with $$4$$, so we will be evaluating $$2\\times4^2$$ + $$3\\times4$$ $$+8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "afb3ccdlang6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb3ccdlang6c-h1"
+        ],
+        "title": "Order of Operations",
+        "text": "Then, we follow the order of operations to calculate.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "afb3ccdlang6c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "afb3ccdlang6c-h2"
+        ],
+        "title": "Order of Operations",
+        "text": "What is $$32$$ + $$12$$ + 8?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

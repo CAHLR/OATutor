@@ -1,0 +1,129 @@
+[
+    {
+        "id": "a518506partialfractions10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring",
+        "text": "Factor the denominator to get $$\\left(x-2\\right) \\left(x+2\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions10a-h1"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "Separate the denominator factors and give each numerator a symbolic label like A and B",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions10a-h2"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "The equation should now look like: $$\\frac{6x}{\\left(x-2\\right) \\left(x+2\\right)}=\\frac{A}{x-2}+\\frac{B}{x+2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions10a-h3"
+        ],
+        "title": "Eliminating Fractions",
+        "text": "Multiply both sides of the equation by the common denominator to eliminate the fractions. The resulting equation is $$6x=A\\left(x+2\\right)+B\\left(x-2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions10a-h4"
+        ],
+        "title": "System of Equations",
+        "text": "Expand the right side of the equation and collect like terms, and then set up a system of equations associating corresponding coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions10a-h5"
+        ],
+        "title": "Solving Equations",
+        "text": "The two equations are $$6=A+B$$ and $$0=2A-2B$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions10a-h6"
+        ],
+        "title": "Solving Equations",
+        "text": "From the second equation, we get that $$A=B$$, plugging this into the first equation, solve for A. What is A equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions10a-h7"
+        ],
+        "title": "Solving Equations",
+        "text": "Substitute $$A=3$$ into the first equation and solve for B. What is B equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions10a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3}{x-2}+\\frac{3}{x+2}$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions10a-h8"
+        ],
+        "title": "Partial Fraction Decomposition",
+        "text": "What is the partial fraction decomposition after plugging in the values for A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3}{x-2}+\\frac{3}{x+2}$$",
+            "$$\\frac{2}{x+3}+\\frac{2}{x-3}$$",
+            "$$\\frac{2}{x-2}+\\frac{3}{x+2}$$",
+            "$$\\frac{5}{x-3}+\\frac{8}{x+9}$$"
+        ]
+    }
+]
