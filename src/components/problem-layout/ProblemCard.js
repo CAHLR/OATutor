@@ -695,7 +695,7 @@ class ProblemCard extends React.Component {
                             isGeneratingHint={this.state.isGeneratingHint}
                         />
                     </ErrorBoundary>
-                    <Spacer />
+                    {/* <Spacer /> */}
                 </div>
             );
 
@@ -710,10 +710,11 @@ class ProblemCard extends React.Component {
                             backgroundColor: "#FFFFFF",
                             color: "#000000",
                             borderRadius: 8,
-                            padding: 12,
+                            padding: 0,
                             boxShadow: "0 2px 6px rgba(0, 0, 0, 0.12)",
                             width: "100%",
                             boxSizing: "border-box",
+                            margin: "none"
                         }}
                     >
                         {hintsContent}

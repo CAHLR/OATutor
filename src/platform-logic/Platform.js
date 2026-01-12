@@ -76,15 +76,6 @@ class Platform extends React.Component {
     const defaultOpenIfNoPref = Boolean(props.lessonID);
     const initialDrawerOpen = saved === null ? defaultOpenIfNoPref : saved === "1";
 
-    this.state = {
-      showPopup: false,
-      feedback: "",
-      feedbackSubmitted: false,
-        drawerOpen: initialDrawerOpen,
-        hasAutoClosedDrawer: false,
-        metaCollapsed: false,
-      };
-
     this.togglePopup = this.togglePopup.bind(this);
     this.toggleFeedback = this.toggleFeedback.bind(this);
 
@@ -94,27 +85,20 @@ class Platform extends React.Component {
         step.knowledgeComponents = cleanArray(context.skillModel[step.id] || []);
       }
     }
-    if (this.props.lessonID == null) {
-      this.state = {
-        currProblem: null,
-        status: "courseSelection",
-        seed: seed,
-        feedback: "",
-        feedbackSubmitted: false,
-        drawerOpen: initialDrawerOpen,
-      };
-    } else {
-      this.state = {
-        currProblem: null,
-        status: "courseSelection",
-        seed: seed,
-        feedback: "",
-        feedbackSubmitted: false,
-        drawerOpen: initialDrawerOpen,
-      };
-    }
 
     this.selectLesson = this.selectLesson.bind(this);
+
+    this.state = {
+      showPopup: false,
+      feedback: "",
+      feedbackSubmitted: false,
+      drawerOpen: initialDrawerOpen,
+      hasAutoClosedDrawer: false,
+      metaCollapsed: false,
+      currProblem: null,
+      status: this.props.lessonID ? "loading" : "courseSelection",
+      seed: seed,
+    }
   }
 
   componentDidMount() {
@@ -532,10 +516,10 @@ class Platform extends React.Component {
                         display: "flex",
                         justifyContent: "flex-start",
                         alignItems: "center",
-                        gap: "8px",
+                        gap: "8xpx",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back">
+                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
@@ -550,7 +534,7 @@ class Platform extends React.Component {
                         gap: "8px",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back">
+                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
@@ -608,7 +592,7 @@ class Platform extends React.Component {
                         aria-label="Table of Contents Toggle"
                         onClick={() => this.toggleDrawer(true)}
                         disabled={this.state.drawerOpen}
-                        style={{ position: "absolute", left: 24, top: "50%", transform: "translateY(-50%)" }}
+                        style={{ position: "absolute", top: "50%", transform: "translateY(-50%)" }}
                       >
                         <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
                       </IconButton>
@@ -762,7 +746,7 @@ class Platform extends React.Component {
                                 }}
                               />
 
-                              {/* Avatar rider (TEMP substitute path) */}
+                              {/* Avatar rider on progress bar */}
                               <img
                                 src="/place-holder/static/images/icons/avatar_progress_bar.svg" 
                                 alt=""    

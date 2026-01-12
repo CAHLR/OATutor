@@ -95,9 +95,12 @@ class Problem extends React.Component {
 
         this.togglePopup = this.togglePopup.bind(this);
         this.hintPortalRef = React.createRef();
+        this.bannerRef = React.createRef();
     }
 
     componentDidMount() {
+        const h = this.bannerRef.current?.offsetHeight || 0;
+        this.setState({ bannerHeight: h });
         const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
@@ -523,14 +526,17 @@ class Problem extends React.Component {
             maxHeight: "70vh",
             transition: "all 0.4s ease",
         };
+        // Yellow box
         const bubbleContainerStyle = {
-            position: "relative",
+            position: "fixed",
+            top: metaCollapsed? 410 : this.state.bannerHeight + 330,
+            right: 28,
+            bottom: 24,
             display: "flex",
             flexDirection: "column",
             alignItems: isHintPortalOpen ? "stretch" : "flex-end",
             justifyContent: isHintPortalOpen ? "flex-end" : "flex-start",
-            width: isHintPortalOpen ? "100%" : "auto",
-            flexGrow: 1,
+            width: drawerOpen ? "22%" : "37%",
         };
 
         const speechBubbleStyle = {
@@ -542,13 +548,14 @@ class Problem extends React.Component {
             position: "relative",
             width: isHintPortalOpen ? "100%" : "auto",
             maxWidth: isHintPortalOpen ? "100%" : 240,
-            maxHeight: "60vh",
+            // maxHeight: "60vh",
             alignSelf: isHintPortalOpen ? "stretch" : "flex-end",
             textAlign: "left",
             cursor: "pointer",
             transition: "all 0.3s ease",
             marginTop: isHintPortalOpen ? "auto" : 0,
             zIndex: 2,
+            overflowY: "hidden",
         };
 
         // const hintPortalStyle = {
@@ -559,10 +566,13 @@ class Problem extends React.Component {
 
         const hintPortalStyle = {
             display: isHintPortalOpen ? "block" : "none",
+            border: "none",
             position: "sticky",
             width: "100%",
+            // height: metaCollapsed? "45vh": "37vh",
             height: "50vh",
             marginTop: 8,
+            marginBottom: -24,
             overflowY: "auto",
         };
 
@@ -577,7 +587,7 @@ class Problem extends React.Component {
                     <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, paddingTop: 0, paddingBottom: 0, backgroundColor: "#F6F6F6", zIndex: 3, marginBottom: -10, paddingRight: 40 }}>
                     
                     {/* <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, zIndex: 3 }}> */}
-                        <div className={classes.prompt} role={"banner"}>
+                        <div ref={this.bannerRef} className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
 
                                 <div 
@@ -817,16 +827,18 @@ class Problem extends React.Component {
                         <div style={hintDisplayStyle}>
                         <button
                             style={{
-                                backgroundColor: "#4E7DAA", // similar blue tone
+                                backgroundColor: "#4E7DAA",
                                 color: "white",
                                 border: "none",
-                                borderRadius: "9999px", // fully rounded edges
+                                borderRadius: "9999px",
                                 padding: "2px 14px",
                                 fontSize: "12px",
                                 fontWeight: 500,
                                 cursor: "pointer",
                                 alignSelf: "flex-end",
                                 marginBottom: "56px",
+                                position: "fixed",
+                                right: 26
                             }}
                             >
                             OpenAI o1
@@ -872,7 +884,7 @@ class Problem extends React.Component {
                                 height: 0,
                                 borderLeft: "8px solid transparent",
                                 borderRight: "8px solid transparent",
-                                borderBottom: "8px solid #FFF3CC"
+                                borderBottom: "8px solid #FFF3CC",
                             }}
                         />
                         </div>
