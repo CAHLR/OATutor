@@ -12,11 +12,7 @@ import {
     renderText,
 } from "../../platform-logic/renderText.js";
 import styles from "./common-styles.js";
-import IconButton from "@material-ui/core/IconButton";
-import TextField from "@material-ui/core/TextField";
 import { NavLink } from "react-router-dom";
-import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
-import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
 import withTranslation from "../../util/withTranslation.js"
 import avatar from "../../assets/avatar_default_state.svg";
 
@@ -24,7 +20,6 @@ import {
     CANVAS_WARNING_STORAGE_KEY,
     MIDDLEWARE_URL,
     SHOW_NOT_CANVAS_WARNING,
-    SITE_NAME,
     ThemeContext,
 } from "../../config/config.js";
 import { toast } from "react-toastify";
@@ -33,10 +28,8 @@ import ToastID from "../../util/toastIds";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
-import Popup from '../Popup/Popup.js';
-import About from '../../pages/Posts/About.js';
 
-import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
+import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 
@@ -521,7 +514,7 @@ class Problem extends React.Component {
         const { classes, problem, seed } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
-        const { showPopup, isHintPortalOpen } = this.state;
+        const { isHintPortalOpen } = this.state;
         if (problem == null) {
             return <div></div>;
         }
@@ -1092,18 +1085,20 @@ class Problem extends React.Component {
                 </footer>
 
                 {/* AI Agent Chatbot */}
-                <AgentIntegration
-                    problem={problem}
-                    lesson={this.props.lesson}
-                    seed={seed}
-                    problemVars={this.props.problemVars}
-                    stepStates={this.state.stepStates}
-                    bktParams={this.bktParams}
-                    getActiveStepData={this.getActiveStepData}
-                    attemptHistory={this.state.attemptHistory}
-                    user={this.props.user}
-                    lessonMasteryMap={this.props.lessonMasteryMap}
-                />
+                {this.props.lesson?.enable_ai_chat && (
+                    <AgentIntegration
+                        problem={problem}
+                        lesson={this.props.lesson}
+                        seed={seed}
+                        problemVars={this.props.problemVars}
+                        stepStates={this.state.stepStates}
+                        bktParams={this.bktParams}
+                        getActiveStepData={this.getActiveStepData}
+                        attemptHistory={this.state.attemptHistory}
+                        user={this.props.user}
+                        lessonMasteryMap={this.props.lessonMasteryMap}
+                    />
+                )}
             </>
         );
     }

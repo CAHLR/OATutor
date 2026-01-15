@@ -350,6 +350,12 @@ class Platform extends React.Component {
 
     this.lesson = lesson;
 
+    // Calculate effective enable_ai_chat (lesson overrides course)
+    if (lesson.enable_ai_chat === undefined) {
+      const course = coursePlans.find(c => c.courseName === lesson.courseName);
+      this.lesson.enable_ai_chat = course?.enable_ai_chat;
+    }
+
     const loadLessonProgress = async () => {
       const { getByKey } = this.context.browserStorage;
       return await getByKey(LESSON_PROGRESS_STORAGE_KEY(this.lesson.id)).catch((err) => {});
