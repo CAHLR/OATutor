@@ -25,6 +25,12 @@ import { findLessonById, ThemeContext, SHOW_COPYRIGHT, SITE_NAME } from '../../c
 import { CONTENT_SOURCE } from '@common/global-config';
 import withTranslation from '../../util/withTranslation.js';
 
+import userIcon from "../../assets/UserThumb.svg";
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import leftArrow from "../../assets/chevron-left.svg";
+
+import { withRouter } from 'react-router-dom';
+
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
@@ -47,6 +53,7 @@ const useStyles = makeStyles(theme => ({
     '& div[width="100%"]': {
       display: 'none',
     },
+    paddingRight: theme.spacing(8),
   },
   loadingBox: {
     textAlign: 'center',
@@ -73,7 +80,7 @@ const useStyles = makeStyles(theme => ({
 
 const BATCH_SIZE = 3;
 
-const ViewAllProblems = ({ translate }) => {
+const ViewAllProblems = ({ translate, history }) => {
   const classes = useStyles();
   const { lessonID } = useParams();
   const context = useContext(ThemeContext);
@@ -84,6 +91,10 @@ const ViewAllProblems = ({ translate }) => {
   const [visibleProblems, setVisibleProblems] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [seed] = useState(() => Date.now().toString());
+
+  const studentNameDisplay = context.studentName
+  ? decodeURIComponent(context.studentName)
+  : translate('platform.LoggedIn');
 
   // no-op handlers for ProblemWrapper
   const displayMastery = () => {};
@@ -130,25 +141,113 @@ const ViewAllProblems = ({ translate }) => {
       : String(lesson.topics)
     : '';
 
+  const togglePopup = () => setShowPopup(prev => !prev);
+
   return (
     <Box className={classes.root}>
-      <AppBar position="static">
+
+
+      <AppBar position="static" style = {{backgroundColor: '#FFFFFF'}}>
         <Toolbar>
-          <Grid container alignItems="center">
+          <Grid 
+            container 
+            spacing={0}
+            role={"navigation"}
+            alignItems={"center"}            
+          >
+
             <Grid item xs={3}><BrandLogoNav /></Grid>
-            <Grid item xs={6} style={{ textAlign: 'center' }}>
-              {lesson?.name}{topicsText && `: ${topicsText}`}
+            <Grid item xs={6} style={{ textAlign: 'center' }}> </Grid>
+            <Grid xs = {3} item key={3}>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        alignItems: "center", 
+                        gap: "9px",
+                        color: "#344054",
+                    }}
+                >
+                    <img src={userIcon} alt="User Icon" />
+                    <div style={{ fontWeight: 600 }}>
+                        {studentNameDisplay}
+                    </div>
+                </div>
             </Grid>
-            <Grid item xs={3} />
+
           </Grid>
         </Toolbar>
       </AppBar>
 
-      <Container maxWidth="lg" className={classes.container}>
+      <AppBar position="static" >
+          <Toolbar style={{ minHeight: '56px'}}>
+              <Grid
+                  container
+                  spacing={0}
+                  role={"secondary-navigation"}
+                  alignItems={"center"}
+              >
+                  <Grid item xs={9} key={1}>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            alignItems: "center", 
+                            gap: "8px"
+                        }}
+                    >
+                        <IconButton 
+                          onClick = {() => history.goBack()}
+                          aria-label = "Back" 
+                        >
+                          <img src={leftArrow} alt="Back Arrow" />
+
+                        </IconButton>
+                    </div>
+                  </Grid>
+
+
+                  <Grid xs = {3} item key={3}>
+                      <div
+                          style={{
+                              display: "flex",
+                              flexGrow: 1,
+                              justifyContent: "flex-end",
+                              border: 'none'
+                          }}
+                      >
+
+                          <IconButton
+                              aria-label="about"
+                              title={`About ${SITE_NAME}`}
+                              onClick={togglePopup}
+                          >
+                              <HelpOutlineOutlinedIcon
+                                  htmlColor={"#ffffff"}
+                                  style={{
+                                      fontSize: 36,
+                                      margin: -2,
+                                  }}
+                              />
+                          </IconButton>
+
+                      </div>
+                      <Popup isOpen={showPopup} onClose={togglePopup}>
+                          <About />
+                      </Popup>
+                      
+                  </Grid>
+
+              </Grid>
+          </Toolbar>
+      </AppBar>
+
+
+      <Container maxWidth="med" className={classes.container}>
         {visibleProblems.length ? visibleProblems.map(problem => (
           <Box key={problem.id} className={classes.problemCard}>
             {/* ID badge */}
-            <Box className={classes.idBadge}>
+            <Box className={classes.idBadge} style ={{marginRight: 20}}>
               <Typography variant="caption" color="textSecondary">
                 {problem.id}
               </Typography>
@@ -177,16 +276,16 @@ const ViewAllProblems = ({ translate }) => {
           {SHOW_COPYRIGHT && `© ${new Date().getFullYear()} ${SITE_NAME}`}
         </Box>
         <Box className={classes.spacer} />
-        <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
+        {/* <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
           <HelpOutlineOutlinedIcon />
-        </IconButton>
+        </IconButton> */}
       </Box>
 
-      <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
+      {/* <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
         <About />
-      </Popup>
+      </Popup> */}
     </Box>
   );
 };
 
-export default withTranslation(ViewAllProblems);
+export default withTranslation(withRouter(ViewAllProblems));
