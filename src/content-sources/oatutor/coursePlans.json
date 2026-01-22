@@ -1650,6 +1650,7 @@
                 "topics": "F Distribution",
                 "allowRecycle": true,
                 "learningObjectives": {
+                    "f_distribution": 0.85,
                     "f_ratio": 0.85,
                     "the_f_distribution": 0.85
                 }
@@ -1660,6 +1661,7 @@
                 "topics": "One-Way ANOVA",
                 "allowRecycle": true,
                 "learningObjectives": {
+                    "f_ratio": 0.85,
                     "one_way_anova": 0.85
                 }
             },
@@ -1688,6 +1690,24 @@
                 "allowRecycle": true,
                 "learningObjectives": {
                     "goodness_of_fit_test": 0.85
+                }
+            },
+            {
+                "id": "1tucCfso-t4dS-uzd7N0lAyJ",
+                "name": "Lesson 12.4",
+                "topics": "Test of Independence",
+                "allowRecycle": true,
+                "learningObjectives": {
+                    "test_of_independence": 0.85
+                }
+            },
+            {
+                "id": "1BltxB8h-D0Ia-7BOXisC9yz",
+                "name": "Lesson 12.5",
+                "topics": "Test for Homogeneity",
+                "allowRecycle": true,
+                "learningObjectives": {
+                    "test_for_homogeneity": 0.85
                 }
             },
             {
@@ -1780,7 +1800,9 @@
                 "allowRecycle": true,
                 "learningObjectives": {
                     "infinite_limits": 0.85,
-                    "intuitive_definition_of_a_limit": 0.85
+                    "intuitive_definition_of_a_limit": 0.85,
+                    "one_sided_limits": 0.85,
+                    "the_existence_of_a_limit": 0.85
                 }
             },
             {
@@ -1801,6 +1823,7 @@
                     "continuity_at_a_point": 0.85,
                     "continuity_over_an_interval": 0.85,
                     "limit_of_a_composite_cosine_function": 0.85,
+                    "the_intermediate_value_theorem": 0.85,
                     "types_of_discontinuities": 0.85
                 }
             },
@@ -2122,7 +2145,9 @@
                 "allowRecycle": true,
                 "learningObjectives": {
                     "arc_length_of_the_curve": 0.85,
-                    "finding_the_centroid_of_a_region_bounded_by_two_functions": 0.85
+                    "finding_the_centroid_of_a_region_bounded_by_two_functions": 0.85,
+                    "the_symmetry_principle": 0.85,
+                    "using_the_theorem_of_pappus_for_volume": 0.85
                 }
             }
         ]
@@ -4306,6 +4331,7 @@
                 "topics": "Ellipses",
                 "allowRecycle": true,
                 "learningObjectives": {
+                    "find_the_equation_of_an_ellipse_with_center_at_the_origin": 0.85,
                     "graph_an_ellipse_with_center_at_the_origin": 0.85,
                     "graph_an_ellipse_with_center_not_at_the_origin": 0.85
                 }
@@ -5756,6 +5782,7 @@
                 "topics": "One-Way ANOVA",
                 "allowRecycle": true,
                 "learningObjectives": {
+                    "f_ratio": 0.85,
                     "one_way_anova": 0.85
                 }
             },
@@ -5767,6 +5794,15 @@
                 "learningObjectives": {
                     "f_ratio": 0.85,
                     "the_f_distribution": 0.85
+                }
+            },
+            {
+                "id": "3dlF1kas-WN0k-BdZzyV4tMy",
+                "name": "Lesson 13.3",
+                "topics": "Facts About the F Distribution",
+                "allowRecycle": true,
+                "learningObjectives": {
+                    "f_distribution": 0.85
                 }
             },
             {
@@ -5783,8 +5819,8 @@
     {
         "courseName": "Pre-Calculus Essentials (UC Berkeley Math 1B)",
         "language": "",
-        "courseOER": 0.0,
-        "courseLicense": 0.0,
+        "courseOER": "",
+        "courseLicense": "",
         "lessons": [
             {
                 "id": "0pDEAYDr-oXlS-JNqzc08GRZ",
