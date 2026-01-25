@@ -42,7 +42,7 @@ class HintSystem extends React.Component {
         this.generateHintFromGPT = props.generateHintFromGPT;
         this.state = {
             latestStep: 0,
-            currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
+            currentExpanded: -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
@@ -172,6 +172,7 @@ class HintSystem extends React.Component {
                                 debug)
                         }
                         defaultExpanded={false}
+                        style={{ margin: 0, boxShadow: "none", borderBottom: "1px solid #e7e7e7ff", }}
                     >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -182,20 +183,7 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                {translate('hintsystem.hint') + (i + 1) + ": "}
-                                {renderText(
-                                    hint.title === "nan" ? "" : hint.title,
-                                    problemID,
-                                    chooseVariables(
-                                        Object.assign(
-                                            {},
-                                            stepVars,
-                                            hint.variabilization
-                                        ),
-                                        seed
-                                    ),
-                                    this.context
-                                )}
+                                {translate("hintsystem.hint") + (i + 1)}
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails >
@@ -204,6 +192,26 @@ class HintSystem extends React.Component {
                                 component={"span"}
                                 style={{ width: "100%" }}
                             >
+                                {hint.title && hint.title !== "nan" && (
+                                    <>
+                                        <strong>
+                                            {renderText(
+                                                hint.title,
+                                                problemID,
+                                                chooseVariables(
+                                                    Object.assign(
+                                                        {},
+                                                        stepVars,
+                                                        hint.variabilization
+                                                    ),
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </strong>
+                                        <br />
+                                    </>
+                                )}
                                 {renderText(
                                     hint.text,
                                     problemID,
