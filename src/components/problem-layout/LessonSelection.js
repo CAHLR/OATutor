@@ -110,6 +110,7 @@ class LessonSelection extends React.Component {
                                                 <center>
                                                     <Paper className={classes.paper}>
                                                         <h2 style={{
+                                                            height: "60px",
                                                             marginTop: "5px",
                                                             marginBottom: "10px"
                                                         }}>{course.courseName}</h2>
@@ -121,8 +122,8 @@ class LessonSelection extends React.Component {
                                                                 this.props.history.push(`/courses/${i}`)
                                                             }}>
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
-                                                                width="64px"
+                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/orange_folder.svg`}
+                                                                width="56px"
                                                                 alt="folderIcon"/>
                                                         </IconButton>
                                                     </Paper>
@@ -132,34 +133,33 @@ class LessonSelection extends React.Component {
                                     : this.coursePlans[this.props.courseNum].lessons.map((lesson, i) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>
-    <center>
-      <Paper className={classes.paper} style={{ position: 'relative' }}>
-        {/* top-right “view all problems” button */}
-        <IconButton
-          size="small"
-          style={{ position: 'absolute', top: 8, right: 8 }}
-          aria-label={`View all problems for lesson ${lesson.id}`}
-          onClick={() => this.props.history.push(`/lessons/${lesson.id}/problems`)}
-        >
-          <MenuBookIcon fontSize="small" />
-        </IconButton>
-
-        <h2 style={{ marginTop: 5, marginBottom: 10 }}>
-          {lesson.name.replace(/##/g, "")}
-        </h2>
-        <h3 style={{ marginTop: 5 }}>{lesson.topics}</h3>
-
-        <Button
-          variant="contained"
-          color="primary"
-          className={classes.button}
-          onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
-        >
-          {translate('lessonSelection.onlyselect')}
-        </Button>
-      </Paper>
-    </center>
-  </Grid>
+                                            <center>
+                                            <Paper className={classes.paper} style={{ position: 'relative' }}>
+                                                {/* top-right “view all problems” button */}
+                                                <IconButton
+                                                    size="small"
+                                                    style={{ position: 'absolute', top: 8, right: 8 }}
+                                                    aria-label={`View all problems for lesson ${lesson.id}`}
+                                                    onClick={() => this.props.history.push(`/lessons/${lesson.id}/problems`)}
+                                                >
+                                                <MenuBookIcon fontSize="small" />
+                                                </IconButton>
+                                                <h2 style={{ marginTop: 5, marginBottom: 10 }}>
+                                                {lesson.name.replace(/##/g, "")}
+                                                </h2>
+                                                <h3 style={{ marginTop: 5 }}>{lesson.topics}</h3>
+                                                <Button
+                                                    variant="contained"
+                                                    color="primary"
+                                                    className={classes.button}
+                                                    style={{ width: "36%" }}
+                                                    onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
+                                                >
+                                                {translate('lessonSelection.onlyselect')}
+                                                </Button>
+                                            </Paper>
+                                            </center>
+                                        </Grid>
                                         )
                                     })
                                 }
@@ -172,10 +172,24 @@ class LessonSelection extends React.Component {
                         <Grid item xs={3} sm={3} md={5} key={1}/>
                         {!this.isPrivileged && <Grid item xs={6} sm={6} md={2} key={2}>
                             {this.state.preparedRemoveProgress ?
-                                <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                <Button className={classes.button} size="small"
+                                        style={{ 
+                                            width: "100%", 
+                                            color: "#3F7091",
+                                            backgroundColor: "transparent",
+                                            border: "1px solid #4F86A8",
+                                            boxShadow: "none"
+                                        }} 
                                     onClick={this.removeProgress}
                                     disabled={this.state.removedProgress}>{this.state.removedProgress ? translate('lessonSelection.reset') : translate('lessonSelection.aresure')}</Button> :
-                                <Button className={classes.button} style={{ width: "100%" }} size="small"
+                                <Button className={classes.button} size="small"
+                                    style={{ 
+                                        width: "100%", 
+                                        color: "#3F7091",
+                                        backgroundColor: "transparent",
+                                        border: "1px solid #4F86A8",
+                                        boxShadow: "none"
+                                    }} 
                                     onClick={this.prepareRemoveProgress}
                                     disabled={this.state.preparedRemoveProgress}>{translate('lessonSelection.resetprogress')}</Button>}
                         </Grid>}
