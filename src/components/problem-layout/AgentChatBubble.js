@@ -17,7 +17,8 @@ class AgentChatBubble extends React.Component {
             messages: [],
             currentMessage: '',
             isGenerating: false,
-            agentSessionId: null
+            agentSessionId: null,
+            showHintBubble: false,
         };
         this.messagesEndRef = React.createRef();
     }
@@ -49,6 +50,13 @@ class AgentChatBubble extends React.Component {
             isChatOpen: !prevState.isChatOpen
         }));
     };
+
+    toggleHintBubble = () => {
+        this.setState(prevState => ({
+            showHintBubble: !prevState.showHintBubble
+        }));
+    };
+
 
     clearConversation = () => {
         agentHelper.initializeSession();
@@ -209,7 +217,8 @@ class AgentChatBubble extends React.Component {
 
     render() {
         const { isChatOpen, messages, currentMessage, isGenerating } = this.state;
-
+        const chatBubbleHeight = isChatOpen ? (this.state.showHintBubble ? "340px" : "60vh") : "auto";
+        
         const speechBubbleStyle = {
             background: "#D0F0FF",
             color: "#222",
@@ -219,7 +228,7 @@ class AgentChatBubble extends React.Component {
             position: "relative",
             width: isChatOpen ? "100%" : "240px",
             maxWidth: isChatOpen ? "100%" : 240,
-            height: isChatOpen ? "35vh" : "auto",
+            height: chatBubbleHeight,
             overflow: "hidden",
             alignSelf: "flex-end",
             textAlign: "left",

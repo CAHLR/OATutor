@@ -78,7 +78,7 @@ class Problem extends React.Component {
             ? this.props.lesson?.prompt_template
             : "";
         //change booleans HERE to toggle on/off hints and chatbot
-        this.showHintBubble = true;
+        this.showHintBubble = false;
         this.showChatbot = true;
 
         this.state = {
