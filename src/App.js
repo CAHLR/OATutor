@@ -37,8 +37,8 @@ import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from "./config/firebaseConfig.js";
 import skillModel from "./content-sources/oatutor/skillModel.json";
-import bktParams1 from "./content-sources/oatutor/bkt-params/bktParams1.json";
-import bktParams2 from "./content-sources/oatutor/bkt-params/bktParams2.json";
+import defaultBKTParams from "./content-sources/oatutor/bkt-params/defaultBKTParams.json";
+import experimentalBKTParams from "./content-sources/oatutor/bkt-params/experimentalBKTParams.json";
 import { heuristic as lowestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic1.js";
 import { heuristic as highestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic2.js";
 import BrowserStorage from "./util/browserStorage";
@@ -61,8 +61,8 @@ const queryParamsToKeep = ["use_expanded_view", "to", "do_not_restore"];
 
 const treatmentMapping = {
     bktParams: {
-        0: cleanObjectKeys(bktParams1),
-        1: cleanObjectKeys(bktParams2),
+        0: cleanObjectKeys(defaultBKTParams),
+        1: cleanObjectKeys(experimentalBKTParams),
     },
     heuristic: {
         0: lowestHeuristic,
