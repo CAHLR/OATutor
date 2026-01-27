@@ -23,6 +23,7 @@ import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from '../util/withTranslation';
+import { LocalizationConsumer } from '../util/LocalizationContext';
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -78,6 +79,16 @@ class Platform extends React.Component {
 
     componentDidMount() {
         this._isMounted = true;
+
+        const { enterCourse, exitCourse} = this.props;
+
+        const isHomePage = this.props.history.location.pathname === '/';
+        if (isHomePage) {
+            exitCourse();
+            this.onComponentUpdate(null, null, null);
+            return;
+        }
+
         if (this.props.lessonID != null) {
             console.log("calling selectLesson from componentDidMount...") 
             const lesson = findLessonById(this.props.lessonID)
@@ -91,13 +102,35 @@ class Platform extends React.Component {
                 }
             );
 
-            const { setLanguage } = this.props;
-            const language = localStorage.getItem("defaultLocale") || "en";
-            setLanguage(language);
+            // const { setLanguage } = this.props;
+            
+            // if (lesson.courseName == 'Matematik 4') {
+            //     setLanguage('se')
+            // } else {
+            //     const defaultLocale = localStorage.getItem('defaultLocale');
+            //     setLanguage(defaultLocale)
+            // }
+
+            const course = coursePlans.find(c => 
+                c.lessons.some(l => l.id === this.props.lessonID)
+            );
+            
+            if (course) {
+                // Pass course ID and language from coursePlans.json
+                enterCourse(course.courseName, course.language);
+            }
 
         } else if (this.props.courseNum != null) {
+
+            const course = coursePlans[parseInt(this.props.courseNum)];
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
+
+
         this.onComponentUpdate(null, null, null);
     }
 
@@ -107,6 +140,38 @@ class Platform extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        
+        const { enterCourse, exitCourse } = this.props;
+        
+        // If navigating to home, exit course context
+        if (this.props.history.location.pathname === '/' && 
+            prevProps.history.location.pathname !== '/') {
+            exitCourse();
+        }
+        
+        // If lesson changed, update course context
+        if (this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null) {
+            const lesson = findLessonById(this.props.lessonID);
+            const course = coursePlans.find(c => 
+                c.lessons.some(l => l.id === this.props.lessonID)
+            );
+            
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+            if (lesson) {
+                this.selectLesson(lesson, false);
+            }
+        }
+        
+        // If course changed
+        if (this.props.courseNum !== prevProps.courseNum && this.props.courseNum != null) {
+            const course = coursePlans[parseInt(this.props.courseNum)];
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+        }
+
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
@@ -419,7 +484,6 @@ class Platform extends React.Component {
             const allProblemsCompleted = progressData.completed === progressData.total;
             if (allProblemsCompleted) {
                 console.debug("updateCanvas called because lesson is complete");
-                this.updateCanvas(progressPercent, relevantKc);
             }
 
             this.updateCanvas(progressPercent, relevantKc);
@@ -506,22 +570,20 @@ class Platform extends React.Component {
                     </Toolbar>
                 </AppBar>
 
-
-                    {/* Progress Bar */}
-                    {this.lesson?.enableCompletionMode && (
-                        <div style={{ padding: "10px 20px" }}>
-                            <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12 }}>
-                                <span>Progress</span>
-                                <span>{this.getProgressBarData().percent}% ({this.getProgressBarData().completed}/{this.getProgressBarData().total})</span>
-                            </div>
-                            <LinearProgress
-                                variant="determinate"
-                                value={this.getProgressBarData().percent}
-                                style={{ height: 10, borderRadius: 5 }}
-                            />
+                {/* Progress Bar */}
+                {this.lesson?.enableCompletionMode && (
+                    <div style={{ padding: "10px 20px" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12 }}>
+                            <span>Progress</span>
+                            <span>{this.getProgressBarData().percent}% ({this.getProgressBarData().completed}/{this.getProgressBarData().total})</span>
                         </div>
-                    )}
-
+                        <LinearProgress
+                            variant="determinate"
+                            value={this.getProgressBarData().percent}
+                            style={{ height: 10, borderRadius: 5 }}
+                        />
+                    </div>
+                )}
 
                 {this.state.status === "courseSelection" ? (
                     <LessonSelectionWrapper
@@ -586,4 +648,17 @@ class Platform extends React.Component {
     }
 }
 
-export default withRouter(withTranslation(Platform));
+// export default withRouter(withTranslation(Platform));
+
+export default withRouter(withTranslation((props) => (
+    <LocalizationConsumer>
+        {({ language, enterCourse, exitCourse }) => (
+            <Platform
+                {...props}
+                language={language}
+                enterCourse={enterCourse}
+                exitCourse={exitCourse}
+            />
+        )}
+    </LocalizationConsumer>
+)));

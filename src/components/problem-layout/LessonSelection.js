@@ -25,12 +25,15 @@ class LessonSelection extends React.Component {
         super(props);
         const { courseNum, setLanguage } = this.props;
 
-        if (courseNum == 6) {
-            setLanguage('se')
-        } 
+        if (courseNum != null) {
+            const course = coursePlans[parseInt(courseNum)];
+            if (course && course.language) {
+                setLanguage(course.language);
+            }
+        }
         
         if (props.history.location.pathname == '/') {
-            const defaultLocale = localStorage.getItem('defaultLocale');
+            const defaultLocale = localStorage.getItem('platformLanguage');
             setLanguage(defaultLocale)
         }
 
