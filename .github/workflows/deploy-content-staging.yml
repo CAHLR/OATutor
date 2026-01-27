@@ -13,7 +13,7 @@ jobs:
     - name: Checkout OATutor repository
       uses: actions/checkout@v2
       with:
-        ref: 'content-staging'
+        ref: 'fix-bktparams-content-staging'
         path: 'content-staging-build'
         persist-credentials: true
 
@@ -57,8 +57,8 @@ jobs:
         cd content-staging-build/src/content-sources/oatutor
         mv "OpenStax Content" "content-pool"
         mkdir -p bkt-params
-        mv bktParams.json bkt-params/bktParams1.json
-        cp bkt-params/bktParams1.json bkt-params/bktParams2.json
+        mv bktParams.json bkt-params/defaultBKTParams.json
+        cp bkt-params/defaultBKTParams.json bkt-params/experimentalBKTParams.json
 
     - name: Run Node.js preprocessing script
       run: |
