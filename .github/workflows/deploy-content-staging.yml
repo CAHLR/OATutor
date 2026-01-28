@@ -79,7 +79,7 @@ jobs:
           echo "No changes to commit"
         else
           git commit -m "Automated content update"
-          git push origin content-staging
+          git push origin HEAD
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
