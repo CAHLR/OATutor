@@ -372,6 +372,24 @@ app.post(
       Math.round(mastery * Math.pow(10, scorePrecision)) /
       Math.pow(10, scorePrecision);
 
+    // If the 'text' extension is not supported, send a regular replaceResult
+    if (!provider.outcome_service.supports_result_data('text')) {
+      provider.outcome_service.send_replace_result(
+        score,
+        (err, result) => {
+          if (err || !result) {
+            console.debug("was unable to send result to your LMS", err);
+            res.status(400).send("unable_to_handle_score").end();
+            return;
+          }
+
+          res.status(200).end();
+        }
+      );
+
+      return;
+    }
+
     let semester = calculateSemester(Date.now());
     let lmsUserId = user_id;
     let lesson = lessonName;
@@ -525,7 +543,7 @@ app.post(
       text,
       (err, result) => {
         if (err || !result) {
-          console.debug("was unable to send result to your LMS", err);
+          console.debug("was unable to send result with text to your LMS", err);
           res.status(400).send("unable_to_handle_score").end();
           return;
         }
