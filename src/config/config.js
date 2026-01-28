@@ -14,7 +14,7 @@ const CURRENT_SEMESTER = calculateSemester(Date.now());
  * Default language for the platform
  * @type {string}
  */
-const DEFAULT_LANGUAGE = "es"; // Supported Options: 'en', 'es', 'se'
+const DEFAULT_LANGUAGE = "en"; // Supported Options: 'en', 'es', 'se'
 
 /**
  * Available languages for the platform
