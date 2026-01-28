@@ -17,25 +17,26 @@ import withTranslation from "../../util/withTranslation.js";
 import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import { LocalizationConsumer } from '../../util/LocalizationContext';
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
 
     constructor(props, context) {
         super(props);
-        const { courseNum, setLanguage } = this.props;
+        // const { courseNum, setLanguage } = this.props;
 
-        if (courseNum != null) {
-            const course = coursePlans[parseInt(courseNum)];
-            if (course && course.language) {
-                setLanguage(course.language);
-            }
-        }
+        // if (courseNum != null) {
+        //     const course = _coursePlansNoEditor[parseInt(courseNum)];
+        //     if (course && course.language) {
+        //         setLanguage(course.language);
+        //     }
+        // }
         
-        if (props.history.location.pathname == '/') {
-            const defaultLocale = localStorage.getItem('platformLanguage');
-            setLanguage(defaultLocale)
-        }
+        // if (props.history.location.pathname == '/') {
+        //     const defaultLocale = localStorage.getItem('platformLanguage');
+        //     setLanguage(defaultLocale)
+        // }
 
         this.user = context.user || {}
         this.isPrivileged = !!this.user.privileged
@@ -67,10 +68,8 @@ class LessonSelection extends React.Component {
     }
 
     handleCourseSelect = (course, courseIndex) => {
-        const { setLanguage, history } = this.props;
-
-        setLanguage(course.language);
-        localStorage.setItem("defaultLocale", course.language); 
+        const { history } = this.props;
+        // localStorage.setItem("defaultLocale", course.language); 
 
         history.push(`/courses/${courseIndex}`);
     };
@@ -220,4 +219,16 @@ class LessonSelection extends React.Component {
     }
 }
 
-export default withStyles(styles)(withTranslation(LessonSelection));
+// export default withStyles(styles)(withTranslation(LessonSelection));
+
+export default withStyles(styles)(withTranslation((props) => (
+    <LocalizationConsumer>
+        {({ language, platformLanguage }) => (
+            <LessonSelection
+                {...props}
+                language={language}
+                platformLanguage={platformLanguage}
+            />
+        )}
+    </LocalizationConsumer>
+)));
