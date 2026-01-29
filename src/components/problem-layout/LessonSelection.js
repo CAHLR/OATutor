@@ -108,11 +108,12 @@ class LessonSelection extends React.Component {
                                         .map((course, i) =>
                                             <Grid item xs={12} sm={6} md={4} key={course.courseName}>
                                                 <center>
-                                                    <Paper className={classes.paper}>
+                                                    {/* card, text, and icon scale in proportion to one another */}
+                                                    <Paper className={classes.paper} style={{ fontSize: "1.1rem" }}>
                                                         <h2 style={{
-                                                            height: "60px",
-                                                            marginTop: "5px",
-                                                            marginBottom: "10px"
+                                                            height: "2.5em",
+                                                            marginTop: "0.2em",
+                                                            marginBottom: "0.4em",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
@@ -124,7 +125,9 @@ class LessonSelection extends React.Component {
                                                             <img
                                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/orange_folder.svg`}
                                                                 width="56px"
-                                                                alt="folderIcon"/>
+                                                                alt="folderIcon"
+                                                                style= {{ width: "2.2em", marginTop: "0.4em" }}
+                                                            />
                                                         </IconButton>
                                                     </Paper>
                                                 </center>
