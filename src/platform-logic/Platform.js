@@ -14,6 +14,8 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
+    SHOW_NOT_CANVAS_WARNING,
+    CANVAS_WARNING_STORAGE_KEY,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -492,6 +494,129 @@ class Platform extends React.Component {
             this._nextProblem(context);
         }
     };
+
+    updateCanvas = async (mastery, components) => {
+        if (this.context.jwt) {
+            console.debug("updating canvas with problem score");
+
+            let err, response;
+            [err, response] = await to(
+                fetch(`${MIDDLEWARE_URL}/postScore`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: this.context?.jwt || "",
+                        mastery,
+                        components,
+                    }),
+                })
+            );
+            if (err || !response) {
+                toast.error(
+                    `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+                    {
+                        toastId: ToastID.submit_grade_unknown_error.toString(),
+                    }
+                );
+                console.debug(err, response);
+            } else {
+                if (response.status !== 200) {
+                    switch (response.status) {
+                        case 400:
+                            const responseText = await response.text();
+                            let [message, ...addInfo] = responseText.split("|");
+                            if (
+                                Array.isArray(addInfo) &&
+                                addInfo.length > 0 &&
+                                addInfo[0]
+                            ) {
+                                addInfo = JSON.parse(addInfo[0]);
+                            }
+                            switch (message) {
+                                case "lost_link_to_lms":
+                                    toast.error(
+                                        "It seems like the link back to your LMS has been lost. Please re-open the assignment to make sure your score is saved.",
+                                        {
+                                            toastId:
+                                                ToastID.submit_grade_link_lost.toString(),
+                                        }
+                                    );
+                                    return;
+                                case "unable_to_handle_score":
+                                    toast.warn(
+                                        "Something went wrong and we can't update your score right now. Your progress will be saved locally so you may continue working.",
+                                        {
+                                            toastId:
+                                                ToastID.submit_grade_unable.toString(),
+                                            closeOnClick: true,
+                                        }
+                                    );
+                                    return;
+                                default:
+                                    toast.error(`Error: ${responseText}`, {
+                                        closeOnClick: true,
+                                    });
+                                    return;
+                            }
+                        case 401:
+                            toast.error(
+                                `Your session has either expired or been invalidated, please reload the page to try again.`,
+                                {
+                                    toastId: ToastID.expired_session.toString(),
+                                }
+                            );
+                            return;
+                        case 403:
+                            toast.error(
+                                `You are not authorized to make this action. (Are you a registered student?)`,
+                                {
+                                    toastId: ToastID.not_authorized.toString(),
+                                }
+                            );
+                            return;
+                        default:
+                            toast.error(
+                                `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+                                {
+                                    toastId:
+                                        ToastID.set_lesson_unknown_error.toString(),
+                                }
+                            );
+                            return;
+                    }
+                } else {
+                    console.debug("successfully submitted grade to Canvas");
+                }
+            }
+        } else {
+            const { getByKey, setByKey } = this.context.browserStorage;
+            const showWarning =
+                !(await getByKey(CANVAS_WARNING_STORAGE_KEY)) &&
+                SHOW_NOT_CANVAS_WARNING;
+            if (showWarning) {
+                toast.warn(
+                    "No credentials found (did you launch this assignment from Canvas?)",
+                    {
+                        toastId: ToastID.warn_not_from_canvas.toString(),
+                        autoClose: false,
+                        onClick: () => {
+                            toast.dismiss(
+                                ToastID.warn_not_from_canvas.toString()
+                            );
+                        },
+                        onClose: () => {
+                            setByKey(CANVAS_WARNING_STORAGE_KEY, 1);
+                        },
+                    }
+                );
+            } else {
+                // can ignore
+            }
+        }
+    };
+
 
     displayMastery = (mastery) => {
         this.setState({ mastery: mastery });
