@@ -596,3 +596,4 @@ mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken
 - **giveStuBottomHint:** controls whether the suer should receive a bottom-out hint (last hint in the hint pathway that contains the answer)
 - **giveHintOnIncorrect:** controls whether an incorrect response should automatically force the user into the hint pathway
 - **keepMCOrder:** controls whether to preserve the order of MCQ choices in the spreadsheet
+- **enableCompletionMode:** controls whether the student finishes the lesson once mastery threshold is reached or once all problems exhausted

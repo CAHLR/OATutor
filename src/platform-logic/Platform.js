@@ -742,6 +742,7 @@ class Platform extends React.Component {
                             seed={this.state.seed}
                             lessonID={this.props.lessonID}
                             displayMastery={this.displayMastery}
+                            progressPercent={this.getProgressBarData().percent / 100}
                         />
                     </ErrorBoundary>
                 ) : (
