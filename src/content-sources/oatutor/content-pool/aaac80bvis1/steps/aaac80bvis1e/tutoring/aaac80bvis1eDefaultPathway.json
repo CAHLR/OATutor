@@ -1,6 +1,6 @@
 [
     {
-        "id": "aaac80bvis2a-h1",
+        "id": "aaac80bvis1e-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Combining Bins",
@@ -10,7 +10,7 @@
         "license": ""
     },
     {
-        "id": "aaac80bvis2a-h2",
+        "id": "aaac80bvis1e-h2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -18,7 +18,7 @@
             "$$40$$"
         ],
         "dependencies": [
-            "aaac80bvis2a-h1"
+            "aaac80bvis1e-h1"
         ],
         "title": "New Bin Area",
         "text": "What is the percentage area of the new bin?",
@@ -27,7 +27,7 @@
         "license": ""
     },
     {
-        "id": "aaac80bvis2a-h3",
+        "id": "aaac80bvis1e-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -35,7 +35,7 @@
             "$$500$$"
         ],
         "dependencies": [
-            "aaac80bvis2a-h1"
+            "aaac80bvis1e-h1"
         ],
         "title": "New Bin Width",
         "text": "What is the width of the new bin in dollars?",
@@ -44,10 +44,10 @@
         "license": ""
     },
     {
-        "id": "aaac80bvis2a-h4",
+        "id": "aaac80bvis1e-h4",
         "type": "hint",
         "dependencies": [
-            "aaac80bvis2a-h3"
+            "aaac80bvis1e-h3"
         ],
         "title": "Comparing Bin Height",
         "text": "Thus, the new bin height will be greater than the [500, 800) bin, but less than the [800, 1000) bin.",
