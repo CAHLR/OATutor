@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aaac80bvis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area Principle: The area of a bin is equal to the percentage of data in the bin. The larger the area, the more data lies in that bin.",
+        "text": "area of a bar $$=$$ % of values in a bin $$=$$ width of the bin \u00d7 height of the bin",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaac80bvis1a-h1"
+        ],
+        "title": "Calculation Fraction",
+        "text": "Height of the bar $$=$$ area of the bar in percent / height of the bin",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "aaac80bvis1a-h2"
+        ],
+        "title": "Determining area of the bar",
+        "text": "What is the area of the bar compared to the entire area of the distribution as a percentage?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$300$$"
+        ],
+        "dependencies": [
+            "aaac80bvis1a-h3"
+        ],
+        "title": "Determining width of bar",
+        "text": "What is the width of the bar in dollars?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
