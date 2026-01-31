@@ -44,11 +44,11 @@ class Problem extends React.Component {
     constructor(props, context) {
         super(props);
 
-        const { setLanguage } = props;
-        if (props.lesson.courseName == "Matematik 4") {
-            setLanguage('se')
-        }
-
+        // const { setLanguage } = props;
+        // if (props.lesson.courseName == "Matematik 4") {
+        //     setLanguage('se')
+        // }
+        
         this.bktParams = context.bktParams;
         this.heuristic = context.heuristic;
 
@@ -86,7 +86,9 @@ class Problem extends React.Component {
     }
 
     componentDidMount() {
-        const { lesson } = this.props;
+        const { lesson, setLanguage } = this.props;
+        setLanguage(lesson.language);
+
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
@@ -770,4 +772,4 @@ class Problem extends React.Component {
     }
 }
 
-export default withStyles(styles)(withTranslation(Problem));
+export default withTranslation(withStyles(styles)(Problem));

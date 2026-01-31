@@ -11,6 +11,18 @@ const SITE_VERSION = "1.6";
 const CURRENT_SEMESTER = calculateSemester(Date.now());
 
 /**
+ * Default language for the platform
+ * @type {string}
+ */
+const DEFAULT_LANGUAGE = "en"; // Supported Options: 'en', 'es', 'se'
+
+/**
+ * Available languages for the platform
+ * @type {string[]}
+ */
+const AVAILABLE_LANGUAGES = ["en", "es", "se"];
+
+/**
  * If user does not access the website through Canvas, show a warning (for the first time).
  * @type {boolean}
  */
@@ -156,4 +168,6 @@ export {
     DO_FOCUS_TRACKING,
     findLessonById,
     SHOW_NOT_CANVAS_WARNING,
+    DEFAULT_LANGUAGE, 
+    AVAILABLE_LANGUAGES
 };

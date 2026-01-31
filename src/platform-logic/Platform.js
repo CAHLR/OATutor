@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
@@ -13,6 +14,8 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
+    SHOW_NOT_CANVAS_WARNING,
+    CANVAS_WARNING_STORAGE_KEY,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -22,6 +25,7 @@ import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from '../util/withTranslation';
+import { LocalizationConsumer } from '../util/LocalizationContext';
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -77,6 +81,16 @@ class Platform extends React.Component {
 
     componentDidMount() {
         this._isMounted = true;
+
+        const { enterCourse, exitCourse} = this.props;
+
+        const isHomePage = this.props.history.location.pathname === '/';
+        if (isHomePage) {
+            exitCourse();
+            this.onComponentUpdate(null, null, null);
+            return;
+        }
+
         if (this.props.lessonID != null) {
             console.log("calling selectLesson from componentDidMount...") 
             const lesson = findLessonById(this.props.lessonID)
@@ -90,16 +104,35 @@ class Platform extends React.Component {
                 }
             );
 
-            const { setLanguage } = this.props;
-            if (lesson.courseName == 'Matematik 4') {
-                setLanguage('se')
-            } else {
-                const defaultLocale = localStorage.getItem('defaultLocale');
-                setLanguage(defaultLocale)
+            // const { setLanguage } = this.props;
+            
+            // if (lesson.courseName == 'Matematik 4') {
+            //     setLanguage('se')
+            // } else {
+            //     const defaultLocale = localStorage.getItem('defaultLocale');
+            //     setLanguage(defaultLocale)
+            // }
+
+            const course = coursePlans.find(c => 
+                c.lessons.some(l => l.id === this.props.lessonID)
+            );
+            
+            if (course) {
+                // Pass course ID and language from coursePlans.json
+                enterCourse(course.courseName, course.language);
             }
+
         } else if (this.props.courseNum != null) {
+
+            const course = coursePlans[parseInt(this.props.courseNum)];
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+
             this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
         }
+
+
         this.onComponentUpdate(null, null, null);
     }
 
@@ -109,6 +142,38 @@ class Platform extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        
+        const { enterCourse, exitCourse } = this.props;
+        
+        // If navigating to home, exit course context
+        if (this.props.history.location.pathname === '/' && 
+            prevProps.history.location.pathname !== '/') {
+            exitCourse();
+        }
+        
+        // If lesson changed, update course context
+        if (this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null) {
+            const lesson = findLessonById(this.props.lessonID);
+            const course = coursePlans.find(c => 
+                c.lessons.some(l => l.id === this.props.lessonID)
+            );
+            
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+            if (lesson) {
+                this.selectLesson(lesson, false);
+            }
+        }
+        
+        // If course changed
+        if (this.props.courseNum !== prevProps.courseNum && this.props.courseNum != null) {
+            const course = coursePlans[parseInt(this.props.courseNum)];
+            if (course) {
+                enterCourse(course.courseName, course.language);
+            }
+        }
+
         this.onComponentUpdate(prevProps, prevState, snapshot);
     }
 
@@ -123,6 +188,19 @@ class Platform extends React.Component {
         if (this.state.status !== "learning") {
             this.context.problemID = "n/a";
         }
+    }
+
+    getProgressBarData() {
+        if (!this.lesson) return { completed: 0, total: 0, percent: 0 };
+
+        const lessonName = String(this.lesson.name.replace("Lesson ", "") + " " + this.lesson.topics);
+        const problems = this.problemIndex.problems.filter(
+            ({ lesson }) => String(lesson).includes(lessonName)
+        );
+        const completed = this.completedProbs.size;
+        const total = problems.length;
+        const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+        return { completed, total, percent };
     }
     
     async selectLesson(lesson, updateServer=true) {
@@ -394,8 +472,151 @@ class Platform extends React.Component {
                 this.state.currProblem.id
             );
         });
-        this._nextProblem(context);
+
+        if (this.lesson.enableCompletionMode) {
+            const relevantKc = {};
+            Object.keys(this.lesson.learningObjectives).forEach((x) => {
+                relevantKc[x] = context.bktParams[x]?.probMastery ?? 0;
+            });
+
+            // Check if all problems are completed or all skills 
+            const progressData = this.getProgressBarData();
+            const progressPercent = progressData.percent / 100;
+
+            const allProblemsCompleted = progressData.completed === progressData.total;
+            if (allProblemsCompleted) {
+                console.debug("updateCanvas called because lesson is complete");
+            }
+
+            this.updateCanvas(progressPercent, relevantKc);
+            this._nextProblem(context);
+        } else {
+            this._nextProblem(context);
+        }
     };
+
+    updateCanvas = async (mastery, components) => {
+        if (this.context.jwt) {
+            console.debug("updating canvas with problem score");
+
+            let err, response;
+            [err, response] = await to(
+                fetch(`${MIDDLEWARE_URL}/postScore`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        token: this.context?.jwt || "",
+                        mastery,
+                        components,
+                    }),
+                })
+            );
+            if (err || !response) {
+                toast.error(
+                    `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+                    {
+                        toastId: ToastID.submit_grade_unknown_error.toString(),
+                    }
+                );
+                console.debug(err, response);
+            } else {
+                if (response.status !== 200) {
+                    switch (response.status) {
+                        case 400:
+                            const responseText = await response.text();
+                            let [message, ...addInfo] = responseText.split("|");
+                            if (
+                                Array.isArray(addInfo) &&
+                                addInfo.length > 0 &&
+                                addInfo[0]
+                            ) {
+                                addInfo = JSON.parse(addInfo[0]);
+                            }
+                            switch (message) {
+                                case "lost_link_to_lms":
+                                    toast.error(
+                                        "It seems like the link back to your LMS has been lost. Please re-open the assignment to make sure your score is saved.",
+                                        {
+                                            toastId:
+                                                ToastID.submit_grade_link_lost.toString(),
+                                        }
+                                    );
+                                    return;
+                                case "unable_to_handle_score":
+                                    toast.warn(
+                                        "Something went wrong and we can't update your score right now. Your progress will be saved locally so you may continue working.",
+                                        {
+                                            toastId:
+                                                ToastID.submit_grade_unable.toString(),
+                                            closeOnClick: true,
+                                        }
+                                    );
+                                    return;
+                                default:
+                                    toast.error(`Error: ${responseText}`, {
+                                        closeOnClick: true,
+                                    });
+                                    return;
+                            }
+                        case 401:
+                            toast.error(
+                                `Your session has either expired or been invalidated, please reload the page to try again.`,
+                                {
+                                    toastId: ToastID.expired_session.toString(),
+                                }
+                            );
+                            return;
+                        case 403:
+                            toast.error(
+                                `You are not authorized to make this action. (Are you a registered student?)`,
+                                {
+                                    toastId: ToastID.not_authorized.toString(),
+                                }
+                            );
+                            return;
+                        default:
+                            toast.error(
+                                `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+                                {
+                                    toastId:
+                                        ToastID.set_lesson_unknown_error.toString(),
+                                }
+                            );
+                            return;
+                    }
+                } else {
+                    console.debug("successfully submitted grade to Canvas");
+                }
+            }
+        } else {
+            const { getByKey, setByKey } = this.context.browserStorage;
+            const showWarning =
+                !(await getByKey(CANVAS_WARNING_STORAGE_KEY)) &&
+                SHOW_NOT_CANVAS_WARNING;
+            if (showWarning) {
+                toast.warn(
+                    "No credentials found (did you launch this assignment from Canvas?)",
+                    {
+                        toastId: ToastID.warn_not_from_canvas.toString(),
+                        autoClose: false,
+                        onClick: () => {
+                            toast.dismiss(
+                                ToastID.warn_not_from_canvas.toString()
+                            );
+                        },
+                        onClose: () => {
+                            setByKey(CANVAS_WARNING_STORAGE_KEY, 1);
+                        },
+                    }
+                );
+            } else {
+                // can ignore
+            }
+        }
+    };
+
 
     displayMastery = (mastery) => {
         this.setState({ mastery: mastery });
@@ -473,6 +694,22 @@ class Platform extends React.Component {
                         </Grid>
                     </Toolbar>
                 </AppBar>
+
+                {/* Progress Bar */}
+                {this.lesson?.enableCompletionMode && (
+                    <div style={{ padding: "10px 20px" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12 }}>
+                            <span>Progress</span>
+                            <span>{this.getProgressBarData().percent}% ({this.getProgressBarData().completed}/{this.getProgressBarData().total})</span>
+                        </div>
+                        <LinearProgress
+                            variant="determinate"
+                            value={this.getProgressBarData().percent}
+                            style={{ height: 10, borderRadius: 5 }}
+                        />
+                    </div>
+                )}
+
                 {this.state.status === "courseSelection" ? (
                     <LessonSelectionWrapper
                         selectLesson={this.selectLesson}
@@ -505,6 +742,7 @@ class Platform extends React.Component {
                             seed={this.state.seed}
                             lessonID={this.props.lessonID}
                             displayMastery={this.displayMastery}
+                            progressPercent={this.getProgressBarData().percent / 100}
                         />
                     </ErrorBoundary>
                 ) : (
@@ -535,4 +773,17 @@ class Platform extends React.Component {
     }
 }
 
-export default withRouter(withTranslation(Platform));
+// export default withRouter(withTranslation(Platform));
+
+export default withRouter(withTranslation((props) => (
+    <LocalizationConsumer>
+        {({ language, enterCourse, exitCourse }) => (
+            <Platform
+                {...props}
+                language={language}
+                enterCourse={enterCourse}
+                exitCourse={exitCourse}
+            />
+        )}
+    </LocalizationConsumer>
+)));
