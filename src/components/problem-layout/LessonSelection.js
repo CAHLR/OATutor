@@ -109,11 +109,11 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={course.courseName}>
                                                 <center>
                                                     {/* card, text, and icon scale in proportion to one another */}
-                                                    <Paper className={classes.paper} style={{ fontSize: "1.1rem" }}>
+                                                    <Paper className={classes.paper} style={{ fontSize: "1rem" }}>
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
-                                                            marginBottom: "0.4em",
+                                                            marginBottom: "1.4em",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
@@ -126,7 +126,7 @@ class LessonSelection extends React.Component {
                                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/orange_folder.svg`}
                                                                 width="56px"
                                                                 alt="folderIcon"
-                                                                style= {{ width: "2.2em", marginTop: "0.4em" }}
+                                                                style= {{ width: "2.2em" }}
                                                             />
                                                         </IconButton>
                                                     </Paper>
