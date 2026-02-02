@@ -1,0 +1,42 @@
+{
+  "name": "@hapi/subtext",
+  "description": "HTTP payload parsing",
+  "version": "8.1.1",
+  "repository": "git://github.com/hapijs/subtext",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "http",
+    "payload",
+    "file",
+    "stream",
+    "multipart"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/bourne": "^3.0.0",
+    "@hapi/content": "^6.0.0",
+    "@hapi/file": "^3.0.0",
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/pez": "^6.1.0",
+    "@hapi/wreck": "^18.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "^6.0.0",
+    "@hapi/lab": "^25.1.2",
+    "form-data": "^4.0.0"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L",
+    "test-cov-html": "lab -a @hapi/code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

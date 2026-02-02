@@ -1,0 +1,40 @@
+{
+  "name": "@hapi/pez",
+  "description": "Multipart parser",
+  "version": "6.1.0",
+  "repository": "git://github.com/hapijs/pez",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "HTTP",
+    "multipart",
+    "parser"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/b64": "^6.0.1",
+    "@hapi/boom": "^10.0.1",
+    "@hapi/content": "^6.0.0",
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/nigel": "^5.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.0.1",
+    "@hapi/teamwork": "^6.0.0",
+    "@hapi/wreck": "^18.0.0",
+    "form-data": "4.x.x"
+  },
+  "scripts": {
+    "test": "lab -t 100 -L -a @hapi/code",
+    "test-cov-html": "lab -a @hapi/code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

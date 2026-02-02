@@ -1,0 +1,40 @@
+{
+  "name": "@hapi/nigel",
+  "description": "Boyer-Moore-Horspool algorithms",
+  "version": "5.0.1",
+  "repository": "git://github.com/hapijs/nigel",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "boyer-moore-horspool",
+    "algorithms",
+    "lookup",
+    "search",
+    "stream"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/vise": "^5.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.0.1",
+    "@hapi/teamwork": "^6.0.0"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L",
+    "test-cov-html": "lab -a @hapi/code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

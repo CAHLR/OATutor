@@ -32,6 +32,7 @@ class HintTextbox extends React.Component {
             isCorrect: context.use_expanded_view && context.debug ? true : null,
             checkMarkOpacity: context.use_expanded_view && context.debug ? '100' : '0',
             showHints: false,
+            answerSelected: false
         }
     }
 
@@ -74,7 +75,11 @@ class HintTextbox extends React.Component {
 
     setInputValState = (inputVal) => {
         // console.debug("new inputVal state: ", inputVal)
-        this.setState(({ isCorrect }) => ({ inputVal, isCorrect: isCorrect ? true : null }))
+        this.setState(({ isCorrect }) => ({ 
+            inputVal, 
+            isCorrect: isCorrect ? true : null,
+            answerSelected: inputVal.trim() !== "" 
+        }))
     }
 
     render() {
@@ -107,7 +112,7 @@ class HintTextbox extends React.Component {
 
                 <Grid container spacing={0} justifyContent="center" alignItems="center">
                     <Grid item xs={false} sm={false} md={4}/>
-                    <Grid item xs={4} sm={4} md={1}>
+                    {/* <Grid item xs={4} sm={4} md={1}>
                         {this.props.type !== "subHintTextbox" && this.hint.subHints !== undefined ?
                             <center>
                                 <IconButton aria-label="delete" onClick={this.props.toggleHints}
@@ -125,12 +130,12 @@ class HintTextbox extends React.Component {
                                  alt="hintToggle"
                                  style={{ visibility: "hidden" }}/>
                         }
-                    </Grid>
+                    </Grid> */}
                     <Grid item xs={4} sm={4} md={2}>
                         <center>
                             <Button className={classes.button} style={{ width: "80%" }} size="small"
                                     onClick={this.submit}
-                                    disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted)}
+                                    disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted) || !this.state.answerSelected}
                                     {...stagingProp({
                                         "data-selenium-target": `submit-button-${hintIndex}`
                                     })}

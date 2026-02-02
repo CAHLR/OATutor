@@ -1,0 +1,37 @@
+{
+  "name": "@hapi/heavy",
+  "description": "Measure process load",
+  "version": "8.0.1",
+  "repository": "git://github.com/hapijs/heavy",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "process",
+    "load",
+    "measure",
+    "delay",
+    "memory"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/validate": "^2.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.1.2"
+  },
+  "scripts": {
+    "test": "lab -t 100 -a @hapi/code -L",
+    "test-cov-html": "lab -t 100 -a @hapi/code -L -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

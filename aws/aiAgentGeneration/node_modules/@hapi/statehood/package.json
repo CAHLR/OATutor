@@ -1,0 +1,41 @@
+{
+  "name": "@hapi/statehood",
+  "description": "HTTP State Management Utilities",
+  "version": "8.2.1",
+  "repository": "git://github.com/hapijs/statehood",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "HTTP",
+    "state",
+    "cookies",
+    "secure"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/bounce": "^3.0.1",
+    "@hapi/bourne": "^3.0.0",
+    "@hapi/cryptiles": "^6.0.1",
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/iron": "^7.0.1",
+    "@hapi/validate": "^2.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "^6.0.0",
+    "@hapi/lab": "^25.1.2"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L",
+    "test-cov-html": "lab -a @hapi/code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}
