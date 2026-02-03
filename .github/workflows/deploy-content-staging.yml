@@ -42,16 +42,19 @@ jobs:
     - name: Set environment variable for spreadsheet key
       run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
-    - name: Remove existing content
-      run: rm -rf content-staging-build/src/content-sources/oatutor/*
-
-    - name: Create Content Directory
-      run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
+    - name: Prepare for incremental update
+      run: |
+        cd content-staging-build/src/content-sources/oatutor
+        # Rename content-pool back to OpenStax Content for the script
+        if [ -d "content-pool" ]; then
+          mv "content-pool" "OpenStax Content"
+        fi
+        mkdir -p Content
 
     - name: Run content update script
       run: |
         cd content-staging-build/src/content-sources/oatutor/Content
-        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online
 
     - name: Move and prepare files
       run: |
