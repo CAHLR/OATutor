@@ -87,7 +87,7 @@ class Problem extends React.Component {
 
     componentDidMount() {
         const { lesson, setLanguage } = this.props;
-        setLanguage(lesson.language);
+        if (lesson) setLanguage(lesson.language);
 
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
