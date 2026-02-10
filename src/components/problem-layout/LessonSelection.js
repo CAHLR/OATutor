@@ -137,7 +137,7 @@ class LessonSelection extends React.Component {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>
                                             <center>
-                                            <Paper className={classes.paper} style={{ position: 'relative' }}>
+                                            <Paper className={classes.paper} style={{ position: "relative", height: "12rem" }}>
                                                 {/* top-right “view all problems” button */}
                                                 <IconButton
                                                     size="small"
@@ -155,7 +155,13 @@ class LessonSelection extends React.Component {
                                                     variant="contained"
                                                     color="primary"
                                                     className={classes.button}
-                                                    style={{ width: "36%" }}
+                                                    style={{
+                                                        width: "8em",
+                                                        position: "absolute",
+                                                        bottom: "1.2em",
+                                                        left: "50%",
+                                                        transform: "translateX(-50%)"
+                                                    }}
                                                     onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
                                                 >
                                                 {translate('lessonSelection.onlyselect')}
