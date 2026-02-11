@@ -1,0 +1,150 @@
+[
+    {
+        "id": "ad3a8eemixapp1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write a mathematical equation",
+        "text": "The first step is to express the number of pounds of raisins and nuts in the $$10$$ pounds of trail mix as a mathematical expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10-x$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h1"
+        ],
+        "title": "Assigning variables",
+        "text": "Let the number of pounds of raisins be $$x$$. How can you express the number of pounds of nuts as a mathematical expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eemixapp1a-h2"
+        ],
+        "title": "Writing a mathematical expression",
+        "text": "The next step is to express the total price as a mathematical expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h3"
+        ],
+        "title": "Total value for raisins",
+        "text": "How would you express the total value for raisins?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6\\left(10-x\\right)$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h4"
+        ],
+        "title": "Total value for nuts",
+        "text": "How would you express the total value for nuts?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10\\times5.2$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h5"
+        ],
+        "title": "Total value of trail mix",
+        "text": "How would you express the total value of the trail mix?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eemixapp1a-h6"
+        ],
+        "title": "Combining the values",
+        "text": "We can combine our mathematical expressions into $$2x+6\\left(10-x\\right)=10\\times5.2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad3a8eemixapp1a-h7"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "The next step is to solve for $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h8"
+        ],
+        "title": "Finding pounds for raisins",
+        "text": "What did variable did we use for raisins?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad3a8eemixapp1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10-x$$"
+        ],
+        "dependencies": [
+            "ad3a8eemixapp1a-h9"
+        ],
+        "title": "Finding pounds for nuts",
+        "text": "What mathematical expression did we use for nuts?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

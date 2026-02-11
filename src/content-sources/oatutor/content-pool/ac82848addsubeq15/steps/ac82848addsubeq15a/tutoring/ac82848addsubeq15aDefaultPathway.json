@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ac82848addsubeq15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The statement can be translated to the equation $$x+10=41$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac82848addsubeq15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac82848addsubeq15a-h1"
+        ],
+        "title": "Subtracting the constant term",
+        "text": "To get rid of the $$10$$ on the left, we can subtract $$10$$ from both sides of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac82848addsubeq15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$31$$"
+        ],
+        "dependencies": [
+            "ac82848addsubeq15a-h2"
+        ],
+        "title": "Subtracting the constant term",
+        "text": "What is $$41-10$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "adb00fecramers14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Cramer's Rule",
+        "text": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables. Consider a system of two linear equations in two variables.\\n$$a1 x+b1 y=c1$$, $$a2 x+b2 y=c2$$. The solution using Cramer\u2019s Rule is given as x=Dx/D,D!=0; \u200b\u200by=Dy/D,D!=0. If we are solving for $$x$$, the $$x$$ column is replaced with the constant column. If we are solving for $$y$$, the $$y$$ column is replaced with the constant column.\\nD: determinant of the coefficient matrix\\nDx: determinant of the numerator in the solution of $$x$$\\nDy: determinant of the numerator in the solution of $$y$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "adb00fecramers14a-h1"
+        ],
+        "title": "Find $$x$$",
+        "text": "Solve for the determinant of the numerator matrix with the constants and coefficients for $$x$$ the divided by that of the denominatior matrix, which are $$x$$ and $$y$$ coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb00fecramers14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "adb00fecramers14a-h2"
+        ],
+        "title": "Find $$y$$",
+        "text": "Solve for the determinant of the numerator matrix with the constants and coefficients for $$y$$ divided by that of the denominatior matrix, which are $$x$$ and $$y$$ coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

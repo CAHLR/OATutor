@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a6dffedreal27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Depreciation Formula",
+        "text": "We have the exponential decay formula $$V=V0 \\left(1+r\\right)^t$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal27a-h1"
+        ],
+        "title": "Value Given",
+        "text": "We are given that: Initial value (V0): $$38000$$, Value in $$2013$$ (V): $$11000$$, Time elapsed (2007 to 2013)(t): $$6$$ years.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal27a-h2"
+        ],
+        "title": "Substitute the Value",
+        "text": "Plug in the values, we get $$11000=38000\\left(1+r\\right)^6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal27a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "Solve the equation for $$r$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal27a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.167$$"
+        ],
+        "dependencies": [
+            "a6dffedreal27a-h4"
+        ],
+        "title": "Solve the Equation",
+        "text": "What is the value of $$r$$? (Round to the $$3$$ decimal places)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal27a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal27a-h5"
+        ],
+        "title": "Project the Value to $$2017$$",
+        "text": "Now, apply the same depreciation rate for the next $$4$$ years (2013 to 2017). The total time from $$2007$$ to $$2017$$ is $$10$$ years, but we'll use the $$2013$$ value as the new starting point: $$V2017=11000\\left(1-0.167\\right)^4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

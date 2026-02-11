@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ab5d0bbratioexpo15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying",
+        "text": "We can either take the fourth root first or cube first. In this case, taking the fourth root first is better because cubing would result in a large number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab5d0bbratioexpo15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ab5d0bbratioexpo15a-h1"
+        ],
+        "title": "Fourth Root",
+        "text": "What is the fourth root of 81?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab5d0bbratioexpo15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab5d0bbratioexpo15a-h2"
+        ],
+        "title": "Squaring",
+        "text": "After taking the fourth root, all we have left is $$3^3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

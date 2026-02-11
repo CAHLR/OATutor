@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9cf10atrig8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "Factor out tan\u03b8 in the denominator: $$tan\\thetasin\\theta-tan\\theta=tan\\theta(sin\\theta-1)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig8a-h1"
+        ],
+        "title": "Factor",
+        "text": "$$sin^2\\left(\\theta\\right)-1=\\left(sintheta-1\\right) \\left(sintheta+1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig8a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\left(sintheta-1\\right) \\left(sintheta+1\\right)}{\\operatorname{tantheta}\\left(sintheta-1\\right)}=\\frac{sintheta+1}{tantheta}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

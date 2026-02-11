@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aeae96dlogprop8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the Log with Exponentiation",
+        "text": "We must notice that $$\\frac{1}{x^2}$$ can be written as $$x^{\\left(-2\\right)}$$, allowing us to use the power rule to simplify the log. We now have $$\\ln\\left(x^{\\left(-2\\right)}\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aeae96dlogprop8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aeae96dlogprop8a-h1"
+        ],
+        "title": "Using the Power Rule to Simplify",
+        "text": "We can use the power rule as follows. We know that the exponent that $$\\log_{b}\\left(M^n\\right)=n\\log_{b}\\left(M\\right)$$. In this case, $$M=x$$ and $$n=-2$$. This means that $$\\ln\\left(x^{\\left(-2\\right)}\\right)=-2ln(x)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

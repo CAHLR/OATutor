@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a33da99volumes14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graphing region",
+        "text": "First we must graph the region R, as shown in the following figure.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a33da99volumes14a-h1"
+        ],
+        "title": "Finding range on y-axis",
+        "text": "when $$x=0$$, $$y=3\\times0=0$$, then what is $$y$$ when $$x=3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes14a-h2"
+        ],
+        "title": "Define the region",
+        "text": "Looking at graph, we can find the region is under the line of $$y=3x$$ over the interval [0,9] on y-axis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{y}{3}$$"
+        ],
+        "dependencies": [
+            "a33da99volumes14a-h3"
+        ],
+        "title": "Find g(y)",
+        "text": "$$y=3x$$ so $$x=\\frac{y}{3}$$. so what is g(y)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes14a-h4"
+        ],
+        "title": "Height",
+        "text": "The height is the horizontal distance from $$y=0$$ to $$x=3$$, minus the distance from $$y=0$$ to $$x=\\frac{y}{3}$$, which is $$3-\\frac{y}{3}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes14a-h5"
+        ],
+        "title": "Find the volume",
+        "text": "$$V=\\int_{0}^{9} 2\\pi y \\left(3-\\frac{y}{3}\\right) \\,dy=\\int_{0}^{9} 2\\pi \\left(3y-\\frac{y^2}{3}\\right) \\,dy$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes14a-h6"
+        ],
+        "title": "Find the integral",
+        "text": "So we need to solve $$2\\pi$$ times (3*y**2)/2- $$\\frac{y^3}{9}$$ with the limits going from $$y=0$$ to $$y=9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,136 @@
+[
+    {
+        "id": "a39def5good8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypotheses",
+        "text": "What are the Null Hypothesis $$H_0$$ and Alternative Hypothesis in this context?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: Surveyed obese fit the distribution of expected obese"
+        ],
+        "dependencies": [
+            "a39def5good8a-h1"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: Surveyed obese fit the distribution of expected obese",
+            "$$H_0$$: Surveyed obese do not fit the distribution of expected obese"
+        ]
+    },
+    {
+        "id": "a39def5good8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_a$$: Surveyed obese do not fit the distribution of expected obese"
+        ],
+        "dependencies": [
+            "a39def5good8a-h2"
+        ],
+        "title": "Alternative Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_a$$: Surveyed obese fit the distribution of expected obese",
+            "$$H_a$$: Surveyed obese do not fit the distribution of expected obese"
+        ]
+    },
+    {
+        "id": "a39def5good8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good8a-h3"
+        ],
+        "title": "Consider what distribution is most appropriate to use in this problem.",
+        "text": "Is this a Goodness-of-Fit problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a39def5good8a-h4"
+        ],
+        "title": "What is the degree of freedom?",
+        "text": "$$df=5-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good8a-h5"
+        ],
+        "title": "Compute the chi-square test statistics",
+        "text": "$$X^2$$ $$=$$ $$9.85$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.043$$"
+        ],
+        "dependencies": [
+            "a39def5good8a-h6"
+        ],
+        "title": "Compute the $$p-value$$.",
+        "text": "Round the answer to three decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good8a-h7"
+        ],
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, P < \\alpha. Reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good8a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good8a-h8"
+        ],
+        "title": "Interpret the Result",
+        "text": "At the 5% level of significance, from the data, there is sufficient evidence to conclude that the surveyed obese do not fit the distribution of expected obese.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

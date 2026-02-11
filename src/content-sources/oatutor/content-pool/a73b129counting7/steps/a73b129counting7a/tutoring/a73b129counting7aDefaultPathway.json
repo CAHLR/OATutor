@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a73b129counting7a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Positive numbers",
+        "text": "How many positive numbers are in the set?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a73b129counting7a-h1"
+        ],
+        "title": "Odd numbers",
+        "text": "How many odd numbers are in the set?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a73b129counting7a-h2"
+        ],
+        "title": "Positive numbers",
+        "text": "How many numbers overlap?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting7a-h3"
+        ],
+        "title": "Addition Principle",
+        "text": "Since the sets do not overlap, simply add the numbers of positive and odd numbers together.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
