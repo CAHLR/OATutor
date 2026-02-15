@@ -340,9 +340,9 @@ class Platform extends React.Component {
                         }
                     );
                     const responseText = await response.text();
-                    let [message, ...addInfo] = responseText.split("|");
+                    const [, ...addInfo] = responseText.split("|");
                     this.props.history.push(
-                        `/assignment-already-linked?to=${addInfo.to}`
+                        `/assignment-already-linked?to=${addInfo[0] ?? ""}`
                     );
                 }
             }
@@ -1013,12 +1013,20 @@ class Platform extends React.Component {
                                           "%"
                                         : ""}
                                 </div>
-                            </Grid>
-                        </Grid>
-                    </Toolbar>
-                </AppBar>
+                              </div>
+                            </ProgressTooltip>
+                          </div>
+                        </div>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </Toolbar>
+              </AppBar>
+            ) : (
+              ""
+            )}
 
-                {/* Progress Bar */}
+            {/* Progress Bar */}
                 {this.lesson?.enableCompletionMode && (
                     <div style={{ padding: "10px 20px" }}>
                         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12 }}>
@@ -1092,17 +1100,21 @@ class Platform extends React.Component {
                 ) : (
                     ""
                 )}
-            </div>
-        );
+          </div>
+        </div>
+        </>
+      );
     }
 }
 
 // export default withRouter(withTranslation(Platform));
 
+const StyledPlatform = withStyles(styles)(Platform);
+
 export default withRouter(withTranslation((props) => (
     <LocalizationConsumer>
         {({ language, enterCourse, exitCourse }) => (
-            <Platform
+            <StyledPlatform
                 {...props}
                 language={language}
                 enterCourse={enterCourse}
