@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a47c5cacorr8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Marginal totals summarize frequencies for a single variable and appear along the margins (totals rows or columns).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a47c5cacorr8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One variable only"
+        ],
+        "dependencies": [
+            "a47c5cacorr8a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Marginal totals summarize:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "One variable only",
+            "Two overlapping variables",
+            "Conditional outcomes",
+            "Sampling distributions"
+        ]
+    },
+    {
+        "id": "a47c5cacorr8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Totals column or row"
+        ],
+        "dependencies": [
+            "a47c5cacorr8a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which part of the table aggregates AP enrollment across genders?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Interior cells",
+            "Totals column or row",
+            "Female row only",
+            "Male row only"
+        ]
+    },
+    {
+        "id": "a47c5cacorr8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, the total is displayed"
+        ],
+        "dependencies": [
+            "a47c5cacorr8a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Is additional calculation required?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes, add all interior cells",
+            "Yes, compute percentages",
+            "No, the total is displayed",
+            "No, but must estimate"
+        ]
+    },
+    {
+        "id": "a47c5cacorr8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All AP students combined"
+        ],
+        "dependencies": [
+            "a47c5cacorr8a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Does this value represent:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Female AP students",
+            "Male AP students",
+            "All AP students combined",
+            "$$Non-AP$$ students"
+        ]
+    }
+]

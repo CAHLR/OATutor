@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a47c5cacorr19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Conditional probability measures the likelihood of one outcome occurring within a specified subgroup.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a47c5cacorr19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Outcomes within a specific subgroup"
+        ],
+        "dependencies": [
+            "a47c5cacorr19a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Does conditional probability measure:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Outcomes across the entire population",
+            "Outcomes within a specific subgroup",
+            "Sampling error",
+            "Marginal distributions"
+        ]
+    },
+    {
+        "id": "a47c5cacorr19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Students who participated"
+        ],
+        "dependencies": [
+            "a47c5cacorr19a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which group forms the condition?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Students who passed",
+            "Students who failed",
+            "Students who participated",
+            "All students"
+        ]
+    },
+    {
+        "id": "a47c5cacorr19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$240$$"
+        ],
+        "dependencies": [
+            "a47c5cacorr19a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which denominator should be used?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$192$$",
+            "$$240$$",
+            "$$576$$",
+            "$$800$$"
+        ]
+    },
+    {
+        "id": "a47c5cacorr19a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Passing rates among participants"
+        ],
+        "dependencies": [
+            "a47c5cacorr19a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Does the result represent:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Passing rates among participants",
+            "Participation rates among passers",
+            "Overall district pass rate",
+            "Joint probability"
+        ]
+    }
+]

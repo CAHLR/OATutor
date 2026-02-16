@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a47c5cacorr20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Conditional probability can be calculated in either direction depending on the conditioning variable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a47c5cacorr20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Passing"
+        ],
+        "dependencies": [
+            "a47c5cacorr20a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Does this question condition on:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Participation",
+            "Passing",
+            "Failing",
+            "Total enrollment"
+        ]
+    },
+    {
+        "id": "a47c5cacorr20a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Passed"
+        ],
+        "dependencies": [
+            "a47c5cacorr20a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which column should be examined?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Passed",
+            "Failed",
+            "Participation total",
+            "District total"
+        ]
+    },
+    {
+        "id": "a47c5cacorr20a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$576$$"
+        ],
+        "dependencies": [
+            "a47c5cacorr20a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which denominator is used?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$192$$",
+            "$$240$$",
+            "$$576$$",
+            "$$800$$"
+        ]
+    },
+    {
+        "id": "a47c5cacorr20a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Participation rates among successful students"
+        ],
+        "dependencies": [
+            "a47c5cacorr20a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Does the result represent:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Participation rates among successful students",
+            "Pass rates among participants",
+            "Joint participation probability",
+            "Marginal participation"
+        ]
+    }
+]

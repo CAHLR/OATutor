@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a2b6a8bcorr2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sign of a correlation",
+        "text": "Positive correlations occur when both variables increase or decrease together. Negative correlations occur when one increases while the other decreases.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2b6a8bcorr2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr2a-h1"
+        ],
+        "title": "Examine the relationship",
+        "text": "As practice time increases, what happens to mistakes?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Decrease",
+            "Increase"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Opposite directions"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr2a-h2"
+        ],
+        "title": "Determine the direction",
+        "text": "Do both variables move together or in opposite directions?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Opposite directions",
+            "Together"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr2a-h3"
+        ],
+        "title": "Sign match",
+        "text": "Which sign (positive or negative) matches that pattern?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative"
+        ]
+    }
+]

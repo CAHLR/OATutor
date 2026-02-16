@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a47c5cacorr5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "There are three methods for estimating probability: subjective, a priori, and empirical probability. Two of these require calculation, while one does not.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a47c5cacorr5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a47c5cacorr5a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Are probabilities based on observed arrival records?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a47c5cacorr5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a47c5cacorr5a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Are outcomes assumed to be equally likely for modeling purposes?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Only partially",
+            "Unknown"
+        ]
+    },
+    {
+        "id": "a47c5cacorr5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a47c5cacorr5a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Is the probability calculated from theoretical outcome categories?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Only after sampling",
+            "Only through regression"
+        ]
+    },
+    {
+        "id": "a47c5cacorr5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A priori"
+        ],
+        "dependencies": [
+            "a47c5cacorr5a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Which approach uses theoretical outcome structures?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Empirical",
+            "A priori",
+            "Subjective",
+            "Conditional"
+        ]
+    }
+]
