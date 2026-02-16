@@ -59,7 +59,7 @@ class Problem extends React.Component {
         const keyboardType = this.props.lesson?.keyboardType;
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
-        const giveStuBottomHint = this.props.lesson?.allowBottomHint;
+        const giveStuBottomHint = this.props.lesson?.giveStuBottomHint;
 
         this.giveHintOnIncorrect = giveHintOnIncorrect != null && giveHintOnIncorrect;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;

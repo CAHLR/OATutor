@@ -55,6 +55,9 @@ class ProblemCard extends React.Component {
         this.allowRetry = this.giveStuFeedback;
 
         this.giveStuBottomHint = props.giveStuBottomHint;
+        console.log("ProblemCard - giveStuBottomHint:", this.giveStuBottomHint);
+        console.log("ProblemCard - all props:", props);
+
         this.giveDynamicHint = props.giveDynamicHint;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
@@ -92,6 +95,9 @@ class ProblemCard extends React.Component {
         }
 
         // Bottom out hints option
+
+        console.log("Constructor - About to check bottom hints:", this.giveStuBottomHint, context.debug, context["use_expanded_view"]);
+
         if (
             this.giveStuBottomHint &&
             !(context.debug && context["use_expanded_view"])
@@ -517,6 +523,9 @@ class ProblemCard extends React.Component {
             }
 
             // Bottom out hints option
+
+            console.log("Constructor - About to check bottom hints:", this.giveStuBottomHint, this.context.debug, this.context["use_expanded_view"]);
+
             if (
                 this.giveStuBottomHint &&
                 !(this.context.debug && this.context["use_expanded_view"])
