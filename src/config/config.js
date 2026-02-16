@@ -6,7 +6,7 @@ import { SITE_NAME } from "@common/global-config";
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.6";
+const SITE_VERSION = "1.7";
 
 const CURRENT_SEMESTER = calculateSemester(Date.now());
 
