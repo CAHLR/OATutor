@@ -36,12 +36,12 @@ class MultipleChoice extends React.Component {
         }
 
         return (
-            <div style={{ marginLeft: "1%", textAlign: "left" }}>
+            <div style={{ marginRight: "5%", textAlign: "center" }}>
                 <FormControl>
                     <RadioGroup value={this.state.value} onChange={this.handleChange}>
                         {choices.length > 0
                             ? choices.map((choice, i) =>
-                                <FormControlLabel value={choice} control={<Radio color="primary"/>}
+                                <FormControlLabel value={choice} control={<Radio/>}
                                     label={renderText(choice, null, variabilization, this.context)}
                                     key={choice}/>)
                             : "Error: This problem has no answer choices. Please submit feedback."}
