@@ -144,7 +144,7 @@ class ProblemInput extends React.Component {
             <Grid container spacing={0} justifyContent="center" alignItems="center"
                 className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
-                <Grid item xs={9} md={problemType === "TextBox" ? 4 : 12}>
+                <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <math-field
                             ref={this.mathFieldRef}
