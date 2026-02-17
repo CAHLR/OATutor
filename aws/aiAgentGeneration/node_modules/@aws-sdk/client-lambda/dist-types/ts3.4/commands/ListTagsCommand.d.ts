@@ -1,0 +1,47 @@
+import { Command as $Command } from "@smithy/smithy-client";
+import { MetadataBearer as __MetadataBearer } from "@smithy/types";
+import {
+  LambdaClientResolvedConfig,
+  ServiceInputTypes,
+  ServiceOutputTypes,
+} from "../LambdaClient";
+import { ListTagsRequest, ListTagsResponse } from "../models/models_0";
+export { __MetadataBearer };
+export { $Command };
+export interface ListTagsCommandInput extends ListTagsRequest {}
+export interface ListTagsCommandOutput
+  extends ListTagsResponse,
+    __MetadataBearer {}
+declare const ListTagsCommand_base: {
+  new (
+    input: ListTagsCommandInput
+  ): import("@smithy/smithy-client").CommandImpl<
+    ListTagsCommandInput,
+    ListTagsCommandOutput,
+    LambdaClientResolvedConfig,
+    ServiceInputTypes,
+    ServiceOutputTypes
+  >;
+  new (
+    input: ListTagsCommandInput
+  ): import("@smithy/smithy-client").CommandImpl<
+    ListTagsCommandInput,
+    ListTagsCommandOutput,
+    LambdaClientResolvedConfig,
+    ServiceInputTypes,
+    ServiceOutputTypes
+  >;
+  getEndpointParameterInstructions(): import("@smithy/middleware-endpoint").EndpointParameterInstructions;
+};
+export declare class ListTagsCommand extends ListTagsCommand_base {
+  protected static __types: {
+    api: {
+      input: ListTagsRequest;
+      output: ListTagsResponse;
+    };
+    sdk: {
+      input: ListTagsCommandInput;
+      output: ListTagsCommandOutput;
+    };
+  };
+}

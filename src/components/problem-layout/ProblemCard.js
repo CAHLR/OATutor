@@ -36,12 +36,18 @@ import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
 import CryptoJS from "crypto-js";
 
+import ReactDOM from "react-dom";
+import {Accordion, AccordionSummary, AccordionDetails, typography} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+import withWidth from '@material-ui/core/withWidth';
+
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
 
     constructor(props, context) {
         super(props);
-        //console.log("problem lesson props:", props);
+        console.log("problem lesson props:", props);
 
         this.translate = props.translate
         this.step = props.step;
@@ -152,6 +158,7 @@ class ProblemCard extends React.Component {
             // When we are currently streaming the response from ChatGPT, this variable is `true`
             isGeneratingHint: false, 
             lastAIHintHash: null,
+            answerSelected: false,
         };
 
          // This is used for AI hint generation
@@ -224,6 +231,23 @@ class ProblemCard extends React.Component {
             });
             this.updateBioInfo();
         }
+
+        if (
+            this.props.hintToggleTrigger !== prevProps.hintToggleTrigger &&
+            this.props.hintToggleIndex === this.index
+        ) {
+            this.toggleHints();
+        }
+
+        if (
+            prevProps.hintToggleIndex === this.index &&
+            this.props.hintToggleIndex !== this.index &&
+            this.state.activeHintType === "normal"
+        ) {
+            this.setState({
+                activeHintType: "none",
+            });
+        }
     }
 
     submit = () => {
@@ -289,7 +313,10 @@ class ProblemCard extends React.Component {
             isCorrect,
             checkMarkOpacity: isCorrect ? "100" : "0",
         });
-        answerMade(this.index, knowledgeComponents, isCorrect);
+        
+        // Pass attempt info to Problem.js for tracking
+        const questionText = stepBody.trim() || stepTitle.trim();
+        answerMade(this.index, knowledgeComponents, isCorrect, parsed, questionText);
     };
 
     editInput = (event) => {
@@ -303,6 +330,7 @@ class ProblemCard extends React.Component {
         this.setState(({ isCorrect }) => ({
             inputVal,
             isCorrect: isCorrect ? true : null,
+            answerSelected: inputVal.trim() !== ""
         }));
     };
 
@@ -312,27 +340,35 @@ class ProblemCard extends React.Component {
         }
     };
 
-    toggleHints = (event) => {
-        if (this.giveDynamicHint && !this.state.activeHintType !== "normal") {
+    toggleHints = () => {
+        const togglingOn = this.state.activeHintType !== "normal";
+
+        if (togglingOn && this.giveDynamicHint) {
             this.generateHintFromGPT();
-        } else if (!this.state.displayHints) {
-            this.setState(
-                () => ({
-                    enableHintGeneration: false,
-            }))
         }
-        this.setState(
-            (prevState) => ({
-                activeHintType: prevState.activeHintType === "normal" ? "none" : "normal"
-                }),
-            () => {
+
+        const stateUpdates = {
+            activeHintType: togglingOn ? "normal" : "none",
+        };
+
+        if (togglingOn && !this.giveDynamicHint && !this.state.displayHints) {
+            stateUpdates.enableHintGeneration = false;
+        }
+
+        this.setState(stateUpdates, () => {
+            if (this.props.onHintToggle) {
+                this.props.onHintToggle(
+                    this.index,
+                    this.state.activeHintType === "normal"
+                );
+            }
+
                 this.props.answerMade(
                     this.index,
                     this.step.knowledgeComponents,
                     false
                 );
-            }
-        );
+        });
     };
 
     unlockHint = (hintNum, hintType) => {
@@ -625,52 +661,28 @@ class ProblemCard extends React.Component {
         const { isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
 
+        const isMobile = this.props.width === "xs"; 
+
         const problemAttempted = isCorrect != null;
+        const showCardHeader = this.props.showCardHeader !== false;
 
-        return (
-            <Card className={classes.card}>
-                <CardContent>
-                    <h2 className={classes.stepHeader}>
-                        {renderText(
-                            this.step.stepTitle,
-                            problemID,
-                            chooseVariables(
-                                Object.assign(
-                                    {},
-                                    problemVars,
-                                    this.step.variabilization
-                                ),
-                                seed
-                            ),
-                            this.context
-                        )}
-                        <hr />
-                    </h2>
+        const shouldShowHints =
+            this.showHints &&
+            (this.state.activeHintType === "normal" ||
+                (debug && use_expanded_view));
 
-                    <div className={classes.stepBody}>
-                        {renderText(
-                            this.step.stepBody,
-                            problemID,
-                            chooseVariables(
-                                Object.assign(
-                                    {},
-                                    problemVars,
-                                    this.step.variabilization
-                                ),
-                                seed
-                            ),
-                            this.context
-                        )}
-                    </div>
-                    {(this.state.activeHintType === "normal" || (debug && use_expanded_view)) &&
-                        this.showHints && (
+        let inlineHints = null;
+        let portalHints = null;
+
+        if (shouldShowHints) {
+            const hintsContent = (
                             <div className="Hints">
                                 <ErrorBoundary
                                     componentName={"HintSystem"}
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        key={`hints-${this.giveDynamicHint ? 'dynamic' : 'manual'}`}
+                            key={`hints-${this.giveDynamicHint ? "dynamic" : "manual"}`}
                                         giveHintOnIncorrect={this.giveHintOnIncorrect}
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
@@ -698,7 +710,81 @@ class ProblemCard extends React.Component {
                                 </ErrorBoundary>
                                 <Spacer />
                             </div>
-                        )}
+            );
+
+            if (
+                this.props.hintPortalTarget &&
+                this.props.hintPortalTarget.current &&
+                this.props.hintToggleIndex === this.index
+            ) {
+                portalHints = ReactDOM.createPortal(
+                    <div
+                        style={{
+                            backgroundColor: "#FFFFFF",
+                            color: "#000000",
+                            borderRadius: 8,
+                            padding: 12,
+                            boxShadow: "0 2px 6px rgba(0, 0, 0, 0.12)",
+                            width: "100%",
+                            boxSizing: "border-box",
+                        }}
+                    >
+                        {hintsContent}
+                    </div>,
+                    this.props.hintPortalTarget.current
+                );
+            } else {
+                inlineHints = hintsContent;
+            }
+        }
+
+        return (
+            // <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <Card 
+                className={classes.card} 
+                style={{ boxShadow: 'none', border: 'none' }}
+                // style={{ width: this.props.drawerOpen ? '95%' : '75%' }}
+            >
+                <CardContent 
+                    style={{ 
+                        padding: '20px',
+                        marginBottom: -20
+                    }}>
+                    {showCardHeader && (
+                        <h2 className={classes.stepHeader}>
+                            {renderText(
+                                this.step.stepTitle,
+                                problemID,
+                                chooseVariables(
+                                    Object.assign(
+                                        {},
+                                        problemVars,
+                                        this.step.variabilization
+                                    ),
+                                    seed
+                                ),
+                                this.context
+                            )}
+                            <hr />
+                        </h2>
+                    )}
+
+                            <div className={"classes.stepBody"}>
+                                {renderText(
+                                    this.step.stepBody,
+                                    problemID,
+                                    chooseVariables(
+                                        Object.assign(
+                                            {},
+                                            problemVars,
+                                            this.step.variabilization
+                                        ),
+                                        seed
+                                    ),
+                                    this.context
+                                )}
+                            </div>
+                            {inlineHints}
 
                     <div className={classes.root}>
                         <ProblemInput
@@ -728,17 +814,17 @@ class ProblemCard extends React.Component {
                         />
                     </div>
                 </CardContent>
-                <CardActions>
-                    <Grid
-                        container
-                        spacing={0}
-                        justifyContent="center"
-                        alignItems="center"
-                    >
-                        <Grid item xs={false} sm={false} md={4} />
-                        <Grid item xs={4} sm={4} md={1}>
+
+
+
+                        <CardActions style = {{padding: "0px"}}>
+                            
+
+                            {/* <Grid item xs={4} sm={4} md={1}>
                             {this.showHints && (
                                 <center>
+
+
                                     <IconButton
                                         aria-label="delete"
                                         onClick={this.toggleHints}
@@ -761,17 +847,46 @@ class ProblemCard extends React.Component {
                                             alt="hintToggle"
                                         />
                                     </IconButton>
+
+
                                 </center>
                             )}
-                        </Grid>
-                        <Grid item xs={4} sm={4} md={2}>
-                            <center>
+                            </Grid> */}
+
+                        
+                            <Grid 
+                                container
+                                spacing = {2}
+                                alignItems = "center"
+                                direction={isMobile ? "column" : "row'"}
+                                justifyContent= "space-between"
+                                style={{ 
+                                    marginTop: 40, 
+                                    marginBottom: 20,
+                                    marginLeft: 20,
+                                    marginRight: 20,
+                                }}
+                            >
+
+                                <Grid item  
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center", 
+                                        justifyContent: "flex-start",
+                                        gap: "20px",
+                                    }}
+                                >
+                                    
                                 <Button
                                     className={classes.button}
-                                    style={{ width: "80%" }}
+                                        style={{ 
+                                            width: "118px", 
+                                            flexShrink: 0
+                                        }}
                                     size="small"
                                     onClick={this.submit}
                                     disabled={
+                                            !this.state.inputVal ||
                                         (use_expanded_view && debug) ||
                                         (!this.allowRetry && problemAttempted)
                                     }
@@ -781,17 +896,8 @@ class ProblemCard extends React.Component {
                                 >
                                     {translate('problem.Submit')}
                                 </Button>
-                            </center>
-                        </Grid>
-                        <Grid item xs={4} sm={3} md={1}>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    alignContent: "center",
-                                    justifyContent: "center",
-                                }}
-                            >
+
+                                    
                                 {(!this.showCorrectness ||
                                     !this.allowRetry) && (
                                     <img
@@ -801,7 +907,8 @@ class ProblemCard extends React.Component {
                                                 this.state.isCorrect == null
                                                     ? 0
                                                     : 1,
-                                            width: "45%",
+                                                width: 42,
+                                                height: 42,
                                         }}
                                         alt="Exclamation Mark Icon"
                                         title={`The instructor has elected to ${joinList(
@@ -824,7 +931,8 @@ class ProblemCard extends React.Component {
                                             style={{
                                                 opacity:
                                                     this.state.checkMarkOpacity,
-                                                width: "45%",
+                                                    width: 42,
+                                                    height: 42,
                                             }}
                                             alt="Green Checkmark Icon"
                                             {...stagingProp({
@@ -842,7 +950,8 @@ class ProblemCard extends React.Component {
                                                 opacity:
                                                     100 -
                                                     this.state.checkMarkOpacity,
-                                                width: "45%",
+                                                    width: 42,
+                                                    height: 42,
                                             }}
                                             alt="Red X Icon"
                                             {...stagingProp({
@@ -851,14 +960,16 @@ class ProblemCard extends React.Component {
                                             src={`${process.env.PUBLIC_URL}/static/images/icons/error.svg`}
                                         />
                                     )}
-                            </div>
                         </Grid>
-                        <Grid item xs={false} sm={1} md={4} />
+
+
                     </Grid>
                 </CardActions>
+                        {portalHints}
             </Card>
+            // </div>
         );
     }
 }
 
-export default withStyles(styles)(withTranslation(ProblemCard));
+export default withWidth()(withStyles(styles)(withTranslation(ProblemCard)));

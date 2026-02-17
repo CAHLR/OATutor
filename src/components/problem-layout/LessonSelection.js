@@ -195,12 +195,17 @@ class LessonSelection extends React.Component {
                     </Grid>
                     <Spacer/>
                 </div>
+
+
+
                 <footer>
                     <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                         <div style={{ marginLeft: 20, fontSize: 16 }}>
                             {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
-                        <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
+
+
+                        {/* <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
                             <IconButton aria-label="about" title={`About ${SITE_NAME}`}
                                 onClick={this.togglePopup}>
                                 <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
@@ -211,9 +216,14 @@ class LessonSelection extends React.Component {
                         </div>
                         <Popup isOpen={showPopup} onClose={this.togglePopup}>
                             <About />
-                        </Popup>
+                        </Popup> */}
+
                     </div>
                 </footer>
+
+
+
+
             </>
         )
     }
