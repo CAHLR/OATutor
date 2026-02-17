@@ -113,7 +113,7 @@ class LessonSelection extends React.Component {
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
-                                                            marginBottom: "1.4em",
+                                                            marginBottom: "1em",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
@@ -123,10 +123,10 @@ class LessonSelection extends React.Component {
                                                                 this.props.history.push(`/courses/${i}`)
                                                             }}>
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/orange_folder.svg`}
-                                                                width="56px"
+                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.svg`}
+                                                                // width="56px"
                                                                 alt="folderIcon"
-                                                                style= {{ width: "2.2em" }}
+                                                                style= {{ width: "2.4em" }}
                                                             />
                                                         </IconButton>
                                                     </Paper>
